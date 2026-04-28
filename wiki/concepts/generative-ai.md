@@ -35,14 +35,29 @@ In the [[AI Index]] taxonomy, "Generative AI" is a sub-class of AI distinguished
 - **Smaller models matching big ones**: Microsoft's Phi-3-mini (3.8B params) matched the 60% MMLU threshold previously held by PaLM (540B) — **142× reduction in 2 years**.
 - AI agents show early promise: **RE-Bench** results — top systems score 4× human experts in 2-hour budgets, but humans win 2:1 at 32 hours. Already match human expertise on select tasks (e.g., writing Triton kernels).
 
-### Agents in enterprise AI maturity
+### Agents (now its own concept page)
 
-GenAI is increasingly the substrate for **autonomous agents** showing up in enterprise deployments — and where they appear is informative about an organization's maturity level:
+GenAI is the substrate for autonomous agents — see the dedicated [[ai-agents]] page covering the chatbot → agent → multi-agent progression, RE-Bench results, deployment examples (Salesforce Agentforce, Italgas DANA, Harvey, GitHub Copilot), and the cross-source debate over where agents fit in org maturity. [[2026-04-28-mit-sloan-ai-maturity|MIT CISR]] places autonomous agents as a Stage 3+ attribute; [[2026-04-28-anand-wu-genai-playbook|Anand-Wu]] places them in the "no regrets zone" of the task-suitability 2×2; [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]] frames them as the near-term productivity story for everyone.
 
-- [[2026-04-28-mit-sloan-ai-maturity|MIT CISR's Four Stages framework]] places **autonomous agents** as a *Stage 3* attribute ("expanding process automation; exploring autonomous agents"), and combining "traditional + generative + agentic + robotic AI" as a *Stage 4* attribute (the top 7% of firms).
-- Concrete enterprise example: **[[Italgas]]'s DANA** — a generative-AI-based network control system for natural gas distribution infrastructure. Source: [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan article]].
-- Concrete vendor example: **Salesforce Agentforce** (launched September 2024) — autonomous agents for business operations. Source: [[2026-04-28-ai-index-report-2025|AI Index 2025]] §4.1 timeline.
-- The agent story is less about model capability and more about **orchestration + business-process integration** — which is why agents appear at the higher maturity stages rather than at the start of adoption.
+### The access democratization (Anand-Wu)
+
+[[2026-04-28-anand-wu-genai-playbook|Anand-Wu]] argue GenAI's most underrated change is **access**, not intelligence:
+
+1. **Nontechie employees can use GenAI without expert support.** For decades AI was the domain of engineers, programmers, data scientists. ChatGPT changed that with natural-language interaction.
+2. **GenAI is increasingly embedded into existing tools** — email, videoconferencing, spreadsheets, CRM, ERP — lowering adoption barriers further.
+
+Anand-Wu compare this to the **MS-DOS → GUI transition** of the 1980s: not necessarily more powerful, but dramatically more accessible. The strategic implication: **competitive advantage will not come from access to the technology** (everyone has it) but from **complementary assets** — proprietary data, unique people/processes/culture. See [[enterprise-ai-adoption]].
+
+### Tools and embeddings (mentioned across sources)
+
+| Tool | Function | Citation |
+|---|---|---|
+| **ChatGPT** ([[OpenAI]]) | The democratization breakthrough | [[2026-04-28-anand-wu-genai-playbook\|Anand-Wu]] |
+| **Harvey** | Legal contract drafting; quality-control zone | [[2026-04-28-anand-wu-genai-playbook\|Anand-Wu]] |
+| **GitHub Copilot** | Code generation, debugging | [[2026-04-28-anand-wu-genai-playbook\|Anand-Wu]] |
+| **Salesforce Agentforce** | Business operations agents | [[2026-04-28-ai-index-report-2025\|AI Index 2025]] |
+| **Microsoft Copilot** | Embedded productivity assistant | [[2026-04-28-ai-index-report-2025\|AI Index 2025]] (job-postings data) |
+| **Italgas DANA** | Generative-AI network control | [[2026-04-28-mit-sloan-ai-maturity\|MIT Sloan]] |
 
 ### Limits
 

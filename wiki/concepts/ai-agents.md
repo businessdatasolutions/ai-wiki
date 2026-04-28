@@ -1,0 +1,93 @@
+---
+type: concept
+aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
+tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
+---
+
+# AI Agents
+
+Software systems that **pursue complex goals autonomously**, with independent decision-making, planning, and adaptable execution in dynamic environments — typically built on top of [[foundation-models]] with tool-use, memory, and orchestration scaffolding. Agents are distinct from chatbots (which simulate conversation) and from multi-agent systems (which coordinate multiple agents).
+
+As of 2024–2025, agents have moved from research-grade demos to **early enterprise deployment**: 4 of the 6 sources in this wiki discuss them substantively, with growing convergence on a 3-stage progression and on the kinds of tasks where agents are economically viable today.
+
+## Working definition
+
+The cleanest definition in this wiki comes from [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]'s 3-stage progression:
+
+| Stage | What it is | Examples |
+|---|---|---|
+| **AI chatbot** | Simulates and processes human conversation, written or spoken | Customer support FAQ bots; ChatGPT in default mode |
+| **AI agent** | Pursues complex goals autonomously, with independent decision-making, planning, and adaptable execution in dynamic environments | Salesforce Agentforce (business operations); Italgas DANA (network control); coding agents |
+| **Multi-agent system** | Multiple AI agents collaborate to pursue complex goals autonomously in dynamic environments | (Emerging — fewer production examples as of 2025) |
+
+A useful complementary lens is the [[2026-04-28-anand-wu-genai-playbook|Anand-Wu]] 2×2: agents thrive in the **"no regrets zone"** (low cost of errors + explicit data) where AI does the work without humans in the loop — addressing bulk customer inquiries, summarizing documents, screening résumés. As error costs rise, agents become assistants rather than autonomous executors.
+
+## Key claims
+
+### The 2024–25 inflection
+
+- **Salesforce launched Agentforce** in September 2024 — a suite of autonomous AI agents for business operations across the Salesforce platform. Source: [[2026-04-28-ai-index-report-2025|AI Index 2025]] §4.1 timeline.
+- **>80% of organizations plan to integrate AI agents within 1–3 years** ([[Capgemini]] research via [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]).
+- **AI agents could double the capacity** of knowledge professionals and field-support roles ([[PwC]] prediction via MITTRI/Cisco).
+- [[2026-04-28-mit-sloan-ai-maturity|MIT CISR]]'s Four Stages framework places "exploring autonomous agents" as a **Stage 3** (Develop AI ways of working) attribute, and "combining traditional + generative + agentic + robotic AI" as a **Stage 4** (Become AI future-ready) attribute. Stage 4 covers only **7%** of firms (2022 baseline) — agents at scale remain rare.
+
+### Capability evidence (RE-Bench, 2024)
+
+[[2026-04-28-ai-index-report-2025|AI Index 2025]] §2 discusses **RE-Bench** — a 2024 benchmark for evaluating complex tasks for AI agents under time budgets:
+- In **2-hour budgets**: top AI systems score **4× human experts**.
+- At **32-hour budgets**: humans win **2:1** over AI.
+- AI agents already match human expertise on select tasks (e.g., writing Triton kernels) — at lower cost and higher speed.
+
+The time-budget pattern is a sharp framing: **agents win at short horizons, humans still win at long horizons.** Most enterprise tasks have short horizons, which is why agent deployment is accelerating despite long-horizon weakness.
+
+### Where agents are deployed in 2024–25
+
+- **Salesforce Agentforce** (cross-functional enterprise agents)
+- **GitHub Copilot** family (coding assistance evolving toward agents) — see [[2026-04-28-anand-wu-genai-playbook|Anand-Wu]]
+- **Harvey** (legal contract drafting) — Anand-Wu cite it for the "quality control zone"
+- **Italgas DANA** — generative-AI-based network control system for natural gas distribution. Source: [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan]].
+- **Cisco's customer-support agents** — Cisco internal deployment per [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]].
+
+### Capgemini's expected agent benefits (n unknown, sponsor-cited)
+
+| Expectation | % agreeing |
+|---|---|
+| AI agents will help drive higher levels of automation in workflows | 71% |
+| AI agents will significantly improve customer service, leading to improved satisfaction | 64% |
+| AI agents would help me focus on more value-added activities | 64% |
+| The potential of AI agents to improve productivity outweighs the risks | 57% |
+
+Source: [[Capgemini]] 2025 via [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]. **Caveat:** the 57% on "outweighs the risks" is the lowest-scoring item — material minority concern.
+
+### The CX angle
+
+Customer experience (CX) is the most-cited near-term agent application. Per [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]:
+- Customers are **3.8× more likely to purchase again** following a successful service experience.
+- "It's not about replacing roles. It's about where we can give agency, with some human oversight and governance, to improve tasks within a workflow." — [[Liz Centoni]], EVP & Chief CX Officer, [[Cisco]].
+
+## Debates / contradictions
+
+- **Where in the org does an agent sit?** The 4 sources frame agents differently:
+  - [[2026-04-28-mit-sloan-ai-maturity|MIT CISR]]: agents as a **Stage 3+ attribute** — only mature orgs are exploring them.
+  - [[2026-04-28-anand-wu-genai-playbook|Anand-Wu]]: agents as a **task-quadrant attribute** — they thrive in the no-regrets zone today, regardless of org maturity stage.
+  - [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]: agents as the **near-term productivity story for everyone** (>80% planning integration in 1–3 years).
+  Reconciling: agents are *deployable today* in low-cost-of-error / explicit-data domains, *strategic* at higher maturity, and *projected* by most orgs. All three views can be true.
+- **Agentic vs. agent.** "Agentic" is sometimes used to describe behavior (autonomous, goal-pursuing) while "agent" is the system. The wiki uses both interchangeably for now; future ingests may force more precision.
+- **Hype vs. capability gap.** RE-Bench shows agents losing to humans at 32-hour budgets. Many enterprise workflows have multi-day horizons. Open question: as agent persistence/memory improves, does the long-horizon gap close?
+- **Multi-agent systems are mostly aspirational.** MITTRI/Cisco frames the 3-stage progression as if multi-agent is on a near-term horizon, but production multi-agent systems remain rare. Discount accordingly.
+
+## Related concepts
+
+- [[generative-ai]] — the substrate; most agents are LLM-based
+- [[foundation-models]] — what agents are typically built on
+- [[enterprise-ai-adoption]] — the deployment context
+- [[ai-benchmarks]] — RE-Bench specifically targets agent evaluation; PlanBench tests reasoning that agents need
+
+## Mentioned in
+
+```dataview
+LIST
+FROM "wiki/sources"
+WHERE contains(file.outlinks, this.file.link) OR contains(tags, "ai-agents") OR contains(tags, "agentic-ai")
+SORT file.name ASC
+```

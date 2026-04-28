@@ -10,13 +10,19 @@ The pace, depth, and pattern by which organizations integrate AI into their busi
 
 ## Working definition
 
-Two complementary lenses are used by sources in this wiki:
+Multiple complementary lenses are used by sources in this wiki:
 
 **Breadth lens** ([[McKinsey & Company]] / [[2026-04-28-ai-index-report-2025|AI Index]]): an organization is "using AI" if it deploys AI in **at least one business function**. Low bar — captures adoption breadth, not depth.
 
 **Stage lens** ([[2026-04-28-mit-sloan-ai-maturity|MIT CISR / MIT Sloan]]): organizations are placed on a **four-stage AI maturity ladder** — from "Experiment and prepare" to "Become AI future-ready" — based on a 0–100% Total AI Effectiveness score combining operations, customer experience, and ecosystem-support effectiveness.
 
-The two lenses agree qualitatively: **most organizations are using AI in some form, but very few are actually mature.** The AI Index pegs "mature" at 1% (C-suite self-report on GenAI); MIT CISR pegs Stage 4 at 7% of firms. See [[ai-maturity-measurement-comparison]] for the methodological cross-walk.
+**Readiness lens** ([[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]): only **13% of companies globally are ready** to leverage AI to its full potential. Two-thirds (68%) say their infrastructure is at best moderately ready. **98% feel increased urgency** over the past year, **85% give themselves <18 months** to deploy a strategy.
+
+**Org-design lens** ([[2026-04-28-werner-lebrun-octopus-organization|Werner-Le-Brun]]): organizations are either **Tin Man Orgs** (predictability-optimized for a complicated world) or **Octopus Orgs** (adaptive, distributed, customer-centric for a complex world). **Just 12% of transformation efforts** show sustainable performance gains.
+
+**Task lens** ([[2026-04-28-anand-wu-genai-playbook|Anand-Wu]]): a 2×2 matrix on **cost of errors × type of knowledge** decides where to deploy GenAI on a per-task basis (no regrets / creative catalyst / quality control / human-first zones).
+
+All five lenses agree qualitatively: **most organizations are using AI in some form, but very few are actually mature/ready/adapted.** The AI Index pegs "mature" at 1%; MIT CISR pegs Stage 4 at 7%; Cisco pegs "ready" at 13%; Werner-Le-Brun's 12% transformation-success baseline gives the broader org-change context. See [[ai-maturity-measurement-comparison]] for methodological cross-walk and [[organizational-frameworks-for-ai-adoption]] for the framework comparison.
 
 The shape of adoption can be measured along several dimensions:
 
@@ -50,10 +56,50 @@ To make the leap from pilots (Stage 2) to embedded AI ways of working (Stage 3),
 
 Driving the change requires a **united front among the CEO, CIO, chief strategy officer, and head of HR** — not a single function's effort.
 
-### Worked examples (from MIT CISR case studies)
+### Worked examples
 
-- **[[Guardian Life Insurance]]** (regulated US insurance): Automated RFP and quoting process — turnaround **1 week → 24 hours**. Embedded compliance/legal in architecture review boards. Reskilling into AI-focused roles.
-- **[[Italgas]]** (Europe's largest natural gas distributor): "Digital Factory" innovation hub since 2017; **300TB data platform, 23 AI models**; WorkOnSite (+40% construction speed, -80% inspections); DANA (GenAI network control); 30,000 hours of AI training in 2024; **commercialized WorkOnSite for €3M revenue in 2024**.
+- **[[Guardian Life Insurance]]** (regulated US insurance, [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan]]): Automated RFP and quoting process — turnaround **1 week → 24 hours**. Embedded compliance/legal in architecture review boards. Reskilling into AI-focused roles.
+- **[[Italgas]]** (Europe's largest natural gas distributor, [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan]]): "Digital Factory" innovation hub since 2017; **300TB data platform, 23 AI models**; WorkOnSite (+40% construction speed, -80% inspections); DANA (GenAI network control); 30,000 hours of AI training in 2024; **commercialized WorkOnSite for €3M revenue in 2024**.
+- **[[Ford]]** (manufacturing, [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]): AI-augmented vision systems for assembly inspection — defects on "squish tube" rubber seals dropped from **63 per month to zero**. Computational fluid dynamic test for vehicle airflow: **15 hours → 10 seconds** with AI prediction.
+
+## The Anand-Wu 2×2 task framework
+
+A complementary task-level lens from [[2026-04-28-anand-wu-genai-playbook|Anand & Wu (2025)]]. Maps each enterprise task onto two axes:
+
+- **Cost of errors**: low (small inefficiencies in a draft) ↔ high (reputational damage, legal liability, physical harm)
+- **Type of knowledge**: explicit data (structured/unstructured but capturable) ↔ tacit knowledge (experiential, intuitive, context-specific)
+
+| | Tacit knowledge | Explicit data |
+|---|---|---|
+| **High cost of errors** | **Human-first zone** — Human leads, AI assists with minor tasks. Setting strategy, integrating enterprise systems, disciplinary decisions, hiring critical employees. | **Quality control zone** — AI produces, human verifies. Drafting high-value contracts ([[Harvey]]); writing production software code ([[GitHub Copilot]]); due diligence. |
+| **Low cost of errors** | **Creative catalyst zone** — AI creates options, human selects. Creating advertisements, outlining sales scripts, developing products. | **No regrets zone** — AI does it all (no human in the loop). Bulk customer inquiries, document summarization, résumé screening. *Where [[ai-agents]] thrive.* |
+
+The framework's punchline: stop debating GenAI's intelligence; ask which tasks GenAI can assist with today to make human judgment more effective. See [[organizational-frameworks-for-ai-adoption]] for how this maps to other frameworks.
+
+## Why don't gen AI gains show up in P&L? (Anand-Wu's leakage diagnostic)
+
+[[2026-04-28-anand-wu-genai-playbook|Anand-Wu]]'s most actionable artifact: six leakage points along the value chain where potential gains evaporate before reaching the P&L.
+
+| # | Leakage point | What goes wrong | Owner |
+|---|---|---|---|
+| 1 | **Task efficiency** | Fail to identify tasks where gen AI improves efficiency | Everyone, enabled by CTO/CIO |
+| 2 | **Employee adoption** | Miss opportunities because employees aren't trained | Everyone, enabled by CTO/CIO |
+| 3 | **Resource redeployment** | Labor capacity saved isn't redeployed to higher-value tasks | Every manager, enabled by CEO/COO |
+| 4 | **Organizational throughput** | Fail to redesign processes to capitalize on gains | Every manager, enabled by CEO/COO |
+| 5 | **Market demand** | Customers don't have a need to purchase the greater output | CEO + C-suite |
+| 6 | **Competitive retention** | Competitors use gen AI similarly; gains dissipated through lower margins | CEO + C-suite |
+
+This is the wiki's sharpest answer to the [[2026-04-28-ai-index-report-2025|AI Index 2025]] puzzle: *why is adoption 78% but maturity 1%?* Because gains are leaking at multiple points, and only diagnosing the leakage at every step gets ROI to the bottom line.
+
+## The paradox of access (Anand-Wu)
+
+A counterweight to the "AI is a competitive moat" rhetoric: **"Because everyone can use it, it becomes dramatically harder to capture value with it."** Pattern from prior tech cycles:
+
+- E-ticketing (2000s): all airlines adopted; benefits flowed to customers as lower airfare.
+- CAD/ERP (1990s+): once an advantage, became table stakes.
+- Big Law (1990s+): clients pulled work in-house using digital tools; nearly **90% of large law firms now offer flat-fee or favorable pricing**; in-house counsel tripled 1997–2020.
+
+Implication: **competitive differentiation in 2025+ comes from complementary assets** — proprietary data, unique people/processes/culture — not from "having AI." See [[organizational-frameworks-for-ai-adoption]].
 
 ## Key claims
 

@@ -75,6 +75,32 @@ Closely related but not identical: **AI safety** (often used to mean alignment /
 - Worked example: **[[Italgas]]** — governance via a Chief People, Innovation & Transformation Officer + an AI Officer + a Group AI Office, overseeing integration and monitoring. Initiatives balance efficiency with new business opportunity (commercializing WorkOnSite generated €3M revenue in 2024). Source: [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan article]].
 - This framing complements the policy-level RAI literature (OECD/EU/UN/AU frameworks) by giving the *organizational mechanism* for how policy principles get translated into procurement and design decisions.
 
+### AI security as a discipline (MITTRI/Cisco)
+
+[[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]] elevates **AI security** as a distinct discipline within RAI, with its own fundamentals:
+
+- Understand AI security and safety taxonomy
+- Identify vulnerabilities in AI **models, software, and hardware code** (each is a different attack surface)
+- Secure **vector databases** (an AI-specific concern not captured in traditional infosec)
+- Apply established security best practices to AI training environments
+- Establish AI security as an *ongoing* practice — identify unique needs of each phase of the system lifecycle
+- Use **reference architectures** to reduce exposure in LLM training environments
+- Select **secure embedding models** for content generation
+
+Quoted: *"Safety and security are fundamental, because they're one of the big fears impeding adoption for AI technologies today. So if you don't trust something, you're not going to use it."* — [[Jeetu Patel]], President & CPO, [[Cisco]].
+
+This framing complements the [[2026-04-28-anand-wu-genai-playbook|Anand-Wu]] guidance to **focus on guarding most-critical risks** (PII leakage, regulated data) rather than blanket risk minimization. The JPMorgan ChatGPT-block (2023) example illustrates the tradeoff: blocking 60,000 users from experimentation while security teams completed third-party reviews was a sensible precaution but not a sustainable posture.
+
+### Risk-vs-experimentation tradeoff (Anand-Wu)
+
+A specific tension that surfaces across organizations: **how to permit AI experimentation while managing real risk.** Anand-Wu's framing:
+
+- **Don't try to minimize all risks**; focus on guarding the most-critical ones (PII leakage, regulated data, brand-reputation exposure).
+- **Don't make IT the bottleneck.** "If access stalls at the IT desk or hides behind compliance forms, you cede ground to rivals whose staff can experiment in real time."
+- **Innovation moves only as fast as your slowest approval queue.**
+
+This is operationally concrete and worth pairing with the MIT CISR Stewardship pillar — which solves the same problem from the architecture-review-board angle.
+
 ## Debates / contradictions
 
 - **Open vs. closed model risk framing.** Open-weight models are increasingly close to closed-weight in capability ([[foundation-models]]) — does that change the policy calculus on disclosure / weights release?
