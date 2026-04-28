@@ -73,6 +73,26 @@ Report findings; let the user decide what to act on.
 - **Marp** (markdown slide decks) and **matplotlib** charts are first-class output formats for query answers, alongside markdown pages.
 - The repo is plain markdown in git — version history, branches, and diffs apply normally to wiki edits.
 
+## Frontend / GitHub Pages
+
+The wiki is published as a static site via **[Quartz v4](https://quartz.jzhao.xyz/)**, deployed to GitHub Pages on every push to `main`.
+
+- **Source**: `wiki/` (untouched — Quartz reads it directly via `-d wiki`).
+- **Config**: `quartz.config.ts`, `quartz.layout.ts` at repo root.
+- **Custom extensions** (in `extensions/`):
+  - `inject-type-tags.ts` — auto-adds `type/<type>` and `kind/<kind>` tags from frontmatter so the graph view and tag pages cluster pages by type. Source files stay clean.
+  - `inject-aliases.ts` — appends frontmatter `aliases` to the indexed body so FlexSearch finds pages by alias.
+  - `backlinks-with-aliases.tsx` — replaces Quartz's stock Backlinks component. The stock one only matches inbound links by canonical slug; this one also matches via the page's frontmatter `aliases`, so wikilinks like `[[Erik Brynjolfsson]]` (which Quartz resolves to the alias slug) correctly produce backlinks on the aliased page.
+- **Deploy**: `.github/workflows/deploy.yml`. Pages source must be set to "GitHub Actions" in repo Settings.
+- **Local preview**: `npm install` once, then `npm run serve` → `http://localhost:8080`.
+- **Build only**: `npm run build` → `public/`.
+
+Practical notes:
+- Adding a `type:` or `kind:` value to a page automatically adds a graph filter chip — no extra work.
+- `raw/` is excluded via `ignorePatterns` in `quartz.config.ts` (it's source-of-truth, not for publishing).
+- When a `[[wikilink]]` target doesn't exist, Quartz renders it as a "broken link" — useful for spotting stub gaps during lint.
+- Quartz does not render Dataview blocks. If/when Dataview is introduced for Obsidian-side features, those blocks will appear as plain code on the public site.
+
 ## Reference
 
 `llm-wiki.md` — the upstream conceptual spec. Re-read it whenever a workflow question comes up that this file doesn't answer, then consider promoting the resolution into this file.

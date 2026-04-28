@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://quartz.jzhao.xyz/\")",
+      "WebFetch(domain:quartz.jzhao.xyz)",
+      "Bash(curl -s https://raw.githubusercontent.com/jackyzha0/quartz/v4/docs/hosting.md)",
+      "Bash(npm --version)",
+      "Bash(npm ci *)",
+      "Bash(npx quartz *)",
+      "Bash(node -e ' *)",
+      "Bash(curl -sf http://localhost:8080/)",
+      "Skill(commit-commands:commit-push-pr)",
+      "Skill(commit-commands:commit-push-pr:*)"
+    ]
+  }
+}
