@@ -46,7 +46,8 @@ The architectural choice that distinguishes this design from a flat note collect
 karpathy-wiki/
 ├── raw/                  # IMMUTABLE — user-curated sources
 │   ├── articles/         # Web clips (Obsidian Web Clipper → .md)
-│   ├── papers/           # PDFs + extracted .md alongside (e.g. attention.pdf + attention.md)
+│   ├── papers/           # Academic PDFs + extracted .md alongside (e.g. attention.pdf + attention.md)
+│   ├── reports/          # Industry reports, gov't white papers, consultancy decks, sell-side research (PDF + extracted .md)
 │   ├── lectures/         # YouTube transcripts
 │   ├── books/            # Per-chapter notes you write yourself; one folder per book
 │   ├── images/           # Standalone images that are themselves a source
@@ -86,7 +87,7 @@ Path: `wiki/sources/YYYY-MM-DD-<slug>.md` (date = ingestion date, for chronologi
 ```yaml
 ---
 type: source
-kind: article | paper | lecture | book | image
+kind: article | paper | report | lecture | book | image
 title: "Attention Is All You Need"
 author: ["Ashish Vaswani", "Noam Shazeer", "..."]
 url: "https://arxiv.org/abs/1706.03762"
@@ -264,6 +265,7 @@ Permitted operations: `ingest`, `query`, `lint`, `synthesize`, `refactor`.
 |---|---|---|---|
 | **A. Web articles** (dominant) | Obsidian Web Clipper → `.md` | `raw/articles/` | Inline images downloaded to `raw/assets/` via Web Clipper hotkey. |
 | **B. Papers** (dominant) | PDF download | `raw/papers/<slug>.pdf` + `<slug>.md` | Extraction tool: `marker` recommended (preserves equations); LLM-driven fallback for shorter papers. |
+| **B′. Reports** | PDF download (sometimes web-clipped) | `raw/reports/<slug>.pdf` + `<slug>.md` | Industry / consultancy / government / sell-side. Same PDF-extraction pipeline as papers. Distinguish via tags (`consultancy`, `government`, `equity-research`, `ngo`). Executive summary often worth quoting verbatim on the source page. |
 | **C. Lectures** | YouTube transcript | `raw/lectures/<video-id>.md` | Use `yt-dlp --write-auto-sub` or equivalent; preserve timestamps. |
 | **E. Books** | User-written notes | `raw/books/<book-slug>/<NN-chapter>.md` | One folder per book; one file per chapter. Chapter ingest is its own log entry. |
 | **I. Images** | Manual save | `raw/images/<slug>.<ext>` | A source page (`kind: image`) describes context, source URL, what's in it. |
@@ -354,6 +356,7 @@ Each decision below was settled during the brainstorming session on 2026-04-28. 
 | 9 | Index-only search at start | YAGNI; Karpathy spec confirms scale | Easy — add `qmd` later |
 | 10 | Supervised one-at-a-time ingest as default | Karpathy's recommendation; matches "discuss takeaways" step | Easy — add batch mode |
 | 11 | Log prefix `## [YYYY-MM-DD] <op> \| <title>` | Karpathy spec; greppable | Hard — log-wide rewrite |
+| 12 | Reports get their own folder + `kind: report`, not folded into `papers/` | Reports differ from peer-reviewed papers in tone, audience, and use (exec summaries quoted verbatim, citations less rigorous). Tags handle sub-type (consultancy / government / equity-research / ngo). Added 2026-04-28 in response to first real-use question. | Easy — folder rename, frontmatter sweep |
 
 ---
 
