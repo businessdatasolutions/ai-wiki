@@ -103,6 +103,7 @@ Four wiki sources, with distinct vocabularies and methodologies, all draw essent
 | [[2026-04-28-mittri-cisco-ai-enabled-enterprise\|MITTRI/Cisco]] | "Replace vs. give agency with oversight" | "Chatbot → agent → multi-agent" progression |
 | [[2026-04-28-brynjolfsson-canaries-coal-mine\|Brynjolfsson et al. 2025]] | Automative vs. augmentative use (Anthropic Economic Index) | "Substitute vs. complement for labor" |
 | [[2026-04-28-anthropic-economic-index-q4-2025\|Anthropic Economic Index, 4th report]] | Longitudinal Claude.ai split (52% augmentation / 45% automation in Nov 2025) | "Directive / Feedback Loop / Task Iteration / Learning / Validation" |
+| [[2026-04-28-dellacqua-jagged-technological-frontier\|Dell'Acqua et al. 2026 (Jagged Frontier)]] | Per-task AI fit determines whether AI augments or harms; introduces "jagged frontier" | "Inside the frontier" (augmentation works) vs. "outside the frontier" (AI degrades performance) |
 
 When four independent sources arrive at the same cut from different angles (theory, strategy, vendor framing, and large-scale payroll data), the distinction is robust enough to be a load-bearing concept in the wiki.
 

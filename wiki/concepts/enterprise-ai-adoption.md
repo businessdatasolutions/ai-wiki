@@ -18,6 +18,10 @@ Multiple complementary lenses are used by sources in this wiki:
 
 **Readiness lens** ([[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]): only **13% of companies globally are ready** to leverage AI to its full potential. Two-thirds (68%) say their infrastructure is at best moderately ready. **98% feel increased urgency** over the past year, **85% give themselves <18 months** to deploy a strategy.
 
+**Capabilities lens** ([[2026-04-28-warner-wager-dynamic-capabilities-digital-transformation|Warner & Wäger 2019]]): adoption is the result of a system of **digital sensing / digital seizing / digital transforming** dynamic capabilities — nine microfoundations including digital scouting, scenario planning, mindset crafting, rapid prototyping, portfolio balancing, strategic agility, ecosystem navigation, structural redesign, and digital-maturity improvement. See [[dynamic-capabilities]].
+
+**Foresight lens** ([[2026-04-28-webb-strategic-foresight|Webb 2024]] / [[2026-04-28-ftsg-convergence-outlook-2026|FTSG 2026]]): adoption decisions sit downstream of strategic foresight — the disciplined process of signal detection → trend identification → scenarios → strategy. See [[strategic-foresight]].
+
 **Org-design lens** ([[2026-04-28-werner-lebrun-octopus-organization|Werner-Le-Brun]]): organizations are either **Tin Man Orgs** (predictability-optimized for a complicated world) or **Octopus Orgs** (adaptive, distributed, customer-centric for a complex world). **Just 12% of transformation efforts** show sustainable performance gains.
 
 **Task lens** ([[2026-04-28-anand-wu-genai-playbook|Anand-Wu]]): a 2×2 matrix on **cost of errors × type of knowledge** decides where to deploy GenAI on a per-task basis (no regrets / creative catalyst / quality control / human-first zones).

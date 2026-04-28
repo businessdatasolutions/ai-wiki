@@ -1,0 +1,26 @@
+---
+type: entity
+kind: organization
+aliases: ["Ivey Business School", "Ivey", "Ivey Business School at Western University"]
+tags: [ivey, business-school, western-university, canada]
+---
+
+# Ivey Business School
+
+Business school at Western University, London, Ontario, Canada. Notable for case-method teaching tradition.
+
+Houses [[Innovation North]] — a research-practice initiative on systems-level innovation cited in [[2026-04-28-bansal-birkinshaw-systems-thinking]].
+
+## Affiliated authors in this wiki
+
+- [[Tima Bansal]] — Canada Research Chair in Business Sustainability
+- [[Julian Birkinshaw]] — Dean
+
+## Mentioned in
+
+```dataview
+LIST
+FROM "wiki/sources"
+WHERE contains(file.outlinks, this.file.link) OR contains(tags, "ivey")
+SORT file.name ASC
+```

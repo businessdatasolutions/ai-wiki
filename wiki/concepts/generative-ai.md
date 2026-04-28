@@ -44,6 +44,16 @@ The framework lets the wiki track GenAI productivity, complexity, and autonomy a
 - Success rate falls slightly with complexity (70% → 66% from sub-HS to college-degree tasks).
 - Aggregate productivity contribution: **+1.0 to +1.2 pp/yr** (reliability-adjusted) — see [[ai-employment-effects]].
 
+### Field-experimental evidence of GPT-4 in knowledge work ([[2026-04-28-dellacqua-jagged-technological-frontier|Dell'Acqua et al. 2026]])
+
+A preregistered RCT with 758 [[Boston Consulting Group|BCG]] consultants:
+
+- **Inside the AI capability frontier**: AI users +12.2% completion, +25.1% faster, +33.9% quality (Cohen *d* ≈ 0.96).
+- **Outside the frontier**: AI users 19 pp *less* likely to be correct on a deliberately AI-defeating task.
+- Both bottom-half-skill (+31%) and top-half-skill (+11%) consultants gain; AI is an equalizer even among elite professionals.
+
+This paper introduces the **[[jagged-frontier|jagged frontier]]** concept to describe the unevenness of GPT-4's capability across tasks of similar perceived difficulty — a per-task property, not a uniform feature.
+
 ### Capability gains in 2024
 
 - **AI video generation** breakthroughs: OpenAI's SORA, Stable Video Diffusion 3D and 4D, Meta's Movie Gen, Google DeepMind's Veo 2.

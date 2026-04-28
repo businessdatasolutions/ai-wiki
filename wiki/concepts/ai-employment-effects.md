@@ -104,6 +104,19 @@ The wiki's primary source for the customer-support productivity finding is now [
 
 The two-paper Brynjolfsson arc is the wiki's clearest illustration of the **task-level vs. occupation-level paradox**: same author, same lab, same methodological rigor, two complementary findings that together are more informative than either alone.
 
+### Equalizing effect within elite knowledge workers ([[2026-04-28-dellacqua-jagged-technological-frontier|Dell'Acqua et al. 2026]])
+
+A randomized field experiment with 758 [[Boston Consulting Group|BCG]] consultants finds:
+
+- **Bottom-half-skill** AI users (within an already elite professional sample) gain **+31%** on quality scores.
+- **Top-half-skill** users gain **+11%** — meaningfully more than zero.
+
+Both groups gain. The pattern echoes the within-occupation equalizing effect documented in [[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|customer support]], extended to high-end knowledge work, with the additional finding that top performers are *not* zero-gain in this domain.
+
+### Subjective coherence persists when correctness fails ([[2026-04-28-dellacqua-jagged-technological-frontier|Dell'Acqua et al. 2026]])
+
+Outside-the-[[jagged-frontier|frontier]] AI users produce more confident, more coherent recommendations even when their answers are wrong. This decouples *quality of presentation* from *quality of substance* — a labor-market signal that may mask poor performance from supervisors and clients in the short run.
+
 ### Convergence in communication patterns
 
 A specific finding from [[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|Brynjolfsson, Li & Raymond 2025]] worth flagging: AI access produces **convergence** — low-skill agents begin communicating more like high-skill agents. The mechanism appears to be that the AI, fine-tuned on top performers' conversations, propagates their communication patterns to less-experienced workers.
