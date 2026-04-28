@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Obsidian — per-machine state (commit the rest of .obsidian/ if/when it appears)
+.obsidian/workspace.json
+.obsidian/workspaces.json
+.obsidian/cache
+.obsidian/.trash/
+
+# Editor swap files
+*.swp
+*~

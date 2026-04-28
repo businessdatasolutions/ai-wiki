@@ -256,6 +256,8 @@ Append-only. Strict prefix so `grep "^## \[" wiki/log.md | tail -10` works as a 
 
 Permitted operations: `ingest`, `query`, `lint`, `synthesize`, `refactor`.
 
+**Gotcha — docstring at the top of `log.md`.** If `log.md` itself documents the format with a fenced code block like ```` ``` `` ## [YYYY-MM-DD]…`` `` ```` , `grep "^## \["` will match the example line as a phantom entry, polluting every query. Always use a 4-space-indented code block (or inline backticks) for the format example inside `log.md` itself — fenced code blocks are fine in this spec because nobody greps the spec for log entries.
+
 ## 10. Source-format pipelines
 
 | Source kind | Intake | Storage | Notes |
