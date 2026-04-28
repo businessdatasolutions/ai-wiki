@@ -16,15 +16,18 @@ contact: "erikb@stanford.edu"
 
 Brynjolfsson recurs across multiple sources and is the author of two of the most-cited empirical findings in the wiki:
 
-### 1. The "Equalizing Effect" customer-support study (2023)
+### 1. The "Equalizing Effect" customer-support study (2025 QJE / 2023 NBER WP)
 
-**Brynjolfsson, Li & Rock (2023)**, NBER 31161, published in *Quarterly Journal of Economics* 2025. Field experiment with 5,179 customer support agents finding:
-- **+14.2% issues resolved per hour** with generative AI assistant.
-- Productivity gains **emerged quickly** after AI introduction.
-- AI-exposed workers maintained **higher efficiency during AI outages** — the workers learned generalizable skills.
-- **Equalizing effect**: low-skill workers gained **34%**, high-skill workers gained ~0%.
+[[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|Brynjolfsson, Li & Raymond (2025)]] *"Generative AI at Work"*, **The Quarterly Journal of Economics 140 (2025): 889–942**. Working paper predecessor: NBER 31161 (2023). Field study with **5,172 customer-support agents**, **3M+ chats**, fall 2020 – early 2022, at a Fortune 500 firm using a GPT-3-based AI assistant. Key findings:
 
-Cited via [[2026-04-28-ai-index-report-2025|AI Index 2025]] §4.4 as the canonical productivity-gains study underwriting much of the AI-Index productivity narrative.
+- **+15% productivity** in resolutions per hour (preferred specification with year-month + agent + agent-tenure FE: +15.2%; +23.9% with location-only FE).
+- **Equalizing effect** with quality nuance: low-skill workers +30% RPH and quality up; **top performers small speed gains AND small quality DECLINE**.
+- AI-exposed workers maintain higher efficiency during AI outages — durable learning, not just real-time scaffolding.
+- **Treated 2-month-tenured agents perform like untreated 6-month-tenured agents** — AI accelerates the experience curve ~3×.
+- Convergence in communication patterns — low-skill agents begin communicating more like high-skill agents.
+- Customers more polite, less likely to escalate; reduced worker attrition driven by retention of newer workers.
+
+Note: the wiki previously cited the working-paper version (+14.2%) via [[2026-04-28-ai-index-report-2025|AI Index 2025]] §4.4. The QJE version of the paper is now the canonical primary source — slight upward revision and added **top-performer-quality-decline** nuance.
 
 ### 2. The "Canaries in the Coal Mine" employment study (2025)
 

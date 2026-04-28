@@ -70,9 +70,23 @@ This maps directly to [[2026-04-28-anand-wu-genai-playbook|Anand-Wu's]] "type of
 
 ### Productivity gains alongside employment declines
 
-[[2026-04-28-ai-index-report-2025|AI Index 2025]] §4.4 cites multiple AI productivity studies, notably **Brynjolfsson, Li & Rock (2023)** showing **+14.2% productivity** for customer support agents using AI, with **34% gains for low-skill workers** vs. ~0% for high-skill (the "equalizing effect").
+The wiki's primary source for the customer-support productivity finding is now [[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|Brynjolfsson, Li & Raymond (2025) QJE]] — "Generative AI at Work":
 
-Reconciling: AI raises individual productivity (especially for low-skill workers in a role) while reducing the number of workers needed in that role. Whether net employment goes up or down depends on **demand elasticity** — how much demand expands when costs fall. The customer-support equalizing effect at task level does not imply pro-employment outcomes at occupation level.
+- **+15% productivity** in resolutions per hour (with full year-month + agent + agent-tenure FE: +15.2%).
+- **30% gain for less-experienced / lower-skilled workers** with quality also improving.
+- Most-experienced / highest-skilled workers: **small speed gains AND small DECLINE in quality** — the equalizing effect is not strictly Pareto-improving.
+- AI accelerates the experience curve ~3×: treated 2-month-tenured agents perform like untreated 6+-month-tenured agents.
+- Effects are **durable** — workers maintain higher productivity even during AI outages, suggesting the AI is teaching skills rather than just providing real-time scaffolding.
+
+**Reconciling productivity gains with [[2026-04-28-brynjolfsson-canaries-coal-mine|the Canaries paper]] employment declines:** AI raises individual productivity (especially for low-skill workers in a role) while reducing the number of workers needed in that role. Whether net employment goes up or down depends on **demand elasticity** — how much demand expands when costs fall. The customer-support equalizing effect at task level does not imply pro-employment outcomes at occupation level.
+
+The two-paper Brynjolfsson arc is the wiki's clearest illustration of the **task-level vs. occupation-level paradox**: same author, same lab, same methodological rigor, two complementary findings that together are more informative than either alone.
+
+### Convergence in communication patterns
+
+A specific finding from [[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|Brynjolfsson, Li & Raymond 2025]] worth flagging: AI access produces **convergence** — low-skill agents begin communicating more like high-skill agents. The mechanism appears to be that the AI, fine-tuned on top performers' conversations, propagates their communication patterns to less-experienced workers.
+
+This adds a **skill-leveling dimension** to AI's labor effects — beyond raw productivity numbers, AI may be reducing within-role skill differentiation. Whether that's good (faster onboarding, lower training costs, better customer experience) or worrying (homogenization, loss of original problem-solving approaches, training-data degradation as top performers reduce their original contributions) is genuinely contested.
 
 ## Debates / contradictions
 

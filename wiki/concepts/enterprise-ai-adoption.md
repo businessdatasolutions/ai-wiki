@@ -151,12 +151,14 @@ Five rigorous empirical studies (n>200,000 across customer support, software, ma
 
 | Study | Task | Low-skill gain | High-skill gain |
 |---|---|---|---|
-| Brynjolfsson et al. 2023 | Customer support | 34% | ~0% |
+| **[[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work\|Brynjolfsson, Li & Raymond 2025 (QJE)]]** | Customer support | **30%** RPH; quality up | **~0% RPH; quality DOWN slightly** |
 | Dell'Acqua et al. 2023 | Consulting | 43.0% | 16.5% |
 | Cui et al. 2024 | Software engineering | 21–40% | 7–16% |
 | Hoffman et al. 2024 | Software engineering | 12–27% | 5–10% |
 
-Plus: Microsoft workplace study, Toner-Rodgers 2025 (materials scientists, +44.1% discovery / +39.4% patents / +17.2% prototypes). Source: [[2026-04-28-ai-index-report-2025|AI Index 2025]] §4.4.
+Plus: Microsoft workplace study, Toner-Rodgers 2025 (materials scientists, +44.1% discovery / +39.4% patents / +17.2% prototypes). Sources: [[2026-04-28-ai-index-report-2025|AI Index 2025]] §4.4 and (for the customer-support study) the primary source [[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|Brynjolfsson, Li & Raymond 2025 QJE]].
+
+**Important refinement (primary-source upgrade):** The Brynjolfsson, Li & Raymond customer-support study, in its Quarterly Journal of Economics version, reports the headline as **+15% RPH overall**, not the +14.2% from the NBER working paper version that was cited via the AI Index. **More importantly**: the equalizing effect is not "high-skill workers gain 0%" — it's "high-skill workers see *small speed gains AND a small DECLINE in quality* of their conversations." This nuance is load-bearing for [[automation-vs-augmentation]]: augmentation is positive overall and reliably equalizing for low-skill workers, but **not strictly Pareto-improving** at the top — and the long-run training-data quality of the AI system depends on top performers continuing to make original contributions, which the paper finds is being diluted.
 
 **Important caveat (added 2026-04-28 batch):** the equalizing effect is measured at the **task level within a role**, not at the **occupation level across firms**. As [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson, Chandar & Chen (2025)]] show using ADP payroll data, *employment* for early-career workers in highly AI-exposed occupations has declined ~13% relative since late 2022 — even as productivity per worker has risen. Both findings are true: AI raises individual productivity (especially for low-skill workers) *and* reduces the number of workers needed in automate-able roles. See [[ai-employment-effects]] and [[automation-vs-augmentation]].
 

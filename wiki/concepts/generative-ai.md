@@ -67,7 +67,12 @@ Anand-Wu compare this to the **MS-DOS → GUI transition** of the 1980s: not nec
 
 ### Automation vs. augmentation: a load-bearing distinction
 
-The strategic choice for any GenAI deployment is whether it **automates** work (substitutes for labor) or **augments** it (complements labor). [[automation-vs-augmentation]] tracks this as a standalone analytical lens. The empirical record (per [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson et al. 2025]]) shows the choice has real labor-market consequences: automation uses are correlated with declining entry-level employment in highly-exposed occupations, while augmentation uses are not.
+The strategic choice for any GenAI deployment is whether it **automates** work (substitutes for labor) or **augments** it (complements labor). [[automation-vs-augmentation]] tracks this as a standalone analytical lens. The empirical record:
+
+- **Augmentation effects (productivity)**: [[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|Brynjolfsson, Li & Raymond 2025 (QJE)]] is the canonical primary source. Customer-support AI built on **GPT-3**, designed explicitly to augment (not replace), produced **+15% productivity** with equalizing effect on low-skill workers (+30% RPH) and small quality decline at the top.
+- **Automation effects (employment)**: [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson, Chandar & Chen 2025]] shows the labor-market correlate: declining entry-level employment in occupations with high *automation* (not augmentation) shares of AI use, per ADP payroll data covering ~25M U.S. workers.
+
+The choice between automation and augmentation thus has measurable consequences on both productivity (augmentation positive) and labor markets (automation contracts entry-level employment). Most enterprise deployments today are augmentative; agents are increasingly automative — see [[ai-agents]].
 
 ## Debates / contradictions
 

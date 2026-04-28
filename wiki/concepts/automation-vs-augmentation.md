@@ -56,9 +56,28 @@ This finding is the wiki's first **measurable empirical correlate** of a distinc
 
 [[2026-04-28-mit-sloan-ai-maturity|MIT CISR]]'s Stage 4 ("AI future-ready") is described as "combining traditional, generative, agentic, and robotic AI" — which implies firms at that stage are deploying AI across the full automation/augmentation spectrum. Lower stages tend to lean augmentative (LLMs as tools); higher stages move toward more automation (agents, autonomous workflows).
 
-### 5. Productivity gains ([[2026-04-28-ai-index-report-2025|AI Index 2025]])
+### 5. Productivity gains under augmentation ([[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|primary source]])
 
-The [[2026-04-28-ai-index-report-2025|AI Index 2025]]-cited productivity studies (Brynjolfsson 2023 customer support, Dell'Acqua 2023 consulting, Cui 2024 software) all measure productivity gains from **augmentation** (AI as worker tool). The ~10–45% productivity gains are augmentation-mode results; we don't have equivalent rigorous studies of *pure-automation* productivity gains because those replace the worker entirely.
+The wiki's primary anchor for **augmentation's positive productivity effects** is [[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|Brynjolfsson, Li & Raymond (2025) "Generative AI at Work" QJE]]. The paper studies a customer-support AI that was **explicitly designed to augment**, not replace:
+
+- AI shows real-time suggestions only to the agent
+- Agents have **full discretion** to accept, edit, or ignore
+- The system **declines to suggest** when training data is insufficient — leaving agents to respond on their own
+- Authors describe this as "designed to augment (rather than replace) human agents"
+
+Headline result: **+15% productivity** with strong equalizing effect (low-skill +30%, high-skill ~0% with small quality decline). This is the wiki's cleanest empirical demonstration that **augmentation under deliberate human-in-the-loop design produces positive labor outcomes**. The [[2026-04-28-ai-index-report-2025|AI Index 2025]]-cited productivity studies (Dell'Acqua 2023 consulting, Cui 2024 software, Hoffman 2024 software) replicate the pattern across other domains.
+
+We do **not** have equivalent rigorous studies of *pure-automation* productivity gains in the wiki — because pure automation replaces the worker entirely, so "productivity per worker" is no longer a coherent measurement. The closest empirical signal we have for automation effects is occupation-level employment data ([[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson 2025 Canaries]]) showing entry-level employment declines in automate-able roles.
+
+### 6. The Pareto-improvement caveat ([[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|Brynjolfsson, Li & Raymond 2025]])
+
+A subtle finding worth flagging: augmentation under the customer-support AI is **not strictly Pareto-improving**. Top performers experience small speed gains AND **small quality declines**. The mechanism: top performers increase adherence to AI recommendations even when those recommendations are slightly worse than what they would have produced unaided.
+
+Two implications:
+- **Distributional**: augmentation reliably benefits low-skill workers but may marginally harm top performers' output quality.
+- **Long-run training-data risk**: if top performers reduce their original contributions, the AI's training data degrades over time. The AI's effectiveness on novel problems depends on continued original problem-solving from skilled workers.
+
+This is a genuine wrinkle in the "augmentation is benign / automation is contested" framing — even augmentation has distributional and long-run dynamics that the headline numbers obscure.
 
 ## The four-source convergence on the distinction
 
