@@ -1,0 +1,98 @@
+---
+type: concept
+aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
+tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design]
+---
+
+# Automation vs. Augmentation
+
+A conceptual distinction that recurs across the wiki's sources with growing empirical weight: **does this AI deployment substitute for human labor (automation), or complement it (augmentation)?** The choice has consequences in three layers — strategy (where to deploy), task design (how to integrate), and labor markets (who keeps their job).
+
+This page treats **automation vs. augmentation** as a standalone analytical lens, distinct from [[ai-agents]] (the technology), [[ai-employment-effects]] (the labor consequences), and [[enterprise-ai-adoption]] (the organizational decision-making).
+
+## Working definition
+
+The cleanest definition in the wiki comes from the [[Anthropic Economic Index]] used in [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson et al. 2025]]:
+
+- **Automative use** — Claude conversations classified as "Directive" (complete task delegation with minimal interaction) or "Feedback Loop" (task completion guided by environmental feedback such as repeatedly relaying coding errors to the model). The AI is doing the work; the human is monitoring or absent.
+- **Augmentative use** — conversations classified as "Task Iteration" (collaborative refinement), "Learning" (knowledge acquisition and understanding), or "Validation" (work verification and improvement). The human is doing the work, with AI as a tool/partner.
+- "None" — neither substituting nor complementing, e.g., chitchat or exploration.
+
+Note that these are **task-level** distinctions, not occupation-level. The same occupation can have both automative and augmentative AI uses; the empirical question is which dominates.
+
+## Why this distinction matters
+
+### 1. Strategic deployment ([[2026-04-28-anand-wu-genai-playbook|Anand-Wu]])
+
+The Anand-Wu 2×2 — cost of errors × type of knowledge — implicitly maps to automation vs. augmentation:
+
+| Quadrant | Automation/augmentation orientation |
+|---|---|
+| **No regrets zone** (low cost / explicit) | Pure **automation** — AI does it all, no human in the loop. Bulk customer inquiries, document summarization, résumé screening. |
+| **Creative catalyst zone** (low cost / tacit) | **Augmentation** — AI creates options, human selects. Marketing taglines, design variations. |
+| **Quality control zone** (high cost / explicit) | **Augmentation with strict verification** — AI produces, human verifies. Contract drafting (Harvey), code generation (Copilot), due diligence. |
+| **Human-first zone** (high cost / tacit) | **Light augmentation** — Human leads, AI assists with minor tasks. Strategy, hiring, disciplinary decisions. |
+
+Anand-Wu's strategic recommendation: deploy aggressively in the no-regrets zone (automation), use AI as a creative or quality-control partner elsewhere (augmentation), keep humans firmly in the lead in the human-first zone.
+
+### 2. Task design ([[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]])
+
+[[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]] frames the distinction as a question of **agency and oversight**: *"It's not about replacing roles. It's about where we can give agency, with some human oversight and governance, to improve tasks within a workflow."* — [[Liz Centoni]], Cisco.
+
+The chatbot → agent → multi-agent progression is a progression along the automation axis: more agency to AI, less direct human intervention.
+
+### 3. Labor market consequences ([[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson et al. 2025]])
+
+The strongest empirical signal in the wiki for why this distinction matters: **employment outcomes diverge sharply by automation vs. augmentation use.**
+
+- Occupations with highest **automation share**: declining employment for early-career workers (22–25).
+- Occupations with highest **augmentation share**: **NO** similar pattern — most-augmentative quintile shows fastest growth.
+
+> "Consistent with automative uses of AI substituting for labor while augmentative uses do not." — [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson et al. 2025]] Fact 3.
+
+This finding is the wiki's first **measurable empirical correlate** of a distinction that has otherwise lived as a strategic or philosophical framing.
+
+### 4. Maturity progression ([[2026-04-28-mit-sloan-ai-maturity|MIT CISR]])
+
+[[2026-04-28-mit-sloan-ai-maturity|MIT CISR]]'s Stage 4 ("AI future-ready") is described as "combining traditional, generative, agentic, and robotic AI" — which implies firms at that stage are deploying AI across the full automation/augmentation spectrum. Lower stages tend to lean augmentative (LLMs as tools); higher stages move toward more automation (agents, autonomous workflows).
+
+### 5. Productivity gains ([[2026-04-28-ai-index-report-2025|AI Index 2025]])
+
+The [[2026-04-28-ai-index-report-2025|AI Index 2025]]-cited productivity studies (Brynjolfsson 2023 customer support, Dell'Acqua 2023 consulting, Cui 2024 software) all measure productivity gains from **augmentation** (AI as worker tool). The ~10–45% productivity gains are augmentation-mode results; we don't have equivalent rigorous studies of *pure-automation* productivity gains because those replace the worker entirely.
+
+## The four-source convergence on the distinction
+
+Four wiki sources, with distinct vocabularies and methodologies, all draw essentially the same conceptual cut:
+
+| Source | Distinction | Vocabulary |
+|---|---|---|
+| [[2026-04-28-ai-index-report-2025\|AI Index 2025]] | Productivity studies on augmentation; no clean automation split | "AI use" (binary) |
+| [[2026-04-28-anand-wu-genai-playbook\|Anand-Wu]] | "No regrets zone" (automation) vs. other three quadrants (augmentation) | "Cost of errors × type of knowledge" |
+| [[2026-04-28-mittri-cisco-ai-enabled-enterprise\|MITTRI/Cisco]] | "Replace vs. give agency with oversight" | "Chatbot → agent → multi-agent" progression |
+| [[2026-04-28-brynjolfsson-canaries-coal-mine\|Brynjolfsson et al. 2025]] | Automative vs. augmentative use (Anthropic Economic Index) | "Substitute vs. complement for labor" |
+
+When four independent sources arrive at the same cut from different angles (theory, strategy, vendor framing, and large-scale payroll data), the distinction is robust enough to be a load-bearing concept in the wiki.
+
+## Debates / contradictions
+
+- **Is the cut binary or continuous?** Anthropic's Economic Index allows occupations to be classified as primarily-automative, primarily-augmentative, or mixed. In practice many AI uses sit on a continuum (e.g., a code assistant is augmentative when used for completion, automative when used for issue resolution). The dichotomy is useful for analysis but not always clean in the wild.
+- **Does augmentation reliably *not* displace labor?** [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson 2025]]'s Fact 3 finds no displacement in augmentative uses *for young workers*. But long-run effects (productivity J-curve, demand elasticity, eventual task automation) might cause augmentative deployments to slide toward automation over time.
+- **Augmentation can still concentrate gains.** The "equalizing effect" in [[2026-04-28-ai-index-report-2025|AI Index 2025]]'s productivity studies is at the worker level *within* a role. At the firm level, augmentation may still let the firm produce more with fewer workers — meaning the *individuals* who keep their jobs gain, but the *people who would have been hired* don't.
+- **The cut is observable now via Claude conversations.** The Anthropic Economic Index methodology — sampling millions of Claude conversations and classifying each as automative/augmentative/none — is a novel measurement instrument. Its reliability depends on Claude's user base being representative of LLM usage broadly. Cross-validation with other LLM telemetry would strengthen the methodology.
+
+## Related concepts
+
+- [[ai-employment-effects]] — the labor-market consequences of the automation/augmentation choice
+- [[enterprise-ai-adoption]] — the organizational decision-making layer
+- [[ai-agents]] — agents are concentrated on the automation side of the cut
+- [[generative-ai]] — the technology underlying both modes
+- [[responsible-ai]] — labor displacement is an under-attended RAI concern
+
+## Mentioned in
+
+```dataview
+LIST
+FROM "wiki/sources"
+WHERE contains(file.outlinks, this.file.link) OR contains(tags, "automation") OR contains(tags, "augmentation")
+SORT file.name ASC
+```

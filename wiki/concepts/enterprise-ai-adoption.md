@@ -145,7 +145,7 @@ Most companies that report any financial impact estimate it as modest. Cost savi
 
 Source: [[2026-04-28-ai-index-report-2025|AI Index 2025]] §4.4.
 
-### Productivity (consistent equalizing effect)
+### Productivity (consistent equalizing effect at task level)
 
 Five rigorous empirical studies (n>200,000 across customer support, software, materials science, knowledge work) converge on **AI productivity gains in the 10–45% range**, with a robust **equalizing effect** — low-skill workers benefit more.
 
@@ -158,6 +158,8 @@ Five rigorous empirical studies (n>200,000 across customer support, software, ma
 
 Plus: Microsoft workplace study, Toner-Rodgers 2025 (materials scientists, +44.1% discovery / +39.4% patents / +17.2% prototypes). Source: [[2026-04-28-ai-index-report-2025|AI Index 2025]] §4.4.
 
+**Important caveat (added 2026-04-28 batch):** the equalizing effect is measured at the **task level within a role**, not at the **occupation level across firms**. As [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson, Chandar & Chen (2025)]] show using ADP payroll data, *employment* for early-career workers in highly AI-exposed occupations has declined ~13% relative since late 2022 — even as productivity per worker has risen. Both findings are true: AI raises individual productivity (especially for low-skill workers) *and* reduces the number of workers needed in automate-able roles. See [[ai-employment-effects]] and [[automation-vs-augmentation]].
+
 ### Workforce expectations (mixed and softening)
 
 McKinsey survey, via [[2026-04-28-ai-index-report-2025|AI Index 2025]] Fig 4.4.13:
@@ -166,6 +168,19 @@ McKinsey survey, via [[2026-04-28-ai-index-report-2025|AI Index 2025]] Fig 4.4.1
 - **23%** expect workforce increases.
 - **The share predicting workforce reductions has declined YoY.** Business leaders are becoming less convinced AI will shrink workforces in the near term.
 - **46% expect >20% of the workforce to need reskilling.**
+
+### Realized employment outcomes (Brynjolfsson et al. 2025)
+
+[[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson, Chandar & Chen (2025)]] use ADP payroll data covering ~25M U.S. workers (Jan 2021 – July 2025) to test whether AI is yet displacing human labor. The empirical correlate of the McKinsey expectations:
+
+- **Early-career workers (ages 22–25) in the most AI-exposed occupations: ~13% relative decline** in employment since late 2022 (firm-time-effects-controlled).
+- Software developers ages 22–25: nearly **20%** decline from peak in late 2022.
+- Older workers in same occupations: stable or growing.
+- Concentrated in **automation** uses (not augmentation) — see [[automation-vs-augmentation]].
+- Adjustments visible in **employment, not wages** (wage stickiness).
+- The McKinsey expectation that AI may not shrink overall headcount is *roughly* consistent with the Brynjolfsson finding that overall employment continues to grow — but with a critical compositional twist: the decreases are concentrated at the **entry level**, not spread evenly across all roles.
+
+This is the wiki's first **measurable empirical evidence** for AI labor displacement, distinct from survey data on expectations. See [[ai-employment-effects]].
 
 ### Integration depth correlates with productivity payoff
 

@@ -101,6 +101,24 @@ A specific tension that surfaces across organizations: **how to permit AI experi
 
 This is operationally concrete and worth pairing with the MIT CISR Stewardship pillar — which solves the same problem from the architecture-review-board angle.
 
+### Labor-market disruption as an under-attended RAI concern
+
+The standard RAI taxonomy (incidents, bias, factuality, governance, transparency, security) is missing a major real-world concern: **AI's measurable effects on labor markets**. As of late 2025, the empirical evidence is no longer abstract — see [[ai-employment-effects]] and [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson, Chandar & Chen (2025)]].
+
+The headline finding worth integrating into RAI thinking:
+
+- **Early-career workers (ages 22–25) in the most AI-exposed occupations: ~13% relative decline** in employment since late 2022.
+- Decline is concentrated in **automation** uses (vs. augmentation) — see [[automation-vs-augmentation]].
+- The pattern is consistent with AI substituting for the **codified knowledge** that formal education provides; experienced workers' **tacit knowledge** is harder to substitute.
+
+For organizations, this is now an explicit RAI question: **what is the policy on the entry-level pipeline?** Concrete RAI-flavored questions raised by the data:
+
+- If AI deployments shrink your entry-level hiring, who will be the senior workforce in 10–15 years?
+- Are your AI deployments augmentative (which appear to leave employment intact) or automative (which appear to substitute for entry-level workers)?
+- What reskilling/training/internal-mobility commitments accompany each AI deployment decision?
+
+Most current RAI frameworks ([[2026-04-28-ai-index-report-2025|AI Index 2025]] §3, OECD/EU/UN/AU) under-weight this concern relative to bias, factuality, and security. Worth tracking when sources begin making this link explicitly.
+
 ## Debates / contradictions
 
 - **Open vs. closed model risk framing.** Open-weight models are increasingly close to closed-weight in capability ([[foundation-models]]) — does that change the policy calculus on disclosure / weights release?

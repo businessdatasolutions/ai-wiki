@@ -65,6 +65,10 @@ Anand-Wu compare this to the **MS-DOS → GUI transition** of the 1980s: not nec
 - **Bias persists.** GenAI continues to exhibit implicit biases (race, gender, occupation) despite explicit-bias mitigation. See [[responsible-ai]].
 - **The data commons is shrinking** — domains restricting AI training scrapers jumped from 5–7% to 20–33% in one year. Implications for training data quality and diversity.
 
+### Automation vs. augmentation: a load-bearing distinction
+
+The strategic choice for any GenAI deployment is whether it **automates** work (substitutes for labor) or **augments** it (complements labor). [[automation-vs-augmentation]] tracks this as a standalone analytical lens. The empirical record (per [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson et al. 2025]]) shows the choice has real labor-market consequences: automation uses are correlated with declining entry-level employment in highly-exposed occupations, while augmentation uses are not.
+
 ## Debates / contradictions
 
 - **Will inference-cost decline continue?** Hardware (-30%/yr) and energy efficiency (+40%/yr) trends support it; data-commons shrinkage (see [[responsible-ai]]) cuts the other way; energy-supply constraints (driving nuclear partnerships) are a third force.
