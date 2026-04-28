@@ -10,15 +10,50 @@ The pace, depth, and pattern by which organizations integrate AI into their busi
 
 ## Working definition
 
-For survey purposes ([[McKinsey & Company]] / [[AI Index]]), an organization is treated as "using AI" if it deploys AI **in at least one business function**. This is a low bar — it does not imply maturity or scale. The complementary metric for maturity is what proportion of *C-suite executives* describe their AI/GenAI rollouts as "mature."
+Two complementary lenses are used by sources in this wiki:
 
-The shape of adoption can be measured along several dimensions, each of which the [[AI Index]] tracks:
+**Breadth lens** ([[McKinsey & Company]] / [[2026-04-28-ai-index-report-2025|AI Index]]): an organization is "using AI" if it deploys AI in **at least one business function**. Low bar — captures adoption breadth, not depth.
+
+**Stage lens** ([[2026-04-28-mit-sloan-ai-maturity|MIT CISR / MIT Sloan]]): organizations are placed on a **four-stage AI maturity ladder** — from "Experiment and prepare" to "Become AI future-ready" — based on a 0–100% Total AI Effectiveness score combining operations, customer experience, and ecosystem-support effectiveness.
+
+The two lenses agree qualitatively: **most organizations are using AI in some form, but very few are actually mature.** The AI Index pegs "mature" at 1% (C-suite self-report on GenAI); MIT CISR pegs Stage 4 at 7% of firms. See [[ai-maturity-measurement-comparison]] for the methodological cross-walk.
+
+The shape of adoption can be measured along several dimensions:
 
 - **Breadth:** how many functions, regions, industries are using AI at all.
 - **Depth (maturity):** how integrated and value-generating those uses are.
 - **Use-case mix:** which functions and tasks are AI applied to.
 - **Financial impact:** measured cost savings and revenue gains by function.
 - **Workforce impact:** productivity, headcount expectations, reskilling needs.
+
+## The MIT CISR Four Stages of Enterprise AI Maturity
+
+A stage-based progression model from [[Stephanie Woerner]], [[Peter Weill]], Ina Sebastian, and Evgeny Káganer at [[MIT CISR]]. Distribution is from the MIT CISR 2022 Future Ready Survey (N=721) — note the 2022 baseline predates the GenAI explosion, so current distributions may differ.
+
+| Stage | Name | % (2022) | Defining attributes | Focus |
+|---|---|---|---|---|
+| 1 | Experiment and prepare | 28% | Workforce education; acceptable-use policies; data accessibility; humans-in-the-loop | Exploration and education |
+| 2 | Build pilots and capabilities | 34% | Process simplification & automation begun; use cases; APIs; LLMs (out-of-box + GenAI) augmenting work | Business cases and pilots |
+| 3 | Develop AI ways of working | 31% | Expanded automation; test-and-learn; architected for reuse; pretrained + proprietary models; autonomous agents | Scaling AI platforms and dashboards |
+| 4 | Become AI future-ready | **7%** | AI embedded in decision-making and processes; selling AI-augmented services; combining traditional + generative + agentic + robotic AI | Continuous innovation, new revenue streams |
+
+**The financial inflection is the Stage 2 → Stage 3 transition.** Stages 1–2 firms had financial performance below industry average; Stages 3–4 firms above. Source: [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan article]].
+
+### The "Four S" challenges to scale Stage 2 → Stage 3
+
+To make the leap from pilots (Stage 2) to embedded AI ways of working (Stage 3), MIT CISR identifies four organizational challenges:
+
+1. **Strategy** — Align AI investments with strategic goals; offer measurable, scalable value.
+2. **Systems** — Architect modular, interoperable platforms and data ecosystems for enterprise-wide intelligence.
+3. **Synchronization** — Create AI-ready people, roles, and teams; redesign work around AI capabilities.
+4. **Stewardship** — Embed and monitor compliant, human-centered, and transparent AI practices by design — see [[responsible-ai]].
+
+Driving the change requires a **united front among the CEO, CIO, chief strategy officer, and head of HR** — not a single function's effort.
+
+### Worked examples (from MIT CISR case studies)
+
+- **[[Guardian Life Insurance]]** (regulated US insurance): Automated RFP and quoting process — turnaround **1 week → 24 hours**. Embedded compliance/legal in architecture review boards. Reskilling into AI-focused roles.
+- **[[Italgas]]** (Europe's largest natural gas distributor): "Digital Factory" innovation hub since 2017; **300TB data platform, 23 AI models**; WorkOnSite (+40% construction speed, -80% inspections); DANA (GenAI network control); 30,000 hours of AI training in 2024; **commercialized WorkOnSite for €3M revenue in 2024**.
 
 ## Key claims
 
@@ -92,10 +127,12 @@ Necula et al. 2024 (Romanian survey, n=233): organizations with high AI integrat
 
 ## Debates / contradictions
 
-- **High adoption vs. low maturity.** 78% adoption + 1% mature describes an organization-wide scramble in early innings. Sources interpreting 78% as "AI is mainstream" are technically correct but misleading about depth.
+- **High adoption vs. low maturity.** 78% adoption + 1% mature (per AI Index) and 28%+34% in Stages 1–2 + only 7% Stage 4 (per MIT CISR) describe an organization-wide scramble in early innings. Sources interpreting 78% as "AI is mainstream" are technically correct but misleading about depth. See [[ai-maturity-measurement-comparison]].
+- **Methodology divergence between sources.** The AI Index uses McKinsey's binary "use in ≥1 function" instrument; MIT CISR uses a triangulated AI-effectiveness score across operations, CX, and ecosystem support, banded into 4 stages. Different definitions of "mature" — 1% (AI Index, GenAI specifically, C-suite self-report) vs. 7% (MIT CISR, Stage 4, score-based). [[ai-maturity-measurement-comparison]] tracks the cross-walk.
 - **Replacement vs. augmentation.** [[2026-04-28-ai-index-report-2025|AI Index 2025]] notes the workforce-reduction expectation is *declining*, hinting that early evidence supports augmentation (Jevons-paradox style demand expansion) over replacement. Open question: does that hold beyond 2024?
 - **Equalizing effect persistence.** Robust in early studies. Open question: as AI tools mature, do high-skill workers eventually catch up by leveraging more sophisticated workflows? Or does the effect deepen as agents handle more of what high-skill humans currently do?
-- **Methodology drift.** The AI Index 78% number comes from McKinsey's instrument. Whether year-over-year comparisons are apples-to-apples depends on McKinsey holding the survey design steady — worth flagging when sources cite the trend without examining the instrument.
+- **Methodology drift.** The AI Index 78% number comes from McKinsey's instrument; whether year-over-year comparisons are apples-to-apples depends on McKinsey holding the survey design steady. The MIT CISR Stage distribution comes from the **2022** Future Ready Survey, predating the GenAI explosion — so the 28/34/31/7 numbers should be read as *baseline*, not current.
+- **Where the financial inflection is.** [[2026-04-28-mit-sloan-ai-maturity|MIT CISR]] locates it specifically at **Stage 2 → Stage 3** (pilots → scaled ways of working). [[2026-04-28-ai-index-report-2025|AI Index 2025]]'s function-level financial-impact data shows modest gains across all functions but doesn't directly speak to *between-stage* gradients. The MIT CISR claim is a sharper, more actionable framing.
 
 ## Related concepts
 

@@ -7,20 +7,24 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 ## Sources
 
 - [[2026-04-28-ai-index-report-2025]] — Stanford HAI's 8th annual AI Index. 78% of orgs use AI / 71% use GenAI; only 1% mature; $109.1B U.S. private investment; inference cost cratered 280×.
+- [[2026-04-28-mit-sloan-ai-maturity]] — MIT Sloan article on MIT CISR's four-stage AI maturity framework (28/34/31/7 distribution; 7% Stage 4) and "Four S" challenges (Strategy/Systems/Synchronization/Stewardship) for scaling pilots.
 
 ## Entities
 
 - [[AI Index]] — Independent annual-report initiative at Stanford HAI; 8 editions through 2025.
+- [[MIT CISR]] — MIT Center for Information Systems Research; produces the Four Stages of AI Maturity framework.
 - [[Nestor Maslej]] — Editor-in-Chief of the AI Index at Stanford HAI; lead author of the 2025 report.
+- [[Peter Weill]] — Senior research scientist at MIT Sloan; chairman of MIT CISR.
 - [[Stanford HAI]] — Stanford Institute for Human-Centered Artificial Intelligence; publisher of the AI Index; founded 2019.
+- [[Stephanie Woerner]] — Principal research scientist at MIT Sloan; director of MIT CISR.
 
 ## Concepts
 
 - [[ai-benchmarks]] — Umbrella for standardized AI evaluations; covers MMLU, MMMU, GPQA, SWE-bench, HELM Safety, RE-Bench, etc.
-- [[enterprise-ai-adoption]] — Pace, depth, and pattern of org AI use; 78% adoption / 1% maturity is the 2024 signature.
+- [[enterprise-ai-adoption]] — Pace, depth, and pattern of org AI use; 78% adoption / 1% maturity (AI Index) and the four-stage maturity ladder + Four S framework (MIT CISR).
 - [[foundation-models]] — Large pretrained models that serve as substrate; industry produced 90% of notable 2024 models.
-- [[generative-ai]] — Content-generating AI; >20% of all AI private investment ($33.9B in 2024); driving the adoption jump.
-- [[responsible-ai]] — Risk-management discipline for AI; incidents +56.4% YoY; acknowledgment outpaces mitigation.
+- [[generative-ai]] — Content-generating AI; >20% of all AI private investment ($33.9B in 2024); driving the adoption jump and the agent push.
+- [[responsible-ai]] — Risk-management discipline for AI; incidents +56.4% YoY; acknowledgment outpaces mitigation; Stewardship as one of the Four S pillars.
 
 ## Syntheses
 
@@ -28,4 +32,4 @@ _(empty — first synthesis page will populate this)_
 
 ## Threads
 
-_(empty — first open question will populate this)_
+- [[ai-maturity-measurement-comparison]] — _open_. How do AI Index, MIT CISR, and other sources measure AI adoption/maturity? Where do they agree or diverge methodologically?

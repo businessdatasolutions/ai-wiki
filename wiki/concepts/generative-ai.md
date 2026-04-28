@@ -35,6 +35,15 @@ In the [[AI Index]] taxonomy, "Generative AI" is a sub-class of AI distinguished
 - **Smaller models matching big ones**: Microsoft's Phi-3-mini (3.8B params) matched the 60% MMLU threshold previously held by PaLM (540B) — **142× reduction in 2 years**.
 - AI agents show early promise: **RE-Bench** results — top systems score 4× human experts in 2-hour budgets, but humans win 2:1 at 32 hours. Already match human expertise on select tasks (e.g., writing Triton kernels).
 
+### Agents in enterprise AI maturity
+
+GenAI is increasingly the substrate for **autonomous agents** showing up in enterprise deployments — and where they appear is informative about an organization's maturity level:
+
+- [[2026-04-28-mit-sloan-ai-maturity|MIT CISR's Four Stages framework]] places **autonomous agents** as a *Stage 3* attribute ("expanding process automation; exploring autonomous agents"), and combining "traditional + generative + agentic + robotic AI" as a *Stage 4* attribute (the top 7% of firms).
+- Concrete enterprise example: **[[Italgas]]'s DANA** — a generative-AI-based network control system for natural gas distribution infrastructure. Source: [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan article]].
+- Concrete vendor example: **Salesforce Agentforce** (launched September 2024) — autonomous agents for business operations. Source: [[2026-04-28-ai-index-report-2025|AI Index 2025]] §4.1 timeline.
+- The agent story is less about model capability and more about **orchestration + business-process integration** — which is why agents appear at the higher maturity stages rather than at the start of adoption.
+
 ### Limits
 
 - **Complex reasoning remains brittle.** AI excels at IMO problems but **fails PlanBench** (logical planning) even when provably correct solutions exist. Limits effectiveness in high-stakes settings where precision is critical.

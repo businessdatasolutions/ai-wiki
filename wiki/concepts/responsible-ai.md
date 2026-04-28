@@ -68,6 +68,13 @@ Closely related but not identical: **AI safety** (often used to mean alignment /
 
 - RAI papers at major AI conferences: **992 (2023) → 1,278 (2024) = +28.8% YoY**. Continuing a steady annual rise since 2019. Source: [[2026-04-28-ai-index-report-2025|AI Index 2025]] §3 Highlight 10.
 
+### RAI as operationalized stewardship (not just principles)
+
+- [[2026-04-28-mit-sloan-ai-maturity|MIT CISR's Four S framework]] places **Stewardship** as one of the four organizational challenges to scale AI from pilots (Stage 2) to embedded ways of working (Stage 3) — alongside Strategy, Systems, and Synchronization. Concretely, this means RAI lives in **architecture review boards, governance integrated with risk/legal/compliance, and "by design" rather than "by audit"**.
+- Worked example: **[[Guardian Life Insurance]]** (regulated US insurance) — embedded governance with risk, legal, and compliance teams; architecture reviews via formal *and* fast-track boards so privacy, security, and regulatory requirements are built into new AI solutions at design time. Source: [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan article]].
+- Worked example: **[[Italgas]]** — governance via a Chief People, Innovation & Transformation Officer + an AI Officer + a Group AI Office, overseeing integration and monitoring. Initiatives balance efficiency with new business opportunity (commercializing WorkOnSite generated €3M revenue in 2024). Source: [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan article]].
+- This framing complements the policy-level RAI literature (OECD/EU/UN/AU frameworks) by giving the *organizational mechanism* for how policy principles get translated into procurement and design decisions.
+
 ## Debates / contradictions
 
 - **Open vs. closed model risk framing.** Open-weight models are increasingly close to closed-weight in capability ([[foundation-models]]) — does that change the policy calculus on disclosure / weights release?
