@@ -5,13 +5,13 @@ import { InjectAliases } from "./extensions/inject-aliases"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Karpathy Wiki",
+    pageTitle: "AI-Wiki",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: null,
     locale: "en-US",
-    baseUrl: "witusj.github.io/karpathy-wiki",
+    baseUrl: "businessdatasolutions.github.io/ai-wiki",
     ignorePatterns: [
       "private",
       "templates",

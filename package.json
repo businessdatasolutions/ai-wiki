@@ -1,6 +1,6 @@
 {
-  "name": "karpathy-wiki",
-  "description": "Frontend for the Karpathy Wiki, built with Quartz",
+  "name": "ai-wiki",
+  "description": "Frontend for the AI-Wiki, built with Quartz",
   "private": true,
   "version": "0.1.0",
   "type": "module",
