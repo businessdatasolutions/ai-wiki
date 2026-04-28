@@ -35,6 +35,20 @@ Major one-year benchmark gains in 2024 ([[2026-04-28-ai-index-report-2025|AI Ind
 - **PlanBench** — logical planning; AI **fails consistently** even when provably correct solutions exist.
 - **RE-Bench** — agent evaluation: in 2-hour budgets AI scores **4× human experts**, but humans win **2:1 at 32 hours**.
 
+### Task horizons ([[METR]] / [[2026-04-28-anthropic-economic-index-q4-2025|Anthropic Economic Index, 4th report]])
+
+A complement to single-shot benchmarks: **task horizons** measure the *duration* of tasks at which an AI achieves a given success rate. [[METR]] introduced this measure; the Anthropic Economic Index applies the same lens to its own data.
+
+For [[Claude Sonnet 4.5]], the duration at which 50% success is achieved varies sharply by source:
+
+| Source | 50% success threshold |
+|---|---|
+| METR (fixed-task benchmark) | ~2 hours |
+| Anthropic 1P API | ~3.5 hours |
+| Anthropic Claude.ai | ~19 hours |
+
+Per the Anthropic report, the Claude.ai number is much higher because of selection bias (users bring tasks they expect Claude to succeed on) and task decomposition with feedback loops. The methodology gap is itself diagnostic — fixed-benchmark horizons and platform-observed effective horizons measure different things.
+
 ### Benchmark roster (mentioned in this wiki, awaiting standalone pages)
 
 | Benchmark | Domain | Status as of [[2026-04-28-ai-index-report-2025|AI Index 2025]] |

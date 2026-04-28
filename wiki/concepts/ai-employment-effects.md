@@ -68,6 +68,28 @@ This maps directly to [[2026-04-28-anand-wu-genai-playbook|Anand-Wu's]] "type of
 
 [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson et al. 2025]] empirical correlate: those expected decreases are showing up in the data, **disproportionately at the entry level**, not uniformly across all roles. The McKinsey expectation that AI may not shrink overall headcount (only 8% expect >20% decrease) is consistent with the Brynjolfsson finding that *overall* employment continues to grow.
 
+### Aggregate productivity estimate ([[2026-04-28-anthropic-economic-index-q4-2025|Anthropic Economic Index, 4th report]])
+
+Anthropic's earlier estimate that widespread AI adoption could add **+1.8 pp/yr** to U.S. labor productivity growth is revised in the fourth report once task-level reliability is accounted for:
+
+- **+1.2 pp/yr** for tasks completed on Claude.ai
+- **+1.0 pp/yr** for tasks completed on the 1P API (more challenging task mix)
+
+Even +1 pp/yr would return U.S. productivity growth to late-1990s / early-2000s rates. The estimate does not account for further model improvement or for AI use becoming more sophisticated.
+
+### Effective AI coverage at the occupation level ([[2026-04-28-anthropic-economic-index-q4-2025|Anthropic Economic Index, 4th report]])
+
+The fourth Anthropic report introduces **effective AI coverage** — the share of a worker's *time-weighted duties* that Claude could *successfully* perform. Outliers when this is plotted against simple task coverage:
+
+- Effective coverage *exceeds* task coverage: **data entry keyers, radiologists, medical transcriptionists**.
+- Effective coverage is *below* task coverage: **teachers, software developers**.
+
+Pooled across all reports through Nov 2025: 49% of jobs have Claude used for at least 25% of their tasks (up from 36% in Jan 2025), but the success-weighted picture is more uneven.
+
+### Task-content shift and deskilling ([[2026-04-28-anthropic-economic-index-q4-2025|Anthropic Economic Index, 4th report]])
+
+A finding distinct from displacement and from wage effects: AI-covered tasks skew toward higher-education content (Claude-covered: 14.4 years average; economy-wide: 13.2 years). As a first-order effect, removing AI-covered tasks from a job *deskills* the remaining task mix on average — shifting it toward lower-education content while the job itself persists. Most-affected named occupations: technical writers, travel agents, teachers. See [[ai-deskilling]] for the dedicated concept page.
+
 ### Productivity gains alongside employment declines
 
 The wiki's primary source for the customer-support productivity finding is now [[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|Brynjolfsson, Li & Raymond (2025) QJE]] — "Generative AI at Work":
@@ -99,6 +121,7 @@ This adds a **skill-leveling dimension** to AI's labor effects — beyond raw pr
 ## Related concepts
 
 - [[automation-vs-augmentation]] — the conceptual cut driving the empirical pattern
+- [[ai-deskilling]] — task-composition shift within retained jobs (distinct mechanism from displacement)
 - [[enterprise-ai-adoption]] — the organizational decision-making side
 - [[generative-ai]] — the technology driving the displacement
 - [[ai-agents]] — concentrated in the automation quadrant where employment is declining

@@ -69,7 +69,20 @@ Headline result: **+15% productivity** with strong equalizing effect (low-skill 
 
 We do **not** have equivalent rigorous studies of *pure-automation* productivity gains in the wiki — because pure automation replaces the worker entirely, so "productivity per worker" is no longer a coherent measurement. The closest empirical signal we have for automation effects is occupation-level employment data ([[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson 2025 Canaries]]) showing entry-level employment declines in automate-able roles.
 
-### 6. The Pareto-improvement caveat ([[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|Brynjolfsson, Li & Raymond 2025]])
+### 6. Longitudinal split on Claude.ai ([[2026-04-28-anthropic-economic-index-q4-2025|Anthropic Economic Index, 4th report]])
+
+The [[Anthropic Economic Index]] tracks the augmentation/automation split on Claude.ai across reports. The current trajectory:
+
+| Sample period | Augmentation | Automation |
+|---|---|---|
+| January 2025 | 55% | 41% |
+| March 2025 | 55% | 42% |
+| August 2025 | 47% | 49% |
+| November 2025 | 52% | 45% |
+
+Augmentation has led in three of four samples; the August 2025 sample was the only one where automation led. The series provides a quarterly cadence on which dimension dominates, measured at population scale via classification of ~1M Claude.ai conversations per sample.
+
+### 7. The Pareto-improvement caveat ([[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|Brynjolfsson, Li & Raymond 2025]])
 
 A subtle finding worth flagging: augmentation under the customer-support AI is **not strictly Pareto-improving**. Top performers experience small speed gains AND **small quality declines**. The mechanism: top performers increase adherence to AI recommendations even when those recommendations are slightly worse than what they would have produced unaided.
 
@@ -89,6 +102,7 @@ Four wiki sources, with distinct vocabularies and methodologies, all draw essent
 | [[2026-04-28-anand-wu-genai-playbook\|Anand-Wu]] | "No regrets zone" (automation) vs. other three quadrants (augmentation) | "Cost of errors × type of knowledge" |
 | [[2026-04-28-mittri-cisco-ai-enabled-enterprise\|MITTRI/Cisco]] | "Replace vs. give agency with oversight" | "Chatbot → agent → multi-agent" progression |
 | [[2026-04-28-brynjolfsson-canaries-coal-mine\|Brynjolfsson et al. 2025]] | Automative vs. augmentative use (Anthropic Economic Index) | "Substitute vs. complement for labor" |
+| [[2026-04-28-anthropic-economic-index-q4-2025\|Anthropic Economic Index, 4th report]] | Longitudinal Claude.ai split (52% augmentation / 45% automation in Nov 2025) | "Directive / Feedback Loop / Task Iteration / Learning / Validation" |
 
 When four independent sources arrive at the same cut from different angles (theory, strategy, vendor framing, and large-scale payroll data), the distinction is robust enough to be a load-bearing concept in the wiki.
 

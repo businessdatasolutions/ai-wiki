@@ -8,6 +8,7 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 
 - [[2026-04-28-ai-index-report-2025]] — Stanford HAI's 8th annual AI Index. 78% of orgs use AI / 71% use GenAI; only 1% mature; $109.1B U.S. private investment; inference cost cratered 280×.
 - [[2026-04-28-anand-wu-genai-playbook]] — HBR Nov–Dec 2025. Anand (NYU Stern Dean) & Wu (HBS) introduce a 2×2 framework for where to deploy GenAI (cost of errors × type of knowledge); paradox-of-access argument; six leakage points exhibit.
+- [[2026-04-28-anthropic-economic-index-q4-2025]] — Anthropic Economic Research, 15 Jan 2026. Fourth Anthropic Economic Index report. Introduces five "economic primitives"; speedup scales with task complexity (9× HS / 12× college); 52% augmentation vs. 45% automation on Claude.ai (Nov 2025); first-order deskilling thesis; +1.0–1.2 pp/yr aggregate productivity (reliability-adjusted).
 - [[2026-04-28-brynjolfsson-canaries-coal-mine]] — Stanford Digital Economy Lab working paper, Aug 2025. ADP payroll data showing early-career workers (22–25) in AI-exposed occupations have ~13% relative decline since late 2022; concentrated in automation not augmentation.
 - [[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work]] — Quarterly Journal of Economics, Feb 2025 (peer-reviewed). Customer-support AI study with 5,172 agents at Fortune 500 firm; +15% productivity; equalizing effect with small quality decline at top performers; augmentation by design.
 - [[2026-04-28-gomaa-lean-4-0]] — Open-access academic paper. Strategic roadmap for integrating Lean Manufacturing with Industry 4.0 technologies; 23 × 23 mapping of Lean tools to I4.0 technologies; off-theme but adds the manufacturing lens.
@@ -20,10 +21,13 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 - [[AI Index]] — Independent annual-report initiative at Stanford HAI; 8 editions through 2025.
 - [[Amazon Web Services]] — Cloud hyperscaler; Anthropic partnership ($8B total); host of the Octopus-Org executives-in-residence program.
 - [[Andy Wu]] — HBS Associate Professor (Strategy Unit); Wharton Mack Institute senior fellow; co-author of the 2×2 GenAI Playbook.
+- [[Anthropic]] — AI safety and research company; publisher of Claude and the Anthropic Economic Index; ~$8B total AWS investment.
+- [[Anthropic Economic Index]] — Recurring measurement initiative by Anthropic; four reports through Jan 2026; introduces "economic primitives" framework in fourth report.
 - [[Bharat N. Anand]] — Dean & Professor at NYU Stern; co-author of the 2×2 GenAI Playbook.
 - [[Cisco]] — Tech vendor; sponsor of MITTRI/Cisco report; source of the 5-foundations framework and the chatbot → agent → multi-agent progression.
 - [[Erik Brynjolfsson]] — Stanford economist; director of Stanford Digital Economy Lab; AI Index steering committee; lead author of the customer-support productivity study (2023) and the Canaries-in-the-Coal-Mine employment study (2025).
 - [[Harvard Business Review]] — Management magazine; publisher of the Anand-Wu and Werner-Le-Brun Nov–Dec 2025 articles.
+- [[METR]] — AI evaluations organization; introduced task-horizon benchmark (50%-success duration); referenced by the fourth Anthropic Economic Index report.
 - [[MIT CISR]] — MIT Center for Information Systems Research; produces the Four Stages of AI Maturity framework.
 - [[MIT Technology Review Insights]] — Custom publishing arm of MIT Technology Review; publisher of MITTRI/Cisco report.
 - [[Nestor Maslej]] — Editor-in-Chief of the AI Index at Stanford HAI; lead author of the 2025 report.
@@ -35,8 +39,9 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 ## Concepts
 
 - [[ai-agents]] — Software systems pursuing complex goals autonomously; chatbot → agent → multi-agent progression; deployed today in low-cost-of-error tasks.
-- [[ai-benchmarks]] — Umbrella for standardized AI evaluations; covers MMLU, MMMU, GPQA, SWE-bench, HELM Safety, RE-Bench, etc.
-- [[ai-employment-effects]] — Empirical record of AI's effects on jobs, hiring, and wages. Headline: ~13% relative decline for early-career workers in AI-exposed occupations.
+- [[ai-benchmarks]] — Umbrella for standardized AI evaluations; covers MMLU, MMMU, GPQA, SWE-bench, HELM Safety, RE-Bench, METR task horizons, etc.
+- [[ai-deskilling]] — Task-composition shift mechanism: jobs persist while higher-education-content tasks are AI-handled; most-affected named occupations include technical writers, travel agents, teachers.
+- [[ai-employment-effects]] — Empirical record of AI's effects on jobs, hiring, and wages. Headline: ~13% relative decline for early-career workers in AI-exposed occupations; +1.0–1.2 pp/yr aggregate productivity contribution (reliability-adjusted).
 - [[automation-vs-augmentation]] — A load-bearing distinction: does AI substitute for labor or complement it? Strategic, task-design, and labor-market consequences.
 - [[enterprise-ai-adoption]] — Pace, depth, and pattern of org AI use; five-lens framework (breadth, stage, readiness, org-design, task); Anand-Wu 2×2 + leakage diagnostic; MIT CISR Four Stages + Four S.
 - [[foundation-models]] — Large pretrained models that serve as substrate; industry produced 90% of notable 2024 models.

@@ -27,6 +27,23 @@ In the [[AI Index]] taxonomy, "Generative AI" is a sub-class of AI distinguished
 - Top use cases (% of orgs deploying GenAI for this function): marketing strategy content (27%), knowledge management (19%), personalization (19%), design (14%), code creation (13%).
 - **Only 1% of C-suite executives describe their GenAI rollouts as "mature."** Most are still capturing value at small scale. See [[enterprise-ai-adoption]].
 
+### Measurement framework: economic primitives ([[2026-04-28-anthropic-economic-index-q4-2025|Anthropic Economic Index, 4th report]])
+
+The fourth [[Anthropic Economic Index]] report introduces five **economic primitives** for measuring real-world GenAI use, derived from privacy-preserving classification of Claude conversations:
+
+1. **Task complexity** — human time without AI; multi-tasking within a conversation
+2. **Human and AI skill level** — years of education needed to understand prompts and responses
+3. **Use case** — work / education / personal
+4. **AI autonomy** — degree of delegation, from collaboration to fully directive
+5. **Task success** — whether the task was completed
+
+The framework lets the wiki track GenAI productivity, complexity, and autonomy at population scale (~1M Claude.ai conversations + ~1M API transcripts per sample). Headline numbers from the November 2025 sample:
+
+- Tasks needing high-school education: **~9× speedup** on Claude.ai.
+- Tasks needing a college degree: **~12× speedup** on Claude.ai (greater on API).
+- Success rate falls slightly with complexity (70% → 66% from sub-HS to college-degree tasks).
+- Aggregate productivity contribution: **+1.0 to +1.2 pp/yr** (reliability-adjusted) — see [[ai-employment-effects]].
+
 ### Capability gains in 2024
 
 - **AI video generation** breakthroughs: OpenAI's SORA, Stable Video Diffusion 3D and 4D, Meta's Movie Gen, Google DeepMind's Veo 2.
