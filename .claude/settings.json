@@ -10,7 +10,9 @@
       "Bash(node -e ' *)",
       "Bash(curl -sf http://localhost:8080/)",
       "Skill(commit-commands:commit-push-pr)",
-      "Skill(commit-commands:commit-push-pr:*)"
+      "Skill(commit-commands:commit-push-pr:*)",
+      "Bash(gh pr *)",
+      "Bash(git stash *)"
     ]
   }
 }
