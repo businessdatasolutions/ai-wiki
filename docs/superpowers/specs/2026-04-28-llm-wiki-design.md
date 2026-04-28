@@ -114,7 +114,7 @@ Path: `wiki/entities/<Canonical Name>.md`. Title-case; aliases live in frontmatt
 ```yaml
 ---
 type: entity
-kind: person | org | product | place | event
+kind: person | org | project | product | place | event
 aliases: ["AV", "Vaswani"]
 tags: [ml-researcher, google-brain]
 ---
@@ -357,6 +357,8 @@ Each decision below was settled during the brainstorming session on 2026-04-28. 
 | 10 | Supervised one-at-a-time ingest as default | Karpathy's recommendation; matches "discuss takeaways" step | Easy — add batch mode |
 | 11 | Log prefix `## [YYYY-MM-DD] <op> \| <title>` | Karpathy spec; greppable | Hard — log-wide rewrite |
 | 12 | Reports get their own folder + `kind: report`, not folded into `papers/` | Reports differ from peer-reviewed papers in tone, audience, and use (exec summaries quoted verbatim, citations less rigorous). Tags handle sub-type (consultancy / government / equity-research / ngo). Added 2026-04-28 in response to first real-use question. | Easy — folder rename, frontmatter sweep |
+| 13 | Entity `kind:` enum extended to include `project` | The [[AI Index]] is a project/initiative within [[Stanford HAI]], not an org per se. `kind: org` would have been a forced fit. Surfaced during first real ingest. | Easy — frontmatter sweep |
+| 14 | Defer wikilinks to dangling for entities not yet given pages | First-ingest principle: avoid stub-spam by linking to entities that don't yet have pages, letting Obsidian's "create from link" be the trigger when the user wants to flesh them out. Better than 30 stub pages with one sentence each. Confirmed during AI Index ingest where ~30 candidates (OpenAI, Anthropic, individual benchmarks, etc.) were deferred. | Soft policy — no migration cost |
 
 ---
 
