@@ -10,3 +10,20 @@
 # Editor swap files
 *.swp
 *~
+
+# Raw source binaries — kept local-only for copyright/distribution reasons.
+# Wiki content (sources/, entities/, concepts/, syntheses/, threads/) is the
+# durable, redistributable artifact; raw/ holds your provenance. Each wiki
+# source page cites its raw file; readers of the public repo can locate the
+# original via the citation.
+raw/**/*.pdf
+raw/**/*.docx
+raw/**/*.epub
+raw/**/*.mobi
+raw/**/*.mp4
+raw/**/*.mp3
+raw/**/*.png
+raw/**/*.jpg
+raw/**/*.jpeg
+raw/**/*.gif
+raw/**/*.webm
