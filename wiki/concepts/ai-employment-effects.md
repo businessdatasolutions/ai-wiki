@@ -104,6 +104,16 @@ The wiki's primary source for the customer-support productivity finding is now [
 
 The two-paper Brynjolfsson arc is the wiki's clearest illustration of the **task-level vs. occupation-level paradox**: same author, same lab, same methodological rigor, two complementary findings that together are more informative than either alone.
 
+### Crowdsourcing labor markets and HAI substitution ([[2026-04-29-boussioux-crowdless-future|Boussioux et al. 2024]])
+
+A field study comparing **human crowd** (HC, n=125 global Freelancer.com solvers) vs **human-AI** (HAI, single prompt engineer + GPT-4) on a circular-economy ideation challenge finds:
+
+- HC retains a **novelty advantage** (especially at the top decile of solutions).
+- HAI delivers **higher strategic viability, environmental value, financial value, and overall quality**.
+- Cost: HAI ~**$27** vs HC ~**$2,555** (≈94× cost reduction); time: ~5.5 hours vs ~2,520 human-hours.
+
+This is direct evidence on **substitution dynamics in crowdsourcing labor markets** (Freelancer.com–style platforms): HAI may displace HC for value/quality-oriented tasks while HC retains a comparative advantage on extreme novelty. The paper does not predict full crowd displacement; the authors frame the patterns as complementary, with HAI augmenting early-innovation phases.
+
 ### Equalizing effect within elite knowledge workers ([[2026-04-28-dellacqua-jagged-technological-frontier|Dell'Acqua et al. 2026]])
 
 A randomized field experiment with 758 [[Boston Consulting Group|BCG]] consultants finds:

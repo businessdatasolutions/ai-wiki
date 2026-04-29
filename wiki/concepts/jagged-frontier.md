@@ -44,6 +44,7 @@ The jagged-frontier concept is consistent with and extended by:
 - [[2026-04-28-anthropic-economic-index-q4-2025|Anthropic Economic Index]] — task-level success rate falls slightly with task complexity (70% → 66% from sub-HS to college-level), while speedup rises sharply; the speedup-times-success product is positive but uneven across tasks.
 - [[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|Brynjolfsson, Li & Raymond (2025)]] — within customer support, the AI declines to suggest when training data is insufficient, an explicit acknowledgement that the system has bounded reliability.
 - [[ai-benchmarks]] — METR's task-horizon work measures the duration of tasks an AI can complete with 50% success, providing a related but methodologically distinct picture of capability scope.
+- [[2026-04-29-boussioux-crowdless-future|Boussioux et al. (2024)]] — in creative ideation, HAI solutions occupy a more *incremental* search space proximal to existing ideas, while human-crowd solutions exhibit more variable search at both the bottom and top extremes of novelty. The paper attributes the pattern to LLMs' training-data confinement, formal-rationality bias, and convergence toward the statistical mean. This is one face of jaggedness: AI is strong on value/quality and weak on extreme-novelty.
 
 ### Mechanism: the frontier is invisible
 

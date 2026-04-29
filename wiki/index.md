@@ -22,6 +22,7 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 - [[2026-04-28-warner-wager-dynamic-capabilities-digital-transformation]] — Long Range Planning Vol 52, 2019 (peer-reviewed). Warner & Wäger (Edinburgh Napier / Nunatak) qualitative case study of 7 German MNCs; nine digital microfoundations under Teece's sense/seize/transform clusters; ongoing-strategic-renewal definition of digital transformation.
 - [[2026-04-28-webb-strategic-foresight]] — HBR.org Digital, Jan 2024. Amy Webb (FTSG / NYU Stern) argues strategy and foresight should be reunited; introduces FTSG's 10-step strategic foresight methodology (signal detection → recalibrate); STREEEP+W uncertainty taxonomy.
 - [[2026-04-28-werner-lebrun-octopus-organization]] — HBR Nov–Dec 2025. AWS executives in residence Werner & Le-Brun argue most companies are "Tin Man Orgs" optimized for predictability and need to become adaptive "Octopus Orgs"; only 12% of transformations succeed.
+- [[2026-04-29-boussioux-crowdless-future]] — Organization Science Vol 35 No 5, Sept–Oct 2024 (peer-reviewed). Boussioux, Lane, Zhang, Jacimovic, Lakhani field study: human-crowd vs human-AI on circular-economy ideation. HC higher novelty; HAI higher strategic viability/value/quality. Differentiated single-instance search beats multi-instance independent search. Cost ~94× lower with HAI ($27 vs $2,555).
 
 ## Entities
 
@@ -34,6 +35,7 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 - [[Bharat N. Anand]] — Dean & Professor at NYU Stern; co-author of the 2×2 GenAI Playbook.
 - [[Boston Consulting Group]] — Global management consulting firm; partnered with Harvard/Wharton/MIT/Warwick on the 758-consultant Jagged Frontier RCT.
 - [[Cisco]] — Tech vendor; sponsor of MITTRI/Cisco report; source of the 5-foundations framework and the chatbot → agent → multi-agent progression.
+- [[Continuum Laboratory]] — San Francisco AI firm (ContinuumLab.AI); partnered with Harvard / U. Washington researchers on the Crowdless Future circular-economy crowdsourcing study.
 - [[Erik Brynjolfsson]] — Stanford economist; director of Stanford Digital Economy Lab; AI Index steering committee; lead author of the customer-support productivity study (2023) and the Canaries-in-the-Coal-Mine employment study (2025).
 - [[Ethan Mollick]] — Wharton associate professor; co-director of Wharton AI Initiative; co-author of the Jagged Frontier paper.
 - [[Fabrizio Dell'Acqua]] — HBS Digital Data Design Institute researcher; lead author of the Jagged Frontier paper.
@@ -41,14 +43,17 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 - [[Glenn R. Carroll]] — Stanford GSB professor; co-author of *Strategy Theory Using Analogy* with Sørensen.
 - [[Harvard Business Review]] — Management magazine; publisher of multiple wiki sources (Anand-Wu, Werner-Le-Brun, Bansal-Birkinshaw, Reitz-Higgins, Webb).
 - [[Ivey Business School]] — Business school at Western University, London, Ontario; houses Innovation North; affiliated with Bansal & Birkinshaw.
+- [[Jacqueline N. Lane]] — Assistant Professor at HBS / LISH; corresponding author of the Crowdless Future paper.
 - [[Jesper B. Sorensen]] — Stanford GSB professor; co-author of *Strategy Theory Using Analogy* with Carroll.
 - [[John Higgins]] — Researcher at GameShift / The Right Conversation; co-author of *Spacious Thinking* with Reitz; co-author of *Speak Out, Listen Up* (2024).
 - [[Julian Birkinshaw]] — Dean of Ivey Business School; co-author of *Why You Need Systems Thinking Now* with Bansal.
 - [[Karim Lakhani]] — HBS professor; chair of the Digital Data Design Institute; co-author of the Jagged Frontier paper.
 - [[Karl S.R. Warner]] — Edinburgh Napier University researcher; lead author of *Building Dynamic Capabilities for Digital Transformation* with Wäger.
+- [[Leonard Boussioux]] — University of Washington Foster School / HBS LISH; lead author of the Crowdless Future paper.
 - [[Maximilian Wager]] — Nunatak Group researcher; co-author of *Building Dynamic Capabilities for Digital Transformation* with Warner.
 - [[Megan Reitz]] — Associate fellow at Saïd Business School Oxford; adjunct prof at Hult; co-author of *Spacious Thinking* with Higgins; author of *Dialogue in Organizations*, *Mind Time*, *Speak Up*, *Speak Out, Listen Up*.
 - [[METR]] — AI evaluations organization; introduced task-horizon benchmark (50%-success duration); referenced by the fourth Anthropic Economic Index report.
+- [[Miaomiao Zhang]] — ContinuumLab.AI / HBS researcher; co-author of the Crowdless Future paper.
 - [[MIT CISR]] — MIT Center for Information Systems Research; produces the Four Stages of AI Maturity framework.
 - [[MIT Technology Review Insights]] — Custom publishing arm of MIT Technology Review; publisher of MITTRI/Cisco report.
 - [[Nestor Maslej]] — Editor-in-Chief of the AI Index at Stanford HAI; lead author of the 2025 report.
@@ -57,6 +62,7 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 - [[Stanford HAI]] — Stanford Institute for Human-Centered Artificial Intelligence; publisher of the AI Index; founded 2019.
 - [[Stephanie Woerner]] — Principal research scientist at MIT Sloan; director of MIT CISR.
 - [[Tima Bansal]] — Canada Research Chair in Business Sustainability at Ivey; founder of Innovation North; co-author of *Why You Need Systems Thinking Now* with Birkinshaw.
+- [[Vladimir Jacimovic]] — ContinuumLab.AI / HBS researcher; co-author of the Crowdless Future paper.
 
 ## Concepts
 

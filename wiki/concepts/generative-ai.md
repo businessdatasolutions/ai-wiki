@@ -44,6 +44,19 @@ The framework lets the wiki track GenAI productivity, complexity, and autonomy a
 - Success rate falls slightly with complexity (70% → 66% from sub-HS to college-degree tasks).
 - Aggregate productivity contribution: **+1.0 to +1.2 pp/yr** (reliability-adjusted) — see [[ai-employment-effects]].
 
+### Field-experimental evidence of GPT-4 in creative idea generation ([[2026-04-29-boussioux-crowdless-future|Boussioux et al. 2024]])
+
+A field study comparing human crowdsourcing vs human-AI prompt-engineered solutions on a circular-economy business-ideation challenge:
+
+| Dimension | Human Crowd | Human-AI |
+|---|---|---|
+| Novelty | **Higher** (3.508 vs 3.230 / 3.469) | Lower |
+| Strategic viability, environmental + financial value, overall quality | Lower | **Higher** (single-instance differentiated higher than multi-instance independent) |
+
+**Cost / time profile** — HAI cost **$27** + ~5.5 hours vs HC cost **$2,555** + ~2,520 human-hours (~94× cost reduction, ~458× time reduction).
+
+The paper argues HAI solutions concentrate in **incremental** search space (proximal to existing ideas) while HC retains an advantage at the **extreme top** of the novelty distribution.
+
 ### Field-experimental evidence of GPT-4 in knowledge work ([[2026-04-28-dellacqua-jagged-technological-frontier|Dell'Acqua et al. 2026]])
 
 A preregistered RCT with 758 [[Boston Consulting Group|BCG]] consultants:

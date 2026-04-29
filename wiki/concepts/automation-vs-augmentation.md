@@ -82,7 +82,26 @@ The [[Anthropic Economic Index]] tracks the augmentation/automation split on Cla
 
 Augmentation has led in three of four samples; the August 2025 sample was the only one where automation led. The series provides a quarterly cadence on which dimension dominates, measured at population scale via classification of ~1M Claude.ai conversations per sample.
 
-### 7. The Pareto-improvement caveat ([[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|Brynjolfsson, Li & Raymond 2025]])
+### 7. Differentiated vs. independent search as fine-grained augmentation patterns ([[2026-04-29-boussioux-crowdless-future|Boussioux et al. 2024]])
+
+A field study with [[Continuum Laboratory]] and Freelancer.com on circular-economy ideation distinguishes two human-AI search modes:
+
+- **Independent search** — one initial prompt → multiple GPT-4 instances generate solutions independently; approximates parallel-path crowdsourcing.
+- **Differentiated search** — one initial prompt + iterative *differentiation instructions* after each output ("tackle a different problem"); converts the LLM's tendency-toward-the-mean into a controllable parameter.
+
+Empirical pattern in the study (300 evaluators, 3,900 evaluator-solution pairs):
+
+| Dimension | Human Crowd | HAI multi-instance | HAI single-instance (differentiated) |
+|---|---|---|---|
+| Novelty | **Highest** | Lowest | Comparable to HC |
+| Strategic viability | Lower | Comparable | **Highest** |
+| Environmental value | Lowest | Higher | **Highest** |
+| Financial value | Lowest | Higher | **Highest** |
+| Overall quality | Lowest | Comparable to HC | **Highest** |
+
+The differentiated/single-instance configuration is the more interesting augmentation pattern — it preserves novelty while delivering value/quality gains over both HC and the multi-instance HAI baseline.
+
+### 8. The Pareto-improvement caveat ([[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|Brynjolfsson, Li & Raymond 2025]])
 
 A subtle finding worth flagging: augmentation under the customer-support AI is **not strictly Pareto-improving**. Top performers experience small speed gains AND **small quality declines**. The mechanism: top performers increase adherence to AI recommendations even when those recommendations are slightly worse than what they would have produced unaided.
 
@@ -104,6 +123,7 @@ Four wiki sources, with distinct vocabularies and methodologies, all draw essent
 | [[2026-04-28-brynjolfsson-canaries-coal-mine\|Brynjolfsson et al. 2025]] | Automative vs. augmentative use (Anthropic Economic Index) | "Substitute vs. complement for labor" |
 | [[2026-04-28-anthropic-economic-index-q4-2025\|Anthropic Economic Index, 4th report]] | Longitudinal Claude.ai split (52% augmentation / 45% automation in Nov 2025) | "Directive / Feedback Loop / Task Iteration / Learning / Validation" |
 | [[2026-04-28-dellacqua-jagged-technological-frontier\|Dell'Acqua et al. 2026 (Jagged Frontier)]] | Per-task AI fit determines whether AI augments or harms; introduces "jagged frontier" | "Inside the frontier" (augmentation works) vs. "outside the frontier" (AI degrades performance) |
+| [[2026-04-29-boussioux-crowdless-future\|Boussioux et al. 2024 (Crowdless Future)]] | Augmentation pattern is fine-grained: *independent* search (multi-instance) vs *differentiated* search (single-instance with iterative diversification prompts); per-dimension trade-off (HC higher novelty; HAI higher value/quality) | "Independent search" vs. "differentiated search"; "AI-in-the-loop" |
 
 When four independent sources arrive at the same cut from different angles (theory, strategy, vendor framing, and large-scale payroll data), the distinction is robust enough to be a load-bearing concept in the wiki.
 
