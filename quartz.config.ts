@@ -2,6 +2,7 @@ import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 import { InjectTypeTags } from "./extensions/inject-type-tags"
 import { InjectAliases } from "./extensions/inject-aliases"
+import { StripDataview } from "./extensions/strip-dataview"
 
 const config: QuartzConfig = {
   configuration: {
@@ -67,6 +68,7 @@ const config: QuartzConfig = {
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
+      StripDataview(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
