@@ -3,6 +3,7 @@ import * as Plugin from "./quartz/plugins"
 import { InjectTypeTags } from "./extensions/inject-type-tags"
 import { InjectAliases } from "./extensions/inject-aliases"
 import { StripDataview } from "./extensions/strip-dataview"
+import { LatexNoSingleDollar } from "./extensions/latex-no-single-dollar"
 
 const config: QuartzConfig = {
   configuration: {
@@ -73,7 +74,7 @@ const config: QuartzConfig = {
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       InjectAliases(),
-      Plugin.Latex({ renderEngine: "katex" }),
+      LatexNoSingleDollar(),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
