@@ -18,20 +18,36 @@ A **foundation model** is a model trained on broad data at scale that can be ada
 
 ### Industry has decisively taken the frontier
 
-- **~90% of notable AI models in 2024 came from industry** (vs. 60% in 2023). Academia remains the leading source of *highly cited* research, but not of new notable models. Source: [[2026-04-28-ai-index-report-2025|AI Index 2025]] §1 Highlight 1.
-- **U.S. produces the most notable models** (40 in 2024) vs. **China** (15), **Europe** (3). Total quantity gap is wide. But by *performance* the U.S.-China gap has shrunk to near parity (see below).
+- **~90% of notable AI models in 2024 came from industry** (vs. 60% in 2023); **91.18% in 2025** per the [[2026-04-30-ai-index-report-2026|AI Index 2026]] update. Academia remains the leading source of *highly cited* research, but not of new notable models.
+- **2024**: U.S. 40 notable models, China 15, Europe 3.
+- **2025** ([[2026-04-30-ai-index-report-2026|AI Index 2026]]): U.S. 59, China 35, South Korea 8, Europe 2.
+- **Top organizations 2025**: OpenAI 20, Google 14, Alibaba 11, Anthropic 7, xAI 5, DeepSeek 4, LG AI Research 4, Meta 4, Tsinghua University 4 (only academic institution in the top 9), ByteDance / Moonshot / Nvidia 3 each.
+- The U.S.-China **performance** gap has effectively closed: DeepSeek-R1 briefly matched the top U.S. model in Feb 2025; as of March 2026, Anthropic's top model leads by just **2.7%**.
 
 ### Compute is scaling fast
 
 - Training compute for notable models doubles every **~5 months**.
 - Dataset size for training LLMs doubles every **~8 months**.
 - Power required for training doubles **annually**.
+- **Global AI compute capacity reached 17.1M H100-equivalents** by 2025, growing **3.3× per year since 2022** ([[2026-04-30-ai-index-report-2026|AI Index 2026]] §1.2).
+- **Nvidia: >60%** of total compute; Google + Amazon supply most of the remainder; Huawei holds small but growing share.
+- **U.S. hosts 5,427 AI data centers** — more than 10× any other country.
+- **TSMC** fabricates almost every leading AI chip; TSMC-U.S. expansion began operating in 2025.
+- **AI data center power capacity: 29.6 GW** — comparable to New York state at peak demand.
 - Carbon emissions trajectory:
   - AlexNet (2012): 0.01 tons
   - GPT-3 (2020): 588 tons
   - GPT-4 (2023): 5,184 tons
   - Llama 3.1 405B (2024): 8,930 tons
+  - **Grok 4 (2025): 72,816 tons** ([[2026-04-30-ai-index-report-2026|AI Index 2026]])
   - (Reference: average American = 18 tons/year.)
+- **Annual GPT-4o inference water use** alone may exceed the drinking water needs of **1.2 million people**.
+
+### Disclosure is dropping ([[2026-04-30-ai-index-report-2026|AI Index 2026]])
+
+- Training code, dataset sizes, parameter counts increasingly **withheld** for the most resource-intensive systems including those from OpenAI, Anthropic, Google.
+- Reported parameter counts have stayed near **1 trillion for three years** as disclosure dropped — but training compute (estimable independently from hardware) has continued to rise.
+- **OLMo 3.1 Think 32B** with ~90× fewer parameters than Grok 4 achieves comparable benchmark results via pruning, deduplication, curation alone — evidence that data quality and post-training matter as much as scale.
 
 ### Open-weight catching up to closed-weight
 

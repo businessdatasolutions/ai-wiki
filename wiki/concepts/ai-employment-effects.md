@@ -104,6 +104,14 @@ The wiki's primary source for the customer-support productivity finding is now [
 
 The two-paper Brynjolfsson arc is the wiki's clearest illustration of the **task-level vs. occupation-level paradox**: same author, same lab, same methodological rigor, two complementary findings that together are more informative than either alone.
 
+### Software developers ages 22–25: -20% from 2024 ([[2026-04-30-ai-index-report-2026|AI Index 2026]])
+
+A 2026 update extending the [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson Canaries]] finding to a more recent timeframe and via a different data path:
+
+- **U.S. software developers ages 22–25: employment fell nearly 20% from 2024**, even as headcount for older developers continued to grow.
+- Productivity gains from AI are **14–26%** in customer support and software development — clustered in the same fields where entry-level employment is declining.
+- AI agent deployment remains in **single digits** across nearly all business functions, suggesting the employment effect is not driven by full agent replacement but by *augmentation* reducing demand for entry-level labor.
+
 ### Crowdsourcing labor markets and HAI substitution ([[2026-04-29-boussioux-crowdless-future|Boussioux et al. 2024]])
 
 A field study comparing **human crowd** (HC, n=125 global Freelancer.com solvers) vs **human-AI** (HAI, single prompt engineer + GPT-4) on a circular-economy ideation challenge finds:

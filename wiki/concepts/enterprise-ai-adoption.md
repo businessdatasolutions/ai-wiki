@@ -22,6 +22,13 @@ Multiple complementary lenses are used by sources in this wiki:
 
 **Foresight lens** ([[2026-04-28-webb-strategic-foresight|Webb 2024]] / [[2026-04-28-ftsg-convergence-outlook-2026|FTSG 2026]]): adoption decisions sit downstream of strategic foresight — the disciplined process of signal detection → trend identification → scenarios → strategy. See [[strategic-foresight]].
 
+**2026 numbers** ([[2026-04-30-ai-index-report-2026|AI Index 2026]] Top Takeaway #1, #9):
+- **Organizational adoption: 88%** (up from 78% in 2024).
+- **Generative AI population adoption: 53% within three years** — faster than the PC or the internet.
+- **Productivity gains: 14–26%** in customer support and software development; weaker or *negative* effects in tasks requiring more judgment.
+- **AI agent deployment remains in single digits** across nearly all business functions — adoption breadth is high but agent-mediated workflow depth is still nascent.
+- **>80% of U.S. high school and college students** use AI for school-related tasks; only **half** of middle/high schools have AI policies and just **6% of teachers** say those policies are clear — adoption is outrunning policy.
+
 **Org-design lens** ([[2026-04-28-werner-lebrun-octopus-organization|Werner-Le-Brun]]): organizations are either **Tin Man Orgs** (predictability-optimized for a complicated world) or **Octopus Orgs** (adaptive, distributed, customer-centric for a complex world). **Just 12% of transformation efforts** show sustainable performance gains.
 
 **Task lens** ([[2026-04-28-anand-wu-genai-playbook|Anand-Wu]]): a 2×2 matrix on **cost of errors × type of knowledge** decides where to deploy GenAI on a per-task basis (no regrets / creative catalyst / quality control / human-first zones).

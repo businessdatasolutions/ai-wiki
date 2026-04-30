@@ -23,6 +23,7 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 - [[2026-04-28-webb-strategic-foresight]] — HBR.org Digital, Jan 2024. Amy Webb (FTSG / NYU Stern) argues strategy and foresight should be reunited; introduces FTSG's 10-step strategic foresight methodology (signal detection → recalibrate); STREEEP+W uncertainty taxonomy.
 - [[2026-04-28-werner-lebrun-octopus-organization]] — HBR Nov–Dec 2025. AWS executives in residence Werner & Le-Brun argue most companies are "Tin Man Orgs" optimized for predictability and need to become adaptive "Octopus Orgs"; only 12% of transformations succeed.
 - [[2026-04-29-boussioux-crowdless-future]] — Organization Science Vol 35 No 5, Sept–Oct 2024 (peer-reviewed). Boussioux, Lane, Zhang, Jacimovic, Lakhani field study: human-crowd vs human-AI on circular-economy ideation. HC higher novelty; HAI higher strategic viability/value/quality. Differentiated single-instance search beats multi-instance independent search. Cost ~94× lower with HAI ($27 vs $2,555).
+- [[2026-04-30-ai-index-report-2026]] — Stanford HAI's 9th annual AI Index, April 2026. New EiC Sajadieh; Medicine spun off as standalone chapter (with Schmidt Sciences); AI sovereignty as new framework. SWE-bench 60→~100%; OSWorld agents 12→66%; org adoption 88%; GenAI 53% population in 3 years; $285.9B U.S. private investment (~23× China); software dev 22–25 employment -20% from 2024; AI incidents 233→362; jagged frontier as official narrative.
 
 ## Entities
 
@@ -54,6 +55,8 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 - [[Megan Reitz]] — Associate fellow at Saïd Business School Oxford; adjunct prof at Hult; co-author of *Spacious Thinking* with Higgins; author of *Dialogue in Organizations*, *Mind Time*, *Speak Up*, *Speak Out, Listen Up*.
 - [[METR]] — AI evaluations organization; introduced task-horizon benchmark (50%-success duration); referenced by the fourth Anthropic Economic Index report.
 - [[Miaomiao Zhang]] — ContinuumLab.AI / HBS researcher; co-author of the Crowdless Future paper.
+- [[Schmidt Sciences]] — Nonprofit research and philanthropy organization; new analytics partner for AI Index 2026, collaborated on the standalone Medicine chapter.
+- [[Sha Sajadieh]] — Editor-in-Chief of the AI Index 2026 (9th edition); replaces Nestor Maslej.
 - [[MIT CISR]] — MIT Center for Information Systems Research; produces the Four Stages of AI Maturity framework.
 - [[MIT Technology Review Insights]] — Custom publishing arm of MIT Technology Review; publisher of MITTRI/Cisco report.
 - [[Nestor Maslej]] — Editor-in-Chief of the AI Index at Stanford HAI; lead author of the 2025 report.
@@ -63,6 +66,7 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 - [[Stephanie Woerner]] — Principal research scientist at MIT Sloan; director of MIT CISR.
 - [[Tima Bansal]] — Canada Research Chair in Business Sustainability at Ivey; founder of Innovation North; co-author of *Why You Need Systems Thinking Now* with Birkinshaw.
 - [[Vladimir Jacimovic]] — ContinuumLab.AI / HBS researcher; co-author of the Crowdless Future paper.
+- [[Yolanda Gil]] — USC / Information Sciences Institute researcher; chair of the AI Index 2026 (was chair-elect in 2025).
 
 ## Concepts
 

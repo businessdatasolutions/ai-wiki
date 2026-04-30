@@ -27,6 +27,16 @@ Major one-year benchmark gains in 2024 ([[2026-04-28-ai-index-report-2025|AI Ind
 - **GPQA**: +48.9 percentage points
 - **SWE-bench**: +67.3 percentage points (4.4% → 71.7%)
 
+### 2025: continued saturation, agent leaps, science benchmarks ([[2026-04-30-ai-index-report-2026|AI Index 2026]])
+
+- **SWE-bench Verified**: 60% → **near 100%** in one year (the same benchmark that was at 71.7% in 2024 has effectively saturated within two years of being introduced).
+- **OSWorld** (real computer tasks across operating systems): AI agents leapt from **12% → ~66%** task success in one year. Agents still fail roughly **1 in 3** attempts on structured benchmarks.
+- **IMO** (International Mathematical Olympiad): **Gemini Deep Think** earned a **gold medal**.
+- **Analog clock reading**: top model only **50.1%** correct — emblematic of the [[jagged-frontier]] (capability and incompetence on tasks of similar perceived difficulty).
+- **ChemBench**: frontier AI models **outperform** human chemists on average; below 20% on astrophysics replication, 33% on Earth-observation questions.
+- **RLBench** (robotic manipulation in software-based simulations): **89.4%** success — but robots succeed on only **12%** of household tasks in the real world.
+- Frontier-lab disclosure has dropped: independent testing does not always confirm what developers report.
+
 ### New harder benchmarks (proposed because the old ones saturated)
 
 - **Humanity's Last Exam** — academic test; top score so far: **8.80%**.

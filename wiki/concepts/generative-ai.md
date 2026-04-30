@@ -67,6 +67,16 @@ A preregistered RCT with 758 [[Boston Consulting Group|BCG]] consultants:
 
 This paper introduces the **[[jagged-frontier|jagged frontier]]** concept to describe the unevenness of GPT-4's capability across tasks of similar perceived difficulty — a per-task property, not a uniform feature.
 
+### 2025–26 numbers from the [[2026-04-30-ai-index-report-2026|AI Index 2026]]
+
+- **Population adoption: 53%** within three years — faster than the PC or the internet.
+- Adoption correlates with **GDP per capita**; outliers: Singapore 61%, UAE 54%; **U.S. ranks 24th at 28.3%**.
+- **Estimated value of GenAI tools to U.S. consumers: $172B annually by early 2026**; median value per user **tripled** between 2025 and 2026.
+- **U.S. private AI investment: $285.9B in 2025** — ~2.6× the $109.1B reported in 2024 by the [[2026-04-28-ai-index-report-2025|prior edition]] — and ~23× China's $12.4B.
+- **1,953 newly funded AI companies** in U.S. in 2025 — more than 10× the next country.
+- **Organizational adoption: 88%** (up from 78% in 2024).
+- **>80% of U.S. high school and college students** now use AI for school-related tasks; **4 in 5** university students use generative AI.
+
 ### Capability gains in 2024
 
 - **AI video generation** breakthroughs: OpenAI's SORA, Stable Video Diffusion 3D and 4D, Meta's Movie Gen, Google DeepMind's Veo 2.

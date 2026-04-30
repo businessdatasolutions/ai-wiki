@@ -23,6 +23,11 @@ Closely related but not identical: **AI safety** (often used to mean alignment /
 ### Incidents are rising
 
 - **AI incidents +56.4% YoY: 233 reported in 2024** (record high). Source: AI Incidents Database via [[2026-04-28-ai-index-report-2025|AI Index 2025]] §3.
+- **2025 update: 362 documented incidents** ([[2026-04-30-ai-index-report-2026|AI Index 2026]] Top Takeaway #6) — another ~55% YoY rise. Reporting on responsible-AI benchmarks remains spotty even as capability-benchmark reporting is near-universal among frontier labs.
+
+### RAI dimensions can trade off ([[2026-04-30-ai-index-report-2026|AI Index 2026]])
+
+A new finding flagged in 2026: **improving one responsible-AI dimension can degrade another**. Example pattern: improving a model's safety can degrade its accuracy. This makes the RAI evaluation problem multi-objective rather than additive — gains on one axis are not free.
 - 2024 election misinformation case studies (selected from §3.10):
   - **Pakistan**: deepfake audio of Imran Khan calling for election boycott (Feb 2024); deepfake video of Yasmin Rashid alleging election commission was bought. Doctored, traced.
   - **United States**: Chinese-government-linked "spamouflage" influence campaign using AI-generated images on X/Facebook/YouTube/TikTok/Medium; particularly active around the 2024 election; identified by the Institute for Strategic Dialogue.
