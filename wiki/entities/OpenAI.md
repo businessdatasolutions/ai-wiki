@@ -1,0 +1,42 @@
+---
+type: entity
+kind: organization
+aliases: ["OpenAI"]
+tags: [openai, ai-lab, foundation-models, chatgpt, gpt-4]
+since: 2015
+---
+
+# OpenAI
+
+AI research and deployment company. Originator of **ChatGPT** (Nov 2022) and the **GPT-3 / GPT-4 / GPT-5** series. Self-described in [[2026-05-02-dutt-chatterji-ai-experimentation-to-transformation|the Bain/OpenAI HBR article]] as "an AI provider to over one million businesses."
+
+## Models referenced in this wiki
+
+- **GPT-3** — substrate of the customer-support augmentation system in [[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|Brynjolfsson, Li & Raymond (2025) QJE]].
+- **GPT-3.5 / ChatGPT** — the democratization breakthrough cited by [[2026-04-28-anand-wu-genai-playbook|Anand-Wu]] and the trigger for the [[generative-ai|GenAI]] adoption wave.
+- **GPT-4** — basis of the [[2026-04-28-dellacqua-jagged-technological-frontier|Dell'Acqua et al. 2026 BCG RCT]] and the [[2026-04-29-boussioux-crowdless-future|Boussioux et al. 2024 crowdless-future study]].
+
+## Research initiatives appearing in this wiki
+
+- **Economic Research team** (led by Chief Economist [[Aaron Chatterji]]). Counterpart to Anthropic's [[Anthropic Economic Index]] initiative. Members in this wiki: [[Gawesha Weeratunga]], [[Harrison Satcher]].
+- **Lowe's partnership** ([[2026-05-02-dutt-chatterji-ai-experimentation-to-transformation]]): launched **Mylow** (online customer-facing) and **Mylow Companion** (in-store associate-facing) AI interfaces in March 2025; Mylow Companion deployed across 1,700+ Lowe's stores.
+
+## Other references
+
+- Supporting partner of the [[AI Index]] (annual report from [[Stanford HAI]]).
+- Anchor case in the [[2026-04-28-anand-wu-genai-playbook|Anand-Wu GenAI Playbook]] (ChatGPT as the access-democratization breakthrough).
+- Subject of the open-source-AI strategic-analogy example (GPT-4 = Walmart, open source = fruit stand) discussed in [[2026-04-28-carroll-sorensen-strategy-analogy|Carroll & Sørensen 2024]].
+- Investment-figure context: U.S. private AI investment $285.9B in 2025 ([[2026-04-30-ai-index-report-2026]]).
+
+## Mentioned in
+
+```dataview
+LIST
+FROM "wiki/sources"
+WHERE contains(file.outlinks, this.file.link) OR contains(tags, "openai")
+SORT file.name ASC
+```
+
+## Open questions
+
+- The wiki has many references to GPT-4 / ChatGPT / OpenAI as substrate but no first-party OpenAI source has been ingested yet. The OpenAI Economic Research team's writing (this article, plus their independent research papers) is a candidate for a deeper deep-read once a primary OpenAI Economic Research publication is added.

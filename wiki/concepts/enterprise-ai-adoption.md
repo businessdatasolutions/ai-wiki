@@ -29,6 +29,12 @@ Multiple complementary lenses are used by sources in this wiki:
 - **AI agent deployment remains in single digits** across nearly all business functions — adoption breadth is high but agent-mediated workflow depth is still nascent.
 - **>80% of U.S. high school and college students** use AI for school-related tasks; only **half** of middle/high schools have AI policies and just **6% of teachers** say those policies are clear — adoption is outrunning policy.
 
+**Transformation lens** ([[2026-05-02-dutt-chatterji-ai-experimentation-to-transformation|Dutt, Chatterji et al. 2026]]):
+- The **[[micro-productivity-trap]]** — task-level gains failing to translate to firm-level results — is a named diagnostic for the gap between 88% organizational adoption and single-digit agent-mediated workflow depth.
+- Two failure modes: **offering lock-in** (AI optimizes existing offerings without reframing value) and **process lock-in** (AI automates current processes without redesigning them).
+- Empirical anchor: **10–25% EBITDA gains** across [[Bain & Company]] clients adopting a transformation-mindset four-step framework (narrow possibilities strategically; reimagine workflows; engage those closest to the process; measure what matters with concrete business outcomes plus continuous **evals**).
+- Worked cases: **[[Lowe's]]** + [[OpenAI]] partnership (Mylow / Mylow Companion across 1,700+ stores; >2× online conversion; +200bps CSAT in-aisle); **FabricationCo** (~$30M additional profit on track; 15× faster quote generation; +10pp win rate in 3 months).
+
 **Org-design lens** ([[2026-04-28-werner-lebrun-octopus-organization|Werner-Le-Brun]]): organizations are either **Tin Man Orgs** (predictability-optimized for a complicated world) or **Octopus Orgs** (adaptive, distributed, customer-centric for a complex world). **Just 12% of transformation efforts** show sustainable performance gains.
 
 **Task lens** ([[2026-04-28-anand-wu-genai-playbook|Anand-Wu]]): a 2×2 matrix on **cost of errors × type of knowledge** decides where to deploy GenAI on a per-task basis (no regrets / creative catalyst / quality control / human-first zones).

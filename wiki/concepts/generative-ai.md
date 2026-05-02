@@ -44,6 +44,16 @@ The framework lets the wiki track GenAI productivity, complexity, and autonomy a
 - Success rate falls slightly with complexity (70% → 66% from sub-HS to college-degree tasks).
 - Aggregate productivity contribution: **+1.0 to +1.2 pp/yr** (reliability-adjusted) — see [[ai-employment-effects]].
 
+### Field deployment evidence: Bain client EBITDA + Lowe's case ([[2026-05-02-dutt-chatterji-ai-experimentation-to-transformation|Dutt, Chatterji et al. 2026]])
+
+A practitioner-vantage HBR article co-authored by [[Bain & Company]] partners and [[OpenAI]]'s Economic Research team argues most firms get stuck in a **[[micro-productivity-trap|micro-productivity trap]]** — task-level gains that fail to translate to firm-level results. Firms that escape it via a four-step transformation framework see:
+
+- **Bain client EBITDA gains: 10–25%** (continuing to scale as programmes scale).
+- **Lowe's + OpenAI partnership** (Mylow / Mylow Companion launched March 2025): online conversion **>2×** when customers engage Mylow; **+200 bps customer satisfaction** when associates use Mylow Companion; deployed across **1,700+ stores**.
+- **FabricationCo** (anonymized Fortune 1000 manufacturer): **~$30M additional profit** on track; quote generation **~15× faster**; **+10pp win rate** in 3 months.
+
+The article frames "process redesign — not the technology" as the most challenging part of GenAI deployment and the source of most of the value.
+
 ### Field-experimental evidence of GPT-4 in creative idea generation ([[2026-04-29-boussioux-crowdless-future|Boussioux et al. 2024]])
 
 A field study comparing human crowdsourcing vs human-AI prompt-engineered solutions on a circular-economy business-ideation challenge:

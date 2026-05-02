@@ -24,6 +24,7 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 - [[2026-04-28-werner-lebrun-octopus-organization]] — HBR Nov–Dec 2025. AWS executives in residence Werner & Le-Brun argue most companies are "Tin Man Orgs" optimized for predictability and need to become adaptive "Octopus Orgs"; only 12% of transformations succeed.
 - [[2026-04-29-boussioux-crowdless-future]] — Organization Science Vol 35 No 5, Sept–Oct 2024 (peer-reviewed). Boussioux, Lane, Zhang, Jacimovic, Lakhani field study: human-crowd vs human-AI on circular-economy ideation. HC higher novelty; HAI higher strategic viability/value/quality. Differentiated single-instance search beats multi-instance independent search. Cost ~94× lower with HAI ($27 vs $2,555).
 - [[2026-04-30-ai-index-report-2026]] — Stanford HAI's 9th annual AI Index, April 2026. New EiC Sajadieh; Medicine spun off as standalone chapter (with Schmidt Sciences); AI sovereignty as new framework. SWE-bench 60→~100%; OSWorld agents 12→66%; org adoption 88%; GenAI 53% population in 3 years; $285.9B U.S. private investment (~23× China); software dev 22–25 employment -20% from 2024; AI incidents 233→362; jagged frontier as official narrative.
+- [[2026-05-02-dutt-chatterji-ai-experimentation-to-transformation]] — HBR.org Digital, 30 April 2026. Dutt, Rapoport (Bain) + Chatterji (Duke / OpenAI Chief Economist), Weeratunga, Satcher (OpenAI Economic Research). Names the "micro-productivity trap": offering lock-in + process lock-in. Four-step transformation framework with 10–25% Bain client EBITDA gains. Lowe's (Mylow / Mylow Companion, 1,700+ stores) and FabricationCo (~$30M profit, 15× faster quotes) cases.
 
 ## Entities
 
@@ -33,6 +34,9 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 - [[Andy Wu]] — HBS Associate Professor (Strategy Unit); Wharton Mack Institute senior fellow; co-author of the 2×2 GenAI Playbook.
 - [[Anthropic]] — AI safety and research company; publisher of Claude and the Anthropic Economic Index; ~$8B total AWS investment.
 - [[Anthropic Economic Index]] — Recurring measurement initiative by Anthropic; four reports through Jan 2026; introduces "economic primitives" framework in fourth report.
+- [[Aaron Chatterji]] — Mark Burgess Professor of Business and Public Policy at Duke; Chief Economist at OpenAI; co-author of the Bain/OpenAI HBR transformation article.
+- [[Arjun Dutt]] — Partner at Bain & Company (AI/ML focus); lead author of the *AI Experimentation to AI Transformation* HBR article.
+- [[Bain & Company]] — Global management consulting firm; co-publishing partner with OpenAI Economic Research on the 2026 transformation framework; reports 10–25% client EBITDA gains.
 - [[Bharat N. Anand]] — Dean & Professor at NYU Stern; co-author of the 2×2 GenAI Playbook.
 - [[Boston Consulting Group]] — Global management consulting firm; partnered with Harvard/Wharton/MIT/Warwick on the 758-consultant Jagged Frontier RCT.
 - [[Cisco]] — Tech vendor; sponsor of MITTRI/Cisco report; source of the 5-foundations framework and the chatbot → agent → multi-agent progression.
@@ -41,8 +45,11 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 - [[Ethan Mollick]] — Wharton associate professor; co-director of Wharton AI Initiative; co-author of the Jagged Frontier paper.
 - [[Fabrizio Dell'Acqua]] — HBS Digital Data Design Institute researcher; lead author of the Jagged Frontier paper.
 - [[Future Today Strategy Group]] — Strategy/foresight consultancy led by Amy Webb; publisher of the Convergence Outlook 2026; formerly Future Today Institute; produced 19 annual Tech Trends Reports.
+- [[Gawesha Weeratunga]] — Member of OpenAI Economic Research team; co-author of the Bain/OpenAI HBR transformation article.
+- [[Gene Rapoport]] — Partner and head of AI for the Private Equity practice at Bain & Company; co-author of the *AI Experimentation to AI Transformation* HBR article.
 - [[Glenn R. Carroll]] — Stanford GSB professor; co-author of *Strategy Theory Using Analogy* with Sørensen.
-- [[Harvard Business Review]] — Management magazine; publisher of multiple wiki sources (Anand-Wu, Werner-Le-Brun, Bansal-Birkinshaw, Reitz-Higgins, Webb).
+- [[Harrison Satcher]] — Member of OpenAI Economic Research team; co-author of the Bain/OpenAI HBR transformation article.
+- [[Harvard Business Review]] — Management magazine; publisher of multiple wiki sources (Anand-Wu, Werner-Le-Brun, Bansal-Birkinshaw, Reitz-Higgins, Webb, Dutt-Chatterji).
 - [[Ivey Business School]] — Business school at Western University, London, Ontario; houses Innovation North; affiliated with Bansal & Birkinshaw.
 - [[Jacqueline N. Lane]] — Assistant Professor at HBS / LISH; corresponding author of the Crowdless Future paper.
 - [[Jesper B. Sorensen]] — Stanford GSB professor; co-author of *Strategy Theory Using Analogy* with Carroll.
@@ -50,6 +57,7 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 - [[Julian Birkinshaw]] — Dean of Ivey Business School; co-author of *Why You Need Systems Thinking Now* with Bansal.
 - [[Karim Lakhani]] — HBS professor; chair of the Digital Data Design Institute; co-author of the Jagged Frontier paper.
 - [[Karl S.R. Warner]] — Edinburgh Napier University researcher; lead author of *Building Dynamic Capabilities for Digital Transformation* with Wäger.
+- [[Lowe's]] — U.S. home-improvement retailer; OpenAI partner (Mylow / Mylow Companion across 1,700+ stores; March 2025 launch).
 - [[Leonard Boussioux]] — University of Washington Foster School / HBS LISH; lead author of the Crowdless Future paper.
 - [[Maximilian Wager]] — Nunatak Group researcher; co-author of *Building Dynamic Capabilities for Digital Transformation* with Warner.
 - [[Megan Reitz]] — Associate fellow at Saïd Business School Oxford; adjunct prof at Hult; co-author of *Spacious Thinking* with Higgins; author of *Dialogue in Organizations*, *Mind Time*, *Speak Up*, *Speak Out, Listen Up*.
@@ -60,6 +68,7 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 - [[MIT CISR]] — MIT Center for Information Systems Research; produces the Four Stages of AI Maturity framework.
 - [[MIT Technology Review Insights]] — Custom publishing arm of MIT Technology Review; publisher of MITTRI/Cisco report.
 - [[Nestor Maslej]] — Editor-in-Chief of the AI Index at Stanford HAI; lead author of the 2025 report.
+- [[OpenAI]] — AI research and deployment company; provider to >1M businesses; co-publishing partner on the 2026 transformation framework via its Economic Research team; Lowe's AI partner; central to the wiki's GenAI substrate references.
 - [[Peter Weill]] — Senior research scientist at MIT Sloan; chairman of MIT CISR.
 - [[Stanford Digital Economy Lab]] — Research initiative at Stanford directed by Brynjolfsson; publisher of the Canaries paper; distinct from Stanford HAI.
 - [[Stanford HAI]] — Stanford Institute for Human-Centered Artificial Intelligence; publisher of the AI Index; founded 2019.
@@ -83,6 +92,7 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 - [[industry-4-0]] — German-government 2011 framing of cyber-physical-systems-driven manufacturing; the digital side of the Lean 4.0 synergy.
 - [[jagged-frontier]] — Boundary of current AI capability; uneven and invisible; introduced by Dell'Acqua et al. 2026; per-task fit determines whether AI augments or harms performance.
 - [[lean-4-0]] — The integration of Lean Manufacturing principles with Industry 4.0 technologies; 23 × 23 tool-mapping.
+- [[micro-productivity-trap]] — Failure pattern in enterprise AI deployment: task-level gains failing to translate to firm-level results. Two lock-ins (offering, process); escape via four-step transformation framework; 10–25% Bain client EBITDA gains.
 - [[responsible-ai]] — Risk-management discipline for AI; incidents +56.4% YoY; AI security as a discipline; Stewardship as one of the Four S pillars; labor-market disruption as an under-attended concern.
 - [[strategic-foresight]] — Disciplined identification of where to play / how to win in the future; FTSG's 10-step methodology; STREEEP+W uncertainty taxonomy; convergence as a 2026 reframing.
 - [[systems-thinking]] — Innovation mode that traces flows, relationships, feedback loops; complement to breakthrough and design thinking; four-principle approach for wicked problems (North Star / reframe / flows / nudge).
