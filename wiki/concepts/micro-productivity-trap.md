@@ -55,6 +55,7 @@ The micro-productivity-trap framing sits among several wiki vocabularies address
 - [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]] — *chatbot → agent → multi-agent* progression and 5-foundations readiness framework (only 13% AI-ready).
 - [[2026-04-28-bansal-birkinshaw-systems-thinking|Bansal & Birkinshaw systems thinking]] — *flows and relationships* over products/services.
 - [[2026-04-28-warner-wager-dynamic-capabilities-digital-transformation|Warner & Wäger]] — *digital sensing/seizing/transforming* nine microfoundations under Teece.
+- [[2026-05-03-rewired-second-edition-sample|McKinsey "Rewired" 2nd ed (2026)]] — *6 capabilities* (business-led roadmap, talent, operating model, technology, data, adoption-and-scaling); 20% EBITDA uplift / $3:$1 / 1–2yr breakeven across ~20 deep-dive AI-leader companies; 70% talent-density shifts.
 - [[2026-04-30-ai-index-report-2026|AI Index 2026]] — empirical context: 88% organizational AI adoption but **AI agent deployment in single digits per business function**.
 
 Each names the same broad gap with a different vocabulary; the wiki's [[organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] thread tracks this convergence.

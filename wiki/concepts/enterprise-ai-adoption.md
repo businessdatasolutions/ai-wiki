@@ -35,6 +35,20 @@ Multiple complementary lenses are used by sources in this wiki:
 - Empirical anchor: **10–25% EBITDA gains** across [[Bain & Company]] clients adopting a transformation-mindset four-step framework (narrow possibilities strategically; reimagine workflows; engage those closest to the process; measure what matters with concrete business outcomes plus continuous **evals**).
 - Worked cases: **[[Lowe's]]** + [[OpenAI]] partnership (Mylow / Mylow Companion across 1,700+ stores; >2× online conversion; +200bps CSAT in-aisle); **FabricationCo** (~$30M additional profit on track; 15× faster quote generation; +10pp win rate in 3 months).
 
+**Six-capability lens — McKinsey "Rewired"** ([[2026-05-03-rewired-second-edition-sample|Lamarre, Smaje, Levin et al. 2026, 2nd ed]]):
+- **Definition**: "the process of developing organizational and technology-based capabilities that allow a company to continuously improve its customer experience and lower its unit costs; and over time sustain a competitive advantage."
+- **Six capabilities** that companies must be strong across to win (Exhibit I.1):
+  1. **Business-led roadmap** — top-down aspiration, alignment on economic leverage points, reimagination of business domains
+  2. **Talent** — upskilled business leaders + density of engineering talent
+  3. **Operating model** — business, tech, and operations closer together
+  4. **Technology** — modern software engineering and platforms for reuse and time-to-value
+  5. **Data** — unified, easy-to-consume data
+  6. **Adoption and scaling** — change management; end-to-end process reconfiguration; impact measured in business KPIs
+- **Empirical anchor** (~20 AI-leader deep-dive companies): **20% EBITDA uplift** on average, **1–2 year breakeven**, **$3 of incremental EBITDA per $1 invested**, with focus on **1–3 business domains**.
+- **70% talent-density shifts**: 70%+ in-house, 70%+ "doer" engineers, 70%+ at competent-or-expert skill levels.
+- "We don't have a single success story where senior business leaders were not in the driver's seat."
+- Note: McKinsey is a recurring data partner of the [[AI Index]]; the McKinsey Global AI Survey is the instrument behind several AI-adoption headline numbers in the wiki. The 20% EBITDA range is from McKinsey client work — vendor-of-deployment data — but is consistent in magnitude with independent ranges from the [[2026-04-30-ai-index-report-2026|AI Index 2026]] (14–26% productivity gains in customer support / software dev) and [[2026-05-02-dutt-chatterji-ai-experimentation-to-transformation|Bain/OpenAI 2026]] (10–25% EBITDA).
+
 **Org-design lens** ([[2026-04-28-werner-lebrun-octopus-organization|Werner-Le-Brun]]): organizations are either **Tin Man Orgs** (predictability-optimized for a complicated world) or **Octopus Orgs** (adaptive, distributed, customer-centric for a complex world). **Just 12% of transformation efforts** show sustainable performance gains.
 
 **Task lens** ([[2026-04-28-anand-wu-genai-playbook|Anand-Wu]]): a 2×2 matrix on **cost of errors × type of knowledge** decides where to deploy GenAI on a per-task basis (no regrets / creative catalyst / quality control / human-first zones).

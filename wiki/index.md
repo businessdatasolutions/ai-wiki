@@ -25,6 +25,7 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 - [[2026-04-29-boussioux-crowdless-future]] — Organization Science Vol 35 No 5, Sept–Oct 2024 (peer-reviewed). Boussioux, Lane, Zhang, Jacimovic, Lakhani field study: human-crowd vs human-AI on circular-economy ideation. HC higher novelty; HAI higher strategic viability/value/quality. Differentiated single-instance search beats multi-instance independent search. Cost ~94× lower with HAI ($27 vs $2,555).
 - [[2026-04-30-ai-index-report-2026]] — Stanford HAI's 9th annual AI Index, April 2026. New EiC Sajadieh; Medicine spun off as standalone chapter (with Schmidt Sciences); AI sovereignty as new framework. SWE-bench 60→~100%; OSWorld agents 12→66%; org adoption 88%; GenAI 53% population in 3 years; $285.9B U.S. private investment (~23× China); software dev 22–25 employment -20% from 2024; AI incidents 233→362; jagged frontier as official narrative.
 - [[2026-05-02-dutt-chatterji-ai-experimentation-to-transformation]] — HBR.org Digital, 30 April 2026. Dutt, Rapoport (Bain) + Chatterji (Duke / OpenAI Chief Economist), Weeratunga, Satcher (OpenAI Economic Research). Names the "micro-productivity trap": offering lock-in + process lock-in. Four-step transformation framework with 10–25% Bain client EBITDA gains. Lowe's (Mylow / Mylow Companion, 1,700+ stores) and FabricationCo (~$30M profit, 15× faster quotes) cases.
+- [[2026-05-03-rewired-second-edition-sample]] — Lamarre, Smaje, Levin et al., *Rewired* 2nd ed. (Wiley/McKinsey, 2026). **Sample-only ingest**: 30-page library/OverDrive sample of a ~600-page book — front matter, full TOC for 39 chapters across 7 sections, the introduction, first 5 manifesto themes, and back-of-book Index for terminology. The 6-capability "Rewired" framework (business-led roadmap, talent, operating model, technology, data, adoption-and-scaling); 20% EBITDA uplift / $3:$1 ROI / 1–2 yr breakeven across ~20 deep-dive AI-leader companies; 70% talent-density shifts; 40% of 2nd ed entirely new (mostly agentic AI). Chapters 1–39 and the four case studies (DBS, Freeport-McMoRan, LATAM Airlines, Toyota) deferred until full book is available.
 
 ## Entities
 
@@ -35,12 +36,15 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 - [[Anthropic]] — AI safety and research company; publisher of Claude and the Anthropic Economic Index; ~$8B total AWS investment.
 - [[Anthropic Economic Index]] — Recurring measurement initiative by Anthropic; four reports through Jan 2026; introduces "economic primitives" framework in fourth report.
 - [[Aaron Chatterji]] — Mark Burgess Professor of Business and Public Policy at Duke; Chief Economist at OpenAI; co-author of the Bain/OpenAI HBR transformation article.
+- [[Alex Singla]] — Senior Partner at McKinsey; global co-leader of QuantumBlack; contributing co-author of *Rewired* 2nd ed.
+- [[Alexander Sukharevsky]] — Senior Partner at McKinsey; global co-leader of QuantumBlack (with Singla); contributing co-author of *Rewired* 2nd ed.
 - [[Arjun Dutt]] — Partner at Bain & Company (AI/ML focus); lead author of the *AI Experimentation to AI Transformation* HBR article.
 - [[Bain & Company]] — Global management consulting firm; co-publishing partner with OpenAI Economic Research on the 2026 transformation framework; reports 10–25% client EBITDA gains.
 - [[Bharat N. Anand]] — Dean & Professor at NYU Stern; co-author of the 2×2 GenAI Playbook.
 - [[Boston Consulting Group]] — Global management consulting firm; partnered with Harvard/Wharton/MIT/Warwick on the 758-consultant Jagged Frontier RCT.
 - [[Cisco]] — Tech vendor; sponsor of MITTRI/Cisco report; source of the 5-foundations framework and the chatbot → agent → multi-agent progression.
 - [[Continuum Laboratory]] — San Francisco AI firm (ContinuumLab.AI); partnered with Harvard / U. Washington researchers on the Crowdless Future circular-economy crowdsourcing study.
+- [[Eric Lamarre]] — Senior Partner at McKinsey; lead author of *Rewired* 2nd ed (Wiley, 2026).
 - [[Erik Brynjolfsson]] — Stanford economist; director of Stanford Digital Economy Lab; AI Index steering committee; lead author of the customer-support productivity study (2023) and the Canaries-in-the-Coal-Mine employment study (2025).
 - [[Ethan Mollick]] — Wharton associate professor; co-director of Wharton AI Initiative; co-author of the Jagged Frontier paper.
 - [[Fabrizio Dell'Acqua]] — HBS Digital Data Design Institute researcher; lead author of the Jagged Frontier paper.
@@ -57,9 +61,11 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 - [[Julian Birkinshaw]] — Dean of Ivey Business School; co-author of *Why You Need Systems Thinking Now* with Bansal.
 - [[Karim Lakhani]] — HBS professor; chair of the Digital Data Design Institute; co-author of the Jagged Frontier paper.
 - [[Karl S.R. Warner]] — Edinburgh Napier University researcher; lead author of *Building Dynamic Capabilities for Digital Transformation* with Wäger.
+- [[Kate Smaje]] — Senior Partner at McKinsey; co-author of *Rewired* 2nd ed.
 - [[Lowe's]] — U.S. home-improvement retailer; OpenAI partner (Mylow / Mylow Companion across 1,700+ stores; March 2025 launch).
 - [[Leonard Boussioux]] — University of Washington Foster School / HBS LISH; lead author of the Crowdless Future paper.
 - [[Maximilian Wager]] — Nunatak Group researcher; co-author of *Building Dynamic Capabilities for Digital Transformation* with Warner.
+- [[McKinsey & Company]] — Global management consulting firm; runs QuantumBlack as its AI arm; recurring data partner of the AI Index; publisher of *Rewired*. McKinsey Global AI Survey is the underlying instrument for several wiki adoption headlines.
 - [[Megan Reitz]] — Associate fellow at Saïd Business School Oxford; adjunct prof at Hult; co-author of *Spacious Thinking* with Higgins; author of *Dialogue in Organizations*, *Mind Time*, *Speak Up*, *Speak Out, Listen Up*.
 - [[METR]] — AI evaluations organization; introduced task-horizon benchmark (50%-success duration); referenced by the fourth Anthropic Economic Index report.
 - [[Miaomiao Zhang]] — ContinuumLab.AI / HBS researcher; co-author of the Crowdless Future paper.
@@ -69,10 +75,11 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 - [[MIT Technology Review Insights]] — Custom publishing arm of MIT Technology Review; publisher of MITTRI/Cisco report.
 - [[Nestor Maslej]] — Editor-in-Chief of the AI Index at Stanford HAI; lead author of the 2025 report.
 - [[OpenAI]] — AI research and deployment company; provider to >1M businesses; co-publishing partner on the 2026 transformation framework via its Economic Research team; Lowe's AI partner; central to the wiki's GenAI substrate references.
-- [[Peter Weill]] — Senior research scientist at MIT Sloan; chairman of MIT CISR.
+- [[Peter Weill]] — Senior research scientist at MIT Sloan; chairman of MIT CISR. Cited in *Rewired* 2nd ed (Lamarre et al. 2026, p. 26).
+- [[Rob Levin]] — Senior Partner at McKinsey; co-author of *Rewired* 2nd ed.
 - [[Stanford Digital Economy Lab]] — Research initiative at Stanford directed by Brynjolfsson; publisher of the Canaries paper; distinct from Stanford HAI.
 - [[Stanford HAI]] — Stanford Institute for Human-Centered Artificial Intelligence; publisher of the AI Index; founded 2019.
-- [[Stephanie Woerner]] — Principal research scientist at MIT Sloan; director of MIT CISR.
+- [[Stephanie Woerner]] — Principal research scientist at MIT Sloan; director of MIT CISR. Cited in *Rewired* 2nd ed (Lamarre et al. 2026, p. 286).
 - [[Tima Bansal]] — Canada Research Chair in Business Sustainability at Ivey; founder of Innovation North; co-author of *Why You Need Systems Thinking Now* with Birkinshaw.
 - [[Vladimir Jacimovic]] — ContinuumLab.AI / HBS researcher; co-author of the Crowdless Future paper.
 - [[Yolanda Gil]] — USC / Information Sciences Institute researcher; chair of the AI Index 2026 (was chair-elect in 2025).
