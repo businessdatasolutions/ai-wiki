@@ -32,6 +32,7 @@ These replace "build / lint / test" for this repo. Apply them whenever the user 
 
 ### Ingest
 A new source has been added to the raw collection.
+0. **Verify the source's identity and completeness before reading further.** See [Verifying sources before ingest](#verifying-sources-before-ingest).
 1. Read the source.
 2. Discuss key takeaways with the user before writing (default to one source at a time, supervised — unless the user says batch).
 3. Write a summary page in the wiki.
@@ -57,12 +58,46 @@ Periodic health check of the wiki.
 - Suggest new questions to investigate.
 Report findings; let the user decide what to act on.
 
+## Verifying sources before ingest
+
+Filenames lie, samples masquerade as full sources, and PDFs get truncated. **Before treating any raw source as authoritative, run these pre-flight checks. Surface mismatches to the user *before* writing wiki pages — bad source data corrupts the wiki and is hard to remove cleanly later.**
+
+### Check 1 — Scope: is this the whole source?
+
+- Note the **PDF's actual page count** (the Read tool reports it; for very large PDFs the "too many pages" error message gives the count).
+- For books and long reports, read the table of contents and note the **highest chapter/section page reference**.
+- If the highest TOC page-reference is significantly larger than the actual PDF page count, **the file is a sample, preview, or excerpt — not the full source.** Stop and ask the user before writing wiki pages.
+- **Suspect filename patterns** that warrant extra scrutiny:
+  - `L-NNNNNNNN-pdf*.pdf` — OverDrive/library checkout previews.
+  - `*-sample.pdf`, `*-preview.pdf`, `*-excerpt.pdf`, `*-chapter-N.pdf` — explicit excerpt names.
+  - Any "book" file under ~50 pages whose TOC references chapters past page 50.
+  - Generic content-management filenames with no author/title (e.g. `download.pdf`, `(1).pdf`).
+
+### Check 2 — Identity: does the filename match the content?
+
+- Read the cover/title page and identify the source from the **content**: authors, title, edition, year, publisher.
+- If the filename doesn't match (precedent: `Mitchell and Dino - 2011 ...pdf` actually contained Dell'Acqua et al. 2026), flag the mismatch to the user.
+- Convention when the mismatch is real but the user wants to keep the on-disk filename: the source page's slug is named for the actual content; the `raw:` frontmatter preserves the literal filename; note the mismatch in the source page and in the log.
+
+### Check 3 — Honest scoping in the source page
+
+- The `length:` frontmatter field should state **what was actually read**, not the source's nominal full length.
+  - Full ingest: `"~12 pages"` (whole article).
+  - Partial / front-matter ingest: `"~317 pages (read pp. 1–15: front matter, intro, framework — body chapters deferred)"`.
+- The TL;DR and an explicit "What was actually ingested" section should make deferred scope visible.
+- Precedents that handle this correctly: [`2026-04-28-ftsg-convergence-outlook-2026`](wiki/sources/2026-04-28-ftsg-convergence-outlook-2026.md) and [`2026-04-30-ai-index-report-2026`](wiki/sources/2026-04-30-ai-index-report-2026.md).
+
+### What to report when a check fails
+
+State: (a) the file as it presents itself (filename, claimed identity from cover), (b) the file as it actually is (page count, identified content, scope), (c) the discrepancy, (d) the proposed next action (ingest as partial / wait for full file / proceed under a different identity). Then ask before proceeding.
+
 ## Working principles
 
 - **The wiki is Claude's codebase.** Touching 15 files in one ingest is normal and expected. Don't be timid about cross-cutting updates — that's the point of the pattern.
 - **Cross-references are the product.** A page without links is undermaintained. Always check what should link to what when adding or updating a page.
 - **Bookkeeping is the job.** Humans abandon wikis because maintenance grows faster than value. Claude's value here is precisely doing the bookkeeping — index updates, log entries, cross-reference repair, consistency sweeps — without being asked twice.
 - **Sources are immutable.** Never edit files in the raw collection. Only read.
+- **Verify before you trust.** Filenames lie, samples masquerade as full sources, and PDFs get truncated. Run the three pre-flight checks (scope, identity, honest scoping) before any ingest. The cleanup cost of a wiki page written on incomplete or misidentified data is much higher than the verification cost.
 - **Co-evolve the schema.** When a workflow turns out to work well (or badly), update this file so future sessions inherit the lesson. The schema is meant to drift toward the user's actual workflow over time.
 - **Citations beat assertions.** Wiki claims should be traceable to a source. When synthesizing across sources, say so.
 
