@@ -26,9 +26,9 @@ The implementation roadmap for v2 features lives in [`llm-wiki-v2-plan.md`](llm-
 2. **The wiki** — LLM-generated, LLM-owned markdown. Summaries, entity pages, concept pages, syntheses, an index, a log. Claude creates, updates, cross-references, and keeps consistent.
 3. **The schema** — this file. The contract that turns Claude into a disciplined maintainer.
 
-## The three operations
+## The four operations
 
-These replace "build / lint / test" for this repo. Apply them whenever the user invokes the corresponding intent.
+These replace "build / lint / test" for this repo. Apply them whenever the user invokes the corresponding intent. **Synthesize** is the v0.3 addition — see [§Synthesis](#synthesis) for the full operation.
 
 ### Ingest
 A new source has been added to the raw collection.
@@ -120,6 +120,7 @@ The wiki is published as a static site via **[Quartz v4](https://quartz.jzhao.xy
   - `backlinks-with-aliases.tsx` — replaces Quartz's stock Backlinks component. The stock one only matches inbound links by canonical slug; this one also matches via the page's frontmatter `aliases`, so wikilinks like `[[Erik Brynjolfsson]]` (which Quartz resolves to the alias slug) correctly produce backlinks on the aliased page.
   - `inject-stale-banner.ts` — when a page's frontmatter has `status: stale`, prepends a warning blockquote at the top of the page linking to `superseded_by`. Source files stay clean; the banner appears only on the published site.
   - `inject-confidence-badge.ts` — when a page carries v0.2 lifecycle fields (`confidence`, `source_count`, `last_confirmed`), renders a one-line italicized metadata strip immediately after the H1: `Confidence 0.85 · 4 sources · last confirmed 2026-04-28`. Skips pages without `confidence` (sources, threads, syntheses).
+  - `relationships-panel.tsx` — Quartz Component placed in the right sidebar between `TableOfContents` and `BacklinksWithAliases`. Reads the page's `relationships:` frontmatter, groups by relationship type, resolves each `target` slug via `allFiles` lookup, surfaces optional `via` text, hides when empty. Component (not AST injection) so it has access to the slug→file map for proper link resolution.
 - **Deploy**: `.github/workflows/deploy.yml`. Pages source must be set to "GitHub Actions" in repo Settings.
 - **Local preview**: `npm install` once, then `npm run serve` → `http://localhost:8080`.
 - **Build only**: `npm run build` → `public/`.
@@ -181,6 +182,97 @@ Empty placeholder text is acceptable on early pages; the section's presence is m
 ### Tier vocabulary
 
 The pipeline `raw/` → `wiki/sources/` → `wiki/concepts/` and `wiki/entities/` → `CLAUDE.md` corresponds to four implicit memory tiers from `llm-wiki-v2.md`: working (raw observations), episodic (per-source summaries), semantic (cross-session facts), procedural (workflow patterns encoded in this schema). The wiki does not maintain separate storage for each tier — directories already serve that purpose. Promotion happens when a recurring observation across multiple sources stabilizes into a concept page, or when a recurring lint pattern becomes a CLAUDE.md rule.
+
+## Graph
+
+The wiki is a graph, not a list of pages. Wikilinks in body text already encode relationships, but they're untyped — `[[Erik Brynjolfsson]]` doesn't say *whether* the page mentions Erik because he authored a paper, employs someone, or is being contradicted. v0.3 adds a typed layer in frontmatter so the wiki can be queried as a graph (e.g., "what does this concept contradict?", "what did Brynjolfsson author?").
+
+### Relationships frontmatter
+
+Every concept and entity page may carry a `relationships:` block in its frontmatter:
+
+```yaml
+relationships:
+  - type: contradicts
+    target: ai-employment-effects
+    via: "occupation-level vs task-level"
+    confidence: 0.7
+  - type: authored-by
+    target: Erik-Brynjolfsson
+```
+
+- **`target`** is the destination page's slug (filename without extension), not a `[[wikilink]]`. Wikilinks-in-frontmatter are not crawled reliably by Quartz; you'd get partial/silent broken links.
+- **`type`** must come from the closed vocabulary below.
+- **`via`** (optional) is a one-line string explaining the nuance — what the relationship turns on. Particularly valuable on `contradicts`/`supports`.
+- **`confidence`** (optional, 0.0–1.0) overrides the default for this edge. If absent, the edge inherits the page's confidence (see [§Lifecycle](#lifecycle)).
+
+### Closed vocabulary
+
+| Type | Direction | Use |
+| ---- | --------- | --- |
+| `supports` | A supports B | A's claim reinforces B's claim (intra-concept agreement) |
+| `contradicts` | A contradicts B | A's claim conflicts with B's; pair with `via` |
+| `caused` | A caused B | Causal claim — a phenomenon, decision, or event led to another |
+| `fixed` | A fixed B | A resolves or repairs B (rare in knowledge work; common in code wikis) |
+| `supersedes` | A supersedes B | A retires B; pair with v0.2 supersession protocol |
+| `uses` | A uses B | A makes use of B (e.g., a method uses a tool) |
+| `depends-on` | A depends on B | A would not work without B |
+| `part-of` | A is part of B | A is a component of B (e.g., person `part-of` lab) |
+| `instance-of` | A is an instance of B | A is a specific case of the broader B |
+| `authored-by` | A is authored by B | A's content originates with B (person or org) |
+| `published-by` | A is published by B | A appeared via B (publisher, journal, venue) |
+| `employs` | A employs B | A (organization) employs B (person) |
+
+Use the type that fits. Inverse relationships are not stored explicitly — `scripts/graph-export.mjs` computes them by walking the corpus.
+
+### Body-wikilink rule (load-bearing)
+
+**Every typed relationship in frontmatter must also appear as a body `[[wikilink]]` with at least one sentence of context.**
+
+Frontmatter is the *typed* layer; body is the *navigable* layer; both are required. If a relationship exists only in frontmatter, Quartz's link crawler cannot follow it — you get a relationships panel pointing at links that don't show up in the graph view. If a wikilink exists only in body, the relationship is untyped and the graph export misses it. Lint enforces both directions from v0.4.
+
+A page's `## Related concepts` / `## Related pages` / in-prose mentions usually already satisfy the body side; the migration just adds the frontmatter twin.
+
+### Graph export
+
+`scripts/graph-export.mjs` walks all `wiki/**/*.md`, reads frontmatter, and emits `wiki/.graph.json` (gitignored) with a node list (slug, type, kind, confidence) and an edge list (type, source, target, confidence, via). Re-run after any migration that changes relationships. v0.5 hybrid search uses this file as its third stream.
+
+### Formalized `kind:` enum (entities)
+
+`kind:` on entity pages is now restricted to one of: `person | organization | product | project | place | event | library | dataset | benchmark | venue`. Drift from earlier ingests (e.g. `org` for organization) gets normalized during the v0.3 migration.
+
+## Synthesis
+
+A `wiki/threads/` page is provisional — it gathers questions, candidate sources, and a "How this thread should resolve" plan. When enough sources are in to answer the question, the thread is **synthesized** into a `wiki/syntheses/` page. Threads stay open as long as the wiki is still gathering evidence; syntheses are the durable conclusions.
+
+### Synthesis page contract
+
+A synthesis page (filename usually matches the originating thread's slug) carries `type: synthesis` and the v0.2 lifecycle fields, plus:
+
+```yaml
+type: synthesis
+derived_from: [thread-slug]   # list; one or more threads this closes
+opened: YYYY-MM-DD            # date the originating thread opened
+closed: YYYY-MM-DD            # date this synthesis was filed
+```
+
+Required body sections, in order:
+
+1. **Question** — what was the thread asking, restated as a single sentence.
+2. **Findings** — what the synthesis concludes. The substantive part.
+3. **Sources consulted** — bulleted list of every source page that informed the synthesis. Each as a `[[wikilink]]`. This is the citation panel.
+4. **Lessons** — short, transferable claims extracted from the synthesis. Each lesson is a single sentence; v0.6 will promote individual lessons to standalone `wiki/lessons/` pages.
+5. **Open questions** — what the synthesis did *not* answer; carried forward to a new thread or future ingest.
+
+### `synthesize` operation
+
+When a thread is ready to close:
+
+1. Read the thread page and every source it lists.
+2. Draft the synthesis page in `wiki/syntheses/` per the contract above.
+3. Update the thread page: `status: closed` in frontmatter; add a "Closed" note pointing to the synthesis.
+4. Update `index.md`: drop the thread from the open-threads list; add the synthesis to the (no-longer-empty) Syntheses section.
+5. Append a `log.md` entry under `op: synthesize` describing the question and the headline finding.
 
 ## Reference
 

@@ -8,6 +8,13 @@ website: "https://cisr.mit.edu"
 confidence: 0.75
 last_confirmed: "2026-04-28"
 source_count: 1
+relationships:
+  - type: employs
+    target: Stephanie-Woerner
+    via: "Director"
+  - type: employs
+    target: Peter-Weill
+    via: "Chairman"
 ---
 
 # MIT CISR

@@ -5,6 +5,13 @@ tags: [employment, labor-market, ai-displacement, automation, labor-economics, a
 confidence: 0.95
 last_confirmed: "2026-04-30"
 source_count: 10
+relationships:
+  - type: supports
+    target: automation-vs-augmentation
+    via: "Brynjolfsson Canaries — declines concentrated in automation share, not augmentation"
+  - type: caused
+    target: ai-deskilling
+    via: "task-composition shift is one mechanism within broader employment effects"
 ---
 
 # AI Employment Effects

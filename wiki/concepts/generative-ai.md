@@ -5,6 +5,13 @@ tags: [generative-ai, foundation-models, ai-adoption]
 confidence: 0.95
 last_confirmed: "2026-05-02"
 source_count: 11
+relationships:
+  - type: uses
+    target: foundation-models
+    via: "GenAI is the dominant deployment of foundation models in 2024–2026"
+  - type: caused
+    target: enterprise-ai-adoption
+    via: "the 2024 jump from 55% → 78% adoption was driven by GenAI specifically"
 ---
 
 # Generative AI

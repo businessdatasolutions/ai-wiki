@@ -9,6 +9,13 @@ contact: "erikb@stanford.edu"
 confidence: 0.85
 last_confirmed: "2026-04-28"
 source_count: 3
+relationships:
+  - type: part-of
+    target: Stanford-Digital-Economy-Lab
+    via: "Director"
+  - type: part-of
+    target: AI-Index
+    via: "Steering Committee member"
 ---
 
 # Erik Brynjolfsson

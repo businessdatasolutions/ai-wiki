@@ -6,6 +6,10 @@ tags: [bansal, ivey, sustainability, systems-thinking]
 confidence: 0.70
 last_confirmed: "2026-04-28"
 source_count: 1
+relationships:
+  - type: part-of
+    target: Ivey-Business-School
+    via: "Canada Research Chair in Business Sustainability"
 ---
 
 # Tima Bansal

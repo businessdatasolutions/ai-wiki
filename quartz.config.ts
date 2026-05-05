@@ -22,6 +22,7 @@ const config: QuartzConfig = {
       ".obsidian",
       "raw",
       "**/.DS_Store",
+      "**/.graph.json",
     ],
     defaultDateType: "modified",
     theme: {

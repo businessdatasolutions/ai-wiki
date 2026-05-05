@@ -5,6 +5,13 @@ tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
 last_confirmed: "2026-04-30"
 source_count: 6
+relationships:
+  - type: part-of
+    target: enterprise-ai-adoption
+    via: "RAI is the governance overlay on adoption decisions"
+  - type: supports
+    target: ai-employment-effects
+    via: "labor-market disruption is an under-attended RAI concern"
 ---
 
 # Responsible AI

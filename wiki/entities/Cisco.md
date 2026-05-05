@@ -17,7 +17,7 @@ source_count: 1
 ## Role in the wiki
 
 - **Sponsor of [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MIT Technology Review Insights' "Building the AI-enabled enterprise of the future"]]** (2025).
-- Source of the framing: **5 foundations** for AI-readiness — Strategy / Infrastructure / Data / Governance / Culture and Talent. See [[organizational-frameworks-for-ai-adoption]].
+- Source of the framing: **5 foundations** for AI-readiness — Strategy / Infrastructure / Data / Governance / Culture and Talent. See [[syntheses/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]].
 - Source of the **chatbot → agent → multi-agent system** progression frequently cited in [[ai-agents]].
 - Source of the **AI-readiness gap** stat: only 13% of organizations globally are ready to leverage AI to its full potential (per Cisco's 2025 data).
 

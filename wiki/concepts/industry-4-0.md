@@ -5,6 +5,13 @@ tags: [industry-4-0, smart-manufacturing, iot, cyber-physical-systems, digital-t
 confidence: 0.85
 last_confirmed: "2026-04-28"
 source_count: 4
+relationships:
+  - type: caused
+    target: lean-4-0
+    via: "Industry 4.0 technologies enabled the Lean Manufacturing + digital synergy"
+  - type: uses
+    target: ai-agents
+    via: "autonomous monitoring (Jidoka + AI-powered) is an Industry 4.0 deployment of agents"
 ---
 
 # Industry 4.0

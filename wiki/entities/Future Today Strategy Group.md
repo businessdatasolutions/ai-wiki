@@ -6,6 +6,10 @@ tags: [FTSG, foresight, strategy-consultancy, webb]
 confidence: 0.70
 last_confirmed: "2026-04-28"
 source_count: 2
+relationships:
+  - type: employs
+    target: Amy-Webb
+    via: "CEO"
 ---
 
 # Future Today Strategy Group

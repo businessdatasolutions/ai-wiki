@@ -1,6 +1,7 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 import BacklinksWithAliases from "./extensions/backlinks-with-aliases"
+import RelationshipsPanel from "./extensions/relationships-panel"
 
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -41,6 +42,7 @@ export const defaultContentPageLayout: PageLayout = {
       globalGraph: { showTags: true, removeTags: [] },
     }),
     Component.DesktopOnly(Component.TableOfContents()),
+    RelationshipsPanel(),
     BacklinksWithAliases(),
   ],
 }

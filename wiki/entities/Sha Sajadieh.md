@@ -6,6 +6,12 @@ tags: [sajadieh, stanford-hai, ai-index, editor-in-chief]
 confidence: 0.70
 last_confirmed: "2026-04-30"
 source_count: 1
+relationships:
+  - type: part-of
+    target: AI-Index
+    via: "Editor-in-Chief (2026 edition)"
+  - type: part-of
+    target: Stanford-HAI
 ---
 
 # Sha Sajadieh

@@ -5,6 +5,13 @@ tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, wor
 confidence: 0.70
 last_confirmed: "2026-05-02"
 source_count: 1
+relationships:
+  - type: instance-of
+    target: enterprise-ai-adoption
+    via: "named failure mode of shallow adoption — task gains without firm-level value"
+  - type: contradicts
+    target: automation-vs-augmentation
+    via: "process lock-in = automation without redesign; reinvent-the-business resists this trap"
 ---
 
 # Micro-Productivity Trap
@@ -61,7 +68,7 @@ The micro-productivity-trap framing sits among several wiki vocabularies address
 - [[2026-05-03-rewired-second-edition-sample|McKinsey "Rewired" 2nd ed (2026)]] — *6 capabilities* (business-led roadmap, talent, operating model, technology, data, adoption-and-scaling); 20% EBITDA uplift / $3:$1 / 1–2yr breakeven across ~20 deep-dive AI-leader companies; 70% talent-density shifts.
 - [[2026-04-30-ai-index-report-2026|AI Index 2026]] — empirical context: 88% organizational AI adoption but **AI agent deployment in single digits per business function**.
 
-Each names the same broad gap with a different vocabulary; the wiki's [[organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] thread tracks this convergence.
+Each names the same broad gap with a different vocabulary; the wiki's [[syntheses/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] synthesis maps the cluster.
 
 ## Related concepts
 

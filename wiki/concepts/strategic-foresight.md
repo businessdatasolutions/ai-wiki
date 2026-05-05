@@ -5,6 +5,13 @@ tags: [strategic-foresight, scenarios, futures, signal-detection, FTSG, webb]
 confidence: 0.75
 last_confirmed: "2026-04-28"
 source_count: 2
+relationships:
+  - type: part-of
+    target: dynamic-capabilities
+    via: "sensing-cluster microfoundation in the Teece framework"
+  - type: supports
+    target: enterprise-ai-adoption
+    via: "informs deployment decisions under deep uncertainty"
 ---
 
 # Strategic Foresight

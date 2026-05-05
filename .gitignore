@@ -5,6 +5,10 @@ public
 tsconfig.tsbuildinfo
 prof
 
+# Generated graph (v0.3): emitted by scripts/graph-export.mjs, read by
+# future tools (v0.5 hybrid search). Always re-derivable from frontmatter.
+wiki/.graph.json
+
 # macOS
 .DS_Store
 

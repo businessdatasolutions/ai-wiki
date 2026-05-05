@@ -7,6 +7,16 @@ since: 2015
 confidence: 0.85
 last_confirmed: "2026-05-02"
 source_count: 7
+relationships:
+  - type: employs
+    target: Aaron-Chatterji
+    via: "Chief Economist"
+  - type: employs
+    target: Gawesha-Weeratunga
+    via: "Economic Research team"
+  - type: employs
+    target: Harrison-Satcher
+    via: "Economic Research team"
 ---
 
 # OpenAI

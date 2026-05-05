@@ -109,7 +109,7 @@ The author lens deserves one note: Werner and Le-Brun are AWS executives in resi
 
 The most actionable insight is the **antipatterns taxonomy** (clarity / ownership / curiosity). It's a sharper diagnostic than "do you have a transformation strategy" and ties the AI question to organizational behavior in a way an executive can act on.
 
-For the wiki, this article opens a [[organizational-frameworks-for-ai-adoption]] thread alongside the more direct AI-strategy frameworks (MIT CISR, Anand-Wu, Cisco). The Octopus framework is **prescriptive at the org-design layer**; the others are **prescriptive at the AI-strategy layer**. Both are needed.
+For the wiki, this article opens a [[threads/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] thread alongside the more direct AI-strategy frameworks (MIT CISR, Anand-Wu, Cisco). The Octopus framework is **prescriptive at the org-design layer**; the others are **prescriptive at the AI-strategy layer**. Both are needed.
 
 ## Linked entities and concepts
 
@@ -117,7 +117,7 @@ For the wiki, this article opens a [[organizational-frameworks-for-ai-adoption]]
 
 **Concepts:** [[enterprise-ai-adoption]] (light enrichment — Tin Man / Octopus as org-readiness lens; 12% transformation-success baseline).
 
-**Threads:** [[organizational-frameworks-for-ai-adoption]] (new — Octopus/Tin Man enters as the org-design-level framework).
+**Threads:** [[threads/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] (new — Octopus/Tin Man enters as the org-design-level framework).
 
 ## Source
 

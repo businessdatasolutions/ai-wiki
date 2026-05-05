@@ -6,6 +6,10 @@ tags: [rapoport, bain, AI-deployment, private-equity]
 confidence: 0.70
 last_confirmed: "2026-05-02"
 source_count: 1
+relationships:
+  - type: part-of
+    target: Bain-&-Company
+    via: "Partner; head of AI for Private Equity practice"
 ---
 
 # Gene Rapoport

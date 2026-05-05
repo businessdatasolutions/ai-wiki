@@ -6,6 +6,11 @@ tags: [continuum-laboratory, AI-firm, crowdsourcing, San-Francisco]
 confidence: 0.75
 last_confirmed: "2026-04-29"
 source_count: 1
+relationships:
+  - type: employs
+    target: Miaomiao-Zhang
+  - type: employs
+    target: Vladimir-Jacimovic
 ---
 
 # Continuum Laboratory

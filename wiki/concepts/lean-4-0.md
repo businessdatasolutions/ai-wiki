@@ -5,6 +5,10 @@ tags: [lean-4-0, lean-manufacturing, industry-4-0, smart-manufacturing, ai-in-ma
 confidence: 0.70
 last_confirmed: "2026-04-28"
 source_count: 3
+relationships:
+  - type: part-of
+    target: industry-4-0
+    via: "Lean 4.0 is the synergy of Lean Manufacturing with Industry 4.0 technologies"
 ---
 
 # Lean 4.0

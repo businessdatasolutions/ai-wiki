@@ -16,7 +16,7 @@ import { fileURLToPath } from "node:url"
 import matter from "gray-matter"
 
 const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), "..")
-const TARGETS = ["wiki/concepts", "wiki/entities"]
+const TARGETS = ["wiki/concepts", "wiki/entities", "wiki/syntheses"]
 const STALE_THRESHOLD_DAYS = 30
 
 async function listMarkdown(dir) {

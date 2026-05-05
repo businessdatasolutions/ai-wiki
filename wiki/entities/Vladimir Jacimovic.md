@@ -6,6 +6,9 @@ tags: [jacimovic, continuum-laboratory, harvard-business-school]
 confidence: 0.75
 last_confirmed: "2026-04-29"
 source_count: 1
+relationships:
+  - type: part-of
+    target: Continuum-Laboratory
 ---
 
 # Vladimir Jacimovic

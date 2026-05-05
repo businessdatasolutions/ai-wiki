@@ -8,6 +8,10 @@ since: 2025
 confidence: 0.75
 last_confirmed: "2026-04-28"
 source_count: 2
+relationships:
+  - type: part-of
+    target: Anthropic
+    via: "Recurring research initiative published by Anthropic"
 ---
 
 # Anthropic Economic Index

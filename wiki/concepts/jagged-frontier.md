@@ -5,6 +5,13 @@ tags: [jagged-frontier, AI-capabilities, knowledge-work, productivity, automatio
 confidence: 0.90
 last_confirmed: "2026-04-30"
 source_count: 5
+relationships:
+  - type: supports
+    target: automation-vs-augmentation
+    via: "per-task fit determines whether AI augments or harms — empirical mechanism"
+  - type: instance-of
+    target: generative-ai
+    via: "characterizes the capability profile of GPT-class models specifically"
 ---
 
 # Jagged Frontier

@@ -69,7 +69,7 @@ Third through sixth ingests in a single batch (user-requested override of the de
 - [[industry-4-0]] — referenced by MITTRI/Cisco (manufacturing data) and Gomaa.
 
 **New thread (1):**
-- [[organizational-frameworks-for-ai-adoption]] — tracks the cross-source comparison of MIT CISR Four Stages + Four S vs Anand-Wu 2×2 vs Cisco 5 Foundations vs Werner-Le-Brun Octopus/Tin Man. Initial reading: complementary, not competing — they target different layers (org design / readiness / capability progression / task deployment / diagnosis).
+- [[threads/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] — tracks the cross-source comparison of MIT CISR Four Stages + Four S vs Anand-Wu 2×2 vs Cisco 5 Foundations vs Werner-Le-Brun Octopus/Tin Man. Initial reading: complementary, not competing — they target different layers (org design / readiness / capability progression / task deployment / diagnosis).
 
 **Major enrichments to existing pages:**
 - [[enterprise-ai-adoption]] — added the 5-lens working definition; full Anand-Wu 2×2 framework with examples; the leakage-points diagnostic; the paradox-of-access argument; Ford worked example.
@@ -419,7 +419,7 @@ User confirmed the sample-only scope is intentionally useful in its own right ("
 
 **Cross-source notes (descriptive only, per cross-source neutrality preference):**
 
-- The Rewired 6-capability framework adds an **8th named vocabulary** to the wiki's running cluster of "adoption breadth ≠ transformation depth" framings (alongside Anand-Wu 2×2, Werner-Le-Brun Octopus/Tin-Man, MIT CISR Four Stages + Four S, MITTRI/Cisco 5 Foundations, Bansal-Birkinshaw systems thinking, Warner-Wäger dynamic capabilities, Bain/OpenAI micro-productivity-trap). The [[organizational-frameworks-for-ai-adoption]] thread page would be a strong synthesis target now.
+- The Rewired 6-capability framework adds an **8th named vocabulary** to the wiki's running cluster of "adoption breadth ≠ transformation depth" framings (alongside Anand-Wu 2×2, Werner-Le-Brun Octopus/Tin-Man, MIT CISR Four Stages + Four S, MITTRI/Cisco 5 Foundations, Bansal-Birkinshaw systems thinking, Warner-Wäger dynamic capabilities, Bain/OpenAI micro-productivity-trap). The [[threads/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] thread page would be a strong synthesis target now.
 - **Three independent magnitude estimates** for AI-transformation EBITDA/productivity gains now in the wiki: McKinsey/Rewired 20% EBITDA, Bain/OpenAI 10–25% EBITDA, AI Index 2026 14–26% productivity. Same direction, similar magnitude, three different vantages (consulting deep-dives × 2, national-survey × 1).
 - McKinsey's data-partner role in the AI Index makes this *not quite* an independent voice — the wiki's [[McKinsey & Company]] entity page documents the methodological dependency.
 
@@ -629,3 +629,91 @@ Follow-up to v0.2: the lifecycle fields were stored in frontmatter but not rende
 - `og:description` on Anthropic now reads `"Anthropic AI safety and research company; publisher of the Claude family..."` — no badge leak.
 
 CSS class `confidence-badge` exposed for future styling. No content edits.
+
+## [2026-05-05] bulk-refactor | v0.3 schema + tooling — typed knowledge graph
+
+Lands the v0.3 schema slice from [`llm-wiki-v2-plan.md`](../llm-wiki-v2-plan.md): typed relationships in frontmatter, a graph-export script, a Quartz layout component that renders relationships per-page, and the formalized synthesis page contract. Wiki content migrations and the synthesis acceptance test ship in the next two log entries.
+
+**Schema changes ([`CLAUDE.md`](../CLAUDE.md)):**
+
+- New §Graph: `relationships:` frontmatter contract on concepts and entities; closed 12-type vocabulary (`supports`, `contradicts`, `caused`, `fixed`, `supersedes`, `uses`, `depends-on`, `part-of`, `instance-of`, `authored-by`, `published-by`, `employs`); load-bearing **body-wikilink rule** (every typed relationship in frontmatter must also appear as a body `[[wikilink]]`); formalized `kind:` enum on entities.
+- New §Synthesis: synthesis page contract (`type: synthesis`, `derived_from`, required sections Question / Findings / Sources consulted / Lessons / Open questions) and the `synthesize` operation as a 5-step recipe.
+- "The three operations" → "The four operations" — `synthesize` is the v0.3 addition.
+- Extensions list extended with `relationships-panel.tsx`.
+
+**Tooling:**
+
+- New Quartz Component [`extensions/relationships-panel.tsx`](../extensions/relationships-panel.tsx): right-sidebar panel between TableOfContents and BacklinksWithAliases. Reads frontmatter `relationships:`, groups by type, resolves each `target` slug via `allFiles` lookup with basename matching, surfaces optional `via` strings as italic. Hides when empty. Component (not AST injection) for proper slug resolution.
+- New script [`scripts/graph-export.mjs`](../scripts/graph-export.mjs): walks `wiki/**/*.md`, emits `wiki/.graph.json` (gitignored) with `nodes` (slug, type, kind, title, confidence, source_count, last_confirmed) and `edges` (source, target, target_resolved, type, confidence, via). Reports unresolved edges and ambiguous basenames.
+- `wiki/.graph.json` added to `.gitignore` and to Quartz `ignorePatterns` (excluded from publishing).
+- [`scripts/lint-confidence.mjs`](../scripts/lint-confidence.mjs) extended to also check `wiki/syntheses/`.
+
+**Verification:**
+
+- `npm run build` clean (95 → 96 input files after the synthesis lands; 663 emitted).
+- `node scripts/graph-export.mjs` produces `wiki/.graph.json` with 0 unresolved edges.
+- Relationships panel renders correctly on concept and entity pages, hides on sources/threads.
+
+**Reversibility:** schema additions to CLAUDE.md and quartz.config.ts; two new files; one .gitignore line; one script line. Reverting is a small diff. No content edits in this slice.
+
+## [2026-05-05] bulk-refactor | v0.3 migration — relationships on 38 pages
+
+Concept and entity migration adding `relationships:` frontmatter blocks per the v0.3 §Graph contract. **17/17 concepts** and **21/54 entities** migrated; remaining 33 entities (mostly single-source author pages whose org affiliations don't yet exist as entity pages — Wharton, NYU Stern, HBS, Said, etc.) get no `relationships:` block in v0.3 (target-slug for their affiliations would not resolve).
+
+**Concept relationships** (29 edges added, types weighted toward concept-to-concept):
+- `supports`: 9 (e.g. `automation-vs-augmentation` → `ai-employment-effects`, `dynamic-capabilities` → `enterprise-ai-adoption`)
+- `uses`: 7 (e.g. `enterprise-ai-adoption` → `automation-vs-augmentation`, `ai-agents` → `foundation-models`)
+- `caused`: 5 (e.g. `industry-4-0` → `lean-4-0`, `generative-ai` → `enterprise-ai-adoption`)
+- `instance-of`: 4 (e.g. `ai-deskilling` → `ai-employment-effects`, `jagged-frontier` → `generative-ai`)
+- `part-of`: 3 (e.g. `lean-4-0` → `industry-4-0`, `responsible-ai` → `enterprise-ai-adoption`)
+- `contradicts`: 1 (`micro-productivity-trap` → `automation-vs-augmentation`, via "process lock-in")
+
+**Entity relationships** (48 edges added):
+- `employs`: 22 (orgs → people, e.g. `McKinsey-&-Company` employs `Eric-Lamarre`, `Kate-Smaje`, `Rob-Levin`, `Alex-Singla`, `Alexander-Sukharevsky`)
+- `part-of`: 26 (people → orgs, e.g. `Erik-Brynjolfsson` part-of `Stanford-Digital-Economy-Lab` and `AI-Index`)
+
+Notable structural pattern: the closed 12-type vocabulary is biased toward source/concept relationships. People → org affiliations work well via `part-of`; org → org parent (e.g. `AI-Index` part-of `Stanford-HAI`, `Anthropic-Economic-Index` part-of `Anthropic`) also fits. Pages with no resolvable outgoing relationship in the closed vocab (e.g. publishers like `Harvard-Business-Review`, `Boston-Consulting-Group`, sole-affiliation people whose universities aren't entity pages) get no `relationships:` block — their relationships will surface as inverse edges in `.graph.json` when graph-export computes the inverse view.
+
+**Graph stats after concept + entity migration:**
+- Nodes: 93 (17 concepts + 54 entities + 20 sources + 2 threads + 0 syntheses, before the synthesis was filed)
+- Edges: 77 (29 concept + 48 entity)
+- Unresolved edges: 0
+- Ambiguous basenames: 0 (until the synthesis was filed — see next entry)
+
+**Verification:** `npm run build` green; `node scripts/graph-export.mjs` reports 77 edges with 0 unresolved; relationships panel renders on every migrated page.
+
+**Reversibility:** additive `relationships:` frontmatter on 38 existing pages; no content edits. `git diff main` cleanly isolates.
+
+## [2026-05-05] synthesize | organizational-frameworks-for-ai-adoption — six frameworks mapped to seven decision layers
+
+First synthesis filed under [`wiki/syntheses/`](../wiki/syntheses/). Closes the [[threads/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] thread per its written close-trigger ("when a 5th or 6th comparable framework appears"). The 5th and 6th frameworks were McKinsey *Rewired* 2nd ed and the Bain/OpenAI 4-step transformation framework, both ingested earlier this week.
+
+**The synthesis page** ([`wiki/syntheses/organizational-frameworks-for-ai-adoption.md`](../wiki/syntheses/organizational-frameworks-for-ai-adoption.md)) follows the v0.3 contract:
+
+- frontmatter: `type: synthesis`, `derived_from: [organizational-frameworks-for-ai-adoption]`, `opened: 2026-04-28`, `closed: 2026-05-05`, lifecycle fields (confidence: 0.90, source_count: 6), `relationships: [instance-of enterprise-ai-adoption, supports micro-productivity-trap]`.
+- body: Question, Findings (layer-mapping table + 7-step decision tree + genuine-disagreement section + agreement section + empirical-validation gap analysis), Sources consulted (all 6), Lessons (4), Open questions (4).
+
+**Headline finding:** the 6 frameworks map to 7 distinct decision layers (org-design / readiness / capability progression / transformation playbook / trap escape / task deployment / diagnostic). Most apparent disagreements are vocabulary; genuine splits are: (a) the Stage 2 → Stage 3 financial inflection is MIT CISR-specific, (b) "reinvent the business" (McKinsey/Bain) vs incremental capability building (MIT CISR), (c) Werner-Le-Brun's org-design layer is treated as upstream prerequisite, others as downstream outcome, (d) MIT CISR Stage 2 frames pilots as a *phase* while Bain/OpenAI frame the same as a *trap*.
+
+**Thread closure protocol applied:**
+
+- Thread page frontmatter: `status: closed`, `closed: 2026-05-05`, `synthesized_into: organizational-frameworks-for-ai-adoption`.
+- Thread page gains an Obsidian `[!success]` callout at the top pointing to the synthesis.
+- `index.md` Syntheses section: dropped "(empty)" placeholder; the synthesis is now the first entry. Threads section updated to mark the source thread closed.
+
+**Sibling-basename ambiguity cleanup:** The synthesis page shares a basename with the thread page (intentional convention — synthesis matches thread slug). 12 unqualified `[[organizational-frameworks-for-ai-adoption]]` wikilinks across the wiki were ambiguous after the synthesis was filed. Disambiguated by route:
+- Forward-looking references ("see the framework comparison") → `[[syntheses/...|...]]`. 5 occurrences in `concepts/enterprise-ai-adoption.md` (×3), `concepts/micro-productivity-trap.md`, `entities/Cisco.md`, `entities/Bharat N. Anand.md`.
+- Historical references ("this thread tracks…", source-page Threads: lines, log entries) → `[[threads/...|...]]`. 7 occurrences in `log.md` (×2), `sources/2026-04-28-mittri-cisco-...`, `sources/2026-04-28-anand-wu-...`, `sources/2026-04-28-werner-lebrun-...` (×2), and the synthesis page's own opening line ("Closes [[threads/...]]").
+
+`scripts/graph-export.mjs` reports the basename collision under `ambiguous_basenames` — the script removes ambiguous basenames from its matching index, requiring folder-qualified targets going forward. Documented in CLAUDE.md §Graph.
+
+**Verification:**
+- `wiki/syntheses/` is no longer empty (v0.3 acceptance criterion ✓).
+- `index.md` Syntheses section drops the "(empty)" placeholder ✓.
+- `npm run build` green; 96 input files; 663 emitted; the synthesis renders with relationships panel showing `instance-of enterprise-ai-adoption` and `supports micro-productivity-trap`.
+- `node scripts/graph-export.mjs` reports 94 nodes, 79 edges, 0 unresolved, 1 ambiguous basename (the deliberate thread/synthesis pair).
+- `node scripts/lint-confidence.mjs` exits 0 — the synthesis carries all required v0.2 lifecycle fields.
+
+**Reversibility:** the synthesis is a new file; the thread page edit is a small additive callout + 2 frontmatter fields; the 12 wikilink disambiguations are localized text edits. To revert: delete `wiki/syntheses/organizational-frameworks-for-ai-adoption.md`, revert thread page, revert the 12 wikilink edits.
+
+v0.3 complete. Next per [`llm-wiki-v2-plan.md`](../llm-wiki-v2-plan.md): v0.4 (automation hooks).

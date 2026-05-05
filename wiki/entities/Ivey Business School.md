@@ -6,6 +6,13 @@ tags: [ivey, business-school, western-university, canada]
 confidence: 0.70
 last_confirmed: "2026-04-28"
 source_count: 1
+relationships:
+  - type: employs
+    target: Tima-Bansal
+    via: "Canada Research Chair in Business Sustainability"
+  - type: employs
+    target: Julian-Birkinshaw
+    via: "Dean"
 ---
 
 # Ivey Business School

@@ -5,6 +5,10 @@ tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, m
 confidence: 0.90
 last_confirmed: "2026-04-28"
 source_count: 4
+relationships:
+  - type: supports
+    target: enterprise-ai-adoption
+    via: "AI adoption requires dynamic-capability microfoundations to scale"
 ---
 
 # Dynamic Capabilities

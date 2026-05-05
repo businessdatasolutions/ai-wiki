@@ -5,6 +5,12 @@ tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.85
 last_confirmed: "2026-04-28"
 source_count: 4
+relationships:
+  - type: instance-of
+    target: generative-ai
+    via: "agents are the orchestrating tier on top of LLM-based GenAI"
+  - type: uses
+    target: foundation-models
 ---
 
 # AI Agents

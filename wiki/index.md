@@ -106,9 +106,9 @@ Each section is flat-listed alphabetically. Once page counts grow, sections may 
 
 ## Syntheses
 
-_(empty — a synthesis on organizational frameworks for AI adoption is the natural first candidate; tracked in [[organizational-frameworks-for-ai-adoption]])_
+- [[syntheses/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] — Closes the thread of the same name. Six frameworks (MIT CISR Four Stages + Four S; Anand-Wu 2×2 + leakage points; Cisco 5 Foundations; Werner-Le-Brun Octopus/Tin Man; McKinsey *Rewired* 6 capabilities; Bain/OpenAI 4-step transformation) mapped to seven decision layers (org-design / readiness / capability progression / transformation playbook / trap escape / task deployment / diagnostic), with a decision tree and an empirical-validation gap analysis.
 
 ## Threads
 
 - [[ai-maturity-measurement-comparison]] — _open_. How do AI Index, MIT CISR, Cisco, Werner-Le-Brun, and now Brynjolfsson all measure "AI's organizational impact" differently? The 1% / 7% / 12% / 13% spread on a single order of magnitude, plus employment-effects as a third measurement dimension.
-- [[organizational-frameworks-for-ai-adoption]] — _open_. Four named frameworks (MIT CISR Four Stages + Four S; Anand-Wu 2×2; Cisco 5 Foundations; Werner-Le-Brun Octopus/Tin Man) — competing or complementary?
+- [[threads/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] — _closed 2026-05-05; synthesized into [[syntheses/organizational-frameworks-for-ai-adoption|the synthesis page]]_. Original thread retained for history.

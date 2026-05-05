@@ -6,6 +6,9 @@ tags: [zhang, continuum-laboratory, AI-research]
 confidence: 0.75
 last_confirmed: "2026-04-29"
 source_count: 1
+relationships:
+  - type: part-of
+    target: Continuum-Laboratory
 ---
 
 # Miaomiao Zhang

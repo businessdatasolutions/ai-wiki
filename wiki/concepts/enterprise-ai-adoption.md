@@ -5,6 +5,21 @@ tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity]
 confidence: 0.95
 last_confirmed: "2026-05-03"
 source_count: 15
+relationships:
+  - type: uses
+    target: automation-vs-augmentation
+    via: "per-task deployment lens — what to automate vs. augment"
+  - type: uses
+    target: dynamic-capabilities
+    via: "capability framing for digital transformation"
+  - type: uses
+    target: jagged-frontier
+    via: "task-by-task capability awareness drives deployment choice"
+  - type: caused
+    target: micro-productivity-trap
+    via: "shallow adoption produces task-level gains without firm-level value"
+  - type: caused
+    target: ai-employment-effects
 ---
 
 # Enterprise AI Adoption
@@ -56,7 +71,7 @@ Multiple complementary lenses are used by sources in this wiki:
 
 **Task lens** ([[2026-04-28-anand-wu-genai-playbook|Anand-Wu]]): a 2×2 matrix on **cost of errors × type of knowledge** decides where to deploy GenAI on a per-task basis (no regrets / creative catalyst / quality control / human-first zones).
 
-All five lenses agree qualitatively: **most organizations are using AI in some form, but very few are actually mature/ready/adapted.** The AI Index pegs "mature" at 1%; MIT CISR pegs Stage 4 at 7%; Cisco pegs "ready" at 13%; Werner-Le-Brun's 12% transformation-success baseline gives the broader org-change context. See [[ai-maturity-measurement-comparison]] for methodological cross-walk and [[organizational-frameworks-for-ai-adoption]] for the framework comparison.
+All five lenses agree qualitatively: **most organizations are using AI in some form, but very few are actually mature/ready/adapted.** The AI Index pegs "mature" at 1%; MIT CISR pegs Stage 4 at 7%; Cisco pegs "ready" at 13%; Werner-Le-Brun's 12% transformation-success baseline gives the broader org-change context. See [[ai-maturity-measurement-comparison]] for methodological cross-walk and [[syntheses/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] for the framework comparison.
 
 The shape of adoption can be measured along several dimensions:
 
@@ -108,7 +123,7 @@ A complementary task-level lens from [[2026-04-28-anand-wu-genai-playbook|Anand 
 | **High cost of errors** | **Human-first zone** — Human leads, AI assists with minor tasks. Setting strategy, integrating enterprise systems, disciplinary decisions, hiring critical employees. | **Quality control zone** — AI produces, human verifies. Drafting high-value contracts ([[Harvey]]); writing production software code ([[GitHub Copilot]]); due diligence. |
 | **Low cost of errors** | **Creative catalyst zone** — AI creates options, human selects. Creating advertisements, outlining sales scripts, developing products. | **No regrets zone** — AI does it all (no human in the loop). Bulk customer inquiries, document summarization, résumé screening. *Where [[ai-agents]] thrive.* |
 
-The framework's punchline: stop debating GenAI's intelligence; ask which tasks GenAI can assist with today to make human judgment more effective. See [[organizational-frameworks-for-ai-adoption]] for how this maps to other frameworks.
+The framework's punchline: stop debating GenAI's intelligence; ask which tasks GenAI can assist with today to make human judgment more effective. See [[syntheses/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] for how this maps to other frameworks.
 
 ## Why don't gen AI gains show up in P&L? (Anand-Wu's leakage diagnostic)
 
@@ -133,7 +148,7 @@ A counterweight to the "AI is a competitive moat" rhetoric: **"Because everyone 
 - CAD/ERP (1990s+): once an advantage, became table stakes.
 - Big Law (1990s+): clients pulled work in-house using digital tools; nearly **90% of large law firms now offer flat-fee or favorable pricing**; in-house counsel tripled 1997–2020.
 
-Implication: **competitive differentiation in 2025+ comes from complementary assets** — proprietary data, unique people/processes/culture — not from "having AI." See [[organizational-frameworks-for-ai-adoption]].
+Implication: **competitive differentiation in 2025+ comes from complementary assets** — proprietary data, unique people/processes/culture — not from "having AI." See [[syntheses/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]].
 
 ## Key claims
 

@@ -6,6 +6,17 @@ tags: [mckinsey, management-consulting, quantumblack, ai-research, tech-ai-trans
 confidence: 0.85
 last_confirmed: "2026-05-03"
 source_count: 4
+relationships:
+  - type: employs
+    target: Eric-Lamarre
+  - type: employs
+    target: Kate-Smaje
+  - type: employs
+    target: Rob-Levin
+  - type: employs
+    target: Alex-Singla
+  - type: employs
+    target: Alexander-Sukharevsky
 ---
 
 # McKinsey & Company

@@ -8,6 +8,10 @@ role: "Senior research scientist; Chairman of [[MIT CISR]]"
 confidence: 0.75
 last_confirmed: "2026-05-03"
 source_count: 2
+relationships:
+  - type: part-of
+    target: MIT-CISR
+    via: "Chairman"
 ---
 
 # Peter Weill

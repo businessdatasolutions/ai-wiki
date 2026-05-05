@@ -1,9 +1,14 @@
 ---
 type: thread
-status: open
+status: closed
 opened: 2026-04-28
+closed: 2026-05-05
+synthesized_into: organizational-frameworks-for-ai-adoption
 tags: [ai-adoption, organizational-design, frameworks, cross-source-comparison]
 ---
+
+> [!success] Closed — synthesized 2026-05-05
+> This thread was closed when a 5th and 6th framework appeared (McKinsey *Rewired* 2nd ed and Bain/OpenAI). The synthesis lives at [[syntheses/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption synthesis]] and supersedes the analysis below for use as a reference.
 
 # Thread: Multiple frameworks for thinking about AI in organizations — competing or complementary?
 

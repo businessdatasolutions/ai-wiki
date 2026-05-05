@@ -9,6 +9,12 @@ contact: "nmaslej@stanford.edu"
 confidence: 0.75
 last_confirmed: "2026-04-30"
 source_count: 2
+relationships:
+  - type: part-of
+    target: AI-Index
+    via: "Research Manager and former Editor-in-Chief"
+  - type: part-of
+    target: Stanford-HAI
 ---
 
 # Nestor Maslej

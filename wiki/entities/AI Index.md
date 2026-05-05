@@ -8,6 +8,22 @@ since: 2017
 confidence: 0.85
 last_confirmed: "2026-04-30"
 source_count: 2
+relationships:
+  - type: part-of
+    target: Stanford-HAI
+    via: "AI Index is an independent initiative within Stanford HAI"
+  - type: employs
+    target: Yolanda-Gil
+    via: "Steering Committee chair (2026 edition)"
+  - type: employs
+    target: Sha-Sajadieh
+    via: "Editor-in-Chief (2026 edition)"
+  - type: employs
+    target: Nestor-Maslej
+    via: "Research Manager and former Editor-in-Chief"
+  - type: employs
+    target: Erik-Brynjolfsson
+    via: "Steering Committee member"
 ---
 
 # AI Index

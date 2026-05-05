@@ -118,7 +118,7 @@ The historical analogies (Internet 1.0 e-ticketing, Big Law 1990s, Harrah's, Cap
 
 **Concepts:** [[generative-ai]] (heavy enrichment), [[enterprise-ai-adoption]] (heavy enrichment — the 2×2 framework + leakage points), [[ai-agents]] (the "no regrets zone" projection), [[responsible-ai]] (the "guard against most-critical risks" framing).
 
-**Threads:** [[organizational-frameworks-for-ai-adoption]] (Anand-Wu's 2×2 enters the framework comparison).
+**Threads:** [[threads/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] (Anand-Wu's 2×2 enters the framework comparison).
 
 ## Source
 

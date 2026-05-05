@@ -5,6 +5,13 @@ tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design]
 confidence: 0.95
 last_confirmed: "2026-05-02"
 source_count: 10
+relationships:
+  - type: supports
+    target: ai-employment-effects
+    via: "Brynjolfsson Canaries Fact 3 — automation displaces entry-level employment, augmentation does not"
+  - type: supports
+    target: enterprise-ai-adoption
+    via: "per-task deployment lens used by Anand-Wu, MITTRI/Cisco, MIT CISR"
 ---
 
 # Automation vs. Augmentation

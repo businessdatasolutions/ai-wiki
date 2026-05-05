@@ -6,6 +6,10 @@ tags: [sukharevsky, mckinsey, quantumblack, rewired, ai-leadership]
 confidence: 0.70
 last_confirmed: "2026-05-03"
 source_count: 1
+relationships:
+  - type: part-of
+    target: McKinsey-&-Company
+    via: "Senior Partner; co-leader of QuantumBlack"
 ---
 
 # Alexander Sukharevsky

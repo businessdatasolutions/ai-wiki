@@ -131,7 +131,7 @@ The **Ford case study** (63 → 0 defects on squish tubes; 15 hours → 10 secon
 
 **Concepts:** [[ai-agents]] (created by this ingest as concept threshold reached), [[enterprise-ai-adoption]], [[responsible-ai]] (Cisco AI security fundamentals), [[generative-ai]], [[industry-4-0]] (manufacturing context).
 
-**Threads:** [[ai-maturity-measurement-comparison]] (enriched), [[organizational-frameworks-for-ai-adoption]] (new — Cisco's "5 foundations" enters the framework comparison).
+**Threads:** [[ai-maturity-measurement-comparison]] (enriched), [[threads/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] (new — Cisco's "5 foundations" enters the framework comparison).
 
 ## Source
 

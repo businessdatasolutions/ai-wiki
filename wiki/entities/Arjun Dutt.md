@@ -6,6 +6,10 @@ tags: [dutt, bain, AI-deployment, consulting]
 confidence: 0.70
 last_confirmed: "2026-05-02"
 source_count: 1
+relationships:
+  - type: part-of
+    target: Bain-&-Company
+    via: "Partner; AI/ML focus"
 ---
 
 # Arjun Dutt

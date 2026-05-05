@@ -6,6 +6,10 @@ tags: [satcher, openai, economic-research]
 confidence: 0.70
 last_confirmed: "2026-05-02"
 source_count: 1
+relationships:
+  - type: part-of
+    target: OpenAI
+    via: "Economic Research team"
 ---
 
 # Harrison Satcher

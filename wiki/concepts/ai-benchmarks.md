@@ -5,6 +5,10 @@ tags: [ai-benchmarks, ai-evaluation, foundation-models]
 confidence: 0.85
 last_confirmed: "2026-04-30"
 source_count: 3
+relationships:
+  - type: uses
+    target: foundation-models
+    via: "benchmarks evaluate foundation-model capability"
 ---
 
 # AI Benchmarks
