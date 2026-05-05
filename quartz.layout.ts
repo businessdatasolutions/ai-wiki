@@ -6,7 +6,7 @@ import RelationshipsPanel from "./extensions/relationships-panel"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [RelationshipsPanel()],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/businessdatasolutions/ai-wiki",
@@ -42,7 +42,6 @@ export const defaultContentPageLayout: PageLayout = {
       globalGraph: { showTags: true, removeTags: [] },
     }),
     Component.DesktopOnly(Component.TableOfContents()),
-    RelationshipsPanel(),
     BacklinksWithAliases(),
   ],
 }

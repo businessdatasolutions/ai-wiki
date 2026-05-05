@@ -53,13 +53,18 @@ const TYPE_ORDER = [
   "employs",
 ]
 
-// Renders a typed-relationships panel in the right sidebar, reading the
-// page's `relationships:` frontmatter (v0.3 schema). Targets are matched
-// against allFiles by slug basename, so `target: Erik-Brynjolfsson` resolves
-// to the entity page at `entities/Erik-Brynjolfsson`. Hides when no
-// relationships are defined; an explicit "broken-relationship" span renders
-// when a target slug doesn't match any file in the wiki (useful as a lint
-// signal during migration).
+// Renders a typed-relationships section at the bottom of the article body
+// (registered under `afterBody` in quartz.layout.ts), reading the page's
+// `relationships:` frontmatter (v0.3 schema). Targets are matched against
+// allFiles by slug basename, so `target: Erik-Brynjolfsson` resolves to the
+// entity page at `entities/Erik-Brynjolfsson`. Hides when no relationships
+// are defined; an explicit "broken-relationship" span renders when a target
+// slug doesn't match any file in the wiki (useful as a lint signal).
+//
+// Originally lived in the right sidebar but moved to afterBody in v0.3.4 —
+// relationships are "related content" and read more naturally at the end of
+// the article than as a sidebar widget. Side benefit: no flex/overflow
+// gymnastics needed (the page itself is the natural scroll).
 export default ((opts?: Partial<Options>) => {
   const options: Options = { ...defaultOptions, ...opts }
 
@@ -111,98 +116,82 @@ export default ((opts?: Partial<Options>) => {
     }
 
     return (
-      <div class={classNames(displayClass, "relationships-panel")}>
-        <h3>Relationships</h3>
-        <div class="relationships-body">
-          {orderedTypes.map((type) => {
-            const list = byType.get(type) ?? []
-            return (
-              <div class="relationships-group">
-                <h4>{RELATIONSHIP_LABELS[type] ?? type}</h4>
-                <ul>
-                  {list.map((rel) => {
-                    const targetFile = findTargetFile(rel.target)
-                    const targetTitle =
-                      (targetFile?.frontmatter?.title as string | undefined) ?? rel.target
-                    const href =
-                      targetFile?.slug && fileData.slug
-                        ? resolveRelative(fileData.slug, targetFile.slug)
-                        : null
-                    return (
-                      <li>
-                        {href ? (
-                          <a href={href} class="internal">
-                            {targetTitle}
-                          </a>
-                        ) : (
-                          <span class="broken-relationship">{rel.target}</span>
-                        )}
-                        {rel.via ? (
-                          <span class="relationship-via">
-                            {" — "}
-                            <em>{rel.via}</em>
-                          </span>
-                        ) : null}
-                      </li>
-                    )
-                  })}
-                </ul>
-              </div>
-            )
-          })}
-        </div>
-      </div>
+      <section class={classNames(displayClass, "relationships-panel")}>
+        <h2>Relationships</h2>
+        {orderedTypes.map((type) => {
+          const list = byType.get(type) ?? []
+          return (
+            <div class="relationships-group">
+              <h3>{RELATIONSHIP_LABELS[type] ?? type}</h3>
+              <ul>
+                {list.map((rel) => {
+                  const targetFile = findTargetFile(rel.target)
+                  const targetTitle =
+                    (targetFile?.frontmatter?.title as string | undefined) ?? rel.target
+                  const href =
+                    targetFile?.slug && fileData.slug
+                      ? resolveRelative(fileData.slug, targetFile.slug)
+                      : null
+                  return (
+                    <li>
+                      {href ? (
+                        <a href={href} class="internal">
+                          {targetTitle}
+                        </a>
+                      ) : (
+                        <span class="broken-relationship">{rel.target}</span>
+                      )}
+                      {rel.via ? (
+                        <span class="relationship-via">
+                          {" — "}
+                          <em>{rel.via}</em>
+                        </span>
+                      ) : null}
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+          )
+        })}
+      </section>
     )
   }
 
-  // Scrollable body using the same chain Quartz uses for backlinks
-  // (quartz/styles/base.scss:586): max-height: 100% resolves against the
-  // sidebar's height: 100vh on desktop / max-height: 24rem on tablet+mobile.
-  // The panel becomes a bounded flex column that clips; the body is the
-  // flex-grown scroll region. min-height: 0 on both is load-bearing —
-  // without it, the default min-height: auto on flex items prevents the
-  // shrink that overflow-y: auto needs to engage.
+  // Body section style — registered in afterBody, so the page itself is the
+  // natural scroll. No flex/overflow gymnastics needed.
   RelationshipsPanel.css = `
 .relationships-panel {
-  display: flex;
-  flex-direction: column;
-  max-height: 100%;
-  min-height: 0;
-  overflow: hidden;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--lightgray);
 }
-.relationships-panel > h3 {
-  flex: 0 0 auto;
-  font-size: 1rem;
-  margin: 0 0 0.5rem;
-}
-.relationships-panel > .relationships-body {
-  flex: 1 1 auto;
-  min-height: 0;
-  overflow-y: auto;
-  overscroll-behavior: contain;
+.relationships-panel > h2 {
+  font-size: 1.4rem;
+  margin: 0 0 1rem;
 }
 .relationships-panel .relationships-group + .relationships-group {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
-.relationships-panel .relationships-group > h4 {
-  font-size: 0.7rem;
-  margin: 0 0 0.25rem;
-  opacity: 0.75;
+.relationships-panel .relationships-group > h3 {
+  font-size: 0.8rem;
+  margin: 0 0 0.4rem;
+  opacity: 0.7;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
+  font-weight: 600;
 }
 .relationships-panel .relationships-group > ul {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  padding-left: 1.5rem;
   margin: 0;
 }
 .relationships-panel .relationships-group > ul > li {
-  margin: 0.2rem 0;
-  line-height: 1.35;
+  margin: 0.35rem 0;
+  line-height: 1.5;
 }
 .relationships-panel .relationship-via {
   opacity: 0.7;
-  font-size: 0.85em;
 }
 .relationships-panel .broken-relationship {
   opacity: 0.5;
