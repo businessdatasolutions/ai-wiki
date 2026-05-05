@@ -12,7 +12,54 @@
       "Skill(commit-commands:commit-push-pr)",
       "Skill(commit-commands:commit-push-pr:*)",
       "Bash(gh pr *)",
-      "Bash(git stash *)"
+      "Bash(git stash *)",
+      "Bash(grep -rln \"\\\\`\\\\`\\\\`dataview\" /Users/witoldtenhove/Projects/ai-wiki/wiki/ /Users/witoldtenhove/Projects/ai-wiki/CLAUDE.md /Users/witoldtenhove/Projects/ai-wiki/llm-wiki.md)",
+      "Bash(grep -rln \"\\\\`\\\\`\\\\`dataview\" /Users/witoldtenhove/Projects/ai-wiki/wiki/)",
+      "Bash(grep -c '```dataview' wiki/concepts/industry-4-0.md wiki/entities/Anthropic.md)",
+      "Bash(grep -rl '```dataview' wiki/)",
+      "Bash(awk '{print $NF}')",
+      "Bash(ls -la \"/temp/readonly/\" 2>&1 | head -10 && echo \"---\" && file \"/temp/readonly/command \\(suarsz\\)\" 2>&1)",
+      "Read(//temp/**)",
+      "Read(//temp/readonly/**)",
+      "Bash(perl -ne 'print if /\\\\.sidebar\\\\.right\\\\s*\\\\{|\\\\.sidebar[^a-z-]\\\\{/' /Users/witoldtenhove/Projects/ai-wiki/public/index.css)",
+      "Bash(node /Users/witoldtenhove/Projects/ai-wiki/scripts/session-start.mjs)",
+      "Bash(node /Users/witoldtenhove/Projects/ai-wiki/scripts/lint-page.mjs)",
+      "Bash(node /Users/witoldtenhove/Projects/ai-wiki/scripts/session-end.mjs)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(echo \"exit:$?\")"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node $CLAUDE_PROJECT_DIR/scripts/session-start.mjs"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node $CLAUDE_PROJECT_DIR/scripts/lint-page.mjs"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node $CLAUDE_PROJECT_DIR/scripts/session-end.mjs"
+          }
+        ]
+      }
     ]
   }
 }

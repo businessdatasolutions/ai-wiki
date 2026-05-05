@@ -274,6 +274,35 @@ When a thread is ready to close:
 4. Update `index.md`: drop the thread from the open-threads list; add the synthesis to the (no-longer-empty) Syntheses section.
 5. Append a `log.md` entry under `op: synthesize` describing the question and the headline finding.
 
+## Hooks
+
+v0.4 wires Claude Code hooks (configured in [`.claude/settings.json`](.claude/settings.json)) so the bookkeeping that v0.2 and v0.3 added doesn't have to be triggered manually. The harness fires the hooks; the scripts under [`scripts/`](scripts/) are the implementations.
+
+### Non-negotiable rule
+
+**Hooks may write to `wiki/log.md`, to lint reports (stderr/stdout), and to gitignored derived artifacts (`wiki/.graph.json`). Hooks may NOT edit any `wiki/**/*.md` content page** — not concept, not entity, not source, not synthesis, not thread, and not `index.md`. Content edits always require explicit user approval in-session.
+
+This protects the v1 trust contract ("Claude owns the wiki layer, user owns direction") from automation drift. A hook that silently rewrites a concept page when the user wasn't looking is a worse failure than a hook that doesn't fire.
+
+### Hooks in use
+
+| Event | Script | Purpose |
+| ----- | ------ | ------- |
+| `SessionStart` | [`scripts/session-start.mjs`](scripts/session-start.mjs) | Outputs a short wiki snapshot (catalog counts, last 5 log entries, `status: stale` and `confidence < 0.5` flags) to stdout — Claude Code feeds it back as session context. Read-only. |
+| `PostToolUse` (Edit, Write) | [`scripts/lint-page.mjs`](scripts/lint-page.mjs) | If the just-edited file is under `wiki/**/*.md`, validates the v0.2 lifecycle contract (`confidence`, `last_confirmed`, `source_count`), the v0.3 closed relationship vocabulary, and the v0.3 body-wikilink rule (every `relationships.target` must appear as a body `[[wikilink]]`). Warnings to stderr. Always exits 0 — never blocks the tool call. |
+| `Stop` | [`scripts/session-end.mjs`](scripts/session-end.mjs) | Per-turn check: if any `wiki/**/*.md` is modified or untracked, re-runs [`scripts/graph-export.mjs`](scripts/graph-export.mjs) so `wiki/.graph.json` stays fresh; otherwise exits silently. No log writes. |
+
+### Auto-prefix log convention
+
+When/if a hook ever does write to `log.md` in a future version, the entry's op must be prefixed `auto-` (e.g. `auto-lint`, `auto-supersession-check`) to distinguish hook-fired writes from human-curated entries. Currently no hook writes log entries; this convention is reserved.
+
+### Cuts vs. v2 plan
+
+- **No on-query hook** — the "file good answers back" decision is human-judgment, not a hook target.
+- **No scheduled retention decay** — deferred to v0.5 alongside hybrid search.
+- **`session-end.mjs` does not append a log entry** — `Stop` fires per-turn, not per-session, so per-turn entries would be too noisy. Manual log writing remains the convention until a real `SessionEnd` event is wired (or a session-end slash command is built).
+- **No auto-fix on lint warnings** — `lint-page.mjs` only reports; the human or Claude decides what to do.
+
 ## Reference
 
 `llm-wiki.md` — the upstream conceptual spec.

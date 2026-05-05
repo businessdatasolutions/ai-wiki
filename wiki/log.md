@@ -717,3 +717,49 @@ First synthesis filed under [`wiki/syntheses/`](../wiki/syntheses/). Closes the 
 **Reversibility:** the synthesis is a new file; the thread page edit is a small additive callout + 2 frontmatter fields; the 12 wikilink disambiguations are localized text edits. To revert: delete `wiki/syntheses/organizational-frameworks-for-ai-adoption.md`, revert thread page, revert the 12 wikilink edits.
 
 v0.3 complete. Next per [`llm-wiki-v2-plan.md`](../llm-wiki-v2-plan.md): v0.4 (automation hooks).
+
+## [2026-05-05] refactor | v0.4 — automation hooks
+
+Wires Claude Code hooks so the v0.2/v0.3 bookkeeping fires automatically. The harness invokes the hooks; new scripts under [`scripts/`](../scripts/) implement them. Tooling-only release; no wiki content edits.
+
+**Schema changes ([`CLAUDE.md`](../CLAUDE.md)):**
+
+- New §Hooks section, including the load-bearing non-negotiable rule: hooks may write to `wiki/log.md`, lint reports (stderr/stdout), and gitignored derived artifacts (`wiki/.graph.json`); hooks may **NOT** edit any `wiki/**/*.md` content page. Content edits always require explicit user approval in-session.
+- Reserved `auto-` log-entry prefix for hook-fired writes (currently no hook writes log entries; convention reserved for v0.5+).
+
+**New scripts:**
+
+- [`scripts/session-start.mjs`](../scripts/session-start.mjs) — fired on `SessionStart`. Outputs a short wiki snapshot (catalog counts, last 5 log entries, `status: stale` and `confidence < 0.5` flags) to stdout. Claude Code feeds the output back as session context. Read-only.
+- [`scripts/lint-page.mjs`](../scripts/lint-page.mjs) — fired on `PostToolUse` filtered to `Edit|Write`. If the edited path is under `wiki/**/*.md`, validates the v0.2 lifecycle contract (`confidence`, `last_confirmed`, `source_count`), the v0.3 closed relationship vocabulary (12 types), and the v0.3 body-wikilink rule (every `relationships.target` must appear as a body `[[wikilink]]` — basename-matched, alias-aware). Warnings to stderr. Always exits 0 — never blocks the tool call. Skips `index.md` and `log.md`.
+- [`scripts/session-end.mjs`](../scripts/session-end.mjs) — fired on `Stop` (per-turn). If any `wiki/**/*.md` is modified or untracked, re-runs [`scripts/graph-export.mjs`](../scripts/graph-export.mjs) so `wiki/.graph.json` stays fresh; otherwise exits silently. No log writes.
+
+**Hook configuration ([`.claude/settings.json`](../.claude/settings.json)):**
+
+```json
+"hooks": {
+  "SessionStart": [{ "hooks": [{ "type": "command", "command": "node $CLAUDE_PROJECT_DIR/scripts/session-start.mjs" }] }],
+  "PostToolUse": [{ "matcher": "Edit|Write", "hooks": [{ "type": "command", "command": "node $CLAUDE_PROJECT_DIR/scripts/lint-page.mjs" }] }],
+  "Stop":         [{ "hooks": [{ "type": "command", "command": "node $CLAUDE_PROJECT_DIR/scripts/session-end.mjs" }] }]
+}
+```
+
+`$CLAUDE_PROJECT_DIR` is expanded by Claude Code to the project root, so the config is portable across machines that clone this repo.
+
+**Verification:**
+
+- `node scripts/session-start.mjs` standalone — produces ~20 lines of context (catalog stats, last 5 log entries, lifecycle flags). Confirmed empty for `status: stale` and `confidence < 0.5` (matching current wiki state).
+- `echo '{"tool_name":"Edit","tool_input":{"file_path":"<existing concept page>"}}' | node scripts/lint-page.mjs` — silent on a clean migrated page (correct: no warnings means no output).
+- `node scripts/session-end.mjs` exits 0 silently when no wiki content changed.
+- `python3 -m json.tool .claude/settings.json` — valid JSON.
+
+**Cuts vs. v2 plan:**
+
+- No on-query hook (file-back-as-page is human-judgment).
+- No scheduled retention decay (deferred to v0.5).
+- `session-end.mjs` does **not** append a log entry — `Stop` fires per-turn, not per-session, so per-turn entries would be too noisy. Manual log writing remains the convention. Documented in §Hooks "Cuts vs. v2 plan."
+- No auto-fix on lint warnings — `lint-page.mjs` only reports.
+- `lint-orphans.mjs` and `repair-xrefs.mjs` from the plan are deferred to v0.5 (they're CLI helpers, not hook-fired).
+
+**Reversibility:** four new files (3 scripts + the hooks block in settings.json), additive `## Hooks` section in CLAUDE.md. No content edits anywhere in `wiki/`. To revert: delete `scripts/session-*.mjs` and `scripts/lint-page.mjs`, remove the `hooks` block from `.claude/settings.json`, and revert the §Hooks section in CLAUDE.md.
+
+v0.4 complete. Next per [`llm-wiki-v2-plan.md`](../llm-wiki-v2-plan.md): v0.5 (hybrid search + retention/forgetting).
