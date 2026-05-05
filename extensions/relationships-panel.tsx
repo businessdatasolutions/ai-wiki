@@ -156,25 +156,26 @@ export default ((opts?: Partial<Options>) => {
   }
 
   // Scrollable body so a page with many relationships doesn't push the rest of
-  // the right sidebar (Backlinks, etc.) off-screen. Mirrors the
-  // .backlinks > ul.overflow pattern from quartz/components/styles/backlinks.scss.
+  // the right sidebar (Backlinks, etc.) off-screen. Uses viewport-relative
+  // max-height (40vh) rather than `calc(100% - …)` because the panel's parent
+  // in Quartz's flex sidebar doesn't always have a bounded height — a percent
+  // max-height resolves to auto in that case and the body never scrolls.
   RelationshipsPanel.css = `
-.relationships-panel {
-  flex-direction: column;
-}
 .relationships-panel > h3 {
   font-size: 1rem;
-  margin: 0;
+  margin: 0 0 0.5rem;
 }
 .relationships-panel > .relationships-body {
-  max-height: calc(100% - 2rem);
+  max-height: 40vh;
   overflow-y: auto;
   overscroll-behavior: contain;
-  margin: 0.5rem 0;
+}
+.relationships-panel .relationships-group + .relationships-group {
+  margin-top: 0.5rem;
 }
 .relationships-panel .relationships-group > h4 {
-  font-size: 0.85rem;
-  margin: 0.5rem 0 0.25rem;
+  font-size: 0.7rem;
+  margin: 0 0 0.25rem;
   opacity: 0.75;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -185,7 +186,7 @@ export default ((opts?: Partial<Options>) => {
   margin: 0;
 }
 .relationships-panel .relationships-group > ul > li {
-  margin: 0.25rem 0;
+  margin: 0.2rem 0;
   line-height: 1.35;
 }
 .relationships-panel .relationship-via {
