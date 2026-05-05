@@ -155,18 +155,29 @@ export default ((opts?: Partial<Options>) => {
     )
   }
 
-  // Scrollable body so a page with many relationships doesn't push the rest of
-  // the right sidebar (Backlinks, etc.) off-screen. Uses viewport-relative
-  // max-height (40vh) rather than `calc(100% - …)` because the panel's parent
-  // in Quartz's flex sidebar doesn't always have a bounded height — a percent
-  // max-height resolves to auto in that case and the body never scrolls.
+  // Scrollable body using the same chain Quartz uses for backlinks
+  // (quartz/styles/base.scss:586): max-height: 100% resolves against the
+  // sidebar's height: 100vh on desktop / max-height: 24rem on tablet+mobile.
+  // The panel becomes a bounded flex column that clips; the body is the
+  // flex-grown scroll region. min-height: 0 on both is load-bearing —
+  // without it, the default min-height: auto on flex items prevents the
+  // shrink that overflow-y: auto needs to engage.
   RelationshipsPanel.css = `
+.relationships-panel {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
 .relationships-panel > h3 {
+  flex: 0 0 auto;
   font-size: 1rem;
   margin: 0 0 0.5rem;
 }
 .relationships-panel > .relationships-body {
-  max-height: 40vh;
+  flex: 1 1 auto;
+  min-height: 0;
   overflow-y: auto;
   overscroll-behavior: contain;
 }
