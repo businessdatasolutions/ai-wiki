@@ -5,6 +5,9 @@ aliases: ["MIT Technology Review Insights", "MIT TRI", "MITTRI", "MIT Tech Revie
 tags: [publisher, research, sponsored-research, mit, technology-journalism]
 parent: "[[MIT Technology Review]]"
 website: "https://www.technologyreview.com/insights/"
+confidence: 0.70
+last_confirmed: "2026-04-28"
+source_count: 1
 ---
 
 # MIT Technology Review Insights

@@ -5,6 +5,9 @@ aliases: ["Stephanie Woerner", "Stephanie L. Woerner"]
 tags: [mit-sloan, mit-cisr, ai-research, digital-transformation, business-research]
 affiliation: "[[MIT Sloan]] / [[MIT CISR]]"
 role: "Principal research scientist; Director of [[MIT CISR]]"
+confidence: 0.75
+last_confirmed: "2026-05-03"
+source_count: 2
 ---
 
 # Stephanie Woerner

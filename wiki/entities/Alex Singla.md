@@ -3,6 +3,9 @@ type: entity
 kind: person
 aliases: ["Alex Singla"]
 tags: [singla, mckinsey, quantumblack, rewired, ai-leadership]
+confidence: 0.70
+last_confirmed: "2026-05-03"
+source_count: 1
 ---
 
 # Alex Singla

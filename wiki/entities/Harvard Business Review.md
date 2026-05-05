@@ -5,6 +5,9 @@ aliases: ["Harvard Business Review", "HBR"]
 tags: [publisher, business-magazine, management-research, harvard]
 parent: "[[Harvard Business School]]"
 website: "https://hbr.org"
+confidence: 0.85
+last_confirmed: "2026-05-02"
+source_count: 6
 ---
 
 # Harvard Business Review

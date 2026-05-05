@@ -3,6 +3,9 @@ type: entity
 kind: person
 aliases: ["Ethan Mollick"]
 tags: [mollick, wharton, AI-research, knowledge-work]
+confidence: 0.75
+last_confirmed: "2026-04-28"
+source_count: 1
 ---
 
 # Ethan Mollick

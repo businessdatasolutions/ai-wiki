@@ -3,6 +3,9 @@ type: entity
 kind: organization
 aliases: ["Bain", "Bain & Company", "Bain and Company"]
 tags: [bain, management-consulting]
+confidence: 0.70
+last_confirmed: "2026-05-02"
+source_count: 1
 ---
 
 # Bain & Company

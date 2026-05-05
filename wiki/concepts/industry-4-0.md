@@ -2,6 +2,9 @@
 type: concept
 aliases: ["Industry 4.0", "I4.0", "industry-4-0", "Fourth Industrial Revolution"]
 tags: [industry-4-0, smart-manufacturing, iot, cyber-physical-systems, digital-transformation]
+confidence: 0.85
+last_confirmed: "2026-04-28"
+source_count: 4
 ---
 
 # Industry 4.0

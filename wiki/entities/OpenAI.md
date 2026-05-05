@@ -4,6 +4,9 @@ kind: organization
 aliases: ["OpenAI"]
 tags: [openai, ai-lab, foundation-models, chatgpt, gpt-4]
 since: 2015
+confidence: 0.85
+last_confirmed: "2026-05-02"
+source_count: 7
 ---
 
 # OpenAI

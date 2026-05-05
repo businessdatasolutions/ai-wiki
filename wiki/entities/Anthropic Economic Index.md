@@ -5,6 +5,9 @@ aliases: ["Anthropic Economic Index", "Economic Index", "AEI"]
 tags: [anthropic-economic-index, ai-research, anthropic, claude, ai-adoption]
 parent: "[[Anthropic]]"
 since: 2025
+confidence: 0.75
+last_confirmed: "2026-04-28"
+source_count: 2
 ---
 
 # Anthropic Economic Index

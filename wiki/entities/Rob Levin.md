@@ -3,6 +3,9 @@ type: entity
 kind: person
 aliases: ["Rob Levin"]
 tags: [levin, mckinsey, rewired, tech-ai-transformation]
+confidence: 0.70
+last_confirmed: "2026-05-03"
+source_count: 1
 ---
 
 # Rob Levin

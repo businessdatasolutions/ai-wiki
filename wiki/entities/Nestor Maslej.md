@@ -6,6 +6,9 @@ tags: [stanford-hai, ai-index, ai-researcher]
 affiliation: "[[Stanford HAI]]"
 role: "Research Manager and Editor-in-Chief, [[AI Index]]"
 contact: "nmaslej@stanford.edu"
+confidence: 0.75
+last_confirmed: "2026-04-30"
+source_count: 2
 ---
 
 # Nestor Maslej

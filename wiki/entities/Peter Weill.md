@@ -5,6 +5,9 @@ aliases: ["Peter Weill"]
 tags: [mit-sloan, mit-cisr, ai-research, digital-transformation, business-research]
 affiliation: "[[MIT Sloan]] / [[MIT CISR]]"
 role: "Senior research scientist; Chairman of [[MIT CISR]]"
+confidence: 0.75
+last_confirmed: "2026-05-03"
+source_count: 2
 ---
 
 # Peter Weill

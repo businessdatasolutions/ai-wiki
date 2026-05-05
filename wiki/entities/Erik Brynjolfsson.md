@@ -6,6 +6,9 @@ tags: [stanford, nber, ai-research, digital-economy, labor-economics, productivi
 affiliation: "[[Stanford Digital Economy Lab]] / [[Stanford HAI]] / [[NBER]]"
 role: "Director, Stanford Digital Economy Lab; AI Index Steering Committee member"
 contact: "erikb@stanford.edu"
+confidence: 0.85
+last_confirmed: "2026-04-28"
+source_count: 3
 ---
 
 # Erik Brynjolfsson

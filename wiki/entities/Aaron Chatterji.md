@@ -3,6 +3,9 @@ type: entity
 kind: person
 aliases: ["Aaron Chatterji", "Aaron \"Ronnie\" Chatterji", "Ronnie Chatterji"]
 tags: [chatterji, duke, openai, chief-economist, business-policy]
+confidence: 0.70
+last_confirmed: "2026-05-02"
+source_count: 1
 ---
 
 # Aaron "Ronnie" Chatterji

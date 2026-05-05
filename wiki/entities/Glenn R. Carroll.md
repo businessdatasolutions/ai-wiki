@@ -3,6 +3,9 @@ type: entity
 kind: person
 aliases: ["Glenn R. Carroll", "Glenn Carroll"]
 tags: [carroll, stanford-gsb, organization-theory, strategy-theory]
+confidence: 0.75
+last_confirmed: "2026-04-28"
+source_count: 1
 ---
 
 # Glenn R. Carroll

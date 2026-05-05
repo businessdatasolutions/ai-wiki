@@ -10,15 +10,15 @@ This is **not** a software project. It is a personal **LLM wiki** repository fol
 
 ## Current state
 
-The wiki has **not been instantiated yet**. The repo currently contains only `llm-wiki.md` and this file. There is no `raw/`, no `wiki/`, no `index.md`, no `log.md`. On the first real session, co-evolve the directory layout and conventions with the user before writing pages — do not invent structure unilaterally. Once decisions are made, record them in this file so future sessions inherit them.
+The wiki is instantiated. As of v0.2 the repo contains:
 
-Conventions to negotiate on first use (and then document below):
-- Directory layout for raw sources vs. wiki pages (the spec suggests `raw/` and `wiki/` but does not mandate it).
-- Page taxonomy (entities, concepts, summaries, comparisons, syntheses).
-- Frontmatter conventions (tags, dates, source counts) — relevant if Obsidian Dataview will be used.
-- Log entry prefix format. The spec recommends `## [YYYY-MM-DD] <op> | <title>` so `grep "^## \[" log.md` works as a CLI.
-- Whether to use Obsidian-style `[[wikilinks]]` or standard markdown links.
-- Whether/when to add a search tool (e.g. `qmd`) — index-only is fine at small scale.
+- `raw/` — source material under `articles/`, `assets/`, `books/`, `images/`, `lectures/`, `papers/`, `reports/`. Immutable.
+- `wiki/` — `sources/`, `entities/`, `concepts/`, `threads/`, `syntheses/` plus the catalogues `index.md` and `log.md`. Wikilinks-only cross-refs.
+- Page-type frontmatter: `type: source | entity | concept | thread | synthesis`; `kind:` discriminator on entities and sources.
+- Log entries: `## [YYYY-MM-DD] <op> | <title>` where `<op>` ∈ `ingest | query | lint | synthesize | refactor | bulk-refactor`.
+- Quartz publishing via `npm run build` / `npm run serve`; custom extensions in `extensions/`.
+
+The implementation roadmap for v2 features lives in [`llm-wiki-v2-plan.md`](llm-wiki-v2-plan.md): six staged versions (v0.2 → v0.7). Each version lands schema before tooling, and bulk migrations are supervised batches.
 
 ## The three layers (architecture)
 
@@ -36,10 +36,10 @@ A new source has been added to the raw collection.
 1. Read the source.
 2. Discuss key takeaways with the user before writing (default to one source at a time, supervised — unless the user says batch).
 3. Write a summary page in the wiki.
-4. Update **every** affected entity, concept, and topic page across the wiki — a single ingest may touch 10–15 files.
+4. Update **every** affected entity, concept, and topic page across the wiki — a single ingest may touch 10–15 files. On every touched concept/entity page, bump `last_confirmed` to today's date and recompute `source_count` and `confidence` per [§Lifecycle](#lifecycle).
 5. Update `index.md` (catalog of pages, one-line summaries, organized by category).
 6. Append an entry to `log.md` using the agreed prefix format.
-7. When new data contradicts an older claim, flag it explicitly on the affected page rather than silently overwriting.
+7. When new data contradicts an older claim, flag it explicitly in the page's `## Debates and supersession` section. If the new source supersedes an older one wholesale, set `supersedes:` on the new source page and `status: stale` + `superseded_by:` on the retired page — never delete the retired page.
 
 ### Query
 The user asks a question against the wiki.
@@ -118,6 +118,7 @@ The wiki is published as a static site via **[Quartz v4](https://quartz.jzhao.xy
   - `inject-type-tags.ts` — auto-adds `type/<type>` and `kind/<kind>` tags from frontmatter so the graph view and tag pages cluster pages by type. Source files stay clean.
   - `inject-aliases.ts` — appends frontmatter `aliases` to the indexed body so FlexSearch finds pages by alias.
   - `backlinks-with-aliases.tsx` — replaces Quartz's stock Backlinks component. The stock one only matches inbound links by canonical slug; this one also matches via the page's frontmatter `aliases`, so wikilinks like `[[Erik Brynjolfsson]]` (which Quartz resolves to the alias slug) correctly produce backlinks on the aliased page.
+  - `inject-stale-banner.ts` — when a page's frontmatter has `status: stale`, prepends a warning blockquote at the top of the page linking to `superseded_by`. Source files stay clean; the banner appears only on the published site.
 - **Deploy**: `.github/workflows/deploy.yml`. Pages source must be set to "GitHub Actions" in repo Settings.
 - **Local preview**: `npm install` once, then `npm run serve` → `http://localhost:8080`.
 - **Build only**: `npm run build` → `public/`.
@@ -128,6 +129,62 @@ Practical notes:
 - When a `[[wikilink]]` target doesn't exist, Quartz renders it as a "broken link" — useful for spotting stub gaps during lint.
 - Quartz does not render Dataview blocks. If/when Dataview is introduced for Obsidian-side features, those blocks will appear as plain code on the public site.
 
+## Lifecycle
+
+Knowledge has a lifecycle. A claim from a single source is weaker than one confirmed across four sources. A claim from January is weaker than one confirmed last week. New data sometimes supersedes old data. The wiki captures all three with three frontmatter fields and one supersession protocol.
+
+### Frontmatter contract (concepts and entities)
+
+Every concept and entity page carries:
+
+- `confidence: 0.0–1.0` — how strongly the claim on this page is supported by sources currently in the wiki.
+- `last_confirmed: YYYY-MM-DD` — the date of the most recent ingest that reinforced this page.
+- `source_count: N` — count of source pages that cite or substantiate this page (matches the page's inbound source links from `wiki/sources/`).
+
+Sources do **not** carry `confidence`. Sources are evidence, not claims. Their reliability is captured implicitly by what cites them.
+
+### Confidence rules
+
+Set `confidence` defensibly when creating or updating a page:
+
+- One supporting source: default `0.7`.
+- Each additional supporting source: `+0.05` (cap at `0.95`).
+- Any contradicting source flagged in `## Debates and supersession`: `−0.1`.
+- Source that is a peer-reviewed paper, large-N empirical study, or government statistical release: `+0.05` over the baseline (counts once, not per source).
+- Sources that are vendor-sponsored, anecdotal, or a single case study without replication: do not raise confidence above `0.75` unless multiple independent sources agree.
+
+These are heuristics, not arithmetic. When the values conflict with intuition, write a defensible value and explain in `## Debates and supersession` if needed. Never write `0.0` as a default — that signals "not yet evaluated," which we don't allow on a live page.
+
+### Supersession protocol
+
+When new data fully replaces an older claim (not just adds nuance):
+
+1. The retired page keeps its content. Do not delete or empty it.
+2. The retired page gains `status: stale` and `superseded_by: [[new-page]]` in frontmatter.
+3. The replacing page (a new source, or a rewritten concept/entity) gains `supersedes: [[retired-page]]` in frontmatter (use list syntax for multiple).
+4. The `inject-stale-banner.ts` Quartz extension renders a warning blockquote at the top of stale pages on the published site. In Obsidian the frontmatter is visible; the banner is not.
+5. Append a `log.md` entry under `op: refactor` describing what was superseded and why.
+
+When new data only adds nuance or contradiction without retiring the old claim, do **not** mark the old page stale. Add a bullet to its `## Debates and supersession` section instead.
+
+### Debates and supersession section
+
+Concept pages with more than one source must include a `## Debates and supersession` section near the bottom. It records:
+
+- Open contradictions between sources (which source says X, which says ¬X, what the resolution looks like).
+- Supersession events (which page was retired, when, why).
+- Open questions that the next ingest might answer.
+
+Empty placeholder text is acceptable on early pages; the section's presence is more important than its content.
+
+### Tier vocabulary
+
+The pipeline `raw/` → `wiki/sources/` → `wiki/concepts/` and `wiki/entities/` → `CLAUDE.md` corresponds to four implicit memory tiers from `llm-wiki-v2.md`: working (raw observations), episodic (per-source summaries), semantic (cross-session facts), procedural (workflow patterns encoded in this schema). The wiki does not maintain separate storage for each tier — directories already serve that purpose. Promotion happens when a recurring observation across multiple sources stabilizes into a concept page, or when a recurring lint pattern becomes a CLAUDE.md rule.
+
 ## Reference
 
-`llm-wiki.md` — the upstream conceptual spec. Re-read it whenever a workflow question comes up that this file doesn't answer, then consider promoting the resolution into this file.
+`llm-wiki.md` — the upstream conceptual spec.
+`llm-wiki-v2.md` — the v2 extension (lifecycle, knowledge graph, hooks, hybrid search, crystallization).
+`llm-wiki-v2-plan.md` — the staged release plan that turns v2 into versioned releases for this repo.
+
+Re-read whichever spec applies whenever a workflow question comes up that this file doesn't answer, then consider promoting the resolution into this file.

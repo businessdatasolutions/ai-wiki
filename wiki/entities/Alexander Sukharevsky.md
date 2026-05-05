@@ -3,6 +3,9 @@ type: entity
 kind: person
 aliases: ["Alexander Sukharevsky"]
 tags: [sukharevsky, mckinsey, quantumblack, rewired, ai-leadership]
+confidence: 0.70
+last_confirmed: "2026-05-03"
+source_count: 1
 ---
 
 # Alexander Sukharevsky

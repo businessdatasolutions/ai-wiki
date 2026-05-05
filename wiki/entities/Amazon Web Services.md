@@ -6,6 +6,9 @@ tags: [tech-vendor, cloud, ai-infrastructure, hyperscaler]
 parent: "[[Amazon]]"
 ticker: "AMZN (Amazon)"
 website: "https://aws.amazon.com"
+confidence: 0.80
+last_confirmed: "2026-04-28"
+source_count: 2
 ---
 
 # Amazon Web Services

@@ -3,6 +3,9 @@ type: entity
 kind: organization
 aliases: ["METR", "Model Evaluation and Threat Research"]
 tags: [metr, ai-evaluation, ai-benchmarks, ai-safety]
+confidence: 0.70
+last_confirmed: "2026-04-28"
+source_count: 1
 ---
 
 # METR

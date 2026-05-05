@@ -3,6 +3,9 @@ type: entity
 kind: person
 aliases: ["Arjun Dutt"]
 tags: [dutt, bain, AI-deployment, consulting]
+confidence: 0.70
+last_confirmed: "2026-05-02"
+source_count: 1
 ---
 
 # Arjun Dutt

@@ -2,6 +2,9 @@
 type: concept
 aliases: ["jagged frontier", "jagged-frontier", "jagged technological frontier", "AI capability frontier"]
 tags: [jagged-frontier, AI-capabilities, knowledge-work, productivity, automation, augmentation]
+confidence: 0.90
+last_confirmed: "2026-04-30"
+source_count: 5
 ---
 
 # Jagged Frontier

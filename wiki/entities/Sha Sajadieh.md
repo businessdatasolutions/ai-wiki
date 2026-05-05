@@ -3,6 +3,9 @@ type: entity
 kind: person
 aliases: ["Sha Sajadieh"]
 tags: [sajadieh, stanford-hai, ai-index, editor-in-chief]
+confidence: 0.70
+last_confirmed: "2026-04-30"
+source_count: 1
 ---
 
 # Sha Sajadieh

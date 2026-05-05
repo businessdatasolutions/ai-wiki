@@ -3,6 +3,9 @@ type: entity
 kind: person
 aliases: ["Gene Rapoport"]
 tags: [rapoport, bain, AI-deployment, private-equity]
+confidence: 0.70
+last_confirmed: "2026-05-02"
+source_count: 1
 ---
 
 # Gene Rapoport

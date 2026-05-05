@@ -3,6 +3,9 @@ type: entity
 kind: person
 aliases: ["Amy Webb"]
 tags: [amy-webb, FTSG, NYU-stern, futurist, strategic-foresight]
+confidence: 0.75
+last_confirmed: "2026-04-28"
+source_count: 2
 ---
 
 # Amy Webb

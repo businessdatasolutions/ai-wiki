@@ -3,6 +3,9 @@ type: entity
 kind: organization
 aliases: ["Ivey Business School", "Ivey", "Ivey Business School at Western University"]
 tags: [ivey, business-school, western-university, canada]
+confidence: 0.70
+last_confirmed: "2026-04-28"
+source_count: 1
 ---
 
 # Ivey Business School

@@ -2,6 +2,9 @@
 type: concept
 aliases: ["strategic foresight", "strategic-foresight", "corporate foresight", "futures thinking"]
 tags: [strategic-foresight, scenarios, futures, signal-detection, FTSG, webb]
+confidence: 0.75
+last_confirmed: "2026-04-28"
+source_count: 2
 ---
 
 # Strategic Foresight

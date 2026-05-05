@@ -3,6 +3,9 @@ type: entity
 kind: person
 aliases: ["John Higgins"]
 tags: [higgins, gameshift, the-right-conversation, leadership]
+confidence: 0.70
+last_confirmed: "2026-04-28"
+source_count: 1
 ---
 
 # John Higgins

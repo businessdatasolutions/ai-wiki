@@ -2,6 +2,9 @@
 type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai]
+confidence: 0.70
+last_confirmed: "2026-05-02"
+source_count: 1
 ---
 
 # Micro-Productivity Trap

@@ -4,7 +4,7 @@ Append-only chronological record of wiki operations. Strict prefix format so `gr
 
     ## [YYYY-MM-DD] <op> | <title>
 
-Permitted operations: `ingest`, `query`, `lint`, `synthesize`, `refactor`. See [the design doc, §9.2](../docs/superpowers/specs/2026-04-28-llm-wiki-design.md#92-wikilogmd) for details.
+Permitted operations: `ingest`, `query`, `lint`, `synthesize`, `refactor`, `bulk-refactor` (added v0.2 — for any operation touching >10 wiki pages, with affected slug list and reversibility note). See [the design doc, §9.2](../docs/superpowers/specs/2026-04-28-llm-wiki-design.md#92-wikilogmd) for details.
 
 ---
 
@@ -435,3 +435,184 @@ User confirmed the sample-only scope is intentionally useful in its own right ("
 **Contradiction check:** no direct contradictions. The 20% EBITDA / 14–26% productivity / 10–25% EBITDA cluster is consistent in magnitude. McKinsey's claim about "senior business leaders in the driver's seat" rhymes with Bain/OpenAI's "boardroom imperative" and MIT CISR's "Strategy" pillar of the Four S — same observation in three vocabularies.
 
 **Total file touch: 12** (1 source + 6 entities + 2 concept enrichments + 1 entity index update for Peter Weill + 1 entity index update for Stephanie Woerner [via index.md edits] + index + log; raw PDF on disk under `raw/books/` but not committed per the gitignore rule).
+
+## [2026-05-05] bulk-refactor | v0.2 lifecycle schema + tooling + batch 1
+
+First version of [`llm-wiki-v2-plan.md`](../llm-wiki-v2-plan.md) v0.2 lands: lifecycle metadata (`confidence`, `last_confirmed`, `source_count`), supersession protocol (`status: stale`, `superseded_by`, `supersedes`), and the supporting Quartz extension + lint script.
+
+**Schema changes (`CLAUDE.md`):**
+
+- New §Lifecycle section — frontmatter contract, confidence rules, supersession protocol, debates-and-supersession section requirement, four-tier vocabulary.
+- §Ingest step 4 now requires bumping `last_confirmed` and recomputing `source_count`/`confidence` on every touched concept/entity page.
+- §Ingest step 7 rewritten to specify the supersession write-back (set `supersedes:` on new source; set `status: stale` + `superseded_by:` on retired page; never delete).
+- "Custom extensions" list extended with `inject-stale-banner.ts`.
+- "Current state" section refreshed to reflect actual repo state (was stale: claimed wiki not yet instantiated).
+- "Reference" section now lists v1, v2, and the v2 staged plan.
+
+**New files:**
+
+- `extensions/inject-stale-banner.ts` — Quartz transformer; when frontmatter has `status: stale`, prepends an Obsidian-style `[!warning]` callout linking to `superseded_by`. Inserted in `quartz.config.ts` after `InjectTypeTags()`.
+- `scripts/lint-confidence.mjs` — read-only walker; prints confidence distribution, flags pages missing v0.2 fields, flags pages with `last_confirmed > 30 days`, lists stale pages.
+- Created `scripts/` directory.
+
+**Migration batch 1 (10 pages of 71):**
+
+| Page | confidence | last_confirmed | source_count |
+|---|---|---|---|
+| `concepts/automation-vs-augmentation.md` | 0.95 | 2026-05-02 | 10 |
+| `concepts/enterprise-ai-adoption.md` | 0.95 | 2026-05-03 | 15 |
+| `concepts/ai-employment-effects.md` | 0.95 | 2026-04-30 | 10 |
+| `concepts/jagged-frontier.md` | 0.90 | 2026-04-30 | 5 |
+| `concepts/lean-4-0.md` | 0.70 | 2026-04-28 | 3 |
+| `entities/Erik Brynjolfsson.md` | 0.85 | 2026-04-28 | 3 |
+| `entities/Anthropic.md` | 0.75 | 2026-04-28 | 2 |
+| `entities/MIT CISR.md` | 0.75 | 2026-04-28 | 1 |
+| `entities/Bain & Company.md` | 0.70 | 2026-05-02 | 1 |
+| `entities/Lowe's.md` | 0.70 | 2026-05-02 | 1 |
+
+Distribution: 5 pages at 0.85–1.0, 5 pages at 0.70–0.85. No defaults left at 0.0. Values set per the §Lifecycle confidence rules: 0.7 baseline + 0.05 per additional source (cap 0.95) + 0.05 once for peer-reviewed/empirical sources; vendor/single-case-study capped at 0.75.
+
+**Reversibility:** all changes are additive frontmatter on existing pages plus three new files. To revert v0.2 entirely: remove the new frontmatter fields from the 10 migrated pages (`git diff main` would isolate them), revert `quartz.config.ts` and `CLAUDE.md`, delete `extensions/inject-stale-banner.ts`, `scripts/lint-confidence.mjs`, and `scripts/`. No source-page or content edits.
+
+**Verification:**
+
+- `node scripts/lint-confidence.mjs` — 71 → 61 pages missing fields; distribution 5 in 0.7–0.85, 5 in 0.85–1.0.
+- `npm run build` — 95 input files, 653 emitted, no errors.
+- Stale-banner extension: registered, no-op against current corpus (no page has `status: stale` yet).
+
+**Total file touch: 14** (1 CLAUDE.md + 1 quartz.config.ts + 1 new extension + 1 new script + 5 concept pages + 5 entity pages + log).
+
+61 pages still pending (12 concepts + 49 entities). Batch 2 will follow once batch 1 values are sanity-checked.
+
+## [2026-05-05] bulk-refactor | v0.2 lifecycle migration batch 2
+
+Second batch of v0.2 lifecycle migration (10 high-frequency hubs).
+
+| Page | confidence | last_confirmed | source_count |
+|---|---|---|---|
+| `concepts/ai-agents.md` | 0.85 | 2026-04-28 | 4 |
+| `concepts/generative-ai.md` | 0.95 | 2026-05-02 | 11 |
+| `concepts/foundation-models.md` | 0.80 | 2026-04-30 | 2 |
+| `concepts/responsible-ai.md` | 0.95 | 2026-04-30 | 6 |
+| `concepts/dynamic-capabilities.md` | 0.90 | 2026-04-28 | 4 |
+| `entities/Stanford HAI.md` | 0.80 | 2026-04-30 | 2 |
+| `entities/OpenAI.md` | 0.85 | 2026-05-02 | 7 |
+| `entities/McKinsey & Company.md` | 0.85 | 2026-05-03 | 4 |
+| `entities/Boston Consulting Group.md` | 0.75 | 2026-04-28 | 1 |
+| `entities/MIT Technology Review Insights.md` | 0.70 | 2026-04-28 | 1 |
+
+After batch 2: 20/71 pages migrated. Distribution skews to high-confidence (11 at 0.85–1.0, 9 at 0.70–0.85), reflecting that batches 1–2 were chosen to be diverse-but-well-connected hubs. Single-source entities still cluster around 0.70–0.75 per the §Lifecycle vendor/single-source rule.
+
+**Verification.** `node scripts/lint-confidence.mjs` → 51 pages still missing fields. `npm run build` clean (95 in, 653 out, no errors).
+
+**Reversibility:** additive-frontmatter only.
+
+51 pages still pending (7 concepts + 44 entities).
+
+## [2026-05-05] bulk-refactor | v0.2 lifecycle migration batch 3
+
+| Page | confidence | last_confirmed | source_count |
+|---|---|---|---|
+| `concepts/ai-benchmarks.md` | 0.85 | 2026-04-30 | 3 |
+| `concepts/ai-deskilling.md` | 0.70 | 2026-04-28 | 1 |
+| `concepts/industry-4-0.md` | 0.85 | 2026-04-28 | 4 |
+| `concepts/micro-productivity-trap.md` | 0.70 | 2026-05-02 | 1 |
+| `concepts/strategic-foresight.md` | 0.75 | 2026-04-28 | 2 |
+| `entities/AI Index.md` | 0.85 | 2026-04-30 | 2 |
+| `entities/Anthropic Economic Index.md` | 0.75 | 2026-04-28 | 2 |
+| `entities/Future Today Strategy Group.md` | 0.70 | 2026-04-28 | 2 |
+| `entities/Harvard Business Review.md` | 0.85 | 2026-05-02 | 6 |
+| `entities/Stanford Digital Economy Lab.md` | 0.75 | 2026-04-28 | 1 |
+
+After batch 3: 30/71 pages migrated. Distribution stable: 15 at 0.85–1.0, 15 at 0.70–0.85. Three single-source concepts (`ai-deskilling`, `micro-productivity-trap`, plus `lean-4-0` from batch 1) and three same-firm-cluster sources (FTSG/Webb counts as one author voice for confidence purposes) all sit at 0.70 — the floor on the §Lifecycle scale for a live page.
+
+`npm run build` clean (95 in, 653 out). Lint: 41 pages still missing fields (2 concepts + 39 entities).
+
+**Reversibility:** additive-frontmatter only.
+
+## [2026-05-05] bulk-refactor | v0.2 lifecycle migration batch 4
+
+| Page | confidence | last_confirmed | source_count |
+|---|---|---|---|
+| `concepts/analogical-reasoning.md` | 0.75 | 2026-04-28 | 1 |
+| `concepts/systems-thinking.md` | 0.75 | 2026-04-28 | 1 |
+| `entities/Cisco.md` | 0.70 | 2026-04-28 | 1 |
+| `entities/Amy Webb.md` | 0.75 | 2026-04-28 | 2 |
+| `entities/Amazon Web Services.md` | 0.80 | 2026-04-28 | 2 |
+| `entities/Fabrizio Dell'Acqua.md` | 0.75 | 2026-04-28 | 1 |
+| `entities/Ethan Mollick.md` | 0.75 | 2026-04-28 | 1 |
+| `entities/Karim Lakhani.md` | 0.75 | 2026-04-28 | 1 |
+| `entities/METR.md` | 0.70 | 2026-04-28 | 1 |
+| `entities/Aaron Chatterji.md` | 0.70 | 2026-05-02 | 1 |
+
+After batch 4: **40/71 pages migrated. All 17 concepts complete.** Remaining pool is 31 entities, mostly single-source author pages.
+
+**Reversibility:** additive-frontmatter only.
+
+## [2026-05-05] bulk-refactor | v0.2 lifecycle migration batches 5–7 (close-out)
+
+Final 31 entities migrated in three batches. All single-source author/organization pages; values determined by source kind (peer-reviewed academic = 0.75; HBR practitioner / vendor / single-case = 0.70).
+
+### Batch 5 (entities 41–50)
+
+| Page | confidence | last_confirmed | source_count |
+|---|---|---|---|
+| `entities/Alex Singla.md` | 0.70 | 2026-05-03 | 1 |
+| `entities/Alexander Sukharevsky.md` | 0.70 | 2026-05-03 | 1 |
+| `entities/Andy Wu.md` | 0.70 | 2026-04-28 | 1 |
+| `entities/Arjun Dutt.md` | 0.70 | 2026-05-02 | 1 |
+| `entities/Bharat N. Anand.md` | 0.70 | 2026-04-28 | 1 |
+| `entities/Continuum Laboratory.md` | 0.75 | 2026-04-29 | 1 |
+| `entities/Eric Lamarre.md` | 0.70 | 2026-05-03 | 1 |
+| `entities/Gawesha Weeratunga.md` | 0.70 | 2026-05-02 | 1 |
+| `entities/Gene Rapoport.md` | 0.70 | 2026-05-02 | 1 |
+| `entities/Glenn R. Carroll.md` | 0.75 | 2026-04-28 | 1 |
+
+### Batch 6 (entities 51–60)
+
+| Page | confidence | last_confirmed | source_count |
+|---|---|---|---|
+| `entities/Harrison Satcher.md` | 0.70 | 2026-05-02 | 1 |
+| `entities/Ivey Business School.md` | 0.70 | 2026-04-28 | 1 |
+| `entities/Jacqueline N. Lane.md` | 0.75 | 2026-04-29 | 1 |
+| `entities/Jesper B. Sorensen.md` | 0.75 | 2026-04-28 | 1 |
+| `entities/John Higgins.md` | 0.70 | 2026-04-28 | 1 |
+| `entities/Julian Birkinshaw.md` | 0.70 | 2026-04-28 | 1 |
+| `entities/Karl S.R. Warner.md` | 0.75 | 2026-04-28 | 1 |
+| `entities/Kate Smaje.md` | 0.70 | 2026-05-03 | 1 |
+| `entities/Leonard Boussioux.md` | 0.75 | 2026-04-29 | 1 |
+| `entities/Maximilian Wager.md` | 0.75 | 2026-04-28 | 1 |
+
+### Batch 7 (entities 61–71, final)
+
+| Page | confidence | last_confirmed | source_count |
+|---|---|---|---|
+| `entities/Megan Reitz.md` | 0.70 | 2026-04-28 | 1 |
+| `entities/Miaomiao Zhang.md` | 0.75 | 2026-04-29 | 1 |
+| `entities/Nestor Maslej.md` | 0.75 | 2026-04-30 | 2 |
+| `entities/Peter Weill.md` | 0.75 | 2026-05-03 | 2 |
+| `entities/Rob Levin.md` | 0.70 | 2026-05-03 | 1 |
+| `entities/Schmidt Sciences.md` | 0.70 | 2026-04-30 | 1 |
+| `entities/Sha Sajadieh.md` | 0.70 | 2026-04-30 | 1 |
+| `entities/Stephanie Woerner.md` | 0.75 | 2026-05-03 | 2 |
+| `entities/Tima Bansal.md` | 0.70 | 2026-04-28 | 1 |
+| `entities/Vladimir Jacimovic.md` | 0.75 | 2026-04-29 | 1 |
+| `entities/Yolanda Gil.md` | 0.80 | 2026-04-30 | 2 |
+
+### v0.2 final state
+
+**71/71 pages migrated.** Final lint output:
+
+- `confidence` distribution: 56 pages at 0.70–0.85, 15 pages at 0.85–1.0, 0 below 0.70, 0 missing.
+- 0 pages with `last_confirmed > 30 days` (all dates ≥ 2026-04-28, today is 2026-05-05).
+- 0 pages marked `status: stale` (no supersession events triggered yet).
+
+Lint script now exits 0 — the v0.2 lifecycle invariant holds. This becomes the pre-commit check contract for the v0.4 PostToolUse hook.
+
+**The distribution shape** is informative: high-confidence (0.85–1.0) clusters are the well-substantiated *concept hubs* (`enterprise-ai-adoption`, `generative-ai`, `automation-vs-augmentation`, `ai-employment-effects`, `responsible-ai`); the long mid-confidence tail (0.70–0.85) is dominated by *single-source author/organization entities* — the natural shape of a wiki where most entities first appear via one substantiating ingest. As more sources land, those 0.70–0.75 entities will get nudged up by the "+0.05 per additional source" rule in §Lifecycle.
+
+**Build:** `npm run build` clean (95 in, 653 out, no errors).
+
+**Reversibility:** additive-frontmatter only across all 71 pages. Schema additions in [`CLAUDE.md`](../CLAUDE.md), [`quartz.config.ts`](../quartz.config.ts), one new extension ([`extensions/inject-stale-banner.ts`](../extensions/inject-stale-banner.ts)), one new script ([`scripts/lint-confidence.mjs`](../scripts/lint-confidence.mjs)), and the new `bulk-refactor` log op are reversible by removing the additions and reverting the two config files. No source-page or content edits.
+
+v0.2 complete. Next version per [`llm-wiki-v2-plan.md`](../llm-wiki-v2-plan.md): v0.3 (typed entity graph + synthesis contract).

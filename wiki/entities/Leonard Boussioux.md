@@ -3,6 +3,9 @@ type: entity
 kind: person
 aliases: ["Léonard Boussioux", "Leonard Boussioux"]
 tags: [boussioux, foster-school, university-of-washington, harvard, AI-research, crowdsourcing]
+confidence: 0.75
+last_confirmed: "2026-04-29"
+source_count: 1
 ---
 
 # Léonard Boussioux

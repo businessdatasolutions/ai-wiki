@@ -2,6 +2,9 @@
 type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design]
+confidence: 0.95
+last_confirmed: "2026-05-02"
+source_count: 10
 ---
 
 # Automation vs. Augmentation

@@ -3,6 +3,9 @@ type: entity
 kind: person
 aliases: ["Jesper B. Sørensen", "Jesper Sørensen", "Jesper B. Sorensen", "Jesper Sorensen"]
 tags: [sorensen, stanford-gsb, strategy-theory, theory-based-view]
+confidence: 0.75
+last_confirmed: "2026-04-28"
+source_count: 1
 ---
 
 # Jesper B. Sørensen

@@ -5,6 +5,9 @@ aliases: ["Bharat N. Anand", "Bharat Anand"]
 tags: [nyu-stern, hbs, business-school, strategy, hbr-author]
 affiliation: "[[NYU Stern]]"
 role: "Richard R. West Dean and Professor of Business Administration"
+confidence: 0.70
+last_confirmed: "2026-04-28"
+source_count: 1
 ---
 
 # Bharat N. Anand

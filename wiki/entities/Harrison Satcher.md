@@ -3,6 +3,9 @@ type: entity
 kind: person
 aliases: ["Harrison Satcher"]
 tags: [satcher, openai, economic-research]
+confidence: 0.70
+last_confirmed: "2026-05-02"
+source_count: 1
 ---
 
 # Harrison Satcher

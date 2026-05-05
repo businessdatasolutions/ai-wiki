@@ -5,6 +5,9 @@ aliases: ["Stanford Institute for Human-Centered Artificial Intelligence", "HAI"
 tags: [stanford, ai-research, ai-policy, academic-institute, ai-index]
 website: "https://hai.stanford.edu"
 founded: 2019
+confidence: 0.80
+last_confirmed: "2026-04-30"
+source_count: 2
 ---
 
 # Stanford HAI

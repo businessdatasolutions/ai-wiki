@@ -3,6 +3,9 @@ type: entity
 kind: organization
 aliases: ["McKinsey", "McKinsey & Company", "McKinsey and Company", "QuantumBlack"]
 tags: [mckinsey, management-consulting, quantumblack, ai-research, tech-ai-transformation]
+confidence: 0.85
+last_confirmed: "2026-05-03"
+source_count: 4
 ---
 
 # McKinsey & Company

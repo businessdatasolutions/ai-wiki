@@ -3,6 +3,9 @@ type: entity
 kind: person
 aliases: ["Miaomiao Zhang"]
 tags: [zhang, continuum-laboratory, AI-research]
+confidence: 0.75
+last_confirmed: "2026-04-29"
+source_count: 1
 ---
 
 # Miaomiao Zhang

@@ -3,6 +3,9 @@ type: entity
 kind: organization
 aliases: ["Schmidt Sciences"]
 tags: [schmidt-sciences, ai-research, AI-medicine, philanthropy]
+confidence: 0.70
+last_confirmed: "2026-04-30"
+source_count: 1
 ---
 
 # Schmidt Sciences

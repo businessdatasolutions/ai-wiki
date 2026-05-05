@@ -2,6 +2,9 @@
 type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
+confidence: 0.95
+last_confirmed: "2026-04-30"
+source_count: 6
 ---
 
 # Responsible AI

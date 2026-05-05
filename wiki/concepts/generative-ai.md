@@ -2,6 +2,9 @@
 type: concept
 aliases: ["GenAI", "generative AI", "generative artificial intelligence"]
 tags: [generative-ai, foundation-models, ai-adoption]
+confidence: 0.95
+last_confirmed: "2026-05-02"
+source_count: 11
 ---
 
 # Generative AI
