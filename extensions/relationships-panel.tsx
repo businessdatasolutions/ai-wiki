@@ -113,45 +113,90 @@ export default ((opts?: Partial<Options>) => {
     return (
       <div class={classNames(displayClass, "relationships-panel")}>
         <h3>Relationships</h3>
-        {orderedTypes.map((type) => {
-          const list = byType.get(type) ?? []
-          return (
-            <div class="relationships-group">
-              <h4>{RELATIONSHIP_LABELS[type] ?? type}</h4>
-              <ul>
-                {list.map((rel) => {
-                  const targetFile = findTargetFile(rel.target)
-                  const targetTitle =
-                    (targetFile?.frontmatter?.title as string | undefined) ?? rel.target
-                  const href =
-                    targetFile?.slug && fileData.slug
-                      ? resolveRelative(fileData.slug, targetFile.slug)
-                      : null
-                  return (
-                    <li>
-                      {href ? (
-                        <a href={href} class="internal">
-                          {targetTitle}
-                        </a>
-                      ) : (
-                        <span class="broken-relationship">{rel.target}</span>
-                      )}
-                      {rel.via ? (
-                        <span class="relationship-via">
-                          {" — "}
-                          <em>{rel.via}</em>
-                        </span>
-                      ) : null}
-                    </li>
-                  )
-                })}
-              </ul>
-            </div>
-          )
-        })}
+        <div class="relationships-body">
+          {orderedTypes.map((type) => {
+            const list = byType.get(type) ?? []
+            return (
+              <div class="relationships-group">
+                <h4>{RELATIONSHIP_LABELS[type] ?? type}</h4>
+                <ul>
+                  {list.map((rel) => {
+                    const targetFile = findTargetFile(rel.target)
+                    const targetTitle =
+                      (targetFile?.frontmatter?.title as string | undefined) ?? rel.target
+                    const href =
+                      targetFile?.slug && fileData.slug
+                        ? resolveRelative(fileData.slug, targetFile.slug)
+                        : null
+                    return (
+                      <li>
+                        {href ? (
+                          <a href={href} class="internal">
+                            {targetTitle}
+                          </a>
+                        ) : (
+                          <span class="broken-relationship">{rel.target}</span>
+                        )}
+                        {rel.via ? (
+                          <span class="relationship-via">
+                            {" — "}
+                            <em>{rel.via}</em>
+                          </span>
+                        ) : null}
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
+            )
+          })}
+        </div>
       </div>
     )
   }
+
+  // Scrollable body so a page with many relationships doesn't push the rest of
+  // the right sidebar (Backlinks, etc.) off-screen. Mirrors the
+  // .backlinks > ul.overflow pattern from quartz/components/styles/backlinks.scss.
+  RelationshipsPanel.css = `
+.relationships-panel {
+  flex-direction: column;
+}
+.relationships-panel > h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+.relationships-panel > .relationships-body {
+  max-height: calc(100% - 2rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  margin: 0.5rem 0;
+}
+.relationships-panel .relationships-group > h4 {
+  font-size: 0.85rem;
+  margin: 0.5rem 0 0.25rem;
+  opacity: 0.75;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.relationships-panel .relationships-group > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.relationships-panel .relationships-group > ul > li {
+  margin: 0.25rem 0;
+  line-height: 1.35;
+}
+.relationships-panel .relationship-via {
+  opacity: 0.7;
+  font-size: 0.85em;
+}
+.relationships-panel .broken-relationship {
+  opacity: 0.5;
+  font-style: italic;
+}
+`
 
   return RelationshipsPanel
 }) satisfies QuartzComponentConstructor<Partial<Options>>
