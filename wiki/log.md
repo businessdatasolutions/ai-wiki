@@ -616,3 +616,16 @@ Lint script now exits 0 — the v0.2 lifecycle invariant holds. This becomes the
 **Reversibility:** additive-frontmatter only across all 71 pages. Schema additions in [`CLAUDE.md`](../CLAUDE.md), [`quartz.config.ts`](../quartz.config.ts), one new extension ([`extensions/inject-stale-banner.ts`](../extensions/inject-stale-banner.ts)), one new script ([`scripts/lint-confidence.mjs`](../scripts/lint-confidence.mjs)), and the new `bulk-refactor` log op are reversible by removing the additions and reverting the two config files. No source-page or content edits.
 
 v0.2 complete. Next version per [`llm-wiki-v2-plan.md`](../llm-wiki-v2-plan.md): v0.3 (typed entity graph + synthesis contract).
+
+## [2026-05-05] refactor | v0.2.1 — confidence badge visible on published site
+
+Follow-up to v0.2: the lifecycle fields were stored in frontmatter but not rendered on the published site. The lint script and the `raw` markdown were the only places to see confidence values. New extension [`extensions/inject-confidence-badge.ts`](../extensions/inject-confidence-badge.ts) renders a one-line italicized metadata strip immediately after each page's H1: *Confidence 0.85 · 4 sources · last confirmed 2026-04-28*.
+
+**Implementation note (load-bearing).** The extension uses `htmlPlugins()` (not `markdownPlugins()`) and is registered in [`quartz.config.ts`](../quartz.config.ts) **after** `Plugin.Description()`. Reason: Quartz's Description plugin is itself an htmlPlugin that does `toString(tree)` to compute `file.data.description`. A first attempt that injected the badge as a markdown paragraph before Description ran caused the badge text to appear in `og:description`, `twitter:description`, and `meta name="description"` tags. Re-ordering as an htmlPlugin after Description fixed it.
+
+**Verified:**
+- Badge visible on concept and entity pages.
+- Sources/threads skipped (no `confidence` field).
+- `og:description` on Anthropic now reads `"Anthropic AI safety and research company; publisher of the Claude family..."` — no badge leak.
+
+CSS class `confidence-badge` exposed for future styling. No content edits.

@@ -119,6 +119,7 @@ The wiki is published as a static site via **[Quartz v4](https://quartz.jzhao.xy
   - `inject-aliases.ts` — appends frontmatter `aliases` to the indexed body so FlexSearch finds pages by alias.
   - `backlinks-with-aliases.tsx` — replaces Quartz's stock Backlinks component. The stock one only matches inbound links by canonical slug; this one also matches via the page's frontmatter `aliases`, so wikilinks like `[[Erik Brynjolfsson]]` (which Quartz resolves to the alias slug) correctly produce backlinks on the aliased page.
   - `inject-stale-banner.ts` — when a page's frontmatter has `status: stale`, prepends a warning blockquote at the top of the page linking to `superseded_by`. Source files stay clean; the banner appears only on the published site.
+  - `inject-confidence-badge.ts` — when a page carries v0.2 lifecycle fields (`confidence`, `source_count`, `last_confirmed`), renders a one-line italicized metadata strip immediately after the H1: `Confidence 0.85 · 4 sources · last confirmed 2026-04-28`. Skips pages without `confidence` (sources, threads, syntheses).
 - **Deploy**: `.github/workflows/deploy.yml`. Pages source must be set to "GitHub Actions" in repo Settings.
 - **Local preview**: `npm install` once, then `npm run serve` → `http://localhost:8080`.
 - **Build only**: `npm run build` → `public/`.
