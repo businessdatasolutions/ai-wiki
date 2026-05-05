@@ -3,8 +3,8 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity]
 confidence: 0.95
-last_confirmed: "2026-05-03"
-source_count: 15
+last_confirmed: "2026-05-05"
+source_count: 16
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -71,7 +71,15 @@ Multiple complementary lenses are used by sources in this wiki:
 
 **Task lens** ([[2026-04-28-anand-wu-genai-playbook|Anand-Wu]]): a 2×2 matrix on **cost of errors × type of knowledge** decides where to deploy GenAI on a per-task basis (no regrets / creative catalyst / quality control / human-first zones).
 
-All five lenses agree qualitatively: **most organizations are using AI in some form, but very few are actually mature/ready/adapted.** The AI Index pegs "mature" at 1%; MIT CISR pegs Stage 4 at 7%; Cisco pegs "ready" at 13%; Werner-Le-Brun's 12% transformation-success baseline gives the broader org-change context. See [[ai-maturity-measurement-comparison]] for methodological cross-walk and [[syntheses/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] for the framework comparison.
+**Firm-boundary lens — four models** ([[2026-05-05-nishar-nohria-end-of-one-size-fits-all|Nishar & Nohria 2026]]): a sharper reframing of the build-vs-buy decision under [[generative-ai]]. The economic logic that made standardized SaaS the only practical default is **dissolving** — custom software is accessible again because foundation-model + vibe-coding tools (Cursor, Replit Agent, Claude Code, OpenAI Codex) compress months-of-engineering into days. The strategic question shifts from "which tools to buy?" to **"which workflows do we own?"** Four emerging answers, not mutually exclusive:
+- **Build** — directly on foundation models, for distinctive jobs (e.g., a logistics company building a system that continuously optimizes delivery time and cost based on its own data — over time becomes hard-to-replicate institutional knowledge).
+- **Compose** — vendor scaffolding and templates configured by business users (e.g., **Salesforce Headless 360** for tailoring lead scoring and outreach to a specific sales motion without building a CRM from scratch). Direction reverses: software adapts to the company.
+- **Collaborate** — providers' forward-deployed engineers build bespoke systems in weeks rather than the months/years of a traditional ERP deployment. Speed and alignment in exchange for external dependency.
+- **Buy outcomes** — procure the outcome itself, not the tool. Adobe's 2026 outcome-based pricing for its CX Enterprise / agentic AI tools is the named industry signal: Adobe deploys agents directly with the customer and charges for outcomes (e.g., successful ad campaigns) rather than per seat or per token.
+- **Empirical anchors:** enterprise GenAI app spending **$1.7B (2023) → $37B (2025)** (~22× in 2 years; SaaS took ~10 years for comparable penetration); **40% of code AI-generated**; **>1/3 of companies** have replaced ≥1 SaaS tool with a custom GenAI alternative; public SaaS valuations **30–60% below 2021 peaks**.
+- **Strategic implication:** "the boundary of the firm becomes a variable rather than a given." Reinforces the [[micro-productivity-trap]] thesis from [[2026-05-02-dutt-chatterji-ai-experimentation-to-transformation|Dutt, Chatterji et al.]] — **data architecture and process redesign are load-bearing**, not afterthoughts. Caveat from the article: "moving quickly is not the same as moving effectively."
+
+All six lenses agree qualitatively: **most organizations are using AI in some form, but very few are actually mature/ready/adapted.** The AI Index pegs "mature" at 1%; MIT CISR pegs Stage 4 at 7%; Cisco pegs "ready" at 13%; Werner-Le-Brun's 12% transformation-success baseline gives the broader org-change context. See [[ai-maturity-measurement-comparison]] for methodological cross-walk and [[syntheses/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] for the framework comparison (the Nishar-Nohria firm-boundary lens is the **7th** named framework and operates at a layer the original 6-framework synthesis didn't surface — see the synthesis for the running cluster).
 
 The shape of adoption can be measured along several dimensions:
 

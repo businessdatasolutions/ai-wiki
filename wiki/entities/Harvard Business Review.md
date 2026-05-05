@@ -6,8 +6,8 @@ tags: [publisher, business-magazine, management-research, harvard]
 parent: "[[Harvard Business School]]"
 website: "https://hbr.org"
 confidence: 0.85
-last_confirmed: "2026-05-02"
-source_count: 6
+last_confirmed: "2026-05-05"
+source_count: 7
 ---
 
 # Harvard Business Review
@@ -18,14 +18,31 @@ A primary publishing venue for academic strategy and management work intended to
 
 ## Role in the wiki
 
-This wiki's two HBR ingests so far (Nov–Dec 2025 issue):
+HBR sources span both the print magazine (with `hbr_reprint` codes) and HBR.org Digital pieces. Print articles are tabulated here; digital pieces are listed separately below.
+
+**Print magazine — Nov–Dec 2025 issue:**
 
 | Article | Authors | Reprint | Topic |
 |---|---|---|---|
 | [[2026-04-28-anand-wu-genai-playbook\|The Gen AI Playbook for Organizations]] | [[Bharat N. Anand]], [[Andy Wu]] | R2506K | Strategy: where to deploy GenAI today |
 | [[2026-04-28-werner-lebrun-octopus-organization\|Become an Octopus Organization]] | [[Jana Werner]], [[Phil Le-Brun]] | R2506C | Change management: org adaptability |
 
-HBR articles in the wiki use this convention: source `kind: article`, frontmatter includes `hbr_reprint`, body cites by HBR pagination.
+**Print magazine — earlier issues:**
+
+| Article | Authors | Issue | Topic |
+|---|---|---|---|
+| [[2026-04-28-bansal-birkinshaw-systems-thinking\|Why You Need Systems Thinking Now]] | [[Tima Bansal]], [[Julian Birkinshaw]] | Sept–Oct 2025 | Systems thinking for wicked problems |
+
+**HBR.org Digital pieces:**
+
+| Article | Authors | Date | Topic |
+|---|---|---|---|
+| [[2026-04-28-webb-strategic-foresight\|Reuniting Strategy and Foresight]] | [[Amy Webb]] | Jan 2024 | Strategic foresight methodology |
+| [[2026-04-28-reitz-higgins-spacious-thinking\|The Best Leaders Encourage "Spacious Thinking"]] | [[Megan Reitz]], [[John Higgins]] | July 2025 | Leadership attention modes |
+| [[2026-05-02-dutt-chatterji-ai-experimentation-to-transformation\|How to Move from AI Experimentation to AI Transformation]] | [[Arjun Dutt]] et al. ([[Bain & Company]] + [[OpenAI]]) | 30 April 2026 | AI transformation framework + [[micro-productivity-trap]] |
+| [[2026-05-05-nishar-nohria-end-of-one-size-fits-all\|The End of One-Size-Fits-All Enterprise Software]] | [[Deep Nishar]], [[Nitin Nohria]] | 23 April 2026 | Firm-boundary 4-model framework (Build / Compose / Collaborate / Buy Outcomes) |
+
+HBR articles in the wiki use this convention: source `kind: article`. Print pieces include an `hbr_reprint` field; digital pieces use `journal_volume: "HBR.org Digital, <date>"`.
 
 ## Article structure (recurring "Idea in Brief")
 

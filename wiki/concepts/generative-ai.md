@@ -3,8 +3,8 @@ type: concept
 aliases: ["GenAI", "generative AI", "generative artificial intelligence"]
 tags: [generative-ai, foundation-models, ai-adoption]
 confidence: 0.95
-last_confirmed: "2026-05-02"
-source_count: 11
+last_confirmed: "2026-05-05"
+source_count: 12
 relationships:
   - type: uses
     target: foundation-models
@@ -29,6 +29,16 @@ In the [[AI Index]] taxonomy, "Generative AI" is a sub-class of AI distinguished
 - **$33.9B private investment in GenAI in 2024**, up 18.7% from 2023, **8.5× 2022 levels**. Now >20% of all AI-related private investment.
 - U.S. GenAI investment **exceeded the combined total of China + EU + UK by $25.4B** in 2024 (gap was $21.8B in 2023).
 - Source: [[2026-04-28-ai-index-report-2025|AI Index 2025]] §4.3 Chapter Highlights 2–3.
+
+### Enterprise application spending: 22× in two years
+
+[[2026-05-05-nishar-nohria-end-of-one-size-fits-all|Nishar & Nohria (HBR.org Digital, April 2026)]] — drawing on industry analyst data:
+
+- **Enterprise GenAI application spending: $1.7B (2023) → $37B (2025)** — more than 20× in two years. SaaS took ~10 years to achieve a comparable level of penetration.
+- **~40% of code is now AI-generated**; vast majority of developers use AI coding tools daily.
+- **Substitution effects:** >1/3 of companies report replacing at least one SaaS tool with a custom-built GenAI alternative; majority expect to build more in the coming year.
+- **Public SaaS valuations 30–60% below 2021 peaks** as the standardized-tool bargain weakens.
+- Tools enabling the shift: **Cursor, Replit Agent, Claude Code, OpenAI Codex** — make idea-to-functional-application possible in hours/days. Coined as **"vibe coding"** (a user describes what they want in plain language; the AI generates working software).
 
 ### Enterprise use
 

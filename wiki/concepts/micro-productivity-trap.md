@@ -2,9 +2,9 @@
 type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai]
-confidence: 0.70
-last_confirmed: "2026-05-02"
-source_count: 1
+confidence: 0.75
+last_confirmed: "2026-05-05"
+source_count: 2
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -55,6 +55,16 @@ The escape from the trap is **"reinvent the business"**: an organization-wide, f
 
 Lagging firms recognize AI as important but **delegate** it to technology groups without specific goals or metrics. The article argues this delegation pattern is a structural cause of the trap — AI transformation requires top-of-house ownership with ambitious, business-owned targets.
 
+### Second-source corroboration: data architecture as load-bearing ([[2026-05-05-nishar-nohria-end-of-one-size-fits-all|Nishar & Nohria 2026]])
+
+Independent of Bain/OpenAI's framing, [[Deep Nishar]] and [[Nitin Nohria]] (HBR.org Digital, April 2026) reach the same conclusion via a different route:
+
+> "Moving quickly is not the same as moving effectively. Organizations that rush to automate without re-architecting their data and processes often find that quality suffers, edge cases accumulate, and systems become difficult to manage. The lesson is not to slow down, but to pair ambition with discipline: to treat data architecture, governance, and ownership as integral to the transformation rather than afterthoughts."
+
+The mechanism Nishar-Nohria name as the trap is the same one Bain/OpenAI named as **process lock-in**: applying [[generative-ai]] to existing workflows without restructuring the data layer or the workflow itself. Their prescription is consistent with the "reinvent the business" posture: **treat data architecture as the foundation**, revisit build-vs-buy per function, govern internally-developed systems, and recognize that software choices are workforce choices.
+
+The two sources together — practitioner consulting (Bain/OpenAI) and practitioner investor + academic (Nishar/Nohria) — converge on **data architecture + process redesign first, technology second** as the load-bearing decision. Source overlap is low (different vantage, different audience), so this is real cross-source agreement, not an echo. Confidence on this concept lifts from single-source 0.70 to two-source 0.75.
+
 ## Cross-source positioning (descriptive only, per cross-source neutrality)
 
 The micro-productivity-trap framing sits among several wiki vocabularies addressing the same broad territory of "AI adoption breadth ≠ transformation depth":
@@ -67,8 +77,9 @@ The micro-productivity-trap framing sits among several wiki vocabularies address
 - [[2026-04-28-warner-wager-dynamic-capabilities-digital-transformation|Warner & Wäger]] — *digital sensing/seizing/transforming* nine microfoundations under Teece.
 - [[2026-05-03-rewired-second-edition-sample|McKinsey "Rewired" 2nd ed (2026)]] — *6 capabilities* (business-led roadmap, talent, operating model, technology, data, adoption-and-scaling); 20% EBITDA uplift / $3:$1 / 1–2yr breakeven across ~20 deep-dive AI-leader companies; 70% talent-density shifts.
 - [[2026-04-30-ai-index-report-2026|AI Index 2026]] — empirical context: 88% organizational AI adoption but **AI agent deployment in single digits per business function**.
+- [[2026-05-05-nishar-nohria-end-of-one-size-fits-all|Nishar & Nohria 2026]] — *firm-boundary 4-model lens* (Build / Compose / Collaborate / Buy Outcomes); the trap manifests when a firm rushes to "Build" or rushes to automate any layer without first treating **data architecture, governance, and ownership** as the foundation.
 
-Each names the same broad gap with a different vocabulary; the wiki's [[syntheses/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] synthesis maps the cluster.
+Each names the same broad gap with a different vocabulary; the wiki's [[syntheses/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] synthesis maps the cluster (the synthesis was filed when 6 frameworks were ingested; Nishar-Nohria is the 7th, at a layer the synthesis didn't surface).
 
 ## Related concepts
 

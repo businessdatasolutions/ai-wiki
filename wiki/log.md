@@ -763,3 +763,54 @@ Wires Claude Code hooks so the v0.2/v0.3 bookkeeping fires automatically. The ha
 **Reversibility:** four new files (3 scripts + the hooks block in settings.json), additive `## Hooks` section in CLAUDE.md. No content edits anywhere in `wiki/`. To revert: delete `scripts/session-*.mjs` and `scripts/lint-page.mjs`, remove the `hooks` block from `.claude/settings.json`, and revert the §Hooks section in CLAUDE.md.
 
 v0.4 complete. Next per [`llm-wiki-v2-plan.md`](../llm-wiki-v2-plan.md): v0.5 (hybrid search + retention/forgetting).
+
+## [2026-05-05] ingest | Nishar & Nohria — The End of One-Size-Fits-All Enterprise Software (HBR.org Digital, 23 Apr 2026)
+
+First post-v0.4 ingest. Article identified as: HBR.org Digital, 23 April 2026, Deep Nishar (technologist/investor — ex-Google senior product 2003–2008, ex-LinkedIn CPO 2009–2014, investments include Anthropic / Figma / Glean / Slack) and Nitin Nohria (HBS professor; 10th HBS Dean 2010–2020). Filename → content match clean. 8 pages of body, full ingest.
+
+**Core thesis:** [[generative-ai]] is dissolving the economic logic that made standardized SaaS the default. Custom software is accessible again because foundation-model + vibe-coding tools (Cursor, Replit Agent, Claude Code, OpenAI Codex) compress months-of-engineering into days. The build-vs-buy question is **no longer a cost decision** — it's a strategic question about **which workflows the firm should own**. Authors explicitly correct their own May 2025 thesis: "We were wrong — not about the direction, but about the pace."
+
+**The four-model framework** for the firm-boundary decision:
+
+1. **Build** — directly on foundation models, for distinctive jobs (logistics-optimization example).
+2. **Compose** — vendor scaffolding configured by business users (Salesforce Headless 360 example).
+3. **Collaborate** — providers' forward-deployed engineers build bespoke systems in weeks.
+4. **Buy outcomes** — procure the outcome itself, not the tool (Adobe outcome-based pricing for CX Enterprise + agentic AI tools as the named industry signal).
+
+Models are not mutually exclusive; most firms will use a combination. Choice is no longer cost-or-feasibility; it is "where does differentiation matter, and where does it not."
+
+**Hard empirical anchors carried into the wiki:**
+
+- Enterprise GenAI app spending: **$1.7B (2023) → $37B (2025)** (~22× in 2 years; SaaS took ~10 years for comparable penetration).
+- **~40% of code is now AI-generated**; vast majority of developers use AI coding tools daily.
+- **>1/3 of companies** report replacing at least one SaaS tool with a custom-built GenAI alternative.
+- Public SaaS valuations **30–60% below 2021 peaks**.
+
+**Wiki impact (10 files touched):**
+
+- **1 source page (new):** [[2026-05-05-nishar-nohria-end-of-one-size-fits-all]].
+- **2 entity pages (new):** [[Deep Nishar]] (single source; vendor-of-deployment caveat noted — investor in companies that benefit from the framework, e.g. Anthropic), [[Nitin Nohria]] (single source; academic anchor; HBS not yet an entity page so no `relationships:` block).
+- **1 entity update:** [[Harvard Business Review]] — `source_count: 6 → 7`; tabulated all HBR sources (now split into print magazine and HBR.org Digital subsections; 4 digital pieces in the wiki).
+- **4 concept enrichments:**
+  - [[enterprise-ai-adoption]] — added a "Firm-boundary lens (Nishar-Nohria 4 models)" subsection between the Anand-Wu task lens and the all-lenses-agree summary; bumped `source_count: 15 → 16`, `last_confirmed → 2026-05-05` (confidence 0.95 unchanged — at cap). Updated index.md summary to drop the outdated "five-lens framework" framing.
+  - [[micro-productivity-trap]] — added second-source corroboration subsection; bumped `confidence: 0.70 → 0.75`, `source_count: 1 → 2`, `last_confirmed → 2026-05-05`. Nishar-Nohria's "data architecture as foundation" reaches the same conclusion as Bain/OpenAI's process-redesign-first argument from a different vantage. Real cross-source agreement, not echo. Also added Nishar-Nohria to the cross-source positioning list.
+  - [[generative-ai]] — added a new subsection "Enterprise application spending: 22× in two years" with Nishar-Nohria's data points; bumped `source_count: 11 → 12` (confidence 0.95 at cap).
+  - [[automation-vs-augmentation]] — added section #9 "Buy-Outcomes as the most automative deployment model"; framed the four Nishar-Nohria models along the automation↔augmentation axis (Buy Outcomes = pure firm-level automation; Build = deep augmentation of distinctive workflows). Added Nishar-Nohria row to the cross-source convergence table at bottom. Bumped `source_count: 10 → 11` (confidence 0.95 at cap).
+- **`index.md`:** new source entry; new entity entries for Nishar and Nohria; updated `enterprise-ai-adoption` concept summary to drop the stale "five-lens framework" framing.
+
+**Cross-source positioning of the article:**
+
+This is the **7th named framework** in the wiki's "adoption breadth ≠ transformation depth" cluster — and it operates at a **decision layer not previously surfaced** by [[syntheses/organizational-frameworks-for-ai-adoption|the synthesis page filed earlier today]]. The synthesis maps 6 frameworks onto seven layers (org-design / readiness / capability progression / transformation playbook / trap escape / task deployment / diagnostic). Nishar-Nohria adds an 8th layer — the **firm-boundary / make-or-buy layer**. Per the framework-promotion rules (single source for a 4-model framework), no standalone concept page yet; defer to a 2nd corroborating source. The synthesis itself is left as-is — synthesis pages should be durable, not amended each time a new framework is ingested. The new framework lives as a lens in `enterprise-ai-adoption` for now; the synthesis's "Open questions" section already anticipates this evolution.
+
+**Contradictions checked:** none. The article reinforces existing wiki claims:
+- Process redesign / data architecture as load-bearing — matches [[2026-05-02-dutt-chatterji-ai-experimentation-to-transformation|Bain/OpenAI]] and [[2026-05-03-rewired-second-edition-sample|McKinsey *Rewired*]].
+- Senior-leader ownership non-negotiable — matches the same two sources.
+- Most enterprise tasks today are augmentative, not automative — matches [[2026-04-30-ai-index-report-2026|AI Index 2026]] (agent deployment in single digits per function).
+
+**Dangling references intentionally left as wikilinks** (single-source, deferred per ingest convention): Salesforce / Salesforce Headless 360, SAP, Workday, Epic, Cursor, Replit Agent, OpenAI Codex, Adobe, [[Harvard Business School]] (Nohria's home; will tip into entity-page territory if a 2nd HBS-published source arrives).
+
+**Source-quality flag for downstream readers:** Nishar's investor positions in [[Anthropic]] and other beneficiaries of the prescribed framework are noted on his entity page. The article's specific numbers ($37B spending, 40% AI-code, >1/3 substitution) are cited via embedded links in the original — those links are the data trail to follow if any becomes load-bearing for downstream wiki claims. HBR.org Digital is practitioner publication, not peer-reviewed; confidence boost from this source is +0.05 per the §Lifecycle "additional supporting source" rule, with no peer-review bonus.
+
+**v0.4 hooks observation:** This is the first ingest with the v0.4 PostToolUse lint hook live. The hook would have fired on every Write/Edit to a wiki page during this ingest. (Whether stderr warnings surfaced visibly back to the session depends on the harness; no warnings were observed during this ingest run.)
+
+**Total file touch: 10** (1 new source + 2 new entities + 1 entity update + 4 concept enrichments + index + log; raw PDF on disk under `raw/articles/` — not committed by gitignore rule).

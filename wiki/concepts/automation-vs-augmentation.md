@@ -3,8 +3,8 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design]
 confidence: 0.95
-last_confirmed: "2026-05-02"
-source_count: 10
+last_confirmed: "2026-05-05"
+source_count: 11
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -121,6 +121,25 @@ Two implications:
 
 This is a genuine wrinkle in the "augmentation is benign / automation is contested" framing — even augmentation has distributional and long-run dynamics that the headline numbers obscure.
 
+### 9. Buy-Outcomes as the most automative deployment model ([[2026-05-05-nishar-nohria-end-of-one-size-fits-all|Nishar & Nohria 2026]])
+
+Nishar & Nohria's four-model framework (Build / Compose / Collaborate / **Buy Outcomes**) for the firm-boundary decision under [[generative-ai]] surfaces a useful refinement of the automation-vs-augmentation cut: **Buy Outcomes is the most automative model in the spectrum.**
+
+When a firm contracts for "accurate financials, compliance, and reporting as a service" rather than licensing accounting software and operating it internally, the entire job — not just discrete tasks — is automated by the vendor. The named industry signal: **Adobe's outcome-based pricing for its CX Enterprise + agentic AI tools**, where Adobe deploys agents directly with the customer and charges per outcome (e.g., successful ad campaigns) rather than per seat or per token. This is the operational shape of "AI does the work; the human is monitoring or absent" pushed to the firm-boundary level.
+
+By contrast, the **Build** model is closer to deep augmentation of a firm's distinctive workflows — the system encodes *the firm's* data and decision logic, not the vendor's. The four models can therefore be ordered roughly along the automation-vs-augmentation axis:
+
+| Nishar-Nohria model | Closest to | Why |
+|---|---|---|
+| Buy Outcomes | Pure automation (firm-level) | Vendor takes responsibility for the whole job |
+| Collaborate | Mostly automation | Provider's forward-deployed engineers build the system; firm consumes it |
+| Compose | Augmentation of business-user workflows | Business users configure scaffolding to their own motion |
+| Build | Deep augmentation of distinctive workflows | The firm's own data and decision logic become the system |
+
+This refines the wiki's task-level cut into a complementary firm-boundary cut: **at the task level, Anand-Wu's "no regrets zone" is where automation thrives; at the firm-boundary level, Nishar-Nohria's "Buy Outcomes" is where firms cede the whole function**. Both work best on **non-differentiating** territory; both become risky when performance there starts shaping competitive advantage.
+
+Caveat: Nishar-Nohria explicitly warn that the choice of model is **not primarily a cost or feasibility decision** anymore — it is a strategic decision about where differentiation matters. This is the firm-boundary analogue of Anand-Wu's task-level "where to deploy GenAI today" question.
+
 ## The four-source convergence on the distinction
 
 Four wiki sources, with distinct vocabularies and methodologies, all draw essentially the same conceptual cut:
@@ -135,6 +154,7 @@ Four wiki sources, with distinct vocabularies and methodologies, all draw essent
 | [[2026-04-28-dellacqua-jagged-technological-frontier\|Dell'Acqua et al. 2026 (Jagged Frontier)]] | Per-task AI fit determines whether AI augments or harms; introduces "jagged frontier" | "Inside the frontier" (augmentation works) vs. "outside the frontier" (AI degrades performance) |
 | [[2026-04-29-boussioux-crowdless-future\|Boussioux et al. 2024 (Crowdless Future)]] | Augmentation pattern is fine-grained: *independent* search (multi-instance) vs *differentiated* search (single-instance with iterative diversification prompts); per-dimension trade-off (HC higher novelty; HAI higher value/quality) | "Independent search" vs. "differentiated search"; "AI-in-the-loop" |
 | [[2026-05-02-dutt-chatterji-ai-experimentation-to-transformation\|Dutt et al. 2026 (Bain/OpenAI HBR)]] | Two failure modes when augmentation is shallow: *offering lock-in* (AI optimizes existing offerings) and *process lock-in* (AI automates current processes without redesigning them). Successful firms "reinvent the business" instead, with 10–25% EBITDA gains | "Offering lock-in" vs. "process lock-in"; "improve the task" vs. "reinvent the business"; [[micro-productivity-trap]] |
+| [[2026-05-05-nishar-nohria-end-of-one-size-fits-all\|Nishar & Nohria 2026 (HBR)]] | Firm-boundary 4-model decision: **Build** (deep augmentation of distinctive workflows) ↔ **Compose** ↔ **Collaborate** ↔ **Buy Outcomes** (firm-level automation: vendor takes responsibility for the whole job, e.g. Adobe's outcome-based pricing). Choice is no longer cost-driven; it's a strategic decision about where differentiation lives. | "Build / Compose / Collaborate / Buy Outcomes"; "the boundary of the firm becomes a variable rather than a given" |
 
 When four independent sources arrive at the same cut from different angles (theory, strategy, vendor framing, and large-scale payroll data), the distinction is robust enough to be a load-bearing concept in the wiki.
 
