@@ -3,9 +3,9 @@ type: concept
 aliases: ["strategy", "business strategy", "corporate strategy", "competitive strategy"]
 tags: [strategy, strategic-planning, value-creation, value-capture, theory-of-winning, playing-to-win, value-stick, roger-martin, felix-oberholzer-gee, harvard-business-review]
 confidence: 0.88
-last_confirmed: "2026-06-15"
-accessed_at: "2026-06-15"
-source_count: 6
+last_confirmed: "2026-06-16"
+accessed_at: "2026-06-16"
+source_count: 7
 relationships:
   - type: supports
     target: strategic-foresight
@@ -177,6 +177,7 @@ The sharpest one-line statement of where advantage survives the commoditisation 
 - [[systems-thinking]] — Sterman's *strategy is a journey, world is feedback* converges on Martin's *tweak as you go*. Different literatures, same operational stance.
 - [[infinite-game]] — Sinek/Carse's frame recasting *which game you are in* before strategy lenses ask *how to win it*. Cross-walk filed in [[strategy-finite-vs-infinite-game]] synthesis.
 - [[theory-based-view]] — Felin & Zenger's TBV is the falsifiability discipline (novel/simple/elegant/falsifiable/generative) applied to Martin's *theory of winning* and Sinek's *Just Cause*.
+- [[strategic-centering]] — [[2026-07-01-mcgrath-power-of-strategic-centering|McGrath's]] *organizing-principle* lens: a third modern reframing alongside Martin (theory of winning) and Oberholzer-Gee (value stick). Centering sits *upstream* — it chooses the dimension (mission / customer / technology / national ecosystem / friction erasure) along which the firm pursues coherent opportunity sets *as industries dematerialize and the classical anchors (Porter / RBV / Blue Ocean) lose force*.
 - [[micro-productivity-trap]] — task-level AI gains failing to translate to firm-level results is a *strategy failure*: the firm has a plan (deploy AI tools) but not a strategy (a theory of how the deployment creates competitive value).
 - [[dynamic-capabilities]] — Erginbilgiç's *strategy-as-participation* doctrine is the strategy-formation correlate of Teece's *sensing* and *seizing* capabilities: the workshops are the firm's distributed sensing engine, and the chaotic-divergence rule licenses the seizing-of-options that hierarchical strategy-formation suppresses.
 

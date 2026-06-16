@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-06-15"
-accessed_at: "2026-06-15"
-source_count: 71
+last_confirmed: "2026-06-16"
+accessed_at: "2026-06-16"
+source_count: 72
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -493,6 +493,10 @@ BCG's labor report supplies the **diffusion** half of the adoption story: a **mu
 
 BCG's four **CEO starting points** are an executive-readership adoption playbook: (1) **embed workforce strategy into competitive strategy** (it can't sit downstream of automation; avoid reactive headline/peer-driven cuts that ignore your own automatable/augmentable mix); (2) **refocus automation on redesign, not cost** (new domain-specific KPIs; see [[micro-productivity-trap]]); (3) **put upskilling/reskilling/redeployment at the centre** with per-segment playbooks; (4) **shape the AI narrative** — sequencing matters, leading with the most-substitutable roles demoralizes and erodes the will to upskill. Pairs with the [[2026-06-02-architecting-ai-native-organizations-redesign-work-at-scale-joe-beutler|Beutler]] / [[2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life|Microsoft]] / [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti]] CEO-vantage anchors above.
 
+## The disclosure-culture constraint: trust beats governance ([[2026-06-10-anicich-brouwers-why-employees-arent-transparent-ai-usage|Anicich & Brouwers / HBR June 2026]])
+
+A sharp human-factor addition to the maturity story: even where individual adoption is high, the **collective** gain can stay near zero because employees **hide** the workflows they discover — [[ai-knowledge-hiding]]. The binding driver is **organizational trust**, operating through **psychological safety**, *not* formal AI policy or approved tooling. In the authors' 604-respondent survey of daily-AI users, **30.3%** intentionally withheld AI knowledge; the lowest-trust quartile was ~4× more likely to hide than the highest (**47% vs 14%**), and **having an AI policy or sanctioned tools, alone, predicted nothing**. A cited Stanford study of **51 enterprise deployments** found **77% of the hardest adoption challenges were non-technical** — the same human-maturity gap the [[2026-04-28-mit-sloan-ai-maturity|MIT CISR maturity]] work and the [[2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life|"trust gap"]] anchor describe, here viewed from the *disclosure* angle. The actionable inversion: **capturing AI's gains depends less on raising adoption than on making disclosure safe and rewarding** (stop taxing efficiency gains; reward adopted-workflow "multipliers"; legitimize experimentation via "side quests"). Connects directly to the [[micro-productivity-trap]] (the individual-level efficiency-tax that motivates hiding).
+
 ## Debates and supersession
 
 - **High adoption vs. low maturity.** 78% adoption + 1% mature (per AI Index) and 28%+34% in Stages 1–2 + only 7% Stage 4 (per MIT CISR) describe an organization-wide scramble in early innings. Sources interpreting 78% as "AI is mainstream" are technically correct but misleading about depth. See [[ai-maturity-measurement-comparison]].
@@ -508,6 +512,7 @@ BCG's four **CEO starting points** are an executive-readership adoption playbook
 - [[responsible-ai]] — the risk-management discipline orgs are scrambling to build alongside adoption
 - [[foundation-models]] — what enterprise AI is increasingly built on top of
 - [[ai-benchmarks]] — context for the capability claims that drive procurement decisions
+- [[ai-knowledge-hiding]] — why high individual adoption need not produce collective gains: employees hide discovered workflows when organizational trust / psychological safety is low ([[2026-06-10-anicich-brouwers-why-employees-arent-transparent-ai-usage|Anicich & Brouwers 2026]])
 
 ## *"The year of increased accountability"* — the editorial framing for 2026 ([[2026-01-09-baron-signals-for-2026|Baron / O'Reilly]], January 2026)
 

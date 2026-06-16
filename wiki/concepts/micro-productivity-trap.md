@@ -3,9 +3,9 @@ type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
-last_confirmed: "2026-06-15"
-accessed_at: "2026-06-15"
-source_count: 32
+last_confirmed: "2026-06-16"
+accessed_at: "2026-06-16"
+source_count: 33
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -231,8 +231,13 @@ Both restate, from the CIO chair, the page's core: **task-level acceleration wit
 
 BCG states the trap's escape as an explicit CEO recommendation: **"Refocus automation on redesign, not just cost reduction. Agentic AI isn't a blunt instrument."** The mechanism BCG names is the *measurement* failure at the heart of the trap: cost actions (headcount freezes/cuts) are "visible and straightforward, with explicit OpEx impact," but **"when AI drives productivity rather than cuts, ROI becomes harder to define and defend"** — so leaders default to the legible cost lever and miss the larger redesign value. The prescription: **new domain-specific KPIs that link productivity to outcomes** (revenue per FTE, more product shipped, stronger customer impact), and *task turnover within a role* as a measure of how fast roles evolve toward higher-value work. BCG pairs this with the blunt warning that anchors the trap on the labor side: *"Those who cut their workforce beyond AI's ability to replace it will see productivity drop, institutional knowledge disappear, and critical talent walk away."* This is the consulting-firm CEO-directive form of the page's *reimagine-don't-optimize* thesis — and a sharper account of *why* firms fall in: the cost lever is measurable, the redesign upside isn't (yet).
 
+## The individual-level efficiency-tax — why employees hide their gains ([[2026-06-10-anicich-brouwers-why-employees-arent-transparent-ai-usage|Anicich & Brouwers / HBR June 2026]])
+
+The trap has a micro-foundation at the level of the individual worker. When efficiency gains are treated as **spare capacity to be filled** rather than a dividend to be reinvested — *"if I automate A and B, they're not just gonna let me focus on C; they're gonna make me do D, E, F"* — employees rationally **stop disclosing** their best AI workflows ([[ai-knowledge-hiding]]). The firm-level symptom (task gains that never reach the P&L) is partly *produced* by this hiding: privately-held workflows can't aggregate into shared capability. Anicich & Brouwers' prescription — **"stop taxing efficiency gains"** with an explicit norm for how saved time is reinvested (deeper analysis, higher-value work, development, recovery) — is the labor-side complement to BCG's *redesign-not-cost* directive and the page's *reimagine-don't-optimize* thesis: the trap closes not only by redesigning workflows but by changing the implicit deal so that surfacing a productivity gain doesn't simply earn the worker more work.
+
 ## Related concepts
 
+- [[ai-knowledge-hiding]] — the individual-level response to the efficiency-tax: workers conceal workflows when disclosure earns more work or threatens their standing, so task gains never aggregate to firm value.
 - [[automation-vs-augmentation]] — *process lock-in* maps to automation-without-redesign; *reinvent the business* to outcome-oriented augmentation.
 - [[enterprise-ai-adoption]] — broader concept; this is one diagnostic lens within it.
 - [[dynamic-capabilities]] — escape from the trap requires the digital sensing/seizing/transforming microfoundations.
