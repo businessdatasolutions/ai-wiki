@@ -3,9 +3,9 @@ type: concept
 aliases: ["dynamic capabilities", "dynamic-capabilities", "Teece dynamic capabilities", "sense seize transform"]
 tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, microfoundations]
 confidence: 0.95
-last_confirmed: "2026-05-26"
-accessed_at: "2026-06-05"
-source_count: 9
+last_confirmed: "2026-06-19"
+accessed_at: "2026-06-19"
+source_count: 10
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -119,6 +119,19 @@ The convergence with the AI-era anchors is more informative than any single case
 - **The McKinsey-named** *"case study in the art of corporate transformation"* validator anchors the case at consulting-firm altitude without being a McKinsey publication itself — third-party validation of the underlying transformation mechanics.
 
 The implication for the dynamic-capabilities concept: the AI-era literature (Warner & Wäger 2019, the W&W-process-model operationalisations above) is best read as *digital-flavoured variations on transformation primitives* that the non-AI literature has been articulating for decades. The non-AI control case is a useful corrective against over-attributing the mechanics to AI-specific causes.
+
+### The richest operator-altitude case — *DBS Bank's decade-long innovation system* ([[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Dumra / DBS 2026]])
+
+[[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Bidyut Dumra's MIT SMR *Leaders at All Levels* interview]] supplies the wiki's **most complete single-source operationalisation** of the Teece sense → seize → transform arc — all three clusters narrated first-person by the executive (Group Head of Innovation and Future of Work) who owns the system, at 39,000-employee banking-incumbent scale across a decade (2009 → 2026). Where [[2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells|Price/DFI]] anchors specific microfoundations and [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen/AWS]] traces the arc at vendor-advisory altitude, DBS supplies the *lived end-to-end* case:
+
+| Teece cluster | DBS operationalisation |
+|---|---|
+| **Sensing** | The 2014 environmental scan (fintech flurry + Google Play / Apple Pay) → the **GANDALF re-framing** (competition is big tech, not banks; *"be the D in GANDALF"*). Competitor re-framing *as* a sensing act, anchoring the *"best bank in the world by 2020"* yardstick. |
+| **Seizing** | The **Innovation Pyramid** (big bets / Horizon 3 / journeys / entrepreneurs) as portfolio-balancing; the **QPR + slush fund** as strategic-agility rituals (mid-cycle reprioritisation, *"the funding follows suit"*); 48-hour build sprints + agent-building as rapid-prototyping. |
+| **Transforming** | **Managing Through Journeys** — reorienting the operating model horizontally around *customer intent* (*"a customer is beyond a process — it's an intent"*), mini-CEO leadership, changed incentive/review structures; the **20%-of-scorecard transformation KPI** + central-transformation-team playbook as improving-digital-maturity. |
+| **Strategic renewal** | The *"AI-enabled bank with a heart"* value-proposition renewal + *innovation-is-not-a-choice* culture (*"don't tone it down, turn it up"*). |
+
+Two reusable primitives the DBS case sharpens: (a) **innovation-as-KPI** — *"all parts of the organization have a KPI"* — the mechanism that converts a transformation aspiration into a measured org-wide obligation, structurally identical to [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook|Erginbilgiç's]] performance-culture pillar but in a digital/AI-flavoured incumbent; (b) **governance flex for genuine novelty** — Horizon-3 bets launch *without* a business case (written retrospectively a year later) because *"if I can write a business case and I know exactly what's going to happen, I'm not really pushing the needle"* — a concrete operationalisation of the *balancing-internal-and-external-options* microfoundation under uncertainty. The DBS case completes the wiki's operator/vendor/CEO-non-AI triangulation of the concept with a fourth corner: **operator-altitude, AI-flavoured, decade-long, banking incumbent.**
 
 ## Debates and supersession
 

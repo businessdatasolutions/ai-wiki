@@ -3,9 +3,9 @@ type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
-last_confirmed: "2026-06-16"
-accessed_at: "2026-06-16"
-source_count: 33
+last_confirmed: "2026-06-19"
+accessed_at: "2026-06-19"
+source_count: 34
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -230,6 +230,14 @@ Both restate, from the CIO chair, the page's core: **task-level acceleration wit
 ## *Refocus automation on redesign, not cost reduction* — the BCG CEO directive ([[2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces|BCG / Emerson, Kropp et al. 2026]])
 
 BCG states the trap's escape as an explicit CEO recommendation: **"Refocus automation on redesign, not just cost reduction. Agentic AI isn't a blunt instrument."** The mechanism BCG names is the *measurement* failure at the heart of the trap: cost actions (headcount freezes/cuts) are "visible and straightforward, with explicit OpEx impact," but **"when AI drives productivity rather than cuts, ROI becomes harder to define and defend"** — so leaders default to the legible cost lever and miss the larger redesign value. The prescription: **new domain-specific KPIs that link productivity to outcomes** (revenue per FTE, more product shipped, stronger customer impact), and *task turnover within a role* as a measure of how fast roles evolve toward higher-value work. BCG pairs this with the blunt warning that anchors the trap on the labor side: *"Those who cut their workforce beyond AI's ability to replace it will see productivity drop, institutional knowledge disappear, and critical talent walk away."* This is the consulting-firm CEO-directive form of the page's *reimagine-don't-optimize* thesis — and a sharper account of *why* firms fall in: the cost lever is measurable, the redesign upside isn't (yet).
+
+## *Innovation as a measured obligation* — the DBS operator-altitude escape ([[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Dumra / DBS June 2026]])
+
+[[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Bidyut Dumra's DBS interview]] supplies a **target-firm operator-altitude** worked example of the trap's escape, alongside [[2025-05-06-jassy-amazon-agility-ai-strategy-changing-role-of-managers|Jassy/Amazon]] — a leader actively running the escape prescription at 39,000-employee scale rather than describing it from an observer vantage. The DBS mechanism reads as a triple of trap-escape moves the page has named separately:
+
+- **Workflow-not-task redesign** (Bain/Dutt-Chatterji's core): *Managing Through Journeys* rebuilds the operating model horizontally around customer *intent*, not around bolting AI onto existing functional steps — *"a customer is beyond a process, it's an intent."* Dumra's own framing of the AI version is the banking instance MGI uses: *"the difference between offering employees a chatbot for ad hoc use and deploying custom agents alongside people in a reimagined process."*
+- **Radical targets that force redesign** ([[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti's]] *3×-not-20%*): DBS lets **Horizon-3 bets launch without a business case** (written retrospectively a year later) precisely because *"if I can write a business case and I know exactly what's going to happen, I'm not really pushing the needle"* — a structural refusal to let optimisation-grade targets substitute for transformation-grade ones.
+- **Innovation as a metric, not a delegated project** (the BCG *new-KPIs-that-link-productivity-to-outcomes* directive + Jassy's structural changes): **20% of every scorecard down to each team member** is "transformation." The trap's root cause as the page names it — *"lagging firms recognise AI as important but delegate it to technology groups without specific goals or metrics"* — is exactly what the DBS scorecard rule is engineered to prevent. Dumra's *information-gap → action-gap* thesis (*"the information gap is gone; now you're just left with the action gap"*) is the trap restated as a *doing* problem, with the KPI cascade as the forcing function for doing.
 
 ## The individual-level efficiency-tax — why employees hide their gains ([[2026-06-10-anicich-brouwers-why-employees-arent-transparent-ai-usage|Anicich & Brouwers / HBR June 2026]])
 

@@ -2,10 +2,10 @@
 type: concept
 aliases: ["LLM Wiki", "LLM-Wiki", "llm wiki", "Karpathy's LLM Wiki", "LLM-maintained wiki", "compounding wiki"]
 tags: [llm-wiki, knowledge-compilation, three-layer-architecture, ingest-query-lint, agent-memory, claude-md, knowledge-compounding, agentic-knowledge-base]
-confidence: 0.91
-last_confirmed: "2026-05-17"
-accessed_at: "2026-06-05"
-source_count: 7
+confidence: 0.93
+last_confirmed: "2026-06-18"
+accessed_at: "2026-06-18"
+source_count: 8
 relationships:
   - type: part-of
     target: agent-harness
@@ -31,6 +31,7 @@ The wiki holds five sources engaging this concept substantively, from five disti
 - **The vendor implementation (server-side / durable end of the spectrum)**: [[2026-04-09-oceanbase-ex-brain-knowledge-base-that-thinks|OceanBase / ex-brain 2026]] — first-vendor implementation worked example using seekdb (AI-native database); demonstrates compiled-truth + timeline-extraction + entity-linking + hybrid-search; MCP-server-as-LLM-Wiki-interface for Claude Code integration.
 - **The single-author extension (browser-only / session-scoped end of the spectrum)**: [[2026-04-18-mysore-medium-wikizz-extending-karpathy-llm-wiki|Mysore 2026 (Medium)]] — proposes a **5W1H Wiki Frame** (Who / What / When / Where / Why / How) the LLM auto-populates from each document before any query, plus three UI patterns: *Autonomous Scaffolding* (LLM-as-Architect not user-as-Clerk), *Contrast Engine* (side-by-side Plain-vs-WikiZZ output), *LLM Jury* (evaluator LLM judges the delta). Live demo at [vishalmysore.github.io/lllmwikiZZ](https://vishalmysore.github.io/lllmwikiZZ/); zero-server / static-first / `FileReader` parsing / Cloudflare Worker CORS proxy to NVIDIA NIM + Anthropic + Gemini providers. **Source-quality flags**: single-author experiment (anecdotal per [§Lifecycle](#lifecycle)); engagement = 1 clap at fetch time; "persistent" is session-scoped not durable. Coins **"Context Debt"** and **"transient RAG"** as vocabulary candidates — both deferred to second-source mention.
 - **The knowledge-graph augmentation (KG-as-attention-direction)**: [[2026-04-11-nodus-labs-fix-karpathys-llm-wiki-knowledge-graph-infranodus|Nodus Labs 2026 (YouTube tutorial, 11 April 2026)]] — *published 7 days after Karpathy's gist*, the wiki's **earliest third-party "fix" / extension proposal**. Diagnosis: *"The LLM Wiki has structure, but is not aware of itself"* — flat-prompt queries still produce generic outputs because the LLM extracts concepts then completes with most-probable continuation. Fix: layer an **InfraNodus** knowledge graph on top of the wiki's `concepts/` folder, with three integration depths (external tool / MCP-server-callable from Claude / KG-integrated into wiki workflow with `infranodus/` folder of per-session ontology graphs as **"living memory"**). The novel mechanism — **gap-analysis as attention-direction**: identify cluster pairs with low betweenness, paste the gap-prompt back to Claude with the underlying source extracts, ask for cluster-bridging insights. *"I point the LLM's attention to the gap that exists. I provide the underlying structure."* **First wiki source on KG-as-attention-direction primitive** (distinct from KG-as-retrieval-substrate — see [[2026-04-27-surrealdb-knowledge-graphs-for-ai-agents-practical-guide|SurrealDB]]). Ships a **Claude skill** (`infranodus/skills/skill-llm-wiki`) as a packaged operational form. Vendor-sponsored (cap 0.75 confidence per Lifecycle rule).
+- **The interoperability standardization (vendor-built format-as-standard)**: [[2026-06-12-mcveety-hormati-google-cloud-open-knowledge-format|McVeety & Hormati / Google Cloud 2026]] — the **first major-vendor formalization of the pattern into an open spec**, the **Open Knowledge Format (OKF) v0.1**. Where the prior sources explain, implement, or extend the pattern, OKF asks the interoperability question none of them did: *how does a wiki written by one producer get consumed by a different agent without translation?* The answer is a *format, not a service* — a directory of markdown concept-files + YAML frontmatter whose **only required field is `type`**, with optional `index.md` (progressive disclosure) and `log.md` (history) by those exact names, and markdown cross-links forming the relationship graph. OKF explicitly cites Karpathy's gist and names the *"AGENTS.md / CLAUDE.md family"* and *"repos full of index.md and log.md artifacts"* as the pattern's prior instances. **Most self-referential source in the wiki** — this repository already uses every OKF convention (see §OKF below). Major-cloud-vendor primary announcement; not vendor-sponsored research, so the cap-0.75 rule doesn't apply, but adoption-beyond-Google is unproven.
 
 The six sources now span **the full architectural spectrum** of LLM-Wiki implementations: from **privacy-maximalist / browser-only / session-scoped** (Mysore's WikiZZ) through **KG-attention-augmented** (Nodus Labs InfraNodus) and **MCP-server-with-seekdb** (OceanBase ex-brain) to **durability-maximalist / Postgres-pgvector / 21-cron-jobs / 17,888-page** (Liu's GBrain, which Liu positions as a distinct architecture but which shares the LLM-compiles-knowledge premise with the LLM-Wiki pattern).
 
@@ -173,6 +174,22 @@ This is **meta-relevant to this repository**: this very wiki operates inside Cla
 
 GBrain is **the operational/action layer**; LLM Wiki is **the synthesis/expertise layer**. Different jobs; complementary.
 
+## OKF — the pattern becomes an open standard
+
+[[2026-06-12-mcveety-hormati-google-cloud-open-knowledge-format|McVeety & Hormati / Google Cloud 2026]] introduce the **Open Knowledge Format (OKF) v0.1**, the first attempt to turn the LLM Wiki pattern from a *practice* into an *interoperability standard*. The shift it adds to this concept is the **producer/consumer-independence** axis that none of the prior seven sources addressed: a bundle hand-authored by a human, generated by a metadata pipeline, or synthesized by one LLM should be consumable by any agent, visualizer, or other LLM *"without an integration."* *"The format is the contract; the tooling at each end is independently swappable."*
+
+OKF's spec is deliberately thin — the **three-layer architecture restated as a format**:
+
+| LLM Wiki layer (this concept) | OKF v0.1 equivalent |
+|---|---|
+| Raw sources (immutable) | the producer's source system (DB, docs, drive) — *outside* the bundle |
+| The wiki (LLM-owned markdown) | the **OKF bundle**: a directory of concept files, one concept per file, file-path-as-identity, markdown cross-links as the graph, optional `index.md` + `log.md` |
+| The schema (CLAUDE.md / AGENTS.md) | the **spec itself** — but minimally opinionated: *the only required field is `type`*; everything else is producer-defined |
+
+The three principles — **minimally opinionated**, **producer/consumer independence**, **format-not-platform** — are OKF's whole content model. Google ships reference implementations (a BigQuery enrichment agent, a static-HTML graph visualizer, three sample bundles) and updated its **Knowledge Catalog** to ingest OKF, but stresses *"the format itself is the contribution."*
+
+**Meta-relevance to this repository (load-bearing).** This wiki is an OKF-shaped bundle avant la lettre: every page carries a `type:` field (OKF's single requirement); the catalogue + history files are named `index.md` and `log.md` (OKF's two optional files, exact names); concepts are one-file-each with markdown cross-links forming the graph; `tags` / `title` / `description` map onto OKF's reserved set. This repo's *additions* over OKF — typed `relationships:`, lifecycle fields (`confidence`, `last_confirmed`, `accessed_at`), `quality_score` — are exactly the kind of **producer-specific extension** OKF's minimally-opinionated stance is designed to permit. Whether they stay inside OKF's interoperability surface or exceed it is an open question against the actual spec.
+
 ## Open questions
 
 - **The Karpathy gist itself** — referenced in three sources but not directly ingested. Primary-source target: the GitHub gist URL.
@@ -180,7 +197,8 @@ GBrain is **the operational/action layer**; LLM Wiki is **the synthesis/expertis
 - **The 2024 RAG-failure-points paper** — Liu cites *"seven distinct failure points"*. Primary-source target.
 - **Karpathy's own answer to scale and hallucination concerns** — Karpathy's gist is *"an idea file,"* not a production spec. A primary-source ingest of the gist + community-extension Q&A would substantiate.
 - **LLM Wiki v2 community extensions adding retrieval layers** — Liu names this as the convergence direction. Primary-source target.
-- **Enterprise LLM Wiki implementations** — Liu notes *"the implementation at enterprise scale is a semantic graph with RBAC, ACID transactions, and an LLM agent maintaining it. Different infrastructure. Same principle."* No enterprise-scale implementation source ingested yet.
+- **Enterprise LLM Wiki implementations** — Liu notes *"the implementation at enterprise scale is a semantic graph with RBAC, ACID transactions, and an LLM agent maintaining it. Different infrastructure. Same principle."* **Partially addressed** by [[2026-06-12-mcveety-hormati-google-cloud-open-knowledge-format|OKF / Google Cloud 2026]] — but from the *format/interoperability* angle rather than the *runtime* angle (OKF specifies how bundles interoperate, not RBAC/ACID/concurrency). A source on an enterprise-scale OKF *deployment* (governance, access control, concurrent editing across teams) remains the open target.
+- **OKF adoption and conformance** — does OKF earn cross-vendor adoption (its own bar for *"earning its name"*)? And how does this repo's CLAUDE.md schema (typed relationships, lifecycle fields, quality scores) sit against OKF's one-page conformance surface? Primary-source target: the OKF v0.1 spec on GitHub.
 
 ## Debates and supersession
 

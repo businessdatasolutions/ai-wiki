@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-06-15"
-accessed_at: "2026-06-15"
-source_count: 46
+last_confirmed: "2026-06-17"
+accessed_at: "2026-06-17"
+source_count: 47
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -365,6 +365,14 @@ BCG's microeconomic role-model (Revelio 1,500-role taxonomy + O*NET) gives the w
 
 - **Four transformation side-effects** that "headline job numbers can mask": (1) upskilling/redeployment *speed* is the binding constraint; (2) entry-level hiring shrinks then is redefined toward supervising-AI work, with **AI fluency becoming a complement to tenure** (sometimes advantaging AI-fluent juniors); (3) **skill thresholds rise** (durable roles need higher credentials/seniority → barriers to entry — see [[durable-skills]]); (4) cognitive load intensifies. These sharpen the wiki's entry-level-decline thread (Brynjolfsson, Massenkoff-McCrory) with a *mechanism*: the rungs aren't just fewer, they move up.
 - **The CEO warning** worth keeping verbatim: *"Those who cut their workforce beyond AI's ability to replace it will see productivity drop, institutional knowledge disappear, and critical talent walk away."* — the labor-side statement of the [[micro-productivity-trap]].
+
+## Occupation boundaries blur, domain expertise persists: the agentic-coding read ([[2026-06-16-anthropic-economic-index-agentic-coding-returns-to-expertise|Hitzig, Massenkoff, Lyubich, Heller & McCrory / Anthropic, June 2026]])
+
+The AEI's agentic-coding report gives the wiki a **usage-side**, session-level read on the same occupation-blurring the [[2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai|observed-exposure report]] (same authors) measured at the occupation level — and adds a sharp claim about *which* human input keeps its value.
+
+- **Coding-occupation boundaries are dissolving in practice.** Across ~400,000 Claude Code sessions, in code-producing work **every one of the ten largest occupations reaches verified success within ~7 points of software engineers** (≈34% vs 29% for non-software professions; the gap has neither widened nor narrowed over seven months). "Coding agents are making a coding background less relevant to successful programming" — a direct, usage-grounded counterpart to the exposure report's finding that the most-exposed occupations are no longer the low-skill ones.
+- **Returns to *domain* expertise persist and may sharpen.** Success rises with task-specific expertise (verified success 15% novice → 28–33% intermediate+), and experts extract far more from each instruction (~12 actions / 3,200 words per prompt vs ~5 / 600 for novices). The labor signal: agentic tools **absorb implementation-heavy work while rewarding command of the problem domain** — a complement to [[durable-skills]] and a tension with pure [[ai-deskilling]] (handled on those pages).
+- **A leading indicator to watch.** Anthropic flags that *if returns to expertise begin to fall*, it would signal models supplying the judgment users currently bring (gains broadening beyond domain experts); and *if non-software occupations' success keeps rising*, software production may be becoming ordinary work in every field. Both would reshape who benefits from agentic work — the kind of compositional shift this page tracks.
 
 ## Debates and supersession
 

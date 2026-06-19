@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-06-16"
-accessed_at: "2026-06-16"
-source_count: 72
+last_confirmed: "2026-06-19"
+accessed_at: "2026-06-19"
+source_count: 73
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -137,6 +137,7 @@ Driving the change requires a **united front among the CEO, CIO, chief strategy 
 - **Guardian Life Insurance** (regulated US insurance, [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan]]): Automated RFP and quoting process — turnaround **1 week → 24 hours**. Embedded compliance/legal in architecture review boards. Reskilling into AI-focused roles.
 - **Italgas** (Europe's largest natural gas distributor, [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan]]): "Digital Factory" innovation hub since 2017; **300TB data platform, 23 AI models**; WorkOnSite (+40% construction speed, -80% inspections); DANA (GenAI network control); 30,000 hours of AI training in 2024; **commercialized WorkOnSite for €3M revenue in 2024**.
 - **Ford** (manufacturing, [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]): AI-augmented vision systems for assembly inspection — defects on "squish tube" rubber seals dropped from **63 per month to zero**. Computational fluid dynamic test for vehicle airflow: **15 hours → 10 seconds** with AI prediction.
+- **[[DBS Bank]]** (banking, [[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Dumra / MIT SMR 2026]]): a Stage-4-style **embedded-innovation incumbent** that makes AI/innovation adoption a *measured org-wide obligation* rather than a delegated technology project. Mechanism: **20% of every scorecard** — down to each team member — is "transformation," so capability-building cascades top-down (the *Playbook Model*: central transformation team holds the ready playbook + 4D training) while delivery bubbles up bottom-up (*"you end up with 250 journeys or 10,000 agents"*). The same engine that scaled customer-journey redesign was re-pointed at agentic AI — every managing director built an agent at the March 2026 leadership conference. Dumra's adoption-gap framing sharpens the whole concept page: *"It used to be you needed an information gap before you had the action gap. The information gap is gone. Now you're just left with the action gap"* — i.e. the binding constraint on 2026 enterprise AI adoption is *doing*, not *knowing*. Per the [[2026-04-28-mit-sloan-ai-maturity|MIT CISR]] ladder DBS reads as **Stage 4** (AI embedded in decision-making + selling AI-augmented services + combining traditional/generative/agentic AI).
 
 ## The Anand-Wu 2×2 task framework
 

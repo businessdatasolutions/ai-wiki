@@ -3,17 +3,16 @@ type: concept
 aliases: ["Warner-Wäger process model", "Warner & Wager process model", "W&W process model", "digital-transformation process model"]
 tags: [dynamic-capabilities, digital-transformation, microfoundations, warner-wager, wiki-vocabulary]
 confidence: 0.82
-last_confirmed: "2026-05-29"
-accessed_at: "2026-05-29"
-source_count: 3
+last_confirmed: "2026-06-19"
+accessed_at: "2026-06-19"
+source_count: 4
 relationships:
   - type: instance-of
     target: dynamic-capabilities
     via: "the process-model elaboration of Teece's three-cluster framework, specialised for digital transformation"
   - type: authored-by
     target: 2026-04-28-warner-wager-dynamic-capabilities-digital-transformation
-quality_score: 0.96
-quality_notes: ['citation density 2.7/1000 words (5 source links in 1856 words; target ≥3.0)']
+quality_score: 1
 ---
 
 # Warner & Wäger Process Model
@@ -148,6 +147,10 @@ The Rolls-Royce 2023–2026 turnaround maps gracefully onto three cells from the
 The cells **the source does not touch** are equally informative for the scope question: Erginbilgiç's transformation does not exercise `digital-sensing/*` (no scanning for digital trends/competitors), `digital-transforming/improving-digital-maturity` (no digital-natives hiring or digital-workforce-maturity work), or `strategic-renewal/business-model` (no transactional → relational value-capture shift — Rolls-Royce has long had Power-by-the-Hour-style relational contracts pre-Erginbilgiç). The non-digital case **silently selects** the cells whose vocabulary is in fact transformation-primitive, leaving the genuinely digital-specific cells untouched.
 
 The implication: the W&W process model is **dual-use** — its full nine-microfoundation specialisation is most useful in digital-transformation cases, but a defensible subset (`strategic-agility`, `organizational-culture`, the contextual ring, and arguably `redesigning-internal-structures`) constitutes a *transformation primitives* layer that applies whenever organisational renewal happens, AI-era or not. The wiki uses this property as a feature: the W&W tagging vocabulary is the *thematic adjacency index* for the whole corpus, not just the AI-era subset.
+
+## The fullest single-source operationalisation — *DBS Bank* ([[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Dumra 2026]])
+
+Where the Rolls-Royce case (above) tests the *non-digital reach* of the vocabulary and exercises only three cells, [[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Dumra's DBS interview]] exercises **eleven cells across all five buckets** — the most complete single-source instantiation of the process model in the corpus. It is a useful **vocabulary-stress-test in the opposite direction**: a digital-transformation incumbent that genuinely touches almost every cell, with a clean body twin for each (GANDALF re-framing → `digital-scouting`; *"best bank in the world"* vision + the outsider-for-unreasonableness hire → `digital-mindset-crafting`; Innovation Pyramid → `balancing-digital-portfolios`; QPR + slush fund → `strategic-agility`; Managing Through Journeys → `redesigning-internal-structures`; 20%-scorecard + playbook engine → `improving-digital-maturity`; *customer-is-an-intent* + *AI-bank-with-a-heart* → `business-model`; *innovation-is-not-a-choice* → `organizational-culture`). The DBS case shows the digital-specific cells (`digital-scouting`, `digital-mindset-crafting`, `improving-digital-maturity`) lighting up that the non-digital Rolls-Royce case left untouched — empirical support for the wiki's working hypothesis that the *digital-* prefix marks cells whose content is genuinely digital-flavoured, not merely bucket labels.
 
 ## Debates and supersession
 

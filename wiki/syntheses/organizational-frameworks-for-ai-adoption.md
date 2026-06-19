@@ -5,11 +5,11 @@ tags: [enterprise-ai-adoption, organizational-frameworks, synthesis, cross-sourc
 derived_from: [organizational-frameworks-for-ai-adoption]
 opened: 2026-04-28
 closed: 2026-05-05
-last_refreshed: "2026-06-06"
+last_refreshed: "2026-06-19"
 confidence: 0.90
-last_confirmed: "2026-06-06"
-accessed_at: "2026-06-06"
-source_count: 13
+last_confirmed: "2026-06-19"
+accessed_at: "2026-06-19"
+source_count: 14
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -33,6 +33,8 @@ Closes [[threads/organizational-frameworks-for-ai-adoption|organizational-framew
 - **Runtime-engineering lens** ([[2026-05-07-kokane-agent-harness-vs-systems-design|Kokane 2026]] + [[2026-05-07-chatterjee-anatomy-of-agent-harness|Chatterjee 2026]]) — [[agent-harness|agent harness]] anatomy (Context / Constraints / Contracts / Compounding); the engineering-stack counterpart to the organizational-learning flywheel.
 
 The 6→10 expansion does **not** change the synthesis's core thesis (*frameworks operate on different layers; pick by the executive's question, not the framework's brand*). It strengthens the empirical foundation, sharpens several disagreements, and surfaces a new structural finding: **the "compounding cycle" is now visible as the same operational mechanism at two different stack layers** (organizational learning per Kiron-Schrage, runtime engineering per Chatterjee), each independently reached by different practitioner communities.
+
+**Refreshed 2026-06-19**: no new *framework* lands, but the cluster gains its **first lived multi-framework operator case** — [[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Dumra / DBS Bank 2026]]. DBS is not an eleventh-plus lens; it is a single 39,000-employee incumbent **running several of the cluster's layers at once over a decade** — MIT CISR Stage-4-style embedded AI, McKinsey-Rewired-style business-led + KPI-cascaded operating-model change, the Bain/OpenAI trap-escape (workflow-not-task redesign), and Beutler-style *business-owns-the-outcomes* governance. It is therefore the closest thing the wiki has to a partial answer to **open question #4** (*"do the frameworks converge when applied to a specific firm?"*): DBS's mechanisms map cleanly onto multiple frameworks without contradiction, weak evidence *for* the complementary-not-competing thesis. See the open-questions section.
 
 **Refreshed 2026-06-06**: an **11th framework** lands — the **deployment-maturity ladder** from [[2026-06-02-architecting-ai-native-organizations-redesign-work-at-scale-joe-beutler|Beutler / OpenAI 2026]] (the wiki's first first-party OpenAI source): **Ask → Assist → Automate** (read-only → human-in-the-loop → full autonomy, exceptions routed to humans). It occupies a layer none of the prior ten named cleanly: *given that you are deploying AI on a workflow, how much agency do you grant it, and in what sequence?* — distinct from Anand-Wu's *task-deployment* layer (should you deploy on this task at all) and from Allen/AWS's *economic-decision* USE/COMPOSE/BUILD (build vs rent the model). Beutler pairs it with two org-design rules that reinforce existing cluster findings rather than adding a layer: *separate governance from transformation, business owns the outcomes* (sharpening McKinsey Rewired's operating-model capability) and *embed engineering inside the business function* (the cross-customer-deployment twin of [[2026-05-08-running-an-ai-native-engineering-org|Fung's]] inside-Anthropic team-shape rewrite). The 10→11 expansion again leaves the core thesis intact and adds a *deployment-maturity* rung beneath the task-deployment layer.
 
@@ -162,6 +164,10 @@ Of the ten frameworks:
 
 - [[2026-06-02-architecting-ai-native-organizations-redesign-work-at-scale-joe-beutler]] — Joe Beutler (Head of Solutions Engineering, Strategics, [[OpenAI]]), at IT Revolution's Enterprise AI Summit (talk published 2 June 2026). **Deployment-maturity lens** (the wiki's first first-party OpenAI source): Ask → Assist → Automate ladder; *separate governance from transformation, business owns the outcomes*; *embed engineering inside the business function*. Vendor-of-deployment cross-customer vantage; anecdotal anchors (T-Mobile $3B / 60%-automated call center; PwC 20%-finance-team benchmark).
 
+**Added in 2026-06-19 refresh:**
+
+- [[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator]] — [[Bidyut Dumra]] (Group Head of Innovation and Future of Work, [[DBS Bank]]) on MIT SMR's *Leaders at All Levels* (Ep. 9). **Lived multi-framework operator case** — not a new lens, but a single banking incumbent running several cluster layers at once: GANDALF sensing, the Innovation Pyramid + QPR (seizing), Managing Through Journeys (transforming), and a 20%-of-scorecard innovation KPI that operationalises the trap-escape. The cluster's first decade-long operator-altitude instantiation; a partial worked-example answer to open question #4.
+
 ## Lessons
 
 - **Pick a framework by the executive's question, not the framework's brand.** Each framework names a different layer; mismatched layers explain most "why didn't this work" stories. The decision tree above (now 10 questions plus 1 cross-cutting) is the operational artifact.
@@ -185,7 +191,7 @@ Of the ten frameworks:
 - **Cross-walk between MIT CISR Stages and Ransbotham/Kiron Augmented Learners 2×2.** The hypothesis (above, in the new disagreements section) is that **organizational learning capability is the upstream variable for the Stage 2 → 3 transition.** A worked-example test on a panel of firms tracked through both instruments would settle this.
 - **How does the firm-boundary decision (Nishar-Nohria) interact with maturity stage (MIT CISR)?** Is "Buy Outcomes" only viable from Stage 3+, or can a Stage 1–2 firm leapfrog by outsourcing the function entirely? This is the wiki's strongest *practitioner-relevant* unresolved question.
 - **Quantitative measurement of the compounding cycle.** Kiron-Schrage describe it qualitatively; Chatterjee's Compounding layer describes it qualitatively. Nobody has measured *the slope* of compounding — how much contract-score uplift per unit of telemetry-driven harness adjustment, or how much Augmented-Learner advantage growth per quarter. Without measurement, the "compounding cycle" is a plausible-sounding reframing rather than a quantified claim.
-- **Whether the 10 frameworks converge on the same recommendation when applied to a specific firm.** The decision-tree above is still a hypothesis. A worked example — pick a real firm, run all 10 frameworks against it, compare the prescriptions — would test the "complementary not competing" claim. With 10 frameworks now, this is a substantial undertaking, but the test would be definitive.
+- **Whether the 10 frameworks converge on the same recommendation when applied to a specific firm.** The decision-tree above is still a hypothesis. A worked example — pick a real firm, run all 10 frameworks against it, compare the prescriptions — would test the "complementary not competing" claim. With 10 frameworks now, this is a substantial undertaking, but the test would be definitive. **Partial evidence now exists**: [[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|DBS Bank]] is a single incumbent whose mechanisms map onto MIT CISR (Stage-4 embedded AI), McKinsey *Rewired* (business-led + KPI cascade), Bain/OpenAI (workflow-not-task trap escape), and Beutler (business-owns-outcomes governance) *without contradiction* — weak confirmation of the complementary-not-competing thesis. It is one firm narrated by one executive, not an independent multi-framework audit, so it falls short of the definitive test; but it is the first lived case where the layers visibly coexist.
 - **Cross-walk with academic strategy theory.** Carucci's resistance-as-data lens has obvious resonance with change-management academic literature (Kotter, Lewin); none of the wiki's existing concept pages directly bridge to it. A follow-up synthesis could integrate the cluster with [[dynamic-capabilities]] (Teece), [[systems-thinking]], [[strategic-foresight]], and change-management theory.
 - **The Kokane-Chatterjee tension (rebranded systems engineering vs. moat) in actual hiring data.** Kokane prescribes hiring systems engineers; Chatterjee prescribes hiring SRE-like AI specialists. Both are plausible; nobody has compared the build-quality outcomes of teams hired on each model. A 2026–27 source measuring this would settle the most concrete operational disagreement in the cluster.
 

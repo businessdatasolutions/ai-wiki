@@ -6,9 +6,9 @@ tags: [anthropic-economic-index, ai-research, anthropic, claude, ai-adoption]
 parent: "[[Anthropic]]"
 since: 2025
 confidence: 0.85
-last_confirmed: "2026-06-15"
-accessed_at: "2026-06-15"
-source_count: 4
+last_confirmed: "2026-06-17"
+accessed_at: "2026-06-17"
+source_count: 5
 relationships:
   - type: part-of
     target: Anthropic
@@ -17,7 +17,7 @@ relationships:
 
 # Anthropic Economic Index
 
-A research initiative by [[Anthropic]] that measures real-world AI use through privacy-preserving analysis of [[Claude]] conversations on Claude.ai (consumer) and the 1P API (enterprise). Recurring report cadence — five reports through March 2026.
+A research initiative by [[Anthropic]] that measures real-world AI use through privacy-preserving analysis of [[Claude]] conversations on Claude.ai (consumer) and the 1P API (enterprise), and — increasingly — [[agentic-engineering|Claude Code]] agent sessions. Recurring report cadence — through June 2026 the wiki holds the 4th and 5th editions, the March labor-impacts note, and the June agentic-coding report.
 
 Stated mission (per Anthropic): provide ongoing, empirical measurement of how AI is changing tasks, occupations, and the labor market.
 
@@ -42,6 +42,7 @@ Stated mission (per Anthropic): provide ongoing, empirical measurement of how AI
 | **Fourth** | November 2025 | [[2026-04-28-anthropic-economic-index-q4-2025\|Ingested]] — introduces "economic primitives" framework |
 | **Fifth — *Learning curves*** | February 5–12, 2026 | [[2026-05-07-anthropic-economic-index-5-learning-curves\|Ingested]] — model selection matches task value; high-tenure users have ~3-4 pp higher success after controls; **skill-biased technological change** framing |
 | **Labor-market impacts** (Massenkoff & McCrory) | March 5, 2026 | [[2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai\|Ingested]] — the **analytic/labor-impact branch** of the AEI: introduces **observed exposure** (theoretical capability × usage, weighting automated/work-related uses), validates against BLS 2024–2034 projections, finds no systematic unemployment effect yet but a ~14% young-worker hiring slowdown into exposed occupations. The methodological primary behind the wiki's "observed exposure" claims. |
+| **Agentic coding and persistent returns to expertise** (Hitzig, Massenkoff, Lyubich, Heller & McCrory) | October 2025 – April 2026 (~400,000 Claude Code sessions) | [[2026-06-16-anthropic-economic-index-agentic-coding-returns-to-expertise\|Ingested]] — the **agentic-coding branch** of the AEI: the **planning/execution division of labor** (people make ~70% of planning decisions, Claude ~80% of execution), **persistent returns to *domain* expertise** (not coding skill; every major occupation succeeds within ~7 pts of software engineers), competence-captures-most-of-the-benefit, and the 7-month composition shift (fixing 33%→19%; writing/analysis ~doubled; task value +27%). |
 
 ## Economic primitives (introduced in fourth report)
 
