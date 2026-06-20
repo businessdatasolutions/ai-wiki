@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DuckDB Lake + Open Knowledge Format — Knowledge Graph for AI Agents</title>
+<style>
+  :root {
+    --bg: #0b1020;
+    --bg2: #0f1730;
+    --panel: #131c38;
+    --panel2: #182b4d;
+    --ink: #e8ecf8;
+    --muted: #9aa6c8;
+    --line: #2a3866;
+    --duck: #fbbf24;      /* DuckDB / data plane */
+    --duck-d: #b97e09;
+    --okf: #34d399;       /* OKF / knowledge plane */
+    --okf-d: #0f766e;
+    --agent: #818cf8;     /* agents */
+    --agent-d: #4338ca;
+    --source: #60a5fa;    /* sources */
+    --accent: #f472b6;
+    --radius: 14px;
+    --shadow: 0 8px 30px rgba(0,0,0,.45);
+    font-synthesis: none;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: radial-gradient(1200px 700px at 80% -10%, #16204a 0%, var(--bg) 55%) fixed;
+    color: var(--ink);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 28px 22px 80px; }
+
+  header.page { margin-bottom: 22px; }
+  .kicker {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 12px; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted); border: 1px solid var(--line); border-radius: 999px;
+    padding: 5px 12px; background: rgba(255,255,255,.02);
+  }
+  .kicker .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--okf); box-shadow: 0 0 12px var(--okf); }
+  h1 { font-size: clamp(26px, 3.4vw, 40px); margin: 14px 0 8px; line-height: 1.1; letter-spacing: -.02em; }
+  h1 .a { color: var(--duck); }
+  h1 .b { color: var(--okf); }
+  .sub { color: var(--muted); max-width: 860px; font-size: 16px; }
+
+  .tabs { display: flex; gap: 8px; margin: 22px 0 18px; flex-wrap: wrap; }
+  .tab {
+    appearance: none; cursor: pointer; border: 1px solid var(--line);
+    background: var(--panel); color: var(--muted); padding: 9px 16px; border-radius: 10px;
+    font-size: 14px; font-weight: 600; transition: .18s;
+  }
+  .tab:hover { color: var(--ink); border-color: #3a4c84; }
+  .tab[aria-selected="true"] { color: #0b1020; background: linear-gradient(180deg, #c7d2fe, #818cf8); border-color: transparent; }
+
+  .layout { display: grid; grid-template-columns: 1fr 360px; gap: 20px; align-items: start; }
+  @media (max-width: 980px) { .layout { grid-template-columns: 1fr; } }
+
+  .stage {
+    background: linear-gradient(180deg, rgba(255,255,255,.025), rgba(255,255,255,0));
+    border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 20px; box-shadow: var(--shadow); position: relative; overflow: hidden;
+  }
+  .stage::before {
+    content:""; position:absolute; inset:0;
+    background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 26px 26px; opacity: .06; pointer-events:none;
+  }
+
+  /* ---- architecture layers ---- */
+  .lane { position: relative; z-index: 1; margin: 0 0 16px; }
+  .lane:last-child { margin-bottom: 0; }
+  .lane-h { display:flex; align-items:center; gap:10px; margin: 0 0 10px; }
+  .lane-h .lab { font-size: 12px; letter-spacing:.1em; text-transform:uppercase; color: var(--muted); }
+  .lane-h .ln { flex:1; height:1px; background: var(--line); }
+
+  .row { display: grid; gap: 12px; }
+  .row.cols-1 { grid-template-columns: 1fr; }
+  .row.cols-2 { grid-template-columns: 1fr 1fr; }
+  .row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  @media (max-width: 620px){ .row.cols-3, .row.cols-4 { grid-template-columns: 1fr 1fr; } }
+
+  .node {
+    position: relative; cursor: pointer; text-align: left;
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 14px;
+    background: var(--panel); color: var(--ink); transition: transform .14s, border-color .14s, box-shadow .14s;
+    display: flex; flex-direction: column; gap: 4px; min-height: 64px;
+  }
+  .node:hover { transform: translateY(-2px); border-color: #45568f; box-shadow: 0 10px 24px rgba(0,0,0,.35); }
+  .node.active { box-shadow: 0 0 0 2px var(--accent), 0 10px 24px rgba(0,0,0,.45); border-color: transparent; }
+  .node .nt { font-weight: 700; font-size: 14.5px; display:flex; align-items:center; gap:8px; }
+  .node .nd { color: var(--muted); font-size: 12.5px; }
+  .chip { font-size: 11px; padding: 2px 8px; border-radius: 999px; border:1px solid var(--line); color: var(--muted); }
+
+  .node.duck { background: linear-gradient(180deg, rgba(251,191,36,.16), rgba(251,191,36,.04)); border-color: rgba(251,191,36,.4); }
+  .node.duck .nt .ic { color: var(--duck); }
+  .node.okf  { background: linear-gradient(180deg, rgba(52,211,153,.16), rgba(52,211,153,.04)); border-color: rgba(52,211,153,.4); }
+  .node.okf .nt .ic { color: var(--okf); }
+  .node.agent{ background: linear-gradient(180deg, rgba(129,140,248,.16), rgba(129,140,248,.05)); border-color: rgba(129,140,248,.45); }
+  .node.agent .nt .ic { color: var(--agent); }
+  .node.source{ background: linear-gradient(180deg, rgba(96,165,250,.12), rgba(96,165,250,.03)); border-color: rgba(96,165,250,.35); }
+  .node.source .nt .ic { color: var(--source); }
+
+  .plane-tag {
+    position:absolute; top:-9px; right:12px; font-size:10px; letter-spacing:.08em; text-transform:uppercase;
+    padding:2px 8px; border-radius:999px; font-weight:700;
+  }
+  .plane-data { background: var(--duck-d); color:#fff; }
+  .plane-know { background: var(--okf-d); color:#eafff8; }
+
+  .planes { display:grid; grid-template-columns: 1fr 1fr; gap:14px; position:relative; }
+  @media (max-width: 720px){ .planes { grid-template-columns:1fr; } }
+  .plane {
+    border:1px dashed var(--line); border-radius:14px; padding:14px 12px 12px; position:relative;
+  }
+  .plane.data { border-color: rgba(251,191,36,.35); background: rgba(251,191,36,.03); }
+  .plane.know { border-color: rgba(52,211,153,.35); background: rgba(52,211,153,.03); }
+  .plane h4 { margin:6px 4px 12px; font-size:13px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); }
+
+  .bind {
+    position:relative; z-index:1; margin:14px 0 2px; text-align:center;
+  }
+  .bind .pill {
+    display:inline-flex; align-items:center; gap:8px; font-size:12.5px; color:var(--ink);
+    background: linear-gradient(90deg, rgba(251,191,36,.15), rgba(52,211,153,.15));
+    border:1px solid var(--line); border-radius:999px; padding:7px 14px;
+  }
+  .bind .pill b { color: var(--accent); }
+
+  /* ---- detail panel ---- */
+  aside.detail {
+    position: sticky; top: 18px;
+    background: linear-gradient(180deg, var(--panel), var(--bg2));
+    border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 0; box-shadow: var(--shadow); overflow: hidden;
+  }
+  .detail .head { padding: 16px 18px; border-bottom: 1px solid var(--line); }
+  .detail .head .tag { font-size: 11px; letter-spacing:.1em; text-transform:uppercase; color: var(--muted); }
+  .detail .head h3 { margin: 6px 0 2px; font-size: 18px; }
+  .detail .head .role { font-size: 13px; color: var(--muted); }
+  .detail .body { padding: 14px 18px 20px; font-size: 13.5px; }
+  .detail .body p { margin: 0 0 12px; color: #d4ddf6; }
+  .detail .body .lbl { font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin: 14px 0 6px; }
+  .detail ul { margin: 0 0 6px; padding-left: 18px; color:#cdd7f2; }
+  .detail ul li { margin: 4px 0; }
+  pre {
+    background: #0a0f22; border:1px solid var(--line); border-radius:10px; padding:12px;
+    overflow:auto; font-size:12px; line-height:1.55; color:#cfe3ff; margin: 4px 0 0;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  pre .k { color: #fbbf24; } pre .s { color: #86efac; } pre .c { color:#6b7aa8; } pre .f { color:#f472b6; }
+
+  /* ---- flow view ---- */
+  .flow { position:relative; z-index:1; }
+  .step { display:flex; gap:14px; padding:14px 4px; border-bottom:1px dashed var(--line); align-items:flex-start; }
+  .step:last-child { border-bottom:0; }
+  .step .num {
+    flex:0 0 auto; width:34px; height:34px; border-radius:50%; display:grid; place-items:center;
+    font-weight:800; font-size:15px; color:#0b1020;
+    background: linear-gradient(180deg, #c7d2fe, #818cf8); box-shadow: 0 4px 14px rgba(129,140,248,.4);
+  }
+  .step .st h4 { margin:3px 0 4px; font-size:15px; }
+  .step .st p { margin:0; color:var(--muted); font-size:13.5px; }
+  .step .st .who { font-size:11px; padding:2px 9px; border-radius:999px; margin-left:8px; vertical-align:middle; }
+  .who.d { background: rgba(251,191,36,.18); color:#fcd34d; border:1px solid rgba(251,191,36,.4); }
+  .who.k { background: rgba(52,211,153,.18); color:#6ee7b7; border:1px solid rgba(52,211,153,.4); }
+  .who.a { background: rgba(129,140,248,.18); color:#c7d2fe; border:1px solid rgba(129,140,248,.4); }
+
+  .hidden { display: none !important; }
+
+  /* legend */
+  .legend { display:flex; flex-wrap:wrap; gap:14px; margin-top:16px; font-size:12.5px; color:var(--muted); }
+  .legend .li { display:flex; align-items:center; gap:7px; }
+  .legend .sw { width:13px; height:13px; border-radius:4px; }
+  .sw.d{ background:var(--duck);} .sw.k{ background:var(--okf);} .sw.a{ background:var(--agent);} .sw.s{ background:var(--source);}
+
+  footer.note { margin-top:26px; color:var(--muted); font-size:12.5px; border-top:1px solid var(--line); padding-top:16px; }
+  footer.note a { color:#9db4ff; text-decoration:none; } footer.note a:hover { text-decoration:underline; }
+  .arrow-up { text-align:center; color:var(--line); font-size:18px; line-height:1; margin:2px 0; user-select:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="page">
+    <span class="kicker"><span class="dot"></span> Reference architecture · v1</span>
+    <h1>A <span class="a">DuckDB</span> data lake + <span class="b">Open Knowledge Format</span><br/>as a knowledge graph for AI agents</h1>
+    <p class="sub">
+      Two planes, one brain. A <strong>DuckDB lake</strong> holds the <em>facts</em> — Parquet files queried live with SQL,
+      no server to run. <strong>Open Knowledge Format (OKF)</strong> holds the <em>meaning</em> — a curated directory of
+      markdown concepts whose links <em>are</em> the knowledge graph. Agents read OKF for context and query DuckDB for data.
+      Click any block for detail.
+    </p>
+  </header>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" aria-selected="true" data-view="arch">🏗 Architecture</button>
+    <button class="tab" role="tab" aria-selected="false" data-view="flow">🔁 How an agent answers</button>
+    <button class="tab" role="tab" aria-selected="false" data-view="okf">📄 What an OKF concept looks like</button>
+  </div>
+
+  <div class="layout">
+    <!-- ============ LEFT: STAGE ============ -->
+    <section class="stage">
+
+      <!-- ARCHITECTURE VIEW -->
+      <div id="view-arch">
+        <!-- AGENTS -->
+        <div class="lane">
+          <div class="lane-h"><span class="lab">Consumers — AI agents</span><span class="ln"></span></div>
+          <div class="row cols-3">
+            <button class="node agent" data-id="agent-analyst"><span class="nt"><span class="ic">◆</span> Analyst agent</span><span class="nd">Text-to-SQL over the lake</span></button>
+            <button class="node agent" data-id="agent-orchestrator"><span class="nt"><span class="ic">◆</span> Orchestrator / tools</span><span class="nd">Plans, calls tools, traverses graph</span></button>
+            <button class="node agent" data-id="agent-context"><span class="nt"><span class="ic">◆</span> Context loader (MCP)</span><span class="nd">Loads OKF bundle into context</span></button>
+          </div>
+        </div>
+        <div class="arrow-up">▲ read context · ▼ query facts</div>
+
+        <!-- DUAL PLANES -->
+        <div class="lane">
+          <div class="lane-h"><span class="lab">The brain — two planes bound by one contract</span><span class="ln"></span></div>
+          <div class="planes">
+            <div class="plane know">
+              <span class="plane-tag plane-know">Knowledge plane</span>
+              <h4>Open Knowledge Format</h4>
+              <div class="row cols-1">
+                <button class="node okf" data-id="okf-concepts"><span class="nt"><span class="ic">▣</span> Concept directory</span><span class="nd">Markdown + YAML frontmatter</span></button>
+                <button class="node okf" data-id="okf-graph"><span class="nt"><span class="ic">▣</span> Link graph = KG</span><span class="nd">Concept↔concept markdown links</span></button>
+                <button class="node okf" data-id="okf-semantics"><span class="nt"><span class="ic">▣</span> Schemas · metrics · runbooks</span><span class="nd">Stable, human-curated meaning</span></button>
+              </div>
+            </div>
+            <div class="plane data">
+              <span class="plane-tag plane-data">Data plane</span>
+              <h4>DuckDB query engine</h4>
+              <div class="row cols-1">
+                <button class="node duck" data-id="duck-engine"><span class="nt"><span class="ic">◗</span> DuckDB</span><span class="nd">Embeddable columnar OLAP</span></button>
+                <button class="node duck" data-id="duck-views"><span class="nt"><span class="ic">◗</span> SQL views over Parquet</span><span class="nd">Query files in place, no import</span></button>
+                <button class="node duck" data-id="duck-extensions"><span class="nt"><span class="ic">◗</span> httpfs · iceberg · vss</span><span class="nd">Remote read, table formats, vectors</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="bind">
+            <span class="pill">🔗 The binding contract: an OKF concept's <b>&nbsp;resource:&nbsp;</b> field points at a DuckDB table / view</span>
+          </div>
+        </div>
+        <div class="arrow-up">▲ describes · catalogs</div>
+
+        <!-- STORAGE -->
+        <div class="lane">
+          <div class="lane-h"><span class="lab">Storage — the lake</span><span class="ln"></span></div>
+          <div class="row cols-3">
+            <button class="node duck" data-id="store-parquet"><span class="nt"><span class="ic">▤</span> Parquet files</span><span class="nd">Columnar, partitioned by date/key</span></button>
+            <button class="node duck" data-id="store-object"><span class="nt"><span class="ic">▤</span> Object storage</span><span class="nd">S3 / GCS / local dir</span></button>
+            <button class="node duck" data-id="store-tableformat"><span class="nt"><span class="ic">▤</span> Open table format <span class="chip">optional</span></span><span class="nd">Iceberg / Delta for ACID + time travel</span></button>
+          </div>
+        </div>
+        <div class="arrow-up">▲ landed &amp; converted</div>
+
+        <!-- SOURCES -->
+        <div class="lane">
+          <div class="lane-h"><span class="lab">Sources — raw, immutable</span><span class="ln"></span></div>
+          <div class="row cols-4">
+            <button class="node source" data-id="src-db"><span class="nt"><span class="ic">●</span> Operational DBs</span><span class="nd">Postgres, MySQL</span></button>
+            <button class="node source" data-id="src-files"><span class="nt"><span class="ic">●</span> Files</span><span class="nd">CSV, JSON, logs</span></button>
+            <button class="node source" data-id="src-api"><span class="nt"><span class="ic">●</span> APIs / SaaS</span><span class="nd">REST, webhooks</span></button>
+            <button class="node source" data-id="src-docs"><span class="nt"><span class="ic">●</span> Documents</span><span class="nd">PDFs, wikis, runbooks</span></button>
+          </div>
+        </div>
+
+        <div class="legend">
+          <span class="li"><span class="sw s"></span> Sources (immutable)</span>
+          <span class="li"><span class="sw d"></span> Data plane — DuckDB / Parquet</span>
+          <span class="li"><span class="sw k"></span> Knowledge plane — OKF</span>
+          <span class="li"><span class="sw a"></span> AI agents</span>
+        </div>
+      </div>
+
+      <!-- FLOW VIEW -->
+      <div id="view-flow" class="hidden">
+        <div class="flow">
+          <div class="step"><div class="num">1</div><div class="st"><h4>Agent gets a question <span class="who a">agent</span></h4><p>“What was revenue per active customer in EU last quarter, and is that metric trustworthy?”</p></div></div>
+          <div class="step"><div class="num">2</div><div class="st"><h4>Load the OKF bundle into context <span class="who k">OKF</span></h4><p>Curated concepts — the <code>revenue</code> metric definition, the <code>active_customer</code> rule, table schemas, and a runbook — are loaded directly into the prompt. No vector search; this is stable, pre-compiled knowledge.</p></div></div>
+          <div class="step"><div class="num">3</div><div class="st"><h4>Traverse the knowledge graph <span class="who k">OKF</span></h4><p>Markdown links connect <code>revenue → fct_orders → dim_customer</code>. The agent walks the graph to learn which tables to join and that “active” means an order in the trailing 90 days.</p></div></div>
+          <div class="step"><div class="num">4</div><div class="st"><h4>Resolve the binding <span class="who k">OKF</span> <span class="who d">DuckDB</span></h4><p>Each concept's <code>resource:</code> field names a concrete DuckDB view (<code>analytics.fct_orders</code>). Meaning maps to a queryable object.</p></div></div>
+          <div class="step"><div class="num">5</div><div class="st"><h4>Generate &amp; run SQL <span class="who d">DuckDB</span></h4><p>The agent emits SQL that reads Parquet in place via views. DuckDB executes the OLAP scan in-process — seconds, no warehouse.</p></div></div>
+          <div class="step"><div class="num">6</div><div class="st"><h4>Answer with provenance <span class="who a">agent</span></h4><p>The number comes from DuckDB; the <em>definition and caveats</em> come from OKF. The agent cites both — and the trust caveat in the runbook is part of the answer.</p></div></div>
+        </div>
+        <div class="bind" style="margin-top:18px">
+          <span class="pill">Key idea: <b>&nbsp;OKF answers “what does this mean?”&nbsp;</b> · <b>&nbsp;DuckDB answers “what are the numbers?”&nbsp;</b></span>
+        </div>
+      </div>
+
+      <!-- OKF EXAMPLE VIEW -->
+      <div id="view-okf" class="hidden">
+        <p class="sub" style="margin-bottom:14px">An OKF concept is just a markdown file with YAML frontmatter. The only required field is <code>type</code>. Links to other concepts form the graph; the <code>resource</code> field binds the concept to a DuckDB object.</p>
+<pre><span class="c"># wiki/concepts/revenue.md</span>
+<span class="f">---</span>
+<span class="k">type:</span> metric
+<span class="k">title:</span> <span class="s">Revenue (recognized)</span>
+<span class="k">description:</span> <span class="s">Net recognized revenue, EUR, excluding refunds.</span>
+<span class="k">resource:</span> <span class="s">duckdb://analytics.fct_orders</span>   <span class="c"># ← binding to the data plane</span>
+<span class="k">tags:</span> [finance, kpi, certified]
+<span class="k">timestamp:</span> <span class="s">2026-06-20</span>
+<span class="f">---</span>
+
+<span class="c"># Revenue (recognized)</span>
+
+Sum of `amount_eur` on **[fct_orders](fct_orders.md)** where
+`status = 'captured'`, joined to **[dim_customer](dim_customer.md)**
+for region. An order counts toward an **[active customer](active-customer.md)**
+when placed in the trailing 90 days.
+
+> ⚠️ Runbook: pre-2025 rows use gross amounts — see
+> **[revenue-migration](runbooks/revenue-migration.md)**. Trust = medium before 2025-01.
+</pre>
+        <div class="bind" style="margin-top:16px">
+          <span class="pill">The links <b>&nbsp;[fct_orders]&nbsp;</b>, <b>&nbsp;[dim_customer]&nbsp;</b>, <b>&nbsp;[active customer]&nbsp;</b> are the edges of the knowledge graph</span>
+        </div>
+        <p class="sub" style="margin-top:16px; font-size:13.5px">
+          Notice: this is exactly the pattern this repository already uses — typed markdown pages, frontmatter, wikilinks.
+          An <strong>LLM wiki is an OKF knowledge layer</strong>; pointing each concept's <code>resource:</code> at a DuckDB view is all it takes to make the lake agent-ready.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ RIGHT: DETAIL ============ -->
+    <aside class="detail" id="detail">
+      <div class="head">
+        <div class="tag" id="d-tag">Getting started</div>
+        <h3 id="d-title">Click any block →</h3>
+        <div class="role" id="d-role">Explore the architecture node by node.</div>
+      </div>
+      <div class="body" id="d-body">
+        <p>This diagram has four bands, bottom to top: <strong>sources</strong> feed <strong>storage</strong> (Parquet in object storage); the <strong>brain</strong> splits into a <span style="color:var(--duck)">DuckDB data plane</span> and an <span style="color:var(--okf)">OKF knowledge plane</span>; and <span style="color:var(--agent)">agents</span> sit on top.</p>
+        <p class="lbl">Why two planes?</p>
+        <p>Facts change every second and live in DuckDB. Meaning changes rarely and is curated by humans in OKF. Keeping them separate — but <em>bound</em> by the <code>resource:</code> field — is what makes the lake safe for an agent to reason over.</p>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="note">
+    Built as a reference visualization · <strong>Open Knowledge Format (OKF v0.1)</strong> — Google Cloud, June 2026 — knowledge as a directory of markdown files with YAML frontmatter, linked into a graph ·
+    <strong>DuckDB</strong> — embeddable columnar SQL engine that reads Parquet in place.
+    Self-contained HTML, no external dependencies.
+  </footer>
+</div>
+
+<script>
+  // ----- node detail content -----
+  const DATA = {
+    // sources
+    "src-db":   {tag:"Source · immutable", title:"Operational databases", role:"Postgres, MySQL, OLTP systems", body:`<p>The systems of record. They are <strong>read, never modified</strong> by the lake.</p><p class="lbl">Into the lake via</p><ul><li>Periodic dumps / CDC → Parquet</li><li>DuckDB can also attach Postgres directly (<code>postgres_scanner</code>) for live joins</li></ul>`},
+    "src-files":{tag:"Source · immutable", title:"Flat files", role:"CSV, JSON, logs, exports", body:`<p>The most common lake input. DuckDB reads these natively — often no conversion step is even required.</p><pre><span class="k">SELECT</span> * <span class="k">FROM</span> <span class="s">'raw/events/*.json'</span>;</pre>`},
+    "src-api":  {tag:"Source · immutable", title:"APIs & SaaS", role:"REST, webhooks, third-party", body:`<p>Pulled on a schedule into Parquet. The raw payloads are kept immutable so the lake stays reproducible.</p>`},
+    "src-docs": {tag:"Source · immutable", title:"Documents", role:"PDFs, wikis, runbooks", body:`<p>Unstructured knowledge. These feed the <span style="color:var(--okf)">OKF layer</span> (as curated concepts) more than the Parquet layer.</p><p>This is where human meaning enters the system.</p>`},
+
+    // storage
+    "store-parquet":{tag:"Data plane · storage", title:"Parquet files", role:"Columnar, compressed, partitioned", body:`<p>The physical substance of the lake. Columnar layout means DuckDB scans only the columns a query needs.</p><p class="lbl">Convention</p><ul><li>Partition by date or key: <code>orders/dt=2026-06-20/*.parquet</code></li><li>One table = one folder of Parquet parts</li></ul>`},
+    "store-object":{tag:"Data plane · storage", title:"Object storage", role:"S3 / GCS / Azure / local dir", body:`<p>Where the Parquet lives. For a <em>simple</em> lake this can literally be a local folder; the same SQL works against <code>s3://</code> once you load <code>httpfs</code>.</p>`},
+    "store-tableformat":{tag:"Data plane · storage", title:"Open table format", role:"Iceberg / Delta — optional", body:`<p>Add this when you need <strong>ACID writes, schema evolution, and time travel</strong> over the Parquet. DuckDB reads Iceberg and Delta via extensions.</p><p>Skip it for a read-mostly analytical lake — bare Parquet is enough.</p>`},
+
+    // duckdb
+    "duck-engine":{tag:"Data plane · engine", title:"DuckDB", role:"Embeddable columnar OLAP engine", body:`<p>An in-process SQL engine — “SQLite for analytics.” No server, no cluster. It runs <em>inside</em> the agent's process or a thin sidecar.</p><p class="lbl">Why it fits AI agents</p><ul><li>Sub-second start-up — perfect for ephemeral tool calls</li><li>Reads Parquet / CSV / JSON directly</li><li>Full SQL the LLM already knows how to write</li></ul>`},
+    "duck-views":{tag:"Data plane · engine", title:"SQL views over Parquet", role:"Query files in place — no ETL load", body:`<p>The lake's tables are <strong>views</strong>, not copies. Defining them once gives agents stable names to target.</p><pre><span class="k">CREATE VIEW</span> analytics.fct_orders <span class="k">AS</span>
+<span class="k">SELECT</span> * <span class="k">FROM</span> <span class="s">'s3://lake/orders/*.parquet'</span>;</pre><p>This view is the object an OKF concept's <code>resource:</code> field points at.</p>`},
+    "duck-extensions":{tag:"Data plane · engine", title:"Extensions", role:"httpfs · iceberg · delta · vss", body:`<p>DuckDB's reach is extensions:</p><ul><li><code>httpfs</code> — read S3/GCS/HTTP</li><li><code>iceberg</code> / <code>delta</code> — open table formats</li><li><code>vss</code> — vector similarity, so the same engine can serve embeddings for RAG</li></ul><p>One engine covers analytics <em>and</em> vector retrieval.</p>`},
+
+    // okf
+    "okf-concepts":{tag:"Knowledge plane · OKF", title:"Concept directory", role:"Markdown files + YAML frontmatter", body:`<p>OKF represents knowledge as a folder of markdown files. Each file is one <strong>concept</strong>. The only required frontmatter field is <code>type</code>; reserved fields are <code>type, title, description, resource, tags, timestamp</code>.</p><p>It is deliberately <strong>not a platform</strong> — just a portable format any agent can read, no SDK or lock-in.</p>`},
+    "okf-graph":{tag:"Knowledge plane · OKF", title:"Link graph = the knowledge graph", role:"Concept ↔ concept markdown links", body:`<p>Concepts link to each other with ordinary markdown links. Those links turn the directory into a <strong>graph richer than folder hierarchy</strong> — this <em>is</em> the knowledge graph.</p><p class="lbl">Edges carry meaning</p><ul><li><code>revenue → fct_orders</code> (computed from)</li><li><code>active-customer → dim_customer</code> (defined over)</li></ul><p>An agent traverses these edges to assemble exactly the context a question needs.</p>`},
+    "okf-semantics":{tag:"Knowledge plane · OKF", title:"Schemas · metrics · runbooks", role:"Stable, human-curated meaning", body:`<p>The content agents most often get wrong on their own: <strong>what a column means, how a metric is defined, which caveats apply</strong>.</p><p>Unlike RAG (retrieve chunks at inference from an unstructured corpus), OKF is a <strong>curated, pre-compiled</strong> layer loaded into context directly. Stable knowledge, maintained by humans.</p>`},
+
+    // agents
+    "agent-analyst":{tag:"Consumer · agent", title:"Analyst agent", role:"Text-to-SQL over the lake", body:`<p>Turns a natural-language question into DuckDB SQL — grounded by OKF so it joins the right tables and uses the certified metric definition rather than guessing.</p>`},
+    "agent-orchestrator":{tag:"Consumer · agent", title:"Orchestrator / tool agent", role:"Plans, calls tools, traverses graph", body:`<p>Walks the OKF graph to gather context, then calls the DuckDB tool to fetch numbers. Composes multi-step answers and keeps provenance.</p>`},
+    "agent-context":{tag:"Consumer · agent", title:"Context loader (MCP)", role:"Loads the OKF bundle into context", body:`<p>OKF is designed to be loaded directly into a model's context. An MCP server can expose the concept directory + a DuckDB query tool side by side — meaning and data through one interface.</p><p class="lbl">This repo's analogue</p><ul><li>The <code>wiki/</code> directory is the OKF bundle</li><li>A qmd / MCP server already exposes it to agents</li></ul>`},
+  };
+
+  const detail = {
+    tag: document.getElementById('d-tag'),
+    title: document.getElementById('d-title'),
+    role: document.getElementById('d-role'),
+    body: document.getElementById('d-body'),
+  };
+  let activeNode = null;
+
+  document.querySelectorAll('.node').forEach(n => {
+    n.addEventListener('click', () => {
+      const id = n.getAttribute('data-id');
+      const d = DATA[id];
+      if (!d) return;
+      if (activeNode) activeNode.classList.remove('active');
+      n.classList.add('active'); activeNode = n;
+      detail.tag.textContent = d.tag;
+      detail.title.textContent = d.title;
+      detail.role.textContent = d.role;
+      detail.body.innerHTML = d.body;
+    });
+  });
+
+  // tabs
+  const views = { arch: document.getElementById('view-arch'), flow: document.getElementById('view-flow'), okf: document.getElementById('view-okf') };
+  document.querySelectorAll('.tab').forEach(t => {
+    t.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach(x => x.setAttribute('aria-selected','false'));
+      t.setAttribute('aria-selected','true');
+      const v = t.getAttribute('data-view');
+      Object.entries(views).forEach(([k, el]) => el.classList.toggle('hidden', k !== v));
+    });
+  });
+</script>
+</body>
+</html>
