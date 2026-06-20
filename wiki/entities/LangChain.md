@@ -4,10 +4,10 @@ kind: organization
 aliases: ["LangChain", "LangChain Inc"]
 tags: [langchain, agent-frameworks, agent-runtime, agent-harness, langgraph, langsmith, deep-agents]
 since: 2022
-confidence: 0.85
-last_confirmed: "2026-05-28"
-accessed_at: "2026-05-28"
-source_count: 6
+confidence: 0.9
+last_confirmed: "2026-06-20"
+accessed_at: "2026-06-20"
+source_count: 7
 relationships:
   - type: published-by
     target: 2026-05-09-chase-agent-development-lifecycle

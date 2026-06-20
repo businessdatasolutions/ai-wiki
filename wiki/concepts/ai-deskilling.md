@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI deskilling", "ai-deskilling", "task composition shift", "deskilling"]
 tags: [deskilling, task-composition, ai-employment-effects, occupations]
 confidence: 0.85
-last_confirmed: "2026-06-13"
-accessed_at: "2026-06-13"
-source_count: 11
+last_confirmed: "2026-06-20"
+accessed_at: "2026-06-20"
+source_count: 12
 relationships:
   - type: instance-of
     target: ai-employment-effects
@@ -13,8 +13,8 @@ relationships:
   - type: contradicts
     target: durable-skills
     via: "deskilling = which skills get hollowed out by AI; durable-skills = which skills resist substitution. Inverse measurement frames of the same labour-economics question"
-quality_score: 0.79
-quality_notes: ['missing ## Debates and supersession (concept with >1 source)', '1 near-empty section(s)']
+quality_score: 0.77
+quality_notes: ['missing ## Debates and supersession (concept with >1 source)', '1 near-empty section(s)', '1 broken body wikilink(s)']
 ---
 
 # AI Deskilling
@@ -144,6 +144,10 @@ Convergent with [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures
 > *"Resist the temptation of taking AI output at face value. Check the sources, supervise, and verify outputs, or learn to do so if, until now, you have only relied on the product of your own work. An agentic future requires everyone to turn into a manager of sorts."*
 
 The deskilling risk Argenti implicitly accepts (delegated execution atrophies execution skill) is bounded by a **new load-bearing skill**: source-checking, supervision, and output-verification — the "manager of sorts" competence. His **garbage-in/garbage-out** warning sharpens the stakes — *AI "makes garbage output look plausible,"* so the verification skill is harder, not easier, than checking human work. This is the *individual-habit* complement to Giles's *executive-prescription* framing above: Giles tells the firm to mandate manual checks; Argenti tells the worker the verification posture *is* the new job.
+
+## *The apprenticeship model just broke* — the talent-pipeline mechanism ([[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Mollick / A Bit of Optimism June 2026]])
+
+[[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Ethan Mollick]] supplies the cleanest general-audience statement of deskilling's **talent-pipeline mechanism** — the same concern Thompson's senior developers raise (above), elevated to a 4,000-year framing: *"We've trained specialists … via apprenticeship — juniors do grunt work, prove themselves, learn the ropes. That just broke."* The mechanism: every junior "knows less than ChatGPT," so juniors would rather use AI than do the grunt work, and managers would rather delegate to AI than to "a flawed human who takes forever" — "so everyone's just doing AI work to each other," and the org risks **losing the talent pipeline**. This is the *upstream-of-the-firm* version of the [[2026-04-28-anthropic-economic-index-q4-2025|task-composition]] mechanism: not only does the remaining task mix lose education content, the *path by which juniors acquire that content in the first place* erodes. Mollick stresses the problem is solvable ("we know the pedagogy — in-class testing, AI tutors, the calculator precedent") but requires "radical change in how we think about talent pipelines." Consistent with [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen's]] *protect the junior learning path* prescription and the [[durable-skills]] *experience-beats-AI-native* finding (the seniors who can evaluate AI output are a non-renewable cohort if the pipeline breaks). Per the [[../../CLAUDE.md#lifecycle|Lifecycle rules]] this single popularisation does not lift the concept's confidence; its value is naming the pipeline mechanism vividly.
 
 ## Related concepts
 

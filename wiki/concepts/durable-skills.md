@@ -3,9 +3,9 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-06-15"
-accessed_at: "2026-06-15"
-source_count: 27
+last_confirmed: "2026-06-20"
+accessed_at: "2026-06-20"
+source_count: 30
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -206,6 +206,16 @@ BCG's labor-disruption report turns the durable-skills thesis into a **workforce
 
 - **AI fluency becomes a complement to tenure.** Readiness for augmented, higher-order roles is assessed increasingly on *whether you proactively adopt AI tools and rethink the work* — sometimes advantaging **AI-fluent juniors and recent graduates** over more-experienced staff. This is the demand-side mirror of the [[2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs|Coursera 120% critical-thinking-enrollment]] signal and complicates the simple "seniors win" reading: the durable bundle is *judgment + AI fluency*, and fluency is age-agnostic.
 - **Frequent, not one-time, upskilling.** BCG's CEO directive is that workers "will likely require more frequent (versus one-time) upskilling as the technology evolves," with structured redeployment pathways per role-segment — making durable-skills development a *continuous* organizational function, not a one-shot reskilling event (echoing the [[2026-05-01-lf-state-of-tech-talent-global-2026|Linux Foundation]] upskill-over-hire finding).
+
+## Three June-2026 practitioner statements: expertise + taste as the lever on commoditised model intelligence ([[2026-06-17-ng-langchain-interrupt-future-of-ai-agents|Ng]], [[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Mollick]], [[2026-06-19-chou-yc-lightcone-40-year-old-solo-founder|Chou]])
+
+Three mid-June-2026 video interviews land the durable-skills thesis from three practitioner chairs and converge tightly with the page's *judgement spine* ([[2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting|Sternfels]], [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti]], [[2026-04-14-thompson-the-daily-workers-letting-ai-do-their-jobs|Thompson]]) and the empirical [[2026-06-16-anthropic-economic-index-agentic-coding-returns-to-expertise|AEI returns-to-expertise]] report:
+
+- **[[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Ethan Mollick]] — *experience beats AI-native youth; taste is the differentiator.*** Mollick's headline directly inverts the digital-native intuition: young people are *not* "AI natives" (they're "conduits to Claude" who can't judge the output), and he cites the same [[Boston Consulting Group|BCG]] study where junior employees were *worse* at using AI. As model output commoditises ("the death of the movie star"), the residue is **taste** — variation, point of view, the director's hand — possibly "the most valuable skill of the AI era." He also relocates the binding constraint to **evaluation speed** (an expert skill), echoing the page's *expert-as-evaluator* claim ([[2026-05-07-kiron-schrage-compound-benefits|Kiron & Schrage]]), and supplies the **jagged-frontier** vocabulary the page already uses ([[jagged-frontier]]).
+- **[[2026-06-19-chou-yc-lightcone-40-year-old-solo-founder|Bryant Chou / YC]] — *expertise is what you bring to boundless intelligence.*** "You need a certain amount of expertise to know what to do with this boundless intelligence imbued in the model"; a decade-plus of domain experience is what turns a general model into something "world class." The **age-of-the-40-year-old-solo-founder** framing makes experience + taste the lever ("you don't have to be 40, you just have to have taste"), the founder-chair instance of Argenti's *instincts/judgement/values survive role-metamorphosis*.
+- **[[2026-06-17-ng-langchain-interrupt-future-of-ai-agents|Andrew Ng]] — *the scarce input is deciding what to build.*** Ng's *product-management bottleneck becomes an everything-bottleneck* and his *small teams of high-context, empowered generalists* relocate value to scoping, judgement, and cross-functional context — the same skill cluster Thompson's developers name (*communication / spec-elicitation / priority-setting / deciding-what-to-build*).
+
+The three add no new *measurement* methodology (so they do not lift the concept's confidence past its 0.95 ceiling), but they are the strongest **practitioner-vantage convergence** in the corpus on the page's central claim: as execution commoditises, the durable bundle is **domain expertise + judgement + taste**, and (per [[2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces|BCG]]) the *fluency to wield AI well* rides alongside it.
 
 ## Related concepts
 

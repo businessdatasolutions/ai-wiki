@@ -3,9 +3,9 @@ type: concept
 aliases: ["dynamic capabilities", "dynamic-capabilities", "Teece dynamic capabilities", "sense seize transform"]
 tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, microfoundations]
 confidence: 0.95
-last_confirmed: "2026-06-19"
-accessed_at: "2026-06-19"
-source_count: 10
+last_confirmed: "2026-06-20"
+accessed_at: "2026-06-20"
+source_count: 11
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -132,6 +132,10 @@ The implication for the dynamic-capabilities concept: the AI-era literature (War
 | **Strategic renewal** | The *"AI-enabled bank with a heart"* value-proposition renewal + *innovation-is-not-a-choice* culture (*"don't tone it down, turn it up"*). |
 
 Two reusable primitives the DBS case sharpens: (a) **innovation-as-KPI** — *"all parts of the organization have a KPI"* — the mechanism that converts a transformation aspiration into a measured org-wide obligation, structurally identical to [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook|Erginbilgiç's]] performance-culture pillar but in a digital/AI-flavoured incumbent; (b) **governance flex for genuine novelty** — Horizon-3 bets launch *without* a business case (written retrospectively a year later) because *"if I can write a business case and I know exactly what's going to happen, I'm not really pushing the needle"* — a concrete operationalisation of the *balancing-internal-and-external-options* microfoundation under uncertainty. The DBS case completes the wiki's operator/vendor/CEO-non-AI triangulation of the concept with a fourth corner: **operator-altitude, AI-flavoured, decade-long, banking incumbent.**
+
+### Advisory-altitude AI-era read ([[2026-06-17-ng-langchain-interrupt-future-of-ai-agents|Ng / LangChain Interrupt 2026]])
+
+[[2026-06-17-ng-langchain-interrupt-future-of-ai-agents|Andrew Ng]] supplies a fifth altitude — the **advisor-to-the-G2000** vantage (via AI Aspire) — and frames the AI-era version of the sense/seize/transform loop crisply: *sensing* as continuous scanning of the coding-agent and vendor frontier; *seizing* as **strategic-agility through optionality** (≤1-year contracts, open-weight hedging, vendor-neutral observability) and **portfolio-balancing** (narrowing 300-idea spreadsheets to a handful of high-conviction bets, swing-for-the-fences over incremental); *transforming* as **redesigning the whole workflow** (the 10-minute-loan example) via small high-context generalist teams plus the data-architecture rework needed to feed agents. His central claim — *bottom-up "thousand flowers" innovation generates point solutions; the transformation needs a complementary top-down motion to redesign the workflow* — is a clean restatement of why dynamic capabilities are a **system** (sensing + seizing + transforming together), not a pile of point solutions. See [[enterprise-ai-adoption]] for the full treatment.
 
 ## Debates and supersession
 
