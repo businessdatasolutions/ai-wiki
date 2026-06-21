@@ -83,8 +83,8 @@ The closing diagnostic: most public-company leadership behaviour optimises for f
 
 ## Linked entities and concepts
 
+- **Promoted to an entity** (second-source rule, 2026-06-20): [[Simon Sinek]] — author of *Start With Why* (2009), *Leaders Eat Last* (2014), *The Infinite Game* (2019, which this 2018 talk previewed) and host of *A Bit of Optimism*. Promoted after the second substantive source ([[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|his June 2026 podcast with Ethan Mollick]]).
 - **Dangling** (single-source mention, deferred per author-entity rule):
-  - **Simon Sinek** — author of *Start With Why* (2009), *Leaders Eat Last* (2014), *The Infinite Game* (2019, which this 2018 talk previewed). Widely-cited leadership author with very large reach.
   - **New York Times Events** — venue/publisher.
   - **James P. Carse** — author of *Finite and Infinite Games* (1986), the originator of the framework Sinek adapts (named in the book but only implicitly in the talk).
   - **Vietnam War / Tet Offensive** — historical event used as opening anecdote.

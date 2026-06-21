@@ -3,10 +3,10 @@ type: entity
 kind: organization
 aliases: ["Boston Consulting Group", "BCG", "BCG Henderson Institute"]
 tags: [BCG, management-consulting, henderson-institute]
-confidence: 0.82
-last_confirmed: "2026-06-15"
-accessed_at: "2026-06-15"
-source_count: 4
+confidence: 0.85
+last_confirmed: "2026-06-20"
+accessed_at: "2026-06-20"
+source_count: 5
 ---
 
 # Boston Consulting Group

@@ -5,10 +5,10 @@ aliases: ["Harrison Chase"]
 tags: [harrison-chase, langchain, langgraph, langsmith, langchain-labs, deep-agents, agent-development-lifecycle, continual-learning, agentic-engineering, ceo-founder]
 affiliation: "[[LangChain]]"
 role: "Co-founder and CEO, LangChain (since 2022)"
-confidence: 0.8
-last_confirmed: "2026-05-21"
-accessed_at: "2026-05-21"
-source_count: 2
+confidence: 0.85
+last_confirmed: "2026-06-20"
+accessed_at: "2026-06-20"
+source_count: 3
 ---
 
 # Harrison Chase

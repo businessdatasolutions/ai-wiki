@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-06-17"
-accessed_at: "2026-06-17"
-source_count: 47
+last_confirmed: "2026-06-20"
+accessed_at: "2026-06-20"
+source_count: 49
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -13,8 +13,8 @@ relationships:
   - type: caused
     target: ai-deskilling
     via: "task-composition shift is one mechanism within broader employment effects"
-quality_score: 0.97
-quality_notes: ['1 near-empty section(s)', '1 broken body wikilink(s)']
+quality_score: 0.95
+quality_notes: ['1 near-empty section(s)', '2 broken body wikilink(s)']
 ---
 
 # AI Employment Effects
@@ -373,6 +373,15 @@ The AEI's agentic-coding report gives the wiki a **usage-side**, session-level r
 - **Coding-occupation boundaries are dissolving in practice.** Across ~400,000 Claude Code sessions, in code-producing work **every one of the ten largest occupations reaches verified success within ~7 points of software engineers** (≈34% vs 29% for non-software professions; the gap has neither widened nor narrowed over seven months). "Coding agents are making a coding background less relevant to successful programming" — a direct, usage-grounded counterpart to the exposure report's finding that the most-exposed occupations are no longer the low-skill ones.
 - **Returns to *domain* expertise persist and may sharpen.** Success rises with task-specific expertise (verified success 15% novice → 28–33% intermediate+), and experts extract far more from each instruction (~12 actions / 3,200 words per prompt vs ~5 / 600 for novices). The labor signal: agentic tools **absorb implementation-heavy work while rewarding command of the problem domain** — a complement to [[durable-skills]] and a tension with pure [[ai-deskilling]] (handled on those pages).
 - **A leading indicator to watch.** Anthropic flags that *if returns to expertise begin to fall*, it would signal models supplying the judgment users currently bring (gains broadening beyond domain experts); and *if non-software occupations' success keeps rising*, software production may be becoming ordinary work in every field. Both would reshape who benefits from agentic work — the kind of compositional shift this page tracks.
+
+## The professions-will-lobby + new-jobs-and-solo-founders read (Mollick & Chou, June 2026)
+
+Two June-2026 interviews add a **political-economy** and an **entrepreneurship** angle the page's empirical anchors don't cover:
+
+- **[[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Mollick / A Bit of Optimism]] — the professions will *fight*, and the fights determine outcomes.** Mollick's reading of prior industrial revolutions: the benefits got spread "not because the technology made everything great alone" but because *labour fought capital* (unionisation). Applied to AI: doctors and lawyers have *guilds, licensure, and political power* (much of Congress is lawyers) and will pass laws requiring a human sign-off "even if they're worse than AI" — whereas **coders "do not have the protection that doctors or lawyers or actors" have.** He also restates the *jobs-we-can't-imagine* point (80% of today's jobs didn't exist 20 years ago → 80% of jobs in 20 years are unimaginable now) and warns of the *prompt-engineering-degree* fallacy (a skill that vanished in months). Adds a **guild/regulation-mediated** mechanism to the page's mostly-empirical displacement story.
+- **[[2026-06-19-chou-yc-lightcone-40-year-old-solo-founder|Chou / YC Lightcone]] — the *abundance / more-small-business* counter-read.** Chou's "AI white pill" against the doomer scenario: AI is "the great equalizer" that lets the deep-but-narrow builder also do go-to-market, so *"entrepreneurship might become way more important"* and there will be *"way more small business in the future."* The **age-of-the-40-year-old-solo-founder** thesis is the optimistic compositional shift — not net job loss but a redistribution toward many tiny, experience-led firms (one person + agent "clones"). A useful counterweight to the page's entry-level-decline findings: the displaced-mid-career worker as a *prospective founder*, not only a casualty.
+
+Per the [[../../CLAUDE.md#lifecycle|Lifecycle rules]] these two interview/popularisation sources do not lift the concept's confidence; they widen the page's coverage to the *political-economy* and *entrepreneurship* angles alongside the empirical displacement panel.
 
 ## Debates and supersession
 

@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-06-15"
-accessed_at: "2026-06-15"
-source_count: 44
+last_confirmed: "2026-06-20"
+accessed_at: "2026-06-20"
+source_count: 46
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -16,8 +16,8 @@ relationships:
   - type: supports
     target: ai-benchmarks
     via: "Narayanan's release-decision frame — reliability threshold required for automation deployment exceeds that for augmentation deployment; reliability is the gating dimension benchmarks have under-measured"
-quality_score: 0.93
-quality_notes: ['1 near-empty section(s)', '3 broken body wikilink(s)']
+quality_score: 0.91
+quality_notes: ['1 near-empty section(s)', '4 broken body wikilink(s)']
 ---
 
 # Automation vs. Augmentation
@@ -316,6 +316,15 @@ The wiki's automation/augmentation 2×2s (Anand-Wu's cost×knowledge; the Ask→
 | **Substitution** (workflow bifurcatable) | **Divergent** — uneven; entry-level exposed, seniors persist (insurance sales, IT support) | **Substituted** — net job losses, wage pressure (call-center reps, some financial analysts) |
 
 The worked contrast is **software engineer vs call-center rep**: identical "high task-automation" on the surface, opposite labor outcomes — because software has near-infinite unmet demand (more AI → more software built → headcount grew post-ChatGPT) while call-center volume is fixed by the customer base. This is the sharpest correction on the page to the naive *"automatable tasks = lost jobs"* inference: the augmentation/substitution cut sets *direction*, but **demand expandability sets magnitude**. The full six-segment taxonomy and the 50–55%-reshaped / 10–15%-eliminated split live on [[ai-employment-effects]].
+
+### 24. *The bottleneck moves to judgement* + *doubling down on human* (Ng & Mollick, June 2026)
+
+Two June-2026 interviews restate the augmentation pole from the practitioner and the social-science chairs:
+
+- **[[2026-06-17-ng-langchain-interrupt-future-of-ai-agents|Ng / LangChain Interrupt]] — the bottleneck relocates *to* the augmentation work.** Ng's *product-management bottleneck becomes an everything-bottleneck* makes the augmentation cut concrete at the team level: when agents do execution (the automation leg), the binding constraint becomes *deciding what to build, scoping, customer feedback, marketing, legal* — the human-judgement work. His **small teams of high-context, empowered generalists** are an org pattern for keeping humans on judgement while agents execute — the same *delegate tasks, not judgment* boundary the [[2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer|Forsgren & Macvean]] and [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen]] entries draw.
+- **[[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Mollick / A Bit of Optimism]] — *doubling down on human* as the prescriptive augmentation stance.** Mollick argues raw productivity gains just yield "100× more PowerPoint" unless the work-product is rethought, and that the dangerous default ("fire everyone, profits go up") is the wrong reading; the leverage is showing how **augmentation makes humans thrive**. He sharpens the human side of the pair: jobs shift their *weight* (the editor rises over the writer; the architect over the clean-coder), and the binding skill becomes **evaluation** of AI output (an expert capacity) — the augmentation pole's quality-side requirement, convergent with [[2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai|Storoni's]] gear-2 reframe and [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti's]] *everyone becomes a manager*.
+
+Per the [[../../CLAUDE.md#lifecycle|Lifecycle rules]] these two practitioner/popularisation sources do not lift the concept's confidence past its 0.95 ceiling; they reinforce the augmentation-pole-is-judgement-work consensus from the founder/educator vantages.
 
 ## The four-source convergence on the distinction
 

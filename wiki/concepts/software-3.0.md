@@ -2,10 +2,10 @@
 type: concept
 aliases: ["software 3.0", "Software 3.0", "software-3.0", "LLM as computer", "LLMs as a new computer", "context window as program", "prompting as programming"]
 tags: [software-3.0, software-2.0, software-1.0, llm-paradigm, prompting, context-window, ai-engineering, karpathy]
-confidence: 0.82
-last_confirmed: "2026-05-25"
-accessed_at: "2026-05-25"
-source_count: 5
+confidence: 0.85
+last_confirmed: "2026-06-20"
+accessed_at: "2026-06-20"
+source_count: 6
 relationships:
   - type: instance-of
     target: generative-ai
@@ -104,6 +104,7 @@ Both framings agree on the same architecture from two vantages: Karpathy describ
 
 - Distinguish **speed-up opportunities** (faster versions of existing apps) from **new-things opportunities** (apps that couldn't exist before). Karpathy: *"I almost think that [the new-things side] is more exciting."*
 - **LLM knowledge bases / wikis built from documents** are a named example Karpathy gives of a Software 3.0 product class that has no Software 1.0/2.0 antecedent. This is also the artifact this entire repo implements.
+- **A 2026 founder instance**: [[2026-06-19-chou-yc-lightcone-40-year-old-solo-founder|Bryant Chou's Ploy]] is a Software-3.0-native product — an *opinionated* website/marketing platform where the model does the work (generates the site, copy, images, video, SEO/AEO) and the human supplies *taste + domain expertise*. Chou's *"intelligence is a new primitive"* (alongside compute/storage/networking) and his deliberate refusal to build a traditional visual builder ("we just kept deferring it … just give the models enough context, screenshots, images") is the *unit-of-work-shifts-to-prompt-and-context* claim in product form. It partially answers the open question below about Software-3.0-only product categories.
 
 ## Predictions: where Software 3.0 leads
 

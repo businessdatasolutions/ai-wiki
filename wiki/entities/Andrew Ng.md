@@ -5,10 +5,10 @@ aliases: ["Andrew Ng", "Andrew Y. Ng", "@andrewyng"]
 tags: [andrew-ng, ai-researcher, ai-educator, stanford, deeplearning-ai, coursera, google-brain, baidu, ai-fund, landing-ai, ai-dev, building-blocks-framing, pm-bottleneck, ai-native-team-doctrine, parallel-skill-development, context-hub, code-dream]
 affiliation: "[[DeepLearningAI]] (founder); Stanford University (adjunct professor); AI Fund (managing general partner); Landing AI (founder/CEO); Coursera (co-founder); ex-Google Brain (founder); ex-Baidu (chief scientist)"
 role: "Founder of DeepLearning.AI; adjunct professor at Stanford; managing general partner at AI Fund; founder/CEO of Landing AI; co-founder of Coursera; founding lead of the Google Brain team; ex-chief scientist at Baidu"
-confidence: 0.9
-last_confirmed: "2026-06-09"
-accessed_at: "2026-06-09"
-source_count: 5
+confidence: 0.95
+last_confirmed: "2026-06-20"
+accessed_at: "2026-06-20"
+source_count: 6
 ---
 
 # Andrew Ng
@@ -101,6 +101,7 @@ Ng's prior wiki-relevant rhetorical contribution: *"we need to unbig in AI"* —
 
 ## Mentioned in
 
+- [[2026-06-17-ng-langchain-interrupt-future-of-ai-agents]] — substantive solo source: the LangChain Interrupt '26 fireside (with [[Harrison Chase]]). Restates the PM-bottleneck / building-blocks / small-generalist-teams theses and **adds the enterprise vantage** (AI Aspire): bottom-up "thousand flowers" not paying off vs top-down workflow redesign (the 10-minute-loan example); cost-savings-vs-growth + swing-for-the-fences portfolio; vendor **optionality** (≤1-yr contracts, open-weight hedging, LangSmith); forward-deployed engineers; and the coming **unstructured-data rearchitecture**.
 - [[2026-05-20-ng-deeplearningai-ai-dev-26-sf-future-of-software-engineering]] — substantive solo-headlining source: the AI Dev 26 x SF *future-of-software-engineering* keynote.
 - [[2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success]] — substantive cross-reference: the *"unbig in AI"* anchor for the industrial-AI altitude.
 - [[2026-05-26-landingai-touchpoint-to-outcome-front-office-processes]] — the wiki's first source *from* [[LandingAI]], the company Ng founded; he is named as founder/CEO but is not a presenter (a document-AI vendor webinar).
