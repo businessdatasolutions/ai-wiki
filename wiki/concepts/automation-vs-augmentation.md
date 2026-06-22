@@ -5,7 +5,7 @@ tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, c
 confidence: 0.95
 last_confirmed: "2026-06-20"
 accessed_at: "2026-06-20"
-source_count: 47
+source_count: 48
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -332,6 +332,10 @@ Per the [[../../CLAUDE.md#lifecycle|Lifecycle rules]] these two practitioner/pop
 
 - **Redeploy, not reduce.** When AI made a dedicated **demo team** unnecessary (every account exec now makes their own demo), the team was **moved into other roles**, not cut. Kutcher's reframe — endorsed — is the page's augmentation thesis verbatim: not "fewer developers" but "more code → grow the value proposition at an outpaced rate" + filling roles previously left open. *"That's absolutely the first option."* Ramaswamy is candid about the other side: some staff "struggle to adopt," and it shows up in performance management.
 - **Support automation as a "surefire-hit" automation case.** Snowflake's self-built support system (six weeks on Cortex Code) left "support queues pretty much empty," and the SRE team automated 4-day Kubernetes-log investigations — a concrete *automation-leg* deployment (the agent handles the volume; humans handle the long tail), paired with the *augmentation-leg* redeployment above. Together they are the same firm running both legs of the cut simultaneously — and reinvesting the freed capacity toward growth rather than headcount reduction.
+
+### 26. *Humans steer, agents execute* → the glide toward "more headless" ([[2026-06-19-lopopolo-ai-native-devcon-harness-engineering|Lopopolo / AI Native DevCon 2026]])
+
+[[2026-06-19-lopopolo-ai-native-devcon-harness-engineering|Lopopolo]] (OpenAI; coiner of *harness engineering*) frames the cut at the engineering-workflow grain: the human's scarce resource is **synchronous attention**, so the discipline is to **remove the human from the loop wherever a guardrail can do the steering** — *"get to a world where we're more and more headless, less human-interrupt-dependent, and able to trust the agent to do more and more complex things."* This is the **augmentation→automation glide** (Narayanan's *transition-follows-reliability* and Beutler's Ask→Assist→Automate ladder) stated as a feedback-capture loop: every human interruption / review comment / failed build is a *signal that context was missing*, slurped up and "dreamed over" nightly so the next run needs less human steering. The boundary he keeps on the human side is **judgment at review** (the agent "must convince me to merge") and the **group-tech-lead** altitude (invariants/interfaces, not keystrokes) — the same *delegate-tasks-not-judgment* line as [[2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer|Forsgren & Macvean]] / [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen]], here with an explicit mechanism for *moving the boundary rightward over time*.
 
 ## The four-source convergence on the distinction
 

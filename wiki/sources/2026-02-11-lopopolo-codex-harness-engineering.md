@@ -159,7 +159,7 @@ The post is honest about three open questions:
 
 ## Linked entities and concepts
 
-- **Author (1st mention; Dangling per [author-entity-promotion rule](../../CLAUDE.md#author-entity-promotion))**: Ryan Lopopolo (Member of Technical Staff, OpenAI). Acknowledgments name **Victor Zhu** and **Zach Brock** as contributors, and *"the entire team that built this new product."* Promote on second-source mention.
+- **Author — promoted to an entity** (second-source rule, 2026-06-20): [[Ryan Lopopolo]] (Member of Technical Staff, OpenAI; coiner of "harness engineering"). Promoted after his second substantive source, [[2026-06-19-lopopolo-ai-native-devcon-harness-engineering|the AI Native DevCon talk]]. Acknowledgments name **Victor Zhu** and **Zach Brock** as contributors, and *"the entire team that built this new product."*
 - **Organization**: [[OpenAI]] — already has an entity page. Add this source to its inbound-link set.
 - **Products / projects mentioned**: **Codex**, **Codex CLI** (using GPT-5), **Aardvark** (an agent that also operates on the codebase, not detailed here). All product names; not promoted on a single mention.
 - **Concepts touched**:

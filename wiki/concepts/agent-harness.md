@@ -5,7 +5,7 @@ tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-man
 confidence: 0.98
 last_confirmed: "2026-06-20"
 accessed_at: "2026-06-20"
-source_count: 64
+source_count: 65
 relationships:
   - type: part-of
     target: ai-agents
@@ -285,6 +285,22 @@ Until February 2026 the wiki carried *practitioner essays* and *vendor announcem
 > *"Our most difficult challenges now center on designing environments, feedback loops, and control systems that help agents accomplish our goal: build and maintain complex, reliable software at scale."*
 
 This **substantiates** the rhetorical claims of [[2026-05-07-chatterjee-anatomy-of-agent-harness|Chatterjee]] and [[2026-05-07-kokane-agent-harness-vs-systems-design|Kokane]] with a concrete operational case at vendor scale. It is also the strongest worked example yet of [[2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering|Karpathy's]] *agentic engineering* discipline: humans steer, agents execute, the discipline shows up in *the scaffolding* — not the code.
+
+### The coiner's definition + the three-phase context-delivery model ([[2026-06-19-lopopolo-ai-native-devcon-harness-engineering|Lopopolo / AI Native DevCon, June 2026]])
+
+Four months after the [[2026-02-11-lopopolo-codex-harness-engineering|Codex blog]] (the *artifact* inside one repo), [[Ryan Lopopolo]]'s AI Native DevCon talk supplies the **named definition** of harness engineering by its coiner and the **operating loop** the blog only implied:
+
+> *"Harness engineering is making context around what it means to do a good job legible, and then just-in-time surfacing it to the agent over the course of its trajectories in order to steer and refine its output"* — so every PR adheres to **"the golden thread"** of acceptable, aligned software.
+
+Five contributions that sharpen this concept page:
+
+- **The three remaining foundational limits** once code-production is cheap: **human time** (the scarce resource — *"remove my own synchronous attention from the process"*; he maxes at ~3 concurrent sessions), **human/model attention** (*"attention must sum to one"* — thrashing the agent degrades it), and **the context window** (still scarce; GPT-series **auto-compaction** lets tasks run 6/12/36 hours, but the window is "obliterated and rebuilt," so context must be *continually resurfaced*). These are the *post-cheap-code* constraints the harness exists to manage.
+- **The three-phase context-delivery model over a PR** — a temporal refinement of Chatterjee's Context/Constraints/Contracts layers: **(1) grounding** (a numbered set of steps in the agent file: read docs/ticket, spider ADRs/design-docs for blast radius, read critical user journeys for the QA plan); **(2) the messy middle** (exploit the agent's tool calls to **just-in-time prompt-inject** and steer back to baseline — tool-call output is weighted *less* during auto-compaction, so it doesn't pollute the window up front); **(3) review & merge** (the diff is now static, so use "very many LM-as-judge" against static guardrails, judges collaborating with the implementation agent over the PR thread).
+- **Shift *right*, not left** — the counter-intuitive inversion of DevOps orthodoxy: put interventions as far *right* as possible to minimise synchronous human time, then drive each correction *down a durability ladder* — trash-and-reprompt → **write it down** → reviewer agent judges every diff → **statically-verifiable lint/guardrail/test**. Governing rule: **"I never want to give the same review feedback twice"** → make every mistake statically impossible. (In Q&A he notes agents *auto-discover* the relevant persona-guardrails by change category, which is *why* shift-right works; he only shifts a guardrail left when it's needed across ~15 context windows and gets auto-compacted away.)
+- **All code is prompts → prune latent space.** Every token fed to the agent is prompting, so *all code in the repo* (not just docs) is prompt — therefore **unify the codebase on consistent patterns** (one observability stack, not six) so the model translates context across the repo without burning attention. Agents have seen "every permutation" in training; the harness's job is to **prune latent space** — tell it which choices to make (prototype vs production). **Review personas** (bulleted-list guardrails) + **coarse structural tests** (snapshot tests at 100% branch coverage; statically banning `any`/`unknown`) are the blunt instruments; failing checks that *say why and what to do* let the agent **self-heal**.
+- **Treat the agent as a teammate at review** (biased toward merge; it must *convince you*, with staging logs / reproduction video via computer-use or a vibed Xvfb+ffmpeg rig), and **systematize feedback → "dream over it every night"** (every review comment / interruption / failed build / prod exception is a missing-context signal; sub-agents distill them nightly toward "more headless" operation — explicitly the [[2026-05-08-bratanic-unified-agentic-memory-hooks|dream-phase]]). Vibe coding is part of the kit — it lets the engineer operate like a **group tech lead** who cares about invariants/interfaces, not keystrokes.
+
+This is the wiki's **practitioner-origin definition** of the discipline whose name the rest of the corpus relays (e.g. [[2026-05-06-bockeler-engineering-of-ai-agents-context-harnessing-autonomy|Böckeler]] credits "the OpenAI Codex team"). It sits on the **durable-harness pole** of the [§Debates](#debates-and-supersession) durability question — but his *"retool the stack with every model point release"* is the same subtraction mechanism [[2026-06-11-kilpatrick-sequoia-model-eats-the-harness|Kilpatrick]] names, consistent with the wiki's reconciliation (the durable asset is the *discipline + guardrails + telemetry*, not any specific component).
 
 ### Headroom: a shipping Context-layer implementation ([[2026-06-03-chopra-headroom-context-optimization-layer-for-llm-applications|Chopra / Netflix, Linux Foundation June 2026]])
 

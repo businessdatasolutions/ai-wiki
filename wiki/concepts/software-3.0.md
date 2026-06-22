@@ -5,7 +5,7 @@ tags: [software-3.0, software-2.0, software-1.0, llm-paradigm, prompting, contex
 confidence: 0.88
 last_confirmed: "2026-06-20"
 accessed_at: "2026-06-20"
-source_count: 7
+source_count: 8
 relationships:
   - type: instance-of
     target: generative-ai
@@ -112,6 +112,8 @@ Both framings agree on the same architecture from two vantages: Karpathy describ
 Karpathy's [[2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering|extrapolation]] for what's "obvious by 2026" is more radical than typical:
 
 > *"You could imagine completely neural computers in a certain sense. You feed raw videos — imagine a device that takes raw video or audio into basically what's a neural net — and uses diffusion to render a UI that is unique for that moment."*
+
+**The *all-code-is-prompts* corollary** ([[2026-06-19-lopopolo-ai-native-devcon-harness-engineering|Lopopolo / AI Native DevCon 2026]]): if the context window is the program and the LLM is the interpreter, then *every token the agent reads is prompting* — and Lopopolo draws the sharp consequence that **all code in the repo, not just the docs, is prompt.** Hence the engineering move to **unify the codebase on consistent patterns** (one observability stack, not six) so the interpreter translates context across the repo without burning attention, and to **"prune latent space"** — since the model has seen "every permutation" in training, the Software-3.0 program's job is to *narrow* which choices it makes. This is the harness-engineering reading of *context-as-program*: the program is not only the prompt you type but the entire repo the agent reads as context.
 
 His historical reference: in the 50s and 60s, people were unsure whether computers would look like *calculators* or *neural nets*. The calculator path won; neural nets now run *virtualised* on top of classical computers. Karpathy's hypothesis: **this might flip**. The neural net becomes the **host process**; the CPU becomes the **co-processor** — used for tool-use over deterministic tasks as a "historical appendage."
 

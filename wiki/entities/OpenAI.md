@@ -5,9 +5,9 @@ aliases: ["OpenAI"]
 tags: [openai, ai-lab, foundation-models, chatgpt, gpt-4, gpt-5, codex, agentic-engineering, sora, custom-gpts, public-benefit-corporation, nonprofit-foundation]
 since: 2015
 confidence: 0.95
-last_confirmed: "2026-06-13"
-accessed_at: "2026-06-13"
-source_count: 17
+last_confirmed: "2026-06-20"
+accessed_at: "2026-06-20"
+source_count: 18
 relationships:
   - type: published-by
     target: 2025-10-05-patwardhan-et-al-openai-gdpval

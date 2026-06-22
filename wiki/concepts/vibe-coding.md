@@ -5,7 +5,7 @@ tags: [vibe-coding, agentic-engineering, software-3.0, ai-agents, accessibility,
 confidence: 0.95
 last_confirmed: "2026-06-20"
 accessed_at: "2026-06-20"
-source_count: 21
+source_count: 22
 relationships:
   - type: instance-of
     target: software-3.0
@@ -109,6 +109,8 @@ The danger in conflating them: vibe-coded artifacts shipped to production *as if
 | [[2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer\|Forsgren & Macvean / Google I/O 2026]] | **The corporate-research ceiling-side negative claim**. *"Our top engineers are **not** vibe coding. They are not prompting for code. What they're doing is designing environments, setting the guardrails, creating the systems so that agents and humans can work together toward a goal and a broader purpose."* The cleanest Google-Research articulation of the floor-vs-ceiling split — vibe coding raises the floor (acknowledged elsewhere in the talk via the Search-org PM story); but at the ceiling, top engineers explicitly do *not* vibe code, they practise [[agentic-engineering]]. With DORA's amplifier-and-mirror framing: *"if you lack deep engineering understanding... AI can run the risk of generating technical and cognitive debt at an incredibly fast rate"* — the published-by-Google operationalisation of the *"why vibe-coding-shipped-to-production is the wrong tool"* claim |
 
 | [[2026-06-18-ramaswamy-mckinsey-every-company-software-company\|Ramaswamy / Snowflake (McKinsey Podcast) 2026]] | **The floor-raising thesis inside an enterprise, from the CEO chair.** Ramaswamy's sales reps *"don't think twice about shipping a new visualization dashboard or honestly a new application … all they have to do is describe what they want done in English."* He frames the **conversational interface** as the new natural interface for software — replacing *"bespoke web interfaces … stylized to serve the masses"* — and the learning loop as ask → explain → ask-differently → debate. Pairs the non-engineer-shipping-software claim (Replit/Emergent/Figma vantages) with a **public-data-company-CEO vantage**; the floor-raising and the [[agentic-engineering\|ceiling]] ("uber programmers 50–100×") are named in the same breath |
+
+| [[2026-06-19-lopopolo-ai-native-devcon-harness-engineering\|Lopopolo / AI Native DevCon 2026]] | **Vibe coding as an enabler of the group-tech-lead operating mode** (from the coiner of *harness engineering*). *"I think vibe coding is a big part of what it takes to be successful here, because there's a ton of guardrails that only affect my local development process. This code can be gross, but it brings into possibility this idea that I don't need to care about some parts of the software production function."* The payoff: operating *"like a group tech lead or an org lead where I don't have visibility into every single engineer's activity on the keyboard"* — caring about invariants/interfaces, not keystrokes. He also **vibes guardrails into place** (100% coverage + table-driven tests, migrate the codebase in one go) and vibes up an Xvfb+ffmpeg rig to record reproduction videos. The clearest statement that the floor-raising mode is a *load-bearing tool inside the [[agent-harness\|ceiling]] discipline*, not opposed to it |
 
 ## Debates and supersession
 
