@@ -5,7 +5,7 @@ tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, 
 confidence: 0.95
 last_confirmed: "2026-06-20"
 accessed_at: "2026-06-20"
-source_count: 30
+source_count: 31
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -216,6 +216,8 @@ Three mid-June-2026 video interviews land the durable-skills thesis from three p
 - **[[2026-06-17-ng-langchain-interrupt-future-of-ai-agents|Andrew Ng]] — *the scarce input is deciding what to build.*** Ng's *product-management bottleneck becomes an everything-bottleneck* and his *small teams of high-context, empowered generalists* relocate value to scoping, judgement, and cross-functional context — the same skill cluster Thompson's developers name (*communication / spec-elicitation / priority-setting / deciding-what-to-build*).
 
 The three add no new *measurement* methodology (so they do not lift the concept's confidence past its 0.95 ceiling), but they are the strongest **practitioner-vantage convergence** in the corpus on the page's central claim: as execution commoditises, the durable bundle is **domain expertise + judgement + taste**, and (per [[2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces|BCG]]) the *fluency to wield AI well* rides alongside it.
+
+A fourth June-2026 voice, [[2026-06-18-ramaswamy-mckinsey-every-company-software-company|Sridhar Ramaswamy]] (CEO, Snowflake), names the **meta-skill** side directly as a hiring criterion: **malleability/adaptability** — *"tell me something meaningful you have changed in yourself over the past year"* — plus **don't-set-limits / first-principles generalism** (*"I'm an engineer by training but I think from first principles about everything from communication to marketing to strategy to sales"*) and **curiosity**. This is the [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti]] *mindset-not-skillset* / *capacity-to-change-professional-identity* claim restated as an interview question, and convergent with the [[2026-02-09-ross-schneider-adaptability|Ross & Schneider]] *adaptability-is-the-new-resilience* centering and [[2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting|Sternfels']] *aptitude-to-learn-novel-stuff* hiring shift.
 
 ## Related concepts
 

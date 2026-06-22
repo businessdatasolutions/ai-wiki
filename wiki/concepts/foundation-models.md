@@ -3,9 +3,9 @@ type: concept
 aliases: ["foundation model", "foundation models", "FM", "frontier model", "frontier models"]
 tags: [foundation-models, generative-ai, ai-research]
 confidence: 0.85
-last_confirmed: "2026-06-15"
-accessed_at: "2026-06-15"
-source_count: 17
+last_confirmed: "2026-06-20"
+accessed_at: "2026-06-20"
+source_count: 18
 quality_score: 0.95
 quality_notes: ['1 near-empty section(s)', '2 broken body wikilink(s)']
 ---
@@ -129,6 +129,10 @@ The structural implication Evans names: *"What is the steady state equilibrium p
 The under-asked question Evans poses (in response to *"what's a question about AI that nobody's asking?"*): *"I'm not sure how many people are asking whether model labs have pricing power. I think a lot of people are just presuming that the situation today will continue or that of course they will."*
 
 The thesis sits in productive tension with *foundation-models-as-the-platform* readings ([[2026-04-26-how-to-win-when-software-is-not-a-moat-evan-spiegel-snapchat-ceo|Spiegel's *software-is-not-a-moat*]] makes the same argument from the application-layer side at a different altitude; the [[agent-harness]] concept's *"harness wraps a (rented, swappable) foundation model"* framing is structurally compatible — *the model is the commodity, the harness is the differentiated layer*). The pricing-power-or-not question is genuinely open in 2026; Evans is the wiki's first explicit *no-they-won't-have-pricing-power* voice at independent-analyst altitude.
+
+## The *beneath-vs-above-the-model* + open-source-substitution buyer view ([[2026-06-18-ramaswamy-mckinsey-every-company-software-company|Ramaswamy / Snowflake 2026]])
+
+[[2026-06-18-ramaswamy-mckinsey-every-company-software-company|Ramaswamy]] (CEO, Snowflake — a major *buyer* and *host* of foundation models) corroborates the commodity-pressure thesis from the platform-vendor chair: **open-source models are "getting better and better,"** Snowflake hosts them alongside the frontier models, and *"if they're as good, our customers will want to use them instead of the frontier model."* He frames the open strategic question as **what stays "beneath the model" vs "above the model"** — will disruption land on the layer close to end-users, or at a lower layer? This is the same *the-model-is-the-swappable-commodity, the differentiated value is elsewhere* structure as Evans's commodity-utility thesis and the [[agent-harness]] *rented-model* framing, now stated as a procurement reality (a buyer that will switch to open weights the moment they reach parity). It also pairs with the [[2026-06-17-ng-langchain-interrupt-future-of-ai-agents|Ng]] *optionality* discipline — both treat model choice as fluid and lock-in as a liability.
 
 ## Debates and supersession
 

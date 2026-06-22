@@ -5,7 +5,7 @@ tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, c
 confidence: 0.95
 last_confirmed: "2026-06-20"
 accessed_at: "2026-06-20"
-source_count: 46
+source_count: 47
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -325,6 +325,13 @@ Two June-2026 interviews restate the augmentation pole from the practitioner and
 - **[[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Mollick / A Bit of Optimism]] — *doubling down on human* as the prescriptive augmentation stance.** Mollick argues raw productivity gains just yield "100× more PowerPoint" unless the work-product is rethought, and that the dangerous default ("fire everyone, profits go up") is the wrong reading; the leverage is showing how **augmentation makes humans thrive**. He sharpens the human side of the pair: jobs shift their *weight* (the editor rises over the writer; the architect over the clean-coder), and the binding skill becomes **evaluation** of AI output (an expert capacity) — the augmentation pole's quality-side requirement, convergent with [[2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai|Storoni's]] gear-2 reframe and [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti's]] *everyone becomes a manager*.
 
 Per the [[../../CLAUDE.md#lifecycle|Lifecycle rules]] these two practitioner/popularisation sources do not lift the concept's confidence past its 0.95 ceiling; they reinforce the augmentation-pole-is-judgement-work consensus from the founder/educator vantages.
+
+### 25. *Redeploy, don't cut* + support-automation: the Snowflake CEO worked example ([[2026-06-18-ramaswamy-mckinsey-every-company-software-company|Ramaswamy / McKinsey Podcast 2026]])
+
+[[2026-06-18-ramaswamy-mckinsey-every-company-software-company|Ramaswamy]] (CEO, Snowflake) supplies a clean CEO-altitude instance of the **augmentation-works-when-savings-are-reinvested** rule (§16 HubSpot/IBM):
+
+- **Redeploy, not reduce.** When AI made a dedicated **demo team** unnecessary (every account exec now makes their own demo), the team was **moved into other roles**, not cut. Kutcher's reframe — endorsed — is the page's augmentation thesis verbatim: not "fewer developers" but "more code → grow the value proposition at an outpaced rate" + filling roles previously left open. *"That's absolutely the first option."* Ramaswamy is candid about the other side: some staff "struggle to adopt," and it shows up in performance management.
+- **Support automation as a "surefire-hit" automation case.** Snowflake's self-built support system (six weeks on Cortex Code) left "support queues pretty much empty," and the SRE team automated 4-day Kubernetes-log investigations — a concrete *automation-leg* deployment (the agent handles the volume; humans handle the long tail), paired with the *augmentation-leg* redeployment above. Together they are the same firm running both legs of the cut simultaneously — and reinvesting the freed capacity toward growth rather than headcount reduction.
 
 ## The four-source convergence on the distinction
 

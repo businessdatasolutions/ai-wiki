@@ -5,7 +5,7 @@ tags: [employment, labor-market, ai-displacement, automation, labor-economics, a
 confidence: 0.95
 last_confirmed: "2026-06-20"
 accessed_at: "2026-06-20"
-source_count: 49
+source_count: 50
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -382,6 +382,8 @@ Two June-2026 interviews add a **political-economy** and an **entrepreneurship**
 - **[[2026-06-19-chou-yc-lightcone-40-year-old-solo-founder|Chou / YC Lightcone]] — the *abundance / more-small-business* counter-read.** Chou's "AI white pill" against the doomer scenario: AI is "the great equalizer" that lets the deep-but-narrow builder also do go-to-market, so *"entrepreneurship might become way more important"* and there will be *"way more small business in the future."* The **age-of-the-40-year-old-solo-founder** thesis is the optimistic compositional shift — not net job loss but a redistribution toward many tiny, experience-led firms (one person + agent "clones"). A useful counterweight to the page's entry-level-decline findings: the displaced-mid-career worker as a *prospective founder*, not only a casualty.
 
 Per the [[../../CLAUDE.md#lifecycle|Lifecycle rules]] these two interview/popularisation sources do not lift the concept's confidence; they widen the page's coverage to the *political-economy* and *entrepreneurship* angles alongside the empirical displacement panel.
+
+A third June-2026 CEO voice, [[2026-06-18-ramaswamy-mckinsey-every-company-software-company|Sridhar Ramaswamy]] (Snowflake), holds **both** the anxious and the growth read at once: he is *"terrified about the future employment"* of his two software-engineer sons (26 and 24) and pushes technical staff to be *"at the cutting edge … protect your livelihood,"* yet his own firm's response is **redeploy-not-cut** (the demo team moved to other roles; "real opportunities for people I haven't been able to fill before") and **grow output, not shrink headcount**. The *"uber programmers 50–100×"* claim is the productivity-per-worker correlate of the uneven-adoption split he also names ("there are people … struggling to adopt"). A CEO-altitude statement of the *augmentation-with-reinvestment beats displacement* posture — with explicit acknowledgement that the transition is uneven across workers.
 
 ## Debates and supersession
 

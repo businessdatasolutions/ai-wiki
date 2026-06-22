@@ -5,7 +5,7 @@ tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omni
 confidence: 0.95
 last_confirmed: "2026-06-20"
 accessed_at: "2026-06-20"
-source_count: 75
+source_count: 76
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -150,6 +150,16 @@ Driving the change requires a **united front among the CEO, CIO, chief strategy 
 - **Optionality as a buyer discipline.** "I personally almost never sign longer than a one-year contract regardless of the discounts offered" — because the leading model/coding-agent a year out is unknown; plus vendor-neutral observability (LangSmith) and open-weight hedging. The buyer-side complement to the [[agent-harness|"plan for swap, not marriage"]] prescription.
 
 Relatedly, [[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Mollick]] supplies the same *redesign-the-work-product* point from the individual-productivity side: raw productivity gains just yield "100× more PowerPoint" unless the organisation rethinks *what the work product is* — human systems "weren't built for an AI world."
+
+### Business-transformation-not-technology + viral adoption + the two ROI "surefire hits" ([[2026-06-18-ramaswamy-mckinsey-every-company-software-company|Ramaswamy / Snowflake, McKinsey Podcast 2026]])
+
+[[2026-06-18-ramaswamy-mckinsey-every-company-software-company|Sridhar Ramaswamy]] (CEO, Snowflake) supplies a CEO-vantage read that converges tightly with the page's *transformation lens* (Dutt/Chatterji), the [[micro-productivity-trap]], and the [[2026-06-17-ng-langchain-interrupt-future-of-ai-agents|Ng]] / [[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|DBS]] enterprise reads:
+
+- **"This is more of a business transformation than a technology transformation."** The lever is **change management** and **org-structure rework** — *"I don't have to have the organizational silos … a certain reporting structure that doesn't have to happen in a world of agents."* Same diagnosis the page's *micro-productivity-trap* / *process-lock-in* sources name: value comes from redesigning the org around AI, not bolting AI onto existing structure.
+- **Change management via *viral* adoption (a "happy accident").** Snowflake shipped an unrestricted internal coding agent (**Cortex Code / "Coco"**, CLI + desktop); because all company data already lived in Snowflake (the **Snowhouse** instance), *"the entirety of the company became AI literate pretty much in a matter of six weeks … I did not have to mandate. I didn't have training programs. Coco spread virally because people got so much utility from it."* The prescription — **"make your team embrace AI without forcing it down everyone's throats"** — is a counterpoint to top-down mandate, and a worked instance of the [[2026-05-07-carucci-resistance-as-data|resistance-as-data]] / *make changes WITH people* stance. The data-already-in-one-place precondition is the [[2026-06-17-ng-langchain-interrupt-future-of-ai-agents|data-architecture]] prerequisite made concrete.
+- **AI with ROI — two "surefire hits."** **(1) Software engineering** (Cortex Code); **(2) support** — Snowflake "rolled our own support system … written in six weeks on Cortex Code," now "support queues are pretty much empty"; the SRE team rewrote its observability/alerting stack, automating 4-day Kubernetes-log investigations. A clean, named answer to the page's recurring *where-is-the-ROI* question — and notably **both hits are internal engineering/operations**, not customer-facing product.
+- **Redeploy, don't cut; growth over headcount.** When AI made a dedicated demo team unnecessary (every account exec makes their own demo), the team was **moved into other roles**; the work is identifying the *new* jobs AI creates and transitioning people. Kutcher's reframe (endorsed): "more code → grow my value proposition at an outpaced rate" + filling roles previously left open — the [[automation-vs-augmentation|augmentation]]-with-reinvestment pattern at CEO altitude.
+- **Consumption pricing as the AI-era model.** "Customers pay only if they get value"; tokenization pricing "is not likely to last … not every token has the same value"; per-person + per-account limits to bound runaway spend. A business-model-renewal signal for how AI value is captured (a [[dynamic-capabilities|strategic-renewal]] move on how value is priced).
 
 ## The Anand-Wu 2×2 task framework
 
