@@ -3,9 +3,9 @@ type: concept
 aliases: ["agentic engineering", "Agentic Engineering", "agentic-engineering", "agent engineering"]
 tags: [agentic-engineering, vibe-coding, software-3.0, ai-agents, agent-harness, software-engineering, hiring, karpathy, codex-case-study]
 confidence: 0.97
-last_confirmed: "2026-06-20"
-accessed_at: "2026-06-20"
-source_count: 39
+last_confirmed: "2026-06-23"
+accessed_at: "2026-06-23"
+source_count: 41
 relationships:
   - type: depends-on
     target: agent-harness
@@ -188,6 +188,16 @@ Allen pairs the definition with the AWS-vendor-altitude operating-model corollar
 ## The developer-tooling-vendor instantiation: Agent HQ + the four VS Code modes ([[2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life|Randell & Gousset / Microsoft Dec 2025]])
 
 The [[GitHub]]/[[Microsoft]] *Agentic DevOps* keynote shows what agentic-engineering *primitives* look like once a tooling vendor productises them. **Agent HQ** ([[GitHub]], announced at GitHub Universe) is an explicit harness-orchestration surface: monitor, **steer an active agent session mid-run**, and audit past runs — and via its **open architecture**, run the [[OpenAI]] Codex agent (with [[Anthropic|Claude]] and [[Google|Gemini]] agents following) from inside one IDE under one license. The keynote's **four VS Code Copilot modes — Ask / Edit / Agent / Plan** — are a clean ladder of escalating autonomy, with **Plan mode** (the agent states its implementation plan *before* acting) added specifically to counter the *"if we give the agent too much autonomy, sometimes bad things happen"* failure mode. Instructions files encode house rules + **exemplars** (the keynote's term for the same *"here's how we do something in our application"* baseline the wiki tracks as RAG-style context-injection). This is the **developer-tooling-vendor altitude** on the [[agent-harness|harness]]-composition discipline — the same *non-determinism-is-a-feature / processes-are-the-hard-part* thesis Allen (AWS) and Fung (Anthropic) name above, now expressed as shipping IDE features. The keynote also extends agentic engineering *past coding* into IT-ops via the **Azure SRE Agent** (autonomous monitoring + permissioned remediation), and supplies the wiki's clearest vendor statement of the collaboration spectrum: **human-in-the-loop / on-the-loop / out-of-the-loop**, with the presenters using nothing fully out-of-the-loop.
+
+## The product-leader-altitude framing: loops as *designing jobs* ([[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex|Vo / How I AI, June 2026]])
+
+[[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex|Claire Vo's How I AI explainer]] (17 June 2026) supplies the wiki's **product-leader / non-engineer altitude** on agentic engineering, and its load-bearing contribution is a management mental model: **designing a loop is designing a job.** *"When you're designing loops or designing agents, this is the time for the manager… just imagine you're onboarding an employee."* You write an EA's recurring duties ("every Friday, review my calendar and Slack me the follow-ups"), a software engineer's ("every hour, check for a GitHub issue, triage, write code, open a PR"), or a goal-bounded job ("every PR, iterate until all checks are green and it's ready to deploy") — and you have, respectively, a heartbeat, a cron-ish, and a goal loop. This is the same *"agents are intern entities the human coordinates"* claim this page records from [[Andrej Karpathy]], re-expressed as an onboarding-and-delegation exercise legible to a product manager rather than an engineer. It operationalises the recurring **manager-of-agents** motif (cf. [[2025-05-06-jassy-amazon-agility-ai-strategy-changing-role-of-managers|Jassy on the changing role of managers]]) into a concrete authoring practice.
+
+Vo's deliberate de-hyping — *"don't worry if you are not loop-maxing… I still do a little prompting"* — is a useful counterweight to the discipline's own ceiling-pushing rhetoric: the practice is *accessible*, the loops are *jobs*, and conversational prompting remains legitimate where the human wants to stay in the loop. Her two caveats (goal/loop prompts demand far more precise success criteria than conversational prompts; goal loops burn tokens against thin validation) reinforce this page's *"spec-first, precise contracts"* observations from the cost side. See [[agent-harness]] for the mechanism-level loop-trigger taxonomy (heartbeat / cron / hook / goal).
+
+## The production-security instance: rolling your own harness at codebase scale ([[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Grinstead / How I AI, June 2026]])
+
+[[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Grinstead (Mozilla, June 2026)]] is the wiki's first agentic-engineering case study in **security at production codebase scale** (Firefox: tens of millions of LOC). It ratifies several of the discipline's load-bearing claims from a non-startup, open-source-steward vantage: the engineer's job becomes *building and tuning the harness/pipeline* (LLM judge → analyzer → verifier → patch) rather than writing the fix; *"the harness is simpler than it looks"* (a *"reasonably simple wrapper"* around Claude Code/Codex; the minimal version is one prompt + the `-p` flag, no SDK); and the decisive engineering judgment is **what verification signal to build** (the AddressSanitizer win/lose crash signal). Grinstead's model-vs-harness ~50/50 split and *"30 ideas off every one thing you did"* are a working-engineer's evidence that the agentic-engineering frontier (harness + pipeline + eval design) remains wide open — the practitioner counterweight to [[2026-06-11-kilpatrick-sequoia-model-eats-the-harness|model-eats-the-harness]]. The transferable craft — *score → verify → fix* reused for perf, conversion, or tech debt — is agentic-engineering as a **general workflow-design discipline**, not a security niche.
 
 ## Debates and supersession
 

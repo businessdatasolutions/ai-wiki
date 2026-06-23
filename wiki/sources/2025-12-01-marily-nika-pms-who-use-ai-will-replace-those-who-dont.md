@@ -169,8 +169,8 @@ This is the wiki's first source naming **prompt-rewriting-by-LLM as a recovery l
 
 ## Linked entities and concepts
 
-- **Channel (1st mention; Dangling per [author-entity-promotion rule](../../CLAUDE.md#author-entity-promotion))**: **How I AI** — podcast with website [howiaipod.com](https://www.howiaipod.com/), produced by penname.co. Defer entity-page promotion to second-source mention.
-- **Host (1st mention by name; Dangling)**: **Claire Vo** — product leader; runs the **ChatPRD** product (chatprd.ai); website clairevo.com. Body-prose mention only; not promoted on a single source.
+- **Channel (now promoted, 2026-06-22)**: [[How-I-AI|How I AI]] — podcast with website [howiaipod.com](https://www.howiaipod.com/), produced by penname.co. Promoted to an entity page on the [[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex|second How I AI ingest]] per the [author-entity-promotion rule](../../CLAUDE.md#author-entity-promotion).
+- **Host (now promoted, 2026-06-22)**: [[Claire Vo]] — product leader; runs the **ChatPRD** product (chatprd.ai); website clairevo.com. Promoted alongside the channel on the second source.
 - **Guest (1st mention by name; Dangling)**: **Marily Nika** — AI Product Lead at [[Google]]; founder of **AI Product Academy**; runs the **AI Product Management Bootcamp & Certification** (six-week cohort, partnered with Maven / Lenny's List). LinkedIn / website / Substack / bootcamp link in the video description.
 - **Organizations**:
   - [[Google]] — Marily's employer; Google Labs ships **Flow** (powered by Veo); **NotebookLM** is also a Google product. Add this source to Google's inbound set; minor entity-page extension warranted (Google's surface area now visibly includes Flow + NotebookLM at the consumer-PM end, not just the cloud / agent-platform / research-arm angles already in the entity page).

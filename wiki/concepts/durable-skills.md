@@ -3,9 +3,9 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-06-20"
-accessed_at: "2026-06-20"
-source_count: 31
+last_confirmed: "2026-06-23"
+accessed_at: "2026-06-23"
+source_count: 32
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -218,6 +218,13 @@ Three mid-June-2026 video interviews land the durable-skills thesis from three p
 The three add no new *measurement* methodology (so they do not lift the concept's confidence past its 0.95 ceiling), but they are the strongest **practitioner-vantage convergence** in the corpus on the page's central claim: as execution commoditises, the durable bundle is **domain expertise + judgement + taste**, and (per [[2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces|BCG]]) the *fluency to wield AI well* rides alongside it.
 
 A fourth June-2026 voice, [[2026-06-18-ramaswamy-mckinsey-every-company-software-company|Sridhar Ramaswamy]] (CEO, Snowflake), names the **meta-skill** side directly as a hiring criterion: **malleability/adaptability** — *"tell me something meaningful you have changed in yourself over the past year"* — plus **don't-set-limits / first-principles generalism** (*"I'm an engineer by training but I think from first principles about everything from communication to marketing to strategy to sales"*) and **curiosity**. This is the [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti]] *mindset-not-skillset* / *capacity-to-change-professional-identity* claim restated as an interview question, and convergent with the [[2026-02-09-ross-schneider-adaptability|Ross & Schneider]] *adaptability-is-the-new-resilience* centering and [[2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting|Sternfels']] *aptitude-to-learn-novel-stuff* hiring shift.
+
+## Cognitive coverage + token-efficiency as premium skills in token abundance ([[2026-06-05-nadella-hoffman-possible-ai-future-of-the-firm|Nadella / Possible, June 2026]])
+
+[[2026-06-05-nadella-hoffman-possible-ai-future-of-the-firm|Nadella (June 2026)]] names two durable capabilities specific to the *token-abundance* regime, both convergent with the page's judgement/evaluator spine:
+
+- **Cognitive coverage.** *"Just like test coverage, whenever an agent does work it creates a quiz so we humans learn what it did."* The durable skill is the **deductive understanding and evaluation** of agent output — *"the expertise is always in abundance; it's your cognitive coverage of that expertise that's at a premium."* This is the platform-CEO operationalisation of the *expert-as-evaluator* claim ([[2026-05-07-kiron-schrage-compound-benefits|Kiron & Schrage]]) and Argenti's *everyone becomes a manager*, framed as a measurable practice (a quiz per agent task) rather than a posture.
+- **Token-efficiency + eval/rubric authoring.** *"Whoever figures out they can use tokens more efficiently for an outcome that matters is going to get ahead by definition."* The premium skill is setting *"the rubric and eval dimensions such that they capture the high taste only you can define"* — and knowing the system's limits well enough to apply *"don't use frontier models for non-frontier problems."* This adds a **meta-skill** to the durable-skills cluster: the judgment to spec objectives/evals and allocate model-tier-to-task — adjacent to the AEI *AI-literacy-as-learnable-meta-skill* finding, here named from the platform-CEO vantage as a source of durable advantage in an era where raw intelligence is cheap.
 
 ## Related concepts
 

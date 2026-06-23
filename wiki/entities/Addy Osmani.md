@@ -6,9 +6,9 @@ tags: [addy-osmani, google-chrome, web-developer-advocate, agent-harness-enginee
 affiliation: "Google (Chrome team)"
 role: "Software engineer at Google working on Chrome; web-developer advocate; prolific blogger on web performance, JavaScript, and (since 2025) AI-assisted software engineering; O'Reilly Radar contributor"
 confidence: 0.82
-last_confirmed: "2026-05-28"
-accessed_at: "2026-05-28"
-source_count: 2
+last_confirmed: "2026-06-22"
+accessed_at: "2026-06-22"
+source_count: 3
 ---
 
 # Addy Osmani
@@ -23,6 +23,7 @@ Osmani's wiki anchor is **harness engineering as a named discipline** — his [[
 
 - [[2026-05-15-osmani-agent-harness-engineering]] — first-party article: *Agent Harness Engineering* on O'Reilly Radar; the wiki's first article-altitude treatment of harness engineering as a named practitioner discipline.
 - [[2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering]] — cited by Everitt as influence on the nine-element agentic-engineering practice taxonomy.
+- [[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex]] — Claire Vo cites Osmani's *loop engineering* article as the best breakdown of what an effective loop needs, reproducing its five-element checklist (work trees, skills, plugins/connectors, subagents, state). Confirms Osmani's *loop/harness engineering* writing as a reference practitioners reach for at the product-leader altitude, not only the engineer altitude.
 
 ## Mentioned in
 

@@ -5,9 +5,9 @@ aliases: ["Microsoft", "Microsoft Corporation", "Microsoft Visual Studio", "MSFT
 tags: [microsoft, azure, azure-devops, visual-studio-code, vs-code, github-parent, copilot, responsible-ai, azure-sre-agent, openai-partner, developer-tools, agentic-devops]
 website: "https://microsoft.com"
 confidence: 0.8
-last_confirmed: "2026-06-09"
-accessed_at: "2026-06-09"
-source_count: 1
+last_confirmed: "2026-06-23"
+accessed_at: "2026-06-23"
+source_count: 2
 relationships:
   - type: employs
     target: GitHub
@@ -15,6 +15,9 @@ relationships:
   - type: published-by
     target: 2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life
     via: "Published on the Microsoft Visual Studio YouTube channel; demos Azure DevOps, VS Code, the Microsoft responsible-AI pipeline, and the Azure SRE Agent (22 Dec 2025)"
+  - type: authored-by
+    target: 2026-06-05-nadella-hoffman-possible-ai-future-of-the-firm
+    via: "CEO Satya Nadella articulating Microsoft's enterprise-AI worldview post-Build 2026 — token capital, the hill-climbing machine, Agent 365, Foundry asserts, the agentic development environment (5 Jun 2026)"
 ---
 
 # Microsoft
@@ -42,6 +45,10 @@ Microsoft's autonomous cloud-monitoring + incident-response agent (preview). Sco
 ### OpenAI partnership
 
 Microsoft hosts and routes [[OpenAI]] models (and now the Codex agent inside Copilot), alongside [[Anthropic]] and [[Google]] models. The keynote frames model choice as a developer decision, with Microsoft's proxy doing the safety validation regardless of model.
+
+### Satya Nadella / Build 2026 — the CEO-worldview source
+
+The [[2026-06-05-nadella-hoffman-possible-ai-future-of-the-firm|Nadella / Possible interview]] (5 Jun 2026, post-Build 2026) is the wiki's first **platform-CEO worldview** source and Microsoft's second formal inbound source. Nadella frames *AI as the future of the firm* (not a technology), introduces **token capital** as the firm-level asset that compounds alongside human capital, and lays out Microsoft's enterprise-AI stack as the manageability/security answer: the **hill-climbing machine** (evals/objectives as the new IP), **Agent 365** (agent identity/sandbox/policy/observability via Entra/Defender/Purview — see [[responsible-ai]]), **Foundry asserts** (runtime boundary enforcement — see [[agent-harness]]), and the **agentic development environment** (the GitHub app as an inbox of agents with Canvas, for *micro-steering of macro-delegation*). The dictum *"don't use frontier models for non-frontier problems"* anchors his token-efficiency argument. Co-designed silicon (**Maya**, **Cobalt**) and the *platform-company-defined-by-value-created-on-top* trust doctrine round out the strategy.
 
 ## Open questions
 

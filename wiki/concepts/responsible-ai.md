@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-06-15"
-accessed_at: "2026-06-15"
-source_count: 15
+last_confirmed: "2026-06-23"
+accessed_at: "2026-06-23"
+source_count: 16
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -206,6 +206,14 @@ The keynote also names the **AI-code risk surface** RAI has to govern (presenter
 The wiki's [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen page]] names Singapore's framework as the only government model worth adopting; Brovich's Sydney talk supplies the **operational detail**. Singapore IMDA's **Model AI Governance Framework for Agentic AI v1** — launched January 2026 at Davos by Minister **Josephine Teo** — is "the first state-backed governance framework specifically designed for autonomous AI agents" (extending IMDA's 2019 general model). Four dimensions: (1) **upfront risk assessment**, (2) **human accountability chains** — "every agent action is traced to a named human," (3) **technical guardrails across the lifecycle**, (4) **end-user transparency** (users must know they're dealing with an agent and its bounds). Five distinguishing features: it's the **first to mandate agent identity management** (a verifiable identity before an agent can act); concrete testing across five risk categories (building on AI Verify + the 2025 Global AI Assurance pilot); explicit **multi-agent coordination risk** (what happens when agents disagree/escalate/emerge — "no other framework has yet"); voluntary-but-directional (de facto standard for regulated/government work); and it addresses the **deskilling trap** head-on (must show you keep training the humans who'll take over). 
 
 The architectural punchline — convergent with **Amazon Bedrock AgentCore**, which "launched on the same four" questions (who's the agent / who authorised it / what may it do / can we audit it) — is **policy enforcement *outside* the LLM loop**: "you don't ask the agent nicely not to do something; you stop it at the gateway before the LLM ever sees the request," separating who-writes-policy (security) from who-writes-the-agent (engineering). This is RAI-as-infrastructure (cf. the Microsoft-pipeline and AgentSpec framings above): "running code enforcing rules, every request, every time" — the [[agent-harness|harness]] Constraints layer raised to a governance plane.
+
+## Agent 365 + asserts + social permission: the hyperscaler RAI-as-infrastructure view ([[2026-06-05-nadella-hoffman-possible-ai-future-of-the-firm|Nadella / Possible, June 2026]])
+
+[[2026-06-05-nadella-hoffman-possible-ai-future-of-the-firm|Nadella (Microsoft, June 2026)]] adds a platform-CEO instance of *RAI-as-running-infrastructure* (cf. the Microsoft-pipeline, AgentSpec, and Singapore framings above):
+
+- **Agent 365 — inventory, identity, sandbox, policy, observability.** *"There may be 20 million agents at Microsoft — I first need an inventory… what are they doing, what are their reasoning traces; they need to be fully inspectable, fully auditable."* Because agents *"execute code with file-system and network access,"* they get **identities** (extending Entra), **security** (Defender), and **data labeling/protection** (Purview), plus sandboxes and policy governance. This is the **agent-identity-management** requirement that Singapore's IMDA framework also mandates, here productised — *"security, containment, manageability, observability is how we have confidence around these agents."*
+- **Asserts vs guardrails-as-classifier.** For long-running agents, *"instead of guardrails as a classifier, you need the ability during execution to keep the execution path from going off the rails"* — runtime boundary enforcement (see [[agent-harness]] §asserts), the deterministic-enforcement direction RAI has been moving (cf. [[2025-07-31-wang-agentspec-runtime-enforcement-llm-agents|AgentSpec]]).
+- **Social permission and child safety as first-class RAI.** Nadella names **child safety** alongside cyber/bioweapon/alignment as a first-class AI-safety axis (children's *agency* in interacting with chatbots, not being persuaded). And he frames **social permission** as the industry's central RAI debt: the sector lost trust by saying *"all economic opportunity will go away for knowledge workers"* while being excited to build it; the repair is concrete and local — a data center must demonstrably help its community (tax base, schools, water, electricity prices), employment claims must name *"the new jobs and wages I can train for,"* and every firm must *participate in the frontier ecosystem, not just feed data to a foundation model* (*"sovereignty and dignity both lost"*). He ties this to **Pope Leo's encyclical** on AI and human dignity. This extends the concept's *labor-market-disruption-as-under-attended-RAI-concern* section with a vendor-CEO articulation of *earning and keeping social permission* as an RAI obligation.
 
 ## Debates and supersession
 

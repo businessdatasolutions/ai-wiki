@@ -5,14 +5,14 @@ aliases: ["Anthropic", "Anthropic PBC", "Claude"]
 tags: [anthropic, ai-lab, foundation-models, claude, public-benefit-corporation, long-term-benefit-trust]
 since: 2021
 confidence: 0.95
-last_confirmed: "2026-06-17"
-accessed_at: "2026-06-17"
-source_count: 21
+last_confirmed: "2026-06-23"
+accessed_at: "2026-06-23"
+source_count: 22
 ---
 
 # Anthropic
 
-AI safety and research company; publisher of the [[Claude]] family of models and the [[Anthropic Economic Index]] research series. Founded 2021 by **Dario Amodei** and **Daniela Amodei** (with a cohort of OpenAI departures) following the Amodei team's exit from [[OpenAI]] *"two or three OpenAI crises ago"* per [[2026-05-10-ries-lennys-force-destroys-companies-within|Ries 2026]]. **Public Benefit Corporation** with a **two-tier governance structure** (see [§Governance structure](#governance-structure) below). Partnered with [[Amazon Web Services]] (~$8B total invested as of 2024 per [[2026-04-28-werner-lebrun-octopus-organization]]).
+AI safety and research company; publisher of the [[Claude]] family of models and the [[Anthropic Economic Index]] research series. Founded 2021 by **Dario Amodei** and **Daniela Amodei** (with a cohort of OpenAI departures) following the Amodei team's exit from [[OpenAI]] *"two or three OpenAI crises ago"* per [[2026-05-10-ries-lennys-force-destroys-companies-within|Ries 2026]]. **Public Benefit Corporation** with a **two-tier governance structure** (see [§Governance structure](#governance-structure) below). Partnered with [[Amazon Web Services]] (~$8B total invested as of 2024 per [[2026-04-28-werner-lebrun-octopus-organization]]). A new (not-yet-fully-released) Anthropic model, **Mythos**, surfaces in [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Grinstead / How I AI (June 2026)]] as the model credited with Mozilla's Firefox security-bug spike — though Grinstead splits the credit ~50/50 between the model and the harness/pipeline.
 
 ## Governance structure
 

@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-06-20"
-accessed_at: "2026-06-20"
-source_count: 76
+last_confirmed: "2026-06-23"
+accessed_at: "2026-06-23"
+source_count: 77
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -519,6 +519,14 @@ BCG's four **CEO starting points** are an executive-readership adoption playbook
 ## The disclosure-culture constraint: trust beats governance ([[2026-06-10-anicich-brouwers-why-employees-arent-transparent-ai-usage|Anicich & Brouwers / HBR June 2026]])
 
 A sharp human-factor addition to the maturity story: even where individual adoption is high, the **collective** gain can stay near zero because employees **hide** the workflows they discover — [[ai-knowledge-hiding]]. The binding driver is **organizational trust**, operating through **psychological safety**, *not* formal AI policy or approved tooling. In the authors' 604-respondent survey of daily-AI users, **30.3%** intentionally withheld AI knowledge; the lowest-trust quartile was ~4× more likely to hide than the highest (**47% vs 14%**), and **having an AI policy or sanctioned tools, alone, predicted nothing**. A cited Stanford study of **51 enterprise deployments** found **77% of the hardest adoption challenges were non-technical** — the same human-maturity gap the [[2026-04-28-mit-sloan-ai-maturity|MIT CISR maturity]] work and the [[2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life|"trust gap"]] anchor describe, here viewed from the *disclosure* angle. The actionable inversion: **capturing AI's gains depends less on raising adoption than on making disclosure safe and rewarding** (stop taxing efficiency gains; reward adopted-workflow "multipliers"; legitimize experimentation via "side quests"). Connects directly to the [[micro-productivity-trap]] (the individual-level efficiency-tax that motivates hiding).
+
+## "Token capital" + AI-is-the-future-of-the-firm: the platform-CEO refounding mandate ([[2026-06-05-nadella-hoffman-possible-ai-future-of-the-firm|Nadella / Possible, June 2026]])
+
+[[2026-06-05-nadella-hoffman-possible-ai-future-of-the-firm|Nadella (Microsoft, June 2026)]] supplies the wiki's strongest **platform-CEO** statement that AI adoption is a *firm-redefinition* problem, not a procurement one:
+
+- **Token capital as a balance-sheet-invisible asset.** *"This economy is going to be shaped by both human capital and… token capital."* A firm's tacit knowledge — *"the unique ways you operate, pass judgment, have taste"* — is now extractable by models *"through human trajectories"* and encodable as weights/context/skills. The adoption mandate is to **compound** that into something *"you own, you control, you created"* — and *not leak it*, because *"if you leak it, it's a one-way door."* Nadella's leakage mechanism (model companies *"setting up gyms with rewards, employing employees who worked at your company previously"*) makes the *data-as-moat* claim concrete at the firm-IP level — the CEO-altitude version of the [[2026-06-12-aws-leaders-guide-data-strategy-agentic-ai|AWS data-strategy]] *your-data-is-your-context* thesis.
+- **The refounding mandate: "AI is not a technology, it's the future of the firm."** Unlike PC/cloud/mobile (*"have an IT department deal with vendors and reduce cost"*), this requires the CEO to answer *"what's your token capital?"* concretely — and Nadella is *"perplexed"* that most non-tech CEOs *"still haven't woken up,"* doing a press release and *"pointing to eight agents they built."* This is the sharpest articulation in the corpus of the *adoption-vs-capability lag*: the durable move is building a firm-owned **hill-climbing machine** (*"welcome the models in, they hill-climb inside a machine you control, your data is your context, you collect the traces, you don't let it leak"*), where the new IP is *"getting clear about the evals and objectives you care about."* Directly convergent with [[2026-06-18-ramaswamy-mckinsey-every-company-software-company|Ramaswamy's *every company a software company*]] and [[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Dumra's *everyone an innovator*]] at the same CEO altitude.
+- **Sovereign AI for *companies*, not just countries.** Nadella reframes sovereignty around **comparative advantage** (Ricardo): the best sovereignty is preserving the advantage embodied in your thriving companies, not firewalls/data-residency. The failure modes are symmetric — *"go off frontier and that makes no sense; but depend on one frontier model and you're not sovereign either"* — resolved by *"using models to hill-climb on your own, one firm at a time."* A useful extension of the concept's adoption-strategy layer up to the national-economy scale.
 
 ## Debates and supersession
 

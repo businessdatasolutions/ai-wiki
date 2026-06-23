@@ -6,9 +6,9 @@ tags: [github, microsoft-subsidiary, github-copilot, copilot-coding-agent, agent
 parent: "[[Microsoft]]"
 website: "https://github.com"
 confidence: 0.8
-last_confirmed: "2026-06-09"
-accessed_at: "2026-06-09"
-source_count: 1
+last_confirmed: "2026-06-23"
+accessed_at: "2026-06-23"
+source_count: 2
 relationships:
   - type: part-of
     target: Microsoft
@@ -53,4 +53,5 @@ GitHub's annual developer-activity report. The keynote cites the **2025** editio
 ## Mentioned in
 
 - [[2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life]] — the promotion trigger: Copilot coding agent, Agent HQ, Advanced Security, State of the Octoverse.
+- [[2026-06-05-nadella-hoffman-possible-ai-future-of-the-firm]] — Nadella frames the new GitHub app as an **agentic development environment** (inbox of agents across all repos; Canvas for micro-steering of macro-delegation), and **cognitive coverage** as a Copilot skill — the agent-orchestration surface for *fire-and-forget* coding agents.
 - [[Microsoft]] — parent company.

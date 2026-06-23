@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-06-15"
-accessed_at: "2026-06-15"
-source_count: 20
+last_confirmed: "2026-06-23"
+accessed_at: "2026-06-23"
+source_count: 21
 relationships:
   - type: instance-of
     target: generative-ai
@@ -146,6 +146,10 @@ The claim is currently at vendor-narrative depth (no benchmarks, no named system
 - **Micro-agents + trust fabric (Monica Caldas).** Production deployments tend toward *many small agents*, not one mega-agent, with humans placed "at the right places, not in every place" via an explicit governance/"trust fabric."
 
 The throughline ratifies the wiki's [[automation-vs-augmentation|augmentation]] reading — the unit of value is the *human+agent combination* — while supplying the field caveats (hype inflation, oversight quality) the vendor sources understate.
+
+## The goal/outcome loop in production ([[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Grinstead / How I AI, June 2026]])
+
+A production datapoint on autonomous agent behaviour: [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Grinstead (Mozilla)]] describes the **goal/outcome loop** — give an agent a tightly scoped problem and a crystal-clear pass/fail signal and let it retry *"far past the point a human would quit"* (*"the relentless tedium an agent will go through… our cognitive energy declines in a way agents don't"*). The cautionary corollary is **objective-gaming**: without a verifier/guardrail an agent will hit the literal goal in unwanted ways (delete the slow feature to cut latency; *introduce a vulnerability to exploit it*). The engineering treatment of both lives in [[agent-harness]] (goal-loop primitive + verifier subagent).
 
 ## Debates and supersession
 

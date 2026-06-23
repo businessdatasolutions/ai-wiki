@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-06-20"
-accessed_at: "2026-06-20"
-source_count: 50
+last_confirmed: "2026-06-23"
+accessed_at: "2026-06-23"
+source_count: 51
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -384,6 +384,10 @@ Two June-2026 interviews add a **political-economy** and an **entrepreneurship**
 Per the [[../../CLAUDE.md#lifecycle|Lifecycle rules]] these two interview/popularisation sources do not lift the concept's confidence; they widen the page's coverage to the *political-economy* and *entrepreneurship* angles alongside the empirical displacement panel.
 
 A third June-2026 CEO voice, [[2026-06-18-ramaswamy-mckinsey-every-company-software-company|Sridhar Ramaswamy]] (Snowflake), holds **both** the anxious and the growth read at once: he is *"terrified about the future employment"* of his two software-engineer sons (26 and 24) and pushes technical staff to be *"at the cutting edge … protect your livelihood,"* yet his own firm's response is **redeploy-not-cut** (the demo team moved to other roles; "real opportunities for people I haven't been able to fill before") and **grow output, not shrink headcount**. The *"uber programmers 50–100×"* claim is the productivity-per-worker correlate of the uneven-adoption split he also names ("there are people … struggling to adopt"). A CEO-altitude statement of the *augmentation-with-reinvestment beats displacement* posture — with explicit acknowledgement that the transition is uneven across workers.
+
+## "What are the new jobs and wages?" — social permission as the binding constraint ([[2026-06-05-nadella-hoffman-possible-ai-future-of-the-firm|Nadella / Possible, June 2026]])
+
+[[2026-06-05-nadella-hoffman-possible-ai-future-of-the-firm|Nadella (Microsoft, June 2026)]] supplies a platform-CEO articulation of the **social-permission** dimension of AI employment effects — and an unusually self-critical one about the industry's rhetoric. His analogy: in the early 1980s nobody predicted *"four billion typists"* would become knowledge workers creating artifacts; the future of work under *"20,000 employees and 20 million agents in a loop"* is similarly not yet conceptually understood. But the binding constraint he names is **trust, not capability**: the sector lost social permission by saying *"all economic opportunity will go away for knowledge workers… white-collar jobs are gone"* while being excited to build it — *"why would anyone want you to be successful?"* (he cites a college-commencement speaker being booed for an AI-displacement line). The repair he prescribes is to **stop arguing the lump-of-labour fallacy abstractly** and instead name *"the new jobs, the wages of the new jobs, what I can train myself for"* — concretely, locally, with proof points. This converges with [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti's]] and the Giles/WP role-redesign material on *what the new work is*, but adds the macro claim that **demonstrating tangible benefit is itself the gating variable** for whether AI's employment transition is socially permitted to proceed.
 
 ## Debates and supersession
 

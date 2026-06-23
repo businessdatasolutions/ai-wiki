@@ -6,9 +6,9 @@ tags: [accelerator, venture-capital, silicon-valley, startup-school, ai-native-c
 since: 2005
 website: "https://www.ycombinator.com"
 confidence: 0.95
-last_confirmed: "2026-06-02"
-accessed_at: "2026-06-05"
-source_count: 13
+last_confirmed: "2026-06-23"
+accessed_at: "2026-06-23"
+source_count: 14
 ---
 
 # Y Combinator
@@ -60,6 +60,10 @@ YC President & CEO [[Garry Tan]] and YC GP [[Diana Hu]] guest-lecturing in Stanf
 ### 10. Warren / Startup School ([[2026-06-03-warren-yc-how-to-build-an-ai-native-services-company|Warren 2026]])
 
 YC Visiting Partner **Charlie Warren** on **Startup School** (published 3 June 2026, the second Startup School ingest after Hu / April 2026). The wiki's **first YC source explicitly framing *AI-native services companies* as a distinct go-to-market category** — alongside the existing AI-software-product cluster (Hu / Tan / Masad / etc.), Warren writes the *services-company sibling* of Hu's playbook: same YC altitude, same *built-from-scratch on AI* core thesis, different category (services that sell *outcomes*, not software products). Markets named as YC-internal known-good-fit: tax / audit / insurance / mortgages / parts of healthcare / parts of logistics. The four market-selection traits Warren introduces (*low trust + low task-level judgment + high intelligence threshold + regulation-as-moat*); the **Sam Altman Test** for model-disruption-resistance; the three founder attributes (*domain fluency + model fluency + operational rigor*); the **outcome-as-product vs co-pilot-as-product** distinction as the central category-defining frame. Two YC-portfolio worked examples named: **Panacea** (FDA regulatory services for biotech/medtech — *regulation-as-moat* + *outcome-based pricing* exemplar) and **The General Legal Team** (AI-native law firm with Cooley + Fenwick + Casetext founder-team composition). The **P&L opportunity-size frame**: services 30%-margin floor → AI-leveraged 50%+ on TAMs 2-3× bigger than software. The **don't-buy-your-way-in** rule: only valid reason to acquire an existing services business is fast regulatory moat (e.g. insurance licensing). With Warren the YC corpus now spans **two AI-native-company vertical curricula** — Hu on AI-software products from the ground up, Warren on AI-services companies from the ground up.
+
+### 11. Kolysh / Startup School — early-stage GTM tactics ([[2026-06-22-yc-kolysh-how-to-get-your-first-10-customers|Kolysh 2026]])
+
+YC Visiting Partner **Max Kolysh** on **Startup School** (published 22 June 2026). Distinct from the AI-native-company cluster above — this is a **tactical sales playbook** for the *first 10 customers*, compiled from a Bookface founder survey: customers 1–3 from the warm network, 4–10 from doing-things-that-don't-scale (show up in person, founder dinners, Reddit DMs, advice-framed outreach), and tools (Apollo/Clay/sequences) only mattering at 10–20. Its through-line — *"the first 10 customers will come from you, not a tool"* — is the GTM-tactics generalisation of the founder-led-sales doctrine the wiki already carries from [[2026-04-09-dinakaran-yc-luminai-automating-americas-biggest-hospitals|Dinakaran / Luminai]] and [[2026-05-20-glasgow-campfire-erp-for-ai-revolution|Glasgow / Campfire]]. Only lightly an AI source (Happenstance network-search, Clay enrichment, and the *"sounds-like-an-LLM" cold-email negative signal*).
 
 ### The YC-batch-context anchor — now ten Startup-School-and-Founder-Firesides sources across four channels (eleven counting Koomen / Lightcone)
 

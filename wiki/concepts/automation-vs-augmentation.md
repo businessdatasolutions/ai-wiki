@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-06-20"
-accessed_at: "2026-06-20"
-source_count: 48
+last_confirmed: "2026-06-23"
+accessed_at: "2026-06-23"
+source_count: 50
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -372,6 +372,17 @@ A 2026 cluster of [[Anthropic|Anthropic]] Claude-channel customer-story videos s
 | [[2026-05-13-jha-emergent-democratizing-app-building-with-claude\|Emergent / Jha-Ryan interview (May 2026)]] | **Full automation, replacement-of-the-outside-vendor** — Emergent users are *not* augmenting an existing dev team; they're replacing the dev-shop alternative. CEO names the comparison: *"a $250,000 price point that they would have paid if they had gone and and hired a dev shop"*. The user class is SMBs / domain experts who *never had software at all* (Christy in Alaska shipping *Equ*). $100M ARR in 8 months; 7M users in 190 countries; 70–80% never wrote a line of code | the **automation leg at scale for non-developers**. Distinct from enterprise-internal automation (where staff is augmented or displaced) — this is *SMB-replacement-of-an-outside-vendor-relationship-they-could-not-previously-afford*. Adds a previously-missing third deployment pattern to the wiki's cut: augmentation-of-staff, automation-of-staff, and *automation-as-substitution-for-an-outside-services-spend* |
 
 The Lyft / HubSpot / Emergent triple is the wiki's first cluster on the automation/augmentation cut drawn entirely from *2026 named-incumbent practitioner self-reports* rather than third-party studies or vendor-CEO predictions. The two short-form videos (Lyft, HubSpot) are promotional and should not be cited as load-bearing on their own; the Emergent interview is substantive and load-bearing.
+
+## Cognitive coverage + the coding→knowledge-work arc ([[2026-06-05-nadella-hoffman-possible-ai-future-of-the-firm|Nadella / Possible, June 2026]])
+
+[[2026-06-05-nadella-hoffman-possible-ai-future-of-the-firm|Nadella (June 2026)]] supplies a platform-CEO restatement of the augmentation pole plus a new human-side primitive:
+
+- **The coding→knowledge-work transition arc.** IDE completion → chat → agent mode (assign small tasks, accept) → *"fire-and-forget"* (assign high-level intent, agent does the full PR, you accept). *"What is happening in coding will happen even in knowledge work."* The unit of value becomes the **human + AI-capital pairing** creating digital artifacts — *"just like knowledge work got created because of digital artifacts and human capital, the new one is AI capital and human capital working together."*
+- **Cognitive coverage as the augmentation-pole human discipline.** A colleague's GitHub Copilot skill: *"just like test coverage, whenever an agent does work it creates a quiz so we humans learn what it did."* Nadella's framing — *"the expertise is always in abundance; it's your cognitive coverage of that expertise that's at a premium"* — is the augmentation-pole's answer to *what cognitive work the human side must do*: deductively understand and evaluate agent output. This sits alongside [[2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai|Storoni's]] gear-2 quality work and [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti's]] operator→supervisor shift, and is the steerability-side complement to *don't-use-frontier-models-for-non-frontier-problems* token-efficiency (knowing *which* work to delegate at *which* model tier is itself the augmentation skill).
+
+## The score→verify→fix loop generalises across domains ([[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Grinstead / How I AI, June 2026]])
+
+[[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Grinstead (June 2026)]] anchors the augmentation pole in a production security workflow and names its transfer pattern. Agents do the *"relentless tedium"* of hypothesis-test-retry (*"our cognitive energy declines over time in a way agents don't"*) — the automation leg — while **humans review every fix** and the team adds judgment (*"this looks like a real issue, but we should check a few other places"*). *"We're pretty far from a web-browser-scale project being autonomously developed… we have requirements for people who write the code and review the code."* The transferable claim: the **score → verify → fix loop** (LLM judge prioritises → agent acts → verifier/guardrail checks → human ships) generalises beyond security to *"design quality, conversion rate, or tech debt"* — *"you have a performance benchmark, it gives a score, you tell the agent: make that number go down"* — a *"pattern repeated across many domains."* This is the augmentation cut executed as a reusable agentic-workflow shape, with the verifier/guardrail as the thing that keeps the agent from gaming the objective (the P95-latency-by-deleting-the-feature failure).
 
 ## Debates and supersession
 
