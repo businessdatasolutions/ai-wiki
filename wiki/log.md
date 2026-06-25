@@ -10,6 +10,19 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-06-25] ingest | Guilbeault / Stanford GSB *If/Then* — *What AI Can't Do — And Why* (25 Jun 2026)
+
+ASR transcript fetched via the Playwright skill (JSON mode), cleaned (timestamp interjections + `[music]` markers removed, chapters restored, proper nouns fixed: Guilbeault / Cool / Wittgenstein / PNAS) → `raw/videos/what-ai-cant-do-and-why.md` (~5,100 words, 13 chapters). Pre-flight: identity confirmed from description (Douglas Guilbeault, Stanford GSB; host Kevin Cool); scope = full episode; `kind: asr` noted (does not feed confidence).
+
+New page:
+- `wiki/sources/2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why.md` — the wiki's first **cognitive-science account of the AI capability ceiling** (optimization vs satisficing; conceptual leaps; metaphor/vibes; making meaning from disorder; AI-hype critique). No W&W tags (outside the digital-transformation lens).
+
+Updated concepts: `analogical-reasoning` (1→2 sources, confidence 0.75→0.8 — broadened from strategy-only to analogy-as-cognitive-primitive); `jagged-frontier` (14→15 — added the optimization-vs-satisficing cause-of-jaggedness, a cognitive-science floor beneath Karpathy's verifiability mechanism); `durable-skills` (33→34 — the cognitive-science "why the residual is durable"); plus mechanical source_count bumps on `automation-vs-augmentation` (50→51), `foundation-models` (18→19), `responsible-ai` (16→17). Updated `index.md`, this log.
+
+Neighbour-source scan (≥3 surfaced): `supports` Mollick (taste/experience edge) + Argenti (instincts not skills); `contradicts` Csaszar/Ketkar/Kim (LLM parity on strategy tasks vs. the optimization-ceiling claim — via task-scope). Adjacent-but-untyped: Benedict Evans (market-analyst hype-skeptic). Deferred Dangling: Douglas Guilbeault, Kevin Cool, Herbert Simon, Wittgenstein, If/Then podcast.
+
+New entity: `wiki/entities/Stanford GSB.md` — the `author:` value "Stanford Graduate School of Business" reached its second source (Jones + Guilbeault), triggering the dangling-author promotion rule; creating it also **resolved pre-existing broken `[[Stanford GSB]]` links** in the Carroll-Sørensen and Jones sources (source_count 3). Also added the previously-missing `## Debates and supersession` sections to `analogical-reasoning` (now multi-source, scorer-required) and `jagged-frontier` (a 15-source concept that had been missing one — the optimization-ceiling vs verifiability vs parity debate).
+
 ## [2026-06-25] ingest | Rubinstein & Onyemah — *Startup Founders Need a New Sales Playbook* (HBR, 24 Jun 2026) + new `founder-led-sales` concept
 
 Acquired as a 10-page PDF and processed same session. Converted with `pdftotext -layout` → `raw/articles/startup-founders-need-a-new-sales-playbook.md` (full article). Pre-flight: identity confirmed (PDF title metadata + cover match filename; Dave Rubinstein & Vincent Onyemah, HBR, 24 Jun 2026); scope = full article; honest scoping noted (study is "still in progress" — first 100 of 250+ interviews).

@@ -5,7 +5,7 @@ tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, 
 confidence: 0.95
 last_confirmed: "2026-06-25"
 accessed_at: "2026-06-25"
-source_count: 33
+source_count: 34
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -228,9 +228,14 @@ A fourth June-2026 voice, [[2026-06-18-ramaswamy-mckinsey-every-company-software
 - **Cognitive coverage.** *"Just like test coverage, whenever an agent does work it creates a quiz so we humans learn what it did."* The durable skill is the **deductive understanding and evaluation** of agent output — *"the expertise is always in abundance; it's your cognitive coverage of that expertise that's at a premium."* This is the platform-CEO operationalisation of the *expert-as-evaluator* claim ([[2026-05-07-kiron-schrage-compound-benefits|Kiron & Schrage]]) and Argenti's *everyone becomes a manager*, framed as a measurable practice (a quiz per agent task) rather than a posture.
 - **Token-efficiency + eval/rubric authoring.** *"Whoever figures out they can use tokens more efficiently for an outcome that matters is going to get ahead by definition."* The premium skill is setting *"the rubric and eval dimensions such that they capture the high taste only you can define"* — and knowing the system's limits well enough to apply *"don't use frontier models for non-frontier problems."* This adds a **meta-skill** to the durable-skills cluster: the judgment to spec objectives/evals and allocate model-tier-to-task — adjacent to the AEI *AI-literacy-as-learnable-meta-skill* finding, here named from the platform-CEO vantage as a source of durable advantage in an era where raw intelligence is cheap.
 
+## The cognitive-science floor: *why* the residual is durable ([[2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why|Guilbeault / Stanford GSB, June 2026]])
+
+Most durable-skills sources are *labour-market* or *practitioner* evidence about *which* skills survive. [[2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why|Douglas Guilbeault]] (Stanford GSB) supplies the wiki's first *cognitive-science* argument for *why* a residual exists at all. His distinction — humans **satisfice** (Herbert Simon: do a lot with a little, under constraint) where LLMs **optimize** (brute-force statistical prediction over massive data) — grounds the durable cluster in specific capacities AI's optimization approach may be structurally unable to reproduce: **conceptual leaps / insight** (a jump from a random to an ordered state, not a smooth within-distribution step), **metaphor and analogy** (see [[analogical-reasoning]]), an aesthetic **"vibes" / taste** sense, and **making meaning from genuine disorder**. This is the theoretical underside of [[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Mollick's]] *taste/experience/judgment* edge and [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti's]] *instincts-not-skills* — and a caution against the *"humans are just prediction machines"* framing that, Guilbeault warns, leaves people unable to "defend their relevance." It also connects the durable-skills supply-side question to the [[jagged-frontier]] capability-ceiling question: the skills that are durable are precisely the ones on the rough side of the frontier *for a reason*.
+
 ## Related concepts
 
 - [[expert-generalist]] — the software-practitioner articulation: Fowler's trait-set is the developer-chair version of the durable-skills cluster.
+- [[jagged-frontier]] — the capability-ceiling counterpart: durable skills cluster on the rough side of the frontier; [[2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why|Guilbeault]] argues the cognitive reason the two line up.
 - [[ai-deskilling]] — the inverse: which skills are getting hollowed out by AI use.
 - [[ai-employment-effects]] — the labor-market consequences. Durable skills are the supply-side answer to "what protects employment?"
 - [[ai-benchmarks]] — durable-skills assessment is methodologically a new *type* of benchmark (for humans, not models).

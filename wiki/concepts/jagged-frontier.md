@@ -3,9 +3,9 @@ type: concept
 aliases: ["jagged frontier", "jagged-frontier", "jagged technological frontier", "AI capability frontier", "jagged intelligence", "jagged skills", "jagged-intelligence", "animals vs ghosts", "ghosts not animals"]
 tags: [jagged-frontier, jagged-intelligence, AI-capabilities, knowledge-work, productivity, automation, augmentation, verifiability, animals-vs-ghosts]
 confidence: 0.93
-last_confirmed: "2026-06-20"
-accessed_at: "2026-06-20"
-source_count: 14
+last_confirmed: "2026-06-25"
+accessed_at: "2026-06-25"
+source_count: 15
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -13,8 +13,8 @@ relationships:
   - type: instance-of
     target: generative-ai
     via: "characterizes the capability profile of GPT-class models specifically"
-quality_score: 0.79
-quality_notes: ['missing ## Debates and supersession (concept with >1 source)', '1 near-empty section(s)']
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # Jagged Frontier
@@ -110,6 +110,10 @@ The car-wash example is now the wiki's canonical jaggedness illustration. It cap
 - **Build your own RL environments where labs aren't.** [[2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering|Karpathy 2026]]'s founder advice: *"If you are in a verifiable setting where you could create these RL environments or examples then that actually sets you up to potentially do your own fine-tuning and you might benefit from that. That is fundamentally technology that just works."*
 - **Stay in the loop**, treat models as tools, do not over-trust capability transfer across "similar-looking" tasks. This restates the Dell'Acqua observation in cause-and-effect form.
 
+### Cause-of-jaggedness: optimization vs satisficing — the cognitive-science floor ([[2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why|Guilbeault / Stanford GSB 2026]])
+
+Where Karpathy locates the jaggedness in the *training process* (verifiability + what labs reward), **Douglas Guilbeault** (Stanford GSB) offers a deeper, *cognitive-science* account of why the frontier may stay jagged in principle. His distinction: LLMs are **optimizers** — brute-force statistical prediction over massive data ("every sentence ever created on the internet" to fill one masked word) — whereas humans are **satisficers** (Herbert Simon) who "do a lot with a little," reaching good-enough models under heavy constraint and adapting in real time. The load-bearing limit-claim: human learning is characterized by **conceptual leaps** — a jump from a *random state to an ordered state* (his social-learning paper finds behavior that is random until a tolerance threshold, then suddenly converges) — plus non-statistical mechanisms (**metaphor/analogy**, an aesthetic "vibes" sense, harnessing disorder). LLMs "move step by step in a continuous way" within an already-understood space and are fed "highly structured data perfectly designed to be learned from" — a crutch humans never had. If correct, the jaggedness isn't only an artifact of *which* domains labs verify; it reflects a **structural mismatch** between optimization-over-clean-data and the human capacity to make meaning from genuine chaos. This is the wiki's first account locating the frontier's *cause* below the model-training level, in the nature of the learning problem itself. (Caveat: Guilbeault's own forthcoming results show LLMs replicating the *optimizer* pattern in his experiments — evidence for the floor, but the limit is a hypothesis the field "doesn't have a full theory for," not a settled result.)
+
 ### Animals vs ghosts ([[Andrej Karpathy]])
 
 Within the jagged-intelligence framing, [[Andrej Karpathy]] adds a **mindset framing** for *what kind of intelligence* the wiki should treat LLMs as:
@@ -151,6 +155,12 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "jagged-frontier")
 SORT file.name ASC
 ```
+
+## Debates and supersession
+
+- **Is the jaggedness fixable or structural?** Three causal accounts disagree on permanence. [[Andrej Karpathy]]: jaggedness tracks *verifiability + what labs choose to reward* — implying it shifts as labs build more RL environments (contingent, movable). [[2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why|Guilbeault]]: the rough side reflects a *structural* mismatch between optimization-over-clean-data and the human capacity for conceptual leaps / meaning-from-disorder (a deeper, possibly permanent floor). These aren't mutually exclusive — verifiability may set the *near-term* shape, cognition the *asymptote* — but they predict different long-run trajectories.
+- **Parity-on-bounded-tasks vs. ceiling-on-open-tasks.** [[2024-12-01-csaszar-ketkar-kim-ai-strategic-decision-making|Csaszar, Ketkar & Kim]] find LLMs reach *parity* with entrepreneurs/investors on realistic strategy tasks — evidence the frontier is *less* jagged on high-judgment work than feared. [[2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why|Guilbeault]] argues the optimization approach has a *ceiling* on open-ended insight/social-learning. The tension resolves on **task scope**: bounded, well-structured judgment (where Csaszar measures) vs. open-ended leap-requiring tasks (where Guilbeault locates the limit) may simply be different regions of the same frontier.
+- **The frontier moves.** Any specific jaggedness claim risks being superseded by the next model generation; longitudinal measurement (see Open questions) is the standing caveat on every task-level finding here.
 
 ## Open questions
 

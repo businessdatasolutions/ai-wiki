@@ -3,9 +3,9 @@ type: concept
 aliases: ["foundation model", "foundation models", "FM", "frontier model", "frontier models"]
 tags: [foundation-models, generative-ai, ai-research]
 confidence: 0.85
-last_confirmed: "2026-06-20"
-accessed_at: "2026-06-20"
-source_count: 18
+last_confirmed: "2026-06-25"
+accessed_at: "2026-06-25"
+source_count: 19
 quality_score: 0.95
 quality_notes: ['1 near-empty section(s)', '2 broken body wikilink(s)']
 ---

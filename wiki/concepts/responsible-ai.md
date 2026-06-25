@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-06-23"
-accessed_at: "2026-06-23"
-source_count: 16
+last_confirmed: "2026-06-25"
+accessed_at: "2026-06-25"
+source_count: 17
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
