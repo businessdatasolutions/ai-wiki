@@ -10,6 +10,43 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-06-25] ingest | Rubinstein & Onyemah — *Startup Founders Need a New Sales Playbook* (HBR, 24 Jun 2026) + new `founder-led-sales` concept
+
+Acquired as a 10-page PDF and processed same session. Converted with `pdftotext -layout` → `raw/articles/startup-founders-need-a-new-sales-playbook.md` (full article). Pre-flight: identity confirmed (PDF title metadata + cover match filename; Dave Rubinstein & Vincent Onyemah, HBR, 24 Jun 2026); scope = full article; honest scoping noted (study is "still in progress" — first 100 of 250+ interviews).
+
+The neighbour-source scan surfaced a strong, pre-existing **founder-led-sales cluster** (Kolysh / Dinakaran / Glasgow) with no concept page tying it together — so this ingest **promotes the concept**.
+
+New pages:
+- `wiki/sources/2026-06-24-rubinstein-onyemah-startup-founders-new-sales-playbook.md` — source page (no W&W tags — startup-seller side, consistent with the rest of the founder cluster; `published-by` HBR; `supports` Kolysh / Glasgow / Dinakaran).
+- `wiki/concepts/founder-led-sales.md` — **new concept**, 4 anchor sources (confidence 0.8; one empirical + three practitioner anchors). `supports` enterprise-ai-adoption (seller-side mirror of the adoption gap).
+
+Updated: three cluster sources (Kolysh / Glasgow / Dinakaran) each given a body `[[founder-led-sales]]` link → concept source_count = 4; `enterprise-ai-adoption` (77→78; added the seller-side-mirror related-concept + the new source); `Harvard Business Review` entity (stale source_count 12 → corrected to actual inbound 18); `index.md` (new source + new concept); this log.
+
+Deferred Dangling: Dave Rubinstein, Vincent Onyemah (co-authors), Babson College, 100 Founders, Salesforce, Outreach, Nexwise/Mathis Stolz, Rivera Pesquera & Ali (2013-study co-authors).
+
+## [2026-06-25] refactor | Wire the Fowler *Expert Generalists* article to the two AWS talks that cite it (duplicate-detection follow-up)
+
+A reader pointed at a YouTube talk (`youtu.be/O7u6myBRsns`) noting the *Expert Generalists* article is mentioned in it. The talk turned out to be **already ingested** — it is [[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world|Brovich's AWS Summit Sydney keynote]], the Sydney edition of [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen's London keynote]]. No re-ingest. Instead, wired the typed graph link that became possible once the Fowler article landed earlier today:
+
+- Added `uses` → [[2025-07-02-joshi-venkatraman-fowler-expert-generalists]] on **both** AWS source pages (Brovich + Allen), with body `[[wikilink]]`s satisfying the v0.3 body-wikilink rule.
+- Resolved now-stale **Dangling: Martin Fowler** entries on both AWS pages → linked the [[Martin Fowler]] entity (and [[Thoughtworks]] / [[expert-generalist]] where applicable) created in today's ingest.
+- Recomputed inbound source-link counts: [[expert-generalist]] 1→3, [[Martin Fowler]] 1→3, [[Thoughtworks]] 2→3. Concept confidence 0.72→0.75 (the two new citing sources are vendor-altitude propagations of one original, not independent corroboration — capped accordingly; noted in its Debates section).
+- Reverse-linked the AWS talks from the Fowler source's *Related sources* and the Fowler/Thoughtworks entity bodies; updated `index.md` counts.
+
+## [2026-06-25] ingest | Joshi, Venkatraman & Fowler — *Expert Generalists* (martinfowler.com, 02 Jul 2025)
+
+Acquired as a 25-page PDF print from martinfowler.com (landed today) and processed in the same session. Converted with `pdftotext -layout` → `raw/articles/expert-generalists.md` (full article). Pre-flight: identity confirmed from cover (Unmesh Joshi, Gitanjali Venkatraman, Martin Fowler; 02 Jul 2025); scope = full article (TOC references nothing past the 25 captured pages); honest scoping noted (illustrations not captured).
+
+New pages:
+- `wiki/sources/2025-07-02-joshi-venkatraman-fowler-expert-generalists.md` — source page (4 W&W tags; `authored-by` Fowler, `published-by` Thoughtworks; `supports` Argenti / Forsgren-Macvean / Ng).
+- `wiki/concepts/expert-generalist.md` — **new concept**, anchor source = this article (confidence 0.72, 1 source). `supports` durable-skills; `contradicts` ai-deskilling; `authored-by` Martin-Fowler.
+- `wiki/entities/Martin Fowler.md` — **new entity** (person; Chief Scientist at Thoughtworks; first first-party-authored source; `part-of` Thoughtworks).
+- `wiki/entities/Thoughtworks.md` — **new entity** (organization; 2 sources — this + Böckeler's QCon harness talk; `employs` Martin-Fowler).
+
+Updated: `durable-skills` (source_count 32→33; anchored its existing *expert generalists* section to the now-present primary source), `ai-deskilling` (12→13; added the interrogation-of-AI counter-case), `index.md` (new source + concept + 2 entities), this log.
+
+Neighbour-source scan (≥3 surfaced): `supports` edges to Argenti (mindset-not-skillset), Forsgren & Macvean (core developer skills), Ng (small teams of generalists / generalist hiring rubric). Deferred Dangling authors: Unmesh Joshi, Gitanjali Venkatraman (co-authors), plus incidental Martin Thompson / Kathy Sierra / Kent Beck / Jackie Stewart.
+
 ## [2026-06-23] ingest | Three YouTube videos — Grinstead/Mozilla security harness + Kolysh/YC first-10-customers + Nadella/Possible *future of the firm* (4 requested; 1 was a duplicate)
 
 Batch ingest of four user-supplied YouTube URLs; **>10 wiki pages touched** (three source pages + eight concept pages + seven entity pages + index + log), all additive — reversible by reverting this commit. The fourth URL (`JoXbk2fm7jM`) resolved to **[[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex|Vo / How I AI — agent loops]]**, already ingested 2026-06-22 (same URL), so it was **skipped** (flagged to the user, not re-processed).

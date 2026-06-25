@@ -96,6 +96,8 @@ The wedge: not be feature-complete; be **the best for the narrow feature set tha
 
 ### Founder-led sales doctrine even in the AI era
 
+Glasgow is the AI-native-vendor anchor of the wiki's [[founder-led-sales]] concept (with [[2026-06-22-yc-kolysh-how-to-get-your-first-10-customers|Kolysh]], [[2026-04-09-dinakaran-yc-luminai-automating-americas-biggest-hospitals|Dinakaran]], and [[2026-06-24-rubinstein-onyemah-startup-founders-new-sales-playbook|Rubinstein & Onyemah]]).
+
 Glasgow (~14:05–15:11):
 
 > *"Even in the AI era I do really recommend founders to stay in the founder sales mode. I think offloading it to AI, offloading it to some AE — I think it feels like, oh let's just bring in a professional whether it's an agent or whether it's a human. But I still recommend being as close to the customer and the prospective customer as possible until you have product market fit. I'm in every Slack channel with every customer... I'm trying to listen to as many sales meetings as I can to really hear, because then you're the best person in the company to actually impact change on what is happening — the sales team driving engineering... I ended up getting to series A — the kind of classic million in ARR for us — on my own as the one AE."*

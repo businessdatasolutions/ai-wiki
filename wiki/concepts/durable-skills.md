@@ -3,9 +3,9 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-06-23"
-accessed_at: "2026-06-23"
-source_count: 32
+last_confirmed: "2026-06-25"
+accessed_at: "2026-06-25"
+source_count: 33
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -122,6 +122,8 @@ The empirical anchor Allen offers is the **Anthropic competition exhibit** (~17:
 
 The wiki's reading: the Globerson et al. durable-skills measurement battery (collaboration, creativity, critical thinking, contextual reasoning) is *necessary but not sufficient* to describe the renaissance-developer skill profile. The Anthropic-competition exhibit adds the dimension of **domain expertise × tool-fluency** as the differentiator — durable skills enable judgment under uncertainty, but the *competitive advantage* in the agentic era goes to those who can pair deep domain expertise with goal-based-agent tool-fluency. This is the AWS-vendor-altitude framing of *what durable skills compose with to win in the agentic era* — a complement to the supply-side measurement question Globerson et al. answer.
 
+**Primary source for the term (added 2026-06-25).** Allen cited *expert generalist* secondhand; the wiki now holds its anchor — [[2025-07-02-joshi-venkatraman-fowler-expert-generalists|Joshi, Venkatraman & Fowler (2025)]], promoted to its own [[expert-generalist]] concept page. Fowler's six characteristics (curiosity, collaborativeness, customer-focus, favoring fundamental knowledge, a generalist+specialist blend, sympathy for related domains) are the *software-practitioner* articulation of the durable-skills cluster, and the article's LLM thesis — generalists who hold the fundamentals extract more from LLMs because they interrogate rather than accept output — is the same *experience-beats-AI-native* finding from the developer's chair. The article concedes the Expert Generalist skill is hard to assess at scale ("often requiring intensive participation from known-capable Expert Generalists"), which is the live tension with Globerson et al.'s scalable-measurement programme.
+
 ## The MGI Skill Change Index as a labour-market-data-grounded systematic measure ([[2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships|Yee et al. / MGI 2025]])
 
 [[2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships|MGI's *Agents, Robots, and Us*]] (November 2025) introduces the **Skill Change Index (SCI)** — the wiki's first labour-market-data-grounded systematic measure of which skills will change most and least under AI automation. Three properties make the SCI a useful complement to the wiki's prior durable-skills vocabularies (Globerson et al. assessment methodology, Storoni's neuroscience-vantage self-regulation-under-uncertainty, Schoening's agency-as-durable-skill):
@@ -228,6 +230,7 @@ A fourth June-2026 voice, [[2026-06-18-ramaswamy-mckinsey-every-company-software
 
 ## Related concepts
 
+- [[expert-generalist]] — the software-practitioner articulation: Fowler's trait-set is the developer-chair version of the durable-skills cluster.
 - [[ai-deskilling]] — the inverse: which skills are getting hollowed out by AI use.
 - [[ai-employment-effects]] — the labor-market consequences. Durable skills are the supply-side answer to "what protects employment?"
 - [[ai-benchmarks]] — durable-skills assessment is methodologically a new *type* of benchmark (for humans, not models).

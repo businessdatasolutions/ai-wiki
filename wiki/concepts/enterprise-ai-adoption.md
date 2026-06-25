@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-06-23"
-accessed_at: "2026-06-23"
-source_count: 77
+last_confirmed: "2026-06-25"
+accessed_at: "2026-06-25"
+source_count: 78
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -544,6 +544,7 @@ A sharp human-factor addition to the maturity story: even where individual adopt
 - [[foundation-models]] — what enterprise AI is increasingly built on top of
 - [[ai-benchmarks]] — context for the capability claims that drive procurement decisions
 - [[ai-knowledge-hiding]] — why high individual adoption need not produce collective gains: employees hide discovered workflows when organizational trust / psychological safety is low ([[2026-06-10-anicich-brouwers-why-employees-arent-transparent-ai-usage|Anicich & Brouwers 2026]])
+- [[founder-led-sales]] — the **seller-side mirror**: the adoption gap (AI interest that doesn't convert to value) seen from the founder's chair, where it reads as "mistaking attention for traction" ([[2026-06-24-rubinstein-onyemah-startup-founders-new-sales-playbook|Rubinstein & Onyemah 2026]])
 
 ## *"The year of increased accountability"* — the editorial framing for 2026 ([[2026-01-09-baron-signals-for-2026|Baron / O'Reilly]], January 2026)
 

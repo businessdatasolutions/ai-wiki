@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI deskilling", "ai-deskilling", "task composition shift", "deskilling"]
 tags: [deskilling, task-composition, ai-employment-effects, occupations]
 confidence: 0.85
-last_confirmed: "2026-06-20"
-accessed_at: "2026-06-20"
-source_count: 12
+last_confirmed: "2026-06-25"
+accessed_at: "2026-06-25"
+source_count: 13
 relationships:
   - type: instance-of
     target: ai-employment-effects
@@ -151,6 +151,7 @@ The deskilling risk Argenti implicitly accepts (delegated execution atrophies ex
 
 ## Related concepts
 
+- [[expert-generalist]] — a counter-case: [[2025-07-02-joshi-venkatraman-fowler-expert-generalists|Fowler et al.]] argue that practitioners who hold tool-independent fundamentals and *interrogate* AI output (rather than accept it) resist hollowing-out — the habit is "exactly the behavior needed to overcome the unreliability inherent in LLM-given advice."
 - [[ai-employment-effects]] — broader labor-market consequences (displacement, hiring, wages, age effects)
 - [[durable-skills]] — the inverse frame: which skills humans should retain and how to measure them
 - [[automation-vs-augmentation]] — deskilling overlaps with automation when entire tasks are removed

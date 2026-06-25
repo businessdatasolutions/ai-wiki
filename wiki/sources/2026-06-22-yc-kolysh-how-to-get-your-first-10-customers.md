@@ -30,7 +30,7 @@ relationships:
 
 A ~14-minute [[Y Combinator]] Startup School talk published 22 June 2026, presented by **Max Kolysh** (YC Visiting Partner). The talk is a **tactics** companion to YC's existing *strategy* advice (doing things that don't scale, founder sales, charging for your product). Kolysh built it from a Bookface (YC's internal social network) survey in which dozens of founders described how they actually closed their first 10 customers; the video is a compilation of those patterns.
 
-This is the wiki's first **dedicated early-stage GTM-tactics** source. It sits adjacent to the founder-vantage enterprise-sales material already in the corpus — [[2026-04-09-dinakaran-yc-luminai-automating-americas-biggest-hospitals|Dinakaran / Luminai]] (warm-intro discipline at the hospital-C-suite altitude) and [[2026-05-20-glasgow-campfire-erp-for-ai-revolution|Glasgow / Campfire]] (stay-in-founder-sales-mode) — and generalises their *founder-led-sales-as-doctrine* claim into a step-by-step first-10 playbook.
+This is the wiki's first **dedicated early-stage GTM-tactics** source. It sits adjacent to the founder-vantage enterprise-sales material already in the corpus — [[2026-04-09-dinakaran-yc-luminai-automating-americas-biggest-hospitals|Dinakaran / Luminai]] (warm-intro discipline at the hospital-C-suite altitude) and [[2026-05-20-glasgow-campfire-erp-for-ai-revolution|Glasgow / Campfire]] (stay-in-founder-sales-mode) — and generalises their *founder-led-sales-as-doctrine* claim into a step-by-step first-10 playbook. It is one of the four anchors of the wiki's [[founder-led-sales]] concept (with [[2026-06-24-rubinstein-onyemah-startup-founders-new-sales-playbook|Rubinstein & Onyemah]], Dinakaran, and Glasgow).
 
 ## TL;DR
 

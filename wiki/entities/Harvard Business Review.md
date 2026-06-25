@@ -6,9 +6,9 @@ tags: [publisher, business-magazine, management-research, harvard, hbr-ideacast,
 parent: "[[Harvard Business School]]"
 website: "https://hbr.org"
 confidence: 0.90
-last_confirmed: "2026-05-25"
-accessed_at: "2026-05-25"
-source_count: 12
+last_confirmed: "2026-06-25"
+accessed_at: "2026-06-25"
+source_count: 18
 ---
 
 # Harvard Business Review

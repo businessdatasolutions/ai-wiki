@@ -54,6 +54,10 @@ relationships:
     target: 2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting
     via: "**Consultant-altitude convergence on enterprise-AI-deployment doctrine.** Sternfels (McKinsey global managing partner, Feb 2026): enterprise-AI transformation prescriptions from the largest-consulting-firm vantage. Allen (AWS Executive in Residence, May 2026): enterprise-AI deployment prescriptions from the largest-cloud-vendor's advisory vantage. Both speak from *advisor-to-enterprise* altitude on the same problem (how do enterprises deploy AI to capture firm-level value, not task-level [[micro-productivity-trap]]); both arrive at the same workflow-centric prescription (Allen: *'AI bolted on is going to fail... ability to focus at a workflow level being the difference between success and failure'*); both name the same observed failure rate band (McKinsey: variants of 70–95% AI-pilot-fail; Allen via MIT NANDA: 95%); both prescribe the same operational pattern (embedded teams, CFO-office partnership for opportunity-cost measurement, no pre-flight ROI model). 7 concept-page overlaps between the two sources (`enterprise-ai-adoption`, `automation-vs-augmentation`, `ai-employment-effects`, `agentic-engineering`, `micro-productivity-trap`, `durable-skills`, `ai-deskilling`)."
     confidence: 0.7
+  - type: uses
+    target: 2025-07-02-joshi-venkatraman-fowler-expert-generalists
+    via: "Allen leans on Fowler's *expert generalist* post explicitly (alongside the strangler-fig pattern) as the talent profile agentic AI amplifies — 'specialists broaden, generalists deepen → Renaissance developer'"
+    confidence: 0.8
 confidence: 0.8
 last_confirmed: "2026-05-25"
 ---
@@ -73,7 +77,8 @@ A 43:54 keynote + customer case study filmed at the **AWS London Executive Forum
 
 **Authors / dangling list.** This is the first wiki source by both speakers; per the [[../../CLAUDE|author-entity promotion rule]] (second-source promotion), they go on the dangling list at this ingest and only get entity pages on a second citation:
 
-- **Dangling** (single-source mention, deferred): Jonathan Allen (AWS Executive in Residence), Nick Francis (Brooklyn Solutions co-founder / CTMO), Brooklyn Solutions (UK supplier-management scale-up — *organisation*), Anthony Liguori (AWS VP Distinguished Engineer, Project Mantle lead), Matt Garman (AWS CEO, quoted by Allen on the junior-hiring crisis), Jeff Bezos (named by Allen as having *"eliminated level 9 in Amazon"*), Scott Galloway (quote: *"AI won't take your job. Someone using AI will"*), Rory Sutherland (quote on probabilistic-vs-deterministic business), Martin Fowler (strangler-fig pattern + expert-generalists post), Werner Vogels (re:Invent keynote anchor for *"renaissance developer"*), William Gibson (the *"future is here but not evenly distributed"* quote).
+- **Entity:** [[Martin Fowler]] (strangler-fig pattern + expert-generalists post — promoted to an entity page on 25 Jun 2026).
+- **Dangling** (single-source mention, deferred): Jonathan Allen (AWS Executive in Residence), Nick Francis (Brooklyn Solutions co-founder / CTMO), Brooklyn Solutions (UK supplier-management scale-up — *organisation*), Anthony Liguori (AWS VP Distinguished Engineer, Project Mantle lead), Matt Garman (AWS CEO, quoted by Allen on the junior-hiring crisis), Jeff Bezos (named by Allen as having *"eliminated level 9 in Amazon"*), Scott Galloway (quote: *"AI won't take your job. Someone using AI will"*), Rory Sutherland (quote on probabilistic-vs-deterministic business), Werner Vogels (re:Invent keynote anchor for *"renaissance developer"*), William Gibson (the *"future is here but not evenly distributed"* quote).
 
 ## TL;DR
 
@@ -167,7 +172,7 @@ Allen names *"there is no credible model that I have been able to find right now
 
 The talent landscape:
 
-- **Strangler fig + expert generalists** — Martin Fowler's coinage; Allen leans on Fowler's *expert generalist* post explicitly.
+- **Strangler fig + expert generalists** — [[Martin Fowler]]'s coinage; Allen leans on Fowler's *[[expert-generalist|expert generalist]]* post ([[2025-07-02-joshi-venkatraman-fowler-expert-generalists|Joshi, Venkatraman & Fowler, July 2025]]) explicitly.
 - **Domain experts pushing outward** + **generalists deepening domain expertise** → *"renaissance developer"* (Werner Vogels' final re:Invent 2025 keynote framing).
 - **Anthropic competition exhibit**: 1st place a lawyer, 2nd place a cardiologist from Poland building an AI-agentic patient-care platform, 3rd place a cardiologist. *"No developer in the top three."*
 - The new team shape: software engineers with deep business-outcome understanding + domain experts orchestrating workflows + business-process experts + lawyers dropping into delivery teams. *"Not own — orchestrate alongside business process experts."*
