@@ -5,7 +5,7 @@ tags: [employment, labor-market, ai-displacement, automation, labor-economics, a
 confidence: 0.95
 last_confirmed: "2026-06-26"
 accessed_at: "2026-06-26"
-source_count: 53
+source_count: 54
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -404,6 +404,19 @@ This is **qualitative, journalistic** evidence, not a measured labor-market stud
 The wiki's attribution-skepticism thread — *"Are these declines really AI?"* (Debates, below), the [[2026-01-09-baron-signals-for-2026|O'Reilly *"the decisions of people deploying it"*]] framing, the [[2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs|Giles]] *"AI #1 cited reason"* vs. NACE *14%* gap — now has a dedicated concept page, [[ai-washing]], anchored by labor economist **Kathryn Anne Edwards** ([[2026-06-22-bbc-what-if-were-wrong-about-ai-layoffs|BBC, June 2026]]). Her contribution is the **mechanism** beneath the over-attribution: AI is *not treated neutrally by the stock market*, so "we pivoted to AI" is a more shareholder-friendly story for layoffs than "we overhired" — a valuation premium that incentivises citing AI for cuts a firm would have made anyway (analogised to **greenwashing**, reinforced by downturn peer pressure). This is the *corporate-incentive* explanation for why the attribution noise on this page runs predominantly toward over-crediting AI; it converges with [[Sam Altman]]'s executive-altitude *AI washing* counter-framing (via [[2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering|Everitt]]).
 
 Edwards also adds a **counter-data** point to the entry-level-decline narrative: **Indeed software-development job postings** rose from far *below* overall postings in early 2024 to **~4× higher** by mid-2026, outperforming overall jobs over the prior year — a journalist-surfaced counterweight to the [[2026-04-30-ai-index-report-2026|AI Index]] / [[2026-04-28-brynjolfsson-canaries-coal-mine|Canaries]] software-dev figures, in the same direction as the [[2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going|Evans]] lump-of-labor and [[2026-05-01-lf-state-of-tech-talent-global-2026|Linux Foundation]] "not a jobs crisis" poles. It is *narrative critique*, not a new measurement (single chart, single platform) — weight accordingly. Full treatment, including the measurement-impossibility thesis ("we may never know… inconclusive forever," the *jobs-lost-to-computers-since-1955* analogy), lives on [[ai-washing]].
+
+## AI reshapes hiring at the job-definition layer, not selection ([[2026-06-25-carroll-stanford-gsb-making-organizational-culture-great|Carroll / Stanford GSB, June 2026]])
+
+A narrow but distinct mechanism, surfaced as an aside in [[2026-06-25-carroll-stanford-gsb-making-organizational-culture-great|Glenn Carroll's organizational-culture talk]] (he explicitly defers on AI but relays the finding). Citing **Isabel Fernández-Mateo (London Business School)**, Carroll's claim is that the common assumption — *"AI is really just going to affect who gets hired and how"* (i.e. **selection**) — is wrong about where the change lands:
+
+> *"The real change is going to occur not with the selection but with the way the jobs get defined and the way people care about those jobs in the first place… how you attract the candidates and how you shape the applicant pool."*
+
+Two consequences worth tracking against the page's selection-focused displacement evidence:
+
+- **The locus of AI's hiring effect is upstream of selection** — job design, candidate attraction, and applicant-pool composition — not (only) the resume-screen/matching step that most "AI in hiring" discussion fixates on.
+- **Applicant-pool homogenisation.** Candidates increasingly use AI to produce application materials, which are becoming *"more and more homogeneous,"* so *"the hiring process has become very, very difficult"* even though AI lets firms process far more applicants. This is a **demand-side analogue** to the [[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|communication-convergence finding]] (AI making low-skill workers communicate like high-skill ones): AI-mediated *applications* converge, eroding the signal hiring relies on.
+
+This is qualitative, second-hand testimony, not a measured study — it does not move the page's confidence. Its value is naming a mechanism (hiring-process effects concentrate on job-definition + pool-shaping, and AI-written applications homogenise) the page's displacement/exposure literature does not otherwise cover. Carroll's broader thesis — culture as the [[warner-wager-process-model|strategic-renewal microfoundation]] that governs how empowered employees feel to act — also bears on [[ai-knowledge-hiding]] (whether workers disclose their AI use).
 
 ## Debates and supersession
 

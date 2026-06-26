@@ -3,9 +3,9 @@ type: concept
 aliases: ["Warner-Wäger process model", "Warner & Wager process model", "W&W process model", "digital-transformation process model"]
 tags: [dynamic-capabilities, digital-transformation, microfoundations, warner-wager, wiki-vocabulary]
 confidence: 0.82
-last_confirmed: "2026-06-19"
-accessed_at: "2026-06-19"
-source_count: 4
+last_confirmed: "2026-06-26"
+accessed_at: "2026-06-26"
+source_count: 5
 relationships:
   - type: instance-of
     target: dynamic-capabilities
@@ -147,6 +147,16 @@ The Rolls-Royce 2023–2026 turnaround maps gracefully onto three cells from the
 The cells **the source does not touch** are equally informative for the scope question: Erginbilgiç's transformation does not exercise `digital-sensing/*` (no scanning for digital trends/competitors), `digital-transforming/improving-digital-maturity` (no digital-natives hiring or digital-workforce-maturity work), or `strategic-renewal/business-model` (no transactional → relational value-capture shift — Rolls-Royce has long had Power-by-the-Hour-style relational contracts pre-Erginbilgiç). The non-digital case **silently selects** the cells whose vocabulary is in fact transformation-primitive, leaving the genuinely digital-specific cells untouched.
 
 The implication: the W&W process model is **dual-use** — its full nine-microfoundation specialisation is most useful in digital-transformation cases, but a defensible subset (`strategic-agility`, `organizational-culture`, the contextual ring, and arguably `redesigning-internal-structures`) constitutes a *transformation primitives* layer that applies whenever organisational renewal happens, AI-era or not. The wiki uses this property as a feature: the W&W tagging vocabulary is the *thematic adjacency index* for the whole corpus, not just the AI-era subset.
+
+### The academic theory beneath the culture cell ([[2026-06-25-carroll-stanford-gsb-making-organizational-culture-great|Carroll 2026]])
+
+Where Erginbilgiç is the **applied** non-digital culture exemplar, [[2026-06-25-carroll-stanford-gsb-making-organizational-culture-great|Glenn Carroll's GSBooks talk]] supplies the **academic theory** the `strategic-renewal/organizational-culture` cell rests on — and it is, of all corpus sources, the one most squarely *about* the cell rather than touching it in passing. The theory sharpens the cell's vocabulary in three ways:
+
+- **What "refreshing a culture" actually optimises.** Carroll's strong-culture definition — **high intensity × high agreement** — names the two levers a culture-renewal effort moves. The cell's *"embedding new shared values across the workforce"* is *agreement*; the *"entrepreneurial, fast-and-flexible"* clause is *intensity*. Content (the specific values) is *"almost irrelevant"* — any content can anchor a strong culture — which is why the cell is a **transformation primitive** and not a digital-specific one.
+- **Why culture is a strategic-renewal *outcome*, not a sensing/seizing input.** Carroll: *"strategy precedes the culture… culture is the butter to the strategy."* This independently ratifies W&W's placement of `organizational-culture` in the **strategic-renewal** bucket (a downstream outcome of sense → seize), not in sensing or seizing.
+- **A measurable structural signature + a change-speed estimate.** Carroll's claim that strong-culture orgs carry **fewer managers / lower managerial overhead** gives the cell an observable proxy, and his change-speed range (Agilent ~5 yrs to graft *speed/focus/accountability*; Ford under Mulally radical change <1 yr) brackets what Erginbilgiç's Rolls-Royce turnaround instantiates. The two sources carry a typed `supports` edge.
+
+This is the wiki's **second non-digital culture source** and the first *theoretical* one — it reinforces (rather than qualifies) the dual-use hypothesis: `strategic-renewal/organizational-culture` is a transformation primitive with a rigorous organization-theory grounding independent of the digital setting.
 
 ## The fullest single-source operationalisation — *DBS Bank* ([[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Dumra 2026]])
 

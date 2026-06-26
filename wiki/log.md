@@ -10,6 +10,17 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-06-26] ingest | Carroll / Stanford GSB *"On Making Organizational Culture Great"* (GSBooks, 25 Jun 2026) — via Zotero
+
+Acquired from the Zotero `ai-wiki` collection (1 new item; the other 10 were already in `raw/`) and processed the same session. A ~60-min Stanford GSB GSBooks talk by **Glenn R. Carroll** (with co-author Jennifer Chatman) on organizational culture — largely **organization theory, not an AI source**, ingested as the wiki's authoritative anchor for the `strategic-renewal/organizational-culture` microfoundation. Core: culture = alignment with strategy; strong culture = **high intensity × high agreement** (content nearly irrelevant); culture as a hard social-control system; five debunked myths; the *too-much-fit → groupthink* caveat; culture-change-speed range (Agilent ~5 yrs / Ford <1 yr). Brief AI thread (via Isabel Fernández-Mateo, LBS): AI reshapes hiring at job-definition + applicant-pool level, not selection.
+
+- New source page: [[2026-06-25-carroll-stanford-gsb-making-organizational-culture-great]] (`kind: video`; `zotero_item_key: DYDYZSYD`; raw at `raw/videos/on-making-organizational-culture-great-with-professor-glenn-carroll.md`, fetched via the youtube-transcript delegate).
+- W&W tag: `strategic-renewal/organizational-culture` (the talk's entire subject). Role defaults `chro, ceo`.
+- Neighbour-source scan → 1 typed `supports` edge: [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook]] (Carroll = academic theory; Erginbilgiç = applied non-digital culture turnaround). Softer prose link to [[2026-06-10-anicich-brouwers-why-employees-arent-transparent-ai-usage]] (culture-as-social-control → disclosure safety), no typed edge.
+- Concept updates: [[concepts/warner-wager-process-model]] (new "academic theory beneath the culture cell" subsection; 4→5, dates → 2026-06-26), [[concepts/ai-employment-effects]] (new AI-reshapes-hiring-at-job-definition section; 53→54).
+- Entity updates: [[Glenn R. Carroll]] (1→2 sources; confidence 0.75→0.8), [[Stanford GSB]] (3→4 sources; 0.8→0.85).
+- Candidate concept flagged: a dedicated **organizational-culture** page — deferred (single culture-focused source; topic otherwise lives on the W&W culture cell). No new entity pages: Jennifer Chatman, Isabel Fernández-Mateo left dangling per the second-source rule.
+
 ## [2026-06-26] ingest | BBC *What If We're Wrong About AI Layoffs?* (22 Jun 2026) + new `ai-washing` concept
 
 Ingested the BBC Global explainer-interview (*New Normal with Katty Kay*; YouTube `BPrwXkuI20U`; ~8 min; **human-curated** en-GB captions) in which labor economist **Kathryn Anne Edwards** dissects **AI washing** — companies citing AI as the reason for layoffs they'd have done anyway.
