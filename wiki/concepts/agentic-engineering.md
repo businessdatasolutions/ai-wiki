@@ -3,9 +3,9 @@ type: concept
 aliases: ["agentic engineering", "Agentic Engineering", "agentic-engineering", "agent engineering"]
 tags: [agentic-engineering, vibe-coding, software-3.0, ai-agents, agent-harness, software-engineering, hiring, karpathy, codex-case-study]
 confidence: 0.97
-last_confirmed: "2026-06-23"
-accessed_at: "2026-06-23"
-source_count: 41
+last_confirmed: "2026-06-26"
+accessed_at: "2026-06-26"
+source_count: 42
 relationships:
   - type: depends-on
     target: agent-harness
@@ -198,6 +198,10 @@ Vo's deliberate de-hyping — *"don't worry if you are not loop-maxing… I stil
 ## The production-security instance: rolling your own harness at codebase scale ([[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Grinstead / How I AI, June 2026]])
 
 [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Grinstead (Mozilla, June 2026)]] is the wiki's first agentic-engineering case study in **security at production codebase scale** (Firefox: tens of millions of LOC). It ratifies several of the discipline's load-bearing claims from a non-startup, open-source-steward vantage: the engineer's job becomes *building and tuning the harness/pipeline* (LLM judge → analyzer → verifier → patch) rather than writing the fix; *"the harness is simpler than it looks"* (a *"reasonably simple wrapper"* around Claude Code/Codex; the minimal version is one prompt + the `-p` flag, no SDK); and the decisive engineering judgment is **what verification signal to build** (the AddressSanitizer win/lose crash signal). Grinstead's model-vs-harness ~50/50 split and *"30 ideas off every one thing you did"* are a working-engineer's evidence that the agentic-engineering frontier (harness + pipeline + eval design) remains wide open — the practitioner counterweight to [[2026-06-11-kilpatrick-sequoia-model-eats-the-harness|model-eats-the-harness]]. The transferable craft — *score → verify → fix* reused for perf, conversion, or tech debt — is agentic-engineering as a **general workflow-design discipline**, not a security niche.
+
+## The "engineers, not just builders" thesis from a platform-builder ([[2026-06-24-from-demo-to-production-why-agentic-ai-systems-fail|InfoQ / "From Demo to Production", June 2026]])
+
+[[2026-06-24-from-demo-to-production-why-agentic-ai-systems-fail|"From Demo to Production"]] (InfoQ, June 2026) closes on a one-line restatement of this concept's central claim, delivered from the vantage of someone who shipped a 10-agent / 200-tool agentic platform to production: *"agentic systems are built through engineering… the model is just one component; the industry is saying only builders are required, but engineers are still required."* The whole talk is an existence proof — four production failure patterns (context overload, tool explosion, orchestration hand-off loss, the execution black box; see [[agent-harness]]) that no amount of model improvement removes, each fixed by engineering judgment (progressive disclosure, the Tool Search Tool, the agent-vs-skill-vs-tool decision, day-one observability). It also supplies a crisp **prompts-as-technical-debt** datapoint for the discipline: the team *"changed our architecture four times in one year,"* but the lesson is that *domain knowledge doesn't change* — you re-architect to ride new primitives (instructions → skills → tool-search), not to chase the model. This is the practitioner-platform counterpart to [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Grinstead's]] security-scale instance: the engineering frontier (harness, context, tool, eval design) is where the durable work lives.
 
 ## Debates and supersession
 

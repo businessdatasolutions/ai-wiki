@@ -10,6 +10,54 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-06-26] ingest | BBC *What If We're Wrong About AI Layoffs?* (22 Jun 2026) + new `ai-washing` concept
+
+Ingested the BBC Global explainer-interview (*New Normal with Katty Kay*; YouTube `BPrwXkuI20U`; ~8 min; **human-curated** en-GB captions) in which labor economist **Kathryn Anne Edwards** dissects **AI washing** — companies citing AI as the reason for layoffs they'd have done anyway.
+
+- **Acquire**: `raw/videos/what-if-were-wrong-about-ai-layoffs.md` (transcribed the manual caption track; speaker-labelled; chapters interleaved).
+- **New source page**: [[2026-06-22-bbc-what-if-were-wrong-about-ai-layoffs]] (kind: video). Three typed `supports` source-to-source edges from the neighbour scan: [[2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering]] (Sam Altman *AI washing* framing — the term's prior carrier), [[2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs]] (Challenger "#1 cited reason" + NACE 14%), [[2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai]] (measurement caution).
+- **New concept page**: [[concepts/ai-washing|ai-washing]] (2 sources — Edwards/BBC + Altman-via-Everitt; confidence 0.72; `part-of` [[concepts/ai-employment-effects|ai-employment-effects]]). Resolves a pre-existing stub gap — `ai-washing` was already a tagged term ([[Sam Altman]] entity, Everitt source) with no home page. Mechanism: stock-market valuation premium; greenwashing analogy; near-unmeasurable attribution; weak market penalty; narrative-distortion harm + the Indeed-software-dev-postings counter-data.
+- **Concept updated**: [[concepts/ai-employment-effects|ai-employment-effects]] (new "AI washing: the attribution confound" section; source_count 52→53 — *note: 52 was set by the concurrent FT-Film ingest in this same session window*; [[ai-washing]] added to Related concepts).
+- **Cross-links wired**: [[ai-washing]] body-linked from the Everitt source's concept list and the [[Sam Altman]] entity.
+- **No W&W tags** — labor-market narrative source, outside the digital-transformation lens.
+- **Catalogues**: [[index|index.md]] (new Sources + Concepts entries), this log entry.
+- Reversible: delete the source + concept + raw files; revert the ai-employment-effects section + frontmatter, the Everitt/Altman cross-links, and the two index lines.
+
+## [2026-06-26] ingest | FT Film *The AI factory: the rewiring of India's tech industry* (25 Jun 2026)
+
+Ingested the Financial Times documentary (FT Film, reported by Krishn Kaushik; ~20:35; ASR-cleaned auto-captions) on AI's reshaping of India's tech economy. The wiki's first **field-journalism / Global-South vantage** on AI labor: India as *"the AI factory of the world"* — the data-annotation + RLHF + humanoid-robot-training labor pool (egocentric data captured via GoPros / Meta glasses on Karur textile workers; **Object Ways**, **NextWealth** rural-BPO, **Tesco Business Solutions** GCC) — set against the AI-driven displacement threat to the ~$330–340bn IT-services export and a sharp extraction / power-concentration / sovereignty critique.
+
+- New source page: [[2026-06-25-the-ai-factory-the-rewiring-of-indias-tech-industry]] (`kind: video`; raw at `raw/videos/the-ai-factory-the-rewiring-of-indias-tech-industry.md`).
+- W&W tags: `contextual/external-triggers` (AI disrupting the IT-services sector + capital flight), `strategic-renewal/business-model` (India's sector value-chain repositioning; the in-house GCC model).
+- Neighbour-source scan → 2 typed `supports` edges: [[2026-05-19-palicha-zepto-stanford-or-startup-india-quick-commerce]] (opposite-vantage India-AI-economy source) and [[2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why]] (AI-hype critique, cognitive-science sibling). No source-to-source edges drawn to the empirical employment papers (journalism→empirical-study corroboration kept at the concept-page layer instead).
+- Concept updates: [[concepts/ai-employment-effects]] (new "offshoring vantage" section; source_count 51→52, last_confirmed/accessed_at → 2026-06-26), [[concepts/responsible-ai]] (new "RAI as political economy" section; source_count 17→18, dates → 2026-06-26).
+- Flagged a **candidate concept** — *human-in-the-loop data-labor / "AI factory" economy* — held single-source; promote on a second annotation-labor source (Scale / Surge / Sama / MTurk-style).
+- No new entity pages: Krishn Kaushik, Object Ways, NextWealth, Tesco Business Solutions left dangling per the second-source rule.
+
+## [2026-06-26] refactor | Promote Langfuse + LiteLLM + InfoQ to entities
+
+Also promoted **[[InfoQ]]** (kind: venue; source_count 2, confidence 0.75) — the InfoQ "From Demo to Production" ingest pushed the channel/`author:` "InfoQ" to its second source (first: [[2026-05-06-bockeler-engineering-of-ai-agents-context-harnessing-autonomy|Böckeler / QCon London 2026]]), which `scripts/lint-dangling-authors.mjs` flagged. Creating the entity cleared the lint and resolved a pre-existing broken `[[InfoQ]]` wikilink in the Böckeler source. Backlinks wired on both source pages + the index Entities catalogue.
+
+
+
+Follow-on to the InfoQ ingest. Promoted two observability-stack tools from dangling mentions to entity pages:
+
+- **[[LiteLLM]]** (kind: library; source_count 2, confidence 0.75) — cleared the second-source threshold: [[2026-05-18-wolfe-agent-evaluation-detailed-guide|Wolfe]] (τ-bench `litellm.completion()` loop) + [[2026-06-24-from-demo-to-production-why-agentic-ai-systems-fail|InfoQ]] (model-call capture). Typed `part-of` [[concepts/agent-harness|agent-harness]] (model-routing seam).
+- **[[Langfuse]]** (kind: product; source_count 1, confidence 0.70) — promoted by user request rather than the second-source rule; single source ([[2026-06-24-from-demo-to-production-why-agentic-ai-systems-fail|InfoQ]]). Typed `part-of` [[concepts/agent-harness|agent-harness]] (observability layer). Confidence-capped and flagged single-source on the page.
+
+Backlinks wired: dangling lines updated on both source pages; `[[Langfuse]] + [[LiteLLM]]` wikilinked in the agent-harness observability paragraph; both added to the index Entities catalogue. Reversible: delete the two entity files, revert the dangling-line edits + the index/agent-harness wikilink touches.
+
+## [2026-06-26] ingest | InfoQ *From Demo to Production: Why Agentic AI Systems Fail* (24 Jun 2026)
+
+Ingested the InfoQ conference talk (YouTube `yCIl1-dIVnc`, presenter unnamed; ~39 min ASR transcript) — a platform-builder's four production failure patterns for agentic AI, each independently reproducing a layer of [[concepts/agent-harness|agent-harness]]: context overload → progressive disclosure via skills; tool explosion → the Tool Search Tool; orchestration hand-off information-loss → the agent-vs-skill-vs-tool decision; the execution black box → day-one observability (Langfuse + LiteLLM).
+
+- **Acquire**: `raw/videos/from-demo-to-production-why-agentic-ai-systems-fail.md` (light ASR cleanup; proper nouns normalised — MCP, Langfuse, LiteLLM, LangGraph, OAuth, "vibe coding").
+- **New source page**: [[2026-06-24-from-demo-to-production-why-agentic-ai-systems-fail]] (kind: video). Four typed `supports` source-to-source edges from the neighbour scan: [[2024-12-19-anthropic-building-effective-agents]] (MCP + tool discipline), [[2026-05-04-rethinking-agents-harness-is-all-you-need]] (subtraction principle), [[2026-04-22-cheung-ippolito-secchi-google-agents-cli]] (skills = progressive disclosure), [[2026-06-03-chopra-headroom-context-optimization-layer-for-llm-applications]] (context budgeting).
+- **Concepts updated**: [[concepts/agent-harness|agent-harness]] (new "four production failure patterns" ratification section; source_count 68→69, dates→2026-06-26), [[concepts/agentic-engineering|agentic-engineering]] (new "engineers, not just builders" section; 41→42, dates→2026-06-26).
+- **No W&W `dynamic_capabilities:` tags** — engineering-mechanics source (context windows / tools / observability), outside the digital-transformation lens; neighbour scan ran via the shared-concept-citation fallback (all four neighbours cite agent-harness).
+- **Catalogues**: [[index|index.md]] (new Sources entry), this log entry.
+- Reversible: delete the source page + raw file, revert the two concept sections + frontmatter bumps, remove the index line.
+
 ## [2026-06-25] ingest | Guilbeault / Stanford GSB *If/Then* — *What AI Can't Do — And Why* (25 Jun 2026)
 
 ASR transcript fetched via the Playwright skill (JSON mode), cleaned (timestamp interjections + `[music]` markers removed, chapters restored, proper nouns fixed: Guilbeault / Cool / Wittgenstein / PNAS) → `raw/videos/what-ai-cant-do-and-why.md` (~5,100 words, 13 chapters). Pre-flight: identity confirmed from description (Douglas Guilbeault, Stanford GSB; host Kevin Cool); scope = full episode; `kind: asr` noted (does not feed confidence).

@@ -207,7 +207,7 @@ This is the wiki's first source naming a wider benchmark landscape beyond τ-ben
 - **Sierra** — research org behind τ-bench / τ²-bench / τ³-bench. **First mention.** *Dangling.*
 - **Terminal-Bench** — benchmark + framework. **First-class wiki mention** as the empirical anchor for [[agent-harness|agent-harness]]'s Pan-et-al-Top-30-to-Top-5 result. Wolfe expands the wiki's grasp on the construction process.
 - **Kimi K2 Thinking** / **GPT-5.2** / **Claude Opus 4.5** / **Gemini 3 Pro** / **Qwen3** — models cited in benchmark results.
-- **LiteLLM** — OpenAI-compatible model-API abstraction; the τ-bench code uses it. **First mention.** *Dangling.*
+- [[LiteLLM]] — OpenAI-compatible model-API abstraction; the τ-bench code uses it. **Promoted to an entity 2026-06-26** on its second source mention ([[2026-06-24-from-demo-to-production-why-agentic-ai-systems-fail|InfoQ "From Demo to Production"]]).
 - **Terminus** — agent scaffold framing the Terminal-Bench front cover. **First mention.** *Dangling.*
 
 **Bibliography references (deferred-ingest candidates for [[agent-harness]] / [[ai-agents]] / [[concepts/llm-wiki|llm-wiki]] clusters):**

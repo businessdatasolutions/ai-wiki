@@ -164,6 +164,7 @@ The W&W tagging (10 cells — comparable to [[2026-05-22-khan-cline-deeplearning
 - [[agentic-engineering]] — the central concept; nine-element practice taxonomy is the most-complete treatment in the wiki to date.
 - [[agent-harness]] — *if you don't own your harness you don't own your memory* citation.
 - [[ai-employment-effects]] — eight-failure-mode framing + mega-layoffs + token-maxing + FOBO + 67-point management-vs-engineer gap + Sam Altman *AI washing*.
+- [[ai-washing]] — Sam Altman's *AI washing* counter-framing on the *more code, fewer people* mega-layoff narrative (this talk is the wiki's first carrier of the term; the [[2026-06-22-bbc-what-if-were-wrong-about-ai-layoffs|Edwards/BBC]] source supplies the dedicated labor-economist treatment).
 - [[micro-productivity-trap]] — *it ain't 10×, it's 10%* + MIT 95% study + Uber-annual-gone-in-three-months.
 - [[ai-benchmarks]] — *we need data scientists doing actual work again* + evals-as-first-element.
 - [[automation-vs-augmentation]] — Everitt's *don't eliminate the human, augment the human* + dark factory framing.

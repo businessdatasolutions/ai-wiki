@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-06-25"
-accessed_at: "2026-06-25"
-source_count: 17
+last_confirmed: "2026-06-26"
+accessed_at: "2026-06-26"
+source_count: 18
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -214,6 +214,17 @@ The architectural punchline — convergent with **Amazon Bedrock AgentCore**, wh
 - **Agent 365 — inventory, identity, sandbox, policy, observability.** *"There may be 20 million agents at Microsoft — I first need an inventory… what are they doing, what are their reasoning traces; they need to be fully inspectable, fully auditable."* Because agents *"execute code with file-system and network access,"* they get **identities** (extending Entra), **security** (Defender), and **data labeling/protection** (Purview), plus sandboxes and policy governance. This is the **agent-identity-management** requirement that Singapore's IMDA framework also mandates, here productised — *"security, containment, manageability, observability is how we have confidence around these agents."*
 - **Asserts vs guardrails-as-classifier.** For long-running agents, *"instead of guardrails as a classifier, you need the ability during execution to keep the execution path from going off the rails"* — runtime boundary enforcement (see [[agent-harness]] §asserts), the deterministic-enforcement direction RAI has been moving (cf. [[2025-07-31-wang-agentspec-runtime-enforcement-llm-agents|AgentSpec]]).
 - **Social permission and child safety as first-class RAI.** Nadella names **child safety** alongside cyber/bioweapon/alignment as a first-class AI-safety axis (children's *agency* in interacting with chatbots, not being persuaded). And he frames **social permission** as the industry's central RAI debt: the sector lost trust by saying *"all economic opportunity will go away for knowledge workers"* while being excited to build it; the repair is concrete and local — a data center must demonstrably help its community (tax base, schools, water, electricity prices), employment claims must name *"the new jobs and wages I can train for,"* and every firm must *participate in the frontier ecosystem, not just feed data to a foundation model* (*"sovereignty and dignity both lost"*). He ties this to **Pope Leo's encyclical** on AI and human dignity. This extends the concept's *labor-market-disruption-as-under-attended-RAI-concern* section with a vendor-CEO articulation of *earning and keeping social permission* as an RAI obligation.
+
+## RAI as political economy: extraction, power concentration, and data sovereignty ([[2026-06-25-the-ai-factory-the-rewiring-of-indias-tech-industry|FT Film / Kaushik, June 2026]])
+
+The wiki's RAI coverage has skewed toward **governance-and-safety** (bias, factuality, red-teaming, runtime enforcement, regulatory compliance). The [[2026-06-25-the-ai-factory-the-rewiring-of-indias-tech-industry|FT documentary on India's tech industry]] adds the under-attended **political-economy** face of responsible AI — the labor, power, and sovereignty questions that sit upstream of model behavior:
+
+- **Extractive supply chain + surveillance-consent.** The film frames data-annotation and robot-training labor as *"a supply chain which is extractive by design,"* and names a concrete consent/surveillance harm: in some geographies workers *"will be asked to wear these cameras by their employers with no extra money given to them, and all this data can be used against the workers."* This is a data-provenance-and-consent concern at the *labor* layer — distinct from the model-output bias/safety concerns the page otherwise tracks.
+- **Power concentration as a design property.** *"AI should be understood as a technology that by design concentrates power"*, paired with the *"whose knowledge was it that created these systems"* question about LLMs trained on others' data while *"these companies are now profiting in the billions."* The structural worry: the mediating technology *"companies run away with the lion's share of the value"* while the labor that trains them sits at *"the bottom end of the tech job."*
+- **AI-hype as capital mechanism.** *"AI is fundamentally a marketing term… a way to unlock vast amounts of capital."* This is the material-economy sibling of [[2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why|Guilbeault's]] cognitive-science hype critique — the same skepticism of the *"grandiose narrative,"* grounded in capital flows and labor rather than in what models can't do.
+- **Data sovereignty as a national-RAI concern.** *"Offering up the scale of our population as a carrot to attract foreign tech companies is not a pathway to anything resembling sovereignty or resilience."* Sovereignty-and-resilience joins the wiki's existing **jurisdictional-governance** thread ([[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world|Singapore's agentic-governance framework]]) but from the **labor-and-development** rather than the **compliance** angle.
+
+The labor-disruption dimension here reinforces the page's existing `supports → ai-employment-effects` edge: this source is cited on both pages, with [[ai-employment-effects]] carrying the *displacement/training-labor* mechanics and this page carrying the *extraction/power/consent* normative reading. Qualitative journalism — does not lift confidence; widens normative coverage.
 
 ## Debates and supersession
 
