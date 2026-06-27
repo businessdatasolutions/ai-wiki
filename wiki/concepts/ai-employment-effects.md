@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-06-26"
-accessed_at: "2026-06-26"
-source_count: 54
+last_confirmed: "2026-06-27"
+accessed_at: "2026-06-27"
+source_count: 55
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -398,6 +398,18 @@ The [[2026-06-25-the-ai-factory-the-rewiring-of-indias-tech-industry|FT document
 - **The lump-of-labor counter-frame appears here too** — *"while certain kinds of tech jobs may go out, there will be certain other newer kinds of tech jobs which will get created,"* and *"a distinct possibility that the overall number of jobs in the tech sector in India will actually go up."* This is the same [[2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going|Evans-style]] historical-induction argument, contested within the film by the extraction-skeptics (see [[responsible-ai]]). The binding constraint stated plainly: *"India has talent at very large scale. But if you don't have enough jobs for these people, what is the value of the scale? It's nothing."*
 
 This is **qualitative, journalistic** evidence, not a measured labor-market study — it does not lift the page's confidence. Its value is widening the page's geography (offshore-vendor economies) and surfacing the **training-labor-creation** counter-current to displacement.
+
+## The Netherlands sectoral vantage: occupational-exposure scoring for IT + business services ([[2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening|RaboResearch / Rabobank, June 2026]])
+
+The wiki's first **Dutch national / sectoral** empirical source applies the **[[2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai|occupational-exposure]] method-family** to the Netherlands: [[2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening|RaboResearch (June 2026)]] maps **Gmyrek et al. (2025, ILO Working Paper 140)** task-level GenAI-automatability scores onto the CBS Nederlandse Beroepsclassificatie, binning every task into hoog / potentieel / laag / niet-mogelijk. It is a method cousin of [[2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai|Massenkoff & McCrory / Anthropic]] (both convert task ratings into occupational exposure) and corroborates the [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson Canaries]] / [[2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces|BCG reshape ≫ replace]] compositional finding from a fresh geography and instrument.
+
+- **Sector exposure**: **86% of IT tasks** (Informatie & communicatie: 49% hoog + 37% potentieel) and **64% of business-services tasks** (33% + 31%) have (hoog) automatiseringspotentieel — among the most-exposed sectors in the Dutch economy, alongside financial services; agriculture, horeca and construction are least exposed.
+- **The compositional-shift mechanism, sector by sector**: accountancy, advocatuur and consultancy all show the same pattern — routine execution (boekkeeping, contract analysis, jurisprudence search, data-analysis/reporting) automates while value concentrates in *complex judgment, advice and client work*, and **demand for junior/instap roles falls**. In IT, senior developers move toward quality assurance, architecture and *"IT governance"* (defining the context agents operate in) while routine programming, testing and documentation are absorbed — the executing→advisory shift this page tracks, restated at the Dutch-sector level.
+- **Per-occupation ranking** (Gmyrek-derived): most-exposed are boekhoudkundig medewerkers (~100% hoog), secretaresses, administratief medewerkers, callcentermedewerkers, databank-/netwerkspecialisten; least-exposed are schoonmakers and beveiligingspersoneel — the same routine-cognitive-high / physical-low gradient documented elsewhere on this page.
+- **NL ahead of EU average, not the leader** (CBS enterprise survey, firms >10 employees): Dutch IT and business-services firms use AI above the EU mean in every business function but below the EU leader in every function — a national-adoption datapoint mirrored on [[enterprise-ai-adoption]].
+- **Potential ≫ realisation** is stated explicitly: the scores measure potential *when the technology is further developed and implemented*, and RaboResearch flags that experimental productivity gains may not survive into daily practice — the bridge to the [[micro-productivity-trap]] (see that page for the study's task-level-vs-firm-level productivity table).
+
+This is a **research-note-altitude** sectoral study (bank research arm; figures sourced from CBS/UWV/ILO), not a peer-reviewed large-N panel — it widens the page's geography to the Netherlands and its method coverage to a second occupational-exposure instrument, without lifting confidence past the ceiling already set by the US empirical anchors.
 
 ## AI washing: the attribution confound gets its own page ([[2026-06-22-bbc-what-if-were-wrong-about-ai-layoffs|Edwards / BBC, June 2026]])
 

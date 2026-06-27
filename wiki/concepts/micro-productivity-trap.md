@@ -3,9 +3,9 @@ type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
-last_confirmed: "2026-06-19"
-accessed_at: "2026-06-19"
-source_count: 34
+last_confirmed: "2026-06-27"
+accessed_at: "2026-06-27"
+source_count: 35
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -242,6 +242,12 @@ BCG states the trap's escape as an explicit CEO recommendation: **"Refocus autom
 ## The individual-level efficiency-tax — why employees hide their gains ([[2026-06-10-anicich-brouwers-why-employees-arent-transparent-ai-usage|Anicich & Brouwers / HBR June 2026]])
 
 The trap has a micro-foundation at the level of the individual worker. When efficiency gains are treated as **spare capacity to be filled** rather than a dividend to be reinvested — *"if I automate A and B, they're not just gonna let me focus on C; they're gonna make me do D, E, F"* — employees rationally **stop disclosing** their best AI workflows ([[ai-knowledge-hiding]]). The firm-level symptom (task gains that never reach the P&L) is partly *produced* by this hiding: privately-held workflows can't aggregate into shared capability. Anicich & Brouwers' prescription — **"stop taxing efficiency gains"** with an explicit norm for how saved time is reinvested (deeper analysis, higher-value work, development, recovery) — is the labor-side complement to BCG's *redesign-not-cost* directive and the page's *reimagine-don't-optimize* thesis: the trap closes not only by redesigning workflows but by changing the implicit deal so that surfacing a productivity gain doesn't simply earn the worker more work.
+
+## The task-level-vs-firm-level productivity spread in one chart ([[2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening|RaboResearch / Rabobank, June 2026]])
+
+[[2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening|RaboResearch (June 2026)]] collates ~18 AI productivity studies into a single ranked figure that lays the trap bare in one view: **task-level / occupational experiments cluster high; firm-level studies cluster near zero.** The top of the chart is task-experiment territory — advertising **+73%** (Ju & Aral 2025), software development **+55.8%** (Peng et al. 2023), consulting **+25.1%** (Dell'Acqua et al. 2025), customer service **+14%** (Brynjolfsson, Li & Raymond 2024). The bottom is firm-level territory — **+1.4%** (Bloom, Barrero, Davis et al. 2026), **0% TFP** (Babina, Fedyk, He & Hodson 2023), **~0%** (Otis et al. 2023 entrepreneurship), and most pointedly **Atlassian Research 2025: 96% of firms report no ROI** — with one study (Niederhoffer, Teevan & Jaffe 2025) showing knowledge work *slower* (−2 units/incident).
+
+This is the wiki's first source to **visualise the gap as a single distribution** rather than assert it: the same span the page builds from individual case studies (Bain's 10–25% EBITDA leakage, the [[2026-03-20-huggingface-agentic-evaluations-workshop|capability-reliability gap]]) is here a chart whose left tail (task experiments) and right tail (firm aggregates) are the two ends of the trap. RaboResearch states the bridge explicitly: the experimental gains are *"onzeker of deze effecten standhouden buiten experimenten"* — implementation, integration and skills determine whether task-level productivity reaches the P&L. The figure does not name the *escape* (that is the page's redesign thesis), but it is the cleanest single-frame **diagnostic** of the trap the wiki holds. (One caveat to carry: the METR row is plotted +18%, where METR's own July-2025 RCT found experienced developers ~19% *slower* — a sign-discrepancy worth not taking at face value.)
 
 ## Related concepts
 

@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-06-25"
-accessed_at: "2026-06-25"
-source_count: 78
+last_confirmed: "2026-06-27"
+accessed_at: "2026-06-27"
+source_count: 79
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -527,6 +527,10 @@ A sharp human-factor addition to the maturity story: even where individual adopt
 - **Token capital as a balance-sheet-invisible asset.** *"This economy is going to be shaped by both human capital and… token capital."* A firm's tacit knowledge — *"the unique ways you operate, pass judgment, have taste"* — is now extractable by models *"through human trajectories"* and encodable as weights/context/skills. The adoption mandate is to **compound** that into something *"you own, you control, you created"* — and *not leak it*, because *"if you leak it, it's a one-way door."* Nadella's leakage mechanism (model companies *"setting up gyms with rewards, employing employees who worked at your company previously"*) makes the *data-as-moat* claim concrete at the firm-IP level — the CEO-altitude version of the [[2026-06-12-aws-leaders-guide-data-strategy-agentic-ai|AWS data-strategy]] *your-data-is-your-context* thesis.
 - **The refounding mandate: "AI is not a technology, it's the future of the firm."** Unlike PC/cloud/mobile (*"have an IT department deal with vendors and reduce cost"*), this requires the CEO to answer *"what's your token capital?"* concretely — and Nadella is *"perplexed"* that most non-tech CEOs *"still haven't woken up,"* doing a press release and *"pointing to eight agents they built."* This is the sharpest articulation in the corpus of the *adoption-vs-capability lag*: the durable move is building a firm-owned **hill-climbing machine** (*"welcome the models in, they hill-climb inside a machine you control, your data is your context, you collect the traces, you don't let it leak"*), where the new IP is *"getting clear about the evals and objectives you care about."* Directly convergent with [[2026-06-18-ramaswamy-mckinsey-every-company-software-company|Ramaswamy's *every company a software company*]] and [[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Dumra's *everyone an innovator*]] at the same CEO altitude.
 - **Sovereign AI for *companies*, not just countries.** Nadella reframes sovereignty around **comparative advantage** (Ricardo): the best sovereignty is preserving the advantage embodied in your thriving companies, not firewalls/data-residency. The failure modes are symmetric — *"go off frontier and that makes no sense; but depend on one frontier model and you're not sovereign either"* — resolved by *"using models to hill-climb on your own, one firm at a time."* A useful extension of the concept's adoption-strategy layer up to the national-economy scale.
+
+## The Dutch national-adoption datapoint: ahead of EU average, behind the leaders ([[2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening|RaboResearch / Rabobank, June 2026]])
+
+[[2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening|RaboResearch (June 2026)]] adds the wiki's first **Netherlands-specific** enterprise-adoption reading, from a CBS enterprise survey (firms >10 employees, AI use by business function). The headline: Dutch IT and business-services firms use AI **above the EU average in every business function, but below the EU leader in every function** — *"lopen voor op het Europees gemiddelde, maar behoren niet tot de kopgroep."* (E.g. for business services, administratieve processen NL 25% vs EU-leader 33% vs EU-avg 14%; marketing NL 16% vs 31% vs 10%.) This is a *middle-of-the-pack-but-ahead-of-mean* national position — consistent with the global high-adoption/low-maturity gap this page tracks, now with a country-level qualifier. RaboResearch frames the strategic stake as the same one Nadella and BCG name: firms that integrate AI into processes and skills *"kunnen hun productiviteit structureel verhogen"* while laggards *"zullen terrein verliezen"* — and it names **three enabling conditions** (strategic ownership; a reliable/governed data-IT-process base embedded in workflows; governance/trust) that line up with the [[dynamic-capabilities]] sensing/seizing/transforming microfoundations and with [[responsible-ai]]. The labour-side and task-level-productivity halves of the same study live on [[ai-employment-effects]] and [[micro-productivity-trap]].
 
 ## Debates and supersession
 
