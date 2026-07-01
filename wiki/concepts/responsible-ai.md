@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-06-26"
-accessed_at: "2026-06-26"
-source_count: 18
+last_confirmed: "2026-07-01"
+accessed_at: "2026-07-01"
+source_count: 19
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -143,6 +143,12 @@ This reframes the [[ai-agents]] safety story: rather than relying on the model t
 Quoted: *"Safety and security are fundamental, because they're one of the big fears impeding adoption for AI technologies today. So if you don't trust something, you're not going to use it."* — [[Jeetu Patel]], President & CPO, [[Cisco]].
 
 This framing complements the [[2026-04-28-anand-wu-genai-playbook|Anand-Wu]] guidance to **focus on guarding most-critical risks** (PII leakage, regulated data) rather than blanket risk minimization. The JPMorgan ChatGPT-block (2023) example illustrates the tradeoff: blocking 60,000 users from experimentation while security teams completed third-party reviews was a sensible precaution but not a sustainable posture.
+
+### AI-generated code as verbose and less secure — the earlier-review prescription ([[2026-06-24-mckinsey-ai-supercharging-software-development|McKinsey panel, June 2026]])
+
+[[2026-06-24-mckinsey-ai-supercharging-software-development|Palaniappan, Harrysson & Linderman]] add a code-specific claim to the wiki's AI-security thread, distinct from the MITTRI/Cisco model/hardware/vector-database taxonomy above: AI-generated code has, in their consulting experience so far, tended to be **more verbose and less secure** than human-written code. Their prescription is procedural rather than technical — move security and risk review **earlier**, to design/product-definition time, rather than treating it as a downstream, sequential gate a separate risk team applies after code is written. They expect the quality/security gap to narrow as models improve, but treat *what gets checked, and when* as the variable organizations can control now.
+
+This is a qualitative, unquantified claim (no cited benchmark or study) — it does not lift the page's confidence, and should be read as one consulting panel's practice-informed impression rather than a measured finding. Its value is naming a **shift-left** prescription for AI-code security specifically, complementing the MITTRI/Cisco taxonomy's *what to secure* with a *when to check it* recommendation.
 
 ### Risk-vs-experimentation tradeoff (Anand-Wu)
 

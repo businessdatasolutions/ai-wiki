@@ -3,9 +3,9 @@ type: concept
 aliases: ["agentic engineering", "Agentic Engineering", "agentic-engineering", "agent engineering"]
 tags: [agentic-engineering, vibe-coding, software-3.0, ai-agents, agent-harness, software-engineering, hiring, karpathy, codex-case-study]
 confidence: 0.97
-last_confirmed: "2026-06-26"
-accessed_at: "2026-06-26"
-source_count: 42
+last_confirmed: "2026-07-01"
+accessed_at: "2026-07-01"
+source_count: 43
 relationships:
   - type: depends-on
     target: agent-harness
@@ -202,6 +202,10 @@ Vo's deliberate de-hyping — *"don't worry if you are not loop-maxing… I stil
 ## The "engineers, not just builders" thesis from a platform-builder ([[2026-06-24-from-demo-to-production-why-agentic-ai-systems-fail|InfoQ / "From Demo to Production", June 2026]])
 
 [[2026-06-24-from-demo-to-production-why-agentic-ai-systems-fail|"From Demo to Production"]] (InfoQ, June 2026) closes on a one-line restatement of this concept's central claim, delivered from the vantage of someone who shipped a 10-agent / 200-tool agentic platform to production: *"agentic systems are built through engineering… the model is just one component; the industry is saying only builders are required, but engineers are still required."* The whole talk is an existence proof — four production failure patterns (context overload, tool explosion, orchestration hand-off loss, the execution black box; see [[agent-harness]]) that no amount of model improvement removes, each fixed by engineering judgment (progressive disclosure, the Tool Search Tool, the agent-vs-skill-vs-tool decision, day-one observability). It also supplies a crisp **prompts-as-technical-debt** datapoint for the discipline: the team *"changed our architecture four times in one year,"* but the lesson is that *domain knowledge doesn't change* — you re-architect to ride new primitives (instructions → skills → tool-search), not to chase the model. This is the practitioner-platform counterpart to [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Grinstead's]] security-scale instance: the engineering frontier (harness, context, tool, eval design) is where the durable work lives.
+
+## Convergent-evolution of a skills framework, ahead of the vendor ([[2026-06-08-vincent-coderabbit-fixing-ai-slop-managing-agents-like-mit-interns|Vincent / CodeRabbit, June 2026]])
+
+[[2026-06-08-vincent-coderabbit-fixing-ai-slop-managing-agents-like-mit-interns|Jesse Vincent]] built **Superpowers** — a brainstorm-before-code discipline plus reusable, packaged "skills" for agentic coding — independently, before Anthropic's own Skills framework shipped. The wiki's full harness-architecture treatment (Coordinator/Coder/Reviewer separation, adversarial review, "latent space engineering") lives on [[agent-harness]]; this page's relevant contribution is narrower: a practitioner forcing a structured planning/brainstorm phase before any code generation, arrived at from an engineering-management background rather than a systems-engineering one, and reaching some of the same structural conclusions (skill packaging, spec-first discipline) the wider agentic-engineering field converged on around the same time. Per [[../../CLAUDE.md#lifecycle|Lifecycle rules]] this single-source practitioner account does not lift the page's confidence; its value is a convergent-evolution data point on spec-first discipline.
 
 ## Debates and supersession
 

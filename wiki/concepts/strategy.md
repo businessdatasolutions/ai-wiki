@@ -3,9 +3,9 @@ type: concept
 aliases: ["strategy", "business strategy", "corporate strategy", "competitive strategy"]
 tags: [strategy, strategic-planning, value-creation, value-capture, theory-of-winning, playing-to-win, value-stick, roger-martin, felix-oberholzer-gee, harvard-business-review]
 confidence: 0.88
-last_confirmed: "2026-06-16"
-accessed_at: "2026-06-16"
-source_count: 7
+last_confirmed: "2026-07-01"
+accessed_at: "2026-07-01"
+source_count: 8
 relationships:
   - type: supports
     target: strategic-foresight
@@ -163,6 +163,12 @@ This is the AI-era extension of the page's *strategy-as-a-theory-under-feedback*
 ### The durable-advantage principle: time-to-do vs time-to-happen ([[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world|Brovich / AWS Sydney 2026]])
 
 The sharpest one-line statement of where advantage survives the commoditisation branch above: **"AI compresses the time it takes to do things. It does not compress the time it takes for things to happen."** Brovich's "Only Moats That Matter" slide sorts advantage by *which clock governs it*: the **"hard to do"** moats (workflow embeddedness, software scale, integration lock-in, engineering complexity) erode because AI compresses *doing*-time; the **"hard to get"** moats (compounding proprietary data — *years of operations*; network effects — *years of adoption*; regulatory permission — *years of process*; capital at scale — *decades of trust*; physical infrastructure — *years of building*) appreciate because their constraint is **elapsed time, trust, and physics**, which no capability gain shortens. This is the durable-advantage refinement of the trichotomy: when strategy *generation* commoditises, advantage migrates to whatever is **bottlenecked by time rather than effort** — the strategy-theoretic complement to [[foundation-models|"rent the model, own the harness"]] and the [[theory-based-view|firm-specific theory of value]].
+
+### Earning the right to innovate: "Proven, Better, New" ([[2026-06-14-pincus-lennys-podcast-hidden-pattern-behind-successful-products|Pincus / Lenny's Podcast, June 2026]])
+
+[[2026-06-14-pincus-lennys-podcast-hidden-pattern-behind-successful-products|Mark Pincus]] (Zynga founder) supplies a founder-vantage product-strategy framework distinct from this page's HBR-theory lenses: **Proven** (start from something already validated in the market — "earn the right to innovate" before differentiating), **Better** (not marginally improved, but decisively better — enough that "10 out of 10 people" say yes), **New** (only after proven + better is earned should a genuinely novel element be added). The framing reframes disciplined imitation-then-improvement as a legitimate strategic starting point, against a cultural bias that over-rewards perceived originality.
+
+A companion claim sharpens *where* ambition should sit: **narrower scope, executed decisively, outperforms broad, diffuse ambition** — Pincus argues the most ambitious long-term outcomes come from *less* ambitious initial scoping, not more. This is a founder-practitioner complement to Martin's *planning ≠ strategy* discipline above: both warn against strategy-as-sprawling-plan, from different vantages (execution focus vs. cognitive-work discipline). Per [[../../CLAUDE.md#lifecycle|Lifecycle rules]] this single-source, book-promotional interview does not lift the page's confidence; its value is a founder/product vantage the page's consulting- and academic-altitude sources don't otherwise carry.
 
 ## Debates and supersession
 

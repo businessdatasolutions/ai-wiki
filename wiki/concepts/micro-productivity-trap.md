@@ -5,7 +5,7 @@ tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, wor
 confidence: 0.95
 last_confirmed: "2026-07-01"
 accessed_at: "2026-07-01"
-source_count: 36
+source_count: 37
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -254,6 +254,12 @@ This is the wiki's first source to **visualise the gap as a single distribution*
 [[2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026|Aneesh Raman's]] book opens its companies chapter with a historical instance of the trap that predates every source on this page: factories that adopted electricity but **installed it exactly where the steam engine had been**, changing nothing else about the floor plan — "productivity didn't really budge, and everyone started questioning the technology." The lesson Raman draws, in the book's own words via **Conor Grennan**: *"this is not about just folding it in. This is about transforming your entire way of work."*
 
 This is the same *bolt-on-fails* diagnostic the page already holds from AI-era sources — [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen's]] *"AI bolted on is going to fail,"* [[2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner|Westerman/Caldas's]] *"automate first, then reimagine,"* the [[2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life|Microsoft Agentic DevOps keynote's]] *typing-pool* analogy — but pushed back one general-purpose-technology cycle earlier, and packaged for a mass-market book-promotion audience rather than a practitioner or consulting one. It does not add new evidence or lift the page's confidence past its cap (per [[../../CLAUDE.md#lifecycle|Lifecycle rules]]); its value is corroborating, via an independent historical case, that the trap is a recurring pattern across general-purpose technologies rather than an AI-specific pathology — reinforcing the page's [[warner-wager-process-model|W&W]] framing that transformation primitives outlast any one technology wave.
+
+## The software-engineering-specific restatement ([[2026-06-24-mckinsey-ai-supercharging-software-development|McKinsey panel, June 2026]])
+
+[[2026-06-24-mckinsey-ai-supercharging-software-development|Palaniappan, Harrysson & Linderman]] (McKinsey) restate the trap narrowly for software engineering: a team can complete in 4 days what took 4 weeks using coding agents, but that individual-level speedup does not automatically scale to hundreds or thousands of developers — because the surrounding pipeline (code review, QA, deployment) stays a bottleneck when firms distribute a new coding assistant without redesigning the workflow around it. Their diagnosis of *why* firms fall into the trap matches the page's existing consensus almost exactly: organizations captured real gains only when they **rearchitected how software gets made**, not when they merely licensed a tool.
+
+This is the wiki's **first source to state the trap specifically and narrowly for the software-development function** — prior software-engineering-adjacent corroborations ([[2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer|Forsgren & Macvean's]] DORA individual-vs-team-benefit divergence, [[2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life|Randell & Gousset's]] "feeling faster while going slower") name the same failure mode but at the individual-developer or DORA-metric layer; this source names it at the **engineering-org-scaling layer** specifically. Per [[../../CLAUDE.md#lifecycle|Lifecycle rules]] this is a qualitative consulting-panel claim (unquantified beyond the single 4-days/4-weeks anecdote), so it does not lift the page's confidence past its cap — its value is narrowing the trap's software-engineering instance to the org-scaling mechanism specifically.
 
 ## Related concepts
 

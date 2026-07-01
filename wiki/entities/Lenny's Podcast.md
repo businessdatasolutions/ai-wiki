@@ -5,10 +5,13 @@ aliases: ["Lenny's Podcast", "Lennys Podcast", "lennypodcast", "Lenny Rachitsky'
 tags: [lenny-podcast, podcast, product-management, consumer-tech, ai-era-strategy, founder-interviews, lenny-rachitsky]
 since: 2022
 confidence: 0.85
-last_confirmed: "2026-06-01"
-accessed_at: "2026-06-01"
-source_count: 5
+last_confirmed: "2026-07-01"
+accessed_at: "2026-07-01"
+source_count: 6
 relationships:
+  - type: published-by
+    target: 2026-06-14-pincus-lennys-podcast-hidden-pattern-behind-successful-products
+    via: "Mark Pincus (Zynga founder) on the 'Proven, Better, New' product framework, instincts-over-ideas, being less ambitious, and 'kill hope before hope kills you' — timed to his book Life at the Speed of Play (14 June 2026)"
   - type: published-by
     target: 2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going
     via: "Benedict Evans (independent analyst, ex-a16z partner) on 1997-for-AI / task-vs-job / foundation-models-as-commodity-utility / 5–10-year sector-by-sector adoption / lump-of-labor-fallacy applied to AI employment effects (31 May 2026 — the wiki's first independent-analyst-altitude long-form anchor)"
@@ -41,6 +44,7 @@ Lenny Rachitsky himself is not (yet) given his own entity page because he does n
 | [[2026-05-02-schoening-lennys-podcast-cultivating-agency-ai-era\|Schoening 2026]] | 2 May 2026 | **Max Schoening** (Notion head of product) | Agency as the durable AI-era skill; designers and PMs shipping code at Notion; malleable software; prototype-vs-engineering physical metaphor |
 | [[2026-05-10-ries-lennys-force-destroys-companies-within\|Ries 2026]] | 10 May 2026 | **Eric Ries** (Lean Startup; *Incorruptible*) | Governance as the unit of mission protection; PBC + LTBT as defensive structure; Conway's law applied to AI alignment |
 | [[2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going\|Evans 2026]] | 31 May 2026 | **Benedict Evans** (independent analyst; ex-a16z partner; biannual *AI Eats the World* deck author) | *1997 for AI* framing; task-vs-job analytical lever; foundation-models-as-commodity-utility (AWS-not-Windows analogy); 5–10-year sector-by-sector adoption pace; lump-of-labor-fallacy applied to AI employment effects; the under-asked question *do model labs have pricing power?* |
+| [[2026-06-14-pincus-lennys-podcast-hidden-pattern-behind-successful-products\|Pincus 2026]] | 14 June 2026 | **Mark Pincus** (Zynga founder) | "Proven, Better, New" product framework; instincts-right-95%/ideas-wrong-75%; being less ambitious as the path to bigger outcomes; "kill hope before hope kills you"; AI as a failure machine; make-everyone-a-CEO management philosophy |
 
 The first four episodes are operator-narrated and run ~70 minutes to ~100 minutes. The Evans episode is **analyst-narrated** at the same length (~80 minutes) — a different rhetorical register inside the same long-form-interview format. Spiegel and Evans share a *distribution-becomes-the-moat* thesis at different altitudes (operator vs analyst); Ries and Spiegel are paired on durability-under-change (legal-entity layer + operating-model layer); Caldwell and Evans bookend the channel's two-year arc with the *founder-resilience* and *analyst-altitude* poles. See the *Convergence and contradictions* sections of the respective source pages for the cross-link analysis.
 
