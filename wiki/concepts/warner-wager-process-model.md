@@ -3,9 +3,9 @@ type: concept
 aliases: ["Warner-Wäger process model", "Warner & Wager process model", "W&W process model", "digital-transformation process model"]
 tags: [dynamic-capabilities, digital-transformation, microfoundations, warner-wager, wiki-vocabulary]
 confidence: 0.82
-last_confirmed: "2026-06-26"
-accessed_at: "2026-06-26"
-source_count: 5
+last_confirmed: "2026-07-01"
+accessed_at: "2026-07-01"
+source_count: 6
 relationships:
   - type: instance-of
     target: dynamic-capabilities
@@ -161,6 +161,16 @@ This is the wiki's **second non-digital culture source** and the first *theoreti
 ## The fullest single-source operationalisation — *DBS Bank* ([[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Dumra 2026]])
 
 Where the Rolls-Royce case (above) tests the *non-digital reach* of the vocabulary and exercises only three cells, [[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Dumra's DBS interview]] exercises **eleven cells across all five buckets** — the most complete single-source instantiation of the process model in the corpus. It is a useful **vocabulary-stress-test in the opposite direction**: a digital-transformation incumbent that genuinely touches almost every cell, with a clean body twin for each (GANDALF re-framing → `digital-scouting`; *"best bank in the world"* vision + the outsider-for-unreasonableness hire → `digital-mindset-crafting`; Innovation Pyramid → `balancing-digital-portfolios`; QPR + slush fund → `strategic-agility`; Managing Through Journeys → `redesigning-internal-structures`; 20%-scorecard + playbook engine → `improving-digital-maturity`; *customer-is-an-intent* + *AI-bank-with-a-heart* → `business-model`; *innovation-is-not-a-choice* → `organizational-culture`). The DBS case shows the digital-specific cells (`digital-scouting`, `digital-mindset-crafting`, `improving-digital-maturity`) lighting up that the non-digital Rolls-Royce case left untouched — empirical support for the wiki's working hypothesis that the *digital-* prefix marks cells whose content is genuinely digital-flavoured, not merely bucket labels.
+
+### The individual-and-leadership-agency articulation ([[2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026|Raman/Wood, WorkLab, June 2026]])
+
+Where Dumra (DBS) and Erginbilgiç (Rolls-Royce) are **operator-scale worked examples** of the process model and Carroll supplies the **academic theory** beneath the culture cell, [[2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026|Aneesh Raman's WorkLab interview]] restates four cells at **popular-press, individual-plus-leadership altitude** — a register the corpus otherwise lacks:
+
+- **`digital-sensing/digital-mindset-crafting`**: Raman's *"think like an entrepreneur… do more than reasonable with the resources you have"* is the individual-level instance of "enabling an entrepreneurial mindset."
+- **`digital-transforming/redesigning-internal-structures`** + **`digital-transforming/improving-digital-maturity`**: the "lead by design not command" (flatten the pyramid; Walmart/Microsoft/Citigroup) and "assess people by capability not job category" (skills-based redeployment) shifts are the popular-book restatement of these two cells' first-order activities (team-based structures; leveraging digital knowledge inside the firm).
+- **`strategic-renewal/organizational-culture`**: "develop people, not just tasks" — managers coaching curiosity/resilience/adaptability rather than tracking task efficiency — is a workforce-development articulation of embedding new shared values, convergent with [[2026-06-25-carroll-stanford-gsb-making-organizational-culture-great|Carroll's]] intensity×agreement framing (the 5 C's are a candidate *content* for what a strong culture aligns around, even though Carroll insists content is "almost irrelevant" to strength).
+
+The book's electricity-bolt-on analogy (installing electricity where the steam engine was, with no floor-plan redesign, yields no productivity gain) is the same *bolt-on-fails* diagnostic Allen names for AI ("AI bolted on is going to fail") and Westerman/Caldas restate at the CIO-Symposium — see [[micro-productivity-trap]] for the full cross-source thread. This is a **popularization, not new evidence** (single-source, promotional book interview): per [[../../CLAUDE.md#lifecycle|Lifecycle rules]] it does not lift the page's confidence, but it widens the corpus's register to individual-career and mass-market-leadership audiences the operator/academic sources don't reach.
 
 ## Debates and supersession
 

@@ -3,9 +3,9 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-06-25"
-accessed_at: "2026-06-25"
-source_count: 34
+last_confirmed: "2026-07-01"
+accessed_at: "2026-07-01"
+source_count: 35
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -231,6 +231,15 @@ A fourth June-2026 voice, [[2026-06-18-ramaswamy-mckinsey-every-company-software
 ## The cognitive-science floor: *why* the residual is durable ([[2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why|Guilbeault / Stanford GSB, June 2026]])
 
 Most durable-skills sources are *labour-market* or *practitioner* evidence about *which* skills survive. [[2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why|Douglas Guilbeault]] (Stanford GSB) supplies the wiki's first *cognitive-science* argument for *why* a residual exists at all. His distinction — humans **satisfice** (Herbert Simon: do a lot with a little, under constraint) where LLMs **optimize** (brute-force statistical prediction over massive data) — grounds the durable cluster in specific capacities AI's optimization approach may be structurally unable to reproduce: **conceptual leaps / insight** (a jump from a random to an ordered state, not a smooth within-distribution step), **metaphor and analogy** (see [[analogical-reasoning]]), an aesthetic **"vibes" / taste** sense, and **making meaning from genuine disorder**. This is the theoretical underside of [[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Mollick's]] *taste/experience/judgment* edge and [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti's]] *instincts-not-skills* — and a caution against the *"humans are just prediction machines"* framing that, Guilbeault warns, leaves people unable to "defend their relevance." It also connects the durable-skills supply-side question to the [[jagged-frontier]] capability-ceiling question: the skills that are durable are precisely the ones on the rough side of the frontier *for a reason*.
+
+## The 5 C's — a book-length popular vocabulary for the cluster ([[2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026|Raman/Wood, WorkLab, June 2026]])
+
+[[2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026|Aneesh Raman]] (LinkedIn) names the durable-skills cluster **creativity, curiosity, courage, compassion, communication** — the "5 C's," offered as the intersection of "EQ and IQ" and "consciousness and conscience." Two framing choices distinguish this from the page's other vocabularies:
+
+- **Explicitly trainable, not innate.** Every C is framed as a "muscle" buildable via deliberate practice, citing neuroplasticity and a (secondhand, unverified) account of Mozart's perfect pitch as learned rather than gifted — the same *skills-are-trainable* move [[2026-02-09-ross-schneider-adaptability|Ross & Schneider]] make for adaptability specifically, generalised across all five.
+- **An explicit priority ranking.** Curiosity is named the single most urgent skill *right now* ("be curious about these tools… let that curiosity build"); creativity is named the best long-term bet, on the argument that as execution commoditises, humans increasingly need to generate new ideas/business lines rather than just execute — convergent with [[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Mollick's]] *taste* framing and [[2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why|Guilbeault's]] cognitive-science case for conceptual leaps/insight as AI-resistant.
+
+Courage and compassion are new labels in the wiki's durable-skills vocabulary cluster — courage overlaps with [[2026-02-09-ross-schneider-adaptability|Ross & Schneider's]] *adaptability* (both name the willingness to act under uncertainty) and compassion is closest to the page's *collaboration* construct (Globerson et al.) but foregrounds the interpersonal-care dimension more explicitly than "collaboration" does. Per [[../../CLAUDE.md#lifecycle|Lifecycle rules]] this single-source, promotional-book popularisation does not lift the page's confidence past its 0.95 ceiling — its value is a fifth independent vocabulary (after Globerson's measurement battery, Storoni's neuroscience, Schoening's agency framing, and Forsgren-Macvean's engineering-team taxonomy) converging on the same underlying cluster.
 
 ## Related concepts
 

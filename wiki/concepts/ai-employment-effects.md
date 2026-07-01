@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-06-27"
-accessed_at: "2026-06-27"
-source_count: 55
+last_confirmed: "2026-07-01"
+accessed_at: "2026-07-01"
+source_count: 56
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -429,6 +429,17 @@ Two consequences worth tracking against the page's selection-focused displacemen
 - **Applicant-pool homogenisation.** Candidates increasingly use AI to produce application materials, which are becoming *"more and more homogeneous,"* so *"the hiring process has become very, very difficult"* even though AI lets firms process far more applicants. This is a **demand-side analogue** to the [[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|communication-convergence finding]] (AI making low-skill workers communicate like high-skill ones): AI-mediated *applications* converge, eroding the signal hiring relies on.
 
 This is qualitative, second-hand testimony, not a measured study — it does not move the page's confidence. Its value is naming a mechanism (hiring-process effects concentrate on job-definition + pool-shaping, and AI-written applications homogenise) the page's displacement/exposure literature does not otherwise cover. Carroll's broader thesis — culture as the [[warner-wager-process-model|strategic-renewal microfoundation]] that governs how empowered employees feel to act — also bears on [[ai-knowledge-hiding]] (whether workers disclose their AI use).
+
+## "We won't run out of jobs unless we run out of ideas": the onlyness/agency read ([[2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026|Raman/Wood, WorkLab, June 2026]])
+
+[[2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026|Aneesh Raman]] (LinkedIn's Chief Economic Opportunity Officer) adds a named voice to the page's **lump-of-labor counter-frame** cluster ([[2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going|Evans]]; the [[2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life|WEF 78-million-net-new-jobs]] projection): *"we're not going to run out of jobs unless we run out of ideas"* — credited in the interview to **Jensen Huang** (Nvidia CEO). The argument for why ideas won't run out: most economic growth to date has optimised for *"consumer convenience and enterprise production"* under industrial-age math, leaving *"any number of arenas, including societally beneficial arenas, from health to climate"* under-explored — and AI *"lowers the barrier to expertise and knowledge"* as well as *"the barriers to entrepreneurialism and innovation."*
+
+Two contributions distinct from the page's empirical anchors:
+
+- **Identity de-anchored from job title ("onlyness").** Raman's framing — professional identity should be a *unique, non-linear combination of curiosities and capabilities* rather than a job title inherited from assembly-line-era org charts — is the individual-level complement to the page's occupation-level displacement data. It converges independently with [[2026-05-02-schoening-lennys-podcast-cultivating-agency-ai-era|Schoening's]] *"cultivating agency matters more than job titles"* framing (near-identical title, independent interview) and with [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti's]] mindset-not-skillset inversion — three sources now converge on *identity/mindset shift* as the individual-level response, distinct from (and upstream of) any specific skills inventory.
+- **Labor-market opacity + Global-South equity framing.** Raman names the pre-AI labor market as already *"one of the least efficient, least dynamic, least transparent markets humans have ever created"* — most hiring runs on guesswork and pedigree signals, a baseline dysfunction independent of AI. His equity argument: unlike prior general-purpose technologies, which diffused *"top down, over years"* before reaching workers, AI is unfolding *"bottoms up, middle out, overnight"* — a structural opportunity *if* paired with (a) radical transparency about what's happening and (b) broad adoption, especially in the Global South, where Microsoft president **Brad Smith**'s electricity-access cautionary tale (large parts of the world still lack electricity, and were correspondingly locked out of the growth it enabled) is invoked as the risk case. This is a popular-press restatement of the **social-permission** thread [[2026-06-05-nadella-hoffman-possible-ai-future-of-the-firm|Nadella]] names elsewhere on this page, applied at global rather than domestic-workforce scale.
+
+Per [[../../CLAUDE.md#lifecycle|Lifecycle rules]] this is a single-source, promotional-book interview — it does not lift the page's confidence past its 0.95 ceiling. Its value is a named addition to the lump-of-labor cluster (Jensen Huang) and an individual-identity vantage the page's occupation-level data doesn't otherwise carry.
 
 ## Debates and supersession
 
