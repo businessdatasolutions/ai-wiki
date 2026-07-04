@@ -10,6 +10,15 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-07-04] refactor | Sources section of index.md switched to newest-first
+
+User preference: after the same-day resort landed Sources oldest-first (alphabetical on the `YYYY-MM-DD` filename prefix = chronological ascending), the user asked for recent-first browsing instead. Flipped the Sources section's sort to reverse-chronological (newest first) — matching `wiki/log.md`'s own reverse-chronological convention since 2026-05-12 (GH #3), so the two catalog surfaces now agree. Entities/Concepts/Syntheses/Threads are untouched (still ascending alphabetical, since those filenames aren't date-prefixed and "recent first" doesn't have the same meaning there).
+
+- Verified via set-diff that all 370 bullets across all five sections survived unchanged in content — Sources reordered only.
+- `scripts/lint-index-completeness.mjs` re-run: still 0 missing (order-agnostic check, unaffected).
+- `scripts/graph-export.mjs` re-run: same node/edge counts, same 3 pre-existing unresolved-basename warnings (unrelated).
+- Updated the convention documentation in three places: `wiki/index.md`'s own header note, `docs/superpowers/specs/2026-04-28-llm-wiki-design.md` §9.1, and `CLAUDE.md` §Process step 7 (new source bullets now go at the *top* of Sources, not inserted alphabetically).
+
 ## [2026-07-04] refactor | Add index-completeness lint + wire into SessionStart hook
 
 Follow-up to the same day's bulk-refactor (28 missing entity-index bullets). Rather than relying on catching this by eye again, added [`scripts/lint-index-completeness.mjs`](../scripts/lint-index-completeness.mjs) — a read-only walker (same pattern as `lint-dangling-authors.mjs`) that compares every `wiki/{sources,entities,concepts,syntheses,threads}/*.md` file against its section's bullets in `index.md` and reports any page that exists on disk but has no matching entry. Verified it correctly flags all 28 entities when pointed at the pre-fix commit (`7b40f32`), and reports zero gaps against the current state.

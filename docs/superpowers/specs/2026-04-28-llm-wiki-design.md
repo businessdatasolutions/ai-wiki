@@ -243,7 +243,7 @@ Partitioned by page type, in this fixed order:
 - [[open: scaling laws vs architecture]] — When do architectural improvements beat scale?
 ```
 
-Each section is flat-listed alphabetically with a one-line summary. Sections may be supplemented with a Dataview block that auto-includes pages by frontmatter `type:` — this is encouraged once page counts grow.
+Each section has a one-line summary per page. **Sources** are ordered reverse-chronologically (newest first, by the `YYYY-MM-DD` filename prefix) — added 2026-07-04 to match `wiki/log.md`'s reverse-chronological convention (§9.2, GH #3) and the user's preference for recent-first browsing. **Entities, Concepts, Syntheses, and Threads** remain flat-listed alphabetically (case-insensitive), since those filenames aren't date-prefixed. Sections may be supplemented with a Dataview block that auto-includes pages by frontmatter `type:` — this is encouraged once page counts grow.
 
 ### 9.2 `wiki/log.md`
 
