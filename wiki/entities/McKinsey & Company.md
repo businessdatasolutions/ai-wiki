@@ -2,12 +2,14 @@
 type: entity
 kind: organization
 aliases: ["McKinsey", "McKinsey & Company", "McKinsey and Company", "QuantumBlack"]
-tags: [mckinsey, mgi, management-consulting, quantumblack, ai-research, tech-ai-transformation, agent-augmented-workforce, outcome-underwriting, post-controversy-governance, future-arenas, omniscalers, skill-change-index, workforce-skills]
+tags: [mckinsey, mgi, management-consulting, quantumblack, ai-research, tech-ai-transformation, agent-augmented-workforce, outcome-underwriting, post-controversy-governance, future-arenas, omniscalers, skill-change-index, workforce-skills, corporate-venture-building]
 confidence: 0.95
-last_confirmed: "2026-07-01"
-accessed_at: "2026-07-01"
-source_count: 11
+last_confirmed: "2026-07-04"
+accessed_at: "2026-07-04"
+source_count: 12
 relationships:
+  - type: employs
+    target: Roberta-Fusaro
   - type: employs
     target: Eric-Lamarre
   - type: employs
@@ -21,6 +23,9 @@ relationships:
   - type: authored-by
     target: 2026-06-24-mckinsey-ai-supercharging-software-development
     via: "McKinsey panel (Palaniappan, Harrysson, Linderman) on why AI coding gains fail to convert to org-level value without workflow redesign, obsolete vs. durable SWE skills, and AI-code security risk (24 Jun 2026)"
+  - type: authored-by
+    target: 2026-07-01-bello-mckinsey-podcast-serial-builder-advantage
+    via: "McKinsey Podcast episode — Jason Bello (Senior Partner) interviewed by Roberta Fusaro on corporate venture building, the serial-builder portfolio advantage, and AI's effect on venture-building economics (1 Jul 2026)"
 ---
 
 # McKinsey & Company
@@ -35,8 +40,9 @@ Global management consulting firm; runs **QuantumBlack** as its AI arm and **[[M
 - [[2026-04-28-mit-sloan-ai-maturity]] — MIT CISR's Total AI Effectiveness measure draws on a McKinsey survey for adoption baselines.
 - [[2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas]] — *The race takes off in the next big arenas of competition* (MGI, March 2026, 127 pp.). Six authors: **Kevin Russell**, **Chris Bradley** (MGI director), **Naveen Sastry**, **Suhayl Chettih**, **Kweilin Ellingrud** (MGI director), **Natalya Goryunova**. The **2026 update** of MGI's October 2024 *The next big arenas of competition*. Headline findings: 18 future arenas added **$18T in market cap and $1.4T in revenue** since 2022 (29% market-cap CAGR vs 8% for non-arenas; 11% revenue CAGR vs 1%); the **AI foundation** three-arena cluster (semiconductors + cloud + AI software) accounts for **$11T** of that market-cap accretion; coins **"omniscalers"** for nine cross-arena platform firms (Amazon, Tesla/X, Alphabet, Microsoft, Meta, Apple, Samsung, Alibaba, Huawei) generating **$700B operating cash flow + $800B R&D+capex in 2025 alone**. Introduces the **arena-creation potion** (3-ingredient foresight heuristic) and **arenas radar** (firm-level diagnostic). Three swing factors for 2040: geopolitics / AI development pace / electrification pace.
 - [[2026-05-12-mgi-virtual-event-race-takes-off-next-big-arenas]] — MGI virtual event presenting the above report (12 May 2026, ~60 min). **Bradley** moderates; **Russell** + **Ellingrud** present; panel is **Brendan Gaffey** + **Naveen Sastry** + **Gayatri Shenai** (Suhayl Chettih is a PDF co-author but **not** on the panel). Transcript was re-fetched 2026-05-15 at `--timeout 180000` after an initial 90s attempt timed out — the live-event session carries **substantive Q&A material not in the PDF**, including the Apollo-program-vs-omniscaler-capex comparison, the Anthropic/xAI infrastructure deal as live data point, NVIDIA's $5T print, and Naveen Sastry's *"omniscalers are not conglomerates"* defence with the **founder-control** structural claim (founders in direct operational control at 7 of 9; heavy cultural fingerprint at the other 2).
-- [[2026-06-18-ramaswamy-mckinsey-every-company-software-company]] — *AI Is Turning Every Company Into a Software Company* (**the McKinsey Podcast**, YouTube, 18 Jun 2026). The wiki's **first McKinsey-Podcast-channel ingest** — distinct from the *Rewired* playbook, the Sternfels HBR self-narrative, and the MGI reports. McKinsey's **Eric Kutcher** (North America Chair) interviews Snowflake CEO **Sridhar Ramaswamy** on the cost-of-software collapse, "uber programmers," enterprise change management, and AI pricing. Here McKinsey is the *interviewer/host*, not the claim-maker; the substantive content is Ramaswamy's. (Editorial: Lucia Rahilly + Roberta Fusaro per the channel description.)
+- [[2026-06-18-ramaswamy-mckinsey-every-company-software-company]] — *AI Is Turning Every Company Into a Software Company* (**the McKinsey Podcast**, YouTube, 18 Jun 2026). The wiki's **first McKinsey-Podcast-channel ingest** — distinct from the *Rewired* playbook, the Sternfels HBR self-narrative, and the MGI reports. McKinsey's **Eric Kutcher** (North America Chair) interviews Snowflake CEO **Sridhar Ramaswamy** on the cost-of-software collapse, "uber programmers," enterprise change management, and AI pricing. Here McKinsey is the *interviewer/host*, not the claim-maker; the substantive content is Ramaswamy's. (Editorial: Lucia Rahilly + [[Roberta Fusaro]] per the channel description.)
 - [[2026-06-24-mckinsey-ai-supercharging-software-development]] — *AI Is Supercharging Software Development. Humans Determine Its Impact.* (McKinsey &amp; Company YouTube channel, 24 Jun 2026). A three-expert panel (**Janaki Palaniappan**, **Martin Harrysson**, **Matt Linderman**) diagnosing why AI coding-agent gains fail to convert to org-level value without workflow redesign — a software-engineering-specific restatement of the [[micro-productivity-trap]] thesis — plus which SWE skills are becoming obsolete vs. durable, and a claim that AI-generated code has so far been more verbose and less secure than human-written code.
+- [[2026-07-01-bello-mckinsey-podcast-serial-builder-advantage]] — *The Serial Builder Advantage: Why Repeat Innovators Win* (The McKinsey Podcast, YouTube, 1 Jul 2026). **Jason Bello** (Senior Partner) interviewed by **[[Roberta Fusaro]]** on new McKinsey research on corporate venture building: companies building 3+ ventures at once dramatically outperform one-shot builders; average break-even cost fell $125M (2024) → $77M (2025); a two-flavor taxonomy of AI in venture building ("AI as a business" vs. "AI in the background"); milestone-tranche funding; and a fact-based, blame-free culture as the enabling condition for fast pivots. The wiki's sharpest quantified case yet for the [[dynamic-capabilities|dynamic-capabilities]] `balancing-digital-portfolios` microfoundation.
 - [[2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships]] — *Agents, Robots, and Us: Skill Partnerships in the Age of AI* (MGI, November 2025, 60-page report + 6-page technical appendix). Seven authors: **[[McKinsey Global Institute|Lareina Yee]]** (MGI director, Bay Area; lead author), **Anu Madgavkar** (MGI partner, New Jersey), **Sven Smit** (MGI chairman, Amsterdam), **Alexis Krivkovich** (senior partner, Bay Area), **Michael Chui** (QuantumBlack senior fellow, Bay Area), **Maria Jesus Ramirez** (MGI senior fellow, Bay Area), **Diego Castresana** (engagement manager, New York). Academic advisers: Nobel laureate **Sir Christopher Pissarides** (LSE) + **Matthew J. Slaughter** (Tuck Dean). The **workforce-and-skills layer** companion to *Race Takes Off*'s industry layer — 7 occupation archetypes, Skill Change Index built using OpenAI GPT-4o for ~3.4M skill→DWA mappings, 57% technical-automation potential, $2.9T US economic value by 2030 (midpoint scenario). The wiki's first MGI workforce panorama.
 
 ## Affiliated authors in this wiki
@@ -58,6 +64,8 @@ Global management consulting firm; runs **QuantumBlack** as its AI arm and **[[M
 - **Gayatri Shenai** — McKinsey New York senior partner; data-center / cloud authority; women-in-tech advocate. **Live-event panelist only** (not on the report author list). First wiki mention; deferred. ASR-rendering variability across the transcript (`Shennai` / `Shanai` / `Guyry` / `guy tree`); YouTube description's `Shenai` is canonical.
 - **Shubham Singhal** — MGI chair (named on report front matter). First wiki mention; deferred.
 - **Eric Kutcher** — McKinsey **North America Chair**; host/interviewer on the McKinsey Podcast episode [[2026-06-18-ramaswamy-mckinsey-every-company-software-company|with Sridhar Ramaswamy]]. First wiki mention; deferred (single source).
+- **Jason Bello** — McKinsey **Senior Partner**; interviewee on [[2026-07-01-bello-mckinsey-podcast-serial-builder-advantage|the serial-builder-advantage episode]], the source of the corporate-venture-building research discussed there. First wiki mention; deferred (single source).
+- **Lucia Rahilly** — named in the stock sign-off outro on both [[2026-06-18-ramaswamy-mckinsey-every-company-software-company|the Ramaswamy episode]] and [[2026-07-01-bello-mckinsey-podcast-serial-builder-advantage|the Bello episode]], but not the on-camera interviewer for either. Two mentions, but role unclear (fixed sign-off co-host vs. rotating interviewer) — see [[Roberta Fusaro]]'s open questions. Deferred pending clarification of her actual role.
 
 ## MGI directors and partners
 

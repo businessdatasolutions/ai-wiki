@@ -3,9 +3,9 @@ type: concept
 aliases: ["dynamic capabilities", "dynamic-capabilities", "Teece dynamic capabilities", "sense seize transform"]
 tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, microfoundations]
 confidence: 0.95
-last_confirmed: "2026-06-20"
-accessed_at: "2026-06-20"
-source_count: 11
+last_confirmed: "2026-07-04"
+accessed_at: "2026-07-04"
+source_count: 12
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -136,6 +136,17 @@ Two reusable primitives the DBS case sharpens: (a) **innovation-as-KPI** — *"a
 ### Advisory-altitude AI-era read ([[2026-06-17-ng-langchain-interrupt-future-of-ai-agents|Ng / LangChain Interrupt 2026]])
 
 [[2026-06-17-ng-langchain-interrupt-future-of-ai-agents|Andrew Ng]] supplies a fifth altitude — the **advisor-to-the-G2000** vantage (via AI Aspire) — and frames the AI-era version of the sense/seize/transform loop crisply: *sensing* as continuous scanning of the coding-agent and vendor frontier; *seizing* as **strategic-agility through optionality** (≤1-year contracts, open-weight hedging, vendor-neutral observability) and **portfolio-balancing** (narrowing 300-idea spreadsheets to a handful of high-conviction bets, swing-for-the-fences over incremental); *transforming* as **redesigning the whole workflow** (the 10-minute-loan example) via small high-context generalist teams plus the data-architecture rework needed to feed agents. His central claim — *bottom-up "thousand flowers" innovation generates point solutions; the transformation needs a complementary top-down motion to redesign the workflow* — is a clean restatement of why dynamic capabilities are a **system** (sensing + seizing + transforming together), not a pile of point solutions. See [[enterprise-ai-adoption]] for the full treatment.
+
+### The clearest quantified case for portfolio-balancing under uncertainty — corporate venture building at McKinsey scale ([[2026-07-01-bello-mckinsey-podcast-serial-builder-advantage|Bello / McKinsey Podcast 2026]])
+
+Where every prior case in this section supplies a single-firm or single-advisor narration of `digital-seizing/balancing-digital-portfolios`, [[2026-07-01-bello-mckinsey-podcast-serial-builder-advantage|Jason Bello's]] McKinsey research is the wiki's first **cross-firm, quantified** claim about the microfoundation itself: companies building **three or more ventures simultaneously dramatically outperform** those that try once, and the average cost to reach break-even on a new venture fell from **~$125M (2024) to ~$77M (2025)** — a measured trend, not a single narrated case.
+
+Two mechanisms sharpen the microfoundation further:
+
+- **Milestone-tranche funding as the seizing-cluster funding primitive.** Splitting a venture's total investment horizon into milestone-gated chunks (e.g. three 3-month tranches within a 9-month goal), releasing the next tranche only after checking whether the milestone was met, is a portable, generalized version of the mechanism [[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|DBS's]] QPR + slush fund system operationalises at one specific bank.
+- **Fact-based, blame-free culture as the condition that makes fast pivots possible.** "If the facts tell us our product stinks, so be it... there's no fingerpointing" is Bello's articulation of `strategic-renewal/organizational-culture` — structurally the same claim [[2026-06-25-carroll-stanford-gsb-making-organizational-culture-great|Carroll's]] academic culture-as-social-control-system theory predicts, and the same pattern [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook|Erginbilgiç's]] non-digital performance culture exhibits.
+
+Bello also names the **corporate-vs-startup asymmetry** directly: corporate venture builders spend far less time fundraising (the board and leadership already know them) and start with incumbent assets (existing customer base, untapped proprietary data/IP) that independent founders must build from zero — a structural explanation for *why* the portfolio-balancing microfoundation is more affordable for incumbents than for standalone startups attempting the same "multiple shots on goal" strategy.
 
 ## Debates and supersession
 
