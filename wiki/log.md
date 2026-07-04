@@ -10,6 +10,20 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-07-04] bulk-refactor | Re-sort wiki/index.md + backfill 28 missing Entities
+
+User flagged that Sources on the wiki's catalog page had no discernible ordering. Investigation: extracting the leading `[[target]]` from every bullet in each `## <Section>` of `wiki/index.md` and diffing against a sorted version showed **Sources 143/187 (76%) out of the documented alphabetical order** (both `index.md`'s own header and the design doc §9.1 mandate "flat-listed alphabetically"); Entities/Concepts/Syntheses/Threads were much closer to compliant (~10–20% drift).
+
+While investigating, a second, more serious gap surfaced: **135 entity files exist in `wiki/entities/` but only 107 were listed in `index.md`'s Entities section — 28 entity pages were never catalogued at all.** `git log -S` confirmed each of the 28 bullets never existed in the file's history (not lost — never added). Root-cause check across several of the originating ingest commits (Andrew Ng, Sequoia Capital / Kilpatrick, Dalton Caldwell, and others) shows a consistent pattern: when an ingest promoted a new entity, the commit correctly added the Sources-section line (with the entity bolded/wikilinked inline) and correctly wrote the entity's own page, but the required standalone `## Entities` bullet was skipped every time — a step-7 gap in the ingest workflow that recurred silently across at least 28 separate sessions from 2026-04-18 through 2026-06-15+ because nothing checked for it.
+
+Fix applied:
+- Read all 28 missing entity pages (Addy Osmani, Adi Ignatius, Amazon, Andrew Ng, Antigravity, Cline, Dalton Caldwell, Daron Acemoglu, DeepLearningAI, Diana Hu, Eva Lyubich, Garry Tan, Google DeepMind, Grady Booch, Harrison Chase, Lisa Krayer, Logan Kilpatrick, McKinsey Global Institute, MIT Sloan Executive Education, Omni, Pete Koomen, Pydantic, Ryan Heller, Sam Altman, Sequoia Capital, Simon Willison, Stanford Online, Y Combinator) and wrote one-line index bullets matching the existing format/tone; spot-checked several against source frontmatter for accuracy before committing.
+- Mechanically re-sorted all five `## Sources / Entities / Concepts / Syntheses / Threads` sections case-insensitive-alphabetically (pure reordering — verified via before/after set-diff that all 342 pre-existing bullets survived unchanged in content, only position moved, plus the 28 new additions).
+- `wiki/index.md`: 187 Sources / 135 Entities (was 107) / 39 Concepts / 4 Syntheses / 5 Threads — Entities count now matches `wiki/entities/*.md` on disk exactly.
+- Re-ran `scripts/graph-export.mjs` (370 nodes / 861 edges, same 3 pre-existing unresolved-basename warnings as before — unrelated to this refactor) and `scripts/lint-dangling-authors.mjs` (0 dangling) to confirm no regressions.
+
+No content was rewritten or deleted; this is purely additive (28 lines) plus reordering. Reversible via git.
+
 ## [2026-07-04] ingest | McKinsey Podcast *"The Serial Builder Advantage: Why Repeat Innovators Win"* (1 Jul 2026)
 
 Acquired via the youtube-transcript-skill's `fetch_transcript.py --json` route. Both a default 30s and a retried 60s **headless** fetch failed with `transcript panel did not render`; a direct network-response check confirmed YouTube's `youtubei/v1/get_transcript` endpoint returned HTTP 400 `failedPrecondition` — the same automation-detection rejection class documented in the skill's 2026-05-13 incident note, despite `navigator.webdriver` masking already being in place. A `--headed` retry (real Chromium window; macOS host with a display) succeeded cleanly and recovered all 614 segments. Light ASR cleanup applied to proper nouns (McKenzie→McKinsey, Jason Bellow→Jason Bello, Robera Fisaro→Roberta Fusaro) plus a handful of concatenated/misheard terms. Processed the same session.
