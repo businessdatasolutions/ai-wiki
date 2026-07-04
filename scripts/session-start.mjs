@@ -13,6 +13,7 @@ import { readFile, readdir } from "node:fs/promises"
 import { join, dirname, relative } from "node:path"
 import { fileURLToPath } from "node:url"
 import matter from "gray-matter"
+import { checkIndexCompleteness } from "./lint-index-completeness.mjs"
 
 const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), "..")
 const WIKI_DIR = join(REPO_ROOT, "wiki")
@@ -65,6 +66,17 @@ for (const sub of TARGET_DIRS) {
 }
 
 const counts = await countByDir()
+
+// Uncatalogued-page check (see scripts/lint-index-completeness.mjs) — surfaces
+// pages that exist on disk but were never given an index.md bullet, the
+// silent-omission failure mode discovered 2026-07-04 (28 entity pages).
+let indexGapTotal = 0
+let indexGapDetail = []
+try {
+  const { report, totalMissing } = await checkIndexCompleteness()
+  indexGapTotal = totalMissing
+  indexGapDetail = report.filter((r) => r.missing.length > 0)
+} catch {}
 
 // N most recent log.md entries (heading lines only, not full bodies).
 // log.md is reverse-chronological since 2026-05-12 (GH #3): newest entry first,
@@ -127,6 +139,12 @@ lines.push(
 )
 for (const { rel, confidence } of lowConfidence) {
   lines.push(`  - ${rel} (confidence ${confidence.toFixed(2)})`)
+}
+lines.push(
+  `- ${indexGapTotal} page(s) missing from \`wiki/index.md\`${indexGapTotal > 0 ? ":" : "."}`,
+)
+for (const { sectionName, missing } of indexGapDetail) {
+  lines.push(`  - ${sectionName}: ${missing.length} (run \`node scripts/lint-index-completeness.mjs\` for the list)`)
 }
 lines.push("")
 lines.push(

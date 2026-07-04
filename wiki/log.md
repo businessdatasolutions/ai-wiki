@@ -10,6 +10,16 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-07-04] refactor | Add index-completeness lint + wire into SessionStart hook
+
+Follow-up to the same day's bulk-refactor (28 missing entity-index bullets). Rather than relying on catching this by eye again, added [`scripts/lint-index-completeness.mjs`](../scripts/lint-index-completeness.mjs) — a read-only walker (same pattern as `lint-dangling-authors.mjs`) that compares every `wiki/{sources,entities,concepts,syntheses,threads}/*.md` file against its section's bullets in `index.md` and reports any page that exists on disk but has no matching entry. Verified it correctly flags all 28 entities when pointed at the pre-fix commit (`7b40f32`), and reports zero gaps against the current state.
+
+Wired the check into `scripts/session-start.mjs` so it's surfaced automatically in every session's Lifecycle flags (no separate step to remember) rather than only being available as a manual command. Updated `CLAUDE.md` §Process step 7 to name the exact failure mode (new entity gets its own page + an inline mention in the Source paragraph, but the standalone Entities-section bullet is a separate edit that's easy to skip) and point at the lint script; updated the §Hooks table to reflect what `session-start.mjs` now checks.
+
+- New file: `scripts/lint-index-completeness.mjs` (exports `checkIndexCompleteness()` for reuse; runnable standalone via `node scripts/lint-index-completeness.mjs`, exits 1 if any page is uncatalogued).
+- Modified: `scripts/session-start.mjs` (new Lifecycle-flags line), `CLAUDE.md` (§Process step 7, §Hooks table).
+- No wiki content pages touched.
+
 ## [2026-07-04] bulk-refactor | Re-sort wiki/index.md + backfill 28 missing Entities
 
 User flagged that Sources on the wiki's catalog page had no discernible ordering. Investigation: extracting the leading `[[target]]` from every bullet in each `## <Section>` of `wiki/index.md` and diffing against a sorted version showed **Sources 143/187 (76%) out of the documented alphabetical order** (both `index.md`'s own header and the design doc §9.1 mandate "flat-listed alphabetically"); Entities/Concepts/Syntheses/Threads were much closer to compliant (~10–20% drift).
