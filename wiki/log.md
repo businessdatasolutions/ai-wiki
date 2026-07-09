@@ -10,6 +10,18 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-07-09] refactor | Fix 19 broken CLAUDE.md wikilinks (wikilink syntax → markdown relative link)
+
+User asked about a "stale relative CLAUDE.md link" flagged by the quality scorer during the prior ingest's verification pass. Investigation found it wasn't an isolated stale link: **13 files, 19 occurrences** of the pattern `[[../../CLAUDE.md#anchor|alias]]` — an inline citation shorthand (mostly "per the Lifecycle rules, this single source doesn't raise confidence above the cap") written with wikilink syntax against a target outside `wiki/`.
+
+Root cause: `package.json` builds Quartz with `-d wiki`, meaning the entire published content root *is* `wiki/` — `CLAUDE.md` at the repo root is not part of the published corpus at all. Per CLAUDE.md's own §Graph section, an unresolvable `[[wikilink]]` renders as a visible "broken link" on the live site. The pattern likely renders fine in Obsidian (where `../../CLAUDE.md` correctly resolves as a real relative path from the vault root), which is why it went unnoticed — the breakage only shows up on the published Quartz site, not during local authoring.
+
+Fixed: converted all 19 occurrences from `[[../../CLAUDE.md#anchor|alias]]` to standard markdown `[alias](../../CLAUDE.md#anchor)`, matching the convention already used elsewhere (e.g. `index.md`'s own header links out to the design doc the same way). Affected files: [[concepts/agentic-engineering|agentic-engineering]], [[concepts/durable-skills|durable-skills]] (3), [[concepts/automation-vs-augmentation|automation-vs-augmentation]] (2), [[concepts/warner-wager-process-model|warner-wager-process-model]], [[concepts/micro-productivity-trap|micro-productivity-trap]] (2), [[concepts/strategy|strategy]], [[concepts/ai-employment-effects|ai-employment-effects]] (2), [[concepts/agent-harness|agent-harness]], [[concepts/ai-deskilling|ai-deskilling]] (2), [[2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai]], [[2026-02-09-ross-schneider-adaptability]], [[Harvard Business Review]], [[Amazon Web Services]].
+
+Re-ran `scripts/quality-score.mjs` across the corpus: `agent-harness.md` 0.95→0.97 (2→1 broken body wikilinks — the one remaining, `[[Haiku]]`, is unrelated and pre-existing); `ai-deskilling.md` and `micro-productivity-trap.md` no longer show broken-link notes (their current 0.79 scores are from unrelated, pre-existing structural gaps — missing `## Debates and supersession` sections). `graph-export.mjs`, `lint-dangling-authors.mjs`, and `lint-index-completeness.mjs` all re-ran clean with no regressions.
+
+No wiki content claims changed — this was a pure link-syntax fix, not an editorial edit.
+
 ## [2026-07-09] ingest | Five-source batch: Steve Yegge / Addy Osmani / a16z / Hannah Foxwell / EMARKETER on agent orchestration, team design, and enterprise SaaS
 
 A user-supervised batch ingest (two YouTube videos + three user-supplied PDFs, the third added mid-conversation after the initial four-source plan was reviewed). All five sources cluster tightly around Steve Yegge's "eight levels of coder evolution" framework and its downstream consequences for harness engineering, team design, and enterprise software strategy.

@@ -67,7 +67,7 @@ The wiki's longitudinal-AWS-doctrine reading: **the three-layer stack has stabil
 
 - [[Jana Werner]] — Executive in Residence, AWS; co-author of the Octopus Org book and HBR article.
 - [[Phil Le-Brun]] — Executive in Residence, AWS; co-author of the Octopus Org book and HBR article.
-- **Jonathan Allen** — Executive in Residence, AWS; headline speaker at the 2026 London Executive Forum (*Dangling* — single-source so far, deferred entity-page promotion per [[../../CLAUDE.md#author-entity-promotion|second-source rule]]).
+- **Jonathan Allen** — Executive in Residence, AWS; headline speaker at the 2026 London Executive Forum (*Dangling* — single-source so far, deferred entity-page promotion per [second-source rule](../../CLAUDE.md#author-entity-promotion)).
 - **Anthony Liguori** — VP Distinguished Engineer, AWS; Project Mantle lead in Allen's keynote (76-day Bedrock-substrate-rebuild case) (*Dangling*).
 - **Matt Garman** — AWS CEO (since June 2024); quoted by Allen on the junior-hiring-crisis moral framing (*Dangling*).
 - **Francesca Vasquez** — AWS executive who introduced AgentCore / security-agent / DevOps-agent at the London Forum earlier the same day (*Dangling*; first-name-only in the transcript, presumed Francesca Vasquez).

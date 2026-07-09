@@ -16,8 +16,8 @@ relationships:
   - type: supports
     target: ai-benchmarks
     via: "Narayanan's release-decision frame — reliability threshold required for automation deployment exceeds that for augmentation deployment; reliability is the gating dimension benchmarks have under-measured"
-quality_score: 0.91
-quality_notes: ['1 near-empty section(s)', '4 broken body wikilink(s)']
+quality_score: 0.95
+quality_notes: ['1 near-empty section(s)', '2 broken body wikilink(s)']
 ---
 
 # Automation vs. Augmentation
@@ -192,7 +192,7 @@ Storoni's contribution is **the neuroscience mechanism for the augmentation pole
 
 Storoni's framing closes a gap in the concept's prior corpus: the augmentation-pole sources have shown *that* augmentation works (Brynjolfsson-Li-Raymond, Forsgren & Macvean, Anthropic Economic Index) and *where* to deploy it (Anand-Wu, MITTRI/Cisco) but not *what kind of cognitive work the human side of the augmentation pair has to be doing* for the pairing to actually produce value. Storoni's answer: **gear-2 quality work, in time-of-day-aware schedules, with intrinsic-motivation structures protecting the underlying cognitive states.**
 
-Per the [[../../CLAUDE.md#lifecycle|Lifecycle confidence rules]] this single-source prescriptive-popularisation contribution does *not* lift the concept's confidence above the existing 0.95 cap; it expands the *scope* of what the augmentation pole covers (now including the work-design layer, not only the AI-deployment layer).
+Per the [Lifecycle confidence rules](../../CLAUDE.md#lifecycle) this single-source prescriptive-popularisation contribution does *not* lift the concept's confidence above the existing 0.95 cap; it expands the *scope* of what the augmentation pole covers (now including the work-design layer, not only the AI-deployment layer).
 
 ### 12. *Humans on judgment, agents on execution* + the anti-disposable-applications stance ([[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen / AWS London Exec Forum, 21 May 2026]])
 
@@ -324,7 +324,7 @@ Two June-2026 interviews restate the augmentation pole from the practitioner and
 - **[[2026-06-17-ng-langchain-interrupt-future-of-ai-agents|Ng / LangChain Interrupt]] — the bottleneck relocates *to* the augmentation work.** Ng's *product-management bottleneck becomes an everything-bottleneck* makes the augmentation cut concrete at the team level: when agents do execution (the automation leg), the binding constraint becomes *deciding what to build, scoping, customer feedback, marketing, legal* — the human-judgement work. His **small teams of high-context, empowered generalists** are an org pattern for keeping humans on judgement while agents execute — the same *delegate tasks, not judgment* boundary the [[2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer|Forsgren & Macvean]] and [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen]] entries draw.
 - **[[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Mollick / A Bit of Optimism]] — *doubling down on human* as the prescriptive augmentation stance.** Mollick argues raw productivity gains just yield "100× more PowerPoint" unless the work-product is rethought, and that the dangerous default ("fire everyone, profits go up") is the wrong reading; the leverage is showing how **augmentation makes humans thrive**. He sharpens the human side of the pair: jobs shift their *weight* (the editor rises over the writer; the architect over the clean-coder), and the binding skill becomes **evaluation** of AI output (an expert capacity) — the augmentation pole's quality-side requirement, convergent with [[2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai|Storoni's]] gear-2 reframe and [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti's]] *everyone becomes a manager*.
 
-Per the [[../../CLAUDE.md#lifecycle|Lifecycle rules]] these two practitioner/popularisation sources do not lift the concept's confidence past its 0.95 ceiling; they reinforce the augmentation-pole-is-judgement-work consensus from the founder/educator vantages.
+Per the [Lifecycle rules](../../CLAUDE.md#lifecycle) these two practitioner/popularisation sources do not lift the concept's confidence past its 0.95 ceiling; they reinforce the augmentation-pole-is-judgement-work consensus from the founder/educator vantages.
 
 ### 25. *Redeploy, don't cut* + support-automation: the Snowflake CEO worked example ([[2026-06-18-ramaswamy-mckinsey-every-company-software-company|Ramaswamy / McKinsey Podcast 2026]])
 

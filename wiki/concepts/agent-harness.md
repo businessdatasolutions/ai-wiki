@@ -16,8 +16,8 @@ relationships:
   - type: uses
     target: react-reasoning-acting
     via: "the harness operationalises the reason–act–observe loop ReAct (2022) first prompted by hand"
-quality_score: 0.95
-quality_notes: ['1 near-empty section(s)', '2 broken body wikilink(s)']
+quality_score: 0.97
+quality_notes: ['1 near-empty section(s)', '1 broken body wikilink(s)']
 ---
 
 # Agent Harness
@@ -603,7 +603,7 @@ Closing thesis, squarely on the wiki's [[agentic-engineering]] line: *"agentic s
 - **Superpowers front-ran Anthropic's own Skills framework** — Vincent built the brainstorm-before-code discipline and reusable skill packaging before Anthropic's Skills framework shipped, a convergent-evolution data point on what agentic-coding harnesses independently arrive at.
 - **The 94%-PR-rejection self-correction.** Superpowers-the-project was flooded with low-quality "AI slop" pull requests once it went viral. Vincent's fix was iterative: he had Claude review the project's full history of rejected PRs and rewrite the CLAUDE.md/AGENTS.md contributor guidance accordingly — after which the project rejected roughly 94% of incoming PRs, often with a single-line "this is a garbage slop PR" rejection. A concrete, self-reported instance of harness-level guidance (the Constraints/Contracts layer, at the *contribution-acceptance* boundary rather than the coding boundary) closing a quality gap.
 
-This is a **practitioner-management vantage** distinct from the page's existing systems-engineering (Kokane), production-anatomy (Chatterjee), and formal-academic (Karten et al.) vantages — Vincent frames the same harness disciplines (single-mandate separation, adversarial review, iterative constraint-tuning) through an explicit "manage agents like enthusiastic MIT interns" analogy to human team management, rather than through systems-engineering or reliability-engineering vocabulary. Per [[../../CLAUDE.md#lifecycle|Lifecycle rules]] this is a single-source, promotional-podcast-interview account (unquantified beyond the self-reported 94% figure) — it does not lift the page's confidence past its cap; its value is a fourth independent vantage converging on single-mandate separation as a load-bearing harness-design principle, plus the novel "latent space engineering" vocabulary and the adversarial-reviewers-with-stakes refinement.
+This is a **practitioner-management vantage** distinct from the page's existing systems-engineering (Kokane), production-anatomy (Chatterjee), and formal-academic (Karten et al.) vantages — Vincent frames the same harness disciplines (single-mandate separation, adversarial review, iterative constraint-tuning) through an explicit "manage agents like enthusiastic MIT interns" analogy to human team management, rather than through systems-engineering or reliability-engineering vocabulary. Per [Lifecycle rules](../../CLAUDE.md#lifecycle) this is a single-source, promotional-podcast-interview account (unquantified beyond the self-reported 94% figure) — it does not lift the page's confidence past its cap; its value is a fourth independent vantage converging on single-mandate separation as a load-bearing harness-design principle, plus the novel "latent space engineering" vocabulary and the adversarial-reviewers-with-stakes refinement.
 
 ## The primary-source Gas Town anchor + the conductor-to-orchestrator patterns ([[2026-03-12-oreilly-steve-yegge-wants-you-to-stop-looking-at-your-code|Yegge/O'Reilly]] + [[2026-03-26-osmani-code-agent-orchestra-multi-agent-coding|Osmani, March 2026]])
 

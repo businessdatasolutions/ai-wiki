@@ -7,7 +7,7 @@ parent: "[[Harvard Business School]]"
 website: "https://hbr.org"
 confidence: 0.90
 last_confirmed: "2026-06-25"
-accessed_at: "2026-06-25"
+accessed_at: "2026-07-01"
 source_count: 18
 ---
 
@@ -53,7 +53,7 @@ HBR sources span both the print magazine (with `hbr_reprint` codes) and HBR.org 
 
 **HBR.org Partner Content (sponsored / advertorial):**
 
-Partner Content is a paid placement: a sponsor (named at the top of the article) authors the piece, HBR hosts it. Editorial standards differ from HBR editorial — no peer review, no Idea-in-Brief panel, no reprint code. Treat as **vendor-sponsored** per the [[../../CLAUDE.md#lifecycle|Lifecycle vendor-source rule]]: confidence boosts to any concept page cap at +0.05 and at 0.75 absolute when this is the sole supporting source.
+Partner Content is a paid placement: a sponsor (named at the top of the article) authors the piece, HBR hosts it. Editorial standards differ from HBR editorial — no peer review, no Idea-in-Brief panel, no reprint code. Treat as **vendor-sponsored** per the [Lifecycle vendor-source rule](../../CLAUDE.md#lifecycle): confidence boosts to any concept page cap at +0.05 and at 0.75 absolute when this is the sole supporting source.
 
 | Article | Authors | Sponsor | Date | Topic |
 |---|---|---|---|---|
