@@ -51,3 +51,6 @@ raw/videos/test.txt
 # Generated HTML exports under inspiration/ (re-derivable from the source .md)
 inspiration/*.html
 inspiration/*_files/
+
+# Playwright MCP session traces/logs — ephemeral browser-automation debug output
+.playwright-mcp/
