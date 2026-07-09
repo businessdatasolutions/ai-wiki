@@ -63,7 +63,8 @@ This is the wiki's **sharpest quantified case for the `digital-seizing/balancing
 - [[warner-wager-process-model]] — tagging vocabulary source; see `dynamic_capabilities:` above.
 - [[enterprise-ai-adoption]] — the AI-as-a-business / AI-in-the-background taxonomy is a venture-building-specific companion to the broader enterprise-adoption material.
 - [[McKinsey & Company]] — publishing entity.
-- **Dangling** (single-source mention, deferred per [Author-entity promotion](../../CLAUDE.md#author-entity-promotion)): **Jason Bello** (McKinsey Senior Partner, interviewee) — first wiki mention; promote on second-source mention. **Lucia Rahilly** (named in the stock sign-off outro only, not an active interviewer in this episode) — first wiki mention; deferred.
+- **Dangling** (single-source mention, deferred per [Author-entity promotion](../../CLAUDE.md#author-entity-promotion)): **Jason Bello** (McKinsey Senior Partner, interviewee) — first wiki mention; promote on second-source mention.
+- [[Lucia Rahilly]] — named in the stock sign-off outro only, not an active interviewer in this episode. Promoted to an entity page on the 2026-07-09 ingest (her third appearance across McKinsey Podcast sources).
 - [[Roberta Fusaro]] — Editorial Director; interviewer/host for this episode. **Promoted to an entity page on this ingest** — her second appearance across McKinsey Podcast sources in this wiki (first: credited in body prose on [[2026-06-18-ramaswamy-mckinsey-every-company-software-company]]; here she is the named, active on-camera interviewer).
 
 ## Source quality

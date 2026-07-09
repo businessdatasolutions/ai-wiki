@@ -4,9 +4,9 @@ kind: organization
 aliases: ["McKinsey", "McKinsey & Company", "McKinsey and Company", "QuantumBlack"]
 tags: [mckinsey, mgi, management-consulting, quantumblack, ai-research, tech-ai-transformation, agent-augmented-workforce, outcome-underwriting, post-controversy-governance, future-arenas, omniscalers, skill-change-index, workforce-skills, corporate-venture-building]
 confidence: 0.95
-last_confirmed: "2026-07-04"
-accessed_at: "2026-07-04"
-source_count: 12
+last_confirmed: "2026-07-09"
+accessed_at: "2026-07-09"
+source_count: 13
 relationships:
   - type: employs
     target: Roberta-Fusaro
@@ -26,6 +26,9 @@ relationships:
   - type: authored-by
     target: 2026-07-01-bello-mckinsey-podcast-serial-builder-advantage
     via: "McKinsey Podcast episode — Jason Bello (Senior Partner) interviewed by Roberta Fusaro on corporate venture building, the serial-builder portfolio advantage, and AI's effect on venture-building economics (1 Jul 2026)"
+  - type: authored-by
+    target: 2026-07-09-catlin-mckinsey-podcast-real-ai-advantage
+    via: "McKinsey Podcast episode — Tanguy Catlin (Senior Partner, MGI Director) interviewed by Roberta Fusaro on why AI-driven productivity gets competed away and the real advantage lies in reinvention (9 Jul 2026)"
 ---
 
 # McKinsey & Company
@@ -43,6 +46,7 @@ Global management consulting firm; runs **QuantumBlack** as its AI arm and **[[M
 - [[2026-06-18-ramaswamy-mckinsey-every-company-software-company]] — *AI Is Turning Every Company Into a Software Company* (**the McKinsey Podcast**, YouTube, 18 Jun 2026). The wiki's **first McKinsey-Podcast-channel ingest** — distinct from the *Rewired* playbook, the Sternfels HBR self-narrative, and the MGI reports. McKinsey's **Eric Kutcher** (North America Chair) interviews Snowflake CEO **Sridhar Ramaswamy** on the cost-of-software collapse, "uber programmers," enterprise change management, and AI pricing. Here McKinsey is the *interviewer/host*, not the claim-maker; the substantive content is Ramaswamy's. (Editorial: Lucia Rahilly + [[Roberta Fusaro]] per the channel description.)
 - [[2026-06-24-mckinsey-ai-supercharging-software-development]] — *AI Is Supercharging Software Development. Humans Determine Its Impact.* (McKinsey &amp; Company YouTube channel, 24 Jun 2026). A three-expert panel (**Janaki Palaniappan**, **Martin Harrysson**, **Matt Linderman**) diagnosing why AI coding-agent gains fail to convert to org-level value without workflow redesign — a software-engineering-specific restatement of the [[micro-productivity-trap]] thesis — plus which SWE skills are becoming obsolete vs. durable, and a claim that AI-generated code has so far been more verbose and less secure than human-written code.
 - [[2026-07-01-bello-mckinsey-podcast-serial-builder-advantage]] — *The Serial Builder Advantage: Why Repeat Innovators Win* (The McKinsey Podcast, YouTube, 1 Jul 2026). **Jason Bello** (Senior Partner) interviewed by **[[Roberta Fusaro]]** on new McKinsey research on corporate venture building: companies building 3+ ventures at once dramatically outperform one-shot builders; average break-even cost fell $125M (2024) → $77M (2025); a two-flavor taxonomy of AI in venture building ("AI as a business" vs. "AI in the background"); milestone-tranche funding; and a fact-based, blame-free culture as the enabling condition for fast pivots. The wiki's sharpest quantified case yet for the [[dynamic-capabilities|dynamic-capabilities]] `balancing-digital-portfolios` microfoundation.
+- [[2026-07-09-catlin-mckinsey-podcast-real-ai-advantage]] — *The real AI advantage* (The McKinsey Podcast, YouTube, 9 Jul 2026, published the same day it was ingested). **Tanguy Catlin** (Senior Partner and [[McKinsey Global Institute|MGI]] Director) interviewed by **[[Roberta Fusaro]]** on why AI-driven productivity gains get competed away and real competitive advantage comes from reinvention — explicitly names *[[2026-05-03-rewired-second-edition-sample|Rewired]]* as the underlying framework. Introduces a three-lever theory of future advantage (proprietary data, habit-embedding, "metabolic rate of learning"), the knowledge-based → outcome-based organization shift, and a strategy/technology/people three-lens diagnostic for CEOs.
 - [[2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships]] — *Agents, Robots, and Us: Skill Partnerships in the Age of AI* (MGI, November 2025, 60-page report + 6-page technical appendix). Seven authors: **[[McKinsey Global Institute|Lareina Yee]]** (MGI director, Bay Area; lead author), **Anu Madgavkar** (MGI partner, New Jersey), **Sven Smit** (MGI chairman, Amsterdam), **Alexis Krivkovich** (senior partner, Bay Area), **Michael Chui** (QuantumBlack senior fellow, Bay Area), **Maria Jesus Ramirez** (MGI senior fellow, Bay Area), **Diego Castresana** (engagement manager, New York). Academic advisers: Nobel laureate **Sir Christopher Pissarides** (LSE) + **Matthew J. Slaughter** (Tuck Dean). The **workforce-and-skills layer** companion to *Race Takes Off*'s industry layer — 7 occupation archetypes, Skill Change Index built using OpenAI GPT-4o for ~3.4M skill→DWA mappings, 57% technical-automation potential, $2.9T US economic value by 2030 (midpoint scenario). The wiki's first MGI workforce panorama.
 
 ## Affiliated authors in this wiki
@@ -65,7 +69,8 @@ Global management consulting firm; runs **QuantumBlack** as its AI arm and **[[M
 - **Shubham Singhal** — MGI chair (named on report front matter). First wiki mention; deferred.
 - **Eric Kutcher** — McKinsey **North America Chair**; host/interviewer on the McKinsey Podcast episode [[2026-06-18-ramaswamy-mckinsey-every-company-software-company|with Sridhar Ramaswamy]]. First wiki mention; deferred (single source).
 - **Jason Bello** — McKinsey **Senior Partner**; interviewee on [[2026-07-01-bello-mckinsey-podcast-serial-builder-advantage|the serial-builder-advantage episode]], the source of the corporate-venture-building research discussed there. First wiki mention; deferred (single source).
-- **Lucia Rahilly** — named in the stock sign-off outro on both [[2026-06-18-ramaswamy-mckinsey-every-company-software-company|the Ramaswamy episode]] and [[2026-07-01-bello-mckinsey-podcast-serial-builder-advantage|the Bello episode]], but not the on-camera interviewer for either. Two mentions, but role unclear (fixed sign-off co-host vs. rotating interviewer) — see [[Roberta Fusaro]]'s open questions. Deferred pending clarification of her actual role.
+- **Tanguy Catlin** — McKinsey **Senior Partner** and [[McKinsey Global Institute|MGI]] Director; interviewee on [[2026-07-09-catlin-mckinsey-podcast-real-ai-advantage|*The real AI advantage*]], source of the productivity-vs-reinvention thesis discussed there. First wiki mention; deferred (single source).
+- [[Lucia Rahilly]] — named in the stock sign-off outro on [[2026-06-18-ramaswamy-mckinsey-every-company-software-company|the Ramaswamy episode]], [[2026-07-01-bello-mckinsey-podcast-serial-builder-advantage|the Bello episode]], and [[2026-07-09-catlin-mckinsey-podcast-real-ai-advantage|the Catlin episode]] — three mentions, still sign-off-only every time. **Promoted to an entity page on this ingest** per the MGI-precedent 3rd-mention threshold, rather than deferring indefinitely; her actual role (fixed co-host vs. rotating interviewer) remains an open question on her page.
 
 ## MGI directors and partners
 

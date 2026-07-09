@@ -4,7 +4,7 @@ aliases: ["founder-led sales", "founder sales", "founder-led-sales", "founder se
 tags: [founder-led-sales, go-to-market, sprint-framework, first-10-customers, buyer-uncertainty, attention-vs-traction, founder-credibility, do-things-that-dont-scale, b2b-saas, sales-methodology]
 confidence: 0.8
 last_confirmed: "2026-06-25"
-accessed_at: "2026-06-25"
+accessed_at: "2026-07-01"
 source_count: 4
 relationships:
   - type: supports

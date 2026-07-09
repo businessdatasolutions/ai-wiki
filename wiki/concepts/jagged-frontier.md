@@ -2,10 +2,10 @@
 type: concept
 aliases: ["jagged frontier", "jagged-frontier", "jagged technological frontier", "AI capability frontier", "jagged intelligence", "jagged skills", "jagged-intelligence", "animals vs ghosts", "ghosts not animals"]
 tags: [jagged-frontier, jagged-intelligence, AI-capabilities, knowledge-work, productivity, automation, augmentation, verifiability, animals-vs-ghosts]
-confidence: 0.93
-last_confirmed: "2026-06-25"
-accessed_at: "2026-06-25"
-source_count: 15
+confidence: 0.95
+last_confirmed: "2026-07-09"
+accessed_at: "2026-07-09"
+source_count: 16
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -62,6 +62,7 @@ The jagged-frontier concept is consistent with and extended by:
 - [[2025-10-05-patwardhan-et-al-openai-gdpval|GDPval (OpenAI 2025)]] — jaggedness **by occupation and modality**, measured on real deliverables: across 44 occupations, different models win on different file types (Claude Opus 4.1 stronger on `.pdf`/`.xlsx`/`.ppt` aesthetics; GPT-5 stronger on pure text and instruction-following), and the most common loss reason is *failing to fully follow instructions* — a frontier that is uneven not just across tasks but across **deliverable formats and competence dimensions**. GDPval also shows the frontier is *steerable*: more reasoning effort, context, and scaffolding move it (a self-check prompt cut PowerPoint formatting errors 86%→64%).
 - [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti (HBR 2026)]] — the practitioner restatement of the jaggedness *trajectory*: AI has gone "from pretty good at simple tasks and terrible at complex tasks to **excellent at simple tasks and pretty good at complex tasks**." The frontier is jagged *and moving outward*, which is why Argenti argues against anchoring one's value to any fixed "10% AI can't do."
 - [[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Mollick (A Bit of Optimism, June 2026)]] — the **term's originator restating it for a general audience**. Ethan Mollick is a co-author of the [[2026-04-28-dellacqua-jagged-technological-frontier|Dell'Acqua et al.]] BCG study that introduced "jagged frontier"; in this podcast he uses it to argue *the demand for your labour rises where AI is bad* (your voice, getting a joke) and that the differentiator becomes **taste** as the rest commoditises. He pairs it with the [[durable-skills]] move (experience lets you know which side of the frontier a task sits on) and the *evaluation-not-generation-is-the-bottleneck* claim — the jagged frontier as the reason expertise still pays.
+- [[2026-06-17-priest-atlantic-pwc-ai-agents-changing-business|Priest (PwC, June 2026)]] — practitioner corroboration from a different angle: rather than *which tasks* fall on which side of the frontier, Priest observes that *which users* extract the most value is also uneven — "the best talent gets the most from AI," across coding and (anecdotally) music-making, despite equal platform access. This user-level unevenness sits in tension with the "equalizing effect" documented on [[automation-vs-augmentation]] (low-skill workers gaining most in Brynjolfsson's controlled customer-support RCT) — see that page's Debates and supersession section for the open question this raises.
 
 ### Mechanism: the frontier is invisible
 

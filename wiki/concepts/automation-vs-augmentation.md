@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-06-25"
-accessed_at: "2026-06-25"
-source_count: 51
+last_confirmed: "2026-07-09"
+accessed_at: "2026-07-09"
+source_count: 52
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -390,6 +390,7 @@ The Lyft / HubSpot / Emergent triple is the wiki's first cluster on the automati
 - **Does augmentation reliably *not* displace labor?** [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson 2025]]'s Fact 3 finds no displacement in augmentative uses *for young workers*. But long-run effects (productivity J-curve, demand elasticity, eventual task automation) might cause augmentative deployments to slide toward automation over time.
 - **Augmentation can still concentrate gains.** The "equalizing effect" in [[2026-04-28-ai-index-report-2025|AI Index 2025]]'s productivity studies is at the worker level *within* a role. At the firm level, augmentation may still let the firm produce more with fewer workers — meaning the *individuals* who keep their jobs gain, but the *people who would have been hired* don't.
 - **The cut is observable now via Claude conversations.** The Anthropic Economic Index methodology — sampling millions of Claude conversations and classifying each as automative/augmentative/none — is a novel measurement instrument. Its reliability depends on Claude's user base being representative of LLM usage broadly. Cross-validation with other LLM telemetry would strengthen the methodology.
+- **Does the equalizing effect generalize beyond scripted/entry-level work?** [[2026-06-17-priest-atlantic-pwc-ai-agents-changing-business|Priest (PwC, June 2026)]] reports the opposite pattern from the customer-support equalizing effect above: across coding and (anecdotally) music-making, "the best talent gets the most from AI" despite equal platform access — top performers, not low-skill ones, extract disproportionate value. Not a direct head-to-head contradiction — Brynjolfsson's Cui data is a controlled RCT in a scripted, low-complexity customer-support task, while Priest's claim is anecdotal practitioner testimony (sponsored content, no linked methodology) about open-ended, high-complexity creative/technical work — but it's a live open question whether the equalizing effect is specific to low-complexity, high-guardrail task settings and inverts once task complexity and creative judgment rise. Watch for a controlled study on high-complexity task types to resolve this.
 
 ## Related concepts
 

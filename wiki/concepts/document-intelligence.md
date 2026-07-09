@@ -4,7 +4,7 @@ aliases: ["document intelligence", "document AI", "intelligent document processi
 tags: [document-intelligence, document-ai, agentic-document-extraction, ocr, visual-grounding, verifiable-rag, unstructured-data, idp, enterprise-ai]
 confidence: 0.72
 last_confirmed: "2026-06-15"
-accessed_at: "2026-06-15"
+accessed_at: "2026-07-01"
 source_count: 3
 relationships:
   - type: part-of

@@ -5,11 +5,11 @@ tags: [enterprise-ai-adoption, organizational-frameworks, synthesis, cross-sourc
 derived_from: [organizational-frameworks-for-ai-adoption]
 opened: 2026-04-28
 closed: 2026-05-05
-last_refreshed: "2026-06-19"
+last_refreshed: "2026-07-09"
 confidence: 0.90
-last_confirmed: "2026-06-19"
-accessed_at: "2026-06-19"
-source_count: 14
+last_confirmed: "2026-07-09"
+accessed_at: "2026-07-09"
+source_count: 16
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -37,6 +37,8 @@ The 6→10 expansion does **not** change the synthesis's core thesis (*framework
 **Refreshed 2026-06-19**: no new *framework* lands, but the cluster gains its **first lived multi-framework operator case** — [[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Dumra / DBS Bank 2026]]. DBS is not an eleventh-plus lens; it is a single 39,000-employee incumbent **running several of the cluster's layers at once over a decade** — MIT CISR Stage-4-style embedded AI, McKinsey-Rewired-style business-led + KPI-cascaded operating-model change, the Bain/OpenAI trap-escape (workflow-not-task redesign), and Beutler-style *business-owns-the-outcomes* governance. It is therefore the closest thing the wiki has to a partial answer to **open question #4** (*"do the frameworks converge when applied to a specific firm?"*): DBS's mechanisms map cleanly onto multiple frameworks without contradiction, weak evidence *for* the complementary-not-competing thesis. See the open-questions section.
 
 **Refreshed 2026-06-06**: an **11th framework** lands — the **deployment-maturity ladder** from [[2026-06-02-architecting-ai-native-organizations-redesign-work-at-scale-joe-beutler|Beutler / OpenAI 2026]] (the wiki's first first-party OpenAI source): **Ask → Assist → Automate** (read-only → human-in-the-loop → full autonomy, exceptions routed to humans). It occupies a layer none of the prior ten named cleanly: *given that you are deploying AI on a workflow, how much agency do you grant it, and in what sequence?* — distinct from Anand-Wu's *task-deployment* layer (should you deploy on this task at all) and from Allen/AWS's *economic-decision* USE/COMPOSE/BUILD (build vs rent the model). Beutler pairs it with two org-design rules that reinforce existing cluster findings rather than adding a layer: *separate governance from transformation, business owns the outcomes* (sharpening McKinsey Rewired's operating-model capability) and *embed engineering inside the business function* (the cross-customer-deployment twin of [[2026-05-08-running-an-ai-native-engineering-org|Fung's]] inside-Anthropic team-shape rewrite). The 10→11 expansion again leaves the core thesis intact and adds a *deployment-maturity* rung beneath the task-deployment layer.
+
+**Refreshed 2026-07-09**: no new framework layer, but two practitioner voices arrive together and both *reinforce* existing cluster findings rather than adding a twelfth lens. [[2026-06-17-priest-atlantic-pwc-ai-agents-changing-business|Priest / PwC 2026]] supplies a second independent voice — after [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen/AWS]] — converging on the **hourglass organization** shape (expanded entry-level intake, compressed-but-empowered middle management, growing leadership layer), from a materially different vantage (Big Four internal transformation practice vs. a cloud vendor's executive-forum talk). [[2026-07-09-catlin-mckinsey-podcast-real-ai-advantage|Catlin / McKinsey Podcast 2026]] explicitly restates *McKinsey Rewired*'s core prescription in interview form (naming the book directly) and adds two pieces of reusable vocabulary: the **knowledge-based → outcome-based organization** shift (pairing agents with humans around outcomes rather than tasks) and a **strategy / technology / people** three-lens CEO diagnostic, naming the people/organizational lens as hardest — sharpening McKinsey Rewired's "senior-leader ownership" cross-framework agreement (above) with a specific mechanism: adaptation lags because it requires a genuinely upskilled, confident workforce and incentive systems that reward experimentation, not just leadership buy-in.
 
 ## Question
 
@@ -167,6 +169,11 @@ Of the ten frameworks:
 **Added in 2026-06-19 refresh:**
 
 - [[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator]] — [[Bidyut Dumra]] (Group Head of Innovation and Future of Work, [[DBS Bank]]) on MIT SMR's *Leaders at All Levels* (Ep. 9). **Lived multi-framework operator case** — not a new lens, but a single banking incumbent running several cluster layers at once: GANDALF sensing, the Innovation Pyramid + QPR (seizing), Managing Through Journeys (transforming), and a 20%-of-scorecard innovation KPI that operationalises the trap-escape. The cluster's first decade-long operator-altitude instantiation; a partial worked-example answer to open question #4.
+
+**Added in 2026-07-09 refresh:**
+
+- [[2026-06-17-priest-atlantic-pwc-ai-agents-changing-business]] — Dan Priest (Chief AI Officer, [[PwC]]), interviewed by Nicholas Thompson (CEO, The Atlantic) on *The Most Interesting Thing in AI* (17 Jun 2026). **Second independent voice on the hourglass organization**, plus concrete task-length limits for agent autonomy (~2.5 hrs general work vs. ~12–13 hrs coding) and a named internal knowledge-compounding mechanism (firm-wide GPT built from the transformation practice's accumulated learnings). Branded/sponsored content (produced in collaboration with PwC) — firm-specific claims are directionally credible but not independently verified.
+- [[2026-07-09-catlin-mckinsey-podcast-real-ai-advantage]] — Tanguy Catlin (Senior Partner, [[McKinsey Global Institute|MGI]] Director), interviewed by [[Roberta Fusaro]] on **The McKinsey Podcast** (9 Jul 2026, published same-day as ingest). **Explicit restatement of McKinsey *Rewired*** in interview form; adds the knowledge-based → outcome-based organization shift and the strategy/technology/people three-lens CEO diagnostic.
 
 ## Lessons
 

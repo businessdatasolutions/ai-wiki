@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-07-01"
-accessed_at: "2026-07-01"
-source_count: 56
+last_confirmed: "2026-07-09"
+accessed_at: "2026-07-09"
+source_count: 57
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -365,6 +365,7 @@ BCG's microeconomic role-model (Revelio 1,500-role taxonomy + O*NET) gives the w
 
 - **Four transformation side-effects** that "headline job numbers can mask": (1) upskilling/redeployment *speed* is the binding constraint; (2) entry-level hiring shrinks then is redefined toward supervising-AI work, with **AI fluency becoming a complement to tenure** (sometimes advantaging AI-fluent juniors); (3) **skill thresholds rise** (durable roles need higher credentials/seniority → barriers to entry — see [[durable-skills]]); (4) cognitive load intensifies. These sharpen the wiki's entry-level-decline thread (Brynjolfsson, Massenkoff-McCrory) with a *mechanism*: the rungs aren't just fewer, they move up.
 - **The CEO warning** worth keeping verbatim: *"Those who cut their workforce beyond AI's ability to replace it will see productivity drop, institutional knowledge disappear, and critical talent walk away."* — the labor-side statement of the [[micro-productivity-trap]].
+- **A third method converges on the same reshape-not-replace pattern**: [[2026-07-09-catlin-mckinsey-podcast-real-ai-advantage|Catlin (McKinsey Podcast, July 2026)]] states that ~53% of worker activities are technically automatable with current technology, but "very few workers have the majority of their activities" in that automatable set — implying widespread **job reconfiguration** (regrouping and partially automating tasks within a job) rather than wholesale elimination. A third independent framing (after BCG's demand-modeling and Anthropic's observed-usage data) landing on the same task-vs-job distinction, though stated without a linked methodology in the interview itself. Catlin adds a sectoral split not present in the BCG segmentation: cognitive AI disrupts white-collar/professional-services work faster; robotics affects blue-collar sectors (e.g. transportation via robotaxis) on a longer horizon.
 
 ## Occupation boundaries blur, domain expertise persists: the agentic-coding read ([[2026-06-16-anthropic-economic-index-agentic-coding-returns-to-expertise|Hitzig, Massenkoff, Lyubich, Heller & McCrory / Anthropic, June 2026]])
 
