@@ -1,0 +1,1913 @@
+{
+  "question": {
+    "original": "Help me find content related to my upcoming presentation: The presentation is for a hospital quality management network (quality advisors/managers, ~1.5 hours, frontal with interactive segments), aimed at showing how AI can support their core work — especially incident triage and cross-unit analysis of patient safety reports, where the biggest current bottleneck is manually aggregating data and writing analysis reports across units. It builds on the idea that AI performs best when quality standards and KPIs are made explicit first, framing that documentation effort as a professional (not technical) task and central to \"rules of engagement\" for using AI. The concrete goal is to leave the audience — who are rule-following rather than exploratory — with a step-by-step, relatable live demo (cross-unit incident analysis) and a feeling that they could start applying this tomorrow.",
+    "restated": "What does the wiki contain that can inform a ~90-minute talk to hospital quality managers on using AI for incident triage and cross-unit patient-safety analysis, built on the premise that making quality standards/KPIs explicit is the professional 'rules of engagement' precondition for reliable AI, for a rule-following audience who should leave with a concrete, repeatable demo?",
+    "facets": [
+      "AI-assisted incident triage / classification of an inbound stream of heterogeneous reports (parallel use cases the wiki holds)",
+      "Cross-unit data aggregation and automated analysis-report drafting (document intelligence / extraction + orchestration)",
+      "Making quality standards and KPIs explicit as the 'rules of engagement' precondition for reliable AI (governance/specification-first framing)",
+      "Framing and staging for a rule-following, non-exploratory audience: bounded task scope, staged autonomy, a relatable step-by-step demo, 'start tomorrow' feeling"
+    ],
+    "language": "en"
+  },
+  "params": {
+    "seeds": 12,
+    "hops": 1,
+    "k_rrf": 60,
+    "graph_w": 0.5,
+    "conf_floor": 0.6,
+    "today": "2026-07-01"
+  },
+  "graph_available": true,
+  "graph_warning": null,
+  "candidates": [
+    {
+      "slug": "sources/2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent",
+      "path": "wiki/sources/2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent.md",
+      "type": "source",
+      "title": "Evals for taste: Hill-climbing a slide-generation agent",
+      "qmd_rank": 1,
+      "qmd_score": 0.5,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 1 (score 0.50)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.016393,
+      "fused_score": 0.94,
+      "verdict": "ignore",
+      "reason": "evals methodology for a slide-generation coding agent; no connection to healthcare, triage, or explicit-standards facets",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success",
+      "path": "wiki/sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success.md",
+      "type": "source",
+      "title": "Industrial AI That Works: Strategy, Survival, and Success | MIT Executive Education",
+      "qmd_rank": 2,
+      "qmd_score": 0.38,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 2 (score 0.38)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.016129,
+      "fused_score": 0.925,
+      "verdict": "ignore",
+      "reason": "industrial-AI adoption-speed/systems-thinking thesis overlaps facet 3/4 ground already covered by the ontology paper [[2026-02-01-manditereza-ontology-driven-industrial-ai]] (explicit-standards angle) and the organizational-frameworks synthesis (adoption-maturity angle)",
+      "reason_class": "redundant",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life",
+      "path": "wiki/sources/2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life.md",
+      "type": "source",
+      "title": "Agentic DevOps in Real Life – Build Faster, Ship Safer, Keep Humans in the Loop",
+      "qmd_rank": 3,
+      "qmd_score": 0.37,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 3 (score 0.37)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.015873,
+      "fused_score": 0.91,
+      "verdict": "ignore",
+      "reason": "GitHub Copilot / Agent HQ software-DevOps demo; no healthcare or standards-first content",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care",
+      "path": "wiki/sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care.md",
+      "type": "source",
+      "title": "AI for Interoperability in Health Care: Philips's Carla Goulart Peron",
+      "qmd_rank": 4,
+      "qmd_score": 0.35,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 4 (score 0.35)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.015625,
+      "fused_score": 0.896,
+      "verdict": "use",
+      "reason": "the wiki's only dedicated healthcare-AI source; names 'data quality and standardization from the get-go' as the top barrier to healthcare AI, and supplies the audience-reassurance frame 'AI is here to add, not to take over'",
+      "reason_class": null,
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge",
+      "path": "wiki/sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge.md",
+      "type": "source",
+      "title": "The AI Skills Nobody Is Teaching (And Everyone Needs) — Ethan Mollick on A Bit of Optimism",
+      "qmd_rank": 6,
+      "qmd_score": 0.34,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 6 (score 0.34)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.015152,
+      "fused_score": 0.869,
+      "verdict": "ignore",
+      "reason": "general AI-skills/taste discourse for a knowledge-work audience; not tied to triage, aggregation, or standards-first facets",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner",
+      "path": "wiki/sources/2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner.md",
+      "type": "source",
+      "title": "Agentic AI: What Leaders Wish They Knew Sooner",
+      "qmd_rank": 7,
+      "qmd_score": 0.33,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-07-kiron-schrage-compound-benefits",
+          "edge_type": "supports",
+          "via": "Michael Schrage continuity; the expert-as-evaluator / human-judgment-in-the-loop thread",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 7 (score 0.33)",
+        "graph: sources/2026-05-07-kiron-schrage-compound-benefits <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014925,
+      "fused_score": 0.856,
+      "verdict": "ignore",
+      "reason": "general agentic-AI leadership lessons (11 leaders, human-in-the-loop reality); no healthcare/quality-standards specificity",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex",
+      "path": "wiki/sources/2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex.md",
+      "type": "source",
+      "title": "How to write AI agent loops in Claude Code and Codex",
+      "qmd_rank": 9,
+      "qmd_score": 0.33,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 9 (score 0.33)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014493,
+      "fused_score": 0.831,
+      "verdict": "ignore",
+      "reason": "product-manager/non-engineer guide to coding-agent loops (Claude Code/Codex); off-topic for the presentation's facets",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Harvard-Business-Review",
+      "path": "wiki/entities/Harvard-Business-Review.md",
+      "type": "entity",
+      "title": "Harvard Business Review",
+      "qmd_rank": 5,
+      "qmd_score": 0.34,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 5 (score 0.34)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.015385,
+      "fused_score": 0.826,
+      "verdict": "ignore",
+      "reason": "publisher entity catalogue card; facets need claims/sources, not the entity itself",
+      "reason_class": "wrong-granularity",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-07-kiron-schrage-compound-benefits",
+      "path": "wiki/sources/2026-05-07-kiron-schrage-compound-benefits.md",
+      "type": "source",
+      "title": "How to Reap Compound Benefits From Generative AI",
+      "qmd_rank": 10,
+      "qmd_score": 0.33,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner",
+          "edge_type": "supports",
+          "via": "Michael Schrage continuity; the expert-as-evaluator / human-judgment-in-the-loop thread",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 10 (score 0.33)",
+        "graph: sources/2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-07",
+      "days_since_access": null,
+      "effective_confidence": 0.8,
+      "rrf_score": 0.014286,
+      "fused_score": 0.802,
+      "verdict": "ignore",
+      "reason": "ROI/iteration-economics reframe anchored in coding-agent examples (Claude Code); not about incident triage, aggregation, or standards-first framing",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Y-Combinator",
+      "path": "wiki/entities/Y-Combinator.md",
+      "type": "entity",
+      "title": "Y Combinator",
+      "qmd_rank": 8,
+      "qmd_score": 0.33,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 8 (score 0.33)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014706,
+      "fused_score": 0.789,
+      "verdict": "ignore",
+      "reason": "accelerator entity catalogue card",
+      "reason_class": "wrong-granularity",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-11-karten-zhang-continual-harness-online-adaptation",
+      "path": "wiki/sources/2026-05-11-karten-zhang-continual-harness-online-adaptation.md",
+      "type": "source",
+      "title": "Continual Harness: Online Adaptation for Self-Improving Foundation Agents",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent",
+          "edge_type": "supports",
+          "via": "**The hill-climbing-the-harness pattern operationalised at the vendor-altitude.** Karten & Zhang (academic paper, 11 May 2026): formal p/G/K/M continual-harness-adaptation framework — *the agent edits its own harness based on eval feedback*. This Anthropic talk shows the *manually-driven equivalent*: human engineer iterates the system prompt + grader set + model choice based on eval scores; same hill-climbing loop, human-in-the-loop variant. The wiki now has paired anchors on **continual-harness-adaptation as the operational substrate of evals-driven agent improvement** at both academic (Karten/Zhang automated) and vendor-engineer (this talk, human-driven) altitudes.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.008197,
+      "fused_score": 0.47,
+      "verdict": "ignore",
+      "reason": "agent-harness online-adaptation failure taxonomy; software-engineering register, not healthcare/quality",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-18-wolfe-agent-evaluation-detailed-guide",
+      "path": "wiki/sources/2026-05-18-wolfe-agent-evaluation-detailed-guide.md",
+      "type": "source",
+      "title": "Agent Evaluation: A Detailed Guide",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent",
+          "edge_type": "supports",
+          "via": "**Paired vendor-engineer + article-altitude anchors on the same eval-discipline territory.** Wolfe's *Agent Evaluation: A Detailed Guide* (Substack, 18 May 2026) is the wiki's deepest article-altitude treatment — taxonomies of graders (code / model / human), tau-bench / terminal-bench / SWE-bench coverage, LLM-as-judge calibration, swiss-cheese-evaluation pattern. This Anthropic talk (22 May, four days later) is the *vendor-side conference-talk altitude* on the same territory — same three grader categories (code / model / human), same calibration concerns, same judge-ordering-bug warning, plus a live slide-gen agent worked example Wolfe's article doesn't have. The two sources together give the wiki **paired article + conference-talk anchors on practitioner-altitude evals discipline** that should both be referenced from the agent-development-lifecycle concept page.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.008065,
+      "fused_score": 0.462,
+      "verdict": "ignore",
+      "reason": "agent-evaluation technical guide for coding agents",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-20-ng-deeplearningai-ai-dev-26-sf-future-of-software-engineering",
+      "path": "wiki/sources/2026-05-20-ng-deeplearningai-ai-dev-26-sf-future-of-software-engineering.md",
+      "type": "source",
+      "title": "AI Dev 26 x SF: Andrew Ng: The Future of Software Engineering",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent",
+          "edge_type": "supports",
+          "via": "**Same-conference companion talks** (both at AI Dev 26 x San Francisco; Ng on 20 May, this Anthropic session on 22 May). Ng frames the meta-shift (PM-bottleneck + 100%-AI-coding norm + parallel-skill-development); this Anthropic session is the *operational practitioner-track session* on one of the *complementary human skills* Ng names — eval-design-and-calibration. The pairing illustrates the conference's intended structure: Ng-altitude keynote on *the shift* + practitioner-track sessions on *the specific skills the shift requires*. AI Dev 26 is now anchored on the DeepLearningAI side (Ng + Khan) and on the Claude-channel side (this Anthropic session) — three sources from the same conference, three vantages.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007937,
+      "fused_score": 0.455,
+      "verdict": "ignore",
+      "reason": "software-engineering-practitioner conference talk",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-20-tan-hu-stanford-cs153-ai-native-company-1000x-engineer",
+      "path": "wiki/sources/2026-05-20-tan-hu-stanford-cs153-ai-native-company-1000x-engineer.md",
+      "type": "source",
+      "title": "Stanford CS153 Frontier Systems | The AI Native Company: How One Founder Becomes a 1000x Engineer",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent",
+          "edge_type": "supports",
+          "via": "**The *cross-modal evals as Skillify-built-in* claim Hu made at CS153 gains an operational worked example.** Hu (CS153, 20 May 2026): cross-modal evals (Opus 4.6 + GPT 5.5 + Deepseek V4 cross-evaluating with structured ratings fed back into the original sub-agent for iterative improvement) as a forward-looking Skillify-built-in feature. This Anthropic talk (22 May, two days later) is the *manual-equivalent* at the slide-gen-agent worked-example altitude: human iterates, judges (model-based graders) score, judge-calibration is fickle, multi-judge consensus underrated — exactly the substrate Hu's cross-modal-evals feature is automating. The vendor-side practitioner talk and the YC-partner-doctrinal talk converge on **multi-judge / cross-judge evaluation as the load-bearing eval-quality mechanism for non-deterministic-output systems**.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007813,
+      "fused_score": 0.448,
+      "verdict": "ignore",
+      "reason": "AI-native company-building for engineers",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-21-chase-langchain-interrupt-26-future-of-ai-agents",
+      "path": "wiki/sources/2026-05-21-chase-langchain-interrupt-26-future-of-ai-agents.md",
+      "type": "source",
+      "title": "The Future of AI Agents: What Will Interrupt 2027 Look Like? | Interrupt 26",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent",
+          "edge_type": "supports",
+          "via": "**Operational instantiation of Chase's *evals-as-gradient* framing.** Chase (Interrupt 26, 21 May 2026): *'the evals that you write act as a forcing function. Those evals are providing a similar type of this training gradient'* — articulated at the vendor-CEO three-layer-continual-learning altitude. This Anthropic talk (22 May 2026, one day later) is the *operational worked example* of the same claim at the practitioner-altitude: define code-graders + judge-graders → run on the slide-gen agent → identify failure modes → update system prompt (or switch model) → run again → measure improvement → loop. The hill-climbing diagram on stage is *literally* the gradient-descent metaphor Chase invokes. Together the two sources lock in the *evals-as-gradient* claim at vendor-CEO + vendor-engineer altitudes within 24 hours.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007692,
+      "fused_score": 0.441,
+      "verdict": "ignore",
+      "reason": "agent-framework (LangChain) roadmap talk",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-21-sinclair-ivers-benitez-sei-cmu-ai-native-software-engineering",
+      "path": "wiki/sources/2026-05-21-sinclair-ivers-benitez-sei-cmu-ai-native-software-engineering.md",
+      "type": "source",
+      "title": "AI-Native Software Engineering: Enduring Principles, New Pace",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent",
+          "edge_type": "supports",
+          "via": "**The *judge-calibration is fickle* observation operationalised at the model-vendor altitude.** Sinclair / Ivers / Benitez (SEI/CMU, 21 May 2026): *\"under-specification is the bad-practice-AI-magnifies-most\"* — vague specs let AI fill in the blanks badly. This Anthropic talk extends the under-specification observation into the *judge-spec* layer: a model-grader with the prompt *'evaluate if this is a good slide deck (0-5)'* with no anchored examples will rate an obviously-bad slide deck at 2.8-4.0 because it has nothing to anchor on. The fix: ground judges with explicit examples of what 0 looks like + 5 looks like. The Anthropic-side framing of *under-specification of judges* is the institutional-research-centre framing of *under-specification of agents* applied one layer up. Both anchor on **specs are load-bearing, more so under AI**.",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life",
+          "edge_type": "supports",
+          "via": "Both argue agentic AI changes the *pace* of software engineering while the *enduring principles* (review, security, human judgment) still bind — and both cite the METR productivity finding that AI-assisted developers feel faster but measure slower. Randell/Gousset is the vendor-practitioner-keynote altitude (GitHub Copilot + Agent HQ tooling demos); Sinclair/Ivers/Benitez is the institutional-research-centre altitude (SEI-CMU). Convergent on *keep-the-human-in-the-loop / measure-don't-assume*.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent -->supports--> this (1 hop)",
+        "graph: sources/2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007576,
+      "fused_score": 0.434,
+      "verdict": "ignore",
+      "reason": "software-engineering research talk",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-22-khan-cline-deeplearningai-ai-dev-26-sf-evals-are-broken-use-them-anyway",
+      "path": "wiki/sources/2026-05-22-khan-cline-deeplearningai-ai-dev-26-sf-evals-are-broken-use-them-anyway.md",
+      "type": "source",
+      "title": "AI Dev 26 x SF | Ara Khan: Evals Are Broken Use Them Anyway",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent",
+          "edge_type": "supports",
+          "via": "**Same-day same-conference paired evals anchors at opposite vendor-altitudes** — both at AI Dev 26 x SF, both published 22 May 2026. The Anthropic talk (this source) is the *model-vendor-side* evals doctrine, working the slide-generation agent worked example through code-graders + judge-graders + the QA-loop adversarial pattern + the autoregressive-judge-ordering bug + model-switching (Sonnet 4.7 → Opus 4.7) as alternative to prompt-engineering. [[2026-05-22-khan-cline-deeplearningai-ai-dev-26-sf-evals-are-broken-use-them-anyway|Khan / Cline]] is the *customer-of-model-vendor-side* evals doctrine: 'we adopted Stanford terminal-bench, hill-climbed our harness, and beat Claude Code on Opus 4.5 evals' — using the same eval-discipline vocabulary (graders / hill-climbing / harness-as-one-of-three-things-being-tested) to compete with the model vendor's own agent product. The paired sources lay out **what each side of the model-vendor-vs-coding-agent-vendor relationship looks like from inside the eval loop**: Anthropic shows how to define + calibrate + iterate; Cline shows what it looks like when a competitor uses the same discipline to outperform the model vendor's reference agent. The wiki's clearest single-day vendor-vs-customer-of-vendor evals-discipline pair.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007463,
+      "fused_score": 0.428,
+      "verdict": "ignore",
+      "reason": "coding-agent eval methodology",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering",
+      "path": "wiki/sources/2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering.md",
+      "type": "source",
+      "title": "AI Dev 26 x SF | Paul Everitt: The Shift to Agentic Engineering",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent",
+          "edge_type": "supports",
+          "via": "**Same-day same-conference triplet on the *evals-as-engineering-discipline* point** — Everitt's practitioner-call-to-arms + [[2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent|Anthropic's model-vendor-doctrine]] + [[2026-05-22-khan-cline-deeplearningai-ai-dev-26-sf-evals-are-broken-use-them-anyway|Khan / Cline's customer-of-vendor-doctrine]] — all 22 May 2026, all at AI Dev 26 SF. Everitt is the *practitioner-engineering-discipline altitude* — placing evals as the first of nine elements, naming the *data-scientists-doing-actual-work-again* role-creation observation, citing the *'in the talk just before from Sonar, Tom showed how all these models are different'* live-from-the-conference cross-reference. The Anthropic side is the *vendor-engineer altitude* (slide-gen agent + graders taxonomy); the Khan side is the *customer-of-vendor altitude* (terminal-bench harness hill-climb). Three altitudes on the same engineering-discipline point, same conference, same day.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007353,
+      "fused_score": 0.422,
+      "verdict": "ignore",
+      "reason": "IDE/agentic-engineering shift talk",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2022-06-29-martin-hbr-a-plan-is-not-a-strategy",
+      "path": "wiki/sources/2022-06-29-martin-hbr-a-plan-is-not-a-strategy.md",
+      "type": "source",
+      "title": "A Plan Is Not a Strategy",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success",
+          "edge_type": "supports",
+          "via": "Carrier's load-bearing claim — 'winners will be determined not by who has access to the technology, but whose organization adopts it faster in a way that actually helps its system' — is the industrial-AI restatement of Martin's planning-vs-strategy distinction. The Heineken 'buy two new bottling lines' temptation is Martin's planning-trap in industrial-ops form.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007042,
+      "fused_score": 0.404,
+      "verdict": "ignore",
+      "reason": "general strategy essay (planning vs. strategy); no AI or healthcare content",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-02-01-manditereza-ontology-driven-industrial-ai",
+      "path": "wiki/sources/2026-02-01-manditereza-ontology-driven-industrial-ai.md",
+      "type": "source",
+      "title": "Building Ontology-Driven Intelligence for Industrial AI Agents",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success",
+          "edge_type": "supports",
+          "via": "Manditereza names ontology-driven data fabrics as the substrate for industrial AI agents; Carrier supplies the strategic-leadership framing for adopting them — find the problem, pick the right agent level (don't jump to L5 when rule-based will do), use AI to *replace long slow feedback loops with very fast ones*",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006944,
+      "fused_score": 0.398,
+      "verdict": "use",
+      "reason": "top-ranked industrial-AI ontology paper: makes explicit object/property/rule modeling (incl. a Quality/Inspection/Defect domain ontology) the precondition for reliable agentic AI — a near-literal technical mirror of the presentation's 'standards and KPIs first' thesis",
+      "reason_class": null,
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-15-sterman-systems-thinking-for-leaders-designing-solutions-that-work",
+      "path": "wiki/sources/2026-05-15-sterman-systems-thinking-for-leaders-designing-solutions-that-work.md",
+      "type": "source",
+      "title": "Systems Thinking for Leaders: Designing Solutions That Work",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success",
+          "edge_type": "supports",
+          "via": "Carrier teaches in the same MIT system-dynamics group Sterman directs; Carrier explicitly cites Jay Forrester ('missing feedback loops') as the diagnostic for where agentic AI creates value. The two MIT Sloan Executive Education videos (Sterman May 2026, Carrier March 2026) form a two-source lineage anchor for [[systems-thinking]] applied at different scales — Sterman general management, Carrier industrial operations.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006849,
+      "fused_score": 0.393,
+      "verdict": "ignore",
+      "reason": "general systems-thinking-for-leaders lecture; not tied to any of the four facets specifically",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "entities/MIT-Sloan-Executive-Education",
+      "path": "wiki/entities/MIT-Sloan-Executive-Education.md",
+      "type": "entity",
+      "title": "MIT-Sloan-Executive-Education",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success",
+          "edge_type": "published-by",
+          "via": "John Carrier's webinar on industrial AI and missing-feedback-loops, promoting the *Implementing Industrial AI* executive course (31 March 2026)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success <--published-by<-- this (1 hop)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007246,
+      "fused_score": 0.389,
+      "verdict": "ignore",
+      "reason": "channel/publisher entity card",
+      "reason_class": "wrong-granularity",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Microsoft",
+      "path": "wiki/entities/Microsoft.md",
+      "type": "entity",
+      "title": "Microsoft",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life",
+          "edge_type": "published-by",
+          "via": "Published on the Microsoft Visual Studio YouTube channel; demos Azure DevOps, VS Code, the Microsoft responsible-AI pipeline, and the Azure SRE Agent (22 Dec 2025)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life <--published-by<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": "2026-07-01",
+      "last_confirmed": "2026-07-01",
+      "days_since_access": 0,
+      "effective_confidence": 0.85,
+      "rrf_score": 0.006667,
+      "fused_score": 0.382,
+      "verdict": "ignore",
+      "reason": "publisher entity card",
+      "reason_class": "wrong-granularity",
+      "promoted": null
+    },
+    {
+      "slug": "entities/GitHub",
+      "path": "wiki/entities/GitHub.md",
+      "type": "entity",
+      "title": "GitHub",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life",
+          "edge_type": "published-by",
+          "via": "Mickey Gousset (Staff DevOps Architect, GitHub) co-presents the Agentic DevOps keynote demoing Copilot coding agent + Agent HQ + Advanced Security (22 Dec 2025)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life <--published-by<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": "2026-06-23",
+      "last_confirmed": "2026-06-23",
+      "days_since_access": 8,
+      "effective_confidence": 0.783,
+      "rrf_score": 0.006757,
+      "fused_score": 0.376,
+      "verdict": "ignore",
+      "reason": "publisher entity card",
+      "reason_class": "wrong-granularity",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-19-elangovan-amd-deeplearningai-ai-dev-26-sf-impact-of-ai-on-software",
+      "path": "wiki/sources/2026-05-19-elangovan-amd-deeplearningai-ai-dev-26-sf-impact-of-ai-on-software.md",
+      "type": "source",
+      "title": "AI Dev 26 x SF | Anush Elangovan: Impact of AI on Software",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life",
+          "edge_type": "supports",
+          "via": "Same agentic-software-engineering-adoption phenomenon — agents writing/refactoring code at speed, the human role shifting to review and orchestration. Both reference the METR productivity-paradox evidence. Elangovan is the AI-infra-vendor (AMD/ROCm) altitude; Randell/Gousset is the developer-tooling-vendor (GitHub/Microsoft) altitude.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006494,
+      "fused_score": 0.372,
+      "verdict": "ignore",
+      "reason": "impact-of-AI-on-software-engineering talk",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-08-running-an-ai-native-engineering-org",
+      "path": "wiki/sources/2026-05-08-running-an-ai-native-engineering-org.md",
+      "type": "source",
+      "title": "Running an AI-native engineering org",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life",
+          "edge_type": "supports",
+          "via": "Both land the *the tool is not the hard part — your processes and trust are* thesis for org-wide agentic-coding adoption. Anthropic's *Running an AI-native engineering org* is the model-vendor-customer altitude; Randell/Gousset is the Microsoft/GitHub-tooling altitude with an explicit 30/60/90-day rollout playbook.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-09",
+      "days_since_access": null,
+      "effective_confidence": 0.8,
+      "rrf_score": 0.006579,
+      "fused_score": 0.369,
+      "verdict": "ignore",
+      "reason": "internal engineering-org redesign (Anthropic); software-engineering register",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-10-anicich-brouwers-why-employees-arent-transparent-ai-usage",
+      "path": "wiki/sources/2026-06-10-anicich-brouwers-why-employees-arent-transparent-ai-usage.md",
+      "type": "source",
+      "title": "Why Employees Aren't Transparent About Their AI Usage",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life",
+          "edge_type": "supports",
+          "via": "develops the 'trust gap' Randell & Gousset name as the binding adoption constraint — here the gap is between employee and employer (will my disclosed AI method be used against me?), and trust/psychological safety are the strongest predictors of whether workers disclose vs. hide their workflows",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.00641,
+      "fused_score": 0.368,
+      "verdict": "ignore",
+      "reason": "workplace AI-usage-transparency research; not tied to the four facets",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships",
+      "path": "wiki/sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships.md",
+      "type": "source",
+      "title": "Agents, robots, and us: Skill partnerships in the age of AI",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care",
+          "edge_type": "supports",
+          "via": "Peron's radiology-displacement-that-didn't-happen + the *AI-is-here-to-add-not-to-take-over* repeated frame is a clinician-vantage qualitative confirmation of MGI's quantitative finding that **clinicians sit in the *people-centric* occupation archetype** (34% of US workforce, $71k avg pay — the *physical-and-interpersonal-protected* segment whose tasks current AI cannot replicate). MGI: *people-centric* quadrant includes registered nurses, psychologists, firefighters (and by implication physicians). Peron from inside the [[Philips]] CMO role, with São Paulo public-system grounding, lands the same finding at qualitative-practitioner altitude.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006173,
+      "fused_score": 0.354,
+      "verdict": "ignore",
+      "reason": "its clinician-occupation-archetype finding is already carried into the wiki via [[2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care]]'s citation of it; reading the MGI report itself adds labor-market breadth not needed for this presentation",
+      "reason_class": "redundant",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-09-dinakaran-yc-luminai-automating-americas-biggest-hospitals",
+      "path": "wiki/sources/2026-04-09-dinakaran-yc-luminai-automating-americas-biggest-hospitals.md",
+      "type": "source",
+      "title": "This Startup Is Automating America's Biggest Hospitals",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care",
+          "edge_type": "supports",
+          "via": "Convergent on the **healthcare-AI-augmentation-not-displacement** thesis at two altitudes. Luminai (Apr 2026, YC-startup-altitude) automates *hospital ops* (admin, scheduling, prior-auth, claims) inside the largest US hospital networks. Peron (May 2026, vendor-CMO altitude at [[Philips]]) speaks to *clinical-practice automation* — imaging setup, diagnostic-image processing, women's-health-protocol-bias-detection. Both reject the *AI-replaces-clinicians* framing. Together they form the wiki's first **healthcare-AI two-altitude cluster**: clinical-practice (Peron) + administrative-operations (Luminai). The structural context that makes both work the way they do: healthcare has a **structural undersupply** of clinicians and imaging globally, so *do-more-with-the-same* is the binding economic constraint, not *labor displacement*.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006098,
+      "fused_score": 0.35,
+      "verdict": "use",
+      "reason": "concrete hospital-operations analogue for incident triage: an AI agent classifies inbound faxes by urgency, extracts structured data, and routes to the correct department — structurally identical to incident-report triage",
+      "reason_class": null,
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-25-masad-replit-ceo-only-two-jobs-left",
+      "path": "wiki/sources/2026-04-25-masad-replit-ceo-only-two-jobs-left.md",
+      "type": "source",
+      "title": "Replit's CEO On The Only Two Jobs Left In The Company Of The Future — Amjad Masad at YC Founder Firesides",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care",
+          "edge_type": "contradicts",
+          "via": "Direct contradiction at the displacement-framing level. Masad's *only two jobs left* maximalist framing presumes broad-occupation-level substitution as the default. Peron rejects that framing for radiology specifically: *'A decade ago people were saying we're never going to have radiologists again because the machines are going to do everything. That narrative has really not played out at all.'* Peron's reframe: in a structurally-undersupplied domain (radiology globally), AI changes *which work the clinician does* without reducing the number of clinicians needed. The contradiction is altitude-specific: clinical-practice in radiology is the cleanest historical case of the *displacement-prediction-didn't-materialize* pattern.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care -->contradicts--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006024,
+      "fused_score": 0.345,
+      "verdict": "ignore",
+      "reason": "maximalist labor-displacement provocation; off-topic for a standards-first, augmentation-framed presentation",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/industrial-ai-agents",
+      "path": "wiki/concepts/industrial-ai-agents.md",
+      "type": "concept",
+      "title": "industrial-ai-agents",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success",
+          "edge_type": "instance-of",
+          "via": null,
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success -->instance-of--> this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": "2026-05-18",
+      "last_confirmed": "2026-05-18",
+      "days_since_access": 44,
+      "effective_confidence": 0.46,
+      "rrf_score": 0.007143,
+      "fused_score": 0.342,
+      "verdict": "ignore",
+      "reason": "single-source stub (confidence 0.46) that restates [[2026-02-01-manditereza-ontology-driven-industrial-ai]] already selected directly; citing the source is stronger than citing the thin concept page",
+      "reason_class": "redundant",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-07-ransbotham-augmented-learners",
+      "path": "wiki/sources/2026-05-07-ransbotham-augmented-learners.md",
+      "type": "source",
+      "title": "Learning to Manage Uncertainty, With AI",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care",
+          "edge_type": "supports",
+          "via": "Same-host pairing — [[Sam Ransbotham]] is the [[Me, Myself, and AI|*Me, Myself, and AI* podcast]] host *and* the lead author of the MIT SMR × BCG annual *Augmented Learners* report. Different formats (long-form interview vs annual research report), same host's intellectual frame: AI-and-organizational-learning as the load-bearing question. Peron's *radiology-trained-on-normal-images* problem (if AI flags only abnormal, how do new radiologists learn what normal looks like?) is a clean clinical-domain instance of the Ransbotham-et-al. *augmented-learners* concern about how organizational learning compounds — or fails to — under AI substitution of routine work.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-07",
+      "days_since_access": null,
+      "effective_confidence": 0.85,
+      "rrf_score": 0.005952,
+      "fused_score": 0.341,
+      "verdict": "ignore",
+      "reason": "organizational-learning research report (org-wide AI learning capability); not about triage, aggregation, or standards-first framing",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "entities/MIT-Sloan-Management-Review",
+      "path": "wiki/entities/MIT-Sloan-Management-Review.md",
+      "type": "entity",
+      "title": "MIT-Sloan-Management-Review",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care",
+          "edge_type": "published-by",
+          "via": "Carla Goulart Peron (Philips Chief Medical Officer) interviewed by Sam Ransbotham on the *Me, Myself, and AI* podcast (Season 13, 31 May 2026) on AI-for-interoperability in health care — the wiki's first dedicated healthcare-AI source and the first *Me, Myself, and AI* podcast ingest under the MIT SMR `author:` value",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner",
+          "edge_type": "published-by",
+          "via": "Multi-speaker compilation from the 2026 MIT Sloan CIO Symposium (host: EIC Abbie Lundberg); 11 leaders on human–agent collaboration",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-07-kiron-schrage-compound-benefits",
+          "edge_type": "published-by",
+          "via": null,
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care <--published-by<-- this (1 hop)",
+        "graph: sources/2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner <--published-by<-- this (1 hop)",
+        "graph: sources/2026-05-07-kiron-schrage-compound-benefits <--published-by<-- this (1 hop)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006329,
+      "fused_score": 0.34,
+      "verdict": "ignore",
+      "reason": "publisher entity card",
+      "reason_class": "wrong-granularity",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+      "path": "wiki/sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs.md",
+      "type": "source",
+      "title": "The new human-machine workforce: How agentic AI will transform jobs",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care",
+          "edge_type": "supports",
+          "via": "Cross-altitude support on the **do-more-with-the-same** prescription. Giles (US-economy executive-readership altitude, 28 May 2026, three days earlier) surfaces the to-cut-or-not-to-cut boardroom question + HubSpot Russell's *no-mass-layoff* counter-example; Peron (Philips-CMO healthcare-domain altitude, 31 May 2026) supplies the *clinical-domain explanation for why displacement-by-default doesn't fit*: the supply side is structurally short, so AI augments rather than displaces. Both reject the binary doom framing for similar but distinct reasons — Giles via diversified-employer behaviour (IBM tripling entry-level, HubSpot redeploying 10), Peron via structural-supply-shortage in the specific domain.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005882,
+      "fused_score": 0.337,
+      "verdict": "ignore",
+      "reason": "US labor-market/agentic-jobs executive-readership piece",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Sam-Ransbotham",
+      "path": "wiki/entities/Sam-Ransbotham.md",
+      "type": "entity",
+      "title": "Sam-Ransbotham",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care",
+          "edge_type": "authored-by",
+          "via": "Host (not lead author) of the long-form *Me, Myself, and AI* interview with Carla Goulart Peron (Philips CMO) on AI-for-interoperability in health care, 31 May 2026 — the first podcast-format Ransbotham contribution to the wiki, alongside the prior 2024 written-research authorship",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care <--authored-by<-- this (1 hop)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.00625,
+      "fused_score": 0.335,
+      "verdict": "ignore",
+      "reason": "author entity card",
+      "reason_class": "wrong-granularity",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-05-06-jassy-amazon-agility-ai-strategy-changing-role-of-managers",
+      "path": "wiki/sources/2025-05-06-jassy-amazon-agility-ai-strategy-changing-role-of-managers.md",
+      "type": "source",
+      "title": "Amazon CEO Andy Jassy on Agility, AI Strategy, and the Changing Role of Managers",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "entities/Harvard-Business-Review",
+          "edge_type": "published-by",
+          "via": null,
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: entities/Harvard-Business-Review <--published-by<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005747,
+      "fused_score": 0.33,
+      "verdict": "ignore",
+      "reason": "Amazon management-agility strategy piece; no healthcare/standards content",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-24-rubinstein-onyemah-startup-founders-new-sales-playbook",
+      "path": "wiki/sources/2026-06-24-rubinstein-onyemah-startup-founders-new-sales-playbook.md",
+      "type": "source",
+      "title": "Startup Founders Need a New Sales Playbook",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "entities/Harvard-Business-Review",
+          "edge_type": "published-by",
+          "via": null,
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: entities/Harvard-Business-Review <--published-by<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005682,
+      "fused_score": 0.326,
+      "verdict": "ignore",
+      "reason": "startup sales playbook; unrelated to the presentation facets",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-10-05-patwardhan-et-al-openai-gdpval",
+      "path": "wiki/sources/2025-10-05-patwardhan-et-al-openai-gdpval.md",
+      "type": "source",
+      "title": "GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Tasks",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge",
+          "edge_type": "supports",
+          "via": "Mollick explicitly invokes GDPval as the load-bearing evidence for *how good the work is*: OpenAI's test where experts (avg 14 yrs experience) and AI each tackle real ~7-hour tasks, judged blind — best models tying/beating humans rose from ~48% (a year ago) to ~84% now (his recall of the figures). He uses it to argue you should give AI *harder* tasks and that evaluation, not generation, is the bottleneck.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005618,
+      "fused_score": 0.322,
+      "verdict": "ignore",
+      "reason": "GDPval occupational benchmark; general capability measurement, not standards-first or healthcare-specific",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-28-anthropic-economic-index-q4-2025",
+      "path": "wiki/sources/2026-04-28-anthropic-economic-index-q4-2025.md",
+      "type": "source",
+      "title": "Anthropic Economic Index: New building blocks for understanding AI use",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge",
+          "edge_type": "supports",
+          "via": "Mollick's *the apprenticeship model just broke* — juniors know less than ChatGPT so managers delegate to AI not to flawed humans, threatening the talent pipeline — is the qualitative mechanism behind the Q4 AEI's first-order deskilling signal (the remaining human task mix loses education content as AI covers high-education tasks).",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005556,
+      "fused_score": 0.319,
+      "verdict": "ignore",
+      "reason": "labor-market economic index; not tied to the four facets",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-11-kilpatrick-sequoia-model-eats-the-harness",
+      "path": "wiki/sources/2026-06-11-kilpatrick-sequoia-model-eats-the-harness.md",
+      "type": "source",
+      "title": "Google DeepMind's Logan Kilpatrick: Why the Model Eats the Harness",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge",
+          "edge_type": "supports",
+          "via": "Mollick gives the general-audience articulation of the **model / app / harness** three-layer framing that the wiki's [[agent-harness]] corpus uses technically — *the model is the brains, apps are how you access it (Claude Code, Codex, Notebook LM), harnesses are how the AI does things (write code, search, make images)*. He also echoes Kilpatrick's *models are all converging and good* point (OpenAI/Google/Anthropic all 'pretty solid').",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005495,
+      "fused_score": 0.315,
+      "verdict": "ignore",
+      "reason": "model-vs-harness architecture debate; software-engineering register",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Adi-Ignatius",
+      "path": "wiki/entities/Adi-Ignatius.md",
+      "type": "entity",
+      "title": "Adi-Ignatius",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "entities/Harvard-Business-Review",
+          "edge_type": "part-of",
+          "via": "Editor-in-Chief",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: entities/Harvard-Business-Review <--part-of<-- this (1 hop)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005814,
+      "fused_score": 0.312,
+      "verdict": "ignore",
+      "reason": "person entity card (HBR editor), reached via publisher edge",
+      "reason_class": "wrong-granularity",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset",
+      "path": "wiki/sources/2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset.md",
+      "type": "source",
+      "title": "To Thrive Alongside AI, Focus on Mindset—Not Skillset",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge",
+          "edge_type": "supports",
+          "via": "Both put *mindset / taste / experience* above teachable hard skill: Argenti's mindset-over-skillset thesis maps onto Mollick's *taste becomes the most valuable skill of the AI era* and *experience, taste, and point of view are what make you better at using AI, not what AI replaces*.",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner",
+          "edge_type": "supports",
+          "via": "operator→supervisor role shift (Chan: replace yourself at the lower level, move up) + reimagine-not-just-automate (Westerman) ≈ Argenti's 3×-not-20% and operator→supervisor",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge -->supports--> this (1 hop)",
+        "graph: sources/2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005435,
+      "fused_score": 0.312,
+      "verdict": "ignore",
+      "reason": "mindset-not-skillset career-advice essay; not tied to the four facets",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-16-anthropic-economic-index-agentic-coding-returns-to-expertise",
+      "path": "wiki/sources/2026-06-16-anthropic-economic-index-agentic-coding-returns-to-expertise.md",
+      "type": "source",
+      "title": "Agentic coding and persistent returns to expertise",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge",
+          "edge_type": "supports",
+          "via": "Mollick's headline — *young people are NOT 'AI natives'; experience is the real AI advantage* — is the same finding as the AEI's *returns to (domain) expertise persist*, and Mollick cites the *same* underlying mechanism (the BCG study where junior employees were *worse* at using AI because they couldn't judge whether the output was good). Where the AEI measures it from ~400k sessions, Mollick narrates the why: experts know what to expect, can steer, and can evaluate fast.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005376,
+      "fused_score": 0.308,
+      "verdict": "ignore",
+      "reason": "agentic-coding returns-to-expertise labor data",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-19-chou-yc-lightcone-40-year-old-solo-founder",
+      "path": "wiki/sources/2026-06-19-chou-yc-lightcone-40-year-old-solo-founder.md",
+      "type": "source",
+      "title": "The Age of the 40-Year-Old Solo Founder Is Here — Bryant Chou on YC's The Lightcone",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge",
+          "edge_type": "supports",
+          "via": "Same thesis from a founder's chair: Chou's *you need expertise to know what to do with the boundless intelligence in the model* and the *age of the 40-year-old solo founder* (experience + taste as the lever) is the entrepreneurship-side instance of Mollick's *experience beats AI-native youth* and *taste as differentiator*.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005319,
+      "fused_score": 0.305,
+      "verdict": "ignore",
+      "reason": "solo-founder story; unrelated",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why",
+      "path": "wiki/sources/2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why.md",
+      "type": "source",
+      "title": "What AI Can't Do — And Why",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge",
+          "edge_type": "supports",
+          "via": "both locate the human edge in capacities AI doesn't replicate — Mollick's 'taste / experience / point of view'; Guilbeault's 'aesthetic sense / vibes / conceptual leaps.' Guilbeault gives the cognitive-science account beneath Mollick's practitioner claim",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005263,
+      "fused_score": 0.302,
+      "verdict": "ignore",
+      "reason": "its optimizer-vs-satisficer capability-ceiling account is already folded into [[concepts/jagged-frontier]], which is cited directly for facet 4",
+      "reason_class": "redundant",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+      "path": "wiki/sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees.md",
+      "type": "source",
+      "title": "Research: Why You Shouldn't Treat AI Agents Like Employees",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner",
+          "edge_type": "contradicts",
+          "via": "Swift & Chan argue *manage agents like employees* (check output, performance-monitor, lifecycle/end-of-life) vs Kropp/BCG's anti-anthropomorphising thesis that the employee metaphor misassigns accountability — partial: both agree humans stay accountable",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner -->contradicts--> this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-25",
+      "days_since_access": null,
+      "effective_confidence": 0.85,
+      "rrf_score": 0.005208,
+      "fused_score": 0.299,
+      "verdict": "ignore",
+      "reason": "agent-management-style debate (agents vs. employees); not tied to the four facets",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-21-allen-aws-london-exec-forum-agentic-team-structures",
+      "path": "wiki/sources/2026-05-21-allen-aws-london-exec-forum-agentic-team-structures.md",
+      "type": "source",
+      "title": "London Executive Forum 2026 — A leader's guide to advanced team structures in an agentic world",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner",
+          "edge_type": "supports",
+          "via": "humans-on-judgment / agents-on-execution + human-in-loop-at-the-seams; Schrage's in-loop-vs-on-loop sharpens Allen's human-starts-human-ends pattern",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-25",
+      "days_since_access": null,
+      "effective_confidence": 0.8,
+      "rrf_score": 0.005155,
+      "fused_score": 0.289,
+      "verdict": "ignore",
+      "reason": "agentic team-structure/build-vs-rent economics talk",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-11-26-anthropic-effective-harnesses-long-running-agents",
+      "path": "wiki/sources/2025-11-26-anthropic-effective-harnesses-long-running-agents.md",
+      "type": "source",
+      "title": "Effective harnesses for long-running agents",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex",
+          "edge_type": "supports",
+          "via": "Vo's *goal loop* — set a measurable outcome, run the agent against it until validated or blocked — is the product-facing name for the long-running agent Anthropic engineers vendor-side. Vo's warnings (goal loops burn tokens until a too-thin validation criterion is satisfied; precise success criteria are everything) are the practitioner echo of Anthropic's reliability concerns for long-running loops.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004902,
+      "fused_score": 0.281,
+      "verdict": "ignore",
+      "reason": "long-running-agent harness engineering guide",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-02-architecting-ai-native-organizations-redesign-work-at-scale-joe-beutler",
+      "path": "wiki/sources/2026-06-02-architecting-ai-native-organizations-redesign-work-at-scale-joe-beutler.md",
+      "type": "source",
+      "title": "Architecting AI-Native Organizations: How to Redesign Work at Scale — Joe Beutler",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner",
+          "edge_type": "supports",
+          "via": "human oversight at the right places + reimagine workflows for new outcomes (Caldas/Westerman echo Beutler's Ask→Assist→Automate maturity ladder)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": null,
+      "last_confirmed": "2026-06-06",
+      "days_since_access": null,
+      "effective_confidence": 0.75,
+      "rrf_score": 0.005102,
+      "fused_score": 0.28,
+      "verdict": "ignore",
+      "reason": "its Ask→Assist→Automate deployment-maturity ladder is already carried into the wiki via [[syntheses/organizational-frameworks-for-ai-adoption]], cited directly for facet 4",
+      "reason_class": "redundant",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-15-osmani-agent-harness-engineering",
+      "path": "wiki/sources/2026-05-15-osmani-agent-harness-engineering.md",
+      "type": "source",
+      "title": "Agent Harness Engineering",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex",
+          "edge_type": "supports",
+          "via": "Vo explicitly cites Osmani's *loop engineering* article as the best breakdown of what an effective loop needs, and reproduces its five-element checklist (work trees, skills, plugins/connectors, subagents, state). Osmani's *Ralph loop* and Vo's *goal loop* are the same self-prompting-until-done primitive named from the engineer side vs. the product side.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004854,
+      "fused_score": 0.278,
+      "verdict": "ignore",
+      "reason": "harness-engineering ratchet-pattern essay; software-engineering register",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "entities/How-I-AI",
+      "path": "wiki/entities/How-I-AI.md",
+      "type": "entity",
+      "title": "How-I-AI",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex",
+          "edge_type": "published-by",
+          "via": "Claire Vo's solo explainer on the four loop types (heartbeat / cron / hook / goal) and the goal loop as a first-class primitive in Claude Code + Codex (17 Jun 2026)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex <--published-by<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": "2026-06-23",
+      "last_confirmed": "2026-06-23",
+      "days_since_access": 8,
+      "effective_confidence": 0.783,
+      "rrf_score": 0.00495,
+      "fused_score": 0.276,
+      "verdict": "ignore",
+      "reason": "podcast/channel entity card",
+      "reason_class": "wrong-granularity",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-19-lopopolo-ai-native-devcon-harness-engineering",
+      "path": "wiki/sources/2026-06-19-lopopolo-ai-native-devcon-harness-engineering.md",
+      "type": "source",
+      "title": "Ryan Lopopolo — Harness Engineering: How to Build Software When Humans Steer and Agents Execute (AI Native DevCon)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex",
+          "edge_type": "supports",
+          "via": "Two June-2026 practitioner agentic-engineering talks at different altitudes. Lopopolo is engineer-altitude — designing harnesses so agents execute at production scale (~1M LOC, 0 hand-written lines). Vo is product-leader-altitude — making the *self-prompting loop* legible to non-engineers via the four loop types and the onboarding-an-employee framework. Both land the same load-bearing move: the human stops typing each prompt and instead designs the automation that prompts the agent.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004808,
+      "fused_score": 0.276,
+      "verdict": "ignore",
+      "reason": "harness-engineering conference talk",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness",
+      "path": "wiki/sources/2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness.md",
+      "type": "source",
+      "title": "How Mozilla Uses Claude Mythos to find Firefox bugs before hackers do",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex",
+          "edge_type": "supports",
+          "via": "**Same-channel applied worked example of the goal-loop pattern.** Both are How I AI (Claire Vo) episodes; in this one Vo explicitly references her prior loop-taxonomy episode (*'I very recently did an episode on /goal these goal and outcome loops… Ralph loops, all this sort of thing'*). Where [[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex|Vo's loop episode]] makes the *self-prompting goal-loop* legible as a pattern (give an agent a tightly scoped problem + a clear pass/fail signal + let it retry), Grinstead is the **production security instance** at Firefox scale: the analyzer→verifier→patch loop runs against a crystal-clear fuzzing/AddressSanitizer win/lose signal and retries *'far past the point a human would quit'* — *'our cognitive energy declines over time in a way that agents don't.'* Vo names the pattern; Grinstead ships ~500 bugs/month with it.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004762,
+      "fused_score": 0.273,
+      "verdict": "ignore",
+      "reason": "Firefox agentic-security-harness engineering talk",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Pete-Koomen",
+      "path": "wiki/entities/Pete-Koomen.md",
+      "type": "entity",
+      "title": "Pete-Koomen",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "entities/Y-Combinator",
+          "edge_type": "part-of",
+          "via": "General Partner; led the YC-internal AI infrastructure project",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: entities/Y-Combinator <--part-of<-- this (1 hop)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005051,
+      "fused_score": 0.271,
+      "verdict": "ignore",
+      "reason": "person entity card, reached via YC publisher edge",
+      "reason_class": "wrong-granularity",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Sam-Altman",
+      "path": "wiki/entities/Sam-Altman.md",
+      "type": "entity",
+      "title": "Sam-Altman",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "entities/Y-Combinator",
+          "edge_type": "part-of",
+          "via": "President 2014–2019 (predecessor to [[Garry Tan]])",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: entities/Y-Combinator <--part-of<-- this (1 hop)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005,
+      "fused_score": 0.268,
+      "verdict": "ignore",
+      "reason": "person entity card, reached via YC publisher edge",
+      "reason_class": "wrong-granularity",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+      "path": "wiki/sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer.md",
+      "type": "source",
+      "title": "Build core skills to thrive as an AI-era developer",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-07-kiron-schrage-compound-benefits",
+          "edge_type": "supports",
+          "via": "shift-left-on-intent + spec-driven-development + agent-journaling for reflection = engineering-team operationalisation of Kiron-Schrage's *verification → evaluation → learning capture* compounding flywheel; the talk's *'specs combined with the agent rules and skills are the source of truth'* is the SWE-team analogue of Kiron-Schrage's judgment-capture infrastructure",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-07-kiron-schrage-compound-benefits <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": "2026-05-21",
+      "last_confirmed": "2026-05-21",
+      "days_since_access": null,
+      "effective_confidence": 0.8,
+      "rrf_score": 0.004673,
+      "fused_score": 0.262,
+      "verdict": "ignore",
+      "reason": "developer core-skills guidance in the AI era; software-engineering register",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "entities/David-Kiron",
+      "path": "wiki/entities/David-Kiron.md",
+      "type": "entity",
+      "title": "David-Kiron",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-07-kiron-schrage-compound-benefits",
+          "edge_type": "authored-by",
+          "via": null,
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-07-kiron-schrage-compound-benefits <--authored-by<-- this (1 hop)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004717,
+      "fused_score": 0.253,
+      "verdict": "ignore",
+      "reason": "author entity card",
+      "reason_class": "wrong-granularity",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/document-intelligence",
+      "path": "wiki/concepts/document-intelligence.md",
+      "type": "concept",
+      "title": "document-intelligence",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": null,
+      "fused_score": null,
+      "retrieval_reasons": [
+        "found via wiki/index.md fallback — not surfaced by qmd or --hops 1 graph traversal from the seed set"
+      ],
+      "verdict": "use",
+      "reason": "names the extraction-accuracy gate (80-90% generic OCR vs. ~99.x% needed) and grounding-as-trust-primitive that bound any cross-unit-report-aggregation pipeline",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    },
+    {
+      "slug": "sources/2026-05-26-landingai-touchpoint-to-outcome-front-office-processes",
+      "path": "wiki/sources/2026-05-26-landingai-touchpoint-to-outcome-front-office-processes.md",
+      "type": "source",
+      "title": "2026-05-26-landingai-touchpoint-to-outcome-front-office-processes",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": null,
+      "fused_score": null,
+      "retrieval_reasons": [
+        "found via wiki/index.md fallback — not surfaced by qmd or --hops 1 graph traversal from the seed set"
+      ],
+      "verdict": "use",
+      "reason": "concrete extract-validate-orchestrate demo pattern with quantified case (85% faster, 75% efficiency gain) — the nearest wiki analogue to automating manual cross-unit report aggregation",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    },
+    {
+      "slug": "sources/2025-07-31-wang-agentspec-runtime-enforcement-llm-agents",
+      "path": "wiki/sources/2025-07-31-wang-agentspec-runtime-enforcement-llm-agents.md",
+      "type": "source",
+      "title": "2025-07-31-wang-agentspec-runtime-enforcement-llm-agents",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": null,
+      "fused_score": null,
+      "retrieval_reasons": [
+        "found via wiki/index.md fallback — not surfaced by qmd or --hops 1 graph traversal from the seed set"
+      ],
+      "verdict": "use",
+      "reason": "peer-reviewed rule/trigger/check/enforce DSL — the most literal technical instantiation of 'rules of engagement' for AI agents in the wiki",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    },
+    {
+      "slug": "syntheses/organizational-frameworks-for-ai-adoption",
+      "path": "wiki/syntheses/organizational-frameworks-for-ai-adoption.md",
+      "type": "synthesis",
+      "title": "organizational-frameworks-for-ai-adoption",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": null,
+      "fused_score": null,
+      "retrieval_reasons": [
+        "found via wiki/index.md fallback — not surfaced by qmd or --hops 1 graph traversal from the seed set"
+      ],
+      "verdict": "use",
+      "reason": "Ask→Assist→Automate deployment-maturity ladder and 'business owns the outcome, not IT' governance rule — ready-made staging device for a 'start tomorrow' rollout narrative",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    },
+    {
+      "slug": "concepts/jagged-frontier",
+      "path": "wiki/concepts/jagged-frontier.md",
+      "type": "concept",
+      "title": "jagged-frontier",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": null,
+      "fused_score": null,
+      "retrieval_reasons": [
+        "found via wiki/index.md fallback — not surfaced by qmd or --hops 1 graph traversal from the seed set"
+      ],
+      "verdict": "use",
+      "reason": "bounded task-fit framing plus Böckeler's probability×impact×detectability supervision heuristic — a ready-made checklist for calibrating promises to a compliance-minded, rule-following audience",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    }
+  ],
+  "expansions": [
+    {
+      "trigger_facet": "facet 2 (cross-unit aggregation/document intelligence) and facet 3 (explicit standards/rules of engagement) were thin among the top qmd hits — the ledger's top-10 qmd hits skewed toward general software-engineering/harness/labor-market content that shares surface vocabulary with the question but not its substance",
+      "method": "index.md",
+      "added": [
+        "concepts/document-intelligence",
+        "sources/2026-05-26-landingai-touchpoint-to-outcome-front-office-processes",
+        "sources/2025-07-31-wang-agentspec-runtime-enforcement-llm-agents",
+        "syntheses/organizational-frameworks-for-ai-adoption",
+        "concepts/jagged-frontier"
+      ]
+    }
+  ],
+  "answer_map": [
+    {
+      "anchor": "W1",
+      "claim": "Making the object types, properties, relationships, and action-type preconditions of a domain explicit (an ontology) — including a worked Quality/Inspection/Defect example — is the precondition industrial AI agents need to reason reliably; 'traditional databases store records, ontologies model operational reality'",
+      "pages": [
+        "sources/2026-02-01-manditereza-ontology-driven-industrial-ai"
+      ],
+      "span": "TL;DR / Domain examples table"
+    },
+    {
+      "anchor": "W2",
+      "claim": "Philips's CMO names 'data quality and standardization from the get-go' as the top barrier to healthcare AI, and frames AI as adding to (not replacing) clinical judgment",
+      "pages": [
+        "sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care"
+      ],
+      "span": "TL;DR point 6 / 'Recurring Peron frame'"
+    },
+    {
+      "anchor": "W3",
+      "claim": "Luminai's frontline agent triages inbound faxes by urgency, extracts structured data, and routes to the correct hospital department — a direct structural analogue for incident triage",
+      "pages": [
+        "sources/2026-04-09-dinakaran-yc-luminai-automating-americas-biggest-hospitals"
+      ],
+      "span": "Substantive content §1 The Cleveland Clinic worked example"
+    },
+    {
+      "anchor": "W4",
+      "claim": "Generic OCR/extraction tops out at 80-90% accuracy, well below the ~99.x% an agentic pipeline needs before people trust it, and grounding (tying outputs back to source location) is the trust primitive that makes document AI defensible",
+      "pages": [
+        "concepts/document-intelligence"
+      ],
+      "span": "## The accuracy gap / ## Grounding as the trust primitive"
+    },
+    {
+      "anchor": "W5",
+      "claim": "Extraction plus orchestration (normalize inputs, validate, route to systems of record) is what removes manual-aggregation pain in practice, quantified at 85% faster processing and 75% efficiency gain on an insurance case",
+      "pages": [
+        "sources/2026-05-26-landingai-touchpoint-to-outcome-front-office-processes"
+      ],
+      "span": "TL;DR / 'octo-zone' orchestration thesis"
+    },
+    {
+      "anchor": "W6",
+      "claim": "AgentSpec formalizes 'rules of engagement' as a rule/trigger/check/enforce DSL, intercepting >90% of unsafe agent actions at millisecond overhead — a literal, presentable instantiation of the phrase",
+      "pages": [
+        "sources/2025-07-31-wang-agentspec-runtime-enforcement-llm-agents"
+      ],
+      "span": "TL;DR / The DSL"
+    },
+    {
+      "anchor": "W7",
+      "claim": "The Ask → Assist → Automate deployment-maturity ladder (read-only → human-in-the-loop → full autonomy with exceptions routed to humans) and the rule that the business unit, not IT, owns the outcome give a staged, 'start tomorrow' rollout narrative",
+      "pages": [
+        "syntheses/organizational-frameworks-for-ai-adoption"
+      ],
+      "span": "## Findings — decision-tree row 'Deployment maturity'"
+    },
+    {
+      "anchor": "W8",
+      "claim": "AI is reliable inside a bounded, well-specified task and unreliable outside it; Böckeler's probability × impact × detectability heuristic gives a three-question checklist for how much supervision a given task warrants",
+      "pages": [
+        "concepts/jagged-frontier"
+      ],
+      "span": "## Practical implications — probability × impact × detectability"
+    }
+  ],
+  "answer": "See §7 of the Markdown report."
+}
