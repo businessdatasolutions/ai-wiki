@@ -2,13 +2,13 @@
 type: entity
 kind: person
 aliases: ["Addy Osmani", "Addi Osmani", "@addyosmani"]
-tags: [addy-osmani, google-chrome, web-developer-advocate, agent-harness-engineering, oreilly-radar, agentic-engineering-blog, ralph-loop, agents-md, hooks-compaction]
+tags: [addy-osmani, google-chrome, web-developer-advocate, agent-harness-engineering, oreilly-radar, agentic-engineering-blog, ralph-loop, agents-md, hooks-compaction, code-agent-orchestra, agent-teams, factory-model]
 affiliation: "Google (Chrome team)"
 role: "Software engineer at Google working on Chrome; web-developer advocate; prolific blogger on web performance, JavaScript, and (since 2025) AI-assisted software engineering; O'Reilly Radar contributor"
-confidence: 0.82
-last_confirmed: "2026-06-22"
-accessed_at: "2026-06-22"
-source_count: 3
+confidence: 0.85
+last_confirmed: "2026-07-09"
+accessed_at: "2026-07-09"
+source_count: 4
 ---
 
 # Addy Osmani
@@ -21,6 +21,7 @@ Osmani's wiki anchor is **harness engineering as a named discipline** — his [[
 
 ## Appears in this wiki via
 
+- [[2026-03-26-osmani-code-agent-orchestra-multi-agent-coding]] — *The Code Agent Orchestra*, write-up of his O'Reilly AI CodeCon talk (26 Mar 2026) — **chronologically his earliest wiki source**, predating the Agent Harness Engineering article below by seven weeks. Explicitly builds [[Steve Yegge]]'s eight-levels framework into concrete patterns: Subagents vs. Agent Teams vs. a 3-tier orchestration-tool landscape, the **factory model** (Plan/Spawn/Monitor/Verify/Integrate/Retro), the Ralph Loop, and a citable empirical claim (Gloaguen et al., ETH Zurich) that LLM-written AGENTS.md files underperform human-curated ones.
 - [[2026-05-15-osmani-agent-harness-engineering]] — first-party article: *Agent Harness Engineering* on O'Reilly Radar; the wiki's first article-altitude treatment of harness engineering as a named practitioner discipline.
 - [[2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering]] — cited by Everitt as influence on the nine-element agentic-engineering practice taxonomy.
 - [[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex]] — Claire Vo cites Osmani's *loop engineering* article as the best breakdown of what an effective loop needs, reproducing its five-element checklist (work trees, skills, plugins/connectors, subagents, state). Confirms Osmani's *loop/harness engineering* writing as a reference practitioners reach for at the product-leader altitude, not only the engineer altitude.

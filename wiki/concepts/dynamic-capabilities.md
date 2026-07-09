@@ -3,9 +3,9 @@ type: concept
 aliases: ["dynamic capabilities", "dynamic-capabilities", "Teece dynamic capabilities", "sense seize transform"]
 tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, microfoundations]
 confidence: 0.95
-last_confirmed: "2026-07-04"
-accessed_at: "2026-07-04"
-source_count: 12
+last_confirmed: "2026-07-09"
+accessed_at: "2026-07-09"
+source_count: 13
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -147,6 +147,17 @@ Two mechanisms sharpen the microfoundation further:
 - **Fact-based, blame-free culture as the condition that makes fast pivots possible.** "If the facts tell us our product stinks, so be it... there's no fingerpointing" is Bello's articulation of `strategic-renewal/organizational-culture` — structurally the same claim [[2026-06-25-carroll-stanford-gsb-making-organizational-culture-great|Carroll's]] academic culture-as-social-control-system theory predicts, and the same pattern [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook|Erginbilgiç's]] non-digital performance culture exhibits.
 
 Bello also names the **corporate-vs-startup asymmetry** directly: corporate venture builders spend far less time fundraising (the board and leadership already know them) and start with incumbent assets (existing customer base, untapped proprietary data/IP) that independent founders must build from zero — a structural explanation for *why* the portfolio-balancing microfoundation is more affordable for incumbents than for standalone startups attempting the same "multiple shots on goal" strategy.
+
+### Small-team, real-time redesigning-internal-structures — a practitioner's own lived case ([[2026-07-08-foxwell-ai-native-devcon-reinvention-of-the-dev-team|Foxwell / AI Native DevCon 2026]])
+
+Where [[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Dumra/DBS]] supplies `digital-transforming/redesigning-internal-structures` at 39,000-employee banking-incumbent scale over a decade, [[2026-07-08-foxwell-ai-native-devcon-reinvention-of-the-dev-team|Hannah Foxwell's]] talk supplies the **small-team, real-time** instance: her own 2-person startup ran out of planned work by lunch on day one, forcing an immediate structural response (relearning ruthless prioritization, thinking further ahead, and — echoing DBS's mini-CEO pattern at radically smaller scale — most subsequent time going to platform engineering and reliability rather than feature work).
+
+Two mechanisms sharpen the microfoundation:
+
+- **Team-ratio experimentation as the redesign lever.** Some teams trying 2 developers : 1 PM (vs. the traditional 6-8 : 1); Andrew Ng reportedly proposing the *inverse* at Davos (2 PMs : 1 developer), on the logic that decision-making speed, not coding speed, now bounds a single developer's usable backlog. New role patterns — the **vibe-coding product manager**, the **forward-deployed engineer**, the **product engineer** — all reduce the same structural distance between the person who understands the problem and the artifact that solves it.
+- **"Minimum viable human" as a structural floor.** An agent can't hold an on-call pager — sustainable rotation (no one on-call more than 50% of the time, always primary + secondary) sets a hard lower bound on team size independent of how much coding velocity agents supply. A concrete, quantifiable counter-weight to unbounded headcount-reduction narratives.
+
+Foxwell's talk also touches `strategic-renewal/organizational-culture` directly — questioning mandatory code review as unsustainable at AI-authored-code volume, and citing Sophie Weston's "broken comb" (not T-shaped) framing for what career depth should look like when a single generalist now owns more surface area.
 
 ## Debates and supersession
 

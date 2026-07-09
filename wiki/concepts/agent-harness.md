@@ -3,9 +3,9 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.98
-last_confirmed: "2026-07-01"
-accessed_at: "2026-07-01"
-source_count: 70
+last_confirmed: "2026-07-09"
+accessed_at: "2026-07-09"
+source_count: 72
 relationships:
   - type: part-of
     target: ai-agents
@@ -16,8 +16,8 @@ relationships:
   - type: uses
     target: react-reasoning-acting
     via: "the harness operationalises the reason–act–observe loop ReAct (2022) first prompted by hand"
-quality_score: 0.97
-quality_notes: ['1 near-empty section(s)', '1 broken body wikilink(s)']
+quality_score: 0.95
+quality_notes: ['1 near-empty section(s)', '2 broken body wikilink(s)']
 ---
 
 # Agent Harness
@@ -604,6 +604,17 @@ Closing thesis, squarely on the wiki's [[agentic-engineering]] line: *"agentic s
 - **The 94%-PR-rejection self-correction.** Superpowers-the-project was flooded with low-quality "AI slop" pull requests once it went viral. Vincent's fix was iterative: he had Claude review the project's full history of rejected PRs and rewrite the CLAUDE.md/AGENTS.md contributor guidance accordingly — after which the project rejected roughly 94% of incoming PRs, often with a single-line "this is a garbage slop PR" rejection. A concrete, self-reported instance of harness-level guidance (the Constraints/Contracts layer, at the *contribution-acceptance* boundary rather than the coding boundary) closing a quality gap.
 
 This is a **practitioner-management vantage** distinct from the page's existing systems-engineering (Kokane), production-anatomy (Chatterjee), and formal-academic (Karten et al.) vantages — Vincent frames the same harness disciplines (single-mandate separation, adversarial review, iterative constraint-tuning) through an explicit "manage agents like enthusiastic MIT interns" analogy to human team management, rather than through systems-engineering or reliability-engineering vocabulary. Per [[../../CLAUDE.md#lifecycle|Lifecycle rules]] this is a single-source, promotional-podcast-interview account (unquantified beyond the self-reported 94% figure) — it does not lift the page's confidence past its cap; its value is a fourth independent vantage converging on single-mandate separation as a load-bearing harness-design principle, plus the novel "latent space engineering" vocabulary and the adversarial-reviewers-with-stakes refinement.
+
+## The primary-source Gas Town anchor + the conductor-to-orchestrator patterns ([[2026-03-12-oreilly-steve-yegge-wants-you-to-stop-looking-at-your-code|Yegge/O'Reilly]] + [[2026-03-26-osmani-code-agent-orchestra-multi-agent-coding|Osmani, March 2026]])
+
+The page's long-running **Yegge Gas Town** citation cluster (Loukides, Böckeler, Tan/GStack, Tan&Hu/CS153 — all citing his eight-levels-of-coder-evolution framework secondhand) finally gets its **primary source**: [[2026-03-12-oreilly-steve-yegge-wants-you-to-stop-looking-at-your-code|Tim O'Reilly's interview]] transcribes the framework directly from Yegge himself, including the full eight-stage table (transcribed on the source page from the accompanying infographic). [[Steve Yegge]] is promoted to a wiki entity page on this ingest.
+
+[[2026-03-26-osmani-code-agent-orchestra-multi-agent-coding|Addy Osmani's]] companion talk — delivered at the same AI Codecon event 14 days later, explicitly building levels 5-8 into concrete patterns — supplies the wiki's clearest **conductor-to-orchestrator** mental-model statement: pair-programming-with-one-agent (synchronous, your context window is the ceiling) vs. managing an ensemble of asynchronous agents (multiple context windows, you plan and check in periodically). Two named patterns sharpen the harness's coordination-primitives layer:
+
+- **Subagents** (via the Task tool) — a parent decomposes work and spawns focused children, but manages the dependency graph *manually*; no peer messaging, no shared task list. The wiki's simplest documented multi-agent pattern.
+- **Agent Teams** (Claude Code's experimental `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` feature) — adds what subagents lack: a shared task list with automatic dependency-unblocking, peer-to-peer messaging between teammates (bypassing the lead), and file locking. Three-layer architecture (Team Lead → Shared Task List → Teammates, each an independent instance). Reliability refinements: a hard `MAX_ITERATIONS=8` plus forced reflection prompt ("what failed? what specific change would fix it?") substantially cuts stuck agents; a dedicated read-only `@reviewer` teammate (1 per 3-4 builders, auto-triggered on task completion) means the lead only ever sees green-reviewed code — an operational instance of this page's Constraints/Contracts separation, independently arrived at.
+
+Osmani also supplies a **3-tier orchestration-tool taxonomy** (Tier 1 in-process subagents/teams → Tier 2 local orchestrators with dashboards [Conductor, Vibe Kanban, Gastown, Claude Squad, Antigravity] → Tier 3 cloud async [Claude Code Web, Copilot Coding Agent, Jules, Codex Web]) and the **factory model** (Plan → Spawn → Monitor → Verify → Integrate → Retro) as a reusable framing for what "building the harness" actually consists of day to day. A citable empirical claim — Gloaguen et al. (ETH Zurich), that LLM-generated AGENTS.md files offer no benefit and can marginally *reduce* success rates (~3% average, +20% inference cost) vs. a ~4% improvement from human-curated ones — sharpens this page's existing AGENTS.md-as-compounding-memory material with a named study rather than only practitioner anecdote.
 
 ## Related concepts
 

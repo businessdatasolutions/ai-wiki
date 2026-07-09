@@ -10,6 +10,27 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-07-09] ingest | Five-source batch: Steve Yegge / Addy Osmani / a16z / Hannah Foxwell / EMARKETER on agent orchestration, team design, and enterprise SaaS
+
+A user-supervised batch ingest (two YouTube videos + three user-supplied PDFs, the third added mid-conversation after the initial four-source plan was reviewed). All five sources cluster tightly around Steve Yegge's "eight levels of coder evolution" framework and its downstream consequences for harness engineering, team design, and enterprise software strategy.
+
+**Acquire notes:**
+- Both videos required a `--headed` retry after headless `youtube-transcript-skill` fetches hit the known transcript-panel-timeout failure mode (HTTP 400 from `youtubei/v1/get_transcript`). The a16z video (61 min, 1,162 segments) needed the longest retry chain to date: default 30s → 60s retry → `--headed` 60s → `--headed --timeout 120000` (succeeded only on the fourth attempt).
+- Three PDFs converted to markdown via `pdftotext -layout`. None had a self-referential URL embedded as a PDF link annotation (checked via PyMuPDF `page.get_links()`) — all three canonical URLs were verified via WebSearch + WebFetch confirmation (title/author/date match) rather than guessed, per the wiki's citation-discipline rule.
+- The Yegge/O'Reilly article's companion infographic (`raw/assets/image-6.png`, "Steve Yegge's Eight Stages of AI-Assisted Software Development") was transcribed as a markdown table on the source page, since Quartz does not publish `raw/`.
+
+**New source pages** (5): [[2026-03-12-oreilly-steve-yegge-wants-you-to-stop-looking-at-your-code]], [[2026-03-26-osmani-code-agent-orchestra-multi-agent-coding]], [[2026-07-06-sevilla-emarketer-custom-ai-coded-apps-trim-saas-expenses]], [[2026-07-07-sinofsky-amble-a16z-software-in-the-age-of-agents]], [[2026-07-08-foxwell-ai-native-devcon-reinvention-of-the-dev-team]].
+
+**Entities promoted** (4): [[Steve Yegge]] (7th source touching his Gas Town/eight-levels work — one prior source had explicitly flagged him "technically promotable" and deferred); [[Steven Sinofsky]] (2nd mention, now primary guest rather than a single quoted line); [[a16z]] (3rd mention, now as its own publishing channel); [[AI Native Dev]] (2nd source under this channel, same channel-promotion convention as [[Lenny's Podcast]] / [[DeepLearningAI]]). Updated: [[Addy Osmani]] (3→4 sources; the new Code Agent Orchestra source is chronologically his *earliest* wiki-held piece, predating the already-ingested Agent Harness Engineering article by seven weeks).
+
+**Concept updates**: [[concepts/agent-harness|agent-harness]] (70→72 sources; new section resolving the long-running Gas Town secondhand-citation cluster — Loukides, Böckeler, Tan/GStack, Tan&Hu/CS153 — with a primary source, plus Osmani's Subagents/Agent Teams/3-tier-orchestration/factory-model patterns). [[concepts/dynamic-capabilities|dynamic-capabilities]] (12→13 sources; new section — Foxwell's small-team, real-time `redesigning-internal-structures` case as the small-scale counterpart to [[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|DBS's]] decade-long large-incumbent instance).
+
+**Typed relationships filed** (8 `supports` edges): the primary Yegge source to three of its four prior secondhand-citing sources (Böckeler, Tan/GStack, Osmani); Osmani's Code Agent Orchestra to Yegge, to his own later Agent Harness Engineering article, and to Lopopolo's AI Native DevCon talk; the EMARKETER SaaS piece to the a16z episode (small-firm-success vs. enterprise-scale-skepticism — a scope-boundary nuance, not a contradiction); a16z to the EMARKETER piece and to Carroll's organizational-culture material; Foxwell to Yegge (independent framework confirmation), to Lopopolo (same conference, complementary altitudes), and to Dumra/DBS (team-ratio redesign at opposite scales).
+
+**Identity discrepancy flagged, not silently resolved**: the a16z video description credits three speakers (Seema Amble, Steven Sinofsky, Elena Burger), but only two are identifiable in the ASR transcript — Burger is never named. Recorded as an open item on the source page rather than assumed.
+
+`index.md` updated: 5 new Sources bullets inserted at their reverse-chronological position (not appended), 4 new Entities bullets inserted alphabetically. `node scripts/lint-index-completeness.mjs` confirms 0 pages missing after the update (192/192 sources, 139/139 entities).
+
 ## [2026-07-04] refactor | Sources section of index.md switched to newest-first
 
 User preference: after the same-day resort landed Sources oldest-first (alphabetical on the `YYYY-MM-DD` filename prefix = chronological ascending), the user asked for recent-first browsing instead. Flipped the Sources section's sort to reverse-chronological (newest first) — matching `wiki/log.md`'s own reverse-chronological convention since 2026-05-12 (GH #3), so the two catalog surfaces now agree. Entities/Concepts/Syntheses/Threads are untouched (still ascending alphabetical, since those filenames aren't date-prefixed and "recent first" doesn't have the same meaning there).
