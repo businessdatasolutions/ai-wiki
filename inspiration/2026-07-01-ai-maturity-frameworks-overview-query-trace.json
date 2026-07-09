@@ -1,0 +1,250 @@
+{
+  "question": {
+    "original": "Please give me an overview of AI maturity frameworks discussed in the wiki",
+    "restated": "What named AI-maturity / AI-adoption frameworks does the wiki hold, what do they claim, and how do they relate to each other?",
+    "facets": [
+      "Which sources measure AI maturity numerically, with what instrument, and what number do they report?",
+      "What is the wiki's central staged-maturity model (MIT CISR Four Stages), and what does it claim?",
+      "Beyond maturity-as-a-number, what is the full cluster of organizational AI-adoption frameworks the wiki tracks, and where does maturity sit among them?",
+      "Are there well-known maturity frameworks (Gartner, Deloitte) the wiki does not yet cover?"
+    ],
+    "language": "en"
+  },
+  "params": {
+    "seeds": 12,
+    "hops": 1,
+    "k_rrf": 60,
+    "graph_w": 0.5,
+    "conf_floor": 0.6,
+    "today": "2026-07-01"
+  },
+  "graph_available": true,
+  "candidates": [
+    {
+      "slug": "threads/ai-maturity-measurement-comparison",
+      "type": "thread",
+      "qmd_rank": 1,
+      "qmd_score": 0.93,
+      "fused_score": 0.84,
+      "verdict": "use",
+      "reason": "top qmd hit; the dedicated cross-instrument AI-maturity measurement comparison directly answers facet 1 and facet 4",
+      "reason_class": null,
+      "promoted": null
+    },
+    {
+      "slug": "concepts/enterprise-ai-adoption",
+      "type": "concept",
+      "qmd_rank": 2,
+      "qmd_score": 0.44,
+      "fused_score": 0.948,
+      "verdict": "use",
+      "reason": "main concept page carrying the MIT CISR Four Stages table + Four S breakdown and the summary of all lenses",
+      "reason_class": null,
+      "promoted": null
+    },
+    {
+      "slug": "threads/organizational-frameworks-for-ai-adoption",
+      "type": "thread",
+      "qmd_rank": 3,
+      "qmd_score": 0.43,
+      "fused_score": 0.813,
+      "verdict": "ignore",
+      "reason": "closed thread; content superseded in coverage by the synthesis and the concept page (same MIT CISR/Anand-Wu/Cisco/Werner-Le-Brun comparison, more detail elsewhere)",
+      "reason_class": "redundant",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-28-reitz-higgins-spacious-thinking",
+      "type": "source",
+      "qmd_rank": 4,
+      "qmd_score": 0.4,
+      "fused_score": 0.896,
+      "verdict": "ignore",
+      "reason": "leadership attention/spacious-thinking piece, no maturity-framework content",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/agent-harness",
+      "type": "concept",
+      "qmd_rank": 5,
+      "qmd_score": 0.37,
+      "fused_score": 0.931,
+      "verdict": "ignore",
+      "reason": "runtime-engineering concept, different lens from organizational maturity; pulled in by vector proximity on 'framework'",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "syntheses/organizational-frameworks-for-ai-adoption",
+      "type": "synthesis",
+      "qmd_rank": 6,
+      "qmd_score": 0.37,
+      "fused_score": 0.887,
+      "verdict": "use",
+      "reason": "the 11-framework layered synthesis with decision tree and cross-framework agreements/disagreements",
+      "reason_class": null,
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-28-mittri-cisco-ai-enabled-enterprise",
+      "type": "source",
+      "qmd_rank": 7,
+      "qmd_score": 0.36,
+      "fused_score": 0.856,
+      "verdict": "ignore",
+      "reason": "Cisco's 5 Foundations readiness framework already summarized in both USE'd pages",
+      "reason_class": "redundant",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-06-27-guthrie-braintrust-evals-101-ai-engineer-worlds-fair",
+      "type": "source",
+      "qmd_rank": 8,
+      "qmd_score": 0.36,
+      "fused_score": 0.843,
+      "verdict": "ignore",
+      "reason": "LLM eval tooling, not an org-maturity framework",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-21-bender-google-io-software-engineering-tipping-point",
+      "type": "source",
+      "qmd_rank": 9,
+      "qmd_score": 0.35,
+      "fused_score": 0.831,
+      "verdict": "ignore",
+      "reason": "software-engineering-with-AI talk, no maturity-model content",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-13-jha-emergent-democratizing-app-building-with-claude",
+      "type": "source",
+      "qmd_rank": 10,
+      "qmd_score": 0.35,
+      "fused_score": 0.767,
+      "verdict": "ignore",
+      "reason": "startup founder interview; adoption-velocity anecdote, not a maturity framework",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/founder-led-sales",
+      "type": "concept",
+      "qmd_rank": 11,
+      "qmd_score": 0.35,
+      "fused_score": 0.773,
+      "verdict": "ignore",
+      "reason": "sales-motion concept, reached only via a supports edge",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/automation-vs-augmentation",
+      "type": "concept",
+      "qmd_rank": null,
+      "fused_score": 0.47,
+      "verdict": "ignore",
+      "reason": "adjacent per-task deployment distinction cited by several frameworks, but not itself a maturity/adoption framework",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/ai-employment-effects",
+      "type": "concept",
+      "qmd_rank": null,
+      "fused_score": 0.46,
+      "verdict": "ignore",
+      "reason": "downstream employment-impact concept, not a maturity framework",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/jagged-frontier",
+      "type": "concept",
+      "qmd_rank": null,
+      "fused_score": 0.449,
+      "verdict": "ignore",
+      "reason": "task-capability-variance concept, adjacent but not a framework",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/dynamic-capabilities",
+      "type": "concept",
+      "qmd_rank": null,
+      "fused_score": 0.446,
+      "verdict": "ignore",
+      "reason": "academic strategy-theory bridge the frameworks don't directly engage with; not itself one of the discussed maturity frameworks",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/micro-productivity-trap",
+      "type": "concept",
+      "qmd_rank": null,
+      "fused_score": 0.446,
+      "verdict": "ignore",
+      "reason": "named failure mode several frameworks target, not itself a framework",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas",
+      "type": "source",
+      "qmd_rank": null,
+      "fused_score": 0.422,
+      "verdict": "ignore",
+      "reason": "macro AI-investment scale data (MGI), not an organizational maturity model",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "bulk:~65 further graph-only candidates from the agent-harness/agentic-engineering/RAG cluster",
+      "type": "mixed",
+      "qmd_rank": null,
+      "fused_score": null,
+      "verdict": "ignore",
+      "reason": "reached exclusively via 1-hop graph traversal from the concepts/agent-harness seed (agentic-engineering, RAG, knowledge-graph, harness-benchmark cluster); none address organizational AI-maturity measurement or adoption frameworks; verified by scanning all 81 retrieval_reasons/graph[].via fields for a missed maturity claim",
+      "reason_class": "off-facet",
+      "promoted": null
+    }
+  ],
+  "expansions": [],
+  "answer_map": [
+    {
+      "anchor": "W1",
+      "claim": "MIT CISR's Four Stages of AI Maturity (Experiment 28% / Pilots 34% / Ways of Working 31% / Future-ready 7%), plus the Four S diagnostic (Strategy/Systems/Synchronization/Stewardship) for the Stage 2->3 transition",
+      "pages": ["concepts/enterprise-ai-adoption"],
+      "span": "## The MIT CISR Four Stages of Enterprise AI Maturity"
+    },
+    {
+      "anchor": "W2",
+      "claim": "Four independent maturity/readiness instruments (AI Index 1% mature, MIT CISR 7% Stage 4, Cisco 13% ready, Werner-Le-Brun 12% transformation-success) measure different things but converge on 'success is rare'; methodological caveats on sample age and definition mismatch",
+      "pages": ["threads/ai-maturity-measurement-comparison"],
+      "span": "## What we know so far / Updated cross-walk"
+    },
+    {
+      "anchor": "W3",
+      "claim": "The wiki tracks 11 organizational AI-adoption frameworks as complementary layers with a decision tree mapping executive questions to frameworks",
+      "pages": ["syntheses/organizational-frameworks-for-ai-adoption"],
+      "span": "## Findings — The frameworks operate on different layers / A decision tree"
+    },
+    {
+      "anchor": "W4",
+      "claim": "Cross-framework agreement: adoption breadth (78-88%) vastly exceeds maturity depth (1-15% across five to seven instruments)",
+      "pages": ["concepts/enterprise-ai-adoption", "syntheses/organizational-frameworks-for-ai-adoption"],
+      "span": "## Working definition (closing paragraph) / ### Cross-framework agreement"
+    },
+    {
+      "anchor": "W5",
+      "claim": "Gartner's and Deloitte's named AI-maturity models are explicitly flagged in the wiki as not yet ingested",
+      "pages": ["threads/ai-maturity-measurement-comparison"],
+      "span": "## What's missing / candidate sources to find"
+    }
+  ],
+  "answer": "The wiki does not hold a single 'AI maturity framework' page — it holds a cluster of frameworks and a cross-instrument measurement comparison, tracked across one concept page, one synthesis, and one open thread. The core staged-maturity model is MIT CISR's Four Stages of AI Maturity: Experiment and prepare (28%, 2022 baseline) -> Build pilots and capabilities (34%) -> Develop AI ways of working (31%) -> Become AI future-ready (7%) [W1]. The financial inflection point sits at the Stage 2->3 transition; MIT CISR names four organizational blockers — Strategy, Systems, Synchronization, Stewardship [W1]. Four to seven other instruments measure 'maturity' differently: AI Index/McKinsey pegs 1% of C-suite executives as calling their GenAI rollout mature; MIT CISR pegs 7% at Stage 4; Cisco's 2025 readiness survey pegs 13% as ready; Werner-Le-Brun's general-transformation study finds 12% show sustained gains [W2]. Beyond staged maturity, the wiki tracks ten further organizational-AI-adoption frameworks, synthesized as mostly-complementary lenses on different decision layers: org-design (Tin Man vs Octopus), readiness (Cisco 5 Foundations), organizational learning (Augmented Learners 2x2), transformation playbook (McKinsey Rewired), firm-boundary (Nishar-Nohria), trap-escape (Bain/OpenAI), task deployment (Anand-Wu 2x2), deployment maturity (Beutler's Ask->Assist->Automate), runtime engineering (agent-harness stack), plus Carucci's cross-cutting resistance-as-data lens [W3]. The one number every instrument agrees on: adoption breadth is high (78-88%) while maturity/readiness depth clusters tightly at 7-15% across five to seven independent instruments [W4]. A documented gap: the wiki explicitly notes it does not yet cover Gartner's AI maturity model or Deloitte's State of AI in the Enterprise [W5].",
+  "generated_at": "2026-07-01T19:58:01.273Z"
+}
