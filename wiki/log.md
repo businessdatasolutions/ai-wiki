@@ -10,6 +10,18 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-07-14] ingest | Autor & Thompson's "Expertise" (NBER, June 2025) + the accompanying Thompson TEDxBoston talk
+
+A user-supplied PDF (`raw/papers/w33941.pdf`, landed 2026-07-12 without same-session processing) plus a user-supplied YouTube URL, processed together as a paired paper + popularization.
+
+**[[2025-06-01-autor-thompson-expertise]]** — David Autor & Neil Thompson's NBER working paper (No. 33941, June 2025; delivered as the 2024 EEA Schumpeter Lecture). Pre-flight: 74-page PDF, complete References + Appendix present, no truncation; converted via `pdftotext -layout`. Formalizes an **expertise framework**: occupations bundle tasks of differing expertise on a rankable hierarchy; automation removing an occupation's *inexpert* tasks raises the remaining bundle's expertise (wages↑, employment↓); removing *expert* tasks lowers it (wages↓, employment↑). Tested against four decades of U.S. occupational data — expertise change, not task quantity, predicts wage change; employment moves opposite to wages on the expertise axis. Resolves the standing puzzle of why routine-task automation lowered employment but often raised wages in routine-intensive occupations.
+
+**[[2026-07-10-thompson-tedxboston-how-ai-will-reshape-jobs]]** — Neil Thompson's TEDxBoston talk (10 Jul 2026, ~11:11), the paper's general-audience companion. Same taxi-driver-vs-proofreader worked pair; adds a forward-looking layer absent from the paper — LLM task-evaluation data (Thompson's FutureTech lab, BLS task database) showing "emphatically partial automation" and a flat-but-churning expertise-change-vs-wage relationship across the income distribution.
+
+**Neighbour-source scan** (2 candidates surfaced, both accepted): [[2026-05-21-jones-stanford-gsb-ai-and-our-economic-future|Jones]] (`supports`, reciprocal — Jones's macro *weak-links* model and Autor-Thompson's micro *expertise-hierarchy* model are independent formalizations of the same partial-automation-raises-wages mechanism) and [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson Canaries]] (`supports`, reciprocal — the expertise framework supplies the theoretical mechanism behind Brynjolfsson's empirical codified-vs-tacit-knowledge finding). No `dynamic_capabilities:` tags on either source — both are macro/occupational labor economics, outside the Warner & Wäger digital-transformation lens.
+
+**Cross-cutting updates**: [[concepts/ai-employment-effects|ai-employment-effects]] (57→59 sources; new "The expertise framework" section). **Created** [[Neil Thompson]] entity (2nd-source promotion — triggered within this ingest, since both the paper and the talk cite him). Dangling (single-source, deferred): David Autor.
+
 ## [2026-07-09] ingest | Priest/PwC (June 2026) + Catlin/McKinsey (July 2026) on agent task limits, the hourglass organization, and reinvention-over-productivity
 
 Two YouTube video sources ingested from user-supplied links (a third link, `kzAjzKCZAXs`, resolved to *The Serial Builder Advantage* — already in the wiki as [[2026-07-01-bello-mckinsey-podcast-serial-builder-advantage]] — and was skipped as a duplicate).

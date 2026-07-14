@@ -30,6 +30,9 @@ relationships:
   - type: contradicts
     target: 2026-04-23-tan-yc-how-to-make-claude-code-your-ai-engineering-team-gstack
     via: "**Productive disagreement on the *thousandx-engineer* claim.** Tan's stage assertion (worker can do *500-to-1000 people*'s work; *all current expectations are a thousandx wrong*) is rhetorically compelling but Jones's weak-links framing makes it mathematically falsifiable: *infinite amounts of some task raises GDP by that task's share of GDP* — software is ~2% of GDP, so infinite software is 2% richer, not 1000× more productive. Jones's worked example (we have 100M× transistors in our pocket but are 2–3× more productive at research, not 100M× — *limited by other weak links*) is the wiki's clearest theoretical counter to *naïve productivity-multiplier framings* of AI tooling. Both Tan and Jones are right at different altitudes: Tan describes what one founder-engineer can do today with current tooling; Jones describes what that means for aggregate economic growth (much less than 1000× because the chain is only as strong as its weakest link). The wiki carries the productive contradiction."
+  - type: supports
+    target: 2025-06-01-autor-thompson-expertise
+    via: "**Two independent formalizations of the same partial-automation-raises-wages mechanism**, at different altitudes. Jones's *weak-links* model is macro/growth-theoretic (jobs are generic task bundles; automating 75% of them makes the remaining 25% scarce; GDP grows only by the automated share's share of GDP). Autor & Thompson's *expertise framework* is micro/occupational (a rankable expertise hierarchy over bundled tasks, empirically tested against four decades of U.S. occupational data). Jones's radiologist anecdote (Hinton 2016 prediction vs. 2026 reality) and Autor-Thompson's taxi-driver/proofreader pair are the wiki's two sharpest worked examples of why automating tasks does not equal eliminating jobs or lowering wages."
 ---
 
 # Jones — "A.I. and Our Economic Future" (Stanford GSB Spring Reunions, 1 May 2026)
@@ -88,6 +91,8 @@ Both are plausible; the truth is *between* the two.
 - *"Jobs are bundles of tasks. There are a hundred different tasks that you do in your job. When the AI automates 75 of them, well, the weak links are the things that are now scarce and get the high return."*
 - *"On the other hand, if you're betting on Uber drivers 10 years from now, I think there's a good chance we won't have Uber drivers. The Waymo, the self-driving cars are really automating everything that an Uber driver does."* (Note: Jones flags the parallel to Hinton's overconfidence — *"I'm going to sound like Jeff Hinton in 10 years when we still have Uber drivers"*.)
 - *"The first self-driving car competition, DARPA had a competition in 2004. Carnegie Mellon, Stanford, other teams entered. No one won. 2005, Stanford wins, Sebastian Thrun. We're more than 20 years later, and yeah, in San Francisco you could take a self-driving car, but they're very rare outside of the Bay Area. The weak-link view tells you things take a lot longer than you think."*
+
+Jones's radiologist anecdote is the macro/anecdotal counterpart to [[2025-06-01-autor-thompson-expertise|Autor & Thompson's]] rigorously-tested **expertise framework** — both predict that automating a subset of an occupation's tasks raises wages for the workers retained in the un-automated (here: "weak-link") remainder, but Autor-Thompson formalize *which* tasks matter (expert vs. inexpert, not just automated vs. not) and test the prediction against four decades of U.S. occupational data rather than a single worked example.
 
 **The catastrophic-risk corollary of weak-links** (~38:46–40:55) — the talk's most distinctive contribution to the wiki:
 

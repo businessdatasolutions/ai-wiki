@@ -11,6 +11,10 @@ date_published: 2025-08-26
 date_ingested: 2026-04-28
 tags: [employment, labor-market, automation, augmentation, generative-ai, brynjolfsson, stanford-digital-economy-lab, working-paper, ADP-payroll-data]
 length: "20 pages read; 25+ pages total"
+relationships:
+  - type: supports
+    target: 2025-06-01-autor-thompson-expertise
+    via: "Autor & Thompson's expertise framework supplies the theoretical mechanism behind this paper's empirical codified-vs-tacit-knowledge finding — codified, procedural task content is disproportionately the *inexpert* task content the expertise framework predicts automates first and depresses wages for the workers left holding it, matching why young workers (who supply relatively more codified than tacit knowledge) face greater task replacement here"
 ---
 
 # Brynjolfsson, Chandar & Chen — Canaries in the Coal Mine?
@@ -79,6 +83,8 @@ This directly maps to [[automation-vs-augmentation]] as a conceptual distinction
 ## Theoretical mechanism (introduction)
 
 > "AI replaces codified knowledge — the 'book-learning' that forms the core of formal education. AI may be less capable of replacing tacit knowledge, the idiosyncratic tips and tricks that accumulate with experience. As young workers supply relatively more codified knowledge than tacit knowledge, they may face greater task replacement from AI in exposed occupations, leading to greater employment reallocation."
+
+This codified-vs-tacit intuition has a formal theoretical counterpart in [[2025-06-01-autor-thompson-expertise|Autor & Thompson's expertise framework]]: codified, procedural task content maps closely to what that paper calls *inexpert* tasks (the ones automation removes first, lowering wages for the workers left holding the residual bundle), while tacit, judgment-heavy task content maps to *expert* tasks (whose removal instead raises the residual bundle's average expertise, and its wage).
 
 Cites [[Daron Acemoglu|Acemoglu]] & [[David Autor|Autor]] (2011) for the canonical task-replacement framework. The codified-vs-tacit distinction echoes [[2026-04-28-anand-wu-genai-playbook|Anand-Wu's]] explicit-vs-tacit knowledge axis in their 2×2 framework — strong cross-source convergence on the same conceptual cut.
 

@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-07-09"
-accessed_at: "2026-07-09"
-source_count: 57
+last_confirmed: "2026-07-14"
+accessed_at: "2026-07-14"
+source_count: 59
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -441,6 +441,30 @@ Two contributions distinct from the page's empirical anchors:
 - **Labor-market opacity + Global-South equity framing.** Raman names the pre-AI labor market as already *"one of the least efficient, least dynamic, least transparent markets humans have ever created"* — most hiring runs on guesswork and pedigree signals, a baseline dysfunction independent of AI. His equity argument: unlike prior general-purpose technologies, which diffused *"top down, over years"* before reaching workers, AI is unfolding *"bottoms up, middle out, overnight"* — a structural opportunity *if* paired with (a) radical transparency about what's happening and (b) broad adoption, especially in the Global South, where Microsoft president **Brad Smith**'s electricity-access cautionary tale (large parts of the world still lack electricity, and were correspondingly locked out of the growth it enabled) is invoked as the risk case. This is a popular-press restatement of the **social-permission** thread [[2026-06-05-nadella-hoffman-possible-ai-future-of-the-firm|Nadella]] names elsewhere on this page, applied at global rather than domestic-workforce scale.
 
 Per [Lifecycle rules](../../CLAUDE.md#lifecycle) this is a single-source, promotional-book interview — it does not lift the page's confidence past its 0.95 ceiling. Its value is a named addition to the lump-of-labor cluster (Jensen Huang) and an individual-identity vantage the page's occupation-level data doesn't otherwise carry.
+
+## The expertise framework: task bundling explains divergent wage/employment effects ([[2025-06-01-autor-thompson-expertise|Autor & Thompson 2025]] + [[2026-07-10-thompson-tedxboston-how-ai-will-reshape-jobs|Thompson TEDxBoston 2026]])
+
+The wiki's first **rigorous academic theoretical model** for a pattern this page has documented empirically but not explained: automation can raise wages in some occupations and lower them in others, even at similar levels of automation exposure. [[2025-06-01-autor-thompson-expertise|Autor & Thompson's NBER working paper]] ("Expertise," delivered as the 2024 EEA Schumpeter Lecture) supplies the mechanism, formalized on two pillars:
+
+- **Expertise** — a worker's capability to perform specific tasks, hierarchical and rankable: a higher-expertise worker can always perform a lower-expertise task, never the reverse. Expertise is both a wage premium and a barrier to entry.
+- **Occupational task bundling** — every worker in an occupation must perform *all* of that occupation's bundled tasks, and those tasks differ in expertise level. Some are the occupation's *expert* tasks, others its *inexpert* tasks.
+
+**The prediction**: automation that removes an occupation's *inexpert* tasks raises the expertise required for what remains — **wages rise, employment falls** (fewer workers qualify). Automation that removes an occupation's *expert* tasks lowers the expertise required for what remains — **wages fall, employment rises** (more workers now qualify). Direction is set by *which* tasks are automated, not by *how much* automation occurs — the paper's canonical contrast is **accounting clerks vs. inventory clerks**, both extensively and similarly computerized, predicted (and confirmed) to move in *opposite* wage/employment directions because their non-automated task residues differ in expertise.
+
+**The taxi-driver / proofreader worked pair** — the [[2026-07-10-thompson-tedxboston-how-ai-will-reshape-jobs|TEDx talk's]] central illustration and the sharpest intuition-builder in the wiki's automation-wage literature:
+
+| Occupation | Task automated | Expertise direction | Wage effect | Employment effect |
+|---|---|---|---|---|
+| Taxi drivers | GPS replaces street-memorization (London's "the Knowledge" — a 2-year study regime) | Most-expert task removed → remaining task (driving) is low-expertise | Wages grew **more slowly** than the economy | Employment **surged** (the Uber expansion) |
+| Proofreaders | Spellcheck replaces typo-catching | Least-expert task removed → remaining task (argument structure, evidence quality) is high-expertise | Wages grew **significantly faster** than the economy | Employment **fell** (fewer proofreaders needed) |
+
+Same automation-exposure logic, opposite expertise direction, opposite labor-market outcome — the cleanest falsifiable worked example in the wiki's automation-wage corpus, and directly generalizable: Thompson names AI automating part of medicine (freeing nurses to do work doctors previously did) as a live instance of the *inexpert-task-removed → employment expands, accessibility widens* branch.
+
+**The empirical test**: a novel content-agnostic method (grounded in the Efficient Coding Hypothesis) measures task expertise from job-task text; a longitudinal word-embedding method tracks which tasks were added/removed from occupations across four decades (1980s–2020s) without requiring consistent task descriptions over time. Result: changes in occupational expertise **strongly predict** changes in occupational wages, independent of the raw *quantity* of tasks added or removed — and **employment moves opposite to wages** on the expertise axis (rising-expertise occupations see falling employment *despite* rising wages; falling-expertise occupations see rising employment *despite* falling wages). Applied to the historical routine-task-automation literature, this **resolves a standing puzzle**: routine automation has lowered employment but often raised wages in routine-intensive occupations, because it bifurcates by whether the routine tasks removed were relatively expert or inexpert within their occupation.
+
+**The forward-looking layer (TEDx talk only)**: Thompson's FutureTech lab benchmarked current LLMs against the BLS task database across "tens of thousands of evaluations" — about a third of tasks aren't LLM-attemptable at all (physical tasks); of the rest, results split between clearly sub-human and human-or-better. Mapping addressable tasks onto occupations shows **"emphatically partial automation"** — most occupations have *some* addressable tasks, very few have *most or all*. Projecting predicted AI-driven expertise change against occupational mean wage shows a **remarkably flat relationship across the income distribution** (evidence against a single "AI decimates white-collar professionals" narrative) but **substantial churn within every income band** — some occupations gain expertise requirements (wages likely rise, headcount likely falls), others lose them (wages likely fall, headcount likely rises), at similar rates regardless of income level.
+
+**Relation to the wiki's existing theoretical anchors**: complements rather than duplicates [[2026-05-21-jones-stanford-gsb-ai-and-our-economic-future|Jones's weak-links model]] — both predict that partial automation raises wages for workers in the un-automated remainder, but Jones's version is macro/growth-theoretic (generic task bundles, aggregate GDP-share accounting) while Autor-Thompson's is micro/occupational (a rankable expertise hierarchy, empirically tested against four decades of task-level data). It also supplies the **theoretical mechanism** underlying [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson et al.'s]] codified-vs-tacit-knowledge finding (§ above): codified, procedural task content is disproportionately *inexpert* and automates first; tacit, judgment-heavy task content is disproportionately *expert* — young workers, who supply relatively more codified than tacit knowledge, are correspondingly overrepresented in the inexpert-task-removed / wage-stagnant-or-falling branch of the expertise framework.
 
 ## Debates and supersession
 
