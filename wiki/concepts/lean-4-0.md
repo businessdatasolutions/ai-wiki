@@ -4,7 +4,7 @@ aliases: ["Lean 4.0", "lean-4-0", "Lean Manufacturing 4.0"]
 tags: [lean-4-0, lean-manufacturing, industry-4-0, smart-manufacturing, ai-in-manufacturing]
 confidence: 0.70
 last_confirmed: "2026-04-28"
-accessed_at: "2026-04-28"
+accessed_at: "2026-07-11"
 source_count: 3
 relationships:
   - type: part-of

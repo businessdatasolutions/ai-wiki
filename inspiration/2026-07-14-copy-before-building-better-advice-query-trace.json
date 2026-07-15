@@ -1,0 +1,347 @@
+{
+  "question": {
+    "original": "There was an advice on first copying something that exists before building something better. What source was that?",
+    "restated": "Which wiki source carries the advice to first replicate something already proven in the market before attempting to build a better version?",
+    "facets": [
+      "Identify the source.",
+      "Reconstruct the advice's exact framing and wording.",
+      "Check whether any adjacent wiki source gives comparable copy-first guidance, so the identification is unique."
+    ],
+    "language": "en"
+  },
+  "retrieval_query": "advice to first copy or replicate something that already exists before building something better",
+  "params": {
+    "seeds": 12,
+    "hops": 1,
+    "k_rrf": 60,
+    "graph_w": 0.5,
+    "conf_floor": 0.6,
+    "today": "2026-07-14"
+  },
+  "graph_available": true,
+  "graph_warning": null,
+  "qmd_hit_count": 11,
+  "candidate_count": 45,
+  "candidates": [
+    {
+      "slug": "sources/2026-06-14-pincus-lennys-podcast-hidden-pattern-behind-successful-products",
+      "path": "wiki/sources/2026-06-14-pincus-lennys-podcast-hidden-pattern-behind-successful-products.md",
+      "type": "source",
+      "title": "The hidden pattern behind successful products | Mark Pincus (FarmVille, Words with Friends, & more)",
+      "qmd_rank": 3,
+      "qmd_score": 0.37,
+      "effective_confidence": null,
+      "fused_score": 0.91,
+      "verdict": "use",
+      "reason": "The answer. TL;DR carries the 'Proven, Better, New' framework verbatim: earn the right to innovate by first copying something already validated in the market.",
+      "reason_class": null,
+      "promoted": null
+    },
+    {
+      "slug": "concepts/strategy",
+      "path": "wiki/concepts/strategy.md",
+      "type": "concept",
+      "title": "strategy",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "effective_confidence": 0.98,
+      "fused_score": null,
+      "verdict": "use",
+      "reason": "Concept-level home of the framework ('Earning the right to innovate'); not in the ledger, found by the Step-5 lexical sweep.",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    },
+    {
+      "slug": "sources/2026-04-26-how-to-win-when-software-is-not-a-moat-evan-spiegel-snapchat-ceo",
+      "path": "wiki/sources/2026-04-26-how-to-win-when-software-is-not-a-moat-evan-spiegel-snapchat-ceo.md",
+      "type": "source",
+      "title": "How to win when software is not a moat — Evan Spiegel (Snapchat CEO)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "effective_confidence": null,
+      "fused_score": null,
+      "verdict": "use",
+      "reason": "Closes facet 3 — the corpus's other copying-heavy source, but treats cloning as a threat to defend against, confirming the Pincus identification is unique.",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    },
+    {
+      "slug": "sources/2025-07-02-joshi-venkatraman-fowler-expert-generalists",
+      "path": "wiki/sources/2025-07-02-joshi-venkatraman-fowler-expert-generalists.md",
+      "type": "source",
+      "title": "Expert Generalists",
+      "qmd_rank": 2,
+      "qmd_score": 0.5,
+      "effective_confidence": null,
+      "fused_score": 0.925,
+      "verdict": "ignore",
+      "reason": "Highest fused score of the run, but about fundamentals-over-framework-expertise; no imitation-strategy claim.",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering",
+      "path": "wiki/sources/2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering.md",
+      "type": "source",
+      "title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering",
+      "qmd_rank": 1,
+      "qmd_score": 0.88,
+      "effective_confidence": 0.8,
+      "fused_score": 0.92,
+      "verdict": "ignore",
+      "reason": "Top qmd hit but contains no copy-then-improve advice; the run's clearest false positive.",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-12-techlatest-hacker-search-engines-osint-tools-2026",
+      "path": "wiki/sources/2026-05-12-techlatest-hacker-search-engines-osint-tools-2026.md",
+      "type": "source",
+      "title": "The Ultimate Guide to Hacker Search Engines & OSINT Tools in 2026",
+      "qmd_rank": 5,
+      "qmd_score": 0.34,
+      "effective_confidence": null,
+      "fused_score": 0.882,
+      "verdict": "ignore",
+      "reason": "OSINT tooling guide; pure vector proximity.",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business",
+      "path": "wiki/sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business.md",
+      "type": "source",
+      "title": "How AI Agents Are Changing Business - PwC Chief AI Officer Dan Priest",
+      "qmd_rank": 6,
+      "qmd_score": 0.33,
+      "effective_confidence": null,
+      "fused_score": 0.869,
+      "verdict": "ignore",
+      "reason": "Enterprise agent adoption; no imitation-strategy claim.",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-27-surrealdb-knowledge-graphs-for-ai-agents-practical-guide",
+      "path": "wiki/sources/2026-04-27-surrealdb-knowledge-graphs-for-ai-agents-practical-guide.md",
+      "type": "source",
+      "title": "Knowledge Graphs for AI Agents (A Practical Guide)",
+      "qmd_rank": 8,
+      "qmd_score": 0.33,
+      "effective_confidence": null,
+      "fused_score": 0.843,
+      "verdict": "ignore",
+      "reason": "Knowledge-graph engineering guide; unrelated to the facets.",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-02-11-lopopolo-codex-harness-engineering",
+      "path": "wiki/sources/2026-02-11-lopopolo-codex-harness-engineering.md",
+      "type": "source",
+      "title": "Harness engineering: leveraging Codex in an agent-first world",
+      "qmd_rank": 9,
+      "qmd_score": 0.33,
+      "effective_confidence": null,
+      "fused_score": 0.831,
+      "verdict": "ignore",
+      "reason": "Codex harness engineering; unrelated to the facets.",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2019-12-19-warner-wager-2019-dynamic-capabilities-digital-transformation",
+      "path": "wiki/sources/2019-12-19-warner-wager-2019-dynamic-capabilities-digital-transformation.md",
+      "type": "source",
+      "title": "Building dynamic capabilities for digital transformation",
+      "qmd_rank": 11,
+      "qmd_score": 0.32,
+      "effective_confidence": null,
+      "fused_score": 0.808,
+      "verdict": "ignore",
+      "reason": "Matches on 'replicate' in the competitor-imitability sense, not advice to copy.",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-07-kiron-schrage-compound-benefits",
+      "path": "wiki/sources/2026-05-07-kiron-schrage-compound-benefits.md",
+      "type": "source",
+      "title": "How to Reap Compound Benefits From Generative AI",
+      "qmd_rank": 10,
+      "qmd_score": 0.33,
+      "effective_confidence": 0.8,
+      "fused_score": 0.802,
+      "verdict": "ignore",
+      "reason": "GenAI compounding-benefits flywheel; off every facet.",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/cmr-framework",
+      "path": "wiki/concepts/cmr-framework.md",
+      "type": "concept",
+      "title": "CMR framework (Capability–Market–Risk)",
+      "qmd_rank": 7,
+      "qmd_score": 0.33,
+      "effective_confidence": null,
+      "fused_score": 0.801,
+      "verdict": "ignore",
+      "reason": "Capability–Market–Risk framework; unrelated.",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/osint",
+      "path": "wiki/concepts/osint.md",
+      "type": "concept",
+      "title": "OSINT (Open-Source Intelligence)",
+      "qmd_rank": 4,
+      "qmd_score": 0.35,
+      "effective_confidence": 0.398,
+      "fused_score": 0.724,
+      "verdict": "ignore",
+      "reason": "effConf 0.398 (57 days unread) and off-facet besides; no facet needs it.",
+      "reason_class": "decayed",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-01-09-baron-signals-for-2026",
+      "path": "wiki/sources/2026-01-09-baron-signals-for-2026.md",
+      "type": "source",
+      "title": "Signals for 2026",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "effective_confidence": null,
+      "fused_score": 0.455,
+      "verdict": "ignore",
+      "reason": "Graph-only from the Karpathy seed; no facet need.",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-11-nodus-labs-fix-karpathys-llm-wiki-knowledge-graph-infranodus",
+      "path": "wiki/sources/2026-04-11-nodus-labs-fix-karpathys-llm-wiki-knowledge-graph-infranodus.md",
+      "type": "source",
+      "title": "Fix Karpathy's LLM Wiki with a Knowledge Graph",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "effective_confidence": null,
+      "fused_score": 0.448,
+      "verdict": "ignore",
+      "reason": "Graph-only; about LLM-wiki tooling.",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Andrej-Karpathy",
+      "path": "wiki/entities/Andrej-Karpathy.md",
+      "type": "entity",
+      "title": "Andrej-Karpathy",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "effective_confidence": null,
+      "fused_score": 0.44,
+      "verdict": "ignore",
+      "reason": "Entity card reached by an authored-by edge; the facets need a claim, not an identity.",
+      "reason_class": "wrong-granularity",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Sequoia-Capital",
+      "path": "wiki/entities/Sequoia-Capital.md",
+      "type": "entity",
+      "title": "Sequoia-Capital",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "effective_confidence": null,
+      "fused_score": 0.433,
+      "verdict": "ignore",
+      "reason": "Entity card reached by a published-by edge; wrong granularity for the facets.",
+      "reason_class": "wrong-granularity",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+      "path": "wiki/sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer.md",
+      "type": "source",
+      "title": "Build core skills to thrive as an AI-era developer",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "effective_confidence": null,
+      "fused_score": 0.43,
+      "verdict": "ignore",
+      "reason": "Graph-only via three supports edges; core-skills guidance, no imitation claim.",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2024-04-18-caldwell-lennys-podcast-lessons-1000-yc-startups-tarpit-ideas",
+      "path": "wiki/sources/2024-04-18-caldwell-lennys-podcast-lessons-1000-yc-startups-tarpit-ideas.md",
+      "type": "source",
+      "title": "Lessons from 1,000 YC startups: tarpit ideas",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "effective_confidence": null,
+      "fused_score": null,
+      "verdict": "ignore",
+      "reason": "Surfaced by the Step-5 lexical sweep; 'clone' occurs only as Foursquare-clone tar-pit apps — the opposite of advice to copy.",
+      "reason_class": "off-facet",
+      "promoted": null
+    }
+  ],
+  "expansions": [
+    {
+      "trigger_facet": "Reconstruct the advice's exact framing and wording; check uniqueness across the corpus",
+      "method": "lexical-grep",
+      "detail": "grep -rniE '(copy|clone|replicat|imitat)' over wiki/ — the ledger ranked the Pincus source 3rd but on a weak qmd score (0.37) with a graph `via` about management philosophy, so the ledger alone did not evidence the advice.",
+      "added": [
+        "concepts/strategy",
+        "sources/2026-04-26-how-to-win-when-software-is-not-a-moat-evan-spiegel-snapchat-ceo"
+      ]
+    }
+  ],
+  "answer_map": [
+    {
+      "anchor": "W1",
+      "claim": "The advice is Mark Pincus's, from the Lenny's Podcast interview of 14 June 2026, timed to his book Life at the Speed of Play",
+      "pages": ["sources/2026-06-14-pincus-lennys-podcast-hidden-pattern-behind-successful-products"],
+      "span": "frontmatter + ## TL;DR"
+    },
+    {
+      "anchor": "W2",
+      "claim": "The framework is 'Proven, Better, New': copy something market-validated first, make it decisively better ('10 out of 10 people' say yes), only then add something new",
+      "pages": ["sources/2026-06-14-pincus-lennys-podcast-hidden-pattern-behind-successful-products"],
+      "span": "## TL;DR items 1-3"
+    },
+    {
+      "anchor": "W3",
+      "claim": "Pincus argues most successful products are better versions of things that already existed, and that society under-credits disciplined copying relative to originality",
+      "pages": ["sources/2026-06-14-pincus-lennys-podcast-hidden-pattern-behind-successful-products"],
+      "span": "## TL;DR item 1; ## What was actually ingested ('the moral arbitrage of copying')"
+    },
+    {
+      "anchor": "W4",
+      "claim": "The wiki files this under strategy as 'earning the right to innovate' before differentiating",
+      "pages": ["concepts/strategy"],
+      "span": "### Earning the right to innovate: \"Proven, Better, New\""
+    },
+    {
+      "anchor": "W5",
+      "claim": "Caveat: a single, book-promotional founder interview; it does not lift the strategy page's confidence and should be read as one practitioner's retrospective narrative",
+      "pages": [
+        "concepts/strategy",
+        "sources/2026-06-14-pincus-lennys-podcast-hidden-pattern-behind-successful-products"
+      ],
+      "span": "### Earning the right to innovate… (last para); ## Source quality"
+    },
+    {
+      "anchor": "W6",
+      "claim": "No other wiki source gives comparable copy-first advice; the corpus's other copying-heavy source (Spiegel/Snap) treats cloning as a threat to defend against",
+      "pages": ["sources/2026-04-26-how-to-win-when-software-is-not-a-moat-evan-spiegel-snapchat-ceo"],
+      "span": "## TL;DR item 1; the moats table"
+    }
+  ],
+  "answer": "That advice is Mark Pincus, in the Lenny's Podcast interview 'The hidden pattern behind successful products' (14 June 2026), recorded for the launch of his book Life at the Speed of Play [W1]. The framework is 'Proven, Better, New' [W2]: (1) Proven — start from something already validated in the market; you earn the right to innovate by first copying a proven pattern rather than betting on novelty [W2][W4]. (2) Better — not marginally improved, but decisively better: good enough that '10 out of 10 people' say yes, with every reason to decline removed [W2]. (3) New — only once proven and better are earned should a genuinely new element be layered on top [W2]. Pincus's underlying claim is that most successful products are better versions of things that already existed rather than novel inventions, and that disciplined copying-then-improving is a legitimate strategy society under-credits relative to perceived 'originality' — the interview calls this the moral arbitrage of copying [W3]. In the wiki it lives on the strategy page under 'Earning the right to innovate', as a founder-vantage complement to that page's HBR-theory lenses [W4]. Worth carrying with it: this is a single, book-promotional founder interview, so the wiki deliberately does not let it raise the strategy page's confidence, and treats the framework and its anecdotes as one practitioner's retrospective narrative rather than verified case evidence [W5]. Nothing else in the corpus offers comparable copy-first guidance; the one other source that talks about copying at length — Evan Spiegel on why software is not a moat — approaches it from the receiving end: features 'so easily cloned by our competitors' that Snap had to redefine defensibility around ecosystems, hardware and brand [W6].",
+  "generated_at": "2026-07-14T16:51:21.704Z"
+}

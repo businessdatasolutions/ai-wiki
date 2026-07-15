@@ -4,7 +4,7 @@ aliases: ["Warner-Wäger process model", "Warner & Wager process model", "W&W pr
 tags: [dynamic-capabilities, digital-transformation, microfoundations, warner-wager, wiki-vocabulary]
 confidence: 0.82
 last_confirmed: "2026-07-01"
-accessed_at: "2026-07-01"
+accessed_at: "2026-07-11"
 source_count: 6
 relationships:
   - type: instance-of

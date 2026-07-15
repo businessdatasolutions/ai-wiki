@@ -4,7 +4,7 @@ aliases: ["strategy", "business strategy", "corporate strategy", "competitive st
 tags: [strategy, strategic-planning, value-creation, value-capture, theory-of-winning, playing-to-win, value-stick, roger-martin, felix-oberholzer-gee, harvard-business-review]
 confidence: 0.88
 last_confirmed: "2026-07-01"
-accessed_at: "2026-07-01"
+accessed_at: "2026-07-14"
 source_count: 8
 relationships:
   - type: supports

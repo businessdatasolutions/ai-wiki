@@ -4,7 +4,7 @@ aliases: ["OSINT", "open-source intelligence", "open source intelligence"]
 tags: [osint, cybersecurity, infosec, reconnaissance, attack-surface, threat-intelligence]
 confidence: 0.75
 last_confirmed: "2026-05-18"
-accessed_at: "2026-05-18"
+accessed_at: "2026-07-14"
 source_count: 2
 relationships:
   - type: part-of
