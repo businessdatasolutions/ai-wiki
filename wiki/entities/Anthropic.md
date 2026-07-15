@@ -5,9 +5,9 @@ aliases: ["Anthropic", "Anthropic PBC", "Claude"]
 tags: [anthropic, ai-lab, foundation-models, claude, public-benefit-corporation, long-term-benefit-trust]
 since: 2021
 confidence: 0.95
-last_confirmed: "2026-06-23"
-accessed_at: "2026-06-23"
-source_count: 22
+last_confirmed: "2026-07-15"
+accessed_at: "2026-07-15"
+source_count: 24
 ---
 
 # Anthropic
@@ -38,13 +38,14 @@ Ries (who plays *"no important role"* but *"a very big role"* in the founding-ad
 ## Platform / product engineering
 
 - **Claude Platform** — Anthropic's developer-facing platform.
-  - **Claude Managed Agents** — hosted service for long-horizon agent work; brain/hands/session decoupled architecture; published April 2026 ([[2026-05-07-anthropic-managed-agents-decoupling-brain-hands|Engineering blog]]).
+  - **Claude Managed Agents** — hosted service for long-horizon agent work; brain/hands/session decoupled architecture; published April 2026 ([[2026-05-07-anthropic-managed-agents-decoupling-brain-hands|Engineering blog]]); by July 2026 the service carries a shipped **outcomes** primitive (rubric + iteration/spend budget), a **"dreaming"** memory-distillation concept, and an evolving **agent identity / service-account** model — per the Claude Platform team's own panel discussion ([[2026-07-10-building-the-future-of-agentic-infrastructure|Building the future of agentic infrastructure]], the wiki's first first-party Claude Platform interview: **Jess Yann** — PM, Claude Managed Agents; **Katelyn Lesse** — Head of Engineering, Claude Platform; **Angela Jiang** — Head of Product, Claude Platform; all three dangling, single-source, deferred).
   - **Claude Code** — agentic coding harness; described as "an excellent harness" in the Managed Agents post; its agentic architecture (splits coding work into smaller API calls labeled as distinct tasks) is the empirical signature of agent-mediated work in the [[2026-05-07-anthropic-economic-index-5-learning-curves|5th Economic Index report]]. Engineering leadership: [[Boris Cherny]] (10–15 concurrent Claude instances + CLAUDE.md as in-workflow learning capture per [[2026-05-07-kiron-schrage-compound-benefits|Kiron-Schrage 2026]]) and *Fiona Fung* (Director of Engineering; documents the Claude Code team-norms rewrite — JIT planning, code-wins-over-whiteboard debate, manager-starts-as-IC dogfooding, "Claudify everything", "explicit permission to kill processes" — in [[2026-05-08-running-an-ai-native-engineering-org]]). **Founder-vantage worked examples on Claude Code as substrate**: at $100M-ARR product scale by [[2026-05-13-jha-emergent-democratizing-app-building-with-claude|Jha at Emergent]] (multi-agent Kubernetes harness, system rewritten 4× in 9 months); at 2-FTE-startup-internal-ops scale by [[2026-05-19-garg-yc-internal-ai-agent-evolves-itself|Garg at AnswerThis]] (Claude Code CLI wrapped in Python with a self-extending coding sub-agent and an agent-editable `instructions.md`).
 - **Claude Cowork** — Anthropic collaborative-design product, referenced by [[2026-04-26-how-to-win-when-software-is-not-a-moat-evan-spiegel-snapchat-ceo|Spiegel 2026]] in the *designers-shipping-code* discussion (alongside the named team member *Jenny Wen*, head of design at Claude, ex-Figma director — the move from Figma director to Claude IC designer is narrated by Spiegel as a case study in the *crits-as-core-skill* dimension of post-AI design work).
 
 ## Third-party uses of the Anthropic API
 
 - **WikiZZ / LLM WikiZZ** ([[2026-04-18-mysore-medium-wikizz-extending-karpathy-llm-wiki|Mysore 2026]]) — single-author open-source browser-only extension of Karpathy's LLM Wiki pattern that routes API requests via a Cloudflare Worker CORS proxy to **NVIDIA NIM, Anthropic, and Gemini** as user-selectable provider backends. The wiki's first **third-party-developer-tool-uses-Anthropic-API** mention in the [[concepts/llm-wiki|LLM Wiki]] cluster. Surfaced here as a one-line context note; the substantive treatment is on the source page.
+- **[[Khan Academy]]** ([[2026-07-14-khan-academy-ceo-the-real-ai-opportunity-is-in-boring-industries-sal-khan|Sal Khan interview, July 2026]]) — a **$1.2M/year** run rate; per Khan, Anthropic told the nonprofit it is "the top of the stack" among organizations leaning into agentic code review, with engineers "running five, six, seven, eight, nine, 10 agents simultaneously writing code, reviewing code."
 
 ## Models referenced in this wiki
 

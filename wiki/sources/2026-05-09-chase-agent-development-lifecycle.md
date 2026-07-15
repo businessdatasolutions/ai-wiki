@@ -10,6 +10,11 @@ date_ingested: 2026-05-10
 length: "~10-page article (~3,000 words; 12-page PDF including diagrams + footer)"
 raw: "../../raw/articles/langchain.com_blog_the-agent-development-lifecycle.pdf"
 tags: [langchain, agent-development-lifecycle, adlc, build-test-deploy-monitor, governance, langgraph, langsmith, deep-agents, agent-runtime, agent-harness, evaluation, tracing, simulation, sandboxes, prompt-hub]
+relationships:
+  - type: supports
+    target: 2026-07-08-jensen-huang-why-companies-need-open-agent-systems
+    via: "Chase, this essay's author, is the interviewer in the later NVIDIA/Jensen Huang video; Huang's account of post-training Nemotron 3 Ultra 'inside the harness' and tuning prompts/tools per model is a live cross-company worked example of the frameworks/runtimes/harnesses layering this essay names"
+    confidence: 0.7
 ---
 
 # The Agent Development Lifecycle
@@ -117,6 +122,7 @@ Particularly load-bearing: the *discoverability of skills* problem. *"This is es
 | [[2026-04-30-ai-index-report-2026\|AI Index 2026]] | Documents the broader move toward agentic AI as production practice; Chase's lifecycle is the operational scaffold. |
 | [[2026-05-07-globerson-et-al-scalable-measurement-durable-skills\|Globerson et al. 2026]] | Criteria-based evaluation (Chase's metric typology) is operationally the same shape as Globerson et al.'s LLM-judge measurement of durable skills. |
 | [[2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering\|Karpathy 2026]] | Karpathy's *agentic engineering* discipline finds its lifecycle scaffold here; the discipline is what fills out each phase of the lifecycle. |
+| [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems\|Huang / NVIDIA (8 Jul 2026)]] | Chase, this essay's author, interviews NVIDIA CEO Jensen Huang two months later; Huang's account of tuning the Deep Agents harness per model and (prospectively) post-training the model *inside* the harness is a concrete cross-company instance of the Build-phase harness layer this essay names. |
 
 ## Linked entities and concepts
 

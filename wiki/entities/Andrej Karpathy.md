@@ -4,9 +4,9 @@ kind: person
 aliases: ["Karpathy", "Andrej Karpathy", "@karpathy"]
 tags: [andrej-karpathy, ai-researcher, openai, tesla, eureka-labs, software-3.0, vibe-coding, jagged-intelligence, llm-wiki]
 confidence: 0.92
-last_confirmed: "2026-05-28"
-accessed_at: "2026-05-28"
-source_count: 7
+last_confirmed: "2026-07-15"
+accessed_at: "2026-07-15"
+source_count: 8
 relationships:
   - type: authored-by
     target: 2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering
@@ -22,6 +22,10 @@ AI researcher and educator; **co-founder of OpenAI** (2015–2017); led **Tesla 
 Per CLAUDE.md §Lifecycle "Author-entity promotion", first-source mentions are usually deferred to the dangling list. Karpathy is promoted on first source-page mention via the same **cross-page-presence judgment** that produced [[Jack Clark]]: he is named explicitly in repo-root specs ([`llm-wiki.md`](../../llm-wiki.md), [`llm-wiki-v2.md`](../../llm-wiki-v2.md), [`llm-wiki-v2-plan.md`](../../llm-wiki-v2-plan.md)) and in [`CLAUDE.md`](../../CLAUDE.md) as the originator of the LLM-wiki idea this repo implements. That means the wiki has been *implicitly citing Karpathy as the upstream-spec author since instantiation* — promoting him formalises a citation chain that already exists.
 
 The promotion is a one-off judgment call (the same caveat noted in the Jack Clark log entry) — the audit script ([`scripts/lint-dangling-authors.mjs`](../../scripts/lint-dangling-authors.mjs)) tracks only the strict ≥2-source-frontmatter rule and was not modified.
+
+## Further citations
+
+- [[2026-07-09-nyc-executive-forum-2026-a-leaders-guide-to-agentic-ai]] — Ishit Vachhrajani (AWS) cites Karpathy's framing that a job is "a bundle of task plus glue" (glue = judgment, relationships, understanding) to explain why automating a job's task bundle leaves durable human value in place — new to the wiki, on [[ai-employment-effects]].
 
 ## Career snapshot
 

@@ -40,6 +40,10 @@ relationships:
     target: 2026-06-02-architecting-ai-native-organizations-redesign-work-at-scale-joe-beutler
     via: "Both describe the same coding-to-knowledge-work deployment arc and the manageability problem it creates. Beutler (OpenAI): the Ask→Assist→Automate ladder + redesign-work-at-scale. Nadella narrates the IDE→chat→agent-mode→*fire-and-forget* (full-PR) progression and argues *'what is happening in coding will happen even in knowledge work'* — then names the cost: *'I have 100 CLI sessions open… the cognitive load is so high,'* so Microsoft is *'back to an IDE'* — an **agentic development environment** (the new GitHub app as an inbox of agents for *micro-steering of the macro-delegation*). Beutler's deployment-maturity ladder and Nadella's tooling-evolution arc are the same redesign-work-at-scale thesis from vendor-solutions and platform-CEO vantages."
     confidence: 0.7
+  - type: supports
+    target: 2026-07-08-jensen-huang-why-companies-need-open-agent-systems
+    via: "Independent vendor-CEO convergence (Microsoft vs NVIDIA) on the same specialization doctrine, one month apart — Nadella's dictum *'don't use frontier models for non-frontier problems'* and Huang's *'start with the frontier... as soon as it gets good enough, specialize'* describe the identical decision rule (frontier for exploration/general capability, smaller/specialized/open models for repeatable domain work) from opposite substrate positions (Microsoft/OpenAI vs NVIDIA/open-weight), both reached for electricity-adjacent metaphors for the compute substrate (Nadella: 'electrons-to-tokens' data centers; Huang: 'it's electrons, not atoms')."
+    confidence: 0.6
 ---
 
 > Reid sits down with Microsoft CEO Satya Nadella fresh off Microsoft Build 2026. The conversation goes wide: how AI is reshaping work, business, and society — and why the transformation sweeping through software development today is only a preview of what's coming for all knowledge work. Satya makes the case that human capital and "token capital" are now deeply intertwined, that companies — not just countries — must build their own AI capabilities, and that the organizations best positioned to thrive are those that can leverage their unique expertise inside intelligent systems.
@@ -104,6 +108,7 @@ Already-promoted entities referenced: [[Microsoft]] (source-count +1), [[GitHub]
 - *supports* — [[2026-06-12-aws-leaders-guide-data-strategy-agentic-ai|AWS — Data Strategy for Agentic AI]]: proprietary data as the durable agentic-era moat — the architectural counterpart to *token capital* (your data is your context; don't leak the traces).
 - *supports* — [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti / HBR]]: the operator→supervisor shift — *cognitive coverage* is Nadella's operationalisation of *everyone becomes a manager who evaluates AI output*.
 - *supports* — [[2026-06-02-architecting-ai-native-organizations-redesign-work-at-scale-joe-beutler|Beutler / OpenAI]]: the Ask→Assist→Automate redesign-work-at-scale ladder — the deployment-maturity sibling of Nadella's IDE→chat→agent-mode→fire-and-forget arc.
+- *supports* — [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Huang / NVIDIA]]: an independent vendor-CEO voice, one month later, converging on the identical *"don't use frontier models for non-frontier problems"* specialization doctrine — Huang's version is *"start with the frontier... as soon as it gets good enough, specialize."*
 
 ## Caveats
 

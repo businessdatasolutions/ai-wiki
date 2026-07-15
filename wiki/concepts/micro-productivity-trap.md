@@ -3,9 +3,9 @@ type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
-last_confirmed: "2026-07-01"
-accessed_at: "2026-07-01"
-source_count: 37
+last_confirmed: "2026-07-15"
+accessed_at: "2026-07-15"
+source_count: 40
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -13,8 +13,8 @@ relationships:
   - type: contradicts
     target: automation-vs-augmentation
     via: "process lock-in = automation without redesign; reinvent-the-business resists this trap"
-quality_score: 0.79
-quality_notes: ['missing ## Debates and supersession (concept with >1 source)', '1 near-empty section(s)']
+quality_score: 0.97
+quality_notes: ['1 near-empty section(s)', '1 broken body wikilink(s)']
 ---
 
 # Micro-Productivity Trap
@@ -261,6 +261,24 @@ This is the same *bolt-on-fails* diagnostic the page already holds from AI-era s
 
 This is the wiki's **first source to state the trap specifically and narrowly for the software-development function** — prior software-engineering-adjacent corroborations ([[2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer|Forsgren & Macvean's]] DORA individual-vs-team-benefit divergence, [[2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life|Randell & Gousset's]] "feeling faster while going slower") name the same failure mode but at the individual-developer or DORA-metric layer; this source names it at the **engineering-org-scaling layer** specifically. Per [Lifecycle rules](../../CLAUDE.md#lifecycle) this is a qualitative consulting-panel claim (unquantified beyond the single 4-days/4-weeks anecdote), so it does not lift the page's confidence past its cap — its value is narrowing the trap's software-engineering instance to the org-scaling mechanism specifically.
 
+## The 35%-of-time-on-coding finding — a bank's live-tooling measurement ([[2025-12-02-allen-brozovich-davis-aws-reinvent-advanced-team-structures|Davis / Danske Bank, AWS re:Invent, December 2025]])
+
+**Richard Davis**, CTO of [[Danske Bank|Danske Bank]], supplies a clean, quantified instance of the trap measured with the bank's own live engineering tooling rather than a survey or consulting estimate. AI coding assistants cut Danske's change lead time by roughly **50%** — a substantial task-level (coding) gain. But when Davis's team traced *all* the touch points across the delivery lifecycle, they found developers were spending only **35% of their time actually coding**; the rest sat in Kanban-board handovers, documentation, and testing — process stages the coding-assistant rollout never touched. Developers themselves reported the mismatch directly: *"progress they were seeing still didn't equal the level of effort they're putting in."* Danske's response was to redesign the surrounding product development lifecycle (PDLC) itself, aiming for *"one agentic workflow with zero friction,"* rather than layering further coding-specific tooling onto an unchanged process — the trap's standard prescribed escape, restated here with an unusually direct process-tracing data point (see [[enterprise-ai-adoption]] for the fuller case).
+
+## The human-understanding test — a normative escape criterion ([[2026-05-28-from-event-to-ecosystem-rethinking-how-technology-leaders-build-knowledge-in-the-ai-era|Tate / MIT Sloan CIO Symposium, May 2026]])
+
+Allan Tate's MIT Sloan CIO Symposium keynote names a compact normative test that sits alongside the page's workflow-redesign escape prescriptions: *"if you increase production but you decrease human understanding… that's a failure, because you're surrendering to the machine. But if you increase production and at the same time you increase the human understanding of your team… that's what we think of as success."* Where [[2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner|Westerman/Caldas]] name the trap's *behavioral* signature (bolting tools onto existing steps vs. rebuilding for outcomes), Tate names its **cognitive** signature: throughput gained at the cost of team understanding is the trap even when the workflow *has* been redesigned. A related claim from the same source — *"AI expands the scope of work before reducing it… you have more initiatives not fewer"* — is a caution against reading early-stage AI deployment as automatically trap-escaping just because activity increases; the page's existing consensus is that activity (throughput) is precisely the metric the trap inflates while firm-level value stays flat.
+
+## "We haven't seen AI transform companies the way we expected" — a CIO-community self-critique ([[2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16|Wladawsky-Berger & Tate / MIT Sloan CIO Symposium podcast, July 2026]])
+
+Irving Wladawsky-Berger states the trap's individual-vs-enterprise gap as a personal frustration rather than a third-party finding: *"the part where AI still has not achieved our expectations is in bringing value to the companies themselves — improving their overall productivity, improving their profits, letting them develop new products and new services. We haven't seen AI transform companies the way we have expected."* His own examples of the individual-level gains that **haven't** compounded — AI-edited blog posts, faster programming — are the same category of "very nice, individually" gains the page's existing sources (Danske Bank, RaboResearch, McKinsey's software-engineering panel) already document as failing to compound without workflow redesign. His prescription matches the trap's standard escape: *"start building AI-based pilots that actually work... and learn what it takes to bring them into operations and general deployment. The only way to do this is by doing it."* A distinct, CIO-community-specific addition: he judges **agentic AI as lagging generative AI in organizational maturity** specifically because agentic deployment raises unresolved accountability questions ("who builds the agent? who is responsible if the agent makes a mistake?") that conversational LLM use does not — a governance gap, not just a workflow-redesign gap, standing between individual AI use and firm-level value capture.
+
+## Debates and supersession
+
+- **No genuine contradiction across sources; unusually strong convergence instead.** Every source cited on this page — spanning Bain/OpenAI, McKinsey, Thoughtworks, NYT journalism, DORA, a target-firm CEO, and (as of 2026-07-15) the MIT Sloan CIO Symposium podcast — agrees on the core diagnosis (task-level gains ≠ firm-level value without workflow/organizational redesign). The debates that exist are about **vocabulary and mechanism layer**, not substance: control-systems framing (Hu) vs. organizational-metabolism (Thompson) vs. neurological gear-3 (Storoni) vs. governance-gap (the MIT Sloan CIO Symposium podcast's agentic-AI accountability point) are compatible lenses on the same phenomenon, not competing claims.
+- **Vendor-interest caveat, unresolved.** The headline 10–25% EBITDA figures are Bain client-engagement data, not independent measurement (see Open questions below) — this caveat has stood since the page's first ingest and no independent academic/AI-Index verification has yet closed it.
+- **Open attribution question, newly surfaced (2026-07-15).** The MIT Sloan CIO Symposium podcast's discussion of entry-level hiring softness — is it AI displacement, a post-COVID hiring-bubble correction, or a deliberate shift toward retaining experienced staff for infrastructure work — is explicitly unresolved by its own sources (Wladawsky-Berger: "I don't know if it's related to AI or the economy"). This sits adjacent to, but does not resolve, the parallel attribution debate already tracked on [[ai-employment-effects]].
+
 ## Related concepts
 
 - [[ai-knowledge-hiding]] — the individual-level response to the efficiency-tax: workers conceal workflows when disclosure earns more work or threatens their standing, so task gains never aggregate to firm value.
@@ -280,5 +298,5 @@ SORT file.name ASC
 
 ## Open questions
 
-- Single-source coverage so far. A second source measuring or naming the same failure pattern (e.g. via McKinsey or a different consultancy/academic vantage) would strengthen the concept.
 - Empirical 10–25% EBITDA range is from Bain client work — vendor-of-deployment data, not independent measurement. Independent verification (academic field study, AI Index data) would be a useful counterweight.
+- Whether entry-level hiring softness (discussed on [[2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16|the MIT Sloan CIO Symposium podcast]]) is itself trap-adjacent — i.e. whether firms retaining experienced staff for infrastructure work while under-hiring juniors is a rational trap-escape allocation or a new failure mode — is untested by any source on this page.

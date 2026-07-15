@@ -45,6 +45,10 @@ relationships:
     target: 2026-04-28-warner-wager-dynamic-capabilities-digital-transformation
     via: "**Empirical operationalisation of the W&W *redesigning-internal-structures* + *organizational-culture* microfoundations.** Where W&W frame structural redesign and cultural renewal as theoretical microfoundations of digital-transforming + strategic-renewal capabilities, Kropp et al. add a **specific RCT-grade empirical hazard**: the apparently-cultural choice of *how to frame AI in the org* (tool vs employee) materially changes accountability and quality outcomes. The framing is not merely symbolic — it is a load-bearing microfoundation in the W&W sense."
     confidence: 0.65
+  - type: supports
+    target: 2026-07-08-jensen-huang-why-companies-need-open-agent-systems
+    via: "Shared topic — how much to anthropomorphize agentic systems. Huang (NVIDIA CEO) independently arrives at this article's core position in principle ('it's electrons, not atoms... a tool, like my vacuum cleaner... we tend to imbue too much human properties to it'), while in the same interview describing agent access-provisioning in HR-onboarding terms ('an HR system, if you will, for AI... a skills file') — a live instance of the framing gap this article's RCT measures."
+    confidence: 0.55
 confidence: 0.85
 last_confirmed: "2026-05-25"
 ---
@@ -145,6 +149,8 @@ Full 12-page article including the abstract, introduction, *AI Employees Enter t
 **To [[agent-harness]]:** the *decision rights / escalation / consequences* triad in recommendation #2 maps onto the harness's *permission/guardrails*, *human-in-the-loop*, and *observability* layers. The article gives the *vendor-customer-side governance-design framing* of harness primitives the wiki has otherwise treated from the vendor-engineering side.
 
 **To [[ai-agents]]:** the named *"don't constrain agents into 1-for-1 roles"* prescription is the wiki's first explicit *design-for-multi-role-agents* recommendation at consultant altitude — a structural anti-pattern named.
+
+**Cross-source, July 2026:** [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Huang / NVIDIA]] independently reaches this article's core position — agents are tools, not employees ("it's electrons, not atoms... we tend to imbue too much human properties to it") — while, in the same interview, describing agent access-provisioning in explicitly HR-onboarding terms ("we are creating an HR system, if you will, for AI"). The juxtaposition is a live instance of the gap this article's RCT measures: even a vendor CEO who rejects anthropomorphizing in principle reaches for employee-shaped metaphors when describing deployment mechanics.
 
 ## Open questions for next ingest
 

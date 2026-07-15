@@ -5,13 +5,16 @@ aliases: ["LangChain", "LangChain Inc"]
 tags: [langchain, agent-frameworks, agent-runtime, agent-harness, langgraph, langsmith, deep-agents]
 since: 2022
 confidence: 0.9
-last_confirmed: "2026-06-20"
-accessed_at: "2026-06-20"
-source_count: 7
+last_confirmed: "2026-07-15"
+accessed_at: "2026-07-15"
+source_count: 8
 relationships:
   - type: published-by
     target: 2026-05-09-chase-agent-development-lifecycle
     via: "company blog publishes the Agent Development Lifecycle thesis-piece"
+  - type: supports
+    target: NVIDIA
+    via: "joint Deep Agents + OpenShell blueprint (July 2026), pairing NVIDIA's Nemotron 3 Ultra model with LangChain's Deep Agents harness"
 ---
 
 # LangChain
@@ -47,6 +50,7 @@ This makes LangChain a **vendor whose product taxonomy *is* the wiki's vocabular
   - **LangChain Academy** — educational resources.
 - **LangChain Labs** — research group inside LangChain *"aimed in particular at continual learning"* — announced at [[2026-05-21-chase-langchain-interrupt-26-future-of-ai-agents|Interrupt 26]] (Day 2 keynote, 21 May 2026). LangSmith's trace + feedback data substrate named as the foundation for the Labs continual-learning agenda.
 - **LangSmith Engine** — referenced in the Interrupt 26 description as a separate Interrupt-week announcement; not yet substantively ingested.
+- **Deep Agents + OpenShell blueprint** — a joint announcement with **[[NVIDIA]]** ([[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Huang/Chase interview, 8 Jul 2026]]): LangChain Deep Agents running Nemotron 3 Ultra inside OpenShell, NVIDIA's secure open runtime. Packages model + harness + runtime + acceleration stack as a reusable enterprise starting point for building domain-specific "super agents" — the wiki's first joint-vendor blueprint spanning a harness company and a substrate/silicon company.
 
 ## Conferences
 
@@ -64,6 +68,10 @@ This makes LangChain a **vendor whose product taxonomy *is* the wiki's vocabular
 - **[[Harrison Chase]]** — co-founder/CEO of LangChain. **Promoted from Dangling to entity page on 21 May 2026** after the second substantive source ([[2026-05-21-chase-langchain-interrupt-26-future-of-ai-agents|Interrupt 26 keynote]]) followed [[2026-05-09-chase-agent-development-lifecycle|the ADLC essay (9 May)]] 12 days earlier. The canonical vendor-CEO voice on agent-engineering infrastructure; coined both the *frameworks / runtimes / harnesses / no-code* four-layer Build vocabulary and the *model / harness / context* three-layer continual-learning model. See [[Harrison Chase|the entity page]] for the full framings catalogue.
 - **Brace Sproul** — LangChain (product walkthrough at [[2026-05-21-chase-langchain-interrupt-26-future-of-ai-agents|Interrupt 26]] ~17:23–17:46; *"LangSmith Fleet is built on top of deep agents"*). Currently Dangling; promote on second-source mention.
 - **Caroline di Vittorio** — LangChain (live Fleet demo at [[2026-05-21-chase-langchain-interrupt-26-future-of-ai-agents|Interrupt 26]] ~17:46–19:30; quantified the internal GTM-agent metrics). Currently Dangling; promote on second-source mention.
+
+## Partners
+
+- **[[NVIDIA]]** — joint Deep Agents + OpenShell blueprint ([[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|8 Jul 2026]]), pairing Nemotron 3 Ultra with the Deep Agents harness inside NVIDIA's OpenShell runtime.
 
 ## Mentioned in
 

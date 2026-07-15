@@ -3,9 +3,9 @@ type: concept
 aliases: ["software 3.0", "Software 3.0", "software-3.0", "LLM as computer", "LLMs as a new computer", "context window as program", "prompting as programming"]
 tags: [software-3.0, software-2.0, software-1.0, llm-paradigm, prompting, context-window, ai-engineering, karpathy]
 confidence: 0.88
-last_confirmed: "2026-06-20"
-accessed_at: "2026-06-20"
-source_count: 8
+last_confirmed: "2026-07-15"
+accessed_at: "2026-07-15"
+source_count: 9
 relationships:
   - type: instance-of
     target: generative-ai
@@ -132,6 +132,10 @@ This complements the [[2026-03-30-lee-meta-harness-end-to-end-optimization|Meta-
 Allen's AWS-vendor-altitude restatement of the Software 3.0 paradigm's operating-model implication (~26:30): *"in agentic AI systems, non-determinism is a feature, not a bug. And this path to high agency — we all understand what managing a high-agency individual looks like. This requires a leadership shift."* The talk's tightest critique of legacy enterprise discipline as Software-1.0-shaped (~26:41–28:07): *"we've spent years building these toll gates — or should it be toil gates — to help these deterministic systems find their own path. But really, when you look at an agentic system, much like a river bursting its banks, agents do find their own path."* Allen pairs this with the Rory Sutherland quote — *"every spreadsheet is in some ways an act of pretense, because it's past information which you pretend has wonderful predictive value"* — as the macro-frame.
 
 The operating-model corollary: *"if you still have engineering and operations as two different things, you are going to struggle with agentic systems. Runbooks are deterministic. Agents are not. Ticket culture kills the context."* This is the wiki's AWS-vendor-altitude framing of *what enterprise operating models have to look like to host Software-3.0 programs at scale*, and the structural-twin of [[2026-05-08-running-an-ai-native-engineering-org|Fung / Anthropic]]'s claim that *"the tool isn't the hard part... your processes are."* The two vendor-altitude framings converge: Software 3.0 doesn't just need a new runtime (harness), it needs a new operating model (pod / hourglass / human-at-the-seams accountability).
+
+## A third independent voice on non-determinism-as-feature ([[2026-07-09-nyc-executive-forum-2026-a-leaders-guide-to-agentic-ai|Vachhrajani / AWS NYC Executive Forum, July 2026]])
+
+Ishit Vachhrajani restates the same operating-model corollary, independently of [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen]] and [[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world|Brovich]]: enterprise organizations have "optimized for predictable, repeatable, consistent outcomes... that is the determinism" — but agentic systems bring non-determinism into the mix, and "it is not a feature, it is not a bug, but it is a feature, because really that is what gives its power to reason, to plan, to optimize." The pairing with a trading-floor (rather than factory-floor) governance model — real-time telemetry and circuit breakers instead of build-time testing and fixed audit timelines — is this talk's operating-model corollary, structurally the same move Allen makes with "toll gates → toil gates." Three AWS-vendor voices now converge on this claim independently across three separate talks and three separate events.
 
 ## Debates and supersession
 

@@ -10,6 +10,11 @@ date_ingested: 2026-05-10
 length: "~9-min read (17-page PDF, ~2,800 words + 8 diagrams + code refs)"
 raw: "../../raw/articles/Unified Agentic Memory Across Harnesses Using Hooks _ Towards Data Science.pdf"
 tags: [agent-harness, hooks, agentic-memory, neo4j, claude-code, codex, cursor, mcp, dream-phase, lifecycle-events, harness-portability, knowledge-graph, persistent-memory]
+relationships:
+  - type: supports
+    target: 2026-07-10-building-the-future-of-agentic-infrastructure
+    via: "Angela Jiang (Claude Platform Head of Product) names 'dreaming' as a Claude Managed Agents concept — first-party Anthropic corroboration of the offline-distillation mechanism this article's dream-phase pattern documents third-party (hooks log online; a dream phase distills accumulated events into durable memory)"
+    confidence: 0.55
 ---
 
 # Unified Agentic Memory Across Harnesses Using Hooks
@@ -114,6 +119,8 @@ This **directly substantiates** [[2026-05-04-rethinking-agents-harness-is-all-yo
   - [[ai-agents]] — agentic memory as a layer.
   - [[foundation-models]] — Claude as the dream-phase distiller.
   - **Hooks as a candidate concept**: not yet promoted to its own concept page. The combination of *Lopopolo (Codex)* + *Bratanic (TDS)* + *the repo's own [`hooks` section](../../CLAUDE.md#hooks)* gives three independent vantages on hooks-as-harness-primitive. After ingesting the Lopopolo source page in this same batch, hooks meets the **second-source convergence threshold** and is a strong candidate for promotion. Decision deferred to the concept-page sweep at the end of this ingest batch.
+
+**Cross-reference (added 2026-07-15):** [[2026-07-10-building-the-future-of-agentic-infrastructure|Building the future of agentic infrastructure]] — the Claude Platform team's own "dreaming" terminology for Claude Managed Agents appears to name the same offline-distillation mechanism this page's dream-phase pattern documents, independently arrived at.
 
 ## Notes on confidence and lifecycle
 

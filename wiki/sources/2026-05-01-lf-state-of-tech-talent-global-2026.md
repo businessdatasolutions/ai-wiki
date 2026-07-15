@@ -29,6 +29,10 @@ relationships:
     target: 2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer
     via: "upskilling existing staff + durable core skills as the answer to the AI-era skills gap"
     confidence: 0.7
+  - type: supports
+    target: 2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16
+    via: "reciprocal — Irving Wladawsky-Berger's MIT Sloan CIO Symposium podcast episode is a direct secondary discussion of this report's survey data (matching net-hiring and skills-gap figures)"
+    confidence: 0.8
 ---
 
 # 2026 State of Tech Talent Report: Not a jobs crisis, but a skills crisis with an upskilling answer
@@ -97,6 +101,10 @@ Certifications (important to 76% of hiring managers) and demonstrated, job-relev
 - **Strengths**: a real survey (n=400, methodology + demographics disclosed, Data.World access); cross-referenced against independent anchors (McKinsey, BCG, Deloitte, Bain); the wiki's first workforce-side empirical anchor on the AI-and-jobs question; directly corroborates the Brynjolfsson-canaries reading at the aggregate level.
 - **Caveats**: **interest alignment** — Linux Foundation *Education* sells training and certifications, so the report's central prescription (upskilling + certifications) aligns with the publisher's commercial interest; self-reported survey (intentions like "97% plan to implement AI" overstate realised deployment); n=400 global is modest for fine-grained breakdowns. Per CLAUDE.md, a vendor-interested survey is held at **≤0.75** unless independent sources agree — several do (Brynjolfsson, BCG, Bain), supporting 0.75.
 - **Confidence: 0.75.**
+
+## Media coverage in the wiki
+
+[[2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16|Irving Wladawsky-Berger's MIT Sloan CIO Symposium podcast episode]] (10 July 2026) is a direct secondary discussion of this report: he cites the same ~400-participant survey, the same net-hiring figures (+26% 2025 / +31% expected 2026), and the same full-stack skills-gap ranking (AI/ML engineering leading at 47%), adding a COVID-hiring-bubble caveat the report itself does not make.
 
 ## Open questions for the wiki
 

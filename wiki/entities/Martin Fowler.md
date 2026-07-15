@@ -6,9 +6,9 @@ tags: [martin-fowler, thoughtworks, refactoring, patterns, software-architecture
 affiliation: "[[Thoughtworks]] (Chief Scientist)"
 role: "Chief Scientist at Thoughtworks; author and speaker on software design, refactoring, patterns, and agile"
 confidence: 0.8
-last_confirmed: "2026-06-25"
-accessed_at: "2026-06-25"
-source_count: 3
+last_confirmed: "2026-07-15"
+accessed_at: "2026-07-15"
+source_count: 4
 relationships:
   - type: part-of
     target: Thoughtworks
@@ -29,6 +29,7 @@ The wiki references Fowler's vocabulary across several concept pages (his framin
 
 - [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures]] — Allen cites Fowler's *expert generalist* post (and the strangler-fig pattern) as the talent profile agentic AI amplifies.
 - [[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world]] — Brovich (Sydney edition of the same AWS talk) cites Fowler/ThoughtWorks "expert generalist" by name.
+- [[2026-07-09-nyc-executive-forum-2026-a-leaders-guide-to-agentic-ai]] — Vachhrajani cites Fowler's expert-generalist framing (paired with Werner Vogels' renaissance-developer coinage) as the convergent talent profile agentic AI amplifies — a fourth AWS-vendor citation, independent of the "advanced team structures" franchise.
 
 ## Why the promotion now
 

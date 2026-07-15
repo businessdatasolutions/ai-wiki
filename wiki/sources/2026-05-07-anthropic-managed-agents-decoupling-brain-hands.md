@@ -11,6 +11,11 @@ date_ingested: 2026-05-07
 tags: [ai-agents, anthropic, managed-agents, claude-platform, agent-architecture, harness, sandbox, session, long-horizon-agents, security-boundary, prompt-injection]
 length: "~6 pages of body content (article body; site-footer/nav excluded)"
 raw: "../../raw/articles/Scaling Managed Agents_ Decoupling the brain from the hands _ Anthropic.pdf"
+relationships:
+  - type: supports
+    target: 2026-07-10-building-the-future-of-agentic-infrastructure
+    via: "The Claude Platform team's own three-months-later follow-up account of Managed Agents — agent identity/service-account provisioning, the outcomes primitive, and 'dreaming' as an evolution of the memory layer this post's architecture makes room for"
+    confidence: 0.75
 ---
 
 # Anthropic Engineering — Scaling Managed Agents: Decoupling the brain from the hands
@@ -109,6 +114,8 @@ This article is the wiki's first **production-grade engineering description** of
 **Entities (this wiki):** [[Anthropic]] (publisher; bumps `source_count`). **Dangling** (single-source mention, deferred): Lance Martin, Gabe Cemaj, Michael Cohen (article authors), Nodir Turakulov, Jeremy Fox, Jake Eaton (acknowledged); Claude Platform / Claude Managed Agents (Anthropic product; promote on 2nd-source coverage); Claude Code (mentioned as "an excellent harness").
 
 **Concepts:** [[ai-agents]] (heavy enrichment — engineering architecture for long-horizon agents), [[foundation-models]] (light — Claude Sonnet 4.5 vs Opus 4.5 model-behavior anecdote), [[responsible-ai]] (light — security boundary as structural unreachability), [[generative-ai]] (light — Anthropic platform infrastructure). Adjacent: [[automation-vs-augmentation]] (multi-agent infrastructure pushes toward higher AI autonomy on the API side), [[enterprise-ai-adoption]] (Managed Agents is enterprise-deployment infrastructure).
+
+**Follow-up source:** [[2026-07-10-building-the-future-of-agentic-infrastructure|Building the future of agentic infrastructure (July 2026)]] is the Claude Platform team's own direct continuation of this post — the same Managed Agents service, three months on, now discussed in terms of agent identity/service-account provisioning, agent-to-agent MCP exposure, and the shipped **outcomes** primitive.
 
 **Threads/syntheses:** none directly affected.
 

@@ -6,9 +6,9 @@ tags: [harrison-chase, langchain, langgraph, langsmith, langchain-labs, deep-age
 affiliation: "[[LangChain]]"
 role: "Co-founder and CEO, LangChain (since 2022)"
 confidence: 0.85
-last_confirmed: "2026-06-20"
-accessed_at: "2026-06-20"
-source_count: 3
+last_confirmed: "2026-07-15"
+accessed_at: "2026-07-15"
+source_count: 4
 ---
 
 # Harrison Chase
@@ -19,6 +19,7 @@ Promoted from Dangling to an entity page on 21 May 2026 after the second substan
 
 1. [[2026-05-09-chase-agent-development-lifecycle|Chase / LangChain blog — *The Agent Development Lifecycle* (9 May 2026)]] — Chase's foundational ADLC essay; named *the wiki's second formalization of the ADLC and the source most influential on the concept page's current shape* (per the [[LangChain]] entity page). Establishes the four-layer Build split (frameworks / runtimes / harnesses / no-code) that the wiki now uses as its working taxonomy.
 2. [[2026-05-21-chase-langchain-interrupt-26-future-of-ai-agents|Chase, Sproul & di Vittorio — Interrupt 26 Day 2 keynote (21 May 2026)]] — 12 days later, Chase headlines the Interrupt 26 keynote with the **two-types-of-agents typology** (long-horizon vs customer-experience) and the **three-layer continual-learning model** (model / harness / context) — extending the ADLC vocabulary along two new structural axes. Announces **LangChain Labs** as a research group inside LangChain *"aimed in particular at continual learning."*
+3. [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Chase interviews NVIDIA CEO Jensen Huang (8 Jul 2026)]] — Chase steps into the **interviewer** role for the first time in the wiki, drawing out Huang's "companies built on harnesses, not business processes" thesis and co-announcing the **Deep Agents + OpenShell blueprint** with NVIDIA. Chase's own contributions on-camera are lighter than in his two solo/headline sources — mostly framing questions and brief corroboration ("open weight models really strike a good balance between performance and cost") — but the interview is the wiki's first evidence of Chase engaging a substrate/silicon vendor (as opposed to LangChain's own product stack or a fellow application-layer vendor) as a harness-and-runtime partner.
 
 ## Role in the wiki
 
@@ -89,6 +90,7 @@ Chase asserts at Interrupt 26: *"we moved from top 30 on terminal bench two to t
 | [[2026-03-30-lee-meta-harness-end-to-end-optimization\|Lee et al. / MetaHarness (30 March 2026)]] | The academic paper Chase cites by name on stage at Interrupt 26 as the canonical *learn at the harness layer* worked example. |
 | [[2026-05-11-karten-zhang-continual-harness-online-adaptation\|Karten & Zhang / Continual Harness (11 May 2026)]] | The academic formalisation of continual-harness adaptation — Chase's Interrupt 26 three-layer model is the vendor-CEO operationalisation 10 days later. |
 | [[2026-05-20-tan-hu-stanford-cs153-ai-native-company-1000x-engineer\|Tan & Hu / Stanford CS153 (20 May 2026)]] | Paired *founder/CEO articulations of layered-agent-system thinking* landing within 24 hours. Tan/Hu maps *agentic-primitives → company-structure*; Chase maps *learning-systems → agentic-system-layers*. Same architectural decompose-and-map move applied to different domains. |
+| [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems\|Huang / NVIDIA interview (8 Jul 2026)]] | Chase interviews rather than headlines; Huang's post-training-inside-the-harness account and open-vs-frontier specialization advice extend the model/harness/context layering Chase coined at Interrupt 26. |
 
 ## Open questions
 

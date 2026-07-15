@@ -35,6 +35,12 @@ relationships:
   - type: supports
     target: 2026-05-07-kiron-schrage-compound-benefits
     via: "Michael Schrage continuity; the expert-as-evaluator / human-judgment-in-the-loop thread"
+  - type: supports
+    target: 2026-05-28-from-event-to-ecosystem-rethinking-how-technology-leaders-build-knowledge-in-the-ai-era
+    via: "same event, reciprocal — Allan Tate's opening keynote names the inquiry/structured-question model this compilation's eleven leaders were captured within"
+  - type: supports
+    target: 2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16
+    via: "Thomas H. Davenport continuity — his performative-oversight concern here and his organizations-not-technology thesis on the weekly podcast episode are both about organizational readiness lagging AI capability"
 ---
 
 # Agentic AI: What Leaders Wish They Knew Sooner
@@ -43,11 +49,11 @@ relationships:
 >
 > *— [MIT Sloan Management Review YouTube channel](https://www.youtube.com/watch?v=qekc7JNKix8)*
 
-An **~11½-minute multi-speaker compilation** from the **2026 MIT Sloan CIO Symposium**, hosted by **Abbie Lundberg** (Editor-in-Chief, [[MIT Sloan Management Review]]), asking IT and business leaders *"What have you learned this year about how humans and agentic AI work together?"* Eleven named leaders give one field-tested takeaway each — making this the wiki's densest single source on the **human-in-the-loop reality** of agentic deployment, and a useful counterweight to vendor-keynote optimism.
+An **~11½-minute multi-speaker compilation** filmed at the **2026 [[MIT Sloan CIO Symposium]]** (the same event opened by [[2026-05-28-from-event-to-ecosystem-rethinking-how-technology-leaders-build-knowledge-in-the-ai-era|Allan Tate's pre-event keynote]]), hosted by **Abbie Lundberg** (Editor-in-Chief, [[MIT Sloan Management Review]]), asking IT and business leaders *"What have you learned this year about how humans and agentic AI work together?"* Eleven named leaders give one field-tested takeaway each — making this the wiki's densest single source on the **human-in-the-loop reality** of agentic deployment, and a useful counterweight to vendor-keynote optimism.
 
 ## The eleven takeaways
 
-- **Thomas H. Davenport** — *human oversight is becoming performative.* A long-time human-in-the-loop advocate now worried: agents work far faster than humans, so review is "very cursory," people are "pestered to approve things rapidly," and "a lot of humans are not going to want to be auditors of what AI is doing." The wiki's sharpest statement that **rubber-stamp oversight is a failure mode, not a safeguard**.
+- **[[Thomas H. Davenport]]** — *human oversight is becoming performative.* A long-time human-in-the-loop advocate now worried: agents work far faster than humans, so review is "very cursory," people are "pestered to approve things rapidly," and "a lot of humans are not going to want to be auditors of what AI is doing." The wiki's sharpest statement that **rubber-stamp oversight is a failure mode, not a safeguard**.
 - **Melissa Swift** — *manage agents like employees.* The myth is that you hand agentic AI a task and it "magically scatters away and gets it done." Reality: "just like any human worker… you have to check the output, recheck the output, re-prompt it." Humans working with agents "is not that different right now from humans working with humans."
 - **George Westerman** — *agents aren't ready for prime time.* The word "agent" is being applied to unsophisticated things — "increasing the hype without necessarily increasing the value." The forward move: **"automate first, then put humans in the right places"** and rebuild processes around *desired outcomes*, not bolt tools onto the steps of the existing workflow.
 - **Monica Caldas** — *build human judgment into workflows.* Deployed agents in IT operations via an explicit **maturity arc**: personal-productivity assistance → identify which workflow pieces to *reimagine* → deploy **micro-agents** ("not just one agent that does everything"). Lessons: be deliberate, set **clear OKRs**, define entry/exit criteria, and build a **"trust fabric and governance"** that keeps humans in the loop "at the right places, not in every place."
@@ -77,11 +83,12 @@ This source is the **practitioner-chorus** counterpart to the wiki's vendor and 
 ## Linked entities and concepts
 
 - **Promoted to entity this ingest**: [[Michael Schrage]] (second source — co-authored [[2026-05-07-kiron-schrage-compound-benefits|Kiron & Schrage 2026]]).
-- **Dangling** (single-source mentions, deferred): **Abbie Lundberg** (MIT SMR EIC, host), **Thomas H. Davenport** (Babson/MIT; very strong future-promotion candidate), **Keri Pearlson** (MIT Sloan CAMS director; strong candidate), **Melissa Swift**, **George Westerman** (MIT Sloan), **Monica Caldas**, **Max Chan**, **Meghna Shah**, **Ramesh Razdan**, **Vanessa Escrivá García**, **Kabir Nagrecha**.
+- **Promoted 2026-07-15** (second-source promotion, on [[2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16|the MIT Sloan CIO Symposium weekly podcast]]): [[Thomas H. Davenport]] (Babson/MIT).
+- **Dangling** (single-source mentions, deferred): **Abbie Lundberg** (MIT SMR EIC, host), **Keri Pearlson** (MIT Sloan CAMS director; strong candidate), **Melissa Swift**, **George Westerman** (MIT Sloan), **Monica Caldas**, **Max Chan**, **Meghna Shah**, **Ramesh Razdan**, **Vanessa Escrivá García**, **Kabir Nagrecha**.
 - Concepts: [[ai-agents]], [[automation-vs-augmentation]], [[agent-harness]], [[micro-productivity-trap]], [[enterprise-ai-adoption]], [[ai-employment-effects]].
 
 ## Relationships
 
 - *published-by* [[MIT Sloan Management Review]].
 - *contradicts* [[2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees]] — the *manage-like-employees* debate.
-- *supports* [[2026-06-02-architecting-ai-native-organizations-redesign-work-at-scale-joe-beutler]], [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures]], [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset]], [[2026-05-07-kiron-schrage-compound-benefits]].
+- *supports* [[2026-06-02-architecting-ai-native-organizations-redesign-work-at-scale-joe-beutler]], [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures]], [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset]], [[2026-05-07-kiron-schrage-compound-benefits]], [[2026-05-28-from-event-to-ecosystem-rethinking-how-technology-leaders-build-knowledge-in-the-ai-era]] (same event, reciprocal), [[2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16]] (Davenport continuity).

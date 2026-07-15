@@ -7,9 +7,9 @@ affiliation: "[[Stanford Digital Economy Lab]] / [[Stanford HAI]] / [[NBER]]"
 role: "Director, Stanford Digital Economy Lab; AI Index Steering Committee member"
 contact: "erikb@stanford.edu"
 confidence: 0.87
-last_confirmed: "2026-05-10"
-accessed_at: "2026-05-10"
-source_count: 4
+last_confirmed: "2026-07-15"
+accessed_at: "2026-07-15"
+source_count: 5
 relationships:
   - type: part-of
     target: Stanford-Digital-Economy-Lab
@@ -53,6 +53,10 @@ This is the wiki's headline empirical evidence for AI labor displacement.
 ### 3. Updated job-postings signal (cited in [[2026-04-14-thompson-the-daily-workers-letting-ai-do-their-jobs|Thompson 2026 (NYT The Daily)]])
 
 In the 14 April 2026 episode of *The Daily*, **Clive Thompson** cites a more recent Brynjolfsson analysis of job postings showing **software-developer hires down 16%** *"in the last year or so"* — extending the *Canaries* employment-stock signal (2022 onset, age-22-25 cohort, ~20% software-developer decline by July 2025) into the *hiring-flow* layer through 2025-26. Thompson reports the number verbally without naming the paper; primary-source ingest of the underlying job-postings analysis is an open target. The cited number is structurally consistent with — and somewhat sharper than — the headline numbers from *Canaries*, suggesting the trend is continuing rather than plateauing as AI coding tools mature.
+
+### 4. Named in the entry-level-hiring-slowdown debate ([[2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16|MIT Sloan CIO Symposium podcast, July 2026]])
+
+Allan Tate cites Brynjolfsson (and unnamed others) as having written on the slowdown in new-graduate hiring, without the debate being resolved as to whether AI or macroeconomic factors are the driver — a passing reference, not new Brynjolfsson content, but a fifth independent wiki appearance.
 
 ### Cross-paper synthesis
 

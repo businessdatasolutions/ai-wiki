@@ -58,8 +58,12 @@ relationships:
     target: 2025-07-02-joshi-venkatraman-fowler-expert-generalists
     via: "Allen leans on Fowler's *expert generalist* post explicitly (alongside the strangler-fig pattern) as the talent profile agentic AI amplifies — 'specialists broaden, generalists deepen → Renaissance developer'"
     confidence: 0.8
+  - type: supports
+    target: 2026-07-09-nyc-executive-forum-2026-a-leaders-guide-to-agentic-ai
+    via: "Reciprocal edge: a fourth AWS speaker (Ishit Vachhrajani, NYC Executive Forum) independently restates the hourglass organization, Singapore Davos-2026 governance model, Bedrock AgentCore, expert-generalist/renaissance-developer talent framing, and non-determinism-as-feature — organized around his own organization/trust/culture framework rather than USE/COMPOSE/BUILD. A close cousin, not another edition of this talk."
+    confidence: 0.6
 confidence: 0.8
-last_confirmed: "2026-05-25"
+last_confirmed: "2026-07-15"
 ---
 
 # London Executive Forum 2026 — A leader's guide to advanced team structures in an agentic world
@@ -77,8 +81,8 @@ A 43:54 keynote + customer case study filmed at the **AWS London Executive Forum
 
 **Authors / dangling list.** This is the first wiki source by both speakers; per the [[../../CLAUDE|author-entity promotion rule]] (second-source promotion), they go on the dangling list at this ingest and only get entity pages on a second citation:
 
-- **Entity:** [[Martin Fowler]] (strangler-fig pattern + expert-generalists post — promoted to an entity page on 25 Jun 2026).
-- **Dangling** (single-source mention, deferred): Jonathan Allen (AWS Executive in Residence), Nick Francis (Brooklyn Solutions co-founder / CTMO), Brooklyn Solutions (UK supplier-management scale-up — *organisation*), Anthony Liguori (AWS VP Distinguished Engineer, Project Mantle lead), Matt Garman (AWS CEO, quoted by Allen on the junior-hiring crisis), Jeff Bezos (named by Allen as having *"eliminated level 9 in Amazon"*), Scott Galloway (quote: *"AI won't take your job. Someone using AI will"*), Rory Sutherland (quote on probabilistic-vs-deterministic business), Werner Vogels (re:Invent keynote anchor for *"renaissance developer"*), William Gibson (the *"future is here but not evenly distributed"* quote).
+- **Entities:** [[Martin Fowler]] (strangler-fig pattern + expert-generalists post — promoted to an entity page on 25 Jun 2026); [[Jonathan Allen]] (promoted on the 2026-07-14 ingest of [[2025-12-02-allen-brozovich-davis-aws-reinvent-advanced-team-structures|the earlier re:Invent 2025 edition of this same talk]], per the second-source rule).
+- **Dangling** (single-source mention, deferred): Nick Francis (Brooklyn Solutions co-founder / CTMO), Brooklyn Solutions (UK supplier-management scale-up — *organisation*), Anthony Liguori (AWS VP Distinguished Engineer, Project Mantle lead), Matt Garman (AWS CEO, quoted by Allen on the junior-hiring crisis), Jeff Bezos (named by Allen as having *"eliminated level 9 in Amazon"*), Scott Galloway (quote: *"AI won't take your job. Someone using AI will"*), Rory Sutherland (quote on probabilistic-vs-deterministic business), Werner Vogels (re:Invent keynote anchor for *"renaissance developer"*), William Gibson (the *"future is here but not evenly distributed"* quote).
 
 ## TL;DR
 
@@ -319,3 +323,5 @@ The closing aphorism's interpretation matters — *momentum beats perfection* is
 - Is the **Project Mantle** ratio (76 days actual / ~18 months estimated) reproducible across AWS services / other vendors? Allen cites it as anecdotal-but-real; what would a corpus of 20–50 such ratios look like?
 - Does the **5× expectation** (5× output / ≤25% opex) hold for Brooklyn at a year horizon, or is it a phase-3 forecast that the multi-agent phase-4 will revise? Worth a follow-up ingest if Brooklyn publishes quarterly retrospectives.
 - Is the **Singaporean Davos-2026 governance model** the dominant emerging framework, or do the [[eu-ai-act|EU AI Act]] / NIST AI RMF / UK AI assurance frameworks converge with it? Worth comparing once an ingestible source on the Singaporean model lands.
+
+**Resolved 2026-07-15:** a fourth AWS speaker independently restates much of this doctrine at a fourth event — [[2026-07-09-nyc-executive-forum-2026-a-leaders-guide-to-agentic-ai|Ishit Vachhrajani's NYC Executive Forum keynote]] — but organized around his own organization/trust/culture framework (the same four mental-model shifts Brozovich credits to him on the re:Invent origin edition) rather than USE/COMPOSE/BUILD. See that page's `relationships:` block for the full comparison; treated as a close cousin, not a fourth edition of this talk.

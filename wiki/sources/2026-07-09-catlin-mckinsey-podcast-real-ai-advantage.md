@@ -27,6 +27,10 @@ relationships:
     target: 2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting
     via: "Same firm, same reinvention-over-productivity thesis — Sternfels applies it reflexively to McKinsey's own consulting business model, Catlin generalizes it as prescriptive advice for any CEO facing AI-driven competitive parity on pure efficiency gains."
     confidence: 0.6
+  - type: supports
+    target: 2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16
+    via: "reciprocal — independent corroboration from a different venue (MIT Sloan CIO Symposium podcast) of the identical headline claim that organizational redesign, not technology access, is the AI-era competitive differentiator"
+    confidence: 0.75
 ---
 
 # The real AI advantage
@@ -61,6 +65,7 @@ Published the same day it was ingested (2026-07-09), this is the wiki's most cur
 - Supplies a clean three-lever theory of **future competitive advantage** (proprietary data, habit-embedding, metabolic rate of learning) that sharpens the wiki's [[enterprise-ai-adoption]] material beyond "deploy AI" toward "what specifically compounds."
 - The **knowledge-based → outcome-based organization** shift and the **strategy / technology / people** three-lens framing are new, reusable organizational vocabulary for [[organizational-frameworks-for-ai-adoption]].
 - The 53%-activities-automatable / job-reconfiguration-not-elimination claim is a concrete data point for [[ai-employment-effects]] and [[automation-vs-augmentation]].
+- Independently corroborated from a different venue by [[2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16|the MIT Sloan CIO Symposium's weekly podcast]] (July 2026), which names organizational capability, not technology access, as the AI-era competitive differentiator — the same headline claim in different words.
 
 ## Linked entities and concepts
 

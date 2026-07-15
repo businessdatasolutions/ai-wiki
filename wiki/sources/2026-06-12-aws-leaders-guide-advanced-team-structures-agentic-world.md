@@ -31,6 +31,10 @@ relationships:
   - type: uses
     target: 2025-07-02-joshi-venkatraman-fowler-expert-generalists
     via: "Brovich cites Fowler/ThoughtWorks 'expert generalist' (July 2025) by name as the talent profile agentic AI amplifies — 'an agent multiplies a curious person… rewards deep fundamentals, not surface-level certification collecting'; pairs it with Vogels' Renaissance-developer and the Anthropic-hackathon non-developer-wins evidence"
+  - type: supports
+    target: 2026-07-09-nyc-executive-forum-2026-a-leaders-guide-to-agentic-ai
+    via: "Reciprocal edge: independent citation of the identical Anthropic Build-with-Claude hackathon data point (same 13,000-entries/500-selected figures, same lawyer-and-cardiologist top finishers) by a fourth AWS speaker (Ishit Vachhrajani, NYC Executive Forum), plus shared hourglass-organization and Singapore-governance content. A close cousin talk, not another edition of this franchise."
+    confidence: 0.55
 ---
 
 # A leader's guide to advanced team structures in an agentic world
@@ -82,8 +86,8 @@ As a near-replication of the Allen talk three weeks later, this source's main co
 ## Linked entities and concepts
 
 - Channel: [[Amazon Web Services]] (AWS Events).
-- **Entities:** [[Martin Fowler]] (expert-generalist coiner — promoted to an entity page on 25 Jun 2026), [[Thoughtworks]] (his employer/publisher).
-- **Dangling** (single-source mentions, deferred): **Steven Brovich** (AWS Enterprise Strategist, presenter), Tom Godden (AWS Enterprise Strategy), Werner Vogels (Renaissance developer; also Allen), Scott Galloway (also Allen), Josephine Teo (Singapore Minister), Mikkel Nettoko (hackathon 3rd place).
+- **Entities:** [[Martin Fowler]] (expert-generalist coiner — promoted to an entity page on 25 Jun 2026), [[Thoughtworks]] (his employer/publisher), [[Steven Brovich]] (AWS Enterprise Strategist, presenter — promoted on the 2026-07-14 ingest of [[2025-12-02-allen-brozovich-davis-aws-reinvent-advanced-team-structures|the earlier re:Invent 2025 edition of the "advanced team structures" talk]], where he appears under the ASR spelling "Stephen Brozovich," per the second-source rule).
+- **Dangling** (single-source mentions, deferred): Tom Godden (AWS Enterprise Strategy), Werner Vogels (Renaissance developer; also Allen), Scott Galloway (also Allen), Josephine Teo (Singapore Minister), Mikkel Nettoko (hackathon 3rd place).
 - Concepts: [[expert-generalist]], [[automation-vs-augmentation]], [[ai-employment-effects]], [[foundation-models]], [[agent-harness]], [[enterprise-ai-adoption]], [[responsible-ai]].
 
 ## Relationships
@@ -91,3 +95,4 @@ As a near-replication of the Allen talk three weeks later, this source's main co
 - *supports* [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures]] — the same talk, Sydney edition; corroboration + quantified specifics.
 - *supports* [[2026-06-12-aws-leaders-guide-data-strategy-agentic-ai]] — sibling same-day AWS Sydney keynote.
 - *supports* [[2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai]] — presents this Anthropic "March study" as its empirical spine.
+- *supports* [[2026-07-09-nyc-executive-forum-2026-a-leaders-guide-to-agentic-ai]] — a fourth AWS speaker (Ishit Vachhrajani, NYC Executive Forum) independently cites the identical Anthropic Build-with-Claude hackathon figures this page names, plus the shared hourglass-organization and Singapore-governance content; a close cousin, not another edition of this talk.

@@ -30,6 +30,10 @@ relationships:
     target: 2026-06-02-architecting-ai-native-organizations-redesign-work-at-scale-joe-beutler
     via: "Both sources share the same three W&W cells (balancing-digital-portfolios, redesigning-internal-structures, improving-digital-maturity) — Beutler's talk gives the architecture-level playbook for org redesign at scale; Priest gives PwC's own lived instance (internal GPT built from transformation-practice learnings, task-registration 'operating system' for agents, hourglass restructuring)."
     confidence: 0.7
+  - type: supports
+    target: 2026-07-10-building-the-future-of-agentic-infrastructure
+    via: "Both describe agents becoming invisible operational infrastructure rather than discrete tools — Priest's task-registration 'operating system' for PwC's internal agent deployment parallels this video's 'agents as an invisible substrate... more like an operating system' vision, from enterprise-operator and platform-vendor vantages respectively"
+    confidence: 0.55
 ---
 
 # How AI Agents Are Changing Business - PwC Chief AI Officer Dan Priest
@@ -74,6 +78,7 @@ This is the wiki's first source **authored from inside a Big Four professional-s
 - [[jagged-frontier]] — "the best talent gets the most from AI" is a direct practitioner corroboration.
 - [[organizational-frameworks-for-ai-adoption]] — the hourglass-organization model is a second independent data point for this synthesis.
 - **PwC** — first wiki mention of this organization as a central subject (not a passing mention); promoted to an entity page on this ingest given the depth of firm-specific detail (internal GPT, task-registration "operating system" for agents, hiring figures, Southwest Airlines case study).
+- [[2026-07-10-building-the-future-of-agentic-infrastructure|Building the future of agentic infrastructure]] — a second, platform-vendor-side voice on agents becoming invisible operating-system-like infrastructure rather than discrete tools.
 - **Dangling** (single-source mention, deferred per [Author-entity promotion](../../CLAUDE.md#author-entity-promotion)): **Dan Priest** (Chief AI Officer, PwC; interviewee) — first wiki mention; promote on second-source mention. **Nicholas Thompson** (CEO, The Atlantic; host/channel author) — first wiki mention; promote on second-source mention.
 
 ## Source quality

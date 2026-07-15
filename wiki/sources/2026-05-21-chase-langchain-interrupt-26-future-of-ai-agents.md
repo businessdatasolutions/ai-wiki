@@ -36,6 +36,10 @@ relationships:
   - type: supports
     target: 2026-05-20-tan-hu-stanford-cs153-ai-native-company-1000x-engineer
     via: "Paired *founder/CEO articulations of layered-agent-system thinking* landing within 24 hours. Tan/Hu (CS153, 20 May) maps **agentic-primitives → company-structure** (skills = employees, resolvers = org chart, check-resolvable = audit, trigger evals = performance reviews). Chase (Interrupt 26, 21 May) maps **learning-systems → agentic-system-layers** (model / harness / context, each independently improvable with evals-as-gradient). Same architectural move (decompose-and-map) applied to two different domains: *what an organisation looks like with agents at its core* vs *what improvement-loops look like inside an agentic system*. Both founders articulate the *everyone-builds-agents* corollary: Hu's *AI founder / IC / DRI* org structure + Chase's *domain experts will be building agents, not just giving feedback*."
+  - type: supports
+    target: 2026-07-08-jensen-huang-why-companies-need-open-agent-systems
+    via: "Chase (interviewer in the later NVIDIA video) extends his own **model/harness/context** three-layer continual-learning model with a concrete cross-company worked example — NVIDIA post-training Nemotron 3 Ultra against the LangChain Deep Agents harness, tuning the harness's prompts and tools per-model — and Huang's cited benchmark (Nemotron 3 Ultra 86% vs Claude Opus 87%, ~10x cheaper) independently corroborates this keynote's **'three drivers of open-source models rising'** (capability gap closing, cost, trainability via fine-tuning on agent-run traces)."
+    confidence: 0.65
 ---
 
 # Chase, Sproul & di Vittorio — The Future of AI Agents: What Will Interrupt 2027 Look Like? (LangChain Interrupt 26)
@@ -122,6 +126,8 @@ This source lands three structural extensions to the wiki's existing LangChain c
 | Chase / Interrupt 26 (21 May) | **Learning-systems → agentic-system-layers** | Model / Harness / Context — each independently improvable, with evals-as-gradient |
 
 Both founders extend the *everyone-builds-agents* corollary: Hu's *AI founder / IC / DRI* org structure (24 April) + Chase's *domain experts will be building agents, not just giving feedback* (this source). The 2026 founder-CEO doctrine is converging on **decompose-the-agent-stack and let-domain-experts-own-each-layer** as the operating posture.
+
+**Follow-on: Chase interviews NVIDIA's Jensen Huang seven weeks later** ([[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|8 Jul 2026]]). Chase steps into the interviewer role rather than headlining, drawing out a concrete cross-company instance of this keynote's model/harness/context layering — NVIDIA post-training Nemotron 3 Ultra against the Deep Agents harness — and a named benchmark (Nemotron 3 Ultra 86% vs Claude Opus 87%, ~10x cheaper) that independently corroborates this keynote's "open-source models rising" driver.
 
 ## What was actually ingested
 

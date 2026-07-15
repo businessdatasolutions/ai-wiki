@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-07-09"
-accessed_at: "2026-07-09"
-source_count: 52
+last_confirmed: "2026-07-14"
+accessed_at: "2026-07-14"
+source_count: 54
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -383,6 +383,16 @@ The Lyft / HubSpot / Emergent triple is the wiki's first cluster on the automati
 ## The score→verify→fix loop generalises across domains ([[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Grinstead / How I AI, June 2026]])
 
 [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Grinstead (June 2026)]] anchors the augmentation pole in a production security workflow and names its transfer pattern. Agents do the *"relentless tedium"* of hypothesis-test-retry (*"our cognitive energy declines over time in a way agents don't"*) — the automation leg — while **humans review every fix** and the team adds judgment (*"this looks like a real issue, but we should check a few other places"*). *"We're pretty far from a web-browser-scale project being autonomously developed… we have requirements for people who write the code and review the code."* The transferable claim: the **score → verify → fix loop** (LLM judge prioritises → agent acts → verifier/guardrail checks → human ships) generalises beyond security to *"design quality, conversion rate, or tech debt"* — *"you have a performance benchmark, it gives a score, you tell the agent: make that number go down"* — a *"pattern repeated across many domains."* This is the augmentation cut executed as a reusable agentic-workflow shape, with the verifier/guardrail as the thing that keeps the agent from gaming the objective (the P95-latency-by-deleting-the-feature failure).
+
+## "3x more with the same resources, never a catalyst for layoffs": a nonprofit's augmentation-first policy stance ([[2026-07-14-khan-academy-ceo-the-real-ai-opportunity-is-in-boring-industries-sal-khan|Khan / Silicon Valley Girl, July 2026]])
+
+[[Khan Academy]] CEO **Sal Khan** states an explicit, budget-anchored **augmentation-first policy**, distinct from the wiki's mostly-empirical automation/augmentation evidence: *"Khan Academy is the budget of a large high school. If we could do three times more with the same resources, we will do three times more... that would never be the catalyst for layoffs."* The mechanism Khan names is specific to a resource-constrained nonprofit — demand for the mission (more students served, more content produced) is effectively unbounded relative to budget, so productivity gains convert to *more output* rather than *fewer workers*; Khan explicitly attributes any future layoffs to a philanthropy/earned-revenue shortfall, never to AI capability itself.
+
+This sits in useful tension with the same source's **call-center example** — a VC portfolio company's Philippines-based BPO call center automated ~80% of its workforce with generative AI — which is squarely an *automation* deployment with no augmentation offset. Read together, Khan's testimony illustrates that the automation/augmentation choice is not fixed by the technology but by the **deployer's demand elasticity**: a mission-bounded-only-by-budget nonprofit has effectively infinite latent demand to absorb productivity gains as augmentation, while a cost-center BPO operation (fixed demand for call volume, no revenue upside to serving more calls) has no such absorption and defaults to automation/headcount reduction. This is a specific, named mechanism for *why* the same underlying capability gain produces opposite automation/augmentation outcomes depending on the deploying organization's economics — complementary to, not contradicting, the existing [[2026-04-28-ai-index-report-2025|AI Index]] equalizing-effect and [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson]] displacement findings above.
+
+## A third independent citation of "someone using AI will," echoed customer-side ([[2025-12-02-allen-brozovich-davis-aws-reinvent-advanced-team-structures|AWS re:Invent, December 2025]])
+
+Scott Galloway's *"AI won't take your job, somebody using AI will"* is now cited across all three editions of the AWS Enterprise Strategy "advanced team structures" talk franchise ([[2025-12-02-allen-brozovich-davis-aws-reinvent-advanced-team-structures|re:Invent, Dec 2025]], [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|London, May 2026]], [[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world|Sydney, Jun 2026]]). The re:Invent edition adds a **customer-side echo**: [[Danske Bank|Danske Bank]] CTO Richard Davis counters employee resistance ("why should I be using something that can replace me?") with the same reframe verbatim — *"GenAI won't necessarily replace your role, but people using GenAI potentially will."* Amazon's own internal asymmetric-resource-allocation framework (same source; see [[enterprise-ai-adoption]]) is a structural companion: strategic-differentiated work stays overwhelmingly human-judgment-led (~25% AI at most) while business-compliant, routine work skews heavily toward automation — an organizational-design instance of calibrating the automation/augmentation choice by work type rather than applying it uniformly.
 
 ## Debates and supersession
 

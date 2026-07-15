@@ -4,9 +4,9 @@ kind: person
 aliases: ["Michael Schrage", "Schrage", "M. Schrage"]
 tags: [mit-sloan-initiative-on-the-digital-economy, mit, ai-research, human-in-the-loop, agentic-ai, compounding-vs-consumption]
 confidence: 0.75
-last_confirmed: "2026-06-15"
-accessed_at: "2026-06-15"
-source_count: 2
+last_confirmed: "2026-07-15"
+accessed_at: "2026-07-15"
+source_count: 3
 ---
 
 # Michael Schrage
@@ -17,6 +17,7 @@ Research fellow at the **MIT Sloan Initiative on the Digital Economy**, writing 
 
 - [[2026-05-07-kiron-schrage-compound-benefits|Kiron & Schrage 2026]] — co-author (with [[David Kiron]]) of *How to Reap Compound Benefits From Generative AI* ([[MIT Sloan Management Review]], Apr 2026): the **consumption→compounding** thesis (reorient AI from asset-depreciation to asset-appreciation via a verify-evaluate-learn-capture flywheel). A precise restating of the [[micro-productivity-trap]] escape.
 - [[2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner|MIT SMR / 2026 CIO Symposium]] — speaker; contributes the **in-the-loop vs on-the-loop** distinction and the split between agents that execute explicit tasks ("Do this!") and agents that clarify intent ("Should I do this?"). *"I am still more comfortable being in the loop… I don't trust deterministic software agents yet."*
+- [[2026-05-28-from-event-to-ecosystem-rethinking-how-technology-leaders-build-knowledge-in-the-ai-era|MIT Sloan CIO Symposium keynote, May 2026]] — named (ASR: "Michael Shre") as delivering a symposium session on **"governance as strategy"** the day after the keynote; a passing forward-reference, not substantive content from Schrage in this transcript, but a third independent appearance confirming his throughline role at the symposium.
 
 ## Why he is an entity (promotion note)
 

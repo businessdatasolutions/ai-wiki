@@ -3,9 +3,9 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-07-01"
-accessed_at: "2026-07-01"
-source_count: 35
+last_confirmed: "2026-07-14"
+accessed_at: "2026-07-14"
+source_count: 36
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -240,6 +240,17 @@ Most durable-skills sources are *labour-market* or *practitioner* evidence about
 - **An explicit priority ranking.** Curiosity is named the single most urgent skill *right now* ("be curious about these tools… let that curiosity build"); creativity is named the best long-term bet, on the argument that as execution commoditises, humans increasingly need to generate new ideas/business lines rather than just execute — convergent with [[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Mollick's]] *taste* framing and [[2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why|Guilbeault's]] cognitive-science case for conceptual leaps/insight as AI-resistant.
 
 Courage and compassion are new labels in the wiki's durable-skills vocabulary cluster — courage overlaps with [[2026-02-09-ross-schneider-adaptability|Ross & Schneider's]] *adaptability* (both name the willingness to act under uncertainty) and compassion is closest to the page's *collaboration* construct (Globerson et al.) but foregrounds the interpersonal-care dimension more explicitly than "collaboration" does. Per [Lifecycle rules](../../CLAUDE.md#lifecycle) this single-source, promotional-book popularisation does not lift the page's confidence past its 0.95 ceiling — its value is a fifth independent vocabulary (after Globerson's measurement battery, Storoni's neuroscience, Schoening's agency framing, and Forsgren-Macvean's engineering-team taxonomy) converging on the same underlying cluster.
+
+## The ETS five-skill framework + an accredited degree built around it ([[2026-07-14-khan-academy-ceo-the-real-ai-opportunity-is-in-boring-industries-sal-khan|Khan / Silicon Valley Girl, July 2026]])
+
+[[Khan Academy]] CEO **Sal Khan** names a sixth independent durable-skills vocabulary — **ETS's framework: communication, collaboration, creativity, critical thinking**, plus sub-frameworks such as leadership — and, distinctively among the wiki's durable-skills sources, is **building an accredited degree program around it rather than just naming it**. The **Content Institute** (a joint venture with **TED**, where Khan succeeds Chris Anderson as "vision steward," and **ETS**) is an accreditation-pending, competency-based bachelor's/master's degree capped at $10,000, assessed via **group simulations and portfolios** rather than GPA or transcript signaling — students work in Zoom-based teams to build a business (prototype, ad, business plan, competitive research) over several hours, then receive peer and multi-rater feedback on communication, collaboration, and creativity specifically. Six corporate co-design partners at launch (**McKinsey, Bain, Google, Microsoft, Replit, Accenture**) help define what "job-ready" durable-skills evidence should look like and commit to weighting Content Institute portfolios comparably to elite-university signals in hiring.
+
+Two framing points connect this to the page's existing vocabulary cluster:
+
+- **Vocabulary convergence.** ETS's five skills overlap heavily with [[2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026|Raman/Wood's 5 C's]] (creativity, curiosity, courage, compassion, communication) and with Globerson et al.'s measurement battery — a sixth independent naming of the same small human-skills cluster, this time from a psychometric-testing organization (ETS, the TOEFL/GRE publisher) rather than a labour-economics or neuroscience source.
+- **Assessment-as-product, not just assessment-as-measurement.** Where Globerson et al. and Vantage are measurement *instruments*, the Content Institute packages durable-skills assessment directly into a **credentialing product** — closer in kind to a college degree than to a benchmark. This is the wiki's first durable-skills source where the measurement methodology *is* the deliverable rather than a research contribution.
+
+Khan's explicit motivation ties back to [[ai-employment-effects]]: *"Someone today graduates from Stanford... probably smart, good GPA... but that's only a signal, not an evaluation."* The Content Institute's pitch to employers is that 20-50 rigorously-designed, peer-reviewed project simulations are a stronger evaluative signal than a GPA-and-résumé screen — explicitly positioned as a lower-cost, non-elite-university alternative signal, not a replacement for the underlying skills claim already established on this page.
 
 ## Related concepts
 

@@ -7,9 +7,9 @@ parent: "[[Amazon]]"
 ticker: "AMZN (Amazon)"
 website: "https://aws.amazon.com"
 confidence: 0.85
-last_confirmed: "2026-06-15"
-accessed_at: "2026-06-15"
-source_count: 6
+last_confirmed: "2026-07-15"
+accessed_at: "2026-07-15"
+source_count: 8
 ---
 
 # Amazon Web Services
@@ -30,11 +30,14 @@ AWS runs an "Executives in Residence" program advising Fortune 500 leadership te
 
 ### The AWS Events keynote series ("AWS Events" YouTube channel)
 
-The **AWS Enterprise Strategy** team (former C-level executives — Jonathan Allen, **Steven Brovich**, Tom Godden, et al.) delivers a recurring executive-forum keynote on agentic-AI leadership, published on the **AWS Events** channel (an alias of this entity). Three are in the wiki, all sharing the same four-question framework (economics / talent / structure / governance) and USE/COMPOSE/BUILD doctrine:
+The **AWS Enterprise Strategy** team (former C-level executives — [[Jonathan Allen]], **[[Steven Brovich]]**, Tom Godden, et al.) delivers a recurring executive-forum keynote on agentic-AI leadership, published on the **AWS Events** channel (an alias of this entity). Four editions are in the wiki, the first three forming one talk lineage that matured from a five-question frame to the four-question frame (economics / talent / structure / governance) and USE/COMPOSE/BUILD doctrine:
 
-- [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|London Exec Forum — advanced team structures]] (Jonathan Allen, 21 May 2026).
-- [[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world|Sydney — advanced team structures]] (Steven Brovich, 12 June 2026) — the near-replication that corroborates the framework + adds quantified specifics (pricing scissors, Models A/B/C, deeper Singapore governance).
+- [[2025-12-02-allen-brozovich-davis-aws-reinvent-advanced-team-structures|AWS re:Invent 2025 — advanced team structures]] (Jonathan Allen + Stephen Brozovich [[Steven Brovich|= Steven Brovich]] + customer Richard Davis/Danske Bank, 2 December 2025) — the **origin edition**, predating USE/COMPOSE/BUILD, the hourglass-organization term, and Project Mantle.
+- [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|London Exec Forum — advanced team structures]] (Jonathan Allen, 21 May 2026) — a revised edition ("400 hours of revision" per Allen), adding USE/COMPOSE/BUILD, hourglass organization, the moats-erosion thesis, and Project Mantle.
+- [[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world|Sydney — advanced team structures]] (Steven Brovich, 12 June 2026) — a further near-replication that corroborates the London framework + adds quantified specifics (pricing scissors, Models A/B/C, deeper Singapore governance).
 - [[2026-06-12-aws-leaders-guide-data-strategy-agentic-ai|Sydney — data strategy in the era of agentic AI]] (former-CIO Enterprise Strategist, 12 June 2026) — the data-layer companion (data-products, markdown-for-agents, minimum-viable-governance).
+
+A fifth, related-but-distinct talk shares the same AWS Enterprise Strategy doctrine without belonging to the "advanced team structures" lineage: [[2026-07-09-nyc-executive-forum-2026-a-leaders-guide-to-agentic-ai|NYC Executive Forum — A Leader's Guide to Agentic AI]] ([[Ishit Vachhrajani]], 9 July 2026) — a different title, speaker, and event, organized around an organization/trust/culture framework rather than USE/COMPOSE/BUILD, but independently reaching the hourglass organization, Singapore governance, Bedrock AgentCore, and non-determinism-as-feature. Vachhrajani is himself the originating author of the four mental-model shifts (gates→guardrails, factory-floor→trading-floor, silos→immune-system, operational-execution→research-lab) [[2025-12-02-allen-brozovich-davis-aws-reinvent-advanced-team-structures|Brozovich credits to him]] on the re:Invent 2025 edition.
 
 Discount the Octopus framing slightly for AWS's commercial interest, but the underlying argument is well-supported by examples external to AWS (Netflix, Google, Coca-Cola, U.S. Army).
 
@@ -67,7 +70,8 @@ The wiki's longitudinal-AWS-doctrine reading: **the three-layer stack has stabil
 
 - [[Jana Werner]] — Executive in Residence, AWS; co-author of the Octopus Org book and HBR article.
 - [[Phil Le-Brun]] — Executive in Residence, AWS; co-author of the Octopus Org book and HBR article.
-- **Jonathan Allen** — Executive in Residence, AWS; headline speaker at the 2026 London Executive Forum (*Dangling* — single-source so far, deferred entity-page promotion per [second-source rule](../../CLAUDE.md#author-entity-promotion)).
+- [[Jonathan Allen]] — Executive in Residence, AWS; headline speaker at the re:Invent 2025 origin talk and its revised London Executive Forum 2026 edition.
+- [[Steven Brovich]] — AWS Enterprise Strategist (Amazon since 1999); co-presenter (as "Stephen Brozovich") at re:Invent 2025, sole presenter of the Sydney 2026 edition.
 - **Anthony Liguori** — VP Distinguished Engineer, AWS; Project Mantle lead in Allen's keynote (76-day Bedrock-substrate-rebuild case) (*Dangling*).
 - **Matt Garman** — AWS CEO (since June 2024); quoted by Allen on the junior-hiring-crisis moral framing (*Dangling*).
 - **Francesca Vasquez** — AWS executive who introduced AgentCore / security-agent / DevOps-agent at the London Forum earlier the same day (*Dangling*; first-name-only in the transcript, presumed Francesca Vasquez).
