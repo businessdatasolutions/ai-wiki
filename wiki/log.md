@@ -10,6 +10,23 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-07-15] synthesize | Harness thinning is layer-specific — business logic thins, identity/trust infrastructure hardens
+
+Closes the new [[threads/harness-thinning-what-persists|harness-thinning-what-persists]] thread, opened and closed the same session. Three sources from the same-day 7-video batch — [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Huang/NVIDIA]], [[2026-07-10-building-the-future-of-agentic-infrastructure|the Claude Platform team]], and [[2026-07-09-nyc-executive-forum-2026-a-leaders-guide-to-agentic-ai|Vachhrajani/AWS]] — converge in the same week on "harnesses thin as models improve," each from a materially different vendor incentive (substrate/silicon, first-party model+platform, cloud/enterprise).
+
+**[[syntheses/harness-thinning-what-persists|harness-thinning-what-persists]]** partially resolves the [[agent-harness]] concept page's live Kilpatrick ("model eats the harness," transient alpha) vs. Chatterjee ("model rented, harness owned," durable moat) tension: overlaying the three new sources onto Chatterjee's own Context/Constraints/Contracts/Compounding taxonomy shows thinning is **layer-specific, not uniform** — the business-logic content of Context/Constraints erodes toward the model exactly as Kilpatrick predicts, while the identity/access-control/trust substrate (OpenShell, Bedrock AgentCore, Claude Platform service-account provisioning) hardens, with three vendors of competing incentives all investing in more of it. Names **meta-harnesses** (competitive multi-agent search, adversarial generator/critic pairs, an advisor "call a friend" strategy) as where subtracted business-logic complexity relocates — new architecture vocabulary not previously in the wiki's ~20-source agent-harness cluster. Names a second independent vendor-CEO articulation (Huang, after Nadella) of "specialize only after starting with the frontier."
+
+Updated [[agent-harness]]'s Debates and supersession section to point at the resolution. 9 sources consulted (3 new + 6 already in the harness cluster). Confidence 0.82 — the layer-specific-thinning claim is inferred from converging vendor accounts and revealed product-investment preference, not a controlled measurement; open questions carry this forward.
+
+## [2026-07-15] synthesize | Organizational-frameworks synthesis refreshed — orchestration over adoption, a third hourglass voice, two more lived operator cases
+
+**Refresh** (not a new synthesis) of [[syntheses/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]], folding in 4 of the 7 sources from the same-day video batch (the other 3 feed the sibling [[syntheses/harness-thinning-what-persists|harness-thinning-what-persists]] synthesis above).
+
+No new stack layer, but four reinforcements: (1) [[2026-05-28-from-event-to-ecosystem-rethinking-how-technology-leaders-build-knowledge-in-the-ai-era|Allan Tate's MIT Sloan CIO Symposium keynote]] reframes the cluster's governing question as *"orchestration of technology, not adoption,"* and supplies a normative test (production up **and** understanding up = success) the decision tree previously lacked; (2) [[2026-07-09-nyc-executive-forum-2026-a-leaders-guide-to-agentic-ai|Vachhrajani/AWS]] reaches the **hourglass organization** independently of the "advanced team structures" franchise he originated the mental-model-shifts framework for — a third independent voice after Allen/AWS and Priest/PwC; (3) [[2025-12-02-allen-brozovich-davis-aws-reinvent-advanced-team-structures|the AWS re:Invent 2025 origin edition]] adds Danske Bank as a second banking-sector lived multi-framework operator case (a 35%-coding-time PDLC overhaul, structurally identical to Vachhrajani's own internal-Amazon 15-parallel-agents anecdote in this same batch); (4) [[2026-07-14-khan-academy-ceo-the-real-ai-opportunity-is-in-boring-industries-sal-khan|Khan Academy]] supplies the cluster's first nonprofit-sector lived case. Three lived operator cases (DBS, Danske, Khan Academy) now exist for open question #4 (do the frameworks converge on one firm).
+
+source_count 16 → 20. `last_refreshed`/`last_confirmed`/`accessed_at` bumped to 2026-07-15.
+
+
 ## [2026-07-15] ingest | The Claude Platform team on agent identity, thinner harnesses, and agentic ROI staging — closing the 7-video batch
 
 A user-supplied YouTube URL (video 7 of 7, closing a same-day-origin batch), acquired via `youtube-transcript-skill` and processed in this session.
