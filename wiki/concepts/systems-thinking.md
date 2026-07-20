@@ -2,10 +2,10 @@
 type: concept
 aliases: ["systems thinking", "systems-thinking"]
 tags: [systems-thinking, innovation, sustainability, design-thinking, breakthrough-thinking, wicked-problems]
-confidence: 0.82
-last_confirmed: "2026-05-22"
-accessed_at: "2026-07-11"
-source_count: 5
+confidence: 0.87
+last_confirmed: "2026-07-19"
+accessed_at: "2026-07-19"
+source_count: 6
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -127,6 +127,17 @@ The convergence point: four sources now (Bansal-Birkinshaw / Sterman / Carrier /
 - **University of Guelph regenerative agriculture program** — climate change reframed as soil health.
 - **Co-operators (Canadian insurance)** — "drying in place" + "soft contents" cleaning to disrupt the flow of damaged materials to landfills.
 - **CSA Group circular built environment** — UN Environment Programme cites ~37% of global carbon emissions from built environment, ~38% reducible through circular design.
+
+### The hiring-criteria altitude — Netflix's CPTO ([[2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era|Stone / Lenny's Podcast, July 2026]])
+
+**Elizabeth Stone** (Chief Product and Technology Officer, [[Netflix]]) supplies the wiki's first *corporate hiring-criteria* vantage on systems thinking, distinct from the four altitudes already on this page (Bansal-Birkinshaw's strategic-innovation framing, Sterman's operational-decision-making discipline, Carrier's industrial-AI application, Forsgren-Macvean's engineering-leadership register). Stone names systems thinking directly as the single most important rising skill across *every* function at Netflix — product, engineering, design, data science — not an engineering-specific capability: *"we need more systems thinkers in a world with AI... people who can look across all the business domains and abstract that to here's the building blocks we're going to need."*
+
+Two contributions sharpen the concept:
+
+- **A compact, teachable heuristic.** Stone's "one-click-zoom-out" — *"each problem you're trying to solve, step out one click to the — what am I assuming is true about the broader space"* — is an operationally minimal version of the discipline's causal-mapping and reframing tools ([[2026-05-15-sterman-systems-thinking-for-leaders-designing-solutions-that-work|Sterman]]'s group modeling; Bansal-Birkinshaw's *frame, reframe, repeat*), scaled down to a single-practitioner habit rather than a facilitated group process. A second framing — thinking about a problem the way your manager's manager would — is the individual-contributor-altitude version of the same widen-the-frame move.
+- **A concrete organizational mechanism systems thinking is hired *for*.** Netflix's shift toward central/core-infrastructure engineering generalists building shared **paved paths** — explicitly motivated by agents needing source-of-truth data and consistent scaffolding across systems — is a named business reason systems thinking has become a hiring priority, not just an abstract virtue. This converges with [[2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer|Forsgren & Macvean's]] *"designing systems, not just bits of code"* engineering-altitude claim, here restated from the hiring-manager's chair at a large public incumbent rather than a conference keynote.
+
+The convergence point: five sources now (Bansal-Birkinshaw / Sterman / Carrier / Forsgren-Macvean / Stone) span strategic-innovation, foundational decision-making, industrial-AI, engineering-leadership, and cross-functional-hiring-criteria altitudes of the same underlying discipline — the widest altitude spread yet for this concept.
 
 ## Debates and supersession
 

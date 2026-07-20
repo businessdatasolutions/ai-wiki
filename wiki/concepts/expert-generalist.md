@@ -2,10 +2,10 @@
 type: concept
 aliases: ["expert generalist", "Expert Generalist", "expert generalists", "generalist-specialist blend"]
 tags: [expert-generalist, generalist-vs-specialist, t-shaped, fundamentals-over-tools, patterns, mechanical-sympathy, durable-skills, distributed-systems-fundamentals, hiring, llms-and-skills]
-confidence: 0.75
-last_confirmed: "2026-06-25"
-accessed_at: "2026-06-25"
-source_count: 3
+confidence: 0.8
+last_confirmed: "2026-07-19"
+accessed_at: "2026-07-19"
+source_count: 4
 relationships:
   - type: supports
     target: durable-skills
@@ -53,8 +53,14 @@ This converges with the wiki's agentic-coding sources: [[2026-05-20-ng-deeplearn
 
 The concept is not anti-specialist. A team of pure generalists ships but is slower; keep **≥1 deep specialist per core technology**, full-time, and manage **Cost of Delay** (how fast questions get answered) rather than specialist utilisation. Specialists are often Expert Generalists themselves, with the specialty as one leg in their "T."
 
+### An independent corroboration without the term — Netflix's hiring practice ([[2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era|Stone / Netflix CPTO, July 2026]])
+
+**Elizabeth Stone** ([[Netflix]] CPTO) reaches the Expert Generalist's central claim independently — describing a hiring shift toward generalists who can "learn a broader array of tools" and away from narrow single-domain specialists, *while explicitly preserving specialist depth in a handful of genuinely scarce domains* (named example: playback/encoding systems) — without citing Fowler's term or the AWS franchise. Her formulation of the carve-out — "specialist and subject matter expertise is an advantage provided that person is willing to grow and extend" — is close in substance to Fowler's "be suspicious of a generalist with no deep specialties" and the "keep ≥1 deep specialist per core technology" prescription, arrived at from a large-incumbent hiring-practice vantage rather than a software-consultancy essay or a vendor-propagation citation of Fowler's own term.
+
+This is qualitatively different from the Allen/Brovich citations: those two *apply Fowler's named framework*; Stone *reaches the same underlying claim without ever citing it*. Genuine independent corroboration of the claim (not the term) justifies lifting confidence past the vendor-propagation cap — **0.75 → 0.8** — while the term-level claim (that "Expert Generalist" specifically, as opposed to the underlying generalist-plus-specialist-depth pattern, is a widely adopted label) remains anchored to Fowler's original coinage plus the two AWS propagations.
+
 ## Debates and supersession
 
-- **Three sources, but one origin (as of 2026-06-25).** The construct is *named* by one source ([[2025-07-02-joshi-venkatraman-fowler-expert-generalists]]); the two additional citing sources — [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen]] and [[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world|Brovich]], the London and Sydney editions of the *same* AWS Enterprise Strategy talk — *cite and apply* Fowler's term rather than independently corroborating it. They are vendor-altitude propagations of one original, so confidence sits at **0.75** (vendor-propagation cap), not higher. Genuine lift requires an *independent* source that uses the *Expert Generalist* framing and adds its own evidence. The *underlying* claim (fundamentals/generalism beat narrow specialisation; AI amplifies it) is separately corroborated by [[durable-skills]] sources, [[2026-05-20-ng-deeplearningai-ai-dev-26-sf-future-of-software-engineering|Ng]], and [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti]].
+- **Three citing sources, but the term itself still traces to one origin (as of 2026-07-19).** The *term* "Expert Generalist" is named by one source ([[2025-07-02-joshi-venkatraman-fowler-expert-generalists]]); [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen]] and [[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world|Brovich]] (London/Sydney editions of the same AWS Enterprise Strategy talk) *cite and apply* it rather than independently corroborating it — vendor-altitude propagations of one original. [[2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era|Stone]] breaks this pattern: she reaches the underlying claim independently, without citing the term, which is why confidence moved past the prior 0.75 vendor-propagation cap to 0.8 rather than staying capped. Further lift toward 0.85+ would need either a second source using the *named* Expert Generalist framing independently of Fowler/AWS, or additional independent-claim corroborations at Stone's caliber. The *underlying* claim (fundamentals/generalism beat narrow specialisation; AI amplifies it) is separately corroborated by [[durable-skills]] sources, [[2026-05-20-ng-deeplearningai-ai-dev-26-sf-future-of-software-engineering|Ng]], and [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti]].
 - **Open question — measurability.** The authors concede assessing the skill is "a difficult task, often requiring intensive participation from known-capable Expert Generalists." This is the tension with [[durable-skills]]' scalable-measurement programme: can the Expert Generalist trait-set be assessed at scale, or does it remain expert-judged?
 - **Open question — the certification critique.** Fowler claims "little correlation between certifications and competence." A source defending vendor certification value would create a genuine `contradicts` edge.

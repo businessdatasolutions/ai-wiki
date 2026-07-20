@@ -3,9 +3,9 @@ type: concept
 aliases: ["dynamic capabilities", "dynamic-capabilities", "Teece dynamic capabilities", "sense seize transform"]
 tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, microfoundations]
 confidence: 0.95
-last_confirmed: "2026-07-15"
-accessed_at: "2026-07-15"
-source_count: 22
+last_confirmed: "2026-07-19"
+accessed_at: "2026-07-19"
+source_count: 23
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -190,6 +190,17 @@ Jensen Huang's claim that **"most companies will be built on harnesses"** rather
 ## A first-party platform-vendor instance of redesigning-internal-structures and rapid-prototyping ([[2026-07-10-building-the-future-of-agentic-infrastructure|Claude Platform team, July 2026]])
 
 The Claude Platform team's own account of engineering-team reshaping — same headcount, most of the team now holding end-to-end design opinions while "orchestrating their Claudes" — is a first-party-vendor instance of `digital-transforming/redesigning-internal-structures`, complementing [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Huang's]] substrate-vendor instance of the same cell: two different vendor altitudes (silicon/model vendor vs. first-party platform vendor) independently naming the same restructuring shape. `digital-seizing/rapid-prototyping` is also present, but in a distinct register from prior instances of this cell: Angela Jiang's staged-ROI prescription (prove speed/productivity gains at individual scale before scaling to team, then company) is a lean-startup-style validate-small-first discipline applied to *internal AI-adoption measurement itself*, rather than to a product MVP — and the named hackathon system ("Urrea," an agentic industrial-knowledge-capture system) is a conventional rapid-prototyping worked example in the [[industrial-ai-agents]] application class.
+
+## A streaming-media-incumbent instance of redesigning-internal-structures, improving-digital-maturity, and organizational-culture ([[2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era|Stone / Netflix CPTO, July 2026]])
+
+**Elizabeth Stone**'s account of [[Netflix]]'s hiring and culture practices is the wiki's first instance of these three cells at a large, public, decades-old **streaming/entertainment** incumbent, distinct from the banking (DBS, Danske), retail (DFI), industrial (Rolls-Royce), professional-services (PwC), and nonprofit-education (Khan Academy) instances already on this page:
+
+- **`digital-transforming/redesigning-internal-structures`** — the hiring-mix shift toward systems thinkers and generalists across every function (not engineering alone), central/core-infrastructure engineering growing to build shared paved paths, and a universal AI-fluency career-ladder overlay applied identically from new hires through senior leadership, including hiring-process changes (AI-tool use now permitted in coding interviews).
+- **`digital-transforming/improving-digital-maturity`** — investment in common infrastructure so individual teams don't each rebuild source-of-truth-data access and guardrails from scratch, and AI-enabled distillation of decades of Netflix's own institutional experiments and insights, previously gated behind tenured employees' personal memory.
+- **`strategic-renewal/organizational-culture`** — *"excellence as an operating system"*: talent density, high agency/autonomy, comfort with risk-taking, resistance to adding process after failures (blameless retros over checklists), and the keeper's test — a culture doctrine Stone explicitly likens to how "the top AI labs operate," though she frames it as a decades-old Netflix doctrine the AI era has made newly legible rather than a response built specifically for AI.
+- **`digital-seizing/rapid-prototyping`** — PMs, designers, and data scientists getting further into the product-development life cycle (prototyping and testable code) before requiring an engineering handoff.
+
+Notable methodological point for the concept: Stone explicitly frames Netflix's culture doctrine as *predating* the AI era rather than as an AI-era response — closer in spirit to [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook|Erginbilgiç's]] non-AI Rolls-Royce case than to the AI-native operationalisations elsewhere on this page. This strengthens the page's working hypothesis (see Debates, below) that W&W's cells are transformation primitives rather than AI-specific mechanisms — Netflix's culture cell was already load-bearing before GenAI; the AI era changed what it needed to produce (systems thinkers, paved paths), not its existence.
 
 ## Debates and supersession
 

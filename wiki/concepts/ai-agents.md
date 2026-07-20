@@ -15,8 +15,8 @@ relationships:
   - type: uses
     target: react-reasoning-acting
     via: "the reason–act–observe loop at the centre of the agent definition originates in ReAct (2022)"
-quality_score: 0.87
-quality_notes: ['1 near-empty section(s)', '6 broken body wikilink(s)']
+quality_score: 0.89
+quality_notes: ['1 near-empty section(s)', '5 broken body wikilink(s)']
 ---
 
 # AI Agents

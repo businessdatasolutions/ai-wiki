@@ -5,10 +5,13 @@ aliases: ["Lenny's Podcast", "Lennys Podcast", "lennypodcast", "Lenny Rachitsky'
 tags: [lenny-podcast, podcast, product-management, consumer-tech, ai-era-strategy, founder-interviews, lenny-rachitsky]
 since: 2022
 confidence: 0.85
-last_confirmed: "2026-07-01"
-accessed_at: "2026-07-01"
-source_count: 6
+last_confirmed: "2026-07-19"
+accessed_at: "2026-07-19"
+source_count: 7
 relationships:
+  - type: published-by
+    target: 2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era
+    via: "Elizabeth Stone (Netflix CPTO) on systems thinking as the top rising hiring criterion, a universal AI-fluency career-ladder overlay, 'excellence as an operating system,' and paved-paths infrastructure hardening as agents proliferate (19 July 2026 — Stone's second appearance, 2.5 years after her first as CTO)"
   - type: published-by
     target: 2026-06-14-pincus-lennys-podcast-hidden-pattern-behind-successful-products
     via: "Mark Pincus (Zynga founder) on the 'Proven, Better, New' product framework, instincts-over-ideas, being less ambitious, and 'kill hope before hope kills you' — timed to his book Life at the Speed of Play (14 June 2026)"
@@ -31,7 +34,7 @@ relationships:
 
 # Lenny's Podcast
 
-Long-form interview podcast hosted by **Lenny Rachitsky** (ex-Airbnb PM; founder of *Lenny's Newsletter* and the *How I AI* companion show). The podcast publishes ~1–2 episodes per week, primarily interview-format with product leaders, founders, and operators in consumer-tech, B2B SaaS, and AI. The wiki has, as of 1 June 2026, **five sources under this `author:` value** — the channel now spans a two-year arc (April 2024 → May 2026) anchoring both pre-AI-substrate-shift evergreen practitioner wisdom (Caldwell) and post-phase-change AI-era operator and founder reflections (Schoening, Ries, Spiegel) plus, with the 31 May 2026 Benedict Evans interview, an independent-analyst-altitude framing-and-deflation anchor that sits structurally outside the operator/founder cluster.
+Long-form interview podcast hosted by **Lenny Rachitsky** (ex-Airbnb PM; founder of *Lenny's Newsletter* and the *How I AI* companion show). The podcast publishes ~1–2 episodes per week, primarily interview-format with product leaders, founders, and operators in consumer-tech, B2B SaaS, and AI. The wiki holds, as of 19 July 2026, **seven sources under this `author:` value** — the channel now spans an arc from April 2024 to July 2026, anchoring pre-AI-substrate-shift evergreen practitioner wisdom (Caldwell), post-phase-change AI-era operator and founder reflections (Schoening, Ries, Spiegel, Pincus), an independent-analyst-altitude framing-and-deflation anchor (Evans), and — with [[2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era|Stone's 19 July 2026 interview]] — the channel's first **large-incumbent CPTO** vantage, distinct from the founder/operator and analyst registers that otherwise dominate the channel.
 
 Lenny Rachitsky himself is not (yet) given his own entity page because he does not appear as a *first author* in the wiki's `author:` frontmatter — he is the host of *Lenny's Podcast* (this entity) and of the *How I AI* companion show, which appears in the wiki via [[2025-12-01-marily-nika-pms-who-use-ai-will-replace-those-who-dont|Nika 2025]] under `author: ["How I AI"]`. The two channels are operationally distinct.
 
@@ -45,8 +48,9 @@ Lenny Rachitsky himself is not (yet) given his own entity page because he does n
 | [[2026-05-10-ries-lennys-force-destroys-companies-within\|Ries 2026]] | 10 May 2026 | **Eric Ries** (Lean Startup; *Incorruptible*) | Governance as the unit of mission protection; PBC + LTBT as defensive structure; Conway's law applied to AI alignment |
 | [[2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going\|Evans 2026]] | 31 May 2026 | **Benedict Evans** (independent analyst; ex-a16z partner; biannual *AI Eats the World* deck author) | *1997 for AI* framing; task-vs-job analytical lever; foundation-models-as-commodity-utility (AWS-not-Windows analogy); 5–10-year sector-by-sector adoption pace; lump-of-labor-fallacy applied to AI employment effects; the under-asked question *do model labs have pricing power?* |
 | [[2026-06-14-pincus-lennys-podcast-hidden-pattern-behind-successful-products\|Pincus 2026]] | 14 June 2026 | **Mark Pincus** (Zynga founder) | "Proven, Better, New" product framework; instincts-right-95%/ideas-wrong-75%; being less ambitious as the path to bigger outcomes; "kill hope before hope kills you"; AI as a failure machine; make-everyone-a-CEO management philosophy |
+| [[2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era\|Stone 2026]] | 19 July 2026 | **Elizabeth Stone** (Netflix CPTO) | Systems thinking as the top rising hiring criterion; generalist-hiring shift with a narrow-specialist carve-out; universal non-level-specific AI-fluency career-ladder overlay; "excellence as an operating system"; paved-paths infrastructure hardening as agents proliferate; the keeper's test |
 
-The first four episodes are operator-narrated and run ~70 minutes to ~100 minutes. The Evans episode is **analyst-narrated** at the same length (~80 minutes) — a different rhetorical register inside the same long-form-interview format. Spiegel and Evans share a *distribution-becomes-the-moat* thesis at different altitudes (operator vs analyst); Ries and Spiegel are paired on durability-under-change (legal-entity layer + operating-model layer); Caldwell and Evans bookend the channel's two-year arc with the *founder-resilience* and *analyst-altitude* poles. See the *Convergence and contradictions* sections of the respective source pages for the cross-link analysis.
+The first four episodes are operator-narrated and run ~70 minutes to ~100 minutes. The Evans episode is **analyst-narrated** at the same length (~80 minutes) — a different rhetorical register inside the same long-form-interview format. The Stone episode is the channel's first **large-incumbent-CPTO** register — organizational hiring/culture doctrine at a public, decades-old company, distinct from both the founder/operator register (Schoening, Ries, Spiegel, Pincus) and the independent-analyst register (Evans). Spiegel and Evans share a *distribution-becomes-the-moat* thesis at different altitudes (operator vs analyst); Ries and Spiegel are paired on durability-under-change (legal-entity layer + operating-model layer); Caldwell and Evans bookend the channel's arc with the *founder-resilience* and *analyst-altitude* poles. See the *Convergence and contradictions* sections of the respective source pages for the cross-link analysis.
 
 ## Disclosure flag
 

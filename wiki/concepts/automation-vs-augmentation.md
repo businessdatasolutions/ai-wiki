@@ -16,8 +16,8 @@ relationships:
   - type: supports
     target: ai-benchmarks
     via: "Narayanan's release-decision frame — reliability threshold required for automation deployment exceeds that for augmentation deployment; reliability is the gating dimension benchmarks have under-measured"
-quality_score: 0.95
-quality_notes: ['1 near-empty section(s)', '2 broken body wikilink(s)']
+quality_score: 0.93
+quality_notes: ['1 near-empty section(s)', '3 broken body wikilink(s)']
 ---
 
 # Automation vs. Augmentation

@@ -3,9 +3,9 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-07-14"
-accessed_at: "2026-07-14"
-source_count: 36
+last_confirmed: "2026-07-19"
+accessed_at: "2026-07-19"
+source_count: 37
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -251,6 +251,12 @@ Two framing points connect this to the page's existing vocabulary cluster:
 - **Assessment-as-product, not just assessment-as-measurement.** Where Globerson et al. and Vantage are measurement *instruments*, the Content Institute packages durable-skills assessment directly into a **credentialing product** — closer in kind to a college degree than to a benchmark. This is the wiki's first durable-skills source where the measurement methodology *is* the deliverable rather than a research contribution.
 
 Khan's explicit motivation ties back to [[ai-employment-effects]]: *"Someone today graduates from Stanford... probably smart, good GPA... but that's only a signal, not an evaluation."* The Content Institute's pitch to employers is that 20-50 rigorously-designed, peer-reviewed project simulations are a stronger evaluative signal than a GPA-and-résumé screen — explicitly positioned as a lower-cost, non-elite-university alternative signal, not a replacement for the underlying skills claim already established on this page.
+
+## AI fluency as a universal, non-level-specific career-ladder expectation ([[2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era|Stone / Netflix CPTO, July 2026]])
+
+**Elizabeth Stone** ([[Netflix]] CPTO) supplies the wiki's clearest single-firm account of *how* a large incumbent operationalises AI fluency as a durable-skills expectation rather than a tool checklist. Rather than specifying what AI changes at each career-ladder level, Netflix layered an **aspiration overlay across all talent** — an experimentation mindset, judgment about where AI is and isn't useful, and comfort with change — applied uniformly from new hires to the most senior leadership, *"even if we're not writing code as part of our day jobs."* This is a practitioner-HR-mechanism instance of the same claim [[2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces|BCG's]] *AI fluency becomes a complement to tenure* finding makes structurally: the skill is level-and-age-agnostic, layered on top of (not replacing) role-specific competence. Netflix operationalises the expectation concretely in hiring: interviews probe how candidates think about AI/technology, and coding interviews now explicitly permit AI-tool use, "because that's going to be part of what the work requires now."
+
+Stone also names systems thinking — see [[systems-thinking]] for the fuller treatment — as the specific *content* of the rising skill cluster at Netflix, giving this page's cross-vocabulary convergence (Globerson's collaboration/creativity/critical-thinking, Raman/Wood's 5 C's, ETS's five skills) a seventh independent naming, this time from a for-profit streaming incumbent's CPTO rather than an educator, consultant, or researcher.
 
 ## Related concepts
 
