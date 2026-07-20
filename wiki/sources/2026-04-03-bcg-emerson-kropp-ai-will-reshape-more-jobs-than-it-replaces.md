@@ -29,6 +29,10 @@ relationships:
   - type: supports
     target: 2026-04-28-brynjolfsson-canaries-coal-mine
     via: "corroborates entry-level/junior exposure as the leading edge of disruption (BCG's Divergent segment: entry-level positions most exposed while senior responsibilities persist)"
+  - type: supports
+    target: 2026-07-20-bbc-researchers-studied-ai-layoffs-heres-their-warning
+    via: "descriptive (this report: what firms are currently doing) vs. predictive (Tsoukalas & Falk: what competitive game-theoretic pressure could force firms toward) — both address whether firms over-automate, from different methodological vantages"
+    confidence: 0.5
 ---
 
 # AI Will Reshape More Jobs Than It Replaces
@@ -84,6 +88,8 @@ A multiyear **lag between automation potential and realized impact** is expected
 ## Why this matters to the wiki
 
 This is the wiki's most **structured role-level taxonomy** of AI's labor impact, and a **method-independent corroboration** of the [[2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai|Anthropic observed-exposure report]]: BCG's microeconomic role-modeling and Anthropic's usage-based measure independently land on *reshape ≫ replace, slow substitution, entry-level first*. The **substitution-vs-augmentation × demand-expandability** logic is a sharp formalisation for [[automation-vs-augmentation]] (it adds the **Jevons/demand-expandability axis** the page's existing 2×2s lack); the six segments and the 50–55%/10–15% split anchor [[ai-employment-effects]]; the rising-skill-thresholds / AI-fluency-vs-tenure dynamics feed [[durable-skills]]; and *"refocus automation on redesign, not cost reduction"* is the [[micro-productivity-trap]] escape stated as a CEO directive.
+
+This report's reshape-not-replace thesis is a *descriptive* claim about what firms are currently doing; [[2026-07-20-bbc-researchers-studied-ai-layoffs-heres-their-warning|Tsoukalas & Falk's "AI Layoff Trap" model]] is a *predictive, game-theoretic* claim about what competitive pressure could still force firms toward even against their own better judgment — worth reading together as description-vs-prediction, not agreement-vs-disagreement.
 
 ## Dynamic-capabilities (W&W) reading
 

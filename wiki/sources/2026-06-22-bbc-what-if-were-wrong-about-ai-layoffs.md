@@ -18,6 +18,9 @@ relationships:
   - type: supports
     target: 2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai
     via: "measurement caution — Edwards's 'we may never know, it'll stay inconclusive' echoes the report's disciplined stance that AI labor effects are hard to isolate and past forecasts over-predicted"
+  - type: supports
+    target: 2026-07-20-bbc-researchers-studied-ai-layoffs-heres-their-warning
+    via: "Same 'New Normal with Katty Kay' series, same host, same broad topic (AI layoffs) — but a different question. This episode (Edwards) argues present-day layoffs are over-attributed to AI; the July episode (Tsoukalas) models a future scenario where AI-driven layoffs become a real, self-reinforcing market failure regardless of attribution accuracy. A shared-topic, differently-scoped pair, not a contradiction."
 ---
 
 # What If We're Wrong About AI Layoffs?
@@ -48,12 +51,15 @@ It also strengthens two existing [[ai-employment-effects]] threads from an indep
 - **The "Are these declines really AI?" debate.** Edwards's measurement-impossibility thesis ("we may never know… inconclusive forever") is the popular-explainer twin of the [[2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai|Massenkoff & McCrory]] report's disciplined "establish the measure before effects emerge; past forecasts over-predicted" stance, and of the [[2026-01-09-baron-signals-for-2026|"AI is not taking jobs: the decisions of people deploying it are"]] attribution framing.
 - **The counter-data pole.** The Indeed software-developer-postings-up observation is a journalist-surfaced counterweight to the [[2026-04-30-ai-index-report-2026|AI Index 2026]] / [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson Canaries]] entry-level-decline narrative — aligned with the lump-of-labor counter-frame ([[2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going|Evans]]) and the [[2026-05-01-lf-state-of-tech-talent-global-2026|Linux Foundation]] "not a jobs crisis" surveys. It is *narrative critique*, not a new measurement, and should be weighted as such (single chart, single platform).
 
+A month later, the same series returns to AI layoffs from a different angle: [[2026-07-20-bbc-researchers-studied-ai-layoffs-heres-their-warning|Tsoukalas's "AI Layoff Trap" episode]] models a predictive, game-theoretic scenario for *future* AI-driven layoffs rather than questioning the attribution of *present* ones — a differently-scoped companion piece, not a restatement.
+
 ## Linked entities and concepts
 
 - [[ai-washing]] — the concept this source anchors (its first dedicated treatment).
 - [[ai-employment-effects]] — the empirical record this source problematises on the attribution side and adds counter-data to.
 - [[ai-deskilling]] — the typists / phone-operators / "computer"-occupation displacement examples.
-- **Dangling** (single-source mentions, deferred per Author-entity promotion): **Katty Kay** (host) and **Kathryn Anne Edwards** (economist guest) — named on this source only; promote on a second-source mention. **BBC Global** is the channel/`author:`; *New Normal with Katty Kay* is the series.
+- **[[BBC]]** — promoted retroactively 2026-07-20 (second-source rule) when [[2026-07-20-bbc-researchers-studied-ai-layoffs-heres-their-warning|a second "New Normal" episode]] landed; this source is its first appearance.
+- **Dangling** (single-source mentions, deferred per Author-entity promotion): **Katty Kay** (host — now a *second*-source mention as of the July 2026 episode; promote on a third) and **Kathryn Anne Edwards** (economist guest) — named on this source only; promote on a second-source mention.
 
 ## Source quality
 

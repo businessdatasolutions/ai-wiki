@@ -10,6 +10,16 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-07-20] ingest | Tsoukalas & Falk's "AI Layoff Trap" — a game-theoretic model for over-automation as a dominant strategy
+
+A user-supplied YouTube URL, acquired via `youtube-transcript-skill` and processed in the same session.
+
+**[[2026-07-20-bbc-researchers-studied-ai-layoffs-heres-their-warning]]** — BBC Global's *New Normal with Katty Kay* (20 Jul 2026, ~10:17). Host **Katty Kay** interviews **Professor Gerry Tsoukalas**, co-author (with **Brett Falk**) of "The AI Layoff Trap." The model: a monopolist that automates internalizes the cost of losing its own customers and self-corrects; in a competitive market, each firm's own workers are only a small share of its customer base, so the perceived cost of layoffs collapses toward zero even though aggregate demand erosion hurts every firm — a dominant-strategy / prisoner's-dilemma structure. Voluntary CEO self-restraint is predicted to fail regardless of whether individual leaders see the risk coming (the Odysseus-and-the-sirens framing). The paper's proposed remedy, after considering ~6 alternatives (including UBI and worker equity): a tax on *fully replacing* a worker with AI, leaving augmentation cost-neutral — structurally analogous to a carbon tax.
+
+This is the first source on [[ai-employment-effects]] to supply a **formal predictive mechanism** rather than descriptive/survey evidence — distinct from, and complementary to, the page's seven-voice reshape-over-replace convergence (which describes what firms are currently choosing to do; this model describes what competitive pressure could still force regardless of current intent). Cross-linked with [[2026-06-22-bbc-what-if-were-wrong-about-ai-layoffs|Edwards's June "AI washing" episode]] (same series/host, differently-scoped: attribution-of-the-present vs. prediction-of-the-future) and [[2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces|BCG's reshape-not-replace report]] (descriptive vs. predictive pairing). No `dynamic_capabilities:` tag — macro-economic/policy content, not a firm's digital-transformation account.
+
+source_count 65→66 on [[ai-employment-effects]]. **Created [[BBC]]** entity (2nd-source promotion — the June "AI washing" episode already existed with no entity page; this second appearance crosses the threshold; the June source's dangling note updated to match). Dangling (single-source, deferred): Gerry Tsoukalas, Brett Falk; Katty Kay now a 2nd-appearance dangling mention (promote on a 3rd BBC/New Normal source).
+
 ## [2026-07-19] ingest | Elizabeth Stone (Netflix CPTO) on systems thinkers over specialists, paved paths, and excellence as an operating system
 
 A user-supplied YouTube URL, acquired via `youtube-transcript-skill` and processed in this session.
