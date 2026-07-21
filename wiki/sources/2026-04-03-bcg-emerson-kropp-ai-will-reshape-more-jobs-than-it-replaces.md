@@ -31,7 +31,11 @@ relationships:
     via: "corroborates entry-level/junior exposure as the leading edge of disruption (BCG's Divergent segment: entry-level positions most exposed while senior responsibilities persist)"
   - type: supports
     target: 2026-07-20-bbc-researchers-studied-ai-layoffs-heres-their-warning
-    via: "descriptive (this report: what firms are currently doing) vs. predictive (Tsoukalas & Falk: what competitive game-theoretic pressure could force firms toward) — both address whether firms over-automate, from different methodological vantages"
+    via: "descriptive (this report: what firms are currently doing) vs. predictive (Falk & Tsoukalas: what competitive game-theoretic pressure could force firms toward) — both address whether firms over-automate, from different methodological vantages"
+    confidence: 0.5
+  - type: supports
+    target: 2026-06-03-falk-tsoukalas-the-ai-layoff-trap
+    via: "both build on Acemoglu & Restrepo's task-based automation framework, but for different purposes — this report uses it descriptively to segment which roles are exposed; the paper refocuses it from the labor market to the product market to derive a formal competitive over-automation result"
     confidence: 0.5
 ---
 
@@ -89,7 +93,7 @@ A multiyear **lag between automation potential and realized impact** is expected
 
 This is the wiki's most **structured role-level taxonomy** of AI's labor impact, and a **method-independent corroboration** of the [[2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai|Anthropic observed-exposure report]]: BCG's microeconomic role-modeling and Anthropic's usage-based measure independently land on *reshape ≫ replace, slow substitution, entry-level first*. The **substitution-vs-augmentation × demand-expandability** logic is a sharp formalisation for [[automation-vs-augmentation]] (it adds the **Jevons/demand-expandability axis** the page's existing 2×2s lack); the six segments and the 50–55%/10–15% split anchor [[ai-employment-effects]]; the rising-skill-thresholds / AI-fluency-vs-tenure dynamics feed [[durable-skills]]; and *"refocus automation on redesign, not cost reduction"* is the [[micro-productivity-trap]] escape stated as a CEO directive.
 
-This report's reshape-not-replace thesis is a *descriptive* claim about what firms are currently doing; [[2026-07-20-bbc-researchers-studied-ai-layoffs-heres-their-warning|Tsoukalas & Falk's "AI Layoff Trap" model]] is a *predictive, game-theoretic* claim about what competitive pressure could still force firms toward even against their own better judgment — worth reading together as description-vs-prediction, not agreement-vs-disagreement.
+This report's reshape-not-replace thesis is a *descriptive* claim about what firms are currently doing; [[2026-06-03-falk-tsoukalas-the-ai-layoff-trap|Falk & Tsoukalas's "AI Layoff Trap" model]] (popularized via [[2026-07-20-bbc-researchers-studied-ai-layoffs-heres-their-warning|a BBC interview]]) is a *predictive, game-theoretic* claim about what competitive pressure could still force firms toward even against their own better judgment — worth reading together as description-vs-prediction, not agreement-vs-disagreement.
 
 ## Dynamic-capabilities (W&W) reading
 

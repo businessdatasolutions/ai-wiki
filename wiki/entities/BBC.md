@@ -33,4 +33,5 @@ The pairing is a shared-topic, differently-scoped set (present-attribution vs. f
 
 - [[ai-employment-effects]] — both sources' primary concept
 - [[ai-washing]] — anchored by the June episode
-- **Dangling** (single-source mentions, deferred): **Katty Kay** (host of both episodes — now a 2nd-appearance mention; promote on a 3rd BBC/New Normal source), Kathryn Anne Edwards, Gerry Tsoukalas, Brett Falk.
+- **Dangling** (single-source mentions, deferred): **Katty Kay** (host of both episodes — now a 2nd-appearance mention; promote on a 3rd BBC/New Normal source), Kathryn Anne Edwards.
+- [[Gerry Tsoukalas]] and [[Brett Hemenway Falk]] were promoted to entity pages 2026-07-21, once [[2026-06-03-falk-tsoukalas-the-ai-layoff-trap|their underlying paper]] gave them a second source.

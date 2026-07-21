@@ -10,6 +10,16 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-07-21] ingest | The primary source behind "The AI Layoff Trap" — acquired via Zotero, considerably more qualified than its BBC popularization
+
+Acquired via the `zotero-acquire` skill from the `ai-wiki` Zotero collection and processed in the same session.
+
+**[[2026-06-03-falk-tsoukalas-the-ai-layoff-trap]]** — arXiv:2603.20617 (econ.TH preprint, this-version 3 Jun 2026), **Brett Hemenway Falk** (University of Pennsylvania) and **Gerry Tsoukalas** (Boston University). The primary academic source behind [[2026-07-20-bbc-researchers-studied-ai-layoffs-heres-their-warning|the BBC video already in the wiki]]. A task-based model (Acemoglu-Restrepo lineage, refocused onto the product market): competitive firms each capture the full automation cost saving but bear only 1/N of the resulting demand loss, making automation a **strictly dominant strategy** that in the frictionless limit becomes a literal **Prisoner's Dilemma** — deadweight loss that harms firms and workers alike, worsening with more competition and better AI. A **six-instrument policy table** shows only a **Pigouvian automation tax** fully corrects the distortion (UBI, capital-income taxes, and voluntary bargaining fix nothing; upskilling and worker equity only partially narrow the wedge). Two findings the video omitted entirely: a **reversal case** (fast, higher-paying reemployment flips the externality into under-automation) and a **post-labor limit** (once AI dominates labor, the wedge closes and the remaining problem becomes purely distributional, at which point a profit-funded UBI becomes the right tool). Names an explicit falsification signature (profit erosion coinciding with mass layoffs in fragmented industries) and states it hasn't yet materialized at detectable scale.
+
+**Promoted [[Gerry Tsoukalas]]** and **[[Brett Hemenway Falk]]** to entity pages (second-source rule — both were dangling on the BBC video source). Added a `depends-on` edge from the video to this paper, and `supports` edges to [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson Canaries]] (cited directly in the paper's introduction) and [[2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces|BCG's reshape-not-replace report]] (shared Acemoglu-Restrepo ancestry, different purpose). Bumped [[Daron Acemoglu]]'s entity page (2→3 sources) — his task-based framework is this paper's explicit theoretical ancestor.
+
+source_count 66→67 on [[ai-employment-effects]]. No `dynamic_capabilities:` tag (macro-economic/policy paper, not a firm digital-transformation account).
+
 ## [2026-07-20] ingest | Tsoukalas & Falk's "AI Layoff Trap" — a game-theoretic model for over-automation as a dominant strategy
 
 A user-supplied YouTube URL, acquired via `youtube-transcript-skill` and processed in the same session.

@@ -15,6 +15,10 @@ relationships:
   - type: supports
     target: 2025-06-01-autor-thompson-expertise
     via: "Autor & Thompson's expertise framework supplies the theoretical mechanism behind this paper's empirical codified-vs-tacit-knowledge finding — codified, procedural task content is disproportionately the *inexpert* task content the expertise framework predicts automates first and depresses wages for the workers left holding it, matching why young workers (who supply relatively more codified than tacit knowledge) face greater task replacement here"
+  - type: supports
+    target: 2026-06-03-falk-tsoukalas-the-ai-layoff-trap
+    via: "cited directly in that paper's introduction as empirical motivation for the incomplete-income-replacement (η < 1) regime its over-automation result depends on — this paper's entry-level decline finding is the concrete evidence that displaced income is not being fully reabsorbed"
+    confidence: 0.65
 ---
 
 # Brynjolfsson, Chandar & Chen — Canaries in the Coal Mine?
@@ -122,6 +126,10 @@ The Brynjolfsson paper's **automation vs. augmentation** distinction (Fact 3) is
 ### Convergence with [[2026-04-28-mit-sloan-ai-maturity|MIT CISR]] workforce expectations
 
 [[2026-04-28-mit-sloan-ai-maturity|MIT CISR]]'s McKinsey survey reported 43% of orgs expecting workforce decreases. The Brynjolfsson paper provides the empirical correlate: those workforce decreases are showing up in the data, but **disproportionately at the entry level**, not uniformly across all roles.
+
+### Cited as the empirical anchor for [[2026-06-03-falk-tsoukalas-the-ai-layoff-trap|Falk & Tsoukalas's "AI Layoff Trap" model]]
+
+This paper's entry-level-decline finding is cited directly in that paper's introduction as evidence that displaced income is not being fully reabsorbed (the model's η < 1 regime) — the empirical precondition their formal over-automation result depends on. Their game-theoretic model formalizes a mechanism this paper documents empirically but does not itself theorize: why competitive pressure, not just individual firm choice, could push displacement beyond what any single firm would choose in isolation.
 
 ### Cross-reference: [[Capital One]]'s Capability Era
 

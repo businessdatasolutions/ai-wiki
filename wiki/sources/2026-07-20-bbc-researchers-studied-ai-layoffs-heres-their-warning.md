@@ -17,6 +17,10 @@ relationships:
     target: 2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces
     via: "Both address whether firms will over-automate; BCG's reshape-not-replace thesis is a *descriptive* claim about what firms are currently doing, while Tsoukalas/Falk's model is a *predictive, game-theoretic* claim about what competitive pressure could force firms toward even against their own better judgment"
     confidence: 0.5
+  - type: depends-on
+    target: 2026-06-03-falk-tsoukalas-the-ai-layoff-trap
+    via: "this video is a popular-press summary of the paper; the paper is considerably more qualified — it names a reversal case (η > 1: fast, higher-paying reemployment flips the externality into under-automation) and a post-labor limit (once AI dominates human labor, the over-automation wedge itself closes and the remaining problem becomes purely distributional) that the video does not mention"
+    confidence: 0.85
 ---
 
 # Researchers studied AI layoffs. Here's their warning.
@@ -40,10 +44,11 @@ Full ASR-cleaned transcript (~10:17 runtime, 9 named chapters, ~80 dialogue segm
 ## Linked entities and concepts
 
 - Channel/publisher: **[[BBC]]** — **promoted on this ingest** (second-source rule: a prior BBC source, [[2026-06-22-bbc-what-if-were-wrong-about-ai-layoffs|the June "AI washing" episode]], already existed with no entity page; this second appearance crosses the threshold).
-- **Dangling** (single-source mentions, deferred): **Katty Kay** (host — also hosted the June episode, so this is her *second* appearance across two source pages; promote on a third BBC/New Normal source), **Gerry Tsoukalas** (Professor, co-author of "The AI Layoff Trap"), **Brett Falk** (Professor, co-author, not himself interviewed).
+- **Promoted [[Gerry Tsoukalas]]** and **[[Brett Hemenway Falk]]** (2026-07-21, second-source rule) once [[2026-06-03-falk-tsoukalas-the-ai-layoff-trap|the underlying paper]] was ingested — both were dangling, single-source mentions here.
+- **Dangling** (single-source mentions, deferred): **Katty Kay** (host — also hosted the June episode, so this is her *second* appearance across two source pages; promote on a third BBC/New Normal source).
 - Concepts: [[ai-employment-effects]] (primary), [[dynamic-capabilities]] (not tagged — see below), [[systems-thinking]] (the feedback-loop/collective-action structure of the trap is a systems-thinking-adjacent framing, mentioned in body prose only, no frontmatter tag added since the source itself doesn't use systems-thinking vocabulary).
 - **No `dynamic_capabilities:` tag applied.** This source is a macro-economic/game-theoretic model and policy debate, not an account of a specific firm's digital-transformation process — forcing a W&W cell here would stretch the vocabulary past what it's meant to classify (per CLAUDE.md's "when not to tag" guidance).
 
 ## Relationships
 
-See frontmatter. Two typed `supports` edges: one to [[2026-06-22-bbc-what-if-were-wrong-about-ai-layoffs|the June BBC "AI washing" episode]] (same series/host, same broad topic, differently-scoped question — held as a shared-topic pair rather than a contradiction); one to [[2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces|BCG's reshape-not-replace thesis]] (descriptive claim about current firm behavior vs. this source's predictive game-theoretic model of where competitive pressure could push firm behavior). Considered but not linked: [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson Canaries]] (shares the general over-automation concern but no specific shared claim, mechanism, or data point — too thin for a typed edge).
+See frontmatter. Two typed `supports` edges: one to [[2026-06-22-bbc-what-if-were-wrong-about-ai-layoffs|the June BBC "AI washing" episode]] (same series/host, same broad topic, differently-scoped question — held as a shared-topic pair rather than a contradiction); one to [[2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces|BCG's reshape-not-replace thesis]] (descriptive claim about current firm behavior vs. this source's predictive game-theoretic model of where competitive pressure could push firm behavior). One typed `depends-on` edge, added 2026-07-21: [[2026-06-03-falk-tsoukalas-the-ai-layoff-trap|the underlying paper]] — this video is a popular-press summary of it, and the paper carries substantial qualification (a reversal case, a post-labor limit, and a six-instrument policy comparison table) the video omits entirely. Considered but not linked: [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson Canaries]] (shares the general over-automation concern but no specific shared claim, mechanism, or data point — too thin for a typed edge; the paper itself does cite Brynjolfsson directly, see that source's own relationships).

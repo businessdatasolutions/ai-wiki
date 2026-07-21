@@ -6,9 +6,9 @@ tags: [daron-acemoglu, economist, nobel-economics-2024, mit, productivity-is-fiv
 affiliation: "MIT (Department of Economics)"
 role: "Institute Professor of Economics at MIT; Nobel laureate in Economics (2024, joint with Simon Johnson and James A. Robinson); ‘Why Nations Fail’ co-author"
 confidence: 0.78
-last_confirmed: "2026-05-28"
-accessed_at: "2026-05-28"
-source_count: 2
+last_confirmed: "2026-07-21"
+accessed_at: "2026-07-21"
+source_count: 3
 ---
 
 # Daron Acemoglu
@@ -23,6 +23,7 @@ Convergent with [[Chad Jones]]'s **weak-links model** ([[2026-05-21-jones-stanfo
 
 - [[2026-05-21-jones-stanford-gsb-ai-and-our-economic-future]] — referenced by Jones as a parallel growth-economics-tradition voice on the question of AI's macro impact.
 - [[2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering]] — cited by Everitt as the academic anchor for *"productivity is five things in coding and in software engineering and coding is only one of those"* — the conceptual frame for Everitt's eight-failure-mode problem framing of *more code, fewer people*.
+- [[2026-06-03-falk-tsoukalas-the-ai-layoff-trap]] — his (with Pascual Restrepo) task-based automation framework is the explicit theoretical ancestor of Falk & Tsoukalas's model, refocused from the labor market (where new-task creation offsets displacement — the "reinstatement effect") onto the product market, where the paper argues the offsetting force is much weaker.
 
 ## Mentioned in
 
