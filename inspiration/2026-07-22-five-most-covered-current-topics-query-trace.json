@@ -1,0 +1,65 @@
+{
+  "question": "What are the five most covered and most current topics in the wiki? Return a matrix with currency on the x-axis and coverage on the y-axis.",
+  "generated_at": "2026-07-22",
+  "language": "en",
+  "facets": [
+    "coverage metric per topic (source_count)",
+    "currency metric per topic (last_confirmed recency)",
+    "select the top five",
+    "position them on a coverage x currency matrix"
+  ],
+  "method_note": "Meta / corpus-analytics question. Answered from concept-page frontmatter (source_count = coverage; last_confirmed = currency), NOT from source-body retrieval. The mandated wiki-retrieve.mjs stream was run per skill contract but returned only individual source pages, which are the wrong granularity for a topic-coverage ranking — recorded as IGNORE below. USE set = the five highest-source_count concept pages, verified by direct frontmatter read.",
+  "retrieval": {
+    "entry_point": "node scripts/wiki-retrieve.mjs --json -n 12",
+    "graph_available": true,
+    "graph_warning": null,
+    "qmd_hit_count": 11,
+    "candidate_count": 28,
+    "supplemental": "grep scan of source_count/last_confirmed/confidence/accessed_at across wiki/concepts/*.md (40 concept pages)"
+  },
+  "candidates": [
+    {"slug": "concepts/enterprise-ai-adoption", "verdict": "USE", "reason": "highest coverage (90 sources), confirmed today", "source_count": 90, "last_confirmed": "2026-07-22", "days_since_confirmed": 0, "confidence": 0.95},
+    {"slug": "concepts/agent-harness", "verdict": "USE", "reason": "2nd coverage (74 sources), confirmed 7d ago", "source_count": 74, "last_confirmed": "2026-07-15", "days_since_confirmed": 7, "confidence": 0.98},
+    {"slug": "concepts/ai-employment-effects", "verdict": "USE", "reason": "3rd coverage (67 sources), confirmed 1d ago", "source_count": 67, "last_confirmed": "2026-07-21", "days_since_confirmed": 1, "confidence": 0.95},
+    {"slug": "concepts/automation-vs-augmentation", "verdict": "USE", "reason": "4th coverage (54 sources), confirmed 8d ago", "source_count": 54, "last_confirmed": "2026-07-14", "days_since_confirmed": 8, "confidence": 0.95},
+    {"slug": "concepts/agentic-engineering", "verdict": "USE", "reason": "5th coverage (43 sources), confirmed 21d ago", "source_count": 43, "last_confirmed": "2026-07-01", "days_since_confirmed": 21, "confidence": 0.97},
+    {"slug": "concepts/micro-productivity-trap", "verdict": "IGNORE", "reason": "below-cutoff — 6th by coverage (40 sources); named as near-miss contrast anchor only", "reason_class": "below-threshold"},
+    {"slug": "concepts/durable-skills", "verdict": "IGNORE", "reason": "7th by coverage (37 sources); contrast anchor only", "reason_class": "below-threshold"},
+    {"slug": "sources/2026-04-27-liu-rag-llm-wiki-or-gbrain-how-your-agent-remembers", "verdict": "IGNORE", "reason": "qmd top hit but a single source page, not topic-coverage data", "reason_class": "wrong-granularity"},
+    {"slug": "sources/2026-04-28-ftsg-convergence-outlook-2026", "verdict": "IGNORE", "reason": "single source page", "reason_class": "wrong-granularity"},
+    {"slug": "sources/2026-04-26-how-to-win-when-software-is-not-a-moat-evan-spiegel-snapchat-ceo", "verdict": "IGNORE", "reason": "single source page", "reason_class": "wrong-granularity"},
+    {"slug": "sources/2026-04-18-mysore-medium-wikizz-extending-karpathy-llm-wiki", "verdict": "IGNORE", "reason": "single source page", "reason_class": "wrong-granularity"},
+    {"slug": "sources/2025-05-17-turc-llms-low-precision-quantization-fundamentals", "verdict": "IGNORE", "reason": "single source page, off-topic (quantization)", "reason_class": "off-facet"},
+    {"slug": "sources/2026-05-24-erginbilgic-2026-rolls-royce-turnaround-playbook", "verdict": "IGNORE", "reason": "single source page, off-topic", "reason_class": "off-facet"},
+    {"slug": "sources/2024-06-22-hajek-2024-distress-prediction-annual-reports", "verdict": "IGNORE", "reason": "single source page, off-topic", "reason_class": "off-facet"},
+    {"slug": "sources/2026-07-01-mcgrath-2026-power-of-strategic-centering", "verdict": "IGNORE", "reason": "single source page", "reason_class": "wrong-granularity"},
+    {"slug": "sources/2026-04-16-raju-rag-isnt-dead-karpathys-llm-wiki-explained", "verdict": "IGNORE", "reason": "single source page", "reason_class": "wrong-granularity"},
+    {"slug": "sources/2021-09-16-ten-things-corporate-culture", "verdict": "IGNORE", "reason": "single source page, off-topic", "reason_class": "off-facet"}
+  ],
+  "use_set": [
+    "concepts/enterprise-ai-adoption",
+    "concepts/agent-harness",
+    "concepts/ai-employment-effects",
+    "concepts/automation-vs-augmentation",
+    "concepts/agentic-engineering"
+  ],
+  "answer_element_map": [
+    {"anchor": "W1", "slug": "concepts/enterprise-ai-adoption", "fact": "90 sources, confirmed 2026-07-22", "section": "frontmatter"},
+    {"anchor": "W2", "slug": "concepts/agent-harness", "fact": "74 sources, confirmed 2026-07-15", "section": "frontmatter"},
+    {"anchor": "W3", "slug": "concepts/ai-employment-effects", "fact": "67 sources, confirmed 2026-07-21", "section": "frontmatter"},
+    {"anchor": "W4", "slug": "concepts/automation-vs-augmentation", "fact": "54 sources, confirmed 2026-07-14", "section": "frontmatter"},
+    {"anchor": "W5", "slug": "concepts/agentic-engineering", "fact": "43 sources, confirmed 2026-07-01", "section": "frontmatter"}
+  ],
+  "matrix": {
+    "y_axis": "coverage (source_count): High >=50, Mid 25-49, Emerging <25",
+    "x_axis": "currency (days since last_confirmed): Fresh <=7d, Recent 8-21d, Aging >21d",
+    "cells": {
+      "High-coverage_Fresh": ["enterprise-ai-adoption (90,0d)", "agent-harness (74,7d)", "ai-employment-effects (67,1d)"],
+      "High-coverage_Recent": ["automation-vs-augmentation (54,8d)", "agentic-engineering (43,21d)"],
+      "High-coverage_Aging": [],
+      "Mid-coverage_Fresh": ["micro-productivity-trap (40,7d)", "durable-skills (37,3d)"],
+      "Mid-coverage_Recent": [],
+      "Mid-coverage_Aging": []
+    }
+  }
+}
