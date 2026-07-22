@@ -40,6 +40,9 @@ relationships:
   - type: uses
     target: agent-harness
     via: "the paper's core contribution is a formal definition of agentic-harness state (p, G, K, M) plus meta-tools (define_agent, run_code, process_memory) for editing it"
+  - type: supports
+    target: 2026-07-14-wang-shi-harness-handbook-behavior-localization
+    via: "partially answers this paper's open question — 'whether the same Refiner architecture works on SWE-bench or Terminal-Bench is the obvious next experiment' — on the localization half of the loop: Wang & Shi et al. evaluate behavior localization on Codex and Terminus-2 (coding harnesses), the prerequisite the Continual Harness Refiner performs implicitly"
 ---
 
 # Karten, Zhang et al. — *Continual Harness: Online Adaptation for Self-Improving Foundation Agents*
@@ -142,6 +145,6 @@ The wiki has been carrying three primary-source ingest open questions on [[conce
 - **Pan et al. (Tsinghua March 2026) primary-source ingest.** Karten et al. do not cite Pan. The wiki's [[concepts/agent-harness]] page carried Pan's OS-Symphony and SWE-bench results second-hand from the YouTube source. Still open.
 - **Lee, Khattab et al. (Meta-Harness, arXiv:2603.28052) primary-source ingest.** Identification now closed; ingest still pending.
 - **Reset-free vs reset-based head-to-head.** Karten flags this as open in the discussion. Worth tracking against future ablation work.
-- **Continual Harness on coding tasks?** The paper restricts to embodied Pokémon. The construction is environment-agnostic; whether the same Refiner architecture works on SWE-bench or Terminal-Bench is *the* obvious next experiment for the field.
+- **Continual Harness on coding tasks?** The paper restricts to embodied Pokémon. The construction is environment-agnostic; whether the same Refiner architecture works on SWE-bench or Terminal-Bench is *the* obvious next experiment for the field. **Partially addressed (2026-07-22)** by [[2026-07-14-wang-shi-harness-handbook-behavior-localization|Wang & Shi et al. — Harness Handbook]], which evaluates *behavior localization* (finding where to edit — the prerequisite the Refiner performs implicitly) on the **Codex and Terminus-2** coding harnesses. The edit-*generation* half (a Refiner emitting Δ*(p, G, K, M)* on a coding harness) remains open.
 - **Open-source weights + open-source harness?** Karten's open-source experiments use Gemma-4 (Google) with frontier teacher (Gemini-3.1-pro). Truly open stack experiments — open weights with open teacher, e.g., Qwen3 + Llama-judge — would test whether the capability floor is a fundamental harness-engineering constraint or a frontier-teacher-relabeling artifact.
 - **The prompt-injection in Appendix E.** Was this intentional (a benign test of LLM-reader compliance, or a hint that the appendices are LLM-generated boilerplate) or unintentional? Worth noting if future Karten-group papers carry similar instructions.
