@@ -3,9 +3,9 @@ type: concept
 aliases: ["foundation model", "foundation models", "FM", "frontier model", "frontier models"]
 tags: [foundation-models, generative-ai, ai-research]
 confidence: 0.85
-last_confirmed: "2026-06-25"
-accessed_at: "2026-06-25"
-source_count: 19
+last_confirmed: "2026-07-22"
+accessed_at: "2026-07-22"
+source_count: 20
 quality_score: 0.95
 quality_notes: ['1 near-empty section(s)', '2 broken body wikilink(s)']
 ---
@@ -133,6 +133,10 @@ The thesis sits in productive tension with *foundation-models-as-the-platform* r
 ## The *beneath-vs-above-the-model* + open-source-substitution buyer view ([[2026-06-18-ramaswamy-mckinsey-every-company-software-company|Ramaswamy / Snowflake 2026]])
 
 [[2026-06-18-ramaswamy-mckinsey-every-company-software-company|Ramaswamy]] (CEO, Snowflake — a major *buyer* and *host* of foundation models) corroborates the commodity-pressure thesis from the platform-vendor chair: **open-source models are "getting better and better,"** Snowflake hosts them alongside the frontier models, and *"if they're as good, our customers will want to use them instead of the frontier model."* He frames the open strategic question as **what stays "beneath the model" vs "above the model"** — will disruption land on the layer close to end-users, or at a lower layer? This is the same *the-model-is-the-swappable-commodity, the differentiated value is elsewhere* structure as Evans's commodity-utility thesis and the [[agent-harness]] *rented-model* framing, now stated as a procurement reality (a buyer that will switch to open weights the moment they reach parity). It also pairs with the [[2026-06-17-ng-langchain-interrupt-future-of-ai-agents|Ng]] *optionality* discipline — both treat model choice as fluid and lock-in as a liability.
+
+## The open-weight-at-scale switch, and China's open-model lead ([[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue / Hugging Face, July 2026]])
+
+[[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue]] ([[Hugging Face]] CEO — host of nearly 3 million public open-weight models) turns the commodity-substitution thesis above into an operational adoption pattern: enterprises **start on frontier APIs, then switch to open-weight models at production scale** as frontier cost bites — the demand-side cost curve behind Ramaswamy's "if they're as good, customers will use them instead." He adds two data points the wiki's foundation-model material otherwise lacks: (a) the **open-weight-vs-closed capability gap is narrow** (echoing [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Huang's]] Nemotron 3 Ultra 86% vs. Claude Opus 87% at ~10× lower cost); (b) per Hugging Face's Spring 2026 report, **Chinese models are ~41% of downloads** — the plurality, surpassing the US — with named open families (**GLM 5.2**, **Nemotron**, OpenAI's open GPT) as the off-the-shelf starting points teams then post-train. The full own-vs-rent / sovereignty / concentration-of-power treatment lives on the new [[open-source-ai]] concept; here it sharpens the *"open-weight closing the gap"* debate bullet below into a dated, quantified corpus datapoint.
 
 ## Debates and supersession
 

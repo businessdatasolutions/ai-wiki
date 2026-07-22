@@ -10,6 +10,21 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-07-22] ingest | Clem Delangue (Hugging Face CEO) on why companies are done renting their AI — the platform-CEO own-vs-rent thesis
+
+Ingested the TechCrunch *Equity* podcast interview with Hugging Face co-founder/CEO **Clem Delangue** (published 10 Jul 2026, ~36:57). **Acquire note:** the `youtube-transcript-skill` Playwright path hit the known long-format *"transcript panel did not render"* failure ([GH #2](https://github.com/businessdatasolutions/ai-wiki/issues/2)) at both 30s and 60s timeouts; captions were fetched via the `yt-dlp` fallback (English ASR track), VTT rolling-window duplication collapsed to unique lines, and chapters interleaved by timestamp before landing `raw/videos/hugging-face-ceo-companies-done-renting-their-ai.md`. ASR cleanups: "Clem Delong"→"Clem Delangue", "Taking Face"→"Hugging Face", "NeMo tron"→"Nemotron".
+
+Substance: **open-source AI booming** (~3M models, half the Fortune 500); the **own-vs-rent flow** (frontier APIs for experimentation → open models at production scale as cost bites); **China ~41% of downloads** (HF Spring 2026 report); **safety-through-transparency** and **concentration of power as the top AI risk**; contrarian capital-efficient business model (no round in 3 years, turned down Nvidia); underinvested local AI / bio / robotics (Reachy Mini).
+
+Pages written/touched (8):
+- **Created** source [[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai]] (5 W&W tags; 2 `supports` edges → [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Huang/NVIDIA]] and [[2026-03-20-huggingface-agentic-evaluations-workshop|HF Evals Workshop]]).
+- **Created** concept [[concepts/open-source-ai|open-source-ai]] (own-vs-rent / open-weight / AI-sovereignty / concentration-of-power; 2 sources, confidence 0.72 vendor-advocacy-discounted).
+- **Created** entity [[Hugging Face]] (2nd-source promotion after the Mar 2026 workshop; central subject).
+- **Updated** concepts [[concepts/enterprise-ai-adoption|enterprise-ai-adoption]] (89→90), [[concepts/foundation-models|foundation-models]] (19→20), [[concepts/dynamic-capabilities|dynamic-capabilities]] (23→24) — each with a per-source thesis section.
+- **Updated** `index.md` (Sources + new Hugging Face entity bullet + new open-source-ai concept bullet) and this log.
+
+Neighbour scan surfaced 2 typed edges (Huang, HF workshop) and 2 considered-not-linked (AI Index 2026, Nadella/Hoffman — too thin). Dangling (single-source, deferred): Clem Delangue, Rebecca Bellan, TechCrunch. Reversible: delete the 3 new pages, revert the 3 concept + index + log edits.
+
 ## [2026-07-21] ingest | The primary source behind "The AI Layoff Trap" — acquired via Zotero, considerably more qualified than its BBC popularization
 
 Acquired via the `zotero-acquire` skill from the `ai-wiki` Zotero collection and processed in the same session.

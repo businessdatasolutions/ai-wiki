@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-07-19"
-accessed_at: "2026-07-19"
-source_count: 89
+last_confirmed: "2026-07-22"
+accessed_at: "2026-07-22"
+source_count: 90
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -626,6 +626,12 @@ Both failure modes are stated as trade-offs of the same staged-adoption dynamic 
 - **AI fluency as a universal, non-level-specific career-ladder overlay** — applied identically from new hires to senior leadership rather than specified per level — is Netflix's operational answer to the adoption-curve question of *how* to raise organization-wide AI capability without a role-by-role rewrite of every job description. Paired with hiring-process changes (interviews now explicitly permit AI-tool use) and an explicit *"excellence as an operating system"* culture doctrine (talent density, high agency/autonomy, comfort with risk-taking, resistance to adding process after failures) that Stone directly likens to how "the top AI labs operate" — a culture-as-adoption-enabler claim structurally similar to this page's existing senior-leader-ownership and talent-density cross-framework agreements (see [[syntheses/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]]), here narrated as a decades-old doctrine predating the AI era rather than a response built specifically for it.
 
 A third contribution: Netflix's internal use of AI to distill decades of its own institutional experiments and insights — previously gated behind the few tenured employees who "were here for 20 years" — is a concrete instance of AI-enabled tacit-to-explicit institutional-knowledge conversion, adjacent to [[2026-05-07-ransbotham-augmented-learners|Ransbotham/Kiron's]] organizational-learning lens on this page's decision tree.
+
+## The own-vs-rent adoption flow: frontier APIs for experimentation, open models for production at scale ([[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue / Hugging Face, TechCrunch Equity, July 2026]])
+
+**Clem Delangue** ([[Hugging Face]] co-founder/CEO) supplies the wiki's clearest **platform-CEO account of the adoption *flow*** — the sequence enterprises actually move through — distinct from the substrate-vendor ([[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Huang/NVIDIA]]) and consulting-firm cases on this page. The reported pattern: companies **start on frontier APIs** to experiment and launch features, then **switch to open-source models "when they really hit production and hit scale"** because frontier-model cost "becomes too big." His forward projection: frontier models for experimentation and high-value tasks; **most production workloads on private or open-source models.** He grounds it in first-party platform metrics — **half the Fortune 500** on Hugging Face, **16–17M AI builders** (up from a few hundred thousand three-to-four years ago), a new repository "every 7 seconds" — and in the enabling role of coding agents making it "easier and easier for software engineers to run, optimize, and train their own models."
+
+This is the demand-side, cost-curve articulation of the same **own-vs-rent** thesis Huang argues from the supply/substrate side (see [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Huang/NVIDIA]] above and the new [[open-source-ai]] concept): "companies need to own AI and own models instead of renting them." Where Huang emphasizes owned *specialization on top of* open weights, Delangue emphasizes the *cost-at-scale switch to* open weights — the two are complementary faces of the [[agent-harness]] "the model is what you rent, the harness is what you own" motif. The vendor-advocacy caveat applies (Hugging Face sells open-model infrastructure); the Fortune-500 and builder-count figures are first-party and uncorroborated here.
 
 ## Debates and supersession
 

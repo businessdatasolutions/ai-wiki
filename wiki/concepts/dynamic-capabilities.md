@@ -3,9 +3,9 @@ type: concept
 aliases: ["dynamic capabilities", "dynamic-capabilities", "Teece dynamic capabilities", "sense seize transform"]
 tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, microfoundations]
 confidence: 0.95
-last_confirmed: "2026-07-19"
-accessed_at: "2026-07-19"
-source_count: 23
+last_confirmed: "2026-07-22"
+accessed_at: "2026-07-22"
+source_count: 24
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -201,6 +201,18 @@ The Claude Platform team's own account of engineering-team reshaping — same he
 - **`digital-seizing/rapid-prototyping`** — PMs, designers, and data scientists getting further into the product-development life cycle (prototyping and testable code) before requiring an engineering handoff.
 
 Notable methodological point for the concept: Stone explicitly frames Netflix's culture doctrine as *predating* the AI era rather than as an AI-era response — closer in spirit to [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook|Erginbilgiç's]] non-AI Rolls-Royce case than to the AI-native operationalisations elsewhere on this page. This strengthens the page's working hypothesis (see Debates, below) that W&W's cells are transformation primitives rather than AI-specific mechanisms — Netflix's culture cell was already load-bearing before GenAI; the AI era changed what it needed to produce (systems thinkers, paved paths), not its existence.
+
+## An open-model-platform instance of sensing, seizing, ecosystem-navigation, and business-model renewal ([[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue / Hugging Face, July 2026]])
+
+**Clem Delangue**'s [[Hugging Face]] interview exercises five cells from a vantage new to this page — an **open-source AI *platform*** whose whole business is an ecosystem — complementing the substrate-vendor ([[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Huang]]) and enterprise-operator instances above:
+
+- **`digital-sensing/digital-scouting`** — scanning the open-vs-closed resurgence, the frontier-API cost curve, and China overtaking the US in open-model downloads (~41% per Hugging Face's Spring 2026 report); screening frontier labs as digital competitors.
+- **`digital-seizing/balancing-digital-portfolios`** — the core operating decision Delangue reports enterprises making: frontier APIs for experimentation/high-value tasks vs. owned/open models for production at scale (balancing internal and external options, setting an appropriate speed of execution — start off-the-shelf, then optimize/post-train).
+- **`digital-transforming/navigating-innovation-ecosystems`** — Hugging Face *is* a digital ecosystem (the "GitHub for AI," 16–17M builders, half the Fortune 500) that companies join and through which they interact with external partners; the platform strategy ("create 100× the value, capture 1–2%") is ecosystem-navigation as a business.
+- **`strategic-renewal/business-model`** — two business-model claims: the enterprise shift from renting to owning AI as a value-creation/value-capture logic change, and Hugging Face's own contrarian, capital-efficient, community-first platform model (no funding round in 3 years, turned down an Nvidia investment).
+- **`contextual/external-triggers`** — Chinese open models as disruptive competitors, the regulatory environment (US limits on private model releases), and concentration-of-power as the framing external forces.
+
+The fuller treatment of the own-vs-rent / sovereignty / concentration-of-power theme lives on the new [[open-source-ai]] concept and in [[enterprise-ai-adoption]].
 
 ## Debates and supersession
 
