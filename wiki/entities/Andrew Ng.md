@@ -6,9 +6,9 @@ tags: [andrew-ng, ai-researcher, ai-educator, stanford, deeplearning-ai, courser
 affiliation: "[[DeepLearningAI]] (founder); Stanford University (adjunct professor); AI Fund (managing general partner); Landing AI (founder/CEO); Coursera (co-founder); ex-Google Brain (founder); ex-Baidu (chief scientist)"
 role: "Founder of DeepLearning.AI; adjunct professor at Stanford; managing general partner at AI Fund; founder/CEO of Landing AI; co-founder of Coursera; founding lead of the Google Brain team; ex-chief scientist at Baidu"
 confidence: 0.95
-last_confirmed: "2026-06-20"
-accessed_at: "2026-06-20"
-source_count: 6
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 7
 ---
 
 # Andrew Ng
@@ -21,6 +21,8 @@ Promoted from Dangling to an entity page on 24 May 2026 after the second substan
 2. **Second substantive mention (this promotion)** — [[2026-05-20-ng-deeplearningai-ai-dev-26-sf-future-of-software-engineering|Ng / DeepLearning.AI AI Dev 26 x SF (20 May 2026)]] — the wiki's first solo-headlining Ng ingest, a ~19-minute *future-of-software-engineering* keynote with two product announcements (Context Hub for agents; Code Dream / Code Realm for humans) at the end.
 
 ## Role in the wiki
+
+**Bumped to source_count: 7 on 12 August 2026** with [[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness|his *Building America* interview on Washington Post Live]] (29 Jul 2026) — the wiki's first Ng source aimed at **policy** rather than practitioners. Three contributions stand out. He argues open weights are a condition of *American* competitiveness rather than a threat to it ("the success of these businesses cannot be at the cost of shutting down everyone else's access to open models"), and that "the lobbying against open models has hampered American AI development." He calls the distillation-explains-China's-progress claim "vastly overstated," with a symmetry argument (labs distilled the open internet first) and a timing objection. And he makes the enterprise-adoption point in his sharpest form yet: "**no company ever gained competitive advantage just by buying a ChatGPT or Microsoft Copilot licence**" — the problem is finding use cases, which is change management. Also: *preserve optionality* as a portfolio prescription, agent-ready data as the underrated buildout, and OpenWorker, an open-source desktop agent. Note the disclosed conflicts on this one — Amazon board member, interviewed by a paper owned by Amazon's executive chairman.
 
 Ng is the wiki's **AI-leader-altitude-and-educator-altitude voice** on the *future-of-software-engineering / future-of-the-AI-engineer-role* question. Where [[Garry Tan]] and [[Diana Hu]] operate at the *YC-partner-doctrinal* altitude, [[Harrison Chase]] at the *vendor-CEO-product-strategy* altitude, [[Andrej Karpathy]] at the *AI-researcher-paradigm* altitude, and [[Sinclair / Ivers / Benitez|James Ivers]] at the *institutional-research-centre* altitude — Ng sits at the **AI-conference-keynote + AI-educator-platform** altitude, addressing the same questions from a venue that bridges the practitioner-altitude and the broad-developer-audience altitude.
 

@@ -174,21 +174,46 @@ async def _grab_metadata(page: Page) -> dict:
     )
 
 
-async def _trigger_transcript_panel(page: Page) -> bool:
+async def _transcript_panel_is_open(page: Page) -> bool:
+    """True when a transcript panel is already expanded with content in it.
+
+    Checked before every click so a retry never *closes* a panel that a previous
+    attempt successfully opened — YouTube's button toggles.
+    """
+    return await page.evaluate(
+        """() => {
+            if (document.querySelectorAll('ytd-transcript-segment-renderer').length >= 3) return true;
+            for (const p of document.querySelectorAll('ytd-engagement-panel-section-list-renderer')) {
+                if (p.getAttribute('visibility') === 'ENGAGEMENT_PANEL_VISIBILITY_EXPANDED'
+                    && (p.innerText || '').length > 200) return true;
+            }
+            return false;
+        }"""
+    )
+
+
+async def _trigger_transcript_panel(page: Page, candidate: int = 0) -> bool:
     """Open the transcript engagement panel. Returns True iff a transcript-bearing
     UI element exists on the page (whether or not the open succeeds — the caller
     waits for content separately).
 
     YouTube has shipped multiple transcript-panel flavours. The direct click on
-    the 'Show transcript' button is the primary path; the legacy `yt-action`
-    event-dispatch is the fallback for pages that don't expose the button.
-    See GH #2.
+    a 'Show transcript' button is the primary path; the legacy `yt-action`
+    event-dispatch is the fallback for pages that don't expose one. See GH #2.
 
     Order matters: YouTube's button *toggles* the panel, so firing both triggers
     unconditionally can open the panel via the event and immediately close it
     via the click. That presents as `transcript panel did not render` even
     though `/youtubei/v1/get_transcript` returned 200 — the 2026-08-12
     BBC/YC ingest hit exactly this.
+
+    `candidate` selects *which* matching button to click. A watch page typically
+    carries more than one (observed: two 'Show transcript' buttons plus a
+    'Transcript' heading), and the first in DOM order is not reliably the live
+    one — clicking a stale or detached node silently does nothing, which is the
+    residual flakiness behind the 2026-08-12 four-of-seven failure. The caller
+    retries with successive candidates. Indices past the end are a no-op, so an
+    over-long retry loop costs nothing.
     """
     has_transcript_ui = await page.evaluate(
         """() => {
@@ -201,17 +226,23 @@ async def _trigger_transcript_panel(page: Page) -> bool:
     )
     if not has_transcript_ui:
         return False
-    # Primary: direct click on the 'Show transcript' button. Robust to panel-
+    # Never click when a panel is already open — the click would toggle it shut.
+    if await _transcript_panel_is_open(page):
+        return True
+    # Primary: direct click on a 'Show transcript' button. Robust to panel-
     # target-id drift; the click expands whichever panel YouTube currently uses.
     clicked = await page.evaluate(
-        """() => {
-            const btn = Array.from(document.querySelectorAll('button')).find(
+        """(i) => {
+            const btns = Array.from(document.querySelectorAll('button')).filter(
                 b => /show transcript/i.test(b.innerText || '')
             );
-            if (!btn) return false;
+            if (!btns.length) return false;
+            const btn = btns[i % btns.length];
+            btn.scrollIntoView({block: 'center'});
             btn.click();
             return true;
-        }"""
+        }""",
+        candidate,
     )
     if clicked:
         return True
@@ -443,23 +474,35 @@ async def fetch(video_id: str, *, headless: bool = True, timeout_ms: int = 30000
 
             metadata = await _grab_metadata(page)
 
-            triggered = await _trigger_transcript_panel(page)
-            if not triggered:
+            # Retry across the page's several 'Show transcript' buttons: the
+            # first in DOM order is not reliably the live one, and a click on a
+            # stale node fails silently. Each attempt re-checks whether a panel
+            # is already open before clicking, so a retry can never toggle shut
+            # a panel an earlier attempt opened. Budget is split across attempts
+            # so total wall-clock stays within the caller's timeout.
+            attempts = 3
+            per_attempt = max(8000, timeout_ms // attempts)
+            last_error: Exception | None = None
+            for attempt in range(attempts):
+                triggered = await _trigger_transcript_panel(page, candidate=attempt)
+                if not triggered:
+                    return {
+                        "video_id": video_id,
+                        "metadata": metadata,
+                        "transcript": None,
+                        "error": "no transcript section (video has no captions or hasn't been processed)",
+                    }
+                try:
+                    await _wait_for_transcript(page, per_attempt)
+                    break
+                except Exception as e:
+                    last_error = e
+            else:
                 return {
                     "video_id": video_id,
                     "metadata": metadata,
                     "transcript": None,
-                    "error": "no transcript section (video has no captions or hasn't been processed)",
-                }
-
-            try:
-                await _wait_for_transcript(page, timeout_ms)
-            except Exception as e:
-                return {
-                    "video_id": video_id,
-                    "metadata": metadata,
-                    "transcript": None,
-                    "error": f"transcript panel did not render: {e}",
+                    "error": f"transcript panel did not render after {attempts} attempts: {last_error}",
                 }
 
             await _scroll_panel(page)

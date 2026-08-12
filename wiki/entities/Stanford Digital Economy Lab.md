@@ -6,10 +6,10 @@ tags: [stanford, ai-research, digital-economy, labor-economics, working-papers]
 parent: "[[Stanford University]]"
 director: "[[Erik Brynjolfsson]]"
 website: "https://digitaleconomy.stanford.edu"
-confidence: 0.75
-last_confirmed: "2026-04-28"
-accessed_at: "2026-04-28"
-source_count: 1
+confidence: 0.8
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 2
 relationships:
   - type: employs
     target: Erik-Brynjolfsson
@@ -23,6 +23,8 @@ The **Stanford Digital Economy Lab** is a research initiative at Stanford Univer
 **Distinct from [[Stanford HAI]] and the [[AI Index]]**, though personnel overlap: Brynjolfsson is on the AI Index Steering Committee and the Digital Economy Lab director.
 
 ## Role in the wiki
+
+**Bumped to source_count: 2 on 12 August 2026** via [[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson's *McKinsey Talks Talent* appearance]], where he speaks as the lab's director and gives the current state of its **ADP payroll partnership** — the entry-level employment decline in the most AI-exposed occupations now at 16–17%, collected monthly and still growing. The underlying papers remain un-ingested; the lab's output reaches the wiki so far only through interviews.
 
 Publisher of [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson, Chandar & Chen (2025) "Canaries in the Coal Mine?"]] — the wiki's primary empirical source on AI's recent employment effects.
 

@@ -5,7 +5,7 @@ tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
 last_confirmed: "2026-08-12"
 accessed_at: "2026-08-12"
-source_count: 22
+source_count: 24
 relationships:
   - type: instance-of
     target: generative-ai
@@ -165,6 +165,18 @@ Total standing fleet: **34 agents**. She reports the identical structure at a fo
 Her framing of what this implies is the load-bearing part: "this is why you have to believe that **AI is not a tool.** Because if you thought that it was a tool, would you think that you should set up a self-learning flywheel and have 60 agents kick off a thousand? Absolutely not. We're having to treat it as this like **operating system.**" And her one-line definition of the third shift that makes such fleets viable: agents that "work autonomously on many tasks at a decent reliability level **for an hour or more**" — a reliability-duration threshold, which is a more operationally useful framing than capability benchmarks for deciding whether fleet management is worth the overhead.
 
 Two caveats. This is a single advisory practitioner's own setup described on a vendor's podcast — no outcome data, no failure modes, no cost accounting beyond her separate warning that agent fleets can cost "thousands per head per day." And the naming convention (agents named after sitcom characters, given "direct reports") is exactly the anthropomorphising that [[2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees|Kropp et al.'s]] randomized experiment found causes measurable drops in personal accountability and error-catching. Miller does not engage that risk; the two sources should be read together.
+
+## A course-altitude definition, and an honest scoping of the state of the art ([[2026-08-03-chowdhery-mirhoseini-stanford-cs329a-self-improving-agents-part-1|Chowdhery & Mirhoseini / Stanford CS329A, August 2026]])
+
+The wiki's most careful definition of what separates an agent from a chatbot, from the opening lecture of a Stanford graduate course. Chatbots and reasoning models "are basically still single-turn… **they're fun to interact with, but they're not necessarily accomplishing a task for you.**" An agent, by contrast: is given a **goal**; plans steps; interacts with an environment; corrects from feedback; and — the criterion Chowdhery emphasises — **decides when to stop**, including deciding it cannot succeed. "That's what makes agents different from the chatbot types." Tool use and memory follow from the loop rather than defining it.
+
+Equally valuable is the **honest scoping**, delivered in September 2025 and published eleven months later: "in most scenarios, you are still having very **static workflows**… today, what exists is closer to **agentic workflows**," with the genuinely open-ended loop confined to cases like coding and deep research where "we are starting to see signs of life." The composition vocabulary the course uses — LLM calls, verifiers, critics and judges, tool calls, assembled via **prompt chaining**, **routing**, **parallelisation** and an **orchestrator** ("in simple words, an LLM manager") — is a compact taxonomy worth holding alongside this page's practitioner material.
+
+Two further points. On **why coding agents work now**: "**the general architecture is, I would say, not changed that much.** The paradigm is very much the same. It's mostly a matter of **more powerful models and then better RL. RL with verifiable rewards is working**" — plus a compounding effect, "once the models start to get better, there's this self-improvement loop that kicks in, because you can now generate tests and the tests become more reliable." And a requirement easy to overlook: "even when you give the model a goal, **it has to clarify the user intent**… **oftentimes the users will not specify the problem well enough.**"
+
+## *"A fleet of agents… the CEO of their own little entity"* ([[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson, August 2026]])
+
+[[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson]] independently reaches the fleet-management framing this page holds from [[2026-08-10-miller-worklab-the-ai-shift-most-companies-didnt-see-coming|Miller's]] 34-agent org chart, and generalises it into a prediction about the median worker: "**almost everyone is going to be managing not just an agent, but a fleet of agents. They'll be like the CEO of their own little entity**, and they'll have to have those leadership skills leading agents to direct them — and **the ones who are good at pointing them in the right direction and then *evaluating* them are going to really thrive.**" He observes the pattern already in senior software engineers, who "are working with fleets of agents, not just one or two." Two independent sources within ten days, from economics and from advisory practice, naming the same competence — with **evaluation** rather than direction as the scarce half.
 
 ## Debates and supersession
 

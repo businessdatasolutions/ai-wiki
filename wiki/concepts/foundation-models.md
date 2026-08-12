@@ -2,10 +2,10 @@
 type: concept
 aliases: ["foundation model", "foundation models", "FM", "frontier model", "frontier models"]
 tags: [foundation-models, generative-ai, ai-research]
-confidence: 0.85
-last_confirmed: "2026-07-22"
-accessed_at: "2026-07-22"
-source_count: 20
+confidence: 0.87
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 21
 quality_score: 0.95
 quality_notes: ['1 near-empty section(s)', '2 broken body wikilink(s)']
 ---
@@ -137,6 +137,16 @@ The thesis sits in productive tension with *foundation-models-as-the-platform* r
 ## The open-weight-at-scale switch, and China's open-model lead ([[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue / Hugging Face, July 2026]])
 
 [[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue]] ([[Hugging Face]] CEO — host of nearly 3 million public open-weight models) turns the commodity-substitution thesis above into an operational adoption pattern: enterprises **start on frontier APIs, then switch to open-weight models at production scale** as frontier cost bites — the demand-side cost curve behind Ramaswamy's "if they're as good, customers will use them instead." He adds two data points the wiki's foundation-model material otherwise lacks: (a) the **open-weight-vs-closed capability gap is narrow** (echoing [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Huang's]] Nemotron 3 Ultra 86% vs. Claude Opus 87% at ~10× lower cost); (b) per Hugging Face's Spring 2026 report, **Chinese models are ~41% of downloads** — the plurality, surpassing the US — with named open families (**GLM 5.2**, **Nemotron**, OpenAI's open GPT) as the off-the-shelf starting points teams then post-train. The full own-vs-rent / sovereignty / concentration-of-power treatment lives on the new [[open-source-ai]] concept; here it sharpens the *"open-weight closing the gap"* debate bullet below into a dated, quantified corpus datapoint.
+
+## The scaling story told from inside a Stanford course — including where it stopped ([[2026-08-03-chowdhery-mirhoseini-stanford-cs329a-self-improving-agents-part-1|Chowdhery & Mirhoseini / CS329A, August 2026]])
+
+A compact instructional account of the three scaling axes (compute, dataset size, parameter count), with the trajectory given concretely — **BERT 340M → GPT-2 1.5B → GPT-3 175B → PaLM 540B → GPT-4 "estimated… trillions"** — and, notably, a stated end point: this held "**until last year, where this was starting to hit some kind of a saturation point.**" (Delivered September 2025.)
+
+Two capabilities are named as what scale bought: **few-shot and zero-shot learning** — "earlier you had to fine-tune the model for [a] specific domain, but just by giving a few examples the model can follow that template" — and **emergent behaviour**, where "capabilities like reasoning only emerge in larger models." Mirhoseini's framing of why emergence matters epistemically is the part worth keeping: beyond "predictable scaling laws… **there are new behaviours that appear in the model that they didn't have before, and we never could predict that until we had these bigger models.**" Chain of thought is the canonical case — LaMDA and GPT at ~7–8B "can't really benefit from chain of thought, it doesn't do anything for them" — with modular arithmetic and word-unscrambling appearing abruptly at scale.
+
+The lecture is also unusually clear that **ChatGPT's advantage over GPT-3 was post-training, not size**: high-quality fine-tuning data ("data that companies pay millions, or hundreds of millions of dollars, to buy"), **instruction tuning**, and **RLHF**, where "instead of just creating some supervised prompt and labels, we are creating a **reward model** out of human preferences," with reward types weighted per objective (correctness, helpfulness, specificity, harmlessness). Their own verdict on alignment is worth recording verbatim: "we try to steer the AI models to follow the goals and preferences and values of humans. And **this is still a big problem. It's a big issue. We haven't mastered it yet.**"
+
+**The pivot the course is built on**: "pre-training and then fine-tuning were the big pieces. But since a year and a half ago, **it turns out inference is also a frontier for making the models much more capable**" — with the self-improvement loop closing when test-time-scaled generations become training data for the next fine-tune. Per [Lifecycle rules](../../CLAUDE.md#lifecycle) confidence lifts only 0.85 → 0.87: this is instructional synthesis of published results rather than new evidence, and the eleven-month publication lag makes its state-of-the-art claims dated.
 
 ## Debates and supersession
 

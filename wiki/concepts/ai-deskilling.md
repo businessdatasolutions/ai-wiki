@@ -5,7 +5,7 @@ tags: [deskilling, task-composition, ai-employment-effects, occupations]
 confidence: 0.85
 last_confirmed: "2026-08-12"
 accessed_at: "2026-08-12"
-source_count: 16
+source_count: 18
 relationships:
   - type: instance-of
     target: ai-employment-effects
@@ -166,6 +166,22 @@ The mechanism she names is the one this page tracks under verification-competenc
 [[2026-07-31-collison-yc-startup-school-is-ai-breaking-the-lean-startup-playbook|Patrick Collison]] supplies the same tension in miniature, from the practitioner side, and is unusually candid about not knowing the answer. Asked whether a prolific 16-year-old should still write their own Lisp dialect rather than prompting a model to do it: *"I don't know. I wonder a lot."* His analogy cuts toward acceptance — "it used to be really fun to write all this assembly and machine code and to optimize your instructions… and now we don't have to do that anymore. Compilers do it for us. **We don't mourn it too much.** And so maybe in the same way we shouldn't mourn source code" — before he declines to follow it: "but emotionally I miss it." His countervailing argument is the [[durable-skills|cognitive-L1-cache]] one: retrieval from an agent is far slower than retrieval from memory, and firms still pay "an enormous premium on cognitive ability," so "renouncing that before there's evidence that we've saturated those benefits would be premature."
 
 Neither source is empirical — one is a broadcast panel disagreement, the other a founder's stated uncertainty — so neither moves this page's confidence. Their value is naming the **sequencing question** the page's empirical sources ([[2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care|Peron's]] radiologists trained without normal images, [[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Mollick's]] broken apprenticeship) imply but do not pose directly: if verification competence is a residue of manual practice, at what point in a career or an education can the manual practice safely stop?
+
+## The expertise-collapse trap — where the knowledge came from in the first place ([[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson, August 2026]])
+
+This page's most consequential addition, because it names a *managerial inference* that actively destroys the capability the technology depends on. From Brynjolfsson's own call-centre research: "**the less-skilled workers got the biggest boost from the LLMs**, and they were now performing almost as well as the most skilled workers." The reaction he encountered:
+
+> *"Some of the folks [said] — 'oh, that's great, now we don't have to hire as many of those most skilled workers any more, because the less skilled workers are doing almost as well.' **And that's a very short-sighted approach, because where does that knowledge come from in the first place? It came from the most skilled workers.** In some ways they're even more valuable now, because they're not only answering a question for their own client, they're answering a question that **then gets replicated throughout the organisation.**"*
+
+The structure is a stock-and-flow error: the model distributes a *stock* of expertise, and the firm reads the resulting levelling as licence to stop funding the *flow* that replenishes it. His prescription requires a firm "sufficiently forward-looking that they understand that and **don't just reward them on what they're doing today, but also how their knowledge creates value in the future.**" He generalises the same logic to content and copyright — incentives must keep human creators creating "so the LLMs can continue to become better and better," while over-rewarding creation starves downstream use, so "we need to rebalance the way we reward creation versus use."
+
+This is the sharpest version on this page of the mechanism [[2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care|Peron's]] radiologists-trained-without-normal-images case and [[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Mollick's]] broken apprenticeship describe — and the first to locate the failure in an explicit *staffing decision* rather than in a training side effect.
+
+## Two answers to the sequencing question ([[2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era|Brown / WEF-PwC]] + [[2026-07-13-haghighi-stanford-cs547-toward-ontological-multiplicity-in-ai|Haghighi, July 2026]])
+
+[[2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era|Brown]] reports a countermeasure from the WEF–PwC report that directly addresses the page's open sequencing question — *at what point can manual practice safely stop?* A large technology company still develops new coders in "**fundamental coding experience before they're sort of letting them loose into the AI world**… because they want coders who have got that **human judgment** — because at the end of the day, it's the humans that will be making the decisions, not the technology." Deliberate manual practice first, tooling second, on the explicit rationale that verification competence is what is being built. Against that he sets the pressure running the other way: employers now demand **7× more "seniorized" skills** at entry, i.e. exactly the competences that used to take three to four years of practice to form.
+
+[[2026-07-13-haghighi-stanford-cs547-toward-ontological-multiplicity-in-ai|Nava Haghighi]] supplies a subtler variant that this page has not previously held. Her worry is not that people lose skills but that they lose *the awareness that a boundary is negotiable*: end-user authorship, including via vibe coding, does not automatically escape a system's built-in assumptions, because "**although ontological boundaries are questionable, people don't always know that they can question them.**" Her probe study found the entry point itself shaped what participants could conceive of categorising — nobody who started from the raw signal created categories for anything with fuzzy edges. Read onto this page: the deskilling risk includes *losing the disposition to interrogate the tool's framing*, which is upstream of losing the skill to check its output.
 
 ## Related concepts
 

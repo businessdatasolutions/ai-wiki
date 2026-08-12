@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI benchmark", "AI benchmarks", "AI evaluation", "AI evals"]
 tags: [ai-benchmarks, ai-evaluation, foundation-models, capability-reliability-gap, scar-fragmentation]
 confidence: 0.90
-last_confirmed: "2026-06-13"
-accessed_at: "2026-06-13"
-source_count: 9
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 10
 relationships:
   - type: uses
     target: foundation-models
@@ -134,6 +134,14 @@ A 108-minute multi-speaker workshop (Hugging Face) that reframes the benchmark c
 | **GAIA-2** (on ARE) | Agentic multi-app multi-turn evaluation | New 2026 (Andrews et al., Meta); 1,000 scenarios / 10 universes / 11 apps; five capability splits incl. ambiguity and agent-to-agent |
 | **Reliability Index** | Cross-release reliability tracking | New 2026 (Narayanan/Robons, Princeton); 12 sub-dimensions of reliability; living tracker |
 | **GDPval** ([[2025-10-05-patwardhan-et-al-openai-gdpval\|GDPval]]) | Economically-valuable real-world tasks | New 2025 (OpenAI); 1,320 tasks / 44 occupations / 9 GDP sectors; non-saturating win-rate vs human experts; Claude Opus 4.1 best at 47.6% wins-or-ties; gold subset + grader open-sourced |
+
+## Coverage versus pass@1, and *Large Language Monkeys* ([[2026-08-03-chowdhery-mirhoseini-stanford-cs329a-self-improving-agents-part-1|Mirhoseini / Stanford CS329A, August 2026]])
+
+The clearest statement in the wiki of why **which metric you report changes what the result means**. Mirhoseini's lab work, named for the infinite monkey theorem, samples the same problem repeatedly and uses a verifier to select. Scaling from 1 to **10,000 samples per problem** on math and coding benchmarks, **coverage** — the fraction of problems solved by *at least one* sample — rose enough that smaller open models "in all of these cases… do better than the GPT-4o model" that beat them at a single sample. No parameters change: "the model is fixed, and we are just at inference time."
+
+Her interpretation is the load-bearing claim: "**it kind of seems like the models already know a whole lot more than what you get out of them when you just ask them once.**" And the detail that sets the measurement caveat: "for some of these problems, out of these 10,000 solutions, **maybe three or four of them were correct.**" A coverage number that high therefore says almost nothing about usable single-shot capability — it says the correct answer is *reachable*, conditional on a verifier good enough to find it. Chowdhery draws the distinction explicitly against reasoning models, where OpenAI's o1 showed a log-linear relationship between test-time compute and **pass@1** on AIME: much of what RL contributes "comes down to **it learns which is correct**," moving capability from pass@k into pass@1.
+
+For this page the operational consequence is a caution: **coverage/pass@k and pass@1 are not comparable quantities**, and a benchmark result is uninterpretable without knowing which was reported and how many samples were drawn. The lecture also names the boundary of the whole approach — the **generator–verifier gap**: "it's easy for models to generate a whole bunch of nonsense or sensible sets of reasoning traces… but whether that's useful or not, we need a feedback loop for that. **And if you're creative writing, how much feedback can you get?**"
 
 ## Debates and supersession
 

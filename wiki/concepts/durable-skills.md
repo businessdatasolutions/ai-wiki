@@ -5,7 +5,7 @@ tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, 
 confidence: 0.95
 last_confirmed: "2026-08-12"
 accessed_at: "2026-08-12"
-source_count: 39
+source_count: 41
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -111,6 +111,16 @@ The construct is recurring; the operational measurement is new in 2026; the vend
 - **Construct validity vs criterion validity.** The Vantage validation establishes construct validity (the test measures the construct as defined by the rubric). It does *not* establish criterion validity (the score predicts real-world outcomes — manager reports, teacher reports over semesters, downstream career success). Criterion validity is the gold standard but is "largely impractical" to collect at scale, per the paper.
 - **Single-source operational definition.** The wiki has only one source operationalising the durable-skills construct so far. The terminology cluster (durable skills / 21st-century skills / future-ready skills / human skills) is consensus across the broader literature, but a 2nd ingest would substantially raise confidence and surface vocabulary disagreements.
 - **Are durable skills actually durable under sustained AI augmentation?** [[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|Brynjolfsson, Li & Raymond (2025)]] showed augmentation under deliberate human-in-the-loop design produces +15% productivity and equalising effects — but also small quality declines among top performers. If the AI's training data degrades because skilled humans lean on it instead of producing original judgments, do "durable skills" stay durable? Open question.
+
+## Human skills growing twice as fast, and *evaluating* a fleet as the terminal skill ([[2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era|Brown / WEF-PwC, July 2026]] + [[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson, August 2026]])
+
+[[2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era|Peter Brown]] supplies this page's most direct demand-side measurement, from the WEF–PwC entry-level report: in AI-exposed sectors, demand for human skills is growing at **two times** the rate — "they're human skills: **judgment, problem solving, critical thinking, relationship building.**" His framing of the mechanism is the one that makes it a durable-skills claim rather than a hiring-fashion claim: in entry-level roles "much of the tasks they've done traditionally can be automated — but **what can't be automated is actually the skills that are in huge demand.**" He names the second misconception explicitly: "that AI automatically means that human skills become less important — and actually **we're seeing the reverse. As AI is getting more advanced, the requirement for more advanced human skills is increasing.**" His three-part composite for young people is domain expertise + **AI fluency** + deliberately accumulated human skills, with the caveat that the last "is really easy to say, hard to do." (Second-hand from a report co-authored by his own firm; see that source's quality note.)
+
+[[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson]] declines to name skills at all when asked what children will need, and gives a framework instead — which is the more interesting answer for this page:
+
+> *"My framework is less to go into specific skills and more into this broader framework… having that **intention**, figuring out what is it that you really want to do. I think that's a skill that can be engendered, even taught… because I think **almost everyone is going to be managing not just an agent, but a fleet of agents. They'll be like the CEO of their own little entity**, and they'll have to have those leadership skills leading agents to direct them — and **the ones who are good at pointing them in the right direction and then *evaluating* them are going to really thrive.**"*
+
+Two things to hold. First, the terminal skill he names is **evaluation**, not direction — which converges with the verification-is-the-bottleneck finding running through [[2026-08-03-chowdhery-mirhoseini-stanford-cs329a-self-improving-agents-part-1|the CS329A lecture]] and [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey's verification tax]], and makes evaluation the one competence three quite different sources independently place at the centre. Second, the fleet-management framing matches [[2026-08-10-miller-worklab-the-ai-shift-most-companies-didnt-see-coming|Miller's]] third hiring criterion and her 34-agent org chart, reached from advisory practice rather than economics — the same conclusion from two directions within ten days. His reframe of the acronym is the compact version: "when you hear AI, you should not think *artificial intelligence*. You should think **amplifying intention**."
 
 ## Debates and supersession
 

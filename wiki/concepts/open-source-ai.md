@@ -2,10 +2,10 @@
 type: concept
 aliases: ["open source AI", "open-source AI", "open-weight models", "open weights", "open models", "AI sovereignty", "own vs rent AI"]
 tags: [open-source-ai, open-weight-models, own-vs-rent, ai-sovereignty, concentration-of-power, china-open-models, safety-through-transparency, hugging-face]
-confidence: 0.8
+confidence: 0.85
 last_confirmed: "2026-08-12"
 accessed_at: "2026-08-12"
-source_count: 4
+source_count: 5
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -61,11 +61,30 @@ Two things this adds. First, an **independent causal account of China's open-mod
 
 Four sources now, from four positions — an open-model platform CEO, a silicon vendor, an enterprise-AI advisor, and an academic economist. The last two have no stake in open weights, which is what lifts this page's confidence from 0.72 to **0.80**. What is still missing is *empirical* corroboration: no source on this page measures how much enterprise inference actually runs on owned or open models versus rented frontier APIs.
 
+## Open weights as an *American competitiveness* argument ([[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness|Ng / Washington Post Live, July 2026]])
+
+The page's existing sources argue for open weights from cost ([[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Huang]]), data trust ([[2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company|Grant]]) and national capacity ([[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey]]). [[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness|Andrew Ng]] adds the argument that has the most political traction and is the most contested: that **open weights are a condition of American leadership, not a threat to it.**
+
+> *"To sustain competitive advantage in America, one of the most important things we have to do is support and sustain open models… **the success of these businesses cannot be at the cost of shutting down everyone else's access to open models.** … I've been alarmed at the amount of lobbying that a handful of businesses have been doing saying that open models are dangerous. **I think that's false.** … **the lobbying against open models has hampered American AI development.**"*
+
+He is careful to establish he is not hostile to the frontier labs first — "I think I'm the only person that both Sam and Dario have worked for… I really hope they do well and have fantastic IPOs."
+
+**His mechanism for why China's open strategy worked** is knowledge diffusion, and it is the page's clearest causal account: "when you release models freely for anyone to use, it helps the whole world. **Yes, but it helps you even more than it helps the whole world.**" The American counterpart is opaque by construction — "because a lot of American work has gone into closed proprietary models, it's just much harder to know: if you have a question, who should I call up to understand how to do this modelling thing?" This complements [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey's]] account (export controls forced China toward openness) rather than competing with it: Frey supplies the cause, Ng the compounding effect.
+
+**On distillation he is the page's most direct dissenter** from the standard American framing: "the concept that distillation is a major factor has been overstated, **vastly overstated**." Two arguments. A symmetry argument: "AI labs all around the world took data off the open internet and used it to distil knowledge from the internet into their AI models. **Is it fair for them to turn around and say, *I've distilled the internet into my model; if anyone distils my model from here on out, that's not fair?***" And a timing objection to the claim that a recent Chinese release was distilled from a short-lived frontier model — "there just couldn't have been that much data, and how could [it] have been trained in such a short time." He also notes the traffic runs both ways: American labs read Chinese open research heavily, "you have to be dumb not to." This corroborates [[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue's]] near-identical dismissal from an independent vantage a fortnight earlier — **but note both are open-source advocates**, so the page holds this as a well-argued position of two interested parties rather than as a settled technical finding.
+
+**Two economic points.** The market-share consequence of under-investing: "in places where they're a little bit more price sensitive, Chinese models have really gained tremendous market share… for example in Africa, **DeepSeek adoption is through the roof.**" And the unit economics that drive it: "if an open model allows you to get intelligence at one fifth or one third of the cost… **if your supply of intelligence costs three times more, that's a very fundamental business disadvantage.**" On the open-weights business model he is honest that it is unresolved — Red Hat and Linux as precedent, publicly traded Chinese open-source companies "doing just fine at least in the stock market," but "the details of how to do this with open models, I think, are **still being worked out.**"
+
+**His firm-level prescription is the transferable one**: *preserve optionality.* "I can't forecast in a year or even six months what is going to be the top model. So one of the most important things to do is preserve optionality… **I don't let myself be locked into any one of them.**"
+
+Five sources now. Confidence moves 0.80 → **0.85**: Ng is a third distinct argument (competitiveness) alongside cost, trust and sovereignty, and the distillation dissent is now double-sourced. It stays below the cap for the reason the page has always given — **every source here is an interview, none is empirical**, and Ng is the most interested party of the five.
+
 ## Sources consulted
 
 - [[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue / Hugging Face (TechCrunch Equity, Jul 2026)]] — the fullest single-source treatment: own-vs-rent flow, safety-through-transparency, China's open-model lead, concentration-of-power, local AI / robotics.
 - [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Huang / NVIDIA (LangChain, Jul 2026)]] — the own-vs-rent thesis from the substrate/silicon side; proprietary specialization on open weights; the Nemotron benchmark.
 - [[2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company|BBC AI Decoded (Aug 2026)]] — the enterprise-buyer vantage: self-hosting an open model behind a firewall, per-query routing by sensitivity, and a predicted partial return to on-premise, driven by IP protection rather than cost.
+- [[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness|Ng / Washington Post Live (Jul 2026)]] — the American-competitiveness argument: open weights as the condition of US leadership; knowledge diffusion as the mechanism behind China's gains; distillation "vastly overstated"; price-sensitive markets defaulting to Chinese open models; *preserve optionality* as the firm-level prescription.
 - [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey / Bloomberg Trumponomics (Aug 2026)]] — the academic-economist vantage: open weights as the route to domestic AI capacity for countries behind the frontier; export controls as the cause of China's open-weight position; frontier-model access as an instrument of statecraft.
 - [[2026-03-20-huggingface-agentic-evaluations-workshop|Hugging Face Agentic Evaluations Workshop (Mar 2026)]] — the open-evals corollary: open weights as a precondition for *studying, trusting, and improving* AI (background support, not counted in `source_count`).
 

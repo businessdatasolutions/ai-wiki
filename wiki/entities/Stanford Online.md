@@ -5,10 +5,10 @@ aliases: ["Stanford Online", "Stanford Online YouTube"]
 tags: [stanford, education-channel, mooc, academic-lecture, online-education]
 parent: "[[Stanford University]]"
 website: "https://online.stanford.edu"
-confidence: 0.80
-last_confirmed: "2026-05-22"
-accessed_at: "2026-05-22"
-source_count: 4
+confidence: 0.85
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 6
 ---
 
 # Stanford Online
@@ -18,6 +18,10 @@ source_count: 4
 Promoted from Dangling to an entity page on 12 May 2026 after appearing as `author:` in two ingested sources.
 
 ## Role in the wiki
+
+**Bumped to source_count: 6 on 12 August 2026** with two further Stanford recordings that widen the channel's range considerably. [[2026-08-03-chowdhery-mirhoseini-stanford-cs329a-self-improving-agents-part-1|CS329A *Self-Improving AI Agents*, Part 1]] (published 3 Aug 2026; **lecture delivered 22 September 2025**) is a graduate course overview by **Aakanksha Chowdhery** and **Azalia Mirhoseini** covering scaling laws and their stated saturation, the post-training stack that separated ChatGPT from GPT-3, and the pivot the course is built on — inference as a frontier, via Mirhoseini's *Large Language Monkeys* repeated-sampling result — closing on verification as the binding bottleneck. [[2026-07-13-haghighi-stanford-cs547-toward-ontological-multiplicity-in-ai|CS547 HCI Seminar — *Toward Ontological Multiplicity in AI and Computing*]] (published 13 Jul 2026; **seminar delivered 15 May 2026**) is a doctoral job-talk by **Nava Haghighi** on how ontological assumptions get encoded into systems and then "risk becoming everyone's reality" — the wiki's first source at that altitude.
+
+Note the **publication-lag pattern** this channel exhibits: both 2026 additions were recorded months before release (eleven months, in CS329A's case). Time-sensitive claims about the state of the art should be read against the delivery date recorded on each source page, not the publication date the filename carries.
 
 The wiki has ingested two Stanford Online sources representing **two distinct course traditions**:
 

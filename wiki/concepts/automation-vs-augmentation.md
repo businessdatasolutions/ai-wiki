@@ -5,7 +5,7 @@ tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, c
 confidence: 0.95
 last_confirmed: "2026-08-12"
 accessed_at: "2026-08-12"
-source_count: 55
+source_count: 58
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -404,6 +404,22 @@ Most sources on this page treat automate-versus-augment as a question about *wha
 The panel refuses a general answer: "it's not one-size-fits-all. It's actually a little bit more **horses for courses**. Some parts of a process may benefit from moving to GBS first. Other parts of a process may benefit from automating first." Three factors decide it — existing capability and track record with AI, the impact expected and when it is needed, and the process type (procure-to-pay, order-to-cash and record-to-report differ in how readily AI can be applied). The observed split: green-field situations with low process maturity, urgency and "a lot of low-hanging fruit" still choose right-shore first; automate-first appears where the target is enterprise-value unlock (revenue leakage, price realisation, EBITDA basis points) rather than headcount or process cost.
 
 The episode's second contribution is an **adoption lesson about how augmentation is sold**, from a lighthouse that failed on the human side. A company built "just an incredible technology" for customer order and account management that could infer the intent behind each call — "and they just really struggled to get the sales force to adopt it. I think there was a lot of fear." Peters's two conclusions: "the people side of the equation is as big or bigger than the technological side," and the *framing* determines adoption — "can you show them how this gets to better outcomes for both them and the client, versus can you just show them, oh well, we can divert 50% of the calls and therefore we've driven a lot of savings." The augmentation upside he found actually worked was **status, not speed**: reps resolving calls "that normally would have been escalated to somebody sort of above their level," which is "a more gratifying experience for the employee." That is a concrete instance of this page's recurring finding that augmentation framings survive contact with the workforce where substitution framings do not — here observed as a deployment failure and its repair rather than asserted as a principle.
+
+## *"A terrible business strategy"* — imitation versus complementarity ([[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson, August 2026]])
+
+The page's cleanest statement of *why* complementarity beats substitution as a design goal, and it is an argument about product strategy rather than ethics:
+
+> *"So many technologists are obsessed with making AI that imitates humans. Like Alan Turing said — the Turing test, the ultimate test of AI is if you can make an AI that you can't distinguish from a human, that perfectly imitates it. I think that's maybe kind of a cool concept, but **it's a terrible business strategy.** Instead, what you should be doing is having the AI focus on **what AI can do well and not what humans are already doing well** — and that's something that makes AI more of a **complement** rather than a substitute."*
+
+He adds the observation that the two coexist **inside a single occupation**, using coding: "some of the routine tasks AI agents can do — but what's happening is the **senior coders now are finding themselves augmented.** They're able to do so much more. They are working with **fleets of agents**, not just one or two." That is a sharper unit of analysis than the page's occupation-level material: the automate/augment cut runs *through* jobs, and which side a given worker lands on depends on task mix rather than job title. [[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Hancock's]] related observation reframes who is exposed — augmentation talk clusters around front-office roles and automation talk around the back office, "and then if you start to layer on *who's* in the front office, who's in the back office, **it no longer looks like this wave of automation is coming for people with master's degrees. It looks like it's a different disruption pattern.**"
+
+## Augmentation argued from competitive advantage rather than values ([[2026-07-30-hines-pierce-mckinsey-ai-physical-world-more-valuable|Hines-Pierce / McKinsey, July 2026]])
+
+Most augmentation commitments on this page are stated as policy. [[2026-07-30-hines-pierce-mckinsey-ai-physical-world-more-valuable|Laura Hines-Pierce]] states hers as a claim about where her firm's moat is, which makes it a more robust datapoint:
+
+> *"**Our focus is not about cost cutting. It's not about removing jobs. It's about how do we amplify our competitive advantage.** We see our competitive advantage as creating value in the physical world. We have people on the ground in 400 cities who know their city better than anyone else… and we want to use and leverage AI tools to **get them out from behind their computer and out in the real world** where they can create value."*
+
+What she treats as non-substitutable is specific rather than sentimental: sourcing deals through local relationships ("that's not a replaceable technology"), on-site oversight of development, and occupant service that drives retention. The general form — AI democratises the digital layer, so differentiation migrates to whatever is physical, relational or locally situated — is the page's first statement of the augmentation case from the **built environment**, where the automation frontier is bounded by something other than model capability. Her stance on who comes along is notably unsentimental and worth recording alongside it: "**I've got to give everyone the opportunity** to learn… **but if they choose not to participate or choose not to learn, honestly I feel like that's on them.**"
 
 ## Debates and supersession
 

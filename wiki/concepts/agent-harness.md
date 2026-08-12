@@ -3,9 +3,9 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.98
-last_confirmed: "2026-07-22"
-accessed_at: "2026-07-22"
-source_count: 75
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 77
 relationships:
   - type: part-of
     target: ai-agents
@@ -582,6 +582,16 @@ Vo also reproduces Osmani's **five things every effective loop needs** — **wor
 4. **The execution black box → day-one observability.** A 10-step orchestrator plan drifts after step ~4–5, then "never gives up" — loops and hallucinates — with no way to inspect *what was in the context at the failing step*. Fix: traces (human-vs-LLM turn counts), per-step context inspection, and tool-call capture, reached for via **[[Langfuse]] + [[LiteLLM]]** (composes with LangGraph). This ratifies the Compounding/telemetry and human-in-the-loop layers from the open-source-tooling vantage and names the specific stack a small team actually adopted.
 
 Closing thesis, squarely on the wiki's [[agentic-engineering]] line: *"agentic systems are built through engineering… the model is just one component; the industry says only builders are required, but engineers are still required."* The Q&A adds three durable practitioner notes: **prompts become technical debt** as models update (the team "changed our architecture four times in one year"), but *domain knowledge doesn't change* — you re-architect to ride new primitives (instructions → skills), not to chase the model; the **planner-agent** pattern keeps global plan state out of the orchestrator while still risking the *summary-quality* hand-off failure; and a deliberate **no-web-access** policy (web access "increases hallucination"; keep the agent in project context; RAG over proprietary docs) as a Constraints-layer scoping choice.
+
+## Verification as the named bottleneck, from a course and from an economist ([[2026-08-03-chowdhery-mirhoseini-stanford-cs329a-self-improving-agents-part-1|CS329A, August 2026]] + [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey, August 2026]])
+
+The strongest cross-altitude convergence in the 2026-08-12 batch, and it lands on this page because in both accounts the constraint sits in the loop around the model rather than in the weights.
+
+[[2026-08-03-chowdhery-mirhoseini-stanford-cs329a-self-improving-agents-part-1|Chowdhery]] names it the **generator–verifier gap**: "it's easy for models to generate a whole bunch of nonsense or sensible sets of reasoning traces or useful sets of content. But at the end of the day, whether that's useful or not, **we need [a] feedback loop for that. And if you're creative writing, how much feedback can you get? So human feedback ends up becoming a bottleneck.** … **Verification continues to be one of the bottlenecks in this space.**" This is why progress concentrates where verification is cheap — "in domains which are verifiable: math, code, and other domains that are more rule-based, this verification is a good way to give feedback back to the model." Her answer to *why coding agents became reliable* points the same way: "**the general architecture is, I would say, not changed that much.** … It's mostly a matter of more powerful models and then better RL. **RL with verifiable rewards is working.**"
+
+[[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey]] states the same constraint as an economy-wide tax: "**it's the time saving minus the time for verification.**" Read together, the two bracket the problem at both ends of the stack — verification limits how fast capability improves *and* how much of the resulting speed reaches the P&L, which makes verification design the highest-leverage part of a harness rather than a hygiene concern.
+
+The lecture also supplies a harness requirement easy to miss in the ergonomics: "even when you give the model a goal, **it has to clarify the user intent**… **oftentimes, the users will not specify the problem well enough**, so clarifying the user intent — so that it knows what to go look for and **how to verify** — starts to become important." And [[2026-07-24-turnbaugh-motherduck-context-layers-explained|Turnbaugh's]] context-layer argument is the data-side counterpart: her insistence that context must be *surfaced automatically when an agent touches the relevant data*, rather than invoked by a user who has to remember it exists, is a harness design principle stated from the database vendor's chair.
 
 ## Debates and supersession
 

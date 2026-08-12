@@ -2,10 +2,10 @@
 type: concept
 aliases: ["knowledge graph", "KG", "knowledge graphs", "knowledge-graph", "kg"]
 tags: [knowledge-graphs, kg, graph-rag, ai-grounding, ontology, relational-data, agent-harness, agentic-memory, etl, entity-extraction, relationship-extraction]
-confidence: 0.88
-last_confirmed: "2026-06-15"
-accessed_at: "2026-06-15"
-source_count: 7
+confidence: 0.9
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 8
 relationships:
   - type: part-of
     target: agent-harness
@@ -143,6 +143,21 @@ This complements rather than replaces KG-as-retrieval. A mature stack carries bo
 ## Semantics as an agent requirement: the data-strategy vantage ([[2026-06-12-aws-leaders-guide-data-strategy-agentic-ai|AWS data-strategy / Sydney 2026]])
 
 The AWS data-strategy keynote arrives at the knowledge-graph construction story from the *agent-readiness* angle: one of the **three things agents need from data** is **semantics — the relationships between entities** (alongside machine-readable structure and memory). The recipe is the LLM-entity-extraction pipeline this page already documents: "extract the entities from unstructured data — people, places, time — and then find the associations between them," visualised as a rotatable cube where changing perspective surfaces different relationships (cats/dogs vs "AWS and Gartner connected because they're both talking about cloud strategy"). The framing's contribution is *motivational*: traditional data gives the **what**; agents demand the **why**, and "the more why we can give it, the more autonomous we can permit these agents to be" — a crisp business case for KG-as-agent-substrate that complements the page's [[2026-04-27-surrealdb-knowledge-graphs-for-ai-agents-practical-guide|SurrealDB]] engineering treatment.
+
+## Semantic layer versus context layer — and a warning about the word *ontology* ([[2026-07-24-turnbaugh-motherduck-context-layers-explained|Turnbaugh / MotherDuck, July 2026]] + [[2026-07-13-haghighi-stanford-cs547-toward-ontological-multiplicity-in-ai|Haghighi / Stanford CS547, July 2026]])
+
+[[2026-07-24-turnbaugh-motherduck-context-layers-explained|Bev Turnbaugh]] draws a distinction this page needs and has not previously stated cleanly, because the two are "conflated quite a bit":
+
+| Layer | Contents |
+| --- | --- |
+| **Semantic layer** | "Pretty cut and dried — your schema, your joins, your table and column annotations." |
+| **Context layer** | "A whole different animal — your **definitions of business terms**. It documents specific business knowledge." |
+
+Her test for what belongs in the second is the onboarding conversation a new hire has: *don't include that account, that company has this problem; we have an exception for that one.* "**Where do you codify that?**" The failure without it is silent rather than loud — an agent lacking your definitions "guesses. They don't call it guessing… **they infer**" — which is precisely the failure a well-formed schema cannot prevent.
+
+Three structural points travel beyond her product. **Standards support is not adoption**: the Open Semantic Interchange was finalised in Q1 2026 with "support across 50-plus platforms — but that's *support*… **and then the vendors go off and build their own product with their own specifications.**" **The Iceberg parallel**: the property worth wanting is that the layer "separates *what a metric means* from *where it is run*," and she catches practitioners who chose Iceberg for vendor independence simultaneously coupling their semantics to an ETL vendor. And **invocation beats authoring**: context that must be remembered to be used will not be used — "you have to have a way that **forces** your LLM to use those skills" — which is why she treats automatic surfacing when an agent touches the relevant data as the design problem, not the authoring format.
+
+[[2026-07-13-haghighi-stanford-cs547-toward-ontological-multiplicity-in-ai|Nava Haghighi]] supplies a caution that belongs on this page specifically. She opens by warning that **ontology means something different in computer science than in her usage**, and asks listeners to hold their existing definition aside: hers is "**the boundaries of what we allow ourselves to talk or think about**," in the plural. The relevance is not terminological pedantry — it is that a knowledge graph or semantic layer *is* an ontological commitment in her sense, and "what ontological assumptions get built into systems… **risk becoming everyone's reality.**" Her design implication is that categories should be able to change: merging and splitting, hierarchies and nesting, carrying the traces of past boundary decisions, and "**algorithmic support of living classifications** — forking, comparing, facilitating progress beyond focusing on an end state to allow the evolution of categories."
 
 ## Related concepts
 

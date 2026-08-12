@@ -6,10 +6,10 @@ tags: [stanford, nber, ai-research, digital-economy, labor-economics, productivi
 affiliation: "[[Stanford Digital Economy Lab]] / [[Stanford HAI]] / [[NBER]]"
 role: "Director, Stanford Digital Economy Lab; AI Index Steering Committee member"
 contact: "erikb@stanford.edu"
-confidence: 0.87
-last_confirmed: "2026-07-15"
-accessed_at: "2026-07-15"
-source_count: 5
+confidence: 0.9
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 6
 relationships:
   - type: part-of
     target: Stanford-Digital-Economy-Lab
@@ -24,6 +24,8 @@ relationships:
 **Erik Brynjolfsson** is a leading academic on the economics of digital technology and AI. Stanford University and NBER affiliated. **Director of the [[Stanford Digital Economy Lab]]**. Member of the [[AI Index]] Steering Committee at [[Stanford HAI]] (so cross-affiliated between Stanford's two major AI-research initiatives).
 
 ## Role in the wiki
+
+**Bumped to source_count: 6 on 12 August 2026** with [[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|his *McKinsey Talks Talent* appearance]] (1 Aug 2026), which supplies the wiki's most current reading of his ADP-based employment work and several new framings. **The Canaries figure has moved**: employment for workers aged 22–26 in the top AI-exposure quintile fell ~13% at first measurement and is "**up to 16 or 17% now**," an effect "kind of growing over time," with wages still flat. He names the **pyramid-to-diamond** structural shift and its consequence ("where are those middle managers going to come from?"), calls imitation-of-humans "**a terrible business strategy**" against complementarity, dismisses headcount-reduction-as-ROI as "a little lazy," reframes AI as "**amplifying intention**," and predicts almost everyone will manage "**a fleet of agents… like the CEO of their own little entity**." He also reports **fewer startups overall in the United States** as part of why productivity has lagged — independent corroboration of the declining-dynamism finding.
 
 Brynjolfsson recurs across multiple sources and is the author of two of the most-cited empirical findings in the wiki:
 

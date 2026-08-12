@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-07-01"
-accessed_at: "2026-07-01"
-source_count: 19
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 21
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -231,6 +231,20 @@ The wiki's RAI coverage has skewed toward **governance-and-safety** (bias, factu
 - **Data sovereignty as a national-RAI concern.** *"Offering up the scale of our population as a carrot to attract foreign tech companies is not a pathway to anything resembling sovereignty or resilience."* Sovereignty-and-resilience joins the wiki's existing **jurisdictional-governance** thread ([[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world|Singapore's agentic-governance framework]]) but from the **labor-and-development** rather than the **compliance** angle.
 
 The labor-disruption dimension here reinforces the page's existing `supports → ai-employment-effects` edge: this source is cited on both pages, with [[ai-employment-effects]] carrying the *displacement/training-labor* mechanics and this page carrying the *extraction/power/consent* normative reading. Qualitative journalism — does not lift confidence; widens normative coverage.
+
+## *"Say I don't know"* — refusal as a design requirement ([[2026-07-24-turnbaugh-motherduck-context-layers-explained|Turnbaugh / MotherDuck, July 2026]])
+
+Asked at a panel what she wished her agent could do, [[2026-07-24-turnbaugh-motherduck-context-layers-explained|Bev Turnbaugh's]] answer was **"Say I don't know."** — "I don't want it to guess. I don't want it to hallucinate. **I don't want it to make me look bad if I take its answer and give it to somebody.**" Her operational form is a rule in the context layer rather than a model property: "if you don't know what I'm talking about, **do not infer** — come back and say [you don't know]." She pairs it with a detection practice most users skip: rather than tabbing away while an agent works, "**I watch exactly who it's talking to, exactly where it's pulling data**, and then I'll go — *oh yeah, he has no clue, look at all these sources he's looking at and he can't find an answer*," treating that as the signal to go fix the context rather than to distrust the tool. The framing worth carrying: the dangerous failure is not refusal, it is a fluent answer built on an inferred definition — and the countermeasure sits in the harness, not the weights.
+
+## Ontological assumptions as a governance surface diversity fixes don't reach ([[2026-07-13-haghighi-stanford-cs547-toward-ontological-multiplicity-in-ai|Haghighi / Stanford CS547, July 2026]])
+
+This page's material on bias and fairness largely concerns *representation* — who appears in outputs, and how. [[2026-07-13-haghighi-stanford-cs547-toward-ontological-multiplicity-in-ai|Nava Haghighi]] argues that leaves the deeper layer untouched. Her claim: "what ontological assumptions get built into systems — encoded into algorithms and models — **they risk becoming everyone's reality**," and as AI systems proliferate "they will reinforce a set of boundaries, making other boundaries and the worlds in which they exist difficult to imagine."
+
+The line that makes this a distinct critique rather than a restatement is her account of what a diversity fix achieves: "we will keep generating variations of the tree — at best, different species or different styles of rendering, **more equitable representations of all trees** — without questioning what the boundaries of the tree were to begin with, **without any of them ever having roots.**" Her demonstration is small and concrete: repeatedly prompting a model for a tree, including by stating her nationality (which produced stereotyped ornament and a desert landscape rather than a different conception of what a tree *is*), until only "**everything in the world is connected**" produced one with roots.
+
+She also names an empirical finding from analysing four commercial chatbots and an agent architecture: **"even when diverse ontological perspectives exist in training data, specific ontological orientations are surfaced"** over others — i.e. corpus diversity does not imply output diversity. Her proposed governance instrument is a four-orientation analytical framework (**multiplicity, groundedness, liveliness, enactments**), each a way of asking "**where is the boundary being drawn, and what is it leaving outside?**" — with the stated ambition of moving critique "from reaction to prevention," i.e. applying it during design rather than after deployment. The framework's details are in a paper this ingest has not read; treat the framework as a pointer.
+
+A related governance datapoint from [[2026-08-03-chowdhery-mirhoseini-stanford-cs329a-self-improving-agents-part-1|the CS329A lecture]], stated by two researchers who have worked on frontier models at Google DeepMind and Anthropic: on alignment via RLHF, "**this is still a big problem. It's a big issue. We haven't mastered it yet.**"
 
 ## Debates and supersession
 
