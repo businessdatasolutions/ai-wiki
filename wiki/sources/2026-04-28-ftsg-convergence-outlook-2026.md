@@ -103,7 +103,7 @@ Methodology built on FTSG's nearly two decades of foresight work (see [[2026-04-
 
 ## MGI Race Takes Off 2026 as empirical validation
 
-[[2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas|MGI's *The race takes off in the next big arenas of competition*]] (March 2026) is the **firm/industry-layer empirical validator** of FTSG's convergence framework. Where FTSG describes *how* convergence happens (four rules + seven enabling conditions), MGI quantifies *where* convergence has materialised in the 2022–25 data:
+[[2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas|MGI's The race takes off in the next big arenas of competition]] (March 2026) is the **firm/industry-layer empirical validator** of FTSG's convergence framework. Where FTSG describes *how* convergence happens (four rules + seven enabling conditions), MGI quantifies *where* convergence has materialised in the 2022–25 data:
 
 - **"Capital concentrates rapidly in emerging sectors"** (FTSG condition 6) → MGI: 18 future arenas added **$18T market cap** since 2022, with the AI-foundation cluster (semiconductors + cloud + AI software & services) alone accounting for **$10.77T** — 60% of the total.
 - **"Convergences redistribute power and value"** (FTSG rule 3) → MGI: nine **omniscalers** generate ~**$700B operating cash flow** with ~**$800B R&D + capex in 2025 alone**; their per-arena revenue is **~20× higher** than other arena players (~$200B vs ~$10B average). Alphabet plays in 9 arenas, Amazon in 8.

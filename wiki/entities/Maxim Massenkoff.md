@@ -16,7 +16,7 @@ Economist (Naval Postgraduate School) working with the [[Anthropic Economic Inde
 ## Wiki contributions
 
 - [[2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai|Massenkoff & McCrory 2026]] — co-author (with [[Peter McCrory]]) of *Labor market impacts of AI: A new measure and early evidence*, introducing the **observed exposure** measure (theoretical capability × usage, weighting automated/work-related uses) and the no-unemployment-yet / young-worker-hiring-slowdown findings.
-- [[2026-05-07-anthropic-economic-index-5-learning-curves|Anthropic Economic Index, 5th report (*Learning curves*)]] — lead author; the skill-biased-technological-change / model-selection-matches-task-value findings.
+- [[2026-05-07-anthropic-economic-index-5-learning-curves|Anthropic Economic Index, 5th report (Learning curves)]] — lead author; the skill-biased-technological-change / model-selection-matches-task-value findings.
 - [[2026-06-16-anthropic-economic-index-agentic-coding-returns-to-expertise|Hitzig, Massenkoff, Lyubich, Heller & McCrory 2026]] — co-author of *Agentic coding and persistent returns to expertise*; the division-of-labor (planning vs execution) and persistent-returns-to-domain-expertise findings.
 
 ## Why he is an entity (promotion note)

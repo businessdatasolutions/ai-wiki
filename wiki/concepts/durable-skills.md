@@ -126,7 +126,7 @@ The wiki's reading: the Globerson et al. durable-skills measurement battery (col
 
 ## The MGI Skill Change Index as a labour-market-data-grounded systematic measure ([[2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships|Yee et al. / MGI 2025]])
 
-[[2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships|MGI's *Agents, Robots, and Us*]] (November 2025) introduces the **Skill Change Index (SCI)** — the wiki's first labour-market-data-grounded systematic measure of which skills will change most and least under AI automation. Three properties make the SCI a useful complement to the wiki's prior durable-skills vocabularies (Globerson et al. assessment methodology, Storoni's neuroscience-vantage self-regulation-under-uncertainty, Schoening's agency-as-durable-skill):
+[[2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships|MGI's Agents, Robots, and Us]] (November 2025) introduces the **Skill Change Index (SCI)** — the wiki's first labour-market-data-grounded systematic measure of which skills will change most and least under AI automation. Three properties make the SCI a useful complement to the wiki's prior durable-skills vocabularies (Globerson et al. assessment methodology, Storoni's neuroscience-vantage self-regulation-under-uncertainty, Schoening's agency-as-durable-skill):
 
 **(a) Coverage**: 6,800 employer-cited skills from Lightcast across ~1,800 US occupations. Not a hand-selected list of "AI-era skills" — every skill with >5% job-posting prevalence in the US labour market. The breadth makes the SCI a *systematic* baseline rather than a vantage-specific framing.
 

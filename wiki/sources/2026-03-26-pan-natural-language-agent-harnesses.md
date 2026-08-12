@@ -60,7 +60,7 @@ The wiki has been carrying Pan et al. as an *identification open-question* since
 
 ## Why the wiki should re-attribute one prior claim
 
-The wiki has been carrying the **"LangChain jumped from outside the Top 30 to rank 5 on TerminalBench 2.0 by changing only harness infrastructure"** claim as a Pan-et-al-attributed result (per the PY video description). **This claim is not in Pan et al.** Pan does not evaluate on TerminalBench-2 or rank harnesses against a leaderboard. The likely source is the [[2026-02-17-langchain-improving-deep-agents-harness-engineering|LangChain *Improving Deep Agents with Harness Engineering*]] blog post (Feb 2026), or possibly [[2026-03-30-lee-meta-harness-end-to-end-optimization|Lee et al.]] who *do* report TerminalBench-2 rankings (Meta-Harness #2 among Opus 4.6 agents at 76.4%, #1 among Haiku 4.5 agents at 37.6%). **The Top 30 → Top 5 specific framing is most likely a LangChain-post claim that secondary summaries have conflated with Pan.** Worth correcting in [[concepts/agent-harness]].
+The wiki has been carrying the **"LangChain jumped from outside the Top 30 to rank 5 on TerminalBench 2.0 by changing only harness infrastructure"** claim as a Pan-et-al-attributed result (per the PY video description). **This claim is not in Pan et al.** Pan does not evaluate on TerminalBench-2 or rank harnesses against a leaderboard. The likely source is the [[2026-02-17-langchain-improving-deep-agents-harness-engineering|LangChain Improving Deep Agents with Harness Engineering]] blog post (Feb 2026), or possibly [[2026-03-30-lee-meta-harness-end-to-end-optimization|Lee et al.]] who *do* report TerminalBench-2 rankings (Meta-Harness #2 among Opus 4.6 agents at 76.4%, #1 among Haiku 4.5 agents at 37.6%). **The Top 30 → Top 5 specific framing is most likely a LangChain-post claim that secondary summaries have conflated with Pan.** Worth correcting in [[concepts/agent-harness]].
 
 ## What was actually ingested
 
@@ -113,7 +113,7 @@ Plus reference-list entities (not new ingest targets): Anthropic (already in wik
 
 ## Open questions
 
-- **The Top 30 → Top 5 LangChain attribution.** Worth verifying directly against the [[2026-02-17-langchain-improving-deep-agents-harness-engineering|LangChain *Improving Deep Agents with Harness Engineering*]] post (also being ingested in this batch).
+- **The Top 30 → Top 5 LangChain attribution.** Worth verifying directly against the [[2026-02-17-langchain-improving-deep-agents-harness-engineering|LangChain Improving Deep Agents with Harness Engineering]] post (also being ingested in this batch).
 - **Module-level effects on a richer task mix.** Pan's 125 SWE / 36 OSWorld subsets are budget-limited. The pattern that *more structure is not always better* might invert on harder task distributions where multi-candidate search and verifiers earn their cost.
 - **The "alignment failure vs random miss" distinction.** Pan flags this as the most informative class of failures. Worth tracking against future ablation work whether harness-induced "alignment failures" can be detected and corrected in-loop (Karten's Refiner) vs only post-hoc.
 - **Transfer of NLAHs across runtimes.** Pan demonstrates NLAH portability *within* IHR but not *across* runtimes. The promise of "natural language as a portable carrier" needs at least one cross-runtime test (NLAH evaluated on a non-IHR substrate).

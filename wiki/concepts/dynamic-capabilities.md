@@ -74,7 +74,7 @@ Empirically identified across 7 incumbent German MNCs and 18 strategy-consultant
 
 ### Operator-narrated cases at mid-tier regional incumbent scale ([[2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells|Price/DFI 2026]])
 
-[[2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells|Scott Price's CNBC *Managing Asia* interview]] (May 2026) supplies a compact case set of seizing- and transforming-cluster microfoundations operating at **multi-brand multi-country retail-incumbent scale** (DFI Retail Group: ~thousands of supermarket / 7-Eleven / Guardian / Mannings / IKEA-Asia / Maxim's outlets across HK / SE Asia / mainland China). All cases are first-person CEO-narrated and have explicit named-numbers anchors:
+[[2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells|Scott Price's CNBC Managing Asia interview]] (May 2026) supplies a compact case set of seizing- and transforming-cluster microfoundations operating at **multi-brand multi-country retail-incumbent scale** (DFI Retail Group: ~thousands of supermarket / 7-Eleven / Guardian / Mannings / IKEA-Asia / Maxim's outlets across HK / SE Asia / mainland China). All cases are first-person CEO-narrated and have explicit named-numbers anchors:
 
 | Microfoundation | DFI case |
 | --- | --- |
@@ -122,7 +122,7 @@ The implication for the dynamic-capabilities concept: the AI-era literature (War
 
 ### The richest operator-altitude case — *DBS Bank's decade-long innovation system* ([[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Dumra / DBS 2026]])
 
-[[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Bidyut Dumra's MIT SMR *Leaders at All Levels* interview]] supplies the wiki's **most complete single-source operationalisation** of the Teece sense → seize → transform arc — all three clusters narrated first-person by the executive (Group Head of Innovation and Future of Work) who owns the system, at 39,000-employee banking-incumbent scale across a decade (2009 → 2026). Where [[2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells|Price/DFI]] anchors specific microfoundations and [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen/AWS]] traces the arc at vendor-advisory altitude, DBS supplies the *lived end-to-end* case:
+[[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Bidyut Dumra's MIT SMR Leaders at All Levels interview]] supplies the wiki's **most complete single-source operationalisation** of the Teece sense → seize → transform arc — all three clusters narrated first-person by the executive (Group Head of Innovation and Future of Work) who owns the system, at 39,000-employee banking-incumbent scale across a decade (2009 → 2026). Where [[2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells|Price/DFI]] anchors specific microfoundations and [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen/AWS]] traces the arc at vendor-advisory altitude, DBS supplies the *lived end-to-end* case:
 
 | Teece cluster | DBS operationalisation |
 |---|---|

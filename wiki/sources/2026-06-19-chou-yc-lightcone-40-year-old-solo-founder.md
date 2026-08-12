@@ -88,7 +88,7 @@ A **~43-minute episode** of **[[Y Combinator]]**'s *The Lightcone* podcast, inte
 - **Supports** [[2026-05-04-rethinking-agents-harness-is-all-you-need]] — the *harness/skills as durable value* position (purpose-built, opinionated primitives atop general models).
 - **Supports** [[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge]] — experience + taste as the differentiator as output commoditises.
 - **Supports** [[2026-06-17-ng-langchain-interrupt-future-of-ai-agents]] — small-team / clone-yourself compression of what a tiny team can ship.
-- *Note (no typed edge):* Chou's *purpose-built harness retains value* sits in tension with [[2026-06-11-kilpatrick-sequoia-model-eats-the-harness|Kilpatrick's *model eats the harness*]], but Chou does not engage Kilpatrick's specific claim and his value is framed as *domain expertise + opinionated product*, not raw scaffolding — the disagreement is logged on the [[agent-harness]] concept's Debates section rather than as a source edge (not every co-occurrence is a relationship).
+- *Note (no typed edge):* Chou's *purpose-built harness retains value* sits in tension with [[2026-06-11-kilpatrick-sequoia-model-eats-the-harness|Kilpatrick's model eats the harness]], but Chou does not engage Kilpatrick's specific claim and his value is framed as *domain expertise + opinionated product*, not raw scaffolding — the disagreement is logged on the [[agent-harness]] concept's Debates section rather than as a source edge (not every co-occurrence is a relationship).
 
 ## Source-quality note
 

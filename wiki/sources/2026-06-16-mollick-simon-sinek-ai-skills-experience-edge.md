@@ -87,7 +87,7 @@ A **~59-minute conversation** on **[[Simon Sinek]]**'s podcast *A Bit of Optimis
 
 - Concepts this source informs: [[durable-skills]] (taste, experience, judgement, evaluation), [[jagged-frontier]] (Mollick's own term), [[ai-deskilling]] (apprenticeship broke; effort-shortcut learning), [[automation-vs-augmentation]] (doubling down on human; jobs shift weight), [[ai-employment-effects]] (lawyers/doctors guilds; jobs we can't imagine), [[agent-harness]] (models/apps/harnesses), [[enterprise-ai-adoption]] (100× PowerPoint; redefining the work product).
 - Entities (already in wiki): [[Ethan Mollick]], [[Boston Consulting Group]] (the junior-worse-at-AI study).
-- **Promoted to an entity this ingest** (second-source rule — also the named author of [[2018-05-31-sinek-nyt-the-infinite-game|the 2018 NYT *Infinite Game* piece]]): [[Simon Sinek]].
+- **Promoted to an entity this ingest** (second-source rule — also the named author of [[2018-05-31-sinek-nyt-the-infinite-game|the 2018 NYT Infinite Game piece]]): [[Simon Sinek]].
 - **Dangling** (single-source mentions, deferred): Marvin Minsky / MIT Media Lab (Mollick's PhD context), Wharton (his institution), *Co-Existence* / *Co-Intelligence* / *One Useful Thing* (his works — concept-mentions).
 
 ## Source-to-source relationships

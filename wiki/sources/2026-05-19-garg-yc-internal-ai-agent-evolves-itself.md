@@ -140,7 +140,7 @@ This is the founder-vantage instance of what [[2026-05-04-rethinking-agents-harn
 
 > *"There's one very important thing that also this agent needs to have, which is an editable personality or memory. We do this by an `instructions.md` file that is loaded on every agent turn, and the agent is able to edit this. This is how we are able to self-evolve the agent because we can give it feedback like we would give feedback to an employee and it just updates this `instruction.md` file which then gets appended to the next run."*
 
-The pattern: agent-loaded-on-every-turn instruction file, but **the agent can edit it in response to feedback**. This is the founder-scale realisation of [[2026-05-15-osmani-agent-harness-engineering|Osmani's *ratchet-don't-brainstorm AGENTS.md* rule]] — but with the agent itself doing the ratcheting in response to natural-language feedback rather than the engineer doing it manually after each incident.
+The pattern: agent-loaded-on-every-turn instruction file, but **the agent can edit it in response to feedback**. This is the founder-scale realisation of [[2026-05-15-osmani-agent-harness-engineering|Osmani's ratchet-don't-brainstorm AGENTS.md rule]] — but with the agent itself doing the ratcheting in response to natural-language feedback rather than the engineer doing it manually after each incident.
 
 The customer-support story is the clearest instance:
 

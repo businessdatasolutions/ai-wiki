@@ -29,8 +29,8 @@ The wiki currently anchors on O'Reilly Radar via two recurring formats and three
 
 **Feature pieces** — solicited long-form essays. The wiki has ingested:
 
-- [[2026-02-11-shyamsundar-jain-organizational-strategies-collective-wisdom-nature|Shyamsundar & Jain — *Organizational Strategies from the Collective Wisdom of Nature*]] (11 Feb 2026; ~9-min editorial on distributed-coordination archetypes).
-- [[2026-05-15-osmani-agent-harness-engineering|Osmani — *Agent Harness Engineering*]] (15 May 2026; ~17-min essay reposted from addyosmani.com; the wiki's first practitioner-side cross-author synthesis on the harness-engineering discipline).
+- [[2026-02-11-shyamsundar-jain-organizational-strategies-collective-wisdom-nature|Shyamsundar & Jain — Organizational Strategies from the Collective Wisdom of Nature]] (11 Feb 2026; ~9-min editorial on distributed-coordination archetypes).
+- [[2026-05-15-osmani-agent-harness-engineering|Osmani — Agent Harness Engineering]] (15 May 2026; ~17-min essay reposted from addyosmani.com; the wiki's first practitioner-side cross-author synthesis on the harness-engineering discipline).
 
 ## Appears in this wiki via
 

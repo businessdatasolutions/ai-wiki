@@ -15,7 +15,7 @@ Contributor to the [[Anthropic Economic Index]] program. Co-author across two AE
 
 ## Wiki contributions
 
-- [[2026-05-07-anthropic-economic-index-5-learning-curves|Anthropic Economic Index, 5th report (*Learning curves*)]] — co-author.
+- [[2026-05-07-anthropic-economic-index-5-learning-curves|Anthropic Economic Index, 5th report (Learning curves)]] — co-author.
 - [[2026-06-16-anthropic-economic-index-agentic-coding-returns-to-expertise|Hitzig, Massenkoff, Lyubich, Heller & McCrory 2026]] — co-author of *Agentic coding and persistent returns to expertise*.
 
 ## Why he is an entity (promotion note)

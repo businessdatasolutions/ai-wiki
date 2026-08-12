@@ -67,13 +67,13 @@ Two debates survive the layered reading and are flagged for future work:
 
 ## Sources consulted
 
-- [[2018-05-31-sinek-nyt-the-infinite-game|Sinek 2018 — *The Infinite Game* (NYT Events)]] — the anchor source for the [[infinite-game]] concept.
-- [[2022-06-29-martin-hbr-a-plan-is-not-a-strategy|Martin 2022 — *A Plan Is Not a Strategy* (HBR)]] — anchor source for the theory-of-winning lens.
-- [[2022-02-23-oberholzer-gee-hbr-what-is-strategy-value-stick|Oberholzer-Gee 2022 — *What Is Strategy?* (HBR / value stick)]] — anchor source for the value-stick lens.
-- [[2026-04-28-carroll-sorensen-strategy-analogy|Carroll & Sørensen 2024 — *Strategy Theory Using Analogy*]] — anchor source for [[theory-based-view|TBV]] and [[analogical-reasoning|disciplined analogy]].
-- [[2026-04-28-webb-strategic-foresight|Webb 2024 — *Bringing True Strategic Foresight Back to Business*]] — anchor for the strategy/foresight reunion.
-- [[2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success|Carrier 2026 — *Industrial AI That Works* (MIT Sloan)]] — anchor for the *adoption speed* restatement.
-- [[2026-05-15-sterman-systems-thinking-for-leaders-designing-solutions-that-work|Sterman 2026 — *Systems Thinking for Leaders*]] — anchor for the strategy-as-journey-under-feedback convergence.
+- [[2018-05-31-sinek-nyt-the-infinite-game|Sinek 2018 — The Infinite Game (NYT Events)]] — the anchor source for the [[infinite-game]] concept.
+- [[2022-06-29-martin-hbr-a-plan-is-not-a-strategy|Martin 2022 — A Plan Is Not a Strategy (HBR)]] — anchor source for the theory-of-winning lens.
+- [[2022-02-23-oberholzer-gee-hbr-what-is-strategy-value-stick|Oberholzer-Gee 2022 — What Is Strategy? (HBR / value stick)]] — anchor source for the value-stick lens.
+- [[2026-04-28-carroll-sorensen-strategy-analogy|Carroll & Sørensen 2024 — Strategy Theory Using Analogy]] — anchor source for [[theory-based-view|TBV]] and [[analogical-reasoning|disciplined analogy]].
+- [[2026-04-28-webb-strategic-foresight|Webb 2024 — Bringing True Strategic Foresight Back to Business]] — anchor for the strategy/foresight reunion.
+- [[2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success|Carrier 2026 — Industrial AI That Works (MIT Sloan)]] — anchor for the *adoption speed* restatement.
+- [[2026-05-15-sterman-systems-thinking-for-leaders-designing-solutions-that-work|Sterman 2026 — Systems Thinking for Leaders]] — anchor for the strategy-as-journey-under-feedback convergence.
 
 ## Lessons
 

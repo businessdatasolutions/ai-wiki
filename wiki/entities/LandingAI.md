@@ -20,7 +20,7 @@ relationships:
 
 # LandingAI
 
-**LandingAI** is the computer-vision / document-AI company **[[Andrew Ng]] founded** (described in the webinar as *"about seven years ago"*; ~2018). It is the wiki's first **document-intelligence vendor** entity, promoted on 9 June 2026 from a Dangling mention (long referenced on the [[Andrew Ng]] entity as his company) to its own page when the wiki ingested its **first LandingAI-channel source** — the [[2026-05-26-landingai-touchpoint-to-outcome-front-office-processes|*Touchpoint to Outcome* webinar (26 May 2026)]].
+**LandingAI** is the computer-vision / document-AI company **[[Andrew Ng]] founded** (described in the webinar as *"about seven years ago"*; ~2018). It is the wiki's first **document-intelligence vendor** entity, promoted on 9 June 2026 from a Dangling mention (long referenced on the [[Andrew Ng]] entity as his company) to its own page when the wiki ingested its **first LandingAI-channel source** — the [[2026-05-26-landingai-touchpoint-to-outcome-front-office-processes|Touchpoint to Outcome webinar (26 May 2026)]].
 
 The company self-describes as **"vision-first AI"** — distinct from the *"OCR + LLM"* approach it positions against — and notes a history of *"hundreds of projects to many enterprises"* on visual / unstructured data before pivoting to its current flagship product about a year before the webinar.
 

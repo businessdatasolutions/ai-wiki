@@ -90,7 +90,7 @@ Full 12-page ICSE-format PDF (sections 1-8 main text + references). Three domain
 
 ### Anthropic primary-source adjacency
 
-[[2025-11-26-anthropic-effective-harnesses-long-running-agents|Anthropic's *Effective Harnesses for Long-Running Agents*]] (Nov 2025, also being ingested in this batch) names four common failure modes for long-running agents — *Claude declares victory too early / leaves environment in buggy state / marks features done prematurely / has to figure out how to run the app*. AgentSpec's DSL is precisely the kind of declarative-rule framework that could enforce the corrective patterns Anthropic prescribes (read progress notes; only mark features after testing; commit to git with descriptive messages). **AgentSpec + Anthropic vendor patterns = a deployable safety enforcement stack** — worth tracking whether a future Anthropic SDK incorporates DSL-style runtime constraints.
+[[2025-11-26-anthropic-effective-harnesses-long-running-agents|Anthropic's Effective Harnesses for Long-Running Agents]] (Nov 2025, also being ingested in this batch) names four common failure modes for long-running agents — *Claude declares victory too early / leaves environment in buggy state / marks features done prematurely / has to figure out how to run the app*. AgentSpec's DSL is precisely the kind of declarative-rule framework that could enforce the corrective patterns Anthropic prescribes (read progress notes; only mark features after testing; commit to git with descriptive messages). **AgentSpec + Anthropic vendor patterns = a deployable safety enforcement stack** — worth tracking whether a future Anthropic SDK incorporates DSL-style runtime constraints.
 
 ### LangChain anchor
 

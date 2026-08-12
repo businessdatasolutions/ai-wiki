@@ -37,5 +37,5 @@ Bloomberg's interview formats are host-led and generally give the guest room to 
 
 ## Appears in this wiki via
 
-- [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey / *Trumponomics*, August 2026]] — why AI is not boosting productivity.
-- [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook|Erginbiç / *Bloomberg Leaders*, May 2026]] — the Rolls-Royce turnaround playbook.
+- [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey / Trumponomics, August 2026]] — why AI is not boosting productivity.
+- [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook|Erginbiç / Bloomberg Leaders, May 2026]] — the Rolls-Royce turnaround playbook.

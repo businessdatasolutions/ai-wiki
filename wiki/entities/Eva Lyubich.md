@@ -15,7 +15,7 @@ Researcher contributing to the [[Anthropic Economic Index]] program on the econo
 
 ## Wiki contributions
 
-- [[2026-05-07-anthropic-economic-index-5-learning-curves|Anthropic Economic Index, 5th report (*Learning curves*)]] — co-author; skill-biased-technological-change / model-selection findings.
+- [[2026-05-07-anthropic-economic-index-5-learning-curves|Anthropic Economic Index, 5th report (Learning curves)]] — co-author; skill-biased-technological-change / model-selection findings.
 - [[2026-06-16-anthropic-economic-index-agentic-coding-returns-to-expertise|Hitzig, Massenkoff, Lyubich, Heller & McCrory 2026]] — co-author of *Agentic coding and persistent returns to expertise* (the division-of-labor + returns-to-domain-expertise analysis of ~400,000 Claude Code sessions).
 
 ## Why she is an entity (promotion note)

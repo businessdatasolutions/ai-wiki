@@ -86,7 +86,7 @@ Chapters 49:36–end. Ebbelaar runs the assembled stack on the BEIR FinanceQA qu
 
 ## Substantive contributions to the wiki
 
-**To the [[is-rag-dead|is-rag-dead synthesis]]:** the source instantiates the synthesis's closing claim — *"naive vector-only RAG is dead; hybrid + reranking + eval-driven tuning is the production replacement"* — at a practitioner code-walkthrough altitude. Pairs with [[2026-05-11-huber-chroma-rag-is-dead-agentic-search|Huber/Chroma's *agentic search* framing]] (the orchestration layer above) and [[2026-04-27-surrealdb-knowledge-graphs-for-ai-agents-practical-guide|SurrealDB's single-query-language hybrid stack]] (the database-side framing).
+**To the [[is-rag-dead|is-rag-dead synthesis]]:** the source instantiates the synthesis's closing claim — *"naive vector-only RAG is dead; hybrid + reranking + eval-driven tuning is the production replacement"* — at a practitioner code-walkthrough altitude. Pairs with [[2026-05-11-huber-chroma-rag-is-dead-agentic-search|Huber/Chroma's agentic search framing]] (the orchestration layer above) and [[2026-04-27-surrealdb-knowledge-graphs-for-ai-agents-practical-guide|SurrealDB's single-query-language hybrid stack]] (the database-side framing).
 
 **To the [[knowledge-architectures-for-llm-agents|knowledge-architectures synthesis]]:** the wiki's first complete-from-scratch operationalisation of the *RAG-as-hybrid-retrieval-substrate* architecture. The four-component stack (BM25 + dense + RRF + rerank) is the operational refinement of the *RAG substrate* the synthesis names as one of three knowledge architectures alongside LLM-Wiki and Gbrain.
 
@@ -94,7 +94,7 @@ Chapters 49:36–end. Ebbelaar runs the assembled stack on the BEIR FinanceQA qu
 
 ## What's *not* in this source
 
-- **No agentic-RAG orchestration.** Ebbelaar's stack is *static-pipeline* hybrid retrieval — the queries are pre-defined and the retrieval pipeline runs once per query. He does not cover [[2026-05-11-huber-chroma-rag-is-dead-agentic-search|Huber's *agentic search*]] (where an agent decides which queries to run, conditions later queries on earlier results, etc.). The two sources are complementary, not redundant.
+- **No agentic-RAG orchestration.** Ebbelaar's stack is *static-pipeline* hybrid retrieval — the queries are pre-defined and the retrieval pipeline runs once per query. He does not cover [[2026-05-11-huber-chroma-rag-is-dead-agentic-search|Huber's agentic search]] (where an agent decides which queries to run, conditions later queries on earlier results, etc.). The two sources are complementary, not redundant.
 - **No knowledge-graph or graph-RAG.** Pure text-document retrieval. Graph-aware retrieval is covered by [[2026-04-27-surrealdb-knowledge-graphs-for-ai-agents-practical-guide|SurrealDB]] and [[2026-04-09-oceanbase-ex-brain-knowledge-base-that-thinks|OceanBase Ex-Brain]] at different altitudes.
 - **No latency / throughput / cost numbers** beyond the implicit *"reranker is more expensive per-pair, so run on top-K only."* For production cost numbers, the wiki has [[2026-05-05-google-gemini-file-search-multimodal|Gemini File Search]] vendor-side anchors.
 - **No multi-modal retrieval.** Text-only. Multimodal retrieval is named explicitly by [[2026-05-05-google-gemini-file-search-multimodal|Gemini File Search]] as a 2026 production pattern.

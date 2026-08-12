@@ -32,7 +32,7 @@ relationships:
     confidence: 0.75
   - type: supports
     target: 2026-05-07-ransbotham-augmented-learners
-    via: "Same-host pairing — [[Sam Ransbotham]] is the [[Me, Myself, and AI|*Me, Myself, and AI* podcast]] host *and* the lead author of the MIT SMR × BCG annual *Augmented Learners* report. Different formats (long-form interview vs annual research report), same host's intellectual frame: AI-and-organizational-learning as the load-bearing question. Peron's *radiology-trained-on-normal-images* problem (if AI flags only abnormal, how do new radiologists learn what normal looks like?) is a clean clinical-domain instance of the Ransbotham-et-al. *augmented-learners* concern about how organizational learning compounds — or fails to — under AI substitution of routine work."
+    via: "Same-host pairing — [[Sam Ransbotham]] is the [[Me, Myself, and AI|Me, Myself, and AI podcast]] host *and* the lead author of the MIT SMR × BCG annual *Augmented Learners* report. Different formats (long-form interview vs annual research report), same host's intellectual frame: AI-and-organizational-learning as the load-bearing question. Peron's *radiology-trained-on-normal-images* problem (if AI flags only abnormal, how do new radiologists learn what normal looks like?) is a clean clinical-domain instance of the Ransbotham-et-al. *augmented-learners* concern about how organizational learning compounds — or fails to — under AI substitution of routine work."
     confidence: 0.65
   - type: contradicts
     target: 2026-04-25-masad-replit-ceo-only-two-jobs-left

@@ -61,7 +61,7 @@ The full ~20:27 episode via its sole auto-generated (ASR) English caption track 
 
 Published the same day it was ingested (2026-07-09), this is the wiki's most current articulation of the **"productivity-to-reinvention" thesis** that runs through its McKinsey material — and the first to explicitly connect that thesis, by name, to the **[[dynamic-capabilities]]** framing already central to the wiki:
 
-- Directly names and restates **[[2026-05-03-rewired-second-edition-sample|*Rewired*]]**'s core prescription in interview form — the strongest same-firm intertextual link in the wiki's McKinsey corpus so far.
+- Directly names and restates **[[2026-05-03-rewired-second-edition-sample|Rewired]]**'s core prescription in interview form — the strongest same-firm intertextual link in the wiki's McKinsey corpus so far.
 - Supplies a clean three-lever theory of **future competitive advantage** (proprietary data, habit-embedding, metabolic rate of learning) that sharpens the wiki's [[enterprise-ai-adoption]] material beyond "deploy AI" toward "what specifically compounds."
 - The **knowledge-based → outcome-based organization** shift and the **strategy / technology / people** three-lens framing are new, reusable organizational vocabulary for [[organizational-frameworks-for-ai-adoption]].
 - The 53%-activities-automatable / job-reconfiguration-not-elimination claim is a concrete data point for [[ai-employment-effects]] and [[automation-vs-augmentation]].

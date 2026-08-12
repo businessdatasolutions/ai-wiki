@@ -93,7 +93,7 @@ Full ASR transcript (~30 min, single un-chaptered block). The talk is slide-driv
 - **Supports** [[2026-05-04-rethinking-agents-harness-is-all-you-need]] — the *harness-is-the-durable-asset* pole; the write-it-down → reviewer-agent → static-guardrail ladder is its practitioner mechanics.
 - **Supports** [[2026-05-08-bratanic-unified-agentic-memory-hooks]] — Lopopolo explicitly invokes the **dream-phase** (nightly sub-agent distillation of feedback signals).
 - **Supports** [[2026-05-06-bockeler-engineering-of-ai-agents-context-harnessing-autonomy]] — Böckeler relays the *harness engineering* name crediting the Codex team; this is that team's own articulation.
-- *Note (no typed edge):* Lopopolo sits firmly on the durable-harness pole, in tension with [[2026-06-11-kilpatrick-sequoia-model-eats-the-harness|Kilpatrick's *model eats the harness*]] — but his *"retool with every point release"* is the same subtraction mechanism Kilpatrick names, and the wiki's reconciliation (the durable asset is the *discipline + guardrails + telemetry*, not any specific harness component) covers it. Logged on the [[agent-harness]] Debates section rather than as a source edge.
+- *Note (no typed edge):* Lopopolo sits firmly on the durable-harness pole, in tension with [[2026-06-11-kilpatrick-sequoia-model-eats-the-harness|Kilpatrick's model eats the harness]] — but his *"retool with every point release"* is the same subtraction mechanism Kilpatrick names, and the wiki's reconciliation (the durable asset is the *discipline + guardrails + telemetry*, not any specific harness component) covers it. Logged on the [[agent-harness]] Debates section rather than as a source edge.
 
 ## Source-quality note
 

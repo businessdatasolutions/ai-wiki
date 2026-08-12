@@ -154,7 +154,7 @@ Where the prior corroborating sources operate at consultant / vendor / practitio
 
 ### Eleventh-source corroboration: the MGI <40%-of-90% statistic at structural-modeling altitude ([[2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships|Yee et al. / MGI 2025]])
 
-[[2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships|MGI's *Agents, Robots, and Us*]] (November 2025) supplies the wiki's most quantitatively-precise empirical anchor on the trap. Chapter 3 opens with the diagnostic:
+[[2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships|MGI's Agents, Robots, and Us]] (November 2025) supplies the wiki's most quantitatively-precise empirical anchor on the trap. Chapter 3 opens with the diagnostic:
 
 > *"Nearly **90 percent of companies** say they have invested in [AI], but **fewer than 40 percent** report measurable gains. The gap may reflect the fact that many projects are still in pilot or trial phases or that organizations are applying AI to discrete tasks rather than redesigning entire workflows."*
 
