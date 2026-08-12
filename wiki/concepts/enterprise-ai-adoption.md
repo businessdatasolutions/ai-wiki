@@ -5,7 +5,7 @@ tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omni
 confidence: 0.95
 last_confirmed: "2026-08-12"
 accessed_at: "2026-08-12"
-source_count: 100
+source_count: 102
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -690,6 +690,14 @@ Most rollout models on this page are two-sided (top-down direction, bottom-up ex
 ## The context layer as adoption prerequisite ([[2026-07-24-turnbaugh-motherduck-context-layers-explained|Turnbaugh / MotherDuck, July 2026]])
 
 [[2026-07-24-turnbaugh-motherduck-context-layers-explained|Bev Turnbaugh]] places the current moment in a forty-year lineage of attempts to codify business meaning — data dictionaries in the 1980s, warehousing in the 1990s, governance in the 2000s ("Gartner called data governance the single most important aspect of computing for the century… yeah, well, that died"), catalogues in the 2010s — and argues agentic AI is what finally forces it, because the failure is silent. Asked what an LLM does without your business definitions: "**It guesses.** They don't call it guessing… **They infer.**" Her distinction between a **semantic layer** (schema, joins, column annotations) and a **context layer** (what "churn" means here, which customer has an exception, when your fiscal quarter starts) is the cleanest the wiki holds. Two adoption-relevant warnings: standards support is not standards adoption — the Open Semantic Interchange has "support across 50-plus platforms, but that's *support*… **and then the vendors go off and build their own product with their own specifications**"; and context that must be *remembered* to be invoked will not be invoked — "my concern with skills is **you have to remember to use them**… you have to have a way that **forces** your LLM to use those skills."
+
+## A manufacturer's deployment, and the ontology as adoption infrastructure ([[2026-08-11-ummadisetti-langchain-toyota-deep-agents-rd-research|Toyota via LangChain]] + [[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage|Banholzer / McKinsey]], August 2026)
+
+The wiki's corpus skews heavily toward software, consulting and services. [[2026-08-11-ummadisetti-langchain-toyota-deep-agents-rd-research|Toyota North America]] supplies a rare **automotive-manufacturing** datapoint, and its organisational shape is the transferable part rather than the technology. *R&D GPT* lets engineers query decades of research, paint-corrosion and manufacturing data in plain language ("how can I fix this paint issue for this particular car?"). Behind it sits a named **Enterprise AI function** authoring **curated skills per business function** — branding, research, manufacturing, supply chain — supplied to agents "to feed in the institutional knowledge that we have at Toyota," and a director-level role ("Director of Agentic AI and Product Research") owning it. On observability, the two things Ummadisetti says he watches are **usage composition and outliers** — "what the users are using it for, and what are the outliers that we as a team [need] to fix" — a production-operations framing rather than an evaluation one.
+
+**Read with its scope warning attached**: this is a ~2-minute vendor-produced testimonial containing **no numbers of any kind** — no scale, no accuracy, no cost, no failure modes. It is evidence that the deployment exists and evidence of its shape; it is no evidence about how well it works.
+
+[[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage|Banholzer]] supplies the strategic case for the same artifact, and it reframes what a context layer is *for* on this page. Encoding how decisions actually flow through the organisation — "almost a **digital twin to your operating model**" — is argued not as a retrieval improvement but as adoption infrastructure: it "creates the **railroad tracks** that underpin how different AI agents can navigate… to prevent hallucination," supplies guardrails for analytics, and answers the retiring-expert **talent cliff**. Held alongside [[2026-07-24-turnbaugh-motherduck-context-layers-explained|Turnbaugh's]] context layer and [[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness|Ng's]] agent-ready-data argument, four sources across three weeks now name the data-and-knowledge layer rather than the model as the binding constraint on enterprise adoption — from a data vendor, a strategy consultancy, an AI practitioner and a target firm respectively.
 
 ## Debates and supersession
 

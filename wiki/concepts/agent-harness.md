@@ -5,7 +5,7 @@ tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-man
 confidence: 0.98
 last_confirmed: "2026-08-12"
 accessed_at: "2026-08-12"
-source_count: 77
+source_count: 78
 relationships:
   - type: part-of
     target: ai-agents
@@ -592,6 +592,16 @@ The strongest cross-altitude convergence in the 2026-08-12 batch, and it lands o
 [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey]] states the same constraint as an economy-wide tax: "**it's the time saving minus the time for verification.**" Read together, the two bracket the problem at both ends of the stack — verification limits how fast capability improves *and* how much of the resulting speed reaches the P&L, which makes verification design the highest-leverage part of a harness rather than a hygiene concern.
 
 The lecture also supplies a harness requirement easy to miss in the ergonomics: "even when you give the model a goal, **it has to clarify the user intent**… **oftentimes, the users will not specify the problem well enough**, so clarifying the user intent — so that it knows what to go look for and **how to verify** — starts to become important." And [[2026-07-24-turnbaugh-motherduck-context-layers-explained|Turnbaugh's]] context-layer argument is the data-side counterpart: her insistence that context must be *surfaced automatically when an agent touches the relevant data*, rather than invoked by a user who has to remember it exists, is a harness design principle stated from the database vendor's chair.
+
+## A customer-side statement of the harness framing ([[2026-08-11-ummadisetti-langchain-toyota-deep-agents-rd-research|Toyota via LangChain, August 2026]])
+
+The wiki's harness material comes almost entirely from vendors, practitioners and researchers. This is a rare articulation from a **customer**, and the vocabulary has evidently travelled intact:
+
+> *"Deep Agents is one beautiful concept where deep agents is like **one single command**… and that one single command is having this **entire ecosystem of harness**. That is really bringing the deep agents more powerful, especially in working on these use cases like R&D GPT, where we do a lot of deep research."*
+
+What the harness does in his account is aggregation across organisational boundaries — "the harness is really bringing a lot of these tools coming in from **different wings**, like the paint corrosion… we're bringing that entire system and then giving it to deep agents." And the context layer of that harness is explicitly **institutional knowledge organised per function**: curated skills for branding, research, manufacturing and supply chain, authored by a central Enterprise AI group and supplied to agents as input.
+
+Two limits on what this can support. It is vendor-produced promotional content with no numbers, no failure modes and no independent verification — see the source's scope warning. And "one single command" is a product-marketing formulation rather than a technical claim; the wiki should not read it as evidence about Deep Agents' architecture. What it does show is that **the harness-and-skills vocabulary is now being used by enterprise buyers to describe their own systems**, which is a datapoint about diffusion rather than about capability.
 
 ## Debates and supersession
 

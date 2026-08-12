@@ -5,7 +5,7 @@ tags: [knowledge-graphs, kg, graph-rag, ai-grounding, ontology, relational-data,
 confidence: 0.9
 last_confirmed: "2026-08-12"
 accessed_at: "2026-08-12"
-source_count: 8
+source_count: 10
 relationships:
   - type: part-of
     target: agent-harness
@@ -158,6 +158,20 @@ Her test for what belongs in the second is the onboarding conversation a new hir
 Three structural points travel beyond her product. **Standards support is not adoption**: the Open Semantic Interchange was finalised in Q1 2026 with "support across 50-plus platforms — but that's *support*… **and then the vendors go off and build their own product with their own specifications.**" **The Iceberg parallel**: the property worth wanting is that the layer "separates *what a metric means* from *where it is run*," and she catches practitioners who chose Iceberg for vendor independence simultaneously coupling their semantics to an ETL vendor. And **invocation beats authoring**: context that must be remembered to be used will not be used — "you have to have a way that **forces** your LLM to use those skills" — which is why she treats automatic surfacing when an agent touches the relevant data as the design problem, not the authoring format.
 
 [[2026-07-13-haghighi-stanford-cs547-toward-ontological-multiplicity-in-ai|Nava Haghighi]] supplies a caution that belongs on this page specifically. She opens by warning that **ontology means something different in computer science than in her usage**, and asks listeners to hold their existing definition aside: hers is "**the boundaries of what we allow ourselves to talk or think about**," in the plural. The relevance is not terminological pedantry — it is that a knowledge graph or semantic layer *is* an ontological commitment in her sense, and "what ontological assumptions get built into systems… **risk becoming everyone's reality.**" Her design implication is that categories should be able to change: merging and splitting, hierarchies and nesting, carrying the traces of past boundary decisions, and "**algorithmic support of living classifications** — forking, comparing, facilitating progress beyond focusing on an end state to allow the evolution of categories."
+
+## The ontology as a *digital twin of the operating model* ([[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage|Banholzer / McKinsey, August 2026]] + [[2026-08-11-ummadisetti-langchain-toyota-deep-agents-rd-research|Toyota via LangChain, August 2026]])
+
+Two sources a day apart supply the strategy-consulting argument for building the artifact [[2026-07-24-turnbaugh-motherduck-context-layers-explained|Turnbaugh]] describes from the data-platform side, and a target-firm instance of someone doing it.
+
+**Banholzer's version is the most senior articulation of the case the wiki holds.** Asked how a company should track advantage holistically, he lands on encoding it: firms are "really think[ing] about this idea of a **semantic layer**, or what us and others have called an **ontology**, to think through **how do you really codify what makes your business unique and special**." What he wants encoded is *decision structure*, not documentation:
+
+> *"If your advantage is how you manage your supply chain, there are real decisions you probably do make in terms of which plant gets allocated which resource, how you do S&OP planning, how you prioritise which customers… **how do you map the connections of how decisions flow through the organisation** — what people take what decision to do what, what asset moves what resource from one place to another. There are ways to map that in a digital way. **Almost think about it as a digital twin to your operating model.**"*
+
+Three claims for the artifact, each distinct from the retrieval-quality argument this page usually carries. It is itself **hard to replicate**, so building it is a competitive-advantage move rather than an IT project. It functions as **agent infrastructure** — "it creates the **railroad tracks** that underpin how different AI agents can navigate… **to prevent hallucination**," and supplies "the right guardrails for when you do advanced analytics." And it answers the **talent cliff**: "a lot of great people who are retiring soon — how do you encode their knowledge into [the system] while you also train the next generation?" He closes by tying it to extensibility: "if you have this, it's easy to apply that agent to a new market, a new industry."
+
+**Toyota is the instance.** [[2026-08-11-ummadisetti-langchain-toyota-deep-agents-rd-research|Ravi Chandu Ummadisetti]] describes a central *Enterprise AI* group authoring **curated skills per business function** — "especially in terms of branding, or in terms of the research, or in terms of the manufacturing, in terms of the supply chain" — supplied to agents as input: "that way, we are trying to **feed in the institutional knowledge that we have at Toyota**." Note what this is *not*: not a graph database, not an ontology in the formal-semantics sense, but per-function prose artifacts authored centrally and consumed by agents. Held against Banholzer's decision-flow framing and [[2026-07-24-turnbaugh-motherduck-context-layers-explained|Turnbaugh's]] guides-beside-the-tables, the corpus now has three quite different implementations of the same intent, which is worth noting precisely because they do not agree on form.
+
+**The open question this sharpens.** All three sources assert that codified institutional knowledge is the differentiator; none measures it. There is no evidence in the wiki on how much of an agent's error rate a context layer actually removes, how such artifacts decay, or who maintains them once the authoring push ends — and Toyota's testimonial, being vendor-produced marketing with no numbers, cannot supply it.
 
 ## Related concepts
 

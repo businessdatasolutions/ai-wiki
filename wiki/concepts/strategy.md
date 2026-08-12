@@ -2,10 +2,10 @@
 type: concept
 aliases: ["strategy", "business strategy", "corporate strategy", "competitive strategy"]
 tags: [strategy, strategic-planning, value-creation, value-capture, theory-of-winning, playing-to-win, value-stick, roger-martin, felix-oberholzer-gee, harvard-business-review]
-confidence: 0.88
-last_confirmed: "2026-07-01"
-accessed_at: "2026-07-14"
-source_count: 8
+confidence: 0.9
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 9
 relationships:
   - type: supports
     target: strategic-foresight
@@ -169,6 +169,24 @@ The sharpest one-line statement of where advantage survives the commoditisation 
 [[2026-06-14-pincus-lennys-podcast-hidden-pattern-behind-successful-products|Mark Pincus]] (Zynga founder) supplies a founder-vantage product-strategy framework distinct from this page's HBR-theory lenses: **Proven** (start from something already validated in the market — "earn the right to innovate" before differentiating), **Better** (not marginally improved, but decisively better — enough that "10 out of 10 people" say yes), **New** (only after proven + better is earned should a genuinely novel element be added). The framing reframes disciplined imitation-then-improvement as a legitimate strategic starting point, against a cultural bias that over-rewards perceived originality.
 
 A companion claim sharpens *where* ambition should sit: **narrower scope, executed decisively, outperforms broad, diffuse ambition** — Pincus argues the most ambitious long-term outcomes come from *less* ambitious initial scoping, not more. This is a founder-practitioner complement to Martin's *planning ≠ strategy* discipline above: both warn against strategy-as-sprawling-plan, from different vantages (execution focus vs. cognitive-work discipline). Per [Lifecycle rules](../../CLAUDE.md#lifecycle) this single-source, book-promotional interview does not lift the page's confidence; its value is a founder/product vantage the page's consulting- and academic-altitude sources don't otherwise carry.
+
+## Seven sources, a deficit asymmetry, and three decision axes ([[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage|Banholzer & LaBerge / McKinsey, August 2026]])
+
+The wiki's most operational treatment of competitive advantage, and the first that tries to make the construct **measurable from outside the firm**.
+
+**The definition, with three qualifiers that each do work.** Competitive advantage is *"the distinct set of **hard-to-replicate** assets and operating models that a company creates that earn **superior returns over time**."* Banholzer tests each: if everyone can do it, "that's the beauty of capitalism… it's just par"; if the market doesn't pay for it, "nobody really cares — **unique is not the same as hard-to-replicate superior returns**"; and durability is "measured not in months or even a couple of years, but in **decade-plus**."
+
+**Seven sources, detectable outside-in.** Screening the top 5,000 global companies, LaBerge required three properties for a marker to be usable — variation *within* an industry, specificity enough to act on, and accuracy — and tested them on metals and mining precisely because it is the hard case ("commodity, B2B, not an industry where the majority of players are household names"). Across 180+ companies the markers spread widely rather than clustering. Seven themes held across industries: **innovation and IP; customer access and channel; brand and reputation; unique assets and resources; operational excellence; scale; financial strength.** Their relative weight shifts by sector — brand and IP carry a far higher premium in medical technology than in automotive components, where "you have to be really, really good to truly make that a differentiated point that your customer is going to pay for."
+
+**The deficit asymmetry — the most actionable finding on this page.** Advantages cluster and compound: strength across four of the seven "really outperformed quite a bit." But the downside is not symmetric. Companies with **no deficits** did "all right… they didn't drastically outperform, but they did okay," whereas *"if they have a **deficit in one of the seven areas**, economic profit goes from slightly positive to **massively negative**. And if they have two more, it almost doubles again."* The rule Banholzer draws is a direct constraint on strategy: "you have to have an advantage **and you have to be good enough on everything else.**" He is explicit that this inverts the personal-development intuition: "at a personal level we talk about strength-based growth… **we're finding at an enterprise level, you do need to address your weaknesses because it will hamper your strengths.**" His worked case is a chemical company that believed it led on a polymer speciality and was **over-delivering** there while carrying a route-to-market deficit — misallocating on both sides at once.
+
+**Three decision axes.** *Efficiency* — allocate against what customers actually pay for, with failure modes on both sides (over-engineering past diminishing returns; neglecting a capability until "it actually starts to destroy the value you've created by building out some other strength"). *Durability* — how long the edge lasts, whether trends are about to topple it, whether you have "taken your foot off the gas." *Extensibility* — can the advantage travel, with the constraint stated plainly ("a cement company can't usually win successfully moving into software") and the pay-off being adjacencies where the advantage is *valued* rather than merely applicable.
+
+**Cadence.** "The cadence for the companies that do this really well and grow very well is **much faster than annually. It's usually quarterly or monthly**" — continuous tracking rather than periodic clean-sheeting, "so that as things start to spike, they see them with enough lead time that they can do something about it."
+
+**Five closing questions**, which read as the page's most portable artifact: do you know what matters to your customers (they often either disagree you're good at it, or don't care)? Do you know **how good is good enough**? Are you gaining or losing ground relative to peers in the plays you're already in? What trends should you monitor, and continuously or twice a year? And when you make a move, are you using competitive advantage to inform it?
+
+Per [Lifecycle rules](../../CLAUDE.md#lifecycle) confidence lifts only 0.88 → 0.90: this is first-party consulting research supporting a service line, the underlying article is not ingested, and the outside-in detection claim — the methodological premise for the whole product — is validated in the episode only by "for the companies that we did know or had experts on… they were defensible."
 
 ## Debates and supersession
 

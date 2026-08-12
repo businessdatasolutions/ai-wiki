@@ -5,7 +5,7 @@ tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
 last_confirmed: "2026-08-12"
 accessed_at: "2026-08-12"
-source_count: 24
+source_count: 25
 relationships:
   - type: instance-of
     target: generative-ai
@@ -177,6 +177,12 @@ Two further points. On **why coding agents work now**: "**the general architectu
 ## *"A fleet of agents… the CEO of their own little entity"* ([[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson, August 2026]])
 
 [[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson]] independently reaches the fleet-management framing this page holds from [[2026-08-10-miller-worklab-the-ai-shift-most-companies-didnt-see-coming|Miller's]] 34-agent org chart, and generalises it into a prediction about the median worker: "**almost everyone is going to be managing not just an agent, but a fleet of agents. They'll be like the CEO of their own little entity**, and they'll have to have those leadership skills leading agents to direct them — and **the ones who are good at pointing them in the right direction and then *evaluating* them are going to really thrive.**" He observes the pattern already in senior software engineers, who "are working with fleets of agents, not just one or two." Two independent sources within ten days, from economics and from advisory practice, naming the same competence — with **evaluation** rather than direction as the scarce half.
+
+## An enterprise deployment shape, from the customer side ([[2026-08-11-ummadisetti-langchain-toyota-deep-agents-rd-research|Toyota via LangChain, August 2026]])
+
+A short but concrete deployment description in a sector the corpus under-covers. **R&D GPT** at Toyota North America retrieves across "SQL data or anything, all the tools that are connected with these deep agents" in response to plain-language engineering questions, with per-function curated skills carrying the institutional knowledge. The observability practice named alongside it is worth recording because it is stated as what the team actually watches in production rather than what a vendor recommends: the end-to-end agent dashboard plus "what's happening **inside the depth of the agent** — meaning what the users are using it for, and what are the **outliers** that we as a team [need] to fix." Usage composition and outliers, not accuracy scores.
+
+Vendor-produced testimonial with no quantitative content; see the source's scope warning before citing it for anything beyond the deployment's existence and shape.
 
 ## Debates and supersession
 

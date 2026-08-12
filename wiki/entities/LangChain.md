@@ -5,9 +5,9 @@ aliases: ["LangChain", "LangChain Inc"]
 tags: [langchain, agent-frameworks, agent-runtime, agent-harness, langgraph, langsmith, deep-agents]
 since: 2022
 confidence: 0.9
-last_confirmed: "2026-07-15"
-accessed_at: "2026-07-15"
-source_count: 8
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 9
 relationships:
   - type: published-by
     target: 2026-05-09-chase-agent-development-lifecycle
@@ -22,6 +22,8 @@ relationships:
 A US-based AI company building **agent-engineering infrastructure**. Founded in 2022 by **Harrison Chase** as the open-source [`langchain`](https://github.com/langchain-ai/langchain) Python framework; expanded over 2023–26 into a layered product stack covering most of the [[agent-development-lifecycle|Agent Development Lifecycle]]. The company entered the wiki as a **named-but-unsubstantiated organization** across [[agent-harness]], [[ai-agents]], and [[generative-ai]] before [[2026-05-09-chase-agent-development-lifecycle|Chase 2026]] (9 May) supplied the first first-party LangChain source — at which point the cumulative-mention threshold for entity promotion was met.
 
 ## Why LangChain matters in this wiki
+
+**Bumped to source_count: 9 on 12 August 2026** with [[2026-08-11-ummadisetti-langchain-toyota-deep-agents-rd-research|a ~2-minute Toyota customer-testimonial clip]] — the wiki's first LangChain source from a **customer** rather than the company or its conferences, and its first **automotive-manufacturing** deployment. **Ravi Chandu Ummadisetti**, Director of Agentic AI and Product Research at Toyota North America, describes *R&D GPT*: an internal agent searching Toyota's research, paint-corrosion and manufacturing data in plain language. Two details are worth the page even at that length — his description of **Deep Agents** as "one single command… having this entire ecosystem of harness" pulling tools in "from different wings," and Toyota's practice of authoring **per-function curated skills** (branding, research, manufacturing, supply chain) from a central *Enterprise AI* group to "feed in the institutional knowledge that we have at Toyota." On **LangSmith** he singles out *Polly* and *Insights* for production observability — specifically usage composition and outliers. It is promotional content with **no numbers of any kind**; see that source's scope warning.
 
 LangChain's product stack is the **clearest worked example** of the four-layer Build vocabulary [[2026-05-09-chase-agent-development-lifecycle|Chase 2026]] articulates — *frameworks / runtimes / harnesses / no-code* — because LangChain ships at every layer:
 

@@ -5,7 +5,7 @@ tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, m
 confidence: 0.95
 last_confirmed: "2026-08-12"
 accessed_at: "2026-08-12"
-source_count: 31
+source_count: 33
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -233,6 +233,18 @@ The second 2026-08-12 batch tagged five of seven video sources against the [[war
 **`digital-sensing/digital-scouting`** gets its clearest instance yet from [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey]], whose prescription for anyone behind the frontier is a scouting prescription with a quality criterion attached: adopt technology invented elsewhere (the Marshall-aid precedent), while recognising the binding constraints are institutional and cultural rather than availability-based — and that **adoption for what** decides whether it produces growth. "If people adopt it for email, it's not going to drive growth in any meaningful way."
 
 The batch's other cells: **`digital-transforming/redesigning-internal-structures`** in three sources — [[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson's]] pyramid-to-diamond with its named consequence for the middle and senior ranks, [[2026-07-30-hines-pierce-mckinsey-ai-physical-world-more-valuable|Hines-Pierce's]] middle governance team whose sole remit is making a solved workflow propagate, and [[2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era|Brown's]] account of PwC cutting entry routes from "17, 18 ways you could join" to about five while hiring for potential over credentials. **`digital-transforming/improving-digital-maturity`** in [[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness|Ng's]] agent-ready-data argument (with a concrete failure mode: credential prompts breaking automated access) and [[2026-07-24-turnbaugh-motherduck-context-layers-explained|Turnbaugh's]] forty-year lineage of attempts to codify business meaning. **`strategic-renewal/business-model`** in [[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson's]] find-new-value-rather-than-cut-cost argument and his small-business case. **`strategic-renewal/organizational-culture`** in [[2026-07-30-hines-pierce-mckinsey-ai-physical-world-more-valuable|Hines-Pierce's]] 70%-people framing, three-generation stewardship doctrine, and explicitly Darwinian stance on who comes along. And **`contextual/internal-barriers`** in [[2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era|Brown's]] seniorization gap ("it's not going to happen by osmosis") and [[2026-07-24-turnbaugh-motherduck-context-layers-explained|Turnbaugh's]] two barriers — standards that get supported but not adopted, and context that must be remembered to be invoked.
+
+## Sensing gets its most operational instance yet ([[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage|Banholzer & LaBerge, August 2026]])
+
+The wiki's `digital-sensing/*` material has generally been about *posture* — scanning widely, crafting a digital mindset. [[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage|The competitive-advantage episode]] supplies the first source that specifies sensing as **instrumentation**, with a signal taxonomy, a cadence and a wiring diagram.
+
+**`digital-scouting`** here means outside-in detection of seven advantage markers across the top 5,000 global companies, screened against three explicit tests (within-industry variation, actionable specificity, accuracy) — and honestly scoped as "an **outside-in ten-minute scan**." **`digital-scenario-planning`** is the durability axis operationalised: batch-mode scans (patents, competitive offerings, rival capex) alongside always-on tracking (startup-activity spikes, regulatory news), with "**triggers cascaded through the business**" wired into two named destinations — the strategic scenarios, and whether resourcing decisions get revisited "maybe even not just once a quarter but on demand." The cadence claim is the sharpest part: firms that do this well run it **monthly to quarterly**, not annually.
+
+The CGM case gives the cell a worked example with an unusual lesson: the actionable signal was not the technology's arrival but **the regulatory and reimbursement changes that made the substitute purchasable**, which "preceded the massive tip by a few years."
+
+**`balancing-digital-portfolios`** gains a hard allocation rule from the same source — the deficit asymmetry means fixing a deficit dominates pushing a strength further, since one deficit among the seven moves economic profit "from slightly positive to massively negative." **`strategic-renewal/business-model`** gains the extensibility test (choose adjacencies where your advantage is *valued*, not merely applicable) and **`contextual/external-triggers`** the erosion thesis (an 11% shuffle-rate rise across 60%+ of industries; "the overall porosity of industry barriers").
+
+[[2026-08-11-ummadisetti-langchain-toyota-deep-agents-rd-research|The Toyota clip]] adds two `digital-transforming/*` instances at target-firm altitude — improving digital maturity by making decades of dispersed research queryable, and redesigning internal structures via a central Enterprise AI function authoring per-function skills — though with no evidence of outcome attached.
 
 ## Debates and supersession
 

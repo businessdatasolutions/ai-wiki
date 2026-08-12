@@ -2,10 +2,10 @@
 type: concept
 aliases: ["strategic foresight", "strategic-foresight", "corporate foresight", "futures thinking"]
 tags: [strategic-foresight, scenarios, futures, signal-detection, FTSG, webb, arena-creation-potion, arenas-radar, MGI]
-confidence: 0.85
-last_confirmed: "2026-05-22"
-accessed_at: "2026-05-22"
-source_count: 10
+confidence: 0.87
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 11
 relationships:
   - type: part-of
     target: dynamic-capabilities
@@ -161,6 +161,22 @@ A complementary forecast at the enterprise-software layer comes from [[2026-05-0
 The framing complements [[2026-04-28-ftsg-convergence-outlook-2026|FTSG]]'s convergence-as-unit-of-analysis stance and [[2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas|MGI]]'s arena-creation potion with a **specific scouting strategy**: track the one major ecosystem developing outside the Silicon-Valley-influence sphere because that's where genuinely different combinatorial paths produce the surprises that the Anglophone foresight literature systematically under-weights. The wiki's first named *geographic-asymmetry-as-foresight-instrument* claim — and a corrective to the implicit US-centric default in Webb / FTSG signal-detection methodologies.
 
 Ognibeni also names the **operational corollary** for scouting practitioners: *"Learn to learn. Be willing to understand something fully before you know that it doesn't work."* A pointed critique of the dismiss-on-first-encounter pattern that Webb identifies as one of the three reasons corporate foresight fails — *"it's especially in Germany, we are very quick in knowing why stuff doesn't work, but without fully understanding it."*
+
+## Economic profit is a lagging indicator — and which early signal actually mattered ([[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage|LaBerge / McKinsey, August 2026]])
+
+The clearest statement in the wiki of *why* financial metrics fail as an early-warning system, and an unusually specific answer to the perennial question of which weak signals are worth watching.
+
+The diagnosis: **"economic profit is a bit of a lagging indicator**… there are a lot of organisations where they don't see that their competitive gap is closing until it already topples." LaBerge reaches for Hemingway — "how did you go bankrupt? Very slowly, and then very fast" — which is the failure shape this page tracks under discontinuity.
+
+**The worked case is the useful part.** In continuous glucose monitoring displacing fingerstick strips, the incumbents had dominant share, established payer-reimbursement pathways and a consumables business model. CGM arrived with "data ecosystems, a very different type of device that was embedded, and a different reimbursement model." Her point is not that the technology was unforeseeable — it is that *technology arrival was the wrong signal to watch*:
+
+> *"There were lots of new technologies always coming online. **Not everything wins, not everything scales.** The key tipping points started to be when you got some of the **regulatory changes passed and the reimbursement permissions changed** — and that **preceded the massive tip by a few years.** Enough time that you can try to pivot or decide to exit."*
+
+The generalisable claim: in a regulated market the actionable leading indicator is the **change in the rules that make the substitute purchasable**, not the substitute's technical maturity — and it arrives with years of lead time. Different incumbents made different choices with that window, which is what makes it a strategy signal rather than a forecast.
+
+**A two-mode signal taxonomy** follows. *Batch mode* — quarterly, monthly or annual scans for new patents, competitive offerings, and shifts in rivals' capital expenditure. *Always-on* — "tracking of spikes in startup activity, spikes in shifts in regulatory news," with "**triggers that are cascaded through the business**" wired into two specific places: how the strategic scenarios look, and whether resourcing decisions should be revisited "maybe even not just once a quarter but on demand." She flags the obvious hazard: "with learning comes failures. Before you just deploy something you want to make sure you vet it and you understand what the potential errors and the sources of that data are."
+
+**Two failure signatures worth recording** alongside the page's existing material, because both are invisible to a financial dashboard: a **strength quietly becoming a weakness** (a firm whose mounting operational issues moved it out of the advantaged band on a dimension that had been a strength), and an **advantage held but not deployed** — "financial strength where you have these enormous cash assets, but you're not actually using that for anything… you're not deploying it. And that can be true for any of the seven."
 
 ## Debates and supersession
 
