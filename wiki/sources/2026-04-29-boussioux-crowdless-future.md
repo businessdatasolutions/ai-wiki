@@ -130,4 +130,4 @@ The cost-time gap is ~**94×** in money and **~458×** in time — a substantial
 - [[Karim Lakhani]] — author entity (existing)
 - [[Léonard Boussioux]], [[Jacqueline N. Lane]], [[Miaomiao Zhang]], [[Vladimir Jacimovic]] — author entities
 - [[Continuum Laboratory]] — partner organization
-- [[Harvard Business School]] — affiliation (Lane, Jacimovic, Lakhani)
+- Harvard Business School — affiliation (Lane, Jacimovic, Lakhani)

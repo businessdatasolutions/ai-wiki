@@ -73,7 +73,7 @@ Methodology built on FTSG's nearly two decades of foresight work (see [[2026-04-
 
 ### The "creative destruction" framing (Webb's letter)
 
-- Cites **[[Joseph Schumpeter]]** (1942) — creative destruction as the engine of capitalism: new innovations relentlessly displace older technologies, companies, business models.
+- Cites **Joseph Schumpeter** (1942) — creative destruction as the engine of capitalism: new innovations relentlessly displace older technologies, companies, business models.
 - Webb's argument: **the greatest threat is not external disruption but the refusal to destroy from within.**
 - Demonstrates the principle by retiring FTSG's own 19-year flagship Tech Trends Report (calcified format) in favor of this new framing.
 

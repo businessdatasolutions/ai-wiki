@@ -58,7 +58,7 @@ relationships:
 
 (Channel description, [[Y Combinator]] Founder Firesides upload, ~39 min runtime.)
 
-A 39-minute YC Founder Firesides interview with **[[Amjad Masad]]** (co-founder & CEO of [[Replit]]) by **Andrew Miklas** (YC). Published 25 April 2026 — one day after [[2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up|Diana Hu's Startup School session]] and two days after [[2026-04-23-tan-yc-how-to-make-claude-code-your-ai-engineering-team-gstack|Garry Tan's GStack demo]], forming a three-day **YC-batch-context cluster** on the AI-native-company thesis from three complementary vantages (President / Partner / Founder of a portfolio platform vendor). ASR-cleaned for proper-noun consistency (`Replit`/`Amjad Masad`/`vibe coding`/`Marc Andreessen`/`Paul Graham and Sam Altman`/`a16z`/`Zendesk`).
+A 39-minute YC Founder Firesides interview with **Amjad Masad** (co-founder & CEO of Replit) by **Andrew Miklas** (YC). Published 25 April 2026 — one day after [[2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up|Diana Hu's Startup School session]] and two days after [[2026-04-23-tan-yc-how-to-make-claude-code-your-ai-engineering-team-gstack|Garry Tan's GStack demo]], forming a three-day **YC-batch-context cluster** on the AI-native-company thesis from three complementary vantages (President / Partner / Founder of a portfolio platform vendor). ASR-cleaned for proper-noun consistency (`Replit`/`Amjad Masad`/`vibe coding`/`Marc Andreessen`/`Paul Graham and Sam Altman`/`a16z`/`Zendesk`).
 
 ## TL;DR
 
@@ -123,8 +123,8 @@ The product-strategy claim: **a coupled-to-foundation-model-step-changes release
 
 ## Linked entities and concepts
 
-- **[[Amjad Masad]]** — co-founder & CEO of [[Replit]]; the substantive speaker for ~95% of runtime. **First wiki appearance as a source-anchored figure**; per the second-source rule, entity page deferred (single source). If a second source cites Masad — likely given the platform-vendor cadence — promote on that ingest.
-- **[[Replit]]** — vibe-coding-platform vendor; $400m Series D at $9bn valuation announced ahead of this interview. **First wiki appearance as a primary source subject** (previously referenced only in passing in [[vibe-coding]]). Single source; entity page deferred.
+- **Amjad Masad** — co-founder & CEO of Replit; the substantive speaker for ~95% of runtime. **First wiki appearance as a source-anchored figure**; per the second-source rule, entity page deferred (single source). If a second source cites Masad — likely given the platform-vendor cadence — promote on that ingest.
+- **Replit** — vibe-coding-platform vendor; $400m Series D at $9bn valuation announced ahead of this interview. **First wiki appearance as a primary source subject** (previously referenced only in passing in [[vibe-coding]]). Single source; entity page deferred.
 - **Andrew Miklas** — YC interviewer. Single-source mention; deferred.
 - **[[Y Combinator]]** — channel/author. **Third source from the YC channel** ([[2026-04-23-tan-yc-how-to-make-claude-code-your-ai-engineering-team-gstack|Tan]] + [[2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up|Hu]] precede it). Entity page already exists with `source_count: 2` — this ingest bumps it to **3** and bumps `last_confirmed` to 2026-05-14.
 - **Marc Andreessen / a16z** — passing mention (a16z led Replit's seed round). Single-source mention; deferred.

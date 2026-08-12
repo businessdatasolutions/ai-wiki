@@ -15,7 +15,7 @@ relationships:
 
 # O'Reilly Media
 
-US-based technology publisher and learning platform founded 1978 by **[[Tim O'Reilly]]**. Headquarters Sebastopol, California. Publishes technical books, runs the O'Reilly learning platform (subscription-access library + live training), and operates **O'Reilly Radar** (radar.oreilly.com / *oreilly.com/radar*) — its long-running technology-trend editorial channel under [[Mike Loukides]]'s curation.
+US-based technology publisher and learning platform founded 1978 by **Tim O'Reilly**. Headquarters Sebastopol, California. Publishes technical books, runs the O'Reilly learning platform (subscription-access library + live training), and operates **O'Reilly Radar** (radar.oreilly.com / *oreilly.com/radar*) — its long-running technology-trend editorial channel under [[Mike Loukides]]'s curation.
 
 Promoted to entity status in the **16 May 2026 batch ingest** that landed eight O'Reilly Radar articles (five monthly *Radar Trends to Watch* installments Jan–May 2026 plus three feature pieces: Baron's annual *Signals for 2026* outlook, Shyamsundar-Jain's *Organizational Strategies from the Collective Wisdom of Nature*, and Osmani's *Agent Harness Engineering*).
 
@@ -35,7 +35,7 @@ The wiki currently anchors on O'Reilly Radar via two recurring formats and three
 ## Appears in this wiki via
 
 - [[2026-01-06-loukides-radar-trends-january-2026]] — January 2026 digest.
-- [[2026-01-09-baron-signals-for-2026]] — Annual *Signals for 2026* outlook by [[Julie Baron]].
+- [[2026-01-09-baron-signals-for-2026]] — Annual *Signals for 2026* outlook by Julie Baron.
 - [[2026-02-03-loukides-radar-trends-february-2026]] — February 2026 digest.
 - [[2026-02-11-shyamsundar-jain-organizational-strategies-collective-wisdom-nature]] — Feature: distributed coordination.
 - [[2026-03-03-loukides-radar-trends-march-2026]] — March 2026 digest.

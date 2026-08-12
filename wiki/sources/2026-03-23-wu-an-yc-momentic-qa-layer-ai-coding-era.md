@@ -40,7 +40,7 @@ relationships:
     via: "Momentic's MCP-integration design — Cursor / Claude Code call Momentic as a tool-call during development to verify functional correctness, with *'the average step for us runs in under 300 milliseconds'* — is the **vendor-side complement** to Tan's GStack *Office Hours / Adversarial Review / Code Review / SLQA / Ship* skill pipeline. Where GStack composes skills inside the agent harness, Momentic provides an external skill-shaped tool-call (start a real browser, verify the user flow works) that those harnesses can use. Wiki's emerging picture: the AI-coding-era dev loop has both **internal skills** (GStack-style harness primitives) and **external verifiers** (Momentic-style MCP tools) — both composable via MCP, both improving the harness layer in Chase's three-layer model."
     confidence: 0.65
   - type: supports
-    target: 2026-02-19-trivedy-langchain-anatomy-of-an-agent-harness
+    target: 2026-03-10-trivedy-langchain-anatomy-of-an-agent-harness
     via: "Wu's *'I can't really trust Claude Code or Cursor to tell me themselves. I need a third external source of truth'* is a founder-vantage application of Trivedy's *harness-is-load-bearing* thesis at the **verification-substrate** layer. The harness inside the coding agent is necessary but not sufficient for confidence; an external harness (Momentic's functional-testing harness) provides the independent eval gradient that the coding agent's self-report cannot. The wiki's pattern is now: **multi-harness-stack** — coding-agent harness (writes the code) + verification harness (validates it) — with MCP as the inter-harness protocol."
     confidence: 0.7
 ---
@@ -49,7 +49,7 @@ relationships:
 
 # Wu & An / YC — Momentic as the verification layer for the AI coding era
 
-[[Harj Taggar]] (YC Managing Partner) interviews [[Weiwei Wu]] and [[Jeff An]], co-founders of [[Momentic]] (YC W24), on YC Root Access — Founder Firesides episode, published 23 March 2026, ~34 minutes. Frames a $15M Series A announcement led by *Standard Capital*; Momentic is positioned as the **verification layer for software** — an AI-powered functional-testing platform that impersonates end users, powering Notion, Quora, Built, Zero, and others at *over a million test runs a day*.
+Harj Taggar (YC Managing Partner) interviews Weiwei Wu and Jeff An, co-founders of Momentic (YC W24), on YC Root Access — Founder Firesides episode, published 23 March 2026, ~34 minutes. Frames a $15M Series A announcement led by *Standard Capital*; Momentic is positioned as the **verification layer for software** — an AI-powered functional-testing platform that impersonates end users, powering Notion, Quora, Built, Zero, and others at *over a million test runs a day*.
 
 ## TL;DR
 
@@ -169,14 +169,19 @@ Atypical Series A structure named on-stage: *"instead of having a board member o
 **Entities directly named or substantively discussed in the source:**
 
 - **[[Y Combinator]]** — accelerator; Momentic is W24. Source-count bumps 9→10.
-- **[[Harj Taggar]]** — interviewing Managing Partner. Dangling first mention (his first-source appearance in the wiki).
-- **[[Momentic]]** — Dangling first mention (the company).
-- **[[Weiwei Wu]]** — Dangling first mention (co-founder).
-- **[[Jeff An]]** — Dangling first mention (co-founder).
-- **[[Notion]]** — substantive mention (anchor customer; ~500K test runs/day). Existing entity (referenced from prior sources).
-- **[[Simon Last]]** — Dangling first mention (Notion CTO; the Twitter-DM-onboarding anecdote).
-- **[[Robinhood]]** — Dangling first mention (Wu's prior employer; testing-team experience anchor).
-- **[[Dan Robinson]]** — Dangling first mention (ex-CTO of Heap; introducer to An).
+- **Harj Taggar** — interviewing Managing Partner. Dangling first mention (his first-source appearance in the wiki).
+- **Momentic** — Dangling first mention (the company).
+- **Weiwei Wu** — Dangling first mention (co-founder).
+- **Jeff An** — Dangling first mention (co-founder).
+- **Notion** — substantive mention (anchor customer; ~500K test runs/day). Existing entity (referenced from prior sources).
+- **Simon Last** — Dangling first mention (Notion CTO; the Twitter-DM-onboarding anecdote).
+- **Robinhood** — Dangling first mention (Wu's prior employer; testing-team experience anchor).
+
+**Sources this one relates to** (the typed `relationships:` above, restated for navigation):
+
+- [[2026-03-10-trivedy-langchain-anatomy-of-an-agent-harness|Trivedy / LangChain]] — Wu's *"I can't really trust Claude Code or Cursor to tell me themselves. I need a third external source of truth"* is a founder-vantage application of Trivedy's harness-is-load-bearing thesis at the **verification-substrate** layer: the harness inside the coding agent is necessary but not sufficient, and an external verification harness supplies the independent eval gradient the agent's self-report cannot.
+- [[2026-04-23-tan-yc-how-to-make-claude-code-your-ai-engineering-team-gstack|Tan / GStack]] — the internal-skills half of the same picture, where Momentic is the external tool-call; both composable over MCP.
+- **Dan Robinson** — Dangling first mention (ex-CTO of Heap; introducer to An).
 - **[[Anthropic]]** — substantive cross-reference (Claude Code as customer-facing dev-loop substrate). Existing entity. Source-count: increment.
 
 **Concepts touched substantively:**

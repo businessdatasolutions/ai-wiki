@@ -36,7 +36,7 @@ relationships:
 
 ## TL;DR
 
-A ~34:13 [[Stanford Online|Stanford Online]] MS&E435 Session 1 lecture (published 2026-05-20; auto-generated English captions, 322 segments). Instructor: **Apoorv Agrawal** — Stanford Adjunct Lecturer in Management Science and Engineering and partner at **Altimeter Capital** (the investment firm). Prior career: 13–14 years ago started at [[Palantir]] (the wiki's first [[Palantir]] anchor) writing Spark in government buildings; came back to Stanford for grad school.
+A ~34:13 [[Stanford Online|Stanford Online]] MS&E435 Session 1 lecture (published 2026-05-20; auto-generated English captions, 322 segments). Instructor: **Apoorv Agrawal** — Stanford Adjunct Lecturer in Management Science and Engineering and partner at **Altimeter Capital** (the investment firm). Prior career: 13–14 years ago started at Palantir (the wiki's first Palantir anchor) writing Spark in government buildings; came back to Stanford for grad school.
 
 The lecture is the **opening session of a 9-week seminar** on the economics of the AI stack — the seminar's recurring guests will be practitioners with vantage points at each layer (semis to infrastructure to foundation models to applications and agents). The course is conducted under Chatham House Rules; the wiki ingest is limited to the publicly-released Session 1 instructor content.
 

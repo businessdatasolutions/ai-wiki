@@ -49,7 +49,7 @@ Ries (who plays *"no important role"* but *"a very big role"* in the founding-ad
 
 ## Models referenced in this wiki
 
-- [[Claude Sonnet 4.5]] — predominant model in the November 2025 Economic Index sample. Referenced as exhibiting "context anxiety" (premature task wrap-up) in the Managed Agents engineering post.
+- Claude Sonnet 4.5 — predominant model in the November 2025 Economic Index sample. Referenced as exhibiting "context anxiety" (premature task wrap-up) in the Managed Agents engineering post.
 - **Claude Opus 4.5** — released between the 4th and 5th Economic Index sample windows. The Managed Agents engineering post notes that the "context anxiety" seen on Sonnet 4.5 was *not present* on Opus 4.5.
 - **Claude Opus 4.6** — released coincident with the 5th Economic Index sample window (Feb 2026).
 - Family-level cost/speed/performance tradeoff: Haiku (fast, cheap) → Sonnet (default) → Opus (most capable, higher per-token price). The 5th Economic Index report quantifies that users select Opus differentially for higher-value tasks: **+1.48 pp Opus per +$10/hour** task value (Claude.ai); **+2.79 pp per +$10** (1P API — about twice as steep).

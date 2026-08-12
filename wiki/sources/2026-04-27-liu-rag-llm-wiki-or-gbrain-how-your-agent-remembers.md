@@ -28,9 +28,9 @@ relationships:
 >
 > Later on, Garry Tan shipped GBrain — 24 autonomous skills, 21 cron jobs, and a brain spanning 17,888 pages. His system doesn't just remember things. It acts on them. Autonomously.
 
-(Article opening, [[Yanli Liu]] on AI Advances Medium publication.)
+(Article opening, Yanli Liu on AI Advances Medium publication.)
 
-A 15-minute Medium article by **[[Yanli Liu]]** (finance practitioner in Luxembourg; AI Advances contributor with 4.5K followers). Published 27 April 2026 — **23 days after** Karpathy's gist. **The wiki's most-substantive comparative-architecture article** on knowledge-memory patterns for AI agents, with a unified decision framework placing LLM Wiki alongside RAG and GBrain.
+A 15-minute Medium article by **Yanli Liu** (finance practitioner in Luxembourg; AI Advances contributor with 4.5K followers). Published 27 April 2026 — **23 days after** Karpathy's gist. **The wiki's most-substantive comparative-architecture article** on knowledge-memory patterns for AI agents, with a unified decision framework placing LLM Wiki alongside RAG and GBrain.
 
 ## TL;DR
 

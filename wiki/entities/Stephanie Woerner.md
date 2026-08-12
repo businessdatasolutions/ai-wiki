@@ -3,7 +3,7 @@ type: entity
 kind: person
 aliases: ["Stephanie Woerner", "Stephanie L. Woerner"]
 tags: [mit-sloan, mit-cisr, ai-research, digital-transformation, business-research]
-affiliation: "[[MIT Sloan]] / [[MIT CISR]]"
+affiliation: "MIT Sloan / [[MIT CISR]]"
 role: "Principal research scientist; Director of [[MIT CISR]]"
 confidence: 0.75
 last_confirmed: "2026-05-03"
@@ -17,7 +17,7 @@ relationships:
 
 # Stephanie Woerner
 
-**Stephanie Woerner** is a principal research scientist at [[MIT Sloan]] and the director of [[MIT CISR]]. Her research focuses on how companies use technology and data to make more effective business models, and how they manage the associated organizational change, governance, and strategy implications.
+**Stephanie Woerner** is a principal research scientist at MIT Sloan and the director of [[MIT CISR]]. Her research focuses on how companies use technology and data to make more effective business models, and how they manage the associated organizational change, governance, and strategy implications.
 
 A primary author of the **Four Stages of Enterprise AI Maturity** framework and the **Four S** framework (Strategy / Systems / Synchronization / Stewardship) — see [[enterprise-ai-adoption]] and [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan article]].
 

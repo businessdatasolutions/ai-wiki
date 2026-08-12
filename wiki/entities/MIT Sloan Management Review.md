@@ -28,7 +28,7 @@ relationships:
 
 # MIT Sloan Management Review
 
-The research-and-management magazine of [[MIT Sloan School of Management]] — distinct from **MIT Technology Review** and from **MIT Technology Review Insights** (the custom-publishing arm that produced the [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]] sponsored research). MIT SMR runs ongoing research initiatives under its **Big Ideas** program, including the **Artificial Intelligence and Business Strategy** track that has produced an 8-year panel of comparable global surveys on AI in business.
+The research-and-management magazine of MIT Sloan School of Management — distinct from **MIT Technology Review** and from **MIT Technology Review Insights** (the custom-publishing arm that produced the [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]] sponsored research). MIT SMR runs ongoing research initiatives under its **Big Ideas** program, including the **Artificial Intelligence and Business Strategy** track that has produced an 8-year panel of comparable global surveys on AI in business.
 
 ## Editorial / research structure
 

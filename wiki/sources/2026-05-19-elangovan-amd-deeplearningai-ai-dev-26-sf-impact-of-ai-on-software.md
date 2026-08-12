@@ -35,7 +35,7 @@ relationships:
 
 # Elangovan / AMD / DeepLearning.AI — *AI Dev 26 x SF: Impact of AI on Software* (2026-05-19)
 
-A ~14:24 conference talk from the [[DeepLearningAI]] AI Dev 26 x San Francisco event, published 19 May 2026. Auto-generated English captions via the [[youtube-transcript-skill]] engagement-panel route; 318 segments. The skill's initial 30-second timeout failed; succeeded on 180-second retry (recurring failure mode for AI Dev 26 SF talks per [[CLAUDE|§Acquire failure modes]]).
+A ~14:24 conference talk from the [[DeepLearningAI]] AI Dev 26 x San Francisco event, published 19 May 2026. Auto-generated English captions via the [youtube-transcript-skill](../../.claude/skills/youtube-transcript-skill/SKILL.md) engagement-panel route; 318 segments. The skill's initial 30-second timeout failed; succeeded on 180-second retry (recurring failure mode for AI Dev 26 SF talks per [§Acquire failure modes](../../CLAUDE.md)).
 
 **Speaker: Anush Elangovan** — *"runs most of AMD's AI software team."* Personal lineage anecdote: *"about 12 years ago we were a small startup working on gesture recognition ... pre-AI right before the term AI was popular, and [Andrew Ng] awarded us the best AI startup award in 2014, and that team now runs most of AMD's AI software team."* So Elangovan is the founder-CEO who joined AMD via the 2014-AI-startup-award lineage — AMD's AI-software organisation's senior leadership.
 
@@ -82,7 +82,7 @@ The Rosetta example is the most-citable: *4-5 years × 200-300 people → 48 hou
 
 Three sub-corpus roles for this source:
 
-1. **The wiki's first AMD-vendor-altitude anchor.** Joins the existing [[Anthropic]] / [[OpenAI]] / [[Google]] / [[Meta]] / [[NVIDIA]]-via-AI-Index frontier-vendor cluster with an explicit GPU-hardware-and-open-software-stack altitude that none of those carry directly. The ROCm worked examples are concrete and quantified.
+1. **The wiki's first AMD-vendor-altitude anchor.** Joins the existing [[Anthropic]] / [[OpenAI]] / [[Google]] / Meta / [[NVIDIA]]-via-AI-Index frontier-vendor cluster with an explicit GPU-hardware-and-open-software-stack altitude that none of those carry directly. The ROCm worked examples are concrete and quantified.
 
 2. **The wiki's clearest *K-shape visual metaphor anchor* for the software-engineering-profession bifurcation.** Convergent with [[2026-05-20-ng-deeplearningai-ai-dev-26-sf-future-of-software-engineering|Ng's]] PM-bottleneck framing, [[2026-05-21-sinclair-ivers-benitez-sei-cmu-ai-native-software-engineering|SEI/CMU]]'s coder-vs-engineer split, and [[2026-05-21-bender-google-io-software-engineering-tipping-point|Bender]]'s *programming-vs-engineering* distinction. The K-shape gives the same observation a sharper visual / sketchable handle.
 
@@ -92,7 +92,7 @@ The W&W tagging (7 cells) is narrower than the same-conference [[2026-05-22-ever
 
 ## ASR notes
 
-- Captions sourced via the [[youtube-transcript-skill]] engagement-panel route (180s retry succeeded after initial 30s timeout).
+- Captions sourced via the [youtube-transcript-skill](../../.claude/skills/youtube-transcript-skill/SKILL.md) engagement-panel route (180s retry succeeded after initial 30s timeout).
 - Surface artifacts: speaker rendered *"Anush Elangovan"* (verified — AMD AI software lead); *"Llama CPP"* (correct: llama.cpp); *"K-shape"* and *"K-shaped"* both appear.
 - The *Harvard paper on K-shaped future of software engineering* citation is unverified (attributed via *"a slide that came up on social"*). Treat as an Elangovan-vouched framing, not a peer-reviewed anchor.
 
@@ -103,7 +103,7 @@ The W&W tagging (7 cells) is narrower than the same-conference [[2026-05-22-ever
 - [[Andrew Ng]] — credited with the 2014 best-AI-startup award that became AMD's AI software team.
 - [[Anthropic]] — Claude Code / Opus 4.6 as the substrate for the Rosetta 48-hour prototype.
 
-**Dangling first-mentions (single-source, deferred per [[CLAUDE|§Lifecycle author-entity promotion]]):**
+**Dangling first-mentions (single-source, deferred per [§Lifecycle author-entity promotion](../../CLAUDE.md)):**
 - Anush Elangovan — AMD AI software lead.
 - AMD — chip and software company; ROCm open-source stack.
 - ROCm — AMD's open-source software stack.

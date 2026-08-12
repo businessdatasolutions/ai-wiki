@@ -129,7 +129,7 @@ Direct support relationships:
 
 ## Linked entities and concepts
 
-**Entities (this wiki):** [[Deep Nishar]] *(new)*, [[Nitin Nohria]] *(new)*, [[Harvard Business Review]] (publisher), [[Anthropic]] (Nishar investment), [[Harvard Business School]] *(dangling — Nohria's institutional home)*. **Dangling** (single-source mentions, deferred): Salesforce / Salesforce Headless 360, SAP, Workday, Epic, Cursor, Replit Agent, OpenAI Codex, Adobe.
+**Entities (this wiki):** [[Deep Nishar]] *(new)*, [[Nitin Nohria]] *(new)*, [[Harvard Business Review]] (publisher), [[Anthropic]] (Nishar investment), Harvard Business School *(dangling — Nohria's institutional home)*. **Dangling** (single-source mentions, deferred): Salesforce / Salesforce Headless 360, SAP, Workday, Epic, Cursor, Replit Agent, OpenAI Codex, Adobe.
 
 **Concepts:** [[enterprise-ai-adoption]] (firm-boundary lens enrichment — heavy), [[micro-productivity-trap]] (data-architecture-as-foundation reinforcement), [[generative-ai]] ($37B / 40% AI code / vibe coding), [[automation-vs-augmentation]] (Buy Outcomes as the most automative model), [[foundation-models]] (substrate for the Build model).
 

@@ -16,7 +16,7 @@ source_count: 2
 **Open-source Python data-validation library** originally written by **Samuel Colvin**; now also the name of the commercial company (**Pydantic Inc**) that supports it and ships adjacent products:
 
 - **Pydantic AI** — agent framework built on Pydantic's validation foundation.
-- **Monty** — *"a Rust-based subset of Python — of course — for running tool code in sandboxes at very high latency or low latency"* (per [[Paul Everitt]] at [[2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering|AI Dev 26 SF]]). Used in the **tooling / code-mode** layer of agentic engineering — the agent generates code, runs it in a sandbox, exactly the code it needs (rather than `sed` / `grep` / walking-around discovery).
+- **Monty** — *"a Rust-based subset of Python — of course — for running tool code in sandboxes at very high latency or low latency"* (per Paul Everitt at [[2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering|AI Dev 26 SF]]). Used in the **tooling / code-mode** layer of agentic engineering — the agent generates code, runs it in a sandbox, exactly the code it needs (rather than `sed` / `grep` / walking-around discovery).
 - **LogFire** — observability tool. Everitt's pitch: *"general system observability ... AI observability ... you probably need something that can do both."*
 
 Pydantic surfaces in this wiki at two altitudes:

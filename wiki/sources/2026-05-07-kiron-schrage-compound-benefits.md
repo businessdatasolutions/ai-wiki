@@ -50,7 +50,7 @@ Two complementary economic dynamics that reinforce each other in a virtuous cycl
 
 ### 1. Polanyi's tacit dimension breach
 
-In his 1966 book *The Tacit Dimension*, philosopher [[Michael Polanyi]] observed that **humans know more than they can articulate**. For decades, that tacit knowledge protected knowledge workers — what could not be explicitly described could not be automated. **Tacit expertise was a moat.**
+In his 1966 book *The Tacit Dimension*, philosopher Michael Polanyi observed that **humans know more than they can articulate**. For decades, that tacit knowledge protected knowledge workers — what could not be explicitly described could not be automated. **Tacit expertise was a moat.**
 
 The column argues AI breaches that moat — *not by codifying tacit knowledge but by inferring it from behavioral traces at scale.* Large language models absorb how experts actually work, including knowledge the experts never articulated:
 

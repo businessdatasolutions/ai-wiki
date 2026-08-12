@@ -13,7 +13,7 @@ source_count: 2
 
 # Jonathan Allen
 
-**AWS Executive in Residence**, with over eight years at [[Amazon Web Services|AWS]] as of mid-2026. Previously spent eight years at Capital One, ending as divisional Chief Technology Officer during the bank's cloud migration. The third holder of the AWS "Executive in Residence" title to appear in the wiki, after [[Jana Werner]] and [[Phil Le-Brun]]. Works alongside colleague **Stephen Brozovich / [[Steven Brovich]]** (see that entity page's alias note); together they and colleagues have spent over eight years working with 1,000+ AWS customers.
+**AWS Executive in Residence**, with over eight years at [[Amazon Web Services|AWS]] as of mid-2026. Previously spent eight years at Capital One, ending as divisional Chief Technology Officer during the bank's cloud migration. The third holder of the AWS "Executive in Residence" title to appear in the wiki, after Jana Werner and Phil Le-Brun. Works alongside colleague **Stephen Brozovich / [[Steven Brovich]]** (see that entity page's alias note); together they and colleagues have spent over eight years working with 1,000+ AWS customers.
 
 Delivers a recurring executive-forum keynote — **"A leader's guide to advanced team structures in an agentic world"** — on organizational design for agentic AI, first given at AWS re:Invent 2025 and revised across at least two later editions:
 

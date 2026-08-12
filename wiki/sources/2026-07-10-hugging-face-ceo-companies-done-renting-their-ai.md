@@ -73,7 +73,7 @@ The full auto-generated (ASR) English caption track, ~36:57 runtime, nine chapte
 
 ## Linked entities and concepts
 
-- Channel/publisher: **[[TechCrunch]]** — first appearance; **dangling** (single-source, deferred per [author-entity promotion](../../CLAUDE.md#author-entity-promotion)). The show is TechCrunch's *Equity* podcast.
+- Channel/publisher: **TechCrunch** — first appearance; **dangling** (single-source, deferred per [author-entity promotion](../../CLAUDE.md#author-entity-promotion)). The show is TechCrunch's *Equity* podcast.
 - **Created [[Hugging Face]]** entity — this is the **second** source citing Hugging Face (after the [[2026-03-20-huggingface-agentic-evaluations-workshop|Agentic Evaluations Workshop]], where "Hugging Face" is the `author:`), so the org clears the second-source promotion bar; central subject here (its CEO, platform metrics, business model, and Reachy robots).
 - **Dangling** (single-source, deferred, per the person-entity second-source rule — central-subject status does not itself trigger promotion for individuals, precedent: Sal Khan / Jensen Huang on their first sources): **Clément "Clem" Delangue** (Hugging Face co-founder/CEO — central subject; promote on a second substantive Delangue source) and **Rebecca Bellan** (TechCrunch Equity host).
 - [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Huang/NVIDIA]] — the strongest neighbour; the own-vs-rent thesis convergence (see this source's `relationships:`), and both cite [[NVIDIA]]'s **Nemotron** open-weight family.

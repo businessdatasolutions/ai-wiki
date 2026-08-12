@@ -48,7 +48,7 @@ relationships:
 
 # Wolfe — Agent Evaluation: A Detailed Guide
 
-A **~7,000-word, 13-reference practitioner field guide** to agent evaluation by [[Cameron R. Wolfe]] (Deep Learning Ph.D.; Staff Research Scientist at [[Netflix]]; author of the *Deep (Learning) Focus* newsletter). Published **18 May 2026** on Substack. The article opens at the eval layer (single-turn benchmarks vs. agent eval), threads through the architectural prerequisites (agent fundamentals → scaffolds → context engineering), and lands on a 7-step practitioner roadmap for building agent evaluations. It is the wiki's **first source whose primary contribution is the eval-discipline framing** of the agent construct, complementing the engineering-discipline framings of [[2026-05-07-chatterjee-anatomy-of-agent-harness|Chatterjee 2026]] / [[2026-05-07-kokane-agent-harness-vs-systems-design|Kokane 2026]] / [[2026-05-15-osmani-agent-harness-engineering|Osmani 2026]] / [[2026-02-11-lopopolo-codex-harness-engineering|Lopopolo 2026]].
+A **~7,000-word, 13-reference practitioner field guide** to agent evaluation by Cameron R. Wolfe (Deep Learning Ph.D.; Staff Research Scientist at [[Netflix]]; author of the *Deep (Learning) Focus* newsletter). Published **18 May 2026** on Substack. The article opens at the eval layer (single-turn benchmarks vs. agent eval), threads through the architectural prerequisites (agent fundamentals → scaffolds → context engineering), and lands on a 7-step practitioner roadmap for building agent evaluations. It is the wiki's **first source whose primary contribution is the eval-discipline framing** of the agent construct, complementing the engineering-discipline framings of [[2026-05-07-chatterjee-anatomy-of-agent-harness|Chatterjee 2026]] / [[2026-05-07-kokane-agent-harness-vs-systems-design|Kokane 2026]] / [[2026-05-15-osmani-agent-harness-engineering|Osmani 2026]] / [[2026-02-11-lopopolo-codex-harness-engineering|Lopopolo 2026]].
 
 > *"An agent harness (or scaffold) is the system that enables a model to act as an agent... When we evaluate an agent, we're evaluating the harness and the model working together."* — Anthropic *Demystifying evals for AI agents*, quoted in [[2026-05-18-wolfe-agent-evaluation-detailed-guide|Wolfe 2026]]
 
@@ -87,7 +87,7 @@ Full 56-page PDF of the Substack post read end-to-end: introduction → Fundamen
 
 > *"The simplest definition of an agent is an LLM that autonomously uses tools in a loop."*
 
-Wolfe's three-component agent: (1) underlying **LLM** (often a **reasoning model** for multi-step decomposition), (2) **tools** (APIs / CLIs / [[MCP]] servers / computer-use primitives) wrapped via tokenizer-level special tokens (Qwen3 `<tool_call>` / `<tool_response>` example given), (3) **instructions** (system prompt — *"clear as possible, clarify edge cases via explicit rules or concrete examples, specify the exact actions expected of the agent"*). The agent system runs in a *while loop* until an **exit condition** is met (final-answer structure / no tool calls / max steps / specific tool / terminal error).
+Wolfe's three-component agent: (1) underlying **LLM** (often a **reasoning model** for multi-step decomposition), (2) **tools** (APIs / CLIs / MCP servers / computer-use primitives) wrapped via tokenizer-level special tokens (Qwen3 `<tool_call>` / `<tool_response>` example given), (3) **instructions** (system prompt — *"clear as possible, clarify edge cases via explicit rules or concrete examples, specify the exact actions expected of the agent"*). The agent system runs in a *while loop* until an **exit condition** is met (final-answer structure / no tool calls / max steps / specific tool / terminal error).
 
 Tool-use evaluation is decomposed into four named metrics (a sharp taxonomy not previously isolated in the wiki):
 
@@ -192,7 +192,7 @@ This is the wiki's first source naming a wider benchmark landscape beyond τ-ben
 
 **Authors / individuals named:**
 
-- [[Cameron R. Wolfe]] — author. Deep Learning Ph.D.; Staff Research Scientist at Netflix; runs the *Deep (Learning) Focus* newsletter (hundreds of paid subscribers). **First mention in the wiki.** *Dangling pending second source.*
+- Cameron R. Wolfe — author. Deep Learning Ph.D.; Staff Research Scientist at Netflix; runs the *Deep (Learning) Focus* newsletter (hundreds of paid subscribers). **First mention in the wiki.** *Dangling pending second source.*
 - **Shunyu Yao** — first author of the τ-bench paper (Yao et al. 2024) and ReAct paper (Yao et al. 2022). **First mention.** *Dangling.*
 - **Victor Barres** — first author of τ²-bench (2025) and τ³-bench (2026). **First mention.** *Dangling.*
 - **Alejandro Cuadron** — first author of SABER / τ²-bench-verified (2025). **First mention.** *Dangling.*
@@ -242,7 +242,7 @@ This is the wiki's first source naming a wider benchmark landscape beyond τ-ben
 - **Genre**: practitioner field-guide essay on Substack; long-form (~7,000 words); 13-reference bibliography; original to Wolfe; sponsored newsletter context (paid-subscriber tier mentioned but the article is free).
 - **Speaker authority**: Cameron R. Wolfe is a recognised AI educator with prior pieces *Demystifying Reasoning Models* (Feb 2025) and *AI Agents from First Principles* (June 2025); Deep Learning Ph.D.; Staff Research Scientist at Netflix. Track record is strong on AI-research-translation/explainer genre, not on running primary studies.
 - **Empirical grounding**: Wolfe synthesises and contextualises results from peer-track and vendor-published benchmarks; he does not run his own benchmarks. The benchmark results he cites (τ³-bench, Terminal-Bench 2.0 leaderboard) are second-hand from the cited bibliography. Treat as **synthesis-grade**, not primary-empirical.
-- **Confidence: 0.75**. Per [[lifecycle|Lifecycle]] heuristic: single source, +0.05 for credentialed author + recognised publishing channel, +0.05 for high citation density (13 distinct primary references — strongest single-source bibliography in the [[agent-harness]] cluster), capped below 0.85 because the source is a synthesis essay, not a primary empirical study.
+- **Confidence: 0.75**. Per Lifecycle heuristic: single source, +0.05 for credentialed author + recognised publishing channel, +0.05 for high citation density (13 distinct primary references — strongest single-source bibliography in the [[agent-harness]] cluster), capped below 0.85 because the source is a synthesis essay, not a primary empirical study.
 
 ## Open questions
 

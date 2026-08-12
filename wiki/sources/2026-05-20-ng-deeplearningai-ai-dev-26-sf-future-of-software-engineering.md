@@ -208,14 +208,14 @@ Closing thesis: *"The job apocalypse is not being nearly as bad as people are hy
 
 - **[[Andrew Ng]]** — **promoted from Dangling to entity page** (this is his second substantive source mention and his first solo-headlining ingest; first mention was the brief *"unbig in AI"* cross-reference from [[2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success|Carrier / MIT March 2026]]).
 - **[[DeepLearningAI]]** — channel-entity Dangling first-mention; promote on second source under this `author:` value (current convention; cf. YC Root Access promotion path).
-- **[[Vivek Prasad]]** — Dangling first-mention (Context Hub co-builder).
-- **[[Sanyam Hota]]** — Dangling first-mention (Context Hub co-builder).
-- **[[Context Hub]]** — Dangling first-mention (Ng's new tool; concept-page candidate on second-source mention).
-- **[[Code Dream]]** / **[[Code Realm]]** — Dangling first-mention (Ng's new product; the canonical product name is ASR-uncertain — both forms appear in the transcript).
+- **Vivek Prasad** — Dangling first-mention (Context Hub co-builder).
+- **Sanyam Hota** — Dangling first-mention (Context Hub co-builder).
+- **Context Hub** — Dangling first-mention (Ng's new tool; concept-page candidate on second-source mention).
+- **Code Dream** / **Code Realm** — Dangling first-mention (Ng's new product; the canonical product name is ASR-uncertain — both forms appear in the transcript).
 - **[[Anthropic]]** — substantive cross-reference (*"agent skills like the Anthropic agent skills and so forth"* — Ng frames agent skills as Anthropic-anchored). Source-count: increment.
 - **[[OpenAI]]** — substantive cross-reference (the *chat completions API vs responses API* worked example for Context Hub). Source-count: increment.
-- **[[Gemini]]** / **[[Codex]]** / **[[Claude Code]]** / **[[Open Code]]** — referenced as candidate coding-agent tools.
-- **[[Federal Reserve Bank of Philadelphia]]** — Dangling first-mention (study Ng cites on the job-apocalypse-being-delayed narrative).
+- **Gemini** / **Codex** / **[[Claude Code]]** / **Open Code** — referenced as candidate coding-agent tools.
+- **Federal Reserve Bank of Philadelphia** — Dangling first-mention (study Ng cites on the job-apocalypse-being-delayed narrative).
 
 **Concepts touched substantively:**
 

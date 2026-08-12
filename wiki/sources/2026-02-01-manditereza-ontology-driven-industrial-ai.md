@@ -15,7 +15,7 @@ tags: [hivemq, industrial-ai, ai-agents, ontology, semantic-data-layer, knowledg
 
 # Building Ontology-Driven Intelligence for Industrial AI Agents
 
-A HiveMQ technical white paper arguing that **industrial AI agents** (scheduling production, monitoring quality, planning maintenance, orchestrating logistics) need a **semantic foundation** — an ontology — to reason about operational reality reliably. The paper introduces a **three-tier semantic data layer** (semantic model + domain ontologies + knowledge graph), names the **four structural pillars** of an industrial ontology (object types, properties, link types, action types), and positions the [[unified-namespace|Unified Namespace (UNS)]] as the data-streaming substrate the ontology depends on.
+A HiveMQ technical white paper arguing that **industrial AI agents** (scheduling production, monitoring quality, planning maintenance, orchestrating logistics) need a **semantic foundation** — an ontology — to reason about operational reality reliably. The paper introduces a **three-tier semantic data layer** (semantic model + domain ontologies + knowledge graph), names the **four structural pillars** of an industrial ontology (object types, properties, link types, action types), and positions the Unified Namespace (UNS) as the data-streaming substrate the ontology depends on.
 
 This is the wiki's **first source** addressing AI agents in the OT (operational technology) / industrial-manufacturing context, distinct from the SaaS / coding-agent / knowledge-work cluster that has dominated prior ingests.
 

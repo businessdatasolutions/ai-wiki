@@ -18,7 +18,7 @@ length: "~24 pages (read pp. 326–340: intro, lit, methodology, findings; table
 
 ## TL;DR
 
-Qualitative interpretive study of **seven incumbent German MNCs** undergoing digital transformation, plus **18 in-depth interviews** with senior strategy consultants. Develops a **process model with nine microfoundations** organized under [[David Teece|Teece]]'s (2007) sense / seize / transform clusters of dynamic capabilities, contextualized for the digital age.
+Qualitative interpretive study of **seven incumbent German MNCs** undergoing digital transformation, plus **18 in-depth interviews** with senior strategy consultants. Develops a **process model with nine microfoundations** organized under Teece's (2007) sense / seize / transform clusters of dynamic capabilities, contextualized for the digital age.
 
 **Core thesis**: digital transformation is not a one-off project but an **ongoing process of strategic renewal** along three axes — (1) business model, (2) collaborative approach, (3) culture — driven by digital sensing/seizing/transforming capabilities.
 
@@ -98,8 +98,8 @@ For each of the seven incumbents (pseudonyms), strategic renewal happens along t
 
 - [[dynamic-capabilities]] — concept page anchored on this source
 - [[Karl S.R. Warner]], [[Maximilian Wäger]] — author entities
-- [[David Teece]] — foundational dynamic-capabilities theorist (referenced)
-- [[Long Range Planning]] — journal
+- David Teece — foundational dynamic-capabilities theorist (referenced)
+- Long Range Planning — journal
 - [[2026-04-28-werner-lebrun-octopus-organization]] — also concerns adaptive vs. rigid org design under environmental change
 - [[2026-04-28-mit-sloan-ai-maturity]] — also stages-of-maturity view of digital transformation
 - [[2026-04-28-mittri-cisco-ai-enabled-enterprise]] — also five-foundations framework for transformation

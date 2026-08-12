@@ -10,13 +10,12 @@ relationships:
   - type: part-of
     target: industry-4-0
     via: "Lean 4.0 is the synergy of Lean Manufacturing with Industry 4.0 technologies"
-quality_score: 0.96
-quality_notes: ['2 broken body wikilink(s)']
+quality_score: 1
 ---
 
 # Lean 4.0
 
-The **integration of [[lean-manufacturing|Lean Manufacturing]] principles with [[industry-4-0|Industry 4.0]] technologies** — AI, IoT, big data analytics, robotics, automation, cyber-physical systems, cloud computing — to create digitally integrated, adaptive, innovation-driven manufacturing systems. The core argument: Industry 4.0 enhances and operationalizes Lean rather than replacing it.
+The **integration of Lean Manufacturing principles with [[industry-4-0|Industry 4.0]] technologies** — AI, IoT, big data analytics, robotics, automation, cyber-physical systems, cloud computing — to create digitally integrated, adaptive, innovation-driven manufacturing systems. The core argument: Industry 4.0 enhances and operationalizes Lean rather than replacing it.
 
 The dominant ingested source on this topic is [[2026-04-28-gomaa-lean-4-0|Gomaa (2025)]], whose central artifact is a 23 × 23 mapping of Lean tools to Industry 4.0 technologies.
 
@@ -75,7 +74,7 @@ Recurring across the Lean 4.0 literature ([[2026-04-28-gomaa-lean-4-0|Gomaa 2025
 Lean 4.0 is **off-theme from this wiki's main AI-strategy focus** (which is mostly white-collar / knowledge work). But it connects in two specific ways:
 
 1. **Manufacturing-specific lens on AI adoption.** [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]'s manufacturing data (39%/33%/24%/24%/21% AI use in manufacturing/inventory/quality/R&D/IT-OT) shows the empirical adoption picture. Lean 4.0 gives the *prescriptive* operational integration roadmap.
-2. **Industrial example: [[Italgas]].** Italgas's 23 AI models, 300TB data platform, Digital Factory, WorkOnSite (+40% construction speed), and DANA (GenAI network control) sit squarely in the Lean 4.0 vocabulary — even though gas distribution isn't manufacturing per se.
+2. **Industrial example: Italgas.** Italgas's 23 AI models, 300TB data platform, Digital Factory, WorkOnSite (+40% construction speed), and DANA (GenAI network control) sit squarely in the Lean 4.0 vocabulary — even though gas distribution isn't manufacturing per se.
 
 ## Debates and supersession
 

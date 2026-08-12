@@ -65,7 +65,7 @@ The article reports a randomized experiment (N=1,261 HR and finance managers / d
 
 **Headline finding:** the *AI-employee framing* (vs *AI-tool framing*) caused — among managers in organisations that *already have AI agents on their org charts* — a **9pp drop in personal accountability** (with 8pp shift to the AI itself), **44% more escalation requests**, **18% fewer errors caught**, and (whole-sample) **13% higher uncertainty about professional identity**, **7% higher concern about job security**, **10% lower trust in how AI would be used**, and **no meaningful increase in adoption intent**. The article closes with five prescriptions for redesigning work for *responsible human-AI collaboration*.
 
-**Authors / dangling list.** First wiki source by four of the five co-authors; per the [[../../CLAUDE|author-entity promotion rule]] (second-source promotion), they stay on the dangling list at this ingest:
+**Authors / dangling list.** First wiki source by four of the five co-authors; per the [author-entity promotion rule](../../CLAUDE.md) (second-source promotion), they stay on the dangling list at this ingest:
 
 - **Promoted from Dangling to entity page** in this ingest: [[Lisa Krayer]] (BCG principal; second wiki appearance via the [[2026-04-28-dellacqua-jagged-technological-frontier|Jagged Frontier paper]]).
 - **Dangling** (single-source mention, deferred): Matthew Kropp (BCG managing director / senior partner; CAIO of BCG X), Julie Bedard (BCG managing director / partner; People & Org + AI leadership teams), Emma Wiles (BU Questrom; MIT IDE digital fellow), Megan Hsu (BCG project leader; BCG Henderson Institute Ambassador).

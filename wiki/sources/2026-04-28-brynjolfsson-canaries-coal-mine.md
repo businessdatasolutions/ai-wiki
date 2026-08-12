@@ -90,7 +90,7 @@ This directly maps to [[automation-vs-augmentation]] as a conceptual distinction
 
 This codified-vs-tacit intuition has a formal theoretical counterpart in [[2025-06-01-autor-thompson-expertise|Autor & Thompson's expertise framework]]: codified, procedural task content maps closely to what that paper calls *inexpert* tasks (the ones automation removes first, lowering wages for the workers left holding the residual bundle), while tacit, judgment-heavy task content maps to *expert* tasks (whose removal instead raises the residual bundle's average expertise, and its wage).
 
-Cites [[Daron Acemoglu|Acemoglu]] & [[David Autor|Autor]] (2011) for the canonical task-replacement framework. The codified-vs-tacit distinction echoes [[2026-04-28-anand-wu-genai-playbook|Anand-Wu's]] explicit-vs-tacit knowledge axis in their 2×2 framework — strong cross-source convergence on the same conceptual cut.
+Cites [[Daron Acemoglu|Acemoglu]] & Autor (2011) for the canonical task-replacement framework. The codified-vs-tacit distinction echoes [[2026-04-28-anand-wu-genai-playbook|Anand-Wu's]] explicit-vs-tacit knowledge axis in their 2×2 framework — strong cross-source convergence on the same conceptual cut.
 
 Footnote (worth quoting): *"Ironically, one of the practical skills more likely to be learned on the job than in university computer science classes may be how to use AI software development."*
 
@@ -131,7 +131,7 @@ The Brynjolfsson paper's **automation vs. augmentation** distinction (Fact 3) is
 
 This paper's entry-level-decline finding is cited directly in that paper's introduction as evidence that displaced income is not being fully reabsorbed (the model's η < 1 regime) — the empirical precondition their formal over-automation result depends on. Their game-theoretic model formalizes a mechanism this paper documents empirically but does not itself theorize: why competitive pressure, not just individual firm choice, could push displacement beyond what any single firm would choose in isolation.
 
-### Cross-reference: [[Capital One]]'s Capability Era
+### Cross-reference: Capital One's Capability Era
 
 The Brynjolfsson finding that **entry-level employment is declining specifically in automate-able occupations** is the empirical correlate of [[2026-04-28-anand-wu-genai-playbook|Anand-Wu's]] historical pattern: "in the not-too-distant future your fiercest competition may not be your familiar peers but a new breed of solo entrepreneurs and micro-teams" — the AI-first entrant story is now visible in entry-level employment data.
 
@@ -164,7 +164,7 @@ For the wiki, this paper:
 
 ## Linked entities and concepts
 
-**Entities (this wiki):** [[Erik Brynjolfsson]] (promoted from dangling), [[Stanford Digital Economy Lab]] (new). **Dangling:** [[Bharat Chandar]], [[Ruyu Chen]] (co-authors, deferred), [[ADP]] (data provider), [[Daron Acemoglu]], [[David Autor]] (cited theory), [[Joshua Gans]], [[Nick Bloom]], [[Daniel Rock]], [[Fei-Fei Li]], [[Sarah Bana]], [[Cody Cook]], [[Phil Trammell]] (acknowledged).
+**Entities (this wiki):** [[Erik Brynjolfsson]] (promoted from dangling), [[Stanford Digital Economy Lab]] (new). **Dangling:** Bharat Chandar, Ruyu Chen (co-authors, deferred), ADP (data provider), [[Daron Acemoglu]], David Autor (cited theory), Joshua Gans, Nick Bloom, Daniel Rock, Fei-Fei Li, Sarah Bana, Cody Cook, Phil Trammell (acknowledged).
 
 **Concepts (new):** [[ai-employment-effects]] (created by this ingest), [[automation-vs-augmentation]] (created by this ingest as a distinct conceptual framework).
 

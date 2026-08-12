@@ -114,7 +114,7 @@ The historical analogies (Internet 1.0 e-ticketing, Big Law 1990s, Harrah's, Cap
 
 ## Linked entities and concepts
 
-**Entities (this wiki):** [[Bharat N. Anand]], [[Andy Wu]], [[Harvard Business Review]]. **Dangling:** [[Harvey]] (legal AI tool), [[GitHub Copilot]], [[NYU Stern]], [[Harvard Business School]], [[Mack Institute for Innovation Management]] (Wharton), [[OpenAI]] (ChatGPT), [[JPMorgan Chase]], [[Harrah's Entertainment]], [[Capital One]].
+**Entities (this wiki):** [[Bharat N. Anand]], [[Andy Wu]], [[Harvard Business Review]]. **Dangling:** Harvey (legal AI tool), GitHub Copilot, NYU Stern, Harvard Business School, Mack Institute for Innovation Management (Wharton), [[OpenAI]] (ChatGPT), JPMorgan Chase, Harrah's Entertainment, Capital One.
 
 **Concepts:** [[generative-ai]] (heavy enrichment), [[enterprise-ai-adoption]] (heavy enrichment — the 2×2 framework + leakage points), [[ai-agents]] (the "no regrets zone" projection), [[responsible-ai]] (the "guard against most-critical risks" framing).
 

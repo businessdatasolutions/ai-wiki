@@ -84,7 +84,7 @@ The four "success rate" numbers (1% / 7% / 12% / 13%) span a single order of mag
 
 ## How this thread should resolve
 
-When at least 3 sources are ingested with explicit adoption/maturity definitions, this thread should resolve into a [[syntheses]] page that:
+When at least 3 sources are ingested with explicit adoption/maturity definitions, this thread should resolve into a syntheses page that:
 
 1. Lists each source's instrument, sample, and definition side-by-side.
 2. Maps each source's "mature" / "high-performer" definition to the others.

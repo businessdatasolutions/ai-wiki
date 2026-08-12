@@ -26,7 +26,7 @@ relationships:
 >
 > Panelists: Dr. Dimitris Bertsimas, Dr. Sarah Hansen, Curt Newton.
 
-(Channel description, [[MIT OpenCourseWare]].)
+(Channel description, MIT OpenCourseWare.)
 
 A 57:52 panel from a 6 May 2026 MIT OpenLearning event (likely OCW's 25th-anniversary celebration based on the *"25 years"* references). Three panelists: **Dimitris Bertsimas** (MIT Vice Provost for Open Learning; Sloan School professor + associate dean), **Sarah Hansen** (Assistant Director of Open Education Innovation; moderator), and **Curt Newton** (Director of MIT OpenCourseWare; ~22 years at OCW). Audience Q&A in the final ~20 minutes. Manual caption track (`kind: manual`, `language_code: en-US`) selected for highest fidelity; timestamps were in *event-time* (manual track shipped relative to the larger MIT event, not the published clip) and were **normalised at ingest** so `[mm:ss]` markers correspond to video-time.
 
@@ -107,7 +107,7 @@ The wiki's first first-party statement of the *content-revision-velocity* argume
 
 ## Linked entities and concepts
 
-**Existing wiki entities reinforced**: none directly in body, but [[MIT CISR]] and [[MIT Sloan Management Review]] are sister-organisations operating within MIT's research-and-teaching apparatus. The new entity [[MIT OpenCourseWare]] (Dangling first-mention here — strong promotion candidate on the second-source mention given OCW's ~25-year-long institutional presence).
+**Existing wiki entities reinforced**: none directly in body, but [[MIT CISR]] and [[MIT Sloan Management Review]] are sister-organisations operating within MIT's research-and-teaching apparatus. The new entity MIT OpenCourseWare (Dangling first-mention here — strong promotion candidate on the second-source mention given OCW's ~25-year-long institutional presence).
 
 **Concept pages updated**:
 

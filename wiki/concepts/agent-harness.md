@@ -16,8 +16,8 @@ relationships:
   - type: uses
     target: react-reasoning-acting
     via: "the harness operationalises the reason–act–observe loop ReAct (2022) first prompted by hand"
-quality_score: 0.97
-quality_notes: ['1 near-empty section(s)', '1 broken body wikilink(s)']
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # Agent Harness
@@ -427,7 +427,7 @@ The wiki has carried an open question on the **Khattab "Meta-Harness"** paper si
 
 > **Y. Lee, R. Nair, Q. Zhang, K. Lee, O. Khattab, and C. Finn. *Meta-harness: End-to-end optimization of model harnesses.* arXiv preprint arXiv:2603.28052, 2026.**
 
-O. Khattab is the DSPy author; the author list confirms this is the **DSPy-team Meta-Harness paper** Osmani referenced via Viv Trivedy. **Triple-confirmed 2026-05-17** by the [[2026-04-14-py-rethinking-ai-agents-rise-of-harness-engineering|PY video description]] independently citing arXiv:2603.28052v1. The PY video adds one substantive detail Karten doesn't: **Meta-Harness reached rank 1 on TerminalBench with [[Haiku]]** — a small frontier model — *"proving a smaller model with a better harness can outrank larger models."* Strongest single statement in the wiki to date of the *"small model + great harness beats large model + bad harness"* claim. The identification open-question is now reduced to a **primary-source ingest target**: arXiv:2603.28052.
+O. Khattab is the DSPy author; the author list confirms this is the **DSPy-team Meta-Harness paper** Osmani referenced via Viv Trivedy. **Triple-confirmed 2026-05-17** by the [[2026-04-14-py-rethinking-ai-agents-rise-of-harness-engineering|PY video description]] independently citing arXiv:2603.28052v1. The PY video adds one substantive detail Karten doesn't: **Meta-Harness reached rank 1 on TerminalBench with Haiku** — a small frontier model — *"proving a smaller model with a better harness can outrank larger models."* Strongest single statement in the wiki to date of the *"small model + great harness beats large model + bad harness"* claim. The identification open-question is now reduced to a **primary-source ingest target**: arXiv:2603.28052.
 
 ### Closure on the Pan et al. primary-source open question
 

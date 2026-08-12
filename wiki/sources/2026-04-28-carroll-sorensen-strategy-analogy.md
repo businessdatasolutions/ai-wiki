@@ -27,7 +27,7 @@ relationships:
 
 ## TL;DR
 
-[[Glenn R. Carroll]] and [[Jesper B. Sørensen]] (both Stanford GSB) examine **why analogical reasoning is widely used in strategy formulation despite logicians regarding it as a weak inductive form**. Rather than reject analogies, they propose **disciplined tools** for building and evaluating strategy analogies — particularly to support the **theory-based view (TBV) of strategy** ([[Felin & Zenger|Felin and Zenger]] 2009, 2017).
+[[Glenn R. Carroll]] and [[Jesper B. Sørensen]] (both Stanford GSB) examine **why analogical reasoning is widely used in strategy formulation despite logicians regarding it as a weak inductive form**. Rather than reject analogies, they propose **disciplined tools** for building and evaluating strategy analogies — particularly to support the **theory-based view (TBV) of strategy** (Felin and Zenger 2009, 2017).
 
 Worked example: an extended **Tripadvisor → Glassdoor analogy** illustrating how to decompose, evaluate, and refine an analogical argument.
 
@@ -112,6 +112,6 @@ Cited example (Patel & Ahmad 2023, leaked Google memo) of an analogy in AI strat
 - [[analogical-reasoning]] — concept page anchored on this source (lightweight stub)
 - [[Glenn R. Carroll]], [[Jesper B. Sørensen]] — author entities
 - [[Stanford GSB]] — author affiliation
-- [[Strategy Science]] — journal
+- Strategy Science — journal
 - [[2026-04-28-anand-wu-genai-playbook]] — also a strategy-formulation framework; their 2×2 is a kind of analogical heuristic about deployment context
 - [[2026-04-28-webb-strategic-foresight]] — also concerns disciplined methods for strategy under uncertainty

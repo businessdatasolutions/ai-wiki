@@ -152,7 +152,7 @@ For the wiki, this ingest:
 
 ## Linked entities and concepts
 
-**Entities (this wiki):** [[Erik Brynjolfsson]] (already promoted; this is his second source ingest), [[Stanford Digital Economy Lab]] (acknowledged for funding). **Dangling:** [[Danielle Li]] (MIT Sloan; co-author), [[Lindsey Raymond]] (MIT; co-author), [[Lawrence Katz]] (QJE editor), [[Andrei Shleifer]] (acknowledged). [[Daron Acemoglu]] and [[David Autor]] also acknowledged (already dangling from the Canaries ingest).
+**Entities (this wiki):** [[Erik Brynjolfsson]] (already promoted; this is his second source ingest), [[Stanford Digital Economy Lab]] (acknowledged for funding). **Dangling:** Danielle Li (MIT Sloan; co-author), Lindsey Raymond (MIT; co-author), Lawrence Katz (QJE editor), Andrei Shleifer (acknowledged). [[Daron Acemoglu]] and David Autor also acknowledged (already dangling from the Canaries ingest).
 
 **Concepts (enriched, no new):**
 - [[ai-employment-effects]] — refined equalizing-effect with quality nuance and "convergence in communication patterns"

@@ -42,9 +42,9 @@ Auto-generated transcript (caption track `kind: asr`); fetched via the `youtube-
 
 Böckeler's structural argument is that **the past year has resolved one question and exposed another**.
 
-1. **Resolved**: *what does a serious AI-coding setup look like?* — it looks like a **harness**. The pieces (rules / commands / [[Anthropic-Skills]] / MCP / subagents / plugins / specs / structural tests / sandboxes / language-server access) that practitioners have been bolting together since QCon 2025 are now coherent enough to be named as one thing. The OpenAI Codex team explicitly coined **harness engineering** for this; Böckeler propagates the term into the broader engineering audience and gives it a two-axis decomposition (**feed-forward** + **feedback**, each containing both **CPU-based deterministic** and **GPU-based inferential** elements).
+1. **Resolved**: *what does a serious AI-coding setup look like?* — it looks like a **harness**. The pieces (rules / commands / Anthropic-Skills / MCP / subagents / plugins / specs / structural tests / sandboxes / language-server access) that practitioners have been bolting together since QCon 2025 are now coherent enough to be named as one thing. The OpenAI Codex team explicitly coined **harness engineering** for this; Böckeler propagates the term into the broader engineering audience and gives it a two-axis decomposition (**feed-forward** + **feedback**, each containing both **CPU-based deterministic** and **GPU-based inferential** elements).
 
-2. **Exposed**: *how much autonomy is appropriate, and at what cost?* — autonomy increased fast (cloud agents, agent teams, agent swarms à la [[Steve-Yegge]]'s "Gas Town" stage 6+), costs migrated from $20 flat to $200 flat to **$380/day metered tokens** (= ~$91k/year, "a developer salary in Germany"), and the [[lethal-trifecta]] (untrusted content + private-data access + external comms — credited to Simon Willison, June 2025) makes the security surface unforgiving. Böckeler's response is a **risk-assessment trio** — *probability* of AI error in this context, *impact* if it errs, *detectability* of the error — and a **Goldilocks speed** counter-framing to the speed-at-all-costs zeitgeist: Amazon reportedly responded to AI-code-related outages by adding senior-engineer gateways, defeating the speed gain.
+2. **Exposed**: *how much autonomy is appropriate, and at what cost?* — autonomy increased fast (cloud agents, agent teams, agent swarms à la [[Steve-Yegge]]'s "Gas Town" stage 6+), costs migrated from $20 flat to $200 flat to **$380/day metered tokens** (= ~$91k/year, "a developer salary in Germany"), and the lethal-trifecta (untrusted content + private-data access + external comms — credited to Simon Willison, June 2025) makes the security surface unforgiving. Böckeler's response is a **risk-assessment trio** — *probability* of AI error in this context, *impact* if it errs, *detectability* of the error — and a **Goldilocks speed** counter-framing to the speed-at-all-costs zeitgeist: Amazon reportedly responded to AI-code-related outages by adding senior-engineer gateways, defeating the speed gain.
 
 The "harness templates" peroration — an analogy to service templates that lets teams pick a workflow topology (data dashboard / CRUD service / event processor) and instantiate a pre-built harness rather than rebuild it — is Böckeler's offered prediction for the next abstraction layer.
 
@@ -64,7 +64,7 @@ These confirm the wiki's existing "December 2025 phase change" framing (per [[20
 
 ## Context engineering as a named practice
 
-[[context-engineering]] (not yet a wiki concept page; first source) is defined by Böckeler as **curating the information that your model or agent sees to get better results**. The term *"started floating around June"* (2025) and now spans:
+context-engineering (not yet a wiki concept page; first source) is defined by Böckeler as **curating the information that your model or agent sees to get better results**. The term *"started floating around June"* (2025) and now spans:
 
 - **Rules files** — workspace-level `agents.md` / `claude.md` files for typical pitfalls and repeated errors.
 - **MCP servers** — dynamic data retrieval for the agent.
@@ -118,7 +118,7 @@ Both were taken by the audience as evidence of imminent AI software autonomy. B�
 
 ## The lethal trifecta and the new security surface
 
-Böckeler attributes [[lethal-trifecta|the lethal trifecta]] to **Simon Willison (June 2025)**: an agent that has all three of
+Böckeler attributes the lethal trifecta to **Simon Willison (June 2025)**: an agent that has all three of
 
 - **Exposure to untrusted content** (the web, user-uploaded files, GitHub issues from third parties)
 - **Access to private data**
@@ -150,9 +150,9 @@ The CPU-vs-GPU framing is **borrowed from a company Böckeler called "Modern"** 
 
 The novel-feeling mechanism in the talk: **encode architectural constraints as automated checks the agent must satisfy**.
 
-- **Java**: [[ArchUnit]] — package-layer dependency rules as unit tests.
-- **Spring**: [[Spring-Modulith]] — module boundary enforcement.
-- **TypeScript**: [[Dependency-Cruiser]] (Böckeler's experiment) — dependency rules across layered folders.
+- **Java**: ArchUnit — package-layer dependency rules as unit tests.
+- **Spring**: Spring-Modulith — module boundary enforcement.
+- **TypeScript**: Dependency-Cruiser (Böckeler's experiment) — dependency rules across layered folders.
 
 Böckeler's worked example: a rule that *"external SDKs may only be imported by files in the /clients folder"* (where you have lots of clients for other APIs) and *"may not be imported in the /domain folder"* — encoded as a structural test, fails the build if violated, becomes a *feedback signal the agent reads and corrects against*.
 
@@ -232,7 +232,7 @@ None substantive. Böckeler's pushback on agent-swarm hype is *cautionary* relat
 - **Thoughtworks** — consultancy; presenter affiliation.
 - **InfoQ** — channel/publisher.
 - **QCon London 2026** — venue (annual conference; the 2025 edition is implied as Böckeler's prior-talk reference point).
-- **Simon Willison** — credited for the [[lethal-trifecta]] framing.
+- **Simon Willison** — credited for the lethal-trifecta framing.
 - **Steve Yegge** — Gas Town blog post (eight stages of dev evolution to AI); Cloud Flow project (renamed).
 - **Modal** (likely; ASR-uncertain rendering "Modern") — credited for the CPU-vs-GPU harness framing.
 - **Tessell** (ASR-uncertain) — skills registry / evals tool.
@@ -245,9 +245,9 @@ None substantive. Böckeler's pushback on agent-swarm hype is *cautionary* relat
 
 **Concept candidates surfaced (not yet promoted)**:
 
-- [[context-engineering]] — first wiki source naming the term as a discipline. Single-source for now; promotion on second-source mention.
-- [[lethal-trifecta]] — first wiki source naming Willison's framing as a load-bearing security construct. Promotion on second-source mention.
-- [[harness-engineering]] — the *naming* of the discipline (versus the artefact [[agent-harness]]). Currently lives inside the [[agent-harness]] concept page; promotion to its own page would split the artefact-vs-discipline pair the way [[vibe-coding]] / [[agentic-engineering]] are split. Defer until a third source explicitly uses the term as a discipline-name.
+- context-engineering — first wiki source naming the term as a discipline. Single-source for now; promotion on second-source mention.
+- lethal-trifecta — first wiki source naming Willison's framing as a load-bearing security construct. Promotion on second-source mention.
+- harness-engineering — the *naming* of the discipline (versus the artefact [[agent-harness]]). Currently lives inside the [[agent-harness]] concept page; promotion to its own page would split the artefact-vs-discipline pair the way [[vibe-coding]] / [[agentic-engineering]] are split. Defer until a third source explicitly uses the term as a discipline-name.
 
 ## Open questions raised by this source
 

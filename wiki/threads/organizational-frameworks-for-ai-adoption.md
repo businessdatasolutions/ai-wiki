@@ -110,7 +110,7 @@ Read top-down, an executive could plausibly use them in this order:
 
 ## How this thread should resolve
 
-When a 5th or 6th comparable framework appears, this thread should resolve into a [[syntheses|synthesis]] page that:
+When a 5th or 6th comparable framework appears, this thread should resolve into a synthesis page that:
 
 1. Maps each framework to the layer it operates on (org / readiness / capability / task / diagnostic).
 2. Provides a **decision tree** for which framework to use first depending on the user's question.

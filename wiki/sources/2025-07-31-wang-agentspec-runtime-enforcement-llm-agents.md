@@ -98,14 +98,14 @@ AgentSpec's prototype is **on LangChain 0.13.13**. This makes it the wiki's firs
 
 ## Named entities (this ingest)
 
-- [[Haoyu Wang]], [[Christopher M. Poskitt]], [[Jun Sun]] — Singapore Management University. **All first mentions. Dangling.** Jun Sun is a well-known formal-methods researcher at SMU.
-- [[Singapore Management University]] — first wiki source from SMU. **Dangling.**
-- [[ICSE 2026]] — the 2026 IEEE/ACM 48th International Conference on Software Engineering. **First mention as a venue.**
-- [[Microsoft AutoGen]] — already in wiki ecosystem.
-- [[Baidu Apollo]] — autonomous-driving stack. **First mention.**
-- [[RedCode-Exec]] — code agent risk benchmark (Guo et al. 2024). **First mention.**
-- [[SafeAgentBench]] — embodied agent safety benchmark (Yin et al. 2024). **First mention.**
-- [[FixDrive]] — autonomous-vehicle law-violation benchmark (Sun et al. 2025). **First mention.**
+- Haoyu Wang, Christopher M. Poskitt, Jun Sun — Singapore Management University. **All first mentions. Dangling.** Jun Sun is a well-known formal-methods researcher at SMU.
+- Singapore Management University — first wiki source from SMU. **Dangling.**
+- ICSE 2026 — the 2026 IEEE/ACM 48th International Conference on Software Engineering. **First mention as a venue.**
+- Microsoft AutoGen — already in wiki ecosystem.
+- Baidu Apollo — autonomous-driving stack. **First mention.**
+- RedCode-Exec — code agent risk benchmark (Guo et al. 2024). **First mention.**
+- SafeAgentBench — embodied agent safety benchmark (Yin et al. 2024). **First mention.**
+- FixDrive — autonomous-vehicle law-violation benchmark (Sun et al. 2025). **First mention.**
 
 ## Source-quality notes
 

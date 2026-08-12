@@ -4,7 +4,7 @@ kind: video
 title: "Fix Karpathy's LLM Wiki with a Knowledge Graph | Claude Code + Obsidian + InfraNodus"
 author: ["Nodus Labs"]
 url: "https://www.youtube.com/watch?v=yYSTsKo8moU"
-publisher: "[[Nodus Labs]]"
+publisher: "Nodus Labs"
 date_published: 2026-04-11
 date_ingested: 2026-05-17
 length: "~26:09 minutes (transcript 556 lines; ASR caption track, auto-generated, lightly proper-noun-checked at ingest)"
@@ -33,7 +33,7 @@ relationships:
 
 # Nodus Labs — *Fix Karpathy's LLM Wiki with a Knowledge Graph (Claude Code + Obsidian + InfraNodus)*
 
-A **26-minute YouTube tutorial** by **[[Nodus Labs]]** (creators of **[[InfraNodus]]**, a knowledge-graph visualisation tool the speaker says they've been building *"for the last 10 years"*). Published **11 April 2026** — *one week after [[Andrej Karpathy|Karpathy]]'s LLM Wiki gist (4 April 2026)* — making this the wiki's **earliest third-party "fix" / extension proposal** for the LLM Wiki pattern, and one of three early-April / mid-April LLM-Wiki engagements already in the wiki ([[2026-04-09-oceanbase-ex-brain-knowledge-base-that-thinks|OceanBase ex-brain]] / [[2026-04-16-raju-rag-isnt-dead-karpathys-llm-wiki-explained|Raju explainer]] / *this video*).
+A **26-minute YouTube tutorial** by **Nodus Labs** (creators of **InfraNodus**, a knowledge-graph visualisation tool the speaker says they've been building *"for the last 10 years"*). Published **11 April 2026** — *one week after [[Andrej Karpathy|Karpathy]]'s LLM Wiki gist (4 April 2026)* — making this the wiki's **earliest third-party "fix" / extension proposal** for the LLM Wiki pattern, and one of three early-April / mid-April LLM-Wiki engagements already in the wiki ([[2026-04-09-oceanbase-ex-brain-knowledge-base-that-thinks|OceanBase ex-brain]] / [[2026-04-16-raju-rag-isnt-dead-karpathys-llm-wiki-explained|Raju explainer]] / *this video*).
 
 The presenter is the **InfraNodus founder** (named in the description as Dmitry Paranyushkin — the speaker self-identifies as having worked on InfraNodus for ten years, consistent with that attribution; the wiki defers a named-entity promotion to next ingest for verification). Channel-style: hands-on tutorial with screen-recording demo. The video positions itself as an immediate response to a perceived limitation in Karpathy's pattern.
 
@@ -46,7 +46,7 @@ The presenter is the **InfraNodus founder** (named in the description as Dmitry 
   3. **KG-integrated wiki** (the deepest layer) — the Nodus Labs skill *bakes knowledge-graph generation into the LLM Wiki workflow itself*. After ingest, the wiki contains both `concepts/` markdown files *and* an `infranodus/` folder holding **ontology graphs** generated on every interaction. *"It's some kind of living memory of what's happening in the system — every time you come back to it, Claude (or whatever system you use) will have access to this system of rules of how the concepts connect in your wiki."*
 - **The novel mechanism** — *KG-as-attention-direction*, not just KG-as-retrieval-substrate. The gap-analysis workflow: (1) compute clusters from concept-page co-occurrence; (2) find pairs of clusters with low betweenness (the "gap"); (3) copy the **gap prompt** (a structured representation of two clusters and their disconnection) back to Claude; (4) ask Claude to generate insights *that bridge* the two clusters using the underlying source documents. *"I point the LLM's attention to the gap that exists. I provide the underlying structure. I give it some context, and then I say okay, use the documents in the concepts folder in order to generate an interesting idea that would connect these ideas together."* **The KG isn't substituting for retrieval — it's steering attention to where the wiki is missing connections.**
 - **The opinionated stack** (worked example demonstrated in screen-record):
-  - **[[Obsidian]]** — viewer / human-navigation layer. Includes the InfraNodus Obsidian plug-in for graph view alongside the wiki.
+  - **Obsidian** — viewer / human-navigation layer. Includes the InfraNodus Obsidian plug-in for graph view alongside the wiki.
   - **[[Claude Code]]** / **Cursor** — LLM interaction layer.
   - **InfraNodus VS Code extension** + **InfraNodus Obsidian plug-in** + **InfraNodus MCP server** — three install paths into the same KG primitives.
   - **The Nodus Labs `skill-llm-wiki` Claude skill** — published at *github.com/infranodus/skills/blob/master/skill-llm-wiki/SKILL.md* — the **first wiki source on a third-party-shipped Claude skill that operationalises the LLM Wiki pattern**.
@@ -57,7 +57,7 @@ The presenter is the **InfraNodus founder** (named in the description as Dmitry 
 
 ## What was actually ingested
 
-The full 26:09 transcript (**556 ASR segments**) at `raw/videos/fix-karpathys-llm-wiki-with-knowledge-graph-claude-code-obsidian-infranodus.md`. Auto-generated captions, fetched 2026-05-17 at `--timeout 180000` after the initial 60-second attempt failed with the *transcript-panel-did-not-render* symptom (now a recognised long-format-video failure mode — see [[2026-05-15]] log entry on the MGI virtual-event retry pattern). 16-chapter structure preserved from the YouTube description. Light proper-noun verification at ingest time (Karpathy / InfraNodus / Obsidian / Claude Code spelled correctly in the body).
+The full 26:09 transcript (**556 ASR segments**) at `raw/videos/fix-karpathys-llm-wiki-with-knowledge-graph-claude-code-obsidian-infranodus.md`. Auto-generated captions, fetched 2026-05-17 at `--timeout 180000` after the initial 60-second attempt failed with the *transcript-panel-did-not-render* symptom (now a recognised long-format-video failure mode — see 2026-05-15 log entry on the MGI virtual-event retry pattern). 16-chapter structure preserved from the YouTube description. Light proper-noun verification at ingest time (Karpathy / InfraNodus / Obsidian / Claude Code spelled correctly in the body).
 
 ## Cross-positioning with the wiki
 
@@ -83,15 +83,15 @@ The "living memory" framing — `infranodus/` folder accumulating ontology graph
 
 ### Connection to this very repository
 
-This source recommends a pattern (KG augmentation of LLM Wiki + InfraNodus MCP server + per-session ontology graphs) that **this repo does not currently use**. The repo's [[wiki/.graph.json]] (per CLAUDE.md *§Graph*) is a derived export, not an InfraNodus-style attention-direction primitive. **Open architectural question for this repo**: would adding an InfraNodus-style gap-analysis pass (probably as a `lint` operation per CLAUDE.md's four operations, or as a new `gap-analyse` operation) materially improve the wiki's value as a research substrate? The next [[2026-05-15-osmani-agent-harness-engineering|harness-ratchet]] increment would be: *make the wiki's own structure-gaps queryable as a tool the agent calls during synthesis*.
+This source recommends a pattern (KG augmentation of LLM Wiki + InfraNodus MCP server + per-session ontology graphs) that **this repo does not currently use**. The repo's wiki/.graph.json (per CLAUDE.md *§Graph*) is a derived export, not an InfraNodus-style attention-direction primitive. **Open architectural question for this repo**: would adding an InfraNodus-style gap-analysis pass (probably as a `lint` operation per CLAUDE.md's four operations, or as a new `gap-analyse` operation) materially improve the wiki's value as a research substrate? The next [[2026-05-15-osmani-agent-harness-engineering|harness-ratchet]] increment would be: *make the wiki's own structure-gaps queryable as a tool the agent calls during synthesis*.
 
 ## Named entities (this ingest)
 
-- [[Nodus Labs]] — YouTube channel + company; creators of [[InfraNodus]]. **First mention. Dangling. Channel-as-author convention applies.**
-- [[InfraNodus]] — knowledge-graph visualisation tool / product / web app + Obsidian plug-in + VS Code extension + MCP server. **First mention. Dangling.**
+- Nodus Labs — YouTube channel + company; creators of InfraNodus. **First mention. Dangling. Channel-as-author convention applies.**
+- InfraNodus — knowledge-graph visualisation tool / product / web app + Obsidian plug-in + VS Code extension + MCP server. **First mention. Dangling.**
 - Speaker (channel host) — self-identifies as the InfraNodus creator who has *"been working on InfraNodus for the last 10 years."* The channel description / public-record attribution maps this to **Dmitry Paranyushkin** (InfraNodus founder); the wiki defers the named-person promotion to next ingest for direct verification.
 - [[Andrej Karpathy]] — already in the wiki; cited as the upstream LLM Wiki gist author.
-- Other passing entities ([[Obsidian]] / [[Claude Code]] / Cursor) already in the wiki ecosystem.
+- Other passing entities (Obsidian / [[Claude Code]] / Cursor) already in the wiki ecosystem.
 
 ## Source-quality notes
 

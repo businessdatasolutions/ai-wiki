@@ -4,7 +4,7 @@ kind: article
 title: "How I Used OSINT to Gather Information Like a Hacker"
 subtitle: "I found my company's exposed secrets in two hours. No hacking required."
 author: ["Hania Khan"]
-publisher: "[[OSINT Team]]"
+publisher: "OSINT Team"
 section: "OSINT Team (Medium publication)"
 url: ""
 date_published: 2026-04-10
@@ -28,7 +28,7 @@ relationships:
 
 ## TL;DR
 
-A short first-person Medium piece by **Hania Khan** in the [[OSINT Team]] publication (Apr 2026). Khan describes auditing her own organisation using *only a browser and public search engines*, finding within two hours: a list of employee emails, internal server names, and a forgotten PDF containing network diagrams.
+A short first-person Medium piece by **Hania Khan** in the OSINT Team publication (Apr 2026). Khan describes auditing her own organisation using *only a browser and public search engines*, finding within two hours: a list of employee emails, internal server names, and a forgotten PDF containing network diagrams.
 
 The article is the wiki's **canonical narrative anchor for defensive [[osint|OSINT]]** — a *show, don't tell* demonstration that the entire attacker reconnaissance playbook works on data the target organisation has chosen, accidentally, to publish. Seven vectors are walked through end-to-end with the defensive remediation for each. The closing call is operational: *"Run a simple OSINT audit on your own organization. […] The attackers are already doing this. Now you can too — defensively."*
 
@@ -64,7 +64,7 @@ Beyond technical vectors, Khan flags employees' public social-media disclosure o
 - Bridge into existing wiki: none directly — Khan stays squarely on traditional defensive OSINT; no AI / agent / harness content. The bridge into [[ai-agents]] / [[agent-harness]] sits with the paired TechLatest piece.
 - **Dangling** (single-source mention, deferred per author-entity rule):
   - **Hania Khan** (author) — Medium author, "Exploring the evolving world of cybersecurity and emerging technologies."
-  - **[[OSINT Team]]** (publisher) — Medium publication, 19.6K followers; *"We teach OSINT from multiple perspectives. Cybersecurity experts, investigators, law enforcement, and intelligence specialists read us to grow skills faster."*
+  - **OSINT Team** (publisher) — Medium publication, 19.6K followers; *"We teach OSINT from multiple perspectives. Cybersecurity experts, investigators, law enforcement, and intelligence specialists read us to grow skills faster."*
 
 ## Source-quality flag
 

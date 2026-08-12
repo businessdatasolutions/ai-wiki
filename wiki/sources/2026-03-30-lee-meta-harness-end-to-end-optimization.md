@@ -140,16 +140,16 @@ The two papers came out **4 days apart** (Pan 26 Mar 2026; Lee 30 Mar 2026), fro
 
 ## Named entities (this ingest)
 
-- [[Yoonho Lee]] — Stanford IRIS Lab; lead author. Prior wiki appearance: not yet. **First mention. Dangling.**
-- [[Roshen Nair]] — Stanford. **First mention. Dangling.**
-- [[Qizheng Zhang]] — Stanford. **First mention. Dangling.**
-- [[Kangwook Lee]] — KRAFTON. **First mention. Dangling.**
-- [[Omar Khattab]] — MIT (formerly Databricks / Stanford / DSPy author). **First mention with affiliation. The wiki has been carrying "Khattab et al." second-hand for two weeks; this is the primary-source identification of the named author.** Dangling pending second-source mention.
-- [[Chelsea Finn]] — Stanford. **First mention. Dangling.** (Co-author of *Model-Agnostic Meta-Learning* — reference [17] in this paper.)
-- [[Stanford IRIS Lab]] — Stanford lab; hosts the released TerminalBench-2 optimised harness artifact. **First mention.**
-- [[KRAFTON]] — Korean gaming/AI company; provided API credit support. **First mention.**
+- Yoonho Lee — Stanford IRIS Lab; lead author. Prior wiki appearance: not yet. **First mention. Dangling.**
+- Roshen Nair — Stanford. **First mention. Dangling.**
+- Qizheng Zhang — Stanford. **First mention. Dangling.**
+- Kangwook Lee — KRAFTON. **First mention. Dangling.**
+- Omar Khattab — MIT (formerly Databricks / Stanford / DSPy author). **First mention with affiliation. The wiki has been carrying "Khattab et al." second-hand for two weeks; this is the primary-source identification of the named author.** Dangling pending second-source mention.
+- Chelsea Finn — Stanford. **First mention. Dangling.** (Co-author of *Model-Agnostic Meta-Learning* — reference [17] in this paper.)
+- Stanford IRIS Lab — Stanford lab; hosts the released TerminalBench-2 optimised harness artifact. **First mention.**
+- KRAFTON — Korean gaming/AI company; provided API credit support. **First mention.**
 
-Plus reference-list entities: [[ForgeCode]] (TerminalBench-2 leaderboard #1 on Opus 4.6 at 81.8%, but unreproducible from public code), [[Terminus-KIRA]] (74.7% on Opus 4.6 — the next-strongest reproducible TerminalBench-2 agent), [[Goose]] (next-best on Haiku 4.5).
+Plus reference-list entities: ForgeCode (TerminalBench-2 leaderboard #1 on Opus 4.6 at 81.8%, but unreproducible from public code), Terminus-KIRA (74.7% on Opus 4.6 — the next-strongest reproducible TerminalBench-2 agent), Goose (next-best on Haiku 4.5).
 
 ## Source-quality notes
 

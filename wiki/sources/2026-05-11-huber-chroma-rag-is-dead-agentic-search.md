@@ -28,9 +28,9 @@ relationships:
 >
 > What is real, Jeff argues, is that most agent failures are context failures rather than reasoning failures. Context is too much, too little, or confusing. Last year, Chroma published a 45-page research report called Context Rot showing that language model performance is not invariant to context length. The "dumb zone" starts somewhere between 20,000 and 120,000 tokens, depending on the use case.
 
-(Channel description, [[Mastra]].)
+(Channel description, Mastra.)
 
-A 13:45 conference talk by **Jeff Huber** (Chroma co-founder & CEO) hosted on the [[Mastra]] YouTube channel. Published 11 May 2026 — **today**, by the wiki's working date. ASR caption track; no chapters. **The wiki's first-party-Chroma-CEO source** on context engineering as the rebranding of RAG and the case for agentic search.
+A 13:45 conference talk by **Jeff Huber** (Chroma co-founder & CEO) hosted on the Mastra YouTube channel. Published 11 May 2026 — **today**, by the wiki's working date. ASR caption track; no chapters. **The wiki's first-party-Chroma-CEO source** on context engineering as the rebranding of RAG and the case for agentic search.
 
 ## TL;DR
 
@@ -50,7 +50,7 @@ Six substantive contributions:
    - No indexing over the data.
    - Limited search (only `grep` — strict pattern match; no semantic expansion).
    - Sandbox is heavyweight tool when you only need read/write.
-   Cites [[Swyx]]'s recent article *"Oops, You Wrote a Database"* as the canonical statement of this anti-pattern. Names **Mintlify's virtualized-bash-on-Chroma** as the cleaner alternative — *"to the agent it looks the exact same"* (bash commands: glob / grep / cat / ls just work).
+   Cites Swyx's recent article *"Oops, You Wrote a Database"* as the canonical statement of this anti-pattern. Names **Mintlify's virtualized-bash-on-Chroma** as the cleaner alternative — *"to the agent it looks the exact same"* (bash commands: glob / grep / cat / ls just work).
 
 6. **Chroma Context One — the open-source specialised search sub-agent**: *"an auto-regressive language model. You input the query and Context One outputs the documents."* Trained-with-pretty-small-budget claim: *"10× faster, 25× cheaper, and actually better at searching or on par with gigabrain models like Opus 4.5/4.6 and GPT-5 4."* 50-page research report. The wiki's first **named search-specialised-LM-vs-gigabrain-LM tradeoff** with measurable cost-and-speed numbers.
 
@@ -80,7 +80,7 @@ Huber's four-point structural critique of the file-system-plus-bash pattern (cur
 | **Search-via-grep-only** | Strict pattern match; no semantic expansion |
 | **Sandbox heavyweight** | Spinning up a full sandbox is overkill if you only need read/write to files |
 
-The anti-pattern is named with citation to **[[Swyx]]'s** article *"Oops, You Wrote a Database"* — the canonical statement of the file-system-as-incidental-database problem.
+The anti-pattern is named with citation to **Swyx's** article *"Oops, You Wrote a Database"* — the canonical statement of the file-system-as-incidental-database problem.
 
 The cleaner alternative Huber names: **virtualized bash + virtualized file system over a real database**. Mintlify's documentation-assistant pattern is the worked example — *"yes, plug, they used Chroma as the backing database and put a virtual file system in front of Chroma."* From the agent's perspective, identical bash commands work; from the substrate's perspective, the database provides concurrency / indexing / hybrid search / re-ranking that the file system can't.
 

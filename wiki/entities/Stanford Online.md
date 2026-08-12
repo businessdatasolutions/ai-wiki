@@ -3,7 +3,7 @@ type: entity
 kind: organization
 aliases: ["Stanford Online", "Stanford Online YouTube"]
 tags: [stanford, education-channel, mooc, academic-lecture, online-education]
-parent: "[[Stanford University]]"
+parent: "Stanford University"
 website: "https://online.stanford.edu"
 confidence: 0.85
 last_confirmed: "2026-08-12"
@@ -27,11 +27,11 @@ The wiki has ingested two Stanford Online sources representing **two distinct co
 
 ### 1. CS224W — Machine Learning with Graphs ([[2023-12-07-leskovec-stanford-cs224w-knowledge-graph-embeddings|Leskovec 2023]])
 
-[[Jure Leskovec]]'s academic-foundation lecture on **knowledge graph embeddings** (TransE / TransR / DistMult / ComplEx; KG-completion task; relation-pattern taxonomy; FreeBase scale-and-incompleteness anchor). **The wiki's oldest video source by publish date** (December 2023) — pre-GenAI-era foundational reference for the [[knowledge-graphs]] construct. Stanford-graduate-level academic content.
+Jure Leskovec's academic-foundation lecture on **knowledge graph embeddings** (TransE / TransR / DistMult / ComplEx; KG-completion task; relation-pattern taxonomy; FreeBase scale-and-incompleteness anchor). **The wiki's oldest video source by publish date** (December 2023) — pre-GenAI-era foundational reference for the [[knowledge-graphs]] construct. Stanford-graduate-level academic content.
 
 ### 2. CS153 — Frontier Systems ([[2026-05-07-singhal-stanford-cs153-product-management-in-ai-era|Singhal 2026]])
 
-[[Mike Abbott]]'s frontier-systems course (Stanford CS153) featuring **Nikhyl Singhal** (Skip founder; ex-Google/Meta/Credit Karma VP-of-Product) as guest lecturer on **product management in the AI era**. Four-company-phases framework; AI-era role inversion (*product builder* vs *movement of information*); concrete operator-class employment numbers (30-70% layoffs / top-1% PM salaries doubled). Stanford-CS-undergraduate-elective-level guest-lecture content with Sequoia-aligned faculty (Abbott is also a Sequoia partner).
+Mike Abbott's frontier-systems course (Stanford CS153) featuring **Nikhyl Singhal** (Skip founder; ex-Google/Meta/Credit Karma VP-of-Product) as guest lecturer on **product management in the AI era**. Four-company-phases framework; AI-era role inversion (*product builder* vs *movement of information*); concrete operator-class employment numbers (30-70% layoffs / top-1% PM salaries doubled). Stanford-CS-undergraduate-elective-level guest-lecture content with Sequoia-aligned faculty (Abbott is also a Sequoia partner).
 
 ## Two-course pattern
 
@@ -46,15 +46,15 @@ The channel as a whole is the wiki's **load-bearing source of Stanford-faculty-m
 
 ## Notable courses / programmes featured
 
-- **CS224W — Machine Learning with Graphs** ([[Jure Leskovec]]). Foundational; the wiki holds one lecture.
-- **CS153 — Frontier Systems** ([[Mike Abbott]]). Industry-guest-lecture format; the wiki holds one lecture.
+- **CS224W — Machine Learning with Graphs** (Jure Leskovec). Foundational; the wiki holds one lecture.
+- **CS153 — Frontier Systems** (Mike Abbott). Industry-guest-lecture format; the wiki holds one lecture.
 - **AI graduate / professional programmes** more broadly (per the channel description; not yet ingested).
 
 ## People associated (across the wiki)
 
-- **[[Jure Leskovec]]** — CS224W instructor; SNAP Group lead; Stanford CS professor. Currently Dangling first-mention from the CS224W ingest.
-- **[[Mike Abbott]]** — CS153 professor; Sequoia partner; ex-Twitter engineering VP. Currently Dangling first-mention from the CS153 ingest.
-- **[[Nikhyl Singhal]]** — CS153 guest lecturer; Skip founder. Currently Dangling first-mention.
+- **Jure Leskovec** — CS224W instructor; SNAP Group lead; Stanford CS professor. Currently Dangling first-mention from the CS224W ingest.
+- **Mike Abbott** — CS153 professor; Sequoia partner; ex-Twitter engineering VP. Currently Dangling first-mention from the CS153 ingest.
+- **Nikhyl Singhal** — CS153 guest lecturer; Skip founder. Currently Dangling first-mention.
 - **[[Erik Brynjolfsson]]** — Stanford Digital Economy Lab / Stanford HAI; substantively cited in multiple wiki sources via the Stanford research apparatus (separate entity page).
 
 ## Convergence with wiki sources

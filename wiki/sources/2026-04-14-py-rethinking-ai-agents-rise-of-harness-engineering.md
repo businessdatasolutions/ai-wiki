@@ -4,7 +4,7 @@ kind: video
 title: "Rethinking AI Agents: The Rise of Harness Engineering"
 author: ["PY"]
 url: "https://www.youtube.com/watch?v=Xxuxg8PcBvc"
-publisher: "[[PY]]"
+publisher: "PY"
 date_published: 2026-04-14
 date_ingested: 2026-05-17
 length: "~11:45 minutes; **metadata-only ingest** — transcript fetch failed at both `--timeout 180000` and `--timeout 300000` with the panel-did-not-render symptom (this video is short — failure differs from the long-livestream pattern)"
@@ -27,9 +27,9 @@ relationships:
 
 # PY — *Rethinking AI Agents: The Rise of Harness Engineering*
 
-A **~12-minute video essay** on the *harness engineering* discipline, published **14 April 2026** by the **[[PY]] YouTube channel** (channel_id `UCRk2Uipu6q_Se1hEALunAoQ`; **126,883 views** at ingest time). **Note: not the same channel as the existing wiki source [[2026-05-04-rethinking-agents-harness-is-all-you-need|Prompt Engineering's Rethinking Agents: Harness is All You Need]]** (channel_id `UCDq7SjbgRKty5TgGafW8Clg`) — two distinct channels covering the same papers; the PY video **predates the Prompt Engineering one by three weeks** and got ~10× the views.
+A **~12-minute video essay** on the *harness engineering* discipline, published **14 April 2026** by the **PY YouTube channel** (channel_id `UCRk2Uipu6q_Se1hEALunAoQ`; **126,883 views** at ingest time). **Note: not the same channel as the existing wiki source [[2026-05-04-rethinking-agents-harness-is-all-you-need|Prompt Engineering's Rethinking Agents: Harness is All You Need]]** (channel_id `UCDq7SjbgRKty5TgGafW8Clg`) — two distinct channels covering the same papers; the PY video **predates the Prompt Engineering one by three weeks** and got ~10× the views.
 
-**Metadata-only ingest.** Transcript fetch failed at both `--timeout 180000` and `--timeout 300000` with the *transcript-panel-did-not-render* symptom. This is a **different failure mode** than the long-livestream pattern documented in the [[2026-05-15]] / [[2026-05-17]] log entries (the MGI virtual event and the Nodus Labs tutorial both eventually rendered at 180s; this short 11:45 video does not). The substantive content for this source page is drawn from the **channel-provided description**, which is unusually rich — it carries the thesis, the named empirical results, and full arXiv IDs for both load-bearing primary-source papers.
+**Metadata-only ingest.** Transcript fetch failed at both `--timeout 180000` and `--timeout 300000` with the *transcript-panel-did-not-render* symptom. This is a **different failure mode** than the long-livestream pattern documented in the 2026-05-15 / 2026-05-17 log entries (the MGI virtual event and the Nodus Labs tutorial both eventually rendered at 180s; this short 11:45 video does not). The substantive content for this source page is drawn from the **channel-provided description**, which is unusually rich — it carries the thesis, the named empirical results, and full arXiv IDs for both load-bearing primary-source papers.
 
 ## Why this ingest matters disproportionately for the wiki
 
@@ -92,7 +92,7 @@ This is structurally compatible with [[2026-05-11-karten-zhang-continual-harness
 
 ### Pre-figuring the Prompt Engineering source
 
-[[2026-05-04-rethinking-agents-harness-is-all-you-need|The Prompt Engineering video]] published 4 May 2026 covers the same papers, names the same empirical results, and reaches the same *"the harness is the moat"* conclusion. The PY video did all of this **three weeks earlier** on a different channel. Open question: was the PY video the upstream signal that propagated through the harness-discourse network to the Prompt Engineering channel? Or did both react independently to the March 2026 paper drop? **The 10× view-count ratio (PY 127k vs Prompt Engineering 12k) is striking** — suggests PY is a higher-traffic channel for this audience, even though the wiki's [[Prompt Engineering]] entity is the better-established secondary-summary anchor in the harness cluster.
+[[2026-05-04-rethinking-agents-harness-is-all-you-need|The Prompt Engineering video]] published 4 May 2026 covers the same papers, names the same empirical results, and reaches the same *"the harness is the moat"* conclusion. The PY video did all of this **three weeks earlier** on a different channel. Open question: was the PY video the upstream signal that propagated through the harness-discourse network to the Prompt Engineering channel? Or did both react independently to the March 2026 paper drop? **The 10× view-count ratio (PY 127k vs Prompt Engineering 12k) is striking** — suggests PY is a higher-traffic channel for this audience, even though the wiki's Prompt Engineering entity is the better-established secondary-summary anchor in the harness cluster.
 
 ### The discipline-from-secondary-summaries question
 
@@ -100,7 +100,7 @@ The wiki now carries **three secondary-summary video/article sources on the same
 
 ## Named entities (this ingest)
 
-- [[PY]] — YouTube channel; channel_id `UCRk2Uipu6q_Se1hEALunAoQ`. **First mention.** Dangling. The channel name is short and disambiguation may need a longer-form name on the entity page if/when one exists; the description doesn't reveal a longer brand.
+- PY — YouTube channel; channel_id `UCRk2Uipu6q_Se1hEALunAoQ`. **First mention.** Dangling. The channel name is short and disambiguation may need a longer-form name on the entity page if/when one exists; the description doesn't reveal a longer brand.
 - Pan, Lee, Khattab et al. — already referenced in prior wiki sources. Now have full primary-source arxiv IDs.
 
 ## Source-quality notes

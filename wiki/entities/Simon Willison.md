@@ -13,7 +13,7 @@ source_count: 2
 
 # Simon Willison
 
-**Co-founder of Django** (Python web framework, 2005) and **creator of Datasette** (data publishing / exploration tool). Prolific AI-engineering blogger at [simonwillison.net](https://simonwillison.net) — covers LLMs, prompt engineering, prompt-injection security, command-line AI tooling (`llm` CLI), and the broader practitioner discipline of AI-assisted software development. [[Paul Everitt]] calls him *"the developer AI developer whisperer"* — a widely-cited reference voice in the AI Dev 26 SF practitioner cluster.
+**Co-founder of Django** (Python web framework, 2005) and **creator of Datasette** (data publishing / exploration tool). Prolific AI-engineering blogger at [simonwillison.net](https://simonwillison.net) — covers LLMs, prompt engineering, prompt-injection security, command-line AI tooling (`llm` CLI), and the broader practitioner discipline of AI-assisted software development. Paul Everitt calls him *"the developer AI developer whisperer"* — a widely-cited reference voice in the AI Dev 26 SF practitioner cluster.
 
 Surfaces in this wiki for several substantive framings:
 

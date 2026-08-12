@@ -106,9 +106,9 @@ The 5-month evolution Anthropic took (Nov 2025 → Apr 2026) is **from prompt-pa
 
 ## Named entities (this ingest)
 
-- [[Justin Young]] — Anthropic Engineering, post author. **First mention. Dangling.**
-- [[David Hershey]], [[Prithvi Rajasakeran]], [[Jeremy Hadfield]], [[Naia Bouscal]], [[Michael Tingley]], [[Jesse Mu]], [[Jake Eaton]], [[Marius Buleandara]], [[Maggie Vo]], [[Pedram Navid]], [[Nadine Yasser]], [[Alex Notov]] — Anthropic Engineering / collaborators. All thanked in acknowledgements. **First mentions. Dangling.**
-- [[Puppeteer MCP]] — browser-automation MCP server. **First mention.**
+- Justin Young — Anthropic Engineering, post author. **First mention. Dangling.**
+- David Hershey, Prithvi Rajasakeran, Jeremy Hadfield, Naia Bouscal, Michael Tingley, Jesse Mu, Jake Eaton, Marius Buleandara, Maggie Vo, Pedram Navid, Nadine Yasser, Alex Notov — Anthropic Engineering / collaborators. All thanked in acknowledgements. **First mentions. Dangling.**
+- Puppeteer MCP — browser-automation MCP server. **First mention.**
 - Anthropic *code RL & Claude Code teams* — internal team references.
 
 ## Source-quality notes

@@ -35,7 +35,7 @@ relationships:
 
 # Akhtar & Forget / YC — Letter AI for AI-powered revenue
 
-[[Diana Hu]] (YC General Partner) interviews [[Ali Akhtar]] (CEO) and [[Armen Forget]] (CTO) of [[Letter AI]] on YC Root Access — Founder Firesides episode, published 25 February 2026, ~10 minutes. Frames the $40M Series B announcement and the company's pivot-during-batch story; Letter AI is an **AI-native sales-enablement platform** for revenue teams at enterprises like Lenovo, Adobe, Novo Nordisk, Plaid, and Kong.
+[[Diana Hu]] (YC General Partner) interviews Ali Akhtar (CEO) and Armen Forget (CTO) of Letter AI on YC Root Access — Founder Firesides episode, published 25 February 2026, ~10 minutes. Frames the $40M Series B announcement and the company's pivot-during-batch story; Letter AI is an **AI-native sales-enablement platform** for revenue teams at enterprises like Lenovo, Adobe, Novo Nordisk, Plaid, and Kong.
 
 ## TL;DR
 
@@ -113,11 +113,11 @@ Both are unaudited founder-vantage anecdotes. The 100% figure is *"close to 100%
 
 - **[[Y Combinator]]** — accelerator; Letter AI's batch (W23 or S23). Source-count bumps 8→9.
 - **[[Diana Hu]]** — interviewing GP. Source-count bumps 2→3.
-- **[[Letter AI]]** — Dangling first mention (the company; was Tractatus).
-- **[[Ali Akhtar]]** — Dangling first mention (CEO / co-founder).
-- **[[Armen Forget]]** — Dangling first mention (CTO / co-founder).
-- **[[Lenovo]]** — Dangling first mention (closed-in-batch anchor customer).
-- **[[Cursor]]** — substantive mention (the surface from which sellers retrieve via Letter MCP server). Existing entity *if it has a page*; otherwise Dangling.
+- **Letter AI** — Dangling first mention (the company; was Tractatus).
+- **Ali Akhtar** — Dangling first mention (CEO / co-founder).
+- **Armen Forget** — Dangling first mention (CTO / co-founder).
+- **Lenovo** — Dangling first mention (closed-in-batch anchor customer).
+- **Cursor** — substantive mention (the surface from which sellers retrieve via Letter MCP server). Existing entity *if it has a page*; otherwise Dangling.
 
 **Concepts touched substantively:**
 

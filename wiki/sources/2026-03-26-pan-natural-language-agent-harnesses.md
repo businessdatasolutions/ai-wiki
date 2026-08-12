@@ -98,9 +98,9 @@ Pan's NLAH ingredients map onto the wiki's existing harness vocabulary:
 
 ## Named entities (this ingest)
 
-- [[Linyue Pan]], [[Lexiao Zou]], [[Shuo Guo]], [[Jingchen Ni]], [[Hai-Tao Zheng]] — Tsinghua + Harbin Institute of Technology (Shenzhen). **All first mentions. Dangling.**
-- [[Tsinghua University]] — first wiki source from Tsinghua. **Dangling pending second source.**
-- [[Harbin Institute of Technology (Shenzhen)]] — first mention. **Dangling.**
+- Linyue Pan, Lexiao Zou, Shuo Guo, Jingchen Ni, Hai-Tao Zheng — Tsinghua + Harbin Institute of Technology (Shenzhen). **All first mentions. Dangling.**
+- Tsinghua University — first wiki source from Tsinghua. **Dangling pending second source.**
+- Harbin Institute of Technology (Shenzhen) — first mention. **Dangling.**
 
 Plus reference-list entities (not new ingest targets): Anthropic (already in wiki), OpenAI (already), LangChain (already), AGENTS.md spec (already tracked).
 

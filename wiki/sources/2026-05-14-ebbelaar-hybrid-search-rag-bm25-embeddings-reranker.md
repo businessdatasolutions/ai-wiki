@@ -38,13 +38,13 @@ last_confirmed: "2026-05-25"
 
 > Want to learn real AI Engineering? Go here: https://go.datalumina.com/QpP01LX
 
-(Channel description, [[Dave Ebbelaar]] / [[Datalumina]].)
+(Channel description, Dave Ebbelaar / Datalumina.)
 
-A 59:17 YouTube practitioner tutorial published 14 May 2026 to the [[Dave Ebbelaar]] channel (Datalumina founder; AI engineering consultancy). 5,803 views (small audience — practitioner-targeted technical tutorial, not viral content). Auto-generated ASR transcript with 19 chapter markers; chapter list runs *Hybrid Retrieval Overview → Meet the Finance QA Data → Exploring Queries and Corpus → Mapping Questions to Documents → Retrieval Pipeline Roadmap → BM25 Keyword Retrieval → Tokenizing the Corpus → Building the BM25 Index → Querying with BM25 → Why Dense Embeddings Help → Creating Dense Embeddings → Dense Search in Python → Dense Retrieval Compared → Reciprocal Rank Fusion → Fusing Search Results → Adding the Re-Ranker → Re-Ranking Hybrid Candidates → Evaluating Retrieval Quality → Tuning for Your Own Data.*
+A 59:17 YouTube practitioner tutorial published 14 May 2026 to the Dave Ebbelaar channel (Datalumina founder; AI engineering consultancy). 5,803 views (small audience — practitioner-targeted technical tutorial, not viral content). Auto-generated ASR transcript with 19 chapter markers; chapter list runs *Hybrid Retrieval Overview → Meet the Finance QA Data → Exploring Queries and Corpus → Mapping Questions to Documents → Retrieval Pipeline Roadmap → BM25 Keyword Retrieval → Tokenizing the Corpus → Building the BM25 Index → Querying with BM25 → Why Dense Embeddings Help → Creating Dense Embeddings → Dense Search in Python → Dense Retrieval Compared → Reciprocal Rank Fusion → Fusing Search Results → Adding the Re-Ranker → Re-Ranking Hybrid Candidates → Evaluating Retrieval Quality → Tuning for Your Own Data.*
 
 **Companion artifact**: the [GitHub repository](https://github.com/daveebbelaar/ai-cookbook/tree/main/knowledge/hybrid-retrieval) (under `ai-cookbook`) ships the full Python codebase walked through in the video. Each retrieval technique has an accompanying `docs/` markdown with formulas + math + original-paper references for deeper study.
 
-**Authors / dangling list.** First wiki source by [[Dave Ebbelaar]] and first wiki appearance of [[Datalumina]]; per the [[../../CLAUDE|author-entity promotion rule]] (second-source promotion), both stay on the dangling list at this ingest:
+**Authors / dangling list.** First wiki source by Dave Ebbelaar and first wiki appearance of Datalumina; per the [author-entity promotion rule](../../CLAUDE.md) (second-source promotion), both stay on the dangling list at this ingest:
 
 - **Dangling** (single-source mention, deferred): Dave Ebbelaar (founder of Datalumina; AI-engineering YouTuber + freelancer-track educator), Datalumina (AI development consultancy + GenAI Accelerator six-week training).
 

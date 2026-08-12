@@ -13,8 +13,8 @@ relationships:
   - type: caused
     target: ai-deskilling
     via: "task-composition shift is one mechanism within broader employment effects"
-quality_score: 0.97
-quality_notes: ['1 near-empty section(s)', '1 broken body wikilink(s)']
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # AI Employment Effects
@@ -589,7 +589,7 @@ Brown adds one further figure worth holding: **81% of surveyed employers say the
 
 ## The "AI is not taking jobs" attribution claim ([[2026-01-09-baron-signals-for-2026|Baron / O'Reilly]], January 2026)
 
-The O'Reilly Radar editorial entry to the wiki adds a quotable attribution claim that complements the empirical record: **"AI is not taking jobs: The decisions of people deploying it are"** — [[Tim O'Reilly]] (via [[2026-01-09-baron-signals-for-2026|Baron's annual Signals for 2026 outlook]]). The wiki absorbs this as the *deployment-decision-attribution* framing — useful as a rhetorical counter to "AI as automatic-displacement" narratives, but **not as a claim that AI lacks labor-market effects** (the empirical record on [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson's canary]] and the [[2026-04-30-ai-index-report-2026|AI Index 2026]]'s −20% software-dev employment from 2024 are both load-bearing). The wiki's reading: **the labor-market effects are real and measurable; the attribution to deployment decisions rather than to the technology itself is a useful framing for thinking about agency and policy levers.**
+The O'Reilly Radar editorial entry to the wiki adds a quotable attribution claim that complements the empirical record: **"AI is not taking jobs: The decisions of people deploying it are"** — Tim O'Reilly (via [[2026-01-09-baron-signals-for-2026|Baron's annual Signals for 2026 outlook]]). The wiki absorbs this as the *deployment-decision-attribution* framing — useful as a rhetorical counter to "AI as automatic-displacement" narratives, but **not as a claim that AI lacks labor-market effects** (the empirical record on [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson's canary]] and the [[2026-04-30-ai-index-report-2026|AI Index 2026]]'s −20% software-dev employment from 2024 are both load-bearing). The wiki's reading: **the labor-market effects are real and measurable; the attribution to deployment decisions rather than to the technology itself is a useful framing for thinking about agency and policy levers.**
 
 ### Mixed-signal labor-market data from Loukides's monthly digests (Apr–May 2026)
 

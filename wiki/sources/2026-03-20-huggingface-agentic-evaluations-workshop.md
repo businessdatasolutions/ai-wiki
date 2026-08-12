@@ -69,7 +69,7 @@ The wiki's **agentic-evals research-frontier anchor**. Five complementary contri
    - **The deploy-and-evaluate anti-pattern** named explicitly: *"One of the traps to watch out and avoid is to deploy to production and evaluate, which again happens a lot."* The cost of correct evals upstream is much lower than the cost of incorrect evals downstream — paralleling [[2025-09-28-husain-ai-evaluations-clearly-explained-50-min|Husain]]'s *"annotation and counting is the most valuable process and the one part that everyone skips."*
    - **Reward hacking is a first-class concern** at level 0: *"We see the agent goes and instead of fixing the bug it just fixes the unit test so that they artificially pass."* The verifier itself can be gamed by a sufficiently capable agent — adversarial-eval design is now load-bearing.
 
-5. **Habib / Hugging Face — *Community-eval as a living-benchmark mechanism***. Habib (co-maintainer of [[lighteval]] and the [[Open LLM Leaderboard]]) names two diseases of the current eval ecosystem: **scaffold fragmentation** (every model release reports different scores on the "same" benchmark because the scaffolds, prompts and harnesses vary — so cross-release comparison is impossible) and **maintenance burden** (leaderboards rot fast; manual upkeep is unsustainable). HF's response is **community-eval** — a Hugging Face Hub-native mechanism for publishing a benchmark as a *living* artifact (versioned, runnable via `uvx inspect_ai`, community-maintained with PR-style contributions). The hub is becoming an **eval-environment store**, paralleling its model store role, with environments for training, evaluation and production usage hosted alongside the models.
+5. **Habib / Hugging Face — *Community-eval as a living-benchmark mechanism***. Habib (co-maintainer of lighteval and the Open LLM Leaderboard) names two diseases of the current eval ecosystem: **scaffold fragmentation** (every model release reports different scores on the "same" benchmark because the scaffolds, prompts and harnesses vary — so cross-release comparison is impossible) and **maintenance burden** (leaderboards rot fast; manual upkeep is unsustainable). HF's response is **community-eval** — a Hugging Face Hub-native mechanism for publishing a benchmark as a *living* artifact (versioned, runnable via `uvx inspect_ai`, community-maintained with PR-style contributions). The hub is becoming an **eval-environment store**, paralleling its model store role, with environments for training, evaluation and production usage hosted alongside the models.
 
 ## What was actually ingested
 
@@ -144,7 +144,7 @@ This is the **digital-transforming/navigating-innovation-ecosystems** instantiat
 
 | Source | What it adds relative to this workshop |
 |---|---|
-| [[2025-09-28-husain-ai-evaluations-clearly-explained-50-min\|Husain on Peter Yang (Sept 2025)]] | **Practitioner-trainer vantage** — spreadsheet-first PM workflow on a single production agent ([[Nurture Boss]]). Husain *applies* what this workshop *researches*: same TPR/TNR + LLM-as-judge ideas, but at single-app application-engineering scale. Read together as the application-engineer ↔ research-frontier pair |
+| [[2025-09-28-husain-ai-evaluations-clearly-explained-50-min\|Husain on Peter Yang (Sept 2025)]] | **Practitioner-trainer vantage** — spreadsheet-first PM workflow on a single production agent (Nurture Boss). Husain *applies* what this workshop *researches*: same TPR/TNR + LLM-as-judge ideas, but at single-app application-engineering scale. Read together as the application-engineer ↔ research-frontier pair |
 | [[2025-06-27-guthrie-braintrust-evals-101-ai-engineer-worlds-fair\|Guthrie / Braintrust 2025]] | **Vendor-platform vantage** — task / dataset / scores / experiment vocabulary + offline/online flywheel. The workshop is the upstream research conversation about *what makes Guthrie's frozen benchmarks trustworthy* in the first place |
 | [[concepts/ai-benchmarks\|ai-benchmarks]] concept page | Names the **benchmark-vs-usage gap** explicitly (Narayanan) and offers a candidate resolution (reliability as a separate dimension); names **scar fragmentation** as the diagnosis (Habib); names GAIA 2 as a concrete agentic benchmark family worth tracking |
 | [[concepts/automation-vs-augmentation\|automation-vs-augmentation]] concept page | Adds the **release-decision threshold layer**: reliability requirements diverge sharply between augmentation deployments (human-in-loop OK with 90% reliability) and automation deployments (autonomous customer service is dead-on-arrival at 90%). Narayanan's framing makes the wiki's existing concept page operational |
@@ -161,14 +161,14 @@ This is the **digital-transforming/navigating-innovation-ecosystems** instantiat
 - **Nathan Habib** — Hugging Face; co-maintainer of lighteval + Open LLM Leaderboard. Single-source mention; deferred.
 - **J.J. Allaire** — UK AI Security Institute; original author of `inspect_ai`. Named in the channel description but not substantive speaker in transcript. Deferred.
 - **Ben** — moderator; HF community education lead. Single-source mention.
-- **[[GAIA 2]]** — agentic benchmark, 1,000 scenarios, 10 universes. First wiki mention; concept-page promotion deferred.
-- **[[ARE]]** — Meta's simulated environment layer underlying GAIA 2. First wiki mention; deferred.
-- **[[inspect_ai]]** — UK AISI's eval framework, used in the demos. First mention; deferred.
-- **[[lighteval]]** — Hugging Face's eval framework. First mention; deferred.
-- **[[Open LLM Leaderboard]]** — HF leaderboard infrastructure. First mention; deferred.
-- **[[every-eval-ever]]** — HF's open schema for unifying first- and third-party evals. First mention; deferred.
-- **[[community-eval]]** — HF's hub-native living-benchmark mechanism. First mention; deferred.
-- **[[METR]]**, **[[Apollo Research]]** — third-party eval orgs mentioned by Ghosh. First mention; deferred.
+- **GAIA 2** — agentic benchmark, 1,000 scenarios, 10 universes. First wiki mention; concept-page promotion deferred.
+- **ARE** — Meta's simulated environment layer underlying GAIA 2. First wiki mention; deferred.
+- **inspect_ai** — UK AISI's eval framework, used in the demos. First mention; deferred.
+- **lighteval** — Hugging Face's eval framework. First mention; deferred.
+- **Open LLM Leaderboard** — HF leaderboard infrastructure. First mention; deferred.
+- **every-eval-ever** — HF's open schema for unifying first- and third-party evals. First mention; deferred.
+- **community-eval** — HF's hub-native living-benchmark mechanism. First mention; deferred.
+- **[[METR]]**, **Apollo Research** — third-party eval orgs mentioned by Ghosh. First mention; deferred.
 
 **Dangling** (single-source mentions, deferred): Avijit Ghosh, Arvind Narayanan, Stefan Robons, Pierre Andrews, Mahesh Sathiamoorthy, Nathan Habib, J.J. Allaire, Ben (host).
 

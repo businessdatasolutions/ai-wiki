@@ -18,7 +18,7 @@ raw: "../../raw/articles/Webb - Bringing True Strategic  Foresight Back to Busin
 
 ## TL;DR
 
-[[Amy Webb]] (CEO of [[Future Today Strategy Group|FTSG]] — formerly Future Today Institute — and professor of strategic foresight at [[NYU Stern]]) argues that **strategy and foresight diverged into separate, weakened disciplines** in the 1990s and need to be rejoined. Strategy without foresight makes companies vulnerable to disruption; foresight without strategy yields unactionable scenarios.
+[[Amy Webb]] (CEO of [[Future Today Strategy Group|FTSG]] — formerly Future Today Institute — and professor of strategic foresight at NYU Stern) argues that **strategy and foresight diverged into separate, weakened disciplines** in the 1990s and need to be rejoined. Strategy without foresight makes companies vulnerable to disruption; foresight without strategy yields unactionable scenarios.
 
 Presents FTSG's **10-step strategic foresight methodology** combining quantitative modeling, game theory, and storytelling to identify "where to play, how to win in the future, and how to ensure organizational resiliency."
 
@@ -77,7 +77,7 @@ Cites Netflix (DVD → streaming) and Schibsted (Oslo, used foresight to anticip
 - [[strategic-foresight]] — concept page anchored on this source
 - [[Amy Webb]] — author entity
 - [[Future Today Strategy Group]] — Webb's firm
-- [[NYU Stern]] — Webb's academic affiliation
+- NYU Stern — Webb's academic affiliation
 - [[2026-04-28-ftsg-convergence-outlook-2026]] — companion / successor publication from FTSG; the 10-step process is the methodological backbone of the Outlook
 - [[Harvard Business Review]] — publisher
 - [[2026-04-28-anand-wu-genai-playbook]] — also a strategy-formulation methodology under uncertainty

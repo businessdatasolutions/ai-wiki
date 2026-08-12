@@ -88,10 +88,10 @@ AutoHarness's *harness-as-policy* condition is structurally similar to [[concept
 
 ## Named entities (this ingest)
 
-- [[Xinghua Lou]], [[Miguel Lázaro-Gredilla]], [[Antoine Dedieu]], [[Carter Wendelken]], [[Wolfgang Lehrach]], [[Kevin P. Murphy]] — Google DeepMind. **All first mentions. Dangling.** Kevin P. Murphy is the well-known author of *Probabilistic Machine Learning* textbooks. Wolfgang Lehrach is referenced in [[2026-03-30-lee-meta-harness-end-to-end-optimization|Meta-Harness's]] reference list as a co-author of *Code World Models for General Game Playing* (arXiv:2510.04542, 2025) — adjacent prior work.
+- Xinghua Lou, Miguel Lázaro-Gredilla, Antoine Dedieu, Carter Wendelken, Wolfgang Lehrach, Kevin P. Murphy — Google DeepMind. **All first mentions. Dangling.** Kevin P. Murphy is the well-known author of *Probabilistic Machine Learning* textbooks. Wolfgang Lehrach is referenced in [[2026-03-30-lee-meta-harness-end-to-end-optimization|Meta-Harness's]] reference list as a co-author of *Code World Models for General Game Playing* (arXiv:2510.04542, 2025) — adjacent prior work.
 - [[Google DeepMind]] — already in wiki ecosystem (via [[2026-05-11-karten-zhang-continual-harness-online-adaptation|Karten et al.]] affiliation).
-- [[TextArena]] (Guertler et al. 2025) — game benchmark. **First mention. Dangling.**
-- [[Kaggle GameArena]] — competitive benchmarking platform that motivated the work. **First mention.**
+- TextArena (Guertler et al. 2025) — game benchmark. **First mention. Dangling.**
+- Kaggle GameArena — competitive benchmarking platform that motivated the work. **First mention.**
 
 ## Source-quality notes
 

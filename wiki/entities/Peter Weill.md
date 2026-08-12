@@ -3,7 +3,7 @@ type: entity
 kind: person
 aliases: ["Peter Weill"]
 tags: [mit-sloan, mit-cisr, ai-research, digital-transformation, business-research]
-affiliation: "[[MIT Sloan]] / [[MIT CISR]]"
+affiliation: "MIT Sloan / [[MIT CISR]]"
 role: "Senior research scientist; Chairman of [[MIT CISR]]"
 confidence: 0.75
 last_confirmed: "2026-05-03"
@@ -17,7 +17,7 @@ relationships:
 
 # Peter Weill
 
-**Peter Weill** is a senior research scientist at [[MIT Sloan]] and the chairman of [[MIT CISR]]. His research explores future trends — digital business models, IT investment portfolios, and AI maturity models — to help organizations maintain a competitive edge.
+**Peter Weill** is a senior research scientist at MIT Sloan and the chairman of [[MIT CISR]]. His research explores future trends — digital business models, IT investment portfolios, and AI maturity models — to help organizations maintain a competitive edge.
 
 Co-author with [[Stephanie Woerner]] of the **Four Stages of Enterprise AI Maturity** framework and the **Four S** framework — see [[enterprise-ai-adoption]] and [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan article]].
 

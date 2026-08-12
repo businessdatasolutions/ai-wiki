@@ -34,9 +34,9 @@ relationships:
 
 # Baron — Signals for 2026
 
-The **O'Reilly Radar annual-outlook essay** for 2026, by **[[Julie Baron]]** (O'Reilly editor). Published **9 January 2026**. ~13 minute read. **Frames 2026 as "the year of increased accountability"** — *Expect enterprises to shift focus from experimentation to measurable business outcomes and sustainable AI costs.*
+The **O'Reilly Radar annual-outlook essay** for 2026, by **Julie Baron** (O'Reilly editor). Published **9 January 2026**. ~13 minute read. **Frames 2026 as "the year of increased accountability"** — *Expect enterprises to shift focus from experimentation to measurable business outcomes and sustainable AI costs.*
 
-The essay's tone is editorial-curatorial rather than predictive. The opening quotes [[Tim O'Reilly]] (*"AI is not taking jobs: The decisions of people deploying it are"*) and [[Mike Loukides]] (*"At O'Reilly, we don't believe in predicting the future. But we do believe you can see signs of the future in the present"*). Six sections, each with a short framing block and 2–3 bulleted **Takeaways** that name the trends Baron expects to matter.
+The essay's tone is editorial-curatorial rather than predictive. The opening quotes Tim O'Reilly (*"AI is not taking jobs: The decisions of people deploying it are"*) and [[Mike Loukides]] (*"At O'Reilly, we don't believe in predicting the future. But we do believe you can see signs of the future in the present"*). Six sections, each with a short framing block and 2–3 bulleted **Takeaways** that name the trends Baron expects to matter.
 
 ## TL;DR
 
@@ -74,8 +74,8 @@ Full 12-page PDF print of the O'Reilly Radar article — 13-minute reading time 
 
 ## Named entities (this ingest)
 
-- [[Julie Baron]] — O'Reilly editor. **First mention.** *Dangling.*
-- [[Tim O'Reilly]] — Founder of O'Reilly Media. **First mention.** *Dangling.*
+- Julie Baron — O'Reilly editor. **First mention.** *Dangling.*
+- Tim O'Reilly — Founder of O'Reilly Media. **First mention.** *Dangling.*
 - [[Mike Loukides]] — O'Reilly Radar editor; author of the monthly *Radar Trends to Watch* series. **First mention here, but second-source promotion eligible immediately given the parallel January-2026 Radar Trends ingest in this batch.** *Promoted to entity in this batch.*
 - [[O'Reilly Media]] — Publisher of all eight sources in this 16 May 2026 batch. *Promoted to entity in this batch.*
 

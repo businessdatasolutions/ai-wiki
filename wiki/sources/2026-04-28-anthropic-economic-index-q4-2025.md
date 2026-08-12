@@ -17,7 +17,7 @@ raw: "../../raw/articles/The Anthropic Economic Index report_ New building block
 
 ## TL;DR
 
-The fourth report in [[Anthropic]]'s [[Anthropic Economic Index]] series. Introduces **economic primitives** — five measurements derived from privacy-preserving classification of ~1M [[Claude]].ai conversations and ~1M 1P API transcripts (sample period: November 2025, predominantly [[Claude Sonnet 4.5]]):
+The fourth report in [[Anthropic]]'s [[Anthropic Economic Index]] series. Introduces **economic primitives** — five measurements derived from privacy-preserving classification of ~1M [[Claude]].ai conversations and ~1M 1P API transcripts (sample period: November 2025, predominantly Claude Sonnet 4.5):
 
 1. **Task complexity** — estimated human time without AI; whether multiple tasks are handled in one conversation
 2. **Human and AI skill level** — years of education needed to understand prompts and responses
@@ -48,7 +48,7 @@ This page summarizes the **summary article** dated 15 Jan 2026; the full underly
 
 ### Time horizons (METR comparison)
 
-The report situates its findings against [[METR]]'s task-horizon benchmark for [[Claude Sonnet 4.5]]:
+The report situates its findings against [[METR]]'s task-horizon benchmark for Claude Sonnet 4.5:
 
 | Source | Duration at which 50% success is achieved |
 |---|---|
@@ -120,7 +120,7 @@ The August 2025 sample was the only one where automation led; the November 2025 
 - **Privacy-preserving classification** — Claude itself answers a fixed set of questions about each conversation in the sample. Full methodology in chapter 2 of the underlying report (not separately ingested here).
 - **Sample size** — 1M Claude.ai Free / Pro / Max conversations + 1M 1P API transcripts.
 - **Sample period** — November 2025.
-- **Predominant model** — [[Claude Sonnet 4.5]]. The report acknowledges the subsequent release of [[Claude Opus 4.5]] may shift future numbers.
+- **Predominant model** — Claude Sonnet 4.5. The report acknowledges the subsequent release of Claude Opus 4.5 may shift future numbers.
 - **Task taxonomy** — O*NET.
 
 ## Limitations / caveats (per report)

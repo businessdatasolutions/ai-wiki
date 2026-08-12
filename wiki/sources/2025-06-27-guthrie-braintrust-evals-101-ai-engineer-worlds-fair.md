@@ -34,9 +34,9 @@ relationships:
 >
 > Recorded at the AI Engineer World's Fair in San Francisco.
 
-(Channel description, [[AI Engineer]].)
+(Channel description, AI Engineer.)
 
-A 48:31 hands-on workshop by **Doug Guthrie** (Braintrust solutions engineer) at the [[AI Engineer]] World's Fair in San Francisco. Published 27 June 2025 to the AI Engineer YouTube channel — **the wiki's earliest source on AI evaluation as a formalised discipline**, predating the wiki's existing eval-adjacent sources by ~9 months. ASR caption track; no chapters.
+A 48:31 hands-on workshop by **Doug Guthrie** (Braintrust solutions engineer) at the AI Engineer World's Fair in San Francisco. Published 27 June 2025 to the AI Engineer YouTube channel — **the wiki's earliest source on AI evaluation as a formalised discipline**, predating the wiki's existing eval-adjacent sources by ~9 months. ASR caption track; no chapters.
 
 ## TL;DR
 
@@ -173,7 +173,7 @@ None substantive. Guthrie's framing is operator-level prescriptive; the wiki hol
 - **Doug Guthrie** — Braintrust solutions engineer; presenter; ex-dbt Labs.
 - **Braintrust** — end-to-end developer platform for AI products (evals + observability). Strong promotion candidate — likely to recur on future eval-tooling ingests.
 - **Anker Goyal** — Braintrust CEO.
-- **[[AI Engineer]]** — conference series + YouTube channel (AI Engineer World's Fair).
+- **AI Engineer** — conference series + YouTube channel (AI Engineer World's Fair).
 - **dbt Labs** — Guthrie's previous employer.
 - **Versel AI SDK** — named as a wrappable client.
 - **Notion** — referenced via Sarah-from-Notion's workshop (separate from this video).

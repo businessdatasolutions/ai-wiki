@@ -3,7 +3,7 @@ type: entity
 kind: org
 aliases: ["MIT Technology Review Insights", "MIT TRI", "MITTRI", "MIT Tech Review Insights"]
 tags: [publisher, research, sponsored-research, mit, technology-journalism]
-parent: "[[MIT Technology Review]]"
+parent: "MIT Technology Review"
 website: "https://www.technologyreview.com/insights/"
 confidence: 0.70
 last_confirmed: "2026-04-28"
@@ -15,7 +15,7 @@ source_count: 1
 
 **MIT Technology Review Insights** is the **custom publishing division** of MIT Technology Review (the magazine). Produces sponsored qualitative and quantitative research and analysis — articles, reports, infographics, videos, podcasts.
 
-Importantly: this is **not the same as [[MIT Sloan]] / [[MIT CISR]] / [[Stanford HAI]]'s [[AI Index]]**. MIT TRI is the **custom-publishing arm of a magazine**, while MIT Sloan/CISR is an academic research institute and HAI is a university research initiative. All three publish on AI strategy, but the institutional source — and the sponsorship structure — differs significantly.
+Importantly: this is **not the same as MIT Sloan / [[MIT CISR]] / [[Stanford HAI]]'s [[AI Index]]**. MIT TRI is the **custom-publishing arm of a magazine**, while MIT Sloan/CISR is an academic research institute and HAI is a university research initiative. All three publish on AI strategy, but the institutional source — and the sponsorship structure — differs significantly.
 
 ## Role in the wiki
 

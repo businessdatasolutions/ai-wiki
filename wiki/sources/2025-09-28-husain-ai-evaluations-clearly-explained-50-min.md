@@ -47,17 +47,17 @@ A 50-minute hands-on walk-through by **Hamel Husain** (independent AI-evaluation
 
 The wiki's **practitioner-trainer anchor on AI evaluation as a teachable, spreadsheet-first discipline**, complementing [[2025-06-27-guthrie-braintrust-evals-101-ai-engineer-worlds-fair|Guthrie / Braintrust 2025]]'s vendor-engineer vantage with a vendor-neutral curriculum stance. Three substantive contributions:
 
-1. **The spreadsheet-first workflow** — *"You can get insane value by just doing [annotation and counting]. And that's the one part that everyone skips."* Husain demonstrates the full loop on a real production agent ([[Nurture Boss]] — an AI property-management assistant with ~100 production traces):
+1. **The spreadsheet-first workflow** — *"You can get insane value by just doing [annotation and counting]. And that's the one part that everyone skips."* Husain demonstrates the full loop on a real production agent (Nurture Boss — an AI property-management assistant with ~100 production traces):
    - **Step 1: Open codes.** Sit with a spreadsheet of production traces; write free-text notes (`z_note` field) on what went wrong in each — *"tour scheduling rescheduling issue, human handoff or transfer issue, formatting error, conversational flow issue, made-up promises not kept"*.
    - **Step 2: Axial coding.** Dump the open codes into Claude/ChatGPT and ask it to propose 5–6 categories. *"Open code / axial code is some really old technique from social sciences and machine learning — the LLM knows exactly what you're doing."*
    - **Step 3: Categorise with the AI formula.** Use Google Sheets' built-in `=AI(…)` formula to assign each trace's z_note to a category.
    - **Step 4: Pivot tables.** Count occurrences per category — *"hey, conversational flow issue is happening quite a bit."*
    - **Step 5: Promote the dominant categories to evals.** Build an LLM-as-judge for the top 2–3 failure modes; validate it against human labels.
-   The deliberate *un*-sophistication of the tooling — Google Sheets, not Braintrust/LangSmith/Arize — is the **floor-raising claim made operational for the [[ai-product-management]] audience**: the eval discipline is not a tooling problem.
+   The deliberate *un*-sophistication of the tooling — Google Sheets, not Braintrust/LangSmith/Arize — is the **floor-raising claim made operational for the ai-product-management audience**: the eval discipline is not a tooling problem.
 
-2. **Binary pass/fail beats 1–5 scores — every time** ([[binary-pass-fail|24:44]]). Husain's strongest prescription: *"When you see an average score of 3.2 versus 3.7, no one really knows what the hell that means. It's not really actionable, honestly. They're like, 'Oh, it's like getting better.' Honestly, nobody really knows whether it's getting better or not."* The reason Likert scales fail: **inter-annotator agreement is dominated by category-boundary disagreements** (annotator A's *3* is annotator B's *4*) rather than capability disagreements. Binary collapses the noise. Husain's prescription extends to LLM-as-judge: build one binary judge per failure mode, not a multi-dimensional rubric.
+2. **Binary pass/fail beats 1–5 scores — every time** (24:44). Husain's strongest prescription: *"When you see an average score of 3.2 versus 3.7, no one really knows what the hell that means. It's not really actionable, honestly. They're like, 'Oh, it's like getting better.' Honestly, nobody really knows whether it's getting better or not."* The reason Likert scales fail: **inter-annotator agreement is dominated by category-boundary disagreements** (annotator A's *3* is annotator B's *4*) rather than capability disagreements. Binary collapses the noise. Husain's prescription extends to LLM-as-judge: build one binary judge per failure mode, not a multi-dimensional rubric.
 
-3. **The agreement-metric trap** ([[agreement-metric-trap|28:52]]) — *"As a product manager, if you ever see the word agreement, you need to pause and be like, 'Hm, let me dig into this, please.'"* Naive accuracy/agreement between an LLM-judge and human labels is misleading when the failure class is rare (the trivial *"always predict pass"* judge looks ~95% accurate when only 5% of traces fail). The correct metrics are **true-positive rate** (TPR = recall over failures) and **true-negative rate** (TNR = recall over passes), reported as separate columns and ideally combined into a single F1-like aggregate. Husain: *"If people don't trust your evals, they won't even trust you. You're done."*
+3. **The agreement-metric trap** (28:52) — *"As a product manager, if you ever see the word agreement, you need to pause and be like, 'Hm, let me dig into this, please.'"* Naive accuracy/agreement between an LLM-judge and human labels is misleading when the failure class is rare (the trivial *"always predict pass"* judge looks ~95% accurate when only 5% of traces fail). The correct metrics are **true-positive rate** (TPR = recall over failures) and **true-negative rate** (TNR = recall over passes), reported as separate columns and ideally combined into a single F1-like aggregate. Husain: *"If people don't trust your evals, they won't even trust you. You're done."*
 
 Plus a structural observation on **how production evals slot into continuous deployment**: an LLM-as-judge can run in CI on every code change AND on a random sample (~5%) of production traffic in real time — same judge, two surfaces. The dashboard reports TPR/TNR per judge plus an aggregate score. Husain estimates **under a dozen judges per app** is the right cardinality.
 
@@ -69,7 +69,7 @@ Full ~52-minute episode transcript (auto-generated ASR, ~1008 raw segments). The
 
 ### Step 1 — Read 100 production traces and take notes
 
-Husain's discipline: open the observability tool ([[Braintrust]] in [[Nurture Boss]]'s case, but [[Arize]] / [[LangSmith]] equivalent), filter to ~100 recent traces, **open each one and write a free-text note** in a column called `z_note`. *"It's literally just me reading the trace and going, 'oh, this is broken because it sent a markdown blob inside a text message' — and I write that down."*
+Husain's discipline: open the observability tool (Braintrust in Nurture Boss's case, but Arize / LangSmith equivalent), filter to ~100 recent traces, **open each one and write a free-text note** in a column called `z_note`. *"It's literally just me reading the trace and going, 'oh, this is broken because it sent a markdown blob inside a text message' — and I write that down."*
 
 The discipline is the **annotation**, not the categorisation. Categorisation is downstream and easy; annotation is the part that requires human judgment about what *is* a failure in this domain.
 
@@ -144,9 +144,9 @@ An honest judge has high TPR *and* high TNR. The naive-agreement trap hides the 
 
 - **Hamel Husain** — the substantive speaker. Independent AI-evaluation educator; co-instructor of the Maven AI evals course. First wiki appearance — listed in this source page's body; entity page deferred until a second source cites him (per [§Author-entity promotion](../../CLAUDE.md#author-entity-promotion)).
 - **Peter Yang** — host. Product-management YouTube/podcast channel. First wiki appearance as channel; entity page deferred.
-- **[[Nurture Boss]]** — the worked-example AI agent (property-management assistant). First wiki appearance — deferred entity promotion (single source).
-- **[[Braintrust]]** — the observability tool Nurture Boss uses (Husain's anonymised data lives there). Also the vendor anchor in [[2025-06-27-guthrie-braintrust-evals-101-ai-engineer-worlds-fair|Guthrie 2025]]. Second source citing Braintrust — eligible for entity promotion per the second-source rule.
-- **Dangling** (single-source mentions, deferred): [[Arize]], [[LangSmith]], **Maven**, **Ankur Goel** (Braintrust CEO, mentioned in Guthrie 2025 too — also second-source-eligible).
+- **Nurture Boss** — the worked-example AI agent (property-management assistant). First wiki appearance — deferred entity promotion (single source).
+- **Braintrust** — the observability tool Nurture Boss uses (Husain's anonymised data lives there). Also the vendor anchor in [[2025-06-27-guthrie-braintrust-evals-101-ai-engineer-worlds-fair|Guthrie 2025]]. Second source citing Braintrust — eligible for entity promotion per the second-source rule.
+- **Dangling** (single-source mentions, deferred): Arize, LangSmith, **Maven**, **Ankur Goel** (Braintrust CEO, mentioned in Guthrie 2025 too — also second-source-eligible).
 
 Body-wikilink coverage for `relationships:` is satisfied through this section and the Convergence table above.
 

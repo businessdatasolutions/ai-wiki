@@ -25,7 +25,7 @@ This entity page covers the research organisation; for product-line discussion (
 
 ## Notable people (in this wiki)
 
-- [[Yossi Matias]] *(dangling — co-author on the durable skills paper; promote on 2nd-source coverage)* — VP and Head of Google Research.
+- Yossi Matias *(dangling — co-author on the durable skills paper; promote on 2nd-source coverage)* — VP and Head of Google Research.
 - **Nicole Forsgren** *(dangling — first-mention; high probability of recurrence given DORA stature and *Accelerate* authorship)* — lead, Developer Intelligence team; DORA founder.
 - **Andrew Macvean** *(dangling — first-mention)* — lead, Developer Intelligence team.
 - ~40 other co-authors of the Globerson et al. paper, currently listed in the source-page frontmatter but not promoted to individual entity pages (single-source coverage).

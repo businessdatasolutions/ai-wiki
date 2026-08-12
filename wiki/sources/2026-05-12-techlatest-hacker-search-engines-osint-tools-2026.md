@@ -3,7 +3,7 @@ type: source
 kind: article
 title: "The Ultimate Guide to Hacker Search Engines & OSINT Tools in 2026"
 author: ["TechLatest.Net"]
-publisher: "[[OSINT Team]]"
+publisher: "OSINT Team"
 section: "OSINT Team (Medium publication)"
 url: ""
 date_published: 2026-05-12
@@ -30,7 +30,7 @@ relationships:
 
 ## TL;DR
 
-A taxonomy/catalogue Medium piece by **TechLatest.Net** in the [[OSINT Team]] publication (May 2026). Organises the modern [[osint|OSINT]] tooling landscape into **five categories spanning ~18 named platforms**, plus a **canonical five-step recon workflow** that combines them, plus an emerging-category claim around **AI-augmented OSINT** that is the one current bridge from this corpus into the wiki's existing [[ai-agents]] / [[agent-harness]] thread.
+A taxonomy/catalogue Medium piece by **TechLatest.Net** in the OSINT Team publication (May 2026). Organises the modern [[osint|OSINT]] tooling landscape into **five categories spanning ~18 named platforms**, plus a **canonical five-step recon workflow** that combines them, plus an emerging-category claim around **AI-augmented OSINT** that is the one current bridge from this corpus into the wiki's existing [[ai-agents]] / [[agent-harness]] thread.
 
 The piece is the wiki's **canonical taxonomy anchor for OSINT platforms** — the catalogue side of the [[attack-surface-management]] story. Paired with [[2026-04-10-khan-osint-information-gathering-like-a-hacker|Khan 2026]]: Khan walks one organisation through the workflow narratively; TechLatest catalogues the platforms that industrialise that workflow at scale.
 
@@ -92,7 +92,7 @@ The article makes the standard practitioner case: OSINT is legal by construction
 - Bridge into existing wiki thread (via the AI-Powered OSINT section): [[ai-agents]], [[agent-harness]] — typed as `uses` rather than `supports`, since the article's AI claim is taxonomic-vendor-narrative rather than empirical.
 - **Dangling** (single-source mention, deferred per author-entity rule):
   - **TechLatest.Net** (author/brand) — Medium account, "TechLatest.net delivers cutting-edge tech reviews, tutorials, and insights."
-  - **[[OSINT Team]]** (publisher) — shared with Khan piece, second source citing → still single-instance as a publication; defer entity page until a third citation.
+  - **OSINT Team** (publisher) — shared with Khan piece, second source citing → still single-instance as a publication; defer entity page until a third citation.
   - **Troy Hunt** (creator of HIBP, single mention).
   - **Platforms named, all single-source so deferred as products**: Shodan, Censys, FOFA, ZoomEye, Hunter, Have I Been Pwned, DeHashed, URLScan (urlscan.io), Grep.app, crt.sh, Vulners, GreyNoise, FullHunt, WiGLE, Intelligence X, LeakIX, SecurityTrails, SpiderFoot.
 

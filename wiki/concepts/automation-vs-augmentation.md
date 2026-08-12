@@ -16,8 +16,8 @@ relationships:
   - type: supports
     target: ai-benchmarks
     via: "Narayanan's release-decision frame — reliability threshold required for automation deployment exceeds that for augmentation deployment; reliability is the gating dimension benchmarks have under-measured"
-quality_score: 0.93
-quality_notes: ['1 near-empty section(s)', '3 broken body wikilink(s)']
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # Automation vs. Augmentation
@@ -53,7 +53,7 @@ Anand-Wu's strategic recommendation: deploy aggressively in the no-regrets zone 
 
 ### 2. Task design ([[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]])
 
-[[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]] frames the distinction as a question of **agency and oversight**: *"It's not about replacing roles. It's about where we can give agency, with some human oversight and governance, to improve tasks within a workflow."* — [[Liz Centoni]], Cisco.
+[[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]] frames the distinction as a question of **agency and oversight**: *"It's not about replacing roles. It's about where we can give agency, with some human oversight and governance, to improve tasks within a workflow."* — Liz Centoni, Cisco.
 
 The chatbot → agent → multi-agent progression is a progression along the automation axis: more agency to AI, less direct human intervention.
 
@@ -165,7 +165,7 @@ Caveat: Nishar-Nohria explicitly warn that the choice of model is **not primaril
 
 ### 10. Reliability is the gating dimension for the automation/augmentation cut ([[2026-03-20-huggingface-agentic-evaluations-workshop|Narayanan / Princeton, HF Agentic Evals Workshop 2026]])
 
-[[Arvind Narayanan|Narayanan]]'s release-decision frame **operationalises** the automation-vs-augmentation cut at the deployment-readiness layer:
+Narayanan's release-decision frame **operationalises** the automation-vs-augmentation cut at the deployment-readiness layer:
 
 > *"In a coding agent, many of these errors are maybe not too bad because the programmer is still in the loop and they're reviewing the code. But in a customer service agent, you want the agent to autonomously handle customers. These are much worse errors. Reliability really matters in automation tasks as opposed to augmentation tasks."*
 
@@ -392,7 +392,7 @@ This sits in useful tension with the same source's **call-center example** — a
 
 ## A third independent citation of "someone using AI will," echoed customer-side ([[2025-12-02-allen-brozovich-davis-aws-reinvent-advanced-team-structures|AWS re:Invent, December 2025]])
 
-Scott Galloway's *"AI won't take your job, somebody using AI will"* is now cited across all three editions of the AWS Enterprise Strategy "advanced team structures" talk franchise ([[2025-12-02-allen-brozovich-davis-aws-reinvent-advanced-team-structures|re:Invent, Dec 2025]], [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|London, May 2026]], [[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world|Sydney, Jun 2026]]). The re:Invent edition adds a **customer-side echo**: [[Danske Bank|Danske Bank]] CTO Richard Davis counters employee resistance ("why should I be using something that can replace me?") with the same reframe verbatim — *"GenAI won't necessarily replace your role, but people using GenAI potentially will."* Amazon's own internal asymmetric-resource-allocation framework (same source; see [[enterprise-ai-adoption]]) is a structural companion: strategic-differentiated work stays overwhelmingly human-judgment-led (~25% AI at most) while business-compliant, routine work skews heavily toward automation — an organizational-design instance of calibrating the automation/augmentation choice by work type rather than applying it uniformly.
+Scott Galloway's *"AI won't take your job, somebody using AI will"* is now cited across all three editions of the AWS Enterprise Strategy "advanced team structures" talk franchise ([[2025-12-02-allen-brozovich-davis-aws-reinvent-advanced-team-structures|re:Invent, Dec 2025]], [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|London, May 2026]], [[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world|Sydney, Jun 2026]]). The re:Invent edition adds a **customer-side echo**: Danske Bank CTO Richard Davis counters employee resistance ("why should I be using something that can replace me?") with the same reframe verbatim — *"GenAI won't necessarily replace your role, but people using GenAI potentially will."* Amazon's own internal asymmetric-resource-allocation framework (same source; see [[enterprise-ai-adoption]]) is a structural companion: strategic-differentiated work stays overwhelmingly human-judgment-led (~25% AI at most) while business-compliant, routine work skews heavily toward automation — an organizational-design instance of calibrating the automation/augmentation choice by work type rather than applying it uniformly.
 
 ## Automate first or right-shore first — a sequencing decision, not a stance ([[2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services|Heimes & Peters / McKinsey Talks Operations, August 2026]])
 

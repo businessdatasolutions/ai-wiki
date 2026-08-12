@@ -56,9 +56,9 @@ relationships:
 
 (YouTube description, [[DeepLearningAI]] channel — AI Dev 26 x SF conference talk.)
 
-A ~28:17 conference talk from the [[DeepLearningAI]] AI Dev 26 x San Francisco event, published 22 May 2026. Auto-generated English captions via yt-dlp fallback (the engagement-panel route timed out at 180s — recurring failure mode on ≥20-minute talks per [[CLAUDE|§Acquire failure modes]]). VTT rolling-window dedup applied; 331 segments.
+A ~28:17 conference talk from the [[DeepLearningAI]] AI Dev 26 x San Francisco event, published 22 May 2026. Auto-generated English captions via yt-dlp fallback (the engagement-panel route timed out at 180s — recurring failure mode on ≥20-minute talks per [§Acquire failure modes](../../CLAUDE.md)). VTT rolling-window dedup applied; 331 segments.
 
-**Speaker: Paul Everitt** — Developer Advocate at [[JetBrains]]. Python old-timer ("first Python meetup in 1994"). JetBrains' three-word pitch: *"Privately held. Profitable. European."* — *"25 years of doing this code intelligence stuff and developer productivity, we've seen some transitions before."*
+**Speaker: Paul Everitt** — Developer Advocate at JetBrains. Python old-timer ("first Python meetup in 1994"). JetBrains' three-word pitch: *"Privately held. Profitable. European."* — *"25 years of doing this code intelligence stuff and developer productivity, we've seen some transitions before."*
 
 The talk is **the wiki's first JetBrains-altitude practitioner call-to-arms on agentic engineering**, joining the [[2026-05-20-ng-deeplearningai-ai-dev-26-sf-future-of-software-engineering|Ng keynote]] and the same-day [[2026-05-22-khan-cline-deeplearningai-ai-dev-26-sf-evals-are-broken-use-them-anyway|Khan/Cline]] + [[2026-05-22-anthropic-evals-for-taste-hill-climbing-slide-generation-agent|Anthropic slide-gen]] talks in the AI Dev 26 SF conference cluster.
 
@@ -81,7 +81,7 @@ Five substantive contributions:
 
 Everitt's frame: *"You've been given the god box. What are you doing with the god box? Are you creating magnificent new solutions for your customers or are you just squeezing the profit margin?"* The cited *"27% of the work [at Anthropic] went to things that couldn't have been possible without the god box"* is the upper-bound counter-anchor.
 
-**2. The *agentic engineering = build the thing that builds the thing* reframe**. Everitt's central thesis is that *"more code, fewer people"* is the wrong frame; the right frame is *"agentic engineering"* — the OpenAI *Harness Engineering* article's *"we build the thing that builds the thing"* + Simon Willison's *dark factory pattern* (lights off in the factory because no humans are in it; humans are *outside* building the factory). The human is the bottleneck — *"don't eliminate the human, augment the human."* The reframe credits Karpathy explicitly: *"Vibe coding created around 14-15 months ago by Karpathy and then he's like 'okay clean up — what I meant was agentic engineering.' So he coined the phrase a few months ago and it seems to have caught on a little bit."* The reframe also explicitly invokes [[Grady Booch]] (creator of UML, *"third golden age of software engineering"* podcast): *"isn't this just software engineering? ... coding was never really the big thing."* + the [[Modern Software Engineering|Dave Farley]] reference.
+**2. The *agentic engineering = build the thing that builds the thing* reframe**. Everitt's central thesis is that *"more code, fewer people"* is the wrong frame; the right frame is *"agentic engineering"* — the OpenAI *Harness Engineering* article's *"we build the thing that builds the thing"* + Simon Willison's *dark factory pattern* (lights off in the factory because no humans are in it; humans are *outside* building the factory). The human is the bottleneck — *"don't eliminate the human, augment the human."* The reframe credits Karpathy explicitly: *"Vibe coding created around 14-15 months ago by Karpathy and then he's like 'okay clean up — what I meant was agentic engineering.' So he coined the phrase a few months ago and it seems to have caught on a little bit."* The reframe also explicitly invokes [[Grady Booch]] (creator of UML, *"third golden age of software engineering"* podcast): *"isn't this just software engineering? ... coding was never really the big thing."* + the Dave Farley reference.
 
 **3. The nine-element agentic-engineering practice taxonomy** — the central practitioner contribution.
 
@@ -119,7 +119,7 @@ This makes the source a useful **single-talk index into the AI Dev 26 SF confere
 
 Three sub-corpus roles for this source:
 
-1. **The wiki's first JetBrains-vendor-altitude anchor on agentic engineering.** JetBrains has not previously appeared as a substantive entity in the wiki. The *25-years-of-developer-tools + Python-since-1994* vantage is distinct from the model-vendor altitudes ([[Anthropic]] / [[OpenAI]]) and the IDE-extension-startup altitudes ([[Cline]] / [[Cursor]]).
+1. **The wiki's first JetBrains-vendor-altitude anchor on agentic engineering.** JetBrains has not previously appeared as a substantive entity in the wiki. The *25-years-of-developer-tools + Python-since-1994* vantage is distinct from the model-vendor altitudes ([[Anthropic]] / [[OpenAI]]) and the IDE-extension-startup altitudes ([[Cline]] / Cursor).
 
 2. **The wiki's first explicit *nine-element practitioner-discipline-altitude treatment of agentic engineering*.** Convergent with [[2026-05-15-osmani-agent-harness-engineering|Osmani]] (harness layer only) and [[2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering|Karpathy]] (the coining moment) but more taxonomically complete. Useful as anchor for the [[agentic-engineering]] concept page.
 
@@ -147,7 +147,7 @@ The W&W tagging (10 cells — comparable to [[2026-05-22-khan-cline-deeplearning
 - [[LangChain]] — *if you don't own your harness you don't own your memory* citation.
 - [[Pydantic]] — Monty + LogFire.
 
-**Dangling first-mentions (single-source, deferred per [[CLAUDE|§Lifecycle author-entity promotion]]):**
+**Dangling first-mentions (single-source, deferred per [§Lifecycle author-entity promotion](../../CLAUDE.md)):**
 - Paul Everitt — JetBrains developer advocate.
 - JetBrains — developer-tools company, European, profitable, privately held.
 - Grady Booch — UML / *Gang of Four* co-author / *third golden age of software engineering* podcast.

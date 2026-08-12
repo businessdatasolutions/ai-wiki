@@ -49,7 +49,7 @@ relationships:
 
 > HelloPrint draaide in 2025 zo'n 80 miljoen euro omzet, maar oprichter Hans Scheffer besloot zijn bedrijf toch opnieuw uit te vinden. Met AI als uitgangspunt bouwt hij het printplatform tot een nieuwe organisatie. *'Alles wat wij kennen rondom arbeid gaat veranderen.'*
 
-(Article standfirst, [[De Ondernemer]] — DPG Media, journalist Tijmen Koppelaar.)
+(Article standfirst, De Ondernemer — DPG Media, journalist Tijmen Koppelaar.)
 
 A ~7-minute Dutch-language interview-article published by **De Ondernemer** (a Dutch entrepreneurship publication owned by **DPG Media**, the largest Belgian-Dutch media group) on 27 May 2026. Author **Tijmen Koppelaar**. Subject: **Hans Scheffer**, founder and CEO of **HelloPrint** — a Dutch print platform that did ~**€80M revenue in 2025** with operations in the Netherlands and **Valencia**, Spain.
 
@@ -114,7 +114,7 @@ The W&W tagging (9 cells) is among the broadest in the wiki — comparable to [[
 **Entities (already promoted, source_count bumped):**
 - *(none in this ingest — all mentioned entities are first-mention)*
 
-**Dangling first-mentions (single-source, deferred per [[CLAUDE|§Lifecycle author-entity promotion]]):**
+**Dangling first-mentions (single-source, deferred per [§Lifecycle author-entity promotion](../../CLAUDE.md)):**
 - **Hans Scheffer** — founder/CEO of HelloPrint; ex-print-platform-founder turning AI-native.
 - **HelloPrint** — Dutch print platform; ~€80M revenue 2025; operations in the Netherlands and Valencia, Spain; €1B revenue *stip op de horizon*.
 - **Tijmen Koppelaar** — journalist at De Ondernemer.
@@ -153,4 +153,4 @@ The W&W tagging (9 cells) is among the broadest in the wiki — comparable to [[
 
 ## Reading scope
 
-Full article body (pages 1-9 of the 14-page PDF) read end-to-end during ingest. Six substantive contributions surfaced (technology-leading / people-directing reversal; *denk vanuit dag nul* day-zero rebuild thought experiment; *AI-brein* as organisational foundation; Chief AI Officer / CTO as missing MKB role; HelloPrint customer-service 100 → 18 quantified worked example; conscious revenue sacrifice for long-term winning). *Topsport-team* culture framing captured. House of Founders peer-learning anchor captured with co-attendee names. €80M → €1B *stip op de horizon* + fifty-year company-vision closing captured. Three single-source-deferred concept-page candidates flagged: *AI-brein as organisational foundation*, *day-zero rebuild as transformation method*, *MKB Chief AI Officer as missing role*. Companion-article references at the article end (House of Founders / Ron Simpson / Joep Verbunt) noted as plausible adjacent ingest targets if a Dutch-MKB-AI-transformation thread emerges. Original Dutch quotations preserved throughout the body for provenance — see [[CLAUDE|§Citations beat assertions]].
+Full article body (pages 1-9 of the 14-page PDF) read end-to-end during ingest. Six substantive contributions surfaced (technology-leading / people-directing reversal; *denk vanuit dag nul* day-zero rebuild thought experiment; *AI-brein* as organisational foundation; Chief AI Officer / CTO as missing MKB role; HelloPrint customer-service 100 → 18 quantified worked example; conscious revenue sacrifice for long-term winning). *Topsport-team* culture framing captured. House of Founders peer-learning anchor captured with co-attendee names. €80M → €1B *stip op de horizon* + fifty-year company-vision closing captured. Three single-source-deferred concept-page candidates flagged: *AI-brein as organisational foundation*, *day-zero rebuild as transformation method*, *MKB Chief AI Officer as missing role*. Companion-article references at the article end (House of Founders / Ron Simpson / Joep Verbunt) noted as plausible adjacent ingest targets if a Dutch-MKB-AI-transformation thread emerges. Original Dutch quotations preserved throughout the body for provenance — see [§Citations beat assertions](../../CLAUDE.md).

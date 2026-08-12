@@ -15,7 +15,7 @@ relationships:
 
 # Amy Webb
 
-Quantitative futurist; CEO of [[Future Today Strategy Group]] (FTSG, formerly Future Today Institute); professor of strategic foresight at [[NYU Stern]] School of Business.
+Quantitative futurist; CEO of [[Future Today Strategy Group]] (FTSG, formerly Future Today Institute); professor of strategic foresight at NYU Stern School of Business.
 
 ## Books referenced in this wiki
 

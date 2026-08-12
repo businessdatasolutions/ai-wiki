@@ -121,7 +121,7 @@ The W&W tagging (9 cells — same breadth as [[2026-05-27-scheffer-de-ondernemer
 **Entities (already promoted, source_count bumped):**
 - [[McKinsey & Company]] — publisher; source_count 8 → 9.
 
-**Dangling first-mentions (single-source, deferred per [[CLAUDE|§Lifecycle author-entity promotion]]):**
+**Dangling first-mentions (single-source, deferred per [§Lifecycle author-entity promotion](../../CLAUDE.md)):**
 - **Jared Moon** — Senior Partner, McKinsey London office. Lead author.
 - **Rory Walsh** — Partner, McKinsey Dublin office.
 - **Vito Di Leo** — Partner, McKinsey Zurich office.

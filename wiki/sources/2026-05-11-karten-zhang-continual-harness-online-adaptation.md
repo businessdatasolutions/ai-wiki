@@ -115,19 +115,19 @@ The wiki has been carrying three primary-source ingest open questions on [[conce
 
 ## Named entities (this ingest)
 
-- [[Seth Karten]] — Princeton; lead author + co-equal contributor; correspondence author. Author of the upstream [PokeAgent Challenge benchmark](https://arxiv.org/abs/2603.15563) (Karten et al., arXiv:2603.15563, 2026 — reference [7]) and the Pokéchamp minimax language agent (arXiv:2503.04094 — reference [6]). **First mention. Dangling.**
-- [[Joel Zhang]] — ARISE Foundation; co-equal contributor. **First mention. Dangling.**
-- [[Tersoo Upaa Jr]] — Princeton. **First mention. Dangling.**
-- [[Ruirong Feng]] — Princeton. **First mention. Dangling.**
-- [[Wenzhe Li]] — Princeton. **First mention. Dangling.**
-- [[Chengshuai Shi]] — Princeton. **First mention. Dangling.**
-- [[Chi Jin]] — Princeton (faculty; co-author on multiple Karten papers). **First mention. Dangling.**
-- [[Kiran Vodrahalli]] — Google DeepMind. **First mention. Dangling.**
-- **Affiliations**: [[Princeton University]] (1) — first wiki source from Princeton CS; [[ARISE Foundation]] (2) — first mention, dangling; [[Google DeepMind]] (3) — already in wiki ecosystem via [[Google Research]]; Princeton Language and Intelligence (PLI) named in acknowledgements.
+- Seth Karten — Princeton; lead author + co-equal contributor; correspondence author. Author of the upstream [PokeAgent Challenge benchmark](https://arxiv.org/abs/2603.15563) (Karten et al., arXiv:2603.15563, 2026 — reference [7]) and the Pokéchamp minimax language agent (arXiv:2503.04094 — reference [6]). **First mention. Dangling.**
+- Joel Zhang — ARISE Foundation; co-equal contributor. **First mention. Dangling.**
+- Tersoo Upaa Jr — Princeton. **First mention. Dangling.**
+- Ruirong Feng — Princeton. **First mention. Dangling.**
+- Wenzhe Li — Princeton. **First mention. Dangling.**
+- Chengshuai Shi — Princeton. **First mention. Dangling.**
+- Chi Jin — Princeton (faculty; co-author on multiple Karten papers). **First mention. Dangling.**
+- Kiran Vodrahalli — Google DeepMind. **First mention. Dangling.**
+- **Affiliations**: Princeton University (1) — first wiki source from Princeton CS; ARISE Foundation (2) — first mention, dangling; [[Google DeepMind]] (3) — already in wiki ecosystem via [[Google Research]]; Princeton Language and Intelligence (PLI) named in acknowledgements.
 
 **Reference list entities** (entities the paper cites that the wiki may want to track):
 
-- **K. Khattab + DSPy team** — co-author on Meta-Harness (reference [10]). [[Omar Khattab]] is a known DSPy/Databricks researcher. **First wiki mention with verifiable arxiv ID.** Dangling pending direct ingest of arXiv:2603.28052.
+- **K. Khattab + DSPy team** — co-author on Meta-Harness (reference [10]). Omar Khattab is a known DSPy/Databricks researcher. **First wiki mention with verifiable arxiv ID.** Dangling pending direct ingest of arXiv:2603.28052.
 - **Y. Lee, R. Nair, Q. Zhang, K. Lee, C. Finn** — Meta-Harness co-authors. **Dangling.**
 - **P. Steinberger** — OpenClaw author (reference [19]; arXiv-equivalent: github.com/psteinb/openclaw, originally released as Clawdbot, November 2025). **First wiki mention with concrete project link.** Dangling pending second mention.
 - **Nous Research** — Hermes agent (reference [13]). **First wiki mention.** Dangling.

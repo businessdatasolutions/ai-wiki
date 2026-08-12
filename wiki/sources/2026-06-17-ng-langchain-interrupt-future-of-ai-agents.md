@@ -103,4 +103,4 @@ A **~32-minute fireside chat** at **Interrupt '26**, [[LangChain]]'s agent confe
 
 ## Source-quality note
 
-Transcript fetched via the [[youtube-transcript-skill]] (Playwright/DOM route); the video carries **human-curated (manual) English captions** (`kind: manual`) alongside an ASR track, so transcript fidelity is high. The fetch returned the transcript **doubled** (the body repeats from ~0:00 a second time); the duplicate tail was disregarded at ingest. Transcript provenance does not feed confidence per [§Lifecycle].
+Transcript fetched via the [youtube-transcript-skill](../../.claude/skills/youtube-transcript-skill/SKILL.md) (Playwright/DOM route); the video carries **human-curated (manual) English captions** (`kind: manual`) alongside an ASR track, so transcript fidelity is high. The fetch returned the transcript **doubled** (the body repeats from ~0:00 a second time); the duplicate tail was disregarded at ingest. Transcript provenance does not feed confidence per [§Lifecycle].

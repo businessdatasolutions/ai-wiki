@@ -3,7 +3,7 @@ type: entity
 kind: org
 aliases: ["Harvard Business Review", "HBR"]
 tags: [publisher, business-magazine, management-research, harvard, hbr-ideacast, podcast]
-parent: "[[Harvard Business School]]"
+parent: "Harvard Business School"
 website: "https://hbr.org"
 confidence: 0.90
 last_confirmed: "2026-06-25"
@@ -13,7 +13,7 @@ source_count: 18
 
 # Harvard Business Review
 
-**Harvard Business Review** (HBR) is the management magazine published by Harvard Business Publishing, an affiliate of [[Harvard Business School]]. Founded 1922. Long-form articles aimed at executives and managers, blending academic research with practitioner perspectives.
+**Harvard Business Review** (HBR) is the management magazine published by Harvard Business Publishing, an affiliate of Harvard Business School. Founded 1922. Long-form articles aimed at executives and managers, blending academic research with practitioner perspectives.
 
 A primary publishing venue for academic strategy and management work intended to reach C-suite readers.
 
@@ -26,7 +26,7 @@ HBR sources span both the print magazine (with `hbr_reprint` codes) and HBR.org 
 | Article | Authors | Reprint | Topic |
 |---|---|---|---|
 | [[2026-04-28-anand-wu-genai-playbook\|The Gen AI Playbook for Organizations]] | [[Bharat N. Anand]], [[Andy Wu]] | R2506K | Strategy: where to deploy GenAI today |
-| [[2026-04-28-werner-lebrun-octopus-organization\|Become an Octopus Organization]] | [[Jana Werner]], [[Phil Le-Brun]] | R2506C | Change management: org adaptability |
+| [[2026-04-28-werner-lebrun-octopus-organization\|Become an Octopus Organization]] | Jana Werner, Phil Le-Brun | R2506C | Change management: org adaptability |
 
 **Print magazine — earlier issues:**
 
@@ -57,7 +57,7 @@ Partner Content is a paid placement: a sponsor (named at the top of the article)
 
 | Article | Authors | Sponsor | Date | Topic |
 |---|---|---|---|---|
-| [[2026-02-09-ross-schneider-adaptability\|Resilience Won't Save Your Organization. Adaptability Will]] | [[Mike James Ross]], [[Greig Schneider]] | [[Egon Zehnder]] | 9 Feb 2026 | Leadership disposition + hiring criteria + personal practice for continuous-change adaptability; 1,200-CEO survey (92% agreement) |
+| [[2026-02-09-ross-schneider-adaptability\|Resilience Won't Save Your Organization. Adaptability Will]] | Mike James Ross, Greig Schneider | Egon Zehnder | 9 Feb 2026 | Leadership disposition + hiring criteria + personal practice for continuous-change adaptability; 1,200-CEO survey (92% agreement) |
 
 HBR articles in the wiki use this convention: source `kind: article`. Print pieces include an `hbr_reprint` field; digital pieces use `journal_volume: "HBR.org Digital, <date>"`; partner-content pieces use `journal_volume: "HBR.org Partner Content, <date>"` and `section: "Partner Content from <sponsor>"`. **HBR IdeaCast** episodes use `author: ["Harvard Business Review"]` per the [video source-page convention](../../CLAUDE.md#source-page-conventions-specific-to-videos); their `kind:` depends on the channel of acquisition — `kind: video` when the episode was simulcast on the HBR YouTube channel and ingested via the video-transcript pipeline (e.g. [[2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting|Sternfels 2026]]), `kind: podcast` when the episode is audio-only on HBR.org / Apple Podcasts / Spotify and ingested from a user-supplied transcript (e.g. [[2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai|Storoni 2026]] — the wiki's first `kind: podcast` source).
 

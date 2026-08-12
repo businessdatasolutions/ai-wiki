@@ -34,9 +34,9 @@ relationships:
 >
 > For all lectures, slides, and lab materials: http://introtodeeplearning.com
 
-(Channel description, [[Alexander Amini]].)
+(Channel description, Alexander Amini.)
 
-A 51:48 lecture from **MIT 6.S191** (Introduction to Deep Learning), **2026 Edition**, by **Doug Blank** (Head of Research at [[Comet ML]]). Published 11 May 2026 on the [[Alexander Amini]] channel (Amini co-organizes the course with Ava Soleimany). ASR caption track; no chapters. **The wiki's first MIT 6.S191 source** — Blank's third year as a guest lecturer in this course.
+A 51:48 lecture from **MIT 6.S191** (Introduction to Deep Learning), **2026 Edition**, by **Doug Blank** (Head of Research at Comet ML). Published 11 May 2026 on the Alexander Amini channel (Amini co-organizes the course with Ava Soleimany). ASR caption track; no chapters. **The wiki's first MIT 6.S191 source** — Blank's third year as a guest lecturer in this course.
 
 **The course's lineage anchor**: Blank notes *"2017 was a foundational year for this class. It was the first time that this course was offered by our illustrious leaders — and they've been teaching the deep learning course for the last nine years."* MIT 6.S191's coinciding-with-the-transformer-year origin (2017) makes it the wiki's first **course-lifecycle ingest aligned with the modern-deep-learning lineage**.
 

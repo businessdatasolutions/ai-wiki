@@ -64,7 +64,7 @@ The opposite posture — what the article calls the AI-transformation mindset �
 
 **Lowe's case**: prioritization framework based on technology maturity, use-case size, readiness for change, and **dimensional risk** (including brand risk). Vision settled on as "democratizing expertise across the organization" — operationalized as two AI interfaces launched March 2025: **Mylow** (online customers) and **Mylow Companion** (in-store associates).
 
-> "How customers shop with us, how we sell, how we work" — Lowe's broader framework, per [[Chandhu Nair]] (SVP of stores, data, AI, and innovation).
+> "How customers shop with us, how we sell, how we work" — Lowe's broader framework, per Chandhu Nair (SVP of stores, data, AI, and innovation).
 
 #### 2. Reimagine workflows across the organization
 

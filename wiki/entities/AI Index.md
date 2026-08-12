@@ -29,7 +29,7 @@ relationships:
 
 # AI Index
 
-The **AI Index** is an independent initiative at [[Stanford HAI]] that produces an annual report on the state of artificial intelligence. Conceived in 2017 within the [[One Hundred Year Study on AI]] (AI100). The 2026 edition is the 9th annual.
+The **AI Index** is an independent initiative at [[Stanford HAI]] that produces an annual report on the state of artificial intelligence. Conceived in 2017 within the One Hundred Year Study on AI (AI100). The 2026 edition is the 9th annual.
 
 Mission (per the report): equip policymakers, journalists, executives, researchers, and the public with **accurate, rigorously validated, globally sourced data** on AI's development, adoption, and impact.
 
@@ -63,7 +63,7 @@ In the 2025 edition, Science and Medicine were combined into a single chapter; t
 
 - **Chair**: [[Yolanda Gil]] (USC, Information Sciences Institute)
 - **Co-chair**: [[Raymond Perrault]] (SRI International)
-- **Members**: [[Russ Altman]] (Stanford), [[Carla Brodley]] (Northeastern), [[Erik Brynjolfsson]] (Stanford), [[Jack Clark]] (Anthropic, OECD), [[Virginia Dignum]] (Umeå), [[Vipin Kumar]] (U Minnesota), [[James Landay]] (Stanford), [[Terah Lyons]] (JPMorgan Chase), [[James Manyika]] (Google, U Oxford), [[Juan Carlos Niebles]] (Stanford, Salesforce), [[Vanessa Parli]] (Stanford), [[Yoav Shoham]] (Stanford, AI21 Labs), [[Elham Tabassi]] (Brookings), [[Russell Wald]] (Stanford), [[Toby Walsh]] (UNSW Sydney), [[Dan Weld]] (U Washington)
+- **Members**: Russ Altman (Stanford), Carla Brodley (Northeastern), [[Erik Brynjolfsson]] (Stanford), [[Jack Clark]] (Anthropic, OECD), Virginia Dignum (Umeå), Vipin Kumar (U Minnesota), James Landay (Stanford), [[Terah Lyons]] (JPMorgan Chase), [[James Manyika]] (Google, U Oxford), [[Juan Carlos Niebles]] (Stanford, Salesforce), [[Vanessa Parli]] (Stanford), [[Yoav Shoham]] (Stanford, AI21 Labs), Elham Tabassi (Brookings), [[Russell Wald]] (Stanford), Toby Walsh (UNSW Sydney), Dan Weld (U Washington)
 - **Editor-in-Chief**: [[Sha Sajadieh]] (Stanford)
 - **Research Manager**: [[Loredana Fattorini]] (Stanford)
 
@@ -71,23 +71,23 @@ In the 2025 edition, Science and Medicine were combined into a single chapter; t
 
 - **Chair role flipped**: [[Yolanda Gil]] moved from chair-elect to chair; [[Raymond Perrault]] from chair to co-chair.
 - **New EiC**: [[Sha Sajadieh]] replaces [[Nestor Maslej]] (Maslej remains an active contributor in 2026).
-- **Joined**: [[Russ Altman]], [[Carla Brodley]], [[Virginia Dignum]], [[Vipin Kumar]], [[James Landay]], [[Elham Tabassi]], [[Dan Weld]].
-- **Departed**: [[John Etchemendy]] (Stanford), [[Katrina Ligett]] (Hebrew University).
+- **Joined**: Russ Altman, Carla Brodley, Virginia Dignum, Vipin Kumar, James Landay, Elham Tabassi, Dan Weld.
+- **Departed**: John Etchemendy (Stanford), Katrina Ligett (Hebrew University).
 
 ## Data partners (2026 edition)
 
-[[Center for Research on Foundation Models]], CSTA, Digital Policy Alert, [[Epoch AI]], [[ECEP]] (Expanding Computing Education Pathways), GitHub, [[International Federation of Robotics]] (IFR), Kapor Foundation, [[Lightcast]], LinkedIn, [[McKinsey & Company]], RAISE Health, [[Schmidt Sciences]] *(new)*, [[Zeki]].
+Center for Research on Foundation Models, CSTA, Digital Policy Alert, Epoch AI, ECEP (Expanding Computing Education Pathways), GitHub, International Federation of Robotics (IFR), Kapor Foundation, Lightcast, LinkedIn, [[McKinsey & Company]], RAISE Health, [[Schmidt Sciences]] *(new)*, Zeki.
 
 ## Supporting funders (2026 edition)
 
-Google, NSF, [[OpenAI]], Open Philanthropy, [[Quid]], **[[Infosys]]** *(new)*.
+Google, NSF, [[OpenAI]], Open Philanthropy, Quid, **Infosys** *(new)*.
 
 ## Methodological notes
 
 - The report uses external surveys (notably [[McKinsey & Company]]'s Global AI Survey for adoption data) rather than original surveys for most adoption and use-case data. When citing AI Index adoption numbers, the underlying instrument is typically McKinsey's, not a Stanford instrument.
 - AI tooling acknowledgement (2026): ChatGPT and Claude used to refine and copy-edit drafts; all images generated with AI (Johanna Friedman 2026, Gemini 3.1 / Gemini 3). The 2025 edition disclosed Claude/ChatGPT for copy-editing only.
 - License: CC BY-ND 4.0 (no derivatives). Public data and chart files released alongside the report on Google Drive; Global AI Vibrancy Tool covers 36 countries (up from ~30 in 2025).
-- Notable-models data partner: [[Epoch AI]]. Year-over-year counts may differ as new/historic models are added retroactively.
+- Notable-models data partner: Epoch AI. Year-over-year counts may differ as new/historic models are added retroactively.
 
 ## Mentioned in
 

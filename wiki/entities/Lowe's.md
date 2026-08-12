@@ -22,9 +22,9 @@ U.S. home-improvement retailer. Partnered with [[OpenAI]] to launch two AI inter
 - Online conversion rate **more than doubles** when customers engage with Mylow.
 - Customer satisfaction scores rise **+200 basis points** when associates use Mylow Companion to assist in-aisle.
 - Vision: "democratizing expertise across the organization" — scaling expert home-improvement knowledge to every online visitor and in-store associate.
-- Internal framework: "How customers shop with us, how we sell, how we work" — per [[Chandhu Nair]], SVP of stores, data, AI, and innovation.
+- Internal framework: "How customers shop with us, how we sell, how we work" — per Chandhu Nair, SVP of stores, data, AI, and innovation.
 
-## Prioritization criteria used (per [[Chandhu Nair]])
+## Prioritization criteria used (per Chandhu Nair)
 
 - Maturity of the technology
 - Size of the use cases

@@ -15,7 +15,7 @@ relationships:
 
 # Yolanda Gil
 
-Researcher at the **Information Sciences Institute, University of Southern California**. Former president of [[AAAI]] (Association for the Advancement of Artificial Intelligence).
+Researcher at the **Information Sciences Institute, University of Southern California**. Former president of AAAI (Association for the Advancement of Artificial Intelligence).
 
 Serves on the [[AI Index]] Steering Committee:
 - **2025 edition**: Chair-elect (under chair [[Raymond Perrault]]).

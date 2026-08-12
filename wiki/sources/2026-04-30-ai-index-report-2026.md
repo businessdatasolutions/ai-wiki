@@ -36,11 +36,11 @@ This page summarizes the **front matter and the 15 Top Takeaways**; per-chapter 
 - **Editorial leadership**:
   - **Co-chairs**: [[Yolanda Gil]] (USC, ISI) — *new chair*, was chair-elect in 2025; [[Raymond Perrault]] (SRI International) — was chair in 2025, now co-chair.
   - **Editor-in-Chief**: [[Sha Sajadieh]] (Stanford) — *replaces* [[Nestor Maslej]] who led the 2025 edition (Maslej remains a contributor).
-  - **Steering Committee additions**: [[Vipin Kumar]] (U Minnesota), [[Dan Weld]] (U Washington), [[Elham Tabassi]] (Brookings).
+  - **Steering Committee additions**: Vipin Kumar (U Minnesota), Dan Weld (U Washington), Elham Tabassi (Brookings).
   - **Departures from steering committee** vs 2025: John Etchemendy (Stanford), Katrina Ligett (Hebrew U).
-- **New supporting partner**: [[Infosys]]; remaining: Google, NSF, OpenAI, Open Philanthropy, Quid.
+- **New supporting partner**: Infosys; remaining: Google, NSF, OpenAI, Open Philanthropy, Quid.
 - **New analytics/research partner**: [[Schmidt Sciences]] (collaborated on Medicine chapter).
-- **Same data partners as 2025**, plus [[Zeki]] (was already there, may have been newer).
+- **Same data partners as 2025**, plus Zeki (was already there, may have been newer).
 
 ## The 15 Top Takeaways
 
@@ -174,7 +174,7 @@ Chapters 2 (Technical Performance), 3 (Responsible AI), 4 (Economy), 5 (Science)
 ## Methodology notes
 
 - **AI tooling acknowledgement**: "The AI Index is written by a team of human researchers. The authors used ChatGPT and Claude to help refine and copy edit drafts. All images in this publication were generated with AI by Johanna Friedman (2026), Gemini 3.1 (W-Nanobanana2), Gemini 3 (W-Nanobanana Pro)." — visibly more AI-assistance disclosure than the 2025 edition.
-- **Notable models** dataset: still curated by [[Epoch AI]]; year-over-year counts may differ from prior reports as new/historic models are continually added.
+- **Notable models** dataset: still curated by Epoch AI; year-over-year counts may differ from prior reports as new/historic models are continually added.
 - **License**: **CC BY-ND 4.0** (no derivatives) — same as 2025.
 
 ## Quotes worth saving

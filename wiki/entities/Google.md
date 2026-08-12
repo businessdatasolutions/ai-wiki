@@ -41,7 +41,7 @@ Big-tech platform company; operating subsidiary of Alphabet. Within this wiki Go
 
 ## ML frameworks
 
-- **TensorFlow** — Google's open-source ML framework. Named in [[2025-05-17-turc-llms-low-precision-quantization-fundamentals|Turc 2025]] as having **built-in quantization support** alongside Meta's [[PyTorch]]; both abstract the integer-only-arithmetic / fixed-point-multiplication machinery from end-user model developers. *The framework-level companion to the Coral hardware-level edge-ML deployment story.*
+- **TensorFlow** — Google's open-source ML framework. Named in [[2025-05-17-turc-llms-low-precision-quantization-fundamentals|Turc 2025]] as having **built-in quantization support** alongside Meta's PyTorch; both abstract the integer-only-arithmetic / fixed-point-multiplication machinery from end-user model developers. *The framework-level companion to the Coral hardware-level edge-ML deployment story.*
 
 ## Platform / product engineering
 

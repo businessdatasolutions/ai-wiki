@@ -57,7 +57,7 @@ OKF is published with reference implementations at both ends, *"deliberately"* p
 
 ## What was actually ingested
 
-Full blog post, acquired via the [[../../CLAUDE|zotero-acquire]] channel (Zotero key `XRZZ9MTA`, collection `ai-wiki`). Zotero typed the item `webpage` with no PDF attachment, so the body is **Zotero-extracted text** (`fulltext_source: zotero-extracted`) — complete and clean here (the extraction captured the full article through the footer). The `date_published` was blank in the Zotero stub and recovered from the post body (*"June 12, 2026"*). No spec document or GitHub repo was ingested — only the announcement blog post; the v0.1 spec itself, the reference-implementation code, and the sample bundles are open follow-up targets.
+Full blog post, acquired via the [zotero-acquire](../../CLAUDE.md) channel (Zotero key `XRZZ9MTA`, collection `ai-wiki`). Zotero typed the item `webpage` with no PDF attachment, so the body is **Zotero-extracted text** (`fulltext_source: zotero-extracted`) — complete and clean here (the extraction captured the full article through the footer). The `date_published` was blank in the Zotero stub and recovered from the post body (*"June 12, 2026"*). No spec document or GitHub repo was ingested — only the announcement blog post; the v0.1 spec itself, the reference-implementation code, and the sample bundles are open follow-up targets.
 
 ## Why this matters to the wiki
 

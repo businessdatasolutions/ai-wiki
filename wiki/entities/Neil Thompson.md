@@ -10,9 +10,6 @@ last_confirmed: "2026-07-14"
 accessed_at: "2026-07-14"
 source_count: 2
 relationships:
-  - type: authored-by
-    target: David-Autor
-    via: "co-author of the Expertise NBER working paper and Schumpeter Lecture; David Autor is not yet a separate wiki entity page (single-source mention, deferred)"
 ---
 
 # Neil Thompson

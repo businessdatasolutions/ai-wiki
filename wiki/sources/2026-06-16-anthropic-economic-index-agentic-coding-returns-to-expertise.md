@@ -42,7 +42,7 @@ relationships:
 
 # Agentic coding and persistent returns to expertise
 
-The **agentic-coding installment of the [[Anthropic Economic Index]]**, published by **[[Anthropic]]** (16 June 2026), based on a privacy-preserving analysis of **~400,000 interactive [[agentic-engineering|Claude Code]] sessions from ~235,000 people, October 2025 – April 2026**. Authors: **[[Zoe Hitzig]]**, **[[Maxim Massenkoff]]**, **[[Eva Lyubich]]**, **[[Ryan Heller]]**, and **[[Peter McCrory]]**. It extends the program's earlier Claude Code autonomy work from *how autonomous* the agent is to *who decides what*, *who is doing the work*, and *whether it succeeds* — and frames coding as "a leading case" for where agentic knowledge work is headed.
+The **agentic-coding installment of the [[Anthropic Economic Index]]**, published by **[[Anthropic]]** (16 June 2026), based on a privacy-preserving analysis of **~400,000 interactive [[agentic-engineering|Claude Code]] sessions from ~235,000 people, October 2025 – April 2026**. Authors: **Zoe Hitzig**, **[[Maxim Massenkoff]]**, **[[Eva Lyubich]]**, **[[Ryan Heller]]**, and **[[Peter McCrory]]**. It extends the program's earlier Claude Code autonomy work from *how autonomous* the agent is to *who decides what*, *who is doing the work*, and *whether it succeeds* — and frames coding as "a leading case" for where agentic knowledge work is headed.
 
 ## Key findings
 
@@ -68,7 +68,7 @@ Anthropic frames the report as an early read on labor-market transitions: agenti
 
 ## What was actually ingested
 
-The full 18-page PDF. (Originally hand-acquired under the non-descriptive content-management name `CCEconReport-G.pdf`; re-acquired 2026-06-18 via the [[../../CLAUDE|zotero-acquire]] channel — Zotero key `N6KSNEQM` — which supplied the descriptive filename now recorded in `raw:` and consolidated the duplicate. Zotero mis-typed the item `journalArticle`; it is a research report, routing corrected to `raw/reports/`.) Figures 1–6 were read from their captions and surrounding text, not reproduced. The **Appendix** (classifier full text, validation results, regression details, task-estimator construction) is **published separately** ("Available here") and was not ingested; classifier-validation claims here rest on the body's summary. All classifiers use **Claude Sonnet 4.6** unless noted. The report excludes non-interactive / headless (`claude -p`) and third-party-IDE/SDK usage — "a substantial share of activity" the authors flag as future work.
+The full 18-page PDF. (Originally hand-acquired under the non-descriptive content-management name `CCEconReport-G.pdf`; re-acquired 2026-06-18 via the [zotero-acquire](../../CLAUDE.md) channel — Zotero key `N6KSNEQM` — which supplied the descriptive filename now recorded in `raw:` and consolidated the duplicate. Zotero mis-typed the item `journalArticle`; it is a research report, routing corrected to `raw/reports/`.) Figures 1–6 were read from their captions and surrounding text, not reproduced. The **Appendix** (classifier full text, validation results, regression details, task-estimator construction) is **published separately** ("Available here") and was not ingested; classifier-validation claims here rest on the body's summary. All classifiers use **Claude Sonnet 4.6** unless noted. The report excludes non-interactive / headless (`claude -p`) and third-party-IDE/SDK usage — "a substantial share of activity" the authors flag as future work.
 
 ## Why this matters to the wiki
 

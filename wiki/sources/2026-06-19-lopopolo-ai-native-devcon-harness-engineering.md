@@ -97,4 +97,4 @@ Full ASR transcript (~30 min, single un-chaptered block). The talk is slide-driv
 
 ## Source-quality note
 
-Auto-generated (ASR) transcript fetched via the [[youtube-transcript-skill]] (Playwright/DOM route). Channel `AI Native Dev`; the source is a recorded conference talk, so the spoken content is high-fidelity but slide visuals are absent. Transcript provenance (ASR) does not feed confidence per [§Lifecycle].
+Auto-generated (ASR) transcript fetched via the [youtube-transcript-skill](../../.claude/skills/youtube-transcript-skill/SKILL.md) (Playwright/DOM route). Channel `AI Native Dev`; the source is a recorded conference talk, so the spoken content is high-fidelity but slide visuals are absent. Transcript provenance (ASR) does not feed confidence per [§Lifecycle].

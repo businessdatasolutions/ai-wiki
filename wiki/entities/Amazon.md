@@ -26,7 +26,7 @@ Andy Jassy's May-2025 HBR IdeaCast interview is the wiki's first first-party-CEO
 - **+15% IC-to-manager ratio target** (Q1 2025, already beaten by report date) — Amazon's flatten-management initiative.
 - **No-bureaucracy email alias** mechanism — 1,000+ emails received, **375 processes changed** in response.
 - **5-day return-to-office mandate** — Jassy's stated rationale: invention works better in-person (collaboration density, ad-hoc whiteboarding, cultural apprenticeship). Acknowledges the measurement difficulty (*"it's very hard to measure how well you're inventing"*).
-- **Three-layer AI stack framing**: infrastructure ([[Trainium]] / [[SageMaker]]) → orchestration ([[Bedrock]] with guardrails / RAG / agentic capabilities) → applications ([[Q]] / [[Rufus]] / 1,000+ internal GenAI apps).
+- **Three-layer AI stack framing**: infrastructure (Trainium / SageMaker) → orchestration (Bedrock with guardrails / RAG / agentic capabilities) → applications (Q / Rufus / 1,000+ internal GenAI apps).
 - **Rufus** — Amazon's GenAI shopping assistant; designed to reproduce the in-store-salesperson question-narrowing pattern.
 - **Foundation model for brand-sizing comparison** — apparel use case.
 - **Two-way-door vs one-way-door** decision taxonomy (Bezos-era vocabulary) — Jassy uses it as the rationale for IC-level decision-making.

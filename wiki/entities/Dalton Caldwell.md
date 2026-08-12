@@ -34,7 +34,7 @@ Canonical examples:
 - **Music discovery** (Caldwell's own first-startup tar pit)
 - **Foursquare-clone location apps** (worked example from Lenny Rachitsky's own Local Mind startup)
 
-The wiki should treat tar-pit-ideas as **the load-bearing diagnostic primitive for founder-idea-evaluation** — multiple sources in the 2026 corpus ([[2026-02-25-akhtar-forget-yc-letter-ai-powered-revenue|Letter AI]], [[2026-05-20-tan-hu-stanford-cs153-ai-native-company-1000x-engineer|Tan & Hu / CS153]], [[2026-05-19-mittal-yhangry-private-chef-all-in-on-ai-agents|Mittal / Yhangry]]) gesture at the same anti-pattern without naming it. A standalone [[concepts/tar-pit-ideas|tar-pit-ideas]] concept page is flagged for promotion on the next ingest that touches the pivot / founder-idea-selection territory.
+The wiki should treat tar-pit-ideas as **the load-bearing diagnostic primitive for founder-idea-evaluation** — multiple sources in the 2026 corpus ([[2026-02-25-akhtar-forget-yc-letter-ai-powered-revenue|Letter AI]], [[2026-05-20-tan-hu-stanford-cs153-ai-native-company-1000x-engineer|Tan & Hu / CS153]], [[2026-05-19-mittal-yhangry-private-chef-all-in-on-ai-agents|Mittal / Yhangry]]) gesture at the same anti-pattern without naming it. A standalone tar-pit-ideas concept page is flagged for promotion on the next ingest that touches the pivot / founder-idea-selection territory.
 
 ### 2. The pivot template — methodical, not artful
 

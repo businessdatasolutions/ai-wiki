@@ -6,8 +6,8 @@ confidence: 0.87
 last_confirmed: "2026-08-12"
 accessed_at: "2026-08-12"
 source_count: 21
-quality_score: 0.95
-quality_notes: ['1 near-empty section(s)', '2 broken body wikilink(s)']
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # Foundation Models
@@ -18,7 +18,7 @@ Their capability profile is **jagged** — see [[jagged-frontier]] for the task-
 
 ## Working definition
 
-A **foundation model** is a model trained on broad data at scale that can be adapted to a wide range of downstream tasks. The term, coined by Stanford's [[Center for Research on Foundation Models]] (CRFM), foregrounds the *adaptation* role — the model is a foundation other things are built on, not the end product.
+A **foundation model** is a model trained on broad data at scale that can be adapted to a wide range of downstream tasks. The term, coined by Stanford's Center for Research on Foundation Models (CRFM), foregrounds the *adaptation* role — the model is a foundation other things are built on, not the end product.
 
 **Frontier model** is a near-synonym foregrounding *capability* (top of the leaderboard). The two terms diverge in policy/regulatory contexts: "frontier" often implies the regulator-relevant subset of foundation models above a capability threshold.
 
@@ -106,7 +106,7 @@ To be promoted to standalone entity pages when discussed in depth in another sou
 
 - **OpenAI**: GPT-4, GPT-4o, **o1**, o3 (test-time compute reasoning), **SORA** (video).
 - **Google DeepMind**: Gemini family (Gemini-1.5-Flash-8B is the 280×-cost-reduction marker), Veo 2 (video).
-- **Anthropic**: Claude 3 family (incl. Sonnet — implicit-bias study); [[Claude Sonnet 4.5]] (predominant model in AEI 4 sample, exhibits "context anxiety" per [[2026-05-07-anthropic-managed-agents-decoupling-brain-hands|Managed Agents post]]); **Claude Opus 4.5** (released between AEI 4 and AEI 5 windows; the Managed Agents post notes the "context anxiety" failure mode is *absent* on Opus 4.5 — first evidence in this wiki of long-horizon reliability varying by model **within** a family, not just across families); **Claude Opus 4.6** (released coincident with AEI 5 sample window, Feb 2026).
+- **Anthropic**: Claude 3 family (incl. Sonnet — implicit-bias study); Claude Sonnet 4.5 (predominant model in AEI 4 sample, exhibits "context anxiety" per [[2026-05-07-anthropic-managed-agents-decoupling-brain-hands|Managed Agents post]]); **Claude Opus 4.5** (released between AEI 4 and AEI 5 windows; the Managed Agents post notes the "context anxiety" failure mode is *absent* on Opus 4.5 — first evidence in this wiki of long-horizon reliability varying by model **within** a family, not just across families); **Claude Opus 4.6** (released coincident with AEI 5 sample window, Feb 2026).
 - **Meta**: Llama 3.1 405B (the 8,930-ton-CO2 marker), Movie Gen (video).
 - **Microsoft**: Phi-3-mini (the 3.8B-param-MMLU marker).
 - **Mistral AI**: French open-source.

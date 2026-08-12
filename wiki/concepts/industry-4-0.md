@@ -13,8 +13,8 @@ relationships:
   - type: uses
     target: ai-agents
     via: "autonomous monitoring (Jidoka + AI-powered) is an Industry 4.0 deployment of agents"
-quality_score: 0.95
-quality_notes: ['1 near-empty section(s)', '2 broken body wikilink(s)']
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # Industry 4.0
@@ -48,14 +48,14 @@ Digital Twin, IoT Sensors, Workflow Automation Software, Big Data Analytics, Col
 ### As conceptual frame
 
 - **Industry 4.0 is the umbrella term for the digital side** of the [[lean-4-0|Lean 4.0]] synergy. Gomaa pairs each Lean tool with an Industry 4.0 technology that operationalizes it.
-- The pattern generalizes beyond manufacturing — [[Italgas]]'s 300TB data platform, IoT-enabled gas distribution, 23 AI models, and DANA (GenAI network control) are Industry 4.0 in a non-manufacturing sector. Source: [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan]].
+- The pattern generalizes beyond manufacturing — Italgas's 300TB data platform, IoT-enabled gas distribution, 23 AI models, and DANA (GenAI network control) are Industry 4.0 in a non-manufacturing sector. Source: [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan]].
 
 ## Connection to the rest of the wiki
 
 Industry 4.0 sits at the **intersection of manufacturing/operations work and the broader [[generative-ai|GenAI]] / [[ai-agents]] story** unfolding in white-collar work:
 
 - The **predictive maintenance** strand of Industry 4.0 (TPM + Predictive Maintenance Tools, in Gomaa's mapping) is a domain where AI agents operate today with measurable ROI.
-- The **digital twin** technology — virtual replicas of physical assets — is a recurring concept in industrial AI; relevant to [[Italgas]]'s 300TB platform and Ford's computational fluid dynamic test (15 hr → 10 sec, per [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]).
+- The **digital twin** technology — virtual replicas of physical assets — is a recurring concept in industrial AI; relevant to Italgas's 300TB platform and Ford's computational fluid dynamic test (15 hr → 10 sec, per [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]).
 - **Industrial robotics** (China's 51.1% global share) is the physical-world counterpart to the knowledge-work agent story.
 
 ## Debates and supersession

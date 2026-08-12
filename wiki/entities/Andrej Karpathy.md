@@ -60,9 +60,9 @@ From [[2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering|the Se
 
 ## Affiliations
 
-- **Founder, [[Eureka Labs]]** (2024 – present, dangling — not yet promoted to entity page).
+- **Founder, Eureka Labs** (2024 – present, dangling — not yet promoted to entity page).
 - **Co-founder, [[OpenAI]]** (2015 – 2017 + 2023 – 2024).
-- **Former Director / Senior Director of AI, [[Tesla]]** (2017 – 2022, dangling — not yet promoted).
+- **Former Director / Senior Director of AI, Tesla** (2017 – 2022, dangling — not yet promoted).
 - **Stanford PhD** (2011 – 2016).
 
 ## Mentioned in

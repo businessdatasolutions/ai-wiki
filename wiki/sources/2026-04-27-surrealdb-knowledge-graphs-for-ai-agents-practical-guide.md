@@ -24,7 +24,7 @@ relationships:
 
 > RAG systems hit a wall as they scale: dense vector neighbourhoods produce context clash, hallucinations creep into answers, and high-dimensional embeddings stop being enough on their own. This session uses real-world examples — e-commerce search, customer support, agentic chatbots — to analyse where vector-only RAG breaks down, and the operational cost of stitching together separate vector, graph, and full-text stores. Martin (Solutions Engineer at SurrealDB) demonstrates how knowledge graphs ground LLM responses by adding deterministic structure on top of vectors, walking through the full ETL pipeline — parsing, chunking, embedding, entity and relationship extraction, deduplication, ontology.
 
-(Channel description, [[SurrealDB]].)
+(Channel description, SurrealDB.)
 
 A 60:04 webinar by **Martin** (Solutions Engineer at SurrealDB) on knowledge-graph-grounded RAG for AI agents. Published 27 April 2026 to the SurrealDB YouTube channel. **The wiki's first dedicated knowledge-graph-architecture source** with substantive vendor-practitioner depth on the full ETL pipeline. Manual caption track (`kind: manual`) selected for highest fidelity. 9 chapters.
 

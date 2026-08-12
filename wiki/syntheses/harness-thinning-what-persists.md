@@ -14,7 +14,7 @@ relationships:
     target: agent-harness
     via: "resolves a specific open tension inside the agent-harness concept page's Debates section (Kilpatrick's model-eats-the-harness vs. Chatterjee's model-rented/harness-owned) using three July 2026 sources"
   - type: supports
-    target: organizational-frameworks-for-ai-adoption
+    target: syntheses/organizational-frameworks-for-ai-adoption
     via: "sibling synthesis from the same 2026-07-15 video batch — both independently land on 'process/organizational design is the load-bearing decision, not the technology,' at the runtime-engineering layer and the organizational layer respectively"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']

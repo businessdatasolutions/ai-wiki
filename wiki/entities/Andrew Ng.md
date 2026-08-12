@@ -24,7 +24,7 @@ Promoted from Dangling to an entity page on 24 May 2026 after the second substan
 
 **Bumped to source_count: 7 on 12 August 2026** with [[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness|his *Building America* interview on Washington Post Live]] (29 Jul 2026) — the wiki's first Ng source aimed at **policy** rather than practitioners. Three contributions stand out. He argues open weights are a condition of *American* competitiveness rather than a threat to it ("the success of these businesses cannot be at the cost of shutting down everyone else's access to open models"), and that "the lobbying against open models has hampered American AI development." He calls the distillation-explains-China's-progress claim "vastly overstated," with a symmetry argument (labs distilled the open internet first) and a timing objection. And he makes the enterprise-adoption point in his sharpest form yet: "**no company ever gained competitive advantage just by buying a ChatGPT or Microsoft Copilot licence**" — the problem is finding use cases, which is change management. Also: *preserve optionality* as a portfolio prescription, agent-ready data as the underrated buildout, and OpenWorker, an open-source desktop agent. Note the disclosed conflicts on this one — Amazon board member, interviewed by a paper owned by Amazon's executive chairman.
 
-Ng is the wiki's **AI-leader-altitude-and-educator-altitude voice** on the *future-of-software-engineering / future-of-the-AI-engineer-role* question. Where [[Garry Tan]] and [[Diana Hu]] operate at the *YC-partner-doctrinal* altitude, [[Harrison Chase]] at the *vendor-CEO-product-strategy* altitude, [[Andrej Karpathy]] at the *AI-researcher-paradigm* altitude, and [[Sinclair / Ivers / Benitez|James Ivers]] at the *institutional-research-centre* altitude — Ng sits at the **AI-conference-keynote + AI-educator-platform** altitude, addressing the same questions from a venue that bridges the practitioner-altitude and the broad-developer-audience altitude.
+Ng is the wiki's **AI-leader-altitude-and-educator-altitude voice** on the *future-of-software-engineering / future-of-the-AI-engineer-role* question. Where [[Garry Tan]] and [[Diana Hu]] operate at the *YC-partner-doctrinal* altitude, [[Harrison Chase]] at the *vendor-CEO-product-strategy* altitude, [[Andrej Karpathy]] at the *AI-researcher-paradigm* altitude, and James Ivers at the *institutional-research-centre* altitude — Ng sits at the **AI-conference-keynote + AI-educator-platform** altitude, addressing the same questions from a venue that bridges the practitioner-altitude and the broad-developer-audience altitude.
 
 ### 1. The 100%-AI-coding norm at frontier teams
 
@@ -75,7 +75,7 @@ Ng's persistent metaphor across his AI Dev keynotes: software is assembled from 
 
 Ng's two announcements address the two tracks separately:
 
-- **Context Hub** (for agents) — built with [[Vivek Prasad]] and [[Sanyam Hota]]; provides up-to-date documentation to AI coding agents to prevent hallucination of deprecated APIs (canonical worked example: Claude Code using the deprecated OpenAI *chat completions* API instead of the newer *responses* API). CLI: `chob search OpenAI` / `chob get OpenAI/chat`.
+- **Context Hub** (for agents) — built with Vivek Prasad and Sanyam Hota; provides up-to-date documentation to AI coding agents to prevent hallucination of deprecated APIs (canonical worked example: Claude Code using the deprecated OpenAI *chat completions* API instead of the newer *responses* API). CLI: `chob search OpenAI` / `chob get OpenAI/chat`.
 - **Code Dream / Code Realm** (for humans) — *"not a course — a conversation"*: video-call interface with Ng (or an AI version of Ng) paired with a browser-based terminal for hands-on practice. Available in preview as of 20 May 2026.
 
 ### 8. The "unbig in AI" framing (from the Carrier / MIT cross-reference)
@@ -96,7 +96,7 @@ Ng's prior wiki-relevant rhetorical contribution: *"we need to unbig in AI"* —
 ## Open questions
 
 - **DeepLearningAI as a channel-entity** — should be promoted on second source under this `author:` value (current convention; cf. YC Root Access). The 20 May 2026 keynote is the first ingest; promote on next.
-- **Context Hub concept page** — Ng's tool is a clean fit for a [[concepts/context-hub|context-hub]] concept page if a second source surfaces (e.g., a vendor-side write-up, a comparison-to-LangChain-context-tooling piece, or a usage-data update).
+- **Context Hub concept page** — Ng's tool is a clean fit for a context-hub concept page if a second source surfaces (e.g., a vendor-side write-up, a comparison-to-LangChain-context-tooling piece, or a usage-data update).
 - **Code Dream / Code Realm canonical name** — ASR ambiguity on stage; pin the canonical product name when a separate channel covers the launch.
 - **The Batch newsletter as a wiki source** — Ng's PM-bottleneck observation traces back to a July deeplearning.ai *Batch* newsletter; that newsletter would be the upstream textual source for citation rigour.
 - **Vivek Prasad / Sanyam Hota as entity pages** — Dangling first-mentions as Context Hub co-builders; promote on second source.

@@ -74,7 +74,7 @@ The report frames a progression: **AI chatbot → AI agent → multi-agent syste
 
 Stats from external research:
 - **AI agents could double the capacity of knowledge professionals** and field-support roles (PwC).
-- **>80% of organizations plan to integrate AI agents within 1–3 years** ([[Capgemini]] research).
+- **>80% of organizations plan to integrate AI agents within 1–3 years** (Capgemini research).
 - **64%** believe AI agents will significantly improve customer service.
 - Customers are **3.8× more likely to purchase again** following a successful experience.
 
@@ -123,11 +123,11 @@ That said, the **agent-transition framing (chatbot → agent → multi-agent)** 
 
 The **13% / 98% / 85% triad** (ready / urgent / <18-month deadline) is a useful complement to the [[2026-04-28-ai-index-report-2025|AI Index]] adoption stats and the [[2026-04-28-mit-sloan-ai-maturity|MIT CISR]] maturity stages. It's a *third measurement instrument* for the [[ai-maturity-measurement-comparison]] thread — measuring **urgency and infrastructure readiness** rather than adoption breadth or maturity stage.
 
-The **Ford case study** (63 → 0 defects on squish tubes; 15 hours → 10 seconds for fluid dynamics) is concrete and quantifiable; together with the [[2026-04-28-mit-sloan-ai-maturity|Guardian RFP example]] (1 week → 24 hours) and [[Italgas]]'s WorkOnSite (+40% construction speed), we now have a small portfolio of concrete enterprise AI ROI numbers to cite.
+The **Ford case study** (63 → 0 defects on squish tubes; 15 hours → 10 seconds for fluid dynamics) is concrete and quantifiable; together with the [[2026-04-28-mit-sloan-ai-maturity|Guardian RFP example]] (1 week → 24 hours) and Italgas's WorkOnSite (+40% construction speed), we now have a small portfolio of concrete enterprise AI ROI numbers to cite.
 
 ## Linked entities and concepts
 
-**Entities (this wiki):** [[Cisco]], [[MIT Technology Review Insights]]. **Dangling:** [[Jeetu Patel]], [[Liz Centoni]], [[Patrick Milligan]], [[Ford]], [[Capgemini]], [[PwC]], [[National Association of Manufacturers]], [[Virginia Wilson]], [[Nicola Crepaldi]].
+**Entities (this wiki):** [[Cisco]], [[MIT Technology Review Insights]]. **Dangling:** Jeetu Patel, Liz Centoni, Patrick Milligan, Ford, Capgemini, [[PwC]], National Association of Manufacturers, Virginia Wilson, Nicola Crepaldi.
 
 **Concepts:** [[ai-agents]] (created by this ingest as concept threshold reached), [[enterprise-ai-adoption]], [[responsible-ai]] (Cisco AI security fundamentals), [[generative-ai]], [[industry-4-0]] (manufacturing context).
 

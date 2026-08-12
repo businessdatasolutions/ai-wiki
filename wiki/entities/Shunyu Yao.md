@@ -11,7 +11,7 @@ source_count: 2
 
 # Shunyu Yao
 
-AI researcher and **first author of [[react-reasoning-acting|ReAct]]** — the 2022 paradigm interleaving reasoning and acting in language models that became the structural core of the modern [[ai-agents|agent]] loop. At the time of the work he was a PhD student in the **Princeton NLP Group** (advised by [[Karthik Narasimhan]]), conducting the research during a Google internship with the [[Google Research]] Brain team.
+AI researcher and **first author of [[react-reasoning-acting|ReAct]]** — the 2022 paradigm interleaving reasoning and acting in language models that became the structural core of the modern [[ai-agents|agent]] loop. At the time of the work he was a PhD student in the **Princeton NLP Group** (advised by Karthik Narasimhan), conducting the research during a Google internship with the [[Google Research]] Brain team.
 
 ## Wiki contributions
 

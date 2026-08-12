@@ -121,8 +121,8 @@ Lopopolo and Trivedy / LangChain coined the term within ~6 days of each other in
 
 ## Named entities (this ingest)
 
-- [[Vivek Trivedy]] — LangChain Engineering. **First wiki source by Trivedy directly; primary mention.** Multiple wiki sources have referenced "Viv Trivedy" or "Viv" second-hand (Osmani; Chatterjee Friday-in-March piece is a *different* author entirely). **Dangling pending second source.**
-- [[LangChain]] / [[deepagents]] — already in wiki ecosystem. The deepagents library named explicitly as LangChain's harness-building artifact.
+- Vivek Trivedy — LangChain Engineering. **First wiki source by Trivedy directly; primary mention.** Multiple wiki sources have referenced "Viv Trivedy" or "Viv" second-hand (Osmani; Chatterjee Friday-in-March piece is a *different* author entirely). **Dangling pending second source.**
+- [[LangChain]] / deepagents — already in wiki ecosystem. The deepagents library named explicitly as LangChain's harness-building artifact.
 
 ## Source-quality notes
 

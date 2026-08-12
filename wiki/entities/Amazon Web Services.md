@@ -26,7 +26,7 @@ Two distinct angles on AWS surface across the ingested sources:
 
 ### 2. As a thought-leadership platform
 
-AWS runs an "Executives in Residence" program advising Fortune 500 leadership teams. [[Jana Werner]] and [[Phil Le-Brun]] (authors of [[2026-04-28-werner-lebrun-octopus-organization|"Become an Octopus Organization"]] in HBR Nov–Dec 2025) hold these positions. The Octopus framework is implicitly AWS-aligned: customer-centricity, distributed systems, microservices, decoupling — all align with AWS's core selling points (cloud microservices, serverless, decoupled architectures).
+AWS runs an "Executives in Residence" program advising Fortune 500 leadership teams. Jana Werner and Phil Le-Brun (authors of [[2026-04-28-werner-lebrun-octopus-organization|"Become an Octopus Organization"]] in HBR Nov–Dec 2025) hold these positions. The Octopus framework is implicitly AWS-aligned: customer-centricity, distributed systems, microservices, decoupling — all align with AWS's core selling points (cloud microservices, serverless, decoupled architectures).
 
 ### The AWS Events keynote series ("AWS Events" YouTube channel)
 
@@ -43,7 +43,7 @@ Discount the Octopus framing slightly for AWS's commercial interest, but the und
 
 ### 3. As an AI-stack vendor — Jassy's three-layer framing ([[2025-05-06-jassy-amazon-agility-ai-strategy-changing-role-of-managers|Jassy 2025]])
 
-[[Andy Jassy]] (Amazon CEO, AWS founder) named the wiki's earliest first-party three-layer AI-stack framing in May 2025:
+Andy Jassy (Amazon CEO, AWS founder) named the wiki's earliest first-party three-layer AI-stack framing in May 2025:
 
 | Layer | AWS product | Purpose |
 |---|---|---|
@@ -68,8 +68,8 @@ The wiki's longitudinal-AWS-doctrine reading: **the three-layer stack has stabil
 
 ## Notable people (mentioned in this wiki)
 
-- [[Jana Werner]] — Executive in Residence, AWS; co-author of the Octopus Org book and HBR article.
-- [[Phil Le-Brun]] — Executive in Residence, AWS; co-author of the Octopus Org book and HBR article.
+- Jana Werner — Executive in Residence, AWS; co-author of the Octopus Org book and HBR article.
+- Phil Le-Brun — Executive in Residence, AWS; co-author of the Octopus Org book and HBR article.
 - [[Jonathan Allen]] — Executive in Residence, AWS; headline speaker at the re:Invent 2025 origin talk and its revised London Executive Forum 2026 edition.
 - [[Steven Brovich]] — AWS Enterprise Strategist (Amazon since 1999); co-presenter (as "Stephen Brozovich") at re:Invent 2025, sole presenter of the Sydney 2026 edition.
 - **Anthony Liguori** — VP Distinguished Engineer, AWS; Project Mantle lead in Allen's keynote (76-day Bedrock-substrate-rebuild case) (*Dangling*).

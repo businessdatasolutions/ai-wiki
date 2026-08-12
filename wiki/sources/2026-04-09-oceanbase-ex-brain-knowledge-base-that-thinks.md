@@ -24,9 +24,9 @@ relationships:
 
 > Andrej Karpathy's LLM Wiki dropped a simple idea: store knowledge as plain text, let an LLM understand and update it. Garry Tan's GBrain ran with the same concept. Both projects prove that LLM + local storage is a surprisingly powerful combination for personal knowledge management.
 
-(Article opening, [[OceanBase Database]] Medium publication.)
+(Article opening, OceanBase Database Medium publication.)
 
-A 6-minute Medium article by **[[OceanBase Database]]** (publication; written from the engineering team's first-party voice) explaining **ex-brain** — a CLI tool the OceanBase team built as a direct response to [[Andrej Karpathy|Karpathy]]'s LLM Wiki gist. Published 9 April 2026 — **five days after** Karpathy's gist appeared (4 April 2026). The wiki's first **first-vendor implementation worked example** of the LLM Wiki pattern, with the implementation backed by the team's own AI-native database **seekdb**.
+A 6-minute Medium article by **OceanBase Database** (publication; written from the engineering team's first-party voice) explaining **ex-brain** — a CLI tool the OceanBase team built as a direct response to [[Andrej Karpathy|Karpathy]]'s LLM Wiki gist. Published 9 April 2026 — **five days after** Karpathy's gist appeared (4 April 2026). The wiki's first **first-vendor implementation worked example** of the LLM Wiki pattern, with the implementation backed by the team's own AI-native database **seekdb**.
 
 ## TL;DR
 

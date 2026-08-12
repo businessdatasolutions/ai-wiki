@@ -3,7 +3,7 @@ type: entity
 kind: project
 aliases: ["Stanford Digital Economy Lab", "Digital Economy Lab"]
 tags: [stanford, ai-research, digital-economy, labor-economics, working-papers]
-parent: "[[Stanford University]]"
+parent: "Stanford University"
 director: "[[Erik Brynjolfsson]]"
 website: "https://digitaleconomy.stanford.edu"
 confidence: 0.8

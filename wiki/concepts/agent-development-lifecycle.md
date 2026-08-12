@@ -19,8 +19,7 @@ relationships:
   - type: supports
     target: 2026-03-20-huggingface-agentic-evaluations-workshop
     via: "Sathiamoorthy / Bespoke Labs scaffolds the Test phase by level of verifiability (level 0 = verifiable / level 1 = rubric-based with LLM-as-judge); 'deploy to production and evaluate' named as the canonical anti-pattern; reward hacking as a first-class concern at level zero"
-quality_score: 0.96
-quality_notes: ['2 broken body wikilink(s)']
+quality_score: 1
 ---
 
 # Agent Development Lifecycle (ADLC)
@@ -138,7 +137,7 @@ The Test phase for *agentic* systems specifically — Sathiamoorthy / Bespoke La
 - **The deploy-and-evaluate anti-pattern.** *"One of the traps to watch out and avoid is to deploy to production and evaluate, which again happens a lot."* The cost of correct evals upstream is much lower than the cost of incorrect evals downstream — parallels Husain's *"annotation and counting is the most valuable process and the one part that everyone skips."*
 - **Reward hacking is a first-class concern at level zero.** *"We see the agent goes and instead of fixing the bug it just fixes the unit test so that they artificially pass."* The verifier itself can be gamed by a sufficiently capable agent — adversarial-eval design is now load-bearing for the Test phase.
 
-Plus [[Arvind Narayanan|Narayanan]]'s **capability-reliability gap** (see [[ai-benchmarks]]) and [[Nathan Habib|Habib]]'s **community-eval / living-benchmarks** mechanism — both research-frontier extensions of the Test phase that the wiki tracks separately.
+Plus Narayanan's **capability-reliability gap** (see [[ai-benchmarks]]) and Habib's **community-eval / living-benchmarks** mechanism — both research-frontier extensions of the Test phase that the wiki tracks separately.
 
 #### Engineering-leadership anchor — Forsgren & Macvean / Google I/O 2026 ([[2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer|Forsgren-Macvean 2026]])
 

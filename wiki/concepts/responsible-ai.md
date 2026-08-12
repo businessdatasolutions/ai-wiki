@@ -13,8 +13,8 @@ relationships:
   - type: supports
     target: ai-employment-effects
     via: "labor-market disruption is an under-attended RAI concern"
-quality_score: 0.89
-quality_notes: ['1 near-empty section(s)', '5 broken body wikilink(s)']
+quality_score: 0.97
+quality_notes: ['1 near-empty section(s)', '1 broken body wikilink(s)']
 ---
 
 # Responsible AI
@@ -89,8 +89,8 @@ A new finding flagged in 2026: **improving one responsible-AI dimension can degr
 ### RAI as operationalized stewardship (not just principles)
 
 - [[2026-04-28-mit-sloan-ai-maturity|MIT CISR's Four S framework]] places **Stewardship** as one of the four organizational challenges to scale AI from pilots (Stage 2) to embedded ways of working (Stage 3) — alongside Strategy, Systems, and Synchronization. Concretely, this means RAI lives in **architecture review boards, governance integrated with risk/legal/compliance, and "by design" rather than "by audit"**.
-- Worked example: **[[Guardian Life Insurance]]** (regulated US insurance) — embedded governance with risk, legal, and compliance teams; architecture reviews via formal *and* fast-track boards so privacy, security, and regulatory requirements are built into new AI solutions at design time. Source: [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan article]].
-- Worked example: **[[Italgas]]** — governance via a Chief People, Innovation & Transformation Officer + an AI Officer + a Group AI Office, overseeing integration and monitoring. Initiatives balance efficiency with new business opportunity (commercializing WorkOnSite generated €3M revenue in 2024). Source: [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan article]].
+- Worked example: **Guardian Life Insurance** (regulated US insurance) — embedded governance with risk, legal, and compliance teams; architecture reviews via formal *and* fast-track boards so privacy, security, and regulatory requirements are built into new AI solutions at design time. Source: [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan article]].
+- Worked example: **Italgas** — governance via a Chief People, Innovation & Transformation Officer + an AI Officer + a Group AI Office, overseeing integration and monitoring. Initiatives balance efficiency with new business opportunity (commercializing WorkOnSite generated €3M revenue in 2024). Source: [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan article]].
 - This framing complements the policy-level RAI literature (OECD/EU/UN/AU frameworks) by giving the *organizational mechanism* for how policy principles get translated into procurement and design decisions.
 
 ### Intent validation as a Constraints-layer RAI control ([[2026-05-07-chatterjee-anatomy-of-agent-harness|Chatterjee 2026]] + [[2026-05-07-kokane-agent-harness-vs-systems-design|Kokane 2026]])
@@ -140,7 +140,7 @@ This reframes the [[ai-agents]] safety story: rather than relying on the model t
 - Use **reference architectures** to reduce exposure in LLM training environments
 - Select **secure embedding models** for content generation
 
-Quoted: *"Safety and security are fundamental, because they're one of the big fears impeding adoption for AI technologies today. So if you don't trust something, you're not going to use it."* — [[Jeetu Patel]], President & CPO, [[Cisco]].
+Quoted: *"Safety and security are fundamental, because they're one of the big fears impeding adoption for AI technologies today. So if you don't trust something, you're not going to use it."* — Jeetu Patel, President & CPO, [[Cisco]].
 
 This framing complements the [[2026-04-28-anand-wu-genai-playbook|Anand-Wu]] guidance to **focus on guarding most-critical risks** (PII leakage, regulated data) rather than blanket risk minimization. The JPMorgan ChatGPT-block (2023) example illustrates the tradeoff: blocking 60,000 users from experimentation while security teams completed third-party reviews was a sensible precaution but not a sustainable posture.
 
@@ -164,7 +164,7 @@ This is operationally concrete and worth pairing with the MIT CISR Stewardship p
 
 The MIT SMR × BCG 8th annual report identifies a set of RAI concerns specific to *organizational learning* with AI — distinct from the standard taxonomy (incidents, bias, factuality, governance, transparency, security). Each is illustrated with executive-interview anchors:
 
-- **Invasive monitoring as agency threat**: workers may perceive AI-enabled knowledge capture as a threat to their agency, reducing engagement. The report cites [[Mark Surman]] (Mozilla Foundation) on this as the equity question — *"Will vulnerable workers become even more economically insecure when AI eliminates the tasks they are most qualified to do?"*
+- **Invasive monitoring as agency threat**: workers may perceive AI-enabled knowledge capture as a threat to their agency, reducing engagement. The report cites Mark Surman (Mozilla Foundation) on this as the equity question — *"Will vulnerable workers become even more economically insecure when AI eliminates the tasks they are most qualified to do?"*
 - **Knowledge ownership in ecosystem partnerships**: knowledge dissemination across firms (federated learning, ecosystem partnerships) carries risk of losing control of knowledge capital. Surman: *"the core piece is, there's just so many questions about copyright and what it means to own knowledge. Maybe the copyright law we have just needs to be reinterpreted for the AI era."*
 - **Data trust as load-bearing**: knowledge dissemination without trust in the underlying data is "a well-known hurdle to data-driven decision-making." The Expedia Group case study illustrates a *nudge approach* to dissemination — recommendations rather than consequences/incentives that "directly manipulate behaviors."
 - **Worker disposition and learning styles**: "Will learning capabilities be equally accessible to humans with a range of learning styles and needs?" — an inclusion concern adjacent to but distinct from the bias-in-output concern of standard RAI.

@@ -45,7 +45,7 @@ relationships:
 
 # Dinakaran / YC — Luminai automating America's biggest hospitals
 
-YC General Partner [[Aaron Epstein]] interviews [[Kesava Kirupa Dinakaran]] (founder/CEO of [[Luminai]], YC S20) on the YC Root Access channel — episode of *Founder Firesides*, published 9 April 2026, ~33 minutes. Frames a $38M Series B announcement and 4–5 years of company history; Luminai is the **AI transformation partner for US health systems**, building the agentic layer that converts unstructured inbound clinical/administrative paper-and-fax into structured EHR routing and scheduling for institutions like the **[[Cleveland Clinic]]**.
+YC General Partner Aaron Epstein interviews Kesava Kirupa Dinakaran (founder/CEO of Luminai, YC S20) on the YC Root Access channel — episode of *Founder Firesides*, published 9 April 2026, ~33 minutes. Frames a $38M Series B announcement and 4–5 years of company history; Luminai is the **AI transformation partner for US health systems**, building the agentic layer that converts unstructured inbound clinical/administrative paper-and-fax into structured EHR routing and scheduling for institutions like the **Cleveland Clinic**.
 
 ## TL;DR
 
@@ -115,7 +115,7 @@ Dinakaran spent his childhood (~age 11 onward) ~7 hours/day on Rubik's cubes; br
 
 The tangent that bridges to the wiki's existing canon: *"I learned Rubik's cubes from [[Andrej Karpathy]] on YouTube, who eventually ended up founding OpenAI."* Casual aside, but the **biographical bridge** from Dinakaran's Rubik's-cube-as-childhood-skill to Karpathy's later AI-frontier work is a non-trivial trace through the wiki's existing entity graph.
 
-The cycle from Turkey to China (high-school fellowship project at the [[United World College]]) was the credential that flew Dinakaran to Silicon Valley for a 10-day trip on a tourist visa — and he never left. The hackathon-arbitrage period (winning $40-45K across 5-6 hackathons by **iterating with the organisers as the de facto judges in real time** — *"by the end of the hackathon, in 48 hours, you've gotten like maybe whatever — 16 iteration loops with them, back to back to back to back"*) is a separate but consonant **fast-feedback-loop** anchor.
+The cycle from Turkey to China (high-school fellowship project at the United World College) was the credential that flew Dinakaran to Silicon Valley for a 10-day trip on a tourist visa — and he never left. The hackathon-arbitrage period (winning $40-45K across 5-6 hackathons by **iterating with the organisers as the de facto judges in real time** — *"by the end of the hackathon, in 48 hours, you've gotten like maybe whatever — 16 iteration loops with them, back to back to back to back"*) is a separate but consonant **fast-feedback-loop** anchor.
 
 The closing aphorism (30:01): *"The level of aggression and ambition you can have is probably a hundred to a thousand times larger than you think you should have. And it has nothing to do with your experience or where you come from. There are no rules — outside of integrity rules — with the types of problems you can go out and solve."*
 
@@ -140,12 +140,12 @@ The closing aphorism (30:01): *"The level of aggression and ambition you can hav
 **Entities directly named or substantively discussed in the source:**
 
 - **[[Y Combinator]]** — accelerator; Luminai is S20. Aaron Epstein is the interviewing GP. Source-count bumps 7→8.
-- **[[Aaron Epstein]]** — Dangling first mention (this is his first-source appearance; the YC General Partner conducting the interview).
-- **[[Kesava Kirupa Dinakaran]]** — Dangling first mention (Luminai founder/CEO).
-- **[[Luminai]]** — Dangling first mention (the company; YC S20; healthcare-administrative AI).
-- **[[Cleveland Clinic]]** — Dangling first mention (the load-bearing customer worked example).
-- **[[Peak XV]]** — Dangling first mention (Series B lead investor; formerly Sequoia Capital India).
-- **[[United World College]]** — Dangling first mention (high-school fellowship that funded the Turkey-to-China cycling trip).
+- **Aaron Epstein** — Dangling first mention (this is his first-source appearance; the YC General Partner conducting the interview).
+- **Kesava Kirupa Dinakaran** — Dangling first mention (Luminai founder/CEO).
+- **Luminai** — Dangling first mention (the company; YC S20; healthcare-administrative AI).
+- **Cleveland Clinic** — Dangling first mention (the load-bearing customer worked example).
+- **Peak XV** — Dangling first mention (Series B lead investor; formerly Sequoia Capital India).
+- **United World College** — Dangling first mention (high-school fellowship that funded the Turkey-to-China cycling trip).
 - **[[Andrej Karpathy]]** — substantive cross-reference (Rubik's-cube YouTube tutor → eventual OpenAI co-founder). Existing entity. Source-count: increment.
 
 **Concepts touched substantively:**

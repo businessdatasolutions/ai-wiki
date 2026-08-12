@@ -59,7 +59,7 @@ A peer-reviewed academic field experiment published in **Management Science 72(1
 
 **Authors**: **Sebastian Krakowski** (Stockholm School of Economics, House of Innovation; corresponding author), **Darek Haftor** (Uppsala University, Department of Informatics and Media), **Johannes Luger** (University of Zurich, Department of Business Administration), **Natallia Pashkevich** (Södertörn University, School of Social Sciences), **Sebastian Raisch** (University of Geneva, Geneva School of Economics and Management). Funded by Erling Persson Family Foundation, Schweizerischer Nationalfonds, and the Jan Wallanders och Tom Hedelius Stiftelse.
 
-**Authors / dangling list.** First wiki source by all five authors; per the [[../../CLAUDE|author-entity promotion rule]] (second-source promotion), they all go on the dangling list at this ingest:
+**Authors / dangling list.** First wiki source by all five authors; per the [author-entity promotion rule](../../CLAUDE.md) (second-source promotion), they all go on the dangling list at this ingest:
 
 - **Dangling** (single-source mention, deferred): Sebastian Krakowski (Stockholm School of Economics, corresponding author; co-author of *Raisch & Krakowski 2021* on AI augmentation — cited self-referentially in the paper as the theoretical prior), Darek Haftor (Uppsala), Johannes Luger (University of Zurich), Natallia Pashkevich (Södertörn University), Sebastian Raisch (University of Geneva).
 

@@ -20,7 +20,7 @@ raw: "../../raw/articles/Bansal and Birkinshaw - 2025 - Why You Need Systems Thi
 
 [[Tima Bansal]] (Research Chair) and [[Julian Birkinshaw]] (Dean) at [[Ivey Business School]] argue that the two dominant approaches to business innovation — **breakthrough thinking** ("move fast and break things") and **design thinking** (IDEO-style user-centric) — produce socially and environmentally dysfunctional outcomes in interconnected systems. They advocate for a third mode: **systems thinking**, traceable to Ludwig von Bertalanffy, Jay Forrester, and Peter Senge's *The Fifth Discipline* (1990).
 
-Based on [[Innovation North]], a research-practice initiative at Ivey collaborating with 30+ companies on a dozen projects + numerous agile sprints, they offer a **streamlined four-principle approach** to applying systems thinking to "wicked problems."
+Based on Innovation North, a research-practice initiative at Ivey collaborating with 30+ companies on a dozen projects + numerous agile sprints, they offer a **streamlined four-principle approach** to applying systems thinking to "wicked problems."
 
 ## Key claims
 
@@ -92,7 +92,7 @@ The authors are explicit: systems thinking is a *complement* to the other two, n
 - [[systems-thinking]] — concept page anchored on this source
 - [[Tima Bansal]], [[Julian Birkinshaw]] — author entities
 - [[Ivey Business School]] — author affiliation
-- [[Innovation North]] — research-practice initiative
+- Innovation North — research-practice initiative
 - [[Harvard Business Review]] — publisher
 - [[2026-04-28-anand-wu-genai-playbook]] — also addresses a 2×2 of when to apply different approaches (cost of errors × type of knowledge)
 - [[2026-04-28-werner-lebrun-octopus-organization]] — also concerned with non-linear, ecosystem-style organizational design

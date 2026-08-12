@@ -23,9 +23,9 @@ relationships:
 >
 > On April 4, 2026, Andrej Karpathy posted a GitHub Gist. Not a paper. Not a product launch. An "idea file" — a markdown document designed to be copy-pasted into an LLM agent. Within days it had 17 million views, 5,000 stars, and 4,282 forks. The developer internet declared RAG dead. Both sides of that debate have a point. Neither side is fully right.
 
-(Article opening, [[Sathish Raju]] on Medium.)
+(Article opening, Sathish Raju on Medium.)
 
-A 10-minute Medium article by **[[Sathish Raju]]** (Senior AI Architect at Lenovo; previously co-founder/CTO at kloud.io acquired by Alation) explaining [[Andrej Karpathy|Karpathy]]'s LLM Wiki gist with a working Python implementation and honest comparison vs RAG. Published 16 April 2026 — **12 days after** Karpathy's gist. **The wiki's clearest single-article explainer** of the LLM Wiki pattern; substantively descriptive of the very architecture this repo implements.
+A 10-minute Medium article by **Sathish Raju** (Senior AI Architect at Lenovo; previously co-founder/CTO at kloud.io acquired by Alation) explaining [[Andrej Karpathy|Karpathy]]'s LLM Wiki gist with a working Python implementation and honest comparison vs RAG. Published 16 April 2026 — **12 days after** Karpathy's gist. **The wiki's clearest single-article explainer** of the LLM Wiki pattern; substantively descriptive of the very architecture this repo implements.
 
 ## TL;DR
 

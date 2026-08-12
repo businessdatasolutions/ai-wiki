@@ -60,7 +60,7 @@ See [[2026-04-28-anthropic-economic-index-q4-2025|the fourth-report source page]
 
 - **Privacy-preserving** — random samples (typically 1M conversations on Claude.ai + 1M API transcripts).
 - **Tasks mapped to O*NET** taxonomy. **O*NET vintage shifted** between the 4th and 5th reports (4th used 2010 vintage; 5th uses 2019). Year-over-year comparisons of task-share need this caveat.
-- **Models change report-to-report** — fourth report uses [[Claude Sonnet 4.5]] predominantly; the fifth uses Claude Opus 4.5 / 4.6 in addition. This affects comparability across editions.
+- **Models change report-to-report** — fourth report uses Claude Sonnet 4.5 predominantly; the fifth uses Claude Opus 4.5 / 4.6 in addition. This affects comparability across editions.
 
 ## Cited by external research
 

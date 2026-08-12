@@ -3,7 +3,7 @@ type: source
 kind: video
 title: "The Infinite Game"
 author: ["New York Times Events"]
-publisher: "[[New York Times Events]]"
+publisher: "New York Times Events"
 section: "NYT Events YouTube channel"
 url: "https://www.youtube.com/watch?v=tye525dkfi8"
 date_published: 2018-05-31

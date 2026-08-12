@@ -85,7 +85,7 @@ The transcript is not chapter-segmented (YouTube did not supply chapter markers)
 - **Naveen Sastry** — McKinsey Bay Area software practice lead; PhD computer science (voting-machine security); PDF co-author + panelist. Same paired-ingest caveat.
 - **Gayatri Shenai** — McKinsey New York senior partner; data-center / cloud authority; women-in-tech advocate; live-event panelist only (**not** in the PDF author list). First wiki mention; deferred. *Note: ASR rendering variability — `Shennai` / `Shanai` / `Guyry` / `guy tree` — recorded for future-search robustness; YouTube description's `Shenai` is canonical.*
 
-**Important correction from the prior ingest framing.** *Suhayl Chettih is a PDF co-author but **does not appear on the live-event panel**.* Earlier draft framing (which said the panel was Bradley + Gaffey + Sastry + Chettih) has been corrected here, in the [[2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas|PDF source page]], the [[McKinsey & Company]] entity page, [[wiki/index.md|index.md]], and a log addendum.
+**Important correction from the prior ingest framing.** *Suhayl Chettih is a PDF co-author but **does not appear on the live-event panel**.* Earlier draft framing (which said the panel was Bradley + Gaffey + Sastry + Chettih) has been corrected here, in the [[2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas|PDF source page]], the [[McKinsey & Company]] entity page, [[index|index.md]], and a log addendum.
 
 **Dangling** (single-source mentions, deferred): Brendan Gaffey, Gayatri Shenai. The paired-ingest authors (Russell, Bradley, Sastry, Ellingrud) remain Dangling because the PDF and video are not *independent* sources — they're the same MGI work in two formats. Promote on a third, independent mention.
 

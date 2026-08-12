@@ -100,7 +100,7 @@ The wiki's harness cluster has accumulated three vantages on what agent-harness 
 
 What was *missing* was a **single-team founder-vantage operational case study** at micro-scale: a small team running a real business with a real harness, talking openly about exactly how it's wired. The May customer-story batch (Lyft / HubSpot / Figma Make / Emergent) sits adjacent — those are mid-size or larger team testimonials. Garg adds the 2-FTE end of the scale: same harness primitives, drastically smaller team, internal-ops-focused rather than product-focused.
 
-The talk's **three-memory framework** is also the wiki's first founder-vantage articulation of memory ontology — the [[inspiration/Agent Memory Systems and Decision Tree|inspiration doc]] on agent memory previously held this content unpromoted; Garg's framing gives it a concrete operational anchor.
+The talk's **three-memory framework** is also the wiki's first founder-vantage articulation of memory ontology — the inspiration doc on agent memory previously held this content unpromoted; Garg's framing gives it a concrete operational anchor.
 
 ## The architecture, in five components
 
@@ -209,8 +209,8 @@ What Garg adds that the wiki didn't previously articulate at founder scale is th
 
 ## Open questions for the wiki
 
-- **The other three YC Root Access talks.** Garg references *"Pete and Tom and Gary"* who already covered the *thin harness* point. If those three slots are ingestible (likely Pete Koomen, Tom Blomfield, Garry Tan), they would form a four-source YC Root Access agent-harness session — a candidate for its own [[wiki/threads|thread]] page tracking the multi-talk session as a coherent argument.
+- **The other three YC Root Access talks.** Garg references *"Pete and Tom and Gary"* who already covered the *thin harness* point. If those three slots are ingestible (likely Pete Koomen, Tom Blomfield, Garry Tan), they would form a four-source YC Root Access agent-harness session — a candidate for its own thread page tracking the multi-talk session as a coherent argument.
 - **The 45+ self-authored CLIs.** The talk names this as the *"skeleton-to-full-blown"* outcome but doesn't show what those CLIs look like or how their quality is policed. A follow-up post, blog, or open-source release from AnswerThis would let the wiki promote *self-extending agents* to a standalone concept.
 - **Failure-mode story.** What happens when the coding sub-agent authors a bad tool? When the agent edits `instructions.md` in a way that introduces a regression? The talk doesn't say. The [[concepts/agent-development-lifecycle|agent-development-lifecycle]] page would benefit from a documented failure case at this scale.
 - **AnswerThis as an entity.** AnswerThis is interesting enough (scientific workflows, 2-FTE, $2M ARR, evidence-based) that a second-source mention would be valuable and warrant a full entity page. Worth watching.
-- **The three-memory framework as a standalone concept.** Garg's *factual / behavioural / procedural* trichotomy is clean enough to anchor a concept page if a second source articulates it. Currently sits in the [[inspiration/Agent Memory Systems and Decision Tree|inspiration doc]] without a wiki home; a second framing would justify promotion.
+- **The three-memory framework as a standalone concept.** Garg's *factual / behavioural / procedural* trichotomy is clean enough to anchor a concept page if a second source articulates it. Currently sits in the inspiration doc without a wiki home; a second framing would justify promotion.

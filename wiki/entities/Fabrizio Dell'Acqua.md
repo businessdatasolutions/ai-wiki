@@ -11,7 +11,7 @@ source_count: 1
 
 # Fabrizio Dell'Acqua
 
-Researcher at the [[Digital Data Design Institute]] at Harvard Business School. Lead author on the [[2026-04-28-dellacqua-jagged-technological-frontier|Jagged Technological Frontier]] paper (*Org Sci* 2026).
+Researcher at the Digital Data Design Institute at Harvard Business School. Lead author on the [[2026-04-28-dellacqua-jagged-technological-frontier|Jagged Technological Frontier]] paper (*Org Sci* 2026).
 
 ## Mentioned in
 

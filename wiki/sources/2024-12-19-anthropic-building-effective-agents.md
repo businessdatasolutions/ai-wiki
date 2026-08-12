@@ -83,15 +83,15 @@ The architectural distinction has proven durable. [[2026-05-09-chase-agent-devel
 
 ## Named entities (this ingest)
 
-- [[Erik Schluntz]] — Anthropic Engineering. **First mention. Dangling.**
-- [[Barry Zhang]] — Anthropic Engineering. **First mention. Dangling.**
+- Erik Schluntz — Anthropic Engineering. **First mention. Dangling.**
+- Barry Zhang — Anthropic Engineering. **First mention. Dangling.**
 
 Plus named tools/frameworks (existing or first mention):
-- [[Claude Agent SDK]] — already in wiki ecosystem.
-- [[Strands Agents SDK]] (AWS) — **first mention**.
-- [[Rivet]] (drag-and-drop GUI LLM workflow builder) — **first mention**.
-- [[Vellum]] (GUI tool for testing complex workflows) — **first mention**.
-- [[Model Context Protocol]] — already in wiki ecosystem.
+- Claude Agent SDK — already in wiki ecosystem.
+- Strands Agents SDK (AWS) — **first mention**.
+- Rivet (drag-and-drop GUI LLM workflow builder) — **first mention**.
+- Vellum (GUI tool for testing complex workflows) — **first mention**.
+- Model Context Protocol — already in wiki ecosystem.
 
 ## Source-quality notes
 

@@ -3,7 +3,7 @@ type: entity
 kind: org
 aliases: ["MIT CISR", "MIT Center for Information Systems Research", "Center for Information Systems Research"]
 tags: [mit-sloan, mit, ai-research, business-research, digital-transformation]
-parent: "[[MIT Sloan]]"
+parent: "MIT Sloan"
 website: "https://cisr.mit.edu"
 confidence: 0.75
 last_confirmed: "2026-04-28"
@@ -20,7 +20,7 @@ relationships:
 
 # MIT CISR
 
-The **MIT Center for Information Systems Research** is a research center at the [[MIT Sloan]] School of Management, focused on how organizations use technology and data to compete and create value. Studies digital business models, IT investment portfolios, AI maturity, and large-enterprise transformation.
+The **MIT Center for Information Systems Research** is a research center at the MIT Sloan School of Management, focused on how organizations use technology and data to compete and create value. Studies digital business models, IT investment portfolios, AI maturity, and large-enterprise transformation.
 
 ## Role in the wiki
 
@@ -41,8 +41,8 @@ Key methodological instruments mentioned in the wiki:
 
 - [[Stephanie Woerner]] — Principal research scientist at MIT Sloan, **Director of MIT CISR**.
 - [[Peter Weill]] — Senior research scientist at MIT Sloan, **Chairman of MIT CISR**.
-- [[Ina Sebastian]] — Research scientist at MIT CISR (digital partnering, value creation, value capture).
-- [[Evgeny Káganer]] — Research collaborator (also professor at IESE Business School).
+- Ina Sebastian — Research scientist at MIT CISR (digital partnering, value creation, value capture).
+- Evgeny Káganer — Research collaborator (also professor at IESE Business School).
 
 ## Mentioned in
 

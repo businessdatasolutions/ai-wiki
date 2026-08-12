@@ -101,4 +101,4 @@ A **~59-minute conversation** on **[[Simon Sinek]]**'s podcast *A Bit of Optimis
 
 ## Source-quality note
 
-Auto-generated (ASR) transcript fetched via the [[youtube-transcript-skill]]; light cleanup applied to proper nouns and model names (the ASR rendered model versions phonetically — "Opus 47," "Chachi," "VO comp test" for *Voight-Kampff*, etc.). The raw file preserves the near-verbatim ASR. Transcript provenance does not feed confidence per [§Lifecycle].
+Auto-generated (ASR) transcript fetched via the [youtube-transcript-skill](../../.claude/skills/youtube-transcript-skill/SKILL.md); light cleanup applied to proper nouns and model names (the ASR rendered model versions phonetically — "Opus 47," "Chachi," "VO comp test" for *Voight-Kampff*, etc.). The raw file preserves the near-verbatim ASR. Transcript provenance does not feed confidence per [§Lifecycle].

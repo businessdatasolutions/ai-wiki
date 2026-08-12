@@ -9,13 +9,13 @@ accessed_at: "2026-05-16"
 source_count: 5
 relationships:
   - type: part-of
-    target: O-Reilly-Media
+    target: O'Reilly-Media
     via: "Content and editorial leadership at O'Reilly Radar; author of the monthly Radar Trends to Watch series"
 ---
 
 # Mike Loukides
 
-VP of Content Strategy at [[O'Reilly Media]] and editorial lead of **O'Reilly Radar**. Author and curator of the monthly *Radar Trends to Watch* digest — a six-section, ~30-item editorial roundup of the prior month's tech news, with explicit emphasis on threads expected to compound (agents, MCP, harnesses, security, infrastructure, design). Long-time technical editor (Unix system programming, data science, AI books). Quoted by [[Julie Baron]] in [[2026-01-09-baron-signals-for-2026|Signals for 2026]] on the *"signs of the future in the present"* signal-detection framing.
+VP of Content Strategy at [[O'Reilly Media]] and editorial lead of **O'Reilly Radar**. Author and curator of the monthly *Radar Trends to Watch* digest — a six-section, ~30-item editorial roundup of the prior month's tech news, with explicit emphasis on threads expected to compound (agents, MCP, harnesses, security, infrastructure, design). Long-time technical editor (Unix system programming, data science, AI books). Quoted by Julie Baron in [[2026-01-09-baron-signals-for-2026|Signals for 2026]] on the *"signs of the future in the present"* signal-detection framing.
 
 The wiki promoted Loukides to entity status in the **16 May 2026 batch ingest** that landed all five of his Jan–May 2026 *Radar Trends* digests plus three other O'Reilly Radar articles. Loukides is the wiki's first *recurring-digest curator* entity — his editorial weighting itself counts as a signal worth citing, distinct from any individual item in the digest.
 

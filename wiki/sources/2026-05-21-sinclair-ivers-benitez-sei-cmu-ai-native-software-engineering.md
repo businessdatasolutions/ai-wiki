@@ -61,7 +61,7 @@ relationships:
 
 # Sinclair, Ivers & Benitez / SEI — AI-Native Software Engineering: Enduring Principles, New Pace
 
-[[Software Engineering Institute]] (SEI) at [[Carnegie Mellon University]] webcast — was-live, published 21 May 2026, ~61 minutes. Host **Scott Sinclair** (software architect, SEI) in conversation with **James Ivers** (principal engineer, SEI; 30+ years research and application + software architecture) and **Mario Benitez** (software architect, SEI; 20+ years software engineering). **The wiki's first institutional-research-centre voice on the AI-coding-era software-engineering-discipline question.**
+Software Engineering Institute (SEI) at Carnegie Mellon University webcast — was-live, published 21 May 2026, ~61 minutes. Host **Scott Sinclair** (software architect, SEI) in conversation with **James Ivers** (principal engineer, SEI; 30+ years research and application + software architecture) and **Mario Benitez** (software architect, SEI; 20+ years software engineering). **The wiki's first institutional-research-centre voice on the AI-coding-era software-engineering-discipline question.**
 
 ## TL;DR
 
@@ -169,11 +169,11 @@ Benitez: *"We've got to adopt it. We've got to embrace it. Understanding its imp
 
 **Entities directly named or substantively discussed in the source:**
 
-- **[[Software Engineering Institute]]** — Dangling first mention (the institution; federally-funded research and development centre at Carnegie Mellon University).
-- **[[Carnegie Mellon University]]** — Dangling first mention as substantive entity (already cross-referenced from [[Diana Hu]] biographical context and [[Jones / Stanford GSB]] DARPA-self-driving-car anecdote, but no entity page yet).
-- **[[Scott Sinclair]]** — Dangling first mention (software architect at SEI; host of this webcast).
-- **[[James Ivers]]** — Dangling first mention (principal engineer at SEI; the load-bearing rhetorical voice in this episode).
-- **[[Mario Benitez]]** — Dangling first mention (software architect at SEI).
+- **Software Engineering Institute** — Dangling first mention (the institution; federally-funded research and development centre at Carnegie Mellon University).
+- **Carnegie Mellon University** — Dangling first mention as substantive entity (already cross-referenced from [[Diana Hu]] biographical context and Jones / Stanford GSB DARPA-self-driving-car anecdote, but no entity page yet).
+- **Scott Sinclair** — Dangling first mention (software architect at SEI; host of this webcast).
+- **James Ivers** — Dangling first mention (principal engineer at SEI; the load-bearing rhetorical voice in this episode).
+- **Mario Benitez** — Dangling first mention (software architect at SEI).
 
 **Concepts touched substantively:**
 

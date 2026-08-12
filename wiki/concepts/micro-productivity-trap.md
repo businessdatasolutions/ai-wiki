@@ -13,8 +13,8 @@ relationships:
   - type: contradicts
     target: automation-vs-augmentation
     via: "process lock-in = automation without redesign; reinvent-the-business resists this trap"
-quality_score: 0.97
-quality_notes: ['1 near-empty section(s)', '1 broken body wikilink(s)']
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # Micro-Productivity Trap
@@ -263,7 +263,7 @@ This is the wiki's **first source to state the trap specifically and narrowly fo
 
 ## The 35%-of-time-on-coding finding — a bank's live-tooling measurement ([[2025-12-02-allen-brozovich-davis-aws-reinvent-advanced-team-structures|Davis / Danske Bank, AWS re:Invent, December 2025]])
 
-**Richard Davis**, CTO of [[Danske Bank|Danske Bank]], supplies a clean, quantified instance of the trap measured with the bank's own live engineering tooling rather than a survey or consulting estimate. AI coding assistants cut Danske's change lead time by roughly **50%** — a substantial task-level (coding) gain. But when Davis's team traced *all* the touch points across the delivery lifecycle, they found developers were spending only **35% of their time actually coding**; the rest sat in Kanban-board handovers, documentation, and testing — process stages the coding-assistant rollout never touched. Developers themselves reported the mismatch directly: *"progress they were seeing still didn't equal the level of effort they're putting in."* Danske's response was to redesign the surrounding product development lifecycle (PDLC) itself, aiming for *"one agentic workflow with zero friction,"* rather than layering further coding-specific tooling onto an unchanged process — the trap's standard prescribed escape, restated here with an unusually direct process-tracing data point (see [[enterprise-ai-adoption]] for the fuller case).
+**Richard Davis**, CTO of Danske Bank, supplies a clean, quantified instance of the trap measured with the bank's own live engineering tooling rather than a survey or consulting estimate. AI coding assistants cut Danske's change lead time by roughly **50%** — a substantial task-level (coding) gain. But when Davis's team traced *all* the touch points across the delivery lifecycle, they found developers were spending only **35% of their time actually coding**; the rest sat in Kanban-board handovers, documentation, and testing — process stages the coding-assistant rollout never touched. Developers themselves reported the mismatch directly: *"progress they were seeing still didn't equal the level of effort they're putting in."* Danske's response was to redesign the surrounding product development lifecycle (PDLC) itself, aiming for *"one agentic workflow with zero friction,"* rather than layering further coding-specific tooling onto an unchanged process — the trap's standard prescribed escape, restated here with an unusually direct process-tracing data point (see [[enterprise-ai-adoption]] for the fuller case).
 
 ## The human-understanding test — a normative escape criterion ([[2026-05-28-from-event-to-ecosystem-rethinking-how-technology-leaders-build-knowledge-in-the-ai-era|Tate / MIT Sloan CIO Symposium, May 2026]])
 

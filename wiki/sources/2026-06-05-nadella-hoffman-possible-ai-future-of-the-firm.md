@@ -48,11 +48,11 @@ relationships:
 
 > Reid sits down with Microsoft CEO Satya Nadella fresh off Microsoft Build 2026. The conversation goes wide: how AI is reshaping work, business, and society — and why the transformation sweeping through software development today is only a preview of what's coming for all knowledge work. Satya makes the case that human capital and "token capital" are now deeply intertwined, that companies — not just countries — must build their own AI capabilities, and that the organizations best positioned to thrive are those that can leverage their unique expertise inside intelligent systems.
 
-(Channel description, [[Reid Hoffman]] YouTube — *Possible* podcast.)
+(Channel description, Reid Hoffman YouTube — *Possible* podcast.)
 
 # Nadella / Hoffman — AI Is the Future of the Firm (2026-06-05)
 
-A ~60-minute episode of the **[[Possible (podcast)|Possible]]** podcast, published 5 June 2026, hosted by **[[Reid Hoffman]]** (with co-host Aria Finger), interviewing **Satya Nadella** (chairman and CEO of [[Microsoft]]) fresh off **Microsoft Build 2026**. The conversation is wide-ranging — enterprise AI architecture, the future of work, sovereign AI, Microsoft's own silicon, science, children/education, the Pope's AI encyclical, and the AI backlash. Hoffman also announces he is **stepping off the Microsoft board at year-end to return to founder mode** (his science startup, Manus).
+A ~60-minute episode of the **Possible** podcast, published 5 June 2026, hosted by **Reid Hoffman** (with co-host Aria Finger), interviewing **Satya Nadella** (chairman and CEO of [[Microsoft]]) fresh off **Microsoft Build 2026**. The conversation is wide-ranging — enterprise AI architecture, the future of work, sovereign AI, Microsoft's own silicon, science, children/education, the Pope's AI encyclical, and the AI backlash. Hoffman also announces he is **stepping off the Microsoft board at year-end to return to founder mode** (his science startup, Manus).
 
 This is the wiki's first **platform-CEO worldview** source on enterprise AI, and the strongest single statement of the *AI-as-the-firm-itself* thesis. It pairs directly with [[2026-06-18-ramaswamy-mckinsey-every-company-software-company|Ramaswamy / McKinsey]] (every company a software company) at the CEO altitude.
 

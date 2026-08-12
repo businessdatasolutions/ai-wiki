@@ -15,8 +15,8 @@ relationships:
   - type: uses
     target: react-reasoning-acting
     via: "the reason–act–observe loop at the centre of the agent definition originates in ReAct (2022)"
-quality_score: 0.89
-quality_notes: ['1 near-empty section(s)', '5 broken body wikilink(s)']
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # AI Agents
@@ -37,14 +37,14 @@ The cleanest definition in this wiki comes from [[2026-04-28-mittri-cisco-ai-ena
 
 A useful complementary lens is the [[2026-04-28-anand-wu-genai-playbook|Anand-Wu]] 2×2: agents thrive in the **"no regrets zone"** (low cost of errors + explicit data) where AI does the work without humans in the loop — addressing bulk customer inquiries, summarizing documents, screening résumés. As error costs rise, agents become assistants rather than autonomous executors.
 
-The simplest one-sentence operational definition — adopted by the wiki from [[2026-05-18-wolfe-agent-evaluation-detailed-guide|Wolfe 2026]] (citing the Simon Willison formulation): ***"an agent is an LLM that autonomously uses tools in a loop."*** This is the *agentic loop* that wraps every agent system: an LLM at the centre reasons about the task, calls **tools** to read/write external state, observes results, and continues until an exit condition is reached. **That loop has a name and a primary source**: it is [[react-reasoning-acting|ReAct]] (Reason + Act), introduced by [[Shunyu Yao]] et al. in [[2022-10-06-yao-et-al-react-synergizing-reasoning-acting|2022]] ([[2022-11-08-yao-cao-react-google-research-blog|Google Research blog]]), which first showed that interleaving reasoning traces with tool actions beats reasoning-only (chain-of-thought) or acting-only prompting — and that the legible thoughts make the trajectory human-inspectable and correctable. The 2026 practitioner framings the wiki leans on are ReAct named four years later; the [[2026-06-10-google-cloud-tech-ai-agents-explained-first-agent|Google Cloud Tech / ADK tutorial]] makes the lineage explicit, defining a modern agent *as* the ReAct loop before building one. Three components are always present: (1) the underlying LLM or reasoning model, (2) tools the agent calls (APIs / CLIs / [[MCP]] servers / computer-use primitives), (3) instructions in the system prompt that specify the agent's expected behaviour. The [[agent-harness|harness]] is what assembles those three components into a runtime.
+The simplest one-sentence operational definition — adopted by the wiki from [[2026-05-18-wolfe-agent-evaluation-detailed-guide|Wolfe 2026]] (citing the Simon Willison formulation): ***"an agent is an LLM that autonomously uses tools in a loop."*** This is the *agentic loop* that wraps every agent system: an LLM at the centre reasons about the task, calls **tools** to read/write external state, observes results, and continues until an exit condition is reached. **That loop has a name and a primary source**: it is [[react-reasoning-acting|ReAct]] (Reason + Act), introduced by [[Shunyu Yao]] et al. in [[2022-10-06-yao-et-al-react-synergizing-reasoning-acting|2022]] ([[2022-11-08-yao-cao-react-google-research-blog|Google Research blog]]), which first showed that interleaving reasoning traces with tool actions beats reasoning-only (chain-of-thought) or acting-only prompting — and that the legible thoughts make the trajectory human-inspectable and correctable. The 2026 practitioner framings the wiki leans on are ReAct named four years later; the [[2026-06-10-google-cloud-tech-ai-agents-explained-first-agent|Google Cloud Tech / ADK tutorial]] makes the lineage explicit, defining a modern agent *as* the ReAct loop before building one. Three components are always present: (1) the underlying LLM or reasoning model, (2) tools the agent calls (APIs / CLIs / MCP servers / computer-use primitives), (3) instructions in the system prompt that specify the agent's expected behaviour. The [[agent-harness|harness]] is what assembles those three components into a runtime.
 
 ## Key claims
 
 ### The 2024–25 inflection
 
 - **Salesforce launched Agentforce** in September 2024 — a suite of autonomous AI agents for business operations across the Salesforce platform. Source: [[2026-04-28-ai-index-report-2025|AI Index 2025]] §4.1 timeline.
-- **>80% of organizations plan to integrate AI agents within 1–3 years** ([[Capgemini]] research via [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]).
+- **>80% of organizations plan to integrate AI agents within 1–3 years** (Capgemini research via [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]).
 - **AI agents could double the capacity** of knowledge professionals and field-support roles ([[PwC]] prediction via MITTRI/Cisco).
 - [[2026-04-28-mit-sloan-ai-maturity|MIT CISR]]'s Four Stages framework places "exploring autonomous agents" as a **Stage 3** (Develop AI ways of working) attribute, and "combining traditional + generative + agentic + robotic AI" as a **Stage 4** (Become AI future-ready) attribute. Stage 4 covers only **7%** of firms (2022 baseline) — agents at scale remain rare.
 
@@ -92,7 +92,7 @@ The [[2026-05-07-anthropic-managed-agents-decoupling-brain-hands|Anthropic Manag
 Two consequences worth marking:
 
 - **Security as structural unreachability, not as policy.** The hands tier runs in a sandbox the brain cannot directly drive — the model emits tool-call requests, and a separate executor decides whether and how to run them. This is the engineering version of the [[responsible-ai|"agent risk"]] story: rather than relying on the model to *refuse* dangerous actions, the architecture makes most dangerous actions structurally unreachable.
-- **"Context anxiety" is model-specific.** The post observes that [[Claude Sonnet 4.5]] sometimes wraps up tasks prematurely when its context window fills — a failure mode not present on **Claude Opus 4.5** under the same harness. This is the first empirical evidence in this wiki that long-horizon agent reliability varies by model within a family, not just across families. It also reframes the RE-Bench 32-hour finding: long-horizon weakness is partly an **architectural** problem (context window saturation) and partly a **model-quality** problem (how the model responds when saturation looms).
+- **"Context anxiety" is model-specific.** The post observes that Claude Sonnet 4.5 sometimes wraps up tasks prematurely when its context window fills — a failure mode not present on **Claude Opus 4.5** under the same harness. This is the first empirical evidence in this wiki that long-horizon agent reliability varies by model within a family, not just across families. It also reframes the RE-Bench 32-hour finding: long-horizon weakness is partly an **architectural** problem (context window saturation) and partly a **model-quality** problem (how the model responds when saturation looms).
 
 ### Capgemini's expected agent benefits (n unknown, sponsor-cited)
 
@@ -103,13 +103,13 @@ Two consequences worth marking:
 | AI agents would help me focus on more value-added activities | 64% |
 | The potential of AI agents to improve productivity outweighs the risks | 57% |
 
-Source: [[Capgemini]] 2025 via [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]. **Caveat:** the 57% on "outweighs the risks" is the lowest-scoring item — material minority concern.
+Source: Capgemini 2025 via [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]. **Caveat:** the 57% on "outweighs the risks" is the lowest-scoring item — material minority concern.
 
 ### The CX angle
 
 Customer experience (CX) is the most-cited near-term agent application. Per [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]:
 - Customers are **3.8× more likely to purchase again** following a successful service experience.
-- "It's not about replacing roles. It's about where we can give agency, with some human oversight and governance, to improve tasks within a workflow." — [[Liz Centoni]], EVP & Chief CX Officer, [[Cisco]].
+- "It's not about replacing roles. It's about where we can give agency, with some human oversight and governance, to improve tasks within a workflow." — Liz Centoni, EVP & Chief CX Officer, [[Cisco]].
 
 ### Agentic commerce at consumer scale (China, May 2026)
 

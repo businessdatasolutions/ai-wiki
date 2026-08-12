@@ -45,7 +45,7 @@ A summary of an [[MIT CISR]] research briefing by [[Stephanie Woerner]], [[Peter
 3. **Synchronization** — Create AI-ready people, roles, and teams while redesigning work around AI capabilities.
 4. **Stewardship** — Embed and monitor compliant, human-centered, and transparent AI practices by design.
 
-### Case study 1: [[Guardian Life Insurance]]
+### Case study 1: Guardian Life Insurance
 
 Three areas of AI use: customer experience, operating efficiency, employee productivity.
 
@@ -54,7 +54,7 @@ Three areas of AI use: customer experience, operating efficiency, employee produ
 - **Synchronization** — Reskilling the workforce by reorganizing employees into AI-focused roles and emphasizing solving end-to-end business problems. Longer-term plans include rotations and training programs to build hybrid business-technical skills.
 - **Stewardship** — Given its regulated environment, embedded governance with risk, legal, and compliance teams. Architecture reviews via both formal and fast-track boards, ensuring privacy, security, and regulatory requirements built into new solutions.
 
-### Case study 2: [[Italgas]]
+### Case study 2: Italgas
 
 Europe's largest natural gas distributor. Three areas of AI use: managing infrastructure, boosting efficiency, improving safety. **Digital Factory** is the innovation hub anchoring this work, supported by executive sponsorship and cross-functional teams.
 
@@ -94,7 +94,7 @@ The methodological caveat: the MIT CISR Future Ready Survey is from **2022** (N=
 
 ## Linked entities and concepts
 
-**Entities (this wiki):** [[MIT CISR]], [[Stephanie Woerner]], [[Peter Weill]]. **Dangling (not yet promoted):** [[Ina Sebastian]], [[Evgeny Káganer]], [[Kristin Burnham]] (journalist), [[Guardian Life Insurance]], [[Italgas]], [[IESE Business School]], [[MIT Sloan]].
+**Entities (this wiki):** [[MIT CISR]], [[Stephanie Woerner]], [[Peter Weill]]. **Dangling (not yet promoted):** Ina Sebastian, Evgeny Káganer, Kristin Burnham (journalist), Guardian Life Insurance, Italgas, IESE Business School, MIT Sloan.
 
 **Concepts:** [[enterprise-ai-adoption]] (substantially enriched by this source), [[responsible-ai]] (stewardship operationalized), [[generative-ai]] (agentic AI in Stage 4).
 

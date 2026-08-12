@@ -19,7 +19,7 @@ METR's task-horizon benchmark is referenced in [[2026-04-28-anthropic-economic-i
 
 - Benchmark: a fixed task set spanning varied human-time durations.
 - Metric: the duration at which an AI model achieves 50% success.
-- For [[Claude Sonnet 4.5]]: METR reports ~2 hours.
+- For Claude Sonnet 4.5: METR reports ~2 hours.
 
 The Anthropic report's own data, computed differently, finds Claude Sonnet 4.5 reaches 50% success at ~3.5 hours (1P API) and ~19 hours (Claude.ai). Methodology differences (selection bias on Claude.ai, task decomposition with feedback loops) account for the gap; see the source page for detail.
 

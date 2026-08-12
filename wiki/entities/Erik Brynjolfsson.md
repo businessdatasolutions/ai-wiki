@@ -3,7 +3,7 @@ type: entity
 kind: person
 aliases: ["Erik Brynjolfsson"]
 tags: [stanford, nber, ai-research, digital-economy, labor-economics, productivity]
-affiliation: "[[Stanford Digital Economy Lab]] / [[Stanford HAI]] / [[NBER]]"
+affiliation: "[[Stanford Digital Economy Lab]] / [[Stanford HAI]] / NBER"
 role: "Director, Stanford Digital Economy Lab; AI Index Steering Committee member"
 contact: "erikb@stanford.edu"
 confidence: 0.9

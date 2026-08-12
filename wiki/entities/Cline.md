@@ -13,9 +13,6 @@ relationships:
   - type: instance-of
     target: agent-harness
     via: "Cline is a named coding-agent harness — one of the *convergent* top coding agents Osmani identifies (alongside Claude Code, Cursor, Codex, Aider)"
-  - type: employs
-    target: Ara-Khan
-    via: "leads Cline's eval-discipline programme; speaker at AI Dev 26 x SF"
 ---
 
 # Cline
@@ -29,7 +26,7 @@ The wiki promotes Cline to an entity page on 25 May 2026 via the **cross-page-pr
 Cline is the **canonical wiki anchor for the *customer-of-model-vendor coding-agent vendor* category**. The category sits between:
 
 - **Model vendors with reference agents** ([[Anthropic]] / Claude Code, [[OpenAI]] / Codex, Google / Gemini CLI) — vertically integrated model + agent
-- **Coding-agent vendors with proprietary stacks** ([[Cursor]] is the canonical example) — closed-source agent, often with custom model layers
+- **Coding-agent vendors with proprietary stacks** (Cursor is the canonical example) — closed-source agent, often with custom model layers
 - **Open-source coding-agent harnesses** (Cline, Aider, Open Code) — third-party harnesses runnable on multiple model vendors' APIs
 
 Cline's competitive thesis (Khan / AI Dev 26): **harness engineering systematically beats vendor reference-agents on the vendor's own model**. The empirical anchor: *"We were able to beat Claude Code in Opus 4.5 evals"* on Stanford terminal-bench, *"we figured out some tiny knobs that they couldn't figure out or they didn't optimize for."*
@@ -50,7 +47,7 @@ The most-load-bearing substantive content the wiki holds on Cline. Headline elem
 
 1. **Adopted Stanford terminal-bench** as the eval substrate — 89 problems at the real-software-engineering-task altitude (database issues, race conditions, frontend bugs, regex, latency, caching). Agents run 5-45 min per problem; deterministic unit-test grading.
 2. **Used Harbor** (terminal-bench's containerised isolated-environment infrastructure) for parallel eval runs without cross-contamination.
-3. **Used [[Modal]]** as the underlying infrastructure layer for parallel containerised eval environments.
+3. **Used Modal** as the underlying infrastructure layer for parallel containerised eval environments.
 4. **Tracked turns / tool calls / tokens / run-time** alongside pass/fail to enable cost-aware model selection.
 5. **The three-things-being-tested framework**: model + harness + problem-space alignment. The harness-as-confounder observation: *"if a new model from Anthropic comes out, I guarantee you would have noticed that it works better in Claude Code compared to say Droid or Cursor sometimes. If it's the same model, why is it that it's much better in Claude Code than some other agent? That's basically what you're testing here."*
 6. **The three-zones-of-improvement framework**: Zone 1 (obvious flaws — broken read-file tool, broken agent turns, broken checkpoints — fix first) → Zone 2 (real hill-climbing — too many tools, wrong tools, prompt engineering issues) → Zone 3 (danger zone — Goodhart-style overfitting to the metric).
@@ -64,7 +61,7 @@ Osmani's framing (*[[2026-05-15-osmani-agent-harness-engineering|harness enginee
 Cline's positioning within the convergent set:
 
 - **vs Claude Code** ([[Anthropic]]'s reference agent): Cline runs on the same Anthropic models, with a third-party harness that Khan claims out-performs Claude Code on at least some Opus 4.5 evals. The vendor-vs-customer-of-vendor competitive tension is the most-pointed in the wiki's coding-agent landscape.
-- **vs [[Cursor]]**: closed-source competitor; Khan references Cursor as an example of the *same-model-different-harness-different-results* observation.
+- **vs Cursor**: closed-source competitor; Khan references Cursor as an example of the *same-model-different-harness-different-results* observation.
 - **vs Codex** ([[OpenAI]]'s reference agent): the OpenAI-side equivalent of Claude Code.
 - **vs Aider**: open-source CLI-first coding agent; less surface area in the wiki than Cline at ingest time.
 - **vs Open Code**: another open-source agent referenced in [[2026-05-20-ng-deeplearningai-ai-dev-26-sf-future-of-software-engineering|Ng / AI Dev 26]] as a coding-agent option.

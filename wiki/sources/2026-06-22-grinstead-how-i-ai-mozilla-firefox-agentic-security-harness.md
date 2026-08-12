@@ -42,7 +42,7 @@ relationships:
 
 # Grinstead / How I AI — How Mozilla finds Firefox security bugs with an agentic harness (2026-06-22)
 
-A ~48-minute [[How-I-AI|How I AI]] episode published 22 June 2026, hosted by **[[Claire Vo]]** with guest **Brian Grinstead** (distinguished engineer at [[Mozilla]]; on Firefox and the web platform since 2013, joined to help launch Firefox DevTools). The hook is a viral chart — *Firefox Security Bug Fixes by Month* spiking to multiples in April — that the timeline attributed to Anthropic's new (not-yet-fully-released) **Mythos** model. Grinstead's "story behind the story": the model helped, but the **custom harness and pipeline did just as much of the work**, and he walks through exactly how it runs and how anyone can build a starter version.
+A ~48-minute [[How-I-AI|How I AI]] episode published 22 June 2026, hosted by **[[Claire Vo]]** with guest **Brian Grinstead** (distinguished engineer at Mozilla; on Firefox and the web platform since 2013, joined to help launch Firefox DevTools). The hook is a viral chart — *Firefox Security Bug Fixes by Month* spiking to multiples in April — that the timeline attributed to Anthropic's new (not-yet-fully-released) **Mythos** model. Grinstead's "story behind the story": the model helped, but the **custom harness and pipeline did just as much of the work**, and he walks through exactly how it runs and how anyone can build a starter version.
 
 This is the wiki's first **production security-engineering** instance of the [[agent-harness|agent-harness]] / [[agentic-engineering|agentic-engineering]] cluster, and a same-channel applied companion to [[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex|Vo's goal-loop episode]].
 

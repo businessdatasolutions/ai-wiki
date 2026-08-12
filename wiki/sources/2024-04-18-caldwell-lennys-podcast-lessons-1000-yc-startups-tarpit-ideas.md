@@ -45,7 +45,7 @@ relationships:
 
 # Caldwell / Lenny's Podcast — Lessons from 1,000+ YC startups (tar pit ideas, pivoting, resilience)
 
-[[Lenny Rachitsky]] interviews [[Dalton Caldwell]] (managing director and group partner at [[Y Combinator]], 10+ years across 21 batches) on the [[Lenny's Podcast]] interview series — published 18 April 2024, ~81 minutes. **The wiki's first deep evergreen-YC-partner anchor on the pre-current-AI-wave practitioner-wisdom layer of the YC corpus** — predates the wiki's spring 2026 YC partner-content burst (Tan / GStack / Hu / Stanford CS153 / etc.) by two years and provides the foundational vocabulary (*tar pit ideas* / *just don't die* / *find an incumbent with low NPS* / *customer-validation-first*) the later episodes inherit and assume.
+Lenny Rachitsky interviews [[Dalton Caldwell]] (managing director and group partner at [[Y Combinator]], 10+ years across 21 batches) on the [[Lenny's Podcast]] interview series — published 18 April 2024, ~81 minutes. **The wiki's first deep evergreen-YC-partner anchor on the pre-current-AI-wave practitioner-wisdom layer of the YC corpus** — predates the wiki's spring 2026 YC partner-content burst (Tan / GStack / Hu / Stanford CS153 / etc.) by two years and provides the foundational vocabulary (*tar pit ideas* / *just don't die* / *find an incumbent with low NPS* / *customer-validation-first*) the later episodes inherit and assume.
 
 ## TL;DR
 
@@ -152,16 +152,16 @@ Caldwell mentions his early-2000s San Francisco peer-group included **Zuckerberg
 
 - **[[Y Combinator]]** — accelerator; Caldwell is managing director / group partner. **Source-count bumps 10→11.**
 - **[[Dalton Caldwell]]** — **promoted from Dangling to entity page** (this is his second substantive source — first was Glasgow / Campfire May 2026 where he was named as YC partner-of-record but not the speaker; this is his first headlining-vantage source). Existing Dangling-list entry on [[Y Combinator]] page should be retired.
-- **[[Lenny Rachitsky]]** — host. Existing Dangling first-mention from Schoening / Lenny's Podcast (May 2026). This is the second substantive source citation — second-source-promotion candidate, but the surface area of Lenny Rachitsky as a wiki-relevant entity is modest (he's the interviewer; what matters is the channel's content), so the wiki may defer the promotion further if his vantage doesn't add wiki-load-bearing content beyond the channel-entity ([[Lenny's Podcast]]).
+- **Lenny Rachitsky** — host. Existing Dangling first-mention from Schoening / Lenny's Podcast (May 2026). This is the second substantive source citation — second-source-promotion candidate, but the surface area of Lenny Rachitsky as a wiki-relevant entity is modest (he's the interviewer; what matters is the channel's content), so the wiki may defer the promotion further if his vantage doesn't add wiki-load-bearing content beyond the channel-entity ([[Lenny's Podcast]]).
 - **[[Lenny's Podcast]]** — channel-entity (existing; source-count bumps 3→4).
-- **[[Rujul Zaparde]]** — Dangling first mention (Zip co-founder; the operational worked example of the pivot template).
-- **[[Zip]]** — Dangling first mention (procurement software; YC company; six-pivot success story).
-- **[[Brex]]** — Dangling first mention (the Winter 17 batch anchor anecdote; also the Brex India TAM case study).
-- **[[Stripe]]** — substantive cross-mention (~51:13, on Patrick Collison's conviction-building arc).
-- **[[Michael Seibel]]** — Dangling first mention (Caldwell endorses Seibel's mountains-and-desert metaphor at 21:23).
-- **[[Scott Belsky]]** — Dangling first mention (Caldwell pulls the *more conviction over time vs less* heuristic from Lenny's episode with Belsky on when-to-pivot).
-- **[[Danny Alberon]]** — Dangling first mention (YC founder who asked the *what is wrong with our batch* question).
-- **[[Pete Kazi]]** — Dangling first mention (Caldwell endorses his book *Founding Sales*).
+- **Rujul Zaparde** — Dangling first mention (Zip co-founder; the operational worked example of the pivot template).
+- **Zip** — Dangling first mention (procurement software; YC company; six-pivot success story).
+- **Brex** — Dangling first mention (the Winter 17 batch anchor anecdote; also the Brex India TAM case study).
+- **Stripe** — substantive cross-mention (~51:13, on Patrick Collison's conviction-building arc).
+- **Michael Seibel** — Dangling first mention (Caldwell endorses Seibel's mountains-and-desert metaphor at 21:23).
+- **Scott Belsky** — Dangling first mention (Caldwell pulls the *more conviction over time vs less* heuristic from Lenny's episode with Belsky on when-to-pivot).
+- **Danny Alberon** — Dangling first mention (YC founder who asked the *what is wrong with our batch* question).
+- **Pete Kazi** — Dangling first mention (Caldwell endorses his book *Founding Sales*).
 
 **Concepts touched substantively:**
 

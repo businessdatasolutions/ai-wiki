@@ -14,7 +14,7 @@ source_count: 1
 
 **Chief Scientist for Software Engineering at IBM** (IBM Fellow). Co-author of the **Gang of Four** *Design Patterns: Elements of Reusable Object-Oriented Software* (1994) with Erich Gamma, Richard Helm, and John Vlissides — the canonical text that established *design patterns as a named software-engineering discipline*. Creator of the **Unified Modeling Language (UML)** — the standard pictorial representation of software systems used across the *modern software engineering* discipline.
 
-[[Paul Everitt]] at [[2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering|AI Dev 26 SF]] cites Booch repeatedly as the conceptual lineage for the *agentic engineering* reframe:
+Paul Everitt at [[2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering|AI Dev 26 SF]] cites Booch repeatedly as the conceptual lineage for the *agentic engineering* reframe:
 
 - **The *third golden age of software engineering* podcast** — Booch's interview where he argues *"coding was never really the big thing for software engineering — software engineering was so much more than that."* + *"coding was never the bottleneck."* Cited as the conceptual substrate for Everitt's *engineering-discipline reframe at AI scale* argument.
 - **The *go back to first principles, master systems design* call** — Everitt: *"From the first golden age, go back to first principles. You want to be valuable? Go back to first principles and master systems design."*

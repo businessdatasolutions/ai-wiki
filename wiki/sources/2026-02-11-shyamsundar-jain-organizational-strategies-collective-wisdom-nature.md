@@ -30,7 +30,7 @@ relationships:
 
 # Shyamsundar & Jain — Organizational Strategies from the Collective Wisdom of Nature
 
-A **9-minute O'Reilly Radar essay** by **[[Shreshta Shyamsundar]]** and **[[Anmol Jain]]**. Published **11 February 2026**. Argues that **most organisations make a binary mistake — assume every problem requires either total central control or total decentralisation — when nature actually offers a range of coordination models** that fit different problem types. The thesis is structural, not ideological: ***distribute decision-making by problem type, not by ideology***.
+A **9-minute O'Reilly Radar essay** by **Shreshta Shyamsundar** and **Anmol Jain**. Published **11 February 2026**. Argues that **most organisations make a binary mistake — assume every problem requires either total central control or total decentralisation — when nature actually offers a range of coordination models** that fit different problem types. The thesis is structural, not ideological: ***distribute decision-making by problem type, not by ideology***.
 
 The essay anchors on a logistics-company anecdote (*"Circa 2016, a logistics company was drowning"*) — centralized routing couldn't keep pace with millions of daily deliveries. The fix: tell thousands of drivers to *take the shortest available route you see, avoid congested zones, coordinate with your neighbors. Ignore the central system if it makes sense to ignore it.* First week was chaos. Second week, drivers started talking to each other. **Within months: delivery times −15%, fuel costs −12%, system became more resilient to disruptions, not less.**
 
@@ -74,8 +74,8 @@ Full 10-page PDF print of the O'Reilly Radar article — 9-minute reading time c
 
 ## Named entities (this ingest)
 
-- [[Shreshta Shyamsundar]] — Co-author. **First mention.** *Dangling.*
-- [[Anmol Jain]] — Co-author. **First mention.** *Dangling.*
+- Shreshta Shyamsundar — Co-author. **First mention.** *Dangling.*
+- Anmol Jain — Co-author. **First mention.** *Dangling.*
 
 Plus passing real-world-application named entities (Amazon, Netflix, Southwest, Copenhagen, Singapore, Snowflake/Databricks/Salesforce in the broader Radar-cluster context) — handled at the source-page level via wikilinks where existing entity pages cover them; no new entity pages triggered.
 

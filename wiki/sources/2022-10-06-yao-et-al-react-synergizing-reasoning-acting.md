@@ -24,7 +24,7 @@ relationships:
 
 The **foundational primary source** for the wiki's entire agent/[[agent-harness|harness]] cluster: the 2022 paper (presented at **ICLR 2023**) that introduced **ReAct** — interleaving free-form **reasoning traces** ("thoughts") with **task-specific actions** in a single language-model trajectory. ReAct is the origin of the **reason → act → observe loop** that the wiki's [[ai-agents]] page now treats as the definition of an agent (*"an LLM that autonomously uses tools in a loop"*). Until this ingest the loop was cited only through 2026 secondary practitioner sources; this page back-fills its genealogical root.
 
-Work by **[[Shunyu Yao]]** (Princeton, during a Google internship) with Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, [[Karthik Narasimhan]] (Princeton advisor), and **[[Yuan Cao]]** ([[Google Research]], Brain team).
+Work by **[[Shunyu Yao]]** (Princeton, during a Google internship) with Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan (Princeton advisor), and **[[Yuan Cao]]** ([[Google Research]], Brain team).
 
 ## TL;DR
 
@@ -47,7 +47,7 @@ The wiki's [[ai-agents]] working definition — *"an LLM that autonomously uses 
 ## Linked entities and concepts
 
 - **Promoted to entities this ingest** (second-source rule — also author the [[2022-11-08-yao-cao-react-google-research-blog|Google Research blog]]): [[Shunyu Yao]], [[Yuan Cao]].
-- **Dangling** (single-source mention, deferred): Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, [[Karthik Narasimhan]] (Princeton NLP advisor — strong promotion candidate on next coverage).
+- **Dangling** (single-source mention, deferred): Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan (Princeton NLP advisor — strong promotion candidate on next coverage).
 - Concepts: [[react-reasoning-acting]] (new this ingest), [[ai-agents]], [[agent-harness]], [[foundation-models]] (PaLM-540B).
 - Publisher: [[Google Research]] (Brain team) with Princeton University.
 

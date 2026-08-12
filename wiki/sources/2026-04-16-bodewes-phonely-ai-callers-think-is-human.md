@@ -72,7 +72,7 @@ Topics not covered in this fireside (worth tracking if Phonely surfaces again): 
 **Entities promoted by this source:**
 
 - [[Y Combinator]] — channel; already entity. Bumps source-count.
-- [[Groq]] — fast inference chip provider; named as Phonely's inference hardware partner *"from the early days... mostly for latency."* First wiki mention; currently Dangling; promote on second-source mention.
+- Groq — fast inference chip provider; named as Phonely's inference hardware partner *"from the early days... mostly for latency."* First wiki mention; currently Dangling; promote on second-source mention.
 
 **Dangling — single-source mention, deferred:**
 

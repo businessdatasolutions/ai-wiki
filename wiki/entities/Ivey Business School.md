@@ -20,7 +20,7 @@ relationships:
 
 Business school at Western University, London, Ontario, Canada. Notable for case-method teaching tradition.
 
-Houses [[Innovation North]] — a research-practice initiative on systems-level innovation cited in [[2026-04-28-bansal-birkinshaw-systems-thinking]].
+Houses Innovation North — a research-practice initiative on systems-level innovation cited in [[2026-04-28-bansal-birkinshaw-systems-thinking]].
 
 ## Affiliated authors in this wiki
 

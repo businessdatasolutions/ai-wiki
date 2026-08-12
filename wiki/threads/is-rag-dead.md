@@ -55,7 +55,7 @@ RAG's three named failure points (cites a 2024 paper with 7 total):
 
 Three-axis context-failure taxonomy: **too much / too little / confusing**. Strict superset of SurrealDB's three failure modes.
 
-**File systems are bad databases** structural critique — current Codex/Claude-Code default (file-system + bash) has poor concurrency / no indexing / grep-only search / sandbox heavyweight. Cites [[Swyx]]'s *"Oops, You Wrote a Database"* article.
+**File systems are bad databases** structural critique — current Codex/Claude-Code default (file-system + bash) has poor concurrency / no indexing / grep-only search / sandbox heavyweight. Cites Swyx's *"Oops, You Wrote a Database"* article.
 
 **The bitter-lesson direction**: context engineering will be folded back into the models themselves. Chroma just released a model trained to edit its own context. *"If you want to bet on the future, you should bet that will be the case."*
 
