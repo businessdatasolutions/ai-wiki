@@ -2,13 +2,13 @@
 type: entity
 kind: organization
 aliases: ["Y Combinator", "YC", "YC Root Access"]
-tags: [accelerator, venture-capital, silicon-valley, startup-school, ai-native-companies, founder-firesides, yc-root-access]
+tags: [accelerator, venture-capital, silicon-valley, startup-school, startup-school-2026, ai-native-companies, founder-firesides, yc-root-access]
 since: 2005
 website: "https://www.ycombinator.com"
 confidence: 0.95
-last_confirmed: "2026-06-23"
-accessed_at: "2026-07-01"
-source_count: 14
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 15
 ---
 
 # Y Combinator
@@ -18,6 +18,8 @@ source_count: 14
 Promoted to a wiki entity page on 12 May 2026 after appearing as `author:` (channel) on two ingested videos in two consecutive days (Tan 23 April + Hu 24 April). **Bumped to source_count: 3 on 14 May 2026** with the addition of [[2026-04-25-masad-replit-ceo-only-two-jobs-left|Masad / Replit on Founder Firesides]], landing one day after Hu and forming a three-day YC-channel cluster on the AI-native-company thesis from three distinct vantages (President / Partner / Portfolio-founder). **Bumped to source_count: 4 on 21 May 2026** with the addition of [[2026-05-19-garg-yc-internal-ai-agent-evolves-itself|Garg / AnswerThis on YC Root Access]] (19 May 2026), extending the anchor triple into a quad and adding the **2-FTE-startup-scale** portfolio-founder vantage on a fourth YC channel (*YC Root Access*). **Bumped to source_count: 5 on 21 May 2026** (same day as Garg) with the addition of [[2026-05-20-glasgow-campfire-erp-for-ai-revolution|Glasgow / Campfire on YC Root Access]] — the **enterprise-B2B founder-vantage worked example** of the AI-native-company thesis: tech-company-targeted AI-native ERP pulling enterprise customers off NetSuite from Q4 2024 onward, ARR more-than-doubling each quarter since. With Glasgow, **YC Root Access becomes the second YC channel** (after the Garg ingest) to land two ingested sources, and is promoted to alias on this entity page so the dangling-authors lint resolves it back to Y Combinator (same convention as Anthropic's *Claude* channel alias). **Bumped to source_count: 10 on 22 May 2026** with the addition of three earlier YC Root Access *Founder Firesides* episodes that backfill the channel-cluster from February–April 2026: [[2026-02-25-akhtar-forget-yc-letter-ai-powered-revenue|Akhtar & Forget / Letter AI (25 Feb)]], [[2026-03-23-wu-an-yc-momentic-qa-layer-ai-coding-era|Wu & An / Momentic (23 March)]], and [[2026-04-09-dinakaran-yc-luminai-automating-americas-biggest-hospitals|Dinakaran / Luminai (9 April)]]. With these three ingests **YC Root Access becomes the YC channel with the deepest wiki coverage** (six sources spanning Feb–May 2026), and the Founder Firesides format gains three vertical-AI portfolio-vendor vantages — sales-enablement (Letter AI), QA/testing (Momentic), and healthcare-administrative automation (Luminai).
 
 ## Role in the wiki
+
+**Bumped to source_count: 15 on 12 August 2026** with [[2026-07-31-collison-yc-startup-school-is-ai-breaking-the-lean-startup-playbook|Patrick Collison in conversation with Harj Taggar at Startup School 2026]] (31 July 2026) — the wiki's first **outside-founder-at-YC** source rather than a partner, a portfolio founder, or YC's own president. Two contributions stand out. First, a direct challenge to YC's own house doctrine: the lean-startup path of finding a niche and iteratively expanding is *"much more aggressively tilled"* now that AI has made it cheap for everyone, so *"maybe you have to more aggressively **decorrelate** in the era of AI"* — and Stripe's own two-year pre-launch build, grounded by production users from month two rather than by an early launch, is offered as the counter-example. Second, the wiki's most concrete **business-formation dataset**: new businesses starting on Stripe up **~2x year-over-year** (the largest relative jump Stripe has recorded, larger than the COVID inflection), with the median business performing better than a year ago and time-to-revenue for Atlas-incorporated companies declining — which Collison reads as evidence against the AI-centralisation thesis (*"many thousands of winners"*). Taggar corroborates from the batches that day-0-to-90 growth is now driven by **enterprises willing to buy from startups**, *"which is the new thing."* First-party platform data reported verbally on stage, so unaudited. See [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey]] for the opposing business-dynamism reading.
 
 YC is the **AI-native-startup-formation vantage** the wiki tracks across ten distinct 2026-batch-contemporaneous sources spanning February–May 2026 and four distinct YC channels (Tan's personal channel / Startup School / Founder Firesides / YC Root Access). The 22 May 2026 batch ingest backfilled the channel-cluster with three earlier *Founder Firesides* episodes on YC Root Access (Letter AI / Momentic / Luminai — sections 7–9 below) that pre-date the spring 2026 partner-content burst and re-anchor the cluster on the **portfolio-founder vantages of vertical-AI Series A/B graduates**:
 
@@ -137,5 +139,6 @@ SORT file.name ASC
 - **YC AI-batch composition** — what fraction of YC's W26 / S26 batch is AI-native by default? First-party YC disclosure would substantiate the *"this is the AI batch"* implicit framing in both Tan and Hu.
 - **YC-portfolio adoption of GStack** — Tan ships GStack; how many YC portfolio companies adopt it? First-party data.
 - **The 1-billion-startups-in-10-years analog** — Hu's *1,000× engineer* thesis suggests dramatic founder-leverage shifts. Does YC's accelerator throughput change in response?
+- **Stripe's business-formation series** — Collison's ~2x-year-over-year figure, the improving median business, and the declining time-to-revenue are stated verbally with no published methodology or absolute base. A Stripe-published version of the series would let the wiki weigh it against the economy-wide entry statistics [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey]] cites in the other direction.
 - **YC-partner-content cadence as a wiki source** — if Tan + Hu are representative of YC's content velocity, the wiki should expect to ingest more YC-partner-public-content sources at rate-of-batch-cycle (every ~3 months).
 - **The YC Root Access multi-talk session Garg sits in** — Garg references *"Pete and Tom and Gary"* (likely Pete Koomen, Tom Blomfield, Garry Tan) as prior speakers. If the other slots in this session are ingestible, the wiki would gain a four-source YC Root Access session-level anchor on agent-harness engineering at startup scale — a candidate for its own [[wiki/threads|thread]] page.

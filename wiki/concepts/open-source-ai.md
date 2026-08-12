@@ -2,10 +2,10 @@
 type: concept
 aliases: ["open source AI", "open-source AI", "open-weight models", "open weights", "open models", "AI sovereignty", "own vs rent AI"]
 tags: [open-source-ai, open-weight-models, own-vs-rent, ai-sovereignty, concentration-of-power, china-open-models, safety-through-transparency, hugging-face]
-confidence: 0.72
-last_confirmed: "2026-07-22"
-accessed_at: "2026-07-22"
-source_count: 2
+confidence: 0.8
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 4
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -43,16 +43,37 @@ Per Hugging Face's own Spring 2026 report (cited in [[2026-07-10-hugging-face-ce
 
 Delangue: "the biggest risk in AI is **concentration of power**." The AI companies becoming the most *valuable* are also becoming the most *powerful* (he cites an AI firm's leverage vis-à-vis the US Department of War); a world where "a few companies completely dominate AI" is "basically similar to if there were just one or two companies able to do software" — "the real dangerous scary scenario." Open source is the counter-force: it "enables innovation, competition, job creation; you don't create monopolies." The same logic drives his robotics argument — a home robot shouldn't be "a black box controlled by a few," "especially if these organizations' CEO is not the most stable person in the world."
 
+## Two non-vendor routes to the same conclusion ([[2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company|BBC AI Decoded]] + [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey / Bloomberg]], August 2026)
+
+Both of this page's founding sources were open-model vendors, which capped its confidence at 0.72 for self-interest. Two August 2026 sources reach substantially the same conclusions **without selling open weights** — an enterprise-AI advisor arguing from data trust, and an academic economist arguing from national capacity.
+
+**Peter Grant**, on the BBC's *AI Decoded* panel, states the enterprise buyer's version of the own-vs-rent argument, and reaches a stronger conclusion than this page previously held — a partial **return to on-premise**:
+
+> *"Kimi just got released from China, which is an open model… you can take that model, you can install it yourself, you could put a firewall around it, you understand the weights, the algorithms and everything else. Where a closed model, you'll be giving your data to that model. They can take it, they can use all that information. And that's what scares enterprises the most… I think what you're going to see is a hybrid. You're going to see large organizations actually go back to on-prem. They will protect all their data at all costs and they decide where they send the query to for the agent — whether it goes outside the organization for a very basic query or internally for something to protect their own IP. Which ultimately **comes back to trust.**"*
+
+The routing decision he describes — per-query, by sensitivity, between an external frontier API and an internal open model — is a more granular version of the own-vs-rent flow this page holds from [[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue]], and it is driven by **IP protection rather than by cost at scale**. Note the caveat: Grant sells enterprise AI advisory services, so he is not a disinterested party, but he has no stake in open weights specifically.
+
+**Carl Benedikt Frey** supplies the page's first genuinely independent vantage — an academic economist with no commercial position in the question — and adds a **geopolitical trigger** the page has not carried. His premise is that frontier-model access is becoming a lever of statecraft: "you saw that recently with the Trump administration imposing restrictions on foreign use of Anthropic's latest model. We can expect to see similar things happening going forward, perhaps at greater scale." The conclusion he draws for every country behind the frontier:
+
+> *"You cannot really be dependent on the technology leader. You have to try to grow some domestic capacity, and with large language models **the easiest way of doing that is through open source or open weights** — and that's how China has closed the gap. It really embraced an open-weight ecosystem, in large part because of **export controls on chips**, which essentially forced it to go there."*
+
+Two things this adds. First, an **independent causal account of China's open-model position** that matches Delangue's observation without sharing his interest: not ideology but constraint — chip export controls pushed China toward an efficiency-and-openness strategy. Second, a **forecast about the demand side** of the open ecosystem: many countries "will be probably pivoting either towards Chinese or European technology if they feel that America is an unreliable trading partner in technology," or attempting a domestic open-weight ecosystem, "although that is going to be a harder approach for most places."
+
+Four sources now, from four positions — an open-model platform CEO, a silicon vendor, an enterprise-AI advisor, and an academic economist. The last two have no stake in open weights, which is what lifts this page's confidence from 0.72 to **0.80**. What is still missing is *empirical* corroboration: no source on this page measures how much enterprise inference actually runs on owned or open models versus rented frontier APIs.
+
 ## Sources consulted
 
 - [[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue / Hugging Face (TechCrunch Equity, Jul 2026)]] — the fullest single-source treatment: own-vs-rent flow, safety-through-transparency, China's open-model lead, concentration-of-power, local AI / robotics.
 - [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Huang / NVIDIA (LangChain, Jul 2026)]] — the own-vs-rent thesis from the substrate/silicon side; proprietary specialization on open weights; the Nemotron benchmark.
+- [[2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company|BBC AI Decoded (Aug 2026)]] — the enterprise-buyer vantage: self-hosting an open model behind a firewall, per-query routing by sensitivity, and a predicted partial return to on-premise, driven by IP protection rather than cost.
+- [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey / Bloomberg Trumponomics (Aug 2026)]] — the academic-economist vantage: open weights as the route to domestic AI capacity for countries behind the frontier; export controls as the cause of China's open-weight position; frontier-model access as an instrument of statecraft.
 - [[2026-03-20-huggingface-agentic-evaluations-workshop|Hugging Face Agentic Evaluations Workshop (Mar 2026)]] — the open-evals corollary: open weights as a precondition for *studying, trusting, and improving* AI (background support, not counted in `source_count`).
 
 ## Debates and supersession
 
 - **Open-vs-closed as a safety question is unresolved in the corpus.** Delangue argues transparency makes open source *safer* and concentration is the real danger; the closed-labs framing (which halted the [[Anthropic]] Fable and OpenAI GPT 5.6 releases "for cybersecurity concerns") argues the opposite — that frontier capabilities need gating. The wiki holds both without resolving; see [[responsible-ai]]. No supersession.
-- **Vendor-advocacy discount.** Both current sources are vendor-CEO interviews (Hugging Face sells open-model infrastructure; NVIDIA sells the silicon and Nemotron weights beneath it), so the pro-open claims are self-interested. Per [Lifecycle rules](../../CLAUDE.md#lifecycle), two vendor-advocacy sources cap `confidence` at ~0.72 pending independent/empirical corroboration (the AI Index open-weight-trend data and the primary Hugging Face Spring 2026 report are open ingest targets).
+- **Vendor-advocacy discount, partially lifted (2026-08-12).** The page's two founding sources are vendor-CEO interviews (Hugging Face sells open-model infrastructure; NVIDIA sells the silicon and Nemotron weights beneath it), so their pro-open claims are self-interested. The August 2026 additions are not: [[2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company|Grant]] sells enterprise AI advisory rather than open models, and [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey]] is an academic with no commercial position. `confidence` moves 0.72 → **0.80** on that basis. It stays below the cap because **no source on this page is empirical** — all four are interviews. The AI Index open-weight-trend data and the primary Hugging Face Spring 2026 report remain the open ingest targets that would close the gap.
+- **Two different drivers of the same behaviour, not yet disentangled.** Delangue and Huang argue firms move to open/owned models as **cost** bites at production scale; Grant argues they move for **IP protection and data control**; Frey argues states move for **strategic autonomy** under export-control and access-restriction risk. All three predict the same migration, so the page cannot currently distinguish them — and they imply different things about what would reverse it (cheaper frontier inference, better contractual data guarantees, and geopolitical détente respectively).
 - **"Workloads move to open/owned" ≠ "frontier labs decline."** Delangue explicitly hedges that OpenAI/Anthropic can remain "the most valuable companies" on frontier reasoning even if most workloads run on open/owned models. The claim is about *where workloads run*, not frontier-lab viability — keep the two distinct.
 
 ## Related concepts

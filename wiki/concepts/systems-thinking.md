@@ -2,10 +2,10 @@
 type: concept
 aliases: ["systems thinking", "systems-thinking"]
 tags: [systems-thinking, innovation, sustainability, design-thinking, breakthrough-thinking, wicked-problems]
-confidence: 0.87
-last_confirmed: "2026-07-19"
-accessed_at: "2026-07-19"
-source_count: 6
+confidence: 0.9
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 7
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -138,6 +138,16 @@ Two contributions sharpen the concept:
 - **A concrete organizational mechanism systems thinking is hired *for*.** Netflix's shift toward central/core-infrastructure engineering generalists building shared **paved paths** — explicitly motivated by agents needing source-of-truth data and consistent scaffolding across systems — is a named business reason systems thinking has become a hiring priority, not just an abstract virtue. This converges with [[2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer|Forsgren & Macvean's]] *"designing systems, not just bits of code"* engineering-altitude claim, here restated from the hiring-manager's chair at a large public incumbent rather than a conference keynote.
 
 The convergence point: five sources now (Bansal-Birkinshaw / Sterman / Carrier / Forsgren-Macvean / Stone) span strategic-innovation, foundational decision-making, industrial-AI, engineering-leadership, and cross-functional-hiring-criteria altitudes of the same underlying discipline — the widest altitude spread yet for this concept.
+
+## Systems thinking as agent-fleet management ([[2026-08-10-miller-worklab-the-ai-shift-most-companies-didnt-see-coming|Miller / WorkLab, August 2026]])
+
+[[2026-08-10-miller-worklab-the-ai-shift-most-companies-didnt-see-coming|Allie K. Miller]] names systems thinking as one of three things she interviews for, and — unlike this page's earlier sources, which reach it through problem-framing or design — arrives at it through a **span-of-control** argument. Her reason: "that's been the really big change the last year, where we're **managing multi-agent systems.** Like I have 34 agents for me working backstage… and I am managing those 34 right now."
+
+The structure she describes is a literal org chart made of software: a chief of staff agent ("Simon") with his own memory-and-documentation assistant; six direct reports, each with three to seven sub-agents; and those sub-agents able to spin up temporary agents she calls "civilians." She mostly talks only to the chief of staff. On that description, the competence required is delegation, escalation design and knowing which layer to inspect when an outcome is wrong — supervisory skills, not analytical ones.
+
+The consequence she draws is the sharp part, and it inverts the usual seniority story: the person disadvantaged is "the average person that you might interview, that's at the **IC level, who has never been a people manager** — [they] might actually have a pretty difficult time managing a mini org, a temporary digital workforce of AI agents, because they just haven't been exposed to that." Early-career staff are "in a really tough position on that systems thinking side, very strong on the AI side," while "if you've been a people manager… you have an unbelievable strength going into a multi-agent world."
+
+This is a distinct route to the same criterion [[2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era|Elizabeth Stone]] named three weeks earlier. Stone wants systems thinkers because engineers must "look across all the business domains and abstract that to here's the building blocks we're going to need" — a *design* argument. Miller wants them because someone has to run the fleet — a *management* argument. That two vantages this different converge on the same named skill is the more interesting datapoint than either claim alone; it is also worth noting that neither offers evidence beyond hiring practice, which is why this page's confidence moves only to 0.90. See also [[durable-skills]].
 
 ## Debates and supersession
 

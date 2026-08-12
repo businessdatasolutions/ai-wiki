@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-07-14"
-accessed_at: "2026-07-22"
-source_count: 54
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 55
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -393,6 +393,17 @@ This sits in useful tension with the same source's **call-center example** — a
 ## A third independent citation of "someone using AI will," echoed customer-side ([[2025-12-02-allen-brozovich-davis-aws-reinvent-advanced-team-structures|AWS re:Invent, December 2025]])
 
 Scott Galloway's *"AI won't take your job, somebody using AI will"* is now cited across all three editions of the AWS Enterprise Strategy "advanced team structures" talk franchise ([[2025-12-02-allen-brozovich-davis-aws-reinvent-advanced-team-structures|re:Invent, Dec 2025]], [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|London, May 2026]], [[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world|Sydney, Jun 2026]]). The re:Invent edition adds a **customer-side echo**: [[Danske Bank|Danske Bank]] CTO Richard Davis counters employee resistance ("why should I be using something that can replace me?") with the same reframe verbatim — *"GenAI won't necessarily replace your role, but people using GenAI potentially will."* Amazon's own internal asymmetric-resource-allocation framework (same source; see [[enterprise-ai-adoption]]) is a structural companion: strategic-differentiated work stays overwhelmingly human-judgment-led (~25% AI at most) while business-compliant, routine work skews heavily toward automation — an organizational-design instance of calibrating the automation/augmentation choice by work type rather than applying it uniformly.
+
+## Automate first or right-shore first — a sequencing decision, not a stance ([[2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services|Heimes & Peters / McKinsey Talks Operations, August 2026]])
+
+Most sources on this page treat automate-versus-augment as a question about *what a given task should become*. The McKinsey GBS episode adds an **ordering** question that sits upstream of it: when work is going to be both relocated into a shared-services organisation and partly automated, which happens first?
+
+- **Right-shore first** — migrate the work into GBS for talent, scale, standardisation and quick value capture, then apply AI to the now-standardised process. Suited to organisations "seeking to accelerate value capture."
+- **Automate first** — "completely reimagining the process flow **before** migrating some of that work into GBS." Suited to organisations "thinking about building a long-term digital capability" in core strategic processes.
+
+The panel refuses a general answer: "it's not one-size-fits-all. It's actually a little bit more **horses for courses**. Some parts of a process may benefit from moving to GBS first. Other parts of a process may benefit from automating first." Three factors decide it — existing capability and track record with AI, the impact expected and when it is needed, and the process type (procure-to-pay, order-to-cash and record-to-report differ in how readily AI can be applied). The observed split: green-field situations with low process maturity, urgency and "a lot of low-hanging fruit" still choose right-shore first; automate-first appears where the target is enterprise-value unlock (revenue leakage, price realisation, EBITDA basis points) rather than headcount or process cost.
+
+The episode's second contribution is an **adoption lesson about how augmentation is sold**, from a lighthouse that failed on the human side. A company built "just an incredible technology" for customer order and account management that could infer the intent behind each call — "and they just really struggled to get the sales force to adopt it. I think there was a lot of fear." Peters's two conclusions: "the people side of the equation is as big or bigger than the technological side," and the *framing* determines adoption — "can you show them how this gets to better outcomes for both them and the client, versus can you just show them, oh well, we can divert 50% of the calls and therefore we've driven a lot of savings." The augmentation upside he found actually worked was **status, not speed**: reps resolving calls "that normally would have been escalated to somebody sort of above their level," which is "a more gratifying experience for the employee." That is a concrete instance of this page's recurring finding that augmentation framings survive contact with the workforce where substitution framings do not — here observed as a deployment failure and its repair rather than asserted as a principle.
 
 ## Debates and supersession
 

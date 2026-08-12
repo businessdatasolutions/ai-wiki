@@ -3,9 +3,9 @@ type: concept
 aliases: ["dynamic capabilities", "dynamic-capabilities", "Teece dynamic capabilities", "sense seize transform"]
 tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, microfoundations]
 confidence: 0.95
-last_confirmed: "2026-07-22"
-accessed_at: "2026-07-22"
-source_count: 24
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 26
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -213,6 +213,16 @@ Notable methodological point for the concept: Stone explicitly frames Netflix's 
 - **`contextual/external-triggers`** — Chinese open models as disruptive competitors, the regulatory environment (US limits on private model releases), and concentration-of-power as the framing external forces.
 
 The fuller treatment of the own-vs-rent / sovereignty / concentration-of-power theme lives on the new [[open-source-ai]] concept and in [[enterprise-ai-adoption]].
+
+## Five video sources on the W&W cells, August 2026 — with *balancing-digital-portfolios* appearing twice in one week
+
+The 2026-08-12 batch tagged five video sources against the [[warner-wager-process-model|W&W]] vocabulary, and two of them independently instantiate **`digital-seizing/balancing-digital-portfolios`** — the microfoundation the wiki has had the least concrete material on — in the same week and in strikingly similar form.
+
+[[2026-08-10-miller-worklab-the-ai-shift-most-companies-didnt-see-coming|Miller / WorkLab]] describes a **double-path allocation**: the whole organisation gets upskilling and departmental experimentation, while a separate 60–120-person cross-disciplinary **frontier unit** receives a materially higher per-head token budget, tests every new model on release, works in teams of two to eight, and hands winners back to the wider organisation. The allocation rule is explicit — "you don't really want 80,000 people spending thousands of dollars a day while you're in the experimentation phase" — and it is paired with a second, McKinsey's **1:5 ratio** of $5 on people per $1 on tools, within which she names *incentives* as the underweighted line item.
+
+[[2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services|Heimes & Peters / McKinsey]] describe the same microfoundation as a **sequencing** decision: automate-first versus right-shore-first, "decided per process and even per part of a process — horses for courses," against three named factors (existing capability and AI experience, impact expected and its timing, process type), with materiality thresholds set *before* a use-case list is drawn up. Both are portfolio-balancing in the W&W sense — allocating scarce budget and attention across bets of differing maturity — but one balances *who experiments* and the other balances *what gets rebuilt first*. Held together they are the wiki's most operational material on this cell to date, and a useful complement to [[2026-07-01-bello-mckinsey-podcast-serial-builder-advantage|Bello's]] corporate-venture-building evidence, which quantified the *returns* to portfolio breadth without describing the allocation mechanics.
+
+The batch's other cells: **`digital-transforming/redesigning-internal-structures`** appears in three of the five (Miller's 34-agent org chart and near-flat frontier unit; the GBS **diamond talent model** replacing the pyramid; the BBC panel's workflow-rethink-from-the-ground-up argument). **`contextual/internal-barriers`** appears in two, and in unusually concrete form — the BBC panel's 3:1 tool-access-to-training ratio and "keys to the car without teaching them to drive," and the GBS lighthouse that failed because the sales force would not adopt a technically excellent system. **`contextual/external-triggers`** appears in two from opposite directions: [[2026-07-31-collison-yc-startup-school-is-ai-breaking-the-lean-startup-playbook|Collison's]] incumbent buyers "springloaded to adapt" out of "a real terror of being left behind," and [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey's]] restrictions on foreign use of frontier models turning model dependence into a strategic exposure. And **`strategic-renewal/business-model`** appears in two — Miller's *cannibalize your business lines* (with the analyst who built an energy-audit product priced at 50% of client savings) and the GBS **three E's** reframing that moves shared services "away from just transactions and cost and more towards outcomes and value."
 
 ## Debates and supersession
 

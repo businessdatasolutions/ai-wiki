@@ -88,6 +88,16 @@ async def _grab_metadata(page: Page) -> dict:
             const captionTracks = pr.captions?.playerCaptionsTracklistRenderer?.captionTracks || [];
 
             // Chapters: walk engagementPanels for the macro-markers list.
+            // `timeRangeStartMillis` disappeared from the renderer around
+            // 2026-08; the human-readable `timeDescription` label is the stable
+            // fallback (it's what YouTube renders to the user). Without this,
+            // every chapter scrapes start_ms: 0 and to_markdown() collapses the
+            // whole transcript under the last chapter heading — silently.
+            const labelToMs = (label) => {
+                const parts = String(label || '').trim().split(':').map(Number);
+                if (!parts.length || parts.some(Number.isNaN)) return 0;
+                return parts.reduce((acc, n) => acc * 60 + n, 0) * 1000;
+            };
             let chapters = [];
             for (const panel of (id.engagementPanels || [])) {
                 const items = panel?.engagementPanelSectionListRenderer
@@ -96,11 +106,16 @@ async def _grab_metadata(page: Page) -> dict:
                     chapters = items
                         .map(c => c.macroMarkersListItemRenderer)
                         .filter(Boolean)
-                        .map(c => ({
-                            title: c.title?.simpleText || c.title?.runs?.[0]?.text || '',
-                            start: c.timeDescription?.simpleText || '',
-                            start_ms: Number(c.timeRangeStartMillis ?? 0),
-                        }))
+                        .map(c => {
+                            const start = c.timeDescription?.simpleText
+                                || c.timeDescription?.runs?.[0]?.text || '';
+                            const millis = Number(c.timeRangeStartMillis ?? 0);
+                            return {
+                                title: c.title?.simpleText || c.title?.runs?.[0]?.text || '',
+                                start,
+                                start_ms: millis || labelToMs(start),
+                            };
+                        })
                         .filter(c => c.title);
                     break;
                 }
@@ -164,9 +179,16 @@ async def _trigger_transcript_panel(page: Page) -> bool:
     UI element exists on the page (whether or not the open succeeds — the caller
     waits for content separately).
 
-    YouTube has shipped multiple transcript-panel flavours; this function tries
-    both the legacy `yt-action` event-dispatch and a direct click on the
-    'Show transcript' button as a fallback. See GH #2.
+    YouTube has shipped multiple transcript-panel flavours. The direct click on
+    the 'Show transcript' button is the primary path; the legacy `yt-action`
+    event-dispatch is the fallback for pages that don't expose the button.
+    See GH #2.
+
+    Order matters: YouTube's button *toggles* the panel, so firing both triggers
+    unconditionally can open the panel via the event and immediately close it
+    via the click. That presents as `transcript panel did not render` even
+    though `/youtubei/v1/get_transcript` returned 200 — the 2026-08-12
+    BBC/YC ingest hit exactly this.
     """
     has_transcript_ui = await page.evaluate(
         """() => {
@@ -179,7 +201,22 @@ async def _trigger_transcript_panel(page: Page) -> bool:
     )
     if not has_transcript_ui:
         return False
-    # Try YouTube's own engagement-panel action first.
+    # Primary: direct click on the 'Show transcript' button. Robust to panel-
+    # target-id drift; the click expands whichever panel YouTube currently uses.
+    clicked = await page.evaluate(
+        """() => {
+            const btn = Array.from(document.querySelectorAll('button')).find(
+                b => /show transcript/i.test(b.innerText || '')
+            );
+            if (!btn) return false;
+            btn.click();
+            return true;
+        }"""
+    )
+    if clicked:
+        return True
+    # Fallback: YouTube's own engagement-panel action, for pages that mount the
+    # transcript section without an accompanying 'Show transcript' button.
     await page.evaluate(
         """() => {
             const sec = document.querySelector('ytd-video-description-transcript-section-renderer');
@@ -195,16 +232,6 @@ async def _trigger_transcript_panel(page: Page) -> bool:
                     },
                 }));
             }
-        }"""
-    )
-    # Fallback: direct click on the 'Show transcript' button. Robust to panel-
-    # target-id drift; the click expands whichever panel YouTube currently uses.
-    await page.evaluate(
-        """() => {
-            const btn = Array.from(document.querySelectorAll('button')).find(
-                b => /show transcript/i.test(b.innerText || '')
-            );
-            if (btn) btn.click();
         }"""
     )
     return True
@@ -298,6 +325,35 @@ async def _extract_segments(page: Page) -> list[dict]:
             return out;
         }"""
     )
+
+
+def _dedupe_segments(segments: list[dict]) -> list[dict]:
+    """Drop repeated (timestamp, text) pairs, keeping first-occurrence order.
+
+    `_extract_segments` queries `ytd-transcript-segment-renderer` page-wide, so
+    when YouTube mounts more than one transcript panel every segment is
+    collected once per panel — observed 2026-08-12 on a chaptered talk that came
+    back as an exact two-fold repeat of itself. The duplication is silent: the
+    segment count still looks plausible for the runtime.
+
+    Deduping on the pair (not on text alone) is lossless: a phrase genuinely
+    said twice carries a different timestamp, so an identical pair is by
+    construction the same segment rendered twice.
+
+    The key is whitespace-normalized because the two panels line-break the same
+    caption differently ("…as it is SaaS or traditional" vs "…as it is SaaS\\nor
+    traditional"), so byte-equality misses most of the duplicates. The retained
+    text is the first occurrence, verbatim.
+    """
+    seen: set[tuple[str, str]] = set()
+    out: list[dict] = []
+    for s in segments:
+        key = (s.get("ts", ""), " ".join(s.get("text", "").split()))
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(s)
+    return out
 
 
 # ---------------------------------------------------------------------------
@@ -407,7 +463,7 @@ async def fetch(video_id: str, *, headless: bool = True, timeout_ms: int = 30000
                 }
 
             await _scroll_panel(page)
-            segments = await _extract_segments(page)
+            segments = _dedupe_segments(await _extract_segments(page))
             return {"video_id": video_id, "metadata": metadata, "transcript": segments}
         finally:
             await browser.close()
@@ -512,7 +568,14 @@ def _build_yaml_header(meta: dict) -> str:
 def to_markdown(result: dict) -> str:
     meta = result.get("metadata") or {}
     segments = result.get("transcript") or []
-    chapters = sorted(meta.get("chapters") or [], key=lambda c: c.get("start_ms", 0))
+    chapters = meta.get("chapters") or []
+    # Defence in depth against the `timeRangeStartMillis` drift (see _grab_metadata):
+    # if the scrape produced all-zero offsets, recover them from the labels rather
+    # than emitting a file with every segment under the final chapter heading.
+    for ch in chapters:
+        if not ch.get("start_ms") and ch.get("start"):
+            ch["start_ms"] = _ts_to_ms(ch["start"])
+    chapters = sorted(chapters, key=lambda c: c.get("start_ms", 0))
 
     out: list[str] = ["---", _build_yaml_header(meta), "---", ""]
 

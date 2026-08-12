@@ -3,9 +3,9 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-07-19"
-accessed_at: "2026-07-19"
-source_count: 37
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 39
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -257,6 +257,20 @@ Khan's explicit motivation ties back to [[ai-employment-effects]]: *"Someone tod
 **Elizabeth Stone** ([[Netflix]] CPTO) supplies the wiki's clearest single-firm account of *how* a large incumbent operationalises AI fluency as a durable-skills expectation rather than a tool checklist. Rather than specifying what AI changes at each career-ladder level, Netflix layered an **aspiration overlay across all talent** — an experimentation mindset, judgment about where AI is and isn't useful, and comfort with change — applied uniformly from new hires to the most senior leadership, *"even if we're not writing code as part of our day jobs."* This is a practitioner-HR-mechanism instance of the same claim [[2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces|BCG's]] *AI fluency becomes a complement to tenure* finding makes structurally: the skill is level-and-age-agnostic, layered on top of (not replacing) role-specific competence. Netflix operationalises the expectation concretely in hiring: interviews probe how candidates think about AI/technology, and coding interviews now explicitly permit AI-tool use, "because that's going to be part of what the work requires now."
 
 Stone also names systems thinking — see [[systems-thinking]] for the fuller treatment — as the specific *content* of the rising skill cluster at Netflix, giving this page's cross-vocabulary convergence (Globerson's collaboration/creativity/critical-thinking, Raman/Wood's 5 C's, ETS's five skills) a seventh independent naming, this time from a for-profit streaming incumbent's CPTO rather than an educator, consultant, or researcher.
+
+## The cognitive L1 cache, and three interview criteria for the agent era ([[2026-07-31-collison-yc-startup-school-is-ai-breaking-the-lean-startup-playbook|Collison, July 2026]] + [[2026-08-10-miller-worklab-the-ai-shift-most-companies-didnt-see-coming|Miller, August 2026]])
+
+Two sources a fortnight apart supply a *latency* argument for retaining knowledge in-head and a *hiring* argument for what replaces it as the scarce input.
+
+[[2026-07-31-collison-yc-startup-school-is-ai-breaking-the-lean-startup-playbook|Patrick Collison]] gives this page its most mechanical defence of knowing things. Borrowing Jeff Dean's *numbers every programmer should know*, he applies the memory-hierarchy framing to human cognition: asking an agent to retrieve something "is a hell of a lot slower than knowing it in **cognitive L1 cache**. And you can have way more round trips in your brain than you can, you know, muttering through super whisper or typing it out." Even granting the full capabilities of the models, "for a long time to come, neuronal lookups will be much faster." His second argument is revealed preference rather than theory — whether at Stripe or at the frontier labs, "there still seems to be an enormous premium on cognitive ability," so "**renouncing that before there's evidence that we've saturated those benefits would be premature.**" The framing is useful because it does not depend on any claim about what models cannot do: it is an argument from round-trip latency and the number of iterations a mind can run against itself, which holds even if model quality is stipulated to be perfect. He reports keeping writing in-cache for himself — "I've yet to send… pre-written suggestions… I think I've still sent zero of those in my life."
+
+[[2026-08-10-miller-worklab-the-ai-shift-most-companies-didnt-see-coming|Allie K. Miller]] names the three criteria she now interviews for, and is explicit that the interview process itself is the thing most organisations have failed to update ("if you have not updated the way that you interview people in the last year, you are very behind"):
+
+1. **High agency** — "are they going to let the AI dictate their day? And if you didn't get what you want, are you just going to walk away and complain and still do things manually, or are you going to go in **bulldozer mode** and try it from 17 different angles?"
+2. **A strong sense of wonder** — with the explicit disclaimer that it has "nothing to do with age, nothing to do with department… some people are two years from retirement who are the most curious people I've ever met."
+3. **[[systems-thinking|Systems thinking]]** — "that's been the really big change the last year, where we're managing multi-agent systems."
+
+The third is where her argument bites, and it inverts the usual seniority story on this page. Because the skill in demand is running "a mini org, a temporary digital workforce of AI agents," the people advantaged are those who have managed people before — and early-career ICs are "in a really tough position on that systems thinking side, very strong on the AI side." This converges with [[2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era|Stone's]] systems-thinking hiring criterion three weeks earlier, reached from an operator vantage and for a different reason (designing across business domains rather than supervising agent fleets) — two independent routes to the same criterion. Neither source lifts the page past its 0.95 cap: Collison's is an unaudited revealed-preference claim and Miller's is an advisory practitioner's hiring heuristic.
 
 ## Related concepts
 

@@ -2,11 +2,11 @@
 type: entity
 kind: organization
 aliases: ["McKinsey", "McKinsey & Company", "McKinsey and Company", "QuantumBlack"]
-tags: [mckinsey, mgi, management-consulting, quantumblack, ai-research, tech-ai-transformation, agent-augmented-workforce, outcome-underwriting, post-controversy-governance, future-arenas, omniscalers, skill-change-index, workforce-skills, corporate-venture-building]
+tags: [mckinsey, mgi, mckinsey-talks-operations, global-business-services, management-consulting, quantumblack, ai-research, tech-ai-transformation, agent-augmented-workforce, outcome-underwriting, post-controversy-governance, future-arenas, omniscalers, skill-change-index, workforce-skills, corporate-venture-building]
 confidence: 0.95
-last_confirmed: "2026-07-09"
-accessed_at: "2026-07-09"
-source_count: 13
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 14
 relationships:
   - type: employs
     target: Roberta-Fusaro
@@ -37,6 +37,7 @@ Global management consulting firm; runs **QuantumBlack** as its AI arm and **[[M
 
 ## Appears in this wiki via
 
+- [[2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services]] — *Agentic AI and the Future of Global Business Services* (**McKinsey Talks Operations**, YouTube, 3 Aug 2026). The wiki's **first *McKinsey Talks Operations* ingest** — a fifth McKinsey channel alongside *Rewired*, the Sternfels HBR self-narrative, MGI's reports, and The McKinsey Podcast. Host **Christian Johnson** with partners **Heiko Heimes** (Cologne) and **Josh Peters** (Washington DC) on shared-services organisations in the agentic era. Contributes the **diamond-shaped talent model** (a thinner transactional base, a thicker analytical/judgment middle, and a new requirement to manage an "agent force"), the **automate-first versus right-shore-first** sequencing decision with its three deciding factors, the **three E's** (efficiency / effectiveness / customer experience) reframing of what GBS is for, and the page-quotable *"you're still just automating the wrong work"* — the materiality-threshold-and-elimination-first prescription. Headline forecast: GBS organisations end up **20–30% smaller but dramatically more productive**. All quantitative claims are unattributed practitioner estimates; the framework contributions are the durable content. See [[micro-productivity-trap]] and [[automation-vs-augmentation]].
 - [[2026-05-03-rewired-second-edition-sample]] — *Rewired*, McKinsey's flagship Tech & AI transformation playbook (2nd edition, Wiley 2026). Authors: [[Eric Lamarre]], [[Kate Smaje]], [[Rob Levin]] (with [[Alex Singla]] and [[Alexander Sukharevsky]] from QuantumBlack). Headline empirical claims drawn from McKinsey client work: **20% EBITDA uplift on average**, **$3 of incremental EBITDA per $1 invested**, **1–2 year breakeven**, across ~20 deep-dive AI-leader companies (drawn from a study set of ~200 companies).
 - [[2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting]] — *How McKinsey Plans to Survive AI (and Reinvent Consulting)* (HBR IdeaCast, 9 Feb 2026). Bob Sternfels (Global Managing Partner) interviewed by Adi Ignatius (HBR editor-in-chief). The firm-as-vendor self-narrative. Surfaces the **40k humans + 20k agents = 60k workforce** datapoint (up from 3k agents 18 months prior; on track for **1:1 human-to-agent ratio in ~18 months**), the **outcome-underwriting business model** migration (~33% of revenues today; aspirationally majority by end-of-Sternfels-term), the **post-controversy compliance overhaul** ($1B invested; head of internal audit hired from Apple, head of compliance from Walmart; publicly-traded-equivalent governance standards adopted despite remaining private), and the **hiring-process overhaul** based on 20-year self-applied analytics (now indexes on resilience / team-sport-experience / aptitude-to-learn rather than perfect-marks credentials).
 - [[AI Index]] — recurring analytics/research partner; the 2025 and 2026 editions explicitly disclose McKinsey instruments behind adoption data.

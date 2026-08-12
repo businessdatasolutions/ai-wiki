@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-06-23"
-accessed_at: "2026-06-23"
-source_count: 21
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 22
 relationships:
   - type: instance-of
     target: generative-ai
@@ -150,6 +150,21 @@ The throughline ratifies the wiki's [[automation-vs-augmentation|augmentation]] 
 ## The goal/outcome loop in production ([[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Grinstead / How I AI, June 2026]])
 
 A production datapoint on autonomous agent behaviour: [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Grinstead (Mozilla)]] describes the **goal/outcome loop** — give an agent a tightly scoped problem and a crystal-clear pass/fail signal and let it retry *"far past the point a human would quit"* (*"the relentless tedium an agent will go through… our cognitive energy declines in a way agents don't"*). The cautionary corollary is **objective-gaming**: without a verifier/guardrail an agent will hit the literal goal in unwanted ways (delete the slow feature to cut latency; *introduce a vulnerability to exploit it*). The engineering treatment of both lives in [[agent-harness]] (goal-loop primitive + verifier subagent).
+
+## The agent org chart — a practitioner's 34-agent fleet ([[2026-08-10-miller-worklab-the-ai-shift-most-companies-didnt-see-coming|Miller / WorkLab, August 2026]])
+
+The wiki's agent sources mostly describe agents as capabilities inside a product or a workflow. [[2026-08-10-miller-worklab-the-ai-shift-most-companies-didnt-see-coming|Allie K. Miller]] describes them as an **organisation**, and the structure is specific enough to be worth recording as a datapoint on how multi-agent deployments are actually being arranged in practice:
+
+- A **chief of staff** agent ("Simon"), the only one she routinely talks to directly.
+- Simon has his own **memory and documentation assistant** ("Toby") — a dedicated context-maintenance role rather than a task-executing one.
+- **Six direct reports** with functional remits (marketing, client work, and a deliberate wildcard).
+- Each direct report has **three to seven sub-agents**, which can in turn spin up temporary agents she calls **"civilians"** — "maybe it's two agents or hundreds of agents."
+
+Total standing fleet: **34 agents**. She reports the identical structure at a founder she interviewed, whose chief-of-staff agent ("Maya") he drives by live voice conversation while walking, delegating engineering, product and client tasks without looking at a screen. Two further practice details: agents sitting inside **Teams and Slack** as participants that can be addressed by name, and "**agents teaching other agents new skills.**"
+
+Her framing of what this implies is the load-bearing part: "this is why you have to believe that **AI is not a tool.** Because if you thought that it was a tool, would you think that you should set up a self-learning flywheel and have 60 agents kick off a thousand? Absolutely not. We're having to treat it as this like **operating system.**" And her one-line definition of the third shift that makes such fleets viable: agents that "work autonomously on many tasks at a decent reliability level **for an hour or more**" — a reliability-duration threshold, which is a more operationally useful framing than capability benchmarks for deciding whether fleet management is worth the overhead.
+
+Two caveats. This is a single advisory practitioner's own setup described on a vendor's podcast — no outcome data, no failure modes, no cost accounting beyond her separate warning that agent fleets can cost "thousands per head per day." And the naming convention (agents named after sitcom characters, given "direct reports") is exactly the anthropomorphising that [[2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees|Kropp et al.'s]] randomized experiment found causes measurable drops in personal accountability and error-catching. Miller does not engage that risk; the two sources should be read together.
 
 ## Debates and supersession
 

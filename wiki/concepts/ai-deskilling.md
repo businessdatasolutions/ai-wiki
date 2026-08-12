@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI deskilling", "ai-deskilling", "task composition shift", "deskilling"]
 tags: [deskilling, task-composition, ai-employment-effects, occupations]
 confidence: 0.85
-last_confirmed: "2026-07-01"
-accessed_at: "2026-07-01"
-source_count: 14
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 16
 relationships:
   - type: instance-of
     target: ai-employment-effects
@@ -152,6 +152,20 @@ The deskilling risk Argenti implicitly accepts (delegated execution atrophies ex
 ## The consulting-panel restatement: obsolete-skills vs. durable-judgment ([[2026-06-24-mckinsey-ai-supercharging-software-development|McKinsey panel, June 2026]])
 
 [[2026-06-24-mckinsey-ai-supercharging-software-development|Palaniappan, Harrysson & Linderman]] (McKinsey) name the deskilling question directly for software engineering, without introducing a new causal mechanism beyond the page's existing task-composition frame: as agents absorb spec-to-code implementation, **routine and boilerplate coding skills lose relevance**, while **problem framing, architecture decisions, prioritization, and business-context judgment** remain load-bearing — the video's title ("humans determine its impact") frames this retained judgment as the lever that decides whether AI's organizational effect is positive. This is a popular-consulting restatement of the same obsolete-vs-durable carve [[2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer|Forsgren & Macvean]] make via DORA research (the evolved T-shaped engineer; "delegate tasks, not judgment") and Thompson's developer self-reports document empirically. Per [Lifecycle rules](../../CLAUDE.md#lifecycle) this single qualitative panel discussion does not lift the page's confidence; its value is a second, independent (McKinsey-consulting rather than Google-DORA) vantage naming the same obsolete/durable split specifically for the software-engineering discipline.
+
+## Two August-2026 statements of the erosion risk, and an unresolved disagreement about schooling ([[2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company|BBC AI Decoded]] + [[2026-07-31-collison-yc-startup-school-is-ai-breaking-the-lean-startup-playbook|Collison]])
+
+**Dr Stephanie Hare**, on the BBC's *AI Decoded* panel, states the deskilling worry in its developmental form — and the disagreement it produced on air is more useful than either position alone. Her argument against a new England policy to teach 14-year-olds about AI used by local companies:
+
+> *"These are really powerful tools that affect the cognitive abilities of adults with PhDs who were raised in an analog era. So if we put them onto children whose brains are still forming, who don't have that reading habit built in, who aren't used to writing and learning how to express ideas and thinking, they won't have what we all have — which is **decades of muscle memory and critical expertise to be able to look at an AI response and know it's wrong, know it's hallucinating.**"*
+
+The mechanism she names is the one this page tracks under verification-competence: the ability to catch a wrong answer is a *residue* of having done the work manually, so it cannot be taught alongside the tool that removes the manual work. Her framing of the sequencing — "I would really like to see us get kids reading books the way they need to be before we start having them mess around with AI" — makes it an ordering claim rather than a prohibition.
+
+**James Kuht separates the two questions** rather than disputing the mechanism: "you cannot shortcut expertise and developing critical thinking. I think that is separate from whether young people entering the workforce should be proficient at using AI." His composite target: "an 18-year-old who leaves school with good critical thinking skills, who is developing expertise, but who is also AI fluent is going to be extraordinary. And unfortunately, there's not many of them." The disagreement is left unresolved on air, and the wiki holds it that way — it is a genuine open question about *sequencing under a time constraint*, not a contradiction about the underlying effect.
+
+[[2026-07-31-collison-yc-startup-school-is-ai-breaking-the-lean-startup-playbook|Patrick Collison]] supplies the same tension in miniature, from the practitioner side, and is unusually candid about not knowing the answer. Asked whether a prolific 16-year-old should still write their own Lisp dialect rather than prompting a model to do it: *"I don't know. I wonder a lot."* His analogy cuts toward acceptance — "it used to be really fun to write all this assembly and machine code and to optimize your instructions… and now we don't have to do that anymore. Compilers do it for us. **We don't mourn it too much.** And so maybe in the same way we shouldn't mourn source code" — before he declines to follow it: "but emotionally I miss it." His countervailing argument is the [[durable-skills|cognitive-L1-cache]] one: retrieval from an agent is far slower than retrieval from memory, and firms still pay "an enormous premium on cognitive ability," so "renouncing that before there's evidence that we've saturated those benefits would be premature."
+
+Neither source is empirical — one is a broadcast panel disagreement, the other a founder's stated uncertainty — so neither moves this page's confidence. Their value is naming the **sequencing question** the page's empirical sources ([[2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care|Peron's]] radiologists trained without normal images, [[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Mollick's]] broken apprenticeship) imply but do not pose directly: if verification competence is a residue of manual practice, at what point in a career or an education can the manual practice safely stop?
 
 ## Related concepts
 

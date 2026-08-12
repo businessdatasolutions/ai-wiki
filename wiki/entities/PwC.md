@@ -3,10 +3,10 @@ type: entity
 kind: organization
 aliases: ["PwC", "PricewaterhouseCoopers"]
 tags: [pwc, big-four, professional-services, chief-ai-officer, ai-agents, agentic-applications, hourglass-organization]
-confidence: 0.7
-last_confirmed: "2026-07-09"
-accessed_at: "2026-07-09"
-source_count: 1
+confidence: 0.75
+last_confirmed: "2026-08-12"
+accessed_at: "2026-08-12"
+source_count: 2
 relationships:
   - type: employs
     target: Dan-Priest
@@ -18,8 +18,10 @@ Global professional-services firm (one of the Big Four). First entered the wiki 
 
 ## Appears in this wiki via
 
+- [[2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company]] — cited rather than authored: PwC is the source of the survey that supplies this BBC panel's headline ROI statistics — **~4,500 CEOs across 95 countries**, released at Davos/the World Economic Forum, finding **56% yet to see a return** on their generative-AI investment and **only one in eight** able to claim an actual cost saving or revenue gain. Peter Grant explicitly prefers it to the widely-cited MIT 95% figure on sample-size grounds (153 companies). Not independently checked in this ingest, and PwC is itself a seller in this market. See [[micro-productivity-trap]] and [[enterprise-ai-adoption]].
 - [[2026-06-17-priest-atlantic-pwc-ai-agents-changing-business]] — **Dan Priest** (Chief AI Officer) describes PwC's own AI-transformation practice: a firm-wide GPT that compounds the transformation team's learnings and distributes them to every consultant; a task-registration "operating system" for managing agents across multiple LLM platforms with per-model accuracy/latency/drift/task-length tracking; a Southwest Airlines case study (50% time/effort reduction in design phase alone, 30–50% benefits from code generation); net hiring growth of ~5,000 people with agent-management skills now tested in interviews; and the **hourglass organization** model (expanded entry-level intake, compressed-but-empowered middle management, growing leadership layer) as PwC's emerging prescription for AI-era org design.
 
 ## Open questions
 
-- Only one source so far — firm-specific numbers (Southwest Airlines case study, hiring figures, 85–90% agent accuracy) are unverified against any published PwC report. Watch for independent corroboration or a PwC-published report to cite directly.
+- The Priest interview's firm-specific numbers (Southwest Airlines case study, hiring figures, 85–90% agent accuracy) are unverified against any published PwC report. Watch for independent corroboration or a PwC-published report to cite directly.
+- The CEO-survey figures cited on the BBC panel (56% / one-in-eight, ~4,500 CEOs, 95 countries) are reported second-hand by a guest and have not been traced to the published PwC release. Locating the primary report would let the wiki cite the sampling frame and the definition of "return" directly — both load-bearing for how the statistic is read.
