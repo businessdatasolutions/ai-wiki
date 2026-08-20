@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 58
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 59
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -16,8 +16,8 @@ relationships:
   - type: supports
     target: ai-benchmarks
     via: "Narayanan's release-decision frame — reliability threshold required for automation deployment exceeds that for augmentation deployment; reliability is the gating dimension benchmarks have under-measured"
-quality_score: 0.99
-quality_notes: ['1 near-empty section(s)']
+quality_score: 0.98
+quality_notes: ['2 near-empty section(s)']
 ---
 
 # Automation vs. Augmentation
@@ -421,6 +421,25 @@ Most augmentation commitments on this page are stated as policy. [[2026-07-30-hi
 
 What she treats as non-substitutable is specific rather than sentimental: sourcing deals through local relationships ("that's not a replaceable technology"), on-site oversight of development, and occupant service that drives retention. The general form — AI democratises the digital layer, so differentiation migrates to whatever is physical, relational or locally situated — is the page's first statement of the augmentation case from the **built environment**, where the automation frontier is bounded by something other than model capability. Her stance on who comes along is notably unsentimental and worth recording alongside it: "**I've got to give everyone the opportunity** to learn… **but if they choose not to participate or choose not to learn, honestly I feel like that's on them.**"
 
+## The strongest automation-side argument in the corpus, and its boundary condition ([[2026-08-14-blomfield-yc-building-structuring-ai-native-company|Blomfield / YC, August 2026]])
+
+Most of this page's sources argue for augmentation, or for sequencing augmentation before automation. Blomfield argues the opposite as a matter of company design, and does so explicitly enough that the wiki should hold it as the automation pole of the debate rather than as another nuance.
+
+His frame rejects the productivity-multiplier framing outright: *"previously AI is like make each person 20% more productive or 30% more productive. **What happens if we reimagine the company as a series of AI loops?**"* Augmentation, in his account, is what you get when the human remains the coordinator — *"you can do things like making engineers 20% more productive, you can add copilots for lawyers to make their existing workflows go a little better, you can ship more software with AI. But really, all of these things are dependent on humans being the coordinating mechanism."* The alternative is loop closure: *"if you can do this entire loop without a human, your product starts improving itself when you're sleeping."*
+
+**The human is not removed but relocated**, which is what distinguishes this from a straightforward replacement argument. Quoting Dorsey: humans *"reach into places the model can't yet go. They sense things the model can't perceive. Intuition, opinionated direction, cultural context, trust dynamics, the feeling in a room… They make the calls a model shouldn't make on its own, especially ethical decisions, novel situations, and high-stakes moments where the cost of being wrong is existential. A world model that can't touch the real world is just a database."* Blomfield's gloss: humans are *"in the sales calls, visiting the client office to reassure people, to convince the CEO, to pitch the investor… but the humans are **no longer necessary to do the information routing**."*
+
+The organisational consequence he draws is the sharpest claim: **no middle management**, because the layers existed to route information. What survives is the IC (*"coming to meetings with working prototypes, not decks"*) and the DRI (*"a single person whose head is on the block"*).
+
+**Three limits the page should carry alongside it.**
+
+1. **His evidence base is early-stage greenfield startups** advised by his own firm — small enough that the management layers he proposes eliminating do not yet exist. He says as much: *"this is by the way easier when you're starting out."* That is a much weaker test than an incumbent removing layers.
+2. **No failure modes are described anywhere in the talk** — no automerged bad PR, no loop that regressed, no company that tried it and reverted. The absence is conspicuous given his position that quality gates should usually not be human.
+3. **He states the epistemic status himself**: *"no one knows how to do this… this is very theoretical… if anyone tells you they've got it all figured out, they are probably lying."*
+
+Read against [[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson's]] *"imitation is a terrible business strategy"* argument above, the two are less opposed than they look: Brynjolfsson argues against building AI that copies what humans do, and Blomfield's loops are not human-imitating — they are doing something (continuous overnight hill-climbing) that no human organisation could do. The genuine disagreement on this page is between Blomfield and the human-in-the-loop consensus, and it is recorded on [[agent-harness]].
+
+## Debates and supersession
 ## Debates and supersession
 
 - **Is the cut binary or continuous?** Anthropic's Economic Index allows occupations to be classified as primarily-automative, primarily-augmentative, or mixed. In practice many AI uses sit on a continuum (e.g., a code assistant is augmentative when used for completion, automative when used for issue resolution). The dichotomy is useful for analysis but not always clean in the wild.

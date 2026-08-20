@@ -5,9 +5,9 @@ aliases: ["Antigravity", "Anti-gravity", "Google Antigravity"]
 tags: [antigravity, agent-harness, google-deepmind, gemini, windsurf, ide, cli, agent-sdk, vibe-coding, through-line]
 since: 2026
 confidence: 0.72
-last_confirmed: "2026-06-15"
-accessed_at: "2026-06-15"
-source_count: 2
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 3
 relationships:
   - type: part-of
     target: Google
@@ -25,6 +25,7 @@ Google's **single agent harness**, built by the **Windsurf** team that joined Go
 
 - **The new through line for Google.** The *same* Antigravity harness powers search, the Gemini app, [[Google]] Cloud, and AI Studio — taking over the connective-tissue role that the Gemini *model/API* used to play across Google's ~50 products. A concrete instance of the [[agent-harness]] concept at hyperscaler scale.
 - **Coding harness → general-purpose harness.** Kilpatrick: "coding has proved to be the general-purpose agent harness." ~80% shared base, specialized per use case (vibe coding vs. a 24/7 consumer agent).
+- **Named as a harness, by Google, in Google's own harness explainer.** In [[2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness|*What is an Agentic Harness?*]] (July 2026), Greg Baugues lists it among *"the most popular agentic harnesses today — so like a Claude Code or an Antigravity or a Codex"* — and the point he makes with the list is the **harness/interface decoupling**: each of the three carries several interfaces over one runtime, so the product name is not the unit of analysis. Note the ordering: Google's own DevRel names a competitor's harness first.
 - **Already in the corpus.** Named ("Anti-gravity") alongside Claude Code, Cursor, and OpenCode in [[2026-05-04-rethinking-agents-harness-is-all-you-need]] as one of the harnesses that drives same-model performance variance.
 
 Built within [[Google DeepMind]]; the *model-eats-the-harness* tension (Kilpatrick's own thesis) applies to Antigravity as much as to any harness.

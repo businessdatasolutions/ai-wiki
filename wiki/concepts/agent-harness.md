@@ -3,9 +3,9 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.98
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 78
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 82
 relationships:
   - type: part-of
     target: ai-agents
@@ -602,6 +602,70 @@ The wiki's harness material comes almost entirely from vendors, practitioners an
 What the harness does in his account is aggregation across organisational boundaries — "the harness is really bringing a lot of these tools coming in from **different wings**, like the paint corrosion… we're bringing that entire system and then giving it to deep agents." And the context layer of that harness is explicitly **institutional knowledge organised per function**: curated skills for branding, research, manufacturing and supply chain, authored by a central Enterprise AI group and supplied to agents as input.
 
 Two limits on what this can support. It is vendor-produced promotional content with no numbers, no failure modes and no independent verification — see the source's scope warning. And "one single command" is a product-marketing formulation rather than a technical claim; the wiki should not read it as evidence about Deep Agents' architecture. What it does show is that **the harness-and-skills vocabulary is now being used by enterprise buyers to describe their own systems**, which is a datapoint about diffusion rather than about capability.
+
+## The August 2026 four-source batch: definition settles, domain-specialisation reverses, and the pattern turns out to predate the name
+
+Four sources ingested 20 August 2026 land on this page from four different vantages — a competing vendor's education channel, the originating vendor's own engineer, an accelerator partner, and an enterprise architect talking about 2025.
+
+### Cross-vendor ratification of the boundary ([[2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness|Baugues & Thurium / Google Cloud, July 2026]])
+
+A three-minute explainer on Google Cloud Tech's *AI Builder Essentials* series supplies the corpus's most compact statement of the boundary this page has spent seventy-odd sources drawing:
+
+> *"My definition of an agentic harness: **the harness is everything after the LLM.** The harness is how do you give it tools? The harness is what programming do you have that's running it in the loop? What programming do you have that is evaluating the output of the LLM to determine if it completed its task or not? And all of that infrastructure — which doesn't have to be a lot, but that is the agentic harness. All that stuff you put around an LLM to turn it into an agent."*
+
+Two things make this load-bearing despite its length. First, **the vendor is outside the vocabulary's lineage.** The term's provenance on this page runs through [[2026-03-10-trivedy-langchain-anatomy-of-an-agent-harness|Trivedy at LangChain]] and its popularisation through the practitioner essays; Google competes with both LangChain and Anthropic, and its own [[2026-04-22-cheung-ippolito-secchi-google-agents-cli|Agents CLI announcement]] three months earlier described this layer without using the word. Using it as a *title*, with no scare quotes and no competing coinage offered, is evidence the construct has stabilised past any one vendor's marketing.
+
+Second, **the harness/interface decoupling is stated more sharply here than anywhere else in the corpus.** The wiki has held this implicitly; here it arrives as an on-camera correction. Thurium: *"I had been thinking of the harness as, it's like the IDE, or it's like what's running your agent. But it sounds like your definition is lower level than that."* Baugues confirms and generalises — *"if you think about the most popular agentic harnesses today, so like a Claude Code or an Antigravity or a Codex, there are different interfaces that you can use to interact with that harness"* — and extends it to the headless case: *"there's probably a lot of use cases where you don't even need a user interface. You just need a programmatic interface to the agent."* Thurium's restatement is the quotable form: *"if you decouple the harness from the interface, the important piece here is how we control the logic and the behavior of the LLM, and then you can swap in what interface does the user prefer."*
+
+The failure mode this names is one the corpus has been vulnerable to: treating a **product** (Claude Code, Antigravity, Codex) as the unit of analysis when the unit is the runtime underneath, which can carry several products.
+
+### The domain-specialisation reversal, from the originating vendor ([[2026-08-19-he-databricks-anthropic-primitives-to-production-agents|He / Anthropic, April 2026 talk, published August]])
+
+Isabella He of Anthropic's Applied AI team states a change of position that this page should record as a dated shift in vendor design intent:
+
+> *"A couple of months, maybe around a year ago, we thought about agents as needing very specialized domains… We used to think you might need **almost an entire new harness** for something like a research agent or a customer service agent or a site reliability agent. But… with every new model that we see, we can unlock a whole new set of capabilities. So instead of breaking down agents by domain, we actually see that it's more effective if we just think about agents as this **really almost general purpose** but with access to different tools that you can then tailor to specific domains."*
+
+The domain-invariant primitives she names: **code execution, file system, web search, to-do list**. The consequence: *"Claude Code could power a customer support agent. It could power an incident response agent."* And what remains domain-specific is exactly one thing: *"the key thing that is actually missing is **domain expertise**."*
+
+This is the vendor-side twin of the transfer result the wiki holds empirically from [[2026-05-04-rethinking-agents-harness-is-all-you-need|Prompt Engineering, May 2026]] — that harnesses transfer across *models*. He is claiming they transfer across *domains*. Note the direction of travel is the **subtraction principle** applied at the architecture level: fewer harnesses, more context.
+
+Four mechanism-level claims from the same talk, each sharpening an existing section of this page:
+
+- **Skills as progressive disclosure, stated as an anti-pattern fix.** *"You don't actually want the instructions about how to open a new ticket for that customer injected into your system prompt, because that would pollute the context… Instead, what skills let you do is have those instructions only loaded in when it's relevant to the prompt."* Skills also carry executables, not just text — the open-source PowerPoint skill *"actually also has scripts to edit the actual PowerPoint files itself."*
+- **Subagents as context isolation, not delegation.** *"A way to kick off a parallel workstream for Claude but also have their own context window… What this does, it essentially prevents the main agent from having to read in that entire document into context."* Plus model tiering: *"the Claude Code default subagent for the explore mode is a Haiku subagent"*, reporting to Opus or Sonnet.
+- **Hooks as deliberately re-injected determinism** — the cleanest statement of the primitive on this page: *"Hooks are essentially a way for you to inject a little bit of determinism into your agent, otherwise letting the model decide its own trajectory and be flexible and be dynamic. But hooks are a way to add some of those guardrails back into the system."*
+- **Sandboxing framed as permission-prompt reduction**, not only containment: *"we want to give an agent sort of the free rein to **reduce permission prompts** and also execute commands within an existing environment. But anytime the agent tries to exit that sandbox environment… that's when a permission prompt is triggered."*
+
+She also supplies the **decision rule** for the three, which the corpus has lacked: skills for *"procedural knowledge that you always want to persist"*; MCP servers when you want to *take action* in an external system; subagents *"for parallel exploration and also fresh context windows."*
+
+**Caveat.** This is a first-party vendor account with zero measurements — the tool count (*"about 14 or 15"*) is the only quantity in it, and the SRE demo is a single scripted run of a fault the presenter injected herself. It supports claims about **design intent**, not about efficacy.
+
+### The agent definition is now shared across competitors
+
+Two sources five weeks apart, from Google and Anthropic, give four identical clauses. Baugues attributes: *"My favorite is [[Simon Willison]]'s definition. An agent is an LLM with tools running in a loop to accomplish a goal."* He does not: *"what an agent is, is it is a large language model, it is then put into a loop, it uses tools at its disposal, and it has a particular goal that it's optimizing towards."* On this evidence Willison's formulation is the **industry-default agent definition by mid-2026**. He adds what the definition is defined *against* — single-LLM features, then code-orchestrated workflows *"still very deterministic, relying on human-encoded logic"* — which Baugues does not.
+
+### The quality gate should usually *not* be a human ([[2026-08-14-blomfield-yc-building-structuring-ai-native-company|Blomfield / YC, August 2026]])
+
+A stated disagreement with the human-in-the-loop default that most of the corpus treats as settled. Blomfield's loop has five parts — signal in, policy layer, tool layer, quality gate, learning mechanism — and on the gate:
+
+> *"Quality gates, which could be a human, and I'd argue **probably should not be a human** in all but the most extreme cases. The quality gate can often be a **second adversarial LLM**. It might be something that's looking at the output saying, are we suffering from prompt injection here? Or in the case of a bank, are we giving financial advice here, yes or no? … A really easy example for engineers is the quality gate might simply be a second model doing code review."*
+
+The wiki should hold this as a **live disagreement**, not a consensus point. It converges with the adversarial-review patterns already on this page ([[2026-06-08-vincent-coderabbit-fixing-ai-slop-managing-agents-like-mit-interns|Vincent's]] competitive adversarial review, [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Grinstead's]] verifier subagent) but goes further than either: those authors use LLM verification *alongside* human gates, Blomfield argues it should *replace* them. His justification is throughput — *"if you can do this entire loop without a human, your product starts improving itself when you're sleeping"* — and he offers no failure analysis, which is the obvious weakness of the position.
+
+Also from this source, the harness-relevant primitives: a **policy layer** (*"what rules constrain the AI? What things must it ask for approval for? What does it have to log?"*), a VM-resident agent with persistent file storage so *"it can come up with a plan and write the plan to disk, so if it fails halfway through, it can resume"*, and the meta-agent pattern — an overnight second agent that classifies the day's queries as success or failure and opens pull requests against the first agent's own code.
+
+### The governance pattern predates the agent problem ([[2026-08-19-rohrer-goto-modern-enterprise-architecture-architecting-for-outcomes|Rohrer / GOTO Copenhagen 2025]])
+
+The most useful of the four for this page, precisely because it is not about agents at all. Rohrer's argument about **architecture review boards** is that they failed for a structural reason: they were temporally coupled to waterfall phases, and under continuous design there is no moment to attach to — *"if we are doing continuous design, what are they reviewing? We might have a sketch at the start, but we know that is going to change. It's too late here, because the stuff's already been released."*
+
+His replacement, at Saxo Bank across ~1,200 services and ~90 teams, is:
+
+1. **Govern realised architectures, not proposed ones.** A new service is a pull request. A new service-to-service connection is a pull request. Identity/access and firewall changes are pull requests. An exception to the async-event-driven default is a pull request. *"We're not reviewing and rubber-stamping a piece of paper that might go away. We're doing what's actually happening in the system."*
+2. **Paved paths that pre-approve the common case.** *"If you want to do something that is simple and is something that everybody else does, you can do that already. No need to ask. Anything new, come and ask us."* Via Forrester's Charlie Betz: *"if you're using the platform, you are seen to be secure, you're seen to be architecturally compliant."*
+
+**That is, mechanism for mechanism, what hooks plus sandboxing do for agents** — deterministic gates on the actions actually attempted, plus a sandbox that suppresses prompts for the ordinary case and escalates only on boundary-crossing. Rohrer arrives at it in 2025, for human engineers, with no AI premise. The convergence is worth recording as evidence that **agent governance is re-deriving a pattern software governance already found**, which in turn suggests the harness-governance literature has a body of prior art it is not yet citing.
+
+Rohrer also supplies the asymmetry argument that motivates governing at all: *"if you put some complexity in, that can be fairly cheap. But reversing it out is **asymmetrical**, because now you've got to make changes, especially in distributed systems, in a whole bunch of places."*
 
 ## Debates and supersession
 

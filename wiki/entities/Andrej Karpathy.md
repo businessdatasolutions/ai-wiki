@@ -4,9 +4,9 @@ kind: person
 aliases: ["Karpathy", "Andrej Karpathy", "@karpathy"]
 tags: [andrej-karpathy, ai-researcher, openai, tesla, eureka-labs, software-3.0, vibe-coding, jagged-intelligence, llm-wiki]
 confidence: 0.92
-last_confirmed: "2026-07-15"
-accessed_at: "2026-07-15"
-source_count: 8
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 9
 relationships:
   - type: authored-by
     target: 2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering
@@ -64,6 +64,15 @@ From [[2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering|the Se
 - **Co-founder, [[OpenAI]]** (2015 – 2017 + 2023 – 2024).
 - **Former Director / Senior Director of AI, Tesla** (2017 – 2022, dangling — not yet promoted).
 - **Stanford PhD** (2011 – 2016).
+
+## Cited as the org-chart and hill-climbing source (Blomfield, August 2026)
+
+[[2026-08-14-blomfield-yc-building-structuring-ai-native-company|Tom Blomfield's YC Startup School Paris talk]] credits Karpathy twice, both times for framings rather than for work:
+
+- **The org-chart observation.** Blomfield's Roman-legion argument — that hierarchy exists because humans were the information-routing mechanism — is built on *"a Karpathy tweet which I thought is very good"*, set alongside a Jack Dorsey tweet that *"there's an underlying assumption that organizations have to be hierarchically organized with humans as a coordinating mechanism."*
+- **Auto-research as hill climbing.** *"Karpathy had a great tweet about three weeks ago now on the auto-research thing — basically applying this to machine learning, just having the AI, I think it was on GPT-2 equivalent or something like that, coming up with research ideas, testing it, running overnight and just hill climbing."* Blomfield generalises this into his own reduction of the self-improving loop: *"all this is is hill climbing… and computer systems are really really good at this kind of hill climbing work because they never stop."*
+
+Both are **second-hand attributions to social-media posts** that the wiki has not ingested; treat them as evidence of what Karpathy's framings are doing in practitioner discourse rather than as citations of Karpathy's own argument.
 
 ## Mentioned in
 

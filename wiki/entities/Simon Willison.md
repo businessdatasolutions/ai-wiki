@@ -6,9 +6,9 @@ tags: [simon-willison, django-co-founder, datasette, ai-developer-whisperer, cha
 website: "https://simonwillison.net"
 role: "Co-founder of Django web framework; creator of Datasette; prolific AI-engineering blogger and developer-tool builder; widely-cited AI-developer-whisperer"
 confidence: 0.82
-last_confirmed: "2026-05-28"
-accessed_at: "2026-05-28"
-source_count: 2
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 3
 ---
 
 # Simon Willison
@@ -21,6 +21,7 @@ Surfaces in this wiki for several substantive framings:
 - **The *dark factory pattern*** — *"you can turn the lights off in the factory because there ain't no humans in the factory. The humans are on the outside building the stuff in the factory to run the factory."* Cited by Everitt as the canonical *augmentation-not-replacement* metaphor for the agentic-engineering reframe.
 - **The *find the joy / find the purpose* sign-off** — *"What's left for the humans? So much stuff."* Cited by Everitt as the closing rhetorical move.
 - **Writing a book on agentic engineering** — Everitt: *"Simon's actually writing a book on this where he's doing kind of a taxonomy of these things."* Worth tracking for future ingest.
+- **The agent definition that a competitor's DevRel adopted verbatim.** In [[2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness|Google Cloud Tech's *What is an Agentic Harness?*]] (July 2026), Greg Baugues opens by attributing the framing on camera: *"My favorite is Simon Willison's definition. An agent is an LLM with tools running in a loop to accomplish a goal."* Five weeks later [[2026-08-19-he-databricks-anthropic-primitives-to-production-agents|Anthropic's own Isabella He]] states the same four clauses without attribution — *"what an agent is, is it is a large language model, it is then put into a loop, it uses tools at its disposal, and it has a particular goal that it's optimizing towards."* Willison's definition is, on this evidence, the **industry-default agent definition by mid-2026**, held in common by two competing labs' developer-facing material.
 - **Red-green TDD for agents** — *"From Lenny's podcast that Simon was on. Red-green testing is one of those things we as engineers know about ... if you will write a broken test as the first step in your agent's work, the agent will start to learn the way you like to write tests and will mimic your testing style."*
 
 ## Appears in this wiki via

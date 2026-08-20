@@ -3,15 +3,15 @@ type: concept
 aliases: ["systems thinking", "systems-thinking"]
 tags: [systems-thinking, innovation, sustainability, design-thinking, breakthrough-thinking, wicked-problems]
 confidence: 0.9
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 7
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 8
 relationships:
   - type: supports
     target: enterprise-ai-adoption
     via: "workflow redesign in the micro-productivity-trap escape is systems-thinking applied to AI"
-quality_score: 0.99
-quality_notes: ['1 near-empty section(s)']
+quality_score: 0.98
+quality_notes: ['2 near-empty section(s)']
 ---
 
 # Systems Thinking
@@ -149,6 +149,21 @@ The consequence she draws is the sharp part, and it inverts the usual seniority 
 
 This is a distinct route to the same criterion [[2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era|Elizabeth Stone]] named three weeks earlier. Stone wants systems thinkers because engineers must "look across all the business domains and abstract that to here's the building blocks we're going to need" — a *design* argument. Miller wants them because someone has to run the fleet — a *management* argument. That two vantages this different converge on the same named skill is the more interesting datapoint than either claim alone; it is also worth noting that neither offers evidence beyond hiring practice, which is why this page's confidence moves only to 0.90. See also [[durable-skills]].
 
+## The Conway feedback loop, and the enterprise architect as index rather than model-holder ([[2026-08-19-rohrer-goto-modern-enterprise-architecture-architecting-for-outcomes|Rohrer / GOTO Copenhagen 2025]])
+
+The corpus's most explicit sociotechnical-systems argument, and it arrives from enterprise architecture rather than from AI.
+
+**The loop.** Rohrer sets Conway's law and Ruth Malan's 2008 formulation — *"if the architecture of the system and the architecture of the organization are at odds, the architecture of the organization will win"* — against Alan Kelly's counter-observation that when management attempts a reorganisation, *"the software won't let it happen."* The apparent paradox resolves as a **mutual-constraint feedback loop**, via Churchill (*"we shape our buildings and thereafter our buildings shape us"*) as adapted by Gene Kim: *"we shape our architecture and then the architecture shapes us."*
+
+The prescription follows directly, and Malan states it with the sting intact: *"system architects, who we call architects, and business and organization architects, **who we actually call managers**, should not work as if one has no impact on the other."* Rohrer: *"we've got to start to design our organization and evolve it in the same way we design and evolve our system, because the things are interrelated."* He also cites the fuller Conway text, which is more prescriptive than the slogan and is rarely quoted: *"the design which occurs first is almost never the best possible. The system concept may need to change. **Flexibility of organization is important to effective design.** Keep the organizations lean and flexible."*
+
+**The fractal claim.** Value, people and technology align at self-similar levels — a team owning an autonomous business capability, a team-of-teams owning higher-level value with shared data models and public domain events, and so on upward. His own estate: *"we have about 90 different teams. That's not 90 different lines of business. It's one line of business collaborating, hopefully decoupled, but ultimately one product."*
+
+**The honest limit, and the most transferable thing here.** Via David Woods' STELLA/SNAFUcatchers report: *"as the complexity of a system increases, the accuracy of any single agent's own model of that system **decreases rapidly**. No one is going to have this entire system in their head. **No one.**"* Rohrer's response is not to try harder but to change what the architect holds — not a model of the system but an **index into it**: *"what does fit in us as enterprise architects' heads is: who are the teams? What do they do? What's the level of indirection? If I need to know something, who do I go talk to?"*
+
+That is a substantive claim for this page: at sufficient scale, systems thinking stops being *understanding the whole* and becomes *maintaining a navigable map of who understands which part* — with feedback loops, not comprehension, doing the work of keeping the parts coherent. Rohrer's C section (governance by pull request on realised architecture) and D section (architects working the operations side of the DevOps loop, learning from production because *"systems last for decades and you cannot predict how they're going to behave"*) are both instances of substituting loops for foresight.
+
+## Debates and supersession
 ## Debates and supersession
 
 - **Bansal & Birkinshaw vs Sterman on what counts as the discipline.** [[2026-04-28-bansal-birkinshaw-systems-thinking|Bansal & Birkinshaw 2025]] treat systems thinking as one of *three* innovation modes (alongside breakthrough and design thinking), positioned for wicked problems. [[2026-05-15-sterman-systems-thinking-for-leaders-designing-solutions-that-work|Sterman 2026]], from inside the MIT system-dynamics lineage, treats systems thinking as the *foundational* mental-model discipline for management decision-making at *any* scale where feedback loops are present — i.e. essentially everywhere. The wiki holds both framings as compatible: Bansal & Birkinshaw is the *strategic-innovation framing*; [[2026-05-15-sterman-systems-thinking-for-leaders-designing-solutions-that-work|Sterman]] is the *operational-decision-making framing*.

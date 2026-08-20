@@ -2,10 +2,10 @@
 type: concept
 aliases: ["expert generalist", "Expert Generalist", "expert generalists", "generalist-specialist blend"]
 tags: [expert-generalist, generalist-vs-specialist, t-shaped, fundamentals-over-tools, patterns, mechanical-sympathy, durable-skills, distributed-systems-fundamentals, hiring, llms-and-skills]
-confidence: 0.8
-last_confirmed: "2026-07-19"
-accessed_at: "2026-07-19"
-source_count: 4
+confidence: 0.82
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 5
 relationships:
   - type: supports
     target: durable-skills
@@ -15,7 +15,8 @@ relationships:
     via: "Fowler argues fundamentals + the habit of interrogating answers resist AI hollowing-out; deskilling describes the opposite drift when task-composition shifts toward AI-handled work"
   - type: authored-by
     target: Martin-Fowler
-quality_score: 1
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # Expert Generalist
@@ -59,6 +60,21 @@ The concept is not anti-specialist. A team of pure generalists ships but is slow
 
 This is qualitatively different from the Allen/Brovich citations: those two *apply Fowler's named framework*; Stone *reaches the same underlying claim without ever citing it*. Genuine independent corroboration of the claim (not the term) justifies lifting confidence past the vendor-propagation cap — **0.75 → 0.8** — while the term-level claim (that "Expert Generalist" specifically, as opposed to the underlying generalist-plus-specialist-depth pattern, is a widely adopted label) remains anchored to Fowler's original coinage plus the two AWS propagations.
 
+## The team-level form of the same argument ([[2026-08-19-rohrer-goto-modern-enterprise-architecture-architecting-for-outcomes|Rohrer / GOTO Copenhagen 2025]])
+
+This concept has so far been argued at the level of the individual — who to hire, what to train, which career shape survives. Rohrer supplies the **team-level** form, from enterprise architecture and without an AI premise, which is useful because it shows the same structural pressure producing the same answer at a different scale.
+
+His unit is a *"full-stack team, **full-burrito**, t-shaped people, you build it you run it"* — self-organising, owning what Roger Sessions calls an autonomous business capability, and constrained by Dan North's *software that fits in your head* as extended by Skelton and Pais to *software that fits inside the team's head*.
+
+**The argument for it is coordination cost, quantified.** His worked example is a layered organisation — one team each for UI, API layer, greeting service, planet service, and the database — which needs **solution architects merely to route a trivial "hello world" feature** across five teams, and ships weeks later with a missing character that the test team waves through as *"not a showstopper defect."* Restructured into one cross-skilled team owning the capability end to end, the same feature goes concept-to-cash inside one team. He cites Scott Prugh's DevOps Enterprise Summit figures for the general case: removing one dependency *"removes handoffs from four to one, so you're four times more efficient, reduces your risk by eight times and reduces your cost by five times."*
+
+That is the missing middle term in this page's argument. The individual-level case for expert generalists ([[2025-07-02-joshi-venkatraman-fowler-expert-generalists|Joshi, Venkatraman & Fowler]]) asserts that breadth is hireable and valuable; Rohrer's version supplies **why the organisation needs it** — because the specialist-per-layer structure is what generates the handoffs, and the handoffs are where the cost and risk actually live. A team can only own a capability end to end if its members span the layers.
+
+Rohrer also cites [[Martin Fowler]] directly for the architect's own version of the same shape: per *Who Needs an Architect?* and *Is Design Dead?*, *"the architect is in the team, the architect is a coach for the team, they're not telling the team what to do, they are helping the team make architectural decisions."*
+
+**Confidence raised 0.80 → 0.82** on a second substantive source. Note that it is a practitioner talk with no measurement of its own — the 4×/8×/5× figures are second-hand from Prugh — so this strengthens the concept's *breadth of support* rather than its evidential base.
+
+## Debates and supersession
 ## Debates and supersession
 
 - **Three citing sources, but the term itself still traces to one origin (as of 2026-07-19).** The *term* "Expert Generalist" is named by one source ([[2025-07-02-joshi-venkatraman-fowler-expert-generalists]]); [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen]] and [[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world|Brovich]] (London/Sydney editions of the same AWS Enterprise Strategy talk) *cite and apply* it rather than independently corroborating it — vendor-altitude propagations of one original. [[2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era|Stone]] breaks this pattern: she reaches the underlying claim independently, without citing the term, which is why confidence moved past the prior 0.75 vendor-propagation cap to 0.8 rather than staying capped. Further lift toward 0.85+ would need either a second source using the *named* Expert Generalist framing independently of Fowler/AWS, or additional independent-claim corroborations at Stone's caliber. The *underlying* claim (fundamentals/generalism beat narrow specialisation; AI amplifies it) is separately corroborated by [[durable-skills]] sources, [[2026-05-20-ng-deeplearningai-ai-dev-26-sf-future-of-software-engineering|Ng]], and [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti]].

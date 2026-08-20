@@ -54,3 +54,4 @@ inspiration/*_files/
 
 # Playwright MCP session traces/logs — ephemeral browser-automation debug output
 .playwright-mcp/
+.venv/

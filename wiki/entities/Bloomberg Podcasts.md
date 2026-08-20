@@ -4,9 +4,9 @@ kind: venue
 aliases: ["Bloomberg Podcasts", "Bloomberg", "Trumponomics", "Bloomberg Leaders", "Bloomberg Audio Studios"]
 tags: [bloomberg, bloomberg-podcasts, trumponomics, bloomberg-leaders, business-journalism, economics-podcast, financial-media]
 confidence: 0.75
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 2
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 3
 relationships:
   - type: published-by
     target: 2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity
@@ -14,6 +14,9 @@ relationships:
   - type: published-by
     target: 2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook
     via: "Tufan Erginbiç on the Rolls-Royce turnaround playbook (24 May 2026, *Bloomberg Leaders*)"
+  - type: published-by
+    target: 2026-08-16-hill-bloomberg-leaders-ceo-skills-age-of-ai
+    via: "Francine Lacqua interviews Linda Hill (Harvard Business School) on the leadership skills that matter in the age of AI — wayfinding vs. pathfinding, creative abrasion, decision rights, and the unspoken board risk-appetite divergence (16 August 2026, *Leaders with Francine Lacqua*)"
 ---
 
 # Bloomberg Podcasts
@@ -21,7 +24,7 @@ relationships:
 The podcast arm of **Bloomberg**'s business and financial news operation, publishing under **Bloomberg Audio Studios**. It runs many strands; two are represented in this wiki.
 
 - ***Trumponomics*** — a weekly economics show hosted by **Stephanie Flanders**, Bloomberg's editorial head of government and economics, examining the economic policies of the second Trump administration and their global consequences.
-- ***Bloomberg Leaders*** — long-form interviews with chief executives about how they run their companies.
+- ***Leaders with Francine Lacqua*** (also carried as *Bloomberg Leaders*) — long-form interviews with chief executives about how they run their companies, hosted by Bloomberg Television anchor **Francine Lacqua**. Two episodes are in the corpus, and they pair usefully as **practice and theory**: [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook|Erginbiç]] is a CEO recounting a transformation he executed; [[2026-08-16-hill-bloomberg-leaders-ceo-skills-age-of-ai|Hill]] is the researcher naming the constructs underneath it. The August 2026 Hill episode inverts the series' usual format on purpose — Lacqua says she is turning the season's question around by asking a career-long student of leadership what actually makes a great boss.
 
 Promoted to a wiki entity page on 12 August 2026 under the [second-source promotion rule](../../CLAUDE.md#author-entity-promotion), on the addition of the Frey interview alongside the earlier Erginbiç episode.
 
@@ -39,3 +42,4 @@ Bloomberg's interview formats are host-led and generally give the guest room to 
 
 - [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey / Trumponomics, August 2026]] — why AI is not boosting productivity.
 - [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook|Erginbiç / Bloomberg Leaders, May 2026]] — the Rolls-Royce turnaround playbook.
+- [[2026-08-16-hill-bloomberg-leaders-ceo-skills-age-of-ai|Hill / Leaders with Francine Lacqua, August 2026]] — the leadership skills for the age of AI; source of **wayfinding vs. pathfinding** and of the claim that leaders' inability to state an AI vision is structurally correct rather than a strategy failure. Also the venue's first **academic** guest — a Harvard Business School professor rather than an operating executive or an economist — which slightly widens the source-quality posture noted above: nothing here is presented with a method or a sample.

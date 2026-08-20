@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 102
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 107
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -24,7 +24,8 @@ relationships:
   - type: supports
     target: 2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas
     via: "MGI quantifies the firm-side scale of the AI deployment race: AI foundation cluster (semiconductors + cloud + AI software) added $11T market cap + $500B revenue since 2022; nine omniscalers spent $800B on R&D + capex in 2025 alone"
-quality_score: 1
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # Enterprise AI Adoption
@@ -699,6 +700,45 @@ The wiki's corpus skews heavily toward software, consulting and services. [[2026
 
 [[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage|Banholzer]] supplies the strategic case for the same artifact, and it reframes what a context layer is *for* on this page. Encoding how decisions actually flow through the organisation — "almost a **digital twin to your operating model**" — is argued not as a retrieval improvement but as adoption infrastructure: it "creates the **railroad tracks** that underpin how different AI agents can navigate… to prevent hallucination," supplies guardrails for analytics, and answers the retiring-expert **talent cliff**. Held alongside [[2026-07-24-turnbaugh-motherduck-context-layers-explained|Turnbaugh's]] context layer and [[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness|Ng's]] agent-ready-data argument, four sources across three weeks now name the data-and-knowledge layer rather than the model as the binding constraint on enterprise adoption — from a data vendor, a strategy consultancy, an AI practitioner and a target firm respectively.
 
+## Five August-2026 sources on why adoption stalls — and none of them blames the model
+
+A batch ingested 20 August 2026 adds five vantages on the adoption gap. What is notable is the **unanimity about where the constraint is not**: not one of the five names model capability as the binding limit.
+
+### The human as the gating mechanism ([[2026-08-14-blomfield-yc-building-structuring-ai-native-company|Blomfield / YC]])
+
+The sharpest mechanical account in the corpus of why deployments plateau at *"20% more productive"*: the agent runs until it gets stuck, then waits. *"You as a human are like the gating mechanism. So while you are asleep, the thing can't work. If it stops halfway through at 3 in the morning, it's waiting on input from you, it can't go anymore."* The prescription is loop closure rather than better prompting or better models. Boundary condition, stated by the speaker: his evidence is early-stage greenfield startups, and *"this is by the way easier when you're starting out"* — nothing here tests the claim against an incumbent's legacy systems or compliance regime.
+
+Three practice-level prescriptions from the same source that bear on adoption specifically: **legibility as a precondition** (transcribe every meeting; ban Slack DMs so knowledge lives in AI-readable channels; *"every action needs to create an artifact… otherwise it basically didn't happen to the AI"*); **burn tokens, not headcount**; and **no middle management**, with the DRI — *"a single person whose head is on the block"* — as the surviving coordination role.
+
+### The unheld board conversation about risk appetite ([[2026-08-16-hill-bloomberg-leaders-ceo-skills-age-of-ai|Hill / Bloomberg *Leaders*]])
+
+A governance-layer blocker the corpus has not previously named. Hill, from decades advising boards:
+
+> *"Very senior people don't necessarily talk about risk really. They can have very different risk appetites… **but they don't ever really address the fact that they have different risk appetites.**"* On boards specifically: *"I don't think board members like to have conflict… It's there whether you bring it up or not, and it's going to play out in different ways. But nowadays, given what's going on, we need to talk. We need to say **what is our risk appetite as we begin to, for instance, roll out AI solutions.** And that conversation is a really hard one to have."*
+
+She names why it stays unheld: the reputational cost of appearing *"too conservative, or resistant to the future."* This is a distinct failure mode from the ones already on this page — it is neither a capability gap, a data gap, nor a change-management gap, but an **unresolved and undiscussed disagreement at the authorising layer**, which produces decisions that look like indecision. Pairs with her decision-rights prescription: *"one of the things that I first work with when I'm working with CEOs is decision-making rights. Being real clear who has decision-making rights for what, and what do you want to hear before they make a decision."*
+
+### "These are not outcomes, they're outputs" — stated in 2025 ([[2026-08-19-rohrer-goto-modern-enterprise-architecture-architecting-for-outcomes|Rohrer / GOTO Copenhagen 2025]])
+
+The corpus's earliest statement of the adoption-metric-as-goal failure, and it arrives as a throwaway line in an enterprise-architecture talk with no AI thesis:
+
+> *"Maybe we're looking for — we want to move everybody to cloud, or **we want to get everybody using AI these days**, or we want to move everybody to Kubernetes or microservices. **No, these are not outcomes. They're outputs.**"*
+
+Two things make it worth recording. It **predates** most of the return-gap material this page holds, and it places AI adoption in a list with cloud migration and Kubernetes — i.e. it diagnoses the pattern as a recurring enterprise-technology failure rather than an AI-specific one. His replacement outcome set is *better value sooner safer happier*, anchored on the firm's actual value proposition rather than on technology penetration.
+
+### The COGS inversion ([[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Huang / Sequoia]])
+
+A counter-intuitive adoption dynamic: *"ironically, the more successful your AI product is, the higher your AI COGS tend to be. And so it's actually **the companies that have been most advanced in their deployment of AI that have been the first** to go on this journey of owning their own models."* The implication for this page is that unit economics bite *after* successful adoption rather than before it — the firms with a real adoption problem and the firms with a real cost problem are different firms at different stages. Unevidenced (no figures anywhere in the source) but structurally specific enough to test.
+
+Same source, on sequencing: **evals first**. *"Defining evals — this is so important. It is unglamorous work. It is not fun work, but the more that you do up front the better positioned you are for everything after."*
+
+### Eval practice lags agent practice ([[2026-08-19-he-databricks-anthropic-primitives-to-production-agents|He / Anthropic]])
+
+From the vendor's customer-facing side: *"a lot of times people are just **behind on building evals** with how quickly agents are evolving and models are evolving."* Her argument for why this matters is not quality but **upgrade absorption**: *"without evals, let's say a new model comes out, you have your existing agent, your existing prompts and your existing tooling — you don't know objectively in a quick way to test if a new model put into your system is actually going to help you achieve new capabilities."* On this framing, an enterprise without evals is not merely shipping unmeasured agents; it is **structurally unable to benefit from model progress**, which compounds the adoption gap over time rather than holding it constant.
+
+The same talk's SRE demo is the shape of the use case: incident detection → root-cause diagnosis → code fix → redeploy → self-verification → resolve the page → postmortem published via MCP. Scripted, single-run, self-injected fault — evidence about *shape*, not reliability.
+
+## Debates and supersession
 ## Debates and supersession
 
 - **High adoption vs. low maturity.** 78% adoption + 1% mature (per AI Index) and 28%+34% in Stages 1–2 + only 7% Stage 4 (per MIT CISR) describe an organization-wide scramble in early innings. Sources interpreting 78% as "AI is mainstream" are technically correct but misleading about depth. See [[ai-maturity-measurement-comparison]].

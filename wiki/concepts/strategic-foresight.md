@@ -3,9 +3,9 @@ type: concept
 aliases: ["strategic foresight", "strategic-foresight", "corporate foresight", "futures thinking"]
 tags: [strategic-foresight, scenarios, futures, signal-detection, FTSG, webb, arena-creation-potion, arenas-radar, MGI]
 confidence: 0.87
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 11
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 12
 relationships:
   - type: part-of
     target: dynamic-capabilities
@@ -16,7 +16,8 @@ relationships:
   - type: supports
     target: 2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas
     via: "MGI's three-ingredient arena-creation potion (tech/business-model step change + escalatory investment pattern + large/expanding addressable market) is a reusable foresight heuristic; the arenas-radar diagnostic operationalises foresight as proximity + production/revenue impact mapping"
-quality_score: 1
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # Strategic Foresight
@@ -178,6 +179,30 @@ The generalisable claim: in a regulated market the actionable leading indicator 
 
 **Two failure signatures worth recording** alongside the page's existing material, because both are invisible to a financial dashboard: a **strength quietly becoming a weakness** (a firm whose mounting operational issues moved it out of the advantaged band on a dimension that had been a strength), and an **advantage held but not deployed** — "financial strength where you have these enormous cash assets, but you're not actually using that for anything… you're not deploying it. And that can be true for any of the seven."
 
+## Wayfinding vs. pathfinding — a named stance for when no destination can be posited ([[2026-08-16-hill-bloomberg-leaders-ceo-skills-age-of-ai|Hill / Bloomberg *Leaders*, August 2026]])
+
+Nearly everything on this page assumes a destination can be posited — that scenarios can be interpreted, signals can be read forward, and a strategy can be formulated against the resulting picture. **[[Linda Hill]]** supplies the boundary condition on that assumption, and a name for what to do past it.
+
+She sets it up by separating the innovation case from the change case: *"innovation is not so much about vision. It's more about **purpose**… Vision means you know the direction. When you're talking about innovation, **by definition, if it's a breakthrough innovation, you have no answer, you have no vision** to tell people, this is it."* Applied to AI, without hedging:
+
+> *"Many leaders have no vision about what's really going to go on with AI. **They just don't.** When you ask them, they're perplexed."*
+
+The interviewer offers the charitable read — *"which is maybe honesty, Linda… at this juncture in time, maybe we don't know"* — and Hill accepts it and names the alternative competence:
+
+> *"So that's why we call that **wayfinding** as opposed to **pathfinding**. The wayfinding is we don't know the destination, nonetheless how we're going to get there. That requires a lot of confidence in your capacity to help people figure this thing out."*
+
+**Why this matters to this page.** The corpus's enterprise-AI-return-gap cluster keeps arriving at the same finding — leaders cannot say where AI is taking their organisation — and mostly treats it as a deficiency to be fixed with better foresight work. Hill's claim is that for genuinely breakthrough change **the demand for a vision is the wrong request**, and that a leader who says "I don't know" is describing the situation correctly rather than failing at strategy. That is a direct qualification on the scenario-planning tradition this page is built on: scenario methods presuppose a space of describable futures, and wayfinding is the stance for when that presupposition does not hold.
+
+**What replaces the vision, in her account, is procedural rather than analytical.** Her worked case is the head of Cleveland Clinic Abu Dhabi, who told her *"I feel like I'm leading through a fog. How do you lead when you can't see, when you have no vision?… I thought I should steer the ship, but where am I steering it to?"* His resolution had two parts:
+
+1. **Declare the absence of a baseline.** *"My job is first to convince everyone in this organization that **there is nothing called business as usual**. Everything is a working hypothesis."*
+2. **Engineer for assumption-challenge in the decision body itself.** *"Every time when he could, he made sure that there was **someone on the team making decisions who had never seen an epidemic before**. He didn't just want the experts, he wanted someone who had the **beginner's eye**, who would ask that so-called stupid question — because they didn't know it was a stupid question — and would force all of the other experienced people to question their assumptions."*
+
+Hill reports the hospital's Covid response as unusually effective and attributes it to this. Note the epistemic status: this is a single case, recounted second-hand in a podcast interview, with no comparison and no measurement — the mechanism is worth holding, the outcome claim is not.
+
+The complementary governance move from the same episode belongs with it: **decision rights as the CEO's first design task**, justified by a sensing-latency argument — *"somebody down there is going to hear it sooner than you, and you want to make sure you've empowered them enough. There have to be guardrails here."*
+
+## Debates and supersession
 ## Debates and supersession
 
 The wiki holds three productive tensions within the foresight discipline. None are supersession events; each is named here so future ingest can resolve or sharpen the position rather than re-discover it.

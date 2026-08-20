@@ -2,15 +2,16 @@
 type: concept
 aliases: ["AI washing", "AI-washing", "AI wash", "AI washing layoffs"]
 tags: [ai-washing, ai-employment-effects, labor-market, narrative, greenwashing, attribution, layoffs]
-confidence: 0.72
-last_confirmed: "2026-06-26"
-accessed_at: "2026-06-26"
-source_count: 2
+confidence: 0.77
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 3
 relationships:
   - type: part-of
     target: ai-employment-effects
     via: "the attribution/narrative confound layer of the AI-employment question — why the AI-as-cited-reason-for-layoffs signal is hard to take at face value"
-quality_score: 1
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # AI Washing
@@ -49,6 +50,23 @@ Edwards's normative worry is that the **amplified narrative itself distorts deci
 - **Career mis-optimisation.** Young people optimise for "AI-proof" majors and careers, but "that may not be the reason that some companies are slimming down their workforces anyway" — they are hedging against a cause that may be misattributed.
 - **Ignored counter-data.** Edwards's cited datapoint: **Indeed software-development job postings** went from much *lower* than overall postings at the start of 2024 to **four times as high** by mid-2026, outperforming overall jobs over the prior ~year — *"so not the narrative that's out there."* This is a journalist-surfaced counterweight to the [[2026-04-30-ai-index-report-2026|AI Index 2026]] / [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson Canaries]] entry-level-decline finding, aligned with the lump-of-labor pole ([[2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going|Evans]]) and the [[2026-05-01-lf-state-of-tech-talent-global-2026|Linux Foundation "not a jobs crisis"]] surveys. It is *narrative critique*, not a new measurement (single chart, single platform), and should be weighted accordingly.
 
+## "These are not outcomes, they're outputs" — the output/outcome confusion as the enabling condition ([[2026-08-19-rohrer-goto-modern-enterprise-architecture-architecting-for-outcomes|Rohrer / GOTO Copenhagen 2025]])
+
+A third source for this page, and a useful one because it is not about AI and predates most of the corpus's return-gap material.
+
+Rohrer, listing the outcomes a modern enterprise-architecture practice should target, pauses on the wrong answers: *"Maybe we're looking for — we want to move everybody to cloud, or **we want to get everybody using AI these days**, or we want to move everybody to Kubernetes or microservices. **No, these are not outcomes. They're outputs.**"*
+
+Two things this adds to the page.
+
+**It locates the mechanism upstream of the marketing.** AI-washing is usually treated here as a claim problem — a firm asserting AI capability it does not have. Rohrer's line points at the condition that makes such claims *legible as achievements in the first place*: an organisation that measures technology penetration rather than business result will reward "we are using AI" as a completed objective, internally and externally, with no dishonesty required at any step. Washing is easiest where the scorecard already counts outputs.
+
+**It generalises the pattern out of the AI era.** AI appears in his list alongside cloud migration, Kubernetes and microservices — i.e. as the current instance of a recurring enterprise-technology failure rather than something new. That is a mild but real counterweight to the corpus's tendency to treat AI-washing as a novel phenomenon; the wiki should expect the same dynamics documented for prior technology waves to transfer.
+
+His replacement — *better value sooner, safer, happier*, anchored on the firm's actual value proposition — is the constructive half, and it is the same move the return-gap sources make when they insist on business-outcome measurement over adoption metrics. See [[enterprise-ai-adoption]], where the quote is recorded alongside the other August-2026 adoption-gap material.
+
+**Confidence raised 0.72 → 0.77** on the third independent source, with the caveat that this one addresses the mechanism obliquely — it is a talk about enterprise architecture, and the AI reference is a single clause in a list.
+
+## Debates and supersession
 ## Debates and supersession
 
 - **AI washing vs. real AI displacement — not mutually exclusive.** The concept is a confound, not a denial. The empirical record on [[ai-employment-effects]] (Brynjolfsson's ~13% relative early-career decline; the AI Index's −20% software-dev employment from 2024; Massenkoff & McCrory's ~14% junior job-finding-rate drop) is load-bearing and independent of attribution games. AI washing says *some* of the AI-cited layoffs are misattributed and the true share is unknowable — not that AI has no labor-market effect. The two readings coexist: real displacement at the entry-level margin, plus a layer of over-attribution on top.

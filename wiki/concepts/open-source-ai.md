@@ -2,10 +2,10 @@
 type: concept
 aliases: ["open source AI", "open-source AI", "open-weight models", "open weights", "open models", "AI sovereignty", "own vs rent AI"]
 tags: [open-source-ai, open-weight-models, own-vs-rent, ai-sovereignty, concentration-of-power, china-open-models, safety-through-transparency, hugging-face]
-confidence: 0.85
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 5
+confidence: 0.87
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 6
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -13,7 +13,8 @@ relationships:
   - type: supports
     target: agent-harness
     via: "shares the own-vs-rent ownership motif — 'the model is what you rent, the harness is what you own'; open weights are the substrate that specialization/harnessing is owned on top of"
-quality_score: 1
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # Open-Source AI
@@ -79,6 +80,33 @@ He is careful to establish he is not hostile to the frontier labs first — "I t
 
 Five sources now. Confidence moves 0.80 → **0.85**: Ng is a third distinct argument (competitiveness) alongside cost, trust and sovereignty, and the distillation dissent is now double-sourced. It stays below the cap for the reason the page has always given — **every source here is an interview, none is empirical**, and Ng is the most interested party of the five.
 
+## "Not your weights, not your product" — open weights as the enabling condition for enterprise ownership ([[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Huang / Sequoia, August 2026]])
+
+A venture investor's framing of open weights, which matters here because it is the corpus's third own-vs-rent source and the first from someone who is neither a model platform nor a compute vendor.
+
+Huang defines **sovereign AI** as *"companies owning their own intelligence without external dependencies **down to the weights**"*, and ports the slogan from crypto: *"in the crypto days there was this meme for the DeFi degens — not your keys, not your crypto… I hereby present the AI version of this meme: **not your weights, not your product.**"* She draws the boundary immediately, which is more careful than the slogan: *"we are definitely not telling our companies to get off Opus or GPT… For coding agents, for desktop work, for frontier-level APIs, the closed model APIs are wonderful."*
+
+**The claim that is new relative to what this page already holds** is about performance rather than cost or control:
+
+> *"The beauty of owning your stack is that you can actually drive frontier-level performance now. And so this is somewhat new, and in large part this is thanks to the newest open-weight models, especially **Kimi K3** and **GLM-5.2**, being extremely good. **Because the weights are available, they're actually much more malleable than working with the closed APIs.** And so you start with a baseline that's already close to frontier and then with a good enough technical roadmap — strong post-training, prompt harness engineering, online learning — you can actually reach **better than frontier** performance by owning your stack. And so this is **new for 2026**."*
+
+This reframes the open-weights choice from a **cost-and-control** decision to a potential **performance** one, and does so specifically in-domain. It is the strongest version of the claim in the corpus — and it is **entirely unevidenced**: no benchmark, no company-plus-figure, no before/after, and the speaker twice flags that she is not technical and that the framework is opinionated.
+
+Her four drivers, in stated order, map onto material this page already holds: **cost** (with the COGS inversion — the most advanced deployers switch first), **speed** (*"a small distilled custom model can beat a large general one"* in coding and security), **performance** (the new one, above), and **controlling your own destiny** — where she is notably generous to the labs: *"Anthropic and OpenAI, I actually think to their credit, they've been really wonderful partners to a lot of the ecosystem, but companies are increasingly finding that they want their own set of independent legs to stand on."*
+
+Her **higher-floor / lower-ceiling** characterisation is the most reusable thing in the talk and belongs on this page as a decision frame:
+
+| | Closed-API stack | Owned stack |
+| --- | --- | --- |
+| Production layer | foundation model + out-of-box harness | open-weight base + heavy post-training; choose and configure an open harness, its logic, tools and context |
+| Development layer | prompts, context, your own evals | eval monitoring and drift-watching, high-quality post-training data (expert trajectories / synthetic data / RL environments), online learning |
+| Trade | *"a higher floor, but a lower ceiling, because you don't actually have the ability to take your own data, to take online production data and improve your own intelligence"* | *"like opening a Pandora's box"* |
+
+She also notes the policy dependency this page tracks: *"just last week, Jensen led the charge in making sure that open-weight models remain available in the US, and it was awesome to see the near unanimous wave of support"* — the same dependency [[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness|Ng argues from the competitiveness side]].
+
+**Source-quality caveat, load-bearing.** This is investor content addressed to the speaker's own portfolio at an event designed to change that portfolio's behaviour, and the companies named as evidence are largely portfolio companies. The wiki now holds three own-vs-rent sources — a platform CEO ([[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue]]), a substrate vendor ([[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Jensen Huang]]) and an investor (Huang) — whose **shared blind spot is that all three sell something that becomes more valuable if enterprises stop renting**, and none of them measures the outcome. Confidence on this page is raised to 0.87 on the strength of a third independent vantage converging, not on the strength of the evidence, which remains absent.
+
+## Sources consulted
 ## Sources consulted
 
 - [[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue / Hugging Face (TechCrunch Equity, Jul 2026)]] — the fullest single-source treatment: own-vs-rent flow, safety-through-transparency, China's open-model lead, concentration-of-power, local AI / robotics.

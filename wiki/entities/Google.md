@@ -1,13 +1,13 @@
 ---
 type: entity
 kind: organization
-aliases: ["Google", "Google LLC", "Alphabet (operating subsidiary)", "Google for Developers"]
+aliases: ["Google", "Google LLC", "Alphabet (operating subsidiary)", "Google for Developers", "Google Cloud Tech"]
 tags: [google, big-tech, hyperscaler, ai-lab, foundation-models, gemini, google-cloud, google-research, google-brain, gemini-api, file-search, multimodal-rag, notebooklm, flow, veo, ai-product-management, bfloat16, coral-edge-tpu, tensorflow, edge-ml]
 since: 1998
 confidence: 0.90
-last_confirmed: "2026-06-18"
-accessed_at: "2026-06-18"
-source_count: 11
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 12
 relationships:
   - type: published-by
     target: 2026-06-12-mcveety-hormati-google-cloud-open-knowledge-format
@@ -21,6 +21,9 @@ relationships:
   - type: published-by
     target: 2026-06-10-google-cloud-tech-ai-agents-explained-first-agent
     via: "Google Cloud Tech YouTube channel — ADK first-agent tutorial built on the ReAct loop"
+  - type: published-by
+    target: 2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness
+    via: "Google Cloud Tech YouTube channel, *AI Builder Essentials* series — the harness/interface definitional explainer with Greg Baugues and Tilde Thurium"
 ---
 
 # Google
@@ -31,6 +34,7 @@ Big-tech platform company; operating subsidiary of Alphabet. Within this wiki Go
 
 - [[Google Research]] — research arm; producer of the Gemini model family; anchor of the durable-skills measurement work ([[2026-05-07-globerson-et-al-scalable-measurement-durable-skills|Globerson et al. 2026]] / Vantage / Executive LLM platform).
 - **Google Cloud / Google Cloud Platform** — hyperscaler division. Surfaces in this wiki via Cloud Run, GKE, Agent Runtime, Cloud Build, Cloud Trace / Logging / Monitoring as deployment, CI/CD, and observability substrates for agents. Sponsor of the Agents CLI announcement. Also the publisher of the **Open Knowledge Format (OKF) v0.1** ([[2026-06-12-mcveety-hormati-google-cloud-open-knowledge-format|McVeety & Hormati 2026]]) — an open spec formalizing the [[llm-wiki|LLM Wiki]] pattern, with Google Cloud's Knowledge Catalog updated to ingest it. OKF is a **second instance of the Bfloat16 pattern** noted below — a Google-built data/knowledge format proposed as an open industry standard.
+- **Google Cloud Tech** — Google Cloud's developer-relations YouTube channel, and by mid-2026 the wiki's second-most-cited Google publishing surface. Two sources: the [[2026-06-10-google-cloud-tech-ai-agents-explained-first-agent|ADK first-agent tutorial]] (June 2026) and the [[2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness|*What is an Agentic Harness?*]] explainer (July 2026, *AI Builder Essentials* series, with **Greg Baugues** and **Tilde Thurium**). Carried as an `aliases:` entry on this page rather than as a separate entity — it is a channel of Google, not a distinct organisation, and treating it as one would fragment the Google footprint. The harness explainer matters disproportionately for its length: it is the corpus's **cross-vendor ratification of the [[agent-harness]] construct**, with Baugues defining *"the harness is everything after the LLM"* and adopting [[Simon Willison]]'s agent definition on camera, while naming a competitor's product (Claude Code) first among his harness examples.
 - **Google Developers** — developer-relations division publishing the Google Developers Blog; the channel for the [[2026-04-22-cheung-ippolito-secchi-google-agents-cli|Agents CLI]] announcement.
 - **Gemini Enterprise** — enterprise distribution surface for agents registered via the Agents CLI. (Single-source mention; promote on second-source coverage.)
 - **Google Brain** — Google's ML research division (subsumed into Google DeepMind / Google Research over time). Surfaces in this wiki as the **originator of Bfloat16** — the ML-bespoke 16-bit floating-point format (1 sign + 8 exponent + 7 mantissa) that won the training-precision war over IEEE 754 FP16 (1+5+10) because the extra exponent bits give wider *dynamic range* at the cost of mantissa precision. Bfloat16 is named in [[2025-05-17-turc-llms-low-precision-quantization-fundamentals|Turc 2025]] as *"introduced by Google Brain, hence the B, specifically for machine learning ... important for training models where we want the ability to represent very low numbers in the vicinity of zero."* The wiki's first **vendor-built-data-format-becomes-industry-standard** example.

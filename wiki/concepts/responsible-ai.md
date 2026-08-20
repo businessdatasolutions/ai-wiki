@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 21
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 22
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -13,8 +13,8 @@ relationships:
   - type: supports
     target: ai-employment-effects
     via: "labor-market disruption is an under-attended RAI concern"
-quality_score: 0.97
-quality_notes: ['1 near-empty section(s)', '1 broken body wikilink(s)']
+quality_score: 0.96
+quality_notes: ['2 near-empty section(s)', '1 broken body wikilink(s)']
 ---
 
 # Responsible AI
@@ -246,6 +246,21 @@ She also names an empirical finding from analysing four commercial chatbots and 
 
 A related governance datapoint from [[2026-08-03-chowdhery-mirhoseini-stanford-cs329a-self-improving-agents-part-1|the CS329A lecture]], stated by two researchers who have worked on frontier models at Google DeepMind and Anthropic: on alignment via RLHF, "**this is still a big problem. It's a big issue. We haven't mastered it yet.**"
 
+## Risk appetite as something a board must state before deploying ([[2026-08-16-hill-bloomberg-leaders-ceo-skills-age-of-ai|Hill / Bloomberg *Leaders*, August 2026]])
+
+Most of this page's governance material addresses *mechanisms* — runtime enforcement, refusal behaviour, oversight structures. **[[Linda Hill]]** points at a precondition upstream of all of them: whether the authorising body has ever articulated what risk it is willing to take.
+
+> *"Very senior people don't necessarily talk about risk really. They can have very different risk appetites… **but they don't ever really address the fact that they have different risk appetites.**"*
+
+On boards, where the divergence matters most: *"I don't think board members like to have conflict. Conflict is complicated. So sometimes — do we bring it up or not? **It's there whether you bring it up or not, and it's going to play out in different ways.** But CEOs or board chairs or lead chairs understand that. Nowadays, given what's going on, we need to talk. We need to say **what is our risk appetite as we begin to, for instance, roll out AI solutions.** And that conversation is a really hard one to have."*
+
+Her account of why it stays unheld is specific and is the governance-relevant part: the reputational cost of appearing *"too conservative, or resistant to the future."* A director who raises a risk concern about an AI deployment is positioned as an obstacle to progress, which suppresses exactly the dissent that responsible-AI governance depends on. This is the same dynamic her *creative abrasion* work addresses in innovation contexts, applied to the risk conversation.
+
+**Two implications for this page.** First, a runtime enforcement policy, a refusal specification or an oversight structure all encode a risk posture — and if the posture was never agreed, the encoding is made by whoever wrote the policy rather than by the body accountable for it. Second, Hill's complementary prescription (**decision rights** made explicit: *"being real clear who has decision-making rights for what, and what do you want to hear before they make a decision"*) is the mechanism she offers for surfacing the divergence, since decision-rights work forces the question of what an authoriser needs to see before authorising.
+
+The claim is unmeasured — an experienced adviser's observation from board programmes, delivered in a podcast interview. It is recorded here as a **named failure mode** rather than as a finding, and it is the only governance-layer blocker in the corpus that sits above the technical controls rather than among them.
+
+## Debates and supersession
 ## Debates and supersession
 
 - **Open vs. closed model risk framing.** Open-weight models are increasingly close to closed-weight in capability ([[foundation-models]]) — does that change the policy calculus on disclosure / weights release?

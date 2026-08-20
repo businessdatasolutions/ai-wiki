@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 25
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 28
 relationships:
   - type: instance-of
     target: generative-ai
@@ -15,8 +15,8 @@ relationships:
   - type: uses
     target: react-reasoning-acting
     via: "the reason–act–observe loop at the centre of the agent definition originates in ReAct (2022)"
-quality_score: 0.99
-quality_notes: ['1 near-empty section(s)']
+quality_score: 0.98
+quality_notes: ['2 near-empty section(s)']
 ---
 
 # AI Agents
@@ -184,6 +184,35 @@ A short but concrete deployment description in a sector the corpus under-covers.
 
 Vendor-produced testimonial with no quantitative content; see the source's scope warning before citing it for anything beyond the deployment's existence and shape.
 
+## The four-clause definition, now shared across competing vendors (August 2026)
+
+Two sources five weeks apart, from Google and Anthropic, converge on the same four-clause definition — and one of them attributes it.
+
+[[2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness|Greg Baugues / Google Cloud Tech, July 2026]]: *"My favorite is [[Simon Willison]]'s definition. **An agent is an LLM with tools running in a loop to accomplish a goal.**"* His gloss on the tool clause is unusually context-flavoured for a tool-use explanation — *"generally speaking, what you're doing is using these functions or tools to go grab context that's external to the LLM, and then to feed that context into the context of your conversation with the LLM"* — and on the loop clause he puts the weight on the evaluator rather than the repetition: *"there's some mechanism there where we are **programmatically** evaluating the output of the large language model to determine, is it done? Has it reached the goal?"*
+
+[[2026-08-19-he-databricks-anthropic-primitives-to-production-agents|Isabella He / Anthropic, April 2026 talk]]: *"what an agent is, is it is a large language model, it is then put into a loop, it uses tools at its disposal, and it has a particular goal that it's optimizing towards."* Same four clauses, no attribution.
+
+He adds the part Baugues leaves out — **what the definition is defined against**, as a three-stage progression: single-LLM features (tokens in, tokens out) → **workflows**, *"LLMs essentially orchestrated by code… you chain together different LLM calls orchestrated by code. But this was still very deterministic, relying on human-encoded logic to guide LLMs around where they were going"* → **agents**, *"where LLMs are actually deciding their own trajectories."* The discriminator is therefore **who chooses the trajectory**, not tool use or looping in themselves — a workflow can have both.
+
+On this evidence the wiki should treat Willison's formulation as the **industry-default agent definition by mid-2026**, held in common by two competing labs' developer-facing material.
+
+## The loop as the unit of company design ([[2026-08-14-blomfield-yc-building-structuring-ai-native-company|Blomfield / YC, August 2026]])
+
+Blomfield decomposes the agent loop into five named parts and then uses it as an *organisational* primitive rather than a technical one:
+
+1. **Signal in** — *"product telemetry, inbound messages… data from the real world, like billing signals, support tickets, code changes."*
+2. **Policy layer** — *"what rules constrain the AI? What things must it ask for approval for? What does it have to log?"*
+3. **Tool layer** — internal APIs, email, billing updates, *"and you might have APIs for this or MCP or whatever."*
+4. **Quality gate** — which he argues should usually be a second adversarial LLM rather than a human; see the disagreement recorded on [[agent-harness]].
+5. **Learning mechanism** — *"you loop back around, you deploy the thing, you make the change and you see how it impacts the real world."*
+
+The closure condition is the point: *"if you can do this entire loop **without a human**, your product starts improving itself when you're sleeping."* His diagnosis of why most deployments do not is the **human-as-gating-mechanism** failure — *"you ask the agent to go and do something, it goes away until it gets stuck, and it comes back to you… if it stops halfway through at 3 in the morning, it's waiting on input from you, it can't go anymore"* — which caps outcomes at *"making engineers 20% more productive."*
+
+He also sketches the next construct up: an **AI employee** is an agent given a VM with web search, an internal-directory crawler, Slack-history search, code execution, and **persistent file storage** so *"it can come up with a plan and write the plan to disk — so if it fails halfway through, it can resume."* Named instance: OpenClaw. Beyond that he expects loop-to-loop communication, which nothing in the corpus yet evidences.
+
+Nothing in this source is measured; see its scope warning.
+
+## Debates and supersession
 ## Debates and supersession
 
 - **Where in the org does an agent sit?** The 4 sources frame agents differently:

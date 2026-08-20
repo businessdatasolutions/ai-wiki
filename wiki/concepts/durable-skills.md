@@ -3,9 +3,9 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 41
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 42
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -16,8 +16,8 @@ relationships:
   - type: depends-on
     target: ai-benchmarks
     via: "measurement methodology — Vantage and similar protocols define new benchmark types for human skills (not model capability)"
-quality_score: 0.99
-quality_notes: ['1 near-empty section(s)']
+quality_score: 0.98
+quality_notes: ['2 near-empty section(s)']
 ---
 
 # Durable Skills
@@ -282,6 +282,22 @@ Two sources a fortnight apart supply a *latency* argument for retaining knowledg
 
 The third is where her argument bites, and it inverts the usual seniority story on this page. Because the skill in demand is running "a mini org, a temporary digital workforce of AI agents," the people advantaged are those who have managed people before — and early-career ICs are "in a really tough position on that systems thinking side, very strong on the AI side." This converges with [[2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era|Stone's]] systems-thinking hiring criterion three weeks earlier, reached from an operator vantage and for a different reason (designing across business domains rather than supervising agent fleets) — two independent routes to the same criterion. Neither source lifts the page past its 0.95 cap: Collison's is an unaudited revealed-preference claim and Miller's is an advisory practitioner's hiring heuristic.
 
+## The primary statement of creative abrasion, and collaboration as the ten-year skill ([[2026-08-16-hill-bloomberg-leaders-ceo-skills-age-of-ai|Hill / Bloomberg *Leaders*, August 2026]])
+
+This page has carried **[[Linda Hill]]**'s vocabulary second-hand since the [[2026-02-09-ross-schneider-adaptability|Ross & Schneider]] entry above, which cites her four adaptable-leader practices and her *creative abrasion* coinage without her being an author. Her August 2026 Bloomberg interview is the primary statement, and it promotes her to an entity page.
+
+**Creative abrasion**, in her own words, is an organisational capacity a CEO should audit: *"do you have enough of what's referred to as creative abrasion? Do you have enough diversity of thought? And do you know how to embrace that diversity of thought, deal with that conflict? **You need to amplify difference. But many CEOs minimize difference.**"* The mechanism: *"everybody has a slice of genius… if you have very talented, passionate people and you let them say what they think, they're not letting go easily. So you as a leader have to take those talented, passionate people — if you've unleashed their ideas, now you have to leverage and harness them to make sure you get some good solution out of it."* Her source for the hiring corollary, an early Google infrastructure leader: *"you're hiring them for their ideas, and if you don't get those ideas, then shame on you… **you can never have too many cooks in the kitchen.**"*
+
+Two additions this page did not previously hold:
+
+- **Contextual intelligence**, offered as a partner to emotional intelligence and framed as an attribution-error correction: *"usually our context is shaping our individual behavior. Too often we think, oh, that person's a good person, bad person, resistant, whatever. **No. What is it about their context that is leading them to prioritize in ways that aren't suited to what the company needs? Or are they constrained in some way that if I relieve that constraint, they begin to behave in ways the company really needs?**"*
+- **Empowerment as an overrated practice**, which sharpens a word this cluster uses loosely: *"empowerment simply means that you're sharing with people the **potential** to have influence. So whether or not they get to exercise that potential is your call… I think sometimes people [say] 'I empowered them.' Well, in the end it's on you."*
+
+Asked directly which leadership skill will matter more in ten years than today, her answer lands squarely on this page's central cluster: **"your capacity to collaborate."** And on formal authority as a substitute: *"I think formal authority as a source of power is actually quite limited in many ways in what you need to do now to influence people to get the job done."*
+
+**Confidence unchanged.** Nothing in the interview is presented with a method, a sample or a result; its value is that constructs the page previously held at one remove now have a primary source. See also [[strategic-foresight]] for her *wayfinding vs. pathfinding* distinction, which is the more novel contribution of the same episode.
+
+## Related concepts
 ## Related concepts
 
 - [[expert-generalist]] — the software-practitioner articulation: Fowler's trait-set is the developer-chair version of the durable-skills cluster.

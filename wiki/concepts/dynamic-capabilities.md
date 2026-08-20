@@ -3,15 +3,15 @@ type: concept
 aliases: ["dynamic capabilities", "dynamic-capabilities", "Teece dynamic capabilities", "sense seize transform"]
 tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, microfoundations]
 confidence: 0.95
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 33
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 39
 relationships:
   - type: supports
     target: enterprise-ai-adoption
     via: "AI adoption requires dynamic-capability microfoundations to scale"
-quality_score: 0.99
-quality_notes: ['1 near-empty section(s)']
+quality_score: 0.98
+quality_notes: ['2 near-empty section(s)']
 ---
 
 # Dynamic Capabilities
@@ -246,6 +246,39 @@ The CGM case gives the cell a worked example with an unusual lesson: the actiona
 
 [[2026-08-11-ummadisetti-langchain-toyota-deep-agents-rd-research|The Toyota clip]] adds two `digital-transforming/*` instances at target-firm altitude — improving digital maturity by making decades of dispersed research queryable, and redesigning internal structures via a central Enterprise AI function authoring per-function skills — though with no evidence of outcome attached.
 
+## A six-source batch that tests the *digital-* prefix from both ends (August 2026)
+
+The 20 August 2026 batch tagged **all six** of its sources — the first batch in the corpus with no deliberate omissions — and it is unusually informative about the vocabulary's reach because two of the six are non-AI or barely-AI sources.
+
+### The strongest non-digital test since Rolls-Royce ([[2026-08-19-rohrer-goto-modern-enterprise-architecture-architecting-for-outcomes|Rohrer / GOTO Copenhagen 2025]])
+
+Where [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook|Erginbilgiç]] tested the non-digital reach of `strategic-renewal/*`, Rohrer tests it for `digital-transforming/redesigning-internal-structures` — and the result cuts the other way in an instructive manner. His entire talk is a structural-redesign argument (co-design organisation and system; restructure five layer-owning teams into one capability-owning team; the fractal team / team-of-teams model), and it exercises the cell **completely**, from a 2025 recording with essentially no AI content. The cell's canonical activity list — *"hiring a chief digital officer; digitalization of business models; designing team-based structures"* — is satisfied only by its third clause.
+
+That is evidence for the wiki's working hypothesis in a sharper form than usual: **the cell is really two cells wearing one label.** *Designing team-based structures* is a transformation primitive with a literature stretching back through Conway (1968), Malan (2008) and Team Topologies; *hiring a CDO* and *digitalizing business models* are genuinely digital-era activities. Sources tagged against this cell should be read for which clause they exercise.
+
+He also stretches `digital-seizing/strategic-agility` in a direction the cell description does not anticipate. *"Pacing strategic responses"* is usually read as speed; Rohrer's **punctuated gradualism** reads it as a *funding cadence* — continuous ~20% allocation to complexity-debt paydown, with step changes treated as a reluctant exception (*"second-system syndrome… most people don't end up building a third system"*) and the strangler fig as the mechanism for change that cannot be paused. And `contextual/internal-barriers` gains a barrier the cell's wording misses entirely: **complexity as accumulated entropy**, asymmetric to remove (*"if you put some complexity in, that can be fairly cheap. But reversing it out is asymmetrical"*) and fatal if unfunded.
+
+### Wayfinding qualifies `digital-mindset-crafting` ([[2026-08-16-hill-bloomberg-leaders-ceo-skills-age-of-ai|Hill / Bloomberg *Leaders*]])
+
+The most consequential single tag in the batch, because it constrains a cell rather than instantiating it. The cell's first activity is *"establishing a long-term digital vision"*. Hill's claim is that **for breakthrough change the vision is not available** — *"many leaders have no vision about what's really going to go on with AI. They just don't. When you ask them, they're perplexed"* — and that demanding one is the wrong request. What substitutes is purpose plus **wayfinding** (*"we don't know the destination, nonetheless how we're going to get there"*), the declaration that *"there is nothing called business as usual… everything is a working hypothesis"*, and the beginner's-eye staffing rule that operationalises the cell's second activity (*"enabling an entrepreneurial mindset"*) as a procedure rather than an exhortation.
+
+She also gives `digital-seizing/strategic-agility` its clearest **mechanism** in the corpus: decision rights, pre-agreed, justified by sensing latency (*"somebody down there is going to hear it sooner than you"*). And `contextual/internal-barriers` gains the **unspoken board risk-appetite divergence** — a barrier at the authorising layer rather than the operating one, which none of the cell's canonical activities (*rigid planning, hierarchy, change resistance*) covers.
+
+### Two sources exercising `redesigning-internal-structures` from opposite premises
+
+[[2026-08-14-blomfield-yc-building-structuring-ai-native-company|Blomfield]] argues hierarchy dissolves because AI removes the information-routing rationale (*"no middle management"*; ICs plus DRIs), and adds a distinctive `improving-digital-maturity` instance: legibility-as-house-rule (transcribe everything, ban Slack DMs, *"every action needs to create an artifact… otherwise it basically didn't happen to the AI"*) with the office-hours-to-user-manual loop as *"leveraging digital knowledge inside the firm"* taken to its conclusion. His `strategic-renewal/collaborative-approach` instance is loop-to-loop coordination replacing human handoffs; his `contextual/internal-barriers` are hierarchy and committee (*"I worked at a bank and we had so many committees for everything, and it grinds things to a halt"*).
+
+Rohrer reaches the **same structural conclusion with no AI premise**. Recording both against the same cell is the point: the convergence is not evidence for the AI mechanism, because the conclusion was reached and argued in detail before the AI-native-company literature reached it independently.
+
+### Portfolio balance gets a per-capability decision grid ([[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Huang / Sequoia]])
+
+`digital-seizing/balancing-digital-portfolios` — *"balancing internal and external options"* — gets its most literal instance yet: own-vs-rent decided **per capability** against cost, latency, in-domain performance and data proprietariness, with a worked case where the two answers land on opposite sides inside the same product (rent the coding agent, own the tab-autocomplete). Her `digital-scenario-planning` instance is the centralized-vs-decentralized-intelligence framing; her `redesigning-internal-structures` instance comes with a named **anti-pattern** (*"a lot of companies are shoehorning this AI platform team into doing the sovereign AI stuff as well. I'd encourage folks not to do this"*); and `strategic-renewal/business-model` is *"the product is the intelligence"*.
+
+### Two narrow tags, deliberately
+
+[[2026-08-19-he-databricks-anthropic-primitives-to-production-agents|He / Anthropic]] takes only `rapid-prototyping` and `improving-digital-maturity`; [[2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness|Baugues & Thurium / Google Cloud]] takes **one cell only** (`improving-digital-maturity`, for vocabulary-levelling among builders). Both could have been stretched to more; neither was. Consistent with the note above about the batch's deliberate omissions, restraint on genuinely engineering-flavoured sources is what keeps the field usable as a filter.
+
+## Debates and supersession
 ## Debates and supersession
 
 - **Sensing-as-prediction vs sensing-as-shock-readiness.** The Teece (2007) framing of sensing emphasises *opportunity and threat detection* — close to forecasting language. [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook|Erginbilgiç 2026]] argues against the prediction-framing: *"It's not about actually predicting the world, it is about how your company now thinks about dealing with external shocks"* (~21:14–21:32). [[2026-04-28-warner-wager-dynamic-capabilities-digital-transformation|Warner & Wäger 2019]]'s `digital-scenario-planning` microfoundation is closer to Erginbilgiç's *shock-readiness* framing than to pure forecasting. No supersession; the productive tension is between *sensing as accuracy* and *sensing as response capability*. The wiki currently treats them as compatible (sensing must produce both signal-detection *and* the organisational habit of responding to signals).

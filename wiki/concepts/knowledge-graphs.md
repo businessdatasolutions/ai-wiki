@@ -3,9 +3,9 @@ type: concept
 aliases: ["knowledge graph", "KG", "knowledge graphs", "knowledge-graph", "kg"]
 tags: [knowledge-graphs, kg, graph-rag, ai-grounding, ontology, relational-data, agent-harness, agentic-memory, etl, entity-extraction, relationship-extraction]
 confidence: 0.9
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 10
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 11
 relationships:
   - type: part-of
     target: agent-harness
@@ -13,7 +13,8 @@ relationships:
   - type: uses
     target: foundation-models
     via: "LLM-driven entity-extraction and relationship-extraction populate the KG; LLMs read graph-traversal results as part of grounded-RAG generation"
-quality_score: 1
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # Knowledge Graphs
@@ -173,6 +174,23 @@ Three claims for the artifact, each distinct from the retrieval-quality argument
 
 **The open question this sharpens.** All three sources assert that codified institutional knowledge is the differentiator; none measures it. There is no evidence in the wiki on how much of an agent's error rate a context layer actually removes, how such artifacts decay, or who maintains them once the authoring push ends — and Toyota's testimonial, being vendor-produced marketing with no numbers, cannot supply it.
 
+## The "company brain" — codification argued from the SOP-versus-practice gap ([[2026-08-14-blomfield-yc-building-structuring-ai-native-company|Blomfield / YC, August 2026]])
+
+A fifth vantage on the layer this page tracks, and the one that argues most directly about *why* the codification is hard rather than what form it should take.
+
+Blomfield's definition of the construct, borrowing Jack Dorsey's phrasing: *"in a conventional company, intelligence is spread throughout the people and the hierarchy routes it. In this new model, **intelligence lives in the system**."* He flags the term as already worn out — *"it got very very popular about six weeks ago and as of two weeks ago I see people in the audience with company brain written on a t-shirt"* — and then gives it substance via the gap between documented and actual practice:
+
+> *"Lots of companies try and write down standard operating procedures — the way things should be done. But then when you actually observe people, how they actually do the job, they're like, oh, well, in this edge case really I should do this other thing. And there's a lot of stuff in people's heads that, if it weren't in people's heads and it was actually written down, you'd get a lot of value out of it."*
+
+**The mechanism he proposes is mining the gap rather than authoring against it**, and YC's own worked example is the most concrete instance of that in the corpus. YC's internal user manual — *"written over the last 15 years, like 500 pages long, and a lot of it was very very good like 5 years ago, and then AI happened, and honestly a bunch of the advice is just not relevant anymore"* — was not rewritten by hand. Instead: record office hours (3,000–4,000 hours accumulated in six months), transcribe, *"mine all of the advice we actually give in office hours and then use that to rewrite the user manual… so when the advice changes, the AI will see what the humans are saying, extract the insight, and just rewrite the user manual and push it."* The manual then becomes queryable by an advice agent that can answer *"not just Tom's answer, but here's how [another partner] would answer it."*
+
+His claim about the composite is stronger than anything else in the cluster and completely unevidenced: *"I think you can actually get **superhuman advice** from this thing, because it's able to recall perfectly and access the intelligence of 16 partners, not just one with fallible memory."*
+
+**Where this sits against the other four.** The wiki now holds five sources naming the data-and-knowledge layer as the binding constraint — [[2026-07-24-turnbaugh-motherduck-context-layers-explained|Turnbaugh's]] guides-beside-the-tables, [[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness|Ng's]] agent-ready data, [[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage|Banholzer's]] ontology-as-digital-twin, [[2026-08-11-ummadisetti-langchain-toyota-deep-agents-rd-research|Toyota's]] per-function curated skills, and now Blomfield's mined transcripts. They still do **not** agree on form (graph, guides, prose skills, mined recordings), and Blomfield sharpens the disagreement in a useful direction: the other four all assume the knowledge can be *authored*, and his premise is that the valuable part is precisely the part nobody writes down. His prescriptions follow from that premise — transcribe every meeting, ban Slack DMs, *"every action needs to create an artifact… otherwise it basically didn't happen to the AI."*
+
+**And the shared gap holds.** None of the five measures anything: there is still no evidence in the wiki on how much error a context layer removes, how such artifacts decay, or who maintains them once the authoring push ends. Blomfield's self-rewriting manual is the first of the five that even *proposes* a maintenance mechanism, and he offers no assessment of whether the rewritten manual is any good.
+
+## Related concepts
 ## Related concepts
 
 - [[agent-harness]] — KGs are one of the persistent-context substrates the harness reads. The Context + Compounding layers in Chatterjee's 4-layer model are where KG retrieval lives.

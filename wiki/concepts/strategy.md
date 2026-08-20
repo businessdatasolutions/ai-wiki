@@ -3,9 +3,9 @@ type: concept
 aliases: ["strategy", "business strategy", "corporate strategy", "competitive strategy"]
 tags: [strategy, strategic-planning, value-creation, value-capture, theory-of-winning, playing-to-win, value-stick, roger-martin, felix-oberholzer-gee, harvard-business-review]
 confidence: 0.9
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 9
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 10
 relationships:
   - type: supports
     target: strategic-foresight
@@ -19,8 +19,8 @@ relationships:
   - type: supports
     target: theory-based-view
     via: "Felin & Zenger's [[theory-based-view]] (TBV) is the falsifiability discipline applied to Martin's *theory of winning* — same construct at greater logical hygiene; novel/simple/elegant/falsifiable/generative criteria sharpen what Martin names as *the theory must be coherent, doable, translatable into actions*"
-quality_score: 0.98
-quality_notes: ['2 near-empty section(s)']
+quality_score: 0.97
+quality_notes: ['3 near-empty section(s)']
 ---
 
 # Strategy
@@ -188,6 +188,29 @@ The wiki's most operational treatment of competitive advantage, and the first th
 
 Per [Lifecycle rules](../../CLAUDE.md#lifecycle) confidence lifts only 0.88 → 0.90: this is first-party consulting research supporting a service line, the underlying article is not ingested, and the outside-in detection claim — the methodological premise for the whole product — is validated in the episode only by "for the companies that we did know or had experts on… they were defensible."
 
+## Own vs. rent as a strategy decision, taken per capability ([[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Huang / Sequoia, August 2026]])
+
+The most reusable framework in a talk that is otherwise unevidenced. Huang's first step in her sovereign-AI roadmap is explicitly a **strategy** step, and its central move is refusing the binary: *"Sovereign AI isn't binary. You're not 0% or 100% sovereign. An important part of the strategy is to **draw the lines** for which intelligence you want to own and which you're comfortable outsourcing."*
+
+Four decision factors, applied **per capability** rather than per company:
+
+| Factor | The question |
+| --- | --- |
+| **Cost** | how large a COGS line item is this? |
+| **Speed / latency** | *"is it a P0 or not?"* |
+| **Performance** | *"it used to be that you would choose open weights when you didn't care about performance"* — now potentially inverted in-domain |
+| **Proprietary data** | is the data you would feed the model genuinely specific to your business? |
+
+Her worked example is the crisp one, because the two answers land on opposite sides *within the same product*: in coding, **agents are still mostly rented** (*"you want strong out-of-the-box performance and latency isn't a P0"*) while **tab-autocomplete is mostly owned** (*"you really really care about speed and these API calls are so frequent that the costs really rack up"*). Security companies own for speed plus post-training control; bio companies own for proprietary-data value.
+
+Two further claims bear on this page:
+
+- **The battleground moves down a layer.** *"That battleground is increasingly becoming not just the race for the application layer but the race for the **intelligence layer**… It's actually about who can own the intelligence itself and shape better intelligence in the product."* If right, this is a claim about where defensibility sits — and it implies that a firm whose value capture rests on UI, workflow and go-to-market over a rented model has built on a substrate it does not control.
+- **Legibility as a commercial variable, not a marketing one.** *"Every single buyer right now is choosing their AI champion. They're getting the same pitch over and over again, they're trying to discern **which vendor is sophisticated enough** to take me to the promised land. Increasingly that means putting out your own research."* The prescription — technical marketing, a separately branded research group, *"publishing research with high taste"* — treats published research as a purchasing signal in a market where buyers cannot evaluate the product directly.
+
+**Confidence unchanged.** This is investor content addressed to its own portfolio, with no measurement of any kind behind any of the four factors; per the [vendor-source rule](../../CLAUDE.md#lifecycle) it adds a framework without lifting the page's confidence. Contrast with [[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage|Banholzer & LaBerge]] above, whose own-vs-build claims at least gesture at an underlying dataset.
+
+## Debates and supersession
 ## Debates and supersession
 
 - **Martin's *Southwest beats hub-and-spoke* vs Sinek's [[infinite-game]].** The wiki's first multi-source productive tension on the [[strategy|strategy]] page. Resolution filed in [[strategy-finite-vs-infinite-game]] synthesis: Sinek operates *one layer above* the strategy lenses — he asks *which game you are in*; Martin asks *how to win the round you are in*. The two are answering different questions about the same case (Southwest), not competing definitions of strategy. **No supersession declared.**

@@ -6,9 +6,9 @@ tags: [martin-fowler, thoughtworks, refactoring, patterns, software-architecture
 affiliation: "[[Thoughtworks]] (Chief Scientist)"
 role: "Chief Scientist at Thoughtworks; author and speaker on software design, refactoring, patterns, and agile"
 confidence: 0.8
-last_confirmed: "2026-07-15"
-accessed_at: "2026-07-15"
-source_count: 4
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 5
 relationships:
   - type: part-of
     target: Thoughtworks
@@ -29,6 +29,7 @@ The wiki references Fowler's vocabulary across several concept pages (his framin
 
 - [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures]] — Allen cites Fowler's *expert generalist* post (and the strangler-fig pattern) as the talent profile agentic AI amplifies.
 - [[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world]] — Brovich (Sydney edition of the same AWS talk) cites Fowler/ThoughtWorks "expert generalist" by name.
+- [[2026-08-19-rohrer-goto-modern-enterprise-architecture-architecting-for-outcomes]] — Rohrer cites Fowler three times, and this is the corpus's first **pre-AI** Fowler citation cluster. Two papers are named for the claim that the architect belongs inside the team as a coach rather than above it as an approver: *Who Needs an Architect?* and *Is Design Dead?* — with the aside *"this is very much true of architects within the team, and Martin wrote about this 20 years ago."* The **strangler fig** pattern is then the mechanism for Rohrer's evolutionary-architecture section, set against big-bang rewrites (*"most people don't end up building a third system… you don't want to rebuild, you want to evolve"*). Worth noting for this page: the strangler fig also appears in the AWS-vendor citations above, so Fowler's two most-cited contributions in this corpus — expert generalists and strangler fig — now both arrive from AI-era and pre-AI sources independently.
 - [[2026-07-09-nyc-executive-forum-2026-a-leaders-guide-to-agentic-ai]] — Vachhrajani cites Fowler's expert-generalist framing (paired with Werner Vogels' renaissance-developer coinage) as the convergent talent profile agentic AI amplifies — a fourth AWS-vendor citation, independent of the "advanced team structures" franchise.
 
 ## Why the promotion now

@@ -3,9 +3,9 @@ type: concept
 aliases: ["agent development lifecycle", "ADLC", "agent SDLC", "agent lifecycle"]
 tags: [agent-development-lifecycle, adlc, ai-agents, agent-engineering, lifecycle-frameworks, sdlc-parallel, build-test-deploy-monitor, agent-governance, evals, llm-as-judge]
 confidence: 0.88
-last_confirmed: "2026-05-29"
-accessed_at: "2026-05-29"
-source_count: 15
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 16
 relationships:
   - type: part-of
     target: ai-agents
@@ -19,7 +19,8 @@ relationships:
   - type: supports
     target: 2026-03-20-huggingface-agentic-evaluations-workshop
     via: "Sathiamoorthy / Bespoke Labs scaffolds the Test phase by level of verifiability (level 0 = verifiable / level 1 = rubric-based with LLM-as-judge); 'deploy to production and evaluate' named as the canonical anti-pattern; reward hacking as a first-class concern at level zero"
-quality_score: 1
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # Agent Development Lifecycle (ADLC)
@@ -222,6 +223,21 @@ Garg's contribution to the lifecycle concept is the **agency dimension**: rather
 
 This makes the AnswerThis worked example a **smallest-end-of-scale data point** for the lifecycle's vendor-specificity-vs-genericness open question below: the same phases run at 2 FTE as at OpenAI Codex's 7-engineer team — strong evidence the construct generalises beyond vendor-specific formalisations.
 
+## Evals as the model-upgrade mechanism, not the quality mechanism ([[2026-08-19-he-databricks-anthropic-primitives-to-production-agents|He / Anthropic, April 2026 talk, published August]])
+
+This page treats evaluation as a lifecycle stage among others. Isabella He's framing reassigns its purpose, and the reassignment is worth recording because it changes what an eval suite is *for*:
+
+> *"Without evals, let's say a new model comes out — you have your existing agent, your existing prompts and your existing tooling. **You don't know objectively in a quick way to test if a new model put into your system is actually going to help you achieve new capabilities.**"*
+
+On this account evals are not primarily a quality gate but the **mechanism by which an organisation absorbs model progress**. The implication is compounding rather than static: a team without evals is not merely shipping unmeasured agents, it is structurally unable to tell whether the next model release would help, and so falls further behind with each release. She reports this as a common gap in her customer work: *"a lot of times people are just behind on building evals with how quickly agents are evolving."*
+
+Her shape for them is the familiar one — *"almost like **unit tests**, but built for agents and built for **dynamic paths**"* — with both response content and style scored for a customer-support example.
+
+**Deployment as the abstracted stage.** The same talk closes on Anthropic's Managed Agents as the removal of the deploy-and-host stage: *"[it] abstracts away all the work that we didn't talk about today, which is deployment and hosting of an agent. Usually that's a huge bottleneck, especially when you think about giving Claude access to a computer or file system — how do you make sure everything is containerized and… deployed in a virtual machine."* Note the abstraction it offers is **sessions and environments** rather than the message-level decomposition of a chat API, which is a different lifecycle granularity from the one this page's other vendor sources assume.
+
+Vendor content with no measurements throughout; see the source page's scope warning.
+
+## Open questions
 ## Open questions
 
 - **Vendor-specificity vs. genericness**: now two formalizations (Google + LangChain). Whether other vendors (Anthropic, Microsoft, AWS) converge on similar phasings is unresolved. Watch for a third formalization in 2026 — three would be enough to consider this a *cross-vendor stable construct*.

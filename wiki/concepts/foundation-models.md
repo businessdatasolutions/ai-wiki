@@ -3,11 +3,11 @@ type: concept
 aliases: ["foundation model", "foundation models", "FM", "frontier model", "frontier models"]
 tags: [foundation-models, generative-ai, ai-research]
 confidence: 0.87
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 21
-quality_score: 0.99
-quality_notes: ['1 near-empty section(s)']
+last_confirmed: "2026-08-20"
+accessed_at: "2026-08-20"
+source_count: 22
+quality_score: 0.98
+quality_notes: ['2 near-empty section(s)']
 ---
 
 # Foundation Models
@@ -148,6 +148,17 @@ The lecture is also unusually clear that **ChatGPT's advantage over GPT-3 was po
 
 **The pivot the course is built on**: "pre-training and then fine-tuning were the big pieces. But since a year and a half ago, **it turns out inference is also a frontier for making the models much more capable**" — with the self-improvement loop closing when test-time-scaled generations become training data for the next fine-tune. Per [Lifecycle rules](../../CLAUDE.md#lifecycle) confidence lifts only 0.85 → 0.87: this is instructional synthesis of published results rather than new evidence, and the eleven-month publication lag makes its state-of-the-art claims dated.
 
+## Open weights as *malleability*, and the two-regime stack ([[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Huang / Sequoia, August 2026]])
+
+Sonya Huang's contribution to this page is a mechanism rather than a market observation. Her argument for why owning weights can now beat a frontier API in-domain rests on **malleability**, not on the base model being better: *"because the weights are available, they're actually much more malleable than working with the closed APIs. And so you start with a baseline that's already close to frontier"* — naming **Kimi K3** and **GLM-5.2** as the 2026 releases that made the baseline close enough — *"and then with strong post-training, prompt harness engineering, online learning, you can actually reach better than frontier performance."*
+
+The corollary she states is the useful part for this page: in the closed-API regime *"you're not really having to collect a ton of data, you're not really having to train your own models, so it's a much simpler stack… a **higher floor, but a lower ceiling**, because you don't actually have the ability to take your own data, to take online production data and improve your own intelligence."* The ceiling is set by the **feedback loop**, not by the model.
+
+She also frames the strategic consequence as a layer shift: the contest *"is increasingly becoming not just the race for the application layer but **the race for the intelligence layer**… So the product is the intelligence"*, with applied-research teams inside application companies — she names Harvey, Factory, Glean, OpenEvidence, Sourcegraph — as *"the newest neolabs."*
+
+Unevidenced throughout, and investor content addressed to its own portfolio; see the source page's scope warning and the parallel note on [[open-source-ai]].
+
+## Debates and supersession
 ## Debates and supersession
 
 - **"Frontier" vs. "foundation" framing.** "Frontier" emphasizes capability gap; "foundation" emphasizes adaptation role. Different policy/regulation implications — frontier-model bills target capability thresholds; foundation-model bills target the broader pretraining-then-adapt pattern.
