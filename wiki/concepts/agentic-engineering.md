@@ -3,9 +3,9 @@ type: concept
 aliases: ["agentic engineering", "Agentic Engineering", "agentic-engineering", "agent engineering"]
 tags: [agentic-engineering, vibe-coding, software-3.0, ai-agents, agent-harness, software-engineering, hiring, karpathy, codex-case-study]
 confidence: 0.97
-last_confirmed: "2026-07-01"
-accessed_at: "2026-07-22"
-source_count: 43
+last_confirmed: "2026-08-30"
+accessed_at: "2026-08-30"
+source_count: 51
 relationships:
   - type: depends-on
     target: agent-harness
@@ -231,3 +231,17 @@ Vo's deliberate de-hyping — *"don't worry if you are not loop-maxing… I stil
 - **Hiring-process refactor.** Karpathy says most companies haven't refactored hiring; if a second source documents companies that *have* (Anthropic? Cursor?), that's worth ingesting.
 - **The aesthetics gap.** Karpathy specifically says current agent code is "bloaty, awkward abstractions, brittle." If this gap closes, do agentic engineers spend less time on review and more on spec/design? Worth tracking.
 - **"Tool mastery is the new craft"** — does this generalise across model families, or is it specific to the current Claude Code / Cursor / Codex tool generation? If a tool-vendor consolidation happens (one wins, others fade), the "craft" specialises into mastery of one tool rather than navigation across many.
+
+## The 2026 evidence base (added 2026-08-30)
+
+Until this point the concept rested largely on practitioner testimony. A cluster of 24 sources ingested on 30 August 2026 supplies the first population-scale and randomised evidence, and it is **mixed in an informative way**. Four sub-concepts now carry the detail: [[agent-fleet-management]], [[agentic-pull-requests]], [[ai-coding-productivity-evidence]], [[ai-generated-code-quality]], plus [[reward-hacking]] and [[agent-oversight-and-delegation]].
+
+**The practice is real and large.** [[2026-02-09-li-aidev-studying-ai-coding-agents-on-github|AIDev]]: **932,791 agent-authored PRs across 116,211 repositories involving 72,189 developers**, from five agents (Codex, [[Devin]], Copilot, [[Cursor]], Claude Code). [[2025-09-23-dora-2025-state-of-ai-assisted-software-development|DORA]]: **90% AI adoption**, up from 76%.
+
+**Output is up; delivered value is contingent.** DORA's throughput/stability split is the population statement — throughput's relationship with adoption turned positive in 2025 while **stability's stayed negative** — and the mechanism is that the **authoring** constraint was relieved while the delivery system's absorptive capacity was not. At the level of individual work, the two RCTs disagree by population: [[2026-02-27-cui-demirer-generative-ai-high-skilled-work-three-field-experiments|+26.08% completed tasks]] across 4,867 developers, against [[2025-07-10-becker-metr-early-2025-ai-experienced-developer-productivity|+19% completion time — slower]] for 16 experienced maintainers on their own mature repositories. The reconciling variable is context: assistance is worth most where the marginal work is *acquiring* it.
+
+**The discipline's actual content has shifted to the receiving end.** Three population findings say the constraint moved from writing code to absorbing it: **46.41% of agent-proposed fixes are rejected** ([[2026-06-11-abujadallah-rejection-of-agentic-pull-request-fixes]]); **22.7% of AI-introduced issues are never fixed** ([[2026-03-30-liu-debt-behind-the-ai-boom]]); and **45% of AI-generated samples carry OWASP Top 10 flaws** with performance *flat across model size and vintage* ([[2025-07-30-veracode-2025-genai-code-security-report]]). Security and review are permanent costs of the discipline, not transitional ones.
+
+**And the strongest practitioner voice agrees.** [[2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder|Ryan Carson]], shipping ~40 PRs a day on $20k/month of agent spend, argues against his own interest: *"I really try to constrain my output… I don't think I get multiples of quality off of multiples of output,"* and *"we're nowhere near any frontier model having the intelligence to know what to ship."* That is the clearest available statement of where agentic engineering's ceiling currently is — not in throughput, but in judgement about what to build.
+
+**The perception hazard.** METR's participants, having just been slowed by 19%, estimated they had been sped up by 20%. Any team evaluating its own agentic-engineering practice by how it feels is reading an instrument known to be wrong by ~39 points.

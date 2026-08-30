@@ -3,9 +3,9 @@ type: concept
 aliases: ["vibe coding", "Vibe coding", "vibe-coding", "vibe-code", "v-coding"]
 tags: [vibe-coding, agentic-engineering, software-3.0, ai-agents, accessibility, hobbyist-coding, karpathy, pm-tooling, prototype-as-influence-tool, december-2025-phase-change, replit, ai-native-builders, post-prompting]
 confidence: 0.95
-last_confirmed: "2026-06-20"
-accessed_at: "2026-06-20"
-source_count: 22
+last_confirmed: "2026-08-30"
+accessed_at: "2026-08-30"
+source_count: 23
 relationships:
   - type: instance-of
     target: software-3.0
@@ -132,3 +132,11 @@ The danger in conflating them: vibe-coded artifacts shipped to production *as if
 - **The vibe-coding-to-agentic-engineering boundary in practice.** When does a vibe-coded side project earn promotion to agentic engineering? Karpathy's Menu Gen example was vibe-coded then *replaced entirely* by a Software 3.0 prompt — a rarer pattern than gradual hardening. Worth tracking which trajectory dominates.
 - **Will vibe coding remain the *individual* mode or become the *team* mode too?** Currently it's framed for solo operators. If teams adopt vibe-coding loops collectively (with each member trusting the agent's output without review), the safety implications change substantially. Open.
 - **Tooling specialisation.** Will vibe-coding-specific IDEs/tools emerge that are explicitly *not* agentic-engineering-grade (lower friction, weaker guardrails)? The pet-vibe-coding tools that exist today (Replit's Agent, Cursor's vibe modes) hint at this; second sources documenting the trajectory would be useful.
+
+## Related pages and sources
+
+- [[2026-04-25-masad-replit-ceo-only-two-jobs-left|Masad (Replit)]] — the strongest vendor-side statement of vibe coding's reach, and the `supports` edge recorded in this page's frontmatter.
+
+## What the output looks like at scale (added 2026-08-30)
+
+[[ai-generated-code-quality]] collects the measurements this page's quality caveats previously gestured at: **45% of AI-generated samples introduce OWASP Top 10 flaws** with performance flat across model generations; **205,474 unique hallucinated package names** as a supply-chain surface; and **22.7% of AI-introduced issues still present at the latest repository revision** across 302.6k AI-authored commits. The failure mode is less "the code doesn't work" than "the maintainability debt has no forcing function and is never paid down."

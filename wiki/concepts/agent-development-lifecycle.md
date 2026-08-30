@@ -3,9 +3,9 @@ type: concept
 aliases: ["agent development lifecycle", "ADLC", "agent SDLC", "agent lifecycle"]
 tags: [agent-development-lifecycle, adlc, ai-agents, agent-engineering, lifecycle-frameworks, sdlc-parallel, build-test-deploy-monitor, agent-governance, evals, llm-as-judge]
 confidence: 0.88
-last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
-source_count: 16
+last_confirmed: "2026-08-30"
+accessed_at: "2026-08-30"
+source_count: 18
 relationships:
   - type: part-of
     target: ai-agents
@@ -246,6 +246,10 @@ Vendor content with no measurements throughout; see the source page's scope warn
 - **Agent governance as candidate concept**: Chase's six axes (cost / tool access / audit trails / HITL / discoverability / shared infrastructure) name an emerging concept currently single-source. Promote on second-source mention.
 - **Simulation as evaluation primitive**: also single-source for now. Promote on second-source mention.
 - **Promote or fold**: this concept is now substantiated enough to stand. Does it need any further sub-pages (e.g. *agent governance*, *agent evaluation*) or does it absorb them?
+
+## Verification is the weakest stage (added 2026-08-30)
+
+[[2025-03-17-cemri-why-do-multi-agent-llm-systems-fail|MAST]] identifies **task verification** as one of three failure categories in multi-agent systems, and it is the one every other 2026 source lands on independently: [[2026-05-20-zhao-specbench-reward-hacking-long-horizon-coding-agents|SpecBench's]] collapse of oversight onto the test suite, [[2026-08-05-vo-lennys-merge-mommy-ai-code-review-bot|Merge Mommy's]] *verification gap* dimension, and the [[2026-06-11-abujadallah-rejection-of-agentic-pull-request-fixes|46.41% of fixes rejected]] after an agent declared them done. [[2026-03-23-geng-neubig-caid-asynchronous-software-engineering-agents|CAID]] puts **executable test-based verification** at the integration step rather than at the end, which is the lifecycle change the evidence supports. See [[multi-agent-failure-modes]] and [[agentic-pull-requests]].
 
 ## Mentioned in
 

@@ -3,9 +3,9 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
-source_count: 42
+last_confirmed: "2026-08-30"
+accessed_at: "2026-08-30"
+source_count: 43
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -308,6 +308,10 @@ Asked directly which leadership skill will matter more in ten years than today, 
 - [[automation-vs-augmentation]] — durable skills are the *content* of augmentative work; codified knowledge is the substrate of automative work.
 - [[generative-ai]] — the substrate that creates the deskilling pressure *and* powers the new measurement methodology.
 - [[responsible-ai]] — the cultural-situatedness limit and the AI-supported-critical-thinking sub-skills are RAI-adjacent considerations.
+
+## Management as the durable skill in agentic work (added 2026-08-30)
+
+[[2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder|Ryan Carson]] makes the strongest version of this page's claim from inside agentic software work: *"the reason why I think folks of a certain level of experience are ready to cook right now with AI is all those management skills that you have developed over your career… How do you structure? How do you team? How do you prioritize? How do you delegate? Where do you micromanage? Where do you let go?"* Notable because it is an **experience-as-advantage** claim in a domain where the randomised evidence ([[2026-02-27-cui-demirer-generative-ai-high-skilled-work-three-field-experiments|Cui et al.]]) shows *juniors* gaining most from AI assistance — the two are compatible only if the durable skill is coordination rather than production. See [[agent-fleet-management]].
 
 ## Mentioned in
 

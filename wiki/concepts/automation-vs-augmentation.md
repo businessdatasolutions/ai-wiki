@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
-source_count: 59
+last_confirmed: "2026-08-30"
+accessed_at: "2026-08-30"
+source_count: 62
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -455,6 +455,10 @@ Read against [[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportun
 - [[ai-agents]] — agents are concentrated on the automation side of the cut
 - [[generative-ai]] — the technology underlying both modes
 - [[responsible-ai]] — labor displacement is an under-attended RAI concern
+
+## Where the coding evidence sits (added 2026-08-30)
+
+[[ai-coding-productivity-evidence]] collects the 2025–26 randomised and population data. The short version: augmentation's measured effect on individual developers is **positive on average and negative for experts on familiar code**, and the aggregate signal ([[2025-09-23-dora-2025-state-of-ai-assisted-software-development|DORA]]) is that **throughput rose while delivery stability did not**. The fully-automated end of the spectrum is described by [[agent-fleet-management]] — and its most experienced practitioner argues the automation ceiling is judgement, not capability: *"we're nowhere near any frontier model having the intelligence to know what to ship."*
 
 ## Mentioned in
 

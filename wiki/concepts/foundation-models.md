@@ -3,9 +3,9 @@ type: concept
 aliases: ["foundation model", "foundation models", "FM", "frontier model", "frontier models"]
 tags: [foundation-models, generative-ai, ai-research]
 confidence: 0.87
-last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
-source_count: 22
+last_confirmed: "2026-08-30"
+accessed_at: "2026-08-30"
+source_count: 23
 quality_score: 0.98
 quality_notes: ['2 near-empty section(s)']
 ---
@@ -172,6 +172,10 @@ Unevidenced throughout, and investor content addressed to its own portfolio; see
 - [[ai-benchmarks]] — how foundation-model capabilities are evaluated
 - [[responsible-ai]] — the transparency, safety, and governance overlay
 - [[enterprise-ai-adoption]] — the deployment context
+
+## One capability that did not scale (added 2026-08-30)
+
+[[2025-07-30-veracode-2025-genai-code-security-report|Veracode]] tested 100+ models across several years of sizes and vintages on 80 coding tasks and found security performance **"flat, regardless of model size or training sophistication"** — newer and larger models were *"no better."* Against a period in which SWE-bench resolution ran from **1.96%** ([[2023-10-10-jimenez-swe-bench-real-world-github-issues|2023]]) to **87.1%** ([[2026-06-25-jain-cursor-reward-hacking-swamping-model-intelligence-gains|2026]]), this is a rare documented case of a capability dimension that scaling did not lift — most plausibly because the benchmarks driving scaling do not price a vulnerability. See [[ai-generated-code-quality]].
 
 ## Mentioned in
 

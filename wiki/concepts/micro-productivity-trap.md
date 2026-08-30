@@ -3,9 +3,9 @@ type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 48
+last_confirmed: "2026-08-30"
+accessed_at: "2026-08-30"
+source_count: 51
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -361,6 +361,16 @@ Two July 2026 sources restate the bolt-on diagnosis in unusually compact form. [
 - [[enterprise-ai-adoption]] — broader concept; this is one diagnostic lens within it.
 - [[dynamic-capabilities]] — escape from the trap requires the digital sensing/seizing/transforming microfoundations.
 - [[systems-thinking]] — the workflow-redesign step is systems-thinking applied to AI.
+
+## The measured version, in software (added 2026-08-30)
+
+The trap's usual evidence is enterprise-transformation survey data. The 30 August 2026 ingest supplies a **randomised** instance of the same shape, in the one function where AI adoption is furthest along. Full treatment at [[ai-coding-productivity-evidence]].
+
+[[2025-07-10-becker-metr-early-2025-ai-experienced-developer-productivity|METR's RCT]] found 16 experienced developers **19% slower** with AI on 246 tasks in their own mature repositories — while forecasting 24% faster beforehand and, *after finishing the work*, still estimating 20% faster. **A ~39-point gap between the felt and the measured**, held by the people who did the work. That is the micro-productivity trap's perception mechanism, isolated experimentally: local assistance feels like a gain and is measured as a loss.
+
+The system-level counterpart is [[2025-09-23-dora-2025-state-of-ai-assisted-software-development|DORA 2025]]: AI adoption's relationship with delivery **throughput** turned positive while its relationship with **stability** stayed negative — *"without robust control systems… an increase in change volume leads to instability."* More local output, no better delivery. And the downstream ledger: **46.41% of agent-authored fixes rejected** ([[2026-06-11-abujadallah-rejection-of-agentic-pull-request-fixes]]), **22.7% of AI-introduced issues never fixed** ([[2026-03-30-liu-debt-behind-the-ai-boom]]).
+
+The practitioner statement of the same point comes from the person with the most to lose by making it — [[2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder|Ryan Carson]], at $20k/month of agent spend: *"I don't think I get multiples of quality off of multiples of output."*
 
 ## Mentioned in
 

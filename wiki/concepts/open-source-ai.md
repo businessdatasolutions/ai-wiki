@@ -3,9 +3,9 @@ type: concept
 aliases: ["open source AI", "open-source AI", "open-weight models", "open weights", "open models", "AI sovereignty", "own vs rent AI"]
 tags: [open-source-ai, open-weight-models, own-vs-rent, ai-sovereignty, concentration-of-power, china-open-models, safety-through-transparency, hugging-face]
 confidence: 0.87
-last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
-source_count: 6
+last_confirmed: "2026-08-30"
+accessed_at: "2026-08-30"
+source_count: 7
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -130,3 +130,7 @@ She also notes the policy dependency this page tracks: *"just last week, Jensen 
 - [[enterprise-ai-adoption]] — the frontier-experiment → owned-production flow is an adoption pattern.
 - [[responsible-ai]] — the safety-through-transparency vs. closed-gating debate lives across both pages.
 - [[generative-ai]] — the broader capability class these open models deliver.
+
+## A security asymmetry (added 2026-08-30)
+
+[[2025-06-12-spracklen-package-hallucinations-code-generating-llms|Spracklen et al.]] measured package hallucination at **≥5.2% for commercial models against 21.7% for open-source models** — a four-fold gap between model *classes* rather than a capability gradient. Worth holding alongside this page's capability-convergence argument: on this particular safety-relevant behaviour, the classes had not converged as of the 2024–25 model vintage studied. See [[ai-generated-code-quality]].

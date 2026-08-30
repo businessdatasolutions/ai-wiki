@@ -2,10 +2,10 @@
 type: concept
 aliases: ["attack surface management", "ASM", "external attack surface", "EASM", "external attack surface management"]
 tags: [attack-surface-management, cybersecurity, infosec, exposure-management, shadow-it]
-confidence: 0.70
-last_confirmed: "2026-05-18"
-accessed_at: "2026-05-18"
-source_count: 2
+confidence: 0.75
+last_confirmed: "2026-08-30"
+accessed_at: "2026-08-30"
+source_count: 4
 relationships:
   - type: depends-on
     target: osint
@@ -76,3 +76,13 @@ Both sources converge on a posture: the future of cybersecurity belongs to organ
 - [[ai-agents]] / [[agent-harness]] — the substrate AI-augmented ASM relies on.
 - [[2026-04-10-khan-osint-information-gathering-like-a-hacker|Khan 2026]] — narrative worked example of a one-off audit.
 - [[2026-05-12-techlatest-hacker-search-engines-osint-tools-2026|TechLatest 2026]] — platform catalogue and continuous-workflow framing.
+
+## AI-generated code as an attack surface (added 2026-08-30)
+
+Two 2025 measurements add a surface that ASM's asset-discovery framing does not naturally cover: **the code your own agents write**. Full treatment at [[ai-generated-code-quality]].
+
+**Slopsquatting.** [[2025-06-12-spracklen-package-hallucinations-code-generating-llms|Spracklen et al. (USENIX Security '25)]] generated **2.23M code samples** from **16 models**; **440,445 (19.7%)** contained at least one hallucinated package, across **205,474 unique fictional package names** (≥5.2% commercial models, 21.7% open-source). The mechanism is what makes it an attack surface rather than a bug: **the same model invents the same name repeatedly**, so a *predictable* fictional name can be pre-registered by an attacker on PyPI or npm — the authors' own framing is *"a novel form of package confusion attack."* 205,474 names is the size of the surface, and it is freely derivable by anyone who can run the same models. The control is mechanical and available today: **verify every agent-added dependency against the registry before merge.**
+
+**The flaw baseline.** [[2025-07-30-veracode-2025-genai-code-security-report|Veracode]]: **45% of AI-generated samples introduce OWASP Top 10 vulnerabilities**, with **Java at 72%** against Python's 38% and **XSS failing in 86%** of relevant samples — and, critically, performance **flat regardless of model size or training sophistication**. Security is not on the capability curve, so this is a standing exposure, not a transitional one. [[2026-03-30-liu-debt-behind-the-ai-boom|Liu et al.]] then show **22.7% of AI-introduced issues are still present at the latest repository revision**: the exposure is not being closed.
+
+For the merge-time control that operationalises this, see the *data security* dimension in [[agentic-pull-requests]].

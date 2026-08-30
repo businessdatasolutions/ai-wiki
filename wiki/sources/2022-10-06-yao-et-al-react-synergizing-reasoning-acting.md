@@ -47,7 +47,8 @@ The wiki's [[ai-agents]] working definition — *"an LLM that autonomously uses 
 ## Linked entities and concepts
 
 - **Promoted to entities this ingest** (second-source rule — also author the [[2022-11-08-yao-cao-react-google-research-blog|Google Research blog]]): [[Shunyu Yao]], [[Yuan Cao]].
-- **Dangling** (single-source mention, deferred): Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan (Princeton NLP advisor — strong promotion candidate on next coverage).
+- **Dangling** (single-source mention, deferred): Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran.
+- **Promoted 2026-08-30**: [[Karthik Narasimhan]] reached the second-source threshold when [[2023-10-10-jimenez-swe-bench-real-world-github-issues|SWE-bench]] was ingested, and now has an entity page.
 - Concepts: [[react-reasoning-acting]] (new this ingest), [[ai-agents]], [[agent-harness]], [[foundation-models]] (PaLM-540B).
 - Publisher: [[Google Research]] (Brain team) with Princeton University.
 

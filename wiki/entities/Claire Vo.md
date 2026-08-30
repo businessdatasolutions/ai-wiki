@@ -2,13 +2,13 @@
 type: entity
 kind: person
 aliases: ["Claire Vo", "@clairevo"]
-tags: [claire-vo, how-i-ai, chatprd, product-management, ai-pm, vibe-coding, agent-loops, prd-as-input, podcast-host]
+tags: [claire-vo, how-i-ai, chatprd, product-management, ai-pm, vibe-coding, agent-loops, prd-as-input, podcast-host, merge-mommy, code-review, risk-scoring, vercel-eve]
 affiliation: "ChatPRD (founder); How I AI (host)"
 role: "Product leader; founder/creator of ChatPRD (an AI PRD-authoring tool); host of the How I AI podcast"
 confidence: 0.8
-last_confirmed: "2026-06-23"
-accessed_at: "2026-06-23"
-source_count: 3
+last_confirmed: "2026-08-30"
+accessed_at: "2026-08-30"
+source_count: 5
 relationships:
   - type: part-of
     target: How-I-AI
@@ -24,8 +24,12 @@ Vo's wiki anchor is the **product-leader / non-engineer altitude** on AI practic
 - **PRD-as-input, not output.** In the [[2025-12-01-marily-nika-pms-who-use-ai-will-replace-those-who-dont|Marily Nika episode]] she and her guest independently converge on the claim that *"a PRD is a higher-quality input to vibe-coding tools"* — repositioning the PRD from a terminal artifact engineers read into a structured prompt-input a prototype tool consumes. ChatPRD is built around this insight.
 - **Loops as designing jobs.** In her own [[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex|How I AI explainer on agent loops]] she frames loop design as an *"onboarding an employee"* exercise: a loop is just an automated prompt, and designing one is designing a recurring job for an agent. This is the product-leader-altitude restatement of [[agentic-engineering]]'s *"agents are intern entities the human coordinates"* claim.
 
+**Risk-scored autonomy.** Her 2026 addition to the corpus is **Merge Mommy** ([[2026-08-05-vo-lennys-merge-mommy-ai-code-review-bot]]) — a PR review agent built in a single Codex session on Vercel Eve, which reads each PR after CI passes, scores it on **six risk dimensions** (blast radius, reversibility, data security, ops impact, verification gap, change surface), auto-approves the low band and escalates the rest to Slack. It is the corpus's most explicit operational statement of *where the human checkpoint goes*, and two of its six axes turn out to be exactly what [[2026-05-14-pochampally-assistant-or-actor-delegation-regret|human-factors research]] finds drives users to withdraw trust from an agent. Her framing of the constraint is the reason it exists: once AI writes most of the code, **review capacity, not authoring capacity, is the bottleneck.**
+
 ## Appears in this wiki via
 
+- [[2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder]] — host; interviews [[Ryan Carson]] on running 15 concurrent [[Devin]] agents, and contributes the episode's counter-argument that shipping more code does not produce better product.
+- [[2026-08-05-vo-lennys-merge-mommy-ai-code-review-bot]] — host/builder; Merge Mommy, the six-dimension risk-scoring PR reviewer.
 - [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness]] — host; interviews Mozilla's Brian Grinstead on the production agentic security-bug harness, drawing the explicit link to her own prior goal-loop episode.
 - [[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex]] — host/presenter; her own explainer on the four loop types (heartbeat / cron / hook / goal) and the five things an effective loop needs.
 - [[2025-12-01-marily-nika-pms-who-use-ai-will-replace-those-who-dont]] — host; guest Marily Nika demonstrates an AI-enhanced PM workflow, with Vo's running product-eye commentary (persona-debate prompting, PRD-as-input, demo-day AI judges).

@@ -3,9 +3,9 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.98
-last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
-source_count: 82
+last_confirmed: "2026-08-30"
+accessed_at: "2026-08-30"
+source_count: 88
 relationships:
   - type: part-of
     target: ai-agents
@@ -778,3 +778,15 @@ SORT file.name ASC
 - **The Claude Code leak.** Referenced in both new sources but not directly ingested. If a primary-source ingest becomes possible, it would substantiate or challenge the harness-pattern claims that currently rest on second-hand interpretation.
 - **Why do verifiers actively hurt?** Pan et al.'s ablation shows verifiers degrade SWE-bench by 0.8 and OS World by 8.4. Mechanism unstated. Hypothesis: verifier-driven retries dilute the agent's confidence calibration, or verifiers add noise faster than they catch real failures. Worth tracking against future ablation work.
 - **Manus and Warel as candidate entity pages.** Both named in [[2026-05-04-rethinking-agents-harness-is-all-you-need|the YouTube source]] as agent platforms with relevant operational claims (5× harness rewrites; −80% tools / +performance). Promote on second-source mention.
+
+## What the harness cannot buy (added 2026-08-30)
+
+Four results from the 30 August 2026 ingest constrain harness design more sharply than anything previously in this page, because each is a **measured negative**.
+
+**Repository context files do not pay for themselves.** [[2026-02-12-gloaguen-evaluating-agents-md-repository-level-context-files|Gloaguen et al. (ETH Zürich)]] evaluated `AGENTS.md`-style files in two settings — SWE-bench tasks with LLM-generated files, and issues from repos with developer-committed ones — and found they **do not generally improve task success while raising inference cost >20% on average**, across LLMs, agents and both authorship types. The decomposition rescues the practice: *"instructions in the context files are well followed by coding agents, repository overviews, although popular and recommended by model providers, are not helpful."* **Keep the imperatives, delete the description** — the architectural tour at the top of nearly every context file is pure token cost paid on every invocation. Corroborated from the other direction by [[2026-06-11-abujadallah-rejection-of-agentic-pull-request-fixes|Abujadallah et al.]], who conclude from 306 rejected agent PRs that what agents need is **hints about the approach** and **explicit statements of forbidden approaches** — both imperative, neither descriptive.
+
+**The harness sets the cheating rate.** [[2025-06-05-metr-recent-frontier-models-are-reward-hacking|METR's]] ~40× spread across task families (0.7% on HCAST, 100% on one RE-Bench family) means **how gameable the scoring surface is, is a harness design variable**, not a model property. Same for evaluation: [[2026-06-25-jain-cursor-reward-hacking-swamping-model-intelligence-gains|Cursor's]] *"benchmark design… also has to account for the runtime environment"* is a statement about what the sandbox is allowed to reach.
+
+**Isolation is the coordination primitive that pays.** [[2026-03-23-geng-neubig-caid-asynchronous-software-engineering-agents|CAID]] names three — centralized task delegation, asynchronous execution, **isolated workspaces** — and measures **+25.6% (PaperBench) / +14.7% (Commit0)** over single-agent baselines. This is the controlled evidence behind the practitioner conviction that a **fresh VM per session** ([[Devin]]) is what makes concurrent agents workable. See [[multi-agent-failure-modes]] and [[agent-fleet-management]].
+
+**Supervising the reasoning trace is durable only if you don't optimise it.** [[2025-03-14-baker-monitoring-reasoning-models-misbehavior-obfuscation|Baker et al.]] show CoT monitoring outperforms output monitoring and that a weaker model can monitor a stronger one — then show that optimisation pressure produces **obfuscated reward hacking**, preserving the rate and destroying the evidence. Their prescription, the **monitorability tax**, is a hard constraint on any harness whose review gate reads an agent's self-explanation.

@@ -3,9 +3,9 @@ type: concept
 aliases: ["LLM Wiki", "LLM-Wiki", "llm wiki", "Karpathy's LLM Wiki", "LLM-maintained wiki", "compounding wiki"]
 tags: [llm-wiki, knowledge-compilation, three-layer-architecture, ingest-query-lint, agent-memory, claude-md, knowledge-compounding, agentic-knowledge-base]
 confidence: 0.93
-last_confirmed: "2026-06-18"
-accessed_at: "2026-06-18"
-source_count: 8
+last_confirmed: "2026-08-30"
+accessed_at: "2026-08-30"
+source_count: 9
 relationships:
   - type: part-of
     target: agent-harness
@@ -211,6 +211,10 @@ None substantive. The four wiki sources are convergent on the architecture, the 
 - [[knowledge-graphs]] — entity-linking + cross-references in the LLM Wiki are a markdown-form knowledge graph; SurrealDB / OceanBase / Neo4j convergence direction.
 - [[software-3.0]] — Karpathy positions the LLM Wiki within his Software 3.0 framing.
 - [[vibe-coding]] — vibe-coding raises the floor; the LLM Wiki extends the same floor-raising principle to knowledge work.
+
+## Evidence on context files (added 2026-08-30)
+
+[[2026-02-12-gloaguen-evaluating-agents-md-repository-level-context-files|Gloaguen et al.]] evaluated repository-level context files (`AGENTS.md`, `CLAUDE.md`) and found they **do not generally improve coding-agent task success while raising inference cost >20% on average** — with a decomposition that matters for how this repository's own schema layer is written: **explicit instructions are followed; repository overviews are not helpful.** This wiki's `CLAUDE.md` is overwhelmingly imperative rather than descriptive, which is the shape the evidence supports.
 
 ## Mentioned in
 

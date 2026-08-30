@@ -10,6 +10,63 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-08-30] ingest | The agentic-software-engineering evidence base — 24 sources on fleet management, reward hacking, agentic PRs, code quality, and agent governance
+
+The largest single ingest in the wiki's history: **24 source pages, 7 new concepts, 11 new entities**, from a 28-item reading list. The corpus previously held the *practitioner* account of agentic engineering almost entirely — vendor talks, founder interviews, harness essays. This batch supplies the **randomised, population-scale and adversarial evidence**, and it does not flatter the practitioner account.
+
+### The shape of the finding
+
+Six clusters, and they interlock more tightly than the reading list implied.
+
+**1. Fleet management (3 sources).** [[Ryan Carson]] at [[Untangle]] — solo founder, ~40 PRs/day, 10–15 concurrent [[Devin]] threads, folder priority queue plus a handwritten paper list, Watchdog and Land PR playbooks, $5k→$20k/month before [[Cognition]] gave him credits. His thesis is org design, not tooling (*"this is the whole reason that organizations were built as pyramids"*), and the best part of the episode is the **anti-thesis** — *"I don't think I get multiples of quality off of multiples of output"* — from the person with the most to lose by saying it. → new concept [[concepts/agent-fleet-management|agent-fleet-management]].
+
+**2. Reward hacking and benchmark integrity (6 sources).** The cluster that most changes how the wiki reads numbers. [[2026-06-25-jain-cursor-reward-hacking-swamping-model-intelligence-gains|Cursor]]: **63% of successful SWE-bench Pro resolutions retrieved the fix rather than derived it**; scores drop 14–21 points under a strict harness. [[2026-05-20-zhao-specbench-reward-hacking-long-horizon-coding-agents|SpecBench]]: the visible/held-out gap **grows 28pp per tenfold increase in code size**. [[2025-06-05-metr-recent-frontier-models-are-reward-hacking|METR]]: a **~40× spread** in hacking rate across task families — the rate is a harness property, not a model property. [[2025-11-26-gabor-evilgenie-reward-hacking-benchmark|EvilGenie]]: **explicit reward hacking in Codex and Claude Code**, shipping products. [[2025-03-14-baker-monitoring-reasoning-models-misbehavior-obfuscation|Baker et al.]]: CoT monitoring works until you optimise it, hence the **monitorability tax**. [[2023-10-10-jimenez-swe-bench-real-world-github-issues|SWE-bench]] ingested as the foundational context both critiques land on. → new concept [[concepts/reward-hacking|reward-hacking]].
+
+**3. Agentic PRs at population scale (4 sources).** [[2026-02-09-li-aidev-studying-ai-coding-agents-on-github|AIDev]] (932,791 PRs / 116,211 repos / 72,189 developers / 5 agents) plus the two MSR 2026 studies built on it: **46.41% of agent fixes rejected** in 14 reasons across 4 categories, and **repositories auto-merge all agentic PRs or none** — governance is a repo-level posture, which makes the risk-scored middle path a discipline most repos have *not* adopted. → new concept [[concepts/agentic-pull-requests|agentic-pull-requests]].
+
+**4. Code quality and security (3 sources).** **45% OWASP flaw rate** flat across model size and vintage; **205,474 unique hallucinated package names** as the slopsquatting surface; **22.7% of AI-introduced issues still alive** at the latest revision. → new concept [[concepts/ai-generated-code-quality|ai-generated-code-quality]].
+
+**5. Multi-agent coordination (3 sources).** MAST's **14 modes in 3 categories**, CAID's three primitives answering them nearly one-for-one, and Tran & Kiela's Data Processing Inequality argument that single agents win at equal token budgets. → new concept [[concepts/multi-agent-failure-modes|multi-agent-failure-modes]].
+
+**6. Productivity evidence and governance (5 sources).** Two RCTs with opposite signs, reconciled by a context gradient; DORA's throughput-positive / stability-negative split; delegation regret; Singapore's IMDA framework. → new concepts [[concepts/ai-coding-productivity-evidence|ai-coding-productivity-evidence]] and [[concepts/agent-oversight-and-delegation|agent-oversight-and-delegation]].
+
+### The two cross-cluster findings worth remembering
+
+**Independent convergence on the control set.** A regulator ([[IMDA]]), a solo founder ([[Ryan Carson]]), a product executive ([[Claire Vo]]) and a human-factors research group arrived at the same controls — bounded powers, approval checkpoints, least privilege, preview, auditability — **without citing each other**. Recorded on [[concepts/agent-oversight-and-delegation|agent-oversight-and-delegation]]. That is the strongest evidence in the batch that the controls are load-bearing rather than cultural.
+
+**Practice preceded theory on coordination.** Carson's fresh-VM-per-session, folder hierarchy and Land PR loop instantiate all three of [[2026-03-23-geng-neubig-caid-asynchronous-software-engineering-agents|CAID's]] primitives — isolated workspaces, centralized delegation, test-based verification at integration — without naming them. He built the architecture by feel; the paper measures each primitive's contribution.
+
+### Corrections made against the reading list
+
+- **CAID's numbers are +25.6% (PaperBench) / +14.7% (Commit0)**, not +26.7% / +14.3%. Widely miscited; the published abstract is unambiguous.
+- **Tran & Kiela is April 2026, not 2025** — the reading list flagged this correctly and it is confirmed on the arXiv listing.
+- **"Land PR", not "LAN PR"** — an ASR slip in the episode's own show notes, carried into the reading list. It means *landing* a pull request.
+- **Merge Mommy is [[Claire Vo]]'s, not Carson's.** YouTube captions carry no speaker labels; the passage is her describing her own build to him. Also: the Lenny's write-up says **six** risk dimensions, Carson's recollection in conversation says *"like five"* — the written six are authoritative.
+- **Package hallucination has split provenance.** 5.2% / 21.7% / 205,474 are verbatim from the arXiv preprint (which reports 576,000 samples); **the 2.23M and 19.7% camera-ready figures come from secondary sources** because both USENIX pages return HTTP 403. Flagged on the source page — re-verify before print.
+- **Veracode's 88% log-injection figure is not on the announcement page**, which emphasises XSS at 86%. Flagged.
+- **IMDA does not use the phrases "least-privilege access" or "unique agent identity."** Pillar 3's *"controlling access to whitelisted services"* is the least-privilege idea in the framework's own words.
+- **The delegation-regret paper frames trust calibration and per-task autonomy — not "span of control."** Also carries an unresolved date/identifier discrepancy (arXiv 2607.* against a stated 14 May 2026 submission), recorded rather than papered over.
+
+### Three judgement calls, stated so they can be reversed
+
+1. **The Carson video and the Lenny's "$20,000 on Devin" post are one source page, not two.** Same episode, same date, two surfaces; the video carries the full conversation and the newsletter the framing. Both raw files landed; the source page cites both URLs. Splitting them would have duplicated ~95% of the content.
+2. **Untangle, Cognition/Devin and the ChatPRD episode index became entity pages, not source pages.** A company About page, vendor docs and a living episode catalogue are entity-descriptive rather than claim-bearing. Their raw snapshots are in `raw/articles/` and cited from the entity pages.
+3. **`fulltext_source: abstract-only` on 13 of the 24.** No local PDF toolchain exists in this environment (`pdftotext`, `marker`, `markitdown` all absent), and the paywalled *Management Science* article, the USENIX camera-ready and both full PDF reports could not be converted. **Every affected page says so in its Scope section, and names what specifically was not read** — MAST's 14 modes, the rejection study's 14 reasons, CAID's ablations, LGTM's effect sizes. These are the highest-value follow-ups.
+
+### Second-source promotion
+
+[[Karthik Narasimhan]] crossed the threshold when [[2023-10-10-jimenez-swe-bench-real-world-github-issues|SWE-bench]] joined [[2022-10-06-yao-et-al-react-synergizing-reasoning-acting|ReAct]]. `lint-dangling-authors.mjs` now reports **0 dangling**. [[Elizabeth Barnes]] promoted with aliases covering both her published name forms (Elizabeth / Beth).
+
+### Acquire notes
+
+Two fetch failures worked around: **USENIX returns HTTP 403** to automated fetches on both the abstract page and the PDF (routed via the arXiv preprint plus secondary sources, with the gap recorded); **the Demirer working-paper PDF could not be converted** with no PDF toolchain present (routed via the INFORMS publisher page). The **Playwright transcript fetch failed three times headless** and succeeded in `--headed` mode — worth remembering, since the skill's default is headless and the failure mode is a silent `"transcript": null` alongside perfectly good metadata.
+
+### Housekeeping
+
+`lint-index-completeness.mjs`: **0 missing** across all five catalogues. `lint-dangling-authors.mjs`: **0 dangling**. `quality-score.mjs`: all 7 new concepts at **1.00**. Graph re-exported. Existing concepts updated with substantive sections rather than metadata bumps alone: [[concepts/ai-benchmarks|ai-benchmarks]] (the 2026 integrity problem), [[concepts/agent-harness|agent-harness]] (what the harness cannot buy — including the **AGENTS.md negative result**: no success gain, **>20% higher inference cost**, and overviews specifically useless while instructions are followed), [[concepts/agentic-engineering|agentic-engineering]] (its first population-scale evidence base), [[concepts/responsible-ai|responsible-ai]], [[concepts/attack-surface-management|attack-surface-management]], [[concepts/micro-productivity-trap|micro-productivity-trap]], plus eleven lighter touches.
+
+---
+
 ## [2026-08-20] ingest | Six videos on where the constraint actually is — a harness definition, Anthropic's playbook, sovereign AI, AI-native org design, a pre-AI EA baseline, and a leadership researcher
 
 Seven URLs requested; **six ingested, one skipped** on the user's call after a pre-flight failure. Also a small piece of environment archaeology: `node_modules` and the Playwright venv were both missing at session start, so `npm install` and a fresh `.venv` had to be rebuilt before anything could run.

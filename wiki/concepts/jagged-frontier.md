@@ -3,9 +3,9 @@ type: concept
 aliases: ["jagged frontier", "jagged-frontier", "jagged technological frontier", "AI capability frontier", "jagged intelligence", "jagged skills", "jagged-intelligence", "animals vs ghosts", "ghosts not animals"]
 tags: [jagged-frontier, jagged-intelligence, AI-capabilities, knowledge-work, productivity, automation, augmentation, verifiability, animals-vs-ghosts]
 confidence: 0.95
-last_confirmed: "2026-07-09"
-accessed_at: "2026-07-09"
-source_count: 16
+last_confirmed: "2026-08-30"
+accessed_at: "2026-08-30"
+source_count: 17
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -147,6 +147,12 @@ The animals-vs-ghosts framing is held in the wiki as a **mindset convention**, n
 - [[software-3.0]] — Software 3.0 programs run on jagged interpreters; verifiability + labs care determine which programs run reliably.
 - [[agentic-engineering]] — practitioners must know which RL circuits their work sits in; the discipline includes identifying when fine-tuning is needed.
 - [[foundation-models]] — the substrate whose training-process editorial choices produce the jaggedness.
+
+## The 2026 randomised evidence (added 2026-08-30)
+
+The corpus's two coding RCTs are a jagged-frontier result in the cleanest available form: [[2026-02-27-cui-demirer-generative-ai-high-skilled-work-three-field-experiments|Cui et al.]] find **+26.08% completed tasks** across 4,867 developers, while [[2025-07-10-becker-metr-early-2025-ai-experienced-developer-productivity|METR]] finds **+19% completion time — slower** — for 16 experienced maintainers on their own mature repositories. Same technology, opposite signs, and the boundary runs through **how much of the work is acquiring context**. Cui et al.'s own heterogeneity result (juniors adopt more and gain more) marks the same edge from the other side. See [[ai-coding-productivity-evidence]].
+
+METR also supplies the frontier's perceptual signature: developers who had just been slowed 19% estimated they had been sped up 20%. **The jaggedness is invisible from inside the task.**
 
 ## Mentioned in
 

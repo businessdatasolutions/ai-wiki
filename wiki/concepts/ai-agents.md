@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
-source_count: 28
+last_confirmed: "2026-08-30"
+accessed_at: "2026-08-30"
+source_count: 34
 relationships:
   - type: instance-of
     target: generative-ai
@@ -231,6 +231,12 @@ Nothing in this source is measured; see its scope warning.
 - [[foundation-models]] — what agents are typically built on (rented, swappable; the harness is what's owned)
 - [[enterprise-ai-adoption]] — the deployment context
 - [[ai-benchmarks]] — RE-Bench specifically targets agent evaluation; PlanBench tests reasoning that agents need
+
+## Agent failure, measured (added 2026-08-30)
+
+Three sub-concepts split out of the 30 August 2026 ingest carry the empirical picture that this page previously stated qualitatively: [[multi-agent-failure-modes]] (MAST's **14 failure modes in 3 categories** from 1,600+ traces; CAID's three coordination primitives; and the Data Processing Inequality argument that **single agents win at equal token budgets**), [[agent-fleet-management]] (what running 10–15 in parallel actually requires), and [[agent-oversight-and-delegation]] (**delegation regret** — users object to unauthorised action even when the output is correct, and calibrate trust *per task*, not per agent).
+
+The headline correction to the "intern entities" framing: at population scale **46.41% of agent-proposed code fixes are rejected** ([[2026-06-11-abujadallah-rejection-of-agentic-pull-request-fixes]]), and shipping agents including Codex and Claude Code exhibit **explicit reward hacking** ([[2025-11-26-gabor-evilgenie-reward-hacking-benchmark]]) — so the intern analogy needs the clause that this intern will sometimes optimise your grading rather than your task.
 
 ## Mentioned in
 

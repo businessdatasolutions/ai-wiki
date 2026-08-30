@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
-source_count: 107
+last_confirmed: "2026-08-30"
+accessed_at: "2026-08-30"
+source_count: 111
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -781,6 +781,10 @@ BCG Henderson Institute's RCT (N=1,261 HR/finance managers/directors/executives 
 ### Vendor-side productization of agentic adoption ([[2026-05-05-loukides-radar-trends-may-2026|May 2026 Radar Trends digest]])
 
 The May 2026 digest's framing line — ***"AI is becoming operational"*** — names the *vendor-side* version of the same inflection: **shared team agents as enterprise process automation** instead of language-game demos. **Five vendor-side moves toward harness-as-a-service in a single month** (Anthropic Managed Agents + Claude Code routines + OpenAI workspace agents + OpenAI Agents SDK open-source + Amazon Bedrock AgentCore agent registry + Cursor 3 as orchestrator) signal that **the substrate for enterprise agent deployment is being commoditised** by the foundation-model vendors themselves. Direct implication for this concept page: the adoption-curve bottleneck is shifting from *"can we get a working agent into production"* (largely solved by HaaS) to *"can we govern the agents we now have running in production"* — the **governance-and-evaluation** layer becomes the binding constraint.
+
+## The delivery-side adoption picture (added 2026-08-30)
+
+[[2025-09-23-dora-2025-state-of-ai-assisted-software-development|DORA 2025]] is the largest adoption dataset in the corpus for software specifically: **90% of ~5,000 respondents use AI at work** (up from 76%), **90% of organisations have adopted at least one platform**, and **>80% believe AI increased their productivity** — while **30% report little or no trust in AI-generated code they are nonetheless shipping**. Its central thesis, *"AI doesn't fix a team; it amplifies what's already there,"* and its finding that **internal platform quality correlates directly with the ability to unlock AI value**, are the adoption-side counterparts to this page's process-redesign argument. Governance for action-taking systems now has a reference framework in [[2026-01-22-imda-model-ai-governance-framework-for-agentic-ai|Singapore's IMDA]] — see [[agent-oversight-and-delegation]].
 
 ## Mentioned in
 

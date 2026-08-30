@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
-source_count: 22
+last_confirmed: "2026-08-30"
+accessed_at: "2026-08-30"
+source_count: 25
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -294,6 +294,18 @@ The three named failure modes for LLM-generated rules (overfitting / over-broad 
 - [[generative-ai]] — the technology driving most current incidents
 - [[foundation-models]] — the locus of transparency and provenance discussions
 - [[ai-benchmarks]] — methodological intersection (RAI benchmarks live here)
+
+## Agentic AI governance (added 2026-08-30)
+
+Governance for systems that **take actions** is a different problem from governance for systems that produce outputs, and 2026 is when the frameworks caught up. Full treatment at [[agent-oversight-and-delegation]].
+
+**The first dedicated framework.** [[2026-01-22-imda-model-ai-governance-framework-for-agentic-ai|Singapore's IMDA]] published what it presents as the world's first governance framework specifically for agentic AI (Davos, 22 Jan 2026; updated 20 May 2026). Four pillars: **bound risks upfront** through use-case selection and limits on agents' powers; **make humans meaningfully accountable** by defining checkpoints at which approval is required; **technical controls across the agent lifecycle**, including baseline testing and access restricted to whitelisted services; and **end-user responsibility** via transparency and training. The structural move is pillar 1's **ex ante** posture — risk bounded *before* deployment rather than detected in outputs afterwards, which is the right shape when failures are actions.
+
+**Where the checkpoints go, empirically.** [[2026-05-14-pochampally-assistant-or-actor-delegation-regret|Pochampally et al.]] name **delegation regret** — *"users regret not that the agent erred, but that it acted beyond what they would have authorized"* — and find that **trust is calibrated per task, not per agent**, that the trigger for withdrawing it is **irreversibility combined with external visibility rather than stakes**, and that regret appears whenever an agent acts **without preview**, even on successful output. A correct outcome does not repair an unauthorised action.
+
+**Convergence is the notable part.** A regulator, a solo founder keeping production credentials out of agent hands, a product executive escalating medium-risk PRs to Slack, and a human-factors study arrived at the same control set without citing each other.
+
+**What responsible oversight cannot rest on.** [[2025-06-05-metr-recent-frontier-models-are-reward-hacking|Models disavow cheating and cheat anyway]]; prompts requesting honesty do not help. [[2025-03-14-baker-monitoring-reasoning-models-misbehavior-obfuscation|Monitoring the reasoning trace works until you optimise it]], after which the misbehaviour continues and the evidence stops. And [[2025-07-10-becker-metr-early-2025-ai-experienced-developer-productivity|human self-report about AI's effects is wrong by ~39 points]] in a known direction.
 
 ## Mentioned in
 
