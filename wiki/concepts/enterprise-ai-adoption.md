@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
-source_count: 111
+last_confirmed: "2026-08-31"
+accessed_at: "2026-08-31"
+source_count: 112
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -738,7 +738,20 @@ From the vendor's customer-facing side: *"a lot of times people are just **behin
 
 The same talk's SRE demo is the shape of the use case: incident detection → root-cause diagnosis → code fix → redeploy → self-verification → resolve the page → postmortem published via MCP. Scripted, single-run, self-injected fault — evidence about *shape*, not reliability.
 
-## Debates and supersession
+## Adoption from the bottom up: one worker's system, then a plugin for everyone ([[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum / How I AI, August 2026]])
+
+Almost every source on this page describes adoption as something a firm *does to* its workforce — programmes, operating models, change management, budget. [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum]] documents the opposite vector: one employee builds a personal system under ordinary constraints, and it becomes company infrastructure.
+
+The constraints matter for generalisability, and he names them without complaint: "the constraints of an average PM… **not endless tokens**, needing to work within **budgets and bureaucracy**," plus a fixed tool stack chosen by the company ("most of my choices were made by my company"). This is the [[2026-05-01-lf-state-of-tech-talent-global-2026|workforce-readiness]] picture inverted — capability outrunning the programme rather than adoption outrunning capability.
+
+Three findings the page should carry:
+
+- **Distribution is a UX problem, and the firm had already learned it the expensive way.** PMs attempting the [[Claude Code]] terminal route took three days on dependencies and did not adopt. The Workstation plugin's ~15-minute guided chat onboarding — connect tools, confirm role, map colleagues, read calendar and Slack, calibrate voice — is what made it spread from PMs to all Melio workers. Barrier removal beat capability addition.
+- **Agent-maintained systems of record.** Notion is "almost read-only" for him; the agent built the board and maintains it. If this generalises, the adoption question shifts from *which tools do people use* to *which systems does the agent own*, and the wiki's adoption instruments (which count human tool use) would systematically under-observe it.
+- **The context layer as the thing actually being adopted.** [[2026-07-24-turnbaugh-motherduck-context-layers-explained|Turnbaugh]] argues uncodified institutional knowledge forces agents to infer, and doubts skills work because humans forget to invoke them. Blum's morning brief answers both: the **agent** detects terms it does not know — a payments-domain "settlement cap" — asks the human, and writes the definition into its own context files, on a schedule. Codification becomes a by-product of daily use rather than a project.
+
+The honest caveat is that this is one enthusiast at one company, self-reported, and the sample is exactly the kind that survives to appear on a podcast. What it establishes is existence and mechanism, not prevalence.
+
 ## Debates and supersession
 
 - **High adoption vs. low maturity.** 78% adoption + 1% mature (per AI Index) and 28%+34% in Stages 1–2 + only 7% Stage 4 (per MIT CISR) describe an organization-wide scramble in early innings. Sources interpreting 78% as "AI is mainstream" are technically correct but misleading about depth. See [[ai-maturity-measurement-comparison]].
