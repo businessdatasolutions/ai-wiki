@@ -31,6 +31,8 @@ Retrieval: qmd BM25 search (`ai-wiki` collection; semantic/vector legs unavailab
 
 Resolved into [[syntheses/ai-worker-maturity-levels|the AI Worker Maturity synthesis]] (2026-08-31): a six-level model (L0 Bystander → L5 Multiplier) across six assessable dimensions, with per-dimension next-level actions. An interactive self-assessment tool was built from the synthesis at [`tools/ai-worker-maturity-assessment.html`](../../tools/ai-worker-maturity-assessment.html).
 
+*Same-day convergence.* While this thread was being synthesized in the remote session, the local session independently ingested [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum / How I AI]] on `main` — the corpus's first complete single-worker trajectory, raising the very question this thread answers (via [[ai-maturity-measurement-comparison]]'s new worker-level axis). Merged in as the synthesis's eighth fragment the same evening.
+
 ## Related pages
 
 - [[ai-maturity-measurement-comparison]] — sister thread (open) on *organizational* maturity instruments; this thread is its worker-level counterpart.

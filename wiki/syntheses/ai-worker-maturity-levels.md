@@ -8,7 +8,7 @@ closed: 2026-08-31
 confidence: 0.80
 last_confirmed: "2026-08-31"
 accessed_at: "2026-08-31"
-source_count: 16
+source_count: 17
 relationships:
   - type: supports
     target: durable-skills
@@ -31,9 +31,9 @@ Can the individual worker's maturity in working with AI be classified into defen
 
 ## Findings
 
-### The corpus answer: no single source names a worker-level model, but seven ladder fragments interlock
+### The corpus answer: no single source names a worker-level model, but eight ladder fragments interlock
 
-The wiki's maturity instruments are organizational ([[ai-maturity-measurement-comparison]]; [[syntheses/organizational-frameworks-for-ai-adoption|the 11-layer frameworks stack]] anchoring [[concepts/enterprise-ai-adoption|enterprise-ai-adoption]] — whose frameworks all presume a workforce fluency distribution without making it assessable). At worker altitude the corpus instead holds **seven partial ladders**, each measuring a different facet of the same progression:
+The wiki's maturity instruments are organizational ([[ai-maturity-measurement-comparison]]; [[syntheses/organizational-frameworks-for-ai-adoption|the 11-layer frameworks stack]] anchoring [[concepts/enterprise-ai-adoption|enterprise-ai-adoption]] — whose frameworks all presume a workforce fluency distribution without making it assessable). At worker altitude the corpus instead holds **seven partial ladders** — joined, the same day this synthesis was filed, by an eighth: the corpus's first *complete lived trajectory*, ingested independently on `main` while this page was being drafted in a remote session. Each fragment measures a different facet of the same progression:
 
 | Fragment | What it tracks | Source |
 | --- | --- | --- |
@@ -44,6 +44,7 @@ The wiki's maturity instruments are organizational ([[ai-maturity-measurement-co
 | Vibe coding (floor) → agentic engineering (ceiling) | Quality bar retained as speed rises | [[2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering|Karpathy 2026]] |
 | Operator → supervisor → mentor ("the new 100%") | Professional identity / control posture | [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti / Goldman Sachs 2026]] |
 | One agent → 10–15 parallel threads → "constrain my output" judgment ceiling | Fleet scale and its limits | [[2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder|Carson / How I AI 2026]] |
+| Company-default tools → isolated artifacts (Gems) → one consolidated harness (70–80% of screen time) → agent-maintained system of record → agent-maintained *context* → agent-proposed self-improvement → packaged for colleagues (Workstation) | The only *complete single-worker trajectory*, with observable transition markers and the J-curve cost of the middle transitions; N=1, as narrated | [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum / How I AI 2026]] |
 
 Three cross-cutting findings discipline how the fragments combine:
 
@@ -63,6 +64,8 @@ The six levels below fuse the seven fragments into one progression. Each level i
 | **L3** | **Delegator** | Hands *complete tasks* to agents against explicit specs; reviews everything that ships; moves from in-the-loop to on-the-loop; knows the [[concepts/jagged-frontier|jagged frontier]] of their own domain. | Yegge 3–5; Beutler *Automate* (entry); Argenti operator→supervisor; Karpathy spec-first |
 | **L4** | **Orchestrator** | Runs several agents/workflows in parallel; designs the environment (rules files, playbooks, eval checks) rather than steering each run; queue machine-side, priorities human-side. | Yegge 6–7; Carson's 10–15 threads; Forsgren & Macvean pattern 3 (designing environments, not vibe-coding) |
 | **L5** | **Multiplier** | Builds the systems *others* work in — orchestrators, evals, paved paths, playbooks; codifies learning back into the organization; redesigns workflows, not tasks; mentors the levels below. | Yegge 8 (own orchestrator); Beutler's AI-agent-manager role; Brynjolfsson's fleet-CEO; Forsgren & Macvean pattern 5 (scientific mindset) |
+
+**The lived-trajectory check.** [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum's narrated progression]] — ingested independently the same day — runs through the fused levels almost one-to-one: isolated-artifact use (L1–L2), consolidation of 70–80% of screen time into one harness with complete-task delegation (L3), agent-maintained systems of record, scheduled tasks, self-repairing context, and a weekly self-improvement loop (L4), then packaging the system for every colleague via the Workstation plugin (L5). His five observable transition markers (harness share of screen time; agent writes vs. only reads the system of record; agent detects its own context gaps; system proposes its own improvements; distributed to others) are the closest thing the corpus has to *empirical level boundaries* — and his J-curve warning prices the L2→L4 transitions: ROI runs negative for weeks while context accumulates, which is where honest adopters quit. One narrated case corroborating a synthesized ladder is encouragement, not validation; it is counted in the confidence, not beyond it.
 
 Two structural notes. First, the levels are **not a moral ranking of workers but a capability ranking of behaviours** — Netflix's carve-out for deep specialists and [[concepts/expert-generalist|expert-generalist]]'s "be suspicious of a generalist with no deep legs" both warn against reading L5 as "best person." Second, **the top is judgment-bounded, not throughput-bounded**: Carson, the corpus's most industrialised operator, argues against his own interest that *"I don't think I get multiples of quality off of multiples of output"* — and [[2026-05-06-bockeler-engineering-of-ai-agents-context-harnessing-autonomy|Böckeler]] found even three parallel sessions exceeded her steering capacity. Scale without verification regresses a worker to expensive L1 behaviour.
 
@@ -112,6 +115,7 @@ The corpus is unusually consistent about the transitions; the per-level actions 
 - [[2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era]] — domain + AI fluency + human skills composite; human-skills demand growing 2×
 - [[2025-07-10-becker-metr-early-2025-ai-experienced-developer-productivity]] — the perception gap that disciplines self-assessment
 - [[2026-05-06-bockeler-engineering-of-ai-agents-context-harnessing-autonomy]] — practitioner limits of parallelism (Yegge secondhand anchor)
+- [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system]] — the complete single-worker trajectory with observable transition markers and the J-curve (added same-day, on merge from `main`)
 
 ## Lessons
 
@@ -123,7 +127,8 @@ The corpus is unusually consistent about the transitions; the per-level actions 
 
 ## Open questions
 
-- **No validated worker-level instrument exists in the corpus.** The AEI measures behaviour at population scale and Vantage measures durable skills psychometrically — but nobody has validated a *personal AI-maturity* scale against outcomes. Candidate future ingest: any 2026–27 industrial or academic instrument.
+- **This scale is structured but unvalidated.** The AEI measures behaviour at population scale and Vantage measures durable skills psychometrically — but no *personal AI-maturity* scale, this one included, has been validated against outcomes. Candidate future ingest: any 2026–27 industrial or academic instrument to test this synthesis against (also carried on [[ai-maturity-measurement-comparison]]).
+- **The composition question.** How does worker-level maturity aggregate to firm-level stages? A firm of L4s is not automatically a CISR Stage-4 firm — [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum's Workstation]] exists precisely to bridge that gap, and [[ai-maturity-measurement-comparison]] carries the question as its new axis.
 - **Does the ladder generalise beyond software work?** The evidence base skews to coding; L3–L5 behaviours (specs, evals, orchestration) need non-code worked examples — sales, legal, and finance cases exist in fragments ([[2026-06-02-architecting-ai-native-organizations-redesign-work-at-scale-joe-beutler|Beutler's]] wealth-management and claims agents) but not as worker progressions.
 - **Team-level interaction.** DORA's individual-vs-team paradox suggests a workforce of L2s can *lower* team performance; what mix of levels does a healthy team need, and does the org-level [[ai-maturity-measurement-comparison|maturity distribution]] predict it?
 - **Does L5 concentrate or diffuse?** Hu's 1,000×-engineer thesis vs. Wu's "Codex only makes you 10× if you weren't already" (both in [[concepts/agentic-engineering|agentic engineering]]'s Debates) is unresolved at the individual level — the same question applies to Multipliers.

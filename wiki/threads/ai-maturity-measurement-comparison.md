@@ -90,13 +90,15 @@ Caveats: N=1, self-reported, unaudited, and selected for having a story worth br
 
 **New question carried by this thread:** does a defensible worker-level maturity scale exist, with observable markers and actions per level — and how does it compose with firm-level stages? (A firm of Stage-4 individuals is not automatically a Stage-4 firm; Blum's Workstation exists precisely to bridge that gap.)
 
+*Partial answer, same day.* The first half was answered hours after this section was written, in the same-day sister thread [[threads/ai-worker-maturity-levels|ai-worker-maturity-levels]] → [[syntheses/ai-worker-maturity-levels|synthesis]]: a six-level scale (L0 Bystander → L5 Multiplier) across six assessable dimensions, fused from seven published ladders plus Blum's lived trajectory, operationalised as an interactive self-assessment (`tools/ai-worker-maturity-assessment.html`). Still open here: the scale is corpus-derived and **unvalidated against outcomes**, and the *composition* half — how worker-level maturity aggregates to firm stages — remains this thread's question.
+
 ## What's missing / candidate sources to find
 
 - **Updated CISR Future Ready Survey wave** (post-2022, ideally 2024). If it exists in the wiki later, ingest it to see if Stage distributions shifted.
 - **Other organizational maturity frameworks** — e.g., Gartner's AI maturity model, Deloitte's State of AI in the Enterprise, McKinsey's own "AI high-performer" framing. As of this thread opening, none have been ingested.
 - **A direct MIT Sloan/CISR ↔ AI Index methodology cross-walk** — if anyone has published one. Not yet found.
 - **MITTRI_Cisco** (in `raw/reports/`, not yet ingested) is sponsored MIT Tech Review Insights research, likely to introduce a third framing. Will surface in the next ingest.
-- **A worker-level maturity instrument.** Nothing in the corpus measures individual AI maturity with defined levels and transition criteria. Candidates to look for: capability frameworks from L&D/HR research, digital-literacy scales adapted to AI, or vendor "AI fluency" rubrics. Until one exists, the worker axis above rests on a single narrated case.
+- **A worker-level maturity instrument.** ~~Nothing in the corpus measures individual AI maturity with defined levels and transition criteria.~~ Partially filled 2026-08-31: [[syntheses/ai-worker-maturity-levels|the AI Worker Maturity synthesis]] supplies a corpus-derived six-level scale with markers and per-level actions. Still wanted: an externally **validated** instrument — capability frameworks from L&D/HR research, digital-literacy scales adapted to AI, or vendor "AI fluency" rubrics — to test the synthesis against.
 - **HBR Anand-Wu Gen AI Playbook** (in `raw/articles/`, not yet ingested). Authors are at NYU Stern / HBS — different academic lineage, may have a different framing.
 
 ## How this thread should resolve
@@ -116,6 +118,7 @@ Until then, this thread stays open as a reminder to **always include the instrum
 - [[2026-04-28-ai-index-report-2025|AI Index 2025]] — first source
 - [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan article]] — second source
 - [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum / How I AI]] — the worker-level axis
+- [[syntheses/ai-worker-maturity-levels|ai-worker-maturity-levels]] — sister synthesis (same day) answering the worker-scale half of this thread's new question
 - [[micro-productivity-trap]] — the J-curve trough that firm-level cross-sections cannot distinguish from failure
 - [[MIT CISR]] — institutional source
 - [[McKinsey & Company]] (dangling) — instrument source for AI Index adoption data
