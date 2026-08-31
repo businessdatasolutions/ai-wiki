@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Worker Maturity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* ---------- tokens: light (bare :root) ---------- */
+:root{
+  --bg:#F2F5F4; --card:#FFFFFF; --card-2:#E9EFED;
+  --ink:#17211E; --ink-2:#53625D; --ink-3:#7C8A85;
+  --line:#D9E2DF; --line-2:#C3D0CC;
+  --teal:#0D6B5F; --teal-deep:#0A4A43; --teal-ink:#0D6B5F;
+  --amber:#996408; --amber-bg:#F7EDD9; --amber-line:#E3C988;
+  --l0:#DCEAE6; --l1:#B4D6CD; --l2:#7FBCAF; --l3:#4A9E8E; --l4:#22816F; --l5:#0A5F53;
+  --l0-ink:#17211E; --l1-ink:#17211E; --l2-ink:#0E2A25; --l3-ink:#FFFFFF; --l4-ink:#FFFFFF; --l5-ink:#FFFFFF;
+  --focus:#0D6B5F;
+  --shadow:0 1px 2px rgba(23,33,30,.06),0 8px 28px -12px rgba(23,33,30,.14);
+}
+/* ---------- tokens: dark (system, unless explicit light) ---------- */
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1513; --card:#151E1B; --card-2:#1B2622;
+    --ink:#E7EEEC; --ink-2:#9DACA7; --ink-3:#71807B;
+    --line:#25322D; --line-2:#31423C;
+    --teal:#45B0A1; --teal-deep:#7FD0C3; --teal-ink:#5FBFB0;
+    --amber:#E0A63E; --amber-bg:#2A2213; --amber-line:#57431C;
+    --l0:#22322D; --l1:#2C4A42; --l2:#3A6558; --l3:#4C836F; --l4:#63A18A; --l5:#84C2A9;
+    --l0-ink:#C7D4D0; --l1-ink:#DCE8E4; --l2-ink:#EAF3F0; --l3-ink:#0C1815; --l4-ink:#0C1815; --l5-ink:#0C1815;
+    --focus:#5FBFB0;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.6);
+  }
+}
+/* ---------- tokens: explicit dark toggle ---------- */
+:root[data-theme="dark"]{
+  --bg:#0E1513; --card:#151E1B; --card-2:#1B2622;
+  --ink:#E7EEEC; --ink-2:#9DACA7; --ink-3:#71807B;
+  --line:#25322D; --line-2:#31423C;
+  --teal:#45B0A1; --teal-deep:#7FD0C3; --teal-ink:#5FBFB0;
+  --amber:#E0A63E; --amber-bg:#2A2213; --amber-line:#57431C;
+  --l0:#22322D; --l1:#2C4A42; --l2:#3A6558; --l3:#4C836F; --l4:#63A18A; --l5:#84C2A9;
+  --l0-ink:#C7D4D0; --l1-ink:#DCE8E4; --l2-ink:#EAF3F0; --l3-ink:#0C1815; --l4-ink:#0C1815; --l5-ink:#0C1815;
+  --focus:#5FBFB0;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.6);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *,*::before,*::after{transition:none!important;animation:none!important} }
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:17px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.mono{font-family:"IBM Plex Mono","SFMono-Regular",Consolas,monospace}
+h1,h2,h3,.disp{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--teal-ink)}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--focus); outline-offset:2px; border-radius:2px}
+
+.wrap{max-width:1060px; margin:0 auto; padding:0 24px}
+.prose{max-width:68ch}
+
+/* ---------- header ---------- */
+header{padding:56px 0 8px}
+.eyebrow{font-family:"IBM Plex Mono",monospace; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-2)}
+h1{font-size:clamp(40px,7vw,76px); font-weight:900; letter-spacing:-.02em; line-height:1.02; margin:.25em 0 .2em; text-wrap:balance}
+.thesis{font-size:clamp(18px,2.4vw,22px); color:var(--ink-2); max-width:56ch; margin:0 0 20px}
+.thesis strong{color:var(--ink)}
+.metachips{display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 0; padding:0; list-style:none}
+.metachips li{font-family:"IBM Plex Mono",monospace; font-size:12px; letter-spacing:.02em; color:var(--ink-2); border:1px solid var(--line-2); border-radius:999px; padding:5px 12px; background:var(--card)}
+
+/* ---------- ladder ---------- */
+.ladder-sec{padding:36px 0 8px}
+.ladder{display:grid; grid-template-columns:repeat(6,1fr); gap:2px; align-items:end; height:340px; margin:28px 0 0}
+.step{position:relative; border:none; border-radius:6px 6px 0 0; cursor:pointer; padding:14px 10px 12px; text-align:left;
+  display:flex; flex-direction:column; justify-content:flex-start; gap:2px; font:inherit;
+  transition:filter .15s ease, transform .15s ease}
+.step:hover{filter:brightness(1.06)}
+.step[aria-pressed="true"]{transform:translateY(-6px)}
+.step[aria-pressed="true"]::after{content:""; position:absolute; left:calc(50% - 7px); bottom:-13px; border:7px solid transparent; border-top-color:var(--ink)}
+.step .lnum{font-family:"IBM Plex Mono",monospace; font-size:12px; font-weight:600; letter-spacing:.08em; opacity:.85}
+.step .lname{font-family:Archivo,sans-serif; font-weight:800; font-size:clamp(13px,1.8vw,19px); letter-spacing:-.01em; line-height:1.1}
+.s0{height:34%; background:var(--l0); color:var(--l0-ink)}
+.s1{height:47%; background:var(--l1); color:var(--l1-ink)}
+.s2{height:60%; background:var(--l2); color:var(--l2-ink)}
+.s3{height:73%; background:var(--l3); color:var(--l3-ink)}
+.s4{height:86%; background:var(--l4); color:var(--l4-ink)}
+.s5{height:100%; background:var(--l5); color:var(--l5-ink)}
+.baseline{height:2px; background:var(--ink); opacity:.85; margin-top:0}
+.step-detail{background:var(--card); border:1px solid var(--line); border-top:none; border-radius:0 0 10px 10px; padding:22px 24px; box-shadow:var(--shadow)}
+.step-detail .dt-head{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap}
+.step-detail h3{margin:0; font-size:24px; font-weight:800; letter-spacing:-.01em}
+.dt-chip{font-family:"IBM Plex Mono",monospace; font-size:12px; font-weight:600; padding:3px 10px; border-radius:999px}
+.step-detail p{margin:.6em 0 0; max-width:75ch}
+.dt-anchors{margin-top:10px; font-family:"IBM Plex Mono",monospace; font-size:12.5px; color:var(--ink-2); line-height:1.7}
+@media (max-width:640px){
+  .ladder{height:auto; grid-template-columns:1fr; gap:6px; align-items:stretch}
+  .step{height:auto!important; border-radius:8px; flex-direction:row; align-items:center; gap:12px; padding:12px 14px}
+  .step[aria-pressed="true"]::after{display:none}
+  .baseline{display:none}
+  .step-detail{border-top:1px solid var(--line); border-radius:10px; margin-top:10px}
+}
+
+/* ---------- discipline notes ---------- */
+.notes{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; margin:26px 0 0}
+.note{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:18px 20px}
+.note h3{margin:0 0 6px; font-size:15.5px; font-weight:700; letter-spacing:-.005em}
+.note p{margin:0; font-size:15px; color:var(--ink-2)}
+.note .cite{display:block; margin-top:10px}
+.cite{font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--ink-3); letter-spacing:.02em}
+.cite a{color:inherit}
+
+/* ---------- sections ---------- */
+section{padding:44px 0 4px}
+h2{font-size:clamp(26px,3.6vw,36px); font-weight:800; letter-spacing:-.015em; margin:0 0 6px; text-wrap:balance}
+.sec-intro{color:var(--ink-2); margin:0 0 8px; max-width:68ch}
+
+/* ---------- instrument ---------- */
+.dim{margin:34px 0 0}
+.dim-head{display:flex; align-items:baseline; gap:14px; border-bottom:2px solid var(--ink); padding-bottom:8px}
+.dim-head .dnum{font-family:"IBM Plex Mono",monospace; font-size:13px; font-weight:600; color:var(--ink-2)}
+.dim-head h3{margin:0; font-family:Archivo,sans-serif; font-size:21px; font-weight:800; letter-spacing:-.01em}
+.dim-head .dsub{font-size:14.5px; color:var(--ink-2); font-style:italic}
+.q{margin:20px 0 0}
+.q-label{font-weight:700; font-size:16.5px; margin:0 0 10px}
+.q-label .qn{font-family:"IBM Plex Mono",monospace; font-weight:600; font-size:12.5px; color:var(--ink-3); margin-right:8px}
+.opts{display:grid; gap:6px; margin:0; padding:0; list-style:none}
+.opt{position:relative}
+.opt input{position:absolute; opacity:0; inset:0; pointer-events:none}
+.opt label{display:grid; grid-template-columns:44px 1fr; align-items:center; gap:0 12px; cursor:pointer;
+  border:1px solid var(--line); border-radius:8px; background:var(--card); padding:9px 12px 9px 8px;
+  font-size:15px; line-height:1.45; color:var(--ink-2); transition:border-color .12s ease, background .12s ease}
+.opt label:hover{border-color:var(--line-2); color:var(--ink)}
+.opt .tag{font-family:"IBM Plex Mono",monospace; font-size:11.5px; font-weight:600; text-align:center; padding:3px 0; border-radius:5px; background:var(--card-2); color:var(--ink-2)}
+.opt input:checked + label{border-color:var(--teal); background:var(--card); color:var(--ink); box-shadow:inset 0 0 0 1px var(--teal)}
+.opt input:checked + label .tag{background:var(--teal); color:var(--bg)}
+.opt input:focus-visible + label{outline:2px solid var(--focus); outline-offset:2px}
+
+/* ---------- progress + compute ---------- */
+.progress{position:sticky; bottom:18px; display:flex; justify-content:center; pointer-events:none; z-index:5; margin-top:34px;
+  opacity:0; transform:translateY(10px); transition:opacity .2s ease, transform .2s ease; visibility:hidden}
+.progress.vis{opacity:1; transform:none; visibility:visible}
+.progress-inner{pointer-events:none; display:flex; align-items:center; gap:14px; background:var(--card); border:1px solid var(--line-2); border-radius:999px; padding:10px 12px 10px 18px; box-shadow:var(--shadow)}
+.progress.vis .progress-inner{pointer-events:auto}
+.pcount{font-family:"IBM Plex Mono",monospace; font-size:13px; color:var(--ink-2); font-variant-numeric:tabular-nums}
+.pbar{width:120px; height:6px; border-radius:3px; background:var(--card-2); overflow:hidden}
+.pbar i{display:block; height:100%; width:0%; background:var(--teal); transition:width .2s ease}
+button.primary{font-family:Archivo,sans-serif; font-weight:700; font-size:15px; letter-spacing:.01em; color:var(--bg);
+  background:var(--ink); border:none; border-radius:999px; padding:10px 20px; cursor:pointer}
+button.primary:not(:disabled):hover{background:var(--teal-deep); color:#fff}
+button.primary:disabled{opacity:.45; cursor:not-allowed}
+button.ghost{font-family:Archivo,sans-serif; font-weight:600; font-size:14px; color:var(--ink-2); background:none; border:1px solid var(--line-2); border-radius:999px; padding:9px 18px; cursor:pointer}
+button.ghost:hover{color:var(--ink); border-color:var(--ink-3)}
+
+/* ---------- results ---------- */
+#results{display:none}
+#results.on{display:block}
+.res-grid{display:grid; grid-template-columns:340px 1fr; gap:16px; margin-top:24px}
+@media (max-width:820px){ .res-grid{grid-template-columns:1fr} }
+.panel{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:22px 24px; box-shadow:var(--shadow)}
+.gauge-panel{display:flex; flex-direction:column; align-items:center; text-align:center; gap:2px}
+.gauge-wrap{width:100%; max-width:300px}
+.gauge-num{font-family:Archivo,sans-serif; font-weight:900; font-size:56px; line-height:1; letter-spacing:-.02em; font-variant-numeric:tabular-nums}
+.gauge-name{font-family:Archivo,sans-serif; font-weight:800; font-size:22px; margin-top:2px}
+.gauge-sub{font-size:14.5px; color:var(--ink-2); margin-top:6px; max-width:30ch}
+.needle{transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+/* profile bars */
+.profile h3, .actions-panel h3{margin:0 0 4px; font-size:17px; font-weight:800; font-family:Archivo,sans-serif}
+.profile .hint{font-size:13.5px; color:var(--ink-3); margin:0 0 14px}
+.rows{display:grid; gap:11px}
+.row{display:grid; grid-template-columns:150px 1fr 40px; align-items:center; gap:12px}
+@media (max-width:520px){ .row{grid-template-columns:110px 1fr 36px} }
+.row .rlabel{font-family:"IBM Plex Mono",monospace; font-size:12.5px; color:var(--ink-2); line-height:1.3}
+.track{position:relative; height:16px; background:var(--card-2); border-radius:4px;
+  background-image:repeating-linear-gradient(to right, transparent 0, transparent calc(20% - 1px), var(--line) calc(20% - 1px), var(--line) 20%)}
+.fill{position:absolute; inset:0 auto 0 0; border-radius:4px 3px 3px 4px; background:var(--teal); min-width:3px; transition:width .5s ease}
+.row .rval{font-family:"IBM Plex Mono",monospace; font-size:13px; font-weight:600; text-align:right; font-variant-numeric:tabular-nums}
+/* gate warning */
+.gate{display:none; margin-top:16px; border:1px solid var(--amber-line); background:var(--amber-bg); border-radius:10px; padding:16px 18px}
+.gate.on{display:block}
+.gate h3{margin:0 0 4px; font-family:Archivo,sans-serif; font-size:15.5px; font-weight:800; color:var(--amber)}
+.gate p{margin:0; font-size:14.5px}
+/* actions */
+.actions{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px; margin-top:16px}
+.action{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 18px; display:flex; flex-direction:column; gap:8px}
+.action .a-head{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+.action .a-dim{font-family:Archivo,sans-serif; font-weight:800; font-size:14.5px}
+.action .a-move{font-family:"IBM Plex Mono",monospace; font-size:11.5px; font-weight:600; color:var(--ink-2); background:var(--card-2); border-radius:5px; padding:2px 8px}
+.action .a-move.summit{color:var(--teal-ink)}
+.action p{margin:0; font-size:14.5px; color:var(--ink-2)}
+.action p strong{color:var(--ink)}
+.action .first{align-self:flex-start; font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--bg); background:var(--teal); border-radius:4px; padding:3px 8px}
+/* caveat + footer */
+.caveat{margin-top:18px; border-left:3px solid var(--amber); padding:4px 0 4px 16px; font-size:14.5px; color:var(--ink-2)}
+.res-buttons{display:flex; gap:10px; margin-top:22px; flex-wrap:wrap}
+footer{margin-top:56px; border-top:1px solid var(--line-2); padding:28px 0 48px}
+footer h2{font-size:17px}
+.srcs{margin:12px 0 0; padding:0 0 0 1.4em; font-size:13.5px; color:var(--ink-2); columns:2; column-gap:40px}
+@media (max-width:700px){ .srcs{columns:1} }
+.srcs li{margin:0 0 7px; break-inside:avoid}
+.colophon{margin-top:22px; font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--ink-3); line-height:1.8}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">ai-wiki synthesis · 31 aug 2026</p>
+  <h1>AI Worker Maturity</h1>
+  <p class="thesis">Six levels from <strong>Bystander</strong> to <strong>Multiplier</strong>, fused from seven published ladders. The gate between levels is not how much AI you use — it is <strong>how well you verify what it produces</strong>.</p>
+  <ul class="metachips">
+    <li>6 levels</li><li>6 dimensions</li><li>12 questions · ±4 min</li><li>16 sources</li><li>answers stay in your browser</li>
+  </ul>
+</header>
+
+<section class="ladder-sec" aria-label="The six levels">
+  <div class="ladder" id="ladder" role="group" aria-label="Select a level to read its definition">
+    <button class="step s0" data-l="0" aria-pressed="false"><span class="lnum">L0</span><span class="lname">Bystander</span></button>
+    <button class="step s1" data-l="1" aria-pressed="false"><span class="lnum">L1</span><span class="lname">Conversationalist</span></button>
+    <button class="step s2" data-l="2" aria-pressed="true"><span class="lnum">L2</span><span class="lname">Operator</span></button>
+    <button class="step s3" data-l="3" aria-pressed="false"><span class="lnum">L3</span><span class="lname">Delegator</span></button>
+    <button class="step s4" data-l="4" aria-pressed="false"><span class="lnum">L4</span><span class="lname">Orchestrator</span></button>
+    <button class="step s5" data-l="5" aria-pressed="false"><span class="lnum">L5</span><span class="lname">Multiplier</span></button>
+  </div>
+  <div class="baseline"></div>
+  <div class="step-detail" id="stepDetail" aria-live="polite"></div>
+
+  <div class="notes">
+    <div class="note">
+      <h3>Verification is the level-gate</h3>
+      <p>Juniors adopt AI fastest and judge its output worst; experts extract more because they can evaluate. A model keyed on usage alone ranks the confident non-verifier above the careful evaluator — backwards.</p>
+      <span class="cite"><a href="#src-9">Mollick 2026</a> · <a href="#src-12">Kiron &amp; Schrage 2026</a> · <a href="#src-13">Brynjolfsson 2026</a></span>
+    </div>
+    <div class="note">
+      <h3>Fluency is learnable — and visible</h3>
+      <p>Experienced users delegate less blindly, iterate and validate more, match model to task, and succeed +4 pp more on the same tasks. The behaviours below are the ones that move.</p>
+      <span class="cite"><a href="#src-4">Anthropic Economic Index 5, 2026</a></span>
+    </div>
+    <div class="note">
+      <h3>Self-report is a biased instrument</h3>
+      <p>Developers measured 19% slower with AI believed they were 20% faster. Answer with what you actually did recently — not with who you'd like to be.</p>
+      <span class="cite"><a href="#src-15">METR RCT 2025</a></span>
+    </div>
+  </div>
+</section>
+
+<section id="assess" aria-label="Self-assessment">
+  <h2>Locate yourself</h2>
+  <p class="sec-intro">Twelve questions, two per dimension. Pick the statement closest to your <em>recent, observable</em> behaviour — last month, not best month.</p>
+  <div id="instrument"></div>
+</section>
+
+<div class="progress">
+  <div class="progress-inner">
+    <span class="pcount" id="pcount">0/12</span>
+    <span class="pbar"><i id="pfill"></i></span>
+    <button class="primary" id="computeBtn" disabled>Read your result</button>
+  </div>
+</div>
+
+<section id="results" aria-label="Your result">
+  <h2>Your reading</h2>
+  <div class="res-grid">
+    <div class="panel gauge-panel">
+      <div class="gauge-wrap">
+        <svg viewBox="0 0 300 172" role="img" aria-label="Altimeter gauge showing your overall level" id="gaugeSvg">
+          <g id="gaugeArcs"></g>
+          <g id="gaugeTicks"></g>
+          <g class="needle" id="needle" transform="rotate(-90 150 150)">
+            <path d="M150 44 L145 150 L155 150 Z" fill="currentColor"></path>
+            <circle cx="150" cy="150" r="7" fill="currentColor"></circle>
+          </g>
+        </svg>
+      </div>
+      <div class="gauge-num" id="gNum">–</div>
+      <div class="gauge-name" id="gName">–</div>
+      <div class="gauge-sub" id="gSub"></div>
+    </div>
+    <div class="panel profile">
+      <h3>Dimension profile</h3>
+      <p class="hint">Jagged is normal — the low bars are the information.</p>
+      <div class="rows" id="profileRows"></div>
+      <div class="gate" id="gate">
+        <h3>Scale without verification is regression</h3>
+        <p id="gateText"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel actions-panel" style="margin-top:16px">
+    <h3>Reaching the next level</h3>
+    <p class="hint" style="font-size:13.5px;color:var(--ink-3);margin:0">One move per dimension, ordered lowest-first — start where you are weakest.</p>
+    <div class="actions" id="actionCards"></div>
+    <div class="caveat"><strong>Calibration caveat.</strong> This is a self-report instrument, and the best-measured perception gap in the field is 39 points wide (felt +20% faster, measured −19%). Before acting on your level, check it against output: shipped work, review records, time logs.</div>
+    <div class="res-buttons">
+      <button class="ghost" id="restartBtn">Start over</button>
+      <button class="ghost" id="copyBtn">Copy result as text</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <h2 class="disp">Sources</h2>
+  <p class="sec-intro" style="font-size:14px">Distilled from the <span class="mono">ai-wiki</span> synthesis <span class="mono">ai-worker-maturity-levels</span> (16 sources, filed 2026-08-31). Key primaries:</p>
+  <ol class="srcs">
+    <li id="src-1"><a href="https://www.oreilly.com/radar/steve-yegge-wants-you-to-stop-looking-at-your-code/">Yegge / O'Reilly — Eight Stages of AI-assisted development (Mar 2026)</a></li>
+    <li id="src-2"><a href="https://www.youtube.com/watch?v=fFOLWoHyWLE">Beutler / OpenAI — Ask → Assist → Automate (Enterprise AI Summit 2026)</a></li>
+    <li id="src-3">Randell &amp; Gousset / Microsoft — in / on / out of the loop (Agentic DevOps, Dec 2025)</li>
+    <li id="src-4"><a href="https://www.anthropic.com/research/economic-index-march-2026-report">Anthropic Economic Index 5 — Learning curves (Mar 2026)</a></li>
+    <li id="src-5"><a href="https://youtu.be/96jN2OCOfLs">Karpathy — vibe coding → agentic engineering (Sequoia AI Ascent 2026)</a></li>
+    <li id="src-6"><a href="https://www.youtube.com/watch?v=OJLMClRrUv4">Forsgren &amp; Macvean / Google — five patterns; "delegate tasks, not judgment" (I/O 2026)</a></li>
+    <li id="src-7"><a href="https://hbr.org/2026/06/to-thrive-alongside-ai-focus-on-mindset-not-skillset">Argenti / Goldman Sachs — operator → supervisor → mentor (HBR, Jun 2026)</a></li>
+    <li id="src-8"><a href="https://www.youtube.com/watch?v=zPfxlcVpFgs">Carson / How I AI — managing 15 agents, and the judgment ceiling (Aug 2026)</a></li>
+    <li id="src-9"><a href="https://www.youtube.com/watch?v=9YMYVb1ASCg">Mollick — evaluation capacity, the $20 decision, jagged frontier (Jun 2026)</a></li>
+    <li id="src-10"><a href="https://www.youtube.com/watch?v=t0GiTyz4syY">Stone / Netflix — AI fluency as a universal career expectation (Jul 2026)</a></li>
+    <li id="src-11">Ransbotham et al. / MIT SMR × BCG — Augmented Learners 2×2 (2024)</li>
+    <li id="src-12">Kiron &amp; Schrage / MIT SMR — the expert as evaluator (2026)</li>
+    <li id="src-13"><a href="https://www.youtube.com/watch?v=u76xdhpF474">Brynjolfsson — "CEO of their own little entity"; evaluation as the thriving skill (Aug 2026)</a></li>
+    <li id="src-14">Brown / WEF–PwC — human-skills demand growing 2× (Jul 2026)</li>
+    <li id="src-15"><a href="https://arxiv.org/abs/2507.09089">METR — experienced developers 19% slower, felt 20% faster (2025)</a></li>
+    <li id="src-16">Böckeler / Thoughtworks — the practical limits of parallel agents (2026)</li>
+  </ol>
+  <p class="colophon">AI Worker Maturity · built 2026-08-31 from the ai-wiki corpus (businessdatasolutions/ai-wiki)<br>Not a validated psychometric instrument — a cited, structured mirror. Answers never leave this browser.</p>
+</footer>
+
+</div><!-- /wrap -->
+
+<script>
+(function(){
+"use strict";
+
+/* ---------------- model data ---------------- */
+var LEVELS=[
+ {n:"Bystander", d:"No meaningful AI use; the work is unchanged. Not a character flaw — a starting point, and the shortest level to leave.",
+  a:"Yegge stage 1 · pre-Ask"},
+ {n:"Conversationalist", d:"Chat Q&A, drafts and summaries in directive, one-shot prompts; output mostly accepted at face value. Where nearly everyone starts — and where value stalls if verification never arrives.",
+  a:"Yegge 1–2 · Beutler Ask · AEI low-tenure profile (38% directive)"},
+ {n:"Operator", d:"Daily augmentation: iterates instead of one-shotting, supplies context, picks the stronger model when the task warrants it, verifies before anything leaves the desk; builds a personal prompt kit.",
+  a:"AEI high-tenure behaviours · Mollick's playbook · Beutler Assist"},
+ {n:"Delegator", d:"Hands complete tasks to agents against explicit specs and acceptance criteria; reviews everything that ships; moves from in-the-loop to on-the-loop; keeps a tested map of where AI breaks in the domain.",
+  a:"Yegge 3–5 · Beutler Automate (entry) · Argenti operator→supervisor · Karpathy spec-first"},
+ {n:"Orchestrator", d:"Several agents or workflows run in parallel; steering lives in the environment — rules files, playbooks, eval checks — not in each run. Queue machine-side, priorities human-side.",
+  a:"Yegge 6–7 · Carson's 10–15 threads · Forsgren & Macvean: designing environments"},
+ {n:"Multiplier", d:"Builds the systems others work in — orchestrators, evals, paved paths, playbooks — and codifies learning back into the organization. Redesigns workflows, not tasks; mentors the levels below.",
+  a:"Yegge 8 · Beutler's AI-agent-manager · Brynjolfsson's fleet-CEO · scientific mindset"}
+];
+
+var DIMS=[
+ {k:"tool", name:"Tooling & habit", sub:"what you use, and how routinely"},
+ {k:"del",  name:"Delegation & autonomy", sub:"the size of work you hand over"},
+ {k:"ver",  name:"Verification & evaluation", sub:"what happens before output ships"},
+ {k:"env",  name:"Context & environment design", sub:"what the AI gets besides the request"},
+ {k:"scope",name:"Scope & judgment", sub:"the altitude you personally own"},
+ {k:"learn",name:"Learning & compounding", sub:"whether practice accumulates"}
+];
+
+/* 12 questions: dim index, prompt, six options (L0..L5) */
+var QS=[
+ [0,"How often did you use an AI model for real work in the past two weeks?",[
+  "Not at all","A few times, when something reminded me","Most working days",
+  "Daily — it's in my default workflow","Daily, and agents also run while I'm elsewhere",
+  "Continuously — my team's work runs through setups I maintain"]],
+ [0,"What do you reach for?",[
+  "I don't have a go-to tool","Whatever free chat is at hand, default settings",
+  "A paid frontier model — and I switch to the stronger “thinking” model when the task warrants it",
+  "Chat plus an agentic tool (coding / computer-use agent), chosen per task",
+  "A tuned setup: agentic tools with my own configs, rules and templates",
+  "A stack I assembled for others — shared configs, playbooks, paved paths"]],
+ [1,"The biggest unit of work you handed to AI last month:",[
+  "Nothing","A question to answer, or a paragraph to draft",
+  "Sections of a deliverable I assembled myself",
+  "A complete task — document, analysis, feature — against my instructions",
+  "A recurring workflow that runs with my review at checkpoints",
+  "A portfolio of standing workflows; I handle the exceptions"]],
+ [1,"While AI works on something of yours, where are you?",[
+  "It doesn't work on things of mine","Watching every word as it generates",
+  "In the loop — steering each step as we go",
+  "On the loop — it works, I review at milestones",
+  "Running several streams in parallel, triaging a queue",
+  "Out of the loop for routine cases; exceptions route to me by design"]],
+ [2,"What happens to AI output before it leaves your desk?",[
+  "There is no AI output on my desk","If it reads well, I mostly trust it",
+  "I spot-check facts, numbers and names, and fix the obvious",
+  "I review everything against acceptance criteria I set beforehand",
+  "Structured checks — checklists, tests, golden examples — for repeated work",
+  "Standing eval suites and quality gates that also catch other people's agent output"]],
+ [2,"When AI is confidently wrong in your domain, how do you catch it?",[
+  "I wouldn't","I usually find out later — sometimes from others",
+  "Experience — I can smell when something is off",
+  "I keep a tested map of where it fails in my domain and probe those spots",
+  "I deliberately stress-test output: critic prompts, counter-checks, a second model",
+  "Known failure modes are encoded into checks that others use too"]],
+ [3,"What does the AI get from you besides the request?",[
+  "Nothing — I don't use it yet","The question, as it comes to mind",
+  "Context: background, examples, constraints, tone",
+  "A written brief or spec with acceptance criteria",
+  "Standing context — rules files, project instructions, templates it always gets",
+  "A shared environment — team rules, playbooks, connectors others rely on"]],
+ [3,"When AI output disappoints, what changes afterwards?",[
+  "Nothing — I haven't been there","I stop using it for that kind of task",
+  "I rephrase and try again until it lands",
+  "I fix my brief or spec so that failure can't recur",
+  "I update my rules file or playbook — every failure ratchets the setup",
+  "I fix the shared system (often the eval too) so nobody hits it again"]],
+ [4,"What do you personally still own end-to-end?",[
+  "Everything — AI owns nothing","Everything except some phrasing help",
+  "The work itself; AI owns fragments I weave in",
+  "The what and the why — specs and decisions; AI owns much of the how",
+  "Priorities, architecture and quality bars across parallel streams",
+  "The system design — and the call on what is worth building at all"]],
+ [4,"How well do you know where AI breaks in your domain?",[
+  "No idea","I assume — it can't do the hard parts, or it can do everything; untested either way",
+  "I know a few tasks it is reliably good at",
+  "I hold a current, tested map of where it is strong and where it breaks",
+  "I re-test that map at every model release and route work accordingly",
+  "I teach that map — my routing shapes how others deploy it"]],
+ [5,"How do you get better at this?",[
+  "I don't","I pick things up when they cross my feed",
+  "I try new tools and features when I hear about them",
+  "I run deliberate experiments on my own work",
+  "Weekly experiments, with notes — wins become part of my setup",
+  "My experiments become team assets: playbooks, demos, training"]],
+ [5,"Who learns from your AI practice?",[
+  "Nobody — including me","Me, occasionally","Me, steadily",
+  "Me, plus colleagues who ask","My team — I share what works, proactively",
+  "The organization — I mentor, run enablement, set the standard"]]
+];
+
+/* actions[dim][fromLevel] -> {t: text, c: cite html} */
+var ACTS=[
+ [
+  {t:"Open a frontier chat model and ask it three real questions from this week's work. No course, no setup — usage is where adoption starts.",c:'<a href="#src-9">Mollick</a>'},
+  {t:"Make the $20 decision: a paid frontier model, and actively select the strongest “thinking” model instead of the default. Then hand it tasks that feel too hard.",c:'<a href="#src-9">Mollick</a>'},
+  {t:"Add an agentic tool to the kit — a coding or computer-use agent — and route one task per day through it end-to-end.",c:'<a href="#src-1">Yegge</a>'},
+  {t:"Invest in your setup like it's craft: custom instructions, project templates, saved workflows. Tool mastery is the discipline's core skill, not a convenience.",c:'<a href="#src-5">Karpathy</a>'},
+  {t:"Turn your setup into the team's paved path — shared configs and templates a colleague can adopt in an afternoon.",c:'<a href="#src-10">Stone / Netflix</a> · <a href="#src-2">Beutler</a>'}
+ ],
+ [
+  {t:"Hand AI the smallest possible delegation today: a paragraph to draft, a question to answer.",c:'<a href="#src-2">Beutler — Ask</a>'},
+  {t:"Stop one-shotting. Brief it, iterate on its answer, and weave the sections into work you still own — iteration is the measured signature of users who succeed more.",c:'<a href="#src-4">AEI 5</a>'},
+  {t:"Pick one recurring task and delegate it completely against written instructions; review every output. Delegate tasks, not judgment.",c:'<a href="#src-6">Forsgren &amp; Macvean</a>'},
+  {t:"Run two or three delegated streams in parallel and manage the queue, not the keystrokes — priorities stay human-side, on paper if it helps.",c:'<a href="#src-8">Carson</a> · <a href="#src-1">Yegge 6</a>'},
+  {t:"Move whole workflows to standing agents with exception routing. Your job becomes the portfolio, not the pipeline.",c:'<a href="#src-2">Beutler — Automate</a> · <a href="#src-13">Brynjolfsson</a>'}
+ ],
+ [
+  {t:"Take one AI answer and read it against a source you trust; note where it bent the truth. Calibration starts with a single check.",c:'<a href="#src-9">Mollick</a>'},
+  {t:"Make spot-checks routine — facts, numbers, names — and ask the model to critique its own answer before you accept it. It is a sycophant until told otherwise.",c:'<a href="#src-9">Mollick</a>'},
+  {t:"Write acceptance criteria before the request, and review against them rather than against how good it reads.",c:'<a href="#src-5">Karpathy</a> · <a href="#src-7">Argenti</a>'},
+  {t:"Build small evals for repeated work: a checklist, golden examples, a second-model cross-check. Obsess over what “good” means, in writing.",c:'<a href="#src-7">Argenti</a>'},
+  {t:"Encode your checks as gates other people's work passes through. The expert-as-evaluator is not a transitional role — it is the durable one.",c:'<a href="#src-12">Kiron &amp; Schrage</a>'}
+ ],
+ [
+  {t:"Give the AI one sentence of context with your next question: role, audience, constraint.",c:'<a href="#src-9">Mollick</a>'},
+  {t:"Build a personal prompt kit — context blocks, examples, a style guide distilled from your own writing — and reuse it.",c:'<a href="#src-9">Mollick</a>'},
+  {t:"Write specs, not prompts: a short brief with goal, constraints, and acceptance criteria that the agent implements against.",c:'<a href="#src-5">Karpathy</a>'},
+  {t:"Keep a rules file that ratchets: every failure becomes a line, every line traceable to something that actually went wrong.",c:'<a href="#src-6">Forsgren &amp; Macvean</a>'},
+  {t:"Publish the playbook — team rules files, skills, connectors others rely on. The environment becomes infrastructure.",c:'<a href="#src-2">Beutler</a>'}
+ ],
+ [
+  {t:"List three tasks in your week AI plausibly touches. Try the smallest one today.",c:'<a href="#src-9">Mollick</a>'},
+  {t:"Find the few spots where AI is genuinely strong in your domain, and use it there deliberately rather than everywhere vaguely.",c:'<a href="#src-9">Mollick</a>'},
+  {t:"Map your jagged frontier: deliberately probe where AI breaks in your domain, and write the map down. Untested assumptions are the expensive kind.",c:'<a href="#src-9">Mollick</a>'},
+  {t:"Operate one altitude higher: own the why, priorities and quality bars while agents own execution — and re-test your map at each model release.",c:'<a href="#src-6">Forsgren &amp; Macvean</a>'},
+  {t:"Spend your judgment on what is worth building at all — no model supplies that — and teach your routing map to others.",c:'<a href="#src-8">Carson</a>'}
+ ],
+ [
+  {t:"Follow one practitioner source, and try one thing from it this week.",c:'<a href="#src-9">Mollick</a>'},
+  {t:"Block 30 minutes a week to experiment on your own work: a new tool, a harder delegation, a different workflow.",c:'<a href="#src-10">Stone / Netflix</a>'},
+  {t:"Keep notes on what worked, failed, and changed in your setup. Random exploration without capture is not a method.",c:'<a href="#src-6">Forsgren &amp; Macvean</a>'},
+  {t:"Fold every win into your standing setup — rules, templates, evals — so learning compounds instead of evaporating.",c:'<a href="#src-11">Ransbotham et al.</a>'},
+  {t:"Teach it: run a demo, mentor a colleague one level behind you, publish the playbook. Mentors all the way down.",c:'<a href="#src-1">Yegge</a>'}
+ ]
+];
+
+var LKEY="awmm-v1";
+var answers={}; // qIndex -> 0..5
+
+/* ---------------- storage (best effort) ---------------- */
+function loadState(){ try{ var s=localStorage.getItem(LKEY); if(s){ answers=JSON.parse(s)||{}; } }catch(e){ answers={}; } }
+function saveState(){ try{ localStorage.setItem(LKEY, JSON.stringify(answers)); }catch(e){} }
+function clearState(){ try{ localStorage.removeItem(LKEY); }catch(e){} }
+
+/* ---------------- ladder ---------------- */
+var detail=document.getElementById("stepDetail");
+var steps=Array.prototype.slice.call(document.querySelectorAll(".step"));
+function levelChipStyle(l){ return "background:var(--l"+l+");color:var(--l"+l+"-ink)"; }
+function selectLevel(l){
+  steps.forEach(function(b){ b.setAttribute("aria-pressed", String(+b.dataset.l===l)); });
+  var lv=LEVELS[l];
+  detail.innerHTML =
+    '<div class="dt-head"><span class="dt-chip" style="'+levelChipStyle(l)+'">L'+l+'</span><h3>'+lv.n+'</h3></div>'+
+    '<p>'+lv.d+'</p><div class="dt-anchors">Anchors — '+lv.a+'</div>';
+}
+steps.forEach(function(b){ b.addEventListener("click",function(){ selectLevel(+b.dataset.l); }); });
+selectLevel(2);
+
+/* ---------------- instrument ---------------- */
+var mount=document.getElementById("instrument");
+var html="";
+for(var d=0; d<DIMS.length; d++){
+  html+='<div class="dim"><div class="dim-head"><span class="dnum">D'+(d+1)+'/6</span><h3>'+DIMS[d].name+'</h3><span class="dsub">'+DIMS[d].sub+'</span></div>';
+  for(var q=0;q<QS.length;q++){
+    if(QS[q][0]!==d) continue;
+    html+='<fieldset class="q" style="border:none;margin:20px 0 0;padding:0">'+
+      '<legend class="q-label"><span class="qn">Q'+(q+1)+'</span>'+QS[q][1]+'</legend><ul class="opts">';
+    for(var o=0;o<6;o++){
+      var id="q"+q+"o"+o;
+      html+='<li class="opt"><input type="radio" name="q'+q+'" id="'+id+'" value="'+o+'">'+
+        '<label for="'+id+'"><span class="tag">L'+o+'</span><span>'+QS[q][2][o]+'</span></label></li>';
+    }
+    html+='</ul></fieldset>';
+  }
+  html+='</div>';
+}
+mount.innerHTML=html;
+
+var pcount=document.getElementById("pcount"), pfill=document.getElementById("pfill"), computeBtn=document.getElementById("computeBtn");
+function answeredCount(){ var n=0; for(var i=0;i<12;i++) if(answers[i]!=null) n++; return n; }
+function refreshProgress(){
+  var n=answeredCount();
+  pcount.textContent=n+"/12";
+  pfill.style.width=(n/12*100)+"%";
+  computeBtn.disabled = n<12;
+}
+mount.addEventListener("change",function(ev){
+  var t=ev.target;
+  if(t && t.name && t.name.charAt(0)==="q"){
+    answers[+t.name.slice(1)]=+t.value;
+    saveState(); refreshProgress();
+  }
+});
+
+/* restore */
+loadState();
+for(var i=0;i<12;i++){
+  if(answers[i]!=null){
+    var el=document.getElementById("q"+i+"o"+answers[i]);
+    if(el) el.checked=true;
+  }
+}
+refreshProgress();
+
+/* show the progress pill only while the assessment is on screen */
+(function(){
+  var prog=document.querySelector(".progress"), assess=document.getElementById("assess");
+  if(!("IntersectionObserver" in window)){ prog.classList.add("vis"); return; }
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ prog.classList.toggle("vis", e.isIntersecting); });
+  },{rootMargin:"0px 0px -80px 0px"});
+  io.observe(assess);
+})();
+
+/* ---------------- gauge ---------------- */
+function polar(cx,cy,r,deg){ var a=(deg-180)*Math.PI/180; return [cx+r*Math.cos(a), cy+r*Math.sin(a)]; }
+function arcPath(cx,cy,r,a0,a1){
+  var p0=polar(cx,cy,r,a0), p1=polar(cx,cy,r,a1);
+  return "M"+p0[0].toFixed(2)+" "+p0[1].toFixed(2)+" A"+r+" "+r+" 0 0 1 "+p1[0].toFixed(2)+" "+p1[1].toFixed(2);
+}
+(function buildGauge(){
+  var arcs=document.getElementById("gaugeArcs"), ticks=document.getElementById("gaugeTicks");
+  var seg="", tk="";
+  for(var l=0;l<6;l++){
+    var a0=l*30+1.2, a1=(l+1)*30-1.2;
+    seg+='<path d="'+arcPath(150,150,120,a0,a1)+'" stroke="var(--l'+l+')" stroke-width="26" fill="none" stroke-linecap="butt"></path>';
+    var mid=polar(150,150,90,(l*30+((l+1)*30))/2);
+    tk+='<text x="'+mid[0].toFixed(1)+'" y="'+(mid[1]+4).toFixed(1)+'" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="var(--ink-3)">'+l+'</text>';
+  }
+  arcs.innerHTML=seg; ticks.innerHTML=tk;
+})();
+
+/* ---------------- results ---------------- */
+var results=document.getElementById("results");
+function dimScores(){
+  var s=[0,0,0,0,0,0];
+  for(var q=0;q<12;q++){ s[QS[q][0]] += (answers[q]||0); }
+  return s.map(function(x){ return x/2; });
+}
+function fmt(x){ return (Math.round(x*10)/10).toFixed(1); }
+
+function compute(){
+  var ds=dimScores();
+  var overall=ds.reduce(function(a,b){return a+b;},0)/6;
+  var lvl=Math.min(5,Math.floor(overall));
+  var prog=Math.round((overall-lvl)*100);
+
+  document.getElementById("gNum").textContent=fmt(overall);
+  document.getElementById("gName").textContent="L"+lvl+" · "+LEVELS[lvl].n;
+  document.getElementById("gSub").textContent = lvl>=5
+    ? "At the summit the constraint is judgment about what to ship — hold it."
+    : prog+"% of the way to L"+(lvl+1)+" "+LEVELS[lvl+1].n+".";
+  document.getElementById("needle").setAttribute("transform","rotate("+((overall/5*180)-90)+" 150 150)");
+
+  /* profile bars */
+  var rows="";
+  for(var d=0;d<6;d++){
+    var dl=Math.min(5,Math.floor(ds[d]));
+    rows+='<div class="row"><span class="rlabel">'+DIMS[d].name+'</span>'+
+      '<span class="track"><span class="fill" style="width:'+(ds[d]/5*100)+'%"></span></span>'+
+      '<span class="rval">'+fmt(ds[d])+'</span></div>';
+  }
+  document.getElementById("profileRows").innerHTML=rows;
+
+  /* verification gate */
+  var gate=document.getElementById("gate");
+  var over = ds[1]-ds[2]; // delegation minus verification
+  if(over>=1.5 || (overall>=3 && ds[2]<=1.5)){
+    gate.classList.add("on");
+    document.getElementById("gateText").innerHTML=
+      "Your delegation ("+fmt(ds[1])+") runs well ahead of your verification ("+fmt(ds[2])+"). "+
+      "The corpus is blunt about this pattern: output multiples don't buy quality multiples, and unreviewed scale compounds errors instead of value. "+
+      "Treat the verification actions below as first priority. <span class=\"cite\"><a href=\"#src-8\">Carson</a> · <a href=\"#src-16\">Böckeler</a> · <a href=\"#src-15\">METR</a></span>";
+  } else {
+    gate.classList.remove("on");
+  }
+
+  /* action cards, lowest dimension first */
+  var order=[0,1,2,3,4,5].sort(function(a,b){ return ds[a]-ds[b] || a-b; });
+  var cards="";
+  for(var j=0;j<order.length;j++){
+    var d2=order[j], from=Math.min(5,Math.floor(ds[d2]));
+    var move = from>=5 ? '<span class="a-move summit">at L5 — maintain</span>'
+                       : '<span class="a-move">L'+from+' → L'+(from+1)+'</span>';
+    var act = from>=5
+      ? {t:"You are carrying this dimension for others. Keep the ratchet honest: retire stale rules, re-test the map at each model release, and mentor one level down.",c:'<a href="#src-1">Yegge</a>'}
+      : ACTS[d2][from];
+    cards+='<div class="action">'+(j===0?'<span class="first">Start here</span>':'')+
+      '<div class="a-head"><span class="a-dim">'+DIMS[d2].name+'</span>'+move+'</div>'+
+      '<p>'+act.t+'</p><span class="cite">'+act.c+'</span></div>';
+  }
+  document.getElementById("actionCards").innerHTML=cards;
+
+  results.classList.add("on");
+  selectLevel(lvl);
+  results.scrollIntoView({behavior:"smooth", block:"start"});
+}
+computeBtn.addEventListener("click",compute);
+
+/* restart + copy */
+document.getElementById("restartBtn").addEventListener("click",function(){
+  answers={}; clearState();
+  var ins=mount.querySelectorAll("input[type=radio]");
+  for(var i=0;i<ins.length;i++) ins[i].checked=false;
+  results.classList.remove("on"); refreshProgress(); selectLevel(2);
+  document.getElementById("assess").scrollIntoView({behavior:"smooth"});
+});
+document.getElementById("copyBtn").addEventListener("click",function(){
+  var ds=dimScores(), overall=ds.reduce(function(a,b){return a+b;},0)/6, lvl=Math.min(5,Math.floor(overall));
+  var lines=["AI Worker Maturity — self-assessment ("+new Date().toISOString().slice(0,10)+")",
+    "Overall: "+fmt(overall)+" / 5 — L"+lvl+" "+LEVELS[lvl].n,""];
+  for(var d=0;d<6;d++) lines.push(DIMS[d].name+": "+fmt(ds[d]));
+  lines.push("","Caveat: self-report; verify against output (METR gap: felt +20%, measured −19%).");
+  var txt=lines.join("\n");
+  function done(ok){ var b=document.getElementById("copyBtn"); b.textContent= ok?"Copied":"Copy failed — select manually"; setTimeout(function(){b.textContent="Copy result as text";},1800); }
+  if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(function(){done(true);},function(){done(false);}); }
+  else done(false);
+});
+
+/* if returning with a complete set, offer results directly */
+if(answeredCount()===12){ compute(); }
+})();
+</script>
+</body>
+</html>
