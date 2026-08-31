@@ -3,9 +3,9 @@ type: concept
 aliases: ["agentic engineering", "Agentic Engineering", "agentic-engineering", "agent engineering"]
 tags: [agentic-engineering, vibe-coding, software-3.0, ai-agents, agent-harness, software-engineering, hiring, karpathy, codex-case-study]
 confidence: 0.97
-last_confirmed: "2026-08-30"
+last_confirmed: "2026-08-31"
 accessed_at: "2026-08-31"
-source_count: 51
+source_count: 52
 relationships:
   - type: depends-on
     target: agent-harness
@@ -206,6 +206,19 @@ Vo's deliberate de-hyping — *"don't worry if you are not loop-maxing… I stil
 ## Convergent-evolution of a skills framework, ahead of the vendor ([[2026-06-08-vincent-coderabbit-fixing-ai-slop-managing-agents-like-mit-interns|Vincent / CodeRabbit, June 2026]])
 
 [[2026-06-08-vincent-coderabbit-fixing-ai-slop-managing-agents-like-mit-interns|Jesse Vincent]] built **Superpowers** — a brainstorm-before-code discipline plus reusable, packaged "skills" for agentic coding — independently, before Anthropic's own Skills framework shipped. The wiki's full harness-architecture treatment (Coordinator/Coder/Reviewer separation, adversarial review, "latent space engineering") lives on [[agent-harness]]; this page's relevant contribution is narrower: a practitioner forcing a structured planning/brainstorm phase before any code generation, arrived at from an engineering-management background rather than a systems-engineering one, and reaching some of the same structural conclusions (skill packaging, spec-first discipline) the wider agentic-engineering field converged on around the same time. Per [Lifecycle rules](../../CLAUDE.md#lifecycle) this single-source practitioner account does not lift the page's confidence; its value is a convergent-evolution data point on spec-first discipline.
+
+## Agentic engineering without the engineering: skills mined from friction ([[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum / How I AI, August 2026]])
+
+The discipline's practices — skills, plugins, connectors, scheduled tasks, telemetry — appear here in the hands of a product manager who writes no code, which is a useful test of how much of agentic engineering is *engineering* and how much is *systems thinking*.
+
+Two of [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum]]'s practices are more disciplined than much of what the corpus documents from engineers:
+
+- **Telemetry built into skills.** Every skill and recurring task carries instructions to **log friction during use**; a weekly task then surfaces the top frictions and proposes fixes. The human never files a bug. [[Claire Vo]] flags this as the episode's most transferable idea and says she has not seen an individual do it: "build in feedback or telemetry into your skills and then review that over time."
+- **Skills discovered rather than specified.** A weekly loop watches for repeated actions and proposes turning them into skills — "many of my skills actually ended up being from this flow." This inverts the usual authoring order and matches the convergent skills-framework pattern already recorded from [[2026-06-08-vincent-coderabbit-fixing-ai-slop-managing-agents-like-mit-interns|Vincent / CodeRabbit]], reached independently and by a non-engineer.
+
+A third practice targets a gap the discipline rarely names: **learning from the human's edits.** Claude writes a draft, the human silently rewrites and sends something else, and the delta is lost — "Claude doesn't learn what the gap is between the draft that it wrote and what I actually sent." His loop closes it by finding unanswered drafts, checking what was sent instead, and learning from the difference. The signal is *indirect* — no thumbs-up, no correction prompt, just behaviour.
+
+The distribution lesson belongs here too. Melio's **Workstation** plugin was deliberately built on Cowork rather than [[Claude Code]] because PMs attempting the terminal route spent "3 days to install everything and run all the dependencies." Onboarding runs in chat: connect tools, confirm role, map colleagues and management, read calendar and Slack, capture goals, calibrate writing voice — about 15 minutes. The precedent behind that choice is his own earlier failure: a spec-writing gem he thought was finished until he watched colleagues struggle with it live, because "it was completely adjusted to how I work." **The scaling constraint on agentic engineering inside a company is onboarding UX, not capability** — a claim this page has implied through the [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|operating-model]] sources but never stated this directly.
 
 ## Debates and supersession
 

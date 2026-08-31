@@ -74,12 +74,29 @@ This contextualizes the AI maturity numbers. If only 12% of *general* transforma
 
 The four "success rate" numbers (1% / 7% / 12% / 13%) span a single order of magnitude despite radically different instruments — which is itself useful information: **whatever you call success, it's rare.**
 
+### A different unit of analysis: the individual worker (added 2026-08-31)
+
+Every instrument above measures the **firm**. [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum / How I AI (Aug 2026)]] raises a question the thread had not asked: *is the worker a separate unit of analysis, and does it have its own maturity ladder?*
+
+Blum narrates a full individual trajectory rather than an end state — bound to whatever tools the company bought → improving isolated artifacts with Gemini Gems → centralising work into one harness → the agent maintaining his system of record → the agent maintaining its own *context* → the agent proposing improvements to the system → packaging the system for colleagues. Unlike the firm-level stages, each transition has an **observable marker**: the share of screen time inside the harness (his: 70–80%), whether the agent writes to the system of record or only reads, whether the agent detects its own context gaps unprompted, whether the system proposes its own improvements, and whether it has been distributed to anyone else.
+
+Why this matters for the thread's question:
+
+- **It may explain part of the 1%–13% spread.** Firm-level instruments count tools, budgets, and self-reported effectiveness. If maturity actually accrues to *individuals* first and only later to firms — Blum's system existed long before Workstation made it company infrastructure — then firm instruments would systematically under-observe early maturity and over-observe procurement.
+- **It sharpens the CISR Stage 2→3 inflection.** CISR locates the greatest financial impact in moving Stage 2 (pilots) → Stage 3 (ways of working). "Ways of working" is precisely what Blum describes changing, and he supplies a candidate mechanism the firm-level data cannot: centralisation → context accumulation → friction reduction. That is a testable account of *why* the inflection sits there.
+- **It supplies the trough the firm-level instruments hide.** Blum is explicit that ROI looks bad first, trust falls, and the human double-checks everything before the compounding starts. A cross-sectional survey cannot distinguish a firm in the trough from a firm whose programme has failed — which may be the single largest source of noise in all four numbers above.
+
+Caveats: N=1, self-reported, unaudited, and selected for having a story worth broadcasting. This does not add a fifth instrument to the cross-walk; it argues the cross-walk is missing an **axis**.
+
+**New question carried by this thread:** does a defensible worker-level maturity scale exist, with observable markers and actions per level — and how does it compose with firm-level stages? (A firm of Stage-4 individuals is not automatically a Stage-4 firm; Blum's Workstation exists precisely to bridge that gap.)
+
 ## What's missing / candidate sources to find
 
 - **Updated CISR Future Ready Survey wave** (post-2022, ideally 2024). If it exists in the wiki later, ingest it to see if Stage distributions shifted.
 - **Other organizational maturity frameworks** — e.g., Gartner's AI maturity model, Deloitte's State of AI in the Enterprise, McKinsey's own "AI high-performer" framing. As of this thread opening, none have been ingested.
 - **A direct MIT Sloan/CISR ↔ AI Index methodology cross-walk** — if anyone has published one. Not yet found.
 - **MITTRI_Cisco** (in `raw/reports/`, not yet ingested) is sponsored MIT Tech Review Insights research, likely to introduce a third framing. Will surface in the next ingest.
+- **A worker-level maturity instrument.** Nothing in the corpus measures individual AI maturity with defined levels and transition criteria. Candidates to look for: capability frameworks from L&D/HR research, digital-literacy scales adapted to AI, or vendor "AI fluency" rubrics. Until one exists, the worker axis above rests on a single narrated case.
 - **HBR Anand-Wu Gen AI Playbook** (in `raw/articles/`, not yet ingested). Authors are at NYU Stern / HBS — different academic lineage, may have a different framing.
 
 ## How this thread should resolve
@@ -98,5 +115,7 @@ Until then, this thread stays open as a reminder to **always include the instrum
 - [[enterprise-ai-adoption]] — main concept page
 - [[2026-04-28-ai-index-report-2025|AI Index 2025]] — first source
 - [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan article]] — second source
+- [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum / How I AI]] — the worker-level axis
+- [[micro-productivity-trap]] — the J-curve trough that firm-level cross-sections cannot distinguish from failure
 - [[MIT CISR]] — institutional source
 - [[McKinsey & Company]] (dangling) — instrument source for AI Index adoption data

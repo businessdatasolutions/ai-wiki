@@ -3,9 +3,9 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.98
-last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
-source_count: 88
+last_confirmed: "2026-08-31"
+accessed_at: "2026-08-31"
+source_count: 89
 relationships:
   - type: part-of
     target: ai-agents
@@ -748,6 +748,21 @@ Every harness-*evolution* source this page holds optimises **edit generation** �
 - **Localization F1 vs stronger-model reference plans (Opus 4.8 / GPT-5.5).** Codex-vs-Opus symbol **F1 38.3 → 57.1 (+18.8)**, symbol *Wrong* (zero-overlap) **44.4 → 18.5 (−25.9)**; Terminus-2-vs-GPT-5.5 file **F1 76.5 → 89.3 (+12.8)**. **A weaker planner with the handbook matches, at file and symbol granularity, the localization of substantially stronger models** — the paper's RQ2, answered yes.
 
 This connects two threads the page already holds. It is a **second independent data point for *"the representation is the lever"*** — like [[2026-03-26-pan-natural-language-agent-harnesses|Pan et al.'s]] native-code→natural-language harness rewrite (OS-Symphony 30.4% → 47.2%), the gain comes from *reorganising the same information around behavior*, not from a stronger model. And its coding-harness evaluation (Codex, Terminus-2) directly answers [[2026-05-11-karten-zhang-continual-harness-online-adaptation|Karten's]] open question — *"whether the same Refiner architecture works on SWE-bench or Terminal-Bench"* — on the **localization half** of the evolution loop. The wiki's honest caveat: plan quality is **LLM-judged against reference plans**, not measured by whether executed edits land green on the harness's own tests — so the localization gain is demonstrated at *plan* granularity, with executed-and-tested end-to-end still an open experiment.
+
+## The harness as *personal* infrastructure: two design rules from a non-engineer ([[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum / How I AI, August 2026]])
+
+Nearly every harness account in this page is written from the engineering side — production systems, codebases, agent fleets. [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Daniel Blum]], a product manager with no engineering remit, arrives at a **two-property definition of a powerful harness** that is strikingly close to the page's own, reached from the opposite direction and stated in one sentence.
+
+Asked whether the vendor was the unlock, he refuses the framing — "while I love Cowork, it's not Cowork in itself… Codex could be great for this as well" — and names the two properties instead:
+
+1. **The system can rewrite its own core files**, so it keeps improving.
+2. **It has connections and integrations to as much of your ecosystem as possible.**
+
+Property (1) is this page's *repository-as-system-of-record* claim seen from the user side: the harness's durable state is editable files, and an agent that can write them can improve itself without a release cycle. Property (2) is the tool/connector layer of the 4-layer stack. What is notable is the *absence* of everything else — no model choice, no orchestration framework, no eval harness. From the non-engineer's vantage the harness reduces to **mutable memory plus reach**.
+
+He adds a third property in practice that the page has not previously stated as a design pressure: **context is lost at every exit from the harness.** "Anything that I don't do in Cowork, then the context is not as well caught as if I do it through Cowork" — which is why he routes 70–80% of screen time through it. Consolidation is not a preference but the mechanism by which the harness's memory stays current, and it is a real argument against the tool-hopping posture that [[2025-12-01-marily-nika-pms-who-use-ai-will-replace-those-who-dont|Nika]] demonstrated nine months earlier on the same show.
+
+His scheduled tasks also instantiate [[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex|Vo's loop taxonomy]] without having been designed against it — weekly prep and morning brief are cron loops; the self-improvement task is a weekly cron loop whose *input is the harness's own telemetry*. Running Vo's episode through his Improve skill on camera, the verdict was exactly that: he already ran loops, and lacked only her **goal** loops. And his stated blocker for the remaining 20–30% is the long-running-agent problem this page tracks via [[2025-11-26-anthropic-effective-harnesses-long-running-agents|Anthropic]] — everything "still has to happen online," tethered to an open laptop.
 
 ## Related concepts
 

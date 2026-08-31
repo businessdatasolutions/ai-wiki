@@ -4,11 +4,14 @@ kind: venue
 aliases: ["How I AI", "How-I-AI", "How I AI podcast", "howiaipod"]
 tags: [how-i-ai, podcast, claire-vo, ai-product-management, ai-workflows, practitioner-demos, vibe-coding, agent-loops]
 since: 2025
-confidence: 0.8
-last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
-source_count: 5
+confidence: 0.85
+last_confirmed: "2026-08-31"
+accessed_at: "2026-08-31"
+source_count: 6
 relationships:
+  - type: published-by
+    target: 2026-08-31-blum-how-i-ai-claude-cowork-pm-system
+    via: "Daniel Blum (PM, Melio) on the Claude Cowork system running 70–80% of his workday, and the Workstation plugin that ships it to colleagues — Vo hosting (31 Aug 2026)"
   - type: published-by
     target: 2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder
     via: "Ryan Carson (solo founder, Untangle) screen-sharing his 15-concurrent-Devin-agent setup — folder priority queue, Watchdog and Land PR playbooks, and the episode's anti-thesis that more output does not make a better product (24 Aug 2026)"
@@ -30,10 +33,11 @@ relationships:
 
 A **practitioner podcast / YouTube channel** hosted by [[Claire Vo]] ([howiaipod.com](https://www.howiaipod.com/), produced by penname.co) that demonstrates concrete AI workflows for product and engineering audiences. Episodes lean toward *worked examples and live builds* rather than abstract commentary — the show's value to the wiki is the **product-leader / non-engineer altitude** on patterns the engineer-altitude sources document in more technical terms.
 
-The wiki sources from How I AI span its range: a **guest worked-example** (Marily Nika on the AI-enhanced PM toolkit), a **host explainer** (Vo on agent loops), and a **technical guest deep-dive** (Brian Grinstead on Mozilla's agentic security-bug harness). All translate engineer practice — vibe-coding tools, agent harnesses, self-prompting loops — into legible framings (PRD-as-input; loops as *designing jobs*; harness-as-simple-wrapper).
+The wiki sources from How I AI span its range: a **guest worked-example** (Marily Nika on the AI-enhanced PM toolkit), a **host explainer** (Vo on agent loops), a **technical guest deep-dive** (Brian Grinstead on Mozilla's agentic security-bug harness), two **host and guest builds** on agent fleets and PR review (Vo's Merge Mommy; Ryan Carson's 15 concurrent agents), and a **personal-infrastructure demo** (Daniel Blum on the Cowork system running most of his workday). All translate engineer practice — vibe-coding tools, agent harnesses, self-prompting loops — into legible framings (PRD-as-input; loops as *designing jobs*; harness-as-simple-wrapper).
 
 ## Appears in this wiki via
 
+- [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system]] — guest demo: Daniel Blum's Cowork system — agent-maintained Notion board, a morning brief that asks about company jargon it doesn't know, a weekly self-improvement loop, and the Workstation onboarding plugin for all of Melio.
 - [[2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder]] — returning guest: [[Ryan Carson]] on managing 15 concurrent [[Devin]] agents at [[Untangle]] with a folder queue and a paper priority list, plus the show's most contrarian segment on why more shipped code does not produce a better product.
 - [[2026-08-05-vo-lennys-merge-mommy-ai-code-review-bot]] — host build: **Merge Mommy**, a risk-scoring PR reviewer built in one Codex session, escalating medium and high risk to Slack.
 - [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness]] — guest deep-dive: Brian Grinstead (Mozilla) on the LLM-judge → analyzer → verifier → patch harness behind ~500 Firefox security fixes, and the ~50/50 model-vs-harness split.

@@ -22,6 +22,32 @@ Index updated (Syntheses + Threads bullets); `accessed_at` bumped on [[concepts/
 
 User query answered from the existing corpus and filed per the Query op — answer artifacts are the thread + synthesis above. Retrieval note: run in a **Claude Code remote session** where qmd's vector/rerank models could not download (egress allowlist blocks huggingface.co); the qmd `ai-wiki` collection was registered fresh in-container and queried **BM25-only** (`qmd search`), supplemented by grep sweeps (`maturity | fluency | autonomy | up-level | Gas Town`) and wikilink-following from [[ai-maturity-measurement-comparison]]. The local machine's full hybrid index is unaffected; run `qmd update && qmd embed` locally after pulling to index the two new pages.
 
+## [2026-08-31] ingest | Daniel Blum's Claude Cowork system — the worker-level maturity ladder the corpus was missing
+
+One source, and it fills a hole the wiki has had since [[threads/ai-maturity-measurement-comparison|the maturity-measurement thread]] opened in April: every maturity instrument in the corpus measures the **firm**, and none measures the **worker**.
+
+**Acquire.** [[../raw/videos/i-built-a-claude-cowork-system-that-does-a-week-of-pm-work-in-a-day|raw/videos/i-built-a-claude-cowork-system-that-does-a-week-of-pm-work-in-a-day.md]] via `youtube-transcript-skill`. Two acquire-time defects worth recording because both are **silent** — the file looks well-formed either way:
+
+1. YouTube's accessibility timestamp label ("`1 minute, 3 seconds `") had leaked into the *text* of **340 of 360 segments**. Stripped by regex. This is a new variant of the leakage class already documented in the skill (duplicate segments, all-zero chapter offsets) and should probably be added to its failure-modes list.
+2. Inline "`Chapter N: …`" headings had leaked into segment text. Removed, then re-inserted as proper `##` headings from the `chapters:` metadata.
+
+Also note a diagnosis error of mine that cost three retries: I probed the skill's JSON for a `segments` key when the field is `transcript`, concluded the panel hadn't rendered, and re-ran the fetch three times. The transcript was complete on the first call. Proper nouns were corrected against the channel description as ground truth (Claire Vo, Daniel Blum, Melio, Cowork, Codex, Granola, CLAUDE.md) rather than guessed.
+
+**[[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum / How I AI]]** (~46 min) — a fourth [[How-I-AI|How I AI]] source and the first at *personal-infrastructure* altitude. What it contributes:
+
+- **Two design rules for a powerful system**, stated by a non-engineer and close to this wiki's own [[concepts/agent-harness|agent-harness]] definition reached from the opposite direction: it can **rewrite its own core files**, and it **reaches your whole ecosystem**. Notably vendor-agnostic on the record — "it's not Cowork in itself."
+- **Context is lost at every exit from the harness**, which is why he routes 70–80% of screen time through one tool. Consolidation as mechanism, not preference — and a direct tension with [[2025-12-01-marily-nika-pms-who-use-ai-will-replace-those-who-dont|Nika's tool-hopping]] on the same show nine months earlier. Logged as an open question, not resolved.
+- **Agent-detected context gaps.** The morning brief finds terms it doesn't understand, asks, and writes the answer back to its own context files. This is a direct operational answer to both of [[2026-07-24-turnbaugh-motherduck-context-layers-explained|Turnbaugh's]] objections (knowledge goes uncodified; skills fail because humans forget to invoke them) — the agent notices, and invocation is scheduled.
+- **Telemetry inside skills.** Every skill logs its own friction; a weekly task surfaces the top items and proposes fixes. Vo says she hasn't seen an individual do this. Added to [[concepts/agentic-engineering|agentic-engineering]].
+- **The J-curve from inside.** Added to [[concepts/micro-productivity-trap|micro-productivity-trap]] alongside [[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson's]] theory version. The contribution is the *felt shape* of the trough — trust falls, you double-check everything, and double-checking consumes exactly the time the tool was meant to return.
+
+**Neighbour-source scan** surfaced 5 candidates, all given typed edges (above the ≥3 threshold, so listing them: Vo/loops `supports` 0.9 — with an explicit in-episode citation; Nika/PM-toolkit `supports` 0.8; Turnbaugh/context-layers `supports` 0.8; CS329A/self-improving-agents `supports` 0.7 — held apart deliberately, since Blum's loop never touches a parameter; Anthropic/long-running-harnesses `supports` 0.7 — his stated blocker is cloud residency).
+
+**Pages touched (8):** source page created; [[concepts/agent-harness|agent-harness]] (78→79), [[concepts/agentic-engineering|agentic-engineering]] (43→44), [[concepts/enterprise-ai-adoption|enterprise-ai-adoption]] (102→103), [[concepts/micro-productivity-trap|micro-productivity-trap]] (48→49), [[How-I-AI|How I AI]] (3→4), [[Claire Vo]] (3→4), [[threads/ai-maturity-measurement-comparison|maturity thread]] (new worker-level axis + a new open question), plus `index.md`.
+
+**Honest scoping.** N=1, self-reported, unaudited, and selected for being broadcast-worthy. The "week in a day" figure is anecdote and is flagged as such on every page that carries it. The demo is visual and the transcript narrates rather than shows it, so every system detail is *as narrated*, not *as observed*. It also sits **inside** the return-gap puzzle that [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey]] and [[2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company|BBC AI Decoded]] document rather than resolving it — vivid individual gains alongside flat aggregate productivity is the thing needing explanation.
+## [2026-08-30] ingest | The agentic-software-engineering evidence base — 24 sources on fleet management, reward hacking, agentic PRs, code quality, and agent governance
+
 The largest single ingest in the wiki's history: **24 source pages, 7 new concepts, 11 new entities**, from a 28-item reading list. The corpus previously held the *practitioner* account of agentic engineering almost entirely — vendor talks, founder interviews, harness essays. This batch supplies the **randomised, population-scale and adversarial evidence**, and it does not flatter the practitioner account.
 
 ### The shape of the finding

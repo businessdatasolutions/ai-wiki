@@ -5,10 +5,10 @@ aliases: ["Claire Vo", "@clairevo"]
 tags: [claire-vo, how-i-ai, chatprd, product-management, ai-pm, vibe-coding, agent-loops, prd-as-input, podcast-host, merge-mommy, code-review, risk-scoring, vercel-eve]
 affiliation: "ChatPRD (founder); How I AI (host)"
 role: "Product leader; founder/creator of ChatPRD (an AI PRD-authoring tool); host of the How I AI podcast"
-confidence: 0.8
-last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
-source_count: 5
+confidence: 0.85
+last_confirmed: "2026-08-31"
+accessed_at: "2026-08-31"
+source_count: 6
 relationships:
   - type: part-of
     target: How-I-AI
@@ -28,6 +28,7 @@ Vo's wiki anchor is the **product-leader / non-engineer altitude** on AI practic
 
 ## Appears in this wiki via
 
+- [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system]] — host; interviews Daniel Blum on his Cowork system. Notable for a reflexive turn: Blum runs *her own* loops episode through his Improve skill on camera, and the skill's critique (his scheduled tasks are already loops; he lacks goal loops) is delivered back to her live.
 - [[2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder]] — host; interviews [[Ryan Carson]] on running 15 concurrent [[Devin]] agents, and contributes the episode's counter-argument that shipping more code does not produce better product.
 - [[2026-08-05-vo-lennys-merge-mommy-ai-code-review-bot]] — host/builder; Merge Mommy, the six-dimension risk-scoring PR reviewer.
 - [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness]] — host; interviews Mozilla's Brian Grinstead on the production agentic security-bug harness, drawing the explicit link to her own prior goal-loop episode.
