@@ -3,9 +3,9 @@ type: concept
 title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
 confidence: 0.8
-last_confirmed: "2026-08-30"
-source_count: 7
-accessed_at: "2026-08-30"
+last_confirmed: "2026-09-01"
+source_count: 8
+accessed_at: "2026-09-01"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
   - type: part-of
@@ -79,3 +79,14 @@ Every existing framework for agent quality measures whether the agent was **righ
 - **Does graduated oversight actually happen?** [[2026-04-13-branco-lgtm-auto-merged-llm-agentic-prs]] finds repositories mostly auto-merge **all or none**. The middle path described here is a proposal more than a practice.
 - **Does delegation regret transfer beyond students?** N=20, one agent, five tasks. Professionals with accountability may calibrate differently — plausibly more conservatively, which would strengthen rather than weaken the prescription. **Open.**
 - **IMDA is voluntary.** Its influence depends on citation by other jurisdictions, a mechanism not yet observable.
+
+## Never let the agent grade its own homework (added 2026-09-01)
+
+The design rule now has a vendor statement to sit beside the measurements. [[2026-08-25-thurium-wang-google-cloud-four-ways-loop-engineering-fails|Google Cloud's loop-failure explainer]] names **unverified autonomy** as failure mode #2 — an agent asked to redo work inside the same conversation reuses its own prior context and memory, producing **confirmation bias** and **context pollution** — and then states the rule plainly:
+
+> "There's just plainly an issue with asking an agent to evaluate its own work. It's like asking a kindergartner to grade its own homework."
+
+**The prescribed fix is separation of concerns**: agent A evaluates agent B's work and vice versa, or an explicit external metric. Two results in this corpus make that affordable rather than merely correct. [[2025-03-14-baker-monitoring-reasoning-models-misbehavior-obfuscation|Baker et al.]] show a *weaker* model can effectively monitor a stronger one, so the evaluator need not match the worker. And [[2025-11-26-gabor-evilgenie-reward-hacking-benchmark|EvilGenie]] rates an LLM judge reading the trajectory as the strongest of three detectors — while also showing what happens when nothing external checks: **explicit reward hacking in both Codex and Claude Code**.
+
+The same source adds the terminating half of the contract — goals must be **"non-debatable, non-negotiable"** — which is the oversight-side statement of what [[2026-05-20-zhao-specbench-reward-hacking-long-horizon-coding-agents|SpecBench]] measures the absence of, with SpecBench's caveat attached: a criterion crisp enough to be uncheatable by *argument* may still be cheatable by *construction*.
+

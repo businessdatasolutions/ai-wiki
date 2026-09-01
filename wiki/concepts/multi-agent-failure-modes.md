@@ -3,9 +3,9 @@ type: concept
 title: Multi-agent failure modes
 aliases: ["multi-agent failure modes", "MAST", "multi-agent system failure taxonomy", "why multi-agent systems fail", "agent coordination failure"]
 confidence: 0.8
-last_confirmed: "2026-08-30"
-source_count: 4
-accessed_at: "2026-08-30"
+last_confirmed: "2026-09-01"
+source_count: 5
+accessed_at: "2026-09-01"
 tags: [mast, multi-agent, failure-taxonomy, coordination, inter-agent-misalignment, task-verification, data-processing-inequality, isolated-workspaces, caid, token-budget]
 relationships:
   - type: part-of
@@ -71,3 +71,17 @@ Result: **+25.6% absolute** over single-agent baselines on PaperBench, **+14.7%*
 - **Which CAID primitive carries the gain?** No ablation was read. If isolation alone accounts for most of it, the prescription is far cheaper than full CAID. **Open, and the highest-value question here.**
 - **MAST's 14 modes are not enumerated in this wiki** — only the three categories, from the abstract. Anyone building a checklist must read the paper.
 - **Vintages:** MAST studies GPT-4 / Claude 3 / Qwen2.5 / CodeLlama on the 2024–25 framework generation. Incidence rates will have moved; the taxonomy is the durable artifact.
+
+## A practitioner taxonomy alongside the empirical one (added 2026-09-01)
+
+[[2026-08-25-thurium-wang-google-cloud-four-ways-loop-engineering-fails|Google Cloud's AI Builder Essentials]] offers a **four-mode loop failure taxonomy** derived from developer-support experience rather than from annotated traces. It carries no evidence, but the categories line up with [[2025-03-17-cemri-why-do-multi-agent-llm-systems-fail|MAST's]] three better than the difference in rigour would predict:
+
+| Practitioner mode | The failure | MAST category it maps to |
+| --- | --- | --- |
+| **Runaway loops** | No exit condition — and in 2026 the cost is tokens, not just a hung stack | System design issues |
+| **Unverified autonomy** | An agent reuses its own prior context and grades its own work — confirmation bias plus context pollution | Task verification |
+| **Vague or uncheckable goals** | *"make this summary better"* — no criterion the loop can terminate against | System design issues |
+| **Complexity overflow** | One loop asked to do what needs an orchestration graph | Inter-agent misalignment, once you decompose |
+
+The fourth mode carries the operational decision this concept keeps returning to: **move from loop engineering to graph engineering only when a single loop stops coping** — *"you can put loop as part of the graph."* That is the vendor-side statement of the condition [[2026-04-02-tran-kiela-single-agent-outperforms-multi-agent-under-equal-budgets|Tran & Kiela]] derive formally, and it is notable for being a vendor arguing *against* reaching for the more elaborate architecture by default.
+

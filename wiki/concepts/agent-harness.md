@@ -3,9 +3,9 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.98
-last_confirmed: "2026-08-31"
-accessed_at: "2026-08-31"
-source_count: 89
+last_confirmed: "2026-09-01"
+accessed_at: "2026-09-01"
+source_count: 90
 relationships:
   - type: part-of
     target: ai-agents
@@ -772,6 +772,14 @@ His scheduled tasks also instantiate [[2026-06-17-vo-how-i-ai-ai-agent-loops-cla
 - [[responsible-ai]] — the Constraints layer (destructive-verb detection, workspace isolation, intent validation) operationalizes RAI policies at runtime. *"Security as structural unreachability"* (per [[2026-05-07-anthropic-managed-agents-decoupling-brain-hands|Anthropic Managed Agents]]) is the engineering principle.
 - [[generative-ai]] — harness frameworks (LangChain, Microsoft Agent Framework, etc.) are now visible in the deployed-tools landscape.
 - [[enterprise-ai-adoption]] — "plan for swap, not for marriage" is a *direct prescription* that complements [[2026-05-05-nishar-nohria-end-of-one-size-fits-all|Nishar-Nohria's]] firm-boundary framework.
+
+## Loop engineering as harness vocabulary (added 2026-09-01)
+
+[[2026-08-25-thurium-wang-google-cloud-four-ways-loop-engineering-fails|Thurium & Wang / Google Cloud]] supply the sibling to this page's harness-boundary source — same series, same channel, one shared presenter ([[Tilde Thurium]]), six weeks apart. Where [[2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness|the July video]] draws the boundary (*"the harness is everything after the LLM"*), this one populates it with the four ways the loop inside that boundary breaks.
+
+The definition of **loop engineering** is the cleanest in the corpus: *"you replacing yourself with a system… instead of you keep typing and trying to solve a problem, you'll create a system and set a goal and let the system keep retrying until it's meeting the goal."*
+
+Three of the four fixes are **harness controls rather than prompt content**, which is what makes them relevant here: **stop rules and cost caps** (max iterations, time limit, token/cost ceiling) belong in the runtime where the agent cannot argue with them; **separation of concerns** puts evaluation in a *different* agent — *"it's like asking a kindergartner to grade its own homework"*; and **graph escalation** moves orchestration out of the loop entirely once a single loop hits its context limit. The fourth, **checkable goals** (*"non-debatable, non-negotiable"* — "less than ten", "zero compilation errors"), is the contract the harness terminates against. Framework-layer instantiation: [[Agent Development Kit]].
 
 ## Mentioned in
 

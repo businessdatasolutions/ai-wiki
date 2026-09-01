@@ -10,6 +10,31 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-01] ingest | Google Cloud on the four ways loop engineering fails — the sibling to the harness-boundary explainer
+
+One short video (**~4:38**), and a good illustration that length and value are unrelated. [[2026-08-25-thurium-wang-google-cloud-four-ways-loop-engineering-fails|"4 ways loop engineering fails (and how to fix them)"]] is from the same *AI Builder Essentials* series, the same channel and one of the same presenters ([[Tilde Thurium]]) as [[2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness|"What is an Agentic Harness?"]], ingested six weeks earlier. **They read as one argument in two halves**: July draws the boundary — *"the harness is everything after the LLM"* — and August populates it with the four ways the loop inside that boundary breaks.
+
+**The definition**, from Annie Wang, is the cleanest statement of loop engineering in the corpus: *"you replacing yourself with a system. So instead of you keep typing and trying to solve a problem, you'll create a system and set a goal and let the system keep retrying until it's meeting the goal."*
+
+**The four modes, and why three of the four fixes are harness controls rather than prompt content:**
+
+1. **Runaway loops** — the classic missing exit condition, repriced: *"you're not just crashing your stack, you're burning tokens. And those cost real money."* Fix: stop rules and cost caps (max iterations, time limit, token ceiling) in the runtime, where the agent cannot argue with them.
+2. **Unverified autonomy** — an agent reusing its own prior context and grading its own work, producing confirmation bias and context pollution. The line the piece turns on: *"it's like asking a kindergartner to grade its own homework."* Fix: separation of concerns, agent A evaluating agent B.
+3. **Vague or uncheckable goals** — *"make this summary better."* Fix: criteria that are *"non-debatable, non-negotiable"* — "less than ten", "zero compilation errors".
+4. **Complexity overflow** — escalate from **loop engineering to graph engineering**: *"you have an organization chart… you can put loop as part of the graph."*
+
+**What makes it worth a page despite zero evidence.** Each mode is independently corroborated somewhere in the corpus by work that *is* evidenced — [[2025-03-17-cemri-why-do-multi-agent-llm-systems-fail|MAST]] on the failure categories (and the four map onto its three better than the difference in rigour predicts), [[2025-11-26-gabor-evilgenie-reward-hacking-benchmark|EvilGenie]] on what self-grading agents actually do, [[2026-05-20-zhao-specbench-reward-hacking-long-horizon-coding-agents|SpecBench]] on uncheckable criteria, [[2026-04-02-tran-kiela-single-agent-outperforms-multi-agent-under-equal-budgets|Tran & Kiela]] on when decomposition is justified. It is a well-compressed index into evidenced work, which is a useful thing for a four-minute video to be. Note also that a vendor recommending you reach for the graph **only at overflow** is arguing against its own upsell.
+
+**A vocabulary question settled.** The 2026-08-20 ingest **skipped** a video (`58n-n-3oRic`) that presented as an Andrew Ng course on *"graph engineering"* with chapters named "loop engineering" and "graph engineering"; it was a re-upload of DeepLearning.AI's *AI Agents in LangGraph*, and the phrase was never uttered in 110 minutes. This source establishes that **both terms are real, first-class vocabulary in Google Cloud's own 2026 materials** — which is exactly why the fabricated chapter titles read as plausible. The skip was still correct, but the terminology was never the tell; **identity was.**
+
+**Two entity promotions, one of them a judgement call.** [[Agent Development Kit]] crossed the threshold comfortably (referenced in 6 source pages) — and creating it surfaced an error worth recording: the draft source page had linked ADK to [[Antigravity]], which is Google's *harness and IDE* ecosystem and a different product. Corrected before commit; the two are now explicitly distinguished on both pages. [[Tilde Thurium]] is the judgement call: two appearances, but video sources take the **channel** as `author:` per the schema's video convention, so `lint-dangling-authors.mjs` structurally cannot see presenters. Promoted anyway on the grounds that she carries quotable definitional content in both. **This is a real gap in the automated check** — recurring named presenters are invisible to it — worth considering as a future lint rule.
+
+**Acquire note.** The Playwright transcript fetch failed headless and again on the first `--headed` attempt, succeeding on the second; the failure mode remains a silent `"transcript": null` beside perfectly good metadata. The video carries **both** an ASR and a human-curated en-US caption track, and the fetched text is the human-curated one — full punctuation, no ASR proper-noun damage, no cleanup applied. Speakers are **not** labelled in the captions, so per-line attribution was reconstructed from context plus the description's speaker list and is flagged on the page as probable rather than certain.
+
+**Housekeeping.** 254 sources / 171 entities, `lint-index-completeness` 0 missing across all five catalogues; `lint-dangling-authors` 0 dangling; graph re-exported; qmd re-indexed and embedded. Concepts updated with substantive sections rather than metadata bumps alone: [[concepts/multi-agent-failure-modes|multi-agent-failure-modes]] (the practitioner taxonomy mapped onto MAST), [[concepts/agent-harness|agent-harness]] (loop engineering as harness vocabulary; stop rules and cost caps as runtime controls), [[concepts/agent-oversight-and-delegation|agent-oversight-and-delegation]] (never let the agent grade its own homework, with the two results that make cross-evaluation affordable), and [[concepts/ai-agents|ai-agents]] (loop and graph engineering as a pair).
+
+---
+
 ## [2026-08-31] ingest | Daniel Blum's Claude Cowork system — the worker-level maturity ladder the corpus was missing
 
 One source, and it fills a hole the wiki has had since [[threads/ai-maturity-measurement-comparison|the maturity-measurement thread]] opened in April: every maturity instrument in the corpus measures the **firm**, and none measures the **worker**.

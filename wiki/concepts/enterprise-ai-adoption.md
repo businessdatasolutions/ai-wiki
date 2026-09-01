@@ -24,8 +24,7 @@ relationships:
   - type: supports
     target: 2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas
     via: "MGI quantifies the firm-side scale of the AI deployment race: AI foundation cluster (semiconductors + cloud + AI software) added $11T market cap + $500B revenue since 2022; nine omniscalers spent $800B on R&D + capex in 2025 alone"
-quality_score: 0.99
-quality_notes: ['1 near-empty section(s)']
+quality_score: 1
 ---
 
 # Enterprise AI Adoption
