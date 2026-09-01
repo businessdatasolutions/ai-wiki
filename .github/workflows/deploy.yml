@@ -29,6 +29,14 @@ jobs:
         run: npm ci
       - name: Build Quartz
         run: npx quartz build -d wiki
+      # Standalone HTML artifacts under inspiration/ are not part of the wiki corpus,
+      # so Quartz never sees them. Copy them into the built site so they get published
+      # at /inspiration/<name>.html. Relative links between them keep working.
+      - name: Copy standalone pages into the site
+        run: |
+          mkdir -p public/inspiration
+          cp inspiration/ai-worker-maturity-*.html public/inspiration/
+          ls -la public/inspiration/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
