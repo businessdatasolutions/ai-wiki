@@ -651,6 +651,35 @@ var QUESTIONS = [
     o:["Not yet","I think I'm in it right now","Yes, and I came out the other side"] }
 ];
 
+// Some gates are true by construction if a higher one is. If the higher holds and the
+// lower doesn't, that is far more likely a misread question than a real state of the world.
+var IMPLIES = {
+  G9:  {lo:"G2",  why:"a defined checkpoint on delegated output <em>is</em> checking output before you use it"},
+  G13: {lo:"G9",  why:"written review criteria only mean something if the review happens"},
+  G12: {lo:"G10", why:"workflows that record their own friction are a record of where AI failed you"},
+  G14: {lo:"G1",  why:"someone else can only run your setup if it exists as reusable artifacts"},
+  G11: {lo:"G3",  why:"a setup can only save the context it asks about if persistent context exists"}
+};
+
+// One concrete move per gate, for when the generic level advice would be wrong.
+var GATEFIX = {
+  G1:"Save the prompts and workflows you retype — one plain file is enough to start.",
+  G2:"Pick one habitual check: a source, a test, or a question you already know the answer to.",
+  G3:"Write the context file: role, goals, colleagues, projects, internal terminology.",
+  G4:"Move more of your day inside one system — context leaks at every exit.",
+  G5:"Connect the tool you open most, so it stops depending on what you paste.",
+  G6:"Decide, once, which model or mode suits which kind of task — then follow it.",
+  G7:"Automate one trigger: a weekly pass, or something that fires when a task finishes.",
+  G8:"Let it write into one system of record. Start with the lowest-stakes one.",
+  G9:"Put one defined checkpoint in front of delegated output, every time.",
+  G10:"Start a running note of where AI got it wrong. It costs nothing now.",
+  G11:"Add an instruction to surface unfamiliar terms and save your answers.",
+  G12:"Have each recurring workflow log its own friction, and review it on a cadence.",
+  G13:"Write down what you check for — specific enough to hand to a colleague.",
+  G14:"Hand it to one person as a guided setup, not as a document.",
+  G15:"Name the specific things your setup is bad at, not just that it could be better."
+};
+
 var LEVELS = {
   1:{ name:"Experimenting", say:"AI helps you, but nothing accumulates. What you worked out today will not be there tomorrow — which is why it feels like starting over each time, and why the effort never compounds." },
   2:{ name:"Repeating",     say:"You have reusable pieces and you can judge the output. What's holding you is that you are still the integration layer: every context hand-off between tools goes through your head." },
@@ -770,6 +799,20 @@ document.getElementById("scoreBtn").addEventListener("click", function(){
     gatesByLv[level+1].forEach(function(item){ if(!passed(a[item.id])) blocking.push(item); });
   }
 
+  // Gates that are logically implied by a higher gate you passed, but that you marked open.
+  var contradictions = [];
+  Object.keys(IMPLIES).forEach(function(hi){
+    var lo = IMPLIES[hi].lo;
+    if(passed(a[hi]) && !passed(a[lo])) contradictions.push({hi:hi, lo:lo, why:IMPLIES[hi].why});
+  });
+
+  // An inversion: your reach sits two or more levels above your confirmed level.
+  var inversion = (reach - level) >= 2;
+  // Every open gate at or below your reach — the real worklist when the ladder is inverted.
+  var openBelowReach = QUESTIONS.filter(function(i){
+    return i.lv >= 2 && i.lv <= reach && !passed(a[i.id]);
+  });
+
   // axis scores
   function axisPct(ax){
     var items = QUESTIONS.filter(function(i){ return i.axis===ax; });
@@ -784,7 +827,13 @@ document.getElementById("scoreBtn").addEventListener("click", function(){
   document.getElementById("vKey").textContent = "You are at Level " + level +
     (reach > level ? "  ·  gates met through Level " + reach : "");
   document.getElementById("vName").textContent = LEVELS[level].name;
-  document.getElementById("vSay").textContent = LEVELS[level].say;
+  document.getElementById("vSay").innerHTML = inversion
+    ? "Your ladder is inverted: you meet every gate at Level " + reach +
+      ", but " + (blocking.length === 1 ? "a gate" : "gates") + " far below " +
+      (blocking.length === 1 ? "is" : "are") + " still open. The level above is the honest one — a ladder is only as " +
+      "sound as the rung you actually stand on — but the usual advice for Level " + level +
+      " would be wrong for you, so it has been replaced."
+    : LEVELS[level].say;
   document.getElementById("fPct").textContent = fp + "%";
   document.getElementById("sPct").textContent = sp + "%";
   requestAnimationFrame(function(){
@@ -849,13 +898,24 @@ document.getElementById("scoreBtn").addEventListener("click", function(){
     "Open gates: " + (openGates.length ? openGates.join(", ") : "none") + ". " +
     "Model, calibration record and sources: businessdatasolutions.github.io/ai-wiki/inspiration/ai-worker-maturity-model.html";
 
-  // next steps
-  var nx = NEXT[level];
-  document.getElementById("nextTitle").textContent = nx.title;
-  document.getElementById("nextWhy").textContent = nx.why;
+  // next steps — the generic level advice, unless the ladder is inverted
   var stepsEl = document.getElementById("steps");
   stepsEl.innerHTML = "";
-  nx.steps.forEach(function(s, i){
+  var steps;
+  if(inversion){
+    document.getElementById("nextTitle").textContent = "Close the gaps underneath you";
+    document.getElementById("nextWhy").textContent =
+      "Level " + level + "'s usual advice does not apply — you are past it everywhere except here";
+    steps = openBelowReach.map(function(item){
+      return ["" + item.id + " · Level " + item.lv + ".", GATEFIX[item.id]];
+    });
+  } else {
+    var nx = NEXT[level];
+    document.getElementById("nextTitle").textContent = nx.title;
+    document.getElementById("nextWhy").textContent = nx.why;
+    steps = nx.steps;
+  }
+  steps.forEach(function(s, i){
     var d = document.createElement("div"); d.className = "step";
     var n = document.createElement("div"); n.className = "step-n"; n.textContent = String(i+1).padStart(2,"0");
     var p = document.createElement("p"); p.innerHTML = "<b>"+s[0]+"</b> " + s[1];
@@ -868,6 +928,29 @@ document.getElementById("scoreBtn").addEventListener("click", function(){
   function addFlag(cls, html){
     var f = document.createElement("div"); f.className = "flag " + cls; f.innerHTML = html; flags.appendChild(f);
   }
+  // Probable misreads first — if these are wrong, the whole result is wrong.
+  if(contradictions.length){
+    var rows = contradictions.map(function(c){
+      var hiQ = QUESTIONS.filter(function(i){ return i.id === c.hi; })[0];
+      var loQ = QUESTIONS.filter(function(i){ return i.id === c.lo; })[0];
+      return "<br><br>&bull; You answered <b>" + c.hi + "</b> &ldquo;" + hiQ.o[a[c.hi]] +
+             "&rdquo; but <b>" + c.lo + "</b> &ldquo;" + loQ.o[a[c.lo]] + "&rdquo; &mdash; " + c.why + ".";
+    }).join("");
+    addFlag("", "<b>Worth re-reading " + (contradictions.length === 1 ? "one answer" : contradictions.length + " answers") +
+      ".</b> " + (contradictions.length === 1 ? "A gate you met implies one you left open" :
+      "Some gates you met imply ones you left open") + ", so the lower answer is more likely a strict reading than a real gap. " +
+      "Your level turns on " + (contradictions.length === 1 ? "it" : "them") + "." + rows);
+  }
+
+  if(inversion && !contradictions.length){
+    addFlag("amber", "<b>Automation you did not build.</b> You meet every gate at Level " + reach +
+      " while " + blocking.map(function(b){ return b.id; }).join(" and ") + " below " +
+      (blocking.length === 1 ? "stays" : "stay") + " open. That pattern usually means the system around you was set up by " +
+      "someone else &mdash; an employer, a platform, a colleague &mdash; and you inherited the delegation without the " +
+      "habits underneath it. It is not a contradiction, but it is the most exposed profile on this scale: work is running " +
+      "on your behalf that you have no practised way to check.");
+  }
+
   if(blocking.length === 1){
     addFlag("", "<b>One gate is holding you.</b> " + blocking[0].id + " — " + blocking[0].q +
       " Everything else at Level " + (level+1) + " is already true for you. This is the highest-leverage thing on your list.");
@@ -875,7 +958,7 @@ document.getElementById("scoreBtn").addEventListener("click", function(){
     addFlag("", "<b>" + blocking.length + " gates stand between you and Level " + (level+1) + ":</b> " +
       blocking.map(function(b){ return b.id; }).join(", ") + ". Take them in order — the earlier ones tend to make the later ones easier.");
   }
-  if(skipped.length){
+  if(skipped.length && !inversion){
     addFlag("amber", "<b>You've built high on a thin base.</b> You pass " + skipped.join(", ") +
       (skipped.length === 1 ? ", which belongs" : ", which belong") +
       " to a level above your own — while a gate below is still open. This is the fragile pattern: a practice running on top of a foundation that isn't there yet. Close the lower gate before adding anything.");

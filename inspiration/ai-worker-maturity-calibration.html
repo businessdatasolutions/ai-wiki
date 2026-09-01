@@ -118,15 +118,15 @@ footer a{color:var(--needle)}
 <header class="masthead">
   <div class="masthead-top">
     <div class="mark">Calibration record — v1 → v2<span>.</span></div>
-    <div class="meta-line">1 Sep 2026 · 3 scored cases · 5 defects fixed · structural calibration only</div>
+    <div class="meta-line">1 Sep 2026 · 3 scored cases + 1 adversarial profile · 7 defects fixed · structural calibration only</div>
   </div>
 </header>
 
 <section class="hero">
   <div>
     <p class="eyebrow">What running it against real people did</p>
-    <h1 class="hero-title">Five defects, and <em>four</em> of them were only visible from a case.</h1>
-    <p>v1 was reasoned into existence from source material. It looked coherent. Scoring it against three real workers broke it in five places, and only one of those — the axis imbalance — was something I could have found by reading my own design.</p>
+    <h1 class="hero-title">Seven defects, and <em>six</em> were invisible from the design alone.</h1>
+    <p>v1 was reasoned into existence from source material. It looked coherent. Scoring it against three real workers broke it in five places, and a reader asking &ldquo;what if someone scores low at the bottom and high at the top?&rdquo; broke it in a sixth. Only one — the axis imbalance — was something I could have found by reading my own design.</p>
     <p>The rest needed a person. A gate that conflated a practice with an artifact only shows up when someone does the practice without the artifact. A gate that asks you to rate a capability only shows up as a problem when the evidence for it is thin and the whole ladder swings on it.</p>
     <div class="pull">The Blum scoring's headline finding — “built high on a thin base” — turned out to be an artifact of a misplaced gate, not a fact about him. Fixing the gate made the flag stop firing. That is what calibration is for.</div>
   </div>
@@ -254,6 +254,21 @@ footer a{color:var(--needle)}
       <p>v2 reports a level <em>and</em> a reach: the highest level whose own gates are all met, ignoring gaps beneath it. When they differ, the headline says so.</p>
       <div class="fixbox">
         <b>Now —</b> “You are at Level 3 · gates met through Level 5”. Strict gating unchanged; the shape is no longer buried.
+      </div>
+    </div>
+  </div>
+
+  <div class="defect">
+    <div class="defect-n">D7</div>
+    <div>
+      <span class="found">Found by · a reader, not a case</span>
+      <h3>An inverted ladder produced a confidently wrong answer</h3>
+      <p>Nothing stops someone failing both Level 2 gates while meeting every gate at Level 4 — an employee who inherited a configured system, or anyone who read a low gate more strictly than a high one. Strict gating puts them at Level 1, which is right. But everything wrapped around that number was wrong: the page told a person with scheduled tasks writing to a system of record that <q>nothing accumulates — what you worked out today will not be there tomorrow</q>, and advised them to start saving their prompts.</p>
+      <p><b>The principle:</b> a level is a summary, and a summary that contradicts the answers it summarises is worse than none. Where the profile and the level's narrative disagree, the narrative yields — not the gating.</p>
+      <p>The fix separates two causes the instrument had been conflating. Some gates are <em>true by construction</em> if a higher one is: a defined checkpoint on delegated output (G9) means you check output before using it (G2); written review criteria (G13) mean the review happens (G9). When the higher holds and the lower doesn't, that is far likelier a misread question than a real gap, and it is now reported as one — with both answers quoted back, because the level turns on it. When no implication applies and the inversion is real, it gets its own diagnosis: <b>automation you did not build</b> — delegation inherited without the habits underneath it. That is not a contradiction. It is the most exposed profile on the scale, and it had no name before.</p>
+      <div class="fixbox">
+        <span class="was">Was — <i>Level 1, “nothing accumulates”, and advice to save your prompts — regardless of what was met above.</i></span>
+        <b>Now —</b> the level is unchanged, the narrative is replaced, and the next actions become the specific open gates beneath your reach. Two new flags: a probable-misread warning keyed to five implication pairs, and the inherited-automation diagnosis.
       </div>
     </div>
   </div>
