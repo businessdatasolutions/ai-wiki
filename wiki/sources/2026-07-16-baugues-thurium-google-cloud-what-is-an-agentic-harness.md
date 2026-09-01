@@ -70,6 +70,10 @@ Two reasons, both about provenance rather than content.
 
 - **`digital-transforming/improving-digital-maturity`** — the cell's activity list includes *"leveraging digital knowledge inside the firm"*, and this video is a small, literal instance: a vendor's education series doing vocabulary-levelling for builders so that a term used in engineering conversation resolves to the same referent for everyone. The whole artifact is a three-minute intervention on shared vocabulary, aimed at the same *AI Builder Essentials* audience Google is trying to move up the maturity curve. Tagged with one cell only — nothing here touches sensing, seizing, or renewal, and stretching it further would be over-fitting a definitional explainer to a strategy vocabulary.
 
+## Sibling in the same series
+
+[[2026-08-25-thurium-wang-google-cloud-four-ways-loop-engineering-fails|"4 ways loop engineering fails"]] (25 Aug 2026) is the follow-on from the same *AI Builder Essentials* series, with [[Tilde Thurium]] again presenting — this time with Annie Wang. Read as a pair: this video draws the harness boundary, that one populates it with the four ways the loop inside it breaks (runaway loops, unverified autonomy, uncheckable goals, complexity overflow) and the controls that stop each.
+
 ## Linked entities and concepts
 
 - [[Google]] — publisher (Google Cloud Tech channel). Updated in this ingest.

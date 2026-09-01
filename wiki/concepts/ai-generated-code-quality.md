@@ -5,7 +5,7 @@ aliases: ["AI-generated code quality", "AI code security", "slopsquatting", "pac
 confidence: 0.85
 last_confirmed: "2026-08-30"
 source_count: 5
-accessed_at: "2026-08-30"
+accessed_at: "2026-09-01"
 tags: [code-quality, security, owasp, slopsquatting, package-hallucination, technical-debt, code-smells, supply-chain, static-analysis, flat-scaling]
 relationships:
   - type: part-of

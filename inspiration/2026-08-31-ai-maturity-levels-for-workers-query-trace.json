@@ -1,0 +1,2390 @@
+{
+ "question": {
+  "original": "How can we classify different levels of AI maturity for workers?",
+  "restated": "What defensible scheme does the wiki support for placing an individual knowledge worker on an AI-maturity scale, and what markers separate the levels?",
+  "facets": [
+   "What maturity models already exist in the corpus, and at what unit of analysis?",
+   "What observable markers distinguish levels for an individual worker?",
+   "What moves a worker between levels, and what blocks them?",
+   "What are the measurement caveats?"
+  ],
+  "language": "en"
+ },
+ "params": {
+  "seeds": 12,
+  "hops": 1,
+  "k_rrf": 60,
+  "graph_w": 0.5,
+  "conf_floor": 0.6,
+  "today": "2026-08-31"
+ },
+ "graph_available": true,
+ "graph_warning": null,
+ "candidates": [
+  {
+   "slug": "concepts/enterprise-ai-adoption",
+   "path": "wiki/concepts/enterprise-ai-adoption.md",
+   "type": "concept",
+   "title": "Enterprise AI Adoption",
+   "qmd_rank": 1,
+   "qmd_score": 0.93,
+   "graph": [
+    {
+     "from_seed": "concepts/ai-employment-effects",
+     "edge_type": "caused",
+     "via": null,
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "qmd rank 1 (score 0.93)",
+    "graph: concepts/ai-employment-effects <--caused<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-08-31",
+   "last_confirmed": "2026-08-31",
+   "days_since_access": 0,
+   "effective_confidence": 0.95,
+   "rrf_score": 0.016393,
+   "fused_score": 0.98,
+   "verdict": "use",
+   "reason": "firm-level composition and why worker maturity does not sum to firm maturity",
+   "reason_class": null,
+   "promoted": null
+  },
+  {
+   "slug": "concepts/ai-employment-effects",
+   "path": "wiki/concepts/ai-employment-effects.md",
+   "type": "concept",
+   "title": "AI Employment Effects",
+   "qmd_rank": 5,
+   "qmd_score": 0.52,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "caused",
+     "via": null,
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "qmd rank 5 (score 0.52)",
+    "graph: concepts/enterprise-ai-adoption -->caused--> this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-08-30",
+   "last_confirmed": "2026-08-30",
+   "days_since_access": 1,
+   "effective_confidence": 0.94,
+   "rrf_score": 0.015385,
+   "fused_score": 0.916,
+   "verdict": "ignore",
+   "reason": "labour-market outcomes of AI, not a maturity classification of individuals",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-07-ransbotham-augmented-learners",
+   "path": "wiki/sources/2026-05-07-ransbotham-augmented-learners.md",
+   "type": "source",
+   "title": "Learning to Manage Uncertainty, With AI",
+   "qmd_rank": 3,
+   "qmd_score": 0.54,
+   "graph": [],
+   "retrieval_reasons": [
+    "qmd rank 3 (score 0.54)"
+   ],
+   "stored_confidence": 0.85,
+   "accessed_at": null,
+   "last_confirmed": "2026-05-07",
+   "days_since_access": null,
+   "effective_confidence": 0.85,
+   "rrf_score": 0.015873,
+   "fused_score": 0.91,
+   "verdict": "use",
+   "reason": "the two-axis (2x2) maturity structure and the non-additivity of combining two capabilities",
+   "reason_class": null,
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era",
+   "path": "wiki/sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era.md",
+   "type": "source",
+   "title": "AI and Jobs series: How entry level jobs are changing in an AI era",
+   "qmd_rank": 4,
+   "qmd_score": 0.52,
+   "graph": [],
+   "retrieval_reasons": [
+    "qmd rank 4 (score 0.52)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.015625,
+   "fused_score": 0.896,
+   "verdict": "ignore",
+   "reason": "its human-skills-demand finding is already carried, with figures, inside durable-skills [W7]",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-28-mit-sloan-ai-maturity",
+   "path": "wiki/sources/2026-04-28-mit-sloan-ai-maturity.md",
+   "type": "source",
+   "title": "How to boost your organization's AI maturity level",
+   "qmd_rank": 6,
+   "qmd_score": 0.49,
+   "graph": [],
+   "retrieval_reasons": [
+    "qmd rank 6 (score 0.49)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.015152,
+   "fused_score": 0.869,
+   "verdict": "use",
+   "reason": "the four-stage ladder form and the between-stage inflection finding",
+   "reason_class": null,
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-28-brynjolfsson-canaries-coal-mine",
+   "path": "wiki/sources/2026-04-28-brynjolfsson-canaries-coal-mine.md",
+   "type": "source",
+   "title": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence",
+   "qmd_rank": 7,
+   "qmd_score": 0.48,
+   "graph": [
+    {
+     "from_seed": "sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships",
+     "edge_type": "supports",
+     "via": "**Descriptive labour-market data + prospective structural model on the AI labour question.** Brynjolfsson et al. (*Canaries in the Coal Mine*, Aug 2025): six empirical facts from US payroll data showing the augmentation/automation cut already producing labour-market signals — *augmentative AI use does not displace labour while automative use does*. MGI (Yee et al., Nov 2025) supplies the prospective frame: technical automation potential covers **~57% of US work hours** at midpoint scenario; the labour effect is shifted-not-deleted (7 archetypes from people-centric to robot-centric); 72% of today's skills are required for both automatable and non-automatable work, so most skills *evolve* rather than disappear; ~$2.9T US economic value by 2030 conditional on workflow-not-task redesign. The MGI/Brynjolfsson pair is the wiki's strongest **descriptive-empirical + structural-prospective** anchor on the AI labour question — Brynjolfsson establishes that the augmentation/automation cut is *operationally meaningful in current data*; MGI maps *where the cut is heading by 2030* with occupation-level granularity. Both reject the *AI-will-eliminate-jobs* framing in favour of *AI-will-reshape-which-skills-are-applied-where*.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "qmd rank 7 (score 0.48)",
+    "graph: sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.014925,
+   "fused_score": 0.856,
+   "verdict": "ignore",
+   "reason": "entry-level employment decline; about who gets hired, not how mature a worker is",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work",
+   "path": "wiki/sources/2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work.md",
+   "type": "source",
+   "title": "Generative AI at Work",
+   "qmd_rank": 9,
+   "qmd_score": 0.44,
+   "graph": [
+    {
+     "from_seed": "sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships",
+     "edge_type": "supports",
+     "via": "**Field-experiment workflow productivity evidence + structural-modeling workflow prescription.** Brynjolfsson + Li + Raymond (*Generative AI at Work*, INFORMS 2026, customer-support RCT, N=5,179 agents at a Fortune 500 firm): GenAI assistant access drove **14% mean productivity gain** (calls resolved per hour), concentrated in **novice and low-skilled workers** (+34%) with no measurable effect on experienced workers; improved customer-sentiment ratings; reduced resignations. MGI (Yee et al., Nov 2025): the customer-operations case study (utility company, 7M+ support calls/year) operationalises the same human–agent collaboration shape — inbound call agent + intent identification + call scheduling + self-service agent handling ~40% of calls, resolving >80% without human involvement; **avg cost per call cut ~50%**, CSAT +6pp, human reps now handle complex/emotionally-sensitive issues. Brynjolfsson supplies the empirical-RCT-evidence layer; MGI supplies the structural-prescription + worked-case-illustration layer. Same workflow shape (AI handles routine, humans focus on complex), two altitudes.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "qmd rank 9 (score 0.44)",
+    "graph: sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.014493,
+   "fused_score": 0.831,
+   "verdict": "ignore",
+   "reason": "productivity/equalising effects of one deployment, not a maturity scale",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "threads/ai-maturity-measurement-comparison",
+   "path": "wiki/threads/ai-maturity-measurement-comparison.md",
+   "type": "thread",
+   "title": "Thread: How do different sources measure AI maturity, and where do they agree or diverge?",
+   "qmd_rank": 2,
+   "qmd_score": 0.62,
+   "graph": [],
+   "retrieval_reasons": [
+    "qmd rank 2 (score 0.62)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "status": "open",
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.016129,
+   "fused_score": 0.826,
+   "verdict": "use",
+   "reason": "the instrument problem, the four firm-level success rates, and the worker-level axis this thread now carries",
+   "reason_class": null,
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+   "path": "wiki/sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees.md",
+   "type": "source",
+   "title": "Research: Why You Shouldn't Treat AI Agents Like Employees",
+   "qmd_rank": 10,
+   "qmd_score": 0.38,
+   "graph": [],
+   "retrieval_reasons": [
+    "qmd rank 10 (score 0.38)"
+   ],
+   "stored_confidence": 0.85,
+   "accessed_at": null,
+   "last_confirmed": "2026-05-25",
+   "days_since_access": null,
+   "effective_confidence": 0.85,
+   "rrf_score": 0.014286,
+   "fused_score": 0.819,
+   "verdict": "ignore",
+   "reason": "anthropomorphising risk in agent framing, not worker maturity",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships",
+   "path": "wiki/sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships.md",
+   "type": "source",
+   "title": "Agents, robots, and us: Skill partnerships in the age of AI",
+   "qmd_rank": 11,
+   "qmd_score": 0.33,
+   "graph": [
+    {
+     "from_seed": "sources/2026-04-28-brynjolfsson-canaries-coal-mine",
+     "edge_type": "supports",
+     "via": "**Descriptive labour-market data + prospective structural model on the AI labour question.** Brynjolfsson et al. (*Canaries in the Coal Mine*, Aug 2025): six empirical facts from US payroll data showing the augmentation/automation cut already producing labour-market signals — *augmentative AI use does not displace labour while automative use does*. MGI (Yee et al., Nov 2025) supplies the prospective frame: technical automation potential covers **~57% of US work hours** at midpoint scenario; the labour effect is shifted-not-deleted (7 archetypes from people-centric to robot-centric); 72% of today's skills are required for both automatable and non-automatable work, so most skills *evolve* rather than disappear; ~$2.9T US economic value by 2030 conditional on workflow-not-task redesign. The MGI/Brynjolfsson pair is the wiki's strongest **descriptive-empirical + structural-prospective** anchor on the AI labour question — Brynjolfsson establishes that the augmentation/automation cut is *operationally meaningful in current data*; MGI maps *where the cut is heading by 2030* with occupation-level granularity. Both reject the *AI-will-eliminate-jobs* framing in favour of *AI-will-reshape-which-skills-are-applied-where*.",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work",
+     "edge_type": "supports",
+     "via": "**Field-experiment workflow productivity evidence + structural-modeling workflow prescription.** Brynjolfsson + Li + Raymond (*Generative AI at Work*, INFORMS 2026, customer-support RCT, N=5,179 agents at a Fortune 500 firm): GenAI assistant access drove **14% mean productivity gain** (calls resolved per hour), concentrated in **novice and low-skilled workers** (+34%) with no measurable effect on experienced workers; improved customer-sentiment ratings; reduced resignations. MGI (Yee et al., Nov 2025): the customer-operations case study (utility company, 7M+ support calls/year) operationalises the same human–agent collaboration shape — inbound call agent + intent identification + call scheduling + self-service agent handling ~40% of calls, resolving >80% without human involvement; **avg cost per call cut ~50%**, CSAT +6pp, human reps now handle complex/emotionally-sensitive issues. Brynjolfsson supplies the empirical-RCT-evidence layer; MGI supplies the structural-prescription + worked-case-illustration layer. Same workflow shape (AI handles routine, humans focus on complex), two altitudes.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "qmd rank 11 (score 0.33)",
+    "graph: sources/2026-04-28-brynjolfsson-canaries-coal-mine <--supports<-- this (1 hop)",
+    "graph: sources/2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.014085,
+   "fused_score": 0.808,
+   "verdict": "ignore",
+   "reason": "the MGI Skill Change Index is summarised with its figures inside durable-skills [W7]",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "threads/organizational-frameworks-for-ai-adoption",
+   "path": "wiki/threads/organizational-frameworks-for-ai-adoption.md",
+   "type": "thread",
+   "title": "Thread: Multiple frameworks for thinking about AI in organizations — competing or complementary?",
+   "qmd_rank": 8,
+   "qmd_score": 0.47,
+   "graph": [],
+   "retrieval_reasons": [
+    "qmd rank 8 (score 0.47)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "status": "closed",
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.014706,
+   "fused_score": 0.754,
+   "verdict": "ignore",
+   "reason": "organisational frameworks; the firm-level facet is better served by W2 and W8",
+   "reason_class": "wrong-granularity",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/automation-vs-augmentation",
+   "path": "wiki/concepts/automation-vs-augmentation.md",
+   "type": "concept",
+   "title": "automation-vs-augmentation",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "per-task deployment lens used by Anand-Wu, MITTRI/Cisco, MIT CISR",
+     "hops": 1
+    },
+    {
+     "from_seed": "concepts/ai-employment-effects",
+     "edge_type": "supports",
+     "via": "Brynjolfsson Canaries — declines concentrated in automation share, not augmentation",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)",
+    "graph: concepts/ai-employment-effects -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-08-30",
+   "last_confirmed": "2026-08-30",
+   "days_since_access": 1,
+   "effective_confidence": 0.94,
+   "rrf_score": 0.008065,
+   "fused_score": 0.48,
+   "verdict": "ignore",
+   "reason": "per-task deployment lens; does not classify the worker",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/jagged-frontier",
+   "path": "wiki/concepts/jagged-frontier.md",
+   "type": "concept",
+   "title": "jagged-frontier",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "uses",
+     "via": "task-by-task capability awareness drives deployment choice",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption -->uses--> this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-08-30",
+   "last_confirmed": "2026-08-30",
+   "days_since_access": 1,
+   "effective_confidence": 0.94,
+   "rrf_score": 0.007692,
+   "fused_score": 0.458,
+   "verdict": "ignore",
+   "reason": "model capability unevenness, not human maturity",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/micro-productivity-trap",
+   "path": "wiki/concepts/micro-productivity-trap.md",
+   "type": "concept",
+   "title": "micro-productivity-trap",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "caused",
+     "via": "shallow adoption produces task-level gains without firm-level value",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption -->caused--> this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-08-31",
+   "last_confirmed": "2026-08-31",
+   "days_since_access": 0,
+   "effective_confidence": 0.95,
+   "rrf_score": 0.007576,
+   "fused_score": 0.453,
+   "verdict": "use",
+   "reason": "the J-curve trough and why cross-sectional measurement cannot see it",
+   "reason_class": null,
+   "promoted": null
+  },
+  {
+   "slug": "concepts/dynamic-capabilities",
+   "path": "wiki/concepts/dynamic-capabilities.md",
+   "type": "concept",
+   "title": "dynamic-capabilities",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "AI adoption requires dynamic-capability microfoundations to scale",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-08-20",
+   "last_confirmed": "2026-08-20",
+   "days_since_access": 11,
+   "effective_confidence": 0.841,
+   "rrf_score": 0.007813,
+   "fused_score": 0.446,
+   "verdict": "ignore",
+   "reason": "firm-level capability theory; the worker facet needs individual markers",
+   "reason_class": "wrong-granularity",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas",
+   "path": "wiki/sources/2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas.md",
+   "type": "source",
+   "title": "The race takes off in the next big arenas of competition (MGI 2026 update)",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "MGI quantifies the firm-side scale of the AI deployment race: AI foundation cluster (semiconductors + cloud + AI software) added $11T market cap + $500B revenue since 2022; nine omniscalers spent $800B on R&D + capex in 2025 alone",
+     "hops": 1
+    },
+    {
+     "from_seed": "concepts/ai-employment-effects",
+     "edge_type": "supports",
+     "via": "the 18-arena vs non-arena divergence implies skill-and-talent reallocation across the economy; the omniscaler-led talent-attraction dynamic ('top talent attraction among their interlocking strengths') is a concrete vehicle for the AI-foundation-driven labour-market reshaping",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships",
+     "edge_type": "supports",
+     "via": "**Same-publisher (MGI) complementary-panoramas pair.** Russell + Bradley et al. (MGI, March 2026, *Race Takes Off in the Next Big Arenas of Competition*): industry-and-competition layer — 18 arenas of value migration, 80% of consequential AI-era value flows through 10–20 arenas, AI as cross-arena accelerant. Yee et al. (MGI, Nov 2025, *Agents, Robots, and Us*): workforce-and-skills layer — 7 occupation archetypes, Skill Change Index, $2.9T economic value contingent on workflow redesign, the agents-and-robots collaboration framing. The two MGI flagships form a **two-layer panorama** of the AI-and-economy question: where will the value migrate (Race Takes Off) × who and what will do the work that captures it (Agents, Robots, and Us). Same publisher, same intellectual project, **6-month delta**, designed-to-be-complementary at the MGI editorial level. **Recurring MGI partner overlaps**: Anu Madgavkar appears as MGI-partner-overlap (Race Takes Off acknowledges her in MGI org chart; Agents-Robots-and-Us lists her as second author). MGI directors **Chris Bradley** (Race Takes Off co-author) and **Sven Smit** (Agents-Robots author) are the cross-report anchors. The MGI Race Takes Off ingest's open follow-up — *update [[McKinsey & Company]] with MGI sub-section* — is fulfilled by this ingest's [[McKinsey Global Institute]] entity-page promotion.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption -->supports--> this (1 hop)",
+    "graph: concepts/ai-employment-effects <--supports<-- this (1 hop)",
+    "graph: sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.007463,
+   "fused_score": 0.428,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/responsible-ai",
+   "path": "wiki/concepts/responsible-ai.md",
+   "type": "concept",
+   "title": "responsible-ai",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "part-of",
+     "via": "RAI is the governance overlay on adoption decisions",
+     "hops": 1
+    },
+    {
+     "from_seed": "concepts/ai-employment-effects",
+     "edge_type": "supports",
+     "via": "labor-market disruption is an under-attended RAI concern",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--part-of<-- this (1 hop)",
+    "graph: concepts/ai-employment-effects <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-08-30",
+   "last_confirmed": "2026-08-30",
+   "days_since_access": 1,
+   "effective_confidence": 0.94,
+   "rrf_score": 0.007042,
+   "fused_score": 0.419,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/open-source-ai",
+   "path": "wiki/concepts/open-source-ai.md",
+   "type": "concept",
+   "title": "open-source-ai",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "the own-vs-rent flow (frontier APIs for experimentation, owned/open models for production at scale) is a driver of how enterprises adopt AI",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.87,
+   "accessed_at": "2026-08-30",
+   "last_confirmed": "2026-08-30",
+   "days_since_access": 1,
+   "effective_confidence": 0.86,
+   "rrf_score": 0.007143,
+   "fused_score": 0.411,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up",
+   "path": "wiki/sources/2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up.md",
+   "type": "source",
+   "title": "How To Build A Company With AI From The Ground Up",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "startups-as-AI-native-from-day-one thesis: large incumbents face a maintain-while-unwinding constraint that small companies don't; Mutiny cited as a skunk-works-team exception pattern",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.006757,
+   "fused_score": 0.387,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/strategic-foresight",
+   "path": "wiki/concepts/strategic-foresight.md",
+   "type": "concept",
+   "title": "strategic-foresight",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "informs deployment decisions under deep uncertainty",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.87,
+   "accessed_at": "2026-08-20",
+   "last_confirmed": "2026-08-20",
+   "days_since_access": 11,
+   "effective_confidence": 0.77,
+   "rrf_score": 0.006944,
+   "fused_score": 0.385,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/systems-thinking",
+   "path": "wiki/concepts/systems-thinking.md",
+   "type": "concept",
+   "title": "systems-thinking",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "workflow redesign in the micro-productivity-trap escape is systems-thinking applied to AI",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.9,
+   "accessed_at": "2026-08-20",
+   "last_confirmed": "2026-08-20",
+   "days_since_access": 11,
+   "effective_confidence": 0.796,
+   "rrf_score": 0.006849,
+   "fused_score": 0.384,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-25-masad-replit-ceo-only-two-jobs-left",
+   "path": "wiki/sources/2026-04-25-masad-replit-ceo-only-two-jobs-left.md",
+   "type": "source",
+   "title": "Replit's CEO On The Only Two Jobs Left In The Company Of The Future — Amjad Masad at YC Founder Firesides",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "vibe-coding-resident team as an internal-structure pattern: a generalist team with vague mission ('go around the company and make it better') deputising agents to solve concrete bottlenecks (support queue prioritisation, HR onboarding tooling)",
+     "hops": 1
+    },
+    {
+     "from_seed": "concepts/ai-employment-effects",
+     "edge_type": "supports",
+     "via": "'The company of the future is made of builders and salespeople' — a concrete employment-future thesis from a vendor-CEO building the infrastructure that would enable it; pairs with the wiki's existing automation-vs-augmentation and durable-skills clusters",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+     "edge_type": "contradicts",
+     "via": "**Productive tension on the *AI-as-employee-substitute* framing.** Masad (Replit CEO, April 2026): the *only-two-jobs-left* framing — AI agents will substitute for most current jobs, leaving only managers-of-agents and infrastructure-of-agents roles. Kropp et al. (May 2026): empirically test the *AI-as-employee* framing in a randomized experiment and find it **causes the failure modes that would prevent Masad's prediction from being a productive end-state** — accountability shifts to the (non-accountable) AI; escalation balloons; error-catching drops; professional-identity crisis. The disagreement turns on what the *agentic future* operating model looks like: Masad's framing implicitly accepts the AI-employee construct as the destination, while Kropp et al. argue the construct itself is the failure mode and prescribe AI-as-software-with-human-accountability instead. Both sources may be right at different time horizons — Masad's prediction at 5–10 year horizon; Kropp et al.'s findings at the present operational-redesign horizon. The wiki holds both, with this edge naming the productive tension at the operating-model layer.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)",
+    "graph: concepts/ai-employment-effects <--supports<-- this (1 hop)",
+    "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees -->contradicts--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.006667,
+   "fused_score": 0.382,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-06-mit-ocw-future-of-mit-open-education",
+   "path": "wiki/sources/2026-05-06-mit-ocw-future-of-mit-open-education.md",
+   "type": "source",
+   "title": "The Future of MIT Open Education",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "MIT as institutional adopter — financial-sustainability constraint (subsidy dropping to $0 in 4 years) forces a hybrid free-and-paid model; phased platform consolidation (MIT Learn unifying OCW/MITx/Professional Ed by July 2026); AI translation/personalization as the new abstraction layer",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.006579,
+   "fused_score": 0.377,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china",
+   "path": "wiki/sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china.md",
+   "type": "source",
+   "title": "AI Agents: Cool Demos vs Real Revenue — What Western E-Commerce Can Learn from China",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "explicitly cites the BCG / PwC / McKinsey 'every company does AI, very few see economic value' adoption gap — and locates the gap in (a) trust deficit, (b) demos-vs-scale-failure, (c) silo-vs-ecosystem mismatch, (d) cost-vs-growth framing",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.006494,
+   "fused_score": 0.372,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-12-mgi-virtual-event-race-takes-off-next-big-arenas",
+   "path": "wiki/sources/2026-05-12-mgi-virtual-event-race-takes-off-next-big-arenas.md",
+   "type": "source",
+   "title": "The race takes off in the next big arenas of competition (MGI virtual event)",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "Q&A surfaces the 'omniscalers generate more cash each year than US banks lend in fresh loans to US businesses' framing — a more visceral firm-vs-banking-system scale anchor than the PDF's raw numbers",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.00641,
+   "fused_score": 0.368,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/document-intelligence",
+   "path": "wiki/concepts/document-intelligence.md",
+   "type": "concept",
+   "title": "document-intelligence",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "part-of",
+     "via": "document understanding is a load-bearing capability for enterprise AI on unstructured back/front-office data",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--part-of<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.72,
+   "accessed_at": "2026-07-01",
+   "last_confirmed": "2026-06-15",
+   "days_since_access": 61,
+   "effective_confidence": 0.366,
+   "rrf_score": 0.007937,
+   "fused_score": 0.361,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/ai-knowledge-hiding",
+   "path": "wiki/concepts/ai-knowledge-hiding.md",
+   "type": "concept",
+   "title": "ai-knowledge-hiding",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "instance-of",
+     "via": "a named human-factor failure mode of adoption — individually-discovered AI workflows stay private, so collective productivity gains never materialize even when individual adoption is high",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--instance-of<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.7,
+   "accessed_at": "2026-06-16",
+   "last_confirmed": "2026-06-16",
+   "days_since_access": 76,
+   "effective_confidence": 0.301,
+   "rrf_score": 0.008197,
+   "fused_score": 0.36,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells",
+   "path": "wiki/sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells.md",
+   "type": "source",
+   "title": "How One of Asia's Biggest Retailers Is Reinventing the Way It Sells",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "first wiki source naming a *named CEO-level public articulation of agentic-AI as a strategic threat to the customer relationship*, plus a three-axis framework for AI investment (personalization / cost management / running a better business) used at scale in a multi-brand multi-country retail incumbent",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.00625,
+   "fused_score": 0.358,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/founder-led-sales",
+   "path": "wiki/concepts/founder-led-sales.md",
+   "type": "concept",
+   "title": "founder-led-sales",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "founder-led-sales findings corroborate the demand-side adoption gap from the seller's chair — AI interest that doesn't convert (attention mistaken for traction; 'everyone wants AI but has no budget yet')",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.8,
+   "accessed_at": "2026-07-01",
+   "last_confirmed": "2026-06-25",
+   "days_since_access": 61,
+   "effective_confidence": 0.406,
+   "rrf_score": 0.007353,
+   "fused_score": 0.342,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-13-jha-emergent-democratizing-app-building-with-claude",
+   "path": "wiki/sources/2026-05-13-jha-emergent-democratizing-app-building-with-claude.md",
+   "type": "source",
+   "title": "How Emergent is making app building more accessible with Claude",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "Counter-case to the slow-enterprise-adoption framing: Emergent reached *$100M ARR in 8 months* by serving non-enterprise (SMB + entrepreneur + domain-expert) users. CEO names the deliberate enterprise → consumer/SMB pivot after observing that *'adoption in enterprise is going to be slow'* — the wiki's clearest 2026 named instance of *adoption-velocity asymmetry favouring the long tail*.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.7,
+   "accessed_at": "2026-05-20",
+   "last_confirmed": "2026-05-20",
+   "days_since_access": null,
+   "effective_confidence": 0.7,
+   "rrf_score": 0.006329,
+   "fused_score": 0.34,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care",
+   "path": "wiki/sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care.md",
+   "type": "source",
+   "title": "AI for Interoperability in Health Care: Philips's Carla Goulart Peron",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-07-ransbotham-augmented-learners",
+     "edge_type": "supports",
+     "via": "Same-host pairing — [[Sam Ransbotham]] is the Me, Myself, and AI podcast host *and* the lead author of the MIT SMR × BCG annual *Augmented Learners* report. Different formats (long-form interview vs annual research report), same host's intellectual frame: AI-and-organizational-learning as the load-bearing question. Peron's *radiology-trained-on-normal-images* problem (if AI flags only abnormal, how do new radiologists learn what normal looks like?) is a clean clinical-domain instance of the Ransbotham-et-al. *augmented-learners* concern about how organizational learning compounds — or fails to — under AI substitution of routine work.",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships",
+     "edge_type": "supports",
+     "via": "Peron's radiology-displacement-that-didn't-happen + the *AI-is-here-to-add-not-to-take-over* repeated frame is a clinician-vantage qualitative confirmation of MGI's quantitative finding that **clinicians sit in the *people-centric* occupation archetype** (34% of US workforce, $71k avg pay — the *physical-and-interpersonal-protected* segment whose tasks current AI cannot replicate). MGI: *people-centric* quadrant includes registered nurses, psychologists, firefighters (and by implication physicians). Peron from inside the Philips CMO role, with São Paulo public-system grounding, lands the same finding at qualitative-practitioner altitude.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-07-ransbotham-augmented-learners <--supports<-- this (1 hop)",
+    "graph: sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005814,
+   "fused_score": 0.333,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+   "path": "wiki/sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer.md",
+   "type": "source",
+   "title": "Build core skills to thrive as an AI-era developer",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-07-ransbotham-augmented-learners",
+     "edge_type": "supports",
+     "via": "the *scientific mindset* fifth pattern — *'every week our engineers are experimenting with new approaches and investing in codifying that learning back into the system'* — is the engineering-team operationalisation of the Augmented Learner 2×2 (org-learning × AI-specific learning); both pair experimentation with deliberate capture of learnings",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-07-ransbotham-augmented-learners <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.8,
+   "accessed_at": "2026-05-21",
+   "last_confirmed": "2026-05-21",
+   "days_since_access": null,
+   "effective_confidence": 0.8,
+   "rrf_score": 0.005882,
+   "fused_score": 0.33,
+   "verdict": "use",
+   "reason": "what the top level looks like as behaviour: five patterns, the T-shape, delegate-tasks-not-judgment",
+   "reason_class": null,
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces",
+   "path": "wiki/sources/2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces.md",
+   "type": "source",
+   "title": "AI Will Reshape More Jobs Than It Replaces",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era",
+     "edge_type": "supports",
+     "via": "both argue from survey evidence that the AI-and-jobs story is a productivity-and-skills story rather than a headcount story, and both report firms redesigning roles rather than cutting them; Brown adds cases of employers increasing entry-level hiring by 25% on an explicit leadership-pipeline rationale",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-04-28-brynjolfsson-canaries-coal-mine",
+     "edge_type": "supports",
+     "via": "corroborates entry-level/junior exposure as the leading edge of disruption (BCG's Divergent segment: entry-level positions most exposed while senior responsibilities persist)",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+     "edge_type": "supports",
+     "via": "companion BCG labor analysis with overlapping authors (Kropp, Bedard, Krayer, Hsu) — the workforce-segmentation half of the same BCG view that 'don't treat agents like employees, redesign the work'",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era -->supports--> this (1 hop)",
+    "graph: sources/2026-04-28-brynjolfsson-canaries-coal-mine <--supports<-- this (1 hop)",
+    "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005747,
+   "fused_score": 0.33,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "entities/David-Kiron",
+   "path": "wiki/entities/David-Kiron.md",
+   "type": "entity",
+   "title": "David-Kiron",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-07-ransbotham-augmented-learners",
+     "edge_type": "authored-by",
+     "via": null,
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-07-ransbotham-augmented-learners <--authored-by<-- this (1 hop)"
+   ],
+   "missing": true,
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.006098,
+   "fused_score": 0.327,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+   "path": "wiki/sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity.md",
+   "type": "source",
+   "title": "The Biggest AI Opportunity Isn't Replacing People | Stanford Economist",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era",
+     "edge_type": "contradicts",
+     "via": "the same question — what is happening to entry-level employment right now — answered from survey/interview evidence and from payroll data ten days apart, in different directions. Brown: 'the most dire headlines about entry-level jobs are not yet backed up by data', citing organisations increasing entry-level hiring. Brynjolfsson, from ADP payroll records: employment for workers aged 22-26 in the most AI-exposed occupations fell ~13% at first measurement and is now 'up to 16 or 17%', an effect 'kind of growing over time'. The disagreement turns on the evidence base (what employers say they intend, versus what payroll shows they did) and on scope (all entry-level roles versus the top exposure quintile)",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era -->contradicts--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005682,
+   "fused_score": 0.326,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/generative-ai",
+   "path": "wiki/concepts/generative-ai.md",
+   "type": "concept",
+   "title": "generative-ai",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "caused",
+     "via": "the 2024 jump from 55% → 78% adoption was driven by GenAI specifically",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--caused<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-05-28",
+   "last_confirmed": "2026-05-28",
+   "days_since_access": 95,
+   "effective_confidence": 0.331,
+   "rrf_score": 0.007246,
+   "fused_score": 0.324,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/durable-skills",
+   "path": "wiki/concepts/durable-skills.md",
+   "type": "concept",
+   "title": "durable-skills",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/ai-employment-effects",
+     "edge_type": "instance-of",
+     "via": "the labour-market consequences turn on which skills remain valuable; durable skills are the supply-side answer",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/ai-employment-effects <--instance-of<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-08-30",
+   "last_confirmed": "2026-08-30",
+   "days_since_access": 1,
+   "effective_confidence": 0.94,
+   "rrf_score": 0.005435,
+   "fused_score": 0.324,
+   "verdict": "use",
+   "reason": "what is being matured - the judgment/evaluation bundle, and AI fluency as a learnable meta-skill",
+   "reason_class": null,
+   "promoted": null
+  },
+  {
+   "slug": "entities/MIT-Sloan-Management-Review",
+   "path": "wiki/entities/MIT-Sloan-Management-Review.md",
+   "type": "entity",
+   "title": "MIT-Sloan-Management-Review",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-07-ransbotham-augmented-learners",
+     "edge_type": "published-by",
+     "via": null,
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-04-28-mit-sloan-ai-maturity",
+     "edge_type": "published-by",
+     "via": null,
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-07-ransbotham-augmented-learners <--published-by<-- this (1 hop)",
+    "graph: sources/2026-04-28-mit-sloan-ai-maturity <--published-by<-- this (1 hop)"
+   ],
+   "missing": true,
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.006024,
+   "fused_score": 0.323,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services",
+   "path": "wiki/sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services.md",
+   "type": "source",
+   "title": "Agentic AI and the Future of Global Business Services",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era",
+     "edge_type": "supports",
+     "via": "both name the entry-level rung as the binding constraint rather than a side effect — Peters's 'if a lot of that layer of talent goes away, we're going to have to come up with new mechanisms to train people' and Brown's 'employers are asking for seven times greater seniorized skills… it's not going to happen by osmosis' are the same problem stated from consulting-operations and workforce-research vantages three weeks apart",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005618,
+   "fused_score": 0.322,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "entities/Sam-Ransbotham",
+   "path": "wiki/entities/Sam-Ransbotham.md",
+   "type": "entity",
+   "title": "Sam-Ransbotham",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-07-ransbotham-augmented-learners",
+     "edge_type": "authored-by",
+     "via": null,
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-07-ransbotham-augmented-learners <--authored-by<-- this (1 hop)"
+   ],
+   "missing": true,
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005952,
+   "fused_score": 0.32,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-14-thompson-the-daily-workers-letting-ai-do-their-jobs",
+   "path": "wiki/sources/2026-04-14-thompson-the-daily-workers-letting-ai-do-their-jobs.md",
+   "type": "source",
+   "title": "The Workers Letting A.I. Do Their Jobs",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/ai-employment-effects",
+     "edge_type": "supports",
+     "via": "Brynjolfsson cited for 16% drop in software-developer hires — fresh empirical anchor on the AI-jobs question",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/ai-employment-effects <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005376,
+   "fused_score": 0.308,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "syntheses/organizational-frameworks-for-ai-adoption",
+   "path": "wiki/syntheses/organizational-frameworks-for-ai-adoption.md",
+   "type": "synthesis",
+   "title": "organizational-frameworks-for-ai-adoption",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "instance-of",
+     "via": "synthesizes 6 frameworks describing different decision layers within enterprise AI adoption",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--instance-of<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.9,
+   "accessed_at": "2026-07-15",
+   "last_confirmed": "2026-07-15",
+   "days_since_access": 47,
+   "effective_confidence": 0.534,
+   "rrf_score": 0.006173,
+   "fused_score": 0.306,
+   "verdict": "ignore",
+   "reason": "effective_confidence 0.53 and the same ground is covered fresher by W2/W8",
+   "reason_class": "decayed",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era",
+   "path": "wiki/sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era.md",
+   "type": "source",
+   "title": "Stanford CS153 Frontier Systems | Nikhyl Singhal from Skip on Product Management in the AI Era",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/ai-employment-effects",
+     "edge_type": "supports",
+     "via": "concrete operator-class numbers — 30-70% layoffs in big tech this calendar year (Salesforce / Block / Snap referenced); top-1% PM salaries more than doubled in 18 months; four product-leader contracts crossed eight figures annual; middle-managers (8-15 years tenure) are the named at-risk class",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/ai-employment-effects <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005319,
+   "fused_score": 0.305,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-06-10-anicich-brouwers-why-employees-arent-transparent-ai-usage",
+   "path": "wiki/sources/2026-06-10-anicich-brouwers-why-employees-arent-transparent-ai-usage.md",
+   "type": "source",
+   "title": "Why Employees Aren't Transparent About Their AI Usage",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-04-28-mit-sloan-ai-maturity",
+     "edge_type": "supports",
+     "via": "both locate the binding constraint on AI value capture in organizational/human factors rather than technology — Anicich & Brouwers cite a Stanford 51-deployment study finding 77% of the hardest adoption challenges are non-technical (incl. earning trust from skeptical teams), the same human-maturity gap the MIT Sloan maturity work documents",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-04-28-mit-sloan-ai-maturity <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005263,
+   "fused_score": 0.302,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2025-06-01-autor-thompson-expertise",
+   "path": "wiki/sources/2025-06-01-autor-thompson-expertise.md",
+   "type": "source",
+   "title": "Expertise",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-04-28-brynjolfsson-canaries-coal-mine",
+     "edge_type": "supports",
+     "via": "Autor-Thompson's expertise framework supplies a theoretical mechanism for Brynjolfsson et al.'s empirical codified-vs-tacit-knowledge finding — codified, procedural knowledge is disproportionately the *inexpert* task content that gets automated first and lowers wages, while tacit, judgment-heavy knowledge is disproportionately the *expert* task content whose removal (or retention) raises wages, matching why young workers (who supply relatively more codified than tacit knowledge) are hit hardest",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-04-28-brynjolfsson-canaries-coal-mine <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005208,
+   "fused_score": 0.299,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/ai-deskilling",
+   "path": "wiki/concepts/ai-deskilling.md",
+   "type": "concept",
+   "title": "ai-deskilling",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/ai-employment-effects",
+     "edge_type": "instance-of",
+     "via": "task-composition shift is one specific mechanism within broader employment effects",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/ai-employment-effects <--instance-of<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.85,
+   "accessed_at": "2026-08-12",
+   "last_confirmed": "2026-08-12",
+   "days_since_access": 19,
+   "effective_confidence": 0.688,
+   "rrf_score": 0.005556,
+   "fused_score": 0.297,
+   "verdict": "ignore",
+   "reason": "the productive-struggle countermeasure is cited via W6, which states it operationally",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai",
+   "path": "wiki/sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai.md",
+   "type": "source",
+   "title": "Labor market impacts of AI: A new measure and early evidence",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-04-28-brynjolfsson-canaries-coal-mine",
+     "edge_type": "supports",
+     "via": "independently echoes the Brynjolfsson young-worker finding (a hiring slowdown into exposed occupations for ages 22–25) using CPS job-start panels rather than ADP payroll — corroboration via a different dataset, while finding the effect 'barely statistically significant'",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-04-28-brynjolfsson-canaries-coal-mine <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005155,
+   "fused_score": 0.296,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-06-03-falk-tsoukalas-the-ai-layoff-trap",
+   "path": "wiki/sources/2026-06-03-falk-tsoukalas-the-ai-layoff-trap.md",
+   "type": "source",
+   "title": "The AI Layoff Trap",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-04-28-brynjolfsson-canaries-coal-mine",
+     "edge_type": "supports",
+     "via": "cited directly in that paper's introduction as empirical motivation for the incomplete-income-replacement (η < 1) regime its over-automation result depends on — this paper's entry-level decline finding is the concrete evidence that displaced income is not being fully reabsorbed",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-04-28-brynjolfsson-canaries-coal-mine -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005102,
+   "fused_score": 0.293,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/ai-washing",
+   "path": "wiki/concepts/ai-washing.md",
+   "type": "concept",
+   "title": "ai-washing",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/ai-employment-effects",
+     "edge_type": "part-of",
+     "via": "the attribution/narrative confound layer of the AI-employment question — why the AI-as-cited-reason-for-layoffs signal is hard to take at face value",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/ai-employment-effects <--part-of<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.77,
+   "accessed_at": "2026-08-20",
+   "last_confirmed": "2026-08-20",
+   "days_since_access": 11,
+   "effective_confidence": 0.681,
+   "rrf_score": 0.005495,
+   "fused_score": 0.292,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai",
+   "path": "wiki/sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai.md",
+   "type": "source",
+   "title": "Redefining What Efficiency Means in the Age of AI",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-04-28-brynjolfsson-canaries-coal-mine",
+     "edge_type": "supports",
+     "via": "Brynjolfsson supplies the empirical data that augmentative AI use does not displace labour while automative use does; Storoni supplies the normative organisational prescription for what augmentation-pole work *should look like* (gear-2 quality work for humans, gear-3 quantity work delegated to AI). Storoni is prescriptive where Brynjolfsson is descriptive — together they form the descriptive-floor + prescriptive-ceiling pair for the augmentation argument.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-04-28-brynjolfsson-canaries-coal-mine <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005,
+   "fused_score": 0.287,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-21-jones-stanford-gsb-ai-and-our-economic-future",
+   "path": "wiki/sources/2026-05-21-jones-stanford-gsb-ai-and-our-economic-future.md",
+   "type": "source",
+   "title": "\"A.I. and Our Economic Future,\" Professor Chad Jones",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-04-28-brynjolfsson-canaries-coal-mine",
+     "edge_type": "supports",
+     "via": "**Empirical-anchor (Brynjolfsson) + theoretical-anchor (Jones) pair on the same AI-and-labour question.** Brynjolfsson is finding *measured declines concentrated in automation share, not augmentation share* (the canaries-in-coal-mine empirical signal); Jones provides the *weak-links theoretical model* that explains *why* labour-substitution can simultaneously be true (automating tasks) and produce stable-or-rising wages for the workers in roles where weak-links remain. The two together let the wiki anchor the 2026 AI-and-labour discussion at *empirical anomaly + theoretical mechanism* simultaneously.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-04-28-brynjolfsson-canaries-coal-mine <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.00495,
+   "fused_score": 0.284,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+   "path": "wiki/sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs.md",
+   "type": "source",
+   "title": "The new human-machine workforce: How agentic AI will transform jobs",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-04-28-brynjolfsson-canaries-coal-mine",
+     "edge_type": "supports",
+     "via": "Giles's summary of *'a Stanford study'* showing 22-25 year-olds with a 6% employment decline in AI-exposed occupations late 2022 → September 2025, while older workers gained 6-9%, **is the [[Erik Brynjolfsson|Brynjolfsson]] *Canaries in the Coal Mine* paper** ([[Stanford Digital Economy Lab]]). Giles attributes it generically rather than naming the authors. The Giles framing puts the Canaries finding into an executive-readership employment-effect news survey, alongside the April-2026 Challenger-Gray-Christmas layoff data, the Block/Meta single-firm announcements, and the NACE late-2025 survey (183 employers, only 14% considered replacing entry-level roles with AI). The Canaries paper supplies the load-bearing academic empirical signal that Giles's executive-readership account leans on.",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships",
+     "edge_type": "supports",
+     "via": "Convergent on the **skills-matter-more-than-job-titles** macro-trend and the **agent-centric occupation cluster** prediction. Giles names *'a world in which skills matter more than formal job titles'* and *'more gig-like work within companies'* as expected outcomes in the lead key-takeaways. MGI (Nov 2025) quantifies the same shift via the **Skill Change Index** + the **agent-centric quadrant** (30% of US workforce, $70k avg pay — knowledge-work occupations where the wage-premium is at risk). The Coursera 2026 Job Skills Report Giles cites — *120% YoY growth in critical-thinking-course enrollments* across 6M learners — is the demand-side empirical anchor for MGI's *skill-evolution-not-elimination* finding.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-04-28-brynjolfsson-canaries-coal-mine <--supports<-- this (1 hop)",
+    "graph: sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004902,
+   "fused_score": 0.281,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+   "path": "wiki/sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going.md",
+   "type": "source",
+   "title": "A rational conversation on where AI is actually going | Benedict Evans",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-04-28-brynjolfsson-canaries-coal-mine",
+     "edge_type": "contradicts",
+     "via": "Same methodological disagreement as with Dell'Acqua. Brynjolfsson-style work on AI-exposure quantifies the fraction of tasks within an occupation that overlap with model capabilities (the *canaries-in-the-coalmine* framework rests on task-level decomposition). Evans rejects task-level decomposition as the framework, calling occupation-by-task analysis *'this is the logical systems problem ... expert systems problem'* — i.e. the same approach computer vision tried and abandoned. Evans does not deny the empirical pattern Brynjolfsson surfaces; he disputes that one can read *X% of a senior partner's work is automatable* off such an analysis.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-04-28-brynjolfsson-canaries-coal-mine <--contradicts<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004854,
+   "fused_score": 0.278,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-01-lf-state-of-tech-talent-global-2026",
+   "path": "wiki/sources/2026-05-01-lf-state-of-tech-talent-global-2026.md",
+   "type": "source",
+   "title": "2026 State of Tech Talent Report: Not a jobs crisis, but a skills crisis with an upskilling answer",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-04-28-brynjolfsson-canaries-coal-mine",
+     "edge_type": "supports",
+     "via": "survey-side complement to the ADP-payroll finding: AI is not reducing aggregate IT demand (net hiring +26%/+31%); only the largest orgs report negative net hiring (-4%)",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-04-28-brynjolfsson-canaries-coal-mine <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.75,
+   "accessed_at": null,
+   "last_confirmed": "2026-06-08",
+   "days_since_access": null,
+   "effective_confidence": 0.75,
+   "rrf_score": 0.005051,
+   "fused_score": 0.277,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+   "path": "wiki/sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening.md",
+   "type": "source",
+   "title": "Hoe AI de sectoren IT en zakelijke dienstverlening verandert",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-04-28-brynjolfsson-canaries-coal-mine",
+     "edge_type": "supports",
+     "via": "occupational-exposure measurement of automation potential (ILO/Gmyrek) corroborating the entry-level/compositional shift — RaboResearch's NL/sector vantage echoes the executing→advisory role shift and the decline of junior roles that the US ADP-payroll Canaries finding documents",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-04-28-brynjolfsson-canaries-coal-mine <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004762,
+   "fused_score": 0.273,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-07-14-khan-academy-ceo-the-real-ai-opportunity-is-in-boring-industries-sal-khan",
+   "path": "wiki/sources/2026-07-14-khan-academy-ceo-the-real-ai-opportunity-is-in-boring-industries-sal-khan.md",
+   "type": "source",
+   "title": "Khan Academy CEO: The Real AI Opportunity Is in Boring Industries | Sal Khan",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-04-28-brynjolfsson-canaries-coal-mine",
+     "edge_type": "supports",
+     "via": "Khan's secondhand account of a VC portfolio company automating 80% of its Philippines-based call-center workforce with generative AI is a concrete, named-sector instance of exactly the entry-level/automation-exposed displacement pattern Brynjolfsson's ADP data documents — a different vantage (practitioner anecdote vs. large-N payroll data) converging on the same mechanism",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-04-28-brynjolfsson-canaries-coal-mine <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004717,
+   "fused_score": 0.27,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+   "path": "wiki/sources/2025-06-09-krakowski-human-centered-ai-field-experiment.md",
+   "type": "source",
+   "title": "Human-Centered Artificial Intelligence: A Field Experiment",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work",
+     "edge_type": "supports",
+     "via": "**Two-field-experiment pair on the augmentation pole — one shows the success case, one shows the failure case.** Brynjolfsson-Li-Raymond (QJE 2025, customer-support AI deployed in a real call center): augmentation under deliberate human-in-the-loop design produces **+15% productivity** with strong equalizing effect (low-skill +30%, high-skill ~0% with small quality decline). Krakowski et al. (Management Science 2025, AI sales-support system in Nordic pharma): **untailored augmentation produces NEGATIVE performance effects vs the legacy IT control**, while tailored interaction (aligned to sales experts' cognitive styles per Kirton 1976) produces positive effects vs both untailored and control. The two papers together complete the augmentation-pole evidence base: *augmentation can produce +15% or it can produce negative outcomes, depending on the interaction-design discipline applied*. Brynjolfsson-Li-Raymond's deployment was *explicitly designed to augment* (agents have full discretion to accept/edit/ignore suggestions; system declines to suggest when training is insufficient) — i.e. *tailored* in Krakowski's vocabulary. Krakowski supplies the empirical evidence that *without that design discipline, the same augmentation technology turns negative*. The two-source convergence sharpens the [[automation-vs-augmentation]] cut: **augmentation is contingent on interaction-design, not guaranteed by deployment choice**.",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+     "edge_type": "supports",
+     "via": "**Two 2026 RCT-grade empirical sources on the *organisational-design dimension* of AI deployment outcomes — published 11 months apart.** Krakowski et al. (Management Science, online June 2025): N=72 Nordic pharma sales experts DiD, four interaction parameters (work procedure / decision authority / training / incentives) × two cognitive styles (adaptor / innovator) → tailored = positive, untailored = negative vs legacy IT. Kropp et al. (HBR / BCG Henderson Institute, May 2026): N=1,261 HR/finance managers randomised experiment, AI-tool vs AI-employee framing → AI-employee framing causes 9pp accountability drop, 44% more escalation, 18% fewer errors caught. Both papers test **organisational design choices** as causal variables in AI-deployment outcomes (Krakowski: interaction-context parameters; Kropp et al.: framing/anthropomorphizing) and find that **apparently-administrative choices materially change performance and accountability outcomes**. Both papers prescribe explicit interaction-design over default deployment as the operative lever. Two-source convergence at advisor-altitude (BCG Henderson Institute) and academic-altitude (Management Science) on the same underlying claim.",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships",
+     "edge_type": "supports",
+     "via": "**Individual-level tailoring + firm-level workflow redesign as paired levers.** Krakowski et al. (*Management Science* 2025, Nordic pharma DiD, N=72): untailored AI augmentation gradually decreases market share vs the legacy-IT control; tailored AI per Kirton 1976 cognitive style produces positive effects across four interaction-design parameters (*work procedure / decision-making authority / training / incentives*). MGI (Yee et al., Nov 2025): the workflow-redesign-not-task-automation prescription — *<40% of companies that have invested in AI report measurable gains* despite ~90% investing; the gap is workflow integration, not technology adoption — *'the difference between offering employees access to a chatbot for ad hoc use and deploying custom agents alongside people in a reimagined process'*. Krakowski's cognitive-style-tailoring is the **individual-interaction-design** layer; MGI's workflow redesign is the **firm-process-design** layer. Same load-bearing claim — *tailored intervention beats blanket prescription* — at two stack altitudes. Both anchor the W&W `digital-transforming/redesigning-internal-structures` cell with empirical evidence (Krakowski) and prospective structural modeling (MGI).",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work <--supports<-- this (1 hop)",
+    "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees <--supports<-- this (1 hop)",
+    "graph: sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": 0.85,
+   "accessed_at": null,
+   "last_confirmed": "2026-05-25",
+   "days_since_access": null,
+   "effective_confidence": 0.85,
+   "rrf_score": 0.004673,
+   "fused_score": 0.268,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-06-01-lf-state-of-tech-talent-europe-2026",
+   "path": "wiki/sources/2026-06-01-lf-state-of-tech-talent-europe-2026.md",
+   "type": "source",
+   "title": "2026 State of Tech Talent Europe: AI, technical hiring, and the skills gap in Europe",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-04-28-brynjolfsson-canaries-coal-mine",
+     "edge_type": "supports",
+     "via": "direct corroboration of the entry-level-decline thesis: Europe shows a -3% contraction in entry-level technical roles (vs +14% rest of world), risking a future mid-to-senior shortage",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-04-28-brynjolfsson-canaries-coal-mine <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.75,
+   "accessed_at": null,
+   "last_confirmed": "2026-06-08",
+   "days_since_access": null,
+   "effective_confidence": 0.75,
+   "rrf_score": 0.004808,
+   "fused_score": 0.264,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting",
+   "path": "wiki/sources/2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting.md",
+   "type": "source",
+   "title": "How McKinsey Plans to Survive AI (and Reinvent Consulting)",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+     "edge_type": "supports",
+     "via": "**Consultant-altitude pair on enterprise AI transformation doctrine** (BCG + McKinsey). Sternfels (McKinsey, Feb 2026): McKinsey-altitude prescriptions for enterprise AI consulting transformation. Kropp et al. (BCG Henderson Institute, May 2026): BCG-altitude prescriptions for enterprise agentic-AI rollout. Both emphasise *workflow redesign over technology layering*, *explicit accountability mechanisms*, and *capability-building plans for humans managing agents*. The two top-of-market consulting firms' research arms converging on the same prescription set is the wiki's strongest two-firm anchor on enterprise-AI-transformation governance to date.",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships",
+     "edge_type": "supports",
+     "via": "**McKinsey-firm + MGI consultant-altitude pair on the workflow-redesign prescription.** Sternfels (McKinsey Global Managing Partner, HBR IdeaCast Feb 2026): *'half, if not more, of the secret sauce is organizational change as opposed to technology implementation'*; flatter orgs + workflow consolidation; consulting-engagement-evidence vantage. Yee et al. (MGI, Nov 2025): the same prescription with structural-modeling evidence — *'realising these gains requires more than automating individual tasks. It will mean redesigning entire workflows so that people, agents, and robots can work together effectively'*; the **<40% of companies report measurable gains** statistic is the workflow-redesign-disciplines-against-task-automation empirical anchor; 190 business processes mapped across 16 functions; ~60% of potential gains concentrated in sector-specific workflow domains. McKinsey-firm leadership (Sternfels) supplies the operating-doctrine narrative; MGI (Yee et al.) supplies the structural-modeling substrate. Two McKinsey altitudes — practitioner-firm + research-institute — converging on the same workflow-redesign-not-task-automation thesis.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees -->supports--> this (1 hop)",
+    "graph: sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004587,
+   "fused_score": 0.263,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-28-warner-wager-dynamic-capabilities-digital-transformation",
+   "path": "wiki/sources/2026-04-28-warner-wager-dynamic-capabilities-digital-transformation.md",
+   "type": "source",
+   "title": "Building Dynamic Capabilities for Digital Transformation: An Ongoing Process of Strategic Renewal",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+     "edge_type": "supports",
+     "via": "**Empirical operationalisation of the W&W *redesigning-internal-structures* + *organizational-culture* microfoundations.** Where W&W frame structural redesign and cultural renewal as theoretical microfoundations of digital-transforming + strategic-renewal capabilities, Kropp et al. add a **specific RCT-grade empirical hazard**: the apparently-cultural choice of *how to frame AI in the org* (tool vs employee) materially changes accountability and quality outcomes. The framing is not merely symbolic — it is a load-bearing microfoundation in the W&W sense.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004545,
+   "fused_score": 0.261,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-02-dutt-chatterji-ai-experimentation-to-transformation",
+   "path": "wiki/sources/2026-05-02-dutt-chatterji-ai-experimentation-to-transformation.md",
+   "type": "source",
+   "title": "How to Move from AI Experimentation to AI Transformation",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+     "edge_type": "supports",
+     "via": "**Same micro-productivity-trap diagnosis, different lever named.** Dutt et al. (Bain/OpenAI, May 2026): *micro-productivity-trap* mechanism — task-level AI gains failing to translate to firm-level value; named sub-modes *offering lock-in* and *process lock-in*. Kropp et al. (BCG Henderson Institute, May 2026): same firm-level-value-gap, with a third named sub-mode — **anthropomorphizing lock-in**: organisations that frame AI as employees end up with diffused accountability, more escalation, lower review quality, and identity disruption *without* meaningfully increasing adoption intent. The named mechanism is structurally a third sub-mode in the Dutt et al. taxonomy at the same advisor-altitude — BCG + Bain converging at near-identical timing.",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships",
+     "edge_type": "supports",
+     "via": "**Cross-consultancy convergence on workflow-as-unit-of-AI-value-capture.** Dutt + Chatterji (Bain/OpenAI Apr-May 2026): the **micro-productivity-trap** thesis — task-level AI gains failing to translate to firm-level results; two named lock-ins (*offering*, *process*); escape via the four-step transformation framework; 10–25% Bain client EBITDA gains contingent on transformation. Yee et al. (MGI, Nov 2025): the same task-vs-workflow distinction at structural-modeling altitude — *'applying AI to individual tasks within these legacy processes is unlikely to deliver the productivity gains now possible'*; ~$2.9T US economic value conditional on workflow redesign; 190 workflows mapped as the unit-of-analysis (16 functions across knowledge / frontline / production services). Bain + McKinsey/MGI **independent consultancies converging** on the workflow-as-unit-of-AI-redesign discipline — the wiki's strongest cross-consultancy structural evidence that the task-vs-workflow distinction is operationally load-bearing, not consulting-firm-specific framing. MGI's 4 worked cases (B2B sales, utility customer ops, biopharma medical writing, regional bank IT modernization) are the operational analogs of Bain's four-step transformation framework.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees -->supports--> this (1 hop)",
+    "graph: sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004505,
+   "fused_score": 0.258,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-08-running-an-ai-native-engineering-org",
+   "path": "wiki/sources/2026-05-08-running-an-ai-native-engineering-org.md",
+   "type": "source",
+   "title": "Running an AI-native engineering org",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+     "edge_type": "supports",
+     "via": "**Same redesign-the-process-not-the-org-chart prescription at HR/finance-manager altitude vs Anthropic-engineering-org altitude.** Fung (Anthropic): *'when agentic coding goes from individual tool to org-wide default, the tool isn't the hard part... your processes are.'* Kropp et al.: *'organizations cannot simply layer [AI] onto workflows built for human pace... CEOs need to redesign the work of both AI and humans.'* Five-point redesign list (workflows + role expectations; explicit personal accountability; capability-building plan; don't constrain agents to 1-for-1 roles; deliberate choices about human-work evolution) is the BCG/advisory-altitude version of Fung's *five norms rebuilt* list at Anthropic. Convergent at *processes / workflows are load-bearing*; complementary at the org-altitude — Fung at engineering-org level, Kropp et al. at HR/finance-management level.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": 0.8,
+   "accessed_at": null,
+   "last_confirmed": "2026-05-09",
+   "days_since_access": null,
+   "effective_confidence": 0.8,
+   "rrf_score": 0.004464,
+   "fused_score": 0.251,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-07-08-jensen-huang-why-companies-need-open-agent-systems",
+   "path": "wiki/sources/2026-07-08-jensen-huang-why-companies-need-open-agent-systems.md",
+   "type": "source",
+   "title": "Jensen Huang: Why companies need open agent systems",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+     "edge_type": "supports",
+     "via": "Shared topic — how much to anthropomorphize agentic systems. Huang (NVIDIA CEO) independently arrives at this article's core position in principle ('it's electrons, not atoms... a tool, like my vacuum cleaner... we tend to imbue too much human properties to it'), while in the same interview describing agent access-provisioning in HR-onboarding terms ('an HR system, if you will, for AI... a skills file') — a live instance of the framing gap this article's RCT measures.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004348,
+   "fused_score": 0.249,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner",
+   "path": "wiki/sources/2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner.md",
+   "type": "source",
+   "title": "Agentic AI: What Leaders Wish They Knew Sooner",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+     "edge_type": "contradicts",
+     "via": "Swift & Chan argue *manage agents like employees* (check output, performance-monitor, lifecycle/end-of-life) vs Kropp/BCG's anti-anthropomorphising thesis that the employee metaphor misassigns accountability — partial: both agree humans stay accountable",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees <--contradicts<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.00431,
+   "fused_score": 0.247,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-21-allen-aws-london-exec-forum-agentic-team-structures",
+   "path": "wiki/sources/2026-05-21-allen-aws-london-exec-forum-agentic-team-structures.md",
+   "type": "source",
+   "title": "London Executive Forum 2026 — A leader's guide to advanced team structures in an agentic world",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+     "edge_type": "supports",
+     "via": "**Independent empirical confirmation of the *managers-in-charge-of-agents* failure mode Allen names.** Allen (~22:48–23:10): *'we've gone from this pyramid... through to people trying to put managers or people in charge of agents. I haven't seen this working really well, because those domain experts need to understand that orchestration flow of what's going on.'* Kropp et al. supply the **RCT-grade empirical evidence** for *why* it doesn't work: in their N=1,261 randomized experiment, the *AI-employee framing* (vs *AI-tool framing*, holding everything else constant) caused — among managers in orgs that already have AI on their org charts — a **9pp drop in personal accountability** (with 8pp shift to the AI), **44% more escalation requests**, **18% fewer errors caught**, and (whole-sample) **13% higher uncertainty about professional identity**. Allen's named prescription (*'put humans on judgment work, agents on execution work'* + Brooklyn's *'human starts the work, human ends the work'*) and Kropp et al.'s five-point redesign recommendation converge on the same operational shape from independent vantages 15 days apart (May 6 → May 21). The convergence pattern: both reject the *AI-as-employee* framing AND prescribe *AI-as-software-with-clear-human-accountability + workflow-redesign* instead.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": 0.8,
+   "accessed_at": null,
+   "last_confirmed": "2026-07-15",
+   "days_since_access": null,
+   "effective_confidence": 0.8,
+   "rrf_score": 0.004386,
+   "fused_score": 0.246,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business",
+   "path": "wiki/sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business.md",
+   "type": "source",
+   "title": "How AI Agents Are Changing Business - PwC Chief AI Officer Dan Priest",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+     "edge_type": "supports",
+     "via": "Priest's defense of his agents ('that's the problem with the task... it's not the agent's fault') is a practitioner-level echo of Kropp's academic thesis that anthropomorphizing AI agents as employees leads to misplaced blame and poor workflow (re)design.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004274,
+   "fused_score": 0.245,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-19-garg-yc-internal-ai-agent-evolves-itself",
+   "path": "wiki/sources/2026-05-19-garg-yc-internal-ai-agent-evolves-itself.md",
+   "type": "source",
+   "title": "How to Build an Internal AI Agent That Evolves Itself",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+     "edge_type": "contradicts",
+     "via": "**Productive tension on the *one-agent-per-role* design pattern.** Garg (AnswerThis CEO, May 19): a 2-FTE startup running >$2M ARR via an *internal AI agent that processes >100 emails/day, closes support tickets, updates the CRM, and builds its own tools when needed*. Kropp et al. recommendation #4 explicitly: *'Don't constrain agents into 1-for-1 roles. The concept of “employee” assumes bounded roles, finite human capacity, and a hierarchy in which work is delegated to someone less experienced or knowledgeable. AI does not share these limits. A single agent can operate across many workflows; multiple agents can reshape one job.'* Garg's design is paradigmatically *one agent reshaping multiple traditional jobs* — which is *what Kropp recommend* — but Garg also describes the agent in *employee-style* language (*'a non-technical co-founder trains the agent by giving it feedback in Slack'* — feedback-loop language drawn from people management). The productive contradiction is at the *language layer*: same operational shape (one agent → many roles), opposite framings (Garg uses employee-style framing in his pitch; Kropp et al. recommend explicitly against it). Worth surfacing — both founder-altitude pragmatism (Garg) and advisory-altitude prescription (Kropp et al.) are operational, and the gap between them is *what the wiki cluster has been waving at* as the open question of agentic-AI organisational design.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees -->contradicts--> this (1 hop)"
+   ],
+   "stored_confidence": 0.75,
+   "accessed_at": "2026-05-21",
+   "last_confirmed": "2026-05-21",
+   "days_since_access": null,
+   "effective_confidence": 0.75,
+   "rrf_score": 0.004425,
+   "fused_score": 0.243,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-30-ai-index-report-2026",
+   "path": "wiki/sources/2026-04-30-ai-index-report-2026.md",
+   "type": "source",
+   "title": "Artificial Intelligence Index Report 2026",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships",
+     "edge_type": "supports",
+     "via": "**Two 2026-era panoramic AI reports at complementary layers.** Stanford HAI / Maslej et al. (*AI Index Report 2026*, Apr 2026): capability-and-investment layer — frontier-model benchmarks, training compute trends, investment patterns, geographic distribution. MGI / Yee et al. (*Agents, Robots, and Us*, Nov 2025): workforce-and-skills layer — technical automation potential by occupation, Skill Change Index, $2.9T economic value, workflow redesign as value-capture mechanism. Two **independent annual-panorama reports** at adjacent stack layers — AI Index measures *what AI can do*, MGI measures *what people will do when AI can do more*. The reports are designed to be read in tandem by leaders and policymakers; both 2026 publications are systematic structural anchors at their respective altitudes.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004237,
+   "fused_score": 0.243,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero",
+   "path": "wiki/sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero.md",
+   "type": "source",
+   "title": "Ondanks 80 miljoen omzet gooit Hans Scheffer zijn bedrijf volledig om met AI: 'Elke kantoorbaan voor een scherm verdwijnt'",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships",
+     "edge_type": "supports",
+     "via": "**Founder-CEO qualitative confirmation of MGI's quantitative *every-office-job-behind-screen-is-automatable* finding.** [[2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships|Yee et al. / MGI]] (November 2025): the **Skill Change Index** decomposes 57% US technical-automation-potential as **44% via agents (nonphysical office work) + 13% via robots (physical work)**; the agent-centric quadrant (30% of US occupations, $70k median wage — accountants, software developers, lawyers) is *where the knowledge-work wage premium is at risk*. Scheffer (May 2026, Dutch SME-founder-CEO vantage) names exactly the same observation in qualitative practitioner-altitude language: *'Elke kantoorbaan voor een scherm gaat verdwijnen ... Veel mensen onderschatten hoe snel dat gaat ... Heel veel banen die wij kennen, gaan gewoon echt verdwijnen.'* HelloPrint's **customer-service 100→18 worked example** (an entire department shrunk to 18% of its peak headcount, with AI delivering *'beter dan het niveau waarop mensen het kunnen doen'* — better than the level at which humans can do it) is a single-firm empirical anchor that lands inside MGI's *people-agent* + *agent-centric* archetypes. The wiki's first MGI-cross-reference at the **MKB-SME-founder-CEO vantage** — the same finding MGI quantifies across ~6,800 skills × ~1,800 occupations, Scheffer experiences inside a single €80M Dutch print platform.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004202,
+   "fused_score": 0.241,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-28-moon-mckinsey-rewiring-software-delivery-for-the-agentic-era",
+   "path": "wiki/sources/2026-05-28-moon-mckinsey-rewiring-software-delivery-for-the-agentic-era.md",
+   "type": "source",
+   "title": "Rewiring software delivery for the agentic era",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships",
+     "edge_type": "supports",
+     "via": "**Two McKinsey-internal vantages on the *44%-via-agents nonphysical-work* claim — MGI quantitative substrate + Tech-partner operational specification, 6 months apart.** [[2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships|Yee et al. / MGI]] (Nov 2025): the **Skill Change Index** + **57% US technical-automation-potential = 44% via agents (nonphysical) + 13% via robots (physical)** + the **workflow-not-task imperative** (*'190+ workflows mapped across 16 business functions as the operational unit-of-analysis; nearly 90% of companies say they have invested in AI, but fewer than 40% report measurable gains'*) + the **7-occupation-archetype framework** at the **MGI macroeconomic altitude**. Moon-Walsh-Di-Leo (May 2026, 6 months later, same McKinsey institutional context) supply the **tech-partner operational specification** of MGI's structural claim inside one domain (software delivery): the 24-hour sprint + factory of agents + knowledge graphs + ~60% team-size reduction. MGI names the *macro substrate at ~6,800 skills × ~1,800 occupations*; Moon-Walsh-Di-Leo land *inside the agent-centric quadrant* (one of MGI's seven archetypes) with software development as the worked example. Cross-McKinsey-internal converging declaration — same firm, two research arms (MGI + McKinsey Digital), same direction, 6-month delta.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004167,
+   "fused_score": 0.239,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-02-18-lyft-customer-support-with-claude",
+   "path": "wiki/sources/2026-02-18-lyft-customer-support-with-claude.md",
+   "type": "source",
+   "title": "How Lyft uses Claude for faster, more human customer support",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work",
+     "edge_type": "supports",
+     "via": "Lyft reports an 87% reduction in customer-support resolution time after deploying Claude (2023–25); Brynjolfsson, Li & Raymond's QJE 2025 paper measures +15% RPH in a 2020–21 GPT-3 deployment at a Fortune 500 support firm. Lyft is a 2026 practitioner data point on the same generative-AI-in-customer-support phenomenon at a different scale and with a frontier-model assistant; consistent with the augment-not-replace design pattern the QJE paper found most effective.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.6,
+   "accessed_at": "2026-05-20",
+   "last_confirmed": "2026-05-20",
+   "days_since_access": null,
+   "effective_confidence": 0.6,
+   "rrf_score": 0.00463,
+   "fused_score": 0.237,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-06-02-architecting-ai-native-organizations-redesign-work-at-scale-joe-beutler",
+   "path": "wiki/sources/2026-06-02-architecting-ai-native-organizations-redesign-work-at-scale-joe-beutler.md",
+   "type": "source",
+   "title": "Architecting AI-Native Organizations: How to Redesign Work at Scale — Joe Beutler",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships",
+     "edge_type": "supports",
+     "via": "workflow-not-task as the unit of value capture; Beutler's team agents fill MGI's middle layer between workforce tools and top-down initiatives",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.75,
+   "accessed_at": null,
+   "last_confirmed": "2026-06-06",
+   "days_since_access": null,
+   "effective_confidence": 0.75,
+   "rrf_score": 0.004132,
+   "fused_score": 0.227,
+   "verdict": "ignore",
+   "reason_class": "below-threshold",
+   "reason": "graph-only neighbour; no facet requires it",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-08-31-blum-how-i-ai-claude-cowork-pm-system",
+   "path": "wiki/sources/2026-08-31-blum-how-i-ai-claude-cowork-pm-system.md",
+   "type": "source",
+   "title": "2026-08-31-blum-how-i-ai-claude-cowork-pm-system",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [],
+   "stored_confidence": null,
+   "effective_confidence": null,
+   "fused_score": null,
+   "retrieval_reasons": [
+    "added at Step 5 gap-expansion (not in the 72-candidate ledger)"
+   ],
+   "verdict": "use",
+   "reason": "the corpus's only narrated end-to-end worker trajectory, with observable transition markers",
+   "reason_class": null,
+   "promoted": "gap-expansion"
+  },
+  {
+   "slug": "sources/2026-05-07-anthropic-economic-index-5-learning-curves",
+   "path": "wiki/sources/2026-05-07-anthropic-economic-index-5-learning-curves.md",
+   "type": "source",
+   "title": "2026-05-07-anthropic-economic-index-5-learning-curves",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [],
+   "stored_confidence": null,
+   "effective_confidence": null,
+   "fused_score": null,
+   "retrieval_reasons": [
+    "added at Step 5 gap-expansion (not in the 72-candidate ledger)"
+   ],
+   "verdict": "use",
+   "reason": "the empirical anchor that individual AI proficiency is real, learnable and measurable at population scale",
+   "reason_class": null,
+   "promoted": "gap-expansion"
+  }
+ ],
+ "expansions": [
+  {
+   "trigger_facet": "What observable markers distinguish levels for an individual worker?",
+   "method": "index.md",
+   "added": [
+    "sources/2026-08-31-blum-how-i-ai-claude-cowork-pm-system",
+    "sources/2026-05-07-anthropic-economic-index-5-learning-curves"
+   ],
+   "note": "Neither page surfaced in the 72-candidate ledger, yet the worker-marker facet was unanswerable without them. The Blum page was ingested hours earlier in this same session and IS in the qmd index (a targeted search scores it 97%) but did not rank into the top-12 seeds for this phrasing. The AEI learning-curves page was located by name via durable-skills [W7], which cites it."
+  }
+ ],
+ "answer_map": [
+  {
+   "anchor": "W1",
+   "claim": "Every AI-maturity instrument in the wiki measures the firm, not the worker; their success rates span 1%-13%.",
+   "pages": [
+    "threads/ai-maturity-measurement-comparison"
+   ],
+   "span": "## What we know so far; ## Updated cross-walk; ## A different unit of analysis: the individual worker"
+  },
+  {
+   "anchor": "W2",
+   "claim": "The four-stage ladder form, its 28/34/31/7 distribution, and the financial inflection sitting between Stage 2 and Stage 3 rather than at the top.",
+   "pages": [
+    "sources/2026-04-28-mit-sloan-ai-maturity"
+   ],
+   "span": "### The four stages of enterprise AI maturity; ### The financial inflection is at Stage 2 -> Stage 3"
+  },
+  {
+   "anchor": "W3",
+   "claim": "Maturity is better modelled on two axes than one; combining both produces non-additive gains (1.6x-2.2x); 59% score low on both; quadrants are median splits.",
+   "pages": [
+    "sources/2026-05-07-ransbotham-augmented-learners"
+   ],
+   "span": "## The 2x2 taxonomy; ## Headline outcomes; ## Limitations the report acknowledges"
+  },
+  {
+   "anchor": "W4",
+   "claim": "The observable transition markers for an individual: share of work inside one harness, who writes the system of record, whether the agent detects its own context gaps, whether skills log their own friction, whether the system has been distributed.",
+   "pages": [
+    "sources/2026-08-31-blum-how-i-ai-claude-cowork-pm-system"
+   ],
+   "span": "## TL;DR; ## Why this matters to the wiki; ## Debates and supersession"
+  },
+  {
+   "anchor": "W5",
+   "claim": "The J-curve trough: ROI runs negative first, trust falls, the worker double-checks everything; a cross-sectional measurement cannot tell a worker mid-climb from one who has failed.",
+   "pages": [
+    "concepts/micro-productivity-trap"
+   ],
+   "span": "## The J-curve narrated from inside a single job; ## The J-curve, and \"honestly, I think it's a little lazy\""
+  },
+  {
+   "anchor": "W6",
+   "claim": "What the top of the ladder looks like as behaviour: higher altitudes, shift-left on intent, designing environments rather than prompting, verification as the bottleneck, and \"delegate tasks, not judgment\".",
+   "pages": [
+    "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer"
+   ],
+   "span": "## Five patterns of top AI-native engineers; ## The evolved T-shape - four skill domains"
+  },
+  {
+   "anchor": "W7",
+   "claim": "What is maturing is the judgment/evaluation bundle rather than tool knowledge; evaluation is named the terminal skill; AI fluency is a learnable meta-skill.",
+   "pages": [
+    "concepts/durable-skills"
+   ],
+   "span": "## Working definition; ## Human skills growing twice as fast, and evaluating a fleet as the terminal skill"
+  },
+  {
+   "anchor": "W8",
+   "claim": "Worker maturity does not sum to firm maturity; distribution is a UX problem (3 days terminal vs 15-minute guided chat).",
+   "pages": [
+    "concepts/enterprise-ai-adoption"
+   ],
+   "span": "## Adoption from the bottom up: one worker's system, then a plugin for everyone"
+  },
+  {
+   "anchor": "W9",
+   "claim": "Individual AI proficiency is empirically real and learnable: high-tenure users show higher task-success rates after controls, and model selection tracks task value.",
+   "pages": [
+    "sources/2026-05-07-anthropic-economic-index-5-learning-curves"
+   ],
+   "span": "## TL;DR (chapter 2, Learning curves)"
+  }
+ ],
+ "answer": "### The short answer\n\n**The wiki does not contain a worker-level AI-maturity instrument — and that gap is itself the finding.** Every maturity model in the corpus measures the *firm*: MIT CISR's four stages, the AI Index's C-suite self-report, Cisco's readiness survey, and the HBR transformation baseline. Their \"success\" rates span 1% / 7% / 12% / 13% — a single order of magnitude across radically different instruments, which mostly tells you that *whatever you call success, it's rare* [W1]. None of them can say where a given person stands [W1].\n\nWhat the corpus *does* support is a defensible worker-level scale **composed** from three pieces it holds separately: a ladder *form*, a two-axis *structure*, and a set of observable *markers*. Below is that composition, with the joins made explicit.\n\n### 1. Borrow the ladder's shape from the firm-level model — including its most useful finding\n\nMIT CISR's enterprise ladder runs Experiment (28%) → Pilots (34%) → AI ways of working (31%) → AI future-ready (7%) [W2]. Two properties are worth carrying over to individuals:\n\n- **Stages are defined by *ways of working*, not by tool count.** The jump from Stage 2 to Stage 3 is \"expanding process automation, architecting for reuse\" — a change in how work is organised, not in which product is licensed [W2].\n- **The value is in the middle, not at the top.** The greatest financial impact comes from moving Stage 2 → Stage 3; Stages 1–2 sit below industry-average performance and 3–4 above [W2]. A worker scale should therefore locate its own inflection rather than treat the top rung as the only thing that matters.\n\n### 2. Make it two-dimensional, not one\n\nThe single strongest structural argument against a one-dimensional scale is Ransbotham et al.'s 2×2 [W3]. Scoring 3,467 respondents on *organisational learning* × *AI-specific learning* produces four quadrants — and the gains are **non-additive**: either capability alone helps somewhat, but combining them compounds (1.6× on uncertainty preparedness, up to 2.2× on talent disruption) [W3]. The majority — 59% — are low on both [W3].\n\nTransposed to the individual, the two axes become:\n\n- **AI fluency** — can you get good work out of the model? This is empirically real and *learnable*: after controlling for task type, model choice and conversation complexity, high-tenure users show systematically higher task-success rates, and their model selection tracks task value [W9]. It is a genuine meta-skill, not a personality trait [W7].\n- **Work-system design** — have you restructured *your own work* so the AI has context, reach and a place to put its output? This is the axis that firm-level instruments capture as \"ways of working\" [W2] and that the worker-level evidence shows is where the compounding actually happens [W4].\n\nThe reason a worker can be highly fluent and still low-maturity is that these are independent. Someone who writes excellent prompts all day into a stateless chat window is high on axis 1 and near-zero on axis 2 — and by the 2×2's logic gets a fraction of the available return [W3].\n\n### 3. The level markers — what to actually observe\n\nThe corpus's only end-to-end *narrated* worker trajectory supplies markers that are observable rather than self-assessed [W4]. Composed with the ladder form [W2], they yield five levels:\n\n| Level | Name | The marker that separates it from the level below |\n|---|---|---|\n| 1 | **Experimenting** | AI is used, but nothing survives the session — no saved context, no reusable artifact. |\n| 2 | **Repeating** | Reusable prompts/workflows exist, but the *human is the integration layer*, carrying context between tools by hand [W4]. |\n| 3 | **Integrating** | Work is centralised in one system that holds persistent context and reaches your real tools. The marker is a share: what fraction of your screen time happens inside it (Blum's is 70–80%) [W4]. |\n| 4 | **Delegating** | Work happens when you are not typing — scheduled tasks — and the agent *writes* to a system of record rather than only reading it. Blum's Notion board is \"almost read-only\" for him [W4]. The boundary that defines this level is Forsgren & Macvean's: **\"delegate tasks, not judgment\"** [W6]. |\n| 5 | **Compounding** | The system improves itself with your approval: it detects context it lacks and asks [W4], its skills log their own friction for weekly review [W4], and it has been packaged so someone else can use it [W4]. |\n\nTwo of these markers are worth singling out because they are unusually hard to fake. **Who writes the system of record** is binary and externally visible [W4]. And **whether the agent notices its own ignorance** — flagging a term it doesn't understand and asking you to define it — is the sharpest single indicator that context has become infrastructure rather than a habit [W4].\n\n### 4. What is actually maturing\n\nNot tool knowledge. The corpus converges hard on **judgment and evaluation** as the durable content [W7]. Brynjolfsson's framing is that almost everyone will manage a fleet of agents and \"the ones who are good at pointing them in the right direction and then *evaluating* them are going to really thrive\" — evaluation, not direction, is named the terminal skill [W7]. Forsgren & Macvean reach the same boundary from inside Google: top performers \"are not vibe coding… they are designing environments, setting the guardrails,\" and verification, not authoring, is the bottleneck [W6]. A worker scale that measures tool adoption rather than evaluation capacity is measuring the wrong variable [W7].\n\n### 5. Four caveats that any honest scale has to carry\n\n- **The trough is invisible to a snapshot.** Maturity growth runs *negative* first: before the system knows your working context, everything is frictionful, trust falls, and you double-check everything — which consumes exactly the time the tool was supposed to return [W5]. A one-off assessment cannot distinguish a worker who is mid-climb from one who has failed [W5]. This is the individual-scale version of the productivity J-curve [W5].\n- **The evidence base for the worker axis is thin.** The level markers rest substantially on **one self-reported, unaudited, single-subject account** selected for being broadcast-worthy [W4]. The mechanism is credible and the markers are observable; the associated \"a week's work in a day\" multiplier is an anecdote and should not be used as a target [W4].\n- **Worker maturity does not sum to firm maturity.** A company of Level-4 individuals is not a Level-4 company — which is precisely why Blum's personal system had to be repackaged as a shared onboarding plugin before it spread [W8]. Distribution turned out to be a *UX* problem, not a capability problem: the terminal-based route took colleagues three days and failed; a 15-minute guided chat succeeded [W8].\n- **Self-report is the default failure mode.** Every firm-level instrument in the corpus that relies on it produces numbers that are hard to compare [W1], and Ransbotham's own quadrants are median splits — \"high\" and \"low\" are relative to the sample, not to an external benchmark [W3]. A worker scale should ask for *observable facts* (\"does the agent write to your task system?\") rather than agreement statements (\"I use AI effectively\").\n\n### 6. Where this leaves you\n\nThe scale above is a **defensible composition, not a validated instrument.** Its ladder form and inflection logic are borrowed from a firm-level model with a 2022 survey base [W2]; its two-axis structure is transposed from an organisational construct [W3]; its markers come from one narrated case [W4] plus one population-scale measurement of learning effects [W9]. That is enough to build a self-assessment that is honest about its own status — and the thread tracking this question now carries the open request for a real worker-level instrument, because nothing in the corpus is one [W1].\n",
+ "generated_at": "2026-09-01T00:18:35.458411Z"
+}

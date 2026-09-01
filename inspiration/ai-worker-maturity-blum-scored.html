@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../favicon.ico">
+<title>Scored Specimen — Daniel Blum</title>
+<style>
+:root{
+  color-scheme: light dark;
+  --ink:#16222E; --ink-2:#3D5266; --ink-3:#6B8095;
+  --paper:#ECEFEE; --paper-2:#F7F9F8; --paper-3:#E0E5E4;
+  --rule:#BCC7C6; --rule-strong:#8FA0A0;
+  --needle:#A8321A; --band:#2A6663; --band-soft:#D6E4E2; --warn:#8A6A16;
+  --shadow:0 1px 0 rgba(22,34,46,.06), 0 12px 32px -20px rgba(22,34,46,.5);
+  --display:"Avenir Next Condensed","Futura","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --body:"Charter","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --data:"SF Mono","Menlo","Consolas","Liberation Mono",monospace;
+  --maxw:1120px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#E4EAE9; --ink-2:#AEBEC0; --ink-3:#7D9095;
+    --paper:#111A22; --paper-2:#18242E; --paper-3:#20303C;
+    --rule:#33454F; --rule-strong:#5A7078;
+    --needle:#E2704F; --band:#5FB3AD; --band-soft:#1D3A3A; --warn:#D8B75A;
+    --shadow:0 1px 0 rgba(0,0,0,.3), 0 12px 32px -20px #000;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0; background:var(--paper); color:var(--ink); font-family:var(--body); font-size:17px; line-height:1.62; font-feature-settings:"kern","liga"}
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px}
+.eyebrow{font-family:var(--data); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); margin:0 0 14px}
+.h-sec{font-family:var(--display); font-weight:600; letter-spacing:-0.005em; font-size:clamp(26px,3.4vw,38px); line-height:1.08; margin:0 0 6px}
+.lede{color:var(--ink-2); max-width:64ch; margin:0 0 34px}
+
+.masthead{padding:44px 0 8px}
+.masthead-top{display:flex; justify-content:space-between; align-items:baseline; gap:20px; flex-wrap:wrap; border-bottom:2px solid var(--ink); padding-bottom:12px}
+.mark{font-family:var(--display); font-weight:700; font-size:15px; letter-spacing:.1em; text-transform:uppercase}
+.mark span{color:var(--needle)}
+.meta-line{font-family:var(--data); font-size:11px; color:var(--ink-3); letter-spacing:.05em}
+
+.hero{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.85fr); gap:56px; align-items:start; padding:52px 0 56px}
+.hero-title{font-family:var(--display); font-weight:600; font-size:clamp(36px,5.6vw,62px); line-height:.98; letter-spacing:-0.02em; margin:0 0 22px}
+.hero-title em{font-style:normal; color:var(--needle)}
+.hero-body p{margin:0 0 16px; max-width:46ch}
+.hero-body p:first-of-type{font-size:19px; color:var(--ink)}
+
+.scale-fig{margin:0}
+.scale svg{width:100%; height:auto; display:block; overflow:visible}
+.tick{stroke:var(--rule-strong); stroke-width:1}
+.tick-minor{stroke:var(--rule); stroke-width:1}
+.spine{stroke:var(--ink); stroke-width:2; fill:none}
+.spine-gap{stroke:var(--warn); stroke-width:2; fill:none; stroke-dasharray:3 4}
+.rung-dot{fill:var(--paper); stroke:var(--ink); stroke-width:2}
+.rung-dot.at{fill:var(--needle); stroke:var(--needle)}
+.rung-num{font-family:var(--data); font-size:11px; fill:var(--ink-3)}
+.rung-name{font-family:var(--display); font-size:15px; font-weight:600; fill:var(--ink)}
+.rung-name.dim{fill:var(--ink-3)}
+.rung-note{font-family:var(--body); font-size:12.5px; fill:var(--ink-3)}
+.trough-label{font-family:var(--data); font-size:10px; fill:var(--warn); letter-spacing:.1em; text-transform:uppercase}
+.scale-cap{font-family:var(--data); font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); margin-top:14px}
+
+.status{background:var(--paper-2); border:1px solid var(--rule); border-left:3px solid var(--warn); padding:22px 26px; margin:0 0 8px; box-shadow:var(--shadow)}
+.status h2{font-family:var(--data); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--warn); margin:0 0 10px; font-weight:400}
+.status p{margin:0 0 10px; color:var(--ink-2); font-size:15.5px; max-width:80ch}
+.status p:last-child{margin-bottom:0}
+
+.sec{padding:56px 0}
+.sec + .sec{border-top:1px solid var(--rule)}
+
+/* evidence grade legend */
+.legend{display:flex; gap:26px; flex-wrap:wrap; margin:0 0 30px; padding:16px 0; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule)}
+.legend div{font-size:14.5px; color:var(--ink-2)}
+.legend b{display:block; font-family:var(--data); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; margin-bottom:3px}
+.legend .g-direct b{color:var(--band)}
+.legend .g-infer b{color:var(--warn)}
+.legend .g-none b{color:var(--ink-3)}
+
+/* gate ledger */
+.ledger{border-top:1px solid var(--ink)}
+.grow{display:grid; grid-template-columns:52px minmax(0,1.05fr) minmax(0,1.35fr) 96px; gap:20px; padding:20px 0; border-bottom:1px solid var(--rule); align-items:start}
+.g-code{font-family:var(--data); font-size:11px; color:var(--ink-3); letter-spacing:.06em; padding-top:4px}
+.g-code i{font-style:normal; color:var(--band); display:block; margin-top:3px}
+.g-q{font-size:15.5px; color:var(--ink); margin:0}
+.g-pick{display:block; margin-top:8px; font-family:var(--data); font-size:11.5px; color:var(--ink-2); letter-spacing:.02em}
+.g-pick::before{content:"→ "; color:var(--needle)}
+.g-ev{font-size:14.5px; color:var(--ink-2); margin:0}
+.g-ev q{quotes:"“" "”"; font-style:italic}
+.g-ev .ts{font-family:var(--data); font-size:11px; color:var(--ink-3); margin-right:5px}
+.g-right{text-align:right; padding-top:2px}
+.chip{display:inline-block; font-family:var(--data); font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; padding:3px 8px; border:1px solid var(--rule-strong); color:var(--ink-2); white-space:nowrap}
+.chip.pass{background:var(--band); border-color:var(--band); color:#fff}
+.chip.part{background:var(--needle); border-color:var(--needle); color:#fff}
+.grade{display:block; margin-top:7px; font-family:var(--data); font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3)}
+.grade.infer{color:var(--warn)}
+.grade.direct{color:var(--band)}
+.lvl-hd{font-family:var(--data); font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3); padding:28px 0 10px; border-bottom:1px solid var(--rule)}
+
+/* result */
+.res{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:44px; align-items:start}
+.verdict-key{font-family:var(--data); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--needle); margin:0 0 10px}
+.verdict-name{font-family:var(--display); font-size:clamp(34px,5vw,54px); font-weight:600; line-height:1; letter-spacing:-0.02em; margin:0 0 14px}
+.meter{margin-bottom:18px}
+.meter-hd{display:flex; justify-content:space-between; font-family:var(--data); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); margin-bottom:6px}
+.meter-hd b{color:var(--ink); font-weight:400}
+.meter-track{height:7px; background:var(--paper-3)}
+.meter-fill{height:100%; background:var(--band)}
+.readout{margin:26px 0 4px; min-width:0}
+.readout-hd{font-family:var(--data); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); margin-bottom:10px}
+.readout-strip{display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:4px; min-width:0}
+.rd{padding:9px 8px 10px; background:var(--paper-3); border-top:2px solid var(--rule-strong); color:var(--ink-3)}
+.rd b{display:block; font-family:var(--data); font-size:10.5px; letter-spacing:.06em; margin-bottom:3px}
+.rd span{font-family:var(--display); font-size:12.5px; font-weight:600; line-height:1.15; display:block}
+.rd.reached{background:var(--band-soft); border-top-color:var(--band); color:var(--ink-2)}
+.rd.here{background:var(--needle); border-top-color:var(--needle); color:#fff}
+.rd.here b,.rd.here span{color:#fff}
+.flag{background:var(--paper-2); border:1px solid var(--rule); border-left:3px solid var(--needle); padding:16px 20px; margin-top:22px; font-size:15px; color:var(--ink-2)}
+.flag b{color:var(--ink); font-weight:600}
+.flag.amber{border-left-color:var(--warn)}
+.flag.teal{border-left-color:var(--band)}
+
+/* readings */
+.reading{display:grid; grid-template-columns:44px minmax(0,1fr); gap:20px; padding:22px 0; border-bottom:1px solid var(--rule)}
+.reading-n{font-family:var(--data); font-size:11px; color:var(--ink-3); padding-top:5px}
+.reading h3{font-family:var(--display); font-size:21px; font-weight:600; margin:0 0 8px; letter-spacing:-0.01em}
+.reading p{margin:0 0 10px; color:var(--ink-2); font-size:15.5px; max-width:74ch}
+.reading p:last-child{margin-bottom:0}
+.reading .tag{font-family:var(--data); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--band)}
+
+/* sensitivity */
+.sens{width:100%; border-collapse:collapse; margin-top:6px}
+.sens th,.sens td{text-align:left; padding:12px 14px 12px 0; border-bottom:1px solid var(--rule); font-size:14.5px; color:var(--ink-2); vertical-align:top}
+.sens th{font-family:var(--data); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:400; border-bottom-color:var(--rule-strong)}
+.sens td:first-child{font-family:var(--data); font-size:12px; color:var(--ink); white-space:nowrap}
+.sens td b{color:var(--ink); font-weight:600}
+
+footer{padding:40px 0 64px; border-top:1px solid var(--rule)}
+footer p{font-family:var(--data); font-size:11.5px; color:var(--ink-3); line-height:1.8; margin:0; max-width:82ch}
+footer a{color:var(--needle)}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:minmax(0,1fr); gap:40px; padding:36px 0 44px}
+  .res{grid-template-columns:minmax(0,1fr); gap:28px}
+  .grow{grid-template-columns:46px minmax(0,1fr) 84px; gap:14px}
+  .g-ev{grid-column:2 / -1}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  .grow{grid-template-columns:minmax(0,1fr); gap:8px}
+  .g-right{text-align:left}
+  .g-ev{grid-column:auto}
+  .rd{padding:8px 5px 9px}
+  .rd b{font-size:9.5px}
+  .rd span{font-size:10.5px; hyphens:auto; overflow-wrap:anywhere}
+  .reading{grid-template-columns:minmax(0,1fr); gap:6px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <div class="masthead-top">
+    <div class="mark">Scored specimen — Daniel Blum<span>.</span></div>
+    <div class="meta-line">Scored from transcript · How I AI, 31 Aug 2026 · 46:08 · scored against scale v1 — superseded by v2</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-body">
+    <p class="eyebrow">The model, run against the case it came from</p>
+    <h1 class="hero-title">The man the markers came from scores <em>Level 3</em>.</h1>
+    <p>Daniel Blum's system supplied nine of this scale's thirteen gates. Scored against it, he clears every one of those nine — and stops at Level 3, two rungs below where the shape of his setup suggests he sits.</p>
+    <p>One gate does it. He is the one who describes the behaviour it tests, and he describes himself failing it: <q>it'll give me a draft and then I'll change it and I'll just send it.</q> That is accept-or-rewrite, which is exactly what G9 is looking for the absence of.</p>
+    <p>Whether that is the instrument catching something real or the instrument being wrong is the interesting part, and it is treated below rather than resolved away.</p>
+  </div>
+
+  <figure class="scale-fig">
+    <div class="scale">
+      <svg viewBox="0 0 440 470" role="img" aria-label="The maturity scale with the marker set at Level 3, Integrating.">
+        <g>
+          <line class="tick-minor" x1="40" y1="60"  x2="52" y2="60"/>
+          <line class="tick-minor" x1="40" y1="105" x2="52" y2="105"/>
+          <line class="tick-minor" x1="40" y1="150" x2="52" y2="150"/>
+          <line class="tick-minor" x1="40" y1="195" x2="52" y2="195"/>
+          <line class="tick-minor" x1="40" y1="240" x2="52" y2="240"/>
+          <line class="tick-minor" x1="40" y1="285" x2="52" y2="285"/>
+          <line class="tick-minor" x1="40" y1="330" x2="52" y2="330"/>
+          <line class="tick-minor" x1="40" y1="375" x2="52" y2="375"/>
+        </g>
+        <path class="spine" d="M56 405 L56 320"/>
+        <path class="spine-gap" d="M56 320 L56 268"/>
+        <path class="spine" d="M56 268 L56 40"/>
+        <g>
+          <line class="tick" x1="46" y1="294" x2="56" y2="294"/>
+          <text class="trough-label" x="14" y="291" text-anchor="end">the</text>
+          <text class="trough-label" x="14" y="303" text-anchor="end">trough</text>
+        </g>
+
+        <g><circle class="rung-dot" cx="56" cy="405" r="6"/>
+          <text class="rung-num" x="80" y="396">L1</text>
+          <text class="rung-name dim" x="106" y="397">Experimenting</text></g>
+        <g><circle class="rung-dot" cx="56" cy="320" r="6"/>
+          <text class="rung-num" x="80" y="311">L2</text>
+          <text class="rung-name dim" x="106" y="312">Repeating</text></g>
+        <g><circle class="rung-dot at" cx="56" cy="220" r="7"/>
+          <text class="rung-num" x="80" y="211">L3</text>
+          <text class="rung-name" x="106" y="212">Integrating</text>
+          <text class="rung-note" x="106" y="229">Blum scores here</text></g>
+        <g><circle class="rung-dot" cx="56" cy="130" r="6"/>
+          <text class="rung-num" x="80" y="121">L4</text>
+          <text class="rung-name dim" x="106" y="122">Delegating</text>
+          <text class="rung-note" x="106" y="139">Blocked by G9 alone</text></g>
+        <g><circle class="rung-dot" cx="56" cy="40" r="6"/>
+          <text class="rung-num" x="80" y="31">L5</text>
+          <text class="rung-name dim" x="106" y="32">Compounding</text>
+          <text class="rung-note" x="106" y="49">All four gates already met</text></g>
+
+        <g>
+          <line x1="20" y1="220" x2="56" y2="220" stroke="var(--needle)" stroke-width="2"/>
+          <polygon points="56,220 46,215 46,225" fill="var(--needle)"/>
+          <text class="trough-label" x="18" y="208" text-anchor="end" fill="var(--needle)">here</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption class="scale-cap">Fig. 1 — Scored position. Every L5 gate is met while an L4 gate is open.</figcaption>
+  </figure>
+</section>
+
+<div class="status" style="border-left-color:var(--needle); margin-bottom:26px">
+  <h2 style="color:var(--needle)">Superseded — this is the v1 scoring</h2>
+  <p>This report scored Blum against <strong>v1</strong> of the scale and returned <strong>Level 3</strong>. That scoring did its job: it exposed two defects in the instrument, and both are now fixed. Under the calibrated <strong>v2</strong> he scores <strong>Level 4</strong>, blocked by a single gate — written, handable review criteria — which is the same underlying weakness this report identified, now sitting at the level where it belongs.</p>
+  <p>The page is kept as-is because it is the evidence for the calibration, not because the Level 3 verdict still stands. See the <a href="ai-worker-maturity-calibration.html" style="color:var(--needle)">calibration record</a> for what changed and why, and note that the &ldquo;built high on a thin base&rdquo; flag below turned out to be an artifact of the misplaced gate rather than a fact about him.</p>
+</div>
+
+<div class="status">
+  <h2>How this was scored — read before trusting it</h2>
+  <p><strong>Blum never took this assessment.</strong> He was demonstrating a system on a podcast, not answering thirteen questions about it. Every score below is a third-party reading of a 46-minute transcript, assigned by me, against questions he was never asked. He would likely answer several of them differently — and on G9 in particular, he might reasonably say the criteria live in his skill files rather than in his head.</p>
+  <p>Every score below carries the verbatim lines it rests on, with timestamps, so you can overrule me. Three of the fourteen items are <strong>inferred</strong> rather than stated: he never discusses judging model output in his own domain (G2), never mentions choosing between model tiers (G6), and never describes a written definition of a good result (G12). I scored those from adjacent evidence, quoted the exact lines I used, and stated underneath each one what I inferred and where the inference could break. The sensitivity table at the end shows what happens if I got them wrong — and the answer for G2 is <em>a lot</em>.</p>
+</div>
+
+<section class="sec">
+  <p class="eyebrow">Evidence grading</p>
+  <h2 class="h-sec">Eleven direct, three inferred, none invented</h2>
+  <div class="legend">
+    <div class="g-direct"><b>Direct — 11 items</b>He states it, or demonstrates it on camera.</div>
+    <div class="g-infer"><b>Inferred — 3 items</b>Supported by adjacent evidence; not stated in these terms.</div>
+    <div class="g-none"><b>Assumed with no support — 0 items</b>Nothing was scored on a guess alone.</div>
+  </div>
+
+  <div class="ledger">
+
+    <div class="lvl-hd">Gates for Level 2 — Repeating · both met</div>
+
+    <div class="grow">
+      <div class="g-code">G1<i>S</i></div>
+      <div><p class="g-q">Reusable prompts, instructions or workflows rather than retyping.</p>
+        <span class="g-pick">Yes, saved somewhere I can find them</span></div>
+      <p class="g-ev"><span class="ts">10:12</span><q>…one recurring task which is a composition of several skills called the weekly prep.</q><br>
+      <span class="ts">08:12</span><q>I just created this skill on Cowork called demo and I just told it replace all the terminology and specifics with generic terms… in one prompt I was able to replace my manager's name with your manager.</q><br>
+      <span class="ts">28:58</span><q>Many of my skills actually ended up being from this flow.</q></p>
+      <div class="g-right"><span class="chip pass">Met</span><span class="grade direct">Direct</span></div>
+    </div>
+
+    <div class="grow">
+      <div class="g-code">G2<i>F</i></div>
+      <div><p class="g-q">You notice when output is wrong in your own area, and can say what is wrong with it.</p>
+        <span class="g-pick">Reliably, and I know where it tends to fail</span></div>
+      <p class="g-ev"><span class="ts">30:32</span><q>I've built a skill called improve which is basically like a very critical auditor for these… and I ask them like <b>is this real, is this powerful, how does this adapt to what we have now, is this needed</b> — and then it helps me review it and together we basically decide whether we want to build it or not.</q><br>
+      <span class="ts">22:24</span><q>You're going to lose trust and you're going to be very skeptical and then you're going to double check everything.</q><br>
+      <span class="ts">17:30</span><q>A term I didn't know — the settlement cap. This is some payments thing…</q><br>
+      <b>What I inferred from this:</b> that a person who runs written tests against incoming claims, who describes a phase of systematically double-checking output, and who holds payments vocabulary the model lacks, can also judge model output in his own domain. He never says so. The three quotes are adjacent evidence, not the claim itself.</p>
+      <div class="g-right"><span class="chip pass">Met</span><span class="grade infer">Inferred</span></div>
+    </div>
+
+    <div class="lvl-hd">Gates for Level 3 — Integrating · all four met</div>
+
+    <div class="grow">
+      <div class="g-code">G3<i>S</i></div>
+      <div><p class="g-q">Written context about your work that outlives the session.</p>
+        <span class="g-pick">Yes, covering several areas and kept current</span></div>
+      <p class="g-ev"><span class="ts">09:02</span><q>There's a context file around every topic that I have, and every area of my work and my goals and my colleagues.</q> <span class="ts">09:42</span>It <q>updates itself on a recurring basis… every few weeks it runs and updates the knowledge files.</q> The strongest single item in the set.</p>
+      <div class="g-right"><span class="chip pass">Met</span><span class="grade direct">Direct</span></div>
+    </div>
+
+    <div class="grow">
+      <div class="g-code">G4<i>S</i></div>
+      <div><p class="g-q">Share of screen-based work inside one AI-connected system.</p>
+        <span class="g-pick">More than 40%</span></div>
+      <p class="g-ev"><span class="ts">19:32</span><q>I manage about 70 to 80% of my time in front of the computer with Cowork alone.</q> Clears the top band by a wide margin; the threshold could be raised without troubling him.</p>
+      <div class="g-right"><span class="chip pass">Met</span><span class="grade direct">Direct</span></div>
+    </div>
+
+    <div class="grow">
+      <div class="g-code">G5<i>S</i></div>
+      <div><p class="g-q">The AI reaches your actual tools, not just what you paste in.</p>
+        <span class="g-pick">Most of the ones that matter</span></div>
+      <p class="g-ev"><span class="ts">10:35</span><q>What this series of skills does, it pulls in information from my entire ecosystem — from my Notion, my calendar, Slack, from Granola transcripts of meetings.</q><br>
+      <span class="ts">20:17</span><q>There's more and more MCPs and connectors… but the Chrome connector is a critical critical piece of the puzzle for when you don't have these connectors and integrations.</q></p>
+      <div class="g-right"><span class="chip pass">Met</span><span class="grade direct">Direct</span></div>
+    </div>
+
+    <div class="grow">
+      <div class="g-code">G6<i>F</i></div>
+      <div><p class="g-q">You choose deliberately between models or modes per task type.</p>
+        <span class="g-pick">Yes, it's a deliberate call each time</span></div>
+      <p class="g-ev"><span class="ts">29:07</span><q>It's suggesting I create a Claude design handoff skill between Cowork, where I do the research, and design, where I actually build the prototype… I have a skill like this, by the way, that's handoff between Cowork, which I use kind of as the executing arm.</q><br>
+      <span class="ts">20:09</span><q>In the beginning I was using Chrome a lot… as time proceeds and there's more and more MCPs and connectors then obviously those are comfortable.</q><br>
+      <b>What I inferred from this:</b> that purpose-built handoff skills routing work between Cowork and Claude Code by task type, plus a stated shift from browser to connectors, counts as choosing <em>modes</em> deliberately. He never mentions choosing between model tiers — if the gate is read that strictly, there is no evidence for it at all.</p>
+      <div class="g-right"><span class="chip pass">Met</span><span class="grade infer">Inferred</span></div>
+    </div>
+
+    <div class="lvl-hd">Gates for Level 4 — Delegating · two met, one open</div>
+
+    <div class="grow">
+      <div class="g-code">G7<i>S</i></div>
+      <div><p class="g-q">Some AI work runs on a schedule, without you starting it.</p>
+        <span class="g-pick">Yes, at least one runs regularly</span></div>
+      <p class="g-ev"><span class="ts">10:59</span>Weekly prep runs <q>on Sunday mornings</q>. <span class="ts">13:05</span>The morning brief is a scheduled task. <span class="ts">27:47</span>The self-improvement loop is <q>a scheduled task that runs weekly</q>. Three, not one.</p>
+      <div class="g-right"><span class="chip pass">Met</span><span class="grade direct">Direct</span></div>
+    </div>
+
+    <div class="grow">
+      <div class="g-code">G8<i>S</i></div>
+      <div><p class="g-q">The AI writes into a system you rely on, not just a chat window.</p>
+        <span class="g-pick">Yes, it writes there directly</span></div>
+      <p class="g-ev"><span class="ts">19:15</span><q>My goal is to have Notion as something I only look at and Claude manages on my behalf.</q> <span class="ts">07:17</span>Cowork built the board itself after getting <q>tired of</q> his messy Google Doc.</p>
+      <div class="g-right"><span class="chip pass">Met</span><span class="grade direct">Direct</span></div>
+    </div>
+
+    <div class="grow">
+      <div class="g-code">G9<i>F</i></div>
+      <div><p class="g-q">You review output against criteria set in advance, instead of accepting it or rewriting it wholesale.</p>
+        <span class="g-pick">Sometimes, informally</span></div>
+      <p class="g-ev"><span class="ts">28:10</span><q>When I write with Claude, it'll give me a draft and then I'll change it and I'll just send it.</q> He names this as a problem and builds a loop to <em>recover</em> the lost signal afterwards — which is compensation for missing criteria, not criteria. The one item scored against him, and scored on his own words.</p>
+      <div class="g-right"><span class="chip part">Partial</span><span class="grade direct">Direct</span></div>
+    </div>
+
+    <div class="lvl-hd">Gates for Level 5 — Compounding · all four met, above an open gate</div>
+
+    <div class="grow">
+      <div class="g-code">G10<i>S</i></div>
+      <div><p class="g-q">Your setup flags context it is missing instead of guessing.</p>
+        <span class="g-pick">Yes, it raises them unprompted</span></div>
+      <p class="g-ev"><span class="ts">17:30</span>Live on camera: <q>a term I didn't know — the settlement cap… I read the thread and understand it's a limit. Want me to save?</q> The agent raised it; he approved; it went into the context files.</p>
+      <div class="g-right"><span class="chip pass">Met</span><span class="grade direct">Direct</span></div>
+    </div>
+
+    <div class="grow">
+      <div class="g-code">G11<i>S</i></div>
+      <div><p class="g-q">Friction is captured automatically and reviewed on a cadence.</p>
+        <span class="g-pick">Yes, recorded and reviewed on a cadence</span></div>
+      <p class="g-ev"><span class="ts">29:40</span><q>All of my skills and recurring tasks have lines in their files to collect feedback and friction… I don't need to do this proactively.</q> <span class="ts">29:48</span><q>Every week it surfaces the top frictions.</q></p>
+      <div class="g-right"><span class="chip pass">Met</span><span class="grade direct">Direct</span></div>
+    </div>
+
+    <div class="grow">
+      <div class="g-code">G12<i>F</i></div>
+      <div><p class="g-q">You could hand someone a written definition of what a good result looks like.</p>
+        <span class="g-pick">Yes, it's written and specific</span></div>
+      <p class="g-ev"><span class="ts">36:36</span><q>About a year ago I built our spec writing gem, call it Spectacular… back in the day, <b>holding up the template</b> was something really hard to achieve, and <b>making it not hallucinate in a long spec</b> was something that's hard… after I built something that was really powerful and good for the way I was working, I was excited to distribute it.</q><br>
+      <span class="ts">30:46</span><q>Is this real, is this powerful, how does this adapt to what we have now, is this needed.</q><br>
+      <b>What I inferred from this:</b> that a distributed gem enforcing a template and suppressing hallucination, plus a skill carrying four written tests, amounts to a definition of a good result he could hand over — because he did hand it over. But the quote describes an <em>artifact</em>, and the lesson he draws from it is about onboarding UX, not quality criteria. This is the most generous of the three inferences.</p>
+      <div class="g-right"><span class="chip pass">Met</span><span class="grade infer">Inferred</span></div>
+    </div>
+
+    <div class="grow">
+      <div class="g-code">G13<i>S</i></div>
+      <div><p class="g-q">Someone else is running a version of your setup.</p>
+        <span class="g-pick">Yes, someone else actually uses it</span></div>
+      <p class="g-ev"><span class="ts">36:13</span>Workstation is <q>a plugin so everybody has it in our library and anybody can access it</q>. <span class="ts">36:21</span><q>My colleagues have taken it to the next level.</q> It started for PMs and spread to all Melio workers.</p>
+      <div class="g-right"><span class="chip pass">Met</span><span class="grade direct">Direct</span></div>
+    </div>
+
+    <div class="lvl-hd">Diagnostic — not scored</div>
+
+    <div class="grow">
+      <div class="g-code">D1<i>—</i></div>
+      <div><p class="g-q">Did you go through a stretch where this felt slower before it felt faster?</p>
+        <span class="g-pick">Yes, and I came out the other side</span></div>
+      <p class="g-ev"><span class="ts">22:01</span><q>The ROI is not going to look great.</q> <span class="ts">22:24</span><q>You're going to lose trust and you're going to be very skeptical and then you're going to double check everything. But the value tremendously compounds.</q></p>
+      <div class="g-right"><span class="chip pass">Cleared</span><span class="grade direct">Direct</span></div>
+    </div>
+
+  </div>
+</section>
+
+<section class="sec">
+  <p class="eyebrow">The result, as the instrument produces it</p>
+  <div class="res">
+    <div>
+      <p class="verdict-key">Scored at Level 3</p>
+      <h2 class="verdict-name">Integrating</h2>
+      <div class="meter">
+        <div class="meter-hd"><span>Axis F — fluency &amp; judgment</span><b>88%</b></div>
+        <div class="meter-track"><div class="meter-fill" style="width:88%"></div></div>
+      </div>
+      <div class="meter">
+        <div class="meter-hd"><span>Axis S — work-system design</span><b>100%</b></div>
+        <div class="meter-track"><div class="meter-fill" style="width:100%"></div></div>
+      </div>
+      <div class="readout">
+        <div class="readout-hd">Readout</div>
+        <div class="readout-strip">
+          <div class="rd reached"><b>L1</b><span>Experimenting</span></div>
+          <div class="rd reached"><b>L2</b><span>Repeating</span></div>
+          <div class="rd here"><b>L3</b><span>Integrating</span></div>
+          <div class="rd"><b>L4</b><span>Delegating</span></div>
+          <div class="rd"><b>L5</b><span>Compounding</span></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="flag"><b>One gate is holding him.</b> G9 — reviewing output against criteria set in advance. Everything else at Level 4 is already true. On the instrument's own logic this is the single highest-leverage thing on his list.</div>
+      <div class="flag amber"><b>Built high on a thin base.</b> He passes G10, G11, G12 and G13 — every Level 5 gate — while a Level 4 gate stays open. The tool calls this the fragile pattern: automation running on top of something that isn't fully there. In his case the missing piece is not context, which is exceptional, but <em>explicit evaluation criteria</em>.</div>
+      <div class="flag teal"><b>Perfect on structure, not on judgment.</b> Axis S is 100% — nine of nine. Axis F loses its only point on G9. The gap is 12 points, under the 34-point threshold that would trigger the imbalance warning, so the tool stays quiet. Given that eight of the nine S items are direct evidence and two of the four F items are inferred, the real gap is probably wider than the meters show.</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <p class="eyebrow">What this exposes</p>
+  <h2 class="h-sec">Three readings, and I don't think one of them wins</h2>
+  <p class="lede">Scoring an instrument against the case its markers came from is a stress test, and this one produced a result worth arguing with rather than accepting. The readings are not mutually exclusive.</p>
+
+  <div class="reading">
+    <div class="reading-n">R1</div>
+    <div>
+      <span class="tag">The instrument is right</span>
+      <h3>His evaluation layer really is the least-developed part</h3>
+      <p>This is the reading I find hardest to dismiss, because it comes from his own account rather than from my scoring. He describes the draft-and-rewrite habit as a <em>problem he had to engineer around</em>. Everything he built to address it — the loop that finds unanswered drafts and diffs them against what he actually sent — is retrospective. It recovers the signal after the fact instead of setting the standard before it.</p>
+      <p>That matters because the wiki's own claim, from three independent directions, is that <strong>evaluation is the terminal skill</strong> — the thing that separates people who direct fleets of agents from people who thrive doing it. On that claim, an otherwise exceptional system with a thin evaluation layer is exactly what the scale should flag. It caught the real weak point.</p>
+    </div>
+  </div>
+
+  <div class="reading">
+    <div class="reading-n">R2</div>
+    <div>
+      <span class="tag">The gate is in the wrong place</span>
+      <h3>G9 probably belongs at Level 5, not Level 4</h3>
+      <p>Level 4 is defined by delegation: work runs without you, and the agent writes to things you rely on. Blum does both, emphatically. Written evaluation criteria are a <em>compounding</em>-grade practice — they sit naturally beside friction logging and distribution, which are already L5 gates. Putting them at L4 makes the delegation level depend on a discipline that most people reach later.</p>
+      <p>Move G9 to L5 and he scores <strong>Level 5 with one open gate</strong> — which matches both the shape of his system and the intuition of anyone watching the episode. That is a real defect in v1 and I would fix it before anyone used this on themselves.</p>
+    </div>
+  </div>
+
+  <div class="reading">
+    <div class="reading-n">R3</div>
+    <div>
+      <span class="tag">The rule is too brittle</span>
+      <h3>Strict gating turns one partial answer into a two-level drop</h3>
+      <p>Twelve of thirteen gates met, and the level is 3. That is the ladder logic working as designed — you are at the highest level whose gates you have <em>all</em> passed — but it means a single "sometimes, informally" outweighs eleven emphatic yeses. For a diagnostic that names one next action, strictness is a feature. For anything resembling a rating, it is a liability.</p>
+      <p>The honest fix is not partial credit, which would blur the gates back into a score. It is to report the level <em>and</em> the shape — "Level 3, with all four Level 5 gates met" — which the thin-base flag already does, and which the headline number does not.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <p class="eyebrow">Sensitivity</p>
+  <h2 class="h-sec">What happens if my three inferences are wrong</h2>
+  <p class="lede">Three items were scored from adjacent evidence rather than direct statement. Two of them barely matter. One would move the result by two levels — which is itself a finding about where this instrument is fragile.</p>
+  <table class="sens">
+    <thead><tr><th>Item</th><th>What I inferred</th><th>If it were scored one step lower</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>G2 <span style="color:var(--band)">F</span></td>
+        <td>That his critical-audit habit and domain knowledge extend to judging model output in payments.</td>
+        <td><b>Level 3 → Level 1.</b> G2 is a Level 2 gate, so failing it collapses the whole ladder. The single most load-bearing inference in the scoring, resting on the weakest evidence — a genuine fragility in the instrument, not just in my reading.</td>
+      </tr>
+      <tr>
+        <td>G6 <span style="color:var(--band)">F</span></td>
+        <td>That routing between Cowork and Claude Code counts as choosing modes deliberately.</td>
+        <td><b>Level 3 → Level 2.</b> Defensible either way. If G6 is read strictly as model-tier selection, he has no evidence for it at all.</td>
+      </tr>
+      <tr>
+        <td>G12 <span style="color:var(--band)">F</span></td>
+        <td>That Spectacular and the Improve skill amount to a written definition of a good result.</td>
+        <td><b>No level change</b> — it is a Level 5 gate and he is already blocked below it. Axis F would fall from 88% to 75%, widening the structure-versus-judgment gap the third flag describes.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<footer>
+  <p>Scored specimen · Daniel Blum · scored 1 September 2026 against <a href="ai-worker-maturity-model.html">The AI Worker Maturity Scale v1</a>. Source: How I AI, <em>I built a Claude Cowork system that does a week of PM work in a day</em>, 31 Aug 2026, 46:08 — transcript at <code>raw/videos/i-built-a-claude-cowork-system-that-does-a-week-of-pm-work-in-a-day.md</code>, wiki page at <code>wiki/sources/2026-08-31-blum-how-i-ai-claude-cowork-pm-system.md</code>. Timestamps refer to the transcript. Blum did not take this assessment and has not reviewed this scoring.</p>
+</footer>
+
+</div>
+</body>
+</html>
