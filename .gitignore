@@ -51,6 +51,9 @@ raw/videos/test.txt
 # Generated HTML exports under inspiration/ (re-derivable from the source .md)
 inspiration/*.html
 inspiration/*_files/
+# Exception: the AI Worker Maturity Scale pages are original artifacts, not exports
+# of any .md — the "re-derivable" rationale above doesn't apply, so they're tracked.
+!inspiration/ai-worker-maturity-*.html
 
 # Playwright MCP session traces/logs — ephemeral browser-automation debug output
 .playwright-mcp/

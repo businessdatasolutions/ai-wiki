@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calibration Record — v1 to v2</title>
+<style>
+:root{
+  color-scheme: light dark;
+  --ink:#16222E; --ink-2:#3D5266; --ink-3:#6B8095;
+  --paper:#ECEFEE; --paper-2:#F7F9F8; --paper-3:#E0E5E4;
+  --rule:#BCC7C6; --rule-strong:#8FA0A0;
+  --needle:#A8321A; --band:#2A6663; --band-soft:#D6E4E2; --warn:#8A6A16;
+  --shadow:0 1px 0 rgba(22,34,46,.06), 0 12px 32px -20px rgba(22,34,46,.5);
+  --display:"Avenir Next Condensed","Futura","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --body:"Charter","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --data:"SF Mono","Menlo","Consolas","Liberation Mono",monospace;
+  --maxw:1120px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#E4EAE9; --ink-2:#AEBEC0; --ink-3:#7D9095;
+    --paper:#111A22; --paper-2:#18242E; --paper-3:#20303C;
+    --rule:#33454F; --rule-strong:#5A7078;
+    --needle:#E2704F; --band:#5FB3AD; --band-soft:#1D3A3A; --warn:#D8B75A;
+    --shadow:0 1px 0 rgba(0,0,0,.3), 0 12px 32px -20px #000;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0; background:var(--paper); color:var(--ink); font-family:var(--body); font-size:17px; line-height:1.62}
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px}
+.eyebrow{font-family:var(--data); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); margin:0 0 14px}
+.h-sec{font-family:var(--display); font-weight:600; letter-spacing:-0.005em; font-size:clamp(26px,3.4vw,38px); line-height:1.08; margin:0 0 6px}
+.lede{color:var(--ink-2); max-width:66ch; margin:0 0 34px}
+
+.masthead{padding:44px 0 8px}
+.masthead-top{display:flex; justify-content:space-between; align-items:baseline; gap:20px; flex-wrap:wrap; border-bottom:2px solid var(--ink); padding-bottom:12px}
+.mark{font-family:var(--display); font-weight:700; font-size:15px; letter-spacing:.1em; text-transform:uppercase}
+.mark span{color:var(--needle)}
+.meta-line{font-family:var(--data); font-size:11px; color:var(--ink-3); letter-spacing:.05em}
+
+.hero{padding:52px 0 46px; display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,1fr); gap:56px; align-items:start}
+.hero-title{font-family:var(--display); font-weight:600; font-size:clamp(36px,5.4vw,62px); line-height:.98; letter-spacing:-0.02em; margin:0 0 22px}
+.hero-title em{font-style:normal; color:var(--needle)}
+.hero p{margin:0 0 16px; max-width:48ch}
+.hero p:first-of-type{font-size:19px; color:var(--ink)}
+.pull{border-left:3px solid var(--band); padding:2px 0 2px 16px; margin:26px 0 0; color:var(--ink-2); font-size:15.5px}
+
+.sec{padding:56px 0}
+.sec + .sec{border-top:1px solid var(--rule)}
+
+/* case cards */
+.cases{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px; background:var(--rule); border:1px solid var(--rule); margin-top:4px}
+.case{background:var(--paper); padding:20px 22px}
+.case h3{font-family:var(--display); font-size:19px; font-weight:600; margin:0 0 2px}
+.case .who{font-family:var(--data); font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); margin:0 0 12px}
+.case p{margin:0 0 10px; font-size:14.5px; color:var(--ink-2)}
+.case p:last-child{margin-bottom:0}
+.case .role{display:inline-block; font-family:var(--data); font-size:10px; letter-spacing:.09em; text-transform:uppercase; padding:2px 7px; background:var(--band-soft); color:var(--band); margin-bottom:10px}
+
+/* defect blocks */
+.defect{display:grid; grid-template-columns:56px minmax(0,1fr); gap:22px; padding:26px 0; border-bottom:1px solid var(--rule)}
+.defect-n{font-family:var(--data); font-size:11px; color:var(--needle); padding-top:6px; letter-spacing:.08em}
+.defect h3{font-family:var(--display); font-size:22px; font-weight:600; margin:0 0 10px; letter-spacing:-0.01em}
+.defect p{margin:0 0 12px; color:var(--ink-2); font-size:15.5px; max-width:76ch}
+.defect p:last-child{margin-bottom:0}
+.defect .found{font-family:var(--data); font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--band); margin-bottom:8px; display:block}
+.fixbox{background:var(--paper-2); border:1px solid var(--rule); border-left:3px solid var(--band); padding:14px 18px; margin:14px 0 0; font-size:15px}
+.fixbox b{color:var(--ink)}
+.fixbox .was{color:var(--ink-3); display:block; margin-bottom:6px; font-size:14.5px}
+.fixbox .was i{font-style:italic}
+
+/* score table */
+.tbl{width:100%; border-collapse:collapse; margin-top:4px}
+.tbl th,.tbl td{text-align:left; padding:13px 16px 13px 0; border-bottom:1px solid var(--rule); font-size:15px; color:var(--ink-2); vertical-align:top}
+.tbl th{font-family:var(--data); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:400; border-bottom-color:var(--rule-strong)}
+.tbl td:first-child{color:var(--ink); font-weight:600}
+.tbl .num{font-family:var(--data); font-size:13px; white-space:nowrap}
+.lvl{display:inline-block; font-family:var(--data); font-size:11px; padding:2px 8px; letter-spacing:.06em; background:var(--paper-3); color:var(--ink)}
+.lvl.up{background:var(--band); color:#fff}
+.lvl.same{background:var(--paper-3); color:var(--ink-2)}
+.tbl td small{display:block; color:var(--ink-3); font-size:13px; margin-top:4px}
+
+/* honesty box */
+.honest{background:var(--paper-2); border:1px solid var(--rule); border-left:3px solid var(--warn); padding:22px 26px; box-shadow:var(--shadow)}
+.honest h2{font-family:var(--data); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--warn); margin:0 0 12px; font-weight:400}
+.honest p{margin:0 0 12px; color:var(--ink-2); font-size:15.5px; max-width:80ch}
+.honest p:last-child{margin-bottom:0}
+.honest b{color:var(--ink)}
+
+/* open list */
+.open{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1px; background:var(--rule); border:1px solid var(--rule)}
+.open-cell{background:var(--paper); padding:18px 20px}
+.open-cell h4{font-family:var(--data); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--needle); margin:0 0 8px; font-weight:400}
+.open-cell p{margin:0; font-size:14.5px; color:var(--ink-2); line-height:1.55}
+
+footer{padding:40px 0 64px; border-top:1px solid var(--rule)}
+footer p{font-family:var(--data); font-size:11.5px; color:var(--ink-3); line-height:1.8; margin:0; max-width:82ch}
+footer a{color:var(--needle)}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:minmax(0,1fr); gap:32px}
+  .cases{grid-template-columns:minmax(0,1fr)}
+  .defect{grid-template-columns:minmax(0,1fr); gap:8px}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  .tbl th,.tbl td{padding:10px 10px 10px 0; font-size:14px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <div class="masthead-top">
+    <div class="mark">Calibration record — v1 → v2<span>.</span></div>
+    <div class="meta-line">1 Sep 2026 · 3 scored cases · 5 defects fixed · structural calibration only</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <p class="eyebrow">What running it against real people did</p>
+    <h1 class="hero-title">Five defects, and <em>four</em> of them were only visible from a case.</h1>
+    <p>v1 was reasoned into existence from source material. It looked coherent. Scoring it against three real workers broke it in five places, and only one of those — the axis imbalance — was something I could have found by reading my own design.</p>
+    <p>The rest needed a person. A gate that conflated a practice with an artifact only shows up when someone does the practice without the artifact. A gate that asks you to rate a capability only shows up as a problem when the evidence for it is thin and the whole ladder swings on it.</p>
+    <div class="pull">The Blum scoring's headline finding — “built high on a thin base” — turned out to be an artifact of a misplaced gate, not a fact about him. Fixing the gate made the flag stop firing. That is what calibration is for.</div>
+  </div>
+  <div>
+    <div class="honest">
+      <h2>What this is not</h2>
+      <p><b>Three cases is not a validation sample.</b> Nothing here establishes that the levels are the right levels, that the thresholds are right, or that two people would score the same worker alike. No inter-rater check was run — every score is mine.</p>
+      <p>What three cases <em>can</em> do is expose gates that are unanswerable, wrongly placed, ambiguously worded, or duplicated. All five fixes below are of that kind: <b>structural, not empirical.</b> None was chosen to move a particular person's score.</p>
+      <p>The test I applied to each change: <b>would this still be right if the case that revealed it didn't exist?</b> If the answer was no, it didn't go in.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <p class="eyebrow">The reference cases</p>
+  <h2 class="h-sec">Three profiles, chosen to span the range</h2>
+  <p class="lede">All three are in the wiki already, all three were observed doing the work rather than answering questions about it, and — importantly — two of them I had not been designing against. Blum's trajectory supplied nine of v1's gates, so he is the overfit risk. Nika and Carson are the controls.</p>
+  <div class="cases">
+    <div class="case">
+      <span class="role">Control · low end</span>
+      <h3>Marily Nika</h3>
+      <p class="who">Google AI product lead · Dec 2025</p>
+      <p>Five specialised tools stitched by hand across a 20-minute workflow — Perplexity, a custom GPT, v0, Veo, NotebookLM. Deliberate, skilled, and reusing her own PRD generator across projects.</p>
+      <p>No persistent context about her work, no connectors, nothing running without her. The human <em>is</em> the integration layer. The corpus treats her as the explicit contrast to Blum.</p>
+    </div>
+    <div class="case">
+      <span class="role">Derivation case · overfit risk</span>
+      <h3>Daniel Blum</h3>
+      <p class="who">PM at Melio · Aug 2026</p>
+      <p>One harness holding 70–80% of screen time, an agent-maintained Notion board, three scheduled tasks, a context layer the agent repairs itself, friction logged inside skills, and an onboarding plugin the whole company uses.</p>
+      <p>Nine of v1's thirteen gates came from watching him. Any change that conveniently raises his score is suspect by construction.</p>
+    </div>
+    <div class="case">
+      <span class="role">Control · high end, different shape</span>
+      <h3>Ryan Carson</h3>
+      <p class="who">Solo founder, Untangle · Aug 2026</p>
+      <p>10–15 concurrent cloud agents in a folder queue, playbooks as the reusable unit, a two-loop review ceiling and a narrated video walkthrough before any PR lands, and a deliberate three-tool division of labour.</p>
+      <p>No colleagues, so nothing to distribute to; no self-repairing context layer. Strong where Blum is strong, weak in different places — which is exactly what a discriminating instrument should show.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <p class="eyebrow">The defects</p>
+  <h2 class="h-sec">What broke, and what each fix rests on</h2>
+  <p class="lede">Each one names the case that surfaced it and the principle that justifies the change independently of that case.</p>
+
+  <div class="defect">
+    <div class="defect-n">D1</div>
+    <div>
+      <span class="found">Found by · Blum</span>
+      <h3>One gate asked two questions and sat a level too high</h3>
+      <p>v1's G9 asked whether you review output against criteria set in advance <em>and</em> whether those criteria are written down. Those are different things at different maturities. Blum reviews everything — <q>it'll give me a draft and then I'll change it and I'll just send it</q> — but has nothing written. One gate, two verdicts, so the gate failed and pinned him at Level 3 despite passing every delegation marker emphatically.</p>
+      <p><b>The principle, independent of Blum:</b> Level 4 is defined by <em>retaining</em> judgment while delegating tasks. Formalising that judgment so it can be handed over is a compounding practice — it belongs beside friction logging and distribution at Level 5, not beside scheduling at Level 4.</p>
+      <div class="fixbox">
+        <span class="was">Was — <i>G9 (L4): “You review AI output against criteria you set in advance… and the criteria are written down.”</i></span>
+        <b>Now — split.</b> G9 (L4, F): delegated output passes a review step before it gets used. G13 (L5, F): the criteria you review against are written down, specific enough to hand to someone else.
+      </div>
+    </div>
+  </div>
+
+  <div class="defect">
+    <div class="defect-n">D2</div>
+    <div>
+      <span class="found">Found by · Blum, via the sensitivity check</span>
+      <h3>A Level 2 gate asked you to rate a capability, and could collapse the ladder alone</h3>
+      <p>v1's G2 asked whether you notice when output is wrong in your own area — <q>reliably, and I know where it tends to fail</q>. That is a self-rating of an internal capability, which is precisely what the model's own design note tells you not to do: <em>ask for observable facts, not agreement statements</em>. v1 violated its own rule in its second question.</p>
+      <p>The sensitivity check made it worse: because G2 gates Level 2, an error there drops any score to Level 1 regardless of everything above it. The most load-bearing item in the instrument rested on its least observable evidence.</p>
+      <p><b>The principle:</b> at the bottom of a ladder, gates should test a low-bar <em>behaviour</em> that is either happening or not. Discrimination belongs higher up, where there is more to discriminate between.</p>
+      <div class="fixbox">
+        <span class="was">Was — <i>G2: “You notice when output is wrong in your own area, and can say what is wrong with it.”</i></span>
+        <b>Now —</b> “You check AI output against something other than your own impression before using it for anything that matters.” A behaviour, not a self-assessment, and one that no longer swings the whole result on an inference.
+      </div>
+    </div>
+  </div>
+
+  <div class="defect">
+    <div class="defect-n">D3</div>
+    <div>
+      <span class="found">Found by · Carson</span>
+      <h3>A gate's wording excluded half of what it was meant to catch</h3>
+      <p>v1's G7 asked whether AI work <em>runs on a schedule</em>. Carson's setup is emphatically delegated — Watchdog sweeps every customer account and returns the top three things going wrong; Land PR fires when an agent reports a PR done, runs up to two review loops, and records a narrated walkthrough. Neither is on a schedule. Land PR is <em>event-triggered</em>, and Watchdog he fires by hand when he feels the need.</p>
+      <p><b>The principle:</b> the corpus's own loop taxonomy names four triggers — heartbeat, cron, hook, and goal. Only two of them are schedules. A gate testing “work starts without you” that recognises just one trigger type is measuring the implementation, not the property.</p>
+      <div class="fixbox">
+        <span class="was">Was — <i>G7: “Some AI work runs on a schedule, without you starting it.”</i></span>
+        <b>Now —</b> “Some AI work starts without you — on a schedule, or fired by an event such as a finished task or an incoming message.”
+      </div>
+    </div>
+  </div>
+
+  <div class="defect">
+    <div class="defect-n">D4</div>
+    <div>
+      <span class="found">Found by · reading the design</span>
+      <h3>Two co-equal axes measured with four questions against nine</h3>
+      <p>The whole point of the two-axis structure is that the axes compound — the source study's finding is that having both capabilities is worth more than the sum of having each. But v1 measured fluency with 4 items and work-system design with 9. Fluency scores moved in 12.5-point jumps, and the imbalance flag needed a 34-point gap it could rarely reach.</p>
+      <p>v1 acknowledged this in a note — “most observable markers live on the S axis, which is why the assessment asks more about it” — which was honest and also a description of a defect rather than a justification for one. The fix is not padding with unobservable questions; it is finding observable fluency markers, which exist.</p>
+      <div class="fixbox">
+        <span class="was">Was — <i>4 fluency items, 9 system items.</i></span>
+        <b>Now — 6 and 9.</b> Two new fluency gates, both artifact-based rather than self-rated: G10 (L4) “you keep some record of where AI has failed you,” and G15 (L5) “you can name what your setup is specifically bad at.”
+      </div>
+    </div>
+  </div>
+
+  <div class="defect">
+    <div class="defect-n">D5</div>
+    <div>
+      <span class="found">Found by · the D1 fix</span>
+      <h3>Two gates were asking the same question</h3>
+      <p>Once G9 was split, its written-criteria half and v1's G12 — “you could hand someone else a written definition of what a good result looks like” — were the same gate under two names, both at Level 5, both on the fluency axis. Scoring Blum against both produced the same verdict from the same evidence twice, which inflates whichever axis carries the duplicate.</p>
+      <p><b>The principle:</b> duplicated gates are silent weighting. If a construct matters double, weight it deliberately rather than by accident of drafting.</p>
+      <div class="fixbox">
+        <span class="was">Was — <i>G9's “written down” half and G12, separately.</i></span>
+        <b>Now — merged into a single G13.</b> Level 5, fluency axis, one verdict.
+      </div>
+    </div>
+  </div>
+
+  <div class="defect">
+    <div class="defect-n">D6</div>
+    <div>
+      <span class="found">Reporting change · not a gate</span>
+      <h3>The headline number hid the shape</h3>
+      <p>Strict gating is the right rule — it is what makes this a diagnostic that names one next action rather than a score. But “Level 3” alone threw away the most informative thing about the Blum profile, which was that every Level 5 gate was already met. That lived in a flag below the fold.</p>
+      <p>v2 reports a level <em>and</em> a reach: the highest level whose own gates are all met, ignoring gaps beneath it. When they differ, the headline says so.</p>
+      <div class="fixbox">
+        <b>Now —</b> “You are at Level 3 · gates met through Level 5”. Strict gating unchanged; the shape is no longer buried.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <p class="eyebrow">Before and after</p>
+  <h2 class="h-sec">The three cases, rescored</h2>
+  <p class="lede">v1 scores are as originally computed. v2 scores were produced by driving the live instrument, not by hand — the numbers below came out of the page.</p>
+  <table class="tbl">
+    <thead>
+      <tr><th>Case</th><th>v1</th><th>v2</th><th class="num">F / S (v2)</th><th>Open gates at the next level</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Marily Nika</td>
+        <td><span class="lvl">L2</span></td>
+        <td><span class="lvl same">L2</span></td>
+        <td class="num">67% / 17%</td>
+        <td>G3, G4, G5 — persistent context, share of work, tool reach.
+          <small>Unchanged by the calibration, which is the point: the control case at the low end did not drift. The 50-point axis gap now trips the imbalance flag correctly — high fluency, no system to accumulate it in.</small></td>
+      </tr>
+      <tr>
+        <td>Daniel Blum</td>
+        <td><span class="lvl">L3</span></td>
+        <td><span class="lvl up">L4</span></td>
+        <td class="num">92% / 100%</td>
+        <td>G13 — written, handable criteria.
+          <small>Moves up one level because the gate that blocked him was conflating two things and sitting too high. He is still blocked, by the same underlying weakness, at the level where it belongs. The v1 “thin base” flag no longer fires — it was an artifact of the misplaced gate.</small></td>
+      </tr>
+      <tr>
+        <td>Ryan Carson</td>
+        <td><span class="lvl">—</span></td>
+        <td><span class="lvl up">L4</span></td>
+        <td class="num">100% / 78%</td>
+        <td>G11, G12, G14 — self-repairing context, automatic friction capture, distribution.
+          <small>Not scored under v1. Lands at the same level as Blum with a completely different set of open gates: Blum's weakness is formalised judgment, Carson's is that nothing improves itself and there is nobody to hand it to. Two people, same rung, different advice.</small></td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="margin-top:26px; color:var(--ink-2); max-width:76ch; font-size:15.5px">The Carson row is the strongest evidence the instrument is doing real work. Under a scoring scheme that only counted totals, he and Blum would be interchangeable. Under gates, they are the same level for opposite reasons, and the next action each should take is different.</p>
+</section>
+
+<section class="sec">
+  <p class="eyebrow">Still uncalibrated</p>
+  <h2 class="h-sec">What three cases cannot tell you</h2>
+  <p class="lede">Listing these is part of the calibration. An instrument that doesn't say where it is unvalidated invites being used as though it isn't.</p>
+  <div class="open">
+    <div class="open-cell">
+      <h4>Whether the levels are the right levels</h4>
+      <p>Five rungs is a borrowed shape, taken from a firm-level model with a 2022 survey base. Nothing tested whether workers actually cluster into five groups rather than three or seven.</p>
+    </div>
+    <div class="open-cell">
+      <h4>Whether two raters agree</h4>
+      <p>Every score here is mine, from transcripts, using my own reading of my own gates. The standard check — two independent raters, agreement measured — has not been run. This is the largest gap.</p>
+    </div>
+    <div class="open-cell">
+      <h4>Whether self-scoring matches observed scoring</h4>
+      <p>All three cases were scored from observation. The instrument is designed to be self-administered. Those are different measurements and nothing here connects them.</p>
+    </div>
+    <div class="open-cell">
+      <h4>Where the thresholds should sit</h4>
+      <p>“More than 40%” of screen time, a 34-point axis gap, three options per gate — all chosen by judgment. Blum clears the 40% band by double; nothing establishes that 40 is the right line.</p>
+    </div>
+    <div class="open-cell">
+      <h4>Whether the levels predict anything</h4>
+      <p>The firm-level source locates its value inflection between stages 2 and 3. No equivalent has been established for workers. Levels currently describe; they do not yet forecast.</p>
+    </div>
+    <div class="open-cell">
+      <h4>Whether it survives non-knowledge work</h4>
+      <p>All three cases are a PM, a PM, and a solo founder — screen-based, autonomous, tool-rich. The gates assume you can choose your own tools and restructure your own work. Many people cannot.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Calibration record · v1 → v2 · 1 September 2026. Instrument: <a href="ai-worker-maturity-model.html">The AI Worker Maturity Scale v2</a>. Worked scoring of the derivation case: <a href="ai-worker-maturity-blum-scored.html">Scored specimen — Daniel Blum</a>. Sources: <code>wiki/sources/2025-12-01-marily-nika-pms-who-use-ai-will-replace-those-who-dont</code>, <code>wiki/sources/2026-08-31-blum-how-i-ai-claude-cowork-pm-system</code>, <code>wiki/sources/2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder</code>. None of the three took the assessment; all scores are third-party readings of recorded demonstrations.</p>
+</footer>
+
+</div>
+</body>
+</html>

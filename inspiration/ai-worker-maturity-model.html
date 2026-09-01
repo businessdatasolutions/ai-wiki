@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The AI Worker Maturity Scale v2</title>
+<style>
+:root{
+  color-scheme: light dark;
+  --ink:#16222E;
+  --ink-2:#3D5266;
+  --ink-3:#6B8095;
+  --paper:#ECEFEE;
+  --paper-2:#F7F9F8;
+  --paper-3:#E0E5E4;
+  --rule:#BCC7C6;
+  --rule-strong:#8FA0A0;
+  --needle:#A8321A;
+  --band:#2A6663;
+  --band-soft:#D6E4E2;
+  --warn:#8A6A16;
+  --shadow:0 1px 0 rgba(22,34,46,.06), 0 12px 32px -20px rgba(22,34,46,.5);
+  --display:"Avenir Next Condensed","Futura","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --body:"Charter","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --data:"SF Mono","Menlo","Consolas","Liberation Mono",monospace;
+  --maxw:1120px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#E4EAE9; --ink-2:#AEBEC0; --ink-3:#7D9095;
+    --paper:#111A22; --paper-2:#18242E; --paper-3:#20303C;
+    --rule:#33454F; --rule-strong:#5A7078;
+    --needle:#E2704F; --band:#5FB3AD; --band-soft:#1D3A3A; --warn:#D8B75A;
+    --shadow:0 1px 0 rgba(0,0,0,.3), 0 12px 32px -20px #000;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--body); font-size:17px; line-height:1.62;
+  font-feature-settings:"kern","liga";
+}
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px}
+
+/* ---------- shared type ---------- */
+.eyebrow{
+  font-family:var(--data); font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--ink-3); margin:0 0 14px;
+}
+.h-sec{
+  font-family:var(--display); font-weight:600; letter-spacing:-0.005em;
+  font-size:clamp(26px,3.4vw,38px); line-height:1.08; margin:0 0 6px;
+}
+.lede{color:var(--ink-2); max-width:62ch; margin:0 0 34px}
+.band-rule{height:1px; background:var(--rule); border:0; margin:0}
+
+/* ---------- masthead ---------- */
+.masthead{padding:44px 0 8px}
+.masthead-top{
+  display:flex; justify-content:space-between; align-items:baseline;
+  gap:20px; flex-wrap:wrap;
+  border-bottom:2px solid var(--ink); padding-bottom:12px;
+}
+.mark{font-family:var(--display); font-weight:700; font-size:15px; letter-spacing:.1em; text-transform:uppercase}
+.mark span{color:var(--needle)}
+.meta-line{font-family:var(--data); font-size:11px; color:var(--ink-3); letter-spacing:.05em}
+
+/* ---------- hero ---------- */
+.hero{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.05fr); gap:56px; align-items:start; padding:52px 0 60px}
+.hero-title{
+  font-family:var(--display); font-weight:600;
+  font-size:clamp(40px,6.6vw,74px); line-height:.95; letter-spacing:-0.02em;
+  margin:0 0 22px;
+}
+.hero-title em{font-style:normal; color:var(--needle)}
+.hero-body p{margin:0 0 16px; max-width:44ch}
+.hero-body p:first-of-type{font-size:19px; color:var(--ink)}
+.pull{
+  border-left:3px solid var(--band); padding:2px 0 2px 16px; margin:26px 0 0;
+  color:var(--ink-2); font-size:15.5px;
+}
+
+/* ---------- the scale (signature) ---------- */
+.scale-fig{margin:0; position:relative}
+.scale-cap{
+  font-family:var(--data); font-size:10.5px; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--ink-3); margin-top:14px; padding-left:2px;
+}
+.scale svg{width:100%; height:auto; display:block; overflow:visible}
+.tick{stroke:var(--rule-strong); stroke-width:1}
+.tick-minor{stroke:var(--rule); stroke-width:1}
+.spine{stroke:var(--ink); stroke-width:2; fill:none}
+.spine-gap{stroke:var(--warn); stroke-width:2; fill:none; stroke-dasharray:3 4}
+.rung-dot{fill:var(--paper); stroke:var(--ink); stroke-width:2}
+.rung-num{font-family:var(--data); font-size:11px; fill:var(--ink-3)}
+.rung-name{font-family:var(--display); font-size:15px; font-weight:600; fill:var(--ink); letter-spacing:.01em}
+.rung-note{font-family:var(--body); font-size:12.5px; fill:var(--ink-3)}
+.trough-label{font-family:var(--data); font-size:10px; fill:var(--warn); letter-spacing:.1em; text-transform:uppercase}
+.infl-label{font-family:var(--data); font-size:10px; fill:var(--band); letter-spacing:.1em; text-transform:uppercase}
+.needle-g{opacity:0; transition:opacity .5s ease}
+.needle-g.on{opacity:1}
+@media (prefers-reduced-motion:reduce){ .needle-g{transition:none} }
+
+/* ---------- status card ---------- */
+.status{
+  background:var(--paper-2); border:1px solid var(--rule); border-left:3px solid var(--warn);
+  padding:22px 26px; margin:0 0 56px; box-shadow:var(--shadow);
+}
+.status h2{font-family:var(--data); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--warn); margin:0 0 10px; font-weight:400}
+.status p{margin:0 0 10px; color:var(--ink-2); font-size:15.5px; max-width:78ch}
+.status p:last-child{margin-bottom:0}
+
+/* ---------- sections ---------- */
+.sec{padding:56px 0}
+.sec + .sec{border-top:1px solid var(--rule)}
+
+/* axes */
+.axes{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:34px}
+.axis-card{border-top:2px solid var(--band); padding-top:18px}
+.axis-key{font-family:var(--data); font-size:11px; letter-spacing:.14em; color:var(--band); text-transform:uppercase; margin:0 0 8px}
+.axis-name{font-family:var(--display); font-size:23px; font-weight:600; margin:0 0 10px; letter-spacing:-0.01em}
+.axis-card p{margin:0 0 12px; color:var(--ink-2); font-size:15.5px}
+.axis-card p:last-child{margin-bottom:0}
+
+/* levels table */
+.levels{border-top:1px solid var(--ink)}
+.lv{display:grid; grid-template-columns:64px 1fr 1.25fr; gap:24px; padding:22px 0; border-bottom:1px solid var(--rule); align-items:start}
+.lv-num{font-family:var(--data); font-size:12px; color:var(--ink-3); padding-top:5px; letter-spacing:.08em}
+.lv-name{font-family:var(--display); font-size:22px; font-weight:600; margin:0 0 4px; letter-spacing:-0.01em}
+.lv-sub{font-family:var(--data); font-size:11px; color:var(--band); letter-spacing:.08em; text-transform:uppercase}
+.lv-body{color:var(--ink-2); font-size:15.5px}
+.lv-body strong{color:var(--ink); font-weight:600}
+.lv-gate{display:block; margin-top:8px; font-size:14px; color:var(--ink-3)}
+
+/* ---------- assessment ---------- */
+.quiz-head{display:flex; justify-content:space-between; align-items:flex-end; gap:20px; flex-wrap:wrap; margin-bottom:8px}
+.progress{font-family:var(--data); font-size:11.5px; color:var(--ink-3); letter-spacing:.08em; white-space:nowrap}
+.progress b{color:var(--needle); font-weight:400}
+.gate-group{margin:0 0 8px}
+.gate-group-hd{
+  font-family:var(--data); font-size:11px; letter-spacing:.13em; text-transform:uppercase;
+  color:var(--ink-3); padding:26px 0 10px; border-bottom:1px solid var(--rule); margin-bottom:4px;
+}
+.q{padding:20px 0; border-bottom:1px solid var(--rule)}
+.q-hd{display:flex; gap:14px; align-items:baseline; margin-bottom:12px}
+.q-code{font-family:var(--data); font-size:11px; color:var(--ink-3); letter-spacing:.06em; padding-top:2px; min-width:56px}
+.q-code i{font-style:normal; color:var(--band)}
+.q-text{margin:0; font-size:16.5px; max-width:70ch}
+.opts{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin-left:70px}
+.opt{position:relative}
+.opt input{position:absolute; opacity:0; width:1px; height:1px}
+.opt label{
+  display:block; cursor:pointer; padding:11px 13px; font-size:14px; line-height:1.36;
+  background:var(--paper-2); border:1px solid var(--rule); color:var(--ink-2);
+  transition:background .12s ease, border-color .12s ease, color .12s ease;
+}
+.opt label:hover{border-color:var(--rule-strong)}
+.opt input:checked + label{background:var(--band-soft); border-color:var(--band); color:var(--ink); box-shadow:inset 2px 0 0 var(--band)}
+.opt input:focus-visible + label{outline:2px solid var(--needle); outline-offset:2px}
+@media (prefers-reduced-motion:reduce){ .opt label{transition:none} }
+
+.actions{display:flex; gap:14px; align-items:center; flex-wrap:wrap; padding:30px 0 0}
+.btn{
+  font-family:var(--display); font-size:15px; font-weight:600; letter-spacing:.02em;
+  padding:13px 26px; border:2px solid var(--ink); background:var(--ink); color:var(--paper);
+  cursor:pointer; transition:opacity .12s ease;
+}
+.btn:hover{opacity:.86}
+.btn:focus-visible{outline:2px solid var(--needle); outline-offset:3px}
+.btn[disabled]{opacity:.35; cursor:not-allowed}
+.btn-ghost{background:transparent; color:var(--ink); border-color:var(--rule-strong)}
+.hint{font-family:var(--data); font-size:11.5px; color:var(--ink-3)}
+
+/* ---------- result ---------- */
+.result[hidden]{display:none}
+.result-top{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:44px; align-items:start; margin-bottom:8px}
+.verdict-key{font-family:var(--data); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--needle); margin:0 0 10px}
+.verdict-name{font-family:var(--display); font-size:clamp(34px,5vw,54px); font-weight:600; line-height:1; letter-spacing:-0.02em; margin:0 0 14px}
+.verdict-say{color:var(--ink-2); margin:0 0 20px; max-width:46ch}
+.meters{margin-top:24px}
+.meter{margin-bottom:18px}
+.meter-hd{display:flex; justify-content:space-between; font-family:var(--data); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); margin-bottom:6px}
+.meter-hd b{color:var(--ink); font-weight:400}
+.meter-track{height:7px; background:var(--paper-3); position:relative}
+.meter-fill{height:100%; background:var(--band); width:0; transition:width .7s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){ .meter-fill{transition:none} }
+
+/* result readout strip */
+.readout{margin:26px 0 4px; min-width:0}
+.readout-hd{font-family:var(--data); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); margin-bottom:10px}
+.readout-strip{display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:4px; min-width:0}
+.rd{padding:9px 8px 10px; background:var(--paper-3); border-top:2px solid var(--rule-strong); color:var(--ink-3)}
+.rd b{display:block; font-family:var(--data); font-size:10.5px; letter-spacing:.06em; margin-bottom:3px}
+.rd span{font-family:var(--display); font-size:12.5px; font-weight:600; line-height:1.15; display:block}
+.rd.reached{background:var(--band-soft); border-top-color:var(--band); color:var(--ink-2)}
+.rd.here{background:var(--needle); border-top-color:var(--needle); color:#fff}
+.rd.here b,.rd.here span{color:#fff}
+
+.next{border-top:2px solid var(--ink); padding-top:22px; margin-top:14px}
+.next h3{font-family:var(--display); font-size:20px; font-weight:600; margin:0 0 4px}
+.next-why{font-family:var(--data); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--needle); margin:0 0 16px}
+.step{display:grid; grid-template-columns:26px 1fr; gap:14px; padding:13px 0; border-bottom:1px solid var(--rule)}
+.step-n{font-family:var(--data); font-size:11px; color:var(--ink-3); padding-top:4px}
+.step p{margin:0; font-size:15.5px; color:var(--ink-2)}
+.step p b{color:var(--ink); font-weight:600}
+.flag{
+  background:var(--paper-2); border:1px solid var(--rule); border-left:3px solid var(--needle);
+  padding:16px 20px; margin-top:24px; font-size:15px; color:var(--ink-2);
+}
+.flag b{color:var(--ink); font-weight:600}
+.flag.teal{border-left-color:var(--band)}
+.flag.amber{border-left-color:var(--warn)}
+
+/* ---------- provenance ---------- */
+.prov{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1px; background:var(--rule); border:1px solid var(--rule)}
+.prov-cell{background:var(--paper); padding:18px 20px}
+.prov-cell h4{font-family:var(--data); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--band); margin:0 0 8px; font-weight:400}
+.prov-cell p{margin:0; font-size:14.5px; color:var(--ink-2); line-height:1.55}
+.prov-cell code{font-family:var(--data); font-size:12.5px; color:var(--ink); background:var(--paper-3); padding:1px 5px}
+
+footer{padding:44px 0 64px; border-top:1px solid var(--rule); margin-top:8px}
+footer p{font-family:var(--data); font-size:11.5px; color:var(--ink-3); line-height:1.8; margin:0; max-width:80ch}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:minmax(0,1fr); gap:40px; padding:36px 0 44px}
+  .axes,.result-top{grid-template-columns:minmax(0,1fr); gap:28px}
+  .lv{grid-template-columns:52px 1fr; gap:16px}
+  .lv-body{grid-column:2}
+}
+@media (max-width:620px){
+  .rd{padding:8px 5px 9px}
+  .rd b{font-size:9.5px}
+  .rd span{font-size:10.5px; hyphens:auto; overflow-wrap:anywhere}
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  .opts{grid-template-columns:minmax(0,1fr); margin-left:0}
+  .q-hd{flex-direction:column; gap:4px}
+  .q-code{min-width:0}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="masthead">
+  <div class="masthead-top">
+    <div class="mark">The AI Worker Maturity Scale<span>.</span></div>
+    <div class="meta-line">Composed from the ai-wiki · v2, calibrated 1 Sep 2026 against 3 scored cases · still not a validated instrument</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-body">
+    <p class="eyebrow">A measuring device, with its faults marked</p>
+    <h1 class="hero-title">Every AI maturity model measures the <em>company</em>.</h1>
+    <p>This one measures a person. It places you on five levels using facts you can check — not statements you agree with — and then names the single thing standing between you and the next one.</p>
+    <p>It is assembled from three separate findings that had never been put together: a stage ladder whose value sits in the middle, a two-axis structure where the axes compound, and one worker's narrated climb with observable markers along it.</p>
+    <div class="pull">The levels are not about which tools you have. They are about who holds the context, who writes to your systems, and where you keep your judgment.</div>
+  </div>
+
+  <figure class="scale-fig">
+    <div class="scale">
+      <svg viewBox="0 0 460 470" role="img" aria-label="A vertical calibrated scale showing five maturity levels, with a marked trough between level 2 and level 3.">
+        <!-- minor ticks -->
+        <g>
+          <line class="tick-minor" x1="40" y1="60"  x2="52" y2="60"/>
+          <line class="tick-minor" x1="40" y1="105" x2="52" y2="105"/>
+          <line class="tick-minor" x1="40" y1="150" x2="52" y2="150"/>
+          <line class="tick-minor" x1="40" y1="195" x2="52" y2="195"/>
+          <line class="tick-minor" x1="40" y1="240" x2="52" y2="240"/>
+          <line class="tick-minor" x1="40" y1="285" x2="52" y2="285"/>
+          <line class="tick-minor" x1="40" y1="330" x2="52" y2="330"/>
+          <line class="tick-minor" x1="40" y1="375" x2="52" y2="375"/>
+        </g>
+        <!-- spine: solid, with a dashed notch where the trough is -->
+        <path class="spine" d="M56 405 L56 320"/>
+        <path class="spine-gap" d="M56 320 L56 268"/>
+        <path class="spine" d="M56 268 L56 40"/>
+
+        <!-- trough marker -->
+        <g>
+          <line class="tick" x1="46" y1="294" x2="56" y2="294"/>
+          <text class="trough-label" x="14" y="291" text-anchor="end">the</text>
+          <text class="trough-label" x="14" y="303" text-anchor="end">trough</text>
+        </g>
+        <!-- inflection marker -->
+        <g>
+          <line class="tick" x1="56" y1="262" x2="66" y2="262" stroke="var(--band)"/>
+          <text class="infl-label" x="72" y="252">value inflection</text>
+        </g>
+
+        <!-- rungs -->
+        <g>
+          <circle class="rung-dot" cx="56" cy="405" r="6"/>
+          <text class="rung-num"  x="80" y="396">L1</text>
+          <text class="rung-name" x="106" y="397">Experimenting</text>
+          <text class="rung-note" x="106" y="414">Nothing survives the session</text>
+        </g>
+        <g>
+          <circle class="rung-dot" cx="56" cy="320" r="6"/>
+          <text class="rung-num"  x="80" y="311">L2</text>
+          <text class="rung-name" x="106" y="312">Repeating</text>
+          <text class="rung-note" x="106" y="329">You are the integration layer</text>
+        </g>
+        <g>
+          <circle class="rung-dot" cx="56" cy="220" r="6"/>
+          <text class="rung-num"  x="80" y="211">L3</text>
+          <text class="rung-name" x="106" y="212">Integrating</text>
+          <text class="rung-note" x="106" y="229">The context outlives the session</text>
+        </g>
+        <g>
+          <circle class="rung-dot" cx="56" cy="130" r="6"/>
+          <text class="rung-num"  x="80" y="121">L4</text>
+          <text class="rung-name" x="106" y="122">Delegating</text>
+          <text class="rung-note" x="106" y="139">Work happens while you sleep</text>
+        </g>
+        <g>
+          <circle class="rung-dot" cx="56" cy="40" r="6"/>
+          <text class="rung-num"  x="80" y="31">L5</text>
+          <text class="rung-name" x="106" y="32">Compounding</text>
+          <text class="rung-note" x="106" y="49">The system improves itself</text>
+        </g>
+
+        <!-- reader's needle, revealed after assessment -->
+        <g class="needle-g" id="needleG">
+          <line id="needleLine" x1="20" y1="405" x2="56" y2="405" stroke="var(--needle)" stroke-width="2"/>
+          <polygon id="needleTip" points="56,405 46,400 46,410" fill="var(--needle)"/>
+          <text id="needleTxt" class="trough-label" x="18" y="393" text-anchor="end" fill="var(--needle)">you</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption class="scale-cap">Fig. 1 — The scale. The dashed span is where measured return goes negative before it goes positive.</figcaption>
+  </figure>
+</section>
+
+<div class="status">
+  <h2>Instrument status — read before using</h2>
+  <p>This is a <strong>defensible composition, not a validated instrument.</strong> Its ladder shape is borrowed from an enterprise model built on a 2022 survey. Its two-axis structure is transposed from an organisational construct measured across 3,467 respondents. Its level markers come from a single narrated case — self-reported, unaudited, and selected for being worth broadcasting — plus one population-scale measurement of learning effects.</p>
+  <p>That is enough to locate yourself and pick a next move. It is not enough to rank people, gate a promotion, or put a number in a performance review. Treat a result as a conversation starter with yourself.</p>
+  <p><strong>v2 changes, after scoring three real cases.</strong> Five defects in v1 were found by running it against people rather than reasoning about it: one gate conflated a practice with an artifact and sat a level too high; one gate asked you to rate a capability instead of report a behaviour, and could collapse the whole ladder on its own; one gate's wording covered scheduled work but not event-triggered work; the two axes were measured with 4 questions against 9; and two gates were near-duplicates. All five are fixed. The full record, including the cases and what changed because of which, is in the <a href="ai-worker-maturity-calibration.html">calibration report</a>.</p>
+</div>
+
+<section class="sec">
+  <p class="eyebrow">Why two axes and not one</p>
+  <h2 class="h-sec">You can be fluent and still immature</h2>
+  <p class="lede">The strongest argument against a single score comes from a 3,467-respondent study that scored organisations on two learning capabilities at once. Either one alone helped a little. Having both compounded — up to 2.2× on some measures. The majority, 59%, were low on both. The axes below are that finding transposed to a person.</p>
+
+  <div class="axes">
+    <div class="axis-card">
+      <p class="axis-key">Axis F</p>
+      <h3 class="axis-name">Fluency &amp; judgment</h3>
+      <p>Can you get good work out of the model, and — the part that actually matters — can you tell when it hasn't? This is measurable and learnable: after controlling for task type, model choice and complexity, longer-tenured users show systematically higher task-success rates.</p>
+      <p>The terminal skill on this axis is not directing. It is <strong>evaluating</strong> — knowing what good looks like precisely enough to check the work.</p>
+    </div>
+    <div class="axis-card">
+      <p class="axis-key">Axis S</p>
+      <h3 class="axis-name">Work-system design</h3>
+      <p>Have you restructured your own work so the AI has context, reach, and somewhere to put its output? This is where the compounding happens, and it is why someone can write excellent prompts all day into a stateless chat window and still capture a fraction of what's available.</p>
+      <p>Most of the observable markers live on this axis, which is why the assessment asks more questions about it. Facts about your setup are checkable; feelings about your fluency are not.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <p class="eyebrow">The five levels</p>
+  <h2 class="h-sec">Each level is a gate, not a score</h2>
+  <p class="lede">You are at the highest level whose gates you have all passed. A gate is a fact about how your work runs — something a colleague watching over your shoulder could confirm.</p>
+
+  <div class="levels">
+    <div class="lv">
+      <div class="lv-num">L1</div>
+      <div><h3 class="lv-name">Experimenting</h3><span class="lv-sub">The default</span></div>
+      <div class="lv-body">You use AI, and it helps. But nothing survives the session — no saved context, no reusable artifact, no trace tomorrow of what you learned today.
+        <span class="lv-gate">Everyone starts here. Most people stay here, not from lack of skill but because nothing accumulates.</span></div>
+    </div>
+    <div class="lv">
+      <div class="lv-num">L2</div>
+      <div><h3 class="lv-name">Repeating</h3><span class="lv-sub">Gates G1 · G2</span></div>
+      <div class="lv-body">You have prompts and workflows you reuse, and you can tell when output is wrong in your own domain. But <strong>you are still the integration layer</strong> — carrying context from tool to tool in your head and your clipboard.
+        <span class="lv-gate">The ceiling here is your own patience. Every hand-off loses something.</span></div>
+    </div>
+    <div class="lv">
+      <div class="lv-num">L3</div>
+      <div><h3 class="lv-name">Integrating</h3><span class="lv-sub">Gates G3 · G4 · G5 · G6</span></div>
+      <div class="lv-body">There is a written context about your work that outlives any session, the AI reaches your real tools, and a meaningful share of your work happens inside one system. <strong>Context stops being something you supply and starts being something that accumulates.</strong>
+        <span class="lv-gate">The marker is a share, not a feeling: how much of your screen time happens inside it. The narrated case ran 70–80%.</span></div>
+    </div>
+    <div class="lv">
+      <div class="lv-num">L4</div>
+      <div><h3 class="lv-name">Delegating</h3><span class="lv-sub">Gates G7 · G8 · G9 · G10</span></div>
+      <div class="lv-body">Work starts without you — on a schedule or a trigger — and the agent <strong>writes</strong> into a system of record rather than only suggesting. But you keep a checkpoint: delegated output passes a review before it is used, and you track where it has failed you. The boundary is a phrase from Google's developer-research team: <strong>delegate tasks, not judgment.</strong>
+        <span class="lv-gate">Two markers here are hard to fake — whether anything runs while you sleep, and who writes your task list. Note the level asks only that you <em>hold</em> judgment, not that you have formalised it. That comes next.</span></div>
+    </div>
+    <div class="lv">
+      <div class="lv-num">L5</div>
+      <div><h3 class="lv-name">Compounding</h3><span class="lv-sub">Gates G11 · G12 · G13 · G14 · G15</span></div>
+      <div class="lv-body">The system improves itself with your approval: it flags context it lacks and asks, its workflows record their own friction for review, your review criteria are written down well enough to hand over, someone else is running a version of it, and you can say precisely what it is still bad at.
+        <span class="lv-gate">The sharpest single indicator that context has become infrastructure: the agent notices its own ignorance before you do. The sharpest indicator of your own maturity: you can name what your system can't do.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="assess">
+  <div class="quiz-head">
+    <div>
+      <p class="eyebrow">The assessment</p>
+      <h2 class="h-sec">Thirteen gates</h2>
+    </div>
+    <div class="progress" id="progress">0 of 14 answered</div>
+  </div>
+  <p class="lede">Answer from what is true this week, not what you intend to set up. Every question asks about something observable — the surest way to get a useless result is to answer aspirationally.</p>
+
+  <form id="quiz"></form>
+
+  <div class="actions">
+    <button type="button" class="btn" id="scoreBtn" disabled>Place me on the scale</button>
+    <button type="button" class="btn btn-ghost" id="resetBtn">Clear answers</button>
+    <span class="hint" id="hint">Answer all 14 to continue.</span>
+  </div>
+</section>
+
+<section class="sec result" id="result" hidden>
+  <div class="result-top">
+    <div>
+      <p class="verdict-key" id="vKey">Result</p>
+      <h2 class="verdict-name" id="vName">—</h2>
+      <p class="verdict-say" id="vSay"></p>
+      <div class="meters">
+        <div class="meter">
+          <div class="meter-hd"><span>Axis F — fluency &amp; judgment</span><b id="fPct">0%</b></div>
+          <div class="meter-track"><div class="meter-fill" id="fFill"></div></div>
+        </div>
+        <div class="meter">
+          <div class="meter-hd"><span>Axis S — work-system design</span><b id="sPct">0%</b></div>
+          <div class="meter-track"><div class="meter-fill" id="sFill"></div></div>
+        </div>
+      </div>
+      <div class="readout">
+        <div class="readout-hd">Readout</div>
+        <div class="readout-strip" id="readout"></div>
+      </div>
+      <div id="flags"></div>
+    </div>
+    <div>
+      <div class="next">
+        <h3 id="nextTitle">Next</h3>
+        <p class="next-why" id="nextWhy"></p>
+        <div id="steps"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <p class="eyebrow">Provenance</p>
+  <h2 class="h-sec">Where each piece comes from</h2>
+  <p class="lede">Nothing here is invented. Each part of the model is traceable to a page in the wiki, and the full audit trail — including the 65 pages the query considered and rejected, with a reason for each — sits alongside this file.</p>
+  <div class="prov">
+    <div class="prov-cell">
+      <h4>The ladder shape</h4>
+      <p>MIT CISR's four-stage enterprise model (28 / 34 / 31 / 7%), and its finding that the greatest financial impact comes between stages 2 and 3 — not at the top. <code>sources/2026-04-28-mit-sloan-ai-maturity</code></p>
+    </div>
+    <div class="prov-cell">
+      <h4>The two axes</h4>
+      <p>Ransbotham et al., MIT SMR × BCG, n=3,467: two learning capabilities scored independently, compounding when combined, 59% low on both. <code>sources/2026-05-07-ransbotham-augmented-learners</code></p>
+    </div>
+    <div class="prov-cell">
+      <h4>The level markers</h4>
+      <p>The corpus's only narrated end-to-end worker trajectory: share of work in one harness, who writes the system of record, agent-detected context gaps, friction logging, distribution. <code>sources/2026-08-31-blum-how-i-ai-claude-cowork-pm-system</code></p>
+    </div>
+    <div class="prov-cell">
+      <h4>That fluency is learnable</h4>
+      <p>Anthropic Economic Index 5: high-tenure users show higher task-success rates after controls, and model selection tracks task value. <code>sources/2026-05-07-anthropic-economic-index-5-learning-curves</code></p>
+    </div>
+    <div class="prov-cell">
+      <h4>The L4 boundary</h4>
+      <p>“Delegate tasks, not judgment.” Google's Developer Intelligence team on the five patterns of top AI-native engineers, and verification as the new bottleneck. <code>sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer</code></p>
+    </div>
+    <div class="prov-cell">
+      <h4>The trough</h4>
+      <p>The productivity J-curve at individual scale: return runs negative first, trust falls, you double-check everything. A snapshot cannot tell a climb from a failure. <code>concepts/micro-productivity-trap</code></p>
+    </div>
+    <div class="prov-cell">
+      <h4>What is maturing</h4>
+      <p>Judgment and evaluation, not tool knowledge — evaluation named the terminal skill for people managing fleets of agents. <code>concepts/durable-skills</code></p>
+    </div>
+    <div class="prov-cell">
+      <h4>Why it doesn't sum</h4>
+      <p>A company of Level-4 individuals is not a Level-4 company. Distribution turned out to be a UX problem: three days by terminal failed, fifteen guided minutes worked. <code>concepts/enterprise-ai-adoption</code></p>
+    </div>
+    <div class="prov-cell">
+      <h4>The gap this fills</h4>
+      <p>All four maturity instruments in the wiki measure firms; success rates span 1–13%. The thread now carries an open request for a real worker-level instrument. <code>threads/ai-maturity-measurement-comparison</code></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>The AI Worker Maturity Scale · v1 · assembled 31 August 2026 from the ai-wiki. Answers stay in this browser tab; nothing is sent anywhere. Full query trace with the used/ignored ledger: <code>2026-08-31-ai-maturity-levels-for-workers-query-trace.md</code>.</p>
+</footer>
+
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var QUESTIONS = [
+  { id:"G1",  lv:2, axis:"S", q:"You have prompts, instructions or workflows you reuse rather than retyping from scratch.",
+    o:["No — I start fresh each time","A few, but they live in my head or scattered","Yes, saved somewhere I can find them"] },
+  { id:"G2",  lv:2, axis:"F", q:"You check AI output against something other than your own impression before using it for anything that matters.",
+    o:["Rarely — I use it or discard it","For the things that matter most","Yes, it's habit"] },
+
+  { id:"G3",  lv:3, axis:"S", q:"There is a written context the AI reads about your work — role, goals, colleagues, projects, internal terminology — that outlives any single session.",
+    o:["No","A short one, written once","Yes, covering several areas and kept current"] },
+  { id:"G4",  lv:3, axis:"S", q:"Share of your screen-based work that happens inside one AI-connected system.",
+    o:["Under 10%","Between 10% and 40%","More than 40%"] },
+  { id:"G5",  lv:3, axis:"S", q:"The AI can reach your actual tools — calendar, mail, documents, chat, tickets — rather than only what you paste in.",
+    o:["No, I paste everything","One or two are connected","Most of the ones that matter"] },
+  { id:"G6",  lv:3, axis:"F", q:"You choose deliberately between models, tools or modes depending on the kind of task, rather than always using the same one.",
+    o:["I use whatever opens","Occasionally, for big things","Yes, it's a deliberate call each time"] },
+
+  { id:"G7",  lv:4, axis:"S", q:"Some AI work starts without you — on a schedule, or fired by an event such as a finished task or an incoming message.",
+    o:["No, I start everything","I've tried it, nothing stuck","Yes, at least one runs regularly"] },
+  { id:"G8",  lv:4, axis:"S", q:"The AI writes into a system you actually rely on — task board, notes, documents, repository — rather than only suggesting in a chat window.",
+    o:["No, chat only","It drafts and I paste it in","Yes, it writes there directly"] },
+  { id:"G9",  lv:4, axis:"F", q:"Delegated output passes a review step before it gets used. You don't ship it unseen.",
+    o:["Some of it goes out unreviewed","I check when I remember","Always — there's a defined checkpoint"] },
+  { id:"G10", lv:4, axis:"F", q:"You keep some record of where AI has failed you — even an informal list.",
+    o:["No","I remember the bad ones","Yes, it's written down somewhere"] },
+
+  { id:"G11", lv:5, axis:"S", q:"Your setup tells you when it is missing context — flagging a term, file or person it doesn't know — instead of guessing.",
+    o:["No, it guesses","Only when I think to ask","Yes, it raises them unprompted"] },
+  { id:"G12", lv:5, axis:"S", q:"Friction is captured automatically: your workflows record where they went wrong, and you review that record on a cadence.",
+    o:["No","I notice and fix things ad hoc","Yes, recorded and reviewed on a cadence"] },
+  { id:"G13", lv:5, axis:"F", q:"The criteria you review against are written down — specific enough to hand to someone else and have them apply.",
+    o:["No","I could describe them verbally","Yes, written and specific"] },
+  { id:"G14", lv:5, axis:"S", q:"Someone else is running a version of your setup.",
+    o:["No","I've shared files or tips","Yes, someone else actually uses it"] },
+  { id:"G15", lv:5, axis:"F", q:"You can name what your current setup is specifically bad at — named gaps, not \u201cit could be better\u201d.",
+    o:["Not really","In general terms","Yes — I can name the specific gaps"] },
+
+  { id:"D1",  lv:0, axis:"D", q:"Diagnostic — did you go through a stretch where working this way felt slower before it felt faster?",
+    o:["Not yet","I think I'm in it right now","Yes, and I came out the other side"] }
+];
+
+var LEVELS = {
+  1:{ name:"Experimenting", say:"AI helps you, but nothing accumulates. What you worked out today will not be there tomorrow — which is why it feels like starting over each time, and why the effort never compounds." },
+  2:{ name:"Repeating",     say:"You have reusable pieces and you can judge the output. What's holding you is that you are still the integration layer: every context hand-off between tools goes through your head." },
+  3:{ name:"Integrating",   say:"Context has stopped being something you supply and started being something that accumulates. This is the level where the return curve turns upward — and where most of the measured value sits." },
+  4:{ name:"Delegating",    say:"Work starts without you and the system writes to things you rely on — but output still passes your checkpoint. You've given away the tasks and kept the judgment, which is the boundary that matters at this level." },
+  5:{ name:"Compounding",   say:"Your setup improves itself with your approval, your judgment is written down rather than held in your head, and the whole thing has survived contact with another person. There is no Level 6 in this model — the corpus doesn't support one." }
+};
+
+var NEXT = {
+  1:{ title:"Get to Repeating", why:"Make something survive the session",
+      steps:[["Save the prompts you keep retyping.","One plain text file is enough. The point is not organisation, it is that tomorrow starts where today ended."],
+             ["Test the output on something you already know.","Ask it about a topic where you know the right answer. You are calibrating your own ability to spot a wrong one."]] },
+  2:{ title:"Get to Integrating", why:"Stop being the integration layer",
+      steps:[["Write the context file.","Your role, current goals, who your colleagues are, what your projects are called, and the internal terms nobody outside would know. This is the highest-return hour you will spend."],
+             ["Connect one real tool.","Pick the one you open most. Pasting is where context leaks."],
+             ["Start moving work <b>into</b> that system.","Context is lost at every exit. Anything you do elsewhere, the system doesn't learn from."]] },
+  3:{ title:"Get to Delegating", why:"Make work start without you, and keep a checkpoint",
+      steps:[["Automate one trigger.","A Monday planning pass, a morning catch-up, or something that fires when a task finishes. A schedule and an event both count — what matters is that you didn't start it."],
+             ["Let it write to one system of record.","Choose the lowest-stakes one first. The shift from suggesting to writing is the actual level change."],
+             ["Put one defined checkpoint in front of delegated output.","Delegate tasks, not judgment. At this level the criteria can still live in your head — they just have to be applied every time."],
+             ["Start a failure list.","A running note of where it got things wrong. It costs nothing now and becomes the raw material for everything at Level 5."]] },
+  4:{ title:"Get to Compounding", why:"Get your judgment out of your head",
+      steps:[["Write down what you are checking for.","You already apply criteria at Level 4 — this is the step where they stop being tacit. Specific enough that a colleague could apply them and reach your answer."],
+             ["Make it flag what it doesn't know.","Add an instruction to surface unfamiliar terms, files and people, ask you, and save your answer. You stop being the one who notices the gaps."],
+             ["Move your failure list inside the workflows.","Have each recurring task record its own friction, and review the collected list on a cadence rather than fixing things as they annoy you."],
+             ["Hand it to one colleague.","Not as a document — as a guided setup that asks them the questions. The evidence is blunt here: a three-day install failed; fifteen guided minutes worked."]] },
+  5:{ title:"You're at the top of this scale", why:"The model stops here — deliberately",
+      steps:[["Watch the two gaps the source case still had.","Everything still runs tethered to an open machine, and the system prepares work rather than acting on it. Both are named as the remaining blockers, not as solved."],
+             ["Treat the scale as due for revision.","This model is built from one narrated case. If you are here, your experience is now evidence the model doesn't yet contain."]] }
+};
+
+var form = document.getElementById("quiz");
+var byLevel = {2:"Gates for Level 2 — Repeating",3:"Gates for Level 3 — Integrating",4:"Gates for Level 4 — Delegating",5:"Gates for Level 5 — Compounding",0:"Diagnostic — not scored"};
+var lastLv = null;
+
+QUESTIONS.forEach(function(item){
+  if(item.lv !== lastLv){
+    var hd = document.createElement("div");
+    hd.className = "gate-group-hd";
+    hd.textContent = byLevel[item.lv];
+    form.appendChild(hd);
+    lastLv = item.lv;
+  }
+  var q = document.createElement("div");
+  q.className = "q";
+  q.setAttribute("role","group");
+  q.setAttribute("aria-label", item.id + " — " + item.q);
+
+  var hd = document.createElement("div"); hd.className = "q-hd";
+  var code = document.createElement("span"); code.className = "q-code";
+  code.innerHTML = item.id + " <i>" + item.axis + "</i>";
+  var txt = document.createElement("p"); txt.className = "q-text"; txt.textContent = item.q;
+  hd.appendChild(code); hd.appendChild(txt); q.appendChild(hd);
+
+  var opts = document.createElement("div"); opts.className = "opts";
+  item.o.forEach(function(label, i){
+    var wrap = document.createElement("div"); wrap.className = "opt";
+    var input = document.createElement("input");
+    input.type = "radio"; input.name = item.id; input.value = String(i);
+    input.id = item.id + "_" + i;
+    var lab = document.createElement("label");
+    lab.setAttribute("for", input.id); lab.textContent = label;
+    wrap.appendChild(input); wrap.appendChild(lab); opts.appendChild(wrap);
+  });
+  q.appendChild(opts);
+  form.appendChild(q);
+});
+
+var progressEl = document.getElementById("progress");
+var scoreBtn = document.getElementById("scoreBtn");
+var hintEl = document.getElementById("hint");
+
+function answers(){
+  var out = {};
+  QUESTIONS.forEach(function(item){
+    var el = form.querySelector('input[name="'+item.id+'"]:checked');
+    if(el) out[item.id] = parseInt(el.value,10);
+  });
+  return out;
+}
+function refresh(){
+  var a = answers(), n = Object.keys(a).length, total = QUESTIONS.length;
+  progressEl.innerHTML = "<b>"+n+"</b> of "+total+" answered";
+  var done = n === total;
+  scoreBtn.disabled = !done;
+  hintEl.textContent = done ? "Ready." : "Answer all "+total+" to continue.";
+}
+form.addEventListener("change", refresh);
+refresh();
+
+function passed(v){ return v === 2; }
+
+document.getElementById("scoreBtn").addEventListener("click", function(){
+  var a = answers();
+
+  // level = highest L where every gate up to and including L passes
+  // reach  = highest L whose OWN gates all pass, ignoring gaps below it
+  var level = 1, gatesByLv = {2:[],3:[],4:[],5:[]};
+  QUESTIONS.forEach(function(item){ if(item.lv>=2) gatesByLv[item.lv].push(item); });
+  for(var L=2; L<=5; L++){
+    var all = gatesByLv[L].every(function(item){ return passed(a[item.id]); });
+    if(all) level = L; else break;
+  }
+  var reach = level;
+  for(var R=5; R>=2; R--){
+    if(gatesByLv[R].every(function(item){ return passed(a[item.id]); })){ reach = Math.max(reach, R); break; }
+  }
+
+  // gaps ABOVE the level that are already passed (built high on a thin base)
+  var skipped = [];
+  QUESTIONS.forEach(function(item){
+    if(item.lv > level+1 && passed(a[item.id])) skipped.push(item.id);
+  });
+  // the blocking gates at the next level
+  var blocking = [];
+  if(level < 5){
+    gatesByLv[level+1].forEach(function(item){ if(!passed(a[item.id])) blocking.push(item); });
+  }
+
+  // axis scores
+  function axisPct(ax){
+    var items = QUESTIONS.filter(function(i){ return i.axis===ax; });
+    var got = items.reduce(function(s,i){ return s + (a[i.id]||0); }, 0);
+    return Math.round(100*got/(items.length*2));
+  }
+  var fp = axisPct("F"), sp = axisPct("S");
+
+  // ---- render ----
+  var res = document.getElementById("result");
+  res.hidden = false;
+  document.getElementById("vKey").textContent = "You are at Level " + level +
+    (reach > level ? "  ·  gates met through Level " + reach : "");
+  document.getElementById("vName").textContent = LEVELS[level].name;
+  document.getElementById("vSay").textContent = LEVELS[level].say;
+  document.getElementById("fPct").textContent = fp + "%";
+  document.getElementById("sPct").textContent = sp + "%";
+  requestAnimationFrame(function(){
+    document.getElementById("fFill").style.width = fp + "%";
+    document.getElementById("sFill").style.width = sp + "%";
+  });
+
+  // needle on the scale
+  var Y = {1:405, 2:320, 3:220, 4:130, 5:40};
+  var y = Y[level];
+  document.getElementById("needleLine").setAttribute("y1", y);
+  document.getElementById("needleLine").setAttribute("y2", y);
+  document.getElementById("needleTip").setAttribute("points", "56,"+y+" 46,"+(y-5)+" 46,"+(y+5));
+  document.getElementById("needleTxt").setAttribute("y", y-12);
+  document.getElementById("needleG").classList.add("on");
+
+  // readout strip (the result panel's own copy of the scale)
+  var rdEl = document.getElementById("readout");
+  rdEl.innerHTML = "";
+  for(var L2=1; L2<=5; L2++){
+    var cell = document.createElement("div");
+    cell.className = "rd" + (L2 < level ? " reached" : (L2 === level ? " here" : ""));
+    cell.innerHTML = "<b>L" + L2 + "</b><span>" + LEVELS[L2].name + "</span>";
+    if(L2 === level) cell.setAttribute("aria-current","step");
+    rdEl.appendChild(cell);
+  }
+
+  // next steps
+  var nx = NEXT[level];
+  document.getElementById("nextTitle").textContent = nx.title;
+  document.getElementById("nextWhy").textContent = nx.why;
+  var stepsEl = document.getElementById("steps");
+  stepsEl.innerHTML = "";
+  nx.steps.forEach(function(s, i){
+    var d = document.createElement("div"); d.className = "step";
+    var n = document.createElement("div"); n.className = "step-n"; n.textContent = String(i+1).padStart(2,"0");
+    var p = document.createElement("p"); p.innerHTML = "<b>"+s[0]+"</b> " + s[1];
+    d.appendChild(n); d.appendChild(p); stepsEl.appendChild(d);
+  });
+
+  // flags
+  var flags = document.getElementById("flags");
+  flags.innerHTML = "";
+  function addFlag(cls, html){
+    var f = document.createElement("div"); f.className = "flag " + cls; f.innerHTML = html; flags.appendChild(f);
+  }
+  if(blocking.length === 1){
+    addFlag("", "<b>One gate is holding you.</b> " + blocking[0].id + " — " + blocking[0].q +
+      " Everything else at Level " + (level+1) + " is already true for you. This is the highest-leverage thing on your list.");
+  } else if(blocking.length > 1){
+    addFlag("", "<b>" + blocking.length + " gates stand between you and Level " + (level+1) + ":</b> " +
+      blocking.map(function(b){ return b.id; }).join(", ") + ". Take them in order — the earlier ones tend to make the later ones easier.");
+  }
+  if(skipped.length){
+    addFlag("amber", "<b>You've built high on a thin base.</b> You pass " + skipped.join(", ") +
+      (skipped.length === 1 ? ", which belongs" : ", which belong") +
+      " to a level above your own — while a gate below is still open. This is the fragile pattern: a practice running on top of a foundation that isn't there yet. Close the lower gate before adding anything.");
+  }
+  if(fp - sp >= 34){
+    addFlag("teal", "<b>Your fluency is well ahead of your system.</b> You get good work out of the model and can judge it, but it has nowhere to accumulate. On the two-axis evidence, this is the quadrant that captures a fraction of what's available — and the fix is structural, not skill-based.");
+  } else if(sp - fp >= 34){
+    addFlag("teal", "<b>Your system is ahead of your judgment.</b> You've wired things up well, but the terminal skill on this scale is evaluation — knowing precisely what good looks like. A well-connected system you can't check is a faster way to be confidently wrong.");
+  }
+  var d1 = a["D1"];
+  if(d1 === 1){
+    addFlag("amber", "<b>You said you're in the slow stretch right now.</b> That is the expected shape, not a failure signal: return runs negative before it runs positive, trust drops, and you double-check everything — which eats the exact time the tool was meant to give back. The two things that shorten it are writing down context and moving work into one place. Nothing in the evidence says how deep or how long it is, so treat that as genuinely unknown.");
+  } else if(d1 === 0 && level >= 3){
+    addFlag("teal", "<b>You reported never hitting the slow stretch.</b> Worth a second look — either you climbed on someone else's groundwork, or the trough is still ahead of you at the next level.");
+  }
+
+  res.scrollIntoView({behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block:"start"});
+});
+
+document.getElementById("resetBtn").addEventListener("click", function(){
+  form.reset();
+  document.getElementById("result").hidden = true;
+  document.getElementById("needleG").classList.remove("on");
+  document.getElementById("fFill").style.width = "0";
+  document.getElementById("sFill").style.width = "0";
+  refresh();
+  document.getElementById("assess").scrollIntoView({behavior:"auto", block:"start"});
+});
+
+})();
+</script>
+</body>
+</html>
