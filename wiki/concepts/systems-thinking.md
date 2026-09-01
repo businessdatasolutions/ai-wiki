@@ -4,7 +4,7 @@ aliases: ["systems thinking", "systems-thinking"]
 tags: [systems-thinking, innovation, sustainability, design-thinking, breakthrough-thinking, wicked-problems]
 confidence: 0.9
 last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
+accessed_at: "2026-09-01"
 source_count: 8
 relationships:
   - type: supports
