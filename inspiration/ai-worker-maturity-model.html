@@ -223,6 +223,90 @@ body{
 footer{padding:44px 0 64px; border-top:1px solid var(--rule); margin-top:8px}
 footer p{font-family:var(--data); font-size:11.5px; color:var(--ink-3); line-height:1.8; margin:0; max-width:80ch}
 
+/* ---------- print-only elements (hidden on screen) ---------- */
+.print-only{display:none}
+
+/* ---------- PDF output ---------- */
+@media print{
+  /* Force the light palette: a dark-mode viewer would otherwise print a black page. */
+  :root, :root:not([data-theme="light"]){
+    --ink:#16222E; --ink-2:#3D5266; --ink-3:#6B8095;
+    --paper:#FFFFFF; --paper-2:#F7F9F8; --paper-3:#E4E8E7;
+    --rule:#BCC7C6; --rule-strong:#8FA0A0;
+    --needle:#A8321A; --band:#2A6663; --band-soft:#DCE8E6; --warn:#8A6A16;
+    --shadow:none;
+  }
+  @page{ size:A4; margin:15mm 14mm 16mm; }
+  html,body{background:#fff !important}
+  body{font-size:10.5pt; line-height:1.5}
+  *{ -webkit-print-color-adjust:exact !important; print-color-adjust:exact !important; }
+
+  /* Everything that isn't the result is screen furniture. */
+  .masthead, .hero, .status, #assess, footer,
+  .sec:not(.result), .actions{ display:none !important; }
+
+  .wrap{max-width:none; padding:0}
+  .sec{padding:0; border:0 !important}
+  .result[hidden]{display:none !important}
+  .result{padding:0}
+
+  .print-only{display:block}
+
+  /* Single column reads better at A4 width than the screen's two. */
+  .result-top{display:block}
+  .result-top > div + div{margin-top:14pt}
+
+  .verdict-name{font-size:30pt; margin-bottom:8pt}
+  .verdict-key{font-size:8pt; margin-bottom:6pt}
+  .verdict-say{font-size:11pt; max-width:none; margin-bottom:14pt}
+
+  .meters{margin-top:0}
+  .meter{margin-bottom:10pt; break-inside:avoid}
+  .meter-track{height:6pt; border:0.5pt solid var(--rule)}
+  .readout{margin:16pt 0 0; break-inside:avoid}
+  .rd{padding:6pt 5pt; border-top-width:2pt}
+  .rd span{font-size:8.5pt}
+  .rd b{font-size:7.5pt}
+
+  .flag{margin-top:10pt; padding:9pt 12pt; font-size:10pt; break-inside:avoid;
+        background:var(--paper-2) !important; border:0.5pt solid var(--rule); border-left:2.5pt solid var(--needle)}
+  .flag.amber{border-left-color:var(--warn)}
+  .flag.teal{border-left-color:var(--band)}
+
+  .next{border-top:1.5pt solid var(--ink); padding-top:12pt; margin-top:16pt; break-inside:avoid}
+  .next h3{font-size:15pt}
+  .step{padding:8pt 0; break-inside:avoid}
+  .step p{font-size:10pt}
+
+  a{color:var(--ink); text-decoration:none}
+}
+
+/* print header */
+.p-head{border-bottom:1.5pt solid var(--ink); padding-bottom:7pt; margin-bottom:16pt}
+.p-head-row{display:flex; justify-content:space-between; align-items:baseline; gap:14pt}
+.p-title{font-family:var(--display); font-weight:700; font-size:11pt; letter-spacing:.09em; text-transform:uppercase; margin:0}
+.p-meta{font-family:var(--data); font-size:7.5pt; color:var(--ink-3); letter-spacing:.04em}
+
+/* print gate ledger */
+.p-gates{margin-top:18pt; break-before:page}
+.p-gates h3{font-family:var(--display); font-size:14pt; font-weight:600; margin:0 0 3pt}
+.p-gates .sub{font-family:var(--data); font-size:7.5pt; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-3); margin:0 0 10pt}
+.p-tbl{width:100%; border-collapse:collapse}
+.p-tbl th{font-family:var(--data); font-size:7pt; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-3);
+          text-align:left; font-weight:400; padding:0 6pt 5pt 0; border-bottom:1pt solid var(--rule-strong)}
+.p-tbl td{padding:6pt 6pt 6pt 0; border-bottom:0.5pt solid var(--rule); font-size:9pt; color:var(--ink-2); vertical-align:top}
+.p-tbl tr{break-inside:avoid}
+.p-tbl .c-code{font-family:var(--data); font-size:8pt; color:var(--ink); white-space:nowrap; width:44pt}
+.p-tbl .c-ax{font-family:var(--data); font-size:8pt; color:var(--band); width:18pt}
+.p-tbl .c-ans{font-family:var(--data); font-size:8pt; color:var(--ink); width:34%}
+.p-tbl .c-st{width:46pt; text-align:right; font-family:var(--data); font-size:7.5pt; letter-spacing:.06em; text-transform:uppercase}
+.p-tbl .met{color:var(--band)}
+.p-tbl .open{color:var(--needle)}
+.p-tbl .lvsep td{background:var(--paper-3); font-family:var(--data); font-size:7pt; letter-spacing:.1em;
+                 text-transform:uppercase; color:var(--ink-2); padding:4pt 6pt}
+.p-foot{margin-top:14pt; padding-top:8pt; border-top:0.5pt solid var(--rule);
+        font-family:var(--data); font-size:7.5pt; color:var(--ink-3); line-height:1.7}
+
 @media (max-width:900px){
   .hero{grid-template-columns:minmax(0,1fr); gap:40px; padding:36px 0 44px}
   .axes,.result-top{grid-template-columns:minmax(0,1fr); gap:28px}
@@ -423,6 +507,12 @@ footer p{font-family:var(--data); font-size:11.5px; color:var(--ink-3); line-hei
 </section>
 
 <section class="sec result" id="result" hidden>
+  <div class="p-head print-only">
+    <div class="p-head-row">
+      <p class="p-title">The AI Worker Maturity Scale<span style="color:var(--needle)">.</span></p>
+      <span class="p-meta" id="pMeta"></span>
+    </div>
+  </div>
   <div class="result-top">
     <div>
       <p class="verdict-key" id="vKey">Result</p>
@@ -450,7 +540,21 @@ footer p{font-family:var(--data); font-size:11.5px; color:var(--ink-3); line-hei
         <p class="next-why" id="nextWhy"></p>
         <div id="steps"></div>
       </div>
+      <div class="actions" style="padding-top:26px">
+        <button type="button" class="btn" id="pdfBtn">Save as PDF</button>
+        <span class="hint">Opens your browser's print dialog — choose “Save as PDF” as the destination.</span>
+      </div>
     </div>
+  </div>
+
+  <div class="p-gates print-only">
+    <h3>Your answers</h3>
+    <p class="sub">All 15 gates and the diagnostic, as answered</p>
+    <table class="p-tbl">
+      <thead><tr><th>Gate</th><th></th><th>What it tests</th><th>Your answer</th><th class="c-st">Status</th></tr></thead>
+      <tbody id="pGateBody"></tbody>
+    </table>
+    <p class="p-foot" id="pFoot"></p>
   </div>
 </section>
 
@@ -708,6 +812,43 @@ document.getElementById("scoreBtn").addEventListener("click", function(){
     rdEl.appendChild(cell);
   }
 
+  // print header + per-gate ledger for the PDF
+  var today = new Date().toLocaleDateString("en-GB", {day:"numeric", month:"long", year:"numeric"});
+  document.getElementById("pMeta").textContent =
+    "Level " + level + " — " + LEVELS[level].name +
+    (reach > level ? "  ·  gates met through Level " + reach : "") +
+    "  ·  F " + fp + "%  ·  S " + sp + "%  ·  " + today;
+
+  var body = document.getElementById("pGateBody");
+  body.innerHTML = "";
+  var lastLv = null;
+  var LVNAME = {2:"Level 2 — Repeating",3:"Level 3 — Integrating",4:"Level 4 — Delegating",5:"Level 5 — Compounding",0:"Diagnostic — not scored"};
+  QUESTIONS.forEach(function(item){
+    if(item.lv !== lastLv){
+      var sep = document.createElement("tr"); sep.className = "lvsep";
+      var sc = document.createElement("td"); sc.colSpan = 5; sc.textContent = LVNAME[item.lv];
+      sep.appendChild(sc); body.appendChild(sep); lastLv = item.lv;
+    }
+    var v = a[item.id];
+    var tr = document.createElement("tr");
+    var scored = item.lv !== 0;
+    tr.innerHTML =
+      '<td class="c-code">' + item.id + '</td>' +
+      '<td class="c-ax">' + (scored ? item.axis : "") + '</td>' +
+      '<td>' + item.q + '</td>' +
+      '<td class="c-ans">' + item.o[v] + '</td>' +
+      '<td class="c-st ' + (!scored ? "" : (v === 2 ? "met" : "open")) + '">' +
+        (!scored ? "—" : (v === 2 ? "Met" : "Open")) + '</td>';
+    body.appendChild(tr);
+  });
+
+  var openGates = QUESTIONS.filter(function(i){ return i.lv !== 0 && a[i.id] !== 2; }).map(function(i){ return i.id; });
+  document.getElementById("pFoot").innerHTML =
+    "Scored " + today + " against The AI Worker Maturity Scale v2 — a composition from the ai-wiki, calibrated against three cases. " +
+    "It is not a validated instrument: use it to locate yourself and pick a next move, not to rank anyone. " +
+    "Open gates: " + (openGates.length ? openGates.join(", ") : "none") + ". " +
+    "Model, calibration record and sources: businessdatasolutions.github.io/ai-wiki/inspiration/ai-worker-maturity-model.html";
+
   // next steps
   var nx = NEXT[level];
   document.getElementById("nextTitle").textContent = nx.title;
@@ -753,6 +894,8 @@ document.getElementById("scoreBtn").addEventListener("click", function(){
 
   res.scrollIntoView({behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block:"start"});
 });
+
+document.getElementById("pdfBtn").addEventListener("click", function(){ window.print(); });
 
 document.getElementById("resetBtn").addEventListener("click", function(){
   form.reset();
