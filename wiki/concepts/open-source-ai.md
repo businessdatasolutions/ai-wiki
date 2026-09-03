@@ -3,9 +3,9 @@ type: concept
 aliases: ["open source AI", "open-source AI", "open-weight models", "open weights", "open models", "AI sovereignty", "own vs rent AI"]
 tags: [open-source-ai, open-weight-models, own-vs-rent, ai-sovereignty, concentration-of-power, china-open-models, safety-through-transparency, hugging-face]
 confidence: 0.87
-last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
-source_count: 7
+last_confirmed: "2026-09-03"
+accessed_at: "2026-09-03"
+source_count: 8
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -13,8 +13,7 @@ relationships:
   - type: supports
     target: agent-harness
     via: "shares the own-vs-rent ownership motif — 'the model is what you rent, the harness is what you own'; open weights are the substrate that specialization/harnessing is owned on top of"
-quality_score: 0.99
-quality_notes: ['1 near-empty section(s)']
+quality_score: 1
 ---
 
 # Open-Source AI
@@ -106,7 +105,22 @@ She also notes the policy dependency this page tracks: *"just last week, Jensen 
 
 **Source-quality caveat, load-bearing.** This is investor content addressed to the speaker's own portfolio at an event designed to change that portfolio's behaviour, and the companies named as evidence are largely portfolio companies. The wiki now holds three own-vs-rent sources — a platform CEO ([[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue]]), a substrate vendor ([[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Jensen Huang]]) and an investor (Huang) — whose **shared blind spot is that all three sell something that becomes more valuable if enterprises stop renting**, and none of them measures the outcome. Confidence on this page is raised to 0.87 on the strength of a third independent vantage converging, not on the strength of the evidence, which remains absent.
 
-## Sources consulted
+## The three tiers, stated plainly (added 2026-09-03)
+
+This page has carried *open-weight models* as an alias since it was created without ever laying the spectrum out. [[2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-squads-harness|The GitHub Podcast, S02E02]] supplies the cleanest short version in the corpus, from a developer-education vantage rather than a vendor-CEO one:
+
+| Tier | What you get | What you don't |
+|---|---|---|
+| **Closed** | An API. *"Everything is just exposed via API"* — the default most people have used ([[OpenAI]], [[Anthropic]]) | Weights, data, method — all of it |
+| **Open weight** | *"You can download the weights, you can use the model for free… hosting it on your machine"* | *"You don't have access to the data set and the training method"* |
+| **Open source** | *"Every part of the model that was used to train the model is available openly"* — enough to build your own version | — |
+
+The framing underneath it is the transferable claim: *"when we think of open source traditionally, we think of just software — the code. But now in this new AI phase there are more aspects to making a model work than just code, so having an open-source model would mean that every part of that is available to you."* Open weights are therefore *"slightly different because it's not as open, but still kind of has that same ethos."*
+
+Two things this settles for the page. First, **the wiki's own-vs-rent sources are almost entirely arguing about the middle tier, not the top one** — Delangue, Huang, Ng and Frey all say *open source* and mean *open weight*, and the distinction matters exactly where this page's safety argument lives, because transparency claims that hold for a published dataset do not automatically hold for published weights alone. Second, it clarifies what [[concepts/agent-harness|agent-harness]]'s *"the model is rented, the harness is owned"* motif actually buys: open weights make the model **run-anywhere**, not **inspectable**, and specialisation on top of them is ownership of the harness rather than of the model.
+
+The source adds no evidence and does not move this page's confidence — it is a vendor-produced developer podcast with no measurement in it. It is cited for definitional precision only.
+
 ## Sources consulted
 
 - [[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue / Hugging Face (TechCrunch Equity, Jul 2026)]] — the fullest single-source treatment: own-vs-rent flow, safety-through-transparency, China's open-model lead, concentration-of-power, local AI / robotics.
@@ -114,6 +128,7 @@ She also notes the policy dependency this page tracks: *"just last week, Jensen 
 - [[2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company|BBC AI Decoded (Aug 2026)]] — the enterprise-buyer vantage: self-hosting an open model behind a firewall, per-query routing by sensitivity, and a predicted partial return to on-premise, driven by IP protection rather than cost.
 - [[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness|Ng / Washington Post Live (Jul 2026)]] — the American-competitiveness argument: open weights as the condition of US leadership; knowledge diffusion as the mechanism behind China's gains; distillation "vastly overstated"; price-sensitive markets defaulting to Chinese open models; *preserve optionality* as the firm-level prescription.
 - [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey / Bloomberg Trumponomics (Aug 2026)]] — the academic-economist vantage: open weights as the route to domestic AI capacity for countries behind the frontier; export controls as the cause of China's open-weight position; frontier-model access as an instrument of statecraft.
+- [[2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-squads-harness|The GitHub Podcast S02E02 (Sep 2026)]] — the definitional vantage: the closed / open-weight / open-source three-tier spectrum stated plainly, and the observation that "open source" for a model means more than code. No evidence; cited for precision.
 - [[2026-03-20-huggingface-agentic-evaluations-workshop|Hugging Face Agentic Evaluations Workshop (Mar 2026)]] — the open-evals corollary: open weights as a precondition for *studying, trusting, and improving* AI (background support, not counted in `source_count`).
 
 ## Debates and supersession

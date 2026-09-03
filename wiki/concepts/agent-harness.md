@@ -3,9 +3,9 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.98
-last_confirmed: "2026-09-01"
-accessed_at: "2026-09-01"
-source_count: 90
+last_confirmed: "2026-09-03"
+accessed_at: "2026-09-03"
+source_count: 91
 relationships:
   - type: part-of
     target: ai-agents
@@ -780,6 +780,18 @@ His scheduled tasks also instantiate [[2026-06-17-vo-how-i-ai-ai-agent-loops-cla
 The definition of **loop engineering** is the cleanest in the corpus: *"you replacing yourself with a system… instead of you keep typing and trying to solve a problem, you'll create a system and set a goal and let the system keep retrying until it's meeting the goal."*
 
 Three of the four fixes are **harness controls rather than prompt content**, which is what makes them relevant here: **stop rules and cost caps** (max iterations, time limit, token/cost ceiling) belong in the runtime where the agent cannot argue with them; **separation of concerns** puts evaluation in a *different* agent — *"it's like asking a kindergartner to grade its own homework"*; and **graph escalation** moves orchestration out of the loop entirely once a single loop hits its context limit. The fourth, **checkable goals** (*"non-debatable, non-negotiable"* — "less than ten", "zero compilation errors"), is the contract the harness terminates against. Framework-layer instantiation: [[Agent Development Kit]].
+
+## The vocabulary from outside the vendor cluster (added 2026-09-03)
+
+Everything above this line was written by people with a stake in the word: labs that coined it, vendors that ship harnesses, researchers who formalise it, and the practitioner-bloggers who popularised it. [[2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-squads-harness|The GitHub Podcast, S02E02]] is the first source in this page's ninety-one that records how the vocabulary lands **on competent engineers one step removed from its production**, and it is worth holding for three things.
+
+**The boundary survives transmission; the discipline claim does not.** Three GitHub developer advocates, working from memory, arrive at *"the scaffolding around the LLM"* and *"the surrounding code and runtime and platform that guides how an agent works"* — which is [[2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness|Google Cloud's boundary]] and [[2026-03-10-trivedy-langchain-anatomy-of-an-agent-harness|Trivedy's]] almost verbatim. What does *not* survive is the claim that this is new. Marlene Mhangami, reasoning from LangChain's own history: *"historically with LangChain you could build an agent and basically you were already building a harness, because you were using this infrastructure where it was developing a small loop and you could add context to that, you could add MCP servers… to me it's very similar to what we already had with just an agent. In my opinion, not that much different."* That is [[2026-05-07-kokane-agent-harness-vs-systems-design|Kokane's]] *90% is mature systems design* verdict reached by reflex rather than by analysis, from someone who used the framework the term came out of. **The page's sceptical counterweight now has an independent second holder, and the two arrived at it by different routes.**
+
+**Attribution propagates lossily, and the loss is directional.** The hosts credit the term to *"Harrison from LangChain"* and *"Viv from their team"* — [[Harrison Chase]] and Vivek Trivedy — with no mention of [[2026-02-11-lopopolo-codex-harness-engineering|Lopopolo / OpenAI Codex]], the other half of the Feb-11/Feb-17 co-coinage window this page documents. The wiki's attribution map is corroborated on the LangChain side by a competitor's advocacy team and is silently *more complete* than what practitioners carry. Useful calibration for how much of the corpus's vocabulary history exists only in the corpus.
+
+**A third vendor puts its own product on the harness side of the boundary.** *"GitHub Copilot itself is the harness… GitHub Copilot is the harness for the SDK to run agents with various models."* [[GitHub]] now joins [[2026-05-07-anthropic-managed-agents-decoupling-brain-hands|Anthropic]], [[2026-04-22-cheung-ippolito-secchi-google-agents-cli|Google]] and [[2026-02-11-lopopolo-codex-harness-engineering|OpenAI]] in describing its product as the harness and the model as the swappable part underneath — the *model is rented, harness is owned* framing stated by a fourth competitor without prompting.
+
+The episode's own summary of the cost is the line to keep: *"I went into this being just like, wow, we're really going to teach people. And now I'm just like: do I know anything?"* — from a senior director of developer advocacy, after the harness segment.
 
 ## Mentioned in
 
