@@ -2,10 +2,10 @@
 type: concept
 aliases: ["AI benchmark", "AI benchmarks", "AI evaluation", "AI evals"]
 tags: [ai-benchmarks, ai-evaluation, foundation-models, capability-reliability-gap, scar-fragmentation]
-confidence: 0.90
-last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
-source_count: 16
+confidence: 0.92
+last_confirmed: "2026-09-04"
+accessed_at: "2026-09-04"
+source_count: 19
 relationships:
   - type: depends-on
     target: reward-hacking
@@ -13,6 +13,12 @@ relationships:
   - type: uses
     target: foundation-models
     via: "benchmarks evaluate foundation-model capability"
+  - type: uses
+    target: Berkeley-Function-Calling-Leaderboard
+    via: "the corpus's reference instrument for tool-calling capability, and the one benchmark domain where the field has converged on a single vendor-neutral standard"
+  - type: supports
+    target: small-language-models
+    via: "every 'a small model matches a large one' claim is a benchmark claim; which benchmark (generalist vs agentic, single-turn vs multi-turn) decides whether it survives"
   - type: contradicts
     target: ai-benchmarks
     via: "self-reference acknowledging Habib's scar-fragmentation diagnosis: every release reports different scores on the 'same' benchmark because scaffold/prompt/harness varies — naive benchmark-as-ranking interpretation is undercut"
@@ -137,6 +143,8 @@ A 108-minute multi-speaker workshop (Hugging Face) that reframes the benchmark c
 | **GAIA-2** (on ARE) | Agentic multi-app multi-turn evaluation | New 2026 (Andrews et al., Meta); 1,000 scenarios / 10 universes / 11 apps; five capability splits incl. ambiguity and agent-to-agent |
 | **Reliability Index** | Cross-release reliability tracking | New 2026 (Narayanan/Robons, Princeton); 12 sub-dimensions of reliability; living tracker |
 | **GDPval** ([[2025-10-05-patwardhan-et-al-openai-gdpval\|GDPval]]) | Economically-valuable real-world tasks | New 2025 (OpenAI); 1,320 tasks / 44 occupations / 9 GDP sectors; non-saturating win-rate vs human experts; Claude Opus 4.1 best at 47.6% wins-or-ties; gold subset + grader open-sourced |
+| **[[Berkeley Function Calling Leaderboard\|BFCL]]** ([[2025-07-13-patil-berkeley-function-calling-leaderboard\|Patil et al., ICML 2025]]) | Function calling / tool use | v1 2024 → v4 2026 ([[UC Berkeley]] Gorilla project); 5,551 pairs across Python/Java/JS/REST/SQL; AST sub-string matching validated against execution; **single-turn saturated, memory ≤12/100**; the de-facto standard, and now the corpus's own promoted page |
+| **τ-bench** | Multi-turn agent tasks with policies | 2024 (Sierra); retail + airline domains, 28 functions; `pass^k` consistency curves; noted by [[2025-07-13-patil-berkeley-function-calling-leaderboard\|BFCL]] as too narrow (<150 entries) and LLM-simulated-user dependent |
 
 ## Coverage versus pass@1, and *Large Language Monkeys* ([[2026-08-03-chowdhery-mirhoseini-stanford-cs329a-self-improving-agents-part-1|Mirhoseini / Stanford CS329A, August 2026]])
 
@@ -146,8 +154,26 @@ Her interpretation is the load-bearing claim: "**it kind of seems like the model
 
 For this page the operational consequence is a caution: **coverage/pass@k and pass@1 are not comparable quantities**, and a benchmark result is uninterpretable without knowing which was reported and how many samples were drawn. The lecture also names the boundary of the whole approach — the **generator–verifier gap**: "it's easy for models to generate a whole bunch of nonsense or sensible sets of reasoning traces… but whether that's useful or not, we need a feedback loop for that. **And if you're creative writing, how much feedback can you get?**"
 
+## Tool calling: the one capability with a settled instrument ([[2025-07-13-patil-berkeley-function-calling-leaderboard|BFCL, ICML 2025]])
+
+Most of this page is about benchmarks that fragment, saturate or fail to standardise. Function calling is the counter-example: since 2024 the field has converged on a single vendor-neutral instrument, the **[[Berkeley Function Calling Leaderboard]]** from [[UC Berkeley]]'s Gorilla project, used by every major lab and cited by vendor papers on both sides of the SLM argument. Three things it contributes that generalise beyond its own domain.
+
+**1. A validated proxy for execution.** Deterministically checking a function call normally means running it, which caps benchmark size. BFCL substitutes **Abstract Syntax Tree sub-string matching** — parse the model's output with Python's `ast`, require an exact function-name match and parameter values inside a valid set — and then *validates the proxy against real execution on a subset*, reporting strong correlation. A benchmark that shows its shortcut is sound is doing more than ranking models.
+
+**2. The composite-index trap.** BFCL's headline "Overall Accuracy" column aggregates single-turn, crowd-sourced, hallucination, multi-turn and agentic sections of wildly different difficulty. A model at 66 overall is at ~95 on single-turn calls and at **6 on memory**. Stated most usefully by a practitioner fielding exactly this question from an audience ([[2026-08-25-sokolenko-pycon-de-demystifying-agentic-ai-small-language-models|Sokolenko, PyCon DE 2026]]):
+
+> *"The 77.47 doesn't mean that 23% of your questions will be answered wrongly. It's a combined score of four other scores. Think of it as an index. It's just an index, and accuracy is the wrong name for it. It should be called overall index."*
+
+The general rule for this page: **a composite benchmark score is not a success rate**, and citing the overall column to claim parity between two models usually means citing the saturated sub-score.
+
+**3. Where tool use is actually unsolved.** Frontier models cluster in the high 80s and 90s on single-turn calls and fall off a cliff on multi-turn and agentic categories; the best memory score anywhere in the paper's table is **12.0 out of 100**. This is the same fault line [[2025-03-17-cemri-why-do-multi-agent-llm-systems-fail|MAST]] found by hand-annotating traces, reached by measurement — and it is why [[2025-04-04-prabhakar-salesforce-apigen-mt-xlam-2|xLAM-2]]'s entire margin over GPT-4o (75.12 vs 41) sits in the multi-turn column while single-turn is a tie. Which sub-score a claim rests on is what decides whether a [[small-language-models|small model]] "matching" a frontier model means anything at all.
+
+BFCL also supplies a **harness-design finding disguised as a benchmark result**: models that support both a native `tools` API and system-prompt-driven structured output often score *better prompted*. FC mode yields ~3× fewer decoding errors but more incorrect calls among decoded responses in multi-function scenarios; Claude cannot do parallel calls in FC mode but can when prompted. Which interface you hand the model changes its measured capability — see [[agent-harness]].
+
 ## Debates and supersession
 
+- **Prompt optimisation is an unpoliced variable.** In [[2025-04-04-prabhakar-salesforce-apigen-mt-xlam-2|APIGen-MT's]] τ-bench table, Claude 3.7 Sonnet scores 59.8 plain and **69.8 with an optimised prompt**, while the paper's own models are reported with *"no prompt optimizations."* Comparing a tuned model under a plain harness against an untuned model under a tuned harness is a specific instance of Habib's scar-fragmentation problem, and it is currently disclosed by convention rather than controlled by method.
+- **LLM-simulated users move the score.** Also from APIGen-MT: the same `gpt-4o` agent on τ-retail scores 62.8% (variance 11.1) under a naive LLM user simulator and **67.0% (variance 2.6)** under a Best-of-4 self-critiquing simulator. Any eval that puts a language model on the *user* side of the conversation is reporting a number that depends on how good that simulator is — a confound the field has not standardised.
 - **Are we measuring what matters or what's measurable?** Benchmarks gain complexity faster than tasks gain real-world specification. Open question whether the saturation race is sustainable, or whether the field is overdue for a different evaluation paradigm.
 - **Agent benchmarks vs. static benchmarks.** RE-Bench's two-time-budget result suggests static benchmarks can mislead on real workflows. Future evaluations will likely emphasize trajectories, not single-shot scores. But agent evaluations are themselves harder to standardize — open question whether the field can converge.
 - **Reasoning benchmarks.** The IMO/PlanBench split suggests current models are good at *patterns of math* but bad at *symbolic reasoning where verifiable solutions exist*. Open question for the [[generative-ai]] roadmap, and load-bearing for safety in high-stakes deployments.

@@ -6,9 +6,9 @@ tags: [harrison-chase, langchain, langgraph, langsmith, langchain-labs, deep-age
 affiliation: "[[LangChain]]"
 role: "Co-founder and CEO, LangChain (since 2022)"
 confidence: 0.85
-last_confirmed: "2026-07-15"
-accessed_at: "2026-07-15"
-source_count: 4
+last_confirmed: "2026-09-03"
+accessed_at: "2026-09-03"
+source_count: 5
 ---
 
 # Harrison Chase
@@ -91,6 +91,12 @@ Chase asserts at Interrupt 26: *"we moved from top 30 on terminal bench two to t
 | [[2026-05-11-karten-zhang-continual-harness-online-adaptation\|Karten & Zhang / Continual Harness (11 May 2026)]] | The academic formalisation of continual-harness adaptation — Chase's Interrupt 26 three-layer model is the vendor-CEO operationalisation 10 days later. |
 | [[2026-05-20-tan-hu-stanford-cs153-ai-native-company-1000x-engineer\|Tan & Hu / Stanford CS153 (20 May 2026)]] | Paired *founder/CEO articulations of layered-agent-system thinking* landing within 24 hours. Tan/Hu maps *agentic-primitives → company-structure*; Chase maps *learning-systems → agentic-system-layers*. Same architectural decompose-and-map move applied to different domains. |
 | [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems\|Huang / NVIDIA interview (8 Jul 2026)]] | Chase interviews rather than headlines; Huang's post-training-inside-the-harness account and open-vs-frontier specialization advice extend the model/harness/context layering Chase coined at Interrupt 26. |
+
+## Named as the coiner, by a competitor, from memory (2026-09-03)
+
+In [[2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-squads-harness|The GitHub Podcast, S02E02]], a [[GitHub]] developer advocate reaches for the origin of *harness engineering* and lands on Chase without hesitation: *"the first time I saw harness and harness engineering defined, I'm pretty sure was Harrison from LangChain."* She pairs him with *"Viv from their team"* — Vivek Trivedy, author of [[2026-03-10-trivedy-langchain-anatomy-of-an-agent-harness|The Anatomy of an Agent Harness]] — and adds the observation that carries the mention: *"I do think Harrison and that team really does a good job at taking a term and making it popular."*
+
+This is the wiki's only third-party datapoint on Chase's **vocabulary-setting** influence as distinct from his product or framework influence, and it is a competitor volunteering it. Note what does not propagate alongside it: the corpus holds [[2026-02-11-lopopolo-codex-harness-engineering|Lopopolo / OpenAI Codex]] as near-simultaneous co-coiner, and no host mentions him. See [[concepts/agent-harness|agent-harness]].
 
 ## Open questions
 

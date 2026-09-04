@@ -2,10 +2,10 @@
 type: concept
 title: Multi-agent failure modes
 aliases: ["multi-agent failure modes", "MAST", "multi-agent system failure taxonomy", "why multi-agent systems fail", "agent coordination failure"]
-confidence: 0.8
-last_confirmed: "2026-09-01"
-source_count: 5
-accessed_at: "2026-09-01"
+confidence: 0.85
+last_confirmed: "2026-09-04"
+source_count: 6
+accessed_at: "2026-09-04"
 tags: [mast, multi-agent, failure-taxonomy, coordination, inter-agent-misalignment, task-verification, data-processing-inequality, isolated-workspaces, caid, token-budget]
 relationships:
   - type: part-of
@@ -60,6 +60,18 @@ Result: **+25.6% absolute** over single-agent baselines on PaperBench, **+14.7%*
 ## What practitioners already do
 
 [[2026-07-25-darroman-profitable-founder-managing-ai-agents-25-prs-a-day|Carson's setup]] instantiates all three CAID primitives without naming them: a fresh VM per Devin session *is* an isolated workspace; the folder hierarchy plus paper priority list *is* a centralized delegation layer implemented in a human; the [[2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder|Land PR loop]] *is* structured integration with test-based verification. **The three things worth building first are the three things CAID names.**
+
+## Benchmark corroboration: the same fault line, measured ([[2025-07-13-patil-berkeley-function-calling-leaderboard|BFCL, ICML 2025]], added 2026-09-04)
+
+MAST located multi-agent failure by hand-annotating traces. [[2025-07-13-patil-berkeley-function-calling-leaderboard|BFCL]] reaches the same conclusion numerically and from the opposite method — measuring one model rather than a system of them.
+
+Across ~110 model families, frontier models score in the high 80s and 90s on **single-turn** function calls and collapse on the multi-turn and agentic categories. In the paper's Table 1, the leading model on overall score is at 95.5 on single-turn simple calls and **6.0 on memory**; the best memory score anywhere in the table is **12.0 out of 100**. The paper's own summary:
+
+> *"While state-of-the-art LLMs excel at single-turn calls, memory, dynamic decision-making, and long-horizon reasoning remain open challenges."*
+
+This matters for the page's central claim. If sustained state, memory and long-horizon decision-making are unsolved *within a single agent*, then coordination failures observed across several agents are not purely a coordination problem — they are the same underlying deficit, compounded by having more places to lose state. Two independent methods, one fault line.
+
+BFCL also supplies a **measurement caveat for this literature**: its multi-turn evaluation requires both a final-state match and a required-call-path match, precisely because *"multiple sequences of function calls can achieve the same result"* while non-state-changing calls (a lookup that should have preceded an action) leave no trace in the final state. Any taxonomy of agent failure built on outcome inspection alone will miss the class of failures where the agent guessed instead of checking.
 
 ## Related concepts
 

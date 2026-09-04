@@ -3,11 +3,14 @@ type: entity
 kind: person
 aliases: ["Juan Carlos Niebles"]
 tags: [niebles, salesforce, stanford, computer-vision, multimodal-ai, autonomous-agents, ai-index]
-confidence: 0.80
-last_confirmed: "2026-05-08"
-accessed_at: "2026-05-08"
-source_count: 2
+confidence: 0.85
+last_confirmed: "2026-09-04"
+accessed_at: "2026-09-04"
+source_count: 3
 relationships:
+  - type: part-of
+    target: Salesforce-AI-Research
+    via: "Research Director since 2021; co-author on the APIGen-MT / xLAM-2 paper"
   - type: part-of
     target: AI-Index
     via: "Steering Committee member; co-author 2025 + 2026 editions"
@@ -19,12 +22,13 @@ Computer-vision researcher. Since 2021, **Research Director at Salesforce Resear
 
 Research focus: computer vision, machine learning, multimodal AI, autonomous agents. 100+ publications in top-tier conferences (CVPR, ICCV, ECCV, NeurIPS, IEEE TPAMI), serves as Area Chair for the major vision venues and Associate Editor for IEEE TPAMI.
 
-Member of the [[AI Index]] Steering Committee at [[Stanford HAI]]; co-author across multiple editions including 2025 and 2026. Named one of Colombia's Top 100 leaders in AI in 2025.
+The corpus now holds him in both of his roles: as a [[Salesforce AI Research]] research director shipping open-weight agentic models, and as a [[AI Index]] author measuring the field. Member of the [[AI Index]] Steering Committee at [[Stanford HAI]]; co-author across multiple editions including 2025 and 2026. Named one of Colombia's Top 100 leaders in AI in 2025.
 
 ## Appears in this wiki via
 
 - [[2026-04-28-ai-index-report-2025]] — co-author, 8th edition.
 - [[2026-04-30-ai-index-report-2026]] — co-author, 9th edition.
+- [[2025-04-04-prabhakar-salesforce-apigen-mt-xlam-2]] — co-author on [[Salesforce AI Research]]'s APIGen-MT paper and the [[xLAM]]-2 model family; his first appearance in the wiki as a *researcher on the work* rather than as an AI Index steering-committee member.
 
 ## Mentioned in
 

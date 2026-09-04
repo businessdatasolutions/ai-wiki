@@ -2,10 +2,10 @@
 type: concept
 aliases: ["ReAct", "Reason+Act", "reason-act-observe loop", "reasoning and acting", "ReAct framework", "ReAct paradigm"]
 tags: [react, reasoning-and-acting, agentic-loop, chain-of-thought, tool-use, llm-agents, interpretability, human-in-the-loop, foundational]
-confidence: 0.85
-last_confirmed: "2026-06-12"
-accessed_at: "2026-06-12"
-source_count: 3
+confidence: 0.90
+last_confirmed: "2026-09-04"
+accessed_at: "2026-09-04"
+source_count: 4
 relationships:
   - type: authored-by
     target: Shunyu-Yao
@@ -60,6 +60,16 @@ The structural lineage is direct:
 - 2026 framework tutorials operationalise it directly: the [[2026-06-10-google-cloud-tech-ai-agents-explained-first-agent|Google Cloud Tech / ADK tutorial]] *names ReAct as the definition of a modern agent* and builds a self-correcting multi-agent system (planner / writer / validation-checker / loop agents) whose retry loops are ReAct's exception-handling thoughts made into framework primitives.
 
 What ReAct established as a **prompting trick on a frozen model** in 2022 is now the **architectural default** the wiki's whole agent corpus assumes.
+
+## The loop as a practitioner narrates it, 2026 ([[2026-08-25-sokolenko-pycon-de-demystifying-agentic-ai-small-language-models|Sokolenko / PyCon DE]])
+
+Evidence of how completely ReAct has been absorbed: a 2026 conference talk describes the loop from the runtime side, in full, **without naming ReAct or citing it**.
+
+> Prompt in → the agent enters a reasoning loop → the loop divides the prompt into a plan → the plan contains execution of multiple tools (API calls, analytical or operational database access) → the loop continues *"until a token is emitted in one of the outputs. The token is `final_answer` — it's literally `final_answer`, `final_underscore_answer`"* → the agent stops, produces the final textual output, writes prompt and output to memory *"so that it can use later on"*, and the loop begins again.
+
+Two things this adds to the page. The **termination condition has become a literal string convention** — the loop exits on a sentinel token in the output rather than on a model-internal signal, which is the plainest statement in the corpus of how thin the boundary between reasoning trace and control flow actually is. And the **memory write is now part of the loop's definition**, not an add-on: ReAct's trajectory has become durable state between iterations. Both are [[agent-harness|harness]] concerns that ReAct performed with prompting alone.
+
+Sokolenko's own genealogy for *why* models can run this loop stops one step earlier than ReAct: GPT-3 trained on reasoning-shaped corpora (Stack Overflow threads — *"a tree-like structure, a reasoning structure"*), then chain-of-thought work putting intermediate reasoning steps into training data. *"This is how reasoning got injected into large language models."* ReAct's contribution — interleaving those traces with **actions** — is the step his account skips, which is exactly the step this page exists to record.
 
 ## Related concepts
 

@@ -3,9 +3,9 @@ type: concept
 aliases: ["agentic engineering", "Agentic Engineering", "agentic-engineering", "agent engineering"]
 tags: [agentic-engineering, vibe-coding, software-3.0, ai-agents, agent-harness, software-engineering, hiring, karpathy, codex-case-study]
 confidence: 0.97
-last_confirmed: "2026-09-01"
-accessed_at: "2026-09-01"
-source_count: 52
+last_confirmed: "2026-09-03"
+accessed_at: "2026-09-03"
+source_count: 53
 relationships:
   - type: depends-on
     target: agent-harness
@@ -219,6 +219,16 @@ Two of [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum]]'s practices are
 A third practice targets a gap the discipline rarely names: **learning from the human's edits.** Claude writes a draft, the human silently rewrites and sends something else, and the delta is lost — "Claude doesn't learn what the gap is between the draft that it wrote and what I actually sent." His loop closes it by finding unanswered drafts, checking what was sent instead, and learning from the difference. The signal is *indirect* — no thumbs-up, no correction prompt, just behaviour.
 
 The distribution lesson belongs here too. Melio's **Workstation** plugin was deliberately built on Cowork rather than [[Claude Code]] because PMs attempting the terminal route spent "3 days to install everything and run all the dependencies." Onboarding runs in chat: connect tools, confirm role, map colleagues and management, read calendar and Slack, capture goals, calibrate writing voice — about 15 minutes. The precedent behind that choice is his own earlier failure: a spec-writing gem he thought was finished until he watched colleagues struggle with it live, because "it was completely adjusted to how I work." **The scaling constraint on agentic engineering inside a company is onboarding UX, not capability** — a claim this page has implied through the [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|operating-model]] sources but never stated this directly.
+
+## Is it a field, a job title, or neither? (added 2026-09-03)
+
+[[2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-squads-harness|The GitHub Podcast, S02E02]] asks the question this page has been assuming an answer to, and declines to answer it:
+
+> *"Is it a title, is what you're saying?" — "I think it's more of a field. I don't know if there is someone who is a loop engineer right now… I think we got to scour LinkedIn right after this episode."*
+
+The hosts run the same test on three of the discipline's sub-vocabularies and get three different-looking answers that are really the same answer. **Loop engineering** they read as *"literally just an automation"* — a prompt or skill on a cron schedule with a human checking outputs — but concede the engineering label once Mhangami enumerates what a working loop actually needs (a durable prompt, a scheduled trigger, skills so the agent can act reliably, a validating sub-agent, and someone watching the cost): *"there's different parts of it — that's why I think it's called engineering in this case."* That enumeration is [[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex|Vo's]] five-things list arrived at independently, and it is the episode's one concession that a new name is earned. **Squads** they reduce to role-specialised sub-agents (planner / tester / implementer / reviewer) and immediately note the term is unstandardised — GitHub's own CLI ships both *squads* and *fleets*, and *"the goal of leveraging something like a squad or a fleet, or whatever they call it in whatever tool, is to have the work done in some type of parallelization."* See [[concepts/agent-fleet-management|agent-fleet-management]]. **Forward deployed engineer** they reduce hardest: *"it's like a solution architect… you're literally a solutions engineer that uses AI."*
+
+The pattern across all three is worth naming because it constrains this page's central claim. The hosts accept that the *practices* are real and consequential; what they reject is that each practice needs a **new noun**, and they identify the mechanism precisely: *"there's no standard again — no standards in AI."* With no standards body, every vendor's marketing surface is a competing dictionary, and titles get minted faster than the practices stabilise. The corpus has already watched *prompt engineer* complete that arc. Whether *agentic engineering* is the durable name or another way-station is not settled by anything on this page.
 
 ## Debates and supersession
 

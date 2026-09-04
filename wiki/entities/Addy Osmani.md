@@ -6,9 +6,9 @@ tags: [addy-osmani, google-chrome, web-developer-advocate, agent-harness-enginee
 affiliation: "Google (Chrome team)"
 role: "Software engineer at Google working on Chrome; web-developer advocate; prolific blogger on web performance, JavaScript, and (since 2025) AI-assisted software engineering; O'Reilly Radar contributor"
 confidence: 0.85
-last_confirmed: "2026-07-09"
-accessed_at: "2026-07-09"
-source_count: 4
+last_confirmed: "2026-09-03"
+accessed_at: "2026-09-03"
+source_count: 5
 ---
 
 # Addy Osmani
@@ -25,6 +25,12 @@ Paul Everitt at [[2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift
 - [[2026-05-15-osmani-agent-harness-engineering]] — first-party article: *Agent Harness Engineering* on O'Reilly Radar; the wiki's first article-altitude treatment of harness engineering as a named practitioner discipline.
 - [[2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering]] — cited by Everitt as influence on the nine-element agentic-engineering practice taxonomy.
 - [[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex]] — Claire Vo cites Osmani's *loop engineering* article as the best breakdown of what an effective loop needs, reproducing its five-element checklist (work trees, skills, plugins/connectors, subagents, state). Confirms Osmani's *loop/harness engineering* writing as a reference practitioners reach for at the product-leader altitude, not only the engineer altitude.
+
+## Named on air as the reference text on loop engineering (2026-09-03)
+
+[[2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-squads-harness|The GitHub Podcast, S02E02]] recommends Osmani's writing without qualification while trying to define *loop engineering*: *"there's a guy called Addy Osmani who wrote a blog post on this, on loop engineering. I think that's the best blog post I've read on this topic so far"* — followed by a promise to put it in the show notes. This is the **second** wiki source to route its audience to Osmani for this specific topic; [[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex|Claire Vo]] credits him for the same thing three months earlier, at a different venue and to a different audience.
+
+The two together substantiate the diffusion path [[concepts/agent-harness|agent-harness]] models — Trivedy coins, Osmani popularises — with evidence from the receiving end rather than from Osmani's own citations. See [[2026-05-15-osmani-agent-harness-engineering|Agent Harness Engineering]].
 
 ## Mentioned in
 
