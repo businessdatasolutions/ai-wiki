@@ -82,7 +82,7 @@ A single number hides more than it shows; the model scores six dimensions, each 
 
 ### What moves a worker up a level
 
-The corpus is unusually consistent about the transitions; the per-level actions below are the synthesis's operational payload (and the action engine of [the self-assessment tool](../../tools/ai-worker-maturity-assessment.html)).
+The corpus is unusually consistent about the transitions; the per-level actions below are the synthesis's operational payload — since the 2026-09-04 fold they run as the cited action layer inside [The AI Worker Maturity Scale v3](../../inspiration/ai-worker-maturity-model.html), whose calibrated 15-gate engine (from the local session's independently built edition) replaced this synthesis's own 12-question instrument.
 
 - **L0 → L1**: remove friction, start talking. Mollick's floor: use a frontier chat model on real work questions this week. No training course required — [[2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026|Raman]]'s "bring your own AI" is how adoption actually arrives.
 - **L1 → L2**: Mollick's $20 decision (paid frontier model, *actively select the thinking model*); stop one-shotting — iterate, provide context, ask for critique ("act like a critic"); give AI **harder tasks** than feels natural; verify anything that leaves your desk. The AEI signature: directive share falls, iteration/validation rise.

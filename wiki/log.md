@@ -10,6 +10,17 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-04] refactor | The fold — two worker-maturity instruments become The AI Worker Maturity Scale v3
+
+On 2026-08-31 two sessions independently built self-assessment instruments for the same question within hours: the local session's gate-based **Scale** (v2 after calibration against three cases; `inspiration/ai-worker-maturity-model.html`, published via Pages) and the remote session's dimension-profile **assessment** (`tools/ai-worker-maturity-assessment.html`, from [[syntheses/ai-worker-maturity-levels|the synthesis]]). Per the user's decision ("do the fold; apply the remote edition's look and feel"), they are now one instrument, **v3**, at the Scale's path:
+
+- **Engine (local edition, carried intact):** the 15 calibrated gates word-for-word, conjunctive level placement with *reach*, inversion detection, the IMPLIES contradiction detector, F/S axis scores, the flags (thin-base, axis-gap, J-curve diagnostic), and the print/PDF ledger. The [calibration record](../inspiration/ai-worker-maturity-calibration.html) and scored Blum case still document this engine and remain untouched.
+- **From the remote edition:** the visual identity (staircase hero with trough annotation, instrument palette, Archivo / Source Serif 4 / IBM Plex Mono, token-based light/dark theming), an **L0 Bystander floor** (new screening gate G0, excluded from axis math, with its own contradiction flag), **source citations on every gate action and level plan** (Mollick, Karpathy, Blum, AEI 5, Forsgren & Macvean, Osmani, Kiron & Schrage, Argenti, Beutler, Carson — from the synthesis's 17-source base), the METR 39-point self-report caveat, localStorage answer persistence, a copy-result button, and the sticky progress pill.
+- **Fixed in passing:** v2's stale "Thirteen gates" / "of 14 answered" strings and its footer still reading "v1".
+- **Retired:** `tools/ai-worker-maturity-assessment.html` (deleted; its action matrix and caveat live on inside v3). References updated on [[threads/ai-worker-maturity-levels|the thread]], [[threads/ai-maturity-measurement-comparison|the measurement thread]], [[syntheses/ai-worker-maturity-levels|the synthesis]], and `index.md`. The synthesis keeps its six corpus-derived level names as the fragment map; the Scale's names (Experimenting → Compounding) are the operational vocabulary.
+
+Verified in Chromium before commit: floor case, clean-level case, inversion + contradiction cases, G0-floor contradiction, persistence across reload, both themes, print-ledger emulation.
+
 ## [2026-09-04] ingest | A PyCon DE talk and the three research artefacts underneath it — the corpus's first treatment of model size as an agentic design variable
 
 **What came in.** A user request naming two URLs that are one source — the [PyCon DE & PyData 2026 session page](https://2026.pycon.de/talks/YZM8TA/) and the [PyData recording](https://youtu.be/nk5BNz8v_9E) of *Demystifying Agentic AI Using Small Language Models* by **Serhii Sokolenko** (co-founder of Tower; ex-Google Cloud Dataflow, Snowflake, Databricks) — plus an instruction to chase the research he cites, *"among others by UC Berkeley."* Three research artefacts were identified from the transcript and ingested alongside it:
