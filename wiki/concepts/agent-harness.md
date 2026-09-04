@@ -3,9 +3,9 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.98
-last_confirmed: "2026-09-03"
-accessed_at: "2026-09-03"
-source_count: 91
+last_confirmed: "2026-09-04"
+accessed_at: "2026-09-04"
+source_count: 92
 relationships:
   - type: part-of
     target: ai-agents
@@ -16,6 +16,9 @@ relationships:
   - type: uses
     target: react-reasoning-acting
     via: "the harness operationalises the reason–act–observe loop ReAct (2022) first prompted by hand"
+  - type: uses
+    target: small-language-models
+    via: "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -764,6 +767,21 @@ He adds a third property in practice that the page has not previously stated as 
 
 His scheduled tasks also instantiate [[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex|Vo's loop taxonomy]] without having been designed against it — weekly prep and morning brief are cron loops; the self-improvement task is a weekly cron loop whose *input is the harness's own telemetry*. Running Vo's episode through his Improve skill on camera, the verdict was exactly that: he already ran loops, and lacked only her **goal** loops. And his stated blocker for the remaining 20–30% is the long-running-agent problem this page tracks via [[2025-11-26-anthropic-effective-harnesses-long-running-agents|Anthropic]] — everything "still has to happen online," tethered to an open laptop.
 
+## Which model the harness wraps is itself a harness decision (added 2026-09-04)
+
+The page's standing formulation — *"the model is what you rent, the harness is what you own"* — treats the model as a single swappable slot. [[2026-08-25-sokolenko-pycon-de-demystifying-agentic-ai-small-language-models|Sokolenko at PyCon DE 2026]] and the [[2025-06-02-belcak-nvidia-small-language-models-future-agentic-ai|NVIDIA SLM position paper]] argue it is a slot filled **per invocation**, and that the harness is what does the filling. In a heterogeneous agentic system, any call can pick any model, a model can be a tool called by another model, and the default should be the cheapest model that can serve the call. See [[small-language-models]].
+
+The uncomfortable corollary for this page: the SLM argument reads the harness's own existence as evidence against the model it wraps.
+
+> *"An AI agent is essentially a heavily instructed and externally choreographed gateway to a language model… the underlying large language model that was engineered to be a powerful generalist is, through a set of tediously written prompts and meticulously orchestrated context management, restricted to operate within a small section of its otherwise large pallet of skills."*
+
+All that context management is work done to make a generalist behave like a specialist. A second argument in the same paper lands closer to home: agentic output is consumed by code, so **one output format produced reliably beats six produced occasionally** — a model post-trained on a single convention removes an entire class of parsing failure the harness currently absorbs.
+
+Two concrete additions to the harness's mechanics from the same ingest:
+
+- **What the framework actually feeds the model.** Sokolenko's account of [[LangChain]] tool routing: *"it uses information in your code including names of functions, including the arguments you have, and also including even your docstrings, to feed it into the decisioning process and determine which tool is the best one to accomplish a task."* Docstrings are harness surface, not documentation.
+- **Which interface you use changes measured capability.** [[2025-07-13-patil-berkeley-function-calling-leaderboard|BFCL]] finds that models supporting both a native `tools` field and prompt-driven structured output often score *better prompted*: FC mode yields ~3× fewer decoding errors but more incorrect calls in multi-function scenarios, and Claude cannot execute parallel calls in FC mode while it can when prompted. A benchmark result that is really a harness-design finding.
+
 ## Related concepts
 
 - [[ai-agents]] — the technology + deployment progression. Agent harness is the *runtime layer* underneath the chatbot → agent → multi-agent progression.
@@ -772,6 +790,7 @@ His scheduled tasks also instantiate [[2026-06-17-vo-how-i-ai-ai-agent-loops-cla
 - [[responsible-ai]] — the Constraints layer (destructive-verb detection, workspace isolation, intent validation) operationalizes RAI policies at runtime. *"Security as structural unreachability"* (per [[2026-05-07-anthropic-managed-agents-decoupling-brain-hands|Anthropic Managed Agents]]) is the engineering principle.
 - [[generative-ai]] — harness frameworks (LangChain, Microsoft Agent Framework, etc.) are now visible in the deployed-tools landscape.
 - [[enterprise-ai-adoption]] — "plan for swap, not for marriage" is a *direct prescription* that complements [[2026-05-05-nishar-nohria-end-of-one-size-fits-all|Nishar-Nohria's]] firm-boundary framework.
+- [[small-language-models]] — *which* model the harness wraps, decided per invocation rather than once; and the argument that the harness's constraining work is evidence a specialist model would have sufficed.
 
 ## Loop engineering as harness vocabulary (added 2026-09-01)
 

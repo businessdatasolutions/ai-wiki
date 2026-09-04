@@ -2,14 +2,17 @@
 type: concept
 aliases: ["open source AI", "open-source AI", "open-weight models", "open weights", "open models", "AI sovereignty", "own vs rent AI"]
 tags: [open-source-ai, open-weight-models, own-vs-rent, ai-sovereignty, concentration-of-power, china-open-models, safety-through-transparency, hugging-face]
-confidence: 0.87
-last_confirmed: "2026-09-03"
-accessed_at: "2026-09-03"
-source_count: 8
+confidence: 0.90
+last_confirmed: "2026-09-04"
+accessed_at: "2026-09-04"
+source_count: 10
 relationships:
   - type: supports
     target: enterprise-ai-adoption
     via: "the own-vs-rent flow (frontier APIs for experimentation, owned/open models for production at scale) is a driver of how enterprises adopt AI"
+  - type: supports
+    target: small-language-models
+    via: "small is what makes local ownership practical — the own-vs-rent argument only reaches a laptop if the model fits on it. Both the SLM position paper and its practitioner reading argue the point in the reverse direction too: you cannot experiment with a model you can only rent"
   - type: supports
     target: agent-harness
     via: "shares the own-vs-rent ownership motif — 'the model is what you rent, the harness is what you own'; open weights are the substrate that specialization/harnessing is owned on top of"
@@ -120,6 +123,20 @@ The framing underneath it is the transferable claim: *"when we think of open sou
 Two things this settles for the page. First, **the wiki's own-vs-rent sources are almost entirely arguing about the middle tier, not the top one** — Delangue, Huang, Ng and Frey all say *open source* and mean *open weight*, and the distinction matters exactly where this page's safety argument lives, because transparency claims that hold for a published dataset do not automatically hold for published weights alone. Second, it clarifies what [[concepts/agent-harness|agent-harness]]'s *"the model is rented, the harness is owned"* motif actually buys: open weights make the model **run-anywhere**, not **inspectable**, and specialisation on top of them is ownership of the harness rather than of the model.
 
 The source adds no evidence and does not move this page's confidence — it is a vendor-produced developer podcast with no measurement in it. It is cited for definitional precision only.
+
+## The experimentation argument for open weights (added 2026-09-04)
+
+The page's four claims are all about *production*: own-vs-rent economics, safety, sovereignty, concentration. [[2026-08-25-sokolenko-pycon-de-demystifying-agentic-ai-small-language-models|Sokolenko at PyCon DE 2026]] adds a fifth that is about *learning*, and it is the one a working engineer feels first. Reading the [[Berkeley Function Calling Leaderboard|BFCL]] rankings on stage, he notes that the top three tool-calling models are Claude Opus 4.5, Gemini 3 and GLM 4.6 — and then:
+
+> *"They are all proprietary. So you cannot use them for local experimentation. You cannot use them for experimentation in your environment."*
+
+So the model he actually uses is the highest-ranked one he is *allowed* to run: [[xLAM]]-2 at 32B, 4-bit quantized, on a two-year-old laptop, at zero marginal cost. The whole talk's thesis — the way through the agentic hype is to build one yourself — depends on open weights being available at a size that fits consumer hardware. Openness without smallness would not have delivered it; see [[small-language-models]].
+
+The [[2025-06-02-belcak-nvidia-small-language-models-future-agentic-ai|NVIDIA SLM position paper]] reaches the **democratisation** claim from the compute side rather than the geopolitics side of [[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness|Ng's argument]]:
+
+> *"When more individuals and organizations can participate in developing language models with the aim for deployment in agentic systems, the aggregate population of agents is more likely to represent a more diverse range of perspectives and societal needs."*
+
+Worth noting who is making these arguments: an **enterprise vendor's research lab** ([[Salesforce AI Research]]) open-sourcing both the [[xLAM]] weights and the synthetic training data, while the same company's product line sells the agentic platform Sokolenko cites as the emblem of the hype. Open-weight releases are increasingly a competitive move by large vendors, not only a community one.
 
 ## Sources consulted
 

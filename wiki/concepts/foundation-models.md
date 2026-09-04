@@ -2,10 +2,10 @@
 type: concept
 aliases: ["foundation model", "foundation models", "FM", "frontier model", "frontier models"]
 tags: [foundation-models, generative-ai, ai-research]
-confidence: 0.87
-last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
-source_count: 23
+confidence: 0.88
+last_confirmed: "2026-09-04"
+accessed_at: "2026-09-04"
+source_count: 24
 quality_score: 0.98
 quality_notes: ['2 near-empty section(s)']
 ---
@@ -158,6 +158,18 @@ She also frames the strategic consequence as a layer shift: the contest *"is inc
 
 Unevidenced throughout, and investor content addressed to its own portfolio; see the source page's scope warning and the parallel note on [[open-source-ai]].
 
+## The size axis, and a definition that moves ([[2025-06-02-belcak-nvidia-small-language-models-future-agentic-ai|Belcak et al. / NVIDIA Research, 2025]])
+
+This page's vocabulary splits *foundation* (adaptable substrate) from *frontier* (top of the leaderboard) — both capability-facing terms. The SLM literature adds a third axis that is **deployment-facing**, and defines it without reference to capability at all:
+
+> *A SLM is a LM that can fit onto a common consumer electronic device and perform inference with latency sufficiently low to be practical when serving the agentic requests of one user.* An LLM is a LM that is not a SLM.
+
+Two consequences worth carrying on this page. First, **"small" is device-indexed and therefore moves**: the same definition yields ~10B parameters against 2025 consumer hardware and 10–30B (4-bit quantized, 16–32 GB) against 2026 laptops, per [[2026-08-25-sokolenko-pycon-de-demystifying-agentic-ai-small-language-models|Sokolenko]]. Any fixed parameter threshold in a source is a dated instance, not a definition.
+
+Second, it reframes what a large model's extra parameters are *for*. The paper's claim is that they encode information that a given deployment never touches — and that in agentic use specifically, the untouched fraction is most of it. That is a size-axis restatement of the [[jagged-frontier]] observation this page already carries: capability is uneven, and which peaks you need depends on the task.
+
+See [[small-language-models]] for the argument, the evidence, and where it does not hold.
+
 ## Debates and supersession
 ## Debates and supersession
 
@@ -172,6 +184,7 @@ Unevidenced throughout, and investor content addressed to its own portfolio; see
 - [[ai-benchmarks]] — how foundation-model capabilities are evaluated
 - [[responsible-ai]] — the transparency, safety, and governance overlay
 - [[enterprise-ai-adoption]] — the deployment context
+- [[small-language-models]] — the same object class read along the size axis, with "small" defined by what fits a consumer device
 
 ## One capability that did not scale (added 2026-08-30)
 
