@@ -5,10 +5,10 @@ aliases: ["Agent Development Kit", "ADK", "Google ADK", "Google Agent Developmen
 tags: [adk, agent-development-kit, google, google-cloud, agent-framework, python, multi-agent, sequential-agents, loop-engineering, graph-engineering, react]
 affiliation: "Google / Google Cloud"
 role: "Google's open framework for building, composing and orchestrating LLM agents"
-confidence: 0.7
-last_confirmed: "2026-09-01"
-accessed_at: "2026-09-01"
-source_count: 4
+confidence: 0.75
+last_confirmed: "2026-09-04"
+accessed_at: "2026-09-04"
+source_count: 5
 relationships:
   - type: part-of
     target: Google
@@ -26,6 +26,7 @@ relationships:
 
 - **Wiring up the reason-act loop in practice.** [[2026-06-10-google-cloud-tech-ai-agents-explained-first-agent]] builds a self-correcting multi-agent blog-writing system in Python on ADK, pairing the [[concepts/react-reasoning-acting|ReAct]] theory with a hands-on build — the operational bookend to the [[2022-10-06-yao-et-al-react-synergizing-reasoning-acting|2022 ReAct paper]]. Three agent patterns are demonstrated: sequential, reactive, and planning.
 - **Composing loops into graphs.** [[2026-08-25-thurium-wang-google-cloud-four-ways-loop-engineering-fails]] is the ADK team's account of when a single loop stops coping and the work should move to **graph engineering** — *"you can put loop as part of the graph, or you can create your own nodes and edges."*
+- **Shared state as the graph's traversal mechanism.** [[2026-09-03-thurium-wang-google-cloud-graph-engineering-101]] names what ADK actually supplies for [[graph-engineering|graph engineering]]: *"if you build a multi-agent system we have this shared state among different agents; if you build a workflow, we have shared state among nodes in this workflow as well."* Two granularities, one primitive — and it is what makes *"passing memory or information down the graph to the next node"* work. The video ships with a companion codelab (`g.dev/ai/adk-2-orchestration`) and the **fan-out / join / router** pattern vocabulary the corpus now uses for ADK workflows.
 - **Alongside the CLI surface.** [[2026-04-22-cheung-ippolito-secchi-google-agents-cli]] covers Google's agents CLI in the same product family.
 
 ## Why it matters to the wiki

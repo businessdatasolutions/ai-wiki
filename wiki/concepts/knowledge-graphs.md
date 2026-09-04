@@ -3,9 +3,9 @@ type: concept
 aliases: ["knowledge graph", "KG", "knowledge graphs", "knowledge-graph", "kg"]
 tags: [knowledge-graphs, kg, graph-rag, ai-grounding, ontology, relational-data, agent-harness, agentic-memory, etl, entity-extraction, relationship-extraction]
 confidence: 0.9
-last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
-source_count: 11
+last_confirmed: "2026-09-04"
+accessed_at: "2026-09-04"
+source_count: 12
 relationships:
   - type: part-of
     target: agent-harness
@@ -13,8 +13,7 @@ relationships:
   - type: uses
     target: foundation-models
     via: "LLM-driven entity-extraction and relationship-extraction populate the KG; LLMs read graph-traversal results as part of grounded-RAG generation"
-quality_score: 0.99
-quality_notes: ['1 near-empty section(s)']
+quality_score: 1
 ---
 
 # Knowledge Graphs
@@ -190,7 +189,14 @@ His claim about the composite is stronger than anything else in the cluster and 
 
 **And the shared gap holds.** None of the five measures anything: there is still no evidence in the wiki on how much error a context layer removes, how such artifacts decay, or who maintains them once the authoring push ends. Blomfield's self-rewriting manual is the first of the five that even *proposes* a maintenance mechanism, and he offers no assessment of whether the rewritten manual is any good.
 
-## Related concepts
+## Not to be confused with graph engineering (added 2026-09-04)
+
+By late 2026 the word *graph* carries at least three unrelated meanings in agentic work, and [[2026-09-03-thurium-wang-google-cloud-graph-engineering-101|Google Cloud's explainer]] separates them in one line — after its own presenter admits she had conflated them:
+
+> *"A lot of terminology has graphs. We have Graph Engineering, we have GraphRAG, we have Knowledge Graph. But Knowledge Graph emphasises on the **data**, and Graph Engineering emphasises on the **behavior** — basically what goes in, in what order, and then what happens next."*
+
+This page and [[graph-engineering]] describe different things that share a word: a knowledge graph is a **data model** the harness reads from; graph engineering is **control flow** the harness executes. GraphRAG sits on this page's side of the line. Nothing about one implies the other, and an agent system can use either, both, or neither.
+
 ## Related concepts
 
 - [[agent-harness]] — KGs are one of the persistent-context substrates the harness reads. The Context + Compounding layers in Chatterjee's 4-layer model are where KG retrieval lives.

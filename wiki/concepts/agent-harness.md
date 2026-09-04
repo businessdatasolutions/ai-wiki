@@ -5,7 +5,7 @@ tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-man
 confidence: 0.98
 last_confirmed: "2026-09-04"
 accessed_at: "2026-09-04"
-source_count: 92
+source_count: 93
 relationships:
   - type: part-of
     target: ai-agents
@@ -16,6 +16,9 @@ relationships:
   - type: uses
     target: react-reasoning-acting
     via: "the harness operationalises the reason–act–observe loop ReAct (2022) first prompted by hand"
+  - type: part-of
+    target: graph-engineering
+    via: "the harness is the outermost of three nested scopes Google Cloud states in one breath — harness contains the loop, and the loop sits as a node in the graph. Graph engineering is the orchestration layer inside the harness, not an alternative to it"
   - type: uses
     target: small-language-models
     via: "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed"
@@ -766,6 +769,18 @@ Property (1) is this page's *repository-as-system-of-record* claim seen from the
 He adds a third property in practice that the page has not previously stated as a design pressure: **context is lost at every exit from the harness.** "Anything that I don't do in Cowork, then the context is not as well caught as if I do it through Cowork" — which is why he routes 70–80% of screen time through it. Consolidation is not a preference but the mechanism by which the harness's memory stays current, and it is a real argument against the tool-hopping posture that [[2025-12-01-marily-nika-pms-who-use-ai-will-replace-those-who-dont|Nika]] demonstrated nine months earlier on the same show.
 
 His scheduled tasks also instantiate [[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex|Vo's loop taxonomy]] without having been designed against it — weekly prep and morning brief are cron loops; the self-improvement task is a weekly cron loop whose *input is the harness's own telemetry*. Running Vo's episode through his Improve skill on camera, the verdict was exactly that: he already ran loops, and lacked only her **goal** loops. And his stated blocker for the remaining 20–30% is the long-running-agent problem this page tracks via [[2025-11-26-anthropic-effective-harnesses-long-running-agents|Anthropic]] — everything "still has to happen online," tethered to an open laptop.
+
+## Harness, loop, graph — the layering stated in one breath (added 2026-09-04)
+
+[[2026-09-03-thurium-wang-google-cloud-graph-engineering-101|Google Cloud's *Graph Engineering 101*]] closes a three-video arc on this channel — [[2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness|the harness boundary]] (16 Jul), [[2026-08-25-thurium-wang-google-cloud-four-ways-loop-engineering-fails|the four loop failures]] (25 Aug), and now the structure you escalate to — and for the first time states all three scopes together:
+
+| Layer | Definition as given |
+| --- | --- |
+| **Harness** | *"everything around the model including its tools, memory and guardrails"* |
+| **Loop** | *"the cycle of the agent running inside that harness"* — reason, decide, pick a tool, re-pick, until the goal is met |
+| **Graph** | *"the organization chart"* — agent nodes plus function nodes carrying *"deterministic logic"*, with state passed along the edges |
+
+Two things worth carrying on this page. First, **the boundary has now been stated three times by the same vendor in seven weeks and has not moved** — July's *"everything after the LLM"* and September's *"everything around the model"* are the same line with a different preposition. That consistency is itself evidence the construct has stabilised, at least inside Google Cloud. Second, **graph engineering is inside the harness, not an alternative to it**: a loop can be a node in a graph (*"you can put loop as part of the graph"*), so these are nested scopes rather than competing architectures. See [[graph-engineering]] for the patterns (fan-out, join, router) and the contrast with agent swarms.
 
 ## Which model the harness wraps is itself a harness decision (added 2026-09-04)
 
