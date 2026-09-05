@@ -5,7 +5,7 @@ aliases: ["McKinsey", "McKinsey & Company", "McKinsey and Company", "QuantumBlac
 tags: [mckinsey, mgi, mckinsey-talks-operations, mckinsey-talks-talent, global-business-services, built-environment, management-consulting, quantumblack, ai-research, tech-ai-transformation, agent-augmented-workforce, outcome-underwriting, post-controversy-governance, future-arenas, omniscalers, skill-change-index, workforce-skills, corporate-venture-building]
 confidence: 0.95
 last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
+accessed_at: "2026-09-05"
 source_count: 17
 relationships:
   - type: employs

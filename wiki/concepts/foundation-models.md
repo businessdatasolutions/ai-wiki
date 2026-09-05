@@ -4,7 +4,7 @@ aliases: ["foundation model", "foundation models", "FM", "frontier model", "fron
 tags: [foundation-models, generative-ai, ai-research]
 confidence: 0.88
 last_confirmed: "2026-09-04"
-accessed_at: "2026-09-04"
+accessed_at: "2026-09-05"
 source_count: 24
 quality_score: 0.98
 quality_notes: ['2 near-empty section(s)']

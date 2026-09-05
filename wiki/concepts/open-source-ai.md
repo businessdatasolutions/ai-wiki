@@ -4,7 +4,7 @@ aliases: ["open source AI", "open-source AI", "open-weight models", "open weight
 tags: [open-source-ai, open-weight-models, own-vs-rent, ai-sovereignty, concentration-of-power, china-open-models, safety-through-transparency, hugging-face]
 confidence: 0.90
 last_confirmed: "2026-09-04"
-accessed_at: "2026-09-04"
+accessed_at: "2026-09-05"
 source_count: 10
 relationships:
   - type: supports

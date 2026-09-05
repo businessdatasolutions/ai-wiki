@@ -4,7 +4,7 @@ aliases: ["AI washing", "AI-washing", "AI wash", "AI washing layoffs"]
 tags: [ai-washing, ai-employment-effects, labor-market, narrative, greenwashing, attribution, layoffs]
 confidence: 0.77
 last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
+accessed_at: "2026-09-05"
 source_count: 3
 relationships:
   - type: part-of

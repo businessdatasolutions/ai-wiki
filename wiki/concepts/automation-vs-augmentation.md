@@ -4,7 +4,7 @@ aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate 
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
 last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
+accessed_at: "2026-09-05"
 source_count: 62
 relationships:
   - type: supports

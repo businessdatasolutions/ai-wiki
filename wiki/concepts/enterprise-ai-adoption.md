@@ -4,7 +4,7 @@ aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizat
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
 last_confirmed: "2026-08-31"
-accessed_at: "2026-08-31"
+accessed_at: "2026-09-05"
 source_count: 112
 relationships:
   - type: uses
