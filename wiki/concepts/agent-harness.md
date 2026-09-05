@@ -4,7 +4,7 @@ aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agen
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.98
 last_confirmed: "2026-09-04"
-accessed_at: "2026-09-04"
+accessed_at: "2026-09-05"
 source_count: 93
 relationships:
   - type: part-of

@@ -5,12 +5,54 @@
   "skill": "traceable-wiki-answer",
   "consumer": "site/integrated-lrd.html Part 8 (repo: datadrivendecisions/diaia)",
   "facets": [
-    { "id": "w1", "label": "Applied research and the problem analysis; the intern analogy", "query": "applied research methodology problem analysis AI intern analogy expert generalist", "candidate_count": 56, "qmd_hit_count": 10, "graph_warning": null },
-    { "id": "w2", "label": "The geopolitical field and the vendors' business models", "query": "AI geopolitics Draghi report Europe innovation gap open versus closed weights vendor business models", "candidate_count": 58, "qmd_hit_count": 11, "graph_warning": null },
-    { "id": "w3", "label": "Can the SME trust AI? Trustworthy AI", "query": "Trustworthy AI EU requirements SME data protection sovereignty local models responsible AI", "candidate_count": 52, "qmd_hit_count": 10, "graph_warning": null },
-    { "id": "w4", "label": "What regional SMEs know, and what they need to know", "query": "what knowledge do SMEs need before adopting AI maturity adoption barriers literacy", "candidate_count": 63, "qmd_hit_count": 10, "graph_warning": null },
-    { "id": "w5", "label": "Where the first opportunities are; the five kinds of use", "query": "where AI creates value in business processes automation versus augmentation productivity trap", "candidate_count": 58, "qmd_hit_count": 11, "graph_warning": null },
-    { "id": "w6", "label": "Successful use cases at SMEs", "query": "successful AI use cases at small and medium enterprises manufacturing industrial adoption", "candidate_count": 54, "qmd_hit_count": 11, "graph_warning": null }
+    {
+      "id": "w1",
+      "label": "Applied research and the problem analysis; the intern analogy",
+      "query": "applied research methodology problem analysis AI intern analogy expert generalist",
+      "candidate_count": 56,
+      "qmd_hit_count": 10,
+      "graph_warning": null
+    },
+    {
+      "id": "w2",
+      "label": "The geopolitical field and the vendors' business models",
+      "query": "AI geopolitics Draghi report Europe innovation gap open versus closed weights vendor business models",
+      "candidate_count": 58,
+      "qmd_hit_count": 11,
+      "graph_warning": null
+    },
+    {
+      "id": "w3",
+      "label": "Can the SME trust AI? Trustworthy AI",
+      "query": "Trustworthy AI EU requirements SME data protection sovereignty local models responsible AI",
+      "candidate_count": 52,
+      "qmd_hit_count": 10,
+      "graph_warning": null
+    },
+    {
+      "id": "w4",
+      "label": "What regional SMEs know, and what they need to know",
+      "query": "what knowledge do SMEs need before adopting AI maturity adoption barriers literacy",
+      "candidate_count": 63,
+      "qmd_hit_count": 10,
+      "graph_warning": null
+    },
+    {
+      "id": "w5",
+      "label": "Where the first opportunities are; the five kinds of use",
+      "query": "where AI creates value in business processes automation versus augmentation productivity trap",
+      "candidate_count": 58,
+      "qmd_hit_count": 11,
+      "graph_warning": null
+    },
+    {
+      "id": "w6",
+      "label": "Successful use cases at SMEs",
+      "query": "successful AI use cases at small and medium enterprises manufacturing industrial adoption",
+      "candidate_count": 54,
+      "qmd_hit_count": 11,
+      "graph_warning": null
+    }
   ],
   "retrieval": {
     "entry_point": "node scripts/wiki-retrieve.mjs --json -n 12 \"<facet query>\"",
@@ -20,53 +62,393 @@
   },
   "ignore_policy": {
     "rule": "A concept/synthesis/thread page is a unit of transferable understanding and is eligible; a source page is reading, not a concept, and is ignored regardless of score.",
-    "reason_classes": ["wrong-granularity", "off-facet", "duplicate", "superseded-by-USE"]
+    "reason_classes": [
+      "wrong-granularity",
+      "off-facet",
+      "duplicate",
+      "superseded-by-USE"
+    ]
   },
   "candidates": [
-    { "anchor": "W1", "slug": "concepts/durable-skills", "type": "concept", "verdict": "USE", "effective_confidence": 0.899, "facets": ["w1"] },
-    { "anchor": "W2", "slug": "concepts/expert-generalist", "type": "concept", "verdict": "USE", "effective_confidence": 0.686, "facets": ["w1"] },
-    { "anchor": "W3", "slug": "concepts/jagged-frontier", "type": "concept", "verdict": "USE", "effective_confidence": 0.889, "facets": ["w1", "w5"] },
-    { "anchor": "W4", "slug": "concepts/analogical-reasoning", "type": "concept", "verdict": "USE", "effective_confidence": 0.359, "facets": ["w1"], "caution": "thin: 2 sources, low effective confidence" },
-    { "anchor": "W5", "slug": "concepts/open-source-ai", "type": "concept", "verdict": "USE", "effective_confidence": 0.89, "facets": ["w2", "w3"] },
-    { "anchor": "W6", "slug": "concepts/foundation-models", "type": "concept", "verdict": "USE", "effective_confidence": 0.87, "facets": ["w2"] },
-    { "anchor": "W7", "slug": "concepts/enterprise-ai-adoption", "type": "concept", "verdict": "USE", "effective_confidence": 0.899, "facets": ["w2", "w4", "w6"] },
-    { "anchor": "W8", "slug": "concepts/responsible-ai", "type": "concept", "verdict": "USE", "effective_confidence": 0.95, "facets": ["w3"] },
-    { "anchor": "W9", "slug": "concepts/small-language-models", "type": "concept", "verdict": "USE", "effective_confidence": 0.742, "facets": ["w3"] },
-    { "anchor": "W10", "slug": "concepts/agent-oversight-and-delegation", "type": "concept", "verdict": "USE", "effective_confidence": 0.765, "facets": ["w3"] },
-    { "anchor": "W11", "slug": "concepts/ai-knowledge-hiding", "type": "concept", "verdict": "USE", "effective_confidence": 0.7, "facets": ["w3", "w4"] },
-    { "anchor": "W12", "slug": "concepts/dynamic-capabilities", "type": "concept", "verdict": "USE", "effective_confidence": 0.795, "facets": ["w4"], "promoted": null, "note": "graph-only on w4; cleared the higher bar as the named target of a uses edge from enterprise-ai-adoption" },
-    { "anchor": "W13", "slug": "syntheses/organizational-frameworks-for-ai-adoption", "type": "synthesis", "verdict": "USE", "effective_confidence": 0.505, "facets": ["w4"], "caution": "closed synthesis, last refreshed 2026-07-15" },
-    { "anchor": "W14", "slug": "threads/ai-maturity-measurement-comparison", "type": "thread", "verdict": "USE", "effective_confidence": null, "facets": ["w4"], "note": "open thread; carries the 78%-use vs 1%-mature spread" },
-    { "anchor": "W15", "slug": "concepts/automation-vs-augmentation", "type": "concept", "verdict": "USE", "effective_confidence": 0.889, "facets": ["w5"] },
-    { "anchor": "W16", "slug": "concepts/micro-productivity-trap", "type": "concept", "verdict": "USE", "effective_confidence": 0.899, "facets": ["w5", "w6"] },
-    { "anchor": "W17", "slug": "concepts/ai-employment-effects", "type": "concept", "verdict": "USE", "effective_confidence": 0.899, "facets": ["w5"] },
-    { "anchor": "W18", "slug": "concepts/ai-deskilling", "type": "concept", "verdict": "USE", "effective_confidence": 0.651, "facets": ["w5"] },
-    { "anchor": "W19", "slug": "concepts/ai-washing", "type": "concept", "verdict": "USE", "effective_confidence": 0.77, "facets": ["w5"] },
-    { "anchor": "W20", "slug": "concepts/lean-4-0", "type": "concept", "verdict": "USE", "effective_confidence": 0.67, "facets": ["w6"] },
-    { "anchor": "W21", "slug": "concepts/industry-4-0", "type": "concept", "verdict": "USE", "effective_confidence": 0.456, "facets": ["w6"], "promoted": "gap-expansion", "caution": "thin: 4 sources" },
-    { "anchor": "W22", "slug": "concepts/industrial-ai-agents", "type": "concept", "verdict": "USE", "effective_confidence": 0.75, "facets": ["w6"], "promoted": "gap-expansion", "caution": "self-declared stub on a single source" },
-
-    { "slug": "concepts/agent-harness", "type": "concept", "verdict": "IGNORE", "reason": "off-facet", "effective_confidence": 0.969, "note": "highest-confidence candidate in the whole ledger; excluded because it is AEL's harness ladder (ADR-0010), not an AIBS research theme" },
-    { "slug": "concepts/agentic-engineering", "type": "concept", "verdict": "IGNORE", "reason": "off-facet", "effective_confidence": 0.949 },
-    { "slug": "concepts/agent-development-lifecycle", "type": "concept", "verdict": "IGNORE", "reason": "off-facet", "effective_confidence": 0.842 },
-    { "slug": "concepts/reward-hacking", "type": "concept", "verdict": "IGNORE", "reason": "off-facet", "effective_confidence": 0.813 },
-    { "slug": "concepts/ai-generated-code-quality", "type": "concept", "verdict": "IGNORE", "reason": "off-facet", "effective_confidence": 0.813 },
-    { "slug": "concepts/ai-coding-productivity-evidence", "type": "concept", "verdict": "IGNORE", "reason": "off-facet", "effective_confidence": 0.748 },
-    { "slug": "concepts/systems-thinking", "type": "concept", "verdict": "IGNORE", "reason": "off-facet", "effective_confidence": 0.861 },
-    { "slug": "concepts/strategic-foresight", "type": "concept", "verdict": "IGNORE", "reason": "off-facet", "effective_confidence": 0.728 },
-    { "slug": "concepts/theory-based-view", "type": "concept", "verdict": "IGNORE", "reason": "off-facet", "effective_confidence": 0.268 },
-    { "slug": "concepts/founder-led-sales", "type": "concept", "verdict": "IGNORE", "reason": "off-facet", "effective_confidence": 0.384 },
-    { "slug": "concepts/document-intelligence", "type": "concept", "verdict": "IGNORE", "reason": "off-facet", "effective_confidence": 0.346 },
-    { "slug": "concepts/generative-ai", "type": "concept", "verdict": "IGNORE", "reason": "superseded-by-USE", "effective_confidence": 0.313, "superseded_by": "W6" },
-    { "slug": "concepts/ai-benchmarks", "type": "concept", "verdict": "IGNORE", "reason": "superseded-by-USE", "effective_confidence": 0.91, "superseded_by": "W6" },
-    { "slug": "entities/Martin Fowler", "type": "entity", "verdict": "IGNORE", "reason": "wrong-granularity" },
-    { "slug": "entities/Martin-Fowler", "type": "entity", "verdict": "IGNORE", "reason": "duplicate" },
-    { "slug": "entities/McKinsey & Company", "type": "entity", "verdict": "IGNORE", "reason": "wrong-granularity" },
-    { "slug": "entities/McKinsey Global Institute", "type": "entity", "verdict": "IGNORE", "reason": "wrong-granularity" },
-    { "slug": "entities/Microsoft", "type": "entity", "verdict": "IGNORE", "reason": "wrong-granularity" },
-    { "slug": "entities/GitHub", "type": "entity", "verdict": "IGNORE", "reason": "wrong-granularity" },
-    { "slug": "entities/Thoughtworks", "type": "entity", "verdict": "IGNORE", "reason": "wrong-granularity" },
-    { "slug": "sources/*", "type": "source", "verdict": "IGNORE", "reason": "wrong-granularity", "count_approx": 230, "note": "all source pages across all six runs; reading, not concepts. The LRD's Part 8 Grounding column already carries reading-level material." }
+    {
+      "anchor": "W1",
+      "slug": "concepts/durable-skills",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.899,
+      "facets": [
+        "w1"
+      ]
+    },
+    {
+      "anchor": "W2",
+      "slug": "concepts/expert-generalist",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.686,
+      "facets": [
+        "w1"
+      ]
+    },
+    {
+      "anchor": "W3",
+      "slug": "concepts/jagged-frontier",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.889,
+      "facets": [
+        "w1",
+        "w5"
+      ]
+    },
+    {
+      "anchor": "W4",
+      "slug": "concepts/analogical-reasoning",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.359,
+      "facets": [
+        "w1"
+      ],
+      "caution": "thin: 2 sources, low effective confidence"
+    },
+    {
+      "anchor": "W5",
+      "slug": "concepts/open-source-ai",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.89,
+      "facets": [
+        "w2",
+        "w3"
+      ]
+    },
+    {
+      "anchor": "W6",
+      "slug": "concepts/foundation-models",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.87,
+      "facets": [
+        "w2"
+      ]
+    },
+    {
+      "anchor": "W7",
+      "slug": "concepts/enterprise-ai-adoption",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.899,
+      "facets": [
+        "w2",
+        "w4",
+        "w6"
+      ]
+    },
+    {
+      "anchor": "W8",
+      "slug": "concepts/responsible-ai",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.95,
+      "facets": [
+        "w3"
+      ]
+    },
+    {
+      "anchor": "W9",
+      "slug": "concepts/small-language-models",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.742,
+      "facets": [
+        "w3"
+      ]
+    },
+    {
+      "anchor": "W10",
+      "slug": "concepts/agent-oversight-and-delegation",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.765,
+      "facets": [
+        "w3"
+      ]
+    },
+    {
+      "anchor": "W11",
+      "slug": "concepts/ai-knowledge-hiding",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.7,
+      "facets": [
+        "w3",
+        "w4"
+      ]
+    },
+    {
+      "anchor": "W12",
+      "slug": "concepts/dynamic-capabilities",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.795,
+      "facets": [
+        "w4"
+      ],
+      "promoted": null,
+      "note": "graph-only on w4; cleared the higher bar as the named target of a uses edge from enterprise-ai-adoption"
+    },
+    {
+      "anchor": "W13",
+      "slug": "syntheses/organizational-frameworks-for-ai-adoption",
+      "type": "synthesis",
+      "verdict": "USE",
+      "effective_confidence": 0.505,
+      "facets": [
+        "w4"
+      ],
+      "caution": "closed synthesis, last refreshed 2026-07-15"
+    },
+    {
+      "anchor": "W14",
+      "slug": "threads/ai-maturity-measurement-comparison",
+      "type": "thread",
+      "verdict": "USE",
+      "effective_confidence": null,
+      "facets": [
+        "w4"
+      ],
+      "note": "open thread; carries the 78%-use vs 1%-mature spread"
+    },
+    {
+      "anchor": "W15",
+      "slug": "concepts/automation-vs-augmentation",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.889,
+      "facets": [
+        "w5"
+      ]
+    },
+    {
+      "anchor": "W16",
+      "slug": "concepts/micro-productivity-trap",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.899,
+      "facets": [
+        "w5",
+        "w6"
+      ]
+    },
+    {
+      "anchor": "W17",
+      "slug": "concepts/ai-employment-effects",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.899,
+      "facets": [
+        "w5"
+      ]
+    },
+    {
+      "anchor": "W18",
+      "slug": "concepts/ai-deskilling",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.651,
+      "facets": [
+        "w5"
+      ]
+    },
+    {
+      "anchor": "W19",
+      "slug": "concepts/ai-washing",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.77,
+      "facets": [
+        "w5"
+      ]
+    },
+    {
+      "anchor": "W20",
+      "slug": "concepts/lean-4-0",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.67,
+      "facets": [
+        "w6"
+      ]
+    },
+    {
+      "anchor": "W21",
+      "slug": "concepts/industry-4-0",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.456,
+      "facets": [
+        "w6"
+      ],
+      "promoted": "gap-expansion",
+      "caution": "thin: 4 sources"
+    },
+    {
+      "anchor": "W22",
+      "slug": "concepts/industrial-ai-agents",
+      "type": "concept",
+      "verdict": "USE",
+      "effective_confidence": 0.75,
+      "facets": [
+        "w6"
+      ],
+      "promoted": "gap-expansion",
+      "caution": "self-declared stub on a single source"
+    },
+    {
+      "slug": "concepts/agent-harness",
+      "type": "concept",
+      "verdict": "IGNORE",
+      "reason": "off-facet",
+      "effective_confidence": 0.969,
+      "note": "highest-confidence candidate in the whole ledger; excluded because it is AEL's harness ladder (ADR-0010), not an AIBS research theme"
+    },
+    {
+      "slug": "concepts/agentic-engineering",
+      "type": "concept",
+      "verdict": "IGNORE",
+      "reason": "off-facet",
+      "effective_confidence": 0.949
+    },
+    {
+      "slug": "concepts/agent-development-lifecycle",
+      "type": "concept",
+      "verdict": "IGNORE",
+      "reason": "off-facet",
+      "effective_confidence": 0.842
+    },
+    {
+      "slug": "concepts/reward-hacking",
+      "type": "concept",
+      "verdict": "IGNORE",
+      "reason": "off-facet",
+      "effective_confidence": 0.813
+    },
+    {
+      "slug": "concepts/ai-generated-code-quality",
+      "type": "concept",
+      "verdict": "IGNORE",
+      "reason": "off-facet",
+      "effective_confidence": 0.813
+    },
+    {
+      "slug": "concepts/ai-coding-productivity-evidence",
+      "type": "concept",
+      "verdict": "IGNORE",
+      "reason": "off-facet",
+      "effective_confidence": 0.748
+    },
+    {
+      "slug": "concepts/systems-thinking",
+      "type": "concept",
+      "verdict": "IGNORE",
+      "reason": "off-facet",
+      "effective_confidence": 0.861
+    },
+    {
+      "slug": "concepts/strategic-foresight",
+      "type": "concept",
+      "verdict": "IGNORE",
+      "reason": "off-facet",
+      "effective_confidence": 0.728
+    },
+    {
+      "slug": "concepts/theory-based-view",
+      "type": "concept",
+      "verdict": "IGNORE",
+      "reason": "off-facet",
+      "effective_confidence": 0.268
+    },
+    {
+      "slug": "concepts/founder-led-sales",
+      "type": "concept",
+      "verdict": "IGNORE",
+      "reason": "off-facet",
+      "effective_confidence": 0.384
+    },
+    {
+      "slug": "concepts/document-intelligence",
+      "type": "concept",
+      "verdict": "IGNORE",
+      "reason": "off-facet",
+      "effective_confidence": 0.346
+    },
+    {
+      "slug": "concepts/generative-ai",
+      "type": "concept",
+      "verdict": "IGNORE",
+      "reason": "superseded-by-USE",
+      "effective_confidence": 0.313,
+      "superseded_by": "W6"
+    },
+    {
+      "slug": "concepts/ai-benchmarks",
+      "type": "concept",
+      "verdict": "IGNORE",
+      "reason": "superseded-by-USE",
+      "effective_confidence": 0.91,
+      "superseded_by": "W6"
+    },
+    {
+      "slug": "entities/Martin Fowler",
+      "type": "entity",
+      "verdict": "IGNORE",
+      "reason": "wrong-granularity"
+    },
+    {
+      "slug": "entities/Martin-Fowler",
+      "type": "entity",
+      "verdict": "IGNORE",
+      "reason": "duplicate"
+    },
+    {
+      "slug": "entities/McKinsey & Company",
+      "type": "entity",
+      "verdict": "IGNORE",
+      "reason": "wrong-granularity"
+    },
+    {
+      "slug": "entities/McKinsey Global Institute",
+      "type": "entity",
+      "verdict": "IGNORE",
+      "reason": "wrong-granularity"
+    },
+    {
+      "slug": "entities/Microsoft",
+      "type": "entity",
+      "verdict": "IGNORE",
+      "reason": "wrong-granularity"
+    },
+    {
+      "slug": "entities/GitHub",
+      "type": "entity",
+      "verdict": "IGNORE",
+      "reason": "wrong-granularity"
+    },
+    {
+      "slug": "entities/Thoughtworks",
+      "type": "entity",
+      "verdict": "IGNORE",
+      "reason": "wrong-granularity"
+    },
+    {
+      "slug": "sources/*",
+      "type": "source",
+      "verdict": "IGNORE",
+      "reason": "wrong-granularity",
+      "count_approx": 230,
+      "note": "all source pages across all six runs; reading, not concepts. The LRD's Part 8 Grounding column already carries reading-level material."
+    }
   ],
   "gaps": [
     {
@@ -77,12 +459,187 @@
     }
   ],
   "answer_map": [
-    { "lrd_week": 1, "anchors": ["W1", "W2", "W3", "W4"] },
-    { "lrd_week": 2, "anchors": ["W5", "W6", "W7"] },
-    { "lrd_week": 3, "anchors": ["W8", "W9", "W10", "W11"] },
-    { "lrd_week": 4, "anchors": ["W7", "W12", "W13", "W14"] },
-    { "lrd_week": 5, "anchors": ["W15", "W16", "W17", "W18", "W19"] },
-    { "lrd_week": 6, "anchors": ["W20", "W21", "W22", "W16"] },
-    { "lrd_week": 7, "anchors": [], "note": "consolidation week, no new theme" }
-  ]
+    {
+      "lrd_week": 1,
+      "anchors": [
+        "W1",
+        "W2",
+        "W3",
+        "W4"
+      ]
+    },
+    {
+      "lrd_week": 2,
+      "anchors": [
+        "W5",
+        "W6",
+        "W7"
+      ]
+    },
+    {
+      "lrd_week": 3,
+      "anchors": [
+        "W8",
+        "W9",
+        "W10",
+        "W11"
+      ]
+    },
+    {
+      "lrd_week": 4,
+      "anchors": [
+        "W7",
+        "W12",
+        "W13",
+        "W14"
+      ]
+    },
+    {
+      "lrd_week": 5,
+      "anchors": [
+        "W15",
+        "W16",
+        "W17",
+        "W18",
+        "W19"
+      ]
+    },
+    {
+      "lrd_week": 6,
+      "anchors": [
+        "W20",
+        "W21",
+        "W22",
+        "W16"
+      ]
+    },
+    {
+      "lrd_week": 7,
+      "anchors": [],
+      "note": "consolidation week, no new theme"
+    }
+  ],
+  "addendum_ael": {
+    "why": "The first pass ignored the agent-engineering cluster as off-facet, which was right for an AIBS-shaped question but left LRD Part 8 asymmetric: AIBS weeks named what the research rests on, AEL weeks named only what to build.",
+    "framing_constraint": "ADR-0010 makes each harness element the answer to a failure already met, so the AEL concepts are specified as DEBRIEF reading (after the element is in place), not pre-reading. Week 3 is the stated exception because the decision record is itself the deliverable. This is a property of the consumer, not the wiki; no retrieval score surfaces it. Confirmed with the module owner before writing.",
+    "runs": [
+      {
+        "query": "agentic harness context engineering rules skills memory hooks vibe coding",
+        "eligible_candidates": 23
+      },
+      {
+        "query": "knowledge architecture RAG knowledge graph skills for LLM agents",
+        "eligible_candidates": 8
+      },
+      {
+        "query": "evaluation LLM as judge eval harness agent testing reward hacking",
+        "eligible_candidates": 4
+      }
+    ],
+    "use_by_week": [
+      {
+        "week": 1,
+        "element": "Vibe-coded spike + failure log",
+        "pages": [
+          "concepts/vibe-coding",
+          "concepts/agentic-engineering"
+        ]
+      },
+      {
+        "week": 2,
+        "element": "Context layer",
+        "pages": [
+          "concepts/agent-harness",
+          "concepts/react-reasoning-acting"
+        ]
+      },
+      {
+        "week": 3,
+        "element": "Decision log — knowledge architecture",
+        "pages": [
+          "syntheses/knowledge-architectures-for-llm-agents",
+          "syntheses/is-rag-dead",
+          "concepts/llm-wiki",
+          "concepts/knowledge-graphs"
+        ],
+        "note": "the one week where reading may precede the decision"
+      },
+      {
+        "week": 4,
+        "element": "Contracts layer — eval config",
+        "pages": [
+          "concepts/agent-development-lifecycle",
+          "concepts/reward-hacking"
+        ]
+      },
+      {
+        "week": 5,
+        "element": "Constraints layer — hooks",
+        "pages": [
+          "concepts/agent-oversight-and-delegation",
+          "concepts/multi-agent-failure-modes"
+        ],
+        "note": "agent-oversight reused from AIBS week 3, read from the builder's side"
+      },
+      {
+        "week": 6,
+        "element": "Compounding layer — skills and memory",
+        "pages": [
+          "syntheses/harness-thinning-what-persists",
+          "concepts/agent-fleet-management"
+        ]
+      },
+      {
+        "week": 7,
+        "element": "Capstone + ratchet retrospective",
+        "pages": [
+          "concepts/agentic-engineering"
+        ]
+      }
+    ],
+    "ignored": [
+      {
+        "reason": "off-facet-already-placed",
+        "pages": [
+          "concepts/enterprise-ai-adoption",
+          "concepts/micro-productivity-trap",
+          "concepts/jagged-frontier",
+          "concepts/automation-vs-augmentation",
+          "concepts/open-source-ai"
+        ]
+      },
+      {
+        "reason": "thin",
+        "pages": [
+          "concepts/software-3.0"
+        ],
+        "effective_confidence": 0.494
+      },
+      {
+        "reason": "off-facet",
+        "pages": [
+          "concepts/industrial-ai-agents",
+          "concepts/attack-surface-management",
+          "concepts/agentic-pull-requests",
+          "concepts/ai-generated-code-quality",
+          "concepts/ai-coding-productivity-evidence",
+          "concepts/osint",
+          "concepts/document-intelligence"
+        ]
+      },
+      {
+        "reason": "wrong-altitude",
+        "pages": [
+          "concepts/ai-agents"
+        ],
+        "effective_confidence": 0.94,
+        "note": "near-miss: parent of agent-harness and agent-development-lifecycle rather than a lesson any single week teaches"
+      }
+    ],
+    "gap": {
+      "gap": "No concept page for loop engineering.",
+      "evidence": "Discussed inside agent-harness, agentic-engineering, graph-engineering and multi-agent-failure-modes plus two Google Cloud sources; no page of its own.",
+      "severity": "lower than the week-2 geopolitics gap — not a hard dependency; no AEL week loses its element for want of it"
+    }
+  }
 }

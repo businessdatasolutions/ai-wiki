@@ -206,3 +206,77 @@ Six of the seven weeks have a defensible concept spine in the wiki, and one week
 
 The result is added to LRD Part 8 as a **week → concepts** table linking each page at its published
 wiki URL, with a note recording the week-2 gap and the three thin pages.
+
+
+---
+
+# Addendum — the AEL half (same day, second pass)
+
+The first pass answered an AIBS-shaped question and ignored the agent-engineering cluster as
+`off-facet`; §4 records `agent-harness` at 0.969 as the example. That was right for the question
+asked and wrong for the document: it left LRD Part 8 saying what the AIBS research rests on and
+what the AEL ladder builds, but not what the ladder *teaches*. This addendum closes that.
+
+## A2.1 — Retrieval
+
+Three further runs through the same entry point:
+
+| Query | concept/synthesis candidates |
+|---|---|
+| agentic harness context engineering rules skills memory hooks vibe coding | 23 |
+| knowledge architecture RAG knowledge graph skills for LLM agents | 8 |
+| evaluation LLM as judge eval harness agent testing reward hacking | 4 |
+
+This is the wiki's densest and best-maintained region: `agent-harness` 0.98, `agentic-engineering`
+0.949, `ai-agents` 0.94, `llm-wiki` 0.89, `react-reasoning-acting` 0.89, `vibe-coding` 0.889,
+`agent-development-lifecycle` 0.842, `multi-agent-failure-modes` 0.841.
+
+## A2.2 — The framing constraint (this is the substantive judgement)
+
+ADR-0010 makes each week's harness element the answer to a failure the team has **already met**.
+A concept named in advance hands a team the answer before it has the problem, and the ratchet stops
+ratcheting. The AEL column is therefore specified as **debrief reading** — consulted once the
+element is in place — not as pre-reading. Week 3 is the stated exception: there the decision record
+is the deliverable, and `knowledge-architectures-for-llm-agents` is that very decision
+(RAG / LLM Wiki / Fat Skills) already worked through as a comparison.
+
+This constraint is a property of the *consumer*, not of the wiki, and no retrieval score could have
+surfaced it. It was put to the module owner and confirmed before the column was written.
+
+## A2.3 — USE set (AEL), by week
+
+| Wk | AEL element | Pages | eff. conf. |
+|---|---|---|---|
+| 1 | Vibe-coded spike + failure log | `concepts/vibe-coding`, `concepts/agentic-engineering` | 0.889, 0.949 |
+| 2 | Context layer | `concepts/agent-harness`, `concepts/react-reasoning-acting` | 0.98, 0.89 |
+| 3 | Decision log — knowledge architecture | `syntheses/knowledge-architectures-for-llm-agents`, `syntheses/is-rag-dead`, `concepts/llm-wiki`, `concepts/knowledge-graphs` | 0.90, 0.90, 0.89, 0.90 |
+| 4 | Contracts layer — eval config | `concepts/agent-development-lifecycle`, `concepts/reward-hacking` | 0.842, 0.85 |
+| 5 | Constraints layer — hooks | `concepts/agent-oversight-and-delegation`, `concepts/multi-agent-failure-modes` | 0.765, 0.841 |
+| 6 | Compounding layer — skills and memory | `syntheses/harness-thinning-what-persists`, `concepts/agent-fleet-management` | 0.82, 0.75 |
+| 7 | Capstone + ratchet retrospective | `concepts/agentic-engineering` (returning) | 0.949 |
+
+`agent-oversight-and-delegation` is deliberately reused from AIBS week 3, read from the builder's
+side: the same finding — a correct outcome does not repair an unauthorised action — is why a hook
+fires *before* a tool call. `agent-fleet-management` and `multi-agent-failure-modes` carry a
+recorded `contradicts` edge between them; that is kept rather than resolved, because a team that
+must defend a choice benefits from an open disagreement.
+
+## A2.4 — Ignored in this pass
+
+| Reason-class | Pages |
+|---|---|
+| `off-facet` — AIBS-side, already placed in the first pass | `enterprise-ai-adoption`, `micro-productivity-trap`, `jagged-frontier`, `automation-vs-augmentation`, `open-source-ai` |
+| `thin` — too low to carry a week | `software-3.0` (0.494) |
+| `off-facet` — no AEL week deploys it | `industrial-ai-agents`, `attack-surface-management`, `agentic-pull-requests`, `ai-generated-code-quality`, `ai-coding-productivity-evidence`, `osint`, `document-intelligence` |
+
+`ai-agents` (0.94) is a near-miss IGNORE: high confidence and on-facet, but it is the parent of
+`agent-harness` and `agent-development-lifecycle` rather than a lesson any single week teaches.
+
+## A2.5 — Second gap
+
+**Loop engineering has no concept page.** It is discussed inside `agent-harness`,
+`agentic-engineering`, `graph-engineering` and `multi-agent-failure-modes`, and two Google Cloud
+sources state the nesting cleanly — harness ⊃ loop ⊃ graph-node — but a reader looking for the
+layer between harness and orchestration will not find it under its own name. Same shape as the
+week-2 geopolitics gap, lower stakes: unlike the week-2 pages this is not a hard dependency, since
+no AEL week loses its element for want of it. It is a good candidate for the next wiki pass.

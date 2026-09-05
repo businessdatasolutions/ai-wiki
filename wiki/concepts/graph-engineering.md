@@ -4,7 +4,7 @@ aliases: ["graph engineering", "graph workflow", "agent graph", "workflow graph"
 tags: [graph-engineering, loop-engineering, agent-orchestration, control-flow, fan-out, join, router, shared-state, determinism, debuggability, agent-swarm, agent-development-kit, google-cloud, multi-agent]
 confidence: 0.75
 last_confirmed: "2026-09-04"
-accessed_at: "2026-09-04"
+accessed_at: "2026-09-05"
 source_count: 5
 relationships:
   - type: part-of

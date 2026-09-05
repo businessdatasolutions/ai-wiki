@@ -4,7 +4,7 @@ aliases: ["knowledge graph", "KG", "knowledge graphs", "knowledge-graph", "kg"]
 tags: [knowledge-graphs, kg, graph-rag, ai-grounding, ontology, relational-data, agent-harness, agentic-memory, etl, entity-extraction, relationship-extraction]
 confidence: 0.9
 last_confirmed: "2026-09-04"
-accessed_at: "2026-09-04"
+accessed_at: "2026-09-05"
 source_count: 12
 relationships:
   - type: part-of
