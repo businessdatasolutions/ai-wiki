@@ -5,10 +5,10 @@ aliases: ["Tilde Thurium"]
 tags: [tilde-thurium, google-cloud, google-cloud-tech, ai-builder-essentials, developer-relations, agent-harness, loop-engineering, vendor-explainer]
 affiliation: "Google Cloud (Developer Relations)"
 role: "Developer advocate at Google Cloud; recurring presenter on the AI Builder Essentials series"
-confidence: 0.7
-last_confirmed: "2026-09-01"
-accessed_at: "2026-09-01"
-source_count: 2
+confidence: 0.75
+last_confirmed: "2026-09-04"
+accessed_at: "2026-09-04"
+source_count: 3
 relationships:
   - type: part-of
     target: Google
@@ -18,6 +18,8 @@ relationships:
 # Tilde Thurium
 
 A **developer advocate at [[Google]] Cloud** and a recurring presenter on the **AI Builder Essentials** series on the Google Cloud Tech channel — short, two-person conversational explainers aimed at developers starting to build agents.
+
+She is on all three of the wiki's Google Cloud harness/loop/graph videos, and her function in the format is consistent and worth naming: **she plays the sceptic**, while [[Annie Wang]] supplies the [[Agent Development Kit|ADK]]-side definitions. Thurium is the one who asks what the terms mean, admits on camera that she had confused graph engineering with knowledge graphs, and closes [[2026-09-03-thurium-wang-google-cloud-graph-engineering-101|*Graph Engineering 101*]] by asking whether the field is *"just reinventing data structures and algorithms for the agentic age"* — then proposing *"hash table engineering or stack engineering"* as the next trends. That is a vendor advocate deflating her own employer's vocabulary, and it is the most quotable first-party corroboration the corpus holds for the terminology-churn reading in [[2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-squads-harness|The GitHub Podcast]] and [[2026-05-07-kokane-agent-harness-vs-systems-design|Kokane]].
 
 Thurium's value to this wiki is that she appears at the **definitional** layer twice, six weeks apart, in a series that states things compactly enough to quote:
 
@@ -30,7 +32,7 @@ Read together, the two sources are one argument: the July video draws the bounda
 
 ## Appears in this wiki via
 
-- [[2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness]] · [[2026-08-25-thurium-wang-google-cloud-four-ways-loop-engineering-fails]]
+- [[2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness]] · [[2026-08-25-thurium-wang-google-cloud-four-ways-loop-engineering-fails]] · [[2026-09-03-thurium-wang-google-cloud-graph-engineering-101]]
 
 ## Mentioned in
 

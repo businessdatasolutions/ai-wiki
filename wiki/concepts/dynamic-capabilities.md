@@ -4,7 +4,7 @@ aliases: ["dynamic capabilities", "dynamic-capabilities", "Teece dynamic capabil
 tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, microfoundations]
 confidence: 0.95
 last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
+accessed_at: "2026-09-05"
 source_count: 39
 relationships:
   - type: supports

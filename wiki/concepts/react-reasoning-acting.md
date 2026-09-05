@@ -4,7 +4,7 @@ aliases: ["ReAct", "Reason+Act", "reason-act-observe loop", "reasoning and actin
 tags: [react, reasoning-and-acting, agentic-loop, chain-of-thought, tool-use, llm-agents, interpretability, human-in-the-loop, foundational]
 confidence: 0.90
 last_confirmed: "2026-09-04"
-accessed_at: "2026-09-04"
+accessed_at: "2026-09-05"
 source_count: 4
 relationships:
   - type: authored-by

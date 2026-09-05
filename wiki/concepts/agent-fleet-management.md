@@ -3,9 +3,9 @@ type: concept
 title: Agent fleet management
 aliases: ["agent fleet management", "managing agent fleets", "agent manager", "human as agent manager", "parallel agents", "agent orchestration at scale"]
 confidence: 0.75
-last_confirmed: "2026-09-03"
-source_count: 7
-accessed_at: "2026-09-03"
+last_confirmed: "2026-09-04"
+source_count: 8
+accessed_at: "2026-09-05"
 tags: [agent-fleet, parallelism, cloud-agents, isolated-workspaces, decision-fatigue, priority-queue, span-of-control, delegation, playbooks, token-economics]
 relationships:
   - type: part-of
@@ -69,7 +69,9 @@ And on self-improving product loops: *"we're nowhere near any frontier model hav
 
 > *"Most things in AI, there are no standardizations — but the goal of leveraging something like a squad or a fleet, or whatever they call it in whatever tool, is to have the work done in some type of parallelization."*
 
-Their working definition of a squad is **role specialisation inside a loop** — *"one agent that's dedicated to the planning part, one dedicated to checking and testing, one dedicated to acting and implementing, and one for reviewing"* — which is the same decomposition [[2026-03-26-osmani-code-agent-orchestra-multi-agent-coding|Osmani's orchestra]] and [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen's team structures]] describe, and which [[2026-08-25-thurium-wang-google-cloud-four-ways-loop-engineering-fails|Google Cloud]] reaches from the other direction as *graph engineering* once a single loop overflows. **Four vendors, four nouns, one primitive.** Treat *squad*, *fleet*, *orchestra* and *graph* as tool-local labels for role-specialised parallelism, and resolve them to this page rather than proliferating sub-concepts.
+Their working definition of a squad is **role specialisation inside a loop** — *"one agent that's dedicated to the planning part, one dedicated to checking and testing, one dedicated to acting and implementing, and one for reviewing"* — which is the same decomposition [[2026-03-26-osmani-code-agent-orchestra-multi-agent-coding|Osmani's orchestra]] and [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen's team structures]] describe. **Three vendors, three nouns, one primitive.** Treat *squad*, *fleet* and *orchestra* as tool-local labels for role-specialised parallelism, and resolve them to this page rather than proliferating sub-concepts.
+
+> **Correction (2026-09-04).** This note originally counted *graph engineering* as a fourth name for the same primitive, on the strength of [[2026-08-25-thurium-wang-google-cloud-four-ways-loop-engineering-fails|Google Cloud's]] escalation-from-loops framing. [[2026-09-03-thurium-wang-google-cloud-graph-engineering-101|The follow-up video]] from the same team makes clear that **graph does not belong in this cluster**: a graph is engineer-specified control flow over history-free nodes, whose defining payoff is determinism, and it is explicitly contrasted with *agent swarms* — which is where a squad of role-specialised agents actually sits. Parallelism (fan-out) is one *pattern inside* a graph, not what a graph is. The three-name resolution above stands; *graph* now resolves to [[graph-engineering]].
 
 The episode adds no evidence and does not move this page's confidence: it is three developer advocates describing their own product's terminology, with no measurement of whether the parallelism pays.
 

@@ -4,8 +4,8 @@ title: Multi-agent failure modes
 aliases: ["multi-agent failure modes", "MAST", "multi-agent system failure taxonomy", "why multi-agent systems fail", "agent coordination failure"]
 confidence: 0.85
 last_confirmed: "2026-09-04"
-source_count: 6
-accessed_at: "2026-09-04"
+source_count: 7
+accessed_at: "2026-09-05"
 tags: [mast, multi-agent, failure-taxonomy, coordination, inter-agent-misalignment, task-verification, data-processing-inequality, isolated-workspaces, caid, token-budget]
 relationships:
   - type: part-of
@@ -72,6 +72,14 @@ Across ~110 model families, frontier models score in the high 80s and 90s on **s
 This matters for the page's central claim. If sustained state, memory and long-horizon decision-making are unsolved *within a single agent*, then coordination failures observed across several agents are not purely a coordination problem — they are the same underlying deficit, compounded by having more places to lose state. Two independent methods, one fault line.
 
 BFCL also supplies a **measurement caveat for this literature**: its multi-turn evaluation requires both a final-state match and a required-call-path match, precisely because *"multiple sequences of function calls can achieve the same result"* while non-state-changing calls (a lookup that should have preceded an action) leave no trace in the final state. Any taxonomy of agent failure built on outcome inspection alone will miss the class of failures where the agent guessed instead of checking.
+
+## The determinism bet, and what it costs (added 2026-09-04)
+
+[[2026-09-03-thurium-wang-google-cloud-graph-engineering-101|Google Cloud's graph-engineering explainer]] makes the clearest vendor statement of the architectural answer to this page's problem: specify the workflow yourself, node by node, and give each node's agent no view of history — *"an agent that's at a certain node doesn't need to know what happened before"* — in exchange for *"really good predictability, debuggability and control."*
+
+That is a bet, and this page holds the reasons to check it. **[[2025-03-17-cemri-why-do-multi-agent-llm-systems-fail|MAST]]'s inter-agent misalignment category is precisely the seam a graph creates**: every edge is a handoff, and handoffs are where the taxonomy locates a large share of failures. Meanwhile [[2025-07-13-patil-berkeley-function-calling-leaderboard|BFCL]] finds memory and long-horizon state to be the *unsolved* half of agentic capability, which cuts both ways — a history-free node cannot lose state it never had, but the graph's shared state now has to carry everything the node would otherwise have remembered, and nothing measures whether that trade nets out.
+
+The honest position: determinism is a plausible mitigation for the failures on this page, asserted by a vendor with no measurement attached, against a literature that has measured the cost of decomposition ([[2026-04-02-tran-kiela-single-agent-outperforms-multi-agent-under-equal-budgets|Tran & Kiela]]: single agents win at equal token budgets) but not the benefit of specifying it in advance. See [[graph-engineering]].
 
 ## Related concepts
 

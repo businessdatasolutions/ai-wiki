@@ -4,7 +4,7 @@ aliases: ["industrial AI agents", "industrial agentic AI", "OT AI agents", "manu
 tags: [industrial-ai-agents, ai-agents, ot-it-convergence, manufacturing, ontology, semantic-data-layer, knowledge-graph, unified-namespace, mqtt, scada, mes, cmms, qms, erp]
 confidence: 0.75
 last_confirmed: "2026-05-18"
-accessed_at: "2026-05-18"
+accessed_at: "2026-09-05"
 source_count: 3
 relationships:
   - type: instance-of

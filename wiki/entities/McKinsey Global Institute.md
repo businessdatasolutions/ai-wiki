@@ -8,7 +8,7 @@ founded: 1990
 parent: "[[McKinsey & Company]]"
 confidence: 0.85
 last_confirmed: "2026-05-26"
-accessed_at: "2026-05-26"
+accessed_at: "2026-09-05"
 source_count: 3
 relationships:
   - type: part-of

@@ -5,7 +5,7 @@ aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval
 confidence: 0.8
 last_confirmed: "2026-09-01"
 source_count: 8
-accessed_at: "2026-09-01"
+accessed_at: "2026-09-05"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
   - type: part-of

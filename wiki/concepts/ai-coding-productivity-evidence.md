@@ -5,7 +5,7 @@ aliases: ["AI coding productivity", "AI developer productivity", "developer prod
 confidence: 0.8
 last_confirmed: "2026-08-30"
 source_count: 6
-accessed_at: "2026-08-30"
+accessed_at: "2026-09-05"
 tags: [rct, productivity, metr, copilot, dora, throughput, delivery-stability, perception-gap, heterogeneity, seniority, measurement]
 relationships:
   - type: part-of

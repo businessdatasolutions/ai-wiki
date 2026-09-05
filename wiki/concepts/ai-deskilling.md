@@ -4,7 +4,7 @@ aliases: ["AI deskilling", "ai-deskilling", "task composition shift", "deskillin
 tags: [deskilling, task-composition, ai-employment-effects, occupations]
 confidence: 0.85
 last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
+accessed_at: "2026-09-05"
 source_count: 18
 relationships:
   - type: instance-of

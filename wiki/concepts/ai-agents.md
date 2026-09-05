@@ -5,7 +5,7 @@ tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
 last_confirmed: "2026-09-04"
 accessed_at: "2026-09-04"
-source_count: 37
+source_count: 38
 relationships:
   - type: instance-of
     target: generative-ai
@@ -261,6 +261,8 @@ The headline correction to the "intern entities" framing: at population scale **
 ## Loop and graph engineering (added 2026-09-01)
 
 Two terms became first-class vendor vocabulary in 2026 and are worth holding as a pair. **Loop engineering** — [[2026-08-25-thurium-wang-google-cloud-four-ways-loop-engineering-fails|"you replacing yourself with a system"]], setting a goal and letting the system retry until it meets it — is the single-agent case, taxonomised from the product side by [[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex|Claire Vo]] into heartbeat / cron / hook / goal loops. **Graph engineering** is what you escalate to when one loop overflows: *"instead of you have one agent doing the one running process, you have an organization chart… you can put loop as part of the graph."* See [[concepts/multi-agent-failure-modes|multi-agent-failure-modes]] for when that escalation is actually justified, and [[Agent Development Kit]] for the framework the vendor material is built on.
+
+**Updated 2026-09-04.** [[2026-09-03-thurium-wang-google-cloud-graph-engineering-101|Google Cloud's *Graph Engineering 101*]] completes the pair into a three-layer nesting stated in one breath — **harness** (*"everything around the model including its tools, memory and guardrails"*) contains the **loop** (*"the cycle of the agent running inside that harness"*) which sits as a node in the **graph** (*"the organization chart"*, of agent nodes and deterministic function nodes, with state passed along the edges). Three patterns come with it — **fan-out**, **join**, **router** — and a definition by contrast: a graph is *engineer-specified* control flow over nodes that *"don't need to know what happened before"*, as opposed to an **agent swarm**, where *"each agent just gets its own personality"* and you *"just throw the problem to them."* The construct now has its own page: [[concepts/graph-engineering|graph-engineering]].
 
 ## Mentioned in
 
