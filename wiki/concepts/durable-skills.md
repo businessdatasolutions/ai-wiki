@@ -4,7 +4,6 @@ aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
 last_confirmed: "2026-08-30"
-accessed_at: "2026-09-02"
 source_count: 43
 relationships:
   - type: contradicts
@@ -16,6 +15,7 @@ relationships:
   - type: depends-on
     target: ai-benchmarks
     via: "measurement methodology — Vantage and similar protocols define new benchmark types for human skills (not model capability)"
+accessed_at: "2026-09-05"
 quality_score: 0.98
 quality_notes: ['2 near-empty section(s)']
 ---

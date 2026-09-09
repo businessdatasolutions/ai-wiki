@@ -5,9 +5,9 @@ aliases: ["LangChain", "LangChain Inc"]
 tags: [langchain, agent-frameworks, agent-runtime, agent-harness, langgraph, langsmith, deep-agents]
 since: 2022
 confidence: 0.9
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 9
+last_confirmed: "2026-09-03"
+accessed_at: "2026-09-03"
+source_count: 10
 relationships:
   - type: published-by
     target: 2026-05-09-chase-agent-development-lifecycle
@@ -74,6 +74,12 @@ This makes LangChain a **vendor whose product taxonomy *is* the wiki's vocabular
 ## Partners
 
 - **[[NVIDIA]]** — joint Deep Agents + OpenShell blueprint ([[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|8 Jul 2026]]), pairing Nemotron 3 Ultra with the Deep Agents harness inside NVIDIA's OpenShell runtime.
+
+## Credited as the origin of *harness*, and told it isn't new (2026-09-03)
+
+[[2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-squads-harness|The GitHub Podcast, S02E02]] is the wiki's first source in which a **competitor's** developer-advocacy team names LangChain, unprompted and from memory, as where the harness vocabulary came from: *"the first time I saw harness and harness engineering defined, I'm pretty sure was Harrison from LangChain… and I think Viv from their team was one of the first people as well to start using that term."* That is [[Harrison Chase]] and Vivek Trivedy ([[2026-03-10-trivedy-langchain-anatomy-of-an-agent-harness|The Anatomy of an Agent Harness]]) — corroboration of the attribution [[concepts/agent-harness|agent-harness]] already holds, arriving from outside the LangChain orbit.
+
+The same host then denies the construct is new, on LangChain's own evidence: *"historically with LangChain you could build an agent and basically you were already building a harness, because you were using this infrastructure where it was developing a small loop and you could add context to that, you could add MCP servers… to me it's very similar to what we already had with just an agent."* Both halves are worth the page. LangChain is credited with **naming** the layer; it is simultaneously used as the proof that the layer predates the name.
 
 ## Mentioned in
 

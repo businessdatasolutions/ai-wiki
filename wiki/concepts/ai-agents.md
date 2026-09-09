@@ -5,7 +5,7 @@ tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
 last_confirmed: "2026-09-09"
 accessed_at: "2026-09-09"
-source_count: 36
+source_count: 40
 relationships:
   - type: instance-of
     target: generative-ai
@@ -15,6 +15,9 @@ relationships:
   - type: uses
     target: react-reasoning-acting
     via: "the reason–act–observe loop at the centre of the agent definition originates in ReAct (2022)"
+  - type: uses
+    target: small-language-models
+    via: "model size is an agent design variable, not a fixed input — the position that most agentic invocations are narrow enough for a small specialised model, with frontier LLMs invoked selectively"
 quality_score: 0.98
 quality_notes: ['2 near-empty section(s)']
 ---
@@ -224,19 +227,42 @@ Nothing in this source is measured; see its scope warning.
 - **Hype vs. capability gap.** RE-Bench shows agents losing to humans at 32-hour budgets. Many enterprise workflows have multi-day horizons. The [[2026-05-07-anthropic-managed-agents-decoupling-brain-hands|Managed Agents post]] partially reframes the gap as **architectural** (context-window saturation, brain/hands coupling) rather than purely capability-based — the brain/hands/session split is precisely the bet that long-horizon weakness is fixable with scaffolding. Open question: how much of the 32-hour gap closes with better orchestration vs. requires better models?
 - **Multi-agent systems are mostly aspirational.** MITTRI/Cisco frames the 3-stage progression as if multi-agent is on a near-term horizon, but production multi-agent systems remain rare. Discount accordingly.
 
+## Model size is a design variable (added 2026-09-04)
+
+Every source above treats "the model" as a given and engineers around it. The [[small-language-models|SLM position]] — [[2025-06-02-belcak-nvidia-small-language-models-future-agentic-ai|Belcak et al. / NVIDIA Research, 2025]], carried to practitioners by [[2026-08-25-sokolenko-pycon-de-demystifying-agentic-ai-small-language-models|Sokolenko at PyCon DE 2026]] — makes the model itself a choice made per invocation.
+
+Its sharpest argument is an inversion of what this wiki already believes about the [[agent-harness|harness]]:
+
+> *"An AI agent is essentially a heavily instructed and externally choreographed gateway to a language model… the underlying large language model that was engineered to be a powerful generalist is, through a set of tediously written prompts and meticulously orchestrated context management, restricted to operate within a small section of its otherwise large pallet of skills."*
+
+If the harness's job is to constrain a generalist down to a narrow behaviour, that constraint is *evidence a specialist would have sufficed*. The corollary is **heterogeneous agentic systems**: any call in an agentic system can pick any model, a model can be a tool called by another model, and the default should be the cheapest model that can serve the call — not the best model available. Sokolenko's version of the same point, put as a question:
+
+> *"Does it really matter to know who the queen of England was in the 1980s in order to make a decision whether to call a data access API? Probably not."*
+
+**The four capabilities that actually matter for an agent** — the cleanest short answer in the corpus, and the reason generalist benchmarks mislead here — are task decomposition, tool calling, glue-code generation, and instruction following. On those four, the claim is that a model of size *x* now matches a generalist of ten times that size. See [[small-language-models]] for how far that claim survives contact with [[2025-07-13-patil-berkeley-function-calling-leaderboard|BFCL]] (short version: it holds on multi-turn tool calling, where the frontier is weak, and not as general parity).
+
+One failure mode this reframes: Sokolenko reports that below roughly 30B parameters, agentic loops *"can never terminate… because the SLMs are incentivized to call as many tools as they can."* If that holds, the runaway-loop failure in [[2026-08-25-thurium-wang-google-cloud-four-ways-loop-engineering-fails|Google Cloud's taxonomy]] is partly a **model-capability threshold**, not purely a harness-design problem. Single-source and unmeasured.
+
 ## Related concepts
 
 - [[agent-harness]] — the runtime engineering layer that wraps a model to make a production agent; where most agent failures actually originate
 - [[generative-ai]] — the substrate; most agents are LLM-based
 - [[foundation-models]] — what agents are typically built on (rented, swappable; the harness is what's owned)
 - [[enterprise-ai-adoption]] — the deployment context
-- [[ai-benchmarks]] — RE-Bench specifically targets agent evaluation; PlanBench tests reasoning that agents need
+- [[ai-benchmarks]] — RE-Bench specifically targets agent evaluation; PlanBench tests reasoning that agents need; [[Berkeley Function Calling Leaderboard|BFCL]] is the standard instrument for the tool-calling half of the agent definition
+- [[small-language-models]] — model size as an agent design variable; SLM-first, LLM-selectively
 
 ## Agent failure, measured (added 2026-08-30)
 
 Three sub-concepts split out of the 30 August 2026 ingest carry the empirical picture that this page previously stated qualitatively: [[multi-agent-failure-modes]] (MAST's **14 failure modes in 3 categories** from 1,600+ traces; CAID's three coordination primitives; and the Data Processing Inequality argument that **single agents win at equal token budgets**), [[agent-fleet-management]] (what running 10–15 in parallel actually requires), and [[agent-oversight-and-delegation]] (**delegation regret** — users object to unauthorised action even when the output is correct, and calibrate trust *per task*, not per agent).
 
 The headline correction to the "intern entities" framing: at population scale **46.41% of agent-proposed code fixes are rejected** ([[2026-06-11-abujadallah-rejection-of-agentic-pull-request-fixes]]), and shipping agents including Codex and Claude Code exhibit **explicit reward hacking** ([[2025-11-26-gabor-evilgenie-reward-hacking-benchmark]]) — so the intern analogy needs the clause that this intern will sometimes optimise your grading rather than your task.
+
+## Loop and graph engineering (added 2026-09-01)
+
+Two terms became first-class vendor vocabulary in 2026 and are worth holding as a pair. **Loop engineering** — [[2026-08-25-thurium-wang-google-cloud-four-ways-loop-engineering-fails|"you replacing yourself with a system"]], setting a goal and letting the system retry until it meets it — is the single-agent case, taxonomised from the product side by [[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex|Claire Vo]] into heartbeat / cron / hook / goal loops. **Graph engineering** is what you escalate to when one loop overflows: *"instead of you have one agent doing the one running process, you have an organization chart… you can put loop as part of the graph."* See [[concepts/multi-agent-failure-modes|multi-agent-failure-modes]] for when that escalation is actually justified, and [[Agent Development Kit]] for the framework the vendor material is built on.
+
+**Updated 2026-09-04.** [[2026-09-03-thurium-wang-google-cloud-graph-engineering-101|Google Cloud's *Graph Engineering 101*]] completes the pair into a three-layer nesting stated in one breath — **harness** (*"everything around the model including its tools, memory and guardrails"*) contains the **loop** (*"the cycle of the agent running inside that harness"*) which sits as a node in the **graph** (*"the organization chart"*, of agent nodes and deterministic function nodes, with state passed along the edges). Three patterns come with it — **fan-out**, **join**, **router** — and a definition by contrast: a graph is *engineer-specified* control flow over nodes that *"don't need to know what happened before"*, as opposed to an **agent swarm**, where *"each agent just gets its own personality"* and you *"just throw the problem to them."* The construct now has its own page: [[concepts/graph-engineering|graph-engineering]].
 
 ## Mentioned in
 

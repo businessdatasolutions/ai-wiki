@@ -6,9 +6,8 @@ derived_from: [organizational-frameworks-for-ai-adoption]
 opened: 2026-04-28
 closed: 2026-05-05
 last_refreshed: "2026-07-15"
-confidence: 0.90
+confidence: 0.9
 last_confirmed: "2026-07-15"
-accessed_at: "2026-09-02"
 source_count: 20
 relationships:
   - type: instance-of
@@ -20,6 +19,7 @@ relationships:
   - type: supports
     target: syntheses/harness-thinning-what-persists
     via: "sibling synthesis from the same 2026-07-15 video batch — the runtime-engineering (harness) lens and the organizational-frameworks lens both independently land on 'process redesign / organizational design is the load-bearing decision, not the technology'"
+accessed_at: "2026-09-05"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---

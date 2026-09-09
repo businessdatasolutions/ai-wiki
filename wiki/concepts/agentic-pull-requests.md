@@ -5,7 +5,7 @@ aliases: ["agentic pull requests", "agentic PRs", "agent-authored PRs", "Agentic
 confidence: 0.85
 last_confirmed: "2026-08-30"
 source_count: 8
-accessed_at: "2026-08-30"
+accessed_at: "2026-09-01"
 tags: [agentic-pr, aidev, auto-merge, code-review, rejection-rate, risk-scoring, msr-2026, merge-queue, review-bottleneck, technical-debt]
 relationships:
   - type: part-of

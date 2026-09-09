@@ -3,9 +3,9 @@ type: concept
 title: Agent fleet management
 aliases: ["agent fleet management", "managing agent fleets", "agent manager", "human as agent manager", "parallel agents", "agent orchestration at scale"]
 confidence: 0.75
-last_confirmed: "2026-08-30"
-source_count: 6
-accessed_at: "2026-08-30"
+last_confirmed: "2026-09-04"
+source_count: 8
+accessed_at: "2026-09-05"
 tags: [agent-fleet, parallelism, cloud-agents, isolated-workspaces, decision-fatigue, priority-queue, span-of-control, delegation, playbooks, token-economics]
 relationships:
   - type: part-of
@@ -62,6 +62,18 @@ And on self-improving product loops: *"we're nowhere near any frontier model hav
 ## Economics
 
 [[2026-07-25-darroman-profitable-founder-managing-ai-agents-25-prs-a-day]] is the only source in the corpus with unit economics attached: **$20,000/month current spend**, judged unsustainable, against **~$5,000/month per engineer-equivalent** as the target. The route is **model routing** — frontier models for hard reasoning, fine-tuned models for repetitive work — enforced through **parent–child agent patterns**. Per-automation costs: ~$60 per end-to-end signup run, ~$5 per quality-grading session.
+
+## Squads and fleets are the same primitive under two names (added 2026-09-03)
+
+[[2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-squads-harness|The GitHub Podcast, S02E02]] supplies a vocabulary note this page needs, because the corpus has been accumulating names for one thing. GitHub's own Copilot CLI ships **both** — *squads* (a slash command that puts several models on the same task) and *fleets* (parallel sub-agents) — and the hosts, who work there, are visibly unsure which is which on air. Their resolution is the useful part:
+
+> *"Most things in AI, there are no standardizations — but the goal of leveraging something like a squad or a fleet, or whatever they call it in whatever tool, is to have the work done in some type of parallelization."*
+
+Their working definition of a squad is **role specialisation inside a loop** — *"one agent that's dedicated to the planning part, one dedicated to checking and testing, one dedicated to acting and implementing, and one for reviewing"* — which is the same decomposition [[2026-03-26-osmani-code-agent-orchestra-multi-agent-coding|Osmani's orchestra]] and [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen's team structures]] describe. **Three vendors, three nouns, one primitive.** Treat *squad*, *fleet* and *orchestra* as tool-local labels for role-specialised parallelism, and resolve them to this page rather than proliferating sub-concepts.
+
+> **Correction (2026-09-04).** This note originally counted *graph engineering* as a fourth name for the same primitive, on the strength of [[2026-08-25-thurium-wang-google-cloud-four-ways-loop-engineering-fails|Google Cloud's]] escalation-from-loops framing. [[2026-09-03-thurium-wang-google-cloud-graph-engineering-101|The follow-up video]] from the same team makes clear that **graph does not belong in this cluster**: a graph is engineer-specified control flow over history-free nodes, whose defining payoff is determinism, and it is explicitly contrasted with *agent swarms* — which is where a squad of role-specialised agents actually sits. Parallelism (fan-out) is one *pattern inside* a graph, not what a graph is. The three-name resolution above stands; *graph* now resolves to [[graph-engineering]].
+
+The episode adds no evidence and does not move this page's confidence: it is three developer advocates describing their own product's terminology, with no measurement of whether the parallelism pays.
 
 ## Related concepts
 

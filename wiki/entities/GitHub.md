@@ -5,10 +5,10 @@ aliases: ["GitHub", "GitHub Inc.", "github.com"]
 tags: [github, microsoft-subsidiary, github-copilot, copilot-coding-agent, agent-hq, github-advanced-security, secret-scanning, code-scanning, copilot-autofix, state-of-the-octoverse, developer-platform, agentic-devops, version-control]
 parent: "[[Microsoft]]"
 website: "https://github.com"
-confidence: 0.8
-last_confirmed: "2026-06-23"
-accessed_at: "2026-06-23"
-source_count: 2
+confidence: 0.85
+last_confirmed: "2026-09-03"
+accessed_at: "2026-09-03"
+source_count: 3
 relationships:
   - type: part-of
     target: Microsoft
@@ -39,6 +39,14 @@ Announced at **GitHub Universe** (late 2025). A centralized surface to **monitor
 ### GitHub Advanced Security
 
 Secret scanning + code scanning, now with **Copilot autofix** (*"found means fixed"* — a generate-fix button on a detected vulnerability). Keynote stat: GitHub secret protection **blocked 4.4 million credential leaks in 2024**. The keynote's worked example of why this matters in the vibe-coding era: AI agents (Claude + Codex) shipped a URL-injection vulnerability that Advanced Security caught — see [[vibe-coding]].
+
+### The GitHub Podcast, and "Copilot itself is the harness"
+
+[[2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-squads-harness|The GitHub Podcast, S02E02]] (2 Sep 2026) is the wiki's second GitHub-produced source and its first from the **developer-advocacy** rather than the product side — Cassidy Williams (senior director of developer advocacy) with Marlene Mhangami and Gwyneth Peña-Siguenza. Two things from it belong on this page.
+
+**GitHub states its own position on the harness boundary.** Worked out live: *"we have the GitHub Copilot harness for agents to run on code bases… GitHub Copilot itself is the harness… GitHub Copilot is the harness for the SDK to run agents with various models."* That puts GitHub alongside [[Anthropic]], [[OpenAI]] and [[Google]] in describing its product as the **harness** and the model as the swappable part underneath — see [[concepts/agent-harness|agent-harness]]. It also names a **GitHub Copilot SDK** as the programmatic entry point, and **squads** and **fleets** as shipping Copilot CLI features (see [[concepts/agent-fleet-management|agent-fleet-management]]).
+
+**The advocacy team is openly behind on the vocabulary.** All three hosts disclaim confidence in the terms they are explaining, and the episode is candid about it: *"do I know anything?"* Worth recording on a vendor page, because it is a vendor's own developer-education function reporting that the terminology is outrunning the practice — including its own products' terminology.
 
 ### State of the Octoverse
 

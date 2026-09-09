@@ -5,9 +5,9 @@ aliases: ["Hugging Face", "HuggingFace", "🤗"]
 tags: [hugging-face, open-source-ai, open-weight-models, model-hub, datasets, ai-builders, clem-delangue, nemotron, reachy, agentic-evals, github-for-ai]
 since: 2016
 confidence: 0.75
-last_confirmed: "2026-07-22"
-accessed_at: "2026-07-22"
-source_count: 2
+last_confirmed: "2026-09-03"
+accessed_at: "2026-09-03"
+source_count: 3
 relationships:
   - type: supports
     target: 2026-07-08-jensen-huang-why-companies-need-open-agent-systems
@@ -41,6 +41,12 @@ Hugging Face is the wiki's clearest institutional embodiment of the **[[open-sou
 - [[enterprise-ai-adoption]] — the frontier-experiment → owned-production adoption flow; half the Fortune 500 as users.
 - [[ai-benchmarks]] — the open-evals / agentic-evaluation stack (GAIA 2, LightEval, Open LLM Leaderboard).
 - [[dynamic-capabilities]] — `digital-scouting`, `balancing-digital-portfolios`, `navigating-innovation-ecosystems`, `business-model`, and `external-triggers` per the interview's W&W tags.
+
+## Tao — an agent that teaches you to use other agents (2026-09-03)
+
+[[2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-squads-harness|The GitHub Podcast, S02E02]] closes on open-source picks, and Mhangami's is **Tao**: *"a project from Hugging Face… a small Python project that is supposed to be an assistant that can help you learn more about coding agents. So it's a small agent, it's open source, it's built with Python, that mainly has information in it about using other coding agents."*
+
+A minor mention, recorded because the category is not otherwise represented in the corpus: an open-source agent whose payload is **onboarding material for agentic tooling** rather than a capability of its own. It sits alongside this page's [[2026-03-20-huggingface-agentic-evaluations-workshop|agentic-evaluations workshop]] as Hugging Face's developer-education output rather than its model-hosting output. No detail beyond the description above is in the source; treat the project's scope as unverified.
 
 ## Mentioned in
 

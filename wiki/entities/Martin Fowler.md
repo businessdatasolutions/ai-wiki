@@ -7,7 +7,7 @@ affiliation: "[[Thoughtworks]] (Chief Scientist)"
 role: "Chief Scientist at Thoughtworks; author and speaker on software design, refactoring, patterns, and agile"
 confidence: 0.8
 last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
+accessed_at: "2026-09-05"
 source_count: 5
 relationships:
   - type: part-of

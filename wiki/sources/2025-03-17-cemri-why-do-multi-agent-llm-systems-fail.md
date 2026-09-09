@@ -60,7 +60,8 @@ Failures were analysed across models (GPT-4, Claude 3, Qwen2.5, CodeLlama) and t
 ## Linked entities and concepts
 
 - Concepts: [[concepts/multi-agent-failure-modes|multi-agent-failure-modes]], [[concepts/ai-agents|ai-agents]], [[concepts/agent-harness|agent-harness]], [[concepts/agent-development-lifecycle|agent-development-lifecycle]], [[concepts/agentic-engineering|agentic-engineering]]
-- **Dangling** (single-source mention, deferred): Mert Cemri, Melissa Z. Pan, Shuyi Yang, Lakshya A. Agrawal, Bhavya Chopra, Rishabh Tiwari, Kurt Keutzer, Aditya Parameswaran, Dan Klein, Kannan Ramchandran, Matei Zaharia, Joseph E. Gonzalez, Ion Stoica
+- Entities: [[UC Berkeley]] (Sky Computing Lab / BAIR), [[Ion Stoica]], [[Joseph E. Gonzalez]] — the latter two **promoted on 2026-09-04** by the second-source rule, when [[2025-07-13-patil-berkeley-function-calling-leaderboard|BFCL]] entered the corpus with the same two senior authors from the same lab.
+- **Dangling** (single-source mention, deferred): Mert Cemri, Melissa Z. Pan, Shuyi Yang, Lakshya A. Agrawal, Bhavya Chopra, Rishabh Tiwari, Kurt Keutzer, Aditya Parameswaran, Dan Klein, Kannan Ramchandran, Matei Zaharia
 
 ## Scope and reliability
 

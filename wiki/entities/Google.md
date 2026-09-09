@@ -5,9 +5,9 @@ aliases: ["Google", "Google LLC", "Alphabet (operating subsidiary)", "Google for
 tags: [google, big-tech, hyperscaler, ai-lab, foundation-models, gemini, google-cloud, google-research, google-brain, gemini-api, file-search, multimodal-rag, notebooklm, flow, veo, ai-product-management, bfloat16, coral-edge-tpu, tensorflow, edge-ml]
 since: 1998
 confidence: 0.90
-last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
-source_count: 12
+last_confirmed: "2026-09-01"
+accessed_at: "2026-09-01"
+source_count: 13
 relationships:
   - type: published-by
     target: 2026-06-12-mcveety-hormati-google-cloud-open-knowledge-format

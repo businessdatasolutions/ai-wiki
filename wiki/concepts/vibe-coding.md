@@ -4,7 +4,7 @@ aliases: ["vibe coding", "Vibe coding", "vibe-coding", "vibe-code", "v-coding"]
 tags: [vibe-coding, agentic-engineering, software-3.0, ai-agents, accessibility, hobbyist-coding, karpathy, pm-tooling, prototype-as-influence-tool, december-2025-phase-change, replit, ai-native-builders, post-prompting]
 confidence: 0.95
 last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
+accessed_at: "2026-09-05"
 source_count: 23
 relationships:
   - type: instance-of
