@@ -6,7 +6,7 @@ tags: [babson, mit, human-in-the-loop, performative-oversight, organizational-ca
 role: "Distinguished Professor of IT and Management, Babson College; MIT research affiliate"
 confidence: 0.75
 last_confirmed: "2026-07-15"
-accessed_at: "2026-07-15"
+accessed_at: "2026-09-02"
 source_count: 2
 ---
 
