@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
-source_count: 62
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 63
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -468,3 +468,15 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "automation") OR contains(tags, "augmentation")
 SORT file.name ASC
 ```
+
+## The authors' own conclusion: collaboration, not substitution — and an open question about whether it helps (added 2026-09-09)
+
+[[2026-03-11-allen-mcdonald-how-well-can-ai-do-strategy-simulation-benchmark|Allen & McDonald (*Strategy Science*, 2026)]] measure LLMs making strategic decisions **unaided**, which is the automation end of this page's spectrum — and having done so, land firmly on the augmentation side.
+
+Their reasoning is worth keeping because it is about capability gaps rather than preference: current systems *"lack physicality, social presence, agency, and long-term task management, making them ill suited for real-world strategic automation,"* so *"in practice, applications will take the form of human–AI collaboration rather than full substitution."* Their managerial framing is likewise conditional — some models can now *"augment decisions involving technology or market transitions, allocation of scarce R&D budgets across competing opportunities, and the balance between exploitation and exploration"* — but they name the caveat in the same breath: current frontier models are *"rigid and risk averse, consistently favoring investment in the core business while avoiding emerging technologies,"* and *"any individual model may carry unknown risks."*
+
+**The open question they raise is the one this page most needs answered**, and they are honest that they cannot answer it: *"Would a current frontier model such as GPT-5 perform more effectively when guided by a skilled strategist providing well-framed prompts, or would it simply replicate the same failure modes it displays when used alone?"*
+
+There is a partial and discouraging clue in their own prompt experiment. Told explicitly to attend to the emerging technology, the frontier models improved only **marginally** — so a skilled human's steer moved them less than one would hope. And the same intervention made the *best* model significantly **worse**: o3-mini overcommitted, sacrificed core profitability and was fired earlier. That is a warning against the comfortable assumption that augmentation is strictly safer than automation. Steering is itself an intervention with a failure mode, and on this evidence **the right amount of instruction is model-dependent** — which makes a general augmentation practice harder to write down than the framing usually implies.
+
+Their suggested hedge is ensembles or triangulation across models rather than reliance on any single one.

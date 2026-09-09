@@ -3,9 +3,9 @@ type: concept
 aliases: ["ReAct", "Reason+Act", "reason-act-observe loop", "reasoning and acting", "ReAct framework", "ReAct paradigm"]
 tags: [react, reasoning-and-acting, agentic-loop, chain-of-thought, tool-use, llm-agents, interpretability, human-in-the-loop, foundational]
 confidence: 0.85
-last_confirmed: "2026-06-12"
-accessed_at: "2026-06-12"
-source_count: 3
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 5
 relationships:
   - type: authored-by
     target: Shunyu-Yao
@@ -73,3 +73,13 @@ What ReAct established as a **prompting trick on a frozen model** in 2022 is now
 - **Is ReAct still "the" agent loop, or a 2022 special case?** The reason–act–observe cycle remains the load-bearing abstraction in every 2026 wiki source on agents, but modern harnesses add layers ReAct didn't theorise — context engineering, constraints/contracts middleware, telemetry-as-training ([[agent-harness]]). Open question: how much of contemporary agent reliability is *ReAct the paradigm* vs *everything the harness wraps around it*. The wiki's current position: ReAct named the loop; the harness owns the reliability.
 - **Reasoning vs acting — which carries the weight?** ReAct's ablations show act-only and reason-only both underperform the interleaving, but the relative contribution is task-dependent (dense thoughts for QA, sparse for decision-making). No single source in the wiki adjudicates a general split.
 - **Source independence caveat.** Two of the three citing sources (the paper and its Google Research blog) are the *same* work in different registers; only the [[2026-06-10-google-cloud-tech-ai-agents-explained-first-agent|2026 ADK tutorial]] is independent corroboration. Confidence reflects the result's foundational status and four years of downstream adoption rather than three independent replications.
+
+## Where ReAct sits in the harness genealogy, and a 2026 vendor implementation (added 2026-09-09)
+
+**Placed in sequence.** [[2026-09-07-yc-paper-club-why-the-harness-matters-more-than-the-model|YC Paper Club's five-minute history of harnesses]] locates ReAct as **one rung among several** rather than the origin of agentic behaviour — after tool use (WebGPT, Toolformer), after CRUD-on-context (MemGPT) and skills (Voyager), and grouped with **Self-Refine** and **Reflexion** as the family that added *the revision loop*: take an action, send it to an internal evaluator or to the real environment for a reward signal, and revise. That framing is a useful corrective to reading ReAct as the beginning of the story; its specific contribution was closing the loop between reasoning and revision, on top of an action space others had opened.
+
+**And implemented, in a modality ReAct never addressed.** [[2026-09-01-grootendorst-agentic-video-understanding-in-gemini|Grootendorst's Gemini explainer]] describes agentic video understanding in ReAct's own vocabulary, without citing it: *"the model first thinks about which tools it might want to use to process this video… It runs those tools — I mean, this is an agentic loop — and it gets an observation in return, frames for instance. And this information is then given back to the model where it can decide to do another loop. And then we have this very traditional agentic loop of thinking, acting, observing, and looping until it finally arrives at the answer."*
+
+The tools are perceptual rather than informational — `get_transcript`, `get_frames` at a model-chosen frames-per-second, `get_audio` — and the trajectory is coarse-to-fine: pull the cheap transcript to find roughly where the answer lives, then re-sample that region at higher frame rate. The payoff is ReAct's own: **grounding the answer in fetched observations rather than in what the model can infer from a fixed dump of context.** The claimed result is that token cost falls *and* accuracy rises, because attention lands on query-relevant material — the vendor's version of ReAct's grounding argument, though offered without a benchmark.
+
+The obvious failure mode is unaddressed and worth tracking: a coarse-to-fine loop that begins with the transcript degrades when the salient content is unspoken.

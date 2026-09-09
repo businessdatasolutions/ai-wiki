@@ -3,9 +3,9 @@ type: concept
 aliases: ["LLM Wiki", "LLM-Wiki", "llm wiki", "Karpathy's LLM Wiki", "LLM-maintained wiki", "compounding wiki"]
 tags: [llm-wiki, knowledge-compilation, three-layer-architecture, ingest-query-lint, agent-memory, claude-md, knowledge-compounding, agentic-knowledge-base]
 confidence: 0.93
-last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
-source_count: 9
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 10
 relationships:
   - type: part-of
     target: agent-harness
@@ -224,3 +224,23 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "llm-wiki")
 SORT file.name ASC
 ```
+
+## The pattern in production at 220,000 pages (added 2026-09-09)
+
+[[2026-08-06-garry-tan-own-your-intelligence|Tan's Startup School keynote]] is the corpus's first **first-party account of this pattern running at scale outside a spec**. GBrain is described as ~**220,000 markdown pages** covering 25 years — every email, meeting, note, photo and draft, *"compiled mostly by agents, curated by agents, searched for by agents"* — sitting beneath an agent-coding framework that is *"mostly skill files plus a browser that the agents can drive. Pages of English and a way to act on the world. Markdown, not magic."*
+
+The reason it belongs on this page rather than only on [[agent-harness]] is that **Tan independently states the three disciplines this wiki's own schema encodes**, and states them as the difference between a knowledge base that compounds and one that rots:
+
+> *"A brain nobody curates is a garbage dump with great search. Retrieval will surface a stale fact with total confidence. A bad skill file encodes a bad process forever. So the primitive is memory plus hygiene: **provenance on every fact**, **contradiction checks when new information collides with old**, and **a librarian whose actual job is pruning**. Treat the brain like production infrastructure and it compounds. Treat it like a dumping ground and you get a very confident agent that is wrong in ways nobody can trace."*
+
+Those map one-to-one onto the schema this repository runs on: *citations beat assertions*; the mandatory `## Debates and supersession` section and the supersession protocol; and the maintenance argument that is the whole reason the pattern needs an agent rather than a human. The convergence was reached independently and is worth recording as evidence that the pattern's failure modes are intrinsic rather than local to one implementation.
+
+Three further claims sharpen this page:
+
+- **The library-plus-librarian split.** An agent holds ~a million tokens, about a thousand pages — *"a lot, and also very little. Your life is not three books. Your life is a library."* So the operative design question is not capacity but selection: *"who decides which three books are open on the desk. And that's what a brain is… the library plus the librarian."* This is the retrieval layer stated as an architectural role rather than a technique, and it is why the wiki's [[is-rag-dead|RAG synthesis]] concludes what it does.
+- **"Is this just RAG?"** — answered directly: *"Sure, and Postgres is just B-trees. Retrieval is the primitive, not the product. The hard part is everything around it. What gets written down in the first place? How it gets enriched and linked, what gets promoted to hot memory versus filed as cold reference, who arbitrates when two facts disagree. Retrieval is easy. **Being worth retrieving from is the product.**"*
+- **The compounding curve, including the bad part.** Week one *"honestly, it's a toy"*; week four the flywheel catches; week twelve *"a library that answers before you finish asking."* *"Most people who try this will quit in week two, which is precisely why the ones who don't feel like they're cheating by week 12."* This is the same J-curve [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum]] reports from inside one job, and it is the mechanism by which the pattern is abandoned just before it pays.
+
+The closing case is the smallest instance and the most pointed: a father built **80,000 markdown files** on his son's rare epilepsy — every specialist visit, paper, seizure log and drug interaction, indexed and cross-linked — so that when a new doctor proposes something he knows in minutes whether it has been tried. *"A father, a laptop, and a library."*
+
+**What is not answered**, and it is the operationally interesting question for any wiki built this way: how contradiction checks are actually run at 220,000 pages, what fraction of the corpus is agent-generated versus source material, and how pruning decisions are audited. The disciplines are named; the mechanisms are not.

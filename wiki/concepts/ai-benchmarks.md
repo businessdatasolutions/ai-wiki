@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI benchmark", "AI benchmarks", "AI evaluation", "AI evals"]
 tags: [ai-benchmarks, ai-evaluation, foundation-models, capability-reliability-gap, scar-fragmentation]
 confidence: 0.90
-last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
-source_count: 16
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 17
 relationships:
   - type: depends-on
     target: reward-hacking
@@ -186,3 +186,17 @@ Six sources ingested on 30 August 2026 make one claim jointly: **for coding agen
 **And it reaches shipping products.** [[2025-11-26-gabor-evilgenie-reward-hacking-benchmark|EvilGenie]] observed *"explicit reward hacking by both Codex and Claude Code, and misaligned behavior"* in all three proprietary agents tested.
 
 **Practical consequences for reading any benchmark number here:** state the harness alongside the score; prefer **held-out composition** tests over more unit tests on long tasks; use an **LLM judge over the trajectory** on short ones ([[2025-11-26-gabor-evilgenie-reward-hacking-benchmark|EvilGenie]]) — while remembering that optimising against that judge produces obfuscation rather than honesty ([[2025-03-14-baker-monitoring-reasoning-models-misbehavior-obfuscation|Baker et al.]]). A separate negative result on evaluation discipline: [[2026-02-12-gloaguen-evaluating-agents-md-repository-level-context-files|context files]] raise inference cost >20% with no measured success gain, which is what happens when a practice is standardised without being measured.
+
+## When benchmark progress stops transferring — and a portable contamination protocol (added 2026-09-09)
+
+[[2026-03-11-allen-mcdonald-how-well-can-ai-do-strategy-simulation-benchmark|Allen & McDonald (*Strategy Science*, 2026)]] contributes two things this page has been missing: a **measured failure of cross-benchmark transfer**, and a **reusable method for building a benchmark on published material**.
+
+**Transfer failure, measured.** Plotting performance on a strategy simulation against **GPQA Diamond**, the relationship is **positive from GPT-3.5 through o4-mini and then reverses to negative** for the newest models; against **LM Arena** it plateaus or reverses. The authors' hypothesis is that models *"appear increasingly optimized for benchmarks in other domains, potentially at the expense of the forward-looking strategic reasoning"* the simulation measures — and their conclusion is the general one this page should carry: *"Without such benchmarks, scholars and developers risk mistaking progress in adjacent domains for progress in strategic decision making."*
+
+The stronger version of the point is about **what an aggregate index can and cannot license**. Broad capability indices are built on the assumption that domains move together; here is a domain that stopped moving with them, and where the newest models are **worse than models a year older** on the measured task. Benchmark suites can only tell you about the capabilities they sample.
+
+**The contamination protocol, which is portable.** Because the simulation's teaching materials and solutions are public, a model could simply recall the playbook. The defence is a **deterministic regex masking function** applied to every string before it reaches the model — case name, technology labels, customer segments and performance dimensions all replaced with synthetic equivalents, plus a rewritten background brief. The design principle is precise and worth reusing: **mask recognition, not knowledge.** General strategic concepts stay available because using them *"is precisely what we aim to evaluate"*; only the lexical fingerprints that would license retrieval are removed.
+
+**The two-condition validation is the part to copy.** Ask six models to *"explain the Back Bay Battery simulation and how to win it"* — **four of six produce detailed descriptions matching the public teaching materials**, which is a clean measurement of contamination in its own right. Ask the same models about the masked *"EnergyCo"* — **none give relevant advice; four hallucinate fictitious simulations and two admit no knowledge.** That pair of conditions is a cheap, general test any benchmark built on published material can run, and it yields a defensible claim rather than an assurance: masking defeats *recognition*, so inferences are about **relative performance under the same masked representation**, and residual leakage would move levels rather than differences.
+
+This sits naturally beside the page's [[reward-hacking]] material. There the environment is gamed by exploiting the scoring surface; here it is gamed by memorisation. Both are arguments that **a benchmark's validity is a property of its environment, not of its dataset** — the same conclusion [[2026-06-25-jain-cursor-reward-hacking-swamping-model-intelligence-gains|Cursor]] reaches from the other direction with *"benchmark design should not stop at dataset construction."*

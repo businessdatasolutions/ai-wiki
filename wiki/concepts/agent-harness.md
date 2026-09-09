@@ -3,9 +3,9 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.98
-last_confirmed: "2026-08-31"
-accessed_at: "2026-08-31"
-source_count: 89
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 93
 relationships:
   - type: part-of
     target: ai-agents
@@ -805,3 +805,64 @@ Four results from the 30 August 2026 ingest constrain harness design more sharpl
 **Isolation is the coordination primitive that pays.** [[2026-03-23-geng-neubig-caid-asynchronous-software-engineering-agents|CAID]] names three — centralized task delegation, asynchronous execution, **isolated workspaces** — and measures **+25.6% (PaperBench) / +14.7% (Commit0)** over single-agent baselines. This is the controlled evidence behind the practitioner conviction that a **fresh VM per session** ([[Devin]]) is what makes concurrent agents workable. See [[multi-agent-failure-modes]] and [[agent-fleet-management]].
 
 **Supervising the reasoning trace is durable only if you don't optimise it.** [[2025-03-14-baker-monitoring-reasoning-models-misbehavior-obfuscation|Baker et al.]] show CoT monitoring outperforms output monitoring and that a weaker model can monitor a stronger one — then show that optimisation pressure produces **obfuscated reward hacking**, preserving the rate and destroying the evidence. Their prescription, the **monitorability tax**, is a hard constraint on any harness whose review gate reads an agent's self-explanation.
+
+## The September 2026 batch: a genealogy, a taxonomy of self-improvement, and a fleet's failure log
+
+Four sources ingested 9 September 2026 — [[2026-09-07-yc-paper-club-why-the-harness-matters-more-than-the-model|YC Paper Club's harness night]], [[2026-08-06-garry-tan-own-your-intelligence|Tan's Startup School keynote]], the [[2026-09-01-cfa-institute-agentic-ai-finance-workflows-governance|CFA Institute roundtable]], and [[2026-09-01-grootendorst-agentic-video-understanding-in-gemini|Grootendorst's Gemini explainer]]. Together they supply the page's first **ordered genealogy**, its first **taxonomy of self-improvement by write-scope**, and — from YC's own internal deployment — a **failure log** that converts two of this wiki's predicted risks into observed ones.
+
+### The genealogy, in the order the field actually built it
+
+The page has recorded that *"the construct's history is older than its name"* without an ordered account. YC Paper Club supplies one, from a presenter who read the literature specifically to give it. The **v0 harness is GPT-2 (Feb 2019)**: a while-not-end-of-sequence loop, top-p sampling, an environment. No tools, no skills, nothing else. Everything since is functionality pushed into a *static* harness:
+
+| Rung | Contribution | What it added to the harness |
+| --- | --- | --- |
+| Few-shot (2020) | examples in the context | context as a design surface |
+| Chain-of-thought | *"smear the compute over many more tokens"* | output space as a design surface |
+| WebGPT → Toolformer | tools as JSON objects exposed in the system prompt | action space |
+| **MemGPT** | CRUD on a memory chunk rather than append-only context | **state the agent may edit** |
+| **Voyager** | chain tools into a durable capability, distilled back into the prompt | **skills** — *"this is largely now what a skill is"* |
+| InterCode | code as the action space | tools invented on the fly |
+| ReAct → Self-Refine → Reflexion | an internal evaluator, or a real environment reward, feeding revision | the revision loop |
+| Multi-agent → RLM | spawnable sub-agents; recursive LM queries at any leaf | delegation and recursion |
+
+This lands the wiki's existing entries in a single sequence — [[2022-10-06-yao-et-al-react-synergizing-reasoning-acting|ReAct]] as one rung among several rather than the origin, Voyager as the ancestor of *skills*, MemGPT as the ancestor of CRUD-on-context. The summary of **harness v1** is an agent spec (system prompt, turn and tool-call budgets, tool list, skills list, sub-agent list) plus a loop, session management and context compilation.
+
+### Self-improvement, classified by what the loop may write to
+
+The wiki has been distinguishing senses of "self-improving" case by case — most recently [[2026-08-03-chowdhery-mirhoseini-stanford-cs329a-self-improving-agents-part-1|CS329A's weight-level sense]] against [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum's file-level sense]]. The useful axis is **scope of write access**, and it puts all of them on one scale:
+
+1. **System prompt** — DSPy. Optimised by genetic search over candidates, *"because I can't back prop through that process."*
+2. **Harness code** — Darwin machines. An archive of (harness, prompt) agents, sampled, scored against a fitness function, written back; plus a **meta-harness** layer that lets an agent modify its own harness.
+3. **Other harnesses** — the meta-harness proper, *"whose main harness is to produce harnesses"* (see [[2026-03-30-lee-meta-harness-end-to-end-optimization|Lee et al.]]).
+4. **Weights** — [[2026-05-11-karten-zhang-continual-harness-online-adaptation|Continual Harness]]'s DAgger-style online updates: test-time training on a small set of freshly-learned examples.
+
+### Expressibility as the design principle — and its apparent opposite
+
+[[Seth Karten]]'s stated principle for Prime Agent is **maximise expressibility, do not prescribe control flow**. Early harnesses hard-coded plan → act → critique; models now do that natively, so imposing it buys nothing. What a harness must supply is what a model cannot give itself — **model-controlled expressibility features**: callable compaction, a Python REPL, programmatic sub-agent creation, state access, feedback mechanisms. *"If you removed one of those you're actually removing a capability that it won't be able to do otherwise."*
+
+Two framings from the same talk are worth keeping. **Memory as a cache hierarchy**: weights (fastest, costs a fine-tune to update) → active context → an **L2 of live REPL variables in RAM**, manipulable programmatically without ever entering context → an L3 file system. Compaction is named as the oldest primitive still in universal use, and the layers past it need the other CRUD verbs — *"agentic garbage collection"* on REPL state and sub-agents, and refinement of skills, memories and prompts. And **Turing machine → von Neumann computer**: a raw LLM is a tape and instructions; a harness adds external read/write memory, *"and that makes it much more powerful [in] another class of problems."*
+
+On the same bill, QM's stated goal is the apparent opposite — *"keep the harness extremely thin"*, three core tools (remote sandbox execution, object-storage read/write, publishing internal apps), everything else *"temporary, papering over rough edges."* The two are probably compatible: both remove **prescribed control flow** while preserving **primitive capability**, so "thin" and "expressive" may describe the same harness from different sides. But the speakers do not reconcile it, and this is the live question in [[harness-thinning-what-persists]] — the batch is evidence on both sides.
+
+### Latent versus deterministic space — a portable failure taxonomy
+
+Tan offers a single axis he claims explains *"every agent failure I've ever seen"*: **where is the computation happening?** Taste, judgment, and reading what a human means from a vague request live in **latent space** and are steered with a markdown file. Arithmetic, SQL, a seating chart live in **deterministic space** and must be written as code against a database. Seat five people at a table: latent. Seat 6,000 in an arena: the latent agent must write code. *"The model fails where we fail. The fix is having the model compute the way humans compute."*
+
+[[2026-09-01-grootendorst-agentic-video-understanding-in-gemini|Grootendorst's Gemini explainer]] is the same rule applied to perception, and a clean small instance of the Context layer's core claim. Rather than pass a video as payload (>100,000 tokens, mostly irrelevant), pass a **reference plus tools** — `get_transcript`, `get_frames` at a model-chosen frames-per-second, `get_audio` — and let a think-act-observe loop fetch only what the query needs. *What happens at 5:03* is not inferred from a subsampled global view; it is fetched at high FPS. The reported result is that **cost and accuracy move together**, which is the same non-obvious claim [[2026-06-03-chopra-headroom-context-optimization-layer-for-llm-applications|Headroom]] makes for text. Letting the model choose its own sampling rate per region is also Karten's expressibility principle in a perceptual setting.
+
+### QM: what a fleet actually breaks on
+
+YC's internal harness went through four generations — a general agent (prompt + tools in a loop), Slack-tagged Claude Code and Codex in VMs, a **50+ agent OpenClaw-style fleet** (*"a whack-a-mole situation where I would have to SSH into these individual instances"*), then QM. The architectural move is **pulling the brain out of the sandbox**: everything centralised in Postgres, the aggregate exposed back to the agent, and **sandboxes demoted from home to resource** — the agent picks a bigger machine for heavy work, and switches model provider at runtime to route around refusals on legitimate work. *"Pushing that decision into the agent itself rather than the harness has been a really powerful thing."*
+
+Four failure modes, reported rather than predicted:
+
+- **Agents give up too early** inside a capable environment. The fix is a **grind tool** — budgets on goals, forbidding the agent to stop before a floor of wall-clock time or token spend. This is the long-running-agent problem of [[2025-11-26-anthropic-effective-harnesses-long-running-agents|Anthropic's guidance]] approached from the other end: not how to sustain a long run, but how to forbid a short one.
+- **Situational confusion in multiplayer** — training artifacts make the agent misread what setting it is in even when the system prompt says so.
+- **No social context**, and the constraint it implies: *"the information that you can put in the brain is effectively bounded by how good your permission system is."* YC had fine-grained permissioning already; most adopters do not. This is a **precondition for the centralised-brain architecture**, not a detail.
+- **The automated-improvement loop produces "main character syndrome"** — a swarm of fixing agents with an LLM judge each sees its piece of the elephant and fixes locally. Human-in-the-loop *"has continued to be really important."* See [[multi-agent-failure-modes]].
+
+### The harness as the reluctant answer, from a regulated profession
+
+The [[2026-09-01-cfa-institute-agentic-ai-finance-workflows-governance|CFA Institute roundtable]] reaches this page's central claim from a witness with no stake in it. Asked why an investment firm cannot simply substitute an open model, Pisaneschi answers that the differentiator has moved to *"they call it harness, but it's essentially how the architecture underlying the agentic framework is"* — take an open model, *"[throw] it into the open source harness, it is not going to quite be as good as Claude Code"*, because the closed vendors built real parallelisation and optimisation into theirs. He is explaining a constraint he would rather not have, which makes it a stronger ratification than a vendor's.
+
+He also states the **compounding claim** in its strongest form. Iterating a skill when it fails is individual; the collective version is the point — the same task refined by many analysts across a firm or an industry means *"even if the models don't get any better at all… we can really create incredibly robust workflows just by our own knowledge and iteration."* **Capability growth decoupled from model releases** is the organisational consequence of this page's same-weights-different-harness variance, and no prior source states it that plainly.

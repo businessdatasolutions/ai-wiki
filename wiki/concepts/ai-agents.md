@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
-source_count: 34
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 36
 relationships:
   - type: instance-of
     target: generative-ai
@@ -246,3 +246,13 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "ai-agents") OR contains(tags, "agentic-ai")
 SORT file.name ASC
 ```
+
+## Sub-agents that persist, and agents that choose their own runtime (added 2026-09-09)
+
+Two design moves from [[2026-09-07-yc-paper-club-why-the-harness-matters-more-than-the-model|YC Paper Club]] extend what this page records about multi-agent structure.
+
+**Sub-agents as persistent, messageable sessions rather than one-shot calls.** In [[Seth Karten]]'s Prime Agent, a parent spins up a sub-agent, which runs its task, reports back — and then goes **idle rather than dying**. The parent can message it later and it retains all the context it built, so information developed in a prior task does not have to be reconstructed. Idle sub-agents can be offloaded from RAM and recalled on demand. He also allows direct messaging between any two agents in the *"nuclear family"* — parent, children, siblings — built because coordinating agents working in five directions by hand did not scale. This is a different primitive from the usual fan-out/fan-in: the sub-agent is a **durable, addressable context** rather than a scoped delegation.
+
+**Agents choosing their own runtime.** YC's QM pushes two decisions the harness would normally own into the agent itself: which **sandbox** to use (a bigger machine for a heavy dev workload, a small one otherwise) and which **model provider** to run on — the latter explicitly so it can *"pop out into another model"* when it hits refusals on legitimate work such as AI research or security testing. *"Pushing that decision into the agent itself rather than the harness has been a really powerful thing."*
+
+Both moves point the same way and are worth tracking as a trend rather than two anecdotes: capabilities that were previously the orchestration layer's responsibility — lifecycle, addressing, resource allocation, model selection — are being handed to the agent as things it can reason about. See [[agent-harness]] on expressibility as the design principle behind this, and [[multi-agent-failure-modes]] for what goes wrong when many agents act on partial views of shared state.

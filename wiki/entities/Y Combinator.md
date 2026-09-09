@@ -6,9 +6,9 @@ tags: [accelerator, venture-capital, silicon-valley, startup-school, startup-sch
 since: 2005
 website: "https://www.ycombinator.com"
 confidence: 0.95
-last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
-source_count: 16
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 18
 ---
 
 # Y Combinator
@@ -145,3 +145,15 @@ SORT file.name ASC
 - **Stripe's business-formation series** — Collison's ~2x-year-over-year figure, the improving median business, and the declining time-to-revenue are stated verbally with no published methodology or absolute base. A Stripe-published version of the series would let the wiki weigh it against the economy-wide entry statistics [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey]] cites in the other direction.
 - **YC-partner-content cadence as a wiki source** — if Tan + Hu are representative of YC's content velocity, the wiki should expect to ingest more YC-partner-public-content sources at rate-of-batch-cycle (every ~3 months).
 - **The YC Root Access multi-talk session Garg sits in** — Garg references *"Pete and Tom and Gary"* (likely Pete Koomen, Tom Blomfield, Garry Tan) as prior speakers. If the other slots in this session are ingestible, the wiki would gain a four-source YC Root Access session-level anchor on agent-harness engineering at startup scale — a candidate for its own thread page.
+
+## YC as a publisher of harness research, and as its own test case (added 2026-09-09)
+
+Two September 2026 sources show YC operating in two distinct roles the wiki should keep apart.
+
+**As a convener.** [[2026-09-07-yc-paper-club-why-the-harness-matters-more-than-the-model|YC Paper Club's harness night]] gathers three frontier authors — [[Seth Karten]] (Prime Agent), Jon Saad-Falcon (OpenJarvis) and YC's own QM team — for a session arguing the harness-as-research case against a named counter-position. The Paper Club format is itself a sensing institution: scan the frontier, publish the session, and by doing so shape what the portfolio believes is worth building.
+
+**As its own subject.** The same session's final segment is YC describing the internal harness it shipped to its own staff, with the failures left in. **QM** gives every employee an OpenClaw-like assistant in Slack or a web UI, and arrived after three predecessors that each broke: a one-size-fits-all "general agent" (Jan 2025), Slack-tagged Claude Code and Codex in VMs (June 2025), and a **50+ agent fleet** that proved unadministrable — *"a whack-a-mole situation where I would have to SSH into these individual instances and fix them."* QM's answer was to **pull the brain out of the sandbox** into Postgres and demote sandboxes to a resource the agent dips into.
+
+Two admissions are worth recording because organisations rarely publish them: human review of database writes has decayed into **rubber-stamping** (*"it's a little bit like… you might have been reviewing the tool uses very closely and eventually you build up more trust"*), and the centralised-context design depends on a **fine-grained permission system** YC happened to already have — *"the information that you can put in the brain is effectively bounded by how good your permission system is."* See [[agent-oversight-and-delegation]].
+
+Alongside [[2026-08-06-garry-tan-own-your-intelligence|Tan's Startup School keynote]] three weeks earlier, this makes YC one of the wiki's densest single-institution clusters on the harness — as investor, publisher, advocate and deployer at once. The **standing caveat** applies throughout: YC's evidence about AI-native companies is drawn from its own portfolio, selected on success and coached toward the thesis being evidenced.

@@ -2,10 +2,10 @@
 type: concept
 aliases: ["theory-based view", "theory-based-view", "TBV", "theory-based view of strategy", "Felin-Zenger TBV"]
 tags: [theory-based-view, tbv, strategy-theory, felin, zenger, theory-of-value, analogical-reasoning, strategy-formulation, falsifiability, generative-theory]
-confidence: 0.72
-last_confirmed: "2026-06-08"
-accessed_at: "2026-06-08"
-source_count: 2
+confidence: 0.8
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 3
 relationships:
   - type: supports
     target: strategy
@@ -87,3 +87,15 @@ SORT file.name ASC
 - **Felin & Zenger 2017 *The Theory-Based View* primary source** — same deferred-ingest tier (Phase B4). Landing alongside 2009 would promote both Felin and Zenger to entity pages and lift `source_count` to 3, confidence ~0.80.
 - **Gavetti & Rivkin (2005, 2014) on analogical strategy** — already flagged on [[analogical-reasoning]] as a deferred-ingest deepening target. Their work is the upstream theoretical companion to Carroll & Sørensen's tooling.
 - **Empirical anchoring is thin.** TBV is a *methodological* claim about how strategy work should be structured, not an empirical claim about what successful firms do. A peer-reviewed empirical study of *firms with explicit falsifiable theories of value vs firms without* would strengthen the page substantially; no candidate in the wiki yet.
+
+## Empirical support for the backward-looking critique (added 2026-09-09)
+
+The Felin-and-Zenger line of argument this page carries — that value creation depends on **forward-looking, theory-based causal logic** that generative models, being backward-looking and imitative, cannot supply — has been a conceptual claim in the corpus. [[2026-03-11-allen-mcdonald-how-well-can-ai-do-strategy-simulation-benchmark|Allen & McDonald (*Strategy Science*, 2026)]] supplies the first behavioural evidence for it.
+
+The critique they cite directly is Felin & Holweg's: *"AI uses a probability-based approach to knowledge and is largely backward-looking and imitative, while human cognition is forward-looking and capable of generating genuine novelty."* Their benchmark puts 34 models into an eight-year simulation that requires committing R&D capital to an emerging technology **before** any evidence of its payoff exists — a decision that cannot be made from observed data, only from a theory about what the observed data implies.
+
+**The result is the predicted signature.** Mid-to-late-2025 frontier models achieve **high cumulative profit and very low emerging-technology revenue**: they defend the measurable core and decline the hypothesis. The reasoning they give is not confused, which is the interesting part — *"Pause all QSC R&D due to long lead times and poor fit with current market requirements"* (GPT-5) is a defensible inference **from the data in front of it**, and wrong precisely in the way a theory-based view predicts backward-looking inference will be wrong. The authors' own reading is that models tuned for peak performance in coding, chat and science *"may inadvertently converge on an inability to handle uncertainty, excelling only at replicating past data."*
+
+**Two qualifications this page should keep.** The evidence is a behavioural signature, not a demonstration of the underlying cognitive claim: an equally consistent explanation is that the models inferred the wrong objective from an outcome-agnostic prompt. The paper partly tests this — an emerging-technology-focused prompt improves frontier models only marginally — which weakens the goal-inference explanation without eliminating it. And it is one simulation. But it is a genuine measurement where the page previously had only argument, and it points at a testable research question: **is the deficit theoretical or motivational?**
+
+Note also the counter-evidence in the same paper: **earlier models did not show the bias**, and late-2024/early-2025 models exceeded MBA students by making exactly the forward-looking bets the critique says such systems cannot make. Whatever the mechanism is, it is not an invariant property of the architecture.

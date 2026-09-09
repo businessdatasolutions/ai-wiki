@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI deskilling", "ai-deskilling", "task composition shift", "deskilling"]
 tags: [deskilling, task-composition, ai-employment-effects, occupations]
 confidence: 0.85
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 18
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 19
 relationships:
   - type: instance-of
     target: ai-employment-effects
@@ -204,3 +204,17 @@ SORT file.name ASC
 
 - Single-source coverage so far. A second source measuring task-composition shift via different methodology would strengthen the concept.
 - How does deskilling interact with within-role equalizing effects observed in [[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|customer-support productivity studies]]? Different units of analysis (across-task education content vs. within-occupation worker skill); a synthesis page may become warranted with a third source.
+
+## Extraction without atrophy: the skill-file argument (added 2026-09-09)
+
+[[2026-08-06-garry-tan-own-your-intelligence|Tan's keynote]] raises a risk adjacent to this page's usual subject but structurally different, and the difference is the point. This page mostly tracks **atrophy** — capability lost because it stopped being exercised. Tan describes **capture**: capability that remains fully intact in the worker and is simultaneously extracted, versioned and executable without them.
+
+The mechanism is the skill file. *"A skill file is not a document. It's a piece of your cognition — how you do the thing, extracted from your head, written down, and executable. Every skill you teach an agent is you externalised."* The worked case is deliberately mundane: Maya, a support engineer, spends two years teaching her agents 40 skills — how to triage a P0 at two in the morning, how to de-escalate a customer about to churn, how to write a postmortem that prevents the next incident. Same 40 files, two futures:
+
+> *"Version one: those files live in Maya's repo. She changes jobs. They go with her. Day one at a new company, she's operating with years of compounded judgment on tap… Version two: those files live in the company's repo under the company's IT policy. Maya leaves with nothing. The company keeps running her judgment without her. 40 files executing forever, and her name isn't even in the commit history. She didn't have a career. She had an extraction."*
+
+The historical framing is the load-bearing part: *"Craftsmen own their tools. That's what made them free. The factory broke that — the loom belonged to the mill. The knowledge workers assumed we were safe because our tools lived in our heads where nobody could confiscate them. Skill files end that. For the first time in history, your cognition can be extracted, stored, versioned, and owned. The only question is by whom?"* His prescription — *"own your skills, because if you don't, your job becomes a skill file"* — is addressed to founders.
+
+**Two reasons to hold this carefully.** First, it is an argument, not a finding: no measurement, and the speaker's audience is people who own their repos by default. Second, and more substantively, **the prescription may not be available to the worker it is addressed to.** Whether an employee can retain skill files developed on company time and company systems is a work-for-hire question the talk does not raise. If the answer is generally no, then the argument identifies a real asymmetry and offers a remedy only the already-advantaged can take — which is the more uncomfortable version, and the one this page should carry alongside the quotable one.
+
+The connection to atrophy is worth stating too: a captured procedure that runs without its author is also a procedure its author stops performing. The two mechanisms are not alternatives; capture plausibly *causes* atrophy on a lag.

@@ -3,9 +3,9 @@ type: concept
 aliases: ["jagged frontier", "jagged-frontier", "jagged technological frontier", "AI capability frontier", "jagged intelligence", "jagged skills", "jagged-intelligence", "animals vs ghosts", "ghosts not animals"]
 tags: [jagged-frontier, jagged-intelligence, AI-capabilities, knowledge-work, productivity, automation, augmentation, verifiability, animals-vs-ghosts]
 confidence: 0.95
-last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
-source_count: 17
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 18
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -176,3 +176,13 @@ SORT file.name ASC
 - **Karpathy's hinted "valuable RL environments not in the labs' mix"** — declined to name specifics on stage in [[2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering|Sequoia AI Ascent]]. If a follow-up writeup names the domains, that's a high-value second source for the cause-of-jaggedness section.
 - **Aesthetics-as-RL-reward** — Karpathy specifically calls out that current code from agents is *"bloaty, copy-paste, awkward abstractions, brittle."* If labs add an aesthetic-quality reward signal, that closes one specific jaggedness gap; worth tracking which lab does this first.
 - **Animals-vs-ghosts as primary mindset** — Karpathy himself called it "philosophising"; worth tracking whether subsequent practitioner writing gives it operational force or quietly drops it.
+
+## The jag measured without a human in the loop — and not closing (added 2026-09-09)
+
+[[2026-03-11-allen-mcdonald-how-well-can-ai-do-strategy-simulation-benchmark|Allen & McDonald (*Strategy Science*, 2026)]] is this page's strongest empirical extension, and it changes the shape of the claim in two ways.
+
+**First, it removes the human.** [[2026-04-28-dellacqua-jagged-technological-frontier|Dell'Acqua et al.]] located the frontier by measuring consultants *using* GPT-4 — the finding that BCG consultants were **19 percentage points less likely** to reach the correct recommendation on an out-of-frontier business case is a claim about a human–AI pair. Allen & McDonald run **34 models** through an eight-year strategy simulation with no human involved, and find the same jag in the same place. So the frontier's jaggedness is not an artifact of how people delegate; it is a property of the models on tasks with strategy's structure.
+
+**Second, and more consequentially, the jag is not closing.** The implicit expectation behind most jagged-frontier discussion is that the notches fill in as models improve. Here they do not: **mid-to-late-2025 frontier models (GPT-5, o3, Gemini 2.5 Pro) score below both early-2025 models and MBA students**, while continuing to improve on GPQA Diamond and LM Arena. The correlation between the strategy score and GPQA is **positive through o4-mini and then negative**. On this measurement the frontier did not smooth — **the notch deepened.**
+
+The failure has a name and a signature: a **systematic exploitation bias**, achieving high cumulative profit with very low emerging-technology revenue, visible in the models' own stated reasoning. This is the practical form the page's central advice should take: the jag is not randomly distributed, and the region where it bites is **forward-looking commitment under delayed feedback** — which is exactly the region where a manager is most tempted to delegate a judgment, and where headline benchmarks give the least warning.

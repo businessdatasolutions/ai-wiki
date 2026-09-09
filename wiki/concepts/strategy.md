@@ -2,10 +2,10 @@
 type: concept
 aliases: ["strategy", "business strategy", "corporate strategy", "competitive strategy"]
 tags: [strategy, strategic-planning, value-creation, value-capture, theory-of-winning, playing-to-win, value-stick, roger-martin, felix-oberholzer-gee, harvard-business-review]
-confidence: 0.9
-last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
-source_count: 10
+confidence: 0.92
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 11
 relationships:
   - type: supports
     target: strategic-foresight
@@ -242,3 +242,25 @@ SORT file.name ASC
 - Single primary sources for each lens; deeper primary-source ingest of Martin's *Playing to Win* (Lafley & Martin 2013) and Oberholzer-Gee's *Better, Simpler Strategy* (2021) would strengthen the concept significantly.
 - The value-stick lens is silent on **dynamic** WTP/WTS — what happens when AI agents (acting as buyer proxies, per [[2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china|Ognibeni 2026]] / [[2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells|Price 2026]]) change *whose* WTP is being measured? Open question for a future ingest.
 - The Southwest case is 50 years old. A canonical 2020s-era strategy case anchoring both lenses simultaneously would strengthen the concept's currency.
+
+## Can an LLM do strategy? A peer-reviewed measurement, and a regression (added 2026-09-09)
+
+[[2026-03-11-allen-mcdonald-how-well-can-ai-do-strategy-simulation-benchmark|Allen & McDonald (*Strategy Science*, March 2026)]] is the wiki's first peer-reviewed, multi-model measurement of LLM performance on a task built to have the defining properties of strategy, and it belongs on this page as much for its **operational definition of strategy** as for its results.
+
+**The definition it uses, and why it matters here.** Strategic decisions are resource commitments shaping long-term performance, distinguished by five properties: **complexity/interdependence, high stakes, multiperiod partially-irreversible commitments, delayed and noisy feedback, and deep uncertainty**. That list is this page's most useful operational test for whether a decision is strategic — and the paper's argument is that *no existing AI benchmark captures any complete subset of it*, which is why apparently strategy-adjacent evidence (idea generation, plan evaluation, chess) has told us so little.
+
+**The instrument.** The Back Bay Battery simulation — eight years allocating a constrained R&D budget between a declining core technology and an emerging one, across three customer segments, while setting prices and forecasting sales. It is the innovator's-dilemma structure made scorable: *"spreading investments too thin leads to mediocrity, ignoring disruption leads to decline, and over-committing too early leads to collapse."* Crucially, participants are **never told what to maximise** — profit, revenue and future positioning must be weighed, exactly as in real strategy.
+
+**The results, and the one that should change how this page is read.**
+
+- Early models (GPT-3.5, GPT-4 era) score well below MBA students.
+- Late-2024/early-2025 models — o3-mini highest, then o4-mini, Claude Sonnet 4, Gemini 2.0 Flash — **exceed the historical MBA average**, by timing investment and pricing to achieve profitability *and* growth.
+- **Mid-to-late-2025 frontier models (GPT-5, o3, Gemini 2.5 Pro) regress below both the earlier models and the students.**
+
+The mechanism is a **systematic exploitation bias**: high cumulative profit, very low emerging-technology revenue — defend the core, starve the future. Legible in the models' own reasoning (*"We will not invest any R&D into QSC this year, preserving our limited capital for the core business"* — Gemini 2.5 Pro), and it survives removing the simulation's firing rule.
+
+**Why this is a strategy finding and not only an AI finding.** The failure mode the frontier models fall into is the single most-studied failure mode in this literature — over-exploitation of a profitable declining core — and they fall into it *while optimising a defensible local objective*. That is the innovator's dilemma restated as a property of a reasoner rather than of an organisation: the bias does not require misaligned incentives, entrenched middle management or resource-allocation politics to appear. It emerges from a system with none of those things.
+
+**And the finding with the widest reach: benchmark transfer breaks.** The correlation between simulation performance and GPQA Diamond is positive from GPT-3.5 through o4-mini, then **reverses**; against LM Arena it plateaus or reverses. The authors' warning is directed at exactly the inference a strategist would otherwise make: *"scholars and developers risk mistaking progress in adjacent domains for progress in strategic decision making."* Anyone selecting a model for judgment work on the strength of headline benchmarks is, on this evidence, reading the wrong instrument.
+
+**Read with its limits.** The MBA comparison is contextual rather than controlled (students were primed by coursework and worked unsupervised); the composite score is a within-dataset visualisation; and the study measures strategic *reasoning over supplied information*, not strategic *agency* — information was fed to the models by a program. See the source page for the full set, including the open question of whether the regression reflects a strategic deficit or a goal-inference one.

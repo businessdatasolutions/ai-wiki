@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
-source_count: 25
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 26
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -315,3 +315,21 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "responsible-ai") OR contains(tags, "ai-ethics")
 SORT file.name ASC
 ```
+
+## LLM bias mirrors the biases of the humans it replaces (added 2026-09-09)
+
+The [[2026-09-01-cfa-institute-agentic-ai-finance-workflows-governance|CFA Institute roundtable]] supplies a mechanism this page has not previously carried, from a profession with both a fiduciary duty and a mature behavioural literature to compare against.
+
+Tate names two layers of bias. The familiar one is **pre-training skew** — *"a very heavy skew towards Western data sets, of American stocks, tech stocks"* — surfacing as unexplained default recommendations, and mitigable by supplying the model with other data (via MCP) and explicit criteria (via skills) rather than letting it *"implicitly choose"*. The sharper one is specific and testable:
+
+> *"A lot of research has shown that the biases in these large language models basically mirror investor biases. They're trained on human generated data. So naturally they mirror human biases. So LLMs have been shown to have **loss aversion bias**. What are the implications of that? Well, if you gave them access to a portfolio and you had gains and losses, they're more likely to hold on to the losses when potentially they should delegate those funds to a better investment."*
+
+The consequence Preece draws is the one that matters for this page: *"there is often a misplaced assumption that if I can delegate some tasks to a machine tool… that would be a way to negate some of the human biases that filter through to investment decisions. Whereas actually… that's not the case."*
+
+This is a **structural argument against a common justification for automation**, and it cuts across several pages. [[automation-vs-augmentation]] often carries an implicit premise that handing a decision to a system removes the human failure mode; Pisaneschi sharpens why that used to be true and no longer is — rules-based tactics (his minimal example is a stop-loss order) mitigate emotional bias precisely *because* they remove discretion, whereas an LLM *"[has] this decision making authority that is subject to the biases."* Delegating to a rule launders bias; delegating to a model imports it. For [[agent-oversight-and-delegation]] the implication is that the case for a human in the loop cannot rest on the human being the biased party — both parties are biased, in correlated ways, which is the worst configuration for catching errors.
+
+**The proposed mitigation is red-teaming for behavioural bias, encoded as a skill.** Borrowing the security practice — *"what the cybersecurity industry does to try and essentially hack their own system"* — the workflow is: find the bias, write the mitigation into a skill file, then verify across a distribution of outputs. *"If that control is predictable, then you can absolutely reduce the human bias that we have, as well as reduce the bias that the large language model has."*
+
+And the governance frame the roundtable settles on is **trust, built by evals**: *"everything about governance, everything about ethics within the actual technical AI side is really just about gaining trust."* One expert judging one output is *"just like kind of an employee"*; the firm-scale version is *"you give it lots and lots of tasks. You run evaluations. You create the distributions of outputs… and then you gain trust by reviewing the outputs and the evaluations."*
+
+**Two caveats the page should carry.** The bias research is referred to as *"a lot of research"* without citation, and Tate himself flags the implications as *"still being actively explored"* — the underlying literature is an **open ingest target**. And the mitigation is untested here: a bias control written into a prompt is a soft constraint, and whether skill-file controls survive contact with the model's priors is exactly the sort of claim this page should want measured before relying on it.

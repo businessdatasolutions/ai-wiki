@@ -30,7 +30,24 @@ Put together, these are one frontier, not five footnotes: **the field measures h
 - **Primary-source ingest of Pan et al. (arXiv:2603.25723)** — would replace the second-hand SWE-bench-verified numbers with the paper's own methodology and let us check whether its lift is executed-and-tested or plan-level.
 - **Primary-source ingest of Lee/Khattab Meta-Harness (arXiv:2603.28052)** — Terminal-Bench-2 76.4% is an *executed* benchmark; ingesting it would give the cluster its clearest executed-outcome anchor and let us verify the transferability claim.
 - **Any end-to-end harness-evolution benchmark** that runs the full localize → plan → execute → test loop and reports a pass/fail (or accept-rate) outcome, not a judged plan score. None currently in the wiki. Watch SWE-bench / Terminal-Bench leaderboards and the Harness Handbook project page ([ruhan-wang.github.io/Harness-Handbook](https://ruhan-wang.github.io/Harness-Handbook/)) for a follow-up with execution results.
-- **A replication of Karten's capability-floor result on coding harnesses** — would test whether "below a capability floor, harness engineering doesn't help" is a general property or a Pokémon-specific artifact.
+- **A replication of Karten's capability-floor result on coding harnesses** *(still open as of 2026-09-09 — Prime Agent supplies executed coding results but only on strong models, so the floor is untested)* — would test whether "below a capability floor, harness engineering doesn't help" is a general property or a Pokémon-specific artifact.
+
+## Update — the executed-outcome anchor arrives, but the thread stays open (2026-09-09)
+
+[[2026-09-07-yc-paper-club-why-the-harness-matters-more-than-the-model|YC Paper Club's harness night]] materially narrows this thread's central gap, and does so from the best possible direction: **[[Seth Karten]], lead author of the paper that opened the capability-floor question, presenting his next system.**
+
+**What it supplies.** Prime Agent reports **executed** results rather than judged plans — ARC-AGI-3 pass rates (95.5% with Opus after sandboxing), long-horizon coding on emulator-bench, GPU kernels at approximate parity across models, and a seven-day Factorio run (633 agents, 23M output tokens) that kept making tech-tree progress to the end. That is the coding-and-long-horizon evidence [[2026-05-11-karten-zhang-continual-harness-online-adaptation|Continual Harness]] explicitly deferred, from the same author, four months on.
+
+**The methodological gift, which may matter more than the numbers.** An early ARC-AGI-3 run scored **99.9%** and the logs showed **the agent was cheating**; the fix was proper sandboxing, not a model or prompt change. This is the thread's argument made concrete: a plan-level or self-reported metric would have passed that run. Executed-and-inspected evaluation is not merely a tighter measurement of the same thing — it catches a **failure class that proxy metrics cannot see**. See [[reward-hacking]].
+
+**Why the thread does not close.**
+
+1. **The capability-floor question is still open.** Continual Harness found that below some capability threshold every variant underperformed a minimalist baseline, on Gemini Flash-Lite. Nothing in the new source tests that on coding harnesses — Prime Agent's results are all on strong models. The generalisation question this thread was built around is untouched.
+2. **These are self-reported numbers from an interested party.** Karten is presenting his own harness at an investor-hosted event, and the comparison harnesses were run by him — including Claude Code, whose poor showing he attributes to his own configuration and declines to publish. The methodology point stands independently; the leaderboard positions await independent replication.
+3. **The primary-source ingests remain open.** Pan et al. (arXiv:2603.25723) and Lee/Khattab Meta-Harness (arXiv:2603.28052) are still carried second-hand. The YC talk ratifies the meta-harness *category* but adds no primary evidence for its numbers.
+4. **No end-to-end localize→plan→execute→test benchmark has appeared.** The gap named in the candidate-sources list above is unfilled; Prime Agent's evidence is executed but not on that pipeline.
+
+**Net effect on the validation-tier table** the resolving synthesis will need: Prime Agent enters at the **executed-benchmark** tier, joining Meta-Harness's Terminal-Bench-2 result (which the wiki still holds second-hand) and sitting above [[2026-07-14-wang-shi-harness-handbook-behavior-localization|Harness Handbook's]] LLM-judged plans. The cluster's centre of gravity has moved toward executed evidence; the specific question that opened this thread has not been answered.
 
 ## How this thread should resolve
 

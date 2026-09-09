@@ -3,9 +3,9 @@ type: concept
 title: Multi-agent failure modes
 aliases: ["multi-agent failure modes", "MAST", "multi-agent system failure taxonomy", "why multi-agent systems fail", "agent coordination failure"]
 confidence: 0.8
-last_confirmed: "2026-08-30"
-source_count: 4
-accessed_at: "2026-08-30"
+last_confirmed: "2026-09-09"
+source_count: 5
+accessed_at: "2026-09-09"
 tags: [mast, multi-agent, failure-taxonomy, coordination, inter-agent-misalignment, task-verification, data-processing-inequality, isolated-workspaces, caid, token-budget]
 relationships:
   - type: part-of
@@ -71,3 +71,15 @@ Result: **+25.6% absolute** over single-agent baselines on PaperBench, **+14.7%*
 - **Which CAID primitive carries the gain?** No ablation was read. If isolation alone accounts for most of it, the prescription is far cheaper than full CAID. **Open, and the highest-value question here.**
 - **MAST's 14 modes are not enumerated in this wiki** — only the three categories, from the abstract. Anyone building a checklist must read the paper.
 - **Vintages:** MAST studies GPT-4 / Claude 3 / Qwen2.5 / CodeLlama on the 2024–25 framework generation. Incidence rates will have moved; the taxonomy is the durable artifact.
+
+## "Main character syndrome" in a self-improvement swarm (added 2026-09-09)
+
+[[2026-09-07-yc-paper-club-why-the-harness-matters-more-than-the-model|YC's QM team]] report a failure mode from a specific and increasingly common configuration: **a fleet of agents dispatched to fix bugs found in the system's own accumulated traces, scored by an LLM judge.**
+
+Centralising every agent conversation in Postgres gives them, as a side effect, a large eval set — *"you're accumulating this large eval set of all the traces that you have from the conversations that people are having with the agent. And in principle, you can think about going and hill climbing on that."* The result was mixed:
+
+> *"Typically if you're just dispatching this like torrent of agents that are supposed to fix all of the bugs that they're encountering when you have the LLM as a judge, you start to get this kind of **main character syndrome** where the agents are making fixes that are only seeing their piece of the elephant effectively… they're not seeing the whole system."*
+
+The shape is familiar to this page — locally sensible, globally incoherent edits — but two features are worth recording. First, **each individual agent is behaving correctly given its context**; the failure is entirely in the aggregation, which means it will not be caught by any evaluation that scores fixes one at a time. Second, **the LLM judge is part of the mechanism rather than the safeguard**: it validates each local fix against local evidence, and has no vantage from which to see the interaction. Their remedy is human-in-the-loop, which they report as *"continuing to be really important"* — while, in the same talk, reporting that human review of database writes has decayed into rubber-stamping (see [[agent-oversight-and-delegation]]).
+
+This is a concrete instance of why [[2026-03-23-geng-neubig-caid-asynchronous-software-engineering-agents|CAID's]] isolated-workspaces result matters: the coordination primitive that pays is the one that prevents agents from acting on a partial view of shared state.

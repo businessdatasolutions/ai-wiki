@@ -3,9 +3,9 @@ type: concept
 title: AI coding productivity — the evidence
 aliases: ["AI coding productivity", "AI developer productivity", "developer productivity evidence", "productivity paradox in coding", "throughput vs stability"]
 confidence: 0.8
-last_confirmed: "2026-08-30"
-source_count: 6
-accessed_at: "2026-08-30"
+last_confirmed: "2026-09-09"
+source_count: 7
+accessed_at: "2026-09-09"
 tags: [rct, productivity, metr, copilot, dora, throughput, delivery-stability, perception-gap, heterogeneity, seniority, measurement]
 relationships:
   - type: part-of
@@ -81,3 +81,13 @@ The defensible reading of the whole corpus: **AI coding tools reliably increase 
 - **Vendor proximity.** Two of Cui et al.'s three sites are Microsoft (which owns GitHub) and a large systems integrator. Randomisation and pre-registration mitigate this; they do not eliminate it.
 - **No study measures net value.** Every design here scores volume (tasks, time, throughput). **Nobody has measured AI-assisted development against a value or defect-adjusted outcome.** This is the largest gap in the concept.
 - **Everything is pre-agentic.** METR measures IDE assistance; Cui et al. measure Copilot. **No RCT in the corpus measures cloud agent fleets**, which is what the 2026 practitioner material is about.
+
+## A maximal practitioner self-report, and why it belongs here anyway (added 2026-09-09)
+
+[[2026-08-06-garry-tan-own-your-intelligence|Tan's Startup School keynote]] offers one of the largest individual productivity claims in the corpus, and — unusually — discounts it on stage. The baseline: ~**14 useful lines of code a day** in 2013, which he notes is *"dead on median"* against the programmer-productivity literature. The claim: roughly **400×** that today, running YC full-time with a 5pm school pickup. The self-discount: *"apply the most pathological verbosity penalty you can stomach and assume the agent writes bloated code. Assume half of it is scaffolding. Assume I'm flattering myself, which is always a live possibility. **It's still 8x at the absolute floor**."*
+
+This page should record it as **self-report, not measurement**, and the reason is structural rather than sceptical: the metric being multiplied is lines of code, which the speaker simultaneously invokes and disowns (*"you don't trust the raw lines of code. Fine."*), so the 8× floor is a discount applied to an unmeasured quantity rather than a lower bound on a measured one. The gap between this and the page's controlled studies — where measured effects land far below practitioner self-report, and in at least one case go negative — is the page's central finding and this source widens rather than narrows it.
+
+The organisational evidence offered alongside is more interesting and comes with its own caveat, stated by the speaker: a quarter of the W25 batch had codebases that were **95% AI-generated**, and that batch is *"on track to becoming one of the fastest growing, most profitable batches in the history of YC."* He then says the right thing: *"I know what a correlation is… I cannot prove that the AI generated code and everything else caused the growth."* What he claims instead is a behavioural difference — *"the fastest growing founders we fund are not treating AI as autocomplete. They are treating it as a workforce"* — which is a hypothesis this page has no instrument to test, from a sample selected on success.
+
+Worth holding against [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey]] and the wider return-gap cluster: vivid individual gains coexisting with absent aggregate productivity growth is precisely the pattern those sources exist to explain, and this source is a data point *inside* that puzzle rather than a refutation of it. See [[micro-productivity-trap]].

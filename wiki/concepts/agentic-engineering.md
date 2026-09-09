@@ -3,9 +3,9 @@ type: concept
 aliases: ["agentic engineering", "Agentic Engineering", "agentic-engineering", "agent engineering"]
 tags: [agentic-engineering, vibe-coding, software-3.0, ai-agents, agent-harness, software-engineering, hiring, karpathy, codex-case-study]
 confidence: 0.97
-last_confirmed: "2026-08-31"
-accessed_at: "2026-08-31"
-source_count: 52
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 55
 relationships:
   - type: depends-on
     target: agent-harness
@@ -258,3 +258,13 @@ Until this point the concept rested largely on practitioner testimony. A cluster
 **And the strongest practitioner voice agrees.** [[2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder|Ryan Carson]], shipping ~40 PRs a day on $20k/month of agent spend, argues against his own interest: *"I really try to constrain my output… I don't think I get multiples of quality off of multiples of output,"* and *"we're nowhere near any frontier model having the intelligence to know what to ship."* That is the clearest available statement of where agentic engineering's ceiling currently is — not in throughput, but in judgement about what to build.
 
 **The perception hazard.** METR's participants, having just been slowed by 19%, estimated they had been sped up by 20%. Any team evaluating its own agentic-engineering practice by how it feels is reading an instrument known to be wrong by ~39 points.
+
+## Two disciplines named: skillify, and expressibility (added 2026-09-09)
+
+**Never do one-off work.** [[2026-08-06-garry-tan-own-your-intelligence|Tan]] states the discipline that separates *"the compounders from the dabblers"*: most people run one operation with an agent and throw the context away. Instead, at the end of every task, ask the agent to **skillify** what it did — turn it into a markdown file you can reuse. *"I'll say it the way I say it at YC. If you have to ask for something twice, you failed. The person who captures what they learn gets smarter every single day. The person who wakes up every morning with amnesia — that's a waste of your time. And it doesn't matter how good the model gets if you can't turn it into real memory."*
+
+The corollary is a claim about who the discipline is available to. *"Markdown is actually code. If you can write clear instructions in English, you're a programmer. The compiler is a language model."* The test offered is operational rather than rhetorical — *"if a smart intern could follow it, an agent can run it"* — and the evidence is that YC's media, events and finance staff, who never open a terminal, write skill files; one finance colleague replaced ~100 Excel workbooks with an app she built through an internal agent. *"She is not a programmer. She is a manager of agents."* The [[2026-09-01-cfa-institute-agentic-ai-finance-workflows-governance|CFA Institute roundtable]] reports the same shift inside a regulated profession — skills plus MCP replacing hand-built Python agent frameworks within a year, and *"you don't need to know how to program"* — with the honest qualifier that programming ability still buys robustness.
+
+**Build for expressibility, not for control flow.** [[Seth Karten]]'s design principle at [[2026-09-07-yc-paper-club-why-the-harness-matters-more-than-the-model|YC Paper Club]] is the engineering counterpart. Early systems hard-coded plan → act → critique; models now do that natively, so prescribing it buys nothing. What the engineer must supply is what the model *cannot* give itself — callable compaction, a Python REPL, programmatic sub-agent creation, state access, feedback mechanisms — because *"if you removed one of those you're actually removing a capability that it won't be able to do otherwise."*
+
+Read together, the two disciplines are complementary and describe where effort should go: **thick, accumulating, human-legible procedure** (skills), on **thin, capability-complete machinery** (primitives). Not more orchestration in between.

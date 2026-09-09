@@ -3,9 +3,9 @@ type: concept
 aliases: ["dynamic capabilities", "dynamic-capabilities", "Teece dynamic capabilities", "sense seize transform"]
 tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, microfoundations]
 confidence: 0.95
-last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
-source_count: 39
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 40
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -308,3 +308,13 @@ SORT file.name ASC
 
 - The Warner & Wäger study is from 2019, pre-GenAI. How do the nine microfoundations need to be updated for the [[2026-04-28-anthropic-economic-index-q4-2025|2026 GenAI context]]? (Open question; possible synthesis topic.)
 - Cross-source mapping: MIT CISR's Four S (Strategy/Systems/Synchronization/Stewardship) and the dynamic-capabilities framework appear to overlap substantially in scope but use different vocabularies. Would benefit from a future synthesis page.
+
+## A seizing cell, measured: can a model balance a digital portfolio? (added 2026-09-09)
+
+[[2026-03-11-allen-mcdonald-how-well-can-ai-do-strategy-simulation-benchmark|Allen & McDonald (*Strategy Science*, 2026)]] is, as far as the corpus goes, the **most direct empirical measurement of a single Warner & Wäger cell** — `digital-seizing/balancing-digital-portfolios`.
+
+The Back Bay Battery simulation is that cell rendered scorable: a fixed R&D budget, a profitable but declining core technology, an emerging one that only pays off after early and sustained commitment, and no instruction about what to maximise. Getting the balance right is the whole task, and the failure modes map onto the cell's own logic — *"spreading investments too thin leads to mediocrity, ignoring disruption leads to decline, and over-committing too early leads to collapse."*
+
+**The finding is that the newest models fail this cell in one specific direction.** Mid-to-late-2025 frontier models (GPT-5, o3, Gemini 2.5 Pro) achieve high cumulative profit with very low emerging-technology revenue — they optimise the core and decline the portfolio balance — scoring below both earlier models and MBA students. Late-2024/early-2025 models did **not** fail this way; they exceeded the human average by timing investment and pricing to get both.
+
+Two things follow for this page. First, **the microfoundations argument gets empirical traction**: the authors conclude that *"the microfoundations of successful strategic decision making may differ in important ways from those underlying success in other domains like coding or advanced science"* — which is a claim about *which* capability is being measured, and a warning against treating general capability as a proxy for a specific one. Second, and more practically, it is evidence about **where an AI-assisted seizing process needs a human**: not in the analysis, which these models do competently, but in the commitment to an option whose payoff is not yet visible in the data. See [[2026-03-11-allen-mcdonald-how-well-can-ai-do-strategy-simulation-benchmark|the source page]] for the limits, including that the study measures reasoning over supplied information rather than agentic sensing.

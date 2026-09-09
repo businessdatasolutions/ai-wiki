@@ -3,9 +3,9 @@ type: concept
 title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
 confidence: 0.8
-last_confirmed: "2026-08-30"
-source_count: 7
-accessed_at: "2026-08-30"
+last_confirmed: "2026-09-09"
+source_count: 9
+accessed_at: "2026-09-09"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
   - type: part-of
@@ -79,3 +79,17 @@ Every existing framework for agent quality measures whether the agent was **righ
 - **Does graduated oversight actually happen?** [[2026-04-13-branco-lgtm-auto-merged-llm-agentic-prs]] finds repositories mostly auto-merge **all or none**. The middle path described here is a proposal more than a practice.
 - **Does delegation regret transfer beyond students?** N=20, one agent, five tasks. Professionals with accountability may calibrate differently — plausibly more conservatively, which would strengthen rather than weaken the prescription. **Open.**
 - **IMDA is voluntary.** Its influence depends on citation by other jurisdictions, a mechanism not yet observable.
+
+## Oversight decay, observed rather than predicted (added 2026-09-09)
+
+Two sources from the 9 September 2026 batch convert claims this page has been holding as risks into reported outcomes.
+
+**Rubber-stamping, from inside a production deployment.** [[2026-09-07-yc-paper-club-why-the-harness-matters-more-than-the-model|YC's QM team]] route database writes through human-reviewed bulk upserts: the agent proposes a plan to edit the database, a person gives it *"a once over and ensures it's not doing anything crazy"* before the write happens. Then the admission: *"one thing we've observed with this is that we've started just kind of rubber stamping these."* The comparison they draw themselves is the diagnostic one — *"it's a little bit like, I think if you guys use Claude Code in the early days, you might have been reviewing the tool uses very closely and eventually you sort of build up more trust in the agent."*
+
+This matters because **the control did not fail; the human did, gradually, and for a reason that looks like learning.** Trust accrued from a run of correct proposals, and the review became ceremonial without anyone deciding to stop reviewing. It is the same shape as the automation-complacency literature, arriving in agent deployments on a timescale of months. The team names it as something *"we're looking at very closely over the next few months"* — i.e. they have not solved it.
+
+**The same source undercuts the obvious remedy in the same breath.** QM's automated-improvement loop — hill-climbing on accumulated conversation traces with an LLM as judge — produces what they call *"main character syndrome"*: a torrent of fixing agents each *"seeing their piece of the elephant"* and making locally sensible, globally wrong changes. Their conclusion is that *"having the human in the loop there has continued to be really important."* So human review is simultaneously **necessary** (it catches what the LLM judge cannot see) and **decaying** (it is being rubber-stamped). Both are true in one system, and the source does not reconcile them. That tension is now this page's sharpest open question: whether human-in-the-loop is a durable control or one that reliably erodes with familiarity, in which case it should be designed with refresh mechanisms rather than assumed stable.
+
+**A hard boundary on what delegation can be given.** The same team states a constraint worth keeping verbatim: agents *"really don't understand social contexts"* — *"if I tell Regan a piece of information, he intuitively knows where it is okay to share that information"*, and an agent does not, so privileged information leaks into contexts it should not reach. Hence: **"the information that you can put in the brain is effectively bounded by how good your permission system is."** YC could build a centralised-context agent because it already had fine-grained permissioning; the observation is that most organisations do not, which makes the permission system a *precondition* for this architecture rather than a hardening step applied afterwards.
+
+**And a reason the human's judgment is not the safe default either.** The [[2026-09-01-cfa-institute-agentic-ai-finance-workflows-governance|CFA Institute roundtable]] reports that LLM decision biases *mirror* the documented biases of human decision-makers in the same domain — loss aversion is the named instance — so delegating a judgment does not launder the bias out of it. The oversight implication is uncomfortable: reviewer and reviewed are biased in **correlated** ways, which is the configuration least likely to catch an error. See [[responsible-ai]].

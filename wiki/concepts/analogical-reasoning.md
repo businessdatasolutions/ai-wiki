@@ -3,9 +3,9 @@ type: concept
 aliases: ["analogical reasoning", "analogical-reasoning", "strategy by analogy", "predictive analogy"]
 tags: [analogical-reasoning, strategy-theory, theory-based-view, carroll, sorensen]
 confidence: 0.8
-last_confirmed: "2026-06-25"
-accessed_at: "2026-06-25"
-source_count: 2
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 3
 relationships:
   - type: supports
     target: strategic-foresight
@@ -113,3 +113,13 @@ SORT file.name ASC
 
 - Two sources now ([[2026-04-28-carroll-sorensen-strategy-analogy|Carroll & Sørensen]] on strategy methodology; [[2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why|Guilbeault]] on analogy as cognition). Related Gavetti & Rivkin work (2005, 2014) and Felin & Zenger TBV writings would deepen the strategy side; a cognitive-science source on analogy-making (e.g. Hofstadter, Gentner's structure-mapping) would deepen the new cognitive-primitive side.
 - Open question whether LLMs can serve as effective analogy-generation tools — the [[jagged-frontier]] suggests they may be good at the *rhetorical* role and weaker at the *generative/causal* role, and [[2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why|Guilbeault]] argues their statistical-optimization approach is structurally weak at exactly the leaping/insight that analogy enables.
+
+## Isolating transfer from recognition: the masking protocol (added 2026-09-09)
+
+[[2026-03-11-allen-mcdonald-how-well-can-ai-do-strategy-simulation-benchmark|Allen & McDonald (*Strategy Science*, 2026)]] contributes a **method** this page can use: an experimental design that separates *reasoning from general principles* (analogical transfer) from *recognising a case you have already seen* (retrieval).
+
+Their benchmark runs on a published MBA simulation whose teaching materials and solutions are on the open web, so a model might simply recall the winning playbook. Their defence is a deterministic masking function that rewrites every case-specific identifier into a synthetic equivalent — the firm, both technologies, all three customer segments, every performance dimension — plus a from-scratch rewrite of the background brief. The design principle is stated exactly right for this page's purposes: **mask recognition, not knowledge.** General strategic concepts (disruption, exploration versus exploitation) stay fully available, *"because leveraging such general knowledge is precisely what we aim to evaluate."* What is removed is only the lexical fingerprint that would license retrieval.
+
+**The validation makes the distinction concrete.** Asked about the simulation by its real name, **four of six models recite the published playbook**. Asked about the masked version, **none can help: four invent a fictitious simulation and two admit no knowledge.** The same underlying problem, presented twice, produces confident retrieval in one condition and nothing in the other — which is about as clean a demonstration as the corpus has that surface cues, not structural similarity, were doing the work.
+
+This is a reusable instrument. Any claim that a model "reasoned by analogy" to a known case can be tested the same way: strip the identifiers, keep the structure, and see whether the reasoning survives.

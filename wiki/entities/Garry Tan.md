@@ -5,10 +5,10 @@ aliases: ["Garry Tan"]
 tags: [garry-tan, y-combinator, gstack, gbrain, ai-founder-type, startup-school, fat-skills, thin-harness, accelerator-president]
 affiliation: "[[Y Combinator]]"
 role: "President & CEO, Y Combinator (since 2023); founder/engineer; ex-Palantir #10; Posterous co-founder"
-confidence: 0.9
-last_confirmed: "2026-05-28"
-accessed_at: "2026-05-28"
-source_count: 5
+confidence: 0.95
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 6
 ---
 
 # Garry Tan
@@ -109,6 +109,18 @@ Direct operationalisation of [[2026-04-24-hu-yc-how-to-build-a-company-with-ai-f
 - **GBrain enterprise extensions** — Liu notes GBrain *"optimizes for one power user's workflows, not organizational deployment."* If Tan or the YC community open-sources an enterprise extension, the pattern's scalability becomes empirically testable.
 - **Conductor as a distinct entity** — Tan uses Conductor as the multi-session shell for GStack. First-party documentation on Conductor as a separate tool is an open ingest target.
 - **OpenClaw and Hermes** — named by Liu as the personal AI agents GBrain is built for. Both currently Dangling first-mention; primary-source targets.
+
+## The Startup School keynote: the doctrine stated in full ([[2026-08-06-garry-tan-own-your-intelligence|Aug 2026]])
+
+The wiki's fullest first-party statement of Tan's position, and the source that converts the scattered GStack/GBrain material on this page into a single argument. Three things it settles:
+
+- **"Personal AGI" is the name he gives the thesis.** Not an event but a diffusion — *"AGI isn't arriving as an event. It's arriving diffused as your agent running on your context doing your work."* The equation is explicit: a **rented** frontier model + **owned** context + a harness that wires them = an agent that acts like a fast version of you. *"Model quality is rented but your brain is owned."*
+- **GBrain's scale is stated for the first time**: ~**220,000 markdown pages**, 25 years diarized, *"compiled mostly by agents, curated by agents, searched for by agents."* GStack is described as *"mostly skill files plus a browser that the agents can drive"* — the **fat skills, thin harness** slogan already in this page's tags, now with the architecture behind it. See [[llm-wiki]].
+- **The ownership politics, which is new.** Skill files are *"a piece of your cognition… extracted from your head, written down, and executable"*, so the same 40 files are two different futures depending on whose repo they live in. *"Own your skills, because if you don't, your job becomes a skill file."* See [[ai-deskilling]].
+
+Two contributions are portable beyond his own stack. The **latent-versus-deterministic** diagnostic — *"the most important question to ask here is where is the computation happening… confusing them causes every agent failure I've ever seen"* — is now recorded on [[agent-harness]] as a failure taxonomy. And the **skillify** discipline (*"if you have to ask for something twice, you failed"*) is on [[agentic-engineering]].
+
+He is also unusually candid about the failure mode of his own architecture: *"a brain nobody curates is a garbage dump with great search."* The stated remedies — provenance on every fact, contradiction checks, a librarian whose job is pruning — are the same three disciplines this wiki's schema encodes, reached independently.
 
 ## Mentioned in
 

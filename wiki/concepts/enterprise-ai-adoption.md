@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-08-31"
-accessed_at: "2026-08-31"
-source_count: 112
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 114
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -24,8 +24,7 @@ relationships:
   - type: supports
     target: 2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas
     via: "MGI quantifies the firm-side scale of the AI deployment race: AI foundation cluster (semiconductors + cloud + AI software) added $11T market cap + $500B revenue since 2022; nine omniscalers spent $800B on R&D + capex in 2025 alone"
-quality_score: 0.99
-quality_notes: ['1 near-empty section(s)']
+quality_score: 1
 ---
 
 # Enterprise AI Adoption
@@ -807,3 +806,13 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "ai-adoption") OR contains(tags, "ai-maturity")
 SORT file.name ASC
 ```
+
+## The interface inversion, and who writes the workflows now (added 2026-09-09)
+
+The [[2026-09-01-cfa-institute-agentic-ai-finance-workflows-governance|CFA Institute roundtable]] names a structural change in how work reaches the tools, from inside a profession with a defined incumbent stack. Preece states it as the contrast: traditionally an investment professional opens Excel, opens a Bloomberg terminal, moves between several platforms, extracts, then analyses. Now *"the AI tool kind of sits above all of these tools that are then connected"*, and the primary point of interface is the AI platform itself. Pisaneschi confirms the mechanism — once sources are connected, the agent decides whether an incoming question matches a defined task, pulls the relevant skill, and starts that workflow.
+
+**Two adoption claims follow.** The first is about *who builds*: skills — *"just these markdown files… semi-structured text that outline a very specific workflow"* — plus MCP servers have displaced hand-built Python agent frameworks within a year, and *"you don't need to know how to program"*, with the honest qualifier that programming ability still buys robustness and custom connectors. [[2026-08-06-garry-tan-own-your-intelligence|Tan]] reports the same from a very different organisation: media, events and finance staff who never open a terminal writing skill files and scheduled jobs.
+
+The second is about *where capability comes from*, and it is the more consequential one for an adoption strategy. Iterating a skill when it fails is individual; the collective version is the point — *"especially if you have the same task done with several analysts in a firm or even across the industry, you can have everybody kind of making that skill better and better and better, [so] that **even if the models don't get any better at all**… we can really create incredibly robust workflows just by our own knowledge and iteration."*
+
+That is a claim that **organisational capability can compound independently of the model release cycle**, through shared and iterated procedure. It reframes the investment question this page tracks: the durable asset is not the model contract but the accumulated, versioned procedure — and, notably, a professional body is well placed to make the argument because its members perform the same tasks at competing firms.

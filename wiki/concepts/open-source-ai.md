@@ -2,10 +2,10 @@
 type: concept
 aliases: ["open source AI", "open-source AI", "open-weight models", "open weights", "open models", "AI sovereignty", "own vs rent AI"]
 tags: [open-source-ai, open-weight-models, own-vs-rent, ai-sovereignty, concentration-of-power, china-open-models, safety-through-transparency, hugging-face]
-confidence: 0.87
-last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
-source_count: 7
+confidence: 0.9
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 11
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -13,8 +13,7 @@ relationships:
   - type: supports
     target: agent-harness
     via: "shares the own-vs-rent ownership motif — 'the model is what you rent, the harness is what you own'; open weights are the substrate that specialization/harnessing is owned on top of"
-quality_score: 0.99
-quality_notes: ['1 near-empty section(s)']
+quality_score: 1
 ---
 
 # Open-Source AI
@@ -107,7 +106,6 @@ She also notes the policy dependency this page tracks: *"just last week, Jensen 
 **Source-quality caveat, load-bearing.** This is investor content addressed to the speaker's own portfolio at an event designed to change that portfolio's behaviour, and the companies named as evidence are largely portfolio companies. The wiki now holds three own-vs-rent sources — a platform CEO ([[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue]]), a substrate vendor ([[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Jensen Huang]]) and an investor (Huang) — whose **shared blind spot is that all three sell something that becomes more valuable if enterprises stop renting**, and none of them measures the outcome. Confidence on this page is raised to 0.87 on the strength of a third independent vantage converging, not on the strength of the evidence, which remains absent.
 
 ## Sources consulted
-## Sources consulted
 
 - [[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue / Hugging Face (TechCrunch Equity, Jul 2026)]] — the fullest single-source treatment: own-vs-rent flow, safety-through-transparency, China's open-model lead, concentration-of-power, local AI / robotics.
 - [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Huang / NVIDIA (LangChain, Jul 2026)]] — the own-vs-rent thesis from the substrate/silicon side; proprietary specialization on open weights; the Nemotron benchmark.
@@ -134,3 +132,39 @@ She also notes the policy dependency this page tracks: *"just last week, Jensen 
 ## A security asymmetry (added 2026-08-30)
 
 [[2025-06-12-spracklen-package-hallucinations-code-generating-llms|Spracklen et al.]] measured package hallucination at **≥5.2% for commercial models against 21.7% for open-source models** — a four-fold gap between model *classes* rather than a capability gradient. Worth holding alongside this page's capability-convergence argument: on this particular safety-relevant behaviour, the classes had not converged as of the 2024–25 model vintage studied. See [[ai-generated-code-quality]].
+
+## Ownership below the firm, and two limits the page has been missing (added 2026-09-09)
+
+Three sources from the 9 September 2026 batch push this page in two directions at once: **down** an aggregation level, from the firm to the device and the individual, and **sideways** into two constraints the own-vs-rent literature here had not yet stated.
+
+### Down a level: the device (OpenJarvis)
+
+[[2026-09-07-yc-paper-club-why-the-harness-matters-more-than-the-model|Jon Saad-Falcon's OpenJarvis segment]] runs this page's argument at *personal* scale, and its economics are not the ones the firm-level sources use. The case against cloud-bound personal AI is four-part — cost (thousands of dollars a year aggregated), privacy (your most personal data leaves the machine), rented-not-owned intelligence, and energy — and the enabling claim is that locally runnable models are *"only 6 to 12 months behind"* the frontier, with the gap closing as consumer accelerators improve.
+
+The load-bearing mechanism is new to this page: **pay frontier prices once, at optimisation time, not per inference.** A cloud model diagnoses the local stack, proposes changes and gates them; the resulting configuration then runs entirely locally. Optimised configurations beat out-of-the-box local deployment on cost, latency *and* quality, at a reported **~800× lower inference cost** — and any strong optimiser works (Opus 5 and GPT-5.6 best, but Gemini, Kimi and GLM all functional), so the technique is not tied to one vendor. That is a different argument from "open weights are cheaper at volume": it says the frontier's advantage can be *spent down into* an owned artifact rather than rented continuously.
+
+### Down another level: the individual (Tan)
+
+[[2026-08-06-garry-tan-own-your-intelligence|Tan's keynote]] takes the identical structure to the level of one worker and reaches a conclusion this page has no analogue for. His equation keeps the frontier model **rented** — *"model quality is rented but your brain is owned"* — so the owned asset is not weights but **accumulated context and executable procedure**. That the two Own Your Intelligence events, [[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Sequoia's]] and YC's, ran within a week of each other with the same slogan and different owned assets is the clearest sign the motif has become general.
+
+He also answers an objection the cost-driven sources cannot reach: **what happens when models improve.** *"The better the models get, the more the differentiator moves to context. When everyone's engine is a 1000 horsepower, the race is won on the driver and the map… A better model makes your library worth more because a smarter reader extracts more from the same books."* Frontier progress becomes a free upgrade to the owned layer rather than a threat to it — which is a stronger defence of ownership than cost-at-scale, because it does not expire when inference gets cheap.
+
+And it adds a **labour** dimension: skill files are externalised cognition, so who holds the repo becomes a question about careers, not just about margins. *"Own your skills, because if you don't, your job becomes a skill file."* See [[ai-deskilling]] for why this is a distinct risk from skill atrophy — the worker's judgment stays intact and is captured anyway.
+
+### Two limits, from the regulated-profession vantage
+
+The [[2026-09-01-cfa-institute-agentic-ai-finance-workflows-governance|CFA Institute roundtable]] supplies the honest counterweight, and it matters because the speakers are practitioners with no position in the outcome.
+
+**Limit 1 — throughput, not capability, is where open deployment breaks.** Tate did the comparison properly: proprietary model as baseline, open alternatives through an identical pipeline. *"With a much smaller large language model that was open source, I was able to replicate more or less what the proprietary OpenAI model was able to do for the task."* The failure was scale — a ~36B model *"still took a very, very long time"* against a proprietary batch API absorbing 50,000 requests and returning within 24 hours. *"It's very difficult to replicate that locally unless you invest a lot in the infrastructure."* This page's sources argue capability convergence; none of them had addressed **throughput** convergence, which is a different and largely unmet condition.
+
+**Limit 2 — the harness gap is a reason open substitution fails even when the model is fine.** Pisaneschi: take an open model, *"[throw] it into the open source harness, it is not going to quite be as good as Claude Code"*, because the closed vendors have built real parallelisation and optimisation into theirs. His conclusion — *"it's a winner take all scenario"* — and his framing of open source's value as **cost optimisation rather than capability** is the older position, and it **contradicts** [[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Huang's]] claim three weeks earlier that owning the stack can now *beat* frontier performance in-domain.
+
+The disagreement is genuine and this page should not settle it. The likely reconciliation is scope — Huang is talking about a narrow domain with proprietary data and a real post-training capability, Pisaneschi about general capability available to a firm without one — but neither addresses the other. Note also that Pisaneschi's *"three months"* lag and Saad-Falcon's *"6 to 12 months"* are probably not in conflict: **the frontier of open weights is not the frontier of what runs on a laptop**, and neither speaker draws that distinction.
+
+## The open-model plateau on a strategy task (added 2026-09-09)
+
+A narrow but useful data point from [[2026-03-11-allen-mcdonald-how-well-can-ai-do-strategy-simulation-benchmark|Allen & McDonald (*Strategy Science*, 2026)]], who ran **13 open-source models** (DeepSeek, Gemma, Qwen, Llama, GPT-OSS) alongside 21 proprietary ones through the same strategy simulation under identical conditions.
+
+Open models scored **substantially lower** than proprietary systems, with performance **less systematically correlated with release date**, appearing to have *"plateaued at a markedly lower level."* Notably, they did **not** show the frontier decline the newest proprietary models exhibited — they were simply flat and lower.
+
+This is worth holding against the page's capability-convergence argument without overreading it. The task is a specific one (multiperiod strategic resource allocation under uncertainty), the models are out-of-the-box with no post-training or harness work, and the paper's own framing is that it tests *"general out-of-the-box LLM capabilities"* while *"focusing attention through fine-tuning or prompting could yield very different results."* So it is evidence that **convergence is uneven by task**, not that the own-vs-rent case fails — and it is precisely the kind of domain-specific gap that [[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Huang's]] post-training argument claims to be able to close.

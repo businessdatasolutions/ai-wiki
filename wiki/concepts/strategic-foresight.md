@@ -3,9 +3,9 @@ type: concept
 aliases: ["strategic foresight", "strategic-foresight", "corporate foresight", "futures thinking"]
 tags: [strategic-foresight, scenarios, futures, signal-detection, FTSG, webb, arena-creation-potion, arenas-radar, MGI]
 confidence: 0.87
-last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
-source_count: 12
+last_confirmed: "2026-09-09"
+accessed_at: "2026-09-09"
+source_count: 13
 relationships:
   - type: part-of
     target: dynamic-capabilities
@@ -237,3 +237,13 @@ SORT file.name ASC
 
 - The wiki currently reflects FTSG's lens (Webb's 10 steps; convergence framing). Comparison with academic futures-studies literature (Schwartz, Ramirez, Saritas) would broaden the concept.
 - The 2026 *Convergence Outlook* is only ingested at the framing level; per-section deep-reads would substantially expand this concept.
+
+## Simulation as a foresight instrument — pointed at the AI itself (added 2026-09-09)
+
+[[2026-03-11-allen-mcdonald-how-well-can-ai-do-strategy-simulation-benchmark|Allen & McDonald (*Strategy Science*, 2026)]] uses a scenario simulation in a way this page has not previously recorded: **not to explore a firm's futures, but to find out what a capability will do before betting on it.**
+
+The instrument has the properties foresight work wants — delayed and noisy feedback, an unavoidable structural downturn around year 4, technology thresholds that only reward early sustained commitment, and no stated objective function, so priorities must be chosen rather than optimised. Run 34 models through it and you learn something about their judgment under uncertainty that no amount of capability documentation would tell you.
+
+**The result is itself a foresight warning, and a pointed one.** The signals an organisation would naturally scan to decide which model to trust — headline benchmark scores, vendor release notes, arena rankings — **stopped predicting performance on this task**. The correlation with GPQA Diamond is positive through o4-mini and then reverses; against LM Arena it plateaus or reverses. A scanning function tracking those signals through 2025 would have concluded that frontier models were getting better at strategic judgment, while on this measurement they were getting worse.
+
+The transferable lesson is about **instrument validity in scanning**: a leading indicator is only useful while the relationship that made it leading still holds, and nothing in the indicator itself announces when that stops. The authors' remedy is domain-specific measurement — *"without such benchmarks, scholars and practitioners risk mistaking progress in adjacent domains for progress in strategic decision making"* — which is the foresight practice of validating your instruments against the outcome you actually care about, applied to AI capability.
