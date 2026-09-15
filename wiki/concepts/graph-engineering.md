@@ -3,9 +3,9 @@ type: concept
 aliases: ["graph engineering", "graph workflow", "agent graph", "workflow graph", "fan-out join router"]
 tags: [graph-engineering, loop-engineering, agent-orchestration, control-flow, fan-out, join, router, shared-state, determinism, debuggability, agent-swarm, agent-development-kit, google-cloud, multi-agent]
 confidence: 0.75
-last_confirmed: "2026-09-04"
-accessed_at: "2026-09-05"
-source_count: 5
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 6
 relationships:
   - type: part-of
     target: agent-harness
@@ -102,3 +102,17 @@ Held next to [[2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-
 - **The swarm side of the contrast is unsourced.** The wiki holds no primary material on agent swarms as a named architecture — the category enters the corpus only as the thing graph engineering is defined against. Treat *swarm* as a placeholder until a real source lands.
 - **Every claim on this page is vendor-asserted.** Predictability, debuggability and control are stated, never demonstrated: no latency numbers, no cost comparison, no evidence that a graph-structured pipeline outperforms a single loop on the same job. Confidence is capped at 0.75 for that reason, per the vendor-source rule.
 - Open: does the harness/loop/graph layering survive contact with other vendors' vocabularies, or is it Google Cloud's local taxonomy? [[2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-squads-harness|GitHub's hosts]] say *"there's no standard again — no standards in AI"*, which is at least consistent with the latter.
+
+## The loop layer, in running code (added 2026-09-15)
+
+[[2026-09-14-google-cloud-agent-factory-agent-harnesses-explained|The Agent Factory]] demonstrates what sits *inside* a graph's nodes, which this page has described but never shown. Billy builds three harnesses by hand:
+
+| Pattern | Shape | When |
+| --- | --- | --- |
+| **Linear** | inspect → output → exit, same flow every time | *"great if you need some level of determinism"* |
+| **Closed loop** | apply edit → run tests → **capture why it failed** → feed the error into memory → repeat (capped ~5) | code editing; run until resolved |
+| **ADK with guardrails** | memory compaction plus a `block_destructive_commands` check before execution | customisation without writing the plumbing |
+
+The detail worth carrying is in the closed loop: the payload fed back is the **failure text**, not a boolean — *"we're going to see why it failed and feed that error back into memory."* A graph's function nodes carry deterministic logic; its agent nodes carry loops of this shape, and the linear/closed distinction is the same determinism-versus-adaptivity trade this page draws between graph and swarm, one level down.
+
+The framing is also a decent argument for the page's existence: *"you can just use the framework, but a great engineer will really understand the framework. Building a harness yourself is how you understand what's happening under the hood when things break."*

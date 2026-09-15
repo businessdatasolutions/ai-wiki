@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-09-09"
-accessed_at: "2026-09-09"
-source_count: 40
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 41
 relationships:
   - type: instance-of
     target: generative-ai

@@ -5,7 +5,7 @@ tags: [agentic-engineering, vibe-coding, software-3.0, ai-agents, agent-harness,
 confidence: 0.97
 last_confirmed: "2026-09-15"
 accessed_at: "2026-09-15"
-source_count: 57
+source_count: 58
 relationships:
   - type: depends-on
     target: agent-harness
@@ -288,3 +288,17 @@ Read together, the two disciplines are complementary and describe where effort s
 **The tax nobody else names.** Asked whether errors compound as skill files accumulate, Tan answers with a maintenance problem rather than a capability one: *"that's where provenance matters, that's where conflict management [matters] — when you have two facts… You need a cron job that's sweeping through that and making sure that things are accurate and from the right places."* Skillify is not free; a few hundred markdown files is a knowledge base, and knowledge bases rot. See [[llm-wiki]].
 
 His 2027 call — *"the harness wars"*, gated on inference cost collapsing — sits alongside [[2026-09-07-yc-paper-club-why-the-harness-matters-more-than-the-model|YC's own Paper Club]] four weeks later, and is recorded on [[agent-harness]].
+
+## Loop size as the seniority ladder (added 2026-09-15)
+
+[[2026-09-14-google-cloud-agent-factory-agent-harnesses-explained|Ryan Lopopolo, interviewed at Google]], supplies the cleanest answer the corpus has to what *seniority* means in this discipline. The ladder is mechanical — small PRs are easy to review, so agents can review them, which narrows the state space, which supports longer horizons with less human intervention — and it terminates somewhere ambitious: *"wholesale language migrations are tractable because you have put enough guardrails in place to know that a bunch of changes stacked end to end are good."*
+
+Then the mapping:
+
+> *"In the same way I want staff engineers solving problems for the organization six months out — I want, from junior to senior to staff engineers with agents, think about how far in advance they can unblock their agentic team."*
+
+**Seniority measured as loop size**: how far into the future you can remove ambiguity so the agent can proceed without you. Compare [[agent-fleet-management]], which measures the same practitioner by span of control; this measures them by time horizon, and the two are plainly related.
+
+A corollary he draws that the corpus should keep: because you are not reading the code closely, *"you probably don't want to be super in the weeds on prompting and identifying tasks and pointing the agent in the right direction in the first place"* — so the agent classifies its own work type and uses that to discover the context it needs. Sprint planning internalised into the agent.
+
+And the shared-agent picture, which is a genuinely new framing here: team members each bump a different stat, *"like building out the stats of an RPG character"* — a React architect joins and front-end performance improves for everyone — so *"you can get quite a well-rounded agent that has the best of everyone."* The agent as the team's accumulated expertise rather than each engineer's private tool.

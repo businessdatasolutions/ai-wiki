@@ -4,7 +4,7 @@ title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
 confidence: 0.85
 last_confirmed: "2026-09-15"
-source_count: 11
+source_count: 12
 accessed_at: "2026-09-15"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
@@ -119,3 +119,11 @@ The page's existing material treats weak oversight as a discipline failure — o
 **A fifth independent arrival at consequence-and-reversibility.** This page already records that the gate trigger is *irreversibility × external visibility, not stakes*, reached by a regulator, a solo founder, a product executive and a human-factors study. Chatterjee — a cybersecurity academic with no visible contact with that literature — specifies escalation thresholds *"calibrated to consequence and reversibility, not convenience."* Five arrivals from five disciplines.
 
 **And the first concrete oversight metric in the corpus.** This page's standing open question is that *nobody reports a false-approve rate for any risk-scored gate*. That remains true. But Chatterjee proposes the adjacent measurable — regular drills against a misfiring agent, *"measuring not whether it can be stopped, but **how long it takes**"* — alongside the failure it exposes: **kill switches that exist on paper and have never been exercised.** Time-to-halt is now the wiki's nominated oversight metric. It is still reported by nobody, including him.
+
+## Verification as a product feature (added 2026-09-15)
+
+A small but concrete data point on where the corpus's never-let-the-agent-grade-its-own-homework rule has reached. [[2026-09-14-google-cloud-agent-factory-agent-harnesses-explained|Google Cloud]] describes Antigravity's **Boost** command as an orchestrator that delegates specialised sub-agents in parallel and *"finishes with an **independent verification pass** that thoroughly audits the work before anything touches your code base."*
+
+Separate-evaluator design shipped as a product default rather than prescribed as a practice — which is the direction this page has argued oversight has to go, since [[2026-08-26-chatterjee-agentic-governance-gap|prescriptions relying on organisational willpower]] lose to the business case for removing the gate. Worth noting alongside it: Boost is explicitly **not** the default mode (*"you don't need to use it for everyday tasks"*), so the verification pass is reserved for the intricate work — a consequence-calibrated gate, arrived at as a pricing and latency decision.
+
+**Zero evidence attached.** No measurement of what the verification pass catches, no false-approve rate, no time-to-halt. The page's standing complaint — that nobody reports numbers for any gate — survives intact.

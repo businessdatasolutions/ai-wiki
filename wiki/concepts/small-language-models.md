@@ -3,9 +3,9 @@ type: concept
 aliases: ["small language model", "small language models", "SLM", "SLMs", "SLM-first", "heterogeneous agentic systems"]
 tags: [small-language-models, slm, agentic-ai, ai-agents, inference-economics, edge-deployment, quantization, model-specialization, fine-tuning, open-weight-models, tool-calling, function-calling, heterogeneous-agents]
 confidence: 0.75
-last_confirmed: "2026-09-04"
-accessed_at: "2026-09-04"
-source_count: 4
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 5
 relationships:
   - type: instance-of
     target: foundation-models
@@ -110,3 +110,13 @@ And the migration path from an existing LLM agent, per Belcak et al. §6: **log 
 - **A same-vendor tension worth holding open.** [[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|NVIDIA's CEO argues owners should build frontier-scale intelligence]] while NVIDIA Research argues most agentic work is over-provisioned. Different layers of the stack, opposite rhetorical directions, same company.
 - **The gap nobody has closed:** no source measures an SLM-based agent against an LLM-based one **on the same task, under the same harness, with the same evaluation**. Until one does, "as good as models ten times the size" is a benchmark claim, not a deployment claim — and the [[ai-benchmarks]] page's scaffold-versus-model confound applies in full.
 - **Loop termination may be size-conditioned.** Sokolenko reports that below ~30B, agentic loops *"can never terminate… because the SLMs are incentivized to call as many tools as they can."* If that holds, the runaway-loop failure in [[2026-08-25-thurium-wang-google-cloud-four-ways-loop-engineering-fails|Google Cloud's loop-engineering taxonomy]] is partly a model-capability threshold rather than purely a harness-design problem. Single-source, unmeasured, and worth confirming.
+
+## The loop-count argument for a cheap model (added 2026-09-15)
+
+[[2026-09-14-google-cloud-agent-factory-agent-harnesses-explained|Google Cloud's *Agent Factory*]] reaches this page's conclusion from an axis the corpus had not recorded: not device fit, not privacy, not experimentation cost, but **how many times the model runs per task**.
+
+> *"Agents don't work like traditional single-turn prompt boxes. They run in continuous loops, so an agent might inspect a directory, update a function, execute unit tests, and then repeat that sequence 20, 40, or even 60 times just to finish one task. So when you have something that uses that many sequential hops, speed and cost compound dramatically. So a fast, cost-effective model isn't a downgrade — it is the exact thing that makes real-time agentic loops practical and responsive."*
+
+The claim is narrower and more testable than the SLM position paper's: nothing here says a small model is *as capable*, only that **per-invocation latency and cost multiply by the loop count**, so the cheapest model that clears the task bar wins on wall-clock and spend. It is the vendor's argument for Gemini 3.8 Flash as a daily driver, and it is the same reasoning [[agent-harness]] records under heterogeneous routing — with the loop count supplying the multiplier that makes the routing decision material.
+
+Note this is a vendor recommending its own cheaper tier, with no measurements attached.

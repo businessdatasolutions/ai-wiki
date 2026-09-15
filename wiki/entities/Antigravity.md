@@ -5,9 +5,9 @@ aliases: ["Antigravity", "Anti-gravity", "Google Antigravity"]
 tags: [antigravity, agent-harness, google-deepmind, gemini, windsurf, ide, cli, agent-sdk, vibe-coding, through-line]
 since: 2026
 confidence: 0.72
-last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
-source_count: 3
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 4
 relationships:
   - type: part-of
     target: Google

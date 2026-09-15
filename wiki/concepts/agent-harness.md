@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.98
-source_count: 97
+source_count: 98
 relationships:
   - type: part-of
     target: ai-agents
@@ -20,8 +20,8 @@ relationships:
   - type: uses
     target: small-language-models
     via: "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed"
-last_confirmed: "2026-09-09"
-accessed_at: "2026-09-09"
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -920,3 +920,23 @@ Four failure modes, reported rather than predicted:
 The [[2026-09-01-cfa-institute-agentic-ai-finance-workflows-governance|CFA Institute roundtable]] reaches this page's central claim from a witness with no stake in it. Asked why an investment firm cannot simply substitute an open model, Pisaneschi answers that the differentiator has moved to *"they call it harness, but it's essentially how the architecture underlying the agentic framework is"* — take an open model, *"[throw] it into the open source harness, it is not going to quite be as good as Claude Code"*, because the closed vendors built real parallelisation and optimisation into theirs. He is explaining a constraint he would rather not have, which makes it a stronger ratification than a vendor's.
 
 He also states the **compounding claim** in its strongest form. Iterating a skill when it fails is individual; the collective version is the point — the same task refined by many analysts across a firm or an industry means *"even if the models don't get any better at all… we can really create incredibly robust workflows just by our own knowledge and iteration."* **Capability growth decoupled from model releases** is the organisational consequence of this page's same-weights-different-harness variance, and no prior source states it that plainly.
+
+## The coiner's own correction: harness engineering is not building a harness (added 2026-09-15)
+
+Ninety-odd sources into this page, [[2026-09-14-google-cloud-agent-factory-agent-harnesses-explained|Google Cloud's *Agent Factory*]] puts [[Ryan Lopopolo]] — who coined the term — on camera to say the name misleads:
+
+> *"I have never built a harness. I think this is a big misnomer with what I term harness engineering. I have always kept the [[Antigravity]]-like thing in your agentic system as fixed."*
+
+What the discipline reduces to, in his account, is **tools and context around a fixed harness**, and the argument for that boundary is an obsolescence argument:
+
+> *"All harnesses expose essentially a file read, a grep and an arbitrary command execution tool, which means if you focus all of your efforts on improving quality on tools and context, you can freely adopt the newest models as they come out, and you'll be constantly accruing leverage into a bit of the system that will never become obsolete."*
+
+**And the first warning in the corpus that harness investment can go too far:**
+
+> *"You can very much over-scaffold around them, which constrains them unnecessarily as they get better and gets you into sunk cost fallacy around not wanting to throw this stuff away."*
+
+That is worth holding against this page's overall direction of travel. The corpus has accumulated a large body of argument for building more harness; nobody until now has named the failure mode on the other side, and nobody has measured where the line sits.
+
+**Two further contributions.** *Loop size* becomes the unit of progress — *"all of harness engineering is an increasingly sophisticated set of tricks to bring the agent back to baseline"*, via a ladder (small PRs → agent-reviewable PRs → narrowed state space → longer horizons → *"wholesale language migrations are tractable"*) — and it maps onto seniority: *"I want, from junior to senior to staff engineers with agents, think about how far in advance they can unblock their agentic team."* And the boundary gets its **third Google Cloud statement in two months**, the tightest yet: *"an AI agent is a large language model plus an agent harness. So the harness is everything in that AI agent that isn't the LLM."*
+
+**On attribution.** Asked directly whether he coined the term, Lopopolo confirms and dates it to *"February of this year."* The wiki's Feb-11/Feb-17 co-coinage framing is retained for [[2026-03-10-trivedy-langchain-anatomy-of-an-agent-harness|Trivedy's]] independent articulation, but on **priority** the question is now answered by the coiner on the record — and [[2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-squads-harness|GitHub's advocates crediting LangChain]] stands as a measure of how quickly attribution degrades.

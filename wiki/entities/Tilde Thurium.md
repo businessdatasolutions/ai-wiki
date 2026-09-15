@@ -6,9 +6,9 @@ tags: [tilde-thurium, google-cloud, google-cloud-tech, ai-builder-essentials, de
 affiliation: "Google Cloud (Developer Relations)"
 role: "Developer advocate at Google Cloud; recurring presenter on the AI Builder Essentials series"
 confidence: 0.75
-last_confirmed: "2026-09-04"
-accessed_at: "2026-09-04"
-source_count: 3
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 4
 relationships:
   - type: part-of
     target: Google
