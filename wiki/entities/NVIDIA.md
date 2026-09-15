@@ -6,7 +6,7 @@ tags: [nvidia, gpu, semiconductors, nemotron, openshell, dgx, open-weight-models
 since: 1993
 confidence: 0.80
 last_confirmed: "2026-09-04"
-accessed_at: "2026-09-04"
+accessed_at: "2026-09-15"
 source_count: 2
 relationships:
   - type: supports

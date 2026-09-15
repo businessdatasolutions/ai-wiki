@@ -6,7 +6,7 @@ tags: [sequoia-capital, venture-capital, training-data-podcast, ai-ascent, sonya
 since: 1972
 confidence: 0.75
 last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
+accessed_at: "2026-09-15"
 source_count: 3
 relationships:
   - type: published-by

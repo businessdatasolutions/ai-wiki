@@ -1,0 +1,241 @@
+{
+  "question": "For claims 1-3 in week-03-candidate-claims.md, find sources clearly agreeing (A) or disagreeing (NA), labelled strong (S) or weak (W); target 4 AS / 4 NAS / 4 AW / 4 NAW per claim.",
+  "run_date": "2026-09-15",
+  "skill": "traceable-wiki-answer",
+  "invoked_via": "/wqa",
+  "deliverable": "~/Documents/HAN/M3DM/ai-in-business/work/drafts/week-03-candidate-claims.md",
+  "coding_rule": {
+    "applied": "denominator rule (draft's own definition): S = randomises / covers a population / reports the losers; W = selected on the outcome",
+    "alternative_offered_in_prompt": "scientific sources / experts are strong",
+    "note": "codings disagree on 4 rows, flagged with a warning marker in the deliverable; a genre column is carried so the alternative coding is recoverable",
+    "contestable_rows": [
+      "claim_1 NAS#3 anicich-brouwers (HBR article carrying n=48,000 + n=604)",
+      "claim_2 NAS#2 patil-bfcl (same instrument as AS#1)",
+      "claim_2 NAS#3 cfa-institute (podcast genre, systematic method)",
+      "claim_3 NAS#1 yuan-aseri-ramasubbu (analytical model, no empirical denominator)"
+    ]
+  },
+  "facets": [
+    "stance direction per claim (unambiguous only)",
+    "strong/weak coding",
+    "cell-fill feasibility"
+  ],
+  "retrieval": {
+    "c1": {
+      "focus": "claim 1 \u2014 trust judgement",
+      "query": "Should a firm trust its own people's judgement that AI is speeding them up, or wait to measure it? Self-reported AI productivity versus measured productivity, RCTs, developer surveys, perception gap",
+      "candidate_count": 65,
+      "qmd_hit_count": 13,
+      "graph_available": true,
+      "graph_warning": null,
+      "source_candidates": 52
+    },
+    "c2": {
+      "focus": "claim 2 \u2014 own or rent",
+      "query": "Should a company run its own small open-weight models it controls instead of renting frontier model APIs? own versus rent, sovereign AI, cost at scale, small language models, benchmarks",
+      "candidate_count": 84,
+      "qmd_hit_count": 14,
+      "graph_available": true,
+      "graph_warning": null,
+      "source_candidates": 56
+    },
+    "c3": {
+      "focus": "claim 3 \u2014 augment or automate",
+      "query": "Should a first AI project augment existing staff to make them faster, or automate and remove process steps? augmentation versus automation, job redesign, headcount",
+      "candidate_count": 89,
+      "qmd_hit_count": 12,
+      "graph_available": true,
+      "graph_warning": null,
+      "source_candidates": 64
+    }
+  },
+  "totals": {
+    "candidates_triaged": 482,
+    "distinct_sources_cited": 44,
+    "slug_existence_verified": true,
+    "cl2_double_use_check": "passed \u2014 no source appears in two cells of the same claim",
+    "cells_filled": "48 of 48"
+  },
+  "ignore_reason_classes": {
+    "off_facet_graph_neighbour": 150,
+    "stance_ambiguous": 11,
+    "duplicate_of_filled_cell": 6,
+    "decayed_or_superseded": 2,
+    "topic_adjacent_not_claim_bearing": 14
+  },
+  "use_set": {
+    "concept_pages": [
+      "ai-coding-productivity-evidence",
+      "small-language-models",
+      "automation-vs-augmentation",
+      "open-source-ai"
+    ],
+    "source_pages_cited": 37,
+    "deviation_declared": "skill guidance is 4-8 USE pages; this deliverable is a source enumeration so the USE set is necessarily larger"
+  },
+  "cells": {
+    "claim_1": {
+      "claim": "A firm should trust its own people's judgement that AI is speeding them up, rather than wait to measure it.",
+      "AS": [
+        "2026-02-27-cui-demirer-generative-ai-high-skilled-work-three-field-experiments",
+        "2025-09-23-dora-2025-state-of-ai-assisted-software-development",
+        "2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work",
+        "2025-10-05-patwardhan-et-al-openai-gdpval"
+      ],
+      "NAS": [
+        "2025-07-10-becker-metr-early-2025-ai-experienced-developer-productivity",
+        "2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork",
+        "2026-06-10-anicich-brouwers-why-employees-arent-transparent-ai-usage",
+        "2026-03-30-liu-debt-behind-the-ai-boom"
+      ],
+      "AW": [
+        "2026-08-06-garry-tan-own-your-intelligence",
+        "2026-07-25-darroman-profitable-founder-managing-ai-agents-25-prs-a-day",
+        "2026-08-31-blum-how-i-ai-claude-cowork-pm-system",
+        "2026-06-18-ramaswamy-mckinsey-every-company-software-company"
+      ],
+      "NAW": [
+        "2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity",
+        "2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company",
+        "2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder",
+        "2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer"
+      ],
+      "bench": [
+        "2025-07-30-veracode-2025-genai-code-security-report",
+        "2026-06-11-abujadallah-rejection-of-agentic-pull-request-fixes",
+        "2026-02-12-gloaguen-evaluating-agents-md-repository-level-context-files"
+      ],
+      "filled": 16,
+      "target": 16,
+      "complete": true
+    },
+    "claim_2": {
+      "claim": "An SME should run its AI on small models it controls rather than on frontier models it rents.",
+      "AS": [
+        "2025-07-13-patil-berkeley-function-calling-leaderboard",
+        "2025-04-04-prabhakar-salesforce-apigen-mt-xlam-2",
+        "2025-06-02-belcak-nvidia-small-language-models-future-agentic-ai",
+        "2026-09-07-yc-paper-club-why-the-harness-matters-more-than-the-model"
+      ],
+      "NAS": [
+        "2026-03-11-allen-mcdonald-how-well-can-ai-do-strategy-simulation-benchmark",
+        "2025-06-12-spracklen-package-hallucinations-code-generating-llms",
+        "2026-09-01-cfa-institute-agentic-ai-finance-workflows-governance",
+        "2026-04-28-ai-index-report-2025"
+      ],
+      "AW": [
+        "2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai",
+        "2026-07-10-hugging-face-ceo-companies-done-renting-their-ai",
+        "2026-07-08-jensen-huang-why-companies-need-open-agent-systems",
+        "2026-08-06-garry-tan-own-your-intelligence"
+      ],
+      "NAW": [
+        "2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world",
+        "2026-05-21-allen-aws-london-exec-forum-agentic-team-structures",
+        "2026-09-14-google-cloud-agent-factory-agent-harnesses-explained",
+        "2025-05-06-jassy-amazon-agility-ai-strategy-changing-role-of-managers"
+      ],
+      "filled": 16,
+      "contestable": 2,
+      "target": 16,
+      "complete": true,
+      "shortfall_reason": "CFA roundtable can fill NAS (controlled pipeline comparison) or NAW (podcast genre) but not both without breaking CL-2; whichever cell it takes, the other stops at 3. GDPval was dropped from NAS as an argument from silence (it never tested a small/open model). BFCL was removed from NAS because it is the same paper as AS#1. Rent-side weak advocacy is structurally scarce: Nadella, Jensen Huang and the BBC adviser all turn out A-leaning.",
+      "caveat": "NAW is three-quarters Amazon (two AWS events + Jassy) plus Google once. The rent-side case in this corpus is made almost entirely by hyperscalers, because every non-vendor candidate (Nadella, Jensen Huang, BBC adviser) argues A-leaning. Cell is usable but monotone; one non-vendor open-web voice would strengthen it. Separately, both strong cells rest on benchmark transfer \u2014 no source measures an SLM agent against an LLM agent on the same task under the same harness."
+    },
+    "claim_3": {
+      "claim": "An SME's first AI project should make its existing staff faster rather than remove steps from a process.",
+      "AS": [
+        "2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work",
+        "2025-10-05-patwardhan-et-al-openai-gdpval",
+        "2025-06-09-krakowski-human-centered-ai-field-experiment",
+        "2026-05-07-anthropic-economic-index-5-learning-curves"
+      ],
+      "NAS": [
+        "2025-07-10-becker-metr-early-2025-ai-experienced-developer-productivity",
+        "2026-04-28-dellacqua-jagged-technological-frontier",
+        "2025-06-01-autor-thompson-expertise",
+        "2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening"
+      ],
+      "AW": [
+        "2026-07-14-khan-academy-ceo-the-real-ai-opportunity-is-in-boring-industries-sal-khan",
+        "2026-02-18-lyft-customer-support-with-claude",
+        "2026-02-09-hubspot-customer-success-with-claude",
+        "2026-06-18-ramaswamy-mckinsey-every-company-software-company"
+      ],
+      "NAW": [
+        "2026-08-14-blomfield-yc-building-structuring-ai-native-company",
+        "2026-04-25-masad-replit-ceo-only-two-jobs-left",
+        "2026-05-05-nishar-nohria-end-of-one-size-fits-all",
+        "2026-06-19-lopopolo-ai-native-devcon-harness-engineering"
+      ],
+      "bench": [
+        "2026-04-29-boussioux-crowdless-future",
+        "2026-01-20-yuan-aseri-ramasubbu-backfiring-ai-deployment-workplace",
+        "2025-04-26-wang-aideation-human-ai-collaborative-ideation-concept-designers"
+      ],
+      "filled": 16,
+      "contestable": 0,
+      "target": 16,
+      "complete": true,
+      "shortfall_reason": "NAS is structurally unfillable: per automation-vs-augmentation, pure automation removes the worker so per-worker productivity stops being a coherent outcome, and randomised/population designs can only stock the augmentation side. A measurement asymmetry, not a corpus gap.",
+      "note": "NAS filled on the second pass. All four disagree by showing AUGMENTATION FAILING, not automation succeeding. The corpus still has no head-to-head study where automating a step beat assisting the worker on the same task, and automation-vs-augmentation explains why (automation dissolves the per-worker outcome). Sufficient for the instrument; worth briefing deliberately."
+    }
+  },
+  "corrections_applied": [
+    {
+      "what": "Anthropic Economic Index latest augmentation/automation split",
+      "from": "53% / 45% (concept-page summary table)",
+      "to": "53% / 44% (5th-report source page)"
+    },
+    {
+      "what": "Khan Academy quote",
+      "from": "paraphrase '3x more with the same resources, never a catalyst for layoffs'",
+      "to": "verbatim: 'if we could do 3x more with the same resources, we will do 3x more; that would never be the catalyst for layoffs' - catalyst is revenue, 'not AI'"
+    }
+  ],
+  "headline_findings": [
+    "All three claims fill 4/4/4/4 = 48 sources.",
+    "Claim 2's NAW cell is three-quarters Amazon \u2014 the rent-side case is made almost entirely by hyperscalers because every non-vendor candidate argues the other way.",
+    "Claim 3's NAS cell fills, but all four disagree by showing augmentation failing rather than automation succeeding; no head-to-head automate-vs-assist study exists, and per the corpus probably cannot.",
+    "First-pass recommendations to drop claim 3 and to call claim 2 short are both WITHDRAWN.",
+    "Method: broad retrieval finds topics; cell-shaped queries find cells; a grep over frontmatter tags found what eight semantic queries missed.",
+    "The same source reads differently per claim \u2014 METR was a claim-1 source and became one of the strongest claim-3 NAS sources."
+  ],
+  "retrieval_pass_2": {
+    "reason": "first pass stopped at shortfalls; stop-condition review required exhausting the search",
+    "queries": [
+      "RCT where AI assistance made existing workers worse or had no effect, out-of-frontier accuracy loss",
+      "measured evidence automating end to end outperforms assisting a worker, straight-through processing, automation share rising",
+      "measured comparison open-weight self-hosted vs proprietary API quality security cost, package hallucination open vs commercial",
+      "why you should not self-host, use managed frontier API instead of building, buy rather than build AI",
+      "benchmark where larger frontier models clearly outperform smaller or open models, tau-bench, small model fails long horizon"
+    ],
+    "additional_candidates": "~200",
+    "stopped_because": "repeated queries returned the same pool (saturation)",
+    "sources_found": [
+      "2025-06-12-spracklen-package-hallucinations-code-generating-llms",
+      "2025-06-01-autor-thompson-expertise",
+      "2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+      "2026-04-28-dellacqua-jagged-technological-frontier",
+      "2026-05-21-allen-aws-london-exec-forum-agentic-team-structures",
+      "2026-09-07-yc-paper-club-why-the-harness-matters-more-than-the-model (OpenJarvis segment)",
+      "2025-07-10-becker-metr-... re-read against claim 3 rather than claim 1"
+    ],
+    "lesson": "broad semantic retrieval under-serves cell-filling; the productive queries named the SHAPE of evidence wanted, not the topic"
+  },
+  "retrieval_pass_3": {
+    "method": "structural sweep \u2014 enumerated all corpus sources tagged for model choice / benchmarks / openness (grep over frontmatter tags, 44 sources), then read those never surfaced by any semantic query; plus a body-text grep for explicit rent-side phrasing",
+    "reason": "pass-2 saturation looked like exhaustion and was not; two qualifying sources were in the corpus, tagged, and never returned by eight semantic queries",
+    "sources_found": [
+      "2026-04-28-ai-index-report-2025 (inference cost cratered 280-fold in 18 months at fixed quality; hw -30%/yr; energy +40%/yr)",
+      "2025-05-06-jassy-amazon-agility-ai-strategy-changing-role-of-managers (middle stack layer explicitly for 'teams that don't want to train models', served by third-party frontier models via Bedrock)"
+    ],
+    "candidates_considered_and_rejected": {
+      "2025-10-05-patwardhan-et-al-openai-gdpval": "argument from silence \u2014 never tested a small or open model",
+      "2026-06-05-nadella-hoffman-possible-ai-future-of-the-firm": "A-leaning ('don't use frontier models for non-frontier problems')",
+      "2026-05-05-stanford-ai-club-chamath-...": "no clean stance on model ownership",
+      "2026-06-18-ramaswamy-mckinsey-every-company-software-company": "ambiguous \u2014 hosts open models alongside frontier",
+      "2025-05-17-turc-llms-low-precision-quantization-fundamentals": "mechanism explainer, no stance"
+    }
+  }
+}

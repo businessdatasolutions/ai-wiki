@@ -6,7 +6,7 @@ tags: [omni, multimodal, world-models, foundation-models, google-deepmind, gemin
 since: 2026
 confidence: 0.70
 last_confirmed: "2026-06-15"
-accessed_at: "2026-06-15"
+accessed_at: "2026-09-14"
 source_count: 1
 relationships:
   - type: part-of

@@ -5,7 +5,7 @@ aliases: ["METR", "Model Evaluation and Threat Research"]
 tags: [metr, ai-evaluation, ai-benchmarks, ai-safety, reward-hacking, rct, developer-productivity, task-horizons, re-bench, hcast]
 confidence: 0.8
 last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
+accessed_at: "2026-09-15"
 source_count: 3
 relationships:
   - type: employs
