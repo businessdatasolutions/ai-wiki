@@ -1,12 +1,15 @@
 ---
 type: concept
-aliases: ["open source AI", "open-source AI", "open-weight models", "open weights", "open models", "AI sovereignty", "own vs rent AI"]
+aliases: ["open source AI", "open-source AI", "open-weight models", "open weights", "open models", "own vs rent AI"]
 tags: [open-source-ai, open-weight-models, own-vs-rent, ai-sovereignty, concentration-of-power, china-open-models, safety-through-transparency, hugging-face]
 confidence: 0.9
-last_confirmed: "2026-09-09"
-accessed_at: "2026-09-09"
-source_count: 14
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 15
 relationships:
+  - type: supports
+    target: ai-sovereignty
+    via: "open weights are one route to strategic autonomy; this page argues open weights on their own terms, ai-sovereignty holds the autonomy question they are one answer to. The 'AI sovereignty' alias moved to that page on 2026-09-15"
   - type: supports
     target: enterprise-ai-adoption
     via: "the own-vs-rent flow (frontier APIs for experimentation, owned/open models for production at scale) is a driver of how enterprises adopt AI"
@@ -137,6 +140,14 @@ The [[2025-06-02-belcak-nvidia-small-language-models-future-agentic-ai|NVIDIA SL
 > *"When more individuals and organizations can participate in developing language models with the aim for deployment in agentic systems, the aggregate population of agents is more likely to represent a more diverse range of perspectives and societal needs."*
 
 Worth noting who is making these arguments: an **enterprise vendor's research lab** ([[Salesforce AI Research]]) open-sourcing both the [[xLAM]] weights and the synthetic training data, while the same company's product line sells the agentic platform Sokolenko cites as the emblem of the hype. Open-weight releases are increasingly a competitive move by large vendors, not only a community one.
+
+## Sovereignty moved to its own page, and a layer-choice framing (added 2026-09-15)
+
+[[2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai|Sundararajan / WEF Radio Davos, September 2026]] supplies a framing this page had been carrying implicitly and can now hand off. His claim is that autonomy is not achievable whole — *"I don't think any country has full-stack AI sovereignty anyway — we have semiconductor dependencies, manufacturing dependencies, cloud dependencies"* — so the real decision is *"what is the layer of AI that is most important for me to have strategic autonomy."* Open weights, on that reading, are not *the* sovereignty answer but **one layer at which autonomy can be bought cheaply**, which is a narrower and more defensible claim than the one Delangue's national-leadership argument makes.
+
+He also names a motive that has no open-weights component at all: **cultural autonomy** — *"I don't want a foreign technology teaching my second graders."* A country pursuing that is reaching for the post-training and application layer, not the weights.
+
+**Bookkeeping:** the `AI sovereignty` alias moved off this page to [[ai-sovereignty]] on 2026-09-15, so wikilinks of the form `[[AI sovereignty]]` now resolve to the concept rather than here. The §AI sovereignty and China's open-model lead section above is unchanged and stays — it is about **open-model leadership**, which is this page's subject. The broader autonomy question, the state-versus-platform governance material, and the firm-level own-vs-rent decision now live on [[ai-sovereignty]].
 
 ## Sources consulted
 

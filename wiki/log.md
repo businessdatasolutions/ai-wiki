@@ -10,6 +10,41 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-15] ingest | A labour economist on why the entry-level debate is hard to settle — and the wiki's first sovereignty page
+
+One video, checked for duplication by video id against `wiki/` and `raw/` before fetching (clean — the habit is now four batches old and has caught a duplicate in three of them).
+
+**New source page (1):**
+
+- [[2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai]] — *Radio Davos*, [[World Economic Forum]], **co-produced with CGTN**; **Arun Sundararajan** (NYU Stern) with host Robin Pomeroy and CGTN co-host Xin Guan.
+
+**The title undersells the source, and the index bullet says so.** Student advice occupies ~12:26–14:50 of a 32:59 runtime. Slightly under half the episode is AI governance and sovereignty, which the title does not signal at all.
+
+**Two new pages.**
+
+- [[ai-sovereignty]] — **new concept.** The governance half of this source had no home: the corpus holds sovereignty material across [[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Huang]], [[2026-06-05-nadella-hoffman-possible-ai-future-of-the-firm|Nadella]], [[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue]], [[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness|Ng]] and [[2026-06-25-the-ai-factory-the-rewiring-of-indias-tech-industry|the FT India film]], but it was distributed across source pages with [[open-source-ai]] carrying an *AI sovereignty* alias it could not really honour. The page's organising claim is that sovereignty is a **layer-and-dependency question, not a binary** — and that a labour economist reasoning about nation-states and a venture investor reasoning about startups land on the same structure independently.
+- [[World Economic Forum]] — **new entity, promoted by rule rather than by judgment.** WEF was `author:` on exactly one source; this ingest made it two, which fires the second-source promotion rule. `lint-dangling-authors.mjs` reported **zero** dangling authors before this ingest and would have gone non-zero after it. This is the exact silent-skip the lint exists to catch: each ingest defers independently and nobody notices the threshold being crossed.
+
+**Alias migration (small but load-bearing).** `AI sovereignty` moved off [[open-source-ai]]'s `aliases:` to [[ai-sovereignty]], so `[[AI sovereignty]]` now resolves to the concept. The §AI sovereignty and China's open-model lead section on `open-source-ai` **stays** — it is about open-model leadership, which is that page's actual subject. A typed `supports` edge now runs between them and the bookkeeping is recorded on both pages.
+
+**What the source adds that the corpus did not have.**
+
+1. **A causal decomposition where the wiki holds measurements.** [[ai-employment-effects]] already stages [[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson's payroll records]] against [[2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era|Brown's employer surveys]] — a disagreement about *whether* the entry-level slowdown is established. Sundararajan treats that as settled and asks what causes it, naming three candidates. **The third is the find:** COVID-era remote restructuring independently lowered the return on junior hires, on the same timeline, and is not an AI mechanism at all. No source in the corpus separates it from the generative-AI explanation, and AI-exposed occupations are disproportionately the ones that went remote — logged as an unexamined confound for [[2026-04-28-brynjolfsson-canaries-coal-mine|Canaries]], not as a refutation of it.
+2. **The form-of-work axis.** Every employment measurement the wiki holds counts jobs. Sundararajan's decade-old thesis was about the *contractual form* work takes — *"less and less in the form of jobs or employment"* — with ~40M → >70M Americans in non-employment arrangements. A shift from employee to contractor or firm-of-one leaves headcount statistics undisturbed while changing everything underneath them. Logged as a gap on [[ai-employment-effects]].
+3. **The determinism fallacy named outright** on [[automation-vs-augmentation]], plus *role compression* toward verification/problem-formulation/judgment/accountability — with the admission that *"we haven't put our finger on exactly what that bundle is,"* which [[durable-skills]] now carries as a counterweight to its many confident enumerations.
+4. **Harnessing agents as a labour-market advantage** on [[agent-harness]] — and the composition change under it: literature and philosophy students founding one-person companies via OpenClaw.
+5. **Governance authority as the prior question** on [[responsible-ai]], where the page had been cataloguing instruments without asking who holds the right to wield them. The **Mythos** sequence — platform self-restraint superseded within months by a state instrument the vendor did not choose — is recorded on [[Anthropic]] as well.
+
+**Verification notes.** Two proper nouns reached the transcript through ASR and were **checked against external reporting before being written**, not assumed: *Mythos* and *OpenClaw*. Both are real and both accounts match the public record; the checks are recorded in the raw file's `notes:`.
+
+**Framing caveat carried onto every page that cites this source.** The episode is a WEF–CGTN co-production; CGTN is a Chinese state broadcaster whose anchor supplies most of the China material, and Sundararajan discloses that he advises the Internet Society of China. The corpus's most favourable characterisation of Chinese algorithmic governance arrives through both channels, and the wiki holds **no independent source** on Chinese AI-governance mechanics to check it against. Recorded as the largest gap on [[ai-sovereignty]].
+
+**Tooling fix (acquire phase).** The transcript fetch failed deterministically with `transcript panel did not render`, and it was **a third root cause not in the skill's two documented incident notes**: YouTube geolocates UI language from the request IP, served the page in Dutch, and the skill's `/show transcript/i` button matcher could not match *"Transcript tonen"*. The distinguishing tell is the **network, not the DOM** — this cause fires **zero** `/get_transcript` requests, where the 2026-05-13 cause fires one with status 400 and the 2026-08-12 cause one with status 200. Fixed by pinning `hl=en` on the watch URL; note that `locale="en-US"` on the browser context was already present and does **not** override IP-based language selection. Incident note added to the skill. This was invisible to three prior investigations because they were all run from English-locale networks.
+
+**Pages touched (10):** 1 new source, 2 new pages ([[ai-sovereignty]], [[World Economic Forum]]), 6 concepts updated ([[ai-employment-effects]], [[automation-vs-augmentation]], [[durable-skills]], [[agent-harness]], [[responsible-ai]], [[open-source-ai]]), 1 entity updated ([[Anthropic]]), plus `index.md` and this log.
+
+---
+
 ## [2026-09-15] ingest | The harness coiner turns up at Google — and says he has never built a harness
 
 Two videos, requested one at a time and processed as one batch. Neither was a duplicate (checked by video id against `wiki/` and `raw/` before fetching, which is now the habit after three consecutive batches containing one).

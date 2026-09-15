@@ -4,7 +4,7 @@ aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "A
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
 last_confirmed: "2026-09-15"
-source_count: 78
+source_count: 79
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -617,3 +617,19 @@ Split workers on two independent axes — **tangible skill** (technical capabili
 This is more useful than the usual "soft skills matter more now" because it is **wrong in a specific way if it is wrong**: it predicts a measurable within-firm reordering, concentrated in PFP workplaces, with the *technically strongest but least interpersonal* employees as the losers rather than the junior or the routine worker. Nothing in the corpus tests it. It is an unrefereed model whose load-bearing assumption — that AI cannot transfer soft skill — is asserted rather than shown, and [[automation-vs-augmentation]] records why that assumption is increasingly contestable.
 
 Worth reading against [[2025-07-07-tambe-reskilling-workforce-for-ai-domain-expertise-algorithmic-literacy|Tambe]], who measures the same redistribution of codified technical skill across eight years of hiring and workforce data and finds **markets rewarding it**. Same mechanism, opposite valence, and the likeliest reconciliation — that the harm exists only inside rank-order pay — is untested by either.
+
+## Three candidate causes for the entry-level slowdown, and a form-of-work gap the page has been missing (added 2026-09-15)
+
+[[2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai|Sundararajan / WEF Radio Davos, September 2026]] adds two things to this page, and the second is the more structural.
+
+**First, a causal decomposition where the page mostly holds measurements.** The §entry-level rung section above sets [[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson's payroll records]] against [[2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era|Brown's employer surveys]] — a disagreement about *whether* the slowdown is established. Sundararajan treats that as settled and moves the question: *"I don't think there's a lot of debate, at least in the United States, that there has been a slowdown in entry-level hiring. I think there is a very vibrant debate about **what's causing it**."* He names three candidates:
+
+1. **Generative AI breaking the apprenticeship bargain.** Juniors did *"PowerPoint, spreadsheets, routine coding"* in exchange for investment toward senior roles; *"now because the generative AI can do a lot of that somewhat routine cognitive work, that contract is fragmenting."*
+2. **Uncertainty-driven hiring pauses.** *"There's so much uncertainty that organizations are feeling about what will the role of human beings be in the future that a lot of them are just saying — let's hold back. Let's not hire people right now. Let's wait for this to shake out over the next 2, 3 years."*
+3. **A COVID-era confound that is not an AI mechanism at all.** *"It's one thing if you're in the organization 5 days a week absorbing from these senior people. It's another if you're in strategically two or three days a week"* — remote restructuring independently lowered the return on junior hires, on the same timeline.
+
+Cause 3 is the one worth holding, because **no source in the corpus separates it from cause 1**. The occupation-exposure identification strategy in [[2026-04-28-brynjolfsson-canaries-coal-mine|Canaries]] compares AI-exposed against less-exposed occupations — but AI-exposed occupations are also disproportionately the ones that went remote. Sundararajan does not claim this defeats the payroll finding, and neither does this page; it is an unexamined confound, and his own position is agnostic: *"anyone who tells you they know exactly what kinds of work AI is displacing… I would not take too seriously — but there's no doubt that there's going to be a lot of displacement over the next decade."*
+
+**Second, the gap: this page measures job *counts*, not the *form* work takes.** Sundararajan's decade-old thesis was that work would shift *"less and less in the form of jobs or employment and increasingly as non-employment work arrangements"* — and the misreading he corrects is exactly the one this page could make: *"a lot of people, when they saw that subtitle, the end of employment, assumed that I was talking about humans not having anything to do. That wasn't the implication."* His scoreboard: **~40 million Americans** in some non-employment arrangement when he wrote the book, **over 70 million last year**; and, attributed to JD.com's chief economist, **over 40% of China's workforce**, where the term of art is *"flexible employment."*
+
+Treat those figures as uncorroborated — no definition of "non-employment work arrangement" is given, and the China figure is conversational. But the **axis** is real and absent from this page: every measurement the wiki holds counts employment, unemployment and hiring. A shift from employee to contractor, freelancer or firm-of-one can leave headcount statistics undisturbed while changing the security, benefits and progression structure underneath them. See [[ai-sovereignty]] for the geopolitical conditions the same source treats, and [[agent-harness]] for the firm-of-one mechanism.

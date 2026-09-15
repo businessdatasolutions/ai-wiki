@@ -392,7 +392,14 @@ def _dedupe_segments(segments: list[dict]) -> list[dict]:
 # ---------------------------------------------------------------------------
 
 async def fetch(video_id: str, *, headless: bool = True, timeout_ms: int = 30000) -> dict:
-    url = f"https://www.youtube.com/watch?v={video_id}"
+    # `hl=en` pins the UI language. Context `locale=` alone is NOT enough:
+    # YouTube geolocates the interface language from the request IP, so a
+    # non-English network serves localized labels ("Transcript tonen") that
+    # the English-text button matchers below cannot match. That presents as
+    # `transcript panel did not render` with ZERO /get_transcript calls —
+    # the tell that distinguishes it from the 2026-05-13 and 2026-08-12
+    # incidents. See the 2026-09-15 incident note in SKILL.md.
+    url = f"https://www.youtube.com/watch?v={video_id}&hl=en"
     async with async_playwright() as pw:
         browser = await pw.chromium.launch(
             headless=headless,

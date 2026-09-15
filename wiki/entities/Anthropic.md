@@ -5,9 +5,9 @@ aliases: ["Anthropic", "Anthropic PBC", "Claude"]
 tags: [anthropic, ai-lab, foundation-models, claude, public-benefit-corporation, long-term-benefit-trust]
 since: 2021
 confidence: 0.95
-last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
-source_count: 25
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 26
 ---
 
 # Anthropic
@@ -54,6 +54,17 @@ Ries (who plays *"no important role"* but *"a very big role"* in the founding-ad
 - **Claude Opus 4.5** — released between the 4th and 5th Economic Index sample windows. The Managed Agents engineering post notes that the "context anxiety" seen on Sonnet 4.5 was *not present* on Opus 4.5.
 - **Claude Opus 4.6** — released coincident with the 5th Economic Index sample window (Feb 2026).
 - Family-level cost/speed/performance tradeoff: Haiku (fast, cheap) → Sonnet (default) → Opus (most capable, higher per-token price). The 5th Economic Index report quantifies that users select Opus differentially for higher-value tasks: **+1.48 pp Opus per +$10/hour** task value (Claude.ai); **+2.79 pp per +$10** (1P API — about twice as steep).
+
+## The Mythos restriction sequence (added 2026-09-15)
+
+**Mythos** enters the wiki twice, and the two appearances are a year apart in tone. [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Grinstead / How I AI (June 2026)]] credits it with Mozilla's Firefox security-bug spike, splitting the credit roughly evenly between model and harness. [[2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai|Sundararajan / WEF Radio Davos (September 2026)]] treats the *same capability* as the reason the model became a governance object, and reads the sequence as **two phases with different governors**:
+
+- **Phase one — self-restraint.** The code-generating capability *"posed a threat to the computer security of not just the country but of the globe, in terms of this capability could be harnessed to hack into any system,"* and *"the platform proactively said, as a responsible actor, we are not going to release it."*
+- **Phase two — state control.** *"The US government has decided that it may be a threat to national security for non-US citizens — not just people in other countries but non-US citizens — to have access to it, and Anthropic has made the choice to simply not make it available to anyone… in part because they have a number of non-US citizens who work for them."*
+
+Two details worth recording about Anthropic specifically. First, the compliance route — **withdrawing the model from everyone** — was determined by the company's own **workforce composition** rather than by any property of the risk: a restriction framed around who may *access* the model was satisfiable only by making it available to nobody. Second, the episode places Anthropic on both sides of the governance line within months: the actor exercising voluntary restraint in phase one, and the object of an involuntary instrument in phase two.
+
+Sundararajan's reading of what it portends is explicitly provisional — *"we're going to be making it up as we go along, and it's going to be both the government doing that and the platforms doing it."* **Caveat:** this is an interview account, recalled from memory, with no document cited. The wiki has not ingested primary reporting on the restriction, and Anthropic's own account of it is not represented here at all. See [[responsible-ai]] for the governance-authority framing and [[ai-sovereignty]] for the state-capacity one.
 
 ## As a flow-state organisation
 

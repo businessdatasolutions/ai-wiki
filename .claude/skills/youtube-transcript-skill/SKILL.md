@@ -136,6 +136,30 @@ When YouTube provides chapters, the script emits each chapter as a `## [mm:ss] T
 - **`error: "no transcript section"`** — Video has no captions (common for music videos, very short clips, some unlisted videos). The skill still writes the markdown file with metadata only and a placeholder `## Transcript` section. Exit code is `1` so callers can branch on transcript availability without losing metadata.
 - **`error: "transcript panel did not render"`** — Trigger fired but the segment renderers didn't appear in time. Bump `--timeout` to 60000 and retry. If it still fails the video may be region-locked, age-gated, or hitting a panel-render path the skill doesn't handle yet — observed on some long-format talks (≥20 min) even when captions exist; see [GH #2](https://github.com/businessdatasolutions/ai-wiki/issues/2). The skill still writes a metadata-only file.
 
+  *2026-09-15 incident note — the locale trap.* A **third** root cause with the
+  same symptom, and the one to check first because it is the cheapest to rule out.
+  YouTube picks the interface language from the **request IP**, not from the browser
+  context's `locale=`. On a non-English network the watch page renders localized
+  button labels — observed: Dutch `"Transcript tonen"` — and every English-text
+  matcher in `_trigger_transcript_panel` (`/show transcript/i`) silently fails to
+  match. `has_transcript_ui` still returns True (the section renderer exists and is
+  language-independent), so the function falls through to the `yt-action` fallback,
+  which returns True unconditionally, and `_wait_for_transcript` then times out on a
+  panel nothing ever opened. Retrying and raising `--timeout` do not help: the
+  failure is deterministic, not flaky.
+
+  **The distinguishing tell is the network, not the DOM:** this cause produces
+  **ZERO** `/youtubei/v1/get_transcript` requests, because no trigger ever fired.
+  The 2026-05-13 cause produces one with status **400**; the 2026-08-12 cause
+  produces one with status **200**. Check the request count before the status.
+
+  Fixed by pinning `hl=en` on the watch URL in `fetch()`. Note that `locale="en-US"`
+  on the context and the `navigator.languages` spoof were *already in place* and did
+  **not** prevent this — neither overrides YouTube's IP-based language selection, so
+  do not treat their presence as evidence the locale is pinned. This is invisible to
+  anyone developing from an English-locale network, which is why it survived three
+  prior incident investigations.
+
   *2026-08-12 incident note.* Same symptom, **different root cause** — worth checking before you go down the anti-bot path. `_trigger_transcript_panel` used to fire *both* the `yt-action` event **and** a click on "Show transcript". Because YouTube's button *toggles* the panel, the event opened it and the click immediately closed it again, so `_wait_for_transcript` polled a panel that had been open for ~200 ms. Two of five videos in that batch failed deterministically; `/get_transcript` returned **200**, which is the tell that distinguishes this from the 2026-05-13 case below. Fixed by making the click the primary path and the event a fallback used only when no button exists. Note the failure is *also* mildly flaky on long videos — one of the two needed a retry even after the fix.
 
   *2026-05-13 incident note.* YouTube's `/youtubei/v1/get_transcript` endpoint started rejecting WebDriver-flagged sessions with HTTP 400 `"Precondition check failed"`, which surfaces in the skill as this same `panel did not render` symptom (the spinner spins forever, the segments never load). The fix is automation-signal masking, not auth: `--disable-blink-features=AutomationControlled` at launch, `navigator.webdriver` overridden to `undefined`, plus a non-`HeadlessChrome` user-agent. All three are now in place in `fetch()`. If you see this symptom return, the diagnostic to confirm it's the same root cause is: `page.on('response', ...)` and look for `/get_transcript` responses with status 400 and a `failedPrecondition` body.

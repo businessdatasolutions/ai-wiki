@@ -5,7 +5,7 @@ tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
 last_confirmed: "2026-09-15"
 accessed_at: "2026-09-15"
-source_count: 27
+source_count: 28
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -345,3 +345,18 @@ His central move is to refuse the policy framing outright:
 Five interdependent capabilities follow — **action-scoped permissions**, **real-time action visibility** (of actions, not just prompts), **circuit breakers and kill switches**, **escalation thresholds** *"calibrated to consequence and reversibility, not convenience"*, and **cross-agent identity and provenance** — organised under a **Commitment–Preparedness–Discipline** framework that puts agent risk appetite at board level: *"board-level visibility into what autonomous systems are authorized to do is now as material as visibility into financial controls."*
 
 The diagnosis worth quoting when an organisation asks what to do first: *"the capability gap is not technical sophistication. It is the absence of inventory, visibility, and rehearsed control."* Most organisations, he argues, cannot produce a complete list of the agents running in their environment. A practitioner column, no data, no citations — cite for framing and vocabulary, not for prevalence.
+
+## Who holds governance authority — a fifteen-year drift, and the Mythos sequence as its first stress test (added 2026-09-15)
+
+Most of this page treats governance *instruments* — frameworks, oversight, risk appetite, runtime enforcement. [[2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai|Sundararajan / WEF Radio Davos, September 2026]] asks the prior question: **who holds the authority to govern at all.**
+
+**The drift.** *"In many countries that are not China, over the last 15 years we've seen a redistribution of governance power between governments and private entities"* — over what content is accessible, who provides infrastructure, who is responsible for security. *"A lot of those roles shifted away from government and towards platforms… and this happened **de facto** in many ways. As a consequence, if I look at the US today, a lot of governance **has to be** done by the companies, because we're in a world where that is the system."* The *has to be* is the load-bearing phrase: on this account, corporate self-governance in the US is a **structural residue**, not a policy choice or an act of good citizenship — which reframes every vendor governance framework this page catalogues as filling a vacuum rather than exceeding a duty.
+
+**The stress test.** He reads the **Mythos** episode as *"one of the most important early case studies on how AI governance will play out in the United States,"* and specifically as **two phases with different governors**:
+
+- **Phase one — platform self-governance.** The model's code-generating capability *"posed a threat to the computer security of not just the country but of the globe,"* and *"the platform proactively said, as a responsible actor, we are not going to release it."*
+- **Phase two — state control.** *"The US government has decided that it may be a threat to national security for non-US citizens — not just people in other countries but non-US citizens — to have access to it, and [[Anthropic]] has made the choice to simply not make it available to anyone… in part because they have a number of non-US citizens who work for them."*
+
+The transition between phases is the finding: a vendor's voluntary restraint was **superseded within months by a state instrument the vendor did not choose**, and the vendor's compliance route — withdraw entirely — was dictated by its own workforce composition rather than by the risk. His forecast is an admission of immaturity: *"we're in unchartered territory when it comes to who's going to be making the decisions… over the next year or two we're going to have more incidents like this where **we're going to be making it up as we go along**, and it's going to be both the government doing that and the platforms doing it."*
+
+**Comparative note, with a caveat.** He describes China as running *"more active algorithmic governance, where there's better visibility into how the algorithms are worked and governed,"* enforced *"through administrative directives rather than through a courtroom battle,"* and predicts governance settles there *"much sooner than in the EU, and certainly much sooner than the United States."* The episode is **co-produced with CGTN**, a Chinese state broadcaster, and the speaker advises the Internet Society of China — both disclosed on the source page. The wiki holds no independent source on Chinese AI-governance mechanics. Treat the comparison as a hypothesis. See [[ai-sovereignty]], which now holds the state-versus-platform material in full.

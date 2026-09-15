@@ -4,7 +4,7 @@ aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
 last_confirmed: "2026-09-15"
-source_count: 45
+source_count: 46
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -327,3 +327,15 @@ SORT file.name ASC
 [[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork|Dell'Acqua et al. (*Organization Science*, 2026)]] supply the measurement behind a claim this page has carried on [[Ethan Mollick]]'s authority alone. Mollick — a co-author on the paper — tells [[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Simon Sinek]] that evaluation rather than generation is the bottleneck. The experiment's decomposition analysis is that claim with numbers attached: AI *"primarily enhances the quality of generated ideas, shifting the distribution of creative output upward, whereas human judgment retains value in evaluative selection."*
 
 A second result on this page's core question — what experience is *for* — comes from the same paper and cuts against a comfortable reading. AI let professionals produce competent work **outside their own function**, matching cross-functional pairs. If the durable skill is knowing which side of the [[jagged-frontier|jagged frontier]] a task sits on, that skill was not obviously in play here: participants' confidence in their own output was **decoupled** from its measured quality, in the direction of under-confidence. Experience did not make them better calibrated; it is not clear from this experiment that it made them calibrated at all.
+
+## "Make yourself an AI force multiplier" — the prescription, and the admission under it (added 2026-09-15)
+
+[[2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai|Sundararajan / WEF Radio Davos, September 2026]] gives the corpus a compact three-part prescription aimed at students rather than employees, which makes its emphases different from the employer-side framings above.
+
+1. **Be an entrepreneur while still a student.** His premise is that *"the barriers to creating things of value have never been lowered so rapidly by any other technology,"* so the instruction is to exploit that before graduating. Two stated payoffs — *"it creates a portfolio of what you're capable of"* and *"it builds that muscle that allows you to be flexible and resilient and adaptable"* — and a third, conditional one: *"it sets you up to do something on your own if in fact the structure of work is not going to be employment."*
+2. **Be an AI force multiplier.** *"It's not like companies will not want any humans in the short run. They may need fewer entry-level humans, but the ones that they need are going to be the ones who know how to **dramatically increase their output using AI**. And there will actually be a premium on that kind of human."* This is the same skill [[2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era|Netflix's Stone]] makes a universal career-ladder expectation, stated as a hiring-market bet rather than a policy.
+3. **Network, treating student status as a wasting asset.** *"There's never a better time to do that when you're a student, because you can always go up to someone and say I'm a student, I'd like to learn from you. Once you're no longer a student that doesn't work as well."* The corpus has plenty on skills and almost nothing on **access**; this is the first source to treat a social position as itself a depreciating career asset.
+
+**The admission worth holding against the rest of this page.** Sundararajan names the durable bundle by function — *"verifying, being able to know when to trust the machine, what to delegate to the machine, how to exert the judgment that allows you to complement rather than be substituted"* — and then declines to specify it: *"**we haven't put our finger on exactly what that bundle is.**"*
+
+That is a useful counterweight. This page catalogues a great many confident enumerations — the ETS five, the 5 C's, the MGI Skill Change Index, the Vantage protocol — and a labour economist working directly on the question saying the bundle is not yet identified is evidence about the **state of the field**, not merely one more opinion within it. It does not refute the measurement work; it does suggest the convergence those frameworks appear to show may be partly terminological. See [[automation-vs-augmentation]] for the role-compression framing this sits inside.

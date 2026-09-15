@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.98
-source_count: 98
+source_count: 99
 relationships:
   - type: part-of
     target: ai-agents
@@ -940,3 +940,15 @@ That is worth holding against this page's overall direction of travel. The corpu
 **Two further contributions.** *Loop size* becomes the unit of progress — *"all of harness engineering is an increasingly sophisticated set of tricks to bring the agent back to baseline"*, via a ladder (small PRs → agent-reviewable PRs → narrowed state space → longer horizons → *"wholesale language migrations are tractable"*) — and it maps onto seniority: *"I want, from junior to senior to staff engineers with agents, think about how far in advance they can unblock their agentic team."* And the boundary gets its **third Google Cloud statement in two months**, the tightest yet: *"an AI agent is a large language model plus an agent harness. So the harness is everything in that AI agent that isn't the LLM."*
 
 **On attribution.** Asked directly whether he coined the term, Lopopolo confirms and dates it to *"February of this year."* The wiki's Feb-11/Feb-17 co-coinage framing is retained for [[2026-03-10-trivedy-langchain-anatomy-of-an-agent-harness|Trivedy's]] independent articulation, but on **priority** the question is now answered by the coiner on the record — and [[2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-squads-harness|GitHub's advocates crediting LangChain]] stands as a measure of how quickly attribution degrades.
+
+## Harnessing agents as a labour-market advantage, and who can now found a company (added 2026-09-15)
+
+Nearly everything on this page argues the harness from engineering. [[2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai|Sundararajan / WEF Radio Davos, September 2026]] reaches it from labour economics, and states the consequence as a **selection claim about people**:
+
+> *"There's going to be a lot more people who earn their livings as not working for someone else but creating things of value working by themselves. And the early indications are **the people who can harness the agents certainly have a leg up**."*
+
+The observation prompting it comes from co-host **Xin Guan** of CGTN, describing the **OpenClaw** phenomenon in China: *"we have this open-sourced AI agent called OpenClaw… and it just went viral in China and people start their own company… we call it a **one-person company**, and he deploys several AI agents working for him."*
+
+**The part that is actually new is the composition change, not the tooling.** Her point is about *who* can now do it: *"in the past, if you are IT student it's easier to start a business because they know how the internet works, they know how to code. And now if you are study like literature, philosophy — but you can just tell AI agent what you want to do, tell it about your vision, and they're just starting a company."*
+
+Read this against [[2026-09-14-google-cloud-agent-factory-agent-harnesses-explained|Lopopolo's]] position that harness engineering is *curating tools and context around a fixed harness*. If that is right, the skill Sundararajan says confers advantage is not programming — it is the curation and delegation judgment the harness literature has been describing all along, which is consistent with a philosophy graduate acquiring it. The claim is **unmeasured**: *"early indications"* is as precise as he gets, and the China adoption account arrives through a state-broadcaster co-host. [[2026-08-12-tan-a16z-new-rules-for-founders|Tan]] and [[2026-06-17-priest-atlantic-pwc-ai-agents-changing-business|Priest]] hold the wiki's other one-person-company material; [[ai-employment-effects]] holds the employment-form question this feeds.

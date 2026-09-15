@@ -5,7 +5,7 @@ tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, c
 confidence: 0.95
 last_confirmed: "2026-09-15"
 accessed_at: "2026-09-15"
-source_count: 66
+source_count: 67
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -490,3 +490,15 @@ This page's augmentation literature is mostly about *how much* AI helps. Two 202
 **The experiment.** [[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork|Dell'Acqua et al.]] decompose the innovation process and find AI *"primarily enhances the quality of generated ideas, shifting the distribution of creative output upward, whereas human judgment retains value in evaluative selection."* Generation is substitutable; selection is not.
 
 **Where they agree and where they don't.** Both locate an automatable half and a durable half, and both put judgment/coordination on the durable side — consistent with [[durable-skills]]. But the model's assumption is asserted by definition and is increasingly arguable: a growing share of what this corpus documents AI actually doing (drafting a difficult message, preparing a negotiation, summarising a meeting for someone absent) is precisely the *intangible* half. If AI transfers soft skill too, Yuan et al.'s predictions invert. The augmentation/automation line may be moving in the opposite direction from the one their model assumes, and nothing here settles it.
+
+## The determinism fallacy named, and role compression as the shape of the residual (added 2026-09-15)
+
+[[2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai|Sundararajan / WEF Radio Davos, September 2026]] supplies this page's cleanest statement of the gap between *capability* and *deployment* — the distinction the whole page rests on, usually argued rather than named:
+
+> *"Just because AI can do what a human does, or a machine can do what a human does, doesn't mean that it will instantly start to do it in the place of the humans. **That's the fallacy of technological determinism** — that just because a machine can do it, it will immediately."*
+
+His conclusion from it is a claim about pace, in an unusual metaphor: *"I think that we've got some time. There are lots of other factors that make this transition more **viscous**."* This is the same wedge [[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson]] drives between what a model can do and what a firm should have it do, arrived at from labour economics rather than from deployment practice.
+
+**Role compression** is his term for what augmentation leaves behind. Where tasks are delegated, *"the set of things that the human does shifts to **verification, problem formulation, certain kinds of judgment, certain kinds of accountability**"* — and he expects it *"perhaps in western economies as well, but more so in Asian economies,"* where labour shortage makes delegation more attractive. The historical frame he puts it in is the one this page's automation side usually gets: *"100 years ago, muscle got automated. There was a certain kind of **deskilling** as well — the skilled machinist, the craft manufacturer, that kind of skill was put out of business by the machines and work became more routine. But there were other cognitive capabilities that started to command a premium."* See [[ai-deskilling]].
+
+What makes the passage worth keeping is that he **refuses to close it**: *"we haven't put our finger on exactly what that bundle is, but verifying, being able to know when to trust the machine, what to delegate to the machine, how to exert the judgment that allows you to complement rather than be substituted by the machine — these will be the skills that the technological change will be biased in favor of."* The residual is named by function and left unspecified in content, which is more honest than most statements of it and less useful. [[durable-skills]] holds the measurement attempts.
