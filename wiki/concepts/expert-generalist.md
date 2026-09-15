@@ -2,10 +2,10 @@
 type: concept
 aliases: ["expert generalist", "Expert Generalist", "expert generalists", "generalist-specialist blend"]
 tags: [expert-generalist, generalist-vs-specialist, t-shaped, fundamentals-over-tools, patterns, mechanical-sympathy, durable-skills, distributed-systems-fundamentals, hiring, llms-and-skills]
-confidence: 0.82
-last_confirmed: "2026-08-20"
-accessed_at: "2026-09-05"
-source_count: 5
+confidence: 0.90
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 8
 relationships:
   - type: supports
     target: durable-skills
@@ -80,3 +80,15 @@ Rohrer also cites [[Martin Fowler]] directly for the architect's own version of 
 - **Three citing sources, but the term itself still traces to one origin (as of 2026-07-19).** The *term* "Expert Generalist" is named by one source ([[2025-07-02-joshi-venkatraman-fowler-expert-generalists]]); [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen]] and [[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world|Brovich]] (London/Sydney editions of the same AWS Enterprise Strategy talk) *cite and apply* it rather than independently corroborating it — vendor-altitude propagations of one original. [[2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era|Stone]] breaks this pattern: she reaches the underlying claim independently, without citing the term, which is why confidence moved past the prior 0.75 vendor-propagation cap to 0.8 rather than staying capped. Further lift toward 0.85+ would need either a second source using the *named* Expert Generalist framing independently of Fowler/AWS, or additional independent-claim corroborations at Stone's caliber. The *underlying* claim (fundamentals/generalism beat narrow specialisation; AI amplifies it) is separately corroborated by [[durable-skills]] sources, [[2026-05-20-ng-deeplearningai-ai-dev-26-sf-future-of-software-engineering|Ng]], and [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti]].
 - **Open question — measurability.** The authors concede assessing the skill is "a difficult task, often requiring intensive participation from known-capable Expert Generalists." This is the tension with [[durable-skills]]' scalable-measurement programme: can the Expert Generalist trait-set be assessed at scale, or does it remain expert-judged?
 - **Open question — the certification critique.** Fowler claims "little correlation between certifications and competence." A source defending vendor certification value would create a genuine `contradicts` edge.
+
+## The empirical leg this page was missing (added 2026-09-15)
+
+Until now every source on this page was argument: a consultancy's thesis, a practitioner's framing, an architect's team-level restatement. Two 2026 ingests supply measurement, from opposite methods, and both point the same way.
+
+**Labour markets have been repricing the combination for a decade.** [[2025-07-07-tambe-reskilling-workforce-for-ai-domain-expertise-algorithmic-literacy|Tambe (forthcoming, *Management Science*)]] measures the demand side across US job postings (2013–2016) and a worker-reported panel (2015–2021) and finds **algorithmic expertise migrating out of IT and into domain occupations** — *"by 2016, only one-third of the listings requiring algorithmic expertise were for IT occupations"* — in a diffusion pattern resembling general-purpose office software rather than database administration. Critically, the skill spreads specifically among **domain experts with decision-making responsibility**, and **no-code tooling accelerates it**. Financial markets then pay for the pairing: investors assign higher value to a firm's AI and data-science investments when made alongside decentralised algorithmic expertise, and *"similar patterns do not emerge for other technologies or for expertise in other categories of technical skill."*
+
+That is the expert-generalist thesis stated as a complementarity result: breadth is not a virtue in the abstract, it is **the specific combination of domain knowledge with the ability to direct an autonomous tool** that carries the premium.
+
+**And AI now manufactures the generalist output directly.** [[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork|Dell'Acqua et al.]] found that without AI, R&D professionals submitted predominantly technical solutions and commercial professionals predominantly commercial ones; **individuals using AI produced balanced solutions regardless of background**, matching what a cross-functional pair achieved. AI works as *"an effective boundary-spanning mechanism."*
+
+**The caveat both papers raise, and neither resolves.** Tambe cannot distinguish *"deep technological expertise"* from *"interactional expertise"* in his data; Dell'Acqua et al. ask outright whether AI-enabled boundary spanning *"foster[s] genuine knowledge growth, or merely facilitate[s] temporary access to existing expertise."* A commercial professional whose AI-assisted proposal is technically sound has not thereby become technically expert. Whether the expert generalist this page describes is being *created* or merely *simulated* is now the page's central open question — see [[ai-deskilling]].

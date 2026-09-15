@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI deskilling", "ai-deskilling", "task composition shift", "deskilling"]
 tags: [deskilling, task-composition, ai-employment-effects, occupations]
 confidence: 0.85
-last_confirmed: "2026-09-09"
-accessed_at: "2026-09-09"
-source_count: 19
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 22
 relationships:
   - type: instance-of
     target: ai-employment-effects
@@ -13,8 +13,8 @@ relationships:
   - type: contradicts
     target: durable-skills
     via: "deskilling = which skills get hollowed out by AI; durable-skills = which skills resist substitution. Inverse measurement frames of the same labour-economics question"
-quality_score: 0.79
-quality_notes: ['missing ## Debates and supersession (concept with >1 source)', '1 near-empty section(s)']
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # AI Deskilling
@@ -218,3 +218,30 @@ The historical framing is the load-bearing part: *"Craftsmen own their tools. Th
 **Two reasons to hold this carefully.** First, it is an argument, not a finding: no measurement, and the speaker's audience is people who own their repos by default. Second, and more substantively, **the prescription may not be available to the worker it is addressed to.** Whether an employee can retain skill files developed on company time and company systems is a work-for-hire question the talk does not raise. If the answer is generally no, then the argument identifies a real asymmetry and offers a remedy only the already-advantaged can take — which is the more uncomfortable version, and the one this page should carry alongside the quotable one.
 
 The connection to atrophy is worth stating too: a captured procedure that runs without its author is also a procedure its author stops performing. The two mechanisms are not alternatives; capture plausibly *causes* atrophy on a lag.
+
+## Access versus acquisition — the question three 2026 sources ask and none answer (added 2026-09-15)
+
+Three sources landed in one ingest, each arriving at the same unresolved question from a different method. Worth stating as a single open problem because the corpus is now accumulating restatements of it rather than answers.
+
+**The experiment.** [[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork|Dell'Acqua et al.]] found AI dissolving functional silos: commercial professionals produced technically balanced proposals, R&D professionals produced commercially balanced ones, each alone and each matching what a cross-functional pair achieved. The authors then ask the question themselves:
+
+> *"Does AI-enabled boundary spanning foster genuine knowledge growth, or merely facilitate temporary access to existing expertise?"*
+
+**The labour-market study.** [[2025-07-07-tambe-reskilling-workforce-for-ai-domain-expertise-algorithmic-literacy|Tambe]] documents algorithmic expertise dispersing into domain occupations and markets paying for it — but states plainly that his data *"does not distinguish between deep technological expertise and interactional expertise."* Employers are hiring for a bundle whose depth nobody has measured.
+
+**The design study.** [[2025-04-26-wang-aideation-human-ai-collaborative-ideation-concept-designers|Wang et al.]] put a generative ideation tool into four commercial studios, where two kept using it in production afterwards. The paper never asks what a year of it does to a junior concept designer — in a craft where the apprenticeship *is* the career path.
+
+**The shape of the problem.** Deskilling debates usually concern a skill someone had and lost. This is the harder case: a capability displayed **without ever being acquired**. A professional producing competent out-of-domain work has a real output and possibly no transferable knowledge, and nothing distinguishes the two states from the outside — including, plausibly, from the inside. [[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork|The same experiment]] supplies the reason to worry about introspection here: its participants' self-assessment was **decoupled** from their measured performance.
+
+No source in the corpus measures skill retention after AI-assisted boundary spanning. Until one does, treat "AI makes everyone a generalist" as a claim about **output**, never about **capability** — see [[expert-generalist]].
+
+## Debates and supersession
+
+Added 2026-09-15 — the page had accumulated five sections of tension without ever consolidating them, which the quality scorer was right to flag.
+
+- **Atrophy versus capture versus never-acquired.** The page now tracks three distinct mechanisms that its own sections reached separately, and they are not the same phenomenon. **Atrophy** is capability lost because it stopped being exercised (the page's original subject). **Capture** ([[2026-08-06-garry-tan-own-your-intelligence|Tan]]) is capability fully intact in the worker and simultaneously extracted into an executable artifact. **Access without acquisition** ([[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork|Dell'Acqua et al.]], [[2025-07-07-tambe-reskilling-workforce-for-ai-domain-expertise-algorithmic-literacy|Tambe]]) is competent output in a domain the worker never learned. They likely interact — capture plausibly causes atrophy on a lag — but a source measuring one says nothing about the others, and the page should stop treating "deskilling" as one thing.
+- **Nobody has measured retention.** Every mechanism above is inferred from output or from labour-market composition. No source in the corpus tests what a professional can still do *without* the tool after sustained AI-assisted work. Until one does, every claim on this page is about capability display, not capability.
+- **Introspection will not settle it.** The natural fallback — ask people whether they still have the skill — is undercut by the same experiment that raises the question: [[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork|Dell'Acqua et al.]] found self-assessment **decoupled** from measured performance, and [[ai-coding-productivity-evidence]] records that the decoupling runs in both directions depending on context. Self-report is not available as an instrument here.
+- **The equalising results and the deskilling results have not been reconciled.** Carried over from Open questions and still open: within-role productivity studies show AI compressing the gap between weak and strong performers, which reads as upskilling at the bottom. Whether that is durable capability or borrowed capability is exactly the access-versus-acquisition question, one unit of analysis down.
+- **No supersession events on this page.** No source here has been retired; the additions are accumulating mechanisms, not replacing claims.
+

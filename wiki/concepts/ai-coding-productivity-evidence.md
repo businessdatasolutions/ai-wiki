@@ -2,10 +2,10 @@
 type: concept
 title: AI coding productivity — the evidence
 aliases: ["AI coding productivity", "AI developer productivity", "developer productivity evidence", "productivity paradox in coding", "throughput vs stability"]
-confidence: 0.8
-last_confirmed: "2026-09-09"
-source_count: 7
-accessed_at: "2026-09-09"
+confidence: 0.85
+last_confirmed: "2026-09-15"
+source_count: 8
+accessed_at: "2026-09-15"
 tags: [rct, productivity, metr, copilot, dora, throughput, delivery-stability, perception-gap, heterogeneity, seniority, measurement]
 relationships:
   - type: part-of
@@ -36,6 +36,18 @@ What randomised and population-scale studies actually find when AI is put in fro
 **These are compatible, and the reconciling variable is stated in Cui et al.'s own heterogeneity result: less experienced developers adopted more and gained more.** METR studied the far tail of the experience distribution — maintainers who already hold the model of the system in their heads — which is exactly where this paper's gradient predicts the smallest gain. The synthesis is a **gradient claim**: *assistance is worth most where the marginal work is acquiring context, and least — possibly negative — where the developer already has it.*
 
 Two cautions before either number is quoted. Cui et al.'s **standard error of 10.3%** puts the 95% interval roughly from +6% to +46%: the finding is "positive and probably substantial," not "26%." And METR's tooling vintage is **February–June 2025 Cursor Pro + Claude 3.5/3.7 Sonnet in an IDE** — not the cloud-agent parallelism the 2026 practitioner material is about.
+
+## The perception gap runs both ways (revised 2026-09-15)
+
+The wiki held this as a one-directional finding for three months. It is not one.
+
+[[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork|Dell'Acqua et al. (2026)]] — preregistered, N=791, at Procter & Gamble — found AI users performing **measurably better** (+0.37 SD, p<0.01) while being **9.2 percentage points *less* likely** to expect a top-10% placement (p<0.05). Objectively better, subjectively less confident: the mirror image of METR.
+
+Both results are sound and they point opposite ways. So the transferable claim is narrower than "AI use inflates self-assessment":
+
+> **Self-assessment decouples from performance under AI, in a direction that is not predictable from the technology alone.**
+
+The operational consequence for an organisation is unchanged and arguably strengthened — **do not measure AI's effect by asking people** — but the direction of the correction cannot be assumed. A team reporting that AI is not helping may be outperforming; a team reporting a speed-up may be slower. Only the *decoupling* replicates.
 
 ## The perception gap, which is the finding with the widest reach
 

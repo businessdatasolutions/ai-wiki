@@ -4,9 +4,9 @@ kind: person
 aliases: ["Ethan Mollick"]
 tags: [mollick, wharton, AI-research, knowledge-work]
 confidence: 0.8
-last_confirmed: "2026-06-20"
-accessed_at: "2026-06-20"
-source_count: 2
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 3
 ---
 
 # Ethan Mollick
@@ -25,3 +25,9 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "mollick")
 SORT file.name ASC
 ```
+
+## The study behind the soundbite (added 2026-09-15)
+
+Mollick is a co-author on [[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork|*The Cybernetic Teammate*]] (*Organization Science*, 2026, with [[Fabrizio Dell'Acqua]] and [[Karim Lakhani]]), which supplies the measurement behind the claim he makes for general audiences in [[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|his Simon Sinek interview]] — that evaluation, not generation, is the bottleneck. The paper's decomposition finds AI *"primarily enhances the quality of generated ideas… whereas human judgment retains value in evaluative selection."*
+
+The corpus now holds Mollick at both altitudes: the peer-reviewed experiment and the popularisation of it. Useful when weighing his public claims — on this one, the underlying evidence is preregistered and N=791.

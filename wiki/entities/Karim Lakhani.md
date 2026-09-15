@@ -4,9 +4,9 @@ kind: person
 aliases: ["Karim Lakhani", "Karim R. Lakhani"]
 tags: [lakhani, harvard-business-school, AI-research, digital-data-design-institute]
 confidence: 0.75
-last_confirmed: "2026-04-28"
-accessed_at: "2026-04-28"
-source_count: 1
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 2
 ---
 
 # Karim Lakhani
@@ -23,3 +23,7 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "lakhani")
 SORT file.name ASC
 ```
+
+## Second appearance: the P&G field experiment (added 2026-09-15)
+
+Co-author on [[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork|*The Cybernetic Teammate*]] (*Organization Science* 37(4), 2026) — the preregistered 791-person experiment at Procter & Gamble with [[Fabrizio Dell'Acqua]] and [[Ethan Mollick]], testing whether generative AI can substitute for a human teammate across performance, expertise integration and social engagement.

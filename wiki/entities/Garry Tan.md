@@ -6,9 +6,9 @@ tags: [garry-tan, y-combinator, gstack, gbrain, ai-founder-type, startup-school,
 affiliation: "[[Y Combinator]]"
 role: "President & CEO, Y Combinator (since 2023); founder/engineer; ex-Palantir #10; Posterous co-founder"
 confidence: 0.95
-last_confirmed: "2026-09-09"
-accessed_at: "2026-09-09"
-source_count: 6
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 7
 ---
 
 # Garry Tan
@@ -121,6 +121,16 @@ The wiki's fullest first-party statement of Tan's position, and the source that 
 Two contributions are portable beyond his own stack. The **latent-versus-deterministic** diagnostic — *"the most important question to ask here is where is the computation happening… confusing them causes every agent failure I've ever seen"* — is now recorded on [[agent-harness]] as a failure taxonomy. And the **skillify** discipline (*"if you have to ask for something twice, you failed"*) is on [[agentic-engineering]].
 
 He is also unusually candid about the failure mode of his own architecture: *"a brain nobody curates is a garbage dump with great search."* The stated remedies — provenance on every fact, contradiction checks, a librarian whose job is pruning — are the same three disciplines this wiki's schema encodes, reached independently.
+
+## The investor-facing version, six days later ([[2026-08-12-tan-a16z-new-rules-for-founders|a16z, Aug 2026]])
+
+Tan restated the Startup School doctrine on [[a16z]]'s podcast six days after the keynote, and the pair should be read together — but the interview adds three things the keynote did not:
+
+- **Token maxing.** *"It costs, I don't know, 50 or $100,000 a year to use the agents at full strength… you can live in 2028 today."* The frontier as a spending decision rather than a capability date.
+- **The maintenance tax on skillify.** Asked whether errors compound across hundreds of markdown files, he names **provenance and conflict resolution** plus a scheduled sweep as the necessary machinery — see [[llm-wiki]].
+- **"The harness wars"** as his call for 2027, gated on inference cost: *"it's really a cost thing, it's just too expensive right now."* Four weeks before [[2026-09-07-yc-paper-club-why-the-harness-matters-more-than-the-model|YC's own Paper Club]] made harnesses a research night.
+
+And the heterodox note worth keeping, because it cuts against the rest of his own message: asked whether the constraints are intelligence-bound, Tan says *"it's all human"* and predicts **twenty years**, not two — *"there are real moats… a Microsoft isn't going anywhere"* — which he flags himself as *"a little antithetical to what most people in Silicon Valley would say."* That sits in tension with [[2026-07-31-collison-yc-startup-school-is-ai-breaking-the-lean-startup-playbook|Collison]] on the same YC stage a fortnight earlier.
 
 ## Mentioned in
 

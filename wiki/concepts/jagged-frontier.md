@@ -3,9 +3,9 @@ type: concept
 aliases: ["jagged frontier", "jagged-frontier", "jagged technological frontier", "AI capability frontier", "jagged intelligence", "jagged skills", "jagged-intelligence", "animals vs ghosts", "ghosts not animals"]
 tags: [jagged-frontier, jagged-intelligence, AI-capabilities, knowledge-work, productivity, automation, augmentation, verifiability, animals-vs-ghosts]
 confidence: 0.95
-last_confirmed: "2026-09-09"
-accessed_at: "2026-09-09"
-source_count: 18
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 20
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -186,3 +186,15 @@ SORT file.name ASC
 **Second, and more consequentially, the jag is not closing.** The implicit expectation behind most jagged-frontier discussion is that the notches fill in as models improve. Here they do not: **mid-to-late-2025 frontier models (GPT-5, o3, Gemini 2.5 Pro) score below both early-2025 models and MBA students**, while continuing to improve on GPQA Diamond and LM Arena. The correlation between the strategy score and GPQA is **positive through o4-mini and then negative**. On this measurement the frontier did not smooth — **the notch deepened.**
 
 The failure has a name and a signature: a **systematic exploitation bias**, achieving high cumulative profit with very low emerging-technology revenue, visible in the models' own stated reasoning. This is the practical form the page's central advice should take: the jag is not randomly distributed, and the region where it bites is **forward-looking commitment under delayed feedback** — which is exactly the region where a manager is most tempted to delegate a judgment, and where headline benchmarks give the least warning.
+
+## Two 2026 additions: the team-level test, and the frontier as a workflow boundary (added 2026-09-15)
+
+**The same first author, measuring teams instead of individuals.** [[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork|Dell'Acqua et al. (*Organization Science*, 2026)]] is the sequel to the BCG study that named this concept — a preregistered 791-person experiment at Procter & Gamble. It does not measure jaggedness directly, but it leaves the construct as an explicit open frontier: whether humans' mental models of AI *"track the technology's jagged capabilities"* is named as *"a critical frontier for effective human–AI collaboration."* The connection is the page's own logic — if the frontier is jagged and invisible, the decisive skill is knowing which side of it a task sits on, and that requires a theory of the AI's mind that may be systematically wrong.
+
+**And a domain-level map of where the frontier actually runs in visual creative work.** [[2025-04-26-wang-aideation-human-ai-collaborative-ideation-concept-designers|Wang et al. (CHI '25)]] study professional concept designers for film, TV and games, and their result is jaggedness stated as a *workflow boundary* rather than a task-score distribution. AI wins decisively on **breadth** — reference gathering, variation generation, finding a direction when the brief is unclear — and fails on exactly the fine control needed to finish:
+
+> *"The system covers 70-80% for client communication, but control over lighting, atmosphere, and camera angles is needed for the final 20%."* — P4
+
+> *"Sometimes I just wanted to remove one element from the idea or adjust the composition, but the whole image changed."* — S4 (field study)
+
+This is a useful shape to carry: in one professional domain, the jagged edge does not run between *tasks* but **between phases of a single task**, and it sits at the transition from exploration to refinement. Note the evidential tier — the CHI study's efficiency numbers are self-estimated counterfactuals, not measurements, so cite it for the boundary's location and not for the size of the gain.

@@ -6,9 +6,9 @@ tags: [accelerator, venture-capital, silicon-valley, startup-school, startup-sch
 since: 2005
 website: "https://www.ycombinator.com"
 confidence: 0.95
-last_confirmed: "2026-09-09"
-accessed_at: "2026-09-09"
-source_count: 18
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 19
 ---
 
 # Y Combinator
@@ -157,3 +157,9 @@ Two September 2026 sources show YC operating in two distinct roles the wiki shou
 Two admissions are worth recording because organisations rarely publish them: human review of database writes has decayed into **rubber-stamping** (*"it's a little bit like… you might have been reviewing the tool uses very closely and eventually you build up more trust"*), and the centralised-context design depends on a **fine-grained permission system** YC happened to already have — *"the information that you can put in the brain is effectively bounded by how good your permission system is."* See [[agent-oversight-and-delegation]].
 
 Alongside [[2026-08-06-garry-tan-own-your-intelligence|Tan's Startup School keynote]] three weeks earlier, this makes YC one of the wiki's densest single-institution clusters on the harness — as investor, publisher, advocate and deployer at once. The **standing caveat** applies throughout: YC's evidence about AI-native companies is drawn from its own portfolio, selected on success and coached toward the thesis being evidenced.
+
+## YC's president on the a16z Show (added 2026-09-15)
+
+[[2026-08-12-tan-a16z-new-rules-for-founders]] adds a nineteenth YC-connected source and a useful internal tension. Within a fortnight on and around YC platforms: [[2026-07-31-collison-yc-startup-school-is-ai-breaking-the-lean-startup-playbook|Patrick Collison]] on why it has never been a better time to start; [[2026-08-06-garry-tan-own-your-intelligence|Tan's Startup School keynote]]; [[2026-08-14-blomfield-yc-building-structuring-ai-native-company|Tom Blomfield]] on AI-native company structure — and then Tan telling an investor audience that *"it's going to be 20 years"* and *"a Microsoft isn't going anywhere."*
+
+Also of institutional note: Tan's **"harness wars"** call for 2027 preceded [[2026-09-07-yc-paper-club-why-the-harness-matters-more-than-the-model|YC Paper Club's harness night]] by four weeks, and he describes YC's own internal tooling practice — recorded office hours mined for the rhetorical devices partners use, distilled into a markdown file, then deliberately weakened by 90% before open-sourcing (*"we can't give away the crown jewels for free"*).

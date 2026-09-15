@@ -3,9 +3,9 @@ type: concept
 aliases: ["LLM Wiki", "LLM-Wiki", "llm wiki", "Karpathy's LLM Wiki", "LLM-maintained wiki", "compounding wiki"]
 tags: [llm-wiki, knowledge-compilation, three-layer-architecture, ingest-query-lint, agent-memory, claude-md, knowledge-compounding, agentic-knowledge-base]
 confidence: 0.93
-last_confirmed: "2026-09-09"
-accessed_at: "2026-09-09"
-source_count: 10
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 11
 relationships:
   - type: part-of
     target: agent-harness
@@ -244,3 +244,13 @@ Three further claims sharpen this page:
 The closing case is the smallest instance and the most pointed: a father built **80,000 markdown files** on his son's rare epilepsy — every specialist visit, paper, seizure log and drug interaction, indexed and cross-linked — so that when a new doctor proposes something he knows in minutes whether it has been tried. *"A father, a laptop, and a library."*
 
 **What is not answered**, and it is the operationally interesting question for any wiki built this way: how contradiction checks are actually run at 220,000 pages, what fraction of the corpus is agent-generated versus source material, and how pruning decisions are audited. The disciplines are named; the mechanisms are not.
+
+## Provenance is what breaks a markdown-run company (added 2026-09-15)
+
+[[2026-08-12-tan-a16z-new-rules-for-founders|Garry Tan]], asked on the a16z Show whether errors compound once a business runs on accumulated skill files, names the failure mode this wiki's entire schema exists to prevent:
+
+> *"Once you get a lot of markdown files… that's where provenance matters, that's where conflict management [matters] — when you have two facts. If you have provenance then you're like, well this is the more recent one, this is the one that wins. You need a cron job that's sweeping through that and making sure that things are accurate and from the right places."*
+
+Three disciplines, reached independently by a venture-accelerator CEO running his own tooling: **provenance** (every claim traceable to where it came from), **conflict resolution** (two facts, recency wins), and a **scheduled sweep** for staleness. This wiki's answers are the `raw:` field and citation-per-claim, the `## Debates and supersession` section plus the [[concepts/warner-wager-process-model|supersession protocol]], and the retention decay curve with `accessed_at`.
+
+The convergence is worth noting precisely because Tan is not describing a knowledge base as a product — he is describing what goes wrong when *"a markdown file is an employee"* and there are a few hundred of them. The corpus now has this arrived at from three directions: [[2026-08-06-garry-tan-own-your-intelligence|GBrain at ~220,000 pages]], [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum's]] hand-maintained context files, and this. **The bottleneck in agent-run work is not agent capability; it is stale, conflicting context with no provenance.**

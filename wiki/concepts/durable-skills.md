@@ -3,8 +3,8 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-08-30"
-source_count: 43
+last_confirmed: "2026-09-15"
+source_count: 45
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -15,7 +15,7 @@ relationships:
   - type: depends-on
     target: ai-benchmarks
     via: "measurement methodology — Vantage and similar protocols define new benchmark types for human skills (not model capability)"
-accessed_at: "2026-09-05"
+accessed_at: "2026-09-15"
 quality_score: 0.98
 quality_notes: ['2 near-empty section(s)']
 ---
@@ -321,3 +321,9 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "durable-skills") OR contains(tags, "21st-century-skills") OR contains(tags, "future-ready-skills")
 SORT file.name ASC
 ```
+
+## Evaluation, not generation (added 2026-09-15)
+
+[[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork|Dell'Acqua et al. (*Organization Science*, 2026)]] supply the measurement behind a claim this page has carried on [[Ethan Mollick]]'s authority alone. Mollick — a co-author on the paper — tells [[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Simon Sinek]] that evaluation rather than generation is the bottleneck. The experiment's decomposition analysis is that claim with numbers attached: AI *"primarily enhances the quality of generated ideas, shifting the distribution of creative output upward, whereas human judgment retains value in evaluative selection."*
+
+A second result on this page's core question — what experience is *for* — comes from the same paper and cuts against a comfortable reading. AI let professionals produce competent work **outside their own function**, matching cross-functional pairs. If the durable skill is knowing which side of the [[jagged-frontier|jagged frontier]] a task sits on, that skill was not obviously in play here: participants' confidence in their own output was **decoupled** from its measured quality, in the direction of under-confidence. Experience did not make them better calibrated; it is not clear from this experiment that it made them calibrated at all.

@@ -2,10 +2,10 @@
 type: concept
 aliases: ["AI knowledge hiding", "ai-knowledge-hiding", "AI knowledge hoarding", "suppression of solutions", "hidden AI use", "shadow AI knowledge hiding"]
 tags: [ai-knowledge-hiding, shadow-ai, organizational-trust, psychological-safety, enterprise-ai, disclosure-culture, knowledge-management, micro-productivity-trap]
-confidence: 0.70
-last_confirmed: "2026-06-16"
-accessed_at: "2026-09-05"
-source_count: 1
+confidence: 0.75
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 2
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -13,8 +13,8 @@ relationships:
   - type: supports
     target: micro-productivity-trap
     via: "supplies the individual-level mechanism behind the trap: when efficiency gains are 'taxed' (saved time refilled with more work) and disclosure threatens standing, employees rationally hide their best workflows, so task-level gains never aggregate to firm-level value"
-quality_score: 0.82
-quality_notes: ['citation density 1.2/1000 words (1 source links in 809 words; target ≥3.0)']
+quality_score: 0.87
+quality_notes: ['citation density 1.8/1000 words (2 source links in 1128 words; target ≥3.0)']
 ---
 
 # AI Knowledge Hiding
@@ -74,3 +74,18 @@ SORT file.name ASC
 - Does the trust→disclosure finding replicate outside the U.S. / outside knowledge work?
 - Do "side quests" and multiplier-reward schemes measurably raise *disclosed* (not just total) AI productivity?
 - How does mandatory enterprise-tool logging net out — does the credit mechanism or the extraction fear dominate as trust varies?
+
+## The formal mechanism (added 2026-09-15)
+
+This page rested on a single survey source, which located the driver in **organisational trust working through psychological safety**. [[2026-01-20-yuan-aseri-ramasubbu-backfiring-ai-deployment-workplace|Yuan, Aseri & Ramasubbu (2026)]] derive the same behaviour from **compensation structure alone**, with no trust deficit required — and that is a materially different diagnosis with a different remedy.
+
+Their game-theoretic model splits employees on two independent dimensions: **tangible skill**, which an AI system can observe, codify and redistribute, and **intangible skill** (communication, coordination), which it cannot. Under **pay-for-performance rank-order competition**, deploying an AI that learns from the high performers erodes exactly the advantage those performers are paid for. Output and welfare fall for the high-tangible/low-intangible group; low-tangible employees rise; **firm profit can fall.**
+
+Read against this page, the implication is uncomfortable: **hiding is rational even in a high-trust organisation**, provided rewards are relative. An employee who discovers a workflow that triples their output, working under PFP, is not being paranoid when they keep it — disclosure is the mechanism by which their rank is competed away.
+
+Two consequences worth carrying:
+
+- **The prescriptions on this page are incomplete.** Trust-building and psychological safety address the disclosure *cost* the survey identified; they do not touch the rank-order incentive. A firm could do everything Anicich & Brouwers recommend and still get hiding, if it pays on a curve.
+- **The proposed remedy is counter-intuitive and untested.** Yuan et al. find that *guaranteeing* the wages of disadvantaged employees can leave the firm **worse off** than doing nothing, and that the profit-maximising move is to bound AI capability deliberately — *"pursuing the most advanced AI system is not always optimal."*
+
+Treat this as mechanism, not evidence: it is an unrefereed analytical model with no data, and its load-bearing assumption (AI transfers hard skill but not soft) is asserted rather than shown. But it is the first source in the corpus that explains hiding without appealing to culture.

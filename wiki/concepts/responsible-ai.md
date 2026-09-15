@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-09-09"
-accessed_at: "2026-09-09"
-source_count: 26
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 27
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -333,3 +333,15 @@ This is a **structural argument against a common justification for automation**,
 And the governance frame the roundtable settles on is **trust, built by evals**: *"everything about governance, everything about ethics within the actual technical AI side is really just about gaining trust."* One expert judging one output is *"just like kind of an employee"*; the firm-scale version is *"you give it lots and lots of tasks. You run evaluations. You create the distributions of outputs… and then you gain trust by reviewing the outputs and the evaluations."*
 
 **Two caveats the page should carry.** The bias research is referred to as *"a lot of research"* without citation, and Tate himself flags the implications as *"still being actively explored"* — the underlying literature is an **open ingest target**. And the mitigation is untested here: a bias control written into a prompt is a soft constraint, and whether skill-file controls survive contact with the model's priors is exactly the sort of claim this page should want measured before relying on it.
+
+## Agentic governance as an operational capability (added 2026-09-15)
+
+[[2026-08-26-chatterjee-agentic-governance-gap|Chatterjee (Analytics Magazine / INFORMS, Aug 2026)]] draws a line this page should carry, because it separates the RAI problems of 2023–25 from the ones now arriving. The first generative wave's risks — hallucination, bias, data leakage — were *"all contained within a single, familiar boundary: content. A human read the output before anything happened in the real world."* Agents erase the boundary: the output *"is not a paragraph for a person to evaluate; it is an action already taken."*
+
+His central move is to refuse the policy framing outright:
+
+> *"Agentic governance is not a policy document or an ethics checklist. It is an operational capability: the demonstrable ability to know, at any moment, what every agent in the enterprise is authorized to do, what it has done, and how quickly it can be stopped."*
+
+Five interdependent capabilities follow — **action-scoped permissions**, **real-time action visibility** (of actions, not just prompts), **circuit breakers and kill switches**, **escalation thresholds** *"calibrated to consequence and reversibility, not convenience"*, and **cross-agent identity and provenance** — organised under a **Commitment–Preparedness–Discipline** framework that puts agent risk appetite at board level: *"board-level visibility into what autonomous systems are authorized to do is now as material as visibility into financial controls."*
+
+The diagnosis worth quoting when an organisation asks what to do first: *"the capability gap is not technical sophistication. It is the absence of inventory, visibility, and rehearsed control."* Most organisations, he argues, cannot produce a complete list of the agents running in their environment. A practitioner column, no data, no citations — cite for framing and vocabulary, not for prevalence.

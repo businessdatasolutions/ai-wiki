@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-09-09"
-accessed_at: "2026-09-09"
-source_count: 114
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 118
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -816,3 +816,11 @@ The [[2026-09-01-cfa-institute-agentic-ai-finance-workflows-governance|CFA Insti
 The second is about *where capability comes from*, and it is the more consequential one for an adoption strategy. Iterating a skill when it fails is individual; the collective version is the point — *"especially if you have the same task done with several analysts in a firm or even across the industry, you can have everybody kind of making that skill better and better and better, [so] that **even if the models don't get any better at all**… we can really create incredibly robust workflows just by our own knowledge and iteration."*
 
 That is a claim that **organisational capability can compound independently of the model release cycle**, through shared and iterated procedure. It reframes the investment question this page tracks: the durable asset is not the model contract but the accumulated, versioned procedure — and, notably, a professional body is well placed to make the argument because its members perform the same tasks at competing firms.
+
+## Three 2026 additions on why adoption underdelivers (added 2026-09-15)
+
+**1. The reward system can eat the technology.** [[2026-01-20-yuan-aseri-ramasubbu-backfiring-ai-deployment-workplace|Yuan, Aseri & Ramasubbu]] model an AI that codifies high performers' technical skill and spreads it, deployed into a **pay-for-performance** workplace. Under rank-order competition the redistribution erodes the standing of the people it learned from, they cut effort, and **firm profit falls** — no technical failure required. Two counter-intuitive corollaries: guaranteeing the affected employees' wages can leave the firm *worse off* than doing nothing, and the profit-maximising choice is an AI *"efficacy level just enough to avoid the flipping in the performance ranking"* — i.e. **the best available model is not the right procurement**. An unrefereed model with no data, but the first source here locating adoption failure in compensation design rather than in tooling or change management.
+
+**2. Where the technical skill sits predicts the value captured.** [[2025-07-07-tambe-reskilling-workforce-for-ai-domain-expertise-algorithmic-literacy|Tambe (*Management Science*, forthcoming)]] finds that investors assign higher value to a firm's AI and data-science investments **when made alongside algorithmic expertise dispersed among domain experts** rather than concentrated in IT or a central data-science team — and that the effect does not appear for other technologies or other technical skills. No-code tooling measurably accelerates that dispersion. For this page, that is an org-design prescription with a market test behind it: adoption is not only a question of what you buy but of **who in the org chart can direct it**.
+
+**3. Agentic deployment outruns the governance model by design.** [[2026-08-26-chatterjee-agentic-governance-gap|Chatterjee]] argues enterprise governance was built for a copilot — *"a system proposes, a person disposes"* — and that agents dismantle the assumption deliberately, because removing the human bottleneck is the value proposition. His operational test is one most adopters would currently fail: *"Can the enterprise show, for any agent action, that it was bounded, authorized, and reversible — not as a one-time launch review, but as a standing operational capability?"* See [[agent-oversight-and-delegation]].

@@ -3,9 +3,9 @@ type: concept
 aliases: ["agentic engineering", "Agentic Engineering", "agentic-engineering", "agent engineering"]
 tags: [agentic-engineering, vibe-coding, software-3.0, ai-agents, agent-harness, software-engineering, hiring, karpathy, codex-case-study]
 confidence: 0.97
-last_confirmed: "2026-09-09"
-accessed_at: "2026-09-09"
-source_count: 56
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 57
 relationships:
   - type: depends-on
     target: agent-harness
@@ -278,3 +278,13 @@ The corollary is a claim about who the discipline is available to. *"Markdown is
 **Build for expressibility, not for control flow.** [[Seth Karten]]'s design principle at [[2026-09-07-yc-paper-club-why-the-harness-matters-more-than-the-model|YC Paper Club]] is the engineering counterpart. Early systems hard-coded plan → act → critique; models now do that natively, so prescribing it buys nothing. What the engineer must supply is what the model *cannot* give itself — callable compaction, a Python REPL, programmatic sub-agent creation, state access, feedback mechanisms — because *"if you removed one of those you're actually removing a capability that it won't be able to do otherwise."*
 
 Read together, the two disciplines are complementary and describe where effort should go: **thick, accumulating, human-legible procedure** (skills), on **thin, capability-complete machinery** (primitives). Not more orchestration in between.
+
+## Token maxing, and the maintenance tax on skill files (added 2026-09-15)
+
+[[2026-08-12-tan-a16z-new-rules-for-founders|Garry Tan on the a16z Show]] adds two things to this page that his [[2026-08-06-garry-tan-own-your-intelligence|Startup School keynote]] six days earlier did not.
+
+**Token maxing.** The frontier, in his framing, is a spending decision rather than a capability date: frontier labs are *"pretty constrained on cost and pretty constrained on amount of compute they want to give you"*, so reaching full strength means loading *"a million tokens or 800,000 tokens into any given request"* through a runtime you control. The stated price is *"50 or $100,000 a year to use the agents at full strength"*, and the stated payoff is that *"you can live in 2028 today."* Unverified, and it is his own spend — but it is the corpus's most explicit statement that the practitioner frontier is bought, not waited for.
+
+**The tax nobody else names.** Asked whether errors compound as skill files accumulate, Tan answers with a maintenance problem rather than a capability one: *"that's where provenance matters, that's where conflict management [matters] — when you have two facts… You need a cron job that's sweeping through that and making sure that things are accurate and from the right places."* Skillify is not free; a few hundred markdown files is a knowledge base, and knowledge bases rot. See [[llm-wiki]].
+
+His 2027 call — *"the harness wars"*, gated on inference cost collapsing — sits alongside [[2026-09-07-yc-paper-club-why-the-harness-matters-more-than-the-model|YC's own Paper Club]] four weeks later, and is recorded on [[agent-harness]].

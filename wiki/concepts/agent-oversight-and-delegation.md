@@ -2,10 +2,10 @@
 type: concept
 title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
-confidence: 0.8
-last_confirmed: "2026-09-09"
-source_count: 10
-accessed_at: "2026-09-09"
+confidence: 0.85
+last_confirmed: "2026-09-15"
+source_count: 11
+accessed_at: "2026-09-15"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
   - type: part-of
@@ -103,3 +103,19 @@ This matters because **the control did not fail; the human did, gradually, and f
 **A hard boundary on what delegation can be given.** The same team states a constraint worth keeping verbatim: agents *"really don't understand social contexts"* — *"if I tell Regan a piece of information, he intuitively knows where it is okay to share that information"*, and an agent does not, so privileged information leaks into contexts it should not reach. Hence: **"the information that you can put in the brain is effectively bounded by how good your permission system is."** YC could build a centralised-context agent because it already had fine-grained permissioning; the observation is that most organisations do not, which makes the permission system a *precondition* for this architecture rather than a hardening step applied afterwards.
 
 **And a reason the human's judgment is not the safe default either.** The [[2026-09-01-cfa-institute-agentic-ai-finance-workflows-governance|CFA Institute roundtable]] reports that LLM decision biases *mirror* the documented biases of human decision-makers in the same domain — loss aversion is the named instance — so delegating a judgment does not launder the bias out of it. The oversight implication is uncomfortable: reviewer and reviewed are biased in **correlated** ways, which is the configuration least likely to catch an error. See [[responsible-ai]].
+
+## Oversight and value are structurally opposed (added 2026-09-15)
+
+[[2026-08-26-chatterjee-agentic-governance-gap|Chatterjee (Analytics Magazine, Aug 2026)]] supplies the sentence this page has been missing, and it reframes everything above it:
+
+> *"Organizations are adopting agents specifically to remove the human bottleneck. The governance model built to catch mistakes is being designed out of the system at the same moment the system's capacity to cause harm is increasing."*
+
+The page's existing material treats weak oversight as a discipline failure — organisations *should* gate, and mostly don't. This says the gate is not neglected but **deliberately removed, because removing it is the purchase.** If that reading holds, prescriptions relying on organisational willpower will keep failing, and only **architectural** constraints (scoped credentials, circuit breakers) will survive contact with the business case.
+
+**The boundary that makes agentic governance different** is stated crisply: it is *"the difference between a system that produces a document and a system that executes a transaction."* Copilot-era governance assumed a human between recommendation and consequence; agents erase it, because *"the output is not a paragraph for a person to evaluate; it is an action already taken."*
+
+**Three converging forces**, all observed rather than hypothetical: **autonomy creep** (permissions granted per workflow, never reviewed in aggregate), **tool and API sprawl** (*"a single compromised or misconfigured agent can now reach far more of the enterprise than any single compromised employee account"*), and **multi-agent coordination**, where each delegation hop pushes oversight further away — the governance face of [[2025-03-17-cemri-why-do-multi-agent-llm-systems-fail|MAST's]] inter-agent misalignment.
+
+**A fifth independent arrival at consequence-and-reversibility.** This page already records that the gate trigger is *irreversibility × external visibility, not stakes*, reached by a regulator, a solo founder, a product executive and a human-factors study. Chatterjee — a cybersecurity academic with no visible contact with that literature — specifies escalation thresholds *"calibrated to consequence and reversibility, not convenience."* Five arrivals from five disciplines.
+
+**And the first concrete oversight metric in the corpus.** This page's standing open question is that *nobody reports a false-approve rate for any risk-scored gate*. That remains true. But Chatterjee proposes the adjacent measurable — regular drills against a misfiring agent, *"measuring not whether it can be stopped, but **how long it takes**"* — alongside the failure it exposes: **kill switches that exist on paper and have never been exercised.** Time-to-halt is now the wiki's nominated oversight metric. It is still reported by nobody, including him.

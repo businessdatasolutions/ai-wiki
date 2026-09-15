@@ -3,8 +3,8 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-08-30"
-source_count: 76
+last_confirmed: "2026-09-15"
+source_count: 78
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -12,7 +12,7 @@ relationships:
   - type: caused
     target: ai-deskilling
     via: "task-composition shift is one mechanism within broader employment effects"
-accessed_at: "2026-09-05"
+accessed_at: "2026-09-15"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -607,3 +607,13 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "employment") OR contains(tags, "labor-market") OR contains(tags, "ai-displacement")
 SORT file.name ASC
 ```
+
+## A falsifiable prediction about who gains (added 2026-09-15)
+
+Most of this page concerns employment *levels*. [[2026-01-20-yuan-aseri-ramasubbu-backfiring-ai-deployment-workplace|Yuan, Aseri & Ramasubbu (2026)]] make a sharper and more checkable claim about *composition*, derived formally rather than observed.
+
+Split workers on two independent axes — **tangible skill** (technical capability AI can codify and redistribute) and **intangible skill** (communication, coordination, which it cannot). Under pay-for-performance, AI deployment produces a specific reshuffle: workers who are **high-tangible / low-intangible lose** output, rank and welfare; **low-tangible / high-intangible gain**; **high/high are unaffected**, remaining top performers throughout. The stated mechanism is that *"as AI evens out the differences in tangible skills, those who are strong in intangible skills emerge as the more competitive employees."*
+
+This is more useful than the usual "soft skills matter more now" because it is **wrong in a specific way if it is wrong**: it predicts a measurable within-firm reordering, concentrated in PFP workplaces, with the *technically strongest but least interpersonal* employees as the losers rather than the junior or the routine worker. Nothing in the corpus tests it. It is an unrefereed model whose load-bearing assumption — that AI cannot transfer soft skill — is asserted rather than shown, and [[automation-vs-augmentation]] records why that assumption is increasingly contestable.
+
+Worth reading against [[2025-07-07-tambe-reskilling-workforce-for-ai-domain-expertise-algorithmic-literacy|Tambe]], who measures the same redistribution of codified technical skill across eight years of hiring and workforce data and finds **markets rewarding it**. Same mechanism, opposite valence, and the likeliest reconciliation — that the harm exists only inside rank-order pay — is untested by either.

@@ -3,9 +3,9 @@ type: concept
 title: Multi-agent failure modes
 aliases: ["multi-agent failure modes", "MAST", "multi-agent system failure taxonomy", "why multi-agent systems fail", "agent coordination failure"]
 confidence: 0.85
-last_confirmed: "2026-09-09"
-source_count: 8
-accessed_at: "2026-09-09"
+last_confirmed: "2026-09-15"
+source_count: 9
+accessed_at: "2026-09-15"
 tags: [mast, multi-agent, failure-taxonomy, coordination, inter-agent-misalignment, task-verification, data-processing-inequality, isolated-workspaces, caid, token-budget]
 relationships:
   - type: part-of
@@ -116,3 +116,11 @@ Centralising every agent conversation in Postgres gives them, as a side effect, 
 The shape is familiar to this page — locally sensible, globally incoherent edits — but two features are worth recording. First, **each individual agent is behaving correctly given its context**; the failure is entirely in the aggregation, which means it will not be caught by any evaluation that scores fixes one at a time. Second, **the LLM judge is part of the mechanism rather than the safeguard**: it validates each local fix against local evidence, and has no vantage from which to see the interaction. Their remedy is human-in-the-loop, which they report as *"continuing to be really important"* — while, in the same talk, reporting that human review of database writes has decayed into rubber-stamping (see [[agent-oversight-and-delegation]]).
 
 This is a concrete instance of why [[2026-03-23-geng-neubig-caid-asynchronous-software-engineering-agents|CAID's]] isolated-workspaces result matters: the coordination primitive that pays is the one that prevents agents from acting on a partial view of shared state.
+
+## The governance face of the same failures (added 2026-09-15)
+
+[[2026-08-26-chatterjee-agentic-governance-gap|Chatterjee (Analytics Magazine, Aug 2026)]] restates this page's findings as an enterprise control problem, and the mapping is close enough to be worth recording. His third converging force is multi-agent coordination — *"a flawed instruction, a poisoned data source, or a manipulated prompt can cascade through a chain of agents before a person is positioned to intervene"* — which is MAST's **inter-agent misalignment** category with the security consequences attached.
+
+The incident classes he reports enterprises hitting line up with the taxonomy: *"agents that looped indefinitely on a flawed instruction"* (runaway loops), *"agents that invoked the wrong API with elevated credentials"*, and *"multi-agent systems where one agent's error propagated into a second agent's decision before any person was aware a problem existed."* His framing of why decomposition raises the stakes is the most quotable line: **"ordinary operational fragility, once confined to human error, is now compounding at machine speed."**
+
+His proposed control for the seam is **cross-agent identity and provenance** — when one agent acts on another's output, the origin, authorization and confidence of that input must be traceable. That is a direct architectural answer to the failure class this page identifies, and the corpus holds no evidence that it works. Note the source tier: a practitioner column with no data, reporting incident classes in aggregate with no counts and no named organisations.

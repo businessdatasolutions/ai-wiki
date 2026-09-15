@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-09-09"
-accessed_at: "2026-09-09"
-source_count: 63
+last_confirmed: "2026-09-15"
+accessed_at: "2026-09-15"
+source_count: 66
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -480,3 +480,13 @@ Their reasoning is worth keeping because it is about capability gaps rather than
 There is a partial and discouraging clue in their own prompt experiment. Told explicitly to attend to the emerging technology, the frontier models improved only **marginally** — so a skilled human's steer moved them less than one would hope. And the same intervention made the *best* model significantly **worse**: o3-mini overcommitted, sacrificed core profitability and was fired earlier. That is a warning against the comfortable assumption that augmentation is strictly safer than automation. Steering is itself an intervention with a failure mode, and on this evidence **the right amount of instruction is model-dependent** — which makes a general augmentation practice harder to write down than the framing usually implies.
 
 Their suggested hedge is ensembles or triangulation across models rather than reliance on any single one.
+
+## Which half AI cannot copy — a formal answer, and an experimental one (added 2026-09-15)
+
+This page's augmentation literature is mostly about *how much* AI helps. Two 2026 sources instead try to say *which part of the job it substitutes for*, and they converge on the same split from unrelated methods.
+
+**The model.** [[2026-01-20-yuan-aseri-ramasubbu-backfiring-ai-deployment-workplace|Yuan, Aseri & Ramasubbu]] build their entire result on the assumption that AI transfers **tangible ("hard") skill** — the technical capability a system can observe, codify and redistribute — while leaving **intangible skill** (communication, coordination, bridging) untouched. The consequence is a specific and falsifiable prediction about winners: the employee who gains is **low-technical, high-interpersonal**, because *"as AI evens out the differences in tangible skills, those who are strong in intangible skills emerge as the more competitive employees."* Their software-engineering illustration is that writing code, debugging and querying data stop conferring rank, while bridging technical teams and end-users becomes *"a critical, non-automatable skill."*
+
+**The experiment.** [[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork|Dell'Acqua et al.]] decompose the innovation process and find AI *"primarily enhances the quality of generated ideas, shifting the distribution of creative output upward, whereas human judgment retains value in evaluative selection."* Generation is substitutable; selection is not.
+
+**Where they agree and where they don't.** Both locate an automatable half and a durable half, and both put judgment/coordination on the durable side — consistent with [[durable-skills]]. But the model's assumption is asserted by definition and is increasingly arguable: a growing share of what this corpus documents AI actually doing (drafting a difficult message, preparing a negotiation, summarising a meeting for someone absent) is precisely the *intangible* half. If AI transfers soft skill too, Yuan et al.'s predictions invert. The augmentation/automation line may be moving in the opposite direction from the one their model assumes, and nothing here settles it.
