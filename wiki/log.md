@@ -10,6 +10,49 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-16] lint | A filename check, a corpus-wide sweep that found 437 warnings, and the thread the employment dispute deserved
+
+Two small pieces of work, plus a finding neither was looking for.
+
+**1. `lint-page.mjs` now checks source filename date prefixes against `date_published`.**
+
+The prefix is load-bearing — it orders `index.md` and is how every other page cites a source — and nothing checked it. The failure mode is silent: during the previous batch a prefix was copied from a neighbouring page (`2026-09-08` onto a source published `2026-08-10`) and survived to review. Caught by eye, not by tooling.
+
+Audited the corpus before wiring the check in, which turned out to matter: **30 sources mismatch, and the split is perfectly clean.** Every mismatch has a prefix on or before **2026-05-07**; every source from **2026-05-08** onward matches. The first ~25 sources were prefixed with their *ingest* date — the publish-date rule settled in early May. Renaming them would break inbound wikilinks across the corpus for no benefit, so the check **grandfathers prefixes on or before 2026-05-08 explicitly**, with the audit recorded in a comment rather than the tier silently ignored. Partial `date_published` values (`2025`, `2025-11` — legitimate for a journal issue or undated report) are also skipped. Result: **zero warnings corpus-wide**, so the rule is live without a backlog attached.
+
+**2. The hollow-sweep finding, which is the more useful half of this entry.**
+
+Verifying the new rule meant running `lint-page.mjs` over the corpus, and that exposed a mistake in how the previous two ingests were verified. **The script reads a JSON payload on stdin and writes to stderr.** Passing a file path as an argument makes it exit silently — *which is indistinguishable from a pass*. Both prior ingests reported "all pages lint clean" on exactly that invocation. They had verified nothing.
+
+Re-run correctly, those ingests had **two real violations** (missing body wikilinks for typed `supports` relationships on the Kavak and Covello source pages). Both now fixed; both source pages re-verified clean.
+
+The corpus-wide sweep, run properly for the first time, reports **437 warnings across 103 pages**:
+
+| Category | Count |
+| --- | ---: |
+| `dynamic_capabilities` tag with no body mention (body-twin rule) | 264 |
+| Typed relationship with no body `[[wikilink]]` | 156 |
+| `dynamic_capabilities` entry outside the closed vocabulary | 7 |
+| `confidence` above defensible max for `source_count` | 3 |
+
+Concentrated in **May-2026 sources**; worst pages carry 10–13 warnings each. **None is a correctness bug** — every one is the *navigable-layer* half of a rule whose *typed* half was satisfied, so the graph is complete and the prose is not. **Not triaged, deliberately.** It is a backlog, and CLAUDE.md §Lint now documents both the invocation (so the next sweep isn't hollow) and the baseline (so drift is visible).
+
+The three pages touched by this session's own ingests are clean, as are the new ones.
+
+**3. New thread: [[threads/ai-employment-effects-measurement-dispute|ai-employment-effects-measurement-dispute]].**
+
+[[ai-employment-effects]] had accumulated three positions on whether AI is removing jobs with no way to adjudicate between them, which is a thread's job rather than a concept page's. The question: [[2026-04-28-brynjolfsson-canaries-coal-mine|Canaries]] reports **13% → 16–17%** for 22–26-year-olds in the most-exposed occupations from ADP payroll microdata with a published method; [[2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs|Hatzius]] reports the correlation is *"quite small… in many cases we don't find anything"* at **10–15k jobs/month**, with no method shown.
+
+The thread's leading hypothesis is that this is **not a contradiction but an aggregation artifact** — an effect inside one cohort in one exposure quintile can be real and still invisible in an occupation-level aggregate that nets losses against data-centre hiring. It also records [[2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai|Sundararajan's]] confound, which bites the identification strategy specifically: AI-exposed occupations are disproportionately the ones that went remote.
+
+Highest-value acquisition named: **the underlying Goldman GIR note**, so the two designs can be compared directly instead of through an interview. The thread states explicitly that it **should not be closed by picking the more congenial number** — the corpus leans sceptical while the one source with a published method points the other way.
+
+**A third option was declined.** A Kavak-vs-Covello thread was considered and deferred: one podcast episode against one survey claim has nothing to gather yet. Revisit when a second firm-level source lands.
+
+**Pages touched (6):** `scripts/lint-page.mjs`, `CLAUDE.md`, 1 new thread, 2 source pages repaired, plus `index.md` and this log.
+
+---
+
 ## [2026-09-16] ingest | The aggregate, the value chain, and one firm that did the demolition
 
 Three sources, acquired across two sessions and processed as one batch because they answer the same question at three different units and disagree. Duplication checked by video id before fetching (all clean).

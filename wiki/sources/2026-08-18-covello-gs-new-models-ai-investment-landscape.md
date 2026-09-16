@@ -90,6 +90,7 @@ The interview has a single organising question and everything else hangs off it.
 - **Whether enterprise AI is paying.** [[2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company]] carries the survey figures the debate usually runs on; [[micro-productivity-trap]] holds the named failure mode; [[2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai]] is a single firm reporting the opposite outcome, and reports building roughly the layer this source says is missing.
 - **The value chain by layer.** [[2026-05-20-agrawal-stanford-mse435-economics-of-generative-ai]] walks the same stack in a seminar format.
 - **Routing between owned and rented models.** [[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai]] makes the per-capability version of claim 5; [[ai-sovereignty]] holds the layer-choice framing and [[open-source-ai]] the open-weights argument; [[small-language-models]] holds the case for what the cheap leg of the router runs on.
+- **The open-weights case, argued differently.** [[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai]] argues open weights from inspectability and national positioning; this source argues them from margin — cheaper models move economic value off the semiconductor layer and up the chain toward the buyer. Both also dismiss distillation as the explanation for cheap capable models.
 - **The macro aggregates beneath this.** [[2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs]] is the companion interview.
 
 ## Linked entities and concepts

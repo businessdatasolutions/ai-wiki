@@ -265,6 +265,40 @@ if (fm.type === "source" && Array.isArray(fm.roles)) {
   }
 }
 
+// 6. Source filename date prefix must match `date_published` (added 2026-09-16).
+//    The prefix is load-bearing: it orders the index and is how every other page
+//    cites the source, and nothing else checked it. A prefix copied from a
+//    neighbouring page during a batch ingest is silent and survives review.
+//
+//    Two deliberate exemptions:
+//    a) Prefixes on or before CONVENTION_CUTOFF. The first ~25 sources were
+//       prefixed with their INGEST date, not their publish date; the
+//       publish-date rule settled on 2026-05-08 and every source from that day
+//       on matches. Renaming the legacy tier would break inbound wikilinks
+//       across the corpus for no benefit, so they are grandfathered here rather
+//       than silently ignored. Audited 2026-09-16: 25 legacy mismatches, zero
+//       after the cutoff.
+//    b) Partial `date_published` values (`2025`, `2025-11`) — legitimate for a
+//       journal issue or an undated report, and nothing to compare against.
+const CONVENTION_CUTOFF = "2026-05-08"
+if (fm.type === "source") {
+  const base = rel.slice(rel.lastIndexOf(sep) + 1)
+  const m = base.match(/^(\d{4}-\d{2}-\d{2})-/)
+  if (m && m[1] >= CONVENTION_CUTOFF && fm.date_published != null) {
+    // gray-matter yields a Date for a full ISO date and a string for a partial one.
+    const published =
+      fm.date_published instanceof Date
+        ? fm.date_published.toISOString().slice(0, 10)
+        : String(fm.date_published).trim()
+    if (/^\d{4}-\d{2}-\d{2}$/.test(published) && published !== m[1]) {
+      warnings.push(
+        `filename date prefix \`${m[1]}\` does not match \`date_published: ${published}\` ` +
+          `(the prefix must be the publish date — rename the file, or fix the frontmatter if the prefix is right)`,
+      )
+    }
+  }
+}
+
 if (warnings.length > 0) {
   process.stderr.write(`lint-page: ${rel}\n`)
   for (const w of warnings) process.stderr.write(`  - ${w}\n`)

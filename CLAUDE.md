@@ -83,11 +83,21 @@ Report findings; let the user decide what to act on.
 
 | Script | Checks | Exit |
 | --- | --- | --- |
-| [`scripts/lint-page.mjs`](scripts/lint-page.mjs) | Lifecycle contract, relationship vocabulary, body-wikilink rule. Hook-fired on every edit. | always 0 |
+| [`scripts/lint-page.mjs`](scripts/lint-page.mjs) | Lifecycle contract, relationship vocabulary, body-wikilink rule, `dynamic_capabilities` vocabulary + body-twin rule, and (added 2026-09-16) **source filename date prefix vs `date_published`**. Hook-fired on every edit. | always 0 |
 | [`scripts/lint-confidence.mjs`](scripts/lint-confidence.mjs) | `confidence` values in range and defensible | non-zero on findings |
 | [`scripts/lint-dangling-authors.mjs`](scripts/lint-dangling-authors.mjs) | Authors on ≥2 sources with no entity page | non-zero on findings |
 | [`scripts/lint-index-completeness.mjs`](scripts/lint-index-completeness.mjs) | Pages missing their `index.md` bullet | non-zero on findings |
 | [`scripts/lint-collapse.mjs`](scripts/lint-collapse.mjs) | **Context collapse** over git history (see below) | non-zero on findings |
+
+**`lint-page.mjs` is hook-fired per edit, and there is no corpus-wide runner.** It reads a JSON payload on **stdin** (`{"tool_input":{"file_path":"..."}}`) and writes to **stderr** — passing a path as an argument makes it exit silently, which looks exactly like a pass. To sweep the whole corpus:
+
+```bash
+find wiki -name '*.md' -not -name 'index.md' -not -name 'log.md' | sort | while read f; do
+  printf '{"tool_input":{"file_path":"%s"}}' "$f" | node scripts/lint-page.mjs
+done > /tmp/lint.txt 2>&1
+```
+
+**First corpus-wide sweep (2026-09-16) found 437 warnings across 103 pages** — overwhelmingly `dynamic_capabilities` body-twin violations (264) and missing body wikilinks for typed relationships (142), concentrated in May-2026 sources. None is a correctness bug; all are the navigable-layer half of rules whose typed half was satisfied. Not triaged. Backlog, not emergency.
 
 **Orphan detection has no script.** It is listed as a lint duty above and nothing implements it — the same shape of gap that let 28 entity pages sit without an index bullet for months. Until `lint-orphans.mjs` exists (planned in v0.4, never built), treat orphan-checking as a manual sweep.
 
