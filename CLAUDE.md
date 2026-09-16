@@ -332,6 +332,13 @@ Set `confidence` defensibly when creating or updating a page:
 
 These are heuristics, not arithmetic. When the values conflict with intuition, write a defensible value and explain in `## Debates and supersession` if needed. Never write `0.0` as a default — that signals "not yet evaluated," which we don't allow on a live page.
 
+**`0.95` is a hard ceiling, not a soft target.** `lint-page.mjs` fires on every page above it. If an ingest feels the pull past the cap — typically on a spine concept with a very large `source_count` reaching for a *"more than merely well-supported"* signal the 0.70–0.95 scale does not offer — **that is a signal the page needs a prose claim about its own standing, not a higher number.** Two reasons the number is the wrong instrument:
+
+- A `confidence:` that keeps climbing with source count is measuring **volume, not epistemic strength**. `source_count:` already carries volume, more legibly than a third decimal place.
+- Raising the cap to fit the data is how caps stop meaning anything. If the ceiling moves whenever a page presses against it, it is not a ceiling.
+
+Say it in the body instead — name what the page is to the corpus, with the source count attached. As of 2026-09-16 **no page in the corpus sits above the cap**; the two that did ([`agent-harness`](wiki/concepts/agent-harness.md) at `0.98`, [`agentic-engineering`](wiki/concepts/agentic-engineering.md) at `0.97`) were clamped in a dedicated `refactor` pass rather than grandfathered, and both already made the standing claim in prose, which is the honest version of what the extra hundredths were gesturing at. A lint warning carried forward across weeks instead of acted on is the failure mode this note exists to prevent.
+
 ### Supersession protocol
 
 When new data fully replaces an older claim (not just adds nuance):
