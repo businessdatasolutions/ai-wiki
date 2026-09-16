@@ -3,9 +3,9 @@ type: concept
 aliases: ["software 3.0", "Software 3.0", "software-3.0", "LLM as computer", "LLMs as a new computer", "context window as program", "prompting as programming"]
 tags: [software-3.0, software-2.0, software-1.0, llm-paradigm, prompting, context-window, ai-engineering, karpathy]
 confidence: 0.88
-last_confirmed: "2026-07-15"
-accessed_at: "2026-07-15"
-source_count: 9
+last_confirmed: "2026-09-16"
+accessed_at: "2026-09-16"
+source_count: 10
 relationships:
   - type: instance-of
     target: generative-ai
@@ -158,3 +158,15 @@ Ishit Vachhrajani restates the same operating-model corollary, independently of 
 - **Is there an empirical signal that the "new things possible" framing is producing distinctive product categories?** Wiki has not yet ingested a 2026 catalogue of *Software-3.0-only* products. Karpathy's *LLM knowledge base* class is one named example; *Menu Gen-as-Nanobanana-overlay* is another. Worth tracking.
 - **Where does the Software 3.0 / Software 2.0 boundary actually fall?** Fine-tuning is squarely Software 2.0; pure prompting is squarely Software 3.0. Hybrid systems (RAG, prompt-augmented tool-use, RL-fine-tuned-then-prompted) blur the boundary. A second source that maps the boundary explicitly would lift confidence here.
 - **Aesthetics-as-RL-reward** — Karpathy specifically calls out that current code from agents is *"bloaty, copy-paste, awkward abstractions, brittle."* If labs add an aesthetic-quality reward signal, Software 3.0 program *quality* (not just correctness) closes the gap. Worth tracking which lab does this first.
+
+## The abstraction analogy, from the harness vendor ([[2026-07-06-google-cloud-agent-factory-intent-driven-development|Hallie / The Agent Factory, July 2026]])
+
+This page's working definition rests on the claim that natural language has become a programming layer above code. [[Lydia Hallie]] of [[Anthropic]] reaches for the same analogy this page uses, unprompted and from inside the vendor:
+
+> *"I can write TypeScript or JavaScript, but I'm not going to focus on the machine code that gets generated afterwards… software engineering used to focus on the actual code syntax, almost like how machine code might have mattered. But we're going a layer above that now."*
+
+The consequence she draws is a role claim — *"the role of the software engineer is changing more to be almost like a product manager"*, in charge of owning the artifact, the architecture and the *why* rather than the syntax. That is this page's [§Implications](#implications) restated as a job description.
+
+**The qualifier is what keeps it from being a deskilling claim**, and it is the part to carry forward: *"we still definitely need the technical expertise… it still requires a lot of technical expertise and good taste and high agency."* The compiler analogy cuts both ways — nobody reads the machine code, but writing good TypeScript is not easier than writing good assembly was, it is differently demanding. Compare [[ai-deskilling]], which holds the opposing evidence, and [[expert-generalist]], which describes the shape of the expertise the analogy implies.
+
+A vendor advocate's framing in a co-marketing episode, with no evidence attached. Its value here is that the analogy this page constructed is now independently arrived at by someone building the tooling, which is weak corroboration of the framing and none at all of the outcome.

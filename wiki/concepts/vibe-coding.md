@@ -3,9 +3,9 @@ type: concept
 aliases: ["vibe coding", "Vibe coding", "vibe-coding", "vibe-code", "v-coding"]
 tags: [vibe-coding, agentic-engineering, software-3.0, ai-agents, accessibility, hobbyist-coding, karpathy, pm-tooling, prototype-as-influence-tool, december-2025-phase-change, replit, ai-native-builders, post-prompting]
 confidence: 0.95
-last_confirmed: "2026-08-30"
-accessed_at: "2026-09-05"
-source_count: 23
+last_confirmed: "2026-09-16"
+accessed_at: "2026-09-16"
+source_count: 24
 relationships:
   - type: instance-of
     target: software-3.0
@@ -140,3 +140,17 @@ The danger in conflating them: vibe-coded artifacts shipped to production *as if
 ## What the output looks like at scale (added 2026-08-30)
 
 [[ai-generated-code-quality]] collects the measurements this page's quality caveats previously gestured at: **45% of AI-generated samples introduce OWASP Top 10 flaws** with performance flat across model generations; **205,474 unique hallucinated package names** as a supply-chain surface; and **22.7% of AI-introduced issues still present at the latest repository revision** across 302.6k AI-authored commits. The failure mode is less "the code doesn't work" than "the maintainability debt has no forcing function and is never paid down."
+
+## The two-regime split, stated by a practitioner (added 2026-09-16)
+
+This page's [§When vibe coding is the right tool](#when-vibe-coding-is-the-right-tool) / [§When vibe coding is the wrong tool](#when-vibe-coding-is-the-wrong-tool) division is mostly assembled by the wiki from sources that argue one side. [[2026-07-06-google-cloud-agent-factory-intent-driven-development|YK Sugi]] states both sides in one breath, as his answer to the Hacker News craft-and-technical-debt backlash:
+
+> *"If it's like a one-time vibe-coding kind of casual project, like the game I built, that's totally fine. **You don't have to check the code.** But if it's more of a serious production code base that you want to really be secure and safe about, then I say, create a draft PR, make sure it's good, review it manually or with AI."*
+
+Two things this settles, at least as far as one practitioner's position goes.
+
+**Not-reading-the-code is the defining property, and it is regime-scoped rather than wrong.** He grants the critics their premise — models over-generate, his own tip 38 says so — and refuses their conclusion: *"don't produce it then, don't push it… you're responsible for the output."* The floor-raising mode is legitimate precisely where nobody inherits the artifact, and the discipline that separates it from [[agentic-engineering]] is a **commit filter**, not a different prompting style.
+
+**The counterweight comes from the vendor in the same conversation.** [[Lydia Hallie]] (Anthropic) declines the fully-democratised reading: *"I still feel like having a software engineering background does help refine your prompts, and you can tell Claude a lot better what you actually want it to do."* That is an Anthropic advocate, on a Google channel, telling the audience that the abstraction has risen without the expertise requirement disappearing — which lands on this page's standing open question about who the floor is actually raised for, and points the same way as [[2026-06-16-anthropic-economic-index-agentic-coding-returns-to-expertise|the returns-to-expertise finding]].
+
+Both are assertions in a vendor co-marketing episode with no measurements attached. What they add is a clean articulation of the boundary, from the two sides of it, in the same room.

@@ -3,9 +3,9 @@ type: concept
 title: AI-generated code quality and security
 aliases: ["AI-generated code quality", "AI code security", "slopsquatting", "package hallucination", "AI technical debt", "AI-introduced defects"]
 confidence: 0.85
-last_confirmed: "2026-08-30"
-source_count: 5
-accessed_at: "2026-09-01"
+last_confirmed: "2026-09-16"
+source_count: 6
+accessed_at: "2026-09-16"
 tags: [code-quality, security, owasp, slopsquatting, package-hallucination, technical-debt, code-smells, supply-chain, static-analysis, flat-scaling]
 relationships:
   - type: part-of
@@ -75,3 +75,17 @@ Every other measure in this corpus improves with model generation — SWE-bench 
 - **Static analysis defines the defect.** The 484,366 figure is "issues a static analyser flags" — over-counting style, under-counting logic. And "verified AI-authored" depends on commit attribution, missing AI-assisted code committed under a human's name.
 - **Model vintages are 2024–early 2025** across all three studies. The mechanisms should hold; the specific rates will have moved and nobody has re-measured. **Open.**
 - **No source here reports a human baseline.** 45% insecure and 22.7% unfixed are alarming, but the corpus contains no comparable measurement of human-authored code under the same instruments. **This is the single largest interpretive gap in the concept.**
+
+## Over-generation as a practitioner's tip, and the commit filter (added 2026-09-16)
+
+The evidence on this page concerns defects. [[2026-07-06-google-cloud-agent-factory-intent-driven-development|YK Sugi]] contributes a different failure mode, from the independent-practitioner side: **volume**. His `claude-code-tips` **tip 38 — *simplify overcomplicated code*** — rests on the observation that code-generation models *"have a bias towards writing more code than needed"*, with the qualifier that it *"really depends on the particular model."*
+
+His remedy is not a prompt technique, and that is what makes it worth recording here:
+
+> *"don't necessarily commit all the code that's generated. Make sure that you only commit and merge the ones that are important and valuable to your code base — and you need to be the decider of that."*
+
+> *"If you generate 100,000 lines of code, you don't have to commit 100,000 lines of code… Just commit what you think is right."*
+
+**The commit boundary is treated as the quality gate**, not the generation step. That is consistent with this page's finding that AI-introduced defects *persist* — debt rather than error — since anything that reaches the trunk is what will still be there later. It also reframes the throughput claims the corpus collects: lines generated and lines merged are different quantities, and practitioners who report the first are not reporting the second.
+
+Two caveats on the source. It is **vendor co-marketing** with zero measurements, and Sugi's own demo is a greenfield toy game where he explicitly does *not* read the code — his two-regime split is that casual one-offs need no review ([[vibe-coding]]) and *"a serious production code base"* gets a draft PR and a manual or AI review. The discipline is asserted, not demonstrated.

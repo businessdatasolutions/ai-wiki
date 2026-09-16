@@ -3,9 +3,9 @@ type: concept
 title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
 confidence: 0.85
-last_confirmed: "2026-09-15"
-source_count: 12
-accessed_at: "2026-09-15"
+last_confirmed: "2026-09-16"
+source_count: 13
+accessed_at: "2026-09-16"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
   - type: part-of
@@ -127,3 +127,30 @@ A small but concrete data point on where the corpus's never-let-the-agent-grade-
 Separate-evaluator design shipped as a product default rather than prescribed as a practice — which is the direction this page has argued oversight has to go, since [[2026-08-26-chatterjee-agentic-governance-gap|prescriptions relying on organisational willpower]] lose to the business case for removing the gate. Worth noting alongside it: Boost is explicitly **not** the default mode (*"you don't need to use it for everyday tasks"*), so the verification pass is reserved for the intricate work — a consequence-calibrated gate, arrived at as a pricing and latency decision.
 
 **Zero evidence attached.** No measurement of what the verification pass catches, no false-approve rate, no time-to-halt. The page's standing complaint — that nobody reports numbers for any gate — survives intact.
+
+## Permission fatigue, and the classifier as a third option (added 2026-09-16)
+
+This page has recorded oversight decay as something *observed* — approvals rubber-stamped as familiarity grows. [[2026-07-06-google-cloud-agent-factory-intent-driven-development|Anthropic's [[Lydia Hallie]] (The Agent Factory, July 2026)]] gives it a vendor's name, calls it **dangerous rather than annoying**, and describes a product built against it. That is the first time in the corpus a harness vendor treats approval erosion as a design problem rather than a user discipline problem.
+
+The trap she describes is a two-option one, and both options fail:
+
+| Prior option | Failure |
+| --- | --- |
+| Ask on everything | *"after a while you're just like, yeah, go ahead. Whatever. And we call this a **permission fatigue**"* — and *"[you] won't read them as much anymore… you've asked me 100 times now."* The gate exists and is not read |
+| `--dangerously-skip-permissions` | *"Claude will never ask you anything, which is also not great because if it's about to delete your root file, there's no going back"* |
+
+**Claude Code's auto mode is a classifier interposed between the agent and every tool call** — *"it kind of sits in between your denial list and allow list. So auto mode runs a different classifier between all the tool calls."* Three properties, each of which this page has argued for from the outside:
+
+- **Consequence-calibrated, per call.** *"is this tool call dangerous… if yes, let's ask the user… but if it's just a normal read or edit… let's not bother them."* This is the gate trigger five disciplines independently converged on, implemented in the harness instead of prescribed as a practice — which is the direction [[2026-08-26-chatterjee-agentic-governance-gap|Chatterjee's]] argument says oversight must go, since anything resting on organisational willpower loses to the business case for removing the gate.
+- **Context-dependent.** *"If you're asking Claude, delete this folder… if you've specifically asked for it, it's not dangerous."* Explicit user intent downgrades the risk score — the classifier reads the session, not just the call.
+- **Prompt-injection defence as a side effect.** *"a tool call might just be like ignore all instructions… because it runs a classifier in between, it's much better at catching that."* One interposition, two jobs. See [[attack-surface-management]].
+
+The stated purpose is not safety but **autonomy**: *"this actually enables you to run Claude Code way more autonomously in these longer running sessions."* Which is the structural opposition this page records, arriving as a feature — the gate is being redesigned *so that it can be crossed faster*, and the vendor says so.
+
+**Two things to hold against it.**
+
+First, **the page's standing complaint applies to a gate that now ships by default.** No false-approve rate, no false-block rate, no description of what the classifier is or was trained on, no evidence for the injection claim. An unmeasured model now makes the calls the human was rubber-stamping — which may well be an improvement, and is not demonstrated to be one.
+
+Second, **this is a trust transfer, not a trust reduction.** The corpus's never-let-the-agent-grade-its-own-homework rule says an agent should not evaluate its own work; auto mode has a model evaluate another model's actions. Whether that counts as an independent evaluator depends on correlation between the classifier's blind spots and the agent's — exactly the configuration the [[2026-09-01-cfa-institute-agentic-ai-finance-workflows-governance|CFA roundtable]] flags as least likely to catch an error, there for human-and-model bias, here for model-and-model.
+
+Worth noting as a small counterweight to the autonomy push: the same episode shows the feature **off by default** on Google's Agent Platform, gated behind an environment variable. Distribution channel, not principle — but it is the one place in the episode where someone chose the conservative default.

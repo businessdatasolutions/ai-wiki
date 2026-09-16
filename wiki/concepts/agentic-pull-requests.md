@@ -3,9 +3,9 @@ type: concept
 title: Agentic pull requests
 aliases: ["agentic pull requests", "agentic PRs", "agent-authored PRs", "Agentic-PR", "auto-merge", "AI code review"]
 confidence: 0.85
-last_confirmed: "2026-08-30"
-source_count: 8
-accessed_at: "2026-09-01"
+last_confirmed: "2026-09-16"
+source_count: 9
+accessed_at: "2026-09-16"
 tags: [agentic-pr, aidev, auto-merge, code-review, rejection-rate, risk-scoring, msr-2026, merge-queue, review-bottleneck, technical-debt]
 relationships:
   - type: part-of
@@ -75,3 +75,23 @@ Two of these have independent support. **Reversibility** and external visibility
 - **Is 46.41% rejection bad?** It is a rejection rate among *opened* PRs, not a defect rate, and the "low priority" category shows some rejections are targeting failures rather than quality failures. Against that, human PR rejection rates in comparable open-source projects are not reported in any source here, so **there is no baseline** — the number is alarming without being interpretable. **Open.**
 - **Do practitioner gates generalise?** [[2026-04-13-branco-lgtm-auto-merged-llm-agentic-prs]] finds the wild is bimodal and mature repositories decline auto-merge. Neither [[2026-08-05-vo-lennys-merge-mommy-ai-code-review-bot|Merge Mommy]] nor Land PR reports a **false-approve rate**, which is the only number that would establish whether the low-risk band is actually low-risk. **Open.**
 - **All population data is public GitHub, five agents, self-identified attribution.** Enterprise and private-repo behaviour is entirely unobserved.
+
+## Two opposite conventions, in one episode (added 2026-09-16)
+
+[[2026-07-06-google-cloud-agent-factory-intent-driven-development|The Agent Factory, July 2026]] puts two practices for agent-authored PRs side by side, twenty minutes apart, without noticing that they point in opposite directions.
+
+**Make authorship conspicuous.** [[YK Sugi]]'s convention: have the agent open the PR as a **draft**, review it, then mark it ready.
+
+> *"You can just ask the agent to create a draft PR… and then check it before marking it as ready for review so that people will [know] OK, this PR maybe was created by the agent. It's not ready for review yet."*
+
+This is an **out-of-band provenance marker built from existing GitHub semantics** — no new tooling, no bot, no label taxonomy. Given that this page's central finding is that reviewer attention is the scarce resource, a zero-cost signal that says *"do not spend attention here yet"* is a cheaper intervention than anything else the corpus records.
+
+**Make authorship invisible.** [[Lydia Hallie]] describes the opposite as standard practice inside [[Anthropic]] — the Claude GitHub app installed across their repositories, so that
+
+> *"if your CI fails or someone leaves a comment, Claude will automatically try to fix it until your CI is green."*
+
+with the stated goal *"to be as out of the loop as possible."* A teammate's review comment becomes an input to an automated fix loop rather than a request to a human author.
+
+**The conflict is about what green CI certifies.** Making a passing pipeline the loop's terminal state assumes CI failure is the failure mode. [[2026-06-11-abujadallah-rejection-of-agentic-pull-request-fixes|Abujadallah et al.]] find **46.41%** of agent-proposed fixes rejected across four categories, only one of which is CI/test failure — *incorrect implementation* and *low priority* are both invisible to a green pipeline, and this page's existing `contradicts` edge to [[reward-hacking]] says a passing suite is precisely what an optimising agent produces either way. An auto-fix loop that halts on green therefore halts on the signal least able to distinguish a good fix from a plausible one.
+
+The reconciliation neither speaker offers is the one [[agent-oversight-and-delegation]] has converged on: **calibrate to consequence and reversibility.** Draft PRs for changes that reach production; auto-fix for CI-green plumbing. Both conventions are defensible inside their band and neither is defensible as a default.

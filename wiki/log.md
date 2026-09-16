@@ -10,6 +10,53 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-16] ingest | Anthropic explains auto mode on Google's channel — and concedes its subagents are non-deterministic
+
+One video, checked for duplication by video id against `wiki/` and `raw/` before fetching (clean — the habit is now five batches old). Acquire and Process ran in the same session, so this logs under the `ingest` umbrella per CLAUDE.md §Acquire step 5.
+
+**New source page (1):**
+
+- [[2026-07-06-google-cloud-agent-factory-intent-driven-development]] — *Intent-driven development with Claude Code & Fable 5*, **Google Cloud Tech** (*The Agent Factory*); host **[[Smitha Kolan]]**, guests **[[Lydia Hallie]]** ([[Anthropic]], Claude Code team) and **[[YK Sugi]]** (CS Dojo). Published 6 July 2026 — it **predates** the [[2026-09-14-google-cloud-agent-factory-agent-harnesses-explained|September Agent Factory episode]] already in the corpus by ten weeks, so the Sources section gets a new batch block at the top whose date sits *below* the previous block's. That is the batch-prepend rule working as specified, not a sort error.
+
+**The title is the least interesting thing in the episode, and the source page says so up front.** "Intent-driven development" is prompting-well rebranded, and Sugi declines to defend its novelty (*"there are many different terms for it"*). The page treats it as vocabulary rather than a construct and says what would change that: a second independent source giving it operational teeth.
+
+**What the episode is actually worth holding: two Claude Code mechanisms the wiki had as names only.**
+
+**1. Auto mode is a classifier, and the problem it solves has a vendor-supplied name.** [[Lydia Hallie]] names **permission fatigue** and — the part that matters — calls it *dangerous* rather than annoying: *"[you] won't read them as much anymore… you've asked me 100 times now. Sure, just go ahead."* Auto mode *"sits in between your denial list and allow list. So auto mode runs a different classifier between all the tool calls"*, triaging per call, reading session intent, and catching prompt injection as a side effect of interposition. This is the corpus's first instance of a **harness vendor treating approval erosion as a design problem rather than a user-discipline problem**, and it landed a full new section on [[agent-oversight-and-delegation]] — where it is recorded alongside two objections: the page's standing complaint that nobody reports a false-approve rate now applies to a gate shipping by default, and the arrangement is a **trust transfer, not a trust reduction** (a model adjudicating another model's actions, with unknown correlation between their blind spots).
+
+**2. Dynamic workflows, and a concession worth more than the feature.** The vendor states plainly that ad-hoc subagent spawning *"is very non-deterministic. Sometimes it might spin up four subagents, sometimes it might not even use subagents. The other time it uses 10 subagents."* Ninety-plus sources on [[agent-harness]] treat subagents as a primitive; this is the first to say the primitive fires unpredictably, from the team that ships it. The fix is a **generated JavaScript file** (*"I didn't type this. This is all Claude"*) — parallel build agents inside sequential integration/review/verify phases, editable per-subagent model choice, saveable as a re-runnable command. Recorded on [[agent-harness]] as a new shape for the harness layer (**the harness emits a program rather than executing a plan it holds internally**) and on [[agent-fleet-management]] as **delegating the span of control to a file**. The qualification both pages carry: the *file* is deterministic, what each subagent does with its prompt is not, and [[multi-agent-failure-modes|MAST's]] failures live in the part that stays stochastic.
+
+**The self-contradiction the episode does not notice**, now on [[agentic-pull-requests]]: Sugi's draft-PR convention exists to make agent authorship **conspicuous** so a human looks harder; Hallie's GitHub bot (*"fix it until your CI is green"*, goal *"to be as out of the loop as possible"*) exists to make it **invisible** so nobody looks at all. Both are presented as best practice twenty minutes apart. Filed as the source's one `contradicts` edge — against [[2026-06-11-abujadallah-rejection-of-agentic-pull-request-fixes|Abujadallah et al.]], whose 46.41% rejection rate spans four categories of which only one is visible to a green pipeline.
+
+**Three new entity pages (3):**
+
+- [[Lydia Hallie]] — Anthropic, Claude Code team; *theavocoder*. Promoted on **one** source, on the [[Tilde Thurium]] precedent: a named presenter carrying first-party mechanism detail available nowhere else in the corpus.
+- [[YK Sugi]] — CS Dojo; `claude-code-tips` (~8,000 stars). The corpus's first **independent** (non-vendor) codification of coding-agent discipline. Employer heard as "Daft" in ASR and recorded at low confidence.
+- [[Smitha Kolan]] — Google Cloud DevRel, host of *The Agent Factory*. Promoted on her **third** appearance, which **clears a standing Dangling entry** on the September episode. Her full name was only ever available in this episode's channel description; the two earlier sources name her as "Smitha". The September source page's Linked-entities block was updated to link her and record the promotion.
+
+**Concept pages touched (7)** — all with `last_confirmed`, `accessed_at` and `source_count` bumped:
+
+| Page | What it gained |
+| --- | --- |
+| [[agent-oversight-and-delegation]] | *Permission fatigue, and the classifier as a third option* — the biggest single addition in this ingest |
+| [[agent-harness]] | *The harness vendor concedes non-determinism, then sells a file that fixes it*; also [[Anthropic]] calling its own product *"a better harness"* in its own voice |
+| [[agent-fleet-management]] | *Delegating the span of control to a file*; hundreds-of-subagents as a stated design target with no instance behind it |
+| [[agentic-engineering]] | *The review inversion, and design-as-spec* — a Claude Design wireframe that is simultaneously plan, prompt and acceptance criterion |
+| [[agentic-pull-requests]] | *Two opposite conventions, in one episode* |
+| [[ai-generated-code-quality]] | *Over-generation as a practitioner's tip, and the commit filter* — tip 38, and the commit boundary as the quality gate |
+| [[vibe-coding]] | *The two-regime split, stated by a practitioner* — and Hallie declining the fully-democratised reading |
+| [[software-3.0]] | *The abstraction analogy, from the harness vendor* — TypeScript/machine-code, with the anti-deskilling qualifier |
+
+**One correction to an existing page.** [[Anthropic]] described **Claude Cowork** as a *"collaborative-design product"* — inferred, in April, from a passing Spiegel reference to designers shipping code. It is not: Hallie states it is the **non-coding surface on the Claude Code runtime**, differing only in connectors and system prompts. The bullet is rewritten with the first-party account and the prior characterisation is flagged inline as wrong. Not a supersession — one bullet on one entity page, no claim retired, no `status: stale`.
+
+Plus [[Claude Code]], which gains a first-party section on auto mode, dynamic workflows, **Cowork's runtime identity** (*"still uses the Claude Code runtime underneath… better connectors and better system prompts"* — confirming the alias at the top of that page is architectural, not branding) and Vertex AI distribution.
+
+**Neighbour-source scan — 6 edges, all on the new source's frontmatter.** `supports` → [[2026-09-14-google-cloud-agent-factory-agent-harnesses-explained]] (same series, vendors reversed: Antigravity Boost and dynamic workflows are the same product shape two months apart), [[2026-08-19-he-databricks-anthropic-primitives-to-production-agents]] (He dated auto mode as a throwaway; Hallie supplies the mechanism), [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system]] (builder-side origin for the product Blum documents from the user side), [[2026-09-07-yc-paper-club-why-the-harness-matters-more-than-the-model]] (Karten's *programmatic sub-agent creation* shipped as a product), [[2026-03-26-osmani-code-agent-orchestra-multi-agent-coding]] (the defect Osmani's orchestra hand-rolls around); `contradicts` → [[2026-06-11-abujadallah-rejection-of-agentic-pull-request-fixes]]. Candidates considered and rejected: [[2026-05-14-pochampally-assistant-or-actor-delegation-regret]] (delegation regret is adjacent to permission fatigue but the mechanisms differ — regret is about outcome, fatigue about attention) and the remaining harness-engineering cluster, where the overlap is topical rather than a defensible typed edge.
+
+**Reliability, recorded prominently on the page.** Vendor co-marketing on all three sides — Google's channel, Google's Vertex AI, Anthropic's DevRel, a community advocate whose repo the episode promotes. **Zero measurements of any kind.** Both demos are greenfield toy games. The `$10,000` real-estate anecdote is unverifiable. The 90/10 review figures are rhetorical. And the flagship parallel-subagent feature **was too slow to demo live** — she cut to a pre-baked tab and said so on camera, which is the most informative unscripted moment in 46 minutes.
+
+**Acquire notes.** The ASR track mangled nearly every proper noun in the episode — *Claude Code* → *"Lockport"*, *Lydia Hallie* → *"Lyria Haley"*, *Google Cloud Platform* → *"Azure platform"*, *Rapier* → *"wrap here"*. All corrected at acquire time and itemised in the raw file's `notes:`; one GCP project name remains inaudible and is marked as such. YouTube also exposes a human-curated "English - CC" track that the transcript panel did not serve — worth attempting first on future Google Cloud Tech pulls, since the September episode got the curated one.
+
 ## [2026-09-16] refactor | Clamp the two out-of-range confidence values to the schema cap
 
 **What changed.** [[agent-harness]] `0.98 → 0.95` and [[agentic-engineering]] `0.97 → 0.95`. Two characters each, no body text touched.

@@ -47,7 +47,7 @@ relationships:
 
 **The most important thing in this video is a fact about a person, not a concept: [[Ryan Lopopolo]] now works at Google.** The wiki has carried him as *Member of Technical Staff at [[OpenAI]] (Codex)* since his promotion in June. Here he is interviewed by [[Tilde Thurium]] as *"a Googler"*, says *"Holding strong here at Google — it's been eight weeks here for me"* (so joining around mid-July 2026), and describes his work as building *"the best agents to help you operate your Cloud."* The entity page has been corrected.
 
-Beyond that, the episode is three segments: the Thurium–Lopopolo interview (the substance), a live code walkthrough by Billy, and a tooling round-up by Smitha.
+Beyond that, the episode is three segments: the Thurium–Lopopolo interview (the substance), a live code walkthrough by Billy, and a tooling round-up by [[Smitha Kolan|Smitha]].
 
 ## The coinage question, asked directly
 
@@ -113,7 +113,7 @@ And the segment's closing line is the corpus's thesis restated by a vendor: what
 
 ## The three-layer stack (the product segment)
 
-Smitha's framing — *"your coding agent doesn't need a smarter model, it needs a better stack"* — with one Google product per layer:
+[[Smitha Kolan|Smitha]]'s framing — *"your coding agent doesn't need a smarter model, it needs a better stack"* — with one Google product per layer:
 
 1. **Model — Gemini 3.8 Flash.** The argument against reaching for the heaviest reasoning tier is agent-shaped: an agent *"might inspect a directory, update a function, execute unit tests, and then repeat that sequence 20, 40, or even 60 times just to finish one task"*, so *"speed and cost compound dramatically"* and a fast cheap model *"isn't a downgrade — it is the exact thing that makes real-time agentic loops practical."* This is [[small-language-models]]'s argument reached from the loop-count side rather than the device-fit side.
 2. **Harness — Antigravity Boost.** *"Boost is a command that transforms a single model into a coordinated team"*: an orchestrator that delegates specialised sub-agents in parallel and *"finishes with an independent verification pass that thoroughly audits the work before anything touches your code base."* Explicitly **not** for everyday work — save it for *"deeply intricate engineering challenges."* Note the separate-verifier design, which is the control [[agent-oversight-and-delegation]] records as never-let-the-agent-grade-its-own-homework.
@@ -130,8 +130,9 @@ That last point is the strategically interesting one. A hyperscaler shipping its
 ## Linked entities and concepts
 
 - Concepts: [[agent-harness]], [[agentic-engineering]], [[graph-engineering]], [[ai-agents]], [[agent-fleet-management]], [[agent-oversight-and-delegation]], [[small-language-models]], [[agent-development-lifecycle]]
-- Entities: [[Ryan Lopopolo]], [[Tilde Thurium]], [[Google]], [[Antigravity]], [[Agent Development Kit]], [[OpenAI]], [[Claude Code]], [[Cursor]]
-- **Dangling** (single-source mention, deferred): Smitha, Luke, Billy, *The Agent Factory*, Antigravity Boost, Google Skills, Gemini 3.8 Flash
+- Entities: [[Ryan Lopopolo]], [[Tilde Thurium]], [[Smitha Kolan]], [[Google]], [[Antigravity]], [[Agent Development Kit]], [[OpenAI]], [[Claude Code]], [[Cursor]]
+- **Dangling** (single-source mention, deferred): Luke, Billy, *The Agent Factory*, Antigravity Boost, Google Skills, Gemini 3.8 Flash
+- *Promoted 2026-09-16:* **Smitha** — named in full as [[Smitha Kolan]] by [[2026-07-06-google-cloud-agent-factory-intent-driven-development|the July Agent Factory episode]], her third appearance in the corpus.
 
 ## Scope and reliability
 

@@ -3,9 +3,9 @@ type: concept
 aliases: ["agentic engineering", "Agentic Engineering", "agentic-engineering", "agent engineering"]
 tags: [agentic-engineering, vibe-coding, software-3.0, ai-agents, agent-harness, software-engineering, hiring, karpathy, codex-case-study]
 confidence: 0.95
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
-source_count: 58
+last_confirmed: "2026-09-16"
+accessed_at: "2026-09-16"
+source_count: 59
 relationships:
   - type: depends-on
     target: agent-harness
@@ -302,3 +302,23 @@ Then the mapping:
 A corollary he draws that the corpus should keep: because you are not reading the code closely, *"you probably don't want to be super in the weeds on prompting and identifying tasks and pointing the agent in the right direction in the first place"* — so the agent classifies its own work type and uses that to discover the context it needs. Sprint planning internalised into the agent.
 
 And the shared-agent picture, which is a genuinely new framing here: team members each bump a different stat, *"like building out the stats of an RPG character"* — a React architect joins and front-end performance improves for everyone — so *"you can get quite a well-rounded agent that has the best of everyone."* The agent as the team's accumulated expertise rather than each engineer's private tool.
+
+## The review inversion, and design-as-spec (added 2026-09-16)
+
+[[2026-07-06-google-cloud-agent-factory-intent-driven-development|The Agent Factory, July 2026]] contributes two things to this page: the plainest statement the corpus holds of where engineering attention has moved, and a technique for the verification discipline this page keeps asking for.
+
+**The review inversion.** [[Lydia Hallie]] (Anthropic, Claude Code):
+
+> *"when you handwrite it, you like 90% of the review process happens as you're writing it. I think with Claude Code… it's like 90% you have to review it and 10% maybe hand-coding the changes. So there's definitely a lot more importance in the reviewing phase now. And I feel like a lot of people have yet to shift their mindset towards that."*
+
+The numbers are rhetorical. The structural claim is not: **review used to be bundled into authoring and has been unbundled from it.** A developer reading their own code as they wrote it was reviewing continuously and invisibly; a developer reading an agent's output is doing a discrete activity they have never had to schedule. That is the mechanism behind the bottleneck [[2026-08-05-vo-lennys-merge-mommy-ai-code-review-bot|Vo]] built a product against and [[agentic-pull-requests]] measures, stated as a claim about attention rather than throughput.
+
+**Design-as-spec: the wireframe is the prompt.** The transferable technique in the episode. Rather than describing the changes she wanted, Hallie generated a visual plan in **Claude Design** — game flow, level select, health bars, haptics, scoring — as plain, hand-editable HTML, then handed the file to Claude Code as the prompt:
+
+> *"what I'm doing now is I'm giving Claude a way to verify and understand what I want to build, because it has this HTML. It has the context."*
+
+One artifact does three jobs: it is the **plan** (editable before the run), the **prompt** (passed verbatim), and the **acceptance criterion** (the built result is checked against it). That collapses the gap this page's [§Operational invariants](#operational-invariants-from-the-codex-case-study) identify between what was asked for and what gets verified, and it does so without a written spec document — the loop [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum]] describes as skills mined from friction, applied to a single task.
+
+**The role framing that comes with it**, and its qualifier. *"The role of the software engineer is changing more to be almost like a product manager"* — but *"it still requires a lot of technical expertise and good taste and high agency"*, and *"having a software engineering background does help refine your prompts."* Hallie's analogy is the one [[software-3.0]] rests on: writing TypeScript without attending to the machine code it generates. Set against [[vibe-coding]]'s democratisation reading, this is a vendor advocate saying the abstraction rises but the expertise requirement does not vanish.
+
+**The independent-practitioner counterpart.** [[YK Sugi]]'s `claude-code-tips` repository is the corpus's first **non-vendor** codification of this discipline, and his tip 38 names the over-generation problem directly: code-generation models *"have a bias towards writing more code than needed."* His remedy is a commit filter rather than a prompt fix — *"if you generate 100,000 lines of code, you don't have to commit 100,000 lines of code… Just commit what you think is right"* — which is [[ai-generated-code-quality]]'s debt argument restated as an author's obligation.

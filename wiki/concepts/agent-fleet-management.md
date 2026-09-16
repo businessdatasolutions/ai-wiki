@@ -3,9 +3,9 @@ type: concept
 title: Agent fleet management
 aliases: ["agent fleet management", "managing agent fleets", "agent manager", "human as agent manager", "parallel agents", "agent orchestration at scale"]
 confidence: 0.75
-last_confirmed: "2026-09-15"
-source_count: 9
-accessed_at: "2026-09-15"
+last_confirmed: "2026-09-16"
+source_count: 10
+accessed_at: "2026-09-16"
 tags: [agent-fleet, parallelism, cloud-agents, isolated-workspaces, decision-fatigue, priority-queue, span-of-control, delegation, playbooks, token-economics]
 relationships:
   - type: part-of
@@ -84,3 +84,17 @@ The episode adds no evidence and does not move this page's confidence: it is thr
 - **Does fleet parallelism buy quality or only throughput?** Practitioners claim throughput and explicitly disclaim quality (Carson). [[2026-03-23-geng-neubig-caid-asynchronous-software-engineering-agents|CAID]] claims accuracy gains too, but in a regime ([[2026-04-02-tran-kiela-single-agent-outperforms-multi-agent-under-equal-budgets|per Tran & Kiela]]) where a single context window is insufficient. **Open:** nobody has measured a fleet against a single agent at equal total spend on the same task set.
 - **Is the span-of-control limit ~4–5 or ~15?** Carson cites "four or five concurrent tasks you can actually keep track of" as the reason for folder bucketing, then runs 10–15 threads. The reconciliation is presumably that folders raise the effective limit by chunking — but this is asserted, not measured.
 - **All evidence for the practitioner claims is n=1 and self-reported.** Carson is the single practitioner behind three of this concept's sources; [[2026-04-13-branco-lgtm-auto-merged-llm-agentic-prs]] suggests the graduated-gate discipline he and [[Claire Vo]] describe is *rare* in the wild, where repositories mostly auto-merge all agentic PRs or none. **Open:** is disciplined fleet management a practice, or currently a proposal?
+
+## Delegating the span of control to a file (added 2026-09-16)
+
+This page frames fleet management as a **span-of-control** problem: how many agents can one person supervise. [[2026-07-06-google-cloud-agent-factory-intent-driven-development|Anthropic's [[Lydia Hallie]] (July 2026)]] describes the vendor's answer, which is to stop supervising individually and **write the span down as a program**.
+
+**Claude Code's dynamic workflows** emits a JavaScript file describing an entire run — parallel build agents inside sequentially-gated phases — which the user can edit, save as a named command, and re-invoke. The fleet-management consequences are three:
+
+- **Scale is the design point, not a side effect.** *"It can go into hundreds of subagents because this is a feature for tasks that takes hours or days or these really long spanning tasks."* Against [[2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder|Carson's]] hand-managed 15 and [[2026-07-25-darroman-profitable-founder-managing-ai-agents-25-prs-a-day|Darroman's]] 25 PRs/day, this is two orders of magnitude, purchased by removing the human from the per-agent decision entirely.
+- **It answers the page's own contradiction with the multi-agent literature more directly than the corpus has.** The recorded reconciliation is that fleets parallelise *independent* tasks. The workflow file makes independence a **declared property of the phase**: build agents run concurrently because the author asserted they can, and integration, review and verify are serialised because they cannot. Whether the assertion is right is still the author's problem — but it is now explicit and inspectable rather than implicit in an agent's spawning behaviour.
+- **Per-subagent model selection becomes an edit.** *"Maybe I don't want all subagents to use Fable… Maybe I want to use Sonnet or Opus."* Token economics (see [§Economics](#economics) above) moves from a global setting to a per-role one, in source the user controls.
+
+The problem it was built for is stated as a defect in the previous behaviour, by the vendor: ad-hoc spawning *"is very non-deterministic — sometimes it might spin up four subagents, sometimes it might not even use subagents. The other time it uses 10 subagents."* That is the condition [[2026-03-26-osmani-code-agent-orchestra-multi-agent-coding|Osmani's orchestra pattern]] hand-rolls around; here the vendor ships the fix.
+
+**What the episode does not establish** is whether any of it works at the claimed scale. The demo ran four build agents on a toy game, and it was **too slow to complete on camera** — she cut to a pre-baked tab, noting the large model's latency. Hundreds of subagents over days is a design target with no reported instance behind it.

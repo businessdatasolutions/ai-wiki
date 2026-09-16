@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.95
-source_count: 99
+source_count: 100
 relationships:
   - type: part-of
     target: ai-agents
@@ -20,8 +20,8 @@ relationships:
   - type: uses
     target: small-language-models
     via: "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed"
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
+last_confirmed: "2026-09-16"
+accessed_at: "2026-09-16"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -952,3 +952,25 @@ The observation prompting it comes from co-host **Xin Guan** of CGTN, describing
 **The part that is actually new is the composition change, not the tooling.** Her point is about *who* can now do it: *"in the past, if you are IT student it's easier to start a business because they know how the internet works, they know how to code. And now if you are study like literature, philosophy — but you can just tell AI agent what you want to do, tell it about your vision, and they're just starting a company."*
 
 Read this against [[2026-09-14-google-cloud-agent-factory-agent-harnesses-explained|Lopopolo's]] position that harness engineering is *curating tools and context around a fixed harness*. If that is right, the skill Sundararajan says confers advantage is not programming — it is the curation and delegation judgment the harness literature has been describing all along, which is consistent with a philosophy graduate acquiring it. The claim is **unmeasured**: *"early indications"* is as precise as he gets, and the China adoption account arrives through a state-broadcaster co-host. [[2026-08-12-tan-a16z-new-rules-for-founders|Tan]] and [[2026-06-17-priest-atlantic-pwc-ai-agents-changing-business|Priest]] hold the wiki's other one-person-company material; [[ai-employment-effects]] holds the employment-form question this feeds.
+
+## The harness vendor concedes non-determinism, then sells a file that fixes it (added 2026-09-16)
+
+[[2026-07-06-google-cloud-agent-factory-intent-driven-development|Anthropic's [[Lydia Hallie]], on Google's channel (July 2026)]] supplies three first-party data points about the corpus's reference harness, and the first is a concession the corpus should not let pass unrecorded.
+
+**1. Ad-hoc subagent spawning is non-deterministic, and the vendor says so.**
+
+> *"subagents themselves aren't new… But if you're just asking Claude every time to use subagents — you don't even have to ask it — the downside is that it's very non-deterministic. Sometimes it might spin up four subagents, sometimes it might not even use subagents. The other time it uses 10 subagents."*
+
+Ninety-plus sources on this page treat subagents as a harness primitive. This is the first to state that the primitive fires unpredictably, from the team that ships it.
+
+**2. The correction is a generated, editable, re-runnable JavaScript file.** Claude Code writes the orchestration out as code — *"I didn't type this. This is all Claude"* — with parallel build agents inside sequentially-gated phases (build → integration → review → verify), saveable as a named command so that *"every time we invoke that command, it will just run these exact same subagents."*
+
+This is a **new shape for the harness layer** and worth naming precisely: the harness does not execute a plan it holds internally, it **emits a program** that the user can read, diff, edit and version. Model choice per subagent is one of the editable fields — *"maybe I want to use Sonnet or Opus"* — which makes [[small-language-models|model routing as a harness decision]] literally a line of source code the user owns. Set against [[2026-09-14-google-cloud-agent-factory-agent-harnesses-explained|Lopopolo's]] *"I have never built a harness… keep the harness fixed, invest in tools and context"*: the workflow file is exactly the kind of artifact his prescription blesses, because it is context and orchestration rather than harness, and it is throwaway by design.
+
+The determinism claim needs one qualification the episode does not make. The **file** is deterministic — same phases, same prompts, same models. What each subagent *does* with its prompt is not. The guarantee is over the orchestration graph, not the output, and [[multi-agent-failure-modes|MAST's]] failures are concentrated in exactly the part that stays stochastic.
+
+**3. The vendor calls its own products harnesses.** Explaining [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Claude Cowork's]] origin — Anthropic staff using Claude Code for marketing and data-science work in December 2025 — she says *"we wanted to build **a better harness** for these types of tasks",* and that Cowork *"still uses the Claude Code runtime underneath… we just have better connectors and better system prompts."* Two things for this page: **[[Anthropic]] has adopted the harness vocabulary in its own voice**, and the Cowork/Claude Code relationship is confirmed to be one runtime with two context configurations — the harness boundary drawn through connectors and system prompts rather than through the loop.
+
+A fourth item, smaller but concrete: **auto mode** interposes a risk classifier between the loop and every tool call (see [[agent-oversight-and-delegation]]). The harness's responsibility now includes adjudicating its own agent's actions — a control surface this page had not previously listed among harness primitives.
+
+**No measurements attached to any of it.** Vendor co-marketing, zero benchmarks, and the flagship workflow feature was too slow to demo live.
