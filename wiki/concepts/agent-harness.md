@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.95
-source_count: 100
+source_count: 101
 relationships:
   - type: part-of
     target: ai-agents
@@ -974,3 +974,17 @@ The determinism claim needs one qualification the episode does not make. The **f
 A fourth item, smaller but concrete: **auto mode** interposes a risk classifier between the loop and every tool call (see [[agent-oversight-and-delegation]]). The harness's responsibility now includes adjudicating its own agent's actions — a control surface this page had not previously listed among harness primitives.
 
 **No measurements attached to any of it.** Vendor co-marketing, zero benchmarks, and the flagship workflow feature was too slow to demo live.
+
+## A production harness at 100–200k agents/day, and a deliberate demolition (added 2026-09-16)
+
+[[2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai|Maza / a16z, August 2026]] is a rare thing for this page: a **non-vendor, non-engineering-blog account of a harness running a real business**, described by the executive who owns it, with the word *harness* used unprompted throughout.
+
+**The shape.** One long-running agent **per customer** rather than per task: *"a virtual machine with an agent with access to memory and evals and the CLI where they can access every tool and every API in my company, and the long-term goal."* Between **100,000 and 200,000** are instantiated daily, each with its own VM. They persist across the customer relationship — *"it'll remember years of interaction of this customer with Kavak"* — and manage their own schedule: *"they set an alarm clock for their next task and they go back to sleep."* Lifetimes run *"sometimes three minutes, sometimes eight hours, sometimes three days."*
+
+**The demolition is the part worth keeping.** Kavak had *"tens of thousands"* of function-decomposed agents *"working at scale running the business back in December."* Then *"Opus 4.5 came out and I realized this isn't the right paradigm anymore — the intelligence now doesn't need the graph and the multi-agent lattice work and harness, because **it will constrain this level of intelligence**."* They scrapped two years of work *"that was working, that brought us to profitability"* and rebuilt.
+
+The stated design goal is the same *durability* claim [[2026-09-14-google-cloud-agent-factory-agent-harnesses-explained|Lopopolo]] makes from the other direction: a harness built to absorb model improvements rather than be re-architected around them — *"leverage recursive self-improvement or new models, more intelligent models coming out every month."* Lopopolo warns against **over-scaffolding** (*"you can very much over-scaffold around them, which constrains them unnecessarily as they get better"*); Kavak is the wiki's first account of a company that **over-scaffolded, noticed, and paid to undo it**. Maza's generalisation: ***"if I could advise everyone, don't build agentic workflows to graphs."***
+
+**Evals as the throttle.** *"I like to move extremely fast, but in order to move fast, you need to have brakes… how fast can we go? Well, it depends on the quality of our evals."* The resourcing rule is the most quotable operational number on this page: **the same engineer time, tokens and money on evals as on the agents themselves** — *"not letting evals as an afterthought."* What they measure is business outcome, not process: *"I see companies measuring number of calls, or minutes during the call, or some superficial KPIs… The important thing is: **did this customer convert?**"* See [[ai-benchmarks]].
+
+**A caution.** Every figure here is self-reported by one executive on a venture-capital podcast, with no stated baselines. The architecture is the durable contribution; treat the numbers as claims. See [[Kavak]].

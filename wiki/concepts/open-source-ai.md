@@ -3,9 +3,9 @@ type: concept
 aliases: ["open source AI", "open-source AI", "open-weight models", "open weights", "open models", "own vs rent AI"]
 tags: [open-source-ai, open-weight-models, own-vs-rent, ai-sovereignty, concentration-of-power, china-open-models, safety-through-transparency, hugging-face]
 confidence: 0.9
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
-source_count: 15
+last_confirmed: "2026-09-16"
+accessed_at: "2026-09-16"
+source_count: 16
 relationships:
   - type: supports
     target: ai-sovereignty
@@ -213,3 +213,17 @@ A narrow but useful data point from [[2026-03-11-allen-mcdonald-how-well-can-ai-
 Open models scored **substantially lower** than proprietary systems, with performance **less systematically correlated with release date**, appearing to have *"plateaued at a markedly lower level."* Notably, they did **not** show the frontier decline the newest proprietary models exhibited — they were simply flat and lower.
 
 This is worth holding against the page's capability-convergence argument without overreading it. The task is a specific one (multiperiod strategic resource allocation under uncertainty), the models are out-of-the-box with no post-training or harness work, and the paper's own framing is that it tests *"general out-of-the-box LLM capabilities"* while *"focusing attention through fine-tuning or prompting could yield very different results."* So it is evidence that **convergence is uneven by task**, not that the own-vs-rent case fails — and it is precisely the kind of domain-specific gap that [[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Huang's]] post-training argument claims to be able to close.
+
+## An equity-research argument for open weights: margin, not ideology (added 2026-09-16)
+
+The open-weights case on this page is usually made on inspectability, safety, national positioning or cost-to-the-buyer. [[2026-08-18-covello-gs-new-models-ai-investment-landscape|Covello / Goldman Sachs, August 2026]] makes it from **where the profit sits in the value chain**, which is a vantage the page has not held.
+
+His starting fact: *"according to all of the survey work that we've done, **all of the economic value is accrued to the semiconductor companies** — and that's great for now for the semiconductor companies. But that's completely unsustainable unless the end customer… starts to make or save money."*
+
+Open weights are how that changes: *"open source really benefits the enterprise customer… it's really good for the hyperscalers because it's more likely then you're going to be able to profitably fill up all this capacity that you're adding. And then I think it's **more of a challenge to the semiconductor layer** that's benefited from the massive compute power that the frontier models require. If you can build models that don't require as much compute power, then the customers can start to shift some of the economic value from the semiconductor companies… further up in the chain."*
+
+**The routing prediction, and the boundary he draws.** *"I don't think enterprises will ever successfully implement AI only using frontier models. I think they're going to have to use frontier models, because the **high-consequence queries** are going to demand the most powerful models, but then there will be open source and open weight models that can take care of a lot of the rest of the queries."* This is the same per-query own-versus-rent split [[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Huang]] describes per capability; see [[ai-sovereignty]].
+
+**He rejects the China-versus-US framing of open source outright** — relevant to the §AI sovereignty and China's open-model lead section above: *"This has become a little bit of an issue of open source is China and frontier is the US. I don't actually see that as being the long-term dynamic… Open source has been around forever in different flavors. Linux was an open source operating system. Red Hat on top of Linux was an open source software company. Meta's model is an open-weight model. **This isn't a China versus US thing.** I think ultimately you're going to have US open source and open weight as well."* On distillation, which [[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue]] also dismisses: *"it's not to me about distillation or stealing code… **smaller, faster, cheaper is what powered technology innovation since the beginning of time.**"*
+
+**Caveat.** Goldman has a large business on every side of this trade, the survey work behind *"all of the economic value"* is never named or sized, and Covello has held a publicly sceptical position on AI economics for roughly two years — consistency that helps interpret the view and cautions against reading it as an independent update.

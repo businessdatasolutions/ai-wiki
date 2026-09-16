@@ -4,7 +4,7 @@ title: Agent fleet management
 aliases: ["agent fleet management", "managing agent fleets", "agent manager", "human as agent manager", "parallel agents", "agent orchestration at scale"]
 confidence: 0.75
 last_confirmed: "2026-09-16"
-source_count: 10
+source_count: 11
 accessed_at: "2026-09-16"
 tags: [agent-fleet, parallelism, cloud-agents, isolated-workspaces, decision-fatigue, priority-queue, span-of-control, delegation, playbooks, token-economics]
 relationships:
@@ -98,3 +98,17 @@ This page frames fleet management as a **span-of-control** problem: how many age
 The problem it was built for is stated as a defect in the previous behaviour, by the vendor: ad-hoc spawning *"is very non-deterministic — sometimes it might spin up four subagents, sometimes it might not even use subagents. The other time it uses 10 subagents."* That is the condition [[2026-03-26-osmani-code-agent-orchestra-multi-agent-coding|Osmani's orchestra pattern]] hand-rolls around; here the vendor ships the fix.
 
 **What the episode does not establish** is whether any of it works at the claimed scale. The demo ran four build agents on a toy game, and it was **too slow to complete on camera** — she cut to a pre-baked tab, noting the large model's latency. Hundreds of subagents over days is a design target with no reported instance behind it.
+
+## Two orders of magnitude past anything else on this page (added 2026-09-16)
+
+The practitioner evidence here tops out at a solo founder running ~15 agents and teams managing dozens. [[2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai|Maza / a16z, August 2026]] reports **100,000–200,000 agents instantiated per day**, each in its own virtual machine, running a live business.
+
+At that scale the page's organising question — **span of control** — stops being about a human's attention budget, because no human is in the loop per agent. What replaces it:
+
+- **The fleet is partitioned by customer, not by task.** One long-running agent owns one customer relationship end to end, so the coordination problem the page usually treats (many agents on one goal) does not arise; the agents are independent by construction.
+- **Isolation is per agent and absolute** — *"its own virtual machine"* — which matches the isolation primitive this page already records, applied at a scale where it is the only thing making the fleet tractable.
+- **Attention rationing is replaced by an inbound queue.** Rather than a human sampling agent output, agents call for help and humans staff the other end (see [[agent-oversight-and-delegation]]). Human attention is spent on **exceptions the fleet raises**, not on a review cadence the human sets.
+- **Quality is held by evals rather than review** — the same engineer time, tokens and money as building the agents, measured on business outcomes.
+- **Learning is fleet-wide.** *"If they make a mistake, they learn it, and the next day not just them but the other 200,000 agents will have learned from that mistake."* Mechanism unstated — this is the least substantiated claim in the episode and the wiki should not infer online learning from it.
+
+**Caveats that matter at this scale.** The figures are self-reported on a venture-capital podcast. *"Agents instantiated per day"* is a **provisioning count, not a concurrency or utilisation measure**, and many of those lifetimes are minutes. None of the throughput-quality numbers this page tracks elsewhere — rejection rates, unfixed-defect rates — has an analogue here. See [[Kavak]] and [[agent-harness]].

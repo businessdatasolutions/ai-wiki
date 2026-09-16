@@ -3,9 +3,9 @@ type: concept
 title: Multi-agent failure modes
 aliases: ["multi-agent failure modes", "MAST", "multi-agent system failure taxonomy", "why multi-agent systems fail", "agent coordination failure"]
 confidence: 0.85
-last_confirmed: "2026-09-15"
-source_count: 9
-accessed_at: "2026-09-15"
+last_confirmed: "2026-09-16"
+source_count: 10
+accessed_at: "2026-09-16"
 tags: [mast, multi-agent, failure-taxonomy, coordination, inter-agent-misalignment, task-verification, data-processing-inequality, isolated-workspaces, caid, token-budget]
 relationships:
   - type: part-of
@@ -124,3 +124,17 @@ This is a concrete instance of why [[2026-03-23-geng-neubig-caid-asynchronous-so
 The incident classes he reports enterprises hitting line up with the taxonomy: *"agents that looped indefinitely on a flawed instruction"* (runaway loops), *"agents that invoked the wrong API with elevated credentials"*, and *"multi-agent systems where one agent's error propagated into a second agent's decision before any person was aware a problem existed."* His framing of why decomposition raises the stakes is the most quotable line: **"ordinary operational fragility, once confined to human error, is now compounding at machine speed."**
 
 His proposed control for the seam is **cross-agent identity and provenance** — when one agent acts on another's output, the origin, authorization and confidence of that input must be traceable. That is a direct architectural answer to the failure class this page identifies, and the corpus holds no evidence that it works. Note the source tier: a practitioner column with no data, reporting incident classes in aggregate with no counts and no named organisations.
+
+## A production system abandoned the pattern on capability grounds, not failure grounds (added 2026-09-16)
+
+Everything else on this page treats multi-agent trouble as **engineering defects to design against** — [[2025-03-17-cemri-why-do-multi-agent-llm-systems-fail|MAST]] derives a taxonomy from observed failures, and the corrective is better specification, verification and orchestration. [[2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai|Maza / a16z, August 2026]] reports a different kind of decision, and it is worth keeping distinct.
+
+Kavak ran *"tens of thousands"* of function-decomposed agents at production scale — *"working at scale running the business back in December."* They abandoned the architecture **not because it was failing**: it *"was working,"* it *"brought us to profitability,"* it *"brought us amazing growth."* The reason given is that a capability threshold made decomposition itself the constraint:
+
+> *"Opus 4.5 came out and I realized this isn't the right paradigm anymore — the intelligence now doesn't need the graph and the multi-agent lattice work and harness, because **it will constrain this level of intelligence**."*
+
+The replacement is a single long-running agent per customer with memory, evals, a CLI and a long-horizon goal. His advice: ***"if I could advise everyone, don't build agentic workflows to graphs."***
+
+**Why this is a real addition and not just another opinion.** The page's existing sceptical evidence is largely about *equal-budget comparisons* — [[2026-04-02-tran-kiela-single-agent-outperforms-multi-agent-under-equal-budgets|Tran & Kiela]] show single agents winning at matched token budgets. Maza's claim is **dated and tied to a specific model release**: the architecture was right in December and wrong afterwards. If that is correct, multi-agent decomposition is not a permanently inferior pattern but a **capability-dependent** one, and the failure modes this page catalogues may be partly artifacts of building around models that needed the scaffolding.
+
+**What would falsify or confirm it.** Nothing here is measured. Kavak reports no A/B between the two architectures, no cost comparison, and no evidence beyond the executive's judgement that the old system constrained the new model. A firm that ran both concurrently and measured would settle it; **no source in the corpus has.** Treat this as one practitioner's dated architectural verdict, weighted by the fact that he paid two years of work for it. See [[agent-harness]] and [[Kavak]].

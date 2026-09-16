@@ -4,7 +4,7 @@ title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
 confidence: 0.85
 last_confirmed: "2026-09-16"
-source_count: 13
+source_count: 14
 accessed_at: "2026-09-16"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
@@ -154,3 +154,17 @@ First, **the page's standing complaint applies to a gate that now ships by defau
 Second, **this is a trust transfer, not a trust reduction.** The corpus's never-let-the-agent-grade-its-own-homework rule says an agent should not evaluate its own work; auto mode has a model evaluate another model's actions. Whether that counts as an independent evaluator depends on correlation between the classifier's blind spots and the agent's — exactly the configuration the [[2026-09-01-cfa-institute-agentic-ai-finance-workflows-governance|CFA roundtable]] flags as least likely to catch an error, there for human-and-model bias, here for model-and-model.
 
 Worth noting as a small counterweight to the autonomy push: the same episode shows the feature **off by default** on Google's Agent Platform, gated behind an environment variable. Distribution channel, not principle — but it is the one place in the episode where someone chose the conservative default.
+
+## The escalation path inverted: agents that call humans, and the loop that closing it requires (added 2026-09-16)
+
+This page's control set assumes the standard direction of travel — the agent works, and when it cannot, a human takes over. [[2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai|Maza / a16z, August 2026]] names a defect in that arrangement that the corpus has not previously articulated:
+
+> *"Usually if an agent hits a wall or can't perform anymore, it'll send this case to a tier-2 support and forget about it. **That doesn't really work, because you don't close the loops** — so you don't generate the data to train the agent to do this better."*
+
+The diagnosis is about **learning, not safety**. A handoff that terminates the agent's involvement discards exactly the episode most worth learning from: the one where the agent failed. Escalation designed only to protect the customer silently guarantees the agent never improves at the thing it escalated.
+
+**Kavak's inversion.** The agent stays the owner of the case and requests help as a tool call: *"if an agent hits a wall or cancels something, it'll call this API saying I need help. And on the other side, it's not an agent or software, **it's a human helping them out.**"* The org-chart consequence Maza draws: ***"if you map this out in an org chart, it's really human teams that have an agent."*** And more bluntly: *"sometimes agents are the bosses of humans, and sometimes humans are designing the agents."*
+
+**Where the boundary sits for them.** Humans are retained where the physical world is — ~800 mechanics, working alongside a sidekick agent Maza likens to *Ratatouille*. That is a **capability boundary (dexterity and senses), not a consequence boundary**, which is a different cut from the irreversibility-and-visibility axis this page records from [[IMDA]], [[Ryan Carson]] and [[Claire Vo]].
+
+**What this does not supply.** No approval gates, no risk scoring, no false-approve rate, and no account of what happens when a long-running agent with access to *"every tool and every API"* and a lifetime-value objective does something consequential and wrong. The page's standing complaint — **nobody reports a false-approve rate** — is unrelieved. Kavak's answer to oversight is evals at parity with build ([[agent-harness]]), which is a quality mechanism rather than an authority mechanism. See [[Kavak]].

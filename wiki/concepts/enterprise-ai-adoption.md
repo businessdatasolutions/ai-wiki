@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
-source_count: 118
+last_confirmed: "2026-09-16"
+accessed_at: "2026-09-16"
+source_count: 121
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -824,3 +824,17 @@ That is a claim that **organisational capability can compound independently of t
 **2. Where the technical skill sits predicts the value captured.** [[2025-07-07-tambe-reskilling-workforce-for-ai-domain-expertise-algorithmic-literacy|Tambe (*Management Science*, forthcoming)]] finds that investors assign higher value to a firm's AI and data-science investments **when made alongside algorithmic expertise dispersed among domain experts** rather than concentrated in IT or a central data-science team — and that the effect does not appear for other technologies or other technical skills. No-code tooling measurably accelerates that dispersion. For this page, that is an org-design prescription with a market test behind it: adoption is not only a question of what you buy but of **who in the org chart can direct it**.
 
 **3. Agentic deployment outruns the governance model by design.** [[2026-08-26-chatterjee-agentic-governance-gap|Chatterjee]] argues enterprise governance was built for a copilot — *"a system proposes, a person disposes"* — and that agents dismantle the assumption deliberately, because removing the human bottleneck is the value proposition. His operational test is one most adopters would currently fail: *"Can the enterprise show, for any agent action, that it was bounded, authorized, and reversible — not as a one-time launch review, but as a standing operational capability?"* See [[agent-oversight-and-delegation]].
+
+## Three vantages on the same question, August–September 2026: the aggregate, the value chain, and one firm (added 2026-09-16)
+
+Three sources ingested together give this page an unusually clean triangulation on *is enterprise AI paying yet* — and they do not agree.
+
+**The aggregate says adoption is lower than it looks.** [[2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs|Hatzius / Goldman Sachs]] flags that the widely-cited jump in US firm adoption from ~10% to >20% is **a survey-wording artifact**. The Commerce Department survey *"originally asked, are you using AI for current production. Then they changed that. Are you using AI in any business function."* The new phrasing *"is a much lower bar because it might be relatively ancillary activity that are being captured."* Goldman's own estimate is *"just over 20% if you look at all industries"* with a wide sectoral spread. **Any maturity or adoption instrument built on self-reported "are you using AI" inherits this problem**, which is a caution for the [[ai-maturity-measurement-comparison|maturity-instrument thread]] as much as for this page.
+
+**The value chain says the returns have not reached the buyer.** [[2026-08-18-covello-gs-new-models-ai-investment-landscape|Covello / Goldman Sachs]] makes the end-customer test primary — *"does the end customer, does the end user make or save money implementing AI or not?"* — and answers it: *"right now, enterprises collectively are not making or saving money on their AI implementations."* Not that nothing works; *"there's certainly a lot of use cases where it's been successful"* and there are *"thousands and thousands of applications."* It *"is not resulting yet in net savings."* His diagnosis is **not model capability**: *"I think the models are incredibly powerful and incredibly capable… but right now I think we're **building agents on top of data that isn't ready to be agents**. And the bigger the organization, the more complex that issue is."* What is missing is a **data management layer** and a **model optimization/orchestration layer** routing high-consequence queries to frontier models and low-consequence queries to open models — *"yet to be developed in most organizations… It's not talked about enough."*
+
+He also supplies the reason adoption is slower than predicted, read off a safety incident: *"You have to be so careful. You have to have so many guardrails. You have to put things in a sandbox. And even then, sometimes it's dangerous. If you're a consumer, you can use this and feel comfortable… **If you're an enterprise, you can't do that.**"*
+
+**One firm says it got there, by rebuilding rather than adopting.** [[2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai|Maza / Kavak]] reports 96% of customer interactions and 95% of transactions handled by agents, AI sellers converting at 2.1× the human team, and tripled customer satisfaction — after redesigning the company around agents rather than issuing tools. See [[Kavak]] for the figures and their caveats, and [[micro-productivity-trap]] for the redesign argument.
+
+**What the three together actually establish.** Not that enterprise AI does or does not pay. They establish that **the question is being asked at three different units** — the economy, the cross-section of firms, and the single firm — and that the answer differs at each. The aggregate is depressed partly by measurement (Hatzius), the cross-section by a missing architectural layer (Covello), and the single firm that built that layer reports the opposite result (Kavak). **The open question this page now carries is whether Kavak is exceptional, early, or optimistically measured** — and one podcast episode cannot settle it.

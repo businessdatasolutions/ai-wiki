@@ -3,8 +3,8 @@ type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
-last_confirmed: "2026-08-31"
-source_count: 52
+last_confirmed: "2026-09-16"
+source_count: 54
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -12,7 +12,7 @@ relationships:
   - type: contradicts
     target: automation-vs-augmentation
     via: "process lock-in = automation without redesign; reinvent-the-business resists this trap"
-accessed_at: "2026-09-15"
+accessed_at: "2026-09-16"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -396,3 +396,19 @@ SORT file.name ASC
 
 - Empirical 10–25% EBITDA range is from Bain client work — vendor-of-deployment data, not independent measurement. Independent verification (academic field study, AI Index data) would be a useful counterweight.
 - Whether entry-level hiring softness (discussed on [[2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16|the MIT Sloan CIO Symposium podcast]]) is itself trap-adjacent — i.e. whether firms retaining experienced staff for infrastructure work while under-hiring juniors is a rational trap-escape allocation or a new failure mode — is untested by any source on this page.
+
+## The Ford factory, and a firm that says it did the demolition (added 2026-09-16)
+
+This page has never had a good answer to *"how much do you lose by adopting without redesigning?"* [[2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai|Maza / a16z, August 2026]] supplies one, with a historical mechanism attached, and it is the cleanest statement of this concept in the corpus.
+
+**The counterfactual, dated.** The technologies for Ford's production line existed by **1879–1881** — Edison was commercialising electricity and had an efficient dynamo. *"So you could have built Ford's factory 40 years before Ford. The technology was there, everything was there."* What factories actually did was keep the four-floor shaft-and-belt building and *"just change my coal engine for an electric engine. And this will bring you benefits, yes, **but like 6% efficiency**."* The 3× that *"powered the US during the 20th century"* required demolishing the factory, rebuilding flat, away from Manhattan, redesigned around small distributed dynamos.
+
+**The number this page can now quote.** *"People want to adopt it, but they're not willing to redesign the whole company and they just adopt it superficially. And in the end, that'll give you a **6% or a 10% improvement, not a 10x improvement**. It's like the innovator's dilemma at an industrial scale."*
+
+The same source states the trap's first move in the AI case exactly: *"the first instinct is, okay, let's adopt AI, and you basically leave your structure as it is and just give ChatGPT or your Claude to your team — and then there's no efficiencies, your customers have the same problems and nothing happens."*
+
+**A measurement instrument the page did not have.** Maza's **token tiering** turns "are we in the trap?" into something checkable. **Tier 3**: tokens spent by agents doing the organisation's work, *"where you can get the ROI of each specific token."* **Tier 2**: indirectly measurable — *"do I see devs in the codebase."* **Tier 1**, where he says most companies sit: *"people are just using Claude Code or ChatGPT or Cowork or whatever. What happens with those? **I have no idea.**"* A firm that cannot say which tier its spend is in has an adoption metric, not a return.
+
+**Why he thinks incumbents structurally cannot escape** — a Schumpeterian argument this page should hold alongside the prescriptive literature: *"it's really hard for a CEO today, especially of a large company or public company, to go and say, hey, I'm betting everything on AI… I'll destroy and rebuild everything I've been building for the past 40 years. **How many CEOs will do that in a company at scale?**"* On that reading the trap is not a mistake leaders make; it is the rational behaviour of an incumbent, and the escape is a new entrant.
+
+**Read against the aggregate.** [[2026-08-18-covello-gs-new-models-ai-investment-landscape|Covello / Goldman Sachs, August 2026]] reports that across the companies Goldman surveys, *"enterprises collectively are not making or saving money on their AI implementations."* Kavak is one firm claiming the opposite after doing the demolition. **Both may be true**; nothing in the corpus settles whether Kavak is exceptional, early, or optimistically measured — the Kavak figures are self-reported on a venture-capital podcast and carry no stated baselines.

@@ -10,6 +10,46 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-16] ingest | The aggregate, the value chain, and one firm that did the demolition
+
+Three sources, acquired across two sessions and processed as one batch because they answer the same question at three different units and disagree. Duplication checked by video id before fetching (all clean).
+
+**New source pages (3):**
+
+- [[2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs]] — **Jan Hatzius**, Goldman's chief economist, on the macro aggregates.
+- [[2026-08-18-covello-gs-new-models-ai-investment-landscape]] — **Jim Covello**, Goldman's head of Global Equity Research, on the value chain.
+- [[2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai]] — **Alejandro Maza Ayala**, Chief Product & AI Officer at [[Kavak]], on rebuilding a company around agents.
+
+**New entity (1):** [[Kavak]].
+
+**Why they were batched.** They are three altitudes on *is enterprise AI paying yet*, and the answer differs at each. Hatzius measures the **economy** and finds the effect small and partly mis-measured. Covello measures the **cross-section of firms** and finds the returns stuck at the semiconductor layer. Maza reports **one firm** that rebuilt itself around agents and claims the opposite outcome. Splitting them would have meant writing [[micro-productivity-trap]] and [[enterprise-ai-adoption]] twice and losing the comparison, which is the most valuable thing here.
+
+**The disagreement worth naming.** Hatzius reports that across occupations *"the correlation is quite small. And in many cases we don't find anything"*, with an economy-wide magnitude of **10–15k jobs/month**. [[2026-04-28-brynjolfsson-canaries-coal-mine|Canaries]] reports a **13% decline** for 22–26-year-olds in the most-exposed occupations, growing since. Typed `contradicts` edges were written, but [[ai-employment-effects]] records a comparison table rather than a verdict, because **the two are not straightforwardly comparable**: age-cohort-within-quintile against occupation-level aggregate, microdata against unstated data, and Hatzius nets out AI-driven job creation while Canaries does not. An effect concentrated in one cohort inside the top exposure quintile can be real and still wash out in an aggregate netted against data-centre hiring. **That is the likeliest reconciliation and nothing in the corpus tests it.** Only one of the two has published a method.
+
+**The Kavak↔Covello pairing.** Covello names the missing piece — a data-management plus model-orchestration layer, *"yet to be developed in most organizations"* — and Kavak describes building roughly that. Whether Kavak is exceptional, early, or optimistically measured is now stated as an open question on three pages rather than resolved on any of them.
+
+**Pages that gained something specific:**
+
+- [[micro-productivity-trap]] — the **Ford/Edison argument**, which is the sharpest statement of this concept in the corpus and comes with a number: swap the coal engine for an electric one and get *"like 6% efficiency"*; demolish and rebuild flat around small dynamos and get **3×**. Plus **token tiering**, which converts "are we in the trap?" into something checkable, and a Schumpeterian argument that the trap is *rational incumbent behaviour* rather than a mistake.
+- [[agent-harness]] — a production harness at **100–200k agents/day**, and the wiki's first account of a company that **over-scaffolded, noticed, and paid to undo it**. Reads directly against [[2026-09-14-google-cloud-agent-factory-agent-harnesses-explained|Lopopolo's]] over-scaffolding warning from the opposite direction.
+- [[multi-agent-failure-modes]] — a production system abandoned on **capability grounds, not failure grounds**. If right, multi-agent decomposition is capability-dependent rather than permanently inferior, and some catalogued failure modes may be artifacts of scaffolding built for weaker models. Unmeasured: no A/B, no cost comparison.
+- [[agent-oversight-and-delegation]] — the **inverted escalation path**. The defect named is about *learning*, not safety: a tier-2 handoff *"doesn't close the loops,"* so the agent never improves at the thing it escalated. The page's standing complaint (nobody reports a false-approve rate) is unrelieved.
+- [[agent-fleet-management]] — two orders of magnitude past anything else on the page, where span-of-control stops being an attention-budget question.
+- [[ai-benchmarks]] — evals resourced at **parity with the agents**, justified as the brake that permits speed, measured on conversion rather than call minutes.
+- [[enterprise-ai-adoption]] — the **10%→20% adoption jump is a survey-wording artifact**, which is a caution for every maturity instrument built on self-reported adoption.
+- [[automation-vs-augmentation]] — one firm running both at once, dividing them on a **capability** boundary (is a body required?) rather than a consequence boundary.
+- [[open-source-ai]] — open weights argued from **margin and value-chain position** rather than inspectability or ideology, plus an outright rejection of the China-vs-US framing.
+- [[Goldman Sachs]] — second role recorded: publisher of house AI views, not just adopter.
+
+**Two provenance findings worth carrying forward.**
+
+1. **Publisher-issued is not verified.** Neither Goldman video has any caption track, so the transcripts are Goldman's own PDFs — and both contained **meaning-inverting transcription errors**. *"The equipment used in AI investment is **important**"* should read *"**imported**"*, which is the entire mechanism of the GDP argument; and *"we know consumers **are** paying that much"* should read *"**aren't**"*, which is the premise the 95%-free-tier point rests on. Both would have entered the wiki as confident nonsense. Fetching those PDFs also needs a browser — the URL redirects to a JS shim that sets a cookie and re-requests the same URL; the method is recorded in the raw files.
+2. **A disclaimer that does not match its speakers.** Both Goldman videos state they are *"not a product of Goldman Sachs Global Investment Research. It is not research."* Hatzius **heads GIR**; Covello heads Global Equity Research within it; the figures quoted are GIR estimates and GIR survey work. Recorded on both source pages and on [[Goldman Sachs]]: cite as reported in an interview, never as published research.
+
+**Pages touched (17):** 3 new sources, 1 new entity, 10 concepts updated ([[micro-productivity-trap]], [[enterprise-ai-adoption]], [[agent-harness]], [[multi-agent-failure-modes]], [[agent-oversight-and-delegation]], [[agent-fleet-management]], [[ai-employment-effects]], [[ai-benchmarks]], [[open-source-ai]], [[automation-vs-augmentation]]), 3 entities updated ([[Goldman Sachs]], [[a16z]], [[Anthropic]]), plus `index.md` and this log.
+
+---
+
 ## [2026-09-16] refactor | Three features land from the paper brainstorm, five enter the plan — and the collapse detector disproves its own premise
 
 Works the nine-item prioritisation in [`inspiration/2026-09-16-wiki-feature-brainstorm-papers.md`](../inspiration/2026-09-16-wiki-feature-brainstorm-papers.md). **Zero content pages touched** — this is tooling, schema and roadmap only.

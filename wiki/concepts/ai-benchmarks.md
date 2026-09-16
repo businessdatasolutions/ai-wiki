@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI benchmark", "AI benchmarks", "AI evaluation", "AI evals"]
 tags: [ai-benchmarks, ai-evaluation, foundation-models, capability-reliability-gap, scar-fragmentation]
 confidence: 0.92
-last_confirmed: "2026-09-09"
-accessed_at: "2026-09-15"
-source_count: 20
+last_confirmed: "2026-09-16"
+accessed_at: "2026-09-16"
+source_count: 21
 relationships:
   - type: depends-on
     target: reward-hacking
@@ -226,3 +226,15 @@ The stronger version of the point is about **what an aggregate index can and can
 **The two-condition validation is the part to copy.** Ask six models to *"explain the Back Bay Battery simulation and how to win it"* — **four of six produce detailed descriptions matching the public teaching materials**, which is a clean measurement of contamination in its own right. Ask the same models about the masked *"EnergyCo"* — **none give relevant advice; four hallucinate fictitious simulations and two admit no knowledge.** That pair of conditions is a cheap, general test any benchmark built on published material can run, and it yields a defensible claim rather than an assurance: masking defeats *recognition*, so inferences are about **relative performance under the same masked representation**, and residual leakage would move levels rather than differences.
 
 This sits naturally beside the page's [[reward-hacking]] material. There the environment is gamed by exploiting the scoring surface; here it is gamed by memorisation. Both are arguments that **a benchmark's validity is a property of its environment, not of its dataset** — the same conclusion [[2026-06-25-jain-cursor-reward-hacking-swamping-model-intelligence-gains|Cursor]] reaches from the other direction with *"benchmark design should not stop at dataset construction."*
+
+## Evals resourced at parity with the thing they evaluate (added 2026-09-16)
+
+Most of this page concerns **model** evaluation — public benchmarks, their saturation, and what they fail to measure. [[2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai|Maza / a16z, August 2026]] supplies a **production** counterpart: what a company actually spends on evaluating its own agents, and what it measures.
+
+**The resourcing rule**, which is the quotable part: *"a good rule of thumb here is we spend about the same amount of **engineer time, tokens, and money** on building the evals as building the agents. And this is how you get better and better and better — not letting evals as an afterthought."*
+
+**The justification inverts the usual framing.** Evals are not a safety tax on speed; they are the precondition for it: *"I like to move extremely fast, but in order to move fast, you need to have brakes. Imagine a car — you'll hit on the gas just if you have the right brakes… I've seen many companies get this wrong because they try to go slow because they don't have the right brakes. So I thought about it the other way around: **how fast can we go? Well, it depends on the quality of our evals.**"*
+
+**What gets measured is business outcome, not process.** *"I see companies measuring number of calls, or minutes during the call, or some superficial KPIs that give you some information but that doesn't really work. The important thing is: **did this customer convert? Is it bringing value to the customer, and is the customer happy to re-engage with us after a while?**"* On this account the eval is the conversion event itself, which is available to a marketplace and not available to most of the domains this page covers — a boundary condition worth stating rather than generalising past.
+
+**Unverified.** No eval suite, sample, cadence or failure rate is described, and the parity claim is a rule of thumb stated by an executive, not an audited budget line. See [[Kavak]] and [[agent-harness]].

@@ -66,6 +66,14 @@ Two details worth recording about Anthropic specifically. First, the compliance 
 
 Sundararajan's reading of what it portends is explicitly provisional — *"we're going to be making it up as we go along, and it's going to be both the government doing that and the platforms doing it."* **Caveat:** this is an interview account, recalled from memory, with no document cited. The wiki has not ingested primary reporting on the restriction, and Anthropic's own account of it is not represented here at all. See [[responsible-ai]] for the governance-authority framing and [[ai-sovereignty]] for the state-capacity one.
 
+## A model release that triggered an architecture demolition (added 2026-09-16)
+
+[[2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai|Maza / Kavak, August 2026]] supplies an unusual datapoint about what a model release does downstream. Kavak had *"tens of thousands"* of function-decomposed agents running its business at scale. Then, in Maza's account, **Opus 4.5** changed the right architecture:
+
+> *"Opus 4.5 came out and I realized this isn't the right paradigm anymore — the intelligence now doesn't need the graph and the multi-agent lattice work and harness, because it will constrain this level of intelligence."*
+
+Kavak scrapped two years of working infrastructure and rebuilt around one long-running agent per customer. This is the wiki's first account of **a named Anthropic release causing a customer to remove scaffolding rather than add it** — the capability-overhang argument made concrete and expensive. Anthropic is otherwise absent from that episode; the claim is the customer's. See [[agent-harness]] and [[multi-agent-failure-modes]].
+
 ## As a flow-state organisation
 
 Two recent sources name Anthropic specifically as a *flow-state organisation* — a place where structural pressure + lack of hierarchy strips away traditional thinking:

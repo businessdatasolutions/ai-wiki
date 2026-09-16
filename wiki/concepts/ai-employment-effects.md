@@ -3,8 +3,8 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-09-15"
-source_count: 79
+last_confirmed: "2026-09-16"
+source_count: 81
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -12,7 +12,7 @@ relationships:
   - type: caused
     target: ai-deskilling
     via: "task-composition shift is one mechanism within broader employment effects"
-accessed_at: "2026-09-15"
+accessed_at: "2026-09-16"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -633,3 +633,42 @@ Cause 3 is the one worth holding, because **no source in the corpus separates it
 **Second, the gap: this page measures job *counts*, not the *form* work takes.** Sundararajan's decade-old thesis was that work would shift *"less and less in the form of jobs or employment and increasingly as non-employment work arrangements"* — and the misreading he corrects is exactly the one this page could make: *"a lot of people, when they saw that subtitle, the end of employment, assumed that I was talking about humans not having anything to do. That wasn't the implication."* His scoreboard: **~40 million Americans** in some non-employment arrangement when he wrote the book, **over 70 million last year**; and, attributed to JD.com's chief economist, **over 40% of China's workforce**, where the term of art is *"flexible employment."*
 
 Treat those figures as uncorroborated — no definition of "non-employment work arrangement" is given, and the China figure is conversational. But the **axis** is real and absent from this page: every measurement the wiki holds counts employment, unemployment and hiring. A shift from employee to contractor, freelancer or firm-of-one can leave headcount statistics undisturbed while changing the security, benefits and progression structure underneath them. See [[ai-sovereignty]] for the geopolitical conditions the same source treats, and [[agent-harness]] for the firm-of-one mechanism.
+
+## A chief economist reports finding almost nothing, and a firm reports replacing almost everything (added 2026-09-16)
+
+Two sources ingested together sit at opposite ends of this page's range, and the gap between them is the most useful thing about them.
+
+### The aggregate: "the correlation is quite small"
+
+[[2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs|Hatzius / Goldman Sachs, September 2026]] is the corpus's first sell-side chief-economist treatment, and it is a deflator throughout:
+
+> *"If we look at the correlation between AI adoption or AI exposure on the one hand, and then employment growth or unemployment rates across occupations on the other hand, **the correlation is quite small. And in many cases we don't find anything.** When you cut the numbers in a somewhat different way, sometimes you get some effect, but it's never big."*
+
+Magnitude: *"maybe something like 10,000 jobs a month, 15,000 jobs a month that are being lost to AI"* — against offsetting gains *"where data center construction, for example, where you're getting a boost to jobs."* His summary: *"this is not yet a huge deal in terms of the labor market impact."*
+
+**His decomposition makes the widely-quoted exposure share readable.** *"Our 25% relates to work tasks… work hours that are potentially exposed. That is obviously a big number, but **most of that number is accounted for by many people getting 20 or 30% of their time back**… But it doesn't lead to the elimination of a job. Now, there's also going to be some portion of that 25%, and we've said maybe 6 or 7, that is going to result in job elimination."* With the guard: *"it doesn't mean that the unemployment rate rises by 6 or 7 percentage points, because for that you also need to look at how many jobs are being created."*
+
+Ten-year forecast: upward pressure of *"half a percentage point or a percentage point"*, offset by job creation, landing *"not that different from where we are now, which is 4.1%."* His historical warrant is **David Autor's** finding that ~60% of jobs today are in occupations that did not exist in 1940. His scale check: average US recessions move unemployment 2–3pp, deep ones 5–6pp — *"relative to that, the upward pressure that we might see from AI is going to be probably smaller."*
+
+### This is a direct disagreement with the wiki's strongest empirical source
+
+The page already stages [[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson]] against [[2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era|Brown]] on whether the entry-level slowdown is established. **Hatzius is a third and heavier weight on the sceptical side**, and unlike Brown he is not arguing from employer surveys — he is reporting that Goldman looked for the correlation in occupation-level data and largely did not find it, where [[2026-04-28-brynjolfsson-canaries-coal-mine|Canaries]] found a 13% decline for 22–26-year-olds in the most-exposed occupations, growing since.
+
+The two are not straightforwardly comparable, and the wiki should not pretend they are:
+
+| | Canaries / Brynjolfsson | Hatzius / Goldman |
+| --- | --- | --- |
+| Unit | Age cohort **within** exposure quintile | Occupation-level aggregate |
+| Data | ADP payroll microdata, monthly | Unstated; correlations across occupations |
+| Net of AI-driven job creation? | No | Yes (data-centre construction cited) |
+| Method shown? | Yes, in a paper | **No** |
+
+An effect concentrated in 22–26-year-olds inside the top exposure quintile can be real and still wash out in an occupation-level aggregate netted against construction hiring. **That is the most likely reconciliation and nothing in the corpus tests it.** The honest state: two credible shops, different units, no shared methodology, and only one of them has published a method.
+
+### The firm: 96% of interactions, and the headcount question left open
+
+[[2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai|Maza / Kavak, August 2026]] reports a single company where agents handle **96% of customer interactions and 95% of transactions**, convert at **2.1×** the human sales team, and where the org has flattened and middle management largely gone. The interviewer notes Kavak *"had to downsize dramatically"* — and **Maza never quantifies it and the episode does not return to it.** That omission is conspicuous on a page about employment effects.
+
+What he does say about where humans remain is a **capability boundary**: *"the jobs where we're still training and hiring humans, those are related to the physical world… lots of dexterity and senses that's super hard to substitute."* And Kavak's retraining answer — the six-week Jedi Academy for everyone from CEO to mechanic — came with an explicit exit: *"You have the choice to train and get the skills to perform in this new reality… **or maybe leave Kavak if this is not for you.**"*
+
+**How to hold these together.** Hatzius measures an economy in which almost no firm has done what Kavak did; Kavak is one firm that did. Neither refutes the other, and the page should resist collapsing them. The live question is the one [[micro-productivity-trap]] raises from the other side: if the Kavak pattern generalises, the aggregate Hatzius measures is a lagging indicator; if it does not, Kavak is a case study. **No source in the corpus can currently tell which.**

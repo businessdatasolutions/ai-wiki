@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
-source_count: 67
+last_confirmed: "2026-09-16"
+accessed_at: "2026-09-16"
+source_count: 68
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -502,3 +502,15 @@ His conclusion from it is a claim about pace, in an unusual metaphor: *"I think 
 **Role compression** is his term for what augmentation leaves behind. Where tasks are delegated, *"the set of things that the human does shifts to **verification, problem formulation, certain kinds of judgment, certain kinds of accountability**"* — and he expects it *"perhaps in western economies as well, but more so in Asian economies,"* where labour shortage makes delegation more attractive. The historical frame he puts it in is the one this page's automation side usually gets: *"100 years ago, muscle got automated. There was a certain kind of **deskilling** as well — the skilled machinist, the craft manufacturer, that kind of skill was put out of business by the machines and work became more routine. But there were other cognitive capabilities that started to command a premium."* See [[ai-deskilling]].
 
 What makes the passage worth keeping is that he **refuses to close it**: *"we haven't put our finger on exactly what that bundle is, but verifying, being able to know when to trust the machine, what to delegate to the machine, how to exert the judgment that allows you to complement rather than be substituted by the machine — these will be the skills that the technological change will be biased in favor of."* The residual is named by function and left unspecified in content, which is more honest than most statements of it and less useful. [[durable-skills]] holds the measurement attempts.
+
+## One firm doing both at once, and the line it drew between them (added 2026-09-16)
+
+[[2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai|Maza / Kavak, August 2026]] is useful here because the same company ran the two strategies simultaneously and says why each got the treatment it did.
+
+**Automation, to the point of replacing its own best people.** The design target was explicitly not assistance: *"by every dimension that matters — conversion, lifetime value, customer experience — our agents would outperform the best human we had ever hired."* The result claimed: agents handle **96% of customer interactions and 95% of transactions**, converting at **2.1×** the human sales team. The reasoning is a capability argument about what agents are structurally better at, not a cost argument: *"they're experts and they're infinitely patient and they know all your history and they can plan for the long term and they never get tired."*
+
+**Augmentation, where the work is physical.** Kavak's ~800 mechanics were not a target for replacement: *"there's lots of dexterity and senses that's super hard to substitute."* They got a sidekick agent — Maza's analogy is *Ratatouille*, *"the mouse that's actually a chef collaborating with a human"* — which *"tells them how to inspect a car and gives them tips."* Reported effect: faster inspection and repair, cheaper, higher-quality cars, warranty claims down ~26%.
+
+**The dividing line is capability, not consequence.** That is worth flagging, because much of this page's better material draws the line on *consequence* or *reversibility* — what a system may be allowed to do unsupervised. Kavak's line is simply **whether a body is required**. Everything cognitive was automated; everything physical was augmented. Whether that boundary holds as robotics improves is a question the source raises and does not answer — and [[2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs|Hatzius]], covering the same question at the aggregate, expects most exposed hours to return as time saved rather than jobs eliminated, which is the augmentation reading of the same phenomenon.
+
+Caveat: self-reported figures with no stated baselines, on a venture-capital podcast. See [[Kavak]].
