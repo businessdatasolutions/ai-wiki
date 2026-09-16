@@ -8,8 +8,11 @@
 //
 // Pipeline (see .claude/skills/traceable-wiki-answer/references/trace-schema.md):
 //   1. qmd seeds   — `qmd query <q> --json -n <seeds>`  (hybrid BM25 + vector + rerank)
-//   2. graph hop   — load wiki/.graph.json, walk <hops> of typed edges from each seed
-//   3. RRF fuse    — Reciprocal Rank Fusion over the qmd-rank and graph-proximity streams
+//   2. graph hop   — load wiki/.graph.json, walk <hops> of typed edges from each seed;
+//                    order that stream by hop distance (--graph-rank bfs, default) or by
+//                    Personalized PageRank seeded on the qmd hits (--graph-rank ppr)
+//   3. fuse        — Reciprocal Rank Fusion (default) or a convex combination of the two
+//                    streams (--fusion cc); see the fusion-parameter block below
 //   4. decay rank  — effective_confidence = confidence × exp(-days_since_access / tau)
 //                    (tau: concept/synthesis 90, entity 365, source/thread ∞ → factor 1)
 //   5. emit ledger — JSON; the script does NOT verdict candidates, the agent does
@@ -24,6 +27,8 @@
 //   node scripts/wiki-retrieve.mjs --hops 2 "your question"       # widen graph traversal
 //   node scripts/wiki-retrieve.mjs --no-bump --json "question"    # don't touch accessed_at
 //   node scripts/wiki-retrieve.mjs --today 2026-06-05 "question"  # pin "today" for decay math
+//   node scripts/wiki-retrieve.mjs --graph-rank ppr "question"    # PageRank-ordered graph stream
+//   node scripts/wiki-retrieve.mjs --fusion cc --alpha 0.8 "q"    # convex-combination fuser
 //
 // Exit codes: 0 = success; 1 = qmd failure; 2 = bad args.
 
@@ -42,14 +47,37 @@ const TAU = { concept: 90, synthesis: 90, entity: 365, source: Infinity, thread:
 // Fixed confidence factor for page types that carry no `confidence:` field, used only
 // in the fused-ranking blend (sources are evidence; threads are provisional).
 const NEUTRAL_CONF = { source: 0.85, thread: 0.6 };
-const K_RRF = 60; // standard RRF damping constant
-const GRAPH_W = 0.5; // graph-proximity stream weight (< 1 so it can't tie a genuine qmd hit)
+// --- Fusion parameters (all overridable on the CLI; see CLAUDE.md §Search) -----------
+// Bruch, Gai & Ingber (2023, ACM TOIS; raw/papers/2023-05-04-bruch-analysis-of-fusion-
+// functions-for-hybrid-retrieval.md) report that RRF is SENSITIVE to its parameters and
+// that a convex combination (CC) of the two streams outperforms it in-domain and
+// out-of-domain while needing only a small tuning set. Both fusers therefore live here.
+// RRF stays the DEFAULT until the v0.10 eval-set can adjudicate the swap on this corpus —
+// changing a retrieval default without a measurement is the exact failure Bruch describes.
+let FUSION = 'rrf'; // 'rrf' | 'cc'
+let K_RRF = 60; // RRF damping (Cormack et al. 2009 default — never validated on THIS corpus)
+let GRAPH_W = 0.5; // RRF: graph-stream weight (< 1 so a structural neighbour can't tie a qmd hit)
+let ALPHA = 0.7; // CC: weight on the qmd stream; (1 - ALPHA) goes to the graph stream
+// Graph-stream RANKING strategy.
+//   'bfs' — hop distance, then seed score (the original ordering).
+//   'ppr' — Personalized PageRank over the typed graph, restarting into the qmd-seed
+//           vector (HippoRAG, arXiv:2405.14831). PPR rewards a page reachable from
+//           SEVERAL seeds, which hop distance cannot express.
+// The candidate SET is identical either way — still the BFS-discovered <= hops
+// neighbourhood. Only the ORDER of the graph stream changes, so the two are A/B-able.
+let GRAPH_RANK = 'bfs'; // 'bfs' | 'ppr'
+let PPR_DAMPING = 0.5; // PPR: walk-continuation probability; (1 - d) restarts at the seeds
 // Currency enters fused ranking as a MULTIPLIER, not an additive partner: relevance
-// (RRF) sets the order, confidence/decay dampens it. CONF_FLOOR keeps a decayed-but-
-// relevant page from collapsing entirely. fused = rrf_norm × (CONF_FLOOR + (1-CONF_FLOOR)·confTerm)
-const CONF_FLOOR = 0.6;
+// sets the order, confidence/decay dampens it. CONF_FLOOR keeps a decayed-but-relevant
+// page from collapsing entirely. fused = rel_norm × (CONF_FLOOR + (1-CONF_FLOOR)·confTerm)
+let CONF_FLOOR = 0.6;
 
 // ----- arg parsing -----
+const USAGE =
+  'Usage: wiki-retrieve.mjs [-n <seeds>] [--hops 1|2] [--no-bump] [--json]\n' +
+  '                         [--today YYYY-MM-DD] [--fusion rrf|cc] [--graph-rank bfs|ppr]\n' +
+  '                         [--k-rrf <n>] [--graph-w <0..1>] [--alpha <0..1>]\n' +
+  '                         [--ppr-damping <0..1>] [--conf-floor <0..1>] "your question"';
 const argv = process.argv.slice(2);
 let seeds = 12;
 let hops = 1;
@@ -72,10 +100,24 @@ for (let i = 0; i < argv.length; i++) {
     bump = false;
   } else if (a === '--json') {
     rawJson = true;
+  } else if (a === '--fusion') {
+    FUSION = argv[++i];
+    if (!['rrf', 'cc'].includes(FUSION)) bail('--fusion must be rrf or cc');
+  } else if (a === '--graph-rank') {
+    GRAPH_RANK = argv[++i];
+    if (!['bfs', 'ppr'].includes(GRAPH_RANK)) bail('--graph-rank must be bfs or ppr');
+  } else if (a === '--k-rrf') {
+    K_RRF = numArg(argv[++i], '--k-rrf', 0, 1000);
+  } else if (a === '--graph-w') {
+    GRAPH_W = numArg(argv[++i], '--graph-w', 0, 1);
+  } else if (a === '--alpha') {
+    ALPHA = numArg(argv[++i], '--alpha', 0, 1);
+  } else if (a === '--ppr-damping') {
+    PPR_DAMPING = numArg(argv[++i], '--ppr-damping', 0, 1);
+  } else if (a === '--conf-floor') {
+    CONF_FLOOR = numArg(argv[++i], '--conf-floor', 0, 1);
   } else if (a === '--help' || a === '-h') {
-    console.log(
-      'Usage: wiki-retrieve.mjs [-n <seeds>] [--hops 1|2] [--no-bump] [--json] [--today YYYY-MM-DD] "your question"',
-    );
+    console.log(USAGE);
     process.exit(0);
   } else {
     remaining.push(a);
@@ -86,10 +128,14 @@ const query = remaining.join(' ');
 
 function bail(msg) {
   console.error(`error: ${msg}`);
-  console.error(
-    'Usage: wiki-retrieve.mjs [-n <seeds>] [--hops 1|2] [--no-bump] [--json] [--today YYYY-MM-DD] "your question"',
-  );
+  console.error(USAGE);
   process.exit(2);
+}
+
+function numArg(raw, flag, min, max) {
+  const v = Number(raw);
+  if (!Number.isFinite(v) || v < min || v > max) bail(`${flag} must be a number in [${min}, ${max}]`);
+  return v;
 }
 
 // Parse a qmd path / graph slug into { dir, slug, fullSlug, diskPath }.
@@ -247,21 +293,127 @@ for (const seedSlug of qmdStream) {
     frontier = next;
   }
 }
-// order graph stream: hops asc, then seedScore desc
-graphStream.sort((a, b) => a.hops - b.hops || b.seedScore - a.seedScore);
+// ----- Step 2b: order the graph stream (bfs hop-distance, or PPR diffusion) -----
+if (GRAPH_RANK === 'ppr' && graphStream.length > 0) {
+  const ppr = personalizedPageRank();
+  for (const g of graphStream) g.ppr = ppr.get(g.slug) || 0;
+  // PPR first; hop distance only breaks ties, so a well-connected 2-hop page can now
+  // outrank a 1-hop page hanging off a single seed — the thing bfs cannot express.
+  graphStream.sort((a, b) => b.ppr - a.ppr || a.hops - b.hops);
+  for (const g of graphStream) {
+    const c = cand.get(g.slug);
+    if (c) {
+      c.ppr_score = Math.round(g.ppr * 1e6) / 1e6;
+      c.retrieval_reasons.push(`ppr ${c.ppr_score.toFixed(4)} (${countSeeds(c)} seed paths)`);
+    }
+  }
+} else {
+  graphStream.sort((a, b) => a.hops - b.hops || b.seedScore - a.seedScore);
+}
 
-// ----- Step 3: RRF fuse (graph stream down-weighted so it can't tie a qmd hit) -----
-const rrf = new Map(); // fullSlug -> score
-for (let i = 0; i < qmdStream.length; i++) {
-  addRrf(qmdStream[i], i + 1, 1.0);
+function countSeeds(c) {
+  return new Set((c.graph || []).map((g) => g.from_seed)).size;
 }
-for (let i = 0; i < graphStream.length; i++) {
-  addRrf(graphStream[i].slug, i + 1, GRAPH_W);
+
+// Personalized PageRank over the typed graph, treated as undirected (an edge is a
+// relationship regardless of which page declared it) and restarting into the qmd-seed
+// vector. Power iteration over ~500 nodes: milliseconds, no dependency.
+//
+// Scope is deliberately limited to the BFS-discovered neighbourhood, so switching
+// GRAPH_RANK changes the ORDER of candidates but never the SET. That keeps `bfs` and
+// `ppr` directly comparable once the v0.10 eval-set exists.
+function personalizedPageRank(iterations = 50, tolerance = 1e-10) {
+  const seedVec = new Map();
+  let total = 0;
+  for (let i = 0; i < qmdStream.length; i++) {
+    const w = 1 / (i + 1); // rank-decayed restart mass; qmd's own order is the prior
+    seedVec.set(qmdStream[i], w);
+    total += w;
+  }
+  if (total === 0) return new Map();
+  for (const [k, v] of seedVec) seedVec.set(k, v / total);
+
+  const nodes = new Set([...qmdStream, ...graphStream.map((g) => g.slug)]);
+  const neighbours = new Map();
+  for (const n of nodes) {
+    const list = [];
+    for (const e of adjacency.get(n) || []) {
+      const ref = parseRef(e.neighbour);
+      if (ref && nodes.has(ref.fullSlug) && ref.fullSlug !== n) list.push(ref.fullSlug);
+    }
+    neighbours.set(n, list);
+  }
+
+  let p = new Map();
+  for (const n of nodes) p.set(n, seedVec.get(n) || 0);
+  for (let it = 0; it < iterations; it++) {
+    const next = new Map();
+    for (const n of nodes) next.set(n, (1 - PPR_DAMPING) * (seedVec.get(n) || 0));
+    let dangling = 0;
+    for (const n of nodes) {
+      const mass = p.get(n) || 0;
+      if (mass === 0) continue;
+      const nbs = neighbours.get(n) || [];
+      if (nbs.length === 0) {
+        dangling += mass;
+        continue;
+      }
+      const share = (PPR_DAMPING * mass) / nbs.length;
+      for (const nb of nbs) next.set(nb, (next.get(nb) || 0) + share);
+    }
+    // Dangling mass returns to the seeds rather than leaking out of the system.
+    if (dangling > 0) {
+      for (const [k, v] of seedVec) next.set(k, (next.get(k) || 0) + PPR_DAMPING * dangling * v);
+    }
+    let delta = 0;
+    for (const n of nodes) delta += Math.abs((next.get(n) || 0) - (p.get(n) || 0));
+    p = next;
+    if (delta < tolerance) break;
+  }
+  return p;
 }
+
+// ----- Step 3: fuse the two streams (RRF by default, convex combination opt-in) -----
+// RRF is always computed, both as the default fuser and as a diagnostic alongside CC,
+// so a ledger is comparable across runs whichever fuser produced the ordering.
+const rrf = new Map(); // fullSlug -> RRF score
+for (let i = 0; i < qmdStream.length; i++) addRrf(qmdStream[i], i + 1, 1.0);
+for (let i = 0; i < graphStream.length; i++) addRrf(graphStream[i].slug, i + 1, GRAPH_W);
 function addRrf(slug, rank, weight) {
   rrf.set(slug, (rrf.get(slug) || 0) + weight / (K_RRF + rank));
 }
-const maxRrf = Math.max(...rrf.values(), 1e-9);
+
+// Convex combination (Bruch et al. 2023): normalise each stream to [0,1], then take
+// ALPHA·qmd + (1-ALPHA)·graph. Unlike RRF this uses the streams' actual scores, which
+// is where Bruch's in-domain advantage comes from — but it needs the normalisation RRF
+// avoids, which is precisely why it stays opt-in until measured on this corpus.
+const cc = new Map();
+if (FUSION === 'cc') {
+  const qmdScores = qmdStream.map((sl, i) => {
+    const sc = cand.get(sl)?.qmd_score;
+    return typeof sc === 'number' ? sc : 1 / (i + 1); // rank fallback when qmd omits scores
+  });
+  const qmdNorm = minMaxScaler(qmdScores);
+  qmdStream.forEach((sl, i) => cc.set(sl, ALPHA * qmdNorm(qmdScores[i])));
+
+  const graphScores = graphStream.map((g, i) =>
+    GRAPH_RANK === 'ppr' && typeof g.ppr === 'number' ? g.ppr : 1 / (i + 1),
+  );
+  const graphNorm = minMaxScaler(graphScores);
+  graphStream.forEach((g, i) => {
+    cc.set(g.slug, (cc.get(g.slug) || 0) + (1 - ALPHA) * graphNorm(graphScores[i]));
+  });
+}
+
+function minMaxScaler(vals) {
+  if (vals.length === 0) return () => 0;
+  const mn = Math.min(...vals);
+  const mx = Math.max(...vals);
+  return (v) => (mx > mn ? (v - mn) / (mx - mn) : 1);
+}
+
+const relevance = FUSION === 'cc' ? cc : rrf;
+const maxRel = Math.max(...relevance.values(), 1e-9);
 
 // ----- Step 4: decay re-rank -----
 function daysBetween(fromISO, toISO) {
@@ -320,7 +472,8 @@ for (const c of cand.values()) {
       : (NEUTRAL_CONF[c.type] ?? 0.7);
 
   c.rrf_score = Math.round((rrf.get(c.slug) || 0) * 1e6) / 1e6;
-  const relNorm = (rrf.get(c.slug) || 0) / maxRrf; // 0..1 relevance
+  if (FUSION === 'cc') c.cc_score = Math.round((cc.get(c.slug) || 0) * 1e6) / 1e6;
+  const relNorm = (relevance.get(c.slug) || 0) / maxRel; // 0..1 relevance
   c.fused_score =
     Math.round(relNorm * (CONF_FLOOR + (1 - CONF_FLOOR) * confTerm) * 1000) / 1000;
 }
@@ -333,7 +486,18 @@ const candidates = [...cand.values()]
 const ledger = {
   query,
   generated_at: new Date().toISOString(),
-  params: { seeds, hops, k_rrf: K_RRF, graph_w: GRAPH_W, conf_floor: CONF_FLOOR, today },
+  params: {
+    seeds,
+    hops,
+    fusion: FUSION,
+    graph_rank: GRAPH_RANK,
+    k_rrf: K_RRF,
+    graph_w: GRAPH_W,
+    alpha: ALPHA,
+    ppr_damping: PPR_DAMPING,
+    conf_floor: CONF_FLOOR,
+    today,
+  },
   graph_available: !graphWarning,
   graph_warning: graphWarning,
   qmd_hit_count: qmdStream.length,

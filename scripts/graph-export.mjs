@@ -81,6 +81,26 @@ const nodes = []
 const nodesBySlug = new Map()
 const nodesByBasename = new Map()
 const ambiguousBasenames = new Set()
+// Edge classes per CLAUDE.md §Graph. DERIVED from the type — never read from a page's
+// frontmatter. Four kinds of relationship: does the claim hold up (evidential), what led
+// to what (causal), how does it decompose (structural), who stands behind it (provenance).
+// An unknown type stamps `null` rather than guessing; lint-page.mjs catches the vocabulary
+// violation separately.
+const EDGE_CLASS = {
+  supports: "evidential",
+  contradicts: "evidential",
+  supersedes: "evidential",
+  caused: "causal",
+  fixed: "causal",
+  "part-of": "structural",
+  "instance-of": "structural",
+  "depends-on": "structural",
+  uses: "structural",
+  "authored-by": "provenance",
+  "published-by": "provenance",
+  employs: "provenance",
+}
+
 const edges = []
 
 // First pass: build node list
@@ -141,6 +161,7 @@ for (const file of files) {
       target: targetSlug ?? rel.target,
       target_resolved: resolved,
       type: rel.type,
+      class: EDGE_CLASS[rel.type] ?? null,
       confidence: typeof rel.confidence === "number" ? rel.confidence : null,
       via: typeof rel.via === "string" ? rel.via : null,
     })

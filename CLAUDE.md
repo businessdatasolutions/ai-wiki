@@ -79,6 +79,30 @@ Periodic health check of the wiki.
 - Suggest new questions to investigate.
 Report findings; let the user decide what to act on.
 
+**Scripted lints.** Several of the duties above have a tool; most do not. Run them after an ingest batch, or periodically:
+
+| Script | Checks | Exit |
+| --- | --- | --- |
+| [`scripts/lint-page.mjs`](scripts/lint-page.mjs) | Lifecycle contract, relationship vocabulary, body-wikilink rule. Hook-fired on every edit. | always 0 |
+| [`scripts/lint-confidence.mjs`](scripts/lint-confidence.mjs) | `confidence` values in range and defensible | non-zero on findings |
+| [`scripts/lint-dangling-authors.mjs`](scripts/lint-dangling-authors.mjs) | Authors on ≥2 sources with no entity page | non-zero on findings |
+| [`scripts/lint-index-completeness.mjs`](scripts/lint-index-completeness.mjs) | Pages missing their `index.md` bullet | non-zero on findings |
+| [`scripts/lint-collapse.mjs`](scripts/lint-collapse.mjs) | **Context collapse** over git history (see below) | non-zero on findings |
+
+**Orphan detection has no script.** It is listed as a lint duty above and nothing implements it — the same shape of gap that let 28 entity pages sit without an index bullet for months. Until `lint-orphans.mjs` exists (planned in v0.4, never built), treat orphan-checking as a manual sweep.
+
+#### Context collapse (`lint-collapse.mjs`)
+
+Every ingest rewrites the concept pages it touches. ACE ([arXiv:2510.04618](https://arxiv.org/abs/2510.04618)) names the two failure modes of iterative rewriting: **brevity bias** (each pass prefers a tidier summary) and **context collapse** (detail erodes over time). Git holds the evidence; this script reads it and flags three things: a body that shrank ≥10% in one commit while `source_count` held or rose, a page now below 85% of its historical peak, and wikilinks that were present at the peak and are gone now.
+
+```bash
+node scripts/lint-collapse.mjs                     # concepts + syntheses
+node scripts/lint-collapse.mjs --page agent-harness --drop 0.15
+node scripts/lint-collapse.mjs --json
+```
+
+**First run (2026-09-16) found nothing** — zero signals across all 53 pages with history, even at a 2% threshold. This wiki's pages grow monotonically. `agent-harness` went 2,522 → 24,547 words over 60 revisions while `source_count` went 4 → 93. **The failure mode here is the opposite of the one the script was built for**, so it also reports the heaviest pages: accretion is real, unchecked, and has no threshold yet (deferred, v0.13+). Keep running the collapse check — the risk arrives the first time a page is consolidated rather than extended — but read the accretion table as the live signal.
+
 ## Verifying sources before ingest
 
 Filenames lie, samples masquerade as full sources, and PDFs get truncated. **Before treating any raw source as authoritative, run these pre-flight checks. Surface mismatches to the user *before* writing wiki pages — bad source data corrupts the wiki and is hard to remove cleanly later.**
@@ -560,7 +584,18 @@ The skill is the operational home of two pieces of §Search and §Retention mach
   node scripts/wiki-retrieve.mjs --json -n 12 "your question"   # ledger (skill default)
   node scripts/wiki-retrieve.mjs --hops 2 "your question"       # widen graph traversal
   node scripts/wiki-retrieve.mjs --no-bump --json "question"    # don't touch accessed_at
+  node scripts/wiki-retrieve.mjs --graph-rank ppr "question"    # PageRank-ordered graph stream
+  node scripts/wiki-retrieve.mjs --fusion cc --alpha 0.8 "q"    # convex-combination fuser
   ```
+
+  **Two retrieval strategies each have an unmeasured alternative** (added 2026-09-16). Both alternatives are implemented and selectable; neither is the default, because switching a retrieval default without a measurement on this corpus is not defensible.
+
+  | Knob | Default | Alternative | The claim behind the alternative |
+  | --- | --- | --- | --- |
+  | `--graph-rank` | `bfs` — hop distance, then seed score | `ppr` — Personalized PageRank seeded on the qmd hits | HippoRAG ([arXiv:2405.14831](https://arxiv.org/abs/2405.14831)): a page reachable from *several* seeds deserves to outrank one hanging off a single seed — something hop distance cannot express. Up to 20% on multi-hop QA. |
+  | `--fusion` | `rrf` — Reciprocal Rank Fusion, `k=60` | `cc` — convex combination, `ALPHA·qmd + (1-ALPHA)·graph` | Bruch, Gai & Ingber (2023, ACM TOIS; `raw/papers/2023-05-04-bruch-analysis-of-fusion-functions-for-hybrid-retrieval.md`): *"RRF [is] sensitive to its parameters"* and convex combination *"outperforms RRF in in-domain and out-of-domain settings"*, needing only a small tuning set. |
+
+  `--graph-rank ppr` changes the **order** of the graph stream, never the **set** — it ranks exactly what the BFS walk discovered — so the two are directly comparable. `--k-rrf`, `--graph-w`, `--alpha`, `--ppr-damping` and `--conf-floor` are all overridable for the same reason: the constants that were hardcoded were never validated here, and a knob you cannot turn is a claim you cannot test. Adjudicating the 2×2 is v0.10 item 5 in [`llm-wiki-v2-plan.md`](llm-wiki-v2-plan.md) and needs the eval-set first.
 
   Same auto-bump semantics as `wiki-query.mjs` — it bumps `accessed_at` on the qmd-returned concept/entity/synthesis pages as its last step (bump output to stderr so `--json` stdout stays clean). Pages promoted from the graph stream during gap-expansion need a manual `bump-accessed.mjs` per the skill's Step 8.
 
@@ -600,22 +635,37 @@ relationships:
 
 ### Closed vocabulary
 
-| Type | Direction | Use |
-| ---- | --------- | --- |
-| `supports` | A supports B | A's claim reinforces B's claim (intra-concept agreement) |
-| `contradicts` | A contradicts B | A's claim conflicts with B's; pair with `via` |
-| `caused` | A caused B | Causal claim — a phenomenon, decision, or event led to another |
-| `fixed` | A fixed B | A resolves or repairs B (rare in knowledge work; common in code wikis) |
-| `supersedes` | A supersedes B | A retires B; pair with v0.2 supersession protocol |
-| `uses` | A uses B | A makes use of B (e.g., a method uses a tool) |
-| `depends-on` | A depends on B | A would not work without B |
-| `part-of` | A is part of B | A is a component of B (e.g., person `part-of` lab) |
-| `instance-of` | A is an instance of B | A is a specific case of the broader B |
-| `authored-by` | A is authored by B | A's content originates with B (person or org) |
-| `published-by` | A is published by B | A appeared via B (publisher, journal, venue) |
-| `employs` | A employs B | A (organization) employs B (person) |
+| Type | Class | Direction | Use |
+| ---- | ----- | --------- | --- |
+| `supports` | evidential | A supports B | A's claim reinforces B's claim (intra-concept agreement) |
+| `contradicts` | evidential | A contradicts B | A's claim conflicts with B's; pair with `via` |
+| `supersedes` | evidential | A supersedes B | A retires B; pair with v0.2 supersession protocol |
+| `caused` | causal | A caused B | Causal claim — a phenomenon, decision, or event led to another |
+| `fixed` | causal | A fixed B | A resolves or repairs B (rare in knowledge work; common in code wikis) |
+| `part-of` | structural | A is part of B | A is a component of B (e.g., person `part-of` lab) |
+| `instance-of` | structural | A is an instance of B | A is a specific case of the broader B |
+| `depends-on` | structural | A depends on B | A would not work without B |
+| `uses` | structural | A uses B | A makes use of B (e.g., a method uses a tool) |
+| `authored-by` | provenance | A is authored by B | A's content originates with B (person or org) |
+| `published-by` | provenance | A appeared via B | A appeared via B (publisher, journal, venue) |
+| `employs` | provenance | A employs B | A (organization) employs B (person) |
 
 Use the type that fits. Inverse relationships are not stored explicitly — `scripts/graph-export.mjs` computes them by walking the corpus.
+
+#### Edge classes
+
+The `Class` column groups the twelve types into four kinds of relationship. It is **derived, not authored** — a page never writes `class:` in its frontmatter; `graph-export.mjs` stamps each edge with the class of its type, and `wiki/.graph.json` carries it.
+
+| Class | Answers | Types |
+| ----- | ------- | ----- |
+| `evidential` | *does this claim hold up?* | `supports`, `contradicts`, `supersedes` |
+| `causal` | *what led to what?* | `caused`, `fixed` |
+| `structural` | *how does this decompose?* | `part-of`, `instance-of`, `depends-on`, `uses` |
+| `provenance` | *who stands behind this?* | `authored-by`, `published-by`, `employs` |
+
+**Why bother.** MAGMA (Jiang et al. 2026, [ACL](https://aclanthology.org/2026.acl-long.1709.pdf)) argues that a single similarity-ranked memory store entangles temporal, causal and entity structure, and that separating the views lets retrieval traverse the one the query actually needs. This wiki has that entanglement in miniature: a graph walk from a seed treats `authored-by` and `contradicts` as the same kind of step, so a causal question surfaces authors. Naming the class is the cheap half of the fix — it makes the distinction queryable without splitting the graph into four.
+
+**What is not built.** Class-aware traversal in `scripts/wiki-retrieve.mjs` (e.g. `--edge-class causal,evidential`) is deferred; see v0.11 in [`llm-wiki-v2-plan.md`](llm-wiki-v2-plan.md). Today the class is emitted and available, and nothing reads it. That is deliberate — the annotation is verifiable on its own, the traversal policy needs the eval-set to tune.
 
 ### Source-to-source relationships
 

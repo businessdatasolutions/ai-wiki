@@ -10,6 +10,62 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-16] refactor | Three features land from the paper brainstorm, five enter the plan — and the collapse detector disproves its own premise
+
+Works the nine-item prioritisation in [`inspiration/2026-09-16-wiki-feature-brainstorm-papers.md`](../inspiration/2026-09-16-wiki-feature-brainstorm-papers.md). **Zero content pages touched** — this is tooling, schema and roadmap only.
+
+**Landed — retrieval (F3, F1-partial), `scripts/wiki-retrieve.mjs`.**
+
+- **Personalized PageRank graph stream** (`--graph-rank ppr`), after HippoRAG. The BFS ordering could only say *how far* a page sits from a seed; PPR says *how many ways* you reach it. On the harness query this promotes [[agent-harness]] (three seed paths, effConf 0.95) into the slot [[Google]] held as a one-hop publisher edge. **Order changes, candidate set does not** — PPR ranks exactly what the BFS walk discovered, which is what makes the two A/B-able later.
+- **Convex-combination fuser** (`--fusion cc`) plus `--k-rrf`, `--graph-w`, `--alpha`, `--ppr-damping`, `--conf-floor`. Two constants that sat hardcoded at the centre of `/wqa` are now knobs.
+- **Neither alternative is the default.** `rrf` + `bfs` stay in force. Bruch's finding is that unmeasured fusion parameters are exactly where retrieval goes quietly wrong; answering that by flipping a default without a measurement would be the same error wearing the other hat. Adjudication is v0.10 item 5, and it needs the eval-set.
+
+**Landed — [`scripts/lint-collapse.mjs`](../scripts/lint-collapse.mjs) (F6), and it refutes the idea that produced it.**
+
+Built to detect ACE's *context collapse* across git history — body shrinking while `source_count` grows, current page below its historical peak, wikilinks present at the peak and gone now. **Result: zero signals across all 53 concept and synthesis pages, holding at a 2% threshold.** The detector was verified against hand-computed history before the null was accepted; the data is read correctly and the answer is genuinely nothing.
+
+What the data does show is the mirror image. `agent-harness`: **2,522 → 24,547 words over 60 revisions**, `source_count` 4 → 93. `ai-employment-effects` is 13.4× its first revision, `micro-productivity-trap` 18.2×. Brevity bias is not this wiki's problem; **accretion is**, and no rule anywhere bounds it. The script now reports the heaviest pages on every run so a clean result still carries information. No threshold is proposed — it is honestly unclear whether a 24k-word concept page is a defect or a well-served topic, and the plausible fix is *split*, not *trim*. Deferred to v0.13+ as an open question rather than a silent assumption.
+
+**Landed — edge classes (F9, cheap half).** `CLAUDE.md` §Graph's closed vocabulary gains a **Class** column and `scripts/graph-export.mjs` stamps every edge: `evidential` (`supports`/`contradicts`/`supersedes`), `causal` (`caused`/`fixed`), `structural` (`part-of`/`instance-of`/`depends-on`/`uses`), `provenance` (`authored-by`/`published-by`/`employs`). Derived from the type, never authored. Current distribution across 1,303 edges: **956 evidential, 203 structural, 137 provenance, 7 causal.** MAGMA's argument is that one similarity store entangles these and retrieval should traverse the view the query needs — but at 7 causal edges the filter would be a no-op today, so the traversal policy is deferred and only the annotation ships.
+
+**Entered the plan — [`llm-wiki-v2-plan.md`](../llm-wiki-v2-plan.md) gains an Update note, two version slots and four items.**
+
+- **v0.6 — judge design constraints (F7), settled before the judge exists.** Four rules from Gu et al. and Chen et al.: per-dimension scoring, randomised presentation order, explicit length normalisation, and a ~10-page calibration run recorded in this log. The length rule is the load-bearing one — `quality_score` is the *only* field tooling may write, and a verbosity-biased judge rewarding longer pages, on a corpus whose measured failure mode is 18× growth, would be a feedback loop rather than a metric. Self-preference bias (Claude writes the pages and Claude judges them) is stated as an unfixable limitation rather than papered over.
+- **v0.6 — conflict taxonomy (F5).** `contradicts` gains `conflict_class:` ∈ `inter-context | context-memory | intra-memory`, plus `lint-conflicts.mjs`. The third is the point: inter-context clashes get caught at ingest because both sources are in front of you, while **intra-memory conflicts cannot be**, since they only come into being once two pages have been written independently.
+- **v0.8 — `/distill` (F8).** ReMe's "passive accumulation" applied to `CLAUDE.md` itself, which is procedural memory maintained entirely by hand. The 28-entities-without-an-index-bullet episode is the worked example. **The pruning half is mandatory** — every proposed rule must nominate one that could come out, or `/distill` becomes a ratchet on the longest file in the repo.
+- **v0.10 — fuser adjudication (F1 remainder).** Run the 2×2 (`rrf`/`cc` × `bfs`/`ppr`) against the eval-set and record NDCG@10 per cell. The `reciprocal-rank-fusion` concept page **must carry the Bruch caveat**; writing `k=60` as doctrine would codify as consensus a value its own literature disputes.
+- **New v0.11 — bi-temporal claims (F2).** `valid_from`/`valid_until` alongside `last_confirmed`/`accessed_at`, after Zep. World-time versus wiki-time. Today *"the AI Index reports X"* and *"X is the case"* are indistinguishable in frontmatter.
+- **New v0.12 — citation entailment (F4).** §Quality's citation dimension moves from density to precision × recall, after ALCE. Density is a proxy you can game by strewing links; ALCE reports the best systems lack complete citation support half the time. Highest-cost item in the plan (~750 model calls per sweep) and the only one that makes *"citations beat assertions"* a measurement rather than a slogan.
+- **Deferred renumbered to v0.13+**, gaining class-aware traversal, full multi-graph architecture, and page-size bounds.
+
+**A sequencing consequence, recorded in the plan.** v0.10 was a tidy-up version; it is now the measurement dependency for three separate things, and three retrieval configurations exist with none measured. That argues for moving it ahead of v0.6 — a judge without a calibration story is the same category of mistake as a retrieval default without an eval-set. **Build the instruments before the things that need measuring.**
+
+**Verification.** `npm run build` clean (527 files, 5,594 emitted). `lint-confidence`, `lint-dangling-authors`, `lint-index-completeness`, `lint-collapse` all clean; `graph-export` and `quality-score --dry-run` unchanged in behaviour. Reversibility: every change is additive — no default altered, no content page touched, no frontmatter written.
+
+## [2026-09-16] acquire | Four papers on the wiki's own architecture — one of which contradicts the v0.10 plan
+
+Acquire-only: four open-access PDFs landed in `raw/papers/`, no wiki source pages written. Logs under `acquire` per CLAUDE.md §Acquire step 5. Processing deferred to a later session.
+
+**The gap this closes.** The corpus holds 275 sources and not one of them is about how this wiki works. §Retention's decay curve, §Search's hybrid stack, and §Quality's rubric all assert a design without citing a single paper. These four are the first external evidence under those sections.
+
+**Landed (4), all `fulltext_source: pdf-converted`, converter `pdftotext -layout` — tables flattened, verify numbers against the co-located PDF:**
+
+- `2023-05-04-bruch-analysis-of-fusion-functions-for-hybrid-retrieval.md` — Bruch, Gai & Ingber (2023), ACM TOIS, [10.1145/3596512](https://doi.org/10.1145/3596512). 36pp.
+- `2024-04-21-zhang-survey-memory-mechanism-llm-agents.md` — Zhang et al. (2025), ACM TOIS, [10.1145/3748302](https://doi.org/10.1145/3748302). 39pp.
+- `2023-12-06-gao-enabling-llms-to-generate-text-with-citations.md` — Gao, Yen, Yu & Chen (2023), EMNLP, [10.18653/v1/2023.emnlp-main.398](https://doi.org/10.18653/v1/2023.emnlp-main.398). 24pp. The ALCE benchmark.
+- `2025-10-19-gu-survey-on-llm-as-a-judge.md` — Gu et al. (2024), [arXiv:2411.15594](https://arxiv.org/abs/2411.15594). 64pp.
+
+**The acquisition that changes a planned decision.** Bruch et al. is not confirmatory reading. [`llm-wiki-v2-plan.md`](../llm-wiki-v2-plan.md) v0.10 item 4 proposes a `reciprocal-rank-fusion` concept page fixing `k=60` as the Cormack default, and `scripts/wiki-retrieve.mjs` already hardcodes `K_RRF = 60` and `GRAPH_W = 0.5`. Bruch reports the opposite of the assumption underneath both: *"we find RRF to be sensitive to its parameters… convex combination outperforms RRF in in-domain and out-of-domain settings… convex combination is sample efficient."* Two unmeasured constants sit at the centre of `/wqa`, and the paper says those are exactly the knobs that matter. When this is processed, the RRF page needs the caveat or the wiki codifies a contested choice as settled.
+
+**Two identity notes (pre-flight Check 2), recorded in the raw files themselves:**
+
+- **Zhang** — the citable record is the 2025 ACM TOIS article; the full text held is the **April 2024 arXiv v1**. The TOIS version is paywalled. Cite the DOI, scope claims to the preprint.
+- **Gu** — OpenAlex dates the record 2024; the PDF retrieved is **v6 (19 Oct 2025)**, eleven months of revisions later. Cite as the 2024 survey, scope page references to v6.
+
+**Companion artifact.** The feature brainstorm that motivated the search is at [`inspiration/2026-09-16-wiki-feature-brainstorm-papers.md`](../inspiration/2026-09-16-wiki-feature-brainstorm-papers.md) — nine candidate features with business cases, mapped onto the open v0.6 / v0.8 / v0.10 slots, plus four further papers identified but not acquired (Zep, HippoRAG, ACE, ReMe). Nothing in it is decided.
+
+**One search that failed.** The v0.8 gap-detection slot found no academic anchor; queries around "structural holes" and "knowledge gap detection" drifted into social-network analysis. InfraNodus's Phase 10 matrix appears to be practitioner work without a citable basis. Reframe as bibliometric "research gap identification" on a second attempt.
+
 ## [2026-09-16] ingest | Anthropic explains auto mode on Google's channel — and concedes its subagents are non-deterministic
 
 One video, checked for duplication by video id against `wiki/` and `raw/` before fetching (clean — the habit is now five batches old). Acquire and Process ran in the same session, so this logs under the `ingest` umbrella per CLAUDE.md §Acquire step 5.

@@ -23,6 +23,21 @@ The synthesis also surfaced **this repo's own contributions** that the upstream 
 
 Two synthesis takeaways feed the rest of this document: (a) the **Plan operation** is genuinely new and merits its own version, not a v0.8+ footnote; (b) the **acquire-vs-process split** is a schema clarification, not a tooling effort — it slots cleanly between v0.7 and v0.10+.
 
+### Update 2026-09-16 — literature acquired; three items land early, five enter the plan
+
+An OpenAlex sweep for papers bearing on the wiki's *own* architecture produced four open-access acquisitions in `raw/papers/` and a nine-item feature brainstorm at [`inspiration/2026-09-16-wiki-feature-brainstorm-papers.md`](inspiration/2026-09-16-wiki-feature-brainstorm-papers.md). Until this point every §Retention, §Search and §Quality claim in `CLAUDE.md` was asserted without a citation; these are the first external sources under them.
+
+**Three items landed immediately** (same session, no version slot — all additive, none changes a default):
+- **Personalized PageRank graph stream** in `scripts/wiki-retrieve.mjs` (`--graph-rank ppr`), after HippoRAG (arXiv:2405.14831). The candidate *set* is unchanged; only the graph stream's *order* differs, so `bfs` and `ppr` are directly A/B-able once an eval-set exists.
+- **Convex-combination fuser + configurable fusion parameters** in the same script (`--fusion cc`, `--k-rrf`, `--graph-w`, `--alpha`, `--conf-floor`), after Bruch et al. (2023).
+- **`scripts/lint-collapse.mjs`** — context-collapse detection over git history, after ACE (arXiv:2510.04618). Plus **edge classes** (`evidential` / `causal` / `structural` / `provenance`) stamped onto every edge by `graph-export.mjs`, after MAGMA.
+
+**One acquisition contradicts a decision already in this document.** v0.10 item 4 proposes a `reciprocal-rank-fusion` concept page fixing `k=60` as the Cormack default. Bruch, Gai & Ingber (2023, ACM TOIS) report that *"RRF [is] sensitive to its parameters"* and that a convex combination *"outperforms RRF in in-domain and out-of-domain settings"* while being sample-efficient to tune. The RRF page must carry that caveat, and v0.10 gains an explicit fuser-adjudication item (item 5 below). **Nothing in the retrieval path changed its default** — swapping a retrieval default without a measurement is the precise failure Bruch describes, so `rrf` + `bfs` remain in force until v0.10's eval-set can adjudicate.
+
+**One premise did not survive contact with the data.** `lint-collapse.mjs` found zero collapse signals across all 53 concept and synthesis pages with history, even at a 2% per-revision threshold. This wiki's pages grow monotonically: `agent-harness` went 2,522 → 24,547 words over 60 revisions while `source_count` went 4 → 93. ACE's brevity bias is not the failure mode here; unbounded accretion is. The script therefore also reports the heaviest pages, and **bounded-page-size is now an open question rather than an assumed non-problem** — see v0.13+ deferred.
+
+**Five items entered the plan** rather than landing: bias-hardening the judge (v0.6), the conflict taxonomy (v0.6), schema distillation (v0.8), fuser adjudication (v0.10), and two new version slots — bi-temporal claims (v0.11) and citation entailment (v0.12).
+
 ## Approach at a glance
 
 | Version | Theme | Schema lands | Tooling lands | Migration |
@@ -36,7 +51,9 @@ Two synthesis takeaways feed the rest of this document: (a) the **Plan operation
 | v0.8    | **Plan operation** (5th op, gap-driven todos) — InfraNodus contribution | `§Plan` operation, `todos/` folder contract, `op: plan` log prefix | `/plan` slash command, `scripts/detect-gaps.mjs`, `scripts/seed-todos.mjs` | Generate first `todos/` from current wiki state |
 | v0.9    | **Acquire/Process refactor** — make ingest's two phases explicit (InfraNodus contribution) | §Ingest split into §Acquire + §Process; typed `raw/` subfolder enum; skill-as-acquire-step pattern formalised | None new — youtube-transcript-skill already fits the pattern; document the contract | None (schema-only) |
 | v0.10   | **Search-quality empirical depth** — quantitative anchors + own-corpus eval-set | §Search gains §Sizing decision; `reciprocal-rank-fusion` concept page (optional); `wiki/evals/` folder contract | `scripts/seed-search-evalset.mjs`, `scripts/eval-qmd.mjs`; new thread `wiki-search-evals` | New empirical anchors on `is-rag-dead`; seed first eval-set |
-| v0.11+  | Deferred (mesh sync, external graph DB, on-query hook, consolidation infra, retention auto-deletion) | — | — | only if forced |
+| v0.11   | **Bi-temporal claims** — separate world-time from wiki-time | `valid_from` / `valid_until` on concepts + sources; supersession becomes derivable | `lint-validity.mjs`; `seed-validity.mjs` (supervised) | Concepts carrying a dated empirical claim |
+| v0.12   | **Citation entailment** — does the cited source actually support the claim? | §Quality citation dimension switches from density to precision/recall | `scripts/check-citations.mjs` (claim → source entailment via a cheap model) | Re-score all concepts + syntheses |
+| v0.13+  | Deferred (mesh sync, external graph DB, on-query hook, consolidation infra, retention auto-deletion, class-aware traversal, page-size bounds) | — | — | only if forced |
 
 Three principles run through every version:
 1. **Schema-first.** CLAUDE.md sections + frontmatter contracts land before any tooling that depends on them.
@@ -216,10 +233,27 @@ Three principles run through every version:
 - New named operation **crystallize**: closed thread → synthesis page → extracted lessons under `wiki/lessons/`. Each lesson is `type: lesson`, ≤200 words, one canonical claim, source list, inherits lifecycle fields from v0.2. Lessons decay aggressively (tau ≈ 60 days).
 - §Quality review: a second-pass Claude API call with reviewer prompt evaluates each new/edited concept/synthesis against rubric; score lands in `quality_score`, notes in `quality_notes`. Replaces the mechanical scorer from v0.5 for these page types (entities still use mechanical).
 - Contradiction resolver: when supersession-check finds a candidate, it produces a **proposed diff** in `log.md` (not an edit). Human approves before any page change.
+- **Conflict taxonomy** (added 2026-09-16, from Xu et al. 2024, *Knowledge Conflicts for LLMs: A Survey*, [EMNLP](https://doi.org/10.18653/v1/2024.emnlp-main.486)). `contradicts` edges gain an optional `conflict_class:` drawn from a closed three-value vocabulary:
+  - `inter-context` — two sources disagree with each other.
+  - `context-memory` — a new source disagrees with what the wiki already asserts.
+  - `intra-memory` — **the wiki disagrees with itself**: two pages citing the same source for incompatible claims.
+  The third is the one that matters operationally. Inter-context conflicts get noticed during ingest because both sources are in front of you; intra-memory conflicts are *structurally invisible* at ingest time, because they only come into existence once two pages have been written independently. At 50 concepts and 275 sources the odds that some exist are high and the odds anyone finds them by hand are low. `## Debates and supersession` is currently one undifferentiated bucket filled only when the ingestor happens to spot the clash.
+
+**Judge design constraints — settle these BEFORE `judge-quality.mjs` is written.** (Added 2026-09-16 from Gu et al. 2024, [arXiv:2411.15594](https://arxiv.org/abs/2411.15594), and Chen et al. 2024, *Humans or LLMs as the Judge?*, EMNLP. Both are acquired; the Gu survey is at `raw/papers/2025-10-19-gu-survey-on-llm-as-a-judge.md`.)
+
+`quality_score` is the **only** frontmatter field tooling may write (CLAUDE.md §Quality, "the auto-write exception"). A biased judge therefore contaminates precisely the field with the least human oversight. Four constraints, each tied to a documented bias:
+
+1. **Score each dimension separately, never one global number.** A single holistic score is where position and halo effects concentrate. Structure, citation quality and cross-consistency get independent calls.
+2. **Randomise presentation order** in any pairwise or batched comparison. Position bias is the best-documented failure in the survey.
+3. **Normalise explicitly for length.** Verbosity bias would reward longer pages — which, given that `lint-collapse.mjs` found this wiki's real failure mode is *accretion*, would actively push the corpus the wrong way. A judge that rewards length while pages already grow 4–18× is a feedback loop, not a metric.
+4. **Calibrate once against ~10 hand-scored pages** before the first batch run, and record the correlation in `log.md`. An uncalibrated score is not a measurement. Budget: one hour.
+
+Self-preference bias (a model rating its own prose highly) is unavoidable here — Claude writes the pages and Claude judges them. It cannot be designed out at single-user scale; it must be **stated as a known limitation** in §Quality review rather than silently carried.
 
 **Tooling.**
 - New `/crystallize <thread-slug>` slash command in `.claude/commands/`.
-- `scripts/judge-quality.mjs` — Claude API call with reviewer prompt; writes back `quality_score` and `quality_notes`.
+- `scripts/judge-quality.mjs` — Claude API call with reviewer prompt; writes back `quality_score` and `quality_notes`. Must implement all four judge design constraints above; ships with its calibration run recorded.
+- `scripts/lint-conflicts.mjs` — graph query for **intra-memory** conflict candidates: pairs of pages citing a shared source page whose claims about it diverge. Emits a candidate list with a suggested `via:`; never edits. Expect false positives (nuance is not contradiction) — the operator adjudicates.
 - Hook addition (extends v0.4 set): on session-end, if a `type: thread, status: open` page hasn't been edited in 14 days but its referenced sources have grown, propose closing/crystallizing in the session-end log entry.
 
 **Migration.**
@@ -308,6 +342,10 @@ Three principles run through every version:
 - New script `scripts/detect-gaps.mjs` — walks `wiki/.graph.json` for disconnected clusters (modularity-based heuristic), low-`source_count` concepts, empty subfolders, threads that have been open >30 days. Outputs a ranked candidate list to stdout. Read-only.
 - Optional integration: if InfraNodus MCP server is configured, plug its `generate_knowledge_graph` output into `detect-gaps.mjs` as an additional stream (RRF over local + InfraNodus signals).
 - `scripts/seed-todos.mjs` — supervised migration helper: take the candidate list from `detect-gaps.mjs`, prompt for keep/discard per candidate, scaffold one todo file per kept item. Never auto-writes.
+- **`/distill` — schema distillation** (added 2026-09-16, from Cao et al. 2026, *Remember Me, Refine Me*, [ACL Findings](https://aclanthology.org/2026.findings-acl.829.pdf)). ReMe's argument is that procedural memory fails through **"passive accumulation"** — treating memory as a static append-only archive — and that the fix is a three-part lifecycle: distil experience into fine-grained lessons, reuse them context-adaptively, and **prune on utility**.
+  `CLAUDE.md` *is* this repo's procedural memory, and it is maintained entirely by hand. It co-evolves only when the operator remembers to make it. The evidence that this fails is already in the repo: **28 entity pages sat without an `index.md` bullet for months**, and the reason CLAUDE.md itself gives is *"because nothing checked for it"*. That is passive accumulation with a name on it.
+  `/distill` reads the last N `log.md` entries and proposes candidate schema rules, each citing the sessions that demonstrate the pattern — both **success patterns** (a workflow that worked and should be codified) and **failure triggers** (a mistake made twice).
+  **The pruning half is not optional.** Every proposed rule must nominate an existing rule that could come out. Without that constraint `/distill` becomes a ratchet and CLAUDE.md — already the longest file in the repo — grows without bound, which is the same accretion failure `lint-collapse.mjs` found on the concept pages. Output is a proposal in the session, never an edit: §Hooks forbids automated content writes, and the schema is the most load-bearing content there is.
 
 **Migration.** One-time: generate the first `todos/` set from current wiki state. Expected output at 93 pages: 5–10 candidate workstreams, of which 3–5 survive triage.
 
@@ -375,6 +413,10 @@ Three principles run through every version:
 
 4. **(Optional) New concept page [[concepts/reciprocal-rank-fusion]].** RRF formula `score(d) = Σ_r 1/(k + rank_r(d))` with `k=60` (Cormack et al. 2009 default), explanation of why rank-only fusion works where score-fusion doesn't (BM25 vs cosine-similarity are on incomparable scales — only ranks are fusable). Adds the **bi-encoder vs cross-encoder** distinction: dense embeddings = bi-encoder (query + corpus separately vectorised, fast); reranker = cross-encoder (query + doc encoded together, slow but more accurate, only viable on a shortlist). Single-source for now; promote to second-source on next ingest that references RRF. Linked from `[[agent-harness]]` (Context layer reads from RRF-fused substrate) and `[[is-rag-dead]]` (one of the substrate primitives that persists post-RAG-the-term).
 
+5. **Fuser and graph-ranker adjudication** (added 2026-09-16). Three retrieval configurations now exist in `scripts/wiki-retrieve.mjs` and exactly zero of them have been measured on this corpus: fuser `rrf` (default) vs `cc`, and graph ranker `bfs` (default) vs `ppr`. The defaults are the *incumbent* ones, held not because they are better but because changing an unmeasured default is unjustifiable. Once `scripts/eval-qmd.mjs` and the eval-set exist, run the 2×2 and record NDCG@10 per cell in the thread. Whatever wins becomes the default and the losing pair stays selectable.
+   Bruch et al.'s specific claims to test here: that RRF is parameter-sensitive (vary `--k-rrf` and `--graph-w`, see whether the ordering is stable), and that CC is sample-efficient (tune `--alpha` on a handful of pairs and check it generalises). Both are claims about *their* corpora; this wiki is three orders of magnitude smaller and the graph stream is a structural signal rather than a second lexical one, so neither transfers for free.
+   The `reciprocal-rank-fusion` concept page in item 4 **must carry the Bruch caveat** — writing `k=60` as settled doctrine would codify as consensus something its own literature disputes.
+
 **Schema changes — `CLAUDE.md` updates §Search.**
 - Add subsection `### §Sizing decision` inline (item 2 above).
 - Add a one-paragraph pointer to `[[reciprocal-rank-fusion]]` from §Search if item 4 lands; otherwise inline a one-paragraph definition.
@@ -382,7 +424,7 @@ Three principles run through every version:
 
 **Tooling.**
 - `scripts/seed-search-evalset.mjs` — walks `wiki/sources/`, loops the Ebbelaar template through a cheap LLM (Claude Haiku or equivalent) via the Anthropic SDK, writes `wiki/evals/search-evalset.json` with `[{doc_id, query, relevance: "high"}]` triples. Read-only against the wiki; the operator approves before any commit. Idempotent — re-running skips docs already covered.
-- `scripts/eval-qmd.mjs` — loads `wiki/evals/search-evalset.json`, runs each query through `qmd query --json -n 10`, computes NDCG@10 + per-query breakdown, prints a markdown report. Pure measurement; no auto-fixes; no frontmatter writes anywhere. Output mirrors the structure of `scripts/quality-score.mjs`'s dry-run table.
+- `scripts/eval-qmd.mjs` — loads `wiki/evals/search-evalset.json`, runs each query through `qmd query --json -n 10`, computes NDCG@10 + per-query breakdown, prints a markdown report. Extended per item 5: accept `--fusion` / `--graph-rank` pass-through so the 2×2 can be run as four invocations against one eval-set. Pure measurement; no auto-fixes; no frontmatter writes anywhere. Output mirrors the structure of `scripts/quality-score.mjs`'s dry-run table.
 
 **Migration.**
 - One thread page created: `wiki/threads/wiki-search-evals.md`.
@@ -415,7 +457,57 @@ Three principles run through every version:
 
 ---
 
-## v0.11+ — Deferred
+## v0.11 — Bi-temporal claims: separate world-time from wiki-time
+
+**Goal.** The wiki maintains three date-ish fields by hand — `last_confirmed`, `accessed_at`, and the `supersedes` / `superseded_by` pair — and none of them records *when a claim was true*. They record when **we** did something. Zep/Graphiti (Rasmussen et al. 2025, [arXiv:2501.13956](https://arxiv.org/abs/2501.13956)) makes the distinction explicit with bi-temporal edges carrying both valid-time and ingestion-time, and reports up to +18.5% on LongMemEval at 90% lower latency largely because temporal reasoning stops being guesswork.
+
+**Sourced from.** 2026-09-16 brainstorm item F2.
+
+**Schema changes — `CLAUDE.md` §Lifecycle gains a second time axis.**
+- `valid_from: YYYY-MM-DD` / `valid_until: YYYY-MM-DD` — **optional**, on concepts and sources. World-time: when the claim held.
+- `last_confirmed` / `accessed_at` keep their current meaning unchanged. Wiki-time: when we last touched or read the page.
+- A claim whose `valid_until` is in the past is **derivably** stale. Supersession stops being a protocol someone has to remember and becomes a query — though marking `status: stale` stays a human decision per §Supersession protocol, which this version does not weaken.
+
+**Why this earns a slot.** A large share of this corpus is dated empirical claims — model benchmarks, adoption rates, labour-market effects — over a field that moves per quarter. Today *"the AI Index 2026 reports X"* and *"X is the case"* are indistinguishable in the frontmatter. The question the wiki cannot currently answer is the one it gets asked most: **what did we believe in May, and does it still hold?**
+
+**Tooling.**
+- `scripts/lint-validity.mjs` — flags pages whose `valid_until` has passed, and pages making a year-stamped claim in body prose with no `valid_from`.
+- `scripts/seed-validity.mjs` — supervised backfill helper. Proposes values by reading the page; the operator confirms each. Never batch-writes.
+
+**Risk — field inflation.** Four date fields per page is a lot of bookkeeping for a single maintainer, and bookkeeping that is skipped is worse than a field that does not exist. Mitigation: strictly optional, and only expected on claims that already state a year in the body. If the lint finds most pages do not need it, the feature is smaller than it looks — which is a good outcome, not a failed version.
+
+**Prereqs.** v0.2 (lifecycle fields exist).
+
+**Verification.** A concept carrying a superseded empirical claim shows as stale via `lint-validity.mjs` with no `status:` field set by hand; `npm run build` unaffected; no existing decay math changes.
+
+---
+
+## v0.12 — Citation entailment: from density to coverage
+
+**Goal.** `CLAUDE.md` names *"citations beat assertions"* as a working principle, and §Quality measures it as **wikilinks per 1000 words** with a target of ≥3.0. That is a proxy for the thing that matters and it is gameable by strewing links. ALCE (Gao, Yen, Yu & Chen 2023, EMNLP; `raw/papers/2023-12-06-gao-enabling-llms-to-generate-text-with-citations.md`) defines the real quantities — **citation precision** (does the cited source support the claim?) and **citation recall** (does every claim have support?) — and reports that even the best systems *"lack complete citation support 50% of the time"*.
+
+**Sourced from.** 2026-09-16 brainstorm item F4.
+
+**Schema changes — §Quality's citation dimension is redefined.**
+- The 0.30-weighted citation dimension switches from density to `precision × recall`.
+- Two new derived frontmatter fields on concepts and syntheses: `citation_precision`, `citation_recall`. Both fall under the existing auto-write exception — derived, deterministic given a model and prompt, user-triggered. Nothing else about that exception widens.
+
+**Tooling.**
+- `scripts/check-citations.mjs` — splits a page into claim-bearing sentences, resolves each `[[source]]` wikilink in scope, asks a cheap model whether the source supports the claim, aggregates precision and recall. `--dry-run` and `--page <slug>` mirror `quality-score.mjs`.
+
+**Cost — the highest in this plan.** Roughly 50 concepts × ~15 claims ≈ 750 model calls per full sweep. Trivial in euros on a small model, but this is explicitly **not** hook-fired and not per-edit; it is a batch run after an ingest series, or monthly.
+
+**Why it earns its own slot rather than folding into v0.6.** v0.6's judge rates *how a page is written*. This rates *whether its evidence holds*. Merging them would make `quality_score` ambiguous about which failed — the same argument the plan already makes for keeping v0.10 separate from v0.6.
+
+**Known limitation.** The checker inherits every bias in v0.6's judge, self-preference included. It runs as a **flagger only**: it writes two numbers and never touches prose.
+
+**Prereqs.** v0.5 (quality fields exist), v0.6 (judge design constraints are settled — this reuses them).
+
+**Verification.** Precision and recall computed for every concept and synthesis; at least one page where density was high and precision is low, demonstrating the proxy was hiding something. If no such page exists, the old metric was adequate and that finding gets recorded too.
+
+---
+
+## v0.13+ — Deferred
 
 Revisit only if forced.
 - **Mesh sync** (cluster 6 remainder): if a coauthor or second machine appears.
@@ -427,6 +519,9 @@ Revisit only if forced.
 - **Telegram / external reminder integration for `todos/`**: InfraNodus's `/actionize` companion. Defer; git + markdown todos with deadlines is sufficient at single-user scale.
 - **>1M chunk scaling story for §Search** (v0.10 exit-threshold): when the wiki crosses ~100k docs (3 orders of magnitude beyond current state), revisit the "skip the vector DB" rule and benchmark Quadrant / LanceDB / Weaviate / pgvector against the in-memory baseline.
 - **LLM-as-judge for retrieval quality** (cross-version blend of v0.6 and v0.10): rather than NDCG@10 against a synthetic eval-set, use a Claude API call to rate each retrieved set for *answerability*. Deferred because the mechanical baseline from v0.10 has to exist first to measure against.
+- **Class-aware graph traversal** (2026-09-16, brainstorm item F9, after MAGMA): `wiki/.graph.json` now stamps every edge with `evidential` / `causal` / `structural` / `provenance`, but nothing reads it. The remaining half is a `--edge-class` filter on `wiki-retrieve.mjs` so a causal question stops surfacing authors. Deferred because choosing *which* classes a given query wants is a policy that needs the v0.10 eval-set to tune — and because the current distribution (956 evidential, 203 structural, 137 provenance, **7 causal**) suggests filtering would mostly be a no-op today. Revisit if the causal layer thickens.
+- **Full multi-graph memory architecture** (MAGMA proper): four separate orthogonal graphs with policy-guided traversal. This is architecture, not a feature, and MAGMA's gains come from long-horizon reasoning over far larger stores. At ~520 nodes the single graph is small enough that entanglement is tolerable.
+- **Bounded page size** (2026-09-16): `lint-collapse.mjs` found no collapse but did surface unbounded accretion — `agent-harness` at 24,547 words across 93 sources, several pages 11–18× their first revision. No threshold is proposed yet because it is genuinely unclear whether a 24k-word concept page is a defect or a well-served topic. Revisit when a page becomes unreadable in Obsidian or a reader complains; a plausible answer is *split by sub-topic*, not *trim*.
 
 ---
 
@@ -454,6 +549,8 @@ Per-version migration targets:
 - v0.8: new top-level `todos/` directory (sibling of `wiki/`, not inside it); 3–5 seeded workstreams.
 - v0.9: schema-only refactor of `CLAUDE.md` §Ingest → §Acquire + §Process; zero content pages touched.
 - v0.10: new `wiki/evals/` directory + first `search-evalset.json` artifact (≥50 query/doc pairs); 1 synthesis page edited (`is-rag-dead`); 1 new thread (`wiki-search-evals`); 0–1 new concept page (`reciprocal-rank-fusion` if item 4 lands).
+- v0.11: optional `valid_from` / `valid_until` on the subset of concepts and sources carrying a dated empirical claim — supervised, expected to be a minority of pages, not a full-corpus migration.
+- v0.12: no content migration; two derived fields written across all concepts and syntheses by `check-citations.mjs`.
 
 ## Verification strategy across versions
 
@@ -466,7 +563,9 @@ After each version lands:
 
 ## Sequencing recommendation
 
-Treat each version as one or two focused sessions, not one big push. Suggested cadence: v0.2 over 2-3 sessions (because of the bulk migration), v0.3 over 2 sessions, v0.4 in 1 session, v0.5 in 2 sessions (qmd install + retention), v0.6 in 2 sessions, v0.7 in 1 session, v0.8 in 1-2 sessions (gap-detector + first todos seeding), v0.9 in 1 session (CLAUDE.md refactor only), v0.10 in 2 sessions (cherry-pick edits + eval-set seeding). Each version is independently shippable — pause between any two and the wiki keeps working.
+Treat each version as one or two focused sessions, not one big push. Suggested cadence: v0.2 over 2-3 sessions (because of the bulk migration), v0.3 over 2 sessions, v0.4 in 1 session, v0.5 in 2 sessions (qmd install + retention), v0.6 in 2 sessions, v0.7 in 1 session, v0.8 in 1-2 sessions (gap-detector + first todos seeding), v0.9 in 1 session (CLAUDE.md refactor only), v0.10 in 2 sessions (cherry-pick edits + eval-set seeding), v0.11 in 1-2 sessions (schema + supervised backfill), v0.12 in 1 session plus one batch run. Each version is independently shippable — pause between any two and the wiki keeps working.
+
+Note on v0.10's new precedence (2026-09-16). v0.10 was previously a tidy-up version — harvest four details from a tutorial. It is now the **measurement dependency for three other things**: the fuser 2×2 (item 5), the class-aware traversal deferred to v0.13+, and any future retrieval change at all. Three retrieval configurations exist in `wiki-retrieve.mjs` today and none is measured. That argues for moving v0.10 ahead of v0.6 in the queue: v0.6 builds a judge, and a judge without a calibration story is the same category of mistake as a retrieval default without an eval-set. Build the measuring instruments before the things that need measuring.
 
 Note on v0.8 vs v0.9 ordering. v0.9 is paper-only and could land at any point — it has zero prerequisites. Put it after v0.8 because the Plan operation is a natural place to flush out which raw sources are *acquired but not processed* (a gap type v0.8's detector should surface), and that gap is more legible once §Acquire is named as a distinct step. If a future skill is being authored that needs the contract before v0.8 ships, swap them — no other version cares about the order.
 
