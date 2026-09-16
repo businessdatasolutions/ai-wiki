@@ -10,6 +10,22 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-16] refactor | Clamp the two out-of-range confidence values to the schema cap
+
+**What changed.** [[agent-harness]] `0.98 → 0.95` and [[agentic-engineering]] `0.97 → 0.95`. Two characters each, no body text touched.
+
+**Why.** CLAUDE.md §Lifecycle sets a hard ceiling of `0.95` on `confidence:`, and these were the **only** two pages in the corpus above it — concepts, entities and syntheses all scanned. `lint-page.mjs` had been firing on both on every touch for weeks, and the warning was being reported to the user and then carried forward rather than acted on.
+
+**The argument for leaving them.** They were almost certainly deliberate: the two most-developed concepts in the wiki (99 and 58 sources) reaching for a *"more than merely well-supported"* signal the 0.70–0.95 scale does not offer. Clamping makes [[agent-harness]] numerically indistinguishable from any other well-supported page.
+
+**The argument for clamping, which won.** A confidence value that keeps climbing with source count is measuring **volume, not epistemic strength** — and `source_count: 99` already carries the spine signal, more legibly than a third decimal place. The alternative on the table was raising the cap in CLAUDE.md to fit the data, which is how caps stop meaning anything. User's call, taken 2026-09-16.
+
+**Where the distinction should live instead.** In prose on the page, not in the number. Both pages already do this — [[agent-harness]] opens by naming itself the corpus's dominant frame with the source count attached, which is the honest version of what `0.98` was gesturing at.
+
+**Not a supersession.** No claim changed, no page retired, no `status: stale`. Both pages' `last_confirmed` and `accessed_at` were already 2026-09-15 from the previous day's ingest and are left as they are — this edit confirms nothing new, it corrects a range violation.
+
+**Note for future ingests:** `confidence:` is capped at `0.95` and there is now no page in the corpus above it. If a future ingest is tempted past the cap, that is a signal the page needs a prose claim about its own standing, not a higher number.
+
 ## [2026-09-15] ingest | A labour economist on why the entry-level debate is hard to settle — and the wiki's first sovereignty page
 
 One video, checked for duplication by video id against `wiki/` and `raw/` before fetching (clean — the habit is now four batches old and has caught a duplicate in three of them).
