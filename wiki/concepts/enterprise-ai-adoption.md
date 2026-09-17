@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-09-16"
-accessed_at: "2026-09-16"
-source_count: 121
+last_confirmed: "2026-09-17"
+accessed_at: "2026-09-17"
+source_count: 122
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -838,3 +838,27 @@ He also supplies the reason adoption is slower than predicted, read off a safety
 **One firm says it got there, by rebuilding rather than adopting.** [[2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai|Maza / Kavak]] reports 96% of customer interactions and 95% of transactions handled by agents, AI sellers converting at 2.1× the human team, and tripled customer satisfaction — after redesigning the company around agents rather than issuing tools. See [[Kavak]] for the figures and their caveats, and [[micro-productivity-trap]] for the redesign argument.
 
 **What the three together actually establish.** Not that enterprise AI does or does not pay. They establish that **the question is being asked at three different units** — the economy, the cross-section of firms, and the single firm — and that the answer differs at each. The aggregate is depressed partly by measurement (Hatzius), the cross-section by a missing architectural layer (Covello), and the single firm that built that layer reports the opposite result (Kavak). **The open question this page now carries is whether Kavak is exceptional, early, or optimistically measured** — and one podcast episode cannot settle it.
+
+## Readiness is not adoption: the gap gets coefficients (added 2026-09-17)
+
+The workforce-readiness constraint above, the *what is in pilot versus what is in production* ratio from [[2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company|BBC AI Decoded]], and [[2026-04-28-anand-wu-genai-playbook|Anand & Wu's]] leakage point 2 are all circling the same object from different sides: firms that are willing, trained and enthusiastic, and still get nothing measurable. [[2025-06-15-cimino-ai-adoption-sustainable-growth-smes|Cimino et al. (2025)]] is the first source in the corpus to model that object directly and put numbers on it.
+
+**The construct split.** AI adoption is decomposed into two mediators rather than one:
+
+- **AIAR — AI Acceptance Rate**: the firm's openness and readiness to adopt.
+- **AIAI — AI Adoption Intensity**: how far AI is actually embedded in processes.
+
+**The result, on 210 Italian innovative startups (PLS-SEM):**
+
+| | → technological | → economic | → collaborative | → sustainable |
+|---|---|---|---|---|
+| **AIAI** (implementation) | **0.390** | **0.498** | **0.268** | −0.079 *(n.s.)* |
+| **AIAR** (readiness) | **0.192** | 0.094 *(n.s.)* | −0.108 *(n.s.)* | **0.213** |
+
+Readiness does not reach economic or collaborative performance at all; its collaborative path is signed negative. And dynamic capabilities produce readiness nearly twice as readily as they produce implementation (β = 0.523 vs 0.279) — so the organisational capability that everyone is trying to build generates *willingness* first and most, which is precisely the state that does not pay. The authors' conclusion is the one-line version of this whole section of the page:
+
+> "Simply fostering enthusiasm for AI is insufficient if not supported by resource allocation and strategic alignment."
+
+**Why this earns a place here rather than a page of its own.** The AIAR/AIAI split is single-source, its two constructs correlate at HTMT 0.878 (marginal discriminant validity — see [[2025-06-15-cimino-ai-adoption-sustainable-growth-smes|the source page]]), and the sample is 81% firms under eleven employees. It is a sharp instrument on a narrow population, not yet a wiki concept. **If a second source corroborates the readiness/intensity distinction, it should be promoted to its own page** — it is the most precise available framing of why the adoption-versus-maturity gap persists.
+
+One tension worth keeping open: [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti's "mindset, not skillset"]] argues readiness and identity shift are the lever. Measured at firm level, readiness alone is the thing that does not work. The two are not straightforwardly opposed — Argenti's other prescriptions (obsess over evals, master your data) are implementation — but the headline claims point in different directions.

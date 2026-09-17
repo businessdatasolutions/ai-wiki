@@ -3,15 +3,15 @@ type: concept
 aliases: ["dynamic capabilities", "dynamic-capabilities", "Teece dynamic capabilities", "sense seize transform"]
 tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, microfoundations]
 confidence: 0.95
-last_confirmed: "2026-09-09"
-accessed_at: "2026-09-15"
-source_count: 40
+last_confirmed: "2026-09-17"
+accessed_at: "2026-09-17"
+source_count: 41
 relationships:
   - type: supports
     target: enterprise-ai-adoption
     via: "AI adoption requires dynamic-capability microfoundations to scale"
-quality_score: 0.98
-quality_notes: ['2 near-empty section(s)']
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # Dynamic Capabilities
@@ -279,7 +279,8 @@ Rohrer reaches the **same structural conclusion with no AI premise**. Recording 
 [[2026-08-19-he-databricks-anthropic-primitives-to-production-agents|He / Anthropic]] takes only `rapid-prototyping` and `improving-digital-maturity`; [[2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness|Baugues & Thurium / Google Cloud]] takes **one cell only** (`improving-digital-maturity`, for vocabulary-levelling among builders). Both could have been stretched to more; neither was. Consistent with the note above about the batch's deliberate omissions, restraint on genuinely engineering-flavoured sources is what keeps the field usable as a filter.
 
 ## Debates and supersession
-## Debates and supersession
+
+- **Does the DC→performance link hold for economic performance?** [[2025-06-15-cimino-ai-adoption-sustainable-growth-smes|Cimino et al. 2025]] is the corpus's first quantitative test, and its one clean failure is H2: dynamic capabilities do **not** significantly predict economic performance in 210 Italian innovative startups (β = 0.138, CI [−0.013, 0.281]). Every other DC path in the model holds strongly. The authors read it as a *stage* effect — capabilities in early-stage firms are aimed at experimentation, product development and market entry, so financial return lags capability development — and align it with Wilden et al. (2013), who found the link conditional on organic structures and competitive intensity. **No supersession.** This is a boundary condition on the concept, not a refutation of it: DC→technological (0.447), DC→collaborative (0.615) and DC→sustainable (0.662) performance all hold in the same model. What it rules out is the loose claim that dynamic capabilities pay off financially *as such*, independent of firm stage.
 
 - **Sensing-as-prediction vs sensing-as-shock-readiness.** The Teece (2007) framing of sensing emphasises *opportunity and threat detection* — close to forecasting language. [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook|Erginbilgiç 2026]] argues against the prediction-framing: *"It's not about actually predicting the world, it is about how your company now thinks about dealing with external shocks"* (~21:14–21:32). [[2026-04-28-warner-wager-dynamic-capabilities-digital-transformation|Warner & Wäger 2019]]'s `digital-scenario-planning` microfoundation is closer to Erginbilgiç's *shock-readiness* framing than to pure forecasting. No supersession; the productive tension is between *sensing as accuracy* and *sensing as response capability*. The wiki currently treats them as compatible (sensing must produce both signal-detection *and* the organisational habit of responding to signals).
 - **Digital vs non-digital scope of W&W cells.** [[2026-04-28-warner-wager-dynamic-capabilities-digital-transformation|Warner & Wäger 2019]] derives its cell vocabulary from *digital* transformation case studies; [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook|Erginbilgiç 2026]] is a pure non-digital case that nonetheless maps gracefully onto `strategic-renewal/organizational-culture`, `digital-seizing/strategic-agility`, and `contextual/internal-barriers`. The cells stretch outside the digital lens with the *digital-mindset* clause optional. No supersession; the wiki's working hypothesis is that W&W cells are *transformation primitives* whose digital-flavour reflects the empirical setting of the original 27-interview sample rather than a load-bearing scope restriction.
@@ -318,3 +319,11 @@ The Back Bay Battery simulation is that cell rendered scorable: a fixed R&D budg
 **The finding is that the newest models fail this cell in one specific direction.** Mid-to-late-2025 frontier models (GPT-5, o3, Gemini 2.5 Pro) achieve high cumulative profit with very low emerging-technology revenue — they optimise the core and decline the portfolio balance — scoring below both earlier models and MBA students. Late-2024/early-2025 models did **not** fail this way; they exceeded the human average by timing investment and pricing to get both.
 
 Two things follow for this page. First, **the microfoundations argument gets empirical traction**: the authors conclude that *"the microfoundations of successful strategic decision making may differ in important ways from those underlying success in other domains like coding or advanced science"* — which is a claim about *which* capability is being measured, and a warning against treating general capability as a proxy for a specific one. Second, and more practically, it is evidence about **where an AI-assisted seizing process needs a human**: not in the analysis, which these models do competently, but in the commitment to an option whose payoff is not yet visible in the data. See [[2026-03-11-allen-mcdonald-how-well-can-ai-do-strategy-simulation-benchmark|the source page]] for the limits, including that the study measures reasoning over supplied information rather than agentic sensing.
+
+## The spine, measured: the first quantitative test in the corpus (added 2026-09-17)
+
+Until now this page rested entirely on conceptual work (Teece 1997, 2007, 2014) and on interpretive case research ([[2026-04-28-warner-wager-dynamic-capabilities-digital-transformation|Warner & Wäger 2019]]'s seven German incumbents and 18 consultant interviews). [[2025-06-15-cimino-ai-adoption-sustainable-growth-smes|Cimino, Corvello, Troise, Thomas & Tani (2025)]] is the first source in the wiki to contain a path coefficient at all — PLS-SEM on **210 Italian innovative startups**, with sensing, seizing and transforming modelled as a reflective second-order construct.
+
+**The measurement result matters independently of the paper's own thesis.** The three-cluster construct loads cleanly (Cronbach's α 0.832, rhoC 0.900, AVE 0.750), which is evidence that sense/seize/transform is a coherent latent factor and not an artefact of how qualitative researchers code their interviews. That is external support for the spine this page is built on — though note it is support for the **generic Teece three clusters**, since the instrument (Kump & Kessler 2019) contains nothing digital-specific. It says nothing about W&W's nine *digital* microfoundations, which remain qualitatively grounded.
+
+**The substantive finding is a readiness–implementation asymmetry.** The paper splits AI adoption into *acceptance* (AIAR — openness and readiness) and *intensity* (AIAI — how far AI is actually embedded in processes), and finds dynamic capabilities produce acceptance nearly twice as readily as implementation: DC→AIAR β = 0.523 against DC→AIAI β = 0.279. Only the implementation leg reaches economic performance. For this page the implication is that **dynamic capabilities are better understood as producing the conditions for adoption than adoption itself** — the capability generates willingness; converting willingness into embedded practice is a separate, harder, resource-bound step. Two caveats travel with this: the two adoption constructs correlate at HTMT 0.878, uncomfortably close to collinear, and the sample is 81% micro-firms under eleven employees. See [[2025-06-15-cimino-ai-adoption-sustainable-growth-smes|the source page]] for the full reliability read.

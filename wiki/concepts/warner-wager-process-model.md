@@ -2,10 +2,10 @@
 type: concept
 aliases: ["Warner-Wäger process model", "Warner & Wager process model", "W&W process model", "digital-transformation process model"]
 tags: [dynamic-capabilities, digital-transformation, microfoundations, warner-wager, wiki-vocabulary]
-confidence: 0.82
-last_confirmed: "2026-07-01"
-accessed_at: "2026-07-11"
-source_count: 6
+confidence: 0.85
+last_confirmed: "2026-09-17"
+accessed_at: "2026-09-17"
+source_count: 7
 relationships:
   - type: instance-of
     target: dynamic-capabilities
@@ -171,6 +171,16 @@ Where Dumra (DBS) and Erginbilgiç (Rolls-Royce) are **operator-scale worked exa
 - **`strategic-renewal/organizational-culture`**: "develop people, not just tasks" — managers coaching curiosity/resilience/adaptability rather than tracking task efficiency — is a workforce-development articulation of embedding new shared values, convergent with [[2026-06-25-carroll-stanford-gsb-making-organizational-culture-great|Carroll's]] intensity×agreement framing (the 5 C's are a candidate *content* for what a strong culture aligns around, even though Carroll insists content is "almost irrelevant" to strength).
 
 The book's electricity-bolt-on analogy (installing electricity where the steam engine was, with no floor-plan redesign, yields no productivity gain) is the same *bolt-on-fails* diagnostic Allen names for AI ("AI bolted on is going to fail") and Westerman/Caldas restate at the CIO-Symposium — see [[micro-productivity-trap]] for the full cross-source thread. This is a **popularization, not new evidence** (single-source, promotional book interview): per [Lifecycle rules](../../CLAUDE.md#lifecycle) it does not lift the page's confidence, but it widens the corpus's register to individual-career and mass-market-leadership audiences the operator/academic sources don't reach.
+
+## Partial external validation — the spine, not the cells ([[2025-06-15-cimino-ai-adoption-sustainable-growth-smes|Cimino et al. 2025]])
+
+[[2025-06-15-cimino-ai-adoption-sustainable-growth-smes|Cimino, Corvello, Troise, Thomas & Tani (2025)]] is the first quantitative test the corpus holds of anything in this lineage: PLS-SEM on 210 Italian innovative startups, with sensing, seizing and transforming modelled as a reflective second-order construct. **It validates exactly half of what this page claims, and the half it does not reach is the half this page is actually about.**
+
+**What it supports.** The three-cluster spine loads as a coherent latent factor (AVE 0.750, rhoC 0.900) and predicts technological (β = 0.447), collaborative (β = 0.615) and sustainable (β = 0.662) performance. Sense/seize/transform survives contact with a survey instrument and a structural model, on a firm population — early-stage micro-firms — about as far from W&W's seven German incumbent MNCs as the construct is likely to be pushed.
+
+**What it does not touch.** The instrument is Kump & Kessler (2019), which measures the three clusters in their **generic** form: market scanning, knowledge absorption, change execution. Nothing in it is digital-specific, and none of the nine microfoundations on this page — `digital-scouting`, `digital-scenario-planning`, `digital-mindset-crafting`, and the six below them — appears as a measured construct. **The nine cells remain qualitatively grounded in W&W's 27 interviews and have never been quantitatively tested.** The `confidence:` on this page rose only 0.82 → 0.85 for that reason: a seventh source arrived, but it reinforces the foundation rather than the structure.
+
+This is also a modest datapoint for the *transformation-primitive* hypothesis in [Debates and supersession](#debates-and-supersession) below. Cimino's firms are digital-native startups, so the cells' digital flavour is not tested against a non-digital setting the way [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook|Rolls-Royce]] tested it — but the fact that a *generic* Teece instrument reproduces the spine on which the digital cells sit is weak evidence that the cells' digital-ness is a layer, not the load-bearing part.
 
 ## Debates and supersession
 
