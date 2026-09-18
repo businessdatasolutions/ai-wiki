@@ -19,7 +19,7 @@ relationships:
   - type: supports
     target: syntheses/harness-thinning-what-persists
     via: "sibling synthesis from the same 2026-07-15 video batch — the runtime-engineering (harness) lens and the organizational-frameworks lens both independently land on 'process redesign / organizational design is the load-bearing decision, not the technology'"
-accessed_at: "2026-09-05"
+accessed_at: "2026-09-17"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---

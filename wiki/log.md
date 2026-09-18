@@ -10,6 +10,14 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-17] query | Overzicht van AI-adoptiemodellen (auditable, `/wqa`)
+
+Question (NL): *"geef me een overzicht van AI adoptie modellen"*. Answered via the `traceable-wiki-answer` skill; `wiki-retrieve.mjs` fused 10 qmd hits with 46 graph neighbours into 56 candidates, of which **8 were used and 48 ignored** (reason-classes recorded per page). Trace artifacts: `inspiration/2026-09-17-ai-adoptie-modellen-query-trace.{md,json}`.
+
+**Headline.** The wiki carries **no classical adoption theory** — zero hits corpus-wide for TAM, UTAUT, Rogers' diffusion of innovations, or TOE. What it has is a layered set of practitioner and consultancy frameworks ([[syntheses/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]]), the instrument comparison in [[threads/ai-maturity-measurement-comparison|ai-maturity-measurement-comparison]], a worker-level ladder ([[syntheses/ai-worker-maturity-levels|ai-worker-maturity-levels]]), and exactly one structural model with path coefficients ([[2025-06-15-cimino-ai-adoption-sustainable-growth-smes]], ingested the same day). The TAM/UTAUT/TOE gap is a candidate for a future Acquire.
+
+**No new wiki page filed** — the answer is a navigational overview of pages that already exist, and the trace is the durable artifact. Bookkeeping: `accessed_at` bumped to 2026-09-17 by the retriever on the qmd-returned entity/synthesis pages ([[AI Index]], [[syntheses/ai-worker-maturity-levels|ai-worker-maturity-levels]], [[syntheses/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]]); [[dynamic-capabilities]] and [[enterprise-ai-adoption]] were already current from the ingest.
+
 ## [2026-09-17] ingest | The dynamic-capabilities spine gets its first path coefficients — and readiness turns out not to pay
 
 One paper, dropped into `raw/papers/` as a Wiley export with a truncated filename. It is the first source in the wiki that contains a structural model.
