@@ -3,9 +3,9 @@ type: concept
 title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
 confidence: 0.85
-last_confirmed: "2026-09-16"
-source_count: 14
-accessed_at: "2026-09-16"
+last_confirmed: "2026-09-18"
+source_count: 15
+accessed_at: "2026-09-18"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
   - type: part-of
@@ -168,3 +168,20 @@ The diagnosis is about **learning, not safety**. A handoff that terminates the a
 **Where the boundary sits for them.** Humans are retained where the physical world is — ~800 mechanics, working alongside a sidekick agent Maza likens to *Ratatouille*. That is a **capability boundary (dexterity and senses), not a consequence boundary**, which is a different cut from the irreversibility-and-visibility axis this page records from [[IMDA]], [[Ryan Carson]] and [[Claire Vo]].
 
 **What this does not supply.** No approval gates, no risk scoring, no false-approve rate, and no account of what happens when a long-running agent with access to *"every tool and every API"* and a lifetime-value objective does something consequential and wrong. The page's standing complaint — **nobody reports a false-approve rate** — is unrelieved. Kavak's answer to oversight is evals at parity with build ([[agent-harness]]), which is a quality mechanism rather than an authority mechanism. See [[Kavak]].
+
+## Adjustable autonomy: the handback conditions, stated in 2003 (added 2026-09-18)
+
+This page has assembled its gating rules from 2026 sources. The multiagent-systems literature had a compact version two decades earlier. [[2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2|Wooldridge, 2009]], citing Scerri et al. (2003), defines **adjustable autonomy** as control of a decision passing from the agent to a person whenever one of four conditions holds:
+
+1. the agent believes the human will make a decision with **substantially higher benefit**;
+2. there is a **high degree of uncertainty** about the environment;
+3. the decision **might cause harm**;
+4. the agent **lacks the capability** to make the decision itself.
+
+Conditions 2 and 3 are close to [[2026-05-06-bockeler-engineering-of-ai-agents-context-harnessing-autonomy|Böckeler's]] probability-and-impact pair; condition 3 is the harm axis that [[2026-05-14-pochampally-assistant-or-actor-delegation-regret|Pochampally's]] irreversibility-and-visibility finding makes operational. Condition 4 is the one this page has least on: the agent recognising the edge of its own competence, which is the escalation path [[Kavak]]'s help-request tool call implements from the agent's side.
+
+Wooldridge also names the cost that the permission-fatigue section above documents from practice: *"an agent that always comes back to its user or owner for help with decisions will be unhelpful, while one that never seeks assistance will probably also be useless."*
+
+And he fixes the boundary that delegation regret is measured against. The agent's autonomy is the *"ability and requirement to decide how to act so as to accomplish our delegated goals"*, and it may adopt subgoals only *"in the furtherance of our delegated goals."* An action a user would not have authorised is outside that boundary even when it serves the goal, which is why a correct outcome does not repair it.
+
+**What this does not supply.** The four conditions say *when* to hand back, not how an agent would know it is in one of them. Estimating one's own uncertainty and capability is the hard part, and neither the 2003 paper as cited nor any source here solves it.

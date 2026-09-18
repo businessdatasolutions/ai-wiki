@@ -3,9 +3,9 @@ type: concept
 title: Multi-agent failure modes
 aliases: ["multi-agent failure modes", "MAST", "multi-agent system failure taxonomy", "why multi-agent systems fail", "agent coordination failure"]
 confidence: 0.85
-last_confirmed: "2026-09-16"
-source_count: 10
-accessed_at: "2026-09-16"
+last_confirmed: "2026-09-18"
+source_count: 11
+accessed_at: "2026-09-18"
 tags: [mast, multi-agent, failure-taxonomy, coordination, inter-agent-misalignment, task-verification, data-processing-inequality, isolated-workspaces, caid, token-budget]
 relationships:
   - type: part-of
@@ -138,3 +138,14 @@ The replacement is a single long-running agent per customer with memory, evals, 
 **Why this is a real addition and not just another opinion.** The page's existing sceptical evidence is largely about *equal-budget comparisons* — [[2026-04-02-tran-kiela-single-agent-outperforms-multi-agent-under-equal-budgets|Tran & Kiela]] show single agents winning at matched token budgets. Maza's claim is **dated and tied to a specific model release**: the architecture was right in December and wrong afterwards. If that is correct, multi-agent decomposition is not a permanently inferior pattern but a **capability-dependent** one, and the failure modes this page catalogues may be partly artifacts of building around models that needed the scaffolding.
 
 **What would falsify or confirm it.** Nothing here is measured. Kavak reports no A/B between the two architectures, no cost comparison, and no evidence beyond the executive's judgement that the old system constrained the new model. A firm that ran both concurrently and measured would settle it; **no source in the corpus has.** Treat this as one practitioner's dated architectural verdict, weighted by the fact that he paid two years of work for it. See [[agent-harness]] and [[Kavak]].
+
+## The field's original premise: self-interested agents (added 2026-09-18)
+
+"Multi-agent system" is an older term than this page's LLM sources, and in the literature that coined it the premise was different. In [[2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2|Wooldridge, 2009]], a multiagent system is a society of agents that *"will be representing or acting on behalf of users or owners with very different goals and motivations."* Its two stated differences from ordinary concurrent systems:
+
+- **Coordination is not hardwired at design time.** Autonomous agents need mechanisms to *"synchronize and coordinate their activities at run-time."*
+- **Encounters are economic.** In a concurrent system *"all the computing elements are implicitly assumed to share a common goal"*; in a multiagent system agents *"are primarily concerned with their own welfare."* Hence the field's focus on negotiation, auctions and game theory.
+
+Wooldridge's slogan for the second point, contrasting agents with objects: ***"Objects do it for free; agents do it because they want to."*** An agent that receives a request decides whether to act on it.
+
+The systems [[2025-03-17-cemri-why-do-multi-agent-llm-systems-fail|MAST]] studies keep the first difference and drop the second. They are typically built by one team, for one goal, with roles assigned in a prompt, which in Wooldridge's terms is a concurrent system of agents rather than a society of them. MAST's system-design and inter-agent-misalignment failures therefore arise **without** the conflicting interests the classical field was designed around. Two readings follow, and nothing in the corpus separates them: either run-time coordination is hard enough to fail on its own, or LLM agents reproduce some of the behaviour of self-interested ones (talking past each other, undoing each other's work) without having interests at all. Only the chapters on cooperation and negotiation, not yet supplied, would show what the classical toolkit offers here.

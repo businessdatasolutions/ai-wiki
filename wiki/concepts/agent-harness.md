@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.95
-source_count: 101
+source_count: 102
 relationships:
   - type: part-of
     target: ai-agents
@@ -20,8 +20,8 @@ relationships:
   - type: uses
     target: small-language-models
     via: "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed"
-last_confirmed: "2026-09-16"
-accessed_at: "2026-09-16"
+last_confirmed: "2026-09-18"
+accessed_at: "2026-09-18"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -988,3 +988,9 @@ The stated design goal is the same *durability* claim [[2026-09-14-google-cloud-
 **Evals as the throttle.** *"I like to move extremely fast, but in order to move fast, you need to have brakes… how fast can we go? Well, it depends on the quality of our evals."* The resourcing rule is the most quotable operational number on this page: **the same engineer time, tokens and money on evals as on the agents themselves** — *"not letting evals as an afterthought."* What they measure is business outcome, not process: *"I see companies measuring number of calls, or minutes during the call, or some superficial KPIs… The important thing is: **did this customer convert?**"* See [[ai-benchmarks]].
 
 **A caution.** Every figure here is self-reported by one executive on a venture-capital podcast, with no stated baselines. The architecture is the durable contribution; treat the numbers as claims. See [[Kavak]].
+
+## Before the genealogy's v0: the loop predates the LLM (added 2026-09-18)
+
+The genealogy above begins with GPT-2 in 2019 as the v0 harness. That is where the *LLM* harness begins, not the agent loop. [[2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2|Wooldridge, 2009]], a textbook built on work from the late 1980s and 1990s, already decomposes an agent into a perception function (`see`), a state update (`next`) and an action-selection function (`action`) running in a cycle against an environment it only partly controls, and formalises the result as a **run**: an interleaved sequence of environment states and actions. A reason–act–observe trajectory is a run.
+
+It also contains the harness thesis in one line, attributed to Oren Etzioni (1996): ***"Intelligent agents are ninety-nine percent computer science and one percent AI."*** Wooldridge's gloss is that building an agent does not require solving planning or learning, and that *"most of what we do will be standard computer science and software engineering."* The 2026 sources on this page make the same argument with the model in the place of "AI". The ratio has not been measured then or now.

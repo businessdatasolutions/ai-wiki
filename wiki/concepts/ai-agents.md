@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
-source_count: 41
+last_confirmed: "2026-09-18"
+accessed_at: "2026-09-18"
+source_count: 42
 relationships:
   - type: instance-of
     target: generative-ai
@@ -18,8 +18,8 @@ relationships:
   - type: uses
     target: small-language-models
     via: "model size is an agent design variable, not a fixed input — the position that most agentic invocations are narrow enough for a small specialised model, with frontier LLMs invoked selectively"
-quality_score: 0.98
-quality_notes: ['2 near-empty section(s)']
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # AI Agents
@@ -199,6 +199,20 @@ He adds the part Baugues leaves out — **what the definition is defined against
 
 On this evidence the wiki should treat Willison's formulation as the **industry-default agent definition by mid-2026**, held in common by two competing labs' developer-facing material.
 
+## A definition older than the implementation ([[2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2|Wooldridge, 2009]], added 2026-09-18)
+
+Every other source on this page describes LLM agents from 2022 onward. The multiagent-systems textbook the field was taught from before that supplies the definition the four-clause formulation descends from, and it is broader:
+
+> *"An agent is a computer system that is situated in some environment, and that is capable of autonomous action in this environment in order to meet its delegated objectives."* (adapted from Wooldridge & Jennings 1995)
+
+Three things it holds that the 2026 formulation does not:
+
+- **No implementation clause.** A thermostat and the Unix mail-watcher `xbiff` are agents under it: simple ones, not intelligent ones. Willison's *"LLM with tools in a loop"* keeps the goal and the loop and adds the LLM, which turns a definition of the category into a description of how the category is currently built.
+- **Autonomy is scoped to *how*, not *what*.** The agents of interest are those *"to which we can delegate goals in some high-level way (i.e. not just by giving it a fully elaborated program to execute), and then have this entity decide for itself how best to accomplish its goals."* They may choose subgoals only in furtherance of delegated goals. This is the same line [[2024-12-19-anthropic-building-effective-agents|Anthropic's workflows-versus-agents split]] and [[2026-08-19-he-databricks-anthropic-primitives-to-production-agents|He's "who chooses the trajectory"]] draw, stated fifteen years earlier.
+- **"Intelligent" is a further, separable bar**: reactivity, proactiveness and social ability. The hard part is not any one of them but the balance between goal-directed and reactive behaviour, which Wooldridge calls *"essentially still open."* An agent that keeps executing a plan after its preconditions have failed is the failure he describes, and it is the failure [[react-reasoning-acting|ReAct's]] interleaving of reasoning with observation addresses.
+
+[[2026-08-03-chowdhery-mirhoseini-stanford-cs329a-self-improving-agents-part-1|Chowdhery & Mirhoseini's]] course-altitude definition above (goal, environment, feedback, deciding when to stop) is closer to Wooldridge's than to Willison's: it does not name the LLM either.
+
 ## The loop as the unit of company design ([[2026-08-14-blomfield-yc-building-structuring-ai-native-company|Blomfield / YC, August 2026]])
 
 Blomfield decomposes the agent loop into five named parts and then uses it as an *organisational* primitive rather than a technical one:
@@ -216,8 +230,8 @@ He also sketches the next construct up: an **AI employee** is an agent given a V
 Nothing in this source is measured; see its scope warning.
 
 ## Debates and supersession
-## Debates and supersession
 
+- **Does the definition of an agent include the LLM?** The wiki's working default, Willison's *"an LLM with tools running in a loop to accomplish a goal"* ([[2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness|Baugues]], [[2026-08-19-he-databricks-anthropic-primitives-to-production-agents|He]], [[2026-05-18-wolfe-agent-evaluation-detailed-guide|Wolfe]]), says yes. [[2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2|Wooldridge]]'s *"situated… capable of autonomous action… to meet its delegated objectives"* says no, and admits thermostats. They agree on goal and loop. **Working resolution:** the wiki keeps Willison's as the operational definition of *today's* agents and treats Wooldridge's as the definition of the category. Where a claim on this page is about agents in general rather than LLM agents in particular, the broader definition is the one it should be checked against.
 - **Where in the org does an agent sit?** The 4 sources frame agents differently:
   - [[2026-04-28-mit-sloan-ai-maturity|MIT CISR]]: agents as a **Stage 3+ attribute** — only mature orgs are exploring them.
   - [[2026-04-28-anand-wu-genai-playbook|Anand-Wu]]: agents as a **task-quadrant attribute** — they thrive in the no-regrets zone today, regardless of org maturity stage.

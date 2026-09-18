@@ -3,9 +3,9 @@ type: concept
 aliases: ["ReAct", "Reason+Act", "reason-act-observe loop", "reasoning and acting", "ReAct framework", "ReAct paradigm"]
 tags: [react, reasoning-and-acting, agentic-loop, chain-of-thought, tool-use, llm-agents, interpretability, human-in-the-loop, foundational]
 confidence: 0.9
-last_confirmed: "2026-09-09"
-accessed_at: "2026-09-09"
-source_count: 6
+last_confirmed: "2026-09-18"
+accessed_at: "2026-09-18"
+source_count: 7
 relationships:
   - type: authored-by
     target: Shunyu-Yao
@@ -93,3 +93,9 @@ Sokolenko's own genealogy for *why* models can run this loop stops one step earl
 The tools are perceptual rather than informational — `get_transcript`, `get_frames` at a model-chosen frames-per-second, `get_audio` — and the trajectory is coarse-to-fine: pull the cheap transcript to find roughly where the answer lives, then re-sample that region at higher frame rate. The payoff is ReAct's own: **grounding the answer in fetched observations rather than in what the model can infer from a fixed dump of context.** The claimed result is that token cost falls *and* accuracy rises, because attention lands on query-relevant material — the vendor's version of ReAct's grounding argument, though offered without a benchmark.
 
 The obvious failure mode is unaddressed and worth tracking: a coarse-to-fine loop that begins with the transcript degrades when the salient content is unspoken.
+
+## The problem ReAct addresses, named in the pre-LLM literature (added 2026-09-18)
+
+[[2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2|Wooldridge, 2009]] names the central open problem of agent design as the balance between **goal-directed** and **reactive** behaviour. Goal-directed execution alone assumes the environment does not change while a plan runs and that the goal stays valid, which in a dynamic environment makes blind execution *"a poor strategy"*; constant reaction alone means *"never focusing on a goal long enough to actually achieve it."* His Tileworld example is an agent that should drop its current objective when the hole it is pushing a tile toward disappears.
+
+ReAct's thought steps (planning, decomposition, exception handling) are the goal-directed side, and its observations are the reactive side, interleaved in one trajectory. Wooldridge's formal **run**, an interleaved sequence of environment states and actions, is the same structure without the language-model thoughts. Wooldridge treats the balance as unsolved in 2009; ReAct does not claim to have solved it either. The 2026 failure modes recorded on [[agent-harness]] (agents that give up too early inside a capable environment) and [[multi-agent-failure-modes]] (failures accepted as successes) are both mis-timings of when to stop pursuing a goal, which is one face of the same balance.
