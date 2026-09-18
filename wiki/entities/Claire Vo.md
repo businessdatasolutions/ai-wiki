@@ -6,9 +6,9 @@ tags: [claire-vo, how-i-ai, chatprd, product-management, ai-pm, vibe-coding, age
 affiliation: "ChatPRD (founder); How I AI (host)"
 role: "Product leader; founder/creator of ChatPRD (an AI PRD-authoring tool); host of the How I AI podcast"
 confidence: 0.85
-last_confirmed: "2026-08-31"
-accessed_at: "2026-08-31"
-source_count: 6
+last_confirmed: "2026-09-18"
+accessed_at: "2026-09-18"
+source_count: 7
 relationships:
   - type: part-of
     target: How-I-AI
@@ -28,6 +28,7 @@ Vo's wiki anchor is the **product-leader / non-engineer altitude** on AI practic
 
 ## Appears in this wiki via
 
+- [[2026-05-11-nystrom-how-i-ai-spec-driven-development-notion]] — host; interviews Notion's Ryan Nystrom on spec-driven development and background agents, and argues that executives up to CTO and CPO should write code ("the era of the hard skill") and that CI speed sets "a true mathematical limit" on agent-shipped code.
 - [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system]] — host; interviews Daniel Blum on his Cowork system. Notable for a reflexive turn: Blum runs *her own* loops episode through his Improve skill on camera, and the skill's critique (his scheduled tasks are already loops; he lacks goal loops) is delivered back to her live.
 - [[2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder]] — host; interviews [[Ryan Carson]] on running 15 concurrent [[Devin]] agents, and contributes the episode's counter-argument that shipping more code does not produce better product.
 - [[2026-08-05-vo-lennys-merge-mommy-ai-code-review-bot]] — host/builder; Merge Mommy, the six-dimension risk-scoring PR reviewer.

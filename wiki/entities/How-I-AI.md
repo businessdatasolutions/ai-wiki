@@ -5,10 +5,12 @@ aliases: ["How I AI", "How-I-AI", "How I AI podcast", "howiaipod"]
 tags: [how-i-ai, podcast, claire-vo, ai-product-management, ai-workflows, practitioner-demos, vibe-coding, agent-loops]
 since: 2025
 confidence: 0.85
-last_confirmed: "2026-08-31"
-accessed_at: "2026-08-31"
-source_count: 6
+last_confirmed: "2026-09-18"
+accessed_at: "2026-09-18"
+source_count: 7
 relationships:
+  - type: published-by
+    target: 2026-05-11-nystrom-how-i-ai-spec-driven-development-notion
   - type: published-by
     target: 2026-08-31-blum-how-i-ai-claude-cowork-pm-system
     via: "Daniel Blum (PM, Melio) on the Claude Cowork system running 70–80% of his workday, and the Workstation plugin that ships it to colleagues — Vo hosting (31 Aug 2026)"
@@ -37,6 +39,7 @@ The wiki sources from How I AI span its range: a **guest worked-example** (Maril
 
 ## Appears in this wiki via
 
+- [[2026-05-11-nystrom-how-i-ai-spec-driven-development-notion]] — guest demo: Ryan Nystrom (Notion) on an automated standup pre-read agent, the internal *Boxy* VM fleet invoked from task comments, and spec-first development with an `agent-specs` folder in the repo; plus the host's case that CI speed caps agent throughput.
 - [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system]] — guest demo: Daniel Blum's Cowork system — agent-maintained Notion board, a morning brief that asks about company jargon it doesn't know, a weekly self-improvement loop, and the Workstation onboarding plugin for all of Melio.
 - [[2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder]] — returning guest: [[Ryan Carson]] on managing 15 concurrent [[Devin]] agents at [[Untangle]] with a folder queue and a paper priority list, plus the show's most contrarian segment on why more shipped code does not produce a better product.
 - [[2026-08-05-vo-lennys-merge-mommy-ai-code-review-bot]] — host build: **Merge Mommy**, a risk-scoring PR reviewer built in one Codex session, escalating medium and high risk to Slack.

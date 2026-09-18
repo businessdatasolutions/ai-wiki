@@ -187,7 +187,7 @@ Fixed schema fields on the source page:
 - `kind: video`
 - `length: "~MM:SS minutes (transcript ~N lines)"` — duration first, line count parenthetical.
 - `raw: "../../raw/videos/<slug>.md"` — points to the canonical raw file.
-- `url:` is mandatory (videos are first-class web sources; the file we hold is just a transcript snapshot).
+- `url:` is mandatory (videos are first-class web sources; the file we hold is just a transcript snapshot). It is also what puts the **▶ Watch on YouTube** link on the published page: [`inject-video-link.ts`](extensions/inject-video-link.ts) renders `▶ Watch on YouTube · <author[0]> · <MM:SS from length:>` after the H1 whenever `url:` is a `youtube.com` or `youtu.be` address. It is automatic at build time — ingest writes nothing extra and does not repeat the URL in body prose. A wrong or missing `url:` is the only way a video page loses the link (see [§Frontend / GitHub Pages](#frontend--github-pages)).
 - `date_published:` taken from the raw file's `publish_date:` (legacy: `date published:`), ISO-normalised to date only.
 - `author:` taken from the raw file's `channel:` (legacy: `author:`) as a single-element array.
 - **No separate `channel:` field on the source page** — the convention is `author = channel` for videos. The skill's `channel_id:` and `channel_url:` are not promoted into source-page frontmatter; capture them in body if substantively useful.

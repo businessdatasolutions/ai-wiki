@@ -3,9 +3,9 @@ type: concept
 aliases: ["dynamic capabilities", "dynamic-capabilities", "Teece dynamic capabilities", "sense seize transform"]
 tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, microfoundations]
 confidence: 0.95
-last_confirmed: "2026-09-17"
-accessed_at: "2026-09-17"
-source_count: 41
+last_confirmed: "2026-09-18"
+accessed_at: "2026-09-18"
+source_count: 42
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -327,3 +327,9 @@ Until now this page rested entirely on conceptual work (Teece 1997, 2007, 2014) 
 **The measurement result matters independently of the paper's own thesis.** The three-cluster construct loads cleanly (Cronbach's α 0.832, rhoC 0.900, AVE 0.750), which is evidence that sense/seize/transform is a coherent latent factor and not an artefact of how qualitative researchers code their interviews. That is external support for the spine this page is built on — though note it is support for the **generic Teece three clusters**, since the instrument (Kump & Kessler 2019) contains nothing digital-specific. It says nothing about W&W's nine *digital* microfoundations, which remain qualitatively grounded.
 
 **The substantive finding is a readiness–implementation asymmetry.** The paper splits AI adoption into *acceptance* (AIAR — openness and readiness) and *intensity* (AIAI — how far AI is actually embedded in processes), and finds dynamic capabilities produce acceptance nearly twice as readily as implementation: DC→AIAR β = 0.523 against DC→AIAI β = 0.279. Only the implementation leg reaches economic performance. For this page the implication is that **dynamic capabilities are better understood as producing the conditions for adoption than adoption itself** — the capability generates willingness; converting willingness into embedded practice is a separate, harder, resource-bound step. Two caveats travel with this: the two adoption constructs correlate at HTMT 0.878, uncomfortably close to collinear, and the sample is 81% micro-firms under eleven employees. See [[2025-06-15-cimino-ai-adoption-sustainable-growth-smes|the source page]] for the full reliability read.
+
+## The rival firm-level lens: TOE (added 2026-09-18)
+
+The adoption literature's firm-level theory is not dynamic capabilities but the technology–organization–environment framework (see [[technology-adoption-theories]]). [[2024-08-13-schwaeke-new-normal-ai-adoption-smes|Schwaeke et al. (2024)]], mapping 106 studies of SME AI adoption, make the one explicit link between the two: their culture cluster credits leadership with "a strong role in the dynamic capabilities of firms through the ongoing development of new practices."
+
+The two answer different questions and should not be merged. TOE explains whether a firm **takes up** a technology, from its technological, organisational and environmental context. Dynamic capabilities explain whether a firm can **renew** itself. Several TOE clusters read naturally as W&W cells — the ecosystem cluster as *navigating-innovation-ecosystems*, the knowledge cluster as *improving-digital-maturity* — but the mapping is the wiki's, not the review's. A paper that fits both into one model (Nguyen, Bui et al. 2026) was identified on 2026-09-18 but could not be retrieved.

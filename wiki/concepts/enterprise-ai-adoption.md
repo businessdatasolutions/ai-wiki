@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-09-17"
-accessed_at: "2026-09-17"
-source_count: 122
+last_confirmed: "2026-09-18"
+accessed_at: "2026-09-18"
+source_count: 125
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -862,3 +862,14 @@ Readiness does not reach economic or collaborative performance at all; its colla
 **Why this earns a place here rather than a page of its own.** The AIAR/AIAI split is single-source, its two constructs correlate at HTMT 0.878 (marginal discriminant validity — see [[2025-06-15-cimino-ai-adoption-sustainable-growth-smes|the source page]]), and the sample is 81% firms under eleven employees. It is a sharp instrument on a narrow population, not yet a wiki concept. **If a second source corroborates the readiness/intensity distinction, it should be promoted to its own page** — it is the most precise available framing of why the adoption-versus-maturity gap persists.
 
 One tension worth keeping open: [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti's "mindset, not skillset"]] argues readiness and identity shift are the lever. Measured at firm level, readiness alone is the thing that does not work. The two are not straightforwardly opposed — Argenti's other prescriptions (obsess over evals, master your data) are implementation — but the headline claims point in different directions.
+
+## The theories the page had been missing (added 2026-09-18)
+
+Until this date the page described adoption through practitioner frameworks and the dynamic-capabilities spine, and carried none of the information-systems theories that predict adoption. Three peer-reviewed sources now bring them in; the theories themselves are on [[technology-adoption-theories]].
+
+- **The TOE map.** [[2024-08-13-schwaeke-new-normal-ai-adoption-smes|Schwaeke et al. (2024)]] sort 106 studies of SME AI adoption into eight technology–organization–environment clusters. Compatibility and culture lead (19 studies each), then resources (17); regulation and competition trail (8 each). Legal requirements and trend identification are the named blind spots.
+- **The two levels are not independent.** [[2025-01-08-khanfar-factors-influencing-ai-adoption-slr|Khanfar et al. (2025)]], reviewing 90 studies, mark which TOE factors reach past the firm's investment decision into the employee's decision to use: complexity, privacy, trust, task fit, top-management support, innovation culture, training, role clarity. ROI, cost and firm size stay firm-only. The evidence base closes in July 2022, before generative AI.
+- **Trying is the mechanism.** [[2025-07-25-albishri-breaking-barriers-genai-adoption|Albishri et al. (2025)]] test Rogers' diffusion attributes on generative-AI continued use among 342 managers: advantage and compatibility work through trialability, which then drives observed benefits, peer talk and continued use.
+
+**Where this sits against the rest of the page.** All three measure uptake: a firm's decision, or a person's intention. The previous section's finding — readiness does not reach the P&L, only implementation does — applies to them directly. Albishri draws organisational advice from continued-use intention alone, and the two source pages carry a `contradicts` edge over that inference. The theories explain who adopts. They say little about whether adoption pays, which is the question most of this page is about.
+

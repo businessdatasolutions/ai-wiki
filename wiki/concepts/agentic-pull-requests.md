@@ -3,9 +3,9 @@ type: concept
 title: Agentic pull requests
 aliases: ["agentic pull requests", "agentic PRs", "agent-authored PRs", "Agentic-PR", "auto-merge", "AI code review"]
 confidence: 0.85
-last_confirmed: "2026-09-16"
-source_count: 9
-accessed_at: "2026-09-16"
+last_confirmed: "2026-09-18"
+source_count: 10
+accessed_at: "2026-09-18"
 tags: [agentic-pr, aidev, auto-merge, code-review, rejection-rate, risk-scoring, msr-2026, merge-queue, review-bottleneck, technical-debt]
 relationships:
   - type: part-of
@@ -95,3 +95,7 @@ with the stated goal *"to be as out of the loop as possible."* A teammate's revi
 **The conflict is about what green CI certifies.** Making a passing pipeline the loop's terminal state assumes CI failure is the failure mode. [[2026-06-11-abujadallah-rejection-of-agentic-pull-request-fixes|Abujadallah et al.]] find **46.41%** of agent-proposed fixes rejected across four categories, only one of which is CI/test failure — *incorrect implementation* and *low priority* are both invisible to a green pipeline, and this page's existing `contradicts` edge to [[reward-hacking]] says a passing suite is precisely what an optimising agent produces either way. An auto-fix loop that halts on green therefore halts on the signal least able to distinguish a good fix from a plausible one.
 
 The reconciliation neither speaker offers is the one [[agent-oversight-and-delegation]] has converged on: **calibrate to consequence and reversibility.** Draft PRs for changes that reach production; auto-fix for CI-green plumbing. Both conventions are defensible inside their band and neither is defensible as a default.
+
+## CI speed as the ceiling on agent PR throughput (added 2026-09-18)
+
+[[2026-05-11-nystrom-how-i-ai-spec-driven-development-notion|Nystrom and Vo (How I AI, May 2026)]] put the constraint upstream of review. An agent facing an hour-long CI run "is just going to sit there and spin"; at three minutes, a human and "your little swarm of agents" get far more done. Vo cites Stripe's roughly 1,300 agent PRs a week — "you like cannot do that if your CI is slow" — and states it as a rule: there is "a true mathematical limit on your capacity to ship code to production that is a reflection of how fast your CI pipeline is." Notion's response is a project (Afterburner) to cut CI time to a quarter. The episode also shows an agent PR produced from a four-sentence task comment in about ten minutes, and the reviewer's reply to a CI type error was simply "I don't get it."

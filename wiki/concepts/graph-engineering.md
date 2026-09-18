@@ -3,9 +3,9 @@ type: concept
 aliases: ["graph engineering", "graph workflow", "agent graph", "workflow graph", "fan-out join router"]
 tags: [graph-engineering, loop-engineering, agent-orchestration, control-flow, fan-out, join, router, shared-state, determinism, debuggability, agent-swarm, agent-development-kit, google-cloud, multi-agent]
 confidence: 0.75
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
-source_count: 6
+last_confirmed: "2026-09-18"
+accessed_at: "2026-09-18"
+source_count: 7
 relationships:
   - type: part-of
     target: agent-harness
@@ -116,3 +116,7 @@ Held next to [[2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-
 The detail worth carrying is in the closed loop: the payload fed back is the **failure text**, not a boolean — *"we're going to see why it failed and feed that error back into memory."* A graph's function nodes carry deterministic logic; its agent nodes carry loops of this shape, and the linear/closed distinction is the same determinism-versus-adaptivity trade this page draws between graph and swarm, one level down.
 
 The framing is also a decent argument for the page's existence: *"you can just use the framework, but a great engineer will really understand the framework. Building a harness yourself is how you understand what's happening under the hood when things break."*
+
+## Three planning levels, and a contract at each (added 2026-09-18)
+
+[[2026-09-17-rashad-pydata-production-ready-agentic-harness|Rashad (PyData, September 2026)]] grades a harness's planning into three levels: a **fixed workflow** the engineer writes (by hand or in a graph library), **bounded planning** where the tasks are known and the model manages the queries routed to them, and a **fully dynamic task graph** built at runtime, which coding agents and open-ended research need. It is the same escalation as [[2026-09-03-thurium-wang-google-cloud-graph-engineering-101|Thurium and Wang's]] loop-to-graph path. He adds one design point: each level needs a contract, and at the dynamic end the contract governs which graph operations the model may perform. Versioned plans let a user steer mid-run without restarting; a fixed workflow cannot be edited in flight.

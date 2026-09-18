@@ -3,9 +3,9 @@ type: concept
 aliases: ["agentic engineering", "Agentic Engineering", "agentic-engineering", "agent engineering"]
 tags: [agentic-engineering, vibe-coding, software-3.0, ai-agents, agent-harness, software-engineering, hiring, karpathy, codex-case-study]
 confidence: 0.95
-last_confirmed: "2026-09-16"
-accessed_at: "2026-09-16"
-source_count: 59
+last_confirmed: "2026-09-18"
+accessed_at: "2026-09-18"
+source_count: 60
 relationships:
   - type: depends-on
     target: agent-harness
@@ -322,3 +322,15 @@ One artifact does three jobs: it is the **plan** (editable before the run), the 
 **The role framing that comes with it**, and its qualifier. *"The role of the software engineer is changing more to be almost like a product manager"* — but *"it still requires a lot of technical expertise and good taste and high agency"*, and *"having a software engineering background does help refine your prompts."* Hallie's analogy is the one [[software-3.0]] rests on: writing TypeScript without attending to the machine code it generates. Set against [[vibe-coding]]'s democratisation reading, this is a vendor advocate saying the abstraction rises but the expertise requirement does not vanish.
 
 **The independent-practitioner counterpart.** [[YK Sugi]]'s `claude-code-tips` repository is the corpus's first **non-vendor** codification of this discipline, and his tip 38 names the over-generation problem directly: code-generation models *"have a bias towards writing more code than needed."* His remedy is a commit filter rather than a prompt fix — *"if you generate 100,000 lines of code, you don't have to commit 100,000 lines of code… Just commit what you think is right"* — which is [[ai-generated-code-quality]]'s debt argument restated as an author's obligation.
+
+## The spec as the source of truth, inside a product codebase (added 2026-09-18)
+
+[[2026-05-11-nystrom-how-i-ai-spec-driven-development-notion|Nystrom (Notion, on How I AI, May 2026)]] describes spec-driven development as the working practice behind a large product's agent rewrite:
+
+- an `agent-specs` folder of markdown documents checked into the repository;
+- each spec written first — dictated, formatted by Codex against the existing spec library, revised — then handed to Codex with "build it";
+- specs that carry code pointers and a verification section, and a CLI built so the agent can run the product itself and read the transcripts.
+
+Changes go into the spec, and the spec's version history becomes the record of how the feature works.
+
+His claim about the role: engineers become "systems thinkers and architects", and "if like the verification's a little hazy, it's like that's the first thing you should be going and doing." It is the in-house counterpart of [[2026-03-23-wu-an-yc-momentic-qa-layer-ai-coding-era|Wu's truth-driven development]]. It disagrees with [[2026-05-08-running-an-ai-native-engineering-org|Anthropic's Claude Code team]] on one point: Anthropic took design docs out and put prototypes in, while Notion kept the document and made it the agent's input.

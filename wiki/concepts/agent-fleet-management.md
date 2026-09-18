@@ -3,9 +3,9 @@ type: concept
 title: Agent fleet management
 aliases: ["agent fleet management", "managing agent fleets", "agent manager", "human as agent manager", "parallel agents", "agent orchestration at scale"]
 confidence: 0.75
-last_confirmed: "2026-09-16"
-source_count: 11
-accessed_at: "2026-09-16"
+last_confirmed: "2026-09-18"
+source_count: 12
+accessed_at: "2026-09-18"
 tags: [agent-fleet, parallelism, cloud-agents, isolated-workspaces, decision-fatigue, priority-queue, span-of-control, delegation, playbooks, token-economics]
 relationships:
   - type: part-of
@@ -112,3 +112,7 @@ At that scale the page's organising question — **span of control** — stops b
 - **Learning is fleet-wide.** *"If they make a mistake, they learn it, and the next day not just them but the other 200,000 agents will have learned from that mistake."* Mechanism unstated — this is the least substantiated claim in the episode and the wiki should not infer online learning from it.
 
 **Caveats that matter at this scale.** The figures are self-reported on a venture-capital podcast. *"Agents instantiated per day"* is a **provisioning count, not a concurrency or utilisation measure**, and many of those lifetimes are minutes. None of the throughput-quality numbers this page tracks elsewhere — rejection rates, unfixed-defect rates — has an analogue here. See [[Kavak]] and [[agent-harness]].
+
+## An in-house VM fleet invoked from a task comment (added 2026-09-18)
+
+Notion's internal "Boxy" system, described by [[2026-05-11-nystrom-how-i-ai-spec-driven-development-notion|Nystrom on How I AI (May 2026)]], is fleet infrastructure built into a company's own tooling: VMs with Codex and Claude Code installed, invoked by @-mentioning Codex in a comment on a Notion task, returning a pull request with a preview URL and its own UI-verification screenshots. Nystrom manages the result the way [[2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder|Carson]] does — fire off several, then manage them "round-robin" rather than iterate beside one — and prefers Codex for it because it "can grind for like hours." Host [[Claire Vo]]'s prescription is organisational: a large engineering org without "a like VM strategy and background agent strategy" should get one, and fleet throughput is capped by CI speed (see [[agentic-pull-requests]]).

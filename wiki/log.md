@@ -10,6 +10,37 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-18] ingest | The adoption theories arrive, and two engineering talks on what surrounds the model
+
+Five sources in one batch: three peer-reviewed papers that fill the gap the 2026-09-17 `/wqa` query found (no TAM, UTAUT, Rogers or TOE anywhere in the wiki), and two videos the user added. New: [[2024-08-13-schwaeke-new-normal-ai-adoption-smes]], [[2025-01-08-khanfar-factors-influencing-ai-adoption-slr]], [[2025-07-25-albishri-breaking-barriers-genai-adoption]], [[2026-05-11-nystrom-how-i-ai-spec-driven-development-notion]], [[2026-09-17-rashad-pydata-production-ready-agentic-harness]], and the concept page [[technology-adoption-theories]].
+
+**How the papers were chosen.** An OpenAlex search (2024-06 onward) on the four theories came back dominated by education studies. Counting by population: of ~5,050 TAM/UTAUT × AI papers since 2025, ~1,810 mention students and ~680 teachers, against 330 employees, 242 managers, 216 firms and 106 SMEs (categories overlap). A second search excluding education produced the organisational shortlist; four were proposed, and the user supplied the paywalled one (Albishri).
+
+**Acquire.** Schwaeke (T&F, CC BY) and Khanfar (ECU repository, accepted manuscript, CC BY-NC) were downloaded through a headless browser after plain `curl` hit bot checks. `jeim-01-2025-0010en.pdf` renamed to its slug. All three converted with `pdftotext` into `raw/papers/<slug>.md` with a provenance header and data-quality notes. **Redaction:** every Albishri page carried an Emerald footer with a personal `casa_token` access token; those lines were stripped before landing. **Not acquired:** Nguyen, Bui et al. (2026), TOE + dynamic capabilities, *Green Technologies and Sustainability* — ScienceDirect blocks automated download, and there is no repository copy. It is recorded as an open question on the concept page. Both videos were fetched with the youtube-transcript skill after installing Playwright's matching Chromium build (1.60 wanted headless shell 1223). Proper nouns were ASR-cleaned, and the uncertain ones (Rashad's city, his company names) are left and listed in `notes:`.
+
+**Pre-flight findings worth keeping.** Khanfar's repository cover sheet gives a wrong published-version DOI (the correct one is on the same sheet). Schwaeke states its review window two ways and has a screening funnel that goes 305 → 317 → 106. Albishri reports H8b as supported although its sign is reversed, has HTMT up to 0.898, and has 35% entry-level "executives". All three are recorded on the source pages rather than silently corrected.
+
+**Neighbour-source scan.** The papers' W&W cells are mostly `contextual/*`, which match much of the corpus, so Path A was noise; candidates were narrowed on adoption-specific terms in sources citing [[enterprise-ai-adoption]] and [[dynamic-capabilities]]. **19 edges filed**:
+
+- **Schwaeke:** `supports` → Cimino, Carrier.
+- **Khanfar:** `supports` → Schwaeke, Krakowski, BBC AI Decoded; `contradicts` → Carucci (resistance as barrier vs data).
+- **Albishri:** `supports` → Schwaeke, Randell & Gousset; `contradicts` → Cimino (inferring value from continued-use intention).
+- **Nystrom:** `supports` → Wu & An, SEI/CMU, Vo loops, Carson; `contradicts` → Anthropic's Claude Code team (whether the design doc survives).
+- **Rashad:** `supports` → Kokane, Anthropic managed agents, Anthropic long-running agents, Chatterjee, Thurium & Wang.
+
+Rashad is untagged (harness internals).
+
+**Pages touched.**
+
+- New: the five sources and [[technology-adoption-theories]] (3 sources, confidence 0.8, quality 1.0).
+- Updated concepts, confidence unchanged on all: [[enterprise-ai-adoption]] (122→125), [[dynamic-capabilities]] (41→42), [[agent-harness]] (102→104), [[agentic-engineering]] (59→60), [[agent-fleet-management]] (11→12), [[agentic-pull-requests]] (9→10), [[graph-engineering]] (6→7), [[multi-agent-failure-modes]] (11→12).
+- Pointer added to the open questions of [[syntheses/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] (not a refresh; its source count is unchanged).
+- Entities: [[How-I-AI]] (6→7), [[Claire Vo]] (6→7), [[PyData]] (1→2, confidence 0.7→0.75).
+
+`index.md` has the five-source block and the concept bullet. Checks: `lint-page`, `lint-index-completeness` and `lint-dangling-authors` are clean; 0 dangling authors; the 14 new paper authors are all single-source.
+
+**Schema.** Asked whether ingest adds the ▶ Watch on YouTube link: it does, automatically — `extensions/inject-video-link.ts` (commit `bbbbe4b`) renders it from frontmatter `url:` at build time. CLAUDE.md documented it only under Frontend; a pointer now sits in the video contract's `url:` rule, where an ingest reads.
+
 ## [2026-09-18] ingest | The definition of an agent, from before there were LLMs
 
 Two chapter PDFs dropped into `raw/books/`: [[2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2]]. One combined source page, at the user's call — same book, same reading.

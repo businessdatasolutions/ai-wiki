@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.95
-source_count: 102
+source_count: 104
 relationships:
   - type: part-of
     target: ai-agents
@@ -994,3 +994,16 @@ The stated design goal is the same *durability* claim [[2026-09-14-google-cloud-
 The genealogy above begins with GPT-2 in 2019 as the v0 harness. That is where the *LLM* harness begins, not the agent loop. [[2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2|Wooldridge, 2009]], a textbook built on work from the late 1980s and 1990s, already decomposes an agent into a perception function (`see`), a state update (`next`) and an action-selection function (`action`) running in a cycle against an environment it only partly controls, and formalises the result as a **run**: an interleaved sequence of environment states and actions. A reason–act–observe trajectory is a run.
 
 It also contains the harness thesis in one line, attributed to Oren Etzioni (1996): ***"Intelligent agents are ninety-nine percent computer science and one percent AI."*** Wooldridge's gloss is that building an agent does not require solving planning or learning, and that *"most of what we do will be standard computer science and software engineering."* The 2026 sources on this page make the same argument with the model in the place of "AI". The ratio has not been measured then or now.
+
+## The harness built as a backend system, and a product team's second rewrite (added 2026-09-18)
+
+**A run as a state machine, and what gets committed before the action.** [[2026-09-17-rashad-pydata-production-ready-agentic-harness|Rashad (PyData, September 2026)]] builds a research agent's harness from one run up to a multi-user service, and spends his time where most harness writing does not:
+
+- the run's state machine (ready → claimed → active ⇄ waiting for tool or input → verified, failed, cancelled or budget-exhausted);
+- IDs on every run, step, operation and artefact;
+- **one database transaction that snapshots the model's decision, plus an outbox relay, before any action executes**, which gives a rule for each crash point about what is safe to repeat;
+- capacity arithmetic, in which a provider's tokens-per-minute limit and a measured retry probability — not the model — set how many runs can execute at once.
+
+It is [[2026-05-07-kokane-agent-harness-vs-systems-design|Kokane's]] "90% systems design" claim carried out in full. His summary of the ratio: "usually the LLM part is the smallest part and we are trying to build many things to control it because it's nondeterministic." He designs around three contracts — evidence, completion, action — in line with [[2026-05-07-chatterjee-anatomy-of-agent-harness|Chatterjee's]] contracts layer.
+
+**Why a product team rewrote its harness.** [[2026-05-11-nystrom-how-i-ai-spec-driven-development-notion|Nystrom (How I AI, May 2026)]] reports that Notion rebuilt the Notion AI harness — the second rewrite in about six months — after reaching "tool and instruction fatigue" with a bloated system prompt. The fix was to borrow skills and progressive disclosure from coding agents, and to write the specs for the new harness before any code. It is a first-party instance of the thinning pattern in [[syntheses/harness-thinning-what-persists|harness-thinning-what-persists]]: fewer tools always in context, more loaded on demand.

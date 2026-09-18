@@ -4,7 +4,7 @@ title: Multi-agent failure modes
 aliases: ["multi-agent failure modes", "MAST", "multi-agent system failure taxonomy", "why multi-agent systems fail", "agent coordination failure"]
 confidence: 0.85
 last_confirmed: "2026-09-18"
-source_count: 11
+source_count: 12
 accessed_at: "2026-09-18"
 tags: [mast, multi-agent, failure-taxonomy, coordination, inter-agent-misalignment, task-verification, data-processing-inequality, isolated-workspaces, caid, token-budget]
 relationships:
@@ -149,3 +149,7 @@ The replacement is a single long-running agent per customer with memory, evals, 
 Wooldridge's slogan for the second point, contrasting agents with objects: ***"Objects do it for free; agents do it because they want to."*** An agent that receives a request decides whether to act on it.
 
 The systems [[2025-03-17-cemri-why-do-multi-agent-llm-systems-fail|MAST]] studies keep the first difference and drop the second. They are typically built by one team, for one goal, with roles assigned in a prompt, which in Wooldridge's terms is a concurrent system of agents rather than a society of them. MAST's system-design and inter-agent-misalignment failures therefore arise **without** the conflicting interests the classical field was designed around. Two readings follow, and nothing in the corpus separates them: either run-time coordination is hard enough to fail on its own, or LLM agents reproduce some of the behaviour of self-interested ones (talking past each other, undoing each other's work) without having interests at all. Only the chapters on cooperation and negotiation, not yet supplied, would show what the classical toolkit offers here.
+
+## Compounding error handled by measurement, and the message board (added 2026-09-18)
+
+In the Q&A of [[2026-09-17-rashad-pydata-production-ready-agentic-harness|Rashad's PyData talk (September 2026)]], an audience member put the compounding problem numerically — a 96%-accurate step seven layers deep gives about 75%. Rashad's answer is to model each component's failure probability from observed runs rather than design it away. In one of his projects the component that failed most was memory, not the model. For agent-to-agent communication he recommends a shared message board every agent reads and writes, "like Reddit or Twitter", over more elaborate message-bus designs. His claim that this scales to tens of thousands of agents comes without a source, so it is recorded here as opinion.

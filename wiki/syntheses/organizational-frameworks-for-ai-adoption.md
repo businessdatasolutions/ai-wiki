@@ -19,7 +19,7 @@ relationships:
   - type: supports
     target: syntheses/harness-thinning-what-persists
     via: "sibling synthesis from the same 2026-07-15 video batch — the runtime-engineering (harness) lens and the organizational-frameworks lens both independently land on 'process redesign / organizational design is the load-bearing decision, not the technology'"
-accessed_at: "2026-09-17"
+accessed_at: "2026-09-18"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -214,6 +214,7 @@ Of the ten frameworks:
 
 **Still open:**
 
+- **The information-systems adoption theories are not in this synthesis** (added 2026-09-18). None of the eleven frameworks here is TAM, UTAUT, Rogers' diffusion of innovations or TOE. A 2026-09-17 audit found the gap; three peer-reviewed sources now fill it on a concept page, [[technology-adoption-theories]] ([[2024-08-13-schwaeke-new-normal-ai-adoption-smes|Schwaeke et al. 2024]], [[2025-01-08-khanfar-factors-influencing-ai-adoption-slr|Khanfar et al. 2025]], [[2025-07-25-albishri-breaking-barriers-genai-adoption|Albishri et al. 2025]]). They predict *uptake*, where the frameworks here prescribe *what to build*. A refresh would place TOE beside the decision tree as the firm-level determinants and TAM/UTAUT/DOI as the employee-level ones. This synthesis's findings and source count have not been refreshed for them.
 - **Cross-walk between MIT CISR Stages and Ransbotham/Kiron Augmented Learners 2×2.** The hypothesis (above, in the new disagreements section) is that **organizational learning capability is the upstream variable for the Stage 2 → 3 transition.** A worked-example test on a panel of firms tracked through both instruments would settle this.
 - **How does the firm-boundary decision (Nishar-Nohria) interact with maturity stage (MIT CISR)?** Is "Buy Outcomes" only viable from Stage 3+, or can a Stage 1–2 firm leapfrog by outsourcing the function entirely? This is the wiki's strongest *practitioner-relevant* unresolved question.
 - **Quantitative measurement of the compounding cycle.** Kiron-Schrage describe it qualitatively; Chatterjee's Compounding layer describes it qualitatively. Nobody has measured *the slope* of compounding — how much contract-score uplift per unit of telemetry-driven harness adjustment, or how much Augmented-Learner advantage growth per quarter. Without measurement, the "compounding cycle" is a plausible-sounding reframing rather than a quantified claim.
