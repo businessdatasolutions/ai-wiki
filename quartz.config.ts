@@ -4,6 +4,7 @@ import { InjectTypeTags } from "./extensions/inject-type-tags"
 import { InjectAliases } from "./extensions/inject-aliases"
 import { InjectStaleBanner } from "./extensions/inject-stale-banner"
 import { InjectConfidenceBadge } from "./extensions/inject-confidence-badge"
+import { InjectVideoLink } from "./extensions/inject-video-link"
 import { StripDataview } from "./extensions/strip-dataview"
 import { LatexNoSingleDollar } from "./extensions/latex-no-single-dollar"
 
@@ -78,6 +79,7 @@ const config: QuartzConfig = {
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       InjectConfidenceBadge(),
+      InjectVideoLink(),
       InjectAliases(),
       LatexNoSingleDollar(),
     ],
