@@ -1,26 +1,12 @@
 {
   "liveServer.settings.port": 5501,
   "workbench.colorCustomizations": {
-    "titleBar.activeBackground": "#a33e3e",
-    "titleBar.activeForeground": "#ffffff",
-    "titleBar.inactiveBackground": "#985252",
-    "titleBar.inactiveForeground": "#ffffff99",
-    "titleBar.border": "#b56565",
-    "commandCenter.background": "#ac5151",
-    "commandCenter.foreground": "#ffffff",
-    "commandCenter.border": "#ba6e6e",
-    "commandCenter.activeBackground": "#b56565",
-    "commandCenter.activeForeground": "#ffffff",
-    "commandCenter.activeBorder": "#c88b8b",
-    "commandCenter.inactiveForeground": "#ffffffb3",
-    "commandCenter.inactiveBorder": "#b15b5b",
-    "statusBar.background": "#a33e3e",
-    "statusBar.foreground": "#ffffff",
-    "statusBar.border": "#b56565",
-    "statusBarItem.hoverBackground": "#b15b5b",
-    "statusBarItem.activeBackground": "#b76868",
-    "statusBarItem.remoteBackground": "#b15b5b",
-    "statusBarItem.remoteForeground": "#ffffff"
+    "titleBar.activeBackground": "#FBE6E7",
+    "titleBar.inactiveBackground": "#FBE6E7",
+    "titleBar.activeForeground": "#1e1e1e",
+    "titleBar.inactiveForeground": "#6d6c6f",
+    "statusBar.background": "#FBE6E7",
+    "statusBar.foreground": "#1e1e1e"
   },
   "workbench.experimental.modernUI": false
 }
