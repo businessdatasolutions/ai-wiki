@@ -177,6 +177,7 @@ Benitez: *"We've got to adopt it. We've got to embrace it. Understanding its imp
 
 **Concepts touched substantively:**
 
+- **[[spec-driven-development]]** *(added 2026-09-19)* — Ivers's under-specification warning is the concept page's second claim: AI makes vague specs more costly, not less. [[2026-05-26-kmiecik-deepsense-spec-driven-development-reliable-ai-coding|Kmiecik]] makes the same point as *"any 'please implement' prompt… is some kind of a specification — just a really low quality one."*
 - **[[concepts/agentic-engineering|agentic-engineering]]** — the *AI native is not AI only* + engineering-principles-endure + measurement-discipline + 25,000-line vibe-coding-experiment + coder-vs-software-engineer anchors. Source-count: +1.
 - **[[concepts/vibe-coding|vibe-coding]]** — the institutional-altitude operational definition + Ivers's 25,000-line experiment + the *prototype-vs-production* boundary. Source-count: +1.
 - **[[concepts/agent-harness|agent-harness]]** — Ivers's framing of *AI coding agents and custom agentic frameworks* as *tightening the loop* via tool-access matches the wiki's harness vocabulary. Source-count: +1.

@@ -6,9 +6,9 @@ tags: [github, microsoft-subsidiary, github-copilot, copilot-coding-agent, agent
 parent: "[[Microsoft]]"
 website: "https://github.com"
 confidence: 0.85
-last_confirmed: "2026-09-03"
-accessed_at: "2026-09-03"
-source_count: 3
+last_confirmed: "2026-09-19"
+accessed_at: "2026-09-19"
+source_count: 4
 relationships:
   - type: part-of
     target: Microsoft
@@ -47,6 +47,10 @@ Secret scanning + code scanning, now with **Copilot autofix** (*"found means fix
 **GitHub states its own position on the harness boundary.** Worked out live: *"we have the GitHub Copilot harness for agents to run on code bases… GitHub Copilot itself is the harness… GitHub Copilot is the harness for the SDK to run agents with various models."* That puts GitHub alongside [[Anthropic]], [[OpenAI]] and [[Google]] in describing its product as the **harness** and the model as the swappable part underneath — see [[concepts/agent-harness|agent-harness]]. It also names a **GitHub Copilot SDK** as the programmatic entry point, and **squads** and **fleets** as shipping Copilot CLI features (see [[concepts/agent-fleet-management|agent-fleet-management]]).
 
 **The advocacy team is openly behind on the vocabulary.** All three hosts disclaim confidence in the terms they are explaining, and the episode is candid about it: *"do I know anything?"* Worth recording on a vendor page, because it is a vendor's own developer-education function reporting that the terminology is outrunning the practice — including its own products' terminology.
+
+### Spec Kit
+
+GitHub's open-source toolkit for [[spec-driven-development]], and the one whose vocabulary the corpus's SDD taxonomy uses: a project-wide **constitution**, then **specify → plan → tasks → implement**. [[2026-05-26-kmiecik-deepsense-spec-driven-development-reliable-ai-coding|Kmiecik (deepsense.ai, May 2026)]] uses its names to describe the workflow common to all dedicated SDD tools, and groups it with Kiro and OpenSpec. He recommends OpenSpec over it for existing codebases, because Spec Kit and most others handle brownfield projects badly. A third-party account, not a GitHub source.
 
 ### State of the Octoverse
 

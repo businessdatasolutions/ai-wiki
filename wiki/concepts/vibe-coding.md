@@ -3,9 +3,9 @@ type: concept
 aliases: ["vibe coding", "Vibe coding", "vibe-coding", "vibe-code", "v-coding"]
 tags: [vibe-coding, agentic-engineering, software-3.0, ai-agents, accessibility, hobbyist-coding, karpathy, pm-tooling, prototype-as-influence-tool, december-2025-phase-change, replit, ai-native-builders, post-prompting]
 confidence: 0.95
-last_confirmed: "2026-09-16"
-accessed_at: "2026-09-16"
-source_count: 24
+last_confirmed: "2026-09-19"
+accessed_at: "2026-09-19"
+source_count: 25
 relationships:
   - type: instance-of
     target: software-3.0
@@ -154,3 +154,13 @@ Two things this settles, at least as far as one practitioner's position goes.
 **The counterweight comes from the vendor in the same conversation.** [[Lydia Hallie]] (Anthropic) declines the fully-democratised reading: *"I still feel like having a software engineering background does help refine your prompts, and you can tell Claude a lot better what you actually want it to do."* That is an Anthropic advocate, on a Google channel, telling the audience that the abstraction has risen without the expertise requirement disappearing — which lands on this page's standing open question about who the floor is actually raised for, and points the same way as [[2026-06-16-anthropic-economic-index-agentic-coding-returns-to-expertise|the returns-to-expertise finding]].
 
 Both are assertions in a vendor co-marketing episode with no measurements attached. What they add is a clean articulation of the boundary, from the two sides of it, in the same room.
+
+## Why it breaks at scale, in one sentence (added 2026-09-19)
+
+[[2026-05-26-kmiecik-deepsense-spec-driven-development-reliable-ai-coding|Kmiecik (deepsense.ai, May 2026)]] draws the same boundary as the section above — vibe coding is *"a great tool for quick prototypes, some scripts and fast PoCs"* and *"breaks down at scale"* — and adds a diagnosis the page did not have:
+
+> *"The AI did exactly what it was asked to, but what it was asked kept changing over time."*
+
+The problem is placed in usage, not in the model: the specification was never fixed, so each prompt redefined the target. That diagnosis points to a specific remedy rather than a general call for discipline, and the remedy now has its own page, [[spec-driven-development]]. His opening line gives the aggregate symptom: *"teams produce code faster but they create software slower."*
+
+The claim that vibe-coded quality gets *"worse and worse"* at scale cites unnamed studies and is not evidence on its own. The [[ai-generated-code-quality]] page holds the measured version.

@@ -319,6 +319,7 @@ And the final operational tricolon — the talk's most quotable summary line:
 
 **Existing pages (touched or referenced):**
 
+- [[spec-driven-development]] — *added 2026-09-19, when the concept page opened.* The talk's line that *"the Specs, combined with the agent rules and skills, are the source of truth"* is the page's third claim; GitHub Spec Kit's *constitution* is the same layer built into a tool.
 - [[Google]] — heavy: this is an inside-Google view of engineering practice; bumps `source_count` and adds the Developer Intelligence team as a body referent.
 - [[Google Research]] — moderate: the DORA programme + the broader Developer Intelligence research practice live here.
 - [[agentic-engineering]] — heavy: the talk is operationally the discipline at Google-Research scale.

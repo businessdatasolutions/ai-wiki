@@ -3,9 +3,9 @@ type: concept
 aliases: ["agentic engineering", "Agentic Engineering", "agentic-engineering", "agent engineering"]
 tags: [agentic-engineering, vibe-coding, software-3.0, ai-agents, agent-harness, software-engineering, hiring, karpathy, codex-case-study]
 confidence: 0.95
-last_confirmed: "2026-09-18"
-accessed_at: "2026-09-18"
-source_count: 60
+last_confirmed: "2026-09-19"
+accessed_at: "2026-09-19"
+source_count: 61
 relationships:
   - type: depends-on
     target: agent-harness
@@ -334,3 +334,12 @@ One artifact does three jobs: it is the **plan** (editable before the run), the 
 Changes go into the spec, and the spec's version history becomes the record of how the feature works.
 
 His claim about the role: engineers become "systems thinkers and architects", and "if like the verification's a little hazy, it's like that's the first thing you should be going and doing." It is the in-house counterpart of [[2026-03-23-wu-an-yc-momentic-qa-layer-ai-coding-era|Wu's truth-driven development]]. It disagrees with [[2026-05-08-running-an-ai-native-engineering-org|Anthropic's Claude Code team]] on one point: Anthropic took design docs out and put prototypes in, while Notion kept the document and made it the agent's input.
+
+## Spec-driven development gets its own page (added 2026-09-19)
+
+The specification half of this discipline now has a page: [[spec-driven-development]]. It opened when [[2026-05-26-kmiecik-deepsense-spec-driven-development-reliable-ai-coding|Kmiecik (deepsense.ai, May 2026)]] supplied what the corpus's earlier SDD sources lacked — a taxonomy of how long a spec lives (spec-first, spec-anchored, spec-as-source) and a list of costs. Notion's practice in the section above is spec-anchored in that taxonomy.
+
+Two points bear on this page directly.
+
+- **The review inversion has an upstream variant.** Kmiecik agrees that *"your job here shifts from typing the code to reviewing the code"*, but places the most important review earlier: on the spec, before the plan and the code are generated from it. SDD is an attempt to move part of the review from code to spec, where it is cheaper. Whether total review time falls is not measured, and Kmiecik also reports that spec, plan and task files multiply quickly.
+- **The maintenance tax applies to the spec layer too.** His advice on GitHub Spec Kit's *constitution* — check whether each item changes the output, *"if you put there some things that don't make a change, then it's only a noise in the context"* — is the same discipline this page records for skill files, one layer up.

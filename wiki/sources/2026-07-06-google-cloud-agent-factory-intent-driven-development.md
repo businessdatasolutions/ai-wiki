@@ -210,7 +210,7 @@ A small moment, but it is the corpus's clearest statement that the automation bo
 
 ## Linked entities and concepts
 
-- Concepts: [[agent-oversight-and-delegation]], [[agent-harness]], [[agent-fleet-management]], [[agentic-engineering]], [[agentic-pull-requests]], [[ai-generated-code-quality]], [[vibe-coding]], [[software-3.0]], [[graph-engineering]], [[small-language-models]], [[attack-surface-management]]
+- Concepts: [[spec-driven-development]], [[agent-oversight-and-delegation]], [[agent-harness]], [[agent-fleet-management]], [[agentic-engineering]], [[agentic-pull-requests]], [[ai-generated-code-quality]], [[vibe-coding]], [[software-3.0]], [[graph-engineering]], [[small-language-models]], [[attack-surface-management]]
 - Entities: [[Lydia Hallie]], [[YK Sugi]], [[Smitha Kolan]], [[Anthropic]], [[Claude Code]], [[Google]], [[GitHub]]
 - **Dangling** (single-source mention, deferred): Claude Design, dynamic workflows, Vertex AI Model Garden, Gemini Enterprise Agent Platform, Fable 5, Rapier, `claude-code-tips`
 

@@ -88,7 +88,8 @@ The full auto-generated transcript, 459 segments, with the channel's chapter mar
 ## Linked entities and concepts
 
 - Entities: [[How-I-AI]], [[Claire Vo]], [[OpenAI]] (Codex)
-- Concepts: [[agentic-engineering]], [[agent-fleet-management]], [[agentic-pull-requests]], [[agent-harness]]
+- Concepts: [[spec-driven-development]], [[agentic-engineering]], [[agent-fleet-management]], [[agentic-pull-requests]], [[agent-harness]]
+- *Added 2026-09-19:* [[spec-driven-development]] now has its own page. In its taxonomy, Notion's `agent-specs` folder is **spec-anchored** — specs committed next to the code and kept in sync — which is where [[2026-05-26-kmiecik-deepsense-spec-driven-development-reliable-ai-coding|Kmiecik]] places most dedicated tools.
 - **Dangling** (single-source mention, deferred): Ryan Nystrom (Notion; co-founder of Campsite). Notion as an organisation has no entity page.
 
 ## Scope and reliability

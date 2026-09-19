@@ -186,6 +186,7 @@ Atypical Series A structure named on-stage: *"instead of having a board member o
 
 **Concepts touched substantively:**
 
+- **[[spec-driven-development]]** *(added 2026-09-19)* — Wu's *truth-driven development* is the **spec-as-source** level of the concept page's taxonomy. [[2026-05-26-kmiecik-deepsense-spec-driven-development-reliable-ai-coding|Kmiecik (May 2026)]] calls that level *"still something aspirational — it doesn't work yet"*; the disagreement is recorded on both pages.
 - **[[concepts/agent-harness|agent-harness]]** — verification harness as structurally separate from coding-agent harness; MCP as the inter-harness protocol. Source-count: +1.
 - **[[concepts/agentic-engineering|agentic-engineering]]** — truth-driven / spec-driven development as the central rhetorical claim; the 10× counter-thesis as productive contradiction with [[concepts/durable-skills|the 1,000× thesis]]. Source-count: +1.
 - **[[concepts/agent-development-lifecycle|agent-development-lifecycle]]** — evals/specs as load-bearing artifacts; vendor-product instantiation. Source-count: +1.

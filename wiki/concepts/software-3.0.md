@@ -3,9 +3,9 @@ type: concept
 aliases: ["software 3.0", "Software 3.0", "software-3.0", "LLM as computer", "LLMs as a new computer", "context window as program", "prompting as programming"]
 tags: [software-3.0, software-2.0, software-1.0, llm-paradigm, prompting, context-window, ai-engineering, karpathy]
 confidence: 0.88
-last_confirmed: "2026-09-16"
-accessed_at: "2026-09-16"
-source_count: 10
+last_confirmed: "2026-09-19"
+accessed_at: "2026-09-19"
+source_count: 11
 relationships:
   - type: instance-of
     target: generative-ai
@@ -170,3 +170,11 @@ The consequence she draws is a role claim — *"the role of the software enginee
 **The qualifier is what keeps it from being a deskilling claim**, and it is the part to carry forward: *"we still definitely need the technical expertise… it still requires a lot of technical expertise and good taste and high agency."* The compiler analogy cuts both ways — nobody reads the machine code, but writing good TypeScript is not easier than writing good assembly was, it is differently demanding. Compare [[ai-deskilling]], which holds the opposing evidence, and [[expert-generalist]], which describes the shape of the expertise the analogy implies.
 
 A vendor advocate's framing in a co-marketing episode, with no evidence attached. Its value here is that the analogy this page constructed is now independently arrived at by someone building the tooling, which is weak corroboration of the framing and none at all of the outcome.
+
+## Spec-as-source: the thesis taken literally, and judged not ready (added 2026-09-19)
+
+[[2026-05-26-kmiecik-deepsense-spec-driven-development-reliable-ai-coding|Kmiecik (deepsense.ai, May 2026)]] opens with [[Andrej Karpathy]]'s 2023 remark that *"the hottest new programming language is English"*, then qualifies it: English is now the most common language for programming, *"but we shouldn't forget that it's not replacing the software development. The hard part, like deciding what to build, what done looks like, it's still there."*
+
+His taxonomy of [[spec-driven-development]] contains this page's thesis as its last level. **Spec-as-source** maintains only the natural-language spec and treats generated code *"like compiled binaries"* — Software 3.0 taken literally, with the English document as the program. His verdict: *"still something aspirational… it doesn't work yet."* Most tools stop at spec-anchored, where the spec and the code are both kept and synchronised.
+
+That is a practitioner's judgement of how far the abstraction has actually risen, and a useful check on the compiler analogy in the section above. The analogy says nobody reads the machine code. Kmiecik's point is that in 2026 people still have to keep the code, because regenerating it from the spec is not reliable enough to depend on. [[2026-03-23-wu-an-yc-momentic-qa-layer-ai-coding-era|Wu (Momentic)]] takes the opposite view; the corpus holds no measurement that settles it.

@@ -10,6 +10,33 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-19] ingest | Spec-driven development gets a page, from an 18-minute talk that finally lists its costs
+
+One video, supplied by the user: [[2026-05-26-kmiecik-deepsense-spec-driven-development-reliable-ai-coding]] — Paweł Kmiecik (deepsense.ai), *Spec-Driven Development: The Discipline Behind Reliable AI Coding*. Checked for duplication by video id against `wiki/` and `raw/` twice (on 2026-09-16 when first asked, and again today before fetching); clean both times. New concept [[spec-driven-development]].
+
+**Acquire.** Only an auto-generated track exists. The speaker's name and employer were garbled ("Pavo Kitik", "Dibson's AI") and are corrected from the channel description. Tool and format names were corrected from context ("Cairo" → Kiro, "opensp spec" → OpenSpec, "ears" → EARS, "gerkin" → Gherkin, "spec anort" → spec-anchored, "VIP coding" → vibe coding). One verb at 8:39 is left as `[steered?]`. Short ASR segments are grouped six to a paragraph. The talk is built on slides that the transcript does not contain; the source page says so.
+
+**Why this ingest opens a concept.** Spec-driven development had appeared substantively in five sources since March — Momentic's *truth-driven development*, Notion's `agent-specs`, SEI's under-specification warning, Forsgren & Macvean, and the Agent Factory's design-as-spec — plus passing mentions in O'Reilly's 2026 vocabulary and AWS's Kiro pitch. None defined the variants or listed the costs. Kmiecik does both, which gave the concept enough structure to stand on its own.
+
+**What the talk adds.**
+
+- A taxonomy by how long the spec lives: spec-first, spec-anchored, spec-as-source. Kmiecik says the last *"doesn't work yet."* The taxonomy appears to follow Birgitta Böckeler's (martinfowler.com, October 2025). He does not cite her and the corpus does not hold her piece, so the attribution is marked **unverified** on both pages.
+- A workflow common to Spec Kit, Kiro and OpenSpec: constitution, specify, plan, tasks, implement.
+- The costs: markdown sprawl, no standard, spec drift, greenfield bias, partial waterfall.
+- A diagnosis of vibe coding: *"the AI did exactly what it was asked to, but what it was asked kept changing over time."*
+
+**Neighbour-source scan — 6 edges on the new source.** `supports` → [[2026-05-11-nystrom-how-i-ai-spec-driven-development-notion|Nystrom]] (Notion's practice is spec-anchored), [[2026-05-21-sinclair-ivers-benitez-sei-cmu-ai-native-software-engineering|SEI]] (under-specification), [[2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer|Forsgren & Macvean]] (specs plus rules plus skills), [[2026-07-06-google-cloud-agent-factory-intent-driven-development|Agent Factory]] (intent-driven development; a wireframe used once is spec-first). `contradicts` → [[2026-03-23-wu-an-yc-momentic-qa-layer-ai-coding-era|Wu]] (whether spec-as-source works yet) and [[2026-05-08-running-an-ai-native-engineering-org|Anthropic's Claude Code team]] (whether the written document survives). Considered and not filed: [[2026-01-09-baron-signals-for-2026|Baron]] and [[2025-12-02-allen-brozovich-davis-aws-reinvent-advanced-team-structures|AWS re:Invent]], which name SDD without saying anything about it; both are listed on the concept page as mentions, not counted as sources.
+
+**Pages touched.**
+
+- New: the source page; [[spec-driven-development]] (6 sources, confidence 0.75, quality 0.99). Confidence is held at the vendor/anecdotal cap: six sources agree the practice exists and roughly what it looks like, none measures an outcome, and two disputes are open. The reasoning is on the page.
+- Backlinks to [[spec-driven-development]] added on the five counted sources, so `source_count` matches real inbound links.
+- Updated concepts, confidence unchanged: [[agentic-engineering]] (60→61), [[vibe-coding]] (24→25), [[agent-harness]] (105→106), [[software-3.0]] (10→11).
+- Updated entities: [[Andrej Karpathy]] (9→10; Kmiecik opens with his "hottest new programming language is English" line) and [[GitHub]] (3→4; a Spec Kit section).
+- Kmiecik, deepsense.ai, Kiro, OpenSpec, Spec Kit and Böckeler stay dangling (single source each).
+
+**Noticed, not changed.** [[Andrej Karpathy]] says he coined *vibe coding* "in 2024". The usual date is February 2025. Not corrected here because no source in this ingest bears on it; worth checking against the Karpathy sources in a lint pass.
+
 ## [2026-09-19] ingest | The agentic web gets a page, measured from the network that carries a fifth of it
 
 Two Cloudflare sources the user supplied after the morning batch: [[2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet]] (blog report) and [[2026-06-09-cloudflare-investor-day-2026]] (the 193-slide Investor Day deck the report draws its data from). New concept [[agentic-web]]; new entity [[Cloudflare]].

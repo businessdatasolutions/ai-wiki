@@ -4,9 +4,9 @@ kind: person
 aliases: ["Karpathy", "Andrej Karpathy", "@karpathy"]
 tags: [andrej-karpathy, ai-researcher, openai, tesla, eureka-labs, software-3.0, vibe-coding, jagged-intelligence, llm-wiki]
 confidence: 0.92
-last_confirmed: "2026-08-20"
-accessed_at: "2026-08-20"
-source_count: 9
+last_confirmed: "2026-09-19"
+accessed_at: "2026-09-19"
+source_count: 10
 relationships:
   - type: authored-by
     target: 2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering
@@ -25,6 +25,7 @@ The promotion is a one-off judgment call (the same caveat noted in the Jack Clar
 
 ## Further citations
 
+- [[2026-05-26-kmiecik-deepsense-spec-driven-development-reliable-ai-coding]] — Paweł Kmiecik (deepsense.ai) opens a talk on [[spec-driven-development]] with Karpathy's 2023 line *"the hottest new programming language is English"*, then qualifies it: English has not replaced software development, because *"deciding what to build, what done looks like"* is still the hard part. His taxonomy's last level, spec-as-source, is the [[software-3.0|Software 3.0]] thesis taken literally, and he judges it not yet workable.
 - [[2026-07-09-nyc-executive-forum-2026-a-leaders-guide-to-agentic-ai]] — Ishit Vachhrajani (AWS) cites Karpathy's framing that a job is "a bundle of task plus glue" (glue = judgment, relationships, understanding) to explain why automating a job's task bundle leaves durable human value in place — new to the wiki, on [[ai-employment-effects]].
 
 ## Career snapshot

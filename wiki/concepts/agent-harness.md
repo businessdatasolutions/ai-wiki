@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.95
-source_count: 105
+source_count: 106
 relationships:
   - type: part-of
     target: ai-agents
@@ -1019,3 +1019,9 @@ It is [[2026-05-07-kokane-agent-harness-vs-systems-design|Kokane's]] "90% system
 The deck cites Anthropic's engineering post on code execution with MCP. [[2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering|Everitt]] already lists Anthropic and Cloudflare code mode as a layer of the agentic-engineering stack. This is the rationale behind that entry.
 
 The same deck draws a consequence the harness literature has not: if every agent run generates its own small program, the harness needs a **fresh, isolated execution environment per run**. Cloudflare calls these *"infinite ephemeral applications, many per user."* On its arithmetic (1 billion knowledge workers × 10 agents ÷ 10 agents per CPU), that makes **execution CPU, not model GPU, the next capacity bottleneck**, at roughly 20× current global server CPU production. The ratios are the vendor's assumptions and the conclusion sells its product, but the design point stands: **code mode moves the harness's hard problem from context management to sandboxing.**
+
+## The spec layer as enforced context (added 2026-09-19)
+
+Dedicated spec-driven development tools are harness features under another name. [[2026-05-26-kmiecik-deepsense-spec-driven-development-reliable-ai-coding|Kmiecik (deepsense.ai, May 2026)]] describes the spec, plan and tasks as being *"injected into context"* by *"a given spec-driven development harness or tool"*, and the project-wide *constitution* (GitHub Spec Kit's name for it) as *"similar to AGENTS.md or CLAUDE.md but something more powerful, because it's built into the given tool. So the enforcement is higher."*
+
+That is a claim about harness reliability: context delivered by the tool's own workflow is followed more reliably than context in a file the agent is told to read. It is asserted, not measured, and Kmiecik concedes the limit in the same talk — **spec drift**, where *"non-deterministic LLMs can ignore what… our tools are telling them."* Stronger enforcement lowers drift but does not remove it. See [[spec-driven-development]].
