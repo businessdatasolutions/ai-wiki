@@ -10,6 +10,39 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-19] ingest | China's AI race from two newsrooms, security from inside Adobe, and marketing after the traffic went
+
+Four videos in one batch: [[2026-09-18-reuters-on-assignment-inside-chinas-ai-race]], [[2026-09-18-bloomberg-originals-how-china-plans-to-win-global-ai-race]], [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook]] and [[2026-09-10-alim-pydata-ai-security-paradox-asymmetric-threats]]. No new concept or entity pages.
+
+**Acquire.** Fetched with the youtube-transcript skill via `.venv/bin/python` (a bare `python` is not on PATH). All four transcripts complete to within 30 s of runtime, with no duplicated segments. Two scraper artefacts, both cleaned on landing: every segment carried a screen-reader duration prefix ("22 minutes, 1 second …"), and YouTube chapter labels ("Chapter 4: Rising performance of Chinese AI") had leaked into the caption text. A regex strip over-matched on the first pass (it swallowed "Chinese AI" from one line); it was redone with exact chapter titles. HubSpot's labels were YouTube auto-chapters that did not match the talk's own structure, and were dropped rather than reconstructed. `duration:` came back null on all four and was computed from `length_seconds`. Bloomberg's track is **manual** captions; the other three are ASR and were name-cleaned, with unverified items listed in each raw file's `notes:` (the Reuters host's name, the Polsia founder, the incident Alim cites).
+
+**What the batch adds.**
+
+- **China, from sources with no stake.** Reuters' correspondents give the corpus its first description of **how Chinese models are tested before release** (CAC-coordinated pre-release review, with little in-lab testing). That partly closes the gap [[ai-sovereignty]] had marked as its largest, which until now had only a CGTN-co-produced account. They also give the most defensible position on distillation: widespread, forced by compute scarcity, share undeterminable.
+- **Bloomberg's four data points**: OpenRouter usage of Chinese models overtaking US models in June 2026; a single-task cost test ($50 / $12 / $4); the Polsia switch; and **OpenAI's GPT-5.6 Luna price cut**. The last is recorded on [[open-source-ai]] as the first observed reversal of the cost driver behind open-model migration. The page's confidence is unchanged (0.90), because OpenRouter over-represents cost-sensitive traffic.
+- **AppSec from inside Adobe.** Security, SRE and compliance guidance compete for the coding agent's context window and degrade the product. This is the organisational counterpart to Gloaguen et al.'s context-file result, filed on [[ai-generated-code-quality]].
+- **A marketing function for the first time.** HubSpot lost 80% of its traffic while growing leads 20%, and *"when the cost of production is free, judgment is the only thing that has a price."* Filed on [[durable-skills]] next to Alim's version of the same claim (the taste profile and the eval rubric as the two operational forms).
+
+**Neighbour-source scan.** Path A was noise again: the cells in play match 50–90 sources each. Candidates were narrowed on the concepts each source touches and on topic terms (China/open weights, prompt injection/least privilege, taste/sameness/AI search). **19 edges filed**:
+
+- **Reuters:** `supports` → Ognibeni, Frey, Ng, Sundararajan.
+- **Bloomberg:** `supports` → Delangue, Ng, Covello, Ognibeni, Reuters.
+- **Alim:** `supports` → Veracode, Liu et al., Gloaguen et al., IMDA, Belcak et al.; `contradicts` → Mozilla/Grinstead on whether AI favours attacker or defender.
+- **HubSpot:** `supports` → Ognibeni (the search-funnel prediction arriving), HubSpot × Claude, Mollick, Dell'Acqua et al.
+
+Considered and skipped: the AI Index 2026 (gap "effectively closed" versus Bloomberg's "still on top"; framing difference, not a conflict), Kilpatrick (cites OpenRouter as a signal but makes no shared claim), and Anand & Wu (microexperiments, too indirect for the sprint model).
+
+**Tags.** Reuters `contextual/external-triggers`; Bloomberg adds `digital-seizing/balancing-digital-portfolios` (the Polsia rebalancing); Alim `contextual/internal-barriers` + `digital-transforming/improving-digital-maturity`; HubSpot `contextual/external-triggers` + `digital-seizing/strategic-agility` + `digital-seizing/rapid-prototyping`, with a **`roles:` override** `[cmo, ceo, cso, product-manager]`, because the inherited cell defaults do not include the CMO at all.
+
+**Pages touched.**
+
+- New: the four sources.
+- Updated concepts, confidence unchanged on all: [[open-source-ai]] (16→18), [[ai-sovereignty]] (6→8), [[foundation-models]] (24→25), [[responsible-ai]] (28→29), [[ai-generated-code-quality]] (6→7), [[attack-surface-management]] (4→5), [[agent-oversight-and-delegation]] (15→16), [[small-language-models]] (5→6), [[durable-skills]] (46→48), [[generative-ai]] (22→23), [[enterprise-ai-adoption]] (125→126).
+- Entities: [[PyData]] (2→3, confidence 0.75→0.8), [[OpenAI]] (19→20, GPT-5.6 Luna), [[Anthropic]] (27→28, Polsia).
+- Housekeeping: duplicated headings removed on [[foundation-models]] and [[responsible-ai]] (`## Debates and supersession`) and on [[durable-skills]] (`## Related concepts`). [[responsible-ai]] still carries one pre-existing broken body wikilink that this ingest did not introduce.
+
+**Checks.** `lint-page` is clean on all 18 touched content pages; `lint-index-completeness` 0 missing; `lint-dangling-authors` 0; `lint-confidence` clean. **HubSpot as an organisation** is now the subject of two sources (this talk and the Claude customer story) with no entity page. It is not an author, so the promotion rule does not force it; it is noted as a candidate.
+
 ## [2026-09-18] ingest | The adoption theories arrive, and two engineering talks on what surrounds the model
 
 Five sources in one batch: three peer-reviewed papers that fill the gap the 2026-09-17 `/wqa` query found (no TAM, UTAUT, Rogers or TOE anywhere in the wiki), and two videos the user added. New: [[2024-08-13-schwaeke-new-normal-ai-adoption-smes]], [[2025-01-08-khanfar-factors-influencing-ai-adoption-slr]], [[2025-07-25-albishri-breaking-barriers-genai-adoption]], [[2026-05-11-nystrom-how-i-ai-spec-driven-development-notion]], [[2026-09-17-rashad-pydata-production-ready-agentic-harness]], and the concept page [[technology-adoption-theories]].

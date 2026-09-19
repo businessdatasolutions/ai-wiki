@@ -5,9 +5,9 @@ aliases: ["OpenAI"]
 tags: [openai, ai-lab, foundation-models, chatgpt, gpt-4, gpt-5, codex, agentic-engineering, sora, custom-gpts, public-benefit-corporation, nonprofit-foundation]
 since: 2015
 confidence: 0.95
-last_confirmed: "2026-06-23"
-accessed_at: "2026-06-23"
-source_count: 19
+last_confirmed: "2026-09-19"
+accessed_at: "2026-09-19"
+source_count: 20
 relationships:
   - type: published-by
     target: 2025-10-05-patwardhan-et-al-openai-gdpval
@@ -41,6 +41,8 @@ Ries describes the OpenAI history as *"a really hard case study to learn from be
 - **GPT-3.5 / ChatGPT** — the democratization breakthrough cited by [[2026-04-28-anand-wu-genai-playbook|Anand-Wu]] and the trigger for the [[generative-ai|GenAI]] adoption wave.
 - **GPT-4** — basis of the [[2026-04-28-dellacqua-jagged-technological-frontier|Dell'Acqua et al. 2026 BCG RCT]] and the [[2026-04-29-boussioux-crowdless-future|Boussioux et al. 2024 crowdless-future study]].
 - **GPT-5** — used by [[2026-02-11-lopopolo-codex-harness-engineering|Lopopolo's Codex team]] (Feb 2026) to generate the initial repository scaffold via Codex CLI.
+
+- **GPT-5.6 Luna** — per [[2026-09-18-bloomberg-originals-how-china-plans-to-win-global-ai-race|Bloomberg Originals (Sep 2026)]], launched in **July 2026** as OpenAI's most cost-efficient model. In Bloomberg's single-task test it built a small-business website for just over $4, against about $12 on Moonshot's Kimi K3 and about $50 on Claude Fable 5. A startup founder who had moved to Chinese open models on cost reports a price cut of about **80%** and began testing Luna again. It is the wiki's first recorded case of a frontier lab repricing in response to open-weight competition; see [[open-source-ai]].
 
 ## Products and tooling referenced in this wiki
 

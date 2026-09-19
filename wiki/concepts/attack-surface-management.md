@@ -3,9 +3,9 @@ type: concept
 aliases: ["attack surface management", "ASM", "external attack surface", "EASM", "external attack surface management"]
 tags: [attack-surface-management, cybersecurity, infosec, exposure-management, shadow-it]
 confidence: 0.75
-last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
-source_count: 4
+last_confirmed: "2026-09-19"
+accessed_at: "2026-09-19"
+source_count: 5
 relationships:
   - type: depends-on
     target: osint
@@ -68,6 +68,7 @@ Both sources converge on a posture: the future of cybersecurity belongs to organ
 ## Debates and supersession
 
 - **Open question — automation depth.** Both sources advocate automation but neither names a specific reference architecture for an ASM pipeline at production scale. The "AI-Augmented Offensive & Defensive Security" category named in TechLatest 2026 (LLMs + [[ai-agents]] correlating OSINT sources, generating attack graphs) is the plausible future of automated ASM but is still at vendor-narrative depth.
+- **Does AI favour the attacker or the defender? (added 2026-09-19)** [[2026-09-10-alim-pydata-ai-security-paradox-asymmetric-threats|Alim]] argues the attacker: recon and exploit generation are nearly free, while patching a large legacy estate is as slow as ever. [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Mozilla's]] roughly 500 bugs fixed in a month argues the defender. A working reconciliation is that both sides now find vulnerabilities cheaply, but only the defender still has to ship the fix, so the answer depends on patch velocity rather than detection. Neither source measures time-to-exploit against time-to-patch, which is the number that would settle it. **Open.**
 - **No supersession events yet.** Young concept page; no prior wiki claim to retire.
 
 ## Related pages
@@ -86,3 +87,12 @@ Two 2025 measurements add a surface that ASM's asset-discovery framing does not 
 **The flaw baseline.** [[2025-07-30-veracode-2025-genai-code-security-report|Veracode]]: **45% of AI-generated samples introduce OWASP Top 10 vulnerabilities**, with **Java at 72%** against Python's 38% and **XSS failing in 86%** of relevant samples — and, critically, performance **flat regardless of model size or training sophistication**. Security is not on the capability curve, so this is a standing exposure, not a transitional one. [[2026-03-30-liu-debt-behind-the-ai-boom|Liu et al.]] then show **22.7% of AI-introduced issues are still present at the latest repository revision**: the exposure is not being closed.
 
 For the merge-time control that operationalises this, see the *data security* dimension in [[agentic-pull-requests]].
+
+## The asymmetry, restated for the AI era (added 2026-09-19)
+
+This page's premise is that attacker and defender use the same tools, and the asymmetry lies in *"who runs them first and how often."* [[2026-09-10-alim-pydata-ai-security-paradox-asymmetric-threats|Alim (PyData, Sep 2026)]] argues AI tilts that asymmetry toward the attacker. Everyone got faster, but *"attackers gain infinite patience and machine speed — automated recon, tireless fuzzing, exploit generation … at near zero cost,"* while the defender's bottleneck was never discovery.
+
+His image is **the wounded buffalo circled by hyenas**: *"Everyone is quicker, but the asymmetry favors the pack."* The buffalo is any large firm with a big legacy estate: *"AI is actually making them more vulnerable just because patching is still slow even though we have AI"*. Patches must still be tested in lower environments and validated without breaking production.
+
+For ASM this shifts the load-bearing metric. The detection-first posture above assumes that finding exposure early is the bottleneck. If the attacker's reconnaissance is now continuous and free, the detection advantage narrows and **time from discovery to deployed fix** becomes the defender's real variable. Detection stays necessary, but it no longer differentiates. The counter-case is [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Mozilla]]; see *Debates*.
+

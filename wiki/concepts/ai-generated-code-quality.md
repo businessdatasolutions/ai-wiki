@@ -3,9 +3,9 @@ type: concept
 title: AI-generated code quality and security
 aliases: ["AI-generated code quality", "AI code security", "slopsquatting", "package hallucination", "AI technical debt", "AI-introduced defects"]
 confidence: 0.85
-last_confirmed: "2026-09-16"
-source_count: 6
-accessed_at: "2026-09-16"
+last_confirmed: "2026-09-19"
+source_count: 7
+accessed_at: "2026-09-19"
 tags: [code-quality, security, owasp, slopsquatting, package-hallucination, technical-debt, code-smells, supply-chain, static-analysis, flat-scaling]
 relationships:
   - type: part-of
@@ -74,6 +74,7 @@ Every other measure in this corpus improves with model generation — SWE-bench 
 - **Vendor interest.** [[2025-07-30-veracode-2025-genai-code-security-report|Veracode]] sells application security testing, and "AI writes insecure code and always will" is good for that business. The flat-scaling finding is corroborated in shape by [[2025-06-12-spracklen-package-hallucinations-code-generating-llms|independent academic work]], which is the main reason to take it seriously. **Open:** an independent replication of the 45% figure.
 - **Static analysis defines the defect.** The 484,366 figure is "issues a static analyser flags" — over-counting style, under-counting logic. And "verified AI-authored" depends on commit attribution, missing AI-assisted code committed under a human's name.
 - **Model vintages are 2024–early 2025** across all three studies. The mechanisms should hold; the specific rates will have moved and nobody has re-measured. **Open.**
+- **Is the flat security curve a capability limit or an incentive one?** Veracode's data cannot tell whether models are unable to generate secure code or simply were never trained to put it first. [[2026-09-10-alim-pydata-ai-security-paradox-asymmetric-threats|Alim]] argues the latter, on incentive grounds: *"secure by generation does not scale financially, but remediations do pay forever."* That is a claim about vendor motives with no pricing evidence behind it. But it predicts something checkable: security would move only if a buyer paid for it at generation time. **Open.**
 - **No source here reports a human baseline.** 45% insecure and 22.7% unfixed are alarming, but the corpus contains no comparable measurement of human-authored code under the same instruments. **This is the single largest interpretive gap in the concept.**
 
 ## Over-generation as a practitioner's tip, and the commit filter (added 2026-09-16)
@@ -89,3 +90,18 @@ His remedy is not a prompt technique, and that is what makes it worth recording 
 **The commit boundary is treated as the quality gate**, not the generation step. That is consistent with this page's finding that AI-introduced defects *persist* — debt rather than error — since anything that reaches the trunk is what will still be there later. It also reframes the throughput claims the corpus collects: lines generated and lines merged are different quantities, and practitioners who report the first are not reporting the second.
 
 Two caveats on the source. It is **vendor co-marketing** with zero measurements, and Sugi's own demo is a greenfield toy game where he explicitly does *not* read the code — his two-regime split is that casual one-offs need no review ([[vibe-coding]]) and *"a serious production code base"* gets a draft PR and a manual or AI review. The discipline is asserted, not demonstrated.
+
+## The view from inside a product-security team (added 2026-09-19)
+
+[[2026-09-10-alim-pydata-ai-security-paradox-asymmetric-threats|Alim (PyData, Sep 2026)]] is the first source here from **a large software company's own security function** rather than a benchmark or a repository study. Ammar Alim leads product security engineering at Adobe. He adds three things to the measurements above.
+
+**1. The flat curve, confirmed from practice.** *"We don't see any improvement in secure code generation,"* because models are *"trained on good code and bad code"* alike. That is the same mechanism Veracode proposes for the Java/Python spread, reported by someone who sees the output every day.
+
+**2. The token tax: who pays for the loop.** The economic structure the measurements imply but do not state: the same vendors sell generation, then scanning, then AI-driven fixes, each billed in tokens. *"The disease and the cure are sold by the same hand … No one paid for the code to be secured at the same moment as generated."* Read together with [[2026-03-30-liu-debt-behind-the-ai-boom|Liu et al.'s]] 22.7% never-fixed residue, the loop does not close. His image is *"digging a hole in the sand."* This is his argument, not a pricing analysis; see *Debates*.
+
+**3. Guidance competes for the context window, and loses.** The mitigation most teams reach for is to tell the agent to write secure code. Alim reports what happens when every function does the same thing:
+
+> *"The SRE team has some guidance for the agent, the security team has guidance for the agent, the compliance team has guidance for the agent … So the main point of the agent building software is gone, because the agent is now focused on security, compliance, reliability, performance … if you put too much security guidance it dominates the context window and it degrades [other] aspects of the software."*
+
+This is the organisational counterpart to [[2026-02-12-gloaguen-evaluating-agents-md-repository-level-context-files|Gloaguen et al.'s]] finding that repository context files raise cost by more than 20% without improving success, and it gives a cause the paper does not name. The guidance is written by **separate teams, each optimising its own concern**, so nobody owns the total. His conclusion is that prompt-level mitigation has a ceiling: *"we need models that generate as much secure code out of the box, not models that need a lot of babysitting."* If that is right, the **permanent cost** this page concludes with cannot be engineered away at the prompt layer either, only moved between review and context.
+

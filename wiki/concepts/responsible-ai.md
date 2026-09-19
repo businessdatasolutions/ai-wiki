@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
-source_count: 28
+last_confirmed: "2026-09-19"
+accessed_at: "2026-09-19"
+source_count: 29
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -13,8 +13,8 @@ relationships:
   - type: supports
     target: ai-employment-effects
     via: "labor-market disruption is an under-attended RAI concern"
-quality_score: 0.96
-quality_notes: ['2 near-empty section(s)', '1 broken body wikilink(s)']
+quality_score: 0.97
+quality_notes: ['1 near-empty section(s)', '1 broken body wikilink(s)']
 ---
 
 # Responsible AI
@@ -261,7 +261,6 @@ Her account of why it stays unheld is specific and is the governance-relevant pa
 The claim is unmeasured — an experienced adviser's observation from board programmes, delivered in a podcast interview. It is recorded here as a **named failure mode** rather than as a finding, and it is the only governance-layer blocker in the corpus that sits above the technical controls rather than among them.
 
 ## Debates and supersession
-## Debates and supersession
 
 - **Open vs. closed model risk framing.** Open-weight models are increasingly close to closed-weight in capability ([[foundation-models]]) — does that change the policy calculus on disclosure / weights release?
 - **Election misinformation impact.** AI-generated misinformation spread widely in 2024 elections, but its measurable impact remained unclear; many expected larger effects than were observed. Open question: is the saturation of fact-checking infrastructure containing AI-generated content, or is the impact lagged?
@@ -360,3 +359,14 @@ Most of this page treats governance *instruments* — frameworks, oversight, ris
 The transition between phases is the finding: a vendor's voluntary restraint was **superseded within months by a state instrument the vendor did not choose**, and the vendor's compliance route — withdraw entirely — was dictated by its own workforce composition rather than by the risk. His forecast is an admission of immaturity: *"we're in unchartered territory when it comes to who's going to be making the decisions… over the next year or two we're going to have more incidents like this where **we're going to be making it up as we go along**, and it's going to be both the government doing that and the platforms doing it."*
 
 **Comparative note, with a caveat.** He describes China as running *"more active algorithmic governance, where there's better visibility into how the algorithms are worked and governed,"* enforced *"through administrative directives rather than through a courtroom battle,"* and predicts governance settles there *"much sooner than in the EU, and certainly much sooner than the United States."* The episode is **co-produced with CGTN**, a Chinese state broadcaster, and the speaker advises the Internet Society of China — both disclosed on the source page. The wiki holds no independent source on Chinese AI-governance mechanics. Treat the comparison as a hypothesis. See [[ai-sovereignty]], which now holds the state-versus-platform material in full.
+
+## Who tests the model: state pre-release review vs. in-lab safety testing (added 2026-09-19)
+
+[[2026-09-18-reuters-on-assignment-inside-chinas-ai-race|Reuters' China correspondents]] supply the corpus's first description of how **Chinese** models are checked before release. The regime is state-run and pre-release. The **Cyberspace Administration of China** coordinates testing against internal benchmarks for *"political speech or censorship … child safety safeguards"*, and the industry ministry and the Ministry of Science and Technology add technical-safety benchmarks the models *"have to pass first before their release."*
+
+The contrast they draw is with **where the testing capacity sits**: *"there's not really a lot of independent testing by the Chinese AI labs … unlike in the US where … Anthropic and OpenAI have … huge amounts of compute and a ton of resources to dedicate to in-house safety testing."* Chinese policy analysts are pushing for in-lab testing for catastrophic, cyber, biological, chemical and nuclear risk *"in line with American standards."*
+
+That gives the page two ideal types it had not named. In one, **the state tests** against content and technical benchmarks it sets, and the lab is the subject. In the other, **the lab tests itself** against risk categories it largely defines, and the state is mostly absent; this matches the platform-held governance authority described in the section on the fifteen-year drift above. Neither, as described, covers the other's gap. The Chinese regime puts political content control alongside safety in one gate, and the US arrangement depends on labs choosing to spend compute on it. The correspondents also report a **bilateral track** forming: experts on both sides calling for *"nuclear weapons-style safeguards"*, and AI safety expected on the agenda of Treasury Secretary Bessent's pre-summit talks with Vice Premier He Lifeng. How far that goes is not known to the wiki.
+
+**Limit.** This is reporting, with no pass rates, enforcement cases or benchmark contents. See [[ai-sovereignty]] for how it bears on the CGTN-sourced account of Chinese governance.
+

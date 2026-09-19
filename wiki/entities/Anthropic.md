@@ -5,9 +5,9 @@ aliases: ["Anthropic", "Anthropic PBC", "Claude"]
 tags: [anthropic, ai-lab, foundation-models, claude, public-benefit-corporation, long-term-benefit-trust]
 since: 2021
 confidence: 0.95
-last_confirmed: "2026-09-16"
-accessed_at: "2026-09-16"
-source_count: 27
+last_confirmed: "2026-09-19"
+accessed_at: "2026-09-19"
+source_count: 28
 ---
 
 # Anthropic
@@ -47,6 +47,8 @@ Ries (who plays *"no important role"* but *"a very big role"* in the founding-ad
 
 - **WikiZZ / LLM WikiZZ** ([[2026-04-18-mysore-medium-wikizz-extending-karpathy-llm-wiki|Mysore 2026]]) — single-author open-source browser-only extension of Karpathy's LLM Wiki pattern that routes API requests via a Cloudflare Worker CORS proxy to **NVIDIA NIM, Anthropic, and Gemini** as user-selectable provider backends. The wiki's first **third-party-developer-tool-uses-Anthropic-API** mention in the [[concepts/llm-wiki|LLM Wiki]] cluster. Surfaced here as a one-line context note; the substantive treatment is on the source page.
 - **[[Khan Academy]]** ([[2026-07-14-khan-academy-ceo-the-real-ai-opportunity-is-in-boring-industries-sal-khan|Sal Khan interview, July 2026]]) — a **$1.2M/year** run rate; per Khan, Anthropic told the nonprofit it is "the top of the stack" among organizations leaning into agentic code review, with engineers "running five, six, seven, eight, nine, 10 agents simultaneously writing code, reviewing code."
+
+- **Polsia** ([[2026-09-18-bloomberg-originals-how-china-plans-to-win-global-ai-race|Bloomberg Originals (Sep 2026)]]) — a San Francisco agent-automation startup whose founder chose Anthropic at launch (*"I need to give my customers the absolute best"*) and left when viral growth pushed the bill to **$1–1.5M a month**. Moving to Chinese open models cut it to about $100k. The corpus's clearest case of the scale point at which a frontier API stops being affordable. Bloomberg's cost test priced one task at about $50 on Claude Fable 5, against about $12 on Kimi K3 and about $4 on OpenAI's GPT-5.6 Luna.
 
 ## Models referenced in this wiki
 

@@ -3,9 +3,9 @@ type: concept
 aliases: ["small language model", "small language models", "SLM", "SLMs", "SLM-first", "heterogeneous agentic systems"]
 tags: [small-language-models, slm, agentic-ai, ai-agents, inference-economics, edge-deployment, quantization, model-specialization, fine-tuning, open-weight-models, tool-calling, function-calling, heterogeneous-agents]
 confidence: 0.75
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
-source_count: 5
+last_confirmed: "2026-09-19"
+accessed_at: "2026-09-19"
+source_count: 6
 relationships:
   - type: instance-of
     target: foundation-models
@@ -120,3 +120,10 @@ And the migration path from an existing LLM agent, per Belcak et al. §6: **log 
 The claim is narrower and more testable than the SLM position paper's: nothing here says a small model is *as capable*, only that **per-invocation latency and cost multiply by the loop count**, so the cheapest model that clears the task bar wins on wall-clock and spend. It is the vendor's argument for Gemini 3.8 Flash as a daily driver, and it is the same reasoning [[agent-harness]] records under heterogeneous routing — with the loop count supplying the multiplier that makes the routing decision material.
 
 Note this is a vendor recommending its own cheaper tier, with no measurements attached.
+
+## A security practitioner's bet on small, local models (added 2026-09-19)
+
+[[2026-09-10-alim-pydata-ai-security-paradox-asymmetric-threats|Alim (PyData, Sep 2026)]] makes the SLM case from an unexpected direction, and labels it speculation: *"small language models that runs on consumer hardware is going to be the future … so small that … they run natively on macOS, on iOS, on your consumer laptops and phones."* His reason is competitive rather than technical. The frontier labs' moat is size, and *"that has not been working just because Chinese labs are able to produce very effective, smaller, much cheaper models,"* so *"the power is going to be taken away from large corporations and … be in the consumer's hands."*
+
+It adds no evidence to this page (see [[2025-06-02-belcak-nvidia-small-language-models-future-agentic-ai|Belcak et al.]] for the careful version), and confidence is unchanged. It is worth recording for its vantage: someone whose job is securing software sees local, owned models as the likely end state. That bears on the security argument [[open-source-ai]] records, where open models measured worse on package hallucination. If deployment moves to the device, that gap becomes an endpoint-security problem.
+

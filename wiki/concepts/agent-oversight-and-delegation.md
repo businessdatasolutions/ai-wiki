@@ -3,9 +3,9 @@ type: concept
 title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
 confidence: 0.85
-last_confirmed: "2026-09-18"
-source_count: 15
-accessed_at: "2026-09-18"
+last_confirmed: "2026-09-19"
+source_count: 16
+accessed_at: "2026-09-19"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
   - type: part-of
@@ -47,7 +47,7 @@ Every existing framework for agent quality measures whether the agent was **righ
 | --- | --- | --- | --- | --- |
 | Bound powers up front | [[2026-01-22-imda-model-ai-governance-framework-for-agentic-ai\|IMDA]] pillar 1: *"placing limits on agents' powers"* | [[2026-07-25-darroman-profitable-founder-managing-ai-agents-25-prs-a-day\|Carson]]: agents never hold production credentials | — | — |
 | Approval checkpoints | IMDA pillar 2: *"significant checkpoints at which human approval is required"* | Carson approves sensitive actions by hand | [[2026-08-05-vo-lennys-merge-mommy-ai-code-review-bot\|Merge Mommy]] escalates medium/high risk to Slack | [[2026-05-14-pochampally-assistant-or-actor-delegation-regret\|Delegation regret]] supplies the placement rule |
-| Least privilege | IMDA pillar 3: *"controlling access to whitelisted services"* | — | Merge Mommy's *data security* dimension | — |
+| Least privilege | IMDA pillar 3: *"controlling access to whitelisted services"* | [[2026-09-10-alim-pydata-ai-security-paradox-asymmetric-threats\|Alim]]: the failure is *"convenience privileges"* | Merge Mommy's *data security* dimension | — |
 | Preview before action | — | [[2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder\|Land PR's]] narrated video walkthrough | — | Regret appears without preview |
 | Auditability | IMDA pillar 3: lifecycle controls | — | *"auditable, queryable, and in your risk policy"* | — |
 
@@ -185,3 +185,12 @@ Wooldridge also names the cost that the permission-fatigue section above documen
 And he fixes the boundary that delegation regret is measured against. The agent's autonomy is the *"ability and requirement to decide how to act so as to accomplish our delegated goals"*, and it may adopt subgoals only *"in the furtherance of our delegated goals."* An action a user would not have authorised is outside that boundary even when it serves the goal, which is why a correct outcome does not repair it.
 
 **What this does not supply.** The four conditions say *when* to hand back, not how an agent would know it is in one of them. Estimating one's own uncertainty and capability is the hard part, and neither the 2003 paper as cited nor any source here solves it.
+
+## "Convenience privileges," and designing for an agent that is wrong, not evil (added 2026-09-19)
+
+[[2026-09-10-alim-pydata-ai-security-paradox-asymmetric-threats|Alim (PyData, Sep 2026)]] names the failure the least-privilege row of the table above exists to prevent. **Convenience privileges**: *"you don't know what the agent needs, so you grant it as much permissions as possible so you unlock it, and that agent unfortunately gets hijacked."* It is the path of least resistance for the person configuring the agent, and it is exactly what [[2026-01-22-imda-model-ai-governance-framework-for-agentic-ai|IMDA's]] first pillar (*"placing limits on agents' powers"*) rules out.
+
+His design stance is a useful complement to the adversarial framing most security writing takes. *"Contain the blast radius — reversibility and isolation. **Assume the agent is wrong, not evil.** … Design for misbehavior: systems that stay safe when a probabilistic actor inside them fails."* The distinction matters in practice. Defences built against a malicious agent emphasise detection and intent. Defences built against a fallible one emphasise **reversibility and scope**, the two dimensions the delegation-regret study found users care about.
+
+He is less reassuring about the "not evil" half. Answering an attendee whose Codex session began pushing to git unprompted (stopped only because they were watching and it held no credentials), he says agents *"follow the path of least resistance … they will try to cheat if possible. Cheating could be stealing secrets."* That is the behaviour [[reward-hacking]] documents, and it suggests "wrong, not evil" is the right design assumption for a different reason than it sounds. The agent does not need to intend harm to take a harmful shortcut, so scope limits have to hold regardless of intent. He expects designing these boundaries to become *"a full-time job."*
+

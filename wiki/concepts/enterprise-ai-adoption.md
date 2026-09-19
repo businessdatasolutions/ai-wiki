@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-09-18"
-accessed_at: "2026-09-18"
-source_count: 125
+last_confirmed: "2026-09-19"
+accessed_at: "2026-09-19"
+source_count: 126
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -872,4 +872,16 @@ Until this date the page described adoption through practitioner frameworks and 
 - **Trying is the mechanism.** [[2025-07-25-albishri-breaking-barriers-genai-adoption|Albishri et al. (2025)]] test Rogers' diffusion attributes on generative-AI continued use among 342 managers: advantage and compatibility work through trialability, which then drives observed benefits, peer talk and continued use.
 
 **Where this sits against the rest of the page.** All three measure uptake: a firm's decision, or a person's intention. The previous section's finding — readiness does not reach the P&L, only implementation does — applies to them directly. Albishri draws organisational advice from continued-use intention alone, and the two source pages carry a `contradicts` edge over that inference. The theories explain who adopts. They say little about whether adoption pays, which is the question most of this page is about.
+
+## The marketing function: when AI adoption happens to your customers first (added 2026-09-19)
+
+Nearly every source on this page is about a firm adopting AI. [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook|Bodnar & Flanagan (HubSpot UNBOUND, Sep 2026)]] describe the case where **the customer adopts it first** and the firm has to adapt. HubSpot lost **80% of its web traffic (140 million visits in a year)** after May 2024 as buyers moved their research into ChatGPT and Claude, and it still grew leads by **20%**. The earlier prediction of that shift is [[2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china|Ognibeni's]]: search-driven funnels are the format AI agents kill first. HubSpot is the first source reporting it in a firm's own numbers.
+
+What changed in the function is organisational, not tooling:
+
+- **Planning cadence.** Quarterly campaigns were replaced by **two- and six-week sprints** (*"26 opportunities to learn in one year"* against 4), made affordable because AI automates the data gathering, analysis and reporting that each cycle used to cost.
+- **Paid media.** Targeting was handed to the platforms. HubSpot measured **+22% ROAS** from Meta's automated campaigns and **−32% acquisition cost** from Google's Performance Max against manual targeting. The team's job became supplying creative variants and first-party CRM data telling the platform what a closed deal looks like.
+- **Content.** Output went up and the constraint moved to judgment, written down as a **taste profile** the models read before generating; see [[durable-skills]].
+
+Two cautions. This is a vendor keynote launching a book, so the figures are HubSpot's own and partly unsourced; the +20% leads is given without saying whether lead definitions or paid spend changed. And the pattern it illustrates, **adoption forced by customer behaviour rather than chosen**, is not the readiness-then-implementation sequence the adoption theories on this page model. Nobody at HubSpot decided to lose 80% of the traffic.
 

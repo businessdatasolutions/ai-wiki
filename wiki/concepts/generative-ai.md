@@ -3,9 +3,9 @@ type: concept
 aliases: ["GenAI", "generative AI", "generative artificial intelligence"]
 tags: [generative-ai, foundation-models, ai-adoption, ai-foundation, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-05-28"
-accessed_at: "2026-09-14"
-source_count: 22
+last_confirmed: "2026-09-19"
+accessed_at: "2026-09-19"
+source_count: 23
 relationships:
   - type: uses
     target: foundation-models
@@ -213,6 +213,7 @@ The choice between automation and augmentation thus has measurable consequences 
 
 - **Will inference-cost decline continue?** Hardware (-30%/yr) and energy efficiency (+40%/yr) trends support it; data-commons shrinkage (see [[responsible-ai]]) cuts the other way; energy-supply constraints (driving nuclear partnerships) are a third force.
 - **Test-time compute as a new scaling axis.** Promising but expensive (o1: 6× cost, 30× latency vs. GPT-4o). Open question: economic viability for routine enterprise use, or only for high-value reasoning tasks.
+- **Does abundant generation lower the value of content in aggregate? (added 2026-09-19)** [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook|Bodnar & Flanagan (HubSpot UNBOUND, Sep 2026)]] report a **4× increase in AI-assisted content** in two years with no matching rise in attention, and half-lives of under 24 hours for a LinkedIn post. If output grows faster than attention, the value of each generated item falls, and the productivity gains measured per worker overstate the gains to the firm. Their figures are unsourced vendor-keynote numbers. **Open, and not yet measured anywhere in the corpus.**
 - **Hype vs. value gap.** 71% adoption + 1% maturity + revenue gains mostly <5% per function. The dollar productivity story is real but smaller than the discourse implies.
 
 ## Related concepts
@@ -230,3 +231,15 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "generative-ai")
 SORT file.name ASC
 ```
+
+## The sea of sameness: what abundant generation does to a market (added 2026-09-19)
+
+Most of this page is about generative AI as a capability. [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook|Bodnar & Flanagan (HubSpot UNBOUND, Sep 2026)]] describe what happens to a **market** when every competitor has the same capability. *"Everybody here has access to the same tools, the same prompts, the same models. And it's not that the output AI has given us is bad. It's just that we see it everywhere. It is the **sea of sameness**."* The mechanism they give is statistical: a model *"will give you the median of everything it was trained on,"* and the median is where competitors already are.
+
+Two consequences follow in their account.
+
+1. **The scarce input moves from production to selection.** *"Making is no longer the problem. Choosing is the problem."* See [[durable-skills]] for the taste-profile practice this leads to.
+2. **Volume is no longer a strategy on its own.** Their quality-by-volume matrix puts high-volume, low-quality output in the *slop factory* and names the target *remarkable and relentless*: work that uses **unique data, customer stories and examples a general model cannot produce**, at the volume AI now allows.
+
+The underlying point is that a general-purpose model gives **no differentiation** to a firm that uses it as-is. That is the marketing version of the *"no company ever gained competitive advantage just by buying a ChatGPT … licence"* argument on [[enterprise-ai-adoption]]. Differentiation comes from what the firm feeds the model (proprietary data, written taste) and not from the model.
+

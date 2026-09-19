@@ -3,8 +3,8 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-09-15"
-source_count: 46
+last_confirmed: "2026-09-19"
+source_count: 48
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -15,9 +15,9 @@ relationships:
   - type: depends-on
     target: ai-benchmarks
     via: "measurement methodology — Vantage and similar protocols define new benchmark types for human skills (not model capability)"
-accessed_at: "2026-09-15"
-quality_score: 0.98
-quality_notes: ['2 near-empty section(s)']
+accessed_at: "2026-09-19"
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # Durable Skills
@@ -298,7 +298,6 @@ Asked directly which leadership skill will matter more in ten years than today, 
 **Confidence unchanged.** Nothing in the interview is presented with a method, a sample or a result; its value is that constructs the page previously held at one remove now have a primary source. See also [[strategic-foresight]] for her *wayfinding vs. pathfinding* distinction, which is the more novel contribution of the same episode.
 
 ## Related concepts
-## Related concepts
 
 - [[expert-generalist]] — the software-practitioner articulation: Fowler's trait-set is the developer-chair version of the durable-skills cluster.
 - [[jagged-frontier]] — the capability-ceiling counterpart: durable skills cluster on the rough side of the frontier; [[2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why|Guilbeault]] argues the cognitive reason the two line up.
@@ -339,3 +338,16 @@ A second result on this page's core question — what experience is *for* — co
 **The admission worth holding against the rest of this page.** Sundararajan names the durable bundle by function — *"verifying, being able to know when to trust the machine, what to delegate to the machine, how to exert the judgment that allows you to complement rather than be substituted"* — and then declines to specify it: *"**we haven't put our finger on exactly what that bundle is.**"*
 
 That is a useful counterweight. This page catalogues a great many confident enumerations — the ETS five, the 5 C's, the MGI Skill Change Index, the Vantage protocol — and a labour economist working directly on the question saying the bundle is not yet identified is evidence about the **state of the field**, not merely one more opinion within it. It does not refute the measurement work; it does suggest the convergence those frameworks appear to show may be partly terminological. See [[automation-vs-augmentation]] for the role-compression framing this sits inside.
+
+## "When the cost of production is free, judgment is the only thing that has a price" — two September 2026 statements (added 2026-09-19)
+
+Two unrelated practitioners, a marketing executive and a security leader, reached the same formulation of this page's central claim in the same fortnight. Each also gives it an operational form, which the practitioner statements above mostly lack.
+
+**Marketing: taste written down, not delegated.** [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook|Bodnar & Flanagan (HubSpot UNBOUND, Sep 2026)]] build the first stage of their marketing operating model on it. *"Making is no longer the problem. Choosing is the problem … **When the cost of production is free, judgment is the only thing that has a price.**"* Their reason taste stays human is specific: *"AI will give you the median of everything it was trained on. And that's where all of your competitors live."* The prescription is not to keep the AI away from creative work but to **encode** taste for it: *"You never outsource your taste to AI. You instill your taste to the AI."* The instrument is a **taste profile**, a living document of customer and brand context the model reads before every generation. That turns taste from a personal disposition, as [[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Mollick]] and others describe it, into **an organisational artefact that can be maintained, versioned and shared**. It is the durable skill made partly transferable. Whether that erodes the skill's scarcity is a question the talk does not ask.
+
+**Security: judgment and verification as the hiring criterion.** [[2026-09-10-alim-pydata-ai-security-paradox-asymmetric-threats|Alim (PyData, Sep 2026)]] makes the same argument about engineers: *"Anyone can generate … I can get my son Claude Code and he can generate. Do I trust his judgment? Do I trust his verification, his … engineering taste? No."* His operational form is **the rubric**. Work like a professor who sets the assignment and writes the grading criteria first: *"specify the ground truth, define what secure means precisely enough that a machine can check it, then build the evals."* His definition of the job reduces the durable skill to one sentence: *"someone who deeply understands the limitations of large language models and is able to mitigate those limitations."* His closing line: *"the edge will not belong to whomever generates the most. It belongs to those who can be trusted about what's real."*
+
+He also gives the page its clearest statement of **what to learn**, as a half-life argument. Tools last about 18 months; languages perhaps 5–10 years (his own admittedly unresearched estimates); foundations (how data is stored, processed and moved; how LLMs work *"at the statistical level"*; reinforcement learning) are the trunk of the tree, and the rest are leaves that fall every winter. Depth is durable partly because *"depth … is not on Reddit"*: it is under-represented in what models were trained on.
+
+**Where these fit.** Both land on the *Evaluation, not generation* section above: [[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork|Dell'Acqua et al.]] found AI lifts generated quality while human judgment keeps its value in selection, and both practitioners build procedures on that asymmetry. Neither adds measurement, so confidence stays at the cap. What they add is **two concrete forms the skill takes at work**, the taste profile and the evaluation rubric. Each is a written specification of judgment that a model can be held to, which is a more testable claim than "judgment matters."
+

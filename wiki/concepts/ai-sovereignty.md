@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI sovereignty", "sovereign AI", "digital sovereignty", "strategic autonomy in AI", "cultural autonomy", "full-stack sovereignty"]
 tags: [ai-sovereignty, sovereign-ai, digital-sovereignty, strategic-autonomy, own-vs-rent, cultural-autonomy, export-controls, industrial-policy, platform-governance, data-sovereignty]
 confidence: 0.85
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
-source_count: 6
+last_confirmed: "2026-09-19"
+accessed_at: "2026-09-19"
+source_count: 8
 relationships:
   - type: supports
     target: open-source-ai
@@ -69,10 +69,18 @@ The **Mythos** sequence is his worked case, and he reads it as two phases — pl
 
 [[2026-06-25-the-ai-factory-the-rewiring-of-indias-tech-industry|The FT's India film]] supplies the counter-case to the optimistic reading: *"offering up the scale of our population as a carrot to attract foreign tech companies is not a pathway to anything resembling sovereignty or resilience longer-term."* India lacks the chip and hardware base, and roughly *"$25bn worth of investment has left the country"* in early 2026 toward Taiwan and South Korea. The formulation *"India will become the use-case capital of the world… but not at the cost of sovereignty"* names the exact position a country can occupy while holding no autonomous layer at all.
 
+### 8. China's own framing: diffusion, not the frontier, and a say for the rest of the world
+
+Two September 2026 journalistic sources describe the Chinese position this page had seen only through a CGTN co-production. [[2026-09-18-reuters-on-assignment-inside-chinas-ai-race|Reuters' China correspondents]] say the two countries are *"running two very different races"*: the US is aiming for AGI and frontier dominance, while Beijing is pushing **diffusion** across every sector to lift productivity against a demographic decline. Chinese officials reject the "race" framing itself as a political tool for justifying export controls. [[2026-09-18-bloomberg-originals-how-china-plans-to-win-global-ai-race|Bloomberg Originals]] adds the external motive: cheap open models make *"the developing world … a tremendous battleground,"* offering *"an alternative to sort of US big tech"* to countries that *"want options"* amid trade wars, and leadership brings *"more say over the standards, over the rulemaking."*
+
+This matters for claim 1's layer-choice framing. For a country buying rather than building, **the supplier's strategy is part of the choice**. A cheap open model from a state that treats adoption abroad as strategy is a different dependency from a frontier API sold by a firm under US export law, even when the two are technically equivalent.
+
+Laurie Chen (Reuters) adds the view from outside both blocs: *"the vast majority of the world does not have the capacity to control advanced AI … a very small number of countries and very powerful corporations"* govern it, and the Global South *"should have a say."* This is the first statement in the corpus of sovereignty as **a voice in governance**, not ownership of a layer. It is a third meaning, alongside the economic (claims 1–4) and the cultural (claim 5).
+
 ## Debates and supersession
 
 - **Is layered sovereignty a genuine convergence or a shared euphemism?** [[2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai|Sundararajan]] and [[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Huang]] agree that sovereignty is partial and per-layer. Both, however, have reasons to prefer that answer: it is the answer that requires no one to stop buying frontier APIs. No source in the corpus argues the maximalist position seriously, so the agreement here is currently **unopposed rather than tested**.
-- **The China comparison arrives through interested channels.** The most favourable characterisation of Chinese algorithmic governance and industrial policy in the corpus comes from an episode **co-produced with CGTN**, a Chinese state broadcaster, from a speaker who discloses that he advises the Internet Society of China. The claims may well be accurate; the wiki holds no independent source on Chinese AI governance mechanics against which to check them. **This is the largest single gap on this page.**
+- **The China comparison arrives through interested channels.** The most favourable characterisation of Chinese algorithmic governance and industrial policy in the corpus comes from an episode **co-produced with CGTN**, a Chinese state broadcaster, from a speaker who discloses that he advises the Internet Society of China. The claims may well be accurate; the wiki holds no independent source on Chinese AI governance mechanics against which to check them. **This is the largest single gap on this page.** *Partly closed 2026-09-19:* [[2026-09-18-reuters-on-assignment-inside-chinas-ai-race|Reuters' correspondents]], who have no Chinese state co-producer, describe the mechanism: pre-release testing coordinated by the **Cyberspace Administration of China** (political speech, censorship, child safety), plus technical-safety benchmarks from the industry and science ministries, with little independent in-lab testing. This supports Sundararajan's "administrative, top-down" characterisation. It is still a description without pass criteria or enforcement data, so the gap is narrower but not closed.
 - **No measurement anywhere.** Every claim above is testimony or framing. There is no index, score, or dataset in the corpus that operationalises "sovereignty" for either states or firms. The one quantitative anchor — Hugging Face download share — measures model popularity, not autonomy.
 - **Open question: does cultural autonomy have a technical instrument?** Claim 5 identifies a motive without naming what satisfies it. Post-training on national corpora, sovereign fine-tunes, and curriculum-level controls are all plausible answers; the wiki holds no source that examines any of them.
 - **Open question: what does the EU do?** Sundararajan predicts the EU settles governance after China and before the US, and the corpus otherwise says almost nothing about European AI sovereignty despite it being an active policy area.
@@ -93,6 +101,8 @@ The **Mythos** sequence is his worked case, and he reads it as two phases — pl
 - [[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai]] — open weights, download share, "you can't study an API."
 - [[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness]] — open weights as American competitiveness.
 - [[2026-06-25-the-ai-factory-the-rewiring-of-indias-tech-industry]] — scale-as-leverage is not sovereignty; the extraction critique.
+- [[2026-09-18-reuters-on-assignment-inside-chinas-ai-race]] — the two-races framing from inside China, CAC pre-release testing, and the Global South's claim to a say.
+- [[2026-09-18-bloomberg-originals-how-china-plans-to-win-global-ai-race]] — the developing world as a battleground, and standard-setting as a motive.
 
 ## Mentioned in
 

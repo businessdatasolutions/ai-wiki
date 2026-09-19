@@ -3,11 +3,11 @@ type: concept
 aliases: ["foundation model", "foundation models", "FM", "frontier model", "frontier models"]
 tags: [foundation-models, generative-ai, ai-research]
 confidence: 0.88
-last_confirmed: "2026-09-04"
-accessed_at: "2026-09-15"
-source_count: 24
-quality_score: 0.98
-quality_notes: ['2 near-empty section(s)']
+last_confirmed: "2026-09-19"
+accessed_at: "2026-09-19"
+source_count: 25
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # Foundation Models
@@ -171,12 +171,11 @@ Second, it reframes what a large model's extra parameters are *for*. The paper's
 See [[small-language-models]] for the argument, the evidence, and where it does not hold.
 
 ## Debates and supersession
-## Debates and supersession
 
 - **"Frontier" vs. "foundation" framing.** "Frontier" emphasizes capability gap; "foundation" emphasizes adaptation role. Different policy/regulation implications — frontier-model bills target capability thresholds; foundation-model bills target the broader pretraining-then-adapt pattern.
 - **Compute-scaling sustainability.** Data-commons shrinkage (see [[responsible-ai]]) plus rising energy demands (driving nuclear-energy partnerships — Microsoft's Three Mile Island, Google's SMRs, Amazon's SMRs) raise structural questions about the 5-month-compute-doubling trajectory continuing.
 - **Open-weight closing the gap.** As open-weight performance catches closed-weight, the policy logic for restricting model release weakens — but so does the commercial moat for closed-weight providers. Open question how 2025–2026 plays out.
-- **Pricing power yes-or-no.** [[2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going|Evans (May 2026)]] argues no (commodity-utility, AWS-not-Windows analogy); Sam Altman's *AI-on-a-meter* line presumes yes. The wiki has no settled position; the question is one of the load-bearing open questions of 2026 model-economics.
+- **Pricing power yes-or-no.** [[2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going|Evans (May 2026)]] argues no (commodity-utility, AWS-not-Windows analogy); Sam Altman's *AI-on-a-meter* line presumes yes. The wiki has no settled position; the question is one of the load-bearing open questions of 2026 model-economics. *Evidence for "no" (2026-09-19):* [[2026-09-18-bloomberg-originals-how-china-plans-to-win-global-ai-race|Bloomberg Originals]] reports OpenAI launching GPT-5.6 Luna in July 2026 as its cheapest model and, per one customer, cutting prices by about 80% to match Chinese open models, which were ahead of US models on OpenRouter usage from June. A frontier lab repricing to meet open-weight competitors behaves like a commodity supplier, not a platform. It is one price move, and the same film shows the frontier labs keeping the top end (*"iPhone makes by far the most money"*), so the answer may be both: pricing power at the frontier, commodity pricing below it.
 
 ## Related concepts
 
@@ -198,3 +197,10 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "foundation-models") OR contains(tags, "frontier-models")
 SORT file.name ASC
 ```
+
+## Cost per task as a competitive axis (added 2026-09-19)
+
+[[2026-09-18-bloomberg-originals-how-china-plans-to-win-global-ai-race|Bloomberg Originals]] adds a rough **cost-per-task** comparison to the corpus, where earlier sources compare benchmark scores or price per token. The same small-business website was built for about **$50 with Claude Fable 5**, **$12 with Moonshot's Kimi K3** (a 2.8-trillion-parameter open-weight model), and **just over $4 with OpenAI's GPT-5.6 Luna**. It is one task, run once, and it prices the job, not the quality. But it states the trade-off buyers actually face: *"you don't need God to write your emails … it comes down to really a balance between cost and capability."*
+
+The film's performance chart has Chinese models closing on the US frontier through 2026 without matching it, consistent with the [[2026-04-30-ai-index-report-2026|AI Index 2026]] finding that the gap had "effectively closed", with the top US model ahead by 2.7% in March 2026 and the US still producing more top-tier models. The film's own summary: the US still has *"the biggest, smartest, baddest AI models,"* plus more compute and capital, while the competition that matters for adoption has moved to the price of good-enough.
+
