@@ -3,9 +3,9 @@ type: concept
 title: Agentic pull requests
 aliases: ["agentic pull requests", "agentic PRs", "agent-authored PRs", "Agentic-PR", "auto-merge", "AI code review"]
 confidence: 0.85
-last_confirmed: "2026-09-18"
-source_count: 10
-accessed_at: "2026-09-18"
+last_confirmed: "2026-09-19"
+source_count: 11
+accessed_at: "2026-09-19"
 tags: [agentic-pr, aidev, auto-merge, code-review, rejection-rate, risk-scoring, msr-2026, merge-queue, review-bottleneck, technical-debt]
 relationships:
   - type: part-of
@@ -99,3 +99,15 @@ The reconciliation neither speaker offers is the one [[agent-oversight-and-deleg
 ## CI speed as the ceiling on agent PR throughput (added 2026-09-18)
 
 [[2026-05-11-nystrom-how-i-ai-spec-driven-development-notion|Nystrom and Vo (How I AI, May 2026)]] put the constraint upstream of review. An agent facing an hour-long CI run "is just going to sit there and spin"; at three minutes, a human and "your little swarm of agents" get far more done. Vo cites Stripe's roughly 1,300 agent PRs a week — "you like cannot do that if your CI is slow" — and states it as a rule: there is "a true mathematical limit on your capacity to ship code to production that is a reflection of how fast your CI pipeline is." Notion's response is a project (Afterburner) to cut CI time to a quarter. The episode also shows an agent PR produced from a four-sentence task comment in about ten minutes, and the reviewer's reply to a CI type error was simply "I don't get it."
+
+## AI review on every merge request, at company scale (added 2026-09-19)
+
+The review-capacity bottleneck this page describes has a large-scale response on record. At Cloudflare, per [[2026-06-09-cloudflare-investor-day-2026|Cloudflare Investor Day 2026]], **every merge request** on the standard CI pipeline gets an AI review. Up to **seven specialised agents** (security, performance, code quality, documentation, compliance and others) run in parallel, and *"a top-tier model"* coordinates them and posts a single structured review. The first 30 days:
+
+| Reviews | Merge requests | Repos | Median time | Median cost | Coverage |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| 131,246 | 48,095 | 5,169 | 3 min 39 s | $0.98 | 100% |
+
+Two things this adds. First, a **unit cost** for machine review, under a dollar per review, which puts the economics of the gate on the page for the first time. Second, the architecture: **specialist reviewers per concern, merged by a coordinator**, which is the multi-dimension scoring of [[2026-08-05-vo-lennys-merge-mommy-ai-code-review-bot|Merge Mommy]] run as separate agents. It is the same answer Adobe's security leader reached from the other direction in [[2026-09-10-alim-pydata-ai-security-paradox-asymmetric-threats|Alim's talk]]. Loading every team's guidance into the *authoring* agent crowds its context, so checking each concern in a separate *reviewing* agent keeps it out of the authoring agent's context.
+
+What the deck does not report is the outcome: how many reviews found something real, how many were dismissed, and whether change failure rates moved. Coverage and cost describe the gate, not what it catches.

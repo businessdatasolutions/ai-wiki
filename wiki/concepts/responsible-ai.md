@@ -5,7 +5,7 @@ tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
 last_confirmed: "2026-09-19"
 accessed_at: "2026-09-19"
-source_count: 29
+source_count: 30
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -81,6 +81,7 @@ A new finding flagged in 2026: **improving one responsible-AI dimension can degr
 
 - A recent study cited in [[2026-04-28-ai-index-report-2025|AI Index 2025]] §3 Highlight 5 found that data-use restrictions on actively maintained domains in the C4 common-crawl dataset jumped from **5–7% (2023) to 20–33% (2024)** — websites are aggressively blocking AI training scrapers.
 - Implications: data diversity, model alignment, and scalability under data constraints — and possibly new approaches to training under data scarcity.
+- *(added 2026-09-19)* The same trend a year later, at network scale: since July 2025 [[Cloudflare]] has **blocked AI training crawlers by default** on new domains. A year on, [[2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet|Cloudflare's Content Independence Day report]] reports that 52% of crawler requests are for training (from 22%), and that publishers are using the scarcity to license content (50+ publisher–AI agreements since 2023). The commons is not only shrinking: parts of it are being **priced**, which changes who can afford to train on it. See [[agentic-web]].
 
 ### RAI is gaining academic attention
 

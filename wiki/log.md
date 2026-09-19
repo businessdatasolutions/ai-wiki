@@ -10,6 +10,41 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-19] ingest | The agentic web gets a page, measured from the network that carries a fifth of it
+
+Two Cloudflare sources the user supplied after the morning batch: [[2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet]] (blog report) and [[2026-06-09-cloudflare-investor-day-2026]] (the 193-slide Investor Day deck the report draws its data from). New concept [[agentic-web]]; new entity [[Cloudflare]].
+
+**Acquire.** The blog post was fetched with curl and only `div.article-content` was converted (BeautifulSoup + html2text; pandoc and markitdown are not installed). Lazy-load SVG placeholders were stripped, and the 7 chart images are linked but not transcribed. The deck was downloaded directly (45 MB, 193 pages), landed at `raw/reports/2026-06-09-cloudflare-investor-day-2026.pdf` (gitignored), and extracted per slide with `pdftotext` into one section per slide. **Seven slides were checked visually** because their data is image-only or the extraction scrambled their tables (6, 15, 50, 105, 123, 126, 183); their values are recorded in the raw file's `notes:`. Pre-flight: both complete; identity from the cover, byline and metadata; the deck is dated by its event (9 June 2026), not by its PDF creation date (18 June) or URL path (15 June). **Honest scoping: the deck has no spoken commentary**, and the CEO's section is one photograph.
+
+**The two sources are one pipeline.** The blog's methodology cites the deck as its data, so the edge between them is `depends-on`, not `supports`. Read together, the deck is where the claims are qualified: the "15 minutes in every hour on the open web" figure is a chart the deck itself labels *illustrative, not a single measured series*.
+
+**What they add.**
+
+- **The agentic web**, now a concept. It has five sources: the two Cloudflare pieces plus [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook|HubSpot]] from this morning, and [[2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china|Ognibeni]] and [[2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells|DFI]], which had predicted it. Key figures: non-human traffic above 50%, 52% of crawling for AI training, human traffic −35–40% in four industries, 50+ licensing deals that do not replace referral revenue, x402. **Confidence is held at 0.75**, because three of the five sources are vendors.
+- **The time-to-exploit chart** (2.3 years in 2018 to under 24 hours in 2026) half-answers the attacker-versus-defender debate opened on [[attack-surface-management]] this morning. It is recorded with a caution: **no source is cited on the slide.**
+- **Cloudflare as an AI-first operator.** Cloudflare OS (a skill-file context layer fed by a "magic inbox"), AI review on every merge request (131,246 reviews, median $0.98), G&A cut to 3–5% of revenue, and a sales model moving support roles into quota carriers. The safe-harbor slide also discloses a workforce reduction; the size is not given.
+- **Code mode** as a harness design argument (a 2.5M-token API against a 1M context window), and execution CPU as the next bottleneck.
+
+**Neighbour-source scan.** Path A was noisy as usual. Candidates came from Path B plus topic terms: crawl, zero-click, x402, code mode, and Cloudflare mentions, of which five older sources had them. **11 edges filed**:
+
+- **Blog:** `published-by` → Cloudflare; `depends-on` → the deck; `supports` → HubSpot, Ognibeni, AI Index 2025 (data commons), DFI.
+- **Deck:** `authored-by` → Cloudflare; `supports` → Alim (time-to-exploit), Everitt (code mode), Vo's Merge Mommy (review at scale), Tan & Hu (1000x engineer).
+
+Considered and skipped: Falk & Tsoukalas (the layoff trap is aggregate; one firm's plan is not evidence for or against it, so it is cited in prose only), Blomfield (AI-native company structure; too general), and Grinstead/Mozilla (cited as the counterweight in prose, since the deck's Mythos reference is only an inset).
+
+**Pages touched.**
+
+- New: the two sources, [[agentic-web]] (5 sources, confidence 0.75) and [[Cloudflare]] (entity, 2 sources, 0.75). Cloudflare now has an entity page because five other sources mention it (Everitt, Ries, two Radar Trends issues, WikiZZ); these are listed on the page.
+- Updated concepts, confidence unchanged on all: [[attack-surface-management]] (5→6), [[responsible-ai]] (29→30), [[ai-coding-productivity-evidence]] (8→9), [[agentic-pull-requests]] (10→11), [[enterprise-ai-adoption]] (126→127), [[ai-employment-effects]] (81→82), [[agent-harness]] (104→105), [[ai-agents]] (42→43).
+- Backlinks to [[agentic-web]] added on the HubSpot, Ognibeni and DFI source pages.
+
+**Corrections made in passing.**
+
+- Ognibeni and DFI both carried `strategic-renewal/business-model-renewal`, a slug **outside the closed W&W vocabulary**; both are now `strategic-renewal/business-model`. Their body-twin warnings are left in the 2026-09-16 backlog.
+- A timing error was caught before commit. A draft said Cloudflare's July 2025 default block was a "mechanism behind" the AI Index 2025 crawler-restriction figures, which cover 2023–24 and so predate it. It is now worded as extending the trend, on [[agentic-web]], [[responsible-ai]] and the blog page.
+
+**Checks.** `lint-page` reports nothing new on the touched pages; the only warnings are the two older sources' pre-existing body-twin backlog. `lint-index-completeness` 0 missing; `lint-dangling-authors` 0; `lint-confidence` clean. The seven Cloudflare presenters and the three blog authors stay dangling (single source each).
+
 ## [2026-09-19] ingest | China's AI race from two newsrooms, security from inside Adobe, and marketing after the traffic went
 
 Four videos in one batch: [[2026-09-18-reuters-on-assignment-inside-chinas-ai-race]], [[2026-09-18-bloomberg-originals-how-china-plans-to-win-global-ai-race]], [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook]] and [[2026-09-10-alim-pydata-ai-security-paradox-asymmetric-threats]]. No new concept or entity pages.

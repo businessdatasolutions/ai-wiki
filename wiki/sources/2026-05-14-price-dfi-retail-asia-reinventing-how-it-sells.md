@@ -14,7 +14,7 @@ dynamic_capabilities:
   - digital-seizing/strategic-agility
   - digital-seizing/balancing-digital-portfolios
   - digital-transforming/navigating-innovation-ecosystems
-  - strategic-renewal/business-model-renewal
+  - strategic-renewal/business-model
   - contextual/external-triggers
 relationships:
   - type: supports
@@ -110,6 +110,7 @@ The interview is **not** chapter-segmented on YouTube; the wiki preserves the na
 
 - **[[concepts/enterprise-ai-adoption|enterprise-ai-adoption]]** — extended with DFI's three-axis AI investment framework + the agentic-commerce-disintermediation thesis.
 - **[[concepts/ai-agents|ai-agents]]** — extended with the agentic-personal-assistant-as-retailer-channel-disintermediator framing.
+- **[[concepts/agentic-web|agentic-web]]** — *(added 2026-09-19)* the seller-side disintermediation fear, alongside Cloudflare's measurement of retail losing 35–40% of human traffic in a year.
 - **[[concepts/dynamic-capabilities|dynamic-capabilities]]** — extended with DFI's portfolio-pruning cases as seizing-cluster narratives.
 - **Scott Price** — CEO, DFI Retail Group; 35 years in Asia retail; *"sunset of career"* legacy framing. **First wiki mention; deferred** per the second-source promotion rule.
 - **Christine Tan** — CNBC International anchor; *Managing Asia* / *Lessons from Leaders* presenter. First wiki mention; deferred.

@@ -5,7 +5,7 @@ tags: [attack-surface-management, cybersecurity, infosec, exposure-management, s
 confidence: 0.75
 last_confirmed: "2026-09-19"
 accessed_at: "2026-09-19"
-source_count: 5
+source_count: 6
 relationships:
   - type: depends-on
     target: osint
@@ -68,7 +68,7 @@ Both sources converge on a posture: the future of cybersecurity belongs to organ
 ## Debates and supersession
 
 - **Open question — automation depth.** Both sources advocate automation but neither names a specific reference architecture for an ASM pipeline at production scale. The "AI-Augmented Offensive & Defensive Security" category named in TechLatest 2026 (LLMs + [[ai-agents]] correlating OSINT sources, generating attack graphs) is the plausible future of automated ASM but is still at vendor-narrative depth.
-- **Does AI favour the attacker or the defender? (added 2026-09-19)** [[2026-09-10-alim-pydata-ai-security-paradox-asymmetric-threats|Alim]] argues the attacker: recon and exploit generation are nearly free, while patching a large legacy estate is as slow as ever. [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Mozilla's]] roughly 500 bugs fixed in a month argues the defender. A working reconciliation is that both sides now find vulnerabilities cheaply, but only the defender still has to ship the fix, so the answer depends on patch velocity rather than detection. Neither source measures time-to-exploit against time-to-patch, which is the number that would settle it. **Open.**
+- **Does AI favour the attacker or the defender? (added 2026-09-19)** [[2026-09-10-alim-pydata-ai-security-paradox-asymmetric-threats|Alim]] argues the attacker: recon and exploit generation are nearly free, while patching a large legacy estate is as slow as ever. [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Mozilla's]] roughly 500 bugs fixed in a month argues the defender. A working reconciliation is that both sides now find vulnerabilities cheaply, but only the defender still has to ship the fix, so the answer depends on patch velocity rather than detection. Neither source measures time-to-exploit against time-to-patch, which is the number that would settle it. **Half-answered 2026-09-19:** [[2026-06-09-cloudflare-investor-day-2026|Cloudflare Investor Day 2026]] charts time-to-exploit falling to under 24 hours in 2026 (see the section below), but cites no source for the series. Time-to-patch is still unmeasured anywhere in the corpus. **Open.**
 - **No supersession events yet.** Young concept page; no prior wiki claim to retire.
 
 ## Related pages
@@ -96,3 +96,16 @@ His image is **the wounded buffalo circled by hyenas**: *"Everyone is quicker, b
 
 For ASM this shifts the load-bearing metric. The detection-first posture above assumes that finding exposure early is the bottleneck. If the attacker's reconnaissance is now continuous and free, the detection advantage narrows and **time from discovery to deployed fix** becomes the defender's real variable. Detection stays necessary, but it no longer differentiates. The counter-case is [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Mozilla]]; see *Debates*.
 
+## Time from disclosure to exploitation: the attacker's window, charted (added 2026-09-19)
+
+[[2026-06-09-cloudflare-investor-day-2026|Cloudflare Investor Day 2026]] includes the series the asymmetry debate above needs, **average time between vulnerability disclosure and confirmed exploitation**:
+
+| 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2.3 yrs | 1.9 yrs | 1.3 yrs | 11 mo | 10 mo | 5 mo | 56 days | 23 days | **<24 hrs** |
+
+It is titled *"Frontier AI models change the attack landscape"*, projected to fall further in 2027, and set beside Cloudflare's post *"Project Glasswing: what Mythos showed us"* on testing security-focused models against its own infrastructure.
+
+If the series is right, it settles one half of [[2026-09-10-alim-pydata-ai-security-paradox-asymmetric-threats|Alim's]] argument. Once exploitation follows disclosure within a day, **no patch cycle that includes testing in lower environments can close the window**, and the detection-first posture this page describes has to assume exploitation is already under way. It also reframes ASM's purpose: continuous discovery of the exposed surface matters less for finding problems first than for knowing **what to isolate** when a disclosure lands.
+
+**Treat it with caution.** The slide cites **no source and no method** for a chart other pages will want to quote. It comes from an investor presentation by a security vendor, and its steepest drop coincides with a model release the vendor has reason to dramatise. The direction matches public time-to-exploit reporting; the specific values are Cloudflare's. [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Mozilla's]] defender-side results are the counterweight: the same class of model that shortens the attacker's window also found roughly 500 bugs in a month for a defender.

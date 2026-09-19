@@ -3,9 +3,9 @@ type: concept
 title: AI coding productivity — the evidence
 aliases: ["AI coding productivity", "AI developer productivity", "developer productivity evidence", "productivity paradox in coding", "throughput vs stability"]
 confidence: 0.85
-last_confirmed: "2026-09-15"
-source_count: 8
-accessed_at: "2026-09-15"
+last_confirmed: "2026-09-19"
+source_count: 9
+accessed_at: "2026-09-19"
 tags: [rct, productivity, metr, copilot, dora, throughput, delivery-stability, perception-gap, heterogeneity, seniority, measurement]
 relationships:
   - type: part-of
@@ -103,3 +103,22 @@ This page should record it as **self-report, not measurement**, and the reason i
 The organisational evidence offered alongside is more interesting and comes with its own caveat, stated by the speaker: a quarter of the W25 batch had codebases that were **95% AI-generated**, and that batch is *"on track to becoming one of the fastest growing, most profitable batches in the history of YC."* He then says the right thing: *"I know what a correlation is… I cannot prove that the AI generated code and everything else caused the growth."* What he claims instead is a behavioural difference — *"the fastest growing founders we fund are not treating AI as autocomplete. They are treating it as a workforce"* — which is a hypothesis this page has no instrument to test, from a sample selected on success.
 
 Worth holding against [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey]] and the wider return-gap cluster: vivid individual gains coexisting with absent aggregate productivity growth is precisely the pattern those sources exist to explain, and this source is a data point *inside* that puzzle rather than a refutation of it. See [[micro-productivity-trap]].
+
+## Output indicators at population scale, and two costed rebuilds (added 2026-09-19)
+
+[[2026-06-09-cloudflare-investor-day-2026|Cloudflare Investor Day 2026]] supplies a set of **output** indicators the randomised studies above do not measure. Year on year to mid-2026:
+
+- **new websites** +34% (Verisign gTLD registrations);
+- **new iOS apps** +68% (SensorTower);
+- **merged GitHub PRs in public repositories** +153% (GitHub Search API, January 2022 to May 2026).
+
+Cloudflare's own figures point the same way: 5.5M+ developers on its platform, up from 350,000 in 2021, and its Wrangler CLI downloads up 942%. The deck calls this *"an explosion in coding productivity."*
+
+It is more precisely **an explosion in output**, and the page's ledger applies. More merged PRs is exactly what [[2025-09-23-dora-2025-state-of-ai-assisted-software-development|DORA's]] positive throughput predicts. None of these indicators speaks to DORA's still-negative stability, [[2026-03-30-liu-debt-behind-the-ai-boom|Liu et al.'s]] never-fixed defects, or what share of the new websites and apps anyone uses. Counts of things shipped are the flattering end of the pipeline.
+
+Two **costed single cases** from the same deck add a data point the corpus mostly lacks: the price of a large AI-built artefact.
+
+- **vinext.** A senior director reimplemented Next.js on Vite with coding agents in **under a week for about $1,100 in tokens**, with claimed builds up to 4× faster.
+- **EmDash.** One PM and one engineer rebuilt WordPress, a 23-year-old platform, in TypeScript in **two months**.
+
+The deck's economic conclusion, *"it's now cheaper to rebuild a legacy app from scratch with AI than to migrate it"*, is a strong claim resting on these two greenfield rewrites by the vendor's own staff. Neither has yet shown whether the rewrite carries its predecessor's edge cases.

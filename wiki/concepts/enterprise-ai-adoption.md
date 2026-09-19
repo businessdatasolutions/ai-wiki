@@ -5,7 +5,7 @@ tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omni
 confidence: 0.95
 last_confirmed: "2026-09-19"
 accessed_at: "2026-09-19"
-source_count: 126
+source_count: 127
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -885,3 +885,13 @@ What changed in the function is organisational, not tooling:
 
 Two cautions. This is a vendor keynote launching a book, so the figures are HubSpot's own and partly unsourced; the +20% leads is given without saying whether lead definitions or paid spend changed. And the pattern it illustrates, **adoption forced by customer behaviour rather than chosen**, is not the readiness-then-implementation sequence the adoption theories on this page model. Nobody at HubSpot decided to lose 80% of the traffic.
 
+## An AI-first operating model, specified by a public company (added 2026-09-19)
+
+[[2026-06-09-cloudflare-investor-day-2026|Cloudflare Investor Day 2026]] is the corpus's most complete statement of what a listed company says it is doing to run itself on agents. It is an investor pitch, so it describes intentions and early numbers, not outcomes. There are four parts:
+
+1. **An agent workspace for everyone.** *"Full agent harness running in a Cloudflare container available to every employee seconds after they start work,"* with scoped access to systems of record and model routing by role, to *"control cost without slowing down productivity gains."*
+2. **A central context layer built as a service.** Experts write their workflows as **skill files**. Everyone else sends work to a **"magic inbox"** staffed by *"AI agent operators who run it as a service"*, who turn recurring requests into new skill files for the shared library. This is the most concrete mechanism in the corpus for the *context layer as adoption prerequisite* argument above. It is the centrally run counterpart to [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum's]] bottom-up case, where one worker's system was packaged as a plugin for everyone: here a dedicated team harvests the workflows instead of waiting for them to surface.
+3. **Agents in the delivery pipeline:** AI review on every merge request ([[agentic-pull-requests]]).
+4. **The P&L consequence, stated as targets.** The long-term model cuts **G&A from 10% to 3–5% of revenue** (the previous target was 8–10%) and **S&M from 36% to 23–25%**. The sales model moves headcount from support roles into quota carriers. The safe-harbor slide discloses a planned **workforce reduction** to *"align our organizational structure with this new operating model."* See [[ai-employment-effects]].
+
+Set against the rest of this page, the notable feature is **sequence**. Most sources here describe adoption stalling between pilot and production. Cloudflare presents the pipeline changes, the internal platform and the cost targets as one plan, announced to investors before the results are in. Whether the G&A target is met is the observable test.

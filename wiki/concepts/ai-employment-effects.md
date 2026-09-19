@@ -3,8 +3,8 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-09-16"
-source_count: 81
+last_confirmed: "2026-09-19"
+source_count: 82
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -12,7 +12,7 @@ relationships:
   - type: caused
     target: ai-deskilling
     via: "task-composition shift is one mechanism within broader employment effects"
-accessed_at: "2026-09-16"
+accessed_at: "2026-09-19"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -672,3 +672,14 @@ An effect concentrated in 22–26-year-olds inside the top exposure quintile can
 What he does say about where humans remain is a **capability boundary**: *"the jobs where we're still training and hiring humans, those are related to the physical world… lots of dexterity and senses that's super hard to substitute."* And Kavak's retraining answer — the six-week Jedi Academy for everyone from CEO to mechanic — came with an explicit exit: *"You have the choice to train and get the skills to perform in this new reality… **or maybe leave Kavak if this is not for you.**"*
 
 **How to hold these together.** Hatzius measures an economy in which almost no firm has done what Kavak did; Kavak is one firm that did. Neither refutes the other, and the page should resist collapsing them. The live question is the one [[micro-productivity-trap]] raises from the other side: if the Kavak pattern generalises, the aggregate Hatzius measures is a lagging indicator; if it does not, Kavak is a case study. **No source in the corpus can currently tell which.**
+
+## A firm states the headcount arithmetic in advance (added 2026-09-19)
+
+[[2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai|Kavak]] (above) downsized and would not say by how much. [[2026-06-09-cloudflare-investor-day-2026|Cloudflare Investor Day 2026]] goes further in one respect and less far in another: it **states the model before the outcome** and still gives no total.
+
+- **The disclosure.** The deck's forward-looking statements include *"the plan to further accelerate our evolution to an agentic AI-first operating model … the estimated reduction of our current workforce, the estimated charges in connection with this plan."* No number is given.
+- **Where it points.** The long-term operating model cuts G&A from 10% to **3–5%** of revenue and S&M from 36% to **23–25%**, while R&D holds at 15–17%. Finance, HR, legal and procurement workflows are listed for AI rebuilding.
+- **A composition shift, not only a cut.** The illustrative sales model (credited to Battery Ventures) holds S&M cost flat at $18.3M. It moves headcount from **105 to 98**: account executives **30 → 40**; solution engineers 20 → 13, RevOps 15 → 13, marketing 30 → 20, BDRs unchanged. It projects ACV up **35%**. Support roles lose a quarter of their headcount, and quota-carrying roles gain a third.
+- **The industry backdrop it cites.** Gartner's CIO Agenda 2026: IT budgets **+2.8%**, tech-worker headcount **+1.3%**, and **88%** of organisations increasing AI investment.
+
+This is a **substitution-within-the-firm** pattern: jobs move from support functions to revenue functions, and the total falls modestly. It fits the role-composition argument on [[automation-vs-augmentation]] better than a replacement story. It is also a plan, and an illustrative one. The [[2026-06-03-falk-tsoukalas-the-ai-layoff-trap|layoff-trap]] mechanism asks whether many firms doing the same thing at once depress the demand each is counting on. A single firm's model cannot answer that.

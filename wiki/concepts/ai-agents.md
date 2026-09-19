@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-09-18"
-accessed_at: "2026-09-18"
-source_count: 42
+last_confirmed: "2026-09-19"
+accessed_at: "2026-09-19"
+source_count: 43
 relationships:
   - type: instance-of
     target: generative-ai
@@ -296,3 +296,7 @@ Two design moves from [[2026-09-07-yc-paper-club-why-the-harness-matters-more-th
 **Agents choosing their own runtime.** YC's QM pushes two decisions the harness would normally own into the agent itself: which **sandbox** to use (a bigger machine for a heavy dev workload, a small one otherwise) and which **model provider** to run on — the latter explicitly so it can *"pop out into another model"* when it hits refusals on legitimate work such as AI research or security testing. *"Pushing that decision into the agent itself rather than the harness has been a really powerful thing."*
 
 Both moves point the same way and are worth tracking as a trend rather than two anecdotes: capabilities that were previously the orchestration layer's responsibility — lifecycle, addressing, resource allocation, model selection — are being handed to the agent as things it can reason about. See [[agent-harness]] on expressibility as the design principle behind this, and [[multi-agent-failure-modes]] for what goes wrong when many agents act on partial views of shared state.
+
+## Agents as the majority of web traffic (added 2026-09-19)
+
+By [[Cloudflare]]'s network measurements, **more than half of Internet traffic is now non-human** ([[2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet|Cloudflare's Content Independence Day report]]), and daily AI agent requests rose **1,700%+** between June 2025 and May 2026 ([[2026-06-09-cloudflare-investor-day-2026|Cloudflare Investor Day 2026]]). Agents are no longer a deployment choice made inside firms. They are the main population the open web serves, and the web's business model is being rebuilt around pricing their access (crawler blocking, licensing, x402 machine payments). The full treatment is on [[agentic-web]].

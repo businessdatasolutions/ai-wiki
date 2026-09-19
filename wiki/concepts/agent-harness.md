@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.95
-source_count: 104
+source_count: 105
 relationships:
   - type: part-of
     target: ai-agents
@@ -20,8 +20,8 @@ relationships:
   - type: uses
     target: small-language-models
     via: "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed"
-last_confirmed: "2026-09-18"
-accessed_at: "2026-09-18"
+last_confirmed: "2026-09-19"
+accessed_at: "2026-09-19"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -1007,3 +1007,15 @@ It also contains the harness thesis in one line, attributed to Oren Etzioni (199
 It is [[2026-05-07-kokane-agent-harness-vs-systems-design|Kokane's]] "90% systems design" claim carried out in full. His summary of the ratio: "usually the LLM part is the smallest part and we are trying to build many things to control it because it's nondeterministic." He designs around three contracts — evidence, completion, action — in line with [[2026-05-07-chatterjee-anatomy-of-agent-harness|Chatterjee's]] contracts layer.
 
 **Why a product team rewrote its harness.** [[2026-05-11-nystrom-how-i-ai-spec-driven-development-notion|Nystrom (How I AI, May 2026)]] reports that Notion rebuilt the Notion AI harness — the second rewrite in about six months — after reaching "tool and instruction fatigue" with a bloated system prompt. The fix was to borrow skills and progressive disclosure from coding agents, and to write the specs for the new harness before any code. It is a first-party instance of the thinning pattern in [[syntheses/harness-thinning-what-persists|harness-thinning-what-persists]]: fewer tools always in context, more loaded on demand.
+
+## Code mode: why the harness should let the agent write code instead of calling tools (added 2026-09-19)
+
+[[2026-06-09-cloudflare-investor-day-2026|Cloudflare Investor Day 2026]] argues a harness design choice from infrastructure economics. Its claim is that **agents should write and run code against APIs rather than call tools one at a time**, for three reasons:
+
+1. **Tool definitions do not fit.** *"Cloudflare's REST API requires 2.5 million tokens as a single MCP server,"* against a 1-million-token context window, so a task that needs several providers cannot load their tools at all.
+2. **Tool calling is unnatural to the model.** It is *"an artificial injection that happens post-training"*, and overlapping tools collide (`create_contact` against `update_contact`). The deck puts the cost at *"50,000 tokens per tool call for a simple task."* Models, by contrast, *"were trained on writing lots and lots of code."*
+3. **Situational gaps** such as the date become code to run instead of extra tool calls.
+
+The deck cites Anthropic's engineering post on code execution with MCP. [[2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering|Everitt]] already lists Anthropic and Cloudflare code mode as a layer of the agentic-engineering stack. This is the rationale behind that entry.
+
+The same deck draws a consequence the harness literature has not: if every agent run generates its own small program, the harness needs a **fresh, isolated execution environment per run**. Cloudflare calls these *"infinite ephemeral applications, many per user."* On its arithmetic (1 billion knowledge workers × 10 agents ÷ 10 agents per CPU), that makes **execution CPU, not model GPU, the next capacity bottleneck**, at roughly 20× current global server CPU production. The ratios are the vendor's assumptions and the conclusion sells its product, but the design point stands: **code mode moves the harness's hard problem from context management to sandboxing.**

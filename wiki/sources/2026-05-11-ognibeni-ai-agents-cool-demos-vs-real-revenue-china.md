@@ -13,7 +13,7 @@ dynamic_capabilities:
   - digital-seizing/strategic-agility
   - digital-seizing/balancing-digital-portfolios
   - digital-transforming/navigating-innovation-ecosystems
-  - strategic-renewal/business-model-renewal
+  - strategic-renewal/business-model
   - contextual/external-triggers
 relationships:
   - type: supports
@@ -105,6 +105,7 @@ Full ~28-minute keynote transcript via the youtube-transcript-skill (English aut
 - **[[concepts/enterprise-ai-adoption|enterprise-ai-adoption]]** — extended with the four-lessons diagnostic + Chinese agentic-commerce revenue lines.
 - **[[concepts/strategic-foresight|strategic-foresight]]** — extended with the *China-as-time-machine* digital-scouting frame.
 - **[[concepts/ai-agents|ai-agents]]** — extended with the agentic-commerce-at-scale exemplars (JD Joy Streamer, Qen one-sentence-purchase, AQ supply-chain builder).
+- **[[concepts/agentic-web|agentic-web]]** — *(added 2026-09-19)* the closing prediction that agents kill search-driven e-commerce first; measured four months later in Cloudflare's industry traffic data and HubSpot's own traffic loss.
 - **Björn Ognibeni** — speaker; Hamburg-based practical visionary; co-founder ChinaBriefs.io + XRLab@MCM (University of Münster); UC Davis lecturer ("Rethinking Digital"). **First wiki mention; deferred** per the second-source promotion rule.
 - **E-commerce Berlin Expo** — venue / publisher channel. First wiki mention; deferred.
 
