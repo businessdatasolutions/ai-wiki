@@ -10,6 +10,39 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-21] ingest | Where to put the money, what to do with the people, and who holds the builders to account
+
+Three videos supplied by the user: [[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over]] (IBM CEO Arvind Krishna on Bain's *Winning with AI*), [[2026-08-11-ellmer-dhar-bcg-so-what-is-your-ai-rollout-built-to-fail]] (BCG's Ellmer and Dhar on change management for AI rollouts), and [[2026-09-18-swisher-lafrance-atlantic-festival-tech-economy-is-ai-reshaping-america]] (Kara Swisher at The Atlantic Festival). Processed as a batch; checked for duplication by video id against `wiki/` and `raw/` first (clean).
+
+**Acquire.** Playwright's Chromium binary was missing after a package update, and it was reinstalled against the pyenv 3.12.8 interpreter (the bare `python` shim only resolves inside the skill directory). BCG came through first time. Krishna needed `--timeout 60000`. The Atlantic video failed headless three times with *panel did not render* although it has both ASR and manual tracks, and succeeded with `--headed`. Its output is the **manual live-caption track** (all caps, no speaker labels). All three were checked for doubled segments (none) and zeroed chapter offsets (none). Krishna's is ASR-only, and names are corrected in quotation ("Andrew Ing" → Andrew Ng, confirmed by web search as the podcast's co-host; "cobalt" → COBOL; "code to cache" → quote-to-cash).
+
+**What they add.** Krishna: *"please don't do a 100 experiments"*, with the arithmetic ($200M over 100 experiments is 3–5 people each), IBM's own admitted Watson mistakes, its internal portfolio of ~200 processes (~60 done by volunteering owners), and the 17-touchpoint HR letter. Ellmer and Dhar: false alignment, the messy middle, identity threat, *redesign the cockpit*, agency over participation, constructed endings. Swisher: the corpus's first sustained power-and-accountability critique — concentration, liability, frontier consolidation from seven labs to two. It is opinion, and is tagged only `contextual/external-triggers`.
+
+**Neighbour-source scan.** Path A was too broad to use alone (30+ sources share ≥3 of Krishna's cells), so it was narrowed by topic greps and Path B. **Filed:** Krishna `supports` → Dutt et al., BBC AI Decoded, Delangue, Ng (Washington Post), Ng (LangChain Interrupt), Heimes & Peters. The two Ng edges are flagged as not independent, since Ng co-hosts. BCG `supports` → Carucci, Kropp et al., Hines-Pierce, Dutt et al.; `contradicts` → Ross & Schneider, on whether bounded change programmes still have a role. Atlantic `supports` → Covello, on whether frontier spending can be paid back. **Considered and skipped:** Dumra/DBS (no stated position on experiment count); Ng's Washington Post interview as an Atlantic neighbour (both concern regulation, but they make different claims); Swisher ↔ Krishna on model-market structure (they count different things, labs vs deployed models). That last pair is recorded as a debate on [[foundation-models]] instead of as an edge.
+
+**Pages touched.**
+- New: the three source pages.
+- Concepts (appended dated sections; `source_count` bumped): [[enterprise-ai-adoption]] (128→130), [[micro-productivity-trap]] (54→56), [[open-source-ai]] (18→19), [[ai-sovereignty]] (8→9), [[foundation-models]] (25→27, new debate bullet), [[responsible-ai]] (30→31), [[ai-employment-effects]] (82→84), [[dynamic-capabilities]] (43→45, new debate bullet), [[automation-vs-augmentation]] (68→69), [[technology-adoption-theories]] (4→5). **No confidence raised**: all three are practitioner or commentary sources, self-reported or opinion, and most of the pages already sit at the 0.95 cap.
+- Entities: [[Andrew Ng]] (7→8, as co-host), [[Bain & Company]] (1→2; confidence 0.70→0.75), [[Boston Consulting Group]] (5→6), [[Anthropic]] (28→30), [[OpenAI]] (20→21), [[Google]] (13→14).
+- `index.md`: a new three-source block at the top of Sources; the Andrew Ng, Bain and BCG entity bullets extended.
+- Dangling (single source): Arvind Krishna, Sarah Elk, IBM, Kristy Ellmer, Julia Dhar, Kara Swisher, Adrienne LaFrance, The Atlantic (as author).
+
+**Noticed, not changed.** The earlier Atlantic video ([[2026-06-17-priest-atlantic-pwc-ai-agents-changing-business]]) lists its interviewer, not the channel, in `author:`. That goes against the video contract (author = channel), and is why The Atlantic does not count as a two-source author here. Left for a lint pass.
+
+## [2026-09-21] ingest | TOE and dynamic capabilities in one model — the paper the adoption-theory page was waiting for
+
+One source: [[2026-03-28-nguyen-ai-adoption-toe-dynamic-capabilities]], the paper [[technology-adoption-theories]] had carried as an open question since 2026-09-18 because ScienceDirect blocks automated download.
+
+**Acquire, and a caught mismatch.** The first user-supplied PDF (`Dynamic_Capabilities_and_Sustainable_Competitive_A.pdf`) failed the identity check: it was Dukhaykh & Alangri (2026), *Sustainability* 18, 1320 — the same topic area but no TOE and no AI. It was deleted at the user's instruction before any conversion. A second download from the search result was the same paper again. The correct file (`1-s2.0-S2949736126000503-main.pdf`, 16 pp., CC BY) was renamed to its slug, converted with `pdftotext`, and landed with a data-quality header. Four inconsistencies are recorded there and on the source page: H11/H12 labels swapped between sections; H6 "Accepted" at p = 0.063; estimated-model SRMR 0.130 against the paper's own 0.10 threshold; and a control-variable table that contradicts the main results.
+
+**What it adds.** TOE on the antecedent side — top leadership support and government support raise the *level* of AI adoption among firms already using it. Dynamic capabilities on the outcome side — adoption → business-model innovation and competitive advantage → performance, with adoption amplifying the advantage → performance link. It mirrors [[2025-06-15-cimino-ai-adoption-sustainable-growth-smes|Cimino]] (capabilities before adoption rather than after), and the two adoption-depth measures are near-identical and both reach performance. Limits: capabilities are theorised, not measured; outcome R² is 0.04–0.06.
+
+**Neighbour-source scan.** Path A (`strategic-renewal/business-model`) surfaced five McKinsey/YC sources, and Path B (government support among sources citing the TOE or dynamic-capabilities pages) surfaced the two TOE reviews. **Four `supports` edges filed**: Cimino, Khanfar, Schwaeke, [[2026-07-09-catlin-mckinsey-podcast-real-ai-advantage|Catlin]]. Banholzer & LaBerge were skipped: they cover the same topic but support no defensible edge.
+
+**Pages touched.** New: the source. Updated: [[technology-adoption-theories]] (3→4, confidence 0.8→0.85; open question resolved; new section on the joined model), [[dynamic-capabilities]] (42→43), [[enterprise-ai-adoption]] (127→128). `index.md` has the source bullet and the concept bullet's count.
+
+**Housekeeping.** `main` was four commits behind origin. The fast-forward was blocked by another session's uncommitted `accessed_at` bumps; they were stashed and restored. One conflicted with a newer upstream value (`vibe-coding`, 2026-09-19), and the upstream value was kept. The two remaining bumps and that session's query trace are left uncommitted for that session.
+
 ## [2026-09-19] ingest | Spec-driven development gets a page, from an 18-minute talk that finally lists its costs
 
 One video, supplied by the user: [[2026-05-26-kmiecik-deepsense-spec-driven-development-reliable-ai-coding]] — Paweł Kmiecik (deepsense.ai), *Spec-Driven Development: The Discipline Behind Reliable AI Coding*. Checked for duplication by video id against `wiki/` and `raw/` twice (on 2026-09-16 when first asked, and again today before fetching); clean both times. New concept [[spec-driven-development]].

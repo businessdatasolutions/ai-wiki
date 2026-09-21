@@ -3,9 +3,9 @@ type: concept
 aliases: ["dynamic capabilities", "dynamic-capabilities", "Teece dynamic capabilities", "sense seize transform"]
 tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, microfoundations]
 confidence: 0.95
-last_confirmed: "2026-09-18"
-accessed_at: "2026-09-18"
-source_count: 42
+last_confirmed: "2026-09-21"
+accessed_at: "2026-09-21"
+source_count: 45
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -280,6 +280,7 @@ Rohrer reaches the **same structural conclusion with no AI premise**. Recording 
 
 ## Debates and supersession
 
+- **Bounded programmes vs. pure adaptability (added 2026-09-21).** [[2026-02-09-ross-schneider-adaptability|Ross & Schneider]] argue that transformation and change management presuppose a fixed destination and should give way to adaptability. [[2026-08-11-ellmer-dhar-bcg-so-what-is-your-ai-rollout-built-to-fail|Ellmer and Dhar]] agree the destination is unknown and adaptability is the capability, but say bounded chapters with visible endings are how people sustain continuous change. Both are practitioner claims; neither cites an outcome study.
 - **Does the DC→performance link hold for economic performance?** [[2025-06-15-cimino-ai-adoption-sustainable-growth-smes|Cimino et al. 2025]] is the corpus's first quantitative test, and its one clean failure is H2: dynamic capabilities do **not** significantly predict economic performance in 210 Italian innovative startups (β = 0.138, CI [−0.013, 0.281]). Every other DC path in the model holds strongly. The authors read it as a *stage* effect — capabilities in early-stage firms are aimed at experimentation, product development and market entry, so financial return lags capability development — and align it with Wilden et al. (2013), who found the link conditional on organic structures and competitive intensity. **No supersession.** This is a boundary condition on the concept, not a refutation of it: DC→technological (0.447), DC→collaborative (0.615) and DC→sustainable (0.662) performance all hold in the same model. What it rules out is the loose claim that dynamic capabilities pay off financially *as such*, independent of firm stage.
 
 - **Sensing-as-prediction vs sensing-as-shock-readiness.** The Teece (2007) framing of sensing emphasises *opportunity and threat detection* — close to forecasting language. [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook|Erginbilgiç 2026]] argues against the prediction-framing: *"It's not about actually predicting the world, it is about how your company now thinks about dealing with external shocks"* (~21:14–21:32). [[2026-04-28-warner-wager-dynamic-capabilities-digital-transformation|Warner & Wäger 2019]]'s `digital-scenario-planning` microfoundation is closer to Erginbilgiç's *shock-readiness* framing than to pure forecasting. No supersession; the productive tension is between *sensing as accuracy* and *sensing as response capability*. The wiki currently treats them as compatible (sensing must produce both signal-detection *and* the organisational habit of responding to signals).
@@ -332,4 +333,12 @@ Until now this page rested entirely on conceptual work (Teece 1997, 2007, 2014) 
 
 The adoption literature's firm-level theory is not dynamic capabilities but the technology–organization–environment framework (see [[technology-adoption-theories]]). [[2024-08-13-schwaeke-new-normal-ai-adoption-smes|Schwaeke et al. (2024)]], mapping 106 studies of SME AI adoption, make the one explicit link between the two: their culture cluster credits leadership with "a strong role in the dynamic capabilities of firms through the ongoing development of new practices."
 
-The two answer different questions and should not be merged. TOE explains whether a firm **takes up** a technology, from its technological, organisational and environmental context. Dynamic capabilities explain whether a firm can **renew** itself. Several TOE clusters read naturally as W&W cells — the ecosystem cluster as *navigating-innovation-ecosystems*, the knowledge cluster as *improving-digital-maturity* — but the mapping is the wiki's, not the review's. A paper that fits both into one model (Nguyen, Bui et al. 2026) was identified on 2026-09-18 but could not be retrieved.
+The two answer different questions and should not be merged. TOE explains whether a firm **takes up** a technology, from its technological, organisational and environmental context. Dynamic capabilities explain whether a firm can **renew** itself. Several TOE clusters read naturally as W&W cells — the ecosystem cluster as *navigating-innovation-ecosystems*, the knowledge cluster as *improving-digital-maturity* — but the mapping is the wiki's, not the review's. [[2026-03-28-nguyen-ai-adoption-toe-dynamic-capabilities|Nguyen et al. (2026)]], ingested 2026-09-21, fit both into one model. TOE factors (top leadership and government support) drive the *level* of AI adoption, and dynamic capabilities are invoked to explain how that adoption turns into business-model innovation, competitive advantage and performance. It is the mirror of [[2025-06-15-cimino-ai-adoption-sustainable-growth-smes|Cimino et al.]]: capabilities follow adoption rather than precede it. But the capabilities are theorised, not measured, and the outcome paths explain little (R² 0.04 for business-model innovation, 0.06 for competitive advantage). Its one distinctive result is that deeper AI adoption strengthens the link from an existing advantage to performance — AI as amplifier, not source.
+
+
+## Concentration needs a capacity to pivot; continuous change needs endings (added 2026-09-21)
+
+Two practitioner sources describe the capability side of AI change.
+
+- [[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over|Krishna / IBM on Bain's Winning with AI, September 2026]]: IBM's CEO argues for concentrating on a few AI bets (seizing). Bain's Sarah Elk adds the condition: concentrated bets can be wrong, so they only work in firms that test and change course — *"acknowledging a mistake in 6 months is far better than going 3 years and getting a mediocre result."* This is `digital-seizing/strategic-agility`: portfolio concentration and the capacity to pivot as one capability rather than two. IBM's own story is the negative case. After Watson it built monolithic vertical applications in health, a domain where it knew neither customer nor regulator.
+- [[2026-08-11-ellmer-dhar-bcg-so-what-is-your-ai-rollout-built-to-fail|Ellmer & Dhar / BCG, August 2026]]: *"Adaptability is something that we can learn, and you can build it into the system."* But they argue that continuous change still needs **constructed endings**, because *"humans need endings"* and fatigue lowers the capacity for the next change. That is a claim about how the transforming capability is *renewed*: bounded chapters inside continuous change.

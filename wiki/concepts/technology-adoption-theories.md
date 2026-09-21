@@ -3,10 +3,10 @@ type: concept
 title: Technology adoption theories
 aliases: ["technology adoption theories", "adoption theories", "classical adoption theories", "TAM", "Technology Acceptance Model", "UTAUT", "UTAUT2", "Unified Theory of Acceptance and Use of Technology", "diffusion of innovations", "Diffusion of Innovation", "DOI theory", "Rogers' diffusion of innovations", "TOE framework", "technology-organization-environment", "technology–organization–environment framework"]
 tags: [adoption-theory, tam, utaut, diffusion-of-innovations, rogers, toe-framework, tornatzky-fleischer, information-systems-research, firm-level, individual-level, ai-adoption]
-confidence: 0.8
-last_confirmed: "2026-09-18"
-accessed_at: "2026-09-18"
-source_count: 3
+confidence: 0.85
+last_confirmed: "2026-09-21"
+accessed_at: "2026-09-21"
+source_count: 5
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -56,6 +56,13 @@ The spine and TOE answer different questions. [[dynamic-capabilities]] and the [
 
 Schwaeke et al. make the one explicit link from the TOE side: their culture cluster credits leadership with "a strong role in the dynamic capabilities of firms through the ongoing development of new practices."
 
+**The two joined in one model (added 2026-09-21).** [[2026-03-28-nguyen-ai-adoption-toe-dynamic-capabilities|Nguyen et al. (2026)]] put the two theories on either side of adoption, in a PLS-SEM study of 325 managers of Vietnamese firms that already use AI.
+
+- **TOE explains how far a firm adopts.** Top leadership support (β = 0.286) and government support (β = 0.177) raise the level of AI adoption. Government support also works indirectly, through leadership support and perceived cost-effectiveness. Cost-effectiveness itself is only marginal (p = 0.063).
+- **Dynamic capabilities explain what adoption becomes.** Adoption level leads to business-model innovation and sustainable competitive advantage, and those two carry most of the effect on firm performance. AI adoption also *amplifies* the advantage → performance link (interaction β = 0.123).
+
+Two things limit what the model shows. First, it explains little on the outcome side: AI adoption accounts for 4% of the variance in business-model innovation and 6% in competitive advantage. Second, no dynamic capability is actually measured — the theory is invoked to interpret the outcome paths. Cimino et al. are the reverse on both counts: they measure the capability construct and put it *before* adoption. Read together, the two papers bracket adoption with capabilities on both sides. In both, the adoption measure that reaches performance is implementation depth, not readiness.
+
 ## Debates and supersession
 
 - **From intention to value is an assumption, not a finding.** TAM, UTAUT and DOI studies measure intention and continued use. Albishri et al. draw organisational advice from continued-use intention. Cimino et al. find that firm-level readiness — the closest organisational analogue — does not reach economic or collaborative performance; only implementation does. Any use of these theories to argue business value inherits this gap. This is recorded as a `contradicts` edge between the two source pages.
@@ -72,6 +79,11 @@ Schwaeke et al. make the one explicit link from the TOE side: their culture clus
 
 ## Open questions
 
-- A paper integrating TOE with dynamic capabilities — Nguyen, Bui et al. (2026), *Green Technologies and Sustainability*, [doi:10.1016/j.grets.2026.100384](https://doi.org/10.1016/j.grets.2026.100384) — was identified in the same search but could not be retrieved (ScienceDirect blocks automated download). It would test the bridge sketched above directly.
+- ~~A paper integrating TOE with dynamic capabilities could not be retrieved.~~ **Resolved 2026-09-21**: [[2026-03-28-nguyen-ai-adoption-toe-dynamic-capabilities|Nguyen et al. (2026)]], ingested; see the section above. What it leaves open is a longitudinal design, which it concedes it cannot supply, and a measured capability construct on the outcome side.
 - None of the three sources tests UTAUT or TAM on employees using generative AI at work. A study with an organisational sample, not students, would fill that gap.
 - Does trialability matter as much when the tool is free and already on every desk? Rogers' attribute assumed trial was costly; for generative AI, trial is nearly costless, and Albishri's large trialability paths may measure something else.
+
+
+## Diffusion inside one firm (added 2026-09-21)
+
+[[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over|Krishna / IBM on Bain's Winning with AI, September 2026]]. IBM's internal rollout, as its CEO tells it, follows a diffusion curve at the level of process owners. Of about 200 processes, owners volunteered; five went first, then ten; about 60 were done in two and a half years; the next 70 were *"raring to go because they saw what their friends had done"*; the last 30–40 are *"recalcitrant."* Observability of peers' results drives the second wave, as in diffusion of innovations. For the laggards he offers three explanations without choosing between them: distrust of the AI, AI not ready, or genuinely harder processes. An anecdote, not a study; useful as a firm-internal illustration of a theory the page otherwise applies across firms.

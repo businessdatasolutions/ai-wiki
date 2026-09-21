@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-09-19"
-accessed_at: "2026-09-19"
-source_count: 127
+last_confirmed: "2026-09-21"
+accessed_at: "2026-09-21"
+source_count: 130
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -873,6 +873,8 @@ Until this date the page described adoption through practitioner frameworks and 
 
 **Where this sits against the rest of the page.** All three measure uptake: a firm's decision, or a person's intention. The previous section's finding — readiness does not reach the P&L, only implementation does — applies to them directly. Albishri draws organisational advice from continued-use intention alone, and the two source pages carry a `contradicts` edge over that inference. The theories explain who adopts. They say little about whether adoption pays, which is the question most of this page is about.
 
+**A fourth source reaches performance (added 2026-09-21).** [[2026-03-28-nguyen-ai-adoption-toe-dynamic-capabilities|Nguyen et al. (2026)]] is the exception among the adoption-theory sources: it follows adoption through to firm performance. Among 325 Vietnamese firms already using AI, top leadership and government support raise the *level* of adoption. Adoption level reaches performance directly only weakly (β = 0.125); most of its effect runs through business-model innovation and competitive advantage. The finding aligns with the section above: in both this paper and Cimino, the adoption measure that pays is how deeply AI has changed the business processes. Government support mattered for SMEs and not for large firms.
+
 ## The marketing function: when AI adoption happens to your customers first (added 2026-09-19)
 
 Nearly every source on this page is about a firm adopting AI. [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook|Bodnar & Flanagan (HubSpot UNBOUND, Sep 2026)]] describe the case where **the customer adopts it first** and the firm has to adapt. HubSpot lost **80% of its web traffic (140 million visits in a year)** after May 2024 as buyers moved their research into ChatGPT and Claude, and it still grew leads by **20%**. The earlier prediction of that shift is [[2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china|Ognibeni's]]: search-driven funnels are the format AI agents kill first. HubSpot is the first source reporting it in a firm's own numbers.
@@ -895,3 +897,14 @@ Two cautions. This is a vendor keynote launching a book, so the figures are HubS
 4. **The P&L consequence, stated as targets.** The long-term model cuts **G&A from 10% to 3–5% of revenue** (the previous target was 8–10%) and **S&M from 36% to 23–25%**. The sales model moves headcount from support roles into quota carriers. The safe-harbor slide discloses a planned **workforce reduction** to *"align our organizational structure with this new operating model."* See [[ai-employment-effects]].
 
 Set against the rest of this page, the notable feature is **sequence**. Most sources here describe adoption stalling between pilot and production. Cloudflare presents the pipeline changes, the internal platform and the cost targets as one plan, announced to investors before the results are in. Whether the G&A target is met is the observable test.
+
+
+## Concentrate, then change the people: two September-2026 prescriptions (added 2026-09-21)
+
+Two sources this week address the same stall — pilots that never reach production — from opposite ends.
+
+**[[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over|Krishna / IBM on Bain's Winning with AI, September 2026]].** The CEO of IBM says the experimentation era *"has passed for AI"* and blames the stall on dispersion: a $200M budget spread over 100 experiments gives 3–5 people each and no plan to scale. *"Pick three, four, five things which you can scale like crazy."* He cites Bain's 2026 CEO survey (80% doing something with AI, not seeing the expected return). IBM's own portfolio is the worked case: about 200 enterprise processes at roughly $100M each; owners volunteer; five first, about 60 done in two and a half years, 70 more *"raring to go because they saw what their friends had done"*, 30–40 recalcitrant. He names **enterprise operations** as the next proven area after customer service and coding, meaning agents working across the silos of an end-to-end process such as quote-to-cash. That is the same location of value [[2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services|Heimes and Peters]] give for shared services.
+
+**[[2026-08-11-ellmer-dhar-bcg-so-what-is-your-ai-rollout-built-to-fail|Ellmer & Dhar / BCG, August 2026]].** The authors of *How Change Really Works* place the failure in the change process rather than the portfolio: **false alignment** among executives at the start, a **messy middle** where momentum *"leaks"* (meetings become updates, slippage becomes normal), and poor endurance at the end. AI differs from other transformations in intensity and in the threat to identity (*"if I don't write software code, who am I?"*). Their prescription for rollouts: redesign the workflow — *"the cockpit"* — rather than hand out the tool, and give employees agency rather than asking them to take part.
+
+Together they cover the two halves of the page's recurring diagnosis. Krishna says where to put the money; Ellmer and Dhar say what has to happen to the people once it is there. Neither offers outcome data beyond self-report.
