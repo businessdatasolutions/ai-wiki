@@ -10,6 +10,28 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-21] ingest | Strategy gets a middle step: McKinsey on mobilization, and the host who now has a page
+
+One video supplied by the user: [[2026-09-08-west-lacroix-zimmerman-mckinsey-why-strategy-needs-mobilization]] (*Inside the Strategy Room*, 8 Sep 2026; Andy West, Sébastien Lacroix and Whitney Zimmerman, hosted by [[Sean Brown]]).
+
+**Acquire.** Came through first time, headless: 314 segments, 12 chapters with correctly distributed offsets, no doubled segments. ASR-cleaned at acquire (McKenzie → McKinsey, Sebastian Laqua → Sébastien Lacroix, Tim Kohler → Tim Koller, lizink → leasing, chest → chess moves, `[music]` tags removed), recorded in the raw file's `notes:`. As in the previous entry, the bare `python` shim only resolves inside the skill directory.
+
+**What it adds.** *Mobilization* as separate work between strategy and execution, and the claim that it most distinguishes power-curve climbers from fallers. Also: a four-part standard for strategy (value-creation thesis; true choices, each an owned initiative; a portfolio across horizons and risk; trade-offs named early); two biases with procedural fixes (anchor next year's budget on year one of the strategic plan, not last year's budget; stack-rank bold moves instead of judging them one at a time); climbers investing ~2× in chosen priorities; strategies passing ≥4 of 10 tests falling 35% → 21% (2010–2024, self-reported); and a 50-company outside-in teardown in which ~25% face meaningful erosion of advantage and nine in ten of those have it priced in. None of the underlying research (HBR, July 2026; the book *Strategy and Value*) is ingested.
+
+**Neighbour-source scan.** Path B via [[strategy]] and [[dynamic-capabilities]], plus topic greps for power curve, shuffle rate and alignment. **Filed** (all `supports`, on the new page, eight in total): Banholzer & LaBerge (same show and research programme), MGI *Race takes off* (Power Curve capex), Martin 2022 (what makes a choice a strategy), Erginbilgiç (granular strategy), Ellmer & Dhar (false alignment), Krishna (concentration). Later in the session, after reading both source pages in full, also `supports` → McGrath (permissionless action and capital allocation under a single organising logic) and Catlin (learning loop and the organisational lens; same firm, not independent). The initial skips had been judged from other pages' edge summaries, and those summaries pointed at the wrong overlap. **Considered and skipped:** Allen & McDonald (the LLM exploitation bias resembles single-move loss aversion, but the subjects differ).
+
+**Pages touched.**
+- New: the source page; [[Sean Brown]] (entity, promoted on second appearance as host, following the [[Roberta Fusaro]] precedent).
+- Concepts (dated sections appended; `source_count` bumped; confidence unchanged, since this is first-party consulting research): [[strategy]] (11→12, two new debate bullets), [[dynamic-capabilities]] (45→46), [[strategic-foresight]] (13→14).
+- Entities: [[McKinsey & Company]] (17→18; `employs` Sean-Brown).
+- Source: [[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage]]: Sean Brown moved out of the dangling list, and a back-link added.
+- `index.md`: a one-source block at the top of Sources; a Sean Brown entity bullet.
+- Dangling (single source): Andy West, Sébastien Lacroix, Whitney Zimmerman, Tim Koller.
+
+**Fixed in passing.** [[strategy]] and [[strategic-foresight]] each had a duplicated `## Debates and supersession` heading; one of each pair was removed.
+
+**Noticed, not changed.** Two McKinsey episodes each quote "10%", for different measures: full alignment on the advantage (Banholzer & LaBerge) and data behind the claimed advantage (this episode). This is flagged on [[strategy]] so the two are not cited interchangeably.
+
 ## [2026-09-21] ingest | Where to put the money, what to do with the people, and who holds the builders to account
 
 Three videos supplied by the user: [[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over]] (IBM CEO Arvind Krishna on Bain's *Winning with AI*), [[2026-08-11-ellmer-dhar-bcg-so-what-is-your-ai-rollout-built-to-fail]] (BCG's Ellmer and Dhar on change management for AI rollouts), and [[2026-09-18-swisher-lafrance-atlantic-festival-tech-economy-is-ai-reshaping-america]] (Kara Swisher at The Atlantic Festival). Processed as a batch; checked for duplication by video id against `wiki/` and `raw/` first (clean).

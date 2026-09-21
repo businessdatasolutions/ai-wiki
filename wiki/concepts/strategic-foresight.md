@@ -3,9 +3,9 @@ type: concept
 aliases: ["strategic foresight", "strategic-foresight", "corporate foresight", "futures thinking"]
 tags: [strategic-foresight, scenarios, futures, signal-detection, FTSG, webb, arena-creation-potion, arenas-radar, MGI]
 confidence: 0.87
-last_confirmed: "2026-09-09"
-accessed_at: "2026-09-09"
-source_count: 13
+last_confirmed: "2026-09-21"
+accessed_at: "2026-09-21"
+source_count: 14
 relationships:
   - type: part-of
     target: dynamic-capabilities
@@ -16,8 +16,7 @@ relationships:
   - type: supports
     target: 2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas
     via: "MGI's three-ingredient arena-creation potion (tech/business-model step change + escalatory investment pattern + large/expanding addressable market) is a reusable foresight heuristic; the arenas-radar diagnostic operationalises foresight as proximity + production/revenue impact mapping"
-quality_score: 0.99
-quality_notes: ['1 near-empty section(s)']
+quality_score: 1
 ---
 
 # Strategic Foresight
@@ -203,7 +202,6 @@ Hill reports the hospital's Covid response as unusually effective and attributes
 The complementary governance move from the same episode belongs with it: **decision rights as the CEO's first design task**, justified by a sensing-latency argument — *"somebody down there is going to hear it sooner than you, and you want to make sure you've empowered them enough. There have to be guardrails here."*
 
 ## Debates and supersession
-## Debates and supersession
 
 The wiki holds three productive tensions within the foresight discipline. None are supersession events; each is named here so future ingest can resolve or sharpen the position rather than re-discover it.
 
@@ -247,3 +245,9 @@ The instrument has the properties foresight work wants — delayed and noisy fee
 **The result is itself a foresight warning, and a pointed one.** The signals an organisation would naturally scan to decide which model to trust — headline benchmark scores, vendor release notes, arena rankings — **stopped predicting performance on this task**. The correlation with GPQA Diamond is positive through o4-mini and then reverses; against LM Arena it plateaus or reverses. A scanning function tracking those signals through 2025 would have concluded that frontier models were getting better at strategic judgment, while on this measurement they were getting worse.
 
 The transferable lesson is about **instrument validity in scanning**: a leading indicator is only useful while the relationship that made it leading still holds, and nothing in the indicator itself announces when that stops. The authors' remedy is domain-specific measurement — *"without such benchmarks, scholars and practitioners risk mistaking progress in adjacent domains for progress in strategic decision making"* — which is the foresight practice of validating your instruments against the outcome you actually care about, applied to AI capability.
+
+## Markets see the erosion before the firm says it does (added 2026-09-21)
+
+[[2026-09-08-west-lacroix-zimmerman-mckinsey-why-strategy-needs-mobilization|West / McKinsey, September 2026]] adds a second angle to [[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage|LaBerge]]'s point that economic profit is a lagging indicator. Competitive advantage "is usually a pretty weak signal", and "AI is great at weak signals… AI is great at synthesis." McKinsey built AI tools to assess advantage company by company from outside. In a teardown of 50 industrial companies, combining each firm's sources of advantage with its sources of disruption, about **a quarter had advantage that was being meaningfully eroded**. **Nine in ten of those had the erosion priced into their share price**: current fundamentals stronger than peers', but terminal-value growth priced at or below GDP.
+
+For foresight, the implication is that the capital market acts as an external sensor that can register erosion before the firm acknowledges it. West does not claim the firms failed to see it: "whether that was observable to those companies, you know, we don't know because we looked at it outside in." His prescription stays on the communication side (diagnose the erosion, then give investors proof points), not on the sensing side. The 50-company analysis is not ingested.

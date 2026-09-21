@@ -5,7 +5,7 @@ tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, m
 confidence: 0.95
 last_confirmed: "2026-09-21"
 accessed_at: "2026-09-21"
-source_count: 45
+source_count: 46
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -342,3 +342,15 @@ Two practitioner sources describe the capability side of AI change.
 
 - [[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over|Krishna / IBM on Bain's Winning with AI, September 2026]]: IBM's CEO argues for concentrating on a few AI bets (seizing). Bain's Sarah Elk adds the condition: concentrated bets can be wrong, so they only work in firms that test and change course — *"acknowledging a mistake in 6 months is far better than going 3 years and getting a mediocre result."* This is `digital-seizing/strategic-agility`: portfolio concentration and the capacity to pivot as one capability rather than two. IBM's own story is the negative case. After Watson it built monolithic vertical applications in health, a domain where it knew neither customer nor regulator.
 - [[2026-08-11-ellmer-dhar-bcg-so-what-is-your-ai-rollout-built-to-fail|Ellmer & Dhar / BCG, August 2026]]: *"Adaptability is something that we can learn, and you can build it into the system."* But they argue that continuous change still needs **constructed endings**, because *"humans need endings"* and fatigue lowers the capacity for the next change. That is a claim about how the transforming capability is *renewed*: bounded chapters inside continuous change.
+
+## Mobilization as a named part of seizing (added 2026-09-21)
+
+Teece's table above defines seizing as "mobilizing resources to capture opportunities". [[2026-09-08-west-lacroix-zimmerman-mckinsey-why-strategy-needs-mobilization|West, Lacroix & Zimmerman / McKinsey, September 2026]] take that verb and make it the whole argument. Their claim is that *mobilization* is distinct work between strategy and execution: owned initiatives, reallocation of talent, capital and agentic budget, and commitments carried into budgets. They also claim it is what most distinguishes firms that rise on McKinsey's power curve from firms that fall.
+
+Three points connect to this page:
+
+- **`digital-seizing/balancing-digital-portfolios`, with a magnitude attached.** Climbers invest about twice what their average competitor does in their chosen priorities. The prescribed method is to stack-rank bold moves against everything else being funded, rather than judge them one at a time.
+- **`contextual/internal-barriers`, named as cognitive biases.** Anchoring to last year's budget and loss aversion in single-move evaluation are the two barriers named. Each comes with a procedural fix, so the barrier is treated as something a process can remove rather than as culture.
+- **`digital-seizing/strategic-agility`, as a reinforcing loop.** Firms good at test-learn-adapt are more likely to be good at mobilization, "because you have to mobilize to learn", and firms good at mobilization are more likely to hold strategy to a high standard. At its most mature, mobilization is routine: "everyone knows what happens next."
+
+This is practitioner research from one firm, and the underlying studies are not ingested. It supports the seizing microfoundation without testing it, so confidence is unchanged.

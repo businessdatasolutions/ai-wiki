@@ -3,9 +3,9 @@ type: concept
 aliases: ["strategy", "business strategy", "corporate strategy", "competitive strategy"]
 tags: [strategy, strategic-planning, value-creation, value-capture, theory-of-winning, playing-to-win, value-stick, roger-martin, felix-oberholzer-gee, harvard-business-review]
 confidence: 0.92
-last_confirmed: "2026-09-09"
-accessed_at: "2026-09-09"
-source_count: 11
+last_confirmed: "2026-09-21"
+accessed_at: "2026-09-21"
+source_count: 12
 relationships:
   - type: supports
     target: strategic-foresight
@@ -19,8 +19,8 @@ relationships:
   - type: supports
     target: theory-based-view
     via: "Felin & Zenger's [[theory-based-view]] (TBV) is the falsifiability discipline applied to Martin's *theory of winning* — same construct at greater logical hygiene; novel/simple/elegant/falsifiable/generative criteria sharpen what Martin names as *the theory must be coherent, doable, translatable into actions*"
-quality_score: 0.97
-quality_notes: ['3 near-empty section(s)']
+quality_score: 0.98
+quality_notes: ['2 near-empty section(s)']
 ---
 
 # Strategy
@@ -211,10 +211,11 @@ Two further claims bear on this page:
 **Confidence unchanged.** This is investor content addressed to its own portfolio, with no measurement of any kind behind any of the four factors; per the [vendor-source rule](../../CLAUDE.md#lifecycle) it adds a framework without lifting the page's confidence. Contrast with [[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage|Banholzer & LaBerge]] above, whose own-vs-build claims at least gesture at an underlying dataset.
 
 ## Debates and supersession
-## Debates and supersession
 
 - **Martin's *Southwest beats hub-and-spoke* vs Sinek's [[infinite-game]].** The wiki's first multi-source productive tension on the [[strategy|strategy]] page. Resolution filed in [[strategy-finite-vs-infinite-game]] synthesis: Sinek operates *one layer above* the strategy lenses — he asks *which game you are in*; Martin asks *how to win the round you are in*. The two are answering different questions about the same case (Southwest), not competing definitions of strategy. **No supersession declared.**
 - **Value capture vs value creation.** Oberholzer-Gee insists value creation precedes value capture; the implication is that strategy starts with WTP/WTS analysis, not with profitability targeting. This contradicts a long line of strategic-planning practice that starts from financial targets and works backward. No supersession declared — the question of *which framing to start from* is operational, not theoretical.
+- **Two "10%" figures from the same research programme, measuring different things.** [[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage|Banholzer & LaBerge]] report that as few as 10% of organisations have *full alignment* on what their competitive advantage is. [[2026-09-08-west-lacroix-zimmerman-mckinsey-why-strategy-needs-mobilization|West et al.]] report that about 10% have *data* tracking the drivers of the advantage they claim (against ~57–60% who say they are confident). Both are verbal characterisations of McKinsey research the wiki has not ingested. They are compatible, since a firm can be aligned without data or have data without alignment, but they should not be cited interchangeably. (Added 2026-09-21.)
+- **Where the strategy failure sits: design or passage.** Martin and Oberholzer-Gee locate the failure in the *strategy* (a plan mistaken for a theory of winning; value capture pursued before value creation). [[2026-09-08-west-lacroix-zimmerman-mckinsey-why-strategy-needs-mobilization|West et al.]] locate the larger differentiator *after* design: the climbers on McKinsey's power curve were better at all three stages but "most differentiated by their ability to mobilize". The two readings meet in Zimmerman's claim that "it is difficult to mobilize vague strategy", which makes a good design a precondition for mobilization rather than a rival explanation. The measurement that separates mobilization from execution in McKinsey's comparison is not described, so this is not settled. (Added 2026-09-21.)
 - **No supersession events.** Two sources in the same year (2022); they're complementary rather than competing. Future ingest of *Playing to Win* (Lafley & Martin 2013) and *Better, Simpler Strategy* (Oberholzer-Gee 2021) would deepen but not retire either framing.
 
 ## Related concepts
@@ -264,3 +265,26 @@ The mechanism is a **systematic exploitation bias**: high cumulative profit, ver
 **And the finding with the widest reach: benchmark transfer breaks.** The correlation between simulation performance and GPQA Diamond is positive from GPT-3.5 through o4-mini, then **reverses**; against LM Arena it plateaus or reverses. The authors' warning is directed at exactly the inference a strategist would otherwise make: *"scholars and developers risk mistaking progress in adjacent domains for progress in strategic decision making."* Anyone selecting a model for judgment work on the strength of headline benchmarks is, on this evidence, reading the wrong instrument.
 
 **Read with its limits.** The MBA comparison is contextual rather than controlled (students were primed by coursework and worked unsupervised); the composite score is a within-dataset visualisation; and the study measures strategic *reasoning over supplied information*, not strategic *agency* — information was fed to the models by a program. See the source page for the full set, including the open question of whether the regression reflects a strategic deficit or a goal-inference one.
+
+## Mobilization: the step between strategy and execution (added 2026-09-21)
+
+[[2026-09-08-west-lacroix-zimmerman-mckinsey-why-strategy-needs-mobilization|West, Lacroix & Zimmerman / McKinsey, September 2026]] take the question on from where [[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage|Banholzer & LaBerge]] left it. Banholzer and LaBerge ask how a firm can *see* its advantage. This episode asks why a strategy that sees it clearly still fails to change what the organisation does.
+
+**The claim.** "You can't simply go from strategy to execution… you need to mobilize." Mobilization is separate work that needs top-team attention: putting each strategic initiative in an executive's hands, doing enough planning beneath each choice, reallocating talent, capital and "agentic budget" away from what does not matter, and making sure those commitments reach budgets and plans. In a five-year comparison, companies that rose to the top 20% of economic profit and stayed there were better than companies that fell at design, mobilization and execution alike. They were **most differentiated by mobilization**. Zimmerman quotes Andrew Marshall: *"Your strategy can only influence your competitors if it survives your system first."*
+
+**A standard for strategy**, needed because "it is difficult to mobilize vague strategy":
+
+1. **A value-creation thesis** clear enough that someone who hears only the thesis can make choices that fit it.
+2. **True choices, each becoming one or a few owned initiatives.** "Not just 'we're going to digitize'… strategy is not done till it becomes one."
+3. **The choices form a portfolio** across horizons of value and levels of risk, so the team can judge whether it is leaning into uncertainty enough.
+4. **Trade-offs named early.** "If you're not naming what's going to stop… you're probably not going to stop things."
+
+Items 2 and 4 are close to [[2022-06-29-martin-hbr-a-plan-is-not-a-strategy|Martin]]'s integrative choices and to [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook|Erginbilgiç]]'s granular strategy, where everyone knows their role. What is new is the unit: a choice is not finished until an executive owns it as an initiative. Zimmerman's test for the thesis (clear enough to derive one's own choices from) is close to [[2026-07-01-mcgrath-power-of-strategic-centering|McGrath]]'s "permissionless action", in which a shared strategic center lets people act without waiting for approval.
+
+**Two biases, with a fix for each.** *Anchoring to last year's budget*: use year one of the strategic financial plan, not last year's budget, as the first draft of next year's budget. *Evaluating bold moves one at a time*: loss aversion makes each move look riskier alone, so stack-rank bold moves against everything else being funded. Both are ways of putting into practice the finding that power-curve climbers invest **about twice** what their average competitor does in their chosen priorities. Incremental budgeting, which moves allocations "by a few points" a year, cannot produce that.
+
+**Strategy quality, measured by self-report.** The share of executives saying their strategy passes at least four of McKinsey's ten tests fell from **35% (2010) to 21% (2024)**. Lacroix blames context (the speed of change, the volume of information) rather than capability. Because the figure is self-assessed, a fall could also reflect more honest self-assessment. The episode does not address that.
+
+**AI as a strategy question.** Lacroix's three vectors are productivity "to stay in the game", innovation to defend and extend profit pools, and deliberate choices to shape new market structures. The first matches the [[micro-productivity-trap]]'s claim that productivity gains alone are competed away. The third is a strategy choice in the full sense used on this page.
+
+Confidence unchanged at 0.92. This is first-party consulting research promoting a practice and a book, and none of the underlying studies is ingested.

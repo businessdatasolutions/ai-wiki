@@ -42,7 +42,7 @@ relationships:
 
 ## TL;DR
 
-A ~48-minute episode of *Inside the Strategy Room* on the **[[McKinsey & Company]]** channel, published 10 August 2026 — host **Sean Brown** with **Matt Banholzer** (senior partner, Chicago; global leader of the strategic growth and innovation practice) and **Laura LaBerge** (senior expert, Connecticut), on new research into the erosion of competitive advantage.
+A ~48-minute episode of *Inside the Strategy Room* on the **[[McKinsey & Company]]** channel, published 10 August 2026 — host **[[Sean Brown]]** with **Matt Banholzer** (senior partner, Chicago; global leader of the strategic growth and innovation practice) and **Laura LaBerge** (senior expert, Connecticut), on new research into the erosion of competitive advantage.
 
 1. **The two framing statistics.** *"As few as **10% of the organizations** they recently surveyed have full alignment on what their competitive advantage actually is."* And: *"More than **60% of industries** over the past decade have seen an **11% increase in their shuffle rate**"* — a measure of how quickly market leaders and laggards change places. LaBerge adds a companion finding from earlier in the year: **two-thirds of companies track performance variance only at the business-unit level**, "so they don't even see the variance to a precise enough degree that they can do something about it."
 2. **The definition, with three load-bearing qualifiers.** Competitive advantage is *"the distinct set of **hard-to-replicate** assets and operating models that a company creates that earn **superior returns over time**."* Banholzer unpacks each: *hard to replicate* — "if everyone can do what you do, that's the beauty of capitalism… it's just par"; *superior returns* — "if it's something you do really well, but the market isn't paying for it, nobody really cares… **unique is not the same as hard-to-replicate superior returns**"; and *over time* — durability "measured not in months or even a couple of years, but in **decade-plus**."
@@ -85,7 +85,10 @@ The full auto-generated (ASR) English caption track (461 segments, consistent wi
 - [[concepts/dynamic-capabilities|dynamic-capabilities]] — the five cells tagged above.
 - [[concepts/theory-based-view|theory-based-view]] — the insistence that a competitive-advantage claim must be testable against economic profit rather than being "yet one more framework."
 
-**Dangling** (single-source mention, deferred per [author-entity promotion](../../CLAUDE.md#author-entity-promotion)): Matt Banholzer, Laura LaBerge, Sean Brown.
+- [[Sean Brown]]: host. Promoted to an entity page on 2026-09-21, on his second appearance.
+- [[2026-09-08-west-lacroix-zimmerman-mckinsey-why-strategy-needs-mobilization|West, Lacroix & Zimmerman]]: the next episode of the same show, on turning a strategy into action (mobilization). Its `supports` edge points here.
+
+**Dangling** (single-source mention, deferred per [author-entity promotion](../../CLAUDE.md#author-entity-promotion)): Matt Banholzer, Laura LaBerge.
 
 ## Source quality note
 

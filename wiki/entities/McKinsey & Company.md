@@ -4,9 +4,9 @@ kind: organization
 aliases: ["McKinsey", "McKinsey & Company", "McKinsey and Company", "QuantumBlack"]
 tags: [mckinsey, mgi, mckinsey-talks-operations, mckinsey-talks-talent, global-business-services, built-environment, management-consulting, quantumblack, ai-research, tech-ai-transformation, agent-augmented-workforce, outcome-underwriting, post-controversy-governance, future-arenas, omniscalers, skill-change-index, workforce-skills, corporate-venture-building]
 confidence: 0.95
-last_confirmed: "2026-08-12"
-accessed_at: "2026-09-05"
-source_count: 17
+last_confirmed: "2026-09-21"
+accessed_at: "2026-09-21"
+source_count: 18
 relationships:
   - type: employs
     target: Roberta-Fusaro
@@ -20,6 +20,9 @@ relationships:
     target: Alex-Singla
   - type: employs
     target: Alexander-Sukharevsky
+  - type: employs
+    target: Sean-Brown
+    via: "host of Inside the Strategy Room"
   - type: authored-by
     target: 2026-06-24-mckinsey-ai-supercharging-software-development
     via: "McKinsey panel (Palaniappan, Harrysson, Linderman) on why AI coding gains fail to convert to org-level value without workflow redesign, obsolete vs. durable SWE skills, and AI-code security risk (24 Jun 2026)"
@@ -37,6 +40,7 @@ Global management consulting firm; runs **QuantumBlack** as its AI arm and **[[M
 
 ## Appears in this wiki via
 
+- [[2026-09-08-west-lacroix-zimmerman-mckinsey-why-strategy-needs-mobilization]] — *Why Strategy Needs Mobilization, Especially in This Moment* (**Inside the Strategy Room**, YouTube, 8 Sep 2026). The second episode from this show in the wiki. Host [[Sean Brown]] with **Andy West** and **Sébastien Lacroix** (global co-leaders, Strategy and Corporate Finance Practice) and **Whitney Zimmerman** (distinguished expert, strategy), co-authors of a July 2026 HBR article. The research also feeds *Strategy and Value* (West, Zimmerman and Tim Koller, forthcoming). Claim: **mobilization** is separate work between strategy and execution, and it is what most distinguishes companies that climb the power curve. Figures: ~57–60% of ~1,000 surveyed firms are confident they know their advantage, **10%** have data behind it; strategies passing ≥4 of McKinsey's 10 tests fell **35% → 21%** (2010–2024); climbers invest **~2×** their competitors in chosen priorities; ~25% of 50 industrial companies face meaningful erosion of advantage, and nine in ten of them have it priced in. Contributes a four-part standard for strategy and two named biases (budget anchoring; judging bold moves one at a time). Underlying studies not ingested. See [[strategy]], [[dynamic-capabilities]].
 - [[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage]] — *How To Maximize Competitive Advantage* (**Inside the Strategy Room**, YouTube, 10 Aug 2026). A **sixth McKinsey channel** in the wiki. Host **Sean Brown** with **Matt Banholzer** (senior partner; global leader, strategic growth and innovation) and **Laura LaBerge** (senior expert) on new research into the **erosion of competitive advantage**. Headline findings: **as few as 10% of surveyed organisations have full alignment on what their competitive advantage actually is**; **>60% of industries have seen an 11% increase in "shuffle rate"** (how fast leaders and laggards swap places) over the past decade; two-thirds of companies track performance variance only at business-unit level. Contributes **seven sources of advantage** detectable outside-in across the top 5,000 global companies; a **deficit asymmetry** — a single deficit among the seven moves economic profit "from slightly positive to massively negative," while advantages cluster and compound; the **efficiency / durability / extensibility** decision frame; a **monthly-to-quarterly** tracking cadence; and the AI-era prescription to encode advantage as an **ontology with a semantic layer** — "almost a digital twin to your operating model." Underlying article not ingested; all figures are verbal characterisations. See [[strategy]], [[strategic-foresight]], [[knowledge-graphs]].
 - [[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity]] — *The Biggest AI Opportunity Isn't Replacing People* (**McKinsey Talks Talent**, YouTube, 1 Aug 2026). Host **Lucia Rahilly** with **Brooke Weddle** and **Bryan Hancock** interviewing [[Erik Brynjolfsson]] on the Stanford campus. Here McKinsey is interviewer, not claim-maker; the substance is Brynjolfsson's — the productivity **J-curve**, the updated ADP entry-level employment decline (13% → **16–17%**, still growing, wages flat), **pyramid-to-diamond**, imitation-of-humans as "a terrible business strategy," headcount-reduction-as-ROI as "a little lazy," **amplifying intention**, and fleets of agents as the coming default competence. The McKinsey side contributes the **engine-one/engine-two** pattern and the **mavericks** question. See [[ai-employment-effects]], [[automation-vs-augmentation]], [[micro-productivity-trap]].
 - [[2026-07-30-hines-pierce-mckinsey-ai-physical-world-more-valuable]] — *AI Is Making the Physical World More Valuable* (**The McKinsey Podcast**, YouTube, 30 Jul 2026). **Eric Kutcher** (North American Chair) interviewing **Laura Hines-Pierce**, co-CEO of Hines (~$100bn AUM, 30 countries, ~400 cities) — the wiki's first source approaching AI from the **built environment**. Argues the constraint has moved from capital to **execution** ("we are not capital constrained… what we are is execution constrained"), with permitting (**$1.5tn of funded, shovel-ready US projects awaiting permits**), a skilled-trades shortage with no near-term supply response, and supply chain as the binding limits; a 6.5-million-unit global housing shortfall; and AI as "democratizing the digital space" so that differentiation moves to physical execution. Supplies the wiki's most precise operator statement of the organisational-change-dominates thesis: **"70% people challenge… technology is like 10% of the solution, the other 20% is processes."** See [[micro-productivity-trap]], [[automation-vs-augmentation]].
