@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-09-16"
-accessed_at: "2026-09-16"
-source_count: 68
+last_confirmed: "2026-09-21"
+accessed_at: "2026-09-21"
+source_count: 69
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -514,3 +514,8 @@ What makes the passage worth keeping is that he **refuses to close it**: *"we ha
 **The dividing line is capability, not consequence.** That is worth flagging, because much of this page's better material draws the line on *consequence* or *reversibility* — what a system may be allowed to do unsupervised. Kavak's line is simply **whether a body is required**. Everything cognitive was automated; everything physical was augmented. Whether that boundary holds as robotics improves is a question the source raises and does not answer — and [[2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs|Hatzius]], covering the same question at the aggregate, expects most exposed hours to return as time saved rather than jobs eliminated, which is the augmentation reading of the same phenomenon.
 
 Caveat: self-reported figures with no stated baselines, on a venture-capital podcast. See [[Kavak]].
+
+
+## Automating a coordination chain, not a task (added 2026-09-21)
+
+[[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over|Krishna / IBM on Bain's Winning with AI, September 2026]]. IBM's employee verification letter (for a mortgage) used to pass from employee to manager to HR partner to an HR back office that looked up three or four systems: *"17 different human touch points."* An agent now handles it; the employee spends *"15 seconds."* The case is worth separating from task automation. No single task in the old chain was slow. The cost was in the handoffs, and the agent removes the chain rather than speeding up a link. Krishna generalises it to end-to-end processes such as quote-to-cash that cross a dozen systems and several functional silos.

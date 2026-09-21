@@ -3,8 +3,8 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-09-19"
-source_count: 82
+last_confirmed: "2026-09-21"
+source_count: 84
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -12,7 +12,7 @@ relationships:
   - type: caused
     target: ai-deskilling
     via: "task-composition shift is one mechanism within broader employment effects"
-accessed_at: "2026-09-19"
+accessed_at: "2026-09-21"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -683,3 +683,12 @@ What he does say about where humans remain is a **capability boundary**: *"the j
 - **The industry backdrop it cites.** Gartner's CIO Agenda 2026: IT budgets **+2.8%**, tech-worker headcount **+1.3%**, and **88%** of organisations increasing AI investment.
 
 This is a **substitution-within-the-firm** pattern: jobs move from support functions to revenue functions, and the total falls modestly. It fits the role-composition argument on [[automation-vs-augmentation]] better than a replacement story. It is also a plan, and an illustrative one. The [[2026-06-03-falk-tsoukalas-the-ai-layoff-trap|layoff-trap]] mechanism asks whether many firms doing the same thing at once depress the demand each is counting on. A single firm's model cannot answer that.
+
+
+## Identity before job loss, and who captures the gains (added 2026-09-21)
+
+Two sources add to the page from angles it has covered less.
+
+**Identity.** [[2026-08-11-ellmer-dhar-bcg-so-what-is-your-ai-rollout-built-to-fail|Ellmer & Dhar / BCG, August 2026]]: what makes AI transformations different is that they threaten identity before any job disappears. Employees ask *"If I don't write software code, who am I; what is valuable about being a person in this organization?"* while also asking what to tell their children. BCG research, cited not shown: close to 90% of employees expect to need substantial reskilling. It matches the 13% identity-uncertainty effect [[2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees|Kropp et al.]] measured.
+
+**Distribution.** [[2026-09-18-swisher-lafrance-atlantic-festival-tech-economy-is-ai-reshaping-america|Swisher / The Atlantic Festival, September 2026]]: asked when AI's productivity promises will be tested, Swisher says nobody knows, and that the question comes second to who gets the gains: *"the economy already sucks for most people in this country. Who got all the good bits?"* Incomes are flat. The page's measurement dispute is about whether AI changes employment. Swisher's point is that the distributional question stands whatever the answer: gains can be real and still go to few. It is asserted without data.

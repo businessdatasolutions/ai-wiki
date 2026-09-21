@@ -6,9 +6,9 @@ tags: [andrew-ng, ai-researcher, ai-educator, stanford, deeplearning-ai, courser
 affiliation: "[[DeepLearningAI]] (founder); Stanford University (adjunct professor); AI Fund (managing general partner); Landing AI (founder/CEO); Coursera (co-founder); ex-Google Brain (founder); ex-Baidu (chief scientist)"
 role: "Founder of DeepLearning.AI; adjunct professor at Stanford; managing general partner at AI Fund; founder/CEO of Landing AI; co-founder of Coursera; founding lead of the Google Brain team; ex-chief scientist at Baidu"
 confidence: 0.95
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 7
+last_confirmed: "2026-09-21"
+accessed_at: "2026-09-21"
+source_count: 8
 ---
 
 # Andrew Ng
@@ -100,6 +100,10 @@ Ng's prior wiki-relevant rhetorical contribution: *"we need to unbig in AI"* —
 - **Code Dream / Code Realm canonical name** — ASR ambiguity on stage; pin the canonical product name when a separate channel covers the launch.
 - **The Batch newsletter as a wiki source** — Ng's PM-bottleneck observation traces back to a July deeplearning.ai *Batch* newsletter; that newsletter would be the upstream textual source for citation rigour.
 - **Vivek Prasad / Sanyam Hota as entity pages** — Dangling first-mentions as Context Hub co-builders; promote on second source.
+
+## As co-host of Bain's *Winning with AI* (added 2026-09-21)
+
+[[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over]] — Ng co-hosts Bain & Company's *Winning with AI* podcast with Bain's Sarah Elk; this episode interviews IBM CEO Arvind Krishna. Ng asks the insider question about IBM's flat decade after Watson and about the "2% of IBM" automation claim, and agrees with Krishna that neither AI nor quantum will solve every problem, against *"AGI hype."* Krishna's advice to run open-weight models on premise and to stop spreading budgets over 100 experiments echoes Ng's own positions (open weights in his Washington Post interview; "thousand flowers" not paying off at LangChain Interrupt). Because Ng hosts, the agreement is not independent evidence.
 
 ## Mentioned in
 

@@ -3,8 +3,8 @@ type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
-last_confirmed: "2026-09-16"
-source_count: 54
+last_confirmed: "2026-09-21"
+source_count: 56
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -12,7 +12,7 @@ relationships:
   - type: contradicts
     target: automation-vs-augmentation
     via: "process lock-in = automation without redesign; reinvent-the-business resists this trap"
-accessed_at: "2026-09-16"
+accessed_at: "2026-09-21"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -412,3 +412,12 @@ The same source states the trap's first move in the AI case exactly: *"the first
 **Why he thinks incumbents structurally cannot escape** — a Schumpeterian argument this page should hold alongside the prescriptive literature: *"it's really hard for a CEO today, especially of a large company or public company, to go and say, hey, I'm betting everything on AI… I'll destroy and rebuild everything I've been building for the past 40 years. **How many CEOs will do that in a company at scale?**"* On that reading the trap is not a mistake leaders make; it is the rational behaviour of an incumbent, and the escape is a new entrant.
 
 **Read against the aggregate.** [[2026-08-18-covello-gs-new-models-ai-investment-landscape|Covello / Goldman Sachs, August 2026]] reports that across the companies Goldman surveys, *"enterprises collectively are not making or saving money on their AI implementations."* Kavak is one firm claiming the opposite after doing the demolition. **Both may be true**; nothing in the corpus settles whether Kavak is exceptional, early, or optimistically measured — the Kavak figures are self-reported on a venture-capital podcast and carry no stated baselines.
+
+
+## The trap as budget dispersion, and as an unchanged cockpit (added 2026-09-21)
+
+Two more restatements, each adding a mechanism.
+
+**Dispersion.** [[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over|Krishna / IBM on Bain's Winning with AI, September 2026]] puts the trap in arithmetic. *"Let's say a reasonable enterprise is willing to spend a couple of hundred million dollars a year… If you now spread it across a 100 experiments, you probably have three to five people in each experiment… And then you don't have the ability on how to scale it."* One hundred people and $15–20M on a single area is his alternative. This is the budget-level form of the task-level trap: many small projects, none large enough to redesign a workflow. It matches the first step of [[2026-05-02-dutt-chatterji-ai-experimentation-to-transformation|Dutt et al.]] (narrow to 4–5 domains).
+
+**The cockpit.** [[2026-08-11-ellmer-dhar-bcg-so-what-is-your-ai-rollout-built-to-fail|Ellmer & Dhar / BCG, August 2026]] tell the story of Paul Fitts, the WWII psychologist who cut pilot error by redesigning the cockpit rather than retraining pilots. *"Right now we're sort of giving people a tool and we're saying, use AI… And what people are doing is sort of small changes. They're sort of playing with it. We actually need to think about how do we redesign the cockpit."* Dhar: *"If your assumption is that a car is just a faster horse, you miss a lot of the chances to think about the driver."* This is the trap stated as an interface-design error: the tool arrives, the workflow around it does not change, and the gains stay at the level of individual tinkering.

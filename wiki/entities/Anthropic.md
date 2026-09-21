@@ -5,9 +5,9 @@ aliases: ["Anthropic", "Anthropic PBC", "Claude"]
 tags: [anthropic, ai-lab, foundation-models, claude, public-benefit-corporation, long-term-benefit-trust]
 since: 2021
 confidence: 0.95
-last_confirmed: "2026-09-19"
-accessed_at: "2026-09-19"
-source_count: 28
+last_confirmed: "2026-09-21"
+accessed_at: "2026-09-21"
+source_count: 30
 ---
 
 # Anthropic
@@ -84,6 +84,11 @@ Two recent sources name Anthropic specifically as a *flow-state organisation* �
 - [[2026-05-05-stanford-ai-club-chamath-on-how-to-win-in-the-ai-era|Chamath 2026]] names it from the **operating-structure** layer: *"if you find one of these places — Anthropic is such a place, OpenAI is such a place, Facebook was such a place, Google was such a place, SpaceX is such a place"* — alongside no-org-chart and chronic-under-hire as deliberate organisational design.
 
 The two framings are at different layers (governance vs operating-structure) but converge on Anthropic as **the AI-era exemplar** of the category.
+
+## Named from outside, September 2026 (added 2026-09-21)
+
+- [[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over]] — IBM's CEO agrees with Anthropic that LLMs are good at translating legacy code such as COBOL, but disputes the inference that this threatens the mainframe: mainframes are used for transaction volume, not because of language lock-in.
+- [[2026-09-18-swisher-lafrance-atlantic-festival-tech-economy-is-ai-reshaping-america]] — Kara Swisher predicts the seven frontier labs will consolidate to two, and names Anthropic as *"probably"* one of the survivors alongside Google. Opinion, no figures.
 
 ## Mentioned in
 

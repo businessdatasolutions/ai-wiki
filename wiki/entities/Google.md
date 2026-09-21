@@ -5,9 +5,9 @@ aliases: ["Google", "Google LLC", "Alphabet (operating subsidiary)", "Google for
 tags: [google, big-tech, hyperscaler, ai-lab, foundation-models, gemini, google-cloud, google-research, google-brain, gemini-api, file-search, multimodal-rag, notebooklm, flow, veo, ai-product-management, bfloat16, coral-edge-tpu, tensorflow, edge-ml]
 since: 1998
 confidence: 0.90
-last_confirmed: "2026-09-01"
-accessed_at: "2026-09-01"
-source_count: 13
+last_confirmed: "2026-09-21"
+accessed_at: "2026-09-21"
+source_count: 14
 relationships:
   - type: published-by
     target: 2026-06-12-mcveety-hormati-google-cloud-open-knowledge-format
@@ -93,6 +93,10 @@ The [[2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer|Fors
 ## Google DeepMind
 
 The combined Google AI research org (formed via DeepMind / Google Brain merger). Surfaces here as the publishing org for [[2026-05-05-google-gemini-file-search-multimodal|the Gemini File Search multimodal announcement]] (Solovyev's team affiliation). Distinct from [[Google Research]] (the older Research arm), though boundaries are not always clear in public-facing communications. Promote to its own entity page on second-source mention if the editorial distinction becomes load-bearing.
+
+## Predicted frontier survivor (added 2026-09-21)
+
+- [[2026-09-18-swisher-lafrance-atlantic-festival-tech-economy-is-ai-reshaping-america]] — Kara Swisher names Google as the first of the *two* frontier labs she expects to survive consolidation. Opinion.
 
 ## Mentioned in
 

@@ -3,9 +3,9 @@ type: concept
 aliases: ["open source AI", "open-source AI", "open-weight models", "open weights", "open models", "own vs rent AI"]
 tags: [open-source-ai, open-weight-models, own-vs-rent, ai-sovereignty, concentration-of-power, china-open-models, safety-through-transparency, hugging-face]
 confidence: 0.9
-last_confirmed: "2026-09-19"
-accessed_at: "2026-09-19"
-source_count: 18
+last_confirmed: "2026-09-21"
+accessed_at: "2026-09-21"
+source_count: 19
 relationships:
   - type: supports
     target: ai-sovereignty
@@ -245,3 +245,7 @@ Two same-day September 2026 pieces from wire and financial journalists, neither 
 
 These two sources do not change the page's confidence (0.90). The usage figure is biased toward the population where open models win, and the rest is reporting rather than measurement. They do add the page's first observed case of the cost driver reversing; see *Debates*.
 
+
+## A sitting enterprise-platform CEO on open weights, on premise (added 2026-09-21)
+
+[[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over|Krishna / IBM on Bain's Winning with AI, September 2026]]. Of three closing pieces of advice to CEOs, Krishna's first is open-weight models, *"especially run on premise, not just on the cloud"* — to keep *"really critical proprietary IP"* in-house, because *"people outside the US may worry a lot about where their queries and data is going"*, and for cost. He calls the model market an **"and world"**: several LLMs for technical, political or diversity reasons, plus open weights, a view he has held for five years that has *"come true in the last 9 to 10 months."* This matches [[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue's]] own-vs-rent flow from the enterprise buyer's side. Note that IBM sells the hybrid-cloud platform on which such models would run, and that co-host [[Andrew Ng]] makes the policy case for open weights elsewhere in the corpus.

@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI sovereignty", "sovereign AI", "digital sovereignty", "strategic autonomy in AI", "cultural autonomy", "full-stack sovereignty"]
 tags: [ai-sovereignty, sovereign-ai, digital-sovereignty, strategic-autonomy, own-vs-rent, cultural-autonomy, export-controls, industrial-policy, platform-governance, data-sovereignty]
 confidence: 0.85
-last_confirmed: "2026-09-19"
-accessed_at: "2026-09-19"
-source_count: 8
+last_confirmed: "2026-09-21"
+accessed_at: "2026-09-21"
+source_count: 9
 relationships:
   - type: supports
     target: open-source-ai
@@ -108,3 +108,8 @@ Laurie Chen (Reuters) adds the view from outside both blocs: *"the vast majority
 
 - [[ai-employment-effects]] — the geopolitical fragmentation of AI supply as a labour-market condition.
 - [[dynamic-capabilities]] — sovereignty choices as sensing/seizing under geopolitical constraint.
+
+
+## Query location as a reason to run models on premise (added 2026-09-21)
+
+[[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over|Krishna / IBM on Bain's Winning with AI, September 2026]]. IBM's CEO gives a sovereignty reason for open-weight, on-premise deployment in plain commercial terms: *"because of geopolitics people outside the US may worry a lot about where their queries and data is going."* It is the enterprise-level version of the page's national-level argument: control over where inference happens, not only over who trains the model. Krishna offers it alongside IP protection and cost, and does not rank the three.

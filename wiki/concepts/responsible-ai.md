@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-09-19"
-accessed_at: "2026-09-19"
-source_count: 30
+last_confirmed: "2026-09-21"
+accessed_at: "2026-09-21"
+source_count: 31
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -371,3 +371,15 @@ That gives the page two ideal types it had not named. In one, **the state tests*
 
 **Limit.** This is reporting, with no pass rates, enforcement cases or benchmark contents. See [[ai-sovereignty]] for how it bears on the CGTN-sourced account of Chinese governance.
 
+
+## The accountability critique, from outside the industry (added 2026-09-21)
+
+[[2026-09-18-swisher-lafrance-atlantic-festival-tech-economy-is-ai-reshaping-america|Swisher / The Atlantic Festival, September 2026]]. Most of this page treats responsible AI as something organisations do: governance frameworks, evals, oversight. Swisher's stage conversation is the corpus's first sustained statement of the **external** version: accountability imposed by courts, legislatures and voters. Her claims, all opinion:
+
+- **Liability is arriving through the courts.** Product-liability and negligence suits over chatbots and children are *"starting to gain ground, very much like the cigarette."* She says the industry's own fear of liability, including criminal liability, is behind its recent calls for regulation.
+- **Section 230 was the original mistake** — granted to let the industry grow, and now *"the baby is a… monster."*
+- **A modest agenda**: *"I don't want a lot of regulation"*, but the US has *"never had a privacy legislation… never had algorithmic transparency. There's like a dozen things we could do that would not hurt their businesses."* State legislation first.
+- **The risk is in the owners, not the model.** *"We have to stop thinking AI is going to kill humanity"*; she compares frontier AI to nuclear weapons developed by private companies.
+- **Data-centre opposition as a proxy** for broader public anger.
+
+For organisations deploying AI this is the `contextual/external-triggers` side of the page: the legal and political pressure that will shape what responsible deployment has to include.

@@ -4,9 +4,9 @@ kind: organization
 aliases: ["Boston Consulting Group", "BCG", "BCG Henderson Institute"]
 tags: [BCG, management-consulting, henderson-institute]
 confidence: 0.85
-last_confirmed: "2026-06-20"
-accessed_at: "2026-06-20"
-source_count: 5
+last_confirmed: "2026-09-21"
+accessed_at: "2026-09-21"
+source_count: 6
 ---
 
 # Boston Consulting Group
@@ -25,6 +25,10 @@ BCG's research arm; provides authors on AI-and-strategy work referenced in this 
 - [[2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces]] — BCG Henderson Institute microeconomic labor-impact report (Greg Emerson, [[Matthew Kropp]], [[Julie Bedard]], [[Lisa Krayer]], [[Megan Hsu]], et al.): the proprietary **six AI Labor Disruption Segments** (Amplified 5% / Rebalanced 14% / Divergent 12% / Substituted 12% / Enabled 23% / Limited-Exposure 34%) and the **50–55% reshaped / 10–15% eliminated** headline. Promotes [[Matthew Kropp]], [[Julie Bedard]], [[Megan Hsu]] to entities.
 - **The Krayer/Kropp pair makes BCG the wiki's first management-consulting firm to anchor two RCT-grade studies on AI's organisational consequences** — first on knowledge-worker productivity (within-the-frontier vs outside), then on framing-and-governance (tool-vs-employee) — now extended by the labor-disruption-segments modeling report.
 - **BCG-cited prior research (not separately ingested):** *AI brain fry* study (11% / 39% higher minor / major error frequency under excessive AI use); *AI workforce transformation* study (3.5× managerial-role-modelling at high-maturity orgs); BCG Henderson Institute *executive-vs-IC enthusiasm gap* research (76% / 31% gap).
+
+## Behavioral Science Lab (added 2026-09-21)
+
+- [[2026-08-11-ellmer-dhar-bcg-so-what-is-your-ai-rollout-built-to-fail]] — *The So What from BCG* podcast with **Kristy Ellmer** (North American leader, Transformation practice) and **Julia Dhar** (North American leader, People and Organization), co-founders of BCG's Behavioral Science Lab and co-authors of *How Change Really Works*. Change-management content applied to AI rollouts: false alignment, the messy middle, identity threat, agency via the IKEA effect. BCG research cited, not shown: close to 90% of employees expect to need substantial reskilling. This is a third BCG arm in the corpus, after the Henderson Institute and BCG X.
 
 ## Mentioned in
 

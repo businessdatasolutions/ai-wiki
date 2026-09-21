@@ -5,9 +5,9 @@ aliases: ["OpenAI"]
 tags: [openai, ai-lab, foundation-models, chatgpt, gpt-4, gpt-5, codex, agentic-engineering, sora, custom-gpts, public-benefit-corporation, nonprofit-foundation]
 since: 2015
 confidence: 0.95
-last_confirmed: "2026-09-19"
-accessed_at: "2026-09-19"
-source_count: 20
+last_confirmed: "2026-09-21"
+accessed_at: "2026-09-21"
+source_count: 21
 relationships:
   - type: published-by
     target: 2025-10-05-patwardhan-et-al-openai-gdpval
@@ -76,6 +76,10 @@ Note OpenAI's recurring appearance on the *deployment* side of wiki sources (the
 - Anchor case in the [[2026-04-28-anand-wu-genai-playbook|Anand-Wu GenAI Playbook]] (ChatGPT as the access-democratization breakthrough).
 - Subject of the open-source-AI strategic-analogy example (GPT-4 = Walmart, open source = fruit stand) discussed in [[2026-04-28-carroll-sorensen-strategy-analogy|Carroll & Sørensen 2024]].
 - Investment-figure context: U.S. private AI investment $285.9B in 2025 ([[2026-04-30-ai-index-report-2026]]).
+
+## A critic's sustainability doubt (added 2026-09-21)
+
+- [[2026-09-18-swisher-lafrance-atlantic-festival-tech-economy-is-ai-reshaping-america]] — Kara Swisher, predicting consolidation of the frontier labs to two, says OpenAI's economics are *"too expensive… just not sustainable"* and that its failure would matter because AI spending *"props up the stock market."* Opinion.
 
 ## Mentioned in
 

@@ -3,9 +3,9 @@ type: concept
 aliases: ["foundation model", "foundation models", "FM", "frontier model", "frontier models"]
 tags: [foundation-models, generative-ai, ai-research]
 confidence: 0.88
-last_confirmed: "2026-09-19"
-accessed_at: "2026-09-19"
-source_count: 25
+last_confirmed: "2026-09-21"
+accessed_at: "2026-09-21"
+source_count: 27
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -172,6 +172,7 @@ See [[small-language-models]] for the argument, the evidence, and where it does 
 
 ## Debates and supersession
 
+- **Frontier consolidation vs. multi-model enterprise use (added 2026-09-21).** [[2026-09-18-swisher-lafrance-atlantic-festival-tech-economy-is-ai-reshaping-america|Swisher]] predicts seven frontier labs becoming two; [[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over|Krishna]] predicts enterprises using many models, open and closed. Different quantities (labs vs. deployed models), but the combination implies the enterprise's frontier options narrow while open weights carry the variety. Open question: which is observed by 2027?
 - **"Frontier" vs. "foundation" framing.** "Frontier" emphasizes capability gap; "foundation" emphasizes adaptation role. Different policy/regulation implications — frontier-model bills target capability thresholds; foundation-model bills target the broader pretraining-then-adapt pattern.
 - **Compute-scaling sustainability.** Data-commons shrinkage (see [[responsible-ai]]) plus rising energy demands (driving nuclear-energy partnerships — Microsoft's Three Mile Island, Google's SMRs, Amazon's SMRs) raise structural questions about the 5-month-compute-doubling trajectory continuing.
 - **Open-weight closing the gap.** As open-weight performance catches closed-weight, the policy logic for restricting model release weakens — but so does the commercial moat for closed-weight providers. Open question how 2025–2026 plays out.
@@ -204,3 +205,12 @@ SORT file.name ASC
 
 The film's performance chart has Chinese models closing on the US frontier through 2026 without matching it, consistent with the [[2026-04-30-ai-index-report-2026|AI Index 2026]] finding that the gap had "effectively closed", with the top US model ahead by 2.7% in March 2026 and the US still producing more top-tier models. The film's own summary: the US still has *"the biggest, smartest, baddest AI models,"* plus more compute and capital, while the competition that matters for adoption has moved to the price of good-enough.
 
+
+## How many frontier labs survive, and how many models an enterprise uses (added 2026-09-21)
+
+Two September-2026 sources give opposite-looking pictures of market structure.
+
+- [[2026-09-18-swisher-lafrance-atlantic-festival-tech-economy-is-ai-reshaping-america|Swisher / The Atlantic Festival, September 2026]]: *"There's… seven frontier companies. There's gonna be two."* She expects mergers, names Google and *"probably Anthropic"*, and says OpenAI's economics are *"just not sustainable."* An opinion, with no numbers.
+- [[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over|Krishna / IBM on Bain's Winning with AI, September 2026]]: enterprises will live in an **"and world"** of several LLMs plus open-weight models, chosen for technical, political or diversity reasons.
+
+They are not strictly in conflict. Swisher predicts the number of labs training frontier models; Krishna describes the number of models an enterprise deploys, many of them open-weight derivatives. But if Swisher is right, the *frontier* choice in Krishna's "and world" narrows to two suppliers, and the open-weight tier becomes the main source of variety.
