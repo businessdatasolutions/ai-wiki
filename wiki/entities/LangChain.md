@@ -5,9 +5,9 @@ aliases: ["LangChain", "LangChain Inc"]
 tags: [langchain, agent-frameworks, agent-runtime, agent-harness, langgraph, langsmith, deep-agents]
 since: 2022
 confidence: 0.9
-last_confirmed: "2026-09-03"
-accessed_at: "2026-09-03"
-source_count: 10
+last_confirmed: "2026-09-22"
+accessed_at: "2026-09-22"
+source_count: 13
 relationships:
   - type: published-by
     target: 2026-05-09-chase-agent-development-lifecycle
@@ -68,6 +68,7 @@ This makes LangChain a **vendor whose product taxonomy *is* the wiki's vocabular
 ## People
 
 - **[[Harrison Chase]]** — co-founder/CEO of LangChain. **Promoted from Dangling to entity page on 21 May 2026** after the second substantive source ([[2026-05-21-chase-langchain-interrupt-26-future-of-ai-agents|Interrupt 26 keynote]]) followed [[2026-05-09-chase-agent-development-lifecycle|the ADLC essay (9 May)]] 12 days earlier. The canonical vendor-CEO voice on agent-engineering infrastructure; coined both the *frameworks / runtimes / harnesses / no-code* four-layer Build vocabulary and the *model / harness / context* three-layer continual-learning model. See [[Harrison Chase|the entity page]] for the full framings catalogue.
+- **[[Sydney Runkle]]** — product manager, LangChain open-source team. Lead author and presenter of the Jev integration material (September 2026); promoted to an entity page on 22 September 2026.
 - **Brace Sproul** — LangChain (product walkthrough at [[2026-05-21-chase-langchain-interrupt-26-future-of-ai-agents|Interrupt 26]] ~17:23–17:46; *"LangSmith Fleet is built on top of deep agents"*). Currently Dangling; promote on second-source mention.
 - **Caroline di Vittorio** — LangChain (live Fleet demo at [[2026-05-21-chase-langchain-interrupt-26-future-of-ai-agents|Interrupt 26]] ~17:46–19:30; quantified the internal GTM-agent metrics). Currently Dangling; promote on second-source mention.
 
@@ -80,6 +81,16 @@ This makes LangChain a **vendor whose product taxonomy *is* the wiki's vocabular
 [[2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-squads-harness|The GitHub Podcast, S02E02]] is the wiki's first source in which a **competitor's** developer-advocacy team names LangChain, unprompted and from memory, as where the harness vocabulary came from: *"the first time I saw harness and harness engineering defined, I'm pretty sure was Harrison from LangChain… and I think Viv from their team was one of the first people as well to start using that term."* That is [[Harrison Chase]] and Vivek Trivedy ([[2026-03-10-trivedy-langchain-anatomy-of-an-agent-harness|The Anatomy of an Agent Harness]]) — corroboration of the attribution [[concepts/agent-harness|agent-harness]] already holds, arriving from outside the LangChain orbit.
 
 The same host then denies the construct is new, on LangChain's own evidence: *"historically with LangChain you could build an agent and basically you were already building a harness, because you were using this infrastructure where it was developing a small loop and you could add context to that, you could add MCP servers… to me it's very similar to what we already had with just an agent."* Both halves are worth the page. LangChain is credited with **naming** the layer; it is simultaneously used as the proof that the layer predates the name.
+
+## Distributing a third-party model class: Jev (2026-09-22)
+
+In one week of September 2026 LangChain published three pieces on **Jev**, the non-generative *"System One"* decision model from [[TypeSafe AI]], and shipped the `langchain-typesafe` integration. This is the first time the wiki records LangChain as the **distribution channel for another company's model**, not as the builder of the layer around it:
+
+- [[2026-09-17-runkle-lovell-langchain-building-a-harness-with-jev|Building a Harness with Jev]] (blog): two harness middleware components, `ModelRouterMiddleware` and `AutoModeMiddleware`. The second is pitched as open-sourcing the tool-risk classifier that closed coding harnesses keep internal.
+- [[2026-09-20-shea-roche-langchain-jev-as-a-judge-agent-evals|Jev-as-a-Judge for Agent Evals]] (blog): a five-case LangSmith experiment comparing Jev with GPT-5.6 Luna, GPT-5.6 Terra and Claude Sonnet 4.6 as eval judges. It is the only measurement of Jev in the wiki.
+- [[2026-09-21-runkle-langchain-building-a-harness-with-jev|Building a Harness with Jev]] (video, presented by [[Sydney Runkle]]).
+
+All three ended by promoting a joint livestream with TypeSafe on 22 September. Read them as partner marketing that includes one small, candidly scoped experiment.
 
 ## Mentioned in
 

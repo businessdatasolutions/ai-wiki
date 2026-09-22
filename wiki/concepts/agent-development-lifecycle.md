@@ -3,9 +3,9 @@ type: concept
 aliases: ["agent development lifecycle", "ADLC", "agent SDLC", "agent lifecycle"]
 tags: [agent-development-lifecycle, adlc, ai-agents, agent-engineering, lifecycle-frameworks, sdlc-parallel, build-test-deploy-monitor, agent-governance, evals, llm-as-judge]
 confidence: 0.88
-last_confirmed: "2026-08-30"
-accessed_at: "2026-09-05"
-source_count: 18
+last_confirmed: "2026-09-22"
+accessed_at: "2026-09-22"
+source_count: 20
 relationships:
   - type: part-of
     target: ai-agents
@@ -144,6 +144,25 @@ Plus Narayanan's **capability-reliability gap** (see [[ai-benchmarks]]) and Habi
 
 The engineering-leadership operationalisation of the **Test** phase. Forsgren and Macvean position **eval-design as the top upskilling priority** for AI-era engineers: *"because verification is such a big bottleneck, you need to be confident in how you evaluate AI output. The whole of the T-shaped engineer is essential here, as this really requires a mix of AI, Software Engineering, User and Business skills, in order to ensure you are developing realistic, grounded, and relevant evals."* Evals double as the **shared-team-knowledge artifact** — *"a critical artifact to ensure shared team knowledge, and a big part of how intent is captured. They help us define what good looks like."* Convergent with Husain's *binary judges + TPR/TNR* prescriptions and Sathiamoorthy's *level-0-vs-level-1 verifiability* framing, but landed from the **engineering-team capability vantage** rather than the eval-construction vantage. Two further ADLC-relevant primitives the talk operationalises: **agent journaling** (agents reflect into structured logs at the end of each session, surfacing tool-usability and instruction-ambiguity problems) maps to Chase's **Monitor → Iterate** loop with the agent itself as the data source; **risk-assessor + shepherding agents on CI/CD** at fleet scale operationalise Chase's **Govern** ring's *audit trails* and *HITL* axes mechanically. The Google-side counterpart to Anthropic-side ADLC operationalisations elsewhere in the cluster.
 
+#### Judge-model anchor — a non-generative judge, measured for variance ([[2026-09-20-shea-roche-langchain-jev-as-a-judge-agent-evals|Shea & Roche / LangChain, September 2026]])
+
+The sources above treat the judge as a given (*"an LLM"*) and put their care into the rubric, the dataset and the agreement metric. This source varies the **judge model** and holds everything else fixed. Five runs of a Deep Agents weather agent were frozen as LangSmith examples, and each of four judges scored each run 100 times against one human reviewer's labels. The fourth judge is **Jev**, a non-generative *"System One"* decision model from [[TypeSafe AI]] that returns typed answers with probabilities instead of generating text.
+
+| Judge | `does_pass` accuracy | Quality variance (× Jev) | Cost / call | Latency |
+|---|---|---|---|---|
+| Jev | 100% | 1× | $0.00035 | 0.44 s |
+| GPT-5.6 Luna | 96.4% | 433× | $0.00039 | 2.50 s |
+| GPT-5.6 Terra | 99.8% | 913× | $0.00289 | 2.83 s |
+| Claude Sonnet 4.6 | 80.0% | 92× | $0.02811 | 2.16 s |
+
+Three things this adds to the Test phase:
+
+- **Accuracy and repeatability as separate properties.** *"A judge can still be consistently wrong. But when a judge is accurate, lower variance makes that accuracy more dependable in production."* The authors combine them into a *signal value* (accuracy × repeatability). By that measure Claude Sonnet 4.6's 80% is one case wrong every time, not scattered error, and GPT-5.6 Luna's losses come from flipping verdicts on identical input.
+- **Judge cost as a coverage constraint.** The argument is not accuracy but budget: *"When evaluator calls are expensive, teams have to decide between coverage and their budget."* A cheap, stable judge lets a team score more production traces against more focused criteria. That is Guthrie's online mode and Husain's continuous evals, with the sampling rate raised.
+- **Evaluation framed as a decision task**, not a generation task, which is the case for using a classifier-style model here.
+
+The scope is narrow: n = 5, one domain, one human rater, provider-default sampling for the LLM judges. The vendor ships both the Jev integration and the platform. The authors call the result observational. [[2026-09-21-runkle-langchain-building-a-harness-with-jev|LangChain's companion video]] summarises it as *"much more reliable and consistent"*, which is stronger than the data.
+
 ### Deploy (more than hosting)
 
 - **Durable runtime** — checkpoint progress, resume on failure (LangSmith Deployment, AWS AgentCore, Temporal).
@@ -245,6 +264,7 @@ Vendor content with no measurements throughout; see the source page's scope warn
 - **Compounding loop / Telemetry-as-training-data**: Chase names it (*"Important traces become dataset examples"*); Google does not. Worth tracking whether more mature vendor / practitioner formalizations name the compounding loop explicitly. [[2026-05-07-chatterjee-anatomy-of-agent-harness|Chatterjee's]] Compounding layer is the strongest existing articulation; Chase's Monitor → Iterate loop is the second.
 - **Agent governance as candidate concept**: Chase's six axes (cost / tool access / audit trails / HITL / discoverability / shared infrastructure) name an emerging concept currently single-source. Promote on second-source mention.
 - **Simulation as evaluation primitive**: also single-source for now. Promote on second-source mention.
+- **Judge-model choice**: every eval source before September 2026 assumed a generative LLM judge. [[2026-09-20-shea-roche-langchain-jev-as-a-judge-agent-evals|Shea & Roche]] compare judge models directly on five cases. Does the variance gap survive more cases, several raters, and pinned sampling settings?
 - **Promote or fold**: this concept is now substantiated enough to stand. Does it need any further sub-pages (e.g. *agent governance*, *agent evaluation*) or does it absorb them?
 
 ## Verification is the weakest stage (added 2026-08-30)

@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.95
-source_count: 106
+source_count: 109
 relationships:
   - type: part-of
     target: ai-agents
@@ -20,8 +20,8 @@ relationships:
   - type: uses
     target: small-language-models
     via: "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed"
-last_confirmed: "2026-09-19"
-accessed_at: "2026-09-19"
+last_confirmed: "2026-09-22"
+accessed_at: "2026-09-22"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -1025,3 +1025,12 @@ The same deck draws a consequence the harness literature has not: if every agent
 Dedicated spec-driven development tools are harness features under another name. [[2026-05-26-kmiecik-deepsense-spec-driven-development-reliable-ai-coding|Kmiecik (deepsense.ai, May 2026)]] describes the spec, plan and tasks as being *"injected into context"* by *"a given spec-driven development harness or tool"*, and the project-wide *constitution* (GitHub Spec Kit's name for it) as *"similar to AGENTS.md or CLAUDE.md but something more powerful, because it's built into the given tool. So the enforcement is higher."*
 
 That is a claim about harness reliability: context delivered by the tool's own workflow is followed more reliably than context in a file the agent is told to read. It is asserted, not measured, and Kmiecik concedes the limit in the same talk — **spec drift**, where *"non-deterministic LLMs can ignore what… our tools are telling them."* Stronger enforcement lowers drift but does not remove it. See [[spec-driven-development]].
+
+## Decisions moved out of the main model, as middleware (added 2026-09-22)
+
+[[2026-09-17-runkle-lovell-langchain-building-a-harness-with-jev|Runkle & Lovell (LangChain, September 2026)]] add a component this page's layer diagrams did not list: a **second, non-generative model inside the harness** that makes the harness's own decisions. LangChain's `langchain-typesafe` package wraps [[TypeSafe AI]]'s Jev, a classifier-style model that returns typed probabilities. It exposes Jev as two middleware components:
+
+- **`ModelRouterMiddleware`** picks the run's model from plain-language criteria (*"Choose the least costly model that can complete the task"*). That makes [[small-language-models|model routing as a harness decision]] a configured component, not hand-written logic. It routes **once per run**, from the latest user message, not per step.
+- **`AutoModeMiddleware`** scores tool calls for risk and blocks them before execution. It is the Constraints-layer pre-tool hook, with the intent check done by a model instead of a rule list (see [[agent-oversight-and-delegation]]).
+
+The general point is that **the harness has model calls of its own**: routing, gating and judging are decisions the harness makes about the agent. They can be served by a different, cheaper model from the one the agent reasons with. [[2026-09-21-runkle-langchain-building-a-harness-with-jev|The companion video]] gives the latency reason: a risk gate slow enough to hurt the loop gets switched off. The same model used as an eval judge is on [[agent-development-lifecycle]] via [[2026-09-20-shea-roche-langchain-jev-as-a-judge-agent-evals|Shea & Roche]]. Both components ship under an `experimental` namespace, with no error rates reported.

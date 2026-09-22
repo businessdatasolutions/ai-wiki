@@ -3,9 +3,9 @@ type: concept
 title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
 confidence: 0.85
-last_confirmed: "2026-09-19"
-source_count: 16
-accessed_at: "2026-09-19"
+last_confirmed: "2026-09-22"
+source_count: 18
+accessed_at: "2026-09-22"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
   - type: part-of
@@ -154,6 +154,18 @@ First, **the page's standing complaint applies to a gate that now ships by defau
 Second, **this is a trust transfer, not a trust reduction.** The corpus's never-let-the-agent-grade-its-own-homework rule says an agent should not evaluate its own work; auto mode has a model evaluate another model's actions. Whether that counts as an independent evaluator depends on correlation between the classifier's blind spots and the agent's — exactly the configuration the [[2026-09-01-cfa-institute-agentic-ai-finance-workflows-governance|CFA roundtable]] flags as least likely to catch an error, there for human-and-model bias, here for model-and-model.
 
 Worth noting as a small counterweight to the autonomy push: the same episode shows the feature **off by default** on Google's Agent Platform, gated behind an environment variable. Distribution channel, not principle — but it is the one place in the episode where someone chose the conservative default.
+
+### The gate's latency is also a cost, and the classifier leaves the closed harness (added 2026-09-22)
+
+Two LangChain sources on the [[TypeSafe AI]] Jev integration extend this section in two ways.
+
+**A gate switched off for being slow.** Permission fatigue is a gate that asks *too often*. [[Sydney Runkle]] describes a second way to lose one, a gate that answers *too slowly*:
+
+> *"I actually turned off auto mode in my coding agent recently, because the classification step of whether a given tool call was risky was too slow for my coding agent to feel productive. But it's back on now that Jev can make these decisions so quickly."* ([[2026-09-21-runkle-langchain-building-a-harness-with-jev|Runkle / LangChain video, September 2026]])
+
+The classifier was not wrong; it added latency to every tool call, and in an agent loop that latency is paid many times per task. So the per-call cost of a gate is a design variable for oversight, alongside its accuracy. One practitioner's anecdote, not a measured rate.
+
+**The pattern, open-sourced.** [[2026-09-17-runkle-lovell-langchain-building-a-harness-with-jev|Runkle & Lovell]] ship `AutoModeMiddleware`, which puts a third-party classifier in front of any LangChain agent's tool calls. They describe it as taking the Claude Code / Codex / Cursor pattern out of *"the closed source parts of the harness"*. The two objections above apply unchanged. No false-block or false-approve rate is reported. And a model still judges another model's actions, with no evidence on how correlated their blind spots are. What changes is who can inspect and configure the gate: the middleware and its tool scope are code the deployer owns.
 
 ## The escalation path inverted: agents that call humans, and the loop that closing it requires (added 2026-09-16)
 

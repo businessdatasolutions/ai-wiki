@@ -10,6 +10,23 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-22] ingest | A model that doesn't write text, three ways: routing, risk gating, and judging evals
+
+Four URLs supplied by the user; **three ingested, one deferred**. The three are LangChain's Jev material: [[2026-09-17-runkle-lovell-langchain-building-a-harness-with-jev]] (blog), [[2026-09-20-shea-roche-langchain-jev-as-a-judge-agent-evals]] (blog) and [[2026-09-21-runkle-langchain-building-a-harness-with-jev]] (video).
+
+**Acquire.** Playwright's Chromium was missing after an update (`chromium_headless_shell-1223`); `playwright install chromium-headless-shell` fixed it. The Jev video came through first time with a **manual** English caption track, so it needed no ASR cleanup. **Deferred: McKinsey, *Improving the economics of agentic AI: A guide for business leaders*** (`EPA9nc01ZCs`, Tanguy Catlin and Lari Hämäläinen, ~37:33). It is a livestream from 22 Sep 2026 whose captions YouTube had not processed at acquire time (`caption_tracks: []`). Nothing landed in `raw/`; retry once captions exist. The two blog posts were fetched with curl and converted with html2text. The page JSON-LD names only a placeholder author (*"LangChain Accounts"*), so the visible bylines were used. Five results tables in the eval post are images; they were read and transcribed into the raw file's appendix.
+
+**What it adds.** A **non-generative decision model inside the agent harness** ([[TypeSafe AI]]'s Jev: state + typed questions → probabilities), used three ways: per-run model routing, tool-risk gating, and eval judging. The eval post is the only measurement. It shows that the vendor's *"200× faster, 400× cheaper"* claim does not hold on this setup. Jev vs GPT-5.6 Luna is **1.1× cheaper** per call ($0.00035 vs $0.00039), vs Claude Sonnet 4.6 ≈80×, at ~5–6× lower latency. Its real result is **variance**: 92–913× lower than the LLM judges on identical inputs, with 500/500 agreement with one human rater on five cases. From the tables: Sonnet 4.6's 80.0% accuracy with 80.0% signal value means repeatability 1.0, so one case was judged wrong every time. The video adds a first-person account of **disabling a safety gate because it was slow**, a second way to lose a gate alongside permission fatigue.
+
+**Neighbour-source scan.** Path A (W&W cells) returned 50–94 sources per cell, too broad to use. Path B via [[agent-development-lifecycle]], [[small-language-models]] and [[agent-oversight-and-delegation]], plus topic greps for judge / auto mode / routing. **Filed** (all `supports`, with neutral `via:`): three companion edges among the new pages; Guthrie/Braintrust, Husain, the HF agentic-evals workshop and Chase's ADLC essay (from the eval post); Hallie on *The Agent Factory* (auto mode, from the blog and the video); Belcak/NVIDIA, *Agent Factory* on harnesses, and Trivedy (from the blog). **Skipped:** Khan/Cline and Anthropic's evals-for-taste — about eval practice generally, not judge choice.
+
+**Pages touched.**
+- New: the three source pages; [[Sydney Runkle]] (entity, two sources in one ingest); [[TypeSafe AI]] (entity, org, three sources, alias `Jev`).
+- Concepts (dated sections added; `source_count` bumped; confidence unchanged, because all sources are vendor partner content): [[agent-development-lifecycle]] (18→20, a Test-phase *judge-model anchor* and an open-question bullet), [[agent-oversight-and-delegation]] (16→18, a sub-section on gate latency and the open-sourced classifier), [[small-language-models]] (6→9, specialised vs small, with Jev's size undisclosed), [[agent-harness]] (106→109, harness-owned model calls as middleware).
+- Entities: [[LangChain]] (10→13; section on distributing a third-party model; Runkle added to People).
+- `index.md`: a three-source block at the top of Sources; two entity bullets.
+- Dangling (single source): Hunter Lovell, Daniel Shea, Seán Roche.
+
 ## [2026-09-21] ingest | Strategy gets a middle step: McKinsey on mobilization, and the host who now has a page
 
 One video supplied by the user: [[2026-09-08-west-lacroix-zimmerman-mckinsey-why-strategy-needs-mobilization]] (*Inside the Strategy Room*, 8 Sep 2026; Andy West, Sébastien Lacroix and Whitney Zimmerman, hosted by [[Sean Brown]]).
