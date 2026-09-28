@@ -3,8 +3,8 @@ type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
-last_confirmed: "2026-09-21"
-source_count: 56
+last_confirmed: "2026-09-28"
+source_count: 57
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -12,7 +12,7 @@ relationships:
   - type: contradicts
     target: automation-vs-augmentation
     via: "process lock-in = automation without redesign; reinvent-the-business resists this trap"
-accessed_at: "2026-09-21"
+accessed_at: "2026-09-28"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -421,3 +421,7 @@ Two more restatements, each adding a mechanism.
 **Dispersion.** [[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over|Krishna / IBM on Bain's Winning with AI, September 2026]] puts the trap in arithmetic. *"Let's say a reasonable enterprise is willing to spend a couple of hundred million dollars a year… If you now spread it across a 100 experiments, you probably have three to five people in each experiment… And then you don't have the ability on how to scale it."* One hundred people and $15–20M on a single area is his alternative. This is the budget-level form of the task-level trap: many small projects, none large enough to redesign a workflow. It matches the first step of [[2026-05-02-dutt-chatterji-ai-experimentation-to-transformation|Dutt et al.]] (narrow to 4–5 domains).
 
 **The cockpit.** [[2026-08-11-ellmer-dhar-bcg-so-what-is-your-ai-rollout-built-to-fail|Ellmer & Dhar / BCG, August 2026]] tell the story of Paul Fitts, the WWII psychologist who cut pilot error by redesigning the cockpit rather than retraining pilots. *"Right now we're sort of giving people a tool and we're saying, use AI… And what people are doing is sort of small changes. They're sort of playing with it. We actually need to think about how do we redesign the cockpit."* Dhar: *"If your assumption is that a car is just a faster horse, you miss a lot of the chances to think about the driver."* This is the trap stated as an interface-design error: the tool arrives, the workflow around it does not change, and the gains stay at the level of individual tinkering.
+
+## A task cut from 10 days to one, and the customer still waited 10 (added 2026-09-28)
+
+[[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune|Vlad Lukic (BCG, Aug 2026)]] tells the trap as a client story. The goal was *"can we do this task shorter than it took us before"*, and it went from 10 days to one. But *"the business processes were never changed… It still took 10 days to get a response back, and they actually had an extra cost."* Switching the metric to customer response time and cost gave the *"forcing function"*: committees and steps were removed and the end-to-end time fell to one day.

@@ -5,9 +5,9 @@ aliases: ["Anthropic", "Anthropic PBC", "Claude"]
 tags: [anthropic, ai-lab, foundation-models, claude, public-benefit-corporation, long-term-benefit-trust]
 since: 2021
 confidence: 0.95
-last_confirmed: "2026-09-21"
-accessed_at: "2026-09-21"
-source_count: 30
+last_confirmed: "2026-09-28"
+accessed_at: "2026-09-28"
+source_count: 31
 ---
 
 # Anthropic
@@ -102,3 +102,7 @@ SORT file.name ASC
 ## Open questions
 
 - The wiki has multiple references to Claude as a measurement substrate but no primary source on Anthropic itself yet; this entity page is a stub awaiting first-party Anthropic source ingestion.
+
+## Cited as its own customer (added 2026-09-28)
+
+[[2026-02-14-tan-yc-the-new-way-to-build-a-startup|Garry Tan's "20x company" episode]] opens with an Anthropic engineer's post that Claude wrote Claude Cowork and that developers each manage *"anywhere between three and eight Claude instances"*. Tan uses it as the example that sets his whole argument up.

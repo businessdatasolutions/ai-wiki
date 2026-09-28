@@ -33,7 +33,10 @@
       "Bash(.venv/bin/pip install *)",
       "Bash(.venv/bin/pip list *)",
       "Bash(.venv/bin/python -c ' *)",
-      "Bash(node scripts/lint-dangling-authors.mjs)"
+      "Bash(node scripts/lint-dangling-authors.mjs)",
+      "Bash(python fetch_transcript.py *)",
+      "Bash(python .claude/skills/youtube-transcript-skill/fetch_transcript.py *)",
+      "Bash(python -m playwright install *)"
     ]
   },
   "hooks": {

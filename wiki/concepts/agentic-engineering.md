@@ -3,9 +3,9 @@ type: concept
 aliases: ["agentic engineering", "Agentic Engineering", "agentic-engineering", "agent engineering"]
 tags: [agentic-engineering, vibe-coding, software-3.0, ai-agents, agent-harness, software-engineering, hiring, karpathy, codex-case-study]
 confidence: 0.95
-last_confirmed: "2026-09-19"
-accessed_at: "2026-09-19"
-source_count: 61
+last_confirmed: "2026-09-28"
+accessed_at: "2026-09-28"
+source_count: 62
 relationships:
   - type: depends-on
     target: agent-harness
@@ -343,3 +343,7 @@ Two points bear on this page directly.
 
 - **The review inversion has an upstream variant.** Kmiecik agrees that *"your job here shifts from typing the code to reviewing the code"*, but places the most important review earlier: on the spec, before the plan and the code are generated from it. SDD is an attempt to move part of the review from code to spec, where it is cheaper. Whether total review time falls is not measured, and Kmiecik also reports that spec, plan and task files multiply quickly.
 - **The maintenance tax applies to the spec layer too.** His advice on GitHub Spec Kit's *constitution* — check whether each item changes the output, *"if you put there some things that don't make a change, then it's only a noise in the context"* — is the same discipline this page records for skill files, one layer up.
+
+## Agentic engineering past the engineering team (added 2026-09-28)
+
+[[2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved|Geoff Charles (Ramp CPO)]] describes agentic engineering spreading into product management: a coding agent that anyone in the company can call from Slack (about a thousand PRs in a month from non-engineers), plus agents for spec writing, review, QA and coordination. His advice to PMs is to *"be as lazy as engineers"*. He also names the precondition: *"coding agents are really good when you have a strong architecture and a strong code base."*

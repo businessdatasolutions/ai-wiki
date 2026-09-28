@@ -3,9 +3,9 @@ type: concept
 title: Agent fleet management
 aliases: ["agent fleet management", "managing agent fleets", "agent manager", "human as agent manager", "parallel agents", "agent orchestration at scale"]
 confidence: 0.75
-last_confirmed: "2026-09-18"
-source_count: 12
-accessed_at: "2026-09-18"
+last_confirmed: "2026-09-28"
+source_count: 13
+accessed_at: "2026-09-28"
 tags: [agent-fleet, parallelism, cloud-agents, isolated-workspaces, decision-fatigue, priority-queue, span-of-control, delegation, playbooks, token-economics]
 relationships:
   - type: part-of
@@ -116,3 +116,7 @@ At that scale the page's organising question — **span of control** — stops b
 ## An in-house VM fleet invoked from a task comment (added 2026-09-18)
 
 Notion's internal "Boxy" system, described by [[2026-05-11-nystrom-how-i-ai-spec-driven-development-notion|Nystrom on How I AI (May 2026)]], is fleet infrastructure built into a company's own tooling: VMs with Codex and Claude Code installed, invoked by @-mentioning Codex in a comment on a Notion task, returning a pull request with a preview URL and its own UI-verification screenshots. Nystrom manages the result the way [[2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder|Carson]] does — fire off several, then manage them "round-robin" rather than iterate beside one — and prefers Codex for it because it "can grind for like hours." Host [[Claire Vo]]'s prescription is organisational: a large engineering org without "a like VM strategy and background agent strategy" should get one, and fleet throughput is capped by CI speed (see [[agentic-pull-requests]]).
+
+## One human, one agent, dozens of accounts (added 2026-09-28)
+
+[[2026-02-14-tan-yc-the-new-way-to-build-a-startup|Tan's "20x company" episode (YC, Feb 2026)]] describes GigaML's internal agent Atlas working *"in tandem with a human FTE to service dozens of accounts"*: one person handles customer relationships and requests while Atlas does the browser work, policy edits and code. Phaseshift goes the other way, with one custom agent per employee built from each person's written list of manual tasks. Founder claims, no detail on how the agents are supervised.

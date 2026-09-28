@@ -3,9 +3,9 @@ type: concept
 title: Agentic pull requests
 aliases: ["agentic pull requests", "agentic PRs", "agent-authored PRs", "Agentic-PR", "auto-merge", "AI code review"]
 confidence: 0.85
-last_confirmed: "2026-09-19"
-source_count: 11
-accessed_at: "2026-09-19"
+last_confirmed: "2026-09-28"
+source_count: 12
+accessed_at: "2026-09-28"
 tags: [agentic-pr, aidev, auto-merge, code-review, rejection-rate, risk-scoring, msr-2026, merge-queue, review-bottleneck, technical-debt]
 relationships:
   - type: part-of
@@ -111,3 +111,7 @@ The review-capacity bottleneck this page describes has a large-scale response on
 Two things this adds. First, a **unit cost** for machine review, under a dollar per review, which puts the economics of the gate on the page for the first time. Second, the architecture: **specialist reviewers per concern, merged by a coordinator**, which is the multi-dimension scoring of [[2026-08-05-vo-lennys-merge-mommy-ai-code-review-bot|Merge Mommy]] run as separate agents. It is the same answer Adobe's security leader reached from the other direction in [[2026-09-10-alim-pydata-ai-security-paradox-asymmetric-threats|Alim's talk]]. Loading every team's guidance into the *authoring* agent crowds its context, so checking each concern in a separate *reviewing* agent keeps it out of the authoring agent's context.
 
 What the deck does not report is the outcome: how many reviews found something real, how many were dismissed, and whether change failure rates moved. Coverage and cost describe the gate, not what it catches.
+
+## One firm's agent share of authoring and review (added 2026-09-28)
+
+[[2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved|Geoff Charles, Ramp CPO, at Lenny and Friends Summit (Sept 2026)]] gives both halves of the pipeline at one company. Authoring: Ramp's in-house coding agent Inspect builds *"75% of our PRs"*, with about a thousand PRs in a month *"submitted by a non-engineer"*. Review: a review agent, Review Buddy, reads the codebase, the quality and security checks and *"all the prompts that led you to build that code"*, and *"93% of our PRs are now automatically handled"*, so senior engineers spend their time on the remaining 7%. The talk does not define "handled" (approved, commented or routed), and the figures are self-reported. The structure matches the "bottleneck moved" argument above: once authoring was automated, review was automated next, and testing (a QA agent) after that.

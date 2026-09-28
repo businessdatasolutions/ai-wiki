@@ -5,10 +5,13 @@ aliases: ["Lenny's Podcast", "Lennys Podcast", "lennypodcast", "Lenny Rachitsky'
 tags: [lenny-podcast, podcast, product-management, consumer-tech, ai-era-strategy, founder-interviews, lenny-rachitsky]
 since: 2022
 confidence: 0.85
-last_confirmed: "2026-07-19"
-accessed_at: "2026-07-19"
-source_count: 7
+last_confirmed: "2026-09-28"
+accessed_at: "2026-09-28"
+source_count: 8
 relationships:
+  - type: published-by
+    target: 2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved
+    via: "Geoff Charles (Ramp CPO) at Lenny and Friends Summit on internal agents for each step of product development and the three-way split of the PM role (25 September 2026)"
   - type: published-by
     target: 2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era
     via: "Elizabeth Stone (Netflix CPTO) on systems thinking as the top rising hiring criterion, a universal AI-fluency career-ladder overlay, 'excellence as an operating system,' and paved-paths infrastructure hardening as agents proliferate (19 July 2026 — Stone's second appearance, 2.5 years after her first as CTO)"
@@ -72,3 +75,7 @@ The episode-archive at lennysnewsletter.com (cited in the Spiegel transcript) li
 - **Rahul Vohra (Superhuman) — secret-to-success interview** — referenced in Spiegel 2026.
 
 None are claims about Lenny's Podcast itself; they are dangling forward-references this entity page captures so future ingests have a head-start.
+
+## Summit talks on the channel (added 2026-09-28)
+
+[[2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved|Geoff Charles (Ramp CPO), recorded at Lenny and Friends Summit, 10 September 2026]] is the first conference talk from the channel in the wiki, not an interview: a 19-minute keynote on Ramp's internal agents for each step of product development and the PM role splitting into factory-builder, taste maker and GM.

@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-09-21"
-accessed_at: "2026-09-21"
-source_count: 130
+last_confirmed: "2026-09-28"
+accessed_at: "2026-09-28"
+source_count: 133
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -908,3 +908,9 @@ Two sources this week address the same stall — pilots that never reach product
 **[[2026-08-11-ellmer-dhar-bcg-so-what-is-your-ai-rollout-built-to-fail|Ellmer & Dhar / BCG, August 2026]].** The authors of *How Change Really Works* place the failure in the change process rather than the portfolio: **false alignment** among executives at the start, a **messy middle** where momentum *"leaks"* (meetings become updates, slippage becomes normal), and poor endurance at the end. AI differs from other transformations in intensity and in the threat to identity (*"if I don't write software code, who am I?"*). Their prescription for rollouts: redesign the workflow — *"the cockpit"* — rather than hand out the tool, and give employees agency rather than asking them to take part.
 
 Together they cover the two halves of the page's recurring diagnosis. Krishna says where to put the money; Ellmer and Dhar say what has to happen to the people once it is there. Neither offers outcome data beyond self-report.
+
+## Three September-2026 views: the factory, the small team, and the bill (added 2026-09-28)
+
+- **The product factory, step by step.** [[2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved|Geoff Charles (Ramp CPO)]] maps the product life cycle onto internal agents: customer insight, spec writing (Glass), coding (Inspect, 75% of PRs), review (Review Buddy, 93% of PRs), QA (Testo) and coordination (Gadget, 85% of questions to PMs). His general point is that *"the organization needs to be legible to your agents"*, and that AI *"removes the bottleneck but moves it."* Self-reported figures.
+- **Adoption as a headcount strategy.** [[2026-02-14-tan-yc-the-new-way-to-build-a-startup|Garry Tan's "20x company" episode (YC, Feb 2026)]] describes three YC companies that automate every internal function to stay small: an AI teammate (GigaML's Atlas), one internal source of truth (Legion Health, 4x growth with no net new hires), and a custom agent per employee (Phaseshift, 12 people). YC portfolio promotion; founders' own figures.
+- **The bill arrives in the boardroom.** [[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune|Lukic & Goydan (BCG, Aug 2026)]] describe the phase after enthusiastic adoption: from "tokenmaxxing" to "valuemaxxing". They split AI spend into CapEx, OpEx and COGS so that business owners, not IT, carry the cost and the ROI. Two warnings: frontier models are used on routine work, and a task sped up from 10 days to one delivers nothing if the process around it still takes 10 days. BCG figures without method.

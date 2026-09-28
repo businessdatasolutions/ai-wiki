@@ -3,9 +3,9 @@ type: concept
 aliases: ["founder-led sales", "founder sales", "founder-led-sales", "founder selling"]
 tags: [founder-led-sales, go-to-market, sprint-framework, first-10-customers, buyer-uncertainty, attention-vs-traction, founder-credibility, do-things-that-dont-scale, b2b-saas, sales-methodology]
 confidence: 0.85
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
-source_count: 5
+last_confirmed: "2026-09-28"
+accessed_at: "2026-09-28"
+source_count: 6
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -79,3 +79,12 @@ That is the same instinct as [[2026-06-22-yc-kolysh-how-to-get-your-first-10-cus
 **Two operational rules worth carrying.** On pricing, a **threshold test rather than an optimisation**: *"It has to top the hurdle… but if it passes the threshold, then the answer is you don't think about it. You just go and get as many of those as you can."* On team, **hire sales operations earlier than feels necessary** — one person on territory alignment, name lists, commission rules — because *"it's generally not going to be your sales leader"*, who is busy hiring and closing.
 
 **Caveat this heavily.** It is a venture firm promoting its own partner's framework, illustrated entirely with its own portfolio companies, with no counter-example of a company that picked the wrong quadrant. The framework is asserted from observation and tested nowhere.
+
+## Investors on the hand-off, and on "consulting" (added 2026-09-28)
+
+[[2026-02-02-dalton-michael-how-great-founders-approach-sales|Dalton + Michael, How Great Founders Approach Sales (Feb 2026)]] argues this page's load-bearing claim from the investor's chair. Two points add to it:
+
+- **The hired VP can't find the approach from scratch.** A VP of Sales from a company with an established playbook is good at running a team and hitting quota, *"but it usually doesn't mean figuring out from first principles how to do sales."* Michael Seibel: *"It is obvious those skills do not translate."* From founders who came from Palantir he takes the enterprise version: the CEO originates and rescues the large deals, and *"the sales organization is almost built around the founders… as almost a multiplier effect on their work."*
+- **"Consulting" is mostly a false fear.** Seibel's advice (*"Just do consulting. Nine times out of 10 you're probably not doing real consulting"*) treats bespoke early work as a way to learn the problem. He reframes deep integrations and long sales cycles as moats, not costs. Caldwell's boundary is the *"pseudo tarpit"*: revenue from an unimportant problem that doesn't generalise.
+
+The episode also gives the page a plain definition of good selling: *"good sales is good problem-solving"*, with trade meaning both sides end up better. No data; two investors' office-hours experience.

@@ -4,9 +4,9 @@ kind: organization
 aliases: ["Boston Consulting Group", "BCG", "BCG Henderson Institute"]
 tags: [BCG, management-consulting, henderson-institute]
 confidence: 0.85
-last_confirmed: "2026-09-21"
-accessed_at: "2026-09-21"
-source_count: 6
+last_confirmed: "2026-09-28"
+accessed_at: "2026-09-28"
+source_count: 7
 ---
 
 # Boston Consulting Group
@@ -38,3 +38,7 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "BCG")
 SORT file.name ASC
 ```
+
+## AI Cost Advantage practice (added 2026-09-28)
+
+[[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune|Lukic & Goydan on The So What from BCG (Aug 2026)]] introduces a practice that, in Paul Goydan's words, *"didn't exist six or eight months ago"*: helping clients control AI spend through model selection, cost categorisation (CapEx / OpEx / COGS) and business ownership of AI ROI. Vlad Lukic leads Tech and Digital Advantage; Goydan leads AI Cost Advantage.

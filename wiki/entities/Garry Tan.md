@@ -6,9 +6,9 @@ tags: [garry-tan, y-combinator, gstack, gbrain, ai-founder-type, startup-school,
 affiliation: "[[Y Combinator]]"
 role: "President & CEO, Y Combinator (since 2023); founder/engineer; ex-Palantir #10; Posterous co-founder"
 confidence: 0.95
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
-source_count: 7
+last_confirmed: "2026-09-28"
+accessed_at: "2026-09-28"
+source_count: 8
 ---
 
 # Garry Tan
@@ -140,3 +140,7 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "garry-tan") OR contains(tags, "gstack") OR contains(tags, "gbrain")
 SORT file.name ASC
 ```
+
+## The "20x company" framing (added 2026-09-28)
+
+[[2026-02-14-tan-yc-the-new-way-to-build-a-startup|The New Way To Build A Startup (YC, Feb 2026)]]: Tan names startups that automate all internal functions *"20x companies"* (a term from GigaML's founders), presents them as an evolution of Parker Conrad's "compound startup", and lists three patterns: AI teammate, one source of truth, and a custom agent per employee.

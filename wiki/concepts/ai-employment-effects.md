@@ -3,8 +3,8 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-09-21"
-source_count: 84
+last_confirmed: "2026-09-28"
+source_count: 85
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -12,7 +12,7 @@ relationships:
   - type: caused
     target: ai-deskilling
     via: "task-composition shift is one mechanism within broader employment effects"
-accessed_at: "2026-09-21"
+accessed_at: "2026-09-28"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -692,3 +692,7 @@ Two sources add to the page from angles it has covered less.
 **Identity.** [[2026-08-11-ellmer-dhar-bcg-so-what-is-your-ai-rollout-built-to-fail|Ellmer & Dhar / BCG, August 2026]]: what makes AI transformations different is that they threaten identity before any job disappears. Employees ask *"If I don't write software code, who am I; what is valuable about being a person in this organization?"* while also asking what to tell their children. BCG research, cited not shown: close to 90% of employees expect to need substantial reskilling. It matches the 13% identity-uncertainty effect [[2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees|Kropp et al.]] measured.
 
 **Distribution.** [[2026-09-18-swisher-lafrance-atlantic-festival-tech-economy-is-ai-reshaping-america|Swisher / The Atlantic Festival, September 2026]]: asked when AI's productivity promises will be tested, Swisher says nobody knows, and that the question comes second to who gets the gains: *"the economy already sucks for most people in this country. Who got all the good bits?"* Incomes are flat. The page's measurement dispute is about whether AI changes employment. Swisher's point is that the distributional question stands whatever the answer: gains can be real and still go to few. It is asserted without data.
+
+## Flat headcount as the stated goal of small AI-native firms (added 2026-09-28)
+
+[[2026-02-14-tan-yc-the-new-way-to-build-a-startup|Garry Tan's "20x company" episode (YC, Feb 2026)]] presents delayed hiring as the point of internal automation, not a side effect: automating support, ops, sales and design *"allows them to postpone hiring additional sales and ops staff for much longer, keeping payroll down and culture from drifting."* Legion Health reports 4x growth *"but we haven't hired a single net new person"*, and Phaseshift has *"avoided hiring a design person"*. These are founder claims from YC portfolio companies. They record **jobs never created** rather than jobs lost, a channel aggregate employment data cannot see directly.

@@ -10,6 +10,23 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-28] ingest | Where the bottleneck goes next: Ramp's product factory, YC's 20x companies, BCG on the AI bill, and two Dalton + Michael episodes
+
+Six YouTube URLs supplied by the user; **five ingested, one dropped**. Ingested: [[2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved]], [[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune]], [[2026-08-18-dalton-michael-how-to-find-consumer-startup-ideas]], [[2026-02-14-tan-yc-the-new-way-to-build-a-startup]], [[2026-02-02-dalton-michael-how-great-founders-approach-sales]]. **Dropped at the user's request: HubSpot UNBOUND 2026, *Win High-Intent Buyers in the AI Era*** (`dYIHT88SHUM`, two Google speakers). It was a Google Ads × HubSpot product pitch with vendor-only figures; the raw file was deleted before any wiki page was written.
+
+**Acquire.** Playwright's `chromium_headless_shell-1223` was missing again after a package update; `python -m playwright install chromium` fixed it. Allow rules for `fetch_transcript.py` and `playwright install` were added to `.claude/settings.json`, so auto mode's classifier no longer has to rule on them (it had returned no verdict four times in a row). Both Dalton + Michael videos failed first with "transcript panel did not render" and came through on a plain retry at `--timeout 90000`. The BCG episode has a manual caption track; the other four are ASR, cleaned for names (Ramp was transcribed as "RAM", plus Rippling/Zenefits, DoorDash, Palantir, Niki Lauda, Brian Chesky).
+
+**What it adds.** One firm's full map of **internal agents across the product life cycle** (Ramp: coding 75% of PRs, review handling 93%, 85% of PM questions answered by AI; self-reported), framed as *"AI removes the bottleneck but moves it"*. YC's **"20x company"** vocabulary for automating every internal function to delay hiring. BCG's **cost view of adoption**: AI spend split into CapEx / OpEx / COGS and owned by the business, not IT, and model selection named as a capability. Two YC-partner episodes, on **founder sales** (the hired VP can't find the approach from scratch; "consulting" is mostly a false fear) and on **consumer ideas** (AI as a way to give everyone the premium experience the wealthy get, against the *"95% as good"* chatbot).
+
+**Neighbour-source scan.** Path B via the concept pages and topic greps; W&W cells too broad to use. **Filed** (all `supports`, neutral `via:`): Charles → Running an AI-native engineering org, Vo's Merge Mommy, Singhal (PM role). Tan → Blomfield, Hu, Tan & Hu at Stanford. BCG → Ellmer & Dhar (same series), Belcak/NVIDIA. D+M sales → Rubinstein & Onyemah, Kolysh, Caldwell on Lenny's. D+M consumer → Caldwell on Lenny's, Mittal/Yhangry (private chef). **Skipped:** Glasgow/Campfire for the sales episode (enterprise switching is mentioned only in passing); no edge between the two D+M episodes (same channel, different topics).
+
+**Pages touched.**
+- New: five source pages; [[Dalton and Michael]] (entity, venue; `author:` value `Dalton + Michael`, two sources in one ingest).
+- Concepts (dated sections; `source_count` bumped; confidence unchanged, since every source is self-reported, vendor or investor opinion): [[founder-led-sales]] (5→6), [[agentic-pull-requests]] (11→12), [[enterprise-ai-adoption]] (130→133), [[small-language-models]] (9→10), [[ai-employment-effects]] (84→85), [[automation-vs-augmentation]] (69→70), [[agentic-engineering]] (61→62), [[agent-harness]] (109→110), [[systems-thinking]] (8→9), [[agent-fleet-management]] (12→13), [[micro-productivity-trap]] (56→57).
+- Entities: [[Boston Consulting Group]], [[Lenny's Podcast]] (+ `published-by` edge), [[Y Combinator]], [[Garry Tan]], [[Dalton Caldwell]] (2→4), [[Anthropic]], [[Claude Code]].
+- `index.md`: a five-source block at the top of Sources; one entity bullet.
+- Dangling (single source): Geoff Charles, Ramp, Vlad Lukic, Paul Goydan, Georgie Frost, Parker Conrad, GigaML, Legion Health, Phaseshift, Brian Chesky. Michael Seibel is a presenter on two sources but not a frontmatter author, so he is not promoted under the author rule.
+
 ## [2026-09-22] ingest | A model that doesn't write text, three ways: routing, risk gating, and judging evals
 
 Four URLs supplied by the user; **three ingested, one deferred**. The three are LangChain's Jev material: [[2026-09-17-runkle-lovell-langchain-building-a-harness-with-jev]] (blog), [[2026-09-20-shea-roche-langchain-jev-as-a-judge-agent-evals]] (blog) and [[2026-09-21-runkle-langchain-building-a-harness-with-jev]] (video).

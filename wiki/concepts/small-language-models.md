@@ -3,9 +3,9 @@ type: concept
 aliases: ["small language model", "small language models", "SLM", "SLMs", "SLM-first", "heterogeneous agentic systems"]
 tags: [small-language-models, slm, agentic-ai, ai-agents, inference-economics, edge-deployment, quantization, model-specialization, fine-tuning, open-weight-models, tool-calling, function-calling, heterogeneous-agents]
 confidence: 0.75
-last_confirmed: "2026-09-22"
-accessed_at: "2026-09-22"
-source_count: 9
+last_confirmed: "2026-09-28"
+accessed_at: "2026-09-28"
+source_count: 10
 relationships:
   - type: instance-of
     target: foundation-models
@@ -133,3 +133,7 @@ It adds no evidence to this page (see [[2025-06-02-belcak-nvidia-small-language-
 This page argues from **size**: a small model is enough for the narrow calls an agent makes. Three LangChain sources on [[TypeSafe AI]]'s **Jev** make the same heterogeneous-system argument from **output type**. Jev is a *"System One"* decision model. It takes a state and typed questions (choice / score / yes-no) and returns probabilities, with no text generation ([[2026-09-17-runkle-lovell-langchain-building-a-harness-with-jev|Runkle & Lovell]]; [[2026-09-21-runkle-langchain-building-a-harness-with-jev|Runkle video]]). The claim is that many agent decisions are classifications: which model to route to, whether a tool call is risky, whether an answer passes a rubric. So they can move off the generalist model. *"Use an LLM for open-ended reasoning and generation, and Jev for fast, structured decisions along the way."*
 
 **Jev's size is not disclosed**, so it is not evidence for the *small*-model claim. It is evidence for the *specialised*-model one, which is the core of [[2025-06-02-belcak-nvidia-small-language-models-future-agentic-ai|Belcak et al.]]'s portfolio argument. The one measurement ([[2026-09-20-shea-roche-langchain-jev-as-a-judge-agent-evals|Shea & Roche]], five cases, used as an eval judge) is instructive about the economics. Jev cost **$0.00035 per call against GPT-5.6 Luna's $0.00039**, but GPT-5.6 Terra's $0.00289 and Claude Sonnet 4.6's $0.02811. Latency was ~5–6× lower than every LLM. Against a cheap generalist tier, the per-call saving nearly disappears; the latency saving does not. That fits the [[2026-09-14-google-cloud-agent-factory-agent-harnesses-explained|loop-count argument]] above: in a loop, latency compounds. Confidence unchanged; all three sources come from the vendor distributing the integration.
+
+## The buyer's version: frontier models on routine work (added 2026-09-28)
+
+[[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune|Lukic & Goydan (BCG, Aug 2026)]] make the routing argument from the cost side, not the builder's side. Paul Goydan: *"A frontier model costs 30% more than a good enough model. Yet… we see more often than not very basic rudimentary tasks are being handed over to frontier models. It's like giving your teenage driver a brand-new Ferrari."* He calls model selection *"a whole new capability"* for companies, alongside controlling context-window size. The 30% figure is BCG's and is far smaller than list-price gaps between frontier and small models, so the direction of the claim is more useful than the number.

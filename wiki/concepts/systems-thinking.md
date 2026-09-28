@@ -3,9 +3,9 @@ type: concept
 aliases: ["systems thinking", "systems-thinking"]
 tags: [systems-thinking, innovation, sustainability, design-thinking, breakthrough-thinking, wicked-problems]
 confidence: 0.9
-last_confirmed: "2026-08-20"
-accessed_at: "2026-09-01"
-source_count: 8
+last_confirmed: "2026-09-28"
+accessed_at: "2026-09-28"
+source_count: 9
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -193,3 +193,7 @@ SORT file.name ASC
 - ~~Single primary source in the wiki so far; deeper Senge and Forrester texts would strengthen the concept.~~ **Partially closed (2026-05-18)** by [[2026-05-15-sterman-systems-thinking-for-leaders-designing-solutions-that-work|Sterman 2026]] — the Jay W. Forrester Professor of Management at MIT Sloan delivering the in-house MIT-system-dynamics treatment in 58 minutes. Still-open subitem: a primary-source Peter Senge text (*The Fifth Discipline* itself) is not yet in the wiki.
 - How does systems thinking interact with AI tooling? Specifically: AI systems excel at slicing the Gordian knot (breakthrough mode) and at user-centric iteration (design mode); whether they can support genuinely systems-level analysis is open. Sterman's *"lectures don't work"* + *"mental models are reinforced by everyday experience"* claim suggests a sharper sub-question: can AI tools *update* mental models (in the safe-experimentation way a management flight simulator can), or do they just deliver more *experts-telling-you-the-answer* output — which Sterman's research says doesn't change behaviour?
 - The qualitative-vs-quantitative split inside the toolkit (causal mapping vs full simulation) is treated by Sterman as a continuum chosen by problem size. The wiki's empirical anchor for *when each is sufficient* is still thin.
+
+## Bottleneck-chasing in product development (added 2026-09-28)
+
+[[2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved|Geoff Charles (Ramp CPO)]] applies the constraint view to AI in product development. The pit stop fell from 67 to 1.8 seconds *"certainly not by asking the mechanic to work 37 times harder"*, but by removing bottlenecks one at a time, and AI *"removes the bottleneck but moves it."* His prescription is to keep finding the next constraint (coding, then review, then testing, then human attention) and to *"obsess a little bit less about the product… and a little bit more about the factory."* A practitioner's framing, close to the theory of constraints, with no formal method attached.

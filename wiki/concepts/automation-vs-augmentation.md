@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-09-21"
-accessed_at: "2026-09-21"
-source_count: 69
+last_confirmed: "2026-09-28"
+accessed_at: "2026-09-28"
+source_count: 70
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -519,3 +519,7 @@ Caveat: self-reported figures with no stated baselines, on a venture-capital pod
 ## Automating a coordination chain, not a task (added 2026-09-21)
 
 [[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over|Krishna / IBM on Bain's Winning with AI, September 2026]]. IBM's employee verification letter (for a mortgage) used to pass from employee to manager to HR partner to an HR back office that looked up three or four systems: *"17 different human touch points."* An agent now handles it; the employee spends *"15 seconds."* The case is worth separating from task automation. No single task in the old chain was slow. The cost was in the handoffs, and the agent removes the chain rather than speeding up a link. Krishna generalises it to end-to-end processes such as quote-to-cash that cross a dozen systems and several functional silos.
+
+## The consumer case against the 95%-as-good substitute (added 2026-09-28)
+
+[[2026-08-18-dalton-michael-how-to-find-consumer-startup-ideas|Dalton + Michael, How to Find Consumer Startup Ideas (Aug 2026)]] make the automation-vs-augmentation argument from the consumer market. Dalton Caldwell: many consumer AI startups *"replace things being done with humans with like chatbots or voice agents"*, and the pitch is cost or time saved, *"not that it's 100x better"*. A *"95% as good version"* of a human service will not produce a large consumer company. Their alternative runs the other way: take the human-grade premium service the wealthy already get (private banker, travel fixer, private chef) and use AI to make it affordable for everyone. Michael Seibel: *"what AI allows is for infinite personalization."* It is an investors' brainstorm with no unit economics, but it places the line between automation and augmentation at whether the product beats the human service, not whether it replaces one.

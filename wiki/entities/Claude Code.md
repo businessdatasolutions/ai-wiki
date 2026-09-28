@@ -5,9 +5,9 @@ aliases: ["Claude Code", "Claude Cowork", "Claude Co-work"]
 tags: [claude-code, anthropic, coding-agent, agent-harness, agentic-engineering, cli, routines, goal-loop, hooks, subagents, agents-md, auto-mode, permission-classifier, dynamic-workflows, claude-cowork, vertex-ai]
 affiliation: "Anthropic"
 confidence: 0.9
-last_confirmed: "2026-09-16"
-accessed_at: "2026-09-16"
-source_count: 8
+last_confirmed: "2026-09-28"
+accessed_at: "2026-09-28"
+source_count: 9
 relationships:
   - type: part-of
     target: Anthropic
@@ -73,3 +73,7 @@ SORT file.name ASC
 
 - `source_count` here counts inbound wikilinks; ~45 source pages mention Claude Code in prose without linking. Worth a future lint pass to convert prominent prose mentions to wikilinks now that the page exists.
 - **Codex** ([[OpenAI]]'s coding agent) is the recurring sibling product and is referenced as a `[[Codex]]` wikilink without a page — a parallel promotion candidate if a second substantive source lands.
+
+## As the hook for YC's "20x company" argument (added 2026-09-28)
+
+[[2026-02-14-tan-yc-the-new-way-to-build-a-startup|The New Way To Build A Startup (YC, Feb 2026)]] opens: *"If you haven't tried Claude Code in the last month, it's time to give it another shot… It feels like AGI is here."*

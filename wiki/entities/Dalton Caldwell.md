@@ -6,9 +6,9 @@ tags: [dalton-caldwell, y-combinator, yc-group-partner, founder-firesides-host, 
 affiliation: "[[Y Combinator]]"
 role: "Managing Director and Group Partner at Y Combinator (since ~2014, 21 batches as of April 2024); ex-founder of Mixed Media Labs / Picplz / App.net"
 confidence: 0.75
-last_confirmed: "2026-05-22"
-accessed_at: "2026-05-22"
-source_count: 2
+last_confirmed: "2026-09-28"
+accessed_at: "2026-09-28"
+source_count: 4
 ---
 
 # Dalton Caldwell
@@ -91,3 +91,7 @@ The wiki should treat this list as **the April 2024 baseline against which the A
 
 - [[2024-04-18-caldwell-lennys-podcast-lessons-1000-yc-startups-tarpit-ideas]] — substantive source: the canonical Caldwell-headlining ingest on Lenny's Podcast.
 - [[2026-05-20-glasgow-campfire-erp-for-ai-revolution]] — substantive cross-mention: Caldwell is named as Campfire's YC partner-of-record and the author of YC's *ERPs as request-for-startups* prompt.
+
+## Dalton + Michael (added 2026-09-28)
+
+Caldwell co-hosts [[Dalton and Michael|Dalton + Michael]] with Michael Seibel. Two episodes are in the wiki: [[2026-02-02-dalton-michael-how-great-founders-approach-sales|How Great Founders Approach Sales]] (good sales as problem-solving, the "pseudo tarpit" of unimportant revenue) and [[2026-08-18-dalton-michael-how-to-find-consumer-startup-ideas|How to Find Consumer Startup Ideas]] (AI as a way to give everyone the premium experience the wealthy have, and against the *"95% as good"* chatbot).
