@@ -6,9 +6,9 @@ tags: [sam-altman, openai-ceo, yc-ex-president, ai-washing, agi-bull, gpt-5]
 affiliation: "[[OpenAI]]"
 role: "CEO of OpenAI (since 2019); ex-President of [[Y Combinator]] (2014-2019); co-founder of Loopt"
 confidence: 0.85
-last_confirmed: "2026-05-28"
-accessed_at: "2026-05-28"
-source_count: 2
+last_confirmed: "2026-09-28"
+accessed_at: "2026-09-28"
+source_count: 3
 relationships:
   - type: part-of
     target: OpenAI
@@ -46,3 +46,7 @@ SORT file.name ASC
 
 - The specific Altman public statement(s) on *AI washing* Everitt is citing — not pinned to a date in the talk. Worth tracking down if a future source surfaces it.
 - Altman's specific public position on the labour-displacement question vs the *AI-creates-jobs* counter-framing — multiple voices in tension; worth tracking as new sources surface.
+
+## The OpenAI pitch as an example of grounded ambition (added 2026-09-28)
+
+[[2026-08-05-dalton-michael-low-ambition-is-killing-your-startup|Dalton + Michael, Low Ambition is Killing Your Startup (Aug 2026)]] uses Altman's early OpenAI pitch to show that a big goal needs substance behind it: *"he actually knew the researchers that were doing the work and were recruiting them… it was all based on papers that were coming out."* One host also credits Altman with the lesson that investors may believe a small-impact money story *"they just don't care."*

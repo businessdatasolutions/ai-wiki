@@ -5,9 +5,9 @@ aliases: ["OpenAI"]
 tags: [openai, ai-lab, foundation-models, chatgpt, gpt-4, gpt-5, codex, agentic-engineering, sora, custom-gpts, public-benefit-corporation, nonprofit-foundation]
 since: 2015
 confidence: 0.95
-last_confirmed: "2026-09-21"
-accessed_at: "2026-09-21"
-source_count: 21
+last_confirmed: "2026-09-28"
+accessed_at: "2026-09-28"
+source_count: 22
 relationships:
   - type: published-by
     target: 2025-10-05-patwardhan-et-al-openai-gdpval
@@ -93,3 +93,7 @@ SORT file.name ASC
 ## Open questions
 
 - The wiki has many references to GPT-4 / ChatGPT / OpenAI as substrate but no first-party OpenAI source has been ingested yet. The OpenAI Economic Research team's writing (this article, plus their independent research papers) is a candidate for a deeper deep-read once a primary OpenAI Economic Research publication is added.
+
+## Founding pitch as a YC case study (added 2026-09-28)
+
+[[2026-08-05-dalton-michael-low-ambition-is-killing-your-startup|Dalton + Michael (Aug 2026)]] cite OpenAI as a company lifted by many *"secret hands"* because of its ambition, and its founding pitch as grounded in named researchers and published papers, not a promise of *"magic AI"*.

@@ -8,7 +8,7 @@ role: "Managing Director and Group Partner at Y Combinator (since ~2014, 21 batc
 confidence: 0.75
 last_confirmed: "2026-09-28"
 accessed_at: "2026-09-28"
-source_count: 4
+source_count: 5
 ---
 
 # Dalton Caldwell
@@ -94,4 +94,4 @@ The wiki should treat this list as **the April 2024 baseline against which the A
 
 ## Dalton + Michael (added 2026-09-28)
 
-Caldwell co-hosts [[Dalton and Michael|Dalton + Michael]] with Michael Seibel. Two episodes are in the wiki: [[2026-02-02-dalton-michael-how-great-founders-approach-sales|How Great Founders Approach Sales]] (good sales as problem-solving, the "pseudo tarpit" of unimportant revenue) and [[2026-08-18-dalton-michael-how-to-find-consumer-startup-ideas|How to Find Consumer Startup Ideas]] (AI as a way to give everyone the premium experience the wealthy have, and against the *"95% as good"* chatbot).
+Caldwell co-hosts [[Dalton and Michael|Dalton + Michael]] with Michael Seibel. Three episodes are in the wiki: [[2026-08-05-dalton-michael-low-ambition-is-killing-your-startup|Low Ambition is Killing Your Startup]] (low ambition as the *"secret killer"*, and the *"meta tarpit"*), [[2026-02-02-dalton-michael-how-great-founders-approach-sales|How Great Founders Approach Sales]] (good sales as problem-solving, the "pseudo tarpit" of unimportant revenue) and [[2026-08-18-dalton-michael-how-to-find-consumer-startup-ideas|How to Find Consumer Startup Ideas]] (AI as a way to give everyone the premium experience the wealthy have, and against the *"95% as good"* chatbot).

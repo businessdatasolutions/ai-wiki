@@ -6,8 +6,11 @@ tags: [dalton-and-michael, podcast, youtube-channel, y-combinator, startup-advic
 confidence: 0.75
 last_confirmed: "2026-09-28"
 accessed_at: "2026-09-28"
-source_count: 2
+source_count: 3
 relationships:
+  - type: published-by
+    target: 2026-08-05-dalton-michael-low-ambition-is-killing-your-startup
+    via: "low ambition as the 'secret killer' of VC-backed startups; grounded ambition, scenesters and the 'meta tarpit' (5 August 2026)"
   - type: published-by
     target: 2026-02-02-dalton-michael-how-great-founders-approach-sales
     via: "founder sales mistakes: discounting, hiring a VP of Sales to take over, CEOs in enterprise deals, and the fear of 'consulting' (2 February 2026)"
@@ -25,6 +28,7 @@ The channel's `author:` value is written `Dalton + Michael` on source pages, fol
 ## Sources under this author
 
 - [[2026-02-02-dalton-michael-how-great-founders-approach-sales|How Great Founders Approach Sales]] (Feb 2026): good sales as good problem-solving; why a hired VP of Sales can't find the sales approach from scratch; *"a deep integration is a deep moat."* Feeds [[concepts/founder-led-sales|founder-led-sales]].
+- [[2026-08-05-dalton-michael-low-ambition-is-killing-your-startup|Low Ambition is Killing Your Startup]] (Aug 2026): low ambition as the *"secret killer"* of venture-backed startups; ambition decides how many people care, but has to be grounded in a credible, simple pitch; AI has lowered ambition (*"the 17th AI SDR"*); the *"meta tarpit"*.
 - [[2026-08-18-dalton-michael-how-to-find-consumer-startup-ideas|How to Find Consumer Startup Ideas]] (Aug 2026): give everyone the premium experience the wealthy have; AI as personalisation, not a 95%-as-good chatbot. Feeds [[concepts/automation-vs-augmentation|automation-vs-augmentation]].
 
 ## Related entities
