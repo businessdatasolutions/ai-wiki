@@ -10,6 +10,21 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-28] ingest | Seibel's eight first-time-founder mistakes: a 2019 YC talk as the pre-AI baseline
+
+One YouTube URL from the user: [[2019-08-16-seibel-yc-biggest-mistakes-first-time-founders-make]] (Y Combinator channel, Michael Seibel, 7:03, ASR). Pre-flight: full transcript, 176 segments, nine chapters, identity confirmed. Acquired with pyenv Python 3.12.8, because the system `python3` has a Playwright build without a matching browser. Raw file used as landed.
+
+**What it adds.** The oldest YC-channel source in the corpus and the only one from before generative AI. It gives the cluster a baseline for later AI-era claims. There are eight mistakes: a problem or users you don't care about (Justin.tv → Twitch), co-founders you don't know, unspoken co-founder tension (performance, goals, roles), not launching (an MVP in under a month outside regulated markets), no analytics, not knowing where the first users come from, and *"sizzle over steak"* (*"cargo culting"* a startup).
+
+**Neighbour-source scan.** No W&W tags, so Path B only: concept [[founder-led-sales]] plus topic greps. Candidates: Kolysh, Collison, Caldwell on Lenny's, D+M low ambition, D+M sales, Rubinstein & Onyemah, Dinakaran, Glasgow, a16z lighthouse. **Filed:** `supports` → Kolysh (first users from people you know), Caldwell on Lenny's (YC partners' early-mistake lists), D+M low ambition (caring about the problem; imitation over substance). `contradicts` → Collison (launch timing: under a month vs Stripe's two-year build and doubt about the lean default in the AI era). The body notes that Stripe falls in Seibel's regulated-market carve-out. **Skipped:** D+M sales and the enterprise-sales sources (the talk has no sales content beyond first users).
+
+**Pages touched.**
+- New: the source page.
+- Concept: [[founder-led-sales]]. Adds a dated section. `source_count` 6 → 8: the stored 6 had already missed one inbound source, and this adds one. Confidence stays 0.85 because this is one partner's opinion without data.
+- Entity: [[Y Combinator]]. Adds a dated section. `source_count` recounted 20 → 30 to match the source pages that actually link to it or carry a YC channel as `author:`. The figure had drifted across ingests.
+- `index.md`: a one-source block at the top of Sources.
+- Dangling: Michael Seibel (presenter here and on all three Dalton + Michael episodes, never a frontmatter author, so not promoted under the author rule), Emmett Shear, Justin.tv / Twitch.
+
 ## [2026-09-28] ingest | Where the bottleneck goes next: Ramp's product factory, YC's 20x companies, BCG on the AI bill, and three Dalton + Michael episodes
 
 Six YouTube URLs supplied by the user; **five ingested, one dropped**, plus **one handed off** by a parallel session. Ingested: [[2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved]], [[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune]], [[2026-08-18-dalton-michael-how-to-find-consumer-startup-ideas]], [[2026-02-14-tan-yc-the-new-way-to-build-a-startup]], [[2026-02-02-dalton-michael-how-great-founders-approach-sales]]. **Handed off:** [[2026-08-05-dalton-michael-low-ambition-is-killing-your-startup]]. Session `ai-wiki-41` had acquired it and run the pre-flight check, wrote nothing to `wiki/`, and passed it over to avoid concurrent edits to `index.md`, `log.md` and the D+M entity. The raw file is used as landed (ASR, uncleaned; zeitgeist and scenester corrected in quotes on the source page). **Dropped at the user's request: HubSpot UNBOUND 2026, *Win High-Intent Buyers in the AI Era*** (`dYIHT88SHUM`, two Google speakers). It was a Google Ads × HubSpot product pitch with vendor-only figures; the raw file was deleted before any wiki page was written.

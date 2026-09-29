@@ -8,7 +8,7 @@ website: "https://www.ycombinator.com"
 confidence: 0.95
 last_confirmed: "2026-09-28"
 accessed_at: "2026-09-28"
-source_count: 20
+source_count: 30
 ---
 
 # Y Combinator
@@ -167,3 +167,9 @@ Also of institutional note: Tan's **"harness wars"** call for 2027 preceded [[20
 ## The "20x company" episode (added 2026-09-28)
 
 [[2026-02-14-tan-yc-the-new-way-to-build-a-startup|The New Way To Build A Startup (Main Function, Feb 2026)]] is YC's short-form statement that portfolio companies should automate every internal function, with GigaML, Legion Health and Phaseshift as examples. Two YC partners' own show, [[Dalton and Michael|Dalton + Michael]], now has its own page.
+
+## A 2019 talk as the pre-AI baseline (added 2026-09-28)
+
+[[2019-08-16-seibel-yc-biggest-mistakes-first-time-founders-make|The Biggest Mistakes First-Time Founders Make (Michael Seibel, August 2019)]] is the oldest YC-channel source in the wiki and the only one from before generative AI. Seibel, then YC's CEO, lists eight first-year mistakes: a problem or users you don't care about, co-founders you don't know, unspoken co-founder tension, not launching (*"MVP built and launched in less than a month"*), no analytics, no idea where the first users come from, and *"sizzle over steak."* It is a reference point for the cluster above. [[2026-07-31-collison-yc-startup-school-is-ai-breaking-the-lean-startup-playbook|Collison at Startup School 2026]] questions the launch-early default, and [[2026-06-22-yc-kolysh-how-to-get-your-first-10-customers|Kolysh]] repeats the first-users advice.
+
+`source_count` recounted on this date to the 30 source pages that link here or carry a YC channel as `author:` (the stored figure had drifted to 20).

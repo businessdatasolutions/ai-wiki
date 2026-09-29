@@ -5,7 +5,7 @@ tags: [founder-led-sales, go-to-market, sprint-framework, first-10-customers, bu
 confidence: 0.85
 last_confirmed: "2026-09-28"
 accessed_at: "2026-09-28"
-source_count: 6
+source_count: 8
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -88,3 +88,7 @@ That is the same instinct as [[2026-06-22-yc-kolysh-how-to-get-your-first-10-cus
 - **"Consulting" is mostly a false fear.** Seibel's advice (*"Just do consulting. Nine times out of 10 you're probably not doing real consulting"*) treats bespoke early work as a way to learn the problem. He reframes deep integrations and long sales cycles as moats, not costs. Caldwell's boundary is the *"pseudo tarpit"*: revenue from an unimportant problem that doesn't generalise.
 
 The episode also gives the page a plain definition of good selling: *"good sales is good problem-solving"*, with trade meaning both sides end up better. No data; two investors' office-hours experience.
+
+## A 2019 baseline: the first users come from people you know (added 2026-09-28)
+
+[[2019-08-16-seibel-yc-biggest-mistakes-first-time-founders-make|Michael Seibel's "Biggest Mistakes First-Time Founders Make" (YC, 2019)]] is the oldest source on this page and predates generative AI. Among his eight mistakes is *"having no idea where your first users will come from"*: the first one to five users *"should come from people you know or you already have identified through some other way,"* and a founder who knows no one with the problem, *"including yourself"*, picked the wrong problem. [[2026-06-22-yc-kolysh-how-to-get-your-first-10-customers|Kolysh]] gives the same warm-network advice for customers 1–3 seven years later. The talk sets it next to two neighbouring mistakes: launching late, and putting press, hiring and investors ahead of *"getting product out there and talking to users."* One partner's office-hours pattern, no data.
