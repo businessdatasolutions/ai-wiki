@@ -1,0 +1,3410 @@
+{
+  "question": {
+    "original": "I need to give a concise introduction to my student of the ai-in-business course on AI Agents. Can you make an outline for a 3 page slide deck that gives the enough information to start? Here is the LRD of the whole module. Try and make references to related topics as much as possible. [LRD: https://datadrivendecisions.github.io/ai-in-business/integrated-lrd.html]",
+    "restated": "Outline a three-slide introduction to AI agents for students of the integrated AIBS/AEL AI-in-Business module, cross-referencing the module weeks and related wiki concepts.",
+    "facets": [
+      "What an AI agent is (definition, autonomy, the loop, intern analogy)",
+      "How an agent is built (harness, simplicity, vibe coding vs agentic engineering)",
+      "What agents mean for a business/SME (where they pay off, trust and oversight, value capture)",
+      "Cross-references to the module weeks in the LRD"
+    ],
+    "language": "en"
+  },
+  "retrieval_query": "introduction to AI agents for business students: what is an agent, agent harness, agentic workflows, business adoption and risks",
+  "params": {
+    "seeds": 12,
+    "hops": 1,
+    "fusion": "rrf",
+    "graph_rank": "bfs",
+    "k_rrf": 60,
+    "graph_w": 0.5,
+    "alpha": 0.7,
+    "ppr_damping": 0.5,
+    "conf_floor": 0.6,
+    "today": "2026-09-18"
+  },
+  "graph_available": true,
+  "graph_warning": null,
+  "external_inputs": [
+    {
+      "type": "LRD",
+      "url": "https://datadrivendecisions.github.io/ai-in-business/integrated-lrd.html",
+      "local_copy": "~/Documents/HAN/M3DM/ai-in-business/site/integrated-lrd.html",
+      "note": "Read in full for module structure; cited as LRD §… not as [W#]"
+    }
+  ],
+  "candidates": [
+    {
+      "slug": "concepts/ai-agents",
+      "path": "wiki/concepts/ai-agents.md",
+      "type": "concept",
+      "title": "AI Agents",
+      "qmd_rank": 2,
+      "qmd_score": 0.63,
+      "graph": [
+        {
+          "from_seed": "concepts/industrial-ai-agents",
+          "edge_type": "instance-of",
+          "via": "the OT / industrial-manufacturing application class — distinct from SaaS / coding-agent / knowledge-work clusters by its data-fabric primacy and action-precondition governance",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 2 (score 0.63)",
+        "graph: concepts/industrial-ai-agents -->instance-of--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-09-18",
+      "last_confirmed": "2026-09-18",
+      "days_since_access": 0,
+      "effective_confidence": 0.95,
+      "rrf_score": 0.016129,
+      "fused_score": 0.964,
+      "verdict": "use",
+      "reason": "working definition, 3-stage ladder, intern entities, four-clause definition, CIO reality check, no-regrets zone",
+      "reason_class": null,
+      "promoted": null,
+      "anchor": "W1"
+    },
+    {
+      "slug": "sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2",
+      "path": "wiki/sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2.md",
+      "type": "source",
+      "title": "An Introduction to MultiAgent Systems (2nd ed.) — Chapter 1: Introduction; Chapter 2: Intelligent Agents",
+      "qmd_rank": 1,
+      "qmd_score": 1,
+      "graph": [
+        {
+          "from_seed": "sources/2024-12-19-anthropic-building-effective-agents",
+          "edge_type": "supports",
+          "via": "both locate the agent/non-agent line in who decides how a task gets done. Anthropic separates workflows (LLMs orchestrated through predefined code paths) from agents (LLMs that dynamically direct their own processes); Wooldridge separates giving a system 'a fully elaborated program to execute' from delegating a goal and letting the system decide how to accomplish it",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 1 (score 1.00)",
+        "graph: sources/2024-12-19-anthropic-building-effective-agents <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.016393,
+      "fused_score": 0.94,
+      "verdict": "use",
+      "reason": "implementation-neutral definition; autonomy = deciding how, not what",
+      "reason_class": null,
+      "promoted": null,
+      "anchor": "W2"
+    },
+    {
+      "slug": "sources/2026-05-03-rewired-second-edition-sample",
+      "path": "wiki/sources/2026-05-03-rewired-second-edition-sample.md",
+      "type": "source",
+      "title": "Rewired: McKinsey's Playbook on How Leading Companies Win with Technology and AI",
+      "qmd_rank": 3,
+      "qmd_score": 0.61,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 3 (score 0.61)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.015873,
+      "fused_score": 0.91,
+      "verdict": "ignore",
+      "reason": "digital-transformation playbook; agents incidental to it",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-15-osmani-agent-harness-engineering",
+      "path": "wiki/sources/2026-05-15-osmani-agent-harness-engineering.md",
+      "type": "source",
+      "title": "Agent Harness Engineering",
+      "qmd_rank": 5,
+      "qmd_score": 0.61,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-07-chatterjee-anatomy-of-agent-harness",
+          "edge_type": "supports",
+          "via": "Osmani names the same 4-layer pattern (Context/Constraints/Contracts/Compounding) under different vocabulary and credits Viv (Chatterjee's referenced framing) as the originator of the 'harness engineering' term",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2024-12-19-anthropic-building-effective-agents",
+          "edge_type": "supports",
+          "via": "Anthropic's three core principles — simplicity, transparency, careful Agent-Computer Interface (ACI) design — anticipate by 17 months the discipline Osmani names *harness engineering*. The ACI tools-as-API principle is the canonical pre-formalisation of the Constraints + Contracts layers",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 5 (score 0.61)",
+        "graph: sources/2026-05-07-chatterjee-anatomy-of-agent-harness <--supports<-- this (1 hop)",
+        "graph: sources/2024-12-19-anthropic-building-effective-agents -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.015385,
+      "fused_score": 0.882,
+      "verdict": "ignore",
+      "reason": "synthesised on concepts/agent-harness (W5)",
+      "reason_class": "redundant",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-07-chatterjee-anatomy-of-agent-harness",
+      "path": "wiki/sources/2026-05-07-chatterjee-anatomy-of-agent-harness.md",
+      "type": "source",
+      "title": "The Anatomy of an Agent Harness",
+      "qmd_rank": 4,
+      "qmd_score": 0.61,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "Osmani names the same 4-layer pattern (Context/Constraints/Contracts/Compounding) under different vocabulary and credits Viv (Chatterjee's referenced framing) as the originator of the 'harness engineering' term",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2024-12-19-anthropic-building-effective-agents",
+          "edge_type": "supports",
+          "via": "the *augmented LLM* building block diagram (LLM + Retrieval + Tools + Memory) is the structural ancestor of Chatterjee's 4-layer harness anatomy. Each pattern (chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer) decomposes the Constraints + Contracts work that Chatterjee names rhetorically",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "the three-agent TensorFlow migration architecture (planner / orchestrator / coder), the code-review / risk-assessor / shepherding agent stack, and the *'engineers are precision engineers'* framing are all the harness-anatomy layers (Context / Constraints / Contracts / Compounding) realised at fleet scale inside Google; the talk doesn't name the four layers but exemplifies each",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 4 (score 0.61)",
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering -->supports--> this (1 hop)",
+        "graph: sources/2024-12-19-anthropic-building-effective-agents -->supports--> this (1 hop)",
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-07",
+      "days_since_access": null,
+      "effective_confidence": 0.75,
+      "rrf_score": 0.015625,
+      "fused_score": 0.858,
+      "verdict": "ignore",
+      "reason": "4-C anatomy and Friday-in-March case carried on concepts/agent-harness (W5)",
+      "reason_class": "redundant",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2024-12-19-anthropic-building-effective-agents",
+      "path": "wiki/sources/2024-12-19-anthropic-building-effective-agents.md",
+      "type": "source",
+      "title": "Building effective agents",
+      "qmd_rank": 7,
+      "qmd_score": 0.6,
+      "graph": [
+        {
+          "from_seed": "sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2",
+          "edge_type": "supports",
+          "via": "both locate the agent/non-agent line in who decides how a task gets done. Anthropic separates workflows (LLMs orchestrated through predefined code paths) from agents (LLMs that dynamically direct their own processes); Wooldridge separates giving a system 'a fully elaborated program to execute' from delegating a goal and letting the system decide how to accomplish it",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-07-chatterjee-anatomy-of-agent-harness",
+          "edge_type": "supports",
+          "via": "the *augmented LLM* building block diagram (LLM + Retrieval + Tools + Memory) is the structural ancestor of Chatterjee's 4-layer harness anatomy. Each pattern (chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer) decomposes the Constraints + Contracts work that Chatterjee names rhetorically",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "Anthropic's three core principles — simplicity, transparency, careful Agent-Computer Interface (ACI) design — anticipate by 17 months the discipline Osmani names *harness engineering*. The ACI tools-as-API principle is the canonical pre-formalisation of the Constraints + Contracts layers",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 7 (score 0.60)",
+        "graph: sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2 -->supports--> this (1 hop)",
+        "graph: sources/2026-05-07-chatterjee-anatomy-of-agent-harness <--supports<-- this (1 hop)",
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014925,
+      "fused_score": 0.856,
+      "verdict": "use",
+      "reason": "workflows vs agents; start simple; proven domains (support, coding)",
+      "reason_class": null,
+      "promoted": null,
+      "anchor": "W3"
+    },
+    {
+      "slug": "sources/2026-07-10-building-the-future-of-agentic-infrastructure",
+      "path": "wiki/sources/2026-07-10-building-the-future-of-agentic-infrastructure.md",
+      "type": "source",
+      "title": "Building the future of agentic infrastructure",
+      "qmd_rank": 8,
+      "qmd_score": 0.6,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 8 (score 0.60)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014706,
+      "fused_score": 0.843,
+      "verdict": "ignore",
+      "reason": "vendor infrastructure outlook; not needed for an intro",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/micro-productivity-trap",
+      "path": "wiki/concepts/micro-productivity-trap.md",
+      "type": "concept",
+      "title": "Micro-Productivity Trap",
+      "qmd_rank": 11,
+      "qmd_score": 0.57,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 11 (score 0.57)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-09-16",
+      "last_confirmed": "2026-09-16",
+      "days_since_access": 2,
+      "effective_confidence": 0.929,
+      "rrf_score": 0.014085,
+      "fused_score": 0.835,
+      "verdict": "use",
+      "reason": "task-level gains without firm-level value",
+      "reason_class": null,
+      "promoted": null,
+      "anchor": "W7"
+    },
+    {
+      "slug": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+      "path": "wiki/sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs.md",
+      "type": "source",
+      "title": "The new human-machine workforce: How agentic AI will transform jobs",
+      "qmd_rank": 9,
+      "qmd_score": 0.6,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 9 (score 0.60)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014493,
+      "fused_score": 0.831,
+      "verdict": "ignore",
+      "reason": "labour-market framing belongs to AIBS wk5 employment, not the agent intro",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success",
+      "path": "wiki/sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success.md",
+      "type": "source",
+      "title": "Industrial AI That Works: Strategy, Survival, and Success | MIT Executive Education",
+      "qmd_rank": 10,
+      "qmd_score": 0.59,
+      "graph": [
+        {
+          "from_seed": "concepts/industrial-ai-agents",
+          "edge_type": "instance-of",
+          "via": null,
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 10 (score 0.59)",
+        "graph: concepts/industrial-ai-agents <--instance-of<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014286,
+      "fused_score": 0.819,
+      "verdict": "ignore",
+      "reason": "Carrier heuristics carried on concepts/industrial-ai-agents (W9)",
+      "reason_class": "redundant",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/industrial-ai-agents",
+      "path": "wiki/concepts/industrial-ai-agents.md",
+      "type": "concept",
+      "title": "Industrial AI Agents",
+      "qmd_rank": 6,
+      "qmd_score": 0.6,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-agents",
+          "edge_type": "instance-of",
+          "via": "the OT / industrial-manufacturing application class — distinct from SaaS / coding-agent / knowledge-work clusters by its data-fabric primacy and action-precondition governance",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success",
+          "edge_type": "instance-of",
+          "via": null,
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 6 (score 0.60)",
+        "graph: concepts/ai-agents <--instance-of<-- this (1 hop)",
+        "graph: sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success -->instance-of--> this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": "2026-09-05",
+      "last_confirmed": "2026-05-18",
+      "days_since_access": 13,
+      "effective_confidence": 0.649,
+      "rrf_score": 0.015152,
+      "fused_score": 0.794,
+      "verdict": "use",
+      "reason": "data grounding as binding problem; pick-the-right-agent-level; stub",
+      "reason_class": null,
+      "promoted": null,
+      "anchor": "W9"
+    },
+    {
+      "slug": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+      "path": "wiki/sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer.md",
+      "type": "source",
+      "title": "Build core skills to thrive as an AI-era developer",
+      "qmd_rank": 12,
+      "qmd_score": 0.54,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-07-chatterjee-anatomy-of-agent-harness",
+          "edge_type": "supports",
+          "via": "the three-agent TensorFlow migration architecture (planner / orchestrator / coder), the code-review / risk-assessor / shepherding agent stack, and the *'engineers are precision engineers'* framing are all the harness-anatomy layers (Context / Constraints / Contracts / Compounding) realised at fleet scale inside Google; the talk doesn't name the four layers but exemplifies each",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 12 (score 0.54)",
+        "graph: sources/2026-05-07-chatterjee-anatomy-of-agent-harness <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": "2026-05-21",
+      "last_confirmed": "2026-05-21",
+      "days_since_access": null,
+      "effective_confidence": 0.8,
+      "rrf_score": 0.013889,
+      "fused_score": 0.779,
+      "verdict": "ignore",
+      "reason": "developer skills, not agent definition or business use",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2022-10-06-yao-et-al-react-synergizing-reasoning-acting",
+      "path": "wiki/sources/2022-10-06-yao-et-al-react-synergizing-reasoning-acting.md",
+      "type": "source",
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2",
+          "edge_type": "supports",
+          "via": "the interleaved agent–environment sequence. Wooldridge formalises a run as alternating environment states and actions and names the balance between goal-directed and reactive behaviour as the open problem of agent design; ReAct's thought–action–observation trajectory interleaves plan-level reasoning with environment observations inside one loop",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2 -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.008197,
+      "fused_score": 0.47,
+      "verdict": "ignore",
+      "reason": "primary paper synthesised on concepts/react-reasoning-acting (W4)",
+      "reason_class": "redundant",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-03-17-cemri-why-do-multi-agent-llm-systems-fail",
+      "path": "wiki/sources/2025-03-17-cemri-why-do-multi-agent-llm-systems-fail.md",
+      "type": "source",
+      "title": "Why Do Multi-Agent LLM Systems Fail?",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2",
+          "edge_type": "supports",
+          "via": "run-time coordination between agents. Wooldridge's first distinction between multiagent and ordinary concurrent systems is that coordination is 'not hardwired in at design time' and needs run-time mechanisms; MAST's system-design and inter-agent-misalignment categories catalogue how LLM multi-agent systems fail at that coordination",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2 -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.008065,
+      "fused_score": 0.462,
+      "verdict": "ignore",
+      "reason": "MAST carried on concepts/multi-agent-failure-modes (W8)",
+      "reason_class": "redundant",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-14-pochampally-assistant-or-actor-delegation-regret",
+      "path": "wiki/sources/2026-05-14-pochampally-assistant-or-actor-delegation-regret.md",
+      "type": "source",
+      "title": "Assistant or Actor? Student Trust, Control, and Delegation Regret When Using a General-Purpose AI Agent",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2",
+          "edge_type": "supports",
+          "via": "the boundary of delegated authority. Wooldridge's agent may pick subgoals only 'in the furtherance of our delegated goals', and the adjustable-autonomy conditions he cites (Scerri et al. 2003) hand control back when a decision might cause harm or the human would decide better; Pochampally's delegation regret is users' response to agents acting beyond what they would have authorised, withdrawn most for irreversible, externally visible actions",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2 -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007937,
+      "fused_score": 0.455,
+      "verdict": "ignore",
+      "reason": "delegation regret carried on concepts/agent-oversight-and-delegation (W6)",
+      "reason_class": "redundant",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-18-wolfe-agent-evaluation-detailed-guide",
+      "path": "wiki/sources/2026-05-18-wolfe-agent-evaluation-detailed-guide.md",
+      "type": "source",
+      "title": "Agent Evaluation: A Detailed Guide",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2",
+          "edge_type": "supports",
+          "via": "how success is specified for an agent. Wooldridge distinguishes utility over individual states from utility and predicates over whole runs, and achievement tasks from maintenance tasks; Wolfe's evaluation components separate outcome goals (final environment state) from process goals judged over the transcript",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "Osmani's *harness engineering as discipline* and Wolfe's *agent evaluation as discipline* are the two halves of the same practitioner field guide — Osmani's *ratchet* (*every mistake becomes a rule in AGENTS.md*) is operationally what Wolfe calls *inspect, iterate, and maintain the benchmark* (step 7 of the roadmap)",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2024-12-19-anthropic-building-effective-agents",
+          "edge_type": "supports",
+          "via": "shares the load-bearing definition *'an agent is an LLM that autonomously uses tools in a loop'* and the workflow-vs-agent distinction; Wolfe extends the architectural taxonomy with an evaluation taxonomy (graders / trials / transcripts / outcomes)",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "the talk's prescription *'we strongly recommend upskilling on evals'* with the full T-shape needed *'to ensure you are developing realistic, grounded, and relevant evals'* operationalises Wolfe's eval-as-discipline thesis at the engineering-team upskilling level",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2 -->supports--> this (1 hop)",
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering <--supports<-- this (1 hop)",
+        "graph: sources/2024-12-19-anthropic-building-effective-agents <--supports<-- this (1 hop)",
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007813,
+      "fused_score": 0.448,
+      "verdict": "ignore",
+      "reason": "agent evaluation detail; AEL wk4 debrief material, not intro",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness",
+      "path": "wiki/sources/2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness.md",
+      "type": "source",
+      "title": "What is an Agentic Harness?",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2",
+          "edge_type": "contradicts",
+          "via": "the scope of the word 'agent'. Baugues adopts Willison's 'an LLM with tools running in a loop to accomplish a goal', which names an implementation; Wooldridge's 'a computer system that is situated in some environment, and that is capable of autonomous action in this environment in order to meet its delegated objectives' is implementation-neutral and admits thermostats and Unix daemons. The two agree on goal and loop; they differ on whether the LLM is part of the definition",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-07-chatterjee-anatomy-of-agent-harness",
+          "edge_type": "supports",
+          "via": "Baugues' *\"the harness is everything after the LLM\"* is a compressed restatement of Chatterjee's layered anatomy, arrived at independently and from a competing vendor. Chatterjee supplies the layer-by-layer decomposition and the *model is rented, harness is owned* claim; Baugues supplies the same boundary as a single sentence plus the components he enumerates to fill it (tools, the loop, the programmatic output-evaluator). The convergence matters because the two sources share no lineage — a Google DevRel explainer and an independent practitioner essay draw the boundary in the same place",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2 -->contradicts--> this (1 hop)",
+        "graph: sources/2026-05-07-chatterjee-anatomy-of-agent-harness <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007692,
+      "fused_score": 0.441,
+      "verdict": "ignore",
+      "reason": "contradicts-edge to Wooldridge (LLM in the definition or not) is reproduced on concepts/ai-agents four-clause section (W1); slide 1 shows both sides",
+      "reason_class": "redundant",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-03-chowdhery-mirhoseini-stanford-cs329a-self-improving-agents-part-1",
+      "path": "wiki/sources/2026-08-03-chowdhery-mirhoseini-stanford-cs329a-self-improving-agents-part-1.md",
+      "type": "source",
+      "title": "Stanford CS329A Self-Improving AI Agents | Part 1 | Course Overview",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2",
+          "edge_type": "supports",
+          "via": "both define an agent by the same ingredients: a delegated goal, an environment the agent acts in, feedback from that environment, and the agent deciding what to do next. Chowdhery adds deciding when to stop; Wooldridge adds that the agent must be prepared for its actions to fail in environments it only partially controls",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2 -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007576,
+      "fused_score": 0.434,
+      "verdict": "ignore",
+      "reason": "course-altitude definition summarised on concepts/ai-agents (W1)",
+      "reason_class": "redundant",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/agent-harness",
+      "path": "wiki/concepts/agent-harness.md",
+      "type": "concept",
+      "title": "agent-harness",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-agents",
+          "edge_type": "part-of",
+          "via": "the runtime engineering layer that wraps a foundation model to turn it into a production-grade agent",
+          "hops": 1
+        },
+        {
+          "from_seed": "concepts/industrial-ai-agents",
+          "edge_type": "depends-on",
+          "via": "the runtime layer is still required; industrial-AI agents add a semantic-data-layer dependency on top",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2024-12-19-anthropic-building-effective-agents",
+          "edge_type": "uses",
+          "via": null,
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-agents <--part-of<-- this (1 hop)",
+        "graph: concepts/industrial-ai-agents -->depends-on--> this (1 hop)",
+        "graph: sources/2024-12-19-anthropic-building-effective-agents -->uses--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-09-18",
+      "last_confirmed": "2026-09-18",
+      "days_since_access": 0,
+      "effective_confidence": 0.95,
+      "rrf_score": 0.007246,
+      "fused_score": 0.433,
+      "verdict": "use",
+      "reason": "harness definition, 4 Cs, OS analogy, rented vs owned, Friday-in-March failure",
+      "reason_class": null,
+      "promoted": null,
+      "anchor": "W5"
+    },
+    {
+      "slug": "sources/2026-08-19-he-databricks-anthropic-primitives-to-production-agents",
+      "path": "wiki/sources/2026-08-19-he-databricks-anthropic-primitives-to-production-agents.md",
+      "type": "source",
+      "title": "From Primitives to Production: How Anthropic Builds Agents",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2",
+          "edge_type": "supports",
+          "via": "both make trajectory choice the discriminator. He's progression runs from single LLM calls through code-orchestrated workflows to agents 'where LLMs are actually deciding their own trajectories'; Wooldridge defines the autonomy that matters as 'the ability and requirement to decide how to act so as to accomplish our delegated goals'",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2 -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007463,
+      "fused_score": 0.428,
+      "verdict": "ignore",
+      "reason": "who-chooses-the-trajectory progression summarised on concepts/ai-agents (W1)",
+      "reason_class": "redundant",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/generative-ai",
+      "path": "wiki/concepts/generative-ai.md",
+      "type": "concept",
+      "title": "generative-ai",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-agents",
+          "edge_type": "instance-of",
+          "via": "agents are the orchestrating tier on top of LLM-based GenAI",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-agents -->instance-of--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-09-14",
+      "last_confirmed": "2026-05-28",
+      "days_since_access": 4,
+      "effective_confidence": 0.909,
+      "rrf_score": 0.007042,
+      "fused_score": 0.414,
+      "verdict": "ignore",
+      "reason": "parent category; no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/foundation-models",
+      "path": "wiki/concepts/foundation-models.md",
+      "type": "concept",
+      "title": "foundation-models",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-agents",
+          "edge_type": "uses",
+          "via": null,
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-agents -->uses--> this (1 hop)"
+      ],
+      "stored_confidence": 0.88,
+      "accessed_at": "2026-09-15",
+      "last_confirmed": "2026-09-04",
+      "days_since_access": 3,
+      "effective_confidence": 0.851,
+      "rrf_score": 0.007143,
+      "fused_score": 0.41,
+      "verdict": "ignore",
+      "reason": "covered by the harness CPU analogy",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/react-reasoning-acting",
+      "path": "wiki/concepts/react-reasoning-acting.md",
+      "type": "concept",
+      "title": "react-reasoning-acting",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-agents",
+          "edge_type": "uses",
+          "via": "the reason–act–observe loop at the centre of the agent definition originates in ReAct (2022)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-agents -->uses--> this (1 hop)"
+      ],
+      "stored_confidence": 0.9,
+      "accessed_at": "2026-09-18",
+      "last_confirmed": "2026-09-18",
+      "days_since_access": 0,
+      "effective_confidence": 0.9,
+      "rrf_score": 0.006944,
+      "fused_score": 0.407,
+      "verdict": "use",
+      "reason": "reason-act-observe loop; legible thoughts enable correction",
+      "reason_class": null,
+      "promoted": null,
+      "anchor": "W4"
+    },
+    {
+      "slug": "concepts/agent-development-lifecycle",
+      "path": "wiki/concepts/agent-development-lifecycle.md",
+      "type": "concept",
+      "title": "agent-development-lifecycle",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-agents",
+          "edge_type": "part-of",
+          "via": "the SDLC-parallel process construct for agent engineering — design, evaluate, deploy, publish, observe",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-agents <--part-of<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.88,
+      "accessed_at": "2026-09-05",
+      "last_confirmed": "2026-08-30",
+      "days_since_access": 13,
+      "effective_confidence": 0.762,
+      "rrf_score": 0.007353,
+      "fused_score": 0.406,
+      "verdict": "ignore",
+      "reason": "AEL wk4 debrief reading; pre-teaching it contradicts LRD Part 8",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/multi-agent-failure-modes",
+      "path": "wiki/concepts/multi-agent-failure-modes.md",
+      "type": "concept",
+      "title": "Multi-agent failure modes",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-agents",
+          "edge_type": "part-of",
+          "via": null,
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-agents <--part-of<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": "2026-09-18",
+      "last_confirmed": "2026-09-18",
+      "days_since_access": 0,
+      "effective_confidence": 0.85,
+      "rrf_score": 0.006579,
+      "fused_score": 0.377,
+      "verdict": "use",
+      "reason": "add agents only when one context window stops being enough",
+      "reason_class": null,
+      "promoted": null,
+      "anchor": "W8"
+    },
+    {
+      "slug": "concepts/small-language-models",
+      "path": "wiki/concepts/small-language-models.md",
+      "type": "concept",
+      "title": "small-language-models",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-agents",
+          "edge_type": "uses",
+          "via": "model size is an agent design variable, not a fixed input — the position that most agentic invocations are narrow enough for a small specialised model, with frontier LLMs invoked selectively",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-agents -->uses--> this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": "2026-09-15",
+      "last_confirmed": "2026-09-15",
+      "days_since_access": 3,
+      "effective_confidence": 0.725,
+      "rrf_score": 0.006849,
+      "fused_score": 0.372,
+      "verdict": "ignore",
+      "reason": "AIBS wk3 local-model question; not an intro facet",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-12-techlatest-hacker-search-engines-osint-tools-2026",
+      "path": "wiki/sources/2026-05-12-techlatest-hacker-search-engines-osint-tools-2026.md",
+      "type": "source",
+      "title": "The Ultimate Guide to Hacker Search Engines & OSINT Tools in 2026",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-agents",
+          "edge_type": "uses",
+          "via": "the AI-Powered OSINT section names LLMs and AI agents as the substrate for the emerging *AI-Augmented Offensive & Defensive Security* category",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-agents <--uses<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006494,
+      "fused_score": 0.372,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas",
+      "path": "wiki/sources/2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas.md",
+      "type": "source",
+      "title": "The race takes off in the next big arenas of competition (MGI 2026 update)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-03-rewired-second-edition-sample",
+          "edge_type": "supports",
+          "via": "Rewired 2nd ed is McKinsey's practitioner playbook for clients deploying AI inside the firm; this MGI report is the macro context that justifies the playbook's urgency — clients sit in or near arenas where escalatory investment compresses decision windows and removes incumbent options",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-03-rewired-second-edition-sample <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.00641,
+      "fused_score": 0.368,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/graph-engineering",
+      "path": "wiki/concepts/graph-engineering.md",
+      "type": "concept",
+      "title": "graph-engineering",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-agents",
+          "edge_type": "uses",
+          "via": "agent nodes are one of the two node types in a graph, alongside function nodes carrying deterministic logic",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-agents <--uses<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": "2026-09-15",
+      "last_confirmed": "2026-09-15",
+      "days_since_access": 3,
+      "effective_confidence": 0.725,
+      "rrf_score": 0.006757,
+      "fused_score": 0.367,
+      "verdict": "ignore",
+      "reason": "beyond intro altitude",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/industry-4-0",
+      "path": "wiki/concepts/industry-4-0.md",
+      "type": "concept",
+      "title": "industry-4-0",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-agents",
+          "edge_type": "uses",
+          "via": "autonomous monitoring (Jidoka + AI-powered) is an Industry 4.0 deployment of agents",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-agents <--uses<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": "2026-09-05",
+      "last_confirmed": "2026-04-28",
+      "days_since_access": 13,
+      "effective_confidence": 0.736,
+      "rrf_score": 0.006667,
+      "fused_score": 0.364,
+      "verdict": "ignore",
+      "reason": "industrial framing covered by W9",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage",
+      "path": "wiki/sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage.md",
+      "type": "source",
+      "title": "The real AI advantage",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-03-rewired-second-edition-sample",
+          "edge_type": "supports",
+          "via": "Catlin explicitly names the book ('We've written a book about it called Rewired') and restates its core prescription verbatim: pick a domain, don't bolt AI onto existing processes, redesign the process to capture the value, make it scalable, then expand — this podcast is the same McKinsey framework delivered in interview form.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-03-rewired-second-edition-sample <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006329,
+      "fused_score": 0.363,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-07-31-wang-agentspec-runtime-enforcement-llm-agents",
+      "path": "wiki/sources/2025-07-31-wang-agentspec-runtime-enforcement-llm-agents.md",
+      "type": "source",
+      "title": "AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-07-chatterjee-anatomy-of-agent-harness",
+          "edge_type": "supports",
+          "via": "AgentSpec operationalises Chatterjee's *Constraints* layer with a formal DSL. The rule / trigger / check / enforce / end syntax is the executable form of Chatterjee's destructive-verb-detection, workspace-isolation, and intent-validation middleware. AgentSpec is the wiki's first peer-reviewed paper specifically on the Constraints layer.",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "AgentSpec's automatic-rule-generation experiment (95.56% precision / 70.96% recall via OpenAI o1) is the empirical anchor for Osmani's ratchet pattern operationalised at runtime — LLM-generated rules from past failures, enforced deterministically.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-07-chatterjee-anatomy-of-agent-harness <--supports<-- this (1 hop)",
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.00625,
+      "fused_score": 0.358,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-03-10-trivedy-langchain-anatomy-of-an-agent-harness",
+      "path": "wiki/sources/2026-03-10-trivedy-langchain-anatomy-of-an-agent-harness.md",
+      "type": "source",
+      "title": "The Anatomy of an Agent Harness",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-07-chatterjee-anatomy-of-agent-harness",
+          "edge_type": "supports",
+          "via": "Chatterjee's Medium post (May 3, 2026) carries a similar title but is a different artifact by a different author with different content (Friday-in-March story, 4C anatomy). The titles share words but the posts are distinct — confirmed by user note 2026-05-17. The wiki holds both as legitimately co-existing under the 'Anatomy of an Agent Harness' lexical family.",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "Osmani's O'Reilly Radar essay is a near-direct synthesis-with-expansion of THIS post. Multiple verbatim quotes match ('If you're not the model, you're the harness'); the working-backward-from-behavior pattern; the same six harness primitives in the same order; the same three open problems list. Osmani's piece is Trivedy's framework propagated to an O'Reilly Radar audience with attribution but minor compression.",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2024-12-19-anthropic-building-effective-agents",
+          "edge_type": "supports",
+          "via": "Trivedy operates within Anthropic's Dec 2024 workflows-vs-agents architecture, applying the same simplicity / transparency / careful-ACI principles at the framework-vendor (LangChain) altitude that Anthropic articulated at the model-vendor altitude",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-07-chatterjee-anatomy-of-agent-harness <--supports<-- this (1 hop)",
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering <--supports<-- this (1 hop)",
+        "graph: sources/2024-12-19-anthropic-building-effective-agents <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006173,
+      "fused_score": 0.354,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-11-karten-zhang-continual-harness-online-adaptation",
+      "path": "wiki/sources/2026-05-11-karten-zhang-continual-harness-online-adaptation.md",
+      "type": "source",
+      "title": "Continual Harness: Online Adaptation for Self-Improving Foundation Agents",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-07-chatterjee-anatomy-of-agent-harness",
+          "edge_type": "supports",
+          "via": "Karten's formal 4-component harness decomposition (p, G, K, M) — system prompt, sub-agents, skills, memory — maps onto Chatterjee's Context (≈ p) / Constraints (in sub-agent + skill behaviour) / Contracts (sub-agent task signatures) / Compounding (in-episode memory update). Karten provides academic formalism for what Chatterjee names rhetorically.",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "Karten provides the formal-academic ratification of Osmani's harness-engineering discipline. Resolves the open question on the Khattab et al. 'Meta-Harness' paper Osmani referenced via Viv: Karten cites it as Lee, Nair, Zhang, Lee, Khattab, Finn — *Meta-harness: End-to-end optimization of model harnesses* — arXiv:2603.28052, 2026.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-07-chatterjee-anatomy-of-agent-harness <--supports<-- this (1 hop)",
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006098,
+      "fused_score": 0.35,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-08-vincent-coderabbit-fixing-ai-slop-managing-agents-like-mit-interns",
+      "path": "wiki/sources/2026-06-08-vincent-coderabbit-fixing-ai-slop-managing-agents-like-mit-interns.md",
+      "type": "source",
+      "title": "Fixing \"AI Slop\": How To Manage Agents Like MIT Interns w/ Jesse Vincent, creator of Superpowers",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-07-chatterjee-anatomy-of-agent-harness",
+          "edge_type": "supports",
+          "via": "both independently arrive at strict single-mandate separation between implementing and reviewing agents (Chatterjee's Constraints/Contracts layers vs. Vincent's Coordinator/Coder/Reviewer split) — a systems-engineering vantage and a management-practitioner vantage converging on the same harness-design principle",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-07-chatterjee-anatomy-of-agent-harness <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005952,
+      "fused_score": 0.341,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness",
+      "path": "wiki/sources/2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness.md",
+      "type": "source",
+      "title": "How Mozilla Uses Claude Mythos to find Firefox bugs before hackers do",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-07-chatterjee-anatomy-of-agent-harness",
+          "edge_type": "supports",
+          "via": "**Concrete production instance of Chatterjee's Constraints-layer / intent-validation thesis.** Chatterjee names *validate intent, not just output format* and the verifier-as-Constraints-layer pattern; Grinstead's verifier subagent is exactly that — it catches the analyzer agent *cheating* (introducing a vulnerability to exploit, or setting a testing-only pref) and *'sends it back to do more work,'* yielding *'almost no false positives.'* The *agent-modifies-code-to-hit-its-goal* failure mode is a clean worked example of a reward-hacking risk caught by harness middleware rather than model alignment.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-07-chatterjee-anatomy-of-agent-harness <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005882,
+      "fused_score": 0.337,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-11-26-anthropic-effective-harnesses-long-running-agents",
+      "path": "wiki/sources/2025-11-26-anthropic-effective-harnesses-long-running-agents.md",
+      "type": "source",
+      "title": "Effective harnesses for long-running agents",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "Anthropic's explicit naming of 4 failure modes + structured solutions (initializer agent + coding agent + feature_list.json + claude-progress.txt) is the canonical operationalisation of Osmani's ratchet — each line in the solution is traceable to a documented failure",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2024-12-19-anthropic-building-effective-agents",
+          "edge_type": "supports",
+          "via": "Anthropic's *Effective Harnesses for Long-Running Agents* (Nov 2025) is the direct continuation of this Dec 2024 post — both authored by Anthropic Engineering, both published as Engineering at Anthropic blog posts, applying the same simplicity/transparency/ACI principles to longer-horizon tasks",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering <--supports<-- this (1 hop)",
+        "graph: sources/2024-12-19-anthropic-building-effective-agents -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005814,
+      "fused_score": 0.333,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-03-chopra-headroom-context-optimization-layer-for-llm-applications",
+      "path": "wiki/sources/2026-06-03-chopra-headroom-context-optimization-layer-for-llm-applications.md",
+      "type": "source",
+      "title": "Headroom: A Context Optimization Layer for LLM Applications — Tejas Chopra (Netflix)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-07-chatterjee-anatomy-of-agent-harness",
+          "edge_type": "supports",
+          "via": "Headroom is a concrete implementation of Chatterjee's Context layer — KV-cache alignment + reversible compression + retrieve-on-demand",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-07-chatterjee-anatomy-of-agent-harness <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": null,
+      "last_confirmed": "2026-06-08",
+      "days_since_access": null,
+      "effective_confidence": 0.75,
+      "rrf_score": 0.006024,
+      "fused_score": 0.331,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-02-17-langchain-improving-deep-agents-harness-engineering",
+      "path": "wiki/sources/2026-02-17-langchain-improving-deep-agents-harness-engineering.md",
+      "type": "source",
+      "title": "Improving deep agents with harness engineering",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "Osmani's harness-engineering essay cites LangChain explicitly as one of the named vendors in the HaaS substrate-shift (Claude Agent SDK / Codex SDK / OpenAI Agents SDK / LangChain). This post is LangChain's primary contribution to the harness-engineering vocabulary",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2024-12-19-anthropic-building-effective-agents",
+          "edge_type": "supports",
+          "via": "LangChain's harness-engineering post is the framework-vendor counterpart to Anthropic's foundational Building Effective Agents — both cited together by all four academic papers in the wiki's harness-cluster (Pan, Lee, Lou, Karten)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering <--supports<-- this (1 hop)",
+        "graph: sources/2024-12-19-anthropic-building-effective-agents <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005747,
+      "fused_score": 0.33,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-03-26-osmani-code-agent-orchestra-multi-agent-coding",
+      "path": "wiki/sources/2026-03-26-osmani-code-agent-orchestra-multi-agent-coding.md",
+      "type": "source",
+      "title": "The Code Agent Orchestra - what makes multi-agent coding work",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "Same author, same discipline, chronologically earlier (26 Mar vs 15 May) — this article supplies the concrete multi-agent operational patterns (subagents, Agent Teams, 3-tier orchestration, factory model) that the later, more definitional Agent Harness Engineering article assumes as background.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005682,
+      "fused_score": 0.326,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-03-30-lee-meta-harness-end-to-end-optimization",
+      "path": "wiki/sources/2026-03-30-lee-meta-harness-end-to-end-optimization.md",
+      "type": "source",
+      "title": "Meta-Harness: End-to-End Optimization of Model Harnesses",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "Lee et al. authored by Omar Khattab (MIT, DSPy lead) — confirms the wiki's tracking of Meta-Harness as 'the DSPy-team paper' Osmani referenced via Viv Trivedy. Primary-source anchor for the 'small model + great harness > large model + bad harness' claim (Meta-Harness on Haiku 4.5 outranks all hand-engineered Haiku 4.5 agents; competitive with Opus 4.6 agents).",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005618,
+      "fused_score": 0.322,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-14-py-rethinking-ai-agents-rise-of-harness-engineering",
+      "path": "wiki/sources/2026-04-14-py-rethinking-ai-agents-rise-of-harness-engineering.md",
+      "type": "source",
+      "title": "Rethinking AI Agents: The Rise of Harness Engineering",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "names the same Top 30 → Top 5 TerminalBench result Osmani attributes to Viv; the underlying empirical anchor is the Pan et al. paper this video cites with the resolved arxiv ID",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005556,
+      "fused_score": 0.319,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-05-loukides-radar-trends-may-2026",
+      "path": "wiki/sources/2026-05-05-loukides-radar-trends-may-2026.md",
+      "type": "source",
+      "title": "Radar Trends to Watch: May 2026",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "the May digest names OpenAI 'decoupled its agent harness, releasing it open-source via the Agents SDK' and Anthropic launched Managed Agents — both directly support Osmani's harness-as-a-service (HaaS) section",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005495,
+      "fused_score": 0.315,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-02-11-lopopolo-codex-harness-engineering",
+      "path": "wiki/sources/2026-02-11-lopopolo-codex-harness-engineering.md",
+      "type": "source",
+      "title": "Harness engineering: leveraging Codex in an agent-first world",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "Lopopolo names the vendor-side production case; Osmani names the practitioner-side discipline. The 'harness is a living system, not a config file you set up once' line and AGENTS.md-as-table-of-contents pattern explicitly echo Lopopolo's invariants",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005435,
+      "fused_score": 0.312,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering",
+      "path": "wiki/sources/2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering.md",
+      "type": "source",
+      "title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "ratifies Karpathy's agentic-engineering frame from a working-engineer vantage; the 'ratchet — every mistake becomes a rule' pattern is agentic-engineering's discipline made concrete",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "operationalises Karpathy's vibe-coding → agentic-engineering paradigm shift from the corporate-research vantage; explicit ratification *'our top engineers are not vibe coding ... they are designing environments, setting the guardrails'*; the talk is the Google-Research operationalisation of the discipline Karpathy named in December 2025",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering -->supports--> this (1 hop)",
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-08",
+      "days_since_access": null,
+      "effective_confidence": 0.8,
+      "rrf_score": 0.005376,
+      "fused_score": 0.302,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-06-bockeler-engineering-of-ai-agents-context-harnessing-autonomy",
+      "path": "wiki/sources/2026-05-06-bockeler-engineering-of-ai-agents-context-harnessing-autonomy.md",
+      "type": "source",
+      "title": "The Engineering of AI Agents: Context, Harnessing, and Autonomy",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "Osmani names Bockeler as one of the practitioners tracking the harness pattern and shares Bockeler's user-side framing of context/harnessing/autonomy",
+          "hops": 1
+        },
+        {
+          "from_seed": "concepts/micro-productivity-trap",
+          "edge_type": "supports",
+          "via": "Goldilocks speed framing + Amazon-adding-senior-engineer-gateways reaction is the same diagnosis as Bain/OpenAI and Sternfels — speed pressure without supervision integrity erases productivity gains",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering -->supports--> this (1 hop)",
+        "graph: concepts/micro-productivity-trap <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005263,
+      "fused_score": 0.302,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-07-anthropic-managed-agents-decoupling-brain-hands",
+      "path": "wiki/sources/2026-05-07-anthropic-managed-agents-decoupling-brain-hands.md",
+      "type": "source",
+      "title": "Scaling Managed Agents: Decoupling the brain from the hands",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "explicitly cites Anthropic's harness write-up as the best public breakdown of long-running agent design and quotes its 'every harness component encodes an assumption about what the model can't do on its own' line",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-07-10-building-the-future-of-agentic-infrastructure",
+          "edge_type": "supports",
+          "via": "The Claude Platform team's own three-months-later follow-up account of Managed Agents — agent identity/service-account provisioning, the outcomes primitive, and 'dreaming' as an evolution of the memory layer this post's architecture makes room for",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering -->supports--> this (1 hop)",
+        "graph: sources/2026-07-10-building-the-future-of-agentic-infrastructure <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005208,
+      "fused_score": 0.299,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-08-bratanic-unified-agentic-memory-hooks",
+      "path": "wiki/sources/2026-05-08-bratanic-unified-agentic-memory-hooks.md",
+      "type": "source",
+      "title": "Unified Agentic Memory Across Harnesses Using Hooks",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "Bratanic operationalises hooks as a portable primitive; Osmani's 'Hooks: The enforcement layer' section names the same architectural slot with the same enforcement rationale ('Success is silent; failures are verbose')",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-07-10-building-the-future-of-agentic-infrastructure",
+          "edge_type": "supports",
+          "via": "Angela Jiang (Claude Platform Head of Product) names 'dreaming' as a Claude Managed Agents concept — first-party Anthropic corroboration of the offline-distillation mechanism this article's dream-phase pattern documents third-party (hooks log online; a dream phase distills accumulated events into durable memory)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering -->supports--> this (1 hop)",
+        "graph: sources/2026-07-10-building-the-future-of-agentic-infrastructure <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005102,
+      "fused_score": 0.293,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering",
+      "path": "wiki/sources/2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering.md",
+      "type": "source",
+      "title": "AI Dev 26 x SF | Paul Everitt: The Shift to Agentic Engineering",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "**Everitt explicitly cites Osmani as influence on the agentic-engineering taxonomy.** *'Addy Osmani wrote a blog post about Agentic Engineering. And as I tell you these blah-blah wrote a blah-blah in your mind you should be thinking it's entering the hype cycle.'* The cite is mock-self-deprecating but Osmani's *Agent Harness Engineering* article is a direct predecessor to Everitt's framing — Everitt's nine-element agentic-engineering taxonomy includes *harness engineering* as a discrete element, citing the LangChain framing *'if you don't own your harness you don't own your memory'* + the [[2026-05-04-rethinking-agents-harness-is-all-you-need|harness-is-all-you-need]] convergent thesis. Two-source confirmation of the *harness engineering as a named practitioner discipline* claim.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005,
+      "fused_score": 0.287,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-04-rethinking-agents-harness-is-all-you-need",
+      "path": "wiki/sources/2026-05-04-rethinking-agents-harness-is-all-you-need.md",
+      "type": "source",
+      "title": "Rethinking Agents — Harness is All you Need",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "shares the Terminal Bench transfer-across-models finding (Viv's team moving Top 30 → Top 5 by changing only the harness) as the load-bearing empirical anchor for the harness-not-model thesis",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "Forsgren/Macvean's *'mental model shift from being a Conductor of an individual agent to an Orchestrator of a system'* is the engineering-leadership statement of the harness-is-all-you-need thesis; both argue the system-design layer is where engineering effort moves, not the model layer",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering -->supports--> this (1 hop)",
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.7,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-08",
+      "days_since_access": null,
+      "effective_confidence": 0.7,
+      "rrf_score": 0.005319,
+      "fused_score": 0.286,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-27-koomen-yc-lightcone-inside-yc-ai-playbook",
+      "path": "wiki/sources/2026-05-27-koomen-yc-lightcone-inside-yc-ai-playbook.md",
+      "type": "source",
+      "title": "Inside YC's AI Playbook",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "**Multiplayer-harness extension of Osmani's single-player harness-engineering framing.** [[2026-05-15-osmani-agent-harness-engineering|Osmani]] (15 May 2026, O'Reilly Radar): harness-engineering as a discipline — Ralph Loop / AGENTS.md / hooks / sandboxes / compaction — the **individual-developer-altitude** treatment. Koomen / Lightcone explicitly names the next-altitude problem: *'we're still kind of in the single-player era of agents where the harnesses that have gotten really popular — Claude Code, Codex, Pi, OpenClaw, Hermes — they're all designed to be used by a single human running on a single machine. ... one of the big problems that I don't think has been solved well yet by anybody is the multiplayer harness — enabling that kind of superpower but on a team or an organizational level.'* The YC internal infrastructure (shared tool registry, shared skill registry, agent-conversation broadcast, self-improving dream cycle) is Koomen's **proposed primitive set for the multiplayer-harness gap** — explicitly inspired by Osmani-style single-player harness engineering but operating one altitude above it. **The wiki's first explicit single-player → multiplayer harness-engineering progression.**",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.00495,
+      "fused_score": 0.284,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex",
+      "path": "wiki/sources/2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex.md",
+      "type": "source",
+      "title": "How to write AI agent loops in Claude Code and Codex",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "Vo explicitly cites Osmani's *loop engineering* article as the best breakdown of what an effective loop needs, and reproduces its five-element checklist (work trees, skills, plugins/connectors, subagents, state). Osmani's *Ralph loop* and Vo's *goal loop* are the same self-prompting-until-done primitive named from the engineer side vs. the product side.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004902,
+      "fused_score": 0.281,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-squads-harness",
+      "path": "wiki/sources/2026-09-02-github-podcast-demystifying-ai-terms-loop-engineering-squads-harness.md",
+      "type": "source",
+      "title": "Demystifying AI terms: loop engineering, squads, and harness | S02E02 | The GitHub Podcast",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "named on air as the best writing on the topic — *\"there's a guy called Addy Osmani who wrote a blog post on loop engineering. I think that's the best blog post I've read on this topic so far.\"* Third-party evidence of the diffusion path this wiki already models (Trivedy coins, Osmani popularises), observed from outside the vendor cluster that produced both",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004854,
+      "fused_score": 0.278,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-07-kokane-agent-harness-vs-systems-design",
+      "path": "wiki/sources/2026-05-07-kokane-agent-harness-vs-systems-design.md",
+      "type": "source",
+      "title": "What is Agent Harness? How it is different than System Design?",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "shares the operating-system-style decomposition (filesystem / bash / sandbox / memory / planning) and treats harness as a configurable surface",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "the talk's concluding line — *'we need to shift left, we need to shift up, and we need to think about designing systems, not just bits of code'* — is the engineering-leadership ratification of the harness-vs-systems-design framing; both make 'systems thinking' the higher-altitude capability that absorbs agent orchestration",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering -->supports--> this (1 hop)",
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.7,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-07",
+      "days_since_access": null,
+      "effective_confidence": 0.7,
+      "rrf_score": 0.005155,
+      "fused_score": 0.277,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-19-garg-yc-internal-ai-agent-evolves-itself",
+      "path": "wiki/sources/2026-05-19-garg-yc-internal-ai-agent-evolves-itself.md",
+      "type": "source",
+      "title": "How to Build an Internal AI Agent That Evolves Itself",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-15-osmani-agent-harness-engineering",
+          "edge_type": "supports",
+          "via": "the instructions.md / 'editable personality' pattern is Osmani's *ratchet-don't-brainstorm AGENTS.md* rule realised in production: every line in Garg's instructions.md is traceable back to a specific support-mistake class Ryan flagged in Slack and the agent then internalised",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "Garg is operationally Forsgren/Macvean's Pattern 3 ('designing environments, setting the guardrails') at startup scale; the self-extending tool authoring matches the Google Search-org PM platform story (intent translated into working features through a platform that encodes deep core-SWE expertise); both prescribe agent-editable instruction files as the team's behavioural-memory artifact",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-15-osmani-agent-harness-engineering <--supports<-- this (1 hop)",
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": "2026-05-21",
+      "last_confirmed": "2026-05-21",
+      "days_since_access": null,
+      "effective_confidence": 0.75,
+      "rrf_score": 0.005051,
+      "fused_score": 0.277,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-27-surrealdb-knowledge-graphs-for-ai-agents-practical-guide",
+      "path": "wiki/sources/2026-04-27-surrealdb-knowledge-graphs-for-ai-agents-practical-guide.md",
+      "type": "source",
+      "title": "Knowledge Graphs for AI Agents (A Practical Guide)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/industrial-ai-agents",
+          "edge_type": "supports",
+          "via": "second-vendor anchor on knowledge-graph-as-agentic-substrate after Manditereza 2026 industrial vantage; SurrealDB provides the general-purpose-developer vantage on the same construct",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/industrial-ai-agents <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004808,
+      "fused_score": 0.276,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-03-26-pan-natural-language-agent-harnesses",
+      "path": "wiki/sources/2026-03-26-pan-natural-language-agent-harnesses.md",
+      "type": "source",
+      "title": "Natural-Language Agent Harnesses",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2024-12-19-anthropic-building-effective-agents",
+          "edge_type": "supports",
+          "via": "Anthropic's workflows-vs-agents architectural distinction is the canonical version of Pan's harness-vs-runtime distinction — Pan's NLAH formalises the patterns Anthropic enumerated practitioner-style 16 months earlier",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2024-12-19-anthropic-building-effective-agents -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004762,
+      "fused_score": 0.273,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-24-from-demo-to-production-why-agentic-ai-systems-fail",
+      "path": "wiki/sources/2026-06-24-from-demo-to-production-why-agentic-ai-systems-fail.md",
+      "type": "source",
+      "title": "From Demo to Production: Why Agentic AI Systems Fail — and How to Fix Them",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2024-12-19-anthropic-building-effective-agents",
+          "edge_type": "supports",
+          "via": "tool/agent-count discipline + MCP as the integration substrate — the talk opens on Anthropic's Nov-2024 MCP release and reaches the same simplicity-over-sprawl conclusion from production",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2024-12-19-anthropic-building-effective-agents <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004717,
+      "fused_score": 0.27,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business",
+      "path": "wiki/sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business.md",
+      "type": "source",
+      "title": "How AI Agents Are Changing Business - PwC Chief AI Officer Dan Priest",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-10-building-the-future-of-agentic-infrastructure",
+          "edge_type": "supports",
+          "via": "Both describe agents becoming invisible operational infrastructure rather than discrete tools — Priest's task-registration 'operating system' for PwC's internal agent deployment parallels this video's 'agents as an invisible substrate... more like an operating system' vision, from enterprise-operator and platform-vendor vantages respectively",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-10-building-the-future-of-agentic-infrastructure <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004673,
+      "fused_score": 0.268,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-07-08-jensen-huang-why-companies-need-open-agent-systems",
+      "path": "wiki/sources/2026-07-08-jensen-huang-why-companies-need-open-agent-systems.md",
+      "type": "source",
+      "title": "Jensen Huang: Why companies need open agent systems",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-10-building-the-future-of-agentic-infrastructure",
+          "edge_type": "supports",
+          "via": "both, two days apart, describe harnesses thinning as models improve and a thin MCP server as the agent-to-agent interface — Huang's 'companies built on harnesses' framing (substrate/silicon vendor) and the Claude Platform team's 'thinner harnesses / meta-harnesses' account (first-party platform vendor) converge on the same mechanism from different vantages",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-10-building-the-future-of-agentic-infrastructure <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.00463,
+      "fused_score": 0.265,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era",
+      "path": "wiki/sources/2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era.md",
+      "type": "source",
+      "title": "Why Netflix is betting on systems thinkers—not specialists—in the AI era | Elizabeth Stone (CPTO)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-10-building-the-future-of-agentic-infrastructure",
+          "edge_type": "supports",
+          "via": "Stone's argument that paved paths and common infrastructure become more important, not less, as agents operate across multiple systems and want source-of-truth data converges with the Claude Platform team's account of agent identity and scoped access provisioning hardening even as harnesses thin elsewhere — an enterprise-operator vantage independently arriving at the same infrastructure-hardening finding as a first-party platform vendor",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "both independently name systems thinking / system design as the rising engineering-altitude skill of the AI era — Stone's 'we need more systems thinkers... people who can look across all the business domains and abstract that to here's the building blocks we're going to need' is the CPTO hiring-criteria restatement of Forsgren & Macvean's engineering-leadership prescription 'we need to think about designing systems, not just bits of code'",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-10-building-the-future-of-agentic-infrastructure <--supports<-- this (1 hop)",
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004587,
+      "fused_score": 0.263,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships",
+      "path": "wiki/sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships.md",
+      "type": "source",
+      "title": "Agents, robots, and us: Skill partnerships in the age of AI",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+          "edge_type": "supports",
+          "via": "Convergent on the **skills-matter-more-than-job-titles** macro-trend and the **agent-centric occupation cluster** prediction. Giles names *'a world in which skills matter more than formal job titles'* and *'more gig-like work within companies'* as expected outcomes in the lead key-takeaways. MGI (Nov 2025) quantifies the same shift via the **Skill Change Index** + the **agent-centric quadrant** (30% of US workforce, $70k avg pay — knowledge-work occupations where the wage-premium is at risk). The Coursera 2026 Job Skills Report Giles cites — *120% YoY growth in critical-thinking-course enrollments* across 6M learners — is the demand-side empirical anchor for MGI's *skill-evolution-not-elimination* finding.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004505,
+      "fused_score": 0.258,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting",
+      "path": "wiki/sources/2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting.md",
+      "type": "source",
+      "title": "How McKinsey Plans to Survive AI (and Reinvent Consulting)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+          "edge_type": "supports",
+          "via": "Convergent on the *services-don't-disappear-they-reinvent* observation. Sternfels (Feb 2026, McKinsey managing-partner altitude) argues consulting must reinvent under AI. Giles surfaces the broader picture: **AI is the #1 cited reason for layoffs but selectively** — IBM tripling entry-level hiring, HubSpot's Russell *'no intention of mass layoff'*, UiPath's Garaba on the growth-engine logic — the work-reorganization is genuine but the firm-headcount-trajectory varies. Giles also surfaces McKinsey's own analysis identifying IT, knowledge management, sales & marketing as the top-3 functions where companies are ramping up agent use. **Combined reading**: the McKinsey doctrine of *firm-level reinvention* is consistent with Giles's *to-cut-or-not-to-cut-boardroom-question*; both reject the binary doom framing.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004464,
+      "fused_score": 0.256,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-25-masad-replit-ceo-only-two-jobs-left",
+      "path": "wiki/sources/2026-04-25-masad-replit-ceo-only-two-jobs-left.md",
+      "type": "source",
+      "title": "Replit's CEO On The Only Two Jobs Left In The Company Of The Future — Amjad Masad at YC Founder Firesides",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+          "edge_type": "supports",
+          "via": "Convergent on the **doom-side** of the AI-employment-effects debate. Masad ('only two jobs left') and Giles ('jobpocalypse' framing in the lede + Amodei *50 percent bloodbath* quote) both treat aggressive AI-driven displacement as a real near-term scenario. Giles is more empirically anchored (Block/Meta specific-firm cuts; Challenger-Gray-Christmas monthly data; the Stanford 22-25 study), but the underlying *cuts-will-come* thesis is shared. Both contrast with [[2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going|Evans]]'s lump-of-labor counter-frame and with the HubSpot Russell *no-mass-layoff* practitioner counter.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004425,
+      "fused_score": 0.254,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-28-brynjolfsson-canaries-coal-mine",
+      "path": "wiki/sources/2026-04-28-brynjolfsson-canaries-coal-mine.md",
+      "type": "source",
+      "title": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+          "edge_type": "supports",
+          "via": "Giles's summary of *'a Stanford study'* showing 22-25 year-olds with a 6% employment decline in AI-exposed occupations late 2022 → September 2025, while older workers gained 6-9%, **is the [[Erik Brynjolfsson|Brynjolfsson]] *Canaries in the Coal Mine* paper** ([[Stanford Digital Economy Lab]]). Giles attributes it generically rather than naming the authors. The Giles framing puts the Canaries finding into an executive-readership employment-effect news survey, alongside the April-2026 Challenger-Gray-Christmas layoff data, the Block/Meta single-firm announcements, and the NACE late-2025 survey (183 employers, only 14% considered replacing entry-level roles with AI). The Canaries paper supplies the load-bearing academic empirical signal that Giles's executive-readership account leans on.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004386,
+      "fused_score": 0.251,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-01-lf-state-of-tech-talent-global-2026",
+      "path": "wiki/sources/2026-05-01-lf-state-of-tech-talent-global-2026.md",
+      "type": "source",
+      "title": "2026 State of Tech Talent Report: Not a jobs crisis, but a skills crisis with an upskilling answer",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+          "edge_type": "supports",
+          "via": "both: AI redefines/expands technical roles rather than eliminating them; redesign entry-level roles + upskilling as the executive response",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "upskilling existing staff + durable core skills as the answer to the AI-era skills gap",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs <--supports<-- this (1 hop)",
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": null,
+      "last_confirmed": "2026-06-08",
+      "days_since_access": null,
+      "effective_confidence": 0.75,
+      "rrf_score": 0.004545,
+      "fused_score": 0.25,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-30-ai-index-report-2026",
+      "path": "wiki/sources/2026-04-30-ai-index-report-2026.md",
+      "type": "source",
+      "title": "Artificial Intelligence Index Report 2026",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+          "edge_type": "supports",
+          "via": "Two 2026-era panoramic reports on AI-employment-effects at different altitudes. The Stanford 22-25-year-olds-6-percent-decline finding Giles cites is in the AI Index's headline employment-effects chapter. Other empirical anchors in Giles (Coursera 120%, Gartner spending doubling, McKinsey top-3 functions) sit adjacent to AI Index content. Giles converts AI Index empirical material into executive-readership news prose; the AI Index is the structural source. **Useful as the *practitioner-altitude reading of the academic empirical record* pairing.**",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004348,
+      "fused_score": 0.249,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero",
+      "path": "wiki/sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero.md",
+      "type": "source",
+      "title": "Ondanks 80 miljoen omzet gooit Hans Scheffer zijn bedrijf volledig om met AI: 'Elke kantoorbaan voor een scherm verdwijnt'",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+          "edge_type": "supports",
+          "via": "Convergent on the **HR-redeployment-as-augmentation** worked-example pattern at SME altitude. Scheffer (HelloPrint Dutch SME) cut customer-service from ~100 to 18 with AI delivering quality *'beter dan het niveau waarop mensen het kunnen doen'*; Russell (HubSpot CPO, US, ~9,000-employee scale) redeployed 10 HR staff from interview-scheduling to employee-satisfaction and individual-development work. Different scales (Dutch €80M SME vs US-mid-cap), different geographies, same operational pattern: agents take the rules-based work, humans take the judgment-bearing redeployment. Convergent with [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen / AWS]]'s *humans on judgment work, agents on execution work* line.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004274,
+      "fused_score": 0.245,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-28-moon-mckinsey-rewiring-software-delivery-for-the-agentic-era",
+      "path": "wiki/sources/2026-05-28-moon-mckinsey-rewiring-software-delivery-for-the-agentic-era.md",
+      "type": "source",
+      "title": "Rewiring software delivery for the agentic era",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+          "edge_type": "supports",
+          "via": "Same-week 28 May 2026 publication on overlapping themes — McKinsey at *operational-altitude-inside-software-delivery*, Giles at *executive-readership-across-functions-and-sectors*. Both surface the **workflow-redesign-as-the-real-work** prescription (Giles's first executive recommendation: *Review workflows first, deploy agents second* + Garaba/UiPath's onboarding-process-with-60-subprocesses worked example; McKinsey's *outer-loop roles integration prescription* with policy-as-code as the named primitive). Both surface the **manager-as-orchestrator** observation (Giles: senior production planners → agent orchestrators at the WEF San Francisco manufacturing meeting; McKinsey: human role *'less about producing artifacts and more about supervising and improving the system that produces them'*). The McKinsey piece is the McKinsey-Digital tech-partner altitude; the Giles piece is the executive-readership news-survey altitude — convergent on the *redesign-first, then-orchestrate* prescription.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004237,
+      "fused_score": 0.243,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-21-allen-aws-london-exec-forum-agentic-team-structures",
+      "path": "wiki/sources/2026-05-21-allen-aws-london-exec-forum-agentic-team-structures.md",
+      "type": "source",
+      "title": "London Executive Forum 2026 — A leader's guide to advanced team structures in an agentic world",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+          "edge_type": "supports",
+          "via": "Convergent on the **senior production planners → agent orchestrators** observation. Allen (AWS London executive forum) frames team-structure-collapse + agent-orchestration as the operational shape; Giles surfaces the same observation in a different industry (manufacturing/supply-chain at the WEF San Francisco meeting). Microsoft data Giles cites — *'manufacturers who adopt agents based on its technology use more of them than companies in other sectors like retailing and financial services'* — adds a sector-comparison data point Allen's AWS-altitude piece does not have. Both also surface the **chatbot 2-3% vs deeper-agent 30-60%** productivity-gain split (Allen via the *AI bolted on is going to fail* framing; Giles via Kiva Allgood / WEF Advanced Manufacturing Center quote — explicit numerical anchor).",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": null,
+      "last_confirmed": "2026-07-15",
+      "days_since_access": null,
+      "effective_confidence": 0.8,
+      "rrf_score": 0.00431,
+      "fused_score": 0.242,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+      "path": "wiki/sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going.md",
+      "type": "source",
+      "title": "A rational conversation on where AI is actually going | Benedict Evans",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+          "edge_type": "contradicts",
+          "via": "Partial contradiction on the *lump-of-labor* and *new-jobs-will-emerge* framings. Evans (31 May 2026, four days later than Giles) argues *every wave of automation creates new jobs the doomers can't predict* and calls people who assert *every big company is going to buy ChatGPT tomorrow and then in two weeks time fire all their staff* *'morons'*. Giles surfaces the directly-counter empirical record: **AI is the #1 cited reason for US job cuts in BOTH March and April 2026** per Challenger, Gray & Christmas; April-2026 layoffs at 83,387 (+38% from March, third-highest since 2009); Block (Dorsey) explicit 40% workforce cut citing *'intelligence tools'*; Meta 8,000 cuts justified by AI capex of $125-145B for 2026. Giles also cites Carl Benedikt Frey (Oxford AI/work professor): *'It's entirely plausible that AI will create new kinds of businesses, but it's hard to see it creating something like the automobile industry [that generated many new jobs]'* — the Frey quote is the explicit empirical counter to Evans's railway-engineer / 19th-century-precedent argument. The two sources also agree on a number of points (AI-labs-still-hiring; the McKinsey-altitude top-3 functions; the workflow-redesign-as-the-real-work prescription) — the contradiction is specifically about the *aggregate-employment-trajectory*, not about the *operational shape* of the transformation.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -->contradicts--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004202,
+      "fused_score": 0.241,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care",
+      "path": "wiki/sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care.md",
+      "type": "source",
+      "title": "AI for Interoperability in Health Care: Philips's Carla Goulart Peron",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+          "edge_type": "supports",
+          "via": "Cross-altitude support on the **do-more-with-the-same** prescription. Giles (US-economy executive-readership altitude, 28 May 2026, three days earlier) surfaces the to-cut-or-not-to-cut boardroom question + HubSpot Russell's *no-mass-layoff* counter-example; Peron (Philips-CMO healthcare-domain altitude, 31 May 2026) supplies the *clinical-domain explanation for why displacement-by-default doesn't fit*: the supply side is structurally short, so AI augments rather than displaces. Both reject the binary doom framing for similar but distinct reasons — Giles via diversified-employer behaviour (IBM tripling entry-level, HubSpot redeploying 10), Peron via structural-supply-shortage in the specific domain.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004167,
+      "fused_score": 0.239,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-03-warren-yc-how-to-build-an-ai-native-services-company",
+      "path": "wiki/sources/2026-06-03-warren-yc-how-to-build-an-ai-native-services-company.md",
+      "type": "source",
+      "title": "How to Build an AI-Native Services Company",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+          "edge_type": "supports",
+          "via": "Convergent on the **services-firms-rebuilt-with-AI-doing-most-of-the-work** macro frame. Giles (WP Intelligence, May 2026, executive-readership altitude) surfaces the McKinsey top-3 functions (IT / knowledge management / sales & marketing) where companies are ramping up agent use + the HubSpot Russell + IBM-entry-level redesign worked examples + the *humans-on-judgment-work, agents-on-execution-work* prescription. Warren (June 2026, YC altitude) describes the **vendor-startup category** building the agents the Giles enterprises are deploying. The wiki's first explicit cross-altitude pairing of *enterprise-buyer of agent services* (Giles) with *startup-vendor of agent services* (Warren) — same market viewed from both demand and supply sides.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004098,
+      "fused_score": 0.235,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset",
+      "path": "wiki/sources/2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset.md",
+      "type": "source",
+      "title": "To Thrive Alongside AI, Focus on Mindset—Not Skillset",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+          "edge_type": "supports",
+          "via": "operator → supervisor/mentor role shift; redesign roles around a human+agent hybrid workforce",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004065,
+      "fused_score": 0.233,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-22-bbc-what-if-were-wrong-about-ai-layoffs",
+      "path": "wiki/sources/2026-06-22-bbc-what-if-were-wrong-about-ai-layoffs.md",
+      "type": "source",
+      "title": "What If We're Wrong About AI Layoffs?",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+          "edge_type": "supports",
+          "via": "AI-as-cited-reason-for-layoffs as partial/over-attributed — Giles supplies the Challenger 'AI #1 cited reason' monthly data + NACE 14%; this source supplies the labor-economist mechanism (valuation premium) for why the attribution is inflated",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004032,
+      "fused_score": 0.231,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2022-06-29-martin-hbr-a-plan-is-not-a-strategy",
+      "path": "wiki/sources/2022-06-29-martin-hbr-a-plan-is-not-a-strategy.md",
+      "type": "source",
+      "title": "A Plan Is Not a Strategy",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success",
+          "edge_type": "supports",
+          "via": "Carrier's load-bearing claim — 'winners will be determined not by who has access to the technology, but whose organization adopts it faster in a way that actually helps its system' — is the industrial-AI restatement of Martin's planning-vs-strategy distinction. The Heineken 'buy two new bottling lines' temptation is Martin's planning-trap in industrial-ops form.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003968,
+      "fused_score": 0.228,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-01-lf-state-of-tech-talent-europe-2026",
+      "path": "wiki/sources/2026-06-01-lf-state-of-tech-talent-europe-2026.md",
+      "type": "source",
+      "title": "2026 State of Tech Talent Europe: AI, technical hiring, and the skills gap in Europe",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+          "edge_type": "supports",
+          "via": "both: AI net-creates IT jobs while pressuring the junior tier; deliberately hire/develop junior talent + upskill as the response",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": null,
+      "last_confirmed": "2026-06-08",
+      "days_since_access": null,
+      "effective_confidence": 0.75,
+      "rrf_score": 0.004132,
+      "fused_score": 0.227,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/enterprise-ai-adoption",
+      "path": "wiki/concepts/enterprise-ai-adoption.md",
+      "type": "concept",
+      "title": "enterprise-ai-adoption",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/micro-productivity-trap",
+          "edge_type": "caused",
+          "via": "shallow adoption produces task-level gains without firm-level value",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/micro-productivity-trap <--caused<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-09-17",
+      "last_confirmed": "2026-09-17",
+      "days_since_access": 1,
+      "effective_confidence": 0.94,
+      "rrf_score": 0.003817,
+      "fused_score": 0.227,
+      "verdict": "ignore",
+      "reason": "adoption breadth is AIBS wk2/wk4 material, not agent intro",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-02-01-manditereza-ontology-driven-industrial-ai",
+      "path": "wiki/sources/2026-02-01-manditereza-ontology-driven-industrial-ai.md",
+      "type": "source",
+      "title": "Building Ontology-Driven Intelligence for Industrial AI Agents",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success",
+          "edge_type": "supports",
+          "via": "Manditereza names ontology-driven data fabrics as the substrate for industrial AI agents; Carrier supplies the strategic-leadership framing for adopting them — find the problem, pick the right agent level (don't jump to L5 when rule-based will do), use AI to *replace long slow feedback loops with very fast ones*",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003937,
+      "fused_score": 0.226,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-15-sterman-systems-thinking-for-leaders-designing-solutions-that-work",
+      "path": "wiki/sources/2026-05-15-sterman-systems-thinking-for-leaders-designing-solutions-that-work.md",
+      "type": "source",
+      "title": "Systems Thinking for Leaders: Designing Solutions That Work",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success",
+          "edge_type": "supports",
+          "via": "Carrier teaches in the same MIT system-dynamics group Sterman directs; Carrier explicitly cites Jay Forrester ('missing feedback loops') as the diagnostic for where agentic AI creates value. The two MIT Sloan Executive Education videos (Sterman May 2026, Carrier March 2026) form a two-source lineage anchor for [[systems-thinking]] applied at different scales — Sterman general management, Carrier industrial operations.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003906,
+      "fused_score": 0.224,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/automation-vs-augmentation",
+      "path": "wiki/concepts/automation-vs-augmentation.md",
+      "type": "concept",
+      "title": "automation-vs-augmentation",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/micro-productivity-trap",
+          "edge_type": "contradicts",
+          "via": "process lock-in = automation without redesign; reinvent-the-business resists this trap",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/micro-productivity-trap -->contradicts--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-09-16",
+      "last_confirmed": "2026-09-16",
+      "days_since_access": 2,
+      "effective_confidence": 0.929,
+      "rrf_score": 0.003788,
+      "fused_score": 0.224,
+      "verdict": "ignore",
+      "reason": "contradicts-edge from micro-productivity-trap concerns productivity framing (AIBS wk5), not what an agent is; named via LRD only",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/ai-coding-productivity-evidence",
+      "path": "wiki/concepts/ai-coding-productivity-evidence.md",
+      "type": "concept",
+      "title": "AI coding productivity — the evidence",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/micro-productivity-trap",
+          "edge_type": "supports",
+          "via": null,
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/micro-productivity-trap <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": "2026-09-15",
+      "last_confirmed": "2026-09-15",
+      "days_since_access": 3,
+      "effective_confidence": 0.822,
+      "rrf_score": 0.003876,
+      "fused_score": 0.22,
+      "verdict": "ignore",
+      "reason": "coding-productivity evidence; not an intro facet",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-05-06-jassy-amazon-agility-ai-strategy-changing-role-of-managers",
+      "path": "wiki/sources/2025-05-06-jassy-amazon-agility-ai-strategy-changing-role-of-managers.md",
+      "type": "source",
+      "title": "Amazon CEO Andy Jassy on Agility, AI Strategy, and the Changing Role of Managers",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/micro-productivity-trap",
+          "edge_type": "supports",
+          "via": "target-firm CEO operator-of-trap-escape worked example — 15% IC-to-manager ratio target (already beaten in Q1), 1000+ no-bureaucracy emails received, 375 processes changed, 5-day RTO mandate",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/micro-productivity-trap <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003759,
+      "fused_score": 0.216,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "entities/MIT-Sloan-Executive-Education",
+      "path": "wiki/entities/MIT-Sloan-Executive-Education.md",
+      "type": "entity",
+      "title": "MIT-Sloan-Executive-Education",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success",
+          "edge_type": "published-by",
+          "via": "John Carrier's webinar on industrial AI and missing-feedback-loops, promoting the *Implementing Industrial AI* executive course (31 March 2026)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success <--published-by<-- this (1 hop)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004,
+      "fused_score": 0.215,
+      "verdict": "ignore",
+      "reason": "publisher card",
+      "reason_class": "wrong-granularity",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-14-thompson-the-daily-workers-letting-ai-do-their-jobs",
+      "path": "wiki/sources/2026-04-14-thompson-the-daily-workers-letting-ai-do-their-jobs.md",
+      "type": "source",
+      "title": "The Workers Letting A.I. Do Their Jobs",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/micro-productivity-trap",
+          "edge_type": "supports",
+          "via": "Direct empirical: 20x faster at two-person startups vs 10% faster at Google; lay-off-then-rehire-within-6-months anecdote; explicit 1980s productivity-paradox parallel for AI",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/micro-productivity-trap <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003731,
+      "fused_score": 0.214,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "syntheses/organizational-frameworks-for-ai-adoption",
+      "path": "wiki/syntheses/organizational-frameworks-for-ai-adoption.md",
+      "type": "synthesis",
+      "title": "organizational-frameworks-for-ai-adoption",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/micro-productivity-trap",
+          "edge_type": "supports",
+          "via": "the layered framing makes the trap legible — most failures are layer mismatches",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/micro-productivity-trap <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.9,
+      "accessed_at": "2026-09-17",
+      "last_confirmed": "2026-07-15",
+      "days_since_access": 1,
+      "effective_confidence": 0.89,
+      "rrf_score": 0.00365,
+      "fused_score": 0.213,
+      "verdict": "ignore",
+      "reason": "adoption frameworks (AIBS wk4), not agents",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up",
+      "path": "wiki/sources/2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up.md",
+      "type": "source",
+      "title": "How To Build A Company With AI From The Ground Up",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/micro-productivity-trap",
+          "edge_type": "supports",
+          "via": "open-loop vs closed-loop framing — control-systems vocabulary for the trap; orgs that run open-loop are 'inherently lossy'; closed-loop orgs continuously monitor + adjust; the framing is the trap-escape mechanism named in vendor-neutral terms",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/micro-productivity-trap <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003704,
+      "fused_score": 0.212,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era",
+      "path": "wiki/sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era.md",
+      "type": "source",
+      "title": "Stanford CS153 Frontier Systems | Nikhyl Singhal from Skip on Product Management in the AI Era",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/micro-productivity-trap",
+          "edge_type": "supports",
+          "via": "the bureaucrat/movement-of-information role *is* the trap; builders escape; the *theatrics of product management* (slide-decks, VP layers, IC4-experiments-not-in-the-room) as the trap-instantiation",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "the Search-org story — *'we have product managers who are shipping features all the way through to live experiments'* — is the Google-side empirical evidence for Singhal's PM-as-product-builder thesis; both name role-blurring as the structural shift, both point at platforms-with-embedded-best-practices as the enabling layer",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/micro-productivity-trap <--supports<-- this (1 hop)",
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003676,
+      "fused_score": 0.211,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/ai-knowledge-hiding",
+      "path": "wiki/concepts/ai-knowledge-hiding.md",
+      "type": "concept",
+      "title": "ai-knowledge-hiding",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/micro-productivity-trap",
+          "edge_type": "supports",
+          "via": "supplies the individual-level mechanism behind the trap: when efficiency gains are 'taxed' (saved time refilled with more work) and disclosure threatens standing, employees rationally hide their best workflows, so task-level gains never aggregate to firm-level value",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/micro-productivity-trap <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": "2026-09-15",
+      "last_confirmed": "2026-09-15",
+      "days_since_access": 3,
+      "effective_confidence": 0.725,
+      "rrf_score": 0.003846,
+      "fused_score": 0.209,
+      "verdict": "ignore",
+      "reason": "AIBS wk3 people dimension; not needed for 3 slides",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Google",
+      "path": "wiki/entities/Google.md",
+      "type": "entity",
+      "title": "Google",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "published-by",
+          "via": "Google for Developers YouTube channel, Google I/O 2026 Professional Development track",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer <--published-by<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.9,
+      "accessed_at": "2026-09-01",
+      "last_confirmed": "2026-09-01",
+      "days_since_access": 17,
+      "effective_confidence": 0.859,
+      "rrf_score": 0.003623,
+      "fused_score": 0.209,
+      "verdict": "ignore",
+      "reason": "organisation card",
+      "reason_class": "wrong-granularity",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+      "path": "wiki/sources/2025-06-09-krakowski-human-centered-ai-field-experiment.md",
+      "type": "source",
+      "title": "Human-Centered Artificial Intelligence: A Field Experiment",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "**Productive-struggle + cognitive-style-tailoring convergence at developer + sales-expert altitudes.** Forsgren & Macvean (Google DORA 2026): *productive struggle* — engineering-leadership countermeasure where humans deliberately work through complexity rather than offloading it to AI. Krakowski et al.: *tailored human-AI interaction* — sales experts whose interaction context aligns with their cognitive style increase utilization, learning, and performance over time. Both prescribe **interaction-design rather than tool-deployment as the operative lever**, at developer-tool altitude (DORA) and sales-rep altitude (Krakowski). The cross-domain convergence: *AI augmentation is a design discipline, not a deployment decision*.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-25",
+      "days_since_access": null,
+      "effective_confidence": 0.85,
+      "rrf_score": 0.003597,
+      "fused_score": 0.206,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-07-02-joshi-venkatraman-fowler-expert-generalists",
+      "path": "wiki/sources/2025-07-02-joshi-venkatraman-fowler-expert-generalists.md",
+      "type": "source",
+      "title": "Expert Generalists",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "both prescribe building tool-independent core/fundamental developer skills to thrive in the AI era rather than chasing framework-specific expertise",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003571,
+      "fused_score": 0.205,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-07-globerson-et-al-scalable-measurement-durable-skills",
+      "path": "wiki/sources/2026-05-07-globerson-et-al-scalable-measurement-durable-skills.md",
+      "type": "source",
+      "title": "Towards Scalable Measurement of Durable Skills",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "twin Google-Research vantage (Globerson et al. from Google Research; Forsgren/Macvean from Google Developer Intelligence) on durable skills; the T-shape's horizontal AI-engagement layer + adjacent non-engineering wing is the engineering-team correlate of the collaboration / creativity / critical-thinking durable-skill cluster",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003546,
+      "fused_score": 0.203,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-07-ransbotham-augmented-learners",
+      "path": "wiki/sources/2026-05-07-ransbotham-augmented-learners.md",
+      "type": "source",
+      "title": "Learning to Manage Uncertainty, With AI",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "the *scientific mindset* fifth pattern — *'every week our engineers are experimenting with new approaches and investing in codifying that learning back into the system'* — is the engineering-team operationalisation of the Augmented Learner 2×2 (org-learning × AI-specific learning); both pair experimentation with deliberate capture of learnings",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-07",
+      "days_since_access": null,
+      "effective_confidence": 0.85,
+      "rrf_score": 0.003497,
+      "fused_score": 0.2,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-07-kiron-schrage-compound-benefits",
+      "path": "wiki/sources/2026-05-07-kiron-schrage-compound-benefits.md",
+      "type": "source",
+      "title": "How to Reap Compound Benefits From Generative AI",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "shift-left-on-intent + spec-driven-development + agent-journaling for reflection = engineering-team operationalisation of Kiron-Schrage's *verification → evaluation → learning capture* compounding flywheel; the talk's *'specs combined with the agent rules and skills are the source of truth'* is the SWE-team analogue of Kiron-Schrage's judgment-capture infrastructure",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-07",
+      "days_since_access": null,
+      "effective_confidence": 0.8,
+      "rrf_score": 0.003521,
+      "fused_score": 0.198,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-09-chase-agent-development-lifecycle",
+      "path": "wiki/sources/2026-05-09-chase-agent-development-lifecycle.md",
+      "type": "source",
+      "title": "The Agent Development Lifecycle",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "evals-first upskilling prescription + agent-journaling + risk-assessor-on-CI-pipeline are the engineering-team articulation of Chase's agent-development-lifecycle; the talk's *'upskilling on evals'* recommendation directly maps to Chase's evaluation-as-discipline framing",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003448,
+      "fused_score": 0.198,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai",
+      "path": "wiki/sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai.md",
+      "type": "source",
+      "title": "Redefining What Efficiency Means in the Age of AI",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "DORA's empirically-grounded finding that *'increasing AI adoption can lead to individual productivity benefits while at the same time decreasing team-level benefits'* is the engineering-team correlate of Storoni's individual-cognition critique of gear-3 reactive work. Same divergence pattern (micro feels productive, macro isn't) at adjacent scales — Forsgren & Macvean at engineering teams via DORA research, Storoni at individual neurology via norepinephrine inverted-U. Forsgren & Macvean's *'amplifier and mirror'* framing of AI (magnifies strengths, exposes weaknesses) is convergent with Storoni's claim that reactive work-design choices amplify gear-3 drift.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003425,
+      "fused_score": 0.196,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-08-running-an-ai-native-engineering-org",
+      "path": "wiki/sources/2026-05-08-running-an-ai-native-engineering-org.md",
+      "type": "source",
+      "title": "Running an AI-native engineering org",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "twin inside-engineering vantage from a major AI lab (Google Developer Intelligence ↔ Anthropic Claude Code engineering); both reject vibe-coding for top performers, both prescribe spec-driven intent capture, both name verification as the new bottleneck and shift-left as the response; both make code-review automation a load-bearing practice; together they triangulate the engineering-leadership thesis from two independent inside-the-lab vantages within a fortnight",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-09",
+      "days_since_access": null,
+      "effective_confidence": 0.8,
+      "rrf_score": 0.003472,
+      "fused_score": 0.195,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-21-bender-google-io-software-engineering-tipping-point",
+      "path": "wiki/sources/2026-05-21-bender-google-io-software-engineering-tipping-point.md",
+      "type": "source",
+      "title": "Software engineering at the tipping point",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "**Paired Google I/O 2026 Professional Development track talks**, same conference, same channel. Forsgren & Macvean (~21 April Google I/O publication date) anchor the *engineer-skill-evolution* thesis (T-shape model, shift-left-on-intent, designing environments not vibe coding, micro teams, scientific mindset); Bender (this source, 21 May) anchors the **developer-ecosystem-evolution** thesis at the **socio-technical-system altitude**. Both cite DORA. Bender's *AI as amplifier* framing (*'amplification is a magnitude and not a direction; AI doesn't care where all of that stuff goes'*) is the **ecosystem-side instantiation** of Forsgren's *amplifier-and-mirror* framing — same DORA-rooted observation applied to organizational systems rather than individual engineers.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003401,
+      "fused_score": 0.195,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-21-sinclair-ivers-benitez-sei-cmu-ai-native-software-engineering",
+      "path": "wiki/sources/2026-05-21-sinclair-ivers-benitez-sei-cmu-ai-native-software-engineering.md",
+      "type": "source",
+      "title": "AI-Native Software Engineering: Enduring Principles, New Pace",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "**Paired DORA-rooted-fundamentals anchors at the institutional altitude** — Forsgren & Macvean (Google I/O 2026 individual-engineer altitude) name *AI as amplifier — fundamentals determine direction*; Sinclair/Ivers/Benitez (SEI/CMU institutional altitude) operationalise the same claim as a software-engineering-discipline programme: *'we can't just abandon the things we know are good'* (Benitez) + the DRY/SOLID/YAGNI principle retention argument (Ivers) + *'engineering discipline still matters'* (Ivers on the silver-bullet question). The wiki now has **three sources from May 2026 alone** converging on the AI-as-amplifier-not-substitute thesis at three altitudes (individual-engineer / ecosystem / institutional-research-centre).",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003378,
+      "fused_score": 0.194,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-24-mckinsey-ai-supercharging-software-development",
+      "path": "wiki/sources/2026-06-24-mckinsey-ai-supercharging-software-development.md",
+      "type": "source",
+      "title": "AI Is Supercharging Software Development. Humans Determine Its Impact.",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+          "edge_type": "supports",
+          "via": "both name which software-engineering skills are becoming obsolete vs. durable under agentic coding, from Google DORA research and McKinsey consulting practice respectively",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003356,
+      "fused_score": 0.192,
+      "verdict": "ignore",
+      "reason": "graph-only long-tail neighbour, low fused score, no facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/agent-oversight-and-delegation",
+      "path": "wiki/concepts/agent-oversight-and-delegation.md",
+      "type": "concept",
+      "title": "agent-oversight-and-delegation",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "fused_score": null,
+      "retrieval_reasons": [
+        "named in LRD Part 8 concept column; located via index.md"
+      ],
+      "verdict": "use",
+      "reason": "delegation regret; irreversible x externally visible; preview over permission",
+      "reason_class": null,
+      "promoted": "gap-expansion",
+      "anchor": "W6"
+    },
+    {
+      "slug": "concepts/agentic-engineering",
+      "path": "wiki/concepts/agentic-engineering.md",
+      "type": "concept",
+      "title": "agentic-engineering",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "fused_score": null,
+      "retrieval_reasons": [
+        "named in LRD Part 8 concept column; located via index.md"
+      ],
+      "verdict": "use",
+      "reason": "raises the ceiling; quality bar at agent speed",
+      "reason_class": null,
+      "promoted": "gap-expansion",
+      "anchor": "W10"
+    },
+    {
+      "slug": "concepts/vibe-coding",
+      "path": "wiki/concepts/vibe-coding.md",
+      "type": "concept",
+      "title": "vibe-coding",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "fused_score": null,
+      "retrieval_reasons": [
+        "named in LRD Part 8 concept column; located via index.md"
+      ],
+      "verdict": "use",
+      "reason": "raises the floor; democratisation",
+      "reason_class": null,
+      "promoted": "gap-expansion",
+      "anchor": "W11"
+    }
+  ],
+  "expansions": [
+    {
+      "trigger_facet": "facets 2-4: LRD Part 8 names agent-oversight-and-delegation (AIBS wk3, AEL wk5), vibe-coding and agentic-engineering (AEL wk1/wk7); retrieval did not surface them",
+      "method": "index.md",
+      "added": [
+        "concepts/agent-oversight-and-delegation",
+        "concepts/agentic-engineering",
+        "concepts/vibe-coding"
+      ]
+    }
+  ],
+  "answer_map": [
+    {
+      "anchor": "W1",
+      "claim": "Four-clause agent definition shared by Google and Anthropic; chatbot→agent→multi-agent ladder; intern entities; no-regrets zone; CIO reality check / performative oversight",
+      "pages": [
+        "concepts/ai-agents"
+      ],
+      "span": "## Working definition; ## The four-clause definition…; ### The human-agent collaboration reality"
+    },
+    {
+      "anchor": "W2",
+      "claim": "Implementation-neutral definition; delegate what, agent decides how",
+      "pages": [
+        "sources/2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2"
+      ],
+      "span": "## TL;DR"
+    },
+    {
+      "anchor": "W3",
+      "claim": "Workflows vs agents (who decides next step); start simple; support + coding as proven domains",
+      "pages": [
+        "sources/2024-12-19-anthropic-building-effective-agents"
+      ],
+      "span": "## TL;DR"
+    },
+    {
+      "anchor": "W4",
+      "claim": "Reason→act→observe loop; legible thoughts allow correction",
+      "pages": [
+        "concepts/react-reasoning-acting"
+      ],
+      "span": "## The core mechanism; ## Why it mattered"
+    },
+    {
+      "anchor": "W5",
+      "claim": "Harness definition, 4 Cs, OS analogy, model rented/harness owned, Friday-in-March failure",
+      "pages": [
+        "concepts/agent-harness"
+      ],
+      "span": "## Working definition; ### The operating-system analogy; ### The model is rented…; ### The Friday-in-March pattern"
+    },
+    {
+      "anchor": "W6",
+      "claim": "Delegation regret; irreversible × externally visible trigger; preview over permission",
+      "pages": [
+        "concepts/agent-oversight-and-delegation"
+      ],
+      "span": "## The failure mode that is not about accuracy; ## Three findings…"
+    },
+    {
+      "anchor": "W7",
+      "claim": "Task-level gains fail to become firm-level value",
+      "pages": [
+        "concepts/micro-productivity-trap"
+      ],
+      "span": "## Working definition"
+    },
+    {
+      "anchor": "W8",
+      "claim": "Multiple agents only when one context window is not enough",
+      "pages": [
+        "concepts/multi-agent-failure-modes"
+      ],
+      "span": "## The deflation"
+    },
+    {
+      "anchor": "W9",
+      "claim": "Industrial agents: data grounding is the binding problem; pick the right agent level; page is a stub",
+      "pages": [
+        "concepts/industrial-ai-agents"
+      ],
+      "span": "## Working definition; ### Pick-the-right-agent-level heuristic"
+    },
+    {
+      "anchor": "W10",
+      "claim": "Agentic engineering raises the ceiling",
+      "pages": [
+        "concepts/agentic-engineering"
+      ],
+      "span": "## Working definition"
+    },
+    {
+      "anchor": "W11",
+      "claim": "Vibe coding raises the floor",
+      "pages": [
+        "concepts/vibe-coding"
+      ],
+      "span": "## Working definition; ### Vibe coding raises the floor"
+    }
+  ],
+  "answer": "**Deck: \"AI Agents — what they are, how they're built, what they mean for an SME\"** (3 slides, for the week-1 plenary of the integrated AIBS/AEL module)\n\nReferences marked *LRD §…* point to the module's integrated LRD (external document, not a wiki page). Everything marked `[W#]` is a wiki page.\n\n---\n\n### Slide 1 — What is an AI agent? *(the intern you delegate a goal to)*\n\n- **The definition.** The working definition is *\"an LLM with tools running in a loop to accomplish a goal.\"* By mid-2026 Google and Anthropic developer material both use it [W1]. The older textbook definition leaves the LLM out: *\"a computer system situated in some environment, capable of autonomous action … to meet its delegated objectives\"* [W2]. Show both, because the gap between them is a good first question for students.\n- **The ladder.** Chatbot (conversation) → agent (pursues goals autonomously, plans, adapts) → multi-agent system (several agents collaborating) [W1].\n- **Where the line falls: who decides the next step.** In a *workflow*, code sets the path. In an *agent*, the model directs its own process and tool use [W3]. Wooldridge draws the same line fifteen years earlier: you delegate *what*, and the agent decides *how* [W2].\n- **The loop under the hood.** Reason → act → observe → adjust. This is ReAct (2022), and the thoughts it writes down are what let a human inspect and correct the agent [W4].\n- **The anchor metaphor.** The intern analogy stays unchanged as the week-1 anchor (*LRD App. A.1, Part 8 wk 1*). The wiki backs it up: Karpathy calls agents *intern entities* that need a human *\"in charge of the aesthetics, the judgment, the taste, and a little bit of oversight\"* [W1].\n- **Links:** AIBS wk 1 (intern analogy, problem analysis). AEL wk 2 debrief (ReAct).\n\n### Slide 2 — How is an agent built? *(the model is rented, the harness is owned)*\n\n- **Model plus harness.** The harness is the software that turns a model into a system that can pursue goals reliably [W5]. Analogy: the LLM is the CPU, the context window is the RAM, tools are the device drivers, and the harness is the operating system [W5].\n- **The business argument.** *\"The model is rented … the harness is what we own and what compounds.\"* [W5] This connects AEL to AIBS wk 2 (vendor business models, dependency).\n- **Most failures happen in the harness, not the model.** In the \"Friday in March\" case, an agent told to *\"clean things up\"* archived two weeks of research. The model had reasoned correctly. The missing piece was a layer that recognised a destructive intent and asked first [W5].\n- **Start simple.** *\"Find the simplest solution possible … this might mean not building agentic systems at all.\"* [W3] Industrial practice says the same: *\"no reason to jump to a level five agent when a simple rule-based agent will do\"* [W9]. Add more agents only when one context window is no longer enough [W8].\n- **Vibe coding versus agentic engineering.** Vibe coding raises the floor (anyone can build). Agentic engineering raises the ceiling (building fast *without* lowering quality) [W10][W11]. This is AEL's arc: vibe-coded spike in wk 1, ratchet retrospective in wk 7 (*LRD Part 8*).\n- **Roadmap only (don't pre-teach):** Context · Constraints · Contracts · Compounding [W5] map onto AEL wk 2 / 5 / 4 / 6 (*LRD Part 8*). Show the four names as the route. The LRD makes the harness pages **debrief reading** and says handing them out in advance \"removes the failure that gives each element its point\" (*LRD Part 8, AEL column*).\n\n### Slide 3 — What does it mean for a business? *(value, trust, and where to keep a human)*\n\n- **Where agents pay off today.** In the low-error-cost, explicit-data *\"no regrets zone\"*, such as bulk inquiries, summaries and screening [W1]. Customer support and coding are the proven domains [W3].\n- **The reality check.** Leaders report *\"you have to check the output, recheck the output, re-prompt it.\"* They also warn about *performative oversight*: review that degrades into rubber-stamping [W1]. The same failure mode is in the LRD's risk register: a team deferring to its own agent's output (*LRD Part 12*).\n- **Trust and delegation.** Users regret an agent that acted *beyond what they would have authorised*, even when the result was correct. The trigger is **irreversible × externally visible** (sending an email, for example), and preview works better than up-front permission [W6]. Links: AIBS wk 3 (can the SME trust AI?) and AEL wk 5 (hooks before a tool call).\n- **Value is not automatic.** In the micro-productivity trap, tasks get faster and the firm doesn't gain, because the workflow around the task stays the same [W7]. Links: AIBS wk 5 and wk 6 (*LRD Part 8*: the productivity-trap page returns as the test for a claimed success).\n- **Industrial SMEs.** For industrial SMEs the hard part is grounding scattered operational data (MES/ERP/SCADA), not engineering around the model [W9]. This is thin ground: the page is a single-source stub [W9]. Link: AIBS wk 6.\n- **Closing line:** \"Your team will build its own agent this semester (the research platform) and be questioned weekly by another one (the Socratic tutor)\" (*LRD §1.2, §6.1, §6.4*).\n\n---\n\n**Gaps to know about:** the wiki has no page on the agent-to-regulation link (EU AI Act / Draghi, AIBS wk 2), and *loop engineering* has no page of its own. The LRD records both (*LRD Part 8 notes*). `industrial-ai-agents` is a stub [W9].\n\n**Wiki pages cited:** [W1] [[ai-agents|AI Agents]] · [W2] [[2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2|Wooldridge 2009]] · [W3] [[2024-12-19-anthropic-building-effective-agents|Anthropic — Building effective agents]] · [W4] [[react-reasoning-acting|ReAct]] · [W5] [[agent-harness|Agent harness]] · [W6] [[agent-oversight-and-delegation|Agent oversight and delegation]] · [W7] [[micro-productivity-trap|Micro-productivity trap]] · [W8] [[multi-agent-failure-modes|Multi-agent failure modes]] · [W9] [[industrial-ai-agents|Industrial AI agents]] · [W10] [[agentic-engineering|Agentic engineering]] · [W11] [[vibe-coding|Vibe coding]]\n",
+  "generated_at": "2026-09-18T10:09:07.827562Z"
+}
