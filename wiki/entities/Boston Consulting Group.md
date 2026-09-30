@@ -4,9 +4,9 @@ kind: organization
 aliases: ["Boston Consulting Group", "BCG", "BCG Henderson Institute"]
 tags: [BCG, management-consulting, henderson-institute]
 confidence: 0.85
-last_confirmed: "2026-09-28"
-accessed_at: "2026-09-28"
-source_count: 7
+last_confirmed: "2026-09-30"
+accessed_at: "2026-09-30"
+source_count: 8
 ---
 
 # Boston Consulting Group
@@ -42,3 +42,7 @@ SORT file.name ASC
 ## AI Cost Advantage practice (added 2026-09-28)
 
 [[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune|Lukic & Goydan on The So What from BCG (Aug 2026)]] introduces a practice that, in Paul Goydan's words, *"didn't exist six or eight months ago"*: helping clients control AI spend through model selection, cost categorisation (CapEx / OpEx / COGS) and business ownership of AI ROI. Vlad Lukic leads Tech and Digital Advantage; Goydan leads AI Cost Advantage.
+
+## Commercial Tech topic (added 2026-09-30)
+
+[[2026-09-08-gauch-bcg-so-what-will-ai-agents-replace-your-crm|Gauch on The So What from BCG (Sep 2026)]]: Bryan Gauch, managing director and partner, leads BCG's Commercial Tech topic. His answer to whether agents replace CRM is *"in short, no"*: agents replace the interface, while the data backbone, scaled processes, regulatory verticalisation and security stay on the platform. BCG has a Salesforce partnership, linked from the episode description. It is the third *So What* episode in the corpus, all hosted by Georgie Frost.

@@ -64,7 +64,7 @@ The full ~2:11 manual English transcript (23 segments), plus the YouTube descrip
 
 ## Linked entities and concepts
 
-- Entities mentioned: [[Anthropic]]. **Dangling** (single-source mention, deferred): **HubSpot** (company); no named individuals.
+- Entities mentioned: [[Anthropic]], [[HubSpot]] (promoted 2026-09-30). No named individuals.
 - Concept pages touched: [[concepts/automation-vs-augmentation]], [[concepts/enterprise-ai-adoption]].
 
 ## Debates and supersession

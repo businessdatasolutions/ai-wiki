@@ -1,12 +1,12 @@
 ---
 type: concept
 title: Agentic web
-aliases: ["agentic web", "agentic Internet", "agentic internet", "zero-click", "zero-click search", "Google Zero", "AI crawlers", "AI crawler traffic", "content licensing for AI", "pay-per-crawl", "agentic commerce", "machine payments", "x402"]
-tags: [agentic-web, agentic-internet, zero-click, google-zero, referral-traffic, ai-crawlers, training-crawlers, bot-traffic, content-licensing, pay-per-crawl, x402, web-bot-auth, agentic-commerce, open-web, publishers, search-to-answers]
+aliases: ["agentic web", "answer engine optimization", "answer engine optimisation", "AEO", "generative engine optimization", "GEO", "agentic Internet", "agentic internet", "zero-click", "zero-click search", "Google Zero", "AI crawlers", "AI crawler traffic", "content licensing for AI", "pay-per-crawl", "agentic commerce", "machine payments", "x402"]
+tags: [agentic-web, aeo, answer-engines, ai-citations, share-of-voice, agentic-internet, zero-click, google-zero, referral-traffic, ai-crawlers, training-crawlers, bot-traffic, content-licensing, pay-per-crawl, x402, web-bot-auth, agentic-commerce, open-web, publishers, search-to-answers]
 confidence: 0.75
-last_confirmed: "2026-09-19"
-accessed_at: "2026-09-19"
-source_count: 5
+last_confirmed: "2026-09-30"
+accessed_at: "2026-09-30"
+source_count: 6
 relationships:
   - type: depends-on
     target: ai-agents
@@ -77,11 +77,26 @@ These are infrastructure claims from the vendor building the infrastructure. The
 
 What a content-producing firm does about it is, so far, only visible in [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook|HubSpot's]] account. It concentrated on conversion rather than visits, on content with *"unique data, unique customer stories, unique examples"* that a general model cannot produce, and on distribution through the channels where buyers now are (AI search, creators, paid platforms). The Cloudflare report points the same way from the market side: AI companies increasingly license *"differentiated and premium content."* The common thread is that **generic content has lost its traffic value, and only differentiated content has a price.** See [[generative-ai]] for the *sea of sameness* argument behind this.
 
+### 6. The brand side: optimising to be cited (added 2026-09-30)
+
+Sections 1–5 describe what the shift costs the sites that used to receive the traffic. [[2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook|Amiel & Sanders (HubSpot UNBOUND, Sep 2026)]] describe the practice that has grown up on the other side: **answer engine optimisation (AEO)**, getting a brand named inside AI answers. HubSpot sells the tool, having bought the AEO start-up XFunnel in December 2025.
+
+What changes compared with search optimisation:
+
+- **No demand data.** No provider publishes prompt volumes, so firms test instead of measure. They build a prompt set as a **persona × buying-stage × region** matrix from sales calls, support tickets and social posts, run it against the engines, and track **brand visibility** (the share of prompts that mention the brand), **share of voice** against competitors, and the **citations** each answer used.
+- **Consensus, not pages.** The session's central claim is that *"how often your brand is mentioned across the web"* matters most, *"not how many pages you have on your website."* Own content is about 8% of citations and PR and news about 30%, in HubSpot's figures. The website is kept as the **source of truth** the engines check third-party claims against; social media (about 10%), reviews (G2, Trustpilot) and earned media supply the consensus.
+- **Content written for a second reader.** Direct answers first, paragraphs that make sense out of context, freshness, and pages crawlers can read (not blocked in robots.txt, not rendered only in JavaScript). The last point is the brand-side mirror of section 3: publishers blocking AI crawlers to gain leverage, brands unblocking them to be cited.
+
+One customer's case (Fresha) gives the organisational form: AEO split across product and marketing, an on-site and an off-site team, knowledge-base videos moved to **YouTube** because Google's answers cite it, and support staff incentivised to get **Trustpilot** reviews.
+
+This supplies the brand-side half of the *who captures the relationship* question below. A brand that relies on AEO accepts that the answer engine does the selling, and puts its effort into shaping what the engine has been given.
+
 ## Debates and supersession
 
-- **How much of the evidence is independent?** Three of the five sources are vendors with a stake. Cloudflare sells the blocking, analytics and payment products, and HubSpot sells the marketing software for the new playbook. Cloudflare's network data is real measurement from an unusually large vantage point, but it is neither audited nor reproducible outside the company, and "traffic" is not defined. The two predictions (Ognibeni, DFI) are independent but are predictions. **Confidence is held at 0.75**, the ceiling the schema sets for vendor sources without independent replication. A third-party measurement of referral traffic, such as the Pew click-through study the Cloudflare deck cites as its anchor, is the ingest target that would move it.
+- **How much of the evidence is independent?** Three of the original five sources are vendors with a stake. Cloudflare sells the blocking, analytics and payment products, and HubSpot sells the marketing software for the new playbook. Cloudflare's network data is real measurement from an unusually large vantage point, but it is neither audited nor reproducible outside the company, and "traffic" is not defined. The two predictions (Ognibeni, DFI) are independent but are predictions. Four of the six sources are vendors once HubSpot's AEO session is counted. **Confidence is held at 0.75**, the ceiling the schema sets for vendor sources without independent replication. A third-party measurement of referral traffic, such as the Pew click-through study the Cloudflare deck cites as its anchor, is the ingest target that would move it.
 - **Is the traffic loss caused by AI answers, or does it coincide with them?** Cloudflare attributes category-level declines to AI consumption. Its data shows human traffic falling and crawler traffic rising together, which is consistent with substitution but also with other causes: seasonality, bot-classification changes, and shifts in how Cloudflare's customer base is composed. HubSpot's own account is causal but single-firm. **Open.**
 - **Does licensing replace referral revenue?** Cloudflare says no, not yet. No source in the corpus sizes the licensing market against the referral economy it is meant to replace. **Open.**
+- **Is AEO measurement, or a vendor's model of the engines?** The AEO claims (mentions across the web as the main factor, the citation shares by source type) come from HubSpot/XFunnel's own analysis without method, and the outcome figures (+170% MQLs, +82% closed deals for adopters) do not separate what AEO did from which customers chose to adopt it. The persona × stage prompt matrix is a method; the ranking factors are a vendor's claim. **Open** until an independent study of what AI answers cite is ingested.
 - **Who captures the relationship?** Ognibeni and DFI frame the agent as a disintermediator that takes over the customer relationship. Cloudflare frames itself as a neutral market maker that keeps publishers paid. These are different predictions about where value settles: with the agent operator, the infrastructure layer, or the content owner. The corpus cannot yet distinguish them.
 
 ## Related concepts
@@ -96,6 +111,7 @@ What a content-producing firm does about it is, so far, only visible in [[2026-0
 
 - [[2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet]] — non-human traffic above 50%, crawler purpose, Google's mixed-use crawler, the licensing market and its limits.
 - [[2026-06-09-cloudflare-investor-day-2026]] — adoption speed, attention share, industry human-traffic declines, x402 and Web Bot Auth, agent requests +1,700%.
+- [[2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook]] — answer engine optimisation: prompt matrices, visibility and share of voice, consensus across the web, and the Fresha case.
 - [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook]] — one firm's traffic −80% with leads +20%, and the playbook that followed.
 - [[2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china]] — the prediction that agents kill search-driven e-commerce first.
 - [[2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells]] — the incumbent retailer's fear of agentic disintermediation.

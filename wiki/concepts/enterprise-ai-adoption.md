@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-09-28"
-accessed_at: "2026-09-28"
-source_count: 133
+last_confirmed: "2026-09-30"
+accessed_at: "2026-09-30"
+source_count: 135
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -914,3 +914,8 @@ Together they cover the two halves of the page's recurring diagnosis. Krishna sa
 - **The product factory, step by step.** [[2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved|Geoff Charles (Ramp CPO)]] maps the product life cycle onto internal agents: customer insight, spec writing (Glass), coding (Inspect, 75% of PRs), review (Review Buddy, 93% of PRs), QA (Testo) and coordination (Gadget, 85% of questions to PMs). His general point is that *"the organization needs to be legible to your agents"*, and that AI *"removes the bottleneck but moves it."* Self-reported figures.
 - **Adoption as a headcount strategy.** [[2026-02-14-tan-yc-the-new-way-to-build-a-startup|Garry Tan's "20x company" episode (YC, Feb 2026)]] describes three YC companies that automate every internal function to stay small: an AI teammate (GigaML's Atlas), one internal source of truth (Legion Health, 4x growth with no net new hires), and a custom agent per employee (Phaseshift, 12 people). YC portfolio promotion; founders' own figures.
 - **The bill arrives in the boardroom.** [[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune|Lukic & Goydan (BCG, Aug 2026)]] describe the phase after enthusiastic adoption: from "tokenmaxxing" to "valuemaxxing". They split AI spend into CapEx, OpEx and COGS so that business owners, not IT, carry the cost and the ROI. Two warnings: frontier models are used on routine work, and a task sped up from 10 days to one delivers nothing if the process around it still takes 10 days. BCG figures without method.
+
+## The system of record under the agent layer (added 2026-09-30)
+
+- **Agents replace the screen, not the record.** [[2026-09-08-gauch-bcg-so-what-will-ai-agents-replace-your-crm|Gauch (BCG, Sep 2026)]] applies the *interface inversion* above to CRM. Agents take over *"the screen"*, the way people reach the system, but not *"the one coherent governed compliant record of the customer."* He gives four reasons the record stays on a platform: the data backbone, business processes that already run at scale, regulation by industry and country (data residency), and a security posture agents do not yet have. His prescription for a CEO reverses the usual order: agree the principles for governing investment (what an agent should do that CRM can't, and its human and token cost) before any build-or-buy decision. He also expects business staff orchestrating agents to take over configuration and functional design from technology teams. A consultancy with a Salesforce partnership; figures cited, not produced, and the AI Index jobs figure he cites could not be found in the report.
+- **Adoption forced from outside, the operational version.** [[2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook|Amiel & Sanders (HubSpot, Sep 2026)]] follow up the marketing section above with the routine firms are building in response: tracking what answer engines say about the brand, by persona and buying stage, and splitting the work between an on-site and an off-site team. Fresha's version puts the job across product and marketing and ties support-team incentives to review volume. See [[agentic-web]].

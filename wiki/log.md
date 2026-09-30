@@ -10,6 +10,24 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-30] ingest | Two layers the agent sits on top of: the CRM record and the AI answer
+
+Two YouTube URLs from the user: [[2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook]] (HubSpot Live, UNBOUND 2026 breakout, 45:29, ASR) and [[2026-09-08-gauch-bcg-so-what-will-ai-agents-replace-your-crm]] (BCG, *The So What*, 19:39, human-curated captions). Pre-flight: both transcripts are complete (364 and 466 segments, no duplicates), and the titles match the content.
+
+**Acquire.** Playwright's `chromium_headless_shell-1223` was missing again. `playwright install chromium` fixed it, but only when run with pyenv 3.12.8 by absolute path: from the skill directory the bare `python` shim resolves to a different version. Both videos came through on the first try. The HubSpot transcript was cleaned at acquire: YouTube's spoken-timestamp artefacts (*"1 minute, 7 seconds"*) had leaked into the segment text and were stripped, and names were fixed (AO → AEO, Barry → Beeri, Fresher → Fresha, Zindesk → Zendesk). The BCG track is manual and was used as fetched.
+
+**What it adds.** The corpus's first **brand-side** source on AI answers: answer engine optimisation (AEO) as a practice. It covers prompt matrices by persona × buying stage × region, visibility / share of voice / citations as the metrics, and the claim that mentions across the web matter more than pages on the site. There is one customer case (Fresha: YouTube, Trustpilot, AEO split across product and marketing). The BCG episode argues that **agents replace the CRM's interface, not its record**, and names four things that keep the record on a platform: data backbone, scaled processes, regulation, and security. Cost, not architecture, decides the split. **Checked:** Gauch's *"Stanford AI Index 2025 showed 90,000 agentic AI jobs"* does not appear in the AI Index 2025 PDF in `raw/reports/`; the source page flags it as unverified.
+
+**Neighbour-source scan.** Path B (the W&W cells are too broad) through [[agentic-web]], [[enterprise-ai-adoption]] and greps for CRM / headless / answer engine. **Filed:** HubSpot AEO `supports` → Bodnar & Flanagan (same firm and conference) and the Cloudflare one-year report (the search-to-answers shift). Gauch `supports` → Sinofsky & Amble (headless, value below the interface) and Lukic & Goydan (same series, cost as the constraint); `contradicts` → Sevilla/EMARKETER (small firms that did replace Salesforce), with a `via:` noting that the two look at firms of different sizes. **Skipped:** Glasgow/Campfire (ERP displacement by an AI-native vendor, not agents over a record), Ellmer & Dhar (same series, different topic), Ognibeni (already reached through Bodnar).
+
+**Pages touched.**
+- New: the two source pages; [[HubSpot]] (entity, organization; `author:` value `HubSpot Live`, promoted on its second source; also covers the Anthropic customer story).
+- Concepts: [[agentic-web]] gets section 6 on the brand side (AEO) and a debate bullet on whether AEO ranking claims are measurement; aliases add AEO / GEO; `source_count` 5→6; confidence held at 0.75 (four of six sources are vendors). [[enterprise-ai-adoption]] gets a dated section on the system of record under the agent layer; `source_count` 133→135; confidence unchanged.
+- Entities: [[Boston Consulting Group]] (Commercial Tech topic; 7→8).
+- Dangling lines on [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook]] and [[2026-02-09-hubspot-customer-success-with-claude]] updated to link [[HubSpot]].
+- `index.md`: a two-source block at the top of Sources; one entity bullet.
+- Dangling (single source): Beeri Amiel, Bradley Sanders, Elliott Braund, Fresha, XFunnel, Similarweb, Bryan Gauch, Salesforce.
+
 ## [2026-09-28] ingest | Seibel's eight first-time-founder mistakes: a 2019 YC talk as the pre-AI baseline
 
 One YouTube URL from the user: [[2019-08-16-seibel-yc-biggest-mistakes-first-time-founders-make]] (Y Combinator channel, Michael Seibel, 7:03, ASR). Pre-flight: full transcript, 176 segments, nine chapters, identity confirmed. Acquired with pyenv Python 3.12.8, because the system `python3` has a Playwright build without a matching browser. Raw file used as landed.
