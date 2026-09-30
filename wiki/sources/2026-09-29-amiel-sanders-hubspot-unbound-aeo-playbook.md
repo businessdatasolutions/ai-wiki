@@ -100,6 +100,7 @@ The session closes with a five-step plan: **define the brand → find gaps → c
 
 ## How it connects
 
+- The fundamentals from this session, without the product demo and vendor figures, are kept on [[concepts/answer-engine-optimization|answer-engine-optimization]], the AEO counterpart of an SEO page.
 - Eleven days earlier HubSpot's CMO gave the main-stage version: [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook|Bodnar & Flanagan]] on the traffic collapse and the marketing loop. This session is the operational layer under their *Amplify* stage.
 - [[2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet|Cloudflare's one-year report]] measures the same shift at network level. It argues from the publisher's side that access to content should be priced; this session is about getting content used and cited. See [[concepts/agentic-web|agentic-web]].
 - The *train your sales rep* framing and the persona × stage matrix are the marketing counterpart of the context-layer argument in [[concepts/enterprise-ai-adoption|enterprise-ai-adoption]]: the model knows only what it has been given.
@@ -111,7 +112,7 @@ The full 45:29 session from YouTube's auto-generated English captions. Cleanups 
 ## Linked entities and concepts
 
 - Entities: [[HubSpot]]
-- Concepts: [[concepts/agentic-web|agentic-web]], [[concepts/enterprise-ai-adoption|enterprise-ai-adoption]]
+- Concepts: [[concepts/answer-engine-optimization|answer-engine-optimization]] (the fundamentals from this session, without the product), [[concepts/agentic-web|agentic-web]], [[concepts/enterprise-ai-adoption|enterprise-ai-adoption]]
 - **Dangling** (single-source mention, deferred): Beeri Amiel, Bradley Sanders, Elliott Braund, Fresha, XFunnel, Similarweb
 
 ## Scope and reliability

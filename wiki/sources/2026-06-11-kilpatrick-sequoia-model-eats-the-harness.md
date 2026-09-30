@@ -64,7 +64,7 @@ Full auto-generated transcript, ~51:09 / ~1000 ASR lines, with light cleanup; ch
 
 ## Linked entities and concepts
 
-- Concepts: [[agent-harness]] (the *model-eats-the-harness* debate), [[vibe-coding]] (AI Studio app explosion).
+- Concepts: [[agent-harness]] (the *model-eats-the-harness* debate), [[vibe-coding]] (AI Studio app explosion), [[answer-engine-optimization]] (the SEO→GEO question from the platform side).
 - Entities (promoted this ingest): [[Logan Kilpatrick]], [[Google DeepMind]], [[Sequoia Capital]], [[Antigravity]], [[Omni]].
 - Related org already in the wiki: [[Google]] (DeepMind is part of Google).
 - **Dangling** (single-source mention, deferred): Sonya Huang (host), Demis Hassabis, Tulsi Doshi, Sundar Pichai, Windsurf (named as the team behind Antigravity — promote on second mention), Lyria / Veo / nano banana (Omni's predecessor model lines).

@@ -1,8 +1,8 @@
 ---
 type: concept
 title: Agentic web
-aliases: ["agentic web", "answer engine optimization", "answer engine optimisation", "AEO", "generative engine optimization", "GEO", "agentic Internet", "agentic internet", "zero-click", "zero-click search", "Google Zero", "AI crawlers", "AI crawler traffic", "content licensing for AI", "pay-per-crawl", "agentic commerce", "machine payments", "x402"]
-tags: [agentic-web, aeo, answer-engines, ai-citations, share-of-voice, agentic-internet, zero-click, google-zero, referral-traffic, ai-crawlers, training-crawlers, bot-traffic, content-licensing, pay-per-crawl, x402, web-bot-auth, agentic-commerce, open-web, publishers, search-to-answers]
+aliases: ["agentic web", "agentic Internet", "agentic internet", "zero-click", "zero-click search", "Google Zero", "AI crawlers", "AI crawler traffic", "content licensing for AI", "pay-per-crawl", "agentic commerce", "machine payments", "x402"]
+tags: [agentic-web, aeo, answer-engines, agentic-internet, zero-click, google-zero, referral-traffic, ai-crawlers, training-crawlers, bot-traffic, content-licensing, pay-per-crawl, x402, web-bot-auth, agentic-commerce, open-web, publishers, search-to-answers]
 confidence: 0.75
 last_confirmed: "2026-09-30"
 accessed_at: "2026-09-30"
@@ -14,6 +14,9 @@ relationships:
   - type: supports
     target: enterprise-ai-adoption
     via: "a case of adoption forced from outside: a firm's customers adopt AI assistants first, and the firm's discovery, marketing and revenue model have to follow whether or not it planned to adopt anything"
+  - type: uses
+    target: answer-engine-optimization
+    via: "AEO is how brands respond inside the agentic web: optimising to be cited in AI answers once search referral no longer delivers visitors"
   - type: supports
     target: responsible-ai
     via: "the data-commons question in market form. Default blocking of AI training crawlers shrinks what models can learn from, and licensing decides who is paid for what they do learn from"
@@ -79,17 +82,10 @@ What a content-producing firm does about it is, so far, only visible in [[2026-0
 
 ### 6. The brand side: optimising to be cited (added 2026-09-30)
 
-Sections 1–5 describe what the shift costs the sites that used to receive the traffic. [[2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook|Amiel & Sanders (HubSpot UNBOUND, Sep 2026)]] describe the practice that has grown up on the other side: **answer engine optimisation (AEO)**, getting a brand named inside AI answers. HubSpot sells the tool, having bought the AEO start-up XFunnel in December 2025.
+Sections 1–5 describe what the shift costs the sites that used to receive the traffic. The practice growing up on the other side, **answer engine optimization (AEO)**, getting a brand named and cited inside AI answers, has its own page: [[answer-engine-optimization]]. Its main source is [[2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook|Amiel & Sanders (HubSpot UNBOUND, Sep 2026)]]. Two points connect back to this page:
 
-What changes compared with search optimisation:
-
-- **No demand data.** No provider publishes prompt volumes, so firms test instead of measure. They build a prompt set as a **persona × buying-stage × region** matrix from sales calls, support tickets and social posts, run it against the engines, and track **brand visibility** (the share of prompts that mention the brand), **share of voice** against competitors, and the **citations** each answer used.
-- **Consensus, not pages.** The session's central claim is that *"how often your brand is mentioned across the web"* matters most, *"not how many pages you have on your website."* Own content is about 8% of citations and PR and news about 30%, in HubSpot's figures. The website is kept as the **source of truth** the engines check third-party claims against; social media (about 10%), reviews (G2, Trustpilot) and earned media supply the consensus.
-- **Content written for a second reader.** Direct answers first, paragraphs that make sense out of context, freshness, and pages crawlers can read (not blocked in robots.txt, not rendered only in JavaScript). The last point is the brand-side mirror of section 3: publishers blocking AI crawlers to gain leverage, brands unblocking them to be cited.
-
-One customer's case (Fresha) gives the organisational form: AEO split across product and marketing, an on-site and an off-site team, knowledge-base videos moved to **YouTube** because Google's answers cite it, and support staff incentivised to get **Trustpilot** reviews.
-
-This supplies the brand-side half of the *who captures the relationship* question below. A brand that relies on AEO accepts that the answer engine does the selling, and puts its effort into shaping what the engine has been given.
+- **Consensus replaces referral.** Answer engines recommend what many sources agree on, so most of what they read about a brand is written by others: PR, reviews, social. The brand's own site is kept as the source of truth rather than as the destination for traffic.
+- **The mirror of section 3.** Publishers block AI crawlers to gain licensing leverage; brands unblock them to be cited. Which side a firm is on depends on whether the content is its product or its advertising.
 
 ## Debates and supersession
 
@@ -104,6 +100,7 @@ This supplies the brand-side half of the *who captures the relationship* questio
 - [[ai-agents]] — what agents are; this page holds what they do to the web's economics. Its *agentic commerce at consumer scale* section (Ognibeni) is the consumer-side counterpart.
 - [[enterprise-ai-adoption]] — HubSpot's case of adoption forced by customers' behaviour.
 - [[responsible-ai]] — the shrinking data commons, of which default crawler blocking is one mechanism.
+- [[answer-engine-optimization]] — the brand-side practice: being cited in AI answers rather than ranked in search results.
 - [[generative-ai]] — the *sea of sameness*: why generic content loses value when generation is free.
 - [[open-source-ai]] — the other place the corpus tracks who pays whom for model inputs and outputs.
 

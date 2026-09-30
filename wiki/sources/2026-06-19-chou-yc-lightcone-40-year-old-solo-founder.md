@@ -79,7 +79,7 @@ A **~43-minute episode** of **[[Y Combinator]]**'s *The Lightcone* podcast, inte
 
 ## Linked entities and concepts
 
-- Concepts this source informs: [[durable-skills]] (expertise + taste as the lever), [[agent-harness]] (purpose-built harness; skills/CLI; "fat skills, fat code"), [[vibe-coding]] (Ploy as opinionated anti-slop vibe-coding; the slurper/lookbook), [[software-3.0]] (building opinionated products atop general models), [[ai-employment-effects]] (the 40-year-old-solo-founder / abundance counter to the doomer scenario).
+- Concepts this source informs: [[durable-skills]] (expertise + taste as the lever), [[agent-harness]] (purpose-built harness; skills/CLI; "fat skills, fat code"), [[vibe-coding]] (Ploy as opinionated anti-slop vibe-coding; the slurper/lookbook), [[software-3.0]] (building opinionated products atop general models), [[ai-employment-effects]] (the 40-year-old-solo-founder / abundance counter to the doomer scenario), [[answer-engine-optimization]] (Ploy ships AEO as a default: FAQ sections, schema markup, crawlability; agents as customers).
 - **Dangling** (single-source mentions, deferred per the second-source promotion rule): **Y Combinator** (channel/org; author on this one source — promote on a second author-credit), **Bryant Chou** (guest; first appearance), **Ploy** / **Webflow** (products), the host partners (Chou's former group partner et al.), **Parker Conrad** / **Rippling** / **Zenefits** (the offer-letter-generator anecdote), **Garry / Jared / Diana** (Lightcone hosts; surnames not cleanly recoverable from the transcript).
 
 ## Source-to-source relationships

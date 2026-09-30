@@ -131,7 +131,7 @@ The full auto-generated transcript, 223 segments, from the walk-on to the close.
 ## Linked entities and concepts
 
 - Entities: [[HubSpot]] (promoted 2026-09-30 on the second HubSpot Live source), [[Anthropic]], [[OpenAI]] (as the destinations of buyer research: *"conversations with ChatGPT, with Claude"*)
-- Concepts: [[durable-skills]], [[generative-ai]], [[enterprise-ai-adoption]], [[agentic-web]]
+- Concepts: [[durable-skills]], [[generative-ai]], [[enterprise-ai-adoption]], [[agentic-web]], [[answer-engine-optimization]] (the *Amplify* stage in AI search, worked out in HubSpot's later AEO session)
 - **Dangling** (single-source mention, deferred): Kipp Bodnar, Kieran Flanagan.
 
 ## Scope and reliability

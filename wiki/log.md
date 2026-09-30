@@ -10,6 +10,20 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-09-30] refactor | Answer engine optimization gets its own concept page
+
+At the user's request: *"AEO is an important concept, just like SEO is for conventional web… these are experts explaining AEO fundamentals worth saving."* The morning's ingest had filed the AEO material as section 6 of [[agentic-web]]. It is now a concept page of its own, [[answer-engine-optimization]], written as the AEO counterpart of an SEO page: working definition, an SEO-vs-AEO table, anatomy of an answer, measuring without demand data (the persona × stage × region prompt matrix; visibility, share of voice, citations), consensus as the main signal, the own site as source of truth with six content signals, off-site channels, and downstream effects on conversion and team structure.
+
+**What was left out.** The HubSpot product demo and the vendor outcome figures (+170% MQLs, +82% closed deals, +8% monthly visibility). They are named only in *Debates*, as the reason confidence is held at 0.75.
+
+**Sources.** Five, three of which were already in the corpus and mention AEO or GEO: [[2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook]] (the fundamentals), [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook]] (why it matters), [[2026-06-19-chou-yc-lightcone-40-year-old-solo-founder]] (Ploy ships AEO as a default: FAQ, schema markup, crawlability; agents as customers), [[2026-06-11-kilpatrick-sequoia-model-eats-the-harness]] (the SEO→GEO question from Google's side) and [[2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet]] (publishers blocking the crawlers brands want). Five open questions are filed, including whether personalisation undermines fixed-prompt measurement and whether answer engines will take on paid placement.
+
+**Pages touched.**
+- New: [[answer-engine-optimization]] (`part-of` [[agentic-web]], `supports` [[enterprise-ai-adoption]]).
+- [[agentic-web]]: section 6 cut to a pointer plus the two points that belong on that page (consensus replaces referral; the brand/publisher mirror of crawler blocking). The AEO/GEO aliases moved to the new page, and a `uses` edge was added.
+- Source pages: concept links added on the Amiel & Sanders, Bodnar & Flanagan, Chou and Kilpatrick pages.
+- `index.md`: a concept bullet.
+
 ## [2026-09-30] ingest | Two layers the agent sits on top of: the CRM record and the AI answer
 
 Two YouTube URLs from the user: [[2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook]] (HubSpot Live, UNBOUND 2026 breakout, 45:29, ASR) and [[2026-09-08-gauch-bcg-so-what-will-ai-agents-replace-your-crm]] (BCG, *The So What*, 19:39, human-curated captions). Pre-flight: both transcripts are complete (364 and 466 segments, no duplicates), and the titles match the content.
