@@ -31,6 +31,8 @@ wiki/.graph.json
 # durable, redistributable artifact; raw/ holds your provenance. Each wiki
 # source page cites its raw file; readers of the public repo can locate the
 # original via the citation.
+# Exception: selected video stills are published as webp under wiki/assets/
+# (CLAUDE.md §Video stills); the full PNG set stays here, local-only.
 raw/**/*.pdf
 raw/**/*.docx
 raw/**/*.epub

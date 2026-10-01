@@ -1,6 +1,6 @@
 ---
 name: youtube-transcript
-description: Fetch a YouTube video's metadata and transcript via Playwright and save it as a Markdown file with a YAML front-matter header. Trigger on any request involving a YouTube URL where the user wants the spoken content as text — "get the transcript", "transcribe this video", "summarize this video" (fetch first, summarize after), or any time captions/subtitles are useful.
+description: Fetch a YouTube video's metadata and transcript via Playwright and save it as a Markdown file with a YAML front-matter header; optionally save stills of the video's slides and diagrams with Gemini (extract_stills.py). Trigger on any request involving a YouTube URL where the user wants the spoken content as text — "get the transcript", "transcribe this video", "summarize this video" (fetch first, summarize after), or any time captions/subtitles are useful — and on requests to capture a video's slides, diagrams or screenshots.
 ---
 
 # youtube-transcript
@@ -130,6 +130,54 @@ When YouTube provides chapters, the script emits each chapter as a `## [mm:ss] T
 2. Read the JSON.
 3. ASR-clean the transcript (fix product/people names, drop obvious stutters, light punctuation), preserve timestamps.
 4. Build the YAML header from the metadata block as-is and write the final `.md`. The script's own `--md` output is fine as a fallback if you don't need cleaning.
+
+## Visual stills (opt-in)
+
+`extract_stills.py` saves a still of every information-bearing visual in the video (slides, diagrams, charts, tables, code) plus a manifest of what each one shows. Run it after the transcript, for talks, demos and slide-led videos. Skip it for talking-head podcasts, where there is nothing to capture.
+
+```bash
+python extract_stills.py "URL" --slug <slug>                      # normal run
+python extract_stills.py "URL" --slug <slug> --dry-run > f.json   # Gemini only, writes nothing
+python extract_stills.py "URL" --slug <slug> --findings f.json    # re-cut frames, no new Gemini call
+```
+
+`<slug>` is the transcript's slug, so the manifest lands next to `raw/videos/<slug>.md`.
+
+**How it works.** Gemini can find and read the visuals but never returns an image. Its output is text with `MM:SS` timestamps, and its `processing_call` / `processing_result` steps carry only IDs and signatures, not the frames it looked at. So the work is split:
+
+1. **Find.** One Gemini call on the YouTube URL (no upload), constrained by a JSON schema. Each item has `start`, `end`, `kind`, `title`, `content` (verbatim on-screen text) and `adds` (what the visual says that the narration doesn't).
+2. **Grab.** yt-dlp downloads the ≤1080p video into a temp dir. ffmpeg takes one frame per visual at `end − 1s`: slides that build up only gain content, so the last stable frame carries the most.
+3. **Dedupe.** Compare 160×90 grayscale thumbnails; a mean absolute difference below 1.0 means the same picture (a slide shown twice). On the Fung talk, repeats scored ≤ 0.24 and distinct slides on the same template scored ≥ 3.50. At 16×16 the text differences vanish, and four distinct slides were dropped.
+4. **Land.** Stills go to `raw/images/<slug>/NN-MMmSS-<title>.png` (gitignored). The manifest goes to `raw/videos/<slug>.stills.md` (committed): a YAML header with model, mode and token usage, then one section per still marked *machine-read, unverified*.
+
+Verifying, selecting and publishing the stills happens at Process; see CLAUDE.md §Video stills.
+
+**Credential and model.** The script reads `GEMINI_API_KEY` from the environment, else `GEMINI-API-KEY` from the repo `.env`. The default model is `gemini-3.8-flash`. The `.env`'s `GEMINI-MODEL-ID` (`gemini-3.1-flash-lite-preview`) is not used, because agentic mode supports only 3.8 / 3.7 / 3.6 Flash and 3.5 Flash-Lite, and the measurements below were taken on 3.8 Flash.
+
+### Static vs. agentic (measured 2026-10-01)
+
+In *agentic* video understanding, the model calls `get_transcript`, `get_frames(start, end, fps)` and `get_audio` in a loop. It is pitched as up to 88% cheaper on long videos, and that holds for **targeted** questions. Listing *every* visual is the opposite task:
+
+| Video | Mode | Tokens | Time | Result |
+|---|---|---|---|---|
+| Gemini explainer, 3:19 | agentic | 653,588 (489k cached) | — | 4 visuals after 15 tool rounds |
+| | static, default resolution | 19,680 | 13 s | 3 visuals (two build states merged) |
+| | static, `--resolution high` | 59,006 | 13 s | the same 3 visuals |
+| Fung talk, 28:38 | agentic | — | 4 m 44 s | **failed**: 400 *"Model generated too many tool calls"* |
+| | static, default resolution | 163,151 | 59 s | 30 visuals → 27 stills: **all 12** hand-captured slides, plus 5 content slides the hand-pick missed |
+
+So `--mode static` is the default. `--mode agentic` stays available for short videos and for re-testing on newer models. `--resolution high` triples the cost without changing what is found.
+
+### Failure modes (stills)
+
+- **`responseFormat must be set when responseMimeType is set`.** Don't pass `response_mime_type`; the MIME type goes inside `response_format={"type": "text", "mime_type": "application/json", "schema": ...}`.
+- **`Cannot send a request, as the client has been closed`.** A temporary `genai.Client()` is collected mid-call. Bind it to a name before calling `.interactions.create`.
+- **Agentic `400 Model generated too many tool calls`.** See the table above; use static.
+- **yt-dlp warns `n challenge solving failed`.** Harmless so far: 1080p still downloads. If formats actually go missing, install a JS runtime (deno) and enable the challenge solver per the yt-dlp EJS wiki page.
+- **Small print is misread.** An on-screen URL came back differently wrong in each mode. That is why Process reads every still itself.
+- **Over-reporting.** Section headers and question cards come back as "slides", and a diagram that builds up comes back once per build state (15 items for the four diagrams of a 3-minute explainer). This is expected; Process drops navigation and keeps each diagram's fully built state.
+- **Mid-animation frames.** When a display window is very short (about 2 s), `end − 1s` can land while an element is still animating in. Process uses the neighbouring build state instead.
+- **Already-ingested video.** Run only this script with the existing slug. Re-running `fetch_transcript.py -o` on that path replaces the curated transcript (see CLAUDE.md §Video stills).
 
 ## Failure modes
 

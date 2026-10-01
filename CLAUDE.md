@@ -42,7 +42,7 @@ A new raw file lands in `raw/`. Acquire **only touches `raw/`** — the wiki sou
 1. **Determine source type → typed `raw/` subfolder.** Organise by source *type*, not topic — different formats have different processing rules. Current typed subfolders: `articles/`, `assets/`, `books/`, `images/`, `lectures/`, `papers/`, `reports/`, `videos/`. Create new typed subfolders on the fly when a genuinely new source category appears (e.g. `raw/patents/`, `raw/interviews/`); don't ask permission for every new type.
 2. **Convert before landing.** Source formats that the LLM cannot read in one pass must be converted to markdown *before* landing in `raw/`:
    - PDFs → markdown (`marker`, `pdftotext`, MarkItDown, or a Zotero markdown export) → `raw/<type>/<slug>.md`. **Keep the original PDF co-located by type** next to its markdown (`raw/<type>/<slug>.pdf`, e.g. `raw/papers/<slug>.pdf`), **not** in `raw/assets/`. Raw binaries are gitignored (`.gitignore` excludes `raw/**/*.pdf` and friends), so the local PDF never reaches GitHub; the committed markdown stub plus its citation lets a reader locate the original. (The older "keep the PDF in `raw/assets/`" guidance was drift — practice co-locates by type.)
-   - YouTube / podcast URLs → transcript markdown → `raw/videos/<slug>.md`. The [`youtube-transcript-skill`](.claude/skills/youtube-transcript-skill/SKILL.md) is the canonical acquire-time skill — auto-triggered by any YouTube URL request that mentions transcript / captions / subtitles, or invoked explicitly with `-o raw/videos/<slug>.md`.
+   - YouTube / podcast URLs → transcript markdown → `raw/videos/<slug>.md`. The [`youtube-transcript-skill`](.claude/skills/youtube-transcript-skill/SKILL.md) is the canonical acquire-time skill — auto-triggered by any YouTube URL request that mentions transcript / captions / subtitles, or invoked explicitly with `-o raw/videos/<slug>.md`. For talks, demos and slide-led videos, follow it with the same skill's opt-in `extract_stills.py <url> --slug <slug>`, which saves a still of every slide and diagram plus a machine-read manifest. See [§Video stills](#video-stills-opt-in).
    - **Local Zotero library** → `raw/<type>/<slug>.md` (+ gitignored PDF copy). The [`zotero-acquire`](.claude/skills/zotero-acquire/SKILL.md) skill is the canonical acquire-time skill for Zotero: it reads the local Zotero 7 HTTP API via `pyzotero`, scopes to the dedicated **`ai-wiki`** collection, copies each item's PDF into `raw/<type>/`, converts it (`marker` → `markitdown` → `pdftotext`), and writes the Zotero stub contract (see [§Pre-flight check (Zotero stubs)](#pre-flight-check-zotero-stubs-the-yaml-frontmatter-contract)). Run `--dry-run` first.
    - `.docx` / `.epub` / `.html` → markdown (`pandoc`, `readability`).
 3. **Acquire-time skill contract.** A skill that lands a raw file emits the file at `raw/<type>/<slug>.md` with a canonical YAML frontmatter as its first block. The frontmatter is the *contract* between Acquire and Process — Process reads it during pre-flight checks. The video-format contract is specified in detail at [§Pre-flight check (videos): the YAML frontmatter contract](#pre-flight-check-videos-the-yaml-frontmatter-contract) and the Zotero-stub contract at [§Pre-flight check (Zotero stubs)](#pre-flight-check-zotero-stubs-the-yaml-frontmatter-contract); new acquire-time skills (web clipper integration, podcast transcription) follow the same pattern: produce a raw file at the canonical path with the canonical frontmatter for its type.
@@ -181,11 +181,12 @@ The wiki source-page schema is **unchanged**. Only the source field names from t
 | `chapters:` (if present) | optional: mirror as body section headings | not load-bearing — body structure follows the source page's own rhetorical needs |
 | `keywords:` | seed for `tags:` | merge with hand-curated tags |
 | `category:` | optional `tags:` entry | e.g. `Science & Technology` → `science-technology` if useful |
+| `raw/videos/<slug>.stills.md` (if present) | `stills:` + a `## Visual canon` body section + `wiki/assets/<page-slug>/*.webp` | verified and selected at Process; see [§Video stills](#video-stills-opt-in) |
 
 Fixed schema fields on the source page:
 
 - `kind: video`
-- `length: "~MM:SS minutes (transcript ~N lines)"` — duration first, line count parenthetical.
+- `length: "~MM:SS minutes (transcript ~N lines)"` — duration first, line count parenthetical. With published stills: `"~MM:SS minutes (transcript ~N lines + K stills)"`.
 - `raw: "../../raw/videos/<slug>.md"` — points to the canonical raw file.
 - `url:` is mandatory (videos are first-class web sources; the file we hold is just a transcript snapshot). It is also what puts the **▶ Watch on YouTube** link on the published page: [`inject-video-link.ts`](extensions/inject-video-link.ts) renders `▶ Watch on YouTube · <author[0]> · <MM:SS from length:>` after the H1 whenever `url:` is a `youtube.com` or `youtu.be` address. It is automatic at build time — ingest writes nothing extra and does not repeat the URL in body prose. A wrong or missing `url:` is the only way a video page loses the link (see [§Frontend / GitHub Pages](#frontend--github-pages)).
 - `date_published:` taken from the raw file's `publish_date:` (legacy: `date published:`), ISO-normalised to date only.
@@ -193,6 +194,45 @@ Fixed schema fields on the source page:
 - **No separate `channel:` field on the source page** — the convention is `author = channel` for videos. The skill's `channel_id:` and `channel_url:` are not promoted into source-page frontmatter; capture them in body if substantively useful.
 
 **Body opening for video source pages.** The body begins with the YouTube `description:` rendered as a blockquote (after the H1, before the wiki's own framing). This makes the channel's stated framing of the video legible to readers before the wiki's interpretation overlays it.
+
+#### Video stills (opt-in)
+
+A transcript loses a talk's densest content: what is on the slides. The skill's [`extract_stills.py`](.claude/skills/youtube-transcript-skill/extract_stills.py) recovers it. It is **opt-in**: run it for talks, demos and slide-led videos, not for talking-head podcasts.
+
+Gemini finds and reads the visuals, using static processing by default. Agentic processing measured worse for this task: it cost 33× more on a short video and failed on a 29-minute one (numbers in the skill). Gemini returns text only, so the frames are cut locally with yt-dlp and ffmpeg. On the Fung talk it found all 12 hand-captured slides, plus 5 content slides the hand-pick had missed.
+
+**Acquire** writes two things and nothing in `wiki/`:
+
+- `raw/images/<slug>/NN-MMmSS-<title>.png`: one 1080p still per visual. Gitignored by `raw/**/*.png`.
+- `raw/videos/<slug>.stills.md`: the manifest, committed. The YAML header carries `video_id`, `url`, `transcript`, `stills_dir`, `stills_count`, `extractor` (model, processing, frame rule), `acquired` and token `usage`. Then one section per still: display window, frame time, file, timestamp link, Gemini's verbatim reading, and what the visual adds to the narration. All of it is marked *machine-read, unverified*.
+
+**Adding stills to a video that is already in the wiki:** run **only** `extract_stills.py`, with the existing raw slug (`grep -l <video_id> raw/videos/*.md`). Do not re-run `fetch_transcript.py -o`: it replaces the curated transcript at that path, which has hand-written `notes:` and quoted fields. This happened on the first run (2026-10-01) and was reverted with `git checkout`. Check `wiki/index.md` or `grep -rl <video_id> wiki/sources` before any video acquire.
+
+**Process**, when a video source has a `.stills.md` manifest:
+
+1. **Verify every still by viewing it** (`Read` the PNG). Gemini's reading is a draft. Correct it against the pixels, small print especially. Never publish a transcription you have not checked against its image.
+2. **Select.** Drop navigation (agenda, section headers, question cards) and anything the narration already says word for word. Keep stills that carry content the narration doesn't: tables, diagrams, frameworks, numbers, the speaker's own condensed wording. When a diagram builds up across several stills, publish only its fully built state. A still from a very short display window (under about 3 s) can catch an animation mid-way; use the neighbouring build state if so.
+3. **Publish the selected stills** as webp, at most 1280 px wide, into `wiki/assets/<page-slug>/`, where `<page-slug>` is the source page's filename without `.md`:
+   `cwebp -q 82 -resize 1280 0 raw/images/<slug>/<still>.png -o wiki/assets/<page-slug>/<still>.webp`
+   Homebrew's ffmpeg has no webp encoder; `cwebp` does. Quartz's `Plugin.Assets()` publishes the folder with no config change.
+4. **Write a `## Visual canon` section** on the source page, in talk order, one entry per published still:
+
+   ```markdown
+   ### 1 · Where the old process quietly stops working
+
+   ![[assets/<page-slug>/06-06m16-where-the-old-process-quietly-stops-working.webp|Where the old process quietly stops working]]
+
+   *Still at [6:16](https://www.youtube.com/watch?v=<id>&t=376s) from <channel>, "<video title>".*
+
+   <verified transcription: tables as tables, lists as lists>
+
+   *Still vs. transcript:* <what the visual adds that the narration does not>.
+   ```
+
+   The embed path starts at the `wiki/` root, so it resolves in both Quartz and Obsidian. The alt text after `|` is plain text (see [§Wikilink-rendering rule](#wikilink-rendering-rule-quartz-compatibility)) and **must not end in a number**: Quartz reads a trailing `300` or `640x360` as the image's pixel width. The [Fung source page](wiki/sources/2026-05-08-running-an-ai-native-engineering-org.md) is the hand-made precedent for the section's shape; it predates publishing, so its stills are not embedded.
+5. **Frontmatter:** set `stills: "../../raw/videos/<slug>.stills.md"` (the manifest, parallel to `raw:`) and add `+ K stills` to `length:`, where K is the number published. The Fung page's older `slides:` field means the same thing.
+
+**Published stills are a deliberate, narrow exception** to the rule that raw binaries stay local for copyright reasons (`.gitignore`, §Acquire). The full set stays in `raw/`. Only stills that pass step 2 are published, each downscaled, credited to the channel and linked to its moment in the video. The wiki publishes a frame because the frame carries a claim, not to mirror the video.
 
 ### Pre-flight check (Zotero stubs): the YAML frontmatter contract
 

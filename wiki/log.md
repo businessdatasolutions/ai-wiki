@@ -10,6 +10,30 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-10-01] refactor | Video stills: Gemini finds the slides, ffmpeg cuts them, Process publishes the verified ones
+
+The user asked whether Gemini's agentic video understanding (the video already ingested as [[2026-09-01-grootendorst-agentic-video-understanding-in-gemini]], plus the API docs) could extend the YouTube acquire step, so that stills of diagrams and slides are saved along with what they contain.
+
+**The answer, measured.** Gemini can find and read the visuals, but it returns text only. Its `processing_call` / `processing_result` steps carry only IDs and signatures, never frames. So the stills are cut locally: yt-dlp downloads the video, then ffmpeg takes one frame per visual at `end − 1s`. **Agentic mode is the wrong tool for an exhaustive scan.** It cost 653,588 tokens on the 3:19 explainer against 19,680 for static, and on the 29-minute Fung talk it failed with *"Model generated too many tool calls"*. Static mode at default resolution is the default (163k tokens, 59 s for the Fung talk). **Recall against the hand-captured ground truth:** all 12 of the Fung talk's slides were found, plus 5 content slides the hand-pick had missed.
+
+**Built.**
+- New script `.claude/skills/youtube-transcript-skill/extract_stills.py` (opt-in; a JSON schema constrains the Gemini call).
+- Duplicate stills are detected on 160×90 thumbnails. A 16×16 first version dropped four distinct slides that share a template, including one of the 12; it was recalibrated on that talk.
+- Outputs: `raw/images/<slug>/*.png` (gitignored) and a committed manifest `raw/videos/<slug>.stills.md`.
+- Published stills go to `wiki/assets/<page-slug>/` as webp, a deliberate and narrow exception to raw-binaries-stay-local. Quartz needed no config change.
+
+**Schema.** CLAUDE.md gains §Video stills (opt-in), the Acquire → Process contract. It covers verifying each still by viewing it, selection rules, the webp conversion, the `## Visual canon` format, the `stills:` field and alt text that must not end in a number. Also: the field-mapping row, the `length:` variant, a pointer in `.gitignore`, and a new SKILL.md section with the measurement table.
+
+**Incident.** On the first acquire, `fetch_transcript.py -o` overwrote this video's curated raw transcript, which already existed under the same slug. It was restored with `git checkout`. CLAUDE.md now says: for a video already in the wiki, run only `extract_stills.py`.
+
+**Pages touched.**
+- [[2026-09-01-grootendorst-agentic-video-understanding-in-gemini]]: new `## Visual canon` with 3 published stills (chosen from 15 build states).
+  - Verifying against the images corrected Gemini's reading of the on-screen URL and of two transcript timestamps.
+  - Frontmatter: `stills:` and `length:`.
+  - "What was actually ingested" now records the slides.
+  - Debates: the docs page's own figures, plus a tooling note that marks the scope of the vendor claim.
+- New assets: `wiki/assets/2026-09-01-grootendorst-agentic-video-understanding-in-gemini/*.webp` (3 files, ~75 KB).
+
 ## [2026-09-30] refactor | Answer engine optimization gets its own concept page
 
 At the user's request: *"AEO is an important concept, just like SEO is for conventional web… these are experts explaining AEO fundamentals worth saving."* The morning's ingest had filed the AEO material as section 6 of [[agentic-web]]. It is now a concept page of its own, [[answer-engine-optimization]], written as the AEO counterpart of an SEO page: working definition, an SEO-vs-AEO table, anatomy of an answer, measuring without demand data (the persona × stage × region prompt matrix; visibility, share of voice, citations), consensus as the main signal, the own site as source of truth with six content signals, off-site channels, and downstream effects on conversion and team structure.
