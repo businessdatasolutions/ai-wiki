@@ -32,6 +32,16 @@ from playwright.async_api import async_playwright, Page
 
 VIDEO_ID_RE = re.compile(r"^[A-Za-z0-9_-]{11}$")
 
+# One element per transcript segment. YouTube replaced the Polymer
+# `ytd-transcript-segment-renderer` with a view-model panel
+# (`transcript-segment-view-model`) by 2026-10-01. Missing the new tag sent
+# every fetch down the innerText fallback in `_extract_segments`, which
+# leaked the hidden a11y label ("1 minute, 2 seconds") into 236 of 251
+# segments and appended chapter headings to the segment before them. The
+# output looked well-formed, so it was hand-cleaned per video instead of
+# fixed. See the 2026-10-01 incident note in SKILL.md.
+SEGMENT_SELECTOR = "ytd-transcript-segment-renderer, transcript-segment-view-model"
+
 
 # ---------------------------------------------------------------------------
 # URL parsing
@@ -181,14 +191,15 @@ async def _transcript_panel_is_open(page: Page) -> bool:
     attempt successfully opened — YouTube's button toggles.
     """
     return await page.evaluate(
-        """() => {
-            if (document.querySelectorAll('ytd-transcript-segment-renderer').length >= 3) return true;
+        """(sel) => {
+            if (document.querySelectorAll(sel).length >= 3) return true;
             for (const p of document.querySelectorAll('ytd-engagement-panel-section-list-renderer')) {
                 if (p.getAttribute('visibility') === 'ENGAGEMENT_PANEL_VISIBILITY_EXPANDED'
                     && (p.innerText || '').length > 200) return true;
             }
             return false;
-        }"""
+        }""",
+        SEGMENT_SELECTOR,
     )
 
 
@@ -272,8 +283,8 @@ async def _wait_for_transcript(page: Page, timeout_ms: int) -> None:
     """Wait until transcript content is loaded — segment renderers preferred,
     falling back to any expanded engagement-panel with substantial text."""
     await page.wait_for_function(
-        """() => {
-            const renderers = document.querySelectorAll('ytd-transcript-segment-renderer');
+        """(sel) => {
+            const renderers = document.querySelectorAll(sel);
             if (renderers.length >= 3) return true;
             const panels = document.querySelectorAll('ytd-engagement-panel-section-list-renderer');
             for (const p of panels) {
@@ -284,6 +295,7 @@ async def _wait_for_transcript(page: Page, timeout_ms: int) -> None:
             }
             return false;
         }""",
+        arg=SEGMENT_SELECTOR,
         timeout=timeout_ms,
     )
 
@@ -293,8 +305,8 @@ async def _scroll_panel(page: Page) -> None:
     container to the bottom repeatedly so all segments materialize, then back to
     the top."""
     await page.evaluate(
-        """async () => {
-            const renderer = document.querySelector('ytd-transcript-segment-renderer');
+        """async (sel) => {
+            const renderer = document.querySelector(sel);
             if (!renderer) return;
             // Walk up the ancestry to find the scrollable container.
             let scroller = renderer.parentElement;
@@ -312,19 +324,24 @@ async def _scroll_panel(page: Page) -> None:
                 if (scroller.scrollTop === before) break;
             }
             scroller.scrollTop = 0;
-        }"""
+        }""",
+        SEGMENT_SELECTOR,
     )
 
 
 async def _extract_segments(page: Page) -> list[dict]:
     return await page.evaluate(
-        """() => {
-            // Preferred: query structured segment renderers anywhere on the page.
-            const renderers = document.querySelectorAll('ytd-transcript-segment-renderer');
+        """(sel) => {
+            // Preferred: query structured segment elements anywhere on the page.
+            // Each selector pair is legacy renderer first, then the view-model
+            // panel. In the view model, `...Timestamp` is the visible "1:02";
+            // its sibling `...TimestampA11yLabel` ("1 minute, 2 seconds") is a
+            // different class token, so it never matches here.
+            const renderers = document.querySelectorAll(sel);
             if (renderers.length) {
                 return Array.from(renderers).map(r => ({
-                    ts: (r.querySelector('.segment-timestamp')?.innerText || '').trim(),
-                    text: (r.querySelector('.segment-text, yt-formatted-string.segment-text')?.innerText || '').trim(),
+                    ts: (r.querySelector('.segment-timestamp, .ytwTranscriptSegmentViewModelTimestamp')?.innerText || '').trim(),
+                    text: (r.querySelector('.segment-text, yt-formatted-string.segment-text, .ytAttributedStringHost')?.innerText || '').trim(),
                 })).filter(s => s.text);
             }
             // Fallback: parse innerText of the first expanded engagement panel.
@@ -338,8 +355,15 @@ async def _extract_segments(page: Page) -> list[dict]:
             if (!panel) return [];
             const lines = (panel.innerText || '').split('\\n').map(s => s.trim()).filter(Boolean);
             const tsRe = /^\\d+:\\d{2}(?::\\d{2})?$/;
-            const durRe = /^\\d+\\s+(seconds?|minutes?(?:\\s+and\\s+\\d+\\s+seconds?)?)$/i;
-            const dutchRe = /^\\d+\\s+(seconde[n]?|minu(?:ut|ten))(\\s+en\\s+\\d+\\s+seconde[n]?)?$/i;
+            // The timestamp's hidden a11y label is its own line: "6 minutes",
+            // "1 minute, 2 seconds", "1 hour, 2 minutes, 3 seconds". Older
+            // pages joined the parts with "and", Dutch pages with "en". The
+            // 2026-10-01 view-model panel uses commas, which the previous
+            // and-only pattern missed, so the label leaked into the text.
+            const durRe = /^\\d+\\s+(?:hours?|minutes?|seconds?|uur|minu(?:ut|ten)|seconden?)(?:(?:,|\\s+and|\\s+en)\\s+\\d+\\s+(?:hours?|minutes?|seconds?|uur|minu(?:ut|ten)|seconden?))*$/i;
+            // Chapter headings sit between segments in the same panel; the
+            // markdown renderer builds chapters from metadata instead.
+            const chapterRe = /^(?:Chapter|Hoofdstuk)\\s+\\d+:\\s/;
             const out = [];
             for (let i = 0; i < lines.length; i++) {
                 if (!tsRe.test(lines[i])) continue;
@@ -347,14 +371,15 @@ async def _extract_segments(page: Page) -> list[dict]:
                 const parts = [];
                 let j = i + 1;
                 while (j < lines.length && !tsRe.test(lines[j])) {
-                    if (!durRe.test(lines[j]) && !dutchRe.test(lines[j])) parts.push(lines[j]);
+                    if (!durRe.test(lines[j]) && !chapterRe.test(lines[j])) parts.push(lines[j]);
                     j++;
                 }
                 if (parts.length) out.push({ ts, text: parts.join(' ') });
                 i = j - 1;
             }
             return out;
-        }"""
+        }""",
+        SEGMENT_SELECTOR,
     )
 
 
