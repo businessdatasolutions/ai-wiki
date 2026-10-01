@@ -5,9 +5,9 @@ aliases: ["LangChain", "LangChain Inc"]
 tags: [langchain, agent-frameworks, agent-runtime, agent-harness, langgraph, langsmith, deep-agents]
 since: 2022
 confidence: 0.9
-last_confirmed: "2026-09-22"
-accessed_at: "2026-09-22"
-source_count: 13
+last_confirmed: "2026-10-01"
+accessed_at: "2026-10-01"
+source_count: 14
 relationships:
   - type: published-by
     target: 2026-05-09-chase-agent-development-lifecycle
@@ -41,6 +41,7 @@ This makes LangChain a **vendor whose product taxonomy *is* the wiki's vocabular
 
 - **LangChain** (the framework) — the original 2022 release; agent abstractions over LLM providers.
 - **LangGraph** — agent runtime for stateful, durable, human-in-the-loop graph-shaped workflows.
+  - Evaluated on a competitor's stack in [[2026-09-30-zamora-feroz-why-your-ai-agent-fails-in-production|Google Cloud Tech's *AI Agent Clinic* (September 2026)]]: DocsHound, a LangGraph agent whose traces LangSmith displays, is scored by Google's ADK-built eval toolkit once its spans carry OpenInference labels. A deterministic check reads the LangGraph span sequence directly.
 - **Deep Agents** — open-source pattern (`langchain-deep-agents`) demonstrating the harness layer with virtual-filesystem-as-working-memory.
 - **LangSmith** — eval/observability/deployment platform.
   - **LangSmith Platform** — the umbrella.

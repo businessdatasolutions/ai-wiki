@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.95
-source_count: 110
+source_count: 111
 relationships:
   - type: part-of
     target: ai-agents
@@ -20,8 +20,8 @@ relationships:
   - type: uses
     target: small-language-models
     via: "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed"
-last_confirmed: "2026-09-28"
-accessed_at: "2026-09-28"
+last_confirmed: "2026-10-01"
+accessed_at: "2026-10-01"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -378,6 +378,8 @@ The HaaS claim has **direct news-side confirmation in [[2026-05-05-loukides-rada
 ### Eval-side `scaffold = harness` equivalence (ratifying a vocabulary the wiki has held implicitly)
 
 Wolfe inherits and propagates the Anthropic *Demystifying Evals for AI Agents* equivalence: *"An agent harness (or scaffold) is the system that enables a model to act as an agent... When we evaluate an agent, we're evaluating the harness and the model working together."* The wiki has carried *scaffold* and *harness* as near-synonyms since the Bockeler / Karpathy ingests; Wolfe is the first source to ratify the equivalence directly from a load-bearing primary (Anthropic [1]) and use it as a foundation for an eval taxonomy. The corollary — *poor agent performance may stem from deficient model capabilities, poor scaffold design, or both* — is the eval-side restatement of [[2026-05-15-osmani-agent-harness-engineering|Osmani]]'s *category-error fix*: the model is one input; the rest is the harness; you cannot evaluate the agent without evaluating the pair together.
+
+A practical consequence is that the evaluator has to read the harness's telemetry. [[2026-09-30-zamora-feroz-why-your-ai-agent-fails-in-production|Zamora & Feroz (Google Cloud Tech, September 2026)]] make that telemetry framework-neutral: OpenTelemetry spans, labelled by OpenInference as `AGENT`, `TOOL`, `LLM` or `RETRIEVER`, so that *"changes in the agentic module do not affect downstream systems that consume from its telemetry (e.g. evaluation)."* That lets an ADK-built evaluator grade a LangGraph agent, and lets a deterministic check read the trajectory from the spans instead of inferring it from the answer.
 
 ### The eval-taxonomy: five components plus an evaluation harness
 

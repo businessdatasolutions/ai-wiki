@@ -3,9 +3,9 @@ type: concept
 aliases: ["agent development lifecycle", "ADLC", "agent SDLC", "agent lifecycle"]
 tags: [agent-development-lifecycle, adlc, ai-agents, agent-engineering, lifecycle-frameworks, sdlc-parallel, build-test-deploy-monitor, agent-governance, evals, llm-as-judge]
 confidence: 0.88
-last_confirmed: "2026-09-22"
-accessed_at: "2026-09-22"
-source_count: 20
+last_confirmed: "2026-10-01"
+accessed_at: "2026-10-01"
+source_count: 21
 relationships:
   - type: part-of
     target: ai-agents
@@ -19,8 +19,7 @@ relationships:
   - type: supports
     target: 2026-03-20-huggingface-agentic-evaluations-workshop
     via: "Sathiamoorthy / Bespoke Labs scaffolds the Test phase by level of verifiability (level 0 = verifiable / level 1 = rubric-based with LLM-as-judge); 'deploy to production and evaluate' named as the canonical anti-pattern; reward hacking as a first-class concern at level zero"
-quality_score: 0.99
-quality_notes: ['1 near-empty section(s)']
+quality_score: 1
 ---
 
 # Agent Development Lifecycle (ADLC)
@@ -163,6 +162,17 @@ Three things this adds to the Test phase:
 
 The scope is narrow: n = 5, one domain, one human rater, provider-default sampling for the LLM judges. The vendor ships both the Jev integration and the platform. The authors call the result observational. [[2026-09-21-runkle-langchain-building-a-harness-with-jev|LangChain's companion video]] summarises it as *"much more reliable and consistent"*, which is stronger than the data.
 
+#### Walkthrough anchor — the whole Test phase on one agent, and what its headline number rested on ([[2026-09-30-zamora-feroz-why-your-ai-agent-fails-in-production|Zamora & Feroz / Google Cloud Tech, September 2026]])
+
+The anchors above each describe part of the Test phase. This one runs all of it on camera, on one agent, in one session. DocsHound is an open-source LangGraph agent that drafts documentation pull requests. It is evaluated with Google's agent-eval toolkit, which was built and tested for ADK agents. Four moves:
+
+- **Make the traces framework-neutral first.** The agent emits OpenTelemetry traces whose spans OpenInference labels as `AGENT`, `TOOL`, `LLM` or `RETRIEVER`. The episode's own card gives the reason: *"changes in the agentic module do not affect downstream systems that consume from its telemetry (e.g. evaluation)."* A trace converter written during the episode is what lets an ADK-built evaluator read a LangGraph agent.
+- **Let a coding agent draft scenarios and metrics.** [[Antigravity]] reads the code and traces, runs the agent on three more repositories to produce scenarios, and proposes the metrics. The toolkit's README calls custom metrics *"AI-drafted"* and *"binary by default"*.
+- **Mix three grader families.** A managed Vertex AI metric, four custom LLM judges rated 1 (pass) or 0 (fail) against a threshold of 1.0, and three deterministic Python checks. One of the checks validates the LangGraph **span sequence** (research → analyze → search_docs → draft → store), so the trajectory is graded twice: by a judge reading the answer and by code reading the spans. Quality is reported next to latency, tokens and cost.
+- **Read the report.** Documentation quality scores 0.33 and is flagged *Low*; the presenters call it a blind spot. The per-question heatmap, which the narration does not discuss, shows the 0.33 is one pass among three scored answers out of four questions. One answer went unscored after an autorater connection error, and the groundedness judge failed on every question with a prompt-template error and is missing from the summary table. The host's reading: *"probably your code needs improvement or the way we are evaluating also may need improvement."*
+
+This complements [[2025-09-28-husain-ai-evaluations-clearly-explained-50-min|Husain]]. The judges come from the code and a conversation with the developer rather than from error analysis of traces, and no check against human labels is shown. Vendor content in a 60-minute demo format; the stated "weeks → one hour" setup time is the toolkit's claim, not a measurement.
+
 ### Deploy (more than hosting)
 
 - **Durable runtime** — checkpoint progress, resume on failure (LangSmith Deployment, AWS AgentCore, Temporal).
@@ -257,7 +267,6 @@ Her shape for them is the familiar one — *"almost like **unit tests**, but bui
 Vendor content with no measurements throughout; see the source page's scope warning.
 
 ## Open questions
-## Open questions
 
 - **Vendor-specificity vs. genericness**: now two formalizations (Google + LangChain). Whether other vendors (Anthropic, Microsoft, AWS) converge on similar phasings is unresolved. Watch for a third formalization in 2026 — three would be enough to consider this a *cross-vendor stable construct*.
 - **Pre-stage work**: neither formalization names a *decide-to-build-an-agent* gate (cf. [[2026-05-05-nishar-nohria-end-of-one-size-fits-all|Nishar-Nohria's]] firm-boundary framework). Worth tracking whether subsequent formalizations include build-vs-buy-vs-compose gates.
@@ -284,3 +293,4 @@ SORT file.name ASC
 
 - **Stage count vs. phase count.** Google's 9-stage wheel and Chase's 4-phase loop describe the same lifecycle at different granularities. Neither supersedes the other — they are complementary vantages.
 - **Does the Compounding loop deserve its own stage?** The wiki's [[agent-harness|agent-harness]] page names it as the fourth Chatterjee layer; Chase's Monitor + Iterate phases together cover it; Google's 9-stage wheel elides it. Open question: does it become a named stage in subsequent ADLC formalizations.
+- **Small-N eval reports and failed judges (added 2026-10-01).** [[2026-09-30-zamora-feroz-why-your-ai-agent-fails-in-production|Zamora & Feroz]] present a 0.33 documentation-quality score as the blind spot the scorecard caught. Their own heatmap shows it rests on three scored answers, with one answer unscored and one judge failing on every question; the failing metric is also missing from the summary table. Nothing in the Test-phase literature on this page says what a report should do with judge errors: drop the cell, count it as a fail, or block the run. The one demonstrated default, silently dropping it, changes the headline number. Open question for the Test phase.

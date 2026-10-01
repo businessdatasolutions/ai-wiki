@@ -10,6 +10,35 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-10-01] ingest | An agent eval built on camera, and what its headline number rested on
+
+The user sent one YouTube URL as a test of the stills pipeline: Google Cloud Tech's *AI Agent Clinic*, [[2026-09-30-zamora-feroz-why-your-ai-agent-fails-in-production]] (26:07, ASR). They supplied two screenshots as ground truth: a definition card and an architecture diagram. Their point was that the narration names terms that only the slides define.
+
+**Stills test.** Gemini (static) found 39 visuals for 153k tokens in 50 s. ffmpeg cut 38 stills; one recap repeat was correctly deduped. Both screenshots were found. Recall on definition cards was checked independently: a pixel scan of every second for the card's border found the same four cards (OTel, OpenInference, *Why It Matters?*, Scenario) and no others. Result recorded in the SKILL.md measurement table.
+
+**Acquire, and a fix first.** The test exposed a silent bug in `fetch_transcript.py`. YouTube has moved transcripts to a view-model panel (`transcript-segment-view-model`). The script fell back to scraping `innerText`, and the hidden a11y label (*"1 minute, 2 seconds"*) leaked into 236 of 251 segments, with chapter titles glued onto the segment before. This had been hand-cleaned in the HubSpot ingest without being traced. Fixed at the source in a separate commit (`7a2a4c7`), with a live test and an offline fallback test; SKILL.md has the incident note. The transcript was then fetched cleanly and ASR-cleaned at acquire (Antigravity, LangGraph, DocsHound in eight spellings, agent-eval, OpenTelemetry/OpenInference, Vertex AI and others; listed in `notes:`). Three unclear passages were left verbatim.
+
+**Process.** 14 of 38 stills were verified and published as webp. Checking against the pixels corrected Gemini in places that matter:
+- Two framework labels.
+- A function name.
+- Text it filled in beyond the edge of a scrolled page.
+- The heatmap's fourth documentation-quality cell, which Gemini read as *0* and is empty.
+- The deep-dive question, which Gemini read as 001 and is 004.
+
+**What the stills add.** The narration presents the 0.33 documentation-quality score as the blind spot the scorecard caught. The heatmap shows it is one pass among three scored answers out of four questions, from a binary judge. A second judge (groundedness, `requires_reference: true`) errored on every question and is missing from the summary table. Recorded neutrally in *Debates*.
+
+**Neighbour scan.** Path A (both W&W cells, eval topic) and path B (eval terms).
+- **Filed** `supports` edges to Wolfe (grader families), Husain (binary judges around the expert's notion of quality; validation step not shown here), Chase (traces as eval material), Khan (evals as direction, not verdict) and Anthropic's evals-for-taste talk (code + model graders).
+- **Named in the body without an edge:** Shea & Roche (judge variance).
+- **Skipped:** Guthrie/Braintrust (same loop as Chase), Runkle (product explainer), *From demo to production* (different failure modes), the Hugging Face workshop and Rashad (too general).
+
+**Pages touched.**
+- New: [[2026-09-30-zamora-feroz-why-your-ai-agent-fails-in-production]] (Visual canon of 14 stills), assets in `wiki/assets/2026-09-30-zamora-feroz-why-your-ai-agent-fails-in-production/` (~750 KB).
+- [[agent-development-lifecycle]]: a walkthrough anchor in the Test phase. *Debates*: what a report should do with judge errors. Removed a duplicated `## Open questions` heading. 20 → 21 sources.
+- [[agent-harness]]: one paragraph under the eval-side *scaffold = harness* section (framework-neutral telemetry). 110 → 111 sources.
+- [[Antigravity]] (the agent in an evaluation role; 4 → 5, confidence 0.72 → 0.75), [[Google]] (agent-eval under Agent Platform; 14 → 15), [[LangChain]] (LangGraph evaluated on Google's stack; 13 → 14).
+- `index.md`: a source bullet.
+
 ## [2026-10-01] refactor | Video stills: Gemini finds the slides, ffmpeg cuts them, Process publishes the verified ones
 
 The user asked whether Gemini's agentic video understanding (the video already ingested as [[2026-09-01-grootendorst-agentic-video-understanding-in-gemini]], plus the API docs) could extend the YouTube acquire step, so that stills of diagrams and slides are saved along with what they contain.
