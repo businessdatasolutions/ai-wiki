@@ -208,7 +208,7 @@ It needs the transcript at `raw/videos/<slug>.md` first (or pass `--transcript P
 
 Re-running the same query replaces only that query's folder. `extract_stills.py`'s cleanup only removes `NN-MMmSS-*.png` files at the top of `raw/images/<slug>/`, so it never touches a `search-*` folder. A test pins this.
 
-**Tests.** `python -m unittest discover -s .claude/skills/youtube-transcript-skill/tests`. These are offline tests of the pure parts (transcript parsing, window padding/merging/subtraction, timestamp resolution, output paths, manifest). The Gemini and ffmpeg steps were checked live, on the run below.
+**Tests.** `python -m unittest discover -s .claude/skills/youtube-transcript-skill/tests`. These are offline tests of the pure parts: transcript parsing, window padding/merging/subtraction, timestamp resolution, output paths and manifest for the search, and the timestamp window for the full scan (`test_extract_stills.py`). The Gemini and ffmpeg steps were checked live, on the run below.
 
 ### Measured 2026-10-03: Morieux, *The Social Economics of Productivity* (Talks at Google, 50:31)
 
@@ -227,7 +227,7 @@ Query: *"diagrams on complexity vs complicatedness"*. Baseline: `extract_stills.
 
 ### Failure modes (search)
 
-- **Fractional timestamps.** Gemini sometimes answers `10:55.000`. `fetch_transcript._ts_to_ms` returns **0** for that (its `int()` fails silently), and a whole-number-only pattern rejects it: on 2026-10-03 all 7 matches in a window were dropped as "unparseable". `search_stills.seconds()` accepts fractions. `extract_stills._window` still uses the integer-only parser; a full scan has not hit this yet.
+- **Fractional timestamps.** Gemini sometimes answers `10:55.000`. `fetch_transcript._ts_to_ms` returns **0** for that (its `int()` fails silently), and a whole-number-only pattern rejects it: on 2026-10-03 all 7 matches in a window were dropped as "unparseable". Both scripts now read Gemini's times with `fetch_transcript.ts_seconds()`, which accepts fractions. `_ts_to_ms` keeps its 0-on-failure behaviour, which the chapter logic relies on. The full scan was fixed the same day: on 74 real timestamps from two earlier scans it gives identical results.
 - **A visual that starts before its window** is reported from the window's start (e.g. *on screen 7:25–8:34* for a chart up since 6:43). The frame at `end − 1s` is unaffected.
 - **Locate is not repeatable.** Same transcript, same query, different windows. Use `--locate-only` to inspect, and `--windows` to pin them.
 

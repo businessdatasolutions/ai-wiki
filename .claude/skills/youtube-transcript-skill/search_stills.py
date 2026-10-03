@@ -33,14 +33,10 @@ import sys
 import tempfile
 from pathlib import Path
 
-from fetch_transcript import _format_duration, _ts_to_ms
+from fetch_transcript import _format_duration, _ts_to_ms, ts_seconds
 
 SEGMENT_RE = re.compile(r"^\[(\d{1,2}:\d{2}(?::\d{2})?)\] (.+)$")
 RANGE_RE = re.compile(r"^\s*(\d{1,2}:\d{2}(?::\d{2})?)\s*-\s*(\d{1,2}:\d{2}(?::\d{2})?)\s*$")
-# Gemini's timestamps: M:SS or H:MM:SS, sometimes with fractional seconds
-# ("10:55.000"). fetch_transcript._ts_to_ms returns 0 for those, so they get
-# their own parser.
-GEMINI_TS_RE = re.compile(r"^(?:(\d{1,2}):)?(\d{1,2}):(\d{2}(?:\.\d+)?)$")
 
 
 # ---------------------------------------------------------------------------
@@ -62,15 +58,6 @@ def parse_transcript(text: str) -> tuple[dict, list[tuple[float, str]]]:
         if m:
             segments.append((_ts_to_ms(m.group(1)) / 1000, m.group(2).strip()))
     return header, segments
-
-
-def seconds(ts: str) -> float | None:
-    """Seconds for a Gemini timestamp, or None when it is not one."""
-    m = GEMINI_TS_RE.match((ts or "").strip())
-    if not m:
-        return None
-    hours, minutes, secs = m.groups()
-    return int(hours or 0) * 3600 + int(minutes) * 60 + float(secs)
 
 
 def transcript_for_prompt(segments: list[tuple[float, str]]) -> str:
@@ -119,7 +106,7 @@ def resolve_times(item: dict, window: dict, *, tolerance: float = 2.0) -> tuple[
     start of the clip instead, the times fall inside the clip's length, not
     inside the window, and are shifted. Anything else is rejected.
     """
-    start, end = seconds(item.get("start", "")), seconds(item.get("end", ""))
+    start, end = ts_seconds(item.get("start", "")), ts_seconds(item.get("end", ""))
     if start is None or end is None:
         return None
     end = max(end, start)
@@ -296,7 +283,7 @@ def locate_windows(client, *, model: str, query: str, segments: list[tuple[float
     )
     windows = []
     for w in json.loads(interaction.output_text)["windows"][:max_windows]:
-        start, end = seconds(w.get("start", "")), seconds(w.get("end", ""))
+        start, end = ts_seconds(w.get("start", "")), ts_seconds(w.get("end", ""))
         if start is not None and end is not None:
             windows.append({"start": start, "end": max(end, start), "reason": w["reason"].strip()})
     return windows, _usage(interaction)

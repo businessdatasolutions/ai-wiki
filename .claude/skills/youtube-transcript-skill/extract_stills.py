@@ -32,7 +32,7 @@ from pathlib import Path
 
 import yaml
 
-from fetch_transcript import _YtDumper, _format_duration, _ts_to_ms, extract_video_id
+from fetch_transcript import _YtDumper, _format_duration, extract_video_id, ts_seconds
 
 
 REPO = Path(__file__).resolve().parents[3]
@@ -52,7 +52,6 @@ FRAME_LEAD_S = 1.0
 THUMB_SIZE = "160:90"
 DUPLICATE_MAD = 1.0
 
-TS_RE = re.compile(r"^\d{1,2}:\d{2}(:\d{2})?$")
 STILL_RE = re.compile(r"^\d{2}-\d+m\d{2}-.*\.png$")
 
 KINDS = ["slide", "diagram", "chart", "table", "code", "screen", "whiteboard", "text-overlay"]
@@ -212,10 +211,10 @@ def _mad(a: bytes, b: bytes) -> float:
 
 def _window(item: dict, duration: float) -> tuple[float, float] | None:
     """(start, end) in seconds, or None when Gemini's timestamps are unusable."""
-    if not (TS_RE.match(item.get("start", "")) and TS_RE.match(item.get("end", ""))):
+    start, end = ts_seconds(item.get("start", "")), ts_seconds(item.get("end", ""))
+    if start is None or end is None:
         return None
-    start = _ts_to_ms(item["start"]) / 1000
-    end = max(_ts_to_ms(item["end"]) / 1000, start)
+    end = max(end, start)
     if start >= duration:
         return None
     return start, min(end, duration - 0.5)
