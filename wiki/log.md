@@ -10,6 +10,18 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-10-03] refactor | Stills without the download, index counts out, DIU and Luther Lowe get pages
+
+Three follow-ups to the defense-tech ingest below, at the user's request.
+
+**Stills by stream seek.** The stills scripts downloaded the whole video on every run: 3.4 GB twice to cut 67 frames from the 8-hour stream, about 10 of the runs' 14 minutes. A new `FrameSource` in `extract_stills.py` grabs each frame by seeking the stream URL with ffmpeg (`-ss` before `-i`, so HTTP range requests). The first failed seek triggers one full download, and the rest come from that copy. Both scripts use it, and each manifest's `extractor.frames` records which path ran. Test-first: 3 offline tests of the fallback logic, 34 in total. **Measured:** 8 stills re-grabbed by seeking took about 1 s each with no download, and all 8 were pixel-identical to the downloaded cut (thumbnail difference 0.00).
+
+**Source counts out of the index.** 69 Entities and Concepts bullets carried a count from the day the page was made (*"NEW CONCEPT PAGE (22 July 2026), 2 sources"*; that page now records 23). The counts are removed: 56 markers now read *"Concept page since …"* or *"Entity page since …"*, 2 undated *"NEW, N sources"* markers are gone, and 11 hand rewrites keep a date wherever it scoped a claim (*"As of 30 Aug 2026, no study measures net value"*). Three historical statements stay as written (*"Opened 2026-09-19 with 5 sources"*). The live number is each page's frontmatter, which the site shows in its badge. **Found, not fixed (user's choice):** frontmatter `source_count` disagrees with the number of linking source pages on 130 of 247 pages, in both directions (Anthropic 34 recorded, 81 linking; ai-sovereignty 12 recorded, 8 linking). Earlier ingests counted sources that name a page without linking it, and missed many that link it. CLAUDE.md's definition, *"cite or substantiate … (matches the page's inbound source links)"*, allows both readings.
+
+**Two entity pages.** [[Defense Innovation Unit]] and [[Luther Lowe]] were each named on two or more of the event's pages. Both are written only from those pages. DIU: how it buys, its CTO's position on AI, and an open question, since every description comes from inside defense buying at one YC-hosted event. Lowe: YC's head of public policy, in this wiki only as the event's host. Dangling lines on three source pages replaced by links, and first mentions linked on [[Y Combinator]], [[Pete Koomen]], [[concepts/ai-benchmarks|ai-benchmarks]] and [[concepts/ai-sovereignty|ai-sovereignty]]. Mentions inside another link's alias were left plain, so no link was nested.
+
+**Seen in passing:** `ai-benchmarks` carries a `contradicts` edge to itself (since 2026-05-14), which `lint-page.mjs` flags. Part of the known lint backlog; not changed here.
+
 ## [2026-10-03] ingest | Eight hours of a defense-tech day, read in full and kept where the AI is
 
 The user handed over an 8:01:10 YC Root Access livestream, *The Startup Industrial Base: Building for the Next 250* (Washington, D.C., 30 Sep 2026), as a challenge to process efficiently. Read-only probing showed it was not one source but 37 talks sharing one URL, about a subject (defense tech) the corpus barely covers. The user chose **hub + spokes**, **AI-relevant talks only**, and **a free frame probe before any stills**. The longest source before this was ~109 minutes.
