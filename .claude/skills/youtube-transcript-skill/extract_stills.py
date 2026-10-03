@@ -6,7 +6,8 @@ shows.
 
 Gemini finds the visuals and reads them. It returns text only (timestamps and
 on-screen content), never images, so the stills are cut locally: yt-dlp
-downloads the video, ffmpeg grabs one frame per visual.
+resolves the stream URL and ffmpeg seeks it for one frame per visual. The video
+is downloaded only if a seek fails (FrameSource).
 
 Acquire-phase only. Writes:
     raw/images/<slug>/NN-MMmSS-<title>.png   (gitignored)
@@ -173,12 +174,15 @@ def find_visuals(url: str, *, model: str, mode: str, resolution: str | None,
 # Grab: yt-dlp + ffmpeg
 # ---------------------------------------------------------------------------
 
+# avc1 first: it decodes everywhere; AV1/VP9 only as a fallback.
+VIDEO_FORMAT = "bv*[height<=1080][vcodec^=avc1]/bv*[height<=1080]/b[height<=1080]/b"
+
+
 def download(url: str, dest: Path) -> tuple[Path, dict]:
     import yt_dlp
 
     opts = {
-        # avc1 first: it decodes everywhere; AV1/VP9 only as a fallback.
-        "format": "bv*[height<=1080][vcodec^=avc1]/bv*[height<=1080]/b[height<=1080]/b",
+        "format": VIDEO_FORMAT,
         "outtmpl": str(dest / "video.%(ext)s"),
         "quiet": True,
         "no_warnings": True,
@@ -189,12 +193,62 @@ def download(url: str, dest: Path) -> tuple[Path, dict]:
         return Path(ydl.prepare_filename(info)), info
 
 
-def grab_frame(video: Path, at_s: float, out: Path) -> None:
+def grab_frame(video: Path | str, at_s: float, out: Path) -> None:
+    """One frame at at_s. `video` is a local file or a stream URL: with -ss
+    before -i, ffmpeg seeks a URL by HTTP range requests, reading only the
+    bytes around the nearest keyframe."""
     subprocess.run(
         ["ffmpeg", "-loglevel", "error", "-y", "-ss", f"{at_s:.2f}", "-i", str(video),
          "-frames:v", "1", "-update", "1", str(out)],
         check=True,
     )
+
+
+class FrameSource:
+    """Grabs frames by seeking the stream; downloads the video only as a fallback.
+
+    The first failed seek triggers one full download, and every later frame
+    comes from that local copy. On an 8-hour stream (2026-10-03) the old
+    always-download path pulled 3.4 GB per run to cut a few dozen frames.
+    """
+
+    def __init__(self, stream_url: str | None, download, grab=grab_frame):
+        self.stream_url = stream_url
+        self._download = download  # () -> Path, called at most once
+        self._grab = grab
+        self.local: Path | None = None
+        self.seeks = 0
+        self.local_grabs = 0
+
+    def grab(self, at_s: float, out: Path) -> None:
+        if self.local is None and self.stream_url:
+            try:
+                self._grab(self.stream_url, at_s, out)
+                self.seeks += 1
+                return
+            except (subprocess.CalledProcessError, OSError):
+                pass  # fall through to the downloaded copy
+        if self.local is None:
+            self.local = self._download()
+        self._grab(self.local, at_s, out)
+        self.local_grabs += 1
+
+    def summary(self) -> str:
+        if self.local is None:
+            return f"{self.seeks} frames by stream seek, no download"
+        return f"{self.seeks} frames by stream seek, {self.local_grabs} from a full download (fallback)"
+
+
+def open_frames(url: str, dest: Path) -> tuple[FrameSource, dict]:
+    """A FrameSource for `url` and its metadata, without downloading the video."""
+    import yt_dlp
+
+    opts = {"format": VIDEO_FORMAT, "quiet": True, "no_warnings": True}
+    with yt_dlp.YoutubeDL(opts) as ydl:
+        info = ydl.extract_info(url, download=False)
+    # A single selected format carries its own URL; a merged pair does not.
+    stream_url = info.get("url") if not info.get("requested_formats") else None
+    return FrameSource(stream_url, lambda: download(url, dest)[0]), info
 
 
 def _thumbnail(png: Path) -> bytes:
@@ -234,7 +288,7 @@ def _mmss(seconds: float) -> str:
 # ---------------------------------------------------------------------------
 
 def render_manifest(*, slug: str, video_id: str, url: str, info: dict, findings: dict,
-                    stills: list[dict], skipped: list[dict]) -> str:
+                    stills: list[dict], skipped: list[dict], frames: str | None = None) -> str:
     today = dt.date.today().isoformat()
     model = findings["extractor"]["model"]
     header = {
@@ -247,7 +301,8 @@ def render_manifest(*, slug: str, video_id: str, url: str, info: dict, findings:
         "stills_dir": f"../images/{slug}/",
         "stills_count": len(stills),
         "extractor": {k: v for k, v in findings["extractor"].items() if v is not None}
-        | {"frame_rule": f"end of display window minus {FRAME_LEAD_S:g}s"},
+        | {"frame_rule": f"end of display window minus {FRAME_LEAD_S:g}s"}
+        | ({"frames": frames} if frames else {}),
         "acquired": today,
         "usage": findings["usage"],
         "notes": (
@@ -344,7 +399,7 @@ def main() -> int:
     skipped: list[dict] = []
     thumbs: list[bytes] = []
     with tempfile.TemporaryDirectory() as tmp:
-        video, info = download(url, Path(tmp))
+        frames, info = open_frames(url, Path(tmp))
         duration = float(info.get("duration") or 0)
         for item in findings["visuals"]:
             window = _window(item, duration)
@@ -355,7 +410,7 @@ def main() -> int:
             at = max(start, end - FRAME_LEAD_S)
             n = len(stills) + 1
             name = f"{n:02d}-{int(at) // 60:02d}m{int(at) % 60:02d}-{_slugify(item['title'])}.png"
-            grab_frame(video, at, stills_dir / name)
+            frames.grab(at, stills_dir / name)
             thumb = _thumbnail(stills_dir / name)
             twin = next((s for s, t in zip(stills, thumbs) if _mad(t, thumb) < DUPLICATE_MAD), None)
             if twin:
@@ -367,12 +422,13 @@ def main() -> int:
 
     manifest.write_text(
         render_manifest(slug=args.slug, video_id=video_id, url=url, info=info,
-                        findings=findings, stills=stills, skipped=skipped),
+                        findings=findings, stills=stills, skipped=skipped,
+                        frames=frames.summary()),
         encoding="utf-8",
     )
     tokens = findings["usage"].get("total_tokens", "?")
     print(f"wrote {len(stills)} stills to {stills_dir} and {manifest} "
-          f"({len(skipped)} skipped; {tokens} Gemini tokens)")
+          f"({len(skipped)} skipped; {tokens} Gemini tokens; {frames.summary()})")
     return 0 if stills else 1
 
 

@@ -385,7 +385,7 @@ def search(client, *, model: str, url: str, query: str, windows: list[dict], fps
 
 def main() -> int:
     from extract_stills import (DEFAULT_MODEL, DUPLICATE_MAD, FRAME_LEAD_S, REPO, STILL_RE,
-                                _export_credential, _mad, _slugify, _thumbnail, download, grab_frame)
+                                _export_credential, _mad, _slugify, _thumbnail, open_frames)
     from fetch_transcript import extract_video_id
 
     ap = argparse.ArgumentParser(description="Find the stills that answer one question about a YouTube video.")
@@ -466,7 +466,7 @@ def main() -> int:
     skipped: list[dict] = []
     thumbs: list[bytes] = []
     with tempfile.TemporaryDirectory() as tmp:
-        video, info = download(url, Path(tmp))
+        frames, info = open_frames(url, Path(tmp))
         for item in matches:
             resolved = resolve_times(item, item["_window"])
             if resolved is None:
@@ -477,7 +477,7 @@ def main() -> int:
             at = max(start, end - FRAME_LEAD_S)
             n = len(stills) + 1
             name = f"{n:02d}-{int(at) // 60:02d}m{int(at) % 60:02d}-{_slugify(item['title'])}.png"
-            grab_frame(video, at, stills_dir / name)
+            frames.grab(at, stills_dir / name)
             thumb = _thumbnail(stills_dir / name)
             twin = next((s for s, t in zip(stills, thumbs) if _mad(t, thumb) < DUPLICATE_MAD), None)
             if twin:
@@ -495,12 +495,13 @@ def main() -> int:
             channel=info.get("channel") or header.get("channel"), duration=duration, query=args.query,
             stills_rel=rel, windows=searched, stills=stills, skipped=skipped,
             extractor={"model": args.model, "processing": "static, windowed", "fps": args.fps,
-                       "pad_s": args.pad, "frame_rule": f"end of display window minus {FRAME_LEAD_S:g}s"},
+                       "pad_s": args.pad, "frame_rule": f"end of display window minus {FRAME_LEAD_S:g}s",
+                       "frames": frames.summary()},
             usage=usage),
         encoding="utf-8",
     )
     print(f"wrote {len(stills)} stills to {stills_dir} and {manifest} "
-          f"({len(skipped)} skipped; {usage.get('total_tokens', '?')} Gemini tokens)")
+          f"({len(skipped)} skipped; {usage.get('total_tokens', '?')} Gemini tokens; {frames.summary()})")
     return 0 if stills else 1
 
 

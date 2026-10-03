@@ -146,7 +146,7 @@ python extract_stills.py "URL" --slug <slug> --findings f.json    # re-cut frame
 **How it works.** Gemini can find and read the visuals but never returns an image. Its output is text with `MM:SS` timestamps, and its `processing_call` / `processing_result` steps carry only IDs and signatures, not the frames it looked at. So the work is split:
 
 1. **Find.** One Gemini call on the YouTube URL (no upload), constrained by a JSON schema. Each item has `start`, `end`, `kind`, `title`, `content` (verbatim on-screen text) and `adds` (what the visual says that the narration doesn't).
-2. **Grab.** yt-dlp downloads the ≤1080p video into a temp dir. ffmpeg takes one frame per visual at `end − 1s`: slides that build up only gain content, so the last stable frame carries the most.
+2. **Grab.** yt-dlp resolves the ≤1080p stream URL without downloading, and ffmpeg seeks it for one frame per visual at `end − 1s`: slides that build up only gain content, so the last stable frame carries the most. If a seek fails, `FrameSource` downloads the video once into a temp dir and cuts the remaining frames from that copy. The manifest's `extractor.frames` line says which happened.
 3. **Dedupe.** Compare 160×90 grayscale thumbnails; a mean absolute difference below 1.0 means the same picture (a slide shown twice). On the Fung talk, repeats scored ≤ 0.24 and distinct slides on the same template scored ≥ 3.50. At 16×16 the text differences vanish, and four distinct slides were dropped.
 4. **Land.** Stills go to `raw/images/<slug>/NN-MMmSS-<title>.png` (gitignored). The manifest goes to `raw/videos/<slug>.stills.md` (committed): a YAML header with model, mode and token usage, then one section per still marked *machine-read, unverified*.
 
@@ -199,7 +199,7 @@ It needs the transcript at `raw/videos/<slug>.md` first (or pass `--transcript P
 
 1. **Locate.** One text-only Gemini call reads the transcript and proposes up to `--max-windows` (3) passages where the visual is likely on screen, each with a reason. The prompt matches on meaning, because slide labels are often never spoken, and asks for separate passages rather than several windows on the strongest one. Windows are padded (`--pad`, 30 s) and merged. `--windows` skips this step.
 2. **Find.** One Gemini video call per window. The YouTube URL goes in with `processing: {"type": "static", "start_offset": "...s", "end_offset": "...s", "fps": 2}`, so only those minutes are sampled, at twice the full scan's rate. The schema is `extract_stills.py`'s plus `match`: why this visual answers the query.
-3. **Grab.** As in `extract_stills.py`: download, one frame per match at `end − 1s`, dedupe.
+3. **Grab.** As in `extract_stills.py`: seek the stream (download only if a seek fails), one frame per match at `end − 1s`, dedupe.
 4. **Fall back**, only when nothing matched: widen the windows (`--widen`, 120 s more each side) and search only the new minutes; then search the whole video. `--no-fallback` stops after the first stage. The manifest records which stage found each still.
 
 **Outputs**, beside the full scan's and never on top of them:
@@ -240,7 +240,7 @@ First run on an 8:01:10 conference livestream (YC Root Access, `T6hVGJ4gepk`, 37
 - **VTT parse rule.** Keep the **last line of every real cue** and skip the ~10 ms hold cues. Do not select lines by their inline timing tag: a one-word line (`frontier.`) has no tag, and that test silently dropped 229 lines on this video. Unescape HTML entities (`&gt;&gt;` is the speaker-change marker).
 - **Gates before writing:** last segment within 10 min of the end; no gap over 3 min outside known breaks; no doubled `(time, text)` pairs; no a11y-label prefixes.
 - **Probe before Gemini.** `ffmpeg -ss <t> -i "$(yt-dlp -g -f <fmt> URL)" -frames:v 1` seeks the stream remotely: 18 frames across 8 hours took 34 s with no download. It showed which talks had slides at all; two stage firesides were dropped before any Gemini call.
-- **Stills: one `search_stills.py` run, pinned windows, `--no-fallback`, `--fps 1`.** Every run downloads the **whole** video (no section download yet), so put all windows in one run. Without `--no-fallback`, a window with no match triggers a whole-video call, about 2.7M tokens at the measured ~95 tokens/s. Four windows (39 min) cost 239,294 tokens; re-running two after the fix above cost 79,190. Total ≈ 12% of a full scan.
+- **Stills: one `search_stills.py` run, pinned windows, `--no-fallback`, `--fps 1`.** This run predates stream seeking and downloaded the whole video (3.4 GB) twice to cut 67 frames. Since the same day frames are grabbed by seeking the stream: re-grabbing 8 of those stills that way took about 1 s each, with no download, and every one was pixel-identical to the downloaded cut (thumbnail difference 0.00). Without `--no-fallback`, a window with no match triggers a whole-video call, about 2.7M tokens at the measured ~95 tokens/s. Four windows (39 min) cost 239,294 tokens; re-running two after the fix above cost 79,190. Total ≈ 12% of a full scan.
 - **Known, unfixed:** still numbers from 100 up (`100-…png`) escape the cleanup regex `^\d{2}-`; a run that big should be split.
 
 ## Failure modes
