@@ -1,6 +1,6 @@
 ---
 name: youtube-transcript
-description: Fetch a YouTube video's metadata and transcript via Playwright and save it as a Markdown file with a YAML front-matter header; optionally save stills of the video's slides and diagrams with Gemini (extract_stills.py). Trigger on any request involving a YouTube URL where the user wants the spoken content as text — "get the transcript", "transcribe this video", "summarize this video" (fetch first, summarize after), or any time captions/subtitles are useful — and on requests to capture a video's slides, diagrams or screenshots.
+description: Fetch a YouTube video's metadata and transcript via Playwright and save it as a Markdown file with a YAML front-matter header; optionally save stills of the video's slides and diagrams with Gemini (extract_stills.py), or find only the stills that answer one question, such as the diagram explaining X (search_stills.py). Trigger on any request involving a YouTube URL where the user wants the spoken content as text — "get the transcript", "transcribe this video", "summarize this video" (fetch first, summarize after), or any time captions/subtitles are useful — and on requests to capture a video's slides, diagrams or screenshots, or to find a specific diagram or slide in a video.
 ---
 
 # youtube-transcript
@@ -181,6 +181,55 @@ So `--mode static` is the default. `--mode agentic` stays available for short vi
 - **Over-reporting.** Section headers and question cards come back as "slides", and a diagram that builds up comes back once per build state (15 items for the four diagrams of a 3-minute explainer). This is expected; Process drops navigation and keeps each diagram's fully built state.
 - **Mid-animation frames.** When a display window is very short (about 2 s), `end − 1s` can land while an element is still animating in. Process uses the neighbouring build state instead.
 - **Already-ingested video.** Run only this script with the existing slug. Re-running `fetch_transcript.py -o` on that path replaces the curated transcript (see CLAUDE.md §Video stills).
+
+## Targeted still search (opt-in)
+
+`search_stills.py` finds the stills that answer one question, such as *"the diagram on complexity versus complicatedness"*, without paying for the whole video. It is a separate tool. It does not replace `extract_stills.py`, and it never writes over its outputs.
+
+```bash
+python search_stills.py "URL" --slug <slug> --query "the diagram explaining X"
+python search_stills.py "URL" --slug <slug> --query "..." --locate-only        # windows only, no video calls
+python search_stills.py "URL" --slug <slug> --query "..." --windows 6:40-9:10,15:05-16:10 --pad 5
+python search_stills.py "URL" --slug <slug> --query "..." --dry-run            # matches as JSON, writes nothing
+```
+
+It needs the transcript at `raw/videos/<slug>.md` first (or pass `--transcript PATH`). For a video already in the wiki that file exists; don't re-fetch it.
+
+**How it works.**
+
+1. **Locate.** One text-only Gemini call reads the transcript and proposes up to `--max-windows` (3) passages where the visual is likely on screen, each with a reason. The prompt matches on meaning, because slide labels are often never spoken, and asks for separate passages rather than several windows on the strongest one. Windows are padded (`--pad`, 30 s) and merged. `--windows` skips this step.
+2. **Find.** One Gemini video call per window. The YouTube URL goes in with `processing: {"type": "static", "start_offset": "...s", "end_offset": "...s", "fps": 2}`, so only those minutes are sampled, at twice the full scan's rate. The schema is `extract_stills.py`'s plus `match`: why this visual answers the query.
+3. **Grab.** As in `extract_stills.py`: download, one frame per match at `end − 1s`, dedupe.
+4. **Fall back**, only when nothing matched: widen the windows (`--widen`, 120 s more each side) and search only the new minutes; then search the whole video. `--no-fallback` stops after the first stage. The manifest records which stage found each still.
+
+**Outputs**, beside the full scan's and never on top of them:
+- `raw/images/<slug>/search-<query>/NN-MMmSS-<title>.png` (gitignored)
+- `raw/videos/<slug>.search-<query>.stills.md` (manifest: the query, every window searched and why, each match's reason, token usage)
+
+Re-running the same query replaces only that query's folder. `extract_stills.py`'s cleanup only removes `NN-MMmSS-*.png` files at the top of `raw/images/<slug>/`, so it never touches a `search-*` folder. A test pins this.
+
+**Tests.** `python -m unittest discover -s .claude/skills/youtube-transcript-skill/tests`. These are offline tests of the pure parts (transcript parsing, window padding/merging/subtraction, timestamp resolution, output paths, manifest). The Gemini and ffmpeg steps were checked live, on the run below.
+
+### Measured 2026-10-03: Morieux, *The Social Economics of Productivity* (Talks at Google, 50:31)
+
+Query: *"diagrams on complexity vs complicatedness"*. Baseline: `extract_stills.py --dry-run`, the full static scan, which found 35 visuals for 285,630 tokens. Three are squarely on the query: the build-up of the ×6 complexity / ×35 complicatedness chart (6:43–9:09) and *Managing complexity without getting complicated* (15:11–15:45).
+
+| Run | Windows searched | Stills | Tokens | vs. full scan |
+|---|---|---|---|---|
+| Located, first prompt | 6:15–9:45 | 5: the ×6/×35 chart, with 3 mid-animation build states | 48,870 | 17% |
+| Located, revised prompt | 7:25–9:40 · 10:55–13:25 · 13:45–16:15 | 5: the chart, and *Managing complexity* | 90,142 | 32% |
+| Located, revised prompt | 7:25–9:45 · 10:55–13:25 · 25:15–27:05 | 2: the chart only | 82,531 | 29% |
+| `--windows` by hand, `--pad 5` | 6:35–9:15 · 15:00–16:15 | 6: both diagrams, every build state | 41,222 | 14% |
+
+- **The central visual was found every time.** Secondary visuals depend on which windows Locate picks, and that varies between runs (the third run spent a window on a COVID passage). Whether Gemini counts a borderline slide as a match also varies: the *"Complicatedness stifles productivity"* series came back as 7 matches in one run and 0 in the next.
+- **Gemini reported times as positions in the full video** in every window, not relative to the clip. `resolve_times` handles both and records which one applied.
+- **For an exhaustive answer, run a full scan.** A search is cheap and good at "find *the* diagram". It is not a catalogue. When you know roughly where the visual is, `--windows` is cheapest and fully repeatable.
+
+### Failure modes (search)
+
+- **Fractional timestamps.** Gemini sometimes answers `10:55.000`. `fetch_transcript._ts_to_ms` returns **0** for that (its `int()` fails silently), and a whole-number-only pattern rejects it: on 2026-10-03 all 7 matches in a window were dropped as "unparseable". `search_stills.seconds()` accepts fractions. `extract_stills._window` still uses the integer-only parser; a full scan has not hit this yet.
+- **A visual that starts before its window** is reported from the window's start (e.g. *on screen 7:25–8:34* for a chart up since 6:43). The frame at `end − 1s` is unaffected.
+- **Locate is not repeatable.** Same transcript, same query, different windows. Use `--locate-only` to inspect, and `--windows` to pin them.
 
 ## Failure modes
 

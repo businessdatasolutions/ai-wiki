@@ -10,6 +10,21 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-10-03] refactor | Targeted still search: the transcript picks the minutes, Gemini looks only there
+
+The user asked for a way to find one visual, such as *"the diagram explaining X"*, without paying Gemini for every second of a video. The idea was the user's: search the local transcript for likely moments and send only those to Gemini. Built as a new script beside the full scan, which is unchanged.
+
+**Built.**
+- `.claude/skills/youtube-transcript-skill/search_stills.py`. **Locate:** a text-only Gemini call reads the transcript and proposes up to three windows, each with a reason; `--windows` sets them by hand. **Find:** one Gemini video call per window, using the API's `start_offset`/`end_offset` on the YouTube URL, at 2 frames per second. **Fall back:** if nothing matched, widen the windows (new minutes only), then search the whole video.
+- Outputs sit beside the full scan's, never on top: `raw/images/<slug>/search-<query>/` and `raw/videos/<slug>.search-<query>.stills.md`.
+- 24 offline tests in `tests/test_search_stills.py`.
+
+**Measured** on Yves Morieux's *The Social Economics of Productivity* (Talks at Google, 50:31), query *"diagrams on complexity vs complicatedness"*. A full scan costs 285,630 tokens. Four search runs cost 14–32% of that. The central chart (complexity ×6 against complicatedness ×35) was found in every run. A second diagram, *Managing complexity without getting complicated*, was found in one of three automatic runs, because Locate's choice of windows varies between runs; with windows set by hand it was found at 14% of the cost. Gemini reported times as positions in the full video.
+
+**Found while testing.** Gemini sometimes writes `10:55.000`. All seven matches in one window were dropped as unparseable, because `fetch_transcript._ts_to_ms` silently returns 0 for fractional seconds. The search has its own parser with a regression test. The test video's files were deleted after the measurement; the numbers are in SKILL.md.
+
+**Schema.** CLAUDE.md §Video stills gains a paragraph: when to search instead of scanning, where the outputs go, and that Process verifies search stills like any other. SKILL.md has the commands, a measurement table and failure modes; the skill description now covers finding a specific diagram.
+
 ## [2026-10-01] ingest | An agent eval built on camera, and what its headline number rested on
 
 The user sent one YouTube URL as a test of the stills pipeline: Google Cloud Tech's *AI Agent Clinic*, [[2026-09-30-zamora-feroz-why-your-ai-agent-fails-in-production]] (26:07, ASR). They supplied two screenshots as ground truth: a definition card and an architecture diagram. Their point was that the narration names terms that only the slides define.
