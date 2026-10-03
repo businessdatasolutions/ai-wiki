@@ -128,6 +128,14 @@ class ResolveTimes(unittest.TestCase):
         got = ss.resolve_times({"start": "10:20", "end": "10:10"}, self.WINDOW)
         self.assertEqual(got, (620.0, 620.0, "absolute"))
 
+    def test_minutes_past_99_are_read_not_dropped(self):
+        # Seen live 2026-10-03 on an 8-hour stream: for two windows Gemini wrote
+        # "127:09" for 2:07:09 and "345:36" for 5:45:36, and all 30 matches in
+        # them were skipped as unparseable.
+        window = {"start": 7629.0, "end": 8029.0}  # 2:07:09-2:13:49
+        got = ss.resolve_times({"start": "127:09", "end": "127:12.5"}, window)
+        self.assertEqual(got, (7629.0, 7632.5, "absolute"))
+
 
 class ParseWindowsArg(unittest.TestCase):
     def test_reads_comma_separated_ranges(self):

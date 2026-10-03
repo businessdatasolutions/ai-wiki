@@ -563,9 +563,10 @@ def _ts_to_ms(ts: str) -> int:
 
 
 # Gemini's timestamps: M:SS or H:MM:SS, sometimes with fractional seconds
-# ("10:55.000"). _ts_to_ms returns 0 for those, and its 0-on-failure is relied
+# ("10:55.000"), and past an hour sometimes as minutes only ("127:09" for
+# 2:07:09). _ts_to_ms returns 0 for those, and its 0-on-failure is relied
 # on by the chapter logic, so Gemini's output gets this parser instead.
-GEMINI_TS_RE = re.compile(r"^(?:(\d{1,2}):)?(\d{1,2}):(\d{2}(?:\.\d+)?)$")
+GEMINI_TS_RE = re.compile(r"^(?:(\d{1,2}):)?(\d+):(\d{2}(?:\.\d+)?)$")
 
 
 def ts_seconds(ts: str) -> float | None:
