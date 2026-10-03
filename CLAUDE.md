@@ -236,6 +236,15 @@ Gemini finds and reads the visuals, using static processing by default. Agentic 
 
 **Published stills are a deliberate, narrow exception** to the rule that raw binaries stay local for copyright reasons (`.gitignore`, §Acquire). The full set stays in `raw/`. Only stills that pass step 2 are published, each downscaled, credited to the channel and linked to its moment in the video. The wiki publishes a frame because the frame carries a claim, not to mirror the video.
 
+#### Multi-hour, multi-speaker livestreams: hub + spokes (added 2026-10-03)
+
+A conference livestream is a batch of short sources that share one URL, not one long source. Precedent: the 8:01:10, 37-talk [YC Root Access defense-tech day](wiki/sources/2026-09-30-yc-root-access-startup-industrial-base-dc.md).
+
+1. **Acquire once.** One raw transcript for the whole stream, with the chapters as headings; the [skill's §Long videos](.claude/skills/youtube-transcript-skill/SKILL.md) has the route and the gates. Do not ASR-clean it at Acquire: only the selected talks get cleaned, in their quotes.
+2. **Triage before Process.** Parallel readers score every chapter's AI relevance (0–3) against the concept list. A qmd pass (`wiki-query.mjs --no-bump`) then checks for a real neighbour; read a high score as a possible word match until the topics are seen to agree. **Show the table to the user before writing to `wiki/`.**
+3. **Hub:** one source page for the event, with one paragraph per talk and no `relationships:`. **Spokes:** one source page per selected talk, with `url: "…&t=<start>s"`, `raw:` pointing to the shared transcript, a `part-of` edge to the hub, and `length:` starting with the talk's own duration (the ▶ strip reads the first time it finds).
+4. **Draft in parallel, merge serially.** Drafting agents write to the scratchpad and propose edits to existing pages; one pass applies them, so pages that several spokes touch are written once.
+
 ### Pre-flight check (Zotero stubs): the YAML frontmatter contract
 
 Sources acquired from a local Zotero library via the [`zotero-acquire`](.claude/skills/zotero-acquire/SKILL.md) skill land at `raw/<type>/<slug>.md` with this frontmatter as the first block (the Acquire→Process contract, parallel to the videos contract above):

@@ -3,9 +3,9 @@ type: concept
 aliases: ["attack surface management", "ASM", "external attack surface", "EASM", "external attack surface management"]
 tags: [attack-surface-management, cybersecurity, infosec, exposure-management, shadow-it]
 confidence: 0.75
-last_confirmed: "2026-09-19"
-accessed_at: "2026-09-19"
-source_count: 6
+last_confirmed: "2026-10-03"
+accessed_at: "2026-10-03"
+source_count: 8
 relationships:
   - type: depends-on
     target: osint
@@ -109,3 +109,9 @@ It is titled *"Frontier AI models change the attack landscape"*, projected to fa
 If the series is right, it settles one half of [[2026-09-10-alim-pydata-ai-security-paradox-asymmetric-threats|Alim's]] argument. Once exploitation follows disclosure within a day, **no patch cycle that includes testing in lower environments can close the window**, and the detection-first posture this page describes has to assume exploitation is already under way. It also reframes ASM's purpose: continuous discovery of the exposed surface matters less for finding problems first than for knowing **what to isolate** when a disclosure lands.
 
 **Treat it with caution.** The slide cites **no source and no method** for a chart other pages will want to quote. It comes from an investor presentation by a security vendor, and its steepest drop coincides with a model release the vendor has reason to dramatise. The direction matches public time-to-exploit reporting; the specific values are Cloudflare's. [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Mozilla's]] defender-side results are the counterweight: the same class of model that shortens the attacker's window also found roughly 500 bugs in a month for a defender.
+
+## Embedded firmware: a surface with no login page (added 2026-10-03)
+
+This page's working definition covers assets an attacker can **observe from outside**: servers, subdomains, certificates, login panels. [[2026-09-30-chow-metalware-ai-firmware-vulnerability-research|Chow (Metalware), September 2026]] describes a surface outside that frame: the firmware in weapons platforms. A munition, drone or aircraft carries *"hundreds of small, essentially embedded computers"*, and he lists why securing them is harder: *"lack of updates, legacy code bases, … lack of access, … and obviously the dependency on having hardware in the loop."* The cyber requirements applied to them (RMF and ATO) were written for enterprise IT, and *"there are no login pages for … an aircraft or a munition."*
+
+Two consequences for this page. Discovery on this surface means reverse engineering the device rather than scanning what it exposes; Chow's company comes from offensive-security work for the US intelligence community and sells automation of those methods, not OSINT. And for the attacker-or-defender question in *Debates*, firmware that is rarely updated sits at the slow end of the patch-velocity variable that question turns on. Chow gives no numbers; it is a six-minute founder pitch.

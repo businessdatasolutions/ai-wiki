@@ -230,6 +230,18 @@ Query: *"diagrams on complexity vs complicatedness"*. Baseline: `extract_stills.
 - **Fractional timestamps.** Gemini sometimes answers `10:55.000`. `fetch_transcript._ts_to_ms` returns **0** for that (its `int()` fails silently), and a whole-number-only pattern rejects it: on 2026-10-03 all 7 matches in a window were dropped as "unparseable". Both scripts now read Gemini's times with `fetch_transcript.ts_seconds()`, which accepts fractions. `_ts_to_ms` keeps its 0-on-failure behaviour, which the chapter logic relies on. The full scan was fixed the same day: on 74 real timestamps from two earlier scans it gives identical results.
 - **A visual that starts before its window** is reported from the window's start (e.g. *on screen 7:25–8:34* for a chart up since 6:43). The frame at `end − 1s` is unaffected.
 - **Locate is not repeatable.** Same transcript, same query, different windows. Use `--locate-only` to inspect, and `--windows` to pin them.
+- **Minutes past 99 (fixed 2026-10-03).** Past an hour, Gemini sometimes writes minutes only: `127:09` for 2:07:09. `ts_seconds()` allowed two-digit minutes, so on an 8-hour stream all 30 matches in two of four windows were skipped as *"timestamps unparseable or outside the window"*. In the other two windows Gemini wrote `h:mm:ss`, which is why the run looked half-successful. `ts_seconds()` now accepts any number of minutes in the `M:SS` form; a test pins it. **The tell:** `NNN:SS` times in the manifest's `## Skipped` list.
+
+## Long videos (multi-hour, measured 2026-10-03)
+
+First run on an 8:01:10 conference livestream (YC Root Access, `T6hVGJ4gepk`, 37 talks). What held, and what to do differently from a normal video:
+
+- **Transcript: use yt-dlp captions, not the panel.** `_scroll_panel` stops after 40 jumps of 150 ms and nothing checks the last timestamp against `length_seconds`, so a multi-hour panel can come back silently truncated. `yt-dlp --skip-download --write-auto-subs --sub-langs en --sub-format vtt` fetched all 3.7 MB in under a second. Then build the file with this skill's own `to_markdown()` so the YAML contract and chapter headings match.
+- **VTT parse rule.** Keep the **last line of every real cue** and skip the ~10 ms hold cues. Do not select lines by their inline timing tag: a one-word line (`frontier.`) has no tag, and that test silently dropped 229 lines on this video. Unescape HTML entities (`&gt;&gt;` is the speaker-change marker).
+- **Gates before writing:** last segment within 10 min of the end; no gap over 3 min outside known breaks; no doubled `(time, text)` pairs; no a11y-label prefixes.
+- **Probe before Gemini.** `ffmpeg -ss <t> -i "$(yt-dlp -g -f <fmt> URL)" -frames:v 1` seeks the stream remotely: 18 frames across 8 hours took 34 s with no download. It showed which talks had slides at all; two stage firesides were dropped before any Gemini call.
+- **Stills: one `search_stills.py` run, pinned windows, `--no-fallback`, `--fps 1`.** Every run downloads the **whole** video (no section download yet), so put all windows in one run. Without `--no-fallback`, a window with no match triggers a whole-video call, about 2.7M tokens at the measured ~95 tokens/s. Four windows (39 min) cost 239,294 tokens; re-running two after the fix above cost 79,190. Total ≈ 12% of a full scan.
+- **Known, unfixed:** still numbers from 100 up (`100-…png`) escape the cleanup regex `^\d{2}-`; a run that big should be split.
 
 ## Failure modes
 

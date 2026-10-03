@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI benchmark", "AI benchmarks", "AI evaluation", "AI evals"]
 tags: [ai-benchmarks, ai-evaluation, foundation-models, capability-reliability-gap, scar-fragmentation]
 confidence: 0.92
-last_confirmed: "2026-09-16"
-accessed_at: "2026-09-16"
-source_count: 21
+last_confirmed: "2026-10-03"
+accessed_at: "2026-10-03"
+source_count: 24
 relationships:
   - type: depends-on
     target: reward-hacking
@@ -181,6 +181,8 @@ BFCL also supplies a **harness-design finding disguised as a benchmark result**:
 - **Capability vs reliability — released 2026 by [[2026-03-20-huggingface-agentic-evaluations-workshop|Narayanan / Princeton]].** Capability benchmarks measure best-run performance; reliability measures consistency. The two are orthogonal. The wiki's existing roster is heavily capability-skewed; the **Reliability Index** + **12 reliability sub-dimensions** is the proposed corrective. Open question whether the field adopts the orthogonality framing in 2026.
 - **Scar fragmentation — released 2026 by [[2026-03-20-huggingface-agentic-evaluations-workshop|Habib / Hugging Face]].** Naive cross-release benchmark comparisons are unreliable because scaffold/prompt/harness varies. **Community-eval** (versioned, hub-native, framework-bundled, PR-maintained) is the proposed corrective. Open whether community-eval scales — empirical adoption signal needed 6–12 months out.
 
+- **Test coverage of the operating envelope, outside software.** [[2026-09-30-luo-null-labs-synthetic-data-ai-testing|Luo (Null Labs, September 2026)]] says there is *"not really a common standard for testing AI and autonomous systems"* in US defense procurement, and that a live trial (20 drones, one time of day, clear skies) covers *"one aspect of the entire spectrum of the operational environment."* His proposed answer is synthetic test environments. Set beside this page's RLBench figures (89.4% in simulation, 12% on real household tasks), the open question is how a simulated test is validated against field results; the talk does not say. Founder pitch, no measurements.
+
 ## Related concepts
 
 - [[foundation-models]] — what's being benchmarked
@@ -238,3 +240,9 @@ Most of this page concerns **model** evaluation — public benchmarks, their sat
 **What gets measured is business outcome, not process.** *"I see companies measuring number of calls, or minutes during the call, or some superficial KPIs that give you some information but that doesn't really work. The important thing is: **did this customer convert? Is it bringing value to the customer, and is the customer happy to re-engage with us after a while?**"* On this account the eval is the conversion event itself, which is available to a marketplace and not available to most of the domains this page covers — a boundary condition worth stating rather than generalising past.
 
 **Unverified.** No eval suite, sample, cadence or failure rate is described, and the parity claim is a rule of thumb stated by an executive, not an audited budget line. See [[Kavak]] and [[agent-harness]].
+
+## Assurance across a model swap (added 2026-10-03)
+
+[[2026-09-30-murphy-koomen-diu-defense-ai-adoption|Murphy / DIU at YC Root Access, September 2026]] adds a case this page lacked: the model under a workflow changes **during an incident**, not at a planned upgrade. DIU's CTO says the department today builds *"qualitative confidence in the outputs of these systems"* and asks for *"AI assurance frameworks and benchmarking to those command critical workflows."* His test case is a failover. When a cloud model is lost and the workflow *"must fail over to a local model or a different model or a different cloud provider, are the outputs of that system still good?"* His answer is *"I don't know"*, unless the development-to-deployment cycle was managed so that the setup can be snapshotted and compared.
+
+This is the scar-fragmentation problem from [[2026-03-20-huggingface-agentic-evaluations-workshop|the Hugging Face workshop]] seen from the operator's side. Habib shows that a score moves when the scaffold changes; a failover changes the model itself. In the same interview [[Pete Koomen]] asks the planned-upgrade version: how to keep *"a set of evals on every successive model in order to actually adopt what is available."* Murphy names a DIU programme, captioned *Mystic Depot*, that tests models' refusals and guardrails and tailors them, and rules out guardrail-free models as an insider-threat risk. No method, metric or result is given; what the talk adds is the stated need, not a way to meet it.

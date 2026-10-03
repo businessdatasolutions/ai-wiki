@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-09-21"
-accessed_at: "2026-09-21"
-source_count: 31
+last_confirmed: "2026-10-03"
+accessed_at: "2026-10-03"
+source_count: 32
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -370,6 +370,8 @@ The contrast they draw is with **where the testing capacity sits**: *"there's no
 That gives the page two ideal types it had not named. In one, **the state tests** against content and technical benchmarks it sets, and the lab is the subject. In the other, **the lab tests itself** against risk categories it largely defines, and the state is mostly absent; this matches the platform-held governance authority described in the section on the fifteen-year drift above. Neither, as described, covers the other's gap. The Chinese regime puts political content control alongside safety in one gate, and the US arrangement depends on labs choosing to spend compute on it. The correspondents also report a **bilateral track** forming: experts on both sides calling for *"nuclear weapons-style safeguards"*, and AI safety expected on the agenda of Treasury Secretary Bessent's pre-summit talks with Vice Premier He Lifeng. How far that goes is not known to the wiki.
 
 **Limit.** This is reporting, with no pass rates, enforcement cases or benchmark contents. See [[ai-sovereignty]] for how it bears on the CGTN-sourced account of Chinese governance.
+
+**A third arrangement, as one US official describes it (added 2026-10-03).** [[2026-09-30-michael-miller-department-of-war-ai-adoption|Emil Michael]], US Under Secretary of War for Research and Engineering, describes a White House compact *"for the safe development of superintelligence"*, signed, as he lists them, by *"Jensen to Elon to OpenAI's leadership, Anthropic's leadership, Google"*. In his account the government convened the firms; they agreed to *"auditing and independent evaluations"*; and labs *"talking about risks"* should *"internalize those externalities"* by spending enough on *"the safety part of their model development process and model deployment process"*, all *"without sort of an overbearing regulatory scheme"*. As described, the state neither tests the models itself nor stays absent: it convenes, and the firms commit to evaluations by others. **Limit.** One participant's description, given the day after; the compact's text, who audits, and what happens when a model fails are not known to the wiki.
 
 
 ## The accountability critique, from outside the industry (added 2026-09-21)

@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-09-19"
-accessed_at: "2026-09-19"
-source_count: 43
+last_confirmed: "2026-10-03"
+accessed_at: "2026-10-03"
+source_count: 44
 relationships:
   - type: instance-of
     target: generative-ai
@@ -137,6 +137,8 @@ This is the **seller-side mirror** of Ognibeni's buyer-side warning that *"nobod
 [[2026-05-12-techlatest-hacker-search-engines-osint-tools-2026|TechLatest 2026]] names **"AI-Augmented Offensive & Defensive Security"** as an emerging 2026 category in which LLMs and AI agents are integrated with [[osint|OSINT]] platforms to correlate sources, identify exposures automatically, generate attack graphs, and automate reconnaissance workflows. This is the wiki's first source citing agents in a **cybersecurity/[[attack-surface-management]]** application — distinct from the coding-agent, enterprise-workflow, and agentic-commerce clusters that dominate the wiki's existing agent corpus.
 
 The claim is currently at vendor-narrative depth (no benchmarks, no named systems, no failure modes). Worth tracking: does OSINT become the first defensive-security domain to operationalise autonomous-agent workflows at scale, ahead of more cautious internal-IT use cases? The article asserts yes; the wiki has no empirical anchor yet either way.
+
+**A named system, outside security (added 2026-10-03).** [[2026-09-30-shah-sixtyfour-ai-investigation-agents|Shah / Sixtyfour, YC Root Access, September 2026]] supplies one of the missing pieces, a named product. Sixtyfour's "investigation agents" search public records, the clear web and the dark web; in Shah's words the agent *"will look at one piece of evidence and then go deeper and deeper and deeper until it can connect the pieces of information together"*, and it returns claims that each carry a source and a confidence score. The domain is not reconnaissance against a network but fraud and due diligence on people and organisations (Medicare hospice billing, contractor ownership, insider screening). Still no benchmarks or failure modes: the evidence is the founder's own six-minute demo.
 
 ### The human-agent collaboration reality (CIO chorus, June 2026)
 

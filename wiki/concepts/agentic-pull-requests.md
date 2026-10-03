@@ -3,9 +3,9 @@ type: concept
 title: Agentic pull requests
 aliases: ["agentic pull requests", "agentic PRs", "agent-authored PRs", "Agentic-PR", "auto-merge", "AI code review"]
 confidence: 0.85
-last_confirmed: "2026-09-28"
-source_count: 12
-accessed_at: "2026-09-28"
+last_confirmed: "2026-10-03"
+source_count: 13
+accessed_at: "2026-10-03"
 tags: [agentic-pr, aidev, auto-merge, code-review, rejection-rate, risk-scoring, msr-2026, merge-queue, review-bottleneck, technical-debt]
 relationships:
   - type: part-of
@@ -41,6 +41,8 @@ Nearly a million agent-authored PRs across 116k repositories is an established p
 ## The bottleneck moved
 
 Once agents author most changes, **review capacity — not authoring capacity — is the constraint.** [[2026-04-13-branco-lgtm-auto-merged-llm-agentic-prs]] opens on it: *"AI tools are generating code faster than humans can properly review it, leading repositories to skip review and auto-merge agentic PRs directly."* [[2026-08-05-vo-lennys-merge-mommy-ai-code-review-bot|Claire Vo]] built a bot for exactly this reason; [[2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder|Carson]] ships ~40 PRs a day with *"no QA team reviewing a single one."* [[2025-09-23-dora-2025-state-of-ai-assisted-software-development|DORA]] sees the consequence at survey scale: throughput's relationship with AI adoption turned positive in 2025 while **delivery stability's remained negative** — volume is no longer the problem; the delivery system's absorptive capacity is.
+
+[[2026-09-30-demaree-onebrief-ai-military-planning|Demaree (Onebrief CEO, YC Root Access, Sept 2026)]] names the constraint that came after authoring at one company. Once teams were *"good enough at delivering high-quality features that reliably work, they're now delivered so fast that the DevSecOps pipeline basically breaks because you're shipping PRs that are, you know, 180,000 lines of code."* His general rule is this section's: *"each time you unblock something, you earn the right to find out what the next blocker is."* The context is a reported 45x rise in feature delivery across Onebrief's best teams since January 2026, a self-report (see [[ai-coding-productivity-evidence]]). A single 180,000-line PR is a different regime from the small, focused PRs that [[2026-04-13-branco-lgtm-auto-merged-llm-agentic-prs|Branco et al.]] find auto-merged in public repositories, and the talk does not say how such PRs are reviewed or how the pipeline was fixed.
 
 ## What actually happens to them
 

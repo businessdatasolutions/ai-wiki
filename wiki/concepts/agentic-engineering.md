@@ -3,9 +3,9 @@ type: concept
 aliases: ["agentic engineering", "Agentic Engineering", "agentic-engineering", "agent engineering"]
 tags: [agentic-engineering, vibe-coding, software-3.0, ai-agents, agent-harness, software-engineering, hiring, karpathy, codex-case-study]
 confidence: 0.95
-last_confirmed: "2026-09-28"
-accessed_at: "2026-09-28"
-source_count: 62
+last_confirmed: "2026-10-03"
+accessed_at: "2026-10-03"
+source_count: 63
 relationships:
   - type: depends-on
     target: agent-harness
@@ -236,6 +236,8 @@ The pattern across all three is worth naming because it constrains this page's c
 - **Does the 10× → "much more than 10×" ceiling claim hold under measurement?** The wiki has not yet ingested an empirical study of agentic-engineer productivity distributions. Worth tracking.
 - **Is the multiplier conditional on existing skill, or unconditional?** [[2026-03-23-wu-an-yc-momentic-qa-layer-ai-coding-era|Wu / Momentic 2026]] argues *"Codex only makes you a 10x engineer if you weren't a 10x engineer to begin with"* — a direct rhetorical inversion of [[2026-05-20-tan-hu-stanford-cs153-ai-native-company-1000x-engineer|Tan & Hu / CS153 2026]]'s unconditional *1,000× engineer* framing. Filed as productive contradiction: both founders may be right at different conditionalities — Tan & Hu describe what *the best* engineer can now do unconditionally (the 5-day Posterous rebuild as worked example); Wu describes what *Codex deployed on the average engineer* produces. The wiki carries both anchors without resolving — adaptability, ambiguity-navigation, curiosity, and passion as meta-skills (Wu's framing) are not in tension with the unconditional-headline figure (Tan & Hu's framing) when the latter is read as *what the top of the distribution becomes capable of*.
 - **Is the discipline transferable across domains?** Karpathy's worked examples are all coding (Menu Gen, Twitter-clone interview, micro-GPT). The discipline should generalise to non-code domains (research synthesis, data analysis, design) — but that hasn't been tested at scale yet in the wiki's source corpus.
+
+- **A firm-level 45x, with the method unpublished (added 2026-10-03).** [[2026-09-30-demaree-onebrief-ai-military-planning|Demaree (Onebrief, YC Root Access)]] reports *"about a 45x increase in the rate of feature delivery to customers"* across Onebrief's best teams from January 2026 to the talk (September), after the company went agentic, and calls it measured. It bears on the open question above, whether the "far more than 10×" ceiling holds under measurement, but only as a self-report: the metric's definition, the baseline, the team selection and the method are not described. See [[ai-coding-productivity-evidence]].
 
 ## Related concepts
 

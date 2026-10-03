@@ -3,9 +3,9 @@ type: concept
 aliases: ["foundation model", "foundation models", "FM", "frontier model", "frontier models"]
 tags: [foundation-models, generative-ai, ai-research]
 confidence: 0.88
-last_confirmed: "2026-09-21"
-accessed_at: "2026-09-21"
-source_count: 27
+last_confirmed: "2026-10-03"
+accessed_at: "2026-10-03"
+source_count: 28
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -177,6 +177,8 @@ See [[small-language-models]] for the argument, the evidence, and where it does 
 - **Compute-scaling sustainability.** Data-commons shrinkage (see [[responsible-ai]]) plus rising energy demands (driving nuclear-energy partnerships — Microsoft's Three Mile Island, Google's SMRs, Amazon's SMRs) raise structural questions about the 5-month-compute-doubling trajectory continuing.
 - **Open-weight closing the gap.** As open-weight performance catches closed-weight, the policy logic for restricting model release weakens — but so does the commercial moat for closed-weight providers. Open question how 2025–2026 plays out.
 - **Pricing power yes-or-no.** [[2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going|Evans (May 2026)]] argues no (commodity-utility, AWS-not-Windows analogy); Sam Altman's *AI-on-a-meter* line presumes yes. The wiki has no settled position; the question is one of the load-bearing open questions of 2026 model-economics. *Evidence for "no" (2026-09-19):* [[2026-09-18-bloomberg-originals-how-china-plans-to-win-global-ai-race|Bloomberg Originals]] reports OpenAI launching GPT-5.6 Luna in July 2026 as its cheapest model and, per one customer, cutting prices by about 80% to match Chinese open models, which were ahead of US models on OpenRouter usage from June. A frontier lab repricing to meet open-weight competitors behaves like a commodity supplier, not a platform. It is one price move, and the same film shows the frontier labs keeping the top end (*"iPhone makes by far the most money"*), so the answer may be both: pricing power at the frontier, commodity pricing below it.
+
+- **Open weights catching up, on a withheld capability (added 2026-10-03).** The *Open-weight closing the gap* bullet asks how 2025–2026 plays out. [[2026-09-30-chow-metalware-ai-firmware-vulnerability-research|Chow (Metalware), September 2026]] relays an Anthropic report that an open-weight model now has Mythos-level cyber capability, with adversaries *"only a couple months behind the US capabilities on the frontier."* The report (not ingested) gives about **four months** behind the US frontier on NIST CAISI's aggregate cyber benchmarks, with US models tested with safeguards disabled, and 12% against Mythos Preview's 14% on one exploit benchmark. Unlike the percentage-point gaps in *Key claims*, this gap concerns a capability a lab chose not to release, and it is stated in time rather than score. Chow's *"a couple months"* is shorter than the report's figure.
 
 ## Related concepts
 

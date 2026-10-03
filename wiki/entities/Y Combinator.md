@@ -6,9 +6,9 @@ tags: [accelerator, venture-capital, silicon-valley, startup-school, startup-sch
 since: 2005
 website: "https://www.ycombinator.com"
 confidence: 0.95
-last_confirmed: "2026-09-28"
-accessed_at: "2026-09-28"
-source_count: 30
+last_confirmed: "2026-10-03"
+accessed_at: "2026-10-03"
+source_count: 37
 ---
 
 # Y Combinator
@@ -173,3 +173,7 @@ Also of institutional note: Tan's **"harness wars"** call for 2027 preceded [[20
 [[2019-08-16-seibel-yc-biggest-mistakes-first-time-founders-make|The Biggest Mistakes First-Time Founders Make (Michael Seibel, August 2019)]] is the oldest YC-channel source in the wiki and the only one from before generative AI. Seibel, then YC's CEO, lists eight first-year mistakes: a problem or users you don't care about, co-founders you don't know, unspoken co-founder tension, not launching (*"MVP built and launched in less than a month"*), no analytics, no idea where the first users come from, and *"sizzle over steak."* It is a reference point for the cluster above. [[2026-07-31-collison-yc-startup-school-is-ai-breaking-the-lean-startup-playbook|Collison at Startup School 2026]] questions the launch-early default, and [[2026-06-22-yc-kolysh-how-to-get-your-first-10-customers|Kolysh]] repeats the first-users advice.
 
 `source_count` recounted on this date to the 30 source pages that link here or carry a YC channel as `author:` (the stored figure had drifted to 20).
+
+## The Startup Industrial Base, Washington D.C. (added 2026-10-03)
+
+[[2026-09-30-yc-root-access-startup-industrial-base-dc|The Startup Industrial Base: Building for the Next 250]] is the eight-hour YC Root Access livestream of a YC event in Washington on 30 September 2026 about how small companies become suppliers to the US military: 37 founder pitches, panels and firesides with senior officials. It is the convener role recorded above, applied to a market outside software. YC people on stage: [[Garry Tan]] (opening remarks; fireside with Transportation Secretary Sean Duffy), Luther Lowe (head of public policy; MC and closing remarks), [[Pete Koomen]] (fireside with DIU's CTO Chris Murphy), Chris Golda (general partner; panel of four Fall 2026 defense founders), Vivian Shen (visiting partner; Senator Tim Sheehy), Tyler Bosmeny (Congressman Pat Ryan) and Olivia Marotte (partnerships; author Eric Alborg). Most of the pitching companies are YC companies, some of them mid-batch, so the standing caveat applies here too: the event presents YC's own portfolio. Six talks with AI content have their own source pages, linked from the event page.

@@ -3,9 +3,9 @@ type: concept
 aliases: ["jagged frontier", "jagged-frontier", "jagged technological frontier", "AI capability frontier", "jagged intelligence", "jagged skills", "jagged-intelligence", "animals vs ghosts", "ghosts not animals"]
 tags: [jagged-frontier, jagged-intelligence, AI-capabilities, knowledge-work, productivity, automation, augmentation, verifiability, animals-vs-ghosts]
 confidence: 0.95
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
-source_count: 20
+last_confirmed: "2026-10-03"
+accessed_at: "2026-10-03"
+source_count: 21
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -110,6 +110,8 @@ The car-wash example is now the wiki's canonical jaggedness illustration. It cap
 - **Identify which RL circuits your application sits in.** Verifiable + labs care → flies; otherwise → struggles.
 - **Build your own RL environments where labs aren't.** [[2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering|Karpathy 2026]]'s founder advice: *"If you are in a verifiable setting where you could create these RL environments or examples then that actually sets you up to potentially do your own fine-tuning and you might benefit from that. That is fundamentally technology that just works."*
 - **Stay in the loop**, treat models as tools, do not over-trust capability transfer across "similar-looking" tasks. This restates the Dell'Acqua observation in cause-and-effect form.
+
+- **A founder building the check function for a domain outside the circuits** (added 2026-10-03). [[2026-09-30-demaree-onebrief-ai-military-planning|Grant Demaree (Onebrief, YC Root Access, Sept 2026)]] makes the verifiability argument for military planning: *"what made that possible with AI was an error signal where you could tell is this code good or not through a fast feedback loop. That's generally missing in military operations. And our view is that the only way to get there is through simulation."* Onebrief's answer is a planet-scale, physics-based war-game simulation: AI-generated plans are played out in it, and an after-action review feeds the next version of the plan. The talk presents this as a loop for improving plans. It does not say whether models are trained or fine-tuned on it, and it reports no results. [[2026-03-11-allen-mcdonald-how-well-can-ai-do-strategy-simulation-benchmark|Allen & McDonald]] use a simulation the other way, as a benchmark, and found the newest frontier models regressing on a business strategy simulation.
 
 ### Cause-of-jaggedness: optimization vs satisficing — the cognitive-science floor ([[2026-06-25-guilbeault-stanford-gsb-what-ai-cant-do-and-why|Guilbeault / Stanford GSB 2026]])
 

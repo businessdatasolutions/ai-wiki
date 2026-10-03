@@ -3,8 +3,8 @@ type: concept
 aliases: ["industrial AI agents", "industrial agentic AI", "OT AI agents", "manufacturing AI agents"]
 tags: [industrial-ai-agents, ai-agents, ot-it-convergence, manufacturing, ontology, semantic-data-layer, knowledge-graph, unified-namespace, mqtt, scada, mes, cmms, qms, erp]
 confidence: 0.75
-last_confirmed: "2026-05-18"
-source_count: 3
+last_confirmed: "2026-10-03"
+source_count: 4
 relationships:
   - type: instance-of
     target: ai-agents
@@ -12,7 +12,7 @@ relationships:
   - type: depends-on
     target: agent-harness
     via: "the runtime layer is still required; industrial-AI agents add a semantic-data-layer dependency on top"
-accessed_at: "2026-09-18"
+accessed_at: "2026-10-03"
 quality_score: 1
 ---
 
@@ -116,6 +116,8 @@ Carrier walks the audience through **Rodney Brooks**'s shift from Sawyer (~2012,
 ### Synthetic data for rare-event training
 
 Brief worked example: a syringe-defect-detection neural net trained on synthetic defect data because real defects are too rare (the process is too good). *"Believe it or not, that defect was created by synthetic data. […] That's what allows us to train these neural nets very quickly without having to get hundreds of thousands of defects."*
+
+A second computer-vision case, outside manufacturing ([[2026-09-30-luo-null-labs-synthetic-data-ai-testing|Luo / Null Labs, YC Root Access, September 2026]]): targeting models whose accuracy falls when an adversary changes the target's appearance, with no real images of the new appearance to retrain on (*"We've got zero images for us to train our new AI system on"*). The founder's figures are 10,000 labeled images generated in 45 minutes against 2–4 weeks of real collection. Unlike Carrier, he names the method's own risk, *"You can overtrain on it … maybe learn synthetic artifacts"*, and judges the bigger risk to be fielding a model that fails. A founder pitch; no model results are given.
 
 ## Where this fits in the wider wiki
 

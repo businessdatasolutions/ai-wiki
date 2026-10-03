@@ -3,9 +3,9 @@ type: concept
 aliases: ["open source AI", "open-source AI", "open-weight models", "open weights", "open models", "own vs rent AI"]
 tags: [open-source-ai, open-weight-models, own-vs-rent, ai-sovereignty, concentration-of-power, china-open-models, safety-through-transparency, hugging-face]
 confidence: 0.9
-last_confirmed: "2026-09-21"
-accessed_at: "2026-09-21"
-source_count: 19
+last_confirmed: "2026-10-03"
+accessed_at: "2026-10-03"
+source_count: 23
 relationships:
   - type: supports
     target: ai-sovereignty
@@ -48,6 +48,8 @@ Per Hugging Face's own Spring 2026 report (cited in [[2026-07-10-hugging-face-ce
 ## Concentration of power as the top risk
 
 Delangue: "the biggest risk in AI is **concentration of power**." The AI companies becoming the most *valuable* are also becoming the most *powerful* (he cites an AI firm's leverage vis-à-vis the US Department of War); a world where "a few companies completely dominate AI" is "basically similar to if there were just one or two companies able to do software" — "the real dangerous scary scenario." Open source is the counter-force: it "enables innovation, competition, job creation; you don't create monopolies." The same logic drives his robotics argument — a home robot shouldn't be "a black box controlled by a few," "especially if these organizations' CEO is not the most stable person in the world."
+
+**A government voice on the same risk (added 2026-10-03).** [[2026-09-30-michael-miller-department-of-war-ai-adoption|Emil Michael]], US Under Secretary of War for Research and Engineering, describes a White House compact *"for the safe development of superintelligence"*, signed by AI-industry leaders the day before he spoke. What he hopes it does is *"ensure that we're not headed for some notion of regulatory capture by one or two companies in the AI, in the SI world. We are headed for a world where we're going to have a lot of competitors. We're going to promote open source."* And: *"What you never want is one or two companies sort of driving regulation that keeps the small companies out."* This is the corpus's first statement of the concentration argument from a sitting US official, alongside the platform-vendor (Delangue) and practitioner ([[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness|Ng]]) versions on this page. It is his account of the compact; the text has not been ingested, and by his account the leading labs signed it (see Debates).
 
 ## Two non-vendor routes to the same conclusion ([[2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company|BBC AI Decoded]] + [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey / Bloomberg]], August 2026)
 
@@ -168,6 +170,12 @@ He also names a motive that has no open-weights component at all: **cultural aut
 - **Two different drivers of the same behaviour, not yet disentangled.** Delangue and Huang argue firms move to open/owned models as **cost** bites at production scale; Grant argues they move for **IP protection and data control**; Frey argues states move for **strategic autonomy** under export-control and access-restriction risk. All three predict the same migration, so the page cannot currently distinguish them — and they imply different things about what would reverse it (cheaper frontier inference, better contractual data guarantees, and geopolitical détente respectively).
 - **The cost driver now has an observed reversal (2026-09-19).** Of the three drivers above, cost is the only one for which the corpus now records the reversing event. [[2026-09-18-bloomberg-originals-how-china-plans-to-win-global-ai-race|Bloomberg's]] Polsia case moved to Chinese open models when its frontier bill reached $1–1.5M a month. After OpenAI's GPT-5.6 Luna cut prices by about 80%, the same founder began testing the frontier model again. One case does not measure how elastic the migration is, but it shows the migration can be reversed on price alone, which the data-control and autonomy drivers would not predict.
 - **"Workloads move to open/owned" ≠ "frontier labs decline."** Delangue explicitly hedges that OpenAI/Anthropic can remain "the most valuable companies" on frontier reasoning even if most workloads run on open/owned models. The claim is about *where workloads run*, not frontier-lab viability — keep the two distinct.
+
+- **A cyber datapoint on open versus closed (added 2026-10-03).** [[2026-09-30-chow-metalware-ai-firmware-vulnerability-research|Chow (Metalware), September 2026]] relays an Anthropic report that Mythos-level capabilities are now *"available for download, open source, for all of our adversaries to use."* The report (Anthropic, 29 September 2026; read on the web, not ingested) concerns **GLM-5.3**, an *open-weight* model from Zhipu AI, so Chow's *open source* is the middle tier in this page's terms. It puts the model about four months behind the US frontier on NIST CAISI's cyber benchmarks, reports exploit-benchmark results close to Mythos Preview's (12% against 14% on ExploitBench), and finds its safeguards bypassed in 64–100% of tests. For the *open-vs-closed as a safety question* bullet above, it supplies dates: a lab withheld a model on cyber grounds in spring, and an open-weight model with similar measured results followed within about five months, by the withholding lab's own account. Delangue's side can read that as gating failing to hold; the closed-labs side as gating buying months. Ingest the report before other pages cite its figures.
+
+- **Does a compact signed by the leading labs check concentration or reflect it? (open, 2026-10-03)** [[2026-09-30-michael-miller-department-of-war-ai-adoption|Michael]] presents the White House superintelligence compact as a guard against *"regulatory capture by one or two companies"* and as support for open source. [[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness|Ng]] and [[2026-07-10-hugging-face-ceo-companies-done-renting-their-ai|Delangue]] place the capture risk in the influence of a few leading firms, and by Michael's account those firms signed the compact. The wiki holds only his description; the compact's text would show what it commits anyone to.
+
+- **An in-domain tune, as anecdote (2026-10-03).** [[2026-09-30-murphy-koomen-diu-defense-ai-adoption|Murphy (DIU CTO), YC Root Access, Sep 2026]] reports that a weekend of tuning *"a well-known US open weights model"* with a software vendor raised *"track detection"* from *"something like 40-something%"* to 78%, *"just trying it out."* It bears on the Huang-versus-Pisaneschi disagreement in §Two limits only partly. There is no frontier or purpose-built comparison, the metric and test set are not defined, and the model and vendor are unnamed. Murphy's own caveat, *"we also need to be very clear about what we lose when we do that,"* names a cost none of this page's sources measures: what tuning for one task takes away elsewhere.
 
 ## Related concepts
 

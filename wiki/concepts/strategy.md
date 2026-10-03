@@ -3,9 +3,9 @@ type: concept
 aliases: ["strategy", "business strategy", "corporate strategy", "competitive strategy"]
 tags: [strategy, strategic-planning, value-creation, value-capture, theory-of-winning, playing-to-win, value-stick, roger-martin, felix-oberholzer-gee, harvard-business-review]
 confidence: 0.92
-last_confirmed: "2026-09-21"
-accessed_at: "2026-09-21"
-source_count: 12
+last_confirmed: "2026-10-03"
+accessed_at: "2026-10-03"
+source_count: 13
 relationships:
   - type: supports
     target: strategic-foresight
@@ -217,6 +217,8 @@ Two further claims bear on this page:
 - **Two "10%" figures from the same research programme, measuring different things.** [[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage|Banholzer & LaBerge]] report that as few as 10% of organisations have *full alignment* on what their competitive advantage is. [[2026-09-08-west-lacroix-zimmerman-mckinsey-why-strategy-needs-mobilization|West et al.]] report that about 10% have *data* tracking the drivers of the advantage they claim (against ~57–60% who say they are confident). Both are verbal characterisations of McKinsey research the wiki has not ingested. They are compatible, since a firm can be aligned without data or have data without alignment, but they should not be cited interchangeably. (Added 2026-09-21.)
 - **Where the strategy failure sits: design or passage.** Martin and Oberholzer-Gee locate the failure in the *strategy* (a plan mistaken for a theory of winning; value capture pursued before value creation). [[2026-09-08-west-lacroix-zimmerman-mckinsey-why-strategy-needs-mobilization|West et al.]] locate the larger differentiator *after* design: the climbers on McKinsey's power curve were better at all three stages but "most differentiated by their ability to mobilize". The two readings meet in Zimmerman's claim that "it is difficult to mobilize vague strategy", which makes a good design a precondition for mobilization rather than a rival explanation. The measurement that separates mobilization from execution in McKinsey's comparison is not described, so this is not settled. (Added 2026-09-21.)
 - **No supersession events.** Two sources in the same year (2022); they're complementary rather than competing. Future ingest of *Playing to Win* (Lafley & Martin 2013) and *Better, Simpler Strategy* (Oberholzer-Gee 2021) would deepen but not retire either framing.
+
+- **A practitioner's planning loop beside a measured regression.** [[2026-09-30-demaree-onebrief-ai-military-planning|Demaree (Onebrief, YC Root Access)]] describes AI-generated military plans played out in a physics-based war-game simulation, with after-action reviews fed back *"again and again until you've achieved true superhuman decisions"*, and estimates the value of superhuman command and control as *"closer to a 10x"* increase in force structure, his own estimate. [[2026-03-11-allen-mcdonald-how-well-can-ai-do-strategy-simulation-benchmark|Allen & McDonald]] measured mid-to-late-2025 frontier models on a business strategy simulation and found them below earlier models and MBA students. The two do not test the same thing: the paper scores single runs of models given structured information; Onebrief iterates plans through a simulator, and the talk reports no results. Whether such a loop corrects an exploitation bias of the kind the paper found is open. (Added 2026-10-03.)
 
 ## Related concepts
 

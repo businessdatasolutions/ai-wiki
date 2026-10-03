@@ -6,9 +6,9 @@ tags: [garry-tan, y-combinator, gstack, gbrain, ai-founder-type, startup-school,
 affiliation: "[[Y Combinator]]"
 role: "President & CEO, Y Combinator (since 2023); founder/engineer; ex-Palantir #10; Posterous co-founder"
 confidence: 0.95
-last_confirmed: "2026-09-28"
-accessed_at: "2026-09-28"
-source_count: 8
+last_confirmed: "2026-10-03"
+accessed_at: "2026-10-03"
+source_count: 9
 ---
 
 # Garry Tan
@@ -144,3 +144,7 @@ SORT file.name ASC
 ## The "20x company" framing (added 2026-09-28)
 
 [[2026-02-14-tan-yc-the-new-way-to-build-a-startup|The New Way To Build A Startup (YC, Feb 2026)]]: Tan names startups that automate all internal functions *"20x companies"* (a term from GigaML's founders), presents them as an evolution of Parker Conrad's "compound startup", and lists three patterns: AI teammate, one source of truth, and a custom agent per employee.
+
+## Opening YC's defense event (added 2026-10-03)
+
+At [[2026-09-30-yc-root-access-startup-industrial-base-dc|The Startup Industrial Base]] in Washington (30 September 2026), Tan's opening remarks carry his argument beyond software: *"software has left the screen. It can see, it can navigate, it can fly, it can run entire factories"*, and most of it, built for commercial reasons, *"can be pointed at defense."* YC came to Washington, he says, because *"we followed the founders"*, and he sets the day's question: *"What would it take for a 20 person company to become a dependable supplier to the American military?"* Later he interviews Transportation Secretary Sean Duffy and raises the safety of autonomy, citing a study in which self-driving cars reduce injuries by as much as 90%. Wardstone's founder names Tan as the company's YC partner. The event has no agent or harness content; it is the only source on this page about hardware and government buyers.

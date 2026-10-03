@@ -3,9 +3,9 @@ type: concept
 title: AI coding productivity — the evidence
 aliases: ["AI coding productivity", "AI developer productivity", "developer productivity evidence", "productivity paradox in coding", "throughput vs stability"]
 confidence: 0.85
-last_confirmed: "2026-09-19"
-source_count: 9
-accessed_at: "2026-09-19"
+last_confirmed: "2026-10-03"
+source_count: 10
+accessed_at: "2026-10-03"
 tags: [rct, productivity, metr, copilot, dora, throughput, delivery-stability, perception-gap, heterogeneity, seniority, measurement]
 relationships:
   - type: part-of
@@ -103,6 +103,8 @@ This page should record it as **self-report, not measurement**, and the reason i
 The organisational evidence offered alongside is more interesting and comes with its own caveat, stated by the speaker: a quarter of the W25 batch had codebases that were **95% AI-generated**, and that batch is *"on track to becoming one of the fastest growing, most profitable batches in the history of YC."* He then says the right thing: *"I know what a correlation is… I cannot prove that the AI generated code and everything else caused the growth."* What he claims instead is a behavioural difference — *"the fastest growing founders we fund are not treating AI as autocomplete. They are treating it as a workforce"* — which is a hypothesis this page has no instrument to test, from a sample selected on success.
 
 Worth holding against [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey]] and the wider return-gap cluster: vivid individual gains coexisting with absent aggregate productivity growth is precisely the pattern those sources exist to explain, and this source is a data point *inside* that puzzle rather than a refutation of it. See [[micro-productivity-trap]].
+
+**A second organisational multiple, described as measured (added 2026-10-03).** [[2026-09-30-demaree-onebrief-ai-military-planning|Grant Demaree, CEO of Onebrief, at YC Root Access (Sept 2026)]] reports *"about a 45x increase in the rate of feature delivery to customers"* across *"our best teams"*, *"from January of this year to present"* (about nine months), after *"transforming our own company into agentic"*. It differs from Tan's figure in two ways: the metric is features delivered to customers rather than lines of code, and he says *"we measured"*. What was measured is not described: no definition of a feature, no baseline, no count of teams or account of how the best were chosen, no defect or quality measure, and no separation of the company's own changes from the model releases of the same months. It belongs with self-report for the same structural reason as Tan's: one firm's before-and-after figure on a selected subset, with no published method. The consequence he describes is the more concrete claim: the delivery pipeline broke under 180,000-line pull requests (see [[agentic-pull-requests]]).
 
 ## Output indicators at population scale, and two costed rebuilds (added 2026-09-19)
 

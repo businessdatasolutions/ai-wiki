@@ -5,9 +5,9 @@ aliases: ["Anthropic", "Anthropic PBC", "Claude"]
 tags: [anthropic, ai-lab, foundation-models, claude, public-benefit-corporation, long-term-benefit-trust]
 since: 2021
 confidence: 0.95
-last_confirmed: "2026-09-28"
-accessed_at: "2026-09-28"
-source_count: 31
+last_confirmed: "2026-10-03"
+accessed_at: "2026-10-03"
+source_count: 34
 ---
 
 # Anthropic
@@ -68,6 +68,8 @@ Two details worth recording about Anthropic specifically. First, the compliance 
 
 Sundararajan's reading of what it portends is explicitly provisional — *"we're going to be making it up as we go along, and it's going to be both the government doing that and the platforms doing it."* **Caveat:** this is an interview account, recalled from memory, with no document cited. The wiki has not ingested primary reporting on the restriction, and Anthropic's own account of it is not represented here at all. See [[responsible-ai]] for the governance-authority framing and [[ai-sovereignty]] for the state-capacity one.
 
+**After the restriction: an open-weight match, as relayed (added 2026-10-03).** [[2026-09-30-chow-metalware-ai-firmware-vulnerability-research|Chow (Metalware), at YC Root Access on 30 September 2026]], told a defense audience that Anthropic *"published a report literally yesterday saying that Mythos-level capabilities are now available for download, open source, for all of our adversaries to use, with similar performance to Mythos."* The report he means appears to be Anthropic's post of 29 September 2026, *GLM-5.3 and the spread of advanced cyber capabilities* (read on the web 2026-10-03, not ingested). It compares Zhipu AI's open-weight GLM-5.3 with Mythos Preview on exploit benchmarks and argues for giving defenders wider access to Claude's cyber capabilities. If that identification holds, the sequence on this page has a third step: the company that withheld Mythos is now the one documenting a comparable capability in someone else's downloadable model. The wiki holds a forecast of this, from [[2026-05-21-jones-stanford-gsb-ai-and-our-economic-future|Jones]] on 1 May (*"in six months, in a year"*), and an earlier version of the claim, from [[2026-05-05-loukides-radar-trends-may-2026|Loukides's May digest]].
+
 ## A model release that triggered an architecture demolition (added 2026-09-16)
 
 [[2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai|Maza / Kavak, August 2026]] supplies an unusual datapoint about what a model release does downstream. Kavak had *"tens of thousands"* of function-decomposed agents running its business at scale. Then, in Maza's account, **Opus 4.5** changed the right architecture:
@@ -89,6 +91,8 @@ The two framings are at different layers (governance vs operating-structure) but
 
 - [[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over]] — IBM's CEO agrees with Anthropic that LLMs are good at translating legacy code such as COBOL, but disputes the inference that this threatens the mainframe: mainframes are used for transaction volume, not because of language lock-in.
 - [[2026-09-18-swisher-lafrance-atlantic-festival-tech-economy-is-ai-reshaping-america]] — Kara Swisher predicts the seven frontier labs will consolidate to two, and names Anthropic as *"probably"* one of the survivors alongside Google. Opinion, no figures.
+
+- [[2026-09-30-michael-miller-department-of-war-ai-adoption]] — US Under Secretary of War Emil Michael names *"Anthropic's leadership"* among those who signed a White House compact *"for the safe development of superintelligence"* the day before the YC event (livestream published 30 September 2026), committing, in his account, to *"auditing and independent evaluations"*. His description only; the compact's text is not in the wiki. It is the wiki's second account this quarter of Anthropic in US AI governance, after the Mythos sequence above.
 
 ## Mentioned in
 

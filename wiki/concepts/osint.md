@@ -3,9 +3,9 @@ type: concept
 aliases: ["OSINT", "open-source intelligence", "open source intelligence"]
 tags: [osint, cybersecurity, infosec, reconnaissance, attack-surface, threat-intelligence]
 confidence: 0.75
-last_confirmed: "2026-05-18"
-accessed_at: "2026-07-14"
-source_count: 2
+last_confirmed: "2026-10-03"
+accessed_at: "2026-10-03"
+source_count: 3
 relationships:
   - type: part-of
     target: attack-surface-management
@@ -56,6 +56,8 @@ The standard five-step workflow combines them: *(1) infrastructure discovery →
 
 TechLatest 2026 names **"AI-Augmented Offensive & Defensive Security"** as a 2026 category emerging from integrating LLMs and [[ai-agents]] with OSINT pipelines. Stated capabilities: correlate multiple OSINT sources, identify risky exposures automatically, generate attack graphs, detect infrastructure relationships, automate reconnaissance workflows. This is the one current bridge from the OSINT corpus into the wiki's broader [[agent-harness]] / autonomous-agent thread — though the claim is still at vendor-narrative depth, not empirically anchored.
 
+**A named system (added 2026-10-03).** [[2026-09-30-shah-sixtyfour-ai-investigation-agents|Shah / Sixtyfour, YC Root Access 2026]] presents one AI-OSINT product rather than the category. Sixtyfour's "investigation agents" combine *"open source intelligence, the dark web, clear web"* and return *"claims that are source backed and scored for really high confidence"*. The uses named point OSINT at people and organisations rather than at an organisation's own infrastructure: who really owns a contractor, screening for North Korean (DPRK) infiltrators, what people publish that adversaries could abuse, and Medicare hospice fraud, shown on one closed and one live case. In the live case, four hospices presenting as independent trace to three clusters through a shared phone number and email domain, same-day incorporation at adjacent suites, and a dissolved company still listed as an active federal provider. It shares [[2026-04-10-khan-osint-information-gathering-like-a-hacker|Khan 2026]]'s premise that the facts were public and had not been joined up. It is a six-minute founder pitch: no benchmark, no error rate.
+
 ### Defensive OSINT as standard practice
 
 Both wiki sources frame OSINT as a *defender's* discipline first. Best-practice claims (TechLatest 2026): continuously monitor your own attack surface; track credential leaks affecting employees; audit public repositories for secrets / API keys / tokens; track shadow IT; automate recon into SIEM and SOC pipelines. Khan 2026's closing call is the same at narrative scale: *"Run a simple OSINT audit on your own organization. […] The attackers are already doing this. Now you can too — defensively."*
@@ -68,6 +70,8 @@ OSINT is legal by construction (only public data), but the *use* of that data ca
 
 - **Open question — depth of the AI-OSINT claim.** TechLatest 2026 names "AI-Augmented Offensive & Defensive Security" as a 2026 category but the supporting detail is taxonomy-level, not empirical. The wiki has substantial primary-source depth on [[agent-harness]] and autonomous-agent runtimes but no source yet that benchmarks AI-augmented OSINT specifically. Future ingests would tell us whether this is a substantive emerging category or a vendor-narrative buzzword.
 - **No supersession events yet.** This is a young concept page on a topic the wiki has just started covering.
+
+- **AI-OSINT depth, one step on (2026-10-03).** [[2026-09-30-shah-sixtyfour-ai-investigation-agents|Shah / Sixtyfour]] adds a named system and two worked cases to the category TechLatest named. The open question above is unchanged in substance: the evidence is a founder's own demo, with no benchmark, error rate or account of how its confidence scores are computed, and its claim that the findings appear in *"none of"* the news or case filings was not checked. The talk does not address the authorization and privacy envelope set out on this page, although several of its uses concern individuals (personnel exposure, clearance-style vetting, insider screening).
 
 ## Related pages
 

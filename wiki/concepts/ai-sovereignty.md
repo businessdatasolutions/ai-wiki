@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI sovereignty", "sovereign AI", "digital sovereignty", "strategic autonomy in AI", "cultural autonomy", "full-stack sovereignty"]
 tags: [ai-sovereignty, sovereign-ai, digital-sovereignty, strategic-autonomy, own-vs-rent, cultural-autonomy, export-controls, industrial-policy, platform-governance, data-sovereignty]
 confidence: 0.85
-last_confirmed: "2026-09-21"
-accessed_at: "2026-09-21"
-source_count: 9
+last_confirmed: "2026-10-03"
+accessed_at: "2026-10-03"
+source_count: 12
 relationships:
   - type: supports
     target: open-source-ai
@@ -113,3 +113,9 @@ Laurie Chen (Reuters) adds the view from outside both blocs: *"the vast majority
 ## Query location as a reason to run models on premise (added 2026-09-21)
 
 [[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over|Krishna / IBM on Bain's Winning with AI, September 2026]]. IBM's CEO gives a sovereignty reason for open-weight, on-premise deployment in plain commercial terms: *"because of geopolitics people outside the US may worry a lot about where their queries and data is going."* It is the enterprise-level version of the page's national-level argument: control over where inference happens, not only over who trains the model. Krishna offers it alongside IP protection and cost, and does not rank the three.
+
+## Continuity under disruption as a reason to own (added 2026-10-03)
+
+[[2026-09-30-murphy-koomen-diu-defense-ai-adoption|Murphy / DIU at YC Root Access, September 2026]]. The CTO of the Pentagon's Defense Innovation Unit gives a motive this page had not recorded: keeping a service running when the link to a cloud model or provider is lost. Asked whether DIU uses open-weight models for that failover, he answers *"absolutely, right, there's been a big push about sovereign, owning your AI, owning your model, having confidence in that."* The last clause is the part the other motives on this page do not raise. Holding a fallback model is not enough; the organisation also has to know the fallback gives good answers: *"are the outputs of that system still good? And the answer might be I don't know unless I've managed a very deliberate development to deployment cycle where I can snapshot that."* On this account, owning a model brings an evaluation cost with it (see [[ai-benchmarks]]).
+
+His sourcing fits claim 2's per-capability logic: DIU works with frontier labs and also with people *"tuning models specifically for the government"* and *"distilling models for use cases on the edge."* He gives one result, a weekend of tuning a US open-weights model that raised a track-detection score from about 40% to 78% (caveats on [[open-source-ai]]). That is task performance, not the cultural-autonomy instrument asked about in *Debates*. A government official speaking to prospective vendors; no programme results are given.
