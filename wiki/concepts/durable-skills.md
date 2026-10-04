@@ -15,7 +15,7 @@ relationships:
   - type: depends-on
     target: ai-benchmarks
     via: "measurement methodology — Vantage and similar protocols define new benchmark types for human skills (not model capability)"
-accessed_at: "2026-09-19"
+accessed_at: "2026-10-04"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---

@@ -1,0 +1,2450 @@
+{
+ "question": {
+  "original": "Wat wordt er gezegd over human resources en talent management in relatie tot AI?",
+  "restated": "Wat zegt de wiki over hoe AI talent, vaardigheden en HR-praktijk verandert, en over AI binnen HR-processen zelf?",
+  "facets": [
+   "F1 — hoe AI de vraag naar talent en vaardigheden verandert (banen, instroom, duurzame vaardigheden)",
+   "F2 — hoe HR en management reageren (werving, bijscholing, functie- en werkontwerp)",
+   "F3 — AI toegepast binnen HR-processen zelf (werving, beoordeling, agents in de organisatie)"
+  ],
+  "language": "nl"
+ },
+ "params": {
+  "seeds": 12,
+  "hops": 1,
+  "fusion": "rrf",
+  "graph_rank": "bfs",
+  "k_rrf": 60,
+  "graph_w": 0.5,
+  "alpha": 0.7,
+  "ppr_damping": 0.5,
+  "conf_floor": 0.6,
+  "today": "2026-10-04"
+ },
+ "graph_available": true,
+ "graph_warning": null,
+ "candidates": [
+  {
+   "slug": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+   "path": "wiki/sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening.md",
+   "type": "source",
+   "title": "Hoe AI de sectoren IT en zakelijke dienstverlening verandert",
+   "qmd_rank": 1,
+   "qmd_score": 0.81,
+   "graph": [],
+   "retrieval_reasons": [
+    "qmd rank 1 (score 0.81)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.016393,
+   "fused_score": 0.94,
+   "verdict": "ignore",
+   "reason": "NL occupational-exposure scoring; its finding is summarised in W1 §The Netherlands sectoral vantage, and it scores exposure rather than talent practice",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+   "path": "wiki/sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity.md",
+   "type": "source",
+   "title": "The Biggest AI Opportunity Isn't Replacing People | Stanford Economist",
+   "qmd_rank": 2,
+   "qmd_score": 0.57,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services",
+     "edge_type": "supports",
+     "via": "the same structural forecast reached independently two days apart on two McKinsey channels and named with the same geometry — Brynjolfsson's 'the pyramid in lots of companies is becoming more of a diamond and that base isn't there anymore' against Heimes's diamond-shaped GBS talent model, both drawing the same consequence that the middle and senior ranks lose their supply route",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era",
+     "edge_type": "contradicts",
+     "via": "the same question — what is happening to entry-level employment right now — answered from survey/interview evidence and from payroll data ten days apart, in different directions. Brown: 'the most dire headlines about entry-level jobs are not yet backed up by data', citing organisations increasing entry-level hiring. Brynjolfsson, from ADP payroll records: employment for workers aged 22-26 in the most AI-exposed occupations fell ~13% at first measurement and is now 'up to 16 or 17%', an effect 'kind of growing over time'. The disagreement turns on the evidence base (what employers say they intend, versus what payroll shows they did) and on scope (all entry-level roles versus the top exposure quintile)",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai",
+     "edge_type": "supports",
+     "via": "both state that entry-level employment has fallen. Brynjolfsson measures it in ADP payroll records for workers aged 22–26 in the most AI-exposed occupations; Sundararajan states it without measurement and names three candidate causes — generative AI absorbing routine cognitive work, employer uncertainty producing hiring pauses, and COVID-era remote restructuring lowering the return on junior hires",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "qmd rank 2 (score 0.57)",
+    "graph: sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services <--supports<-- this (1 hop)",
+    "graph: sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era -->contradicts--> this (1 hop)",
+    "graph: sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.016129,
+   "fused_score": 0.925,
+   "verdict": "use",
+   "reason": "qmd #2; McKinsey Talks Talent episode, directly on talent",
+   "reason_class": null,
+   "promoted": null,
+   "anchor": "W3"
+  },
+  {
+   "slug": "sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services",
+   "path": "wiki/sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services.md",
+   "type": "source",
+   "title": "Agentic AI and the Future of Global Business Services",
+   "qmd_rank": 3,
+   "qmd_score": 0.56,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "supports",
+     "via": "the same structural forecast reached independently two days apart on two McKinsey channels and named with the same geometry — Brynjolfsson's 'the pyramid in lots of companies is becoming more of a diamond and that base isn't there anymore' against Heimes's diamond-shaped GBS talent model, both drawing the same consequence that the middle and senior ranks lose their supply route",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era",
+     "edge_type": "supports",
+     "via": "both name the entry-level rung as the binding constraint rather than a side effect — Peters's 'if a lot of that layer of talent goes away, we're going to have to come up with new mechanisms to train people' and Brown's 'employers are asking for seven times greater seniorized skills… it's not going to happen by osmosis' are the same problem stated from consulting-operations and workforce-research vantages three weeks apart",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "qmd rank 3 (score 0.56)",
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity -->supports--> this (1 hop)",
+    "graph: sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.015873,
+   "fused_score": 0.91,
+   "verdict": "ignore",
+   "reason": "the diamond talent model and the entry-level rung are carried by W3 and W5, which both cite it",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+   "path": "wiki/sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs.md",
+   "type": "source",
+   "title": "The new human-machine workforce: How agentic AI will transform jobs",
+   "qmd_rank": 4,
+   "qmd_score": 0.54,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero",
+     "edge_type": "supports",
+     "via": "Convergent on the **HR-redeployment-as-augmentation** worked-example pattern at SME altitude. Scheffer (HelloPrint Dutch SME) cut customer-service from ~100 to 18 with AI delivering quality *'beter dan het niveau waarop mensen het kunnen doen'*; Russell (HubSpot CPO, US, ~9,000-employee scale) redeployed 10 HR staff from interview-scheduling to employee-satisfaction and individual-development work. Different scales (Dutch €80M SME vs US-mid-cap), different geographies, same operational pattern: agents take the rules-based work, humans take the judgment-bearing redeployment. Convergent with [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen / AWS]]'s *humans on judgment work, agents on execution work* line.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "qmd rank 4 (score 0.54)",
+    "graph: sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.015625,
+   "fused_score": 0.896,
+   "verdict": "ignore",
+   "reason": "its layoff anchor and critical-thinking demand are distilled in W1 and W2",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai",
+   "path": "wiki/sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai.md",
+   "type": "source",
+   "title": "Redefining What Efficiency Means in the Age of AI",
+   "qmd_rank": 5,
+   "qmd_score": 0.45,
+   "graph": [],
+   "retrieval_reasons": [
+    "qmd rank 5 (score 0.45)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.015385,
+   "fused_score": 0.882,
+   "verdict": "ignore",
+   "reason": "efficiency as quality per unit time: work measurement, not talent or HR",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era",
+   "path": "wiki/sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era.md",
+   "type": "source",
+   "title": "AI and Jobs series: How entry level jobs are changing in an AI era",
+   "qmd_rank": 6,
+   "qmd_score": 0.45,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "contradicts",
+     "via": "the same question — what is happening to entry-level employment right now — answered from survey/interview evidence and from payroll data ten days apart, in different directions. Brown: 'the most dire headlines about entry-level jobs are not yet backed up by data', citing organisations increasing entry-level hiring. Brynjolfsson, from ADP payroll records: employment for workers aged 22-26 in the most AI-exposed occupations fell ~13% at first measurement and is now 'up to 16 or 17%', an effect 'kind of growing over time'. The disagreement turns on the evidence base (what employers say they intend, versus what payroll shows they did) and on scope (all entry-level roles versus the top exposure quintile)",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services",
+     "edge_type": "supports",
+     "via": "both name the entry-level rung as the binding constraint rather than a side effect — Peters's 'if a lot of that layer of talent goes away, we're going to have to come up with new mechanisms to train people' and Brown's 'employers are asking for seven times greater seniorized skills… it's not going to happen by osmosis' are the same problem stated from consulting-operations and workforce-research vantages three weeks apart",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai",
+     "edge_type": "contradicts",
+     "via": "both state a position on whether the entry-level hiring slowdown is established. Brown, from a WEF–PwC employer survey: 'dare I say sometimes those headlines aren't backed up by evidence and data', citing organisations increasing entry-level hiring by 25%. Sundararajan: 'I don't think there's a lot of debate, at least in the United States, that there has been a slowdown in entry-level hiring. I think there is a very vibrant debate about what's causing it.' Same podcast channel, seven weeks apart",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "qmd rank 6 (score 0.45)",
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity <--contradicts<-- this (1 hop)",
+    "graph: sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services <--supports<-- this (1 hop)",
+    "graph: sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai -->contradicts--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.015152,
+   "fused_score": 0.869,
+   "verdict": "use",
+   "reason": "qmd #6; entry-level talent pipeline, with a typed contradiction to W3",
+   "reason_class": null,
+   "promoted": null,
+   "anchor": "W5"
+  },
+  {
+   "slug": "sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai",
+   "path": "wiki/sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai.md",
+   "type": "source",
+   "title": "What I tell my Stern Business School students on how to thrive in the age of AI",
+   "qmd_rank": 7,
+   "qmd_score": 0.44,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "supports",
+     "via": "both state that entry-level employment has fallen. Brynjolfsson measures it in ADP payroll records for workers aged 22–26 in the most AI-exposed occupations; Sundararajan states it without measurement and names three candidate causes — generative AI absorbing routine cognitive work, employer uncertainty producing hiring pauses, and COVID-era remote restructuring lowering the return on junior hires",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era",
+     "edge_type": "contradicts",
+     "via": "both state a position on whether the entry-level hiring slowdown is established. Brown, from a WEF–PwC employer survey: 'dare I say sometimes those headlines aren't backed up by evidence and data', citing organisations increasing entry-level hiring by 25%. Sundararajan: 'I don't think there's a lot of debate, at least in the United States, that there has been a slowdown in entry-level hiring. I think there is a very vibrant debate about what's causing it.' Same podcast channel, seven weeks apart",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "qmd rank 7 (score 0.44)",
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity <--supports<-- this (1 hop)",
+    "graph: sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era <--contradicts<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.014925,
+   "fused_score": 0.856,
+   "verdict": "ignore",
+   "reason": "career advice to students; its skills points are covered by W2 and W5",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero",
+   "path": "wiki/sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero.md",
+   "type": "source",
+   "title": "Ondanks 80 miljoen omzet gooit Hans Scheffer zijn bedrijf volledig om met AI: 'Elke kantoorbaan voor een scherm verdwijnt'",
+   "qmd_rank": 8,
+   "qmd_score": 0.42,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+     "edge_type": "supports",
+     "via": "Convergent on the **HR-redeployment-as-augmentation** worked-example pattern at SME altitude. Scheffer (HelloPrint Dutch SME) cut customer-service from ~100 to 18 with AI delivering quality *'beter dan het niveau waarop mensen het kunnen doen'*; Russell (HubSpot CPO, US, ~9,000-employee scale) redeployed 10 HR staff from interview-scheduling to employee-satisfaction and individual-development work. Different scales (Dutch €80M SME vs US-mid-cap), different geographies, same operational pattern: agents take the rules-based work, humans take the judgment-bearing redeployment. Convergent with [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen / AWS]]'s *humans on judgment work, agents on execution work* line.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "qmd rank 8 (score 0.42)",
+    "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.014706,
+   "fused_score": 0.843,
+   "verdict": "use",
+   "reason": "qmd #8; Dutch employer case with a concrete headcount change",
+   "reason_class": null,
+   "promoted": null,
+   "anchor": "W9"
+  },
+  {
+   "slug": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+   "path": "wiki/sources/2025-06-09-krakowski-human-centered-ai-field-experiment.md",
+   "type": "source",
+   "title": "Human-Centered Artificial Intelligence: A Field Experiment",
+   "qmd_rank": 9,
+   "qmd_score": 0.4,
+   "graph": [],
+   "retrieval_reasons": [
+    "qmd rank 9 (score 0.40)"
+   ],
+   "stored_confidence": 0.85,
+   "accessed_at": null,
+   "last_confirmed": "2026-05-25",
+   "days_since_access": null,
+   "effective_confidence": 0.85,
+   "rrf_score": 0.014493,
+   "fused_score": 0.831,
+   "verdict": "use",
+   "reason": "qmd #9; peer-reviewed field experiment whose levers are HR levers (procedure, authority, training, incentives)",
+   "reason_class": null,
+   "promoted": null,
+   "anchor": "W8"
+  },
+  {
+   "slug": "sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great",
+   "path": "wiki/sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great.md",
+   "type": "source",
+   "title": "\"On Making Organizational Culture Great,\" with Professor Glenn Carroll",
+   "qmd_rank": 10,
+   "qmd_score": 0.39,
+   "graph": [],
+   "retrieval_reasons": [
+    "qmd rank 10 (score 0.39)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.014286,
+   "fused_score": 0.819,
+   "verdict": "ignore",
+   "reason": "its hiring finding is used through W1 §AI reshapes hiring at the job-definition layer",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/automation-vs-augmentation",
+   "path": "wiki/concepts/automation-vs-augmentation.md",
+   "type": "concept",
+   "title": "Automation vs. Augmentation",
+   "qmd_rank": 12,
+   "qmd_score": 0.36,
+   "graph": [],
+   "retrieval_reasons": [
+    "qmd rank 12 (score 0.36)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-09-28",
+   "last_confirmed": "2026-09-28",
+   "days_since_access": 6,
+   "effective_confidence": 0.889,
+   "rrf_score": 0.013889,
+   "fused_score": 0.81,
+   "verdict": "ignore",
+   "reason": "substitute-vs-complement framing is carried by W1 and W3",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/durable-skills",
+   "path": "wiki/concepts/durable-skills.md",
+   "type": "concept",
+   "title": "Durable Skills",
+   "qmd_rank": 11,
+   "qmd_score": 0.39,
+   "graph": [],
+   "retrieval_reasons": [
+    "qmd rank 11 (score 0.39)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-09-19",
+   "last_confirmed": "2026-09-19",
+   "days_since_access": 15,
+   "effective_confidence": 0.804,
+   "rrf_score": 0.014085,
+   "fused_score": 0.792,
+   "verdict": "use",
+   "reason": "qmd hit; the wiki's page on which skills keep value, with the upskilling-over-hiring section",
+   "reason_class": null,
+   "promoted": null,
+   "anchor": "W2"
+  },
+  {
+   "slug": "sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai",
+   "path": "wiki/sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai.md",
+   "type": "source",
+   "title": "Labor market impacts of AI: A new measure and early evidence",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+     "edge_type": "supports",
+     "via": "method-cousin: both build occupational-exposure measures of AI capability (Massenkoff & McCrory weight Eloundou task ratings by AEI usage; RaboResearch maps Gmyrek et al. ILO task scores onto CBS occupations) and both stress potential ≫ realised deployment",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.008197,
+   "fused_score": 0.47,
+   "verdict": "ignore",
+   "reason": "observed-exposure measure summarised in W1",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces",
+   "path": "wiki/sources/2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces.md",
+   "type": "source",
+   "title": "AI Will Reshape More Jobs Than It Replaces",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+     "edge_type": "supports",
+     "via": "reshape ≫ replace at sector altitude — RaboResearch finds roles shift (accountants, lawyers, consultants, developers move from executing to advisory/judgment work) and value concentrates in complex judgment while junior/instap tasks decline, not aggregate elimination",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services",
+     "edge_type": "supports",
+     "via": "the diamond-shaped talent model — a thinner transactional base, a thicker analytical middle, and a new requirement to manage an agent force — is a function-specific instance of the reshape-more-jobs-than-it-replaces claim, with the same warning that the entry-level training cycle shortens faster than replacement mechanisms are being built",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era",
+     "edge_type": "supports",
+     "via": "both argue from survey evidence that the AI-and-jobs story is a productivity-and-skills story rather than a headcount story, and both report firms redesigning roles rather than cutting them; Brown adds cases of employers increasing entry-level hiring by 25% on an explicit leadership-pipeline rationale",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening -->supports--> this (1 hop)",
+    "graph: sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services -->supports--> this (1 hop)",
+    "graph: sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.008065,
+   "fused_score": 0.462,
+   "verdict": "ignore",
+   "reason": "six-segment model and CEO warning used through W1 §Reshape ≫ replace",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-28-brynjolfsson-canaries-coal-mine",
+   "path": "wiki/sources/2026-04-28-brynjolfsson-canaries-coal-mine.md",
+   "type": "source",
+   "title": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+     "edge_type": "supports",
+     "via": "occupational-exposure measurement of automation potential (ILO/Gmyrek) corroborating the entry-level/compositional shift — RaboResearch's NL/sector vantage echoes the executing→advisory role shift and the decline of junior roles that the US ADP-payroll Canaries finding documents",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+     "edge_type": "supports",
+     "via": "Giles's summary of *'a Stanford study'* showing 22-25 year-olds with a 6% employment decline in AI-exposed occupations late 2022 → September 2025, while older workers gained 6-9%, **is the [[Erik Brynjolfsson|Brynjolfsson]] *Canaries in the Coal Mine* paper** ([[Stanford Digital Economy Lab]]). Giles attributes it generically rather than naming the authors. The Giles framing puts the Canaries finding into an executive-readership employment-effect news survey, alongside the April-2026 Challenger-Gray-Christmas layoff data, the Block/Meta single-firm announcements, and the NACE late-2025 survey (183 employers, only 14% considered replacing entry-level roles with AI). The Canaries paper supplies the load-bearing academic empirical signal that Giles's executive-readership account leans on.",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai",
+     "edge_type": "supports",
+     "via": "Brynjolfsson supplies the empirical data that augmentative AI use does not displace labour while automative use does; Storoni supplies the normative organisational prescription for what augmentation-pole work *should look like* (gear-2 quality work for humans, gear-3 quantity work delegated to AI). Storoni is prescriptive where Brynjolfsson is descriptive — together they form the descriptive-floor + prescriptive-ceiling pair for the augmentation argument.",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai",
+     "edge_type": "supports",
+     "via": "both address the age-concentration of AI-related employment effects. Canaries measures it by occupation-exposure quintile in monthly payroll records; Sundararajan describes the mechanism he believes sits underneath it — the fragmenting of an apprenticeship bargain in which juniors did 'PowerPoint, spreadsheets, routine coding' in exchange for investment toward senior roles",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening -->supports--> this (1 hop)",
+    "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -->supports--> this (1 hop)",
+    "graph: sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai -->supports--> this (1 hop)",
+    "graph: sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.007937,
+   "fused_score": 0.455,
+   "verdict": "ignore",
+   "reason": "ADP entry-level finding used through W1 and updated by W3",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company",
+   "path": "wiki/sources/2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company.md",
+   "type": "source",
+   "title": "Why isn't AI working for your company? | BBC News",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+     "edge_type": "supports",
+     "via": "the programme's opening framing — 'give the AI a clearly defined task, write code, answer customer queries, the systems are measurably faster. But most businesses are a chain, and all too often speeding up one link just piles up the work at the next' — is the broadcast-journalism statement of the same task-level-versus-firm-level split RaboResearch renders as a ranked chart of ~18 studies",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services",
+     "edge_type": "supports",
+     "via": "published two days apart, both make workflow scope the prior question and tool deployment the subsequent one — Peters's 'if the first step you're taking is not do we have the right materiality threshold in place and is there any low-value work we can just eliminate, you're still just automating the wrong work' is the consulting-altitude form of the BBC panel's chain-and-bottleneck argument",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening <--supports<-- this (1 hop)",
+    "graph: sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.007813,
+   "fused_score": 0.448,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening -supports->), fused 0.45; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity",
+   "path": "wiki/sources/2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity.md",
+   "type": "source",
+   "title": "Why AI Isn't Actually Boosting Productivity | Trumponomics",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+     "edge_type": "supports",
+     "via": "both hold task-level AI gains against aggregate outcomes and find the aggregate missing; Frey supplies a mechanism the chart does not — 'it's the time saving minus the time for verification' — and a historical control in the computer revolution, which he argues was more transformative than today's AI yet produced only a decade-long productivity upsurge mostly confined to the United States",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "supports",
+     "via": "both attribute weak aggregate productivity partly to declining business dynamism, independently and four days apart — Brynjolfsson's 'there's actually fewer startups overall in the United States… if we can get more entrepreneurship and more dynamism, then the technologies are going to have a bigger beneficial effect' matches Frey's 'we're seeing less entry' despite falling firm-formation costs",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening <--supports<-- this (1 hop)",
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.007692,
+   "fused_score": 0.441,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening -supports->), fused 0.44; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness",
+   "path": "wiki/sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness.md",
+   "type": "source",
+   "title": "China, Open Source & AI Competitiveness I Andrew Ng",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "supports",
+     "via": "both reject the job-apocalypse framing while accepting significant disruption, and both locate the binding constraint in skills transition rather than job destruction — Ng's 'the challenge is not dealing with the job apocalypse, the challenge is how to help everyone gain the new skills they will need' against Brynjolfsson's 'yes, there's lots of jobs being destroyed… there's also all this opportunity being created'",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.007576,
+   "fused_score": 0.434,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity -supports->), fused 0.43; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-07-30-hines-pierce-mckinsey-ai-physical-world-more-valuable",
+   "path": "wiki/sources/2026-07-30-hines-pierce-mckinsey-ai-physical-world-more-valuable.md",
+   "type": "source",
+   "title": "AI Is Making the Physical World More Valuable",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "supports",
+     "via": "published two days apart on adjacent McKinsey channels, both argue the augmentation case in the same terms — Hines-Pierce's 'our focus is not about cost cutting, it's not about removing jobs, it's about how do we amplify our competitive advantage… get them out from behind their computer and out in the real world' is the operator instance of Brynjolfsson's argument that the bigger upside is letting people do new things rather than replacing them",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.007463,
+   "fused_score": 0.428,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity -supports->), fused 0.43; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-08-10-miller-worklab-the-ai-shift-most-companies-didnt-see-coming",
+   "path": "wiki/sources/2026-08-10-miller-worklab-the-ai-shift-most-companies-didnt-see-coming.md",
+   "type": "source",
+   "title": "The AI shift most companies didn't see coming",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "supports",
+     "via": "both name a scarce internal persona as the lever for transformation and both describe agent-fleet management as the coming default competence — Weddle's 'looking for the mavericks in your organization… do you have a good sense of who your mavericks are, and are you strategically allocating them' alongside Miller's 'find the weirdos', and Brynjolfsson's 'almost everyone is going to be managing not just an agent, but a fleet of agents… like the CEO of their own little entity' alongside Miller's 34-agent org chart",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.007353,
+   "fused_score": 0.422,
+   "verdict": "ignore",
+   "reason": "its hiring criteria and agent org chart are referenced in W2",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs",
+   "path": "wiki/sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs.md",
+   "type": "source",
+   "title": "How AI is Affecting GDP Growth, Productivity, and Jobs",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "contradicts",
+     "via": "the same disagreement as above, restated: Brynjolfsson reports the entry-level effect growing over time ('up to 16 or 17%'), Hatzius reports no large effect anywhere in the occupation-level data as of August 2026",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity <--contradicts<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.007246,
+   "fused_score": 0.416,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity -contradicts->), fused 0.42; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-06-24-mckinsey-ai-supercharging-software-development",
+   "path": "wiki/sources/2026-06-24-mckinsey-ai-supercharging-software-development.md",
+   "type": "source",
+   "title": "AI Is Supercharging Software Development. Humans Determine Its Impact.",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services",
+     "edge_type": "supports",
+     "via": "the same firm restating the workflow-redesign-over-tool-deployment diagnosis for a different function — that panel narrows it to software engineering's org-scaling layer, this one to the shared-services organisation as the owner of end-to-end workflow orchestration",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.007143,
+   "fused_score": 0.41,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services -supports->), fused 0.41; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage",
+   "path": "wiki/sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage.md",
+   "type": "source",
+   "title": "The real AI advantage",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services",
+     "edge_type": "supports",
+     "via": "both are McKinsey podcast episodes arguing that the durable AI advantage sits in reimagined end-to-end processes rather than in tool adoption; this one localises that claim to the GBS function and adds the automate-first-versus-right-shore-first sequencing decision",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.007042,
+   "fused_score": 0.404,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services -supports->), fused 0.40; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over",
+   "path": "wiki/sources/2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over.md",
+   "type": "source",
+   "title": "The era of experimentation is over, with Arvind Krishna, CEO of IBM",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services",
+     "edge_type": "supports",
+     "via": "both locate the large agentic opportunity in the back office, run end to end across functional silos. Krishna's quote-to-cash example — a dozen systems, handed between sales, distribution, finance and legal — is the workflow Heimes and Peters want shared services to own",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.006944,
+   "fused_score": 0.398,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services -supports->), fused 0.40; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships",
+   "path": "wiki/sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships.md",
+   "type": "source",
+   "title": "Agents, robots, and us: Skill partnerships in the age of AI",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+     "edge_type": "supports",
+     "via": "Convergent on the **skills-matter-more-than-job-titles** macro-trend and the **agent-centric occupation cluster** prediction. Giles names *'a world in which skills matter more than formal job titles'* and *'more gig-like work within companies'* as expected outcomes in the lead key-takeaways. MGI (Nov 2025) quantifies the same shift via the **Skill Change Index** + the **agent-centric quadrant** (30% of US workforce, $70k avg pay — knowledge-work occupations where the wage-premium is at risk). The Coursera 2026 Job Skills Report Giles cites — *120% YoY growth in critical-thinking-course enrollments* across 6M learners — is the demand-side empirical anchor for MGI's *skill-evolution-not-elimination* finding.",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero",
+     "edge_type": "supports",
+     "via": "**Founder-CEO qualitative confirmation of MGI's quantitative *every-office-job-behind-screen-is-automatable* finding.** [[2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships|Yee et al. / MGI]] (November 2025): the **Skill Change Index** decomposes 57% US technical-automation-potential as **44% via agents (nonphysical office work) + 13% via robots (physical work)**; the agent-centric quadrant (30% of US occupations, $70k median wage — accountants, software developers, lawyers) is *where the knowledge-work wage premium is at risk*. Scheffer (May 2026, Dutch SME-founder-CEO vantage) names exactly the same observation in qualitative practitioner-altitude language: *'Elke kantoorbaan voor een scherm gaat verdwijnen ... Veel mensen onderschatten hoe snel dat gaat ... Heel veel banen die wij kennen, gaan gewoon echt verdwijnen.'* HelloPrint's **customer-service 100→18 worked example** (an entire department shrunk to 18% of its peak headcount, with AI delivering *'beter dan het niveau waarop mensen het kunnen doen'* — better than the level at which humans can do it) is a single-firm empirical anchor that lands inside MGI's *people-agent* + *agent-centric* archetypes. The wiki's first MGI-cross-reference at the **MKB-SME-founder-CEO vantage** — the same finding MGI quantifies across ~6,800 skills × ~1,800 occupations, Scheffer experiences inside a single €80M Dutch print platform.",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+     "edge_type": "supports",
+     "via": "**Individual-level tailoring + firm-level workflow redesign as paired levers.** Krakowski et al. (*Management Science* 2025, Nordic pharma DiD, N=72): untailored AI augmentation gradually decreases market share vs the legacy-IT control; tailored AI per Kirton 1976 cognitive style produces positive effects across four interaction-design parameters (*work procedure / decision-making authority / training / incentives*). MGI (Yee et al., Nov 2025): the workflow-redesign-not-task-automation prescription — *<40% of companies that have invested in AI report measurable gains* despite ~90% investing; the gap is workflow integration, not technology adoption — *'the difference between offering employees access to a chatbot for ad hoc use and deploying custom agents alongside people in a reimagined process'*. Krakowski's cognitive-style-tailoring is the **individual-interaction-design** layer; MGI's workflow redesign is the **firm-process-design** layer. Same load-bearing claim — *tailored intervention beats blanket prescription* — at two stack altitudes. Both anchor the W&W `digital-transforming/redesigning-internal-structures` cell with empirical evidence (Krakowski) and prospective structural modeling (MGI).",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -->supports--> this (1 hop)",
+    "graph: sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero -->supports--> this (1 hop)",
+    "graph: sources/2025-06-09-krakowski-human-centered-ai-field-experiment <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.006757,
+   "fused_score": 0.387,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -supports->), fused 0.39; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting",
+   "path": "wiki/sources/2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting.md",
+   "type": "source",
+   "title": "How McKinsey Plans to Survive AI (and Reinvent Consulting)",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+     "edge_type": "supports",
+     "via": "Convergent on the *services-don't-disappear-they-reinvent* observation. Sternfels (Feb 2026, McKinsey managing-partner altitude) argues consulting must reinvent under AI. Giles surfaces the broader picture: **AI is the #1 cited reason for layoffs but selectively** — IBM tripling entry-level hiring, HubSpot's Russell *'no intention of mass layoff'*, UiPath's Garaba on the growth-engine logic — the work-reorganization is genuine but the firm-headcount-trajectory varies. Giles also surfaces McKinsey's own analysis identifying IT, knowledge management, sales & marketing as the top-3 functions where companies are ramping up agent use. **Combined reading**: the McKinsey doctrine of *firm-level reinvention* is consistent with Giles's *to-cut-or-not-to-cut-boardroom-question*; both reject the binary doom framing.",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai",
+     "edge_type": "supports",
+     "via": "convergent argument that organizational change dominates technology implementation in the AI era. Sternfels names the consulting-engagement evidence (*'half, if not more, of the secret sauce is organizational change as opposed to technology implementation'*) and the flatter-org / workflow-consolidation mechanism; Storoni names the neuroscience mechanism for *why* the org-change is load-bearing — gear-3 reactive work systematically suppresses the prefrontal-cortex engagement needed for the higher-quality cognitive work AI cannot do.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -->supports--> this (1 hop)",
+    "graph: sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.006667,
+   "fused_score": 0.382,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -supports->), fused 0.38; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-25-masad-replit-ceo-only-two-jobs-left",
+   "path": "wiki/sources/2026-04-25-masad-replit-ceo-only-two-jobs-left.md",
+   "type": "source",
+   "title": "Replit's CEO On The Only Two Jobs Left In The Company Of The Future — Amjad Masad at YC Founder Firesides",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+     "edge_type": "supports",
+     "via": "Convergent on the **doom-side** of the AI-employment-effects debate. Masad ('only two jobs left') and Giles ('jobpocalypse' framing in the lede + Amodei *50 percent bloodbath* quote) both treat aggressive AI-driven displacement as a real near-term scenario. Giles is more empirically anchored (Block/Meta specific-firm cuts; Challenger-Gray-Christmas monthly data; the Stanford 22-25 study), but the underlying *cuts-will-come* thesis is shared. Both contrast with [[2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going|Evans]]'s lump-of-labor counter-frame and with the HubSpot Russell *no-mass-layoff* practitioner counter.",
+     "hops": 1
+    },
+    {
+     "from_seed": "concepts/durable-skills",
+     "edge_type": "supports",
+     "via": "Masad's prescriptive 'skills that matter now' list (idea generation, taste, not-giving-up, playing-with-tools, being-online) operationalises the durable-skills frame at the level of individual posture for the AI-native-builder economy",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -->supports--> this (1 hop)",
+    "graph: concepts/durable-skills <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.006579,
+   "fused_score": 0.377,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -supports->), fused 0.38; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-01-lf-state-of-tech-talent-global-2026",
+   "path": "wiki/sources/2026-05-01-lf-state-of-tech-talent-global-2026.md",
+   "type": "source",
+   "title": "2026 State of Tech Talent Report: Not a jobs crisis, but a skills crisis with an upskilling answer",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+     "edge_type": "supports",
+     "via": "both: AI redefines/expands technical roles rather than eliminating them; redesign entry-level roles + upskilling as the executive response",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.75,
+   "accessed_at": null,
+   "last_confirmed": "2026-06-08",
+   "days_since_access": null,
+   "effective_confidence": 0.75,
+   "rrf_score": 0.006849,
+   "fused_score": 0.376,
+   "verdict": "use",
+   "reason": "graph-only via Giles, admitted on content: the wiki's tech-talent survey with quantified upskilling-vs-hiring",
+   "reason_class": null,
+   "promoted": null,
+   "anchor": "W4"
+  },
+  {
+   "slug": "sources/2026-04-30-ai-index-report-2026",
+   "path": "wiki/sources/2026-04-30-ai-index-report-2026.md",
+   "type": "source",
+   "title": "Artificial Intelligence Index Report 2026",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+     "edge_type": "supports",
+     "via": "Two 2026-era panoramic reports on AI-employment-effects at different altitudes. The Stanford 22-25-year-olds-6-percent-decline finding Giles cites is in the AI Index's headline employment-effects chapter. Other empirical anchors in Giles (Coursera 120%, Gartner spending doubling, McKinsey top-3 functions) sit adjacent to AI Index content. Giles converts AI Index empirical material into executive-readership news prose; the AI Index is the structural source. **Useful as the *practitioner-altitude reading of the academic empirical record* pairing.**",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.006494,
+   "fused_score": 0.372,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -supports->), fused 0.37; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-28-moon-mckinsey-rewiring-software-delivery-for-the-agentic-era",
+   "path": "wiki/sources/2026-05-28-moon-mckinsey-rewiring-software-delivery-for-the-agentic-era.md",
+   "type": "source",
+   "title": "Rewiring software delivery for the agentic era",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+     "edge_type": "supports",
+     "via": "Same-week 28 May 2026 publication on overlapping themes — McKinsey at *operational-altitude-inside-software-delivery*, Giles at *executive-readership-across-functions-and-sectors*. Both surface the **workflow-redesign-as-the-real-work** prescription (Giles's first executive recommendation: *Review workflows first, deploy agents second* + Garaba/UiPath's onboarding-process-with-60-subprocesses worked example; McKinsey's *outer-loop roles integration prescription* with policy-as-code as the named primitive). Both surface the **manager-as-orchestrator** observation (Giles: senior production planners → agent orchestrators at the WEF San Francisco manufacturing meeting; McKinsey: human role *'less about producing artifacts and more about supervising and improving the system that produces them'*). The McKinsey piece is the McKinsey-Digital tech-partner altitude; the Giles piece is the executive-readership news-survey altitude — convergent on the *redesign-first, then-orchestrate* prescription.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.006329,
+   "fused_score": 0.363,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -supports->), fused 0.36; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-21-allen-aws-london-exec-forum-agentic-team-structures",
+   "path": "wiki/sources/2026-05-21-allen-aws-london-exec-forum-agentic-team-structures.md",
+   "type": "source",
+   "title": "London Executive Forum 2026 — A leader's guide to advanced team structures in an agentic world",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+     "edge_type": "supports",
+     "via": "Convergent on the **senior production planners → agent orchestrators** observation. Allen (AWS London executive forum) frames team-structure-collapse + agent-orchestration as the operational shape; Giles surfaces the same observation in a different industry (manufacturing/supply-chain at the WEF San Francisco meeting). Microsoft data Giles cites — *'manufacturers who adopt agents based on its technology use more of them than companies in other sectors like retailing and financial services'* — adds a sector-comparison data point Allen's AWS-altitude piece does not have. Both also surface the **chatbot 2-3% vs deeper-agent 30-60%** productivity-gain split (Allen via the *AI bolted on is going to fail* framing; Giles via Kiva Allgood / WEF Advanced Manufacturing Center quote — explicit numerical anchor).",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai",
+     "edge_type": "supports",
+     "via": "**Anti-disposable-software ethic + quality-over-quantity convergence.** Storoni (HBR IdeaCast, 13 May): the neuroscience-grounded normative reframe on the augmentation pole of [[automation-vs-augmentation]] — *quality of attention beats quantity of output* in the AI age. Allen (AWS, 21 May) names the failure mode the inverse of which Storoni prescribes: *'we are getting to disposable applications. We do not want this as leaders.'* Brooklyn's *'momentum beats perfection'* mantra is explicitly **not** a permission to flood (Francis's 4-phase progression — basic use-cases → Ask Brooklyn conversational → agentic → multi-agent — is iterative *quality compounding*, not disposable-app proliferation). Both anchor on the same anti-Jevons-paradox-for-software ethic at neuroscience and AWS-vendor altitudes respectively.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -->supports--> this (1 hop)",
+    "graph: sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.8,
+   "accessed_at": null,
+   "last_confirmed": "2026-07-15",
+   "days_since_access": null,
+   "effective_confidence": 0.8,
+   "rrf_score": 0.00641,
+   "fused_score": 0.36,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -supports->), fused 0.36; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+   "path": "wiki/sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going.md",
+   "type": "source",
+   "title": "A rational conversation on where AI is actually going | Benedict Evans",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+     "edge_type": "contradicts",
+     "via": "Partial contradiction on the *lump-of-labor* and *new-jobs-will-emerge* framings. Evans (31 May 2026, four days later than Giles) argues *every wave of automation creates new jobs the doomers can't predict* and calls people who assert *every big company is going to buy ChatGPT tomorrow and then in two weeks time fire all their staff* *'morons'*. Giles surfaces the directly-counter empirical record: **AI is the #1 cited reason for US job cuts in BOTH March and April 2026** per Challenger, Gray & Christmas; April-2026 layoffs at 83,387 (+38% from March, third-highest since 2009); Block (Dorsey) explicit 40% workforce cut citing *'intelligence tools'*; Meta 8,000 cuts justified by AI capex of $125-145B for 2026. Giles also cites Carl Benedikt Frey (Oxford AI/work professor): *'It's entirely plausible that AI will create new kinds of businesses, but it's hard to see it creating something like the automobile industry [that generated many new jobs]'* — the Frey quote is the explicit empirical counter to Evans's railway-engineer / 19th-century-precedent argument. The two sources also agree on a number of points (AI-labs-still-hiring; the McKinsey-altitude top-3 functions; the workflow-redesign-as-the-real-work prescription) — the contradiction is specifically about the *aggregate-employment-trajectory*, not about the *operational shape* of the transformation.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -->contradicts--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.00625,
+   "fused_score": 0.358,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -contradicts->), fused 0.36; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care",
+   "path": "wiki/sources/2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care.md",
+   "type": "source",
+   "title": "AI for Interoperability in Health Care: Philips's Carla Goulart Peron",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+     "edge_type": "supports",
+     "via": "Cross-altitude support on the **do-more-with-the-same** prescription. Giles (US-economy executive-readership altitude, 28 May 2026, three days earlier) surfaces the to-cut-or-not-to-cut boardroom question + HubSpot Russell's *no-mass-layoff* counter-example; Peron (Philips-CMO healthcare-domain altitude, 31 May 2026) supplies the *clinical-domain explanation for why displacement-by-default doesn't fit*: the supply side is structurally short, so AI augments rather than displaces. Both reject the binary doom framing for similar but distinct reasons — Giles via diversified-employer behaviour (IBM tripling entry-level, HubSpot redeploying 10), Peron via structural-supply-shortage in the specific domain.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.006173,
+   "fused_score": 0.354,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -supports->), fused 0.35; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-06-03-warren-yc-how-to-build-an-ai-native-services-company",
+   "path": "wiki/sources/2026-06-03-warren-yc-how-to-build-an-ai-native-services-company.md",
+   "type": "source",
+   "title": "How to Build an AI-Native Services Company",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+     "edge_type": "supports",
+     "via": "Convergent on the **services-firms-rebuilt-with-AI-doing-most-of-the-work** macro frame. Giles (WP Intelligence, May 2026, executive-readership altitude) surfaces the McKinsey top-3 functions (IT / knowledge management / sales & marketing) where companies are ramping up agent use + the HubSpot Russell + IBM-entry-level redesign worked examples + the *humans-on-judgment-work, agents-on-execution-work* prescription. Warren (June 2026, YC altitude) describes the **vendor-startup category** building the agents the Giles enterprises are deploying. The wiki's first explicit cross-altitude pairing of *enterprise-buyer of agent services* (Giles) with *startup-vendor of agent services* (Warren) — same market viewed from both demand and supply sides.",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero",
+     "edge_type": "supports",
+     "via": "Convergent on the *built-from-scratch / day-zero rebuild* thesis at two scales. Scheffer (HelloPrint Dutch SME, May 2026, €80M revenue) executes the day-zero rebuild *inside an established firm* with the customer-service-100-to-18 worked example; Warren (June 2026, YC altitude) describes the day-zero rebuild *as a new-firm playbook* — *'companies … rebuilt from scratch with AI doing most of the work'*. Scheffer is the in-place rebuild at SME scale; Warren is the greenfield rebuild at startup scale. The two together name the same phenomenon at two boundary conditions. Both also reject the *AI-bolted-on-feature* alternative path.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs <--supports<-- this (1 hop)",
+    "graph: sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.006024,
+   "fused_score": 0.345,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs -supports->), fused 0.34; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset",
+   "path": "wiki/sources/2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset.md",
+   "type": "source",
+   "title": "To Thrive Alongside AI, Focus on Mindset—Not Skillset",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+     "edge_type": "supports",
+     "via": "operator → supervisor/mentor role shift; redesign roles around a human+agent hybrid workforce",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005952,
+   "fused_score": 0.341,
+   "verdict": "ignore",
+   "reason": "mindset-not-skillset used through W2",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-06-22-bbc-what-if-were-wrong-about-ai-layoffs",
+   "path": "wiki/sources/2026-06-22-bbc-what-if-were-wrong-about-ai-layoffs.md",
+   "type": "source",
+   "title": "What If We're Wrong About AI Layoffs?",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+     "edge_type": "supports",
+     "via": "AI-as-cited-reason-for-layoffs as partial/over-attributed — Giles supplies the Challenger 'AI #1 cited reason' monthly data + NACE 14%; this source supplies the labor-economist mechanism (valuation premium) for why the attribution is inflated",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005882,
+   "fused_score": 0.337,
+   "verdict": "ignore",
+   "reason": "AI-washing attribution confound is noted in W1",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-06-01-lf-state-of-tech-talent-europe-2026",
+   "path": "wiki/sources/2026-06-01-lf-state-of-tech-talent-europe-2026.md",
+   "type": "source",
+   "title": "2026 State of Tech Talent Europe: AI, technical hiring, and the skills gap in Europe",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+     "edge_type": "supports",
+     "via": "both: AI net-creates IT jobs while pressuring the junior tier; deliberately hire/develop junior talent + upskill as the response",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.75,
+   "accessed_at": null,
+   "last_confirmed": "2026-06-08",
+   "days_since_access": null,
+   "effective_confidence": 0.75,
+   "rrf_score": 0.006098,
+   "fused_score": 0.335,
+   "verdict": "ignore",
+   "reason": "its −3% entry-level finding is used through W1 and W2; W4 is the parent report",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-28-reitz-higgins-spacious-thinking",
+   "path": "wiki/sources/2026-04-28-reitz-higgins-spacious-thinking.md",
+   "type": "source",
+   "title": "The Best Leaders Encourage \"Spacious Thinking\"",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai",
+     "edge_type": "supports",
+     "via": "same phenomenon — protected unstructured-attention time as precondition for creative knowledge work. Reitz & Higgins frame as *spacious mode vs doing mode* from a leadership-practice vantage with mixed-methods survey + interview data; [[2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai|Storoni]] frames as gear-1/gear-2/gear-3 from a neuroscience vantage with the norepinephrine inverted-U mechanism. Spacious mode maps to Storoni's gear-1 + top-of-gear-2; doing mode at its extreme maps to her gear-3. Two-vantage convergence on the underlying organisational diagnosis.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005814,
+   "fused_score": 0.333,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai -supports->), fused 0.33; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-02-dutt-chatterji-ai-experimentation-to-transformation",
+   "path": "wiki/sources/2026-05-02-dutt-chatterji-ai-experimentation-to-transformation.md",
+   "type": "source",
+   "title": "How to Move from AI Experimentation to AI Transformation",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai",
+     "edge_type": "supports",
+     "via": "Storoni's gear-3 reactive-work critique supplies a neurological mechanism for the [[micro-productivity-trap]]'s process lock-in. Bain/OpenAI name the failure mode at the firm level (task gains that don't translate to enterprise value); Storoni names the cognitive failure mode at the individual level (workers stuck in gear 3 produce fast low-quality output that aggregates to high-throughput low-value organisational work). Same trap, different stack layer.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005682,
+   "fused_score": 0.326,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai -supports->), fused 0.33; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+   "path": "wiki/sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer.md",
+   "type": "source",
+   "title": "Build core skills to thrive as an AI-era developer",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai",
+     "edge_type": "supports",
+     "via": "DORA's empirically-grounded finding that *'increasing AI adoption can lead to individual productivity benefits while at the same time decreasing team-level benefits'* is the engineering-team correlate of Storoni's individual-cognition critique of gear-3 reactive work. Same divergence pattern (micro feels productive, macro isn't) at adjacent scales — Forsgren & Macvean at engineering teams via DORA research, Storoni at individual neurology via norepinephrine inverted-U. Forsgren & Macvean's *'amplifier and mirror'* framing of AI (magnifies strengths, exposes weaknesses) is convergent with Storoni's claim that reactive work-design choices amplify gear-3 drift.",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+     "edge_type": "supports",
+     "via": "**Productive-struggle + cognitive-style-tailoring convergence at developer + sales-expert altitudes.** Forsgren & Macvean (Google DORA 2026): *productive struggle* — engineering-leadership countermeasure where humans deliberately work through complexity rather than offloading it to AI. Krakowski et al.: *tailored human-AI interaction* — sales experts whose interaction context aligns with their cognitive style increase utilization, learning, and performance over time. Both prescribe **interaction-design rather than tool-deployment as the operative lever**, at developer-tool altitude (DORA) and sales-rep altitude (Krakowski). The cross-domain convergence: *AI augmentation is a design discipline, not a deployment decision*.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai -->supports--> this (1 hop)",
+    "graph: sources/2025-06-09-krakowski-human-centered-ai-field-experiment -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": 0.8,
+   "accessed_at": "2026-05-21",
+   "last_confirmed": "2026-05-21",
+   "days_since_access": null,
+   "effective_confidence": 0.8,
+   "rrf_score": 0.005747,
+   "fused_score": 0.323,
+   "verdict": "ignore",
+   "reason": "developer core skills; the upskilling point is carried by W2 and W4",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-02-schoening-lennys-podcast-cultivating-agency-ai-era",
+   "path": "wiki/sources/2026-05-02-schoening-lennys-podcast-cultivating-agency-ai-era.md",
+   "type": "source",
+   "title": "AI era skills: Why cultivating agency matters more than job titles | Max Schoening (Notion)",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai",
+     "edge_type": "supports",
+     "via": "Two-cell W&W overlap (`redesigning-internal-structures` + `strategic-renewal/organizational-culture`). Schoening's *agency-as-durable-skill* thesis (curiosity, ownership, taste as the AI-era moat) is the personality/cultural side of what Storoni names as the *self-regulation-under-uncertainty meta-skill* (staying at the top of gear-2 without tipping into gear-3 panic). The two together form a personal-agency + cognitive-self-regulation pair on what makes humans valuable in the augmentation era — same phenomenon from product-leader vantage (Schoening) and neuroscience vantage (Storoni).",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005618,
+   "fused_score": 0.322,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai -supports->), fused 0.32; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026",
+   "path": "wiki/sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026.md",
+   "type": "source",
+   "title": "Job Titles Don't Matter in 2026 (Here's What Does)",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai",
+     "edge_type": "supports",
+     "via": "both argue AI-era work needs new measurement logic rather than faster old metrics — Storoni's neuroscience-grounded critique of efficiency-as-gear-3 and Raman's 'old math won't work for new equations' name the same rejection of efficiency-only metrics",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005556,
+   "fused_score": 0.319,
+   "verdict": "use",
+   "reason": "graph-only via Storoni, admitted on content: talent practice from LinkedIn's labour-market vantage",
+   "reason_class": null,
+   "promoted": null,
+   "anchor": "W6"
+  },
+  {
+   "slug": "sources/2026-07-10-hugging-face-ceo-companies-done-renting-their-ai",
+   "path": "wiki/sources/2026-07-10-hugging-face-ceo-companies-done-renting-their-ai.md",
+   "type": "source",
+   "title": "Hugging Face's CEO on why companies are done renting their AI | Equity Podcast",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai",
+     "edge_type": "supports",
+     "via": "both address national positioning in AI and the role of open models. Delangue argues from download share that open-source leadership produces AI leadership; Sundararajan describes China's approach as top-down algorithmic governance situated inside a broad industrial policy, and predicts AI governance settles in China sooner than in the EU or the United States",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005495,
+   "fused_score": 0.315,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai -supports->), fused 0.32; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai",
+   "path": "wiki/sources/2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai.md",
+   "type": "source",
+   "title": "How Companies Are Building Their Own Intelligence | Sonya Huang, Sequoia Capital",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai",
+     "edge_type": "supports",
+     "via": "both address what sovereignty over AI means in practice. Huang argues the enterprise case for owning rather than renting intelligence; Sundararajan argues the nation-state case and states that no country holds full-stack autonomy — 'we have semiconductor dependencies, manufacturing dependencies, cloud dependencies' — so the decision is which layer to be autonomous in",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005435,
+   "fused_score": 0.312,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai -supports->), fused 0.31; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-09-18-reuters-on-assignment-inside-chinas-ai-race",
+   "path": "wiki/sources/2026-09-18-reuters-on-assignment-inside-chinas-ai-race.md",
+   "type": "source",
+   "title": "Inside China's AI race | On Assignment",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai",
+     "edge_type": "supports",
+     "via": "state-administered model governance in China. Sundararajan describes top-down algorithmic governance enforced 'through administrative directives'; Chen describes the mechanism — pre-release testing coordinated by the Cyberspace Administration of China, with further technical-safety benchmarks from the industry and science ministries — and adds that independent in-lab safety testing is thin",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005376,
+   "fused_score": 0.308,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai -supports->), fused 0.31; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up",
+   "path": "wiki/sources/2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up.md",
+   "type": "source",
+   "title": "How To Build A Company With AI From The Ground Up",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero",
+     "edge_type": "supports",
+     "via": "**Day-zero rebuild thesis at SME-founder-CEO altitude — paired with Hu's YC-partner-prescriptive altitude.** [[2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up|Hu / YC Startup School]] (April 2026): the *AI-as-operating-system* + *closed-loop-vs-open-loop company* + *AI-founder-type* prescriptive framework; *'still builds, still coaches, leads by example.'* Scheffer (May 2026, ~1 month later) is the *Dutch-SME-founder-CEO operationalisation*: *'Ik heb mezelf de vraag gesteld: wat nou als ik mijn huidige bedrijf op dag één opnieuw zou moeten bouwen, wat zou ik dan doen?'* (*'I asked myself: what if I had to rebuild my current company on day one, what would I do then?'*) — Hu's prescription executed as a literal thought experiment. Scheffer's *'Dat is juist relevant voor mkb'ers ... Als je een kleiner bedrijf hebt, is het veel makkelijker om dat te doen'* (*'this is particularly relevant for SMEs ... if you have a smaller company it's much easier to do this'*) is the **SME-altitude inversion of Hu's prescription**: Hu argues this from inside the YC-startup-batch context, Scheffer argues from inside an established €80M Dutch SME that the rebuild is *easier* at SME scale than at Fortune-500 scale.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005319,
+   "fused_score": 0.305,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero -supports->), fused 0.30; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-28-warner-wager-dynamic-capabilities-digital-transformation",
+   "path": "wiki/sources/2026-04-28-warner-wager-dynamic-capabilities-digital-transformation.md",
+   "type": "source",
+   "title": "Building Dynamic Capabilities for Digital Transformation: An Ongoing Process of Strategic Renewal",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero",
+     "edge_type": "supports",
+     "via": "**Wiki's most-comprehensive single-source W&W operationalisation at SME-founder-CEO altitude.** [[2026-04-28-warner-wager-dynamic-capabilities-digital-transformation|Warner & Wäger]] derives the 9-cell process model from 27 interviews on digital transformation. Scheffer (May 2026) maps onto **9 of the 12 process-model cells** in a single ~7-minute article — among the broadest cell coverage in the wiki — and the mapping is unusually clean: `digital-sensing/digital-mindset-crafting` (the technology-leading mindset shift, the fifty-year company vision); `digital-sensing/digital-scenario-planning` (the *day-zero rebuild* thought experiment as scenario); `digital-seizing/balancing-digital-portfolios` (*'door bijvoorbeeld afscheid te nemen van bepaalde omzetgroepen ... wel een fundamentele keuze om op de lange termijn te kunnen winnen'* — the conscious revenue sacrifice for long-term winning is a textbook *balancing internal and external options + pacing strategic responses* execution); `digital-seizing/strategic-agility` (deliberately slowing growth to enable transformation); `digital-transforming/redesigning-internal-structures` (the AI-brein dissolving marketing/IT/operations/finance departments — *'Aparte afdelingen voor marketing, IT, operatie en finance, elk met eigen systemen en verantwoordingslagen, verliezen hun functie'*); `digital-transforming/improving-digital-maturity` (the *Chief AI Officer or CTO is the missing role in MKB management teams* observation); `strategic-renewal/business-model` (fundamental rebuild not optimisation); `strategic-renewal/organizational-culture` (the *topsportteam* framing — *'Net als in een topsportteam is niet iedereen geschikt voor die dynamiek'*); `contextual/external-triggers` (AI as the external disruptive technology). The wiki's **first Dutch-MKB-vantage clean execution of the full W&W process model** — a useful empirical complement to W&W's original Swiss/German European-corporate sample.",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+     "edge_type": "supports",
+     "via": "**Empirical operationalisation of *redesigning-internal-structures* + *improving-digital-maturity* microfoundations in a regulated industry.** Where Warner & Wäger frame structural redesign and digital-maturity-improvement as theoretical microfoundations of *digital-transforming* capability, Krakowski et al. supply a concrete RCT-grade empirical instance: untailored structural redesign (D2 — imposed work procedures, constrained decision authority, mandatory training, extrinsic incentives) produces *negative performance* vs the legacy IT control; tailored structural redesign (D3 — parameters aligned to sales experts' cognitive styles) produces positive performance vs both. **The structural redesign microfoundation is the lever** — but it is contingent on tailoring, not deployment alone. The case study sits in the regulated pharmaceutical-sales context — a complement to the W&W 27-senior-executive-interview methodology with a DiD field experiment in a similarly high-regulation setting.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero -->supports--> this (1 hop)",
+    "graph: sources/2025-06-09-krakowski-human-centered-ai-field-experiment -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005263,
+   "fused_score": 0.302,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero -supports->), fused 0.30; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook",
+   "path": "wiki/sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook.md",
+   "type": "source",
+   "title": "Rolls-Royce CEO Tufan Erginbilgiç Shares His Turnaround Playbook",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero",
+     "edge_type": "supports",
+     "via": "**Paired turnaround-playbook anchors at radically different scales — Rolls-Royce ~£80B at FTSE-CEO altitude + HelloPrint ~€80M at Dutch-SME-founder-CEO altitude — three days apart, same playbook.** Erginbilgiç (24 May 2026): the Rolls-Royce turnaround playbook — *transform-from-strength normative argument* + *the burning platform* + *'we're going to be the best in the world'* + *not-everyone-fits topsport-team culture*. Scheffer (27 May 2026, three days later, ~1000× smaller revenue): *the exact same playbook compressed to MKB scale*. (1) **Burning-platform / day-zero framing**: Erginbilgiç's *'we are confronting reality and rewriting our story'* ↔ Scheffer's *'wat nou als ik mijn huidige bedrijf op dag één opnieuw zou moeten bouwen, wat zou ik dan doen?'* — both reject continuity-optimisation as the operating frame. (2) **Conscious short-term sacrifice for long-term winning**: Erginbilgiç's portfolio-discipline / pricing-power moves vs Scheffer's *'door bijvoorbeeld afscheid te nemen van bepaalde omzetgroepen ... wel een fundamentele keuze om op de lange termijn te kunnen winnen.'* (3) **Topsport-team not-everyone-fits culture**: Erginbilgiç on culture as the load-bearing transformation lever ↔ Scheffer's *'Net als in een topsportteam is niet iedereen geschikt voor die dynamiek. Dat is volgens hem geen waardeoordeel, maar een gevolg van duidelijke keuzes maken.'* (4) **Fifty-year horizon framing**: Erginbilgiç's *transform-from-strength-while-the-business-is-winning* ↔ Scheffer's *'Wij willen een bedrijf bouwen waar mensen over vijftig jaar nog werken en waar mensen over vijftig jaar ook nog over praten als een voorbeeld van hoe het ook kan.'* Same playbook, two scales, three calendar days apart — Erginbilgiç at the **multi-decade-listed-FTSE-CEO altitude**, Scheffer at the **Dutch-founder-owner-€80M-SME altitude**.",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+     "edge_type": "supports",
+     "via": "**Non-tech-industry transformation pair on the *tailored-leadership + culture-refresh* lever.** Krakowski et al. (*Management Science* 2025, Nordic pharma DiD, N=72 retail outlets): *untailored* AI augmentation gradually decreases market share vs the legacy-IT control; *tailored* interaction across four Kirton-cognitive-style parameters produces positive effects. Erginbilgiç (Rolls-Royce CEO, May 2026): the entire transformation rests on *tailored* leadership — the burning-platform speech was *commissioned external benchmarking starting Sept '22* (~2:01), 25–30 strategy workshops with 500+ employees so *'whole organisation is aligned because they were in the room when you were making the decision'* (~12:43–13:14), and *'non-compromising mediocrity at that level kills the organizations'* (~17:42–17:50) as the cultural-refresh lever. Two anchors on the same load-bearing claim — *tailored intervention beats blanket prescription, organizational-culture renewal is the substrate* — at non-tech industrial altitudes (pharma + aerospace) with both citing the [[warner-wager-process-model|W&W process model]]'s `strategic-renewal/organizational-culture` cell. Erginbilgiç adds the leadership-as-non-compromise edge; Krakowski adds the cognitive-style-mapping edge.",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great",
+     "edge_type": "supports",
+     "via": "Carroll supplies the **academic theory** of organizational culture (strong culture = high intensity + high agreement; culture as a social-control system aligned to strategy); Erginbilgiç is the wiki's **applied non-digital culture-turnaround** exemplar (Rolls-Royce: *non-compromise on mediocrity*, performance-management discipline, fast-and-flexible cadence). Both map to the `strategic-renewal/organizational-culture` W&W cell — theory + practitioner case of the same phenomenon. Carroll's culture-change-speed point (Agilent ~5 yrs to add *speed/focus/accountability*; Ford under Mulally radical change in <1 yr) is the general claim Erginbilgiç instantiates.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero -->supports--> this (1 hop)",
+    "graph: sources/2025-06-09-krakowski-human-centered-ai-field-experiment <--supports<-- this (1 hop)",
+    "graph: sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005208,
+   "fused_score": 0.299,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero -supports->), fused 0.30; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-27-koomen-yc-lightcone-inside-yc-ai-playbook",
+   "path": "wiki/sources/2026-05-27-koomen-yc-lightcone-inside-yc-ai-playbook.md",
+   "type": "source",
+   "title": "Inside YC's AI Playbook",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero",
+     "edge_type": "supports",
+     "via": "**Same-day-different-continent convergent declarations of *AI-as-building-layer-not-feature*.** Both sources published 27 May 2026. [[2026-05-27-koomen-yc-lightcone-inside-yc-ai-playbook|Koomen / YC Lightcone]]: *'Part of the key thing is not to just use AI as a copilot ... it's the building layer for everything.'* Scheffer (same day, Dutch-SME vantage): *'Waar vroeger de mensen eerst kwamen en technologie ondersteunend was, draait dat nu om. Technologie wordt leidend, en daaromheen zit een veel kleinere groep mensen die die technologie aanstuurt.'* (*'Where people used to come first and technology was supporting, that is now reversed. Technology becomes leading, and around it sits a much smaller group of people who direct that technology.'*) Both anchor on the **technology-leading / people-directing reversal** as the structural claim. Koomen's *one-database-to-rule-them-all + 350-tool-shared-registry + dream-cycle* primitive set is YC's operationalisation; Scheffer's *AI-brein as foundation* + *dissolved marketing/IT/operations/finance departments* + *Chief AI Officer as missing MKB role* is the parallel HelloPrint operationalisation. **Two-source converging declaration on the same calendar day — one from YC-internal-infrastructure vantage at 350-tool scale, one from a Dutch €80M-revenue SME — both arguing AI is the foundation, not a feature.**",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005155,
+   "fused_score": 0.296,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero -supports->), fused 0.30; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2025-01-08-khanfar-factors-influencing-ai-adoption-slr",
+   "path": "wiki/sources/2025-01-08-khanfar-factors-influencing-ai-adoption-slr.md",
+   "type": "source",
+   "title": "Factors influencing the adoption of artificial intelligence systems: a systematic literature review",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+     "edge_type": "supports",
+     "via": "the review's central claim is that firm-level choices shape employee-level adoption rather than operating independently of it. Krakowski et al. test exactly that in the field: four firm-set parameters — work procedure, decision authority, training, incentives — decide whether the same AI system raises or lowers sales performance",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2025-06-09-krakowski-human-centered-ai-field-experiment <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005102,
+   "fused_score": 0.293,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2025-06-09-krakowski-human-centered-ai-field-experiment -supports->), fused 0.29; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-28-anand-wu-genai-playbook",
+   "path": "wiki/sources/2026-04-28-anand-wu-genai-playbook.md",
+   "type": "source",
+   "title": "The Gen AI Playbook for Organizations",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+     "edge_type": "supports",
+     "via": "**Deployment-quadrant frame + interaction-design frame as complementary layers.** Anand-Wu (HBR 2025): the 2×2 task-quadrant deployment framework (cost-of-errors × type-of-knowledge → no-regrets / creative-catalyst / quality-control / human-first zones) prescribes **WHERE** to deploy AI. Krakowski et al.: within a chosen deployment, the **HOW** of human-AI interaction design (work procedure / decision authority / training / incentives, tailored to cognitive style) determines whether the deployment produces positive or negative outcomes. The two frames stack: Anand-Wu's quadrant chooses the deployment zone; Krakowski's parameters tune the interaction within that zone. *Without* Krakowski's interaction tuning, even a correctly-zoned Anand-Wu deployment can produce negative outcomes — pharmaceutical sales is a *quality-control quadrant* task (high cost of errors, partly tacit knowledge) where Anand-Wu would prescribe augmentation; Krakowski shows that augmentation alone is insufficient without interaction tailoring.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2025-06-09-krakowski-human-centered-ai-field-experiment -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005051,
+   "fused_score": 0.29,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2025-06-09-krakowski-human-centered-ai-field-experiment -supports->), fused 0.29; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work",
+   "path": "wiki/sources/2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work.md",
+   "type": "source",
+   "title": "Generative AI at Work",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+     "edge_type": "supports",
+     "via": "**Two-field-experiment pair on the augmentation pole — one shows the success case, one shows the failure case.** Brynjolfsson-Li-Raymond (QJE 2025, customer-support AI deployed in a real call center): augmentation under deliberate human-in-the-loop design produces **+15% productivity** with strong equalizing effect (low-skill +30%, high-skill ~0% with small quality decline). Krakowski et al. (Management Science 2025, AI sales-support system in Nordic pharma): **untailored augmentation produces NEGATIVE performance effects vs the legacy IT control**, while tailored interaction (aligned to sales experts' cognitive styles per Kirton 1976) produces positive effects vs both untailored and control. The two papers together complete the augmentation-pole evidence base: *augmentation can produce +15% or it can produce negative outcomes, depending on the interaction-design discipline applied*. Brynjolfsson-Li-Raymond's deployment was *explicitly designed to augment* (agents have full discretion to accept/edit/ignore suggestions; system declines to suggest when training is insufficient) — i.e. *tailored* in Krakowski's vocabulary. Krakowski supplies the empirical evidence that *without that design discipline, the same augmentation technology turns negative*. The two-source convergence sharpens the [[automation-vs-augmentation]] cut: **augmentation is contingent on interaction-design, not guaranteed by deployment choice**.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2025-06-09-krakowski-human-centered-ai-field-experiment -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005,
+   "fused_score": 0.287,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2025-06-09-krakowski-human-centered-ai-field-experiment -supports->), fused 0.29; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-28-dellacqua-jagged-technological-frontier",
+   "path": "wiki/sources/2026-04-28-dellacqua-jagged-technological-frontier.md",
+   "type": "source",
+   "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+     "edge_type": "supports",
+     "via": "**Same-journal-family + same-method + same outside-the-frontier-loses pattern.** Dell'Acqua et al. (Organization Science / INFORMS, 758-BCG-consultant RCT): within-the-frontier +12% tasks / +25% speed / +40% quality; outside-the-frontier ~19pp accuracy loss with subjective coherence persisting through it. Krakowski et al. (Management Science / INFORMS, 72-sales-experts DiD): tailored interaction = positive; untailored interaction = negative vs control. Both papers operate on the *bounded/contingent-positivity-of-augmentation* thesis: when AI is deployed within its zone of fit (within-the-frontier / tailored-to-cognitive-style), positive effects materialise; when deployed outside (outside-the-frontier / untailored), the *same technology* produces *worse outcomes than the legacy baseline*. The Dell'Acqua bounded-region is task-shape; the Krakowski bounded-region is interaction-design — two different *dimensions* of the same underlying contingency phenomenon. Both papers also document **subjective experience that diverges from objective performance** (Dell'Acqua: confidence persists through accuracy loss; Krakowski: the Finnish adaptor's *'felt like in prison'* quote despite the system being *'great'*).",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2025-06-09-krakowski-human-centered-ai-field-experiment -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.00495,
+   "fused_score": 0.284,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2025-06-09-krakowski-human-centered-ai-field-experiment -supports->), fused 0.28; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+   "path": "wiki/sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees.md",
+   "type": "source",
+   "title": "Research: Why You Shouldn't Treat AI Agents Like Employees",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+     "edge_type": "supports",
+     "via": "**Two 2026 RCT-grade empirical sources on the *organisational-design dimension* of AI deployment outcomes — published 11 months apart.** Krakowski et al. (Management Science, online June 2025): N=72 Nordic pharma sales experts DiD, four interaction parameters (work procedure / decision authority / training / incentives) × two cognitive styles (adaptor / innovator) → tailored = positive, untailored = negative vs legacy IT. Kropp et al. (HBR / BCG Henderson Institute, May 2026): N=1,261 HR/finance managers randomised experiment, AI-tool vs AI-employee framing → AI-employee framing causes 9pp accountability drop, 44% more escalation, 18% fewer errors caught. Both papers test **organisational design choices** as causal variables in AI-deployment outcomes (Krakowski: interaction-context parameters; Kropp et al.: framing/anthropomorphizing) and find that **apparently-administrative choices materially change performance and accountability outcomes**. Both papers prescribe explicit interaction-design over default deployment as the operative lever. Two-source convergence at advisor-altitude (BCG Henderson Institute) and academic-altitude (Management Science) on the same underlying claim.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2025-06-09-krakowski-human-centered-ai-field-experiment -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": 0.85,
+   "accessed_at": null,
+   "last_confirmed": "2026-05-25",
+   "days_since_access": null,
+   "effective_confidence": 0.85,
+   "rrf_score": 0.004902,
+   "fused_score": 0.281,
+   "verdict": "use",
+   "reason": "graph-only via Krakowski, admitted on content: RCT with 1,261 HR and finance managers (F3)",
+   "reason_class": null,
+   "promoted": null,
+   "anchor": "W7"
+  },
+  {
+   "slug": "sources/2026-07-01-bello-mckinsey-podcast-serial-builder-advantage",
+   "path": "wiki/sources/2026-07-01-bello-mckinsey-podcast-serial-builder-advantage.md",
+   "type": "source",
+   "title": "The Serial Builder Advantage: Why Repeat Innovators Win",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great",
+     "edge_type": "supports",
+     "via": "Bello's practitioner claim — a fact-based, blame-free culture ('if the facts tell us our product stinks, so be it') is what lets venture teams pivot fast without shame — is a lived instance of Carroll's academic thesis that strong culture is a social-control system aligned to strategy; both map to the strategic-renewal/organizational-culture cell.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004854,
+   "fused_score": 0.278,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-06-25-carroll-stanford-gsb-making-organizational-culture-great -supports->), fused 0.28; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-07-07-sinofsky-amble-a16z-software-in-the-age-of-agents",
+   "path": "wiki/sources/2026-07-07-sinofsky-amble-a16z-software-in-the-age-of-agents.md",
+   "type": "source",
+   "title": "Software in the Age of Agents | The a16z Show",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great",
+     "edge_type": "supports",
+     "via": "Sinofsky's 'productivity creates new scenarios, not fewer jobs' argument (radiology shortage, expense-reporting layers-of-analysis, Amazon-returns examples) is an economics-of-innovation companion to Carroll's organizational-culture material — both argue against a fixed-pie, static-headcount view of how organizations absorb capability change.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004808,
+   "fused_score": 0.276,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (2026-06-25-carroll-stanford-gsb-making-organizational-culture-great -supports->), fused 0.28; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/ai-benchmarks",
+   "path": "wiki/concepts/ai-benchmarks.md",
+   "type": "concept",
+   "title": "ai-benchmarks",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/durable-skills",
+     "edge_type": "depends-on",
+     "via": "measurement methodology — Vantage and similar protocols define new benchmark types for human skills (not model capability)",
+     "hops": 1
+    },
+    {
+     "from_seed": "concepts/automation-vs-augmentation",
+     "edge_type": "supports",
+     "via": "Narayanan's release-decision frame — reliability threshold required for automation deployment exceeds that for augmentation deployment; reliability is the gating dimension benchmarks have under-measured",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/durable-skills -->depends-on--> this (1 hop)",
+    "graph: concepts/automation-vs-augmentation -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": 0.92,
+   "accessed_at": "2026-10-03",
+   "last_confirmed": "2026-10-03",
+   "days_since_access": 1,
+   "effective_confidence": 0.91,
+   "rrf_score": 0.004673,
+   "fused_score": 0.275,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (durable-skills -depends-on->), fused 0.28; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-08-16-hill-bloomberg-leaders-ceo-skills-age-of-ai",
+   "path": "wiki/sources/2026-08-16-hill-bloomberg-leaders-ceo-skills-age-of-ai.md",
+   "type": "source",
+   "title": "The Leadership Skills for CEOs That Will Matter Most in the Age of AI",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great",
+     "edge_type": "supports",
+     "via": "two academic treatments of organizational culture as an engineered rather than emergent property, both from business-school faculty and both refusing the charisma-and-vision framing. Carroll supplies the organization-theory grounding for the strategic-renewal/organizational-culture cell; Hill supplies the leadership-behaviour layer on top of it — the argument that a leader's job is to make difference safe to express and then harness it (*'you're hiring them for their ideas and if you don't get those ideas, then shame on you'*), and that formal authority is *'quite limited in many ways in what you need to do now to influence people to get the job done'*",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004762,
+   "fused_score": 0.273,
+   "verdict": "ignore",
+   "reason": "CEO leadership skills, not workforce talent management",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/ai-employment-effects",
+   "path": "wiki/concepts/ai-employment-effects.md",
+   "type": "concept",
+   "title": "ai-employment-effects",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/durable-skills",
+     "edge_type": "instance-of",
+     "via": "the labour-market consequences turn on which skills remain valuable; durable skills are the supply-side answer",
+     "hops": 1
+    },
+    {
+     "from_seed": "concepts/automation-vs-augmentation",
+     "edge_type": "supports",
+     "via": "Brynjolfsson Canaries — declines concentrated in automation share, not augmentation",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/durable-skills -->instance-of--> this (1 hop)",
+    "graph: concepts/automation-vs-augmentation <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-09-28",
+   "last_confirmed": "2026-09-28",
+   "days_since_access": 6,
+   "effective_confidence": 0.889,
+   "rrf_score": 0.00463,
+   "fused_score": 0.27,
+   "verdict": "use",
+   "reason": "central concept for F1; graph-only but it is the wiki's synthesis of the employment evidence",
+   "reason_class": null,
+   "promoted": null,
+   "anchor": "W1"
+  },
+  {
+   "slug": "sources/2026-04-14-thompson-the-daily-workers-letting-ai-do-their-jobs",
+   "path": "wiki/sources/2026-04-14-thompson-the-daily-workers-letting-ai-do-their-jobs.md",
+   "type": "source",
+   "title": "The Workers Letting A.I. Do Their Jobs",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/durable-skills",
+     "edge_type": "supports",
+     "via": "Operator-vocabulary statement of the durable-skills frame — communication, setting priority, deciding what to build are the hard-to-automate parts",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/durable-skills <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004545,
+   "fused_score": 0.261,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (durable-skills -supports->), fused 0.26; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/enterprise-ai-adoption",
+   "path": "wiki/concepts/enterprise-ai-adoption.md",
+   "type": "concept",
+   "title": "enterprise-ai-adoption",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/automation-vs-augmentation",
+     "edge_type": "supports",
+     "via": "per-task deployment lens used by Anand-Wu, MITTRI/Cisco, MIT CISR",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/automation-vs-augmentation -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-10-03",
+   "last_confirmed": "2026-10-03",
+   "days_since_access": 1,
+   "effective_confidence": 0.94,
+   "rrf_score": 0.004348,
+   "fused_score": 0.259,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (automation-vs-augmentation -supports->), fused 0.26; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-06-mit-ocw-future-of-mit-open-education",
+   "path": "wiki/sources/2026-05-06-mit-ocw-future-of-mit-open-education.md",
+   "type": "source",
+   "title": "The Future of MIT Open Education",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/durable-skills",
+     "edge_type": "supports",
+     "via": "open-education-as-supply-side: Universal AI's 22-modules-and-counting curriculum (fundamentals + verticals AI+x, climate+x, biology+x, health+x) is the AI-era supply-side investment in skills that scale; OCW reaching 1 billion learners over 10 years is the explicit ambition",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/durable-skills <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004505,
+   "fused_score": 0.258,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (durable-skills -supports->), fused 0.26; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/jagged-frontier",
+   "path": "wiki/concepts/jagged-frontier.md",
+   "type": "concept",
+   "title": "jagged-frontier",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/automation-vs-augmentation",
+     "edge_type": "supports",
+     "via": "per-task fit determines whether AI augments or harms — empirical mechanism",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/automation-vs-augmentation <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-10-03",
+   "last_confirmed": "2026-10-03",
+   "days_since_access": 1,
+   "effective_confidence": 0.94,
+   "rrf_score": 0.00431,
+   "fused_score": 0.257,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (automation-vs-augmentation -supports->), fused 0.26; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era",
+   "path": "wiki/sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era.md",
+   "type": "source",
+   "title": "Stanford CS153 Frontier Systems | Nikhyl Singhal from Skip on Product Management in the AI Era",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/durable-skills",
+     "edge_type": "supports",
+     "via": "named durable skills cluster from the PM-leader vantage: judgment, decisioning, courage, customer-conversation, system-design-mindset; convergent with Globerson/Sternfels/Thompson clusters but from yet-another industry-vantage",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/durable-skills <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004464,
+   "fused_score": 0.256,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (durable-skills -supports->), fused 0.26; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/ai-deskilling",
+   "path": "wiki/concepts/ai-deskilling.md",
+   "type": "concept",
+   "title": "ai-deskilling",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/durable-skills",
+     "edge_type": "contradicts",
+     "via": "deskilling = which skills get hollowed out by AI; durable-skills = which skills resist substitution. Inverse measurement frames of the same labour-economics question",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/durable-skills <--contradicts<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.85,
+   "accessed_at": "2026-09-15",
+   "last_confirmed": "2026-09-15",
+   "days_since_access": 19,
+   "effective_confidence": 0.688,
+   "rrf_score": 0.004717,
+   "fused_score": 0.252,
+   "verdict": "ignore",
+   "reason": "contradicts-edge to durable-skills is two measurement frames of one question, not conflicting claims; the apprenticeship mechanism is carried by W5 and W3",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/ai-coding-productivity-evidence",
+   "path": "wiki/concepts/ai-coding-productivity-evidence.md",
+   "type": "concept",
+   "title": "AI coding productivity — the evidence",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/automation-vs-augmentation",
+     "edge_type": "part-of",
+     "via": null,
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/automation-vs-augmentation <--part-of<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.85,
+   "accessed_at": "2026-10-03",
+   "last_confirmed": "2026-10-03",
+   "days_since_access": 1,
+   "effective_confidence": 0.841,
+   "rrf_score": 0.004386,
+   "fused_score": 0.251,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (automation-vs-augmentation -part-of->), fused 0.25; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/expert-generalist",
+   "path": "wiki/concepts/expert-generalist.md",
+   "type": "concept",
+   "title": "expert-generalist",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/durable-skills",
+     "edge_type": "supports",
+     "via": "the Expert Generalist trait-set (curiosity, fundamentals-over-tools, collaboration) is a software-practitioner articulation of the durable-skills cluster",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/durable-skills <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.9,
+   "accessed_at": "2026-09-15",
+   "last_confirmed": "2026-09-15",
+   "days_since_access": 19,
+   "effective_confidence": 0.729,
+   "rrf_score": 0.004587,
+   "fused_score": 0.249,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (durable-skills -supports->), fused 0.25; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/micro-productivity-trap",
+   "path": "wiki/concepts/micro-productivity-trap.md",
+   "type": "concept",
+   "title": "micro-productivity-trap",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/automation-vs-augmentation",
+     "edge_type": "contradicts",
+     "via": "process lock-in = automation without redesign; reinvent-the-business resists this trap",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/automation-vs-augmentation <--contradicts<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-09-28",
+   "last_confirmed": "2026-09-28",
+   "days_since_access": 6,
+   "effective_confidence": 0.889,
+   "rrf_score": 0.004274,
+   "fused_score": 0.249,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (automation-vs-augmentation -contradicts->), fused 0.25; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-03-20-huggingface-agentic-evaluations-workshop",
+   "path": "wiki/sources/2026-03-20-huggingface-agentic-evaluations-workshop.md",
+   "type": "source",
+   "title": "Agentic Evaluations Workshop — Deep Dive on the Future of Evals for Agents",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/automation-vs-augmentation",
+     "edge_type": "supports",
+     "via": "Narayanan's release-decision frame: automation tasks (autonomous customer-service agent) require a higher reliability threshold than augmentation tasks (coding agent with human-in-loop); reliability matters more in automation",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/automation-vs-augmentation <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004167,
+   "fused_score": 0.239,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (automation-vs-augmentation -supports->), fused 0.24; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "syntheses/ai-worker-maturity-levels",
+   "path": "wiki/syntheses/ai-worker-maturity-levels.md",
+   "type": "synthesis",
+   "title": "ai-worker-maturity-levels",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/durable-skills",
+     "edge_type": "supports",
+     "via": "the model's verification dimension operationalizes the corpus-wide 'evaluation is the terminal skill' finding as a per-level behaviour",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/durable-skills <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.8,
+   "accessed_at": "2026-09-17",
+   "last_confirmed": "2026-08-31",
+   "days_since_access": 17,
+   "effective_confidence": 0.662,
+   "rrf_score": 0.004425,
+   "fused_score": 0.233,
+   "verdict": "ignore",
+   "reason": "classifies an individual's AI-use maturity, not organisational talent practice",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-13-jha-emergent-democratizing-app-building-with-claude",
+   "path": "wiki/sources/2026-05-13-jha-emergent-democratizing-app-building-with-claude.md",
+   "type": "source",
+   "title": "How Emergent is making app building more accessible with Claude",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/automation-vs-augmentation",
+     "edge_type": "supports",
+     "via": "Sits hard on the *automation* leg: Emergent users are *not* augmenting an existing dev team — they're replacing the dev-shop alternative (CEO names the comparison: *'a $250,000 price point that they would have paid if they had gone and and hired a dev shop'*). The augmentation pattern of Lyft and HubSpot fits the wage-labour side of the workforce; Emergent's pattern fits the *small-business-can-now-self-serve* side of the same shift.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/automation-vs-augmentation <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.7,
+   "accessed_at": "2026-05-20",
+   "last_confirmed": "2026-05-20",
+   "days_since_access": null,
+   "effective_confidence": 0.7,
+   "rrf_score": 0.004132,
+   "fused_score": 0.222,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (automation-vs-augmentation -supports->), fused 0.22; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-02-09-hubspot-customer-success-with-claude",
+   "path": "wiki/sources/2026-02-09-hubspot-customer-success-with-claude.md",
+   "type": "source",
+   "title": "How HubSpot uses Claude for customer success",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/automation-vs-augmentation",
+     "edge_type": "supports",
+     "via": "Practitioner case of CSMs operating *above their typical pay grade* — Claude turns a call transcript + knowledge-base articles into hospitality-revenue analysis the CSM then takes to the customer (*'that is something so far beyond my typical role as a CSM'*). The augmentation pattern is *role-level scope expansion*, not just task automation.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/automation-vs-augmentation <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.6,
+   "accessed_at": "2026-05-20",
+   "last_confirmed": "2026-05-20",
+   "days_since_access": null,
+   "effective_confidence": 0.6,
+   "rrf_score": 0.004237,
+   "fused_score": 0.217,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (automation-vs-augmentation -supports->), fused 0.22; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-02-18-lyft-customer-support-with-claude",
+   "path": "wiki/sources/2026-02-18-lyft-customer-support-with-claude.md",
+   "type": "source",
+   "title": "How Lyft uses Claude for faster, more human customer support",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/automation-vs-augmentation",
+     "edge_type": "supports",
+     "via": "Named practitioner case of *augment-then-reinvest-the-savings-back-into-the-human-tier*: Lyft uses Claude to absorb routine support and reinvests the millions saved into upskilling human agents (anti-burnout, more empathy on complex cases) plus a new high-touch programme ('Lyft Silver'). Concrete counter to the assume-cuts framing of customer-support automation.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/automation-vs-augmentation <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.6,
+   "accessed_at": "2026-05-20",
+   "last_confirmed": "2026-05-20",
+   "days_since_access": null,
+   "effective_confidence": 0.6,
+   "rrf_score": 0.004202,
+   "fused_score": 0.215,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (automation-vs-augmentation -supports->), fused 0.21; no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  }
+ ],
+ "expansions": [
+  {
+   "trigger_facet": "F3 — AI toegepast binnen HR-processen zelf (werving, beoordeling, agents in de organisatie)",
+   "method": "index.md",
+   "added": [],
+   "note": "grep for recruit/HR/CHRO/people analytics/onboarding found only incidental mentions; no page added — the gap is reported in the answer"
+  }
+ ],
+ "answer_map": [
+  {
+   "anchor": "W1",
+   "claim": "reshape ≫ replace (50–55% reshaped, 10–15% vulnerable); LF Europe −3% entry-level; BCG warning on cutting beyond AI's reach; hiring changes at job definition and applicant pool, AI-written applications homogenise",
+   "pages": [
+    "concepts/ai-employment-effects"
+   ],
+   "span": "## Working definition; ## The Linux Foundation not-a-jobs-crisis…; ## Reshape ≫ replace…; ## AI reshapes hiring at the job-definition layer…"
+  },
+  {
+   "anchor": "W2",
+   "claim": "definition of durable skills; 2× demand growth for human skills; evaluation of agent fleets; new hires 53% slower to productivity, 23% leave within six months; mindset not skillset (Argenti)",
+   "pages": [
+    "concepts/durable-skills"
+   ],
+   "span": "## Working definition; ## Human skills growing twice as fast…; ## Upskilling over hiring…; ## The mindset-not-skillset inversion"
+  },
+  {
+   "anchor": "W3",
+   "claim": "ADP: young workers in most-exposed jobs −13% then −16/17%; pyramid→diamond; firing top experts is short-sighted; 'a design problem', 'a little lazy'; mavericks; fleet of agents",
+   "pages": [
+    "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity"
+   ],
+   "span": "## TL;DR items 5, 9, 10, 12, 13, 14"
+  },
+  {
+   "anchor": "W4",
+   "claim": "net tech hiring +26%/+31%; upskilling 57%, 94%, 3.5× vs hiring; certifications 76%; training 93% vs pay 91%; publisher sells training",
+   "pages": [
+    "sources/2026-05-01-lf-state-of-tech-talent-global-2026"
+   ],
+   "span": "## TL;DR; ## Source-quality flag"
+  },
+  {
+   "anchor": "W5",
+   "claim": "'not yet backed up by data'; employer hiring 25% more juniors; 2× human-skills demand; 7× seniorized skills, 'not by osmosis'; 81% vs 34%; PwC routes 17–18→5; report not ingested",
+   "pages": [
+    "sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era"
+   ],
+   "span": "## TL;DR items 3–6, 8; relationships: contradicts W3"
+  },
+  {
+   "anchor": "W6",
+   "claim": "three organisational shifts; 5 C's; identity not tied to job title",
+   "pages": [
+    "sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026"
+   ],
+   "span": "## TL;DR items 3–5"
+  },
+  {
+   "anchor": "W7",
+   "claim": "RCT N=1,261 HR/finance managers: −9pp accountability, +44% escalation, −18% errors caught, +13% role uncertainty, no adoption gain",
+   "pages": [
+    "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees"
+   ],
+   "span": "headline finding paragraph"
+  },
+  {
+   "anchor": "W8",
+   "claim": "untailored AI underperformed legacy IT; tailored procedure/authority/training/incentives raised use and performance; procedure the main lever",
+   "pages": [
+    "sources/2025-06-09-krakowski-human-centered-ai-field-experiment"
+   ],
+   "span": "## TL;DR items 1, 2, 4, 6"
+  },
+  {
+   "anchor": "W9",
+   "claim": "HelloPrint customer service ~100→18, mostly natural attrition; every office job behind a screen disappears",
+   "pages": [
+    "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero"
+   ],
+   "span": "## TL;DR items 1, 5; title"
+  }
+ ],
+ "answer": "**Kort:** de wiki behandelt HR en talentmanagement vooral via twee vragen. Wat doet AI met werk en vaardigheden? En hoe moeten organisaties daarop inspelen bij werving, ontwikkeling en functieontwerp? Over AI *binnen* HR-processen zelf (wervingssoftware, people analytics, beoordeling) staat er weinig.\n\n**1. Werk verandert vaker dan het verdwijnt, en de druk zit bij instromers.**\n- Over meerdere methoden heen is de rode draad dat banen eerder veranderen dan verdwijnen. BCG schat dat 50–55% van de Amerikaanse banen binnen 2–3 jaar ingrijpend verandert, en dat 10–15% over 4–5 jaar kan verdwijnen [W1].\n- Starters merken het eerst. Brynjolfsson ziet in loongegevens van ADP dat de werkgelegenheid van jonge werknemers in de meest blootgestelde beroepen eerst met ~13% daalde en nu met *\"up to 16 or 17%\"* [W3]. De Linux Foundation meldt een netto groei van tech-banen (wereldwijd +26% in 2025 en +31% in 2026). In Europa krimpen de instroomfuncties in tech echter met 3% [W4][W1].\n- Hierover is de wiki niet eensgezind. Peter Brown (PwC, WEF) zegt dat *\"the most dire headlines about entry-level jobs are not yet backed up by data\"*. Hij noemt een werkgever die juist 25% meer junioren aanneemt, om later genoeg leidinggevenden te hebben [W5]. De wiki legt dit vast als expliciete tegenspraak met Brynjolfsson. Het verschil zit in het soort bewijs: wat werkgevers zeggen van plan te zijn, tegenover wat de loonadministratie laat zien. Het zit ook in de reikwijdte: alle startersbanen, of alleen de meest blootgestelde beroepen [W3][W5].\n- Een Nederlands voorbeeld: bij HelloPrint ging de klantenservice van ongeveer 100 naar 18 mensen, grotendeels via natuurlijk verloop. Oprichter Scheffer verwacht dat elke kantoorbaan achter een scherm verdwijnt [W9]. Het gaat om één bedrijf en om zijn eigen woorden.\n\n**2. Het talentprobleem: de piramide wordt een diamant.**\n- Als de instroom krimpt, droogt de aanvoer van middenkader en senioren op. Brynjolfsson: *\"where are those middle managers, middle-skill people going to come from\"* [W3].\n- Werkgevers vragen van starters zeven keer zoveel *seniorized* vaardigheden: vaardigheden die vroeger in de eerste drie à vier jaar groeiden. Brown: *\"It's not going to happen by osmosis.\"* Het leren in de praktijk moet dus bewust opnieuw worden ingericht [W5].\n- BCG waarschuwt dat wie verder in personeel snijdt dan AI kan opvangen, kennis en sleuteltalent kwijtraakt [W1]. Brynjolfsson voegt toe dat de beste vakmensen juist meer waard worden, omdat hun kennis het systeem voedt. Hen ontslaan omdat minder ervaren mensen met AI bijna even goed presteren, noemt hij *\"a very short-sighted approach\"* [W3].\n\n**3. Welke vaardigheden tellen.**\n- De wiki noemt vaardigheden *duurzaam* als ze niet in vaste regels te vangen zijn, afhangen van context en mensen, en langzaam verouderen [W2]. In sectoren waar AI veel werk raakt, groeit de vraag naar menselijke vaardigheden twee keer zo snel: oordeelsvermogen, problemen oplossen, kritisch denken en relaties opbouwen. De aanbevolen combinatie is vakkennis, handigheid met AI en menselijke vaardigheden [W5][W2].\n- Brynjolfsson verwacht dat bijna iedereen een *\"fleet of agents\"* gaat aansturen. Wie goed richting geeft en het werk vooral goed beoordeelt, gaat het best doen [W3][W2].\n- Raman (LinkedIn) noemt vijf vaardigheden die je kunt trainen: creativiteit, nieuwsgierigheid, moed, compassie en communicatie. Iemands beroepsidentiteit hangt volgens hem niet meer aan een functietitel [W6]. Argenti (CIO van Goldman Sachs) gaat verder: verdedig geen lijst vaardigheden, maar verander je mindset en je gewoonten [W2].\n\n**4. Wat HR concreet kan doen.**\n- **Opleiden in plaats van aannemen.** In de enquête van de Linux Foundation (400 deelnemers) is bijscholing de eerste reactie op tekorten (57%), en 94% vindt bijscholing belangrijk. Organisaties kiezen 3,5 keer vaker voor opleiden dan voor aannemen [W4]. Nieuwe medewerkers doen 53% langer over volledige productiviteit, en 23% vertrekt binnen zes maanden [W2]. Kanttekening: de uitgever verkoopt zelf trainingen en certificaten [W4].\n- **Vaardigheden tellen zwaarder dan diploma's.** 81% van de werkgevers geeft voorrang aan praktijkervaring, 34% aan diploma's. PwC bracht het aantal instroomroutes terug van zo'n 17 à 18 naar ongeveer vijf en werft op potentieel en vaardigheden [W5]. Voor 76% van de wervende managers zijn certificaten belangrijk. Als manier om mensen te behouden scoort training (93%) hoger dan salaris (91%) [W4].\n- **Werk en functies opnieuw ontwerpen, niet AI eroverheen leggen.** Raman noemt drie verschuivingen: leiden door ontwerp in plaats van bevel, mensen beoordelen op wat ze kunnen in plaats van op hun functiecategorie, en mensen ontwikkelen in plaats van taken bewaken [W6]. Brynjolfsson noemt het *\"a design problem\"*. Alleen meten hoeveel minder mensen nodig zijn, noemt hij *\"a little lazy\"*. Organisaties moeten weten wie hun *mavericks* zijn en hen bewust inzetten [W3].\n- **AI afstemmen op de medewerker.** In een veldexperiment met 72 verkopers (gepubliceerd in Management Science) presteerde AI die niet was afgestemd op de werkstijl slechter dan het oude systeem. De afgestemde versie, met aangepaste werkwijze, beslisruimte, training en beloning, werd steeds meer gebruikt en presteerde beter. De werkwijze bleek de belangrijkste knop [W8].\n\n**5. AI in het HR-proces zelf: hier is de wiki dun.**\n- **Werving.** De echte verandering zit volgens Carroll (die onderzoek van Fernández-Mateo aanhaalt) niet in de selectie. Ze zit in hoe functies worden omschreven en hoe de groep sollicitanten ontstaat. Sollicitaties die met AI zijn geschreven gaan steeds meer op elkaar lijken, en dat maakt selecteren moeilijker. Dit is tweedehands en niet gemeten [W1].\n- **Agents als collega's.** In een experiment met 1.261 HR- en financemanagers leidde het presenteren van AI als collega tot 9 procentpunt minder eigen verantwoordelijkheid, 44% meer escalaties, 18% minder gevonden fouten en 13% meer onzekerheid over de eigen rol. Het leverde geen extra gebruik op [W7].\n- **Wat ontbreekt.** De wiki heeft geen bron over wervingssoftware, people analytics of AI in beoordelingsgesprekken. Dat is een gat in de wiki, geen bevinding over de praktijk.\n\n**Hoe stevig is dit?** Het sterkst zijn de loongegevens van Brynjolfsson en het experiment in Management Science [W3][W8]. Veel ander bewijs komt uit interviews en enquêtes van partijen met een eigen belang. Het onderliggende PwC-rapport zit niet zelf in de wiki, en de Linux Foundation verkoopt trainingen [W5][W4].",
+ "generated_at": "2026-10-04T11:56:29.512490Z"
+}

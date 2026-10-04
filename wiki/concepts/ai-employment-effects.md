@@ -12,7 +12,7 @@ relationships:
   - type: caused
     target: ai-deskilling
     via: "task-composition shift is one mechanism within broader employment effects"
-accessed_at: "2026-09-28"
+accessed_at: "2026-10-04"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
