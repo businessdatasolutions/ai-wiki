@@ -10,6 +10,10 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-10-04] refactor | industrial-ai-agents stops calling itself a single-source stub
+
+The intro of [[concepts/industrial-ai-agents|industrial-ai-agents]] still read *"a stub on a single source"* with confidence *"set defensively at 0.70"*, while the frontmatter recorded five sources and 0.75 (flagged in the entry below). The paragraph now names the five sources the page builds on, what each contributes, and why confidence stays at 0.75: two vendor sources, one executive-education talk and two founder interviews, none measuring outcomes independently. `source_count` stays at 5. Two more source pages link to this concept (Jha / Emergent; the agentic-infrastructure talk), but the page does not cite them. Quality score unchanged at 1.0.
+
 ## [2026-10-04] ingest | Two Bloomberg Tech interviews: AI agents for hardware design, and a defense prime's 55 models
 
 The user sent three links; two were the same video with different share parameters, so two videos were ingested. Both are short Bloomberg Tech studio interviews with Ed Ludlow, with manual English captions. Neither was in the wiki. Stills were not run: there is nothing on screen beyond the speakers.
