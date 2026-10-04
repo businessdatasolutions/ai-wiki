@@ -3,9 +3,9 @@ type: concept
 title: AI coding productivity — the evidence
 aliases: ["AI coding productivity", "AI developer productivity", "developer productivity evidence", "productivity paradox in coding", "throughput vs stability"]
 confidence: 0.85
-last_confirmed: "2026-10-03"
-source_count: 10
-accessed_at: "2026-10-03"
+last_confirmed: "2026-10-04"
+source_count: 11
+accessed_at: "2026-10-04"
 tags: [rct, productivity, metr, copilot, dora, throughput, delivery-stability, perception-gap, heterogeneity, seniority, measurement]
 relationships:
   - type: part-of
@@ -93,6 +93,8 @@ The defensible reading of the whole corpus: **AI coding tools reliably increase 
 - **Vendor proximity.** Two of Cui et al.'s three sites are Microsoft (which owns GitHub) and a large systems integrator. Randomisation and pre-registration mitigate this; they do not eliminate it.
 - **No study measures net value.** Every design here scores volume (tasks, time, throughput). **Nobody has measured AI-assisted development against a value or defect-adjusted outcome.** This is the largest gap in the concept.
 - **Everything is pre-agentic.** METR measures IDE assistance; Cui et al. measure Copilot. **No RCT in the corpus measures cloud agent fleets**, which is what the 2026 practitioner material is about.
+- **The ~100% claim (2026-10-04).** [[2026-09-30-singh-botha-bloomberg-flow-engineering-ai-hardware-design|Singh (Flow Engineering), September 2026]]: *"nearly a 100% of code in Silicon Valley is written by AI,"* with design cycles *"from two weeks to two hours."* Stated without a source, by a founder selling the hardware version of that shift, in a fundraising interview. It belongs with the practitioner self-reports on this page, not with the measured studies, and like them it says nothing about value or defects.
+
 
 ## A maximal practitioner self-report, and why it belongs here anyway (added 2026-09-09)
 

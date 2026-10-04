@@ -3,8 +3,8 @@ type: concept
 aliases: ["industrial AI agents", "industrial agentic AI", "OT AI agents", "manufacturing AI agents"]
 tags: [industrial-ai-agents, ai-agents, ot-it-convergence, manufacturing, ontology, semantic-data-layer, knowledge-graph, unified-namespace, mqtt, scada, mes, cmms, qms, erp]
 confidence: 0.75
-last_confirmed: "2026-10-03"
-source_count: 4
+last_confirmed: "2026-10-04"
+source_count: 5
 relationships:
   - type: instance-of
     target: ai-agents
@@ -12,7 +12,7 @@ relationships:
   - type: depends-on
     target: agent-harness
     via: "the runtime layer is still required; industrial-AI agents add a semantic-data-layer dependency on top"
-accessed_at: "2026-10-03"
+accessed_at: "2026-10-04"
 quality_score: 1
 ---
 
@@ -152,9 +152,14 @@ The industrial-AI thread sits **adjacent to but distinct from** the agent-harnes
 - **Foundation-model integration.** How an ontology-grounded agent integrates with foundation-model reasoning in practice (MCP tool? generated tool wrapper? embedding ontology fragment in system prompt?) is unaddressed.
 - **Cross-pollination with the harness thread.** The two threads (industrial-data-fabric and harness-runtime) currently sit beside each other without shared vocabulary. Whether they converge — or whether industrial AI develops a parallel discipline — is open.
 
+
+## Engineering design, upstream of the plant (added 2026-10-04)
+
+[[2026-09-30-singh-botha-bloomberg-flow-engineering-ai-hardware-design|Flow Engineering on Bloomberg Tech, September 2026]] applies agents one step before the environment this page describes: to the engineering record of a hardware product. Its agents *"listen to"* changes in CAD, simulation and Git and work out *"the impact of that change,"* replacing multi-year waterfall design cycles with what the CEO calls *"continuous verification."* The company describes itself as *"the system of record for requirements and verification"* for aerospace, defense and automotive programmes (Anduril, Rivian, Stoke Space, GM). The overlap with this page is the first property of the working definition, data-fabric primacy: the asset is one consistent record across fragmented tools, which agents then act on. The decisions it informs are design decisions, not production ones, so it is an adjacent case rather than an instance of the definition. The evidence is a founder's fundraising interview.
+
 ## Debates and supersession
 
-Empty for now. Single source.
+- **Upstream versus operational (2026-10-04).** The working definition is about agents acting on a plant's operational data. [[2026-09-30-singh-botha-bloomberg-flow-engineering-ai-hardware-design|Flow Engineering]] applies the same data-first idea to engineering design data. Whether that belongs under this concept, or needs its own (agents in hardware engineering), is open; a second source on engineering-side agents would settle it.
 
 ## Mentioned in
 

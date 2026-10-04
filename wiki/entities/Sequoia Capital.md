@@ -5,9 +5,9 @@ aliases: ["Sequoia Capital", "Sequoia", "Sequoia Capital Training Data"]
 tags: [sequoia-capital, venture-capital, training-data-podcast, ai-ascent, sonya-huang, interview-publisher]
 since: 1972
 confidence: 0.75
-last_confirmed: "2026-08-20"
-accessed_at: "2026-09-15"
-source_count: 3
+last_confirmed: "2026-10-04"
+accessed_at: "2026-10-04"
+source_count: 4
 relationships:
   - type: published-by
     target: 2026-06-11-kilpatrick-sequoia-model-eats-the-harness
@@ -39,3 +39,7 @@ Two things follow for how the wiki should read Sequoia sources. First, the firm 
 **Sonya Huang** appears in two of the three sources — as interviewer in the Kilpatrick episode and as speaker in the keynote — but is not yet promoted to an entity page; she is not an `author:` on either (both are attributed to the channel per the wiki's video convention). Worth promoting if a third Sequoia source turns on her specifically.
 
 Otherwise Sequoia remains an *attribution/publication* node: for the interview sources, the substantive claims live on the interview subjects' pages and the concept pages they touch.
+
+## A former partner backs a portfolio company on his own (added 2026-10-04)
+
+[[2026-09-30-singh-botha-bloomberg-flow-engineering-ai-hardware-design|Bloomberg Tech, September 2026]]: Roelof Botha led Flow Engineering's Series A at Sequoia *"just more than a year ago"* and now, no longer at the firm, invests his own capital and sits on Flow's board. He names reindustrialisation as part of the original thesis for the company, and hardware's weight among the most valuable technology companies as the reason it lasts.

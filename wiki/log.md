@@ -10,6 +10,20 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-10-04] ingest | Two Bloomberg Tech interviews: AI agents for hardware design, and a defense prime's 55 models
+
+The user sent three links; two were the same video with different share parameters, so two videos were ingested. Both are short Bloomberg Tech studio interviews with Ed Ludlow, with manual English captions. Neither was in the wiki. Stills were not run: there is nothing on screen beyond the speakers.
+
+**Acquire.** `fetch_transcript.py -o` for both. Gates as for the 2026-10-03 livestream: coverage to the end (10:35 of 10:42; 8:13 of 8:14), no doubled segments, no a11y-label prefixes. The manual tracks still misspell names (*Square Capital* for Sequoia, *Andoril* for Anduril, *Vectrus* for Vectis); corrected in quotes and listed on each page.
+
+**Pages.**
+- [[2026-09-30-singh-botha-bloomberg-flow-engineering-ai-hardware-design]]: Flow Engineering's CEO Pari Singh and investor Roelof Botha. AI agents for hardware engineering, *"continuous verification"* across CAD, simulation and Git. `contradicts` [[2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees|Kropp et al.]]: the founder describes his company as one where *"AIs live as employees"*, the framing that experiment found lowers accountability. `supports` [[2026-05-21-sinclair-ivers-benitez-sei-cmu-ai-native-software-engineering|SEI/CMU]], [[2026-07-30-hines-pierce-mckinsey-ai-physical-world-more-valuable|Hines-Pierce]] and [[2026-09-30-yc-root-access-startup-industrial-base-dc|the YC defense-tech hub]].
+- [[2026-10-02-hiza-bloomberg-lockheed-ai-openai-f35]]: Lockheed Martin's Sarah Hiza. Model-agnostic with 55 LLMs, AI tested before deployment like an aircraft, and OpenAI's team working beside the F-35 programme. `supports` [[2026-09-30-murphy-koomen-diu-defense-ai-adoption|Murphy & Koomen / DIU]], [[2026-09-30-luo-null-labs-synthetic-data-ai-testing|Luo / Null Labs]] and the YC hub.
+
+**Updated.** Concepts: [[concepts/industrial-ai-agents|industrial-ai-agents]] (Flow as an adjacent, upstream case; its Debates section, which still read *"Empty for now. Single source."* at four sources, now carries the open question of where engineering-side agents belong), [[concepts/enterprise-ai-adoption|enterprise-ai-adoption]], [[concepts/ai-benchmarks|ai-benchmarks]], and a Debates bullet on [[concepts/ai-coding-productivity-evidence|ai-coding-productivity-evidence]] for the unsourced *"nearly a 100% of code"* claim. Entities: [[OpenAI]], [[Sequoia Capital]], and [[Bloomberg Podcasts]], which gains the alias *Bloomberg Tech*: the channel became a two-source author with this batch. `source_count` raised by one per citing page; confidence held, since both are broadcast interviews.
+
+**Seen in passing.** The intro of `industrial-ai-agents` still calls itself *"a stub on a single source"* at five sources. Not rewritten here.
+
 ## [2026-10-03] refactor | Stills without the download, index counts out, DIU and Luther Lowe get pages
 
 Three follow-ups to the defense-tech ingest below, at the user's request.

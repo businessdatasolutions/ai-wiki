@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI benchmark", "AI benchmarks", "AI evaluation", "AI evals"]
 tags: [ai-benchmarks, ai-evaluation, foundation-models, capability-reliability-gap, scar-fragmentation]
 confidence: 0.92
-last_confirmed: "2026-10-03"
-accessed_at: "2026-10-03"
-source_count: 24
+last_confirmed: "2026-10-04"
+accessed_at: "2026-10-04"
+source_count: 25
 relationships:
   - type: depends-on
     target: reward-hacking
@@ -246,3 +246,7 @@ Most of this page concerns **model** evaluation — public benchmarks, their sat
 [[2026-09-30-murphy-koomen-diu-defense-ai-adoption|Murphy / DIU at YC Root Access, September 2026]] adds a case this page lacked: the model under a workflow changes **during an incident**, not at a planned upgrade. [[Defense Innovation Unit|DIU]]'s CTO says the department today builds *"qualitative confidence in the outputs of these systems"* and asks for *"AI assurance frameworks and benchmarking to those command critical workflows."* His test case is a failover. When a cloud model is lost and the workflow *"must fail over to a local model or a different model or a different cloud provider, are the outputs of that system still good?"* His answer is *"I don't know"*, unless the development-to-deployment cycle was managed so that the setup can be snapshotted and compared.
 
 This is the scar-fragmentation problem from [[2026-03-20-huggingface-agentic-evaluations-workshop|the Hugging Face workshop]] seen from the operator's side. Habib shows that a score moves when the scaffold changes; a failover changes the model itself. In the same interview [[Pete Koomen]] asks the planned-upgrade version: how to keep *"a set of evals on every successive model in order to actually adopt what is available."* Murphy names a DIU programme, captioned *Mystic Depot*, that tests models' refusals and guardrails and tailors them, and rules out guardrail-free models as an insider-threat risk. No method, metric or result is given; what the talk adds is the stated need, not a way to meet it.
+
+## Testing to the corners of the box (added 2026-10-04)
+
+[[2026-10-02-hiza-bloomberg-lockheed-ai-openai-f35|Hiza (Lockheed Martin), October 2026]] answers the question of how an AI agent near weapon systems is kept under control by pointing to flight testing: *"the same way we go about, say, a missile system or an aircraft. We put it through rigorous testing, including corners of the box, so that we understand its capability"* before deployment. It is a deployer naming pre-deployment testing as the gate, which this page mostly sees from the evaluation side. No method, criterion or result is given. It sits beside [[2026-09-30-luo-null-labs-synthetic-data-ai-testing|Luo (Null Labs)]], who argues that defense has no common test standard for AI and autonomous systems; Hiza describes an internal practice, not a shared one.

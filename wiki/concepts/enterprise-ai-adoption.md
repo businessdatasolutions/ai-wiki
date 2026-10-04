@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-10-03"
-accessed_at: "2026-10-03"
-source_count: 139
+last_confirmed: "2026-10-04"
+accessed_at: "2026-10-04"
+source_count: 140
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -928,3 +928,7 @@ Together they cover the two halves of the page's recurring diagnosis. Krishna sa
 
 - **Compute as a capacity limit, not only a cost.** [[2026-09-30-murphy-koomen-diu-defense-ai-adoption|Murphy (DIU CTO) at YC Root Access, Sep 2026]]: *"power is always going to be our limiting constraint. So buy the best compute you can, the most inference efficient compute you can."* Inference demand in real conflict was *"significantly different"* from what command-post exercises had projected; he gives no figures. His next step is to pool compute across vendors, with quality-of-service rules for the prompts that AI-enabled software sends. The token-cost material above ([[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson]], [[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune|Lukic & Goydan]]) treats compute as a budget; here the binding limit is power and capacity.
 - **Two buyer-side barriers.** Switching costs stop a slightly better product from being adopted, and *"point solutions for applications, even with AI integrations,"* leave interoperability *"one of the main issues"*: *"100 postage stamp sized applications"* for 100,000 users are *"very hard to manage and maintain."* A government official's account, addressed to prospective vendors.
+
+## A defense prime that holds 55 models (added 2026-10-04)
+
+[[2026-10-02-hiza-bloomberg-lockheed-ai-openai-f35|Hiza (Lockheed Martin) on Bloomberg Tech, October 2026]] describes a multi-model strategy as deliberate policy: *"We have chosen to be agnostic when it comes to frontier labs… We see it a little bit like a horse race,"* with *"55 different large language models that we're using to run Lockheed Martin,"* across internal operations (*"human resources, financial analysis"*) and fielded aircraft and missile systems. Two further points bear on adoption. Lockheed has worked with machine learning for two decades and names compute as what held it back (*"the log jam was around compute capability"*). And a frontier lab's team now works beside its F-35 engineers on sensor physics. Read beside [[2026-09-30-murphy-koomen-diu-defense-ai-adoption|Murphy (DIU)]], who treats compute as the binding constraint and keeps open-weight models as fallbacks, this is the supplier side of the same defense market. A senior executive's broadcast account; the 55 models are not named.
