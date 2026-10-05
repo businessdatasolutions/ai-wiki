@@ -144,7 +144,11 @@ class LlmWikiExplainer(Scene):
         return ln
 
     def raise_cards(self):
-        self.bring_to_front(*self.cards.values(), self.index_box, self.log_box)
+        mobs = [self.cards[k] for k in PAGES if k in self.shown]
+        mobs += [self.index_box, *self.index_lines, self.log_box, *self.log_lines]
+        if getattr(self, "flag", None) is not None:
+            mobs.append(self.flag)
+        self.bring_to_front(*mobs)
 
     def build_bar(self):
         frame = RoundedRectangle(width=13.8, height=0.62, corner_radius=0.12)
@@ -293,6 +297,7 @@ class LlmWikiExplainer(Scene):
         self.cards = {k: page_card(PAGES[k][0], PAGES[k][1]).move_to([PAGES[k][2], PAGES[k][3], 0])
                       for k in PAGES}
         self.links = {}
+        self.shown = set(INITIAL)
         index = self.build_index()
         log = self.build_log()
 
@@ -333,6 +338,7 @@ class LlmWikiExplainer(Scene):
         self.play(reading.animate.scale(0.5).move_to(self.llm), run_time=0.8)
         self.play(FadeOut(reading), Indicate(self.llm, color=QUERY, scale_factor=1.15), run_time=0.6)
         self.sparks(LLM_POS, [self.cards["S3"].get_center()])
+        self.shown.add("S3")
         self.play(GrowFromCenter(self.cards["S3"]), run_time=0.6)
 
         touched = txt("pages touched: 1", 14, QUERY, MONO)
@@ -346,6 +352,7 @@ class LlmWikiExplainer(Scene):
 
         self.set_caption("Then it updates the pages the new source affects, and creates the ones that are missing.")
         self.sparks(LLM_POS, [self.cards["E1"].get_center(), self.cards["C3"].get_center()])
+        self.shown.add("C3")
         new_links = VGroup(self.link("S3", "E1"), self.link("S3", "C3"))
         self.add(new_links)
         self.raise_cards()
@@ -416,6 +423,7 @@ class LlmWikiExplainer(Scene):
         self.play(Transform(ans, y1, path_arc=-PI / 5), run_time=1.3)
         self.remove(ans)
         self.add(y1)
+        self.shown.add("Y1")
         new_links = VGroup(self.link("Y1", "C2"), self.link("Y1", "E1"))
         self.add(new_links)
         self.raise_cards()
