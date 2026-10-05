@@ -3,8 +3,12 @@ its nearest fragments, and carries them out to the LLM.
 
 Built with 3Blue1Brown's manim (manimgl, https://github.com/3b1b/manim).
 
+Two language versions share one scene: RagExplainer (English) and
+RagExplainerNL (Dutch). All on-screen text lives in STRINGS.
+
 Render (headless):
     xvfb-run -a -s "-screen 0 1920x1080x24" manimgl rag_explainer.py RagExplainer -w --hd
+    xvfb-run -a -s "-screen 0 1920x1080x24" manimgl rag_explainer.py RagExplainerNL -w --hd
 """
 from manimlib import *
 import numpy as np
@@ -47,6 +51,85 @@ FRAGMENTS = [
     ("Walking lowers blood pressure", "Health", -3.25, -2.80, DOWN),
 ]
 
+STRINGS = {
+    "en": dict(
+        fragments=[f[0] for f in FRAGMENTS],
+        topics={"Cooking": "COOKING", "Space": "SPACE", "Finance": "FINANCE", "Health": "HEALTH"},
+        title="How RAG finds its context",
+        subtitle="Retrieval-Augmented Generation, one question at a time",
+        space_label="embedding space  ·  2D projection",
+        panel_head="PROMPT TO THE LLM",
+        intro="Every document fragment is embedded as a point. Similar meaning lands close together.",
+        asks="A user asks a question.",
+        embed="The question is embedded with the same model, so it becomes a point too.",
+        distance="Distance in this space stands for difference in meaning.",
+        topk="Keep the {k} nearest fragments (top-k), drop the rest.",
+        attach="The nearest fragments attach to the question.",
+        fly="The question leaves the space and drags its snippets into the prompt.",
+        generate="The LLM answers from the retrieved context.",
+        q_prefix="Q: ",
+        context="CONTEXT",
+        questions=[
+            ("How long should I boil an egg?", "Soft-boil about 6 minutes,\nhard-boil about 10.",
+             "Top-k always returns k fragments, even a weak third match.", "retrieve"),
+            ("Why is Mars red?", "Its surface dust is rich in\niron oxide: Mars is rusty.", None, None),
+            ("Is eating eggs every day healthy?",
+             "For most people, yes: one egg\na day is fine, and eggs are\na good source of protein.",
+             "This question sits between two topics, so retrieval pulls from both.", "answer"),
+        ],
+        steps=["Retrieve", "Augment", "Generate"],
+        step_notes=["nearest fragments\nto the question", "pasted into\nthe prompt",
+                    "the LLM answers\nfrom that context"],
+        steps_footer=None,
+    ),
+    "nl": dict(
+        fragments=[
+            "Zachtgekookt ei: 6 minuten",
+            "Hardgekookt ei: 10 minuten",
+            "Zout het pastawater royaal",
+            "Laat biefstuk even rusten",
+            "IJzeroxide maakt Mars rood",
+            "Mars heeft twee kleine manen",
+            "Jupiter is een gasreus",
+            "Zonlicht is 8 min onderweg",
+            "Rente op rente laat geld groeien",
+            "Indexfondsen spreiden risico",
+            "Inflatie holt spaargeld uit",
+            "Eieren zitten vol eiwit",
+            "Eén ei per dag is meestal prima",
+            "Slaap 7 tot 9 uur per nacht",
+            "Wandelen verlaagt de bloeddruk",
+        ],
+        topics={"Cooking": "KOKEN", "Space": "RUIMTEVAART", "Finance": "FINANCIËN", "Health": "GEZONDHEID"},
+        title="Hoe RAG zijn context vindt",
+        subtitle="Retrieval-Augmented Generation, vraag voor vraag",
+        space_label="embeddingruimte  ·  2D-projectie",
+        panel_head="PROMPT VOOR HET LLM",
+        intro="Elk documentfragment wordt een punt. Fragmenten met een vergelijkbare betekenis liggen dicht bij elkaar.",
+        asks="Een gebruiker stelt een vraag.",
+        embed="De vraag gaat door hetzelfde embeddingmodel en wordt zo ook een punt.",
+        distance="Afstand in deze ruimte staat voor verschil in betekenis.",
+        topk="Houd de {k} dichtstbijzijnde fragmenten over (top-k), laat de rest vallen.",
+        attach="De dichtstbijzijnde fragmenten haken aan de vraag vast.",
+        fly="De vraag verlaat de ruimte en neemt haar fragmenten mee naar de prompt.",
+        generate="Het LLM antwoordt op basis van de opgehaalde context.",
+        q_prefix="V: ",
+        context="CONTEXT",
+        questions=[
+            ("Hoe lang moet ik een ei koken?", "Zacht: ongeveer 6 minuten,\nhard: ongeveer 10.",
+             "Top-k levert altijd k fragmenten op, ook een zwakke derde match.", "retrieve"),
+            ("Waarom is Mars rood?", "Het stof op het oppervlak zit vol\nijzeroxide: Mars is roestig.", None, None),
+            ("Is elke dag een ei eten gezond?",
+             "Voor de meeste mensen wel: één ei\nper dag is prima, en eieren zijn\neen goede bron van eiwit.",
+             "Deze vraag ligt tussen twee onderwerpen, dus komen de fragmenten uit allebei.", "answer"),
+        ],
+        steps=["Ophalen", "Aanvullen", "Genereren"],
+        step_notes=["dichtstbijzijnde fragmenten\nbij de vraag", "in de prompt\ngeplakt",
+                    "het LLM antwoordt\nvanuit die context"],
+        steps_footer="Retrieval  ·  Augmentation  ·  Generation",
+    ),
+}
+
 TOPIC_TAGS = {
     "Cooking": (-6.15, 2.70),
     "Space": (1.55, 2.70),
@@ -78,7 +161,10 @@ def similarity(d):
 
 
 class RagExplainer(Scene):
+    LANG = "en"
+
     def setup(self):
+        self.S = STRINGS[self.LANG]
         self.bg = FullScreenRectangle().set_fill(BG, 1).set_stroke(width=0)
         self.add(self.bg)
 
@@ -94,13 +180,13 @@ class RagExplainer(Scene):
         for y in np.arange(SPACE_Y[0] + 0.5, SPACE_Y[1], 0.5):
             grid.add(Line([SPACE_X[0], y, 0], [SPACE_X[1], y, 0]))
         grid.set_stroke(GRID, 1, opacity=0.45)
-        label = txt("embedding space  ·  2D projection", 15, MUTED, MONO)
+        label = txt(self.S["space_label"], 15, MUTED, MONO)
         label.next_to(frame.get_corner(DR), UL, buff=0.12)
         return VGroup(frame, grid, label)
 
     def build_fragments(self):
         frags = []
-        for s, topic, x, y, side in FRAGMENTS:
+        for s, (_, topic, x, y, side) in zip(self.S["fragments"], FRAGMENTS):
             p = np.array([x, y, 0.0])
             dot = Dot(p, radius=0.07).set_fill(TOPICS[topic], 1)
             halo = Dot(p, radius=0.14).set_fill(TOPICS[topic], 0.18)
@@ -109,7 +195,7 @@ class RagExplainer(Scene):
             frags.append(dict(text=s, topic=topic, pos=p, dot=dot, halo=halo, label=lab,
                               group=VGroup(halo, dot, lab)))
         tags = VGroup(*[
-            txt(t.upper(), 13, TOPICS[t], MONO).move_to([x, y, 0])
+            txt(self.S["topics"][t], 13, TOPICS[t], MONO).move_to([x, y, 0])
             for t, (x, y) in TOPIC_TAGS.items()
         ])
         return frags, tags
@@ -119,12 +205,14 @@ class RagExplainer(Scene):
         frame = RoundedRectangle(width=w, height=h, corner_radius=0.15)
         frame.move_to([(PANEL_X[0] + PANEL_X[1]) / 2, (SPACE_Y[0] + SPACE_Y[1]) / 2, 0])
         frame.set_fill(PANEL, 1).set_stroke(GRID, 1.5)
-        head = txt("PROMPT TO THE LLM", 15, MUTED, MONO)
+        head = txt(self.S["panel_head"], 15, MUTED, MONO)
         head.move_to(frame.get_top() + DOWN * 0.3)
         return VGroup(frame, head)
 
     def set_caption(self, s, run_time=0.6):
         new = txt(s, 19, MUTED).move_to([(SPACE_X[0] + PANEL_X[1]) / 2, -3.72, 0])
+        if new.get_width() > PANEL_X[1] - SPACE_X[0]:
+            new.set_width(PANEL_X[1] - SPACE_X[0])
         if getattr(self, "caption", None) is None:
             self.caption = new
             self.play(FadeIn(new, shift=UP * 0.1), run_time=run_time)
@@ -135,8 +223,8 @@ class RagExplainer(Scene):
 
     # ------------------------------------------------------------------- story
     def construct(self):
-        title = txt("How RAG finds its context", 54, INK, weight=BOLD)
-        sub = txt("Retrieval-Augmented Generation, one question at a time", 24, MUTED)
+        title = txt(self.S["title"], 54, INK, weight=BOLD)
+        sub = txt(self.S["subtitle"], 24, MUTED)
         VGroup(title, sub).arrange(DOWN, buff=0.35)
         self.play(Write(title), run_time=1.4)
         self.play(FadeIn(sub, shift=UP * 0.15))
@@ -149,41 +237,26 @@ class RagExplainer(Scene):
         self.panel = panel
         self.play(FadeIn(space), FadeIn(panel), run_time=1.0)
         self.caption = None
-        self.set_caption("Every document fragment is embedded as a point. Similar meaning lands close together.")
+        self.set_caption(self.S["intro"])
         self.play(LaggedStart(*[GrowFromCenter(VGroup(f["halo"], f["dot"])) for f in self.frags],
                               lag_ratio=0.06), run_time=1.6)
         self.play(LaggedStart(*[FadeIn(f["label"]) for f in self.frags], lag_ratio=0.04),
                   FadeIn(tags), run_time=1.6)
         self.wait(1.2)
 
-        self.ask(
-            "How long should I boil an egg?", (-4.10, 1.80),
-            "Soft-boil about 6 minutes,\nhard-boil about 10.",
-            note="Top-k always returns k fragments, even a weak third match.",
-        )
-        self.ask(
-            "Why is Mars red?", (0.25, 2.45),
-            "Its surface dust is rich in\niron oxide: Mars is rusty.",
-        )
-        self.ask(
-            "Is eating eggs every day healthy?", (-3.75, -0.35),
-            "For most people, yes: one egg\na day is fine, and eggs are\na good source of protein.",
-            note="This question sits between two topics, so retrieval pulls from both.",
-        )
+        positions = [(-4.10, 1.80), (0.25, 2.45), (-3.75, -0.35)]
+        for (question, answer, note, note_at), qxy in zip(self.S["questions"], positions):
+            self.ask(question, qxy, answer, note=note, note_at=note_at)
 
         steps = VGroup(*[
             txt(s, 30, c, weight=BOLD) for s, c in
-            [("Retrieve", QUERY), ("Augment", INK), ("Generate", ANSWER)]
+            zip(self.S["steps"], [QUERY, INK, ANSWER])
         ]).arrange(RIGHT, buff=1.1)
         arrows = VGroup(*[
             Arrow(steps[i].get_right(), steps[i + 1].get_left(), buff=0.2).set_color(MUTED)
             for i in range(2)
         ])
-        expl = VGroup(
-            txt("nearest fragments\nto the question", 17, MUTED),
-            txt("pasted into\nthe prompt", 17, MUTED),
-            txt("the LLM answers\nfrom that context", 17, MUTED),
-        )
+        expl = VGroup(*[txt(n, 17, MUTED) for n in self.S["step_notes"]])
         for e, s in zip(expl, steps):
             e.next_to(s, DOWN, buff=0.3)
         everything = Group(*[m for m in self.mobjects if m is not self.bg and m is not self.camera.frame])
@@ -191,11 +264,17 @@ class RagExplainer(Scene):
         self.play(LaggedStart(*[FadeIn(VGroup(s, e), shift=UP * 0.2) for s, e in zip(steps, expl)],
                               lag_ratio=0.35),
                   LaggedStart(*[GrowArrow(a) for a in arrows], lag_ratio=0.35), run_time=2.2)
+        outro = VGroup(steps, arrows, expl)
+        if self.S["steps_footer"]:
+            foot = txt(self.S["steps_footer"], 16, MUTED, MONO).next_to(expl, DOWN, buff=0.6)
+            foot.set_x(0)
+            self.play(FadeIn(foot), run_time=0.6)
+            outro.add(foot)
         self.wait(2.5)
-        self.play(FadeOut(VGroup(steps, arrows, expl)))
+        self.play(FadeOut(outro))
 
     # -------------------------------------------------------------- one query
-    def ask(self, question, qxy, answer, k=3, note=None):
+    def ask(self, question, qxy, answer, k=3, note=None, note_at=None):
         qpos = np.array([qxy[0], qxy[1], 0.0])
 
         # 1. the question is formulated
@@ -203,13 +282,13 @@ class RagExplainer(Scene):
         bar.move_to([(SPACE_X[0] + SPACE_X[1]) / 2, 3.55, 0])
         prompt_mark = txt(">", 24, QUERY, MONO).next_to(bar[0].get_left(), RIGHT, buff=0.2)
         bar[1].next_to(prompt_mark, RIGHT, buff=0.18)
-        self.set_caption("A user asks a question.")
+        self.set_caption(self.S["asks"])
         self.play(FadeIn(bar[0]), FadeIn(prompt_mark))
         self.play(Write(bar[1]), run_time=1.0 + 0.03 * len(question))
         self.wait(0.4)
 
         # 2. it is embedded into the same space
-        self.set_caption("The question is embedded with the same model, so it becomes a point too.")
+        self.set_caption(self.S["embed"])
         qdot = GlowDot(qpos, radius=0.45, color=QUERY, glow_factor=1.6)
         qcore = Dot(qpos, radius=0.09).set_fill(QUERY, 1)
         qlabel = txt(question, 15, QUERY, weight=BOLD).next_to(qcore, UP, buff=0.14)
@@ -226,7 +305,7 @@ class RagExplainer(Scene):
         self.play(FadeOut(VGroup(bar[0], bar[1], prompt_mark), shift=UP * 0.2), run_time=0.5)
 
         # 3. measure distance to every fragment
-        self.set_caption("Distance in this space stands for difference in meaning.")
+        self.set_caption(self.S["distance"])
         ranked = sorted(self.frags, key=lambda f: np.linalg.norm(f["pos"] - qpos))
         lines = VGroup()
         for f in self.frags:
@@ -241,7 +320,7 @@ class RagExplainer(Scene):
         r_k = np.linalg.norm(top[-1]["pos"] - qpos) + 0.18
         ring = Circle(radius=0.05).move_to(qpos).set_stroke(QUERY, 2, opacity=0.9)
         self.add(ring)
-        self.set_caption(f"Keep the {k} nearest fragments (top-k), drop the rest.")
+        self.set_caption(self.S["topk"].format(k=k))
         self.play(ring.animate.set_width(2 * r_k).set_stroke(opacity=0.6), run_time=1.3,
                   rate_func=smooth)
         keep_lines = VGroup(*[lines[self.frags.index(f)] for f in top])
@@ -266,14 +345,14 @@ class RagExplainer(Scene):
             FadeIn(sims),
             run_time=1.2,
         )
-        if note and "weak" in note:
+        if note and note_at == "retrieve":
             self.set_caption(note)
             self.play(Indicate(sims[-1], color=WHITE, scale_factor=1.4), run_time=1.0)
             self.wait(0.6)
         self.wait(0.5)
 
         # 4. the nearest fragments attach to the question
-        self.set_caption("The nearest fragments attach to the question.")
+        self.set_caption(self.S["attach"])
         chip_w = 2.5
         chips = VGroup(*[card(f["text"], TOPICS[f["topic"]], chip_w, size=14) for f in top])
         chips.arrange(DOWN, buff=0.08)
@@ -298,11 +377,11 @@ class RagExplainer(Scene):
         self.wait(0.6)
 
         # 5. the question flies out of the space, dragging the snippets along
-        self.set_caption("The question leaves the space and drags its snippets into the prompt.")
+        self.set_caption(self.S["fly"])
         pw = PANEL_X[1] - PANEL_X[0] - 0.4
-        q_final = card("Q: " + question, QUERY, pw, size=17)
+        q_final = card(self.S["q_prefix"] + question, QUERY, pw, size=17)
         ctx_final = VGroup(*[card(f["text"], TOPICS[f["topic"]], pw, size=16) for f in top])
-        ctx_head = txt("CONTEXT", 13, MUTED, MONO)
+        ctx_head = txt(self.S["context"], 13, MUTED, MONO)
         stack = VGroup(q_final, ctx_head, *ctx_final).arrange(DOWN, buff=0.14, aligned_edge=LEFT)
         ctx_head.shift(RIGHT * 0.05)
         stack.next_to(self.panel[1], DOWN, buff=0.3)
@@ -327,7 +406,7 @@ class RagExplainer(Scene):
         self.play(FadeIn(ctx_head), run_time=0.3)
 
         # 6. generation
-        self.set_caption("The LLM answers from the retrieved context.")
+        self.set_caption(self.S["generate"])
         llm = card("LLM", INK, 1.3, size=20)
         llm.next_to(stack, DOWN, buff=0.45).set_x((PANEL_X[0] + PANEL_X[1]) / 2)
         arr = Arrow(stack.get_bottom(), llm.get_top(), buff=0.06).set_color(MUTED)
@@ -337,7 +416,7 @@ class RagExplainer(Scene):
         self.play(GrowArrow(arr), FadeIn(llm, scale=0.8), run_time=0.7)
         self.play(GrowArrow(arr2), FadeIn(ans[0]), run_time=0.5)
         self.play(Write(ans[1]), run_time=1.6)
-        if note and "weak" not in note:
+        if note and note_at == "answer":
             self.set_caption(note)
         self.wait(2.0)
 
@@ -351,3 +430,7 @@ class RagExplainer(Scene):
             run_time=1.0,
         )
         self.wait(0.3)
+
+
+class RagExplainerNL(RagExplainer):
+    LANG = "nl"
