@@ -1,0 +1,128 @@
+<title>Hoe RAG Context Vindt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: one centred column; the film is the page, chapters and steps sit beneath it as a reading aid. */
+:root {
+  --bg: #f3f5f8;
+  --surface: #ffffff;
+  --ink: #17202b;
+  --muted: #5d6b7b;
+  --line: #d9dfe7;
+  --query: #b07800;
+  --answer: #1f8a5b;
+  --cooking: #d2691e;
+  --space: #2f7ad1;
+  --finance: #2f9a4c;
+  --health: #c2457a;
+  --sans: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d1117; --surface: #151b23; --ink: #e6edf3; --muted: #8b98a8; --line: #2a3440;
+    --query: #ffd166; --answer: #8ce0b5; --cooking: #ff9f5a; --space: #6fb3ff; --finance: #7ed492; --health: #f48fb1;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d1117; --surface: #151b23; --ink: #e6edf3; --muted: #8b98a8; --line: #2a3440;
+  --query: #ffd166; --answer: #8ce0b5; --cooking: #ff9f5a; --space: #6fb3ff; --finance: #7ed492; --health: #f48fb1;
+  color-scheme: dark;
+}
+body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.55; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 32px 16px 56px; display: grid; gap: 28px; }
+header { display: grid; gap: 6px; }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1 { margin: 0; font-size: clamp(28px, 4.2vw, 42px); font-weight: 600; letter-spacing: -.01em; text-wrap: balance; }
+.lede { margin: 0; color: var(--muted); max-width: 62ch; }
+.film { background: #0d1117; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.film video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #0d1117; }
+.chapters { display: flex; flex-wrap: wrap; gap: 8px; }
+.chapters button {
+  font: 500 14px/1.2 var(--sans); color: var(--ink); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; cursor: pointer;
+  display: inline-flex; gap: 8px; align-items: baseline;
+}
+.chapters button:hover { border-color: var(--query); }
+.chapters button:focus-visible { outline: 2px solid var(--query); outline-offset: 2px; }
+.chapters button[aria-current="true"] { border-color: var(--query); box-shadow: inset 0 0 0 1px var(--query); }
+.chapters time { font-family: var(--mono); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.cols { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 40px; }
+@media (max-width: 760px) { .cols { grid-template-columns: minmax(0, 1fr); gap: 28px; } }
+h2 { margin: 0 0 12px; font-size: 13px; font-family: var(--mono); font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+ol.steps { margin: 0; padding: 0; list-style: none; counter-reset: s; display: grid; gap: 14px; }
+ol.steps li { counter-increment: s; display: grid; grid-template-columns: 2.2em minmax(0, 1fr); }
+ol.steps li::before { content: counter(s); font-family: var(--mono); color: var(--query); font-weight: 500; }
+ol.steps b { font-weight: 600; }
+.qs { display: grid; gap: 14px; }
+.q { border-top: 1px solid var(--line); padding-top: 12px; }
+.q p { margin: 4px 0 0; color: var(--muted); font-size: 15px; }
+.q .ask { color: var(--ink); font-weight: 500; }
+.tag { font-family: var(--mono); font-size: 12px; }
+.c { color: var(--cooking); } .sp { color: var(--space); } .h { color: var(--health); }
+footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 14px; }
+footer code { font-family: var(--mono); font-size: 12px; }
+footer a { color: inherit; }
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Retrieval-Augmented Generation · geanimeerd</span>
+    <h1>Hoe RAG zijn context vindt</h1>
+    <p class="lede">Een vraag wordt in dezelfde vectorruimte geplaatst als de documentfragmenten. De dichtstbijzijnde fragmenten haken aan de vraag vast, en de vraag neemt ze mee uit de ruimte naar de prompt waarmee het LLM antwoordt. Drie vragen, drie zoekrondes.</p>
+  </header>
+
+  <div class="film">
+    <video id="film" src="rag-explainer-nl.mp4" controls playsinline muted preload="metadata"></video>
+  </div>
+
+  <nav class="chapters" aria-label="Hoofdstukken" id="chapters"></nav>
+
+  <div class="cols">
+    <section>
+      <h2>Wat er elke ronde gebeurt</h2>
+      <ol class="steps">
+        <li><span><b>Fragmenten worden ingebed.</b> Elk tekstfragment in de kennisbank wordt een punt. Fragmenten over hetzelfde onderwerp liggen dicht bij elkaar.</span></li>
+        <li><span><b>Er wordt een vraag gesteld.</b> Die gaat door hetzelfde embeddingmodel en wordt zo een punt in dezelfde ruimte.</span></li>
+        <li><span><b>Afstanden worden gemeten.</b> Hoe dichterbij, hoe meer de betekenis overeenkomt. De getallen op de lijnen zijn gelijkenisscores.</span></li>
+        <li><span><b>De k dichtstbijzijnde blijven over</b> (hier k = 3); de rest telt niet mee.</span></li>
+        <li><span><b>De vraag verlaat de ruimte</b> en neemt haar fragmenten mee naar de prompt.</span></li>
+        <li><span><b>Het LLM antwoordt</b> op basis van de vraag plus de opgehaalde context.</span></li>
+      </ol>
+    </section>
+    <section>
+      <h2>De drie vragen</h2>
+      <div class="qs">
+        <div class="q"><span class="tag c">KOKEN</span><p class="ask">Hoe lang moet ik een ei koken?</p><p>Twee sterke treffers over eieren, plus een zwakke derde over pastawater. Top-k levert altijd k resultaten op, relevant of niet.</p></div>
+        <div class="q"><span class="tag sp">RUIMTEVAART</span><p class="ask">Waarom is Mars rood?</p><p>Komt terecht in het cluster over sterrenkunde; het fragment over ijzeroxide ligt het dichtst bij.</p></div>
+        <div class="q"><span class="tag h">GEZONDHEID</span> <span class="tag c">+ KOKEN</span><p class="ask">Is elke dag een ei eten gezond?</p><p>Ligt tussen twee onderwerpen in, dus komen de opgehaalde fragmenten uit beide clusters.</p></div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    Geanimeerd met <a href="https://github.com/3b1b/manim">manim</a> van 3Blue1Brown (manimgl). De posities zijn een illustratieve 2D-projectie; echte embeddings hebben honderden dimensies en worden meestal vergeleken met cosinusgelijkenis. De getoonde scores zijn <code>exp(−afstand / 2,6)</code>. Bron: <code>animations/rag-explainer/rag_explainer.py</code> (scène <code>RagExplainerNL</code>).
+  </footer>
+</div>
+
+<script>
+const CHAPTERS = /*CHAPTERS*/[];
+const v = document.getElementById("film");
+const nav = document.getElementById("chapters");
+const fmt = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+const buttons = CHAPTERS.map(([t, label]) => {
+  const b = document.createElement("button");
+  b.type = "button";
+  b.innerHTML = `<time>${fmt(t)}</time><span></span>`;
+  b.querySelector("span").textContent = label;
+  b.addEventListener("click", () => { v.currentTime = t; v.play().catch(() => {}); });
+  nav.appendChild(b);
+  return b;
+});
+v.addEventListener("timeupdate", () => {
+  let idx = 0;
+  CHAPTERS.forEach(([t], i) => { if (v.currentTime >= t - 0.05) idx = i; });
+  buttons.forEach((b, i) => b.setAttribute("aria-current", i === idx ? "true" : "false"));
+});
+</script>
