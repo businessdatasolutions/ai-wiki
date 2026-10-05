@@ -1,0 +1,162 @@
+<title>How an LLM Wiki Works</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: one centred column; the film is the page, chapters and steps sit beneath it as a reading aid. */
+:root {
+  --bg: #f3f5f8;
+  --surface: #ffffff;
+  --ink: #17202b;
+  --muted: #5d6b7b;
+  --line: #d9dfe7;
+  --query: #b07800;
+  --answer: #1f8a5b;
+  --cooking: #d2691e;
+  --space: #2f7ad1;
+  --finance: #2f9a4c;
+  --health: #c2457a;
+  --sans: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d1117; --surface: #151b23; --ink: #e6edf3; --muted: #8b98a8; --line: #2a3440;
+    --query: #ffd166; --answer: #8ce0b5; --cooking: #ff9f5a; --space: #6fb3ff; --finance: #7ed492; --health: #f48fb1;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d1117; --surface: #151b23; --ink: #e6edf3; --muted: #8b98a8; --line: #2a3440;
+  --query: #ffd166; --answer: #8ce0b5; --cooking: #ff9f5a; --space: #6fb3ff; --finance: #7ed492; --health: #f48fb1;
+  color-scheme: dark;
+}
+body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.55; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 32px 16px 56px; display: grid; gap: 28px; }
+header { display: grid; gap: 6px; }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1 { margin: 0; font-size: clamp(28px, 4.2vw, 42px); font-weight: 600; letter-spacing: -.01em; text-wrap: balance; }
+.lede { margin: 0; color: var(--muted); max-width: 62ch; }
+.film { background: #0d1117; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.film video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #0d1117; }
+.chapters { display: flex; flex-wrap: wrap; gap: 8px; }
+.chapters button {
+  font: 500 14px/1.2 var(--sans); color: var(--ink); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; cursor: pointer;
+  display: inline-flex; gap: 8px; align-items: baseline;
+}
+.chapters button:hover { border-color: var(--query); }
+.chapters button:focus-visible { outline: 2px solid var(--query); outline-offset: 2px; }
+.chapters button[aria-current="true"] { border-color: var(--query); box-shadow: inset 0 0 0 1px var(--query); }
+.chapters time { font-family: var(--mono); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.cols { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 40px; }
+@media (max-width: 760px) { .cols { grid-template-columns: minmax(0, 1fr); gap: 28px; } }
+h2 { margin: 0 0 12px; font-size: 13px; font-family: var(--mono); font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+ol.steps { margin: 0; padding: 0; list-style: none; counter-reset: s; display: grid; gap: 14px; }
+ol.steps li { counter-increment: s; display: grid; grid-template-columns: 2.2em minmax(0, 1fr); }
+ol.steps li::before { content: counter(s); font-family: var(--mono); color: var(--query); font-weight: 500; }
+ol.steps b { font-weight: 600; }
+.qs { display: grid; gap: 14px; }
+.q { border-top: 1px solid var(--line); padding-top: 12px; }
+.q p { margin: 4px 0 0; color: var(--muted); font-size: 15px; }
+.q .ask { color: var(--ink); font-weight: 500; }
+.tag { font-family: var(--mono); font-size: 12px; }
+.k { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; }
+.src { color: var(--muted); } .ent { color: var(--space); } .con { color: var(--cooking); } .syn { color: var(--answer); }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 0; padding: 0; list-style: none; }
+.tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 500 12px/1.2 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+tbody tr:last-child td { border-bottom: 0; }
+.risk { color: var(--muted); max-width: 70ch; margin: 14px 0 0; font-size: 15px; }
+.risk b { color: var(--ink); font-weight: 600; }
+code { font-family: var(--mono); font-size: .88em; }
+footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 14px; }
+footer .tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 500 12px/1.2 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+tbody tr:last-child td { border-bottom: 0; }
+.risk { color: var(--muted); max-width: 70ch; margin: 14px 0 0; font-size: 15px; }
+.risk b { color: var(--ink); font-weight: 600; }
+code { font-family: var(--mono); font-size: 12px; }
+footer a { color: inherit; }
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Knowledge architecture · animated</span>
+    <h1>How an LLM Wiki works</h1>
+    <p class="lede">Plain RAG rediscovers knowledge from raw chunks on every question. An LLM Wiki has the model compile each source into persistent, interlinked markdown pages and keep them current. Retrieval doesn't go away: questions search the wiki and the raw sources, and valuable answers go back into the wiki after review.</p>
+  </header>
+
+  <div class="film">
+    <video id="film" src="llm-wiki-explainer.mp4" controls playsinline muted preload="metadata"></video>
+  </div>
+
+  <nav class="chapters" aria-label="Chapters" id="chapters"></nav>
+
+  <div class="cols">
+    <section>
+      <h2>The three operations</h2>
+      <ol class="steps">
+        <li><span><b>Ingest.</b> You add a source. In stage 1 (analysis) the LLM extracts entities and concepts, links them to the existing wiki and detects contradictions. In stage 2 (generation) it writes the source summary, updates or creates entity and concept pages, updates <code>index.md</code> and <code>log.md</code>, and files review items. One source can touch 10 to 15 pages.</span></li>
+        <li><span><b>Query.</b> The LLM searches the wiki, starting from the index, and the raw sources. It packs the selected pages, log history and raw passages into the context window and answers with citations. A valuable answer is saved back as a page, after review.</span></li>
+        <li><span><b>Lint.</b> Now and then the LLM health-checks the wiki: orphan pages, stale claims, missing cross-references, concepts without a page.</span></li>
+      </ol>
+    </section>
+    <section>
+      <h2>The three layers</h2>
+      <div class="qs">
+        <div class="q"><span class="k src">RAW SOURCES</span><p>Your curated documents. Immutable: the LLM reads them and never edits them.</p></div>
+        <div class="q"><span class="k ent">LLM WIKI</span><p>Markdown pages the LLM writes and owns: sources, entities, concepts and syntheses, linked into a graph, plus an index, a log and a review queue for contradictions and answers that need a human decision.</p></div>
+        <div class="q"><span class="k con">SCHEMA</span><p>A rulebook such as <code>CLAUDE.md</code> that tells the LLM how to ingest, answer and maintain the wiki.</p></div>
+      </div>
+      <ul class="legend" style="margin-top:16px">
+        <li class="k src">■ SOURCE</li><li class="k ent">■ ENTITY</li><li class="k con">■ CONCEPT</li><li class="k syn">■ SYNTHESIS</li>
+      </ul>
+    </section>
+  </div>
+
+  <section>
+    <h2>Where to start</h2>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Situation</th><th>Start with</th></tr></thead>
+        <tbody>
+          <tr><td>Mostly one-off FAQ lookup</td><td>Classic RAG</td></tr>
+          <tr><td>Repeated analysis over the same sources</td><td>Add an LLM Wiki layer</td></tr>
+          <tr><td>Relationships and contradictions matter</td><td>Wiki plus graph</td></tr>
+          <tr><td>Identical output is required</td><td>Don't rely on automatic wiki generation alone</td></tr>
+          <tr><td>Raw details decide the answer</td><td>Use the wiki as a map, then return to raw sources</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="risk">The weak points: <b>information loss</b> when sources are summarized, <b>summary drift</b> as pages are rewritten, <b>error cementing</b> when a bad summary becomes context for later questions, and <b>non-determinism</b>. The same source won't always produce the same wiki.</p>
+  </section>
+
+  <footer>
+    Pattern by Andrej Karpathy (<code>llm-wiki.md</code>). The architecture, the two-stage ingest, the query loop, the risks and the "where to start" table follow SmartScope's <a href="https://smartscope.blog/en/blog/llm-wiki-context-architecture/">LLM Wiki Architecture</a>. Animated with 3Blue1Brown's <a href="https://github.com/3b1b/manim">manim</a> (manimgl). The Mars wiki is an illustrative example. Source: <code>animations/llm-wiki-explainer/llm_wiki_explainer.py</code>.
+  </footer>
+</div>
+
+<script>
+const CHAPTERS = [[0, "Intro"], [4.6, "Plain RAG"], [18.5, "Three layers"], [30.5, "Ingest"], [50.5, "Query"], [66.5, "Lint"], [76.5, "RAG vs LLM Wiki"]];
+const v = document.getElementById("film");
+const nav = document.getElementById("chapters");
+const fmt = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+const buttons = CHAPTERS.map(([t, label]) => {
+  const b = document.createElement("button");
+  b.type = "button";
+  b.innerHTML = `<time>${fmt(t)}</time><span></span>`;
+  b.querySelector("span").textContent = label;
+  b.addEventListener("click", () => { v.currentTime = t; v.play().catch(() => {}); });
+  nav.appendChild(b);
+  return b;
+});
+v.addEventListener("timeupdate", () => {
+  let idx = 0;
+  CHAPTERS.forEach(([t], i) => { if (v.currentTime >= t - 0.05) idx = i; });
+  buttons.forEach((b, i) => b.setAttribute("aria-current", i === idx ? "true" : "false"));
+});
+</script>
