@@ -137,6 +137,13 @@ class LlmWikiExplainer(Scene):
                   run_time=run_time)
         self.remove(*dots)
 
+    def pulse(self):
+        ring = self.llm[0].copy().set_fill(opacity=0).set_stroke(QUERY, 4)
+        return AnimationGroup(
+            FadeOut(ring, scale=1.5),
+            self.llm[1].animate.set_color(QUERY).set_anim_args(rate_func=there_and_back),
+        )
+
     def link(self, a, b, color=LINK, width=1.6):
         pa, pb = self.cards[a].get_center(), self.cards[b].get_center()
         ln = Line(pa, pb).set_stroke(color, width)
@@ -282,7 +289,7 @@ class LlmWikiExplainer(Scene):
                 frags.append(f)
             targets = [self.bar_put(f.copy()).get_center() for f in frags]
             self.play(*[f.animate.move_to(t) for f, t in zip(frags, targets)],
-                      Indicate(self.llm, color=QUERY, scale_factor=1.12), run_time=0.9)
+                      self.pulse(), run_time=0.9)
             ac = self.bar_put(chip(ans, ANSWER, 14))
             self.play(FadeIn(ac, shift=LEFT * 0.1), run_time=0.5)
             new_counter = VGroup(txt("rebuilt from scratch", 13, ALERT, MONO),
@@ -369,7 +376,7 @@ class LlmWikiExplainer(Scene):
         self.play(FadeIn(r3, shift=DOWN * 0.4), run_time=0.7)
         reading = r3.copy()
         self.play(reading.animate.scale(0.5).move_to(self.llm), run_time=0.8)
-        self.play(FadeOut(reading), Indicate(self.llm, color=QUERY, scale_factor=1.15), run_time=0.5)
+        self.play(FadeOut(reading), self.pulse(), run_time=0.5)
 
         self.set_caption("Stage 1, analysis: extract entities and concepts, link them to the wiki, detect contradictions.")
         s1 = self.stage_list("STAGE 1 · ANALYSIS", [
@@ -468,7 +475,7 @@ class LlmWikiExplainer(Scene):
             segs.append((c, self.bar_put(c.copy()).get_center()))
         self.play(LaggedStart(*[c.animate.move_to(t) for c, t in segs], lag_ratio=0.15), run_time=1.6)
         self.play(FadeOut(hls), FadeOut(raw_hl), FadeOut(idx_hl),
-                  Indicate(self.llm, color=QUERY, scale_factor=1.15), run_time=0.7)
+                  self.pulse(), run_time=0.7)
 
         ans = chip("Not on the surface, but buried ice keeps it open.", ANSWER, 13)
         ans.next_to(self.bar, DOWN, buff=0.12).align_to(self.bar, RIGHT).shift(LEFT * 0.2)
