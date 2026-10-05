@@ -1,0 +1,128 @@
+<title>How RAG Finds Context</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: one centred column; the film is the page, chapters and steps sit beneath it as a reading aid. */
+:root {
+  --bg: #f3f5f8;
+  --surface: #ffffff;
+  --ink: #17202b;
+  --muted: #5d6b7b;
+  --line: #d9dfe7;
+  --query: #b07800;
+  --answer: #1f8a5b;
+  --cooking: #d2691e;
+  --space: #2f7ad1;
+  --finance: #2f9a4c;
+  --health: #c2457a;
+  --sans: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d1117; --surface: #151b23; --ink: #e6edf3; --muted: #8b98a8; --line: #2a3440;
+    --query: #ffd166; --answer: #8ce0b5; --cooking: #ff9f5a; --space: #6fb3ff; --finance: #7ed492; --health: #f48fb1;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d1117; --surface: #151b23; --ink: #e6edf3; --muted: #8b98a8; --line: #2a3440;
+  --query: #ffd166; --answer: #8ce0b5; --cooking: #ff9f5a; --space: #6fb3ff; --finance: #7ed492; --health: #f48fb1;
+  color-scheme: dark;
+}
+body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.55; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 32px 16px 56px; display: grid; gap: 28px; }
+header { display: grid; gap: 6px; }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1 { margin: 0; font-size: clamp(28px, 4.2vw, 42px); font-weight: 600; letter-spacing: -.01em; text-wrap: balance; }
+.lede { margin: 0; color: var(--muted); max-width: 62ch; }
+.film { background: #0d1117; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.film video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #0d1117; }
+.chapters { display: flex; flex-wrap: wrap; gap: 8px; }
+.chapters button {
+  font: 500 14px/1.2 var(--sans); color: var(--ink); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; cursor: pointer;
+  display: inline-flex; gap: 8px; align-items: baseline;
+}
+.chapters button:hover { border-color: var(--query); }
+.chapters button:focus-visible { outline: 2px solid var(--query); outline-offset: 2px; }
+.chapters button[aria-current="true"] { border-color: var(--query); box-shadow: inset 0 0 0 1px var(--query); }
+.chapters time { font-family: var(--mono); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.cols { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 40px; }
+@media (max-width: 760px) { .cols { grid-template-columns: minmax(0, 1fr); gap: 28px; } }
+h2 { margin: 0 0 12px; font-size: 13px; font-family: var(--mono); font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+ol.steps { margin: 0; padding: 0; list-style: none; counter-reset: s; display: grid; gap: 14px; }
+ol.steps li { counter-increment: s; display: grid; grid-template-columns: 2.2em minmax(0, 1fr); }
+ol.steps li::before { content: counter(s); font-family: var(--mono); color: var(--query); font-weight: 500; }
+ol.steps b { font-weight: 600; }
+.qs { display: grid; gap: 14px; }
+.q { border-top: 1px solid var(--line); padding-top: 12px; }
+.q p { margin: 4px 0 0; color: var(--muted); font-size: 15px; }
+.q .ask { color: var(--ink); font-weight: 500; }
+.tag { font-family: var(--mono); font-size: 12px; }
+.c { color: var(--cooking); } .sp { color: var(--space); } .h { color: var(--health); }
+footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 14px; }
+footer code { font-family: var(--mono); font-size: 12px; }
+footer a { color: inherit; }
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Retrieval-Augmented Generation · animated</span>
+    <h1>How RAG finds its context</h1>
+    <p class="lede">A question is embedded into the same vector space as the document fragments. The nearest fragments attach to it, and the question carries them out of the space into the prompt the LLM answers from. Three questions, three retrievals.</p>
+  </header>
+
+  <div class="film">
+    <video id="film" src="rag-explainer.mp4" controls playsinline muted preload="metadata"></video>
+  </div>
+
+  <nav class="chapters" aria-label="Chapters" id="chapters"></nav>
+
+  <div class="cols">
+    <section>
+      <h2>What happens each round</h2>
+      <ol class="steps">
+        <li><span><b>Fragments are embedded.</b> Every snippet in the knowledge base becomes a point. Snippets about the same topic land close together.</span></li>
+        <li><span><b>A question is asked</b> and embedded with the same model, so it becomes a point in that same space.</span></li>
+        <li><span><b>Distances are measured.</b> Closer means more similar in meaning. The numbers on the lines are similarity scores.</span></li>
+        <li><span><b>The top-k nearest are kept</b> (k = 3 here); everything else is ignored.</span></li>
+        <li><span><b>The question leaves the space</b> and drags its snippets along into the prompt.</span></li>
+        <li><span><b>The LLM answers</b> using the question plus the retrieved context.</span></li>
+      </ol>
+    </section>
+    <section>
+      <h2>The three questions</h2>
+      <div class="qs">
+        <div class="q"><span class="tag c">COOKING</span><p class="ask">How long should I boil an egg?</p><p>Two strong egg matches, plus a weak third about pasta water. Top-k always returns k results, relevant or not.</p></div>
+        <div class="q"><span class="tag sp">SPACE</span><p class="ask">Why is Mars red?</p><p>Lands in the astronomy cluster; the iron-oxide fragment is the nearest.</p></div>
+        <div class="q"><span class="tag h">HEALTH</span> <span class="tag c">+ COOKING</span><p class="ask">Is eating eggs every day healthy?</p><p>Sits between two topics, so retrieval mixes fragments from both clusters.</p></div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    Animated with 3Blue1Brown's <a href="https://github.com/3b1b/manim">manim</a> (manimgl). Positions are an illustrative 2D projection; real embeddings have hundreds of dimensions and are usually compared by cosine similarity. Scores shown are <code>exp(−distance / 2.6)</code>. Source: <code>animations/rag-explainer/rag_explainer.py</code>.
+  </footer>
+</div>
+
+<script>
+const CHAPTERS = /*CHAPTERS*/[];
+const v = document.getElementById("film");
+const nav = document.getElementById("chapters");
+const fmt = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+const buttons = CHAPTERS.map(([t, label]) => {
+  const b = document.createElement("button");
+  b.type = "button";
+  b.innerHTML = `<time>${fmt(t)}</time><span></span>`;
+  b.querySelector("span").textContent = label;
+  b.addEventListener("click", () => { v.currentTime = t; v.play().catch(() => {}); });
+  nav.appendChild(b);
+  return b;
+});
+v.addEventListener("timeupdate", () => {
+  let idx = 0;
+  CHAPTERS.forEach(([t], i) => { if (v.currentTime >= t - 0.05) idx = i; });
+  buttons.forEach((b, i) => b.setAttribute("aria-current", i === idx ? "true" : "false"));
+});
+</script>
