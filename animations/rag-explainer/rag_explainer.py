@@ -308,21 +308,21 @@ class RagExplainer(Scene):
         stack.next_to(self.panel[1], DOWN, buff=0.3)
         stack.set_x((PANEL_X[0] + PANEL_X[1]) / 2)
 
-        traveller = Group(qdot, qcore, qlabel)
         target_spot = q_final.get_left() + LEFT * 0.05
+        glow = Group(qdot, qcore)
         anims = [
-            Transform(traveller, Group(
+            Transform(glow, Group(
                 GlowDot(target_spot, radius=0.35, color=QUERY, glow_factor=1.6),
                 Dot(target_spot, radius=0.09).set_fill(QUERY, 1),
-                q_final,
             ), path_arc=-PI / 4),
+            FadeTransform(qlabel, q_final, path_arc=-PI / 4),
         ]
         for i, (c, cf) in enumerate(zip(chips, ctx_final)):
             anims.append(Transform(c, cf, path_arc=-PI / 4,
                                    rate_func=squish_rate_func(smooth, 0.12 * (i + 1), 1.0)))
         self.play(*anims, run_time=2.4)
         tethers.clear_updaters()
-        self.play(FadeOut(tethers), FadeOut(traveller[0]), FadeOut(traveller[1]), run_time=0.4)
+        self.play(FadeOut(tethers), FadeOut(glow), run_time=0.4)
         self.add(ctx_head)
         self.play(FadeIn(ctx_head), run_time=0.3)
 
@@ -343,12 +343,11 @@ class RagExplainer(Scene):
 
         # 7. reset for the next question
         self.play(
-            FadeOut(VGroup(traveller[2], chips, ctx_head, llm, arr, arr2, ans)),
+            FadeOut(VGroup(q_final, chips, ctx_head, llm, arr, arr2, ans)),
             *[f["dot"].animate.set_opacity(1) for f in rest],
             *[f["dot"].animate.scale(1 / 1.6) for f in top],
             *[f["label"].animate.set_opacity(0.78) for f in self.frags],
             *[f["halo"].animate.set_opacity(0.18) for f in rest],
             run_time=1.0,
         )
-        self.remove(traveller)
         self.wait(0.3)
