@@ -145,7 +145,8 @@ class LlmWikiExplainer(Scene):
 
     def raise_cards(self):
         mobs = [self.cards[k] for k in PAGES if k in self.shown]
-        mobs += [self.index_box, *self.index_lines, self.log_box, *self.log_lines]
+        mobs += [self.index_box, *self.index_lines, self.log_box, *self.log_lines,
+                 self.review_box, *self.review_lines]
         if getattr(self, "flag", None) is not None:
             mobs.append(self.flag)
         self.bring_to_front(*mobs)
@@ -166,44 +167,59 @@ class LlmWikiExplainer(Scene):
     def bar_reset(self):
         self.bar_cursor = self.bar[1].get_right()[0] + 0.25
 
-    def build_index(self):
+    def right_box(self, top, bottom, title):
         x0, x1 = GRAPH_RIGHT + 0.2, WIKI_X[1] - 0.15
-        top, bottom = PANEL_Y[1] - 0.55, 0.15
         box = RoundedRectangle(width=x1 - x0, height=top - bottom, corner_radius=0.08)
         box.move_to([(x0 + x1) / 2, (top + bottom) / 2, 0]).set_fill(CARD, 1).set_stroke(GRID, 1.5)
-        head = txt("index.md", 13, INK, MONO).next_to(box.get_corner(UL), DR, buff=(0.15, 0.12, 0))
-        self.index_box = VGroup(box, head)
+        head = txt(title, 12, INK, MONO).next_to(box.get_corner(UL), DR, buff=(0.14, 0.1, 0))
+        return VGroup(box, head)
+
+    def build_index(self):
+        self.index_box = self.right_box(PANEL_Y[1] - 0.55, 0.22, "index.md")
         self.index_lines = VGroup()
         return self.index_box
 
-    def index_entry(self, key):
-        kind, title, *_ = PAGES[key]
-        dot = Dot(radius=0.04).set_fill(KINDS[kind][1], 1)
-        t = txt(title, 11, INK)
-        row = VGroup(dot, t).arrange(RIGHT, buff=0.1)
-        anchor = self.index_lines[-1] if len(self.index_lines) else self.index_box[1]
-        row.next_to(anchor, DOWN, aligned_edge=LEFT, buff=0.09 if len(self.index_lines) else 0.14)
-        self.index_lines.add(row)
+    def stack_row(self, lines, box, row, buff=0.05):
+        anchor = lines[-1] if len(lines) else box[1]
+        row.next_to(anchor, DOWN, aligned_edge=LEFT, buff=buff if len(lines) else 0.1)
+        lines.add(row)
         return row
 
+    def index_entry(self, key):
+        kind, title, *_ = PAGES[key]
+        dot = Dot(radius=0.035).set_fill(KINDS[kind][1], 1)
+        row = VGroup(dot, txt(title, 10, INK)).arrange(RIGHT, buff=0.08)
+        return self.stack_row(self.index_lines, self.index_box, row, 0.045)
+
     def build_log(self):
-        x0, x1 = GRAPH_RIGHT + 0.2, WIKI_X[1] - 0.15
-        top, bottom = -0.05, PANEL_Y[0] + 0.15
-        box = RoundedRectangle(width=x1 - x0, height=top - bottom, corner_radius=0.08)
-        box.move_to([(x0 + x1) / 2, (top + bottom) / 2, 0]).set_fill(CARD, 1).set_stroke(GRID, 1.5)
-        head = txt("log.md", 13, INK, MONO).next_to(box.get_corner(UL), DR, buff=(0.15, 0.12, 0))
-        self.log_box = VGroup(box, head)
+        self.log_box = self.right_box(0.07, -1.42, "log.md")
         self.log_lines = VGroup()
         return self.log_box
 
     def log_entry(self, op, title, date="10-05"):
-        a = txt(f"[{date}] {op}", 10, AMBER if op == "lint" else MUTED, MONO)
-        b = fit(txt(title, 11, INK), 1.8)
-        row = VGroup(a, b).arrange(DOWN, aligned_edge=LEFT, buff=0.04)
-        anchor = self.log_lines[-1] if len(self.log_lines) else self.log_box[1]
-        row.next_to(anchor, DOWN, aligned_edge=LEFT, buff=0.12 if len(self.log_lines) else 0.14)
-        self.log_lines.add(row)
-        return row
+        a = txt(f"{date} {op}", 9, AMBER if op == "lint" else MUTED, MONO)
+        b = txt(title, 10, INK)
+        row = fit(VGroup(a, b).arrange(RIGHT, buff=0.08), 1.85)
+        return self.stack_row(self.log_lines, self.log_box, row, 0.06)
+
+    def build_review(self):
+        self.review_box = self.right_box(-1.57, PANEL_Y[0] + 0.15, "review queue")
+        self.review_lines = VGroup()
+        return self.review_box
+
+    def review_entry(self, label, title, color):
+        dot = Dot(radius=0.04).set_fill(color, 1)
+        body = VGroup(txt(label, 9, color, MONO), txt(title, 10, INK)).arrange(DOWN, aligned_edge=LEFT, buff=0.03)
+        row = fit(VGroup(dot, body).arrange(RIGHT, buff=0.08, aligned_edge=UP), 1.85)
+        return self.stack_row(self.review_lines, self.review_box, row, 0.1)
+
+    def review_resolve(self, row, label="resolved"):
+        new = row.copy()
+        new[0].set_fill(ANSWER, 1)
+        lab = txt(label, 9, ANSWER, MONO).move_to(new[1][0], aligned_edge=LEFT)
+        new[1][0].become(lab)
+        new[1][1].set_opacity(0.55)
+        return Transform(row, new)
 
     def flash_rows(self, rows):
         return [AnimationGroup(FadeIn(r, shift=RIGHT * 0.15), r[-1].animate.set_color(QUERY))
@@ -284,8 +300,9 @@ class LlmWikiExplainer(Scene):
             self.bar_reset()
         self.play(FadeOut(counter), run_time=0.4)
 
+
     def layers(self):
-        self.wiki = panel(WIKI_X, "WIKI", "written and maintained by the LLM")
+        self.wiki = panel(WIKI_X, "LLM WIKI", "persistent pages for humans and LLMs")
         self.schema = VGroup(
             txt("SCHEMA", 11, AMBER, MONO),
             chip("CLAUDE.md", AMBER, 15),
@@ -294,18 +311,29 @@ class LlmWikiExplainer(Scene):
         rules.set_stroke(AMBER, 1.5)
         self.schema.add(rules)
 
+        y = LLM_POS[1]
+        read = Arrow([RAW_X[1] + 0.02, y, 0], [LLM_POS[0] - 0.5, y, 0], buff=0, stroke_width=3,
+                      max_tip_length_to_length_ratio=0.35).set_color(KINDS["entity"][1])
+        write = Arrow([LLM_POS[0] + 0.5, y, 0], [WIKI_X[0] - 0.02, y, 0], buff=0, stroke_width=3,
+                      max_tip_length_to_length_ratio=0.35).set_color(KINDS["concept"][1])
+        rl = txt("read", 10, KINDS["entity"][1], MONO).next_to(read, DOWN, buff=0.06)
+        wl = txt("write", 10, KINDS["concept"][1], MONO).next_to(write, DOWN, buff=0.06)
+        self.flow = VGroup(read, write, rl, wl)
+
         self.cards = {k: page_card(PAGES[k][0], PAGES[k][1]).move_to([PAGES[k][2], PAGES[k][3], 0])
                       for k in PAGES}
         self.links = {}
         self.shown = set(INITIAL)
+        self.flag = None
         index = self.build_index()
         log = self.build_log()
+        review = self.build_review()
 
-        self.set_caption("An LLM Wiki adds a layer between you and the sources: pages the LLM writes and keeps current.")
-        self.play(FadeIn(self.wiki), run_time=0.8)
+        self.set_caption("An LLM Wiki adds a persistent layer: pages the LLM writes and keeps current.")
+        self.play(FadeIn(self.wiki), FadeIn(self.flow), run_time=0.8)
         links = VGroup(*[self.link(a, b) for a, b in INITIAL_LINKS])
         self.play(LaggedStart(*[GrowFromCenter(self.cards[k]) for k in INITIAL], lag_ratio=0.12),
-                  FadeIn(index), FadeIn(log), run_time=1.6)
+                  FadeIn(index), FadeIn(log), FadeIn(review), run_time=1.6)
         self.add(links)
         self.raise_cards()
         self.play(LaggedStart(*[ShowCreation(l) for l in links], lag_ratio=0.1), run_time=1.2)
@@ -318,39 +346,68 @@ class LlmWikiExplainer(Scene):
                          .align_to(self.docs[k], RIGHT) for k in ("R1", "R2")])
         self.play(FadeIn(ticks), run_time=0.5)
         self.ticks = ticks
-        self.wait(0.6)
+        self.set_caption("Pages link to each other with wikilinks. index.md catalogues them, log.md records every change.")
+        self.wait(1.6)
 
-        self.set_caption("The schema is the rulebook: how to ingest, answer and maintain the wiki.")
+        self.set_caption("The schema is the editorial policy: how to ingest, answer and maintain the wiki.")
         self.play(FadeIn(self.schema, shift=DOWN * 0.15), run_time=0.8)
         self.play(Indicate(self.schema[1], color=AMBER, scale_factor=1.1), run_time=0.9)
-        self.set_caption("Three layers: raw sources stay untouched, the wiki is the LLM's, the schema guides it.")
-        self.play(Indicate(self.raw[1], color=INK), Indicate(self.wiki[1], color=INK), run_time=1.2)
+        self.set_caption("Raw sources stay the source of truth. The LLM reads them but never modifies them.")
+        self.play(Indicate(self.raw[1], color=INK), run_time=1.0)
         self.wait(0.8)
+
+    def stage_list(self, title, items, color):
+        head = txt(title, 10, color, MONO)
+        rows = VGroup(*[fit(chip(t, c, 11), 1.8) for t, c in items]).arrange(DOWN, buff=0.07)
+        g = VGroup(head, rows).arrange(DOWN, buff=0.12)
+        g.move_to([LLM_POS[0], -2.0, 0])
+        return g
 
     def ingest(self):
         self.set_caption("Ingest: you add a new source.")
         r3 = self.docs["R3"]
         self.play(FadeIn(r3, shift=DOWN * 0.4), run_time=0.7)
-        self.wait(0.3)
-
-        self.set_caption("The LLM reads it, then writes a summary page for it.")
         reading = r3.copy()
         self.play(reading.animate.scale(0.5).move_to(self.llm), run_time=0.8)
-        self.play(FadeOut(reading), Indicate(self.llm, color=QUERY, scale_factor=1.15), run_time=0.6)
+        self.play(FadeOut(reading), Indicate(self.llm, color=QUERY, scale_factor=1.15), run_time=0.5)
+
+        self.set_caption("Stage 1, analysis: extract entities and concepts, link them to the wiki, detect contradictions.")
+        s1 = self.stage_list("STAGE 1 · ANALYSIS", [
+            ("entity: Mars", KINDS["entity"][1]),
+            ("concept: Subsurface ice", KINDS["concept"][1]),
+            ("links to: Habitability", LINK),
+            ("contradiction found", ALERT),
+        ], QUERY)
+        self.play(FadeIn(s1[0]), LaggedStart(*[FadeIn(c, shift=DOWN * 0.1) for c in s1[1]], lag_ratio=0.25),
+                  run_time=1.6)
+        self.wait(1.0)
+
+        s2 = self.stage_list("STAGE 2 · GENERATION", [
+            ("source summary", KINDS["source"][1]),
+            ("entity + concept pages", KINDS["concept"][1]),
+            ("index.md / log.md", GRID),
+            ("review item", ALERT),
+        ], ANSWER)
+        self.set_caption("Stage 2, generation: write the pages. First a summary page for the new source.")
+        self.play(FadeTransform(s1, s2), run_time=0.8)
+        self.s2 = s2
+
+        def mark(i):
+            return s2[1][i][0].animate.set_fill(GRID, 1)
+
         self.sparks(LLM_POS, [self.cards["S3"].get_center()])
         self.shown.add("S3")
-        self.play(GrowFromCenter(self.cards["S3"]), run_time=0.6)
+        self.play(GrowFromCenter(self.cards["S3"]), mark(0), run_time=0.6)
 
         touched = txt("pages touched: 1", 14, QUERY, MONO)
         touched.next_to(self.wiki[0].get_corner(UR), DL, buff=(0.2, 0.16, 0))
         self.add(touched)
-        self.touched = touched
 
         def bump(n):
             new = txt(f"pages touched: {n}", 14, QUERY, MONO).move_to(touched, aligned_edge=RIGHT)
             return Transform(touched, new)
 
-        self.set_caption("Then it updates the pages the new source affects, and creates the ones that are missing.")
+        self.set_caption("Then it updates the pages the source affects, and creates the ones that are missing.")
         self.sparks(LLM_POS, [self.cards["E1"].get_center(), self.cards["C3"].get_center()])
         self.shown.add("C3")
         new_links = VGroup(self.link("S3", "E1"), self.link("S3", "C3"))
@@ -358,82 +415,88 @@ class LlmWikiExplainer(Scene):
         self.raise_cards()
         self.play(GrowFromCenter(self.cards["C3"]),
                   Indicate(self.cards["E1"], color=QUERY, scale_factor=1.08),
-                  ShowCreation(new_links), bump(3), run_time=1.0)
+                  ShowCreation(new_links), bump(3), mark(1), run_time=1.0)
 
-        self.set_caption("New data contradicts an old claim, so the LLM flags it instead of overwriting it.")
+        self.set_caption("New data contradicts an old claim. It is flagged for the review queue, not silently overwritten.")
         self.sparks(LLM_POS, [self.cards["C2"].get_center()])
         contra = self.link("C3", "C2", color=ALERT, width=2.4)
         self.add(contra)
-        self.raise_cards()
-        flag = chip("contradiction flagged", ALERT, 11)
-        flag.next_to(self.cards["C2"], DOWN, buff=0.12)
+        flag = chip("contradiction", ALERT, 11).next_to(self.cards["C2"], DOWN, buff=0.12)
         self.flag = flag
+        self.raise_cards()
         self.play(ShowCreation(contra), Indicate(self.cards["C2"], color=ALERT, scale_factor=1.08),
                   FadeIn(flag, shift=UP * 0.1), bump(4), run_time=1.0)
-        self.wait(0.4)
+        self.contra_item = self.review_entry("contradiction", "Habitability", ALERT)
+        moving = flag.copy()
+        self.play(moving.animate.scale(0.6).move_to(self.contra_item), mark(3), run_time=0.8)
+        self.play(FadeOut(moving), FadeIn(self.contra_item), run_time=0.4)
 
         self.set_caption("Finally the index and the log are updated. One source can touch 10 to 15 pages.")
         rows = [self.index_entry("S3"), self.index_entry("C3")]
         lrow = self.log_entry("ingest", "Subsurface ice radar")
         self.sparks(LLM_POS, [self.index_box.get_center(), self.log_box.get_center()])
-        self.play(*self.flash_rows(rows + [lrow]), bump(6), run_time=0.9)
+        self.play(*self.flash_rows(rows + [lrow]), bump(6), mark(2), run_time=0.9)
         tick = txt("compiled", 10, ANSWER, MONO).next_to(r3, DOWN, buff=0.03).align_to(r3, RIGHT)
         self.ticks.add(tick)
-        self.play(FadeIn(tick),
-                  *[r[-1].animate.set_color(INK) for r in rows + [lrow]], run_time=0.6)
+        self.play(FadeIn(tick), *[r[-1].animate.set_color(INK) for r in rows + [lrow]], run_time=0.6)
         self.wait(1.0)
-        self.play(FadeOut(touched), run_time=0.4)
+        self.play(FadeOut(touched), FadeOut(s2), run_time=0.5)
 
     def query(self):
         q = "Could Mars support life today?"
         self.set_caption("Query: you ask a question.")
-        qc = self.bar_put(chip(q, QUERY, 14))
+        qc = self.bar_put(chip(q, QUERY, 13))
         self.play(FadeIn(qc, shift=DOWN * 0.1), run_time=0.6)
 
-        self.set_caption("The LLM reads the index first to find the relevant pages.")
+        self.set_caption("Retrieval still happens. It searches the wiki pages, starting from the index...")
         idx_hl = SurroundingRectangle(self.index_box[0], buff=0.03).set_stroke(QUERY, 2.5)
-        self.play(ShowCreation(idx_hl), run_time=0.5)
-        self.sparks(self.index_box.get_center(), [LLM_POS], run_time=0.7)
-
-        self.set_caption("It pulls compiled pages, and raw sources where it needs detail, into the context window.")
         picks = ["C2", "C3", "E1"]
         hls = VGroup(*[SurroundingRectangle(self.cards[k], buff=0.05).set_stroke(QUERY, 2.5) for k in picks])
+        self.play(ShowCreation(idx_hl), run_time=0.5)
+        self.play(ShowCreation(hls), run_time=0.6)
+        self.set_caption("...and the raw sources, because the wiki doesn't replace them.")
         raw_hl = SurroundingRectangle(self.docs["R3"], buff=0.05).set_stroke(QUERY, 2.5)
-        self.play(ShowCreation(hls), ShowCreation(raw_hl), run_time=0.6)
-        packed = [("index.md", GRID, self.index_box)]
-        packed += [(PAGES[k][1], KINDS[PAGES[k][0]][1], self.cards[k]) for k in picks]
-        packed += [("raw · ice-radar-2026.pdf", KINDS["source"][1], self.docs["R3"])]
+        self.play(ShowCreation(raw_hl), run_time=0.6)
+
+        self.set_caption("The selected wiki pages, log history and raw passages are packed into the context window.")
+        packed = [(f"wiki: {PAGES[k][1]}", KINDS[PAGES[k][0]][1], self.cards[k]) for k in picks]
+        packed += [("wiki: log history", GRID, self.log_box),
+                   ("raw: ice-radar §2", KINDS["source"][1], self.docs["R3"])]
         segs = []
         for label, col, src in packed:
-            c = chip(label, col, 12).move_to(src)
-            target = self.bar_put(c.copy()).get_center()
-            segs.append((c, target))
+            c = chip(label, col, 11).move_to(src)
+            segs.append((c, self.bar_put(c.copy()).get_center()))
         self.play(LaggedStart(*[c.animate.move_to(t) for c, t in segs], lag_ratio=0.15), run_time=1.6)
         self.play(FadeOut(hls), FadeOut(raw_hl), FadeOut(idx_hl),
                   Indicate(self.llm, color=QUERY, scale_factor=1.15), run_time=0.7)
 
         ans = chip("Not on the surface, but buried ice keeps it open.", ANSWER, 13)
         ans.next_to(self.bar, DOWN, buff=0.12).align_to(self.bar, RIGHT).shift(LEFT * 0.2)
-        self.set_caption("It answers with citations to the wiki pages it used.")
+        self.set_caption("The LLM synthesizes an answer and cites the pages it used.")
         self.play(FadeIn(ans, shift=DOWN * 0.1), run_time=0.6)
         self.wait(1.0)
 
-        self.set_caption("A good answer doesn't vanish into chat history. It is filed back as a new page.")
-        y1 = self.cards["Y1"]
-        self.play(Transform(ans, y1, path_arc=-PI / 5), run_time=1.3)
+        self.set_caption("A valuable answer is saved back to the wiki, after review.")
+        item = self.review_entry("answer to review", "Life on Mars today?", AMBER)
+        self.play(Transform(ans, item, path_arc=-PI / 6), run_time=1.1)
         self.remove(ans)
-        self.add(y1)
+        self.add(item)
+        self.wait(0.4)
+        self.play(self.review_resolve(item, "approved"), run_time=0.5)
+        y1 = self.cards["Y1"]
+        self.play(TransformFromCopy(item, y1, path_arc=PI / 6), run_time=1.0)
         self.shown.add("Y1")
         new_links = VGroup(self.link("Y1", "C2"), self.link("Y1", "E1"))
         self.add(new_links)
         self.raise_cards()
         rows = [self.index_entry("Y1")]
         lrow = self.log_entry("query", "Life on Mars today?")
+        self.set_caption("Now the next question starts from a better place. The exploration compounds.")
         self.play(ShowCreation(new_links), *self.flash_rows(rows + [lrow]),
                   FadeOut(VGroup(qc, *[c for c, _ in segs]), shift=UP * 0.2), run_time=1.0)
         self.play(*[r[-1].animate.set_color(INK) for r in rows + [lrow]], run_time=0.4)
         self.bar_reset()
-        self.wait(1.0)
+        self.wait(1.2)
 
     def lint(self):
         self.set_caption("Lint: now and then the LLM health-checks the whole wiki.")
@@ -453,59 +516,75 @@ class LlmWikiExplainer(Scene):
         self.play(ShowCreation(ln), run_time=0.8)
         self.play(FadeOut(orphan), FadeOut(otag), run_time=0.4)
 
-        self.set_caption("It finds a claim the newer source superseded, and revises it.")
+        self.set_caption("It revises the stale claim the contradiction pointed to, and clears the review item.")
         stale = SurroundingRectangle(self.cards["C2"], buff=0.06).set_stroke(AMBER, 2.5)
-        revised = chip("stale claim revised", ANSWER, 11).move_to(self.flag)
+        revised = chip("claim revised", ANSWER, 11).move_to(self.flag)
         self.play(ShowCreation(stale), run_time=0.5)
         self.play(Transform(self.flag, revised), self.links[("C3", "C2")].animate.set_stroke(LINK, 1.6),
-                  run_time=0.8)
-        lrow = self.log_entry("lint", "2 fixes: 1 link, 1 claim")
+                  self.review_resolve(self.contra_item), run_time=0.8)
+        lrow = self.log_entry("lint", "2 fixes")
         self.play(FadeOut(stale), *self.flash_rows([lrow]), run_time=0.6)
         self.play(lrow[-1].animate.set_color(INK), run_time=0.3)
-        self.set_caption("Every ingest, answer and lint pass leaves the wiki richer. That is the compounding.")
+        self.set_caption("Every ingest, answer and lint pass leaves artifacts behind. That is what compounds.")
         self.wait(2.0)
 
     def wrap(self):
-        keep = [self.bg]
-        self.play(FadeOut(Group(*[m for m in self.mobjects if m not in keep and m is not self.camera.frame])),
+        self.play(FadeOut(Group(*[m for m in self.mobjects if m is not self.bg and m is not self.camera.frame])),
                   run_time=0.8)
         self.caption = None
 
-        def column(head, color, lines):
-            h = txt(head, 28, color, weight=BOLD)
-            body = VGroup(*[txt(l, 18, INK) for l in lines]).arrange(DOWN, aligned_edge=LEFT, buff=0.22)
-            return VGroup(h, body).arrange(DOWN, aligned_edge=LEFT, buff=0.35)
+        head = txt("PIPELINE COMPARISON", 13, MUTED, MONO)
 
-        rag = column("RAG", MUTED, ["Retrieves raw chunks per question",
-                                    "Re-derives the answer every time",
-                                    "Nothing accumulates"])
-        wiki = column("LLM Wiki", ANSWER, ["Compiles each source into pages once",
-                                           "Keeps pages current on every ingest",
-                                           "Good answers are filed back"])
-        cols = VGroup(rag, wiki).arrange(RIGHT, buff=1.6, aligned_edge=UP).move_to(UP * 1.4)
-        self.play(FadeIn(rag, shift=UP * 0.2), run_time=0.8)
-        self.play(FadeIn(wiki, shift=UP * 0.2), run_time=0.8)
-        self.wait(1.2)
+        def row(label, color, steps):
+            lab = fit(txt(label, 20, color, weight=BOLD), 2.4)
+            chips = [chip(s, color if i == len(steps) - 1 else GRID, 14) for i, s in enumerate(steps)]
+            seq = VGroup()
+            for i, c in enumerate(chips):
+                seq.add(c)
+                if i < len(chips) - 1:
+                    seq.add(Arrow(ORIGIN, RIGHT * 0.4, buff=0, stroke_width=2.5).set_color(MUTED))
+            seq.arrange(RIGHT, buff=0.12)
+            lab.next_to(seq, LEFT, buff=0.4)
+            return VGroup(lab, seq)
 
-        point = txt("Retrieval doesn't disappear. It now runs over the compiled wiki and the raw sources.",
-                    20, QUERY)
-        fit(point, 13.0).next_to(cols, DOWN, buff=0.7)
+        rag = row("Query-time RAG", MUTED, ["Question", "Search raw", "Synthesize on the spot",
+                                            "Answer only remains"])
+        wiki = row("LLM Wiki", ANSWER, ["Add new source", "Incremental wiki update",
+                                        "At query time: search wiki + raw", "Artifacts remain"])
+        for r, y in ((rag, 0.0), (wiki, -0.85)):
+            r[1].move_to([0, y, 0], aligned_edge=LEFT).set_x(-3.9 + r[1].get_width() / 2)
+            r[0].next_to(r[1], LEFT, buff=0.35)
+        table = VGroup(rag, wiki)
+        fit(table, 13.4).move_to(UP * 2.2)
+        head.next_to(table, UP, buff=0.3).align_to(table, LEFT)
+        self.play(FadeIn(head), FadeIn(rag[0]),
+                  LaggedStart(*[FadeIn(m, shift=RIGHT * 0.1) for m in rag[1]], lag_ratio=0.15), run_time=1.6)
+        self.play(FadeIn(wiki[0]),
+                  LaggedStart(*[FadeIn(m, shift=RIGHT * 0.1) for m in wiki[1]], lag_ratio=0.15), run_time=1.6)
+        self.wait(1.0)
+
+        point = txt("Retrieval is essential. Because a wiki exists, raw search is not eliminated.", 20, QUERY)
+        fit(point, 13.0).next_to(table, DOWN, buff=0.55)
         self.play(FadeIn(point, shift=UP * 0.1), run_time=0.8)
         self.wait(1.2)
 
-        th = txt("TRADE-OFFS", 13, MUTED, MONO)
-        items = VGroup(*[chip(s, GRID, 15) for s in [
-            "Compiling can lose detail",
-            "Generation isn't deterministic",
-            "The schema needs design",
-            "A big wiki needs search too",
-        ]]).arrange(RIGHT, buff=0.2)
-        fit(items, 13.0)
-        VGroup(th, items).arrange(DOWN, buff=0.2).next_to(point, DOWN, buff=0.6)
-        self.play(FadeIn(th), LaggedStart(*[FadeIn(i, shift=UP * 0.1) for i in items], lag_ratio=0.2),
-                  run_time=1.4)
-        credit = txt("Pattern: Andrej Karpathy, \"LLM Wiki\"  ·  Architecture view: SmartScope", 14, MUTED)
-        credit.to_edge(DOWN, buff=0.35)
-        self.play(FadeIn(credit), run_time=0.6)
-        self.wait(3.0)
-        self.play(FadeOut(Group(cols, point, th, items, credit)), run_time=0.8)
+        risks = VGroup(*[chip(s, ALERT, 15) for s in
+                         ["Information loss", "Summary drift", "Error cementing", "Non-determinism"]])
+        risks.arrange(RIGHT, buff=0.2)
+        note = txt("Incorrect summaries remain as Markdown and become context for later questions.", 16, MUTED)
+        rg = VGroup(risks, note).arrange(DOWN, buff=0.2).next_to(point, DOWN, buff=0.5)
+        self.play(LaggedStart(*[FadeIn(r, shift=UP * 0.1) for r in risks], lag_ratio=0.2), run_time=1.2)
+        self.play(FadeIn(note), run_time=0.6)
+        self.wait(1.2)
+
+        close = VGroup(
+            txt("Not a deterministic knowledge compiler.", 22, INK, weight=BOLD),
+            txt("A living draft maintained by an LLM: a map, with the raw sources as the territory.", 18, INK),
+        ).arrange(DOWN, buff=0.12)
+        fit(close, 13.0).next_to(rg, DOWN, buff=0.5)
+        self.play(FadeIn(close, shift=UP * 0.1), run_time=0.8)
+        credit = txt("Pattern: Andrej Karpathy, \"LLM Wiki\"  ·  Diagram and analysis: SmartScope", 13, MUTED)
+        credit.to_edge(DOWN, buff=0.25)
+        self.play(FadeIn(credit), run_time=0.5)
+        self.wait(3.5)
+        self.play(FadeOut(Group(head, table, point, rg, close, credit)), run_time=0.8)

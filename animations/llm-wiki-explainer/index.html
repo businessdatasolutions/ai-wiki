@@ -63,9 +63,23 @@ ol.steps b { font-weight: 600; }
 .k { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; }
 .src { color: var(--muted); } .ent { color: var(--space); } .con { color: var(--cooking); } .syn { color: var(--answer); }
 .legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 0; padding: 0; list-style: none; }
+.tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 500 12px/1.2 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+tbody tr:last-child td { border-bottom: 0; }
+.risk { color: var(--muted); max-width: 70ch; margin: 14px 0 0; font-size: 15px; }
+.risk b { color: var(--ink); font-weight: 600; }
 code { font-family: var(--mono); font-size: .88em; }
 footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 14px; }
-footer code { font-family: var(--mono); font-size: 12px; }
+footer .tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 500 12px/1.2 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+tbody tr:last-child td { border-bottom: 0; }
+.risk { color: var(--muted); max-width: 70ch; margin: 14px 0 0; font-size: 15px; }
+.risk b { color: var(--ink); font-weight: 600; }
+code { font-family: var(--mono); font-size: 12px; }
 footer a { color: inherit; }
 </style>
 
@@ -73,7 +87,7 @@ footer a { color: inherit; }
   <header>
     <span class="eyebrow">Knowledge architecture · animated</span>
     <h1>How an LLM Wiki works</h1>
-    <p class="lede">Plain RAG rediscovers knowledge from raw chunks on every question. An LLM Wiki has the model compile each source into a persistent, interlinked set of markdown pages, keep those pages current, and answer from them. Good answers go back into the wiki, so it compounds.</p>
+    <p class="lede">Plain RAG rediscovers knowledge from raw chunks on every question. An LLM Wiki has the model compile each source into persistent, interlinked markdown pages and keep them current. Retrieval doesn't go away: questions search the wiki and the raw sources, and valuable answers go back into the wiki after review.</p>
   </header>
 
   <div class="film">
@@ -86,8 +100,8 @@ footer a { color: inherit; }
     <section>
       <h2>The three operations</h2>
       <ol class="steps">
-        <li><span><b>Ingest.</b> You add a source. The LLM reads it, writes a summary page, updates the entity and concept pages it affects, creates missing ones, flags contradictions, and updates <code>index.md</code> and <code>log.md</code>. One source can touch 10 to 15 pages.</span></li>
-        <li><span><b>Query.</b> The LLM reads the index first, then packs the relevant wiki pages, plus raw sources where it needs detail, into the context window and answers with citations. A good answer is filed back as a new page.</span></li>
+        <li><span><b>Ingest.</b> You add a source. In stage 1 (analysis) the LLM extracts entities and concepts, links them to the existing wiki and detects contradictions. In stage 2 (generation) it writes the source summary, updates or creates entity and concept pages, updates <code>index.md</code> and <code>log.md</code>, and files review items. One source can touch 10 to 15 pages.</span></li>
+        <li><span><b>Query.</b> The LLM searches the wiki, starting from the index, and the raw sources. It packs the selected pages, log history and raw passages into the context window and answers with citations. A valuable answer is saved back as a page, after review.</span></li>
         <li><span><b>Lint.</b> Now and then the LLM health-checks the wiki: orphan pages, stale claims, missing cross-references, concepts without a page.</span></li>
       </ol>
     </section>
@@ -95,7 +109,7 @@ footer a { color: inherit; }
       <h2>The three layers</h2>
       <div class="qs">
         <div class="q"><span class="k src">RAW SOURCES</span><p>Your curated documents. Immutable: the LLM reads them and never edits them.</p></div>
-        <div class="q"><span class="k ent">WIKI</span><p>Markdown pages the LLM writes and owns: sources, entities, concepts, syntheses, plus an index and a log.</p></div>
+        <div class="q"><span class="k ent">LLM WIKI</span><p>Markdown pages the LLM writes and owns: sources, entities, concepts and syntheses, linked into a graph, plus an index, a log and a review queue for contradictions and answers that need a human decision.</p></div>
         <div class="q"><span class="k con">SCHEMA</span><p>A rulebook such as <code>CLAUDE.md</code> that tells the LLM how to ingest, answer and maintain the wiki.</p></div>
       </div>
       <ul class="legend" style="margin-top:16px">
@@ -104,8 +118,25 @@ footer a { color: inherit; }
     </section>
   </div>
 
+  <section>
+    <h2>Where to start</h2>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Situation</th><th>Start with</th></tr></thead>
+        <tbody>
+          <tr><td>Mostly one-off FAQ lookup</td><td>Classic RAG</td></tr>
+          <tr><td>Repeated analysis over the same sources</td><td>Add an LLM Wiki layer</td></tr>
+          <tr><td>Relationships and contradictions matter</td><td>Wiki plus graph</td></tr>
+          <tr><td>Identical output is required</td><td>Don't rely on automatic wiki generation alone</td></tr>
+          <tr><td>Raw details decide the answer</td><td>Use the wiki as a map, then return to raw sources</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="risk">The weak points: <b>information loss</b> when sources are summarized, <b>summary drift</b> as pages are rewritten, <b>error cementing</b> when a bad summary becomes context for later questions, and <b>non-determinism</b>. The same source won't always produce the same wiki.</p>
+  </section>
+
   <footer>
-    Pattern by Andrej Karpathy (<code>llm-wiki.md</code>). The point that retrieval doesn't disappear follows SmartScope's <a href="https://smartscope.blog/en/blog/llm-wiki-context-architecture/">LLM Wiki Architecture</a>. Animated with 3Blue1Brown's <a href="https://github.com/3b1b/manim">manim</a> (manimgl). The Mars wiki is an illustrative example. Source: <code>animations/llm-wiki-explainer/llm_wiki_explainer.py</code>.
+    Pattern by Andrej Karpathy (<code>llm-wiki.md</code>). The architecture, the two-stage ingest, the query loop, the risks and the "where to start" table follow SmartScope's <a href="https://smartscope.blog/en/blog/llm-wiki-context-architecture/">LLM Wiki Architecture</a>. Animated with 3Blue1Brown's <a href="https://github.com/3b1b/manim">manim</a> (manimgl). The Mars wiki is an illustrative example. Source: <code>animations/llm-wiki-explainer/llm_wiki_explainer.py</code>.
   </footer>
 </div>
 
