@@ -6,16 +6,16 @@ tags: [typesafe-ai, jev, system-one-models, classification, calibrated-decisions
 affiliation: "Independent AI startup"
 role: "Builder of Jev, a non-generative \"System One\" decision model"
 confidence: 0.7
-last_confirmed: "2026-09-22"
-accessed_at: "2026-09-22"
-source_count: 3
+last_confirmed: "2026-10-05"
+accessed_at: "2026-10-05"
+source_count: 4
 ---
 
 # TypeSafe AI
 
 **TypeSafe AI** is a startup that in September 2026 released **Jev**, which it calls a **System One model**: *"a class of AI models built to make fast, structured decisions that software can use directly. A System One model evaluates a state and returns typed answers and probabilities."* The name borrows Kahneman's *System 1 / System 2* distinction. Jev is cast as fast intuition; generative LLMs are the slow, step-by-step reasoning.
 
-The wiki knows TypeSafe only **through [[LangChain]]**. All three sources are LangChain publications about the integration. No TypeSafe primary source (its launch post, docs or model card) has been ingested. The alias `Jev` is recorded here because the wiki has no separate product page for it.
+The wiki knows TypeSafe only **through [[LangChain]]**. All four sources are LangChain publications: three about the integration, and a keynote that features it. No TypeSafe primary source (its launch post, docs or model card) has been ingested. The alias `Jev` is recorded here because the wiki has no separate product page for it.
 
 ## What is claimed about Jev
 
@@ -32,12 +32,14 @@ Only one measurement exists in the wiki: [[2026-09-20-shea-roche-langchain-jev-a
 - [[2026-09-17-runkle-lovell-langchain-building-a-harness-with-jev]]: the integration post; model routing and tool-risk gating as harness middleware.
 - [[2026-09-20-shea-roche-langchain-jev-as-a-judge-agent-evals]]: Jev as an eval judge, the one measurement.
 - [[2026-09-21-runkle-langchain-building-a-harness-with-jev]]: video version; the Kahneman framing and the PII demo.
+- [[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote]]: Harrison Chase's Interrupt NYC keynote (24 Sep 2026). Jev as one of three uses in a portfolio beside frontier models (evals, guardrails, routing), served through the LangSmith LLM Gateway. A slide shows `jev-1.13.0` returning a `noul` of 0.999 for an urgency question. Chase dates the launch to *"the weekend"* before the talk (19–20 September), and his Google Trends slide peaks on 20 September. Chase also names TypeSafe beside OpenAI and Anthropic as a provider a model-neutral harness should be able to switch to.
 
 Concepts touched: [[concepts/small-language-models|small-language-models]] (specialised models inside heterogeneous agent systems), [[concepts/agent-development-lifecycle|agent-development-lifecycle]] (judges), [[concepts/agent-oversight-and-delegation|agent-oversight-and-delegation]] (risk classifiers).
 
 ## Open questions
 
 - **Independent evidence.** Every source is from a distribution partner. A TypeSafe primary source, or a third-party benchmark, would be the next thing to ingest.
+- **Launch date.** The earliest LangChain post is dated 17 September; Chase says Jev launched the weekend of 19–20 September. A TypeSafe primary source would settle it.
 - **Is it a small model?** The wiki files Jev under the specialised-model argument, not the small-model one, because its size is unknown.
 
 ## Mentioned in

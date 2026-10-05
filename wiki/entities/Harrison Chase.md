@@ -6,9 +6,9 @@ tags: [harrison-chase, langchain, langgraph, langsmith, langchain-labs, deep-age
 affiliation: "[[LangChain]]"
 role: "Co-founder and CEO, LangChain (since 2022)"
 confidence: 0.85
-last_confirmed: "2026-09-03"
-accessed_at: "2026-09-03"
-source_count: 5
+last_confirmed: "2026-10-05"
+accessed_at: "2026-10-05"
+source_count: 6
 ---
 
 # Harrison Chase
@@ -70,6 +70,8 @@ Chase asserts at Interrupt 26: *"we moved from top 30 on terminal bench two to t
 - **"Evals act as a forcing function"** — the gradient analogy for non-model-layer learning.
 - **"Two types of agents: long-horizon and customer experience"** — the product-surface typology orthogonal to the build-layer split.
 - **"Everyone will be involved in building agents — domain experts most of all"** — the *org-side corollary* of layered-agent thinking, paired with [[Diana Hu]]'s *AI founder / IC / DRI* org structure prescription.
+- **"Own your intelligence" — open, compounding, governed** — the Interrupt NYC mission framing; a model-neutral harness as *"both offensive and defensive"* ([[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote|Interrupt NYC, Sep 2026]]).
+- **Platform engineers / agent engineers / outer ring** — the people side of agent building, as three rings (same source).
 
 ## Career timeline
 
@@ -91,6 +93,16 @@ Chase asserts at Interrupt 26: *"we moved from top 30 on terminal bench two to t
 | [[2026-05-11-karten-zhang-continual-harness-online-adaptation\|Karten & Zhang / Continual Harness (11 May 2026)]] | The academic formalisation of continual-harness adaptation — Chase's Interrupt 26 three-layer model is the vendor-CEO operationalisation 10 days later. |
 | [[2026-05-20-tan-hu-stanford-cs153-ai-native-company-1000x-engineer\|Tan & Hu / Stanford CS153 (20 May 2026)]] | Paired *founder/CEO articulations of layered-agent-system thinking* landing within 24 hours. Tan/Hu maps *agentic-primitives → company-structure*; Chase maps *learning-systems → agentic-system-layers*. Same architectural decompose-and-map move applied to different domains. |
 | [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems\|Huang / NVIDIA interview (8 Jul 2026)]] | Chase interviews rather than headlines; Huang's post-training-inside-the-harness account and open-vs-frontier specialization advice extend the model/harness/context layering Chase coined at Interrupt 26. |
+| [[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote\|Chase / Interrupt NYC keynote (24 Sep 2026, published 5 Oct)]] | *Own your intelligence* (three reasons, three pillars); people / process / technology with three people rings; the LangSmith three-layer product map and seven launches, including Engine v2. |
+
+## Interrupt NYC: "own your intelligence" (2026-10-05)
+
+[[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote|Chase's opening keynote at Interrupt NYC]] was delivered on 24 September 2026, LangChain's first New York edition, and published on 5 October. It adds two framings to the catalogue below:
+
+- ***Own your intelligence***, which Chase calls *"the phrase that has been going around"*, is credited to no one and recast as LangChain's mission. It rests on three reasons (token costs, open models, data over models) and three pillars: an **open, model-neutral harness**, **compounding** learning from use, and **governance** for internal agents. Rogo, Harvey and JPMorgan Chase are his examples.
+- **People / process / technology** for agent building. The people side is three rings: platform engineers, agent engineers (*"the weird hybrid mix of data scientist and engineer and machine learning engineer"*) and an outer ring of domain experts. The process side is his ADLC loop. The technology side is LangSmith in three layers: runtime, observability and evals, and an *intelligence* layer, LangSmith Engine, that works the loop.
+
+The keynote is also the wiki's fullest LangChain product account: seven launches, 16 verified slides. See the source page.
 
 ## Named as the coiner, by a competitor, from memory (2026-09-03)
 
@@ -103,7 +115,8 @@ This is the wiki's only third-party datapoint on Chase's **vocabulary-setting** 
 - **Chase's pre-LangChain career** — *"My background's in classical machine learning"* is a one-line autobiographical aside; the wiki has no further detail on where Chase worked before founding LangChain in 2022.
 - **LangChain Labs's first publications** — Labs is announced at Interrupt 26 as the *continual-learning research group inside LangChain*; the first Labs outputs (papers, blog posts, open-source releases) are an open ingest target for late 2026 / 2027.
 - **LangSmith Fleet customer adoption** — the internal-LangChain GTM-agent metrics (84% weekly usage / 240% lead-to-qualified / 40h saved per rep / month) are the only quantified Fleet outcomes the wiki holds. Customer-side adoption metrics (any LangChain customers using Fleet at scale with published numbers) would substantiate or refine the *no-code-builder-for-domain-experts* thesis.
-- **LangSmith Engine** — referenced in the Interrupt 26 description as a separate Interrupt-week announcement (*"Meet LangSmith Engine"* blog link); not substantively discussed in the talk body. Open ingest target.
+- **LangSmith Engine** — referenced in the Interrupt 26 description as a separate Interrupt-week announcement (*"Meet LangSmith Engine"* blog link); not substantively discussed in the talk body. *Partly answered 2026-10-05:* the [[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote|Interrupt NYC keynote]] describes Engine and announces v2 (fix testing on preview deployments, red teaming), with vendor figures only. Engine's own documentation is still not ingested.
+- **Who the outer ring is.** At Interrupt NYC, Chase's spoken description of the third people ring (*subject matter experts* who judge quality) and his slide's (*non-technical builders*) differ. Which one LangChain means matters for the *everyone builds agents* framing below.
 
 ## Mentioned in
 

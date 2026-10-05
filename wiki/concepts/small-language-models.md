@@ -3,9 +3,9 @@ type: concept
 aliases: ["small language model", "small language models", "SLM", "SLMs", "SLM-first", "heterogeneous agentic systems"]
 tags: [small-language-models, slm, agentic-ai, ai-agents, inference-economics, edge-deployment, quantization, model-specialization, fine-tuning, open-weight-models, tool-calling, function-calling, heterogeneous-agents]
 confidence: 0.75
-last_confirmed: "2026-09-28"
-accessed_at: "2026-09-28"
-source_count: 10
+last_confirmed: "2026-10-05"
+accessed_at: "2026-10-05"
+source_count: 11
 relationships:
   - type: instance-of
     target: foundation-models
@@ -137,3 +137,13 @@ This page argues from **size**: a small model is enough for the narrow calls an 
 ## The buyer's version: frontier models on routine work (added 2026-09-28)
 
 [[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune|Lukic & Goydan (BCG, Aug 2026)]] make the routing argument from the cost side, not the builder's side. Paul Goydan: *"A frontier model costs 30% more than a good enough model. Yet… we see more often than not very basic rudimentary tasks are being handed over to frontier models. It's like giving your teenage driver a brand-new Ferrari."* He calls model selection *"a whole new capability"* for companies, alongside controlling context-window size. The 30% figure is BCG's and is far smaller than list-price gaps between frontier and small models, so the direction of the claim is more useful than the number.
+
+## Decision models beside frontier models, as a vendor's roadmap (added 2026-10-05)
+
+[[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote|Chase at Interrupt NYC (LangChain, 24 Sep 2026)]] places [[TypeSafe AI]]'s Jev in a portfolio rather than presenting it as a replacement: *"absolutely there will be these frontier models that are driving these really complex harnesses… But there's also a ton of other decisions that need to be made."* He names three uses, each tied to latency:
+
+- **Evals in the loop**: *"if you can score it quickly according to some criteria as it's running… you can catch mistakes in real time."*
+- **Guardrails**: *"One of the downsides of guardrails is that it always adds latency."*
+- **Routing** among agents, models, skills or tools.
+
+Two additions to the section above. First, LangChain's gateway now hosts a second decision model, **SemIf**, described as open source. Chase claims *"a massive explosion in these open source decision models since Jev launched"* but names no other. Second, the slide's worked example shows the output type concretely: a support message scored **0.999** on an `is_urgent` question by `jev-1.13.0`. Jev's size is still undisclosed and the *20–200x faster, 40–400x cheaper* range is still TypeSafe's, so this page's *specialised, not necessarily small* reading stands. Confidence unchanged.

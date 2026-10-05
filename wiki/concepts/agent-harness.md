@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.95
-source_count: 111
+source_count: 112
 relationships:
   - type: part-of
     target: ai-agents
@@ -20,8 +20,8 @@ relationships:
   - type: uses
     target: small-language-models
     via: "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed"
-last_confirmed: "2026-10-01"
-accessed_at: "2026-10-01"
+last_confirmed: "2026-10-05"
+accessed_at: "2026-10-05"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -1040,3 +1040,13 @@ The general point is that **the harness has model calls of its own**: routing, g
 ## Building the harness in-house to own codebase context (added 2026-09-28)
 
 [[2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved|Geoff Charles (Ramp CPO)]] gives a buyer's reason for building a coding agent instead of licensing one. Ramp built Inspect *"because we wanted to have a strong harness and we wanted to make sure that our coding agent really understood our codebase."* The harness, not the model, is what he treats as the proprietary part.
+
+## Business logic, harness, infrastructure: a vendor's three-way split (added 2026-10-05)
+
+[[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote|Chase at Interrupt NYC (LangChain, 24 Sep 2026)]] splits a running agent three ways, and draws the harness narrower than this page's four-layer stack does:
+
+- **Business logic** is what the customer writes: instructions, tools, skills, hooks. *"What skills for a financial agent might look like are very different than what skills for a legal agent might look like."*
+- **The harness** *"takes the model, takes a lot of this domain-specific context, and basically wires it all up."* For Deep Agents the slide gives four groups. **Execution environment** is a filesystem and sandboxes. **Context management** covers skills, memory, summarisation, context offloading and prompt caching. **Steering** is human-in-the-loop. **Delegation** is planning and subagents.
+- **Infrastructure** is what it takes to run remotely: a runtime with durable execution, a tool server, sandboxes and an LLM gateway.
+
+Skills appear twice: as content in the business logic, and as a loading mechanism in the harness. **Managed Deep Agents** bundles harness and infrastructure so that a team supplies only the business logic. Chase calls it *"this company harness"*. The customer-side picture of the same arrangement is [[2026-08-11-ummadisetti-langchain-toyota-deep-agents-rd-research|Toyota's]] in the section above. The keynote also restates the page's *model is rented, harness is owned* motif as a requirement that the harness be **model-neutral**, *"both offensive and defensive"*: switch to the best new model fast, and avoid a provider that *"can raise rates."* See [[open-source-ai]].

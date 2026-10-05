@@ -5,9 +5,9 @@ aliases: ["LangChain", "LangChain Inc"]
 tags: [langchain, agent-frameworks, agent-runtime, agent-harness, langgraph, langsmith, deep-agents]
 since: 2022
 confidence: 0.9
-last_confirmed: "2026-10-01"
-accessed_at: "2026-10-01"
-source_count: 14
+last_confirmed: "2026-10-05"
+accessed_at: "2026-10-05"
+source_count: 15
 relationships:
   - type: published-by
     target: 2026-05-09-chase-agent-development-lifecycle
@@ -52,12 +52,20 @@ This makes LangChain a **vendor whose product taxonomy *is* the wiki's vocabular
   - **LangSmith Fleet** — no-code agent configuration. **Operational metrics from LangChain's internal go-to-market agent** (per [[2026-05-21-chase-langchain-interrupt-26-future-of-ai-agents|Interrupt 26 demo]]): 84% of go-to-market team uses weekly; lead-to-qualified conversion up 240%; 40 hours saved per rep per month. Originally built in code; rebuilt in Fleet so the GTM team could own it end-to-end without code. 200+ built-in tools; Arcade partnership for 7,500+ additional tools; MCP support; native Slack / Gmail / Outlook channel integration; cost tracking + usage controls; first-class human-in-the-loop; built on top of **deep agents**; downloadable agent files for code modification.
   - **LangChain Academy** — educational resources.
 - **LangChain Labs** — research group inside LangChain *"aimed in particular at continual learning"* — announced at [[2026-05-21-chase-langchain-interrupt-26-future-of-ai-agents|Interrupt 26]] (Day 2 keynote, 21 May 2026). LangSmith's trace + feedback data substrate named as the foundation for the Labs continual-learning agenda.
-- **LangSmith Engine** — referenced in the Interrupt 26 description as a separate Interrupt-week announcement; not yet substantively ingested.
+- **LangSmith Engine** — an agent over a tracing project that clusters issues, proposes code fixes and adds evals and dataset examples. First announced at Interrupt 26. **Engine v2** was announced at [[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote|Interrupt NYC (Sep 2026)]]: it tests fixes on LangSmith Deployment preview branches, red-teams a deployed agent from its traces and GitHub repo, and comes to self-hosted with bring-your-own-key in v17. Vendor figures: 70M traces scanned, >21K issues, *2x better finding / 25% better fixes / 40% lower cost* (no method).
+- **Launched or spotlighted at Interrupt NYC** ([[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote|24 Sep 2026]]):
+  - **Managed Deep Agents** (0.8): Deep Agents harness plus managed infrastructure, *"this company harness"*. New: auth primitives (connections, user- or service-identity, channels), user-level memory in **Context Hub**, built-in web search via Parallel.
+  - **LangSmith LLM Gateway** (beta): OpenAI/Anthropic-format normalisation, pass-through, coding-agent integrations, spend limits, rate limiting and fallbacks; it hosts TypeSafe's Jev and the open-source decision model SemIf.
+  - **LangSmith Trajectories**: one message-list format parsed from many SDKs' traces.
+  - **LangSmith Fine-Tuning** with the **smithtune** CLI (training on Fireworks AI or Baseten).
+  - **LangSmith Custom Apps**, built through **LangSmith Chat**.
+  - **SmithDB**: an in-house store for agent traces, launched at Interrupt 26.
 - **Deep Agents + OpenShell blueprint** — a joint announcement with **[[NVIDIA]]** ([[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Huang/Chase interview, 8 Jul 2026]]): LangChain Deep Agents running Nemotron 3 Ultra inside OpenShell, NVIDIA's secure open runtime. Packages model + harness + runtime + acceleration stack as a reusable enterprise starting point for building domain-specific "super agents" — the wiki's first joint-vendor blueprint spanning a harness company and a substrate/silicon company.
 
 ## Conferences
 
 - **Interrupt 2026** — LangChain's first major industry conference. Day 2 keynote ([[2026-05-21-chase-langchain-interrupt-26-future-of-ai-agents|Chase + Sproul + di Vittorio]]) anchored the wiki's articulation of the two-types-of-agents typology (long-horizon vs customer-experience) and the three-layer continual-learning model (model / harness / context).
+- **Interrupt NYC** (24 Sep 2026; London followed on 13 Oct) — the first New York edition. [[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote|Chase's opening keynote]] framed the company's mission as *"enable every company to own their intelligence"* and walked through LangSmith as runtime, observability and evals, and an intelligence layer.
 
 ## Concepts LangChain co-shapes in this wiki
 

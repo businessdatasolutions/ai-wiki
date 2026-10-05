@@ -3,9 +3,9 @@ type: concept
 aliases: ["agent development lifecycle", "ADLC", "agent SDLC", "agent lifecycle"]
 tags: [agent-development-lifecycle, adlc, ai-agents, agent-engineering, lifecycle-frameworks, sdlc-parallel, build-test-deploy-monitor, agent-governance, evals, llm-as-judge]
 confidence: 0.88
-last_confirmed: "2026-10-01"
-accessed_at: "2026-10-01"
-source_count: 21
+last_confirmed: "2026-10-05"
+accessed_at: "2026-10-05"
+source_count: 22
 relationships:
   - type: part-of
     target: ai-agents
@@ -280,6 +280,14 @@ Vendor content with no measurements throughout; see the source page's scope warn
 
 [[2025-03-17-cemri-why-do-multi-agent-llm-systems-fail|MAST]] identifies **task verification** as one of three failure categories in multi-agent systems, and it is the one every other 2026 source lands on independently: [[2026-05-20-zhao-specbench-reward-hacking-long-horizon-coding-agents|SpecBench's]] collapse of oversight onto the test suite, [[2026-08-05-vo-lennys-merge-mommy-ai-code-review-bot|Merge Mommy's]] *verification gap* dimension, and the [[2026-06-11-abujadallah-rejection-of-agentic-pull-request-fixes|46.41% of fixes rejected]] after an agent declared them done. [[2026-03-23-geng-neubig-caid-asynchronous-software-engineering-agents|CAID]] puts **executable test-based verification** at the integration step rather than at the end, which is the lifecycle change the evidence supports. See [[multi-agent-failure-modes]] and [[agentic-pull-requests]].
 
+## The loop as a product map, and a tool that claims to run it (added 2026-10-05)
+
+Four and a half months after the essay, [[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote|Chase's Interrupt NYC keynote (24 Sep 2026)]] puts the same governed loop on a slide and maps LangSmith onto it. **Runtime** covers Build and Deploy, **observability and evals** cover Test and Monitor, and a third **intelligence** layer sits above both. Three additions to what this page records from Chase's essay:
+
+- **People.** The process is staffed in three rings. **Platform engineers** build the shared tooling for governance and the eval loop. **Agent engineers** are *"the weird hybrid mix of data scientist and engineer and machine learning engineer."* An outer ring is called *subject matter experts* in speech and *non-technical builders* on the slide. The essay's *Repeatable infrastructure across teams* governance axis becomes a named team here.
+- **Traces as the system of record, in one format.** Runs, traces and threads give way to *trajectories*: the message list an agent loop compiles, parsed from many SDKs into one standard shape. It is meant to feed debugging, annotation and fine-tuning alike. [[2026-09-30-zamora-feroz-why-your-ai-agent-fails-in-production|Zamora & Feroz]] make traces framework-neutral for the Test phase with OpenTelemetry and OpenInference instead.
+- **An agent that works the loop.** LangSmith Engine is described as acting at every phase: *code changes* at Build, *add to datasets* at Test, *context changes* at Deploy, *add to online evals* at Monitor. Two v2 features bear on the verification section above. Fixes are **tested on a preview deployment before they ship**. **Red teaming** probes a deployed agent with hypothesised issues, built from its past traces and its GitHub repository, and is pitched as a way to build *"an initial eval dataset"* before launch. Both are vendor claims without a method; see Debates.
+
 ## Mentioned in
 
 ```dataview
@@ -294,3 +302,4 @@ SORT file.name ASC
 - **Stage count vs. phase count.** Google's 9-stage wheel and Chase's 4-phase loop describe the same lifecycle at different granularities. Neither supersedes the other — they are complementary vantages.
 - **Does the Compounding loop deserve its own stage?** The wiki's [[agent-harness|agent-harness]] page names it as the fourth Chatterjee layer; Chase's Monitor + Iterate phases together cover it; Google's 9-stage wheel elides it. Open question: does it become a named stage in subsequent ADLC formalizations.
 - **Small-N eval reports and failed judges (added 2026-10-01).** [[2026-09-30-zamora-feroz-why-your-ai-agent-fails-in-production|Zamora & Feroz]] present a 0.33 documentation-quality score as the blind spot the scorecard caught. Their own heatmap shows it rests on three scored answers, with one answer unscored and one judge failing on every question; the failing metric is also missing from the summary table. Nothing in the Test-phase literature on this page says what a report should do with judge errors: drop the cell, count it as a fail, or block the run. The one demonstrated default, silently dropping it, changes the headline number. Open question for the Test phase.
+- **Can the Monitor → Build hop be automated, and how would anyone know? (open, 2026-10-05)** [[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote|LangChain's Engine v2]] claims to cluster production issues, propose fixes, test them on a preview deployment and add evals. The only figures are the vendor's: *2x better finding* on "IssueBench", *25% better fixes* on Terminal Bench, *40% lower cost*, *70M traces scanned* and *>21K issues detected*. No baseline or method is given, and no false-positive rate. The page has no independent measurement of an automated Iterate step. The slide and the speech also disagree on whether an issue is confirmed in production or on a preview branch. Same-vendor restatement of the loop, so confidence is unchanged.
