@@ -10,6 +10,22 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-10-05] ingest | Two on the human side of AI change: McKinsey on fear of loss, DW on Estonia's entry-level gap
+
+The user sent four links, two copies each of two videos. Neither was in the wiki.
+
+**Acquire.** `fetch_transcript.py --json` for both, rendered with the skill's `to_markdown`. Gates: McKinsey 312 ASR segments to 32:34 of 32:38; DW 38 manual segments to 4:34 of 4:50; no doubled segments or a11y labels in either. McKinsey proper nouns corrected at acquire time (McKinsey, Johanne Lavoie, Brooke Weddle, Bryan Hancock), following the precedent of the Brynjolfsson episode; DW left as captioned. Stills were decided by probing 7 frames of each: McKinsey is a four-way video call (no stills); DW is news footage with one Eurostat chart, so a full scan was run (29,183 tokens, 2 build states, 1 published). Gemini misread the chart's source as *June 2024*; the pixels say **June 2026**. The DW interviewees' names were checked against on-screen lower thirds: Nelja Kornfeld (ProCareer) and Keishy Margus (Elisa Eesti). The captions gave only *"Nelja"*.
+
+**Pages.**
+- [[2026-09-29-lavoie-mckinsey-talks-talent-leading-when-change-feels-threatening]]: a change-leadership episode with AI as the backdrop. People react to fear of loss, not change; safety and accountability are a *"false tension"*; the leader is a system designer; competences *"AI is not going to do for you"*. No figures. `supports` [[2026-08-11-ellmer-dhar-bcg-so-what-is-your-ai-rollout-built-to-fail|Ellmer & Dhar]], [[2026-06-10-anicich-brouwers-why-employees-arent-transparent-ai-usage|Anicich & Brouwers]] and [[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|the Brynjolfsson episode]].
+- [[2026-10-01-dw-news-estonia-young-people-entry-level-jobs]]: Estonian youth unemployment at 22.7% against an EU average of 15.5%, with five unweighted causes. AI is one employer's view. Dual apprenticeship systems are credited for the low German and Dutch rates. `supports` [[2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era|Brown / WEF]], the Brynjolfsson episode, [[2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai|Sundararajan]] and [[2026-06-01-lf-state-of-tech-talent-europe-2026|LF Europe]].
+
+**Neighbour scan.** McKinsey: 11 sources share two or more W&W cells plus topic words. Edges go to the three above; the rest are incidental (Giles, BBC AI Decoded, Khanfar, Rohrer, Erginbilgic and others). DW: 8 sources dwell on entry-level or youth work. Edges go to four; skipped are Allen (AWS exec forum), Giles, Mollick and BCG/Emerson, where entry-level is a passing theme, and Canaries, which is reached through the Brynjolfsson edge.
+
+**Updated.** Concepts: [[concepts/ai-employment-effects|ai-employment-effects]] (a European case; apprenticeship as a national institution rather than a firm-level bargain), [[concepts/durable-skills|durable-skills]] (leader competences, emotional self-regulation), [[concepts/systems-thinking|systems-thinking]] (the leader as system designer at team scale). Entities: [[McKinsey & Company]]; [[Lucia Rahilly]], whose role is now resolved for one show: she hosts *McKinsey Talks Talent* (source_count 3 → 5, which also counts the Brynjolfsson episode she was missing from); and **new pages** for [[Brooke Weddle]] and [[Bryan Hancock]] at their second appearance. The Brynjolfsson page's Dangling line now links all three. Confidence unchanged on every concept: a practitioner episode and a news report.
+
+**Noted, not acted on.** GitHub Actions is degraded this evening (status page from 19:11 UTC). The deploy for the previous push (`f3a8d70`) is queued, as is a later run for PR #12, which will deploy current `main`.
+
 ## [2026-10-05] ingest | Chase's Interrupt NYC keynote: own your intelligence, and LangSmith in three layers
 
 The user asked for the video and its interesting stills. It was not in the wiki. The keynote was delivered on 24 September 2026 (date from LangChain's event page) and published on 5 October. The captions are the manual English track, slide-led throughout.

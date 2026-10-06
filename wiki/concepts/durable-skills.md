@@ -3,8 +3,8 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-09-19"
-source_count: 48
+last_confirmed: "2026-10-05"
+source_count: 49
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -15,7 +15,7 @@ relationships:
   - type: depends-on
     target: ai-benchmarks
     via: "measurement methodology — Vantage and similar protocols define new benchmark types for human skills (not model capability)"
-accessed_at: "2026-10-04"
+accessed_at: "2026-10-05"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -351,3 +351,9 @@ He also gives the page its clearest statement of **what to learn**, as a half-li
 
 **Where these fit.** Both land on the *Evaluation, not generation* section above: [[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork|Dell'Acqua et al.]] found AI lifts generated quality while human judgment keeps its value in selection, and both practitioners build procedures on that asymmetry. Neither adds measurement, so confidence stays at the cap. What they add is **two concrete forms the skill takes at work**, the taste profile and the evaluation rubric. Each is a written specification of judgment that a model can be held to, which is a more testable claim than "judgment matters."
 
+
+## Leader competences for constant change: what AI "is not going to do for you" (added 2026-10-05)
+
+[[2026-09-29-lavoie-mckinsey-talks-talent-leading-when-change-feels-threatening|Johanne Lavoie on McKinsey Talks Talent (Sep 2026)]] adds a leadership list to this page's mostly individual-contributor skills: *"leaders need more emotional intelligence and pattern recognition and systems thinking and storytelling in a world of AI, because AI is not going to do it for you."* Her argument for why these matter now rests on a change in tempo, not on what AI can or cannot do. Change *"is not episodic today… The change is constant,"* so strain accumulates without recovery. Leaders need **self-regulation**, to meet others' stress *"in a more regulated way,"* and **disciplined humility**, a strong ego that can take feedback in public. Her one claim about decision-making: *"what differentiates a decision from a choice is the fear… We'll talk about data and we want the data to solve the answer. It's not going to solve the answer."*
+
+The list overlaps with entries above (storytelling, judgement, systems thinking) and adds **emotional self-regulation** as a leadership skill in its own right. No measurement; practitioner guidance from client work and two interviews with former Navy SEALs. Confidence unchanged.

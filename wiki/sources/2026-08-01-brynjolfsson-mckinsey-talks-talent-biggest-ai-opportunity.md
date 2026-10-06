@@ -86,7 +86,7 @@ The full English caption track (243 segments, consistent with `duration: 30:33` 
 - [[concepts/enterprise-ai-adoption|enterprise-ai-adoption]] — power-law performance and codifying the top decile; bottom-up plus top-down; token-cost estimation as an unsolved planning problem.
 - [[concepts/dynamic-capabilities|dynamic-capabilities]] — the three cells tagged above.
 
-**Dangling** (single-source mention, deferred per [author-entity promotion](../../CLAUDE.md#author-entity-promotion)): Brooke Weddle, Bryan Hancock, Lucia Rahilly, ADP, NASDAQ.
+**Dangling** (single-source mention, deferred per [author-entity promotion](../../CLAUDE.md#author-entity-promotion)): ADP, NASDAQ. *Promoted 2026-10-05:* [[Brooke Weddle]] and [[Bryan Hancock]] (second appearance on [[2026-09-29-lavoie-mckinsey-talks-talent-leading-when-change-feels-threatening|the Lavoie episode]]); [[Lucia Rahilly]] already had a page.
 
 ## Source quality note
 

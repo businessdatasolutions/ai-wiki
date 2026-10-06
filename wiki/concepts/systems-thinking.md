@@ -3,9 +3,9 @@ type: concept
 aliases: ["systems thinking", "systems-thinking"]
 tags: [systems-thinking, innovation, sustainability, design-thinking, breakthrough-thinking, wicked-problems]
 confidence: 0.9
-last_confirmed: "2026-09-28"
-accessed_at: "2026-09-28"
-source_count: 9
+last_confirmed: "2026-10-05"
+accessed_at: "2026-10-05"
+source_count: 10
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -197,3 +197,7 @@ SORT file.name ASC
 ## Bottleneck-chasing in product development (added 2026-09-28)
 
 [[2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved|Geoff Charles (Ramp CPO)]] applies the constraint view to AI in product development. The pit stop fell from 67 to 1.8 seconds *"certainly not by asking the mechanic to work 37 times harder"*, but by removing bottlenecks one at a time, and AI *"removes the bottleneck but moves it."* His prescription is to keep finding the next constraint (coding, then review, then testing, then human attention) and to *"obsess a little bit less about the product… and a little bit more about the factory."* A practitioner's framing, close to the theory of constraints, with no formal method attached.
+
+## The leader as system designer, at team scale (added 2026-10-05)
+
+[[2026-09-29-lavoie-mckinsey-talks-talent-leading-when-change-feels-threatening|Johanne Lavoie (McKinsey Talks Talent, Sep 2026)]] applies the page's core move to a team that cannot decide: *"I'm an electrical engineer. My training is systems… there's a piece that is not working… It's not because of the person. It's not because of the element. It's because of the relationship. There's a dynamic in that system that's creating that problem."* The leader's job follows from that: *"It's not about fixing the problem. It's about designing the system that will create the outcome that you want."* Her levers are small and concrete: pre-mortems and post-mortems, check-ins that name the tension in the room, a team *"nest"* for recovery, and a shared narrative of what success looks like. For the CEO the same move is to ask *"what in our current system is creating the results that we're having."* It sits beside the line in the [[2026-08-19-rohrer-goto-modern-enterprise-architecture-architecting-for-outcomes|Rohrer section]] above that managers are *"organization architects"*, here at the scale of a single team. Practitioner guidance, no measurement.
