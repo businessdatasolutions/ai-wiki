@@ -36,6 +36,12 @@ relationships:
   - type: supports
     target: 2026-03-10-trivedy-langchain-anatomy-of-an-agent-harness
     via: "Shared topic: the agent as model plus harness. Trivedy states it as an engineering boundary; Accenture states it as an equation for a general audience ('model + harness = agent')."
+  - type: supports
+    target: 2026-10-06-kropp-bcg-so-what-lessons-from-an-all-ai-company
+    via: "Shared topic: why the same, widely available AI gives organisations different results. Kropp: 'everybody has access to the same intelligence', yet under 10% of engineers use agentic coding tools effectively, for reasons of time, disbelief, habit and identity threat. Accenture: the same model makes a useful or an abandoned app depending on the harness around it."
+  - type: supports
+    target: 2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart
+    via: "Shared topic: one AI tool, very different use inside one organisation. Karunakaran: the same drafting tool in two divisions of a law firm, used very differently after different management framing; Lenk: use spreads through team pioneers. Accenture: the same model, useful or abandoned, depending on the harness."
   - type: contradicts
     target: 2026-06-11-kilpatrick-sequoia-model-eats-the-harness
     via: "Whether better models retire the harness. Kilpatrick expects the model to absorb today's harness within about 12 months. Accenture: removed components are replaced by new ones, 'simpler, not gone', and the problem space 'just moves'."
@@ -218,6 +224,8 @@ FIG. 07 redrawn. The sprints box and the context-resets loop are gone from the d
 - [[2026-03-10-trivedy-langchain-anatomy-of-an-agent-harness|Trivedy / LangChain (Mar 2026)]]: the source of the agent = model + harness boundary.
 - [[2026-06-11-kilpatrick-sequoia-model-eats-the-harness|Kilpatrick / Sequoia (Jun 2026)]]: the expectation that models absorb today's harness within about a year.
 - [[2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company|BBC AI Decoded (Aug 2026)]]: the same opening question, why enterprise AI isn't paying off, answered with training, imagination and workflow gaps rather than system design.
+- [[2026-10-06-kropp-bcg-so-what-lessons-from-an-all-ai-company|Kropp / BCG So What (Oct 2026)]]: *"everybody has access to the same intelligence"*, yet under 10% of engineers in large organisations use agentic coding tools effectively; four reasons (time, disbelief, habit, identity threat).
+- [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Lenk & Karunakaran / Stanford HAI (Sep 2026)]]: AI use spreading through team pioneers (Lenk), and one drafting tool, with the same hallucinations, used very differently by two law-firm divisions after different management framing (Karunakaran).
 - [[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Mollick (Jun 2026)]]: a general-audience layering of model, app and harness.
 
 ## Linked entities and concepts

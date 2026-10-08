@@ -10,6 +10,14 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-10-08] refactor | Cross-link the two parallel 2026-10-08 ingests (Accenture ↔ Kropp, Stanford HAI)
+
+The Accenture harness ingest and the four-source batch below ran at the same time and were committed together (2bf1532). Neither neighbour scan could see the other's pages. Afterwards, the Accenture page's step 5 was re-run against the batch:
+
+- **Edges added** on [[2026-10-05-accenture-tq-tech-talk-ai-harnesses]]: `supports` → [[2026-10-06-kropp-bcg-so-what-lessons-from-an-all-ai-company]] (shares both its W&W cells; same phenomenon, widely available AI giving different results) and `supports` → [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart]] (one tool, very different use inside one organisation). Both are in *Related in this wiki*. Neutral *Shared topic* vias; no conclusion drawn on the source page.
+- **Skipped:** Richardson / Reuters (labour-market data, no shared phenomenon) and Chu & Liu / DW (China's open-weights strategy).
+- **[[concepts/enterprise-ai-adoption|enterprise-ai-adoption]]:** the *abandoned internal assistant* paragraph and the *Access without use* section now point to each other. No `source_count` change; all three sources were already counted.
+
 ## [2026-10-08] ingest | Four on AI at work and the AI race: ADP's payroll data on Reuters, Kropp's all-agent company, a Stanford HAI seminar on pioneers and role redesign, and DW on China
 
 The user sent four YouTube links. None was in the wiki.
