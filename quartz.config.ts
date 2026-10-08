@@ -5,6 +5,7 @@ import { InjectAliases } from "./extensions/inject-aliases"
 import { InjectStaleBanner } from "./extensions/inject-stale-banner"
 import { InjectConfidenceBadge } from "./extensions/inject-confidence-badge"
 import { InjectVideoLink } from "./extensions/inject-video-link"
+import { InjectImageIcon } from "./extensions/inject-image-icon"
 import { StripDataview } from "./extensions/strip-dataview"
 import { LatexNoSingleDollar } from "./extensions/latex-no-single-dollar"
 
@@ -80,6 +81,7 @@ const config: QuartzConfig = {
       Plugin.Description(),
       InjectConfidenceBadge(),
       InjectVideoLink(),
+      InjectImageIcon(),
       InjectAliases(),
       LatexNoSingleDollar(),
     ],
