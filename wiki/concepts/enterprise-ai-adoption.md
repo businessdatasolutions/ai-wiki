@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-10-04"
-accessed_at: "2026-10-04"
-source_count: 140
+last_confirmed: "2026-10-08"
+accessed_at: "2026-10-08"
+source_count: 143
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -300,6 +300,8 @@ A 10th lens on enterprise AI adoption emerges from the practitioner literature o
 Where the [[2026-05-07-ransbotham-augmented-learners|Ransbotham/Kiron Augmented Learners]] lens measures *organizational learning capability* (the 9th lens above), the agent-harness lens measures *runtime engineering maturity*. They are complementary, not redundant: an org can have strong organizational learning culture *and* a weak harness layer (or vice versa), and AI products require both.
 
 **Critical caveat from [[2026-05-07-kokane-agent-harness-vs-systems-design|Kokane 2026]]**: ~90% of the harness work is *mature systems engineering applied to a new substrate.* If your engineering team has shipped real backend systems, *"you're already 80% of the way there."* The remaining 10% (non-determinism at the execution layer + context as a degrading resource) is where the genuine new design discipline lives. **Implication for hiring**: don't hire AI specialists for harness work — hire systems engineers and let them ramp on the 10%.
+
+**The abandoned internal assistant, read through this lens** ([[2026-10-05-accenture-tq-tech-talk-ai-harnesses|Accenture TQ Tech Talk, Oct 2026]]). A consulting firm's explainer for non-engineers opens on a familiar pattern: an internal assistant is launched with an announcement and a training session, and *"a few weeks later, most people have quietly stopped using it,"* while the consumer app on their phone *"seems to run rings around it."* Its diagnosis is that the two often run *"the same model from the same company, even the same version,"* so the gap is in the harness: what the assistant can see, what it may do, whether its work is checked. Its practical claim for adopters is that the model *"arrives the way it arrives"*, while every harness part is *"a decision… made by people in your organization."* The usage collapse it shows belongs to a fictional company, so this is a diagnosis, not adoption data. [[2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company|BBC AI Decoded]] asks the same question and answers it with training, imagination and workflow gaps.
 
 ### The Augmented Learner advantage and its operational machinery ([[2026-05-07-ransbotham-augmented-learners|Ransbotham et al. 2024]] + [[2026-05-07-kiron-schrage-compound-benefits|Kiron & Schrage 2026]])
 
@@ -932,3 +934,11 @@ Together they cover the two halves of the page's recurring diagnosis. Krishna sa
 ## A defense prime that holds 55 models (added 2026-10-04)
 
 [[2026-10-02-hiza-bloomberg-lockheed-ai-openai-f35|Hiza (Lockheed Martin) on Bloomberg Tech, October 2026]] describes a multi-model strategy as deliberate policy: *"We have chosen to be agnostic when it comes to frontier labs… We see it a little bit like a horse race,"* with *"55 different large language models that we're using to run Lockheed Martin,"* across internal operations (*"human resources, financial analysis"*) and fielded aircraft and missile systems. Two further points bear on adoption. Lockheed has worked with machine learning for two decades and names compute as what held it back (*"the log jam was around compute capability"*). And a frontier lab's team now works beside its F-35 engineers on sensor physics. Read beside [[2026-09-30-murphy-koomen-diu-defense-ai-adoption|Murphy (DIU)]], who treats compute as the binding constraint and keeps open-weight models as fallbacks, this is the supplier side of the same defense market. A senior executive's broadcast account; the 55 models are not named.
+
+## Access without use: two October-2026 accounts (added 2026-10-08)
+
+- **An estimate of the gap, and four reasons.** [[2026-10-06-kropp-bcg-so-what-lessons-from-an-all-ai-company|Kropp (BCG X, Oct 2026)]]: in large organisations *"less than 10%, usually it's more like 5%, of engineers are actually effectively using agent coding tools"*; the rest use them as a search engine. His reasons: no time (BCG prescribes *"two hours a day for two weeks"* to play), disbelief formed on last year's tools, habit, and **identity threat**, which he ranks first. His sequence runs from the top: a board session building agents, three *"big rocks"* rather than 100 initiatives, then fluency for everyone. He calls the stakes *token-based competition*: BCG and [[Cursor]] data on 107 public companies show the top quintile of token consumers growing 15% against 5% for the bottom quintile, which he calls correlation.
+- **The gap measured, and narrowed by peers.** [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Lenk (Stanford HAI seminar, Sep 2026)]]: engineering and data-science teams with free access throughout 2025 went from about 3.5 to about 10 days of agentic-AI use a month. A team's first heavy user (a "pioneer") raised teammates' use by about 4.6 days and explains about 23% of the year's rise; agentic AI accounts for about 30% of experiment output. Pioneers with authority, and with skill in the task, had the larger effect. See [[technology-adoption-theories]].
+- **Framing decides whether a tool gets used.** In the same seminar, Karunakaran describes two divisions of one law firm with the same tool. Where the manager framed it as a productivity tool, paralegals heard substitution and stopped experimenting. Where the manager asked what they hated doing and what they had always wanted to do, they repurposed it for legal research. The firm then replaced an AI-fluency course with **task-first reskilling**: teach legal research, with AI inside it. Divisions that copied the role changes but kept caseload as the metric saw use decline.
+
+Kropp's sequence starts with leaders; in Lenk's data, pioneers with authority had the larger effect. Neither source tests the other's mechanism. Confidence at the cap.

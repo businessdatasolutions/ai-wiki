@@ -3,9 +3,9 @@ type: concept
 aliases: ["open source AI", "open-source AI", "open-weight models", "open weights", "open models", "own vs rent AI"]
 tags: [open-source-ai, open-weight-models, own-vs-rent, ai-sovereignty, concentration-of-power, china-open-models, safety-through-transparency, hugging-face]
 confidence: 0.9
-last_confirmed: "2026-10-05"
-accessed_at: "2026-10-05"
-source_count: 24
+last_confirmed: "2026-10-08"
+accessed_at: "2026-10-08"
+source_count: 25
 relationships:
   - type: supports
     target: ai-sovereignty
@@ -269,3 +269,9 @@ These two sources do not change the page's confidence (0.90). The usage figure i
 3. **Data over models.** Models are *"becoming somewhat commoditized"*. The differentiator is *"all of this stuff around the model, in particular the data"*, which the slide backs with a Larry Ellison quote on privately owned data.
 
 The prescription is weaker than owning weights. It is a **model-neutral harness**, *"both offensive and defensive"*: switch to whichever model is best, whether OpenAI, Anthropic or a specialised one like Jev, and avoid lock-in to a provider *"so that they can raise rates."* This is the same layer-choice hedge as [[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Huang / Sequoia's]] *"we are definitely not telling our companies to get off Opus or GPT,"* stated by a company that sells the neutral layer. Cost comes first and data second in Chase's order, so on the *two drivers* debate below he names both without weighting them. Confidence unchanged: a vendor keynote with no figures of its own.
+
+## Open weights as China's distribution strategy abroad (added 2026-10-08)
+
+[[2026-10-04-chu-liu-dw-the-dip-how-china-is-viewing-the-ai-race|Claire Chu (Janes) on DW's The Dip (Oct 2026)]] describes open weights from the supply side, as a geopolitical strategy: *"rather than competing on high-end superiority, Chinese providers are marketing affordability, adaptability of their open-source and open-weight AI models."* Countries that make AI a national priority build on Chinese models *"to reduce the cost and… to close a technical gap,"* and Chinese firms partner with local universities, operators and governments. Her examples: projects in Kenya *"built on the backs of Chinese models"*, factories in Vietnam and Indonesia (anecdotal), Huawei upskilling teachers in Nigeria, and a Kazakh national AI platform run with 01.AI. Asked what Chinese firms gain, she points to Beijing's wish to leapfrog after missing earlier generations such as software, and to getting in first.
+
+The page's other sections give buyers' reasons for open weights (cost, control, customisation). This one gives a provider's: open weights as a way to win adoption and set standards in markets that, in her view, the US has overlooked. The usage figures in [[2026-09-18-bloomberg-originals-how-china-plans-to-win-global-ai-race|Bloomberg Originals]] (global use of Chinese models passing US models in June 2026) are the same trend in numbers; Chu adds none of her own. An analyst's account; confidence unchanged.

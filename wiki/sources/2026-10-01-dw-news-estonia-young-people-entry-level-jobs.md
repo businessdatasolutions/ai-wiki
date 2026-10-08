@@ -81,7 +81,8 @@ The Gemini scan found one chart, shown in two build states. The fully built one 
 ## Linked entities and concepts
 
 - **Concepts:** [[ai-employment-effects]].
-- **Dangling** (single-source mention, deferred): DW News (channel), Eurostat, Elisa Eesti, ProCareer, Bolt, Wise; interviewees Steven Harma, Nelja Kornfeld, Keishy Margus, Varvara.
+- **Entity promoted 2026-10-08:** [[DW News]] (second source as author: [[2026-10-04-chu-liu-dw-the-dip-how-china-is-viewing-the-ai-race|The Dip, Oct 2026]]).
+- **Dangling** (single-source mention, deferred): Eurostat, Elisa Eesti, ProCareer, Bolt, Wise; interviewees Steven Harma, Nelja Kornfeld, Keishy Margus, Varvara.
 
 ## Debates and supersession
 

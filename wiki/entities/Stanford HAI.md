@@ -5,10 +5,10 @@ aliases: ["Stanford Institute for Human-Centered Artificial Intelligence", "HAI"
 tags: [stanford, ai-research, ai-policy, academic-institute, ai-index]
 website: "https://hai.stanford.edu"
 founded: 2019
-confidence: 0.80
-last_confirmed: "2026-05-28"
-accessed_at: "2026-05-28"
-source_count: 3
+confidence: 0.85
+last_confirmed: "2026-10-08"
+accessed_at: "2026-10-08"
+source_count: 4
 ---
 
 # Stanford HAI
@@ -51,3 +51,7 @@ SORT file.name ASC
 - HAI's broader funding model and donor base beyond the AI Index supporters.
 - Relationship between HAI and other Stanford AI initiatives (AI Lab, CodeX, etc.).
 - Notable HAI policy publications and their reception — to be filled in as more sources are ingested.
+
+## HAI Seminar series (added 2026-10-08)
+
+[[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|HAI Seminar: Industry Conversation with Instacart (Sep 2026)]]: a seminar recorded 23 September 2026 pairing an industry economist with a Stanford faculty member. Alexandr Lenk (Instacart Economics) presents a staggered difference-in-differences study of how agentic-AI use spreads through team "pioneers"; Arvind Karunakaran (Stanford Management Science & Engineering) presents field research on role redesign at a law firm. The first HAI Seminar recording in the wiki; the institute's other appearances are the AI Index and its launch talk.

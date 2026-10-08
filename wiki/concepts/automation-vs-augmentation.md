@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-09-28"
-accessed_at: "2026-10-04"
-source_count: 70
+last_confirmed: "2026-10-08"
+accessed_at: "2026-10-08"
+source_count: 73
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -523,3 +523,13 @@ Caveat: self-reported figures with no stated baselines, on a venture-capital pod
 ## The consumer case against the 95%-as-good substitute (added 2026-09-28)
 
 [[2026-08-18-dalton-michael-how-to-find-consumer-startup-ideas|Dalton + Michael, How to Find Consumer Startup Ideas (Aug 2026)]] make the automation-vs-augmentation argument from the consumer market. Dalton Caldwell: many consumer AI startups *"replace things being done with humans with like chatbots or voice agents"*, and the pitch is cost or time saved, *"not that it's 100x better"*. A *"95% as good version"* of a human service will not produce a large consumer company. Their alternative runs the other way: take the human-grade premium service the wealthy already get (private banker, travel fixer, private chef) and use AI to make it affordable for everyone. Michael Seibel: *"what AI allows is for infinite personalization."* It is an investors' brainstorm with no unit economics, but it places the line between automation and augmentation at whether the product beats the human service, not whether it replaces one.
+
+## Temporary against compounding, and acceleration against expansion (added 2026-10-08)
+
+Three October-2026 sources make the augmentation case at the level of the firm.
+
+- **Two firms, one thought experiment.** [[2026-10-06-kropp-bcg-so-what-lessons-from-an-all-ai-company|Kropp (BCG X)]]: a firm that substitutes AI for labour gets *"a temporary cost advantage"*; a firm that keeps everyone and has each employee apply AI gets *"a compounding advantage"*, with faster innovation and more customers served per employee. His own test of full substitution, a company run entirely by agents, failed for lack of judgment about what to build (see [[agent-oversight-and-delegation]]).
+- **The same contrast in payroll data.** [[2026-10-07-richardson-reuters-econ-world-ai-at-work|Richardson (ADP)]]: for older workers in exposed occupations, *"we're actually seeing AI… seem to increase employment. It's augmentative,"* and an efficiency play is something *"you can only do… once."*
+- **Acceleration is the small part.** [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Karunakaran (Stanford)]] splits value into *acceleration* (current tasks done faster) and *expansion* (harder tasks, new products), and says *"only like a small part of value comes through acceleration alone."* In his law-firm case, expansion (paralegals taking on legal research) happened only where the manager framed the tool as job enrichment. His lab experiments find a trade-off between productivity and meaning when AI is framed purely as a productivity tool.
+
+All three are argument and illustration. Kropp's growth correlation across 107 companies is the nearest thing to evidence, and it measures token use, not augmentation. Confidence at the cap.

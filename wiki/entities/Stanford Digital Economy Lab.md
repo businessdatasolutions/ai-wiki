@@ -6,10 +6,10 @@ tags: [stanford, ai-research, digital-economy, labor-economics, working-papers]
 parent: "Stanford University"
 director: "[[Erik Brynjolfsson]]"
 website: "https://digitaleconomy.stanford.edu"
-confidence: 0.8
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 2
+confidence: 0.85
+last_confirmed: "2026-10-08"
+accessed_at: "2026-10-08"
+source_count: 5
 relationships:
   - type: employs
     target: Erik-Brynjolfsson
@@ -44,3 +44,7 @@ SORT file.name ASC
 - Lab's funding model and full personnel roster.
 - Other published Digital Economy Lab papers worth ingesting standalone (vs. cited via Brynjolfsson entity page).
 - Relationship to Stanford's broader economics department (HAI vs. Digital Economy Lab vs. econ dept — overlapping AI-economics communities).
+
+## The Canaries series extended to mid-2026 (added 2026-10-08)
+
+[[2026-10-07-richardson-reuters-econ-world-ai-at-work|Richardson on Reuters Econ World (Oct 2026)]]: ADP's chief economist describes the lab as ADP's research partner on payroll data by AI exposure and career stage. Reuters' charts, credited to the lab and ADP Research, run the [[2026-04-28-brynjolfsson-canaries-coal-mine|Canaries]] occupation series to mid-2026: employment of 22–25-year-old software developers at about 80 and of customer service reps at about 82 (Nov 2022 = 100), against about 123 for home health aides of the same age. The source count above is recounted from inbound links on this date.

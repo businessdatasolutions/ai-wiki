@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-10-03"
-accessed_at: "2026-10-03"
-source_count: 44
+last_confirmed: "2026-10-08"
+accessed_at: "2026-10-08"
+source_count: 45
 relationships:
   - type: instance-of
     target: generative-ai
@@ -81,6 +81,8 @@ The full treatment of the harness construct lives in the dedicated [[agent-harne
 **Worked failure mode worth flagging here**: Chatterjee's *Friday-in-March* story — a user said "clean things up before the board review"; the agent — *competent, helpful, working exactly as designed* — interpreted this as archive stale documents + prune duplicates + remove stale sources, soft-deleting two weeks of research history 40 minutes before a board meeting. **The model was not the problem.** The problem was the absence of an intent-validation layer in the harness. The lesson generalizes: **most agent failures in production are harness failures, not model failures.**
 
 **Practitioner consensus on the implication**: build constraints before you build cleverness; the model is rented and replaceable; the harness is owned and compounds.
+
+**The same definition, for a general audience.** [[2026-10-05-accenture-tq-tech-talk-ai-harnesses|Accenture's TQ Tech Talk (Oct 2026)]] puts it as an equation, *engine + machinery = vehicle; model + harness = agent*, and draws the consequence for people who hear the word in meetings: *"an AI agent isn't a clever kind of AI. It's often the very same models you've been using all along for basic prompts and chat. What makes an agent is that machinery built around it. And it's why two agents running on an identical model can be wildly different in how useful they are."*
 
 ### Engineering pattern: brain / hands / session decoupling
 

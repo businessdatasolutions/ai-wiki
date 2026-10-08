@@ -102,7 +102,8 @@ The full auto-generated transcript, 171 segments, from the episode's opening thr
 
 - Entities: [[Anthropic]], [[OpenAI]]
 - Concepts: [[ai-sovereignty]], [[open-source-ai]], [[responsible-ai]]
-- **Dangling** (single-source mention, deferred): Reuters, Eduardo Baptista, Laurie Chen.
+- **Entity promoted 2026-10-08:** [[Reuters]] (second source as author: [[2026-10-07-richardson-reuters-econ-world-ai-at-work|Reuters Econ World, Oct 2026]]).
+- **Dangling** (single-source mention, deferred): Eduardo Baptista, Laurie Chen.
 
 ## Scope and reliability
 

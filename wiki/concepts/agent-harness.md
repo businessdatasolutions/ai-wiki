@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.95
-source_count: 112
+source_count: 113
 relationships:
   - type: part-of
     target: ai-agents
@@ -20,8 +20,8 @@ relationships:
   - type: uses
     target: small-language-models
     via: "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed"
-last_confirmed: "2026-10-05"
-accessed_at: "2026-10-05"
+last_confirmed: "2026-10-08"
+accessed_at: "2026-10-08"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -849,6 +849,7 @@ SORT file.name ASC
 - **The Claude Code leak.** Referenced in both new sources but not directly ingested. If a primary-source ingest becomes possible, it would substantiate or challenge the harness-pattern claims that currently rest on second-hand interpretation.
 - **Why do verifiers actively hurt?** Pan et al.'s ablation shows verifiers degrade SWE-bench by 0.8 and OS World by 8.4. Mechanism unstated. Hypothesis: verifier-driven retries dilute the agent's confidence calibration, or verifiers add noise faster than they catch real failures. Worth tracking against future ablation work.
 - **Manus and Warel as candidate entity pages.** Both named in [[2026-05-04-rethinking-agents-harness-is-all-you-need|the YouTube source]] as agent platforms with relevant operational claims (5× harness rewrites; −80% tools / +performance). Promote on second-source mention.
+- **Primary-source ingest: Anthropic's *Harness design for long-running application development* (Anthropic Engineering, 24 March 2026).** The source of the *"every component in a harness encodes an assumption"* line this page quotes, and of the game-maker comparison (same prompt, same model: 20 min / $9 unplayable vs 6 hr / $200 playable). Both currently reach the wiki third-hand, through [[2026-05-15-osmani-agent-harness-engineering|Osmani]], [[2026-05-04-rethinking-agents-harness-is-all-you-need|Prompt Engineering]] and [[2026-10-05-accenture-tq-tech-talk-ai-harnesses|Accenture]].
 
 ## What the harness cannot buy (added 2026-08-30)
 
@@ -1050,3 +1051,13 @@ The general point is that **the harness has model calls of its own**: routing, g
 - **Infrastructure** is what it takes to run remotely: a runtime with durable execution, a tool server, sandboxes and an LLM gateway.
 
 Skills appear twice: as content in the business logic, and as a loading mechanism in the harness. **Managed Deep Agents** bundles harness and infrastructure so that a team supplies only the business logic. Chase calls it *"this company harness"*. The customer-side picture of the same arrangement is [[2026-08-11-ummadisetti-langchain-toyota-deep-agents-rd-research|Toyota's]] in the section above. The keynote also restates the page's *model is rented, harness is owned* motif as a requirement that the harness be **model-neutral**, *"both offensive and defensive"*: switch to the best new model fast, and avoid a provider that *"can raise rates."* See [[open-source-ai]].
+
+## Which half to blame: the construct explained to its users (added 2026-10-08)
+
+[[2026-10-05-accenture-tq-tech-talk-ai-harnesses|Accenture's TQ Tech Talk (Oct 2026)]] is the corpus's plainest-language version of this page, made for people who use an internal assistant, not for those who build one. Its definition card: *"the machinery built around an AI model: what it can see, use and remember, and how its work gets checked."* Three things in it are not on this page in this form:
+
+- **A triage table for complaints.** A mock feedback channel stamps four user complaints by harness layer: a stale price → *context*; an invented returns policy → *guardrails*; an assistant that emailed a customer → *permissions*; a summary reported done with half its sections empty → *verification*. Only *"gave it the full brief and every source doc… still shallow"* is left as possibly the model. It is [[2026-05-07-chatterjee-anatomy-of-agent-harness|Chatterjee's]] claim that most failures are harness failures, turned into a checklist a user can run, with its corollary: *"waiting for a better AI model… is often misplaced."*
+- **Ownership argued from control.** The model is *"supplied by the AI vendor"*, the harness *"owned by your organisation"*; *"you don't get to edit the model"*, while every harness part *"is a decision… made by people in your organization."* Chatterjee argues the rented/owned split from compounding value; this argues it from where anyone has a say at all.
+- **The subtraction principle with its parts named.** The talk retells Anthropic's game-maker comparison and redraws the harness for a newer model with **sprints** and **context resets** struck through and planner, generator and evaluator kept: *"simpler, not gone."* That is the same direction as the subtraction principle recorded near the top of this page, from the same Anthropic post. On swapping models it is more cautious than the transfer result: models are *"increasingly tuned to work well with one particular harness,"* so swappability is *"the goal rather than the current reality."*
+
+The talk also counts consumer-app features (Projects, Scheduled tasks, the attach button) as harness, a wider boundary than [[2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness|Baugues & Thurium's]] interface-decoupled one. Its one piece of evidence is second-hand (see *Open questions*).

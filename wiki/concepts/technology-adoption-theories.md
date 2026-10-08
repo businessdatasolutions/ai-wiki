@@ -4,9 +4,9 @@ title: Technology adoption theories
 aliases: ["technology adoption theories", "adoption theories", "classical adoption theories", "TAM", "Technology Acceptance Model", "UTAUT", "UTAUT2", "Unified Theory of Acceptance and Use of Technology", "diffusion of innovations", "Diffusion of Innovation", "DOI theory", "Rogers' diffusion of innovations", "TOE framework", "technology-organization-environment", "technology–organization–environment framework"]
 tags: [adoption-theory, tam, utaut, diffusion-of-innovations, rogers, toe-framework, tornatzky-fleischer, information-systems-research, firm-level, individual-level, ai-adoption]
 confidence: 0.85
-last_confirmed: "2026-09-21"
-accessed_at: "2026-09-21"
-source_count: 5
+last_confirmed: "2026-10-08"
+accessed_at: "2026-10-08"
+source_count: 6
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -81,9 +81,20 @@ Two things limit what the model shows. First, it explains little on the outcome 
 
 - ~~A paper integrating TOE with dynamic capabilities could not be retrieved.~~ **Resolved 2026-09-21**: [[2026-03-28-nguyen-ai-adoption-toe-dynamic-capabilities|Nguyen et al. (2026)]], ingested; see the section above. What it leaves open is a longitudinal design, which it concedes it cannot supply, and a measured capability construct on the outcome side.
 - None of the three sources tests UTAUT or TAM on employees using generative AI at work. A study with an organisational sample, not students, would fill that gap.
-- Does trialability matter as much when the tool is free and already on every desk? Rogers' attribute assumed trial was costly; for generative AI, trial is nearly costless, and Albishri's large trialability paths may measure something else.
+- Does trialability matter as much when the tool is free and already on every desk? Rogers' attribute assumed trial was costly; for generative AI, trial is nearly costless, and Albishri's large trialability paths may measure something else. **Partly answered 2026-10-08:** in [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Lenk's]] firm, a year of free access left use uneven, and a peer, not trial, moved it (see *Pioneers* below).
 
 
 ## Diffusion inside one firm (added 2026-09-21)
 
 [[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over|Krishna / IBM on Bain's Winning with AI, September 2026]]. IBM's internal rollout, as its CEO tells it, follows a diffusion curve at the level of process owners. Of about 200 processes, owners volunteered; five went first, then ten; about 60 were done in two and a half years; the next 70 were *"raring to go because they saw what their friends had done"*; the last 30–40 are *"recalcitrant."* Observability of peers' results drives the second wave, as in diffusion of innovations. For the laggards he offers three explanations without choosing between them: distrust of the AI, AI not ready, or genuinely harder processes. An anecdote, not a study; useful as a firm-internal illustration of a theory the page otherwise applies across firms.
+
+## Pioneers: a causal estimate of peer diffusion inside one firm (added 2026-10-08)
+
+[[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Lenk (Instacart Economics) at a Stanford HAI seminar, September 2026]] presents a working paper that turns the IBM anecdote above into an estimate. Engineering and data-science teams (over 1,000 employees in about 200 teams) had free access to agentic AI tools throughout 2025. A **pioneer** is the first team member to cross a heavy-use threshold, roughly eight days of use in two weeks. Pioneers emerged at staggered times, which a staggered difference-in-differences design exploits. Teammates' use rises by about 4.6 days after a pioneer emerges, with no pre-trend; pioneers account for about 23% of the year's rise in use; experiments, launches and resolved tickets rise too.
+
+Three findings bear on the theories on this page:
+- **Observability through a person.** Pioneers do not differ in seniority; they differ in earlier enthusiasm for the firm's chatbot. Their influence is larger when they hold authority, which Lenk attributes in the Q&A to personal trust rather than a mandate. That is the opinion-leader role in diffusion of innovations, estimated rather than described.
+- **Trial was free and use still varied.** Access cost nothing for a year; what moved use was a colleague (see the open question on trialability above).
+- **Task complexity changes who can transmit.** For experiments, only pioneers already skilled at experimentation raised their teammates' output; for routine ticket work any pioneer did. Adoption of the tool and transfer of the skill to use it on a hard task travel together.
+
+In the Q&A, Karunakaran adds why peers matter more for generative AI than for ERP: an ERP system has features a vendor can teach, while generative AI is open-ended and its valuable uses must be discovered. Citing his colleague Michael Bernstein, he says it suits *"rough-edged problems"* with many right answers, which call for social learning. Limits: one firm, outcome measures that are proxies for value, and a paper not ingested.

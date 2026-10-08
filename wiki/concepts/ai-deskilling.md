@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI deskilling", "ai-deskilling", "task composition shift", "deskilling"]
 tags: [deskilling, task-composition, ai-employment-effects, occupations]
 confidence: 0.85
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
-source_count: 22
+last_confirmed: "2026-10-08"
+accessed_at: "2026-10-08"
+source_count: 23
 relationships:
   - type: instance-of
     target: ai-employment-effects
@@ -244,4 +244,13 @@ Added 2026-09-15 — the page had accumulated five sections of tension without e
 - **Introspection will not settle it.** The natural fallback — ask people whether they still have the skill — is undercut by the same experiment that raises the question: [[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork|Dell'Acqua et al.]] found self-assessment **decoupled** from measured performance, and [[ai-coding-productivity-evidence]] records that the decoupling runs in both directions depending on context. Self-report is not available as an instrument here.
 - **The equalising results and the deskilling results have not been reconciled.** Carried over from Open questions and still open: within-role productivity studies show AI compressing the gap between weak and strong performers, which reads as upskilling at the bottom. Whether that is durable capability or borrowed capability is exactly the access-versus-acquisition question, one unit of analysis down.
 - **No supersession events on this page.** No source here has been retired; the additions are accumulating mechanisms, not replacing claims.
+- **A retention result, reported but not ingested (added 2026-10-08).** [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Karunakaran]] summarises a new Autor et al. study in which junior attorneys lost much more performance than seniors when AI was taken away after about 90 days. If the paper says what he reports, it is the test the *"Nobody has measured retention"* bullet above asks for. That bullet stands until the paper itself is in the wiki.
 
+## A retention test reported second-hand, and "judgment comes from execution" (added 2026-10-08)
+
+[[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Arvind Karunakaran at a Stanford HAI seminar (Sep 2026)]] cites two studies that bear on gaps this page records. Neither paper is in the wiki; what follows is his summary.
+
+- **Retention.** *"A new paper by David Autor and colleagues"*: on a patent-redlining task, AI raised junior attorneys' productivity more than seniors'. When the AI was taken away after about 90 days, the juniors made many more mistakes and could not apply the foundational knowledge they should have had; seniors' performance fell much less. This is the kind of test *Debates* says no source has run, and it bears on the equalising-versus-deskilling tension: the juniors' gain was real and did not survive removal of the tool.
+- **Interdependent tasks.** A Berkeley PhD student and physician studied radiation oncologists whose peripheral tasks were handed to AI so they could focus on contouring. Speed and quality on the core task fell, because the tasks depend on each other. The page has not held this mechanism: losing performance on the core task by removing *adjacent* work.
+
+His summary of both: *"If AI makes execution cheaper… the importance is just about judgment and verification and taste… but where does judgment come from? Where does taste come from? Comes from execution."* It is the expertise-collapse trap ([[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson]]) stated as a constraint on job design. **Open:** ingest the Autor et al. paper. Until then the retention result is a speaker's report, and confidence is unchanged.

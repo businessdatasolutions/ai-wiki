@@ -3,8 +3,8 @@ type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
-last_confirmed: "2026-09-28"
-source_count: 57
+last_confirmed: "2026-10-08"
+source_count: 59
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -12,7 +12,7 @@ relationships:
   - type: contradicts
     target: automation-vs-augmentation
     via: "process lock-in = automation without redesign; reinvent-the-business resists this trap"
-accessed_at: "2026-09-28"
+accessed_at: "2026-10-08"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -425,3 +425,9 @@ Two more restatements, each adding a mechanism.
 ## A task cut from 10 days to one, and the customer still waited 10 (added 2026-09-28)
 
 [[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune|Vlad Lukic (BCG, Aug 2026)]] tells the trap as a client story. The goal was *"can we do this task shorter than it took us before"*, and it went from 10 days to one. But *"the business processes were never changed… It still took 10 days to get a response back, and they actually had an extra cost."* Switching the metric to customer response time and cost gave the *"forcing function"*: committees and steps were removed and the end-to-end time fell to one day.
+
+## More use is not more value: the metric that was not changed (added 2026-10-08)
+
+[[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Karunakaran (Stanford HAI seminar, Sep 2026)]]: *"More AI usage does not translate to creating more value… value comes through carefully redesigning, reconfiguring workflows and roles."* His law-firm case adds a failure this page has not recorded: the redesign was done and copied, but the **performance metric** was not. Divisions that copied Division B's role changes kept *caseload* as the paralegals' measure. Caseload fell as paralegals took on legal research, managers asked why, and use declined. In [[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune|Lukic's]] 10-days-to-one story the order is reversed: changing the metric forced the process change. Karunakaran adds that across industries AI is intensifying work rather than reducing it.
+
+[[2026-10-07-richardson-reuters-econ-world-ai-at-work|Richardson (ADP, Oct 2026)]] gives the macro reading: the effects are *"at the task level… You're not seeing them in the overall productivity numbers yet,"* and missing investment in people is *"the missing part of the equation."* The OECD scenarios Reuters showed alongside put AI's predicted contribution to annual US labour productivity growth over ten years at 0.41, 0.99 or 1.28 percentage points for slow, medium or rapid adoption. A model, not a measurement. Confidence at the cap.

@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI sovereignty", "sovereign AI", "digital sovereignty", "strategic autonomy in AI", "cultural autonomy", "full-stack sovereignty"]
 tags: [ai-sovereignty, sovereign-ai, digital-sovereignty, strategic-autonomy, own-vs-rent, cultural-autonomy, export-controls, industrial-policy, platform-governance, data-sovereignty]
 confidence: 0.85
-last_confirmed: "2026-10-03"
-accessed_at: "2026-10-03"
-source_count: 12
+last_confirmed: "2026-10-08"
+accessed_at: "2026-10-08"
+source_count: 13
 relationships:
   - type: supports
     target: open-source-ai
@@ -119,3 +119,11 @@ Laurie Chen (Reuters) adds the view from outside both blocs: *"the vast majority
 [[2026-09-30-murphy-koomen-diu-defense-ai-adoption|Murphy / DIU at YC Root Access, September 2026]]. The CTO of the Pentagon's Defense Innovation Unit gives a motive this page had not recorded: keeping a service running when the link to a cloud model or provider is lost. Asked whether [[Defense Innovation Unit|DIU]] uses open-weight models for that failover, he answers *"absolutely, right, there's been a big push about sovereign, owning your AI, owning your model, having confidence in that."* The last clause is the part the other motives on this page do not raise. Holding a fallback model is not enough; the organisation also has to know the fallback gives good answers: *"are the outputs of that system still good? And the answer might be I don't know unless I've managed a very deliberate development to deployment cycle where I can snapshot that."* On this account, owning a model brings an evaluation cost with it (see [[ai-benchmarks]]).
 
 His sourcing fits claim 2's per-capability logic: DIU works with frontier labs and also with people *"tuning models specifically for the government"* and *"distilling models for use cases on the edge."* He gives one result, a weekend of tuning a US open-weights model that raised a track-detection score from about 40% to 78% (caveats on [[open-source-ai]]). That is task performance, not the cultural-autonomy instrument asked about in *Debates*. A government official speaking to prospective vendors; no programme results are given.
+
+## Strategic autonomy for middle powers, and a national platform built with a foreign partner (added 2026-10-08)
+
+[[2026-10-04-chu-liu-dw-the-dip-how-china-is-viewing-the-ai-race|Claire Chu on DW's The Dip (Oct 2026)]]. Two observations from a China analyst:
+- **Neither stack.** In Europe there is *"emerging distrust of Chinese hardware, of US software,"* and **strategic autonomy** has been *"the phrase of the last year or two"* for middle powers. She reads the reluctance to be *"boxed in by one single system or one single set of standards"* as an implicit guardrail on both the US and China.
+- **Sovereignty with a foreign partner.** Kazakhstan's national AI platform is run by a joint venture of its government and the Chinese firm 01.AI, whose CEO sits on the president's AI council. A Kazakh-language model built by the same firm powers an AI board director, able to vote, at the sovereign wealth fund. A month earlier Kazakhstan had joined a US-led initiative, and a US-backed data centre is planned there. A national platform and a national-language model, two of this page's markers of sovereignty, here come from one foreign supplier. Chu also describes China training government employees and vocational students on Chinese systems, which embeds standards *"without… formal partnerships or allegiances."*
+
+An analyst's view, with some names inferred from auto-captions (see the source page). Confidence unchanged.

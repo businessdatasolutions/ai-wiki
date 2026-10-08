@@ -3,8 +3,8 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-10-05"
-source_count: 86
+last_confirmed: "2026-10-08"
+source_count: 88
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -12,7 +12,7 @@ relationships:
   - type: caused
     target: ai-deskilling
     via: "task-composition shift is one mechanism within broader employment effects"
-accessed_at: "2026-10-05"
+accessed_at: "2026-10-08"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -576,6 +576,7 @@ Brown adds one further figure worth holding: **81% of surveyed employers say the
 - **Will the equalizing-effect hold at scale?** Robust in early studies (customer support, consulting, software). Open question: as AI tools mature, do high-skill workers eventually catch up by leveraging more sophisticated workflows?
 - **Replacement vs. augmentation in the long run.** [[2026-04-28-ai-index-report-2025|AI Index 2025]] notes that the share of orgs predicting workforce *reductions* has *declined* YoY — business leaders are becoming less convinced AI will shrink workforces. Yet Brynjolfsson 2025 shows entry-level employment *is* declining in automation-exposed occupations. Resolution: aggregate workforce expectations remain stable while compositional shifts disadvantage entry-level workers.
 - **Geographic and platform effects.** ADP data is U.S.-only; somewhat overrepresents Northeast and manufacturing/services. Whether the Brynjolfsson pattern generalizes to other countries is an open question.
+- **The task as unit of analysis (added 2026-10-08).** [[2026-10-07-richardson-reuters-econ-world-ai-at-work|Richardson (ADP)]] proposes describing the labour market by *"how many tasks are created and destroyed, not how many jobs."* [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Karunakaran (Stanford)]] argues that jobs are more than bundles of tasks and that task-exposure frameworks miss the dependencies between them. Most measurements on this page use the task unit. Recorded as a `contradicts` edge between the two source pages.
 
 ## Related concepts
 
@@ -706,3 +707,26 @@ Almost every entry-level measurement on this page is American. [[2026-10-01-dw-n
 - **An institutional cause the page has not held.** The report attributes the low German and Dutch rates to **dual apprenticeship systems**: *"institutional design matters more than national wealth."* Elsewhere this page treats apprenticeship as a firm-level bargain that AI may break ([[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|pyramid to diamond]]; [[2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era|*"it's not going to happen by osmosis"*]]). The report treats it as a national institution that takes training out of individual firms' hiring decisions. The claim is unsourced in the report, and no source in the wiki tests whether such systems change how AI affects entry-level hiring.
 
 It agrees in direction with the [[2026-06-01-lf-state-of-tech-talent-europe-2026|Linux Foundation's European survey]] (entry-level technical roles −3% in Europe against +14% elsewhere), but measures something different. Confidence unchanged: a single news report with no AI attribution beyond one quote.
+
+## Payroll evidence from inside the Canaries partnership, and an objection to the task as unit (added 2026-10-08)
+
+Two sources, from opposite ends of the measurement question.
+
+**The data provider's view.** [[2026-10-07-richardson-reuters-econ-world-ai-at-work|Nela Richardson, ADP's chief economist, on Reuters Econ World (Oct 2026)]] describes the ADP–Stanford series behind [[2026-04-28-brynjolfsson-canaries-coal-mine|Canaries]] as of August 2026. Employment of young workers in AI-exposed fields fell 4.4% year over year, and in non-exposed fields 2%. Reuters' charts, credited to ADP Research and the [[Stanford Digital Economy Lab]], run the Canaries occupation indices to mid-2026 (Nov 2022 = 100; values read from the chart lines, see the source page's *Visual canon*):
+
+| Occupation (Canaries sample) | Ages 22–25 | Ages 26–30 | Highest older group |
+| --- | ---: | ---: | ---: |
+| Software developers | ~80 | ~94 | ~120 (41–49) |
+| Customer service reps | ~82 | ~90 | ~113 (35–40) |
+| Home health aides | ~123 | ~114 | ~116 (35–40) |
+
+Her reading: *"AI seems to reinforce knowledge and expertise,"* and it bites on tasks *"that don't require experience, that don't require judgment."* She states the reconciliation this page proposed between Canaries and [[2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs|Hatzius]]: *"better to use a microscope than a telescope,"* because the changes sit at the level of tasks and career stages and are not yet in the productivity numbers. She is not independent of the data; ADP supplies it.
+
+Three further points from the episode:
+- **Ageing outweighs AI for now.** *"AI or aging, it would be aging hands down."* Retirements and limited immigration have pushed pay growth for construction job-changers to about 13–14% (ADP), and three of every four net new US jobs in recent years have been in healthcare.
+- **Low hire, low fire.** BLS JOLTS shows hiring and separations both near 3.3% since mid-2024. Richardson ties this to inequality: workers who cannot switch jobs cannot capture AI-driven wage gains, after 43% of workers saw real wage declines averaging 8% over 2021–2024 (ADP with the University of Chicago).
+- **Layoffs as a one-off.** *"The thing about using AI purely for an efficiency play is you can only do it once."*
+
+**Jobs are more than bundles of tasks.** [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Arvind Karunakaran at a Stanford HAI seminar (Sep 2026)]] questions the unit most of this page uses. Task-exposure frameworks treat a job as a bundle of tasks; he says an *"invisible glue"* ties them, strong in some jobs (radiation oncologist) and weak in others (medical transcriptionist). He cites a Berkeley study in which handing radiation oncologists' peripheral tasks to AI lowered the speed and quality of their core task. He adds **vacancy chains**: when a law firm's paralegals took on legal research, junior associates objected (*"stay in your lane"*) until managers redesigned both roles. On entry-level hiring he doubts the current decline is the equilibrium: juniors are cheap to hire and train, and *"a lot of the cost is at the middle level."*
+
+Richardson, a week later, proposes the unit Karunakaran questions (see *Debates*). Confidence unchanged: a chief economist's interview with charts from a published series, and a seminar talk.

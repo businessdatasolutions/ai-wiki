@@ -5,10 +5,10 @@ aliases: ["Cursor", "Cursor Pro", "Anysphere", "Composer"]
 tags: [cursor, composer, ai-ide, coding-agent, benchmark-integrity, reward-hacking, swe-bench-pro, agentic-pr, evaluation]
 affiliation: "Anysphere"
 role: "AI code editor and coding-agent platform; publisher of the Composer model family"
-confidence: 0.7
-last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
-source_count: 4
+confidence: 0.75
+last_confirmed: "2026-10-08"
+accessed_at: "2026-10-08"
+source_count: 6
 relationships:
   - type: instance-of
     target: agent-harness
@@ -43,3 +43,10 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "cursor")
 SORT file.name ASC
 ```
+
+## As a source of adoption data (added 2026-10-08)
+
+Two October-2026 sources use Cursor as a marker of AI adoption rather than as a tool under test:
+
+- [[2026-10-06-kropp-bcg-so-what-lessons-from-an-all-ai-company|Kropp / BCG (Oct 2026)]]: BCG partnered with Cursor, which held token-consumption data on **107 public companies** over $500 million in revenue. Top-quintile token consumers grew 15% on average, bottom-quintile 5%. Correlation, and one vendor's customer base.
+- [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Lenk / Stanford HAI (Sep 2026)]]: Lenk dates the first agentic coding tool to Cursor in late November 2024, which is why his study treats 2025 as the period when agentic AI was new. In the Q&A he cites the anecdotes behind the study: people say they discovered Cursor *"just because I had a random chat with my peer."*

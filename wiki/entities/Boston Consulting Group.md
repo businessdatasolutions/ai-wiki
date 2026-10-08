@@ -4,8 +4,8 @@ kind: organization
 aliases: ["Boston Consulting Group", "BCG", "BCG Henderson Institute"]
 tags: [BCG, management-consulting, henderson-institute]
 confidence: 0.85
-last_confirmed: "2026-09-30"
-accessed_at: "2026-09-30"
+last_confirmed: "2026-10-08"
+accessed_at: "2026-10-08"
 source_count: 8
 ---
 
@@ -46,3 +46,7 @@ SORT file.name ASC
 ## Commercial Tech topic (added 2026-09-30)
 
 [[2026-09-08-gauch-bcg-so-what-will-ai-agents-replace-your-crm|Gauch on The So What from BCG (Sep 2026)]]: Bryan Gauch, managing director and partner, leads BCG's Commercial Tech topic. His answer to whether agents replace CRM is *"in short, no"*: agents replace the interface, while the data backbone, scaled processes, regulatory verticalisation and security stay on the platform. BCG has a Salesforce partnership, linked from the episode description. It is the third *So What* episode in the corpus, all hosted by Georgie Frost.
+
+## Token-based competition, from BCG X (added 2026-10-08)
+
+[[2026-10-06-kropp-bcg-so-what-lessons-from-an-all-ai-company|Kropp on The So What from BCG (Oct 2026)]]: [[Matthew Kropp]], introduced as CTO of BCG X, presents *token-based competition*, named to rhyme with George Stalk's *time-based competition*. The evidence is a partnership with [[Cursor]] on token consumption at 107 public companies: the top quintile grew 15% on average, the bottom 5%, which Kropp calls correlation. The episode follows up *tokenmaxxing* from [[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune|Lukic & Goydan]]. It is the fourth *So What* episode in the corpus, all hosted by Georgie Frost. The source count above is recounted from inbound links on this date; the previous value was one too high.

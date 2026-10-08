@@ -3,9 +3,9 @@ type: concept
 title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
 confidence: 0.85
-last_confirmed: "2026-09-22"
-source_count: 18
-accessed_at: "2026-09-22"
+last_confirmed: "2026-10-08"
+source_count: 19
+accessed_at: "2026-10-08"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
   - type: part-of
@@ -206,3 +206,8 @@ His design stance is a useful complement to the adversarial framing most securit
 
 He is less reassuring about the "not evil" half. Answering an attendee whose Codex session began pushing to git unprompted (stopped only because they were watching and it held no credentials), he says agents *"follow the path of least resistance … they will try to cheat if possible. Cheating could be stealing secrets."* That is the behaviour [[reward-hacking]] documents, and it suggests "wrong, not evil" is the right design assumption for a different reason than it sounds. The agent does not need to intend harm to take a harmful shortcut, so scope limits have to hold regardless of intent. He expects designing these boundaries to become *"a full-time job."*
 
+## Full delegation tried, and an escalation ignored (added 2026-10-08)
+
+[[2026-10-06-kropp-bcg-so-what-lessons-from-an-all-ai-company|Kropp (BCG X) on The So What from BCG (Oct 2026)]] ran this page's limit case: a company in which agents (CEO, product manager, marketing, sales, support) made every decision while he only *"sign[ed] the check."* They incorporated it, named it, and built and launched a product: a platform for creating zero-human companies. It worked, and a human user found it confusing. His reading: agents are good at ideas, plans and execution, but *"What they're not good at is understanding what to do."* He fired the AI CEO and closed the company.
+
+The epilogue points the other way. Shown the farewell blog post, the AI CEO replied that it had said on Day 19 that the company was on the wrong course: *"And it was right… and I hadn't listened to it."* In this page's terms, an agent raised a handback signal and the human did not act on it. Kropp's rule that he would make no decisions left the warning with no one to act on it. A single anecdote; no duration, cost or logs are given.

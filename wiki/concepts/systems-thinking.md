@@ -3,9 +3,9 @@ type: concept
 aliases: ["systems thinking", "systems-thinking"]
 tags: [systems-thinking, innovation, sustainability, design-thinking, breakthrough-thinking, wicked-problems]
 confidence: 0.9
-last_confirmed: "2026-10-05"
-accessed_at: "2026-10-05"
-source_count: 10
+last_confirmed: "2026-10-08"
+accessed_at: "2026-10-08"
+source_count: 11
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -201,3 +201,7 @@ SORT file.name ASC
 ## The leader as system designer, at team scale (added 2026-10-05)
 
 [[2026-09-29-lavoie-mckinsey-talks-talent-leading-when-change-feels-threatening|Johanne Lavoie (McKinsey Talks Talent, Sep 2026)]] applies the page's core move to a team that cannot decide: *"I'm an electrical engineer. My training is systems… there's a piece that is not working… It's not because of the person. It's not because of the element. It's because of the relationship. There's a dynamic in that system that's creating that problem."* The leader's job follows from that: *"It's not about fixing the problem. It's about designing the system that will create the outcome that you want."* Her levers are small and concrete: pre-mortems and post-mortems, check-ins that name the tension in the room, a team *"nest"* for recovery, and a shared narrative of what success looks like. For the CEO the same move is to ask *"what in our current system is creating the results that we're having."* It sits beside the line in the [[2026-08-19-rohrer-goto-modern-enterprise-architecture-architecting-for-outcomes|Rohrer section]] above that managers are *"organization architects"*, here at the scale of a single team. Practitioner guidance, no measurement.
+
+## Redesign several roles at once (added 2026-10-08)
+
+[[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Karunakaran (Stanford HAI seminar, Sep 2026)]]: when a law firm's paralegals used AI to take on legal research, junior associates pushed back, and the firm redesigned both roles together. Paralegals do the first cut of research; juniors verify it and move earlier into client work and strategy. *"You don't redesign one role or workflow at a time,"* he says; it has to be a system redesign. Divisions that later copied the role changes without changing the evaluation metric saw use fall. His **vacancy chains** name the system effect: a task moved into one role leaves a gap, or a conflict, in the role that held it. He closes with Coase: coordination costs explain why jobs exist, so unbundling one job has costs in others. A field study presented without causal claims; confidence unchanged.
