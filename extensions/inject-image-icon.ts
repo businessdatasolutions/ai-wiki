@@ -49,7 +49,7 @@ const ICON: Element = {
     height: 14,
     fill: "none",
     stroke: "currentColor",
-    strokeWidth: 1.4,
+    strokeWidth: 1.8,
     strokeLinecap: "round",
     strokeLinejoin: "round",
     role: "img",
