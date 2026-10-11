@@ -3,8 +3,8 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-10-08"
-source_count: 50
+last_confirmed: "2026-10-11"
+source_count: 52
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -15,7 +15,7 @@ relationships:
   - type: depends-on
     target: ai-benchmarks
     via: "measurement methodology — Vantage and similar protocols define new benchmark types for human skills (not model capability)"
-accessed_at: "2026-10-08"
+accessed_at: "2026-10-11"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -361,3 +361,9 @@ The list overlaps with entries above (storytelling, judgement, systems thinking)
 ## "Durable jobs… there's no such thing" (added 2026-10-08)
 
 [[2026-10-07-richardson-reuters-econ-world-ai-at-work|Nela Richardson (ADP) on Reuters Econ World (Oct 2026)]] states the page's premise in a labour economist's words: *"People talk about durable jobs. There's no such thing. But durable skills, that's something that we can build in an economy if we are intentional about it."* Her advice to young people is relational rather than technical: networking, informational interviews, making phone calls, *"going back to people and relationships,"* and drawing on other people's knowledge. Her payroll data give the reason: AI exposure has hit tasks *"that don't require experience, that don't require judgment,"* while older workers in exposed fields have gained. No measurement of skills as such; confidence unchanged.
+
+## Four leader capabilities, and taste over building (added 2026-10-11)
+
+[[2026-10-09-mollick-hbr-how-ai-is-changing-strategy-four-skills|Mollick (HBR IdeaCast, Oct 2026)]] lists four capabilities for an AI-heavy workplace: **deep knowledge** (judging output at a glance: *"you don't have to read those 400 pages"*), **wide knowledge** (to give AI better feedback across fields), **taste** (choosing among many options, including *"company taste"*) and **agency** (*"the willingness to take action under uncertainty"*, the hardest to teach). He repeats that expertise, not youth, predicts good AI use.
+
+[[2026-10-01-chesky-silicon-valley-girl-people-who-know-what-to-build-with-ai|Chesky (Airbnb, Oct 2026)]] makes the same move from a CEO's seat: *"it's no longer can you build it. It's what do you build and … should you build it."* What he says AI rewards is *"great thinking … great taste … great curiosity"*, and volume: he writes about a thousand words of ideas a day and has AI read the lines he bolded each month for patterns. *"AI is like an amplifier. It makes the good people better."*

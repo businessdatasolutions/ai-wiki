@@ -3,9 +3,9 @@ type: concept
 aliases: ["agent development lifecycle", "ADLC", "agent SDLC", "agent lifecycle"]
 tags: [agent-development-lifecycle, adlc, ai-agents, agent-engineering, lifecycle-frameworks, sdlc-parallel, build-test-deploy-monitor, agent-governance, evals, llm-as-judge]
 confidence: 0.88
-last_confirmed: "2026-10-05"
-accessed_at: "2026-10-05"
-source_count: 22
+last_confirmed: "2026-10-11"
+accessed_at: "2026-10-11"
+source_count: 23
 relationships:
   - type: part-of
     target: ai-agents
@@ -303,3 +303,12 @@ SORT file.name ASC
 - **Does the Compounding loop deserve its own stage?** The wiki's [[agent-harness|agent-harness]] page names it as the fourth Chatterjee layer; Chase's Monitor + Iterate phases together cover it; Google's 9-stage wheel elides it. Open question: does it become a named stage in subsequent ADLC formalizations.
 - **Small-N eval reports and failed judges (added 2026-10-01).** [[2026-09-30-zamora-feroz-why-your-ai-agent-fails-in-production|Zamora & Feroz]] present a 0.33 documentation-quality score as the blind spot the scorecard caught. Their own heatmap shows it rests on three scored answers, with one answer unscored and one judge failing on every question; the failing metric is also missing from the summary table. Nothing in the Test-phase literature on this page says what a report should do with judge errors: drop the cell, count it as a fail, or block the run. The one demonstrated default, silently dropping it, changes the headline number. Open question for the Test phase.
 - **Can the Monitor → Build hop be automated, and how would anyone know? (open, 2026-10-05)** [[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote|LangChain's Engine v2]] claims to cluster production issues, propose fixes, test them on a preview deployment and add evals. The only figures are the vendor's: *2x better finding* on "IssueBench", *25% better fixes* on Terminal Bench, *40% lower cost*, *70M traces scanned* and *>21K issues detected*. No baseline or method is given, and no false-positive rate. The page has no independent measurement of an automated Iterate step. The slide and the speech also disagree on whether an issue is confirmed in production or on a preview branch. Same-vendor restatement of the loop, so confidence is unchanged.
+
+## From traces to environments (added 2026-10-11)
+
+[[2026-10-09-broekhuizen-langchain-three-questions-every-agent-engineer|Broekhuizen (LangChain Labs, Oct 2026)]] restates the Test and Monitor stages as three questions: *did it fail, can we make it fail again, what changes make it stop failing.* Two parts extend this page:
+
+- **Monitoring at scale with a specialised judge.** Frontier LLM-as-judge is *"very expensive at scale"*; LangChain fine-tuned a judge to detect *perceived errors* from later turns in a thread (correction, repeated request, rejected action and others). No accuracy figures are given.
+- **Environment-backed evaluation.** Input→output evals are *"the shallow way"*; failures often depend on database state, permissions, schemas and past actions. The proposed unit is a **world spec** (tools, domain rules, prompts and skills, shared graders) plus a **task spec** (request, initial state, expected outcome, allowed actions), scored on the environment's final state. Production traces become task candidates after deduplication, leakage removal, difficulty calibration and human review.
+
+A fix is a harness change or a model change (SFT, distillation, RL), validated by re-running the same task, held-out variants and regression tasks.

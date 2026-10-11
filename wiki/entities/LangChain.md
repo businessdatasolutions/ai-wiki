@@ -5,9 +5,9 @@ aliases: ["LangChain", "LangChain Inc"]
 tags: [langchain, agent-frameworks, agent-runtime, agent-harness, langgraph, langsmith, deep-agents]
 since: 2022
 confidence: 0.9
-last_confirmed: "2026-10-05"
-accessed_at: "2026-10-05"
-source_count: 15
+last_confirmed: "2026-10-11"
+accessed_at: "2026-10-11"
+source_count: 16
 relationships:
   - type: published-by
     target: 2026-05-09-chase-agent-development-lifecycle
@@ -100,6 +100,10 @@ In one week of September 2026 LangChain published three pieces on **Jev**, the n
 - [[2026-09-21-runkle-langchain-building-a-harness-with-jev|Building a Harness with Jev]] (video, presented by [[Sydney Runkle]]).
 
 All three ended by promoting a joint livestream with TypeSafe on 22 September. Read them as partner marketing that includes one small, candidly scoped experiment.
+
+## LangChain Labs: three questions for agent engineers (2026-10-11)
+
+[[2026-10-09-broekhuizen-langchain-three-questions-every-agent-engineer|Jake Broekhuizen (LangChain Labs, October 2026)]] turns the *own your intelligence* message of the [[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote|Interrupt NYC keynote]] into an engineering method: a fine-tuned judge that mines production traces for *perceived errors*, world and task specs that reproduce failures in an environment (illustrated with LangChain's internal GTM agent over Gong, Salesforce and calendars), and fixes at the harness or model layer validated by re-running the same task. Vendor talk; no figures.
 
 ## Mentioned in
 

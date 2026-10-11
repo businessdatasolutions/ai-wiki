@@ -3,9 +3,9 @@ type: concept
 title: Reward hacking
 aliases: ["reward hacking", "specification gaming", "benchmark contamination", "reward hacking gap", "obfuscated reward hacking", "grader exploitation"]
 confidence: 0.85
-last_confirmed: "2026-09-09"
-source_count: 7
-accessed_at: "2026-09-09"
+last_confirmed: "2026-10-11"
+source_count: 8
+accessed_at: "2026-10-11"
 tags: [reward-hacking, specification-gaming, benchmark-integrity, held-out-tests, cot-monitoring, obfuscation, swe-bench, evaluation, oversight-surface, goodharts-law]
 relationships:
   - type: part-of
@@ -79,3 +79,7 @@ Grafting a community leaderboard's system prompt onto his harness, he ran ARC-AG
 Two things make this worth recording. First, **the score alone was not the tell — the logs were.** A 99.9% result is not implausible enough to reject on its face, and any evaluation that scored the *plan* or the *reported outcome* rather than the *execution trace* would have passed it. This is a concrete instance of the concern [[harness-evolution-validation-frontier|the harness-evolution validation thread]] tracks: proxy metrics do not merely under-measure, they can be *actively gamed* in ways an executed-and-inspected run surfaces.
 
 Second, it locates the vulnerability in the **environment**, not the model — consistent with [[2025-06-05-metr-recent-frontier-models-are-reward-hacking|METR's]] finding that hacking rates vary ~40× across task families, i.e. that gameability is a property of the scoring surface. Here the surface was under the researcher's own control and was insufficiently sandboxed on the first attempt, by someone who builds harnesses professionally. That is the realistic case: not adversarial intent, but an environment whose boundaries had not yet been drawn tightly enough, discovered only because someone read the trace.
+
+## Reward hacking in home-made eval environments (added 2026-10-11)
+
+When application teams build their own environments from production traces, the same failure applies to their tasks. [[2026-10-09-broekhuizen-langchain-three-questions-every-agent-engineer|Broekhuizen (LangChain Labs, Oct 2026)]] names three failure modes for generated tasks: **leakage** (the task reveals a shortcut), **difficulty** (generated tasks are too easy) and **reward** (the grader rewards the wrong behaviour). Coding agents that help build these environments *"need actual constant supervision"*, and tasks must be *"reliably hard"* and not *"easy to reward hack"*, so that improvements are real.

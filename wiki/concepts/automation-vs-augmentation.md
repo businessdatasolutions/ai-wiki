@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-10-08"
-accessed_at: "2026-10-08"
-source_count: 73
+last_confirmed: "2026-10-11"
+accessed_at: "2026-10-11"
+source_count: 74
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -533,3 +533,7 @@ Three October-2026 sources make the augmentation case at the level of the firm.
 - **Acceleration is the small part.** [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Karunakaran (Stanford)]] splits value into *acceleration* (current tasks done faster) and *expansion* (harder tasks, new products), and says *"only like a small part of value comes through acceleration alone."* In his law-firm case, expansion (paralegals taking on legal research) happened only where the manager framed the tool as job enrichment. His lab experiments find a trade-off between productivity and meaning when AI is framed purely as a productivity tool.
 
 All three are argument and illustration. Kropp's growth correlation across 107 companies is the nearest thing to evidence, and it measures token use, not augmentation. Confidence at the cap.
+
+## Twilight factories (added 2026-10-11)
+
+[[2026-10-09-mollick-hbr-how-ai-is-changing-strategy-four-skills|Mollick (HBR IdeaCast, Oct 2026)]] names the design alternative to a *software dark factory*, where no human writes or reads code (his example is StrongDM). A **twilight factory** is one in which *"the AI proactively reaches out to people and brings them in because they have variance and views … because their sign off [is] needed or because they find the work interesting."* His strategic argument is the differentiation one: automation is *"a well-worn playbook"*, but *"if you just move to automation, you're going to have the same [Claude]-based company everyone else does."* He also names the personal cost: work whose *"only job is verifying the results of AI content."*

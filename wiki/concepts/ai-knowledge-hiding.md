@@ -2,10 +2,10 @@
 type: concept
 aliases: ["AI knowledge hiding", "ai-knowledge-hiding", "AI knowledge hoarding", "suppression of solutions", "hidden AI use", "shadow AI knowledge hiding"]
 tags: [ai-knowledge-hiding, shadow-ai, organizational-trust, psychological-safety, enterprise-ai, disclosure-culture, knowledge-management, micro-productivity-trap]
-confidence: 0.75
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
-source_count: 2
+confidence: 0.85
+last_confirmed: "2026-10-11"
+accessed_at: "2026-10-11"
+source_count: 4
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -13,8 +13,7 @@ relationships:
   - type: supports
     target: micro-productivity-trap
     via: "supplies the individual-level mechanism behind the trap: when efficiency gains are 'taxed' (saved time refilled with more work) and disclosure threatens standing, employees rationally hide their best workflows, so task-level gains never aggregate to firm-level value"
-quality_score: 0.87
-quality_notes: ['citation density 1.8/1000 words (2 source links in 1128 words; target ≥3.0)']
+quality_score: 1
 ---
 
 # AI Knowledge Hiding
@@ -29,7 +28,7 @@ Productivity gains "used to scale by default" — embedded in shared systems, st
 
 The headline finding is that the binding driver is **organizational trust**, working largely *through* **psychological safety** — not formal AI policy or approved tooling.
 
-- KPMG / University of Melbourne (48,000+ respondents): **57% admit hiding their AI use** at work.
+- KPMG / University of Melbourne (48,000+ respondents): **57% admit hiding their AI use** at work. Primary source: [[2025-04-28-gillespie-kpmg-trust-attitudes-and-use-of-ai-2025|Gillespie et al. 2025]] (see the section added 2026-10-11 below).
 - Anicich & Brouwers' own survey (604 daily-AI users): **30.3%** intentionally withheld AI knowledge; the lowest-trust quartile was **~4× more likely to hide** than the highest (**47% vs 14%**); psychological safety showed the same gap (**45% vs 17%**).
 - Trust survived controls for job insecurity, internal competition, distributive fairness, AI policy, sanctioned tools, age, gender, tenure, and job level. **Having an AI policy or approved tools, on its own, predicted nothing.** Trust mattered *more* where a shared sanctioned toolset existed ("trust creates the willingness to share; a common toolset creates the opportunity").
 - Corroboration: a 104-study meta-analysis (~31,800 employees) links psychological safety to less knowledge hiding, and abusive supervision / mistreatment / job insecurity to more; a Stanford 51-deployment study found **77% of the hardest adoption challenges were non-technical**.
@@ -89,3 +88,16 @@ Two consequences worth carrying:
 - **The proposed remedy is counter-intuitive and untested.** Yuan et al. find that *guaranteeing* the wages of disadvantaged employees can leave the firm **worse off** than doing nothing, and that the profit-maximising move is to bound AI capability deliberately — *"pursuing the most advanced AI system is not always optimal."*
 
 Treat this as mechanism, not evidence: it is an unrefereed analytical model with no data, and its load-bearing assumption (AI transfers hard skill but not soft) is asserted rather than shown. But it is the first source in the corpus that explains hiding without appealing to culture.
+
+## The primary survey, and the effect of bans (added 2026-10-11)
+
+The 57% figure above now has its primary source in the wiki: [[2025-04-28-gillespie-kpmg-trust-attitudes-and-use-of-ai-2025|Gillespie et al. 2025 (University of Melbourne / KPMG)]], 48,340 respondents in 47 countries, fieldwork November 2024 to January 2025. In the employee section, **57%** have used AI non-transparently (presenting AI output as their own, or not saying they used it); **48%** have uploaded sensitive company information or copyrighted material into public AI tools; **56%** have used AI at work without knowing whether it is allowed. Among students, two-thirds report the same non-transparent use.
+
+Two findings bear on the prescriptions above:
+
+- **Bans go with more risky use, not less.** Uploading company data to public tools is reported by **67%** of employees whose organisation has banned generative AI and **56%** where a policy guides it, against **33%** where there is no policy. The authors: *"outright bans may be ineffective, and … simply having policies does not guarantee compliance."* This is a cross-sectional association; organisations may ban AI because misuse was already high.
+- **Policy is often invisible to staff.** 34% report a policy guiding generative AI use, 6% a ban, 41% none, and **19% do not know**.
+
+The authors expect under-reporting, *"given social desirability bias"*, which is the knowledge-hiding mechanism itself applied to the survey.
+
+[[2026-10-09-mollick-hbr-how-ai-is-changing-strategy-four-skills|Mollick (HBR IdeaCast, Oct 2026)]] puts the cause in culture rather than rules: with the right structure, culture and rewards, people bring use cases forward; otherwise *"everyone's hiding all their uses … because they're scared if they tell you they'll get fired or they won't get respected."*

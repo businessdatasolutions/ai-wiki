@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.95
-source_count: 113
+source_count: 114
 relationships:
   - type: part-of
     target: ai-agents
@@ -20,8 +20,8 @@ relationships:
   - type: uses
     target: small-language-models
     via: "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed"
-last_confirmed: "2026-10-08"
-accessed_at: "2026-10-08"
+last_confirmed: "2026-10-11"
+accessed_at: "2026-10-11"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -1061,3 +1061,7 @@ Skills appear twice: as content in the business logic, and as a loading mechanis
 - **The subtraction principle with its parts named.** The talk retells Anthropic's game-maker comparison and redraws the harness for a newer model with **sprints** and **context resets** struck through and planner, generator and evaluator kept: *"simpler, not gone."* That is the same direction as the subtraction principle recorded near the top of this page, from the same Anthropic post. On swapping models it is more cautious than the transfer result: models are *"increasingly tuned to work well with one particular harness,"* so swappability is *"the goal rather than the current reality."*
 
 The talk also counts consumer-app features (Projects, Scheduled tasks, the attach button) as harness, a wider boundary than [[2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness|Baugues & Thurium's]] interface-decoupled one. Its one piece of evidence is second-hand (see *Open questions*).
+
+## The eval environment as the test for removing harness (added 2026-10-11)
+
+[[2026-10-09-broekhuizen-langchain-three-questions-every-agent-engineer|Broekhuizen (LangChain Labs, Oct 2026)]] gives the *model-eats-the-harness* debate an operational form. Fixes happen at two layers, the harness (tool schemas, context, prompts, state, routing, model selection) and the model (SFT, distillation, RL), and he reports seeing harness work absorbed: *"long task decomposition or … dynamic tool routing, be absorbed into the model layer."* His re-evaluation slide asks, after every harness or model change, *"Harness still required? Which prompts, tools, context, routing, or model choices can be removed or simplified?"* A trace-derived set of tasks and environments is what lets a team answer that question instead of guessing, which fits the reconciliation above: individual components are transient, the discipline and telemetry that test them persist.

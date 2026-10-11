@@ -3,9 +3,9 @@ type: concept
 aliases: ["strategy", "business strategy", "corporate strategy", "competitive strategy"]
 tags: [strategy, strategic-planning, value-creation, value-capture, theory-of-winning, playing-to-win, value-stick, roger-martin, felix-oberholzer-gee, harvard-business-review]
 confidence: 0.92
-last_confirmed: "2026-10-03"
-accessed_at: "2026-10-03"
-source_count: 13
+last_confirmed: "2026-10-11"
+accessed_at: "2026-10-11"
+source_count: 14
 relationships:
   - type: supports
     target: strategic-foresight
@@ -290,3 +290,7 @@ Items 2 and 4 are close to [[2022-06-29-martin-hbr-a-plan-is-not-a-strategy|Mart
 **AI as a strategy question.** Lacroix's three vectors are productivity "to stay in the game", innovation to defend and extend profit pools, and deliberate choices to shape new market structures. The first matches the [[micro-productivity-trap]]'s claim that productivity gains alone are competed away. The third is a strategy choice in the full sense used on this page.
 
 Confidence unchanged at 0.92. This is first-party consulting research promoting a practice and a book, and none of the underlying studies is ingested.
+
+## AI already makes strategic decisions; where do you want to make them? (added 2026-10-11)
+
+[[2026-10-09-mollick-hbr-how-ai-is-changing-strategy-four-skills|Mollick (HBR IdeaCast, Oct 2026)]] argues that any long-running agent work *"involves tons of strategic decisions and judgment calls"*, so the question is no longer whether AI makes strategic decisions but *"where do you want to make decisions and where not"*. A leader can ask for five options with defences, or for a built and tested prototype. Because capability is [[jagged-frontier|jagged]], which judgments to keep is found by experiment. His two strategic mistakes: anchoring on today's capability, and trusting vendors or consultants who *"if they have successful cases, it's for GPT-4"*. Borrowing Tushman's **ambidexterity**, he asks four questions: what have you stopped doing because of AI, what impossible thing are you building, what are you building that does not work yet, and do you have leadership, lab and crowd in place.

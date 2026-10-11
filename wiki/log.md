@@ -10,6 +10,46 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-10-11] ingest | Five on AI strategy, agents and trust: Chesky (Airbnb), Collison (Stripe), Mollick (HBR), LangChain Labs on agent evals, and the KPMG/Melbourne trust survey; 16 verified stills
+
+The user sent six links: five YouTube videos and a PDF. One video (`eM3lZt3UOcw`, Reuters *AI at work*) was already in the wiki as [[2026-10-07-richardson-reuters-econ-world-ai-at-work]], stills included; it was not re-fetched.
+
+**New source pages (5):**
+
+- [[2026-10-01-chesky-silicon-valley-girl-people-who-know-what-to-build-with-ai]] — 22 visuals scanned, 8 published (Airbnb launch screens and one definition card).
+- [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet]] — no visuals (stage fireside).
+- [[2026-10-09-mollick-hbr-how-ai-is-changing-strategy-four-skills]] — no visuals (webcam).
+- [[2026-10-09-broekhuizen-langchain-three-questions-every-agent-engineer]] — 12 visuals scanned, 8 published (diagrams); one trace ID corrected against the pixels.
+- [[2025-04-28-gillespie-kpmg-trust-attitudes-and-use-of-ai-2025]] — 118-page PDF, complete; Figure 41 and the Appendix 3 country table checked against rendered pages. Primary source for the 57% figure [[ai-knowledge-hiding]] already quoted second-hand.
+
+**Updated:** concepts [[ai-knowledge-hiding]] (confidence 0.75 → 0.85: third and fourth sources, one large-N), [[enterprise-ai-adoption]], [[ai-agents]], [[agentic-web]] (new §7), [[answer-engine-optimization]], [[agent-development-lifecycle]], [[agent-harness]], [[reward-hacking]], [[automation-vs-augmentation]], [[durable-skills]], [[strategy]], [[responsible-ai]]; entities [[Ethan Mollick]], [[Harvard Business Review]], [[LangChain]]. **New entity:** [[Silicon Valley Girl]] (second source as `author:`, flagged by `lint-dangling-authors.mjs`).
+
+**Edges worth a look:** Chesky `contradicts` [[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work]] on who gains most from AI (amplifier vs leveller); Mollick's page records the same tension with his own jagged-frontier paper.
+
+**Acquire notes.** Playwright's Chromium was not installed for the system `python3`; installed it. The transcript panel then failed on three of the four new videos, so their captions came from yt-dlp VTT (LangChain's from the manual track) and were built with the skill's `to_markdown()`. The first stills run hit HTTP 403 on frame grabs for two videos and lost Gemini's findings; yt-dlp 2026.03.17 → 2026.08.19 fixed it, and the re-run saved findings with `--dry-run` first. Collison and HBR came back with 0 visuals, confirmed by frame probes. Four parallel drafting agents, each loading qmd's local models, were followed by two session crashes on this 8 GB machine; the pages were then written serially with grep-based neighbour scans instead of qmd.
+
+## [2026-10-09] query | Evidence on how AI answer engines and agents change buyer discovery (traceable, /wqa)
+
+Ran `/wqa` on: what the evidence says about AI answer engines and agents changing buyer discovery and decision-making (AEO/GEO, agentic web, agentic commerce) and which claims are well vs weakly supported. 72 candidates, 8 used (answer-engine-optimization, agentic-web, ai-agents, the Amiel & Sanders and Bodnar & Flanagan HubSpot sessions, the Cloudflare one-year report, Ognibeni, Price/DFI), 64 ignored. Finding: the wiki's evidence is almost entirely vendor or practitioner self-report; no peer-reviewed GEO study and no independent referral-traffic study is ingested. Trace: `inspiration/2026-10-09-ai-answer-engines-agents-buyer-discovery-evidence-query-trace.{md,json}`. Bumped `accessed_at` on agentic-web, answer-engine-optimization, ai-agents and enterprise-ai-adoption.
+
+## [2026-10-08] acquire | Six talks on AI-era marketing and sales, for the "After the Click" handbook (4 new transcripts, 5 still scans)
+
+The user sent six YouTube links and asked for an interactive marketing-and-sales handbook (Remotion + Motion) on modern practice, not the traditional playbook. No wiki page was written. Two of the six were already in the wiki ([[2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook]], [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook]]); their transcripts were not re-fetched. Landed in `raw/` only:
+
+- `raw/videos/how-vercel-is-rethinking-go-to-market-with-ai-coo-jeanne-grosser.md`: Kleiner Perkins, Jeanne Grosser (COO, Vercel), 1:03:47, 611 segments. Podcast; no still scan.
+- `raw/videos/the-new-rules-of-building-demand-unbound-2026-hubspot-live.md` + `.stills.md`: HubSpot Live, DeFranco with ClearSync, TCG and Arcis Golf, 26:12. 35 stills, 148,608 tokens.
+- `raw/videos/win-high-intent-buyers-in-the-ai-era-unbound-2026-hubspot-live.md` + `.stills.md`: Google session at UNBOUND, 27:45. 28 stills, 162,139 tokens.
+- `raw/videos/agent-interfaces-designing-a-cli-for-agents.md` + `.stills.md`: MotherDuck, Adithya Krishnan, 17:56. 30 stills, 104,982 tokens. Stream seek returned 403, so frames were cut from a full download.
+- `.stills.md` scans for the two talks already in the wiki: the AEO playbook (23 stills, 262,652 tokens) and Bodnar/Flanagan (37 stills, 164,795 tokens).
+
+**Transcripts.** The MotherDuck panel did not render after 3 attempts, and YouTube labels its only caption track as Arabic ASR. yt-dlp lists an `en-orig` track; the body was built from that VTT with the skill's `to_markdown()` and is not ASR-cleaned (see its `notes:`). The other three new transcripts are as fetched, also not ASR-cleaned (the Vercel ASR writes "Versell").
+
+**Stills.** 39 of the 153 were viewed at 1280 px and their text checked against Gemini's reading; 38 are published in the handbook, credited and linked to their moment. **Correction pending:** [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook]] says the slides "are not visible" (`length:` and the provenance section). They are: the scan caught the traffic chart, the hourglass funnel, the content matrix, the half-life chart, the ROAS slides and the sprint template. One mismatch worth carrying into that page: the slide puts the −32% CPA on the Meta Advantage+ campaigns ("Performance Max looks similar"), while the narration gives the 32% to Performance Max.
+
+**Artifact.** "After the Click", a private artifact (https://claude.ai/artifact/Uq8inv19thUajPMTSucanv): eight chapters, seven Remotion explainers, ten tools, 23 quiz questions, a 50-term glossary. Every figure carries an evidence tag (vendor, self-reported, named study, single case, illustration, interpretation). The MotherDuck talk is read for go-to-market lessons; those readings are tagged as interpretation.
+
+Process is still open. Four new source pages would touch [[concepts/answer-engine-optimization|answer-engine-optimization]], `agent-harness`, `enterprise-ai-adoption` and `ai-agents`, and the Vercel interview neighbours [[2026-10-06-kropp-bcg-so-what-lessons-from-an-all-ai-company]] (all-agent company, output per person).
+
 ## [2026-10-08] refactor | Cross-link the two parallel 2026-10-08 ingests (Accenture ↔ Kropp, Stanford HAI)
 
 The Accenture harness ingest and the four-source batch below ran at the same time and were committed together (2bf1532). Neither neighbour scan could see the other's pages. Afterwards, the Accenture page's step 5 was re-run against the batch:

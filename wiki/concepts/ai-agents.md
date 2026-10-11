@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-10-08"
-accessed_at: "2026-10-08"
-source_count: 45
+last_confirmed: "2026-10-11"
+accessed_at: "2026-10-11"
+source_count: 48
 relationships:
   - type: instance-of
     target: generative-ai
@@ -304,3 +304,11 @@ Both moves point the same way and are worth tracking as a trend rather than two 
 ## Agents as the majority of web traffic (added 2026-09-19)
 
 By [[Cloudflare]]'s network measurements, **more than half of Internet traffic is now non-human** ([[2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet|Cloudflare's Content Independence Day report]]), and daily AI agent requests rose **1,700%+** between June 2025 and May 2026 ([[2026-06-09-cloudflare-investor-day-2026|Cloudflare Investor Day 2026]]). Agents are no longer a deployment choice made inside firms. They are the main population the open web serves, and the web's business model is being rebuilt around pricing their access (crawler blocking, licensing, x402 machine payments). The full treatment is on [[agentic-web]].
+
+## An agent is not a chatbot; computer use as the bridge (added 2026-10-11)
+
+Two October 2026 sources separate the agent from its interface. [[2026-10-01-chesky-silicon-valley-girl-people-who-know-what-to-build-with-ai|Chesky (Airbnb)]]: *"Agent is an evolution of an application … A chatbot is a user interface. And I think because most agents are chatbots, we conflate the two."* For travel and shopping, which are visual, comparative and *"multiplayer"*, he argues the chat window is the wrong interface (*"a jet engine on the back of a bicycle"*), and Airbnb's launch puts AI into search, listing summaries and comparison instead. What makes agents valuable, he says, is that *"they're interoperable. So one agent can talk to another agent."*
+
+[[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet|Collison (Stripe)]] names the other half: an agent that knows your address and payment details, and can operate a computer, needs no integration from the site it uses. Computer use is *"the ultimate backwards compatibility layer for the real world … How long would you need to wait for the DMV to add an MCP?"* He expects it to be seen as the next discrete step after transformers, LLMs and RL. Both name the same consumer agents (Instinct, Meta's Muse) as early examples. See [[agentic-web]] for what this does to commerce.
+
+[[2026-10-09-mollick-hbr-how-ai-is-changing-strategy-four-skills|Mollick (HBR IdeaCast)]] adds a correction of his own: *"I thought agents would be harder to pull off than they are"*: agent swarms self-organise because agents, unlike people, share knowledge and goals, so coordination is easier than he expected. He describes delegating to agents as being a *"conjurer"*: writing something like an RFP and receiving finished work.

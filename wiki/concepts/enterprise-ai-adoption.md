@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-10-08"
-accessed_at: "2026-10-08"
-source_count: 143
+last_confirmed: "2026-10-11"
+accessed_at: "2026-10-11"
+source_count: 147
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -942,3 +942,11 @@ Together they cover the two halves of the page's recurring diagnosis. Krishna sa
 - **Framing decides whether a tool gets used.** In the same seminar, Karunakaran describes two divisions of one law firm with the same tool. Where the manager framed it as a productivity tool, paralegals heard substitution and stopped experimenting. Where the manager asked what they hated doing and what they had always wanted to do, they repurposed it for legal research. The firm then replaced an AI-fluency course with **task-first reskilling**: teach legal research, with AI inside it. Divisions that copied the role changes but kept caseload as the metric saw use decline.
 
 Kropp's sequence starts with leaders; in Lenk's data, pioneers with authority had the larger effect. Neither source tests the other's mechanism. A third account of the same gap, from the same week, locates it in the system around the model: see *the abandoned internal assistant* under the runtime-engineering lens above ([[2026-10-05-accenture-tq-tech-talk-ai-harnesses|Accenture]]). Confidence at the cap.
+
+## Use outruns governance, and what to measure instead (added 2026-10-11)
+
+**Population baseline.** [[2025-04-28-gillespie-kpmg-trust-attitudes-and-use-of-ai-2025|Gillespie et al. 2025]] (47 countries, fieldwork to January 2025) gives the employee side at scale: 58% use AI intentionally at work on a regular basis; **70% use free public tools**, 42% employer-provided ones; only 34% report a policy guiding generative AI. In the 17 countries surveyed in both 2022 and 2024, employees reporting that their organisation uses AI rose from **34% to 71%**, while trust in AI at work and perceived organisational support for responsible AI fell. AI literacy is the report's *"cross-cutting enabler"*: it goes with more use, more trust, more critical engagement and more realised benefit.
+
+**From token counts to output metrics.** [[2026-10-01-chesky-silicon-valley-girl-people-who-know-what-to-build-with-ai|Chesky (Airbnb, Oct 2026)]] describes the *"token leaderboards"* of early 2026 as a phase that worked *"for a couple months"*, followed by *"why are we spending so much money on AI?"* Airbnb now measures product velocity (how much ships, how fast, at what quality, with what success) and reports shipping 80% more features than a year before, which he attributes to the tools *and* to culture. [[2026-10-09-mollick-hbr-how-ai-is-changing-strategy-four-skills|Mollick (HBR IdeaCast)]] makes the same point from the other side: without new KPIs, AI produces *"more PowerPoint … more code"*, and the productivity gain *"gets eaten up by the organization."* His organisational model is **leadership, lab and crowd**: leaders who decide and use the tools, broad access to current models, and a standing, mostly non-technical lab that experiments.
+
+**Users building their own tools.** [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet|Collison (Stripe, Oct 2026)]] reports that Stripe gave an internal AI application access to company data, which first needed privacy and access-control guardrails; sales and legal staff then built their own applications on it. *"They're not using an application that we built for them, they are building their own application."*

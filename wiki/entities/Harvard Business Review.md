@@ -6,9 +6,9 @@ tags: [publisher, business-magazine, management-research, harvard, hbr-ideacast,
 parent: "Harvard Business School"
 website: "https://hbr.org"
 confidence: 0.90
-last_confirmed: "2026-06-25"
-accessed_at: "2026-07-01"
-source_count: 18
+last_confirmed: "2026-10-11"
+accessed_at: "2026-10-11"
+source_count: 19
 ---
 
 # Harvard Business Review
@@ -50,6 +50,7 @@ HBR sources span both the print magazine (with `hbr_reprint` codes) and HBR.org 
 |---|---|---|---|---|
 | [[2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting\|How McKinsey Plans to Survive AI (and Reinvent Consulting)]] | Bob Sternfels (Global Managing Partner, [[McKinsey & Company]]) | Adi Ignatius (HBR editor-in-chief) | 9 Feb 2026 | McKinsey 100-yr reflection + AI strategy: 40k humans + 20k agents workforce, outcome-underwriting, post-controversy governance, hiring overhaul, four durable leadership skills |
 | [[2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai\|Redefining What Efficiency Means in the Age of AI]] | Mithu Storoni (neuroscientist, physician; author of *Hyperefficient*) | Curt Nickisch (HBR senior editor) | 13 May 2026 | Neuroscience-of-AI-era-work-design: quality-over-quantity efficiency reframe, three-gear framework on norepinephrine inverted-U, chronobiology-aware schedules, intrinsic-motivation prescriptions, self-regulation-under-uncertainty as critical AI-era durable skill |
+| [[2026-10-09-mollick-hbr-how-ai-is-changing-strategy-four-skills\|How AI Is Changing Strategy—and 4 Skills Leaders Need Next]] | [[Ethan Mollick]] (Wharton) | not named | 9 Oct 2026 | AI strategy beyond productivity: leadership/lab/crowd, twilight factories, four leader capabilities |
 
 **HBR.org Partner Content (sponsored / advertorial):**
 

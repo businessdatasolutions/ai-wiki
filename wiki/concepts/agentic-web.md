@@ -4,9 +4,9 @@ title: Agentic web
 aliases: ["agentic web", "agentic Internet", "agentic internet", "zero-click", "zero-click search", "Google Zero", "AI crawlers", "AI crawler traffic", "content licensing for AI", "pay-per-crawl", "agentic commerce", "machine payments", "x402"]
 tags: [agentic-web, aeo, answer-engines, agentic-internet, zero-click, google-zero, referral-traffic, ai-crawlers, training-crawlers, bot-traffic, content-licensing, pay-per-crawl, x402, web-bot-auth, agentic-commerce, open-web, publishers, search-to-answers]
 confidence: 0.75
-last_confirmed: "2026-09-30"
-accessed_at: "2026-09-30"
-source_count: 6
+last_confirmed: "2026-10-11"
+accessed_at: "2026-10-11"
+source_count: 7
 relationships:
   - type: depends-on
     target: ai-agents
@@ -87,13 +87,22 @@ Sections 1–5 describe what the shift costs the sites that used to receive the 
 - **Consensus replaces referral.** Answer engines recommend what many sources agree on, so most of what they read about a brand is written by others: PR, reviews, social. The brand's own site is kept as the source of truth rather than as the destination for traffic.
 - **The mirror of section 3.** Publishers block AI crawlers to gain licensing leverage; brands unblock them to be cited. Which side a firm is on depends on whether the content is its product or its advertising.
 
+### 7. The payments side: AI discovery as the new aggregator (added 2026-10-11)
+
+[[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet|John Collison (Stripe, Oct 2026)]] describes the shift from the side that settles the transactions. First order, *"people's agents are going to be doing a huge amount of the commerce for them"*; second order, *"AI discovery is the new point of aggregation for commerce"*, which he expects to favour well-reviewed long-tail sellers and to turn over the top merchants, as Facebook and Instagram ad targeting once produced a native generation of sellers. Two further points connect to sections 2 and 4:
+
+- **Bot detection when it is all bots.** *"Many sites do bot detection and bot prevention … but like it's increasingly all bots. And so, what is the new equivalent of … bot detection?"*, separating good bots from bad. Cloudflare's Web Bot Auth (section 4) is one answer.
+- **Computer use instead of integrations.** Agents need no API from the site: computer use is *"the ultimate backwards compatibility layer"*. Stripe itself reports that *"no one actually really integrates the Stripe API by hand anymore … they send their coding agent to do it"*, so it is redesigning for AI rather than developer ergonomics.
+
+Stripe and the conference host (Browserbase, which sells computer-use infrastructure) both benefit from this thesis; the talk gives no adoption figures.
+
 ## Debates and supersession
 
 - **How much of the evidence is independent?** Three of the original five sources are vendors with a stake. Cloudflare sells the blocking, analytics and payment products, and HubSpot sells the marketing software for the new playbook. Cloudflare's network data is real measurement from an unusually large vantage point, but it is neither audited nor reproducible outside the company, and "traffic" is not defined. The two predictions (Ognibeni, DFI) are independent but are predictions. Four of the six sources are vendors once HubSpot's AEO session is counted. **Confidence is held at 0.75**, the ceiling the schema sets for vendor sources without independent replication. A third-party measurement of referral traffic, such as the Pew click-through study the Cloudflare deck cites as its anchor, is the ingest target that would move it.
 - **Is the traffic loss caused by AI answers, or does it coincide with them?** Cloudflare attributes category-level declines to AI consumption. Its data shows human traffic falling and crawler traffic rising together, which is consistent with substitution but also with other causes: seasonality, bot-classification changes, and shifts in how Cloudflare's customer base is composed. HubSpot's own account is causal but single-firm. **Open.**
 - **Does licensing replace referral revenue?** Cloudflare says no, not yet. No source in the corpus sizes the licensing market against the referral economy it is meant to replace. **Open.**
 - **Is AEO measurement, or a vendor's model of the engines?** The AEO claims (mentions across the web as the main factor, the citation shares by source type) come from HubSpot/XFunnel's own analysis without method, and the outcome figures (+170% MQLs, +82% closed deals for adopters) do not separate what AEO did from which customers chose to adopt it. The persona × stage prompt matrix is a method; the ranking factors are a vendor's claim. **Open** until an independent study of what AI answers cite is ingested.
-- **Who captures the relationship?** Ognibeni and DFI frame the agent as a disintermediator that takes over the customer relationship. Cloudflare frames itself as a neutral market maker that keeps publishers paid. These are different predictions about where value settles: with the agent operator, the infrastructure layer, or the content owner. The corpus cannot yet distinguish them.
+- **Who captures the relationship?** Ognibeni and DFI frame the agent as a disintermediator that takes over the customer relationship. Cloudflare frames itself as a neutral market maker that keeps publishers paid. These are different predictions about where value settles: with the agent operator, the infrastructure layer, or the content owner. The corpus cannot yet distinguish them. [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet|Collison]] (Oct 2026) adds a fourth: AI discovery becomes the new aggregator but widens reach for the long tail of sellers under it.
 
 ## Related concepts
 
@@ -111,4 +120,5 @@ Sections 1–5 describe what the shift costs the sites that used to receive the 
 - [[2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook]] — answer engine optimisation: prompt matrices, visibility and share of voice, consensus across the web, and the Fresha case.
 - [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook]] — one firm's traffic −80% with leads +20%, and the playbook that followed.
 - [[2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china]] — the prediction that agents kill search-driven e-commerce first.
+- [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet]] — agentic commerce from the payments side: AI discovery as aggregator, bot detection, computer use.
 - [[2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells]] — the incumbent retailer's fear of agentic disintermediation.

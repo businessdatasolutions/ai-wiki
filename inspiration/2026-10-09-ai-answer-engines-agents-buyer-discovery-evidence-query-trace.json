@@ -1,0 +1,2416 @@
+{
+  "question": {
+    "original": "What does the evidence say about how AI answer engines and AI agents change buyer discovery and decision-making (answer engine optimization, generative engine optimization, agentic web, agentic commerce), and which claims are well supported versus weakly supported?",
+    "restated": "What does the wiki evidence say about how AI answer engines and agents change buyer discovery and decision-making, and which claims are strongly vs weakly supported?",
+    "facets": [
+      "How answer engines/agents change buyer discovery (search to answers, referral traffic)",
+      "What AEO/GEO practice claims and how it is evidenced",
+      "Agentic web and agentic commerce: agents as buyers/intermediaries",
+      "Evidence quality: which claims are well vs weakly supported"
+    ],
+    "language": "en"
+  },
+  "params": {
+    "seeds": 12,
+    "hops": 1,
+    "fusion": "rrf",
+    "graph_rank": "bfs",
+    "k_rrf": 60,
+    "graph_w": 0.5,
+    "alpha": 0.7,
+    "ppr_damping": 0.5,
+    "conf_floor": 0.6,
+    "today": "2026-10-09"
+  },
+  "graph_available": true,
+  "graph_warning": null,
+  "candidates": [
+    {
+      "slug": "concepts/enterprise-ai-adoption",
+      "path": "wiki/concepts/enterprise-ai-adoption.md",
+      "type": "concept",
+      "title": "Enterprise AI Adoption",
+      "qmd_rank": 1,
+      "qmd_score": 0.77,
+      "graph": [
+        {
+          "from_seed": "concepts/agentic-web",
+          "edge_type": "supports",
+          "via": "a case of adoption forced from outside: a firm's customers adopt AI assistants first, and the firm's discovery, marketing and revenue model have to follow whether or not it planned to adopt anything",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china",
+          "edge_type": "supports",
+          "via": "explicitly cites the BCG / PwC / McKinsey 'every company does AI, very few see economic value' adoption gap — and locates the gap in (a) trust deficit, (b) demos-vs-scale-failure, (c) silo-vs-ecosystem mismatch, (d) cost-vs-growth framing",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells",
+          "edge_type": "supports",
+          "via": "first wiki source naming a *named CEO-level public articulation of agentic-AI as a strategic threat to the customer relationship*, plus a three-axis framework for AI investment (personalization / cost management / running a better business) used at scale in a multi-brand multi-country retail incumbent",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 1 (score 0.77)",
+        "graph: concepts/agentic-web -->supports--> this (1 hop)",
+        "graph: sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china -->supports--> this (1 hop)",
+        "graph: sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-08",
+      "last_confirmed": "2026-10-08",
+      "days_since_access": 1,
+      "effective_confidence": 0.94,
+      "rrf_score": 0.016393,
+      "fused_score": 0.976,
+      "verdict": "ignore",
+      "reason": "top qmd hit but generic adoption concept; AEO/agentic web appear only as cases already covered by the two USE concepts",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook",
+      "path": "wiki/sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook.md",
+      "type": "source",
+      "title": "AI Broke the Old Marketing Playbook | Kipp Bodnar & Kieran Flanagan | UNBOUND 2026 | HubSpot Live",
+      "qmd_rank": 3,
+      "qmd_score": 0.61,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet",
+          "edge_type": "supports",
+          "via": "the collapse of search referral traffic, measured from both ends. Cloudflare sees human traffic fall as much as 40% in under a year in the most-crawled categories, with software among them; HubSpot, a software firm, reports losing 80% of its own traffic as buyers moved research into AI assistants",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china",
+          "edge_type": "supports",
+          "via": "the search-driven funnel breaking. Ognibeni predicted in May 2026 that search-driven e-commerce is the format AI agents kill first; HubSpot reports it happening to its own funnel — an 80% drop in traffic, 140 million visits lost in a year, as buyers moved their research into ChatGPT and Claude",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 3 (score 0.61)",
+        "graph: sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet -->supports--> this (1 hop)",
+        "graph: sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.015873,
+      "fused_score": 0.91,
+      "verdict": "use",
+      "reason": "single-firm traffic -80% / leads +20% and its caveats",
+      "reason_class": null,
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business",
+      "path": "wiki/sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business.md",
+      "type": "source",
+      "title": "How AI Agents Are Changing Business - PwC Chief AI Officer Dan Priest",
+      "qmd_rank": 4,
+      "qmd_score": 0.59,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 4 (score 0.59)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.015625,
+      "fused_score": 0.896,
+      "verdict": "ignore",
+      "reason": "internal org design and hourglass organisation, not buyer behaviour",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy",
+      "path": "wiki/sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy.md",
+      "type": "source",
+      "title": "Lighthouse or Landgrab? How to Pick Your AI Sales Strategy",
+      "qmd_rank": 5,
+      "qmd_score": 0.59,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 5 (score 0.59)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.015385,
+      "fused_score": 0.882,
+      "verdict": "ignore",
+      "reason": "seller-side B2B sales strategy; says nothing on AI intermediating buyers (page itself notes no source on agents selling)",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet",
+      "path": "wiki/sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet.md",
+      "type": "source",
+      "title": "Content Independence Day, one year on: building the business model for the agentic Internet",
+      "qmd_rank": 6,
+      "qmd_score": 0.48,
+      "graph": [
+        {
+          "from_seed": "sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook",
+          "edge_type": "supports",
+          "via": "the collapse of search referral traffic, measured from both ends. Cloudflare sees human traffic fall as much as 40% in under a year in the most-crawled categories, with software among them; HubSpot, a software firm, reports losing 80% of its own traffic as buyers moved research into AI assistants",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china",
+          "edge_type": "supports",
+          "via": "search-driven discovery giving way to agent answers. Ognibeni predicted agents would handle search-driven e-commerce so that 'nobody will show up in your store'; Cloudflare reports retail among the industries losing 35–40% of human traffic and agent traffic passing half of all Internet traffic",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells",
+          "edge_type": "supports",
+          "via": "the intermediary taking the customer relationship. DFI's CEO fears agents will sit between the retailer and its shopper; Cloudflare describes the same shift for any publisher of information — content consumed inside AI answers 'without audiences ever visiting the source'",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 6 (score 0.48)",
+        "graph: sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook <--supports<-- this (1 hop)",
+        "graph: sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china <--supports<-- this (1 hop)",
+        "graph: sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.015152,
+      "fused_score": 0.869,
+      "verdict": "use",
+      "reason": "network-level non-human traffic, crawler-purpose and referral data; vendor, unaudited",
+      "reason_class": null,
+      "promoted": null
+    },
+    {
+      "slug": "concepts/agentic-web",
+      "path": "wiki/concepts/agentic-web.md",
+      "type": "concept",
+      "title": "Agentic web",
+      "qmd_rank": 2,
+      "qmd_score": 0.62,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "a case of adoption forced from outside: a firm's customers adopt AI assistants first, and the firm's discovery, marketing and revenue model have to follow whether or not it planned to adopt anything",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 2 (score 0.62)",
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": "2026-09-30",
+      "last_confirmed": "2026-09-30",
+      "days_since_access": 9,
+      "effective_confidence": 0.679,
+      "rrf_score": 0.016129,
+      "fused_score": 0.858,
+      "verdict": "use",
+      "reason": "on-facet: zero-click shift, Cloudflare network data, licensing, x402/agentic commerce, evidence-independence debate",
+      "reason_class": null,
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china",
+      "path": "wiki/sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china.md",
+      "type": "source",
+      "title": "AI Agents: Cool Demos vs Real Revenue — What Western E-Commerce Can Learn from China",
+      "qmd_rank": 7,
+      "qmd_score": 0.48,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "explicitly cites the BCG / PwC / McKinsey 'every company does AI, very few see economic value' adoption gap — and locates the gap in (a) trust deficit, (b) demos-vs-scale-failure, (c) silo-vs-ecosystem mismatch, (d) cost-vs-growth framing",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook",
+          "edge_type": "supports",
+          "via": "the search-driven funnel breaking. Ognibeni predicted in May 2026 that search-driven e-commerce is the format AI agents kill first; HubSpot reports it happening to its own funnel — an 80% drop in traffic, 140 million visits lost in a year, as buyers moved their research into ChatGPT and Claude",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet",
+          "edge_type": "supports",
+          "via": "search-driven discovery giving way to agent answers. Ognibeni predicted agents would handle search-driven e-commerce so that 'nobody will show up in your store'; Cloudflare reports retail among the industries losing 35–40% of human traffic and agent traffic passing half of all Internet traffic",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells",
+          "edge_type": "supports",
+          "via": "incumbent-retailer mirror of Ognibeni's outside-in critique — Scott Price's *what keeps me up at night* (agentic-AI personal assistants disintermediating the retailer-customer relationship: *'I need eggs, dentist appointment, car to pick up the kids at 9'*) is the seller-side anxiety that exactly matches Ognibeni's *'nobody will show up in your store when you only do search-driven e-commerce'* warning. Read together as buyer-side / seller-side framing of the same agentic-commerce disintermediation thesis.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 7 (score 0.48)",
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)",
+        "graph: sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook -->supports--> this (1 hop)",
+        "graph: sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet -->supports--> this (1 hop)",
+        "graph: sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014925,
+      "fused_score": 0.856,
+      "verdict": "use",
+      "reason": "agentic commerce deployed at consumer scale (Alibaba, JD) - practitioner keynote claims",
+      "reason_class": null,
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells",
+      "path": "wiki/sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells.md",
+      "type": "source",
+      "title": "How One of Asia's Biggest Retailers Is Reinventing the Way It Sells",
+      "qmd_rank": 8,
+      "qmd_score": 0.41,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "first wiki source naming a *named CEO-level public articulation of agentic-AI as a strategic threat to the customer relationship*, plus a three-axis framework for AI investment (personalization / cost management / running a better business) used at scale in a multi-brand multi-country retail incumbent",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet",
+          "edge_type": "supports",
+          "via": "the intermediary taking the customer relationship. DFI's CEO fears agents will sit between the retailer and its shopper; Cloudflare describes the same shift for any publisher of information — content consumed inside AI answers 'without audiences ever visiting the source'",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china",
+          "edge_type": "supports",
+          "via": "incumbent-retailer mirror of Ognibeni's outside-in critique — Scott Price's *what keeps me up at night* (agentic-AI personal assistants disintermediating the retailer-customer relationship: *'I need eggs, dentist appointment, car to pick up the kids at 9'*) is the seller-side anxiety that exactly matches Ognibeni's *'nobody will show up in your store when you only do search-driven e-commerce'* warning. Read together as buyer-side / seller-side framing of the same agentic-commerce disintermediation thesis.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 8 (score 0.41)",
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)",
+        "graph: sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet -->supports--> this (1 hop)",
+        "graph: sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014706,
+      "fused_score": 0.843,
+      "verdict": "use",
+      "reason": "incumbent retailer CEO view: agents disintermediate customer relationship (prediction)",
+      "reason_class": null,
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai",
+      "path": "wiki/sources/2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai.md",
+      "type": "source",
+      "title": "Kavak's Playbook for Rebuilding a Company Around AI",
+      "qmd_rank": 9,
+      "qmd_score": 0.36,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 9 (score 0.36)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014493,
+      "fused_score": 0.831,
+      "verdict": "ignore",
+      "reason": "company transformation, not buyer discovery",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+      "path": "wiki/sources/2025-06-09-krakowski-human-centered-ai-field-experiment.md",
+      "type": "source",
+      "title": "Human-Centered Artificial Intelligence: A Field Experiment",
+      "qmd_rank": 10,
+      "qmd_score": 0.26,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 10 (score 0.26)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-25",
+      "days_since_access": null,
+      "effective_confidence": 0.85,
+      "rrf_score": 0.014286,
+      "fused_score": 0.819,
+      "verdict": "ignore",
+      "reason": "worker-AI field experiment, not buyer discovery",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/automation-vs-augmentation",
+      "path": "wiki/concepts/automation-vs-augmentation.md",
+      "type": "concept",
+      "title": "automation-vs-augmentation",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "per-task deployment lens used by Anand-Wu, MITTRI/Cisco, MIT CISR",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-08",
+      "last_confirmed": "2026-10-08",
+      "days_since_access": 1,
+      "effective_confidence": 0.94,
+      "rrf_score": 0.007813,
+      "fused_score": 0.465,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/ai-sovereignty",
+      "path": "wiki/concepts/ai-sovereignty.md",
+      "type": "concept",
+      "title": "ai-sovereignty",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "the own-versus-rent decision is made per capability and shapes what an organisation can adopt, at what cost, and with what dependency",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": "2026-10-08",
+      "last_confirmed": "2026-10-08",
+      "days_since_access": 1,
+      "effective_confidence": 0.841,
+      "rrf_score": 0.008065,
+      "fused_score": 0.461,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/ai-employment-effects",
+      "path": "wiki/concepts/ai-employment-effects.md",
+      "type": "concept",
+      "title": "ai-employment-effects",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "caused",
+          "via": null,
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption -->caused--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-08",
+      "last_confirmed": "2026-10-08",
+      "days_since_access": 1,
+      "effective_confidence": 0.94,
+      "rrf_score": 0.007463,
+      "fused_score": 0.444,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/micro-productivity-trap",
+      "path": "wiki/concepts/micro-productivity-trap.md",
+      "type": "concept",
+      "title": "micro-productivity-trap",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "caused",
+          "via": "shallow adoption produces task-level gains without firm-level value",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption -->caused--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-08",
+      "last_confirmed": "2026-10-08",
+      "days_since_access": 1,
+      "effective_confidence": 0.94,
+      "rrf_score": 0.007246,
+      "fused_score": 0.431,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/jagged-frontier",
+      "path": "wiki/concepts/jagged-frontier.md",
+      "type": "concept",
+      "title": "jagged-frontier",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "uses",
+          "via": "task-by-task capability awareness drives deployment choice",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption -->uses--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-03",
+      "last_confirmed": "2026-10-03",
+      "days_since_access": 6,
+      "effective_confidence": 0.889,
+      "rrf_score": 0.007353,
+      "fused_score": 0.429,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/answer-engine-optimization",
+      "path": "wiki/concepts/answer-engine-optimization.md",
+      "type": "concept",
+      "title": "Answer engine optimization",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "a case of adoption forced from outside: a firm's buyers adopt answer engines first, and its marketing has to build new measurement and content routines in response",
+          "hops": 1
+        },
+        {
+          "from_seed": "concepts/agentic-web",
+          "edge_type": "uses",
+          "via": "AEO is how brands respond inside the agentic web: optimising to be cited in AI answers once search referral no longer delivers visitors",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)",
+        "graph: concepts/agentic-web -->uses--> this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": "2026-09-30",
+      "last_confirmed": "2026-09-30",
+      "days_since_access": 9,
+      "effective_confidence": 0.679,
+      "rrf_score": 0.007937,
+      "fused_score": 0.422,
+      "verdict": "use",
+      "reason": "on-facet: AEO/GEO definition, SEO contrast, consensus claim, six content signals, and an explicit Debates section on vendor-only evidence (graph-only, promoted on relevance: it is the wiki page for the question)",
+      "reason_class": null,
+      "promoted": null
+    },
+    {
+      "slug": "concepts/dynamic-capabilities",
+      "path": "wiki/concepts/dynamic-capabilities.md",
+      "type": "concept",
+      "title": "dynamic-capabilities",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "AI adoption requires dynamic-capability microfoundations to scale",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-09-21",
+      "last_confirmed": "2026-09-21",
+      "days_since_access": 18,
+      "effective_confidence": 0.778,
+      "rrf_score": 0.007576,
+      "fused_score": 0.421,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/ai-knowledge-hiding",
+      "path": "wiki/concepts/ai-knowledge-hiding.md",
+      "type": "concept",
+      "title": "ai-knowledge-hiding",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "instance-of",
+          "via": "a named human-factor failure mode of adoption — individually-discovered AI workflows stay private, so collective productivity gains never materialize even when individual adoption is high",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--instance-of<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": "2026-09-15",
+      "last_confirmed": "2026-09-15",
+      "days_since_access": 24,
+      "effective_confidence": 0.574,
+      "rrf_score": 0.008197,
+      "fused_score": 0.415,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas",
+      "path": "wiki/sources/2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas.md",
+      "type": "source",
+      "title": "The race takes off in the next big arenas of competition (MGI 2026 update)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "MGI quantifies the firm-side scale of the AI deployment race: AI foundation cluster (semiconductors + cloud + AI software) added $11T market cap + $500B revenue since 2022; nine omniscalers spent $800B on R&D + capex in 2025 alone",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china",
+          "edge_type": "supports",
+          "via": "operator-grade European-practitioner view of the same Chinese platform-firm phenomena MGI catalogues structurally — names ByteDance (50T tokens/day, $670B GMV), Alibaba's Qen one-sentence-purchase agent (100M users), JD.com's Joy Streamer (~$250M virtual-host sales in one Double 11 season), Xiaomi's 1,123-day-to-launch SU7 dark-factory (40 cars/hr autonomous) as live cases of the omniscaler / AI-foundation arena MGI describes in macro-data terms",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells",
+          "edge_type": "supports",
+          "via": "MGI names *omniscalers* as the firms that compete across arenas via cross-unit capital allocation, talent flow, and shared platforms. DFI's portfolio moves in this interview (sold Singapore supermarket for S$125M, closed all China Mannings stores, doubled down on Health & Beauty + Yuu loyalty platform) read as the **mid-tier-regional-incumbent's version** of the omniscaler portfolio-balancing discipline — *'I would rather put that capital in Southeast Asia, which has a longer-term headway for the business moving forward'*",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption -->supports--> this (1 hop)",
+        "graph: sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china -->supports--> this (1 hop)",
+        "graph: sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007143,
+      "fused_score": 0.41,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/open-source-ai",
+      "path": "wiki/concepts/open-source-ai.md",
+      "type": "concept",
+      "title": "open-source-ai",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "the own-vs-rent flow (frontier APIs for experimentation, owned/open models for production at scale) is a driver of how enterprises adopt AI",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.9,
+      "accessed_at": "2026-10-08",
+      "last_confirmed": "2026-10-08",
+      "days_since_access": 1,
+      "effective_confidence": 0.89,
+      "rrf_score": 0.006849,
+      "fused_score": 0.399,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/responsible-ai",
+      "path": "wiki/concepts/responsible-ai.md",
+      "type": "concept",
+      "title": "responsible-ai",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "part-of",
+          "via": "RAI is the governance overlay on adoption decisions",
+          "hops": 1
+        },
+        {
+          "from_seed": "concepts/agentic-web",
+          "edge_type": "supports",
+          "via": "the data-commons question in market form. Default blocking of AI training crawlers shrinks what models can learn from, and licensing decides who is paid for what they do learn from",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--part-of<-- this (1 hop)",
+        "graph: concepts/agentic-web -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-03",
+      "last_confirmed": "2026-10-03",
+      "days_since_access": 6,
+      "effective_confidence": 0.889,
+      "rrf_score": 0.006757,
+      "fused_score": 0.394,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/founder-led-sales",
+      "path": "wiki/concepts/founder-led-sales.md",
+      "type": "concept",
+      "title": "founder-led-sales",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "founder-led-sales findings corroborate the demand-side adoption gap from the seller's chair — AI interest that doesn't convert (attention mistaken for traction; 'everyone wants AI but has no budget yet')",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": "2026-09-28",
+      "last_confirmed": "2026-09-28",
+      "days_since_access": 11,
+      "effective_confidence": 0.752,
+      "rrf_score": 0.007042,
+      "fused_score": 0.387,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/systems-thinking",
+      "path": "wiki/concepts/systems-thinking.md",
+      "type": "concept",
+      "title": "systems-thinking",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "workflow redesign in the micro-productivity-trap escape is systems-thinking applied to AI",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.9,
+      "accessed_at": "2026-10-08",
+      "last_confirmed": "2026-10-08",
+      "days_since_access": 1,
+      "effective_confidence": 0.89,
+      "rrf_score": 0.006579,
+      "fused_score": 0.384,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/generative-ai",
+      "path": "wiki/concepts/generative-ai.md",
+      "type": "concept",
+      "title": "generative-ai",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "caused",
+          "via": "the 2024 jump from 55% → 78% adoption was driven by GenAI specifically",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--caused<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-09-19",
+      "last_confirmed": "2026-09-19",
+      "days_since_access": 20,
+      "effective_confidence": 0.761,
+      "rrf_score": 0.006944,
+      "fused_score": 0.383,
+      "verdict": "ignore",
+      "reason": "general GenAI concept; only the sea-of-sameness aside is relevant and is covered in AEO concept",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/technology-adoption-theories",
+      "path": "wiki/concepts/technology-adoption-theories.md",
+      "type": "concept",
+      "title": "Technology adoption theories",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "supplies the explanatory models the adoption concept had lacked. The wiki described enterprise AI adoption through practitioner maturity frameworks and the dynamic-capabilities spine; these are the information-systems theories that predict whether a firm decides to adopt and whether its people use what was adopted",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": "2026-10-08",
+      "last_confirmed": "2026-10-08",
+      "days_since_access": 1,
+      "effective_confidence": 0.841,
+      "rrf_score": 0.006494,
+      "fused_score": 0.371,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up",
+      "path": "wiki/sources/2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up.md",
+      "type": "source",
+      "title": "How To Build A Company With AI From The Ground Up",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "startups-as-AI-native-from-day-one thesis: large incumbents face a maintain-while-unwinding constraint that small companies don't; Mutiny cited as a skunk-works-team exception pattern",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.00641,
+      "fused_score": 0.368,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-25-masad-replit-ceo-only-two-jobs-left",
+      "path": "wiki/sources/2026-04-25-masad-replit-ceo-only-two-jobs-left.md",
+      "type": "source",
+      "title": "Replit's CEO On The Only Two Jobs Left In The Company Of The Future — Amjad Masad at YC Founder Firesides",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "vibe-coding-resident team as an internal-structure pattern: a generalist team with vague mission ('go around the company and make it better') deputising agents to solve concrete bottlenecks (support queue prioritisation, HR onboarding tooling)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006329,
+      "fused_score": 0.363,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/strategic-foresight",
+      "path": "wiki/concepts/strategic-foresight.md",
+      "type": "concept",
+      "title": "strategic-foresight",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "informs deployment decisions under deep uncertainty",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.87,
+      "accessed_at": "2026-09-21",
+      "last_confirmed": "2026-09-21",
+      "days_since_access": 18,
+      "effective_confidence": 0.712,
+      "rrf_score": 0.006667,
+      "fused_score": 0.36,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-06-mit-ocw-future-of-mit-open-education",
+      "path": "wiki/sources/2026-05-06-mit-ocw-future-of-mit-open-education.md",
+      "type": "source",
+      "title": "The Future of MIT Open Education",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "MIT as institutional adopter — financial-sustainability constraint (subsidy dropping to $0 in 4 years) forces a hybrid free-and-paid model; phased platform consolidation (MIT Learn unifying OCW/MITx/Professional Ed by July 2026); AI translation/personalization as the new abstraction layer",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.00625,
+      "fused_score": 0.358,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-12-mgi-virtual-event-race-takes-off-next-big-arenas",
+      "path": "wiki/sources/2026-05-12-mgi-virtual-event-race-takes-off-next-big-arenas.md",
+      "type": "source",
+      "title": "The race takes off in the next big arenas of competition (MGI virtual event)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "Q&A surfaces the 'omniscalers generate more cash each year than US banks lend in fresh loans to US businesses' framing — a more visceral firm-vs-banking-system scale anchor than the PDF's raw numbers",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china",
+          "edge_type": "supports",
+          "via": "complements the MGI panel's omniscaler defence with the *outside-in, why-Europe-keeps-getting-surprised* angle — Ognibeni's *China is the only worldwide ecosystem not influenced by Silicon Valley* framing is the geographic complement to Sastry's *built-recipe vs in-construction-recipe* contrast, both pointing at why incumbents miss the wave",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)",
+        "graph: sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006173,
+      "fused_score": 0.354,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/ai-agents",
+      "path": "wiki/concepts/ai-agents.md",
+      "type": "concept",
+      "title": "ai-agents",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/agentic-web",
+          "edge_type": "depends-on",
+          "via": "the agentic web is what the open web becomes once agents, not people, do most of the fetching, reading and buying; ai-agents holds what agents are, this page holds what they do to the economics of the web",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/agentic-web -->depends-on--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-08",
+      "last_confirmed": "2026-10-08",
+      "days_since_access": 1,
+      "effective_confidence": 0.94,
+      "rrf_score": 0.005882,
+      "fused_score": 0.35,
+      "verdict": "use",
+      "reason": "agentic-commerce and disintermediation sections (graph-only, USE for the agents facet)",
+      "reason_class": null,
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-13-jha-emergent-democratizing-app-building-with-claude",
+      "path": "wiki/sources/2026-05-13-jha-emergent-democratizing-app-building-with-claude.md",
+      "type": "source",
+      "title": "How Emergent is making app building more accessible with Claude",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "Counter-case to the slow-enterprise-adoption framing: Emergent reached *$100M ARR in 8 months* by serving non-enterprise (SMB + entrepreneur + domain-expert) users. CEO names the deliberate enterprise → consumer/SMB pivot after observing that *'adoption in enterprise is going to be slow'* — the wiki's clearest 2026 named instance of *adoption-velocity asymmetry favouring the long tail*.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.7,
+      "accessed_at": "2026-05-20",
+      "last_confirmed": "2026-05-20",
+      "days_since_access": null,
+      "effective_confidence": 0.7,
+      "rrf_score": 0.006098,
+      "fused_score": 0.327,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/document-intelligence",
+      "path": "wiki/concepts/document-intelligence.md",
+      "type": "concept",
+      "title": "document-intelligence",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "part-of",
+          "via": "document understanding is a load-bearing capability for enterprise AI on unstructured back/front-office data",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--part-of<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.72,
+      "accessed_at": "2026-07-01",
+      "last_confirmed": "2026-06-15",
+      "days_since_access": 100,
+      "effective_confidence": 0.237,
+      "rrf_score": 0.007692,
+      "fused_score": 0.326,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork",
+      "path": "wiki/sources/2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork.md",
+      "type": "source",
+      "title": "The Cybernetic Teammate: A Field Experiment on Generative AI and Teamwork",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook",
+          "edge_type": "supports",
+          "via": "choosing, not making, is the scarce step. Dell'Acqua et al. find AI raises the quality of generated ideas while human judgment keeps its value in selection; Flanagan: 'Making is no longer the problem. Choosing is the problem. Choosing what to make'",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005682,
+      "fused_score": 0.326,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "entities/HubSpot",
+      "path": "wiki/entities/HubSpot.md",
+      "type": "entity",
+      "title": "HubSpot",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook",
+          "edge_type": "published-by",
+          "via": "UNBOUND 2026 main-stage keynote by the CMO: traffic −80%, leads +20%, and the Express → Tailor → Amplify → Evolve loop (18 September 2026)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook <--published-by<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": "2026-09-30",
+      "last_confirmed": "2026-09-30",
+      "days_since_access": 9,
+      "effective_confidence": 0.781,
+      "rrf_score": 0.005814,
+      "fused_score": 0.324,
+      "verdict": "ignore",
+      "reason": "entity card; claims live in the two HubSpot source pages",
+      "reason_class": "wrong-granularity",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge",
+      "path": "wiki/sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge.md",
+      "type": "source",
+      "title": "The AI Skills Nobody Is Teaching (And Everyone Needs) — Ethan Mollick on A Bit of Optimism",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook",
+          "edge_type": "supports",
+          "via": "taste as the differentiator once production is commoditised. Mollick calls taste the most valuable skill of the AI era; Flanagan's version is 'when the cost of production is free, judgment is the only thing that has a price', because AI returns 'the median of everything it was trained on, and that's where all of your competitors live'",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005618,
+      "fused_score": 0.322,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "syntheses/organizational-frameworks-for-ai-adoption",
+      "path": "wiki/syntheses/organizational-frameworks-for-ai-adoption.md",
+      "type": "synthesis",
+      "title": "organizational-frameworks-for-ai-adoption",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "instance-of",
+          "via": "synthesizes 6 frameworks describing different decision layers within enterprise AI adoption",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--instance-of<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.9,
+      "accessed_at": "2026-09-18",
+      "last_confirmed": "2026-07-15",
+      "days_since_access": 21,
+      "effective_confidence": 0.713,
+      "rrf_score": 0.005952,
+      "fused_score": 0.321,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook",
+      "path": "wiki/sources/2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook.md",
+      "type": "source",
+      "title": "Stop the Silent Traffic Drop: A Hands-On AEO Playbook | UNBOUND 2026 | HubSpot Live",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook",
+          "edge_type": "supports",
+          "via": "same firm and conference, eleven days apart, on the same shift of buyer research from search into answer engines; Bodnar and Flanagan give the marketing operating model, this session gives the procedure for being cited in AI answers",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet",
+          "edge_type": "supports",
+          "via": "both concern discovery moving from search results to AI answers without the referral traffic following; Cloudflare measures it at network level, this session describes one vendor's response on the brand side",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook <--supports<-- this (1 hop)",
+        "graph: sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005556,
+      "fused_score": 0.319,
+      "verdict": "use",
+      "reason": "primary source for all AEO figures and its own Scope and reliability section (vendor, no method)",
+      "reason_class": null,
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-28-dellacqua-jagged-technological-frontier",
+      "path": "wiki/sources/2026-04-28-dellacqua-jagged-technological-frontier.md",
+      "type": "source",
+      "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business",
+          "edge_type": "supports",
+          "via": "Priest's observation that 'the best talent gets the most from AI' across coding, music-making, and consulting is a practitioner corroboration of the jagged-frontier finding that AI's benefit is uneven and skews toward those already skilled at judging where the frontier lies.",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+          "edge_type": "supports",
+          "via": "**Same-journal-family + same-method + same outside-the-frontier-loses pattern.** Dell'Acqua et al. (Organization Science / INFORMS, 758-BCG-consultant RCT): within-the-frontier +12% tasks / +25% speed / +40% quality; outside-the-frontier ~19pp accuracy loss with subjective coherence persisting through it. Krakowski et al. (Management Science / INFORMS, 72-sales-experts DiD): tailored interaction = positive; untailored interaction = negative vs control. Both papers operate on the *bounded/contingent-positivity-of-augmentation* thesis: when AI is deployed within its zone of fit (within-the-frontier / tailored-to-cognitive-style), positive effects materialise; when deployed outside (outside-the-frontier / untailored), the *same technology* produces *worse outcomes than the legacy baseline*. The Dell'Acqua bounded-region is task-shape; the Krakowski bounded-region is interaction-design — two different *dimensions* of the same underlying contingency phenomenon. Both papers also document **subjective experience that diverges from objective performance** (Dell'Acqua: confidence persists through accuracy loss; Krakowski: the Finnish adaptor's *'felt like in prison'* quote despite the system being *'great'*).",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business -->supports--> this (1 hop)",
+        "graph: sources/2025-06-09-krakowski-human-centered-ai-field-experiment -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005495,
+      "fused_score": 0.315,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "syntheses/ai-worker-maturity-levels",
+      "path": "wiki/syntheses/ai-worker-maturity-levels.md",
+      "type": "synthesis",
+      "title": "ai-worker-maturity-levels",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "the worker-level counterpart to the organizational maturity stack — org frameworks presume a workforce fluency distribution this model makes assessable",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": "2026-09-17",
+      "last_confirmed": "2026-08-31",
+      "days_since_access": 22,
+      "effective_confidence": 0.627,
+      "rrf_score": 0.006024,
+      "fused_score": 0.313,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+      "path": "wiki/sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees.md",
+      "type": "source",
+      "title": "Research: Why You Shouldn't Treat AI Agents Like Employees",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business",
+          "edge_type": "supports",
+          "via": "Priest's defense of his agents ('that's the problem with the task... it's not the agent's fault') is a practitioner-level echo of Kropp's academic thesis that anthropomorphizing AI agents as employees leads to misplaced blame and poor workflow (re)design.",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+          "edge_type": "supports",
+          "via": "**Two 2026 RCT-grade empirical sources on the *organisational-design dimension* of AI deployment outcomes — published 11 months apart.** Krakowski et al. (Management Science, online June 2025): N=72 Nordic pharma sales experts DiD, four interaction parameters (work procedure / decision authority / training / incentives) × two cognitive styles (adaptor / innovator) → tailored = positive, untailored = negative vs legacy IT. Kropp et al. (HBR / BCG Henderson Institute, May 2026): N=1,261 HR/finance managers randomised experiment, AI-tool vs AI-employee framing → AI-employee framing causes 9pp accountability drop, 44% more escalation, 18% fewer errors caught. Both papers test **organisational design choices** as causal variables in AI-deployment outcomes (Krakowski: interaction-context parameters; Kropp et al.: framing/anthropomorphizing) and find that **apparently-administrative choices materially change performance and accountability outcomes**. Both papers prescribe explicit interaction-design over default deployment as the operative lever. Two-source convergence at advisor-altitude (BCG Henderson Institute) and academic-altitude (Management Science) on the same underlying claim.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business -->supports--> this (1 hop)",
+        "graph: sources/2025-06-09-krakowski-human-centered-ai-field-experiment -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-25",
+      "days_since_access": null,
+      "effective_confidence": 0.85,
+      "rrf_score": 0.005435,
+      "fused_score": 0.312,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-21-allen-aws-london-exec-forum-agentic-team-structures",
+      "path": "wiki/sources/2026-05-21-allen-aws-london-exec-forum-agentic-team-structures.md",
+      "type": "source",
+      "title": "London Executive Forum 2026 — A leader's guide to advanced team structures in an agentic world",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business",
+          "edge_type": "supports",
+          "via": "Both describe the same 'hourglass organization' shape (expanded entry-level intake + compressed/empowered middle management + growing leadership layer) independently — Allen from an AWS/agentic-team-structures conference talk, Priest from PwC's internal transformation practice.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": null,
+      "last_confirmed": "2026-07-15",
+      "days_since_access": null,
+      "effective_confidence": 0.8,
+      "rrf_score": 0.005376,
+      "fused_score": 0.302,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-07-10-building-the-future-of-agentic-infrastructure",
+      "path": "wiki/sources/2026-07-10-building-the-future-of-agentic-infrastructure.md",
+      "type": "source",
+      "title": "Building the future of agentic infrastructure",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business",
+          "edge_type": "supports",
+          "via": "Both describe agents becoming invisible operational infrastructure rather than discrete tools — Priest's task-registration 'operating system' for PwC's internal agent deployment parallels this video's 'agents as an invisible substrate... more like an operating system' vision, from enterprise-operator and platform-vendor vantages respectively",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005263,
+      "fused_score": 0.302,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-07-14-khan-academy-ceo-the-real-ai-opportunity-is-in-boring-industries-sal-khan",
+      "path": "wiki/sources/2026-07-14-khan-academy-ceo-the-real-ai-opportunity-is-in-boring-industries-sal-khan.md",
+      "type": "source",
+      "title": "Khan Academy CEO: The Real AI Opportunity Is in Boring Industries | Sal Khan",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business",
+          "edge_type": "supports",
+          "via": "both are practitioner-level articulations of reshape-not-replace at the org level — Khan Academy's 'if we could do 3x more with the same resources, we will do 3x more; that would never be the catalyst for layoffs' is the nonprofit-CEO version of Priest's PwC transformation-practice logic — and both name the same digital-transforming/redesigning-internal-structures microfoundation (Khan Academy gives designers/PMs full dev environments; PwC restructures into the hourglass shape)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005208,
+      "fused_score": 0.299,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-22-yc-kolysh-how-to-get-your-first-10-customers",
+      "path": "wiki/sources/2026-06-22-yc-kolysh-how-to-get-your-first-10-customers.md",
+      "type": "source",
+      "title": "How to Get Your First 10 Customers",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy",
+          "edge_type": "supports",
+          "via": "compatible playbooks at different altitudes, and they agree on the unglamorous part. Kolysh's *do things that don't scale* for customers 4–10 is McCall's land-grab discipline — *'too few people are willing to pick up the phone and willing to get on the plane… because it sounds way more sexy to sell to JPMorgan Chase than to Morgan Chase'* — with the same warning that founders optimise for prestige over reachable revenue",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005155,
+      "fused_score": 0.296,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-02-09-hubspot-customer-success-with-claude",
+      "path": "wiki/sources/2026-02-09-hubspot-customer-success-with-claude.md",
+      "type": "source",
+      "title": "How HubSpot uses Claude for customer success",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook",
+          "edge_type": "supports",
+          "via": "the same firm naming taste as marketing's scarce input seven months apart. HubSpot's marketing lead chose Claude because 'marketing's all about taste'; Bodnar and Flanagan make taste the first stage of their operating model and argue it must be written down and fed to the model, not delegated to it",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.6,
+      "accessed_at": "2026-05-20",
+      "last_confirmed": "2026-05-20",
+      "days_since_access": null,
+      "effective_confidence": 0.6,
+      "rrf_score": 0.005747,
+      "fused_score": 0.294,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-24-rubinstein-onyemah-startup-founders-new-sales-playbook",
+      "path": "wiki/sources/2026-06-24-rubinstein-onyemah-startup-founders-new-sales-playbook.md",
+      "type": "source",
+      "title": "Startup Founders Need a New Sales Playbook",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy",
+          "edge_type": "supports",
+          "via": "the same argument about where founder effort should go, one level up. Rubinstein & Onyemah diagnose *who* sells in the early stage; this addresses *whom you sell to*, and both land on the same anti-deliberation prescription — McCall's *'spend like 1% of your time on the strategy, pick it, and then spend 99% of your time trying to execute'* is the go-to-market restatement of getting out and talking to customers rather than perfecting the motion first",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005102,
+      "fused_score": 0.293,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-02-architecting-ai-native-organizations-redesign-work-at-scale-joe-beutler",
+      "path": "wiki/sources/2026-06-02-architecting-ai-native-organizations-redesign-work-at-scale-joe-beutler.md",
+      "type": "source",
+      "title": "Architecting AI-Native Organizations: How to Redesign Work at Scale — Joe Beutler",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business",
+          "edge_type": "supports",
+          "via": "Both sources share the same three W&W cells (balancing-digital-portfolios, redesigning-internal-structures, improving-digital-maturity) — Beutler's talk gives the architecture-level playbook for org redesign at scale; Priest gives PwC's own lived instance (internal GPT built from transformation-practice learnings, task-registration 'operating system' for agents, hourglass restructuring).",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": null,
+      "last_confirmed": "2026-06-06",
+      "days_since_access": null,
+      "effective_confidence": 0.75,
+      "rrf_score": 0.005319,
+      "fused_score": 0.292,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-07-31-collison-yc-startup-school-is-ai-breaking-the-lean-startup-playbook",
+      "path": "wiki/sources/2026-07-31-collison-yc-startup-school-is-ai-breaking-the-lean-startup-playbook.md",
+      "type": "source",
+      "title": "Patrick Collison: Is AI Breaking the Lean Startup Playbook?",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy",
+          "edge_type": "supports",
+          "via": "two 2026 sources arguing the enterprise window is unusually open, from investor and founder vantages. Schmidt's *'there's a moment right now to go sell big software again… to go sell platforms'* rests on buyers rethinking whole categories (CRM, HR, ITSM) rather than swapping like for like — *'this is not a skeuomorphic one-to-one replacement green to blue'* — which is the GTM face of Collison's claim about the founder's opportunity",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005051,
+      "fused_score": 0.29,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-12-tan-a16z-new-rules-for-founders",
+      "path": "wiki/sources/2026-08-12-tan-a16z-new-rules-for-founders.md",
+      "type": "source",
+      "title": "Garry Tan: New Rules for Founders",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy",
+          "edge_type": "supports",
+          "via": "the same a16z house view on SaaS, one day apart on the same channel, reached from opposite ends. Tan argues per-seat SaaS *'not totally clear it will exist in another five or 10 years… perfectly fine as a wedge'*; Schmidt argues the replacement is platform-scale software sold into categories being rethought wholesale. Read together they are a coherent position: the seat is dying, the platform sale is returning",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005,
+      "fused_score": 0.287,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-28-ai-index-report-2025",
+      "path": "wiki/sources/2026-04-28-ai-index-report-2025.md",
+      "type": "source",
+      "title": "Artificial Intelligence Index Report 2025",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet",
+          "edge_type": "supports",
+          "via": "the data commons closing. The AI Index reports AI-training restrictions on actively maintained C4 domains rising from 5–7% to 20–33% in a year; Cloudflare carries the trend forward at network scale — AI training crawlers blocked by default on new domains since July 2025, after the AI Index's measurement window — and reports publishers using that control to negotiate",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004902,
+      "fused_score": 0.281,
+      "verdict": "ignore",
+      "reason": "data-commons crawler restrictions, tangential to buyer discovery",
+      "reason_class": "off-facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-09-cloudflare-investor-day-2026",
+      "path": "wiki/sources/2026-06-09-cloudflare-investor-day-2026.md",
+      "type": "source",
+      "title": "Cloudflare Investor Day 2026",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet",
+          "edge_type": "depends-on",
+          "via": "the post's methodology note names two data sources, Cloudflare Radar and the Investor Day 2026 deck. The adoption-speed comparison, the open-web share of attention and the 35–40% industry traffic declines are the deck's slides restated",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet -->depends-on--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004854,
+      "fused_score": 0.278,
+      "verdict": "ignore",
+      "reason": "its attention-share, traffic-decline and x402 figures are restated in the USE Cloudflare blog post and agentic-web; deck marks attention figure as illustrative",
+      "reason_class": "redundant",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-26-how-to-win-when-software-is-not-a-moat-evan-spiegel-snapchat-ceo",
+      "path": "wiki/sources/2026-04-26-how-to-win-when-software-is-not-a-moat-evan-spiegel-snapchat-ceo.md",
+      "type": "source",
+      "title": "How to win when software is not a moat | Evan Spiegel (Snapchat CEO)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china",
+          "edge_type": "supports",
+          "via": "convergent on *AI-as-platform-not-tool* and *ecosystems-beat-features* — Ognibeni's four lessons (growth-not-savings, beyond-demos, ecosystems-not-silos, optimize-for-trust) operationalise Spiegel's *moat-is-the-network-of-relationships* thesis with concrete Chinese e-commerce cases",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells",
+          "edge_type": "supports",
+          "via": "Spiegel: in an AI-saturated software market, the moat is the customer relationship and the platform ecosystem, not the feature set. Price: *'with [agentic AI] goes loyalty, with that goes access to data. So there is going to be this arms race for retailers to understand in that agentic world, how do you ensure you maintain that relationship with the customer.'* — the same moat-relocation thesis applied to physical retail.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china -->supports--> this (1 hop)",
+        "graph: sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004808,
+      "fused_score": 0.276,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-10-ries-lennys-force-destroys-companies-within",
+      "path": "wiki/sources/2026-05-10-ries-lennys-force-destroys-companies-within.md",
+      "type": "source",
+      "title": "The force that destroys companies from within (and how to resist it) | Eric Ries, Lean Startup",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china",
+          "edge_type": "supports",
+          "via": "Ries names the internal force (efficiency-chasing destroys growth); Ognibeni names the symmetric external symptom — Western firms use AI for bottom-line savings (Klarna fired-then-rehired service team) while Chinese firms use AI as platform for top-line business-model renewal (Shein, BYD, Xiaomi). Both arguments converge on *aim for growth and revenue, cost savings are nice but you don't grow by saving on costs*.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004762,
+      "fused_score": 0.273,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage",
+      "path": "wiki/sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage.md",
+      "type": "source",
+      "title": "The real AI advantage",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china",
+          "edge_type": "supports",
+          "via": "Both describe agentic commerce as a near-term structural shift — Catlin from a prescriptive/forward-looking McKinsey-research angle (agents transacting on a customer's behalf, e.g. auto-switching insurance at renewal), Ognibeni from an already-live descriptive angle (Chinese super-apps and dark factories) — same phenomenon, different maturity stage and evidentiary footing.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004717,
+      "fused_score": 0.27,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-09-18-bloomberg-originals-how-china-plans-to-win-global-ai-race",
+      "path": "wiki/sources/2026-09-18-bloomberg-originals-how-china-plans-to-win-global-ai-race.md",
+      "type": "source",
+      "title": "How China Plans to Win the Global AI Race",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china",
+          "edge_type": "supports",
+          "via": "diffusion as the measure of success. Ognibeni argues China wins by deploying AI across industry rather than chasing AGI; Bloomberg closes on the same point — 'the effective use of AI across industry to drive up productivity may well turn out to be a more important indicator of a country's success'",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004673,
+      "fused_score": 0.268,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Cloudflare",
+      "path": "wiki/entities/Cloudflare.md",
+      "type": "entity",
+      "title": "Cloudflare",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet",
+          "edge_type": "published-by",
+          "via": "a company report on the Cloudflare blog, written by three Cloudflare staff",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet -->published-by--> this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": "2026-09-19",
+      "last_confirmed": "2026-09-19",
+      "days_since_access": 20,
+      "effective_confidence": 0.71,
+      "rrf_score": 0.00495,
+      "fused_score": 0.267,
+      "verdict": "ignore",
+      "reason": "entity card; claims live in the Cloudflare source pages",
+      "reason_class": "wrong-granularity",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-09-18-reuters-on-assignment-inside-chinas-ai-race",
+      "path": "wiki/sources/2026-09-18-reuters-on-assignment-inside-chinas-ai-race.md",
+      "type": "source",
+      "title": "Inside China's AI race | On Assignment",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china",
+          "edge_type": "supports",
+          "via": "the same two-race reading from two unrelated vantages. Ognibeni, an e-commerce practitioner, says the West chases AGI while China pursues diffusion that already earns revenue; Chen, a Reuters China correspondent, says the US is 'very focused on trying to reach AGI' while Beijing pushes AI 'throughout various different sectors of the economy' to lift productivity against a demographic decline",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.00463,
+      "fused_score": 0.265,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-05-06-jassy-amazon-agility-ai-strategy-changing-role-of-managers",
+      "path": "wiki/sources/2025-05-06-jassy-amazon-agility-ai-strategy-changing-role-of-managers.md",
+      "type": "source",
+      "title": "Amazon CEO Andy Jassy on Agility, AI Strategy, and the Changing Role of Managers",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells",
+          "edge_type": "supports",
+          "via": "second retail-CEO voice in the wiki on AI-driven retail change — Jassy frames AI as both an internal-operations and customer-facing transformation lever from the platform incumbent's vantage; Price names the same lever from the bricks-and-mortar omnichannel incumbent's vantage, with the addition of the *omnichannel-via-data-monetization* path (Yuu loyalty platform) as the brick-and-mortar's equivalent of Amazon's data-flywheel",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004587,
+      "fused_score": 0.263,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator",
+      "path": "wiki/sources/2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator.md",
+      "type": "source",
+      "title": "How DBS Bank Makes Everyone an Innovator (Leaders at All Levels, Ep. 9)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells",
+          "edge_type": "supports",
+          "via": "Two **operator-narrated Asian-incumbent** dynamic-capabilities cases at first-person executive altitude. [[2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells|Price / DFI Retail Group]] supplies the multi-brand pan-Asian *retail* incumbent reinvention (portfolio-balancing, Yuu loyalty data flywheel, wellness-hub business-model renewal); Dumra / DBS supplies the pan-Asian *banking* incumbent reinvention (Managing Through Journeys, innovation pyramid, KPI-embedded innovation). Both are CEO-or-direct-report-altitude lived cases (not vendor prescription or academic survey), both name a customer-centricity-as-operating-model thesis, and both sit in the wiki's operator-altitude leg of the dynamic-capabilities triangulation (operator / vendor / CEO-non-AI).",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004545,
+      "fused_score": 0.261,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-03-17-cemri-why-do-multi-agent-llm-systems-fail",
+      "path": "wiki/sources/2025-03-17-cemri-why-do-multi-agent-llm-systems-fail.md",
+      "type": "source",
+      "title": "Why Do Multi-Agent LLM Systems Fail?",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai",
+          "edge_type": "contradicts",
+          "via": "both address whether multi-agent decomposition is the right architecture. MAST derives failure modes from observed multi-agent systems and treats them as engineering defects to be designed against. Maza reports abandoning a working multi-agent graph at scale on the view that decomposition itself constrains a sufficiently capable model — 'the intelligence now doesn't need the graph and the multi-agent lattice work and harness because it will constrain this level of intelligence'",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai -->contradicts--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004505,
+      "fused_score": 0.258,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai",
+      "path": "wiki/sources/2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai.md",
+      "type": "source",
+      "title": "How Companies Are Building Their Own Intelligence | Sonya Huang, Sequoia Capital",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai",
+          "edge_type": "supports",
+          "via": "both describe a firm investing engineering effort in the layer above the model — Huang in post-training and owned intelligence, Maza in the harness, evals and memory around a rented frontier model",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004425,
+      "fused_score": 0.254,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-07-kiron-schrage-compound-benefits",
+      "path": "wiki/sources/2026-05-07-kiron-schrage-compound-benefits.md",
+      "type": "source",
+      "title": "How to Reap Compound Benefits From Generative AI",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai",
+          "edge_type": "supports",
+          "via": "both argue that returns come from redesigning work around the technology rather than layering it onto existing process. Maza states the counterfactual as a historical mechanism — factories that swapped a coal engine for an electric one got roughly 6% while those rebuilt around small dynamos got 3x",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-07",
+      "days_since_access": null,
+      "effective_confidence": 0.8,
+      "rrf_score": 0.004464,
+      "fused_score": 0.251,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-18-covello-gs-new-models-ai-investment-landscape",
+      "path": "wiki/sources/2026-08-18-covello-gs-new-models-ai-investment-landscape.md",
+      "type": "source",
+      "title": "How New Models Are Changing the AI Investment Landscape",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai",
+          "edge_type": "contradicts",
+          "via": "both address whether enterprises are yet making or saving money on AI. Covello, from Goldman's cross-company survey work: 'enterprises collectively are not making or saving money on their AI implementations.' Maza reports one firm handling 96% of interactions and 95% of transactions with agents, at 2.1x its human team's conversion, describing the architecture as having 'brought us to profitability'. The unit differs — a cross-sectional aggregate against a single firm that rebuilt itself around agents — and the layer Covello names as missing is close to what Kavak describes building",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai -->contradicts--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004386,
+      "fused_score": 0.251,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-09-14-google-cloud-agent-factory-agent-harnesses-explained",
+      "path": "wiki/sources/2026-09-14-google-cloud-agent-factory-agent-harnesses-explained.md",
+      "type": "source",
+      "title": "Agent Harnesses Explained: Inside the Stack Behind Antigravity, Claude Code & Cursor",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai",
+          "edge_type": "supports",
+          "via": "both treat the harness as the durable investment and the model as swappable. Kavak rebuilt its harness to absorb new models as they ship — 'leverage recursive self-improvement or new models more intelligent models coming out every month' — and Maza uses the term harness unprompted throughout",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-08-10-maza-a16z-kavak-rebuilding-a-company-around-ai -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004348,
+      "fused_score": 0.249,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-01-08-khanfar-factors-influencing-ai-adoption-slr",
+      "path": "wiki/sources/2025-01-08-khanfar-factors-influencing-ai-adoption-slr.md",
+      "type": "source",
+      "title": "Factors influencing the adoption of artificial intelligence systems: a systematic literature review",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+          "edge_type": "supports",
+          "via": "the review's central claim is that firm-level choices shape employee-level adoption rather than operating independently of it. Krakowski et al. test exactly that in the field: four firm-set parameters — work procedure, decision authority, training, incentives — decide whether the same AI system raises or lowers sales performance",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2025-06-09-krakowski-human-centered-ai-field-experiment <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.00431,
+      "fused_score": 0.247,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-28-anand-wu-genai-playbook",
+      "path": "wiki/sources/2026-04-28-anand-wu-genai-playbook.md",
+      "type": "source",
+      "title": "The Gen AI Playbook for Organizations",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+          "edge_type": "supports",
+          "via": "**Deployment-quadrant frame + interaction-design frame as complementary layers.** Anand-Wu (HBR 2025): the 2×2 task-quadrant deployment framework (cost-of-errors × type-of-knowledge → no-regrets / creative-catalyst / quality-control / human-first zones) prescribes **WHERE** to deploy AI. Krakowski et al.: within a chosen deployment, the **HOW** of human-AI interaction design (work procedure / decision authority / training / incentives, tailored to cognitive style) determines whether the deployment produces positive or negative outcomes. The two frames stack: Anand-Wu's quadrant chooses the deployment zone; Krakowski's parameters tune the interaction within that zone. *Without* Krakowski's interaction tuning, even a correctly-zoned Anand-Wu deployment can produce negative outcomes — pharmaceutical sales is a *quality-control quadrant* task (high cost of errors, partly tacit knowledge) where Anand-Wu would prescribe augmentation; Krakowski shows that augmentation alone is insufficient without interaction tailoring.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2025-06-09-krakowski-human-centered-ai-field-experiment -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004237,
+      "fused_score": 0.243,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work",
+      "path": "wiki/sources/2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work.md",
+      "type": "source",
+      "title": "Generative AI at Work",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+          "edge_type": "supports",
+          "via": "**Two-field-experiment pair on the augmentation pole — one shows the success case, one shows the failure case.** Brynjolfsson-Li-Raymond (QJE 2025, customer-support AI deployed in a real call center): augmentation under deliberate human-in-the-loop design produces **+15% productivity** with strong equalizing effect (low-skill +30%, high-skill ~0% with small quality decline). Krakowski et al. (Management Science 2025, AI sales-support system in Nordic pharma): **untailored augmentation produces NEGATIVE performance effects vs the legacy IT control**, while tailored interaction (aligned to sales experts' cognitive styles per Kirton 1976) produces positive effects vs both untailored and control. The two papers together complete the augmentation-pole evidence base: *augmentation can produce +15% or it can produce negative outcomes, depending on the interaction-design discipline applied*. Brynjolfsson-Li-Raymond's deployment was *explicitly designed to augment* (agents have full discretion to accept/edit/ignore suggestions; system declines to suggest when training is insufficient) — i.e. *tailored* in Krakowski's vocabulary. Krakowski supplies the empirical evidence that *without that design discipline, the same augmentation technology turns negative*. The two-source convergence sharpens the [[automation-vs-augmentation]] cut: **augmentation is contingent on interaction-design, not guaranteed by deployment choice**.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2025-06-09-krakowski-human-centered-ai-field-experiment -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004202,
+      "fused_score": 0.241,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+      "path": "wiki/sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer.md",
+      "type": "source",
+      "title": "Build core skills to thrive as an AI-era developer",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+          "edge_type": "supports",
+          "via": "**Productive-struggle + cognitive-style-tailoring convergence at developer + sales-expert altitudes.** Forsgren & Macvean (Google DORA 2026): *productive struggle* — engineering-leadership countermeasure where humans deliberately work through complexity rather than offloading it to AI. Krakowski et al.: *tailored human-AI interaction* — sales experts whose interaction context aligns with their cognitive style increase utilization, learning, and performance over time. Both prescribe **interaction-design rather than tool-deployment as the operative lever**, at developer-tool altitude (DORA) and sales-rep altitude (Krakowski). The cross-domain convergence: *AI augmentation is a design discipline, not a deployment decision*.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2025-06-09-krakowski-human-centered-ai-field-experiment -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": "2026-05-21",
+      "last_confirmed": "2026-05-21",
+      "days_since_access": null,
+      "effective_confidence": 0.8,
+      "rrf_score": 0.004274,
+      "fused_score": 0.24,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-28-warner-wager-dynamic-capabilities-digital-transformation",
+      "path": "wiki/sources/2026-04-28-warner-wager-dynamic-capabilities-digital-transformation.md",
+      "type": "source",
+      "title": "Building Dynamic Capabilities for Digital Transformation: An Ongoing Process of Strategic Renewal",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+          "edge_type": "supports",
+          "via": "**Empirical operationalisation of *redesigning-internal-structures* + *improving-digital-maturity* microfoundations in a regulated industry.** Where Warner & Wäger frame structural redesign and digital-maturity-improvement as theoretical microfoundations of *digital-transforming* capability, Krakowski et al. supply a concrete RCT-grade empirical instance: untailored structural redesign (D2 — imposed work procedures, constrained decision authority, mandatory training, extrinsic incentives) produces *negative performance* vs the legacy IT control; tailored structural redesign (D3 — parameters aligned to sales experts' cognitive styles) produces positive performance vs both. **The structural redesign microfoundation is the lever** — but it is contingent on tailoring, not deployment alone. The case study sits in the regulated pharmaceutical-sales context — a complement to the W&W 27-senior-executive-interview methodology with a DiD field experiment in a similarly high-regulation setting.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2025-06-09-krakowski-human-centered-ai-field-experiment -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004167,
+      "fused_score": 0.239,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships",
+      "path": "wiki/sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships.md",
+      "type": "source",
+      "title": "Agents, robots, and us: Skill partnerships in the age of AI",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+          "edge_type": "supports",
+          "via": "**Individual-level tailoring + firm-level workflow redesign as paired levers.** Krakowski et al. (*Management Science* 2025, Nordic pharma DiD, N=72): untailored AI augmentation gradually decreases market share vs the legacy-IT control; tailored AI per Kirton 1976 cognitive style produces positive effects across four interaction-design parameters (*work procedure / decision-making authority / training / incentives*). MGI (Yee et al., Nov 2025): the workflow-redesign-not-task-automation prescription — *<40% of companies that have invested in AI report measurable gains* despite ~90% investing; the gap is workflow integration, not technology adoption — *'the difference between offering employees access to a chatbot for ad hoc use and deploying custom agents alongside people in a reimagined process'*. Krakowski's cognitive-style-tailoring is the **individual-interaction-design** layer; MGI's workflow redesign is the **firm-process-design** layer. Same load-bearing claim — *tailored intervention beats blanket prescription* — at two stack altitudes. Both anchor the W&W `digital-transforming/redesigning-internal-structures` cell with empirical evidence (Krakowski) and prospective structural modeling (MGI).",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2025-06-09-krakowski-human-centered-ai-field-experiment <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004132,
+      "fused_score": 0.237,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook",
+      "path": "wiki/sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook.md",
+      "type": "source",
+      "title": "Rolls-Royce CEO Tufan Erginbilgiç Shares His Turnaround Playbook",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+          "edge_type": "supports",
+          "via": "**Non-tech-industry transformation pair on the *tailored-leadership + culture-refresh* lever.** Krakowski et al. (*Management Science* 2025, Nordic pharma DiD, N=72 retail outlets): *untailored* AI augmentation gradually decreases market share vs the legacy-IT control; *tailored* interaction across four Kirton-cognitive-style parameters produces positive effects. Erginbilgiç (Rolls-Royce CEO, May 2026): the entire transformation rests on *tailored* leadership — the burning-platform speech was *commissioned external benchmarking starting Sept '22* (~2:01), 25–30 strategy workshops with 500+ employees so *'whole organisation is aligned because they were in the room when you were making the decision'* (~12:43–13:14), and *'non-compromising mediocrity at that level kills the organizations'* (~17:42–17:50) as the cultural-refresh lever. Two anchors on the same load-bearing claim — *tailored intervention beats blanket prescription, organizational-culture renewal is the substrate* — at non-tech industrial altitudes (pharma + aerospace) with both citing the [[warner-wager-process-model|W&W process model]]'s `strategic-renewal/organizational-culture` cell. Erginbilgiç adds the leadership-as-non-compromise edge; Krakowski adds the cognitive-style-mapping edge.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2025-06-09-krakowski-human-centered-ai-field-experiment <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004098,
+      "fused_score": 0.235,
+      "verdict": "ignore",
+      "reason": "graph-only or low-ranked neighbour; no decomposed facet needs it",
+      "reason_class": "below-threshold",
+      "promoted": null
+    }
+  ],
+  "expansions": [],
+  "answer_map": [
+    {
+      "anchor": "W1",
+      "claim": "HubSpot reports losing ~80% of web traffic (140M visits in a year from May 2024) while leads grew 20%, attributed to buyers moving research into ChatGPT/Claude; single-firm, self-reported",
+      "pages": [
+        "concepts/agentic-web",
+        "sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook"
+      ],
+      "span": "Key claims 1 / Scope and reliability"
+    },
+    {
+      "anchor": "W2",
+      "claim": "Cloudflare network data: non-human traffic >50% of Internet traffic; human traffic -35 to -40% (Jun 2025 to Apr 2026) in retail, software, IT, financial services; 52% of crawler requests for AI training; vendor, unaudited, \"traffic\" undefined",
+      "pages": [
+        "sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet",
+        "concepts/agentic-web"
+      ],
+      "span": "Parts I-V / Scope and reliability"
+    },
+    {
+      "anchor": "W3",
+      "claim": "Attention-share figure (open web ~25% vs 55%) is labelled illustrative by the source deck; the 2x Google information advantage is asserted without method",
+      "pages": [
+        "sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet"
+      ],
+      "span": "Scope and reliability"
+    },
+    {
+      "anchor": "W4",
+      "claim": "AEO/GEO is the practice of being named and cited in AI answers; it differs from SEO in unit of demand (long prompts), absence of demand data, and goal (mention/citation)",
+      "pages": [
+        "concepts/answer-engine-optimization"
+      ],
+      "span": "Working definition; How AEO differs from SEO"
+    },
+    {
+      "anchor": "W5",
+      "claim": "Core AEO claim: brand mentions across the web (consensus) matter most; cited-source shares of ~8% own site, ~30% PR/news, ~10% social come from HubSpot/XFunnel analysis without method or date",
+      "pages": [
+        "sources/2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook",
+        "concepts/answer-engine-optimization"
+      ],
+      "span": "Key claims 3 / Scope and reliability"
+    },
+    {
+      "anchor": "W6",
+      "claim": "AEO outcome figures (+170% MQLs, +82% closed deals, +8% monthly visibility, Fresha 86% visibility/16% share of voice) are vendor/customer self-reports without baseline and confounded by adopter selection; the wiki holds them at confidence 0.75",
+      "pages": [
+        "sources/2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook",
+        "concepts/answer-engine-optimization"
+      ],
+      "span": "Scope and reliability; Debates"
+    },
+    {
+      "anchor": "W7",
+      "claim": "Six on-site content signals (direct answers, original expertise, entity richness, full-funnel coverage, freshness, bot accessibility) are practitioner guidance from one session, not independently tested",
+      "pages": [
+        "concepts/answer-engine-optimization"
+      ],
+      "span": "Key claims 4"
+    },
+    {
+      "anchor": "W8",
+      "claim": "Only the zero-click 60% figure and Similarweb prompt-length chart (15-16 words, ~5 prompts/session for ChatGPT/Claude) in the AEO session come from non-HubSpot sources, and neither is reproduced in the wiki",
+      "pages": [
+        "sources/2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook"
+      ],
+      "span": "Scope and reliability; Key claims 2"
+    },
+    {
+      "anchor": "W9",
+      "claim": "Open questions in the wiki: prompt sets as stand-in for demand, personalisation undercutting measurement, whether paid placement shrinks organic AEO, whether agents need different signals than human-read answers",
+      "pages": [
+        "concepts/answer-engine-optimization"
+      ],
+      "span": "Debates and supersession"
+    },
+    {
+      "anchor": "W10",
+      "claim": "Agentic commerce at consumer scale is claimed for China (Alibaba Qen >100M users; JD Joy Streamer ~2.3bn RMB / ~$250M in sales in one Double 11) from a conference keynote; no independent verification in the wiki",
+      "pages": [
+        "concepts/ai-agents",
+        "sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china"
+      ],
+      "span": "Agentic commerce at consumer scale"
+    },
+    {
+      "anchor": "W11",
+      "claim": "A retail CEO (DFI Retail Group) names agentic personal assistants disintermediating the retailer-customer relationship (loyalty and data) as a main concern; an executive prediction, not evidence of effect",
+      "pages": [
+        "concepts/ai-agents",
+        "sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells"
+      ],
+      "span": "Agents as strategic threat"
+    },
+    {
+      "anchor": "W12",
+      "claim": "Machine payments: Cloudflare reports x402 (with Coinbase and Stripe) and 2bn 402 responses/day; no independent measure of money moved",
+      "pages": [
+        "concepts/agentic-web"
+      ],
+      "span": "Key claims 4"
+    },
+    {
+      "anchor": "W13",
+      "claim": "Wiki gap: no peer-reviewed GEO literature (e.g. Aggarwal et al.) and no independent measurement of AI-answer citations or referral traffic is ingested; the wiki names these as the ingest targets that would raise confidence",
+      "pages": [
+        "concepts/answer-engine-optimization",
+        "concepts/agentic-web"
+      ],
+      "span": "Debates and supersession"
+    }
+  ],
+  "answer": "**Short answer.** The wiki holds a coherent *story* but little *independent evidence*. Almost everything on this question comes from vendors describing their own products or from practitioner talks, and the wiki itself caps confidence at 0.75 for that reason [W13][W6].\n\n**Better supported (measured, but by interested parties).**\n- Discovery is moving from search results to AI answers and referral traffic is not following. Two independent vantage points agree in direction: Cloudflare's network data (non-human traffic above 50%; human traffic down 35-40% in retail, software, IT and finance between June 2025 and April 2026) [W2] and HubSpot's own site (-80% traffic, +20% leads) [W1]. Both are self-reported by vendors, unaudited, and neither separates AI substitution from other causes (seasonality, bot classification, customer mix) [W1][W2].\n- Buyers who arrive via an answer engine are reported to arrive late in the journey, ready to decide; HubSpot calls answer-engine visits its strongest purchase predictor [W5][W6]. This is one firm's claim without method.\n\n**Weakly supported (assertion, unsourced numbers, or prediction).**\n- What drives citation in answer engines: that cross-web mentions (\"consensus\") matter most, with cited-source shares of about 8% own site, 30% PR/news, 10% social, comes from HubSpot/XFunnel's own analysis with no method, sample or date [W5]. The six on-site content signals are practitioner guidance, not tested effects [W7].\n- That AEO works: +170% MQLs, +82% closed deals, +8% monthly visibility and Fresha's 86% visibility are vendor or customer self-reports without baselines and are confounded by which customers chose to adopt [W6]. Cloudflare's 25%-vs-55% attention share is marked illustrative by its own deck and the 2x Google advantage is asserted without method [W3].\n- Agentic commerce: Alibaba and JD figures come from a single keynote [W10]; the retail-CEO view is a prediction about disintermediation [W11]; x402 volumes are vendor-reported [W12].\n\n**Open or not covered.** Whether a constructed prompt set represents real demand, whether personalisation makes tracked answers unrepresentative, whether paid placement will shrink organic AEO, and whether agents acting without a human reader need different signals [W9]. The wiki contains no peer-reviewed GEO study and no independent referral-traffic study [W13]. It contains no evidence on how buyers' *decisions* (as opposed to discovery) change beyond the late-arrival claim [W5].",
+  "generated_at": "2026-10-09T10:05:03.252Z"
+}

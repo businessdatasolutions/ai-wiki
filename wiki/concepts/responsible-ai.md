@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-10-03"
-accessed_at: "2026-10-03"
-source_count: 32
+last_confirmed: "2026-10-11"
+accessed_at: "2026-10-11"
+source_count: 33
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -385,3 +385,7 @@ That gives the page two ideal types it had not named. In one, **the state tests*
 - **Data-centre opposition as a proxy** for broader public anger.
 
 For organisations deploying AI this is the `contextual/external-triggers` side of the page: the legal and political pressure that will shape what responsible deployment has to include.
+
+## Public demand for regulation and assurance (added 2026-10-11)
+
+[[2025-04-28-gillespie-kpmg-trust-attitudes-and-use-of-ai-2025|Gillespie et al. 2025]] (48,340 respondents, 47 countries) measures the public side. **70%** say AI regulation is needed, only **43%** think current laws are adequate, and **87%** want laws against AI-generated misinformation. International regulation is the most endorsed form. Four in five would trust an AI system more with assurance mechanisms in place (human oversight, monitoring, responsible-AI policies and training, standards, independent assurance). In the authors' trust model, the **institutional pathway** (perceived adequacy of safeguards and confidence in the entities developing AI) has the strongest influence on trust. KPMG, which funds the study, sells AI assurance; the university team states it ran the research independently.

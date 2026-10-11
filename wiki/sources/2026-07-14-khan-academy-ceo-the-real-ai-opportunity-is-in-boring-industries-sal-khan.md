@@ -72,7 +72,7 @@ The full auto-generated (ASR) English caption track — no manual/human-curated 
 - [[concepts/enterprise-ai-adoption|enterprise-ai-adoption]] — Khan Academy's internal AI adoption case: spend, connectors, agentic code review, career-rubric change, velocity gain.
 - [[concepts/dynamic-capabilities|dynamic-capabilities]] — the redesigning-internal-structures and rapid-prototyping instances above.
 
-**Dangling** (single-source mention, deferred per [author-entity promotion](../../CLAUDE.md#author-entity-promotion)): Sal Khan, Marina Mogilko, Silicon Valley Girl (channel/podcast).
+**Dangling** (single-source mention, deferred per [author-entity promotion](../../CLAUDE.md#author-entity-promotion)): Sal Khan, Marina Mogilko. [[Silicon Valley Girl]] (channel/podcast) promoted to an entity on 2026-10-11, on its second source ([[2026-10-01-chesky-silicon-valley-girl-people-who-know-what-to-build-with-ai|Chesky]]).
 
 ## Source quality note
 

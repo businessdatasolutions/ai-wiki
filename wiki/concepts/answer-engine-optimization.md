@@ -4,9 +4,9 @@ title: Answer engine optimization
 aliases: ["answer engine optimization", "answer engine optimisation", "AEO", "generative engine optimization", "generative engine optimisation", "GEO", "AI search optimization", "LLM visibility", "AI visibility", "brand visibility in AI answers"]
 tags: [aeo, geo, seo, answer-engines, ai-search, citations, brand-visibility, share-of-voice, prompt-tracking, consensus, earned-media, entity-richness, bot-accessibility, buyer-journey]
 confidence: 0.75
-last_confirmed: "2026-09-30"
-accessed_at: "2026-09-30"
-source_count: 5
+last_confirmed: "2026-10-11"
+accessed_at: "2026-10-11"
+source_count: 6
 relationships:
   - type: part-of
     target: agentic-web
@@ -113,6 +113,7 @@ The loop is iterative: define the brand, find gaps, create, publish across chann
 - **Personalisation undercuts measurement.** The same session says engines personalise heavily using each user's history and connected tools, and also that a firm can measure visibility with a fixed prompt set. A tracked answer is a generic-user answer, which the buyer may never see. **Open.**
 - **Being crawled against being paid.** AEO asks brands to make content maximally crawlable. The [[2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet|Cloudflare one-year report]] documents publishers **blocking** AI crawlers by default to win licensing leverage. The two positions fit different businesses: a brand wants to be cited because the answer sells its product, while a publisher's product is the content itself. A firm that is both, such as a software company with a large editorial blog, faces a real choice. See [[agentic-web]].
 - **Does the channel stay open?** [[2026-06-11-kilpatrick-sequoia-model-eats-the-harness|Kilpatrick (Google DeepMind)]] raises the SEO→GEO question from the platform side: Google aiming to maximise *"outcomes for customers,"* not eyeball time. If answer engines take on paid placement, as search did, organic AEO may shrink the way organic SEO did beneath the ads. No source in the corpus addresses this directly. **Open.**
+- **AI discovery: concentration or long tail?** [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet|Collison (Stripe, Oct 2026)]] calls AI discovery *"the new point of aggregation for commerce"* and expects it to favour products that are *"well reviewed"* and *"discoverable"*, including niche brands; his analogy is the generation of sellers that grew up native to Facebook and Instagram ad targeting. That reads as support for the consensus mechanism above, but it is a prediction without data, from a firm that settles the resulting payments.
 - **Agents as buyers.** Chou describes the next step: agents choosing and signing up for products on a user's behalf (*"if the agents choose you… you're going to win huge"*). AEO as described here optimises an answer a human reads. Optimising for an agent that acts without a human reading anything may need different signals, such as an API, machine-readable pricing, or agent sign-up. **Open.**
 
 ## Related concepts
@@ -129,3 +130,4 @@ The loop is iterative: define the brand, find gaps, create, publish across chann
 - [[2026-06-19-chou-yc-lightcone-40-year-old-solo-founder]] — AEO as a platform default (FAQ, schema markup, crawlability), and agents as customers.
 - [[2026-06-11-kilpatrick-sequoia-model-eats-the-harness]] — the platform view: the SEO→GEO question and outcomes over eyeballs.
 - [[2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet]] — the publisher's opposite choice: blocking crawlers to price access.
+- [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet]] — AI discovery as the new aggregator for commerce, from the payments side.
