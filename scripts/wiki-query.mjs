@@ -2,7 +2,7 @@
 // v0.5 quality slice follow-up — wiki-query wrapper for qmd.
 //
 // Combines two operations in one call:
-//   1. `qmd query <query> --json -n <N>` (hybrid + LLM-rerank)
+//   1. qmd lex+vec hybrid search via the shared daemon (scripts/lib/qmd-client.mjs)
 //   2. Bump `accessed_at` on every concept/entity/synthesis page the
 //      query returned (per CLAUDE.md §Search "Bumping accessed_at after a query")
 //
@@ -16,12 +16,18 @@
 //   node scripts/wiki-query.mjs -n 5 "your question"      # narrow to 5
 //   node scripts/wiki-query.mjs --no-bump "your question" # query only, skip bump
 //   node scripts/wiki-query.mjs --json "your question"    # raw qmd JSON output
+//   node scripts/wiki-query.mjs --rerank "your question"  # opt in to LLM rerank
+//   node scripts/wiki-query.mjs --expand "your question"  # CLI path with LLM query expansion
+//
+// qmd runs through scripts/lib/qmd-client.mjs: a shared daemon, started on first
+// use, so parallel callers don't each load the models (see CLAUDE.md §Search).
 //
 // Exit codes: 0 = success; 1 = qmd failure; 2 = bad args.
 
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve, join } from 'node:path';
+import { qmdQuery } from './lib/qmd-client.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = resolve(__dirname, '..');
@@ -30,6 +36,8 @@ const args = process.argv.slice(2);
 let n = 8;
 let bump = true;
 let rawJson = false;
+let rerank = false;
+let expand = false;
 const remaining = [];
 for (let i = 0; i < args.length; i++) {
   const a = args[i];
@@ -43,9 +51,13 @@ for (let i = 0; i < args.length; i++) {
     bump = false;
   } else if (a === '--json') {
     rawJson = true;
+  } else if (a === '--rerank') {
+    rerank = true; // opt in to qmd's 0.6B LLM reranker (off by default, see lib/qmd-client.mjs)
+  } else if (a === '--expand') {
+    expand = true;
   } else if (a === '--help' || a === '-h') {
     console.log(
-      'Usage: wiki-query.mjs [-n <num>] [--no-bump] [--json] "your question"',
+      'Usage: wiki-query.mjs [-n <num>] [--no-bump] [--json] [--rerank] [--expand] "your question"',
     );
     process.exit(0);
   } else {
@@ -55,32 +67,18 @@ for (let i = 0; i < args.length; i++) {
 
 if (remaining.length === 0) {
   console.error('error: missing query string');
-  console.error('Usage: wiki-query.mjs [-n <num>] [--no-bump] [--json] "your question"');
+  console.error('Usage: wiki-query.mjs [-n <num>] [--no-bump] [--json] [--rerank] [--expand] "your question"');
   process.exit(2);
 }
 
 const query = remaining.join(' ');
 
-// ----- Step 1: run qmd query --json -----
-const qmd = spawnSync(
-  'npx',
-  ['--yes', '@tobilu/qmd', 'query', query, '--json', '-n', String(n)],
-  { cwd: REPO_ROOT, encoding: 'utf8' },
-);
-
-if (qmd.status !== 0) {
-  console.error('qmd failed:');
-  console.error(qmd.stderr || qmd.stdout);
-  process.exit(1);
-}
-
+// ----- Step 1: run qmd query -----
 let results;
 try {
-  results = JSON.parse(qmd.stdout);
+  results = await qmdQuery(query, { n, rerank, expand, cwd: REPO_ROOT });
 } catch (e) {
-  console.error('failed to parse qmd JSON output:', e.message);
-  console.error('--- raw stdout ---');
-  console.error(qmd.stdout);
+  console.error(e.message);
   process.exit(1);
 }
 

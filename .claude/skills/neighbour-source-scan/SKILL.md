@@ -55,6 +55,10 @@ grep -l "\\[\\[concepts/<concept-slug>" wiki/sources/*.md
 
 This catches the case where two sources operate on the same concept-page but were tagged with different W&W cells — or, more importantly, where a neighbour source predates W&W tagging entirely and carries no `dynamic_capabilities:` block at all. **This fallback is load-bearing for backwards-compatibility** with the ~62 pre-GH #4 source pages.
 
+### Semantic candidates (optional)
+
+The greps above load no models. If you add a qmd pass for semantic neighbours, use `node scripts/wiki-query.mjs --no-bump "<topic>"` (shared daemon, no extra RAM per call). In a parallel ingest, run it from the orchestrator before fan-out, never inside drafting agents. See CLAUDE.md §Memory: one shared qmd daemon.
+
 ### Decide the edge type
 
 For each candidate, pick from the closed vocabulary:

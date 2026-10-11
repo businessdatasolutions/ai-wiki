@@ -10,7 +10,10 @@
     "build": "npx quartz build -d wiki",
     "serve": "npx quartz build -d wiki --serve",
     "check": "tsc --noEmit",
-    "test": "tsx --test"
+    "test": "tsx --test",
+    "qmd:start": "npx --yes @tobilu/qmd mcp --http --daemon",
+    "qmd:stop": "npx --yes @tobilu/qmd mcp stop",
+    "qmd:status": "npx --yes @tobilu/qmd status"
   },
   "engines": {
     "npm": ">=10.9.2",

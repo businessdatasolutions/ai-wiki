@@ -243,7 +243,7 @@ A conference livestream is a batch of short sources that share one URL, not one 
 1. **Acquire once.** One raw transcript for the whole stream, with the chapters as headings; the [skill's §Long videos](.claude/skills/youtube-transcript-skill/SKILL.md) has the route and the gates. Do not ASR-clean it at Acquire: only the selected talks get cleaned, in their quotes.
 2. **Triage before Process.** Parallel readers score every chapter's AI relevance (0–3) against the concept list. A qmd pass (`wiki-query.mjs --no-bump`) then checks for a real neighbour; read a high score as a possible word match until the topics are seen to agree. **Show the table to the user before writing to `wiki/`.**
 3. **Hub:** one source page for the event, with one paragraph per talk and no `relationships:`. **Spokes:** one source page per selected talk, with `url: "…&t=<start>s"`, `raw:` pointing to the shared transcript, a `part-of` edge to the hub, and `length:` starting with the talk's own duration (the ▶ strip reads the first time it finds).
-4. **Draft in parallel, merge serially.** Drafting agents write to the scratchpad and propose edits to existing pages; one pass applies them, so pages that several spokes touch are written once.
+4. **Draft in parallel, merge serially.** Drafting agents write to the scratchpad and propose edits to existing pages; one pass applies them, so pages that several spokes touch are written once. **The orchestrator runs every qmd lookup and neighbour scan *before* fan-out** and pastes the candidate lists into each drafting agent's prompt; drafting agents do not call qmd. Five parallel `qmd query` processes crashed an 8 GB session on 2026-10-11 (see [§Memory: one shared qmd daemon](#memory-one-shared-qmd-daemon)).
 
 ### Pre-flight check (Zotero stubs): the YAML frontmatter contract
 
@@ -566,6 +566,19 @@ At ~200 pages the wiki has outgrown `index.md` as a primary discovery surface. v
 
 The 5-page threshold is a heuristic. The real test is whether the query would force you to scan >50% of `index.md` to find candidates — if yes, qmd is cheaper.
 
+### Memory: one shared qmd daemon
+
+A `qmd query` CLI call is a fresh process that loads three GGUF models: the 1.7B query-expander (1.28 GB), the 0.6B reranker (0.64 GB) and the 300M embedder (0.33 GB). Four drafting agents plus the orchestrator's neighbour scan ran five of these at once and crashed the session on this 8 GB machine (2026-10-11).
+
+[`wiki-query.mjs`](scripts/wiki-query.mjs) and [`wiki-retrieve.mjs`](scripts/wiki-retrieve.mjs) therefore go through [`scripts/lib/qmd-client.mjs`](scripts/lib/qmd-client.mjs):
+
+- **Daemon by default.** The first query starts `qmd mcp --http --daemon` on `localhost:8181` and leaves it running. Every caller shares it, so concurrency costs no extra RAM. Measured: five parallel queries, one process, ~0.9 GB. Stop it with `npm run qmd:stop`; `npm run qmd:status` shows whether it runs.
+- **lex + vec, no expansion, no rerank.** The HTTP API takes typed sub-queries, so the expander never loads. Rerank is off by default: on raw lex+vec queries the reranker flattened scores to ~0.63 and dropped the `agent-harness` concept page from the "agent harness" top 8, which plain RRF ranked 3rd. Opt in with `--rerank`.
+- **`--expand`** forces the old CLI route with LLM query expansion. It and the automatic fallback (daemon won't start) run under a global mutex, so only one model set is ever loaded.
+- `qmd update` / `qmd embed` stay CLI. Running them with the daemon up loads a second embedder copy (0.33 GB), which is acceptable; avoid running them while agents fan out.
+
+Direct `npx @tobilu/qmd query` calls bypass all of this. In scripts and agents, use the wrappers.
+
 ### qmd command cheat-sheet
 
 Run via `npx @tobilu/qmd <command>` (no global install needed) or `qmd <command>` after `npm install -g @tobilu/qmd`.
@@ -605,7 +618,7 @@ When a query consumes pages from qmd's results, **bump those pages' `accessed_at
 /wq wat zegt de wiki over dynamische capaciteiten van organisaties
 ```
 
-The command dispatches to [`scripts/wiki-query.mjs`](scripts/wiki-query.mjs) which runs `qmd query --json`, prints the top-N results, **and automatically bumps `accessed_at`** on every concept / entity / synthesis page returned. Sources in the result list are skipped (they don't decay). Language-agnostic — the slash command answers in the query's language.
+The command dispatches to [`scripts/wiki-query.mjs`](scripts/wiki-query.mjs) which queries the shared qmd daemon ([§Memory](#memory-one-shared-qmd-daemon)), prints the top-N results, **and automatically bumps `accessed_at`** on every concept / entity / synthesis page returned. Sources in the result list are skipped (they don't decay). Language-agnostic — the slash command answers in the query's language.
 
 **Route 2 — wiki-query wrapper directly** (for shell, scripts, other agents):
 
@@ -648,7 +661,7 @@ Idempotent — a slug already at today's date is a no-op. Slugs resolve against 
 
 The skill is the operational home of two pieces of §Search and §Retention machinery that `/wq` leaves to the agent:
 
-- **Multi-strategy fusion.** [`scripts/wiki-retrieve.mjs`](scripts/wiki-retrieve.mjs) is the skill's retrieval entry point. It runs `qmd query --json` (relevance) **and** walks `wiki/.graph.json` typed edges from each qmd seed (structure), fuses the two streams with Reciprocal Rank Fusion (graph stream down-weighted so a structural neighbour can't tie a genuine search hit), then re-ranks by §Retention's `effective_confidence` as a *dampener* (relevance sets the order; decay demotes). It emits a JSON **candidate ledger** — the script scores, the agent verdicts. Degrades to qmd-only with a logged `graph_warning` if `wiki/.graph.json` is missing.
+- **Multi-strategy fusion.** [`scripts/wiki-retrieve.mjs`](scripts/wiki-retrieve.mjs) is the skill's retrieval entry point. It queries the shared qmd daemon (relevance) **and** walks `wiki/.graph.json` typed edges from each qmd seed (structure), fuses the two streams with Reciprocal Rank Fusion (graph stream down-weighted so a structural neighbour can't tie a genuine search hit), then re-ranks by §Retention's `effective_confidence` as a *dampener* (relevance sets the order; decay demotes). It emits a JSON **candidate ledger** — the script scores, the agent verdicts. Degrades to qmd-only with a logged `graph_warning` if `wiki/.graph.json` is missing.
 
   ```sh
   node scripts/wiki-retrieve.mjs --json -n 12 "your question"   # ledger (skill default)

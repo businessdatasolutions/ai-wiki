@@ -7,7 +7,7 @@
 // (use / ignore) and turns into an auditable answer trace.
 //
 // Pipeline (see .claude/skills/traceable-wiki-answer/references/trace-schema.md):
-//   1. qmd seeds   — `qmd query <q> --json -n <seeds>`  (hybrid BM25 + vector + rerank)
+//   1. qmd seeds   — lex+vec hybrid via the shared daemon (scripts/lib/qmd-client.mjs)
 //   2. graph hop   — load wiki/.graph.json, walk <hops> of typed edges from each seed;
 //                    order that stream by hop distance (--graph-rank bfs, default) or by
 //                    Personalized PageRank seeded on the qmd hits (--graph-rank ppr)
@@ -37,6 +37,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve, join } from 'node:path';
 import matter from 'gray-matter';
+import { qmdQuery } from './lib/qmd-client.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = resolve(__dirname, '..');
@@ -74,7 +75,7 @@ let CONF_FLOOR = 0.6;
 
 // ----- arg parsing -----
 const USAGE =
-  'Usage: wiki-retrieve.mjs [-n <seeds>] [--hops 1|2] [--no-bump] [--json]\n' +
+  'Usage: wiki-retrieve.mjs [-n <seeds>] [--hops 1|2] [--no-bump] [--json] [--rerank] [--expand]\n' +
   '                         [--today YYYY-MM-DD] [--fusion rrf|cc] [--graph-rank bfs|ppr]\n' +
   '                         [--k-rrf <n>] [--graph-w <0..1>] [--alpha <0..1>]\n' +
   '                         [--ppr-damping <0..1>] [--conf-floor <0..1>] "your question"';
@@ -83,6 +84,8 @@ let seeds = 12;
 let hops = 1;
 let bump = true;
 let rawJson = false;
+let rerank = false;
+let expand = false;
 let today = new Date().toISOString().slice(0, 10);
 const remaining = [];
 for (let i = 0; i < argv.length; i++) {
@@ -100,6 +103,10 @@ for (let i = 0; i < argv.length; i++) {
     bump = false;
   } else if (a === '--json') {
     rawJson = true;
+  } else if (a === '--rerank') {
+    rerank = true; // opt in to qmd's 0.6B LLM reranker (off by default, see lib/qmd-client.mjs)
+  } else if (a === '--expand') {
+    expand = true; // force the serialised CLI path, which runs LLM query expansion
   } else if (a === '--fusion') {
     FUSION = argv[++i];
     if (!['rrf', 'cc'].includes(FUSION)) bail('--fusion must be rrf or cc');
@@ -161,23 +168,12 @@ const DIR_TO_TYPE = {
 };
 
 // ----- Step 1: qmd seeds -----
-const qmd = spawnSync(
-  'npx',
-  ['--yes', '@tobilu/qmd', 'query', query, '--json', '-n', String(seeds)],
-  { cwd: REPO_ROOT, encoding: 'utf8' },
-);
-if (qmd.status !== 0) {
-  console.error('qmd failed:');
-  console.error(qmd.stderr || qmd.stdout);
-  process.exit(1);
-}
+// Via the shared daemon (scripts/lib/qmd-client.mjs) so parallel callers share one model load.
 let parsed;
 try {
-  parsed = JSON.parse(qmd.stdout);
+  parsed = await qmdQuery(query, { n: seeds, rerank, expand, cwd: REPO_ROOT });
 } catch (e) {
-  console.error('failed to parse qmd JSON output:', e.message);
-  console.error('--- raw stdout ---');
-  console.error(qmd.stdout);
+  console.error(e.message);
   process.exit(1);
 }
 const hits = Array.isArray(parsed) ? parsed : parsed.results || [];
@@ -542,4 +538,5 @@ if (bump) {
   }
 }
 
-process.exit(0);
+// exitCode, not process.exit(): exit() kills a piped stdout before it drains (truncated --json at 64 KB).
+process.exitCode = 0;
