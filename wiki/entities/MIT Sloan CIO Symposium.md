@@ -4,10 +4,10 @@ kind: venue
 aliases: ["MIT Sloan CIO Symposium", "MIT CIO Symposium", "CIO Symposium", "MIT Sloan CIO Symposium Videos"]
 tags: [mit-sloan-cio-symposium, mit, cio, cambridge, annual-conference, inquiry-framework, leadership-community]
 since: 2005
-confidence: 0.8
-last_confirmed: "2026-07-15"
-accessed_at: "2026-07-15"
-source_count: 3
+confidence: 0.85
+last_confirmed: "2026-10-12"
+accessed_at: "2026-10-12"
+source_count: 7
 relationships:
   - type: published-by
     target: 2026-05-28-from-event-to-ecosystem-rethinking-how-technology-leaders-build-knowledge-in-the-ai-era
@@ -18,6 +18,18 @@ relationships:
   - type: published-by
     target: 2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16
     via: "the symposium's own weekly podcast (Episode 16), co-hosted by Allan Tate and Irving Wladawsky-Berger"
+  - type: published-by
+    target: 2026-08-26-the-mystery-of-ai-connecting-the-dots-ep-19
+    via: "the symposium's podcast, episode 19; part 1 of the Collective Sensemaking series"
+  - type: published-by
+    target: 2026-09-02-from-conversation-to-institutional-understanding-ep-20
+    via: "the symposium's podcast, episode 20; part 2 of the Collective Sensemaking series"
+  - type: published-by
+    target: 2026-09-15-from-debate-to-inquiry-designing-conversations-worth-preserving-ep-21
+    via: "the symposium's podcast, episode 21; part 3 of the Collective Sensemaking series"
+  - type: published-by
+    target: 2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22
+    via: "the symposium's podcast, episode 22; part 4 of the Collective Sensemaking series"
 ---
 
 # MIT Sloan CIO Symposium
@@ -25,6 +37,7 @@ relationships:
 An **annual leadership conference**, held in Cambridge, MA and now in its 23rd year (2026), bringing together CIOs and data leaders around emerging-technology strategy. Founded in 2005 as a venue for understanding then-new technologies (the internet, e-business); the 2026 theme is *"Human AI synergy — redefining leadership for a transformative future."* **[[Allan Tate]]** is Executive Chair; **[[Irving Wladawsky-Berger]]** co-hosts the symposium's weekly podcast and inquiry series alongside him — both promoted to entities on their second wiki appearance (the weekly podcast source below).
 
 Since 2024 the symposium has run an **inquiry framework** — a structured, multi-session format (frame via scenarios → examine competing interpretive lenses → translate to CIO-level decisions) explicitly designed as an alternative to debate-style programming, aimed at improving *how* leaders think rather than *what* they think. The symposium frames its own evolution as a shift from a one-time annual event to a **year-round knowledge ecosystem** — recordings, then recordings + synopsis + transcript, then + a synthesis of the whole event, with a planned future search-driven UI serving clips on demand.
+The symposium also runs an internal AI workflow on its own content, described by Allan Tate across the four-part **Collective Sensemaking** podcast series (episodes 19–22, Aug–Oct 2026). Every session or podcast transcript is processed under task specifications into a summary, executive insights, host feedback and a **memory record** that links it to related conversations. An index lets a model retrieve the relevant records, and a synthesis across the 2026 symposium's 20 records became that year's report. Tate calls the system the Executive Learning Architecture and describes it as a prototype. The 24th symposium is on 18 May 2027.
 
 Promoted to an entity on its **second wiki source**: the symposium's own pre-event keynote and the [[MIT Sloan Management Review|MIT Sloan Management Review]]-produced eleven-leader compilation are two independent publisher channels documenting the same 2026 event.
 
@@ -33,6 +46,10 @@ Promoted to an entity on its **second wiki source**: the symposium's own pre-eve
 - [[2026-05-28-from-event-to-ecosystem-rethinking-how-technology-leaders-build-knowledge-in-the-ai-era]] — Allan Tate's pre-event keynote (23rd annual, 28 May 2026): the inquiry framework, the CIO-as-designer-of-intelligence-systems reframe, and the symposium's own knowledge-ecosystem evolution.
 - [[2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner]] — eleven-leader compilation filmed at the same symposium (11 June 2026, published by MIT SMR): field-level practitioner takeaways on human-agent collaboration, including a session from [[Michael Schrage]].
 - [[2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16]] — Episode 16 of the symposium's weekly podcast (10 July 2026): the Linux Foundation tech-talent report, Thomas H. Davenport's organizational-capability-over-technology thesis, and the agentic-AI maturity gap.
+- [[2026-08-26-the-mystery-of-ai-connecting-the-dots-ep-19]] — podcast episode 19 (26 Aug 2026): how LLMs work, in lay terms, and "connecting the dots".
+- [[2026-09-02-from-conversation-to-institutional-understanding-ep-20]] — episode 20 (2 Sep 2026): memory records, the 2026 report synthesis, institutional understanding.
+- [[2026-09-15-from-debate-to-inquiry-designing-conversations-worth-preserving-ep-21]] — episode 21 (15 Sep 2026): the Inquiry Framework in full.
+- [[2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22]] — episode 22 (7 Oct 2026): the Executive Learning Architecture and its limits.
 
 ## Mentioned in
 

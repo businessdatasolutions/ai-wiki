@@ -97,3 +97,4 @@ Candidates surfaced by shared `dynamic_capabilities:` cells and shared-event/sha
 
 - *published-by* [[MIT Sloan CIO Symposium]].
 - *supports* [[2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner]] — same event; this keynote frames the model the compilation's leaders speak within.
+  - [[2026-09-02-from-conversation-to-institutional-understanding-ep-20|Episode 20]] describes how the 2026 synthesis named here was produced; [[2026-09-15-from-debate-to-inquiry-designing-conversations-worth-preserving-ep-21|episode 21]] gives the long version of the inquiry framework.

@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-10-11"
-accessed_at: "2026-10-11"
-source_count: 147
+last_confirmed: "2026-10-12"
+accessed_at: "2026-10-12"
+source_count: 148
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -803,6 +803,10 @@ The May 2026 digest's framing line — ***"AI is becoming operational"*** — na
 ## The delivery-side adoption picture (added 2026-08-30)
 
 [[2025-09-23-dora-2025-state-of-ai-assisted-software-development|DORA 2025]] is the largest adoption dataset in the corpus for software specifically: **90% of ~5,000 respondents use AI at work** (up from 76%), **90% of organisations have adopted at least one platform**, and **>80% believe AI increased their productivity** — while **30% report little or no trust in AI-generated code they are nonetheless shipping**. Its central thesis, *"AI doesn't fix a team; it amplifies what's already there,"* and its finding that **internal platform quality correlates directly with the ability to unlock AI value**, are the adoption-side counterparts to this page's process-redesign argument. Governance for action-taking systems now has a reference framework in [[2026-01-22-imda-model-ai-governance-framework-for-agentic-ai|Singapore's IMDA]] — see [[agent-oversight-and-delegation]].
+
+## A 130-person vendor running on its own product (added 2026-10-12)
+
+[[2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free|Ramineni (Fireflies, Oct 2026)]] describes internal use at a company that sells the tool. Fireflies has 130 employees, against competitors he puts at *"500 to a thousand"*, and *"we try to rebuild every process from scratch"*, for engineers and non-engineers alike. Three uses: recall of absent colleagues' reasoning (*"why did he not want to approve this decision a few weeks ago?"*); a support agent trained on the company's own sales and support calls that answers *"at 90% accuracy"* and *"can handle more support tickets than any other human on our team"*; and meetings whose outputs go, through about a hundred MCP connections, straight into Figma, Replit or Lovable. All figures are the CEO's own, without a measurement method, and the company is describing its product.
 
 ## Mentioned in
 

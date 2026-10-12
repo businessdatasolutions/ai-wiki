@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-10-11"
-accessed_at: "2026-10-11"
-source_count: 48
+last_confirmed: "2026-10-12"
+accessed_at: "2026-10-12"
+source_count: 50
 relationships:
   - type: instance-of
     target: generative-ai
@@ -282,6 +282,8 @@ Two terms became first-class vendor vocabulary in 2026 and are worth holding as 
 
 **Updated 2026-09-04.** [[2026-09-03-thurium-wang-google-cloud-graph-engineering-101|Google Cloud's *Graph Engineering 101*]] completes the pair into a three-layer nesting stated in one breath — **harness** (*"everything around the model including its tools, memory and guardrails"*) contains the **loop** (*"the cycle of the agent running inside that harness"*) which sits as a node in the **graph** (*"the organization chart"*, of agent nodes and deterministic function nodes, with state passed along the edges). Three patterns come with it — **fan-out**, **join**, **router** — and a definition by contrast: a graph is *engineer-specified* control flow over nodes that *"don't need to know what happened before"*, as opposed to an **agent swarm**, where *"each agent just gets its own personality"* and you *"just throw the problem to them."* The construct now has its own page: [[concepts/graph-engineering|graph-engineering]].
 
+[[2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free|Ramineni (Fireflies, Oct 2026)]] describes two agents an application company has shipped: a support agent trained on its own sales and support calls, and voice agents that *"go in and take meetings on your behalf"* (screening interviews, customer surveys, sales discovery calls), which need a separate low-latency model. Both claims are the vendor's own.
+
 ## Mentioned in
 
 ```dataview
@@ -310,5 +312,7 @@ By [[Cloudflare]]'s network measurements, **more than half of Internet traffic i
 Two October 2026 sources separate the agent from its interface. [[2026-10-01-chesky-silicon-valley-girl-people-who-know-what-to-build-with-ai|Chesky (Airbnb)]]: *"Agent is an evolution of an application … A chatbot is a user interface. And I think because most agents are chatbots, we conflate the two."* For travel and shopping, which are visual, comparative and *"multiplayer"*, he argues the chat window is the wrong interface (*"a jet engine on the back of a bicycle"*), and Airbnb's launch puts AI into search, listing summaries and comparison instead. What makes agents valuable, he says, is that *"they're interoperable. So one agent can talk to another agent."*
 
 [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet|Collison (Stripe)]] names the other half: an agent that knows your address and payment details, and can operate a computer, needs no integration from the site it uses. Computer use is *"the ultimate backwards compatibility layer for the real world … How long would you need to wait for the DMV to add an MCP?"* He expects it to be seen as the next discrete step after transformers, LLMs and RL. Both name the same consumer agents (Instinct, Meta's Muse) as early examples. See [[agentic-web]] for what this does to commerce.
+
+[[2026-09-14-klein-browserbase-navigate-2026-keynote-agents-will-use-the-internet|Klein (Browserbase)]], who opened the same conference, describes what computer use takes to run in production. It needs cloud browsers, a framework that drives them, a model gateway that routes cheap and hard steps to different models and caches repeated actions, and an identity layer, because sites block unsigned automated traffic and most useful systems sit behind a login. His summary is *"the models are ready, but the web isn't."* Three customer cases, all vendor-reported, show the work these agents do: fetching receipts from merchant portals that have no API (Ramp), replacing a hand-maintained Playwright integration (Checkr), and reading insurance claim status for healthcare providers (Commure). In April, [[2026-04-25-masad-replit-ceo-only-two-jobs-left|Masad]] had called computer-use agents a capability *"mystery"*. Klein places the remaining gap on the web's side, not the model's.
 
 [[2026-10-09-mollick-hbr-how-ai-is-changing-strategy-four-skills|Mollick (HBR IdeaCast)]] adds a correction of his own: *"I thought agents would be harder to pull off than they are"*: agent swarms self-organise because agents, unlike people, share knowledge and goals, so coordination is easier than he expected. He describes delegating to agents as being a *"conjurer"*: writing something like an RFP and receiving finished work.

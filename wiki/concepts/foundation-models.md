@@ -3,9 +3,9 @@ type: concept
 aliases: ["foundation model", "foundation models", "FM", "frontier model", "frontier models"]
 tags: [foundation-models, generative-ai, ai-research]
 confidence: 0.88
-last_confirmed: "2026-10-03"
-accessed_at: "2026-10-03"
-source_count: 28
+last_confirmed: "2026-10-12"
+accessed_at: "2026-10-12"
+source_count: 30
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -216,3 +216,7 @@ Two September-2026 sources give opposite-looking pictures of market structure.
 - [[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over|Krishna / IBM on Bain's Winning with AI, September 2026]]: enterprises will live in an **"and world"** of several LLMs plus open-weight models, chosen for technical, political or diversity reasons.
 
 They are not strictly in conflict. Swisher predicts the number of labs training frontier models; Krishna describes the number of models an enterprise deploys, many of them open-weight derivatives. But if Swisher is right, the *frontier* choice in Krishna's "and world" narrows to two suppliers, and the open-weight tier becomes the main source of variety.
+
+## A non-specialist account of scale and post-training (added 2026-10-12)
+
+[[2026-08-26-the-mystery-of-ai-connecting-the-dots-ep-19|Episode 19 of the MIT Sloan CIO Symposium podcast]] gives the lay version of the story told technically above. [[Irving Wladawsky-Berger]] calls fluent conversation *"almost an emergent behavior from scale"* and describes post-training as *"socializing the model"*, because *"the model in the wild was too wild for humans"*. His image is domesticated wolves. [[2026-09-02-from-conversation-to-institutional-understanding-ep-20|Episode 20]] asks why scale should produce qualitatively new capabilities, and he answers *"No, I don't think we know."* The episodes also carry a model's own account of how it edits text (pattern recognition across *"lots and lots of sentences"*); that is a model's self-report, not evidence of its mechanism.

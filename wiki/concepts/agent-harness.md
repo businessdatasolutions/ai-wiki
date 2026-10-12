@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.95
-source_count: 114
+source_count: 115
 relationships:
   - type: part-of
     target: ai-agents
@@ -20,8 +20,8 @@ relationships:
   - type: uses
     target: small-language-models
     via: "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed"
-last_confirmed: "2026-10-11"
-accessed_at: "2026-10-11"
+last_confirmed: "2026-10-12"
+accessed_at: "2026-10-12"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -828,6 +828,17 @@ Everything above this line was written by people with a stake in the word: labs 
 **A third vendor puts its own product on the harness side of the boundary.** *"GitHub Copilot itself is the harness… GitHub Copilot is the harness for the SDK to run agents with various models."* [[GitHub]] now joins [[2026-05-07-anthropic-managed-agents-decoupling-brain-hands|Anthropic]], [[2026-04-22-cheung-ippolito-secchi-google-agents-cli|Google]] and [[2026-02-11-lopopolo-codex-harness-engineering|OpenAI]] in describing its product as the harness and the model as the swappable part underneath — the *model is rented, harness is owned* framing stated by a fourth competitor without prompting.
 
 The episode's own summary of the cost is the line to keep: *"I went into this being just like, wow, we're really going to teach people. And now I'm just like: do I know anything?"* — from a senior director of developer advocacy, after the harness segment.
+
+## A domain harness sold on cost: routing and action caching for the web (added 2026-10-12)
+
+[[2026-09-14-klein-browserbase-navigate-2026-keynote-agents-will-use-the-internet|Klein (Browserbase, Navigate 2026)]] makes the *harness over model* claim as a pricing claim: *"with a great harness, Browserbase Agents is able to match frontier-level intelligence at half the cost because it's not just using inference every time."* The harness parts he names are specific to the browsing domain:
+
+- **Per-step model routing.** Hacker News pages go to *"a pretty dumb model"*; taxes and iframes go to a frontier model. This is [[small-language-models|model routing as a harness decision]] applied per action, not per run (compare `ModelRouterMiddleware` above, which routes once per run).
+- **Action caching.** Repeated actions are replayed without inference, using *"a proprietary caching strategy that actually won't blow up the cache keys if the page subtly changes."* This caches the agent's *actions*, a layer above the prompt-prefix caching recorded earlier on this page.
+- **Colocated execution.** Agent-written code runs next to the browser because round-trip latency *"is the bane of performance."*
+- **Trace-driven self-improvement.** The managed agent *"will optimize over time … by looking at the traces it's generated."*
+
+The supporting chart shows Browserbase Agents level with Fable 5.1 at 92%, ahead of GPT 5.6 Sol (85%) and Gemini 3.5 (74%). It names no benchmark and shows no cost. Treat it as a vendor's claim that harness work can stand in for model spend, not as a measurement.
 
 ## Mentioned in
 

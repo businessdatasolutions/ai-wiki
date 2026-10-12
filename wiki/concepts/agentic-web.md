@@ -1,12 +1,12 @@
 ---
 type: concept
 title: Agentic web
-aliases: ["agentic web", "agentic Internet", "agentic internet", "zero-click", "zero-click search", "Google Zero", "AI crawlers", "AI crawler traffic", "content licensing for AI", "pay-per-crawl", "agentic commerce", "machine payments", "x402"]
-tags: [agentic-web, aeo, answer-engines, agentic-internet, zero-click, google-zero, referral-traffic, ai-crawlers, training-crawlers, bot-traffic, content-licensing, pay-per-crawl, x402, web-bot-auth, agentic-commerce, open-web, publishers, search-to-answers]
+aliases: ["agentic web", "agentic Internet", "agentic internet", "zero-click", "zero-click search", "Google Zero", "AI crawlers", "AI crawler traffic", "content licensing for AI", "pay-per-crawl", "agentic commerce", "machine payments", "x402", "agent identity", "Web Bot Auth"]
+tags: [agentic-web, aeo, answer-engines, agentic-internet, zero-click, google-zero, referral-traffic, ai-crawlers, training-crawlers, bot-traffic, content-licensing, pay-per-crawl, x402, web-bot-auth, agentic-commerce, open-web, publishers, search-to-answers, browser-agents, computer-use, agent-authentication]
 confidence: 0.75
-last_confirmed: "2026-10-11"
-accessed_at: "2026-10-11"
-source_count: 7
+last_confirmed: "2026-10-12"
+accessed_at: "2026-10-12"
+source_count: 8
 relationships:
   - type: depends-on
     target: ai-agents
@@ -96,13 +96,23 @@ Sections 1–5 describe what the shift costs the sites that used to receive the 
 
 Stripe and the conference host (Browserbase, which sells computer-use infrastructure) both benefit from this thesis; the talk gives no adoption figures.
 
+### 8. The agent-infrastructure side: teach agents the existing web (added 2026-10-12)
+
+[[2026-09-14-klein-browserbase-navigate-2026-keynote-agents-will-use-the-internet|Paul Klein IV (Browserbase, Navigate 2026 keynote)]] describes the shift from the side that sells agents their browsers. His thesis is that *"the models are ready, but the web isn't"*. He does not expect the web to be rebuilt for agents: *"Waymo didn't have to rebuild the roads for AI. They just taught it how to drive like a human."* Browserbase says its platform has run 500 million sessions but reached only *"7% of the active web"*. It sells browsers, search and fetch APIs, an open-source automation framework (Stagehand) and a routing and caching model gateway. Two points connect to sections 2 and 4:
+
+- **Web Bot Auth from the issuer's side.** Section 4 describes [[Cloudflare]] verifying signed agents. Klein describes Browserbase signing them: *"an identification card for your agent"* that Browserbase issues. He names Cloudflare, Vercel and reCAPTCHA as accepting that verified traffic. This answers the bot-detection question in section 7 with a product.
+- **Logins are the next gate.** *"Most systems on the internet actually live behind authentication."* Browserbase partners with Okta, 1Password and Clerk, and its Agentic Identity Suite (early access) manages an agent's secrets, inbox, cookies and sessions. Its stated principle is *"if a human is allowed to do a task so should their agent."*
+
+Klein also gives the case against a protocol-only web: agents that can reach only API and MCP endpoints would make *"a walled garden of … gatekeepers and tollkeepers"*, leaving out *"the DMV, my local barbershop."* A browser vendor gains from this argument, and an identity issuer that sites are asked to trust is itself a gatekeeper of a kind.
+
 ## Debates and supersession
 
 - **How much of the evidence is independent?** Three of the original five sources are vendors with a stake. Cloudflare sells the blocking, analytics and payment products, and HubSpot sells the marketing software for the new playbook. Cloudflare's network data is real measurement from an unusually large vantage point, but it is neither audited nor reproducible outside the company, and "traffic" is not defined. The two predictions (Ognibeni, DFI) are independent but are predictions. Four of the six sources are vendors once HubSpot's AEO session is counted. **Confidence is held at 0.75**, the ceiling the schema sets for vendor sources without independent replication. A third-party measurement of referral traffic, such as the Pew click-through study the Cloudflare deck cites as its anchor, is the ingest target that would move it.
 - **Is the traffic loss caused by AI answers, or does it coincide with them?** Cloudflare attributes category-level declines to AI consumption. Its data shows human traffic falling and crawler traffic rising together, which is consistent with substitution but also with other causes: seasonality, bot-classification changes, and shifts in how Cloudflare's customer base is composed. HubSpot's own account is causal but single-firm. **Open.**
 - **Does licensing replace referral revenue?** Cloudflare says no, not yet. No source in the corpus sizes the licensing market against the referral economy it is meant to replace. **Open.**
 - **Is AEO measurement, or a vendor's model of the engines?** The AEO claims (mentions across the web as the main factor, the citation shares by source type) come from HubSpot/XFunnel's own analysis without method, and the outcome figures (+170% MQLs, +82% closed deals for adopters) do not separate what AEO did from which customers chose to adopt it. The persona × stage prompt matrix is a method; the ranking factors are a vendor's claim. **Open** until an independent study of what AI answers cite is ingested.
-- **Who captures the relationship?** Ognibeni and DFI frame the agent as a disintermediator that takes over the customer relationship. Cloudflare frames itself as a neutral market maker that keeps publishers paid. These are different predictions about where value settles: with the agent operator, the infrastructure layer, or the content owner. The corpus cannot yet distinguish them. [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet|Collison]] (Oct 2026) adds a fourth: AI discovery becomes the new aggregator but widens reach for the long tail of sellers under it.
+- **Who captures the relationship?** Ognibeni and DFI frame the agent as a disintermediator that takes over the customer relationship. Cloudflare frames itself as a neutral market maker that keeps publishers paid. These are different predictions about where value settles: with the agent operator, the infrastructure layer, or the content owner. The corpus cannot yet distinguish them. [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet|Collison]] (Oct 2026) adds a fourth: AI discovery becomes the new aggregator but widens reach for the long tail of sellers under it. [[2026-09-14-klein-browserbase-navigate-2026-keynote-agents-will-use-the-internet|Klein (Browserbase, Sep 2026)]] adds a fifth candidate: the issuer of agent identity, which vouches for agents to sites and negotiates their access.
+- **Rebuild the web, or teach agents the old one?** Cloudflare's sources describe new rails on the site side (pay-per-crawl, x402). [[2026-09-14-klein-browserbase-navigate-2026-keynote-agents-will-use-the-internet|Klein]] argues agents should use the web as it is, through browsers, without waiting for APIs or MCP servers. [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet|Collison]] makes the same DMV argument at the same conference. Web Bot Auth sits between the two: pages stay as they are, but the site or its CDN must verify signatures. Both positions come from vendors whose products depend on the answer. **Open.**
 
 ## Related concepts
 
@@ -121,4 +131,5 @@ Stripe and the conference host (Browserbase, which sells computer-use infrastruc
 - [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook]] — one firm's traffic −80% with leads +20%, and the playbook that followed.
 - [[2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china]] — the prediction that agents kill search-driven e-commerce first.
 - [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet]] — agentic commerce from the payments side: AI discovery as aggregator, bot detection, computer use.
+- [[2026-09-14-klein-browserbase-navigate-2026-keynote-agents-will-use-the-internet]] — the agent-infrastructure side: browsers for the existing web, Web Bot Auth from the issuer's side, agent logins and the walled-garden argument.
 - [[2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells]] — the incumbent retailer's fear of agentic disintermediation.

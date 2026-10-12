@@ -70,11 +70,14 @@ A ~29-minute keynote conversation on the **Browserbase** channel, published 5 Oc
 - [[2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook|Amiel & Sanders (HubSpot)]] give the brand-side practice for the "new point of aggregation" Collison describes; see [[answer-engine-optimization]].
 - [[2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet|Cloudflare's one-year report]] measures the non-human traffic behind Collison's bot-detection question, and builds one answer to it (Web Bot Auth). Stripe co-founded the x402 foundation with Cloudflare and Coinbase, per [[agentic-web]].
 - [[2026-10-01-chesky-silicon-valley-girl-people-who-know-what-to-build-with-ai|Chesky (Silicon Valley Girl)]], from the same batch, names the same personal agents (Instinct, Muse) and argues that chat is the wrong interface for commerce.
+- [[2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free|Ramineni (Fireflies)]], on the same channel two days later, describes routing across seven to ten model providers and a move from seat to usage pricing, the two practices behind Stripe's OpenRouter and Metronome acquisitions.
+- [[2026-09-14-klein-browserbase-navigate-2026-keynote-agents-will-use-the-internet|Klein (Browserbase), the conference's opening keynote]], gives the host's own case for computer use. It uses the same DMV example and offers a product answer (Web Bot Auth signing) to the bot-detection question Collison raises.
 
 ## Linked entities and concepts
 
+- Entities: [[Browserbase]] (channel; promoted 2026-10-12 on its second and third sources).
 - Concepts: [[agentic-web]], [[ai-agents]], [[answer-engine-optimization]], [[jagged-frontier]], [[enterprise-ai-adoption]].
-- **Dangling** (single-source mention, deferred): John Collison, Molly O'Shea, Stripe, Browserbase.
+- **Dangling** (single-source mention, deferred): John Collison, Molly O'Shea, Stripe.
 
 ## Debates and supersession
 

@@ -3,9 +3,9 @@ type: concept
 aliases: ["LLM Wiki", "LLM-Wiki", "llm wiki", "Karpathy's LLM Wiki", "LLM-maintained wiki", "compounding wiki"]
 tags: [llm-wiki, knowledge-compilation, three-layer-architecture, ingest-query-lint, agent-memory, claude-md, knowledge-compounding, agentic-knowledge-base]
 confidence: 0.93
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
-source_count: 11
+last_confirmed: "2026-10-12"
+accessed_at: "2026-10-12"
+source_count: 13
 relationships:
   - type: part-of
     target: agent-harness
@@ -254,3 +254,20 @@ The closing case is the smallest instance and the most pointed: a father built *
 Three disciplines, reached independently by a venture-accelerator CEO running his own tooling: **provenance** (every claim traceable to where it came from), **conflict resolution** (two facts, recency wins), and a **scheduled sweep** for staleness. This wiki's answers are the `raw:` field and citation-per-claim, the `## Debates and supersession` section plus the [[concepts/warner-wager-process-model|supersession protocol]], and the retention decay curve with `accessed_at`.
 
 The convergence is worth noting precisely because Tan is not describing a knowledge base as a product — he is describing what goes wrong when *"a markdown file is an employee"* and there are a few hundred of them. The corpus now has this arrived at from three directions: [[2026-08-06-garry-tan-own-your-intelligence|GBrain at ~220,000 pages]], [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum's]] hand-maintained context files, and this. **The bottleneck in agent-run work is not agent capability; it is stale, conflicting context with no provenance.**
+
+## A related architecture at a conference community (added 2026-10-12)
+
+[[2026-09-02-from-conversation-to-institutional-understanding-ep-20|Episode 20]] and [[2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22|episode 22]] of the [[MIT Sloan CIO Symposium]] podcast describe a system [[Allan Tate]] built for the symposium's own recorded conversations. It shares this page's topic: a model maintaining a persistent knowledge store outside itself. What the two describe, side by side:
+
+| | Tate's Executive Learning Architecture | LLM Wiki (this page) |
+| --- | --- | --- |
+| Unit of memory | One **memory record** per conversation: what happened, key themes, pointers to related conversations | Topic pages (sources, entities, concepts) compiled from raw sources |
+| Where memory lives | Plain files on Google Drive, *"not within the actual LLM"* | Markdown files in a repository |
+| Finding the right memory | An index; the model selects relevant records into context (*"a web of pointers to relevant memories"*) | `index.md`, wikilinks, and search |
+| Instructions | **Task specifications** per output, plus **operating principles** | The schema file (`CLAUDE.md`) |
+| Disagreement and revision | Records keep minority views; conclusions stay provisional; claims are checked against multiple sources | `## Debates and supersession`; the supersession protocol |
+| Human role | Humans decide which interpretations are *"valid… useful and worthy of preservation"* | The user curates sources and directs; the model maintains |
+| Model dependence | Stated to be model-independent; the model is *"replaceable"* | Not tied to one model |
+| Stated open problems | Consolidating obsolete records; a more complex index at thousands of records; probably an agentic system | Scale ceiling and retrieval (see *Open questions* above) |
+
+Tate describes the system as a small-team prototype with no evaluation of its outputs beyond the hosts' own reading. The episodes do not mention Karpathy's gist or the LLM Wiki pattern.

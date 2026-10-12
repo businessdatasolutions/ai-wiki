@@ -3,9 +3,9 @@ type: concept
 aliases: ["open source AI", "open-source AI", "open-weight models", "open weights", "open models", "own vs rent AI"]
 tags: [open-source-ai, open-weight-models, own-vs-rent, ai-sovereignty, concentration-of-power, china-open-models, safety-through-transparency, hugging-face]
 confidence: 0.9
-last_confirmed: "2026-10-08"
-accessed_at: "2026-10-08"
-source_count: 25
+last_confirmed: "2026-10-12"
+accessed_at: "2026-10-12"
+source_count: 26
 relationships:
   - type: supports
     target: ai-sovereignty
@@ -275,3 +275,9 @@ The prescription is weaker than owning weights. It is a **model-neutral harness*
 [[2026-10-04-chu-liu-dw-the-dip-how-china-is-viewing-the-ai-race|Claire Chu (Janes) on DW's The Dip (Oct 2026)]] describes open weights from the supply side, as a geopolitical strategy: *"rather than competing on high-end superiority, Chinese providers are marketing affordability, adaptability of their open-source and open-weight AI models."* Countries that make AI a national priority build on Chinese models *"to reduce the cost and… to close a technical gap,"* and Chinese firms partner with local universities, operators and governments. Her examples: projects in Kenya *"built on the backs of Chinese models"*, factories in Vietnam and Indonesia (anecdotal), Huawei upskilling teachers in Nigeria, and a Kazakh national AI platform run with 01.AI. Asked what Chinese firms gain, she points to Beijing's wish to leapfrog after missing earlier generations such as software, and to getting in first.
 
 The page's other sections give buyers' reasons for open weights (cost, control, customisation). This one gives a provider's: open weights as a way to win adoption and set standards in markets that, in her view, the US has overlooked. The usage figures in [[2026-09-18-bloomberg-originals-how-china-plans-to-win-global-ai-race|Bloomberg Originals]] (global use of Chinese models passing US models in June 2026) are the same trend in numbers; Chu adds none of her own. An analyst's account; confidence unchanged.
+
+## An application company's version: open weights pay for the free tier (added 2026-10-12)
+
+[[2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free|Ramineni (Fireflies) on Browserbase's Navigators, Oct 2026]] gives the buyer-side cost argument from an application company rather than a platform. As open weights improved, Fireflies could try different models for summarisation and other tasks, and *"all of the cost benefits … we can give it back to users"*: unlimited recording, transcription and summaries on the free tier, capped only by storage. He still works with Anthropic and OpenAI (*"we process a trillion tokens on OpenAI"*) and routes across seven to ten model and speech providers. Two of his reasons for routing belong to this page: enterprises that *"want to have their entire system run … on their own private cloud"*, and *"the flexibility to switch between different providers"* at scale. He also wants on-device models for an always-on assistant: *"the quality is great, but really the cost savings makes it possible to do a lot more and run way more tokens."*
+
+The host, [[Browserbase]]'s Paul Klein IV, gives the model-neutral reason: *"I don't want my data to be tied to one single model,"* so the switching cost between models should be *"as low as possible … especially as the open source becomes more and more competitive."* This is the layer-choice hedge in the section above, stated by two founders with a stake in it. No figures; confidence unchanged.

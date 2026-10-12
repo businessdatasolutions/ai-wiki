@@ -3,9 +3,9 @@ type: concept
 aliases: ["small language model", "small language models", "SLM", "SLMs", "SLM-first", "heterogeneous agentic systems"]
 tags: [small-language-models, slm, agentic-ai, ai-agents, inference-economics, edge-deployment, quantization, model-specialization, fine-tuning, open-weight-models, tool-calling, function-calling, heterogeneous-agents]
 confidence: 0.75
-last_confirmed: "2026-10-05"
-accessed_at: "2026-10-05"
-source_count: 11
+last_confirmed: "2026-10-12"
+accessed_at: "2026-10-12"
+source_count: 12
 relationships:
   - type: instance-of
     target: foundation-models
@@ -147,3 +147,7 @@ This page argues from **size**: a small model is enough for the narrow calls an 
 - **Routing** among agents, models, skills or tools.
 
 Two additions to the section above. First, LangChain's gateway now hosts a second decision model, **SemIf**, described as open source. Chase claims *"a massive explosion in these open source decision models since Jev launched"* but names no other. Second, the slide's worked example shows the output type concretely: a support message scored **0.999** on an `is_urgent` question by `jev-1.13.0`. Jev's size is still undisclosed and the *20–200x faster, 40–400x cheaper* range is still TypeSafe's, so this page's *specialised, not necessarily small* reading stands. Confidence unchanged.
+
+## Routing by task at an application company (added 2026-10-12)
+
+[[2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free|Ramineni (Fireflies, Oct 2026)]] describes routing across *"almost 7 to 10 different model providers, speech providers"*, chosen per task: async versus real-time speech models, a separate model for live sales coaching, and a low-latency model for voice agents that must cope with background noise and a rambling caller. His summary of the design rule: *"I don't need to distill the entire world to go solve something as simple as summarization. But if I'm trying to do a more agentic difficult task … that's where I might need to use a more powerful model."* He also wants models that run on the user's phone or desktop for an always-on assistant. The argument matches [[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune|Goydan's]] buyer-side version above, here from a company that runs the routing. No figures; confidence unchanged.

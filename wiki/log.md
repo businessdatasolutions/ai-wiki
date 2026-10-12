@@ -10,6 +10,26 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-10-12] ingest | Six videos: Browserbase's Navigate keynote (Klein) and Navigators episode (Ramineni, Fireflies), and Tate & Wladawsky-Berger's four-part Collective Sensemaking series (MIT Sloan CIO Symposium); 9 verified stills
+
+The user sent six YouTube links. None was already in the wiki.
+
+**New source pages (6):**
+
+- [[2026-09-14-klein-browserbase-navigate-2026-keynote-agents-will-use-the-internet]] — 36 visuals scanned, 9 published (platform stack, APIs, model-gateway claim, customer cases, benchmark chart, Web Bot Auth ID card). Gemini misreadings corrected against the pixels: it supplied slide text for three camera shots with no slide in frame, read "GPT 5.0" for GPT 5.6 Sol, and described a fully built animation that the frame shows half-built.
+- [[2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free]] — no stills (interview, title cards only).
+- [[2026-08-26-the-mystery-of-ai-connecting-the-dots-ep-19]], [[2026-09-02-from-conversation-to-institutional-understanding-ep-20]], [[2026-09-15-from-debate-to-inquiry-designing-conversations-worth-preserving-ep-21]], [[2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22]] — no stills (split-screen video calls, confirmed from storyboard sprites before any Gemini call).
+
+**New entity:** [[Browserbase]] (`author:` on three sources now). Paul Klein IV stays dangling: he speaks on both Browserbase sources, but only on his own company's channel.
+
+**Updated:** concepts [[agentic-web]] (new §8, a debates bullet; confidence held at 0.75 as a vendor source), [[agent-harness]], [[ai-agents]], [[open-source-ai]], [[vibe-coding]], [[small-language-models]], [[enterprise-ai-adoption]], [[llm-wiki]] (side-by-side table with Tate's Executive Learning Architecture, shared topic only; confidence unchanged), [[dynamic-capabilities]], [[foundation-models]]; entities [[Allan Tate]] and [[Irving Wladawsky-Berger]] (2 → 6 sources; the channel's own descriptions settle the spelling of both names), [[MIT Sloan CIO Symposium]] (3 → 7), [[Cloudflare]] (mention only); synthesis [[organizational-frameworks-for-ai-adoption]] (Related pages only); reverse links on the Collison, Tate keynote and Ep. 16 pages.
+
+**Edges worth a look:** Ramineni `contradicts` [[2026-07-06-sevilla-emarketer-custom-ai-coded-apps-trim-saas-expenses]] on replacing CRM SaaS with AI-coded apps (turns on firm size). Klein `contradicts` [[2026-04-25-masad-replit-ceo-only-two-jobs-left]] on where the computer-use bottleneck sits (model capability or web access). Ep. 22 `supports` Ep. 16 is an inference: Ep. 22 cites a memory record of "an earlier episode" on the Linux Foundation report without naming it.
+
+**Acquire notes.** The transcript panel rendered for the keynote only. The other five came from yt-dlp VTT captions, built with the skill's `to_markdown()`; all six pass the gates (last caption within 12 s of the end, no gap over 3 min, no duplicates). The four MIT Sloan videos carry AI-dubbed audio tracks: plain `en` returned HTTP 429 repeatedly, while `en-orig` (the original English audio) downloaded at once. Remote frame seeking returned 403 with the `.myenv` yt-dlp, so storyboard sprites (`-f sb1`) served as the free visual probe. `extract_stills.py` failed twice: first `.myenv`'s google-genai 1.15.0 has no `interactions` API, then the same version reported a missing key although the key was set. It ran under pyenv 3.12.8 (genai 2.26.0, newer yt-dlp), and stream seeking worked there with no download (108,664 tokens). The ArcKit plugin's file-protection hook blocks file names containing "token", so Ep. 19's slug drops *next-token-prediction* (`…-the-mystery-of-ai-connecting-the-dots-ep-19`) for both the raw and the wiki file.
+
+**Source quality.** All six transcripts are auto-generated captions, not ASR-cleaned at acquire; quotes are corrected for names only. Every figure in the two Browserbase sources is vendor-reported. The MIT series describes a self-built prototype with no outcome data, which its hosts say themselves. The descriptions of Ep. 19 and 20 say "three-part"; the series has four parts.
+
 ## [2026-10-11] ingest | Five on AI strategy, agents and trust: Chesky (Airbnb), Collison (Stripe), Mollick (HBR), LangChain Labs on agent evals, and the KPMG/Melbourne trust survey; 16 verified stills
 
 The user sent six links: five YouTube videos and a PDF. One video (`eM3lZt3UOcw`, Reuters *AI at work*) was already in the wiki as [[2026-10-07-richardson-reuters-econ-world-ai-at-work]], stills included; it was not re-fetched.

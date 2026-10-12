@@ -231,3 +231,4 @@ Of the ten frameworks:
 - [[automation-vs-augmentation]] — load-bearing distinction inside Anand-Wu's 2×2 quadrants
 - [[dynamic-capabilities]] — academic-strategy bridge that none of the 10 frameworks engage with directly
 - [[syntheses/harness-thinning-what-persists|harness-thinning-what-persists]] — sibling synthesis from the same 2026-07-15 batch, at the runtime-engineering layer rather than the organizational layer
+- [[2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22|MIT Sloan CIO Symposium, episode 22]] — a single practitioner prototype on the organizational-learning layer: recorded conversations turned into indexed memory records with human review. No outcome data; not added to Sources consulted.

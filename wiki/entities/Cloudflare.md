@@ -40,6 +40,7 @@ These sources mention Cloudflare without linking here:
 - **Mission.** [[2026-05-10-ries-lennys-force-destroys-companies-within|Ries]] uses Cloudflare's defence of pro-democracy protesters, when larger firms declined, as the book's mission-emergence case.
 - **Tools.** O'Reilly's Radar Trends notes its *Markdown for Agents* HTML-to-markdown service ([[2026-03-03-loukides-radar-trends-march-2026|March 2026]]) and the EmDash WordPress alternative ([[2026-05-05-loukides-radar-trends-may-2026|May 2026]]).
 - **In a demo.** A Cloudflare Worker is the CORS proxy in [[2026-04-18-mysore-medium-wikizz-extending-karpathy-llm-wiki|WikiZZ]].
+- **Web Bot Auth, from the issuer's side.** [[2026-09-14-klein-browserbase-navigate-2026-keynote-agents-will-use-the-internet|Klein (Browserbase)]] names Cloudflare, with Vercel and reCAPTCHA, as accepting Browserbase's signed agents.
 
 ## Open questions
 

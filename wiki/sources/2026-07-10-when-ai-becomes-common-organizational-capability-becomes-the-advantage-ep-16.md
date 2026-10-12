@@ -123,3 +123,4 @@ Candidates surfaced by shared `dynamic_capabilities:` cells, shared people, and 
 - *supports* [[2026-05-28-from-event-to-ecosystem-rethinking-how-technology-leaders-build-knowledge-in-the-ai-era]] — same franchise, same host, same thesis.
 - *supports* [[2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner]] — same symposium ecosystem, Davenport continuity.
 - *supports* [[2026-07-09-catlin-mckinsey-podcast-real-ai-advantage]] — independent corroboration of the capability-over-technology thesis.
+  - [[2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22|Episode 22]] uses a memory record of an earlier episode on the Linux Foundation report as its retrieval example; probably this episode, though the number is not given.

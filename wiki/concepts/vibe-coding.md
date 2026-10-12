@@ -3,9 +3,9 @@ type: concept
 aliases: ["vibe coding", "Vibe coding", "vibe-coding", "vibe-code", "v-coding"]
 tags: [vibe-coding, agentic-engineering, software-3.0, ai-agents, accessibility, hobbyist-coding, karpathy, pm-tooling, prototype-as-influence-tool, december-2025-phase-change, replit, ai-native-builders, post-prompting]
 confidence: 0.95
-last_confirmed: "2026-09-19"
-accessed_at: "2026-09-19"
-source_count: 25
+last_confirmed: "2026-10-12"
+accessed_at: "2026-10-12"
+source_count: 26
 relationships:
   - type: instance-of
     target: software-3.0
@@ -164,3 +164,9 @@ Both are assertions in a vendor co-marketing episode with no measurements attach
 The problem is placed in usage, not in the model: the specification was never fixed, so each prompt redefined the target. That diagnosis points to a specific remedy rather than a general call for discipline, and the remedy now has its own page, [[spec-driven-development]]. His opening line gives the aggregate symptom: *"teams produce code faster but they create software slower."*
 
 The claim that vibe-coded quality gets *"worse and worse"* at scale cites unnamed studies and is not evidence on its own. The [[ai-generated-code-quality]] page holds the measured version.
+
+## "You can't vibe code a CRM": a SaaS founder's answer (added 2026-10-12)
+
+[[2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free|Ramineni (Fireflies, Oct 2026)]] answers the replacement question from the vendor side. He cites *"the bloodbath in the public markets for SaaS companies"* and the view that *"a lot of this is just going to be replaced by some vibe-coded software"*, then: *"I don't think you can vibe code a CRM."* His analogy is storage: if that were true, *"a company like Dropbox or Box wouldn't exist because everyone would say, 'Oh, I'm just going to use an S3 storage bucket.'"* What is hard to replace, he says, is *"how much workflow business logic … needs to exist."* He leaves one case open: whether homebrew software is viable *"in the SMB or mid-market."*
+
+The corpus now holds three sources on this question. [[2026-07-07-sinofsky-amble-a16z-software-in-the-age-of-agents|Sinofsky (a16z)]] places the difficulty in undocumented exception handling, [[2026-09-08-gauch-bcg-so-what-will-ai-agents-replace-your-crm|Gauch (BCG)]] in the data backbone, regulation and security, and Ramineni in business logic. [[2026-07-06-sevilla-emarketer-custom-ai-coded-apps-trim-saas-expenses|Sevilla (EMARKETER)]] reports small firms that did replace Salesforce. The firm-size line that Sevilla draws is the same one Ramineni leaves open. Ramineni sells SaaS, so his answer is not neutral.

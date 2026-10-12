@@ -3,9 +3,9 @@ type: concept
 aliases: ["dynamic capabilities", "dynamic-capabilities", "Teece dynamic capabilities", "sense seize transform"]
 tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, microfoundations]
 confidence: 0.95
-last_confirmed: "2026-09-21"
-accessed_at: "2026-09-21"
-source_count: 46
+last_confirmed: "2026-10-12"
+accessed_at: "2026-10-12"
+source_count: 49
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -178,6 +178,16 @@ Allan Tate's keynote opening the 23rd annual MIT Sloan CIO Symposium is the wiki
 ## Organizational capability as the differentiator, once access to AI is common ([[2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16|Wladawsky-Berger & Tate / MIT Sloan CIO Symposium podcast, July 2026]])
 
 Episode 16 of the same weekly podcast that produced the section above contributes four further cell instances, this time at the **workforce-and-infrastructure** layer rather than the community-ritual layer: `digital-transforming/improving-digital-maturity` (the [[2026-05-01-lf-state-of-tech-talent-global-2026|Linux Foundation]] full-stack skills-gap finding — AI/ML engineering, cybersecurity, FinOps, platform engineering, cloud computing — read as the workforce-maturity gap organizations must close before AI investment pays off); `digital-transforming/redesigning-internal-structures` ([[Thomas H. Davenport|Davenport's]] "redesign work, management and decision making" prescription, quoted at length, plus the reshaping of developer roles toward architecture and systems integration); `digital-seizing/rapid-prototyping` (the "build AI-based pilots that actually work... learn what it takes to bring them into operations" prescription); and `digital-sensing/digital-scenario-planning` (the explicit 5-to-10-year horizon argument — organizational change, unlike technology change, cannot happen in three years). See [[enterprise-ai-adoption]] for the fuller treatment.
+
+## Collective sensemaking: the same community, three more cells ([[2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22|Tate & Wladawsky-Berger / MIT Sloan CIO Symposium podcast, Aug–Oct 2026]])
+
+The four-part Collective Sensemaking series from the same podcast describes the symposium's own AI workflow and adds cell instances at a third layer, the community's memory:
+- `digital-transforming/improving-digital-maturity`: recorded conversations become indexed memory records a model can draw on ([[2026-09-02-from-conversation-to-institutional-understanding-ep-20|episode 20]]).
+- `digital-seizing/strategic-agility`: the stated purpose of keeping dissent and decision history is to lower the cost of changing course, which Tate calls a hypothesis about *"institutional self-correction"* (episodes 20–22).
+- `digital-sensing/digital-scenario-planning`: the Inquiry Framework in its full form, with question rewrites, three lenses and tiers ([[2026-09-15-from-debate-to-inquiry-designing-conversations-worth-preserving-ep-21|episode 21]]).
+- `strategic-renewal/organizational-culture` and `contextual/internal-barriers`: [[Irving Wladawsky-Berger]]'s IBM example and his claim that scaling depends on an organization's willingness to learn (episode 22).
+
+All of it is a self-described prototype on the symposium's own channel; no outcome data is given.
 
 ## An independent second reach for the same organizational shape ([[2026-07-09-nyc-executive-forum-2026-a-leaders-guide-to-agentic-ai|Vachhrajani / AWS NYC Executive Forum, July 2026]])
 
