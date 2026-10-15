@@ -3,9 +3,9 @@ type: concept
 aliases: ["dynamic capabilities", "dynamic-capabilities", "Teece dynamic capabilities", "sense seize transform"]
 tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, microfoundations]
 confidence: 0.95
-last_confirmed: "2026-10-12"
-accessed_at: "2026-10-12"
-source_count: 49
+last_confirmed: "2026-10-15"
+accessed_at: "2026-10-15"
+source_count: 50
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -364,3 +364,15 @@ Three points connect to this page:
 - **`digital-seizing/strategic-agility`, as a reinforcing loop.** Firms good at test-learn-adapt are more likely to be good at mobilization, "because you have to mobilize to learn", and firms good at mobilization are more likely to hold strategy to a high standard. At its most mature, mobilization is routine: "everyone knows what happens next."
 
 This is practitioner research from one firm, and the underlying studies are not ingested. It supports the seizing microfoundation without testing it, so confidence is unchanged.
+
+## Sensing, rewiring, lock-in: the triad renamed for AI (added 2026-10-15)
+
+[[2025-08-05-hbs-ai-institute-mastering-change-resilience-key-to-ai-driven-success|Lakhani, Stave, Ng & Martines]] (HBR, July 2025; read here through the HBS AI Institute's summary) call the missing ingredient in AI value **change resilience**: *"the ability of companies to adapt, reinvent, and scale new ways of working."* They split it into three "muscles", which map one-to-one onto Teece's triad and [[2026-04-28-warner-wager-dynamic-capabilities-digital-transformation|Warner & Wäger's]] digital version:
+
+| Change resilience | Definition (as quoted) | Dynamic-capabilities counterpart |
+| --- | --- | --- |
+| **Sensing** | *"pick up weak technological, competitive, or societal signals early"* | sensing; W&W `digital-sensing/digital-scouting` |
+| **Rewiring** | *"redeploy talent, data, capital, and decision rights in days or weeks, not fiscal quarters"* | seizing; W&W `digital-seizing/strategic-agility` |
+| **Lock-in** | *"codify what a team learns (in process, code, or policy) so the next initiative starts from a higher baseline"* | transforming; W&W `digital-transforming/redesigning-internal-structures` |
+
+The summary cites neither Teece nor W&W. Two things are added. The first is a **time scale**, days or weeks rather than quarters, which W&W leave unstated. The second is **lock-in as codification**, which reads the transforming cell as organisational learning that compounds rather than as a one-off restructuring. The five-step playbook (Learn, Do, Imagine, Act, Care) adds **Care**, employee wellbeing during continuous change, which no W&W cell covers directly. A practitioner framework from HBS's AI Institute arriving independently at the same three-part shape is further evidence that this page's spine is the natural decomposition. It is not new evidence that the capabilities produce AI value: the only number in the summary is BCG's figure that 26% of organisations have achieved value from AI.

@@ -5,7 +5,7 @@ tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omni
 confidence: 0.95
 last_confirmed: "2026-10-15"
 accessed_at: "2026-10-15"
-source_count: 150
+source_count: 152
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -968,3 +968,9 @@ Leadership should change with the phase: close to the action early, for credibil
 ## Innovating by accident, and model parity (added 2026-10-15)
 
 [[2026-10-14-longo-marchiaro-hubspot-unbound-ai-transforming-search|Julian Marchiaro (Merkle) at HubSpot UNBOUND (Oct 2026)]]: *"In many organizations we're still innovating by accident, not by design,"* with AI work *"happening in pockets"* and done *"on the side of their desk"* when *"that's a full-time job."* He also argues against waiting for the best tool: citing a recent Stanford report, models are reaching parity on productivity, so *"just go deep in the stack that you have available. Use the integrations you already have access to."* A consultant's view from a vendor-hosted session; the Stanford report is not named precisely.
+
+## The Frontier Firm initiative's early insights, and change resilience (added 2026-10-15)
+
+The [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|HBS AI Institute's Frontier Firm page]] summarises a forthcoming case by Bojinov, [[Raffaella Sadun]] and Zhang. AI needs *"a first phase of structured, frontline experimentation"*, and *"do not assume that employees would self-discover uses without specific guidance,"* followed by adaptation and scaling. It names four managerial problems: scope (*"wide enough for discovery, narrow enough for scaling"*), selection (people who tolerate *"short-term unproductiveness"*), codifying the learning, and incentives for full adoption. Its **Skill–Will 2×2** sorts employees into Evangelists, Skeptics (whose conversion carries outsized credibility), Learners (*"crucial spreaders of established use cases"*) and Resisters. Agents make all of it harder: more onboarding, *"agent management skills"*, and a sharper split between winners and losers. The claim against self-discovery sits in tension with this page's bottom-up adoption accounts, such as [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum's]] single worker's system becoming a plugin for everyone. The two may differ by population: a self-selected enthusiast against a frontline workforce.
+
+[[2025-08-05-hbs-ai-institute-mastering-change-resilience-key-to-ai-driven-success|Lakhani et al.'s change resilience]] (HBR, July 2025, via the institute's summary) puts the adoption gap down to organisational capacity rather than technology, citing BCG's *"just 26% of organizations have achieved value from AI."* Its answer, sensing, rewiring and lock-in run as a continuous Learn–Do–Imagine–Act–Care cycle, is mapped onto the dynamic-capabilities triad on [[dynamic-capabilities]].

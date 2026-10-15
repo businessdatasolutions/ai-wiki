@@ -4,7 +4,7 @@ aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
 last_confirmed: "2026-10-15"
-source_count: 53
+source_count: 55
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -371,3 +371,9 @@ The list overlaps with entries above (storytelling, judgement, systems thinking)
 ## Hiring for the ability to learn, and why adults resist it (added 2026-10-15)
 
 [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun (HBS, WorkLab, Nov 2025)]] expects the same job to diverge across firms as each reorganises around AI in its own way, so *"three years from now, your job will be different."* Her hiring conclusion: *"you are not hiring for the skills that people have today, but you're hiring people for their ability to learn new skills,"* which businesses say they value but *"often conflate with experience."* The obstacle is on the learner's side. Reskilling is *"bloody hard"* because *"we are asking our workforce… to change who they are,"* and self-paced training platforms that *"look like Netflix"* assume a motivation adults do not reliably have: *"adults are not necessarily interested in learning new things or admitting that they need to learn new things."* What works better in her studies is a mix of hard and soft skills, taught in cohorts, as part of a career journey with a visible promise rather than as a one-off course. For employees who want to matter in such a firm she names a technical base, clarity about how their work fits the firm's direction, and a coalition to learn with.
+
+## Leadership, measured: large, causal, and made of questions (added 2026-10-15)
+
+Most claims on this page say social skills matter. [[2025-08-05-weidmann-xu-deming-measuring-leadership-skills-ai-agents|Weidmann, Xu & Deming (2025)]] measure one of them causally. In a pre-registered experiment, 249 leaders were each randomly assigned to six human teams. Leader identity explained more than half the variation in team performance. A leader 1 SD above average raised team performance by about 0.65 SD, and still about 0.55 SD after controlling for the leader's own task skill, fluid IQ and typing speed. Good leaders solved 53% of problems, weak ones 10%. What predicted the effect was **fluid IQ, emotional perceptiveness and economic decision-making skill**, and in conversation **questions, turn-taking and plural pronouns**. Gender, age, ethnicity, education and the sheer volume of talk did not predict it. The same leaders did equally well directing GPT-4o agents (0.81 corrected correlation), which makes the skill cheap to test: $23 per person against $114 for the human version. Deming's earlier work on the rising labour-market value of social skills (*QJE* 2017) is cited as motivation.
+
+[[2026-05-07-globerson-et-al-scalable-measurement-durable-skills|Globerson et al. (Google)]] measure collaboration skills with AI teammates validated against human raters. This study validates against a causal team outcome, so it is the stronger test that AI-mediated measurement captures the real thing. The [[2026-09-03-hbs-ai-institute-think-youre-a-good-leader-try-leading-an-ai-team|HBS AI Institute's summary]] goes a step further and proposes AI teams as a **practice environment** for leadership, with short repeatable simulations instead of occasional workshops. The paper tests measurement, not training, so the practice claim is untested.

@@ -7,7 +7,7 @@ website: "https://microsoft.com"
 confidence: 0.85
 last_confirmed: "2026-10-15"
 accessed_at: "2026-10-15"
-source_count: 6
+source_count: 7
 relationships:
   - type: employs
     target: GitHub
@@ -27,13 +27,16 @@ relationships:
   - type: published-by
     target: 2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization
     via: "Published on Microsoft's WorkLab podcast, recorded at Harvard Business School — Molly Wood interviews Raffaella Sadun on the Frontier Firm, strategic experimentation and reskilling (24 Nov 2025)"
+  - type: published-by
+    target: 2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about
+    via: "Collaborator in the Frontier Firm AI Initiative hosted by the HBS AI Institute; the page is the institute's, Microsoft is the named partner (captured 15 Oct 2026)"
 ---
 
 # Microsoft
 
 **Microsoft** is the cloud-and-developer-tools giant that owns [[GitHub]] (since 2018), partners deeply with [[OpenAI]], and ships the developer surfaces central to the wiki's agentic-coding corpus: **Azure**, **Azure DevOps**, **Visual Studio Code**, and the **responsible-AI pipeline** that proxies Copilot requests. Promoted to an entity page on 9 June 2026 via **cross-page-presence promotion** (precedent: [[LangChain]], [[Andrej Karpathy]]): Microsoft is a plain-text mention across ~21 source pages, and the [[2025-12-22-randell-gousset-microsoft-agentic-devops-in-real-life|Agentic DevOps keynote]] — published on the **Microsoft Visual Studio** channel — is the first source centred on Microsoft's own agentic developer tooling.
 
-> **Backlinking note.** `source_count` counts formal inbound source-page wikilinks (**6** after the 2026-10-15 ingest), not ~21 (plain-text mentions). Backfilling the historical mentions into wikilinks is a deferred lint cleanup.
+> **Backlinking note.** `source_count` counts formal inbound source-page wikilinks (**7** after the 2026-10-15 ingests), not ~21 (plain-text mentions). Backfilling the historical mentions into wikilinks is a deferred lint cleanup.
 
 ## Role in the wiki
 
@@ -65,7 +68,7 @@ Microsoft's **WorkLab** podcast (host Molly Wood) is a separate publishing chann
 
 WorkLab's second wiki source, [[2026-08-10-miller-worklab-the-ai-shift-most-companies-didnt-see-coming|Miller/Wood (10 Aug 2026)]], is a live recording from the **Copilot Summit** — so the venue as well as the channel is Microsoft's, and the audience is Microsoft customers. Guest **Allie K. Miller** (Open Machine) is an independent advisor rather than an employee, but two of the statistics she cites are Microsoft first-party research: an 1,800-employee study finding a 22-point lift in critical thinking and a 30-point lift in trust of agentic AI where managers model AI use themselves, and the **Work Trend Index** split in which 65% of AI users fear falling behind while 45% say it feels safer to focus on current goals than to redesign their work. The episode's durable contributions are structural rather than statistical — the **frontier unit** (a 60–120-person cross-disciplinary experimentation group on a higher per-head token budget), the **Gremlin-mode** ladder of usage depth, and the **context layer** prescription ("make your whole company queryable").
 
-WorkLab's third wiki source, [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun/Wood (24 Nov 2025)]], was recorded at Harvard Business School and promotes the **Frontier Firm AI Initiative**, a research collaboration between Microsoft and HBS for which Sadun is a research leader. "Frontier Firm" is Microsoft's own term for the AI-first organisation, so here the publisher is a partner in the research being discussed.
+WorkLab's third wiki source, [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun/Wood (24 Nov 2025)]], was recorded at Harvard Business School and promotes the **Frontier Firm AI Initiative**, a research collaboration between Microsoft and HBS for which Sadun is a research leader. "Frontier Firm" is Microsoft's own term for the AI-first organisation, so here the publisher is a partner in the research being discussed. The initiative's own page, [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|hosted by the HBS AI Institute]], describes the collaboration: member firms run experiments with Harvard and Microsoft researchers, starting with sales, IT and finance.
 
 ### Microsoft Advertising — the answer-engine owner selling into the shift
 

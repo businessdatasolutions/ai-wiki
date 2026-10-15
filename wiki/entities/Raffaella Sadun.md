@@ -7,7 +7,7 @@ role: "Charles E. Wilson Professor of Business Administration, Harvard Business 
 confidence: 0.75
 last_confirmed: "2026-10-15"
 accessed_at: "2026-10-15"
-source_count: 2
+source_count: 3
 ---
 
 # Raffaella Sadun
@@ -18,6 +18,7 @@ source_count: 2
 
 - [[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork]] — co-author of the field experiment with 791 Procter & Gamble professionals on generative AI in individual and team product-development work.
 - [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization]] — interviewed by Molly Wood on Microsoft's *WorkLab*. A Frontier Firm is one that invests in strategic experimentation within strategic boundaries. Each firm is on its own J-curve, so she expects divergence across firms. Reskilling is "bloody hard" because it asks people to change who they are, with middle managers as the hinge. Experiments should be designed with their own adoption in mind.
+- [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about]] — co-author, with Iavor Bojinov and Shunyuan Zhang, of the forthcoming case behind the [[HBS AI Institute]]'s Frontier Firm early insights: structured experimentation, the Skill–Will 2×2, agents as a sharpener of winners and losers.
 
 ## Why she is an entity (promotion note)
 

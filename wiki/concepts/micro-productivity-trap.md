@@ -4,7 +4,7 @@ aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-i
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
 last_confirmed: "2026-10-15"
-source_count: 62
+source_count: 63
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -441,3 +441,5 @@ Three sources from one batch restate the trap from where the freed time goes.
 - **The Solow paradox, with one J-curve per firm.** [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun (HBS, WorkLab, Nov 2025)]] compares the present to *"computers everywhere except for the productivity statistics,"* but adds that *"every firm is in its own J curve"* because the gains depend on firm-specific reorganisation. Her expectation of **massive divergence across firms** in how the same job is done is the trap's consequence at the level of the economy: the firms that redesign and the firms that do not drift apart.
 
 Romeo's figure is unpublished think-tank research with no sample or method, and Marchiaro speaks as a consultant; neither moves confidence, which stays at the cap.
+
+**Change resilience (added 2026-10-15, second batch).** [[2025-08-05-hbs-ai-institute-mastering-change-resilience-key-to-ai-driven-success|Lakhani et al. (HBR, July 2025)]] name the escape step *Imagine*: put the whole organisation up for discussion and *"invent new operating models instead of duck-taping existing ones."* They pair it with *lock-in*, codifying what each initiative learns *"so the next initiative starts from a higher baseline."* Read through the institute's summary; the HBR original was not ingested.

@@ -10,6 +10,25 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-10-15] ingest | Frontier Firm material from Harvard: Weidmann, Xu & Deming's AI leadership test (paper), and three HBS AI Institute pages (Frontier Firm initiative, the leadership-test summary, change resilience)
+
+The user sent three HBS AI Institute URLs and an arXiv PDF placed in `raw/papers/`, as a follow-up to the Sadun interview ingested earlier the same day.
+
+**New source pages (4):**
+
+- [[2025-08-05-weidmann-xu-deming-measuring-leadership-skills-ai-agents]] — the PDF (`2508.02966v1.pdf`, kept under its arXiv name, gitignored), converted with `pdftotext`; complete at 19 pages. Tables 1 and 2 are images and were transcribed by hand from the rendered page into the raw file. Table 1 shows positive affect with a small, marginal coefficient on the AI test, slightly softer than the text's "not so with the AI measure."
+- [[2026-09-03-hbs-ai-institute-think-youre-a-good-leader-try-leading-an-ai-team]] — the institute's summary of that paper; filed as its own page with a `depends-on` edge to the paper, and scoped to the one thing it adds (AI teams as a leadership practice environment, untested).
+- [[2025-08-05-hbs-ai-institute-mastering-change-resilience-key-to-ai-driven-success]] — summary of Lakhani, Stave, Ng & Martines (HBR, July 2025); the HBR original is not held. The page drops Doug Ng's name; recovered from the image filename.
+- [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about]] — undated institutional page; filename and `date_published` carry the capture date.
+
+**New entity:** [[HBS AI Institute]] (byline on two pages, host of a third), with a hedged note that it appears to be the renamed Digital Data Design Institute. **Updated entities:** [[Karim Lakhani]] (source_count recomputed to 4), [[Raffaella Sadun]] (3), [[Microsoft]] (7).
+
+**Updated concepts:** [[dynamic-capabilities]] (sensing–rewiring–lock-in mapped onto the triad, in a table), [[agent-fleet-management]] (leading agents measures leading people; "agent management skills"), [[durable-skills]] (leadership measured causally), [[enterprise-ai-adoption]] (Skill–Will 2×2, structured experimentation, change resilience; a noted tension with bottom-up adoption accounts), [[micro-productivity-trap]] (Imagine and lock-in). Confidence unchanged: the paper is a preprint, the rest are institutional summaries.
+
+**Edges:** Weidmann → Globerson et al. (AI teammates as soft-skill measurement), Cybernetic Teammate, Sadun interview. HBS leadership summary `depends-on` Weidmann. Change resilience → Warner & Wäger, Dumra/DBS. Frontier Firm page → Sadun interview, Miller/WorkLab.
+
+**Dangling:** Ben Weidmann, Yixian Xu, David J. Deming, Jen Stave, Doug Ng, Daniel Martines, Iavor Bojinov, Shunyuan Zhang.
+
 ## [2026-10-15] ingest | Three videos: Romeo (Oliver Wyman Forum) on the wrong AI race, Longo & Marchiaro (Microsoft Advertising, HubSpot UNBOUND) on AI search, Sadun (HBS) on WorkLab; 7 verified stills
 
 The user sent three YouTube links. None was already in the wiki.
