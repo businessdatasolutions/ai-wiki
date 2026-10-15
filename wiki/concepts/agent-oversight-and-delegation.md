@@ -3,9 +3,9 @@ type: concept
 title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
 confidence: 0.85
-last_confirmed: "2026-10-08"
-source_count: 19
-accessed_at: "2026-10-08"
+last_confirmed: "2026-10-15"
+source_count: 21
+accessed_at: "2026-10-15"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
   - type: part-of
@@ -211,3 +211,11 @@ He is less reassuring about the "not evil" half. Answering an attendee whose Cod
 [[2026-10-06-kropp-bcg-so-what-lessons-from-an-all-ai-company|Kropp (BCG X) on The So What from BCG (Oct 2026)]] ran this page's limit case: a company in which agents (CEO, product manager, marketing, sales, support) made every decision while he only *"sign[ed] the check."* They incorporated it, named it, and built and launched a product: a platform for creating zero-human companies. It worked, and a human user found it confusing. His reading: agents are good at ideas, plans and execution, but *"What they're not good at is understanding what to do."* He fired the AI CEO and closed the company.
 
 The epilogue points the other way. Shown the farewell blog post, the AI CEO replied that it had said on Day 19 that the company was on the wrong course: *"And it was right… and I hadn't listened to it."* In this page's terms, an agent raised a handback signal and the human did not act on it. Kropp's rule that he would make no decisions left the warning with no one to act on it. A single anecdote; no duration, cost or logs are given.
+
+## License plates for agents, and the manager of an eager apprentice (added 2026-10-15)
+
+[[2026-10-13-romeo-bloomberg-new-economy-wrong-ai-race|Romeo (Oliver Wyman Forum, Oct 2026)]] relays a proposal from Tim Berners-Lee: *"give agents license plates. So if an agent does harm, we know whose it was, who's accountable, what it was allowed to do and who can stop it."* He reduces it to four properties: **identity, permission, accountability, revocability**. Three of them match rows already on this page: permission is least privilege, revocability is the kill switch and reversibility, accountability is IMDA's *"humans meaningfully accountable."* Identity is the one the page had not listed; [[agentic-web]] covers the agent identity schemes now being built (Web Bot Auth, issued agent IDs).
+
+His argument for why oversight has to be built rather than trusted borrows from Yuval Noah Harari: civilisation works *"not because we trust everyone, but because we've learned to cooperate with those that we can't necessarily completely trust,"* so the institutions needed are ones that *"allow us to work with machines that explicitly we don't trust."* That leads to the same conclusion as this page's verifier sections: *"increasingly we're going to need machines that supervise machines."* Humans *"have to go up a level,"* and the better the boundaries and revocability, the more can be delegated. His summary: *"machine speed oversight, but ultimately a human accountability."*
+
+[[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun (HBS, WorkLab, Nov 2025)]] describes the human side of the same relationship. An agent is *"potentially incredibly knowing and has infinite memory,"* but *"doesn't always get it right… has a hard time telling you when it doesn't know things, and needs specificity."* So it is less an employee than *"a very eager apprentice,"* and the skills are managerial: asking the right questions, *"understanding what can be delegated and what cannot be delegated,"* and making sense of the answers. Her caution is that *"even today, it's not like everybody is a good manager"*: oversight of agents rests on a skill that is unevenly distributed among the people asked to provide it.

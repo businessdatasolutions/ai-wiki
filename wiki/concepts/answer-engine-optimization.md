@@ -4,9 +4,9 @@ title: Answer engine optimization
 aliases: ["answer engine optimization", "answer engine optimisation", "AEO", "generative engine optimization", "generative engine optimisation", "GEO", "AI search optimization", "LLM visibility", "AI visibility", "brand visibility in AI answers"]
 tags: [aeo, geo, seo, answer-engines, ai-search, citations, brand-visibility, share-of-voice, prompt-tracking, consensus, earned-media, entity-richness, bot-accessibility, buyer-journey]
 confidence: 0.75
-last_confirmed: "2026-10-11"
-accessed_at: "2026-10-11"
-source_count: 6
+last_confirmed: "2026-10-15"
+accessed_at: "2026-10-15"
+source_count: 7
 relationships:
   - type: part-of
     target: agentic-web
@@ -106,13 +106,21 @@ Two consequences reach beyond content:
 
 The loop is iterative: define the brand, find gaps, create, publish across channels, and **evolve** as the engines and citation patterns change.
 
+### 7. The engine owner's toolkit: citation metrics, feeds, and paid placement (added 2026-10-15)
+
+[[2026-10-14-longo-marchiaro-hubspot-unbound-ai-transforming-search|Paul Longo (Microsoft Advertising, HubSpot UNBOUND, Oct 2026)]] describes AEO from the side that owns an answer engine (Copilot) and a search engine (Bing). His test is the same as Amiel & Sanders': *"What's the most valuable conversation that you want to make sure that you're showing up in? And how confident are you that your brand will show up?"* Three additions:
+
+- **Named metrics.** Microsoft Clarity, a free site-analytics tool, now has an AI-visibility view. The slide defines its measures: **citation rate** (the share of a fixed prompt set in which the brand is cited; *"20% cited across 10 prompts"* in the demo), **competitive share** (the brand's share of all page citations across competitors) and **share of authority by domain**, which ranks the brand against competitors *and* third-party sites such as Reddit. That last measure makes the consensus mechanism of section 3 visible: other people's pages compete with the brand's own for the citation.
+- **Product feeds as an AEO input.** *"Don't sleep on your feeds"*: structured product data in Microsoft Merchant Center is *"a core component of ensuring you show up in LLMs."* This is the first source in the corpus to name a structured feed, rather than web content, as the input.
+- **Paid placement in the conversation.** Microsoft's Performance Max and AI Max campaigns are sold as working *"in the LLM and agentic web"*, matching ads to conversational queries and appearing on AI surfaces. This bears on the *does the channel stay open?* debate below.
+
 ## Debates and supersession
 
 - **Measured, or one vendor's model of the engines?** The central claims (mentions across the web as the main factor; the 8% / 30% / 10% citation shares) come from XFunnel's and HubSpot's own analysis, presented without method, sample or date. Their outcome figures (+170% MQLs, +82% closed deals for AEO adopters, +8% monthly visibility) are omitted from the claims above: they come from a vendor selling the tool and do not separate what AEO did from which customers chose to adopt it. **Confidence is held at 0.75**, the schema ceiling for vendor sources without independent replication. An independent study of what AI answers cite, such as the academic GEO literature, is the ingest target that would move it.
 - **Can a constructed prompt set stand in for demand?** Without published volumes, a prompt matrix measures the engine's answers to questions the firm *thinks* buyers ask. The inputs (sales calls, tickets) are real signals, but no source here validates a prompt set against actual usage. **Open.**
 - **Personalisation undercuts measurement.** The same session says engines personalise heavily using each user's history and connected tools, and also that a firm can measure visibility with a fixed prompt set. A tracked answer is a generic-user answer, which the buyer may never see. **Open.**
 - **Being crawled against being paid.** AEO asks brands to make content maximally crawlable. The [[2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet|Cloudflare one-year report]] documents publishers **blocking** AI crawlers by default to win licensing leverage. The two positions fit different businesses: a brand wants to be cited because the answer sells its product, while a publisher's product is the content itself. A firm that is both, such as a software company with a large editorial blog, faces a real choice. See [[agentic-web]].
-- **Does the channel stay open?** [[2026-06-11-kilpatrick-sequoia-model-eats-the-harness|Kilpatrick (Google DeepMind)]] raises the SEO→GEO question from the platform side: Google aiming to maximise *"outcomes for customers,"* not eyeball time. If answer engines take on paid placement, as search did, organic AEO may shrink the way organic SEO did beneath the ads. No source in the corpus addresses this directly. **Open.**
+- **Does the channel stay open?** [[2026-06-11-kilpatrick-sequoia-model-eats-the-harness|Kilpatrick (Google DeepMind)]] raises the SEO→GEO question from the platform side: Google aiming to maximise *"outcomes for customers,"* not eyeball time. If answer engines take on paid placement, as search did, organic AEO may shrink the way organic SEO did beneath the ads. [[2026-10-14-longo-marchiaro-hubspot-unbound-ai-transforming-search|Longo (Microsoft Advertising, Oct 2026)]] shows that one engine owner already sells paid placement against conversational queries and on AI surfaces, next to a free tool for measuring organic citations. How paid and organic answers will be separated or labelled is not addressed. **Open.**
 - **AI discovery: concentration or long tail?** [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet|Collison (Stripe, Oct 2026)]] calls AI discovery *"the new point of aggregation for commerce"* and expects it to favour products that are *"well reviewed"* and *"discoverable"*, including niche brands; his analogy is the generation of sellers that grew up native to Facebook and Instagram ad targeting. That reads as support for the consensus mechanism above, but it is a prediction without data, from a firm that settles the resulting payments.
 - **Agents as buyers.** Chou describes the next step: agents choosing and signing up for products on a user's behalf (*"if the agents choose you… you're going to win huge"*). AEO as described here optimises an answer a human reads. Optimising for an agent that acts without a human reading anything may need different signals, such as an API, machine-readable pricing, or agent sign-up. **Open.**
 
@@ -131,3 +139,4 @@ The loop is iterative: define the brand, find gaps, create, publish across chann
 - [[2026-06-11-kilpatrick-sequoia-model-eats-the-harness]] — the platform view: the SEO→GEO question and outcomes over eyeballs.
 - [[2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet]] — the publisher's opposite choice: blocking crawlers to price access.
 - [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet]] — AI discovery as the new aggregator for commerce, from the payments side.
+- [[2026-10-14-longo-marchiaro-hubspot-unbound-ai-transforming-search]] — the engine owner's view: Clarity's citation rate and share of authority, product feeds, paid placement in AI answers.

@@ -91,7 +91,7 @@ A second detail worth keeping: the **AI-content retention analysis is polarised*
 
 - Concepts: [[ai-coding-productivity-evidence]], [[jagged-frontier]], [[automation-vs-augmentation]], [[expert-generalist]], [[enterprise-ai-adoption]], [[durable-skills]], [[ai-employment-effects]]
 - Entities: [[Fabrizio Dell'Acqua]], [[Ethan Mollick]], [[Karim Lakhani]]
-- **Dangling** (single-source mention, deferred): Charles Ayoubi, Hila Lifshitz, Raffaella Sadun, Lilach Mollick, Yi Han, Jeff Goldman, Hari Nair, Stew Taub, Procter & Gamble, Harvard Business School, ESSEC Business School, Warwick Business School, The Wharton School, Organization Science, INFORMS
+- **Dangling** (single-source mention, deferred): Charles Ayoubi, Hila Lifshitz, Lilach Mollick, Yi Han, Jeff Goldman, Hari Nair, Stew Taub, Procter & Gamble, Harvard Business School, ESSEC Business School, Warwick Business School, The Wharton School, Organization Science, INFORMS Raffaella Sadun promoted to [[Raffaella Sadun]] on 2026-10-15 (second source: her WorkLab interview).
 
 ## Scope and reliability
 

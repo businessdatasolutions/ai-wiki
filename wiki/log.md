@@ -10,6 +10,24 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-10-15] ingest | Three videos: Romeo (Oliver Wyman Forum) on the wrong AI race, Longo & Marchiaro (Microsoft Advertising, HubSpot UNBOUND) on AI search, Sadun (HBS) on WorkLab; 7 verified stills
+
+The user sent three YouTube links. None was already in the wiki.
+
+**New source pages (3):**
+
+- [[2026-10-14-longo-marchiaro-hubspot-unbound-ai-transforming-search]] — full Gemini scan: 24 slides, 6 published (consumer-readiness survey with its source, the 30/40/30 split, the three-eras slide, Human Security's traffic figures, the unspoken 194% conversion figure, the Clarity dashboard mock-up).
+- [[2026-10-13-romeo-bloomberg-new-economy-wrong-ai-race]] — Gemini found two slides but both cut frames had switched to the speaker. Ten sampled frames found a picture-in-picture layout where both are legible; the 92%/8% slide was re-cut by hand at 2:36 and published, the 68% slide repeats the narration and was not.
+- [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization]] — no stills (studio interview). Published Nov 2025; ingested in this batch.
+
+**New entity:** [[Raffaella Sadun]] — second source after the *Cybernetic Teammate* paper, where she was dangling; that page's Dangling line updated.
+
+**Updated:** concepts [[agentic-web]] (new §9: three eras, attention to permission; independence bullet extended), [[answer-engine-optimization]] (new §7: Clarity's citation metrics, product feeds, paid placement; the *does the channel stay open?* debate now has its first evidence), [[micro-productivity-trap]], [[agent-oversight-and-delegation]] (license plates: identity, permission, accountability, revocability; the agent as eager apprentice), [[ai-sovereignty]], [[enterprise-ai-adoption]] (Sadun's strategy → buy-in → compliance sequence; innovating by accident), [[durable-skills]]; entities [[Microsoft]], [[HubSpot]]. Confidence unchanged everywhere: all three sources are talks or interviews with first-party or unpublished figures.
+
+**Edges (11, all `supports`):** Romeo → Lukic/BCG (fast step, slow process), Klein/Browserbase (agent identity), IMDA (human accountability for agents). Longo → Amiel & Sanders and Bodnar & Flanagan (same conference), Collison (agents that buy), Cloudflare Investor Day (agent-traffic figures). Sadun → Miller/WorkLab, Brynjolfsson (J-curve), Dutt et al. (experimentation to transformation), Krishna/IBM (bounded experimentation).
+
+**Acquire notes.** Playwright had been upgraded to 1.60 without its Chromium build (1223); installed once, then all three transcripts came through the panel with full coverage. Romeo's caption track is labelled manual but wrote "AI" as "I"; fixed at acquire. Longo is ASR; product and people names fixed (AI Max, Copilot, Merkle, Marchiaro). Sadun is human-curated. `available_countries` lists stripped from the raw YAML, per precedent.
+
 ## [2026-10-12] ingest | Six videos: Browserbase's Navigate keynote (Klein) and Navigators episode (Ramineni, Fireflies), and Tate & Wladawsky-Berger's four-part Collective Sensemaking series (MIT Sloan CIO Symposium); 9 verified stills
 
 The user sent six YouTube links. None was already in the wiki.

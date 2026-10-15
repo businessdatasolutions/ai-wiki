@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-10-12"
-accessed_at: "2026-10-12"
-source_count: 148
+last_confirmed: "2026-10-15"
+accessed_at: "2026-10-15"
+source_count: 150
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -954,3 +954,17 @@ Kropp's sequence starts with leaders; in Lenk's data, pioneers with authority ha
 **From token counts to output metrics.** [[2026-10-01-chesky-silicon-valley-girl-people-who-know-what-to-build-with-ai|Chesky (Airbnb, Oct 2026)]] describes the *"token leaderboards"* of early 2026 as a phase that worked *"for a couple months"*, followed by *"why are we spending so much money on AI?"* Airbnb now measures product velocity (how much ships, how fast, at what quality, with what success) and reports shipping 80% more features than a year before, which he attributes to the tools *and* to culture. [[2026-10-09-mollick-hbr-how-ai-is-changing-strategy-four-skills|Mollick (HBR IdeaCast)]] makes the same point from the other side: without new KPIs, AI produces *"more PowerPoint … more code"*, and the productivity gain *"gets eaten up by the organization."* His organisational model is **leadership, lab and crowd**: leaders who decide and use the tools, broad access to current models, and a standing, mostly non-technical lab that experiments.
 
 **Users building their own tools.** [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet|Collison (Stripe, Oct 2026)]] reports that Stripe gave an internal AI application access to company data, which first needed privacy and access-control guardrails; sales and legal staff then built their own applications on it. *"They're not using an application that we built for them, they are building their own application."*
+
+## Strategy, then buy-in, then compliance: a sequence for the Frontier Firm (added 2026-10-15)
+
+[[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Raffaella Sadun (HBS) on Microsoft's WorkLab (Nov 2025)]] defines a *Frontier Firm*, Microsoft and HBS's term, as one that *"understands that this is the time to learn"* and invests *"in the process for strategic experimentation and for taking the learnings from this experimentation back into the organization."* She gives an order of work:
+
+1. **Strategy first.** Clarity on how the firm creates value sets the *strategic boundaries* for experiments, and there can be *"too much experimentation"*: keep it to *"one important axis of your strategy, or maybe 2 or 3."* [[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over|Krishna (IBM)]] makes a similar case for concentration from the CEO's chair.
+2. **Buy-in and diffusion.** Find the people who will carry others; skeptics and enthusiasts *"not necessarily correlated with their technical expertise."*
+3. **Compliance and metrics — later.** Compliance metrics introduced while new processes are still being invented *"can potentially backfire."*
+
+Leadership should change with the phase: close to the action early, for credibility and to avoid misallocating effort; then focused on who builds buy-in. Her warning about pilots matches this page's pilot-purgatory evidence. Experiments run *"so brilliantly, but so divided from the rest of the organization"* that at scale they met *"almost a dejection, as if it was a foreign object,"* so *"you have to build that third stage of adoption already in the early stages,"* working backwards from mass adoption. She expects *"massive divergence across firms"* in the short and medium run, because the investments are firm-specific. The same show's [[2026-08-10-miller-worklab-the-ai-shift-most-companies-didnt-see-coming|Miller episode]] gives one structural answer, a frontier unit; Sadun's answer is a sequence.
+
+## Innovating by accident, and model parity (added 2026-10-15)
+
+[[2026-10-14-longo-marchiaro-hubspot-unbound-ai-transforming-search|Julian Marchiaro (Merkle) at HubSpot UNBOUND (Oct 2026)]]: *"In many organizations we're still innovating by accident, not by design,"* with AI work *"happening in pockets"* and done *"on the side of their desk"* when *"that's a full-time job."* He also argues against waiting for the best tool: citing a recent Stanford report, models are reaching parity on productivity, so *"just go deep in the stack that you have available. Use the integrations you already have access to."* A consultant's view from a vendor-hosted session; the Stanford report is not named precisely.

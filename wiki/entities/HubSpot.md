@@ -4,9 +4,9 @@ kind: organization
 aliases: ["HubSpot", "HubSpot Live", "HubSpot UNBOUND", "UNBOUND"]
 tags: [hubspot, crm, marketing-software, unbound-2026, aeo, youtube-channel, vendor]
 confidence: 0.8
-last_confirmed: "2026-09-30"
-accessed_at: "2026-09-30"
-source_count: 3
+last_confirmed: "2026-10-15"
+accessed_at: "2026-10-15"
+source_count: 4
 relationships:
   - type: published-by
     target: 2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook
@@ -14,6 +14,9 @@ relationships:
   - type: published-by
     target: 2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook
     via: "UNBOUND 2026 breakout on answer engine optimisation: prompt tracking, citations, and consensus across the web (29 September 2026)"
+  - type: published-by
+    target: 2026-10-14-longo-marchiaro-hubspot-unbound-ai-transforming-search
+    via: "UNBOUND 2026 session by Microsoft Advertising's Paul Longo with Merkle's Julian Marchiaro: three eras of the web, AI visibility in Microsoft Clarity, and the launch of the HubSpot–Microsoft Advertising integration (14 October 2026)"
 ---
 
 # HubSpot
@@ -26,6 +29,7 @@ HubSpot matters to this wiki for one reason more than any other: **it is a firm 
 
 - [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook|Bodnar & Flanagan — AI Broke the Old Marketing Playbook]] (Sep 2026): the CMO's keynote. HubSpot lost 80% of its web traffic (140 million visits in a year) from May 2024 while growing leads by 20%; taste as the scarce input; two- and six-week sprints. Feeds [[concepts/agentic-web|agentic-web]] and [[concepts/enterprise-ai-adoption|enterprise-ai-adoption]].
 - [[2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook|Amiel & Sanders — A Hands-On AEO Playbook]] (Sep 2026): answer engine optimisation as a product. Measure brand visibility with a persona × stage × region prompt matrix; own content as the source of truth; mentions across the web as the main factor. Customer guest Fresha. Feeds [[concepts/agentic-web|agentic-web]].
+- [[2026-10-14-longo-marchiaro-hubspot-unbound-ai-transforming-search|Longo & Marchiaro — How AI Is Transforming Search]] (Oct 2026): a partner session, not HubSpot's own staff. Microsoft Advertising presents the human, LLM and agentic web, its paid and measurement products for them, and the first HubSpot–Microsoft Advertising integration (HubSpot contacts as ad audiences, closed-loop revenue reporting in HubSpot), which Longo calls the integration HubSpot customers asked for most.
 
 ## Also appears in
 

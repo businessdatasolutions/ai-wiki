@@ -3,8 +3,8 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-10-11"
-source_count: 52
+last_confirmed: "2026-10-15"
+source_count: 53
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -15,7 +15,7 @@ relationships:
   - type: depends-on
     target: ai-benchmarks
     via: "measurement methodology — Vantage and similar protocols define new benchmark types for human skills (not model capability)"
-accessed_at: "2026-10-11"
+accessed_at: "2026-10-15"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -367,3 +367,7 @@ The list overlaps with entries above (storytelling, judgement, systems thinking)
 [[2026-10-09-mollick-hbr-how-ai-is-changing-strategy-four-skills|Mollick (HBR IdeaCast, Oct 2026)]] lists four capabilities for an AI-heavy workplace: **deep knowledge** (judging output at a glance: *"you don't have to read those 400 pages"*), **wide knowledge** (to give AI better feedback across fields), **taste** (choosing among many options, including *"company taste"*) and **agency** (*"the willingness to take action under uncertainty"*, the hardest to teach). He repeats that expertise, not youth, predicts good AI use.
 
 [[2026-10-01-chesky-silicon-valley-girl-people-who-know-what-to-build-with-ai|Chesky (Airbnb, Oct 2026)]] makes the same move from a CEO's seat: *"it's no longer can you build it. It's what do you build and … should you build it."* What he says AI rewards is *"great thinking … great taste … great curiosity"*, and volume: he writes about a thousand words of ideas a day and has AI read the lines he bolded each month for patterns. *"AI is like an amplifier. It makes the good people better."*
+
+## Hiring for the ability to learn, and why adults resist it (added 2026-10-15)
+
+[[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun (HBS, WorkLab, Nov 2025)]] expects the same job to diverge across firms as each reorganises around AI in its own way, so *"three years from now, your job will be different."* Her hiring conclusion: *"you are not hiring for the skills that people have today, but you're hiring people for their ability to learn new skills,"* which businesses say they value but *"often conflate with experience."* The obstacle is on the learner's side. Reskilling is *"bloody hard"* because *"we are asking our workforce… to change who they are,"* and self-paced training platforms that *"look like Netflix"* assume a motivation adults do not reliably have: *"adults are not necessarily interested in learning new things or admitting that they need to learn new things."* What works better in her studies is a mix of hard and soft skills, taught in cohorts, as part of a career journey with a visible promise rather than as a one-off course. For employees who want to matter in such a firm she names a technical base, clarity about how their work fits the firm's direction, and a coalition to learn with.

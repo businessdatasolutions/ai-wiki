@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI sovereignty", "sovereign AI", "digital sovereignty", "strategic autonomy in AI", "cultural autonomy", "full-stack sovereignty"]
 tags: [ai-sovereignty, sovereign-ai, digital-sovereignty, strategic-autonomy, own-vs-rent, cultural-autonomy, export-controls, industrial-policy, platform-governance, data-sovereignty]
 confidence: 0.85
-last_confirmed: "2026-10-08"
-accessed_at: "2026-10-08"
-source_count: 13
+last_confirmed: "2026-10-15"
+accessed_at: "2026-10-15"
+source_count: 14
 relationships:
   - type: supports
     target: open-source-ai
@@ -127,3 +127,7 @@ His sourcing fits claim 2's per-capability logic: DIU works with frontier labs a
 - **Sovereignty with a foreign partner.** Kazakhstan's national AI platform is run by a joint venture of its government and the Chinese firm 01.AI, whose CEO sits on the president's AI council. A Kazakh-language model built by the same firm powers an AI board director, able to vote, at the sovereign wealth fund. A month earlier Kazakhstan had joined a US-led initiative, and a US-backed data centre is planned there. A national platform and a national-language model, two of this page's markers of sovereignty, here come from one foreign supplier. Chu also describes China training government employees and vocational students on Chinese systems, which embeds standards *"without… formal partnerships or allegiances."*
 
 An analyst's view, with some names inferred from auto-captions (see the source page). Confidence unchanged.
+
+## Sovereignty as preserving choice, and interoperable accountability (added 2026-10-15)
+
+[[2026-10-13-romeo-bloomberg-new-economy-wrong-ai-race|Romeo (Oliver Wyman Forum, Oct 2026)]], speaking in New Delhi, reports Oliver Wyman Forum research in India showing strong demand both for building AI as a national capability and for access to the world's best models. He calls this *"not a contradiction"* but *"a new definition of sovereignty that focuses on emphasizing the permission and preserving choice rather than eliminating dependence."* It is the same position as claim 1 on this page (nobody is full-stack sovereign) stated as a goal: keep the option to switch rather than own every layer. On regulation he adds: *"We don't need every country to regulate AI identically. We just need interoperable accountability."* The research is unpublished and the talk gives no figures for it. Confidence unchanged.

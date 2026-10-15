@@ -3,8 +3,8 @@ type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
-last_confirmed: "2026-10-08"
-source_count: 59
+last_confirmed: "2026-10-15"
+source_count: 62
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -12,7 +12,7 @@ relationships:
   - type: contradicts
     target: automation-vs-augmentation
     via: "process lock-in = automation without redesign; reinvent-the-business resists this trap"
-accessed_at: "2026-10-08"
+accessed_at: "2026-10-15"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -431,3 +431,13 @@ Two more restatements, each adding a mechanism.
 [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Karunakaran (Stanford HAI seminar, Sep 2026)]]: *"More AI usage does not translate to creating more value… value comes through carefully redesigning, reconfiguring workflows and roles."* His law-firm case adds a failure this page has not recorded: the redesign was done and copied, but the **performance metric** was not. Divisions that copied Division B's role changes kept *caseload* as the paralegals' measure. Caseload fell as paralegals took on legal research, managers asked why, and use declined. In [[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune|Lukic's]] 10-days-to-one story the order is reversed: changing the metric forced the process change. Karunakaran adds that across industries AI is intensifying work rather than reducing it.
 
 [[2026-10-07-richardson-reuters-econ-world-ai-at-work|Richardson (ADP, Oct 2026)]] gives the macro reading: the effects are *"at the task level… You're not seeing them in the overall productivity numbers yet,"* and missing investment in people is *"the missing part of the equation."* The OECD scenarios Reuters showed alongside put AI's predicted contribution to annual US labour productivity growth over ten years at 0.41, 0.99 or 1.28 percentage points for slow, medium or rapid adoption. A model, not a measurement. Confidence at the cap.
+
+## Saved time without a standard, slack without a use, and a J-curve per firm (added 2026-10-15)
+
+Three sources from one batch restate the trap from where the freed time goes.
+
+- **No rule for the saved time.** [[2026-10-13-romeo-bloomberg-new-economy-wrong-ai-race|Romeo (Oliver Wyman Forum, Oct 2026)]]: *"AI creates time. It creates capacity, but it doesn't automatically create value."* Oliver Wyman Forum research finds only **8%** of organisations have an organisation-wide standard for what happens to the time AI saves; the slide's own conclusion is that *"a great deal of the productivity AI creates is still being left on the table."* His example has the same shape as [[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune|Lukic's]] ten-days-to-one: a claim processed in seconds that then waits three days in an approval queue, *"one step spectacularly efficient"* and no transformed company. *"The faster the machine gets, the more visible the rest of the organization becomes."*
+- **Slack, and whether anyone is intentional about it.** [[2026-10-14-longo-marchiaro-hubspot-unbound-ai-transforming-search|Marchiaro (Merkle, Oct 2026)]]: *"Organizations, particularly the large ones, are good at carrying inefficiencies. The automation creates slack… How is that slack being used? How are the efficiencies transforming into growth and results for the business?"* His first step is to map current work before automating, because the aim is not *"using AI as glue to stitch together broken processes, but… rethinking your process."*
+- **The Solow paradox, with one J-curve per firm.** [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun (HBS, WorkLab, Nov 2025)]] compares the present to *"computers everywhere except for the productivity statistics,"* but adds that *"every firm is in its own J curve"* because the gains depend on firm-specific reorganisation. Her expectation of **massive divergence across firms** in how the same job is done is the trap's consequence at the level of the economy: the firms that redesign and the firms that do not drift apart.
+
+Romeo's figure is unpublished think-tank research with no sample or method, and Marchiaro speaks as a consultant; neither moves confidence, which stays at the cap.
