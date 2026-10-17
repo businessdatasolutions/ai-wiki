@@ -3,9 +3,9 @@ type: concept
 aliases: ["expert generalist", "Expert Generalist", "expert generalists", "generalist-specialist blend"]
 tags: [expert-generalist, generalist-vs-specialist, t-shaped, fundamentals-over-tools, patterns, mechanical-sympathy, durable-skills, distributed-systems-fundamentals, hiring, llms-and-skills]
 confidence: 0.90
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
-source_count: 8
+last_confirmed: "2026-10-17"
+accessed_at: "2026-10-17"
+source_count: 9
 relationships:
   - type: supports
     target: durable-skills
@@ -15,8 +15,7 @@ relationships:
     via: "Fowler argues fundamentals + the habit of interrogating answers resist AI hollowing-out; deskilling describes the opposite drift when task-composition shifts toward AI-handled work"
   - type: authored-by
     target: Martin-Fowler
-quality_score: 0.99
-quality_notes: ['1 near-empty section(s)']
+quality_score: 1
 ---
 
 # Expert Generalist
@@ -75,7 +74,6 @@ Rohrer also cites [[Martin Fowler]] directly for the architect's own version of 
 **Confidence raised 0.80 → 0.82** on a second substantive source. Note that it is a practitioner talk with no measurement of its own — the 4×/8×/5× figures are second-hand from Prugh — so this strengthens the concept's *breadth of support* rather than its evidential base.
 
 ## Debates and supersession
-## Debates and supersession
 
 - **Three citing sources, but the term itself still traces to one origin (as of 2026-07-19).** The *term* "Expert Generalist" is named by one source ([[2025-07-02-joshi-venkatraman-fowler-expert-generalists]]); [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen]] and [[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world|Brovich]] (London/Sydney editions of the same AWS Enterprise Strategy talk) *cite and apply* it rather than independently corroborating it — vendor-altitude propagations of one original. [[2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era|Stone]] breaks this pattern: she reaches the underlying claim independently, without citing the term, which is why confidence moved past the prior 0.75 vendor-propagation cap to 0.8 rather than staying capped. Further lift toward 0.85+ would need either a second source using the *named* Expert Generalist framing independently of Fowler/AWS, or additional independent-claim corroborations at Stone's caliber. The *underlying* claim (fundamentals/generalism beat narrow specialisation; AI amplifies it) is separately corroborated by [[durable-skills]] sources, [[2026-05-20-ng-deeplearningai-ai-dev-26-sf-future-of-software-engineering|Ng]], and [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti]].
 - **Open question — measurability.** The authors concede assessing the skill is "a difficult task, often requiring intensive participation from known-capable Expert Generalists." This is the tension with [[durable-skills]]' scalable-measurement programme: can the Expert Generalist trait-set be assessed at scale, or does it remain expert-judged?
@@ -92,3 +90,7 @@ That is the expert-generalist thesis stated as a complementarity result: breadth
 **And AI now manufactures the generalist output directly.** [[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork|Dell'Acqua et al.]] found that without AI, R&D professionals submitted predominantly technical solutions and commercial professionals predominantly commercial ones; **individuals using AI produced balanced solutions regardless of background**, matching what a cross-functional pair achieved. AI works as *"an effective boundary-spanning mechanism."*
 
 **The caveat both papers raise, and neither resolves.** Tambe cannot distinguish *"deep technological expertise"* from *"interactional expertise"* in his data; Dell'Acqua et al. ask outright whether AI-enabled boundary spanning *"foster[s] genuine knowledge growth, or merely facilitate[s] temporary access to existing expertise."* A commercial professional whose AI-assisted proposal is technically sound has not thereby become technically expert. Whether the expert generalist this page describes is being *created* or merely *simulated* is now the page's central open question — see [[ai-deskilling]].
+
+## T-shaped roles, and expertise worth more (added 2026-10-17)
+
+[[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart|Katy George (Microsoft) on WorkLab (July 2026)]]: *"roles are becoming more T-shaped."* Expertise and judgment are *"maybe even more important than before"*; the view of a year earlier, that *"we will never need human expertise again,"* *"turns out to be false. To use AI really effectively, you need judgment, taste, expertise,"* and people then spend more time *"horizontally integrating across the whole process,"* so teams become *"much more dynamic and fluid."* Microsoft's Camp Air bootcamp builds the breadth on purpose: *"leave your discipline at the door,"* and product managers, engineers and designers all learn every tool the team uses. She uses the T-shape that this page's anchor source finds too narrow; the substance, depth kept and breadth added across a process, is the same. An executive's account of her own company; confidence unchanged.

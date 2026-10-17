@@ -3,8 +3,8 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-10-15"
-source_count: 55
+last_confirmed: "2026-10-17"
+source_count: 56
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -15,7 +15,7 @@ relationships:
   - type: depends-on
     target: ai-benchmarks
     via: "measurement methodology — Vantage and similar protocols define new benchmark types for human skills (not model capability)"
-accessed_at: "2026-10-15"
+accessed_at: "2026-10-17"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -377,3 +377,7 @@ The list overlaps with entries above (storytelling, judgement, systems thinking)
 Most claims on this page say social skills matter. [[2025-08-05-weidmann-xu-deming-measuring-leadership-skills-ai-agents|Weidmann, Xu & Deming (2025)]] measure one of them causally. In a pre-registered experiment, 249 leaders were each randomly assigned to six human teams. Leader identity explained more than half the variation in team performance. A leader 1 SD above average raised team performance by about 0.65 SD, and still about 0.55 SD after controlling for the leader's own task skill, fluid IQ and typing speed. Good leaders solved 53% of problems, weak ones 10%. What predicted the effect was **fluid IQ, emotional perceptiveness and economic decision-making skill**, and in conversation **questions, turn-taking and plural pronouns**. Gender, age, ethnicity, education and the sheer volume of talk did not predict it. The same leaders did equally well directing GPT-4o agents (0.81 corrected correlation), which makes the skill cheap to test: $23 per person against $114 for the human version. Deming's earlier work on the rising labour-market value of social skills (*QJE* 2017) is cited as motivation.
 
 [[2026-05-07-globerson-et-al-scalable-measurement-durable-skills|Globerson et al. (Google)]] measure collaboration skills with AI teammates validated against human raters. This study validates against a causal team outcome, so it is the stronger test that AI-mediated measurement captures the real thing. The [[2026-09-03-hbs-ai-institute-think-youre-a-good-leader-try-leading-an-ai-team|HBS AI Institute's summary]] goes a step further and proposes AI teams as a **practice environment** for leadership, with short repeatable simulations instead of occasional workshops. The paper tests measurement, not training, so the practice claim is untested.
+
+## Understanding the model, and the humanities (added 2026-10-17)
+
+[[2026-10-15-lin-stanford-ai-club-building-in-the-ai-era|Alfred Lin (Sequoia) at the Stanford AI Club (Oct 2026)]]: *"math and coding is being commoditized, but the understanding of how it works has never been more valuable."* His evidence is what people who really understand models are paid, and *"the people who understand that really well are no longer coding."* To technical students he adds: *"also understand humans. Humanities is actually very important,"* because *"we build for 8 billion people… it all flows through people,"* and in a world where much is commoditised, *"the thing that doesn't go away is human connection."* The same direction as Mollick's deep knowledge and Chesky's taste above, from a venture investor advising students; no data.

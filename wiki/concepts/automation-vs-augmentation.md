@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-10-11"
-accessed_at: "2026-10-11"
-source_count: 74
+last_confirmed: "2026-10-17"
+accessed_at: "2026-10-17"
+source_count: 75
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -537,3 +537,7 @@ All three are argument and illustration. Kropp's growth correlation across 107 c
 ## Twilight factories (added 2026-10-11)
 
 [[2026-10-09-mollick-hbr-how-ai-is-changing-strategy-four-skills|Mollick (HBR IdeaCast, Oct 2026)]] names the design alternative to a *software dark factory*, where no human writes or reads code (his example is StrongDM). A **twilight factory** is one in which *"the AI proactively reaches out to people and brings them in because they have variance and views … because their sign off [is] needed or because they find the work interesting."* His strategic argument is the differentiation one: automation is *"a well-worn playbook"*, but *"if you just move to automation, you're going to have the same [Claude]-based company everyone else does."* He also names the personal cost: work whose *"only job is verifying the results of AI content."*
+
+## Capability Add (added 2026-10-17)
+
+[[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart|Katy George (Microsoft) on WorkLab (July 2026)]] names the augmentation case **"Capability Add"**: AI that is *"not just doing the same process with the same outcomes that you did before… faster and better,"* but *"adding whole new capabilities in."* Her example is Microsoft's internal audit team. It found productivity savings, used partly to avoid replacing people lost to attrition and partly for wider audit coverage. *"But what they would say is far more valuable than that, is that because of AI, every internal audit now delivers proactive risk identification. And that's not something that human beings used to do and now we've… substituted AI for it. It's a new capability that AI has injected into the process."* Teams are asked where they should add decision analysis, scenario work and preventive quality thinking. It sits close to Karunakaran's *expansion* and Kropp's *compounding* firm (see *Temporary against compounding* above), from an operator rather than a researcher or consultant. One firm's description of itself, with no measures.

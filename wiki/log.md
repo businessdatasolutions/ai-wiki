@@ -10,6 +10,31 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-10-17] ingest | Four videos: Katy George (Microsoft, WorkLab) on the org chart and Capability Add, Alfred Lin (Sequoia) at the Stanford AI Club, Varun Sivaram (Emerald AI) on BCG's Pitching Progress, Molly Fowler (Dorm Room Fund) on Bloomberg Tech
+
+The user sent five YouTube URLs. One, `ROz8bhtAVzc`, was already in the wiki as [[2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026]] and was skipped without re-fetching, so its curated manual-caption transcript was not overwritten.
+
+**Acquire.** The Playwright Chromium binary had gone from `~/Library/Caches/ms-playwright/` and was reinstalled (`python3 -m playwright install chromium`); `python` is not on PATH here, `python3` is. The Lin talk needed a retry with `--timeout 60000`. The George episode's transcript panel never rendered (three attempts at 60 s), so its manual caption track was fetched with yt-dlp as VTT, merged into sentence-length segments and built with the skill's own `to_markdown()`. All four passed the gates: last segment within 12 s of the runtime, no repeated `(ts, text)` pairs. **No stills**: a frame probe showed a Bloomberg two-shot and a static BCG audiogram card, and the other two are a fireside and a podcast.
+
+**New source pages (4):**
+
+- [[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart]] — manual captions. Microsoft's first Copilot sales rollout as a failed product launch; Camp Air and role-based huddles; "Capability Add"; adoption → behaviour → revenue per rep; T-shaped roles.
+- [[2026-10-15-lin-stanford-ai-club-building-in-the-ai-era]] — ASR only; names corrected in quotes and listed in the raw `notes:`. The diffusion gap, the application layer, owning intelligence, circular money versus leverage.
+- [[2026-10-16-sivaram-shandal-bcg-pitching-progress-emerald-ai-flexibility]] — manual captions. **Dated by upload (2026-10-16), but recorded about November 2025**, inferred from "founded in late 2024, so just 11 months ago" and an NVIDIA announcement "we just made on October 29th". Filename follows the schema (`publish_date`); the body states the gap, as the Covello page does.
+- [[2026-10-16-fowler-ludlow-bloomberg-tech-dorm-room-fund-ai-gold-rush]] — 5:23 TV segment; no `dynamic_capabilities` (outside the W&W lens).
+
+**New entity:** [[Stanford AI Club]] — `author:` of the Chamath talk (dangling) and now of the Lin talk; second-source promotion. Chamath's dangling list updated.
+
+**Updated entities (8):** [[Microsoft]] (8), [[HBS AI Institute]] (4), [[NVIDIA]] (4; confidence 0.80 → 0.85), [[Sequoia Capital]] (5), [[Boston Consulting Group]] (9), [[Bloomberg Podcasts]] (6; `published-by` edge added), [[Cursor]] (7), [[Amazon]] (3).
+
+**Updated concepts (8):** [[enterprise-ai-adoption]] (153), [[micro-productivity-trap]] (64), [[automation-vs-augmentation]] (75), [[expert-generalist]] (9; duplicate `## Debates and supersession` heading removed), [[durable-skills]] (56), [[ai-sovereignty]] (15), [[technology-adoption-theories]] (7), [[foundation-models]] (31). Confidence unchanged on all: the new material is executive, investor and founder testimony.
+
+**Neighbour scan and edges (all `supports`).** George → Sadun/WorkLab, HBS Frontier Firm page, Raman/WorkLab, Dutt et al. Lin → Huang/Sequoia, Covello/Goldman Sachs, Chamath/Stanford AI Club. Sivaram → AI Index 2026, Benedict Evans, Chu & Liu/DW. Fowler → Lin. Considered and not added: Lin ↔ Ries (Lin doubts lean startup "ever worked"; a passing remark, linked in body only); Lin ↔ Chesky (shared subject, no shared claim); Fowler ↔ Sundararajan (student advice, different question).
+
+**Open: a candidate concept.** AI's power demand now appears in six places with no concept page: AI Index (29.6 GW), Evans (electricity bills), Chu & Liu (China routing training to wind and solar regions), Covello and Lin (data-centre capex and debt), and Sivaram (peak capacity, flexibility). It currently lives as one Debates bullet and a new section on [[foundation-models]].
+
+**Dangling:** Katy George, Molly Wood, Alfred Lin, Tony Xu, Harvey, OpenEvidence, Zappos, Varun Sivaram, Emerald AI, Vinay Shandal, Stevan Jovanovic, PJM, EPRI, Molly Fowler, Dorm Room Fund, Ed Ludlow (now host on three Bloomberg Tech sources, but `author:` is the channel).
+
 ## [2026-10-15] ingest | Frontier Firm material from Harvard: Weidmann, Xu & Deming's AI leadership test (paper), and three HBS AI Institute pages (Frontier Firm initiative, the leadership-test summary, change resilience)
 
 The user sent three HBS AI Institute URLs and an arXiv PDF placed in `raw/papers/`, as a follow-up to the Sadun interview ingested earlier the same day.

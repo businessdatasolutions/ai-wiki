@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-10-15"
-accessed_at: "2026-10-15"
-source_count: 152
+last_confirmed: "2026-10-17"
+accessed_at: "2026-10-17"
+source_count: 153
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -974,3 +974,12 @@ Leadership should change with the phase: close to the action early, for credibil
 The [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|HBS AI Institute's Frontier Firm page]] summarises a forthcoming case by Bojinov, [[Raffaella Sadun]] and Zhang. AI needs *"a first phase of structured, frontline experimentation"*, and *"do not assume that employees would self-discover uses without specific guidance,"* followed by adaptation and scaling. It names four managerial problems: scope (*"wide enough for discovery, narrow enough for scaling"*), selection (people who tolerate *"short-term unproductiveness"*), codifying the learning, and incentives for full adoption. Its **Skill–Will 2×2** sorts employees into Evangelists, Skeptics (whose conversion carries outsized credibility), Learners (*"crucial spreaders of established use cases"*) and Resisters. Agents make all of it harder: more onboarding, *"agent management skills"*, and a sharper split between winners and losers. The claim against self-discovery sits in tension with this page's bottom-up adoption accounts, such as [[2026-08-31-blum-how-i-ai-claude-cowork-pm-system|Blum's]] single worker's system becoming a plugin for everyone. The two may differ by population: a self-selected enthusiast against a frontline workforce.
 
 [[2025-08-05-hbs-ai-institute-mastering-change-resilience-key-to-ai-driven-success|Lakhani et al.'s change resilience]] (HBR, July 2025, via the institute's summary) puts the adoption gap down to organisational capacity rather than technology, citing BCG's *"just 26% of organizations have achieved value from AI."* Its answer, sensing, rewiring and lock-in run as a continuous Learn–Do–Imagine–Act–Care cycle, is mapped onto the dynamic-capabilities triad on [[dynamic-capabilities]].
+
+## A product launch that failed, and the team-level programmes that replaced it (added 2026-10-17)
+
+[[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart|Katy George (Microsoft) on WorkLab (July 2026)]] gives Microsoft's own case. Its first Copilot rollout to the sales force was run *"as a typical product launch… And people tried it and then they stopped using it."* It was rebuilt as a business transformation: business outcome goals first, then redesign of technology, process and people together, with the people who do the work, using Kaizens, Gemba walks, value-stream maps and day-in-the-life analysis. *"This is not a tech project."* Two programmes carry the change:
+
+- **Camp Air**, from engineering: whole teams leave production work for an immersive bootcamp. Week one is mindset and all the tools relevant to the team's work (*"leave your discipline at the door"*); week two applies them to the team's own work, with coaching from other practitioners.
+- **Role-based huddles** in sales: everyone in the same role meets weekly, taught practitioner to practitioner, to compare *"how have you used AI to get better at our job?"* She reports *"significantly greater adoption, but also much more effective adoption,"* without figures.
+
+From her team's **100 internal case studies**, the recurring pattern is *"top down, bottom up"*: leaders cascade goals and fund learning time and pro-code work, while *"grassroots, citizen developer"* builds are scaled across the organisation. On the tension this page records between structured experimentation and bottom-up adoption, her account has both at once. She also hears customers moving from *"lots and lots of pilots"* to *"three end to end business processes that are much more boring."* The episode comes from the practitioner side of the same Microsoft–HBS Frontier Firm programme as the [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun interview]] and the [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|initiative's About page]]. It is Microsoft's account of itself, on its own channel, with no adoption numbers; confidence stays at the cap.

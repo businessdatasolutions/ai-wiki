@@ -6,9 +6,9 @@ tags: [cursor, composer, ai-ide, coding-agent, benchmark-integrity, reward-hacki
 affiliation: "Anysphere"
 role: "AI code editor and coding-agent platform; publisher of the Composer model family"
 confidence: 0.75
-last_confirmed: "2026-10-08"
-accessed_at: "2026-10-08"
-source_count: 6
+last_confirmed: "2026-10-17"
+accessed_at: "2026-10-17"
+source_count: 7
 relationships:
   - type: instance-of
     target: agent-harness
@@ -50,3 +50,7 @@ Two October-2026 sources use Cursor as a marker of AI adoption rather than as a 
 
 - [[2026-10-06-kropp-bcg-so-what-lessons-from-an-all-ai-company|Kropp / BCG (Oct 2026)]]: BCG partnered with Cursor, which held token-consumption data on **107 public companies** over $500 million in revenue. Top-quintile token consumers grew 15% on average, bottom-quintile 5%. Correlation, and one vendor's customer base.
 - [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Lenk / Stanford HAI (Sep 2026)]]: Lenk dates the first agentic coding tool to Cursor in late November 2024, which is why his study treats 2025 as the period when agentic AI was new. In the Q&A he cites the anecdotes behind the study: people say they discovered Cursor *"just because I had a random chat with my peer."*
+
+## Its CEO's route through a student fund (added 2026-10-17)
+
+[[2026-10-16-fowler-ludlow-bloomberg-tech-dorm-room-fund-ai-gold-rush|Fowler on Bloomberg Tech (October 2026)]]: Cursor's CEO, Michael Truell, was on Dorm Room Fund's student investing team while a sophomore at MIT. The fund backed him when he started building and *"helped introduce him to some of his early capital,"* and the early cap table *"is dotted with dorm room fund alumni."* The fund's own account of its best-known result.

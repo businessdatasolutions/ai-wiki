@@ -6,9 +6,9 @@ tags: [retail, cloud, ai-infrastructure, hyperscaler-parent, big-tech]
 ticker: "AMZN"
 website: "https://www.amazon.com"
 confidence: 0.78
-last_confirmed: "2026-05-11"
-accessed_at: "2026-05-11"
-source_count: 2
+last_confirmed: "2026-10-17"
+accessed_at: "2026-10-17"
+source_count: 3
 ---
 
 # Amazon
@@ -66,3 +66,10 @@ SORT file.name ASC
 - **IC-to-manager ratio actuals** — Jassy named +15% target with Q1 2025 already-beaten; the actual delta is undisclosed.
 - **Trainium economics** — Jassy's *"save a lot of money relative to what the cost has been to date"* claim is unquantified. Open primary-source target.
 - **Rufus engagement metrics** — first-party data on session-conversion lift or shopping-assistant adoption rate.
+
+## An early executive's view: slow diffusion, and discipline category by category (added 2026-10-17)
+
+[[2026-10-15-lin-stanford-ai-club-building-in-the-ai-era|Alfred Lin (Sequoia), formerly chairman, COO and CFO of Zappos, which Amazon acquired]], at the Stanford AI Club in October 2026:
+
+- **Diffusion.** In the 1990s he predicted that Amazon would kill Walmart. Walmart is now *"30 times larger than it was in 1997,"* and *"Amazon last year was the first year that they had more revenue than Walmart."* His explanation is the gap between what a technology makes possible and its diffusion to people.
+- **Fire and ice.** Amazon made books profitable before moving to music, then each next category, until it became *"the everything store"*: discipline in one category funds the next.

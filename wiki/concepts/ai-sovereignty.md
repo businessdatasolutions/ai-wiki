@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI sovereignty", "sovereign AI", "digital sovereignty", "strategic autonomy in AI", "cultural autonomy", "full-stack sovereignty"]
 tags: [ai-sovereignty, sovereign-ai, digital-sovereignty, strategic-autonomy, own-vs-rent, cultural-autonomy, export-controls, industrial-policy, platform-governance, data-sovereignty]
 confidence: 0.85
-last_confirmed: "2026-10-15"
-accessed_at: "2026-10-15"
-source_count: 14
+last_confirmed: "2026-10-17"
+accessed_at: "2026-10-17"
+source_count: 15
 relationships:
   - type: supports
     target: open-source-ai
@@ -131,3 +131,7 @@ An analyst's view, with some names inferred from auto-captions (see the source p
 ## Sovereignty as preserving choice, and interoperable accountability (added 2026-10-15)
 
 [[2026-10-13-romeo-bloomberg-new-economy-wrong-ai-race|Romeo (Oliver Wyman Forum, Oct 2026)]], speaking in New Delhi, reports Oliver Wyman Forum research in India showing strong demand both for building AI as a national capability and for access to the world's best models. He calls this *"not a contradiction"* but *"a new definition of sovereignty that focuses on emphasizing the permission and preserving choice rather than eliminating dependence."* It is the same position as claim 1 on this page (nobody is full-stack sovereign) stated as a goal: keep the option to switch rather than own every layer. On regulation he adds: *"We don't need every country to regulate AI identically. We just need interoperable accountability."* The research is unpublished and the talk gives no figures for it. Confidence unchanged.
+
+## Owning intelligence as an argument against concentration (added 2026-10-17)
+
+[[2026-10-15-lin-stanford-ai-club-building-in-the-ai-era|Alfred Lin (Sequoia) at the Stanford AI Club (Oct 2026)]], from the same firm as [[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Huang's keynote]], gives firm-level sovereignty an economic rather than geopolitical reason: *"We're not just going to let two or three models win. That's not how economies work. We don't like that concentration of power… and we don't want to put all our data there."* His example: *"How do you own your own intelligence for a pharmaceutical company? You're going to take open weight models and program it on your own data."* Harvey started on frontier models and now trains its own *"because they wanted to own their own intelligence."* The portfolio companies he names (Chai Discovery, Isomorphic, Reflection, LangChain) are bets on this outcome, so the claim is also an investment thesis.

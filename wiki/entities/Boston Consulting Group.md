@@ -4,9 +4,9 @@ kind: organization
 aliases: ["Boston Consulting Group", "BCG", "BCG Henderson Institute"]
 tags: [BCG, management-consulting, henderson-institute]
 confidence: 0.85
-last_confirmed: "2026-10-08"
-accessed_at: "2026-10-08"
-source_count: 8
+last_confirmed: "2026-10-17"
+accessed_at: "2026-10-17"
+source_count: 9
 ---
 
 # Boston Consulting Group
@@ -50,3 +50,7 @@ SORT file.name ASC
 ## Token-based competition, from BCG X (added 2026-10-08)
 
 [[2026-10-06-kropp-bcg-so-what-lessons-from-an-all-ai-company|Kropp on The So What from BCG (Oct 2026)]]: [[Matthew Kropp]], introduced as CTO of BCG X, presents *token-based competition*, named to rhyme with George Stalk's *time-based competition*. The evidence is a partnership with [[Cursor]] on token consumption at 107 public companies: the top quintile grew 15% on average, the bottom 5%, which Kropp calls correlation. The episode follows up *tokenmaxxing* from [[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune|Lukic & Goydan]]. It is the fourth *So What* episode in the corpus, all hosted by Georgie Frost. The source count above is recounted from inbound links on this date; the previous value was one too high.
+
+## Pitching Progress (added 2026-10-17)
+
+BCG's *Pitching Progress* podcast, hosted by Vinay Shandal, profiles climate companies. [[2026-10-16-sivaram-shandal-bcg-pitching-progress-emerald-ai-flexibility|The Emerald AI episode]] (uploaded October 2026, recorded about November 2025) adds a segment with BCG power-and-utilities expert Stevan Jovanovic, who estimates US installed capacity at about 1,200 GW, used on average 40–50% of the time, against 80–100 GW of new data-centre demand. Sivaram cites *"BCG's own estimates"* for AI data-centre growth over five to ten years.

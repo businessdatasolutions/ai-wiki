@@ -4,10 +4,10 @@ kind: organization
 aliases: ["NVIDIA", "Nvidia"]
 tags: [nvidia, gpu, semiconductors, nemotron, openshell, dgx, open-weight-models, jensen-huang, nvidia-research, small-language-models, slm]
 since: 1993
-confidence: 0.80
-last_confirmed: "2026-09-04"
-accessed_at: "2026-09-15"
-source_count: 2
+confidence: 0.85
+last_confirmed: "2026-10-17"
+accessed_at: "2026-10-17"
+source_count: 4
 relationships:
   - type: supports
     target: small-language-models
@@ -69,3 +69,8 @@ SORT file.name ASC
 - **NVIDIA's own harness/runtime engineering practices** beyond the LangChain partnership — the wiki holds only this one vendor-collaboration vantage.
 - **Nemotron Coalition** — named but not substantively detailed; an open ingest target if NVIDIA or LangChain publish more about the collaboration structure.
 - **Jensen Huang's independent voice** — this source is a fireside interview co-framed by Chase; a Huang solo keynote or NVIDIA-first-party essay would be a useful independent second source for promoting Huang himself.
+
+## Power and money: two views from autumn 2026 (added 2026-10-17)
+
+- **Power.** [[2026-10-16-sivaram-shandal-bcg-pitching-progress-emerald-ai-flexibility|Sivaram on BCG's Pitching Progress]] (uploaded October 2026, recorded about November 2025): NVIDIA leads **Aurora**, a 96 MW facility in Manassas, Virginia, announced as *"the world's first power-flexible AI factory"*, with Emerald AI's software built into **NVIDIA Mission Control** so the site can cut consumption when the local grid is stressed. The aim is a reference architecture for future AI factories. The host calls NVIDIA Emerald's *"big investor."*
+- **Money.** [[2026-10-15-lin-stanford-ai-club-building-in-the-ai-era|Alfred Lin (Sequoia) at the Stanford AI Club, October 2026]]: NVIDIA investing in companies that then buy its GPUs is circular, but *"money has always been circular"*; Jensen Huang's reason is that *"he wants to empower the ecosystem."* Lin's concern is the debt others take on to build data centres. He also uses Huang as his example of patience: *"the first 20 years does not look like the last 10 years."*

@@ -4,9 +4,9 @@ title: Technology adoption theories
 aliases: ["technology adoption theories", "adoption theories", "classical adoption theories", "TAM", "Technology Acceptance Model", "UTAUT", "UTAUT2", "Unified Theory of Acceptance and Use of Technology", "diffusion of innovations", "Diffusion of Innovation", "DOI theory", "Rogers' diffusion of innovations", "TOE framework", "technology-organization-environment", "technology–organization–environment framework"]
 tags: [adoption-theory, tam, utaut, diffusion-of-innovations, rogers, toe-framework, tornatzky-fleischer, information-systems-research, firm-level, individual-level, ai-adoption]
 confidence: 0.85
-last_confirmed: "2026-10-08"
-accessed_at: "2026-10-08"
-source_count: 6
+last_confirmed: "2026-10-17"
+accessed_at: "2026-10-17"
+source_count: 7
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -98,3 +98,7 @@ Three findings bear on the theories on this page:
 - **Task complexity changes who can transmit.** For experiments, only pioneers already skilled at experimentation raised their teammates' output; for routine ticket work any pioneer did. Adoption of the tool and transfer of the skill to use it on a hard task travel together.
 
 In the Q&A, Karunakaran adds why peers matter more for generative AI than for ERP: an ERP system has features a vendor can teach, while generative AI is open-ended and its valuable uses must be discovered. Citing his colleague Michael Bernstein, he says it suits *"rough-edged problems"* with many right answers, which call for social learning. Limits: one firm, outcome measures that are proxies for value, and a paper not ingested.
+
+## The diffusion gap, told by an investor (added 2026-10-17)
+
+[[2026-10-15-lin-stanford-ai-club-building-in-the-ai-era|Alfred Lin (Sequoia) at the Stanford AI Club (Oct 2026)]] argues that AI spreads faster than earlier megatrends because it is *"connected to 8 billion people,"* but *"it still takes a long time."* His worked case: in the 1990s he predicted Amazon would kill Walmart; Walmart is now *"30 times larger than it was in 1997,"* and *"Amazon last year was the first year that they had more revenue than Walmart."* *"What's the slowest thing to move in technology? The humans that work with it."* His mechanism is abstraction: each technology diffuses by building layers that take users further from the machine, from machine code onward, and building those layers is *"one of the most underestimated things"* a technologist does. He calls the distance between what models can do and what people use them for the **diffusion gap**, expects it to widen, and treats the application layer as the work of closing it. In this page's terms that is DOI's *complexity* attribute: applications lower the complexity an adopter faces. An anecdote from memory, not a study; the revenue comparison is his.

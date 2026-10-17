@@ -5,9 +5,9 @@ aliases: ["HBS AI Institute", "Harvard Business School AI Institute", "HBS AI Co
 tags: [harvard-business-school, research-institute, frontier-firm, microsoft-partner, research-summaries]
 website: "https://aiinstitute.hbs.edu"
 confidence: 0.75
-last_confirmed: "2026-10-15"
-accessed_at: "2026-10-15"
-source_count: 3
+last_confirmed: "2026-10-17"
+accessed_at: "2026-10-17"
+source_count: 4
 relationships:
   - type: published-by
     target: 2026-09-03-hbs-ai-institute-think-youre-a-good-leader-try-leading-an-ai-team
@@ -48,3 +48,7 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link)
 SORT file.name ASC
 ```
+
+## Cited from Microsoft's side (added 2026-10-17)
+
+[[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart|Katy George (Microsoft) on WorkLab, July 2026]] refers to *"this fabulous collaboration with Harvard Business School around the frontier firm research initiatives"* and says HBS *"did a case example of our initial rollout of Copilot into our own Salesforce,"* a rollout that failed as a product launch before it was redesigned. Whether that is the forthcoming Bojinov, Sadun and Zhang case summarised on the [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|initiative's About page]] is not stated in either source.

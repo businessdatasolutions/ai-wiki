@@ -161,9 +161,10 @@ The strongest tension is between Chamath's *"don't show me a stupid eval"* dismi
 - [[OpenAI]] — same context; bumped.
 - [[Google]] — same context (early Google as a flow-state org); also referenced in the *"GFS and BigTable"* aside (~14:00). Bumped.
 
+- [[Stanford AI Club]] — channel and author of this source; promoted to an entity on 2026-10-17, when [[2026-10-15-lin-stanford-ai-club-building-in-the-ai-era|the Alfred Lin talk]] became its second source.
+
 **Dangling** (single-source first-mentions, deferred per the [author-entity promotion rule](../../CLAUDE.md#author-entity-promotion)):
 
-- **Stanford AI Club** (channel = author of this source) — student-run AI speaker series at Stanford.
 - **Chamath Palihapitiya** — founder/CEO of 8090; ex-Facebook (2007–2011, Growth/Platform/Mobile); founder of Social Capital; co-host of the All-In Podcast. **Strong promotion candidate on second source.**
 - **8090** — AI-native software development platform / Software Factory; founded 2024; flagship customer EY. **Strong promotion candidate on second source.**
 - **EY** (Ernst & Young) — named as 8090's flagship customer.

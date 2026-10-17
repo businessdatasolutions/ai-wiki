@@ -4,9 +4,9 @@ kind: venue
 aliases: ["Bloomberg Podcasts", "Bloomberg", "Trumponomics", "Bloomberg Leaders", "Bloomberg Audio Studios", "Bloomberg Tech"]
 tags: [bloomberg, bloomberg-podcasts, trumponomics, bloomberg-leaders, business-journalism, economics-podcast, financial-media]
 confidence: 0.75
-last_confirmed: "2026-10-04"
-accessed_at: "2026-10-04"
-source_count: 5
+last_confirmed: "2026-10-17"
+accessed_at: "2026-10-17"
+source_count: 6
 relationships:
   - type: published-by
     target: 2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity
@@ -17,6 +17,9 @@ relationships:
   - type: published-by
     target: 2026-08-16-hill-bloomberg-leaders-ceo-skills-age-of-ai
     via: "Francine Lacqua interviews Linda Hill (Harvard Business School) on the leadership skills that matter in the age of AI — wayfinding vs. pathfinding, creative abrasion, decision rights, and the unspoken board risk-appetite divergence (16 August 2026, *Leaders with Francine Lacqua*)"
+  - type: published-by
+    target: 2026-10-16-fowler-ludlow-bloomberg-tech-dorm-room-fund-ai-gold-rush
+    via: "Ed Ludlow interviews Molly Fowler (Dorm Room Fund) on student founders in the AI boom (16 October 2026, *Bloomberg Tech*)"
 ---
 
 # Bloomberg Podcasts
@@ -45,4 +48,4 @@ Bloomberg's interview formats are host-led and generally give the guest room to 
 - [[2026-08-16-hill-bloomberg-leaders-ceo-skills-age-of-ai|Hill / Leaders with Francine Lacqua, August 2026]] — the leadership skills for the age of AI; source of **wayfinding vs. pathfinding** and of the claim that leaders' inability to state an AI vision is structurally correct rather than a strategy failure. Also the venue's first **academic** guest — a Harvard Business School professor rather than an operating executive or an economist — which slightly widens the source-quality posture noted above: nothing here is presented with a method or a sample.
 - [[2026-09-30-singh-botha-bloomberg-flow-engineering-ai-hardware-design|Singh & Botha / Bloomberg Tech, September 2026]] — Flow Engineering on AI agents for hardware design. With the next source, made *Bloomberg Tech* a two-source author; added as an alias here (2026-10-04).
 - [[2026-10-02-hiza-bloomberg-lockheed-ai-openai-f35|Hiza / Bloomberg Tech, October 2026]] — Lockheed Martin on 55 models, testing AI before deployment, and OpenAI working with the F-35 team.
-
+- [[2026-10-16-fowler-ludlow-bloomberg-tech-dorm-room-fund-ai-gold-rush|Fowler / Bloomberg Tech, October 2026]] — Dorm Room Fund on student founders in the AI boom, and Cursor's CEO as a former student investor.

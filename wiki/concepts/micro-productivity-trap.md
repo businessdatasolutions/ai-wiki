@@ -3,8 +3,8 @@ type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
-last_confirmed: "2026-10-15"
-source_count: 63
+last_confirmed: "2026-10-17"
+source_count: 64
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -12,7 +12,7 @@ relationships:
   - type: contradicts
     target: automation-vs-augmentation
     via: "process lock-in = automation without redesign; reinvent-the-business resists this trap"
-accessed_at: "2026-10-15"
+accessed_at: "2026-10-17"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -443,3 +443,9 @@ Three sources from one batch restate the trap from where the freed time goes.
 Romeo's figure is unpublished think-tank research with no sample or method, and Marchiaro speaks as a consultant; neither moves confidence, which stays at the cap.
 
 **Change resilience (added 2026-10-15, second batch).** [[2025-08-05-hbs-ai-institute-mastering-change-resilience-key-to-ai-driven-success|Lakhani et al. (HBR, July 2025)]] name the escape step *Imagine*: put the whole organisation up for discussion and *"invent new operating models instead of duck-taping existing ones."* They pair it with *lock-in*, codifying what each initiative learns *"so the next initiative starts from a higher baseline."* Read through the institute's summary; the HBR original was not ingested.
+
+## The 30% model, and a chain from adoption to revenue (added 2026-10-17)
+
+[[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart|Katy George (Microsoft) on WorkLab (July 2026)]] rejects the task arithmetic many forecasts rest on. Economists' models break jobs into tasks and estimate the automatable share, *"always 30% on average across any group of jobs. You drop 30% to the bottom line… and you have a clear ROI. That's not how it's happening."* AI automates *"different pieces of people's jobs, not whole jobs,"* and its larger value is new capability (see [[automation-vs-augmentation]], *Capability Add*). That moves the return into growth, innovation and customer and employee experience, which are harder to measure, and *"most companies do not compete on labor cost efficiency."*
+
+Her measurement answer is a chain. Adoption is *"the easiest thing to measure"*, so Microsoft maps it to behaviour change and then to outcomes. In sales: does AI use raise the time reps spend with customers and on the newest products, does that raise win rates and qualified pipeline, and does it reach revenue per rep? She reports *"a really nice correlation between the reps who are using AI the most, and revenue per rep."* This is the trap's prescription written as a metric design: usage is only the first link. The correlation is not separated from selection (strong reps may also adopt first), and the account is the vendor's own. Confidence unchanged at the cap.

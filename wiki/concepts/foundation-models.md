@@ -3,9 +3,9 @@ type: concept
 aliases: ["foundation model", "foundation models", "FM", "frontier model", "frontier models"]
 tags: [foundation-models, generative-ai, ai-research]
 confidence: 0.88
-last_confirmed: "2026-10-12"
-accessed_at: "2026-10-12"
-source_count: 30
+last_confirmed: "2026-10-17"
+accessed_at: "2026-10-17"
+source_count: 31
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -220,3 +220,9 @@ They are not strictly in conflict. Swisher predicts the number of labs training 
 ## A non-specialist account of scale and post-training (added 2026-10-12)
 
 [[2026-08-26-the-mystery-of-ai-connecting-the-dots-ep-19|Episode 19 of the MIT Sloan CIO Symposium podcast]] gives the lay version of the story told technically above. [[Irving Wladawsky-Berger]] calls fluent conversation *"almost an emergent behavior from scale"* and describes post-training as *"socializing the model"*, because *"the model in the wild was too wild for humans"*. His image is domesticated wolves. [[2026-09-02-from-conversation-to-institutional-understanding-ep-20|Episode 20]] asks why scale should produce qualitatively new capabilities, and he answers *"No, I don't think we know."* The episodes also carry a model's own account of how it edits text (pattern recognition across *"lots and lots of sentences"*); that is a model's self-report, not evidence of its mechanism.
+
+## Power: peak capacity and connection queues (added 2026-10-17)
+
+The *compute-scaling sustainability* bullet under Debates treats energy as a question about the scaling trajectory. [[2026-10-16-sivaram-shandal-bcg-pitching-progress-emerald-ai-flexibility|Varun Sivaram (Emerald AI) on BCG's Pitching Progress]] (uploaded October 2026, recorded about November 2025) gives a narrower diagnosis: the binding constraint is **peak grid capacity and the wait to connect**, not energy overall. The grid is truly stressed *"on the order of 1% per year or less,"* and *"there's 100 gigawatts of existing stranded capacity that just doesn't get used."* New data centres wait up to ten years for lines and substations sized for their worst moment. BCG's Stevan Jovanovic puts US installed capacity at about 1,200 GW, used on average 40–50% of the time, against 80–100 GW of new data-centre demand.
+
+The proposed remedy is a data centre that can cut its load when the grid is stressed: **temporal** flexibility (pause batchable work such as fine-tuning), **spatial** (move time-sensitive inference to another site) and **resource** (on-site batteries), with [[NVIDIA]]'s 96 MW Aurora facility in Virginia as the first commercial test. Two points bear on this page: Sivaram expects *"a 50/50 split between training and inference"* in power use through the end of the decade, and he treats inference as a range from latency-critical to batchable. A founder's figures, recorded before Aurora ran. Compare the [[2026-04-30-ai-index-report-2026|AI Index's]] 29.6 GW of AI data-centre capacity and [[2026-10-04-chu-liu-dw-the-dip-how-china-is-viewing-the-ai-race|China's routing of training to regions with surplus wind and solar]].
