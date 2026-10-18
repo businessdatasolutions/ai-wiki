@@ -5,9 +5,9 @@ aliases: ["OpenAI"]
 tags: [openai, ai-lab, foundation-models, chatgpt, gpt-4, gpt-5, codex, agentic-engineering, sora, custom-gpts, public-benefit-corporation, nonprofit-foundation]
 since: 2015
 confidence: 0.95
-last_confirmed: "2026-10-04"
-accessed_at: "2026-10-04"
-source_count: 25
+last_confirmed: "2026-10-18"
+accessed_at: "2026-10-18"
+source_count: 26
 relationships:
   - type: published-by
     target: 2025-10-05-patwardhan-et-al-openai-gdpval
@@ -103,3 +103,7 @@ SORT file.name ASC
 ## Working beside a defense prime's engineers (added 2026-10-04)
 
 [[2026-10-02-hiza-bloomberg-lockheed-ai-openai-f35|Hiza (Lockheed Martin) on Bloomberg Tech, October 2026]] announced on air that OpenAI's team is working with the F-35 programme on *"math and physics challenges"* raised by a new sensor: *"Their team is working right beside us."* Lockheed approached OpenAI after its reported solution of a long-standing math problem. It is the wiki's first case of the lab's people, rather than its models or products, working inside a customer's engineering programme. No scope, terms or result were given. Lockheed otherwise stays model-agnostic, with 55 models in use.
+
+## Its consumer agent, blocked (added 2026-10-18)
+
+[[2026-10-17-roth-verge-websites-closing-doors-to-ai-agents|Roth (The Verge, Oct 2026)]]: OpenAI's agent **Dots** is among the consumer agents users report blocked on major sites, Amazon among them. OpenAI did not reply to The Verge in time. An analyst quoted in the piece asks whether such refusals affect *"the perceived value of the Anthropics and the OpenAIs"*, and answers *"absolutely."*

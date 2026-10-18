@@ -6,9 +6,9 @@ tags: [cloudflare, web-infrastructure, cdn, bot-management, ai-crawl-control, wo
 website: "https://www.cloudflare.com"
 since: 2009
 confidence: 0.75
-last_confirmed: "2026-09-19"
-accessed_at: "2026-09-19"
-source_count: 2
+last_confirmed: "2026-10-18"
+accessed_at: "2026-10-18"
+source_count: 3
 ---
 
 # Cloudflare
@@ -47,3 +47,7 @@ These sources mention Cloudflare without linking here:
 - **How much of the licensing market is Cloudflare's doing?** The 50+ publisher–AI agreements it cites are an industry count. It does not say how many it brokered or enabled.
 - **Is the time-to-exploit chart sourced?** The Investor Day slide showing exploitation windows under 24 hours in 2026 cites no data source; see [[attack-surface-management]].
 - **What did the workforce reduction amount to?** It was disclosed as a plan with no size, timing or functions given.
+
+## Reported as one of the tools sites use against agents (added 2026-10-18)
+
+[[2026-10-17-roth-verge-websites-closing-doors-to-ai-agents|Roth (The Verge, Oct 2026)]] lists Cloudflare among the means by which sites *"clamp down on unwanted AI visitors"*: after its one-click block for AI crawlers in 2025, it began blocking crawlers that scrape for both search indexing and AI training at once, Google's mixed-use pattern described in the [[2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet|one-year report]]. The article's analyst expects the result to be a more *"annoying"* web for people, with more checks that a visitor is human. The first source in the wiki on Cloudflare that is not Cloudflare's own.

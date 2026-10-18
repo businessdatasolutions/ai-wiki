@@ -10,6 +10,22 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-10-18] ingest | Roth (The Verge): websites are closing their doors to AI agents
+
+The user sent one Verge URL ("inject", confirmed as ingest).
+
+**Acquire.** `curl` of the page. The Verge marks the post paywall-eligible (`isAccessibleForFree: false`), but the full text is served in the page: the post's 11 paragraph blocks in the Next.js data come to 901 words against the CMS `wordCount` of 916, and match the JSON-LD `articleBody`. The raw file was built from those blocks with a small regex HTML-to-markdown pass that keeps the links (`html2text` is not installed); a repeated pull quote and the related-posts box were left out. Raw: `raw/articles/2026-10-17-roth-verge-websites-closing-doors-to-ai-agents.md`.
+
+**New source page:** [[2026-10-17-roth-verge-websites-closing-doors-to-ai-agents]] — consumer agents (Muse, Dots, Grok, Instinct) blocked by sites for licensing (Yelp), security (JPMorgan Chase, Schwab) or unstated reasons (Delta, and by user report Cars.com and Amtrak); Amazon v. Perplexity and Amazon against Muse; anti-bot systems catching agents; Meta's retailer partnerships and Shopify opening its storefronts. W&W: `contextual/external-triggers`, `strategic-renewal/business-model`, `digital-transforming/navigating-innovation-ecosystems`.
+
+**Updated concepts (2):** [[agentic-web]] (11) — new section 10 on sites refusing agents, and notes on three open debates (independence of the evidence, who captures the relationship, rebuild the web or teach agents the old one). **Confidence held at 0.75**: the article is the page's first non-vendor source, but it measures no traffic, and the cap rests on the referral-traffic claims. [[ai-agents]] (51) — consumer agents limited by access rather than capability.
+
+**Updated entities (3):** [[Amazon]] (4), [[Cloudflare]] (3; its first non-Cloudflare source), [[OpenAI]] (26).
+
+**Neighbour scan and edges (all `supports`).** Four candidates, all accepted: Klein/Browserbase (whether sites let agents in; Klein's "if a human is allowed to do a task so should their agent" is Perplexity's argument against Amazon), Collison/Stripe (bot detection once traffic is mostly agents), Cloudflare's Content Independence Day report (sites controlling AI access, paid access), Romeo/Oliver Wyman Forum (from attention to machine permission). Considered and not added: Longo & Marchiaro (agentic traffic growth; different question), Ramineni/Fireflies (mentions Perplexity in passing only).
+
+**Dangling:** Emma Roth, The Verge, Meta/Muse, Instinct, xAI, Perplexity (now named on two sources, never as `author:`), Yelp, JPMorgan Chase, Charles Schwab, Delta Air Lines, Shopify, Chris Canal, EquiStamp.
+
 ## [2026-10-17] ingest | Four videos: Katy George (Microsoft, WorkLab) on the org chart and Capability Add, Alfred Lin (Sequoia) at the Stanford AI Club, Varun Sivaram (Emerald AI) on BCG's Pitching Progress, Molly Fowler (Dorm Room Fund) on Bloomberg Tech
 
 The user sent five YouTube URLs. One, `ROz8bhtAVzc`, was already in the wiki as [[2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026]] and was skipped without re-fetching, so its curated manual-caption transcript was not overwritten.

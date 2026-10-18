@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-10-12"
-accessed_at: "2026-10-12"
-source_count: 50
+last_confirmed: "2026-10-18"
+accessed_at: "2026-10-18"
+source_count: 51
 relationships:
   - type: instance-of
     target: generative-ai
@@ -316,3 +316,7 @@ Two October 2026 sources separate the agent from its interface. [[2026-10-01-che
 [[2026-09-14-klein-browserbase-navigate-2026-keynote-agents-will-use-the-internet|Klein (Browserbase)]], who opened the same conference, describes what computer use takes to run in production. It needs cloud browsers, a framework that drives them, a model gateway that routes cheap and hard steps to different models and caches repeated actions, and an identity layer, because sites block unsigned automated traffic and most useful systems sit behind a login. His summary is *"the models are ready, but the web isn't."* Three customer cases, all vendor-reported, show the work these agents do: fetching receipts from merchant portals that have no API (Ramp), replacing a hand-maintained Playwright integration (Checkr), and reading insurance claim status for healthcare providers (Commure). In April, [[2026-04-25-masad-replit-ceo-only-two-jobs-left|Masad]] had called computer-use agents a capability *"mystery"*. Klein places the remaining gap on the web's side, not the model's.
 
 [[2026-10-09-mollick-hbr-how-ai-is-changing-strategy-four-skills|Mollick (HBR IdeaCast)]] adds a correction of his own: *"I thought agents would be harder to pull off than they are"*: agent swarms self-organise because agents, unlike people, share knowledge and goals, so coordination is easier than he expected. He describes delegating to agents as being a *"conjurer"*: writing something like an RFP and receiving finished work.
+
+## Consumer agents at scale meet closed doors (added 2026-10-18)
+
+The two sections above treat agents as the web's main population and computer use as the bridge to sites without APIs. [[2026-10-17-roth-verge-websites-closing-doors-to-ai-agents|Roth (The Verge, Oct 2026)]] reports what happened when consumer agents from the largest labs (Meta's Muse, OpenAI's Dots, xAI's Grok, the startup Instinct) went into wide use: sites blocked them. Some for money (Yelp admits only agents that pay for its data licence), some for security (JPMorgan Chase and Schwab block agents from accounts), some by litigation ([[Amazon]] against Perplexity, and now against Muse), and some by accident, through anti-bot systems built for scammers. The limit on these agents is access more than capability: *"there are just fewer useful things the agents can do"* (Chris Canal, EquiStamp). Detail on [[agentic-web]], section 10.

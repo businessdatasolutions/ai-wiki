@@ -6,9 +6,9 @@ tags: [retail, cloud, ai-infrastructure, hyperscaler-parent, big-tech]
 ticker: "AMZN"
 website: "https://www.amazon.com"
 confidence: 0.78
-last_confirmed: "2026-10-17"
-accessed_at: "2026-10-17"
-source_count: 3
+last_confirmed: "2026-10-18"
+accessed_at: "2026-10-18"
+source_count: 4
 ---
 
 # Amazon
@@ -73,3 +73,7 @@ SORT file.name ASC
 
 - **Diffusion.** In the 1990s he predicted that Amazon would kill Walmart. Walmart is now *"30 times larger than it was in 1997,"* and *"Amazon last year was the first year that they had more revenue than Walmart."* His explanation is the gap between what a technology makes possible and its diffusion to people.
 - **Fire and ice.** Amazon made books profitable before moving to music, then each next category, until it became *"the everything store"*: discipline in one category funds the next.
+
+## Blocking outside shopping agents (added 2026-10-18)
+
+[[2026-10-17-roth-verge-websites-closing-doors-to-ai-agents|Roth (The Verge, Oct 2026)]]: Amazon banned Perplexity's agentic shopping feature and sued in 2025, saying it had *"repeatedly requested"* that Perplexity stop and that agents buying for customers *"should operate openly and respect service provider decisions whether or not to participate."* Perplexity said Amazon wants human eyes on its ads. A judge ordered Perplexity to stop; an appeals court overturned the order in August 2026, and Amazon has filed an amended complaint. In October 2026 Amazon said Meta's agent Muse's *"continued access"* violates its site policies; xAI's Grok, OpenAI's Dots and Instinct are reported unable to use the site as well. See [[agentic-web]].
