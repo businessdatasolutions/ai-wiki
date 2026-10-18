@@ -1,0 +1,3822 @@
+{
+ "question": {
+  "original": "Write a blog of 1000 words with title \"The implications of AI for SME sales.\"",
+  "restated": "What does the wiki say AI means for how small and medium-sized enterprises sell, written up as a ~1000-word blog?",
+  "facets": [
+   "How AI changes buyer discovery and the path to purchase (answer engines, agents)",
+   "How AI changes the selling conversation itself (intent, trust, go-to-market choice)",
+   "SME-specific constraints and capabilities for adopting AI in sales",
+   "Practical implications an SME can act on"
+  ],
+  "language": "en"
+ },
+ "retrieval_query": "AI implications for small and medium enterprise sales, buyer discovery, sales agents, SME adoption",
+ "retrieval_note": "Retrieval query rephrased from the writing instruction into its topical content so qmd matches on substance, not on \"write a blog of 1000 words\".",
+ "params": {
+  "seeds": 12,
+  "hops": 1,
+  "fusion": "rrf",
+  "graph_rank": "bfs",
+  "k_rrf": 60,
+  "graph_w": 0.5,
+  "alpha": 0.7,
+  "ppr_damping": 0.5,
+  "conf_floor": 0.6,
+  "today": "2026-10-12"
+ },
+ "graph_available": true,
+ "graph_warning": null,
+ "qmd_hit_count": 10,
+ "candidates": [
+  {
+   "slug": "concepts/enterprise-ai-adoption",
+   "path": "wiki/concepts/enterprise-ai-adoption.md",
+   "type": "concept",
+   "title": "Enterprise AI Adoption",
+   "qmd_rank": 1,
+   "qmd_score": 1,
+   "graph": [
+    {
+     "from_seed": "concepts/micro-productivity-trap",
+     "edge_type": "caused",
+     "via": "shallow adoption produces task-level gains without firm-level value",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "qmd rank 1 (score 1.00)",
+    "graph: concepts/micro-productivity-trap <--caused<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-10-12",
+   "last_confirmed": "2026-10-12",
+   "days_since_access": 0,
+   "effective_confidence": 0.95,
+   "rrf_score": 0.016393,
+   "fused_score": 0.98,
+   "verdict": "ignore",
+   "reason": "top qmd hit but a corpus-wide adoption hub; the SME-specific adoption facet is covered more precisely by W1/W2 and W9",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/micro-productivity-trap",
+   "path": "wiki/concepts/micro-productivity-trap.md",
+   "type": "concept",
+   "title": "Micro-Productivity Trap",
+   "qmd_rank": 2,
+   "qmd_score": 0.33,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "caused",
+     "via": "shallow adoption produces task-level gains without firm-level value",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era",
+     "edge_type": "supports",
+     "via": "the bureaucrat/movement-of-information role *is* the trap; builders escape; the *theatrics of product management* (slide-decks, VP layers, IC4-experiments-not-in-the-room) as the trap-instantiation",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "qmd rank 2 (score 0.33)",
+    "graph: concepts/enterprise-ai-adoption -->caused--> this (1 hop)",
+    "graph: sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-10-08",
+   "last_confirmed": "2026-10-08",
+   "days_since_access": 4,
+   "effective_confidence": 0.909,
+   "rrf_score": 0.016129,
+   "fused_score": 0.948,
+   "verdict": "use",
+   "anchor": "W9",
+   "reason": "task gains ≠ firm value; quote-generation case (15× faster, +10pp win rate)",
+   "reason_class": null,
+   "promoted": null
+  },
+  {
+   "slug": "concepts/agent-harness",
+   "path": "wiki/concepts/agent-harness.md",
+   "type": "concept",
+   "title": "Agent Harness",
+   "qmd_rank": 4,
+   "qmd_score": 0.17,
+   "graph": [],
+   "retrieval_reasons": [
+    "qmd rank 4 (score 0.17)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-10-12",
+   "last_confirmed": "2026-10-12",
+   "days_since_access": 0,
+   "effective_confidence": 0.95,
+   "rrf_score": 0.015625,
+   "fused_score": 0.934,
+   "verdict": "ignore",
+   "reason": "agent runtime engineering; no bearing on SME selling",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2024-08-13-schwaeke-new-normal-ai-adoption-smes",
+   "path": "wiki/sources/2024-08-13-schwaeke-new-normal-ai-adoption-smes.md",
+   "type": "source",
+   "title": "The new normal: The status quo of AI adoption in SMEs",
+   "qmd_rank": 3,
+   "qmd_score": 0.25,
+   "graph": [
+    {
+     "from_seed": "sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes",
+     "edge_type": "supports",
+     "via": "the same population — SMEs adopting AI — read through two different firm-level lenses. Schwaeke maps 106 studies onto Tornatzky & Fleischer's technology–organization–environment frame and finds resource scarcity among the three largest clusters; Cimino's structural model explains every one of its null results by the same limited financial and technical resources. The review names the barrier the regression keeps running into",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "qmd rank 3 (score 0.25)",
+    "graph: sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.015873,
+   "fused_score": 0.91,
+   "verdict": "use",
+   "anchor": "W1",
+   "reason": "SME adoption barriers (resources, compatibility, ROI) — the SME constraint on AI in sales",
+   "reason_class": null,
+   "promoted": null
+  },
+  {
+   "slug": "sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes",
+   "path": "wiki/sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes.md",
+   "type": "source",
+   "title": "Artificial Intelligence Adoption for Sustainable Growth in SMEs: An Extended Dynamic Capability Framework",
+   "qmd_rank": 5,
+   "qmd_score": 0.14,
+   "graph": [
+    {
+     "from_seed": "sources/2024-08-13-schwaeke-new-normal-ai-adoption-smes",
+     "edge_type": "supports",
+     "via": "the same population — SMEs adopting AI — read through two different firm-level lenses. Schwaeke maps 106 studies onto Tornatzky & Fleischer's technology–organization–environment frame and finds resource scarcity among the three largest clusters; Cimino's structural model explains every one of its null results by the same limited financial and technical resources. The review names the barrier the regression keeps running into",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "qmd rank 5 (score 0.14)",
+    "graph: sources/2024-08-13-schwaeke-new-normal-ai-adoption-smes -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.015385,
+   "fused_score": 0.882,
+   "verdict": "use",
+   "anchor": "W2",
+   "reason": "readiness vs implementation gap in 210 small firms",
+   "reason_class": null,
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+   "path": "wiki/sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity.md",
+   "type": "source",
+   "title": "The Biggest AI Opportunity Isn't Replacing People | Stanford Economist",
+   "qmd_rank": 6,
+   "qmd_score": 0.13,
+   "graph": [],
+   "retrieval_reasons": [
+    "qmd rank 6 (score 0.13)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.015152,
+   "fused_score": 0.869,
+   "verdict": "ignore",
+   "reason": "labour/talent economics, not sales or buyer behaviour",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy",
+   "path": "wiki/sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy.md",
+   "type": "source",
+   "title": "Lighthouse or Landgrab? How to Pick Your AI Sales Strategy",
+   "qmd_rank": 7,
+   "qmd_score": 0.11,
+   "graph": [],
+   "retrieval_reasons": [
+    "qmd rank 7 (score 0.11)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.014925,
+   "fused_score": 0.856,
+   "verdict": "use",
+   "anchor": "W8",
+   "reason": "whom to sell to: proof vs math; Meraki mid-market case",
+   "reason_class": null,
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era",
+   "path": "wiki/sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era.md",
+   "type": "source",
+   "title": "Stanford CS153 Frontier Systems | Nikhyl Singhal from Skip on Product Management in the AI Era",
+   "qmd_rank": 8,
+   "qmd_score": 0.1,
+   "graph": [
+    {
+     "from_seed": "concepts/micro-productivity-trap",
+     "edge_type": "supports",
+     "via": "the bureaucrat/movement-of-information role *is* the trap; builders escape; the *theatrics of product management* (slide-decks, VP layers, IC4-experiments-not-in-the-room) as the trap-instantiation",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "qmd rank 8 (score 0.10)",
+    "graph: concepts/micro-productivity-trap <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.014706,
+   "fused_score": 0.843,
+   "verdict": "ignore",
+   "reason": "product management role in AI era, not sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-28-ai-index-report-2025",
+   "path": "wiki/sources/2026-04-28-ai-index-report-2025.md",
+   "type": "source",
+   "title": "Artificial Intelligence Index Report 2025",
+   "qmd_rank": 9,
+   "qmd_score": 0.09,
+   "graph": [],
+   "retrieval_reasons": [
+    "qmd rank 9 (score 0.09)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.014493,
+   "fused_score": 0.831,
+   "verdict": "ignore",
+   "reason": "macro AI indicators; no SME-sales evidence used",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet",
+   "path": "wiki/sources/2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet.md",
+   "type": "source",
+   "title": "Will Agents actually be able to buy things on the internet? - John Collison, Co-Founder of Stripe",
+   "qmd_rank": 10,
+   "qmd_score": 0.08,
+   "graph": [],
+   "retrieval_reasons": [
+    "qmd rank 10 (score 0.08)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.014286,
+   "fused_score": 0.819,
+   "verdict": "use",
+   "anchor": "W6",
+   "reason": "agentic commerce; AI discovery surfaces niche/long-tail sellers",
+   "reason_class": null,
+   "promoted": null
+  },
+  {
+   "slug": "concepts/ai-knowledge-hiding",
+   "path": "wiki/concepts/ai-knowledge-hiding.md",
+   "type": "concept",
+   "title": "ai-knowledge-hiding",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "instance-of",
+     "via": "a named human-factor failure mode of adoption — individually-discovered AI workflows stay private, so collective productivity gains never materialize even when individual adoption is high",
+     "hops": 1
+    },
+    {
+     "from_seed": "concepts/micro-productivity-trap",
+     "edge_type": "supports",
+     "via": "supplies the individual-level mechanism behind the trap: when efficiency gains are 'taxed' (saved time refilled with more work) and disclosure threatens standing, employees rationally hide their best workflows, so task-level gains never aggregate to firm-level value",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--instance-of<-- this (1 hop)",
+    "graph: concepts/micro-productivity-trap <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.85,
+   "accessed_at": "2026-10-11",
+   "last_confirmed": "2026-10-11",
+   "days_since_access": 1,
+   "effective_confidence": 0.841,
+   "rrf_score": 0.008065,
+   "fused_score": 0.461,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.46); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/automation-vs-augmentation",
+   "path": "wiki/concepts/automation-vs-augmentation.md",
+   "type": "concept",
+   "title": "automation-vs-augmentation",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "per-task deployment lens used by Anand-Wu, MITTRI/Cisco, MIT CISR",
+     "hops": 1
+    },
+    {
+     "from_seed": "concepts/micro-productivity-trap",
+     "edge_type": "contradicts",
+     "via": "process lock-in = automation without redesign; reinvent-the-business resists this trap",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)",
+    "graph: concepts/micro-productivity-trap -->contradicts--> this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-10-11",
+   "last_confirmed": "2026-10-11",
+   "days_since_access": 1,
+   "effective_confidence": 0.94,
+   "rrf_score": 0.007692,
+   "fused_score": 0.458,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.46); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/agentic-web",
+   "path": "wiki/concepts/agentic-web.md",
+   "type": "concept",
+   "title": "Agentic web",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "a case of adoption forced from outside: a firm's customers adopt AI assistants first, and the firm's discovery, marketing and revenue model have to follow whether or not it planned to adopt anything",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.75,
+   "accessed_at": "2026-10-12",
+   "last_confirmed": "2026-10-12",
+   "days_since_access": 0,
+   "effective_confidence": 0.75,
+   "rrf_score": 0.008197,
+   "fused_score": 0.45,
+   "verdict": "use",
+   "anchor": "W3",
+   "reason": "network-level evidence that discovery moved from search to answers; agents between shop and shopper",
+   "reason_class": null,
+   "promoted": null
+  },
+  {
+   "slug": "concepts/ai-sovereignty",
+   "path": "wiki/concepts/ai-sovereignty.md",
+   "type": "concept",
+   "title": "ai-sovereignty",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "the own-versus-rent decision is made per capability and shapes what an organisation can adopt, at what cost, and with what dependency",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.85,
+   "accessed_at": "2026-10-08",
+   "last_confirmed": "2026-10-08",
+   "days_since_access": 4,
+   "effective_confidence": 0.813,
+   "rrf_score": 0.007937,
+   "fused_score": 0.448,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.45); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/dynamic-capabilities",
+   "path": "wiki/concepts/dynamic-capabilities.md",
+   "type": "concept",
+   "title": "dynamic-capabilities",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "AI adoption requires dynamic-capability microfoundations to scale",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-10-12",
+   "last_confirmed": "2026-10-12",
+   "days_since_access": 0,
+   "effective_confidence": 0.95,
+   "rrf_score": 0.007463,
+   "fused_score": 0.446,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.45); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/ai-employment-effects",
+   "path": "wiki/concepts/ai-employment-effects.md",
+   "type": "concept",
+   "title": "ai-employment-effects",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "caused",
+     "via": null,
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era",
+     "edge_type": "supports",
+     "via": "concrete operator-class numbers — 30-70% layoffs in big tech this calendar year (Salesforce / Block / Snap referenced); top-1% PM salaries more than doubled in 18 months; four product-leader contracts crossed eight figures annual; middle-managers (8-15 years tenure) are the named at-risk class",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption -->caused--> this (1 hop)",
+    "graph: sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-10-08",
+   "last_confirmed": "2026-10-08",
+   "days_since_access": 4,
+   "effective_confidence": 0.909,
+   "rrf_score": 0.007353,
+   "fused_score": 0.432,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.43); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/answer-engine-optimization",
+   "path": "wiki/concepts/answer-engine-optimization.md",
+   "type": "concept",
+   "title": "Answer engine optimization",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "a case of adoption forced from outside: a firm's buyers adopt answer engines first, and its marketing has to build new measurement and content routines in response",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.75,
+   "accessed_at": "2026-10-11",
+   "last_confirmed": "2026-10-11",
+   "days_since_access": 1,
+   "effective_confidence": 0.742,
+   "rrf_score": 0.007813,
+   "fused_score": 0.427,
+   "verdict": "use",
+   "anchor": "W5",
+   "reason": "AEO mechanics: prompts vs keywords, consensus signal, low-tech measurement, late-stage buyer arrival",
+   "reason_class": null,
+   "promoted": null
+  },
+  {
+   "slug": "concepts/jagged-frontier",
+   "path": "wiki/concepts/jagged-frontier.md",
+   "type": "concept",
+   "title": "jagged-frontier",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "uses",
+     "via": "task-by-task capability awareness drives deployment choice",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption -->uses--> this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-10-03",
+   "last_confirmed": "2026-10-03",
+   "days_since_access": 9,
+   "effective_confidence": 0.86,
+   "rrf_score": 0.007246,
+   "fused_score": 0.417,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.42); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas",
+   "path": "wiki/sources/2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas.md",
+   "type": "source",
+   "title": "The race takes off in the next big arenas of competition (MGI 2026 update)",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "MGI quantifies the firm-side scale of the AI deployment race: AI foundation cluster (semiconductors + cloud + AI software) added $11T market cap + $500B revenue since 2022; nine omniscalers spent $800B on R&D + capex in 2025 alone",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.007143,
+   "fused_score": 0.41,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.41); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/responsible-ai",
+   "path": "wiki/concepts/responsible-ai.md",
+   "type": "concept",
+   "title": "responsible-ai",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "part-of",
+     "via": "RAI is the governance overlay on adoption decisions",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--part-of<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-10-11",
+   "last_confirmed": "2026-10-11",
+   "days_since_access": 1,
+   "effective_confidence": 0.94,
+   "rrf_score": 0.006757,
+   "fused_score": 0.402,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.40); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/open-source-ai",
+   "path": "wiki/concepts/open-source-ai.md",
+   "type": "concept",
+   "title": "open-source-ai",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "the own-vs-rent flow (frontier APIs for experimentation, owned/open models for production at scale) is a driver of how enterprises adopt AI",
+     "hops": 1
+    },
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "supports",
+     "via": "shares the own-vs-rent ownership motif — 'the model is what you rent, the harness is what you own'; open weights are the substrate that specialization/harnessing is owned on top of",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)",
+    "graph: concepts/agent-harness <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.9,
+   "accessed_at": "2026-10-12",
+   "last_confirmed": "2026-10-12",
+   "days_since_access": 0,
+   "effective_confidence": 0.9,
+   "rrf_score": 0.006849,
+   "fused_score": 0.401,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.40); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/founder-led-sales",
+   "path": "wiki/concepts/founder-led-sales.md",
+   "type": "concept",
+   "title": "founder-led-sales",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "founder-led-sales findings corroborate the demand-side adoption gap from the seller's chair — AI interest that doesn't convert (attention mistaken for traction; 'everyone wants AI but has no budget yet')",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.85,
+   "accessed_at": "2026-09-28",
+   "last_confirmed": "2026-09-28",
+   "days_since_access": 14,
+   "effective_confidence": 0.728,
+   "rrf_score": 0.007042,
+   "fused_score": 0.383,
+   "verdict": "ignore",
+   "reason": "its sales claims are carried by its anchors W7 and W8, read directly",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/generative-ai",
+   "path": "wiki/concepts/generative-ai.md",
+   "type": "concept",
+   "title": "generative-ai",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "caused",
+     "via": "the 2024 jump from 55% → 78% adoption was driven by GenAI specifically",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--caused<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-09-19",
+   "last_confirmed": "2026-09-19",
+   "days_since_access": 23,
+   "effective_confidence": 0.736,
+   "rrf_score": 0.006944,
+   "fused_score": 0.379,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.38); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/systems-thinking",
+   "path": "wiki/concepts/systems-thinking.md",
+   "type": "concept",
+   "title": "systems-thinking",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "workflow redesign in the micro-productivity-trap escape is systems-thinking applied to AI",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.9,
+   "accessed_at": "2026-10-08",
+   "last_confirmed": "2026-10-08",
+   "days_since_access": 4,
+   "effective_confidence": 0.861,
+   "rrf_score": 0.006579,
+   "fused_score": 0.379,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.38); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up",
+   "path": "wiki/sources/2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up.md",
+   "type": "source",
+   "title": "How To Build A Company With AI From The Ground Up",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "startups-as-AI-native-from-day-one thesis: large incumbents face a maintain-while-unwinding constraint that small companies don't; Mutiny cited as a skunk-works-team exception pattern",
+     "hops": 1
+    },
+    {
+     "from_seed": "concepts/micro-productivity-trap",
+     "edge_type": "supports",
+     "via": "open-loop vs closed-loop framing — control-systems vocabulary for the trap; orgs that run open-loop are 'inherently lossy'; closed-loop orgs continuously monitor + adjust; the framing is the trap-escape mechanism named in vendor-neutral terms",
+     "hops": 1
+    },
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "supports",
+     "via": "AI-as-operating-system framing — the 'intelligence layer' Hu describes is the wiki's harness vocabulary at company scale; 'queryable organization' is the persistent-context substrate the harness reads",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)",
+    "graph: concepts/micro-productivity-trap <--supports<-- this (1 hop)",
+    "graph: concepts/agent-harness <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.00641,
+   "fused_score": 0.368,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.37); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/technology-adoption-theories",
+   "path": "wiki/concepts/technology-adoption-theories.md",
+   "type": "concept",
+   "title": "Technology adoption theories",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "supplies the explanatory models the adoption concept had lacked. The wiki described enterprise AI adoption through practitioner maturity frameworks and the dynamic-capabilities spine; these are the information-systems theories that predict whether a firm decides to adopt and whether its people use what was adopted",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.85,
+   "accessed_at": "2026-10-08",
+   "last_confirmed": "2026-10-08",
+   "days_since_access": 4,
+   "effective_confidence": 0.813,
+   "rrf_score": 0.006494,
+   "fused_score": 0.366,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.37); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-25-masad-replit-ceo-only-two-jobs-left",
+   "path": "wiki/sources/2026-04-25-masad-replit-ceo-only-two-jobs-left.md",
+   "type": "source",
+   "title": "Replit's CEO On The Only Two Jobs Left In The Company Of The Future — Amjad Masad at YC Founder Firesides",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "vibe-coding-resident team as an internal-structure pattern: a generalist team with vague mission ('go around the company and make it better') deputising agents to solve concrete bottlenecks (support queue prioritisation, HR onboarding tooling)",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.006329,
+   "fused_score": 0.363,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.36); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-06-mit-ocw-future-of-mit-open-education",
+   "path": "wiki/sources/2026-05-06-mit-ocw-future-of-mit-open-education.md",
+   "type": "source",
+   "title": "The Future of MIT Open Education",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "MIT as institutional adopter — financial-sustainability constraint (subsidy dropping to $0 in 4 years) forces a hybrid free-and-paid model; phased platform consolidation (MIT Learn unifying OCW/MITx/Professional Ed by July 2026); AI translation/personalization as the new abstraction layer",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.00625,
+   "fused_score": 0.358,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.36); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/strategic-foresight",
+   "path": "wiki/concepts/strategic-foresight.md",
+   "type": "concept",
+   "title": "strategic-foresight",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "informs deployment decisions under deep uncertainty",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.87,
+   "accessed_at": "2026-09-21",
+   "last_confirmed": "2026-09-21",
+   "days_since_access": 21,
+   "effective_confidence": 0.689,
+   "rrf_score": 0.006667,
+   "fused_score": 0.356,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.36); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china",
+   "path": "wiki/sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china.md",
+   "type": "source",
+   "title": "AI Agents: Cool Demos vs Real Revenue — What Western E-Commerce Can Learn from China",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "explicitly cites the BCG / PwC / McKinsey 'every company does AI, very few see economic value' adoption gap — and locates the gap in (a) trust deficit, (b) demos-vs-scale-failure, (c) silo-vs-ecosystem mismatch, (d) cost-vs-growth framing",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet",
+     "edge_type": "supports",
+     "via": "Shared topic: agents taking over consumer purchasing. Ognibeni predicts search-driven e-commerce is the first format agents absorb; Collison expects 'people's agents … doing a huge amount of the commerce for them'.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)",
+    "graph: sources/2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.006173,
+   "fused_score": 0.354,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.35); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-12-mgi-virtual-event-race-takes-off-next-big-arenas",
+   "path": "wiki/sources/2026-05-12-mgi-virtual-event-race-takes-off-next-big-arenas.md",
+   "type": "source",
+   "title": "The race takes off in the next big arenas of competition (MGI virtual event)",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "Q&A surfaces the 'omniscalers generate more cash each year than US banks lend in fresh loans to US businesses' framing — a more visceral firm-vs-banking-system scale anchor than the PDF's raw numbers",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.006098,
+   "fused_score": 0.35,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.35); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells",
+   "path": "wiki/sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells.md",
+   "type": "source",
+   "title": "How One of Asia's Biggest Retailers Is Reinventing the Way It Sells",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "first wiki source naming a *named CEO-level public articulation of agentic-AI as a strategic threat to the customer relationship*, plus a three-axis framework for AI investment (personalization / cost management / running a better business) used at scale in a multi-brand multi-country retail incumbent",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005952,
+   "fused_score": 0.341,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.34); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2025-05-06-jassy-amazon-agility-ai-strategy-changing-role-of-managers",
+   "path": "wiki/sources/2025-05-06-jassy-amazon-agility-ai-strategy-changing-role-of-managers.md",
+   "type": "source",
+   "title": "Amazon CEO Andy Jassy on Agility, AI Strategy, and the Changing Role of Managers",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/micro-productivity-trap",
+     "edge_type": "supports",
+     "via": "target-firm CEO operator-of-trap-escape worked example — 15% IC-to-manager ratio target (already beaten in Q1), 1000+ no-bureaucracy emails received, 375 processes changed, 5-day RTO mandate",
+     "hops": 1
+    },
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "supports",
+     "via": "first-party-CEO May-2025 mention of 'agentic capabilities — take a bunch of automated actions in succession' as a built-in Bedrock feature; vendor characterisation of the harness layer ~9 months before Lopopolo, ~12 months before Böckeler",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/micro-productivity-trap <--supports<-- this (1 hop)",
+    "graph: concepts/agent-harness <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005682,
+   "fused_score": 0.326,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.33); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/ai-coding-productivity-evidence",
+   "path": "wiki/concepts/ai-coding-productivity-evidence.md",
+   "type": "concept",
+   "title": "AI coding productivity — the evidence",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/micro-productivity-trap",
+     "edge_type": "supports",
+     "via": null,
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/micro-productivity-trap <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.85,
+   "accessed_at": "2026-10-08",
+   "last_confirmed": "2026-10-08",
+   "days_since_access": 4,
+   "effective_confidence": 0.813,
+   "rrf_score": 0.005747,
+   "fused_score": 0.324,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.32); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-13-jha-emergent-democratizing-app-building-with-claude",
+   "path": "wiki/sources/2026-05-13-jha-emergent-democratizing-app-building-with-claude.md",
+   "type": "source",
+   "title": "How Emergent is making app building more accessible with Claude",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "Counter-case to the slow-enterprise-adoption framing: Emergent reached *$100M ARR in 8 months* by serving non-enterprise (SMB + entrepreneur + domain-expert) users. CEO names the deliberate enterprise → consumer/SMB pivot after observing that *'adoption in enterprise is going to be slow'* — the wiki's clearest 2026 named instance of *adoption-velocity asymmetry favouring the long tail*.",
+     "hops": 1
+    },
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "supports",
+     "via": "Direct practitioner naming of the harness construct as the locus of product differentiation: *'agent is the product right in many ways and like the harness quality really really matters'* (~5:48) and *'our agent quality, the harness quality is really really strong and it's continuously evolving'* (~10:04). Emergent owns the full stack — container tech, multi-agent orchestration, long-term cross-session memory, pre/post-deploy security agents, refactoring agent — and frames *that whole envelope* as the harness. Strongest founder-vantage anchor the wiki holds on the harness-as-competitive-moat thesis.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)",
+    "graph: concepts/agent-harness <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.7,
+   "accessed_at": "2026-05-20",
+   "last_confirmed": "2026-05-20",
+   "days_since_access": null,
+   "effective_confidence": 0.7,
+   "rrf_score": 0.006024,
+   "fused_score": 0.323,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.32); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-14-thompson-the-daily-workers-letting-ai-do-their-jobs",
+   "path": "wiki/sources/2026-04-14-thompson-the-daily-workers-letting-ai-do-their-jobs.md",
+   "type": "source",
+   "title": "The Workers Letting A.I. Do Their Jobs",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/micro-productivity-trap",
+     "edge_type": "supports",
+     "via": "Direct empirical: 20x faster at two-person startups vs 10% faster at Google; lay-off-then-rehire-within-6-months anecdote; explicit 1980s productivity-paradox parallel for AI",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/micro-productivity-trap <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005618,
+   "fused_score": 0.322,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.32); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/document-intelligence",
+   "path": "wiki/concepts/document-intelligence.md",
+   "type": "concept",
+   "title": "document-intelligence",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "part-of",
+     "via": "document understanding is a load-bearing capability for enterprise AI on unstructured back/front-office data",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--part-of<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.72,
+   "accessed_at": "2026-07-01",
+   "last_confirmed": "2026-06-15",
+   "days_since_access": 103,
+   "effective_confidence": 0.229,
+   "rrf_score": 0.007576,
+   "fused_score": 0.32,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.32); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-06-bockeler-engineering-of-ai-agents-context-harnessing-autonomy",
+   "path": "wiki/sources/2026-05-06-bockeler-engineering-of-ai-agents-context-harnessing-autonomy.md",
+   "type": "source",
+   "title": "The Engineering of AI Agents: Context, Harnessing, and Autonomy",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/micro-productivity-trap",
+     "edge_type": "supports",
+     "via": "Goldilocks speed framing + Amazon-adding-senior-engineer-gateways reaction is the same diagnosis as Bain/OpenAI and Sternfels — speed pressure without supervision integrity erases productivity gains",
+     "hops": 1
+    },
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "supports",
+     "via": "first independent-practitioner-consultancy vantage on harness engineering as a discipline; adds feed-forward/feedback decomposition, CPU-vs-GPU framing, structural tests as feedback, enhanced lint messages as good prompt injection",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/micro-productivity-trap <--supports<-- this (1 hop)",
+    "graph: concepts/agent-harness <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005556,
+   "fused_score": 0.319,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.32); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success",
+   "path": "wiki/sources/2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success.md",
+   "type": "source",
+   "title": "Industrial AI That Works: Strategy, Survival, and Success | MIT Executive Education",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2024-08-13-schwaeke-new-normal-ai-adoption-smes",
+     "edge_type": "supports",
+     "via": "fit before access. Compatibility with the existing IT landscape, strategy and work practices is the review's largest cluster (19 of 106 studies); Carrier's industrial-AI argument is that adoption speed and system-fit beat technology access. Two vantages — literature synthesis and an MIT operations lecturer — converging on the same first-order condition",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2024-08-13-schwaeke-new-normal-ai-adoption-smes -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005495,
+   "fused_score": 0.315,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.32); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2025-01-08-khanfar-factors-influencing-ai-adoption-slr",
+   "path": "wiki/sources/2025-01-08-khanfar-factors-influencing-ai-adoption-slr.md",
+   "type": "source",
+   "title": "Factors influencing the adoption of artificial intelligence systems: a systematic literature review",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2024-08-13-schwaeke-new-normal-ai-adoption-smes",
+     "edge_type": "supports",
+     "via": "two systematic reviews that organise AI adoption with the same TOE frame and land on overlapping factor lists — compatibility, infrastructure and technical readiness, top-management support, culture, competitive pressure, regulation. Khanfar reviews organisations of any size; Schwaeke restricts to SMEs; Khanfar adds the individual level that Schwaeke folds into compatibility",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2024-08-13-schwaeke-new-normal-ai-adoption-smes <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005435,
+   "fused_score": 0.312,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.31); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "syntheses/organizational-frameworks-for-ai-adoption",
+   "path": "wiki/syntheses/organizational-frameworks-for-ai-adoption.md",
+   "type": "synthesis",
+   "title": "organizational-frameworks-for-ai-adoption",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "instance-of",
+     "via": "synthesizes 6 frameworks describing different decision layers within enterprise AI adoption",
+     "hops": 1
+    },
+    {
+     "from_seed": "concepts/micro-productivity-trap",
+     "edge_type": "supports",
+     "via": "the layered framing makes the trap legible — most failures are layer mismatches",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--instance-of<-- this (1 hop)",
+    "graph: concepts/micro-productivity-trap <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.9,
+   "accessed_at": "2026-09-18",
+   "last_confirmed": "2026-07-15",
+   "days_since_access": 24,
+   "effective_confidence": 0.689,
+   "rrf_score": 0.005814,
+   "fused_score": 0.311,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.31); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2025-07-25-albishri-breaking-barriers-genai-adoption",
+   "path": "wiki/sources/2025-07-25-albishri-breaking-barriers-genai-adoption.md",
+   "type": "source",
+   "title": "Breaking barriers: investigating generative AI adoption and organizational use",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2024-08-13-schwaeke-new-normal-ai-adoption-smes",
+     "edge_type": "supports",
+     "via": "compatibility first. The paper cites Schwaeke's eight TOE clusters directly, and its own estimates put compatibility ahead of relative advantage as a driver of trialability (β = 0.325 vs 0.256) — the individual-level counterpart of compatibility being the largest cluster in Schwaeke's review",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes",
+     "edge_type": "contradicts",
+     "via": "whether acceptance-side measures license organisational conclusions. This paper stops at continued-use intention and still advises firms to be first movers and draws 'valuable insights to organizations'; Cimino, measuring firm-level readiness and implementation separately, finds readiness does not reach economic or collaborative performance — only implementation does. Not a contradiction of the estimates, which measure different things, but of the inference from the one to the other",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2024-08-13-schwaeke-new-normal-ai-adoption-smes <--supports<-- this (1 hop)",
+    "graph: sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes <--contradicts<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005376,
+   "fused_score": 0.308,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.31); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/ai-agents",
+   "path": "wiki/concepts/ai-agents.md",
+   "type": "concept",
+   "title": "ai-agents",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "part-of",
+     "via": "the runtime engineering layer that wraps a foundation model to turn it into a production-grade agent",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness -->part-of--> this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-10-12",
+   "last_confirmed": "2026-10-12",
+   "days_since_access": 0,
+   "effective_confidence": 0.95,
+   "rrf_score": 0.005155,
+   "fused_score": 0.308,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-03-28-nguyen-ai-adoption-toe-dynamic-capabilities",
+   "path": "wiki/sources/2026-03-28-nguyen-ai-adoption-toe-dynamic-capabilities.md",
+   "type": "source",
+   "title": "The role of the level of artificial intelligence adoption on business model innovation, sustainable competitive advantage, and firm performance: Integrating the TOE framework and Dynamic Capabilities theory",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2024-08-13-schwaeke-new-normal-ai-adoption-smes",
+     "edge_type": "supports",
+     "via": "government support matters for small firms specifically. The multi-group analysis finds the government-support path to adoption level positive among SMEs (β = 0.247) and absent among large firms (−0.01; difference p = 0.036). Schwaeke's regulation cluster argues that policy should offset SMEs' financial constraints; this is a measured instance",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes",
+     "edge_type": "supports",
+     "via": "implementation depth, not readiness, is what reaches performance. Nguyen's level-of-adoption construct is close to Cimino's AI adoption intensity — 'AI technologies have significantly transformed our firm's business processes' against 'AI has substantially changed our business processes' — and in both models it is the adoption measure with a significant path to firm performance. The two place dynamic capabilities on opposite sides of adoption: Cimino as its cause, Nguyen as the mechanism that turns it into value",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2024-08-13-schwaeke-new-normal-ai-adoption-smes <--supports<-- this (1 hop)",
+    "graph: sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.005319,
+   "fused_score": 0.305,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.30); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/agent-development-lifecycle",
+   "path": "wiki/concepts/agent-development-lifecycle.md",
+   "type": "concept",
+   "title": "agent-development-lifecycle",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "uses",
+     "via": "the harness is the artifact the lifecycle constructs, validates, and operates",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--uses<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.88,
+   "accessed_at": "2026-10-11",
+   "last_confirmed": "2026-10-11",
+   "days_since_access": 1,
+   "effective_confidence": 0.87,
+   "rrf_score": 0.005263,
+   "fused_score": 0.304,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "syntheses/ai-worker-maturity-levels",
+   "path": "wiki/syntheses/ai-worker-maturity-levels.md",
+   "type": "synthesis",
+   "title": "ai-worker-maturity-levels",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/enterprise-ai-adoption",
+     "edge_type": "supports",
+     "via": "the worker-level counterpart to the organizational maturity stack — org frameworks presume a workforce fluency distribution this model makes assessable",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.8,
+   "accessed_at": "2026-09-17",
+   "last_confirmed": "2026-08-31",
+   "days_since_access": 25,
+   "effective_confidence": 0.606,
+   "rrf_score": 0.005882,
+   "fused_score": 0.302,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.30); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/foundation-models",
+   "path": "wiki/concepts/foundation-models.md",
+   "type": "concept",
+   "title": "foundation-models",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "uses",
+     "via": "the harness wraps a (rented, swappable) foundation model in a runtime that adds context/constraints/contracts/compounding",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness -->uses--> this (1 hop)"
+   ],
+   "stored_confidence": 0.88,
+   "accessed_at": "2026-10-12",
+   "last_confirmed": "2026-10-12",
+   "days_since_access": 0,
+   "effective_confidence": 0.88,
+   "rrf_score": 0.005102,
+   "fused_score": 0.296,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/agentic-engineering",
+   "path": "wiki/concepts/agentic-engineering.md",
+   "type": "concept",
+   "title": "agentic-engineering",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "depends-on",
+     "via": "agentic engineering's primary operational tool is the harness",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--depends-on<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-10-03",
+   "last_confirmed": "2026-10-03",
+   "days_since_access": 9,
+   "effective_confidence": 0.86,
+   "rrf_score": 0.004902,
+   "fused_score": 0.282,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/llm-wiki",
+   "path": "wiki/concepts/llm-wiki.md",
+   "type": "concept",
+   "title": "llm-wiki",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "part-of",
+     "via": "the LLM Wiki is one of several persistent-context substrates an agent harness reads from — distinguished from vector-RAG (no compounding) and fat-skills (action-oriented) by its compile-and-maintain semantics",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--part-of<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.93,
+   "accessed_at": "2026-10-12",
+   "last_confirmed": "2026-10-12",
+   "days_since_access": 0,
+   "effective_confidence": 0.93,
+   "rrf_score": 0.004762,
+   "fused_score": 0.282,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/agent-fleet-management",
+   "path": "wiki/concepts/agent-fleet-management.md",
+   "type": "concept",
+   "title": "Agent fleet management",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "depends-on",
+     "via": null,
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--depends-on<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.75,
+   "accessed_at": "2026-09-28",
+   "last_confirmed": "2026-09-28",
+   "days_since_access": 14,
+   "effective_confidence": 0.642,
+   "rrf_score": 0.005208,
+   "fused_score": 0.272,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/small-language-models",
+   "path": "wiki/concepts/small-language-models.md",
+   "type": "concept",
+   "title": "small-language-models",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "uses",
+     "via": "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness -->uses--> this (1 hop)"
+   ],
+   "stored_confidence": 0.75,
+   "accessed_at": "2026-10-12",
+   "last_confirmed": "2026-10-12",
+   "days_since_access": 0,
+   "effective_confidence": 0.75,
+   "rrf_score": 0.00495,
+   "fused_score": 0.272,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/react-reasoning-acting",
+   "path": "wiki/concepts/react-reasoning-acting.md",
+   "type": "concept",
+   "title": "react-reasoning-acting",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "uses",
+     "via": "the harness operationalises the reason–act–observe loop ReAct (2022) first prompted by hand",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness -->uses--> this (1 hop)"
+   ],
+   "stored_confidence": 0.9,
+   "accessed_at": "2026-09-18",
+   "last_confirmed": "2026-09-18",
+   "days_since_access": 24,
+   "effective_confidence": 0.689,
+   "rrf_score": 0.005,
+   "fused_score": 0.267,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/industrial-ai-agents",
+   "path": "wiki/concepts/industrial-ai-agents.md",
+   "type": "concept",
+   "title": "industrial-ai-agents",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "depends-on",
+     "via": "the runtime layer is still required; industrial-AI agents add a semantic-data-layer dependency on top",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--depends-on<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.75,
+   "accessed_at": "2026-10-04",
+   "last_confirmed": "2026-10-04",
+   "days_since_access": 8,
+   "effective_confidence": 0.686,
+   "rrf_score": 0.004854,
+   "fused_score": 0.259,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/graph-engineering",
+   "path": "wiki/concepts/graph-engineering.md",
+   "type": "concept",
+   "title": "graph-engineering",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "part-of",
+     "via": "the harness is the outermost of three nested scopes Google Cloud states in one breath — harness contains the loop, and the loop sits as a node in the graph. Graph engineering is the orchestration layer inside the harness, not an alternative to it",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness -->part-of--> this (1 hop)"
+   ],
+   "stored_confidence": 0.75,
+   "accessed_at": "2026-09-18",
+   "last_confirmed": "2026-09-18",
+   "days_since_access": 24,
+   "effective_confidence": 0.574,
+   "rrf_score": 0.005051,
+   "fused_score": 0.256,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/software-3.0",
+   "path": "wiki/concepts/software-3.0.md",
+   "type": "concept",
+   "title": "software-3.0",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "depends-on",
+     "via": "a Software 3.0 program needs a runtime; that runtime is the agent harness",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--depends-on<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.88,
+   "accessed_at": "2026-09-19",
+   "last_confirmed": "2026-09-19",
+   "days_since_access": 23,
+   "effective_confidence": 0.682,
+   "rrf_score": 0.004673,
+   "fused_score": 0.249,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/multi-agent-failure-modes",
+   "path": "wiki/concepts/multi-agent-failure-modes.md",
+   "type": "concept",
+   "title": "Multi-agent failure modes",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "depends-on",
+     "via": null,
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--depends-on<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.85,
+   "accessed_at": "2026-09-18",
+   "last_confirmed": "2026-09-18",
+   "days_since_access": 24,
+   "effective_confidence": 0.651,
+   "rrf_score": 0.004717,
+   "fused_score": 0.248,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "entities/Antigravity",
+   "path": "wiki/entities/Antigravity.md",
+   "type": "entity",
+   "title": "Antigravity",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "instance-of",
+     "via": "Antigravity is a concrete agent harness — an ecosystem of IDE, web agent surface, CLI, SDK, and a Gemini-API managed agent",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--instance-of<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.75,
+   "accessed_at": "2026-10-01",
+   "last_confirmed": "2026-10-01",
+   "days_since_access": 11,
+   "effective_confidence": 0.728,
+   "rrf_score": 0.004545,
+   "fused_score": 0.247,
+   "verdict": "ignore",
+   "reason": "entity catalogue card; facets need claims, not identities",
+   "reason_class": "wrong-granularity",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/knowledge-graphs",
+   "path": "wiki/concepts/knowledge-graphs.md",
+   "type": "concept",
+   "title": "knowledge-graphs",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "part-of",
+     "via": "knowledge graphs are one of the persistent-context substrates the harness reads from — Chatterjee's Context layer; Bratanic's dream-phase memory; SurrealDB's GraphRAG retrieval",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--part-of<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.9,
+   "accessed_at": "2026-09-05",
+   "last_confirmed": "2026-09-04",
+   "days_since_access": 37,
+   "effective_confidence": 0.597,
+   "rrf_score": 0.004808,
+   "fused_score": 0.246,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "entities/Agent-Development-Kit",
+   "path": "wiki/entities/Agent-Development-Kit.md",
+   "type": "entity",
+   "title": "Agent-Development-Kit",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "instance-of",
+     "via": "ADK is a framework-layer harness — it supplies the loop, the tool wiring, the agent composition primitives and the orchestration graph around a model",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--instance-of<-- this (1 hop)"
+   ],
+   "missing": true,
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004587,
+   "fused_score": 0.246,
+   "verdict": "ignore",
+   "reason": "entity catalogue card; facets need claims, not identities",
+   "reason_class": "wrong-granularity",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2024-12-19-anthropic-building-effective-agents",
+   "path": "wiki/sources/2024-12-19-anthropic-building-effective-agents.md",
+   "type": "source",
+   "title": "Building effective agents",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "uses",
+     "via": null,
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--uses<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004274,
+   "fused_score": 0.245,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2025-06-27-guthrie-braintrust-evals-101-ai-engineer-worlds-fair",
+   "path": "wiki/sources/2025-06-27-guthrie-braintrust-evals-101-ai-engineer-worlds-fair.md",
+   "type": "source",
+   "title": "Evals 101 — Doug Guthrie, Braintrust",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "supports",
+     "via": "the eval discipline operationalises Chatterjee's Contracts (scored output against criteria) and Compounding (telemetry feeds learning) harness layers; Braintrust is the wiki's first vendor-specific eval-platform anchor",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004237,
+   "fused_score": 0.243,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "entities/Claude-Code",
+   "path": "wiki/entities/Claude-Code.md",
+   "type": "entity",
+   "title": "Claude-Code",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "instance-of",
+     "via": "a productised agent harness — the reference coding agent practitioners benchmark other harnesses against",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--instance-of<-- this (1 hop)"
+   ],
+   "missing": true,
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004505,
+   "fused_score": 0.242,
+   "verdict": "ignore",
+   "reason": "entity catalogue card; facets need claims, not identities",
+   "reason_class": "wrong-granularity",
+   "promoted": null
+  },
+  {
+   "slug": "entities/Cursor",
+   "path": "wiki/entities/Cursor.md",
+   "type": "entity",
+   "title": "Cursor",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "instance-of",
+     "via": "an IDE-resident harness — editor, tools, context assembly and agent loop around frontier and in-house models",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--instance-of<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.75,
+   "accessed_at": "2026-10-08",
+   "last_confirmed": "2026-10-08",
+   "days_since_access": 4,
+   "effective_confidence": 0.742,
+   "rrf_score": 0.004425,
+   "fused_score": 0.242,
+   "verdict": "ignore",
+   "reason": "entity catalogue card; facets need claims, not identities",
+   "reason_class": "wrong-granularity",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2025-07-31-wang-agentspec-runtime-enforcement-llm-agents",
+   "path": "wiki/sources/2025-07-31-wang-agentspec-runtime-enforcement-llm-agents.md",
+   "type": "source",
+   "title": "AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "uses",
+     "via": null,
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--uses<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004202,
+   "fused_score": 0.241,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2025-09-28-husain-ai-evaluations-clearly-explained-50-min",
+   "path": "wiki/sources/2025-09-28-husain-ai-evaluations-clearly-explained-50-min.md",
+   "type": "source",
+   "title": "AI Evaluations Clearly Explained in 50 Minutes (Real Example) — Hamel Husain on Peter Yang's podcast",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "supports",
+     "via": "fills in the Contracts and Compounding harness layers with a teachable PM/engineer workflow — Husain's 'annotation and counting is the most valuable process' echoes Chatterjee's contracts-as-evaluable-specifications claim",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004167,
+   "fused_score": 0.239,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2025-11-26-anthropic-effective-harnesses-long-running-agents",
+   "path": "wiki/sources/2025-11-26-anthropic-effective-harnesses-long-running-agents.md",
+   "type": "source",
+   "title": "Effective harnesses for long-running agents",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "uses",
+     "via": null,
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--uses<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004132,
+   "fused_score": 0.237,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/spec-driven-development",
+   "path": "wiki/concepts/spec-driven-development.md",
+   "type": "concept",
+   "title": "Spec-driven development",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "uses",
+     "via": "dedicated SDD tools inject the spec, plan and project-wide rules into the agent's context and enforce them, which is harness work. Kmiecik calls the tool 'a given spec-driven development harness'",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--uses<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.75,
+   "accessed_at": "2026-09-19",
+   "last_confirmed": "2026-09-19",
+   "days_since_access": 23,
+   "effective_confidence": 0.581,
+   "rrf_score": 0.00463,
+   "fused_score": 0.235,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-02-17-langchain-improving-deep-agents-harness-engineering",
+   "path": "wiki/sources/2026-02-17-langchain-improving-deep-agents-harness-engineering.md",
+   "type": "source",
+   "title": "Improving deep agents with harness engineering",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "uses",
+     "via": null,
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--uses<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004098,
+   "fused_score": 0.235,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-03-05-lou-deepmind-autoharness-code-harness-synthesis",
+   "path": "wiki/sources/2026-03-05-lou-deepmind-autoharness-code-harness-synthesis.md",
+   "type": "source",
+   "title": "AutoHarness: improving LLM agents by automatically synthesizing a code harness",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "uses",
+     "via": null,
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--uses<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004065,
+   "fused_score": 0.233,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "entities/Devin",
+   "path": "wiki/entities/Devin.md",
+   "type": "entity",
+   "title": "Devin",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "instance-of",
+     "via": "a commercial harness — cloud runtime, tools, session isolation, review product and a reusable-procedure layer around a frontier model",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--instance-of<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.75,
+   "accessed_at": "2026-08-30",
+   "last_confirmed": "2026-08-30",
+   "days_since_access": 43,
+   "effective_confidence": 0.667,
+   "rrf_score": 0.004386,
+   "fused_score": 0.232,
+   "verdict": "ignore",
+   "reason": "entity catalogue card; facets need claims, not identities",
+   "reason_class": "wrong-granularity",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-03-10-trivedy-langchain-anatomy-of-an-agent-harness",
+   "path": "wiki/sources/2026-03-10-trivedy-langchain-anatomy-of-an-agent-harness.md",
+   "type": "source",
+   "title": "The Anatomy of an Agent Harness",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "uses",
+     "via": null,
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--uses<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004032,
+   "fused_score": 0.231,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-03-20-huggingface-agentic-evaluations-workshop",
+   "path": "wiki/sources/2026-03-20-huggingface-agentic-evaluations-workshop.md",
+   "type": "source",
+   "title": "Agentic Evaluations Workshop — Deep Dive on the Future of Evals for Agents",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "supports",
+     "via": "the workshop's mental model of agent = LLM + scaffold + environment + tools matches the harness layering; eval reliability is treated as a property of the harness, not just the underlying model",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.004,
+   "fused_score": 0.229,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-03-26-pan-natural-language-agent-harnesses",
+   "path": "wiki/sources/2026-03-26-pan-natural-language-agent-harnesses.md",
+   "type": "source",
+   "title": "Natural-Language Agent Harnesses",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "uses",
+     "via": null,
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--uses<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003968,
+   "fused_score": 0.228,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-03-30-lee-meta-harness-end-to-end-optimization",
+   "path": "wiki/sources/2026-03-30-lee-meta-harness-end-to-end-optimization.md",
+   "type": "source",
+   "title": "Meta-Harness: End-to-End Optimization of Model Harnesses",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "uses",
+     "via": null,
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--uses<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003937,
+   "fused_score": 0.226,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-09-oceanbase-ex-brain-knowledge-base-that-thinks",
+   "path": "wiki/sources/2026-04-09-oceanbase-ex-brain-knowledge-base-that-thinks.md",
+   "type": "source",
+   "title": "I Built a Knowledge Base That Thinks — Inspired by Karpathy's LLM Wiki",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "supports",
+     "via": "second seekdb/SurrealDB-class anchor on multi-modal-database-as-harness-substrate after SurrealDB 2026; MCP-integration walkthrough demonstrates the harness-runtime / database-substrate boundary",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003906,
+   "fused_score": 0.224,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-16-raju-rag-isnt-dead-karpathys-llm-wiki-explained",
+   "path": "wiki/sources/2026-04-16-raju-rag-isnt-dead-karpathys-llm-wiki-explained.md",
+   "type": "source",
+   "title": "RAG Isn't Dead. But Something Is. Karpathy's LLM Wiki Explained",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "supports",
+     "via": "the schema (CLAUDE.md/AGENTS.md) framed as the configuration file telling the LLM how to maintain the wiki — direct articulation of the harness-config/persistent-context layer",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003876,
+   "fused_score": 0.222,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "entities/Cline",
+   "path": "wiki/entities/Cline.md",
+   "type": "entity",
+   "title": "Cline",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "instance-of",
+     "via": "Cline is a named coding-agent harness — one of the *convergent* top coding agents Osmani identifies (alongside Claude Code, Cursor, Codex, Aider)",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--instance-of<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.78,
+   "accessed_at": "2026-05-25",
+   "last_confirmed": "2026-05-25",
+   "days_since_access": 140,
+   "effective_confidence": 0.532,
+   "rrf_score": 0.004464,
+   "fused_score": 0.221,
+   "verdict": "ignore",
+   "reason": "entity catalogue card; facets need claims, not identities",
+   "reason_class": "wrong-granularity",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-23-tan-yc-how-to-make-claude-code-your-ai-engineering-team-gstack",
+   "path": "wiki/sources/2026-04-23-tan-yc-how-to-make-claude-code-your-ai-engineering-team-gstack.md",
+   "type": "source",
+   "title": "How to Make Claude Code Your AI Engineering Team",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "supports",
+     "via": "GStack — open-source toolkit by Garry Tan (YC president/CEO) that wraps Claude Code with skills (office hours / design / code review / QA / browser testing); first-party founder-CEO worked example of a packaged harness-of-skills shipping in 3 weeks and outpacing Ruby on Rails stars",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003846,
+   "fused_score": 0.221,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-27-liu-rag-llm-wiki-or-gbrain-how-your-agent-remembers",
+   "path": "wiki/sources/2026-04-27-liu-rag-llm-wiki-or-gbrain-how-your-agent-remembers.md",
+   "type": "source",
+   "title": "RAG, LLM Wiki, or Gbrain? How Your Agent Remembers Changes Everything",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "supports",
+     "via": "explicit thin-harness/fat-skills framing — GBrain keeps the harness to ~200 lines while the skills carry all intelligence as full-workflow markdown documents; CLAUDE.md + RESOLVER.md routing pattern named; convergent with Karpathy's harness-engineering and Bockeler's fat-context-thin-runtime",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003817,
+   "fused_score": 0.219,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-27-surrealdb-knowledge-graphs-for-ai-agents-practical-guide",
+   "path": "wiki/sources/2026-04-27-surrealdb-knowledge-graphs-for-ai-agents-practical-guide.md",
+   "type": "source",
+   "title": "Knowledge Graphs for AI Agents (A Practical Guide)",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "supports",
+     "via": "knowledge graph as the persistent-context substrate the harness reads — extends the wiki's existing harness vocabulary from application-context (Chatterjee) and company-context (Hu) to relational-knowledge-context",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003788,
+   "fused_score": 0.217,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "entities/LiteLLM",
+   "path": "wiki/entities/LiteLLM.md",
+   "type": "entity",
+   "title": "LiteLLM",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "part-of",
+     "via": "the model-API abstraction / routing seam of the harness's swappable model layer; the OpenAI-compatible interface a harness calls instead of a vendor SDK directly",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--part-of<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.75,
+   "accessed_at": "2026-06-26",
+   "last_confirmed": "2026-06-26",
+   "days_since_access": 108,
+   "effective_confidence": 0.558,
+   "rrf_score": 0.00431,
+   "fused_score": 0.216,
+   "verdict": "ignore",
+   "reason": "entity catalogue card; facets need claims, not identities",
+   "reason_class": "wrong-granularity",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-11-blank-mit-6s191-three-laws-of-ai",
+   "path": "wiki/sources/2026-05-11-blank-mit-6s191-three-laws-of-ai.md",
+   "type": "source",
+   "title": "MIT 6.S191: The Three Laws of AI",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "supports",
+     "via": "Blank's practitioner-three-laws (log traces / build dataset / evaluate often) operationalises the harness's Contracts + Compounding layers as a *named compounding cycle*; convergent with Kiron-Schrage and Hu closed-loop framings",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003759,
+   "fused_score": 0.216,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "entities/Langfuse",
+   "path": "wiki/entities/Langfuse.md",
+   "type": "entity",
+   "title": "Langfuse",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "part-of",
+     "via": "an open-source implementation of the harness's observability layer — tracing, per-step context inspection, and tool-call capture for agentic systems",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--part-of<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.7,
+   "accessed_at": "2026-06-26",
+   "last_confirmed": "2026-06-26",
+   "days_since_access": 108,
+   "effective_confidence": 0.521,
+   "rrf_score": 0.004348,
+   "fused_score": 0.214,
+   "verdict": "ignore",
+   "reason": "entity catalogue card; facets need claims, not identities",
+   "reason_class": "wrong-granularity",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-11-huber-chroma-rag-is-dead-agentic-search",
+   "path": "wiki/sources/2026-05-11-huber-chroma-rag-is-dead-agentic-search.md",
+   "type": "source",
+   "title": "RAG is Dead: Jeff Huber (Chroma) on Building Agentic Search",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "supports",
+     "via": "*'file systems are bad databases'* claim — concurrency, indexing, search-via-grep-only limitations; the harness's persistent-context substrate should be a real database not a sandboxed filesystem; convergent with SurrealDB/seekdb multi-modal-database-as-substrate framing",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003731,
+   "fused_score": 0.214,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-11-karten-zhang-continual-harness-online-adaptation",
+   "path": "wiki/sources/2026-05-11-karten-zhang-continual-harness-online-adaptation.md",
+   "type": "source",
+   "title": "Continual Harness: Online Adaptation for Self-Improving Foundation Agents",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "uses",
+     "via": "the paper's core contribution is a formal definition of agentic-harness state (p, G, K, M) plus meta-tools (define_agent, run_code, process_memory) for editing it",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--uses<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003704,
+   "fused_score": 0.212,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-05-18-wolfe-agent-evaluation-detailed-guide",
+   "path": "wiki/sources/2026-05-18-wolfe-agent-evaluation-detailed-guide.md",
+   "type": "source",
+   "title": "Agent Evaluation: A Detailed Guide",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "supports",
+     "via": "Wolfe explicitly equates *scaffold* with *harness* via the Anthropic Demystifying-Evals quote (*'An agent harness (or scaffold) is the system that enables a model to act as an agent... when we evaluate an agent, we're evaluating the harness and the model working together'*). This is the wiki's first source treating *eval suite + eval harness* as a load-bearing harness primitive, complementing the engineering-discipline framings of [[2026-05-07-chatterjee-anatomy-of-agent-harness|Chatterjee]] / [[2026-05-07-kokane-agent-harness-vs-systems-design|Kokane]] / [[2026-05-15-osmani-agent-harness-engineering|Osmani]] with the eval-discipline framing.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003676,
+   "fused_score": 0.211,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-07-14-wang-shi-harness-handbook-behavior-localization",
+   "path": "wiki/sources/2026-07-14-wang-shi-harness-handbook-behavior-localization.md",
+   "type": "source",
+   "title": "Harness Handbook: Making Evolving Agent Harnesses Readable, Navigable, and Editable",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "uses",
+     "via": "the paper's contribution is a behavior-centric representation (Harness Handbook) plus a modification workflow (BGPD) that operate over an existing agent harness codebase, formalizing behavior localization as the prerequisite step of harness evolution",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--uses<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.00365,
+   "fused_score": 0.209,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-28-anand-wu-genai-playbook",
+   "path": "wiki/sources/2026-04-28-anand-wu-genai-playbook.md",
+   "type": "source",
+   "title": "The Gen AI Playbook for Organizations",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes",
+     "edge_type": "supports",
+     "via": "Anand and Wu's leakage points 2 (employee adoption) and 3 (resource redeployment) name the mechanism this paper's null results measure. AIAR captures a firm at leakage point 2 — trained and willing — and the insignificant AIAR paths to economic (β = 0.094) and collaborative (β = −0.108) performance are the value evaporating before it reaches the P&L",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003546,
+   "fused_score": 0.203,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.20); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-28-warner-wager-dynamic-capabilities-digital-transformation",
+   "path": "wiki/sources/2026-04-28-warner-wager-dynamic-capabilities-digital-transformation.md",
+   "type": "source",
+   "title": "Building Dynamic Capabilities for Digital Transformation: An Ongoing Process of Strategic Renewal",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes",
+     "edge_type": "supports",
+     "via": "the first quantitative test in this corpus of the spine W&W derived qualitatively. Same sense/seize/transform decomposition, inverted on every methodological axis — 210 surveyed Italian startups and PLS-SEM against seven German incumbent MNCs and 18 interpretive interviews. The sensing/seizing/transforming construct loads cleanly as a second-order factor (AVE 0.750), which is external support for the spine being a real construct and not an artefact of W&W's coding scheme",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003521,
+   "fused_score": 0.202,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.20); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset",
+   "path": "wiki/sources/2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset.md",
+   "type": "source",
+   "title": "To Thrive Alongside AI, Focus on Mindset—Not Skillset",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes",
+     "edge_type": "contradicts",
+     "via": "whether mindset is the operative lever. Argenti's framing puts readiness and identity shift first — mindset, not skillset. This paper measures firm-level readiness directly as AIAR and finds it does not reach economic or collaborative performance at all; only intensity of actual implementation does. The authors' own conclusion is the rebuttal: fostering enthusiasm for AI is insufficient if not supported by resource allocation and strategic alignment. Note the two constructs are adjacent rather than identical — Argenti argues individual professional identity, Cimino measures organizational openness — and Argenti's other two ingredients (evals, data mastery) are implementation, not mindset",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes -->contradicts--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003497,
+   "fused_score": 0.2,
+   "verdict": "ignore",
+   "reason": "contradicts edge concerns labour/productivity claims of its seed, not sales; does not change the answer",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company",
+   "path": "wiki/sources/2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company.md",
+   "type": "source",
+   "title": "Why isn't AI working for your company? | BBC News",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes",
+     "edge_type": "supports",
+     "via": "the same gap measured on two different instruments. Grant's index reports roughly 30% of enterprise AI in production versus pilot; this paper splits adoption into acceptance (AIAR) and implementation intensity (AIAI) and finds capabilities produce the former nearly twice as readily as the latter (β = 0.523 vs 0.279), while only the latter reaches economic performance",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003448,
+   "fused_score": 0.198,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.20); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era",
+   "path": "wiki/sources/2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era.md",
+   "type": "source",
+   "title": "AI and Jobs series: How entry level jobs are changing in an AI era",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "contradicts",
+     "via": "the same question — what is happening to entry-level employment right now — answered from survey/interview evidence and from payroll data ten days apart, in different directions. Brown: 'the most dire headlines about entry-level jobs are not yet backed up by data', citing organisations increasing entry-level hiring. Brynjolfsson, from ADP payroll records: employment for workers aged 22-26 in the most AI-exposed occupations fell ~13% at first measurement and is now 'up to 16 or 17%', an effect 'kind of growing over time'. The disagreement turns on the evidence base (what employers say they intend, versus what payroll shows they did) and on scope (all entry-level roles versus the top exposure quintile)",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity <--contradicts<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003425,
+   "fused_score": 0.196,
+   "verdict": "ignore",
+   "reason": "contradicts edge concerns labour/productivity claims of its seed, not sales; does not change the answer",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness",
+   "path": "wiki/sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness.md",
+   "type": "source",
+   "title": "China, Open Source & AI Competitiveness I Andrew Ng",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "supports",
+     "via": "both reject the job-apocalypse framing while accepting significant disruption, and both locate the binding constraint in skills transition rather than job destruction — Ng's 'the challenge is not dealing with the job apocalypse, the challenge is how to help everyone gain the new skills they will need' against Brynjolfsson's 'yes, there's lots of jobs being destroyed… there's also all this opportunity being created'",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003401,
+   "fused_score": 0.195,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.20); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-07-30-hines-pierce-mckinsey-ai-physical-world-more-valuable",
+   "path": "wiki/sources/2026-07-30-hines-pierce-mckinsey-ai-physical-world-more-valuable.md",
+   "type": "source",
+   "title": "AI Is Making the Physical World More Valuable",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "supports",
+     "via": "published two days apart on adjacent McKinsey channels, both argue the augmentation case in the same terms — Hines-Pierce's 'our focus is not about cost cutting, it's not about removing jobs, it's about how do we amplify our competitive advantage… get them out from behind their computer and out in the real world' is the operator instance of Brynjolfsson's argument that the bigger upside is letting people do new things rather than replacing them",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003378,
+   "fused_score": 0.194,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.19); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services",
+   "path": "wiki/sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services.md",
+   "type": "source",
+   "title": "Agentic AI and the Future of Global Business Services",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "supports",
+     "via": "the same structural forecast reached independently two days apart on two McKinsey channels and named with the same geometry — Brynjolfsson's 'the pyramid in lots of companies is becoming more of a diamond and that base isn't there anymore' against Heimes's diamond-shaped GBS talent model, both drawing the same consequence that the middle and senior ranks lose their supply route",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003356,
+   "fused_score": 0.192,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.19); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity",
+   "path": "wiki/sources/2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity.md",
+   "type": "source",
+   "title": "Why AI Isn't Actually Boosting Productivity | Trumponomics",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "supports",
+     "via": "both attribute weak aggregate productivity partly to declining business dynamism, independently and four days apart — Brynjolfsson's 'there's actually fewer startups overall in the United States… if we can get more entrepreneurship and more dynamism, then the technologies are going to have a bigger beneficial effect' matches Frey's 'we're seeing less entry' despite falling firm-formation costs",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003333,
+   "fused_score": 0.191,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.19); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-08-10-miller-worklab-the-ai-shift-most-companies-didnt-see-coming",
+   "path": "wiki/sources/2026-08-10-miller-worklab-the-ai-shift-most-companies-didnt-see-coming.md",
+   "type": "source",
+   "title": "The AI shift most companies didn't see coming",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "supports",
+     "via": "both name a scarce internal persona as the lever for transformation and both describe agent-fleet management as the coming default competence — Weddle's 'looking for the mavericks in your organization… do you have a good sense of who your mavericks are, and are you strategically allocating them' alongside Miller's 'find the weirdos', and Brynjolfsson's 'almost everyone is going to be managing not just an agent, but a fleet of agents… like the CEO of their own little entity' alongside Miller's 34-agent org chart",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003311,
+   "fused_score": 0.19,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.19); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs",
+   "path": "wiki/sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs.md",
+   "type": "source",
+   "title": "How AI is Affecting GDP Growth, Productivity, and Jobs",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "contradicts",
+     "via": "the same disagreement as above, restated: Brynjolfsson reports the entry-level effect growing over time ('up to 16 or 17%'), Hatzius reports no large effect anywhere in the occupation-level data as of August 2026",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity <--contradicts<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003289,
+   "fused_score": 0.189,
+   "verdict": "ignore",
+   "reason": "contradicts edge concerns labour/productivity claims of its seed, not sales; does not change the answer",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai",
+   "path": "wiki/sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai.md",
+   "type": "source",
+   "title": "What I tell my Stern Business School students on how to thrive in the age of AI",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "supports",
+     "via": "both state that entry-level employment has fallen. Brynjolfsson measures it in ADP payroll records for workers aged 22–26 in the most AI-exposed occupations; Sundararajan states it without measurement and names three candidate causes — generative AI absorbing routine cognitive work, employer uncertainty producing hiring pauses, and COVID-era remote restructuring lowering the return on junior hires",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003268,
+   "fused_score": 0.187,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.19); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16",
+   "path": "wiki/sources/2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16.md",
+   "type": "source",
+   "title": "When AI Becomes Common, Organizational Capability Becomes the Advantage | Ep. 16",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes",
+     "edge_type": "supports",
+     "via": "the symposium's thesis is that once AI access is universal, organizational capability becomes the differentiator; this paper is that claim with coefficients on it. Dynamic capabilities predict technological (β = 0.447), collaborative (β = 0.615) and sustainable (β = 0.662) performance, and the AI-adoption paths mediate rather than replace them",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": 0.7,
+   "accessed_at": "2026-07-15",
+   "last_confirmed": "2026-07-15",
+   "days_since_access": null,
+   "effective_confidence": 0.7,
+   "rrf_score": 0.003472,
+   "fused_score": 0.186,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.19); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-09-29-lavoie-mckinsey-talks-talent-leading-when-change-feels-threatening",
+   "path": "wiki/sources/2026-09-29-lavoie-mckinsey-talks-talent-leading-when-change-feels-threatening.md",
+   "type": "source",
+   "title": "Leading When Change Feels Threatening",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "supports",
+     "via": "Same show and hosts, two months apart. Shared topic: AI-era restructuring treated as a design question. Brynjolfsson calls it 'a design problem' at the level of firms and policy; Lavoie calls the leader 'a system designer' at the level of a team.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003247,
+   "fused_score": 0.186,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.19); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-10-01-dw-news-estonia-young-people-entry-level-jobs",
+   "path": "wiki/sources/2026-10-01-dw-news-estonia-young-people-entry-level-jobs.md",
+   "type": "source",
+   "title": "Estonia: Why young people can't find entry-level jobs | DW News",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "supports",
+     "via": "Shared topic: AI and the entry-level rung. Brynjolfsson reports US payroll data for the most AI-exposed occupations; DW reports Estonian youth unemployment (22.7%, Eurostat) with AI named by one employer among several causes.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003226,
+   "fused_score": 0.185,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.18); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "syntheses/is-rag-dead",
+   "path": "wiki/syntheses/is-rag-dead.md",
+   "type": "synthesis",
+   "title": "is-rag-dead",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "supports",
+     "via": "the harness's Context layer reads from a hybrid substrate (vector + graph + structured + filesystem) rather than from a single source-of-truth retrieval type; the *file-systems-are-bad-databases* critique is harness-design guidance",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.9,
+   "accessed_at": "2026-09-05",
+   "last_confirmed": "2026-05-29",
+   "days_since_access": 37,
+   "effective_confidence": 0.597,
+   "rrf_score": 0.003597,
+   "fused_score": 0.184,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-10-09-mollick-hbr-how-ai-is-changing-strategy-four-skills",
+   "path": "wiki/sources/2026-10-09-mollick-hbr-how-ai-is-changing-strategy-four-skills.md",
+   "type": "source",
+   "title": "How AI Is Changing Strategy—and 4 Skills Leaders Need Next",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+     "edge_type": "supports",
+     "via": "Shared topic: automation as a strategy that removes differentiation. Brynjolfsson calls human-imitating AI 'a terrible business strategy'; Mollick says pure automation leaves you with 'the same company everyone else does'.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003205,
+   "fused_score": 0.184,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.18); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "syntheses/knowledge-architectures-for-llm-agents",
+   "path": "wiki/syntheses/knowledge-architectures-for-llm-agents.md",
+   "type": "synthesis",
+   "title": "knowledge-architectures-for-llm-agents",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "supports",
+     "via": "the harness reads from one or more of the three architectures depending on the agent's job; the Context layer + Compounding layer in Chatterjee's 4-layer model are where this decision lives",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.9,
+   "accessed_at": "2026-09-05",
+   "last_confirmed": "2026-05-29",
+   "days_since_access": 37,
+   "effective_confidence": 0.597,
+   "rrf_score": 0.003571,
+   "fused_score": 0.183,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-06-22-yc-kolysh-how-to-get-your-first-10-customers",
+   "path": "wiki/sources/2026-06-22-yc-kolysh-how-to-get-your-first-10-customers.md",
+   "type": "source",
+   "title": "How to Get Your First 10 Customers",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy",
+     "edge_type": "supports",
+     "via": "compatible playbooks at different altitudes, and they agree on the unglamorous part. Kolysh's *do things that don't scale* for customers 4–10 is McCall's land-grab discipline — *'too few people are willing to pick up the phone and willing to get on the plane… because it sounds way more sexy to sell to JPMorgan Chase than to Morgan Chase'* — with the same warning that founders optimise for prestige over reachable revenue",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003185,
+   "fused_score": 0.183,
+   "verdict": "ignore",
+   "reason": "first-customer tactics overlap W7 niche/wedge advice",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/durable-skills",
+   "path": "wiki/concepts/durable-skills.md",
+   "type": "concept",
+   "title": "durable-skills",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era",
+     "edge_type": "supports",
+     "via": "named durable skills cluster from the PM-leader vantage: judgment, decisioning, courage, customer-conversation, system-design-mindset; convergent with Globerson/Sternfels/Thompson clusters but from yet-another industry-vantage",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-10-11",
+   "last_confirmed": "2026-10-11",
+   "days_since_access": 1,
+   "effective_confidence": 0.94,
+   "rrf_score": 0.003067,
+   "fused_score": 0.183,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.18); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/vibe-coding",
+   "path": "wiki/concepts/vibe-coding.md",
+   "type": "concept",
+   "title": "vibe-coding",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era",
+     "edge_type": "supports",
+     "via": "operator-vantage on the floor-raising thesis from a product-leader (ex-Google/Meta/Credit Karma) perspective — *'a designer can now go vibe code'*; *'I can essentially obsolete myself from the parts of my job I hate'*; PM/designer/engineer roles converging into product-builder",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": 0.95,
+   "accessed_at": "2026-10-12",
+   "last_confirmed": "2026-10-12",
+   "days_since_access": 0,
+   "effective_confidence": 0.95,
+   "rrf_score": 0.003049,
+   "fused_score": 0.182,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.18); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "syntheses/harness-thinning-what-persists",
+   "path": "wiki/syntheses/harness-thinning-what-persists.md",
+   "type": "synthesis",
+   "title": "harness-thinning-what-persists",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "concepts/agent-harness",
+     "edge_type": "instance-of",
+     "via": "resolves a specific open tension inside the agent-harness concept page's Debates section (Kilpatrick's model-eats-the-harness vs. Chatterjee's model-rented/harness-owned) using three July 2026 sources",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: concepts/agent-harness <--instance-of<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.82,
+   "accessed_at": "2026-09-05",
+   "last_confirmed": "2026-07-15",
+   "days_since_access": 37,
+   "effective_confidence": 0.544,
+   "rrf_score": 0.003623,
+   "fused_score": 0.181,
+   "verdict": "ignore",
+   "reason": "graph neighbour of agent-harness (agent engineering), unrelated to SME sales",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-06-24-rubinstein-onyemah-startup-founders-new-sales-playbook",
+   "path": "wiki/sources/2026-06-24-rubinstein-onyemah-startup-founders-new-sales-playbook.md",
+   "type": "source",
+   "title": "Startup Founders Need a New Sales Playbook",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy",
+     "edge_type": "supports",
+     "via": "the same argument about where founder effort should go, one level up. Rubinstein & Onyemah diagnose *who* sells in the early stage; this addresses *whom you sell to*, and both land on the same anti-deliberation prescription — McCall's *'spend like 1% of your time on the strategy, pick it, and then spend 99% of your time trying to execute'* is the go-to-market restatement of getting out and talking to customers rather than perfecting the motion first",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003165,
+   "fused_score": 0.181,
+   "verdict": "use",
+   "anchor": "W7",
+   "reason": "250+ founder study: attention ≠ traction, buyer fear, SPRINT, niche wedge",
+   "reason_class": null,
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-07-31-collison-yc-startup-school-is-ai-breaking-the-lean-startup-playbook",
+   "path": "wiki/sources/2026-07-31-collison-yc-startup-school-is-ai-breaking-the-lean-startup-playbook.md",
+   "type": "source",
+   "title": "Patrick Collison: Is AI Breaking the Lean Startup Playbook?",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy",
+     "edge_type": "supports",
+     "via": "two 2026 sources arguing the enterprise window is unusually open, from investor and founder vantages. Schmidt's *'there's a moment right now to go sell big software again… to go sell platforms'* rests on buyers rethinking whole categories (CRM, HR, ITSM) rather than swapping like for like — *'this is not a skeuomorphic one-to-one replacement green to blue'* — which is the GTM face of Collison's claim about the founder's opportunity",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003145,
+   "fused_score": 0.18,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.18); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-08-12-tan-a16z-new-rules-for-founders",
+   "path": "wiki/sources/2026-08-12-tan-a16z-new-rules-for-founders.md",
+   "type": "source",
+   "title": "Garry Tan: New Rules for Founders",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy",
+     "edge_type": "supports",
+     "via": "the same a16z house view on SaaS, one day apart on the same channel, reached from opposite ends. Tan argues per-seat SaaS *'not totally clear it will exist in another five or 10 years… perfectly fine as a wedge'*; Schmidt argues the replacement is platform-scale software sold into categories being rethought wholesale. Read together they are a coherent position: the seat is dying, the platform sale is returning",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003125,
+   "fused_score": 0.179,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.18); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer",
+   "path": "wiki/sources/2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer.md",
+   "type": "source",
+   "title": "Build core skills to thrive as an AI-era developer",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era",
+     "edge_type": "supports",
+     "via": "the Search-org story — *'we have product managers who are shipping features all the way through to live experiments'* — is the Google-side empirical evidence for Singhal's PM-as-product-builder thesis; both name role-blurring as the structural shift, both point at platforms-with-embedded-best-practices as the enabling layer",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": 0.8,
+   "accessed_at": "2026-05-21",
+   "last_confirmed": "2026-05-21",
+   "days_since_access": null,
+   "effective_confidence": 0.8,
+   "rrf_score": 0.003106,
+   "fused_score": 0.174,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.17); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "concepts/ai-deskilling",
+   "path": "wiki/concepts/ai-deskilling.md",
+   "type": "concept",
+   "title": "ai-deskilling",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era",
+     "edge_type": "supports",
+     "via": "*middle-managers in their mid-30s with 8-15 years tenure* named explicitly as the at-risk cohort — too-busy-to-reinvent-themselves; promoted-during-zero-interest-rates as movement-of-information role; their cohort getting laid off",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": 0.85,
+   "accessed_at": "2026-10-08",
+   "last_confirmed": "2026-10-08",
+   "days_since_access": 4,
+   "effective_confidence": 0.813,
+   "rrf_score": 0.003086,
+   "fused_score": 0.174,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.17); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved",
+   "path": "wiki/sources/2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved.md",
+   "type": "source",
+   "title": "What product looks like when coding is solved | Geoff Charles (Ramp CPO)",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era",
+     "edge_type": "supports",
+     "via": "both concern how the product manager's role changes in the AI era",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.00303,
+   "fused_score": 0.174,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.17); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet",
+   "path": "wiki/sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet.md",
+   "type": "source",
+   "title": "Content Independence Day, one year on: building the business model for the agentic Internet",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-04-28-ai-index-report-2025",
+     "edge_type": "supports",
+     "via": "the data commons closing. The AI Index reports AI-training restrictions on actively maintained C4 domains rising from 5–7% to 20–33% in a year; Cloudflare carries the trend forward at network scale — AI training crawlers blocked by default on new domains since July 2025, after the AI Index's measurement window — and reports publishers using that control to negotiate",
+     "hops": 1
+    },
+    {
+     "from_seed": "sources/2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet",
+     "edge_type": "supports",
+     "via": "Shared topic: telling good bots from bad ones when most traffic is non-human. Cloudflare reports non-human traffic above 50% and builds bot authentication; Collison names 'the new equivalent of bot detection' as the question not yet asked loudly enough.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-04-28-ai-index-report-2025 <--supports<-- this (1 hop)",
+    "graph: sources/2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.003012,
+   "fused_score": 0.173,
+   "verdict": "ignore",
+   "reason": "figures used via W3, which condenses it",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-09-14-klein-browserbase-navigate-2026-keynote-agents-will-use-the-internet",
+   "path": "wiki/sources/2026-09-14-klein-browserbase-navigate-2026-keynote-agents-will-use-the-internet.md",
+   "type": "source",
+   "title": "Agents will use the internet - Navigate 2026 Keynote",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet",
+     "edge_type": "supports",
+     "via": "Same conference (Navigate 2026), same host. Shared topics: computer use as the way agents reach sites that will never ship an API or MCP (both use the DMV as the example), and telling good agents from bad bots. Klein gives the infrastructure vendor's product answer; Collison speaks from the payments side.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.002994,
+   "fused_score": 0.172,
+   "verdict": "ignore",
+   "reason": "agent-commerce thesis already carried by W6",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-10-01-chesky-silicon-valley-girl-people-who-know-what-to-build-with-ai",
+   "path": "wiki/sources/2026-10-01-chesky-silicon-valley-girl-people-who-know-what-to-build-with-ai.md",
+   "type": "source",
+   "title": "Brian Chesky: People Who Know What to Build With AI Will Pull Ahead",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet",
+     "edge_type": "supports",
+     "via": "Shared topic: agents acting for consumers in travel and shopping. Collison discusses agents that buy on the open web; Chesky argues travel and shopping need an agent that is not a chatbot, and that agents are valuable because they are interoperable.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.002976,
+   "fused_score": 0.171,
+   "verdict": "ignore",
+   "reason": "graph-only neighbour (fused 0.17); no facet needs it",
+   "reason_class": "below-threshold",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook",
+   "path": "wiki/sources/2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook.md",
+   "type": "source",
+   "title": "Stop the Silent Traffic Drop: A Hands-On AEO Playbook | UNBOUND 2026 | HubSpot Live",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet",
+     "edge_type": "supports",
+     "via": "Shared topic: AI answers as the new point of product discovery. Amiel and Sanders describe how brands get cited in AI answers; Collison calls AI discovery 'the new point of aggregation for commerce' and expects it to favour well-reviewed long-tail sellers.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet -->supports--> this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.002959,
+   "fused_score": 0.17,
+   "verdict": "ignore",
+   "reason": "primary source of W5; the concept page already condenses it",
+   "reason_class": "redundant",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free",
+   "path": "wiki/sources/2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free.md",
+   "type": "source",
+   "title": "The $1B founder of Fireflies on why he gives his software away for free and what he charges for",
+   "qmd_rank": null,
+   "qmd_score": null,
+   "graph": [
+    {
+     "from_seed": "sources/2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet",
+     "edge_type": "supports",
+     "via": "Shared topic: several models inside one business, and usage-based billing because of inference costs. Collison explains Stripe's OpenRouter and Metronome acquisitions this way; Ramineni describes routing across seven to ten model and speech providers and moving from seat to usage pricing. Same channel, published two days apart.",
+     "hops": 1
+    }
+   ],
+   "retrieval_reasons": [
+    "graph: sources/2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet <--supports<-- this (1 hop)"
+   ],
+   "stored_confidence": null,
+   "accessed_at": null,
+   "last_confirmed": null,
+   "days_since_access": null,
+   "effective_confidence": null,
+   "rrf_score": 0.002941,
+   "fused_score": 0.169,
+   "verdict": "ignore",
+   "reason": "pricing model of one AI note-taker, not SME selling",
+   "reason_class": "off-facet",
+   "promoted": null
+  },
+  {
+   "slug": "sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook",
+   "path": "wiki/sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook.md",
+   "type": "source",
+   "qmd_rank": null,
+   "graph": [],
+   "stored_confidence": null,
+   "effective_confidence": null,
+   "fused_score": null,
+   "retrieval_reasons": [
+    "index.md fallback (Step 5)"
+   ],
+   "verdict": "use",
+   "anchor": "W4",
+   "reason": "HubSpot -80% traffic / +20% leads; buyers research in chat assistants",
+   "reason_class": null,
+   "promoted": "gap-expansion"
+  }
+ ],
+ "expansions": [
+  {
+   "trigger_facet": "How AI changes buyer discovery and the path to purchase (answer engines, agents)",
+   "method": "index.md",
+   "added": [
+    "sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook"
+   ],
+   "note": "primary HubSpot traffic figures; also promoted graph-only rubinstein-onyemah (W7) and agentic-web (W3) / answer-engine-optimization (W5) from graph stream"
+  }
+ ],
+ "coverage_gap": "No wiki source studies SME sales directly; sales evidence is from startups/vendors, SME evidence is about AI adoption generally.",
+ "answer_map": [
+  {
+   "anchor": "W1",
+   "claim": "SME adoption barriers: money, specialists, expertise; positive ROI decisive",
+   "pages": [
+    "sources/2024-08-13-schwaeke-new-normal-ai-adoption-smes"
+   ],
+   "span": "## Key claims (resources, compatibility, ROI)"
+  },
+  {
+   "anchor": "W2",
+   "claim": "Readiness easy to build but does not pay; only implementation reaches performance",
+   "pages": [
+    "sources/2025-06-15-cimino-ai-adoption-sustainable-growth-smes"
+   ],
+   "span": "## TL;DR; ### Three findings worth carrying §1"
+  },
+  {
+   "anchor": "W3",
+   "claim": "Human traffic −35–40% (Cloudflare); vendor-reported; agents may own shop–shopper relationship",
+   "pages": [
+    "concepts/agentic-web"
+   ],
+   "span": "## Key claims §1"
+  },
+  {
+   "anchor": "W4",
+   "claim": "HubSpot −80% traffic (140M visits) while leads +20%; buyers research in ChatGPT/Claude",
+   "pages": [
+    "sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook"
+   ],
+   "span": "## Key claims §1"
+  },
+  {
+   "anchor": "W5",
+   "claim": "AEO definition; long specific prompts; consensus across web; buyers arrive at decision stage; low-tech measurement from sales/support questions",
+   "pages": [
+    "concepts/answer-engine-optimization"
+   ],
+   "span": "## Working definition; ## How AEO differs from SEO; ## Key claims §1–2"
+  },
+  {
+   "anchor": "W6",
+   "claim": "AI discovery surfaces niche brands (\"good story for the long tail\"); agents will buy; speaker has commercial interest",
+   "pages": [
+    "sources/2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet"
+   ],
+   "span": "## TL;DR §2"
+  },
+  {
+   "anchor": "W7",
+   "claim": "Intent vs curiosity; meetings as AI-evaluation theatre; no-tension calls; SPRINT niche/problem/results/implementation; buyer fear",
+   "pages": [
+    "sources/2026-06-24-rubinstein-onyemah-startup-founders-new-sales-playbook"
+   ],
+   "span": "## TL;DR (headline shift, new challenges, SPRINT table)"
+  },
+  {
+   "anchor": "W8",
+   "claim": "Lighthouse (proof) vs landgrab (math); Meraki mid-market and free trials; open question on AI trials",
+   "pages": [
+    "sources/2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy"
+   ],
+   "span": "## The framework; ## The historical case: Meraki"
+  },
+  {
+   "anchor": "W9",
+   "claim": "Micro-productivity trap; FabricationCo quoting ~15× faster, +10pp win rate in 3 months; redesign + measure",
+   "pages": [
+    "concepts/micro-productivity-trap"
+   ],
+   "span": "## Working definition; ### Worked cases; four-step framework"
+  }
+ ],
+ "answer": "# The implications of AI for SME sales\n\nMost small and medium-sized businesses meet AI in sales as a tool, such as an assistant that drafts emails. The evidence suggests the bigger change is on the buyer's side: customers find suppliers in new places, are persuaded by different things, and sometimes send software to buy for them.\n\nA caveat: most of this evidence comes from startups, investors and software vendors, often while selling a product. None of it was gathered on SME *sales* specifically. Read it as strong signals, not settled findings.\n\n## 1. Buyers now research where you cannot see them\n\nThe clearest change is where buying starts. HubSpot reports losing 80% of its web traffic, 140 million visits in a year from May 2024, while its leads grew 20% [W4]. Its explanation is that buyers who used to read blog posts and download ebooks now have \"those conversations with ChatGPT, with Claude\" [W4]. Cloudflare, whose network carries more than a fifth of the web, measured human traffic down 35–40% between June 2025 and April 2026 in retail, software, IT services and financial services [W3]. Both figures are vendor-reported, and neither separates AI from other causes [W3].\n\nA website and a decent Google ranking used to get an SME onto a shortlist. Increasingly, an AI system draws up that shortlist before the buyer visits any site. A buyer who does reach you often arrives ready to decide, because the engine has already done the comparing [W5].\n\n## 2. Being named in the answer is the new visibility\n\nA new discipline has grown up around this: answer engine optimisation (AEO), which means getting your business named and cited in the answers AI systems give [W5]. It differs from SEO in ways that help some SMEs and hurt others. Prompts are long and specific, such as \"what are the best CRMs for SMBs in Spain?\" rather than \"best CRM\", and that favours a firm with a clear niche over a generalist [W5]. But an engine recommends a brand only when the wider web agrees about it: reviews, press, social posts and other people's sites, not just your own pages [W5]. A small firm that barely exists outside its own website is hard for an engine to recommend.\n\nYou don't need a platform to start. Put the questions customers ask in sales calls and support tickets to the main AI assistants, and note whether you are named and who is named instead [W5].\n\n## 3. The long tail may gain, if machines can read it\n\nThere is a hopeful reading for small businesses. Stripe co-founder John Collison argues that AI product research \"often actually surfaces niche brands or businesses you haven't heard of\", which he calls \"quite a good story for the long tail\" [W6]. He expects people's agents to make a large share of their purchases [W6]. This is a forecast from someone whose company gains if it comes true [W6]. Other sources expect agents to sit between shop and shopper and own the relationship instead [W3]. Either way, the practical requirement is the same: product information, prices and terms that a machine can read and compare.\n\n## 4. Interest is cheap, and buyers are afraid\n\nOnce a conversation starts, selling has become harder in a specific way. Rubinstein and Onyemah interviewed more than 250 founders in over 30 countries. They found that the main problem in 2026 is \"the growing inability to distinguish real buying intent from curiosity\" [W7]. Prospects take meetings to show colleagues they are evaluating AI, so the pipeline looks full while holding little, and a pleasant call without tension rarely produces a deal [W7].\n\nTheir remedy suits SMEs, which seldom have the budget to compete on volume. Pick a narrow niche: \"one buyer type, one problem, one motion that repeats\". Describe the buyer's problem more precisely than the buyer can. Promise specific, observable outcomes. And answer the risk question before it is asked, because late in a deal the buyer's fear of AI failing in front of leadership is what kills it [W7].\n\n## 5. Choose markets where your proof carries\n\na16z's \"lighthouse or landgrab\" framework adds a choice about whom to sell to [W8]. Where buyers are exposed and few, as in regulated sectors and among big names, you sell on proof from reference customers. Where buyers already have a budget for the service, you sell on the numbers compared with what they pay today, for people or for software [W8]. Meraki is the case most relevant to SMEs. Large corporations were locked up by Cisco and HP, so it won the mid-market by being simpler and faster to deploy, and gave away free trial hardware [W8]. It is an open question whether free trials work as proof for AI products that are hard to set up [W8].\n\n## 6. AI inside your own sales team: watch for the trap\n\nSMEs should still use AI in their own selling, within known limits. Research on SME AI adoption names money, specialists and expertise as the most-cited barriers, and a positive return as decisive [W1]. A survey of 210 small Italian startups found that willingness to adopt AI was easy to build but did not pay; only actual implementation improved performance [W2]. Firms that bolt AI onto existing tasks often get task-level gains that never reach the bottom line, a pattern called the \"micro-productivity trap\" [W9]. The counter-example comes from sales. A large manufacturer rebuilt its quoting around AI, produced quotes about 15 times faster, and raised its win rate by 10 percentage points in three months [W9]. The lesson is to redesign one sales workflow end to end and measure it against a baseline, rather than hand everyone a chatbot [W9].\n\n## What this means for an SME\n\n- **Find out what AI assistants say about you** and your competitors, using your customers' real questions [W5].\n- **Build your presence beyond your own site**: reviews, partner pages, press [W5].\n- **Narrow your offer** until a buyer, or an engine, can describe it in one sentence [W5][W7].\n- **Sell on reduced risk and specific outcomes**, not on features [W7].\n- **Redesign one sales process with AI** and measure the result [W9].\n\nAI moves the first, invisible part of the sale out of your hands. What you still control is how clearly and consistently the world describes you, and how well you settle a nervous buyer's doubts once they arrive.\n\n---\n\n**Sources (wiki):** [W1] [[2024-08-13-schwaeke-new-normal-ai-adoption-smes|Schwaeke et al. 2024]] · [W2] [[2025-06-15-cimino-ai-adoption-sustainable-growth-smes|Cimino et al. 2025]] · [W3] [[agentic-web|Agentic web]] · [W4] [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook|Bodnar & Flanagan, HubSpot 2026]] · [W5] [[answer-engine-optimization|Answer engine optimization]] · [W6] [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet|Collison, Browserbase 2026]] · [W7] [[2026-06-24-rubinstein-onyemah-startup-founders-new-sales-playbook|Rubinstein & Onyemah, HBR 2026]] · [W8] [[2026-08-13-a16z-lighthouse-or-landgrab-ai-sales-strategy|a16z, Lighthouse or Landgrab 2026]] · [W9] [[micro-productivity-trap|Micro-productivity trap]]",
+ "generated_at": "2026-10-12T10:20:22.433Z"
+}

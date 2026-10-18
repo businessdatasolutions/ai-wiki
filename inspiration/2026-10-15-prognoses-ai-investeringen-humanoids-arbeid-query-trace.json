@@ -1,0 +1,1989 @@
+{
+  "question": {
+    "original": "Welke prognoses voor AI-investeringen, humanoids en de impact op arbeid en platformwerk staan in de wiki?",
+    "restated": "Welke cijfers en prognoses geeft de wiki voor AI-investeringen en marktgroei, voor robots/humanoids, en voor de gevolgen voor arbeid en platformwerk?",
+    "facets": [
+      "AI-investeringen en marktprognoses",
+      "robots/humanoids: adoptie en verwachtingen",
+      "arbeid en platformwerk (incl. data-arbeid)"
+    ],
+    "language": "nl"
+  },
+  "params": {
+    "seeds": 12,
+    "hops": 1,
+    "fusion": "rrf",
+    "graph_rank": "bfs",
+    "k_rrf": 60,
+    "graph_w": 0.5,
+    "alpha": 0.7,
+    "ppr_damping": 0.5,
+    "conf_floor": 0.6,
+    "today": "2026-10-15",
+    "no_bump": true
+  },
+  "graph_available": true,
+  "graph_warning": null,
+  "candidates": [
+    {
+      "slug": "concepts/ai-employment-effects",
+      "path": "wiki/concepts/ai-employment-effects.md",
+      "type": "concept",
+      "title": "AI Employment Effects",
+      "qmd_rank": 1,
+      "qmd_score": 1,
+      "graph": [
+        {
+          "from_seed": "concepts/automation-vs-augmentation",
+          "edge_type": "supports",
+          "via": "Brynjolfsson Canaries — declines concentrated in automation share, not augmentation",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 1 (score 1.00)",
+        "graph: concepts/automation-vs-augmentation <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-08",
+      "last_confirmed": "2026-10-08",
+      "days_since_access": 7,
+      "effective_confidence": 0.879,
+      "rrf_score": 0.016393,
+      "fused_score": 0.952,
+      "verdict": "use",
+      "reason": "data-annotatie en egocentrische robotdata als nieuwe arbeidslaag; robotaxi-impact over 5-10 jaar",
+      "reason_class": null,
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+      "path": "wiki/sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening.md",
+      "type": "source",
+      "title": "Hoe AI de sectoren IT en zakelijke dienstverlening verandert",
+      "qmd_rank": 2,
+      "qmd_score": 0.5,
+      "graph": [
+        {
+          "from_seed": "sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai",
+          "edge_type": "supports",
+          "via": "method-cousin: both build occupational-exposure measures of AI capability (Massenkoff & McCrory weight Eloundou task ratings by AEI usage; RaboResearch maps Gmyrek et al. ILO task scores onto CBS occupations) and both stress potential ≫ realised deployment",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 2 (score 0.50)",
+        "graph: sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.016129,
+      "fused_score": 0.925,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "sectorblootstelling van NL IT/zakelijke dienstverlening; geen investerings-, robot- of platformwerkcijfers",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-03-07-vitucci-onshore-next-industry-ai-will-disrupt",
+      "path": "wiki/sources/2026-03-07-vitucci-onshore-next-industry-ai-will-disrupt.md",
+      "type": "source",
+      "title": "This Is The Next Industry AI Will Disrupt",
+      "qmd_rank": 4,
+      "qmd_score": 0.17,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 4 (score 0.17)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.015625,
+      "fused_score": 0.896,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "disruptie van accountancy",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/automation-vs-augmentation",
+      "path": "wiki/concepts/automation-vs-augmentation.md",
+      "type": "concept",
+      "title": "Automation vs. Augmentation",
+      "qmd_rank": 6,
+      "qmd_score": 0.13,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-employment-effects",
+          "edge_type": "supports",
+          "via": "Brynjolfsson Canaries — declines concentrated in automation share, not augmentation",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 6 (score 0.13)",
+        "graph: concepts/ai-employment-effects -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-11",
+      "last_confirmed": "2026-10-11",
+      "days_since_access": 4,
+      "effective_confidence": 0.909,
+      "rrf_score": 0.015152,
+      "fused_score": 0.891,
+      "verdict": "use",
+      "reason": "MGI: agents 44% / robots 13% van US-werkuren; 65/35 niet-fysiek/fysiek; robot-centrisch archetype 8%",
+      "reason_class": null,
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-27-sajadieh-stanford-hai-inside-the-2026-ai-index-report",
+      "path": "wiki/sources/2026-05-27-sajadieh-stanford-hai-inside-the-2026-ai-index-report.md",
+      "type": "source",
+      "title": "Inside the 2026 AI Index Report",
+      "qmd_rank": 5,
+      "qmd_score": 0.14,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+          "edge_type": "supports",
+          "via": "Adoption-data overlap: Evans cites survey data that ~15–20% of 13–18-year-olds are daily AI users with another ~20% weekly and ~60% non-users — a Gen-Z jagged-adoption pattern that the 2026 AI Index Report quantifies across the full population. The Index is one of the deck data sources Evans presumably draws from; he doesn't name it, but the numbers rhyme.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 5 (score 0.14)",
+        "graph: sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.015385,
+      "fused_score": 0.882,
+      "verdict": "ignore",
+      "reason_class": "redundant",
+      "reason": "herhaalt de cijfers van het AI Index 2026-rapport (W1)",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Anthropic%20Economic%20Index",
+      "path": "wiki/entities/Anthropic%20Economic%20Index.md",
+      "type": "entity",
+      "title": "Anthropic Economic Index",
+      "qmd_rank": 3,
+      "qmd_score": 0.2,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 3 (score 0.20)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.015873,
+      "fused_score": 0.852,
+      "verdict": "ignore",
+      "reason_class": "wrong-granularity",
+      "reason": "entiteitskaart",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-28-anthropic-economic-index-q4-2025",
+      "path": "wiki/sources/2026-04-28-anthropic-economic-index-q4-2025.md",
+      "type": "source",
+      "title": "Anthropic Economic Index: New building blocks for understanding AI use",
+      "qmd_rank": 8,
+      "qmd_score": 0.1,
+      "graph": [
+        {
+          "from_seed": "sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai",
+          "edge_type": "supports",
+          "via": "sibling Anthropic Economic Index output — the AEI usage reports supply the real-world usage data this report weights against theoretical capability to build observed exposure",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 8 (score 0.10)",
+        "graph: sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014706,
+      "fused_score": 0.843,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "Claude-gebruik per taak; geen robots/investering",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+      "path": "wiki/sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going.md",
+      "type": "source",
+      "title": "A rational conversation on where AI is actually going | Benedict Evans",
+      "qmd_rank": 9,
+      "qmd_score": 0.09,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-27-sajadieh-stanford-hai-inside-the-2026-ai-index-report",
+          "edge_type": "supports",
+          "via": "Adoption-data overlap: Evans cites survey data that ~15–20% of 13–18-year-olds are daily AI users with another ~20% weekly and ~60% non-users — a Gen-Z jagged-adoption pattern that the 2026 AI Index Report quantifies across the full population. The Index is one of the deck data sources Evans presumably draws from; he doesn't name it, but the numbers rhyme.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 9 (score 0.09)",
+        "graph: sources/2026-05-27-sajadieh-stanford-hai-inside-the-2026-ai-index-report <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014493,
+      "fused_score": 0.831,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "algemene duiding, geen kwantitatieve prognose die hier nodig is",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai",
+      "path": "wiki/sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai.md",
+      "type": "source",
+      "title": "Labor market impacts of AI: A new measure and early evidence",
+      "qmd_rank": 10,
+      "qmd_score": 0.08,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+          "edge_type": "supports",
+          "via": "method-cousin: both build occupational-exposure measures of AI capability (Massenkoff & McCrory weight Eloundou task ratings by AEI usage; RaboResearch maps Gmyrek et al. ILO task scores onto CBS occupations) and both stress potential ≫ realised deployment",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-04-28-anthropic-economic-index-q4-2025",
+          "edge_type": "supports",
+          "via": "sibling Anthropic Economic Index output — the AEI usage reports supply the real-world usage data this report weights against theoretical capability to build observed exposure",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 10 (score 0.08)",
+        "graph: sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening -->supports--> this (1 hop)",
+        "graph: sources/2026-04-28-anthropic-economic-index-q4-2025 <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014286,
+      "fused_score": 0.819,
+      "verdict": "ignore",
+      "reason_class": "redundant",
+      "reason": "arbeidsmarkteffecten al samengevat in ai-employment-effects (W7)",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/strategic-foresight",
+      "path": "wiki/concepts/strategic-foresight.md",
+      "type": "concept",
+      "title": "Strategic Foresight",
+      "qmd_rank": 7,
+      "qmd_score": 0.11,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 7 (score 0.11)"
+      ],
+      "stored_confidence": 0.87,
+      "accessed_at": "2026-09-21",
+      "last_confirmed": "2026-09-21",
+      "days_since_access": 24,
+      "effective_confidence": 0.666,
+      "rrf_score": 0.014925,
+      "fused_score": 0.789,
+      "verdict": "ignore",
+      "reason_class": "redundant",
+      "reason": "verwijst naar dezelfde MGI-projecties als W2",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/durable-skills",
+      "path": "wiki/concepts/durable-skills.md",
+      "type": "concept",
+      "title": "durable-skills",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-employment-effects",
+          "edge_type": "instance-of",
+          "via": "the labour-market consequences turn on which skills remain valuable; durable skills are the supply-side answer",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-employment-effects <--instance-of<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-15",
+      "last_confirmed": "2026-10-15",
+      "days_since_access": 0,
+      "effective_confidence": 0.95,
+      "rrf_score": 0.007937,
+      "fused_score": 0.474,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/enterprise-ai-adoption",
+      "path": "wiki/concepts/enterprise-ai-adoption.md",
+      "type": "concept",
+      "title": "enterprise-ai-adoption",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-employment-effects",
+          "edge_type": "caused",
+          "via": null,
+          "hops": 1
+        },
+        {
+          "from_seed": "concepts/automation-vs-augmentation",
+          "edge_type": "supports",
+          "via": "per-task deployment lens used by Anand-Wu, MITTRI/Cisco, MIT CISR",
+          "hops": 1
+        },
+        {
+          "from_seed": "concepts/strategic-foresight",
+          "edge_type": "supports",
+          "via": "informs deployment decisions under deep uncertainty",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-employment-effects <--caused<-- this (1 hop)",
+        "graph: concepts/automation-vs-augmentation -->supports--> this (1 hop)",
+        "graph: concepts/strategic-foresight -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-15",
+      "last_confirmed": "2026-10-15",
+      "days_since_access": 0,
+      "effective_confidence": 0.95,
+      "rrf_score": 0.007813,
+      "fused_score": 0.467,
+      "verdict": "use",
+      "reason": "MGI: $2,9T US / $28,7T wereldwijd per jaar in 2030; 77% agents / 23% robots ($0,67T)",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    },
+    {
+      "slug": "concepts/ai-deskilling",
+      "path": "wiki/concepts/ai-deskilling.md",
+      "type": "concept",
+      "title": "ai-deskilling",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-employment-effects",
+          "edge_type": "instance-of",
+          "via": "task-composition shift is one specific mechanism within broader employment effects",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-employment-effects <--instance-of<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": "2026-10-08",
+      "last_confirmed": "2026-10-08",
+      "days_since_access": 7,
+      "effective_confidence": 0.786,
+      "rrf_score": 0.008197,
+      "fused_score": 0.457,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/responsible-ai",
+      "path": "wiki/concepts/responsible-ai.md",
+      "type": "concept",
+      "title": "responsible-ai",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-employment-effects",
+          "edge_type": "supports",
+          "via": "labor-market disruption is an under-attended RAI concern",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-employment-effects <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-11",
+      "last_confirmed": "2026-10-11",
+      "days_since_access": 4,
+      "effective_confidence": 0.909,
+      "rrf_score": 0.007692,
+      "fused_score": 0.452,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas",
+      "path": "wiki/sources/2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas.md",
+      "type": "source",
+      "title": "The race takes off in the next big arenas of competition (MGI 2026 update)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-employment-effects",
+          "edge_type": "supports",
+          "via": "the 18-arena vs non-arena divergence implies skill-and-talent reallocation across the economy; the omniscaler-led talent-attraction dynamic ('top talent attraction among their interlocking strengths') is a concrete vehicle for the AI-foundation-driven labour-market reshaping",
+          "hops": 1
+        },
+        {
+          "from_seed": "concepts/strategic-foresight",
+          "edge_type": "supports",
+          "via": "MGI's three-ingredient arena-creation potion (tech/business-model step change + escalatory investment pattern + large/expanding addressable market) is a reusable foresight heuristic; the arenas-radar diagnostic operationalises foresight as proximity + production/revenue impact mapping",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-employment-effects <--supports<-- this (1 hop)",
+        "graph: concepts/strategic-foresight -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007576,
+      "fused_score": 0.434,
+      "verdict": "use",
+      "reason": "AI software & services $1,5-4,6T in 2040 (17-25% CAGR vanaf $85B); 18 arena's +$18T; videogames als arena; robotica 13-23%",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    },
+    {
+      "slug": "sources/2026-04-14-thompson-the-daily-workers-letting-ai-do-their-jobs",
+      "path": "wiki/sources/2026-04-14-thompson-the-daily-workers-letting-ai-do-their-jobs.md",
+      "type": "source",
+      "title": "The Workers Letting A.I. Do Their Jobs",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-employment-effects",
+          "edge_type": "supports",
+          "via": "Brynjolfsson cited for 16% drop in software-developer hires — fresh empirical anchor on the AI-jobs question",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-employment-effects <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007463,
+      "fused_score": 0.428,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-25-masad-replit-ceo-only-two-jobs-left",
+      "path": "wiki/sources/2026-04-25-masad-replit-ceo-only-two-jobs-left.md",
+      "type": "source",
+      "title": "Replit's CEO On The Only Two Jobs Left In The Company Of The Future — Amjad Masad at YC Founder Firesides",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-employment-effects",
+          "edge_type": "supports",
+          "via": "'The company of the future is made of builders and salespeople' — a concrete employment-future thesis from a vendor-CEO building the infrastructure that would enable it; pairs with the wiki's existing automation-vs-augmentation and durable-skills clusters",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+          "edge_type": "contradicts",
+          "via": "Evans's lump-of-labor argument directly disagrees with the *only-N-jobs-left* framing. *'Every time we have a new technology it automates away a bunch of jobs and then that automation unlocks a bunch of new jobs and you don't know the new job because it doesn't exist yet. We've had that process over and over again.'* Evans names typesetters, telephone operators, and typists as historical cases. The Masad framing assumes jobs are subtractive; Evans frames the question as compositional, calling people who assert *'every big company is going to buy ChatGPT tomorrow and then in two weeks time they'll fire all their staff'* *'morons'*.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-employment-effects <--supports<-- this (1 hop)",
+        "graph: sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going -->contradicts--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007353,
+      "fused_score": 0.422,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era",
+      "path": "wiki/sources/2026-05-07-singhal-stanford-cs153-product-management-in-ai-era.md",
+      "type": "source",
+      "title": "Stanford CS153 Frontier Systems | Nikhyl Singhal from Skip on Product Management in the AI Era",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-employment-effects",
+          "edge_type": "supports",
+          "via": "concrete operator-class numbers — 30-70% layoffs in big tech this calendar year (Salesforce / Block / Snap referenced); top-1% PM salaries more than doubled in 18 months; four product-leader contracts crossed eight figures annual; middle-managers (8-15 years tenure) are the named at-risk class",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-employment-effects <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007246,
+      "fused_score": 0.416,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces",
+      "path": "wiki/sources/2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces.md",
+      "type": "source",
+      "title": "AI Will Reshape More Jobs Than It Replaces",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+          "edge_type": "supports",
+          "via": "reshape ≫ replace at sector altitude — RaboResearch finds roles shift (accountants, lawyers, consultants, developers move from executing to advisory/judgment work) and value concentrates in complex judgment while junior/instap tasks decline, not aggregate elimination",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai",
+          "edge_type": "supports",
+          "via": "method-independent convergence: BCG's microeconomic role-modeling and Anthropic's usage-based observed-exposure reach the same headline — reshape ≫ replace, slow substitution, entry-level exposed first, not a near-term mass-unemployment story",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening -->supports--> this (1 hop)",
+        "graph: sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007143,
+      "fused_score": 0.41,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-28-brynjolfsson-canaries-coal-mine",
+      "path": "wiki/sources/2026-04-28-brynjolfsson-canaries-coal-mine.md",
+      "type": "source",
+      "title": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+          "edge_type": "supports",
+          "via": "occupational-exposure measurement of automation potential (ILO/Gmyrek) corroborating the entry-level/compositional shift — RaboResearch's NL/sector vantage echoes the executing→advisory role shift and the decline of junior roles that the US ADP-payroll Canaries finding documents",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+          "edge_type": "contradicts",
+          "via": "Same methodological disagreement as with Dell'Acqua. Brynjolfsson-style work on AI-exposure quantifies the fraction of tasks within an occupation that overlap with model capabilities (the *canaries-in-the-coalmine* framework rests on task-level decomposition). Evans rejects task-level decomposition as the framework, calling occupation-by-task analysis *'this is the logical systems problem ... expert systems problem'* — i.e. the same approach computer vision tried and abandoned. Evans does not deny the empirical pattern Brynjolfsson surfaces; he disputes that one can read *X% of a senior partner's work is automatable* off such an analysis.",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai",
+          "edge_type": "supports",
+          "via": "independently echoes the Brynjolfsson young-worker finding (a hiring slowdown into exposed occupations for ages 22–25) using CPS job-start panels rather than ADP payroll — corroboration via a different dataset, while finding the effect 'barely statistically significant'",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening -->supports--> this (1 hop)",
+        "graph: sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going -->contradicts--> this (1 hop)",
+        "graph: sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007042,
+      "fused_score": 0.404,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company",
+      "path": "wiki/sources/2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company.md",
+      "type": "source",
+      "title": "Why isn't AI working for your company? | BBC News",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+          "edge_type": "supports",
+          "via": "the programme's opening framing — 'give the AI a clearly defined task, write code, answer customer queries, the systems are measurably faster. But most businesses are a chain, and all too often speeding up one link just piles up the work at the next' — is the broadcast-journalism statement of the same task-level-versus-firm-level split RaboResearch renders as a ranked chart of ~18 studies",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006944,
+      "fused_score": 0.398,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity",
+      "path": "wiki/sources/2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity.md",
+      "type": "source",
+      "title": "Why AI Isn't Actually Boosting Productivity | Trumponomics",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+          "edge_type": "supports",
+          "via": "both hold task-level AI gains against aggregate outcomes and find the aggregate missing; Frey supplies a mechanism the chart does not — 'it's the time saving minus the time for verification' — and a historical control in the computer revolution, which he argues was more transformative than today's AI yet produced only a decade-long productivity upsurge mostly confined to the United States",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006849,
+      "fused_score": 0.393,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/ai-washing",
+      "path": "wiki/concepts/ai-washing.md",
+      "type": "concept",
+      "title": "ai-washing",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/ai-employment-effects",
+          "edge_type": "part-of",
+          "via": "the attribution/narrative confound layer of the AI-employment question — why the AI-as-cited-reason-for-layoffs signal is hard to take at face value",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/ai-employment-effects <--part-of<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.77,
+      "accessed_at": "2026-09-05",
+      "last_confirmed": "2026-08-20",
+      "days_since_access": 40,
+      "effective_confidence": 0.494,
+      "rrf_score": 0.008065,
+      "fused_score": 0.392,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-11-hill-vori-grocery-os-paper-and-fax",
+      "path": "wiki/sources/2026-05-11-hill-vori-grocery-os-paper-and-fax.md",
+      "type": "source",
+      "title": "This $1.5 Trillion Industry Still Runs on Paper and Fax Machines",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-03-07-vitucci-onshore-next-industry-ai-will-disrupt",
+          "edge_type": "supports",
+          "via": "Twin **2026 founder-fireside on vertical AI-native operator** ingests on the YC Root Access channel, two months apart. Both founders work an industry vertical that is structurally hostile to AI investment for *misaligned-incentive* reasons (Vori: 220k+ independent grocers running on paper, pencil, fax — no in-house IT to deploy software; Onshore: Big 4 / top-20 senior partners whose pension and 3-5-year-runway-to-retirement makes AI investment a personal-financial-negative). Both arrive at **wedge-first** as the disciplined way in (Vori: inventory-reorder app; Onshore: R&D tax credit). Both name **fired-all-our-incumbent-customers / fired-all-our-accounting-firm-customers** as the pivot moment that unlocked the real opportunity.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-03-07-vitucci-onshore-next-industry-ai-will-disrupt -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006757,
+      "fused_score": 0.387,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-20-glasgow-campfire-erp-for-ai-revolution",
+      "path": "wiki/sources/2026-05-20-glasgow-campfire-erp-for-ai-revolution.md",
+      "type": "source",
+      "title": "The ERP for the AI Revolution is here",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-03-07-vitucci-onshore-next-industry-ai-will-disrupt",
+          "edge_type": "supports",
+          "via": "Twin **AI-native-vendor-disrupting-incumbent-service-business** anchors on the YC Root Access channel. Glasgow / Campfire competes with NetSuite for tech-company ERP; Vitucci / Onshore competes with the **Big Four (Deloitte / KPMG / EY / PwC) + top-20 firms (Grant Thornton et al.)** for corporate tax and (eventually) audit. Both articulate the same incumbent-defection mechanism: incumbents have **misaligned senior-partner incentives** that block AI investment (Glasgow's *AI-native safety inversion*; Vitucci's *senior-partner-3-years-from-retirement-won't-plow-money-into-AI*). Both founders began by selling-to-incumbents and pivoted to compete-with-incumbents (Glasgow implicitly from his Adobe ERP background; Vitucci explicitly after 2 years of *banging his head against the wall* selling AI software to accounting firms). Both arrive at **revenue-per-employee** as the killer comp (Campfire: implied 10× of NetSuite's per-employee revenue; Onshore: explicit *'$1M+ per employee at $100M ARR target — Deloitte / KPMG estimated at $100-150k per employee, an order of magnitude better'*).",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-03-07-vitucci-onshore-next-industry-ai-will-disrupt -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006667,
+      "fused_score": 0.382,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-20-tan-hu-stanford-cs153-ai-native-company-1000x-engineer",
+      "path": "wiki/sources/2026-05-20-tan-hu-stanford-cs153-ai-native-company-1000x-engineer.md",
+      "type": "source",
+      "title": "Stanford CS153 Frontier Systems | The AI Native Company: How One Founder Becomes a 1000x Engineer",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-03-07-vitucci-onshore-next-industry-ai-will-disrupt",
+          "edge_type": "supports",
+          "via": "Onshore is the wiki's first **deep professional-services-industry-disruption anchor** that complements Tan & Hu's CS153 *forward-deployed-engineer wedge* prescription with a worked example *one industry deep*. Hu names the wedge pattern generically (Salient / Happy Robot / Reducto); Vitucci is the wedge-pattern told as a 20-something-CPA-leaves-Grant-Thornton story over 33 minutes. **Productive tension on *boil-the-ocean***: Tan-CS153 inverts the *don't boil the ocean* dictum (*'let's boil the ocean, you can do the work of 500 to 1000 people'*); Vitucci asserts the conservative version (*'the idea of trying to boil the ocean all at once is very challenging; it has been an incredible benefit for our business to be great at one thing really early'*). The wiki carries both — they are both defensible at different stages and the contradiction itself is informative.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-03-07-vitucci-onshore-next-industry-ai-will-disrupt -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006579,
+      "fused_score": 0.377,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-28-ftsg-convergence-outlook-2026",
+      "path": "wiki/sources/2026-04-28-ftsg-convergence-outlook-2026.md",
+      "type": "source",
+      "title": "Convergence Outlook 2026: The new timing of creative destruction",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-27-sajadieh-stanford-hai-inside-the-2026-ai-index-report",
+          "edge_type": "supports",
+          "via": "**Two annual 2026 horizon-scans converging on the same empirical landscape from different vantages.** FTSG / Webb anchor the *convergence-as-power-redistributor* thesis (rule 3: convergences redistribute power and value across — not just within — industries) and the *creative-destruction-from-within* normative argument. The AI Index talk anchors the same empirical phenomena via *facts on the ground, not projections*: US-China gap narrowing (FTSG's *redistribute power* rule playing out at the model-frontier altitude), industry concentration of frontier models at 91% (FTSG's *capital concentrates rapidly* enabling condition operationalised), the public-trust polarization (FTSG's *legitimacy of existing order erodes* enabling condition empirically measured). Different framings, same 2026 landscape.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-27-sajadieh-stanford-hai-inside-the-2026-ai-index-report -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006494,
+      "fused_score": 0.372,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-30-ai-index-report-2026",
+      "path": "wiki/sources/2026-04-30-ai-index-report-2026.md",
+      "type": "source",
+      "title": "Artificial Intelligence Index Report 2026",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-27-sajadieh-stanford-hai-inside-the-2026-ai-index-report",
+          "edge_type": "supports",
+          "via": "**Talk-track for the published report.** Same author (Sha Sajadieh, EiC) presents the report's headline framing live; statistical claims overlap heavily (88% organizational adoption, 53% population GenAI adoption, $285.9B US private investment, 2.7% top-US/top-China gap as of March 2026, 89% AI-talent-inflow decline since 2017 with 80% in the last year, 362 AI incidents up from 233, 80/95 notable models released without training code, 84% of US high schoolers using AI for school work + <50% schools with policies + 6% teachers feeling prepared, US 31% trust in government to regulate effectively — lowest of any country surveyed). The talk-track adds material not in the report itself: a 42-minute panel Q&A with Raymond Perrault (co-founder, steering-committee co-chair) and Russell Wald (Stanford HAI Executive Director) covering AI-Index founding mission (*facts on the ground, not projections, no recommendations to governments*), the **acceptability-threshold research gap** (Perrault: *we know self-driving cars need very high reliability because people die; we don't know how reliable AI must be to be acceptable in legal / medical / finance*), the academic-vs-industry transparency tension (Wald's argument that frontier-lab proprietary mode hampers academic peer-review/verification), and Yolanda Gil + Perrault's World-Bank/IMF measurement initiative — agreement-in-principle from major US companies to share user/usage data for global-AI-adoption measurement, *not in time for next report*",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+          "edge_type": "supports",
+          "via": "Same adoption-data overlap as the Sajadieh talk-track; the 9th edition AI Index Report (April 2026) is the underlying data source whose population-adoption figures Evans's Gen-Z-specific anecdote sits inside.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-27-sajadieh-stanford-hai-inside-the-2026-ai-index-report -->supports--> this (1 hop)",
+        "graph: sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.00641,
+      "fused_score": 0.368,
+      "verdict": "use",
+      "reason": "US private AI-investering $285,9B (2025) vs $109,1B (2024); 1.953 nieuw gefinancierde AI-bedrijven; robots 12% huishoudtaken",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    },
+    {
+      "slug": "sources/2026-05-12-mgi-virtual-event-race-takes-off-next-big-arenas",
+      "path": "wiki/sources/2026-05-12-mgi-virtual-event-race-takes-off-next-big-arenas.md",
+      "type": "source",
+      "title": "The race takes off in the next big arenas of competition (MGI virtual event)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-27-sajadieh-stanford-hai-inside-the-2026-ai-index-report",
+          "edge_type": "supports",
+          "via": "**Sibling live-event-of-annual-landscape-report pattern at major-institution altitude.** Both render an annual landscape report into a live executive briefing + panel Q&A format; identical four-cell W&W profile (`digital-sensing/digital-scouting` + `digital-sensing/digital-scenario-planning` + `digital-seizing/balancing-digital-portfolios` + `contextual/external-triggers`). MGI emphasises the *arena-creation* axis (18 future arenas adding $18T market cap, nine omniscalers redistributing per-arena value at ~20×); AI Index emphasises the *absorption gap* axis (capability moving faster than governance / evaluation / data infrastructure / education can keep up). Both converge on the US-China narrowing, infrastructure concentration (omniscaler-capex / TSMC-foundry), and the public-trust gap as 2026's organizing facts.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-27-sajadieh-stanford-hai-inside-the-2026-ai-index-report -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006329,
+      "fused_score": 0.363,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-09-30-luo-null-labs-synthetic-data-ai-testing",
+      "path": "wiki/sources/2026-09-30-luo-null-labs-synthetic-data-ai-testing.md",
+      "type": "source",
+      "title": "Synthetic Data to Retrain Drifting Targeting Models, and a Missing Test Standard for AI and Autonomous Systems",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-27-sajadieh-stanford-hai-inside-the-2026-ai-index-report",
+          "edge_type": "supports",
+          "via": "Both say there is no agreed bar for how well an autonomous AI system has to perform. Perrault, on the AI Index panel, frames it as a missing acceptability threshold for legal, medical and financial use; this talk frames it as a missing common standard for testing AI and autonomous systems, which leaves defense buyers choosing the trusted vendor.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-27-sajadieh-stanford-hai-inside-the-2026-ai-index-report <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.00625,
+      "fused_score": 0.358,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/micro-productivity-trap",
+      "path": "wiki/concepts/micro-productivity-trap.md",
+      "type": "concept",
+      "title": "micro-productivity-trap",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/automation-vs-augmentation",
+          "edge_type": "contradicts",
+          "via": "process lock-in = automation without redesign; reinvent-the-business resists this trap",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/automation-vs-augmentation <--contradicts<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-15",
+      "last_confirmed": "2026-10-15",
+      "days_since_access": 0,
+      "effective_confidence": 0.95,
+      "rrf_score": 0.005952,
+      "fused_score": 0.356,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/ai-coding-productivity-evidence",
+      "path": "wiki/concepts/ai-coding-productivity-evidence.md",
+      "type": "concept",
+      "title": "AI coding productivity — the evidence",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/automation-vs-augmentation",
+          "edge_type": "part-of",
+          "via": null,
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/automation-vs-augmentation <--part-of<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": "2026-10-08",
+      "last_confirmed": "2026-10-08",
+      "days_since_access": 7,
+      "effective_confidence": 0.786,
+      "rrf_score": 0.006173,
+      "fused_score": 0.344,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/ai-benchmarks",
+      "path": "wiki/concepts/ai-benchmarks.md",
+      "type": "concept",
+      "title": "ai-benchmarks",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/automation-vs-augmentation",
+          "edge_type": "supports",
+          "via": "Narayanan's release-decision frame — reliability threshold required for automation deployment exceeds that for augmentation deployment; reliability is the gating dimension benchmarks have under-measured",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/automation-vs-augmentation -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.92,
+      "accessed_at": "2026-10-04",
+      "last_confirmed": "2026-10-04",
+      "days_since_access": 11,
+      "effective_confidence": 0.814,
+      "rrf_score": 0.006098,
+      "fused_score": 0.344,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/jagged-frontier",
+      "path": "wiki/concepts/jagged-frontier.md",
+      "type": "concept",
+      "title": "jagged-frontier",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/automation-vs-augmentation",
+          "edge_type": "supports",
+          "via": "per-task fit determines whether AI augments or harms — empirical mechanism",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/automation-vs-augmentation <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-03",
+      "last_confirmed": "2026-10-03",
+      "days_since_access": 12,
+      "effective_confidence": 0.831,
+      "rrf_score": 0.006024,
+      "fused_score": 0.343,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/dynamic-capabilities",
+      "path": "wiki/concepts/dynamic-capabilities.md",
+      "type": "concept",
+      "title": "dynamic-capabilities",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/strategic-foresight",
+          "edge_type": "part-of",
+          "via": "sensing-cluster microfoundation in the Teece framework",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/strategic-foresight -->part-of--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-15",
+      "last_confirmed": "2026-10-15",
+      "days_since_access": 0,
+      "effective_confidence": 0.95,
+      "rrf_score": 0.005556,
+      "fused_score": 0.332,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-03-20-huggingface-agentic-evaluations-workshop",
+      "path": "wiki/sources/2026-03-20-huggingface-agentic-evaluations-workshop.md",
+      "type": "source",
+      "title": "Agentic Evaluations Workshop — Deep Dive on the Future of Evals for Agents",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/automation-vs-augmentation",
+          "edge_type": "supports",
+          "via": "Narayanan's release-decision frame: automation tasks (autonomous customer-service agent) require a higher reliability threshold than augmentation tasks (coding agent with human-in-loop); reliability matters more in automation",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/automation-vs-augmentation <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005747,
+      "fused_score": 0.33,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/strategy",
+      "path": "wiki/concepts/strategy.md",
+      "type": "concept",
+      "title": "strategy",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/strategic-foresight",
+          "edge_type": "supports",
+          "via": "strategy and strategic foresight together cover the where-to-play / how-to-win / how-the-future-might-shape-both questions; Martin's *strategy as journey* and the *what-would-have-to-be-true* logic are foresight-adjacent",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/strategic-foresight <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.92,
+      "accessed_at": "2026-10-11",
+      "last_confirmed": "2026-10-11",
+      "days_since_access": 4,
+      "effective_confidence": 0.88,
+      "rrf_score": 0.005495,
+      "fused_score": 0.319,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-16-anthropic-economic-index-agentic-coding-returns-to-expertise",
+      "path": "wiki/sources/2026-06-16-anthropic-economic-index-agentic-coding-returns-to-expertise.md",
+      "type": "source",
+      "title": "Agentic coding and persistent returns to expertise",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-04-28-anthropic-economic-index-q4-2025",
+          "edge_type": "contradicts",
+          "via": "tension within the AEI program — the Q4 report's first-order deskilling (remaining task mix has lower education content as AI covers high-education tasks) sits against this report's finding that returns to domain expertise persist and even sharpen; different measures, partially opposing readings",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai",
+          "edge_type": "supports",
+          "via": "same authors (Massenkoff, McCrory); the observed-exposure report measures occupation-level displacement risk, this measures session-level success — both find coding-occupation boundaries blurring",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-04-28-anthropic-economic-index-q4-2025 <--contradicts<-- this (1 hop)",
+        "graph: sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005376,
+      "fused_score": 0.308,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-13-jha-emergent-democratizing-app-building-with-claude",
+      "path": "wiki/sources/2026-05-13-jha-emergent-democratizing-app-building-with-claude.md",
+      "type": "source",
+      "title": "How Emergent is making app building more accessible with Claude",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/automation-vs-augmentation",
+          "edge_type": "supports",
+          "via": "Sits hard on the *automation* leg: Emergent users are *not* augmenting an existing dev team — they're replacing the dev-shop alternative (CEO names the comparison: *'a $250,000 price point that they would have paid if they had gone and and hired a dev shop'*). The augmentation pattern of Lyft and HubSpot fits the wage-labour side of the workforce; Emergent's pattern fits the *small-business-can-now-self-serve* side of the same shift.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/automation-vs-augmentation <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.7,
+      "accessed_at": "2026-05-20",
+      "last_confirmed": "2026-05-20",
+      "days_since_access": null,
+      "effective_confidence": 0.7,
+      "rrf_score": 0.005682,
+      "fused_score": 0.305,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-21-allen-aws-london-exec-forum-agentic-team-structures",
+      "path": "wiki/sources/2026-05-21-allen-aws-london-exec-forum-agentic-team-structures.md",
+      "type": "source",
+      "title": "London Executive Forum 2026 — A leader's guide to advanced team structures in an agentic world",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-04-28-anthropic-economic-index-q4-2025",
+          "edge_type": "supports",
+          "via": "**Allen cites the lineage** — Allen opens (~1:15–2:00) with *'this report came out from Anthropic just last month: labor market impacts of artificial intelligence... it's really only just started if you actually look at the data in here. The blue on the spider diagram you're seeing is the potential disruption right now of these frontier models. The red is where it's actually started.'* The specific April 2026 Anthropic labour-market report Allen references is **not yet ingested into the wiki**; the [[2026-04-28-anthropic-economic-index-q4-2025|Q4 2025 Index]] (and its [[2026-05-07-anthropic-economic-index-5-learning-curves|5th report follow-on]]) are the closest available anchors for the Anthropic Economic Index lineage on which Allen's labour-market framing rests. Edge type *supports* not because Allen cites the Q4 report directly, but because Allen's evidentiary scaffolding rests on the same Anthropic-Economic-Index methodology + deskilling / automation-vs-augmentation framework the Q4 report established. *Open follow-up:* ingest the April 2026 Anthropic labour-market report Allen references.",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+          "edge_type": "supports",
+          "via": "Convergent on the *workflow redesign needs human consultants* claim. Allen (AWS London exec-forum altitude) frames agentic team structures as needing dedicated workflow-redesign capacity; Evans frames the same need from the demand side: *'you're supposed to reimagine all of the internal workflows of your company and work out which could be automated. That's a project. That's a project that needs five or ten people to sit down and spend a month or two working it out. And then actually doing it is another project.'*",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-04-28-anthropic-economic-index-q4-2025 <--supports<-- this (1 hop)",
+        "graph: sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": null,
+      "last_confirmed": "2026-07-15",
+      "days_since_access": null,
+      "effective_confidence": 0.8,
+      "rrf_score": 0.005435,
+      "fused_score": 0.305,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge",
+      "path": "wiki/sources/2026-06-16-mollick-simon-sinek-ai-skills-experience-edge.md",
+      "type": "source",
+      "title": "The AI Skills Nobody Is Teaching (And Everyone Needs) — Ethan Mollick on A Bit of Optimism",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-04-28-anthropic-economic-index-q4-2025",
+          "edge_type": "supports",
+          "via": "Mollick's *the apprenticeship model just broke* — juniors know less than ChatGPT so managers delegate to AI not to flawed humans, threatening the talent pipeline — is the qualitative mechanism behind the Q4 AEI's first-order deskilling signal (the remaining human task mix loses education content as AI covers high-education tasks).",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-04-28-anthropic-economic-index-q4-2025 <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005319,
+      "fused_score": 0.305,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-02-09-hubspot-customer-success-with-claude",
+      "path": "wiki/sources/2026-02-09-hubspot-customer-success-with-claude.md",
+      "type": "source",
+      "title": "How HubSpot uses Claude for customer success",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/automation-vs-augmentation",
+          "edge_type": "supports",
+          "via": "Practitioner case of CSMs operating *above their typical pay grade* — Claude turns a call transcript + knowledge-base articles into hospitality-revenue analysis the CSM then takes to the customer (*'that is something so far beyond my typical role as a CSM'*). The augmentation pattern is *role-level scope expansion*, not just task automation.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/automation-vs-augmentation <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.6,
+      "accessed_at": "2026-05-20",
+      "last_confirmed": "2026-05-20",
+      "days_since_access": null,
+      "effective_confidence": 0.6,
+      "rrf_score": 0.005882,
+      "fused_score": 0.301,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+      "path": "wiki/sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs.md",
+      "type": "source",
+      "title": "The new human-machine workforce: How agentic AI will transform jobs",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+          "edge_type": "contradicts",
+          "via": "Partial contradiction on the *lump-of-labor* and *new-jobs-will-emerge* framings. Evans (31 May 2026, four days later than Giles) argues *every wave of automation creates new jobs the doomers can't predict* and calls people who assert *every big company is going to buy ChatGPT tomorrow and then in two weeks time fire all their staff* *'morons'*. Giles surfaces the directly-counter empirical record: **AI is the #1 cited reason for US job cuts in BOTH March and April 2026** per Challenger, Gray & Christmas; April-2026 layoffs at 83,387 (+38% from March, third-highest since 2009); Block (Dorsey) explicit 40% workforce cut citing *'intelligence tools'*; Meta 8,000 cuts justified by AI capex of $125-145B for 2026. Giles also cites Carl Benedikt Frey (Oxford AI/work professor): *'It's entirely plausible that AI will create new kinds of businesses, but it's hard to see it creating something like the automobile industry [that generated many new jobs]'* — the Frey quote is the explicit empirical counter to Evans's railway-engineer / 19th-century-precedent argument. The two sources also agree on a number of points (AI-labs-still-hiring; the McKinsey-altitude top-3 functions; the workflow-redesign-as-the-real-work prescription) — the contradiction is specifically about the *aggregate-employment-trajectory*, not about the *operational shape* of the transformation.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going <--contradicts<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005208,
+      "fused_score": 0.299,
+      "verdict": "use",
+      "reason": "Gartner: uitgaven aan agents $86,4B (2025) naar $206,5B (2026)",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    },
+    {
+      "slug": "sources/2026-02-18-lyft-customer-support-with-claude",
+      "path": "wiki/sources/2026-02-18-lyft-customer-support-with-claude.md",
+      "type": "source",
+      "title": "How Lyft uses Claude for faster, more human customer support",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/automation-vs-augmentation",
+          "edge_type": "supports",
+          "via": "Named practitioner case of *augment-then-reinvest-the-savings-back-into-the-human-tier*: Lyft uses Claude to absorb routine support and reinvests the millions saved into upskilling human agents (anti-burnout, more empathy on complex cases) plus a new high-touch programme ('Lyft Silver'). Concrete counter to the assume-cuts framing of customer-support automation.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/automation-vs-augmentation <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.6,
+      "accessed_at": "2026-05-20",
+      "last_confirmed": "2026-05-20",
+      "days_since_access": null,
+      "effective_confidence": 0.6,
+      "rrf_score": 0.005814,
+      "fused_score": 0.298,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting",
+      "path": "wiki/sources/2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting.md",
+      "type": "source",
+      "title": "How McKinsey Plans to Survive AI (and Reinvent Consulting)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+          "edge_type": "supports",
+          "via": "Convergent observation: AI labs are investing in consultancies and forward-deployed-engineer programmes rather than competing them away. Sternfels (McKinsey managing-partner altitude, Feb 2026) argues professional services must reinvent under AI; Evans (May 2026) names the same dynamic from the outside — that *'the most cutting-edge AI labs are the ones most investing in these folks'* (Accenture / Bain / McKinsey-style work) precisely because reimagining client workflows is itself a project that needs five-to-ten consultants for one-to-two months.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005155,
+      "fused_score": 0.296,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-26-how-to-win-when-software-is-not-a-moat-evan-spiegel-snapchat-ceo",
+      "path": "wiki/sources/2026-04-26-how-to-win-when-software-is-not-a-moat-evan-spiegel-snapchat-ceo.md",
+      "type": "source",
+      "title": "How to win when software is not a moat | Evan Spiegel (Snapchat CEO)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+          "edge_type": "supports",
+          "via": "Same thesis, different vantage: once a product is commodity, distribution wins. Spiegel (Snap CEO altitude, 26 April 2026) makes the practitioner case; Evans (independent-analyst altitude, 31 May 2026) makes the same case structurally and applies it explicitly to foundation models. Evans's *'I don't like seeing GPT-2 rappers. I do like harnesses ... if the product is a commodity, then the distribution is what matters'* maps to Spiegel's *'when software is not a moat, distribution is'* almost line-for-line.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005102,
+      "fused_score": 0.293,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-28-dellacqua-jagged-technological-frontier",
+      "path": "wiki/sources/2026-04-28-dellacqua-jagged-technological-frontier.md",
+      "type": "source",
+      "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+          "edge_type": "contradicts",
+          "via": "Evans accepts the jagged-frontier concept (he names it explicitly) but rejects the methodology that decomposes a profession into percentage-automatable tasks. Dell'Acqua-style work decomposes consultant tasks and reports an X% productivity uplift bounded by the frontier; Evans calls the underlying *'17% of a senior law-firm partner's work could be automated'* framing *'horseshit'* and analogises it to the expert-systems fallacy (edge detector + eye detector + ear detector + 700 steps that still don't recognise a cat). The disagreement is about whether *jobs are decomposable as task-lists* — not about whether the frontier exists.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going -->contradicts--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005051,
+      "fused_score": 0.29,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-20-ng-deeplearningai-ai-dev-26-sf-future-of-software-engineering",
+      "path": "wiki/sources/2026-05-20-ng-deeplearningai-ai-dev-26-sf-future-of-software-engineering.md",
+      "type": "source",
+      "title": "AI Dev 26 x SF: Andrew Ng: The Future of Software Engineering",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+          "edge_type": "supports",
+          "via": "Both namecheck the *agent harness* framing — Ng as the canonical *harness is all you need* practitioner argument, Evans as a brief aside that flags the same vocabulary (*'I don't like seeing GPT-2 wrappers. I do like harnesses'*). Useful as a small lexical anchor that the *harness* terminology is now in independent-analyst altitude usage, not just practitioner.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.00495,
+      "fused_score": 0.284,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Lenny's-Podcast",
+      "path": "wiki/entities/Lenny's-Podcast.md",
+      "type": "entity",
+      "title": "Lenny's-Podcast",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+          "edge_type": "published-by",
+          "via": "Benedict Evans (independent analyst, ex-a16z partner) on 1997-for-AI / task-vs-job / foundation-models-as-commodity-utility / 5–10-year sector-by-sector adoption / lump-of-labor-fallacy applied to AI employment effects (31 May 2026 — the wiki's first independent-analyst-altitude long-form anchor)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going <--published-by<-- this (1 hop)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005263,
+      "fused_score": 0.283,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null,
+      "path_exists": false
+    },
+    {
+      "slug": "sources/2026-05-08-running-an-ai-native-engineering-org",
+      "path": "wiki/sources/2026-05-08-running-an-ai-native-engineering-org.md",
+      "type": "source",
+      "title": "Running an AI-native engineering org",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+          "edge_type": "supports",
+          "via": "Shared data point used by both sides of the *AI will eliminate engineers* debate. Evans: *'Even just looking at the most advanced AI companies — Anthropic, OpenAI — everyone's just increasing headcount. Like the companies you would think would be least likely to add humans are adding many, many humans.'* The Anthropic engineering-org piece is one of the wiki's primary practitioner-altitude anchors for the same observation.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-09",
+      "days_since_access": null,
+      "effective_confidence": 0.8,
+      "rrf_score": 0.005,
+      "fused_score": 0.281,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-27-koomen-yc-lightcone-inside-yc-ai-playbook",
+      "path": "wiki/sources/2026-05-27-koomen-yc-lightcone-inside-yc-ai-playbook.md",
+      "type": "source",
+      "title": "Inside YC's AI Playbook",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+          "edge_type": "supports",
+          "via": "Convergent on two claims. (1) Career advice — Evans's *'dive into this completely submerging yourself in it and coming out understanding what you can do with it'* mirrors Koomen's practitioner-altitude *'just build, ship, iterate'* posture against the sit-and-shout pattern. (2) Both namecheck the agent-harness framing — Koomen as YC-internal-infrastructure operationalisation, Evans as the rhetorical aside *'I do like harnesses'* contrasted with *'GPT-2 wrappers'*. Same publish week (27 May / 31 May).",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004902,
+      "fused_score": 0.281,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Anthropic",
+      "path": "wiki/entities/Anthropic.md",
+      "type": "entity",
+      "title": "Anthropic",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai",
+          "edge_type": "published-by",
+          "via": "Anthropic research note; part of the Anthropic Economic Index program; data on Hugging Face (Anthropic/EconomicIndex)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai -->published-by--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-03",
+      "last_confirmed": "2026-10-03",
+      "days_since_access": 12,
+      "effective_confidence": 0.919,
+      "rrf_score": 0.004762,
+      "fused_score": 0.281,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/analogical-reasoning",
+      "path": "wiki/concepts/analogical-reasoning.md",
+      "type": "concept",
+      "title": "analogical-reasoning",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/strategic-foresight",
+          "edge_type": "supports",
+          "via": "disciplined analogies are a sensing/scenario tool",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/strategic-foresight <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": "2026-09-09",
+      "last_confirmed": "2026-09-09",
+      "days_since_access": 36,
+      "effective_confidence": 0.536,
+      "rrf_score": 0.005618,
+      "fused_score": 0.279,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-28-moon-mckinsey-rewiring-software-delivery-for-the-agentic-era",
+      "path": "wiki/sources/2026-05-28-moon-mckinsey-rewiring-software-delivery-for-the-agentic-era.md",
+      "type": "source",
+      "title": "Rewiring software delivery for the agentic era",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+          "edge_type": "supports",
+          "via": "Forward-deployed-engineer-as-Accenture-in-San-Francisco observation overlaps the McKinsey team-shape-collapse thesis. Evans (independent-analyst altitude): *'A forward deployed engineer is like an Accenture outsourced software developer who lives in San Francisco.'* Moon et al. (McKinsey-Digital partner altitude, 28 May 2026, three days earlier): the agentic-era software-delivery team shape compresses but does not eliminate the workflow-integration layer. Same observation, two altitudes — Evans frames the layer-as-consulting from outside, McKinsey frames the same layer-as-internal-capability from inside the client-services firm.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004854,
+      "fused_score": 0.278,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-03-warren-yc-how-to-build-an-ai-native-services-company",
+      "path": "wiki/sources/2026-06-03-warren-yc-how-to-build-an-ai-native-services-company.md",
+      "type": "source",
+      "title": "How to Build an AI-Native Services Company",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going",
+          "edge_type": "supports",
+          "via": "Convergent on the *AI labs invest in consultancies + forward-deployed engineers ≈ Accenture-outsourced-developer-in-SF* observation Evans makes. Evans (May 2026, independent-analyst altitude) reads the forward-deployed-engineer + consulting-investment pattern as **inside-the-AI-labs evidence that workflow-redesign needs humans**; Warren (June 2026, YC altitude) describes the **outside-the-AI-labs corollary** — startups building AI-native services companies that ship outcomes (not co-pilots) into the same workflow-redesign demand. The two sources together explain the *services-don't-disappear-they-reinvent* dynamic at three altitudes (Evans observer / Warren builder / Sternfels incumbent).",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004808,
+      "fused_score": 0.276,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world",
+      "path": "wiki/sources/2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world.md",
+      "type": "source",
+      "title": "A leader's guide to advanced team structures in an agentic world",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai",
+          "edge_type": "supports",
+          "via": "presents this exact Anthropic 'March study' (Massenkoff & McCrory) — O*NET 800 occupations + Claude usage + Eloundou exposure scores; observed vs theoretical exposure; junior-hiring slowdown ~14%; exposed workers older/educated/better-paid — as the empirical ground for the talk",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004673,
+      "fused_score": 0.268,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-22-bbc-what-if-were-wrong-about-ai-layoffs",
+      "path": "wiki/sources/2026-06-22-bbc-what-if-were-wrong-about-ai-layoffs.md",
+      "type": "source",
+      "title": "What If We're Wrong About AI Layoffs?",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai",
+          "edge_type": "supports",
+          "via": "measurement caution — Edwards's 'we may never know, it'll stay inconclusive' echoes the report's disciplined stance that AI labor effects are hard to isolate and past forecasts over-predicted",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.00463,
+      "fused_score": 0.265,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Anthropic-Economic-Index",
+      "path": "wiki/entities/Anthropic-Economic-Index.md",
+      "type": "entity",
+      "title": "Anthropic-Economic-Index",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai",
+          "edge_type": "part-of",
+          "via": "introduces the labor-impact (observed-exposure) measure built on the Economic Index usage data; the analytic complement to the AEI usage reports",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai -->part-of--> this (1 hop)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004717,
+      "fused_score": 0.253,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null,
+      "path_exists": false
+    },
+    {
+      "slug": "sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs",
+      "path": "wiki/sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs.md",
+      "type": "source",
+      "title": "2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "stored_confidence": null,
+      "effective_confidence": null,
+      "fused_score": null,
+      "retrieval_reasons": [
+        "gap-expansion: rg keyword sweep (not in ledger)"
+      ],
+      "verdict": "use",
+      "reason": "$5-7T tot 2030; piek 2,5-3% bbp in 2027-28; bijdrage ~0,1 procentpunt aan US-groei",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    },
+    {
+      "slug": "sources/2026-08-18-covello-gs-new-models-ai-investment-landscape",
+      "path": "wiki/sources/2026-08-18-covello-gs-new-models-ai-investment-landscape.md",
+      "type": "source",
+      "title": "2026-08-18-covello-gs-new-models-ai-investment-landscape",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "stored_confidence": null,
+      "effective_confidence": null,
+      "fused_score": null,
+      "retrieval_reasons": [
+        "gap-expansion: rg keyword sweep (not in ledger)"
+      ],
+      "verdict": "use",
+      "reason": "95% consumenten gebruikt gratis AI; monetisatie moet uit bedrijven komen; markt stelt capex ter discussie",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    },
+    {
+      "slug": "sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai",
+      "path": "wiki/sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai.md",
+      "type": "source",
+      "title": "2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "stored_confidence": null,
+      "effective_confidence": null,
+      "fused_score": null,
+      "retrieval_reasons": [
+        "gap-expansion: rg keyword sweep (not in ledger)"
+      ],
+      "verdict": "use",
+      "reason": "~40M naar >70M Amerikanen in non-employment work (ongesourcet); embodied AI een zegen voor vergrijzend Azië",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    }
+  ],
+  "expansions": [
+    {
+      "trigger_facet": "facets the qmd stream left empty (robotics data / world models / data markets)",
+      "method": "rg keyword sweep across wiki/ (caller-instructed; substitutes for index.md fallback)",
+      "added": [
+        "concepts/enterprise-ai-adoption",
+        "sources/2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas",
+        "sources/2026-04-30-ai-index-report-2026",
+        "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+        "sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs",
+        "sources/2026-08-18-covello-gs-new-models-ai-investment-landscape",
+        "sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai"
+      ]
+    }
+  ],
+  "answer_map": [
+    {
+      "anchor": "W1",
+      "claim": "US private AI-investering $285,9B (2025) vs $109,1B (2024); 1.953 nieuw gefinancierde AI-bedrijven; robots 12% huishoudtaken",
+      "pages": [
+        "sources/2026-04-30-ai-index-report-2026"
+      ],
+      "span": "Top Takeaways #5, #7"
+    },
+    {
+      "anchor": "W2",
+      "claim": "AI software & services $1,5-4,6T in 2040 (17-25% CAGR vanaf $85B); 18 arena's +$18T; videogames als arena; robotica 13-23%",
+      "pages": [
+        "sources/2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas"
+      ],
+      "span": "punten 1-2; tabel"
+    },
+    {
+      "anchor": "W3",
+      "claim": "$5-7T tot 2030; piek 2,5-3% bbp in 2027-28; bijdrage ~0,1 procentpunt aan US-groei",
+      "pages": [
+        "sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs"
+      ],
+      "span": "punten 1, 4"
+    },
+    {
+      "anchor": "W4",
+      "claim": "Gartner: uitgaven aan agents $86,4B (2025) naar $206,5B (2026)",
+      "pages": [
+        "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs"
+      ],
+      "span": "punt 2"
+    },
+    {
+      "anchor": "W5",
+      "claim": "MGI: agents 44% / robots 13% van US-werkuren; 65/35 niet-fysiek/fysiek; robot-centrisch archetype 8%",
+      "pages": [
+        "concepts/automation-vs-augmentation"
+      ],
+      "span": "### 17. The MGI structural framework"
+    },
+    {
+      "anchor": "W6",
+      "claim": "MGI: $2,9T US / $28,7T wereldwijd per jaar in 2030; 77% agents / 23% robots ($0,67T)",
+      "pages": [
+        "concepts/enterprise-ai-adoption"
+      ],
+      "span": "## The MGI workflow-as-unit... scaffold"
+    },
+    {
+      "anchor": "W7",
+      "claim": "data-annotatie en egocentrische robotdata als nieuwe arbeidslaag; robotaxi-impact over 5-10 jaar",
+      "pages": [
+        "concepts/ai-employment-effects"
+      ],
+      "span": "FT-film-sectie; Khan"
+    },
+    {
+      "anchor": "W8",
+      "claim": "95% consumenten gebruikt gratis AI; monetisatie moet uit bedrijven komen; markt stelt capex ter discussie",
+      "pages": [
+        "sources/2026-08-18-covello-gs-new-models-ai-investment-landscape"
+      ],
+      "span": "punten 2, 9"
+    },
+    {
+      "anchor": "W9",
+      "claim": "~40M naar >70M Amerikanen in non-employment work (ongesourcet); embodied AI een zegen voor vergrijzend Azië",
+      "pages": [
+        "sources/2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai"
+      ],
+      "span": "punt 7; source-quality"
+    }
+  ],
+  "answer": "**Investeringen en markt.** De private AI-investering in de VS bedroeg $285,9 mld in 2025, tegen $109,1 mld in 2024. Dat is ~23x China ($12,4 mld). In de VS kregen 1.953 nieuwe AI-bedrijven financiering [W1]. MGI verwacht voor AI-software en -diensten $1,5-4,6 bln omzet in 2040, ofwel 17-25% groei per jaar vanaf $85 mld. MGI's 18 \"arena's\" wonnen sinds 2022 $18 bln aan beurswaarde, en videogames vormen een van die arena's [W2]. Goldman Sachs (Hatzius) noemt $5-7 bln cumulatief tot 2030, met een piek van 2,5-3% van het bbp in 2027-28. De bijdrage aan de Amerikaanse groei is nu ~0,1 procentpunt [W3]. Gartner verwacht dat de uitgaven aan agents stijgen van $86,4 mld in 2025 naar $206,5 mld in 2026 [W4]. Covello (ook Goldman) waarschuwt: 95% van de consumenten gebruikt gratis AI, dus het geld moet uit bedrijven komen [W8].\n\n**Robots en humanoids.** Volgens MGI kunnen agents nu 44% van de Amerikaanse werkuren uitvoeren en robots 13%. Van alle werkuren is 35% fysiek. In het robot-centrische archetype (8% van de werkenden) vallen onder meer vakkenvullers en orderpickers [W5]. Agents en robots samen kunnen in 2030 $2,9 bln per jaar opleveren in de VS en $28,7 bln wereldwijd. Daarvan komt 23% van robots, ofwel $0,67 bln [W6]. Robots slagen nog maar in 12% van de huishoudtaken [W1]. Over humanoids specifiek staan er geen prognoses in de wiki.\n\n**Arbeid en platformwerk.** AI schept een nieuwe laag data-arbeid: annotatie, RLHF en egocentrische data voor humanoids [W7]. Sundararajan ziet werk verschuiven naar \"non-employment\"-vormen, van ~40M naar meer dan 70M Amerikanen. Dat cijfer is ongesourcet. Embodied AI noemt hij \"a boon\" voor vergrijzend Azië [W9].\n\n**Gaten.** De wiki heeft geen prognose voor de humanoid-markt, geen omvang van de AI-datamarkt en geen cijfers voor VR-training.",
+  "notes": [
+    "Run with --no-bump and Step 8 skipped: caller constraint forbids modifying wiki pages (accessed_at not bumped).",
+    "Commissioned as input to a market/competitor analysis for the startup Opgeruimd."
+  ],
+  "generated_at": "2026-10-15T21:34:20.840Z"
+}

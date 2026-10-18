@@ -1,0 +1,1486 @@
+{
+  "question": {
+    "original": "Welke concurrenten en bedrijven verzamelen of verkopen data voor embodied AI, en hoe werken datamarktplaatsen en datalicenties?",
+    "restated": "Welke bedrijven verzamelen of verkopen data voor embodied AI, en wat zegt de wiki over datamarktplaatsen, licentiemodellen en herkomst/consent?",
+    "facets": [
+      "bedrijven die data voor embodied AI verzamelen of verkopen",
+      "datamarktplaatsen en licentiemodellen",
+      "herkomst, consent en juridische risico's"
+    ],
+    "language": "nl"
+  },
+  "params": {
+    "seeds": 12,
+    "hops": 1,
+    "fusion": "rrf",
+    "graph_rank": "bfs",
+    "k_rrf": 60,
+    "graph_w": 0.5,
+    "alpha": 0.7,
+    "ppr_damping": 0.5,
+    "conf_floor": 0.6,
+    "today": "2026-10-15",
+    "no_bump": true
+  },
+  "graph_available": true,
+  "graph_warning": null,
+  "candidates": [
+    {
+      "slug": "sources/2026-07-06-sevilla-emarketer-custom-ai-coded-apps-trim-saas-expenses",
+      "path": "wiki/sources/2026-07-06-sevilla-emarketer-custom-ai-coded-apps-trim-saas-expenses.md",
+      "type": "source",
+      "title": "Custom AI-coded apps help small firms trim SaaS expenses",
+      "qmd_rank": 1,
+      "qmd_score": 1,
+      "graph": [
+        {
+          "from_seed": "sources/2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free",
+          "edge_type": "contradicts",
+          "via": "Shared topic: replacing CRM SaaS with AI-coded apps. Sevilla reports small firms (55-70 staff) that replaced Salesforce with vibe-coded apps; Ramineni says 'I don't think you can vibe code a CRM', while naming homebrew software in the SMB and mid-market as the open question. The disagreement turns on firm size, which both sources raise.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 1 (score 1.00)",
+        "graph: sources/2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free -->contradicts--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.016393,
+      "fused_score": 0.94,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "MKB vervangt SaaS door zelfgebouwde apps",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness",
+      "path": "wiki/sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness.md",
+      "type": "source",
+      "title": "China, Open Source & AI Competitiveness I Andrew Ng",
+      "qmd_rank": 2,
+      "qmd_score": 0.5,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 2 (score 0.50)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.016129,
+      "fused_score": 0.925,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "Chinese open-source-modellen; geen datamarkt",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free",
+      "path": "wiki/sources/2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free.md",
+      "type": "source",
+      "title": "The $1B founder of Fireflies on why he gives his software away for free and what he charges for",
+      "qmd_rank": 6,
+      "qmd_score": 0.14,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-06-sevilla-emarketer-custom-ai-coded-apps-trim-saas-expenses",
+          "edge_type": "contradicts",
+          "via": "Shared topic: replacing CRM SaaS with AI-coded apps. Sevilla reports small firms (55-70 staff) that replaced Salesforce with vibe-coded apps; Ramineni says 'I don't think you can vibe code a CRM', while naming homebrew software in the SMB and mid-market as the open question. The disagreement turns on firm size, which both sources raise.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 6 (score 0.14)",
+        "graph: sources/2026-07-06-sevilla-emarketer-custom-ai-coded-apps-trim-saas-expenses <--contradicts<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.015152,
+      "fused_score": 0.869,
+      "verdict": "use",
+      "reason": "opnames gratis weggeven, betalen voor agentisch werk; \"infrastructure or a data source/connector that doesn't accrue a lot of value\"",
+      "reason_class": null,
+      "promoted": null
+    },
+    {
+      "slug": "entities/HubSpot",
+      "path": "wiki/entities/HubSpot.md",
+      "type": "entity",
+      "title": "HubSpot",
+      "qmd_rank": 5,
+      "qmd_score": 0.2,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 5 (score 0.20)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": "2026-10-15",
+      "last_confirmed": "2026-10-15",
+      "days_since_access": 0,
+      "effective_confidence": 0.8,
+      "rrf_score": 0.015385,
+      "fused_score": 0.863,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "marketing-SaaS",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/generative-ai",
+      "path": "wiki/concepts/generative-ai.md",
+      "type": "concept",
+      "title": "Generative AI",
+      "qmd_rank": 3,
+      "qmd_score": 0.33,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 3 (score 0.33)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-09-19",
+      "last_confirmed": "2026-09-19",
+      "days_since_access": 26,
+      "effective_confidence": 0.712,
+      "rrf_score": 0.015873,
+      "fused_score": 0.857,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "algemeen GenAI-begrip",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+      "path": "wiki/sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening.md",
+      "type": "source",
+      "title": "Hoe AI de sectoren IT en zakelijke dienstverlening verandert",
+      "qmd_rank": 7,
+      "qmd_score": 0.13,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 7 (score 0.13)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014925,
+      "fused_score": 0.856,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "sectorblootstelling NL",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs",
+      "path": "wiki/sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs.md",
+      "type": "source",
+      "title": "How AI is Affecting GDP Growth, Productivity, and Jobs",
+      "qmd_rank": 9,
+      "qmd_score": 0.09,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 9 (score 0.09)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014493,
+      "fused_score": 0.831,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "macro-investering; gebruikt in de prognose-vraag",
+      "promoted": null
+    },
+    {
+      "slug": "syntheses/organizational-frameworks-for-ai-adoption",
+      "path": "wiki/syntheses/organizational-frameworks-for-ai-adoption.md",
+      "type": "synthesis",
+      "title": "Synthesis: Organizational frameworks for AI adoption",
+      "qmd_rank": 4,
+      "qmd_score": 0.25,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 4 (score 0.25)"
+      ],
+      "stored_confidence": 0.9,
+      "accessed_at": "2026-09-18",
+      "last_confirmed": "2026-07-15",
+      "days_since_access": 27,
+      "effective_confidence": 0.667,
+      "rrf_score": 0.015625,
+      "fused_score": 0.826,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "adoptiekaders in organisaties",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about",
+      "path": "wiki/sources/2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about.md",
+      "type": "source",
+      "title": "About – Frontier Firm AI Initiative",
+      "qmd_rank": 10,
+      "qmd_score": 0.08,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 10 (score 0.08)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014286,
+      "fused_score": 0.819,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "HBS-onderzoeksinitiatief",
+      "promoted": null
+    },
+    {
+      "slug": "entities/AI%20Index",
+      "path": "wiki/entities/AI%20Index.md",
+      "type": "entity",
+      "title": "AI Index",
+      "qmd_rank": 8,
+      "qmd_score": 0.11,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 8 (score 0.11)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014706,
+      "fused_score": 0.789,
+      "verdict": "ignore",
+      "reason_class": "wrong-granularity",
+      "reason": "entiteitskaart; de rapportbronnen zelf zijn gebruikt",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-07-07-sinofsky-amble-a16z-software-in-the-age-of-agents",
+      "path": "wiki/sources/2026-07-07-sinofsky-amble-a16z-software-in-the-age-of-agents.md",
+      "type": "source",
+      "title": "Software in the Age of Agents | The a16z Show",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-06-sevilla-emarketer-custom-ai-coded-apps-trim-saas-expenses",
+          "edge_type": "supports",
+          "via": "Both address whether AI coding tools can replace enterprise SaaS incumbents — a16z's Sinofsky argues vibe-coding into ENTERPRISE (SAP/Salesforce-embedded-logic scale) fails; this source's case studies are all small firms (55-70 employees) succeeding at exactly that. Read together they draw the scope boundary precisely: small/simple orgs can win, large/complex enterprises can't — nuance, not contradiction.",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free",
+          "edge_type": "supports",
+          "via": "Shared topic: vibe-coding your way into enterprise software, and Salesforce going headless. Sinofsky points to undocumented exception handling and business logic; Ramineni points to 'how much workflow business logic … needs to exist' and uses Dropbox versus an S3 bucket as his analogy.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-06-sevilla-emarketer-custom-ai-coded-apps-trim-saas-expenses -->supports--> this (1 hop)",
+        "graph: sources/2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.008197,
+      "fused_score": 0.47,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-09-08-gauch-bcg-so-what-will-ai-agents-replace-your-crm",
+      "path": "wiki/sources/2026-09-08-gauch-bcg-so-what-will-ai-agents-replace-your-crm.md",
+      "type": "source",
+      "title": "Will AI Agents Replace Your CRM?",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-06-sevilla-emarketer-custom-ai-coded-apps-trim-saas-expenses",
+          "edge_type": "contradicts",
+          "via": "whether a CRM can be replaced outright: Sevilla reports small firms that replaced Salesforce with AI-coded apps; Gauch answers 'in short, no' for the enterprises BCG advises, citing data, process scale, regulation and security. The disagreement turns on firm size, which Sevilla's own scope note also draws",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free",
+          "edge_type": "supports",
+          "via": "Shared topic: whether agents or AI-built software replace the CRM, and whether CRMs go headless. Gauch (BCG) says agents replace the CRM's screen but not its governed record, and that CRMs move towards headless; Ramineni says 'I don't think you can vibe code a CRM' and that Salesforce 'had to make a hard decision like do we go headless'.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-06-sevilla-emarketer-custom-ai-coded-apps-trim-saas-expenses <--contradicts<-- this (1 hop)",
+        "graph: sources/2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.008065,
+      "fused_score": 0.462,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-06-02-belcak-nvidia-small-language-models-future-agentic-ai",
+      "path": "wiki/sources/2025-06-02-belcak-nvidia-small-language-models-future-agentic-ai.md",
+      "type": "source",
+      "title": "Small Language Models are the Future of Agentic AI",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness",
+          "edge_type": "supports",
+          "via": "arrives at the democratisation argument from the compute side rather than the geopolitics side — *'when more individuals and organizations can participate in developing language models… the aggregate population of agents is more likely to represent a more diverse range of perspectives'*. Both treat cheap, ownable, locally-runnable models as the condition for broad participation",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007937,
+      "fused_score": 0.455,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-07-10-hugging-face-ceo-companies-done-renting-their-ai",
+      "path": "wiki/sources/2026-07-10-hugging-face-ceo-companies-done-renting-their-ai.md",
+      "type": "source",
+      "title": "Hugging Face's CEO on why companies are done renting their AI | Equity Podcast",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness",
+          "edge_type": "supports",
+          "via": "two open-source advocates reaching the same conclusions independently a fortnight apart — open weights as the condition of American competitiveness rather than a threat to it, the distillation-as-explanation-for-China's-progress claim dismissed as overstated, and price-sensitive markets outside the US already defaulting to Chinese open models",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007813,
+      "fused_score": 0.448,
+      "verdict": "use",
+      "reason": "~3M modellen, 1M datasets, helft Fortune 500; platform vangt 1-2% van de waarde; Evox-copyrightzaak; Reachy Mini",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    },
+    {
+      "slug": "sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity",
+      "path": "wiki/sources/2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity.md",
+      "type": "source",
+      "title": "The Biggest AI Opportunity Isn't Replacing People | Stanford Economist",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness",
+          "edge_type": "supports",
+          "via": "both reject the job-apocalypse framing while accepting significant disruption, and both locate the binding constraint in skills transition rather than job destruction — Ng's 'the challenge is not dealing with the job apocalypse, the challenge is how to help everyone gain the new skills they will need' against Brynjolfsson's 'yes, there's lots of jobs being destroyed… there's also all this opportunity being created'",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs",
+          "edge_type": "contradicts",
+          "via": "the same disagreement as above, restated: Brynjolfsson reports the entry-level effect growing over time ('up to 16 or 17%'), Hatzius reports no large effect anywhere in the occupation-level data as of August 2026",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness -->supports--> this (1 hop)",
+        "graph: sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs -->contradicts--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007692,
+      "fused_score": 0.441,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity",
+      "path": "wiki/sources/2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity.md",
+      "type": "source",
+      "title": "Why AI Isn't Actually Boosting Productivity | Trumponomics",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness",
+          "edge_type": "supports",
+          "via": "published a week apart, both argue open weights are the strategically load-bearing choice and both read China's open-model position as a deliberate, well-played strategy rather than derivative copying; Ng adds the practitioner's version of Frey's dependence argument as a corporate rather than national prescription — 'preserve optionality… I don't let myself be locked into any one of them'",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+          "edge_type": "supports",
+          "via": "both hold task-level AI gains against aggregate outcomes and find the aggregate missing; Frey supplies a mechanism the chart does not — 'it's the time saving minus the time for verification' — and a historical control in the computer revolution, which he argues was more transformative than today's AI yet produced only a decade-long productivity upsurge mostly confined to the United States",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs",
+          "edge_type": "supports",
+          "via": "both state that AI's measured macroeconomic effect to date is small. Frey argues from the gap between rising inventive output and flat transformational output; Hatzius quantifies the GDP-growth contribution at about a tenth of a percentage point and attributes part of the headline discrepancy to national-accounts treatment",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness -->supports--> this (1 hop)",
+        "graph: sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening <--supports<-- this (1 hop)",
+        "graph: sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007576,
+      "fused_score": 0.434,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai",
+      "path": "wiki/sources/2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai.md",
+      "type": "source",
+      "title": "How Companies Are Building Their Own Intelligence | Sonya Huang, Sequoia Capital",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness",
+          "edge_type": "supports",
+          "via": "both treat open-weight availability as the enabling condition for enterprise ownership of AI capability rather than as a licensing preference, and both name specific Chinese open-weight releases as the reason the calculus changed. Ng argues US competitiveness depends on open weights remaining available; Huang cites *\"the newest open-weight models, especially Kimi K3 and GLM-5.2, being extremely good\"* as why *\"owning your stack is no longer a performance sacrifice\"* — and separately notes Jensen Huang leading a push to keep open-weight models available in the US. The two sources approach the same dependency from policy and from portfolio-strategy vantages",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007463,
+      "fused_score": 0.428,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-25-sokolenko-pycon-de-demystifying-agentic-ai-small-language-models",
+      "path": "wiki/sources/2026-08-25-sokolenko-pycon-de-demystifying-agentic-ai-small-language-models.md",
+      "type": "source",
+      "title": "Demystifying Agentic AI Using Small Language Models [PyCon DE & PyData 2026]",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness",
+          "edge_type": "supports",
+          "via": "an independent European practitioner arriving at the same own-vs-rent conclusion from the laptop end: the reason to care about open weights is that you cannot experiment with a proprietary model — *'they are all proprietary, so you cannot use them for local experimentation'*",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007353,
+      "fused_score": 0.422,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over",
+      "path": "wiki/sources/2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over.md",
+      "type": "source",
+      "title": "The era of experimentation is over, with Arvind Krishna, CEO of IBM",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness",
+          "edge_type": "supports",
+          "via": "Krishna's first piece of CEO advice — pay attention to open-weight models, run on premise — is the enterprise-side version of the case Ng makes on policy grounds. Ng co-hosts this episode, so the two are not independent",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007246,
+      "fused_score": 0.416,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-09-18-bloomberg-originals-how-china-plans-to-win-global-ai-race",
+      "path": "wiki/sources/2026-09-18-bloomberg-originals-how-china-plans-to-win-global-ai-race.md",
+      "type": "source",
+      "title": "How China Plans to Win the Global AI Race",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness",
+          "edge_type": "supports",
+          "via": "price-sensitive markets defaulting to Chinese open models. Ng says DeepSeek adoption is 'through the roof' in Africa and that American under-investment in open models cedes those markets; Bloomberg calls the developing world 'a tremendous battleground' and adds the US version — hundreds of US startups lobbying against a ban because 'they're a lot cheaper'",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007143,
+      "fused_score": 0.41,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-09-18-reuters-on-assignment-inside-chinas-ai-race",
+      "path": "wiki/sources/2026-09-18-reuters-on-assignment-inside-chinas-ai-race.md",
+      "type": "source",
+      "title": "Inside China's AI race | On Assignment",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness",
+          "edge_type": "supports",
+          "via": "both decline to treat distillation as the explanation for China's catch-up. Ng calls the claim 'vastly overstated'; Chen says the share is 'very hard to determine' and gives a counter-example — US companies distil too, Meta spends millions on Anthropic tokens a month, and its model has not caught up. The Reuters account is more cautious than Ng's: it confirms the practice is widespread",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007042,
+      "fused_score": 0.404,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/ai-agents",
+      "path": "wiki/concepts/ai-agents.md",
+      "type": "concept",
+      "title": "ai-agents",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/generative-ai",
+          "edge_type": "instance-of",
+          "via": "agents are the orchestrating tier on top of LLM-based GenAI",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/generative-ai <--instance-of<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-12",
+      "last_confirmed": "2026-10-12",
+      "days_since_access": 3,
+      "effective_confidence": 0.919,
+      "rrf_score": 0.006757,
+      "fused_score": 0.399,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/enterprise-ai-adoption",
+      "path": "wiki/concepts/enterprise-ai-adoption.md",
+      "type": "concept",
+      "title": "enterprise-ai-adoption",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/generative-ai",
+          "edge_type": "caused",
+          "via": "the 2024 jump from 55% → 78% adoption was driven by GenAI specifically",
+          "hops": 1
+        },
+        {
+          "from_seed": "syntheses/organizational-frameworks-for-ai-adoption",
+          "edge_type": "instance-of",
+          "via": "synthesizes 6 frameworks describing different decision layers within enterprise AI adoption",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/generative-ai -->caused--> this (1 hop)",
+        "graph: syntheses/organizational-frameworks-for-ai-adoption -->instance-of--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-15",
+      "last_confirmed": "2026-10-15",
+      "days_since_access": 0,
+      "effective_confidence": 0.95,
+      "rrf_score": 0.006667,
+      "fused_score": 0.399,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-09-30-michael-miller-department-of-war-ai-adoption",
+      "path": "wiki/sources/2026-09-30-michael-miller-department-of-war-ai-adoption.md",
+      "type": "source",
+      "title": "Department of War AI Adoption, a Superintelligence Compact Against Regulatory Capture, and Procurement Reform for Startups (Emil Michael with Jason Miller)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness",
+          "edge_type": "supports",
+          "via": "Both treat a few leading AI companies shaping the rules as a risk and back open models against it. Ng says lobbying by 'a handful of businesses' against open models has hampered American AI and advises firms not to be 'locked into any one' model provider; in this talk a US official says the White House superintelligence compact should prevent 'regulatory capture by one or two companies' and 'promote open source', and that his department had been 'single-threaded on one AI provider'.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006944,
+      "fused_score": 0.398,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-10-04-chu-liu-dw-the-dip-how-china-is-viewing-the-ai-race",
+      "path": "wiki/sources/2026-10-04-chu-liu-dw-the-dip-how-china-is-viewing-the-ai-race.md",
+      "type": "source",
+      "title": "How China is viewing the AI race | The Dip Podcast",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness",
+          "edge_type": "supports",
+          "via": "Shared topic: open models and US-China competition. Ng argues open models are not dangerous and that US restrictions slow the US; Chu describes China using open-weight models to win adoption abroad.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-29-ng-washington-post-china-open-source-ai-competitiveness <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006849,
+      "fused_score": 0.393,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/foundation-models",
+      "path": "wiki/concepts/foundation-models.md",
+      "type": "concept",
+      "title": "foundation-models",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/generative-ai",
+          "edge_type": "uses",
+          "via": "GenAI is the dominant deployment of foundation models in 2024–2026",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/generative-ai -->uses--> this (1 hop)"
+      ],
+      "stored_confidence": 0.88,
+      "accessed_at": "2026-10-12",
+      "last_confirmed": "2026-10-12",
+      "days_since_access": 3,
+      "effective_confidence": 0.851,
+      "rrf_score": 0.006579,
+      "fused_score": 0.377,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas",
+      "path": "wiki/sources/2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas.md",
+      "type": "source",
+      "title": "The race takes off in the next big arenas of competition (MGI 2026 update)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/generative-ai",
+          "edge_type": "supports",
+          "via": "MGI names AI foundation as a three-arena cluster (semiconductors + cloud + AI software & services) and projects AI software & services revenue of $1.5T–$4.6T by 2040 from $85B baseline (17–25% CAGR); first wiki source decomposing GenAI's macro footprint into a three-arena bundle",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/generative-ai -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006494,
+      "fused_score": 0.372,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/micro-productivity-trap",
+      "path": "wiki/concepts/micro-productivity-trap.md",
+      "type": "concept",
+      "title": "micro-productivity-trap",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "syntheses/organizational-frameworks-for-ai-adoption",
+          "edge_type": "supports",
+          "via": "the layered framing makes the trap legible — most failures are layer mismatches",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: syntheses/organizational-frameworks-for-ai-adoption -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-15",
+      "last_confirmed": "2026-10-15",
+      "days_since_access": 0,
+      "effective_confidence": 0.95,
+      "rrf_score": 0.006173,
+      "fused_score": 0.369,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/jagged-frontier",
+      "path": "wiki/concepts/jagged-frontier.md",
+      "type": "concept",
+      "title": "jagged-frontier",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/generative-ai",
+          "edge_type": "instance-of",
+          "via": "characterizes the capability profile of GPT-class models specifically",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/generative-ai <--instance-of<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-10-03",
+      "last_confirmed": "2026-10-03",
+      "days_since_access": 12,
+      "effective_confidence": 0.831,
+      "rrf_score": 0.00641,
+      "fused_score": 0.365,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook",
+      "path": "wiki/sources/2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook.md",
+      "type": "source",
+      "title": "AI Broke the Old Marketing Playbook | Kipp Bodnar & Kieran Flanagan | UNBOUND 2026 | HubSpot Live",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "entities/HubSpot",
+          "edge_type": "published-by",
+          "via": "UNBOUND 2026 main-stage keynote by the CMO: traffic −80%, leads +20%, and the Express → Tailor → Amplify → Evolve loop (18 September 2026)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: entities/HubSpot -->published-by--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006098,
+      "fused_score": 0.35,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook",
+      "path": "wiki/sources/2026-09-29-amiel-sanders-hubspot-unbound-aeo-playbook.md",
+      "type": "source",
+      "title": "Stop the Silent Traffic Drop: A Hands-On AEO Playbook | UNBOUND 2026 | HubSpot Live",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "entities/HubSpot",
+          "edge_type": "published-by",
+          "via": "UNBOUND 2026 breakout on answer engine optimisation: prompt tracking, citations, and consensus across the web (29 September 2026)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: entities/HubSpot -->published-by--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006024,
+      "fused_score": 0.345,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-12-tan-a16z-new-rules-for-founders",
+      "path": "wiki/sources/2026-08-12-tan-a16z-new-rules-for-founders.md",
+      "type": "source",
+      "title": "Garry Tan: New Rules for Founders",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free",
+          "edge_type": "supports",
+          "via": "Shared topic: the future of per-seat SaaS pricing. Tan says pure per-seat SaaS is 'not totally clear it will exist in another five or 10 years'; Ramineni asks what happens to seat-based revenue 'when more companies have fewer headcounts' and expects charging for agentic work instead.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005952,
+      "fused_score": 0.341,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet",
+      "path": "wiki/sources/2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet.md",
+      "type": "source",
+      "title": "Will Agents actually be able to buy things on the internet? - John Collison, Co-Founder of Stripe",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free",
+          "edge_type": "supports",
+          "via": "Shared topic: several models inside one business, and usage-based billing because of inference costs. Collison explains Stripe's OpenRouter and Metronome acquisitions this way; Ramineni describes routing across seven to ten model and speech providers and moving from seat to usage pricing. Same channel, published two days apart.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005882,
+      "fused_score": 0.337,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/software-3.0",
+      "path": "wiki/concepts/software-3.0.md",
+      "type": "concept",
+      "title": "software-3.0",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/generative-ai",
+          "edge_type": "instance-of",
+          "via": "Software 3.0 is a paradigm-vocabulary description of what generative-AI engineering is, structurally",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/generative-ai <--instance-of<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.88,
+      "accessed_at": "2026-09-19",
+      "last_confirmed": "2026-09-19",
+      "days_since_access": 26,
+      "effective_confidence": 0.659,
+      "rrf_score": 0.006329,
+      "fused_score": 0.333,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai",
+      "path": "wiki/sources/2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai.md",
+      "type": "source",
+      "title": "Labor market impacts of AI: A new measure and early evidence",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+          "edge_type": "supports",
+          "via": "method-cousin: both build occupational-exposure measures of AI capability (Massenkoff & McCrory weight Eloundou task ratings by AEI usage; RaboResearch maps Gmyrek et al. ILO task scores onto CBS occupations) and both stress potential ≫ realised deployment",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005814,
+      "fused_score": 0.333,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces",
+      "path": "wiki/sources/2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces.md",
+      "type": "source",
+      "title": "AI Will Reshape More Jobs Than It Replaces",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+          "edge_type": "supports",
+          "via": "reshape ≫ replace at sector altitude — RaboResearch finds roles shift (accountants, lawyers, consultants, developers move from executing to advisory/judgment work) and value concentrates in complex judgment while junior/instap tasks decline, not aggregate elimination",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005747,
+      "fused_score": 0.33,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-28-brynjolfsson-canaries-coal-mine",
+      "path": "wiki/sources/2026-04-28-brynjolfsson-canaries-coal-mine.md",
+      "type": "source",
+      "title": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+          "edge_type": "supports",
+          "via": "occupational-exposure measurement of automation potential (ILO/Gmyrek) corroborating the entry-level/compositional shift — RaboResearch's NL/sector vantage echoes the executing→advisory role shift and the decline of junior roles that the US ADP-payroll Canaries finding documents",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs",
+          "edge_type": "contradicts",
+          "via": "both measure the relationship between occupational AI exposure and employment, and report different magnitudes. Canaries, from ADP payroll microdata: employment for workers aged 22-26 in the most AI-exposed occupations down ~13% at first measurement. Hatzius, from correlations across occupations: 'the correlation is quite small. And in many cases we don't find anything', with an economy-wide magnitude of 'maybe 10,000 jobs a month, 15,000 jobs a month'. The comparison differs in unit (age-cohort within exposure quintile versus occupation-level aggregate) and in whether an offset for AI-driven job creation is netted out",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening -->supports--> this (1 hop)",
+        "graph: sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs -->contradicts--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005682,
+      "fused_score": 0.326,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company",
+      "path": "wiki/sources/2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company.md",
+      "type": "source",
+      "title": "Why isn't AI working for your company? | BBC News",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening",
+          "edge_type": "supports",
+          "via": "the programme's opening framing — 'give the AI a clearly defined task, write code, answer customer queries, the systems are measurably faster. But most businesses are a chain, and all too often speeding up one link just piles up the work at the next' — is the broadcast-journalism statement of the same task-level-versus-firm-level split RaboResearch renders as a ranked chart of ~18 studies",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005618,
+      "fused_score": 0.322,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-18-covello-gs-new-models-ai-investment-landscape",
+      "path": "wiki/sources/2026-08-18-covello-gs-new-models-ai-investment-landscape.md",
+      "type": "source",
+      "title": "How New Models Are Changing the AI Investment Landscape",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs",
+          "edge_type": "supports",
+          "via": "companion interviews in the same Goldman Sachs Private Wealth series with the same interviewer, recorded two weeks apart. Covello treats the value chain and where the CapEx lands; Hatzius treats the macro aggregates and cites Covello by name for the C-suite-versus-worker exhibit",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005556,
+      "fused_score": 0.319,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-21-jones-stanford-gsb-ai-and-our-economic-future",
+      "path": "wiki/sources/2026-05-21-jones-stanford-gsb-ai-and-our-economic-future.md",
+      "type": "source",
+      "title": "\"A.I. and Our Economic Future,\" Professor Chad Jones",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs",
+          "edge_type": "supports",
+          "via": "both model AI's productivity effect as slow-diffusing. Jones supplies the weak-links argument for why benefits arrive slowly; Hatzius supplies a diffusion estimate — a ~15% level uplift relative to a no-AI world, spread over roughly a decade",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005495,
+      "fused_score": 0.315,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-10-07-richardson-reuters-econ-world-ai-at-work",
+      "path": "wiki/sources/2026-10-07-richardson-reuters-econ-world-ai-at-work.md",
+      "type": "source",
+      "title": "AI at work | Econ World",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs",
+          "edge_type": "supports",
+          "via": "Shared topic: whether AI shows in aggregate labour and productivity data. Hatzius finds small occupation-level correlations; Richardson says the effect is visible at the level of tasks and career stages and not yet in productivity numbers.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005435,
+      "fused_score": 0.312,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "syntheses/harness-thinning-what-persists",
+      "path": "wiki/syntheses/harness-thinning-what-persists.md",
+      "type": "synthesis",
+      "title": "harness-thinning-what-persists",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "syntheses/organizational-frameworks-for-ai-adoption",
+          "edge_type": "supports",
+          "via": "sibling synthesis from the same 2026-07-15 video batch — both independently land on 'process/organizational design is the load-bearing decision, not the technology,' at the runtime-engineering layer and the organizational layer respectively",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: syntheses/organizational-frameworks-for-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.82,
+      "accessed_at": "2026-09-05",
+      "last_confirmed": "2026-07-15",
+      "days_since_access": 40,
+      "effective_confidence": 0.526,
+      "rrf_score": 0.00625,
+      "fused_score": 0.309,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only neighbour with low fused score; no facet needs it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-25-the-ai-factory-the-rewiring-of-indias-tech-industry",
+      "path": "wiki/sources/2026-06-25-the-ai-factory-the-rewiring-of-indias-tech-industry.md",
+      "type": "source",
+      "title": "2026-06-25-the-ai-factory-the-rewiring-of-indias-tech-industry",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "stored_confidence": null,
+      "effective_confidence": null,
+      "fused_score": null,
+      "retrieval_reasons": [
+        "gap-expansion: rg keyword sweep (not in ledger)"
+      ],
+      "verdict": "use",
+      "reason": "Object Ways (annotatie naar robotica), NextWealth; egocentrische data; extractieve keten",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    },
+    {
+      "slug": "sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet",
+      "path": "wiki/sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet.md",
+      "type": "source",
+      "title": "2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "stored_confidence": null,
+      "effective_confidence": null,
+      "fused_score": null,
+      "retrieval_reasons": [
+        "gap-expansion: rg keyword sweep (not in ledger)"
+      ],
+      "verdict": "use",
+      "reason": "52% crawlerverzoeken voor training; >50 publisher-AI-deals sinds 2023; licenties bespoke, waardering onopgelost; marktplaats",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    },
+    {
+      "slug": "sources/2026-04-28-ai-index-report-2025",
+      "path": "wiki/sources/2026-04-28-ai-index-report-2025.md",
+      "type": "source",
+      "title": "2026-04-28-ai-index-report-2025",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "stored_confidence": null,
+      "effective_confidence": null,
+      "fused_score": null,
+      "retrieval_reasons": [
+        "gap-expansion: rg keyword sweep (not in ledger)"
+      ],
+      "verdict": "use",
+      "reason": "Figure AI $675M bij $2,6B; C4-restricties 5-7% naar 20-33%",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    },
+    {
+      "slug": "sources/2025-04-04-prabhakar-salesforce-apigen-mt-xlam-2",
+      "path": "wiki/sources/2025-04-04-prabhakar-salesforce-apigen-mt-xlam-2.md",
+      "type": "source",
+      "title": "2025-04-04-prabhakar-salesforce-apigen-mt-xlam-2",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "stored_confidence": null,
+      "effective_confidence": null,
+      "fused_score": null,
+      "retrieval_reasons": [
+        "gap-expansion: rg keyword sweep (not in ledger)"
+      ],
+      "verdict": "use",
+      "reason": "Large Action Model (xLAM) getraind op synthetische multi-turn-trajecten; gewichten en trainingsdata open",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    },
+    {
+      "slug": "concepts/responsible-ai",
+      "path": "wiki/concepts/responsible-ai.md",
+      "type": "concept",
+      "title": "responsible-ai",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "stored_confidence": null,
+      "effective_confidence": null,
+      "fused_score": null,
+      "retrieval_reasons": [
+        "gap-expansion: rg keyword sweep (not in ledger)"
+      ],
+      "verdict": "use",
+      "reason": "consent/surveillance van data-werkers; data commons krimpt",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    },
+    {
+      "slug": "sources/2026-09-30-luo-null-labs-synthetic-data-ai-testing",
+      "path": "wiki/sources/2026-09-30-luo-null-labs-synthetic-data-ai-testing.md",
+      "type": "source",
+      "title": "2026-09-30-luo-null-labs-synthetic-data-ai-testing",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "stored_confidence": null,
+      "effective_confidence": null,
+      "fused_score": null,
+      "retrieval_reasons": [
+        "gap-expansion: rg keyword sweep (not in ledger)"
+      ],
+      "verdict": "use",
+      "reason": "synthetische-dataleverancier; geen teststandaard dus vertrouwde leverancier wint; contracten via insiders",
+      "reason_class": null,
+      "promoted": "gap-expansion"
+    }
+  ],
+  "expansions": [
+    {
+      "trigger_facet": "facets the qmd stream left empty (robotics data / world models / data markets)",
+      "method": "rg keyword sweep across wiki/ (caller-instructed; substitutes for index.md fallback)",
+      "added": [
+        "sources/2026-07-10-hugging-face-ceo-companies-done-renting-their-ai",
+        "sources/2026-06-25-the-ai-factory-the-rewiring-of-indias-tech-industry",
+        "sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet",
+        "sources/2026-04-28-ai-index-report-2025",
+        "sources/2025-04-04-prabhakar-salesforce-apigen-mt-xlam-2",
+        "concepts/responsible-ai",
+        "sources/2026-09-30-luo-null-labs-synthetic-data-ai-testing"
+      ]
+    }
+  ],
+  "answer_map": [
+    {
+      "anchor": "W1",
+      "claim": "Object Ways (annotatie naar robotica), NextWealth; egocentrische data; extractieve keten",
+      "pages": [
+        "sources/2026-06-25-the-ai-factory-the-rewiring-of-indias-tech-industry"
+      ],
+      "span": "## TL;DR"
+    },
+    {
+      "anchor": "W2",
+      "claim": "~3M modellen, 1M datasets, helft Fortune 500; platform vangt 1-2% van de waarde; Evox-copyrightzaak; Reachy Mini",
+      "pages": [
+        "sources/2026-07-10-hugging-face-ceo-companies-done-renting-their-ai"
+      ],
+      "span": "## TL;DR punten 1, 9, 10, 11"
+    },
+    {
+      "anchor": "W3",
+      "claim": "52% crawlerverzoeken voor training; >50 publisher-AI-deals sinds 2023; licenties bespoke, waardering onopgelost; marktplaats",
+      "pages": [
+        "sources/2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet"
+      ],
+      "span": "Key findings"
+    },
+    {
+      "anchor": "W4",
+      "claim": "Figure AI $675M bij $2,6B; C4-restricties 5-7% naar 20-33%",
+      "pages": [
+        "sources/2026-04-28-ai-index-report-2025"
+      ],
+      "span": "corporate activity; RAI-highlight"
+    },
+    {
+      "anchor": "W5",
+      "claim": "Large Action Model (xLAM) getraind op synthetische multi-turn-trajecten; gewichten en trainingsdata open",
+      "pages": [
+        "sources/2025-04-04-prabhakar-salesforce-apigen-mt-xlam-2"
+      ],
+      "span": "method"
+    },
+    {
+      "anchor": "W6",
+      "claim": "consent/surveillance van data-werkers; data commons krimpt",
+      "pages": [
+        "concepts/responsible-ai"
+      ],
+      "span": "FT-film-sectie; data commons"
+    },
+    {
+      "anchor": "W7",
+      "claim": "synthetische-dataleverancier; geen teststandaard dus vertrouwde leverancier wint; contracten via insiders",
+      "pages": [
+        "sources/2026-09-30-luo-null-labs-synthetic-data-ai-testing"
+      ],
+      "span": "## TL;DR"
+    },
+    {
+      "anchor": "W8",
+      "claim": "opnames gratis weggeven, betalen voor agentisch werk; \"infrastructure or a data source/connector that doesn't accrue a lot of value\"",
+      "pages": [
+        "sources/2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free"
+      ],
+      "span": "## TL;DR punten 1, 3, 4"
+    }
+  ],
+  "answer": "De wiki noemt **weinig bedrijven die data voor embodied AI verzamelen**. De meest directe zijn Indiase leveranciers. Object Ways begon in 2019 als annotatiebedrijf en verzamelt nu \"gripper data, teleoperations data\". Het bedrijf verwacht naar eigen zeggen \"500 million hours [of data] in a single day\". NextWealth doet annotatiewerk op het platteland [W1]. Figure AI haalde $675M op bij een waardering van $2,6 mld [W4]. Hugging Face host ~3M modellen en 1M datasets en wordt gebruikt door de helft van de Fortune 500. Het bedrijf wil als platform 1-2% van de gecreëerde waarde vangen en bouwt Reachy Mini-robots [W2].\n\n**Licentiemarkt.** De beste analogie in de wiki is de markt voor webcontent. In juni 2026 diende 52% van de crawlerverzoeken voor AI-training. Sinds 2023 zijn er meer dan 50 deals tussen publishers en AI-bedrijven gesloten. Cloudflare beschrijft de keten als \"transparency created scarcity. Scarcity created leverage. Leverage accelerated licensing\". Wel zijn de deals \"largely bespoke\", en is de waardering van content nog onopgelost [W3]. Een waarschuwing over het verdienmodel komt van Fireflies: geef opnames gratis weg en vraag geld voor het agentische werk. Wie alleen \"a data source or connector\" is, \"doesn't accrue a lot of value\" [W8].\n\n**Synthetische concurrentie.** Salesforce traint zijn Large Action Model (xLAM) op synthetische multi-turn-trajecten en publiceert die data open [W5]. Null Labs verkoopt synthetische beelddata. Zonder teststandaard wint \"the trusted vendor\" [W7].\n\n**Herkomst en consent.** Werkers moeten soms camera's dragen \"with no extra money\", en \"this data can be used against the workers\" [W6]. Hugging Face ligt onder vuur in de copyrightzaak van Evox [W2]. De C4-restricties stegen van 5-7% naar 20-33% [W4].\n\n**Gaten.** De wiki heeft niets over Scale AI, Surge, Sama, Mechanical Turk, Physical Intelligence, General Intuition, Medal of een betaalde datamarktplaats voor particulieren.",
+  "notes": [
+    "Run with --no-bump and Step 8 skipped: caller constraint forbids modifying wiki pages (accessed_at not bumped).",
+    "Commissioned as input to a market/competitor analysis for the startup Opgeruimd."
+  ],
+  "generated_at": "2026-10-15T21:34:20.838Z"
+}
