@@ -5,7 +5,7 @@ tags: [strategy, strategic-planning, value-creation, value-capture, theory-of-wi
 confidence: 0.92
 last_confirmed: "2026-10-25"
 accessed_at: "2026-10-25"
-source_count: 16
+source_count: 21
 relationships:
   - type: supports
     target: strategic-foresight

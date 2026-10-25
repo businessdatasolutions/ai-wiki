@@ -4,7 +4,7 @@ aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
 last_confirmed: "2026-10-25"
-source_count: 59
+source_count: 75
 relationships:
   - type: contradicts
     target: ai-deskilling

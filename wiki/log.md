@@ -10,6 +10,25 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-10-25] refactor | Recount source_count on six concepts; qmd orphan cleanup
+
+**source_count.** The six concepts touched by the Diasio ingest had stored counts below the number of source pages that cite them. Ingests add +1 per new source, but sources also link concepts they don't update (the Diasio page links [[dynamic-capabilities]] without bumping it), so the gap grows. Recounted as the number of distinct `wiki/sources/` pages that either wikilink the concept in the body (bare slug, `concepts/` prefix, `|alias` or `#heading`, case-insensitive; frontmatter `aliases` as targets added nothing) or name it as a typed `relationships:` target. The second rule is needed: [[2018-05-31-sinek-nyt-the-infinite-game|Sinek]] cites [[infinite-game]] only through a typed edge.
+
+| Concept | Stored | Recounted |
+| --- | ---: | ---: |
+| [[enterprise-ai-adoption]] | 158 | 162 |
+| [[ai-employment-effects]] | 91 | 109 |
+| [[durable-skills]] | 59 | 75 |
+| [[micro-productivity-trap]] | 67 | 79 |
+| [[agent-oversight-and-delegation]] | 26 | 32 |
+| [[strategy]] | 16 | 21 |
+
+`confidence` unchanged: a recount is not new evidence, and four of the six are already at the 0.95 cap.
+
+**Corpus-wide, not fixed:** of 54 concepts, 13 match; 35 are stored too low (largest gaps: [[dynamic-capabilities]] 50 vs 81, [[agent-harness]] 118 vs 144, [[ai-agents]] 52 vs 75, [[warner-wager-process-model]] 7 vs 28) and 6 too high ([[ai-sovereignty]] 16 vs 12, [[graph-engineering]] 7 vs 4, [[ai-generated-code-quality]], [[answer-engine-optimization]], [[industry-4-0]], [[lean-4-0]]). The too-high cases need reading before any change: they may count evidence that is not a source page. Entities were not measured.
+
+**qmd.** `qmd cleanup` removed 19,654 orphaned embedding chunks (76% of vectors; 25,903 → 6,249), compacted FTS and vacuumed (198 → 176 MB). The dry run showed no documents or cached responses would be dropped. The index is shared with cmr-wiki and finance-wiki; all 786 documents stay indexed, `qmd embed` finds nothing missing, and the test query returns the same top 5 as before.
+
 ## [2026-10-25] ingest | Diasio (EY) on WorkLab: agentic AI and the corporate ladder
 
 One video, `ilaDQLa1Lrk`, a *WorkLab* episode from 16 December 2025 (29:55). Molly Wood interviews Dan Diasio, EY's Global Consulting AI Leader.
