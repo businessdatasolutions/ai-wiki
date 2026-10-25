@@ -31,7 +31,7 @@ relationships:
 
 ## TL;DR
 
-A 40-minute *WorkLab* episode on the [[Microsoft]] channel, published 30 October 2025. Host **Molly Wood** interviews **Pascal Bornet**, who built intelligent-automation practices at McKinsey and EY and co-wrote *Agentic Artificial Intelligence*. Five claims:
+A 40-minute *WorkLab* episode on the [[Microsoft]] channel, published 30 October 2025. Host **Molly Wood** interviews **Pascal Bornet**, who built intelligent-automation practices at McKinsey and [[EY]] and co-wrote *Agentic Artificial Intelligence*. Five claims:
 
 1. **Agents act; chatbots suggest.** A chatbot plans your weekend and leaves you to book it; *"information without action is very limited."* RPA scripts were *"the old kind of agents"*; LLMs have made them able to understand goals, plan and learn.
 2. **Four functions define an agent:** sense, plan, act, reflect, which he calls the **SPAR** framework and compares to cooking pasta.

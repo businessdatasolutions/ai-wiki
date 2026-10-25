@@ -4,7 +4,7 @@ aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-i
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
 last_confirmed: "2026-10-25"
-source_count: 66
+source_count: 67
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -457,3 +457,7 @@ Her measurement answer is a chain. Adoption is *"the easiest thing to measure"*,
 ## Adoption is individual, value is systemic (added 2026-10-25)
 
 [[2026-10-20-beauchene-bcg-so-what-ai-strategy-more-than-rollout|Beauchene (BCG, The So What, Oct 2026)]] gives the trap a one-line definition: *"Adoption is an individual metric. Value creation is really a systemic output."* *"If you have five employees that each… get the 20% productivity, it does not mean that you will unleash one FTE,"* and improving one step without looking at the cross-functional team on the whole process *"will actually end up just shifting… the bottleneck in the value chain."* BCG's *AI at Work* survey adds a ratio: an employee with strong access to AI tools but weak strategic guidance is *"five times less"* likely to get measurable impact than one with limited tools and strong guidance on where to use them and where to redeploy the time saved. Time saved is *"just an input."* The survey's method is not described in the episode.
+
+## "Productivity has a limit. Growth has no limit" (added 2026-10-25)
+
+[[2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder|Diasio (EY) on WorkLab (Dec 2025)]] describes how the loop starts. After two years of investment in tools, *"you say, does the tool do what my person did before? And then you get into this productivity loop. And unfortunately productivity has a limit."* Firms that test AI in the back office *"get into this like cost out productivity"*; the strategic ones take on *"challenging business questions that are existential to their business strategy."* His way out is a written artefact rather than a metric: *"a 2 or 3 page reinvention of a function agenda,"* which he calls *"an objective target"* that pushes the mindset shift from *"just doing AI"* to *"changing how we work with AI."*

@@ -167,7 +167,7 @@ The strongest tension is between Chamath's *"don't show me a stupid eval"* dismi
 
 - **Chamath Palihapitiya** — founder/CEO of 8090; ex-Facebook (2007–2011, Growth/Platform/Mobile); founder of Social Capital; co-host of the All-In Podcast. **Strong promotion candidate on second source.**
 - **8090** — AI-native software development platform / Software Factory; founded 2024; flagship customer EY. **Strong promotion candidate on second source.**
-- **EY** (Ernst & Young) — named as 8090's flagship customer.
+- [[EY]] (Ernst & Young) — named as 8090's flagship customer. Promoted to an entity page on 2026-10-25.
 - **Social Capital** — Chamath's investment firm; portfolio includes Slack, SoFi, Groq, Yammer.
 - **All-In Podcast** — Chamath co-hosts.
 - **Mark Juncosa** (SpaceX) — named as a flow-state-org humility exemplar.

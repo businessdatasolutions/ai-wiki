@@ -64,7 +64,7 @@ The full report (12:31, `length_seconds: 751`) from the human-curated caption tr
 - [[DW News]] — Deutsche Welle's entity; *DW Shift* is added there as an alias. Updated in this ingest.
 - [[concepts/ai-employment-effects|ai-employment-effects]] — updated in this ingest.
 
-**Dangling** (single-source mention, deferred): Richard Skellett, EY.
+**Dangling** (single-source mention, deferred): Richard Skellett. [[EY]] was promoted to an entity page on 2026-10-25.
 
 ## Scope and reliability
 

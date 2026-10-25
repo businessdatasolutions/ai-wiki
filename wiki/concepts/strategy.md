@@ -5,7 +5,7 @@ tags: [strategy, strategic-planning, value-creation, value-capture, theory-of-wi
 confidence: 0.92
 last_confirmed: "2026-10-25"
 accessed_at: "2026-10-25"
-source_count: 15
+source_count: 16
 relationships:
   - type: supports
     target: strategic-foresight
@@ -298,3 +298,14 @@ Confidence unchanged at 0.92. This is first-party consulting research promoting 
 ## A head start, not a moat (added 2026-10-25)
 
 [[2026-10-20-egeriis-bain-winning-with-ai-danske-bank|Egeriis (Danske Bank) on Bain's Winning with AI (Oct 2026)]]: Danske Bank's CEO does not believe AI currently gives a moat: *"with the pace of change… [it] is not something that's there… you have a few months or six months or 12 months of head start,"* in which the bank can win customer meetings, better cost to serve and *"that extra bit of market share."* Infrastructure and data products are harder to copy, and *"the biggest but also most intangible… competitive advantage is the leadership and culture."* Co-host [[Andrew Ng]] adds that an *"ephemeral advantage"* can buy *"quite durable"* market share. The opposite view is in the corpus: [[2025-10-30-bornet-wood-worklab-ai-agents-leaders|Bornet]] expects early adopters to build *"compounding intelligence advantages"* and *"insurmountable learning gaps."* The two are recorded as a `contradicts` edge between their source pages.
+
+## What incumbents hold against AI natives (added 2026-10-25)
+
+[[2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder|Diasio (EY) on WorkLab (Dec 2025)]]: his clients fear most *"the competitors and the disruptors that they do not see… It's the AI natives,"* companies of *"40 or 50 people"* with *"multibillion dollar valuations."* Asked what an incumbent brings, he names four things:
+
+- scale, and the ability to deal with *"the messiness, which is a corporate reality"* that AI-native start-ups dislike;
+- experience selling technology into complex enterprises;
+- a data flywheel, because *"organizational nuance and context is what drives differentiation from just using a general-purpose model"*;
+- customer reach and contracts.
+
+His example is an unnamed technology conglomerate whose most valuable AI asset turned out to be its game consoles and their community of players. On strategy itself, he asks for *"a point of view that you would be comfortable taking to your investors"*, written as two to three pages of plain text, before any portfolio of use cases.

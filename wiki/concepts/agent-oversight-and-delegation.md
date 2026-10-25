@@ -4,7 +4,7 @@ title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
 confidence: 0.85
 last_confirmed: "2026-10-25"
-source_count: 25
+source_count: 26
 accessed_at: "2026-10-25"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
@@ -229,3 +229,7 @@ His argument for why oversight has to be built rather than trusted borrows from 
 - **What you call it changes how carefully people check it.** [[2026-10-20-beauchene-bcg-so-what-ai-strategy-more-than-rollout|Beauchene (BCG, The So What, Oct 2026)]] reports a BCG experiment: people told an output came from an *"AI worker"* rather than an *"AI tool"* took less personal accountability and spotted fewer of its mistakes, *"because consciously or not, they associated it to a colleague and trusted it more."*
 - **Trust in steps.** [[2025-10-30-bornet-wood-worklab-ai-agents-leaders|Bornet on WorkLab (Oct 2025)]]: managers move *"from task assignment… to goal setting and boundary definition,"* make each agent's limits transparent, and widen delegation only after review, as a parent first lets a 16-year-old drive only near home. Agent metrics: alerts, user feedback, and audits of decision quality.
 - **Enforcement outside the agent.** [[2026-10-19-smith-cohen-techcrunch-disrupt-okta-nanoco-agent-security|Smith (Okta) & Cohen (NanoCo) at TechCrunch Disrupt (Oct 2026)]]: *"Don't trust AI agents"* means policy enforced *"outside of the agent's training, outside of the agent's instructions, and outside of the agent's environment."* Approval is placed at the one consequential step (sending the email or the spreadsheet), not at every step. NanoCo has the agent state its plan, the user approve it, and a judge model check each action against the plan rather than against an abstract notion of safety. Every agent has a named owner, and kill switches exist at several layers, though most companies are *"very far from the kill switch"* because agents run on laptops without isolation.
+
+## Human, agent, human, and a control layer (added 2026-10-25)
+
+[[2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder|Diasio (EY) on WorkLab (Dec 2025)]] puts the human at both ends of the work. Agents take *"the toil that nobody wants to do,"* but they *"are still subject to the same statistical sameness if you use them to do your critical thinking. So the real sequence of work should be human, agent, and then human."* At the level of the organisation, EY's blueprint gives autonomy its own layer: a control layer *"responsible for maintaining how much autonomy do you give these agents."* The same layer settles where agents are registered (*"in the HR master, or… some other registration?"*) and what they can access. At the level of the individual, delegation becomes a skill to train: *"giving agents instructions to be able to go do the work, and then critically evaluating if that happened in the appropriate way."* He asks the HR-master question without answering it. [[2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees|Kropp et al.]] tested experimentally what framing agents as employees does to managers' oversight.

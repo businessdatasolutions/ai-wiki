@@ -10,6 +10,26 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-10-25] ingest | Diasio (EY) on WorkLab: agentic AI and the corporate ladder
+
+One video, `ilaDQLa1Lrk`, a *WorkLab* episode from 16 December 2025 (29:55). Molly Wood interviews Dan Diasio, EY's Global Consulting AI Leader.
+
+**Acquire.** The transcript panel worked on the first try: human-written track, 1,058 lines, last at 29:52 of 29:55, no duplicates. `transcript_source: transcript panel`. Chromium was missing again from `~/.cache/ms-playwright`, and the skill's self-install (added earlier today) fetched it, so the first live run of that fallback worked. `python` is not on the PATH under pyenv here; the skill ran with `~/.pyenv/versions/3.12.8/bin/python`. One caption fix in the raw file (*"have I happen to them"* = have AI happen to them); notes record a probable *rescale* = reskill. No stills: a podcast.
+
+**New source page:** [[2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder]]. W&W cells: `digital-sensing/digital-mindset-crafting`, `digital-transforming/improving-digital-maturity`, `digital-transforming/redesigning-internal-structures`, `strategic-renewal/business-model`, `contextual/external-triggers`.
+
+**New entity:** [[EY]]. It was dangling on three source pages ([[2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs|Giles]], [[2026-05-05-stanford-ai-club-chamath-on-how-to-win-in-the-ai-era|Chamath]], [[2026-10-17-dw-shift-how-ai-is-changing-the-working-world|DW Shift]]) and is the subject here. Those three Dangling lines were resolved, and EY was wikilinked on [[2025-10-30-bornet-wood-worklab-ai-agents-leaders|Bornet]] (Bornet worked at EY). `source_count: 5`.
+
+**Updated entities (2):** [[Microsoft]] (11; `published-by` edge added), [[HBS AI Institute]] (5). The episode introduces the Frontier Firm initiative as *"the Digital Data Design Institute at Harvard Frontier Firm AI Initiative,"* a dated data point for the open D^3 → HBS AI Institute rename question on that page. It is still not a statement of a rename.
+
+**Updated concepts (6):** [[enterprise-ai-adoption]] (158; new Debates bullet *"Is there a playbook yet?"*, Sadun against Diasio three weeks apart on the same show), [[durable-skills]] (59), [[agent-oversight-and-delegation]] (26), [[ai-employment-effects]] (91), [[micro-productivity-trap]] (67), [[strategy]] (16). Not touched: `agentic-web` and `systems-thinking`, each a single passing phrase in the episode.
+
+**Edges (all `supports`):** Diasio → Sternfels (McKinsey), Warren (YC), the Frontier Firm initiative's About page, Bornet, Miller, Mollick (HBR IdeaCast). Body-only neighbours, with no typed edge: Sadun, George, Kropp et al. (the agents-as-employees framing; Diasio asks about the HR master without answering, so neither `supports` nor `contradicts` fits), Weidmann/Xu/Deming, Giles. The W&W cell overlap gave 50+ candidates because these cells are the corpus's most common; a qmd pass on the episode's specific claims narrowed them.
+
+**Found, not fixed:** stored `source_count` trails the real number of inbound source links on all six concepts touched (e.g. `durable-skills` 59 stored against 75 linking sources, `ai-employment-effects` 91 against 108). Ingests add +1 per new source, which preserves the gap. A recount is a separate `refactor`.
+
+**Dangling:** Dan Diasio, Molly Wood (host, never `author:`; now on six WorkLab source pages).
+
 ## [2026-10-25] ingest | Nine videos: Beauchene (BCG), Roslansky (LinkedIn, Tools and Weapons), Gao (Mecka, Sequoia), Bornet (WorkLab), Lloyd (Warp), DW Shift, Egeriis (Danske Bank, Bain), Google Cloud on security review with agents, Okta & NanoCo (TechCrunch Disrupt); 5 verified stills
 
 The user sent 22 more URLs after the McKinsey pair. After de-duplication: 15 distinct videos, of which four were already in the wiki (Lin, Sivaram, Raman/Wood, Fowler), one was the McKinsey cyber episode in progress, and one (`9xkyALPHhL4`) was the Romeo/Oliver Wyman Forum talk ingested on 2026-10-15. Nine were new.

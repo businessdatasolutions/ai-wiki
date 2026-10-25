@@ -4,7 +4,7 @@ aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
 last_confirmed: "2026-10-25"
-source_count: 58
+source_count: 59
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -385,3 +385,7 @@ Most claims on this page say social skills matter. [[2025-08-05-weidmann-xu-demi
 ## Four Cs and three humics (added 2026-10-25)
 
 Two more lists of the skills that survive. [[2026-03-31-roslansky-smith-tools-and-weapons-open-to-work|Roslansky (LinkedIn) on Tools and Weapons (Mar 2026)]]: *"curiosity, courage, communication, compassion,"* the skills once called soft, now *"really, really important skills to… do your job well,"* with LinkedIn data showing the skills required for the average job changing 25% in eight years and an expected 70% by 2030. [[2025-10-30-bornet-wood-worklab-ai-agents-leaders|Bornet on WorkLab (Oct 2025)]] calls his three *humics*: genuine creativity, critical thinking and social authenticity, which *"AI will never be able to achieve as well as we do."* His own account undercuts the *never*: he notes that creativity was the last skill people thought AI could not match, and that generative AI is *"getting there."*
+
+## "AI and something": four skills and delegation (added 2026-10-25)
+
+[[2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder|Diasio (EY) on WorkLab (Dec 2025)]] starts from an observation. EY ran hands-on sessions *"hundreds of times"* in which management teams used AI to invent a snack product, and the results converged on *"the same packaging… the same recipes, the same marketing plans."* AI *"raises the floor, but it doesn't raise the ceiling."* What raises the ceiling is *"AI and something,"* which EY calls the big four: creativity, critical thinking, [[systems-thinking|systems thinking]] and deep domain expertise. EY's training aims to teach staff *"how to find their 'and,'"* so their domain expertise becomes a differentiator. For new joiners, who he expects to manage agents from their first day, he adds a fifth: *"delegation skills,"* meaning giving agents instructions *"and then critically evaluating if that happened in the appropriate way."* The list overlaps with [[2025-10-30-bornet-wood-worklab-ai-agents-leaders|Bornet's]] humics on the same show: both include creativity and critical thinking; Bornet adds social authenticity, Diasio domain expertise and systems thinking. The convergence is an observation across many sessions, not a measurement.

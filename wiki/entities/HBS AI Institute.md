@@ -5,9 +5,9 @@ aliases: ["HBS AI Institute", "Harvard Business School AI Institute", "HBS AI Co
 tags: [harvard-business-school, research-institute, frontier-firm, microsoft-partner, research-summaries]
 website: "https://aiinstitute.hbs.edu"
 confidence: 0.75
-last_confirmed: "2026-10-17"
-accessed_at: "2026-10-17"
-source_count: 4
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 5
 relationships:
   - type: published-by
     target: 2026-09-03-hbs-ai-institute-think-youre-a-good-leader-try-leading-an-ai-team
@@ -24,7 +24,7 @@ relationships:
 
 **The Harvard Business School AI Institute**, a research institute at HBS co-founded and chaired by [[Karim Lakhani]], with Jen Stave as executive director. Its site publishes short research summaries of work by HBS faculty and associates, bylined **HBS AI Content & Learning**. With [[Microsoft]] it runs the **Frontier Firm AI Initiative**, in which member companies run AI experiments with Harvard and Microsoft researchers, starting with sales, IT and finance, and attend C-suite programmes. [[Raffaella Sadun]] is a research leader in the initiative.
 
-The wiki's existing Harvard pages call Lakhani's institute the **Digital Data Design Institute at Harvard (D^3)**. Staff photos on the AI Institute's site are still filed under that name, and Lakhani's bio now calls him co-founder and faculty chair of the HBS AI Institute. That suggests the institute was renamed, but no source in the corpus says so. Treat the identification as likely, not confirmed.
+The wiki's existing Harvard pages call Lakhani's institute the **Digital Data Design Institute at Harvard (D^3)**. Staff photos on the AI Institute's site are still filed under that name, and Lakhani's bio now calls him co-founder and faculty chair of the HBS AI Institute. That suggests the institute was renamed, but no source in the corpus says so. Treat the identification as likely, not confirmed. One more data point (added 2026-10-25): in December 2025, [[2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder|WorkLab]] introduced the same initiative as *"the Digital Data Design Institute at Harvard Frontier Firm AI Initiative, hosted by Harvard Business School in collaboration with Microsoft."* So the initiative was attributed to D^3 in December 2025 and to the HBS AI Institute in October 2026, which fits a rename between the two dates. Neither source states one.
 
 ## Wiki contributions
 
@@ -52,3 +52,7 @@ SORT file.name ASC
 ## Cited from Microsoft's side (added 2026-10-17)
 
 [[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart|Katy George (Microsoft) on WorkLab, July 2026]] refers to *"this fabulous collaboration with Harvard Business School around the frontier firm research initiatives"* and says HBS *"did a case example of our initial rollout of Copilot into our own Salesforce,"* a rollout that failed as a product launch before it was redesigned. Whether that is the forthcoming Bojinov, Sadun and Zhang case summarised on the [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|initiative's About page]] is not stated in either source.
+
+## A member firm on its own transformation (added 2026-10-25)
+
+[[2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder|Diasio on WorkLab (Dec 2025)]] names [[EY]] as a member of the initiative's inaugural class. EY's Global Consulting AI Leader describes its route to becoming a Frontier Firm: more than $1 billion invested in a year, a Client Zero programme, a curriculum for all staff, and a blueprint for AI-native functions. This is a member's own account, on the co-runner's podcast.

@@ -4,7 +4,7 @@ aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "A
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
 last_confirmed: "2026-10-25"
-source_count: 90
+source_count: 91
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -735,3 +735,7 @@ Richardson, a week later, proposes the unit Karunakaran questions (see *Debates*
 
 - **A report from Germany.** [[2026-10-17-dw-shift-how-ai-is-changing-the-working-world|DW Shift (Oct 2026)]]: in EY's survey, CEOs expecting AI to cause significant job cuts fell from 46% (early 2025) to 20% (May 2026). A Dresden graduate with a master's degree and experience sent more than 300 applications before finding a job; *"there are fewer entry-level jobs and employers are now looking for different skills."* AI now sits on both sides of hiring: candidates write CVs with it, employers screen with it and run first interviews through avatars, and a London recruiter says employers now *"ask to put more human back into the process."* The first creative occupations are losing work: a voice actor in advertising and games, and a stylist who lost 70% of her work to AI retouching. Single cases, chosen to illustrate.
 - **The platform's data.** [[2026-03-31-roslansky-smith-tools-and-weapons-open-to-work|Roslansky (LinkedIn) on Tools and Weapons (Mar 2026)]]: LinkedIn sees software-engineer postings *increasing*, and skills required for the average job changing by 25% over eight years, 70% expected by 2030. LinkedIn's new associate-builder role is an entry route that does not require a degree. LinkedIn's own figures, without method in the episode.
+
+## "Managers on day one" (added 2026-10-25)
+
+[[2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder|Diasio (EY) on WorkLab (Dec 2025)]] predicts a change in the entry-level path, not its disappearance: *"the corporate ladder used to be that you took a job and you worked hard by building credibility and experience. And ultimately if you did that really well, you became a manager… today, the corporate ladder is being completely kicked over. People that will join companies next year will be managers on day one,"* of *"an agentic-based workforce, one that is extremely powerful and sometimes clumsy."* On knowledge work in general, after an initial *"shock and awe"* he holds that *"the knowledge worker is just totally underrated in this moment."* For consultants, he expects the role to move from producing content to being *"a creator"* who uses agents. This is a prediction for 2026, made in December 2025 by an executive of a 400,000-person employer, with no hiring data attached.

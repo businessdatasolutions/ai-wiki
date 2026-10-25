@@ -7,7 +7,7 @@ website: "https://microsoft.com"
 confidence: 0.85
 last_confirmed: "2026-10-25"
 accessed_at: "2026-10-25"
-source_count: 10
+source_count: 11
 relationships:
   - type: employs
     target: GitHub
@@ -30,6 +30,9 @@ relationships:
   - type: published-by
     target: 2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about
     via: "Collaborator in the Frontier Firm AI Initiative hosted by the HBS AI Institute; the page is the institute's, Microsoft is the named partner (captured 15 Oct 2026)"
+  - type: published-by
+    target: 2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder
+    via: "Published on Microsoft's WorkLab podcast — Molly Wood interviews EY's Dan Diasio on managers of agents on day one, mindset/skill set/tool set, and the billable hour (16 Dec 2025)"
 ---
 
 # Microsoft
@@ -90,7 +93,8 @@ WorkLab's third wiki source, [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-f
 
 [[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart|Katy George on WorkLab (July 2026)]]: George, corporate vice president of workforce transformation, describes Microsoft's internal practice. The first Copilot rollout to its own sales force was run *"as a typical product launch"* and people *"tried it and then they stopped using it"*; Harvard Business School wrote it up as a case in the Frontier Firm research. What replaced it: outcome goals, and redesign of tech, process and people with the people who do the work. Programmes named: **Camp Air**, a bootcamp that whole engineering teams attend together, and weekly **role-based huddles** in sales, taught practitioner to practitioner. Her team has written **100 internal case studies** of AI transformation, whose common pattern is top-down goals with bottom-up citizen-developer builds. The internal audit team is her example of **"Capability Add"**: *"every internal audit now delivers proactive risk identification."* Microsoft's own account, on its own channel.
 
-## Tools and Weapons, and an earlier WorkLab (added 2026-10-25)
+## Tools and Weapons, and two earlier WorkLab episodes (added 2026-10-25)
 
 - [[2026-03-31-roslansky-smith-tools-and-weapons-open-to-work|Roslansky (LinkedIn) on Tools and Weapons (Mar 2026)]]: Brad Smith, Microsoft's vice chair and president, interviews LinkedIn's CEO about *Open to Work*; LinkedIn's builder role and associate-builder entry route; Smith's *"schism"* between AI that outperforms people and AI that empowers them, with Microsoft on the second side.
 - [[2025-10-30-bornet-wood-worklab-ai-agents-leaders|Bornet on WorkLab (Oct 2025)]]: a WorkLab episode from October 2025 on agents, the Frontier Firm's traits, and the Work Trend Index finding that more than 80% of leaders plan to use agents to fill capacity gaps.
+- [[2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder|Diasio on WorkLab (Dec 2025)]]: [[EY]]'s Global Consulting AI Leader, introduced as a member of the inaugural class of the Frontier Firm initiative that Microsoft runs with Harvard. New joiners as *"managers on day one"* of agents, mindset–skill set–tool set, and the billable hour as EY's hardest change.
