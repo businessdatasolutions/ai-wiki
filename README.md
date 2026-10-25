@@ -165,6 +165,17 @@ All scripts are Node ESM (`.mjs`), invoked as `node scripts/<name>.mjs …`.
 | [`seed-accessed-at.mjs`](scripts/seed-accessed-at.mjs) | One-shot migration: seed `accessed_at` to `last_confirmed` on legacy pages. |
 | [`wiki-query.mjs`](scripts/wiki-query.mjs) | Hybrid search wrapper around qmd; auto-bumps `accessed_at` on returned concept/entity/synthesis pages. |
 
+### Shared skills ([wiki-tools](https://github.com/businessdatasolutions/wiki-tools))
+
+The acquire skill for YouTube sources, `youtube-transcript-skill` (transcript, metadata, chapters and stills), lives in a separate repo, [businessdatasolutions/wiki-tools](https://github.com/businessdatasolutions/wiki-tools), so every wiki that uses it gets the same fixes. In this repo, `.claude/skills/youtube-transcript-skill` is a symlink to it, so clone wiki-tools next to ai-wiki:
+
+```bash
+cd ..   # the folder that holds ai-wiki
+git clone https://github.com/businessdatasolutions/wiki-tools.git
+```
+
+Without that clone the link is dangling and YouTube acquire does not work. Changes to the skill go into wiki-tools, not into this repo.
+
 ### Search
 
 For the AI agent, hybrid search runs through [qmd](https://github.com/tobi/qmd) (BM25 + vector + LLM re-ranking, fully local via `node-llama-cpp`). The wiki is registered as the qmd collection `ai-wiki`. Use:
