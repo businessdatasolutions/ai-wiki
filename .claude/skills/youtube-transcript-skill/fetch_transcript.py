@@ -21,13 +21,23 @@ from __future__ import annotations
 import argparse
 import asyncio
 import json
+import os
 import re
+import subprocess
 import sys
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
 import yaml
-from playwright.async_api import async_playwright, Page
+
+# Keep Playwright's Chromium out of ~/Library/Caches. Something on this Mac
+# empties that folder: the browser vanished twice in eight days (2026-10-17,
+# 2026-10-25), and every fetch then failed with "Executable doesn't exist".
+# ~/.cache is left alone (qmd's models live there). Must be set before the
+# Playwright import. An explicit PLAYWRIGHT_BROWSERS_PATH still wins.
+os.environ.setdefault("PLAYWRIGHT_BROWSERS_PATH", str(Path.home() / ".cache" / "ms-playwright"))
+
+from playwright.async_api import async_playwright, Page  # noqa: E402
 
 
 VIDEO_ID_RE = re.compile(r"^[A-Za-z0-9_-]{11}$")
@@ -416,6 +426,29 @@ def _dedupe_segments(segments: list[dict]) -> list[dict]:
 # Top-level fetch
 # ---------------------------------------------------------------------------
 
+async def _launch_chromium(pw, *, headless: bool):
+    """Launch Chromium; if its binary is missing, install it once and retry."""
+    kwargs = dict(
+        headless=headless,
+        # Suppress the Chromium-level automation flag that lets sites detect
+        # WebDriver via Blink's runtime signals. Pair with the navigator
+        # spoofing in the init script below — YouTube's /youtubei/v1/get_transcript
+        # endpoint started rejecting WEBDRIVER-flagged sessions (HTTP 400
+        # "Precondition check failed") around 2026-05-13.
+        args=["--disable-blink-features=AutomationControlled"],
+    )
+    try:
+        return await pw.chromium.launch(**kwargs)
+    except Exception as exc:
+        if "Executable doesn't exist" not in str(exc):
+            raise
+        where = os.environ.get("PLAYWRIGHT_BROWSERS_PATH", "the default location")
+        print(f"Chromium is missing from {where}; installing it (one time, ~80 MB)…", file=sys.stderr)
+        subprocess.run([sys.executable, "-m", "playwright", "install", "chromium"],
+                       check=True, stdout=sys.stderr)
+        return await pw.chromium.launch(**kwargs)
+
+
 async def fetch(video_id: str, *, headless: bool = True, timeout_ms: int = 30000) -> dict:
     # `hl=en` pins the UI language. Context `locale=` alone is NOT enough:
     # YouTube geolocates the interface language from the request IP, so a
@@ -426,15 +459,7 @@ async def fetch(video_id: str, *, headless: bool = True, timeout_ms: int = 30000
     # incidents. See the 2026-09-15 incident note in SKILL.md.
     url = f"https://www.youtube.com/watch?v={video_id}&hl=en"
     async with async_playwright() as pw:
-        browser = await pw.chromium.launch(
-            headless=headless,
-            # Suppress the Chromium-level automation flag that lets sites detect
-            # WebDriver via Blink's runtime signals. Pair with the navigator
-            # spoofing in the init script below — YouTube's /youtubei/v1/get_transcript
-            # endpoint started rejecting WEBDRIVER-flagged sessions (HTTP 400
-            # "Precondition check failed") around 2026-05-13.
-            args=["--disable-blink-features=AutomationControlled"],
-        )
+        browser = await _launch_chromium(pw, headless=headless)
         ctx = await browser.new_context(
             locale="en-US",
             viewport={"width": 1280, "height": 900},

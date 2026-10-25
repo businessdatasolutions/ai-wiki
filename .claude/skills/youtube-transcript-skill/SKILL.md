@@ -19,8 +19,10 @@ Output is a Markdown file with a YAML header (all metadata) and a body with chap
 
 ```bash
 pip install -r requirements.txt
-python -m playwright install chromium
+PLAYWRIGHT_BROWSERS_PATH=~/.cache/ms-playwright python -m playwright install chromium
 ```
+
+**Where the browser lives (changed 2026-10-25).** `fetch_transcript.py` sets `PLAYWRIGHT_BROWSERS_PATH` to `~/.cache/ms-playwright` before it imports Playwright, unless the variable is already set. Playwright's default, `~/Library/Caches/ms-playwright`, was emptied by something on this Mac twice in eight days (2026-10-17 and 2026-10-25), and every fetch then failed with `BrowserType.launch: Executable doesn't exist`. `~/.cache` is left alone; qmd's models live there. If the binary is still missing, the script now installs Chromium itself (about 80 MB, once) and retries, so the setup step above is optional.
 
 ## How to invoke
 
@@ -236,8 +238,8 @@ Query: *"diagrams on complexity vs complicatedness"*. Baseline: `extract_stills.
 
 First run on an 8:01:10 conference livestream (YC Root Access, `T6hVGJ4gepk`, 37 talks). What held, and what to do differently from a normal video:
 
-- **Transcript: use yt-dlp captions, not the panel.** `_scroll_panel` stops after 40 jumps of 150 ms and nothing checks the last timestamp against `length_seconds`, so a multi-hour panel can come back silently truncated. `yt-dlp --skip-download --write-auto-subs --sub-langs en --sub-format vtt` fetched all 3.7 MB in under a second. Then build the file with this skill's own `to_markdown()` so the YAML contract and chapter headings match.
-- **VTT parse rule.** Keep the **last line of every real cue** and skip the ~10 ms hold cues. Do not select lines by their inline timing tag: a one-word line (`frontier.`) has no tag, and that test silently dropped 229 lines on this video. Unescape HTML entities (`&gt;&gt;` is the speaker-change marker).
+- **Transcript: use yt-dlp captions, not the panel.** `_scroll_panel` stops after 40 jumps of 150 ms and nothing checks the last timestamp against `length_seconds`, so a multi-hour panel can come back silently truncated. `yt-dlp --skip-download --write-auto-subs --sub-langs en --sub-format vtt` fetched all 3.7 MB in under a second. Then build the file with this skill's own `to_markdown()` so the YAML contract and chapter headings match. **Ask for the track by its real name.** A human-written track: `--write-subs --sub-langs "en.*"`. The auto track: `--write-auto-subs --sub-langs en-orig`. `en-orig` is the original ASR; the plain `en` entry is listed alongside dozens of auto-translations, and on 2026-10-25 requesting `en` returned no file at all for two videos while `en-orig` worked. `--list-subs` shows what exists.
+- **VTT parse rule: it depends on the track.** For a **rolling auto (ASR) track**, keep the **last line of every real cue** and skip the ~10 ms hold cues: each real cue repeats the previous line above the new one. Do not select lines by their inline timing tag: a one-word line (`frontier.`) has no tag, and that test silently dropped 229 lines on this video. For a **human-written track, keep every line of every cue.** Its two-line cues are two new lines, not a repeat. Applying the last-line rule to one (2026-10-25) silently dropped 164 of a DW Shift report's lines and 20 of a WorkLab episode's; the DW transcript read as fragments, the WorkLab one looked fine. **The tell:** count lines per cue. A rolling track has as many ~10 ms one-line cues as two-line cues (1,311 and 1,311 on one video); a human track has no hold cues. Either way, unescape HTML entities (`&gt;&gt;` is the speaker-change marker).
 - **Gates before writing:** last segment within 10 min of the end; no gap over 3 min outside known breaks; no doubled `(time, text)` pairs; no a11y-label prefixes.
 - **Probe before Gemini.** `ffmpeg -ss <t> -i "$(yt-dlp -g -f <fmt> URL)" -frames:v 1` seeks the stream remotely: 18 frames across 8 hours took 34 s with no download. It showed which talks had slides at all; two stage firesides were dropped before any Gemini call.
 - **Stills: one `search_stills.py` run, pinned windows, `--no-fallback`, `--fps 1`.** This run predates stream seeking and downloaded the whole video (3.4 GB) twice to cut 67 frames. Since the same day frames are grabbed by seeking the stream: re-grabbing 8 of those stills that way took about 1 s each, with no download, and every one was pixel-identical to the downloaded cut (thumbnail difference 0.00). Without `--no-fallback`, a window with no match triggers a whole-video call, about 2.7M tokens at the measured ~95 tokens/s. Four windows (39 min) cost 239,294 tokens; re-running two after the fix above cost 79,190. Total ≈ 12% of a full scan.
@@ -247,6 +249,8 @@ First run on an 8:01:10 conference livestream (YC Root Access, `T6hVGJ4gepk`, 37
 
 - **`error: "no transcript section"`** — Video has no captions (common for music videos, very short clips, some unlisted videos). The skill still writes the markdown file with metadata only and a placeholder `## Transcript` section. Exit code is `1` so callers can branch on transcript availability without losing metadata.
 - **`error: "transcript panel did not render"`** — Trigger fired but the segment renderers didn't appear in time. Bump `--timeout` to 60000 and retry. If it still fails the video may be region-locked, age-gated, or hitting a panel-render path the skill doesn't handle yet — observed on some long-format talks (≥20 min) even when captions exist; see [GH #2](https://github.com/businessdatasolutions/ai-wiki/issues/2). The skill still writes a metadata-only file.
+
+  **The working fallback is the yt-dlp route** in [§Long videos](#long-videos-multi-hour-measured-2026-10-03), for videos of any length: fetch the caption track as VTT, parse it by the track-dependent rule there, put the segments into the JSON's `transcript`, and build the file with `to_markdown()`. The metadata from the failed fetch is still complete. It was needed for one of four videos on 2026-10-17 and five of nine on 2026-10-25 (three with human tracks, two with auto only), all of which then passed the gates.
 
   *2026-09-15 incident note — the locale trap.* A **third** root cause with the
   same symptom, and the one to check first because it is the cheapest to rule out.
