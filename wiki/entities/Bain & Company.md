@@ -4,9 +4,9 @@ kind: organization
 aliases: ["Bain", "Bain & Company", "Bain and Company"]
 tags: [bain, management-consulting]
 confidence: 0.75
-last_confirmed: "2026-09-21"
-accessed_at: "2026-09-21"
-source_count: 2
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 3
 relationships:
   - type: employs
     target: Arjun-Dutt
@@ -40,3 +40,7 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "bain")
 SORT file.name ASC
 ```
+
+## A bank CEO on Winning with AI (added 2026-10-25)
+
+[[2026-10-20-egeriis-bain-winning-with-ai-danske-bank|Egeriis (Danske Bank) on Bain's Winning with AI (Oct 2026)]]: Sarah Elk and Andrew Ng interview Danske Bank's CEO, Carsten Egeriis: public AI investment and productivity targets, a financial assistant handling over 30% of mobile-bank queries, exception processes stalled on data, and the claim that AI gives months of head start rather than a moat.

@@ -3,8 +3,8 @@ type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
-last_confirmed: "2026-10-17"
-source_count: 64
+last_confirmed: "2026-10-25"
+source_count: 66
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -12,7 +12,7 @@ relationships:
   - type: contradicts
     target: automation-vs-augmentation
     via: "process lock-in = automation without redesign; reinvent-the-business resists this trap"
-accessed_at: "2026-10-17"
+accessed_at: "2026-10-25"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -449,3 +449,11 @@ Romeo's figure is unpublished think-tank research with no sample or method, and 
 [[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart|Katy George (Microsoft) on WorkLab (July 2026)]] rejects the task arithmetic many forecasts rest on. Economists' models break jobs into tasks and estimate the automatable share, *"always 30% on average across any group of jobs. You drop 30% to the bottom line… and you have a clear ROI. That's not how it's happening."* AI automates *"different pieces of people's jobs, not whole jobs,"* and its larger value is new capability (see [[automation-vs-augmentation]], *Capability Add*). That moves the return into growth, innovation and customer and employee experience, which are harder to measure, and *"most companies do not compete on labor cost efficiency."*
 
 Her measurement answer is a chain. Adoption is *"the easiest thing to measure"*, so Microsoft maps it to behaviour change and then to outcomes. In sales: does AI use raise the time reps spend with customers and on the newest products, does that raise win rates and qualified pipeline, and does it reach revenue per rep? She reports *"a really nice correlation between the reps who are using AI the most, and revenue per rep."* This is the trap's prescription written as a metric design: usage is only the first link. The correlation is not separated from selection (strong reps may also adopt first), and the account is the vendor's own. Confidence unchanged at the cap.
+
+## Capacity freed, no dollar value (added 2026-10-25)
+
+[[2026-10-20-hamalainen-lala-takkar-mckinsey-economics-of-enterprise-ai|McKinsey's Explainer on the economics of enterprise AI (Oct 2026)]]: Lari Hämäläinen helped a five-engineer network-operations team receive a diagnosis and proposed fix with every incoming ticket, which freed *"20 to 30% capacity."* *"Was there any dollar value here? Not really. I still need those five engineers. It is not enough to just create an agent and do something faster. You have to be able to link it to some sort of outcome that measurably improved. Otherwise, it's like building roads… you'll just fill up the roads with more cars and you'll still have the same traffic problem."* Kaavini Takkar gives the firm-level version: two clients took the same customer-facing use case from pilot to production, and one gained a lot while the other *"just threw a bunch of AI tools in the process"* without first redesigning and automating the workflow. Both are the trap as this page defines it, told by consultants from client work.
+
+## Adoption is individual, value is systemic (added 2026-10-25)
+
+[[2026-10-20-beauchene-bcg-so-what-ai-strategy-more-than-rollout|Beauchene (BCG, The So What, Oct 2026)]] gives the trap a one-line definition: *"Adoption is an individual metric. Value creation is really a systemic output."* *"If you have five employees that each… get the 20% productivity, it does not mean that you will unleash one FTE,"* and improving one step without looking at the cross-functional team on the whole process *"will actually end up just shifting… the bottleneck in the value chain."* BCG's *AI at Work* survey adds a ratio: an employee with strong access to AI tools but weak strategic guidance is *"five times less"* likely to get measurable impact than one with limited tools and strong guidance on where to use them and where to redeploy the time saved. Time saved is *"just an input."* The survey's method is not described in the episode.

@@ -3,9 +3,9 @@ type: concept
 aliases: ["attack surface management", "ASM", "external attack surface", "EASM", "external attack surface management"]
 tags: [attack-surface-management, cybersecurity, infosec, exposure-management, shadow-it]
 confidence: 0.75
-last_confirmed: "2026-10-03"
-accessed_at: "2026-10-03"
-source_count: 8
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 11
 relationships:
   - type: depends-on
     target: osint
@@ -115,3 +115,12 @@ If the series is right, it settles one half of [[2026-09-10-alim-pydata-ai-secur
 This page's working definition covers assets an attacker can **observe from outside**: servers, subdomains, certificates, login panels. [[2026-09-30-chow-metalware-ai-firmware-vulnerability-research|Chow (Metalware), September 2026]] describes a surface outside that frame: the firmware in weapons platforms. A munition, drone or aircraft carries *"hundreds of small, essentially embedded computers"*, and he lists why securing them is harder: *"lack of updates, legacy code bases, … lack of access, … and obviously the dependency on having hardware in the loop."* The cyber requirements applied to them (RMF and ATO) were written for enterprise IT, and *"there are no login pages for … an aircraft or a munition."*
 
 Two consequences for this page. Discovery on this surface means reverse engineering the device rather than scanning what it exposes; Chow's company comes from offensive-security work for the US intelligence community and sells automation of those methods, not OSINT. And for the attacker-or-defender question in *Debates*, firmware that is rarely updated sits at the slow end of the patch-velocity variable that question turns on. Chow gives no numbers; it is a six-minute founder pitch.
+
+## The window in hours, chained weaknesses, and the fourth party (added 2026-10-25)
+
+[[2026-10-21-lewis-nadeau-mckinsey-strategy-room-frontier-ai-cybersecurity|Lewis & Nadeau (McKinsey, Inside the Strategy Room, Oct 2026)]] restates the chart above from consulting practice. Marie-Claude Nadeau: the time from a flaw being noticed to its weaponisation is *"collapsing from years or a year to a day or less,"* and budget cycles and change processes were *"designed for an older slower clock."* Charlie Lewis adds two mechanisms. Minor weaknesses *"can now be chained together,"* which changes the priority of flaws left alone for years (his example is a Linux vulnerability from 2003). And dependencies run below the direct supplier: *"several apparently independent vendors can… depend on the same cloud provider, identity service, data platform,"* so vendor diversification is not *"dependency diversification."* His precondition for any of it: *"If you don't know where your assets are, it's really hard to secure them,"* down to the spreadsheets agents will read. Full visibility of the supply chain is *"the wrong goal"*; start from the *"minimum viable company."*
+
+## Seven days, a third within a day, and the CVE backlog (added 2026-10-25)
+
+- [[2026-10-20-pettit-eidelman-galloway-google-cloud-security-review-with-agents|Pettit, Eidelman & Galloway (Google Cloud Tech, Oct 2026)]]: Aron Eidelman cites Mandiant and Verizon's DBIR for the average time to exploit a new CVE: **62 days in 2018, seven days in 2025**, with about 31–32% exploited within 24 hours, and *"for the first time in history, code exploitation is now an easier way to start a breach than phishing or credential theft."* Nick Galloway: reversing a patch into an exploit, once a weekend task, now takes little time, and a firmware blob can be understood *"in a matter of minutes."* The Cloudflare chart above gives 23 days for 2025; the two series differ, probably because they measure different intervals, and neither source defines its measure here.
+- [[2026-10-19-smith-cohen-techcrunch-disrupt-okta-nanoco-agent-security|Smith (Okta) & Cohen (NanoCo) at TechCrunch Disrupt (Oct 2026)]]: unpatched CVEs are *"time bombs"*: anyone can run an open-weight model on *"a rack of Mac minis"* against them, and agents *"look at your infrastructure like it's Swiss cheese."* Gavriel Cohen's design rule is to assume container and even VM escape and ask what each pod, node, VPC and account could reach. Ric Smith's first advice: an N-1 patch programme, *"because that's where your holes are."*

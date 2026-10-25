@@ -3,9 +3,9 @@ type: concept
 title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
 confidence: 0.85
-last_confirmed: "2026-10-15"
-source_count: 21
-accessed_at: "2026-10-15"
+last_confirmed: "2026-10-25"
+source_count: 25
+accessed_at: "2026-10-25"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
   - type: part-of
@@ -219,3 +219,13 @@ The epilogue points the other way. Shown the farewell blog post, the AI CEO repl
 His argument for why oversight has to be built rather than trusted borrows from Yuval Noah Harari: civilisation works *"not because we trust everyone, but because we've learned to cooperate with those that we can't necessarily completely trust,"* so the institutions needed are ones that *"allow us to work with machines that explicitly we don't trust."* That leads to the same conclusion as this page's verifier sections: *"increasingly we're going to need machines that supervise machines."* Humans *"have to go up a level,"* and the better the boundaries and revocability, the more can be delegated. His summary: *"machine speed oversight, but ultimately a human accountability."*
 
 [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun (HBS, WorkLab, Nov 2025)]] describes the human side of the same relationship. An agent is *"potentially incredibly knowing and has infinite memory,"* but *"doesn't always get it right… has a hard time telling you when it doesn't know things, and needs specificity."* So it is less an employee than *"a very eager apprentice,"* and the skills are managerial: asking the right questions, *"understanding what can be delegated and what cannot be delegated,"* and making sense of the answers. Her caution is that *"even today, it's not like everybody is a good manager"*: oversight of agents rests on a skill that is unevenly distributed among the people asked to provide it.
+
+## A diamond of overseers, and decision rights moved down (added 2026-10-25)
+
+[[2026-10-21-lewis-nadeau-mckinsey-strategy-room-frontier-ai-cybersecurity|Lewis & Nadeau (McKinsey, Inside the Strategy Room, Oct 2026)]] describes oversight in a security team. Marie-Claude Nadeau: as agents take repetitive work, the pyramid of analysts *"starts to look… more like a diamond and we're calling it a diamond of overseers,"* with more people *"orchestrating judgment, validation, exception handling."* Accountability stays with the CISO and function leaders; the middle layer moves *"from managing people to managing AI-driven work."* Her point that sets this apart: speed needs decision rights lower down, *"if the decision making rights don't change, your speed of response is going to be slow,"* which requires defining which decisions may be made at which level. Charlie Lewis gives the human checkpoint: *"full alignment within the industry on not deploying fixes without human reviews, especially on critical applications,"* with agents registered and given identities so they do not become *"an inadvertent insider risk."* A consultancy's model, without data.
+
+## Framing, gradual trust, and enforcement outside the agent (added 2026-10-25)
+
+- **What you call it changes how carefully people check it.** [[2026-10-20-beauchene-bcg-so-what-ai-strategy-more-than-rollout|Beauchene (BCG, The So What, Oct 2026)]] reports a BCG experiment: people told an output came from an *"AI worker"* rather than an *"AI tool"* took less personal accountability and spotted fewer of its mistakes, *"because consciously or not, they associated it to a colleague and trusted it more."*
+- **Trust in steps.** [[2025-10-30-bornet-wood-worklab-ai-agents-leaders|Bornet on WorkLab (Oct 2025)]]: managers move *"from task assignment… to goal setting and boundary definition,"* make each agent's limits transparent, and widen delegation only after review, as a parent first lets a 16-year-old drive only near home. Agent metrics: alerts, user feedback, and audits of decision quality.
+- **Enforcement outside the agent.** [[2026-10-19-smith-cohen-techcrunch-disrupt-okta-nanoco-agent-security|Smith (Okta) & Cohen (NanoCo) at TechCrunch Disrupt (Oct 2026)]]: *"Don't trust AI agents"* means policy enforced *"outside of the agent's training, outside of the agent's instructions, and outside of the agent's environment."* Approval is placed at the one consequential step (sending the email or the spreadsheet), not at every step. NanoCo has the agent state its plan, the user approve it, and a judge model check each action against the plan rather than against an abstract notion of safety. Every agent has a named owner, and kill switches exist at several layers, though most companies are *"very far from the kill switch"* because agents run on laptops without isolation.

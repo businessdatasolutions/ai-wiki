@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-10-18"
-accessed_at: "2026-10-18"
-source_count: 51
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 52
 relationships:
   - type: instance-of
     target: generative-ai
@@ -320,3 +320,7 @@ Two October 2026 sources separate the agent from its interface. [[2026-10-01-che
 ## Consumer agents at scale meet closed doors (added 2026-10-18)
 
 The two sections above treat agents as the web's main population and computer use as the bridge to sites without APIs. [[2026-10-17-roth-verge-websites-closing-doors-to-ai-agents|Roth (The Verge, Oct 2026)]] reports what happened when consumer agents from the largest labs (Meta's Muse, OpenAI's Dots, xAI's Grok, the startup Instinct) went into wide use: sites blocked them. Some for money (Yelp admits only agents that pay for its data licence), some for security (JPMorgan Chase and Schwab block agents from accounts), some by litigation ([[Amazon]] against Perplexity, and now against Muse), and some by accident, through anti-bot systems built for scammers. The limit on these agents is access more than capability: *"there are just fewer useful things the agents can do"* (Chris Canal, EquiStamp). Detail on [[agentic-web]], section 10.
+
+## Sense, plan, act, reflect; from apps to agents (added 2026-10-25)
+
+[[2025-10-30-bornet-wood-worklab-ai-agents-leaders|Bornet on WorkLab (Oct 2025)]] gives a practitioner's definition: an agent senses its environment, plans toward a goal, acts, and reflects on the outcome to improve (*SPAR*). Robotic process automation scripts were *"the old kind of agents"*; LLMs gave them understanding of context and goals. His product argument: apps *"require humans to learn how to use them. These agents, they will learn how to serve us,"* using the apps on our behalf, so *"we won't say there's an app for that, we will say there is an agent for that."*

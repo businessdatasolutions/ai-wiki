@@ -1,13 +1,13 @@
 ---
 type: entity
 kind: organization
-aliases: ["DW News", "DW", "Deutsche Welle"]
+aliases: ["DW News", "DW", "Deutsche Welle", "DW Shift"]
 tags: [dw, deutsche-welle, news, public-broadcaster, germany, the-dip, podcasts]
 website: "https://www.dw.com/en/"
 confidence: 0.75
-last_confirmed: "2026-10-08"
-accessed_at: "2026-10-08"
-source_count: 2
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 3
 ---
 
 # DW News
@@ -27,3 +27,7 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(author, "DW News")
 SORT file.name DESC
 ```
+
+## DW Shift (added 2026-10-25)
+
+*DW Shift* is Deutsche Welle's technology channel; its name is added to this page's aliases. [[2026-10-17-dw-shift-how-ai-is-changing-the-working-world|DW Shift (Oct 2026)]]: a report on AI and work in Germany and London, covering an employee digital twin and who owns it, the entry-level squeeze, AI on both sides of hiring, and the first creative jobs lost.

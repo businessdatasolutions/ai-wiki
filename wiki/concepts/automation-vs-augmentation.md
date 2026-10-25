@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-10-17"
-accessed_at: "2026-10-17"
-source_count: 75
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 78
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -541,3 +541,9 @@ All three are argument and illustration. Kropp's growth correlation across 107 c
 ## Capability Add (added 2026-10-17)
 
 [[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart|Katy George (Microsoft) on WorkLab (July 2026)]] names the augmentation case **"Capability Add"**: AI that is *"not just doing the same process with the same outcomes that you did before… faster and better,"* but *"adding whole new capabilities in."* Her example is Microsoft's internal audit team. It found productivity savings, used partly to avoid replacing people lost to attrition and partly for wider audit coverage. *"But what they would say is far more valuable than that, is that because of AI, every internal audit now delivers proactive risk identification. And that's not something that human beings used to do and now we've… substituted AI for it. It's a new capability that AI has injected into the process."* Teams are asked where they should add decision analysis, scenario work and preventive quality thinking. It sits close to Karunakaran's *expansion* and Kropp's *compounding* firm (see *Temporary against compounding* above), from an operator rather than a researcher or consultant. One firm's description of itself, with no measures.
+
+## Three task buckets, people before the model, and productivity reinvested (added 2026-10-25)
+
+- **Three buckets, and a schism.** [[2026-03-31-roslansky-smith-tools-and-weapons-open-to-work|Roslansky (LinkedIn) on Tools and Weapons (Mar 2026)]]: tasks AI will automate, tasks it augments, and tasks *"so innately human or messy"* it will not do; moving work from the first two frees time for the third. Brad Smith names *"the emerging great debate"* in the industry: AI built to *"outperform humans at… most economically valuable work"* against AI built to *"empower people to do more."*
+- **Where the person sits decides whether augmentation helps.** [[2026-10-20-beauchene-bcg-so-what-ai-strategy-more-than-rollout|Beauchene (BCG, The So What, Oct 2026)]]: in a fashion company's sales forecast, AI beat the planners. Letting experienced planners revise the AI's forecast *"destroyed the reliability… compared to AI alone"*; having them supply context up front, then leaving the AI to forecast, gave the best result. The same people, in a different place in the process.
+- **Productivity as growth.** [[2026-10-20-egeriis-bain-winning-with-ai-danske-bank|Egeriis (Danske Bank) on Bain's Winning with AI (Oct 2026)]]: *"There is not a single thing that we're doing that doesn't impact growth and revenue."* Advisers' customer meetings rose from fewer than five to almost eight on average (*"not only AI"*), though the bank reports targets in cost terms because they are more credible to the market.

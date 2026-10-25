@@ -5,9 +5,9 @@ aliases: ["Google", "Google LLC", "Alphabet (operating subsidiary)", "Google for
 tags: [google, big-tech, hyperscaler, ai-lab, foundation-models, gemini, google-cloud, google-research, google-brain, gemini-api, file-search, multimodal-rag, notebooklm, flow, veo, ai-product-management, bfloat16, coral-edge-tpu, tensorflow, edge-ml]
 since: 1998
 confidence: 0.90
-last_confirmed: "2026-10-01"
-accessed_at: "2026-10-01"
-source_count: 15
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 16
 relationships:
   - type: published-by
     target: 2026-06-12-mcveety-hormati-google-cloud-open-knowledge-format
@@ -113,3 +113,7 @@ SORT file.name ASC
 - **Cross-product coherence.** Two Google primaries in the wiki within ten days (Globerson et al. 2026 from Google Research; Cheung et al. 2026 from Google Developers) hint at a broader Google agent-platform thesis. Whether Google's positioning is *Gemini-as-substrate + agent-platform-as-runtime + assessment-as-product* or something looser will become clearer with more sources.
 - **ADK as concept page.** ADK is referenced from three sources but currently treated as a brand mention on this entity. If a primary ADK technical-deep-dive lands, ADK could justify its own concept (or product-entity) page.
 - **Gemini family entity.** The wiki has [[Anthropic]]'s Claude family enumerated explicitly (Sonnet 4.5 / Opus 4.5 / Opus 4.6) but does not yet have the parallel for Gemini. Worth filling on second-source coverage.
+
+## Security review with agents (added 2026-10-25)
+
+[[2026-10-20-pettit-eidelman-galloway-google-cloud-security-review-with-agents|Pettit, Eidelman & Galloway (Google Cloud Tech, Oct 2026)]]: a Google Cloud Tech livestream with three Google engineers on **Mantis**, Google's agent framework for security review (open-sourced with a reference harness on the Agent Development Kit); **CodeMender**, a managed review-and-fix agent in gated preview; and Antigravity with skills and hooks. Every code change in Google Cloud is now scanned by Mantis.

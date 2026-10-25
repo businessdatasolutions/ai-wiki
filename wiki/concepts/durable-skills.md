@@ -3,8 +3,8 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-10-17"
-source_count: 56
+last_confirmed: "2026-10-25"
+source_count: 58
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -15,7 +15,7 @@ relationships:
   - type: depends-on
     target: ai-benchmarks
     via: "measurement methodology — Vantage and similar protocols define new benchmark types for human skills (not model capability)"
-accessed_at: "2026-10-17"
+accessed_at: "2026-10-25"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -381,3 +381,7 @@ Most claims on this page say social skills matter. [[2025-08-05-weidmann-xu-demi
 ## Understanding the model, and the humanities (added 2026-10-17)
 
 [[2026-10-15-lin-stanford-ai-club-building-in-the-ai-era|Alfred Lin (Sequoia) at the Stanford AI Club (Oct 2026)]]: *"math and coding is being commoditized, but the understanding of how it works has never been more valuable."* His evidence is what people who really understand models are paid, and *"the people who understand that really well are no longer coding."* To technical students he adds: *"also understand humans. Humanities is actually very important,"* because *"we build for 8 billion people… it all flows through people,"* and in a world where much is commoditised, *"the thing that doesn't go away is human connection."* The same direction as Mollick's deep knowledge and Chesky's taste above, from a venture investor advising students; no data.
+
+## Four Cs and three humics (added 2026-10-25)
+
+Two more lists of the skills that survive. [[2026-03-31-roslansky-smith-tools-and-weapons-open-to-work|Roslansky (LinkedIn) on Tools and Weapons (Mar 2026)]]: *"curiosity, courage, communication, compassion,"* the skills once called soft, now *"really, really important skills to… do your job well,"* with LinkedIn data showing the skills required for the average job changing 25% in eight years and an expected 70% by 2030. [[2025-10-30-bornet-wood-worklab-ai-agents-leaders|Bornet on WorkLab (Oct 2025)]] calls his three *humics*: genuine creativity, critical thinking and social authenticity, which *"AI will never be able to achieve as well as we do."* His own account undercuts the *never*: he notes that creativity was the last skill people thought AI could not match, and that generative AI is *"getting there."*

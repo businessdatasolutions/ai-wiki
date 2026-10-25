@@ -6,9 +6,9 @@ tags: [andrew-ng, ai-researcher, ai-educator, stanford, deeplearning-ai, courser
 affiliation: "[[DeepLearningAI]] (founder); Stanford University (adjunct professor); AI Fund (managing general partner); Landing AI (founder/CEO); Coursera (co-founder); ex-Google Brain (founder); ex-Baidu (chief scientist)"
 role: "Founder of DeepLearning.AI; adjunct professor at Stanford; managing general partner at AI Fund; founder/CEO of Landing AI; co-founder of Coursera; founding lead of the Google Brain team; ex-chief scientist at Baidu"
 confidence: 0.95
-last_confirmed: "2026-09-21"
-accessed_at: "2026-09-21"
-source_count: 8
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 9
 ---
 
 # Andrew Ng
@@ -111,3 +111,7 @@ Ng's prior wiki-relevant rhetorical contribution: *"we need to unbig in AI"* —
 - [[2026-05-20-ng-deeplearningai-ai-dev-26-sf-future-of-software-engineering]] — substantive solo-headlining source: the AI Dev 26 x SF *future-of-software-engineering* keynote.
 - [[2026-03-31-carrier-mit-industrial-ai-that-works-strategy-survival-success]] — substantive cross-reference: the *"unbig in AI"* anchor for the industrial-AI altitude.
 - [[2026-05-26-landingai-touchpoint-to-outcome-front-office-processes]] — the wiki's first source *from* [[LandingAI]], the company Ng founded; he is named as founder/CEO but is not a presenter (a document-AI vendor webinar).
+
+## Co-hosting Bain's Winning with AI, again (added 2026-10-25)
+
+[[2026-10-20-egeriis-bain-winning-with-ai-danske-bank|Egeriis (Danske Bank) on Bain's Winning with AI (Oct 2026)]]: as co-host, Ng suggests that CEOs present AI as cost savings because *"that's how CEOs have to explain it to Wall Street,"* even when they think in growth; that an *"ephemeral advantage"* can still buy *"quite durable"* market share; and that the ceiling for financial services is high because many more people would benefit from advice that AI makes cheaper to deliver.

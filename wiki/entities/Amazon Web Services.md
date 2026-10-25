@@ -7,9 +7,9 @@ parent: "[[Amazon]]"
 ticker: "AMZN (Amazon)"
 website: "https://aws.amazon.com"
 confidence: 0.85
-last_confirmed: "2026-07-15"
-accessed_at: "2026-07-15"
-source_count: 8
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 9
 ---
 
 # Amazon Web Services
@@ -99,3 +99,7 @@ SORT file.name ASC
 - AWS's strategic AI roadmap beyond the Anthropic partnership — Bedrock model selection, Q business agent, Trainium/Inferentia silicon.
 - The AWS Executives in Residence program — how many residents, how selected, what outputs.
 - Conflict-of-interest framing: how to evaluate AWS-affiliated authors writing about org design / customer-centricity / distributed systems.
+
+## Partner for a bank's AI foundation (added 2026-10-25)
+
+[[2026-10-20-egeriis-bain-winning-with-ai-danske-bank|Egeriis (Danske Bank) on Bain's Winning with AI (Oct 2026)]]: Danske Bank builds its *"AI city"*, the foundational architecture its applications depend on, in partnership with AWS, with Infosys providing engineering. The CEO describes close strategic partnerships as the way a mid-sized bank gets a global view of the technology.

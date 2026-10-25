@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.95
-source_count: 115
+source_count: 118
 relationships:
   - type: part-of
     target: ai-agents
@@ -20,8 +20,8 @@ relationships:
   - type: uses
     target: small-language-models
     via: "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed"
-last_confirmed: "2026-10-12"
-accessed_at: "2026-10-12"
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -1076,3 +1076,12 @@ The talk also counts consumer-app features (Projects, Scheduled tasks, the attac
 ## The eval environment as the test for removing harness (added 2026-10-11)
 
 [[2026-10-09-broekhuizen-langchain-three-questions-every-agent-engineer|Broekhuizen (LangChain Labs, Oct 2026)]] gives the *model-eats-the-harness* debate an operational form. Fixes happen at two layers, the harness (tool schemas, context, prompts, state, routing, model selection) and the model (SFT, distillation, RL), and he reports seeing harness work absorbed: *"long task decomposition or … dynamic tool routing, be absorbed into the model layer."* His re-evaluation slide asks, after every harness or model change, *"Harness still required? Which prompts, tools, context, routing, or model choices can be removed or simplified?"* A trace-derived set of tasks and environments is what lets a team answer that question instead of guessing, which fits the reconciliation above: individual components are transient, the discipline and telemetry that test them persist.
+
+## A strong harness on a weaker model (added 2026-10-25)
+
+[[2026-10-21-lewis-nadeau-mckinsey-strategy-room-frontier-ai-cybersecurity|Lewis & Nadeau (McKinsey, Inside the Strategy Room, Oct 2026)]]: Charlie Lewis, McKinsey's cybersecurity lead, tells clients choosing models for vulnerability scanning that *"a really good harness and really strong prompting on a lower capable model will give you a better output than average harnesses and average prompting on the best,"* and that finding vulnerabilities and finding exploits may need different models. He puts it after a process fix (*"AI-ifying a broken vulnerability management to patch remediation process is just going to give you increased cost on a broken process"*) and before the *tokenomics* of which model runs which scan. The same split [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Grinstead]] reported from Mozilla's production harness (*"sort of 50-50"*), stated as advice rather than measured.
+
+## The software factory as a harness in code, and a security harness at Google (added 2026-10-25)
+
+- **A factory you can engineer.** [[2026-10-19-lloyd-warp-what-it-takes-to-build-a-software-factory|Lloyd (Warp, Oct 2026)]]: a *software factory* is a cloud loop in which agents and people triage, specify, implement, review, verify and ship, and it is *"defined in code"* and versioned, so it can be tested and rolled back. It should be open to *"any model, any harness."* What makes it a harness to tune rather than a tool to use is *factory engineering*: every agent run is stored and scored with an LLM judge (Warp's example dimension is redundant tests), agents look across failed runs and propose changes to the factory's own definition (one triage problem was seen 54 times), and recorded tasks are replayed against model and harness configurations. Warp reports cutting its cost per pull request from about $55 to $15 in six weeks while raising throughput about 40%, with a lower revert rate. A vendor's own figures.
+- **A security harness.** [[2026-10-20-pettit-eidelman-galloway-google-cloud-security-review-with-agents|Pettit, Eidelman & Galloway (Google Cloud Tech, Oct 2026)]]: Google's *Mantis* splits security review into skills by *"agenda,"* not persona (threat modelling, critique, vulnerability classes), uses a threat model to strip false positives, and never reviews code in the context that wrote it. Skills are loaded into an existing harness; hooks force deterministic checks where skills might not fire. Aron Eidelman relays what he hears from other companies: *"the harness that you have really makes the difference. And you can even get away with pretty light frontier model."*

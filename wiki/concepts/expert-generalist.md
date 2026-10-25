@@ -3,9 +3,9 @@ type: concept
 aliases: ["expert generalist", "Expert Generalist", "expert generalists", "generalist-specialist blend"]
 tags: [expert-generalist, generalist-vs-specialist, t-shaped, fundamentals-over-tools, patterns, mechanical-sympathy, durable-skills, distributed-systems-fundamentals, hiring, llms-and-skills]
 confidence: 0.90
-last_confirmed: "2026-10-17"
-accessed_at: "2026-10-17"
-source_count: 9
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 10
 relationships:
   - type: supports
     target: durable-skills
@@ -94,3 +94,7 @@ That is the expert-generalist thesis stated as a complementarity result: breadth
 ## T-shaped roles, and expertise worth more (added 2026-10-17)
 
 [[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart|Katy George (Microsoft) on WorkLab (July 2026)]]: *"roles are becoming more T-shaped."* Expertise and judgment are *"maybe even more important than before"*; the view of a year earlier, that *"we will never need human expertise again,"* *"turns out to be false. To use AI really effectively, you need judgment, taste, expertise,"* and people then spend more time *"horizontally integrating across the whole process,"* so teams become *"much more dynamic and fluid."* Microsoft's Camp Air bootcamp builds the breadth on purpose: *"leave your discipline at the door,"* and product managers, engineers and designers all learn every tool the team uses. She uses the T-shape that this page's anchor source finds too narrow; the substance, depth kept and breadth added across a process, is the same. An executive's account of her own company; confidence unchanged.
+
+## The builder role (added 2026-10-25)
+
+[[2026-03-31-roslansky-smith-tools-and-weapons-open-to-work|Roslansky (LinkedIn) on Tools and Weapons (Mar 2026)]]: LinkedIn has created a **builder** role that combines what were four siloed roles in software production (product manager, product marketer, designer, front-end engineer), because with AI tools one person can take a product *"from start to finish,"* and the communication path between silos was what slowed the company. It also opened an **associate builder** entry route for people *"maybe not even going to college at all."* Product managers who stay PMs now write evals rather than specs. The same move as Microsoft engineers told they are now *"product builders"* ([[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart|George]]).

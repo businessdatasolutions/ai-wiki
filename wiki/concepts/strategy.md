@@ -3,9 +3,9 @@ type: concept
 aliases: ["strategy", "business strategy", "corporate strategy", "competitive strategy"]
 tags: [strategy, strategic-planning, value-creation, value-capture, theory-of-winning, playing-to-win, value-stick, roger-martin, felix-oberholzer-gee, harvard-business-review]
 confidence: 0.92
-last_confirmed: "2026-10-11"
-accessed_at: "2026-10-11"
-source_count: 14
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 15
 relationships:
   - type: supports
     target: strategic-foresight
@@ -294,3 +294,7 @@ Confidence unchanged at 0.92. This is first-party consulting research promoting 
 ## AI already makes strategic decisions; where do you want to make them? (added 2026-10-11)
 
 [[2026-10-09-mollick-hbr-how-ai-is-changing-strategy-four-skills|Mollick (HBR IdeaCast, Oct 2026)]] argues that any long-running agent work *"involves tons of strategic decisions and judgment calls"*, so the question is no longer whether AI makes strategic decisions but *"where do you want to make decisions and where not"*. A leader can ask for five options with defences, or for a built and tested prototype. Because capability is [[jagged-frontier|jagged]], which judgments to keep is found by experiment. His two strategic mistakes: anchoring on today's capability, and trusting vendors or consultants who *"if they have successful cases, it's for GPT-4"*. Borrowing Tushman's **ambidexterity**, he asks four questions: what have you stopped doing because of AI, what impossible thing are you building, what are you building that does not work yet, and do you have leadership, lab and crowd in place.
+
+## A head start, not a moat (added 2026-10-25)
+
+[[2026-10-20-egeriis-bain-winning-with-ai-danske-bank|Egeriis (Danske Bank) on Bain's Winning with AI (Oct 2026)]]: Danske Bank's CEO does not believe AI currently gives a moat: *"with the pace of change… [it] is not something that's there… you have a few months or six months or 12 months of head start,"* in which the bank can win customer meetings, better cost to serve and *"that extra bit of market share."* Infrastructure and data products are harder to copy, and *"the biggest but also most intangible… competitive advantage is the leadership and culture."* Co-host [[Andrew Ng]] adds that an *"ephemeral advantage"* can buy *"quite durable"* market share. The opposite view is in the corpus: [[2025-10-30-bornet-wood-worklab-ai-agents-leaders|Bornet]] expects early adopters to build *"compounding intelligence advantages"* and *"insurmountable learning gaps."* The two are recorded as a `contradicts` edge between their source pages.

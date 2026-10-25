@@ -5,9 +5,9 @@ aliases: ["Sequoia Capital", "Sequoia", "Sequoia Capital Training Data"]
 tags: [sequoia-capital, venture-capital, training-data-podcast, ai-ascent, sonya-huang, interview-publisher]
 since: 1972
 confidence: 0.75
-last_confirmed: "2026-10-17"
-accessed_at: "2026-10-17"
-source_count: 5
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 6
 relationships:
   - type: published-by
     target: 2026-06-11-kilpatrick-sequoia-model-eats-the-harness
@@ -47,3 +47,7 @@ Otherwise Sequoia remains an *attribution/publication* node: for the interview s
 ## A partner on the diffusion gap and owning intelligence (added 2026-10-17)
 
 [[2026-10-15-lin-stanford-ai-club-building-in-the-ai-era|Alfred Lin at the Stanford AI Club (October 2026)]]: a Sequoia partner of fifteen-plus years states the firm's application-layer thesis (*"there is value in the application layer… this whole notion that software is dead is kind of BS"*) and the own-your-intelligence argument from [[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Sonya Huang's keynote]], with portfolio examples: Harvey, OpenEvidence, Profound, Rogo, Chai Discovery, LangChain, Reflection. He also explains why check sizes keep rising without hurting returns: the largest company's value has grown *"15x in 15 years,"* so outcomes are bigger. Published on the Stanford AI Club's channel, not Sequoia's.
+
+## Training Data on robot data (added 2026-10-25)
+
+[[2026-10-20-gao-huang-sequoia-training-data-mecka-robot-data-factory|Gao (Mecka) on Sequoia's Training Data (Oct 2026)]]: Sonya Huang interviews Josh Gao of Mecka on manufacturing training data for robotics: sensorized people, tactile gloves, a converged data mix, and deployment through a new kind of systems integrator. The wiki's first source on robot training data.

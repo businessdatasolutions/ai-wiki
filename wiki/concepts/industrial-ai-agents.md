@@ -3,8 +3,8 @@ type: concept
 aliases: ["industrial AI agents", "industrial agentic AI", "OT AI agents", "manufacturing AI agents"]
 tags: [industrial-ai-agents, ai-agents, ot-it-convergence, manufacturing, ontology, semantic-data-layer, knowledge-graph, unified-namespace, mqtt, scada, mes, cmms, qms, erp]
 confidence: 0.75
-last_confirmed: "2026-10-04"
-source_count: 5
+last_confirmed: "2026-10-25"
+source_count: 6
 relationships:
   - type: instance-of
     target: ai-agents
@@ -12,7 +12,7 @@ relationships:
   - type: depends-on
     target: agent-harness
     via: "the runtime layer is still required; industrial-AI agents add a semantic-data-layer dependency on top"
-accessed_at: "2026-10-04"
+accessed_at: "2026-10-25"
 quality_score: 1
 ---
 
@@ -169,3 +169,7 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "industrial-ai-agents") OR contains(tags, "industrial-ai")
 SORT file.name ASC
 ```
+
+## Robots: constrained industrial tasks first, and the data behind them (added 2026-10-25)
+
+This page covers AI in industrial and operational environments; [[2026-10-20-gao-huang-sequoia-training-data-mecka-robot-data-factory|Gao (Mecka) on Sequoia's Training Data (Oct 2026)]] adds the physical side, robots. Josh Gao expects the first deployments in *"constrained"* industrial work, where *"you just don't have to expect a baby to appear"*: industrial cleaning, hotel delivery robots already common in China and South-East Asia, then pick-and-place and packaging on assembly lines *"within the next year or two."* The home is the hardest place to deploy, though home data is the easiest to collect. His deployment model is *"a modern robotics version of a systems integrator"* that installs a robot and then keeps making it more capable with in-domain data. The constraint is data: robotics had no internet corpus, so it must be manufactured. A founder's forecast on an investor's podcast.

@@ -10,6 +10,41 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-10-25] ingest | Nine videos: Beauchene (BCG), Roslansky (LinkedIn, Tools and Weapons), Gao (Mecka, Sequoia), Bornet (WorkLab), Lloyd (Warp), DW Shift, Egeriis (Danske Bank, Bain), Google Cloud on security review with agents, Okta & NanoCo (TechCrunch Disrupt); 5 verified stills
+
+The user sent 22 more URLs after the McKinsey pair. After de-duplication: 15 distinct videos, of which four were already in the wiki (Lin, Sivaram, Raman/Wood, Fowler), one was the McKinsey cyber episode in progress, and one (`9xkyALPHhL4`) was the Romeo/Oliver Wyman Forum talk ingested on 2026-10-15. Nine were new.
+
+**Acquire.** Four transcripts came through the panel; five failed it three times each and were fetched with yt-dlp. Two lessons, both fixed in the session's build script: (1) yt-dlp's plain `en` auto-sub request returned nothing for two videos, while `en-orig` (the original ASR track) worked; (2) "keep the last line of every cue", the skill's rule for rolling auto-captions, **drops content from human-written tracks with two-line cues**: the DW Shift transcript lost 164 first lines and Bornet's 20 before this was noticed, and both were rebuilt keeping all lines for manual tracks. All nine passed the gates. **Stills:** a full static Gemini scan of the Warp talk (149,997 tokens, 54 visuals, stream-seek frames); five verified and published to `wiki/assets/2026-10-19-lloyd-warp-what-it-takes-to-build-a-software-factory/`. Still 53 was dropped (a two-second window caught a transition). The others are podcasts, stage talks, a livestream of code screens, and a reportage.
+
+**New source pages (9):** [[2026-10-20-beauchene-bcg-so-what-ai-strategy-more-than-rollout]], [[2026-10-20-egeriis-bain-winning-with-ai-danske-bank]], [[2026-10-20-gao-huang-sequoia-training-data-mecka-robot-data-factory]], [[2026-10-20-pettit-eidelman-galloway-google-cloud-security-review-with-agents]], [[2026-10-19-lloyd-warp-what-it-takes-to-build-a-software-factory]], [[2026-10-19-smith-cohen-techcrunch-disrupt-okta-nanoco-agent-security]], [[2026-10-17-dw-shift-how-ai-is-changing-the-working-world]] (no W&W tags: labour-market reportage), [[2026-03-31-roslansky-smith-tools-and-weapons-open-to-work]], [[2025-10-30-bornet-wood-worklab-ai-agents-leaders]].
+
+**New entity:** [[TechCrunch]] (second source as `author:`, after the Hugging Face *Equity* interview). **Alias added:** *DW Shift* on [[DW News]].
+
+**Updated entities (8):** [[Boston Consulting Group]] (10), [[Microsoft]] (10), [[Sequoia Capital]] (6), [[Bain & Company]] (3), [[Andrew Ng]] (9), [[Amazon Web Services]] (9), [[DW News]] (3), [[Google]] (16).
+
+**Updated concepts (17):** [[enterprise-ai-adoption]] (157), [[agent-oversight-and-delegation]] (25), [[automation-vs-augmentation]] (78), [[micro-productivity-trap]] (66), [[durable-skills]] (58), [[expert-generalist]] (10), [[ai-employment-effects]] (90), [[industrial-ai-agents]] (6), [[foundation-models]] (34), [[ai-agents]] (52), [[agent-harness]] (118), [[agent-fleet-management]] (18), [[small-language-models]] (14), [[ai-benchmarks]] (26), [[strategy]] (15), [[attack-surface-management]] (11), [[ai-generated-code-quality]] (8). Confidence unchanged throughout: vendor, consultant and executive testimony. On [[attack-surface-management]] the Google speakers' Mandiant/DBIR figure (seven days to exploit in 2025) differs from the Cloudflare chart already on the page (23 days for 2025); recorded, not resolved.
+
+**Edges.** One `contradicts`: Egeriis → Bornet, on whether AI advantages last months or become insurmountable. `supports`: Beauchene → George, Lukic & Goydan, Krishna; Roslansky → Raman/Wood (co-author of the same book), George; Gao → Hines-Pierce, Luo/Null Labs; Bornet → Sadun, George; Lloyd → Chamath, the McKinsey cost Explainer; DW → Sundararajan, Fowler; Egeriis → Krishna, Kropp; Google → Grinstead, Lewis & Nadeau, Chow; Okta/NanoCo → Romeo, Klein, Lukic & Goydan, Lewis & Nadeau. Physical-AI neighbours for Mecka were taken from the 2026-10-15 query traces, which had found the wiki thin on robotics.
+
+**Dangling:** Vinciane Beauchene, Georgie Frost, Ryan Roslansky, Brad Smith, Aneesh Raman (two mentions, never `author:`), LinkedIn, Josh Gao, Mecka, Sonya Huang, EgoVerse, Pascal Bornet, Molly Wood, Pets at Home, Zach Lloyd, Warp (first `author:`), Richard Skellett, EY, Carsten Egeriis, Danske Bank, Sarah Elk, Infosys, Mollie Pettit, Aron Eidelman, Nick Galloway, Mantis, CodeMender, Ric Smith, Gavriel Cohen, Okta (two mentions), NanoCo, NanoClaw.
+
+## [2026-10-25] ingest | Two McKinsey videos: the economics of enterprise AI (Hämäläinen, Lala, Takkar) and frontier AI in cybersecurity (Lewis, Nadeau)
+
+**Acquire.** Playwright's Chromium had again vanished from `~/Library/Caches/ms-playwright/` (second time in eight days; reinstalled). Both transcripts are ASR-only and passed the gates (last segment within 20 s of the runtime, no repeated pairs). The Explainer names no speakers in its captions: a frame probe (37 frames) matched each turn to the on-screen name captions, and quotes are attributed only where the turn is clear. The bank figure is captioned "23 million"; the description's $3 million is used. **No stills**: interviews plus one section card, and a static title card for the podcast.
+
+**New source pages (2):**
+
+- [[2026-10-20-hamalainen-lala-takkar-mckinsey-economics-of-enterprise-ai]] — W&W: `digital-seizing/balancing-digital-portfolios`, `digital-transforming/improving-digital-maturity`, `contextual/external-triggers`.
+- [[2026-10-21-lewis-nadeau-mckinsey-strategy-room-frontier-ai-cybersecurity]] — W&W: `contextual/external-triggers`, `digital-transforming/redesigning-internal-structures`, `digital-sensing/digital-scenario-planning`.
+
+**Updated concepts (8):** [[foundation-models]] (33), [[enterprise-ai-adoption]] (154), [[micro-productivity-trap]] (65), [[small-language-models]] (13), [[ai-sovereignty]] (16), [[attack-surface-management]] (9), [[agent-oversight-and-delegation]] (22), [[agent-harness]] (116). Confidence unchanged: consultancy testimony with unsourced figures.
+
+**Updated entities (2):** [[McKinsey & Company]] (21), [[Cursor]] (8).
+
+**Neighbour scan and edges (all `supports`).** Economics → Lukic & Goydan/BCG (AI costs a fortune), Chesky (token leaderboards and the turn to spend), Kropp/BCG (token-based competition). Cyber → Chow/Metalware (offensive capability in open weights), Grinstead/Mozilla (harness versus model), Cloudflare Investor Day (time-to-exploit). Considered and not added: Covello/Goldman Sachs (ROI at the market level, a different question), Tran & Kiela (cost under equal budgets, a research setting).
+
+**Dangling:** Lari Hämäläinen, Wasim Lala, Kaavini Takkar, Charlie Lewis, Marie-Claude Nadeau, Sean Brown (host on three Inside the Strategy Room sources, never `author:`).
+
 ## [2026-10-18] ingest | Roth (The Verge): websites are closing their doors to AI agents
 
 The user sent one Verge URL ("inject", confirmed as ingest).

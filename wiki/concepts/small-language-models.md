@@ -3,9 +3,9 @@ type: concept
 aliases: ["small language model", "small language models", "SLM", "SLMs", "SLM-first", "heterogeneous agentic systems"]
 tags: [small-language-models, slm, agentic-ai, ai-agents, inference-economics, edge-deployment, quantization, model-specialization, fine-tuning, open-weight-models, tool-calling, function-calling, heterogeneous-agents]
 confidence: 0.75
-last_confirmed: "2026-10-12"
-accessed_at: "2026-10-12"
-source_count: 12
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 14
 relationships:
   - type: instance-of
     target: foundation-models
@@ -151,3 +151,11 @@ Two additions to the section above. First, LangChain's gateway now hosts a secon
 ## Routing by task at an application company (added 2026-10-12)
 
 [[2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free|Ramineni (Fireflies, Oct 2026)]] describes routing across *"almost 7 to 10 different model providers, speech providers"*, chosen per task: async versus real-time speech models, a separate model for live sales coaching, and a low-latency model for voice agents that must cope with background noise and a rambling caller. His summary of the design rule: *"I don't need to distill the entire world to go solve something as simple as summarization. But if I'm trying to do a more agentic difficult task … that's where I might need to use a more powerful model."* He also wants models that run on the user's phone or desktop for an always-on assistant. The argument matches [[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune|Goydan's]] buyer-side version above, here from a company that runs the routing. No figures; confidence unchanged.
+
+## The same routing argument, from McKinsey (added 2026-10-25)
+
+[[2026-10-20-hamalainen-lala-takkar-mckinsey-economics-of-enterprise-ai|McKinsey's Explainer on the economics of enterprise AI (Oct 2026)]] restates the buyer's case above. Wasim Lala's client moved from Sonnet to Opus within months although *"all those users didn't need… a much more advanced model"*; McKinsey's own Cursor users pick the newest frontier model when they can. A badly designed agent can vary *"up to 30x"* in tokens, and many steps of an IT ticket workflow are fixed rules where generative AI *"would be a waste of the token cost."* A bank's control plane now asks its users *"why didn't you route this particular request to an open weight model?"* Two consultancies (BCG above, McKinsey here) reach the same advice from cost reviews.
+
+## Routing from your own benchmark (added 2026-10-25)
+
+[[2026-10-19-lloyd-warp-what-it-takes-to-build-a-software-factory|Lloyd (Warp, Oct 2026)]] shows routing decided by a firm's own data rather than by public benchmarks. Replaying Warp's recorded coding tasks against different models gave a cost-against-correctness curve: GPT-5.6 Sol cost $6.23 per task on average at 95% correct; GLM-5.3 Flash cost about a third as much and was *"just a little less correct."* *"We would probably choose GLM-5.3 Flash for this, honestly,"* and the result feeds a routing rule for similar tasks. One vendor's benchmark on its own work.

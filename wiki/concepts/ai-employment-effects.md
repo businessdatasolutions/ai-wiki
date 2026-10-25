@@ -3,8 +3,8 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-10-08"
-source_count: 88
+last_confirmed: "2026-10-25"
+source_count: 90
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -12,7 +12,7 @@ relationships:
   - type: caused
     target: ai-deskilling
     via: "task-composition shift is one mechanism within broader employment effects"
-accessed_at: "2026-10-08"
+accessed_at: "2026-10-25"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -730,3 +730,8 @@ Three further points from the episode:
 **Jobs are more than bundles of tasks.** [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Arvind Karunakaran at a Stanford HAI seminar (Sep 2026)]] questions the unit most of this page uses. Task-exposure frameworks treat a job as a bundle of tasks; he says an *"invisible glue"* ties them, strong in some jobs (radiation oncologist) and weak in others (medical transcriptionist). He cites a Berkeley study in which handing radiation oncologists' peripheral tasks to AI lowered the speed and quality of their core task. He adds **vacancy chains**: when a law firm's paralegals took on legal research, junior associates objected (*"stay in your lane"*) until managers redesigned both roles. On entry-level hiring he doubts the current decline is the equilibrium: juniors are cheap to hire and train, and *"a lot of the cost is at the middle level."*
 
 Richardson, a week later, proposes the unit Karunakaran questions (see *Debates*). Confidence unchanged: a chief economist's interview with charts from a published series, and a seminar talk.
+
+## Entry level, AI on both sides of hiring, and the first creative losses (added 2026-10-25)
+
+- **A report from Germany.** [[2026-10-17-dw-shift-how-ai-is-changing-the-working-world|DW Shift (Oct 2026)]]: in EY's survey, CEOs expecting AI to cause significant job cuts fell from 46% (early 2025) to 20% (May 2026). A Dresden graduate with a master's degree and experience sent more than 300 applications before finding a job; *"there are fewer entry-level jobs and employers are now looking for different skills."* AI now sits on both sides of hiring: candidates write CVs with it, employers screen with it and run first interviews through avatars, and a London recruiter says employers now *"ask to put more human back into the process."* The first creative occupations are losing work: a voice actor in advertising and games, and a stylist who lost 70% of her work to AI retouching. Single cases, chosen to illustrate.
+- **The platform's data.** [[2026-03-31-roslansky-smith-tools-and-weapons-open-to-work|Roslansky (LinkedIn) on Tools and Weapons (Mar 2026)]]: LinkedIn sees software-engineer postings *increasing*, and skills required for the average job changing by 25% over eight years, 70% expected by 2030. LinkedIn's new associate-builder role is an entry route that does not require a degree. LinkedIn's own figures, without method in the episode.

@@ -4,9 +4,9 @@ kind: organization
 aliases: ["Boston Consulting Group", "BCG", "BCG Henderson Institute"]
 tags: [BCG, management-consulting, henderson-institute]
 confidence: 0.85
-last_confirmed: "2026-10-17"
-accessed_at: "2026-10-17"
-source_count: 9
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 10
 ---
 
 # Boston Consulting Group
@@ -54,3 +54,7 @@ SORT file.name ASC
 ## Pitching Progress (added 2026-10-17)
 
 BCG's *Pitching Progress* podcast, hosted by Vinay Shandal, profiles climate companies. [[2026-10-16-sivaram-shandal-bcg-pitching-progress-emerald-ai-flexibility|The Emerald AI episode]] (uploaded October 2026, recorded about November 2025) adds a segment with BCG power-and-utilities expert Stevan Jovanovic, who estimates US installed capacity at about 1,200 GW, used on average 40–50% of the time, against 80–100 GW of new data-centre demand. Sivaram cites *"BCG's own estimates"* for AI data-centre growth over five to ten years.
+
+## The So What on strategy over tools (added 2026-10-25)
+
+[[2026-10-20-beauchene-bcg-so-what-ai-strategy-more-than-rollout|Beauchene (BCG, The So What, Oct 2026)]]: Vinciane Beauchene, a former BCG managing director and partner now at Schneider Electric, presents BCG's *AI at Work* survey: three in four employees use AI regularly; strong tools with weak strategic guidance are *"five times less"* likely to produce measurable impact; and two BCG experiments, on human-AI forecasting and on calling AI a "worker" rather than a "tool."

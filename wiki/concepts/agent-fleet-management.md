@@ -3,9 +3,9 @@ type: concept
 title: Agent fleet management
 aliases: ["agent fleet management", "managing agent fleets", "agent manager", "human as agent manager", "parallel agents", "agent orchestration at scale"]
 confidence: 0.75
-last_confirmed: "2026-10-15"
-source_count: 16
-accessed_at: "2026-10-15"
+last_confirmed: "2026-10-25"
+source_count: 18
+accessed_at: "2026-10-25"
 tags: [agent-fleet, parallelism, cloud-agents, isolated-workspaces, decision-fatigue, priority-queue, span-of-control, delegation, playbooks, token-economics]
 relationships:
   - type: part-of
@@ -126,3 +126,8 @@ Notion's internal "Boxy" system, described by [[2026-05-11-nystrom-how-i-ai-spec
 This page treats directing agents as management. [[2025-08-05-weidmann-xu-deming-measuring-leadership-skills-ai-agents|Weidmann, Xu & Deming (Harvard Kennedy School, 2025)]] give the first experimental evidence that it is the *same* skill. In a pre-registered lab study, 249 leaders each directed six teams of randomly assigned human followers and six teams of GPT-4o agents through information-pooling puzzles. A leader's score with the agents correlated with their causal effect on human teams at **0.81** after correcting for measurement error (0.69 after also controlling for hard skills). The same behaviours predicted success with both kinds of followers: **asking more questions, more turn-taking, and saying "we"**, but not talking more. Emotional warmth mattered much less with agents. The authors stress that the test has not been validated against leadership outcomes in real organisations; the task is a text-chat puzzle with three followers, not a fleet of coding agents.
 
 The [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|HBS AI Institute's Frontier Firm page]] draws the organisational consequence: agents need *"more substantive onboarding (codifying tacit knowledge, adding a need for 'agent management skills')"*. Because the skill is unevenly spread, they also create *"a sharper 'winners and losers' dynamic, potentially increasing the performance gap."* [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun]] makes the same point from management research: *"even today, it's not like everybody is a good manager."* Read together, the span-of-control question on this page is also a selection question: who should run the fleet. The lab result suggests that the people who lead human teams well are a reasonable first answer.
+
+## From many local agents to a factory, and to teams of agents (added 2026-10-25)
+
+- [[2026-10-19-lloyd-warp-what-it-takes-to-build-a-software-factory|Lloyd (Warp, Oct 2026)]]: interactive agents on each developer's laptop hit three limits: they are *"bottlenecked by people,"* their costs cannot be managed collectively, and there is *"no central layer for governing them"* (each developer runs their own MCPs, so a compromise acts as the logged-in user). Moving them into a cloud factory gives a live view of every agent run across the team, *"almost like Google Docs, but for your team's coding agents,"* and fleet metrics: human interactions per pull request, time to ship, and cost per pull request by user, agent and model.
+- [[2026-10-19-smith-cohen-techcrunch-disrupt-okta-nanoco-agent-security|Smith (Okta) & Cohen (NanoCo) at TechCrunch Disrupt (Oct 2026)]]: Gavriel Cohen runs *"probably 32 agents on a team"* and expects hundreds within months, calling agent teams *"probably a new scaling law"* after training and test-time compute. His rule for the fleet: every agent has an owner who takes *"ultimate responsibility for it."*

@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI sovereignty", "sovereign AI", "digital sovereignty", "strategic autonomy in AI", "cultural autonomy", "full-stack sovereignty"]
 tags: [ai-sovereignty, sovereign-ai, digital-sovereignty, strategic-autonomy, own-vs-rent, cultural-autonomy, export-controls, industrial-policy, platform-governance, data-sovereignty]
 confidence: 0.85
-last_confirmed: "2026-10-17"
-accessed_at: "2026-10-17"
-source_count: 15
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 16
 relationships:
   - type: supports
     target: open-source-ai
@@ -135,3 +135,7 @@ An analyst's view, with some names inferred from auto-captions (see the source p
 ## Owning intelligence as an argument against concentration (added 2026-10-17)
 
 [[2026-10-15-lin-stanford-ai-club-building-in-the-ai-era|Alfred Lin (Sequoia) at the Stanford AI Club (Oct 2026)]], from the same firm as [[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Huang's keynote]], gives firm-level sovereignty an economic rather than geopolitical reason: *"We're not just going to let two or three models win. That's not how economies work. We don't like that concentration of power… and we don't want to put all our data there."* His example: *"How do you own your own intelligence for a pharmaceutical company? You're going to take open weight models and program it on your own data."* Harvey started on frontier models and now trains its own *"because they wanted to own their own intelligence."* The portfolio companies he names (Chai Discovery, Isomorphic, Reflection, LangChain) are bets on this outcome, so the claim is also an investment thesis.
+
+## Owning the workflow, the harness and the data (added 2026-10-25)
+
+[[2026-10-20-hamalainen-lala-takkar-mckinsey-economics-of-enterprise-ai|McKinsey's Explainer on the economics of enterprise AI (Oct 2026)]]: Lari Hämäläinen, a McKinsey senior partner, states firm-level sovereignty as cost and control advice: *"Our clients need to be in control of their own AI."* That means owning the workflow design, *"the harnesses, so the software… around the language model,"* and the data, and he expects open-source models run under the firm's own control to be *"preferential… for many many of our clients."* It is the own-versus-rent argument of the [[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Sequoia keynote]] reached from AI spend reviews rather than from product strategy.

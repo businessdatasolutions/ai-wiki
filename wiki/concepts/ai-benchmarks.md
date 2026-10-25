@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI benchmark", "AI benchmarks", "AI evaluation", "AI evals"]
 tags: [ai-benchmarks, ai-evaluation, foundation-models, capability-reliability-gap, scar-fragmentation]
 confidence: 0.92
-last_confirmed: "2026-10-04"
-accessed_at: "2026-10-04"
-source_count: 25
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 26
 relationships:
   - type: depends-on
     target: reward-hacking
@@ -250,3 +250,7 @@ This is the scar-fragmentation problem from [[2026-03-20-huggingface-agentic-eva
 ## Testing to the corners of the box (added 2026-10-04)
 
 [[2026-10-02-hiza-bloomberg-lockheed-ai-openai-f35|Hiza (Lockheed Martin), October 2026]] answers the question of how an AI agent near weapon systems is kept under control by pointing to flight testing: *"the same way we go about, say, a missile system or an aircraft. We put it through rigorous testing, including corners of the box, so that we understand its capability"* before deployment. It is a deployer naming pre-deployment testing as the gate, which this page mostly sees from the evaluation side. No method, criterion or result is given. It sits beside [[2026-09-30-luo-null-labs-synthetic-data-ai-testing|Luo (Null Labs)]], who argues that defense has no common test standard for AI and autonomous systems; Hiza describes an internal practice, not a shared one.
+
+## Your own tasks as the benchmark (added 2026-10-25)
+
+[[2026-10-19-lloyd-warp-what-it-takes-to-build-a-software-factory|Lloyd (Warp, Oct 2026)]] argues that public coding benchmarks are the wrong instrument for choosing a setup: *"instead of using SWE-bench or Terminal-Bench, prove to yourself that you have the right setup."* Because every agent session is recorded, hard or typical tasks can be added to an internal benchmark suite and replayed against different model and harness configurations, producing a correctness-against-cost curve for the firm's own work. Lloyd's caution about the public conversation: *"It's hard to tell who has a conflict of interest when they're talking about things."* A vendor selling the tooling for it.

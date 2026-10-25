@@ -3,9 +3,9 @@ type: concept
 aliases: ["foundation model", "foundation models", "FM", "frontier model", "frontier models"]
 tags: [foundation-models, generative-ai, ai-research]
 confidence: 0.88
-last_confirmed: "2026-10-17"
-accessed_at: "2026-10-17"
-source_count: 31
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 34
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -226,3 +226,14 @@ They are not strictly in conflict. Swisher predicts the number of labs training 
 The *compute-scaling sustainability* bullet under Debates treats energy as a question about the scaling trajectory. [[2026-10-16-sivaram-shandal-bcg-pitching-progress-emerald-ai-flexibility|Varun Sivaram (Emerald AI) on BCG's Pitching Progress]] (uploaded October 2026, recorded about November 2025) gives a narrower diagnosis: the binding constraint is **peak grid capacity and the wait to connect**, not energy overall. The grid is truly stressed *"on the order of 1% per year or less,"* and *"there's 100 gigawatts of existing stranded capacity that just doesn't get used."* New data centres wait up to ten years for lines and substations sized for their worst moment. BCG's Stevan Jovanovic puts US installed capacity at about 1,200 GW, used on average 40–50% of the time, against 80–100 GW of new data-centre demand.
 
 The proposed remedy is a data centre that can cut its load when the grid is stressed: **temporal** flexibility (pause batchable work such as fine-tuning), **spatial** (move time-sensitive inference to another site) and **resource** (on-site batteries), with [[NVIDIA]]'s 96 MW Aurora facility in Virginia as the first commercial test. Two points bear on this page: Sivaram expects *"a 50/50 split between training and inference"* in power use through the end of the decade, and he treats inference as a range from latency-critical to batchable. A founder's figures, recorded before Aurora ran. Compare the [[2026-04-30-ai-index-report-2026|AI Index's]] 29.6 GW of AI data-centre capacity and [[2026-10-04-chu-liu-dw-the-dip-how-china-is-viewing-the-ai-race|China's routing of training to regions with surplus wind and solar]].
+
+## Consumption pricing, Jevons, and open weights in offence (added 2026-10-25)
+
+Two McKinsey sources from the same week add to the *cost per task* and *open weights* threads above.
+
+- **Pricing moved under enterprises' feet.** [[2026-10-20-hamalainen-lala-takkar-mckinsey-economics-of-enterprise-ai|McKinsey's Explainer on the economics of enterprise AI (Oct 2026)]]: *"A lot of the frontier companies in quarter 1 of this year switched from per seat licensing… to now all consumption based,"* so the same use can cost *"two to three times more… instantaneously."* Per-token prices are down about 90%, but use has grown faster (*"your standard Jevons paradox"*), multiplied by reasoning tokens, growing context windows and agents that call sub-agents. Lari Hämäläinen's correction to the price headline: *"it's not just about cost per token, it's really about cost per task."* The figures are McKinsey's and unsourced in the video.
+- **Open weights catching up, on offence.** [[2026-10-21-lewis-nadeau-mckinsey-strategy-room-frontier-ai-cybersecurity|Lewis & Nadeau (McKinsey, Inside the Strategy Room, Oct 2026)]]: Charlie Lewis expects attackers to lead *"for a period of time, a year, maybe two years,"* and *"open weight models will start catching up to where the frontier labs are today."* The same direction as [[2026-09-30-chow-metalware-ai-firmware-vulnerability-research|Chow's]] report of Mythos-level capability in open weights, from a consultant rather than a defence contractor.
+
+## Robotics foundation models are bound by data (added 2026-10-25)
+
+[[2026-10-20-gao-huang-sequoia-training-data-mecka-robot-data-factory|Gao (Mecka) on Sequoia's Training Data (Oct 2026)]]: robot learning needs *"pixels… actions, and… logic,"* and there was no free corpus of it, so robotics pre-training data is becoming *"quite a large market"* in a way LLM pre-training data never was. The mix the industry has converged on, by his account: about a million hours of first-person human video, tens of thousands of hours from handheld demonstration grippers, and a few hours of teleoperation in the target setting; tactile and simulation data are still to be added. The field is in *"millions of hours,"* against Tesla's decade of driving data for *"two degrees of freedom"*; a robot hand has dozens. On whether general frontier models will absorb robotics: their recent gains on robot tasks are *"actually quite expected,"* because robot data now sits in their pre-training mix, while specialised models may reach production reliability on particular tasks first.

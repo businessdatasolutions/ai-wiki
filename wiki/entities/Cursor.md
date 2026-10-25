@@ -6,9 +6,9 @@ tags: [cursor, composer, ai-ide, coding-agent, benchmark-integrity, reward-hacki
 affiliation: "Anysphere"
 role: "AI code editor and coding-agent platform; publisher of the Composer model family"
 confidence: 0.75
-last_confirmed: "2026-10-17"
-accessed_at: "2026-10-17"
-source_count: 7
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 8
 relationships:
   - type: instance-of
     target: agent-harness
@@ -54,3 +54,7 @@ Two October-2026 sources use Cursor as a marker of AI adoption rather than as a 
 ## Its CEO's route through a student fund (added 2026-10-17)
 
 [[2026-10-16-fowler-ludlow-bloomberg-tech-dorm-room-fund-ai-gold-rush|Fowler on Bloomberg Tech (October 2026)]]: Cursor's CEO, Michael Truell, was on Dorm Room Fund's student investing team while a sophomore at MIT. The fund backed him when he started building and *"helped introduce him to some of his early capital,"* and the early cap table *"is dotted with dorm room fund alumni."* The fund's own account of its best-known result.
+
+## Its users pick the frontier model (added 2026-10-25)
+
+[[2026-10-20-hamalainen-lala-takkar-mckinsey-economics-of-enterprise-ai|McKinsey's Explainer on the economics of enterprise AI (Oct 2026)]]: Lari Hämäläinen says many McKinsey colleagues use Cursor and, *"if they're able to choose, they choose the latest frontier models,"* which makes AI costs *"quite unpredictable."* An example of model choice left to users driving spend.

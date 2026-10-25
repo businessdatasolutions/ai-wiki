@@ -3,9 +3,9 @@ type: concept
 title: AI-generated code quality and security
 aliases: ["AI-generated code quality", "AI code security", "slopsquatting", "package hallucination", "AI technical debt", "AI-introduced defects"]
 confidence: 0.85
-last_confirmed: "2026-09-19"
-source_count: 7
-accessed_at: "2026-09-19"
+last_confirmed: "2026-10-25"
+source_count: 8
+accessed_at: "2026-10-25"
 tags: [code-quality, security, owasp, slopsquatting, package-hallucination, technical-debt, code-smells, supply-chain, static-analysis, flat-scaling]
 relationships:
   - type: part-of
@@ -105,3 +105,6 @@ Two caveats on the source. It is **vendor co-marketing** with zero measurements,
 
 This is the organisational counterpart to [[2026-02-12-gloaguen-evaluating-agents-md-repository-level-context-files|Gloaguen et al.'s]] finding that repository context files raise cost by more than 20% without improving success, and it gives a cause the paper does not name. The guidance is written by **separate teams, each optimising its own concern**, so nobody owns the total. His conclusion is that prompt-level mitigation has a ceiling: *"we need models that generate as much secure code out of the box, not models that need a lot of babysitting."* If that is right, the **permanent cost** this page concludes with cannot be engineered away at the prompt layer either, only moved between review and context.
 
+## Security tests before the code, and agents' side quests (added 2026-10-25)
+
+[[2026-10-20-pettit-eidelman-galloway-google-cloud-security-review-with-agents|Pettit, Eidelman & Galloway (Google Cloud Tech, Oct 2026)]] describes how Google builds security into agent-written code as it is written. Aron Eidelman's loop: a threat model at planning, failing tests that include security edge cases (*"if I'm a normal user and not an admin and I try to access this admin endpoint, do I get a 403"*), and a skill that names the project's own helper methods so the agent does not go on *"side quests,"* rewriting helper libraries in code that *"pass[es] all the tests, but… creates more technical debt."* A deterministic hook scans every push (Semgrep and regex rules, for example for hard-coded API keys) before an agent review, and the agent that wrote code is never the one that reviews it. Asked naively to find vulnerabilities, agents return hundreds of findings of which *"maybe a few percent"* are real; Google's Mantis uses a threat model to remove the rest.

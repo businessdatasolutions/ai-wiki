@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-10-17"
-accessed_at: "2026-10-17"
-source_count: 153
+last_confirmed: "2026-10-25"
+accessed_at: "2026-10-25"
+source_count: 157
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -983,3 +983,15 @@ The [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|HBS AI Insti
 - **Role-based huddles** in sales: everyone in the same role meets weekly, taught practitioner to practitioner, to compare *"how have you used AI to get better at our job?"* She reports *"significantly greater adoption, but also much more effective adoption,"* without figures.
 
 From her team's **100 internal case studies**, the recurring pattern is *"top down, bottom up"*: leaders cascade goals and fund learning time and pro-code work, while *"grassroots, citizen developer"* builds are scaled across the organisation. On the tension this page records between structured experimentation and bottom-up adoption, her account has both at once. She also hears customers moving from *"lots and lots of pilots"* to *"three end to end business processes that are much more boring."* The episode comes from the practitioner side of the same Microsoft–HBS Frontier Firm programme as the [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun interview]] and the [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|initiative's About page]]. It is Microsoft's account of itself, on its own channel, with no adoption numbers; confidence stays at the cap.
+
+## From pushing usage to controlling spend (added 2026-10-25)
+
+[[2026-10-20-hamalainen-lala-takkar-mckinsey-economics-of-enterprise-ai|McKinsey's Explainer on the economics of enterprise AI (Oct 2026)]] describes the next phase after the usage leaderboards recorded above. Kaavini Takkar: *"you move away from pilot into production, your AI spend goes four times,"* across model providers, cloud compute and AI inside SaaS tools. Lari Hämäläinen dates the turn: *"up until end of Q1 this year everybody was worried about are we getting enough usage… And then… people suddenly woke up that hey a single user can rack thousands of dollars of bill literally in a day."* A bank's projected AI spend went from $3 million a year to more than $25 million once everyone had every tool and model *"without any ROI checks in place, any governance guardrails,"* and its answer was *"one AI control plane"* across providers, cloud and SaaS, traceable to team and person. The adoption problem becomes a governance one: which model for which task, and which use earns its cost. Compare [[2026-08-25-lukic-goydan-bcg-so-what-ai-costs-a-fortune|BCG's "tokenmaxxing to valuemaxxing"]] and [[2026-10-01-chesky-silicon-valley-girl-people-who-know-what-to-build-with-ai|Chesky's token leaderboards]]. McKinsey's figures, without method.
+
+## Strategy over tools, the Frontier Firm's traits, and a bank's first year (added 2026-10-25)
+
+Three sources from the batch, from a consultant, an author and a CEO.
+
+- **Two archetypes.** [[2026-10-20-beauchene-bcg-so-what-ai-strategy-more-than-rollout|Beauchene (BCG, The So What, Oct 2026)]]: companies that treated AI *"as a tech deployment"* against companies that chose *"a few processes that I want to truly transform."* The second got more measurable impact and more employee satisfaction, which *"reinforce each other."* Every employee should be able to answer three questions: where the company is going and how AI contributes, what that means for their job, and how they will grow. Her organisational ask is a transformation team that connects *"technology, business, strategy, HR, finance, risk,"* and no *"peanut butter spreading."*
+- **What Frontier Firms do.** [[2025-10-30-bornet-wood-worklab-ai-agents-leaders|Bornet on WorkLab (Oct 2025)]]: they reimagine before automating, redesign work for human-agent collaboration, build networks of agents rather than point solutions, and accumulate learning. Projects fail without process design, without guardrails, or when confined to one use case. His start-up kit: a vision from the top, a centre of excellence that can begin as one person with a mandate, a visible pilot, and *"about 20% of their working time"* for staff to try new tools.
+- **A bank's year.** [[2026-10-20-egeriis-bain-winning-with-ai-danske-bank|Egeriis (Danske Bank) on Bain's Winning with AI (Oct 2026)]]: Danske Bank's internal *Danske GPT* passed 75% adoption within a year; the bank then committed publicly to DKK 4.5 billion of investment and a DKK 2 billion productivity target. Adoption came from many small things: demos, AI champions *"that walk around with AI champion hoodies,"* hackathons, a generative-AI week. Foundations came first (an *"AI city"* architecture with AWS and the data layers), and the processes that stalled were those without the data links: *"the technology can clearly do it,"* but the data is *"just not there yet."*
