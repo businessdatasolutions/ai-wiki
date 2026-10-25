@@ -20,11 +20,13 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+import html
 import json
 import os
 import re
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
@@ -724,6 +726,133 @@ def to_markdown(result: dict) -> str:
 
 
 # ---------------------------------------------------------------------------
+# yt-dlp caption fallback
+# ---------------------------------------------------------------------------
+# The transcript panel failed for one of four videos on 2026-10-17 and five of
+# nine on 2026-10-25, and a long panel can come back silently truncated
+# (2026-10-03). yt-dlp reads the caption track directly; the metadata from the
+# Playwright fetch is still complete, so only the transcript is replaced.
+
+_CUE_RE = re.compile(r"^(\d+):(\d{2}):(\d{2})\.(\d{3}) --> (\d+):(\d{2}):(\d{2})\.(\d{3})")
+FALLBACK_GAP_S = 600  # the §Long videos gate: the last segment must be within 10 min of the end
+
+
+def parse_vtt(text: str, *, keep_all: bool) -> list[tuple[float, str]]:
+    """Return (start seconds, text) for each real cue of a WebVTT caption track.
+
+    keep_all=False is for rolling auto (ASR) tracks: every real cue repeats the
+    previous line above the new one, so keep only its last line, and skip the
+    ~10 ms hold cues. keep_all=True is for human-written tracks, whose
+    multi-line cues are all new text; the rolling rule silently drops their
+    first lines (164 lines of one report on 2026-10-25).
+
+    A cue ends at an EMPTY line. The first cue of a rolling track opens with a
+    line holding a single space; ending the cue there drops the opening words.
+    """
+    cues: list[tuple[float, str]] = []
+    lines = text.splitlines()
+    i = 0
+    while i < len(lines):
+        m = _CUE_RE.match(lines[i].strip())
+        if not m:
+            i += 1
+            continue
+        g = [int(x) for x in m.groups()]
+        start = g[0] * 3600 + g[1] * 60 + g[2] + g[3] / 1000
+        end = g[4] * 3600 + g[5] * 60 + g[6] + g[7] / 1000
+        i += 1
+        body = []
+        while i < len(lines) and lines[i] != "":
+            body.append(lines[i])
+            i += 1
+        body = [b for b in body if b.strip()]
+        if end - start < 0.05 or not body:
+            continue
+        raw = " ".join(body) if keep_all else body[-1]
+        line = " ".join(html.unescape(re.sub(r"<[^>]+>", "", raw)).split())
+        if line and (not cues or cues[-1][1] != line):
+            cues.append((round(start, 3), line))
+    return cues
+
+
+def segments_from_cues(cues: list[tuple[float, str]]) -> list[dict]:
+    """Merge cues into sentence-sized segments shaped like the panel's.
+
+    A segment closes at a sentence end once it spans at least 4 s, or at 20 s
+    regardless. Its timestamp is its first cue's start.
+    """
+    segs, buf, b0 = [], [], None
+    for start, text in cues:
+        if b0 is None:
+            b0 = start
+        buf.append(text)
+        if (re.search(r"[.?!][\"')\]]?$", text) and start - b0 >= 4) or start - b0 >= 20:
+            segs.append({"ts": _format_duration(int(b0)), "text": " ".join(buf)})
+            buf, b0 = [], None
+    if buf:
+        segs.append({"ts": _format_duration(int(b0)), "text": " ".join(buf)})
+    return segs
+
+
+def pick_vtt(paths: list[Path]) -> tuple[Path, str] | None:
+    """Choose a downloaded track: a human-written one before the original ASR."""
+    manual = sorted(p for p in paths if not p.name.endswith(".en-orig.vtt"))
+    if manual:
+        return manual[0], "manual"
+    asr = sorted(p for p in paths if p.name.endswith(".en-orig.vtt"))
+    return (asr[0], "asr") if asr else None
+
+
+def needs_fallback(result: dict) -> bool:
+    """True when the panel gave no transcript, or one that stops >10 min early."""
+    segs = result.get("transcript") or []
+    if not segs:
+        return True
+    length = int((result.get("metadata") or {}).get("length_seconds") or 0)
+    return bool(length) and length - _ts_to_ms(segs[-1]["ts"]) / 1000 > FALLBACK_GAP_S
+
+
+def ytdlp_transcript(video_id: str) -> tuple[list[dict], str] | None:
+    """Fetch the caption track with yt-dlp; return (segments, source) or None.
+
+    Asks for human-written English tracks first ("en.*"), then the original ASR
+    track by its real name, "en-orig": a plain "en" auto request is listed among
+    dozens of auto-translations and returned no file for two videos (2026-10-25).
+    """
+    url = f"https://www.youtube.com/watch?v={video_id}"
+    with tempfile.TemporaryDirectory() as tmp:
+        out = str(Path(tmp) / "%(id)s.%(ext)s")
+        base = [sys.executable, "-m", "yt_dlp", "--skip-download", "--sub-format", "vtt", "-o", out]
+        subprocess.run(base + ["--write-subs", "--sub-langs", "en.*,en", url], capture_output=True)
+        if not list(Path(tmp).glob("*.vtt")):
+            subprocess.run(base + ["--write-auto-subs", "--sub-langs", "en-orig", url], capture_output=True)
+        picked = pick_vtt(list(Path(tmp).glob("*.vtt")))
+        if not picked:
+            return None
+        path, kind = picked
+        segs = segments_from_cues(parse_vtt(path.read_text(encoding="utf-8"), keep_all=(kind == "manual")))
+        track = path.name.split(".", 1)[1].removesuffix(".vtt")
+    return (segs, f"yt-dlp, {'human-written' if kind == 'manual' else 'auto-generated'} track ({track})") if segs else None
+
+
+def apply_fallback(result: dict, video_id: str) -> dict:
+    """Replace a missing or truncated panel transcript with the yt-dlp one."""
+    meta = result.setdefault("metadata", {})
+    if not needs_fallback(result):
+        meta["transcript_source"] = "transcript panel"
+        return result
+    reason = result.get("error") or "panel transcript ends more than 10 min before the video does"
+    fb = ytdlp_transcript(video_id)
+    if fb is None:
+        print(f"yt-dlp fallback found no caption track ({reason})", file=sys.stderr)
+        return result
+    result["transcript"], meta["transcript_source"] = fb
+    result.pop("error", None)
+    print(f"transcript from {fb[1]} after: {reason}", file=sys.stderr)
+    return result
+
+
+# ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
 
@@ -734,6 +863,8 @@ async def _main() -> int:
     ap.add_argument("--json", action="store_true", help="Emit raw JSON to stdout instead of Markdown")
     ap.add_argument("--headed", action="store_true", help="Run with a visible browser window")
     ap.add_argument("--timeout", type=int, default=30000, help="Per-step timeout in ms (default: 30000)")
+    ap.add_argument("--no-fallback", action="store_true",
+                    help="Do not fetch captions with yt-dlp when the panel fails or stops >10 min early")
     args = ap.parse_args()
 
     try:
@@ -743,6 +874,8 @@ async def _main() -> int:
         return 2
 
     result = await fetch(video_id, headless=not args.headed, timeout_ms=args.timeout)
+    if not args.no_fallback:
+        result = apply_fallback(result, video_id)
 
     if args.json:
         json.dump(result, sys.stdout, ensure_ascii=False, indent=2)

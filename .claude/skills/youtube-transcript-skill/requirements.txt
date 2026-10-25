@@ -1,5 +1,6 @@
 playwright>=1.40
 PyYAML>=6.0
-# extract_stills.py only
+# fetch_transcript.py caption fallback, extract_stills.py, search_stills.py
 yt-dlp>=2026.8.19
+# extract_stills.py and search_stills.py only
 google-genai>=2.26
