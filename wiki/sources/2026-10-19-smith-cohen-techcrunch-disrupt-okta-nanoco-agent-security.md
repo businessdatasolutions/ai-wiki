@@ -7,7 +7,7 @@ publisher: "TechCrunch — Disrupt 2026 stage session; Ric Smith (Okta) and Gavr
 url: "https://www.youtube.com/watch?v=4FZTk2J4tc0"
 date_published: 2026-10-19
 date_ingested: 2026-10-25
-length: "~28:30 minutes (transcript ~121 segments; auto-generated captions, corrected in quotes)"
+length: "~28:30 minutes (transcript ~122 segments; auto-generated captions, corrected in quotes)"
 raw: "../../raw/videos/why-application-level-permissions-wont-secure-ai-agents-okta-nanoco-disrupt-2026.md"
 tags: [techcrunch, disrupt-2026, okta, nanoco, nanoclaw, openclaw, ric-smith, gavriel-cohen, agent-security, agent-identity, insider-threat, least-privilege, cross-app-access, sandboxing, enforcement-outside-the-agent, intent-based-authorization, judge-model, plan-approval, shadow-ai, kill-switch, agent-owner, agent-teams, security-debt, cve-backlog, n-1-patching, vm-escape, mythos]
 dynamic_capabilities:

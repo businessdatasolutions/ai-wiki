@@ -166,7 +166,8 @@ playability:
   reason: null
 notes: |
   Auto-generated captions only. The transcript panel failed three times; the en-orig auto track was fetched with
-  yt-dlp and parsed keeping the last line of each rolling cue. Not cleaned; quotes on the source page are corrected.
+  yt-dlp and parsed keeping the last line of each rolling cue
+  (rebuilt 2026-10-25 after a first-cue parsing bug had dropped the opening words). Not cleaned; quotes on the source page are corrected.
   TechCrunch Disrupt 2026 stage session; Ric Smith, President of Products and Technology at Okta, and Gavriel Cohen,
   co-founder and CEO of NanoCo; the moderator is not named in the captions. ASR errors: "Rik/Rick" = Ric;
   "Gabriel" = Gavriel; "Nanoclaw" = NanoClaw; "Nanocore/Nanoco" = NanoCo; "Open Claw" = OpenClaw; "Octa" = Okta;
@@ -176,7 +177,8 @@ notes: |
 
 ## [0:00] The rise of agentic software
 
-[0:04] three of Disrupt, and welcome to my guest. Thank you so much for being here. Gabriel Cohen, it's been a kind of a wild ride for the last 6 months. You've started your company a few months ago and riding the first wave of agentic software.
+[0:02] Good morning, everyone. Welcome to day three of Disrupt, and welcome to my guest. Thank you so much for being here.
+[0:08] Gabriel Cohen, it's been a kind of a wild ride for the last 6 months. You've started your company a few months ago and riding the first wave of agentic software.
 [0:20] Nanoclaw, your software has already seen huge success based on this principle that autonomous agents should be more secure and safer than some of the earlier predecessors.
 [0:33] Why is this principle so important to you? >> When I started uh uh Nanoclaw, started building the project in uh end of January, I was working on a AI native uh marketing agency.
 [0:50] And I started to use Open Claw. I'd been using AI tools for a long time, and Open Claw was a big moment where we ran this experiment saying, "What happens if I just connect frontier AI agents to everything? Right?
@@ -233,7 +235,7 @@ notes: |
 
 ## [10:10] Advice for AI developers
 
-[10:27] enterprises are we're speaking with, you know, some of the largest enterprises in the country and globally. And we hear again and again that they feel like they're behind.
+[10:25] >> Large enterprises are we're speaking with, you know, some of the largest enterprises in the country and globally. And we hear again and again that they feel like they're behind.
 [10:40] Right? And they can't all be behind, but somehow they all feel uh vast majority say that they're behind.
 [10:47] They're trying to move very quickly. Uh the the the people who lead the AI enablement efforts, um a lot of them haven't spent a lot of time in the company they're in or in large enterprises in general. You speak with them, they're very optimistic, um but then they run into the processes of their company in terms of security reviews, procurement processes, legal, um and they're trying to condense these processes that would have taken 12
 [11:10] months. Um but in the end of the day, there's no skipping the security review, and there shouldn't be. Right? So, these processes do take 3, 4, 6 months.
@@ -315,7 +317,7 @@ notes: |
 [26:14] Because that's where your holes are and there is a new method of doing research very quickly to exploit each and every one of those.
 [26:22] >> And Gabriel, you know, you are now 6 months to almost a year into your journey with your company.
 [26:28] If you could go back and change anything with the benefit of hindsight, would you?
-[26:37] today. Uh we've been in this spot of of personal uh agents um for work.
+[26:35] >> I think we're in an incredible position today. Uh we've been in this spot of of personal uh agents um for work.
 [26:44] That's that's where I started. I sat down in February and I sat down to build myself a personal agent for my work. Um and that's now, you know, obviously the the space that's getting I think the most attention. Um, we have an enterprise platform that's deployed with companies. And we're, you know, very close to launching also a free version that anybody can can access. Uh, we have incredible investors and and Okta is
 [27:07] actually an investor and joined our our seed round. Full disclosure there, so I'm a big fan. Um, not biased at all. >> As are we.
 [27:14] >> Um, and I I I wouldn't I wouldn't change anything, um, except maybe be more ambitious. And I think this is really important for everybody who's building now. The models, the agents, they're getting better at a very rapid, uh, rate.

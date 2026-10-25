@@ -244,7 +244,8 @@ playability:
   reason: null
 notes: |
   Auto-generated captions only. The transcript panel failed three times; the en-orig auto track was fetched with
-  yt-dlp and parsed keeping the last line of each rolling cue. Not cleaned; quotes on the source page are corrected.
+  yt-dlp and parsed keeping the last line of each rolling cue
+  (rebuilt 2026-10-25 after a first-cue parsing bug had dropped the opening words). Not cleaned; quotes on the source page are corrected.
   Training Data (Sequoia Capital), host Sonya Huang; guest Josh Gao, founder and CEO of Mecka AI.
   ASR errors to read through: "Mecca/Mekko/Meka/Mecha" = Mecka; "ecocentric" = egocentric; "UMi/UMI" = UMI
   (Universal Manipulation Interface, a handheld demonstration gripper); "Kawasaki Kreloses/Carleo/Corleone" =
@@ -255,11 +256,11 @@ notes: |
 
 ## [0:00] Introduction
 
-[0:02] that is when robotics and AI has ultimately fully generalized and solved all tasks that humans can do, the final frontier is going to be organic. Final frontier is going to be biological. And you see this in like Asimov, you see this in Ender's Game, you could even in Hitchhiker's at the very end, the planet ultimately was this giant organic computer trying to process and
-[0:25] understand what the meaning of life was or what the question was. Mecca on the show. Josh is founder and
-[0:49] CEO of Mecca AI, which is building a data and deployment company for robotics. I and I think the whole ecosystem think that robotics is about to enter a golden age. And unlike LLMs, where we had so much free human data from the internet, robotics is fundamentally data constrained. And I think your position in the ecosystem as
-[1:13] the leading data factory to bring robotic data and physical data in distribution for models is just a really, really interesting perch. So I'm excited to use this conversation today to chat about how does ecocentric data and data collection work in robotics, what are the actual operations and economics of operating a data factory, and your your overall thoughts on robotics research and deployment. Thanks for joining the show.
-[1:36] >> Amazing. Thanks for having me. >> Awesome. Maybe to start off, for those who aren't familiar, what is Mecca and how are you looking to impact the world of robotics?
+[0:00] There's a an idea in science fiction that is when robotics and AI has ultimately fully generalized and solved all tasks that humans can do, the final frontier is going to be organic. Final frontier is going to be biological. And you see this in like Asimov, you see this in Ender's Game, you could even in Hitchhiker's at the very end, the planet ultimately was this giant organic
+[0:23] computer trying to process and understand what the meaning of life was or what the question was. >> [music] >> Today I'm delighted to have Josh from
+[0:47] Mecca on the show. Josh is founder and CEO of Mecca AI, which is building a data and deployment company for robotics. I and I think the whole ecosystem think that robotics is about to enter a golden age. And unlike LLMs, where we had so much free human data from the internet, robotics is fundamentally data constrained. And I
+[1:10] think your position in the ecosystem as the leading data factory to bring robotic data and physical data in distribution for models is just a really, really interesting perch. So I'm excited to use this conversation today to chat about how does ecocentric data and data collection work in robotics, what are the actual operations and economics of operating a data factory, and your your overall thoughts on
+[1:33] robotics research and deployment. Thanks for joining the show. >> Amazing. Thanks for having me. >> Awesome. Maybe to start off, for those who aren't familiar, what is Mecca and how are you looking to impact the world of robotics?
 [1:44] >> So Mecca is, like you said, the data and deployment company for physical AI. What that means is today we create, we process, and ultimately we license a lot of the data that goes into training these robotics foundation models. The big problem across robotics is that we don't have the luxury of the cold start that LLMs had with the internet.
 
 ## [1:46] What Mecka is: pixels, actions and logic
@@ -522,11 +523,13 @@ notes: |
 [42:52] >> Like 100 billion robots? >> Yeah. >> That's really cool. 100 billion panther dog horses?
 [42:58] >> Panther dog horses, at least another order of magnitude more [laughter] than that. >> Love it. Um awesome, Josh. I think that what you're building is like operationally really impressive and very cool how you were scaling up the data collection efforts to enable kind of this robotics golden age and this sci-fi future that you've dreamed of since you were a kid. And so, thank you for for joining the pod today to tell us both
 [43:21] how you're building the business and how you see the future. It was really fun. >> Thank you so much for having us. Thank you, Sonya.
-[43:30] >> I love presents. >> uh this is kind of like a full circle moment for us. >> Is this what I think it is? >> Who knows? Who knows?
-[43:37] >> [laughter] >> All right, you're going to have to open it up on on the podcast. >> is amazing. And look at the Hold on. Can we You know, I could be one of those YouTubers that does the unboxings.
+[43:28] So, we actually brought you a present. >> I love presents. >> uh this is kind of like a full circle moment for us.
+[43:34] >> Is this what I think it is? >> Who knows? Who knows? >> [laughter] >> All right, you're going to have to open it up on on the podcast.
+[43:40] >> is amazing. And look at the Hold on. Can we You know, I could be one of those YouTubers that does the unboxings.
 [43:47] [laughter] Look at I love this The Mecha stickers are A+. Okay, I think this is what I think it is. Let's see.
 [43:53] >> We're we're going to actually actually come up with a a a series of Mecha figurines and stickers. >> Because they're all like giant robots, human pilot stuff.
-[44:03] That'll be fun. >> I'm so I'm Let's see if this is going to work. Oh my gosh. Okay.
-[44:18] This is the >> This is the Corleone. >> This is the Kawasaki Corleone. I love this. This is the robot dog panther horse.
-[44:26] >> and my mom. >> Oh. >> On the on the panther horse. That's right. >> [laughter] >> This is going We're either going to put it in the podcast room or in my office.
-[44:34] This is incredible. >> Okay. Do it. Do it. >> I'm so happy. >> I'm so happy. Thank you. [laughter]
+[44:03] That'll be fun. >> I'm so I'm Let's see if this is going to work. I love it.
+[44:15] Oh my gosh. Okay. This is the >> This is the Corleone. >> This is the Kawasaki Corleone.
+[44:23] I love this. This is the robot dog panther horse. >> and my mom. >> Oh.
+[44:28] >> On the on the panther horse. That's right. >> [laughter] >> This is going We're either going to put it in the podcast room or in my office.
+[44:34] This is incredible. >> Okay. Do it. Do it. >> I'm so happy. >> I'm so happy. Thank you. [laughter] >> [music] [music]

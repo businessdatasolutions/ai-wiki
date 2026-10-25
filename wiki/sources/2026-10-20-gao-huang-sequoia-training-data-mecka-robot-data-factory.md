@@ -7,7 +7,7 @@ publisher: "Sequoia Capital — Training Data podcast, host Sonya Huang"
 url: "https://www.youtube.com/watch?v=0idrTKCDhuE"
 date_published: 2026-10-20
 date_ingested: 2026-10-25
-length: "~45:12 minutes (transcript ~191 segments; auto-generated captions, corrected in quotes)"
+length: "~45:12 minutes (transcript ~193 segments; auto-generated captions, corrected in quotes)"
 raw: "../../raw/videos/inside-the-robot-data-factory-meckas-josh-gao-on-sensorizing-humans-to-train-robots.md"
 tags: [sequoia-capital, training-data-podcast, sonya-huang, josh-gao, mecka, physical-ai, robotics, robot-data, data-factory, egocentric-data, sensorizing-humans, tactile-gloves, force-data, teleoperation, umi, ego4d, egoverse, data-quality, data-fraud, training-data-mix, world-models, systems-integrator, tesla-fsd, robotics-deployment, podcast]
 dynamic_capabilities:
