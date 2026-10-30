@@ -3,8 +3,8 @@ type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
-last_confirmed: "2026-10-25"
-source_count: 79
+last_confirmed: "2026-10-30"
+source_count: 80
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -12,7 +12,7 @@ relationships:
   - type: contradicts
     target: automation-vs-augmentation
     via: "process lock-in = automation without redesign; reinvent-the-business resists this trap"
-accessed_at: "2026-10-25"
+accessed_at: "2026-10-30"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -461,3 +461,7 @@ Her measurement answer is a chain. Adoption is *"the easiest thing to measure"*,
 ## "Productivity has a limit. Growth has no limit" (added 2026-10-25)
 
 [[2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder|Diasio (EY) on WorkLab (Dec 2025)]] describes how the loop starts. After two years of investment in tools, *"you say, does the tool do what my person did before? And then you get into this productivity loop. And unfortunately productivity has a limit."* Firms that test AI in the back office *"get into this like cost out productivity"*; the strategic ones take on *"challenging business questions that are existential to their business strategy."* His way out is a written artefact rather than a metric: *"a 2 or 3 page reinvention of a function agenda,"* which he calls *"an objective target"* that pushes the mindset shift from *"just doing AI"* to *"changing how we work with AI."*
+
+## "That's where you lose the battle" (added 2026-10-30)
+
+[[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: Catlin says most organisations are *"obsessively focused on productivity … that's where you lose the battle, not where you win the battle,"* because competitors have the same models. Montard calls it table stakes, with gains accruing to tool makers or consumers *"but very rarely to companies themselves."* Durth adds that automating existing processes makes firms *"wonderfully efficient at doing the wrong things."* Productivity is still treated as necessary: *"you have no choice but to go after it."*

@@ -3,9 +3,9 @@ type: concept
 aliases: ["LLM Wiki", "LLM-Wiki", "llm wiki", "Karpathy's LLM Wiki", "LLM-maintained wiki", "compounding wiki"]
 tags: [llm-wiki, knowledge-compilation, three-layer-architecture, ingest-query-lint, agent-memory, claude-md, knowledge-compounding, agentic-knowledge-base]
 confidence: 0.93
-last_confirmed: "2026-10-12"
-accessed_at: "2026-10-12"
-source_count: 16
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 17
 relationships:
   - type: part-of
     target: agent-harness
@@ -271,3 +271,7 @@ The convergence is worth noting precisely because Tan is not describing a knowle
 | Stated open problems | Consolidating obsolete records; a more complex index at thousands of records; probably an agentic system | Scale ceiling and retrieval (see *Open questions* above) |
 
 Tate describes the system as a small-team prototype with no evaluation of its outputs beyond the hosts' own reading. The episodes do not mention Karpathy's gist or the LLM Wiki pattern.
+
+## OpenWiki: a brain updated from coding-agent traces (added 2026-10-30)
+
+[[2026-10-27-chase-langchain-interrupt-london-agents-improve-over-time|Chase (Interrupt London, Oct 2026)]] mentions LangChain's open-source **OpenWiki**, *"creating this knowledge or this brain for an agent that can be updated."* It is populated from a coding repo and updated from Codex or Claude Code traces showing what the agent struggled with. He names *"choosing what to remember and what not to remember"* as the hardest part of such loops. This is a one-line description in a talk; the project itself has not been read.

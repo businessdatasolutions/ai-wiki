@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-10-25"
-accessed_at: "2026-10-25"
-source_count: 75
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 76
 relationships:
   - type: instance-of
     target: generative-ai
@@ -324,3 +324,7 @@ The two sections above treat agents as the web's main population and computer us
 ## Sense, plan, act, reflect; from apps to agents (added 2026-10-25)
 
 [[2025-10-30-bornet-wood-worklab-ai-agents-leaders|Bornet on WorkLab (Oct 2025)]] gives a practitioner's definition: an agent senses its environment, plans toward a goal, acts, and reflects on the outcome to improve (*SPAR*). Robotic process automation scripts were *"the old kind of agents"*; LLMs gave them understanding of context and goals. His product argument: apps *"require humans to learn how to use them. These agents, they will learn how to serve us,"* using the apps on our behalf, so *"we won't say there's an app for that, we will say there is an agent for that."*
+
+## Programmatic tool calling (added 2026-10-30)
+
+[[2026-10-28-hack-klein-browserbase-navigators-clickup-why-agents-keep-failing|Hack (ClickUp, on Navigators, Oct 2026)]] describes three stages of agent action: *"text in, text out"*, JSON tool calls, and programmatic tool calling, where the agent writes a script against an SDK. He prefers the last because the agent can *"dynamically compose its own tools at runtime"* and *"pass data between different tools without it entering into context."* He says he was surprised how far generalist agents rely on code for non-code work such as deep research.

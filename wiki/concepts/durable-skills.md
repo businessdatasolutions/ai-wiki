@@ -3,8 +3,8 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-10-25"
-source_count: 75
+last_confirmed: "2026-10-30"
+source_count: 77
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -15,7 +15,7 @@ relationships:
   - type: depends-on
     target: ai-benchmarks
     via: "measurement methodology — Vantage and similar protocols define new benchmark types for human skills (not model capability)"
-accessed_at: "2026-10-25"
+accessed_at: "2026-10-30"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -389,3 +389,8 @@ Two more lists of the skills that survive. [[2026-03-31-roslansky-smith-tools-an
 ## "AI and something": four skills and delegation (added 2026-10-25)
 
 [[2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder|Diasio (EY) on WorkLab (Dec 2025)]] starts from an observation. EY ran hands-on sessions *"hundreds of times"* in which management teams used AI to invent a snack product, and the results converged on *"the same packaging… the same recipes, the same marketing plans."* AI *"raises the floor, but it doesn't raise the ceiling."* What raises the ceiling is *"AI and something,"* which EY calls the big four: creativity, critical thinking, [[systems-thinking|systems thinking]] and deep domain expertise. EY's training aims to teach staff *"how to find their 'and,'"* so their domain expertise becomes a differentiator. For new joiners, who he expects to manage agents from their first day, he adds a fifth: *"delegation skills,"* meaning giving agents instructions *"and then critically evaluating if that happened in the appropriate way."* The list overlaps with [[2025-10-30-bornet-wood-worklab-ai-agents-leaders|Bornet's]] humics on the same show: both include creativity and critical thinking; Bornet adds social authenticity, Diasio domain expertise and systems thinking. The convergence is an observation across many sessions, not a measurement.
+
+## Judgment and taste (added 2026-10-30)
+
+- [[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: Catlin cites Agrawal on cheap prediction raising the value of judgment and proprietary data, and Rigobon's EPOCH framework (empathy, networking, visioning). Durth's no-regret move is AI fluency without *"giving up on building expertise and institutional knowledge and judgment and system thinking."*
+- [[2026-10-26-schwaibold-epstein-yc-new-full-stack-designer|Schwaibold (Shopify) on YC's Design Review, Oct 2026]]: *"The output isn't the issue anymore, it's us being extremely selective."* The designer as editor, whose role AI *"can't"* fill because it *"doesn't know what looks good and what looks bad."*

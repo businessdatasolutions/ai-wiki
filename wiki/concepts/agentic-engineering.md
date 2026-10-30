@@ -3,9 +3,9 @@ type: concept
 aliases: ["agentic engineering", "Agentic Engineering", "agentic-engineering", "agent engineering"]
 tags: [agentic-engineering, vibe-coding, software-3.0, ai-agents, agent-harness, software-engineering, hiring, karpathy, codex-case-study]
 confidence: 0.95
-last_confirmed: "2026-10-03"
-accessed_at: "2026-10-03"
-source_count: 80
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 84
 relationships:
   - type: depends-on
     target: agent-harness
@@ -349,3 +349,10 @@ Two points bear on this page directly.
 ## Agentic engineering past the engineering team (added 2026-09-28)
 
 [[2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved|Geoff Charles (Ramp CPO)]] describes agentic engineering spreading into product management: a coding agent that anyone in the company can call from Slack (about a thousand PRs in a month from non-engineers), plus agents for spec writing, review, QA and coordination. His advice to PMs is to *"be as lazy as engineers"*. He also names the precondition: *"coding agents are really good when you have a strong architecture and a strong code base."*
+
+## Ultra coding, the dark factory, and agents that loop on CI (added 2026-10-30)
+
+- **Ultra coding.** [[2026-10-28-hack-klein-browserbase-navigators-clickup-why-agents-keep-failing|Hack (ClickUp, on Navigators, Oct 2026)]]: *"when the agent programmatically spawns a bunch of sub aents to go off and complete tasks that can be verified."* He cites ClickUp's test-suite rewrites and, from memory, a Bun-to-Rust rewrite at about $120,000. The limit he names is closing the loop: a full development environment and security clearance, which do not *"come down to technology."*
+- **A migration that carries lessons.** [[2026-10-23-grinberg-gill-claude-factory-autonomous-software|Grinberg (Factory, on the Claude channel, Oct 2026)]]: on a bank's second COBOL modernisation, human involvement was *"90% less"* after the Droid extracted lessons from the first. One customer, reported by the vendor.
+- **Agents answering review.** [[2026-10-24-skidmore-cloudflare-connect-build-not-buy|Skidmore (Cloudflare Connect, Oct 2026)]]: recent models wait for CI, read the comments and *"loop until everything's good to go."* Skills holding standards *"don't necessarily always get invoked when they should."*
+- **Decomposition.** [[2026-10-26-schwaibold-epstein-yc-new-full-stack-designer|Schwaibold (Shopify) on YC's Design Review, Oct 2026]]: the tools can make anything, *"but you have to be able to take a … concept … and break it down into all its little components."*

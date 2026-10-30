@@ -3,9 +3,9 @@ type: concept
 aliases: ["small language model", "small language models", "SLM", "SLMs", "SLM-first", "heterogeneous agentic systems"]
 tags: [small-language-models, slm, agentic-ai, ai-agents, inference-economics, edge-deployment, quantization, model-specialization, fine-tuning, open-weight-models, tool-calling, function-calling, heterogeneous-agents]
 confidence: 0.75
-last_confirmed: "2026-10-25"
-accessed_at: "2026-10-25"
-source_count: 19
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 20
 relationships:
   - type: instance-of
     target: foundation-models
@@ -159,3 +159,7 @@ Two additions to the section above. First, LangChain's gateway now hosts a secon
 ## Routing from your own benchmark (added 2026-10-25)
 
 [[2026-10-19-lloyd-warp-what-it-takes-to-build-a-software-factory|Lloyd (Warp, Oct 2026)]] shows routing decided by a firm's own data rather than by public benchmarks. Replaying Warp's recorded coding tasks against different models gave a cost-against-correctness curve: GPT-5.6 Sol cost $6.23 per task on average at 95% correct; GLM-5.3 Flash cost about a third as much and was *"just a little less correct."* *"We would probably choose GLM-5.3 Flash for this, honestly,"* and the result feeds a routing rule for similar tasks. One vendor's benchmark on its own work.
+
+## Small models trained on synthetic questions (added 2026-10-30)
+
+[[2026-10-28-hack-klein-browserbase-navigators-clickup-why-agents-keep-failing|Hack (ClickUp, on Navigators, Oct 2026)]] describes a recipe for retrieval subagents: a large model reads a document and writes question-answer pairs, then a model of *"a couple hundred million parameters"* is trained or RL-trained to find the answers. The data is effectively unlimited, and the result is cheap and specific to one firm's tools and index. The executive function stays with a frontier model. [[2026-10-27-chase-langchain-interrupt-london-agents-improve-over-time|Chase (Interrupt London, Oct 2026)]] sees supervised fine-tuning used mainly for narrow tasks such as classification, extraction and summarisation.

@@ -3,9 +3,9 @@ type: concept
 aliases: ["knowledge graph", "KG", "knowledge graphs", "knowledge-graph", "kg"]
 tags: [knowledge-graphs, kg, graph-rag, ai-grounding, ontology, relational-data, agent-harness, agentic-memory, etl, entity-extraction, relationship-extraction]
 confidence: 0.9
-last_confirmed: "2026-09-04"
-accessed_at: "2026-09-05"
-source_count: 17
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 18
 relationships:
   - type: part-of
     target: agent-harness
@@ -226,3 +226,7 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "knowledge-graphs") OR contains(tags, "kg") OR contains(tags, "graph-rag")
 SORT file.name ASC
 ```
+
+## A context graph as a vendor's argument (added 2026-10-30)
+
+[[2026-10-28-hack-klein-browserbase-navigators-clickup-why-agents-keep-failing|Hack (ClickUp, on Navigators, Oct 2026)]] claims ClickUp's *"very dense context graph"* over a firm's chats, tasks and docs makes retrieval cheaper, faster and better than agents spread across ten platforms. No benchmark is offered, and ClickUp sells the consolidation. He also calls bespoke single-pass retrieval the *"RAG industrial complex"*: he would give the agent consolidated data plus tools such as SQL and vector queries, and let it choose at runtime.

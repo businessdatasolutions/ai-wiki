@@ -5,9 +5,9 @@ aliases: ["LangChain", "LangChain Inc"]
 tags: [langchain, agent-frameworks, agent-runtime, agent-harness, langgraph, langsmith, deep-agents]
 since: 2022
 confidence: 0.9
-last_confirmed: "2026-10-11"
-accessed_at: "2026-10-11"
-source_count: 18
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 19
 relationships:
   - type: published-by
     target: 2026-05-09-chase-agent-development-lifecycle
@@ -119,3 +119,7 @@ SORT file.name ASC
 - **Customer evidence**. The wiki has not yet ingested a customer case study deploying LangChain at production scale. Chase's piece references "LangSmith customers" abstractly; substantive case studies would substantiate concept pages further.
 - **Open-source community vs. commercial product**. LangChain straddles open-source (the `langchain` framework, LangGraph, Deep Agents) and commercial (LangSmith Platform). The boundary is operationally important for procurement and lock-in concerns; the wiki has not yet substantiated it.
 - **Comparative positioning**. CrewAI, Claude Agents SDK, AWS AgentCore, Daytona, E2B, Temporal, n8n are all named alongside LangChain in [[2026-05-09-chase-agent-development-lifecycle|Chase 2026]]. None has been substantiated independently. A market-landscape source (analyst report, comparison study) would resolve the relative positioning question.
+
+## Interrupt London (added 2026-10-30)
+
+[[2026-10-27-chase-langchain-interrupt-london-agents-improve-over-time|Chase (Interrupt London, Oct 2026)]]: model, harness and context as what improves; LangSmith Fine-Tuning (`smithtune`), LangSmith Engine, SmithDB, AI Search, red teaming and the open-source OpenWiki.

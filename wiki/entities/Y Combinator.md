@@ -6,9 +6,9 @@ tags: [accelerator, venture-capital, silicon-valley, startup-school, startup-sch
 since: 2005
 website: "https://www.ycombinator.com"
 confidence: 0.95
-last_confirmed: "2026-10-03"
-accessed_at: "2026-10-03"
-source_count: 37
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 38
 ---
 
 # Y Combinator
@@ -177,3 +177,7 @@ Also of institutional note: Tan's **"harness wars"** call for 2027 preceded [[20
 ## The Startup Industrial Base, Washington D.C. (added 2026-10-03)
 
 [[2026-09-30-yc-root-access-startup-industrial-base-dc|The Startup Industrial Base: Building for the Next 250]] is the eight-hour YC Root Access livestream of a YC event in Washington on 30 September 2026 about how small companies become suppliers to the US military: 37 founder pitches, panels and firesides with senior officials. It is the convener role recorded above, applied to a market outside software. YC people on stage: [[Garry Tan]] (opening remarks; fireside with Transportation Secretary Sean Duffy), [[Luther Lowe]] (head of public policy; MC and closing remarks), [[Pete Koomen]] (fireside with [[Defense Innovation Unit|DIU]]'s CTO Chris Murphy), Chris Golda (general partner; panel of four Fall 2026 defense founders), Vivian Shen (visiting partner; Senator Tim Sheehy), Tyler Bosmeny (Congressman Pat Ryan) and Olivia Marotte (partnerships; author Eric Alborg). Most of the pitching companies are YC companies, some of them mid-batch, so the standing caveat applies here too: the event presents YC's own portfolio. Six talks with AI content have their own source pages, linked from the event page.
+
+## Design Review (added 2026-10-30)
+
+[[2026-10-26-schwaibold-epstein-yc-new-full-stack-designer|Schwaibold (Shopify) on YC's Design Review, Oct 2026]]: Aaron Epstein with Marvin Schwaibold on designing with Codex and Claude Code, and reviews of viewer-submitted sites.

@@ -7,7 +7,7 @@ affiliation: "Anthropic"
 confidence: 0.9
 last_confirmed: "2026-09-28"
 accessed_at: "2026-09-28"
-source_count: 18
+source_count: 22
 relationships:
   - type: part-of
     target: Anthropic

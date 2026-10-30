@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.95
-source_count: 147
+source_count: 150
 relationships:
   - type: part-of
     target: ai-agents
@@ -20,8 +20,8 @@ relationships:
   - type: uses
     target: small-language-models
     via: "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed"
-last_confirmed: "2026-10-25"
-accessed_at: "2026-10-25"
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -1085,3 +1085,9 @@ The talk also counts consumer-app features (Projects, Scheduled tasks, the attac
 
 - **A factory you can engineer.** [[2026-10-19-lloyd-warp-what-it-takes-to-build-a-software-factory|Lloyd (Warp, Oct 2026)]]: a *software factory* is a cloud loop in which agents and people triage, specify, implement, review, verify and ship, and it is *"defined in code"* and versioned, so it can be tested and rolled back. It should be open to *"any model, any harness."* What makes it a harness to tune rather than a tool to use is *factory engineering*: every agent run is stored and scored with an LLM judge (Warp's example dimension is redundant tests), agents look across failed runs and propose changes to the factory's own definition (one triage problem was seen 54 times), and recorded tasks are replayed against model and harness configurations. Warp reports cutting its cost per pull request from about $55 to $15 in six weeks while raising throughput about 40%, with a lower revert rate. A vendor's own figures.
 - **A security harness.** [[2026-10-20-pettit-eidelman-galloway-google-cloud-security-review-with-agents|Pettit, Eidelman & Galloway (Google Cloud Tech, Oct 2026)]]: Google's *Mantis* splits security review into skills by *"agenda,"* not persona (threat modelling, critique, vulnerability classes), uses a threat model to strip false positives, and never reviews code in the context that wrote it. Skills are loaded into an existing harness; hooks force deterministic checks where skills might not fire. Aron Eidelman relays what he hears from other companies: *"the harness that you have really makes the difference. And you can even get away with pretty light frontier model."*
+
+## What improves, skills as memory, and the model absorbing the harness (added 2026-10-30)
+
+- **Three units of improvement.** [[2026-10-27-chase-langchain-interrupt-london-agents-improve-over-time|Chase (Interrupt London, Oct 2026)]] treats model, harness and context as separately improvable, by hand, with a human approving, or automatically. His slide lists what the harness does: context injection, control (compaction, orchestration, Ralph loops), action, persist and observe-and-verify.
+- **Skills as memory.** [[2026-10-28-hack-klein-browserbase-navigators-clickup-why-agents-keep-failing|Hack (ClickUp, on Navigators, Oct 2026)]]: for a repeated workflow, *"the optimal strategy is have an agent document that in a skill, have that skill preloaded into an agent."* In ClickUp skills are first-class objects and *"basically function as memory."*
+- **Keep replacing it.** [[2026-10-23-grinberg-gill-claude-factory-autonomous-software|Grinberg (Factory, on the Claude channel, Oct 2026)]]: *"A model today could do what a model plus a harness could do 2 years ago,"* so a harness left unchanged is *"going to be superseded."* He asks for a rethink every month.

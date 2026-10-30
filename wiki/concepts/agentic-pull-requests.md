@@ -3,9 +3,9 @@ type: concept
 title: Agentic pull requests
 aliases: ["agentic pull requests", "agentic PRs", "agent-authored PRs", "Agentic-PR", "auto-merge", "AI code review"]
 confidence: 0.85
-last_confirmed: "2026-10-03"
-source_count: 17
-accessed_at: "2026-10-03"
+last_confirmed: "2026-10-30"
+source_count: 18
+accessed_at: "2026-10-30"
 tags: [agentic-pr, aidev, auto-merge, code-review, rejection-rate, risk-scoring, msr-2026, merge-queue, review-bottleneck, technical-debt]
 relationships:
   - type: part-of
@@ -117,3 +117,13 @@ What the deck does not report is the outcome: how many reviews found something r
 ## One firm's agent share of authoring and review (added 2026-09-28)
 
 [[2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved|Geoff Charles, Ramp CPO, at Lenny and Friends Summit (Sept 2026)]] gives both halves of the pipeline at one company. Authoring: Ramp's in-house coding agent Inspect builds *"75% of our PRs"*, with about a thousand PRs in a month *"submitted by a non-engineer"*. Review: a review agent, Review Buddy, reads the codebase, the quality and security checks and *"all the prompts that led you to build that code"*, and *"93% of our PRs are now automatically handled"*, so senior engineers spend their time on the remaining 7%. The talk does not define "handled" (approved, commented or routed), and the figures are self-reported. The structure matches the "bottleneck moved" argument above: once authoring was automated, review was automated next, and testing (a QA agent) after that.
+
+## Seven months of the same reviewer (added 2026-10-30)
+
+[[2026-10-24-skidmore-cloudflare-connect-build-not-buy|Skidmore (Cloudflare Connect, Oct 2026)]], who built Cloudflare's reviewer, updates the 30-day figures above. Telemetry from 10 March to 12 October 2026 (costs at list price; the two medians are since 5 October only):
+
+| Reviews | Merge requests | Repos | Median time | Median cost |
+| ---: | ---: | ---: | ---: | ---: |
+| 1,024,037 | 345,797 | 6,907 | 1 min 34 s | $0.67 |
+
+His slide also breaks down the first month, which the Investor Day deck did not: **1.2 findings per review** (159,103 in total), most of them code quality (74,898), with security at 11,985, *"4% of them critical."* It has blocked about 16,000 merges in four months. Early versions flagged everything; flagging less made people act on more, he says, without a figure. Its stated limits are architecture, cross-system impact, timing races and very large diffs, and *"it doesn't replace human code review."* Correctness of findings and change failure rates are still unreported.

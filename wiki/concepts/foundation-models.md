@@ -3,9 +3,9 @@ type: concept
 aliases: ["foundation model", "foundation models", "FM", "frontier model", "frontier models"]
 tags: [foundation-models, generative-ai, ai-research]
 confidence: 0.88
-last_confirmed: "2026-10-25"
-accessed_at: "2026-10-25"
-source_count: 45
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 46
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -237,3 +237,7 @@ Two McKinsey sources from the same week add to the *cost per task* and *open wei
 ## Robotics foundation models are bound by data (added 2026-10-25)
 
 [[2026-10-20-gao-huang-sequoia-training-data-mecka-robot-data-factory|Gao (Mecka) on Sequoia's Training Data (Oct 2026)]]: robot learning needs *"pixels… actions, and… logic,"* and there was no free corpus of it, so robotics pre-training data is becoming *"quite a large market"* in a way LLM pre-training data never was. The mix the industry has converged on, by his account: about a million hours of first-person human video, tens of thousands of hours from handheld demonstration grippers, and a few hours of teleoperation in the target setting; tactile and simulation data are still to be added. The field is in *"millions of hours,"* against Tesla's decade of driving data for *"two degrees of freedom"*; a robot hand has dozens. On whether general frontier models will absorb robotics: their recent gains on robot tasks are *"actually quite expected,"* because robot data now sits in their pre-training mix, while specialised models may reach production reliability on particular tasks first.
+
+## Scale, and a narrowing gap between labs (added 2026-10-30)
+
+[[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: Hämäläinen says compute going into training grows four to five times a year and algorithmic efficiency three times, and that the performance gap between OpenAI, Anthropic and Google *"has halved in the last year,"* leaving differences such as *"tonality"*. Catlin puts US capital expenditure at about $7 trillion for 2026–2030. Neither figure has a source in the episode. [[2026-10-28-hack-klein-browserbase-navigators-clickup-why-agents-keep-failing|Hack (ClickUp, on Navigators, Oct 2026)]] says the gap between top labs and open-source Chinese labs *"has really shrunk,"* and expects a frontier model on top with specialised models beneath it.

@@ -3,9 +3,9 @@ type: concept
 aliases: ["expert generalist", "Expert Generalist", "expert generalists", "generalist-specialist blend"]
 tags: [expert-generalist, generalist-vs-specialist, t-shaped, fundamentals-over-tools, patterns, mechanical-sympathy, durable-skills, distributed-systems-fundamentals, hiring, llms-and-skills]
 confidence: 0.90
-last_confirmed: "2026-10-25"
-accessed_at: "2026-10-25"
-source_count: 12
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 13
 relationships:
   - type: supports
     target: durable-skills
@@ -98,3 +98,7 @@ That is the expert-generalist thesis stated as a complementarity result: breadth
 ## The builder role (added 2026-10-25)
 
 [[2026-03-31-roslansky-smith-tools-and-weapons-open-to-work|Roslansky (LinkedIn) on Tools and Weapons (Mar 2026)]]: LinkedIn has created a **builder** role that combines what were four siloed roles in software production (product manager, product marketer, designer, front-end engineer), because with AI tools one person can take a product *"from start to finish,"* and the communication path between silos was what slowed the company. It also opened an **associate builder** entry route for people *"maybe not even going to college at all."* Product managers who stay PMs now write evals rather than specs. The same move as Microsoft engineers told they are now *"product builders"* ([[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart|George]]).
+
+## "Designers are becoming more full stack" (added 2026-10-30)
+
+[[2026-10-26-schwaibold-epstein-yc-new-full-stack-designer|Schwaibold (Shopify) on YC's Design Review, Oct 2026]]: *"Designers are becoming more full stack. As are engineers and PMs. It goes in every which way."* The evidence offered is his own working demos and *"one-off armies or teams of two."* The demos live in a playground outside Shopify's production code.

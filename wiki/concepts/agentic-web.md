@@ -4,9 +4,9 @@ title: Agentic web
 aliases: ["agentic web", "agentic Internet", "agentic internet", "zero-click", "zero-click search", "Google Zero", "AI crawlers", "AI crawler traffic", "content licensing for AI", "pay-per-crawl", "agentic commerce", "machine payments", "x402", "agent identity", "Web Bot Auth"]
 tags: [agentic-web, aeo, answer-engines, agentic-internet, zero-click, google-zero, referral-traffic, ai-crawlers, training-crawlers, bot-traffic, content-licensing, pay-per-crawl, x402, web-bot-auth, agentic-commerce, open-web, publishers, search-to-answers, browser-agents, computer-use, agent-authentication]
 confidence: 0.75
-last_confirmed: "2026-10-18"
-accessed_at: "2026-10-18"
-source_count: 11
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 13
 relationships:
   - type: depends-on
     target: ai-agents
@@ -131,6 +131,7 @@ The response from the agent side is to partner rather than fight. Meta, *"Turnin
 - **Is AEO measurement, or a vendor's model of the engines?** The AEO claims (mentions across the web as the main factor, the citation shares by source type) come from HubSpot/XFunnel's own analysis without method, and the outcome figures (+170% MQLs, +82% closed deals for adopters) do not separate what AEO did from which customers chose to adopt it. The persona × stage prompt matrix is a method; the ranking factors are a vendor's claim. **Open** until an independent study of what AI answers cite is ingested.
 - **Who captures the relationship?** Ognibeni and DFI frame the agent as a disintermediator that takes over the customer relationship. Cloudflare frames itself as a neutral market maker that keeps publishers paid. These are different predictions about where value settles: with the agent operator, the infrastructure layer, or the content owner. The corpus cannot yet distinguish them. [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet|Collison]] (Oct 2026) adds a fourth: AI discovery becomes the new aggregator but widens reach for the long tail of sellers under it. [[2026-09-14-klein-browserbase-navigate-2026-keynote-agents-will-use-the-internet|Klein (Browserbase, Sep 2026)]] adds a fifth candidate: the issuer of agent identity, which vouches for agents to sites and negotiates their access. [[2026-10-17-roth-verge-websites-closing-doors-to-ai-agents|The Verge (Oct 2026)]] shows the largest merchant refusing to cede it at all: Amazon blocks outside agents and litigates, while Meta settles access retailer by retailer.
 - **Rebuild the web, or teach agents the old one?** Cloudflare's sources describe new rails on the site side (pay-per-crawl, x402). [[2026-09-14-klein-browserbase-navigate-2026-keynote-agents-will-use-the-internet|Klein]] argues agents should use the web as it is, through browsers, without waiting for APIs or MCP servers. [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet|Collison]] makes the same DMV argument at the same conference. Web Bot Auth sits between the two: pages stay as they are, but the site or its CDN must verify signatures. Both positions come from vendors whose products depend on the answer. Section 10 adds what neither vendor controls: sites deciding whether to let agents in at all, by policy, by lawsuit, or by bot defences that catch them by accident. **Open.**
+- **Rails or browsers, restated (added 2026-10-30).** [[2026-10-25-tremante-cloudflare-connect-open-agentic-internet|Tremante (Cloudflare Connect, Oct 2026)]] and [[2026-10-28-hack-klein-browserbase-navigators-clickup-why-agents-keep-failing|Hack (ClickUp, on Navigators, Oct 2026)]] give the two positions in the same month: a crawl endpoint, index and payment on the site side, or a browser and credentials on the agent side. Each speaker's firm sells its route.
 
 ## Related concepts
 
@@ -154,3 +155,13 @@ The response from the agent side is to partner rather than fight. Meta, *"Turnin
 - [[2026-10-14-longo-marchiaro-hubspot-unbound-ai-transforming-search]] — the three eras of the web (human, LLM, agentic) running at once; consumer-readiness survey; Human Security's agent-traffic figures.
 - [[2026-10-13-romeo-bloomberg-new-economy-wrong-ai-race]] — from human attention to machine permission; license plates for agents.
 - [[2026-10-17-roth-verge-websites-closing-doors-to-ai-agents]] — the access side, from a newsroom: sites blocking consumer agents for licensing and security, Amazon v. Perplexity, anti-bot systems catching agents, and Meta's retailer partnerships.
+- [[2026-10-25-tremante-cloudflare-connect-open-agentic-internet]] — bot share, crawl-to-referral by company, a publisher traffic table, x402 sequence, Monetization Gateway and Pay Per Use.
+- [[2026-10-28-hack-klein-browserbase-navigators-clickup-why-agents-keep-failing]] — a browser and credentials as the integration of last resort.
+
+## Bot share, crawl ratios, and two ways of being paid (added 2026-10-30)
+
+[[2026-10-25-tremante-cloudflare-connect-open-agentic-internet|Tremante (Cloudflare Connect, Oct 2026)]] gives 66.0% of HTML page requests as bots on Cloudflare Radar, and crawl-to-referral ratios by company (Perplexity 3.4K : 1, OpenAI 606.5 : 1, Anthropic 486.6 : 1, Google 4.4 : 1; tables on the source page). A Nieman Lab table on his slide shows ten technology publications down 30–97% from peak by January 2026.
+
+He separates two payment models. The **Monetization Gateway** charges at access through HTTP 402 and x402, with cryptographic proof, and is in private beta. **Pay Per Use** pays on each reuse of crawled content, depends on trust and a bidding system, and is still in development, because a provider *"only needs to crawl you once."* Before payment come a `/crawl` endpoint for signed bots, an opt-in open index, and new-domain signals, which he says surfaced several million domains for OpenAI. He also names the leak: agents that subscribe, crawl and resell.
+
+[[2026-10-28-hack-klein-browserbase-navigators-clickup-why-agents-keep-failing|Hack (ClickUp, on Navigators, Oct 2026)]] is the other route: *"give the agent a browser, give it your credentials,"* for systems with no integration. Klein, the host, calls agent identity on the web a matter of people and policy.

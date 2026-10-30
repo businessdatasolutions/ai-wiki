@@ -3,9 +3,9 @@ type: concept
 aliases: ["strategy", "business strategy", "corporate strategy", "competitive strategy"]
 tags: [strategy, strategic-planning, value-creation, value-capture, theory-of-winning, playing-to-win, value-stick, roger-martin, felix-oberholzer-gee, harvard-business-review]
 confidence: 0.92
-last_confirmed: "2026-10-25"
-accessed_at: "2026-10-25"
-source_count: 21
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 22
 relationships:
   - type: supports
     target: strategic-foresight
@@ -309,3 +309,7 @@ Confidence unchanged at 0.92. This is first-party consulting research promoting 
 - customer reach and contracts.
 
 His example is an unnamed technology conglomerate whose most valuable AI asset turned out to be its game consoles and their community of players. On strategy itself, he asks for *"a point of view that you would be comfortable taking to your investors"*, written as two to three pages of plain text, before any portfolio of use cases.
+
+## Three waves of AI value (added 2026-10-30)
+
+[[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: Antoine Montard separates productivity (table stakes), innovation (*"where growth and value creation will be the most acute"*, and largely *"remains to be created"*) and lower transaction costs, which question business models built on *"aggregation, brokering, intermediation"* and move control points along value chains. His closing advice is ambidexterity across time scales. Hämäläinen makes technology architecture a CEO decision: *"It's not a CIO topic."*

@@ -5,9 +5,9 @@ aliases: ["Browserbase", "Browserbase Inc."]
 tags: [browserbase, headless-browser, computer-use, agent-infrastructure, navigate-2026, navigators, youtube-channel]
 website: "https://www.browserbase.com"
 confidence: 0.8
-last_confirmed: "2026-10-12"
-accessed_at: "2026-10-12"
-source_count: 3
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 4
 ---
 
 # Browserbase
@@ -29,3 +29,7 @@ Promoted to an entity page on 12 October 2026, when the Browserbase channel beca
 ## Reading this channel
 
 Browserbase sells infrastructure for agents that use websites, and its guests are often its customers or partners (Collison says Browserbase is *"well on its way to becoming a huge Stripe company"*). Its talks argue that agents will use the web at scale and that computer use is the way they will do it. Treat claims on that thesis as coming from an interested party. The host also states a position in the Fireflies episode: *"every application layer company becomes an infrastructure company,"* and usage pricing is *"aligned to customer incentives."*
+
+## ClickUp's head of AI on Navigators (added 2026-10-30)
+
+[[2026-10-28-hack-klein-browserbase-navigators-clickup-why-agents-keep-failing|Hack (ClickUp, on Navigators, Oct 2026)]]: Paul Klein IV interviews Jay Hack, whose all-company demo had an agent order a pizza through Stagehand and Browserbase.

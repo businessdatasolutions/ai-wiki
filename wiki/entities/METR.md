@@ -4,9 +4,9 @@ kind: organization
 aliases: ["METR", "Model Evaluation and Threat Research"]
 tags: [metr, ai-evaluation, ai-benchmarks, ai-safety, reward-hacking, rct, developer-productivity, task-horizons, re-bench, hcast]
 confidence: 0.8
-last_confirmed: "2026-08-30"
-accessed_at: "2026-09-15"
-source_count: 6
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 7
 relationships:
   - type: employs
     target: Elizabeth-Barnes
@@ -62,3 +62,7 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "metr")
 SORT file.name ASC
 ```
+
+## Time horizons on a conference slide (added 2026-10-30)
+
+[[2026-10-24-skidmore-cloudflare-connect-build-not-buy|Skidmore (Cloudflare Connect, Oct 2026)]] charts Time Horizon 1.1: 12 hours for Claude Opus 4.6, a 16-hour limit for a reliable score, and later models *"not measured."*

@@ -6,9 +6,9 @@ tags: [harrison-chase, langchain, langgraph, langsmith, langchain-labs, deep-age
 affiliation: "[[LangChain]]"
 role: "Co-founder and CEO, LangChain (since 2022)"
 confidence: 0.85
-last_confirmed: "2026-10-05"
-accessed_at: "2026-10-05"
-source_count: 8
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 9
 ---
 
 # Harrison Chase
@@ -126,3 +126,7 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "harrison-chase") OR contains(tags, "langchain")
 SORT file.name ASC
 ```
+
+## Agents that improve over time (added 2026-10-30)
+
+[[2026-10-27-chase-langchain-interrupt-london-agents-improve-over-time|Chase (Interrupt London, Oct 2026)]]: fully automated improvement is *"maybe the North Star or the Holy Grail,"* and *"I don't think we're there right now by any stretch of the imagination."*

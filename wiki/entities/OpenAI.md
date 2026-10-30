@@ -7,7 +7,7 @@ since: 2015
 confidence: 0.95
 last_confirmed: "2026-10-18"
 accessed_at: "2026-10-18"
-source_count: 54
+source_count: 58
 relationships:
   - type: published-by
     target: 2025-10-05-patwardhan-et-al-openai-gdpval

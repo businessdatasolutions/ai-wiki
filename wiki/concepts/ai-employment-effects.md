@@ -3,8 +3,8 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-10-25"
-source_count: 109
+last_confirmed: "2026-10-30"
+source_count: 110
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -12,7 +12,7 @@ relationships:
   - type: caused
     target: ai-deskilling
     via: "task-composition shift is one mechanism within broader employment effects"
-accessed_at: "2026-10-25"
+accessed_at: "2026-10-30"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -739,3 +739,7 @@ Richardson, a week later, proposes the unit Karunakaran questions (see *Debates*
 ## "Managers on day one" (added 2026-10-25)
 
 [[2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder|Diasio (EY) on WorkLab (Dec 2025)]] predicts a change in the entry-level path, not its disappearance: *"the corporate ladder used to be that you took a job and you worked hard by building credibility and experience. And ultimately if you did that really well, you became a manager… today, the corporate ladder is being completely kicked over. People that will join companies next year will be managers on day one,"* of *"an agentic-based workforce, one that is extremely powerful and sometimes clumsy."* On knowledge work in general, after an initial *"shock and awe"* he holds that *"the knowledge worker is just totally underrated in this moment."* For consultants, he expects the role to move from producing content to being *"a creator"* who uses agents. This is a prediction for 2026, made in December 2025 by an executive of a 400,000-person employer, with no hiring data attached.
+
+## Thirty per cent of work, and a disagreement among partners (added 2026-10-30)
+
+[[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: Sandra Durth says 30% of current work could be done more economically by technology, spread across every job rather than removing whole ones. Lari Hämäläinen offers 100,000 employees becoming 50,000 plus 500,000 agents in three years as *"a viable scenario."* Antoine Montard argues from Keynes that productivity expands demand and creates jobs. Hämäläinen challenges him: *"If you've been a call center agent for 30 years, are you the one who's going to drive innovation?"* Catlin expects outsourced work may be cut first. Durth says academics range *"from black to white"* because their assumptions differ. A figure of *"75%"* of the workforce in the episode has no stated basis.

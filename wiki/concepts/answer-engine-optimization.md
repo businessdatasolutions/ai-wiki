@@ -4,9 +4,9 @@ title: Answer engine optimization
 aliases: ["answer engine optimization", "answer engine optimisation", "AEO", "generative engine optimization", "generative engine optimisation", "GEO", "AI search optimization", "LLM visibility", "AI visibility", "brand visibility in AI answers"]
 tags: [aeo, geo, seo, answer-engines, ai-search, citations, brand-visibility, share-of-voice, prompt-tracking, consensus, earned-media, entity-richness, bot-accessibility, buyer-journey]
 confidence: 0.75
-last_confirmed: "2026-10-15"
-accessed_at: "2026-10-15"
-source_count: 6
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 7
 relationships:
   - type: part-of
     target: agentic-web
@@ -140,3 +140,7 @@ The loop is iterative: define the brand, find gaps, create, publish across chann
 - [[2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet]] — the publisher's opposite choice: blocking crawlers to price access.
 - [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet]] — AI discovery as the new aggregator for commerce, from the payments side.
 - [[2026-10-14-longo-marchiaro-hubspot-unbound-ai-transforming-search]] — the engine owner's view: Clarity's citation rate and share of authority, product feeds, paid placement in AI answers.
+
+## Agent optimisation, from the proxy's side (added 2026-10-30)
+
+[[2026-10-25-tremante-cloudflare-connect-open-agentic-internet|Tremante (Cloudflare Connect, Oct 2026)]]: asked whether publishers must structure content specially, he says markdown is what agents accept and lighter to serve, that large publishers keep agent-optimised alternatives, and that this optimisation is the new SEO. Cloudflare's `/crawl` endpoint generates markdown for smaller sites. He is selling that endpoint.

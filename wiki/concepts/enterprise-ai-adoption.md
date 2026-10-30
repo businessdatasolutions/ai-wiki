@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-10-25"
-accessed_at: "2026-10-25"
-source_count: 162
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 164
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -1008,3 +1008,8 @@ Three sources from the batch, from a consultant, an author and a CEO.
 - **Inside EY.** EY reports more than $1 billion invested in a year. Its **Client Zero** programme applies EY's methods to EY first, a CEO-level owner cascades priorities to every geography, and a curriculum for all staff raised engagement scores. He also cites a poll: about 85% of employees *"really excited for agentic AI"* and 86% learning it *"on their own,"* *"broadly across workers,"* with no method given.
 
 This is EY's own account, given on the podcast of the company that co-runs the Frontier Firm initiative EY belongs to. On whether a playbook exists yet, see the Debates bullet *"Is there a playbook yet?"* above.
+
+## Three lenses for CEOs, and official adoption by firm size (added 2026-10-30)
+
+- [[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: four partners read AI through strategy, technology and organisation together, since *"it is not often that your CIO, your CEO, your head of strategy, your head of HR really spend some quality time together."* Deploying tools yields about *"20 cent of dollar"* of the value; the rest needs redesigned workflows, most of which *"have not [been] codified."* Hämäläinen says the returns so far have come from the internet's backbone and programming and that *"will enterprise AI be the next step function?"* is open.
+- [[2026-10-26-rendtorff-smith-chin-bcg-creating-ai-value-adoption|Rendtorff-Smith (OECD) with Chin (BCG), Oct 2026]]: firms using AI went from **8.7% to 20%** between 2023 and 2025, with more than **50%** of big firms against about **17%** of smaller ones. The bottlenecks are skills, data and *"organizational and managerial processes."* VC into AI was about $260 billion in 2025, 61% of the global total. The dataset is not named in the video.

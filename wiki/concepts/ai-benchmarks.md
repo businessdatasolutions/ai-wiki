@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI benchmark", "AI benchmarks", "AI evaluation", "AI evals"]
 tags: [ai-benchmarks, ai-evaluation, foundation-models, capability-reliability-gap, scar-fragmentation]
 confidence: 0.92
-last_confirmed: "2026-10-25"
-accessed_at: "2026-10-25"
-source_count: 36
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 38
 relationships:
   - type: depends-on
     target: reward-hacking
@@ -254,3 +254,9 @@ This is the scar-fragmentation problem from [[2026-03-20-huggingface-agentic-eva
 ## Your own tasks as the benchmark (added 2026-10-25)
 
 [[2026-10-19-lloyd-warp-what-it-takes-to-build-a-software-factory|Lloyd (Warp, Oct 2026)]] argues that public coding benchmarks are the wrong instrument for choosing a setup: *"instead of using SWE-bench or Terminal-Bench, prove to yourself that you have the right setup."* Because every agent session is recorded, hard or typical tasks can be added to an internal benchmark suite and replayed against different model and harness configurations, producing a correctness-against-cost curve for the firm's own work. Lloyd's caution about the public conversation: *"It's hard to tell who has a conflict of interest when they're talking about things."* A vendor selling the tooling for it.
+
+## Evals as the product definition, and a benchmark that topped out (added 2026-10-30)
+
+- [[2026-10-27-chase-langchain-interrupt-london-agents-improve-over-time|Chase (Interrupt London, Oct 2026)]]: evals are *"the new PRD,"* because AI has too many edge cases for a document. Good can mean an exact match, criteria on the answer, the end state of the environment, or the sequence of tool calls, and it is *"best done by domain experts."* You also need an environment that is not production.
+- [[2026-10-28-hack-klein-browserbase-navigators-clickup-why-agents-keep-failing|Hack (ClickUp, on Navigators, Oct 2026)]]: *"Step one, you got to have evals."*
+- [[2026-10-24-skidmore-cloudflare-connect-build-not-buy|Skidmore (Cloudflare Connect, Oct 2026)]] charts [[METR]]'s time horizon on a slide: GPT-4 at 4 minutes, Claude Opus 4.6 at 12 hours, and Opus 5 and 5.5 *"not measured"* because the suite's reliable limit is 16 hours. [[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]] quotes similar task lengths with no source: about 10 hours this year, with a threshold of about five hours crossed last autumn.

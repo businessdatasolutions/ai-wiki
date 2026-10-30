@@ -3,9 +3,9 @@ type: concept
 title: AI coding productivity — the evidence
 aliases: ["AI coding productivity", "AI developer productivity", "developer productivity evidence", "productivity paradox in coding", "throughput vs stability"]
 confidence: 0.85
-last_confirmed: "2026-10-08"
-source_count: 12
-accessed_at: "2026-10-08"
+last_confirmed: "2026-10-30"
+source_count: 14
+accessed_at: "2026-10-30"
 tags: [rct, productivity, metr, copilot, dora, throughput, delivery-stability, perception-gap, heterogeneity, seniority, measurement]
 relationships:
   - type: part-of
@@ -133,3 +133,8 @@ The deck's economic conclusion, *"it's now cheaper to rebuild a legacy app from 
 - [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Lenk (Instacart Economics)]] measures use in one firm's engineering and data-science teams with free access: regular agentic-AI use rose from about 3.5 to about 10 days a month over 2025. Teams whose first heavy user emerged earlier produced more experiments, with about 30% of experimental output attributed to agentic AI, launches rising in proportion, and a lower share of unresolved tickets. Output is counted in experiments and tickets, not in time saved or code quality.
 
 Both describe low effective use despite access, which limits how far the productivity effects on this page reach in practice. Confidence unchanged.
+
+## A reported reversal, and review waits (added 2026-10-30)
+
+- [[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: Lari Hämäläinen says developers at organisations he works with measured −20%, then +20% this February, the same group, with many then refusing to work without AI. He attributes it to a new model; Tanguy Catlin adds that *"the system is adjusting,"* and says redesigned workflows go well above 20%. No study is named. The −20% is close to [[2025-07-10-becker-metr-early-2025-ai-experienced-developer-productivity|METR (2025)]], but the episode does not make that link.
+- [[2026-10-24-skidmore-cloudflare-connect-build-not-buy|Skidmore (Cloudflare Connect, Oct 2026)]]: median wait for a first review at Cloudflare went from *"hours"* to *"minutes"*, self-reported and with no before-and-after numbers.

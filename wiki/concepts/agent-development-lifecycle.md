@@ -3,9 +3,9 @@ type: concept
 aliases: ["agent development lifecycle", "ADLC", "agent SDLC", "agent lifecycle"]
 tags: [agent-development-lifecycle, adlc, ai-agents, agent-engineering, lifecycle-frameworks, sdlc-parallel, build-test-deploy-monitor, agent-governance, evals, llm-as-judge]
 confidence: 0.88
-last_confirmed: "2026-10-11"
-accessed_at: "2026-10-11"
-source_count: 28
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 29
 relationships:
   - type: part-of
     target: ai-agents
@@ -303,6 +303,7 @@ SORT file.name ASC
 - **Does the Compounding loop deserve its own stage?** The wiki's [[agent-harness|agent-harness]] page names it as the fourth Chatterjee layer; Chase's Monitor + Iterate phases together cover it; Google's 9-stage wheel elides it. Open question: does it become a named stage in subsequent ADLC formalizations.
 - **Small-N eval reports and failed judges (added 2026-10-01).** [[2026-09-30-zamora-feroz-why-your-ai-agent-fails-in-production|Zamora & Feroz]] present a 0.33 documentation-quality score as the blind spot the scorecard caught. Their own heatmap shows it rests on three scored answers, with one answer unscored and one judge failing on every question; the failing metric is also missing from the summary table. Nothing in the Test-phase literature on this page says what a report should do with judge errors: drop the cell, count it as a fail, or block the run. The one demonstrated default, silently dropping it, changes the headline number. Open question for the Test phase.
 - **Can the Monitor → Build hop be automated, and how would anyone know? (open, 2026-10-05)** [[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote|LangChain's Engine v2]] claims to cluster production issues, propose fixes, test them on a preview deployment and add evals. The only figures are the vendor's: *2x better finding* on "IssueBench", *25% better fixes* on Terminal Bench, *40% lower cost*, *70M traces scanned* and *>21K issues detected*. No baseline or method is given, and no false-positive rate. The page has no independent measurement of an automated Iterate step. The slide and the speech also disagree on whether an issue is confirmed in production or on a preview branch. Same-vendor restatement of the loop, so confidence is unchanged.
+- **Who judges correctness? (open, 2026-10-30)** [[2026-10-27-chase-langchain-interrupt-london-agents-improve-over-time|Chase (Interrupt London, Oct 2026)]] says there is no universal judge; if there were, it would run inside the agent loop. His red teaming tests consistency between similar queries, which finds that one answer is wrong without settling which.
 
 ## From traces to environments (added 2026-10-11)
 
@@ -312,3 +313,7 @@ SORT file.name ASC
 - **Environment-backed evaluation.** Input→output evals are *"the shallow way"*; failures often depend on database state, permissions, schemas and past actions. The proposed unit is a **world spec** (tools, domain rules, prompts and skills, shared graders) plus a **task spec** (request, initial state, expected outcome, allowed actions), scored on the environment's final state. Production traces become task candidates after deduplication, leakage removal, difficulty calibration and human review.
 
 A fix is a harness change or a model change (SFT, distillation, RL), validated by re-running the same task, held-out variants and regression tasks.
+
+## The flywheel, and finding mistakes before users do (added 2026-10-30)
+
+[[2026-10-27-chase-langchain-interrupt-london-agents-improve-over-time|Chase (Interrupt London, Oct 2026)]] gives the loop as: run the agent, get feedback, inspect the trace, add an eval data point so as not to regress, then change weights, harness or context. LangSmith Engine automates part of it with a human approving. Production traces only show mistakes that have already happened and domain experts are costly, so he adds red teaming. *"We don't have a universal judge for correctness,"* so one method sends two semantically similar queries and investigates when the answers differ. He calls a fully self-improving agent *"very much a North Star vision."* No outcome figures are given.

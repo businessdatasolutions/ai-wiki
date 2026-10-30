@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-10-11"
-accessed_at: "2026-10-11"
-source_count: 47
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 48
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -389,3 +389,7 @@ For organisations deploying AI this is the `contextual/external-triggers` side o
 ## Public demand for regulation and assurance (added 2026-10-11)
 
 [[2025-04-28-gillespie-kpmg-trust-attitudes-and-use-of-ai-2025|Gillespie et al. 2025]] (48,340 respondents, 47 countries) measures the public side. **70%** say AI regulation is needed, only **43%** think current laws are adequate, and **87%** want laws against AI-generated misinformation. International regulation is the most endorsed form. Four in five would trust an AI system more with assurance mechanisms in place (human oversight, monitoring, responsible-AI policies and training, standards, independent assurance). In the authors' trust model, the **institutional pathway** (perceived adequacy of safeguards and confidence in the entities developing AI) has the strongest influence on trust. KPMG, which funds the study, sells AI assurance; the university team states it ran the research independently.
+
+## Governance as an enabler, from the OECD (added 2026-10-30)
+
+[[2026-10-26-rendtorff-smith-chin-bcg-creating-ai-value-adoption|Rendtorff-Smith (OECD) with Chin (BCG), Oct 2026]]: the tension between innovation and safety is *"often presented as a tension,"* but *"safety, governance, policy is really an enabler."* The OECD backs no single approach, and she points to sandboxing and to Singapore's voluntary guidelines as routes. She speaks for the body that wrote the AI principles.

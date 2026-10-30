@@ -4,9 +4,9 @@ title: Technology adoption theories
 aliases: ["technology adoption theories", "adoption theories", "classical adoption theories", "TAM", "Technology Acceptance Model", "UTAUT", "UTAUT2", "Unified Theory of Acceptance and Use of Technology", "diffusion of innovations", "Diffusion of Innovation", "DOI theory", "Rogers' diffusion of innovations", "TOE framework", "technology-organization-environment", "technology–organization–environment framework"]
 tags: [adoption-theory, tam, utaut, diffusion-of-innovations, rogers, toe-framework, tornatzky-fleischer, information-systems-research, firm-level, individual-level, ai-adoption]
 confidence: 0.85
-last_confirmed: "2026-10-17"
-accessed_at: "2026-10-17"
-source_count: 8
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 10
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -102,3 +102,8 @@ In the Q&A, Karunakaran adds why peers matter more for generative AI than for ER
 ## The diffusion gap, told by an investor (added 2026-10-17)
 
 [[2026-10-15-lin-stanford-ai-club-building-in-the-ai-era|Alfred Lin (Sequoia) at the Stanford AI Club (Oct 2026)]] argues that AI spreads faster than earlier megatrends because it is *"connected to 8 billion people,"* but *"it still takes a long time."* His worked case: in the 1990s he predicted Amazon would kill Walmart; Walmart is now *"30 times larger than it was in 1997,"* and *"Amazon last year was the first year that they had more revenue than Walmart."* *"What's the slowest thing to move in technology? The humans that work with it."* His mechanism is abstraction: each technology diffuses by building layers that take users further from the machine, from machine code onward, and building those layers is *"one of the most underestimated things"* a technologist does. He calls the distance between what models can do and what people use them for the **diffusion gap**, expects it to widen, and treats the application layer as the work of closing it. In this page's terms that is DOI's *complexity* attribute: applications lower the complexity an adopter faces. An anecdote from memory, not a study; the revenue comparison is his.
+
+## General-purpose technology, and absorption (added 2026-10-30)
+
+- [[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: Montard's history runs from steam and electricity through Solow's 1987 line to e-commerce (about 20 years to 10% of retail): *"the technology becomes available very quickly, but the full … economic impact … take[s] quite a bit of time."*
+- [[2026-10-26-rendtorff-smith-chin-bcg-creating-ai-value-adoption|Rendtorff-Smith (OECD) with Chin (BCG), Oct 2026]]: *"can you absorb it? As you absorb it, what value do you create?"* She treats absorption as a separate stage from access.

@@ -5,9 +5,9 @@ aliases: ["Anthropic", "Anthropic PBC", "Claude"]
 tags: [anthropic, ai-lab, foundation-models, claude, public-benefit-corporation, long-term-benefit-trust]
 since: 2021
 confidence: 0.95
-last_confirmed: "2026-10-03"
-accessed_at: "2026-10-03"
-source_count: 86
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 91
 ---
 
 # Anthropic
@@ -110,3 +110,7 @@ SORT file.name ASC
 ## Cited as its own customer (added 2026-09-28)
 
 [[2026-02-14-tan-yc-the-new-way-to-build-a-startup|Garry Tan's "20x company" episode]] opens with an Anthropic engineer's post that Claude wrote Claude Cowork and that developers each manage *"anywhere between three and eight Claude instances"*. Tan uses it as the example that sets his whole argument up.
+
+## Factory on the Claude channel (added 2026-10-30)
+
+[[2026-10-23-grinberg-gill-claude-factory-autonomous-software|Grinberg (Factory, on the Claude channel, Oct 2026)]]: Matan Grinberg credits Opus with less human oversight of plans. [[2026-10-25-tremante-cloudflare-connect-open-agentic-internet|Tremante (Cloudflare Connect, Oct 2026)]] shows Anthropic's crawl-to-referral ratio at 486.6 : 1 on Cloudflare Radar.

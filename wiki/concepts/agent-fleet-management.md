@@ -3,9 +3,9 @@ type: concept
 title: Agent fleet management
 aliases: ["agent fleet management", "managing agent fleets", "agent manager", "human as agent manager", "parallel agents", "agent orchestration at scale"]
 confidence: 0.75
-last_confirmed: "2026-10-25"
-source_count: 19
-accessed_at: "2026-10-25"
+last_confirmed: "2026-10-30"
+source_count: 21
+accessed_at: "2026-10-30"
 tags: [agent-fleet, parallelism, cloud-agents, isolated-workspaces, decision-fatigue, priority-queue, span-of-control, delegation, playbooks, token-economics]
 relationships:
   - type: part-of
@@ -131,3 +131,8 @@ The [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|HBS AI Insti
 
 - [[2026-10-19-lloyd-warp-what-it-takes-to-build-a-software-factory|Lloyd (Warp, Oct 2026)]]: interactive agents on each developer's laptop hit three limits: they are *"bottlenecked by people,"* their costs cannot be managed collectively, and there is *"no central layer for governing them"* (each developer runs their own MCPs, so a compromise acts as the logged-in user). Moving them into a cloud factory gives a live view of every agent run across the team, *"almost like Google Docs, but for your team's coding agents,"* and fleet metrics: human interactions per pull request, time to ship, and cost per pull request by user, agent and model.
 - [[2026-10-19-smith-cohen-techcrunch-disrupt-okta-nanoco-agent-security|Smith (Okta) & Cohen (NanoCo) at TechCrunch Disrupt (Oct 2026)]]: Gavriel Cohen runs *"probably 32 agents on a team"* and expects hundreds within months, calling agent teams *"probably a new scaling law"* after training and test-time compute. His rule for the fleet: every agent has an owner who takes *"ultimate responsibility for it."*
+
+## The dark factory, and agents as a cost base (added 2026-10-30)
+
+- [[2026-10-23-grinberg-gill-claude-factory-autonomous-software|Grinberg (Factory, on the Claude channel, Oct 2026)]]: Droids running *"lights off 24 hours a day"* would monitor a deployment, notice a fall in a completion rate, test in a sandbox, propose a fix, ping a person, deploy and monitor again. *"We're not fully there yet."*
+- [[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: at 500,000 agents, that cost base *"might be twice as large as your employee cost base."* If one vendor supplies them, *"somebody else would control your opex."*

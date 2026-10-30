@@ -4,9 +4,9 @@ kind: organization
 aliases: ["McKinsey", "McKinsey & Company", "McKinsey and Company", "QuantumBlack"]
 tags: [mckinsey, mgi, mckinsey-talks-operations, mckinsey-talks-talent, global-business-services, built-environment, management-consulting, quantumblack, ai-research, tech-ai-transformation, agent-augmented-workforce, outcome-underwriting, post-controversy-governance, future-arenas, omniscalers, skill-change-index, workforce-skills, corporate-venture-building]
 confidence: 0.95
-last_confirmed: "2026-10-25"
-accessed_at: "2026-10-25"
-source_count: 24
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 25
 relationships:
   - type: employs
     target: Roberta-Fusaro
@@ -103,3 +103,7 @@ SORT file.name ASC
 
 - [[2026-10-20-hamalainen-lala-takkar-mckinsey-economics-of-enterprise-ai|McKinsey's Explainer on the economics of enterprise AI (Oct 2026)]]: Lari Hämäläinen, Wasim Lala and Kaavini Takkar on token and consumption pricing, AI spend rising about four times from pilot to production, cost per successful outcome, and a bank's AI control plane. McKinsey's own use of Cursor is one of the examples. Hämäläinen dissents on whether AI is worth it for society.
 - [[2026-10-21-lewis-nadeau-mckinsey-strategy-room-frontier-ai-cybersecurity|Lewis & Nadeau (McKinsey, Inside the Strategy Room, Oct 2026)]]: Charlie Lewis (cybersecurity) and Marie-Claude Nadeau (risk and resilience) on attack timelines collapsing to under a day, the *diamond of overseers*, nth-party dependencies, quantum, and harness quality over model choice.
+
+## The 300th Inside the Strategy Room (added 2026-10-30)
+
+[[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: Tanguy Catlin, Sandra Durth, Lari Hämäläinen and Antoine Montard on three waves of value, workflow redesign and agents as a cost base, with partners disagreeing on the record about jobs.

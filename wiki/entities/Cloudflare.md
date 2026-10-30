@@ -1,14 +1,14 @@
 ---
 type: entity
 kind: organization
-aliases: ["Cloudflare", "Cloudflare, Inc.", "Cloudflare Inc", "NET"]
+aliases: ["Cloudflare", "Cloudflare, Inc.", "Cloudflare Inc", "NET", "Cloudflare Developers"]
 tags: [cloudflare, web-infrastructure, cdn, bot-management, ai-crawl-control, workers, isolates, agents-sdk, code-mode, x402, web-bot-auth, cloudflare-radar, agentic-internet]
 website: "https://www.cloudflare.com"
 since: 2009
 confidence: 0.75
-last_confirmed: "2026-10-18"
-accessed_at: "2026-10-18"
-source_count: 4
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 6
 ---
 
 # Cloudflare
@@ -51,3 +51,8 @@ These sources mention Cloudflare without linking here:
 ## Reported as one of the tools sites use against agents (added 2026-10-18)
 
 [[2026-10-17-roth-verge-websites-closing-doors-to-ai-agents|Roth (The Verge, Oct 2026)]] lists Cloudflare among the means by which sites *"clamp down on unwanted AI visitors"*: after its one-click block for AI crawlers in 2025, it began blocking crawlers that scrape for both search indexing and AI training at once, Google's mixed-use pattern described in the [[2026-07-01-cloudflare-content-independence-day-one-year-on-agentic-internet|one-year report]]. The article's analyst expects the result to be a more *"annoying"* web for people, with more checks that a visitor is human. The first source in the wiki on Cloudflare that is not Cloudflare's own.
+
+## Two Connect 2026 talks (added 2026-10-30)
+
+- [[2026-10-24-skidmore-cloudflare-connect-build-not-buy|Skidmore (Cloudflare Connect, Oct 2026)]]: Ryan Skidmore on the internal AI code reviewer (1,024,037 reviews since March, a median $0.67) and a build-or-buy grid.
+- [[2026-10-25-tremante-cloudflare-connect-open-agentic-internet|Tremante (Cloudflare Connect, Oct 2026)]]: Michael Tremante, VP and Field CTO, on crawl-to-referral ratios, the `/crawl` endpoint, an opt-in index, the Monetization Gateway, Pay Per Use and x402.

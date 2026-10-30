@@ -4,9 +4,9 @@ kind: organization
 aliases: ["Boston Consulting Group", "BCG", "BCG Henderson Institute"]
 tags: [BCG, management-consulting, henderson-institute]
 confidence: 0.85
-last_confirmed: "2026-10-25"
-accessed_at: "2026-10-25"
-source_count: 12
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 13
 ---
 
 # Boston Consulting Group
@@ -58,3 +58,7 @@ BCG's *Pitching Progress* podcast, hosted by Vinay Shandal, profiles climate com
 ## The So What on strategy over tools (added 2026-10-25)
 
 [[2026-10-20-beauchene-bcg-so-what-ai-strategy-more-than-rollout|Beauchene (BCG, The So What, Oct 2026)]]: Vinciane Beauchene, a former BCG managing director and partner now at Schneider Electric, presents BCG's *AI at Work* survey: three in four employees use AI regularly; strong tools with weak strategic guidance are *"five times less"* likely to produce measurable impact; and two BCG experiments, on human-AI forecasting and on calling AI a "worker" rather than a "tool."
+
+## With the OECD (added 2026-10-30)
+
+[[2026-10-26-rendtorff-smith-chin-bcg-creating-ai-value-adoption|Rendtorff-Smith (OECD) with Chin (BCG), Oct 2026]]: Vincent Chin interviews Sara Rendtorff-Smith on AI policy and adoption by firm size.

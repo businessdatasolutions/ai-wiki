@@ -3,9 +3,9 @@ type: concept
 aliases: ["vibe coding", "Vibe coding", "vibe-coding", "vibe-code", "v-coding"]
 tags: [vibe-coding, agentic-engineering, software-3.0, ai-agents, accessibility, hobbyist-coding, karpathy, pm-tooling, prototype-as-influence-tool, december-2025-phase-change, replit, ai-native-builders, post-prompting]
 confidence: 0.95
-last_confirmed: "2026-10-12"
-accessed_at: "2026-10-12"
-source_count: 30
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 32
 relationships:
   - type: instance-of
     target: software-3.0
@@ -117,6 +117,7 @@ The danger in conflating them: vibe-coded artifacts shipped to production *as if
 - **Is "vibe coding" a derogatory term or a legitimate mode?** When the term first spread on Twitter/X in 2024–25, some practitioners used it dismissively (*"that's just vibe coding, not real engineering"*). Karpathy's [[2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering|Sequoia framing]] resolves this: vibe coding is a *legitimate mode* (floor-raising democratisation) — the dismissive framing is misplaced because it conflates vibe coding with agentic engineering. The wiki adopts Karpathy's resolution.
 - **Does the December 2025 phase change generalise beyond Karpathy's experience?** ~~No second source has yet ingested a parallel first-person account.~~ *Partially answered* by [[2025-12-01-marily-nika-pms-who-use-ai-will-replace-those-who-dont|Nika 2025]] — a Google AI Product Lead doing the workflow live on camera in late November / December 2025, contemporary with Karpathy's named pivot. This isn't a survey or controlled study, but it is a second independent practitioner whose tool-stack is already trustworthy by the date Karpathy retroactively names. The remaining open question is whether a *population-level* signal (survey / empirical study) confirms it across professional audiences; the wiki now holds *two* practitioner anchors at the engineer (Karpathy) and PM (Nika) ends.
 - **Will vibe coding always need an [[agentic-engineering]] complement, or will model improvements close the gap?** Karpathy's view: *"I'm hoping that improves… there's nothing fundamental preventing it. It's just the labs haven't done it yet."* If labs add aesthetics-as-RL-reward and agent code stops being *bloaty / awkward / brittle*, the gap between vibe coding and agentic engineering narrows substantially. Open question.
+- **Does AI-built software replace bought SaaS? (added 2026-10-30)** [[2026-10-24-skidmore-cloudflare-connect-build-not-buy|Skidmore (Cloudflare Connect, Oct 2026)]] and [[2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free|Ramineni]] disagree, though Skidmore's cases are internal tools and Ramineni's is a system of record.
 
 ## Related concepts
 
@@ -170,3 +171,8 @@ The claim that vibe-coded quality gets *"worse and worse"* at scale cites unname
 [[2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free|Ramineni (Fireflies, Oct 2026)]] answers the replacement question from the vendor side. He cites *"the bloodbath in the public markets for SaaS companies"* and the view that *"a lot of this is just going to be replaced by some vibe-coded software"*, then: *"I don't think you can vibe code a CRM."* His analogy is storage: if that were true, *"a company like Dropbox or Box wouldn't exist because everyone would say, 'Oh, I'm just going to use an S3 storage bucket.'"* What is hard to replace, he says, is *"how much workflow business logic … needs to exist."* He leaves one case open: whether homebrew software is viable *"in the SMB or mid-market."*
 
 The corpus now holds three sources on this question. [[2026-07-07-sinofsky-amble-a16z-software-in-the-age-of-agents|Sinofsky (a16z)]] places the difficulty in undocumented exception handling, [[2026-09-08-gauch-bcg-so-what-will-ai-agents-replace-your-crm|Gauch (BCG)]] in the data backbone, regulation and security, and Ramineni in business logic. [[2026-07-06-sevilla-emarketer-custom-ai-coded-apps-trim-saas-expenses|Sevilla (EMARKETER)]] reports small firms that did replace Salesforce. The firm-size line that Sevilla draws is the same one Ramineni leaves open. Ramineni sells SaaS, so his answer is not neutral.
+
+## Personal software, and who owns it (added 2026-10-30)
+
+- [[2026-10-24-skidmore-cloudflare-connect-build-not-buy|Skidmore (Cloudflare Connect, Oct 2026)]]: *"we've now entered … a world of essentially personal software,"* and *"you can build it"* is almost always true, but a company of a thousand gets *"a thousand versions of slightly different but kind of the same software."* His grid has two buy cells and two build cells, and his answer on tech debt is that a tool may only need to last six months. *"Building got cheap, but owning it is still kind of a problem for now."* His case sits on the other side of the [[2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free|Ramineni]] answer above.
+- [[2026-10-26-schwaibold-epstein-yc-new-full-stack-designer|Schwaibold (Shopify) on YC's Design Review, Oct 2026]]: a designer's weekend projects run to 91 prompts on one carousel, in a playground that is not production code. *"It can write code, but it doesn't know what looks good."*

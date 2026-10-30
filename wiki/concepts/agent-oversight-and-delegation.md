@@ -3,9 +3,9 @@ type: concept
 title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
 confidence: 0.85
-last_confirmed: "2026-10-25"
-source_count: 32
-accessed_at: "2026-10-25"
+last_confirmed: "2026-10-30"
+source_count: 33
+accessed_at: "2026-10-30"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
   - type: part-of
@@ -233,3 +233,7 @@ His argument for why oversight has to be built rather than trusted borrows from 
 ## Human, agent, human, and a control layer (added 2026-10-25)
 
 [[2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder|Diasio (EY) on WorkLab (Dec 2025)]] puts the human at both ends of the work. Agents take *"the toil that nobody wants to do,"* but they *"are still subject to the same statistical sameness if you use them to do your critical thinking. So the real sequence of work should be human, agent, and then human."* At the level of the organisation, EY's blueprint gives autonomy its own layer: a control layer *"responsible for maintaining how much autonomy do you give these agents."* The same layer settles where agents are registered (*"in the HR master, or… some other registration?"*) and what they can access. At the level of the individual, delegation becomes a skill to train: *"giving agents instructions to be able to go do the work, and then critically evaluating if that happened in the appropriate way."* He asks the HR-master question without answering it. [[2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees|Kropp et al.]] tested experimentally what framing agents as employees does to managers' oversight.
+
+## Plans no one reads (added 2026-10-30)
+
+[[2026-10-23-grinberg-gill-claude-factory-autonomous-software|Grinberg (Factory, on the Claude channel, Oct 2026)]] names *"reducing human oversight"* as the biggest gain from Opus: you can trust plans *"to the point where you literally might not even look at them,"* and going back to one is *"a very crazy corner case."* A bad plan may only show *"billions of tokens down the line."* Trust, he says, builds as people see meaningful output from multi-day work. This is a vendor's account, on its supplier's channel, and it does not examine whether unread plans have gone wrong. [[2026-10-24-skidmore-cloudflare-connect-build-not-buy|Skidmore (Cloudflare Connect, Oct 2026)]] keeps a person in the loop: *"it doesn't replace human code review."*

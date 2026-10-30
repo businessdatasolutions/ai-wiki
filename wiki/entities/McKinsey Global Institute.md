@@ -7,9 +7,9 @@ website: "https://www.mckinsey.com/mgi"
 founded: 1990
 parent: "[[McKinsey & Company]]"
 confidence: 0.85
-last_confirmed: "2026-05-26"
-accessed_at: "2026-09-05"
-source_count: 4
+last_confirmed: "2026-10-30"
+accessed_at: "2026-10-30"
+source_count: 5
 relationships:
   - type: part-of
     target: McKinsey & Company
@@ -100,3 +100,7 @@ SORT file.name ASC
 - **MGI's GenAI June 2023 paper** (*The economic potential of generative AI: The next productivity frontier*) — cited as the theoretical prior for both 2025-2026 MGI reports' economic-value modelling. Open ingest target.
 - **MGI's 2017 baseline paper** (Manyika et al., *A Future That Works*) — the foundational methodology paper for the automation-and-adoption model used throughout subsequent reports. Open ingest target.
 - **Relationship to QuantumBlack** — Michael Chui is a *QuantumBlack senior fellow* on this Nov 2025 report; the boundary between QuantumBlack (McKinsey's AI-and-analytics arm) and MGI deserves a body note when a QuantumBlack-specific source is ingested.
+
+## Catlin on the CEO agenda (added 2026-10-30)
+
+[[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: Tanguy Catlin, an MGI director, speaks; the episode also mentions MGI's book *The Century of Plenty*.
