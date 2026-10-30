@@ -6,7 +6,7 @@ tags: [andrej-karpathy, ai-researcher, openai, tesla, eureka-labs, software-3.0,
 confidence: 0.92
 last_confirmed: "2026-09-19"
 accessed_at: "2026-09-19"
-source_count: 10
+source_count: 16
 relationships:
   - type: authored-by
     target: 2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering

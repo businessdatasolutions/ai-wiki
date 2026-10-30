@@ -5,7 +5,7 @@ tags: [knowledge-graphs, kg, graph-rag, ai-grounding, ontology, relational-data,
 confidence: 0.9
 last_confirmed: "2026-09-04"
 accessed_at: "2026-09-05"
-source_count: 12
+source_count: 17
 relationships:
   - type: part-of
     target: agent-harness

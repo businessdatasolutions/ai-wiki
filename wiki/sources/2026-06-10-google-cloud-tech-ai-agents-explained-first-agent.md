@@ -32,13 +32,13 @@ relationships:
 >
 > *— [Google Cloud Tech YouTube channel description](https://www.youtube.com/watch?v=Zqno_vux6d8)*
 
-An **~8½-minute developer tutorial** from the **Google Cloud Tech** channel (presenter named in the video as **Smitha**, 10 June 2026). It is the wiki's first source that pairs the **[[react-reasoning-acting|ReAct]] theory** with a **hands-on [[2026-04-22-cheung-ippolito-secchi-google-agents-cli|Google ADK]] build** — making it the practical, operational bookend to the [[2022-10-06-yao-et-al-react-synergizing-reasoning-acting|2022 ReAct paper]] ingested in the same batch. Where the paper proves the reason-act loop, this video shows a 2026 framework wiring it up in Python.
+An **~8½-minute developer tutorial** from the **Google Cloud Tech** channel (presenter named in the video as **[[Smitha Kolan|Smitha]]**, 10 June 2026). It is the wiki's first source that pairs the **[[react-reasoning-acting|ReAct]] theory** with a **hands-on [[2026-04-22-cheung-ippolito-secchi-google-agents-cli|Google ADK]] build** — making it the practical, operational bookend to the [[2022-10-06-yao-et-al-react-synergizing-reasoning-acting|2022 ReAct paper]] ingested in the same batch. Where the paper proves the reason-act loop, this video shows a 2026 framework wiring it up in Python.
 
 ## TL;DR
 
 - **Defines an agent as ReAct in practice.** "An agent is software that doesn't just answer, it can decide and take action." The clearest explanation, per the video, "comes from the research paper ReAct: Synergizing Reasoning and Acting in Language Models" — the cycle of **reason → act (call a tool/API) → observe → adjust** is "the foundation of how modern AI agents work." This is a direct line from the [[2022-10-06-yao-et-al-react-synergizing-reasoning-acting|primary paper]] to a 2026 vendor tutorial.
 - **Three agent patterns** (a teaching taxonomy): **sequential** (assembly-line, step 1→2→3 — predictable but rigid); **reactive** (decide in the moment from current state — flexible, doesn't plan ahead); **deliberate/planning** (pause, sketch a plan, then execute — for multi-step goals with dependencies, e.g. booking travel). Choice depends on the problem: simple/predictable → sequential, dynamic → reactive, multi-step with dependencies → planning.
-- **Worked build: a self-correcting blog-writer (multi-agent in ADK).** Topic in → structured outline → full post → alternative titles & hooks. Architecture:
+- **Worked build: a self-correcting blog-writer (multi-agent in [[Agent Development Kit|ADK]]).** Topic in → structured outline → full post → alternative titles & hooks. Architecture:
   - **Planner agent** (LLM agent) — produces a markdown outline (title, intro, 4–6 sections, conclusion); writes to shared state under `output_key: blog_outline`.
   - **Outline validation checker** (LLM agent) — reads state; answers `OK` if the outline is complete, else `retry` with the reason.
   - **`robust_blog_planner`** — a **loop agent** (a *workflow* agent in ADK) wrapping planner + checker; re-runs the planner up to **3 times** until the checker passes. A built-in safety net.

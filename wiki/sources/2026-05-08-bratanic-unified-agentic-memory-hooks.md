@@ -132,7 +132,7 @@ This **directly substantiates** [[2026-05-04-rethinking-agents-harness-is-all-yo
 
 - It does **not** measure latency / cost overhead of always-on hooks vs. selective MCP usage. *"Hooks stay fast and deterministic"* is asserted but not measured.
 - It does **not** address how the dream-phase prompt is engineered, what prevents memory bloat over months of use, or what happens when the dream phase distills *bad* generalizations into a profile note that then gets injected on every session start. The "merge not append" instruction is the safety mechanism, but operational failure modes (e.g. recency-biased memory that drifts) are not discussed.
-- It does **not** compare its design to Anthropic's emerging memory tools (named in passing in [[2026-05-07-anthropic-managed-agents-decoupling-brain-hands|Anthropic Managed Agents]]) or to Cursor's / Cline's built-in memory features. The implicit framing is *roll-your-own outside the harness*; built-in alternatives are not weighed.
+- It does **not** compare its design to Anthropic's emerging memory tools (named in passing in [[2026-05-07-anthropic-managed-agents-decoupling-brain-hands|Anthropic Managed Agents]]) or to Cursor's / [[Cline]]'s built-in memory features. The implicit framing is *roll-your-own outside the harness*; built-in alternatives are not weighed.
 - It does **not** address multi-user / team scenarios — the demo is single-user. Whether the same architecture works for a shared team memory (with conflict resolution, access control, redaction) is unaddressed.
 
 These are reasonable elisions for a 9-minute essay; flag as gaps a follow-up source would need to fill.

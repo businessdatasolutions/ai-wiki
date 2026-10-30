@@ -5,7 +5,7 @@ tags: [deskilling, task-composition, ai-employment-effects, occupations]
 confidence: 0.85
 last_confirmed: "2026-10-08"
 accessed_at: "2026-10-08"
-source_count: 23
+source_count: 35
 relationships:
   - type: instance-of
     target: ai-employment-effects

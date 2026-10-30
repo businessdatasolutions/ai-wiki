@@ -7,7 +7,7 @@ since: 2023
 confidence: 0.75
 last_confirmed: "2026-06-15"
 accessed_at: "2026-06-15"
-source_count: 2
+source_count: 8
 relationships:
   - type: part-of
     target: Google

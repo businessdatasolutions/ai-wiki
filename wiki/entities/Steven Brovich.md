@@ -8,7 +8,7 @@ role: "AWS Enterprise Strategist, working alongside Tom Godden's peer group of f
 confidence: 0.7
 last_confirmed: "2026-07-14"
 accessed_at: "2026-07-14"
-source_count: 2
+source_count: 3
 ---
 
 # Steven Brovich

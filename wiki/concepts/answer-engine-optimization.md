@@ -6,7 +6,7 @@ tags: [aeo, geo, seo, answer-engines, ai-search, citations, brand-visibility, sh
 confidence: 0.75
 last_confirmed: "2026-10-15"
 accessed_at: "2026-10-15"
-source_count: 7
+source_count: 6
 relationships:
   - type: part-of
     target: agentic-web

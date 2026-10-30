@@ -5,7 +5,7 @@ tags: [strategic-foresight, scenarios, futures, signal-detection, FTSG, webb, ar
 confidence: 0.87
 last_confirmed: "2026-09-21"
 accessed_at: "2026-09-21"
-source_count: 14
+source_count: 24
 relationships:
   - type: part-of
     target: dynamic-capabilities

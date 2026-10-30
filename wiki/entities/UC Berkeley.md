@@ -6,7 +6,7 @@ tags: [uc-berkeley, sky-computing-lab, gorilla, berkeley-function-calling-leader
 confidence: 0.75
 last_confirmed: "2026-09-04"
 accessed_at: "2026-09-04"
-source_count: 2
+source_count: 4
 relationships:
   - type: part-of
     target: Berkeley-Function-Calling-Leaderboard

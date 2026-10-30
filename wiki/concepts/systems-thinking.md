@@ -5,7 +5,7 @@ tags: [systems-thinking, innovation, sustainability, design-thinking, breakthrou
 confidence: 0.9
 last_confirmed: "2026-10-08"
 accessed_at: "2026-10-08"
-source_count: 11
+source_count: 15
 relationships:
   - type: supports
     target: enterprise-ai-adoption

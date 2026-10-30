@@ -42,7 +42,7 @@ relationships:
 
 A **~4:38 two-person explainer** from Google Cloud's *AI Builder Essentials* series — the same series and one of the same presenters ([[Tilde Thurium]]) as [[2026-07-16-baugues-thurium-google-cloud-what-is-an-agentic-harness|"What is an Agentic Harness?"]] six weeks earlier. It is short, vendor-produced, and carries no evidence of any kind. Its value to the wiki is **vocabulary and a failure taxonomy stated crisply enough to be operational**, from a vendor that ships the tooling ([[Agent Development Kit]]).
 
-**The working definition of loop engineering**, offered by Annie Wang, is the best one-sentence version in the corpus:
+**The working definition of loop engineering**, offered by [[Annie Wang]], is the best one-sentence version in the corpus:
 
 > "You can think of it as you replacing yourself with a system. So instead of you keep typing and trying to solve a problem, you'll create a system and set a goal and let the system keep retrying until it's meeting the goal."
 
@@ -60,7 +60,7 @@ That is the same move [[2026-06-17-vo-how-i-ai-ai-agent-loops-claude-code-codex|
 
 **3. Vague or uncheckable goals.** Thurium's example: *"make this summary better."* — *"Okay, what is better? That's completely vague. And the LLM is just going to crash out trying to understand what we mean by that."* Wang's fix is a usable definition of a good criterion: **explicit and checkable, meaning "non-debatable, non-negotiable"** — *"it has to be less than ten,"* *"zero compilation errors."* This is the operational form of what [[2026-05-20-zhao-specbench-reward-hacking-long-horizon-coding-agents|SpecBench]] measures the absence of, and it inherits SpecBench's caveat: a criterion crisp enough to be uncheatable by argument may still be cheatable by construction.
 
-**4. Complexity overflow — when to stop looping and start graphing.** A single loop handles a one-paragraph summary; ask it for *"a 50 page PDF with a bunch of generated images and tables"* and *"it would probably choke."* The prescribed transition is from **loop engineering to graph engineering**: *"instead of you have one agent doing the one running process — you have an organization chart. You have this whole graph workflow to orchestrate everything. You can put loop as part of the graph."*
+**4. Complexity overflow — when to stop looping and start graphing.** A single loop handles a one-paragraph summary; ask it for *"a 50 page PDF with a bunch of generated images and tables"* and *"it would probably choke."* The prescribed transition is from **loop engineering to [[graph-engineering|graph engineering]]**: *"instead of you have one agent doing the one running process — you have an organization chart. You have this whole graph workflow to orchestrate everything. You can put loop as part of the graph."*
 
 The org-chart analogy for a multi-agent graph is the same reach [[2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder|Ryan Carson]] makes independently from the practitioner side. And the underlying claim — *decompose only once a single agent stops coping* — is exactly the condition [[2026-04-02-tran-kiela-single-agent-outperforms-multi-agent-under-equal-budgets|Tran & Kiela]] derive formally: multi-agent systems become competitive when a single agent's effective context utilisation degrades, and not before. A vendor telling you to reach for the more elaborate architecture *only at overflow* is a vendor arguing against its own upsell, which is worth noting.
 

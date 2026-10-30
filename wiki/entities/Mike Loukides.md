@@ -6,7 +6,7 @@ tags: [mike-loukides, oreilly, oreilly-radar, radar-trends, editor, trend-curati
 confidence: 0.85
 last_confirmed: "2026-05-16"
 accessed_at: "2026-05-16"
-source_count: 5
+source_count: 6
 relationships:
   - type: part-of
     target: O'Reilly-Media

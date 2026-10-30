@@ -55,5 +55,5 @@ The wiki's [[ai-agents]] working definition — *"an LLM that autonomously uses 
 ## Relationships
 
 - [[2022-11-08-yao-cao-react-google-research-blog]] is the Google Research blog popularisation of this same work (it *supports* / restates this paper in a non-peer-reviewed register).
-- [[2026-06-10-google-cloud-tech-ai-agents-explained-first-agent]] is a 2026 ADK tutorial that *uses* this paper's ReAct paradigm as its conceptual foundation.
+- [[2026-06-10-google-cloud-tech-ai-agents-explained-first-agent]] is a 2026 [[Agent Development Kit|ADK]] tutorial that *uses* this paper's ReAct paradigm as its conceptual foundation.
 - [[2026-05-18-wolfe-agent-evaluation-detailed-guide]]'s operational definition of an agent (*"an LLM that uses tools in a loop"*) traces directly to this paper's reason–act–observe loop.

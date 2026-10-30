@@ -6,7 +6,7 @@ tags: [salesforce, salesforce-ai-research, xlam, apigen-mt, synthetic-data, open
 confidence: 0.75
 last_confirmed: "2026-09-04"
 accessed_at: "2026-09-04"
-source_count: 2
+source_count: 4
 relationships:
   - type: employs
     target: Juan-Carlos-Niebles

@@ -5,7 +5,7 @@ tags: [small-language-models, slm, agentic-ai, ai-agents, inference-economics, e
 confidence: 0.75
 last_confirmed: "2026-10-25"
 accessed_at: "2026-10-25"
-source_count: 14
+source_count: 19
 relationships:
   - type: instance-of
     target: foundation-models

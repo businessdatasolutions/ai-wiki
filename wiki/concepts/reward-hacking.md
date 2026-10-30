@@ -4,7 +4,7 @@ title: Reward hacking
 aliases: ["reward hacking", "specification gaming", "benchmark contamination", "reward hacking gap", "obfuscated reward hacking", "grader exploitation"]
 confidence: 0.85
 last_confirmed: "2026-10-11"
-source_count: 8
+source_count: 13
 accessed_at: "2026-10-11"
 tags: [reward-hacking, specification-gaming, benchmark-integrity, held-out-tests, cot-monitoring, obfuscation, swe-bench, evaluation, oversight-surface, goodharts-law]
 relationships:

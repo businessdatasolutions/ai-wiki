@@ -5,7 +5,7 @@ tags: [expert-generalist, generalist-vs-specialist, t-shaped, fundamentals-over-
 confidence: 0.90
 last_confirmed: "2026-10-25"
 accessed_at: "2026-10-25"
-source_count: 10
+source_count: 12
 relationships:
   - type: supports
     target: durable-skills

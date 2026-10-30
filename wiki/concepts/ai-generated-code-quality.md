@@ -4,7 +4,7 @@ title: AI-generated code quality and security
 aliases: ["AI-generated code quality", "AI code security", "slopsquatting", "package hallucination", "AI technical debt", "AI-introduced defects"]
 confidence: 0.85
 last_confirmed: "2026-10-25"
-source_count: 8
+source_count: 6
 accessed_at: "2026-10-25"
 tags: [code-quality, security, owasp, slopsquatting, package-hallucination, technical-debt, code-smells, supply-chain, static-analysis, flat-scaling]
 relationships:

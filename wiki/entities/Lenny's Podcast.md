@@ -7,7 +7,7 @@ since: 2022
 confidence: 0.85
 last_confirmed: "2026-09-28"
 accessed_at: "2026-09-28"
-source_count: 8
+source_count: 10
 relationships:
   - type: published-by
     target: 2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved

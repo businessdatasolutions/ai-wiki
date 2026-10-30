@@ -8,7 +8,7 @@ role: "Engineer at Google Cloud building agents to operate Cloud; coiner of the 
 confidence: 0.8
 last_confirmed: "2026-09-15"
 accessed_at: "2026-09-15"
-source_count: 3
+source_count: 4
 ---
 
 # Ryan Lopopolo

@@ -5,7 +5,7 @@ tags: [software-3.0, software-2.0, software-1.0, llm-paradigm, prompting, contex
 confidence: 0.88
 last_confirmed: "2026-09-19"
 accessed_at: "2026-09-19"
-source_count: 11
+source_count: 14
 relationships:
   - type: instance-of
     target: generative-ai

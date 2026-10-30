@@ -6,7 +6,7 @@ tags: [hubspot, crm, marketing-software, unbound-2026, aeo, youtube-channel, ven
 confidence: 0.8
 last_confirmed: "2026-10-15"
 accessed_at: "2026-10-15"
-source_count: 4
+source_count: 5
 relationships:
   - type: published-by
     target: 2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook

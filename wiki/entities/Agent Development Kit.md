@@ -8,7 +8,7 @@ role: "Google's open framework for building, composing and orchestrating LLM age
 confidence: 0.75
 last_confirmed: "2026-09-04"
 accessed_at: "2026-09-04"
-source_count: 5
+source_count: 7
 relationships:
   - type: part-of
     target: Google

@@ -5,7 +5,7 @@ tags: [ai-sovereignty, sovereign-ai, digital-sovereignty, strategic-autonomy, ow
 confidence: 0.85
 last_confirmed: "2026-10-25"
 accessed_at: "2026-10-25"
-source_count: 16
+source_count: 14
 relationships:
   - type: supports
     target: open-source-ai

@@ -7,7 +7,7 @@ website: "https://www.gsb.stanford.edu"
 confidence: 0.85
 last_confirmed: "2026-06-26"
 accessed_at: "2026-06-26"
-source_count: 4
+source_count: 5
 ---
 
 # Stanford GSB

@@ -5,7 +5,7 @@ tags: [generative-ai, foundation-models, ai-adoption, ai-foundation, future-aren
 confidence: 0.95
 last_confirmed: "2026-09-19"
 accessed_at: "2026-09-19"
-source_count: 23
+source_count: 29
 relationships:
   - type: uses
     target: foundation-models

@@ -6,7 +6,7 @@ tags: [xlam, salesforce, small-language-models, open-weight-models, function-cal
 confidence: 0.8
 last_confirmed: "2026-09-04"
 accessed_at: "2026-09-04"
-source_count: 3
+source_count: 4
 relationships:
   - type: authored-by
     target: Salesforce-AI-Research

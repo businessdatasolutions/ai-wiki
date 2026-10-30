@@ -7,7 +7,7 @@ since: 2025
 confidence: 0.85
 last_confirmed: "2026-09-18"
 accessed_at: "2026-09-18"
-source_count: 7
+source_count: 8
 relationships:
   - type: published-by
     target: 2026-05-11-nystrom-how-i-ai-spec-driven-development-notion

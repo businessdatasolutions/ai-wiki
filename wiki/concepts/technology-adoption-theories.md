@@ -6,7 +6,7 @@ tags: [adoption-theory, tam, utaut, diffusion-of-innovations, rogers, toe-framew
 confidence: 0.85
 last_confirmed: "2026-10-17"
 accessed_at: "2026-10-17"
-source_count: 7
+source_count: 8
 relationships:
   - type: supports
     target: enterprise-ai-adoption

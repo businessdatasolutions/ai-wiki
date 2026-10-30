@@ -50,7 +50,7 @@ relationships:
 A ~46:30 talk + panel on the [[Y Combinator]] *Lightcone* podcast, published 27 May 2026. Auto-generated English captions via yt-dlp fallback; the [youtube-transcript-skill](../../.claude/skills/youtube-transcript-skill/SKILL.md) engagement-panel route timed out at 180s (recurring failure mode on ≥20-minute talks). VTT rolling-window dedup applied; 555 segments.
 
 **Speakers:**
-- **Pete Koomen** — YC General Partner; co-founder of Optimizely (A/B testing platform); author of the *Horseless Carriages* essay critiquing AI-as-feature software. **The architect of YC's internal AI infrastructure.** *First-mention in the wiki; deferred under [§Lifecycle author-entity promotion](../../CLAUDE.md) (single-source rule).*
+- **[[Pete Koomen]]** — YC General Partner; co-founder of Optimizely (A/B testing platform); author of the *Horseless Carriages* essay critiquing AI-as-feature software. **The architect of YC's internal AI infrastructure.** *First-mention in the wiki; deferred under [§Lifecycle author-entity promotion](../../CLAUDE.md) (single-source rule).*
 - **[[Garry Tan]]** — YC President and CEO; hosts. Already a substantive entity in the wiki via [[2026-04-23-tan-yc-how-to-make-claude-code-your-ai-engineering-team-gstack|GStack talk]] and the [[2026-05-20-tan-hu-stanford-cs153-ai-native-company-1000x-engineer|Stanford CS153 talk with Diana Hu]].
 - **[[Diana Hu]]** — YC partner; co-host. Already substantive.
 - **Harge Taggar** — YC partner; co-host. *First-mention; deferred.*

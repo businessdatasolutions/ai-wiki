@@ -52,7 +52,7 @@ relationships:
 
 # Nadella / Hoffman — AI Is the Future of the Firm (2026-06-05)
 
-A ~60-minute episode of the **Possible** podcast, published 5 June 2026, hosted by **Reid Hoffman** (with co-host Aria Finger), interviewing **Satya Nadella** (chairman and CEO of [[Microsoft]]) fresh off **Microsoft Build 2026**. The conversation is wide-ranging — enterprise AI architecture, the future of work, sovereign AI, Microsoft's own silicon, science, children/education, the Pope's AI encyclical, and the AI backlash. Hoffman also announces he is **stepping off the Microsoft board at year-end to return to founder mode** (his science startup, Manus).
+A ~60-minute episode of the **Possible** podcast, published 5 June 2026, hosted by **Reid Hoffman** (with co-host Aria Finger), interviewing **Satya Nadella** (chairman and CEO of [[Microsoft]]) fresh off **Microsoft Build 2026**. The conversation is wide-ranging — enterprise AI architecture, the future of work, [[ai-sovereignty|sovereign AI]], Microsoft's own silicon, science, children/education, the Pope's AI encyclical, and the AI backlash. Hoffman also announces he is **stepping off the Microsoft board at year-end to return to founder mode** (his science startup, Manus).
 
 This is the wiki's first **platform-CEO worldview** source on enterprise AI, and the strongest single statement of the *AI-as-the-firm-itself* thesis. It pairs directly with [[2026-06-18-ramaswamy-mckinsey-every-company-software-company|Ramaswamy / McKinsey]] (every company a software company) at the CEO altitude.
 

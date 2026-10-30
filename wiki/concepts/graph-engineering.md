@@ -5,7 +5,7 @@ tags: [graph-engineering, loop-engineering, agent-orchestration, control-flow, f
 confidence: 0.75
 last_confirmed: "2026-09-18"
 accessed_at: "2026-09-18"
-source_count: 7
+source_count: 5
 relationships:
   - type: part-of
     target: agent-harness

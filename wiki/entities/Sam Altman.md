@@ -8,7 +8,7 @@ role: "CEO of OpenAI (since 2019); ex-President of [[Y Combinator]] (2014-2019);
 confidence: 0.85
 last_confirmed: "2026-09-28"
 accessed_at: "2026-09-28"
-source_count: 3
+source_count: 4
 relationships:
   - type: part-of
     target: OpenAI

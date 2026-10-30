@@ -8,7 +8,7 @@ role: "Five-time founder; currently solo founder building Untangle, an AI legal-
 confidence: 0.8
 last_confirmed: "2026-08-30"
 accessed_at: "2026-08-30"
-source_count: 3
+source_count: 2
 relationships:
   - type: part-of
     target: Untangle

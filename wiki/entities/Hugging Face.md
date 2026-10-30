@@ -7,7 +7,7 @@ since: 2016
 confidence: 0.75
 last_confirmed: "2026-09-03"
 accessed_at: "2026-09-15"
-source_count: 3
+source_count: 7
 relationships:
   - type: supports
     target: 2026-07-08-jensen-huang-why-companies-need-open-agent-systems

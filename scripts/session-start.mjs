@@ -14,6 +14,7 @@ import { join, dirname, relative } from "node:path"
 import { fileURLToPath } from "node:url"
 import matter from "gray-matter"
 import { checkIndexCompleteness } from "./lint-index-completeness.mjs"
+import { checkSourceCounts } from "./lint-source-count.mjs"
 
 const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), "..")
 const WIKI_DIR = join(REPO_ROOT, "wiki")
@@ -76,6 +77,14 @@ try {
   const { report, totalMissing } = await checkIndexCompleteness()
   indexGapTotal = totalMissing
   indexGapDetail = report.filter((r) => r.missing.length > 0)
+} catch {}
+
+// source_count drift check (see scripts/lint-source-count.mjs). On 2026-10-25,
+// 41 of 54 concepts and 70 of 206 entities disagreed with their citing sources
+// because ingests added +1 instead of recounting, and nothing reported it.
+let countDrift = []
+try {
+  countDrift = (await checkSourceCounts()).mismatches
 } catch {}
 
 // N most recent log.md entries (heading lines only, not full bodies).
@@ -145,6 +154,13 @@ lines.push(
 )
 for (const { sectionName, missing } of indexGapDetail) {
   lines.push(`  - ${sectionName}: ${missing.length} (run \`node scripts/lint-index-completeness.mjs\` for the list)`)
+}
+lines.push(
+  `- ${countDrift.length} page(s) whose \`source_count\` disagrees with the citing sources${countDrift.length > 0 ? ":" : "."}`,
+)
+for (const kind of ["concepts", "entities"]) {
+  const n = countDrift.filter((r) => r.kind === kind).length
+  if (n > 0) lines.push(`  - ${kind}: ${n} (run \`node scripts/lint-source-count.mjs\` for the list)`)
 }
 lines.push("")
 lines.push(

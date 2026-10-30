@@ -8,7 +8,7 @@ role: "AWS Director of Technology and AI; Executive in Residence"
 confidence: 0.7
 last_confirmed: "2026-07-15"
 accessed_at: "2026-07-15"
-source_count: 2
+source_count: 3
 relationships:
   - type: part-of
     target: Amazon Web Services

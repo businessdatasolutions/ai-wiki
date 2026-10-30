@@ -5,7 +5,7 @@ tags: [lean-4-0, lean-manufacturing, industry-4-0, smart-manufacturing, ai-in-ma
 confidence: 0.70
 last_confirmed: "2026-04-28"
 accessed_at: "2026-09-05"
-source_count: 3
+source_count: 1
 relationships:
   - type: part-of
     target: industry-4-0

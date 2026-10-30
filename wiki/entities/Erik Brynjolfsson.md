@@ -9,7 +9,7 @@ contact: "erikb@stanford.edu"
 confidence: 0.9
 last_confirmed: "2026-08-12"
 accessed_at: "2026-09-14"
-source_count: 6
+source_count: 10
 relationships:
   - type: part-of
     target: Stanford-Digital-Economy-Lab

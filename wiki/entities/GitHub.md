@@ -8,7 +8,7 @@ website: "https://github.com"
 confidence: 0.85
 last_confirmed: "2026-09-19"
 accessed_at: "2026-09-19"
-source_count: 4
+source_count: 13
 relationships:
   - type: part-of
     target: Microsoft

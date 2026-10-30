@@ -8,7 +8,7 @@ website: "https://www.amazon.com"
 confidence: 0.78
 last_confirmed: "2026-10-18"
 accessed_at: "2026-10-18"
-source_count: 4
+source_count: 7
 ---
 
 # Amazon

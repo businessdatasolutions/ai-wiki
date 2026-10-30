@@ -8,7 +8,7 @@ website: "https://hbr.org"
 confidence: 0.90
 last_confirmed: "2026-10-11"
 accessed_at: "2026-10-11"
-source_count: 19
+source_count: 21
 ---
 
 # Harvard Business Review

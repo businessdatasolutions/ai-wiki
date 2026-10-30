@@ -7,7 +7,7 @@ since: 1993
 confidence: 0.85
 last_confirmed: "2026-10-17"
 accessed_at: "2026-10-17"
-source_count: 4
+source_count: 11
 relationships:
   - type: supports
     target: small-language-models

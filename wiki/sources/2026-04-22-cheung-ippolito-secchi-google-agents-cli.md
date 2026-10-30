@@ -31,7 +31,7 @@ Three integrated artifacts, all released on the same day:
 2. **Agents CLI Skills** — a bundle of skill files the CLI installs into the developer's coding agent. The bundle gives the coding agent a machine-readable specification of every command, sub-command, and template the CLI exposes.
 3. **Opinionated project templates** — scaffolds (`agents-cli create`) emit a directory layout aligned with Google's intended ADLC.
 
-The product is a thin programmatic layer over the existing [[Google]] Cloud agent stack (ADK for agent code; **Agent Runtime / Cloud Run / GKE** for deployment; **Agent Platform** + ADK Eval for evaluation; **Gemini Enterprise** for distribution). What is genuinely new is the **integration surface** — one CLI exposing all of those services to one consumer (a coding agent) via one consistent command grammar.
+The product is a thin programmatic layer over the existing [[Google]] Cloud agent stack ([[Agent Development Kit|ADK]] for agent code; **Agent Runtime / Cloud Run / GKE** for deployment; **Agent Platform** + ADK Eval for evaluation; **Gemini Enterprise** for distribution). What is genuinely new is the **integration surface** — one CLI exposing all of those services to one consumer (a coding agent) via one consistent command grammar.
 
 ## The fragmented stack the CLI is collapsing
 

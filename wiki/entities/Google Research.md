@@ -6,7 +6,7 @@ tags: [google-research, google, ai-research, foundation-models, gemini, durable-
 confidence: 0.80
 last_confirmed: "2026-06-12"
 accessed_at: "2026-06-12"
-source_count: 5
+source_count: 6
 ---
 
 # Google Research

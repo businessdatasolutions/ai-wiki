@@ -145,7 +145,7 @@ The claim is too lightly anchored in this source alone to ratify into the [[conc
 
 **Entity references** (existing): [[Y Combinator]] (the channel publisher, Glasgow's accelerator).
 
-**Dangling** (single-source first-mentions, deferred per the second-source promotion rule): John Glasgow (Campfire CEO/founder), Andrew Tan (YC partner, host), Campfire (S23 AI-native ERP), Accel, Ribbit Capital, NetSuite, QuickBooks, Brex, Mercury, Metronome, PagerDuty, Replit, PostHog, Dalton Caldwell (referenced as one of Glasgow's YC interview partners).
+**Dangling** (single-source first-mentions, deferred per the second-source promotion rule): John Glasgow (Campfire CEO/founder), Andrew Tan (YC partner, host), Campfire (S23 AI-native ERP), Accel, Ribbit Capital, NetSuite, QuickBooks, Brex, Mercury, Metronome, PagerDuty, Replit, PostHog, [[Dalton Caldwell]] (referenced as one of Glasgow's YC interview partners).
 
 ## Open questions
 

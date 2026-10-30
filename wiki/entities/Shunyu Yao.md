@@ -6,7 +6,7 @@ tags: [react, llm-agents, reasoning-and-acting, princeton-nlp, google-research, 
 confidence: 0.75
 last_confirmed: "2026-06-12"
 accessed_at: "2026-06-12"
-source_count: 2
+source_count: 3
 ---
 
 # Shunyu Yao

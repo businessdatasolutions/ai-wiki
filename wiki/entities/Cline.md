@@ -8,7 +8,7 @@ website: "https://cline.bot"
 confidence: 0.78
 last_confirmed: "2026-05-25"
 accessed_at: "2026-05-25"
-source_count: 5
+source_count: 4
 relationships:
   - type: instance-of
     target: agent-harness

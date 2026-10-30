@@ -6,7 +6,7 @@ tags: [mckinsey, mgi, mckinsey-talks-operations, mckinsey-talks-talent, global-b
 confidence: 0.95
 last_confirmed: "2026-10-25"
 accessed_at: "2026-10-25"
-source_count: 21
+source_count: 24
 relationships:
   - type: employs
     target: Roberta-Fusaro

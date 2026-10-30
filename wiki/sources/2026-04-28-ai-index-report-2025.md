@@ -93,7 +93,7 @@ Five rigorous empirical studies (n>200,000 across customer support, software, ma
 
 ### 2024 milestones (selected from §4.1 timeline)
 
-OpenAI raises $6.6B at $157B valuation; Anthropic ↔ AWS partnership reaches $8B; xAI raises $6B at $40B+; Databricks $10B at $62B; Salesforce launches Agentforce (autonomous agents); Microsoft hires Inflection AI's team for $650M; Google hires Character.AI's cofounders ($2.5B deal); Nvidia acquires Run:ai ($700M); Mistral AI $640M at $6B; Cohere $500M at $5.5B; Perplexity $500M at $9B; Safe Superintelligence $1B; Figure AI (humanoid robots) $675M at $2.6B; AMD acquires Silo AI ($665M); Synopsys/Ansys $35B (chip-design AI).
+OpenAI raises $6.6B at $157B valuation; Anthropic ↔ [[Amazon Web Services|AWS]] partnership reaches $8B; xAI raises $6B at $40B+; Databricks $10B at $62B; Salesforce launches Agentforce (autonomous agents); Microsoft hires Inflection AI's team for $650M; Google hires Character.AI's cofounders ($2.5B deal); Nvidia acquires Run:ai ($700M); Mistral AI $640M at $6B; Cohere $500M at $5.5B; Perplexity $500M at $9B; Safe Superintelligence $1B; Figure AI (humanoid robots) $675M at $2.6B; AMD acquires Silo AI ($665M); Synopsys/Ansys $35B (chip-design AI).
 
 ## Notable quotes
 

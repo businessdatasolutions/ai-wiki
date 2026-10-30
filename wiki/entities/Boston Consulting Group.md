@@ -6,7 +6,7 @@ tags: [BCG, management-consulting, henderson-institute]
 confidence: 0.85
 last_confirmed: "2026-10-25"
 accessed_at: "2026-10-25"
-source_count: 10
+source_count: 12
 ---
 
 # Boston Consulting Group

@@ -25,7 +25,7 @@ relationships:
 
 # Loukides — Radar Trends to Watch: February 2026
 
-The **second installment** in the wiki of Loukides's monthly digest, published **3 February 2026**, covering January 2026. **Opening framing**: *"If you wanted any evidence that AI had colonized just about every aspect of computing, this month's Trends would be all you need."* Loukides points to **Steve Yegge's Gas Town** as the exemplar — a vision of multi-agent orchestration that he uses to anchor the month.
+The **second installment** in the wiki of Loukides's monthly digest, published **3 February 2026**, covering January 2026. **Opening framing**: *"If you wanted any evidence that AI had colonized just about every aspect of computing, this month's Trends would be all you need."* Loukides points to **[[Steve Yegge]]'s Gas Town** as the exemplar — a vision of multi-agent orchestration that he uses to anchor the month.
 
 The month's structural story is **AI becoming infrastructure**: tools that used to be model-distinct (Cursor's hundreds-of-agents experiment), capabilities that used to require fine-tuning (Kimi K2.5's 100-subagent swarms), and primitives that used to be in-scope for a single developer (NanoLang as a programming language *designed specifically for LLM code generation*) are all converging toward an *AI-as-substrate* default.
 

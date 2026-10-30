@@ -6,7 +6,7 @@ tags: [oreilly, publisher, oreilly-radar, learning-platform, tech-publishing, co
 confidence: 0.85
 last_confirmed: "2026-05-16"
 accessed_at: "2026-05-16"
-source_count: 8
+source_count: 9
 relationships:
   - type: employs
     target: Mike-Loukides

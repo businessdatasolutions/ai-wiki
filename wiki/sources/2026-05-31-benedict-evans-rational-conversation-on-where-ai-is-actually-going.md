@@ -116,7 +116,7 @@ In response to *'what's a question about AI that you think not enough people are
 
 ## Linked entities and concepts
 
-Already-promoted entities referenced in the conversation: [[Lenny's Podcast]] (channel), [[OpenAI]], [[Anthropic]], [[Google]], [[Amazon]], [[McKinsey & Company]], [[Bain & Company]] (as comparison), [[Y Combinator]] (Evans mentions a16z; Y Combinator appears via Lenny's reference to Dan Shipper). [[Andrew Ng]] is invoked indirectly via the *harness* terminology.
+Already-promoted entities referenced in the conversation: [[Lenny's Podcast]] (channel), [[OpenAI]], [[Anthropic]], [[Google]], [[Amazon]], [[McKinsey & Company]], [[Bain & Company]] (as comparison), [[Y Combinator]] (Evans mentions [[a16z]]; Y Combinator appears via Lenny's reference to Dan Shipper). [[Andrew Ng]] is invoked indirectly via the *harness* terminology.
 
 Concept pages this source informs (Process step 6 targets): [[jagged-frontier]] (Evans uses the term explicitly with nuance — accepts the concept, rejects the percentage decomposition), [[ai-employment-effects]] (lump-of-labor argument + 5–10-year sales-cycle speed model + AI-labs-still-hiring observation), [[automation-vs-augmentation]] (task-vs-job framing), [[foundation-models]] (commodity-utility thesis), [[agent-harness]] (namechecked), [[enterprise-ai-adoption]] (5–10-year sector-by-sector replacement), [[dynamic-capabilities]] (the entire deck is a strategic-foresight exercise; multiple W&W cells touched).
 

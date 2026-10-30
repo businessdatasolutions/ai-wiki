@@ -6,7 +6,7 @@ tags: [netflix, streaming, entertainment, elizabeth-stone, systems-thinking, exc
 confidence: 0.7
 last_confirmed: "2026-07-19"
 accessed_at: "2026-07-19"
-source_count: 1
+source_count: 4
 relationships:
   - type: uses
     target: 2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era

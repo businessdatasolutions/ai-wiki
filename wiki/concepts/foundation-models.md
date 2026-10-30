@@ -5,7 +5,7 @@ tags: [foundation-models, generative-ai, ai-research]
 confidence: 0.88
 last_confirmed: "2026-10-25"
 accessed_at: "2026-10-25"
-source_count: 34
+source_count: 45
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---

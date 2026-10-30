@@ -6,7 +6,7 @@ tags: [thoughtworks, software-consultancy, agile, technology-radar, expert-gener
 confidence: 0.75
 last_confirmed: "2026-06-25"
 accessed_at: "2026-06-25"
-source_count: 3
+source_count: 4
 relationships:
   - type: employs
     target: Martin-Fowler

@@ -21,7 +21,7 @@ relationships:
 
 A thesis-piece on the LangChain blog by **Harrison Chase** (LangChain co-founder/CEO) formalizing what the wiki has been calling the [[agent-development-lifecycle|Agent Development Lifecycle (ADLC)]] as a **four-phase loop wrapped by governance**: *Build → Test → Deploy → Monitor → (Iterate)*, with *Govern* surrounding the whole loop. *"That is what makes agent development repeatable."*
 
-This is the wiki's **second formalization** of the ADLC construct — and the first non-Google source for it. Where [[2026-04-22-cheung-ippolito-secchi-google-agents-cli|Google's Agents CLI announcement]] presented a 9-stage wheel grounded in the Google Cloud substrate, Chase presents a more abstract 4+1-phase model that maps cleanly across vendors, with explicit named primitives at each phase that draw from LangChain's own product line (LangChain, LangGraph, Deep Agents, LangSmith) but generalize to alternatives (CrewAI, Claude Agents SDK, AWS AgentCore, Daytona, E2B, Temporal, n8n).
+This is the wiki's **second formalization** of the ADLC construct — and the first non-Google source for it. Where [[2026-04-22-cheung-ippolito-secchi-google-agents-cli|Google's Agents CLI announcement]] presented a 9-stage wheel grounded in the Google Cloud substrate, Chase presents a more abstract 4+1-phase model that maps cleanly across vendors, with explicit named primitives at each phase that draw from LangChain's own product line (LangChain, LangGraph, Deep Agents, LangSmith) but generalize to alternatives (CrewAI, Claude Agents SDK, [[Amazon Web Services|AWS]] AgentCore, Daytona, E2B, Temporal, n8n).
 
 ## TL;DR
 

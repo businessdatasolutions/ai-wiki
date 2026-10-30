@@ -7,7 +7,7 @@ since: 2022
 confidence: 0.9
 last_confirmed: "2026-10-11"
 accessed_at: "2026-10-11"
-source_count: 16
+source_count: 18
 relationships:
   - type: published-by
     target: 2026-05-09-chase-agent-development-lifecycle

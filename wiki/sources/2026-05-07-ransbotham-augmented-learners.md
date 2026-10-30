@@ -16,7 +16,7 @@ last_confirmed: "2026-05-07"
 
 # Learning to Manage Uncertainty, With AI
 
-The **eighth annual** MIT Sloan Management Review × Boston Consulting Group global research report on AI in business strategy. Published November 2024. Survey instrument: spring 2024, **3,467 respondents** representing 21+ industries and 136 countries, plus **9 executive interviews** at companies in financial services, technology, retail, travel/transportation, and healthcare.
+The **eighth annual** [[MIT Sloan Management Review]] × Boston Consulting Group global research report on AI in business strategy. Published November 2024. Survey instrument: spring 2024, **3,467 respondents** representing 21+ industries and 136 countries, plus **9 executive interviews** at companies in financial services, technology, retail, travel/transportation, and healthcare.
 
 The report's central construct is **Augmented Learners** — organizations that combine high *organizational learning* capability with high *AI-specific learning* capability. The headline finding: Augmented Learners are **1.6× more likely** to feel prepared to manage industry uncertainty than Limited Learners, with the advantage compounding across talent (2.2×), technology (1.8×), and legal/regulatory (1.6×) disruptions.
 

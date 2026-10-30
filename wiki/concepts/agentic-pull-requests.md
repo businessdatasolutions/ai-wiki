@@ -4,7 +4,7 @@ title: Agentic pull requests
 aliases: ["agentic pull requests", "agentic PRs", "agent-authored PRs", "Agentic-PR", "auto-merge", "AI code review"]
 confidence: 0.85
 last_confirmed: "2026-10-03"
-source_count: 13
+source_count: 17
 accessed_at: "2026-10-03"
 tags: [agentic-pr, aidev, auto-merge, code-review, rejection-rate, risk-scoring, msr-2026, merge-queue, review-bottleneck, technical-debt]
 relationships:

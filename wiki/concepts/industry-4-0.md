@@ -2,10 +2,10 @@
 type: concept
 aliases: ["Industry 4.0", "I4.0", "industry-4-0", "Fourth Industrial Revolution"]
 tags: [industry-4-0, smart-manufacturing, iot, cyber-physical-systems, digital-transformation]
-confidence: 0.85
+confidence: 0.8
 last_confirmed: "2026-04-28"
 accessed_at: "2026-09-05"
-source_count: 4
+source_count: 2
 relationships:
   - type: caused
     target: lean-4-0
@@ -63,6 +63,7 @@ Industry 4.0 sits at the **intersection of manufacturing/operations work and the
 - **"Beyond Industry 4.0" / "Industry 5.0".** Some literature (cited in [[2026-04-28-gomaa-lean-4-0|Gomaa]]) is already pushing toward "Industry 5.0" or "Beyond Industry 4.0" framings emphasizing human-centric and sustainable manufacturing. The wiki has only Industry 4.0 sources for now; track the 5.0 framing if it appears in future ingests.
 - **Energy and sustainability.** Industrial AI is energy-intensive (data centers + cyber-physical systems). The [[2026-04-28-ai-index-report-2025|AI Index 2025]] reports **carbon emissions from training rising** (Llama 3.1 405B at 8,930 tons), and Microsoft/Google/Amazon are signing nuclear-energy deals to power AI infrastructure. Industry 4.0's sustainability claims need to be evaluated against the rising energy footprint.
 - **SME viability.** Industry 4.0 technologies are written for and adopted by large manufacturers. [[2026-04-28-gomaa-lean-4-0|Gomaa]] flags SME scalability as a research gap.
+- **Confidence lowered from 0.85 to 0.80 (2026-10-25).** A recount set `source_count` to the two sources that cite this page, [[2026-04-28-gomaa-lean-4-0|Gomaa]] and [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MIT Technology Review Insights / Cisco]]. The [[2026-04-28-ai-index-report-2025|AI Index 2025]] and [[2026-04-28-mit-sloan-ai-maturity|MIT CISR]] pages this concept draws on for context do not mention Industry 4.0, so they were not counted. Two sources, one peer-reviewed, support 0.80 at most under §Lifecycle.
 
 ## Related concepts
 

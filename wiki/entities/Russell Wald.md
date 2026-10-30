@@ -6,7 +6,7 @@ tags: [wald, stanford-hai, ai-index, ai-policy, ai-governance]
 confidence: 0.80
 last_confirmed: "2026-05-28"
 accessed_at: "2026-05-28"
-source_count: 3
+source_count: 4
 relationships:
   - type: part-of
     target: AI-Index

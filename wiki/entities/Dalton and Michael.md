@@ -6,7 +6,7 @@ tags: [dalton-and-michael, podcast, youtube-channel, y-combinator, startup-advic
 confidence: 0.75
 last_confirmed: "2026-09-28"
 accessed_at: "2026-09-28"
-source_count: 3
+source_count: 4
 relationships:
   - type: published-by
     target: 2026-08-05-dalton-michael-low-ambition-is-killing-your-startup

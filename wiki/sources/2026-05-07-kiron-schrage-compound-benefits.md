@@ -16,7 +16,7 @@ last_confirmed: "2026-05-07"
 
 # How to Reap Compound Benefits From Generative AI
 
-A practitioner column in **MIT Sloan Management Review**, 6 April 2026, by **David Kiron** (MIT SMR editorial director, research; co-author of [[2026-05-07-ransbotham-augmented-learners|Ransbotham et al. 2024]]) and **Michael Schrage** (research fellow at the MIT Sloan Initiative on the Digital Economy). 12-min reading time. Op-ed-style argument that organizations should reorient AI deployment **from consumption (asset depreciation) to compounding (asset appreciation)**, building infrastructure to verify, evaluate, and capture learning from every AI interaction.
+A practitioner column in **[[MIT Sloan Management Review]]**, 6 April 2026, by **David Kiron** (MIT SMR editorial director, research; co-author of [[2026-05-07-ransbotham-augmented-learners|Ransbotham et al. 2024]]) and **Michael Schrage** (research fellow at the MIT Sloan Initiative on the Digital Economy). 12-min reading time. Op-ed-style argument that organizations should reorient AI deployment **from consumption (asset depreciation) to compounding (asset appreciation)**, building infrastructure to verify, evaluate, and capture learning from every AI interaction.
 
 The column extends [[2026-05-07-ransbotham-augmented-learners|Ransbotham et al. (Nov 2024)]]'s empirical finding (only 15% of orgs are Augmented Learners) by specifying the **operational mechanism** that turns the 15% advantage into compounding returns: a three-step verification → evaluation → learning-capture flywheel.
 
@@ -28,7 +28,7 @@ The column extends [[2026-05-07-ransbotham-augmented-learners|Ransbotham et al. 
 - **Three-step flywheel**: (1) **Verification** — does this output meet the standard? (2) **Evaluation** — what does this output reveal? (3) **Learning capture** — how do we ensure this insight persists?
 - **The trap**: most organizations treat AI outputs as verdicts to confirm rather than starting points to interrogate. Verification masquerades as evaluation. *Consumption dressed up as adoption.*
 - **Five concrete moves**: preserve evaluation expertise; build verification mechanisms (minimally viable verification); institute evaluation practices ("what was interestingly wrong?"); create capture systems (decision journals, prompt repositories, evaluation logs); measure the cycle, not just the output.
-- **Anchor anecdotes**: Boris Cherny (Anthropic, Claude Code) — 10–15 concurrent Claude instances as smart subagents, CLAUDE.md as in-workflow learning capture; Jaana Dogan (Google, Gemini API) — "It's not perfect and I'm iterating on it" instead of accept/reject; Ransbotham et al. statistics on systematic-feedback-loop orgs being 6× more likely to derive financial benefits.
+- **Anchor anecdotes**: [[Boris Cherny]] (Anthropic, Claude Code) — 10–15 concurrent Claude instances as smart subagents, CLAUDE.md as in-workflow learning capture; Jaana Dogan (Google, Gemini API) — "It's not perfect and I'm iterating on it" instead of accept/reject; Ransbotham et al. statistics on systematic-feedback-loop orgs being 6× more likely to derive financial benefits.
 
 ## What was actually ingested
 

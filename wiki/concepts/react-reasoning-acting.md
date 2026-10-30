@@ -5,7 +5,7 @@ tags: [react, reasoning-and-acting, agentic-loop, chain-of-thought, tool-use, ll
 confidence: 0.9
 last_confirmed: "2026-09-18"
 accessed_at: "2026-09-18"
-source_count: 7
+source_count: 9
 relationships:
   - type: authored-by
     target: Shunyu-Yao

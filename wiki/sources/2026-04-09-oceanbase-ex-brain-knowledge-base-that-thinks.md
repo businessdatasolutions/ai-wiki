@@ -175,7 +175,7 @@ This is **the wiki's first first-party-vendor demonstration of where the harness
 ## Cross-source references
 
 - **Karpathy's LLM Wiki** — named as inspiration: *"Andrej Karpathy's LLM Wiki dropped a simple idea: store knowledge as plain text, let an LLM understand and update it."* Direct attribution.
-- **Garry Tan's GBrain** — named as parallel concept: *"Garry Tan's GBrain ran with the same concept. Both projects prove that LLM + local storage is a surprisingly powerful combination for personal knowledge management."* The wiki's **second source** referencing GBrain explicitly (first was [[2026-04-23-tan-yc-how-to-make-claude-code-your-ai-engineering-team-gstack|Tan / GStack 2026]] briefly). Two-source threshold met for GBrain.
+- **[[Garry Tan]]'s GBrain** — named as parallel concept: *"Garry Tan's GBrain ran with the same concept. Both projects prove that LLM + local storage is a surprisingly powerful combination for personal knowledge management."* The wiki's **second source** referencing GBrain explicitly (first was [[2026-04-23-tan-yc-how-to-make-claude-code-your-ai-engineering-team-gstack|Tan / GStack 2026]] briefly). Two-source threshold met for GBrain.
 
 ## Open issues acknowledged in the article
 

@@ -39,7 +39,7 @@ Kokane presents AI applications as a **4-layer stack**, with the Agent Harness a
 | Layer | What it does | Examples |
 |---|---|---|
 | **1. Your App** | Business logic, the product, what the user sees | (any AI product) |
-| **2. Harness Frameworks** | Pre-assembled harness kits — chains, agents, memory modules, tool wrappers | LangChain / LangGraph (chains, agents, memory, tools, LCEL); **Microsoft Agent Framework v1.0** (agents, graph workflows, HITL, state, A2A, MCP — successor to Semantic Kernel + AutoGen, GA April 2026); Google Agent Development Kit; LlamaIndex; CrewAI; Haystack; DSPy |
+| **2. Harness Frameworks** | Pre-assembled harness kits — chains, agents, memory modules, tool wrappers | LangChain / LangGraph (chains, agents, memory, tools, LCEL); **Microsoft Agent Framework v1.0** (agents, graph workflows, HITL, state, A2A, MCP — successor to Semantic Kernel + AutoGen, GA April 2026); [[Agent Development Kit|Google Agent Development Kit]]; LlamaIndex; CrewAI; Haystack; DSPy |
 | **3. Agent Harness (runtime layer)** | Context manager, permission & guardrails, state & memory, tool executor, retry/error handler, human-in-the-loop, observability | (the runtime itself; frameworks in Layer 2 implement these primitives under the hood) |
 | **4. Model Layer (swappable)** | Indeterministic core engine; generates results from user requests | Azure OpenAI / GPT-5; Claude (Anthropic); Gemini / Llama / Ollama; AWS Bedrock |
 
@@ -107,7 +107,7 @@ This source does not link to any of these references in a way the wiki can direc
 - **Reinforces [[2026-05-07-anthropic-managed-agents-decoupling-brain-hands|Anthropic Managed Agents]]**: Kokane's "inference-only model + execution-only tool executor" maps directly to Anthropic's brain/hands decomposition. Same engineering pattern, different vocabulary.
 - **Connects to [[ai-agents]]**: provides the *application-layer* anatomy beneath the chatbot → agent → multi-agent progression.
 - **Connects to [[micro-productivity-trap]]**: the harness IS the operational machinery that escapes the trap; without it, orgs are stuck in consumption mode.
-- **Tension with the rest of the wiki's "harness as moat" framing**: Kokane's *"don't let the vocabulary make you feel like a beginner"* is a useful corrective to the [[2026-05-07-chatterjee-anatomy-of-agent-harness|Chatterjee]] / Boris Cherny / [[2026-05-07-kiron-schrage-compound-benefits|Kiron-Schrage]] framing that the harness is *the* differentiator. Both can be true: harness work is mostly mature systems engineering applied to a new substrate, *and* it's where AI products differentiate themselves at the application layer.
+- **Tension with the rest of the wiki's "harness as moat" framing**: Kokane's *"don't let the vocabulary make you feel like a beginner"* is a useful corrective to the [[2026-05-07-chatterjee-anatomy-of-agent-harness|Chatterjee]] / [[Boris Cherny]] / [[2026-05-07-kiron-schrage-compound-benefits|Kiron-Schrage]] framing that the harness is *the* differentiator. Both can be true: harness work is mostly mature systems engineering applied to a new substrate, *and* it's where AI products differentiate themselves at the application layer.
 
 ## Source-quality flag
 

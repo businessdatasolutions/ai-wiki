@@ -5,7 +5,7 @@ tags: [ai-knowledge-hiding, shadow-ai, organizational-trust, psychological-safet
 confidence: 0.85
 last_confirmed: "2026-10-11"
 accessed_at: "2026-10-11"
-source_count: 4
+source_count: 5
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption

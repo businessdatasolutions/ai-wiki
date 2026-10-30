@@ -8,7 +8,7 @@ role: "Global editorial director, McKinsey & Company; host of McKinsey Talks Tal
 confidence: 0.7
 last_confirmed: "2026-10-05"
 accessed_at: "2026-10-05"
-source_count: 5
+source_count: 4
 relationships:
   - type: part-of
     target: McKinsey & Company

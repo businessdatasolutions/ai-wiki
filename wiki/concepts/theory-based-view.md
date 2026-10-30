@@ -5,7 +5,7 @@ tags: [theory-based-view, tbv, strategy-theory, felin, zenger, theory-of-value, 
 confidence: 0.8
 last_confirmed: "2026-09-09"
 accessed_at: "2026-09-09"
-source_count: 3
+source_count: 6
 relationships:
   - type: supports
     target: strategy

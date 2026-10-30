@@ -8,7 +8,7 @@ role: "Co-founder and CEO, LangChain (since 2022)"
 confidence: 0.85
 last_confirmed: "2026-10-05"
 accessed_at: "2026-10-05"
-source_count: 6
+source_count: 8
 ---
 
 # Harrison Chase

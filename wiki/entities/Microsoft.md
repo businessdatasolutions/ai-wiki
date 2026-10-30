@@ -7,7 +7,7 @@ website: "https://microsoft.com"
 confidence: 0.85
 last_confirmed: "2026-10-25"
 accessed_at: "2026-10-25"
-source_count: 11
+source_count: 16
 relationships:
   - type: employs
     target: GitHub

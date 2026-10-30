@@ -6,7 +6,7 @@ tags: [berkeley-function-calling-leaderboard, bfcl, ai-benchmarks, function-call
 confidence: 0.85
 last_confirmed: "2026-09-04"
 accessed_at: "2026-09-04"
-source_count: 3
+source_count: 4
 relationships:
   - type: part-of
     target: ai-benchmarks

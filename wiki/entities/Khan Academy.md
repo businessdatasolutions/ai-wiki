@@ -6,7 +6,7 @@ tags: [khan-academy, sal-khan, nonprofit, education, edtech, ai-tutoring, anthro
 confidence: 0.7
 last_confirmed: "2026-07-14"
 accessed_at: "2026-07-14"
-source_count: 1
+source_count: 2
 relationships:
   - type: uses
     target: Anthropic

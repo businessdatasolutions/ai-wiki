@@ -8,7 +8,7 @@ role: "Co-founder of Django web framework; creator of Datasette; prolific AI-eng
 confidence: 0.82
 last_confirmed: "2026-08-20"
 accessed_at: "2026-08-20"
-source_count: 3
+source_count: 2
 ---
 
 # Simon Willison

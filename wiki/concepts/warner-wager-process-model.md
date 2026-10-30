@@ -5,7 +5,7 @@ tags: [dynamic-capabilities, digital-transformation, microfoundations, warner-wa
 confidence: 0.85
 last_confirmed: "2026-09-17"
 accessed_at: "2026-09-17"
-source_count: 7
+source_count: 28
 relationships:
   - type: instance-of
     target: dynamic-capabilities

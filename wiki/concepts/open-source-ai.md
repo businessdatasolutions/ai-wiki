@@ -5,7 +5,7 @@ tags: [open-source-ai, open-weight-models, own-vs-rent, ai-sovereignty, concentr
 confidence: 0.9
 last_confirmed: "2026-10-12"
 accessed_at: "2026-10-12"
-source_count: 26
+source_count: 27
 relationships:
   - type: supports
     target: ai-sovereignty

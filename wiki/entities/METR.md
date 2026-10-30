@@ -6,7 +6,7 @@ tags: [metr, ai-evaluation, ai-benchmarks, ai-safety, reward-hacking, rct, devel
 confidence: 0.8
 last_confirmed: "2026-08-30"
 accessed_at: "2026-09-15"
-source_count: 3
+source_count: 6
 relationships:
   - type: employs
     target: Elizabeth-Barnes

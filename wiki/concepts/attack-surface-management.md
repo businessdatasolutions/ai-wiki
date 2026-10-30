@@ -5,7 +5,7 @@ tags: [attack-surface-management, cybersecurity, infosec, exposure-management, s
 confidence: 0.75
 last_confirmed: "2026-10-25"
 accessed_at: "2026-10-25"
-source_count: 11
+source_count: 14
 relationships:
   - type: depends-on
     target: osint

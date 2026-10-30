@@ -127,7 +127,7 @@ The product-strategy claim: **a coupled-to-foundation-model-step-changes release
 - **Replit** — vibe-coding-platform vendor; $400m Series D at $9bn valuation announced ahead of this interview. **First wiki appearance as a primary source subject** (previously referenced only in passing in [[vibe-coding]]). Single source; entity page deferred.
 - **Andrew Miklas** — YC interviewer. Single-source mention; deferred.
 - **[[Y Combinator]]** — channel/author. **Third source from the YC channel** ([[2026-04-23-tan-yc-how-to-make-claude-code-your-ai-engineering-team-gstack|Tan]] + [[2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up|Hu]] precede it). Entity page already exists with `source_count: 2` — this ingest bumps it to **3** and bumps `last_confirmed` to 2026-05-14.
-- **Marc Andreessen / a16z** — passing mention (a16z led Replit's seed round). Single-source mention; deferred.
+- **Marc Andreessen / [[a16z]]** — passing mention (a16z led Replit's seed round). Single-source mention; deferred.
 - **Paul Graham / Sam Altman** — passing mention (saw Replit on Hacker News, invited to YC). Deferred.
 - **Peter Levels** (or *"Levelvel's type of entrepreneur"* — likely refers to Pieter Levels, the indie-maker reference) — single-source mention; deferred.
 - **Agent 4** — Replit's April 2026 agent release. First wiki mention; not a stand-alone wiki concept.

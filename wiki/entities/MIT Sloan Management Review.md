@@ -7,7 +7,7 @@ since: 1959
 confidence: 0.88
 last_confirmed: "2026-06-19"
 accessed_at: "2026-06-19"
-source_count: 7
+source_count: 6
 relationships:
   - type: published-by
     target: 2026-04-28-mit-sloan-ai-maturity

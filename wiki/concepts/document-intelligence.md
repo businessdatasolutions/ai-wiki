@@ -5,7 +5,7 @@ tags: [document-intelligence, document-ai, agentic-document-extraction, ocr, vis
 confidence: 0.72
 last_confirmed: "2026-06-15"
 accessed_at: "2026-07-01"
-source_count: 3
+source_count: 7
 relationships:
   - type: part-of
     target: enterprise-ai-adoption

@@ -30,7 +30,7 @@ relationships:
 
 (Channel description, [[Y Combinator]].)
 
-A 21:49 demo + monologue by **Garry Tan** (YC President & CEO; engineer-by-background — Stanford CS, Palantir employee #10, Posterous co-founder sold-to-Twitter, built first version of YC's Bookface). Published 23 April 2026 to the Y Combinator YouTube channel — **the day before** [[2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up|Diana Hu's "How to Build a Company with AI from the Ground Up"]] on the same channel. Two YC-partner-vantage sources on AI-native-engineering in two consecutive days — the **YC-batch-context anchor pair**. ASR caption track; 15 chapters; no manual track.
+A 21:49 demo + monologue by **[[Garry Tan]]** (YC President & CEO; engineer-by-background — Stanford CS, Palantir employee #10, Posterous co-founder sold-to-Twitter, built first version of YC's Bookface). Published 23 April 2026 to the Y Combinator YouTube channel — **the day before** [[2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up|Diana Hu's "How to Build a Company with AI from the Ground Up"]] on the same channel. Two YC-partner-vantage sources on AI-native-engineering in two consecutive days — the **YC-batch-context anchor pair**. ASR caption track; 15 chapters; no manual track.
 
 ## TL;DR
 
@@ -40,7 +40,7 @@ Three substantive contributions:
 
 2. **The AI-founder-type archetype operationalised at YC-president scale**: Tan reports **10 to 15 parallel Claude Code sessions** running simultaneously, sometimes 3-4 on the same project; *"about 400 PRs to review right now"*; *"10, 15, 20, sometimes 50 PRs in any given day, depending on the number of meetings I have."* Direct operationalisation of [[2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up|Hu's]] *AI founder type* archetype — *"still builds, still coaches and leads by example. If you're the founder, this needs to be you at the forefront."* Tan IS the worked example Hu describes.
 
-3. **Steve Yegge "Gas Town" stage 7 invoked explicitly**: *"There's this idea of trying to get a level 8 software factory and GStack does not get you to level 8, but I do think it gets you to level seven."* The wiki's **second source** explicitly invoking Yegge's eight-stages-of-dev-evolution-to-AI framing (after [[2026-05-06-bockeler-engineering-of-ai-agents-context-harnessing-autonomy|Böckeler 2026]]). Two-source threshold met on Yegge's framework as a named pattern in the wiki.
+3. **[[Steve Yegge]] "Gas Town" stage 7 invoked explicitly**: *"There's this idea of trying to get a level 8 software factory and GStack does not get you to level 8, but I do think it gets you to level seven."* The wiki's **second source** explicitly invoking Yegge's eight-stages-of-dev-evolution-to-AI framing (after [[2026-05-06-bockeler-engineering-of-ai-agents-context-harnessing-autonomy|Böckeler 2026]]). Two-source threshold met on Yegge's framework as a named pattern in the wiki.
 
 Plus: the **ADHD-CEO-vs-autistic-CTO model-allocation framing** — *"by default [Claude Code] uses Claude. And I think Opus 4.6 is sort of ADHD CEO. He's the guy you want to get a beer with and he's got a billion ideas, but when the going gets tough, you got to call in your autistic CTO and that's Codex."* First-party-CEO articulation of model-allocation-by-personality-fit-to-task as a working practice.
 

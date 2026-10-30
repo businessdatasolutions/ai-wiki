@@ -7,7 +7,7 @@ website: "https://aiinstitute.hbs.edu"
 confidence: 0.75
 last_confirmed: "2026-10-25"
 accessed_at: "2026-10-25"
-source_count: 5
+source_count: 6
 relationships:
   - type: published-by
     target: 2026-09-03-hbs-ai-institute-think-youre-a-good-leader-try-leading-an-ai-team

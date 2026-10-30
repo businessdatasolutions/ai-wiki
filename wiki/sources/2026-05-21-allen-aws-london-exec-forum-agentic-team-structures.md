@@ -160,7 +160,7 @@ The USE/COMPOSE/BUILD framework is isomorphic to [[2025-05-06-jassy-amazon-agili
 
 The role-shift Allen catalogues across USE / COMPOSE / BUILD:
 
-- **USE**: data engineers move from *building integration pipelines* to *ensuring source systems are clean* — *"if you're not building a Pydantic layer to make sure that data going into the agent's correct, expect problems."*
+- **USE**: data engineers move from *building integration pipelines* to *ensuring source systems are clean* — *"if you're not building a [[Pydantic]] layer to make sure that data going into the agent's correct, expect problems."*
 - **COMPOSE**: data engineers used to build RAG pipelines and vector databases. *"Well, that goal-based agent can now write that better than they can. Now, context is king — or queen, depending on who you are."*
 - **BUILD**: data engineers used to create training sets; now composing data to help train automatically.
 

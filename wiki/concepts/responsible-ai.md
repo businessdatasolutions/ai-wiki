@@ -5,7 +5,7 @@ tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
 last_confirmed: "2026-10-11"
 accessed_at: "2026-10-11"
-source_count: 33
+source_count: 47
 relationships:
   - type: part-of
     target: enterprise-ai-adoption

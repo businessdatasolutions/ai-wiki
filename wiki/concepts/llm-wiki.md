@@ -5,7 +5,7 @@ tags: [llm-wiki, knowledge-compilation, three-layer-architecture, ingest-query-l
 confidence: 0.93
 last_confirmed: "2026-10-12"
 accessed_at: "2026-10-12"
-source_count: 13
+source_count: 16
 relationships:
   - type: part-of
     target: agent-harness

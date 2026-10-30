@@ -151,7 +151,7 @@ The W&W tagging (10 cells — comparable to [[2026-05-22-khan-cline-deeplearning
 - Paul Everitt — JetBrains developer advocate.
 - JetBrains — developer-tools company, European, profitable, privately held.
 - Grady Booch — UML / *Gang of Four* co-author / *third golden age of software engineering* podcast.
-- Addy Osmani — already promoted via [[2026-05-15-osmani-agent-harness-engineering]].
+- [[Addy Osmani]] — already promoted via [[2026-05-15-osmani-agent-harness-engineering]].
 - Dave Farley — *Modern Software Engineering* author.
 - Ed Zitron — newsletter author / AI-bubble critic.
 - Brandon (Unbox) — context-engineering talk.

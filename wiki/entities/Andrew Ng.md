@@ -8,7 +8,7 @@ role: "Founder of DeepLearning.AI; adjunct professor at Stanford; managing gener
 confidence: 0.95
 last_confirmed: "2026-10-25"
 accessed_at: "2026-10-25"
-source_count: 9
+source_count: 10
 ---
 
 # Andrew Ng
