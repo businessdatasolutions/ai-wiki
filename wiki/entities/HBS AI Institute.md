@@ -5,9 +5,9 @@ aliases: ["HBS AI Institute", "Harvard Business School AI Institute", "HBS AI Co
 tags: [harvard-business-school, research-institute, frontier-firm, microsoft-partner, research-summaries]
 website: "https://aiinstitute.hbs.edu"
 confidence: 0.75
-last_confirmed: "2026-10-25"
-accessed_at: "2026-10-25"
-source_count: 6
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 7
 relationships:
   - type: published-by
     target: 2026-09-03-hbs-ai-institute-think-youre-a-good-leader-try-leading-an-ai-team
@@ -56,3 +56,7 @@ SORT file.name ASC
 ## A member firm on its own transformation (added 2026-10-25)
 
 [[2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder|Diasio on WorkLab (Dec 2025)]] names [[EY]] as a member of the initiative's inaugural class. EY's Global Consulting AI Leader describes its route to becoming a Frontier Firm: more than $1 billion invested in a year, a Client Zero programme, a curriculum for all staff, and a blueprint for AI-native functions. This is a member's own account, on the co-runner's podcast.
+
+## Lakhani on the institute's work (added 2026-11-04)
+
+[[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani on Silicon Valley Girl (Oct 2026)]] describes the institute's research access to prompt-level usage data in large organisations and its executive programmes, and cites Rem Koning's *"frontier firm radar"*, experiments showing startups how to use AI better.

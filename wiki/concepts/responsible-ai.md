@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 48
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 52
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -393,3 +393,10 @@ For organisations deploying AI this is the `contextual/external-triggers` side o
 ## Governance as an enabler, from the OECD (added 2026-10-30)
 
 [[2026-10-26-rendtorff-smith-chin-bcg-creating-ai-value-adoption|Rendtorff-Smith (OECD) with Chin (BCG), Oct 2026]]: the tension between innovation and safety is *"often presented as a tension,"* but *"safety, governance, policy is really an enabler."* The OECD backs no single approach, and she points to sandboxing and to Singapore's voluntary guidelines as routes. She speaks for the body that wrote the AI principles.
+
+## AI-free zones, agent risk systems, and evaluation at volume (added 2026-11-04)
+
+- [[2026-11-03-goel-bcg-so-what-ai-quietly-taking-from-workforce|Goel (BCG, The So What, Nov 2026)]]: a code of conduct with AI-free zones for high-risk work, ethical judgment and the origination of new ideas.
+- [[2026-09-29-bayer-rosmarin-chari-bcg-ai-agents-business-of-complexity|Bayer Rosmarin (Australian Unity) with BCG (Sep 2026)]]: risk management for agents modelled on the systems firms already use for people.
+- [[2026-10-20-parikh-google-cloud-hippocratic-ai-voice-agents-healthcare|Hippocratic AI on Google Cloud (Oct 2026)]]: safety as automated evaluation at very large volume, and a design rule that the agents *"do not diagnose or prescribe."* Its *"zero safety issues in production"* is a marketing claim with no definition.
+- [[2026-07-14-keneally-bcg-so-what-llm-or-md-patient-journey|Keneally (BCG, The So What, Jul 2026)]]: how personal health agents will be licensed and assured is open; human advice, which also errs, is the baseline to compare against.

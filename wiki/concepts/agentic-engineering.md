@@ -3,9 +3,9 @@ type: concept
 aliases: ["agentic engineering", "Agentic Engineering", "agentic-engineering", "agent engineering"]
 tags: [agentic-engineering, vibe-coding, software-3.0, ai-agents, agent-harness, software-engineering, hiring, karpathy, codex-case-study]
 confidence: 0.95
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 84
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 86
 relationships:
   - type: depends-on
     target: agent-harness
@@ -356,3 +356,8 @@ Two points bear on this page directly.
 - **A migration that carries lessons.** [[2026-10-23-grinberg-gill-claude-factory-autonomous-software|Grinberg (Factory, on the Claude channel, Oct 2026)]]: on a bank's second COBOL modernisation, human involvement was *"90% less"* after the Droid extracted lessons from the first. One customer, reported by the vendor.
 - **Agents answering review.** [[2026-10-24-skidmore-cloudflare-connect-build-not-buy|Skidmore (Cloudflare Connect, Oct 2026)]]: recent models wait for CI, read the comments and *"loop until everything's good to go."* Skills holding standards *"don't necessarily always get invoked when they should."*
 - **Decomposition.** [[2026-10-26-schwaibold-epstein-yc-new-full-stack-designer|Schwaibold (Shopify) on YC's Design Review, Oct 2026]]: the tools can make anything, *"but you have to be able to take a … concept … and break it down into all its little components."*
+
+## "Programming is solved", and the factory's outer loop (added 2026-11-04)
+
+- [[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort (Remote) on BNR (Oct 2026)]]: AI wrote about 40% of Remote's code at the start of 2026 and 100% by October; code review is almost entirely automated. Engineers now state the problem and the desired result: *"Figure it out."* One agent has run for three weeks on a complex internal app from one high-level instruction, asking subject-matter experts on Slack when it gets stuck.
+- [[2026-11-02-holmes-warp-agentic-self-improvement-loop|Holmes (Warp, Nov 2026)]]: the outer loop as engineering on the factory rather than on the product: store every agent conversation, score runs with rubric judges, isolate failures, and let an agent propose skill changes.

@@ -1,13 +1,13 @@
 ---
 type: entity
 kind: organization
-aliases: ["Google", "Google LLC", "Alphabet (operating subsidiary)", "Google for Developers", "Google Cloud Tech"]
+aliases: ["Google", "Google LLC", "Alphabet (operating subsidiary)", "Google for Developers", "Google Cloud Tech", "Google Cloud"]
 tags: [google, big-tech, hyperscaler, ai-lab, foundation-models, gemini, google-cloud, google-research, google-brain, gemini-api, file-search, multimodal-rag, notebooklm, flow, veo, ai-product-management, bfloat16, coral-edge-tpu, tensorflow, edge-ml]
 since: 1998
 confidence: 0.90
-last_confirmed: "2026-10-25"
-accessed_at: "2026-10-25"
-source_count: 38
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 40
 relationships:
   - type: published-by
     target: 2026-06-12-mcveety-hormati-google-cloud-open-knowledge-format
@@ -117,3 +117,8 @@ SORT file.name ASC
 ## Security review with agents (added 2026-10-25)
 
 [[2026-10-20-pettit-eidelman-galloway-google-cloud-security-review-with-agents|Pettit, Eidelman & Galloway (Google Cloud Tech, Oct 2026)]]: a Google Cloud Tech livestream with three Google engineers on **Mantis**, Google's agent framework for security review (open-sourced with a reference harness on the Agent Development Kit); **CodeMender**, a managed review-and-fix agent in gated preview; and Antigravity with skills and hooks. Every code change in Google Cloud is now scanned by Mantis.
+
+## Agent memory, and a healthcare customer (added 2026-11-04)
+
+- [[2026-10-28-wang-google-cloud-tech-agent-memory-architecture|Wang (Google Cloud Tech, Oct 2026)]]: [[Annie Wang]] on long-term memory for multimodal agents: facts in Cloud SQL, understanding in a vector store or Vertex AI Agent Engine's Memory Bank, extraction kept off the live path.
+- [[2026-10-20-parikh-google-cloud-hippocratic-ai-voice-agents-healthcare|Hippocratic AI on the Google Cloud channel (Oct 2026)]]: a customer story; voice agents for patient outreach on GKE, with Google's open Gemma models running millions of automated evaluations. The Google Cloud channel is added as an alias of this page so that its videos resolve here.

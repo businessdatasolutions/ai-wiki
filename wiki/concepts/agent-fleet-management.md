@@ -3,9 +3,9 @@ type: concept
 title: Agent fleet management
 aliases: ["agent fleet management", "managing agent fleets", "agent manager", "human as agent manager", "parallel agents", "agent orchestration at scale"]
 confidence: 0.75
-last_confirmed: "2026-10-30"
-source_count: 21
-accessed_at: "2026-10-30"
+last_confirmed: "2026-11-04"
+source_count: 23
+accessed_at: "2026-11-04"
 tags: [agent-fleet, parallelism, cloud-agents, isolated-workspaces, decision-fatigue, priority-queue, span-of-control, delegation, playbooks, token-economics]
 relationships:
   - type: part-of
@@ -136,3 +136,8 @@ The [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|HBS AI Insti
 
 - [[2026-10-23-grinberg-gill-claude-factory-autonomous-software|Grinberg (Factory, on the Claude channel, Oct 2026)]]: Droids running *"lights off 24 hours a day"* would monitor a deployment, notice a fall in a completion rate, test in a sandbox, propose a fix, ping a person, deploy and monitor again. *"We're not fully there yet."*
 - [[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: at 500,000 agents, that cost base *"might be twice as large as your employee cost base."* If one vendor supplies them, *"somebody else would control your opex."*
+
+## A system of record for agents, and scoring a team's runs (added 2026-11-04)
+
+- [[2026-09-29-bayer-rosmarin-chari-bcg-ai-agents-business-of-complexity|Bayer Rosmarin (Australian Unity) with BCG (Sep 2026)]]: managing agents at scale *"is akin to managing the non-deterministic intelligence as we manage today, which is human beings,"* so her start-up builds the equivalent of an HR and risk management system for agents: a system of record where business owners see outcomes and risk teams see that agents stay within appetite.
+- [[2026-11-02-holmes-warp-agentic-self-improvement-loop|Holmes (Warp, Nov 2026)]]: in a software factory, every team member's runs are scored and an agent proposes fixes across the fleet; single-player scoring misses failures that show up across people.

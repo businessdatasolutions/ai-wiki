@@ -3,9 +3,9 @@ type: concept
 aliases: ["agent development lifecycle", "ADLC", "agent SDLC", "agent lifecycle"]
 tags: [agent-development-lifecycle, adlc, ai-agents, agent-engineering, lifecycle-frameworks, sdlc-parallel, build-test-deploy-monitor, agent-governance, evals, llm-as-judge]
 confidence: 0.88
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 29
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 30
 relationships:
   - type: part-of
     target: ai-agents
@@ -304,6 +304,7 @@ SORT file.name ASC
 - **Small-N eval reports and failed judges (added 2026-10-01).** [[2026-09-30-zamora-feroz-why-your-ai-agent-fails-in-production|Zamora & Feroz]] present a 0.33 documentation-quality score as the blind spot the scorecard caught. Their own heatmap shows it rests on three scored answers, with one answer unscored and one judge failing on every question; the failing metric is also missing from the summary table. Nothing in the Test-phase literature on this page says what a report should do with judge errors: drop the cell, count it as a fail, or block the run. The one demonstrated default, silently dropping it, changes the headline number. Open question for the Test phase.
 - **Can the Monitor → Build hop be automated, and how would anyone know? (open, 2026-10-05)** [[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote|LangChain's Engine v2]] claims to cluster production issues, propose fixes, test them on a preview deployment and add evals. The only figures are the vendor's: *2x better finding* on "IssueBench", *25% better fixes* on Terminal Bench, *40% lower cost*, *70M traces scanned* and *>21K issues detected*. No baseline or method is given, and no false-positive rate. The page has no independent measurement of an automated Iterate step. The slide and the speech also disagree on whether an issue is confirmed in production or on a preview branch. Same-vendor restatement of the loop, so confidence is unchanged.
 - **Who judges correctness? (open, 2026-10-30)** [[2026-10-27-chase-langchain-interrupt-london-agents-improve-over-time|Chase (Interrupt London, Oct 2026)]] says there is no universal judge; if there were, it would run inside the agent loop. His red teaming tests consistency between similar queries, which finds that one answer is wrong without settling which.
+- **Score and edit skills, or dream into memory? (added 2026-11-04)** [[2026-11-02-holmes-warp-agentic-self-improvement-loop|Holmes (Warp, Nov 2026)]] positions scoring against nightly memory distillation: *"instead of asking the agent to dream overnight or using memory systems that operate like a black box, here we get visibility."* [[2026-05-08-bratanic-unified-agentic-memory-hooks|Bratanic]] distils sessions into memory notes in exactly such a dream phase. The two learn different things (failures turned into skill diffs, against a user's facts and preferences) and differ in what a person reviews. Recorded as a `contradicts` edge.
 
 ## From traces to environments (added 2026-10-11)
 
@@ -317,3 +318,8 @@ A fix is a harness change or a model change (SFT, distillation, RL), validated b
 ## The flywheel, and finding mistakes before users do (added 2026-10-30)
 
 [[2026-10-27-chase-langchain-interrupt-london-agents-improve-over-time|Chase (Interrupt London, Oct 2026)]] gives the loop as: run the agent, get feedback, inspect the trace, add an eval data point so as not to regress, then change weights, harness or context. LangSmith Engine automates part of it with a human approving. Production traces only show mistakes that have already happened and domain experts are costly, so he adds red teaming. *"We don't have a universal judge for correctness,"* so one method sends two semantically similar queries and investigates when the answers differ. He calls a fully self-improving agent *"very much a North Star vision."* No outcome figures are given.
+
+## The evaluate-and-improve stage, priced (added 2026-11-04)
+
+- [[2026-11-02-holmes-warp-agentic-self-improvement-loop|Holmes (Warp, Nov 2026)]]: one LLM judge per rubric, each in its own context window on a lightweight model; sample runs to control cost. On screen: $2,755.94 in scorer cost to date at $0.15 to $0.31 per scored run, and 13 of 53 agent-proposed changes approved. Rubrics are checked in as code next to the agents.
+- [[2026-10-20-parikh-google-cloud-hippocratic-ai-voice-agents-healthcare|Hippocratic AI on Google Cloud (Oct 2026)]]: Google's open Gemma models drive automated evaluation of Hippocratic's clinical voice agents: *"We run millions of evaluations with a goal of over a billion."*

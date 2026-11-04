@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 164
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 169
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -1013,3 +1013,11 @@ This is EY's own account, given on the podcast of the company that co-runs the F
 
 - [[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: four partners read AI through strategy, technology and organisation together, since *"it is not often that your CIO, your CEO, your head of strategy, your head of HR really spend some quality time together."* Deploying tools yields about *"20 cent of dollar"* of the value; the rest needs redesigned workflows, most of which *"have not [been] codified."* Hämäläinen says the returns so far have come from the internet's backbone and programming and that *"will enterprise AI be the next step function?"* is open.
 - [[2026-10-26-rendtorff-smith-chin-bcg-creating-ai-value-adoption|Rendtorff-Smith (OECD) with Chin (BCG), Oct 2026]]: firms using AI went from **8.7% to 20%** between 2023 and 2025, with more than **50%** of big firms against about **17%** of smaller ones. The bottlenecks are skills, data and *"organizational and managerial processes."* VC into AI was about $260 billion in 2025, 61% of the global total. The dataset is not named in the video.
+
+## Who stalls, and what got firms moving (added 2026-11-04)
+
+- [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani on Silicon Valley Girl (Oct 2026)]]: a *"K curve"* inside large firms: 95th-percentile users use AI 10 to 20 times as much as the median (unpublished data). Senior leaders *"have been cushioned"* from what models can do; his executive programmes make the C-suite build an app in 90 minutes. Set business targets, not *"performative targets of AI,"* then ask how AI gets there. Most companies are still at *"GPT 4.5 … advanced search."*
+- [[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort (Remote) on BNR (Oct 2026)]]: a voluntary AI course reached only enthusiasts, so Remote made it compulsory for all staff, ending with building something in Claude Code. *"Now I can say to someone: build it yourself."*
+- [[2026-09-29-bayer-rosmarin-chari-bcg-ai-agents-business-of-complexity|Bayer Rosmarin (Australian Unity) with BCG (Sep 2026)]]: firms *"are still in the phase of building experiments, and they're struggling to take things to scale"* because nothing monitors and manages agents for the long run. *"All roads lead to an IT engineering or development team,"* which cannot own every agent's business outcome.
+- [[2026-07-14-keneally-bcg-so-what-llm-or-md-patient-journey|Keneally (BCG, The So What, Jul 2026)]]: in health systems, *"point solution innovation doesn't need everyone on board,"* while an end-to-end pathway takes leadership.
+- [[2026-10-30-houssard-kordestani-liu-lundberg-mckinsey-ma-ai-value-creation|McKinsey on M&A (Inside the Strategy Room, Oct 2026)]]: a transaction as the forcing event, with three conditions: a leadership mindset to *"swing for the fences,"* AI talent, and a clean data foundation.

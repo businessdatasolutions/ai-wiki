@@ -3,8 +3,8 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-10-30"
-source_count: 77
+last_confirmed: "2026-11-04"
+source_count: 79
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -15,7 +15,7 @@ relationships:
   - type: depends-on
     target: ai-benchmarks
     via: "measurement methodology — Vantage and similar protocols define new benchmark types for human skills (not model capability)"
-accessed_at: "2026-10-30"
+accessed_at: "2026-11-04"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -394,3 +394,8 @@ Two more lists of the skills that survive. [[2026-03-31-roslansky-smith-tools-an
 
 - [[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: Catlin cites Agrawal on cheap prediction raising the value of judgment and proprietary data, and Rigobon's EPOCH framework (empathy, networking, visioning). Durth's no-regret move is AI fluency without *"giving up on building expertise and institutional knowledge and judgment and system thinking."*
 - [[2026-10-26-schwaibold-epstein-yc-new-full-stack-designer|Schwaibold (Shopify) on YC's Design Review, Oct 2026]]: *"The output isn't the issue anymore, it's us being extremely selective."* The designer as editor, whose role AI *"can't"* fill because it *"doesn't know what looks good and what looks bad."*
+
+## Problem framing, judgment and taste (added 2026-11-04)
+
+- [[2026-11-03-goel-bcg-so-what-ai-quietly-taking-from-workforce|Goel (BCG, The So What, Nov 2026)]]: the skills most at risk with AI are problem framing and judgment, so those are the ones to protect. His three signs for any daily user: *"Stop and think"*, *"I am in the driver's seat"*, and *"If in doubt, go back to the first."*
+- [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani on Silicon Valley Girl (Oct 2026)]]: models *"regress to the mean,"* so taste decides whether a one-person team gets more than the average design or analysis. *"Never take the first answer"*; prompt the model to argue the counter-case first. The skill he tells students to build is *"learning how to learn,"* which AI tutoring makes easier.

@@ -4,9 +4,9 @@ kind: venue
 aliases: ["Silicon Valley Girl", "Silicon Valley Girl podcast"]
 tags: [silicon-valley-girl, marina-mogilko, podcast, youtube-channel, founder-interviews, ai-and-work]
 confidence: 0.75
-last_confirmed: "2026-10-11"
-accessed_at: "2026-10-11"
-source_count: 2
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 3
 relationships:
   - type: published-by
     target: 2026-07-14-khan-academy-ceo-the-real-ai-opportunity-is-in-boring-industries-sal-khan
@@ -34,3 +34,7 @@ Promoted to an entity on 2026-10-11, when the channel became the `author:` of a 
 ## Debates and supersession
 
 - Interview format: claims are the guests', unverified by the channel. Episode-level sponsorship is disclosed in the video.
+
+## Karim Lakhani (added 2026-11-04)
+
+[[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Harvard AI Professor: The People Most at Risk From AI Aren't Who You Think (Oct 2026)]]: Marina Mogilko interviews [[Karim Lakhani]] on cyborgs, centaurs and self-automators, adversarial prompting, taste, executive vibe coding and the claim that middle managers are more exposed than juniors. The episode carries a sponsored segment and a newsletter pitch.

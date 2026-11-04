@@ -3,8 +3,8 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-10-30"
-source_count: 110
+last_confirmed: "2026-11-04"
+source_count: 112
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -12,7 +12,7 @@ relationships:
   - type: caused
     target: ai-deskilling
     via: "task-composition shift is one mechanism within broader employment effects"
-accessed_at: "2026-10-30"
+accessed_at: "2026-11-04"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -577,6 +577,7 @@ Brown adds one further figure worth holding: **81% of surveyed employers say the
 - **Replacement vs. augmentation in the long run.** [[2026-04-28-ai-index-report-2025|AI Index 2025]] notes that the share of orgs predicting workforce *reductions* has *declined* YoY — business leaders are becoming less convinced AI will shrink workforces. Yet Brynjolfsson 2025 shows entry-level employment *is* declining in automation-exposed occupations. Resolution: aggregate workforce expectations remain stable while compositional shifts disadvantage entry-level workers.
 - **Geographic and platform effects.** ADP data is U.S.-only; somewhat overrepresents Northeast and manufacturing/services. Whether the Brynjolfsson pattern generalizes to other countries is an open question.
 - **The task as unit of analysis (added 2026-10-08).** [[2026-10-07-richardson-reuters-econ-world-ai-at-work|Richardson (ADP)]] proposes describing the labour market by *"how many tasks are created and destroyed, not how many jobs."* [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Karunakaran (Stanford)]] argues that jobs are more than bundles of tasks and that task-exposure frameworks miss the dependencies between them. Most measurements on this page use the task unit. Recorded as a `contradicts` edge between the two source pages.
+- **Juniors or the middle layer? (added 2026-11-04)** [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani on Silicon Valley Girl (Oct 2026)]] disagrees with [[2026-04-28-brynjolfsson-canaries-coal-mine|Canaries in the Coal Mine]] about where the risk sits: he holds that junior work is not settled to be automated and that the middle layer, which resists AI, is more exposed. His evidence is usage data and observation, not employment data, and he grants other causes for the soft early-career market. Recorded as a `contradicts` edge. Confidence is not lowered: one expert view without employment data does not offset large-N payroll evidence, but it is a reason to watch mid-career employment in exposed occupations, which the Canaries design does not isolate.
 
 ## Related concepts
 
@@ -743,3 +744,8 @@ Richardson, a week later, proposes the unit Karunakaran questions (see *Debates*
 ## Thirty per cent of work, and a disagreement among partners (added 2026-10-30)
 
 [[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: Sandra Durth says 30% of current work could be done more economically by technology, spread across every job rather than removing whole ones. Lari Hämäläinen offers 100,000 employees becoming 50,000 plus 500,000 agents in three years as *"a viable scenario."* Antoine Montard argues from Keynes that productivity expands demand and creates jobs. Hämäläinen challenges him: *"If you've been a call center agent for 30 years, are you the one who's going to drive innovation?"* Catlin expects outsourced work may be cut first. Durth says academics range *"from black to white"* because their assumptions differ. A figure of *"75%"* of the workforce in the episode has no stated basis.
+
+## A middle-layer view, and a CEO keeping headcount flat (added 2026-11-04)
+
+- [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani on Silicon Valley Girl (Oct 2026)]]: *"I don't think junior work is being automated … if anything, people that may be at risk are more in the middle management layers."* His reasons: in usage data he sees, people aged 35 to 55 resist AI most, while juniors are *"fearless."* He grants that *"the causal density is high"* for the soft early-career market. See Debates.
+- [[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort (Remote) on BNR (Oct 2026)]]: Remote keeps about 2,000 staff while AI writes all its code. *"If I started the company again, I would never hire so many people. But now that I have them, I'm going to use them,"* so that they *"can do 100 times more."* Hiring replaces leavers but holds the total roughly flat. He expects most office work done on computers today to disappear.

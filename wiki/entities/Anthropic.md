@@ -5,9 +5,9 @@ aliases: ["Anthropic", "Anthropic PBC", "Claude"]
 tags: [anthropic, ai-lab, foundation-models, claude, public-benefit-corporation, long-term-benefit-trust]
 since: 2021
 confidence: 0.95
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 91
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 92
 ---
 
 # Anthropic
@@ -114,3 +114,7 @@ SORT file.name ASC
 ## Factory on the Claude channel (added 2026-10-30)
 
 [[2026-10-23-grinberg-gill-claude-factory-autonomous-software|Grinberg (Factory, on the Claude channel, Oct 2026)]]: Matan Grinberg credits Opus with less human oversight of plans. [[2026-10-25-tremante-cloudflare-connect-open-agentic-internet|Tremante (Cloudflare Connect, Oct 2026)]] shows Anthropic's crawl-to-referral ratio at 486.6 : 1 on Cloudflare Radar.
+
+## A 2,000-person company on Claude (added 2026-11-04)
+
+[[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort (Remote) on BNR (Oct 2026)]]: Remote's CEO says it uses *"a lot of models from Anthropic and a few others,"* plus security-specialised models from Anthropic and OpenAI, and finds local models not good enough for most of its work.

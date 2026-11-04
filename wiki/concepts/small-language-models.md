@@ -3,9 +3,9 @@ type: concept
 aliases: ["small language model", "small language models", "SLM", "SLMs", "SLM-first", "heterogeneous agentic systems"]
 tags: [small-language-models, slm, agentic-ai, ai-agents, inference-economics, edge-deployment, quantization, model-specialization, fine-tuning, open-weight-models, tool-calling, function-calling, heterogeneous-agents]
 confidence: 0.75
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 20
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 22
 relationships:
   - type: instance-of
     target: foundation-models
@@ -163,3 +163,8 @@ Two additions to the section above. First, LangChain's gateway now hosts a secon
 ## Small models trained on synthetic questions (added 2026-10-30)
 
 [[2026-10-28-hack-klein-browserbase-navigators-clickup-why-agents-keep-failing|Hack (ClickUp, on Navigators, Oct 2026)]] describes a recipe for retrieval subagents: a large model reads a document and writes question-answer pairs, then a model of *"a couple hundred million parameters"* is trained or RL-trained to find the answers. The data is effectively unlimited, and the result is cheap and specific to one firm's tools and index. The executive function stays with a frontier model. [[2026-10-27-chase-langchain-interrupt-london-agents-improve-over-time|Chase (Interrupt London, Oct 2026)]] sees supervised fine-tuning used mainly for narrow tasks such as classification, extraction and summarisation.
+
+## A constellation of specialist models, and local models judged not enough (added 2026-11-04)
+
+- [[2026-10-20-parikh-google-cloud-hippocratic-ai-voice-agents-healthcare|Hippocratic AI on Google Cloud (Oct 2026)]]: Polaris is more than 30 specialist models from 30 billion to 400 billion parameters, and a separate open model family (Gemma) is used to evaluate them.
+- [[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort (Remote) on BNR (Oct 2026)]]: Remote runs local models for meeting transcription, but finds them *"not nearly good enough for the kind of work we do"* and relies mainly on Anthropic's models.

@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.95
-source_count: 150
+source_count: 153
 relationships:
   - type: part-of
     target: ai-agents
@@ -20,8 +20,8 @@ relationships:
   - type: uses
     target: small-language-models
     via: "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed"
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -1091,3 +1091,9 @@ The talk also counts consumer-app features (Projects, Scheduled tasks, the attac
 - **Three units of improvement.** [[2026-10-27-chase-langchain-interrupt-london-agents-improve-over-time|Chase (Interrupt London, Oct 2026)]] treats model, harness and context as separately improvable, by hand, with a human approving, or automatically. His slide lists what the harness does: context injection, control (compaction, orchestration, Ralph loops), action, persist and observe-and-verify.
 - **Skills as memory.** [[2026-10-28-hack-klein-browserbase-navigators-clickup-why-agents-keep-failing|Hack (ClickUp, on Navigators, Oct 2026)]]: for a repeated workflow, *"the optimal strategy is have an agent document that in a skill, have that skill preloaded into an agent."* In ClickUp skills are first-class objects and *"basically function as memory."*
 - **Keep replacing it.** [[2026-10-23-grinberg-gill-claude-factory-autonomous-software|Grinberg (Factory, on the Claude channel, Oct 2026)]]: *"A model today could do what a model plus a harness could do 2 years ago,"* so a harness left unchanged is *"going to be superseded."* He asks for a rethink every month.
+
+## Memory split by kind, and a loop that edits skills (added 2026-11-04)
+
+- [[2026-10-28-wang-google-cloud-tech-agent-memory-architecture|Wang (Google Cloud Tech, Oct 2026)]]: long-term memory in two stores: exact facts in SQL, understanding in a store searched by meaning. Facts are written at once by a tool call; understanding is extracted asynchronously, off the voice agent's live path. Raw camera and audio stay out of memory.
+- [[2026-11-02-holmes-warp-agentic-self-improvement-loop|Holmes (Warp, Nov 2026)]]: skills and harness configuration as what a self-improvement loop edits. One proposed fix: a triage agent kept failing to spawn a subagent because of missing harness configuration.
+- [[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort (Remote) on BNR (Oct 2026)]]: Remote's own harness switches to cheaper models when it can, because its AI spend doubles about every month.

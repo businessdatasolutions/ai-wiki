@@ -4,9 +4,9 @@ kind: organization
 aliases: ["McKinsey", "McKinsey & Company", "McKinsey and Company", "QuantumBlack"]
 tags: [mckinsey, mgi, mckinsey-talks-operations, mckinsey-talks-talent, global-business-services, built-environment, management-consulting, quantumblack, ai-research, tech-ai-transformation, agent-augmented-workforce, outcome-underwriting, post-controversy-governance, future-arenas, omniscalers, skill-change-index, workforce-skills, corporate-venture-building]
 confidence: 0.95
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 25
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 26
 relationships:
   - type: employs
     target: Roberta-Fusaro
@@ -107,3 +107,7 @@ SORT file.name ASC
 ## The 300th Inside the Strategy Room (added 2026-10-30)
 
 [[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: Tanguy Catlin, Sandra Durth, Lari Hämäläinen and Antoine Montard on three waves of value, workflow redesign and agents as a cost base, with partners disagreeing on the record about jobs.
+
+## M&A and AI on Inside the Strategy Room (added 2026-11-04)
+
+[[2026-10-30-houssard-kordestani-liu-lundberg-mckinsey-ma-ai-value-creation|Houssard, Kordestani, Liu & Lundberg (Oct 2026)]]: four M&A partners on a market of mega deals ($1.1 trillion above $10 billion in the first half of 2026), four archetypes of AI acquisition, integration used to *"rewire"* the combined company, and AI across sourcing, diligence and integration. AI appears in about half of deal narratives, far more often than in pure AI plays.

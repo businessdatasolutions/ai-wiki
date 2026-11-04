@@ -3,15 +3,14 @@ type: concept
 aliases: ["AI washing", "AI-washing", "AI wash", "AI washing layoffs"]
 tags: [ai-washing, ai-employment-effects, labor-market, narrative, greenwashing, attribution, layoffs]
 confidence: 0.77
-last_confirmed: "2026-08-20"
-accessed_at: "2026-09-05"
-source_count: 3
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 4
 relationships:
   - type: part-of
     target: ai-employment-effects
     via: "the attribution/narrative confound layer of the AI-employment question — why the AI-as-cited-reason-for-layoffs signal is hard to take at face value"
-quality_score: 0.99
-quality_notes: ['1 near-empty section(s)']
+quality_score: 1
 ---
 
 # AI Washing
@@ -67,7 +66,6 @@ His replacement — *better value sooner, safer, happier*, anchored on the firm'
 **Confidence raised 0.72 → 0.77** on the third independent source, with the caveat that this one addresses the mechanism obliquely — it is a talk about enterprise architecture, and the AI reference is a single clause in a list.
 
 ## Debates and supersession
-## Debates and supersession
 
 - **AI washing vs. real AI displacement — not mutually exclusive.** The concept is a confound, not a denial. The empirical record on [[ai-employment-effects]] (Brynjolfsson's ~13% relative early-career decline; the AI Index's −20% software-dev employment from 2024; Massenkoff & McCrory's ~14% junior job-finding-rate drop) is load-bearing and independent of attribution games. AI washing says *some* of the AI-cited layoffs are misattributed and the true share is unknowable — not that AI has no labor-market effect. The two readings coexist: real displacement at the entry-level margin, plus a layer of over-attribution on top.
 - **How big is the washing share?** Genuinely unknown and, per Edwards, possibly unknowable "with any degree of certainty." The Giles/Challenger "AI #1 cited reason" data and the NACE "only 14% considered it" data are the two poles bracketing the uncertainty; the gap between them "is where the empirical noise lives" (per [[ai-employment-effects]]).
@@ -95,3 +93,7 @@ SORT file.name ASC
 - **Quantifying the washing share.** No source yet measures what fraction of AI-cited layoffs were planned independently. A difference-in-differences design (layoff announcements with vs. without AI framing, controlling for prior hiring and quarter performance) would be the natural instrument.
 - **Does AI washing inflate the measured "AI exposure → layoffs" correlation?** If firms selectively *attribute* layoffs to AI in AI-exposed occupations, naïve attribution studies would over-estimate the causal effect. Worth flagging to any future [[ai-employment-effects]] measurement ingest.
 - **Primary source for Altman's statement.** Carried second-hand via [[2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering|Everitt]]; a direct Altman source would substantiate it.
+
+## Beyond layoffs: AI in deal narratives (added 2026-11-04)
+
+[[2026-10-30-houssard-kordestani-liu-lundberg-mckinsey-ma-ai-value-creation|McKinsey on M&A (Inside the Strategy Room, Oct 2026)]]: McKinsey's M&A partners report that AI appears in the rationale or narrative of about half of all deals, but that for the bulk of them it is *"more, let's say, to get excitement around AI and to give the feeling to the investor … than actually the company is investing on the right thing"*; pure AI plays are *"much less than this 50%."* The first source in the wiki to apply the over-attribution pattern beyond layoffs. The mechanism is the same valuation premium Edwards describes, seen from the advisers' side.

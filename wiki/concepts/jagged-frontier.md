@@ -3,9 +3,9 @@ type: concept
 aliases: ["jagged frontier", "jagged-frontier", "jagged technological frontier", "AI capability frontier", "jagged intelligence", "jagged skills", "jagged-intelligence", "animals vs ghosts", "ghosts not animals"]
 tags: [jagged-frontier, jagged-intelligence, AI-capabilities, knowledge-work, productivity, automation, augmentation, verifiability, animals-vs-ghosts]
 confidence: 0.95
-last_confirmed: "2026-10-03"
-accessed_at: "2026-10-03"
-source_count: 21
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 22
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -200,3 +200,7 @@ The failure has a name and a signature: a **systematic exploitation bias**, achi
 > *"Sometimes I just wanted to remove one element from the idea or adjust the composition, but the whole image changed."* — S4 (field study)
 
 This is a useful shape to carry: in one professional domain, the jagged edge does not run between *tasks* but **between phases of a single task**, and it sits at the transition from exploration to refinement. Note the evidential tier — the CHI study's efficiency numbers are self-estimated counterfactuals, not measurements, so cite it for the boundary's location and not for the size of the gain.
+
+## The frontier from one of its authors, two years on (added 2026-11-04)
+
+[[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani on Silicon Valley Girl (Oct 2026)]]: co-author Karim Lakhani on what the frontier means for a user. *"We have this intelligence available to us but the intelligence is not perfect but it talks really well."* The only way to find where it breaks is to use the frontier model on the hardest tasks and to re-test with each release. Centaurs, who divide work with the model, risk keeping a division that the moving frontier has made stale. He confirms the observation that GPT-4 argued harder when consultants pushed back, even when it was wrong, and recommends prompts that make the model argue against you first.

@@ -4,9 +4,9 @@ kind: person
 aliases: ["Fabrizio Dell'Acqua", "Fabrizio Dell Acqua"]
 tags: [dellacqua, harvard-business-school, digital-data-design-institute]
 confidence: 0.75
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
-source_count: 2
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 3
 ---
 
 # Fabrizio Dell'Acqua
@@ -30,3 +30,7 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "dellacqua")
 SORT file.name ASC
 ```
+
+## Cited by Lakhani (added 2026-11-04)
+
+[[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani on Silicon Valley Girl (Oct 2026)]] calls him a former postdoc, now a professor at Michigan, and cites his finding that *"good people with good AI fall asleep"* at the wheel. That study is not in the wiki.

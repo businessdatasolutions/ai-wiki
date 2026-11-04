@@ -4,9 +4,9 @@ title: Answer engine optimization
 aliases: ["answer engine optimization", "answer engine optimisation", "AEO", "generative engine optimization", "generative engine optimisation", "GEO", "AI search optimization", "LLM visibility", "AI visibility", "brand visibility in AI answers"]
 tags: [aeo, geo, seo, answer-engines, ai-search, citations, brand-visibility, share-of-voice, prompt-tracking, consensus, earned-media, entity-richness, bot-accessibility, buyer-journey]
 confidence: 0.75
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 7
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 8
 relationships:
   - type: part-of
     target: agentic-web
@@ -144,3 +144,7 @@ The loop is iterative: define the brand, find gaps, create, publish across chann
 ## Agent optimisation, from the proxy's side (added 2026-10-30)
 
 [[2026-10-25-tremante-cloudflare-connect-open-agentic-internet|Tremante (Cloudflare Connect, Oct 2026)]]: asked whether publishers must structure content specially, he says markdown is what agents accept and lighter to serve, that large publishers keep agent-optimised alternatives, and that this optimisation is the new SEO. Cloudflare's `/crawl` endpoint generates markdown for smaller sites. He is selling that endpoint.
+
+## Health systems as publishers to the models (added 2026-11-04)
+
+[[2026-07-14-keneally-bcg-so-what-llm-or-md-patient-journey|Keneally (BCG, The So What, Jul 2026)]]: large health systems ask *"how do I influence those large language models? How do I make my information, my best practice guidelines … available to those models so that they are more likely to pick up that information and serve it up to people?"* The first case in the wiki outside marketing. Keneally also raises the question of who owns the patient relationship if consumer models move to advertising.

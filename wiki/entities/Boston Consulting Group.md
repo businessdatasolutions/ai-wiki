@@ -4,9 +4,9 @@ kind: organization
 aliases: ["Boston Consulting Group", "BCG", "BCG Henderson Institute"]
 tags: [BCG, management-consulting, henderson-institute]
 confidence: 0.85
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 13
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 17
 ---
 
 # Boston Consulting Group
@@ -62,3 +62,10 @@ BCG's *Pitching Progress* podcast, hosted by Vinay Shandal, profiles climate com
 ## With the OECD (added 2026-10-30)
 
 [[2026-10-26-rendtorff-smith-chin-bcg-creating-ai-value-adoption|Rendtorff-Smith (OECD) with Chin (BCG), Oct 2026]]: Vincent Chin interviews Sara Rendtorff-Smith on AI policy and adoption by firm size.
+
+## De-skilling, agent governance and health care on the channel (added 2026-11-04)
+
+- [[2026-11-03-goel-bcg-so-what-ai-quietly-taking-from-workforce|Goel (The So What, Nov 2026)]]: Sagar Goel, who leads the BCG Institute's Human Futures Lab, on *distributed de-skilling*, from a study of 70 C-suite leaders: 90% see overreliance on untested AI output.
+- [[2026-09-29-bayer-rosmarin-chari-bcg-ai-agents-business-of-complexity|Bayer Rosmarin with Chari (Sep 2026)]]: Sanjay Chari interviews the CEO of Australian Unity, who chairs a start-up building a *"system of record"* for AI agents. The description discloses a professional relationship between BCG and Australian Unity.
+- [[2026-07-14-keneally-bcg-so-what-llm-or-md-patient-journey|Keneally (The So What, Jul 2026)]]: Ben Keneally, Asia Pacific leader for health care services, on patients using AI as the first step in care, from a BCG survey of about 15 countries.
+- BCG is also the setting of the jagged-frontier experiment that [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani]] revisits on Silicon Valley Girl.

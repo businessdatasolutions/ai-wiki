@@ -3,9 +3,9 @@ type: concept
 title: AI coding productivity — the evidence
 aliases: ["AI coding productivity", "AI developer productivity", "developer productivity evidence", "productivity paradox in coding", "throughput vs stability"]
 confidence: 0.85
-last_confirmed: "2026-10-30"
-source_count: 14
-accessed_at: "2026-10-30"
+last_confirmed: "2026-11-04"
+source_count: 16
+accessed_at: "2026-11-04"
 tags: [rct, productivity, metr, copilot, dora, throughput, delivery-stability, perception-gap, heterogeneity, seniority, measurement]
 relationships:
   - type: part-of
@@ -138,3 +138,9 @@ Both describe low effective use despite access, which limits how far the product
 
 - [[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: Lari Hämäläinen says developers at organisations he works with measured −20%, then +20% this February, the same group, with many then refusing to work without AI. He attributes it to a new model; Tanguy Catlin adds that *"the system is adjusting,"* and says redesigned workflows go well above 20%. No study is named. The −20% is close to [[2025-07-10-becker-metr-early-2025-ai-experienced-developer-productivity|METR (2025)]], but the episode does not make that link.
 - [[2026-10-24-skidmore-cloudflare-connect-build-not-buy|Skidmore (Cloudflare Connect, Oct 2026)]]: median wait for a first review at Cloudflare went from *"hours"* to *"minutes"*, self-reported and with no before-and-after numbers.
+
+## A CEO's 100% and a consultancy's 45% (added 2026-11-04)
+
+- [[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort (Remote) on BNR (Oct 2026)]]: AI-written share of Remote's code from about 40% to 100% within 2026; per-person productivity 2 to 5 times year on year, 10 to 100 times for some. All self-estimated: *"it's very hard to measure."*
+- [[2026-10-30-houssard-kordestani-liu-lundberg-mckinsey-ma-ai-value-creation|McKinsey on M&A (Inside the Strategy Room, Oct 2026)]]: in software development, *"upwards of 45% productivity gains and 70% reduction"* in the end-to-end life cycle, stated without a source.
+- Both belong with the self-reports on this page, not with the measured studies.

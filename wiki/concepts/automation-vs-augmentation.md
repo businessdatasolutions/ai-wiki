@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-10-25"
-accessed_at: "2026-10-25"
-source_count: 95
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 97
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -547,3 +547,8 @@ All three are argument and illustration. Kropp's growth correlation across 107 c
 - **Three buckets, and a schism.** [[2026-03-31-roslansky-smith-tools-and-weapons-open-to-work|Roslansky (LinkedIn) on Tools and Weapons (Mar 2026)]]: tasks AI will automate, tasks it augments, and tasks *"so innately human or messy"* it will not do; moving work from the first two frees time for the third. Brad Smith names *"the emerging great debate"* in the industry: AI built to *"outperform humans at… most economically valuable work"* against AI built to *"empower people to do more."*
 - **Where the person sits decides whether augmentation helps.** [[2026-10-20-beauchene-bcg-so-what-ai-strategy-more-than-rollout|Beauchene (BCG, The So What, Oct 2026)]]: in a fashion company's sales forecast, AI beat the planners. Letting experienced planners revise the AI's forecast *"destroyed the reliability… compared to AI alone"*; having them supply context up front, then leaving the AI to forecast, gave the best result. The same people, in a different place in the process.
 - **Productivity as growth.** [[2026-10-20-egeriis-bain-winning-with-ai-danske-bank|Egeriis (Danske Bank) on Bain's Winning with AI (Oct 2026)]]: *"There is not a single thing that we're doing that doesn't impact growth and revenue."* Advisers' customer meetings rose from fewer than five to almost eight on average (*"not only AI"*), though the bank reports targets in cost terms because they are more credible to the market.
+
+## Cyborgs, centaurs and self-automators; AI plus clinicians (added 2026-11-04)
+
+- [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani on Silicon Valley Girl (Oct 2026)]]: three modes from the BCG experiment as positions on this page's spectrum: cyborgs solve problems jointly with the model, centaurs split tasks with it, self-automators hand it everything. *"If all you are is a meat interface to the silicon, what's your value?"* He still expects *"humans with AI"* for the foreseeable future.
+- [[2026-07-14-keneally-bcg-so-what-llm-or-md-patient-journey|Keneally (BCG, The So What, Jul 2026)]]: AI can do supervised jobs on clinicians' behalf, such as applying simple algorithms to test results, so that clinicians' time goes to the relationship. *"Health is a human-to-human contact service,"* but much of what clinicians do is administration and gatekeeping.

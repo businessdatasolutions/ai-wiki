@@ -5,9 +5,9 @@ aliases: ["Claude Code", "Claude Cowork", "Claude Co-work"]
 tags: [claude-code, anthropic, coding-agent, agent-harness, agentic-engineering, cli, routines, goal-loop, hooks, subagents, agents-md, auto-mode, permission-classifier, dynamic-workflows, claude-cowork, vertex-ai]
 affiliation: "Anthropic"
 confidence: 0.9
-last_confirmed: "2026-09-28"
-accessed_at: "2026-09-28"
-source_count: 22
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 23
 relationships:
   - type: part-of
     target: Anthropic
@@ -77,3 +77,7 @@ SORT file.name ASC
 ## As the hook for YC's "20x company" argument (added 2026-09-28)
 
 [[2026-02-14-tan-yc-the-new-way-to-build-a-startup|The New Way To Build A Startup (YC, Feb 2026)]] opens: *"If you haven't tried Claude Code in the last month, it's time to give it another shot… It feels like AGI is here."*
+
+## Every employee as a builder (added 2026-11-04)
+
+[[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort (Remote) on BNR (Oct 2026)]]: Remote's staff build their own internal apps with Claude Code in a scaffold called Labs, on one shared database, and its compulsory AI course ends with each employee building something in Claude Code. The CEO's claim: AI wrote about 40% of Remote's code at the start of 2026 and 100% by October.

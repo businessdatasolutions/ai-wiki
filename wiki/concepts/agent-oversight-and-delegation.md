@@ -3,9 +3,9 @@ type: concept
 title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
 confidence: 0.85
-last_confirmed: "2026-10-30"
-source_count: 33
-accessed_at: "2026-10-30"
+last_confirmed: "2026-11-04"
+source_count: 35
+accessed_at: "2026-11-04"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
   - type: part-of
@@ -237,3 +237,8 @@ His argument for why oversight has to be built rather than trusted borrows from 
 ## Plans no one reads (added 2026-10-30)
 
 [[2026-10-23-grinberg-gill-claude-factory-autonomous-software|Grinberg (Factory, on the Claude channel, Oct 2026)]] names *"reducing human oversight"* as the biggest gain from Opus: you can trust plans *"to the point where you literally might not even look at them,"* and going back to one is *"a very crazy corner case."* A bad plan may only show *"billions of tokens down the line."* Trust, he says, builds as people see meaningful output from multi-day work. This is a vendor's account, on its supplier's channel, and it does not examine whether unread plans have gone wrong. [[2026-10-24-skidmore-cloudflare-connect-build-not-buy|Skidmore (Cloudflare Connect, Oct 2026)]] keeps a person in the loop: *"it doesn't replace human code review."*
+
+## Accountability that drifts, and oversight without lockdown (added 2026-11-04)
+
+- [[2026-11-03-goel-bcg-so-what-ai-quietly-taking-from-workforce|Goel (BCG, The So What, Nov 2026)]]: more than half of 70 leaders say *"the blame goes to AI the moment an error is spot[ted]."* His answer is to keep ownership with people: *"I am in the driver's seat."*
+- [[2026-09-29-bayer-rosmarin-chari-bcg-ai-agents-business-of-complexity|Bayer Rosmarin (Australian Unity) with BCG (Sep 2026)]]: making agents deterministic and locking them down for every use case *"is actually removing a lot of the power of AI."* Instead, monitor them and alert people when an agent goes *"outside of risk appetite or policy."*

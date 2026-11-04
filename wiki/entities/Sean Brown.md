@@ -6,9 +6,9 @@ tags: [mckinsey, inside-the-strategy-room, podcasting, strategy, corporate-finan
 affiliation: "[[McKinsey & Company]]"
 role: "Host, Inside the Strategy Room (McKinsey Strategy & Corporate Finance Practice)"
 confidence: 0.75
-last_confirmed: "2026-09-21"
-accessed_at: "2026-09-21"
-source_count: 2
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 3
 relationships:
   - type: part-of
     target: McKinsey & Company
@@ -36,3 +36,7 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link)
 SORT file.name ASC
 ```
+
+## M&A in the fourth quarter (added 2026-11-04)
+
+Hosts [[2026-10-30-houssard-kordestani-liu-lundberg-mckinsey-ma-ai-value-creation|M&A in Q4: How AI Is Reshaping Value Creation (Oct 2026)]], a two-part episode with Kameron Kordestani, Tobias Lundberg, Benjamin Houssard and Alex Liu.

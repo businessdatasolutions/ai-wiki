@@ -6,9 +6,9 @@ tags: [annie-wang, google-cloud, google-cloud-tech, ai-builder-essentials, agent
 affiliation: "Google Cloud"
 role: "Presenter on the AI Builder Essentials series; the ADK-side voice in the loop- and graph-engineering explainers"
 confidence: 0.7
-last_confirmed: "2026-09-04"
-accessed_at: "2026-09-04"
-source_count: 2
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 3
 relationships:
   - type: part-of
     target: Google
@@ -50,3 +50,7 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "annie-wang")
 SORT file.name ASC
 ```
+
+## Agent memory architecture (added 2026-11-04)
+
+[[2026-10-28-wang-google-cloud-tech-agent-memory-architecture|AI Agent Memory Architecture (Google Cloud Tech, Oct 2026)]]: a 12-minute explainer in *The Omni App* series. Structured facts and semantic understanding belong in different stores; raw camera and audio stay out of memory; facts are written at once, understanding extracted asynchronously. Her third explainer in the wiki, and the first not about the Agent Development Kit.

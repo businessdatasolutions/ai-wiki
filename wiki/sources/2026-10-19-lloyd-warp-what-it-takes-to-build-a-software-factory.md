@@ -151,8 +151,9 @@ The full talk (25:51, `length_seconds: 1551`) from the human-curated caption tra
 
 - [[concepts/agent-harness|agent-harness]], [[concepts/agent-fleet-management|agent-fleet-management]], [[concepts/small-language-models|small-language-models]], [[concepts/ai-benchmarks|ai-benchmarks]] — updated in this ingest.
 - [[concepts/dynamic-capabilities|dynamic-capabilities]] — the two cells tagged above.
+- [[Warp]] — channel and publisher; promoted to an entity page on 2026-11-04, when [[2026-11-02-holmes-warp-agentic-self-improvement-loop|Holmes's talk on the self-improvement loop]] became its second source. That talk is the worked example of the scoring and self-improvement steps above.
 
-**Dangling** (single-source mention, deferred): Zach Lloyd, Warp, Warp Factories.
+**Dangling** (single-source mention, deferred): Zach Lloyd, Warp Factories.
 
 ## Scope and reliability
 

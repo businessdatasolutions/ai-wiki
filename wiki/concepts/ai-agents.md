@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 76
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 79
 relationships:
   - type: instance-of
     target: generative-ai
@@ -328,3 +328,9 @@ The two sections above treat agents as the web's main population and computer us
 ## Programmatic tool calling (added 2026-10-30)
 
 [[2026-10-28-hack-klein-browserbase-navigators-clickup-why-agents-keep-failing|Hack (ClickUp, on Navigators, Oct 2026)]] describes three stages of agent action: *"text in, text out"*, JSON tool calls, and programmatic tool calling, where the agent writes a script against an SDK. He prefers the last because the agent can *"dynamically compose its own tools at runtime"* and *"pass data between different tools without it entering into context."* He says he was surprised how far generalist agents rely on code for non-code work such as deep research.
+
+## Memory for voice agents, and agents in health care (added 2026-11-04)
+
+- [[2026-10-28-wang-google-cloud-tech-agent-memory-architecture|Wang (Google Cloud Tech, Oct 2026)]]: what a multimodal agent should remember after a session, and where: facts in SQL, understanding in a vector store, raw perception nowhere.
+- [[2026-10-20-parikh-google-cloud-hippocratic-ai-voice-agents-healthcare|Hippocratic AI on Google Cloud (Oct 2026)]]: outbound voice agents for routine patient care, with a human brought in for real clinical need.
+- [[2026-07-14-keneally-bcg-so-what-llm-or-md-patient-journey|Keneally (BCG, The So What, Jul 2026)]]: the next step after chat is *"an always-on health agent"* connected to wearables and records that books appointments and prompts immunisations; who provides and licenses it is open.
