@@ -6,9 +6,9 @@ tags: [anthropic-economic-index, ai-research, anthropic, claude, ai-adoption]
 parent: "[[Anthropic]]"
 since: 2025
 confidence: 0.85
-last_confirmed: "2026-06-17"
-accessed_at: "2026-06-17"
-source_count: 5
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 6
 relationships:
   - type: part-of
     target: Anthropic
@@ -65,6 +65,7 @@ See [[2026-04-28-anthropic-economic-index-q4-2025|the fourth-report source page]
 ## Cited by external research
 
 - [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson et al. 2025 (Canaries)]] uses the Anthropic Economic Index automation/augmentation classification at the occupation level for Fact 3.
+- [[2026-10-21-stanford-del-canaries-dashboard|Canaries Dashboard (Stanford Digital Economy Lab and ADP Research)]] (added 2026-11-04) keeps the Index in the monthly update. It groups occupations by their automation ratio and augmentation ratio (each type's share of total Claude usage), with a separate group for occupations with no observed usage. Through September 2026, the automation ratio tracks early-career employment declines; the augmentation ratio shows *"no clear relationship."*
 
 ## Mentioned in
 

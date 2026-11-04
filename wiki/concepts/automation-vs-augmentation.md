@@ -5,7 +5,7 @@ tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, c
 confidence: 0.95
 last_confirmed: "2026-11-04"
 accessed_at: "2026-11-04"
-source_count: 97
+source_count: 98
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -16,8 +16,8 @@ relationships:
   - type: supports
     target: ai-benchmarks
     via: "Narayanan's release-decision frame — reliability threshold required for automation deployment exceeds that for augmentation deployment; reliability is the gating dimension benchmarks have under-measured"
-quality_score: 0.98
-quality_notes: ['2 near-empty section(s)']
+quality_score: 0.99
+quality_notes: ['1 near-empty section(s)']
 ---
 
 # Automation vs. Augmentation
@@ -440,13 +440,13 @@ The organisational consequence he draws is the sharpest claim: **no middle manag
 Read against [[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson's]] *"imitation is a terrible business strategy"* argument above, the two are less opposed than they look: Brynjolfsson argues against building AI that copies what humans do, and Blomfield's loops are not human-imitating — they are doing something (continuous overnight hill-climbing) that no human organisation could do. The genuine disagreement on this page is between Blomfield and the human-in-the-loop consensus, and it is recorded on [[agent-harness]].
 
 ## Debates and supersession
-## Debates and supersession
 
 - **Is the cut binary or continuous?** Anthropic's Economic Index allows occupations to be classified as primarily-automative, primarily-augmentative, or mixed. In practice many AI uses sit on a continuum (e.g., a code assistant is augmentative when used for completion, automative when used for issue resolution). The dichotomy is useful for analysis but not always clean in the wild.
 - **Does augmentation reliably *not* displace labor?** [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson 2025]]'s Fact 3 finds no displacement in augmentative uses *for young workers*. But long-run effects (productivity J-curve, demand elasticity, eventual task automation) might cause augmentative deployments to slide toward automation over time.
 - **Augmentation can still concentrate gains.** The "equalizing effect" in [[2026-04-28-ai-index-report-2025|AI Index 2025]]'s productivity studies is at the worker level *within* a role. At the firm level, augmentation may still let the firm produce more with fewer workers — meaning the *individuals* who keep their jobs gain, but the *people who would have been hired* don't.
 - **The cut is observable now via Claude conversations.** The Anthropic Economic Index methodology — sampling millions of Claude conversations and classifying each as automative/augmentative/none — is a novel measurement instrument. Its reliability depends on Claude's user base being representative of LLM usage broadly. Cross-validation with other LLM telemetry would strengthen the methodology.
 - **Does the equalizing effect generalize beyond scripted/entry-level work?** [[2026-06-17-priest-atlantic-pwc-ai-agents-changing-business|Priest (PwC, June 2026)]] reports the opposite pattern from the customer-support equalizing effect above: across coding and (anecdotally) music-making, "the best talent gets the most from AI" despite equal platform access — top performers, not low-skill ones, extract disproportionate value. Not a direct head-to-head contradiction — Brynjolfsson's Cui data is a controlled RCT in a scripted, low-complexity customer-support task, while Priest's claim is anecdotal practitioner testimony (sponsored content, no linked methodology) about open-ended, high-complexity creative/technical work — but it's a live open question whether the equalizing effect is specific to low-complexity, high-guardrail task settings and inverts once task complexity and creative judgment rise. Watch for a controlled study on high-complexity task types to resolve this.
+- **The augmentation half of Canaries Fact 3 has weakened (added 2026-11-04).** In the paper, the most augmentation-heavy quintile showed the fastest employment growth for young workers. In the [[2026-10-21-stanford-del-canaries-dashboard|Canaries Dashboard]] at September 2026 that quintile stands at 90.2 for ages 22–25 (November 2022 = 100), close to the most automation-heavy quintile at 89.1. The dashboard says only that the augmentation ratio shows *"no clear relationship."* The cell is small (0.59% of sample employment) and the sample has rolled forward since the paper. The automation half holds. The contrast is no longer *automation displaces, augmentation grows*; it is *automation displaces, augmentation is not clearly protective*.
 
 ## Related concepts
 
@@ -552,3 +552,14 @@ All three are argument and illustration. Kropp's growth correlation across 107 c
 
 - [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani on Silicon Valley Girl (Oct 2026)]]: three modes from the BCG experiment as positions on this page's spectrum: cyborgs solve problems jointly with the model, centaurs split tasks with it, self-automators hand it everything. *"If all you are is a meat interface to the silicon, what's your value?"* He still expects *"humans with AI"* for the foreseeable future.
 - [[2026-07-14-keneally-bcg-so-what-llm-or-md-patient-journey|Keneally (BCG, The So What, Jul 2026)]]: AI can do supervised jobs on clinicians' behalf, such as applying simple algorithms to test results, so that clinicians' time goes to the relationship. *"Health is a human-to-human contact service,"* but much of what clinicians do is administration and gatekeeping.
+
+## The automation ratio as a monthly labour indicator (added 2026-11-04)
+
+The [[2026-10-21-stanford-del-canaries-dashboard|Canaries Dashboard]] keeps the [[Anthropic Economic Index]] split in its monthly update, grouping occupations by the share of their Claude usage that is automation (full delegation) or augmentation (collaboration). Ages 22–25, September 2026, November 2022 = 100:
+
+| Usage share quintile | No usage | 1 (least) | 2 | 3 | 4 | 5 (most) |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Automation ratio | 105.6 | 107.8 | 114.2 | 98.8 | 96.0 | **89.1** |
+| Augmentation ratio | 105.6 | 98.5 | 91.7 | 102.0 | 101.2 | **90.2** |
+
+The page: *"occupations with a higher share of automation in total usage see declines or more muted increases in the employment index,"* while *"there is no clear monotonic relationship"* for the augmentation share. *"Accordingly, the character of AI usage could shape the labor market effects of AI."* This is the cut on this page measured as a time series, nearly four years after ChatGPT. See the Debates entry above for how the augmentation side has moved since the paper.

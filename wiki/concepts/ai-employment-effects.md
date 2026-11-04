@@ -4,7 +4,7 @@ aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "A
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
 last_confirmed: "2026-11-04"
-source_count: 112
+source_count: 114
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -578,6 +578,7 @@ Brown adds one further figure worth holding: **81% of surveyed employers say the
 - **Geographic and platform effects.** ADP data is U.S.-only; somewhat overrepresents Northeast and manufacturing/services. Whether the Brynjolfsson pattern generalizes to other countries is an open question.
 - **The task as unit of analysis (added 2026-10-08).** [[2026-10-07-richardson-reuters-econ-world-ai-at-work|Richardson (ADP)]] proposes describing the labour market by *"how many tasks are created and destroyed, not how many jobs."* [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Karunakaran (Stanford)]] argues that jobs are more than bundles of tasks and that task-exposure frameworks miss the dependencies between them. Most measurements on this page use the task unit. Recorded as a `contradicts` edge between the two source pages.
 - **Juniors or the middle layer? (added 2026-11-04)** [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani on Silicon Valley Girl (Oct 2026)]] disagrees with [[2026-04-28-brynjolfsson-canaries-coal-mine|Canaries in the Coal Mine]] about where the risk sits: he holds that junior work is not settled to be automated and that the middle layer, which resists AI, is more exposed. His evidence is usage data and observation, not employment data, and he grants other causes for the soft early-career market. Recorded as a `contradicts` edge. Confidence is not lowered: one expert view without employment data does not offset large-N payroll evidence, but it is a reason to watch mid-career employment in exposed occupations, which the Canaries design does not isolate.
+- **Since late 2022, or since 2024? (added 2026-11-04)** The [[2026-10-21-stanford-del-canaries-dashboard|Canaries Dashboard]] reports the authors' February 2026 update: with the broadest set of controls, declines in AI-exposed occupations become statistically significant only **in 2024**, and *"the earlier declines are likely driven by non-AI factors."* The dashboard calls its own series correlational. This narrows the paper's reading that the effect starts *"around the time of rapid proliferation of generative AI tools."* The effect is now dated later and partly attributed to other causes, without being withdrawn. The update itself (*"Canaries, Interest Rates, and Timing"*) is not yet in the wiki.
 
 ## Related concepts
 
@@ -749,3 +750,16 @@ Richardson, a week later, proposes the unit Karunakaran questions (see *Debates*
 
 - [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani on Silicon Valley Girl (Oct 2026)]]: *"I don't think junior work is being automated … if anything, people that may be at risk are more in the middle management layers."* His reasons: in usage data he sees, people aged 35 to 55 resist AI most, while juniors are *"fearless."* He grants that *"the causal density is high"* for the soft early-career market. See Debates.
 - [[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort (Remote) on BNR (Oct 2026)]]: Remote keeps about 2,000 staff while AI writes all its code. *"If I started the company again, I would never hire so many people. But now that I have them, I'm going to use them,"* so that they *"can do 100 times more."* Hiring replaces leavers but holds the total roughly flat. He expects most office work done on computers today to disappear.
+
+## The Canaries series published monthly, and both levels in one sample (added 2026-11-04)
+
+The [[Stanford Digital Economy Lab]] and [[ADP]] Research now publish the Canaries series as a monthly dashboard: [[2026-10-21-stanford-del-canaries-dashboard|Canaries Dashboard]], data through September 2026, November 2022 = 100.
+
+- **The cohort effect keeps growing.** Workers aged 22–25 in the most exposed fifth of occupations are at **87.7**, in the fourth fifth at 92.3, and in the three less-exposed fifths at 106.7–110.1. The decline has been steady: 98.1 in April 2023, 91.2 in April 2025, 88.0 in April 2026.
+- **The aggregate effect is small.** Across all ages, the most exposed fifth is at **103.9** against 107.1–110.3 for the rest. The dashboard calls the all-ages differences *"modest."* Workers aged 22–25 were 7.4% of sample employment.
+- **Occupations differ in timing.** Early-career software developers fell to about 79 by April 2025 and have held at 79–83 since. Early-career customer service representatives are still falling (80.8). Early-career home health aides are at 122.0.
+- **Gender is mostly occupational mix.** Early-career women are more concentrated in exposed occupations (43.8% in the most exposed fifth, against 32.4% of men). Their employment there has contracted 4.5% a year since November 2022, against 2.5% for men.
+
+**Why it matters here.** The [[ai-employment-effects-measurement-dispute]] thread's leading hypothesis is that the payroll finding and [[2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs|Hatzius's]] near-zero aggregate correlation measure different levels. The dashboard shows both levels in one dataset: a gap of about 21 index points for ages 22–25 and about 4 points across all ages. The decomposition is now observed, not only hypothesised; the thread stays open on the offsets and the remote-work confound.
+
+**The output side.** The lab's [[2026-10-21-stanford-del-transformation-tracker|Transformation Tracker]] rates US output, TFP and labour-productivity growth as neutral through September 2026: *"no decisive evidence of transformation."* AI is visible in who gets hired before it is visible in how much is produced.

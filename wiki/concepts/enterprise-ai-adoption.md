@@ -5,7 +5,7 @@ tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omni
 confidence: 0.95
 last_confirmed: "2026-11-04"
 accessed_at: "2026-11-04"
-source_count: 169
+source_count: 171
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -758,6 +758,7 @@ The honest caveat is that this is one enthusiast at one company, self-reported, 
 ## Debates and supersession
 
 - **High adoption vs. low maturity.** 78% adoption + 1% mature (per AI Index) and 28%+34% in Stages 1–2 + only 7% Stage 4 (per MIT CISR) describe an organization-wide scramble in early innings. Sources interpreting 78% as "AI is mainstream" are technically correct but misleading about depth. See [[ai-maturity-measurement-comparison]].
+- **Which adoption figure? (added 2026-11-04)** For firms the corpus now holds 20% (OECD official statistics, 2025), about 10–20% (US Census, before and after a wording change), 69% (an executive survey in four high-income countries) and 88% (AI Index). For US individuals it holds 28% (AI Index) and 62% (a household survey). The [[2026-07-01-stanford-del-adoption-monitor|Adoption Monitor]] sets several of them side by side and attributes the spread to *"sample size, the populations they represent, and elicitation strategy."* None is wrong; each counts something different. Quote an adoption figure only with its instrument.
 - **Methodology divergence between sources.** The AI Index uses McKinsey's binary "use in ≥1 function" instrument; MIT CISR uses a triangulated AI-effectiveness score across operations, CX, and ecosystem support, banded into 4 stages. Different definitions of "mature" — 1% (AI Index, GenAI specifically, C-suite self-report) vs. 7% (MIT CISR, Stage 4, score-based). [[ai-maturity-measurement-comparison]] tracks the cross-walk.
 - **Replacement vs. augmentation.** [[2026-04-28-ai-index-report-2025|AI Index 2025]] notes the workforce-reduction expectation is *declining*, hinting that early evidence supports augmentation (Jevons-paradox style demand expansion) over replacement. Open question: does that hold beyond 2024?
 - **Equalizing effect persistence.** Robust in early studies. Open question: as AI tools mature, do high-skill workers eventually catch up by leveraging more sophisticated workflows? Or does the effect deepen as agents handle more of what high-skill humans currently do? [[2026-06-17-priest-atlantic-pwc-ai-agents-changing-business|Priest (PwC, June 2026)]] reports a data point on the "catch up" side: across coding and (anecdotally) music-making, "the best talent gets the most from AI" — the inverse of the equalizing effect. Anecdotal practitioner testimony, not a controlled study, but a live signal that the equalizing effect may be task-complexity-dependent rather than universal — see [[automation-vs-augmentation]]'s Debates and supersession for the fuller discussion.
@@ -1021,3 +1022,13 @@ This is EY's own account, given on the podcast of the company that co-runs the F
 - [[2026-09-29-bayer-rosmarin-chari-bcg-ai-agents-business-of-complexity|Bayer Rosmarin (Australian Unity) with BCG (Sep 2026)]]: firms *"are still in the phase of building experiments, and they're struggling to take things to scale"* because nothing monitors and manages agents for the long run. *"All roads lead to an IT engineering or development team,"* which cannot own every agent's business outcome.
 - [[2026-07-14-keneally-bcg-so-what-llm-or-md-patient-journey|Keneally (BCG, The So What, Jul 2026)]]: in health systems, *"point solution innovation doesn't need everyone on board,"* while an end-to-end pathway takes leadership.
 - [[2026-10-30-houssard-kordestani-liu-lundberg-mckinsey-ma-ai-value-creation|McKinsey on M&A (Inside the Strategy Room, Oct 2026)]]: a transaction as the forcing event, with three conditions: a leadership mindset to *"swing for the fences,"* AI talent, and a clean data foundation.
+
+## Adoption figures and their instruments, side by side (added 2026-11-04)
+
+The [[Stanford Digital Economy Lab]]'s [[2026-07-01-stanford-del-adoption-monitor|Adoption Monitor]] (snapshot of 1 July 2026) collects published adoption surveys instead of running its own.
+
+- **Firms.** In an executive survey of firms in the US, UK, Germany and Australia (Yotzov, Barrero, Bloom et al., NBER 34836, fielded November 2025 to January 2026), **68.6%** use some AI technology and **74.7%** expect to within three years. US 77.5%, UK 71.3%, Germany 64.7%, Australia 59.3%. On net only about 6% of firms expect to start.
+- **What firms expect to use more and less.** Every application is expected to grow except LLM text generation, which falls from 41.5% to 31.4% of firms, and in the US from 53.5% to 28.8%. Robotics (9.1% → 20.7%) and autonomous vehicles (3.5% → 15.9%) show the largest expected gains. The page does not explain the text-generation drop.
+- **Individuals.** 61.8% of US adults use generative AI (May 2026), but only about a quarter of users use it daily. Work use is 45–52% in two surveys and falling to 32.7% in a third.
+
+Set against the corpus, the Monitor shows that firm adoption ranges from 20% to 88% depending on who is asked and what counts as use. The lower official figures ([[2026-10-26-rendtorff-smith-chin-bcg-creating-ai-value-adoption|OECD, 20%]]; [[2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs|US Census, ~10% for use in production]]) count all firms by number, and the OECD reports 50%+ for big firms against ~17% for small ones. The higher figures ask executives whether AI is used anywhere in their firm. The Monitor's own caveat applies to every figure on this page: *"widespread adoption is neither necessary nor sufficient for broader economic impact."* Its sibling [[2026-10-21-stanford-del-transformation-tracker|Transformation Tracker]] shows no break yet in US output or productivity growth.

@@ -4,7 +4,7 @@ aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-i
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
 last_confirmed: "2026-11-04"
-source_count: 81
+source_count: 83
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -470,3 +470,7 @@ Her measurement answer is a chain. Adoption is *"the easiest thing to measure"*,
 
 - [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani on Silicon Valley Girl (Oct 2026)]]: set targets for customers, R&D and operations, *"not performative targets of AI,"* then work backwards to what AI must do.
 - [[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort (Remote) on BNR (Oct 2026)]]: a CEO's estimate of 2 to 5 times individual productivity, with headcount kept so that staff *"can do 100 times more."* No firm-level output figure is given, so the claim stays at the individual level this page warns about.
+
+## No break yet at the level of the economy (added 2026-11-04)
+
+The trap describes individual time saved that never becomes firm-level output. The [[Stanford Digital Economy Lab]]'s [[2026-10-21-stanford-del-transformation-tracker|Transformation Tracker]] measures the same gap one level up. Through September 2026 it rates US output growth (2.35%), TFP growth (0.8% in 2025) and labour-productivity growth (2.5%) as neutral: *"no break from recent levels."* Its sibling [[2026-07-01-stanford-del-adoption-monitor|Adoption Monitor]] reports 62% of US adults using generative AI, and warns that *"widespread adoption is neither necessary nor sufficient for broader economic impact."* Together they give the trap's economy-wide form: adoption has spread, and the aggregates have not moved. This matches [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey's]] *"adoption for what?"* and [[2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs|Hatzius's]] decade-long diffusion estimate.

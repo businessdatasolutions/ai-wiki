@@ -4,9 +4,9 @@ title: Technology adoption theories
 aliases: ["technology adoption theories", "adoption theories", "classical adoption theories", "TAM", "Technology Acceptance Model", "UTAUT", "UTAUT2", "Unified Theory of Acceptance and Use of Technology", "diffusion of innovations", "Diffusion of Innovation", "DOI theory", "Rogers' diffusion of innovations", "TOE framework", "technology-organization-environment", "technology–organization–environment framework"]
 tags: [adoption-theory, tam, utaut, diffusion-of-innovations, rogers, toe-framework, tornatzky-fleischer, information-systems-research, firm-level, individual-level, ai-adoption]
 confidence: 0.85
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 10
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 11
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -107,3 +107,9 @@ In the Q&A, Karunakaran adds why peers matter more for generative AI than for ER
 
 - [[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: Montard's history runs from steam and electricity through Solow's 1987 line to e-commerce (about 20 years to 10% of retail): *"the technology becomes available very quickly, but the full … economic impact … take[s] quite a bit of time."*
 - [[2026-10-26-rendtorff-smith-chin-bcg-creating-ai-value-adoption|Rendtorff-Smith (OECD) with Chin (BCG), Oct 2026]]: *"can you absorb it? As you absorb it, what value do you create?"* She treats absorption as a separate stage from access.
+
+## The extensive and intensive margins, measured separately (added 2026-11-04)
+
+The [[2026-07-01-stanford-del-adoption-monitor|Adoption Monitor]] separates the two margins that the classical models fold into one *"use"* variable. On the **extensive margin** (any use), 61.8% of US adults used generative AI in May 2026, up from 44.6% in August 2024. On the **intensive margin** (how often), about a quarter of users use it daily, a share that has barely moved. The page calls the two patterns *"distinct."* For firms it reports the extensive margin nearly saturated: 68.6% already use some AI and a net 6% more expect to start within three years.
+
+Two consequences for the theories. Diffusion of innovations (DOI) predicts an S-curve on the extensive margin, and the individual series still rises. But a high extensive-margin figure says little about intensity, which is where productivity effects would come from. The Monitor puts it plainly: adoption is *"neither necessary nor sufficient for broader economic impact."* It also shows self-reported use depends on the instrument: three US work-use surveys diverge, with one falling a third in a year. TAM and UTAUT studies, built almost entirely on self-report, inherit that problem.

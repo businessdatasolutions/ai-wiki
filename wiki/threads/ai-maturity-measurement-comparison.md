@@ -92,6 +92,12 @@ Caveats: N=1, self-reported, unaudited, and selected for having a story worth br
 
 *Partial answer, same day.* The first half was answered hours after this section was written, in the same-day sister thread [[threads/ai-worker-maturity-levels|ai-worker-maturity-levels]] → [[syntheses/ai-worker-maturity-levels|synthesis]]: a six-level scale (L0 Bystander → L5 Multiplier) across six assessable dimensions, fused from seven published ladders plus Blum's lived trajectory, operationalised — since the 2026-09-04 fold — as **The AI Worker Maturity Scale v3** (`inspiration/ai-worker-maturity-model.html`, published via Pages): the calibrated 15-gate engine from the local edition carrying the remote edition's design, cited action layer and L0 floor. Still open here: the scale is corpus-derived and **unvalidated against outcomes**, and the *composition* half — how worker-level maturity aggregates to firm stages — remains this thread's question.
 
+### Adoption figures by instrument, side by side (added 2026-11-04)
+
+The [[2026-07-01-stanford-del-adoption-monitor|Stanford Digital Economy Lab's Adoption Monitor]] is the first source in the corpus that sets several adoption instruments side by side for one country and says why they differ: *"sample size, the populations they represent, and elicitation strategy."* With what the wiki already holds, firm adoption runs from **~10–20%** (US Census, before and after a wording change, per Hatzius) and **20%** (OECD official statistics) to **69%** (an executive survey in four high-income countries, Yotzov et al.) and **88%** (AI Index). US individual adoption runs from **28%** (AI Index) to **62%** (Bick, Blandin & Deming). Three US work-use surveys diverge: two near 50% and rising, one at 33% and falling.
+
+For this thread the lesson is the same one the maturity instruments taught: *adoption* is as instrument-bound as *maturity*. The high-adoption, low-maturity gap above may be partly a gap between generous adoption instruments and strict maturity ones. The Monitor also separates the extensive margin (any use) from the intensive margin (daily use: about a quarter of users). That is a first, crude step from adoption toward maturity.
+
 ## What's missing / candidate sources to find
 
 - **Updated CISR Future Ready Survey wave** (post-2022, ideally 2024). If it exists in the wiki later, ingest it to see if Stage distributions shifted.

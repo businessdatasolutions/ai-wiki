@@ -1,0 +1,37 @@
+Usage Group,Age Group,Usage Group,Share
+No usage,Early Career 1 (22-25),No usage,0.4366
+No usage,Early Career 2 (26-30),No usage,0.5992
+No usage,Developing (31-34),No usage,0.49179999999999996
+No usage,Mid-Career 1 (35-40),No usage,0.6667000000000001
+No usage,Mid-Career 2 (41-49),No usage,0.9542999999999999
+No usage,Senior (50+),No usage,1.619
+Quintile 1 (least usage),Early Career 1 (22-25),Quintile 1 (least usage),0.772
+Quintile 1 (least usage),Early Career 2 (26-30),Quintile 1 (least usage),1.189
+Quintile 1 (least usage),Developing (31-34),Quintile 1 (least usage),0.9754
+Quintile 1 (least usage),Mid-Career 1 (35-40),Quintile 1 (least usage),1.294
+Quintile 1 (least usage),Mid-Career 2 (41-49),Quintile 1 (least usage),1.7340000000000002
+Quintile 1 (least usage),Senior (50+),Quintile 1 (least usage),2.861
+Quintile 2,Early Career 1 (22-25),Quintile 2,0.5957
+Quintile 2,Early Career 2 (26-30),Quintile 2,1.1480000000000001
+Quintile 2,Developing (31-34),Quintile 2,1.02
+Quintile 2,Mid-Career 1 (35-40),Quintile 2,1.409
+Quintile 2,Mid-Career 2 (41-49),Quintile 2,1.87
+Quintile 2,Senior (50+),Quintile 2,3.004
+Quintile 3,Early Career 1 (22-25),Quintile 3,1.6209999999999998
+Quintile 3,Early Career 2 (26-30),Quintile 3,2.787
+Quintile 3,Developing (31-34),Quintile 3,2.5340000000000003
+Quintile 3,Mid-Career 1 (35-40),Quintile 3,3.764
+Quintile 3,Mid-Career 2 (41-49),Quintile 3,5.388
+Quintile 3,Senior (50+),Quintile 3,8.796
+Quintile 4,Early Career 1 (22-25),Quintile 4,1.379
+Quintile 4,Early Career 2 (26-30),Quintile 4,2.412
+Quintile 4,Developing (31-34),Quintile 4,2.0549999999999997
+Quintile 4,Mid-Career 1 (35-40),Quintile 4,2.8240000000000003
+Quintile 4,Mid-Career 2 (41-49),Quintile 4,3.718
+Quintile 4,Senior (50+),Quintile 4,5.896
+Quintile 5 (most usage),Early Career 1 (22-25),Quintile 5 (most usage),2.538
+Quintile 5 (most usage),Early Career 2 (26-30),Quintile 5 (most usage),4.542
+Quintile 5 (most usage),Developing (31-34),Quintile 5 (most usage),3.864
+Quintile 5 (most usage),Mid-Career 1 (35-40),Quintile 5 (most usage),5.354
+Quintile 5 (most usage),Mid-Career 2 (41-49),Quintile 5 (most usage),7.043000000000001
+Quintile 5 (most usage),Senior (50+),Quintile 5 (most usage),10.85

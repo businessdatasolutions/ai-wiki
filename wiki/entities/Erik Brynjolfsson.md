@@ -7,9 +7,9 @@ affiliation: "[[Stanford Digital Economy Lab]] / [[Stanford HAI]] / NBER"
 role: "Director, Stanford Digital Economy Lab; AI Index Steering Committee member"
 contact: "erikb@stanford.edu"
 confidence: 0.9
-last_confirmed: "2026-08-12"
-accessed_at: "2026-09-14"
-source_count: 10
+last_confirmed: "2026-11-04"
+accessed_at: "2026-11-04"
+source_count: 12
 relationships:
   - type: part-of
     target: Stanford-Digital-Economy-Lab
@@ -67,6 +67,16 @@ The two papers together describe the **task-level vs. occupation-level paradox**
 - *At the occupation level (across firms)*: AI is reducing entry-level employment in occupations where it can substitute for labor — disequalizing.
 
 Both can be true simultaneously. The mechanism: when AI raises individual productivity, total employment in that role depends on how elastic demand is for the role's output. See [[ai-employment-effects]] and [[automation-vs-augmentation]].
+
+### The lab's AI Economic Indicators (added 2026-11-04)
+
+Brynjolfsson leads the research teams behind three of the [[Stanford Digital Economy Lab]]'s public indicators, ingested together:
+
+- [[2026-10-21-stanford-del-canaries-dashboard|Canaries Dashboard]] — his Canaries paper as a monthly series with [[ADP]], to September 2026. The early-career decline in the most exposed occupations persists and deepens; across all ages the exposure gap is modest.
+- [[2026-10-21-stanford-del-transformation-tracker|Transformation Tracker]] — twelve macro indicators of transformative AI. Verdict: *"no decisive evidence of transformation at present."*
+- [[2026-07-01-stanford-del-adoption-monitor|Adoption Monitor]] — published adoption surveys of individuals and firms, side by side.
+
+The Canaries page carries an undated quote from him: *"We are now transitioning out of this investment phase into a harvest phase where those earlier efforts begin to manifest as measurable output."* This is his productivity J-curve (see Open questions below). His own Tracker does not yet show the harvest: its output, TFP and labour-productivity indicators are all neutral.
 
 ## Notable affiliations
 

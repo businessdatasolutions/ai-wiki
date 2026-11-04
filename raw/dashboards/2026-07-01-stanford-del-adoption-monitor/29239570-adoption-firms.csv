@@ -1,0 +1,41 @@
+Technology,Country,Current,Expected
+Any AI Technology,All Firms,68.5737,74.6517
+Autonomous vehicles,All Firms,3.4927,15.9168
+Data processing using ML,All Firms,28.0981,40.1266
+Image processing using ML,All Firms,19.7181,29.5281
+Other,All Firms,26.6611,33.0551
+Robotics,All Firms,9.1094,20.6531
+Text generation using LLMs,All Firms,41.484,31.4249
+Visual content creation,All Firms,28.9049,32.7433
+Any AI Technology,Australia,59.3023,64.2857
+Autonomous vehicles,Australia,6.6445,20.2658
+Data processing using ML,Australia,22.093,31.5615
+Image processing using ML,Australia,11.794,24.7508
+Other,Australia,12.7907,18.6047
+Robotics,Australia,7.4751,23.588
+Text generation using LLMs,Australia,30.0664,30.897
+Visual content creation,Australia,20.0997,28.4053
+Any AI Technology,Germany,64.6667,72.469
+Autonomous vehicles,Germany,2.6384,17.5379
+Data processing using ML,Germany,21.2796,36.6102
+Image processing using ML,Germany,14.5099,27.1935
+Other,Germany,19.7783,31.484
+Robotics,Germany,3.8582,18.3912
+Text generation using LLMs,Germany,45.9774,34.3383
+Visual content creation,Germany,29.5096,31.7528
+Any AI Technology,U.S.,77.5,76.6
+Autonomous vehicles,U.S.,4.5,14.5
+Data processing using ML,U.S.,36.9,45.9
+Image processing using ML,U.S.,26.7,31.6
+Other,U.S.,34,34.7
+Robotics,U.S.,13,22.3
+Text generation using LLMs,U.S.,53.5,28.8
+Visual content creation,U.S.,32.5,32.8
+Any AI Technology,UK,71.2539,79.1507
+Autonomous vehicles,UK,2.992,13.5821
+Data processing using ML,UK,33.2154,43.5127
+Image processing using ML,UK,24.5103,32.4202
+Other,UK,35.0194,38.3001
+Robotics,UK,13.6489,21.335
+Text generation using LLMs,UK,33.4814,29.8172
+Visual content creation,UK,29.0118,35.1062

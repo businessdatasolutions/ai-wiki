@@ -58,7 +58,7 @@ This matters for the identification strategy specifically: **AI-exposed occupati
 In rough order of how decisive each would be:
 
 1. **The Goldman methodology.** Hatzius states results without showing any method — no data source, no specification, no sample. If GIR has published the underlying note, ingesting it would let the two designs be compared directly instead of compared through an interview. **This is the single highest-value acquisition for this thread.**
-2. **A replication of Canaries at the occupation level.** Does the Brynjolfsson effect survive aggregation from the 22–26 cell to whole occupations? If the authors or anyone else has run this, it tests the leading hypothesis directly.
+2. **A replication of Canaries at the occupation level.** Does the Brynjolfsson effect survive aggregation from the 22–26 cell to whole occupations? If the authors or anyone else has run this, it tests the leading hypothesis directly. **Partly answered 2026-11-04** by the Canaries Dashboard; see the evidence update below.
 3. **A source that nets job creation the same way on both sides.** Hatzius offsets against data-centre construction; Canaries does not offset at all. A like-for-like comparison would isolate how much of the gap is the offset.
 4. **Anything separating the remote-work confound from the AI confound.** A design exploiting variation in return-to-office policy within exposure level would do it. Nothing in the corpus attempts this.
 5. **Non-US evidence.** Both measurements are US. [[2026-06-01-lf-state-of-tech-talent-europe-2026|The Linux Foundation's European survey]] and [[2026-06-25-raboresearch-ai-it-zakelijke-dienstverlening|RaboResearch's Netherlands sectoral work]] are in the corpus and use different instruments again; whether the disagreement replicates outside the US is untested.
@@ -69,8 +69,30 @@ Into a **synthesis page** if items 1 or 2 arrive and the decomposition hypothesi
 
 If the evidence does not arrive, the thread stays open. **It should not be closed by picking the more congenial number**, which is the specific failure mode it exists to prevent — the corpus currently leans sceptical (Hatzius, Brown, [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey]]) and the one source with a published method points the other way.
 
+## Evidence update (2026-11-04): both levels in one sample
+
+The [[2026-10-21-stanford-del-canaries-dashboard|Canaries Dashboard]] publishes the payroll series monthly, and it shows the occupation-level aggregate beside the age cells, from the same balanced ADP sample (September 2026, November 2022 = 100):
+
+| | Least exposed fifth | Most exposed fifth | Gap |
+| --- | ---: | ---: | ---: |
+| Ages 22–25 | 108.4 | 87.7 | ~21 points |
+| All ages | 108.2 | 103.9 | ~4 points |
+
+Workers aged 22–25 were 7.4% of sample employment in November 2022. The dashboard itself calls the all-ages differences *"modest"*. **This is the decomposition the leading hypothesis predicted, now observed in one dataset with one method.** A large effect in a small cohort and a small effect in the aggregate are both there. Hatzius's *"quite small"* occupation-level correlation and Brynjolfsson's 16–17% cohort decline can both be right.
+
+What it does not settle:
+
+- **Offsets (item 3).** The all-ages series still nets nothing against AI-driven job creation elsewhere, and the balanced panel excludes firm entry and exit, so new AI-native firms are invisible to it.
+- **Remote work (item 4).** Nothing here separates attendance from automation.
+- **Causation and timing.** The dashboard calls its series correlational. It reports the authors' February 2026 update: with the broadest controls, the declines become statistically significant only in 2024, and *"the earlier declines are likely driven by non-AI factors."* The interest-rate confound is partly addressed there; the update itself is not yet in the wiki.
+
+**Next acquisitions for this thread**, in order: the February 2026 update (*"Canaries, Interest Rates, and Timing"*) and the August 2026 revised paper (*"No Widespread Displacement, but the AI Employment Gap for Young Workers Has Widened to 19%"*), both linked from the dashboard; then the Goldman methodology (item 1), which is still missing.
+
+**Status.** Still open. The leading hypothesis has moved from *plausible* to *observed for this dataset*. A synthesis needs items 1 or 3: Goldman's method, or a like-for-like treatment of offsets.
+
 ## Related pages
 
+- [[2026-10-21-stanford-del-canaries-dashboard]] — the monthly dashboard behind the 2026-11-04 evidence update.
 - [[ai-employment-effects]] — the concept page carrying all three positions.
 - [[ai-washing]] — the attribution-confound layer; relevant if the sceptical reading holds.
 - [[automation-vs-augmentation]] — Hatzius's 25%-of-tasks decomposition (most exposure returns as time saved, 6–7% as elimination) is the augmentation reading of the same data.

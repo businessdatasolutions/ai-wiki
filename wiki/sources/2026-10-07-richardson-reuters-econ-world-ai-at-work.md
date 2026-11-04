@@ -41,7 +41,7 @@ relationships:
 
 ## TL;DR
 
-A ~31-minute episode of *Reuters Econ World* on the **[[Reuters]]** channel, published 7 October 2026. The host is **Carmel Crimmins**; the guest is **Nela Richardson**, chief economist at the payroll firm **ADP**, whose payroll records are the data behind [[2026-04-28-brynjolfsson-canaries-coal-mine|Canaries in the Coal Mine]]. The captions are auto-generated, with proper nouns corrected at acquire time. Reuters cut nine data charts into the video; they are verified and published below, and they carry most of the episode's numbers.
+A ~31-minute episode of *Reuters Econ World* on the **[[Reuters]]** channel, published 7 October 2026. The host is **Carmel Crimmins**; the guest is **Nela Richardson**, chief economist at the payroll firm **[[ADP]]**, whose payroll records are the data behind [[2026-04-28-brynjolfsson-canaries-coal-mine|Canaries in the Coal Mine]]. The captions are auto-generated, with proper nouns corrected at acquire time. Reuters cut nine data charts into the video; they are verified and published below, and they carry most of the episode's numbers.
 
 **1. "Better to use a microscope than a telescope" (1:22–3:06).** The changes are *"at the task level. They're very minute. You're not seeing them in the overall productivity numbers yet."* ADP and *"our partners at Stanford"* sort payroll data by occupation (AI exposure) and by career stage. The pattern: employment of young people in highly exposed fields (software developers, customer service reps) has fallen; young people in non-exposed fields such as home health and nursing aides have gained; and in older career stages AI exposure seems to *raise* employment: *"It's augmentative."*
 

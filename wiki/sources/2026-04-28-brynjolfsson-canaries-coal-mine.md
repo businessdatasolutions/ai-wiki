@@ -164,7 +164,7 @@ For the wiki, this paper:
 
 ## Linked entities and concepts
 
-**Entities (this wiki):** [[Erik Brynjolfsson]] (promoted from dangling), [[Stanford Digital Economy Lab]] (new). **Dangling:** Bharat Chandar, Ruyu Chen (co-authors, deferred), ADP (data provider), [[Daron Acemoglu]], David Autor (cited theory), Joshua Gans, Nick Bloom, Daniel Rock, Fei-Fei Li, Sarah Bana, Cody Cook, Phil Trammell (acknowledged).
+**Entities (this wiki):** [[Erik Brynjolfsson]] (promoted from dangling), [[Stanford Digital Economy Lab]] (new). [[ADP]] (data provider; entity added 2026-11-04). **Dangling:** Bharat Chandar, Ruyu Chen (co-authors, deferred), [[Daron Acemoglu]], David Autor (cited theory), Joshua Gans, Nick Bloom, Daniel Rock, Fei-Fei Li, Sarah Bana, Cody Cook, Phil Trammell (acknowledged).
 
 **Concepts (new):** [[ai-employment-effects]] (created by this ingest), [[automation-vs-augmentation]] (created by this ingest as a distinct conceptual framework).
 
@@ -188,3 +188,7 @@ For the wiki, this paper:
 ## Schema note
 
 This source was originally placed in `raw/articles/` by the user but is an academic working paper (formal econometric methodology, references, footnotes). Moved to `raw/papers/` and tagged `working_paper: true` in frontmatter. **Future schema evolution candidate:** the source-page schema may benefit from explicit fields for `working_paper` / `peer_reviewed` / `preprint` to make the rigor level legible without reading the body.
+
+## Continued as a monthly dashboard (added 2026-11-04)
+
+The authors said they would keep updating the series. They did: the [[2026-10-21-stanford-del-canaries-dashboard|Canaries Dashboard]] runs this paper's balanced-sample method monthly, with [[ADP]] Research as co-author. Through September 2026, early-career employment in the most exposed quintile stands at 87.7 (November 2022 = 100). Two results differ from this paper. The dashboard calls itself correlational, and cites the authors' February 2026 update finding the decline statistically significant only from 2024, with the earlier part *"likely driven by non-AI factors."* And the most-augmentation quintile, which grew fastest for young workers here, now sits near the most-automation quintile (90.2 against 89.1), though in a small cell.

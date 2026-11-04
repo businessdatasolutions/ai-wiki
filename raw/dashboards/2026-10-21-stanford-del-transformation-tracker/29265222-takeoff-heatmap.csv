@@ -1,0 +1,265 @@
+evidence,observation_date,label
+Neutral,2024-12-31,Output Growth Rate
+Neutral,2025-01-31,Output Growth Rate
+Neutral,2025-02-28,Output Growth Rate
+Neutral,2025-03-31,Output Growth Rate
+Neutral,2025-04-30,Output Growth Rate
+Neutral,2025-05-31,Output Growth Rate
+Neutral,2025-06-30,Output Growth Rate
+Neutral,2025-07-31,Output Growth Rate
+Neutral,2025-08-31,Output Growth Rate
+Neutral,2025-09-30,Output Growth Rate
+Neutral,2025-10-31,Output Growth Rate
+Neutral,2025-11-30,Output Growth Rate
+Neutral,2025-12-31,Output Growth Rate
+Neutral,2026-01-31,Output Growth Rate
+Neutral,2026-02-28,Output Growth Rate
+Neutral,2026-03-31,Output Growth Rate
+Neutral,2026-04-30,Output Growth Rate
+Neutral,2026-05-31,Output Growth Rate
+Neutral,2026-06-30,Output Growth Rate
+Neutral,2026-07-31,Output Growth Rate
+Neutral,2026-08-31,Output Growth Rate
+Neutral,2026-09-30,Output Growth Rate
+Mild,2024-12-31,TFP Growth
+Neutral,2025-01-31,TFP Growth
+Neutral,2025-02-28,TFP Growth
+Neutral,2025-03-31,TFP Growth
+Neutral,2025-04-30,TFP Growth
+Neutral,2025-05-31,TFP Growth
+Neutral,2025-06-30,TFP Growth
+Neutral,2025-07-31,TFP Growth
+Neutral,2025-08-31,TFP Growth
+Neutral,2025-09-30,TFP Growth
+Neutral,2025-10-31,TFP Growth
+Neutral,2025-11-30,TFP Growth
+Neutral,2025-12-31,TFP Growth
+Neutral,2026-01-31,TFP Growth
+Neutral,2026-02-28,TFP Growth
+Neutral,2026-03-31,TFP Growth
+Neutral,2026-04-30,TFP Growth
+Neutral,2026-05-31,TFP Growth
+Neutral,2026-06-30,TFP Growth
+Neutral,2026-07-31,TFP Growth
+Neutral,2026-08-31,TFP Growth
+Neutral,2026-09-30,TFP Growth
+Mild,2024-12-31,Labor Productivity Growth
+Neutral,2025-01-31,Labor Productivity Growth
+Neutral,2025-02-28,Labor Productivity Growth
+Neutral,2025-03-31,Labor Productivity Growth
+Neutral,2025-04-30,Labor Productivity Growth
+Neutral,2025-05-31,Labor Productivity Growth
+Neutral,2025-06-30,Labor Productivity Growth
+Neutral,2025-07-31,Labor Productivity Growth
+Neutral,2025-08-31,Labor Productivity Growth
+Neutral,2025-09-30,Labor Productivity Growth
+Neutral,2025-10-31,Labor Productivity Growth
+Neutral,2025-11-30,Labor Productivity Growth
+Neutral,2025-12-31,Labor Productivity Growth
+Neutral,2026-01-31,Labor Productivity Growth
+Neutral,2026-02-28,Labor Productivity Growth
+Neutral,2026-03-31,Labor Productivity Growth
+Neutral,2026-04-30,Labor Productivity Growth
+Neutral,2026-05-31,Labor Productivity Growth
+Neutral,2026-06-30,Labor Productivity Growth
+Neutral,2026-07-31,Labor Productivity Growth
+Neutral,2026-08-31,Labor Productivity Growth
+Neutral,2026-09-30,Labor Productivity Growth
+Mild,2024-12-31,10-Year Real Interest Rate
+Mild,2025-01-31,10-Year Real Interest Rate
+Mild,2025-02-28,10-Year Real Interest Rate
+Mild,2025-03-31,10-Year Real Interest Rate
+Mild,2025-04-30,10-Year Real Interest Rate
+Mild,2025-05-31,10-Year Real Interest Rate
+Mild,2025-06-30,10-Year Real Interest Rate
+Mild,2025-07-31,10-Year Real Interest Rate
+Mild,2025-08-31,10-Year Real Interest Rate
+Mild,2025-09-30,10-Year Real Interest Rate
+Mild,2025-10-31,10-Year Real Interest Rate
+Mild,2025-11-30,10-Year Real Interest Rate
+Mild,2025-12-31,10-Year Real Interest Rate
+Mild,2026-01-31,10-Year Real Interest Rate
+Mild,2026-02-28,10-Year Real Interest Rate
+Mild,2026-03-31,10-Year Real Interest Rate
+Mild,2026-04-30,10-Year Real Interest Rate
+Mild,2026-05-31,10-Year Real Interest Rate
+Mild,2026-06-30,10-Year Real Interest Rate
+Mild,2026-07-31,10-Year Real Interest Rate
+Mild,2026-08-31,10-Year Real Interest Rate
+Mild,2026-09-30,10-Year Real Interest Rate
+Strong,2024-12-31,Capital Share
+Strong,2025-01-31,Capital Share
+Strong,2025-02-28,Capital Share
+Strong,2025-03-31,Capital Share
+Strong,2025-04-30,Capital Share
+Strong,2025-05-31,Capital Share
+Strong,2025-06-30,Capital Share
+Strong,2025-07-31,Capital Share
+Strong,2025-08-31,Capital Share
+Strong,2025-09-30,Capital Share
+Strong,2025-10-31,Capital Share
+Strong,2025-11-30,Capital Share
+Strong,2025-12-31,Capital Share
+Strong,2026-01-31,Capital Share
+Strong,2026-02-28,Capital Share
+Strong,2026-03-31,Capital Share
+Strong,2026-04-30,Capital Share
+Strong,2026-05-31,Capital Share
+Strong,2026-06-30,Capital Share
+Strong,2026-07-31,Capital Share
+Strong,2026-08-31,Capital Share
+Strong,2026-09-30,Capital Share
+Neutral,2024-12-31,NAPCS Electronics Share
+Neutral,2025-01-31,NAPCS Electronics Share
+Neutral,2025-02-28,NAPCS Electronics Share
+Neutral,2025-03-31,NAPCS Electronics Share
+Neutral,2025-04-30,NAPCS Electronics Share
+Neutral,2025-05-31,NAPCS Electronics Share
+Neutral,2025-06-30,NAPCS Electronics Share
+Neutral,2025-07-31,NAPCS Electronics Share
+Neutral,2025-08-31,NAPCS Electronics Share
+Neutral,2025-09-30,NAPCS Electronics Share
+Neutral,2025-10-31,NAPCS Electronics Share
+Neutral,2025-11-30,NAPCS Electronics Share
+Neutral,2025-12-31,NAPCS Electronics Share
+Neutral,2026-01-31,NAPCS Electronics Share
+Neutral,2026-02-28,NAPCS Electronics Share
+Neutral,2026-03-31,NAPCS Electronics Share
+Neutral,2026-04-30,NAPCS Electronics Share
+Neutral,2026-05-31,NAPCS Electronics Share
+Neutral,2026-06-30,NAPCS Electronics Share
+Neutral,2026-07-31,NAPCS Electronics Share
+Neutral,2026-08-31,NAPCS Electronics Share
+Neutral,2026-09-30,NAPCS Electronics Share
+Neutral,2024-12-31,NAPCS Max Share
+Neutral,2025-01-31,NAPCS Max Share
+Neutral,2025-02-28,NAPCS Max Share
+Neutral,2025-03-31,NAPCS Max Share
+Neutral,2025-04-30,NAPCS Max Share
+Neutral,2025-05-31,NAPCS Max Share
+Neutral,2025-06-30,NAPCS Max Share
+Neutral,2025-07-31,NAPCS Max Share
+Neutral,2025-08-31,NAPCS Max Share
+Neutral,2025-09-30,NAPCS Max Share
+Neutral,2025-10-31,NAPCS Max Share
+Neutral,2025-11-30,NAPCS Max Share
+Neutral,2025-12-31,NAPCS Max Share
+Neutral,2026-01-31,NAPCS Max Share
+Neutral,2026-02-28,NAPCS Max Share
+Neutral,2026-03-31,NAPCS Max Share
+Neutral,2026-04-30,NAPCS Max Share
+Neutral,2026-05-31,NAPCS Max Share
+Neutral,2026-06-30,NAPCS Max Share
+Neutral,2026-07-31,NAPCS Max Share
+Neutral,2026-08-31,NAPCS Max Share
+Neutral,2026-09-30,NAPCS Max Share
+Strong,2024-12-31,Info Proc Equip / Nonres Equip Stock
+Strong,2025-01-31,Info Proc Equip / Nonres Equip Stock
+Strong,2025-02-28,Info Proc Equip / Nonres Equip Stock
+Strong,2025-03-31,Info Proc Equip / Nonres Equip Stock
+Strong,2025-04-30,Info Proc Equip / Nonres Equip Stock
+Strong,2025-05-31,Info Proc Equip / Nonres Equip Stock
+Strong,2025-06-30,Info Proc Equip / Nonres Equip Stock
+Strong,2025-07-31,Info Proc Equip / Nonres Equip Stock
+Strong,2025-08-31,Info Proc Equip / Nonres Equip Stock
+Strong,2025-09-30,Info Proc Equip / Nonres Equip Stock
+Strong,2025-10-31,Info Proc Equip / Nonres Equip Stock
+Strong,2025-11-30,Info Proc Equip / Nonres Equip Stock
+Strong,2025-12-31,Info Proc Equip / Nonres Equip Stock
+Strong,2026-01-31,Info Proc Equip / Nonres Equip Stock
+Strong,2026-02-28,Info Proc Equip / Nonres Equip Stock
+Strong,2026-03-31,Info Proc Equip / Nonres Equip Stock
+Strong,2026-04-30,Info Proc Equip / Nonres Equip Stock
+Strong,2026-05-31,Info Proc Equip / Nonres Equip Stock
+Strong,2026-06-30,Info Proc Equip / Nonres Equip Stock
+Strong,2026-07-31,Info Proc Equip / Nonres Equip Stock
+Strong,2026-08-31,Info Proc Equip / Nonres Equip Stock
+Strong,2026-09-30,Info Proc Equip / Nonres Equip Stock
+Neutral,2024-12-31,Software / Software+R&D Stock
+Neutral,2025-01-31,Software / Software+R&D Stock
+Neutral,2025-02-28,Software / Software+R&D Stock
+Neutral,2025-03-31,Software / Software+R&D Stock
+Neutral,2025-04-30,Software / Software+R&D Stock
+Neutral,2025-05-31,Software / Software+R&D Stock
+Neutral,2025-06-30,Software / Software+R&D Stock
+Neutral,2025-07-31,Software / Software+R&D Stock
+Neutral,2025-08-31,Software / Software+R&D Stock
+Neutral,2025-09-30,Software / Software+R&D Stock
+Neutral,2025-10-31,Software / Software+R&D Stock
+Neutral,2025-11-30,Software / Software+R&D Stock
+Neutral,2025-12-31,Software / Software+R&D Stock
+Neutral,2026-01-31,Software / Software+R&D Stock
+Neutral,2026-02-28,Software / Software+R&D Stock
+Neutral,2026-03-31,Software / Software+R&D Stock
+Neutral,2026-04-30,Software / Software+R&D Stock
+Neutral,2026-05-31,Software / Software+R&D Stock
+Neutral,2026-06-30,Software / Software+R&D Stock
+Neutral,2026-07-31,Software / Software+R&D Stock
+Neutral,2026-08-31,Software / Software+R&D Stock
+Neutral,2026-09-30,Software / Software+R&D Stock
+Strong,2024-12-31,Software+R&D / Nonres Fixed Stock
+Strong,2025-01-31,Software+R&D / Nonres Fixed Stock
+Strong,2025-02-28,Software+R&D / Nonres Fixed Stock
+Strong,2025-03-31,Software+R&D / Nonres Fixed Stock
+Strong,2025-04-30,Software+R&D / Nonres Fixed Stock
+Strong,2025-05-31,Software+R&D / Nonres Fixed Stock
+Strong,2025-06-30,Software+R&D / Nonres Fixed Stock
+Strong,2025-07-31,Software+R&D / Nonres Fixed Stock
+Strong,2025-08-31,Software+R&D / Nonres Fixed Stock
+Strong,2025-09-30,Software+R&D / Nonres Fixed Stock
+Strong,2025-10-31,Software+R&D / Nonres Fixed Stock
+Strong,2025-11-30,Software+R&D / Nonres Fixed Stock
+Strong,2025-12-31,Software+R&D / Nonres Fixed Stock
+Strong,2026-01-31,Software+R&D / Nonres Fixed Stock
+Strong,2026-02-28,Software+R&D / Nonres Fixed Stock
+Strong,2026-03-31,Software+R&D / Nonres Fixed Stock
+Strong,2026-04-30,Software+R&D / Nonres Fixed Stock
+Strong,2026-05-31,Software+R&D / Nonres Fixed Stock
+Strong,2026-06-30,Software+R&D / Nonres Fixed Stock
+Strong,2026-07-31,Software+R&D / Nonres Fixed Stock
+Strong,2026-08-31,Software+R&D / Nonres Fixed Stock
+Strong,2026-09-30,Software+R&D / Nonres Fixed Stock
+Neutral,2024-12-31,Energy Consumption Growth
+Neutral,2025-01-31,Energy Consumption Growth
+Neutral,2025-02-28,Energy Consumption Growth
+Neutral,2025-03-31,Energy Consumption Growth
+Neutral,2025-04-30,Energy Consumption Growth
+Neutral,2025-05-31,Energy Consumption Growth
+Neutral,2025-06-30,Energy Consumption Growth
+Neutral,2025-07-31,Energy Consumption Growth
+Neutral,2025-08-31,Energy Consumption Growth
+Neutral,2025-09-30,Energy Consumption Growth
+Neutral,2025-10-31,Energy Consumption Growth
+Mild,2025-11-30,Energy Consumption Growth
+Neutral,2025-12-31,Energy Consumption Growth
+Neutral,2026-01-31,Energy Consumption Growth
+Neutral,2026-02-28,Energy Consumption Growth
+Neutral,2026-03-31,Energy Consumption Growth
+Neutral,2026-04-30,Energy Consumption Growth
+Neutral,2026-05-31,Energy Consumption Growth
+Neutral,2026-06-30,Energy Consumption Growth
+Neutral,2026-07-31,Energy Consumption Growth
+Neutral,2026-08-31,Energy Consumption Growth
+Neutral,2026-09-30,Energy Consumption Growth
+Mild,2024-12-31,Electricity Generation Growth
+Mild,2025-01-31,Electricity Generation Growth
+Mild,2025-02-28,Electricity Generation Growth
+Mild,2025-03-31,Electricity Generation Growth
+Mild,2025-04-30,Electricity Generation Growth
+Mild,2025-05-31,Electricity Generation Growth
+Neutral,2025-06-30,Electricity Generation Growth
+Neutral,2025-07-31,Electricity Generation Growth
+Neutral,2025-08-31,Electricity Generation Growth
+Mild,2025-09-30,Electricity Generation Growth
+Mild,2025-10-31,Electricity Generation Growth
+Mild,2025-11-30,Electricity Generation Growth
+Mild,2025-12-31,Electricity Generation Growth
+Mild,2026-01-31,Electricity Generation Growth
+Neutral,2026-02-28,Electricity Generation Growth
+Neutral,2026-03-31,Electricity Generation Growth
+Neutral,2026-04-30,Electricity Generation Growth
+Mild,2026-05-31,Electricity Generation Growth
+Mild,2026-06-30,Electricity Generation Growth
+Mild,2026-07-31,Electricity Generation Growth
+Mild,2026-08-31,Electricity Generation Growth
+Mild,2026-09-30,Electricity Generation Growth
