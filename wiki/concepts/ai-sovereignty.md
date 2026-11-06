@@ -4,7 +4,7 @@ aliases: ["AI sovereignty", "sovereign AI", "digital sovereignty", "strategic au
 tags: [ai-sovereignty, sovereign-ai, digital-sovereignty, strategic-autonomy, own-vs-rent, cultural-autonomy, export-controls, industrial-policy, platform-governance, data-sovereignty]
 confidence: 0.85
 last_confirmed: "2026-10-25"
-accessed_at: "2026-10-25"
+accessed_at: "2026-11-06"
 source_count: 14
 relationships:
   - type: supports

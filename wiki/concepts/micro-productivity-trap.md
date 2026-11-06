@@ -12,7 +12,7 @@ relationships:
   - type: contradicts
     target: automation-vs-augmentation
     via: "process lock-in = automation without redesign; reinvent-the-business resists this trap"
-accessed_at: "2026-11-04"
+accessed_at: "2026-11-06"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---

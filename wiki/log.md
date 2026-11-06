@@ -10,6 +10,26 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-11-06] query | Most-heard criticisms of deploying AI, by layer: input, use, output, tertiary effects (traceable-wiki-answer)
+
+Ran `traceable-wiki-answer` on a Dutch question: the most-heard criticisms of deploying AI, sorted into input, use, output and tertiary effects, with evidence for and against and the solutions each source names. There were five `wiki-retrieve.mjs` runs: one on the full question, then one per facet, because the first ledger was almost all labour-market sources. They gave 200 unique candidates. 35 were used and 165 ignored. Four parallel subagents did the reading, one per facet, and returned findings tagged with path and section. Nine figures were then checked against the wiki text; all matched. That is above the usual 4–8 USE pages, because the four facets are broad. Hub concepts used: [[responsible-ai]], [[foundation-models]], [[ai-sovereignty]], [[ai-deskilling]], [[jagged-frontier]], [[agent-oversight-and-delegation]], [[ai-knowledge-hiding]], [[ai-generated-code-quality]], [[reward-hacking]], [[ai-benchmarks]], [[multi-agent-failure-modes]], [[ai-employment-effects]], [[ai-washing]], [[micro-productivity-trap]]. Artifacts: `inspiration/2026-11-06-kritiek-op-ai-inzet-query-trace.{md,json}`.
+
+**Gaps found.** The wiki has no substantive coverage of the following. Candidates for a future Acquire:
+- GDPR/AVG and the EU AI Act;
+- copyright cases and rulings;
+- LLM model collapse;
+- per-query energy and e-waste;
+- "workslop" (zero hits);
+- hallucination rates for legal and medical text;
+- sycophancy as a measured effect;
+- algorithmic management and worker surveillance;
+- emotional dependence on chatbots;
+- debt financing of data centres;
+- the falling labour share;
+- antitrust instruments.
+
+Not yet filed back as a synthesis.
+
 ## [2026-11-04] ingest | Three Stanford Digital Economy Lab dashboards: Canaries Dashboard, Transformation Tracker, Adoption Monitor
 
 **Acquire.** Three URLs from the lab's *AI Economic Indicators*, none in the wiki. All prose is in the static HTML, so `curl` was enough. The charts are Flourish embeds; each chart's full data series was read from its embed page (`flo.uri.sh/visualisation/<id>/embed`, variable `_Flourish_data`), 31 charts in all. Pages converted to markdown with a BeautifulSoup walk of `<main>`; a coverage check against a plain-text extraction found only site-navigation lines missing. Landed in a **new typed folder `raw/dashboards/`**: one markdown snapshot per page, with its chart data as CSV in a sibling folder (34 files, ~0.5 MB, committed; nothing gitignored). Dashboards are a new source category: they change in place, so the raw file is a dated snapshot, and the convention is now in CLAUDE.md §Acquire.
@@ -53,6 +73,13 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 **Edges.** Three `contradicts`: Lakhani → [[2026-04-28-brynjolfsson-canaries-coal-mine|Canaries]], on whether juniors or the middle layer are most at risk; Van der Voort → Ramineni, on replacing bought SaaS; Holmes → Bratanic, on scoring runs and editing skills against a nightly dream pass into memory. `supports`: Goel → Beauchene, Brynjolfsson (McKinsey Talks Talent), Lakhani; Lakhani → Dell'Acqua's jagged frontier and cybernetic teammate, the Frontier Firm initiative; Holmes → Lloyd, Chase (Interrupt London); Van der Voort → Skidmore, Sevilla, Hämäläinen et al.; McKinsey M&A → Catlin et al., BBC on AI washing; Wang → Bratanic; Hippocratic → Peron; Bayer Rosmarin → Smith & Cohen (Okta, NanoCo), Chatterjee; Keneally → Amiel & Sanders, Peron, Hippocratic.
 
 **Dangling:** Sagar Goel, BCG Institute, Human Futures Lab, Georgie Frost, Marina Mogilko, Mitch Weiss, Rem Koning, Greg Brockman, Stephen Wolfram, Benjamin Holmes, Skill Doctor, Warp Factories, Kent C. Dodds, Matt Pocock, BNR Tech, BNR Nieuwsradio, De Grote Tech Show, Joe van Burik, Ben van der Burg, Remote, Job van der Voort, AI for Actual Work, Benjamin Houssard, Kameron Kordestani, Alex Liu, Tobias Lundberg, Synopsys, Ansys, Capgemini, Syniti, Adept, Schneider Electric, Memory Bank, Cloud SQL, AlloyDB, Hippocratic AI, Vishal Parikh, Polaris, Gemma, Kelly Bayer Rosmarin, Sanjay Chari, Australian Unity, Optus, Commonwealth Bank, Ben Keneally.
+## [2026-11-04] query | LRD AISO26009 (three-day "AI Strategie en Organisatietransformatie" training) tested against the wiki (iterative-wiki-query)
+
+Ran the `iterative-wiki-query` skill to check how a course design (Learner Requirement Document, `aiso/LRD-AISO26009-lesdagen.html`) fits the wiki. Three start questions: scaling AI from experiment to structural use, the human side of AI transformation, and building and specifying with AI. Retrieval: concept, synthesis and thread sections of `index.md`, plus three `wiki-query.mjs --no-bump` runs, then grep for the LRD's own frameworks. Pages used: Level 1 [[syntheses/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]], [[2026-05-02-dutt-chatterji-ai-experimentation-to-transformation]], [[syntheses/ai-worker-maturity-levels|ai-worker-maturity-levels]], [[spec-driven-development]]. Level 2 [[micro-productivity-trap]], [[2026-05-07-carucci-resistance-as-data]], [[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge]], [[jagged-frontier]]. Level 3 [[2024-12-01-csaszar-ketkar-kim-ai-strategic-decision-making]], [[2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees]], [[2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork]], plus targeted sections of [[responsible-ai]], [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization]], [[2026-05-08-running-an-ai-native-engineering-org]] and [[2024-12-19-anthropic-building-effective-agents]]. Of the sources the LRD cites for "how AI companies build", only Schluntz & Zhang are in the wiki; Kohavi, model cards, the Responsible Scaling Policy and OpenAI Evals are not.
+
+**Gaps found.** The wiki has no substantive coverage of the EU AI Act (risk classes, Annex III); it is mentioned only in passing. Grep returns zero hits for McKinsey 7S, ADKAR, Mendelow, COM-B, Kolb, Bloom's taxonomy or Pink's *Drive*. Kotter is named four times and never developed. The synthesis already lists the missing bridge to change-management theory as an open question. These are candidates for a future Acquire. Nothing in the corpus measures LLMs fabricating citations in desk research.
+
+**No new wiki page filed.** The answer is an assessment of an external document, not a reusable wiki claim. Research log: `inspiration/2026-11-04-lrd-aiso26009-wiki-toets-research-log.md`. The output lives outside the wiki (`aiso/onderzoek/2026-11-04-lrd-wiki-toets.md`). Bumped `accessed_at` to 2026-11-04 on organizational-frameworks-for-ai-adoption, ai-worker-maturity-levels, spec-driven-development, micro-productivity-trap, jagged-frontier and responsible-ai.
 
 ## [2026-10-30] ingest | Eight videos: Hack (ClickUp, Browserbase), Catlin/Durth/Hämäläinen/Montard (McKinsey), Chase (LangChain), Rendtorff-Smith (OECD, BCG), Schwaibold (Shopify, YC), Tremante and Skidmore (Cloudflare Connect), Grinberg (Factory); 11 verified stills
 

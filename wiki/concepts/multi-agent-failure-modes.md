@@ -5,7 +5,7 @@ aliases: ["multi-agent failure modes", "MAST", "multi-agent system failure taxon
 confidence: 0.85
 last_confirmed: "2026-09-18"
 source_count: 13
-accessed_at: "2026-09-18"
+accessed_at: "2026-11-06"
 tags: [mast, multi-agent, failure-taxonomy, coordination, inter-agent-misalignment, task-verification, data-processing-inequality, isolated-workspaces, caid, token-budget]
 relationships:
   - type: part-of

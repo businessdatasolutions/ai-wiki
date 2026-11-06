@@ -5,7 +5,7 @@ aliases: ["reward hacking", "specification gaming", "benchmark contamination", "
 confidence: 0.85
 last_confirmed: "2026-10-11"
 source_count: 13
-accessed_at: "2026-10-11"
+accessed_at: "2026-11-06"
 tags: [reward-hacking, specification-gaming, benchmark-integrity, held-out-tests, cot-monitoring, obfuscation, swe-bench, evaluation, oversight-surface, goodharts-law]
 relationships:
   - type: part-of

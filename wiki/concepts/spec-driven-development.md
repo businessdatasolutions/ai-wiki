@@ -5,7 +5,7 @@ aliases: ["spec-driven development", "Spec-driven development", "specification-d
 tags: [spec-driven-development, sdd, specifications, spec-first, spec-anchored, spec-as-source, spec-kit, kiro, openspec, ears, gherkin, rfc-2119, constitution, spec-drift, under-specification, intent, vibe-coding, agentic-engineering, coding-agents, review-shift]
 confidence: 0.75
 last_confirmed: "2026-09-19"
-accessed_at: "2026-09-19"
+accessed_at: "2026-11-04"
 source_count: 6
 relationships:
   - type: part-of

@@ -4,7 +4,7 @@ aliases: ["theory-based view", "theory-based-view", "TBV", "theory-based view of
 tags: [theory-based-view, tbv, strategy-theory, felin, zenger, theory-of-value, analogical-reasoning, strategy-formulation, falsifiability, generative-theory]
 confidence: 0.8
 last_confirmed: "2026-09-09"
-accessed_at: "2026-09-09"
+accessed_at: "2026-11-06"
 source_count: 6
 relationships:
   - type: supports

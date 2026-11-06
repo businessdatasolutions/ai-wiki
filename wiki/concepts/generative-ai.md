@@ -4,7 +4,7 @@ aliases: ["GenAI", "generative AI", "generative artificial intelligence"]
 tags: [generative-ai, foundation-models, ai-adoption, ai-foundation, future-arenas]
 confidence: 0.95
 last_confirmed: "2026-09-19"
-accessed_at: "2026-09-19"
+accessed_at: "2026-11-06"
 source_count: 29
 relationships:
   - type: uses

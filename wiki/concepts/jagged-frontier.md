@@ -4,7 +4,7 @@ aliases: ["jagged frontier", "jagged-frontier", "jagged technological frontier",
 tags: [jagged-frontier, jagged-intelligence, AI-capabilities, knowledge-work, productivity, automation, augmentation, verifiability, animals-vs-ghosts]
 confidence: 0.95
 last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
+accessed_at: "2026-11-06"
 source_count: 22
 relationships:
   - type: supports
