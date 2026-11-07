@@ -7,9 +7,9 @@ parent: "Stanford University"
 director: "[[Erik Brynjolfsson]]"
 website: "https://digitaleconomy.stanford.edu"
 confidence: 0.9
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
-source_count: 8
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 9
 relationships:
   - type: employs
     target: Erik-Brynjolfsson
@@ -59,3 +59,7 @@ The lab publishes four public dashboards under the name *The AI Economic Indicat
 - **GDP-B: Surplus Observer** — consumer surplus from generative AI tools over time. Not yet ingested; the Transformation Tracker plans to use it for the productivity growth that standard accounts miss.
 
 **Answers an open question above.** The lab's output now reaches the wiki first-hand, not only through interviews. The indicators also point to two later Canaries papers not yet ingested: a February 2026 update on interest rates and timing, and an August 2026 revision headlined *"No Widespread Displacement, but the AI Employment Gap for Young Workers Has Widened to 19%."*
+
+## AI-maturity and health-care sources (added 2026-11-07)
+
+- [[2026-10-01-yotzov-barrero-bloom-nber-w34836-firm-data-on-ai]] — the October 2026 revision of the executive survey behind the Adoption Monitor's firm chart (co-author Nicholas Bloom, Stanford): 78% across seven countries, with US non-response recoded.

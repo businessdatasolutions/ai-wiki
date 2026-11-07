@@ -315,7 +315,7 @@ The closing aphorism's interpretation matters — *momentum beats perfection* is
 - **No empirical agentic-AI benchmark data.** Allen cites internal Amazon datapoints (Project Mantle 76 days, SecOps 6h→7min on log analysis, 400T network flows / day, 2.1M tokens / £45 personal-system run) but no published agentic benchmarks (no SWE-bench, no GAIA, no harness-vs-no-harness comparisons). For benchmarks, see [[ai-benchmarks]] and the harness-empirical sources cited there.
 - **No specific April 2026 Anthropic labour-market report.** Allen cites it but the wiki has not ingested it; the [[2026-04-28-anthropic-economic-index-q4-2025|Q4 2025 Economic Index]] and [[2026-05-07-anthropic-economic-index-5-learning-curves|5th-report follow-on]] are the closest available anchors. *Open follow-up.*
 - **No Nvidia SLM paper ingest.** Allen cites it as a fork-in-the-road framing but the paper isn't yet in the wiki. *Open follow-up.*
-- **No MIT NANDA report ingest.** The 95%-AI-pilots-fail headline statistic Allen anchors his middle-section critique on lives in this report and would warrant its own source page. *Open follow-up.*
+- **No MIT NANDA report ingest.** The 95%-AI-pilots-fail headline statistic Allen anchors his middle-section critique on lives in this report and would warrant its own source page. *Open follow-up.* *Resolved 2026-11-07:* ingested as [[2025-07-01-mit-nanda-genai-divide-state-of-ai-in-business-2025]] (July 2025; research period January–June 2025).
 
 ## Open questions for next ingest
 

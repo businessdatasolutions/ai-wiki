@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI knowledge hiding", "ai-knowledge-hiding", "AI knowledge hoarding", "suppression of solutions", "hidden AI use", "shadow AI knowledge hiding"]
 tags: [ai-knowledge-hiding, shadow-ai, organizational-trust, psychological-safety, enterprise-ai, disclosure-culture, knowledge-management, micro-productivity-trap]
 confidence: 0.85
-last_confirmed: "2026-10-11"
-accessed_at: "2026-11-06"
-source_count: 5
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 6
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption

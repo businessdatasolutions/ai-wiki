@@ -234,11 +234,11 @@ The W&W tagging spans 12 cells — the broadest cell-coverage of any single sour
 - [[dynamic-capabilities]] — workflow redesign as digital-transforming/redesigning-internal-structures empirical anchor; the report's 12-W&W-cell coverage is the broadest in the wiki.
 
 **Dangling first-mentions** (single-source author appearances, deferred per [§Author-entity promotion](../../CLAUDE.md#author-entity-promotion)):
-- **Lareina Yee** — MGI director, senior partner, Bay Area office.
+- **[[Lareina Yee]]** — MGI director, senior partner, Bay Area office.
 - **Anu Madgavkar** — MGI partner, New Jersey office (also named in the MGI Race-Takes-Off org-chart context).
 - **Sven Smit** — MGI chairman, senior partner, Amsterdam office (also named in MGI Race-Takes-Off org-chart context, where listed as the current MGI chair).
 - **Alexis Krivkovich** — McKinsey senior partner, Bay Area.
-- **Michael Chui** — QuantumBlack senior fellow, Bay Area (well-known McKinsey AI thought leader).
+- **[[Michael Chui]]** — QuantumBlack senior fellow, Bay Area (well-known McKinsey AI thought leader).
 - **Maria Jesus Ramirez** — MGI senior fellow, Bay Area.
 - **Diego Castresana** — McKinsey engagement manager, New York.
 - **Sir Christopher Pissarides** — Nobel laureate (Economics 2010), Regius Professor of Economics at LSE; MGI academic adviser.

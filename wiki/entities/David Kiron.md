@@ -5,9 +5,9 @@ aliases: ["David Kiron"]
 tags: [mit-smr, kiron, ai-research, organizational-learning, big-ideas-research]
 since: 2024
 confidence: 0.80
-last_confirmed: "2026-05-07"
-accessed_at: "2026-05-07"
-source_count: 2
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 3
 relationships:
   - type: part-of
     target: MIT-Sloan-Management-Review
@@ -48,3 +48,7 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "kiron")
 SORT file.name ASC
 ```
+
+## AI-maturity and health-care sources (added 2026-11-07)
+
+- [[2025-11-18-ransbotham-kiron-mit-smr-bcg-emerging-agentic-enterprise]] — co-author of the ninth MIT SMR–BCG report (November 2025) on agentic AI.

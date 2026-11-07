@@ -6,7 +6,7 @@ tags: [agentic-web, aeo, answer-engines, agentic-internet, zero-click, google-ze
 confidence: 0.75
 last_confirmed: "2026-11-07"
 accessed_at: "2026-11-07"
-source_count: 14
+source_count: 15
 relationships:
   - type: depends-on
     target: ai-agents

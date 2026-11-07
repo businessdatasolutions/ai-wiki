@@ -3,8 +3,8 @@ type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
-last_confirmed: "2026-11-04"
-source_count: 83
+last_confirmed: "2026-11-07"
+source_count: 96
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -12,7 +12,7 @@ relationships:
   - type: contradicts
     target: automation-vs-augmentation
     via: "process lock-in = automation without redesign; reinvent-the-business resists this trap"
-accessed_at: "2026-11-06"
+accessed_at: "2026-11-07"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -136,7 +136,7 @@ Seven independent sources now, five vantages (consulting / investor + academic /
 
 ### Eighth-source corroboration: the AWS-vendor-altitude *pilot purgatory* anchor ([[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen / AWS London Exec Forum 2026]] + MIT NANDA 95%)
 
-Jonathan Allen at the AWS London Executive Forum 2026 anchors the trap with the **MIT NANDA enterprise-investment report** headline (April 2026, not yet ingested): *"Despite 30 to 40 billion in enterprise investment to GenAI, this report uncovers a surprising result, and that 95% of organizations are getting zero return."* Allen names three operational failure modes mapping cleanly onto this concept's *process-lock-in / offering-lock-in* taxonomy:
+Jonathan Allen at the AWS London Executive Forum 2026 anchors the trap with the **MIT NANDA enterprise-investment report** headline (*The GenAI Divide: State of AI in Business 2025*, July 2025, research period January–June 2025; ingested 2026-11-07 as [[2025-07-01-mit-nanda-genai-divide-state-of-ai-in-business-2025|MIT NANDA report]]; the wiki previously dated it April 2026): *"Despite 30 to 40 billion in enterprise investment to GenAI, this report uncovers a surprising result, and that 95% of organizations are getting zero return."* Allen names three operational failure modes mapping cleanly onto this concept's *process-lock-in / offering-lock-in* taxonomy:
 
 - **Lack of workflow alignment** — *"AI bolted on is going to fail"*. The exact phrase the wiki has held since [[2026-05-02-dutt-chatterji-ai-experimentation-to-transformation|Dutt et al.]] introduced *process lock-in*.
 - **Wrong targets** — *"companies aiming at sales and marketing high visibility instead of back-office operations where there's higher ROI are going to struggle."*
@@ -158,7 +158,7 @@ Where the prior corroborating sources operate at consultant / vendor / practitio
 
 > *"Nearly **90 percent of companies** say they have invested in [AI], but **fewer than 40 percent** report measurable gains. The gap may reflect the fact that many projects are still in pilot or trial phases or that organizations are applying AI to discrete tasks rather than redesigning entire workflows."*
 
-The **<40%-of-90% statistic** is the workflow-redesign-disciplines-against-task-automation empirical anchor at MGI's structural-modeling altitude — more quantitatively precise than [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen / AWS's MIT NANDA 95% pilot-fail]] (different denominator: 95% of *pilots* fail to scale into production; MGI's denominator is *companies that have invested*, with <40% reporting *measurable gains* — a broader and arguably less stringent measure). Three substantive contributions to this concept:
+The **<40%-of-90% statistic** is the workflow-redesign-disciplines-against-task-automation empirical anchor at MGI's structural-modeling altitude — more quantitatively precise than [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen / AWS's MIT NANDA 95% pilot-fail]] (different denominator: 95% of *organisations* get zero return, by a strict definition of success, with 5% of task-specific tools reaching production per the [[2025-07-01-mit-nanda-genai-divide-state-of-ai-in-business-2025|MIT NANDA report]]; MGI's denominator is *companies that have invested*, with <40% reporting *measurable gains* — a broader and arguably less stringent measure). Three substantive contributions to this concept:
 
 **(a) The diagnostic framing — workflow vs task as the difference between failure and value capture**: *"In banking, for example, this would be the difference between offering employees access to a chatbot for ad hoc use and deploying custom agents alongside people in a reimagined process to approve, process, and manage loans more efficiently and deliver better customer service. Unlocking larger productivity gains from AI will require reimagining workflows along the lines of the latter, rather than taking a task-based approach."* The framing converges with [[2026-05-02-dutt-chatterji-ai-experimentation-to-transformation|Dutt et al. / Bain]]'s *offering-lock-in* and *process-lock-in* but at the workflow-design layer rather than the strategic-business-design layer.
 
@@ -293,7 +293,7 @@ The BBC's *AI Decoded* panel states the trap in the plainest language the page h
 
 **Dr Stephanie Hare's radiology worked example** is the page's clearest single illustration of the mechanism, and unusually legible because the bottleneck is regulatory rather than cultural: using AI to read X-rays, MRIs and CT scans faster "doesn't mean that you're necessarily going to cut patient waiting lists or get faster treatment for people, because the scan is just one of many, many tasks, all of which have to be signed off. Healthcare is highly regulated by doctors the whole way through. Well, those doctors aren't getting more time just because the scans are being read faster. **So those read scans pile up**, but everybody still has to then put them through the same old processes." Her conclusion is the page's standard prescription reached independently: "we'll have to rethink a lot of workflows from the ground up."
 
-Three quantitative anchors from the episode. **PwC's Davos survey of ~4,500 CEOs across 95 countries: 56% have yet to see a return on their generative-AI investment, and only one in eight can claim an actual cost saving or revenue generation** — a larger and more recent sampling frame than the MIT 95% figure the page carries via [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen / AWS]], and one that Peter Grant explicitly prefers on those grounds (the MIT study sampled 153 companies). **A ~30% pilot-to-production ratio** in Grant's own client index — of ten pilots running, roughly three reach production workflows — which is the quantified form of Allen's "pilot purgatory." And a **3:1 ratio of AI tool access to AI training access** in British businesses, which is the training-side correlate of the page's organisational-change-dominates finding.
+Three quantitative anchors from the episode. **PwC's Davos survey of ~4,500 CEOs across 95 countries: 56% have yet to see a return on their generative-AI investment, and only one in eight can claim an actual cost saving or revenue generation** (as Grant put it; [[2026-01-19-pwc-global-ceo-survey-2026|PwC's release]] says 12% report both cost and revenue benefits, and the 56% concerns AI in general) — a larger and more recent sampling frame than the MIT 95% figure the page carries via [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen / AWS]], and one that Peter Grant explicitly prefers on those grounds (Grant: "153 companies"; the MIT NANDA report's survey covered 153 senior leaders at four conferences, alongside 52 interviews). **A ~30% pilot-to-production ratio** in Grant's own client index — of ten pilots running, roughly three reach production workflows — which is the quantified form of Allen's "pilot purgatory." And a **3:1 ratio of AI tool access to AI training access** in British businesses, which is the training-side correlate of the page's organisational-change-dominates finding.
 
 James Kuht names the training failure precisely, in a way the page's existing sources gesture at but do not isolate — the **imagination gap**. Training that does happen "focuses very much on how do you use the tool. Well, you write in the box and you click enter… It's pretty easy to actually use it." What is hard is "helping people cross this imagination gap between *I know how to write in the box* and *I know how to use this tool to reinvent how I actually work* — and use my time to deliver value, not just do things faster and **push a bottleneck onto someone else**." That last clause is the trap stated from inside the individual role. Grant's complementary diagnosis at the change-management layer: firms "have just given people the keys to the car without teaching them to drive."
 

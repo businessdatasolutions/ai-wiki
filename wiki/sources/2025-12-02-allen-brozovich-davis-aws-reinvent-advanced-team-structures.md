@@ -117,7 +117,7 @@ See TL;DR item 3. Additional detail: Danske Bank's overall AI program is CEO-man
 - **No USE/COMPOSE/BUILD, hourglass-organization, moats-erosion, or Project Mantle content** — all confirmed London-edition (May 2026) additions; see the relationships block.
 - **No quantified MTTR or SecOps-log-analysis figures** — Allen's log-analysis-improvement claim is qualitative here ("dramatic") where the London edition supplies a 6h→7min figure.
 - **No ingest of Peter Hinssen's *The Day After Tomorrow* or Ishit Vachhrajani's own talk/blog** — both are cited by Brozovich but not yet wiki sources in their own right. *Open follow-up.*
-- **No ingest of the MIT NANDA report itself** — cited here for a third time across the AWS "leader's guide" franchise (also cited on the London and, per that source's relationship notes, likely the Sydney edition); still not an independent wiki source. *Open follow-up, now stronger given the repeat citation count.*
+- **No ingest of the MIT NANDA report itself** — cited here for a third time across the AWS "leader's guide" franchise (also cited on the London and, per that source's relationship notes, likely the Sydney edition); still not an independent wiki source. *Open follow-up, now stronger given the repeat citation count.* *Resolved 2026-11-07:* ingested as [[2025-07-01-mit-nanda-genai-divide-state-of-ai-in-business-2025]] (July 2025; research period January–June 2025).
 
 ## Open questions for next ingest
 

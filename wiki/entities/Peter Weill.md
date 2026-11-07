@@ -8,7 +8,7 @@ role: "Senior research scientist; Chairman of [[MIT CISR]]"
 confidence: 0.8
 last_confirmed: "2026-11-07"
 accessed_at: "2026-11-07"
-source_count: 3
+source_count: 4
 relationships:
   - type: part-of
     target: MIT-CISR
@@ -38,3 +38,7 @@ SORT file.name ASC
 
 - Major books authored / co-authored — Weill is a long-standing MIT CISR figure with substantial book output (the canonical roster to be filled in as sources are ingested).
 - Earlier digital-transformation maturity work that the AI Maturity model may build on.
+
+## AI-maturity and health-care sources (added 2026-11-07)
+
+- [[2025-08-21-mit-cisr-grow-enterprise-ai-maturity]] — co-author of the August 2025 briefing (Stage 4: 18%, N=152).

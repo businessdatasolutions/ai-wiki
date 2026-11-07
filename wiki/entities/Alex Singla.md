@@ -3,10 +3,10 @@ type: entity
 kind: person
 aliases: ["Alex Singla"]
 tags: [singla, mckinsey, quantumblack, rewired, ai-leadership]
-confidence: 0.70
-last_confirmed: "2026-05-03"
-accessed_at: "2026-05-03"
-source_count: 1
+confidence: 0.75
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 2
 relationships:
   - type: part-of
     target: McKinsey-&-Company
@@ -29,3 +29,7 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "singla")
 SORT file.name ASC
 ```
+
+## AI-maturity and health-care sources (added 2026-11-07)
+
+- [[2025-11-05-mckinsey-state-of-ai-2025]] — co-author of *The state of AI in 2025*.

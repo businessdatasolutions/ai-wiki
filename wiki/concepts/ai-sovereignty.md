@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI sovereignty", "sovereign AI", "digital sovereignty", "strategic autonomy in AI", "cultural autonomy", "full-stack sovereignty"]
 tags: [ai-sovereignty, sovereign-ai, digital-sovereignty, strategic-autonomy, own-vs-rent, cultural-autonomy, export-controls, industrial-policy, platform-governance, data-sovereignty]
 confidence: 0.85
-last_confirmed: "2026-10-25"
-accessed_at: "2026-11-06"
-source_count: 14
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 15
 relationships:
   - type: supports
     target: open-source-ai

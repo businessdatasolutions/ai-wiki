@@ -4,9 +4,9 @@ kind: organization
 aliases: ["McKinsey", "McKinsey & Company", "McKinsey and Company", "QuantumBlack"]
 tags: [mckinsey, mgi, mckinsey-talks-operations, mckinsey-talks-talent, global-business-services, built-environment, management-consulting, quantumblack, ai-research, tech-ai-transformation, agent-augmented-workforce, outcome-underwriting, post-controversy-governance, future-arenas, omniscalers, skill-change-index, workforce-skills, corporate-venture-building]
 confidence: 0.95
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
-source_count: 26
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 29
 relationships:
   - type: employs
     target: Roberta-Fusaro
@@ -111,3 +111,7 @@ SORT file.name ASC
 ## M&A and AI on Inside the Strategy Room (added 2026-11-04)
 
 [[2026-10-30-houssard-kordestani-liu-lundberg-mckinsey-ma-ai-value-creation|Houssard, Kordestani, Liu & Lundberg (Oct 2026)]]: four M&A partners on a market of mega deals ($1.1 trillion above $10 billion in the first half of 2026), four archetypes of AI acquisition, integration used to *"rewire"* the combined company, and AI across sourcing, diligence and integration. AI appears in about half of deal narratives, far more often than in pure AI plays.
+
+## AI-maturity and health-care sources (added 2026-11-07)
+
+- [[2025-11-05-mckinsey-state-of-ai-2025]] — *The state of AI in 2025* (1,993 respondents, June–July 2025): 88% regular AI use, 7% of AI users fully scaled, about 6% "AI high performers" (5% or more of EBIT from AI). Authors include [[Lareina Yee]] and [[Michael Chui]]. *Superagency in the workplace* (January 2025, the likely source of the "1% mature" figure) and *The state of AI* 2026 could not be read: mckinsey.com was unreachable on 2026-11-07.

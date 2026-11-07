@@ -5,9 +5,9 @@ aliases: ["Sam Ransbotham", "Samuel Ransbotham"]
 tags: [ransbotham, boston-college, mit-smr, ai-research, big-ideas-research]
 since: 2024
 confidence: 0.8
-last_confirmed: "2026-06-02"
-accessed_at: "2026-06-02"
-source_count: 2
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 3
 relationships:
   - type: part-of
     target: MIT-Sloan-Management-Review
@@ -52,3 +52,7 @@ SORT file.name ASC
 ## Open questions
 
 - The Ransbotham team has co-authored **at least 8 annual MIT SMR × BCG AI reports** (2017–2024) cited via reference in the 8th. Earlier reports likely contain longitudinal trajectory data on Augmented Learner cohort sustainability — first-party ingestion would clarify the durability question.
+
+## AI-maturity and health-care sources (added 2026-11-07)
+
+- [[2025-11-18-ransbotham-kiron-mit-smr-bcg-emerging-agentic-enterprise]] — lead author of the ninth MIT SMR–BCG report (November 2025; 2,102 respondents): 35% use agentic AI. It does not repeat the 15% "Augmented Learners" segment.

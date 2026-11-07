@@ -5,7 +5,7 @@ tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
 last_confirmed: "2026-11-07"
 accessed_at: "2026-11-07"
-source_count: 53
+source_count: 61
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -411,3 +411,7 @@ For organisations deploying AI this is the `contextual/external-triggers` side o
 - **Ethics and co-thinking need each other.** The authors call critical use of AI outputs and ethical governance a *"dual capability"*: one without the other produces either *"uncritical adoption of AI outputs or excessive caution that stifles innovation."*
 
 Their recommended development sequence puts ethics risk management **last**, as a *"mature governance layer"* after mindset, co-thinking and connector skills. That matches [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun's]] sequence of strategy, then buy-in, then compliance, and sits uneasily with the many sources on this page that want governance designed in from the start. The paper does not reconcile the two: its own findings describe ethics committees reviewing systems *before* deployment.
+
+## Hospital AI governance, measured (added 2026-11-07)
+
+76% of Dutch hospitals have adopted an AI policy (50% in 2025), 60% have an AI board, and 53% use high-risk AI systems under the EU AI Act, whose high-risk obligations start on 1 August 2026; 16% have not yet classified their systems ([[2026-03-16-mxi-ai-monitor-ziekenhuizen-2026|M&I AI Monitor Ziekenhuizen 2026]], pp. 16, 20, 33). In US acute care hospitals, 66% have a dedicated committee for evaluating predictive models, and 57% check all or most models for bias ([[2025-09-17-astp-hospital-predictive-ai|ASTP data brief]]). External validity is the open risk: an incident-report triage model that scored AUROC 0.82 at home fell to 0.42–0.56 on another dataset ([[2025-09-17-beidler-incident-report-severity-triage-radiotherapy|Beidler, Nguyen et al. (2025)]]). See [[ai-in-health-care]].

@@ -50,6 +50,7 @@ A three-minute customer story on the **Google Cloud** channel of [[Google]], pub
 - [[2026-07-14-keneally-bcg-so-what-llm-or-md-patient-journey|Keneally (BCG, The So What)]] — consumers using AI as the first step in care, and the case for agents that help people the health system does not reach.
 - [[2026-04-09-dinakaran-yc-luminai-automating-americas-biggest-hospitals|Dinakaran (LuminAI) at YC]] — agents for hospital back-office work, the administrative side of the same staffing gap.
 - [[2026-09-20-shea-roche-langchain-jev-as-a-judge-agent-evals|Shea & Roche (LangChain)]] — comparing judges for agent evaluation; Hippocratic uses an open model as its judge at very large volume.
+- [[ai-in-health-care]] — concept page (created 2026-11-07) that sets this source beside the hospital and health-system surveys.
 
 ## What was actually ingested
 

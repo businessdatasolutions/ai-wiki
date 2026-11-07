@@ -7,9 +7,9 @@ parent: "[[Amazon]]"
 ticker: "AMZN (Amazon)"
 website: "https://aws.amazon.com"
 confidence: 0.85
-last_confirmed: "2026-10-25"
-accessed_at: "2026-10-25"
-source_count: 10
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 11
 ---
 
 # Amazon Web Services
@@ -103,3 +103,7 @@ SORT file.name ASC
 ## Partner for a bank's AI foundation (added 2026-10-25)
 
 [[2026-10-20-egeriis-bain-winning-with-ai-danske-bank|Egeriis (Danske Bank) on Bain's Winning with AI (Oct 2026)]]: Danske Bank builds its *"AI city"*, the foundational architecture its applications depend on, in partnership with AWS, with Infosys providing engineering. The CEO describes close strategic partnerships as the way a mid-sized bank gets a global view of the technology.
+
+## AI-maturity and health-care sources (added 2026-11-07)
+
+- [[2025-04-15-bessemer-healthcare-ai-adoption-index]] — co-sponsor, with Bessemer Venture Partners and Bain, of the Healthcare AI Adoption Index.

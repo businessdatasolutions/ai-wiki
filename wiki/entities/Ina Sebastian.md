@@ -8,7 +8,7 @@ role: "Research scientist, [[MIT CISR]]"
 confidence: 0.75
 last_confirmed: "2026-11-07"
 accessed_at: "2026-11-07"
-source_count: 2
+source_count: 3
 relationships:
   - type: part-of
     target: MIT-CISR
@@ -43,3 +43,7 @@ SORT file.name ASC
 ## Open questions
 
 - Her earlier CISR work on digital partnering and ecosystems is not in the wiki and probably underlies the briefing's adaptive quadrants, which depend on AI-mediated collaboration between companies.
+
+## AI-maturity sources (added 2026-11-07)
+
+- [[2025-08-21-mit-cisr-grow-enterprise-ai-maturity]] — co-author of the August 2025 briefing that re-measured CISR's four-stage AI maturity model (Stage 4: 18% in 2025, N=152, against 7% in 2022).

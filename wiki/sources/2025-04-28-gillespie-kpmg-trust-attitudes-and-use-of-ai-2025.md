@@ -32,7 +32,7 @@ relationships:
 
 ## TL;DR
 
-The fourth wave of the University of Melbourne's trust-in-AI survey, run with and funded by **KPMG** (Chair in Trust partnership). The research team, led by **Nicole Gillespie** and **Steve Lockey**, states that it designed, ran and reported the study independently. **48,340 people in 47 countries** answered an online survey between **November 2024 and mid-January 2025**. The report has three parts: the public, **employees** (Section 2) and **students** (Section 3). For 17 countries it compares with a wave run in late 2022, just before ChatGPT, which gives it a rare before-and-after on the same questions.
+The fourth wave of the University of Melbourne's trust-in-AI survey, run with and funded by **[[KPMG]]** (Chair in Trust partnership). The research team, led by **Nicole Gillespie** and **Steve Lockey**, states that it designed, ran and reported the study independently. **48,340 people in 47 countries** answered an online survey between **November 2024 and mid-January 2025**. The report has three parts: the public, **employees** (Section 2) and **students** (Section 3). For 17 countries it compares with a wave run in late 2022, just before ChatGPT, which gives it a rare before-and-after on the same questions.
 
 The wiki already cited it second-hand: [[ai-knowledge-hiding]] quotes its 57% figure through [[2026-06-10-anicich-brouwers-why-employees-arent-transparent-ai-usage|Anicich & Brouwers]]. This page adds the primary source.
 

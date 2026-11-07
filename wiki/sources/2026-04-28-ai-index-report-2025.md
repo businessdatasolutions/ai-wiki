@@ -23,12 +23,12 @@ The 8th annual Stanford HAI AI Index. **Business has gone all-in on AI in 2024**
 
 ### Enterprise adoption (the headline story)
 
-- **78% of orgs use AI** in at least one business function in 2024 (vs. 55% in 2023, ~50% during 2017–2022). McKinsey survey, n=2,854. §4.4.1.
+- **78% of orgs use AI** in at least one business function in 2024 (vs. 55% in 2023, ~50% during 2017–2022). McKinsey's July 2024 survey (n=1,491); the AI Index combines it with the February–March 2024 survey (n=1,363) for 2,854 respondents (PDF pp. 262, 441; corrected 2026-11-07). §4.4.1.
 - **71% of orgs use [[generative-ai|generative AI]]** in at least one function (vs. 33% in 2023). The "use gap" between any-AI and GenAI shrunk from 22pp to 7pp in a single year. §4.4.7.
 - Regional adoption: North America 82% (+21pp YoY), Europe 80% (+23pp), Greater China 75% (+27pp — largest jump), Developing markets 77% (+28pp), Asia-Pacific 72% (+14pp). §4.4.4.
 - High-use industries: Technology (IT 48%, marketing 47%, product 47%, software 45%); Media/telecom; Financial services. Lower-use: Consumer goods, Advanced industries, Business services. §4.4.2.
 - Top GenAI use cases: marketing strategy content (27%), knowledge management (19%), personalization (19%), design (14%), code creation (13%). §4.4.5.
-- **Only 1% of C-suite executives describe their GenAI rollouts as "mature."** Most companies are still capturing value at small scale.
+- **Only 1% of C-suite executives describe their GenAI rollouts as "mature."** Most companies are still capturing value at small scale. Source: *"a complementary survey of C-suite executives in developed markets"* (PDF p. 266), which the AI Index does not cite; most likely McKinsey's *Superagency in the workplace* (January 2025), not the 2,854-respondent adoption sample (note added 2026-11-07; the Superagency report itself could not be reached).
 
 ### Financial impact (real but modest)
 

@@ -156,6 +156,7 @@ The closing aphorism (30:01): *"The level of aggression and ambition you can hav
 - **[[concepts/ai-employment-effects|ai-employment-effects]]** — operational teams whose *"entire job is basically to look at these faxes"* are the population whose work Luminai replaces or transforms. Source-count: +1.
 
 **Dangling** (single-source mentions, deferred): Aaron Epstein, Kesava Kirupa Dinakaran, Luminai, Cleveland Clinic, Peak XV, United World College.
+- [[ai-in-health-care]] — concept page (created 2026-11-07) that sets this source beside the hospital and health-system surveys.
 
 ## Caveats
 

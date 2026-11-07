@@ -4,9 +4,9 @@ title: Technology adoption theories
 aliases: ["technology adoption theories", "adoption theories", "classical adoption theories", "TAM", "Technology Acceptance Model", "UTAUT", "UTAUT2", "Unified Theory of Acceptance and Use of Technology", "diffusion of innovations", "Diffusion of Innovation", "DOI theory", "Rogers' diffusion of innovations", "TOE framework", "technology-organization-environment", "technology–organization–environment framework"]
 tags: [adoption-theory, tam, utaut, diffusion-of-innovations, rogers, toe-framework, tornatzky-fleischer, information-systems-research, firm-level, individual-level, ai-adoption]
 confidence: 0.85
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
-source_count: 11
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 15
 relationships:
   - type: supports
     target: enterprise-ai-adoption

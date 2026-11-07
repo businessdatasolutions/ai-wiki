@@ -7,9 +7,9 @@ affiliation: "[[Stanford Digital Economy Lab]] / [[Stanford HAI]] / NBER"
 role: "Director, Stanford Digital Economy Lab; AI Index Steering Committee member"
 contact: "erikb@stanford.edu"
 confidence: 0.9
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
-source_count: 12
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 13
 relationships:
   - type: part-of
     target: Stanford-Digital-Economy-Lab

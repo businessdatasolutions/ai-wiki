@@ -3,8 +3,8 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-11-04"
-source_count: 114
+last_confirmed: "2026-11-07"
+source_count: 116
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -12,7 +12,7 @@ relationships:
   - type: caused
     target: ai-deskilling
     via: "task-composition shift is one mechanism within broader employment effects"
-accessed_at: "2026-11-06"
+accessed_at: "2026-11-07"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -763,3 +763,7 @@ The [[Stanford Digital Economy Lab]] and [[ADP]] Research now publish the Canari
 **Why it matters here.** The [[ai-employment-effects-measurement-dispute]] thread's leading hypothesis is that the payroll finding and [[2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs|Hatzius's]] near-zero aggregate correlation measure different levels. The dashboard shows both levels in one dataset: a gap of about 21 index points for ages 22–25 and about 4 points across all ages. The decomposition is now observed, not only hypothesised; the thread stays open on the offsets and the remote-work confound.
 
 **The output side.** The lab's [[2026-10-21-stanford-del-transformation-tracker|Transformation Tracker]] rates US output, TFP and labour-productivity growth as neutral through September 2026: *"no decisive evidence of transformation."* AI is visible in who gets hired before it is visible in how much is produced.
+
+## Register data split by adoption, and executives on their own firms (added 2026-11-07)
+
+[[2026-03-01-humlum-vestergaard-still-waters-rapid-currents-nber-w33777|Humlum and Vestergaard]] link surveys of about 25,000 Danish workers in eleven exposed occupations to earnings records through December 2024. They find null effects on earnings and hours two years after ChatGPT, ruling out effects above 2%. Denmark also shows an early-career decline, but not at workplaces that adopted chatbots (bound: a third of a percentage point). [[2026-10-01-yotzov-barrero-bloom-nber-w34836-firm-data-on-ai|Yotzov, Barrero, Bloom et al.]] ask executives in seven countries: 87% report no employment effect from AI so far, and the expected change over three years is −0.4%.

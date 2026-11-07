@@ -5,9 +5,9 @@ aliases: ["MIT SMR", "MIT Sloan Management Review", "Sloan Review", "Sloan Manag
 tags: [mit-smr, mit, publisher, ai-research, big-ideas-research, organizational-learning]
 since: 1959
 confidence: 0.88
-last_confirmed: "2026-06-19"
-accessed_at: "2026-06-19"
-source_count: 6
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 7
 relationships:
   - type: published-by
     target: 2026-04-28-mit-sloan-ai-maturity
@@ -72,3 +72,7 @@ FROM "wiki/sources"
 WHERE contains(file.outlinks, this.file.link) OR contains(tags, "mit-smr")
 SORT file.name ASC
 ```
+
+## AI-maturity and health-care sources (added 2026-11-07)
+
+- [[2025-11-18-ransbotham-kiron-mit-smr-bcg-emerging-agentic-enterprise]] — publisher of the ninth MIT SMR–BCG report, *The Emerging Agentic Enterprise* (November 2025).

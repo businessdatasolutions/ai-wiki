@@ -33,6 +33,10 @@ relationships:
     target: 2026-10-26-rendtorff-smith-chin-bcg-creating-ai-value-adoption
     via: "level of firm adoption: 69% of firms use some AI in the Monitor's executive survey of four high-income countries, against the OECD's 20% of firms in 2025. The gap turns on instrument and on which firms are counted: the OECD reports 50%+ for big firms and ~17% for small ones"
     confidence: 0.6
+  - type: supports
+    target: 2026-10-01-yotzov-barrero-bloom-nber-w34836-firm-data-on-ai
+    via: "the Monitor's firm chart reports wave 1 of the same executive survey; the October 2026 revision of the paper extends it to seven countries and recodes US non-response"
+    confidence: 0.8
 ---
 
 # Adoption Monitor — Stanford Digital Economy Lab
@@ -96,7 +100,7 @@ The [[Stanford Digital Economy Lab]]'s adoption indicator. It collects published
 | --- | --- | --- | --- |
 | US adults | 61.8% use generative AI (May 2026) | Household survey, any use | this Monitor (BBD) |
 | US adults | 44% have used ChatGPT (Feb 2026) | Survey, one product only | this Monitor (Pew) |
-| US population | 28.3%, 24th in the world | Cross-country diffusion measure; instrument not stated in the wiki's page | [[2026-04-30-ai-index-report-2026\|AI Index 2026]] |
+| US population | 28.3%, 24th in the world | Cross-country diffusion estimate from the Microsoft AI Economy Institute (AI Index 2026, pp. 200–201) | [[2026-04-30-ai-index-report-2026\|AI Index 2026]] |
 | Firms, US/UK/DE/AU | 68.6% use some AI (late 2025) | Executive survey, use in production | this Monitor (Yotzov et al.) |
 | Organisations, global | 88% (2025) | Organisational survey; the 2025 edition's 78% came from McKinsey's survey, counting use in at least one business function | [[2026-04-30-ai-index-report-2026\|AI Index 2026]] |
 | Firms, OECD | 20% (2025); 50%+ of big firms, ~17% of small | Official firm statistics | [[2026-10-26-rendtorff-smith-chin-bcg-creating-ai-value-adoption\|Rendtorff-Smith (OECD) on BCG]] |
@@ -108,6 +112,8 @@ None of these is wrong. They count different things: any use or production use, 
 
 **The expected fall in text generation needs explaining.** US firms expect the share using LLM text generation to roughly halve while every other application grows. The page gives no reason. Possible readings: firms expect text generation to be absorbed into other tools or agents and no longer reported separately, or the question was read as stand-alone chatbot use. Treat it as unexplained.
 
+**Note on the firm survey (added 2026-11-07).** The firm figures come from the February/March 2026 versions of NBER w34836 (four countries). The October 2026 revision ([[2026-10-01-yotzov-barrero-bloom-nber-w34836-firm-data-on-ai]]) reports 78% across seven executive surveys (N=8,879, May–July 2026). It also recodes US non-response, so firms that skipped the question are no longer counted as non-users, which raises US adoption to 94–95%. The question asks about current use, not use in production as this page puts it, and the category "text generation using LLMs" became "Generative AI".
+
 ## Dynamic-capabilities reading
 
 - **`digital-sensing/digital-scouting`**: a standing scan of how fast people and firms are taking up AI, across surveys and countries.
@@ -115,6 +121,7 @@ None of these is wrong. They count different things: any use or production use, 
 
 ## How it connects
 
+- [[2026-10-01-yotzov-barrero-bloom-nber-w34836-firm-data-on-ai|Yotzov, Barrero, Bloom et al., NBER w34836]] — the working paper behind the firm figures, now in the wiki in its October 2026 revision (see the note under *Method*).
 - [[enterprise-ai-adoption]] — the firm figures, and the spread of adoption figures across instruments.
 - [[technology-adoption-theories]] — the extensive and intensive margins of adoption, measured separately.
 - [[micro-productivity-trap]] — adoption without impact; the page's *"neither necessary nor sufficient."*

@@ -4,9 +4,9 @@ kind: organization
 aliases: ["Boston Consulting Group", "BCG", "BCG Henderson Institute"]
 tags: [BCG, management-consulting, henderson-institute]
 confidence: 0.85
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
-source_count: 17
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 21
 ---
 
 # Boston Consulting Group
@@ -69,3 +69,9 @@ BCG's *Pitching Progress* podcast, hosted by Vinay Shandal, profiles climate com
 - [[2026-09-29-bayer-rosmarin-chari-bcg-ai-agents-business-of-complexity|Bayer Rosmarin with Chari (Sep 2026)]]: Sanjay Chari interviews the CEO of Australian Unity, who chairs a start-up building a *"system of record"* for AI agents. The description discloses a professional relationship between BCG and Australian Unity.
 - [[2026-07-14-keneally-bcg-so-what-llm-or-md-patient-journey|Keneally (The So What, Jul 2026)]]: Ben Keneally, Asia Pacific leader for health care services, on patients using AI as the first step in care, from a BCG survey of about 15 countries.
 - BCG is also the setting of the jagged-frontier experiment that [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani]] revisits on Silicon Valley Girl.
+
+## AI-maturity and health-care sources (added 2026-11-07)
+
+- [[2025-09-30-bcg-widening-ai-value-gap-2025]] — *The Widening AI Value Gap* (September 2025; 1,250 executives): 5% "future-built", 35% scaling, 60% laggards.
+- [[2026-09-30-bcg-applied-ai-index-2026]] — the 2026 edition, renamed the Applied AI Index (1,330 executives): 7.5% future-built, 41% scaling. Read from the press release; the full report was not obtained.
+- [[2025-11-18-ransbotham-kiron-mit-smr-bcg-emerging-agentic-enterprise]] — sponsor and co-author of the ninth MIT SMR–BCG report; see also [[Shervin Khodabandeh]].

@@ -4,9 +4,9 @@ kind: organization
 aliases: ["Bain", "Bain & Company", "Bain and Company"]
 tags: [bain, management-consulting]
 confidence: 0.75
-last_confirmed: "2026-10-25"
-accessed_at: "2026-10-25"
-source_count: 4
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 5
 relationships:
   - type: employs
     target: Arjun-Dutt
@@ -44,3 +44,7 @@ SORT file.name ASC
 ## A bank CEO on Winning with AI (added 2026-10-25)
 
 [[2026-10-20-egeriis-bain-winning-with-ai-danske-bank|Egeriis (Danske Bank) on Bain's Winning with AI (Oct 2026)]]: Sarah Elk and Andrew Ng interview Danske Bank's CEO, Carsten Egeriis: public AI investment and productivity targets, a financial assistant handling over 30% of mobile-bank queries, exception processes stalled on data, and the claim that AI gives months of head start rather than a moat.
+
+## AI-maturity and health-care sources (added 2026-11-07)
+
+- [[2025-04-15-bessemer-healthcare-ai-adoption-index]] — co-author, with Bessemer Venture Partners and AWS, of the Healthcare AI Adoption Index (408 respondents; about 30% of completed proofs of concept reach production).

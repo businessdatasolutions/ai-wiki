@@ -5,10 +5,10 @@ aliases: ["Jonathan Allen"]
 tags: [jonathan-allen, aws, executive-in-residence, agentic-team-structures]
 affiliation: "Amazon Web Services — Executive in Residence"
 role: "AWS Executive in Residence; former divisional CTO, Capital One"
-confidence: 0.75
-last_confirmed: "2026-07-14"
-accessed_at: "2026-07-14"
-source_count: 2
+confidence: 0.8
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 3
 ---
 
 # Jonathan Allen

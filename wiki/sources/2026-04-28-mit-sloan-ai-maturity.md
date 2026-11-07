@@ -78,6 +78,8 @@ The researchers emphasize that transitioning through stages of AI maturity repre
 
 ## My take
 
+**Correction (2026-11-07).** The article summarises MIT CISR's August 2025 research briefing ([[2025-08-21-mit-cisr-grow-enterprise-ai-maturity]]): same authors, same four challenges, same cases. Its figure, however, is the "© MIT CISR 2024" graphic, which shows the 2022 Future Ready Survey distribution (28/34/31/7%, N=721). The August 2025 briefing reports a 2025 distribution of 13/23/46/18% from a smaller Real-Time Business Survey (N=152), with the same scoring rule. The 7% on this page is the 2022 figure, published two months after the update.
+
 This is a **clean conceptual companion to the [[2026-04-28-ai-index-report-2025|AI Index 2025]]**. Where AI Index gives the macro-empirical landscape (what % of orgs use AI, by how much, with what financial impact), this MIT CISR briefing gives the **micro-organizational mechanism** — the stage transitions and the four kinds of change required to move between stages.
 
 Two specific things worth flagging:

@@ -5,7 +5,7 @@ tags: [deskilling, task-composition, ai-employment-effects, occupations]
 confidence: 0.85
 last_confirmed: "2026-11-07"
 accessed_at: "2026-11-07"
-source_count: 38
+source_count: 40
 relationships:
   - type: instance-of
     target: ai-employment-effects
@@ -267,3 +267,7 @@ His summary of both: *"If AI makes execution cheaper… the importance is just a
 [[2025-12-02-bevilacqua-ai-strategic-leadership-skills-top-managers|Bevilacqua et al. (Journal of Business Research, Dec 2025)]] interviewed 23 senior executives about the skills AI requires of top managers. One of the four they name, the **AI strategic co-thinker**, is built on what they call *filtering the AI outputs*: *"The quality of the AI response depends on how well you define the problem"*; *"We always ask: does this make sense in our context? Could it be misleading? What's missing?"*; *"AI can show you ten options, but only experience helps you pick the one that works in this environment."*
 
 These are the two skills [[2026-11-03-goel-bcg-so-what-ai-quietly-taking-from-workforce|Goel (BCG)]] reports as most at risk from distributed de-skilling: problem framing and judgment. The paper treats them as executive skills to develop, through bootcamps, simulations and reverse mentoring. Goel treats them as skills that daily AI use erodes. The last quote relies on experience, which is the expertise-collapse question this page already holds: if juniors no longer build experience by doing the work, it is unclear where the next generation of executives gets the judgment to filter AI output. The paper does not ask it.
+
+## Physicians' own concern (added 2026-11-07)
+
+In the AMA's 2026 physician survey, 88% of US physicians say they are concerned about loss of skills, with early-career physicians the focus; 92% want AI training and 27% have had none ([[2026-03-12-ama-physicians-ai-survey|AMA survey]], read from secondary coverage because ama-assn.org was blocked).

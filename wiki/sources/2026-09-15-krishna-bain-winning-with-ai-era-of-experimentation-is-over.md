@@ -144,6 +144,8 @@ Elk, co-author of Bain's *Doing Agile Right*, adds the counterweight: choosing t
 
 ## Linked entities and concepts
 
+
+- [[IBM]] — the guest's company; Arvind Krishna is its chairman and CEO.
 - **Entities:** [[Bain & Company]] (channel; Elk's firm), [[Andrew Ng]] (co-host), [[Anthropic]] (COBOL translation claim).
 - **Concepts:** [[enterprise-ai-adoption]], [[micro-productivity-trap]], [[open-source-ai]], [[ai-sovereignty]], [[foundation-models]], [[automation-vs-augmentation]], [[dynamic-capabilities]], [[technology-adoption-theories]].
 - **Dangling** (single-source mention, deferred): Arvind Krishna, Sarah Elk, IBM (mentioned incidentally in three earlier sources, never as a subject), Cleveland Clinic.

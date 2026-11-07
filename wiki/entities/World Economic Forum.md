@@ -5,9 +5,9 @@ aliases: ["World Economic Forum", "WEF", "Davos", "Radio Davos", "Meet the Leade
 tags: [world-economic-forum, wef, davos, radio-davos, meet-the-leader, convening-body, ai-and-jobs, podcast-publisher]
 since: 1971
 confidence: 0.8
-last_confirmed: "2026-09-15"
-accessed_at: "2026-09-15"
-source_count: 2
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 3
 ---
 
 # World Economic Forum
@@ -25,7 +25,7 @@ International organisation for public-private cooperation, based in Geneva, best
 
 ## Cited but not authored
 
-- [[2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company]] — the panel's headline ROI statistics come from a [[PwC]] survey of ~4,500 CEOs across 95 countries **released at Davos**: 56% yet to see a return on generative-AI investment, only one in eight claiming an actual cost saving or revenue gain. WEF is the venue, PwC the researcher.
+- [[2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company]] — the panel's headline ROI statistics come from a [[PwC]] survey of ~4,500 CEOs across 95 countries **released at Davos**: 56% yet to see a return on generative-AI investment, only one in eight claiming an actual cost saving or revenue gain (the panel's wording; the primary [[2026-01-19-pwc-global-ceo-survey-2026|PwC release]] says 12% report both cost and revenue benefits). WEF is the venue, PwC the researcher.
 - [[2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs]] — reports on a **WEF San Francisco meeting** of manufacturing and supply-chain executives, used as the anchor for the *planners → agent orchestrators* role-shift claim. WEF is the convener; the observation is the reporter's.
 
 ## What the wiki has and has not read

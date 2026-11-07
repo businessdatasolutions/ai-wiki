@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
-source_count: 79
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 87
 relationships:
   - type: instance-of
     target: generative-ai
@@ -334,3 +334,7 @@ The two sections above treat agents as the web's main population and computer us
 - [[2026-10-28-wang-google-cloud-tech-agent-memory-architecture|Wang (Google Cloud Tech, Oct 2026)]]: what a multimodal agent should remember after a session, and where: facts in SQL, understanding in a vector store, raw perception nowhere.
 - [[2026-10-20-parikh-google-cloud-hippocratic-ai-voice-agents-healthcare|Hippocratic AI on Google Cloud (Oct 2026)]]: outbound voice agents for routine patient care, with a human brought in for real clinical need.
 - [[2026-07-14-keneally-bcg-so-what-llm-or-md-patient-journey|Keneally (BCG, The So What, Jul 2026)]]: the next step after chat is *"an always-on health agent"* connected to wearables and records that books appointments and prompts immunisations; who provides and licenses it is open.
+
+## Agents in Dutch hospitals and in enterprise surveys (added 2026-11-07)
+
+In the [[2026-03-16-mxi-ai-monitor-ziekenhuizen-2026|M&I AI Monitor Ziekenhuizen 2026]], 48% of Dutch hospitals are exploring AI agents, 16% are taking concrete steps (mostly pilots), none is scaling and 38% have no plans. Use cases include chatbots and voice agents for phone traffic, searching protocols, draft answers to HR and ICT questions, and screening e-mails and medical-technology malfunction reports (p. 32). Across sectors, McKinsey's 2025 survey finds 23% of respondents scaling an agent somewhere but at most 10% in any one function ([[2025-11-05-mckinsey-state-of-ai-2025]], p. 5), and [[2026-01-21-deloitte-state-of-ai-in-the-enterprise-2026|Deloitte]] finds 21% with a mature governance model for autonomous agents.

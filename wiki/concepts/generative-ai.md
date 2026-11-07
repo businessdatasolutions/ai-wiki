@@ -3,9 +3,9 @@ type: concept
 aliases: ["GenAI", "generative AI", "generative artificial intelligence"]
 tags: [generative-ai, foundation-models, ai-adoption, ai-foundation, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-09-19"
-accessed_at: "2026-11-06"
-source_count: 29
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 30
 relationships:
   - type: uses
     target: foundation-models
@@ -243,3 +243,6 @@ Two consequences follow in their account.
 
 The underlying point is that a general-purpose model gives **no differentiation** to a firm that uses it as-is. That is the marketing version of the *"no company ever gained competitive advantage just by buying a ChatGPT … licence"* argument on [[enterprise-ai-adoption]]. Differentiation comes from what the firm feeds the model (proprietary data, written taste) and not from the model.
 
+## Dutch hospitals, early 2026 (added 2026-11-07)
+
+90% of Dutch hospitals use generative AI, up from 75% in 2025, and generative AI makes up 47% of a hospital's AI applications on average, against 39% a year earlier ([[2026-03-16-mxi-ai-monitor-ziekenhuizen-2026|M&I AI Monitor Ziekenhuizen 2026]], p. 30). Scale is a different matter: 8% of hospitals apply AI at large scale. See [[ai-in-health-care]].

@@ -29,6 +29,7 @@ Sponsored research from [[MIT Technology Review Insights]] in partnership with [
 - For **50%** of organizations, CEOs and leadership are driving AI urgency more than any other factor.
 - **AI is a priority IT spend**: 50% of companies have already dedicated **10–30% of their IT budget** to AI.
 - **Only 13% globally are ready** to leverage AI to its full potential.
+- *Note (2026-11-07):* the panel on p. 4 is credited "based on data from Cisco, 2025", but its 98% / 85% / 50% / 13% figures are those of the Cisco AI Readiness Index 2024, released 19 November 2024 ([[2024-11-19-cisco-ai-readiness-index-2024]]). MITTRI did not run the index; the PDF was created on 2025-08-21. The 2025 edition of the index again puts Pacesetters at about 13% ([[2025-10-14-cisco-ai-readiness-index-2025]]).
 - **Two-thirds (68%)** say their infrastructure is at best moderately ready to adopt and scale AI.
 
 ### Industry impact (selected)

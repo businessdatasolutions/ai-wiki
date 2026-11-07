@@ -6,9 +6,9 @@ tags: [daron-acemoglu, economist, nobel-economics-2024, mit, productivity-is-fiv
 affiliation: "MIT (Department of Economics)"
 role: "Institute Professor of Economics at MIT; Nobel laureate in Economics (2024, joint with Simon Johnson and James A. Robinson); ‘Why Nations Fail’ co-author"
 confidence: 0.78
-last_confirmed: "2026-07-21"
-accessed_at: "2026-07-21"
-source_count: 3
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 4
 ---
 
 # Daron Acemoglu

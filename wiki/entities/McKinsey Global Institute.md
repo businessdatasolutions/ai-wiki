@@ -7,9 +7,9 @@ website: "https://www.mckinsey.com/mgi"
 founded: 1990
 parent: "[[McKinsey & Company]]"
 confidence: 0.85
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 5
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 6
 relationships:
   - type: part-of
     target: McKinsey & Company

@@ -5,10 +5,10 @@ aliases: ["Cisco", "Cisco Systems"]
 tags: [tech-vendor, networking, ai-infrastructure, ai-security, enterprise-tech]
 ticker: "CSCO"
 website: "https://www.cisco.com"
-confidence: 0.70
-last_confirmed: "2026-04-28"
-accessed_at: "2026-04-28"
-source_count: 1
+confidence: 0.8
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 3
 ---
 
 # Cisco
@@ -50,3 +50,8 @@ SORT file.name ASC
 - Cisco's 2025 readiness survey methodology — sample size, geography, instrument design.
 - The Splunk integration into Cisco's AI story — observability data is increasingly important for AI ops.
 - Cisco's competitive positioning vs. NVIDIA / hyperscalers in the AI infrastructure stack.
+
+## AI-maturity and health-care sources (added 2026-11-07)
+
+- [[2024-11-19-cisco-ai-readiness-index-2024]] — the index behind the much-cited 13%: Pacesetters 14% (2023) and 13% (2024), 7,985 leaders in 30 markets; the Netherlands 7%.
+- [[2025-10-14-cisco-ai-readiness-index-2025]] — the 2025 edition: Pacesetters "about 13% … for the last three years", now defined as outperforming peers on AI value. The full report was not read.

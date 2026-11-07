@@ -8,7 +8,7 @@ website: "https://cisr.mit.edu"
 confidence: 0.8
 last_confirmed: "2026-11-07"
 accessed_at: "2026-11-07"
-source_count: 3
+source_count: 4
 relationships:
   - type: employs
     target: Stephanie-Woerner
@@ -67,3 +67,7 @@ SORT file.name ASC
 
 - Funding model and member organizations of CISR (it's typically a member-funded research center; details to fill in as more sources reference it).
 - Earlier Future Ready Survey waves (pre-2022) and how methodology has evolved.
+
+## AI-maturity and health-care sources (added 2026-11-07)
+
+- [[2025-08-21-mit-cisr-grow-enterprise-ai-maturity]] — the August 2025 research briefing that re-measured the four-stage model: Stage 4 at 18% in a 2025 survey (N=152) against 7% in the 2022 Future Ready Survey (N=721), with the same scoring rule. The March 2026 follow-up is members-only.

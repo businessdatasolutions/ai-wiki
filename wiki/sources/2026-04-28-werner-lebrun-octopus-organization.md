@@ -29,6 +29,7 @@ The AI angle is implicit: as AI proliferates and removes routines, the gap betwe
 ### The Problem
 
 - **Just 12% of transformation efforts** show sustainable performance gains, even after three years — despite trillions invested in transformations over the past two decades.
+- *Where the 12% comes from (added 2026-11-07).* The article cites no source. The figure matches McKinsey's 2022 Global Implementation Survey: 56% of respondents say their transformation met most or all of its goals, and 12% say the gains lasted more than three years. An AHRI interview with Le-Brun (May 2026) attributes it to McKinsey research. Two caveats: McKinsey's wording leaves open whether 12% is of all respondents or of those who met their goals, and it measures transformations in general, not AI. mckinsey.com could not be reached on 2026-11-07, so this rests on search excerpts and secondary coverage. See [[ai-maturity-measurement-comparison]].
 - Most companies are designed like machines: efficient, predictable, controlled. Optimized for the era of mass production and top-down planning.
 - The world they now inhabit is **complex** (like the ocean — unpredictable, sense-respond-learn from flow), not merely **complicated** (like a jet engine — knowable processes, repeatable).
 - Tin Man Orgs (the metaphor): rigid, slow, take instructions but show little initiative. Wait for an outside fix to "get moving again."

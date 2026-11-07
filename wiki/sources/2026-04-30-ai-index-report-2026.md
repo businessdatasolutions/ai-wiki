@@ -10,7 +10,7 @@ license: "CC BY-ND 4.0"
 date_published: 2026-04-01
 date_ingested: 2026-04-30
 tags: [ai-index, stanford-hai, annual-report, AI-sovereignty, jagged-frontier, GenAI-adoption, AI-investment, china-us-gap, schmidt-sciences, medicine-ai, sha-sajadieh, yolanda-gil]
-length: "~430 pages (read pp. 1-19: front matter, top takeaways, Chapter 1 highlights and notable-models section; chapters 2-9 deferred to per-chapter or thematic deep-reads)"
+length: "~430 pages (read pp. 1-19: front matter, top takeaways, Chapter 1 highlights and notable-models section; on 2026-11-07 also Chapter 4 Economy pp. 171-175 and §4.3 Corporate AI Adoption pp. 193-203, the rest of Chapter 4 searched but not read; Chapter 6 Medicine pp. 255-257 and p. 278 only; chapters 2, 3, 5, 7-9 deferred)"
 raw: "../../raw/reports/ai_index_report_2026.pdf"
 ---
 
@@ -49,7 +49,7 @@ This page summarizes the **front matter and the 15 Top Takeaways**; per-chapter 
 - Industry produced **>90%** of notable frontier models in 2025.
 - **SWE-bench Verified**: 60% → near 100% in one year.
 - Several models meet/exceed human baselines on PhD-level science questions, multimodal reasoning, competition mathematics.
-- **Organizational adoption: 88%** (up from 78% in 2024, per the [[2026-04-28-ai-index-report-2025|2025 edition]]).
+- **Organizational adoption: 88%** (up from 78% in 2024, per the [[2026-04-28-ai-index-report-2025|2025 edition]]). Source: McKinsey's State of AI 2025 ([[2025-11-05-mckinsey-state-of-ai-2025]]), reprinted in Chapter 4 (pp. 193–197). McKinsey changed the question from "adopted" (2024) to "regular use" (2025); the AI Index does not note this.
 - **4 in 5** university students now use generative AI.
 
 ### 2. The U.S.-China AI model performance gap has effectively closed
@@ -127,7 +127,7 @@ This page summarizes the **front matter and the 15 Top Takeaways**; per-chapter 
 ### 12. AI is transforming clinical care, but rigorous evidence remains limited
 
 - Ambient AI scribes saw substantial 2025 adoption: physicians reported up to **83% less time** spent writing notes; significant burnout reductions.
-- Of 500+ clinical AI studies reviewed: **nearly half rely on exam-style questions** rather than real patient data; only **5% use real clinical data**.
+- Of 500+ clinical AI studies reviewed: **nearly half rely on exam-style questions** rather than real patient data; only **5% use real clinical data** (p. 278, citing the ARISE Network's *State of Clinical AI Report*, January 2026; not the Index's own analysis).
 - The evidence base for clinical AI remains thin despite mass deployment.
 
 ### 13. Formal education lagging; people learning AI skills at every life stage
@@ -167,9 +167,23 @@ This page summarizes the **front matter and the 15 Top Takeaways**; per-chapter 
 - Per-capita researcher density: **Switzerland and Singapore lead.**
 - Female AI researcher representation: **Saudi Arabia 32.3%, Canada 29.6%, Australia 30.1%** — no country approaches parity.
 
-### Chapters 2–9: not yet ingested
+### Chapter 4 — Economy: §4.3 Corporate AI Adoption (pp. 193–203; read 2026-11-07)
 
-Chapters 2 (Technical Performance), 3 (Responsible AI), 4 (Economy), 5 (Science), 6 (Medicine — new), 7 (Education), 8 (Policy and Governance), 9 (Public Opinion) span ~360 of the report's pages and are deferred to subsequent ingests.
+The section draws on [[McKinsey & Company]]'s State of AI survey ([[2025-11-05-mckinsey-state-of-ai-2025]]) and says of it: *"the results are self-reported and should be viewed as directional rather than comprehensive"* (p. 193).
+
+- **Breadth.** 88% of respondents say their organisation uses AI in at least one business function, up from 78% in 2024; over half use it in three or more functions. 79% say their organisation *"regularly"* uses generative AI in at least one function, up from 71% (p. 193, Figure 4.3.1). The chapter highlights give 70% instead (p. 173); the body and chart say 79%.
+- **By region, 2023 → 2024 → 2025:** Europe 57 → 80 → 91%, North America 61 → 82 → 90%, Greater China 48 → 75 → 88%, Asia-Pacific 58 → 72 → 82% (p. 194, Figure 4.3.2).
+- **Depth: deployment stage by revenue** (p. 197, Figure 4.3.6). "Fully scaled" is 5% of firms under US$100M, 4% at US$100–499M, 3% at US$500–999M, 9% at US$1–4.9B and 10% at US$5B+. The gradient is not monotonic. In every band below US$5B, most firms are experimenting or piloting.
+- **Agents.** *"Scaled use was in the single digits for nearly all functions"*. Exception: technology firms in software engineering (24%), IT (22%) and service operations (21%) (pp. 197–198).
+- **Outcomes** (organisations that use AI): 64% report improved innovation, 38% lower cost, 36% higher profitability, 33% organic revenue growth (p. 196, Figure 4.3.5).
+- **No maturity figure.** The words "mature" and "maturity" do not occur in Chapter 4 (pp. 171–230). The 2025 edition's *"1% of C-suite … mature"* is not repeated. The deployment-stage chart is the closest measure of depth.
+- **Population diffusion** (Microsoft AI Economy Institute data, pp. 200–201). The US is 24th at 28.3% in the second half of 2025; the Netherlands is 8th at 38.9%. The text gives the UAE as 54% (pp. 173, 200), the chart 64.0% (Figure 4.3.12).
+
+For the [[ai-maturity-measurement-comparison]] thread: breadth rose (78% → 88%, across a change of question wording), and the only depth measure is McKinsey's stage question, with "fully scaled" at 3–10% by firm size.
+
+### Chapters 2, 3, 5–9 and most of Chapter 4: not yet ingested
+
+Chapter 4 (Economy) was read in part on 2026-11-07: overview, highlights and §4.3 (above). Its sections on investment, jobs and robots were searched, not read. From Chapter 6 (Medicine) only the overview (pp. 255–257) and the evidence-gaps passage (p. 278) were read; see [[ai-in-health-care]]. Chapters 2 (Technical Performance), 3 (Responsible AI), 5 (Science), 7 (Education), 8 (Policy and Governance) and 9 (Public Opinion) remain deferred.
 
 ## Methodology notes
 
@@ -218,9 +232,10 @@ Additional named co-authors on the 2026 edition (single-source mentions, deferre
 - [[foundation-models]] — 91.18% industry; 17.1M H100-equivalents; OLMo 3.1 Think 32B vs Grok 4
 - [[ai-benchmarks]] — SWE-bench 60%→100%; OSWorld agents 12%→66%; ChemBench frontier vs human chemists; analog clock 50.1%
 - [[responsible-ai]] — 362 incidents (up from 233); RAI dimension trade-offs
-- [[enterprise-ai-adoption]] — 88% organizational adoption; AI agent deployment in single digits per function
+- [[enterprise-ai-adoption]] — 88% organizational adoption; AI agent deployment in single digits per function; §4.3: 79% regular GenAI use, "fully scaled" 3–10% by revenue band, no maturity figure
 - [[ai-employment-effects]] — 14–26% productivity gains; software dev 22–25 -20% from 2024
 - [[jagged-frontier]] — IMO gold + analog clock 50.1%; OSWorld leap; AI Index now uses the term
 - [[2026-04-28-dellacqua-jagged-technological-frontier]] — original empirical anchor for the jagged-frontier concept
 - [[2026-04-28-brynjolfsson-canaries-coal-mine]] — adjacent labor-market evidence (ADP payroll); the 2026 AI Index extends the same finding via a different data path
 - [[2026-04-28-anthropic-economic-index-q4-2025]] — Anthropic's parallel measurement initiative
+- [[ai-in-health-care]] — concept page (created 2026-11-07) that sets this source beside the hospital and health-system surveys.

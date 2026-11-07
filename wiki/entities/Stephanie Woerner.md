@@ -8,7 +8,7 @@ role: "Principal research scientist; Director of [[MIT CISR]]"
 confidence: 0.8
 last_confirmed: "2026-11-07"
 accessed_at: "2026-11-07"
-source_count: 3
+source_count: 4
 relationships:
   - type: part-of
     target: MIT-CISR
@@ -38,3 +38,7 @@ SORT file.name ASC
 
 - Books and longer-form publications (Woerner co-authors a stream of MIT CISR research briefings; identify the canonical book/article roster as more sources are ingested).
 - Earlier maturity frameworks (pre-AI) — does the Four Stages model build on a digital-transformation maturity model?
+
+## AI-maturity and health-care sources (added 2026-11-07)
+
+- [[2025-08-21-mit-cisr-grow-enterprise-ai-maturity]] — lead author of the August 2025 briefing (Stage 4: 18%, N=152).

@@ -79,6 +79,7 @@ AI can do supervised jobs on behalf of clinicians, such as applying simple algor
 - [[2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care|Peron (Philips)]] — radiologists were not replaced, and patients fear losing face time; Keneally argues AI should give it back.
 - [[2026-10-20-parikh-google-cloud-hippocratic-ai-voice-agents-healthcare|Parikh (Hippocratic AI)]] — a working version of agents that call the patients hospitals do not reach.
 - [[2026-11-03-goel-bcg-so-what-ai-quietly-taking-from-workforce|Goel (BCG, The So What)]] — the same series and host, four months later, on what AI takes from the workforce.
+- [[ai-in-health-care]] — concept page (created 2026-11-07) that sets this source beside the hospital and health-system surveys.
 
 ## What was actually ingested
 

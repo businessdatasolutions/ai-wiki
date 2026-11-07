@@ -5,10 +5,10 @@ aliases: ["MIT Technology Review Insights", "MIT TRI", "MITTRI", "MIT Tech Revie
 tags: [publisher, research, sponsored-research, mit, technology-journalism]
 parent: "MIT Technology Review"
 website: "https://www.technologyreview.com/insights/"
-confidence: 0.70
-last_confirmed: "2026-04-28"
-accessed_at: "2026-04-28"
-source_count: 1
+confidence: 0.75
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 2
 ---
 
 # MIT Technology Review Insights
@@ -46,3 +46,7 @@ SORT file.name ASC
 
 - Is there public data on the relative rigor of MIT TRI vs. competing custom-research arms (e.g., HBR Analytic Services, Forbes Insights)?
 - Editorial-process details (Virginia Wilson is named as the editor of the 2025 report; Nicola Crepaldi as publisher).
+
+## AI-maturity and health-care sources (added 2026-11-07)
+
+- [[2024-11-19-cisco-ai-readiness-index-2024]] — the Cisco index whose figures (13% ready, 98% urgency) the 2025 Cisco-sponsored MITTRI report reprints; MITTRI did not run the index.

@@ -4,7 +4,7 @@ title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
 confidence: 0.85
 last_confirmed: "2026-11-07"
-source_count: 36
+source_count: 43
 accessed_at: "2026-11-07"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
@@ -253,3 +253,7 @@ His argument for why oversight has to be built rather than trusted borrows from 
 In CISR's AI-era business-model framework, *structured* execution (AI runs a predefined process) keeps both. *Adaptive* execution (AI builds the process from a stated outcome) keeps only the helm. The briefing's Figure 1 turns this into job descriptions. In Existing+, employees *"make decisions, improve processes, do most of the work."* In the Orchestrator model, they *"monitor and be accountable for the design, ethics, and outcomes of the business model."* The briefing's own case, One NZ, plans marketing agents that create, deploy and adapt campaigns, with the team specifying *"goals, constraints, and guardrails"* and then monitoring outcomes.
 
 This places the gate at the level of the business model, not the individual agent. Choosing an adaptive model is choosing to remove per-decision approval. The rest of this page warns what that costs: oversight decay, plans no one reads, and accountability that drifts. CISR does not say how helm-level monitoring catches a bad decision that no human approved. [[2025-12-02-bevilacqua-ai-strategic-leadership-skills-top-managers|Bevilacqua et al. (2025)]] make the matching point from the executive side: delegating analysis to AI *"redefines, rather than replaces, the executive's ultimate responsibility."*
+
+## A model that works at home and fails next door (added 2026-11-07)
+
+[[2025-09-17-beidler-incident-report-severity-triage-radiotherapy|Beidler, Nguyen et al. (2025)]] trained a screen to flag high-severity radiotherapy incident reports for human review. On its own department's reports it reached AUROC 0.82, comparable to individual staff (0.81). On the IAEA's multinational SAFRON reports the same models fell to 0.42–0.56, near or below chance. Fine-tuning on 571 local reports brought it back to 0.78. Two points carry over to any delegated screen. First, validation in one setting says little about the next: severity scales, vocabulary and reporting culture differ, so the model needs local data and a local check before it is trusted. Second, the threshold is an oversight decision. At a 20% alert rate the screen caught 46% of serious reports; at 50% it caught 79%, with many more false alarms. The authors leave that choice to each institution's clinicians. England's national patient-safety service plans the same division of labour: machine learning chooses which of 2.6 million yearly reports people read, without deciding on its own ([[2023-03-08-meg-lfpse-mussett-interview|Mussett, 2023]]). See also [[ai-in-health-care]].
