@@ -3,9 +3,9 @@ type: concept
 title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
 confidence: 0.85
-last_confirmed: "2026-11-04"
-source_count: 35
-accessed_at: "2026-11-06"
+last_confirmed: "2026-11-07"
+source_count: 36
+accessed_at: "2026-11-07"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
   - type: part-of
@@ -242,3 +242,14 @@ His argument for why oversight has to be built rather than trusted borrows from 
 
 - [[2026-11-03-goel-bcg-so-what-ai-quietly-taking-from-workforce|Goel (BCG, The So What, Nov 2026)]]: more than half of 70 leaders say *"the blame goes to AI the moment an error is spot[ted]."* His answer is to keep ownership with people: *"I am in the driver's seat."*
 - [[2026-09-29-bayer-rosmarin-chari-bcg-ai-agents-business-of-complexity|Bayer Rosmarin (Australian Unity) with BCG (Sep 2026)]]: making agents deterministic and locking them down for every use case *"is actually removing a lot of the power of AI."* Instead, monitor them and alert people when an agent goes *"outside of risk appetite or policy."*
+
+## In the loop or at the helm, set by the business model (added 2026-11-07)
+
+[[2025-10-16-weill-cisr-business-models-ai-era|MIT CISR (Weill, Sebastian, Woerner & Benedict, Oct 2025)]] separates two human roles that much of this page treats as one:
+
+- **Human in the loop**: employees review and approve every decision before it is executed.
+- **Human at the helm**: employees set strategic goals, align incentives, define constraints and guardrails, and monitor outcomes.
+
+In CISR's AI-era business-model framework, *structured* execution (AI runs a predefined process) keeps both. *Adaptive* execution (AI builds the process from a stated outcome) keeps only the helm. The briefing's Figure 1 turns this into job descriptions. In Existing+, employees *"make decisions, improve processes, do most of the work."* In the Orchestrator model, they *"monitor and be accountable for the design, ethics, and outcomes of the business model."* The briefing's own case, One NZ, plans marketing agents that create, deploy and adapt campaigns, with the team specifying *"goals, constraints, and guardrails"* and then monitoring outcomes.
+
+This places the gate at the level of the business model, not the individual agent. Choosing an adaptive model is choosing to remove per-decision approval. The rest of this page warns what that costs: oversight decay, plans no one reads, and accountability that drifts. CISR does not say how helm-level monitoring catches a bad decision that no human approved. [[2025-12-02-bevilacqua-ai-strategic-leadership-skills-top-managers|Bevilacqua et al. (2025)]] make the matching point from the executive side: delegating analysis to AI *"redefines, rather than replaces, the executive's ultimate responsibility."*

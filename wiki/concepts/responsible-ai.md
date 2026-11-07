@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-06"
-source_count: 52
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 53
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -267,6 +267,7 @@ The claim is unmeasured — an experienced adviser's observation from board prog
 - **Election misinformation impact.** AI-generated misinformation spread widely in 2024 elections, but its measurable impact remained unclear; many expected larger effects than were observed. Open question: is the saturation of fact-checking infrastructure containing AI-generated content, or is the impact lagged?
 - **Bias mitigation effectiveness.** Explicit-bias mitigation reliably improves bias metrics but not implicit-bias probes. Open question: are current benchmarks measuring the right thing, or is implicit bias structurally untouchable by current alignment methods?
 - **Risk acknowledgment vs. action gap.** Why does the McKinsey-measured gap between "acknowledged risk" and "active mitigation" persist year over year? Worth exploring once another source examines it.
+- **Govern first, or govern last? (added 2026-11-07)** [[2025-12-02-bevilacqua-ai-strategic-leadership-skills-top-managers|Bevilacqua et al. (2025)]] recommend building ethics risk management as the last of four executive skills, a *"mature governance layer"*, and [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun]] warns that compliance metrics introduced too early *"can backfire."* Most governance sources on this page, the IMDA framework and the runtime-enforcement work among them, design controls in before deployment. The two positions may concern different things: a leadership development path on one side, and a system's controls on the other. No source tests which order produces fewer incidents. **Open.**
 
 ## Runtime enforcement as a declarative discipline ([[2025-07-31-wang-agentspec-runtime-enforcement-llm-agents|AgentSpec / Wang, Poskitt, Sun]] — ICSE '26)
 
@@ -400,3 +401,13 @@ For organisations deploying AI this is the `contextual/external-triggers` side o
 - [[2026-09-29-bayer-rosmarin-chari-bcg-ai-agents-business-of-complexity|Bayer Rosmarin (Australian Unity) with BCG (Sep 2026)]]: risk management for agents modelled on the systems firms already use for people.
 - [[2026-10-20-parikh-google-cloud-hippocratic-ai-voice-agents-healthcare|Hippocratic AI on Google Cloud (Oct 2026)]]: safety as automated evaluation at very large volume, and a design rule that the agents *"do not diagnose or prescribe."* Its *"zero safety issues in production"* is a marketing claim with no definition.
 - [[2026-07-14-keneally-bcg-so-what-llm-or-md-patient-journey|Keneally (BCG, The So What, Jul 2026)]]: how personal health agents will be licensed and assured is open; human advice, which also errs, is the baseline to compare against.
+
+## Ethics risk management as an executive skill, and committees that revise themselves (added 2026-11-07)
+
+[[2025-12-02-bevilacqua-ai-strategic-leadership-skills-top-managers|Bevilacqua, Ferraris, Matzler & Kuděj (Journal of Business Research, Dec 2025)]] interviewed 23 senior executives at large European firms. They count **ethics risk management** among the four skills AI now requires of top managers, rather than a compliance function beside them. Three points from the interviews:
+
+- **AI ethics committees as dynamic governance.** The committees combine ethicists, lawyers, AI engineers and business strategists. They review systems before deployment and revise guidelines periodically: *"It's a continuous process of ethical adaptation."* Some have veto power. Interviewees at firms whose committees have it report more internal trust, regulatory preparedness and stakeholder confidence. The paper gives this as their view and makes no comparison with firms without a veto.
+- **Ethics changes with AI maturity.** Early adopters focus on avoiding harm and staying compliant. More mature firms ask how algorithmic decisions affect employee behaviour, customer trust and their *"social license to operate."* Some embed ethics liaisons in product teams and run ethical-impact simulations before release.
+- **Ethics and co-thinking need each other.** The authors call critical use of AI outputs and ethical governance a *"dual capability"*: one without the other produces either *"uncritical adoption of AI outputs or excessive caution that stifles innovation."*
+
+Their recommended development sequence puts ethics risk management **last**, as a *"mature governance layer"* after mindset, co-thinking and connector skills. That matches [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun's]] sequence of strategy, then buy-in, then compliance, and sits uneasily with the many sources on this page that want governance designed in from the start. The paper does not reconcile the two: its own findings describe ethics committees reviewing systems *before* deployment.

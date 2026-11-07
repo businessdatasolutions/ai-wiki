@@ -4,9 +4,9 @@ title: Agentic web
 aliases: ["agentic web", "agentic Internet", "agentic internet", "zero-click", "zero-click search", "Google Zero", "AI crawlers", "AI crawler traffic", "content licensing for AI", "pay-per-crawl", "agentic commerce", "machine payments", "x402", "agent identity", "Web Bot Auth"]
 tags: [agentic-web, aeo, answer-engines, agentic-internet, zero-click, google-zero, referral-traffic, ai-crawlers, training-crawlers, bot-traffic, content-licensing, pay-per-crawl, x402, web-bot-auth, agentic-commerce, open-web, publishers, search-to-answers, browser-agents, computer-use, agent-authentication]
 confidence: 0.75
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 13
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 14
 relationships:
   - type: depends-on
     target: ai-agents
@@ -131,6 +131,7 @@ The response from the agent side is to partner rather than fight. Meta, *"Turnin
 - **Is AEO measurement, or a vendor's model of the engines?** The AEO claims (mentions across the web as the main factor, the citation shares by source type) come from HubSpot/XFunnel's own analysis without method, and the outcome figures (+170% MQLs, +82% closed deals for adopters) do not separate what AEO did from which customers chose to adopt it. The persona × stage prompt matrix is a method; the ranking factors are a vendor's claim. **Open** until an independent study of what AI answers cite is ingested.
 - **Who captures the relationship?** Ognibeni and DFI frame the agent as a disintermediator that takes over the customer relationship. Cloudflare frames itself as a neutral market maker that keeps publishers paid. These are different predictions about where value settles: with the agent operator, the infrastructure layer, or the content owner. The corpus cannot yet distinguish them. [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet|Collison]] (Oct 2026) adds a fourth: AI discovery becomes the new aggregator but widens reach for the long tail of sellers under it. [[2026-09-14-klein-browserbase-navigate-2026-keynote-agents-will-use-the-internet|Klein (Browserbase, Sep 2026)]] adds a fifth candidate: the issuer of agent identity, which vouches for agents to sites and negotiates their access. [[2026-10-17-roth-verge-websites-closing-doors-to-ai-agents|The Verge (Oct 2026)]] shows the largest merchant refusing to cede it at all: Amazon blocks outside agents and litigates, while Meta settles access retailer by retailer.
 - **Rebuild the web, or teach agents the old one?** Cloudflare's sources describe new rails on the site side (pay-per-crawl, x402). [[2026-09-14-klein-browserbase-navigate-2026-keynote-agents-will-use-the-internet|Klein]] argues agents should use the web as it is, through browsers, without waiting for APIs or MCP servers. [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet|Collison]] makes the same DMV argument at the same conference. Web Bot Auth sits between the two: pages stay as they are, but the site or its CDN must verify signatures. Both positions come from vendors whose products depend on the answer. Section 10 adds what neither vendor controls: sites deciding whether to let agents in at all, by policy, by lawsuit, or by bot defences that catch them by accident. **Open.**
+- **Who captures the relationship, from a business-model framework (added 2026-11-07).** [[2025-10-16-weill-cisr-business-models-ai-era|MIT CISR (Oct 2025)]] places capture with the firm that *represents* the customer: its Orchestrator model is paid a share of customer value. The framework assumes AI-mediated collaboration across firms and says nothing about the refusals in section 10. It is a prediction from four researchers, not a measurement. **Open.**
 - **Rails or browsers, restated (added 2026-10-30).** [[2026-10-25-tremante-cloudflare-connect-open-agentic-internet|Tremante (Cloudflare Connect, Oct 2026)]] and [[2026-10-28-hack-klein-browserbase-navigators-clickup-why-agents-keep-failing|Hack (ClickUp, on Navigators, Oct 2026)]] give the two positions in the same month: a crawl endpoint, index and payment on the site side, or a browser and credentials on the agent side. Each speaker's firm sells its route.
 
 ## Related concepts
@@ -157,6 +158,7 @@ The response from the agent side is to partner rather than fight. Meta, *"Turnin
 - [[2026-10-17-roth-verge-websites-closing-doors-to-ai-agents]] — the access side, from a newsroom: sites blocking consumer agents for licensing and security, Amazon v. Perplexity, anti-bot systems catching agents, and Meta's retailer partnerships.
 - [[2026-10-25-tremante-cloudflare-connect-open-agentic-internet]] — bot share, crawl-to-referral by company, a publisher traffic table, x402 sequence, Monetization Gateway and Pay Per Use.
 - [[2026-10-28-hack-klein-browserbase-navigators-clickup-why-agents-keep-failing]] — a browser and credentials as the integration of last resort.
+- [[2025-10-16-weill-cisr-business-models-ai-era]] — the business-model reading: Customer Proxy and Orchestrator as firms that represent the customer, with Amazon's Buy for Me as the example.
 
 ## Bot share, crawl ratios, and two ways of being paid (added 2026-10-30)
 
@@ -165,3 +167,9 @@ The response from the agent side is to partner rather than fight. Meta, *"Turnin
 He separates two payment models. The **Monetization Gateway** charges at access through HTTP 402 and x402, with cryptographic proof, and is in private beta. **Pay Per Use** pays on each reuse of crawled content, depends on trust and a bidding system, and is still in development, because a provider *"only needs to crawl you once."* Before payment come a `/crawl` endpoint for signed bots, an opt-in open index, and new-domain signals, which he says surfaced several million domains for OpenAI. He also names the leak: agents that subscribe, crawl and resell.
 
 [[2026-10-28-hack-klein-browserbase-navigators-clickup-why-agents-keep-failing|Hack (ClickUp, on Navigators, Oct 2026)]] is the other route: *"give the agent a browser, give it your credentials,"* for systems with no integration. Klein, the host, calls agent identity on the web a matter of people and policy.
+
+## The business model that needs the open agentic web (added 2026-11-07)
+
+[[2025-10-16-weill-cisr-business-models-ai-era|MIT CISR (Weill, Sebastian, Woerner & Benedict, Oct 2025)]] gives the agentic web a business-model reading. Two of its four AI-era models *represent* the customer rather than assist them. In the **Customer Proxy** model the firm achieves the customer's outcome through its own predefined process and is paid for that outcome. The **Orchestrator** achieves it *"through adaptive, AI-mediated collaboration across an ecosystem of products and services"* and takes a *share of customer value*. CISR's example is [[Amazon]]'s beta *Buy for Me*, which buys from other brands' websites on the customer's behalf.
+
+The Orchestrator is the business model behind the agents in sections 7–10, and it depends on what section 10 shows is in doubt: other firms letting the agent in. The briefing does not mention access. Amazon is on both sides of it: it runs Buy for Me on other merchants' sites and sues to keep outside shopping agents off its own ([[2026-10-17-roth-verge-websites-closing-doors-to-ai-agents|The Verge, Oct 2026]]). In the *Who captures the relationship?* debate below, CISR's answer is the firm that represents the customer, paid as a share of the value it achieves.

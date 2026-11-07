@@ -6,9 +6,9 @@ tags: [retail, cloud, ai-infrastructure, hyperscaler-parent, big-tech]
 ticker: "AMZN"
 website: "https://www.amazon.com"
 confidence: 0.78
-last_confirmed: "2026-10-18"
-accessed_at: "2026-10-18"
-source_count: 7
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 8
 ---
 
 # Amazon
@@ -77,3 +77,7 @@ SORT file.name ASC
 ## Blocking outside shopping agents (added 2026-10-18)
 
 [[2026-10-17-roth-verge-websites-closing-doors-to-ai-agents|Roth (The Verge, Oct 2026)]]: Amazon banned Perplexity's agentic shopping feature and sued in 2025, saying it had *"repeatedly requested"* that Perplexity stop and that agents buying for customers *"should operate openly and respect service provider decisions whether or not to participate."* Perplexity said Amazon wants human eyes on its ads. A judge ordered Perplexity to stop; an appeals court overturned the order in August 2026, and Amazon has filed an amended complaint. In October 2026 Amazon said Meta's agent Muse's *"continued access"* violates its site policies; xAI's Grok, OpenAI's Dots and Instinct are reported unable to use the site as well. See [[agentic-web]].
+
+## Buy for Me: the same move, outward (added 2026-11-07)
+
+[[2025-10-16-weill-cisr-business-models-ai-era|MIT CISR (Oct 2025)]] cites Amazon's beta *Buy for Me* feature as an emerging example of its **Orchestrator** business model. The customer taps a button on a product page, and Amazon's agent buys the product from the brand's own website when Amazon does not sell it. Set beside the section above, Amazon runs an agent on other merchants' sites while blocking outside agents from its own. The briefing predates the lawsuit and does not discuss access.

@@ -5,10 +5,10 @@ tags: [enterprise-ai-adoption, organizational-frameworks, synthesis, cross-sourc
 derived_from: [organizational-frameworks-for-ai-adoption]
 opened: 2026-04-28
 closed: 2026-05-05
-last_refreshed: "2026-07-15"
+last_refreshed: "2026-11-07"
 confidence: 0.9
-last_confirmed: "2026-07-15"
-source_count: 20
+last_confirmed: "2026-11-07"
+source_count: 22
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -19,7 +19,7 @@ relationships:
   - type: supports
     target: syntheses/harness-thinning-what-persists
     via: "sibling synthesis from the same 2026-07-15 video batch — the runtime-engineering (harness) lens and the organizational-frameworks lens both independently land on 'process redesign / organizational design is the load-bearing decision, not the technology'"
-accessed_at: "2026-11-04"
+accessed_at: "2026-11-07"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -63,11 +63,13 @@ The ten frameworks are **mostly complementary, not competing**. Each names a dif
 | Layer | Framework | Question it answers | Source |
 | ----- | --------- | ------------------- | ------ |
 | **Org-design** | Tin Man / Octopus | Is your organization structurally capable of adapting? | [[2026-04-28-werner-lebrun-octopus-organization\|Werner-Le-Brun]] |
+| **Leadership skills** *(added 2026-11-07)* | Bevilacqua et al. multi-level framework: AI open mindset (personal) / AI strategic co-thinker + ethics risk management (organizational) / multi-level connector (relational) | Which skills must the top team hold, and how do they reach middle managers and partners? | [[2025-12-02-bevilacqua-ai-strategic-leadership-skills-top-managers\|Bevilacqua, Ferraris, Matzler & Kuděj 2025]] |
 | **Readiness** | Cisco 5 Foundations (Strategy / Infrastructure / Data / Governance / Culture) | Do you have the prerequisites? | [[2026-04-28-mittri-cisco-ai-enabled-enterprise\|MITTRI/Cisco]] |
 | **Capability progression** | MIT CISR Four Stages + Four S | What stage are you at, and what blocks the next transition? | [[2026-04-28-mit-sloan-ai-maturity\|MIT CISR]] |
 | **Organizational learning** *(new)* | Ransbotham/Kiron Augmented Learners 2×2 + verification → evaluation → learning capture flywheel | Does your org metabolize AI interactions into compounding knowledge, or consume them and forget? | [[2026-05-07-ransbotham-augmented-learners\|Ransbotham et al. 2024]], [[2026-05-07-kiron-schrage-compound-benefits\|Kiron & Schrage 2026]] |
 | **Transformation playbook** | McKinsey *Rewired* 6 capabilities | How do you actually execute the journey? | [[2026-05-03-rewired-second-edition-sample\|Lamarre, Smaje, Levin et al. 2026]] |
 | **Firm-boundary** *(new)* | Nishar-Nohria 4-model (Build / Compose / Collaborate / Buy Outcomes) | Which workflows should the firm own, and which should it rent / outsource / outcome-source? | [[2026-05-05-nishar-nohria-end-of-one-size-fits-all\|Nishar & Nohria 2026]] |
+| **Business model** *(added 2026-11-07)* | MIT CISR AI-era business models 2×2 (assist ↔ represent × structured ↔ adaptive): Existing+ / Customer Proxy / Modular Curator / Orchestrator | How will the firm make money once AI acts on behalf of customers, and what does that leave employees to do? | [[2025-10-16-weill-cisr-business-models-ai-era\|Weill, Sebastian, Woerner & Benedict 2025]] |
 | **Trap escape** | Bain/OpenAI 4-step transformation | How do you avoid the [[micro-productivity-trap]]? | [[2026-05-02-dutt-chatterji-ai-experimentation-to-transformation\|Dutt, Chatterji et al. 2026]] |
 | **Task deployment** | Anand-Wu 2×2 (cost of errors × type of knowledge) | For *this specific task*, deploy AI today and how? | [[2026-04-28-anand-wu-genai-playbook\|Anand-Wu]] |
 | **Deployment maturity** *(new)* | Beutler Ask → Assist → Automate ladder | *Given* you're deploying on a workflow, how much agency do you grant the agent, and in what sequence? | [[2026-06-02-architecting-ai-native-organizations-redesign-work-at-scale-joe-beutler\|Beutler / OpenAI 2026]] |
@@ -191,6 +193,11 @@ Of the ten frameworks:
 - [[2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16]] — the MIT Sloan CIO Symposium's weekly podcast, Ep. 16 (10 Jul 2026). Restates the cluster's "process/capability over technology" thesis in its title; adds the [[2026-05-01-lf-state-of-tech-talent-global-2026|Linux Foundation State of Tech Talent report]] as independent labor-market corroboration (net hiring +26% 2025/+31% 2026; AI/ML engineering leads the skills gap at 47%).
 - [[2025-12-02-allen-brozovich-davis-aws-reinvent-advanced-team-structures]] — Jonathan Allen, Stephen Brozovich, Richard Davis (AWS re:Invent 2025, 2 Dec 2025; the **origin edition** of the Allen/AWS keynote lineage already cited above). **Danske Bank** (Richard Davis, CTO) is a second banking-sector lived multi-framework case: 850 apps migrated in 18 months, a new PDLC triggered by a 35%-of-time-on-coding finding, production agents Cloud Buddy and CheckMate.
 - [[2026-07-14-khan-academy-ceo-the-real-ai-opportunity-is-in-boring-industries-sal-khan]] — Sal Khan, interviewed on the *Silicon Valley Girl* podcast (14 Jul 2026). The cluster's **first nonprofit-sector lived case**: explicit no-AI-layoffs policy, $1.2M/year Anthropic spend, dev environments extended to designers/PMs, and a durable-skills accreditation product (the Content Institute, with TED and ETS) built as an organizational response to the adoption thesis.
+
+**Added 2026-11-07** (two layers the stack lacked; the rest of the synthesis is not re-derived):
+
+- [[2025-10-16-weill-cisr-business-models-ai-era]] — [[Peter Weill]], [[Ina Sebastian]], [[Stephanie Woerner]] and Gayan Benedict ([[MIT CISR]] Research Briefing, Oct 2025). **Business-model layer**: the 2018 Digital Business Models framework redrawn for AI. It sits above the Firm-boundary layer: Nishar-Nohria's *Buy Outcomes* is the buyer's side of the outcome-based revenue that CISR's Customer Proxy and Orchestrator sell. It is the second CISR framework in the stack, next to the Four Stages.
+- [[2025-12-02-bevilacqua-ai-strategic-leadership-skills-top-managers]] — Bevilacqua, Ferraris, Matzler & Kuděj (*Journal of Business Research*, Dec 2025; 23 executive interviews). **Leadership-skills layer**: four interdependent skills for top managers, with middle managers as co-leaders. It is peer-reviewed but qualitative, and does not link the skills to outcomes.
 
 ## Lessons
 

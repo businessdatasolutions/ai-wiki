@@ -10,6 +10,44 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-11-07] ingest | MIT CISR's Business Models in the AI Era (Weill, Sebastian, Woerner, Benedict) and Bevilacqua et al. on top managers' AI skills (JBR)
+
+**Acquire.** Two sources, not one: the user gave a CISR URL and a PDF, and the PDF turned out to be a different work. *CISR briefing:* the page shows the full body without login (login gates only the PDF download). Fetched with `curl` and converted with a regex walk of the HTML; footnotes turned into markdown footnotes. Figure 1 is an image: saved to `raw/images/2025-10-16-weill-cisr-business-models-ai-era/figure-1.png` (gitignored) and transcribed into the raw file after checking it against the image. Landed at `raw/reports/2025-10-16-weill-cisr-business-models-ai-era.md`. *Paper:* `raw/papers/1-s2.0-S0148296325007015-main.pdf`, Elsevier's generic download name, renamed to `2025-12-02-bevilacqua-ai-strategic-leadership-skills-top-managers.pdf` (gitignored, untracked, so a plain `mv`), with a `pdftotext` markdown beside it. The default reading-order mode was used instead of `-layout` because the paper is two-column. Figures 1 and 2 are images, read from the rendered PDF and described in the raw file's header.
+
+**Pre-flight.** *Identity:* the PDF metadata, cover and DOI give Bevilacqua, Ferraris, Matzler & Kuděj, *Journal of Business Research* 205 (2026) 115878, available online 2 Dec 2025, CC BY. It is not the CISR briefing. *Scope:* all 18 pages including references; the CISR body is complete (abstract, four sections, four footnotes, one figure). The audio transcript and CISR's separate Talking Points and Framework pages were not fetched. *Honest scoping:* `length:` on both pages says what was read and that the figures were read from images.
+
+**New source pages (2):** [[2025-12-02-bevilacqua-ai-strategic-leadership-skills-top-managers]] (`kind: paper`), [[2025-10-16-weill-cisr-business-models-ai-era]] (`kind: report`; the wiki's first first-party CISR publication).
+
+**Headline findings.** *CISR:* survey waves 2013–2025 (2,378 company observations) show Ecosystem Driver rising from 12% to 58% of companies, the only model with above-average revenue growth in 2025. The predicted AI-era 2×2 (assist or represent the customer × structured or adaptive execution) gives Existing+, Customer Proxy, Modular Curator and Orchestrator. The figure, not the text, carries source of revenue and role of employees per quadrant. The framework separates *human in the loop* from *human at the helm*; adaptive execution keeps only the helm. It is a prediction tested in executive meetings, with no data on firms in the new quadrants. One NZ's agents sit mostly in Existing+. *Bevilacqua:* 23 executive interviews give four interdependent skills: AI open mindset, AI strategic co-thinker, multi-level connector, ethics risk management. Middle managers are co-authors of AI strategy, and AI ethics committees revise themselves. No link to outcomes.
+
+**New entity (1):** [[Ina Sebastian]], second CISR source. The first lists her under `research_by:`, not `author:`, so the promotion rule was read as covering research credit; this is noted on her page. Back-link added on [[2026-04-28-mit-sloan-ai-maturity]], where she was named in plain text.
+
+**Updated entities (4):** [[MIT CISR]] (the two business-model frameworks; a *Research briefings* section; `employs` Ina Sebastian; confidence 0.75 → 0.8), [[Peter Weill]] and [[Stephanie Woerner]] (the 2018 book partly answers their open questions; 0.75 → 0.8 at three sources), [[Amazon]] (Buy for Me as CISR's Orchestrator, next to its blocking of outside agents).
+
+**Updated concepts (6):**
+- [[enterprise-ai-adoption]]: a new section on both frameworks; One NZ in Existing+ read as the micro-productivity trap.
+- [[agentic-web]]: a section on the business model behind the agents, plus a Debates bullet under *who captures the relationship*.
+- [[agent-oversight-and-delegation]]: a section on loop versus helm set by the business model.
+- [[dynamic-capabilities]]: a section on business-model renewal with a time series, and on UET's managerial microfoundations mapped to seven cells.
+- [[responsible-ai]]: a section on ethics risk management as an executive skill, plus a Debates bullet *govern first, or govern last?*
+- [[ai-deskilling]]: a section on filtering skills, plus a Debates bullet *built or eroded?* against Goel.
+
+Confidence is unchanged; three of the six pages are at the 0.95 cap.
+
+**Synthesis (1):** [[syntheses/organizational-frameworks-for-ai-adoption|organizational-frameworks-for-ai-adoption]] gains two layers: **Business model** (CISR, above Nishar-Nohria's firm boundary) and **Leadership skills** (Bevilacqua). Sources 20 → 22; the rest of the synthesis was not re-derived.
+
+**Neighbour scan.** Cell overlap was broad (77–125 sources per cell), so candidates came from qmd and topic greps.
+- *CISR*, all `supports`: [[2026-04-28-mit-sloan-ai-maturity|CISR maturity model]] (capability against value capture), [[2026-05-05-nishar-nohria-end-of-one-size-fits-all|Nishar & Nohria]] (Buy Outcomes from the buyer's side), [[2026-06-03-warren-yc-how-to-build-an-ai-native-services-company|Warren]], [[2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting|Sternfels]] (outcome-underwriting at about a third of revenue), [[2026-07-09-catlin-mckinsey-podcast-real-ai-advantage|Catlin]] and [[2026-10-05-collison-browserbase-will-agents-buy-things-on-the-internet|Collison]]. Also `published-by` MIT CISR.
+- *Bevilacqua*, all `supports`: [[2026-03-28-nguyen-ai-adoption-toe-dynamic-capabilities|Nguyen et al.]] (top leadership support, β = 0.286), [[2026-08-16-hill-bloomberg-leaders-ceo-skills-age-of-ai|Hill]] (wayfinding), [[2026-11-03-goel-bcg-so-what-ai-quietly-taking-from-workforce|Goel]] (problem framing and stress-testing), [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun]] (middle managers as the hinge), [[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|DBS]] and [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti]].
+- *Considered and kept to the body, with no edge:* [[2026-10-17-roth-verge-websites-closing-doors-to-ai-agents|Roth (The Verge)]], because Amazon both runs Buy for Me and blocks outside agents. That is a feasibility tension the briefing ignores, not a claim it makes. Also [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani]] (middle managers at risk; a different claim about jobs) and [[2025-08-05-weidmann-xu-deming-measuring-leadership-skills-ai-agents|Weidmann, Xu & Deming]] (a measurement method, not these skills).
+- *Skipped:* Sinofsky, Ognibeni and MGI arenas (overlap incidental).
+
+**Bookkeeping.** `source_count` recounted: 11 pages adjusted, all 263 match. `lint-page.mjs` is clean on all 15 touched pages, `lint-index-completeness` and `lint-dangling-authors` are clean, and quality scores are unchanged. The broken body wikilink on [[responsible-ai]] was already there.
+
+**Dangling:** Gayan Benedict, One New Zealand, Simone Bevilacqua, Alberto Ferraris, Kurt Matzler, Michal Kuděj.
+
+**Next acquisitions:** CISR's *Talking Points* and *Framework* pages for the AI-era business models; Weill & Woerner, *"Top-Performing Companies Focus on Customer Domains"* (CISR, Sep 2023); Bevilacqua et al. (2025a), the systematic review of AI and top managers' leadership that the paper builds on.
+
 ## [2026-11-06] query | Most-heard criticisms of deploying AI, by layer: input, use, output, tertiary effects (traceable-wiki-answer)
 
 Ran `traceable-wiki-answer` on a Dutch question: the most-heard criticisms of deploying AI, sorted into input, use, output and tertiary effects, with evidence for and against and the solutions each source names. There were five `wiki-retrieve.mjs` runs: one on the full question, then one per facet, because the first ledger was almost all labour-market sources. They gave 200 unique candidates. 35 were used and 165 ignored. Four parallel subagents did the reading, one per facet, and returned findings tagged with path and section. Nine figures were then checked against the wiki text; all matched. That is above the usual 4–8 USE pages, because the four facets are broad. Hub concepts used: [[responsible-ai]], [[foundation-models]], [[ai-sovereignty]], [[ai-deskilling]], [[jagged-frontier]], [[agent-oversight-and-delegation]], [[ai-knowledge-hiding]], [[ai-generated-code-quality]], [[reward-hacking]], [[ai-benchmarks]], [[multi-agent-failure-modes]], [[ai-employment-effects]], [[ai-washing]], [[micro-productivity-trap]]. Artifacts: `inspiration/2026-11-06-kritiek-op-ai-inzet-query-trace.{md,json}`.

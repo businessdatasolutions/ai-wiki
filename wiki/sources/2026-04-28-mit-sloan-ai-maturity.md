@@ -18,7 +18,7 @@ length: "3 pages"
 
 ## TL;DR
 
-A summary of an [[MIT CISR]] research briefing by [[Stephanie Woerner]], [[Peter Weill]], Ina Sebastian, and Evgeny Káganer. Introduces a **four-stage enterprise AI maturity framework** and four organizational challenges ("Four S": Strategy, Systems, Synchronization, Stewardship) for moving from Stage 2 (pilots) to Stage 3 (scaled AI ways of working) — the **financial inflection point**. Backed by MIT CISR's 2022 Future Ready Survey (N=721) plus 2024 interviews with 16 executives at 9 enterprises.
+A summary of an [[MIT CISR]] research briefing by [[Stephanie Woerner]], [[Peter Weill]], [[Ina Sebastian]], and Evgeny Káganer. Introduces a **four-stage enterprise AI maturity framework** and four organizational challenges ("Four S": Strategy, Systems, Synchronization, Stewardship) for moving from Stage 2 (pilots) to Stage 3 (scaled AI ways of working) — the **financial inflection point**. Backed by MIT CISR's 2022 Future Ready Survey (N=721) plus 2024 interviews with 16 executives at 9 enterprises.
 
 ## Key claims
 

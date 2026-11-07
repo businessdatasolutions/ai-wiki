@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI deskilling", "ai-deskilling", "task composition shift", "deskilling"]
 tags: [deskilling, task-composition, ai-employment-effects, occupations]
 confidence: 0.85
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-06"
-source_count: 37
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 38
 relationships:
   - type: instance-of
     target: ai-employment-effects
@@ -245,6 +245,7 @@ Added 2026-09-15 — the page had accumulated five sections of tension without e
 - **The equalising results and the deskilling results have not been reconciled.** Carried over from Open questions and still open: within-role productivity studies show AI compressing the gap between weak and strong performers, which reads as upskilling at the bottom. Whether that is durable capability or borrowed capability is exactly the access-versus-acquisition question, one unit of analysis down.
 - **No supersession events on this page.** No source here has been retired; the additions are accumulating mechanisms, not replacing claims.
 - **A retention result, reported but not ingested (added 2026-10-08).** [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Karunakaran]] summarises a new Autor et al. study in which junior attorneys lost much more performance than seniors when AI was taken away after about 90 days. If the paper says what he reports, it is the test the *"Nobody has measured retention"* bullet above asks for. That bullet stands until the paper itself is in the wiki.
+- **Built or eroded? (added 2026-11-07)** [[2025-12-02-bevilacqua-ai-strategic-leadership-skills-top-managers|Bevilacqua et al. (2025)]] find executives describing problem framing and output filtering as skills they are developing. [[2026-11-03-goel-bcg-so-what-ai-quietly-taking-from-workforce|Goel (BCG, 2026)]] finds C-suite leaders seeing the same skills erode. Both rest on what executives say, and neither measures the skill. The difference may be one of level: executives building their own judgment while their organisations lose it lower down. **Open.**
 
 ## A retention test reported second-hand, and "judgment comes from execution" (added 2026-10-08)
 
@@ -260,3 +261,9 @@ His summary of both: *"If AI makes execution cheaper… the importance is just a
 - [[2026-11-03-goel-bcg-so-what-ai-quietly-taking-from-workforce|Goel (BCG, The So What, Nov 2026)]]: BCG's name for skill loss spread thinly across a whole workforce is *distributed de-skilling*. *"We're not talking about support of cognition here. We are talking about substitution of cognition."* In a study of 70 C-suite leaders, more than half already see it and 60% expect a material business impact within a few years; 90% report overreliance on AI output that is not stress-tested; more than half see juniors building skills too slowly, and more than a third see mentorship slowing. The skills most at risk: problem framing and judgment. His counters are AI-free zones (an Indian bank's AI-free Friday sessions, a US telco's three-day AI-free hackathons, both unnamed), a code of conduct, and skill building reinforced by managers in daily work.
 - [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani on Silicon Valley Girl (Oct 2026)]]: of the three ways consultants worked with AI, *"in terms of learning, self-automators do the worst because they have stopped thinking."* His rule for learners, credited to Stephen Wolfram: do the first integrals by hand to understand them, then let the machine do the next hundred and learn by watching it.
 - Neither source measures skill loss: Goel's figures are leaders' perceptions, Lakhani's an observation from the BCG experiment.
+
+## The skills executives are told to build are the ones at risk (added 2026-11-07)
+
+[[2025-12-02-bevilacqua-ai-strategic-leadership-skills-top-managers|Bevilacqua et al. (Journal of Business Research, Dec 2025)]] interviewed 23 senior executives about the skills AI requires of top managers. One of the four they name, the **AI strategic co-thinker**, is built on what they call *filtering the AI outputs*: *"The quality of the AI response depends on how well you define the problem"*; *"We always ask: does this make sense in our context? Could it be misleading? What's missing?"*; *"AI can show you ten options, but only experience helps you pick the one that works in this environment."*
+
+These are the two skills [[2026-11-03-goel-bcg-so-what-ai-quietly-taking-from-workforce|Goel (BCG)]] reports as most at risk from distributed de-skilling: problem framing and judgment. The paper treats them as executive skills to develop, through bootcamps, simulations and reverse mentoring. Goel treats them as skills that daily AI use erodes. The last quote relies on experience, which is the expertise-collapse question this page already holds: if juniors no longer build experience by doing the work, it is unclear where the next generation of executives gets the judgment to filter AI output. The paper does not ask it.

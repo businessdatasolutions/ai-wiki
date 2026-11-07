@@ -3,9 +3,9 @@ type: concept
 aliases: ["dynamic capabilities", "dynamic-capabilities", "Teece dynamic capabilities", "sense seize transform"]
 tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, microfoundations]
 confidence: 0.95
-last_confirmed: "2026-10-15"
-accessed_at: "2026-10-15"
-source_count: 97
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 99
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -376,3 +376,16 @@ This is practitioner research from one firm, and the underlying studies are not 
 | **Lock-in** | *"codify what a team learns (in process, code, or policy) so the next initiative starts from a higher baseline"* | transforming; W&W `digital-transforming/redesigning-internal-structures` |
 
 The summary cites neither Teece nor W&W. Two things are added. The first is a **time scale**, days or weeks rather than quarters, which W&W leave unstated. The second is **lock-in as codification**, which reads the transforming cell as organisational learning that compounds rather than as a one-off restructuring. The five-step playbook (Learn, Do, Imagine, Act, Care) adds **Care**, employee wellbeing during continuous change, which no W&W cell covers directly. A practitioner framework from HBS's AI Institute arriving independently at the same three-part shape is further evidence that this page's spine is the natural decomposition. It is not new evidence that the capabilities produce AI value: the only number in the summary is BCG's figure that 26% of organisations have achieved value from AI.
+
+## Business-model renewal with a time series, and the managers who sense and seize (added 2026-11-07)
+
+**Renewal, tracked.** [[2025-10-16-weill-cisr-business-models-ai-era|MIT CISR's *Business Models in the AI Era* (Oct 2025)]] is the corpus's only longitudinal record of the `strategic-renewal/business-model` outcome. CISR placed companies in four digital business models in survey waves from 2013 to 2025. Supplier fell from 46% to 15% of companies and Ecosystem Driver rose from 12% to 58%. The share of companies in a digital ecosystem rose from 30% to 81%, which bears on `navigating-innovation-ecosystems`. The AI-era framework that follows is a `digital-scenario-planning` exercise: a scenario of business models five-plus years out, built by four researchers and tested with executives. It ends with three questions that ask leaders to turn the scenario into strategy.
+
+**The managerial microfoundations, interviewed.** Teece locates dynamic capabilities partly in managerial cognition. [[2025-12-02-bevilacqua-ai-strategic-leadership-skills-top-managers|Bevilacqua, Ferraris, Matzler & Kuděj (JBR, Dec 2025)]] come at the same layer from upper echelons theory, which explains firm outcomes from the characteristics of top executives. Their 23 executive interviews produce four skills that map onto seven W&W cells without using the vocabulary:
+
+- The **AI open mindset** is `digital-mindset-crafting` at executive level, and it is fed by `external-triggers` (COVID-19, competitors, customers) and by `internal-enablers` (top managers' own willingness).
+- **Middle-manager engagement** covers `improving-digital-maturity` (training paths, sandboxes) and `redesigning-internal-structures` (new hybrid roles, AI ethics committees).
+- **AI stakeholder relationships** (university labs, vendor co-development) are `navigating-innovation-ecosystems`.
+- The responsible-AI and test-and-learn cultures are `organizational-culture`.
+
+The paper adds one thing W&W do not have. Many of the sensing signals come from below: middle managers and frontline teams proposed the most impactful AI initiatives. In this account the top team's job is to legitimise those signals, which is closer to Teece's sensing as an organisational routine than to sensing as a CEO's act.

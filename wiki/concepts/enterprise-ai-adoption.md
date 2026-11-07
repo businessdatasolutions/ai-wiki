@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-06"
-source_count: 171
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 173
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -1032,3 +1032,14 @@ The [[Stanford Digital Economy Lab]]'s [[2026-07-01-stanford-del-adoption-monito
 - **Individuals.** 61.8% of US adults use generative AI (May 2026), but only about a quarter of users use it daily. Work use is 45–52% in two surveys and falling to 32.7% in a third.
 
 Set against the corpus, the Monitor shows that firm adoption ranges from 20% to 88% depending on who is asked and what counts as use. The lower official figures ([[2026-10-26-rendtorff-smith-chin-bcg-creating-ai-value-adoption|OECD, 20%]]; [[2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs|US Census, ~10% for use in production]]) count all firms by number, and the OECD reports 50%+ for big firms against ~17% for small ones. The higher figures ask executives whether AI is used anywhere in their firm. The Monitor's own caveat applies to every figure on this page: *"widespread adoption is neither necessary nor sufficient for broader economic impact."* Its sibling [[2026-10-21-stanford-del-transformation-tracker|Transformation Tracker]] shows no break yet in US output or productivity growth.
+
+## What adoption is for, and who leads it: two academic frameworks (added 2026-11-07)
+
+**The business model.** [[2025-10-16-weill-cisr-business-models-ai-era|MIT CISR's *Business Models in the AI Era* (Weill, Sebastian, Woerner & Benedict, Oct 2025)]] asks what adoption should change in how a firm makes money. CISR's survey waves (2,378 company observations, 2013–2025) show companies moving to ecosystem models: Ecosystem Driver rose from 12% to 58% of companies, and it was the only model with above-average revenue growth in 2025. The predicted next step is a 2×2 on two axes. One is whether the firm *assists* customers or *represents* them; the other is whether its AI runs predefined processes (*structured*) or builds the process from a stated outcome (*adaptive*). That gives four models: **Existing+**, **Customer Proxy**, **Modular Curator** and **Orchestrator**. Revenue moves from selling products to *achieving customer outcomes* and taking a *share of customer value*. The One NZ case (15 AI use cases cleared a margin hurdle in 2024, 50 targeted for 2025) puts most current initiatives in Existing+, the quadrant where AI is added to the existing model. That is the [[micro-productivity-trap]] in CISR's vocabulary. The framework is a prediction tested in executive meetings, with no data on firms in the new quadrants. Its companion is CISR's [[2026-04-28-mit-sloan-ai-maturity|Enterprise AI Maturity model]], which measures capability where this one names the business models.
+
+**The top team's skills.** [[2025-12-02-bevilacqua-ai-strategic-leadership-skills-top-managers|Bevilacqua, Ferraris, Matzler & Kuděj (Journal of Business Research, Dec 2025)]] interviewed 23 senior executives at large European firms in five sectors. They name four interdependent skills: an **AI open mindset**, being an **AI strategic co-thinker** who frames problems for AI and filters its outputs, a **multi-level connector** linking middle managers and external partners, and **ethics risk management** through a responsible-AI culture and AI ethics committees. Two findings bear on this page:
+
+- **Adoption starts below the top as often as at it.** Several of the most impactful AI initiatives came from middle managers and frontline teams (*"The initiative to use AI for customer support came from the field"*). The paper argues that top managers' job is to legitimise these ideas, and that middle managers belong inside upper-echelons research.
+- **Top-management willingness is the inside of a measured construct.** It is what [[2026-03-28-nguyen-ai-adoption-toe-dynamic-capabilities|Nguyen et al.]] measure as top leadership support, the strongest antecedent of adoption level in their survey (β = 0.286).
+
+The study does not link the skills to any outcome.

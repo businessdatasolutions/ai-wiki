@@ -5,10 +5,10 @@ aliases: ["MIT CISR", "MIT Center for Information Systems Research", "Center for
 tags: [mit-sloan, mit, ai-research, business-research, digital-transformation]
 parent: "MIT Sloan"
 website: "https://cisr.mit.edu"
-confidence: 0.75
-last_confirmed: "2026-04-28"
-accessed_at: "2026-06-05"
-source_count: 2
+confidence: 0.8
+last_confirmed: "2026-11-07"
+accessed_at: "2026-11-07"
+source_count: 3
 relationships:
   - type: employs
     target: Stephanie-Woerner
@@ -16,6 +16,9 @@ relationships:
   - type: employs
     target: Peter-Weill
     via: "Chairman"
+  - type: employs
+    target: Ina-Sebastian
+    via: "Research scientist"
 ---
 
 # MIT CISR
@@ -36,13 +39,20 @@ Key methodological instruments mentioned in the wiki:
 
 - **Four Stages of Enterprise AI Maturity** — see [[2026-04-28-mit-sloan-ai-maturity|MIT Sloan article]] and [[enterprise-ai-adoption]].
 - **Four S Framework** (Strategy / Systems / Synchronization / Stewardship) — challenges to scale Stage 2 → Stage 3.
+- **Digital Business Models** (Weill & Woerner, *What's Your Digital Business Model?*, HBR Press 2018): Supplier, Omnichannel, Modular Producer, Ecosystem Driver. Tracked in survey waves from 2013 to 2025 (2,378 company observations); Ecosystem Driver rose from 12% to 58% of companies.
+- **Business Models in the AI Era** (2025): the 2018 framework redrawn with new axes (*action on behalf of customers*: assist or represent; *business execution*: structured or adaptive) into Existing+, Customer Proxy, Modular Curator and Orchestrator. See [[2025-10-16-weill-cisr-business-models-ai-era|Weill, Sebastian, Woerner & Benedict (Research Briefing No. XXV-10, Oct 2025)]], the wiki's first first-party CISR publication; the maturity model reached the wiki only through MIT Sloan's summary.
 
 ## Notable people (mentioned in this wiki)
 
 - [[Stephanie Woerner]] — Principal research scientist at MIT Sloan, **Director of MIT CISR**.
 - [[Peter Weill]] — Senior research scientist at MIT Sloan, **Chairman of MIT CISR**.
-- Ina Sebastian — Research scientist at MIT CISR (digital partnering, value creation, value capture).
+- [[Ina Sebastian]] — Research scientist at MIT CISR (digital partnering, value creation, value capture).
 - Evgeny Káganer — Research collaborator (also professor at IESE Business School).
+- Gayan Benedict — Industry Research Fellow; co-author of the AI-era business-models briefing (Dangling).
+
+## Research briefings (added 2026-11-07)
+
+CISR publishes a monthly *Research Briefing* for its member organisations. The full text is readable on the web without login; login gates only the PDF download. Briefings are short (around 1,500 words), present a framework with one or two company cases, and end with questions for leaders. The recommended use is as a shared language for a senior-leadership discussion. They are written for members of a consortium funded by large firms (ANZ, Barclays, BNP Paribas, JPMorgan Chase, PwC and others), and the frameworks tend to be tested in executive meetings rather than statistically.
 
 ## Mentioned in
 
