@@ -15,10 +15,10 @@ dynamic_capabilities:
   - digital-seizing/strategic-agility
   - strategic-renewal/business-model
 relationships:
-  - type: supports
+  - type: depends-on
     target: 2026-10-28-damodaran-anthropic-ipo-valuation
-    via: "Damodaran's follow-up to his own valuation: it restates the $1.45–1.5 trillion result with its inputs unchanged, ranks the five inputs he is least sure of, and answers viewers' pushback on the 9.74% cost of capital"
-    confidence: 0.85
+    via: "the same author's follow-up to that session: it restates the $1.45–1.5 trillion result with its inputs unchanged, ranks the five inputs he is least sure of, and answers viewers' pushback on the 9.74% cost of capital"
+    confidence: 0.95
   - type: contradicts
     target: 2026-05-31-benedict-evans-rational-conversation-on-where-ai-is-actually-going
     via: "both address whether frontier-model labs can hold pricing power: Evans argues models lack network effects and compares them to AWS rather than Windows; Damodaran answers viewers who see no visible moat with first-mover stickiness, citing Windows and Office, and assumes Anthropic builds it by embedding premium products in customers' data and usage"

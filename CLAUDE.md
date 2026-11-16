@@ -764,6 +764,8 @@ The closed vocabulary works for source pages too. A source page may declare type
 
 Source-to-source edges are how the wiki encodes its **thematic cluster index** — two sources on the same topic with no typed edge between them is a graph-quality smell, not a neutral state. The [§Ingest](#ingest) workflow's step 5 (Neighbour-source scan) is the disciplined way to keep this layer consistent.
 
+**Follow-ups and series (added 2026-11-16).** When a later source continues an earlier one by the same author, such as a follow-up session or part two of a series, give the later page a `depends-on` edge to the earlier one, not `supports`. An author restating their own result is not independent support. The Relationships panel ([`relationships-panel.tsx`](extensions/relationships-panel.tsx)) lists only the edges a page declares itself, so the earlier page does not show the later one there. Link the later source from the earlier page's TL;DR as well, and link the two index bullets to each other. Precedent: [Damodaran's valuation of Anthropic](wiki/sources/2026-10-28-damodaran-anthropic-ipo-valuation.md) and [his follow-up](wiki/sources/2026-11-03-damodaran-anthropic-valuation-feedback-loop.md). The pair was first typed `supports`, and the earlier page linked the follow-up only in its last bullet.
+
 ### Body-wikilink rule (load-bearing)
 
 **Every typed relationship in frontmatter must also appear as a body `[[wikilink]]` with at least one sentence of context.**

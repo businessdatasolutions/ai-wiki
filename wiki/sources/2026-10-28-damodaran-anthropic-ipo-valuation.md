@@ -41,7 +41,7 @@ relationships:
 
 ## TL;DR
 
-A 48-minute solo session by [[Aswath Damodaran]], recorded two days after [[Anthropic]] filed its IPO prospectus. He reads the 416-page filing along four dimensions (revenue growth, profitability, reinvestment, risk), then values the company with his own inputs and lands at an equity value of **about $1.48 trillion**, which he expects to be below the offering price. The session follows two earlier ones that are not in the wiki: one on AI as a business, one on how the IPO will be priced. **Auto-generated transcript.** The quotations below needed no word corrections. Elsewhere the ASR renders Anthropic as "Enthropic", "entropic" or "philanthropic" and prospectus as "prospectors", and it doubles some digits ("72.6 6 billion", "1.48 48 trillion"); figures are given as spoken and flagged under Source quality.
+A 48-minute solo session by [[Aswath Damodaran]], recorded two days after [[Anthropic]] filed its IPO prospectus. He reads the 416-page filing along four dimensions (revenue growth, profitability, reinvestment, risk), then values the company with his own inputs and lands at an equity value of **about $1.48 trillion**, which he expects to be below the offering price. The session follows two earlier ones that are not in the wiki: one on AI as a business, one on how the IPO will be priced. A week later he answered viewers' feedback in [[2026-11-03-damodaran-anthropic-valuation-feedback-loop|a follow-up session]], which keeps the valuation, ranks the five inputs he is least sure of and defends the cost of capital. **Auto-generated transcript.** The quotations below needed no word corrections. Elsewhere the ASR renders Anthropic as "Enthropic", "entropic" or "philanthropic" and prospectus as "prospectors", and it doubles some digits ("72.6 6 billion", "1.48 48 trillion"); figures are given as spoken and flagged under Source quality.
 
 What it adds to the wiki:
 
@@ -152,7 +152,7 @@ He expects an offering price between $1.5 and $2 trillion: *"this stock will be 
 
 - **AI capex and circular financing.** [[2026-08-18-covello-gs-new-models-ai-investment-landscape|Covello (Goldman Sachs)]] asks whether enterprise buyers make or save money and sorts circular financing into a discount and a dependency. [[2026-10-15-lin-stanford-ai-club-building-in-the-ai-era|Lin (Sequoia)]] compares circular investment to bank lending and points to data-centre debt. This source counts one lab's compute commitments as debt in its valuation. [[2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs|Hatzius (Goldman Sachs)]] raises the same double-counting caution for ecosystem revenue estimates.
 - **Model-layer unit economics.** [[2026-05-20-agrawal-stanford-mse435-economics-of-generative-ai|Agrawal (Stanford MS&E435)]] asks which layer of the stack keeps the margin and notes the GPU cost of each AI user; this source gives one model lab's gross margin and compute-cost trend as reported in its filing.
-- **The follow-up.** [[2026-11-03-damodaran-anthropic-valuation-feedback-loop]] ranks these inputs by fragility and answers the pushback on the cost of capital.
+- **The follow-up.** [[2026-11-03-damodaran-anthropic-valuation-feedback-loop|Heeding the Feedback Loop (3 Nov 2026)]] ranks these inputs by fragility and answers the pushback on the cost of capital.
 
 ## Linked entities and concepts
 

@@ -10,6 +10,17 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-11-16] refactor | Link Damodaran's Anthropic valuation to its follow-up
+
+The user noticed that the two Damodaran sessions from today's ingest did not appear linked. They were, but only from one side. The follow-up's `supports` edge showed in its own Relationships panel. The panel on [[2026-10-28-damodaran-anthropic-ipo-valuation|the first session]] shows only edges that page declares, so the follow-up was absent there. The first page's one link to it was the last bullet on the page, shown as a bare slug, and the two `index.md` bullets did not mention each other.
+
+- [[2026-11-03-damodaran-anthropic-valuation-feedback-loop|The follow-up]]: the edge type changed from `supports` to `depends-on` (confidence 0.95). The session builds on the first one's model. One author restating his own valuation is not independent support.
+- The first session: the TL;DR now names the follow-up and links it; the last bullet got a readable link label.
+- `index.md`: the two bullets link to each other.
+- `CLAUDE.md` §Source-to-source relationships: a note on follow-ups and series, with this pair as precedent.
+
+No `source_count` or `confidence` changes. Both pages are sources, and the edge targets no concept or entity.
+
 ## [2026-11-16] ingest | Fourteen YouTube videos: enterprise agents, McKinsey on diligence and transformation offices, Damodaran on Anthropic's IPO, Google's agent infrastructure, China's data centres and AI schooling, First Proof, ontology vocabulary (14 sources; one more held)
 
 The user sent 15 distinct YouTube videos in three messages: 13 links (two videos listed twice), then 3, then 1. All 15 were acquired; 14 were processed, and one is held on a failed identity check (below). Transcripts were fetched with the `youtube-transcript-skill` and checked for completeness: every last segment falls within a minute of the video's end, with no doubled segments and no label leakage.
