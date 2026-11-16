@@ -2,10 +2,10 @@
 type: concept
 aliases: ["knowledge graph", "KG", "knowledge graphs", "knowledge-graph", "kg"]
 tags: [knowledge-graphs, kg, graph-rag, ai-grounding, ontology, relational-data, agent-harness, agentic-memory, etl, entity-extraction, relationship-extraction]
-confidence: 0.9
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 19
+confidence: 0.95
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 20
 relationships:
   - type: part-of
     target: agent-harness
@@ -157,6 +157,8 @@ Her test for what belongs in the second is the onboarding conversation a new hir
 
 Three structural points travel beyond her product. **Standards support is not adoption**: the Open Semantic Interchange was finalised in Q1 2026 with "support across 50-plus platforms — but that's *support*… **and then the vendors go off and build their own product with their own specifications.**" **The Iceberg parallel**: the property worth wanting is that the layer "separates *what a metric means* from *where it is run*," and she catches practitioners who chose Iceberg for vendor independence simultaneously coupling their semantics to an ETL vendor. And **invocation beats authoring**: context that must be remembered to be used will not be used — "you have to have a way that **forces** your LLM to use those skills" — which is why she treats automatic surfacing when an agent touches the relevant data as the design problem, not the authoring format.
 
+[[2026-10-08-dahiya-ontology-taxonomy-knowledge-graph-semantic-layer|Dahiya's explainer (Oct 2026)]] defines five terms on one university example. They are an **ontology** (classes, relationships and rules: *"the rulebook"*), a **taxonomy** (only the *is-a-kind-of* hierarchy), a **knowledge graph** (the particular facts: *"closer to the scoreboard"*), a **semantic model** (*"business definitions tied to your tables"*, such as how headcount is calculated) and a **semantic layer** (*"the service that serves those definitions to dashboards and increasingly to AI agents"*). She places business-term definitions in the semantic model; Turnbaugh places them in a separate context layer and keeps the semantic layer to schema, joins and annotations. Dahiya uses *ontology* in the computer-science sense and cites Gruber's 1993 *"explicit specification of a conceptualization."*
+
 [[2026-07-13-haghighi-stanford-cs547-toward-ontological-multiplicity-in-ai|Nava Haghighi]] supplies a caution that belongs on this page specifically. She opens by warning that **ontology means something different in computer science than in her usage**, and asks listeners to hold their existing definition aside: hers is "**the boundaries of what we allow ourselves to talk or think about**," in the plural. The relevance is not terminological pedantry — it is that a knowledge graph or semantic layer *is* an ontological commitment in her sense, and "what ontological assumptions get built into systems… **risk becoming everyone's reality.**" Her design implication is that categories should be able to change: merging and splitting, hierarchies and nesting, carrying the traces of past boundary decisions, and "**algorithmic support of living classifications** — forking, comparing, facilitating progress beyond focusing on an end state to allow the evolution of categories."
 
 ## The ontology as a *digital twin of the operating model* ([[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage|Banholzer / McKinsey, August 2026]] + [[2026-08-11-ummadisetti-langchain-toyota-deep-agents-rd-research|Toyota via LangChain, August 2026]])
@@ -188,6 +190,8 @@ His claim about the composite is stronger than anything else in the cluster and 
 **Where this sits against the other four.** The wiki now holds five sources naming the data-and-knowledge layer as the binding constraint — [[2026-07-24-turnbaugh-motherduck-context-layers-explained|Turnbaugh's]] guides-beside-the-tables, [[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness|Ng's]] agent-ready data, [[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage|Banholzer's]] ontology-as-digital-twin, [[2026-08-11-ummadisetti-langchain-toyota-deep-agents-rd-research|Toyota's]] per-function curated skills, and now Blomfield's mined transcripts. They still do **not** agree on form (graph, guides, prose skills, mined recordings), and Blomfield sharpens the disagreement in a useful direction: the other four all assume the knowledge can be *authored*, and his premise is that the valuable part is precisely the part nobody writes down. His prescriptions follow from that premise — transcribe every meeting, ban Slack DMs, *"every action needs to create an artifact… otherwise it basically didn't happen to the AI."*
 
 **And the shared gap holds.** None of the five measures anything: there is still no evidence in the wiki on how much error a context layer removes, how such artifacts decay, or who maintains them once the authoring push ends. Blomfield's self-rewriting manual is the first of the five that even *proposes* a maintenance mechanism, and he offers no assessment of whether the rewritten manual is any good.
+
+[[2026-10-08-dahiya-ontology-taxonomy-knowledge-graph-semantic-layer|Dahiya (Oct 2026)]] points to one measurement the wiki does not hold. In a 2023 benchmark by the data-catalog vendor data.world (Sequeda, Allemang, Jacob; [arXiv:2311.07509](https://arxiv.org/abs/2311.07509)), GPT-4 *"answered far more database questions correctly when it worked through a knowledge graph."* She gives no figures, and her channel calls it *"a single vendor study, not independent research."* On maintenance, she calls ownership *"data governance work and not only modeling work"* and lists four failures: modelling the whole enterprise at once, labelling a category tree an ontology, never connecting the ontology to the tables, and having no owner.
 
 ## Not to be confused with graph engineering (added 2026-09-04)
 

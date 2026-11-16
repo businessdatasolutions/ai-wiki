@@ -5,9 +5,9 @@ aliases: ["OpenAI"]
 tags: [openai, ai-lab, foundation-models, chatgpt, gpt-4, gpt-5, codex, agentic-engineering, sora, custom-gpts, public-benefit-corporation, nonprofit-foundation]
 since: 2015
 confidence: 0.95
-last_confirmed: "2026-10-18"
-accessed_at: "2026-10-18"
-source_count: 58
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 61
 relationships:
   - type: published-by
     target: 2025-10-05-patwardhan-et-al-openai-gdpval
@@ -78,6 +78,7 @@ Note OpenAI's recurring appearance on the *deployment* side of wiki sources (the
 - Investment-figure context: U.S. private AI investment $285.9B in 2025 ([[2026-04-30-ai-index-report-2026]]).
 
 - Named by US Under Secretary of War Emil Michael (*"OpenAI's leadership"*) among the signatories of a White House compact *"for the safe development of superintelligence"*, late September 2026, which in his account commits the labs to *"auditing and independent evaluations"* ([[2026-09-30-michael-miller-department-of-war-ai-adoption]]). His description only; the compact's text is not in the wiki.
+- Asked First Proof, a mathematician-run benchmark of unpublished research problems, to test ChatGPT's pro model in its second batch (May 2026), according to Lauren Williams in [[2026-10-28-williams-harvard-first-proof-ai-math|Harvard's First Proof film]]. The film gives no score for it.
 
 ## A critic's sustainability doubt (added 2026-09-21)
 
@@ -107,3 +108,7 @@ SORT file.name ASC
 ## Its consumer agent, blocked (added 2026-10-18)
 
 [[2026-10-17-roth-verge-websites-closing-doors-to-ai-agents|Roth (The Verge, Oct 2026)]]: OpenAI's agent **Dots** is among the consumer agents users report blocked on major sites, Amazon among them. OpenAI did not reply to The Verge in time. An analyst quoted in the piece asks whether such refusals affect *"the perceived value of the Anthropics and the OpenAIs"*, and answers *"absolutely."*
+
+## Seen from Anthropic's prospectus (added 2026-11-16)
+
+[[2026-10-28-damodaran-anthropic-ipo-valuation|Damodaran (Oct 2026)]], reading Anthropic's IPO filing, says OpenAI has moved to reporting net revenue while Anthropic reports gross, and that OpenAI is *"competing on pricing power,"* one of the reasons he gives for Anthropic's third-quarter slowdown. He also says Anthropic used the past year to catch up with OpenAI on compute.

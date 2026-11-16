@@ -2,10 +2,10 @@
 type: concept
 aliases: ["Industry 4.0", "I4.0", "industry-4-0", "Fourth Industrial Revolution"]
 tags: [industry-4-0, smart-manufacturing, iot, cyber-physical-systems, digital-transformation]
-confidence: 0.8
-last_confirmed: "2026-04-28"
-accessed_at: "2026-09-05"
-source_count: 2
+confidence: 0.85
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 3
 relationships:
   - type: caused
     target: lean-4-0
@@ -57,6 +57,7 @@ Industry 4.0 sits at the **intersection of manufacturing/operations work and the
 - The **predictive maintenance** strand of Industry 4.0 (TPM + Predictive Maintenance Tools, in Gomaa's mapping) is a domain where AI agents operate today with measurable ROI.
 - The **digital twin** technology — virtual replicas of physical assets — is a recurring concept in industrial AI; relevant to Italgas's 300TB platform and Ford's computational fluid dynamic test (15 hr → 10 sec, per [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]).
 - **Industrial robotics** (China's 51.1% global share) is the physical-world counterpart to the knowledge-work agent story.
+- **A vendor's European positioning** (added 2026-11-16). [[2026-11-13-ikeda-panasonic-connect-biz-talks-ai-operations-europe|Ikeda (Panasonic Connect Europe), Nov 2026]], the company's CEO speaking on its own channel, describes its offer as *"hardware, software, and service"* brought together, with AI as one component. In his account AI appears in smart-factory applications for quality and productivity and in rugged TOUGHBOOK devices for *"realtime insight at the edge,"* and the offer also includes a Budapest centre for training, maintenance and repair. He argues Europe can lead in AI *"because of its strong industrial basis, engineering expertise and ongoing digital investment."* Corporate channel; no customer, figure or result is given.
 
 ## Debates and supersession
 

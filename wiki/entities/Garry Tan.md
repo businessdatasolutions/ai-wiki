@@ -6,9 +6,9 @@ tags: [garry-tan, y-combinator, gstack, gbrain, ai-founder-type, startup-school,
 affiliation: "[[Y Combinator]]"
 role: "President & CEO, Y Combinator (since 2023); founder/engineer; ex-Palantir #10; Posterous co-founder"
 confidence: 0.95
-last_confirmed: "2026-10-03"
-accessed_at: "2026-10-03"
-source_count: 9
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 10
 ---
 
 # Garry Tan
@@ -148,3 +148,7 @@ SORT file.name ASC
 ## Opening YC's defense event (added 2026-10-03)
 
 At [[2026-09-30-yc-root-access-startup-industrial-base-dc|The Startup Industrial Base]] in Washington (30 September 2026), Tan's opening remarks carry his argument beyond software: *"software has left the screen. It can see, it can navigate, it can fly, it can run entire factories"*, and most of it, built for commercial reasons, *"can be pointed at defense."* YC came to Washington, he says, because *"we followed the founders"*, and he sets the day's question: *"What would it take for a 20 person company to become a dependable supplier to the American military?"* Later he interviews Transportation Secretary Sean Duffy and raises the safety of autonomy, citing a study in which self-driving cars reduce injuries by as much as 90%. Wardstone's founder names Tan as the company's YC partner. The event has no agent or harness content; it is the only source on this page about hardware and government buyers.
+
+## Review at tens of millions of tokens (added 2026-11-16)
+
+Hosting [[2026-11-14-tan-ugarte-yc-lightcone-rise-of-ai-coworkers|the Lightcone with Lauren Tan and Roman Ugarte (Nov 2026)]], Tan describes his software factory, Cappy: a captain agent over *"10 or 15 threads working all the time"* that learns from his transcripts *"when do I intervene, when do I say just do it."* GStack's ship skill *"always consumes like tens of millions of tokens"*; he wants 10 million a run, and his agent, which has come down from 50 to 30 million, cites held-out evals on 30 bug types and will go no lower. Lauren Tan names GStack as the inspiration for her own skill set, PStack.

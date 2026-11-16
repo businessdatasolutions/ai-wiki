@@ -3,9 +3,9 @@ type: concept
 aliases: ["vibe coding", "Vibe coding", "vibe-coding", "vibe-code", "v-coding"]
 tags: [vibe-coding, agentic-engineering, software-3.0, ai-agents, accessibility, hobbyist-coding, karpathy, pm-tooling, prototype-as-influence-tool, december-2025-phase-change, replit, ai-native-builders, post-prompting]
 confidence: 0.95
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
-source_count: 34
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 35
 relationships:
   - type: instance-of
     target: software-3.0
@@ -181,3 +181,7 @@ The corpus now holds three sources on this question. [[2026-07-07-sinofsky-amble
 
 - [[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort (Remote) on BNR (Oct 2026)]]: every Remote employee may build internal apps with Claude Code inside a scaffold called Labs, which goes through partly automated code review and inherits permissions. All apps point at one shared database. *"Why don't you just change the app so it works for you? It's an internal app. You can do that yourself."* This is Skidmore's *"thousand versions"* problem answered with one data layer.
 - [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani on Silicon Valley Girl (Oct 2026)]]: Harvard Business School replaced the final exam of its required AI course with projects that all 900 MBA students vibe coded; executives build an application in 90 minutes.
+
+## Vibe-coded agents and confidential data (added 2026-11-16)
+
+[[2026-11-08-covington-slaney-mckinsey-strategy-room-agentic-transformation|Slaney (McKinsey, Nov 2026)]]: people who built transformation materials by hand left out anything marked confidential, but *"that control is not necessarily built into any… vibe coded agent that somebody's come up with."* Tech teams were trained on guardrails and risk control; *"as this is being more democratized and we're seeing everybody vibe code from every function,"* that risk mindset *"has not caught up."* McKinsey's own answer is apps on its Wave platform that work on the data in place, without weekly extracts, and set visibility to the audience. Remote's Labs scaffold in [[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort's]] account, above, also has internal apps inherit permissions.

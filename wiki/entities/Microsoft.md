@@ -1,13 +1,13 @@
 ---
 type: entity
 kind: organization
-aliases: ["Microsoft", "Microsoft Corporation", "Microsoft Visual Studio", "MSFT"]
+aliases: ["Microsoft", "Microsoft Corporation", "Microsoft Visual Studio", "Microsoft Developer", "MSFT"]
 tags: [microsoft, azure, azure-devops, visual-studio-code, vs-code, github-parent, copilot, responsible-ai, azure-sre-agent, openai-partner, developer-tools, agentic-devops]
 website: "https://microsoft.com"
-confidence: 0.85
-last_confirmed: "2026-11-07"
-accessed_at: "2026-11-07"
-source_count: 18
+confidence: 0.90
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 21
 relationships:
   - type: employs
     target: GitHub
@@ -33,6 +33,9 @@ relationships:
   - type: published-by
     target: 2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder
     via: "Published on Microsoft's WorkLab podcast — Molly Wood interviews EY's Dan Diasio on managers of agents on day one, mindset/skill set/tool set, and the billable hour (16 Dec 2025)"
+  - type: published-by
+    target: 2026-11-11-balasa-microsoft-path-to-production-for-agents
+    via: "Published on the Microsoft Developer YouTube channel: episode 1 of the Path to Production for Agents master class, presented by Adelina Balasa, AI Global Strategy Lead (11 Nov 2026)"
 ---
 
 # Microsoft
@@ -102,3 +105,7 @@ WorkLab's third wiki source, [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-f
 ## AI-maturity and health-care sources (added 2026-11-07)
 
 - [[2026-03-16-mxi-ai-monitor-ziekenhuizen-2026]] — Dragon Copilot is used for speech-driven reporting by 8% of Dutch hospitals; the market leader is Autoscriber at 38% (p. 31).
+
+## Microsoft Developer channel: the Path to Production master class (added 2026-11-16)
+
+[[2026-11-11-balasa-microsoft-path-to-production-for-agents|Balasa, Your Path to Production for Agents (Nov 2026)]]: the wiki's first source from the *Microsoft Developer* channel, added as an alias so its videos resolve here. Adelina Balasa, AI Global Strategy Lead, opens a master-class series built on six pillars for taking agents to production (AI Center of Excellence, governance, landing zones, security and trust, AgentOps, solution optimization), each told through anonymised customer cases. The tools she names for red-teaming and jailbreak defence, PyRIT and Prompt Shields, are Microsoft's.

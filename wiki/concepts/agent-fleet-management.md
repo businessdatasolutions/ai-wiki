@@ -3,9 +3,9 @@ type: concept
 title: Agent fleet management
 aliases: ["agent fleet management", "managing agent fleets", "agent manager", "human as agent manager", "parallel agents", "agent orchestration at scale"]
 confidence: 0.75
-last_confirmed: "2026-11-04"
-source_count: 23
-accessed_at: "2026-11-04"
+last_confirmed: "2026-11-16"
+source_count: 26
+accessed_at: "2026-11-16"
 tags: [agent-fleet, parallelism, cloud-agents, isolated-workspaces, decision-fatigue, priority-queue, span-of-control, delegation, playbooks, token-economics]
 relationships:
   - type: part-of
@@ -140,4 +140,11 @@ The [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|HBS AI Insti
 ## A system of record for agents, and scoring a team's runs (added 2026-11-04)
 
 - [[2026-09-29-bayer-rosmarin-chari-bcg-ai-agents-business-of-complexity|Bayer Rosmarin (Australian Unity) with BCG (Sep 2026)]]: managing agents at scale *"is akin to managing the non-deterministic intelligence as we manage today, which is human beings,"* so her start-up builds the equivalent of an HR and risk management system for agents: a system of record where business owners see outcomes and risk teams see that agents stay within appetite.
+- [[2026-11-11-balasa-microsoft-path-to-production-for-agents|Balasa (Microsoft Developer, Nov 2026)]]: a central agent registry in which every agent has a named owner who approves its deployment and retirement, with automatic detection of anything unregistered. At a national tax agency it surfaced three ownerless agents in the first week; when a model is deprecated, it lists the agents that must migrate. Proposed KPI: shadow agents, *"ideally zero."*
 - [[2026-11-02-holmes-warp-agentic-self-improvement-loop|Holmes (Warp, Nov 2026)]]: in a software factory, every team member's runs are scored and an agent proposes fixes across the fleet; single-player scoring misses failures that show up across people.
+- [[2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure|Lohmeyer (Google Cloud Tech, Nov 2026)]]: a governance layer for agents across environments. **Agent Gateway** handles *"all client-to-agent and agent-to-anywhere traffic"*; **Agent Registry** is a directory of approved tools and MCP servers; **Agent Identity** gives each agent *"a digital signature for access control and auditing"*; **Agent Observability** records telemetry; token management in the gateway lets firms *"attribute spend, enforce budget guardrails."* A vendor's product list, with no deployment data.
+
+## Bots that supervise bots (added 2026-11-16)
+
+- [[2026-11-14-tan-ugarte-yc-lightcone-rise-of-ai-coworkers|Lauren Tan (YC Lightcone, Nov 2026)]]: a lead engineer bot told to supervise her other engineer bots relayed her feedback to them *"kind of like a disciplinarian"*; with Cursor's projects feature a coordinator agent runs the sub-agents, and *"I don't even manage the project myself anymore."* [[Garry Tan]], hosting, runs *"10 or 15 threads"* under a captain agent in his software factory, Cappy.
+- Roman Ugarte, same episode, prefers a small team of specialist bots, each *"solely dedicated to caring about a particular thing"* and managed by the domain expert, to one bot that cares about everything.

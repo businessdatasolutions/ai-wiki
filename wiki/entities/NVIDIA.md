@@ -4,10 +4,10 @@ kind: organization
 aliases: ["NVIDIA", "Nvidia"]
 tags: [nvidia, gpu, semiconductors, nemotron, openshell, dgx, open-weight-models, jensen-huang, nvidia-research, small-language-models, slm]
 since: 1993
-confidence: 0.85
-last_confirmed: "2026-10-17"
-accessed_at: "2026-10-17"
-source_count: 11
+confidence: 0.90
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 13
 relationships:
   - type: supports
     target: small-language-models
@@ -42,6 +42,7 @@ They are not strictly incompatible: one is about *which model serves each invoca
 - **Nemotron Coalition** — named as a founding-team collaboration between NVIDIA and LangChain on Nemotron Ultra; not yet substantively detailed in the wiki.
 - **Nemotron-H** (2 / 4.8 / 9B) and **Hymba-1.5B** — the small end of the family, cited in NVIDIA Research's own SLM paper as evidence that hybrid Mamba–Transformer architectures reach 30B-class instruction-following and code generation at an order-of-magnitude fewer inference FLOPs.
 - **NVIDIA Dynamo** — the distributed inference framework the SLM paper names as what reduces its barrier B1 (sunk investment in centralised LLM serving) *"to a mere effect of inertia"* by supporting high-throughput low-latency SLM inference in cloud and edge.
+- **Vera Rubin and Blackwell on Google Cloud (added 2026-11-16).** In [[2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure|Google Cloud's AI-infrastructure keynote (Nov 2026)]], Google's Mark Lohmeyer says Google invests *"equally"* in its own TPUs and NVIDIA GPUs, that A5X instances on NVIDIA's Vera Rubin platform are generally available on Google Cloud, and that Google Distributed Cloud with NVIDIA Blackwell serves *"sovereign workloads"* on premise and air-gapped. These are Google's statements about its own offering.
 
 ## People
 

@@ -3,9 +3,9 @@ type: concept
 aliases: ["attack surface management", "ASM", "external attack surface", "EASM", "external attack surface management"]
 tags: [attack-surface-management, cybersecurity, infosec, exposure-management, shadow-it]
 confidence: 0.75
-last_confirmed: "2026-10-25"
-accessed_at: "2026-10-25"
-source_count: 14
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 15
 relationships:
   - type: depends-on
     target: osint

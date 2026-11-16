@@ -4,9 +4,9 @@ title: Spec-driven development
 aliases: ["spec-driven development", "Spec-driven development", "specification-driven development", "SDD", "spec-first development", "spec-anchored development", "spec-as-source", "truth-driven development", "agent specs"]
 tags: [spec-driven-development, sdd, specifications, spec-first, spec-anchored, spec-as-source, spec-kit, kiro, openspec, ears, gherkin, rfc-2119, constitution, spec-drift, under-specification, intent, vibe-coding, agentic-engineering, coding-agents, review-shift]
 confidence: 0.75
-last_confirmed: "2026-09-19"
-accessed_at: "2026-11-04"
-source_count: 6
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 7
 relationships:
   - type: part-of
     target: agentic-engineering

@@ -6,10 +6,10 @@ tags: [stanford, nber, ai-research, digital-economy, labor-economics, productivi
 affiliation: "[[Stanford Digital Economy Lab]] / [[Stanford HAI]] / NBER"
 role: "Director, Stanford Digital Economy Lab; AI Index Steering Committee member"
 contact: "erikb@stanford.edu"
-confidence: 0.9
-last_confirmed: "2026-11-07"
-accessed_at: "2026-11-07"
-source_count: 13
+confidence: 0.95
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 14
 relationships:
   - type: part-of
     target: Stanford-Digital-Economy-Lab
@@ -77,6 +77,10 @@ Brynjolfsson leads the research teams behind three of the [[Stanford Digital Eco
 - [[2026-07-01-stanford-del-adoption-monitor|Adoption Monitor]] — published adoption surveys of individuals and firms, side by side.
 
 The Canaries page carries an undated quote from him: *"We are now transitioning out of this investment phase into a harvest phase where those earlier efforts begin to manifest as measurable output."* This is his productivity J-curve (see Open questions below). His own Tracker does not yet show the harvest: its output, TFP and labour-productivity indicators are all neutral.
+
+### At Stanford HAI's Confronting Our AI Future (added 2026-11-16)
+
+On a [[2026-11-04-stanford-hai-confronting-our-ai-future-business-of-ai|28 October 2026 panel]] he repeats the student's *"is my generation doomed?"* question and the *"amplifying intention"* reframe from his August McKinsey interview, and summarises the Canaries findings without figures. New here: data from Workhelix, a company he co-founded, showing 2–3% of employees in a typical firm getting two to five times the productivity while the typical user gets 1–2% of the possible benefit; a Digital Economy Lab task taxonomy built from AI-conducted worker interviews; and US business formation at *"about twice the rate"* of 2019. In August he said there are *"fewer startups overall in the United States"*; neither statement names its series. He closes by pointing to his paper *The Turing Trap* on the concentration of AI's gains.
 
 ## Notable affiliations
 

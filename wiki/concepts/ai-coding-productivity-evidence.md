@@ -2,10 +2,10 @@
 type: concept
 title: AI coding productivity — the evidence
 aliases: ["AI coding productivity", "AI developer productivity", "developer productivity evidence", "productivity paradox in coding", "throughput vs stability"]
-confidence: 0.85
-last_confirmed: "2026-11-04"
-source_count: 16
-accessed_at: "2026-11-06"
+confidence: 0.90
+last_confirmed: "2026-11-16"
+source_count: 17
+accessed_at: "2026-11-16"
 tags: [rct, productivity, metr, copilot, dora, throughput, delivery-stability, perception-gap, heterogeneity, seniority, measurement]
 relationships:
   - type: part-of
@@ -143,4 +143,5 @@ Both describe low effective use despite access, which limits how far the product
 
 - [[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort (Remote) on BNR (Oct 2026)]]: AI-written share of Remote's code from about 40% to 100% within 2026; per-person productivity 2 to 5 times year on year, 10 to 100 times for some. All self-estimated: *"it's very hard to measure."*
 - [[2026-10-30-houssard-kordestani-liu-lundberg-mckinsey-ma-ai-value-creation|McKinsey on M&A (Inside the Strategy Room, Oct 2026)]]: in software development, *"upwards of 45% productivity gains and 70% reduction"* in the end-to-end life cycle, stated without a source.
-- Both belong with the self-reports on this page, not with the measured studies.
+- [[2026-11-04-stanford-hai-confronting-our-ai-future-business-of-ai|Bosworth (Meta CTO) at Stanford HAI, Oct 2026]]: an in-house coding tool launched three weeks earlier is *"now the way the majority of code is written"* at Meta, and a team of 200 surpassed in eight months what 1,200 people had built over four or five years. Self-reported, with no measure of output or quality. In the same company he also describes *"very conventional business processes where you're just trying to get 5% faster."*
+- All three belong with the self-reports on this page, not with the measured studies.

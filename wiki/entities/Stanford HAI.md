@@ -5,10 +5,10 @@ aliases: ["Stanford Institute for Human-Centered Artificial Intelligence", "HAI"
 tags: [stanford, ai-research, ai-policy, academic-institute, ai-index]
 website: "https://hai.stanford.edu"
 founded: 2019
-confidence: 0.85
-last_confirmed: "2026-10-08"
-accessed_at: "2026-10-08"
-source_count: 4
+confidence: 0.90
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 5
 ---
 
 # Stanford HAI
@@ -21,6 +21,7 @@ The **Stanford Institute for Human-Centered Artificial Intelligence** is an inte
 - **Host of the Center for Research on Foundation Models (CRFM)**, which produces the Foundation Model Transparency Index — see [[foundation-models]] and [[responsible-ai]].
 - **Briefs major companies and government agencies** on the state of AI: per [[2026-04-28-ai-index-report-2025|AI Index 2025]], briefings to Accenture, IBM, Wells Fargo, and Fidelity.
 - **Cited in major media** (NYT, Bloomberg, Guardian) and hundreds of academic papers.
+- **Conference host.** *Confronting Our AI Future: Hope, Fear, and the Choices Ahead* (Stanford campus, 28 October 2026), on the anxiety AI's acceleration raises for students, workers and leaders. Its business-of-AI panel is [[2026-11-04-stanford-hai-confronting-our-ai-future-business-of-ai]], with HAI senior fellows [[Erik Brynjolfsson]] and Melissa Valentine (added 2026-11-16).
 
 ## Notable people (mentioned in this wiki)
 

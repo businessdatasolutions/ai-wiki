@@ -6,9 +6,9 @@ tags: [accelerator, venture-capital, silicon-valley, startup-school, startup-sch
 since: 2005
 website: "https://www.ycombinator.com"
 confidence: 0.95
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 38
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 39
 ---
 
 # Y Combinator
@@ -181,3 +181,7 @@ Also of institutional note: Tan's **"harness wars"** call for 2027 preceded [[20
 ## Design Review (added 2026-10-30)
 
 [[2026-10-26-schwaibold-epstein-yc-new-full-stack-designer|Schwaibold (Shopify) on YC's Design Review, Oct 2026]]: Aaron Epstein with Marvin Schwaibold on designing with Codex and Claude Code, and reviews of viewer-submitted sites.
+
+## The Lightcone on AI coworkers (added 2026-11-16)
+
+[[2026-11-14-tan-ugarte-yc-lightcone-rise-of-ai-coworkers|The Rise Of AI Coworkers (Lightcone, Nov 2026)]]: Lauren Tan and Roman Ugarte on building Grok Bot, with [[Garry Tan]] among the hosts. Hosts describe two YC deployments: Quartermaster, YC's open-source bot project, which inherits the user's permissions in each Slack channel (*"me as a GP has certain access as opposed to, let's say, a software engineer"*), and a chat system where YC's coding agents talk to each other *"like an internal Stack Overflow,"* which a host calls *"Moltbook internally at YC."* Quartermaster is probably the QM harness in [[2026-09-07-yc-paper-club-why-the-harness-matters-more-than-the-model|the Paper Club session]] recorded above; neither source says so.

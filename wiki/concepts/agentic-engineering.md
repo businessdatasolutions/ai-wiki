@@ -3,9 +3,9 @@ type: concept
 aliases: ["agentic engineering", "Agentic Engineering", "agentic-engineering", "agent engineering"]
 tags: [agentic-engineering, vibe-coding, software-3.0, ai-agents, agent-harness, software-engineering, hiring, karpathy, codex-case-study]
 confidence: 0.95
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
-source_count: 86
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 87
 relationships:
   - type: depends-on
     target: agent-harness
@@ -361,3 +361,8 @@ Two points bear on this page directly.
 
 - [[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort (Remote) on BNR (Oct 2026)]]: AI wrote about 40% of Remote's code at the start of 2026 and 100% by October; code review is almost entirely automated. Engineers now state the problem and the desired result: *"Figure it out."* One agent has run for three weeks on a complex internal app from one high-level instruction, asking subject-matter experts on Slack when it gets stuck.
 - [[2026-11-02-holmes-warp-agentic-self-improvement-loop|Holmes (Warp, Nov 2026)]]: the outer loop as engineering on the factory rather than on the product: store every agent conversation, score runs with rubric judges, isolate failures, and let an agent propose skill changes.
+
+## The smallest loop, and alignment as the bottleneck (added 2026-11-16)
+
+- [[2026-11-14-tan-ugarte-yc-lightcone-rise-of-ai-coworkers|Lauren Tan (YC Lightcone, Nov 2026)]]: the smallest loop is teaching the agent to *"run the code empirically... run the application like a real user would,"* so it *"has the ability to check its own work."* That gives correct code, not necessarily good code; *"the new job of a software engineer"* is getting agents to write good code by default. Her "inverted pyramid" puts most effort into the codebase and static analysis, then rules and skills (`AGENTS.md`), then a little human review.
+- Roman Ugarte, same episode: with execution cheap, the expected failure is *"an intent specification failure or a goal failure."* On his team the bottleneck is roadmap alignment; someone in a planning discussion often says *"Oh, I have a PR for that,"* and user-facing changes ship only after *"internal product market fit."*

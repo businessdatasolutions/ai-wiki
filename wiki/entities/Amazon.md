@@ -5,10 +5,10 @@ aliases: ["Amazon", "Amazon.com", "Amazon.com Inc"]
 tags: [retail, cloud, ai-infrastructure, hyperscaler-parent, big-tech]
 ticker: "AMZN"
 website: "https://www.amazon.com"
-confidence: 0.78
-last_confirmed: "2026-11-07"
-accessed_at: "2026-11-07"
-source_count: 8
+confidence: 0.83
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 9
 ---
 
 # Amazon
@@ -81,3 +81,7 @@ SORT file.name ASC
 ## Buy for Me: the same move, outward (added 2026-11-07)
 
 [[2025-10-16-weill-cisr-business-models-ai-era|MIT CISR (Oct 2025)]] cites Amazon's beta *Buy for Me* feature as an emerging example of its **Orchestrator** business model. The customer taps a button on a product page, and Amazon's agent buys the product from the brand's own website when Amazon does not sell it. Set beside the section above, Amazon runs an agent on other merchants' sites while blocking outside agents from its own. The briefing predates the lawsuit and does not discuss access.
+
+## A non-voting stake in Anthropic (added 2026-11-16)
+
+In [[2026-10-28-damodaran-anthropic-ipo-valuation|Aswath Damodaran's reading of Anthropic's IPO prospectus (Oct 2026)]], Amazon and Alphabet will hold non-voting Class N shares in [[Anthropic]], with a share of profits and cash flows. The S-1 itself is not in the wiki.

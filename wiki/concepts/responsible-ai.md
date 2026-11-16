@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-11-07"
-accessed_at: "2026-11-07"
-source_count: 61
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 65
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -387,6 +387,10 @@ That gives the page two ideal types it had not named. In one, **the state tests*
 
 For organisations deploying AI this is the `contextual/external-triggers` side of the page: the legal and political pressure that will shape what responsible deployment has to include.
 
+[[2026-11-14-mccarthy-cnn-meanwhile-in-asia-china-data-centers|CNN's Meanwhile in Asia (Nov 2026)]] puts a number on data centres as an issue in the 2026 US midterms, *"some $31 million"* in political ads, and its hosts read the opposition as local costs (bills, water, noise, little consultation) *"combined with… suspicion about artificial intelligence in general."* Its China reporter, Simone McCarthy, describes no comparable backlash in China, which she links to a more practical public view of AI and to limits on dissent.
+
+**The deploying enterprise as a third actor (added 2026-11-16).** [[2026-11-14-wang-mckinsey-author-talks-the-trust-code|Wang (McKinsey Author Talks, Nov 2026)]] says the usual map has two actors, labs that build models and regulators that write rules, and leaves out the enterprises that *"decide what gets bought, what's connected to real systems"* and what data it can reach. Her analogy is aviation: manufacturers design and test aircraft, airlines answer for how they are operated, and regulators *"set a floor nobody gets to opt out of."* Her definition: *"accountability means owning the conditions around the unpredictability."* A book interview; no evidence is offered.
+
 ## Public demand for regulation and assurance (added 2026-10-11)
 
 [[2025-04-28-gillespie-kpmg-trust-attitudes-and-use-of-ai-2025|Gillespie et al. 2025]] (48,340 respondents, 47 countries) measures the public side. **70%** say AI regulation is needed, only **43%** think current laws are adequate, and **87%** want laws against AI-generated misinformation. International regulation is the most endorsed form. Four in five would trust an AI system more with assurance mechanisms in place (human oversight, monitoring, responsible-AI policies and training, standards, independent assurance). In the authors' trust model, the **institutional pathway** (perceived adequacy of safeguards and confidence in the entities developing AI) has the strongest influence on trust. KPMG, which funds the study, sells AI assurance; the university team states it ran the research independently.
@@ -399,6 +403,7 @@ For organisations deploying AI this is the `contextual/external-triggers` side o
 
 - [[2026-11-03-goel-bcg-so-what-ai-quietly-taking-from-workforce|Goel (BCG, The So What, Nov 2026)]]: a code of conduct with AI-free zones for high-risk work, ethical judgment and the origination of new ideas.
 - [[2026-09-29-bayer-rosmarin-chari-bcg-ai-agents-business-of-complexity|Bayer Rosmarin (Australian Unity) with BCG (Sep 2026)]]: risk management for agents modelled on the systems firms already use for people.
+- [[2026-11-11-balasa-microsoft-path-to-production-for-agents|Balasa (Microsoft Developer, Nov 2026)]]: governance as *"the connective tissue that makes AI trustworthy and traceable,"* in four moves: a responsible AI council with a charter and decision rights plus a pre-deployment impact assessment (a fairness review found one health agent underserved non-English speakers, and a check and fallback were added); a short policy pack of permitted data classes, approved models and model cards; an agent registry; and always-on alerts with a five-level maturity model, climbed one level at a time. Her test: *"you can reconstruct any agent's decision on demand."*
 - [[2026-10-20-parikh-google-cloud-hippocratic-ai-voice-agents-healthcare|Hippocratic AI on Google Cloud (Oct 2026)]]: safety as automated evaluation at very large volume, and a design rule that the agents *"do not diagnose or prescribe."* Its *"zero safety issues in production"* is a marketing claim with no definition.
 - [[2026-07-14-keneally-bcg-so-what-llm-or-md-patient-journey|Keneally (BCG, The So What, Jul 2026)]]: how personal health agents will be licensed and assured is open; human advice, which also errs, is the baseline to compare against.
 

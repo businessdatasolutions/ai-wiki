@@ -5,9 +5,9 @@ aliases: ["Anthropic", "Anthropic PBC", "Claude"]
 tags: [anthropic, ai-lab, foundation-models, claude, public-benefit-corporation, long-term-benefit-trust]
 since: 2021
 confidence: 0.95
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
-source_count: 92
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 94
 ---
 
 # Anthropic
@@ -28,6 +28,8 @@ The mechanism: **Long-Term Benefit Trust (LTBT)** as the **mission guardian** en
 The novel structural property: trustee accountability **flows the right direction with respect to mission-relevant decisions** — directors are accountable to the trust (not to shareholders) on the mission axis. Ries' first-hand framing of what this buys: *"Whenever you see Anthropic do the right thing, like when they refuse to release a model because they think it's too dangerous, think about how much that's costing them."*
 
 Ries (who plays *"no important role"* but *"a very big role"* in the founding-advice phase) was approached by *"one of their investors"* and told the Amodeis *"if you don't get this right, here's what's going to happen"* — the early framing that became the LTBT. Per Ries' framework, **PBC + LTBT** is **strictly stronger** than **PBC alone** ([[OpenAI]]'s post-2025 structure) because the LTBT introduces *outside trustee accountability* that PBC-alone does not.
+
+[[2026-10-28-damodaran-anthropic-ipo-valuation|Aswath Damodaran's reading of the IPO prospectus (Oct 2026)]] adds the share classes: Class A for the public (one vote per share); employee shares that vote only on changes affecting the benefit trust; non-voting Class N shares with a share of profits and cash flows, held by Alphabet and [[Amazon]]; Class T shares held by the benefit trust, which appoints the majority of the board; and one Class F share held by the seven co-founders with 50.1% of the votes. He says the trust will be made up of people the founders picked, calls the structure *"dictator level corporate governance"*, and would still buy, but at *"a much bigger discount."* In Ries's account the trustees are AI-safety experts without equity; in Damodaran's, they are people the founders chose. The wiki has not ingested the S-1 itself.
 
 ## Research initiatives appearing in this wiki
 
@@ -118,3 +120,14 @@ SORT file.name ASC
 ## A 2,000-person company on Claude (added 2026-11-04)
 
 [[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort (Remote) on BNR (Oct 2026)]]: Remote's CEO says it uses *"a lot of models from Anthropic and a few others,"* plus security-specialised models from Anthropic and OpenAI, and finds local models not good enough for most of its work.
+
+## The IPO prospectus, as Damodaran reads it (added 2026-11-16)
+
+[[Aswath Damodaran]] values Anthropic in [[2026-10-28-damodaran-anthropic-ipo-valuation|a session recorded two days after it filed its 416-page S-1 (Oct 2026)]]. The first four bullets are his reading of the filing, spoken over slides; the last two are his own valuation. The S-1 itself is not in the wiki.
+
+- **Growth:** revenue up 1,300–1,400% year on year; more than $16 billion in the last reported quarter; a run rate that could reach $100 billion by year end. Third-quarter figures are not in the filing; investor meetings indicate that growth *"seemed to have stalled,"* which Anthropic attributes to a compute constraint.
+- **Customers:** 11,900, about 1,900 of them spending more than $1 million (the threshold that defines the 11,900 is not spoken); the top five account for about 25% of revenue; 80% of revenue comes from usage rather than subscriptions, and from enterprises (the transcript leaves open whether that is one share or two).
+- **Costs:** compute costs down from 250% of revenue six quarters earlier to under 50%; an operating profit in the last quarter reported; a gross margin close to 80% once the 15–20% revenue share owed to big-tech partners, which Anthropic books as marketing, is moved into cost of goods sold. The move is his adjustment.
+- **Commitments and capital:** more than $450 billion of contractual compute commitments (more than $600 billion in all), with Broadcom the largest single beneficiary; $114 billion raised recently and held as cash.
+- **His valuation:** his own assumptions, none of them in the prospectus. About $1.48 trillion of equity, on $1 trillion of revenue in 2036, a 27.5% target margin, a 9.74% cost of capital and a 10% failure risk, with the present value of the contractual commitments subtracted as debt (the figure differs between his two talks; see the next bullet). His worst case is −$373 billion, his best case $4 trillion. Anthropic had not listed when he spoke, so the $1.48 trillion is his estimate of value, not a market price. He expected the offering to be priced at $1.5–2 trillion.
+- **The follow-up:** [[2026-11-03-damodaran-anthropic-valuation-feedback-loop|Damodaran (Nov 2026)]] keeps the valuation ($1.45–1.5 trillion) and ranks the inputs he is least sure of: target revenues, then governance (seven founders who *"operate in an echo chamber"*), profitability, reinvestment and regulatory risk. Here he gives the present value of the contractual commitments as about $373 billion; the first session subtracted $473 billion of debt, described there as the same present value. Neither transcript reconciles the two. He uses a pre-tax cost of debt of about 6.5%, on the BB+ rating that the Financial Times reported as likely, and on failure risk says *"Anthropic is no CoreWeave."*

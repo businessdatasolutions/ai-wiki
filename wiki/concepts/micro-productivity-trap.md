@@ -3,8 +3,8 @@ type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
-last_confirmed: "2026-11-07"
-source_count: 96
+last_confirmed: "2026-11-16"
+source_count: 99
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -12,7 +12,7 @@ relationships:
   - type: contradicts
     target: automation-vs-augmentation
     via: "process lock-in = automation without redesign; reinvent-the-business resists this trap"
-accessed_at: "2026-11-07"
+accessed_at: "2026-11-16"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -474,3 +474,11 @@ Her measurement answer is a chain. Adoption is *"the easiest thing to measure"*,
 ## No break yet at the level of the economy (added 2026-11-04)
 
 The trap describes individual time saved that never becomes firm-level output. The [[Stanford Digital Economy Lab]]'s [[2026-10-21-stanford-del-transformation-tracker|Transformation Tracker]] measures the same gap one level up. Through September 2026 it rates US output growth (2.35%), TFP growth (0.8% in 2025) and labour-productivity growth (2.5%) as neutral: *"no break from recent levels."* Its sibling [[2026-07-01-stanford-del-adoption-monitor|Adoption Monitor]] reports 62% of US adults using generative AI, and warns that *"widespread adoption is neither necessary nor sufficient for broader economic impact."* Together they give the trap's economy-wide form: adoption has spread, and the aggregates have not moved. This matches [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey's]] *"adoption for what?"* and [[2026-09-08-hatzius-gs-macro-impact-of-ai-gdp-productivity-jobs|Hatzius's]] decade-long diffusion estimate.
+
+## Junior tasks automated, decision models untouched (added 2026-11-16)
+
+[[2026-11-16-pralong-mckinsey-strategy-room-gen-ai-outside-in-diligence|McKinsey's diligence episode (Nov 2026)]]: most investment firms use gen AI for *"basic efficiency"* on the routine work *"they often have their most junior associates do,"* but *"haven't really embedded these [gen AI] tools into the thinking and critical processes of the investment process… and really the decision models"* (Covington). His ratio is *"$5 for adoption and workforce readiness"* per $1 of technology. [[2026-07-30-hines-pierce-mckinsey-ai-physical-world-more-valuable|Hines-Pierce]], above, puts her split at 70% people, 20% process and 10% technology. Neither states a method.
+
+## Same length deck, sharper insight (added 2026-11-16)
+
+[[2026-11-08-covington-slaney-mckinsey-strategy-room-agentic-transformation|Covington and Slaney (McKinsey, Nov 2026)]] describe the trap inside a transformation office. As a programme matures it gains data sources, so reporting grows while the office is expected to shrink: *"expected to be doing more with less and getting more of the grunt work to boot"* (Slaney). Agents that only produce more add to it: *"Just generating more and generating more often to more people is rarely the solution"* (Slaney), and new users make decks *"three times as long."* Covington's instruction to clients is *"same length deck, sharper insight."*

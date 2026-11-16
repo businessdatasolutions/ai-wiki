@@ -3,8 +3,8 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-11-04"
-source_count: 80
+last_confirmed: "2026-11-16"
+source_count: 82
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -15,7 +15,7 @@ relationships:
   - type: depends-on
     target: ai-benchmarks
     via: "measurement methodology — Vantage and similar protocols define new benchmark types for human skills (not model capability)"
-accessed_at: "2026-11-04"
+accessed_at: "2026-11-16"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -372,6 +372,8 @@ The list overlaps with entries above (storytelling, judgement, systems thinking)
 
 [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun (HBS, WorkLab, Nov 2025)]] expects the same job to diverge across firms as each reorganises around AI in its own way, so *"three years from now, your job will be different."* Her hiring conclusion: *"you are not hiring for the skills that people have today, but you're hiring people for their ability to learn new skills,"* which businesses say they value but *"often conflate with experience."* The obstacle is on the learner's side. Reskilling is *"bloody hard"* because *"we are asking our workforce… to change who they are,"* and self-paced training platforms that *"look like Netflix"* assume a motivation adults do not reliably have: *"adults are not necessarily interested in learning new things or admitting that they need to learn new things."* What works better in her studies is a mix of hard and soft skills, taught in cohorts, as part of a career journey with a visible promise rather than as a one-off course. For employees who want to matter in such a firm she names a technical base, clarity about how their work fits the firm's direction, and a coalition to learn with.
 
+[[2026-11-04-stanford-hai-confronting-our-ai-future-business-of-ai|Tafvizi (Snowflake) at Stanford HAI (Oct 2026)]] tells new hires to *"be ready to rewrite your own job description,"* since it will be different within a couple of weeks, and names *"curiosity, lifetime learning and resilience"* as the most important skills. On the same panel Bosworth argues for less education up front and *"a lot more on an ongoing basis."* Valentine has no answer to the entry-level question; the nearest she has seen is a David Brooks piece in *The Atlantic*: those who will be fine keep learning critical thinking, *"and it's a discipline."*
+
 ## Leadership, measured: large, causal, and made of questions (added 2026-10-15)
 
 Most claims on this page say social skills matter. [[2025-08-05-weidmann-xu-deming-measuring-leadership-skills-ai-agents|Weidmann, Xu & Deming (2025)]] measure one of them causally. In a pre-registered experiment, 249 leaders were each randomly assigned to six human teams. Leader identity explained more than half the variation in team performance. A leader 1 SD above average raised team performance by about 0.65 SD, and still about 0.55 SD after controlling for the leader's own task skill, fluid IQ and typing speed. Good leaders solved 53% of problems, weak ones 10%. What predicted the effect was **fluid IQ, emotional perceptiveness and economic decision-making skill**, and in conversation **questions, turn-taking and plural pronouns**. Gender, age, ethnicity, education and the sheer volume of talk did not predict it. The same leaders did equally well directing GPT-4o agents (0.81 corrected correlation), which makes the skill cheap to test: $23 per person against $114 for the human version. Deming's earlier work on the rising labour-market value of social skills (*QJE* 2017) is cited as motivation.
@@ -399,3 +401,4 @@ Two more lists of the skills that survive. [[2026-03-31-roslansky-smith-tools-an
 
 - [[2026-11-03-goel-bcg-so-what-ai-quietly-taking-from-workforce|Goel (BCG, The So What, Nov 2026)]]: the skills most at risk with AI are problem framing and judgment, so those are the ones to protect. His three signs for any daily user: *"Stop and think"*, *"I am in the driver's seat"*, and *"If in doubt, go back to the first."*
 - [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani on Silicon Valley Girl (Oct 2026)]]: models *"regress to the mean,"* so taste decides whether a one-person team gets more than the average design or analysis. *"Never take the first answer"*; prompt the model to argue the counter-case first. The skill he tells students to build is *"learning how to learn,"* which AI tutoring makes easier.
+- [[2026-11-14-wang-mckinsey-author-talks-the-trust-code|Wang (McKinsey Author Talks, Nov 2026)]]: from her interviews with designers, *"the workflow is becoming like an hourglass."* Variation and research at the top and distribution at the bottom get cheaper and faster; *"the narrow waist of the hourglass is our taste, our care for the audiences and our judgment of what would work."* In biology, the more hypotheses AI surfaces, the more the choice among them matters. Judgment *"isn't taught in lecture"*: children learn it by watching someone practise it.

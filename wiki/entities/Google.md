@@ -4,10 +4,10 @@ kind: organization
 aliases: ["Google", "Google LLC", "Alphabet (operating subsidiary)", "Google for Developers", "Google Cloud Tech", "Google Cloud"]
 tags: [google, big-tech, hyperscaler, ai-lab, foundation-models, gemini, google-cloud, google-research, google-brain, gemini-api, file-search, multimodal-rag, notebooklm, flow, veo, ai-product-management, bfloat16, coral-edge-tpu, tensorflow, edge-ml]
 since: 1998
-confidence: 0.90
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
-source_count: 40
+confidence: 0.95
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 44
 relationships:
   - type: published-by
     target: 2026-06-12-mcveety-hormati-google-cloud-open-knowledge-format
@@ -55,6 +55,7 @@ Big-tech platform company; operating subsidiary of Alphabet. Within this wiki Go
   - **agent-eval** — an evaluation toolkit in Google's Professional Services repository: a CLI walkthrough of the Vertex AI GenAI Evaluation Service for ADK agents (`setup` once per shell, `init` once per agent, `run` every iteration). In [[2026-09-30-zamora-feroz-why-your-ai-agent-fails-in-production|Google Cloud Tech's *AI Agent Clinic* (September 2026)]] it is adapted to a LangGraph agent through an OpenInference trace converter. On-screen note: its scripts *"are expected to be integrated into the Agents CLI eval module by the end of this year"*, a vendor roadmap statement.
 - **ADK (Agent Development Kit)** — Google's open-source agent-engineering framework. Listed in [[2026-05-07-kokane-agent-harness-vs-systems-design|Kokane's]] Layer 2 harness-frameworks alongside LangChain, Microsoft Agent Framework, LlamaIndex, CrewAI, Haystack, DSPy. The Agents CLI's **ADK Code** skill is the Python-API reference surface for ADK. The [[2026-06-10-google-cloud-tech-ai-agents-explained-first-agent|Google Cloud Tech first-agent tutorial]] (June 2026) is the wiki's first **hands-on ADK build**: a self-correcting multi-agent blog-writer using `LlmAgent` / `LoopAgent` / root-agent-with-tools, framed explicitly on the [[react-reasoning-acting|ReAct]] loop.
 - **A2A / A2UI / MCP integration** — Google Cloud names A2A and A2UI alongside MCP as the agent-integration protocols the platform supports natively.
+- **AI Hypercomputer and agent runtimes (added 2026-11-16).** In [[2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure|The Future of AI Infrastructure (Google Cloud Tech, Nov 2026)]], Google presents its own stack for agents; the descriptions and figures are Google's claims about its products. As presented: four eighth-generation TPU systems (8T for training, 8i for low-latency inference, and the newly announced 8TX for confidential inference and 8i Max for very long contexts); TorchTPU, *"built with a PyTorch team at Meta,"* TPU support in vLLM and SGLang, and llm-d 1.0 in GKE Inference Gateway; [[NVIDIA]] Vera Rubin GPUs on Google Cloud; **Agent Compute Engine**, microVM sandboxes that pause and resume with their memory and disk state, on which Google says its own Gemini agents run; **Agent Substrate**, an open-source agent runtime on Kubernetes APIs that Google is donating to the CNCF; and a governance layer for agents (Agent Gateway, Agent Registry, Agent Identity, Agent Observability). Google reports a fleet-wide power usage effectiveness of 1.09 and says **Project Suncatcher** has run TPU inference on a prototype satellite in low Earth orbit.
 
 ## Models referenced in this wiki
 
@@ -76,6 +77,9 @@ Big-tech platform company; operating subsidiary of Alphabet. Within this wiki Go
 - **Ivan Solovyev / Kriti Dwivedi** — Gemini File Search team members; see [[2026-05-05-google-gemini-file-search-multimodal|Solovyev & Dwivedi 2026]].
 - **Nicole Forsgren** — lead, Developer Intelligence team at Google; founder of the **DORA (DevOps Research and Assessment)** programme; lead author of *Accelerate* (2018). Speaker at Google I/O 2026 in *[[2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer|Build core skills to thrive as an AI-era developer]]*. The talk explicitly cites the DORA research for both the productivity-paradox claim (individual gains, team-level losses — the engineering-team correlate of [[micro-productivity-trap]]) and the **AI-as-amplifier-and-mirror** framing. First-mention; promote on second-source coverage.
 - **Andrew Macvean** — lead, Developer Intelligence team at Google; co-presenter with Forsgren at Google I/O 2026. First-mention; promote on second-source coverage.
+- **Amin Vahdat** — SVP and Chief Technologist of AI and Infrastructure; presented the hardware half of [[2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure|The Future of AI Infrastructure]] (Google Cloud Tech, Nov 2026). First-mention; promote on second-source coverage.
+- **Mark Lohmeyer** — VP and GM, AI and Computing Infrastructure, Google Cloud; presented the software and agent-runtime half of the same livestream. First-mention; promote on second-source coverage.
+- **Maria Biggs** — engineering director, Project Suncatcher; gave a short update on TPUs in orbit in the same livestream. First-mention; promote on second-source coverage.
 
 ## Internal teams referenced in this wiki
 
@@ -122,3 +126,7 @@ SORT file.name ASC
 
 - [[2026-10-28-wang-google-cloud-tech-agent-memory-architecture|Wang (Google Cloud Tech, Oct 2026)]]: [[Annie Wang]] on long-term memory for multimodal agents: facts in Cloud SQL, understanding in a vector store or Vertex AI Agent Engine's Memory Bank, extraction kept off the live path.
 - [[2026-10-20-parikh-google-cloud-hippocratic-ai-voice-agents-healthcare|Hippocratic AI on the Google Cloud channel (Oct 2026)]]: a customer story; voice agents for patient outreach on GKE, with Google's open Gemma models running millions of automated evaluations. The Google Cloud channel is added as an alias of this page so that its videos resolve here.
+
+## Dual-class shares, and a stake in Anthropic (added 2026-11-16)
+
+[[2026-10-28-damodaran-anthropic-ipo-valuation|Damodaran (Oct 2026)]] dates the spread of dual-class shares among US tech listings to Google's 2004 IPO, with ten votes per founder share. Until then, in his account, new US listings had one share class; institutional investors did not push back, and Facebook and other tech companies followed. In his reading of [[Anthropic]]'s IPO prospectus, Alphabet will hold non-voting Class N shares in Anthropic, with a share of profits and cash flows.

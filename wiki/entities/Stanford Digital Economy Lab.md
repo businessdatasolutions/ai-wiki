@@ -6,10 +6,10 @@ tags: [stanford, ai-research, digital-economy, labor-economics, working-papers]
 parent: "Stanford University"
 director: "[[Erik Brynjolfsson]]"
 website: "https://digitaleconomy.stanford.edu"
-confidence: 0.9
-last_confirmed: "2026-11-07"
-accessed_at: "2026-11-07"
-source_count: 9
+confidence: 0.95
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 10
 relationships:
   - type: employs
     target: Erik-Brynjolfsson
@@ -29,6 +29,8 @@ The **Stanford Digital Economy Lab** is a research initiative at Stanford Univer
 Publisher of [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson, Chandar & Chen (2025) "Canaries in the Coal Mine?"]] — the wiki's primary empirical source on AI's recent employment effects.
 
 Likely future-recurring as a source of empirical AI-economics research. Brynjolfsson's earlier customer-support productivity study (Brynjolfsson, Li & Rock 2023, NBER 31161 → QJE 2025) also originated from this research stream; not yet ingested as its own source page (currently summarized via [[Erik Brynjolfsson]] entity page).
+
+**A task taxonomy from worker interviews (added 2026-11-16).** On [[2026-11-04-stanford-hai-confronting-our-ai-future-business-of-ai|Stanford HAI's business-of-AI panel]] Brynjolfsson describes a new lab taxonomy of the tasks in the economy, built from interviews an AI conducts with workers, which he contrasts with the relatively static O*NET categories. It shows new tasks appearing in coding and little change for dishwashers. Its name is garbled in the ASR ("tasknet"), and it is not yet in the wiki.
 
 ## Mentioned in
 

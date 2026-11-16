@@ -2,10 +2,10 @@
 type: concept
 title: Multi-agent failure modes
 aliases: ["multi-agent failure modes", "MAST", "multi-agent system failure taxonomy", "why multi-agent systems fail", "agent coordination failure"]
-confidence: 0.85
-last_confirmed: "2026-09-18"
-source_count: 13
-accessed_at: "2026-11-06"
+confidence: 0.90
+last_confirmed: "2026-11-16"
+source_count: 14
+accessed_at: "2026-11-16"
 tags: [mast, multi-agent, failure-taxonomy, coordination, inter-agent-misalignment, task-verification, data-processing-inequality, isolated-workspaces, caid, token-budget]
 relationships:
   - type: part-of

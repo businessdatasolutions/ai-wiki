@@ -3,8 +3,8 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-11-07"
-source_count: 116
+last_confirmed: "2026-11-16"
+source_count: 117
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -12,7 +12,7 @@ relationships:
   - type: caused
     target: ai-deskilling
     via: "task-composition shift is one mechanism within broader employment effects"
-accessed_at: "2026-11-07"
+accessed_at: "2026-11-16"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -546,6 +546,8 @@ This page is overwhelmingly about employment in existing firms. Two sources from
 [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Carl Benedikt Frey]], five days later, reports the opposite trend from economy-wide statistics: "it helps explain why we've seen **a decline in business dynamism** despite the fact that every technology — from the personal computer, the internet, the cloud, and now AI — will have made it much cheaper to set up a company and operate a firm. And yet **we're seeing less entry.**" His mechanism is incumbent barriers rather than technology: **killer acquisitions** ("incumbents buy up promising startups just to shut them down") and a revolving door between the US patent office and incumbents producing low-quality defensive patents.
 
 **What the disagreement turns on** — recorded here rather than resolved. The two measures are not the same object: Stripe account creations on one payments platform, against economy-wide firm-entry and dynamism series. Stripe's population is self-selected toward exactly the digitally-native formation the platform serves, so a share shift toward Stripe would produce Collison's numbers without any change in aggregate entry. Timing differs too — Frey's dynamism literature is a multi-decade trend, Collison's comparison is year-over-year. And the two are measuring different points in a firm's life: formation versus survival into a durable, employing firm, which is the stage the employment question actually depends on. Neither source engages the other. See the typed `contradicts` edge on [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|the Frey source page]].
+
+**A third statement, from Stanford HAI (added 2026-11-16).** On [[2026-11-04-stanford-hai-confronting-our-ai-future-business-of-ai|Stanford HAI's business-of-AI panel (Oct 2026)]], Brynjolfsson puts US new business formation at *"about twice the rate right now… as there was back in 2019,"* rising since COVID, and offers it as the good news beside the Canaries drop in entry-level hiring. In his [[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|August McKinsey interview]] he said there are *"fewer startups overall in the United States."* Neither statement names its series. On the same panel Bosworth (Meta) dates the falling cost of starting a business to before AI: Stripe, AWS, Snowflake and Facebook advertising.
 
 ## The entry-level rung, measured two ways — payroll records against employer surveys ([[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson, August 2026]] vs [[2026-07-22-brown-wef-meet-the-leader-entry-level-jobs-in-an-ai-era|Brown / WEF-PwC, July 2026]])
 

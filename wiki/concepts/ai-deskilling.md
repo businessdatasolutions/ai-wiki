@@ -2,10 +2,10 @@
 type: concept
 aliases: ["AI deskilling", "ai-deskilling", "task composition shift", "deskilling"]
 tags: [deskilling, task-composition, ai-employment-effects, occupations]
-confidence: 0.85
-last_confirmed: "2026-11-07"
-accessed_at: "2026-11-07"
-source_count: 40
+confidence: 0.90
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 42
 relationships:
   - type: instance-of
     target: ai-employment-effects
@@ -167,6 +167,8 @@ The mechanism she names is the one this page tracks under verification-competenc
 
 Neither source is empirical — one is a broadcast panel disagreement, the other a founder's stated uncertainty — so neither moves this page's confidence. Their value is naming the **sequencing question** the page's empirical sources ([[2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care|Peron's]] radiologists trained without normal images, [[2026-06-16-mollick-simon-sinek-ai-skills-experience-edge|Mollick's]] broken apprenticeship) imply but do not pose directly: if verification competence is a residue of manual practice, at what point in a career or an education can the manual practice safely stop?
 
+**A national answer to the sequencing question (added 2026-11-16).** [[2026-11-15-reuters-china-nationwide-ai-education-2030|Reuters (Nov 2026)]] reports China's target of universal AI literacy in schools by 2030, with children introduced to basic concepts by age 6 and older pupils taught to *"understand AI logic, identify misinformation"* and use it in projects. China has no widely adopted framework for measuring pupils' AI literacy. A 13-year-old at a Beijing private school has his own rule, in the narrator's paraphrase: solve coding problems himself first, and ask AI for hints *"rather than complete answers."* The report measures neither learning nor its loss.
+
 ## The expertise-collapse trap — where the knowledge came from in the first place ([[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson, August 2026]])
 
 This page's most consequential addition, because it names a *managerial inference* that actively destroys the capability the technology depends on. From Brynjolfsson's own call-centre research: "**the less-skilled workers got the biggest boost from the LLMs**, and they were now performing almost as well as the most skilled workers." The reaction he encountered:
@@ -271,3 +273,7 @@ These are the two skills [[2026-11-03-goel-bcg-so-what-ai-quietly-taking-from-wo
 ## Physicians' own concern (added 2026-11-07)
 
 In the AMA's 2026 physician survey, 88% of US physicians say they are concerned about loss of skills, with early-career physicians the focus; 92% want AI training and 27% have had none ([[2026-03-12-ama-physicians-ai-survey|AMA survey]], read from secondary coverage because ama-assn.org was blocked).
+
+## Cognitive surrender, and junior jobs that changed (added 2026-11-16)
+
+[[2026-11-08-covington-slaney-mckinsey-strategy-room-agentic-transformation|Covington (McKinsey, Nov 2026)]] uses *cognitive surrender* for staff who *"let the AI chatbot do your job,"* which he has seen in junior colleagues and in clients, and expects people presenting agent-drafted decks to not *"really know what they're saying."* On headcount he reports the junior roles kept but changed: *"Does this mean we no longer need all these junior people?… Nope,"* with less time on decks and data irregularities and more on coaching initiative owners. The episode also hands to agents the consistency audit, *"where the most junior people on the TO spend the most of their time."* It does not say how juniors build judgment once that detective work moves to agents, the question [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Karunakaran]] puts as *"where does judgment come from?… Comes from execution."*

@@ -4,10 +4,10 @@ kind: person
 aliases: ["Allan Tate", "Alan Tate"]
 tags: [mit-sloan-cio-symposium, mit, cio, inquiry-framework, executive-chair]
 role: "Executive Chair, MIT Sloan CIO Symposium"
-confidence: 0.8
-last_confirmed: "2026-10-12"
-accessed_at: "2026-10-12"
-source_count: 6
+confidence: 0.85
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 7
 relationships:
   - type: part-of
     target: MIT-Sloan-CIO-Symposium

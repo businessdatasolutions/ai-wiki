@@ -5,10 +5,10 @@ aliases: ["Sean Brown"]
 tags: [mckinsey, inside-the-strategy-room, podcasting, strategy, corporate-finance]
 affiliation: "[[McKinsey & Company]]"
 role: "Host, Inside the Strategy Room (McKinsey Strategy & Corporate Finance Practice)"
-confidence: 0.75
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
-source_count: 3
+confidence: 0.80
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 5
 relationships:
   - type: part-of
     target: McKinsey & Company
@@ -40,3 +40,8 @@ SORT file.name ASC
 ## M&A in the fourth quarter (added 2026-11-04)
 
 Hosts [[2026-10-30-houssard-kordestani-liu-lundberg-mckinsey-ma-ai-value-creation|M&A in Q4: How AI Is Reshaping Value Creation (Oct 2026)]], a two-part episode with Kameron Kordestani, Tobias Lundberg, Benjamin Houssard and Alex Liu.
+
+## Two November 2026 episodes (added 2026-11-16)
+
+- Hosts [[2026-11-16-pralong-mckinsey-strategy-room-gen-ai-outside-in-diligence|Using Generative AI To Conduct Outside-In Diligence (Nov 2026)]], with David Pralong, William Bundy, [[Chase Covington]] and Laura Borton.
+- Hosts [[2026-11-08-covington-slaney-mckinsey-strategy-room-agentic-transformation|Driving Agentic Transformation (Nov 2026)]], with [[Chase Covington]] and Tomer Slaney. The ASR renders Slaney as "Tor", "Tor Laney", "Tilmer" and "Tolar"; Brown's handovers by name are what make the attribution possible.

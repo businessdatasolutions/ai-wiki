@@ -4,10 +4,10 @@ kind: person
 aliases: ["Steve Yegge", "Steve-Yegge"]
 tags: [steve-yegge, gas-town, eight-levels-of-coder-evolution, ai-vampire, bitter-lesson, taste-is-the-moat, agent-orchestration, google-veteran, sourcegraph, revenge-of-the-junior-developer]
 role: "Independent software engineer, blogger, and provocateur; creator of Gas Town (open-source AI agent orchestrator); veteran of Google, Amazon, Grab, Sourcegraph"
-confidence: 0.9
-last_confirmed: "2026-07-09"
-accessed_at: "2026-07-09"
-source_count: 7
+confidence: 0.95
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 8
 relationships:
   - type: authored-by
     target: 2026-03-12-oreilly-steve-yegge-wants-you-to-stop-looking-at-your-code
@@ -46,6 +46,7 @@ Yegge's central framework, published as part of the Gas Town launch post. Three 
 - [[2026-04-23-tan-yc-how-to-make-claude-code-your-ai-engineering-team-gstack]] — Garry Tan invokes "level 7" by name to describe his own parallel-Claude-Code GStack workflow.
 - [[2026-05-06-bockeler-engineering-of-ai-agents-context-harnessing-autonomy]] — Birgitta Böckeler names "agent swarms à la Yegge's Gas Town stage 6+"; her own Open Questions section flagged that a primary-source ingest would substantiate the framework — resolved by this promotion.
 - [[2026-02-03-loukides-radar-trends-february-2026]] — Mike Loukides points to Gas Town as the month's exemplar of multi-agent orchestration.
+- [[2026-11-14-tan-ugarte-yc-lightcone-rise-of-ai-coworkers]] — a Lightcone host credits Gas Town with starting "software factories" and calls their extension to non-engineering functions *"an everything factory."*
 
 ## Mentioned in
 

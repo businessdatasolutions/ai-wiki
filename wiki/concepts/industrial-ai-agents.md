@@ -3,8 +3,8 @@ type: concept
 aliases: ["industrial AI agents", "industrial agentic AI", "OT AI agents", "manufacturing AI agents"]
 tags: [industrial-ai-agents, ai-agents, ot-it-convergence, manufacturing, ontology, semantic-data-layer, knowledge-graph, unified-namespace, mqtt, scada, mes, cmms, qms, erp]
 confidence: 0.75
-last_confirmed: "2026-10-25"
-source_count: 8
+last_confirmed: "2026-11-16"
+source_count: 9
 relationships:
   - type: instance-of
     target: ai-agents
@@ -12,7 +12,7 @@ relationships:
   - type: depends-on
     target: agent-harness
     via: "the runtime layer is still required; industrial-AI agents add a semantic-data-layer dependency on top"
-accessed_at: "2026-10-25"
+accessed_at: "2026-11-16"
 quality_score: 1
 ---
 
@@ -140,6 +140,7 @@ The industrial-AI thread sits **adjacent to but distinct from** the agent-harnes
 ## Candidate sub-concepts (single-source for now; promote on second mention)
 
 - **Ontology / Semantic Data Layer** — the three-tier model (semantic model + domain ontologies + knowledge graph). Defer to second-source mention; the broader knowledge-representation literature would substantiate it instantly but is not yet ingested.
+  - Second source, outside the industrial setting (added 2026-11-16): [[2026-10-08-dahiya-ontology-taxonomy-knowledge-graph-semantic-layer|Dahiya (Oct 2026)]] defines semantic model, ontology, knowledge graph and semantic layer on a university example and adds the taxonomy. She names OWL (the W3C ontology language) and reasoners as the formal machinery, which bears on the *cross-vendor ontology standards* question below; she does not cover RDF, SHACL or property graphs. With this source the second-mention condition is met, but no concept page has been created yet. The source is a seven-minute explainer, not the knowledge-representation literature the note above refers to.
 - **Unified Namespace (UNS)** — named here as the data-streaming substrate addressing fragmentation at the data layer; not yet substantiated independently.
 - **Knowledge graph** — **promoted to [[knowledge-graphs]] concept page on 12 May 2026** after four-source threshold met ([[2026-02-01-manditereza-ontology-driven-industrial-ai|Manditereza]] industrial-OT + [[2026-05-08-bratanic-unified-agentic-memory-hooks|Bratanic]] agentic-memory + [[2026-04-27-surrealdb-knowledge-graphs-for-ai-agents-practical-guide|SurrealDB]] practical-engineering + [[2023-12-07-leskovec-stanford-cs224w-knowledge-graph-embeddings|Leskovec]] academic-foundation). The wiki's KG-substrate cluster is now anchored at the concept layer. The KG-as-industrial-substrate framing this page describes is one of four named vantages on the construct.
 - **Action types / action-precondition governance** — single-source for now; distinct enough from runtime guardrails to track separately.

@@ -2,10 +2,10 @@
 type: concept
 title: AI-generated code quality and security
 aliases: ["AI-generated code quality", "AI code security", "slopsquatting", "package hallucination", "AI technical debt", "AI-introduced defects"]
-confidence: 0.85
-last_confirmed: "2026-10-25"
-source_count: 6
-accessed_at: "2026-11-06"
+confidence: 0.90
+last_confirmed: "2026-11-16"
+source_count: 7
+accessed_at: "2026-11-16"
 tags: [code-quality, security, owasp, slopsquatting, package-hallucination, technical-debt, code-smells, supply-chain, static-analysis, flat-scaling]
 relationships:
   - type: part-of
@@ -108,3 +108,7 @@ This is the organisational counterpart to [[2026-02-12-gloaguen-evaluating-agent
 ## Security tests before the code, and agents' side quests (added 2026-10-25)
 
 [[2026-10-20-pettit-eidelman-galloway-google-cloud-security-review-with-agents|Pettit, Eidelman & Galloway (Google Cloud Tech, Oct 2026)]] describes how Google builds security into agent-written code as it is written. Aron Eidelman's loop: a threat model at planning, failing tests that include security edge cases (*"if I'm a normal user and not an admin and I try to access this admin endpoint, do I get a 403"*), and a skill that names the project's own helper methods so the agent does not go on *"side quests,"* rewriting helper libraries in code that *"pass[es] all the tests, but… creates more technical debt."* A deterministic hook scans every push (Semgrep and regex rules, for example for hard-coded API keys) before an agent review, and the agent that wrote code is never the one that reviews it. Asked naively to find vulnerabilities, agents return hundreds of findings of which *"maybe a few percent"* are real; Google's Mantis uses a threat model to remove the rest.
+
+## Correct is not good, and a lint rule in place of a review comment (added 2026-11-16)
+
+[[2026-11-14-tan-ugarte-yc-lightcone-rise-of-ai-coworkers|Lauren Tan (YC Lightcone, Nov 2026)]] separates two properties. An agent taught to run its code like a user, with CPU traces and performance metrics, can check its own work, which makes the code *"correct"* but possibly *"very slow or very resource inefficient."* Her remedy is to encode quality in the codebase: on an Electron app, a dependency-graph checker forbids imports between main-thread and renderer-thread code, and she says performance has *"stayed very consistent"* where majority-AI-written apps *"accumulate a lot of slop and performance problems."* No measurements are given. The studies above measure security flaws, hallucinated packages and static-analysis issues.

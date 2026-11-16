@@ -4,10 +4,10 @@ kind: organization
 aliases: ["Google DeepMind", "DeepMind", "GDM"]
 tags: [google-deepmind, gdm, ai-lab, gemini, antigravity, omni, autoharness, foundation-models, agent-harness, world-models, demis-hassabis]
 since: 2023
-confidence: 0.75
-last_confirmed: "2026-06-15"
-accessed_at: "2026-06-15"
-source_count: 8
+confidence: 0.80
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 9
 relationships:
   - type: part-of
     target: Google

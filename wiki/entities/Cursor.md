@@ -5,10 +5,10 @@ aliases: ["Cursor", "Cursor Pro", "Anysphere", "Composer"]
 tags: [cursor, composer, ai-ide, coding-agent, benchmark-integrity, reward-hacking, swe-bench-pro, agentic-pr, evaluation]
 affiliation: "Anysphere"
 role: "AI code editor and coding-agent platform; publisher of the Composer model family"
-confidence: 0.75
-last_confirmed: "2026-10-25"
-accessed_at: "2026-10-25"
-source_count: 8
+confidence: 0.80
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 10
 relationships:
   - type: instance-of
     target: agent-harness
@@ -58,3 +58,7 @@ Two October-2026 sources use Cursor as a marker of AI adoption rather than as a 
 ## Its users pick the frontier model (added 2026-10-25)
 
 [[2026-10-20-hamalainen-lala-takkar-mckinsey-economics-of-enterprise-ai|McKinsey's Explainer on the economics of enterprise AI (Oct 2026)]]: Lari Hämäläinen says many McKinsey colleagues use Cursor and, *"if they're able to choose, they choose the latest frontier models,"* which makes AI costs *"quite unpredictable."* An example of model choice left to users driving spend.
+
+## Inside a bot product's workflow (added 2026-11-16)
+
+[[2026-11-14-tan-ugarte-yc-lightcone-rise-of-ai-coworkers|Lauren Tan on YC's Lightcone (Nov 2026)]] presents Grok Bot and speaks of Cursor in the first person (*"one of the lessons we learned from building Cursor"*). The episode does not say which company makes Grok Bot, and this page infers no corporate relationship from it. In her workflow a bot spawns a Cursor cloud agent with *"its own virtual machine,"* which runs the app and returns videos and screenshots; Cursor's new projects feature runs a coordinator agent over sub-agents; and her PStack skills are open-sourced on the Cursor plugins repository.

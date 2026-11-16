@@ -3,10 +3,10 @@ type: entity
 kind: organization
 aliases: ["ADP", "ADP Research", "Automatic Data Processing"]
 tags: [adp, adp-research, payroll-data, labor-market-data, canaries, stanford-digital-economy-lab, national-employment-report]
-confidence: 0.8
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
-source_count: 4
+confidence: 0.85
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 5
 ---
 
 # ADP

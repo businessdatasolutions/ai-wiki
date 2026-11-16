@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-11-07"
-accessed_at: "2026-11-07"
-source_count: 87
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 92
 relationships:
   - type: instance-of
     target: generative-ai
@@ -98,6 +98,8 @@ Two consequences worth marking:
 
 - **Security as structural unreachability, not as policy.** The hands tier runs in a sandbox the brain cannot directly drive — the model emits tool-call requests, and a separate executor decides whether and how to run them. This is the engineering version of the [[responsible-ai|"agent risk"]] story: rather than relying on the model to *refuse* dangerous actions, the architecture makes most dangerous actions structurally unreachable.
 - **"Context anxiety" is model-specific.** The post observes that Claude Sonnet 4.5 sometimes wraps up tasks prematurely when its context window fills — a failure mode not present on **Claude Opus 4.5** under the same harness. This is the first empirical evidence in this wiki that long-horizon agent reliability varies by model within a family, not just across families. It also reframes the RE-Bench 32-hour finding: long-horizon weakness is partly an **architectural** problem (context window saturation) and partly a **model-quality** problem (how the model responds when saturation looms).
+
+**The hands tier from a hyperscaler (added 2026-11-16).** [[2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure|Google Cloud's AI-infrastructure keynote (Nov 2026)]] describes **Agent Compute Engine**: each agent sandbox is a microVM with its own guest kernel, egress policy enforced from outside it and *"zero hard coded credentials"* inside, paused with its memory and disk state when the agent goes quiet and resumed *"a day, a week, or a month later."* Google says its Gemini agents run on it, and it is donating an open-source Kubernetes version, Agent Substrate, to the Cloud Native Computing Foundation. Mark Lohmeyer's reason for building it: agents are *"long running, they're stateful, but they also frequently are idle."* Vendor claims, with no benchmarks.
 
 ### Capgemini's expected agent benefits (n unknown, sponsor-cited)
 
@@ -338,3 +340,7 @@ The two sections above treat agents as the web's main population and computer us
 ## Agents in Dutch hospitals and in enterprise surveys (added 2026-11-07)
 
 In the [[2026-03-16-mxi-ai-monitor-ziekenhuizen-2026|M&I AI Monitor Ziekenhuizen 2026]], 48% of Dutch hospitals are exploring AI agents, 16% are taking concrete steps (mostly pilots), none is scaling and 38% have no plans. Use cases include chatbots and voice agents for phone traffic, searching protocols, draft answers to HR and ICT questions, and screening e-mails and medical-technology malfunction reports (p. 32). Across sectors, McKinsey's 2025 survey finds 23% of respondents scaling an agent somewhere but at most 10% in any one function ([[2025-11-05-mckinsey-state-of-ai-2025]], p. 5), and [[2026-01-21-deloitte-state-of-ai-in-the-enterprise-2026|Deloitte]] finds 21% with a mature governance model for autonomous agents.
+
+## A role-based agent team for diligence (added 2026-11-16)
+
+In [[2026-11-16-pralong-mckinsey-strategy-room-gen-ai-outside-in-diligence|McKinsey's diligence episode (Nov 2026)]], Laura Borton describes an outside-in diligence system whose agents *"self-organize"*, split the request into subtasks and *"converse with each other,"* with roles such as *"an engineer who's going to pull down the financials"* and *"a critic that is going to help pressure test some findings."* The output is a value-creation memo with levers and expected EBIT impact. William Bundy reports a related McKinsey tool that turns a downloaded data room into a value-creation plan *"in about 10 minutes."* No accuracy figures are given.

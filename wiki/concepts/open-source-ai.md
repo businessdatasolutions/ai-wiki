@@ -2,10 +2,10 @@
 type: concept
 aliases: ["open source AI", "open-source AI", "open-weight models", "open weights", "open models", "own vs rent AI"]
 tags: [open-source-ai, open-weight-models, own-vs-rent, ai-sovereignty, concentration-of-power, china-open-models, safety-through-transparency, hugging-face]
-confidence: 0.9
-last_confirmed: "2026-10-12"
-accessed_at: "2026-11-06"
-source_count: 27
+confidence: 0.95
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 30
 relationships:
   - type: supports
     target: ai-sovereignty

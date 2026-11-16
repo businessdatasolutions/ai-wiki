@@ -3,9 +3,9 @@ type: concept
 aliases: ["GenAI", "generative AI", "generative artificial intelligence"]
 tags: [generative-ai, foundation-models, ai-adoption, ai-foundation, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-11-07"
-accessed_at: "2026-11-07"
-source_count: 30
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 31
 relationships:
   - type: uses
     target: foundation-models
@@ -215,6 +215,7 @@ The choice between automation and augmentation thus has measurable consequences 
 - **Test-time compute as a new scaling axis.** Promising but expensive (o1: 6× cost, 30× latency vs. GPT-4o). Open question: economic viability for routine enterprise use, or only for high-value reasoning tasks.
 - **Does abundant generation lower the value of content in aggregate? (added 2026-09-19)** [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook|Bodnar & Flanagan (HubSpot UNBOUND, Sep 2026)]] report a **4× increase in AI-assisted content** in two years with no matching rise in attention, and half-lives of under 24 hours for a LinkedIn post. If output grows faster than attention, the value of each generated item falls, and the productivity gains measured per worker overstate the gains to the firm. Their figures are unsourced vendor-keynote numbers. **Open, and not yet measured anywhere in the corpus.**
 - **Hype vs. value gap.** 71% adoption + 1% maturity + revenue gains mostly <5% per function. The dollar productivity story is real but smaller than the discourse implies.
+- **How large is the market for AI products and services? (added 2026-11-16)** In his valuation of Anthropic, [[2026-10-28-damodaran-anthropic-ipo-valuation|Damodaran (Oct 2026)]] makes the answer depend on four judgments: whether AI is a tool or replaces employees, whether it reaches only highly paid employees or all of them, some businesses or all, and the US and parts of Europe or the whole world. Depending on the answers, the market is below $2 trillion or above $10 trillion; his own prior is $5–10 trillion. It is a sizing framework with stated assumptions, not a measurement.
 
 ## Related concepts
 

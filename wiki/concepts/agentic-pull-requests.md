@@ -2,10 +2,10 @@
 type: concept
 title: Agentic pull requests
 aliases: ["agentic pull requests", "agentic PRs", "agent-authored PRs", "Agentic-PR", "auto-merge", "AI code review"]
-confidence: 0.85
-last_confirmed: "2026-10-30"
-source_count: 18
-accessed_at: "2026-10-30"
+confidence: 0.90
+last_confirmed: "2026-11-16"
+source_count: 19
+accessed_at: "2026-11-16"
 tags: [agentic-pr, aidev, auto-merge, code-review, rejection-rate, risk-scoring, msr-2026, merge-queue, review-bottleneck, technical-debt]
 relationships:
   - type: part-of
@@ -127,3 +127,7 @@ What the deck does not report is the outcome: how many reviews found something r
 | 1,024,037 | 345,797 | 6,907 | 1 min 34 s | $0.67 |
 
 His slide also breaks down the first month, which the Investor Day deck did not: **1.2 findings per review** (159,103 in total), most of them code quality (74,898), with security at 11,985, *"4% of them critical."* It has blocked about 16,000 merges in four months. Early versions flagged everything; flagging less made people act on more, he says, without a figure. Its stated limits are architecture, cross-system impact, timing races and very large diffs, and *"it doesn't replace human code review."* Correctness of findings and change failure rates are still unreported.
+
+## Self-merging agents, and review moved into the codebase (added 2026-11-16)
+
+On [[2026-11-14-tan-ugarte-yc-lightcone-rise-of-ai-coworkers|YC's Lightcone (Nov 2026)]] a host puts Lauren Tan at over 4,000 PRs a month, up from about 2,000 at an earlier talk. She says *"I essentially have my agents merge their own pull requests"*: the time *"you would otherwise have to spend on human code review is encoded into your codebase and your static analysis and your tooling,"* with human review kept for infrastructure, databases and deployment. In the same episode [[Garry Tan]] puts a cost on agent review: GStack's ship skill uses tens of millions of tokens a run, and his agent, citing held-out evals on 30 bug types, will not go below 30 million. Self-reported; no revert, defect or false-approve figures.

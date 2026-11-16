@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-11-07"
-accessed_at: "2026-11-07"
-source_count: 100
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 104
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -563,3 +563,15 @@ The [[2026-10-21-stanford-del-canaries-dashboard|Canaries Dashboard]] keeps the 
 | Augmentation ratio | 105.6 | 98.5 | 91.7 | 102.0 | 101.2 | **90.2** |
 
 The page: *"occupations with a higher share of automation in total usage see declines or more muted increases in the employment index,"* while *"there is no clear monotonic relationship"* for the augmentation share. *"Accordingly, the character of AI usage could shape the labor market effects of AI."* This is the cut on this page measured as a time series, nearly four years after ChatGPT. See the Debates entry above for how the augmentation side has moved since the paper.
+
+## The distinction as a market-size input (added 2026-11-16)
+
+[[2026-10-28-damodaran-anthropic-ipo-valuation|Damodaran's valuation of Anthropic (Oct 2026)]] puts this page's distinction first among the four questions that size the AI market: is AI *"just a tool or will it replace employees?"* His worst case, mass-market AI used as a tool, gives Anthropic an equity value of −$373 billion. In [[2026-11-03-damodaran-anthropic-valuation-feedback-loop|his follow-up]] the $1 trillion revenue target rests on a $5–10 trillion market, which needs *"more employee replacement than tools and customers being willing to pay high prices."*
+
+## Due diligence in the quality-control zone, and staffing by organisation type (added 2026-11-16)
+
+The Anand-Wu table above puts due diligence in the quality-control zone: AI produces, a human verifies. [[2026-11-16-pralong-mckinsey-strategy-room-gen-ai-outside-in-diligence|McKinsey's diligence episode (Nov 2026)]] describes that split in practice: Borton asks for every number to be paired with proof so the analyst can *"take the reviewer role, not the doer role,"* and Bundy says AI *"never… fully removes the analyst step"* but takes out the first four to five days. Covington ties the staffing effect to the kind of organisation. Lean private-equity teams get faster without a new staffing model, while IT services and outsourcing see *"a much higher degree of compression of those pyramids."* For an investor, going *"from five analysts to four"* is *"irrelevant"*; the return is in better pricing and deal choices.
+
+## A smaller office, or a better one (added 2026-11-16)
+
+[[2026-11-08-covington-slaney-mckinsey-strategy-room-agentic-transformation|Covington and Slaney (McKinsey, Nov 2026)]]: a four-person transformation office that spent 80% of its time on reporting built four agents, freed *"an entire individual's worth of time"*, and shrank while doing more of the value-adding work. Covington's reading: *"taking a small group and making it a little bit smaller doesn't really make a lot of money for your enterprise"*; the value is the same people spending their time on coaching, feedback and pushing for value, and *"No agent's going to do that."* The line the episode draws: agents for the grunt work, people for anything that talks to the business (*"Don't use your AI bots to talk to the business"*).

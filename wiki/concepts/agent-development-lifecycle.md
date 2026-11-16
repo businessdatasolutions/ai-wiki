@@ -2,10 +2,10 @@
 type: concept
 aliases: ["agent development lifecycle", "ADLC", "agent SDLC", "agent lifecycle"]
 tags: [agent-development-lifecycle, adlc, ai-agents, agent-engineering, lifecycle-frameworks, sdlc-parallel, build-test-deploy-monitor, agent-governance, evals, llm-as-judge]
-confidence: 0.88
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
-source_count: 30
+confidence: 0.93
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 31
 relationships:
   - type: part-of
     target: ai-agents
@@ -323,3 +323,7 @@ A fix is a harness change or a model change (SFT, distillation, RL), validated b
 
 - [[2026-11-02-holmes-warp-agentic-self-improvement-loop|Holmes (Warp, Nov 2026)]]: one LLM judge per rubric, each in its own context window on a lightweight model; sample runs to control cost. On screen: $2,755.94 in scorer cost to date at $0.15 to $0.31 per scored run, and 13 of 53 agent-proposed changes approved. Rubrics are checked in as code next to the agents.
 - [[2026-10-20-parikh-google-cloud-hippocratic-ai-voice-agents-healthcare|Hippocratic AI on Google Cloud (Oct 2026)]]: Google's open Gemma models drive automated evaluation of Hippocratic's clinical voice agents: *"We run millions of evaluations with a goal of over a billion."*
+
+## AgentOps as release engineering (added 2026-11-16)
+
+[[2026-11-11-balasa-microsoft-path-to-production-for-agents|Balasa (Microsoft Developer, Nov 2026)]] names the run-and-release stage **AgentOps**, descended from DevOps, MLOps and LLMOps because *"DevOps was never built for tool calling, memory, multi-step behavior."* It is one of six pillars in her framework, not a full lifecycle. Her four moves: agent code, prompts and model config versioned together in one CI/CD pipeline and released behind a canary with an emergency stop (one customer's next bad change was caught on 5% of traffic and rolled back in minutes); every model, prompt and tool definition in a versioned inventory, so a deprecation process flags what is affected before a model sunsets; golden datasets, LLM-as-judge and grounding evaluations as release gates; and SLOs with error budgets that pause risky releases once spent. The cases are anonymised and report no outcome data beyond these figures.

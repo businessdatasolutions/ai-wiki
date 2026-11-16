@@ -4,9 +4,9 @@ kind: organization
 aliases: ["McKinsey", "McKinsey & Company", "McKinsey and Company", "QuantumBlack"]
 tags: [mckinsey, mgi, mckinsey-talks-operations, mckinsey-talks-talent, global-business-services, built-environment, management-consulting, quantumblack, ai-research, tech-ai-transformation, agent-augmented-workforce, outcome-underwriting, post-controversy-governance, future-arenas, omniscalers, skill-change-index, workforce-skills, corporate-venture-building]
 confidence: 0.95
-last_confirmed: "2026-11-07"
-accessed_at: "2026-11-07"
-source_count: 29
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 32
 relationships:
   - type: employs
     target: Roberta-Fusaro
@@ -23,6 +23,9 @@ relationships:
   - type: employs
     target: Sean-Brown
     via: "host of Inside the Strategy Room"
+  - type: employs
+    target: Chase-Covington
+    via: "partner, New York; transformation and strategy and corporate finance practices; guest on two Inside the Strategy Room episodes (Nov 2026)"
   - type: authored-by
     target: 2026-06-24-mckinsey-ai-supercharging-software-development
     via: "McKinsey panel (Palaniappan, Harrysson, Linderman) on why AI coding gains fail to convert to org-level value without workflow redesign, obsolete vs. durable SWE skills, and AI-code security risk (24 Jun 2026)"
@@ -115,3 +118,12 @@ SORT file.name ASC
 ## AI-maturity and health-care sources (added 2026-11-07)
 
 - [[2025-11-05-mckinsey-state-of-ai-2025]] — *The state of AI in 2025* (1,993 respondents, June–July 2025): 88% regular AI use, 7% of AI users fully scaled, about 6% "AI high performers" (5% or more of EBIT from AI). Authors include [[Lareina Yee]] and [[Michael Chui]]. *Superagency in the workplace* (January 2025, the likely source of the "1% mature" figure) and *The state of AI* 2026 could not be read: mckinsey.com was unreachable on 2026-11-07.
+
+## Diligence and the transformation office on Inside the Strategy Room (added 2026-11-16)
+
+- [[2026-11-16-pralong-mckinsey-strategy-room-gen-ai-outside-in-diligence|Pralong, Bundy, Covington & Borton (Nov 2026)]]: gen AI in outside-in diligence for investors, built on about 15 years of McKinsey's weekly initiative tracking and its **Wave** platform (1,600 transformations, 500,000 initiatives, 250,000 expert interviews, in Bundy's count). Investor survey: 6% transformational, 95%+ expect it within five years. Partner [[Chase Covington]] is promoted to an entity page on this ingest.
+- [[2026-11-08-covington-slaney-mckinsey-strategy-room-agentic-transformation|Covington & Slaney (Nov 2026)]]: agents in the transformation office, from the article *The agentic transformation office: Redefining the economics of change*. A four-person office at 80% reporting time built four agents; *cognitive surrender* and *attention surrender*; Wave apps as McKinsey's answer to data leaking through vibe-coded agents. Tomer Slaney is Dangling.
+
+## Author Talks (added 2026-11-16)
+
+- [[2026-11-14-wang-mckinsey-author-talks-the-trust-code]] — *AI Is Advancing. Is Our Judgment Keeping Up?* (**Author Talks**, YouTube, 14 Nov 2026). The first edition of McKinsey's book-interview series in the wiki. Tiffany Xingyu Wang, president and cofounder of Oasis Consortium, on her book *The Trust Code* (Wiley, Sep 2026): calibrated trust in AI, enterprises as the accountability layer between labs and regulators, and judgment as the scarce input. McKinsey publishes; the claims are Wang's. See [[agent-oversight-and-delegation]] and [[responsible-ai]].

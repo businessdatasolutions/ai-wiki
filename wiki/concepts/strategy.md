@@ -2,10 +2,10 @@
 type: concept
 aliases: ["strategy", "business strategy", "corporate strategy", "competitive strategy"]
 tags: [strategy, strategic-planning, value-creation, value-capture, theory-of-winning, playing-to-win, value-stick, roger-martin, felix-oberholzer-gee, harvard-business-review]
-confidence: 0.92
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
-source_count: 24
+confidence: 0.95
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 25
 relationships:
   - type: supports
     target: strategic-foresight
@@ -299,6 +299,8 @@ Confidence unchanged at 0.92. This is first-party consulting research promoting 
 
 [[2026-10-20-egeriis-bain-winning-with-ai-danske-bank|Egeriis (Danske Bank) on Bain's Winning with AI (Oct 2026)]]: Danske Bank's CEO does not believe AI currently gives a moat: *"with the pace of change… [it] is not something that's there… you have a few months or six months or 12 months of head start,"* in which the bank can win customer meetings, better cost to serve and *"that extra bit of market share."* Infrastructure and data products are harder to copy, and *"the biggest but also most intangible… competitive advantage is the leadership and culture."* Co-host [[Andrew Ng]] adds that an *"ephemeral advantage"* can buy *"quite durable"* market share. The opposite view is in the corpus: [[2025-10-30-bornet-wood-worklab-ai-agents-leaders|Bornet]] expects early adopters to build *"compounding intelligence advantages"* and *"insurmountable learning gaps."* The two are recorded as a `contradicts` edge between their source pages.
 
+[[2026-11-03-damodaran-anthropic-valuation-feedback-loop|Damodaran (Nov 2026)]], answering viewers who see no moat at Anthropic, argues that technology moats differ from the brand names of consumer products and the cost advantages of commodities: first movers win when customers find it hard to switch, as Windows did against a better Apple operating system and Office did in businesses. He assumes Anthropic gets there with premium products that embed themselves in customers' data and usage, and adds: *"This could be a pipe dream. There might be no moats."*
+
 ## What incumbents hold against AI natives (added 2026-10-25)
 
 [[2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder|Diasio (EY) on WorkLab (Dec 2025)]]: his clients fear most *"the competitors and the disruptors that they do not see… It's the AI natives,"* companies of *"40 or 50 people"* with *"multibillion dollar valuations."* Asked what an incumbent brings, he names four things:
@@ -318,3 +320,7 @@ His example is an unnamed technology conglomerate whose most valuable AI asset t
 
 - [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani on Silicon Valley Girl (Oct 2026)]]: *"Targets are sort of acts of imagination"*; set near-unreasonable business goals, then ask what AI must do. Incumbents face Walmart (struggled, then adapted), Kmart (added a website) or Bezos (rethought the business). Greg Brockman's test for founders, which Lakhani passes on: does your business improve with each new frontier model, or disappear?
 - [[2026-10-30-houssard-kordestani-liu-lundberg-mckinsey-ma-ai-value-creation|McKinsey on M&A (Inside the Strategy Room, Oct 2026)]]: four routes to AI capability by acquisition: labs buying small teams, tech-adjacent firms repositioning, corporates buying capabilities, and hiring founders with a licence deal. *"The AI capability that you need is probably not in your industry."*
+
+## Hurdle rates set above the market (added 2026-11-16)
+
+[[2026-11-03-damodaran-anthropic-valuation-feedback-loop|Damodaran (Nov 2026)]] says it is routine for companies to set hurdle rates *"2 to 3% higher than justified by market numbers"*; CFOs replying to his Anthropic valuation said they use 14%. The cost shows as a company ages and its investment choices become scarcer: it under-invests, and managers inflate growth and margins to clear the bar, until *"you're taking made-up cash flows and discounting them at a made-up discount rate."* His yearly check: fewer than 30% of listed companies globally earn more than his cost-of-capital estimates, and at a 12.5% cost of capital about 5% would.

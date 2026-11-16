@@ -2,10 +2,10 @@
 type: concept
 aliases: ["AI sovereignty", "sovereign AI", "digital sovereignty", "strategic autonomy in AI", "cultural autonomy", "full-stack sovereignty"]
 tags: [ai-sovereignty, sovereign-ai, digital-sovereignty, strategic-autonomy, own-vs-rent, cultural-autonomy, export-controls, industrial-policy, platform-governance, data-sovereignty]
-confidence: 0.85
-last_confirmed: "2026-11-07"
-accessed_at: "2026-11-07"
-source_count: 15
+confidence: 0.90
+last_confirmed: "2026-11-16"
+accessed_at: "2026-11-16"
+source_count: 17
 relationships:
   - type: supports
     target: open-source-ai
@@ -76,6 +76,8 @@ Two September 2026 journalistic sources describe the Chinese position this page 
 This matters for claim 1's layer-choice framing. For a country buying rather than building, **the supplier's strategy is part of the choice**. A cheap open model from a state that treats adoption abroad as strategy is a different dependency from a frontier API sold by a firm under US export law, even when the two are technically equivalent.
 
 Laurie Chen (Reuters) adds the view from outside both blocs: *"the vast majority of the world does not have the capacity to control advanced AI … a very small number of countries and very powerful corporations"* govern it, and the Global South *"should have a say."* This is the first statement in the corpus of sovereignty as **a voice in governance**, not ownership of a layer. It is a third meaning, alongside the economic (claims 1–4) and the cultural (claim 5).
+
+[[2026-11-14-mccarthy-cnn-meanwhile-in-asia-china-data-centers|CNN's Meanwhile in Asia (Nov 2026)]] reports the physical side of the state programme from Ulanqab in Inner Mongolia: a national plan designating *"eight computing hubs and 10 so-called data center clusters,"* a $560 billion data-infrastructure plan announced in September (stated by the hosts, unsourced), and AI as a national priority for moving *"way up the supply chain"* and offsetting a declining population. Its China reporter, Simone McCarthy, names high-end chips, limited both by US export controls and by China's own import restrictions, as the largest hurdle.
 
 ## Debates and supersession
 
