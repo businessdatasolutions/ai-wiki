@@ -1,0 +1,2890 @@
+{
+  "question": {
+    "original": "Zoek in de wiki naar modellen, best-practices en cases voor het inzetten van experimenten tbv organisatietransformatie",
+    "restated": "Welke modellen, best practices en cases bevat de wiki over het gebruik van experimenten om organisaties te transformeren?",
+    "facets": [
+      "Modellen: frameworks die experimenteren een plek geven in transformatie (W&W rapid prototyping, fasenmodellen, portfoliovormen)",
+      "Best practices: hoe experimenten op te zetten, te begrenzen, op te schalen en te meten (pilot naar productie)",
+      "Cases: organisaties die experimenten aantoonbaar zo hebben ingezet"
+    ],
+    "language": "nl"
+  },
+  "params": {
+    "seeds": 12,
+    "hops": 1,
+    "fusion": "rrf",
+    "graph_rank": "bfs",
+    "k_rrf": 60,
+    "graph_w": 0.5,
+    "alpha": 0.7,
+    "ppr_damping": 0.5,
+    "conf_floor": 0.6,
+    "today": "2026-11-12"
+  },
+  "graph_available": true,
+  "graph_warning": null,
+  "qmd_hit_count": 10,
+  "candidate_count": 83,
+  "notes": [
+    "USE set is 9 pages (guideline 4–8): three facets (models, practices, cases) each needed distinct pages.",
+    "Five USE pages were graph-only or gap-expansion; concepts/syntheses among them need a manual accessed_at bump (Step 8).",
+    "wiki-retrieve's bump step failed on 'Ron%20Carucci': the graph slug is URL-encoded and bump-accessed.mjs does not decode it. Tooling bug, not a content issue.",
+    "Five entity paths in the ledger (MIT-Sloan-CIO-Symposium, Allan-Tate, Irving-Wladawsky-Berger, Bloomberg-Podcasts, McKinsey-&-Company) do not exist under those filenames; graph slug vs filename mismatch. All IGNORE (wrong-granularity)."
+  ],
+  "candidates": [
+    {
+      "slug": "sources/2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22",
+      "path": "wiki/sources/2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22.md",
+      "type": "source",
+      "title": "From Conversations to an Executive Learning Architecture | Ep. 22",
+      "qmd_rank": 2,
+      "qmd_score": 0.33,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 2 (score 0.33)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.016129,
+      "fused_score": 0.925,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "qmd #2, but about a CIO-community conversation-recording prototype; no experiment-led transformation content (W2 itself excludes it from Sources consulted)",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook",
+      "path": "wiki/sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook.md",
+      "type": "source",
+      "title": "Rolls-Royce CEO Tufan Erginbilgiç Shares His Turnaround Playbook",
+      "qmd_rank": 3,
+      "qmd_score": 0.2,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero",
+          "edge_type": "supports",
+          "via": "**Paired turnaround-playbook anchors at radically different scales — Rolls-Royce ~£80B at FTSE-CEO altitude + HelloPrint ~€80M at Dutch-SME-founder-CEO altitude — three days apart, same playbook.** Erginbilgiç (24 May 2026): the Rolls-Royce turnaround playbook — *transform-from-strength normative argument* + *the burning platform* + *'we're going to be the best in the world'* + *not-everyone-fits topsport-team culture*. Scheffer (27 May 2026, three days later, ~1000× smaller revenue): *the exact same playbook compressed to MKB scale*. (1) **Burning-platform / day-zero framing**: Erginbilgiç's *'we are confronting reality and rewriting our story'* ↔ Scheffer's *'wat nou als ik mijn huidige bedrijf op dag één opnieuw zou moeten bouwen, wat zou ik dan doen?'* — both reject continuity-optimisation as the operating frame. (2) **Conscious short-term sacrifice for long-term winning**: Erginbilgiç's portfolio-discipline / pricing-power moves vs Scheffer's *'door bijvoorbeeld afscheid te nemen van bepaalde omzetgroepen ... wel een fundamentele keuze om op de lange termijn te kunnen winnen.'* (3) **Topsport-team not-everyone-fits culture**: Erginbilgiç on culture as the load-bearing transformation lever ↔ Scheffer's *'Net als in een topsportteam is niet iedereen geschikt voor die dynamiek. Dat is volgens hem geen waardeoordeel, maar een gevolg van duidelijke keuzes maken.'* (4) **Fifty-year horizon framing**: Erginbilgiç's *transform-from-strength-while-the-business-is-winning* ↔ Scheffer's *'Wij willen een bedrijf bouwen waar mensen over vijftig jaar nog werken en waar mensen over vijftig jaar ook nog over praten als een voorbeeld van hoe het ook kan.'* Same playbook, two scales, three calendar days apart — Erginbilgiç at the **multi-decade-listed-FTSE-CEO altitude**, Scheffer at the **Dutch-founder-owner-€80M-SME altitude**.",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great",
+          "edge_type": "supports",
+          "via": "Carroll supplies the **academic theory** of organizational culture (strong culture = high intensity + high agreement; culture as a social-control system aligned to strategy); Erginbilgiç is the wiki's **applied non-digital culture-turnaround** exemplar (Rolls-Royce: *non-compromise on mediocrity*, performance-management discipline, fast-and-flexible cadence). Both map to the `strategic-renewal/organizational-culture` W&W cell — theory + practitioner case of the same phenomenon. Carroll's culture-change-speed point (Agilent ~5 yrs to add *speed/focus/accountability*; Ford under Mulally radical change in <1 yr) is the general claim Erginbilgiç instantiates.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 3 (score 0.20)",
+        "graph: sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero -->supports--> this (1 hop)",
+        "graph: sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.015873,
+      "fused_score": 0.91,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "non-AI turnaround on performance culture; no experiments as a transformation instrument",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026",
+      "path": "wiki/sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026.md",
+      "type": "source",
+      "title": "Job Titles Don't Matter in 2026 (Here's What Does)",
+      "qmd_rank": 4,
+      "qmd_score": 0.17,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 4 (score 0.17)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.015625,
+      "fused_score": 0.896,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "skills and professional identity, not experimentation",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage",
+      "path": "wiki/sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage.md",
+      "type": "source",
+      "title": "The real AI advantage",
+      "qmd_rank": 5,
+      "qmd_score": 0.14,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 5 (score 0.14)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.015385,
+      "fused_score": 0.882,
+      "verdict": "ignore",
+      "reason_class": "redundant",
+      "reason": "Rewired reinvention sequence already represented by W2 (Rewired layer) and W3 (four-step)",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Ron%20Carucci",
+      "path": "wiki/entities/Ron%20Carucci.md",
+      "type": "entity",
+      "title": "Ron Carucci",
+      "qmd_rank": 1,
+      "qmd_score": 1,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 1 (score 1.00)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.016393,
+      "fused_score": 0.88,
+      "verdict": "ignore",
+      "reason_class": "wrong-granularity",
+      "reason": "entity card; his resistance-as-data lens is carried by W2 as the cross-cutting layer (note: accessed_at bump failed on the URL-encoded slug)",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero",
+      "path": "wiki/sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero.md",
+      "type": "source",
+      "title": "Ondanks 80 miljoen omzet gooit Hans Scheffer zijn bedrijf volledig om met AI: 'Elke kantoorbaan voor een scherm verdwijnt'",
+      "qmd_rank": 6,
+      "qmd_score": 0.13,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook",
+          "edge_type": "supports",
+          "via": "**Paired turnaround-playbook anchors at radically different scales — Rolls-Royce ~£80B at FTSE-CEO altitude + HelloPrint ~€80M at Dutch-SME-founder-CEO altitude — three days apart, same playbook.** Erginbilgiç (24 May 2026): the Rolls-Royce turnaround playbook — *transform-from-strength normative argument* + *the burning platform* + *'we're going to be the best in the world'* + *not-everyone-fits topsport-team culture*. Scheffer (27 May 2026, three days later, ~1000× smaller revenue): *the exact same playbook compressed to MKB scale*. (1) **Burning-platform / day-zero framing**: Erginbilgiç's *'we are confronting reality and rewriting our story'* ↔ Scheffer's *'wat nou als ik mijn huidige bedrijf op dag één opnieuw zou moeten bouwen, wat zou ik dan doen?'* — both reject continuity-optimisation as the operating frame. (2) **Conscious short-term sacrifice for long-term winning**: Erginbilgiç's portfolio-discipline / pricing-power moves vs Scheffer's *'door bijvoorbeeld afscheid te nemen van bepaalde omzetgroepen ... wel een fundamentele keuze om op de lange termijn te kunnen winnen.'* (3) **Topsport-team not-everyone-fits culture**: Erginbilgiç on culture as the load-bearing transformation lever ↔ Scheffer's *'Net als in een topsportteam is niet iedereen geschikt voor die dynamiek. Dat is volgens hem geen waardeoordeel, maar een gevolg van duidelijke keuzes maken.'* (4) **Fifty-year horizon framing**: Erginbilgiç's *transform-from-strength-while-the-business-is-winning* ↔ Scheffer's *'Wij willen een bedrijf bouwen waar mensen over vijftig jaar nog werken en waar mensen over vijftig jaar ook nog over praten als een voorbeeld van hoe het ook kan.'* Same playbook, two scales, three calendar days apart — Erginbilgiç at the **multi-decade-listed-FTSE-CEO altitude**, Scheffer at the **Dutch-founder-owner-€80M-SME altitude**.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 6 (score 0.13)",
+        "graph: sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.015152,
+      "fused_score": 0.869,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "Dutch SME case, but its 'experiment' is a day-zero thought experiment, not organisational experimentation",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/enterprise-ai-adoption",
+      "path": "wiki/concepts/enterprise-ai-adoption.md",
+      "type": "concept",
+      "title": "Enterprise AI Adoption",
+      "qmd_rank": 8,
+      "qmd_score": 0.1,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 8 (score 0.10)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-11-08",
+      "last_confirmed": "2026-11-07",
+      "days_since_access": 4,
+      "effective_confidence": 0.909,
+      "rrf_score": 0.014706,
+      "fused_score": 0.864,
+      "verdict": "use",
+      "anchor": "W4",
+      "reason": "top concept qmd hit; hub section 2026-09/10 consolidating Krishna, Sadun, HBS, Microsoft, Kropp, Mollick, Instacart and the scale-up statistics",
+      "reason_class": null,
+      "promoted": null,
+      "contribution": "scale-up statistics (Deloitte, IBM); Kropp's big rocks; Mollick's leadership-lab-crowd; Instacart pioneers; law-firm framing; structured-vs-bottom-up tension"
+    },
+    {
+      "slug": "sources/2026-08-19-rohrer-goto-modern-enterprise-architecture-architecting-for-outcomes",
+      "path": "wiki/sources/2026-08-19-rohrer-goto-modern-enterprise-architecture-architecting-for-outcomes.md",
+      "type": "source",
+      "title": "Modern Enterprise Architecture: Architecting for Outcomes • Simon Rohrer • GOTO 2025",
+      "qmd_rank": 7,
+      "qmd_score": 0.11,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 7 (score 0.11)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014925,
+      "fused_score": 0.856,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "enterprise architecture for outcomes; no experiment design",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great",
+      "path": "wiki/sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great.md",
+      "type": "source",
+      "title": "\"On Making Organizational Culture Great,\" with Professor Glenn Carroll",
+      "qmd_rank": 9,
+      "qmd_score": 0.09,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook",
+          "edge_type": "supports",
+          "via": "Carroll supplies the **academic theory** of organizational culture (strong culture = high intensity + high agreement; culture as a social-control system aligned to strategy); Erginbilgiç is the wiki's **applied non-digital culture-turnaround** exemplar (Rolls-Royce: *non-compromise on mediocrity*, performance-management discipline, fast-and-flexible cadence). Both map to the `strategic-renewal/organizational-culture` W&W cell — theory + practitioner case of the same phenomenon. Carroll's culture-change-speed point (Agilent ~5 yrs to add *speed/focus/accountability*; Ford under Mulally radical change in <1 yr) is the general claim Erginbilgiç instantiates.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "qmd rank 9 (score 0.09)",
+        "graph: sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.014493,
+      "fused_score": 0.831,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "organisational culture in general; experimentation not addressed",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+      "path": "wiki/sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees.md",
+      "type": "source",
+      "title": "Research: Why You Shouldn't Treat AI Agents Like Employees",
+      "qmd_rank": 10,
+      "qmd_score": 0.08,
+      "graph": [],
+      "retrieval_reasons": [
+        "qmd rank 10 (score 0.08)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-25",
+      "days_since_access": null,
+      "effective_confidence": 0.85,
+      "rrf_score": 0.014286,
+      "fused_score": 0.819,
+      "verdict": "ignore",
+      "reason_class": "redundant",
+      "reason": "its 'experiment' hits are its own RCT on AI framing, summarised on W3 as anthropomorphizing lock-in",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-07-ransbotham-augmented-learners",
+      "path": "wiki/sources/2026-05-07-ransbotham-augmented-learners.md",
+      "type": "source",
+      "title": "Learning to Manage Uncertainty, With AI",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22",
+          "edge_type": "supports",
+          "via": "Shared topic: organizational learning with AI. Ransbotham et al. survey 3,467 respondents on organizational and AI-specific learning capability; episode 22 describes one small team's prototype for turning recorded conversations into reviewable organizational learning.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22 -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-07",
+      "days_since_access": null,
+      "effective_confidence": 0.85,
+      "rrf_score": 0.007813,
+      "fused_score": 0.448,
+      "verdict": "ignore",
+      "reason_class": "redundant",
+      "reason": "test-and-learn / failure-tolerance traits already carried by W2",
+      "promoted": null
+    },
+    {
+      "slug": "entities/MIT-Sloan-CIO-Symposium",
+      "path": "wiki/entities/MIT-Sloan-CIO-Symposium.md",
+      "type": "entity",
+      "title": "MIT-Sloan-CIO-Symposium",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22",
+          "edge_type": "published-by",
+          "via": "the symposium's podcast, episode 22; part 4 of the Collective Sensemaking series",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22 <--published-by<-- this (1 hop)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.008197,
+      "fused_score": 0.44,
+      "verdict": "ignore",
+      "reason_class": "wrong-granularity",
+      "reason": "publisher entity card",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-09-15-from-debate-to-inquiry-designing-conversations-worth-preserving-ep-21",
+      "path": "wiki/sources/2026-09-15-from-debate-to-inquiry-designing-conversations-worth-preserving-ep-21.md",
+      "type": "source",
+      "title": "From Debate to Inquiry: Designing Conversations Worth Preserving | Ep. 21",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22",
+          "edge_type": "supports",
+          "via": "Part 4 of 4. Shared topic: the Executive Learning Architecture. Episode 21 names it as the way to run collective sensemaking at scale and leaves it for this episode; episode 22 describes it and ties it to the Inquiry Framework.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22 -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007576,
+      "fused_score": 0.434,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "designing executive conversations, not experiments",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Allan-Tate",
+      "path": "wiki/entities/Allan-Tate.md",
+      "type": "entity",
+      "title": "Allan-Tate",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22",
+          "edge_type": "authored-by",
+          "via": "co-host; designer of the prototype",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22 -->authored-by--> this (1 hop)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.008065,
+      "fused_score": 0.433,
+      "verdict": "ignore",
+      "reason_class": "wrong-granularity",
+      "reason": "person entity card",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Irving-Wladawsky-Berger",
+      "path": "wiki/entities/Irving-Wladawsky-Berger.md",
+      "type": "entity",
+      "title": "Irving-Wladawsky-Berger",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22",
+          "edge_type": "authored-by",
+          "via": "co-host; supplies the IBM and research-community comparisons",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22 -->authored-by--> this (1 hop)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007937,
+      "fused_score": 0.426,
+      "verdict": "ignore",
+      "reason_class": "wrong-granularity",
+      "reason": "person entity card",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-06-09-krakowski-human-centered-ai-field-experiment",
+      "path": "wiki/sources/2025-06-09-krakowski-human-centered-ai-field-experiment.md",
+      "type": "source",
+      "title": "Human-Centered Artificial Intelligence: A Field Experiment",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook",
+          "edge_type": "supports",
+          "via": "**Non-tech-industry transformation pair on the *tailored-leadership + culture-refresh* lever.** Krakowski et al. (*Management Science* 2025, Nordic pharma DiD, N=72 retail outlets): *untailored* AI augmentation gradually decreases market share vs the legacy-IT control; *tailored* interaction across four Kirton-cognitive-style parameters produces positive effects. Erginbilgiç (Rolls-Royce CEO, May 2026): the entire transformation rests on *tailored* leadership — the burning-platform speech was *commissioned external benchmarking starting Sept '22* (~2:01), 25–30 strategy workshops with 500+ employees so *'whole organisation is aligned because they were in the room when you were making the decision'* (~12:43–13:14), and *'non-compromising mediocrity at that level kills the organizations'* (~17:42–17:50) as the cultural-refresh lever. Two anchors on the same load-bearing claim — *tailored intervention beats blanket prescription, organizational-culture renewal is the substrate* — at non-tech industrial altitudes (pharma + aerospace) with both citing the [[warner-wager-process-model|W&W process model]]'s `strategic-renewal/organizational-culture` cell. Erginbilgiç adds the leadership-as-non-compromise edge; Krakowski adds the cognitive-style-mapping edge.",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+          "edge_type": "supports",
+          "via": "**Two 2026 RCT-grade empirical sources on the *organisational-design dimension* of AI deployment outcomes — published 11 months apart.** Krakowski et al. (Management Science, online June 2025): N=72 Nordic pharma sales experts DiD, four interaction parameters (work procedure / decision authority / training / incentives) × two cognitive styles (adaptor / innovator) → tailored = positive, untailored = negative vs legacy IT. Kropp et al. (HBR / BCG Henderson Institute, May 2026): N=1,261 HR/finance managers randomised experiment, AI-tool vs AI-employee framing → AI-employee framing causes 9pp accountability drop, 44% more escalation, 18% fewer errors caught. Both papers test **organisational design choices** as causal variables in AI-deployment outcomes (Krakowski: interaction-context parameters; Kropp et al.: framing/anthropomorphizing) and find that **apparently-administrative choices materially change performance and accountability outcomes**. Both papers prescribe explicit interaction-design over default deployment as the operative lever. Two-source convergence at advisor-altitude (BCG Henderson Institute) and academic-altitude (Management Science) on the same underlying claim.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook -->supports--> this (1 hop)",
+        "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-25",
+      "days_since_access": null,
+      "effective_confidence": 0.85,
+      "rrf_score": 0.007353,
+      "fused_score": 0.422,
+      "verdict": "ignore",
+      "reason_class": "redundant",
+      "reason": "the field experiment's design and result are summarised on W3 (tenth-source corroboration), which is cited instead",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16",
+      "path": "wiki/sources/2026-07-10-when-ai-becomes-common-organizational-capability-becomes-the-advantage-ep-16.md",
+      "type": "source",
+      "title": "When AI Becomes Common, Organizational Capability Becomes the Advantage | Ep. 16",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22",
+          "edge_type": "supports",
+          "via": "Shared topic: the Linux Foundation tech-talent report as discussed on this podcast. Episode 22's retrieval example draws on the memory record of an earlier episode in which the hosts discussed that report; episode 16 is the wiki's record of such an episode. The match is inferred; episode 22 does not give the episode number.",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage",
+          "edge_type": "supports",
+          "via": "reciprocal — independent corroboration from a different venue (MIT Sloan CIO Symposium podcast) of the identical headline claim that organizational redesign, not technology access, is the AI-era competitive differentiator",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-10-07-from-conversations-to-an-executive-learning-architecture-ep-22 -->supports--> this (1 hop)",
+        "graph: sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.7,
+      "accessed_at": "2026-07-15",
+      "last_confirmed": "2026-07-15",
+      "days_since_access": null,
+      "effective_confidence": 0.7,
+      "rrf_score": 0.007692,
+      "fused_score": 0.413,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "organisational capability as differentiator; no experimentation mechanics",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator",
+      "path": "wiki/sources/2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator.md",
+      "type": "source",
+      "title": "How DBS Bank Makes Everyone an Innovator (Leaders at All Levels, Ep. 9)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook",
+          "edge_type": "supports",
+          "via": "DBS is the **AI-flavoured Asian-bank counterpart** to Rolls-Royce's non-AI industrial turnaround. Both are leadership-altitude *transformation playbooks* built on the same primitives: a burning-platform framing, performance-discipline embedded in metrics (DBS's 20%-of-scorecard transformation KPI ↔ Erginbilgiç's four-pillar performance culture), culture refresh as the load-bearing lever, and an explicit *transformation-is-never-finished* stance (DBS *'best bank in the world ... never stopped us'* ↔ Erginbilgiç *'we couldn't do half of what we are doing three years ago'*). Erginbilgiç is the wiki's non-AI control case; DBS is the digital/AI-flavoured case — together they bracket the W&W *transformation-primitives vs digital-specific* question on [[warner-wager-process-model]].",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026",
+          "edge_type": "supports",
+          "via": "both prescribe organizational redesign toward capability-based, bottom-up-innovation structures over command-and-control job-title hierarchies — DBS is the operator-scale worked example of Raman's 'lead by design, not command' thesis",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook <--supports<-- this (1 hop)",
+        "graph: sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026 -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007143,
+      "fused_score": 0.41,
+      "verdict": "use",
+      "anchor": "W8",
+      "reason": "richest operator case of experimentation as a KPI-backed system (innovation pyramid, 20% scorecard, retrospective business case)",
+      "reason_class": null,
+      "promoted": null,
+      "contribution": "case: DBS Bank innovation system"
+    },
+    {
+      "slug": "sources/2026-05-21-allen-aws-london-exec-forum-agentic-team-structures",
+      "path": "wiki/sources/2026-05-21-allen-aws-london-exec-forum-agentic-team-structures.md",
+      "type": "source",
+      "title": "London Executive Forum 2026 — A leader's guide to advanced team structures in an agentic world",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook",
+          "edge_type": "supports",
+          "via": "**Demanding-leader-as-transformation-cadence pattern, two industries apart.** Allen (AWS Executive in Residence, London Executive Forum 2026): the *5× expectation* (5× output for ≤25% opex increase) + *momentum beats perfection* iterative-quality-compounding mantra + Brooklyn Solutions' *human-starts-human-ends* accountability. Erginbilgiç (Rolls-Royce CEO, May 2026): *'I am demanding... You won't like everything I tell you because I want you to improve'* (~6:51–7:21) + *'pace and intensity is for a purpose. You choose where you are, where it matters'* (~7:21–7:35) + *'non-compromising mediocrity at that level kills the organizations'* (~17:42–17:50) + the cadence-and-new-normal observation (~7:36–8:23: team behaviour shifts to new normal, then *'you don't need to push'*). Same archetype — the demanding-leader who imposes new performance norms as the transformation cadence — at AWS-vendor / agentic-AI altitude (Allen) and aerospace-engineering / pre-AI altitude (Erginbilgiç). The convergence is load-bearing precisely *because* the domains differ: it suggests the demanding-leader pattern is not AI-specific but a transformation-cadence primitive. Allen ratifies it within the [[warner-wager-process-model|W&W]] `strategic-renewal/organizational-culture` cell from the digital lens; Erginbilgiç ratifies the same cell from outside the digital lens entirely.",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-08-19-rohrer-goto-modern-enterprise-architecture-architecting-for-outcomes",
+          "edge_type": "supports",
+          "via": "both argue team structure is the primary architectural lever and both reach the small-autonomous-cross-functional-team conclusion, from an agentic-AI vantage (Allen) and a pre-AI enterprise-architecture vantage (Rohrer). Rohrer's Scott Prugh citation supplies the quantified version of the coordination-cost claim Allen argues qualitatively: removing one dependency takes handoffs from four to one, *'so you're four times more efficient… reduces your risk by eight times and reduces your cost by five times'*. His hello-world layered-team worked example — UI team, API team, greeting service team, planet service team, DBA team, plus solution architects to route the idea — is the corpus's most concrete illustration of what coordination cost actually looks like",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+          "edge_type": "supports",
+          "via": "**Independent empirical confirmation of the *managers-in-charge-of-agents* failure mode Allen names.** Allen (~22:48–23:10): *'we've gone from this pyramid... through to people trying to put managers or people in charge of agents. I haven't seen this working really well, because those domain experts need to understand that orchestration flow of what's going on.'* Kropp et al. supply the **RCT-grade empirical evidence** for *why* it doesn't work: in their N=1,261 randomized experiment, the *AI-employee framing* (vs *AI-tool framing*, holding everything else constant) caused — among managers in orgs that already have AI on their org charts — a **9pp drop in personal accountability** (with 8pp shift to the AI), **44% more escalation requests**, **18% fewer errors caught**, and (whole-sample) **13% higher uncertainty about professional identity**. Allen's named prescription (*'put humans on judgment work, agents on execution work'* + Brooklyn's *'human starts the work, human ends the work'*) and Kropp et al.'s five-point redesign recommendation converge on the same operational shape from independent vantages 15 days apart (May 6 → May 21). The convergence pattern: both reject the *AI-as-employee* framing AND prescribe *AI-as-software-with-clear-human-accountability + workflow-redesign* instead.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook -->supports--> this (1 hop)",
+        "graph: sources/2026-08-19-rohrer-goto-modern-enterprise-architecture-architecting-for-outcomes -->supports--> this (1 hop)",
+        "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": null,
+      "last_confirmed": "2026-07-15",
+      "days_since_access": null,
+      "effective_confidence": 0.8,
+      "rrf_score": 0.007246,
+      "fused_score": 0.407,
+      "verdict": "ignore",
+      "reason_class": "redundant",
+      "reason": "pilot purgatory and the 5%-pattern prescription are summarised on W3",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-16-hill-bloomberg-leaders-ceo-skills-age-of-ai",
+      "path": "wiki/sources/2026-08-16-hill-bloomberg-leaders-ceo-skills-age-of-ai.md",
+      "type": "source",
+      "title": "The Leadership Skills for CEOs That Will Matter Most in the Age of AI",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook",
+          "edge_type": "supports",
+          "via": "same series, same host, three months apart, and they sit as theory and practice on the same claims. Erginbilgiç is a CEO describing what he did — commissioned external benchmarking before the burning-platform speech, 25–30 workshops with 500+ employees so *'the whole organisation is aligned because they were in the room'*, and *'non-compromising mediocrity at that level kills the organizations.'* Hill is the researcher naming the underlying constructs: contextual intelligence (read what the context makes salient before judging the person), creative abrasion (amplify difference rather than minimise it), and decision rights as the CEO's first design task. The pair is unusually clean because neither cites the other and both come through the same interview format",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great",
+          "edge_type": "supports",
+          "via": "two academic treatments of organizational culture as an engineered rather than emergent property, both from business-school faculty and both refusing the charisma-and-vision framing. Carroll supplies the organization-theory grounding for the strategic-renewal/organizational-culture cell; Hill supplies the leadership-behaviour layer on top of it — the argument that a leader's job is to make difference safe to express and then harness it (*'you're hiring them for their ideas and if you don't get those ideas, then shame on you'*), and that formal authority is *'quite limited in many ways in what you need to do now to influence people to get the job done'*",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook <--supports<-- this (1 hop)",
+        "graph: sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007042,
+      "fused_score": 0.404,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "CEO skills; experimentation not a theme",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Bloomberg-Podcasts",
+      "path": "wiki/entities/Bloomberg-Podcasts.md",
+      "type": "entity",
+      "title": "Bloomberg-Podcasts",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook",
+          "edge_type": "published-by",
+          "via": "Tufan Erginbiç on the Rolls-Royce turnaround playbook (24 May 2026, *Bloomberg Leaders*)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook <--published-by<-- this (1 hop)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.007463,
+      "fused_score": 0.401,
+      "verdict": "ignore",
+      "reason_class": "wrong-granularity",
+      "reason": "publisher entity card",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-09-08-west-lacroix-zimmerman-mckinsey-why-strategy-needs-mobilization",
+      "path": "wiki/sources/2026-09-08-west-lacroix-zimmerman-mckinsey-why-strategy-needs-mobilization.md",
+      "type": "source",
+      "title": "Why Strategy Needs Mobilization, Especially in This Moment",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook",
+          "edge_type": "supports",
+          "via": "both address how strategic choices reach the people who deliver them: Erginbilgiç's granular strategy ('everybody knows in the company their role in delivering strategy'), Zimmerman's choices that each become an initiative owned by an executive",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage",
+          "edge_type": "supports",
+          "via": "same firm, so not independent: both treat AI productivity gains as table stakes and place the harder problem in the organisation; Catlin's 'metabolic rate of learning' loop and organisational lens as the hardest of three, Zimmerman's test-learn-adapt and mobilization reinforcing each other ('you have to mobilize to learn')",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook <--supports<-- this (1 hop)",
+        "graph: sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006944,
+      "fused_score": 0.398,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "strategy mobilisation; experimentation only in passing",
+      "promoted": null
+    },
+    {
+      "slug": "entities/Microsoft",
+      "path": "wiki/entities/Microsoft.md",
+      "type": "entity",
+      "title": "Microsoft",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026",
+          "edge_type": "published-by",
+          "via": "Published on Microsoft's WorkLab podcast — host Molly Wood interviews LinkedIn's Aneesh Raman on AI-era career and organizational identity (29 Jun 2026)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026 <--published-by<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": "2026-11-07",
+      "last_confirmed": "2026-11-07",
+      "days_since_access": 5,
+      "effective_confidence": 0.838,
+      "rrf_score": 0.006849,
+      "fused_score": 0.391,
+      "verdict": "ignore",
+      "reason_class": "wrong-granularity",
+      "reason": "company entity card; the Microsoft case is taken from W9",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-03-31-roslansky-smith-tools-and-weapons-open-to-work",
+      "path": "wiki/sources/2026-03-31-roslansky-smith-tools-and-weapons-open-to-work.md",
+      "type": "source",
+      "title": "Ryan Roslansky: Turning AI anxiety into skills for the future of work",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026",
+          "edge_type": "supports",
+          "via": "the two authors of Open to Work, interviewed separately; both frame careers around tasks and skills rather than job titles",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026 <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006757,
+      "fused_score": 0.387,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-02-schoening-lennys-podcast-cultivating-agency-ai-era",
+      "path": "wiki/sources/2026-05-02-schoening-lennys-podcast-cultivating-agency-ai-era.md",
+      "type": "source",
+      "title": "AI era skills: Why cultivating agency matters more than job titles | Max Schoening (Notion)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026",
+          "edge_type": "supports",
+          "via": "both argue AI-era professional identity should center on adaptable, self-directed agency rather than a fixed job title — Schoening's 'cultivating agency' and Raman's 'onlyness' name the same shift from two independent interview vantages",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026 -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006667,
+      "fused_score": 0.382,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai",
+      "path": "wiki/sources/2026-05-13-storoni-hbr-ideacast-redefining-efficiency-age-ai.md",
+      "type": "source",
+      "title": "Redefining What Efficiency Means in the Age of AI",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026",
+          "edge_type": "supports",
+          "via": "both argue AI-era work needs new measurement logic rather than faster old metrics — Storoni's neuroscience-grounded critique of efficiency-as-gear-3 and Raman's 'old math won't work for new equations' name the same rejection of efficiency-only metrics",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026 -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006579,
+      "fused_score": 0.377,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset",
+      "path": "wiki/sources/2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset.md",
+      "type": "source",
+      "title": "To Thrive Alongside AI, Focus on Mindset—Not Skillset",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026",
+          "edge_type": "supports",
+          "via": "both frame the durable individual response to AI as a mindset/intent shift rather than a skills inventory — Argenti's 'mindset not skillset' and Raman's 'pro-human intent' are the same move from CIO and labor-economist-adjacent vantages respectively",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026 -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006494,
+      "fused_score": 0.372,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-07-14-khan-academy-ceo-the-real-ai-opportunity-is-in-boring-industries-sal-khan",
+      "path": "wiki/sources/2026-07-14-khan-academy-ceo-the-real-ai-opportunity-is-in-boring-industries-sal-khan.md",
+      "type": "source",
+      "title": "Khan Academy CEO: The Real AI Opportunity Is in Boring Industries | Sal Khan",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026",
+          "edge_type": "supports",
+          "via": "Khan names the ETS/Content Institute framework's five durable skills (communication, collaboration, creativity, critical thinking, plus a leadership sub-framework) as the core of a new $10K accredited degree; Raman/Wood's '5 C's' (creativity, curiosity, courage, compassion, communication) is an independent vocabulary converging on the same small cluster of AI-resistant human skills",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026 <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.00641,
+      "fused_score": 0.368,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart",
+      "path": "wiki/sources/2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart.md",
+      "type": "source",
+      "title": "The future of work has no org chart | Microsoft Katy George",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026",
+          "edge_type": "supports",
+          "via": "same show; both expect skills rather than job titles and hierarchy to organise work as AI spreads",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026 <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006329,
+      "fused_score": 0.363,
+      "verdict": "use",
+      "anchor": "W9",
+      "reason": "first-party case of a failed product-launch rollout rebuilt as structured team experimentation; adoption→behaviour→outcome measurement chain",
+      "reason_class": null,
+      "promoted": null,
+      "contribution": "case: Microsoft Copilot sales rollout; Camp Air; role huddles; continuous experimentation officers"
+    },
+    {
+      "slug": "sources/2026-08-10-miller-worklab-the-ai-shift-most-companies-didnt-see-coming",
+      "path": "wiki/sources/2026-08-10-miller-worklab-the-ai-shift-most-companies-didnt-see-coming.md",
+      "type": "source",
+      "title": "The AI shift most companies didn't see coming",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026",
+          "edge_type": "supports",
+          "via": "same show and publisher, adjacent claims six weeks apart — Raman's bolt-on-electricity history and 'this is about transforming your entire way of work' is the historical form of Miller's 'AI is not a tool' budgeting-and-measurement argument",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-29-raman-wood-worklab-job-titles-dont-matter-2026 <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.00625,
+      "fused_score": 0.358,
+      "verdict": "ignore",
+      "reason_class": "redundant",
+      "reason": "frontier unit / double-path allocation already summarised on W1 and W3",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-03-28-nguyen-ai-adoption-toe-dynamic-capabilities",
+      "path": "wiki/sources/2026-03-28-nguyen-ai-adoption-toe-dynamic-capabilities.md",
+      "type": "source",
+      "title": "The role of the level of artificial intelligence adoption on business model innovation, sustainable competitive advantage, and firm performance: Integrating the TOE framework and Dynamic Capabilities theory",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage",
+          "edge_type": "supports",
+          "via": "value from AI arrives through redesign, not deployment. Catlin argues efficiency gains from bolted-on AI are competed away and advantage comes from redesigning what the firm does and offers; here the direct path from AI adoption level to performance is small (β = 0.125) while business-model innovation (0.417) and competitive advantage (0.321) carry most of the explained variance, which the authors read as AI's value being realised indirectly",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006098,
+      "fused_score": 0.35,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting",
+      "path": "wiki/sources/2026-02-09-sternfels-mckinsey-survive-ai-and-reinvent-consulting.md",
+      "type": "source",
+      "title": "How McKinsey Plans to Survive AI (and Reinvent Consulting)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage",
+          "edge_type": "supports",
+          "via": "Same firm, same reinvention-over-productivity thesis — Sternfels applies it reflexively to McKinsey's own consulting business model, Catlin generalizes it as prescriptive advice for any CEO facing AI-driven competitive parity on pure efficiency gains.",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+          "edge_type": "supports",
+          "via": "**Consultant-altitude pair on enterprise AI transformation doctrine** (BCG + McKinsey). Sternfels (McKinsey, Feb 2026): McKinsey-altitude prescriptions for enterprise AI consulting transformation. Kropp et al. (BCG Henderson Institute, May 2026): BCG-altitude prescriptions for enterprise agentic-AI rollout. Both emphasise *workflow redesign over technology layering*, *explicit accountability mechanisms*, and *capability-building plans for humans managing agents*. The two top-of-market consulting firms' research arms converging on the same prescription set is the wiki's strongest two-firm anchor on enterprise-AI-transformation governance to date.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage -->supports--> this (1 hop)",
+        "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006024,
+      "fused_score": 0.345,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-03-rewired-second-edition-sample",
+      "path": "wiki/sources/2026-05-03-rewired-second-edition-sample.md",
+      "type": "source",
+      "title": "Rewired: McKinsey's Playbook on How Leading Companies Win with Technology and AI",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage",
+          "edge_type": "supports",
+          "via": "Catlin explicitly names the book ('We've written a book about it called Rewired') and restates its core prescription verbatim: pick a domain, don't bolt AI onto existing processes, redesign the process to capture the value, make it scalable, then expand — this podcast is the same McKinsey framework delivered in interview form.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005952,
+      "fused_score": 0.341,
+      "verdict": "ignore",
+      "reason_class": "redundant",
+      "reason": "sample-only ingest; the Rewired capability model is represented by W2",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china",
+      "path": "wiki/sources/2026-05-11-ognibeni-ai-agents-cool-demos-vs-real-revenue-china.md",
+      "type": "source",
+      "title": "AI Agents: Cool Demos vs Real Revenue — What Western E-Commerce Can Learn from China",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage",
+          "edge_type": "supports",
+          "via": "Both describe agentic commerce as a near-term structural shift — Catlin from a prescriptive/forward-looking McKinsey-research angle (agents transacting on a customer's behalf, e.g. auto-switching insurance at renewal), Ognibeni from an already-live descriptive angle (Chinese super-apps and dark factories) — same phenomenon, different maturity stage and evidentiary footing.",
+          "hops": 1
+        },
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "explicitly cites the BCG / PwC / McKinsey 'every company does AI, very few see economic value' adoption gap — and locates the gap in (a) trust deficit, (b) demos-vs-scale-failure, (c) silo-vs-ecosystem mismatch, (d) cost-vs-growth framing",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage -->supports--> this (1 hop)",
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005882,
+      "fused_score": 0.337,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "demo-vs-revenue in China's agent market; not organisational experimentation",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services",
+      "path": "wiki/sources/2026-08-03-mckinsey-agentic-ai-and-the-future-of-global-business-services.md",
+      "type": "source",
+      "title": "Agentic AI and the Future of Global Business Services",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage",
+          "edge_type": "supports",
+          "via": "both are McKinsey podcast episodes arguing that the durable AI advantage sits in reimagined end-to-end processes rather than in tool adoption; this one localises that claim to the GBS function and adds the automate-first-versus-right-shore-first sequencing decision",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005814,
+      "fused_score": 0.333,
+      "verdict": "ignore",
+      "reason_class": "redundant",
+      "reason": "materiality-threshold-first sequencing summarised on W3 and W1",
+      "promoted": null
+    },
+    {
+      "slug": "entities/McKinsey-&-Company",
+      "path": "wiki/entities/McKinsey-&-Company.md",
+      "type": "entity",
+      "title": "McKinsey-&-Company",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage",
+          "edge_type": "authored-by",
+          "via": "McKinsey Podcast episode — Tanguy Catlin (Senior Partner, MGI Director) interviewed by Roberta Fusaro on why AI-driven productivity gets competed away and the real advantage lies in reinvention (9 Jul 2026)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage <--authored-by<-- this (1 hop)"
+      ],
+      "missing": true,
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.006173,
+      "fused_score": 0.331,
+      "verdict": "ignore",
+      "reason_class": "wrong-granularity",
+      "reason": "company entity card",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage",
+      "path": "wiki/sources/2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage.md",
+      "type": "source",
+      "title": "How To Maximize Competitive Advantage",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage",
+          "edge_type": "supports",
+          "via": "both are McKinsey podcast episodes arguing that AI-driven productivity gains get competed away and durable advantage lies elsewhere; Catlin names proprietary data, habit-embedding and metabolic rate of learning as the three levers, and this episode supplies the measurement layer underneath — seven observable sources of advantage, an efficiency/durability/extensibility decision frame, and the finding that advantage is eroding across ~60% of industries",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005747,
+      "fused_score": 0.33,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age",
+      "path": "wiki/sources/2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age.md",
+      "type": "source",
+      "title": "The CEO's Agenda for Thriving in the Agentic Age",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage",
+          "edge_type": "supports",
+          "via": "Catlin on productivity gains competed away, and redesigning a domain rather than bolting AI on",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-07-09-catlin-mckinsey-podcast-real-ai-advantage <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005682,
+      "fused_score": 0.326,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships",
+      "path": "wiki/sources/2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships.md",
+      "type": "source",
+      "title": "Agents, robots, and us: Skill partnerships in the age of AI",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero",
+          "edge_type": "supports",
+          "via": "**Founder-CEO qualitative confirmation of MGI's quantitative *every-office-job-behind-screen-is-automatable* finding.** [[2025-11-25-yee-mgi-agents-robots-and-us-skill-partnerships|Yee et al. / MGI]] (November 2025): the **Skill Change Index** decomposes 57% US technical-automation-potential as **44% via agents (nonphysical office work) + 13% via robots (physical work)**; the agent-centric quadrant (30% of US occupations, $70k median wage — accountants, software developers, lawyers) is *where the knowledge-work wage premium is at risk*. Scheffer (May 2026, Dutch SME-founder-CEO vantage) names exactly the same observation in qualitative practitioner-altitude language: *'Elke kantoorbaan voor een scherm gaat verdwijnen ... Veel mensen onderschatten hoe snel dat gaat ... Heel veel banen die wij kennen, gaan gewoon echt verdwijnen.'* HelloPrint's **customer-service 100→18 worked example** (an entire department shrunk to 18% of its peak headcount, with AI delivering *'beter dan het niveau waarop mensen het kunnen doen'* — better than the level at which humans can do it) is a single-firm empirical anchor that lands inside MGI's *people-agent* + *agent-centric* archetypes. The wiki's first MGI-cross-reference at the **MKB-SME-founder-CEO vantage** — the same finding MGI quantifies across ~6,800 skills × ~1,800 occupations, Scheffer experiences inside a single €80M Dutch print platform.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005618,
+      "fused_score": 0.322,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up",
+      "path": "wiki/sources/2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up.md",
+      "type": "source",
+      "title": "How To Build A Company With AI From The Ground Up",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero",
+          "edge_type": "supports",
+          "via": "**Day-zero rebuild thesis at SME-founder-CEO altitude — paired with Hu's YC-partner-prescriptive altitude.** [[2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up|Hu / YC Startup School]] (April 2026): the *AI-as-operating-system* + *closed-loop-vs-open-loop company* + *AI-founder-type* prescriptive framework; *'still builds, still coaches, leads by example.'* Scheffer (May 2026, ~1 month later) is the *Dutch-SME-founder-CEO operationalisation*: *'Ik heb mezelf de vraag gesteld: wat nou als ik mijn huidige bedrijf op dag één opnieuw zou moeten bouwen, wat zou ik dan doen?'* (*'I asked myself: what if I had to rebuild my current company on day one, what would I do then?'*) — Hu's prescription executed as a literal thought experiment. Scheffer's *'Dat is juist relevant voor mkb'ers ... Als je een kleiner bedrijf hebt, is het veel makkelijker om dat te doen'* (*'this is particularly relevant for SMEs ... if you have a smaller company it's much easier to do this'*) is the **SME-altitude inversion of Hu's prescription**: Hu argues this from inside the YC-startup-batch context, Scheffer argues from inside an established €80M Dutch SME that the rebuild is *easier* at SME scale than at Fortune-500 scale.",
+          "hops": 1
+        },
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "startups-as-AI-native-from-day-one thesis: large incumbents face a maintain-while-unwinding constraint that small companies don't; Mutiny cited as a skunk-works-team exception pattern",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero -->supports--> this (1 hop)",
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005556,
+      "fused_score": 0.319,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "startup building from scratch, not transforming an existing organisation",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-28-warner-wager-dynamic-capabilities-digital-transformation",
+      "path": "wiki/sources/2026-04-28-warner-wager-dynamic-capabilities-digital-transformation.md",
+      "type": "source",
+      "title": "Building Dynamic Capabilities for Digital Transformation: An Ongoing Process of Strategic Renewal",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero",
+          "edge_type": "supports",
+          "via": "**Wiki's most-comprehensive single-source W&W operationalisation at SME-founder-CEO altitude.** [[2026-04-28-warner-wager-dynamic-capabilities-digital-transformation|Warner & Wäger]] derives the 9-cell process model from 27 interviews on digital transformation. Scheffer (May 2026) maps onto **9 of the 12 process-model cells** in a single ~7-minute article — among the broadest cell coverage in the wiki — and the mapping is unusually clean: `digital-sensing/digital-mindset-crafting` (the technology-leading mindset shift, the fifty-year company vision); `digital-sensing/digital-scenario-planning` (the *day-zero rebuild* thought experiment as scenario); `digital-seizing/balancing-digital-portfolios` (*'door bijvoorbeeld afscheid te nemen van bepaalde omzetgroepen ... wel een fundamentele keuze om op de lange termijn te kunnen winnen'* — the conscious revenue sacrifice for long-term winning is a textbook *balancing internal and external options + pacing strategic responses* execution); `digital-seizing/strategic-agility` (deliberately slowing growth to enable transformation); `digital-transforming/redesigning-internal-structures` (the AI-brein dissolving marketing/IT/operations/finance departments — *'Aparte afdelingen voor marketing, IT, operatie en finance, elk met eigen systemen en verantwoordingslagen, verliezen hun functie'*); `digital-transforming/improving-digital-maturity` (the *Chief AI Officer or CTO is the missing role in MKB management teams* observation); `strategic-renewal/business-model` (fundamental rebuild not optimisation); `strategic-renewal/organizational-culture` (the *topsportteam* framing — *'Net als in een topsportteam is niet iedereen geschikt voor die dynamiek'*); `contextual/external-triggers` (AI as the external disruptive technology). The wiki's **first Dutch-MKB-vantage clean execution of the full W&W process model** — a useful empirical complement to W&W's original Swiss/German European-corporate sample.",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+          "edge_type": "supports",
+          "via": "**Empirical operationalisation of the W&W *redesigning-internal-structures* + *organizational-culture* microfoundations.** Where W&W frame structural redesign and cultural renewal as theoretical microfoundations of digital-transforming + strategic-renewal capabilities, Kropp et al. add a **specific RCT-grade empirical hazard**: the apparently-cultural choice of *how to frame AI in the org* (tool vs employee) materially changes accountability and quality outcomes. The framing is not merely symbolic — it is a load-bearing microfoundation in the W&W sense.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero -->supports--> this (1 hop)",
+        "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005495,
+      "fused_score": 0.315,
+      "verdict": "ignore",
+      "reason_class": "redundant",
+      "reason": "the microfoundation table is reproduced on W1",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-27-koomen-yc-lightcone-inside-yc-ai-playbook",
+      "path": "wiki/sources/2026-05-27-koomen-yc-lightcone-inside-yc-ai-playbook.md",
+      "type": "source",
+      "title": "Inside YC's AI Playbook",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero",
+          "edge_type": "supports",
+          "via": "**Same-day-different-continent convergent declarations of *AI-as-building-layer-not-feature*.** Both sources published 27 May 2026. [[2026-05-27-koomen-yc-lightcone-inside-yc-ai-playbook|Koomen / YC Lightcone]]: *'Part of the key thing is not to just use AI as a copilot ... it's the building layer for everything.'* Scheffer (same day, Dutch-SME vantage): *'Waar vroeger de mensen eerst kwamen en technologie ondersteunend was, draait dat nu om. Technologie wordt leidend, en daaromheen zit een veel kleinere groep mensen die die technologie aanstuurt.'* (*'Where people used to come first and technology was supporting, that is now reversed. Technology becomes leading, and around it sits a much smaller group of people who direct that technology.'*) Both anchor on the **technology-leading / people-directing reversal** as the structural claim. Koomen's *one-database-to-rule-them-all + 350-tool-shared-registry + dream-cycle* primitive set is YC's operationalisation; Scheffer's *AI-brein as foundation* + *dissolved marketing/IT/operations/finance departments* + *Chief AI Officer as missing MKB role* is the parallel HelloPrint operationalisation. **Two-source converging declaration on the same calendar day — one from YC-internal-infrastructure vantage at 350-tool scale, one from a Dutch €80M-revenue SME — both arguing AI is the foundation, not a feature.**",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005435,
+      "fused_score": 0.312,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "YC's internal AI use; not experiment-led transformation",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs",
+      "path": "wiki/sources/2026-05-28-giles-wp-intelligence-new-human-machine-workforce-agentic-ai-jobs.md",
+      "type": "source",
+      "title": "The new human-machine workforce: How agentic AI will transform jobs",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero",
+          "edge_type": "supports",
+          "via": "Convergent on the **HR-redeployment-as-augmentation** worked-example pattern at SME altitude. Scheffer (HelloPrint Dutch SME) cut customer-service from ~100 to 18 with AI delivering quality *'beter dan het niveau waarop mensen het kunnen doen'*; Russell (HubSpot CPO, US, ~9,000-employee scale) redeployed 10 HR staff from interview-scheduling to employee-satisfaction and individual-development work. Different scales (Dutch €80M SME vs US-mid-cap), different geographies, same operational pattern: agents take the rules-based work, humans take the judgment-bearing redeployment. Convergent with [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen / AWS]]'s *humans on judgment work, agents on execution work* line.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005376,
+      "fused_score": 0.308,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-03-warren-yc-how-to-build-an-ai-native-services-company",
+      "path": "wiki/sources/2026-06-03-warren-yc-how-to-build-an-ai-native-services-company.md",
+      "type": "source",
+      "title": "How to Build an AI-Native Services Company",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero",
+          "edge_type": "supports",
+          "via": "Convergent on the *built-from-scratch / day-zero rebuild* thesis at two scales. Scheffer (HelloPrint Dutch SME, May 2026, €80M revenue) executes the day-zero rebuild *inside an established firm* with the customer-service-100-to-18 worked example; Warren (June 2026, YC altitude) describes the day-zero rebuild *as a new-firm playbook* — *'companies … rebuilt from scratch with AI doing most of the work'*. Scheffer is the in-place rebuild at SME scale; Warren is the greenfield rebuild at startup scale. The two together name the same phenomenon at two boundary conditions. Both also reject the *AI-bolted-on-feature* alternative path.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-27-scheffer-de-ondernemer-helloprint-ai-rebuild-from-day-zero <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005319,
+      "fused_score": 0.305,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "'pilot' here means customer pilots for an AI-native services startup, not internal experimentation",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-07-02-joshi-venkatraman-fowler-expert-generalists",
+      "path": "wiki/sources/2025-07-02-joshi-venkatraman-fowler-expert-generalists.md",
+      "type": "source",
+      "title": "Expert Generalists",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-08-19-rohrer-goto-modern-enterprise-architecture-architecting-for-outcomes",
+          "edge_type": "supports",
+          "via": "both are Thoughtworks-adjacent arguments that the specialist-per-layer org is the thing producing the coordination burden, and both prescribe breadth over depth at the team boundary. Rohrer's *'full-stack team, full-burrito, t-shaped people, you build it you run it'* and his restructuring of the layered hello-world example into one cross-skilled team is the organisational form the expert-generalist argument implies at the individual level. Rohrer also cites Fowler directly — *'Who Needs an Architect'* and *'Is Design Dead'* — for the claim that the architect belongs inside the team as a coach rather than above it as an approver",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-08-19-rohrer-goto-modern-enterprise-architecture-architecting-for-outcomes -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005263,
+      "fused_score": 0.302,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-14-blomfield-yc-building-structuring-ai-native-company",
+      "path": "wiki/sources/2026-08-14-blomfield-yc-building-structuring-ai-native-company.md",
+      "type": "source",
+      "title": "Building And Structuring An AI Native Company",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-08-19-rohrer-goto-modern-enterprise-architecture-architecting-for-outcomes",
+          "edge_type": "supports",
+          "via": "the same Conway's-law premise driven to opposite conclusions, which is why the pair is worth holding. Rohrer's version is a mutual-constraint feedback loop — Malan's *'if the architecture of the system and the architecture of the organization are at odds, the architecture of the organization will win'* set against Alan Kelly's observation that the software then refuses to let management reorganise, resolved as *'we shape our architecture and then the architecture shapes us'* — so his prescription is to co-design org and system deliberately. Blomfield takes the same starting observation (hierarchy exists to route information) and argues AI dissolves the human side of the loop entirely. Rohrer is the pre-AI baseline: he arrives at small autonomous cross-functional teams owning software that fits in the team's head WITHOUT any AI premise, which means the structural convergence is not evidence for the AI mechanism",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-08-19-rohrer-goto-modern-enterprise-architecture-architecting-for-outcomes -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.005208,
+      "fused_score": 0.299,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "structuring a new AI-native company",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/ai-in-health-care",
+      "path": "wiki/concepts/ai-in-health-care.md",
+      "type": "concept",
+      "title": "ai-in-health-care",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "instance-of",
+          "via": "the adoption pattern of the wider economy (broad use, thin scale) measured in one sector",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--instance-of<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": "2026-11-07",
+      "last_confirmed": "2026-11-07",
+      "days_since_access": 5,
+      "effective_confidence": 0.804,
+      "rrf_score": 0.005102,
+      "fused_score": 0.287,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "concept neighbour of enterprise-ai-adoption reached by a generic edge; covers a different topic than experimentation",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/automation-vs-augmentation",
+      "path": "wiki/concepts/automation-vs-augmentation.md",
+      "type": "concept",
+      "title": "automation-vs-augmentation",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "per-task deployment lens used by Anand-Wu, MITTRI/Cisco, MIT CISR",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-11-07",
+      "last_confirmed": "2026-11-07",
+      "days_since_access": 5,
+      "effective_confidence": 0.899,
+      "rrf_score": 0.004902,
+      "fused_score": 0.287,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "automation/augmentation distinction, not experiment design",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/ai-knowledge-hiding",
+      "path": "wiki/concepts/ai-knowledge-hiding.md",
+      "type": "concept",
+      "title": "ai-knowledge-hiding",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "instance-of",
+          "via": "a named human-factor failure mode of adoption — individually-discovered AI workflows stay private, so collective productivity gains never materialize even when individual adoption is high",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--instance-of<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": "2026-11-07",
+      "last_confirmed": "2026-11-07",
+      "days_since_access": 5,
+      "effective_confidence": 0.804,
+      "rrf_score": 0.005051,
+      "fused_score": 0.284,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "concept neighbour of enterprise-ai-adoption reached by a generic edge; covers a different topic than experimentation",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/ai-sovereignty",
+      "path": "wiki/concepts/ai-sovereignty.md",
+      "type": "concept",
+      "title": "ai-sovereignty",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "the own-versus-rent decision is made per capability and shapes what an organisation can adopt, at what cost, and with what dependency",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": "2026-11-07",
+      "last_confirmed": "2026-11-07",
+      "days_since_access": 5,
+      "effective_confidence": 0.804,
+      "rrf_score": 0.005,
+      "fused_score": 0.281,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "concept neighbour of enterprise-ai-adoption reached by a generic edge; covers a different topic than experimentation",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/dynamic-capabilities",
+      "path": "wiki/concepts/dynamic-capabilities.md",
+      "type": "concept",
+      "title": "dynamic-capabilities",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "AI adoption requires dynamic-capability microfoundations to scale",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-11-07",
+      "last_confirmed": "2026-11-07",
+      "days_since_access": 5,
+      "effective_confidence": 0.899,
+      "rrf_score": 0.004808,
+      "fused_score": 0.281,
+      "verdict": "use",
+      "anchor": "W1",
+      "reason": "W&W microfoundation table (rapid prototyping under digital seizing); Miller's double-path frontier unit; Elk's concentrate-then-pivot as strategic agility",
+      "reason_class": null,
+      "promoted": null,
+      "contribution": "model: rapid prototyping as a seizing microfoundation; double-path portfolio; concentration + pivot capacity"
+    },
+    {
+      "slug": "concepts/ai-employment-effects",
+      "path": "wiki/concepts/ai-employment-effects.md",
+      "type": "concept",
+      "title": "ai-employment-effects",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "caused",
+          "via": null,
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption -->caused--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-11-07",
+      "last_confirmed": "2026-11-07",
+      "days_since_access": 5,
+      "effective_confidence": 0.899,
+      "rrf_score": 0.004762,
+      "fused_score": 0.279,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "concept neighbour of enterprise-ai-adoption reached by a generic edge; covers a different topic than experimentation",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/agentic-web",
+      "path": "wiki/concepts/agentic-web.md",
+      "type": "concept",
+      "title": "Agentic web",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "a case of adoption forced from outside: a firm's customers adopt AI assistants first, and the firm's discovery, marketing and revenue model have to follow whether or not it planned to adopt anything",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": "2026-11-07",
+      "last_confirmed": "2026-11-07",
+      "days_since_access": 5,
+      "effective_confidence": 0.709,
+      "rrf_score": 0.005155,
+      "fused_score": 0.278,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "concept neighbour of enterprise-ai-adoption reached by a generic edge; covers a different topic than experimentation",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/jagged-frontier",
+      "path": "wiki/concepts/jagged-frontier.md",
+      "type": "concept",
+      "title": "jagged-frontier",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "uses",
+          "via": "task-by-task capability awareness drives deployment choice",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption -->uses--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-11-06",
+      "last_confirmed": "2026-11-04",
+      "days_since_access": 6,
+      "effective_confidence": 0.889,
+      "rrf_score": 0.004717,
+      "fused_score": 0.275,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "task-level AI capability boundary; not about organisational experiments",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/micro-productivity-trap",
+      "path": "wiki/concepts/micro-productivity-trap.md",
+      "type": "concept",
+      "title": "micro-productivity-trap",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "caused",
+          "via": "shallow adoption produces task-level gains without firm-level value",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption -->caused--> this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-11-07",
+      "last_confirmed": "2026-11-07",
+      "days_since_access": 5,
+      "effective_confidence": 0.899,
+      "rrf_score": 0.004673,
+      "fused_score": 0.274,
+      "verdict": "use",
+      "anchor": "W3",
+      "reason": "carries the Bain/OpenAI four-step framework, the Lowe's/FabricationCo cases, Allen's pilot purgatory, the ~30% pilot-to-production ratio, Hines-Pierce's middle team and the Krakowski RCT",
+      "reason_class": null,
+      "promoted": null,
+      "contribution": "four-step framework; worked cases; pilot purgatory; middle governance team; Krakowski field experiment"
+    },
+    {
+      "slug": "concepts/generative-ai",
+      "path": "wiki/concepts/generative-ai.md",
+      "type": "concept",
+      "title": "generative-ai",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "caused",
+          "via": "the 2024 jump from 55% → 78% adoption was driven by GenAI specifically",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--caused<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-11-07",
+      "last_confirmed": "2026-11-07",
+      "days_since_access": 5,
+      "effective_confidence": 0.899,
+      "rrf_score": 0.004545,
+      "fused_score": 0.266,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "concept neighbour of enterprise-ai-adoption reached by a generic edge; covers a different topic than experimentation",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas",
+      "path": "wiki/sources/2026-03-25-russell-bradley-mgi-race-takes-off-next-big-arenas.md",
+      "type": "source",
+      "title": "The race takes off in the next big arenas of competition (MGI 2026 update)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "MGI quantifies the firm-side scale of the AI deployment race: AI foundation cluster (semiconductors + cloud + AI software) added $11T market cap + $500B revenue since 2022; nine omniscalers spent $800B on R&D + capex in 2025 alone",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.00463,
+      "fused_score": 0.265,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/answer-engine-optimization",
+      "path": "wiki/concepts/answer-engine-optimization.md",
+      "type": "concept",
+      "title": "Answer engine optimization",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "a case of adoption forced from outside: a firm's buyers adopt answer engines first, and its marketing has to build new measurement and content routines in response",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": "2026-11-04",
+      "last_confirmed": "2026-11-04",
+      "days_since_access": 8,
+      "effective_confidence": 0.686,
+      "rrf_score": 0.00495,
+      "fused_score": 0.264,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "concept neighbour of enterprise-ai-adoption reached by a generic edge; covers a different topic than experimentation",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/responsible-ai",
+      "path": "wiki/concepts/responsible-ai.md",
+      "type": "concept",
+      "title": "responsible-ai",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "part-of",
+          "via": "RAI is the governance overlay on adoption decisions",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--part-of<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.95,
+      "accessed_at": "2026-11-07",
+      "last_confirmed": "2026-11-07",
+      "days_since_access": 5,
+      "effective_confidence": 0.899,
+      "rrf_score": 0.004464,
+      "fused_score": 0.261,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "concept neighbour of enterprise-ai-adoption reached by a generic edge; covers a different topic than experimentation",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/open-source-ai",
+      "path": "wiki/concepts/open-source-ai.md",
+      "type": "concept",
+      "title": "open-source-ai",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "the own-vs-rent flow (frontier APIs for experimentation, owned/open models for production at scale) is a driver of how enterprises adopt AI",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.9,
+      "accessed_at": "2026-11-06",
+      "last_confirmed": "2026-10-12",
+      "days_since_access": 6,
+      "effective_confidence": 0.842,
+      "rrf_score": 0.004505,
+      "fused_score": 0.257,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "concept neighbour of enterprise-ai-adoption reached by a generic edge; covers a different topic than experimentation",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/document-intelligence",
+      "path": "wiki/concepts/document-intelligence.md",
+      "type": "concept",
+      "title": "document-intelligence",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "part-of",
+          "via": "document understanding is a load-bearing capability for enterprise AI on unstructured back/front-office data",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--part-of<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.72,
+      "accessed_at": "2026-11-04",
+      "last_confirmed": "2026-06-15",
+      "days_since_access": 8,
+      "effective_confidence": 0.659,
+      "rrf_score": 0.004854,
+      "fused_score": 0.256,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "concept neighbour of enterprise-ai-adoption reached by a generic edge; covers a different topic than experimentation",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/founder-led-sales",
+      "path": "wiki/concepts/founder-led-sales.md",
+      "type": "concept",
+      "title": "founder-led-sales",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "founder-led-sales findings corroborate the demand-side adoption gap from the seller's chair — AI interest that doesn't convert (attention mistaken for traction; 'everyone wants AI but has no budget yet')",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": "2026-11-04",
+      "last_confirmed": "2026-09-28",
+      "days_since_access": 8,
+      "effective_confidence": 0.778,
+      "rrf_score": 0.004587,
+      "fused_score": 0.255,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "concept neighbour of enterprise-ai-adoption reached by a generic edge; covers a different topic than experimentation",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-25-masad-replit-ceo-only-two-jobs-left",
+      "path": "wiki/sources/2026-04-25-masad-replit-ceo-only-two-jobs-left.md",
+      "type": "source",
+      "title": "Replit's CEO On The Only Two Jobs Left In The Company Of The Future — Amjad Masad at YC Founder Firesides",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "vibe-coding-resident team as an internal-structure pattern: a generalist team with vague mission ('go around the company and make it better') deputising agents to solve concrete bottlenecks (support queue prioritisation, HR onboarding tooling)",
+          "hops": 1
+        },
+        {
+          "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+          "edge_type": "contradicts",
+          "via": "**Productive tension on the *AI-as-employee-substitute* framing.** Masad (Replit CEO, April 2026): the *only-two-jobs-left* framing — AI agents will substitute for most current jobs, leaving only managers-of-agents and infrastructure-of-agents roles. Kropp et al. (May 2026): empirically test the *AI-as-employee* framing in a randomized experiment and find it **causes the failure modes that would prevent Masad's prediction from being a productive end-state** — accountability shifts to the (non-accountable) AI; escalation balloons; error-catching drops; professional-identity crisis. The disagreement turns on what the *agentic future* operating model looks like: Masad's framing implicitly accepts the AI-employee construct as the destination, while Kropp et al. argue the construct itself is the failure mode and prescribe AI-as-software-with-human-accountability instead. Both sources may be right at different time horizons — Masad's prediction at 5–10 year horizon; Kropp et al.'s findings at the present operational-redesign horizon. The wiki holds both, with this edge naming the productive tension at the operating-model layer.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)",
+        "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees -->contradicts--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.00431,
+      "fused_score": 0.247,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-06-mit-ocw-future-of-mit-open-education",
+      "path": "wiki/sources/2026-05-06-mit-ocw-future-of-mit-open-education.md",
+      "type": "source",
+      "title": "The Future of MIT Open Education",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "MIT as institutional adopter — financial-sustainability constraint (subsidy dropping to $0 in 4 years) forces a hybrid free-and-paid model; phased platform consolidation (MIT Learn unifying OCW/MITx/Professional Ed by July 2026); AI translation/personalization as the new abstraction layer",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004274,
+      "fused_score": 0.245,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/technology-adoption-theories",
+      "path": "wiki/concepts/technology-adoption-theories.md",
+      "type": "concept",
+      "title": "Technology adoption theories",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "supplies the explanatory models the adoption concept had lacked. The wiki described enterprise AI adoption through practitioner maturity frameworks and the dynamic-capabilities spine; these are the information-systems theories that predict whether a firm decides to adopt and whether its people use what was adopted",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.85,
+      "accessed_at": "2026-11-07",
+      "last_confirmed": "2026-11-07",
+      "days_since_access": 5,
+      "effective_confidence": 0.804,
+      "rrf_score": 0.004348,
+      "fused_score": 0.244,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "diffusion theory; IBM's diffusion-by-example is taken from W7 directly",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-12-mgi-virtual-event-race-takes-off-next-big-arenas",
+      "path": "wiki/sources/2026-05-12-mgi-virtual-event-race-takes-off-next-big-arenas.md",
+      "type": "source",
+      "title": "The race takes off in the next big arenas of competition (MGI virtual event)",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "Q&A surfaces the 'omniscalers generate more cash each year than US banks lend in fresh loans to US businesses' framing — a more visceral firm-vs-banking-system scale anchor than the PDF's raw numbers",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004237,
+      "fused_score": 0.243,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells",
+      "path": "wiki/sources/2026-05-14-price-dfi-retail-asia-reinventing-how-it-sells.md",
+      "type": "source",
+      "title": "How One of Asia's Biggest Retailers Is Reinventing the Way It Sells",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "first wiki source naming a *named CEO-level public articulation of agentic-AI as a strategic threat to the customer relationship*, plus a three-axis framework for AI investment (personalization / cost management / running a better business) used at scale in a multi-brand multi-country retail incumbent",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004167,
+      "fused_score": 0.239,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "syntheses/organizational-frameworks-for-ai-adoption",
+      "path": "wiki/syntheses/organizational-frameworks-for-ai-adoption.md",
+      "type": "synthesis",
+      "title": "organizational-frameworks-for-ai-adoption",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "instance-of",
+          "via": "synthesizes 6 frameworks describing different decision layers within enterprise AI adoption",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--instance-of<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.9,
+      "accessed_at": "2026-11-08",
+      "last_confirmed": "2026-11-07",
+      "days_since_access": 4,
+      "effective_confidence": 0.861,
+      "rrf_score": 0.004098,
+      "fused_score": 0.236,
+      "verdict": "use",
+      "anchor": "W2",
+      "reason": "the only synthesis that states the pilots-as-stage (MIT CISR) vs pilots-as-trap (Bain) split and maps Augmented Learner test-and-learn traits onto Stage 3",
+      "reason_class": null,
+      "promoted": null,
+      "contribution": "model comparison: pilots as stage vs trap; organisational learning as upstream variable"
+    },
+    {
+      "slug": "sources/2026-07-01-bello-mckinsey-podcast-serial-builder-advantage",
+      "path": "wiki/sources/2026-07-01-bello-mckinsey-podcast-serial-builder-advantage.md",
+      "type": "source",
+      "title": "The Serial Builder Advantage: Why Repeat Innovators Win",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great",
+          "edge_type": "supports",
+          "via": "Bello's practitioner claim — a fact-based, blame-free culture ('if the facts tell us our product stinks, so be it') is what lets venture teams pivot fast without shame — is a lived instance of Carroll's academic thesis that strong culture is a social-control system aligned to strategy; both map to the strategic-renewal/organizational-culture cell.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004065,
+      "fused_score": 0.233,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "corporate venture building outside the existing organisation, not experimentation inside it",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-07-07-sinofsky-amble-a16z-software-in-the-age-of-agents",
+      "path": "wiki/sources/2026-07-07-sinofsky-amble-a16z-software-in-the-age-of-agents.md",
+      "type": "source",
+      "title": "Software in the Age of Agents | The a16z Show",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great",
+          "edge_type": "supports",
+          "via": "Sinofsky's 'productivity creates new scenarios, not fewer jobs' argument (radiology shortage, expense-reporting layers-of-analysis, Amazon-returns examples) is an economics-of-innovation companion to Carroll's organizational-culture material — both argue against a fixed-pie, static-headcount view of how organizations absorb capability change.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-06-25-carroll-stanford-gsb-making-organizational-culture-great <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004032,
+      "fused_score": 0.231,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces",
+      "path": "wiki/sources/2026-04-03-bcg-emerson-kropp-ai-will-reshape-more-jobs-than-it-replaces.md",
+      "type": "source",
+      "title": "AI Will Reshape More Jobs Than It Replaces",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+          "edge_type": "supports",
+          "via": "companion BCG labor analysis with overlapping authors (Kropp, Bedard, Krayer, Hsu) — the workforce-segmentation half of the same BCG view that 'don't treat agents like employees, redesign the work'",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.004,
+      "fused_score": 0.229,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "syntheses/ai-worker-maturity-levels",
+      "path": "wiki/syntheses/ai-worker-maturity-levels.md",
+      "type": "synthesis",
+      "title": "ai-worker-maturity-levels",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "the worker-level counterpart to the organizational maturity stack — org frameworks presume a workforce fluency distribution this model makes assessable",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": "2026-11-08",
+      "last_confirmed": "2026-08-31",
+      "days_since_access": 4,
+      "effective_confidence": 0.765,
+      "rrf_score": 0.004132,
+      "fused_score": 0.228,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "individual worker maturity levels, not organisational experiments",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-02-dutt-chatterji-ai-experimentation-to-transformation",
+      "path": "wiki/sources/2026-05-02-dutt-chatterji-ai-experimentation-to-transformation.md",
+      "type": "source",
+      "title": "How to Move from AI Experimentation to AI Transformation",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+          "edge_type": "supports",
+          "via": "**Same micro-productivity-trap diagnosis, different lever named.** Dutt et al. (Bain/OpenAI, May 2026): *micro-productivity-trap* mechanism — task-level AI gains failing to translate to firm-level value; named sub-modes *offering lock-in* and *process lock-in*. Kropp et al. (BCG Henderson Institute, May 2026): same firm-level-value-gap, with a third named sub-mode — **anthropomorphizing lock-in**: organisations that frame AI as employees end up with diffused accountability, more escalation, lower review quality, and identity disruption *without* meaningfully increasing adoption intent. The named mechanism is structurally a third sub-mode in the Dutt et al. taxonomy at the same advisor-altitude — BCG + Bain converging at near-identical timing.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003968,
+      "fused_score": 0.228,
+      "verdict": "ignore",
+      "reason_class": "redundant",
+      "reason": "title fits exactly, but the four-step framework and the Lowe's/FabricationCo cases are reproduced in full on W3, which also carries ten corroborating sources",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/systems-thinking",
+      "path": "wiki/concepts/systems-thinking.md",
+      "type": "concept",
+      "title": "systems-thinking",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "workflow redesign in the micro-productivity-trap escape is systems-thinking applied to AI",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.9,
+      "accessed_at": "2026-10-08",
+      "last_confirmed": "2026-10-08",
+      "days_since_access": 35,
+      "effective_confidence": 0.61,
+      "rrf_score": 0.004386,
+      "fused_score": 0.226,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "concept neighbour of enterprise-ai-adoption reached by a generic edge; covers a different topic than experimentation",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-13-jha-emergent-democratizing-app-building-with-claude",
+      "path": "wiki/sources/2026-05-13-jha-emergent-democratizing-app-building-with-claude.md",
+      "type": "source",
+      "title": "How Emergent is making app building more accessible with Claude",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "Counter-case to the slow-enterprise-adoption framing: Emergent reached *$100M ARR in 8 months* by serving non-enterprise (SMB + entrepreneur + domain-expert) users. CEO names the deliberate enterprise → consumer/SMB pivot after observing that *'adoption in enterprise is going to be slow'* — the wiki's clearest 2026 named instance of *adoption-velocity asymmetry favouring the long tail*.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.7,
+      "accessed_at": "2026-05-20",
+      "last_confirmed": "2026-05-20",
+      "days_since_access": null,
+      "effective_confidence": 0.7,
+      "rrf_score": 0.004202,
+      "fused_score": 0.226,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-07-08-jensen-huang-why-companies-need-open-agent-systems",
+      "path": "wiki/sources/2026-07-08-jensen-huang-why-companies-need-open-agent-systems.md",
+      "type": "source",
+      "title": "Jensen Huang: Why companies need open agent systems",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+          "edge_type": "supports",
+          "via": "Shared topic — how much to anthropomorphize agentic systems. Huang (NVIDIA CEO) independently arrives at this article's core position in principle ('it's electrons, not atoms... a tool, like my vacuum cleaner... we tend to imbue too much human properties to it'), while in the same interview describing agent access-provisioning in HR-onboarding terms ('an HR system, if you will, for AI... a skills file') — a live instance of the framing gap this article's RCT measures.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003876,
+      "fused_score": 0.222,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-08-running-an-ai-native-engineering-org",
+      "path": "wiki/sources/2026-05-08-running-an-ai-native-engineering-org.md",
+      "type": "source",
+      "title": "Running an AI-native engineering org",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+          "edge_type": "supports",
+          "via": "**Same redesign-the-process-not-the-org-chart prescription at HR/finance-manager altitude vs Anthropic-engineering-org altitude.** Fung (Anthropic): *'when agentic coding goes from individual tool to org-wide default, the tool isn't the hard part... your processes are.'* Kropp et al.: *'organizations cannot simply layer [AI] onto workflows built for human pace... CEOs need to redesign the work of both AI and humans.'* Five-point redesign list (workflows + role expectations; explicit personal accountability; capability-building plan; don't constrain agents to 1-for-1 roles; deliberate choices about human-work evolution) is the BCG/advisory-altitude version of Fung's *five norms rebuilt* list at Anthropic. Convergent at *processes / workflows are load-bearing*; complementary at the org-altitude — Fung at engineering-org level, Kropp et al. at HR/finance-management level.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees -->supports--> this (1 hop)"
+      ],
+      "stored_confidence": 0.8,
+      "accessed_at": null,
+      "last_confirmed": "2026-05-09",
+      "days_since_access": null,
+      "effective_confidence": 0.8,
+      "rrf_score": 0.003937,
+      "fused_score": 0.221,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner",
+      "path": "wiki/sources/2026-06-11-mit-smr-agentic-ai-what-leaders-wish-they-knew-sooner.md",
+      "type": "source",
+      "title": "Agentic AI: What Leaders Wish They Knew Sooner",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+          "edge_type": "contradicts",
+          "via": "Swift & Chan argue *manage agents like employees* (check output, performance-monitor, lifecycle/end-of-life) vs Kropp/BCG's anti-anthropomorphising thesis that the employee metaphor misassigns accountability — partial: both agree humans stay accountable",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees <--contradicts<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003846,
+      "fused_score": 0.221,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business",
+      "path": "wiki/sources/2026-06-17-priest-atlantic-pwc-ai-agents-changing-business.md",
+      "type": "source",
+      "title": "How AI Agents Are Changing Business - PwC Chief AI Officer Dan Priest",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+          "edge_type": "supports",
+          "via": "Priest's defense of his agents ('that's the problem with the task... it's not the agent's fault') is a practitioner-level echo of Kropp's academic thesis that anthropomorphizing AI agents as employees leads to misplaced blame and poor workflow (re)design.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003817,
+      "fused_score": 0.219,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-08-11-ellmer-dhar-bcg-so-what-is-your-ai-rollout-built-to-fail",
+      "path": "wiki/sources/2026-08-11-ellmer-dhar-bcg-so-what-is-your-ai-rollout-built-to-fail.md",
+      "type": "source",
+      "title": "Is Your AI Rollout Built to Fail?",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+          "edge_type": "supports",
+          "via": "both name identity as what makes AI change different. Kropp et al. measure 13% higher identity uncertainty under the AI-as-employee framing; Dhar describes the question employees are asking — 'if I don't write software code, who am I?'. Same firm, different arms (Henderson Institute vs Behavioral Science Lab)",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003788,
+      "fused_score": 0.217,
+      "verdict": "ignore",
+      "reason_class": "redundant",
+      "reason": "behavioural change-failure points summarised on W4 (§Concentrate, then change the people)",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-09-30-singh-botha-bloomberg-flow-engineering-ai-hardware-design",
+      "path": "wiki/sources/2026-09-30-singh-botha-bloomberg-flow-engineering-ai-hardware-design.md",
+      "type": "source",
+      "title": "AI Moves From Writing Code to Designing Hardware",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+          "edge_type": "contradicts",
+          "via": "Both address whether AI agents should sit in the organisation as employees. Kropp et al. randomise that framing for 1,261 managers and find lower accountability and fewer errors caught, with no gain in adoption; Singh describes Flow's own organisation as one where 'AIs live as employees', counting humans and agents in one headcount.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees <--contradicts<-- this (1 hop)"
+      ],
+      "stored_confidence": null,
+      "accessed_at": null,
+      "last_confirmed": null,
+      "days_since_access": null,
+      "effective_confidence": null,
+      "rrf_score": 0.003759,
+      "fused_score": 0.216,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "concepts/strategic-foresight",
+      "path": "wiki/concepts/strategic-foresight.md",
+      "type": "concept",
+      "title": "strategic-foresight",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "concepts/enterprise-ai-adoption",
+          "edge_type": "supports",
+          "via": "informs deployment decisions under deep uncertainty",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: concepts/enterprise-ai-adoption <--supports<-- this (1 hop)"
+      ],
+      "stored_confidence": 0.87,
+      "accessed_at": "2026-09-21",
+      "last_confirmed": "2026-09-21",
+      "days_since_access": 52,
+      "effective_confidence": 0.488,
+      "rrf_score": 0.004425,
+      "fused_score": 0.215,
+      "verdict": "ignore",
+      "reason_class": "off-facet",
+      "reason": "sensing/scenario planning, not experimentation (also decayed: eff 0.49)",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2026-05-19-garg-yc-internal-ai-agent-evolves-itself",
+      "path": "wiki/sources/2026-05-19-garg-yc-internal-ai-agent-evolves-itself.md",
+      "type": "source",
+      "title": "How to Build an Internal AI Agent That Evolves Itself",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [
+        {
+          "from_seed": "sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees",
+          "edge_type": "contradicts",
+          "via": "**Productive tension on the *one-agent-per-role* design pattern.** Garg (AnswerThis CEO, May 19): a 2-FTE startup running >$2M ARR via an *internal AI agent that processes >100 emails/day, closes support tickets, updates the CRM, and builds its own tools when needed*. Kropp et al. recommendation #4 explicitly: *'Don't constrain agents into 1-for-1 roles. The concept of “employee” assumes bounded roles, finite human capacity, and a hierarchy in which work is delegated to someone less experienced or knowledgeable. AI does not share these limits. A single agent can operate across many workflows; multiple agents can reshape one job.'* Garg's design is paradigmatically *one agent reshaping multiple traditional jobs* — which is *what Kropp recommend* — but Garg also describes the agent in *employee-style* language (*'a non-technical co-founder trains the agent by giving it feedback in Slack'* — feedback-loop language drawn from people management). The productive contradiction is at the *language layer*: same operational shape (one agent → many roles), opposite framings (Garg uses employee-style framing in his pitch; Kropp et al. recommend explicitly against it). Worth surfacing — both founder-altitude pragmatism (Garg) and advisory-altitude prescription (Kropp et al.) are operational, and the gap between them is *what the wiki cluster has been waving at* as the open question of agentic-AI organisational design.",
+          "hops": 1
+        }
+      ],
+      "retrieval_reasons": [
+        "graph: sources/2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees -->contradicts--> this (1 hop)"
+      ],
+      "stored_confidence": 0.75,
+      "accessed_at": "2026-05-21",
+      "last_confirmed": "2026-05-21",
+      "days_since_access": null,
+      "effective_confidence": 0.75,
+      "rrf_score": 0.003906,
+      "fused_score": 0.214,
+      "verdict": "ignore",
+      "reason_class": "below-threshold",
+      "reason": "graph-only long-tail neighbour (fused < 0.45) reached via a generic supports/published-by edge; no experimentation-design content for any facet",
+      "promoted": null
+    },
+    {
+      "slug": "sources/2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization",
+      "path": "wiki/sources/2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization.md",
+      "type": "source",
+      "title": "2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "stored_confidence": null,
+      "effective_confidence": null,
+      "fused_score": null,
+      "retrieval_reasons": [
+        "gap-expansion: index.md lookup on experiment/experimentation terms"
+      ],
+      "verdict": "use",
+      "anchor": "W5",
+      "reason": "defines the Frontier Firm by its investment in strategic experimentation; strategy → buy-in → compliance sequence; build adoption into the experiment",
+      "reason_class": null,
+      "promoted": "gap-expansion",
+      "contribution": "model + practices: strategic boundaries, experimentation team, scientific method, late compliance metrics"
+    },
+    {
+      "slug": "sources/2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about",
+      "path": "wiki/sources/2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about.md",
+      "type": "source",
+      "title": "2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "stored_confidence": null,
+      "effective_confidence": null,
+      "fused_score": null,
+      "retrieval_reasons": [
+        "gap-expansion: index.md lookup on experiment/experimentation terms"
+      ],
+      "verdict": "use",
+      "anchor": "W6",
+      "reason": "structured frontline experimentation → adaptation → scaling; four managerial problems; Skill–Will 2×2",
+      "reason_class": null,
+      "promoted": "gap-expansion",
+      "contribution": "model: structured frontline experimentation and its four managerial problems"
+    },
+    {
+      "slug": "sources/2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over",
+      "path": "wiki/sources/2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over.md",
+      "type": "source",
+      "title": "2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over",
+      "qmd_rank": null,
+      "qmd_score": null,
+      "graph": [],
+      "stored_confidence": null,
+      "effective_confidence": null,
+      "fused_score": null,
+      "retrieval_reasons": [
+        "gap-expansion: index.md lookup on experiment/experimentation terms"
+      ],
+      "verdict": "use",
+      "anchor": "W7",
+      "reason": "the corpus's explicit case against dispersed experimentation, with budget arithmetic and IBM's volunteer-owner process portfolio",
+      "reason_class": null,
+      "promoted": "gap-expansion",
+      "contribution": "practice + case: concentrate on 3–5 bets; IBM process portfolio; Watson negative case; Elk on pivoting"
+    }
+  ],
+  "expansions": [
+    {
+      "trigger_facet": "all three facets: the qmd stream (Dutch phrasing with 'zoek in de wiki naar' noise) returned mostly generic transformation pages; the core experimentation sources were absent",
+      "method": "index.md",
+      "detail": "grep of wiki/index.md for experiment|test-and-learn|sandbox|ambidext plus a corpus count of 'experiment' on pages outside the ledger",
+      "added": [
+        "sources/2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization",
+        "sources/2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about",
+        "sources/2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over"
+      ],
+      "considered_not_promoted": [
+        "sources/2026-01-21-deloitte-state-of-ai-in-the-enterprise-2026 (its scale-up figure is cited via W4)",
+        "sources/2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart (cited via W4)",
+        "sources/2026-06-12-dellacqua-cybernetic-teammate-field-experiment-genai-teamwork (a research experiment on teams, not experimentation as a transformation method)",
+        "sources/2026-10-20-beauchene-bcg-so-what-ai-strategy-more-than-rollout (strategy-vs-rollout; adjacent, not about experiments)"
+      ]
+    }
+  ],
+  "answer_map": [
+    {
+      "anchor": "W1",
+      "claim": "Rapid prototyping (MVPs, lean startup, digital innovation lab) is a W&W digital-seizing microfoundation",
+      "pages": [
+        "concepts/dynamic-capabilities"
+      ],
+      "span": "## Key claims › Microfoundations for digital transformation (table)"
+    },
+    {
+      "anchor": "W1",
+      "claim": "Miller's double path: broad experimentation plus a 60–120-person frontier unit that hands winners back",
+      "pages": [
+        "concepts/dynamic-capabilities"
+      ],
+      "span": "## Five video sources on the W&W cells, August 2026"
+    },
+    {
+      "anchor": "W1",
+      "claim": "Concentration and pivot capacity read as one strategic-agility capability",
+      "pages": [
+        "concepts/dynamic-capabilities"
+      ],
+      "span": "## Concentration needs a capacity to pivot (added 2026-09-21)"
+    },
+    {
+      "anchor": "W2",
+      "claim": "MIT CISR pilots-as-stage vs Bain pilots-as-trap; reconcile by passing through Stage 2 quickly",
+      "pages": [
+        "syntheses/organizational-frameworks-for-ai-adoption"
+      ],
+      "span": "### Where they genuinely disagree; ## Lessons"
+    },
+    {
+      "anchor": "W2",
+      "claim": "Augmented Learner traits (test-and-learn, failure tolerance, postmortems) map onto MIT CISR Stage 3",
+      "pages": [
+        "syntheses/organizational-frameworks-for-ai-adoption"
+      ],
+      "span": "### Where they genuinely disagree (last bullet)"
+    },
+    {
+      "anchor": "W3",
+      "claim": "Bain/OpenAI four-step framework incl. prototyping culture in all business areas and outcomes + evals",
+      "pages": [
+        "concepts/micro-productivity-trap"
+      ],
+      "span": "### The four-step framework for escape"
+    },
+    {
+      "anchor": "W3",
+      "claim": "Lowe's (Mylow >2× conversion) and FabricationCo (14 use cases, ~$30M, 15× quotes, +10pp win rate)",
+      "pages": [
+        "concepts/micro-productivity-trap"
+      ],
+      "span": "### Worked cases"
+    },
+    {
+      "anchor": "W3",
+      "claim": "Pilot purgatory: pilots never connected to business decision flows",
+      "pages": [
+        "concepts/micro-productivity-trap"
+      ],
+      "span": "### Eighth-source corroboration (Allen / AWS)"
+    },
+    {
+      "anchor": "W3",
+      "claim": "~3 in 10 pilots reach production, advisor's own unaudited index",
+      "pages": [
+        "concepts/micro-productivity-trap"
+      ],
+      "span": "## Where the chain breaks (BBC AI Decoded)"
+    },
+    {
+      "anchor": "W3",
+      "claim": "Hines-Pierce's middle governance team that propagates solved workflows",
+      "pages": [
+        "concepts/micro-productivity-trap"
+      ],
+      "span": "## 70% people, 20% process, 10% technology"
+    },
+    {
+      "anchor": "W3",
+      "claim": "Krakowski field experiment: untailored AI gradually lowered market share (N=72 pharma sales experts)",
+      "pages": [
+        "concepts/micro-productivity-trap"
+      ],
+      "span": "### Tenth-source corroboration (Krakowski et al.)"
+    },
+    {
+      "anchor": "W4",
+      "claim": "Deloitte 25% moved ≥40% of experiments to production; IBM 16% scaled enterprise-wide",
+      "pages": [
+        "concepts/enterprise-ai-adoption"
+      ],
+      "span": "## Maturity re-measured, and new value instruments, 2025–2026"
+    },
+    {
+      "anchor": "W4",
+      "claim": "Kropp (BCG X): three big rocks instead of 100 initiatives",
+      "pages": [
+        "concepts/enterprise-ai-adoption"
+      ],
+      "span": "## Access without use: two October-2026 accounts"
+    },
+    {
+      "anchor": "W4",
+      "claim": "Instacart pioneers explain ~23% of usage growth; law-firm framing decides whether staff keep experimenting",
+      "pages": [
+        "concepts/enterprise-ai-adoption"
+      ],
+      "span": "## Access without use: two October-2026 accounts"
+    },
+    {
+      "anchor": "W4",
+      "claim": "Mollick's leadership, lab and crowd",
+      "pages": [
+        "concepts/enterprise-ai-adoption"
+      ],
+      "span": "## Use outruns governance, and what to measure instead"
+    },
+    {
+      "anchor": "W4",
+      "claim": "Tension between structured experimentation and bottom-up adoption, possibly a population difference",
+      "pages": [
+        "concepts/enterprise-ai-adoption"
+      ],
+      "span": "## The Frontier Firm initiative's early insights"
+    },
+    {
+      "anchor": "W5",
+      "claim": "Strategy → buy-in → compliance; experiments within 1–3 strategic axes; 'too much experimentation'",
+      "pages": [
+        "sources/2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization"
+      ],
+      "span": "### Three stages, with strategy first"
+    },
+    {
+      "anchor": "W5",
+      "claim": "Build adoption into the experiment ('foreign object'); team composition; scientific method; compliance metrics backfire",
+      "pages": [
+        "sources/2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization"
+      ],
+      "span": "### Who runs the experiments, and how they reach scale; ### Reskilling"
+    },
+    {
+      "anchor": "W6",
+      "claim": "Structured frontline experimentation → adaptation → scaling; four managerial problems; Skill–Will 2×2; no self-discovery",
+      "pages": [
+        "sources/2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about"
+      ],
+      "span": "## Key claims: the early insights"
+    },
+    {
+      "anchor": "W6",
+      "claim": "Early insights are pre-publication bullets without data",
+      "pages": [
+        "sources/2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about"
+      ],
+      "span": "## What was actually ingested; ## Scope and reliability"
+    },
+    {
+      "anchor": "W7",
+      "claim": "$200M over 100 experiments = 3–5 people each; pick three to five things",
+      "pages": [
+        "sources/2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over"
+      ],
+      "span": "## The shift from experimentation to scale"
+    },
+    {
+      "anchor": "W7",
+      "claim": "IBM's ~200-process portfolio, volunteer owners, diffusion by example, ~60 done; tension with 'three to five'",
+      "pages": [
+        "sources/2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over"
+      ],
+      "span": "## How IBM chose where to scale"
+    },
+    {
+      "anchor": "W7",
+      "claim": "Watson as negative case (monoliths, health)",
+      "pages": [
+        "sources/2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over"
+      ],
+      "span": "## What IBM got wrong with Watson"
+    },
+    {
+      "anchor": "W7",
+      "claim": "Elk: admit a mistake at 6 months rather than a mediocre result at 3 years; self-reported figures",
+      "pages": [
+        "sources/2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over"
+      ],
+      "span": "## Three pieces of advice, and Elk on pivoting; ## Source quality"
+    },
+    {
+      "anchor": "W8",
+      "claim": "DBS innovation pyramid, 20% scorecard, QPR + slush fund, 48-hour builds, every MD built an agent, retrospective business case",
+      "pages": [
+        "sources/2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator"
+      ],
+      "span": "## TL;DR items 4–6"
+    },
+    {
+      "anchor": "W9",
+      "claim": "Copilot sales rollout failed as product launch; Camp Air; role huddles; top down, bottom up; customers moving to three end-to-end processes",
+      "pages": [
+        "sources/2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart"
+      ],
+      "span": "### A business transformation, not a product launch; ### Teams, not individuals"
+    },
+    {
+      "anchor": "W9",
+      "claim": "Adoption → behaviour → outcome measurement chain; leaders as continuous experimentation officers; no figures, own channel",
+      "pages": [
+        "sources/2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart"
+      ],
+      "span": "### Capability Add; ### The Frontier Firm, roles and leaders; ## Scope and reliability"
+    }
+  ],
+  "answer": "**Kort antwoord.** De wiki heeft geen aparte conceptpagina over experimenteren. Het onderwerp komt wel terug op negen pagina's, en die vertellen een consistent verhaal. Organisaties moeten experimenteren om te ontdekken waar AI waarde oplevert [W6][W5]. Toch is ongericht experimenteren de bekendste reden dat transformaties vastlopen: veel kleine pilots, waarvan weinig de productie haalt [W7][W3][W4]. De bruikbare modellen en praktijken gaan daarom vooral over vier dingen: experimenten begrenzen, de experimenteerders bewust kiezen, opschaling vanaf het begin inbouwen en meten op uitkomst [W5][W6][W3].\n\n### 1. Modellen\n\n| Model | Wat het zegt over experimenteren | Anker |\n|---|---|---|\n| Warner & Wäger, dynamic capabilities | *Rapid prototyping* (MVP's, lean startup, digitaal innovatielab) is een van de drie microfundamenten van *digital seizing*, naast het balanceren van een digitaal portfolio en strategische wendbaarheid. | [W1] |\n| Frontier Firm-volgorde (Sadun, HBS) | Eerst strategie, die de grenzen voor experimenten bepaalt (één tot drie strategische assen). Dan draagvlak en verspreiding. Pas daarna compliance en metrics. | [W5] |\n| Frontier Firm AI Initiative (HBS met Microsoft) | Eerst gestructureerd experimenteren op de werkvloer, dan aanpassen, dan opschalen. Vier managementvragen: waarop experimenteer je, met wie, hoe leg je het geleerde vast, welke prikkels zijn nodig voor volledige adoptie. Daarbij de Skill–Will-matrix (Evangelists, Skeptics, Learners, Resisters). | [W6] |\n| Bain/OpenAI, vier stappen (Dutt et al.) | Beperk je tot 4–5 domeinen, herontwerp workflows over afdelingen heen, betrek de mensen die het werk nu doen (een prototypingcultuur in alle bedrijfsonderdelen, niet alleen IT) en meet uitkomsten tegen een baseline zonder AI, plus evals. | [W3] |\n| MIT CISR tegenover Bain | MIT CISR ziet pilots als een fase (fase 2, *Build pilots and capabilities*); test-and-learn is een kenmerk van fase 3. Bain ziet pilots als een val. De synthese verzoent ze door fase 2 te lezen als een fase die je snel doorloopt. | [W2] |\n| Augmented Learners (Ransbotham/Kiron) | Het leervermogen van de organisatie (test-and-learn, fouttolerantie, postmortems, geleerde lessen vastleggen) bepaalt of de stap naar fase 3 lukt. | [W2] |\n| Portfoliovormen | DBS' innovatiepiramide met vier lagen [W8]. Millers *double path*: brede experimenten voor iedereen plus een frontier unit van 60–120 mensen met een hoger tokenbudget, die winnaars teruggeeft aan de organisatie [W1]. Mollicks *leadership, lab and crowd* [W4]. | [W8][W1][W4] |\n\n### 2. Best practices\n\n1. **Begrens en concentreer.** Krishna (IBM): $200M verdeeld over 100 experimenten betekent 3–5 mensen per experiment en geen plan om op te schalen; *\"pick three, four, five things which you can scale like crazy\"* [W7]. Sadun: experimenteer binnen één tot drie strategische assen, want *\"there can be also too much experimentation\"* [W5]. Microsoft hoort klanten zeggen dat ze van *\"lots and lots of pilots\"* overstappen op drie end-to-end-processen [W9]. Kropp (BCG X) noemt drie *big rocks* in plaats van 100 initiatieven [W4].\n2. **Concentratie vraagt het vermogen om bij te sturen.** Sarah Elk (Bain): een fout na zes maanden toegeven is beter dan na drie jaar een middelmatig resultaat [W7]. De wiki leest dat als strategische wendbaarheid: concentreren en kunnen pivoteren zijn samen één vermogen [W1].\n3. **Bouw opschaling in vanaf dag één.** Sadun: experimenten die los van de rest van de organisatie draaiden, werden bij opschaling afgestoten *\"as if it was a foreign object\"*; redeneer terug vanaf massa-adoptie [W5]. Allen (AWS): pilots die nooit aan echte beslisstromen zijn gekoppeld, belanden in *pilot purgatory* [W3]. HBS: kies de scope *\"wide enough for discovery, narrow enough for scaling\"* [W6]. Hines-Pierce richtte een apart middenteam op dat ervoor zorgt dat een opgeloste workflow overal wordt gebruikt [W3].\n4. **Laat het niet aan zelfontdekking over.** HBS: *\"Do not assume that employees would self-discover uses without specific guidance\"* [W6]. Microsofts eerste Copilot-uitrol aan de salesorganisatie, opgezet als productlancering, mislukte: mensen probeerden het en stopten ermee [W9]. De wiki noteert hier een spanning met bottom-up-verhalen; het verschil zit mogelijk in de populatie (een enthousiaste vrijwilliger tegenover de hele werkvloer) [W4].\n5. **Kies de experimenteerders bewust.** Kies mensen die onzekerheid en tijdelijke onproductiviteit verdragen [W6], en stel een team samen met technische kennis, kennis van de gebruiker en zicht op de te verwachten weerstand [W5]. Bij Instacart trokken *pioneers* met gezag en taakkennis het gebruik in hun team het sterkst omhoog [W4]. IBM liet proceseigenaren zich vrijwillig melden; de volgende golf kwam *\"because they saw what their friends had done\"* [W7].\n6. **Meet op uitkomst, en meet compliance niet te vroeg.** Compliance-metrics invoeren terwijl nieuwe processen nog worden uitgevonden *\"can potentially backfire\"* [W5]. Microsoft meet een keten: adoptie, dan gedragsverandering, dan bedrijfsresultaat (in sales: omzet per verkoper) [W9]. DBS laat grote gokken en Horizon-3-proposities starten zonder businesscase; die wordt een jaar na lancering geschreven [W8].\n7. **Werk als een wetenschapper.** *\"It's not just enough to do a pilot. You want to have hypothesis. You want to have measurement and you want to learn.\"* [W5]\n8. **Framing en de rol van leiders.** In één advocatenkantoor stopten paralegals met experimenteren toen de tool als productiviteitsinstrument werd gepresenteerd; in een andere divisie, waar de manager vroeg wat ze graag anders zouden doen, gingen ze het gebruiken voor juridisch onderzoek [W4]. Katy George (Microsoft): leiders moeten *\"continuous experimentation officers\"* worden [W9].\n\n### 3. Cases\n\n- **DBS Bank** (~39.000 medewerkers): een innovatiepiramide met grote gokken, Horizon 3, customer journeys en een *entrepreneurs*-laag met ~120–130 lopende initiatieven; 20% van elke scorecard gaat over transformatie; een kwartaalherziening plus een *slush fund*; 48-uursbuilds, en op de leiderschapsconferentie bouwde elke MD ter plekke een agent [W8].\n- **Microsoft**: de Copilot-uitrol voor sales mislukte als productlancering en werd herstart als bedrijfstransformatie, met Camp Air (een bootcamp voor hele teams) en wekelijkse huddles per rol. Het patroon uit 100 interne cases: *top down, bottom up* [W9].\n- **IBM**: ~200 processen van elk ~$100M; eerst vijf vrijwillige eigenaren, ~60 processen klaar in 2,5 jaar, 70 staan klaar, 30–40 zijn *\"recalcitrant\"*. Watson is de negatieve case: monolithische applicaties in een sector (zorg) waar IBM klant en toezichthouder niet kende [W7].\n- **Lowe's en FabricationCo** (Bain-cases): Mylow verdubbelde ruim de online conversie; FabricationCo vond 14 use cases, ~$30M extra winst, offertes ~15× sneller en +10 procentpunt win-rate binnen drie maanden [W3].\n- **Krakowski et al.**: een veldexperiment bij 72 Scandinavische farmaceutische verkopers. AI die niet op de gebruiker was afgestemd, liet het marktaandeel geleidelijk dalen ten opzichte van het oude systeem [W3]. Dit is het enige peer-reviewed experiment in deze set, en een voorbeeld van wat een gecontroleerd experiment kan blootleggen voordat er breed wordt uitgerold.\n- **Instacart en een advocatenkantoor** (Stanford HAI): de eerste zware gebruiker in een team verklaart ~23% van de gebruiksgroei; de framing door de manager bepaalt of mensen blijven experimenteren [W4].\n\n**Hoe vaak lukt de stap van experiment naar productie?** Deloitte: 25% van de organisaties bracht 40% of meer van hun experimenten naar productie. IBM's CEO-studie: 16% van de AI-initiatieven is enterprise-breed opgeschaald [W4]. Een adviseur meldt dat ongeveer 3 op de 10 pilots productie halen, op eigen, niet-geaudite data [W3].\n\n### Kanttekeningen\n\n- **Het bewijs is overwegend praktijk- en leveranciersmateriaal.** Microsoft vertelt over zichzelf op het eigen kanaal, IBM's cijfers zijn zelfgerapporteerd en Bain verkoopt de transformatie die het aanraadt [W9][W7]. De HBS-inzichten zijn voorpublicaties zonder data [W6].\n- **Twee echte spanningen.** Concentreren tegenover breed ontdekken: Krishna en Sadun willen begrenzen, HBS vraagt brede experimenten op de werkvloer [W7][W5][W6]. En gestructureerd tegenover bottom-up [W4]; Microsofts *top down, bottom up* combineert beide [W9]. IBM's eigen ~60 processen passen bovendien niet letterlijk bij \"drie tot vijf dingen\" [W7].\n- **Gat in de wiki.** Er is geen conceptpagina over experimenteren in organisaties (experimentontwerp, lean startup, A/B-testen). Het materiaal staat verspreid over [W1]–[W4]. Een conceptpagina zou het bundelen.\n\n**Bronnen (USE):**\n[W1] [[dynamic-capabilities|Dynamic capabilities]] ·\n[W2] [[organizational-frameworks-for-ai-adoption|Synthese: organisatieframeworks voor AI-adoptie]] ·\n[W3] [[micro-productivity-trap|Micro-productivity trap]] ·\n[W4] [[enterprise-ai-adoption|Enterprise AI adoption]] ·\n[W5] [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun, WorkLab 2025]] ·\n[W6] [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|HBS AI Institute, Frontier Firm AI Initiative]] ·\n[W7] [[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over|Krishna (IBM), Bain 2026]] ·\n[W8] [[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator|Dumra, DBS Bank, MIT SMR 2026]] ·\n[W9] [[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart|George, Microsoft WorkLab 2026]]",
+  "generated_at": "2026-11-12T16:43:32.043Z"
+}
