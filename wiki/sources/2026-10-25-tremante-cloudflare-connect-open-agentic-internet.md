@@ -161,7 +161,7 @@ Crawl-to-referral ratio, on Cloudflare Radar. The slide gives no period for the 
 
 ### 4 · Under the hood: x402
 
-![[assets/2026-10-25-tremante-cloudflare-connect-open-agentic-internet/18-20m36-under-the-hood-x402.webp|Under the hood: x402]]
+![[assets/2026-10-25-tremante-cloudflare-connect-open-agentic-internet/18-20m36-under-the-hood-x402.webp|Under the hood: x402 payment flow]]
 
 *Still at [20:36](https://www.youtube.com/watch?v=_LYr4dSmdsk&t=1236s) from Cloudflare Developers, "Building an open agentic Internet".*
 

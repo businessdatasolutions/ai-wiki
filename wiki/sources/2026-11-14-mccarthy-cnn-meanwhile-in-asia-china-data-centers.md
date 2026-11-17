@@ -7,8 +7,9 @@ publisher: "CNN (YouTube channel), Meanwhile in Asia; hosts Ivan Watson and Kuna
 url: "https://www.youtube.com/watch?v=zC-WyRzwcUY"
 date_published: 2026-11-14
 date_ingested: 2026-11-16
-length: "~21:55 minutes (transcript ~180 lines; human-written track, 5 chapters)"
+length: "~21:55 minutes (transcript ~180 lines + 6 stills; human-written track, 5 chapters)"
 raw: "../../raw/videos/as-us-votes-against-data-centers-china-is-all-in-on-building-them-meanwhile-in-asia.md"
+stills: "../../raw/videos/as-us-votes-against-data-centers-china-is-all-in-on-building-them-meanwhile-in-asia.stills.md"
 tags: [cnn, meanwhile-in-asia, simone-mccarthy, ivan-watson, kunal-sehgal, china, inner-mongolia, ulanqab, data-centers, ai-infrastructure, us-china-ai-race, data-center-backlash, us-midterms, chip-export-controls, energy, renewable-energy, curtailment, coal, east-data-west-compute, latency, water-use, cooling, envision, industrial-policy, state-capacity, public-opinion, podcast, news-politics]
 dynamic_capabilities:
   - contextual/external-triggers
@@ -56,7 +57,7 @@ What it adds to the wiki:
 5. **The US backlash, with a number**: about $31 million in midterm ads about data centres.
 6. **East Data, West Compute (2022) under revision**, because some AI workloads cannot tolerate the latency.
 
-A news podcast built on one reporter's press visit. Most figures are spoken without sources.
+A news podcast built on one reporter's press visit. Most figures are spoken without sources; six on-screen graphics, hand-picked as stills from contact sheets (see [Visual canon](#visual-canon)), name the sources for several of them: Stanford HAI, China's Ministry of Industry and Information Technology, Epoch AI and the UN University's water institute.
 
 ## Ulanqab (0:00–4:08)
 
@@ -72,13 +73,13 @@ McCarthy: people in China think more about *"how AI is going to be used practica
 
 ## Scale, money and the national plan (5:43–8:19, 12:03–12:58)
 
-The hosts put the US at *"more than 5,000"* data centres, about ten times China's *"approaching 500."* The [[2026-04-30-ai-index-report-2026|AI Index 2026]] counts 5,427 US data centres, more than ten times any other country. McCarthy says the count matters less than *"what's inside them,"* and attributes China's speed to permitting and to AI as a top national priority: embedding AI *"into manufacturing, into health care,"* moving *"way up the supply chain,"* and offsetting a declining population. *"There's 700 million AI users in China right now."* The hosts cite a **$560 billion plan announced in September** to scale up data infrastructure, without a source.
+The hosts put the US at *"more than 5,000"* data centres, about ten times China's *"approaching 500."* The [[2026-04-30-ai-index-report-2026|AI Index 2026]] counts 5,427 US data centres, more than ten times any other country. McCarthy says the count matters less than *"what's inside them,"* and attributes China's speed to permitting and to AI as a top national priority: embedding AI *"into manufacturing, into health care,"* moving *"way up the supply chain,"* and offsetting a declining population. *"There's 700 million AI users in China right now."* The hosts cite a **$560 billion plan announced in September** to scale up data infrastructure; they name no source aloud, but the on-screen graphic credits China's Ministry of Industry and Information Technology and calls it a national digital-infrastructure initiative *"over next five years"* (still 3).
 
 Placement is planned centrally: *"a national plan which has designated eight computing hubs and 10 so-called data center clusters"* (12:41). Her list of China's advantages: *"its ability to build out infrastructure, but also energy and centralized top-down planning."* See [[ai-sovereignty]].
 
 ## Chips: China's largest hurdle (8:19–12:03)
 
-*"You can build as many physical data centers and racks as you want, but you need that high-tech hardware to fill it."* McCarthy names US limits on Chinese firms' access to the highest-end chips and China's own restrictions on importing *"not quite as high-end"* ones. With Democrats now controlling both houses of Congress, she reports concern in China about a push for more restrictions. Her unsourced figure: *"four of the US top tech firms have more computing power or more access to chips that they can use for AI than all of China's tech companies combined"* (9:32).
+*"You can build as many physical data centers and racks as you want, but you need that high-tech hardware to fill it."* McCarthy names US limits on Chinese firms' access to the highest-end chips and China's own restrictions on importing *"not quite as high-end"* ones. With Democrats now controlling both houses of Congress, she reports concern in China about a push for more restrictions. Her figure, unsourced in speech and shown on screen as an Epoch AI chart (still 4): *"four of the US top tech firms have more computing power or more access to chips that they can use for AI than all of China's tech companies combined"* (9:32).
 
 [[2026-09-18-reuters-on-assignment-inside-chinas-ai-race|Reuters' On Assignment]] covers the same balance: Eduardo Baptista says China *"can't really access even a fraction of the most advanced compute,"* that cheap power depends on the region (*"Texas to Inner Mongolia or Texas to Fujian"*), and that state-led expansion of generation *"could definitely help."*
 
@@ -98,6 +99,89 @@ A host: the US–China race is usually seen as one of *"technology companies and
 
 For firms that build on, buy from or compete with either country's AI supply, the episode is a `contextual/external-triggers` source: it describes the external conditions (chip export controls, power and water, local politics, state planning) that set how much AI compute each country can bring online, and where.
 
+## Visual canon
+
+Six on-screen graphics, hand-picked from contact sheets (10-second grid plus a 2-second pass around spoken figures). The rest of the episode is studio shots, video calls and b-roll.
+
+### 1 · A campaign ad that counts Ohio's data centres
+
+![[assets/2026-11-14-mccarthy-cnn-meanwhile-in-asia-china-data-centers/01-04m58-ohio-ad-226-data-centers.webp|Ohio campaign ad counting data centres]]
+
+*Still at [4:58](https://www.youtube.com/watch?v=zC-WyRzwcUY&t=298s) from CNN, "As US votes against data centers, China is all in on building them | Meanwhile in Asia".*
+
+Credited *Political ad/Friends of Sherrod Brown*, with an AdImpact "Ad analysis" watermark. A map of Ohio dotted with orange sites and photos labelled *Data center*, under the words **226 DATA CENTERS / 5TH MOST OF ANY STATE**; a blurred source line appears to read datacentermap.com/usa/ohio. The surrounding montage (4:57–5:07 and 9:48–9:55) shows more ads: *"Husted is the face of data centers."* (The Plain Dealer, 3/18/26); from *Garrity for PA Governor*, an Amazon logo over *"Data Centers Tax Break Could Cost State BILLIONS."* (Centre Daily Times) and *"We are actively engaged in securing ADDITIONAL SITES IN PA"* (Gov. Josh Shapiro, press release); and *"To build even more data centers in Ohio"*.
+
+*Still vs. transcript:* the narration gives the $31 million total and, in the cold open, *"a total scam on the people of Ohio,"* but names no race. The montage shows at least two contests, in Ohio and in Pennsylvania's governor race, in which candidates are attacked for courting data centres and their tax breaks, and credits AdImpact for the ad footage.
+
+### 2 · Data centres, USA v. China, 2025
+
+![[assets/2026-11-14-mccarthy-cnn-meanwhile-in-asia-china-data-centers/02-05m58-us-china-data-center-count.webp|Bar chart of US and Chinese data center counts]]
+
+*Still at [5:58](https://www.youtube.com/watch?v=zC-WyRzwcUY&t=358s) from CNN, "As US votes against data centers, China is all in on building them | Meanwhile in Asia".*
+
+**Number of data centers: USA v. China in 2025.** *Source: Stanford HAI.*
+
+| Country | Data centres |
+| --- | ---: |
+| United States | 5,427 |
+| China | 449 |
+
+*Still vs. transcript:* the hosts say *"more than 5,000"* and *"approaching 500"*; the chart gives the exact counts, names the source, and puts China below 450, so the ratio is about twelve to one rather than ten.
+
+### 3 · The $560 billion initiative, with its source
+
+![[assets/2026-11-14-mccarthy-cnn-meanwhile-in-asia-china-data-centers/03-07m08-560b-digital-infrastructure.webp|Overlay on the Chinese digital infrastructure initiative]]
+
+*Still at [7:08](https://www.youtube.com/watch?v=zC-WyRzwcUY&t=428s) from CNN, "As US votes against data centers, China is all in on building them | Meanwhile in Asia".*
+
+**$560B** — *Chinese national digital infrastructure initiative over next five years.* SOURCE: CHINA'S MINISTRY OF INDUSTRY AND INFORMATION TECHNOLOGY.
+
+*Still vs. transcript:* the host says *"a $560 billion plan in September… to scale up data infrastructure"* with no source; the overlay names the ministry and spreads the sum over five years.
+
+### 4 · Compute capacity by chip owner
+
+![[assets/2026-11-14-mccarthy-cnn-meanwhile-in-asia-china-data-centers/04-09m34-epoch-compute-by-chip-owner.webp|Epoch AI chart of compute capacity by owner]]
+
+*Still at [9:34](https://www.youtube.com/watch?v=zC-WyRzwcUY&t=574s) from CNN, "As US votes against data centers, China is all in on building them | Meanwhile in Asia".*
+
+**Estimated cumulative compute capacity, H100e\*, among the world's biggest chip owners.** *Source: Epoch AI.*
+
+| Owner | H100 equivalents |
+| --- | ---: |
+| Google | 5.1M |
+| Microsoft | 3.4M |
+| Amazon | 2.5M |
+| Meta | 2.3M |
+| China combined | 1.2M |
+| Oracle | 1.1M |
+| CoreWeave | 0.8M |
+| xAI | 0.6M |
+| Other | 3.4M |
+
+Footnote: *"\*Compute capacity in the equivalent number of Nvidia H100s, based on dense 8-bit operations per second. Note: Data relies on company disclosures and estimates from third-party analysts. Includes AI chips from Nvidia, AMD, Google TPU, Amazon Trainium, Huawei and Cambricon."*
+
+*Still vs. transcript:* McCarthy says four US firms together have more compute than all of China's tech companies combined; the chart shows that each of the four alone has more (Meta, the smallest, has almost twice China's 1.2M), names Epoch AI as the source, and counts Huawei and Cambricon chips in China's total.
+
+### 5 · Eight computing hubs on the map
+
+![[assets/2026-11-14-mccarthy-cnn-meanwhile-in-asia-china-data-centers/05-12m42-computing-hubs-map.webp|Map of China with eight computing hubs]]
+
+*Still at [12:42](https://www.youtube.com/watch?v=zC-WyRzwcUY&t=762s) from CNN, "As US votes against data centers, China is all in on building them | Meanwhile in Asia".*
+
+A map of China with eight red circles. Only Ulanqab is labelled, on the edge of the northernmost circle; the circles are not named. Three larger circles sit on the east coast, from the Bohai Gulf to the far south; five smaller ones lie inland, from Inner Mongolia down through the centre of the country. None lies in the far west.
+
+*Still vs. transcript:* McCarthy names *"eight computing hubs and 10 so-called data center clusters"* but not where they are; the map places all eight in the eastern two-thirds of the country, none in Xinjiang or Tibet.
+
+### 6 · The water footprint, qualified
+
+![[assets/2026-11-14-mccarthy-cnn-meanwhile-in-asia-china-data-centers/07-17m14-4-5-trillion-liters.webp|Overlay on the water footprint of data centers]]
+
+*Still at [17:14](https://www.youtube.com/watch?v=zC-WyRzwcUY&t=1034s) from CNN, "As US votes against data centers, China is all in on building them | Meanwhile in Asia".*
+
+**4.5 trillion liters** — *Water footprint of global data centers' 2025 electricity consumption.* SOURCE: UNITED NATIONS UNIVERSITY INSTITUTE FOR WATER, ENVIRONMENT AND HEALTH. (An overlay at 13:12 shows the matching electricity figure, *448 terawatt hours, electricity consumed by global data centers in 2025*, with the same source.)
+
+*Still vs. transcript:* the host says data centres *"had a water footprint of 4.5 trillion liters"*; the overlay ties the figure to their electricity consumption, so it covers the water used to generate that power, not only the water used on site, which bears on McCarthy's *"zero water cooling"* campus.
+
 ## Linked entities and concepts
 
 - **Concepts:** [[ai-sovereignty]], [[foundation-models]], [[responsible-ai]], [[dynamic-capabilities]].
@@ -106,4 +190,4 @@ For firms that build on, buy from or compete with either country's AI supply, th
 
 ## Source quality
 
-A news podcast built on one reporter's press visit, where the operator chose what she saw. Most figures are spoken without sources: the $560 billion plan, the $31 million in ads, the four-firm compute comparison, the generation and curtailment figures. The UN figures are attributed but not shown. The cooling claims come from company staff and McCarthy's memory. The human-written caption track has name errors, corrected in quotation, and no speaker labels. Its value is reporting from inside a Chinese data-centre city, with energy and water figures the corpus did not have, set against the US politics of the same week.
+A news podcast built on one reporter's press visit, where the operator chose what she saw. Most figures are spoken without sources: the $31 million in ads, the generation and curtailment figures. Of the on-screen graphics, six were hand-picked as stills from contact sheets: they credit the $560 billion plan to China's Ministry of Industry and Information Technology, show the four-firm compute comparison as an Epoch AI chart, give the data-centre counts as Stanford HAI's, and show the UN University figures with their source line. The cooling claims come from company staff and McCarthy's memory. The human-written caption track has name errors, corrected in quotation, and no speaker labels. Its value is reporting from inside a Chinese data-centre city, with energy and water figures the corpus did not have, set against the US politics of the same week.

@@ -43,7 +43,7 @@ relationships:
 
 ## TL;DR
 
-An 18-minute edition of the *Author Talks* series on the [[McKinsey & Company]] channel. Tiffany Xingyu Wang speaks to camera in seven chaptered segments about her book *The Trust Code*; no interviewer is heard. She says she has spent *"over a decade building trust and safety systems for big enterprises."* **Auto-generated transcript, ASR-cleaned in quotation**: "overrust"/"underrusted" → overtrust/undertrusted, "Whimos" → Waymos, "McKenzie" → McKinsey, "at scare"/"end scale" → at scale, "Steven Quick" → Stephen Quake, "19% experimental" → 90% experimental, "alpha you know" → AlphaFold, "boweapon" → bioweapon, "narrow waste of our glass" → narrow waist of the hourglass, "unscentimental" → unsentimental.
+An 18-minute edition of the *Author Talks* series on the [[McKinsey & Company]] channel. Tiffany Xingyu Wang speaks to camera in seven chaptered segments about her book *The Trust Code*; no interviewer is heard, though the title card reads *"Chats with Adam Volk"*. She says she has spent *"over a decade building trust and safety systems for big enterprises."* **Auto-generated transcript, ASR-cleaned in quotation**: "overrust"/"underrusted" → overtrust/undertrusted, "Whimos" → Waymos, "McKenzie" → McKinsey, "at scare"/"end scale" → at scale, "Steven Quick" → Stephen Quake, "19% experimental" → 90% experimental, "alpha you know" → AlphaFold, "boweapon" → bioweapon, "narrow waste of our glass" → narrow waist of the hourglass, "unscentimental" → unsentimental.
 
 What it adds to the wiki:
 

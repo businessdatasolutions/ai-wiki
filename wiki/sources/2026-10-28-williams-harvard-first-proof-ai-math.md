@@ -7,8 +7,9 @@ publisher: "Harvard Mathematics Department (YouTube channel), short documentary 
 url: "https://www.youtube.com/watch?v=4RDv_g2NFf0"
 date_published: 2026-10-28
 date_ingested: 2026-11-16
-length: "~8:12 minutes (transcript ~56 lines; human-written track (en-US); last ~52 s music and credits)"
+length: "~8:12 minutes (transcript ~56 lines + 5 stills; human-written track (en-US); last ~52 s music under five text cards on the third and fourth batches)"
 raw: "../../raw/videos/first-proof-a-nuanced-assessment-of-ais-ability-to-solve-math-problems.md"
+stills: "../../raw/videos/first-proof-a-nuanced-assessment-of-ais-ability-to-solve-math-problems.stills.md"
 tags: [first-proof, mathematics, research-mathematics, ai-benchmarks, proofs, lemmas, benchmark-contamination, human-grading, harness, chatgpt-pro, citations, plagiarism, exposition, arxiv, harvard, documentary]
 relationships:
   - type: supports
@@ -43,7 +44,7 @@ What it adds to the wiki:
 2. **How two batches were run**, and why the second was run in-house.
 3. **A grading result**: some mathematically correct solutions had serious citation problems, close to plagiarism, although every prompt and harness asked for attributions. The third batch scores correctness, citations and exposition separately.
 
-**What the film does not give:** any score, solve rate or per-model result. On batch 2 she says only *"it was quite interesting to see how they did."* A participant on her own project, in a film by her own department.
+**What the film does not give:** any numeric score, solve rate or per-model result. On batch 2 she says only *"it was quite interesting to see how they did."* Its closing text cards, hand-picked as stills (see [Visual canon](#visual-canon)), report the third batch in words only: five AI systems, ten problems, scores from -1 to 1, and results announced on 14 October 2026 showing *"open weight models are far behind frontier models"* and that *"even the best systems fail when it comes to exposition."* A participant on her own project, in a film by her own department.
 
 ## Why mathematicians built it
 
@@ -63,6 +64,60 @@ Thirty mathematicians graded batch 2 for two days at Harvard's Center of Mathema
 
 First Proof is now a nonprofit, the First Proof Foundation. Williams calls AI *"both a threat and an opportunity."* Journals and the arXiv receive *"exponentially many more"* papers (the captions read "solutions"; "submissions" is the likely word), and *"the only way to deal with that volume of stuff is to use an LLM. But if people now start producing math using AI models, and then evaluating math using AI models, this is a pretty messed-up situation"* (6:47–7:03). The project's aim is a mathematical ecosystem *"still for humans, by humans."*
 
+## Visual canon
+
+The film's last 52 seconds, which the transcript records as music, are five text cards (7:36–8:07). All five were hand-picked from contact sheets (4-second grid plus a 2-second pass); the rest of the film is interview and b-roll.
+
+### 1 · The third batch: five systems, ten problems
+
+![[assets/2026-10-28-williams-harvard-first-proof-ai-math/03-07m36-third-batch-five-systems-ten-problems.webp|Card on the third batch]]
+
+*Still at [7:36](https://www.youtube.com/watch?v=4RDv_g2NFf0&t=456s) from Harvard Mathematics Department, "First Proof: A Nuanced Assessment of AI's Ability to Solve Math Problems".*
+
+*"First Proof: The Third Batch tested and graded five AI systems with another collection of ten problems between August, 2026 and October, 2026."*
+
+*Still vs. transcript:* Williams describes how the third batch will be scored but not its size or timing; the card gives the number of systems and problems and the testing window.
+
+### 2 · A score from -1 to 1 on three dimensions
+
+![[assets/2026-10-28-williams-harvard-first-proof-ai-math/04-07m42-scores-from-minus-one-to-one.webp|Card on the scoring scale]]
+
+*Still at [7:42](https://www.youtube.com/watch?v=4RDv_g2NFf0&t=462s) from Harvard Mathematics Department, "First Proof: A Nuanced Assessment of AI's Ability to Solve Math Problems".*
+
+*"Each AI-generated solution received a score between -1 (worst) and 1 (best) for correctness, exposition, and attributions in recognition of the fact that sorting through incorrect or poorly written AI-generated proofs is not a valuable use of human time."*
+
+*Still vs. transcript:* the narration names the three scores (6:03); the card adds the scale, whose negative end penalises wrong or badly written proofs rather than scoring them zero, and its reason: the cost to human graders.
+
+### 3 · The results: open-weight models far behind
+
+![[assets/2026-10-28-williams-harvard-first-proof-ai-math/05-07m50-results-open-weight-far-behind.webp|Card on the third batch results]]
+
+*Still at [7:50](https://www.youtube.com/watch?v=4RDv_g2NFf0&t=470s) from Harvard Mathematics Department, "First Proof: A Nuanced Assessment of AI's Ability to Solve Math Problems".*
+
+*"Results were announced on October 14, 2026. They show that open weight models are far behind frontier models, and that even the best systems fail when it comes to exposition."*
+
+*Still vs. transcript:* the narration gives no result for any batch; this card is the film's only finding, stated in words without scores, and it separates open-weight from frontier models, a distinction Williams never draws aloud.
+
+### 4 · The fourth batch: open-source models
+
+![[assets/2026-10-28-williams-harvard-first-proof-ai-math/06-07m56-fourth-batch-open-source.webp|Card on the fourth batch]]
+
+*Still at [7:56](https://www.youtube.com/watch?v=4RDv_g2NFf0&t=476s) from Harvard Mathematics Department, "First Proof: A Nuanced Assessment of AI's Ability to Solve Math Problems".*
+
+*"First Proof is already preparing the Fourth Batch, which will emphasize open source models. Results will be announced in January, 2027."*
+
+*Still vs. transcript:* the narration says batches now come every three months; the card names the next batch's focus and its results date.
+
+### 5 · A call to invest in open models
+
+![[assets/2026-10-28-williams-harvard-first-proof-ai-math/07-08m02-invest-in-open-weight-models.webp|Card calling for investment in open models]]
+
+*Still at [8:02](https://www.youtube.com/watch?v=4RDv_g2NFf0&t=482s) from Harvard Mathematics Department, "First Proof: A Nuanced Assessment of AI's Ability to Solve Math Problems".*
+
+*"First Proof encourages the community to invest in open source/open weight models so as to provide viable alternatives to the frontier models created by a few private companies."*
+
+*Still vs. transcript:* Williams speaks of taking *"control of the narrative"* from AI companies; the card turns that into a stated position, that the mathematical community should back open models as an alternative to the frontier labs.
+
 ## Linked entities and concepts
 
 - **Entities:** [[OpenAI]].
@@ -71,4 +126,4 @@ First Proof is now a nonprofit, the First Proof Foundation. Williams calls AI *"
 
 ## Source quality
 
-Human-written en-US caption track, served by the transcript panel; its text is identical to the en-US track fetched separately with yt-dlp. A short institutional film: one participant, no figures, one named model tier. The Millennium Prize claim is made in passing and checked neither in the film nor in the wiki. That some batch-1 groups used feedback is her inference (*"we are rather sure"*). A documentary, so no stills are needed.
+Human-written en-US caption track, served by the transcript panel; its text is identical to the en-US track fetched separately with yt-dlp. A short institutional film: one participant, no scores, one named model tier; the closing cards add only the third batch's size, dates and a verbal summary of its results. The Millennium Prize claim is made in passing and checked neither in the film nor in the wiki. That some batch-1 groups used feedback is her inference (*"we are rather sure"*). Five closing text cards were hand-picked as stills from contact sheets; the rest is interview and b-roll (blackboards, seminars, campus), which shows no problem, rubric or score.

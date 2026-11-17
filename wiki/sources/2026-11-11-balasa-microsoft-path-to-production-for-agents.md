@@ -7,8 +7,9 @@ publisher: "Microsoft Developer (YouTube channel), Path to Production for Agents
 url: "https://www.youtube.com/watch?v=VZPAjGP3EH0"
 date_published: 2026-11-11
 date_ingested: 2026-11-16
-length: "~1:02:29 minutes (transcript ~470 lines; ASR auto-generated track, 14 chapters)"
+length: "~1:02:29 minutes (transcript ~470 lines + 9 stills; ASR auto-generated track, 14 chapters)"
 raw: "../../raw/videos/your-path-to-production-for-agents.md"
+stills: "../../raw/videos/your-path-to-production-for-agents.stills.md"
 tags: [microsoft, microsoft-developer, azure, path-to-production-for-agents, adelina-balasa, master-class, pilot-to-production, demo-to-production, ai-center-of-excellence, intake-funnel, hub-and-spoke, citizen-developers, ai-governance, responsible-ai-council, agent-registry, shadow-agents, maturity-model, ai-landing-zones, infrastructure-as-code, zero-trust, ai-security, agent-identity, least-privilege, indirect-prompt-injection, red-teaming, pyrit, prompt-shields, agentops, canary-release, prompt-versioning, model-deprecation, llm-as-judge, golden-datasets, slo, error-budget, finops, solution-optimization, model-routing, semantic-caching, iteration-limits, agent-architectures, mcp, rag, edge-inference]
 dynamic_capabilities:
   - digital-seizing/balancing-digital-portfolios
@@ -29,7 +30,7 @@ relationships:
     confidence: 0.7
   - type: supports
     target: 2026-08-26-chatterjee-agentic-governance-gap
-    via: "both list controls for agents that take actions: Chatterjee's agent inventory, kill switches, red-teaming and action-scoped permissions as a board-level capability; Balasa's agent registry with named owners, emergency stop, red-teaming in the release pipeline and least-privilege identities, each told through an anonymised customer case"
+    via: "both list controls for agents that take actions: Chatterjee's agent inventory, kill switches, red-teaming and action-scoped permissions as a board-level capability; Balasa's agent registry with named owners, emergency stop, red-teaming in the release pipeline and least-privilege identities, each told through a customer story"
     confidence: 0.7
   - type: supports
     target: 2026-09-29-bayer-rosmarin-chari-bcg-ai-agents-business-of-complexity
@@ -52,7 +53,7 @@ A 62-minute master class on [[Microsoft]]'s *Microsoft Developer* channel, publi
 What it adds to the wiki:
 
 1. **The production gap stated as an organisational problem.** *"The thing standing in our way is almost never the model. Reaching for the newest, biggest model fixes none of this."* Teams that close the gap see value in about 12 weeks; the others are *"still trying about a year later or they just quietly gave up"* (1:14). No source is given.
-2. **A six-pillar framework** (AI Center of Excellence, AI governance, AI landing zones, AI security and trust, AgentOps, solution optimization), each with three or four moves, one anonymised customer story per move, and KPIs; plus agent architectures as a layer underneath.
+2. **A six-pillar framework** (AI Center of Excellence, AI governance, AI landing zones, AI security and trust, AgentOps, solution optimization), each with three or four moves, one customer story per move (told as examples; two case slides label them *"Representative industry scenarios"*), and KPIs; plus agent architectures as a layer underneath.
 3. **An agent registry with a first-week count**: three ownerless agents surfaced at a national tax agency (19:15).
 4. **Agents as digital employees**: own managed identity, least privilege, on-behalf-of permissions.
 5. **AgentOps release mechanics**: prompts, code and model config versioned together; a bad change caught by a canary on 5% of traffic; golden datasets and LLM-as-judge as release gates; SLOs with error budgets.
@@ -108,7 +109,7 @@ A help-desk agent on a shared API key with broad permissions reads a support tic
 - **Data protection and compliance.** An insurer under the EU AI Act and GDPR redacts PII on every input and output and adds data-loss prevention; a test caught the agent trying to put a member's full record into a summary.
 - **Threat protection and adversarial testing.** A government digital-services team runs Prompt Shields, output validation and continuous red-teaming with PyRIT in the pipeline: *"they attack themselves on every release."*
 
-The narration names three moves here, where the framework promises three to four per pillar.
+The narration names three moves here, where the framework promises three to four per pillar; the deck's overview slide also lists three ([§Visual canon](#visual-canon), still 2).
 
 ## Pillar 5: AgentOps
 
@@ -123,13 +124,175 @@ The narration names three moves here, where the framework promises three to four
 
 ## Pillar 6: Solution optimization
 
-A customer-service copilot is *"snappy at 1:00 a.m. Painful at 2 p.m."*, and the first invoice lands at triple the forecast. Slowness has at least four sources (time to first token, inter-token latency, end-to-end time, concurrency), and a one-user demo cannot forecast any of them, so *"we never really finish optimizing."* The moves: model routing, with cheap models for classification and formatting and premium ones for hard reasoning; hard iteration limits, parallel lookups and focused sub-agents for a route-planning agent that ran *"an unbounded loop retrying a failing step and quietly burning money"* (*"faster and cheaper through the fact that they fixed coordination, not… the model"*); semantic and prompt caching with per-team quotas, whose cache hits absorbed *"a huge share of Black Friday traffic"*; and streaming and tuned retrieval to cut time to first token.
+A customer-service copilot is *"snappy at 1:00 a.m. Painful at 2 p.m."* (as the auto-generated track hears it; the slide reads *"snappy at 9am and painful at 2pm"*), and the first invoice lands at triple the forecast. Slowness has at least four sources (time to first token, inter-token latency, end-to-end time, concurrency), and a one-user demo cannot forecast any of them, so *"we never really finish optimizing."* The moves: model routing, with cheap models for classification and formatting and premium ones for hard reasoning; hard iteration limits, parallel lookups and focused sub-agents for a route-planning agent that ran *"an unbounded loop retrying a failing step and quietly burning money"* (*"faster and cheaper through the fact that they fixed coordination, not… the model"*); semantic and prompt caching with per-team quotas, whose cache hits absorbed *"a huge share of Black Friday traffic"*; and streaming and tuned retrieval to cut time to first token.
 
 ## The layer underneath: agent architectures
 
 *"This is not a seventh wall. This is a layer that sits underneath all the other six pillars"* (54:44). Every agent is composed from four reference patterns: frameworks and orchestration; tools, function calling and MCP (*"the safe governed hands for your agents"*); knowledge, memory and context, including RAG; and multimodal, voice and edge. Her examples: an insurer whose *"one giant agent kept getting confused"*, split into intake, fraud-check and adjudication agents with a human at adjudication; a manufacturer's corporate tool catalogue on MCP shared by its maintenance and procurement agents; shared RAG standards and a shared vector store for a global firm's research agent; and a voice agent for car technicians with inference on the device.
 
 She closes: *"Look at the wall you're stuck behind right now. Pick that pillar and start with one of the moves."*
+
+## Visual canon
+
+Nine stills, hand-picked from contact sheets because the Gemini scan failed. Each pillar runs through the same slide templates; the narration reads the "wall", "why it breaks", "four moves" and "what good looks like" slides almost word for word, so they are left out. What follows is the symptoms list the narration points at but never reads, the framework overview, and the "inside the moves" table for each pillar and for the architecture layer.
+
+### 1 · The symptoms every team reports
+
+![[assets/2026-11-11-balasa-microsoft-path-to-production-for-agents/03-01m50-frontier-model-fixes-none-of-it.webp|The newest frontier model fixes none of it]]
+
+*Still at [1:50](https://www.youtube.com/watch?v=VZPAjGP3EH0&t=110s) from Microsoft Developer, "Your Path to Production for Agents".*
+
+*The uncomfortable truth:* **The newest frontier model fixes none of it.** Left panel: *"'It worked in the demo' tells you nothing about production, where you have thousands of concurrent users, probabilistic behaviour, tools with side-effects, and yesterday's safe answer becoming tomorrow's hallucination."* Below it, in large type: *"The real blockers aren't model problems. They are architectural and organisational; and that is exactly what our framework solves."* Right panel, **The symptoms every team reports**:
+
+- Agent sprawl: agents nobody knows about
+- No shared memory: agents contradict each other
+- The same connector rebuilt three or four times
+- "We had an audit and couldn't explain what it did"
+- "Why is it slow now and why is the invoice so big?"
+- "We can't switch models without rewriting everything"
+
+*Still vs. transcript:* the narration points at *"the symptoms on the right"* without reading them. The slide is the only place the talk lists them, and two never come up in the narration: agents contradicting each other for lack of shared memory, and being unable to switch models without a rewrite.
+
+### 2 · Six walls and their moves on one slide
+
+![[assets/2026-11-11-balasa-microsoft-path-to-production-for-agents/05-03m40-six-walls-framework.webp|Six walls between a demo and production]]
+
+*Still at [3:40](https://www.youtube.com/watch?v=VZPAjGP3EH0&t=220s) from Microsoft Developer, "Your Path to Production for Agents".*
+
+*The framework:* **6 walls between a demo and production.** *Bonus: Agent Architectures, the production reference patterns that incorporate every pillar.*
+
+| # | Pillar | Moves |
+| ---: | --- | --- |
+| 1 | AI CoE | Business Strategy Alignment · Technical Direction · Enablement · Community and Operating Model |
+| 2 | AI Governance | Responsible AI and Ethics · Policy and Standards · Agent Inventory and Lifecycle · Monitoring, Alerting, and Maturity |
+| 3 | AI Landing Zones | Infrastructure as Code · Networking and Connectivity · Reliability and Resiliency · Platform Operations |
+| 4 | AI Security and Trust | Identity and Access · Data Protection and Compliance · Threat Protection and Adversarial Testing |
+| 5 | AgentOps | CI/CD and Deployment · Model and Prompt Lifecycle · Tracing, Observability, and Evaluations · Production Controls |
+| 6 | Solution Optimisation | Model and Tool Selection · Agent Orchestration and Workflow Design · Scaling and Cost · Performance and UX |
+
+*Still vs. transcript:* at this point the narration names only the six pillars and says each has *"three to four practical moves"*; the slide shows all 23 moves at once, with three under AI Security and Trust.
+
+### 3 · AI Center of Excellence: what each move builds and who runs it
+
+![[assets/2026-11-11-balasa-microsoft-path-to-production-for-agents/10-07m30-pillar1-inside-the-moves.webp|Pillar 1 inside the moves, AI Center of Excellence]]
+
+*Still at [7:30](https://www.youtube.com/watch?v=VZPAjGP3EH0&t=450s) from Microsoft Developer, "Your Path to Production for Agents".*
+
+*Pillar 1 · Inside the moves:* **What you build and who puts it to work**
+
+| Move | What you build | In practice |
+| --- | --- | --- |
+| 1 · Business Strategy Alignment | Vision and AI posture tied to corporate priorities · Use-case intake and scoring (value/feasibility/risk/data) · Value-driven backlog and ROI realization · AI maturity roadmap | Retail bank · CFO — one intake board scores every idea; 8 low-value pilots killed, ROI made visible. |
+| 2 · Technical Direction | Reference architectures and approved patterns · Reusable accelerators and asset catalog · Model and platform selection guidance · Engineering standards (executed in AgentOps) | Insurance · Enterprise Architect — a reference-architecture catalog turns month-long builds into days. |
+| 3 · Enablement | Role-based skilling and upskilling · Access to sanctioned tooling and environments · Maker/citizen-dev on-ramp + graduation path · Certification and learning paths | Manufacturing · CIO + Head of L&D — a governed maker on-ramp turns a frozen backlog into 30 trained builders. |
+| 4 · Community and Operating Model | Operating model (hub-spoke/central/decentralised) · Roles and funding · Community of practice · Adoption and change management | Telecom · Head of AI CoE — a hub-and-spoke model + community of practice spreads one team's win org-wide. |
+
+*Still vs. transcript:* the narration tells each case at length but does not name four of the activities (an AI maturity roadmap, model and platform selection guidance, certification and learning paths, roles and funding). For the enablement and operating-model cases it credits only *"the center of excellence"*, where the slide names the CIO with the Head of L&D, and a Head of AI CoE.
+
+### 4 · AI governance: what each move builds and who runs it
+
+![[assets/2026-11-11-balasa-microsoft-path-to-production-for-agents/15-16m30-pillar2-inside-the-moves.webp|Pillar 2 inside the moves, AI governance]]
+
+*Still at [16:30](https://www.youtube.com/watch?v=VZPAjGP3EH0&t=990s) from Microsoft Developer, "Your Path to Production for Agents".*
+
+*Pillar 2 · Inside the moves:* **What you build and who puts it to work**
+
+| Move | What you build | In practice |
+| --- | --- | --- |
+| 1 · Responsible AI and Ethics | 6 Responsible AI principles adopted · RAI council + charter and decision rights · Pre-deployment impact/risk assessments · Human-in-the-loop policy; bias and fairness review | Healthcare · Chief Risk Officer: an RAI council + human-in-the-loop clears a patient-facing agent, with evidence. |
+| 2 · Policy and Standards | RAI/usage/data/IP policy pack · Architecture and safety standards · Model and data-use guidance · Model cards/transparency notes | Pharma · Chief Data Officer: a codified policy pack replaces case-by-case debate with clear guardrails. |
+| 3 · Agent Inventory and Lifecycle | Central agent registry · Approve → deploy → retire lifecycle · Ownership and accountability (RACI) · Anti-sprawl/shadow-agent detection | Public sector · CIO: a central agent registry surfaces shadow agents and makes the fleet auditable. |
+| 4 · Monitoring, Alerting, and Maturity | Always-on RAI/policy monitoring · Policy-violation alerting · Governance KPIs and scorecards · 5-level maturity roadmap and review cadence | Utilities · Head of AI Governance: live policy alerts + a maturity scorecard turn audit into a running discipline. |
+
+*Still vs. transcript:* the narration covers nearly every item while telling the four cases. The slide adds RACI as the form of ownership, architecture and safety standards, and transparency notes beside model cards, and it states each case in one line.
+
+### 5 · AI landing zones: what each move builds and who runs it
+
+![[assets/2026-11-11-balasa-microsoft-path-to-production-for-agents/21-26m40-pillar3-inside-the-moves.webp|Pillar 3 inside the moves, AI landing zones]]
+
+*Still at [26:40](https://www.youtube.com/watch?v=VZPAjGP3EH0&t=1600s) from Microsoft Developer, "Your Path to Production for Agents".*
+
+*Pillar 3 · Inside the moves:* **What you build — and who puts it to work**
+
+| Move | What you build | In practice |
+| --- | --- | --- |
+| 1 · Infrastructure as Code | Bicep/Terraform/Pulumi · Platform blueprints and accelerators · Landing-zone/subscription vending · Modular deploy; dev/test/prod environments | Retail · Platform Engineering lead: Terraform landing-zone vending cuts provisioning from weeks to hours. |
+| 2 · Networking and Connectivity | VNet and hub-spoke topology · Private endpoints to models/data · Zero-trust network design · Greenfield or brownfield hook-in | Banking · Network Architect + CISO: private-endpoint zero-trust networking is what finally earns security's sign-off. |
+| 3 · Reliability and Resiliency | Multi-region failover and high availability · Capacity headroom and autoscaling (PTU/PAYG spillover) · Graceful degradation, retries and circuit breakers · Backup and disaster recovery (RPO/RTO) | Airline · CTO: multi-region failover + PTU spillover keep the agent up through a holiday surge. |
+| 4 · Platform Operations | Resource organisation and tagging · Platform-health monitoring · Shared platform services · One-owner cost tracking and lifecycle | Logistics · Platform Ops/FinOps: tagged, single-owner resources make a runaway agent bill traceable in minutes. |
+
+*Still vs. transcript:* the narration names Terraform only; the slide lists Bicep and Pulumi as alternatives. It also adds modular dev/test/prod environments, greenfield or brownfield hook-in, circuit breakers, disaster recovery with RPO/RTO targets, and shared platform services.
+
+### 6 · AI security and trust: three moves
+
+![[assets/2026-11-11-balasa-microsoft-path-to-production-for-agents/26-34m40-pillar4-inside-the-moves.webp|Pillar 4 inside the moves, AI security and trust]]
+
+*Still at [34:40](https://www.youtube.com/watch?v=VZPAjGP3EH0&t=2080s) from Microsoft Developer, "Your Path to Production for Agents".*
+
+*Pillar 4 · Inside the moves:* **What you build and who puts it to work**
+
+| Move | What you build | In practice |
+| --- | --- | --- |
+| 1 · Identity and Access | Agent identity for every agent · Least-privilege RBAC to models/tools/data · Conditional access and MFA · On-behalf-of delegation; secrets and key management | Financial services · CISO — agent identity + least-privilege + on-behalf-of replace a dangerous shared key. |
+| 2 · Data Protection and Compliance | Leakage/oversharing prevention · PII detection and redaction/DLP · Data-poisoning defence and data boundaries · Regulatory alignment (EU AI Act); audit-readiness and residency | Health insurance (EU) · Data Protection Officer — PII redaction + DLP + AI-Act-aligned evidence turn compliance anxiety into proof. |
+| 3 · Threat Protection and Adversarial Testing | Content-safety guardrails (prompt shields, jailbreak, output validation) · Threat detection (Defender for AI) · Red-teaming (PyRIT) and continuous security testing · Penetration testing; abuse detection and throttling | Government · Security engineer/Red team — prompt shields + PyRIT red-teaming block an indirect prompt-injection attack. |
+
+*Still vs. transcript:* the slide adds MFA, secrets and key management, defence against data poisoning, threat detection with Microsoft's Defender for AI (not named in the narration), penetration testing, and abuse detection with throttling. Like the narration, it has three moves, not four.
+
+### 7 · AgentOps: what each move builds and who runs it
+
+![[assets/2026-11-11-balasa-microsoft-path-to-production-for-agents/32-41m20-pillar5-inside-the-moves.webp|Pillar 5 inside the moves, AgentOps]]
+
+*Still at [41:20](https://www.youtube.com/watch?v=VZPAjGP3EH0&t=2480s) from Microsoft Developer, "Your Path to Production for Agents".*
+
+*Pillar 5 · Inside the moves:* **What you build and who puts it to work**
+
+| Move | What you build | In practice |
+| --- | --- | --- |
+| 1 · CI/CD and Deployment | Governed release across environments · Progressive delivery/canary · Rollback and emergency stop · Agent distribution and catalog | E-commerce · Release engineer: governed CI/CD + canary + emergency-stop catch a bad prompt on 5% of traffic. |
+| 2 · Model and Prompt Lifecycle | Versioned models/prompts/tool definitions · Agent/model/deployment inventory · Deprecation and migration · Trace-driven improvement and revalidation | Media · ML engineer: versioned models/prompts + an inventory make a model retirement a non-event. |
+| 3 · Tracing, Observability, and Evaluations | End-to-end distributed tracing · Quality/latency/token metrics + feedback · Automated/offline/human/LLM-judge evals · Drift and regression detection; quality gates | Telecom · SRE + Data scientist: tracing + eval quality gates stop a demo-perfect prompt that failed grounding. |
+| 4 · Production Controls | Policy gates and approvals with release evidence · Workload identity and least-privilege · SLOs and error budgets · AI incident detection and response; FinOps | Banking · VP Engineering: SLOs, incident runbooks and release evidence turn agent incidents into a controlled process. |
+
+*Still vs. transcript:* the narration covers most items in its four cases. The slide adds agent distribution and a catalog under CI/CD, user feedback beside the quality metrics, and offline and human evaluations next to the LLM judges and golden datasets the narration names.
+
+### 8 · Solution optimisation: what each move builds and who runs it
+
+![[assets/2026-11-11-balasa-microsoft-path-to-production-for-agents/38-48m50-pillar6-inside-the-moves.webp|Pillar 6 inside the moves, solution optimisation]]
+
+*Still at [48:50](https://www.youtube.com/watch?v=VZPAjGP3EH0&t=2930s) from Microsoft Developer, "Your Path to Production for Agents".*
+
+*Pillar 6 · Inside the moves:* **What you build and who puts it to work**
+
+| Move | What you build | In practice |
+| --- | --- | --- |
+| 1 · Model and Tool Selection | Right-size model per step · Intelligent routing (cost/latency/quality) · Cheaper models for routine work · Deployment failover; tool disambiguation | SaaS · Lead developer: model routing sends routine work to cheap models, cutting cost with no quality loss. |
+| 2 · Agent Orchestration and Workflow Design | Bound loops (iteration limits) · Parallelise independent work · Cut reasoning loops and tool calls · Avoid monolithic agents (tunes what the patterns build) | Logistics · Software architect: bounded loops + parallelised steps kill overnight cost spikes and cut latency. |
+| 3 · Scaling and Cost | Token/context efficiency + prompt/semantic/response caching · PTU/PAYG capacity and spillover · Rate limits and quotas · Per-workload cost attribution/FinOps | Retail · FinOps lead: caching + PTU + per-team attribution make Black Friday costs predictable and chargeable. |
+| 4 · Performance and UX | TTFT/inter-token/E2E latency tuning · Retrieval/grounding precision · Session and history management · Usage analytics and adoption; concurrency handling | Consumer app · Product owner: TTFT tuning + streaming + adoption analytics turn a sluggish assistant into an instant one. |
+
+Footnote: *"Representative industry scenarios — full narrative in the speaker notes."*
+
+*Still vs. transcript:* the slide adds session and history management, concurrency handling, rate limits and response caching to the narrated moves. Its footnote calls the cases *"Representative industry scenarios"*; the narration introduces them as examples (*"one example, a B2B SaaS company"*) and does not say they are representative or composite.
+
+### 9 · Agent architectures: the four reference patterns in detail
+
+![[assets/2026-11-11-balasa-microsoft-path-to-production-for-agents/44-56m30-inside-the-patterns.webp|Bonus inside the patterns, agent architectures]]
+
+*Still at [56:30](https://www.youtube.com/watch?v=VZPAjGP3EH0&t=3390s) from Microsoft Developer, "Your Path to Production for Agents".*
+
+*Bonus · Inside the patterns:* **What you build and who puts it to work**
+
+| Pattern | What you build | In practice |
+| --- | --- | --- |
+| 1 · Agent Frameworks and Orchestration | Standard agent framework · Single vs. multi-agent patterns · Workflow chaining and handoffs · Human-in-the-loop; orchestration standards | Insurance · Principal engineer — a standard multi-agent framework with human-in-the-loop untangles a monolithic claims agent. |
+| 2 · Tools, Function Calling, and MCP | Governed tool/function calling · Model Context Protocol (MCP) support · Corporate tool catalog/MCP gateway · OpenAPI/A2A; browser and automation tools | Manufacturing · Integration developer — a governed MCP tool catalog replaces four brittle copies of the same connector. |
+| 3 · Knowledge, Memory, and Context (RAG) | RAG standards (chunking, embeddings, hybrid search, citations, freshness) · Shared semantic layer/central vector store · Short/long/procedural memory · Context-window and knowledge-base governance | Legal services · Data/ML engineer — RAG standards + a shared vector store deliver grounded, cited answers lawyers can trust. |
+| 4 · Multimodal, Voice, and Edge | Speech/voice agents · Document and vision understanding · Translation and multimodal flows · Edge/on-device agents; cloud-vs-edge inference | Automotive/Field service · Innovation lead — a voice + on-device edge agent lets hands-busy technicians just ask. |
+
+Footnote: *"Representative industry scenarios — full narrative in the speaker notes."*
+
+*Still vs. transcript:* the slide names agent-to-agent (A2A) and OpenAPI tools, browser and automation tools, short-term and procedural memory beside the narrated long-term memory, context-window and knowledge-base governance, and translation flows, none of which the narration mentions. It carries the same "representative scenarios" footnote, while the narration introduces the stories with *"let me make these patterns real with a story for each."*
 
 ## Linked entities and concepts
 
@@ -140,4 +303,4 @@ She closes: *"Look at the wall you're stuck behind right now. Pick that pillar a
 
 ## Source quality
 
-Auto-generated ASR track, cleaned in quotation only. The talk is slide-led and the narration points at slides (*"looking at the symptoms on the right"*, *"here's the idea in one picture"*) whose content is not captured; the stills scan failed (Gemini 402) and is deferred, so the framework table above is reconstructed from the narration. The customer stories are anonymised, with no names, dates or outcome data beyond the quoted figures; two are told twice (the shared-key help-desk agent, the Friday prompt edit). The 12-weeks figure and the three security percentages have no stated source. YouTube's chapter title *"AU Security and Trust"* is a typo for AI. Useful as a checklist with a concrete mechanism per pillar, not as evidence of their effect.
+Auto-generated ASR track, cleaned in quotation only. The talk is slide-led and the narration points at slides (*"looking at the symptoms on the right"*, *"here's the idea in one picture"*). The Gemini stills scan failed (402), so 9 stills were hand-picked from contact sheets (129 tiles, one sample every 10 s; 46 slides cut at full resolution; see [§Visual canon](#visual-canon)). The narration reads most slides almost word for word; the published stills are the ones it does not: the opening symptoms list, the framework overview and the seven "inside the moves" tables. The framework table above is reconstructed from the narration and agrees with the deck's own overview slide. The customer stories are anonymised, with no names, dates or outcome data beyond the quoted figures; two are told twice (the shared-key help-desk agent, the Friday prompt edit). The deck's footnote on the Pillar 6 and agent-architecture case slides reads *"Representative industry scenarios — full narrative in the speaker notes"*, while the narration introduces the stories as examples from customers (*"one of our retail banks"*); how far the cases are composites is not stated. The 12-weeks figure and the three security percentages have no stated source. YouTube's chapter title *"AU Security and Trust"* is a typo for AI. Useful as a checklist with a concrete mechanism per pillar, not as evidence of their effect.

@@ -10,6 +10,74 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-11-17] ingest | Stills for the fourteen videos of 2026-11-16: 78 published across nine pages, hand-picked without Gemini
+
+The user asked why the last batch had no stills. Yesterday's run deferred them because Gemini returned HTTP 402 (prepayment credits depleted). It still did today, so the Find step was done by hand:
+
+- Each video was downloaded at 360p.
+- A frame was taken every 3–10 s, depending on length, and consecutive repeats were merged.
+- 64 contact sheets were reviewed by six parallel agents, one or more videos each.
+- Candidates were cut from the 1080p stream and read from the pixels.
+- Every manifest records `method: hand-picked (no Gemini call)`.
+
+**Published.**
+
+| Source | Stills | Selected from |
+| --- | ---: | --- |
+| [[2026-11-03-damodaran-anthropic-valuation-feedback-loop\|Damodaran's follow-up]] | 15 | 23 cut |
+| [[2026-10-28-damodaran-anthropic-ipo-valuation\|Damodaran's IPO valuation]] | 12 | 30 |
+| [[2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure\|Google's AI-infrastructure keynote]] | 12 | 31 |
+| [[2026-10-08-dahiya-ontology-taxonomy-knowledge-graph-semantic-layer\|Dahiya]] | 10 | each diagram's fully built state |
+| [[2026-11-11-balasa-microsoft-path-to-production-for-agents\|Microsoft's Path to Production]] | 9 | 46 slides cut |
+| [[2026-11-14-tan-ugarte-yc-lightcone-rise-of-ai-coworkers\|YC Lightcone]] | 6 | |
+| [[2026-11-14-mccarthy-cnn-meanwhile-in-asia-china-data-centers\|CNN]] | 6 | |
+| [[2026-10-28-williams-harvard-first-proof-ai-math\|First Proof]] | 5 | |
+| [[2026-11-15-reuters-china-nationwide-ai-education-2030\|Reuters]] | 3 | |
+
+Each of the nine pages got a `## Visual canon` section, `stills:`, `+ K stills` in `length:`, and its "not captured" statements corrected. Microsoft's selection leaves out the slides she reads word for word.
+
+**No stills, and why.**
+- **Stanford HAI panel:** stage footage only. A short-shot pass confirmed it.
+- **Panasonic's BIZ-TALKS:** marketing b-roll with slogans.
+- **Wang's Author Talks:** talking head and question cards.
+- **Both McKinsey *Inside the Strategy Room* episodes:** audio over one title card for the whole runtime.
+
+The first three have manifests recording what was saved and left out.
+
+**Sampling lesson.** A 10-second grid misses short graphics in edited video.
+- **News and documentary videos:** the agent for these five added a 1–2 s pass. It found two of CNN's six graphics and First Proof's closing cards.
+- **Videos reviewed on a 10 s grid:** the orchestrator tiled every shot shorter than 10 s with ffmpeg scene detection. That found one more YC still, a one-second view of the bot's report: a draft PR behind an off-by-default gate, and a WebRTC security gap the agent flagged itself.
+- **Stanford and Google:** the short-shot pass found nothing new.
+- **Microsoft:** a 2-second comparison against the grid found only crossfades.
+
+`CLAUDE.md` §Video stills now has a "Without Gemini" note with this lesson.
+
+**What the stills changed on the pages.**
+
+*Damodaran.*
+- **Debt figures:** both sessions' spreadsheets subtract the same $472,335.56 million. The follow-up's slide labels it lease, purchase and compute commitments. So the spoken "$473 billion" is the debt line, not the commitments' present value. That value is $363.0 billion on the first session's slide and about $373 billion on the follow-up's. Neither explains the gap.
+- **Quarterly revenue:** the spoken "16 billion plus in the last quarter" against the chart's $11.6 billion for 2026 Q2 stays open. The slide refers to a third-quarter figure the chart does not plot.
+- **Sector table:** the follow-up's "technology median 10.75%" is the median cost of equity; the median cost of capital is 9.88%. Corrected in `index.md`.
+- **Other spoken figures:** the 3.7% risk premium is 8.99% minus 5.29%, and the PE formula gives 7.5, not 7.27.
+
+*Names read from lower-thirds and cards.*
+- The Panasonic interviewer is Andoni Larrucea; the transcript renders his name "Anthony".
+- The Reuters professor's lower-third reads "Zhao Yong", which confirms the earlier inference.
+- Wang's title card reads "Chats with Adam Volk".
+- The YC closing credits name the hosts as Garry Tan, [[Diana Hu]] and Jared Friedman. Diana Hu's page now lists the episode; `source_count` 4→5, confidence left at 0.85 because the episode credits her only as a host.
+
+*Other corrections.*
+- **YC:** a colleague's full name, visible in the demo thread, is not repeated in the page text.
+- **Microsoft:** two case slides carry *"Representative industry scenarios"*. "Anonymised customer case" became "customer story" on the page and in the index. The ASR's "snappy at 1:00 a.m." now stands beside the slide's "9am".
+- **First Proof:** the closing cards report the third batch's results in words: open-weight models far behind, best systems failing on exposition, and a fourth batch on open-source models. "The film gives no scores" was corrected.
+- **CNN:** graphics credit Stanford HAI, MIIT and Epoch AI for some figures.
+
+**Bookkeeping.**
+- `index.md`: eleven bullets updated (stills counts, names, figures).
+- Also fixed: an alt text ending in a number on [[2026-10-25-tremante-cloudflare-connect-open-agentic-internet]] (*"x402"*).
+- All touched pages pass `lint-page.mjs`; `source_count` and index completeness match.
+- Raw PNGs stay local (gitignored); the manifests are committed.
+
 ## [2026-11-16] refactor | Link Damodaran's Anthropic valuation to its follow-up
 
 The user noticed that the two Damodaran sessions from today's ingest did not appear linked. They were, but only from one side. The follow-up's `supports` edge showed in its own Relationships panel. The panel on [[2026-10-28-damodaran-anthropic-ipo-valuation|the first session]] shows only edges that page declares, so the follow-up was absent there. The first page's one link to it was the last bullet on the page, shown as a bare slug, and the two `index.md` bullets did not mention each other.

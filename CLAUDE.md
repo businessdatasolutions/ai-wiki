@@ -215,6 +215,19 @@ Gemini finds and reads the visuals, using static processing by default. Agentic 
 
 **Targeted search (added 2026-10-03).** When only one visual is wanted, such as *"the diagram explaining X"*, use [`search_stills.py`](.claude/skills/youtube-transcript-skill/search_stills.py) instead of a full scan. Gemini first reads the local transcript to pick a few likely windows, then samples only those minutes. On a 50-minute talk this cost 14–32% of a full scan. It found the central diagram every time; secondary visuals depended on which windows Locate picked, so it is a search, not a catalogue (measurements in the skill). It writes beside the full scan, never over it: `raw/images/<slug>/search-<query>/` and `raw/videos/<slug>.search-<query>.stills.md`. The manifest records the query and every window searched, with the reason. **Process treats a search manifest exactly like a full one:** verify every still against its pixels, select, publish. Point the source page's `stills:` field at whichever manifest the published stills came from.
 
+**Without Gemini (added 2026-11-17).** If `extract_stills.py` cannot run because there is no key or Gemini returns HTTP 402 (credits used up), do the Find step by hand and do not defer the stills:
+
+1. Download a 360p copy and take a frame every few seconds.
+2. Merge consecutive repeats and lay out the rest as contact sheets with time labels.
+3. View every sheet, and cut each candidate from the ≤1080p stream.
+4. Record `method: hand-picked (no Gemini call)` and the sampling in the manifest.
+
+**How dense to sample depends on the video.**
+- *Slide talks:* a 10-second grid is enough, because each slide stays up for half a minute or more. Scene detection does not help here: slides on one template change the picture too little to register as cuts. Check instead for 2-second frames that match no tile of the grid.
+- *Edited video* (news reports, podcasts with inserted screen recordings): a 10-second grid misses graphics shown for one to five seconds. Add a 2-second pass, or tile every shot shorter than 10 seconds (ffmpeg scene detection). On 2026-11-17 this found two of CNN's six published graphics and a one-second view of the YC Lightcone Slack thread.
+
+The batch of 2026-11-16 got its 78 stills this way, after its run had deferred them. The [Holmes page](wiki/sources/2026-11-02-holmes-warp-agentic-self-improvement-loop.md) is the earlier hand-picked precedent.
+
 **Process**, when a video source has a `.stills.md` manifest:
 
 1. **Verify every still by viewing it** (`Read` the PNG). Gemini's reading is a draft. Correct it against the pixels, small print especially. Never publish a transcription you have not checked against its image.

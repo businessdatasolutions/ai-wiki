@@ -7,8 +7,9 @@ publisher: "Google Cloud Tech (YouTube channel), recorded livestream; Amin Vahda
 url: "https://www.youtube.com/watch?v=pabDkNR7jIs"
 date_published: 2026-11-09
 date_ingested: 2026-11-16
-length: "~39:51 minutes (transcript ~205 lines; human-written track (en-US), 14 chapters)"
+length: "~39:51 minutes (transcript ~205 lines + 12 stills; human-written track (en-US), 14 chapters)"
 raw: "../../raw/videos/the-future-of-ai-infrastructure.md"
+stills: "../../raw/videos/the-future-of-ai-infrastructure.stills.md"
 tags: [google, google-cloud, google-cloud-tech, amin-vahdat, mark-lohmeyer, maria-biggs, ai-hypercomputer, co-design, tpu, tpu-8t, tpu-8i, tpu-8tx, tpu-8i-max, agentic-inference, kv-cache, memory-wall, hbm, confidential-computing, energy-efficiency, pue, project-suncatcher, torchtpu, pytorch, vllm, sglang, llm-d, gke-inference-gateway, nvidia, vera-rubin, agent-compute-engine, microvm, sandbox, agent-substrate, kubernetes, cncf, agent-gateway, agent-registry, agent-identity, agent-governance, axion, cpu, jevons-paradox, livestream, vendor-keynote, science-technology]
 dynamic_capabilities:
   - contextual/external-triggers
@@ -125,6 +126,194 @@ The runtimes run on Intel and AMD x86 and on Google's Arm-based **Axion**, whose
 
 For a firm deciding where to run agents, this is a `contextual/external-triggers` source: a disruptive digital technology, infrastructure rebuilt around agent workloads, that changes the cost of inference, the isolation of agent-executed code and the governance tools on offer. It says nothing about how a customer organisation should change to use it.
 
+## Visual canon
+
+### 1 · A Gemini agent task with three subagents running
+
+![[assets/2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure/01-01m30-gemini-agent-task-and-subagents.webp|Gemini agent task with plan, files and subagents]]
+
+*Still at [1:30](https://www.youtube.com/watch?v=pabDkNR7jIs&t=90s) from Google Cloud Tech, "The Future of AI Infrastructure".*
+
+The Gemini app, task **Prepare Q4 product launch materials**. Prompt: *"Create an executive powerpoint deck and revenue projections in Excel for my q4 product launch. Find the whiteboard sketch from our meeting this afternoon And can you include a video reel for the launch too?"* Status: *Working for 7s · Thinking…*. Right panel:
+
+- **Progress:** *Q4 Executive Launch Pack: 7-slide deck, Excel model, 20s reel, SharePoint*: (1) Read whiteboard & Drive, (2) Review Jira & readiness tracker, (3) Build deck & Excel (Brand Kit), (4) Render reel & publish to SharePoint.
+- **Files:** `.shared`, `plan.json`, `plan.md`.
+- **Subagents (3):** Whiteboard Sketch Rea…, Google Drive Launch Fol…, Jira & Readiness Tracker…, all *Running*.
+
+The sidebar lists recurring scheduled tasks under a *Second Brain & Daily Pulse* project (wake-up routine, morning executive briefing and others). Input options: *Ask when needed*, *Auto*.
+
+*Still vs. transcript:* the narration says Gemini *"spins up sub-agents, queries your systems, coordinates tools"*; the screen shows one such task: a four-step plan written to files, three subagents working in parallel on the whiteboard, Drive and Jira, and scheduled agents that recur without a prompt.
+
+### 2 · Ten TPU boards, 2015 to 2026
+
+![[assets/2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure/04-07m10-google-tpu-generations.webp|Google TPUs, from TPU v1 to TPU 8i]]
+
+*Still at [7:10](https://www.youtube.com/watch?v=pabDkNR7jIs&t=430s) from Google Cloud Tech, "The Future of AI Infrastructure".*
+
+**Google TPUs**, boards shown left to right, growing from a small card to a liquid-cooled tray:
+
+| Board | TPU v1 | TPU v2 | TPU v3 | TPU v4 | TPU v5e | TPU v5p | Trillium | Ironwood | TPU 8t | TPU 8i |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Year | 2015 | 2018 | 2020 | 2022 | 2023 | 2023 | 2024 | 2025 | 2026 | 2026 |
+
+*Still vs. transcript:* the narration speaks of *"eight generations of custom silicon"* without naming them; the slide names ten boards with years. Two generations ship as pairs (v5e and v5p, 8t and 8i), which is how eight generations become ten products.
+
+### 3 · TorchTPU: what changes in a PyTorch script
+
+![[assets/2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure/13-23m00-torchtpu-code-change.webp|TorchTPU, a typical PyTorch script and the same script on Cloud TPU]]
+
+*Still at [23:00](https://www.youtube.com/watch?v=pabDkNR7jIs&t=1380s) from Google Cloud Tech, "The Future of AI Infrastructure".*
+
+**TorchTPU.** *A typical PyTorch script* → *The same script on Cloud TPU*, with the changed arguments highlighted:
+
+```python
+import torch.distributed as dist
+dist.init_process_group("nccl")
+model.to("cuda")
+# ...rest of your model code
+```
+
+```python
+import torch.distributed as dist
+dist.init_process_group("tpu_dist")
+model.to("tpu")
+# ...rest of your model code
+```
+
+*Still vs. transcript:* the narration says developers *"keep their code"*; the slide shows the change as two string arguments, the distributed backend (`"nccl"` → `"tpu_dist"`) and the device (`"cuda"` → `"tpu"`).
+
+### 4 · Two accelerator lines side by side
+
+![[assets/2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure/15-24m10-two-accelerator-platforms.webp|Two leading accelerator platforms, Google TPUs and NVIDIA GPUs]]
+
+*Still at [24:10](https://www.youtube.com/watch?v=pabDkNR7jIs&t=1450s) from Google Cloud Tech, "The Future of AI Infrastructure".*
+
+**Two leading accelerator platforms.**
+
+- **Google TPUs:** TPU v1, TPU v2, TPU v3, TPU v4, TPU v5e, TPU v5p, Trillium, Ironwood, TPU 8t, TPU 8i.
+- **NVIDIA GPUs** (Google Cloud instance families): G2, A2, G4, A3 High, A3 Ultra, A4, A4X, A4X Max. The next build (24:20) shows the GPU line alone with **A5X** added as the ninth.
+
+*Still vs. transcript:* the narration names only A5X (Vera Rubin) and the Blackwell-based Distributed Cloud; the slide sets the full run of NVIDIA instance families beside the TPU line as two equal product lines.
+
+### 5 · TPU Sync moves memory between chip and host
+
+![[assets/2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure/17-25m40-tpu-sync-memory-chart.webp|TPU Sync memory chart, TPU memory and host CPU memory]]
+
+*Still at [25:40](https://www.youtube.com/watch?v=pabDkNR7jIs&t=1540s) from Google Cloud Tech, "The Future of AI Infrastructure".*
+
+An animated line chart. The y-axis runs from 0.00 to 0.25 in steps of 0.05, with no unit; there is no x-axis label. One line climbs and falls between about 0.01 and 0.21, its colour shifting between white (*TPU memory*) and blue (*Host CPU memory*); the legend highlights each in turn as the line draws. Footnote: **"TPU Sync supports v8, Ironwood (v7), Trillium (v6) and v5"**.
+
+*Still vs. transcript:* the narration describes working memory leaving the chip when an agent pauses. The chart illustrates that rather than measuring it (no units), but the footnote adds what the narration omits: TPU Sync is not limited to the eighth generation and runs back to v5.
+
+### 6 · llm-d serving across TPU and GPU pools
+
+![[assets/2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure/20-27m50-vllm-sglang-behind-single-api.webp|vLLM and SGLang behind a single API]]
+
+*Still at [27:50](https://www.youtube.com/watch?v=pabDkNR7jIs&t=1670s) from Google Cloud Tech, "The Future of AI Infrastructure".*
+
+**vLLM & SGLang behind a single API** (final build of a three-step diagram):
+
+- **Callers:** Background tasks; Agent loops.
+- **Front:** *Single API* → **GKE Inference Gateway** (*llm-d 1.0, Fair flow control*).
+- **Pools:** **TPU** (Prefill, Decode) and **GPU** (Prefill, Decode).
+- **Three tier KV cache:** TPU memory ⟷ (*TPU Sync*) ⟷ Host CPU memory ⟷ KV cache storage; a dashed loop links the cache to the pools.
+
+The earlier builds: *Disaggregation and caching* (27:10), one *Agent request* feeding *Prefill: Read prompt* and *Decode: Generate response*; and *Multi-tenant quality of service* (27:40), which adds background tasks, *Fair flow control* and a single *TPU pool*.
+
+*Still vs. transcript:* the narration lists llm-d's features one by one; the diagram shows how they fit together. TPU Sync is the link between the first two cache tiers, and the last build replaces the single TPU pool with TPU and GPU pools behind one API, each splitting prefill from decode.
+
+### 7 · One agent session over minutes to days
+
+![[assets/2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure/21-29m30-agents-are-a-new-workload.webp|Agents are a new workload, one agent session]]
+
+*Still at [29:30](https://www.youtube.com/watch?v=pabDkNR7jIs&t=1770s) from Google Cloud Tech, "The Future of AI Infrastructure".*
+
+**Agents are a new workload.** *They present unique challenges and requirements.* Three boxes: **Long-running · Stateful · Often idle**. Below, **One agent session**, legend *Inference* (blue), *Management* (green), *Idle* (grey):
+
+| Row | Activity across the session |
+| --- | --- |
+| GPU/TPU | six short inference bursts, idle in between |
+| CPU | nine management bursts, closer together |
+| State | *Context • Memory • Tool state—never idle, never lost* |
+
+Time axis: *t-0 → minutes → hours → days*.
+
+*Still vs. transcript:* the narration gives the three adjectives; the timeline shows the consequence for hardware. The accelerator works in short bursts, the CPU carries more of the session, and the state has to persist through every pause from minutes to days.
+
+### 8 · Three walls around agent-generated code
+
+![[assets/2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure/23-31m30-sandbox-isolation-layers.webp|Sandbox isolation layers, identity, network and kernel]]
+
+*Still at [31:30](https://www.youtube.com/watch?v=pabDkNR7jIs&t=1890s) from Google Cloud Tech, "The Future of AI Infrastructure".*
+
+Nested boxes, outermost first:
+
+1. **Identity:** *An IAM principal for every sandbox*
+2. **Network:** *An integrated gateway with egress controls*
+3. **Kernel:** *A microVM with its own kernel*
+4. *Agent-generated code* (centre)
+
+*Still vs. transcript:* the narration describes the identity layer as *"injecting cryptographically verified IDs"*; the slide names the mechanism, an IAM principal per sandbox, and draws the three layers as walls nested around the agent's code.
+
+### 9 · The Agent Compute Engine API
+
+![[assets/2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure/26-34m30-agent-compute-engine-api.webp|Agent Compute Engine API between your harness and the host pool]]
+
+*Still at [34:30](https://www.youtube.com/watch?v=pabDkNR7jIs&t=2070s) from Google Cloud Tech, "The Future of AI Infrastructure".*
+
+**Your harness** → *Create • Snapshot • Suspend • Resume • Delete* → **Agent Compute Engine API and SDK** → **Shared host pool. Google-run.**, containing **Your sandbox: A Linux microVM**.
+
+*Still vs. transcript:* the narration lists *"create, pause, and delete"*; the slide gives five calls, with snapshot as a separate operation, and draws the line of responsibility: the customer's harness above the API, a Google-run shared host pool below it.
+
+### 10 · Agent Substrate on Kubernetes
+
+![[assets/2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure/27-35m00-agent-substrate-stack.webp|Agent Substrate stack on storage, Kubernetes and compute]]
+
+*Still at [35:00](https://www.youtube.com/watch?v=pabDkNR7jIs&t=2100s) from Google Cloud Tech, "The Future of AI Infrastructure".*
+
+**Agent Substrate**, three components:
+
+- Gateway (ingress/egress control)
+- State persistence (suspend/resume)
+- Kernel isolation (gVisor/microVM)
+
+Underneath: **Storage**, **Kubernetes**, **Compute**.
+
+*Still vs. transcript:* the narration says *"container sandboxing, microVM support"*; the slide names gVisor beside microVM as the kernel-isolation option, a name the narration never uses, and shows Substrate as a layer on top of storage, Kubernetes and compute.
+
+### 11 · The governance model for agents
+
+![[assets/2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure/28-36m50-agent-governance-model.webp|Agent Registry, Agent Gateway, Agent Identity and Agent Observability]]
+
+*Still at [36:50](https://www.youtube.com/watch?v=pabDkNR7jIs&t=2210s) from Google Cloud Tech, "The Future of AI Infrastructure".*
+
+| Component | Definition on the slide |
+| --- | --- |
+| Agent Registry | Central directory of approved tools and MCP servers |
+| Agent Gateway | Central enforcement point routing and securing every agent, tool, and model call |
+| Token management (inside the gateway) | Spend attribution, budget guardrails, and zero clear text secrets |
+| Agent Identity | Cryptographic digital signature for access control and auditing |
+| Agent Observability (beneath all three) | Full telemetry across every interaction |
+
+*Still vs. transcript:* the narration calls the gateway *"the air traffic controller"*; the slide defines it as the enforcement point for every agent, tool and model call, draws token management inside it, and puts observability as a layer under registry, gateway and identity.
+
+### 12 · Recap: the announcements by layer
+
+![[assets/2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure/31-39m30-recap-whats-new.webp|AI Hypercomputer recap of what is new]]
+
+*Still at [39:30](https://www.youtube.com/watch?v=pabDkNR7jIs&t=2370s) from Google Cloud Tech, "The Future of AI Infrastructure".*
+
+**AI Hypercomputer — Recap: What's new**
+
+| Layer | What's new |
+| --- | --- |
+| Flexible consumption | Agent Compute Engine, Agent Substrate. Consistent governance across Agent Gateway, Agent Registry, and Agent Identity |
+| Open software | Native PyTorch with TorchTPU, vLLM and SGLang support, TPU Sync, and llm-d 1.0 |
+| Purpose-built hardware | TPU 8tx, TPU 8i Max, and NVIDIA A5X |
+| Data centers and energy | *(nothing listed)* |
+
+*Still vs. transcript:* the closing narration sums up in three phrases; the slide files every announcement under a layer of the AI Hypercomputer. It puts the agent runtimes and governance under *flexible consumption* rather than software, and lists nothing new under data centers and energy, where the talk reported figures but announced no product.
+
 ## Linked entities and concepts
 
 - [[Google]] — publisher (*Google Cloud Tech* is an alias) and employer of all three speakers; [[Google DeepMind]] named as the TPU co-design partner.
@@ -134,4 +323,4 @@ For a firm deciding where to run agents, this is a `contextual/external-triggers
 
 ## Source quality
 
-A scripted product keynote on the vendor's channel. The figures are Google's claims about Google's products, with no third-party benchmarks, few baselines (none for 8T's "2.7 times lower costs" or the runtime's efficiency) and unnamed customers; the demand figures come from unnamed forecasts. Human-written caption track, quoted verbatim; it spells one partner "RadixArc", given here as RadixArk. **Slides and on-screen specifications are not captured**: the stream is slide-led, and a stills scan on 2026-11-16 failed (Gemini billing), so stills are deferred. Its value is a dated, detailed statement of how one hyperscaler divides agent infrastructure: accelerators per life-cycle stage, serving software tuned for long agent contexts, and microVM sandboxes that pause and resume.
+A scripted product keynote on the vendor's channel. The figures are Google's claims about Google's products, with no third-party benchmarks, few baselines (none for 8T's "2.7 times lower costs" or the runtime's efficiency) and unnamed customers; the demand figures come from unnamed forecasts. Human-written caption track, quoted verbatim; it spells one partner "RadixArc", given here as RadixArk. **Slides:** the stream is slide-led. The automated stills scan failed on 2026-11-16 (Gemini billing), so on 2026-11-17 12 stills were hand-picked from contact sheets of the whole video and transcribed under *Visual canon*; slides whose figures the narration reads out were left unpublished (see the manifest). Its value is a dated, detailed statement of how one hyperscaler divides agent infrastructure: accelerators per life-cycle stage, serving software tuned for long agent contexts, and microVM sandboxes that pause and resume.

@@ -6,9 +6,9 @@ tags: [diana-hu, y-combinator, ai-native-company, closed-loop-company, ai-founde
 affiliation: "[[Y Combinator]]"
 role: "General Partner, Y Combinator; ex-Co-founder/CTO of Escher Reality (YC S17; acquired by Niantic); ex-Head of AR Platform at Niantic; ex-Data Science Lead at OnCue TV (acquired by Verizon)"
 confidence: 0.85
-last_confirmed: "2026-05-28"
-accessed_at: "2026-05-28"
-source_count: 4
+last_confirmed: "2026-11-17"
+accessed_at: "2026-11-17"
+source_count: 5
 ---
 
 # Diana Hu
@@ -20,6 +20,8 @@ Promoted from Dangling to an entity page on 21 May 2026 after the second substan
 1. [[2026-04-24-hu-yc-how-to-build-a-company-with-ai-from-the-ground-up|Hu / YC Startup School April 2026]] — first solo-headlining ingest; the prescriptive framework for AI-native company structure (AI-as-operating-system; closed-loop vs open-loop companies; software factories; the 1,000× engineer thesis; three archetypes via Jack Dorsey at Block; token-maxing not headcount-maxing; the *AI founder type* archetype prescribing *"still builds, still coaches, leads by example"*).
 2. [[2026-05-20-tan-hu-stanford-cs153-ai-native-company-1000x-engineer|Tan & Hu / Stanford CS153 May 2026]] — second-half-headliner with [[Garry Tan]] at Stanford CS153 Frontier Systems. The April framework is re-applied and extended at the Stanford-classroom altitude: the **closed-loop-company control-systems framing** (P-controller analogy made explicit — *"the problem with open-loop systems is as error accumulates the systems become more erroneous and then it goes off the rails; closed loop is like a P controller, you have a tight feedback loop into the controller so a lot of the error stays within check"*) gains depth; the three-role org structure (IC / DRRi / AI founder type) is reasserted with Jack Dorsey's flat-org post as the recall anchor; the **$1–2M revenue per employee benchmark** for YC AI-native portfolio companies is re-anchored to three forward-deployed-engineer worked examples: **Salient** (voice agents for loan servicing), **Happy Robot** (freight forwarders), **Reducto** (document processing). Hu closes the lecture with the [[Anthropic]] economic-deployment chart and the *giant white space across back office / finance / data / academics / cybersecurity / customer service* call-to-action.
 3. [[2026-02-25-akhtar-forget-yc-letter-ai-powered-revenue|Akhtar & Forget / Letter AI on YC Root Access February 2026]] — third substantive source mention (added 22 May 2026 backfill batch), this time as the **interviewing GP** on a Founder Firesides episode rather than as the headlining lecturer. The vantage is asymmetric to the first two sources: Hu draws out from Letter AI co-founders the pivot-during-batch + Lenovo-closed-in-batch + MCP-server-as-vendor-product-surface story, framing the questions in the *AI-native enablement* language her April framework prescribes. The episode pre-dates her two later headlining ingests by two months, which means the wiki now has Hu as **interviewer-vantage 25 Feb → headlining-vantage 24 April → CS153-co-headlining-vantage 20 May** across a three-month arc. Confirms that Hu's *AI-native sales-and-revenue stack* worldview was already operational at the GP-interviewer altitude before she gave it explicit framework form in April.
+
+Also a host, with [[Garry Tan]] and Jared Friedman, of the [[2026-11-14-tan-ugarte-yc-lightcone-rise-of-ai-coworkers|Lightcone episode on AI coworkers]] (14 Nov 2026). She is named only in its closing credits; the transcript has no speaker labels, so none of the episode's statements is attributed to her.
 
 ## Role in the wiki
 

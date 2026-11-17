@@ -3,7 +3,7 @@ type: source
 kind: video
 title: "BIZ-TALKS: CEO Kentaro Ikeda on AI, Operations, and Europe's Industrial Future"
 author: ["Panasonic Connect Europe"]
-publisher: "Panasonic Connect Europe (YouTube channel), *BIZ-TALKS* series; interviewer Anthony (surname not given); guest Kentaro Ikeda, CEO of Panasonic Connect Europe"
+publisher: "Panasonic Connect Europe (YouTube channel), *BIZ-TALKS* series; interviewer Andoni Larrucea (Panasonic Connect Europe, per his lower-third); guest Kentaro Ikeda, CEO of Panasonic Connect Europe"
 url: "https://www.youtube.com/watch?v=9WLwQYzObks"
 date_published: 2026-11-13
 date_ingested: 2026-11-16
@@ -35,7 +35,7 @@ relationships:
 
 ## TL;DR
 
-A 15-minute episode of *BIZ-TALKS*, the "thought leadership" interview series on the Panasonic Connect Europe corporate channel. The interviewer, introduced only as Anthony, talks with Kentaro Ikeda ("Kent"), who became CEO of Panasonic Connect Europe six months earlier after postings that included Singapore. **Auto-generated transcript, ASR-cleaned in quotation**: "beast talks"/"B talks" → BIZ-TALKS, "IDeda" → Ikeda, "TUK" → TOUGHBOOK, "manage service" → managed service. The video had 180 views at acquisition.
+A 15-minute episode of *BIZ-TALKS*, the "thought leadership" interview series on the Panasonic Connect Europe corporate channel. The interviewer, Andoni Larrucea of Panasonic Connect Europe (named in a lower-third at 0:16; the transcript renders his name "Anthony"), talks with Kentaro Ikeda ("Kent"), who became CEO of Panasonic Connect Europe six months earlier after postings that included Singapore. **Auto-generated transcript, ASR-cleaned in quotation**: "beast talks"/"B talks" → BIZ-TALKS, "IDeda" → Ikeda, "TUK" → TOUGHBOOK, "manage service" → managed service. The video had 180 views at acquisition.
 
 What it adds to the wiki:
 
