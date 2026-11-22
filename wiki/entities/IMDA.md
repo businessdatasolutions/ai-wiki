@@ -7,7 +7,7 @@ affiliation: "Government of Singapore — Ministry of Digital Development and In
 role: "Singapore's infocomm and media regulator; publisher of the Model AI Governance Framework series"
 confidence: 0.7
 last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
+accessed_at: "2026-11-18"
 source_count: 1
 ---
 

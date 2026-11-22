@@ -4,7 +4,7 @@ aliases: ["agent development lifecycle", "ADLC", "agent SDLC", "agent lifecycle"
 tags: [agent-development-lifecycle, adlc, ai-agents, agent-engineering, lifecycle-frameworks, sdlc-parallel, build-test-deploy-monitor, agent-governance, evals, llm-as-judge]
 confidence: 0.93
 last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
+accessed_at: "2026-11-18"
 source_count: 31
 relationships:
   - type: part-of

@@ -4,7 +4,7 @@ aliases: ["expert generalist", "Expert Generalist", "expert generalists", "gener
 tags: [expert-generalist, generalist-vs-specialist, t-shaped, fundamentals-over-tools, patterns, mechanical-sympathy, durable-skills, distributed-systems-fundamentals, hiring, llms-and-skills]
 confidence: 0.90
 last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
+accessed_at: "2026-11-18"
 source_count: 13
 relationships:
   - type: supports

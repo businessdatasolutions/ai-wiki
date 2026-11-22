@@ -4,7 +4,7 @@ aliases: ["analogical reasoning", "analogical-reasoning", "strategy by analogy",
 tags: [analogical-reasoning, strategy-theory, theory-based-view, carroll, sorensen]
 confidence: 0.8
 last_confirmed: "2026-09-09"
-accessed_at: "2026-09-09"
+accessed_at: "2026-11-18"
 source_count: 5
 relationships:
   - type: supports

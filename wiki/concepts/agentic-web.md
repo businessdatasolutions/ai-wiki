@@ -5,7 +5,7 @@ aliases: ["agentic web", "agentic Internet", "agentic internet", "zero-click", "
 tags: [agentic-web, aeo, answer-engines, agentic-internet, zero-click, google-zero, referral-traffic, ai-crawlers, training-crawlers, bot-traffic, content-licensing, pay-per-crawl, x402, web-bot-auth, agentic-commerce, open-web, publishers, search-to-answers, browser-agents, computer-use, agent-authentication]
 confidence: 0.75
 last_confirmed: "2026-11-07"
-accessed_at: "2026-11-07"
+accessed_at: "2026-11-18"
 source_count: 15
 relationships:
   - type: depends-on

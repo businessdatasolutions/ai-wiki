@@ -4,7 +4,7 @@ aliases: ["software 3.0", "Software 3.0", "software-3.0", "LLM as computer", "LL
 tags: [software-3.0, software-2.0, software-1.0, llm-paradigm, prompting, context-window, ai-engineering, karpathy]
 confidence: 0.88
 last_confirmed: "2026-09-19"
-accessed_at: "2026-09-19"
+accessed_at: "2026-11-18"
 source_count: 14
 relationships:
   - type: instance-of

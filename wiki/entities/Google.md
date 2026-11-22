@@ -6,7 +6,7 @@ tags: [google, big-tech, hyperscaler, ai-lab, foundation-models, gemini, google-
 since: 1998
 confidence: 0.95
 last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
+accessed_at: "2026-11-18"
 source_count: 44
 relationships:
   - type: published-by

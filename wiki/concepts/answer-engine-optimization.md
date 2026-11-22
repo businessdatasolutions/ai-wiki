@@ -5,7 +5,7 @@ aliases: ["answer engine optimization", "answer engine optimisation", "AEO", "ge
 tags: [aeo, geo, seo, answer-engines, ai-search, citations, brand-visibility, share-of-voice, prompt-tracking, consensus, earned-media, entity-richness, bot-accessibility, buyer-journey]
 confidence: 0.75
 last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
+accessed_at: "2026-11-18"
 source_count: 8
 relationships:
   - type: part-of

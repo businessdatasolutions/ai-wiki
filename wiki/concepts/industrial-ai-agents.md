@@ -12,7 +12,7 @@ relationships:
   - type: depends-on
     target: agent-harness
     via: "the runtime layer is still required; industrial-AI agents add a semantic-data-layer dependency on top"
-accessed_at: "2026-11-16"
+accessed_at: "2026-11-18"
 quality_score: 1
 ---
 
