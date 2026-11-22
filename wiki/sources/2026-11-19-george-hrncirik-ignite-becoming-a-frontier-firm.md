@@ -21,6 +21,10 @@ relationships:
     target: 2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart
     via: "same speaker four months later; the Ignite session is the slide-led version of the practice George described on WorkLab (Camp AIR, role-based huddles, the 100 case studies, the chain from adoption to revenue per rep), now with figures. A restatement by the same person, not independent support"
     confidence: 0.9
+  - type: depends-on
+    target: 2026-09-16-microsoft-becoming-a-frontier-firm-second-edition
+    via: "the session presents the Microsoft Frontier Playbook (second edition, Sept 2026), co-signed by George; its recipes, figures and Cowork slides are the playbook's. Same authorship, not independent support"
+    confidence: 0.9
   - type: supports
     target: 2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about
     via: "both concern the Frontier Firm programme and AI adoption that has to be guided rather than left to self-discovery; George cites the HBS case on Microsoft's first Copilot rollout to sales, whose usage went up and then 'crashing down to nothing'"
@@ -318,6 +322,7 @@ Shared layer: context · evals · agent definitions.
 
 ## Related in this wiki
 
+- [[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|The Microsoft Frontier Playbook, second edition (Sept 2026)]] — the 44-page document this session presents, co-signed by George. Five elements (goals, diffusion engine, people, codified advantage, security), of which the session covers mainly the first two.
 - [[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart|George on WorkLab (July 2026)]] — the same speaker on the same practice (Camp AIR, huddles, the 100 case studies, the adoption-to-revenue chain), as a conversation without slides or figures.
 - [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|The Frontier Firm AI Initiative's About page]] — the Microsoft–Harvard research programme; its early insights concern guided rather than self-discovered adoption. George cites the HBS case on Microsoft's first Copilot sales rollout.
 - [[2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder|Diasio (EY) on WorkLab]] — EY's Client Zero programme and its function-by-function blueprint toward the Frontier Firm.
@@ -339,7 +344,7 @@ Shared layer: context · evals · agent definitions.
 
 ## Scope and reliability
 
-Microsoft describes its own transformation at its own customer event, in a session meant to help sell the tools it describes. Every figure is self-reported and unaudited, and the slides limit their own scope: *"impact that we are seeing with the recipe approach, in the context of our company."* The sales figures are for a pilot group and the adoption figure is from a survey. The supply-chain figure covers "selected workflows", and two of its three results have no number. The sales time-allocation chart is a target. The Copilot Cowork build is the team behind one of Microsoft's own products. No method, sample or comparison group is given for any figure. The audience contributions are from unnamed participants, except Korn Ferry, which is named by its speaker. The *Frontier Playbook* the session draws on was not ingested. The video description links a PDF titled *Becoming a Frontier Firm*, second edition, from September 2026, which is probably the same document; that is not confirmed.
+Microsoft describes its own transformation at its own customer event, in a session meant to help sell the tools it describes. Every figure is self-reported and unaudited, and the slides limit their own scope: *"impact that we are seeing with the recipe approach, in the context of our company."* The sales figures are for a pilot group and the adoption figure is from a survey. The supply-chain figure covers "selected workflows", and two of its three results have no number. The sales time-allocation chart is a target. The Copilot Cowork build is the team behind one of Microsoft's own products. No method, sample or comparison group is given for any figure. The audience contributions are from unnamed participants, except Korn Ferry, which is named by its speaker. The *Frontier Playbook* the session draws on is the PDF linked from the video description, whose cover reads *"Our Frontier Playbook"*. It is ingested as [[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition]], and it carries the same figures under the same footer.
 
 ## What was actually ingested
 

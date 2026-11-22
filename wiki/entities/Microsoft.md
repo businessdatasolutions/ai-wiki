@@ -7,7 +7,7 @@ website: "https://microsoft.com"
 confidence: 0.90
 last_confirmed: "2026-11-22"
 accessed_at: "2026-11-22"
-source_count: 22
+source_count: 23
 relationships:
   - type: employs
     target: GitHub
@@ -113,3 +113,8 @@ WorkLab's third wiki source, [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-f
 ## Microsoft Events channel: its Frontier Firm playbook at Ignite 2026 (added 2026-11-22)
 
 [[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|George and Hrncirik, Microsoft Ignite 2026 (BRK531)]]: the wiki's first source from the *Microsoft Events* channel, added as an alias so its videos resolve here. Katy George, now titled CVP Workforce and AI Transformation, gives the slide-led version of her [[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart|WorkLab account]]. It covers a Customer Zero Council, 100+ internal case studies, the *Microsoft Frontier Playbook* and its three recipes (persona acceleration, AI-powered process redesign, AI-first possibility). It also gives figures: 9.4% revenue per head and 20% higher close rates in a sales pilot group, a 75% cut in cycle time across selected supply-chain workflows, and a nine-person Copilot Cowork team that shipped in 35 days. Cory Hrncirik, Senior Director Finance, describes finance's six end-to-end processes and its CFO-picked first six projects. These are Microsoft's figures for itself, at its own customer event.
+
+## The Frontier Playbook (added 2026-11-22)
+
+[[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Becoming a Frontier Firm: Our Frontier Playbook, second edition (Sept 2026)]]: a 44-page deck signed by Kathleen Hogan (EVP Strategy and Transformation) and Katy George. Its five elements are business ambition and goals, a diffusion engine, people, codified advantage and controls, and security. It is the document behind the [[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Ignite 2026 session]]. It adds AI Transformation Offices in every function, three levels of AI, *CI + AI = CA*, a four-layer measurement pipeline, a people section citing the May 2026 Work Trend Index, and the "hill-climbing machine" of private evals that keeps a firm's intelligence *"inside your boundary"*. It is Microsoft's account of itself, and it ends with a sales contact.
+

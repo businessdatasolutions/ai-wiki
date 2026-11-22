@@ -6,7 +6,7 @@ tags: [spec-driven-development, sdd, specifications, spec-first, spec-anchored, 
 confidence: 0.75
 last_confirmed: "2026-11-22"
 accessed_at: "2026-11-22"
-source_count: 8
+source_count: 9
 relationships:
   - type: part-of
     target: agentic-engineering
@@ -78,7 +78,7 @@ From Kmiecik, the only source that lists them:
 
 ## Spec, evals and context as a team's stack (added 2026-11-22)
 
-A slide in [[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Microsoft's Ignite 2026 session]] puts the spec at the base of an "AI-first stack" for a whole product team rather than one developer. *"Zero-base the work: don't add agents to today's process. Build the stack the agent runs on."* The stack is **SPEC** (*"write the intent"*), **EVALS** (*"define what's good"*) and **CONTEXT** (*"set context for agents"*). The team that built Copilot Cowork was nine people (three meta-engineers, three meta-designers, three meta-PMs) with agents, *"working from a shared context and evals"*. Its shared layer is *"context · evals · agent definitions."* The slide reports 18.6K commits and a first release in 35 days. Neither speaker discusses the slide, so it says nothing about how the specs were written or reviewed. It places the spec alongside evals as the inputs a team maintains.
+A slide in [[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Microsoft's Ignite 2026 session]] puts the spec at the base of an "AI-first stack" for a whole product team rather than one developer. *"Zero-base the work: don't add agents to today's process. Build the stack the agent runs on."* The stack is **SPEC** (*"write the intent"*), **EVALS** (*"define what's good"*) and **CONTEXT** (*"set context for agents"*). The team that built Copilot Cowork was nine people (three meta-engineers, three meta-designers, three meta-PMs) with agents, *"working from a shared context and evals"*. Its shared layer is *"context · evals · agent definitions."* The slide reports 18.6K commits and a first release in 35 days. Neither speaker discusses the slide. [[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Microsoft's Frontier Playbook, second edition (Sept 2026)]] names the method: the squad *"truly 'zero-based' the work by taking an 'automate everything' mindset and implementing a spec-driven development approach."* It counts *"the spec, prompt, eval, skill, agent behavior, operating rule, or architecture pattern"* as the reusable prize, to be published to a shared library. Neither source says how the specs were written or reviewed. It places the spec alongside evals as the inputs a team maintains.
 
 ## When it is and is not the right tool
 
@@ -109,5 +109,6 @@ Kmiecik's boundary matches the one [[vibe-coding]] already draws. Vibe coding is
 - [[2026-04-21-forsgren-macvean-build-core-skills-thrive-ai-era-developer]] — specs plus rules plus skills as the source of truth for what and why.
 - [[2026-07-06-google-cloud-agent-factory-intent-driven-development]] — intent-driven development and a design wireframe used as spec, prompt and acceptance test.
 - [[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm]] — spec, evals and context as the stack of a nine-person product team with agents (one slide, not discussed).
+- [[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition]] — the same team, described as spec-driven, and the spec as one of the reusable patterns an AI-first squad publishes.
 
 Mentioned without substance, not counted: [[2026-01-09-baron-signals-for-2026|Baron / O'Reilly]] lists *eval- and spec-driven development* in its 2026 vocabulary, and [[2025-12-02-allen-brozovich-davis-aws-reinvent-advanced-team-structures|AWS re:Invent]] names Kiro alongside it.

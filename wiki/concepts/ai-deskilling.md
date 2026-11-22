@@ -5,7 +5,7 @@ tags: [deskilling, task-composition, ai-employment-effects, occupations]
 confidence: 0.90
 last_confirmed: "2026-11-22"
 accessed_at: "2026-11-22"
-source_count: 43
+source_count: 44
 relationships:
   - type: instance-of
     target: ai-employment-effects
@@ -287,3 +287,7 @@ The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] returns to de
 - **The conclusions** list *"preventing the de-skilling of students and workers"* among the challenges ahead.
 
 SQ3 asks the design question: *"Can AI tutoring systems be designed to enhance human skill acquisition over time rather than creating dependency?"*
+
+## Redesign early-career roles, do not automate them (added 2026-11-22)
+
+[[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Microsoft's Frontier Playbook, second edition (Sept 2026)]] takes a stated position on the pipeline problem: *"The temptation to simply automate junior work is strong. The consequence is hollowing out the apprenticeship pipeline that produces senior talent. We are doing the opposite."* Its PRAISE programme (*Preceptorship for AI in Software Engineering*) pairs new engineers with experienced mentors for two-way learning: *"the senior teaches craft; the junior teaches AI fluency."* It also puts learning prompts into daily work, for example through a Skill Advisor agent for engineers. It is an employer's statement of intent, with no data on how juniors fare.

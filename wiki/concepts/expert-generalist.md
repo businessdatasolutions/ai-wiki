@@ -5,7 +5,7 @@ tags: [expert-generalist, generalist-vs-specialist, t-shaped, fundamentals-over-
 confidence: 0.90
 last_confirmed: "2026-11-22"
 accessed_at: "2026-11-22"
-source_count: 14
+source_count: 15
 relationships:
   - type: supports
     target: durable-skills
@@ -106,3 +106,7 @@ That is the expert-generalist thesis stated as a complementarity result: breadth
 ## "Leave your discipline at the door" (added 2026-11-22)
 
 [[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Katy George at Microsoft Ignite (Nov 2026)]] repeats the T-shaped claim above and gives two more pieces of Microsoft's practice. At Camp AIR, the first thing engineers, designers and product managers hear is *"leave your discipline at the door… You're all here as builders."* A slide on the Copilot Cowork build renames the disciplines **meta-engineers**, **meta-designers** and **meta-PMs**, three of each, working with agents. In finance, she says, people *"have to be able to think more about kind of the whole system,"* while *"expertise and judgment"* are *"more important than ever before."* The same speaker as the WorkLab source, on the same programmes.
+
+## Full-stack product builders and content integrators (added 2026-11-22)
+
+[[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Microsoft's Frontier Playbook, second edition (Sept 2026)]], co-signed by Katy George, writes down what the sections above quote her saying. *"Vertical discipline still matters. But now horizontal integration—connecting your activity all the way to value delivery—is also a baseline expectation. Engineers redefine themselves as 'full-stack product builders' rather than 'master coders.' Sales reps become content integrators rather than relying on specialists to bring expertise. Roles are getting richer and more fulfilling, not narrower."* Teams also become *"more fluid and dynamic"*, with hierarchy *"decreasing."*

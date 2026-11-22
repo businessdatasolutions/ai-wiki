@@ -4,7 +4,7 @@ aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-i
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
 last_confirmed: "2026-11-22"
-source_count: 100
+source_count: 101
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -486,3 +486,7 @@ The trap describes individual time saved that never becomes firm-level output. T
 ## Wall-to-wall seats, not yet in the P&L (added 2026-11-22)
 
 [[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Katy George at Microsoft Ignite (Nov 2026)]] hears the trap from Microsoft's own customers: *"I've gone wall to wall with copilot seats… But I'm not sure I see it in my P&L yet."* Her answer is to start from the business goal (*"If you start with a tech, you get some interesting little pilots that do not scale"*), then redesign the workflow and drive adoption of the new one. Microsoft's own first Copilot rollout to sales is the in-house case: usage went *"up, and then crashing down to nothing"* because sellers saw no link to their goals. The vendor of the seats is describing the trap here, at its own customer event.
+
+## Gains that turn into queues (added 2026-11-22)
+
+[[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Microsoft's Frontier Playbook, second edition (Sept 2026)]] states the trap at the level of the workflow: *"Persona Acceleration can boost individual productivity, but without the right end-to-end process, those gains often evaporate—speeding up one step frequently just creates longer queues and larger work backlogs elsewhere."* And at the level of the licence: *"A tool licensed and rolled out to 100,000 employees does not change how the work gets done."* What changes it is *"the operating system around the tool."* It also warns against reporting the trap as success: *"It is easy to let narrow use-case statistics become the story of your transformation."*

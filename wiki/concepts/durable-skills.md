@@ -3,8 +3,8 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-11-16"
-source_count: 82
+last_confirmed: "2026-11-22"
+source_count: 83
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -15,7 +15,7 @@ relationships:
   - type: depends-on
     target: ai-benchmarks
     via: "measurement methodology — Vantage and similar protocols define new benchmark types for human skills (not model capability)"
-accessed_at: "2026-11-18"
+accessed_at: "2026-11-22"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -402,3 +402,7 @@ Two more lists of the skills that survive. [[2026-03-31-roslansky-smith-tools-an
 - [[2026-11-03-goel-bcg-so-what-ai-quietly-taking-from-workforce|Goel (BCG, The So What, Nov 2026)]]: the skills most at risk with AI are problem framing and judgment, so those are the ones to protect. His three signs for any daily user: *"Stop and think"*, *"I am in the driver's seat"*, and *"If in doubt, go back to the first."*
 - [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani on Silicon Valley Girl (Oct 2026)]]: models *"regress to the mean,"* so taste decides whether a one-person team gets more than the average design or analysis. *"Never take the first answer"*; prompt the model to argue the counter-case first. The skill he tells students to build is *"learning how to learn,"* which AI tutoring makes easier.
 - [[2026-11-14-wang-mckinsey-author-talks-the-trust-code|Wang (McKinsey Author Talks, Nov 2026)]]: from her interviews with designers, *"the workflow is becoming like an hourglass."* Variation and research at the top and distribution at the bottom get cheaper and faster; *"the narrow waist of the hourglass is our taste, our care for the audiences and our judgment of what would work."* In biology, the more hypotheses AI surfaces, the more the choice among them matters. Judgment *"isn't taught in lecture"*: children learn it by watching someone practise it.
+
+## A higher bar, sooner (added 2026-11-22)
+
+[[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Microsoft's Frontier Playbook, second edition (Sept 2026)]] lists the higher-order skills it now expects: *"Judgment and taste. Business acumen. The ability to scope and delegate work—including to agents. Learning agility. We are setting a higher bar sooner on these expectations."* It cites Microsoft's Work Trend Index (May 2026): 46% named *"critical thinking as the most important human skills as AI takes on more work"* (the panel is cut off on the page). It also cites LinkedIn's top five fastest-growing US skills (January 2026): AI literacy, conflict mitigation, adaptability, process optimisation and innovative thinking.

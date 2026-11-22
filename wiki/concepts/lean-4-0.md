@@ -5,7 +5,7 @@ tags: [lean-4-0, lean-manufacturing, industry-4-0, smart-manufacturing, ai-in-ma
 confidence: 0.75
 last_confirmed: "2026-11-22"
 accessed_at: "2026-11-22"
-source_count: 2
+source_count: 3
 relationships:
   - type: part-of
     target: industry-4-0
@@ -80,6 +80,8 @@ Lean 4.0 is **off-theme from this wiki's main AI-strategy focus** (which is most
 ## Lean before agents, in knowledge work (added 2026-11-22)
 
 [[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Katy George and Cory Hrncirik (Microsoft Ignite, Nov 2026)]] apply the lean toolkit to office processes rather than factories. Microsoft calls continuous improvement *"a foundational skill for our AI transformation"*: the lean and process-excellence tools *"allow us to evaluate and understand workflow in a really robust way, which frankly, we'd never done with knowledge work before."* In supply chain, gemba walks, value-stream maps and kaizens came first. Then the process was leaned out, and only then were agents added. A slide states the rule as *"Lean before agents; critical step to ensure we don't carry over the waste,"* and ends with integrated teams of people and agents at each remaining step. George gives the reason as *"knowledge work is tacit. It's in our heads,"* so the work has to be made visible before it can be redesigned. Finance ran the same continuous-improvement exercises before choosing its six end-to-end processes. Gomaa's mapping pairs lean tools with manufacturing technologies. This source pairs the same tools with AI agents in sales, supply chain and finance. It is Microsoft's account of its own practice, with self-reported results.
+
+[[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Microsoft's Frontier Playbook, second edition (Sept 2026)]], the written version, adds instructions. *"Optimize your workflows before introducing agents."* Map the workflow with *"Gemba, process mining, task decomposition, user research, or structured interviews… not how the org chart and process maps says it happens."* *"De-waste before automating… AI should not preserve unnecessary approvals, redundant handoffs, unclear ownership, or manual reconciliation simply because they exist today."* Its warning: *"dropping an AI agent into the existing process often just automates the dysfunction."* It names the pairing *CI + AI = CA*: continuous improvement takes waste out, and AI adds capability. Supply chain deployed 111 agents after this step. Both knowledge-work sources come from Microsoft, so the confidence stays at 0.75.
 
 ## Debates and supersession
 

@@ -5,7 +5,7 @@ tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, c
 confidence: 0.95
 last_confirmed: "2026-11-22"
 accessed_at: "2026-11-22"
-source_count: 106
+source_count: 107
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -583,3 +583,7 @@ SQ3 of the [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] carrie
 ## Two cardinal sins, and operating leverage (added 2026-11-22)
 
 [[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Katy George at Microsoft Ignite (Nov 2026)]] restates the *Capability Add* argument above as two errors. The first is to *"automate a really bad process."* The second is to *"stop with automation. If that's all you get out of AI, you make your company a little smaller, maybe a little faster, but not better."* Microsoft finds *"more impact on the top line than we're finding even on the bottom line."* A slide names the combination **operating leverage**: *new output with higher strategic value* (revenue, innovation, customer and employee experiences) plus *output delivered faster, more efficiently, and with less error*. In supply chain, agents took work out of the process and also *"augmented the process with lots of new capability that only AI could bring."* The internal-audit example (proactive risk identification on every audit) is repeated from her WorkLab episode. It is the same speaker on the same company, now on a slide.
+
+## CI + AI = CA (added 2026-11-22)
+
+[[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Microsoft's Frontier Playbook, second edition (Sept 2026)]] turns *Capability Add* into a formula. Continuous-improvement levers *eliminate* errors and rework, unused outputs, delays and queues, handoffs and context loss, and tool-switching. AI's Capability Add *adds* predictive and preventive quality intelligence, an expanded solution space, real-time sensemaking and parallel cognition, opportunity sensing and portfolio intelligence, attention and cognitive-load optimisation, and precision at the right level of abstraction. *"CI alone gives you a leaner version of your old company. CI + AI—the discipline to take waste out and the imagination to add capability in—compounds."* Its advice to leaders: *"Focus more on adding AI capability into workflows than on simply taking human capacity out."* Its third level of AI, *"human-led, agent-operated,"* *"requires a much bigger role-change for humans."* The source is the same company, and partly the same author, as the Capability Add section above.

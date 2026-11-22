@@ -4,7 +4,7 @@ title: Agent fleet management
 aliases: ["agent fleet management", "managing agent fleets", "agent manager", "human as agent manager", "parallel agents", "agent orchestration at scale"]
 confidence: 0.75
 last_confirmed: "2026-11-22"
-source_count: 27
+source_count: 28
 accessed_at: "2026-11-22"
 tags: [agent-fleet, parallelism, cloud-agents, isolated-workspaces, decision-fatigue, priority-queue, span-of-control, delegation, playbooks, token-economics]
 relationships:
@@ -157,3 +157,7 @@ The [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|HBS AI Insti
 - **Supply chain.** *"Over 100 agents in use."* A slide redesigns a process into *"integrated human + agent teams"*: each step is staffed by a few people and more agents, and one new-capability step by agents alone.
 
 The session does not say how the agents are registered, monitored or retired.
+
+## 111 agents, three levels, agents governed like users (added 2026-11-22)
+
+[[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Microsoft's Frontier Playbook, second edition (Sept 2026)]] gives the supply-chain count as *"111 purpose-built agents across planning, sourcing, fulfillment, and logistics,"* deployed after the workflows were simplified and a single source of truth was built. It sorts agent use into three levels: *human with assistant*, *human-agent teams* and *human-led, agent-operated*, the last being where *"agents run entire business processes and workflows, checking in as needed."* For governance it asks whether *"identity, access, compliance, and policy controls apply to agents the same way they apply to users,"* and calls for agents with *"identity, risk-based permissions"* and a governed lifecycle, so that *"AI actions are traceable, auditable, and reversible."* It does not say how many of the 111 agents run at which level.

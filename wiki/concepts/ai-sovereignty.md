@@ -5,7 +5,7 @@ tags: [ai-sovereignty, sovereign-ai, digital-sovereignty, strategic-autonomy, ow
 confidence: 0.90
 last_confirmed: "2026-11-22"
 accessed_at: "2026-11-22"
-source_count: 19
+source_count: 20
 relationships:
   - type: supports
     target: open-source-ai
@@ -152,3 +152,14 @@ The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] defines sover
 - **Middle powers** (G42, HUMAIN, IndiaAI, the UK AI Security Institute, EU gigafactories) hedge between the blocs.
 
 A June 2026 U.S. ruling that denied non-U.S. users access to Anthropic's leading models brought the dependence risk *"into sharp focus."* For each country, the choice is to *"employ proprietary U.S. models, build on open-weight Chinese models, or develop their own sovereign capabilities."* [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's seminar]] condenses this to a six-part stack (skills, data, chips, secure pipelines, cheap energy, the ability to build data centres) and answers *"Who can do this? USA. China."*
+
+## Sovereignty for firms: tacit knowledge in the weights (added 2026-11-22)
+
+[[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Microsoft's Frontier Playbook, second edition (Sept 2026)]] moves the question from nations to companies. It quotes Satya Nadella: *"Increasingly, customers want to be able to capture the tacit knowledge they possess inside of model weights as their core IP. This is probably the most important sovereign consideration for firms."* Control *"comes down to one decision: whether your intelligence compounds inside your boundary or leaks beyond it."* It names four factors:
+
+- hill-climbing infrastructure;
+- data residency, including sovereign cloud for regulated work;
+- model independence (*"Can you change models without rebuilding the architecture around them?"*);
+- tenant isolation.
+
+*"Retrofitting data residency and tenant isolation after deployment is orders of magnitude harder than building them in from the start."* The publisher sells this architecture.

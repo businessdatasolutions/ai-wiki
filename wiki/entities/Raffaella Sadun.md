@@ -6,7 +6,7 @@ tags: [harvard-business-school, management, productivity, reskilling, digital-re
 role: "Charles E. Wilson Professor of Business Administration, Harvard Business School"
 confidence: 0.75
 last_confirmed: "2026-10-15"
-accessed_at: "2026-10-15"
+accessed_at: "2026-11-22"
 source_count: 3
 ---
 

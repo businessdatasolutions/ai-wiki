@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.95
-source_count: 156
+source_count: 157
 relationships:
   - type: part-of
     target: ai-agents
@@ -20,8 +20,8 @@ relationships:
   - type: uses
     target: small-language-models
     via: "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed"
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-18"
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -1097,3 +1097,14 @@ The talk also counts consumer-app features (Projects, Scheduled tasks, the attac
 - [[2026-10-28-wang-google-cloud-tech-agent-memory-architecture|Wang (Google Cloud Tech, Oct 2026)]]: long-term memory in two stores: exact facts in SQL, understanding in a store searched by meaning. Facts are written at once by a tool call; understanding is extracted asynchronously, off the voice agent's live path. Raw camera and audio stay out of memory.
 - [[2026-11-02-holmes-warp-agentic-self-improvement-loop|Holmes (Warp, Nov 2026)]]: skills and harness configuration as what a self-improvement loop edits. One proposed fix: a triage agent kept failing to spawn a subagent because of missing harness configuration.
 - [[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort (Remote) on BNR (Oct 2026)]]: Remote's own harness switches to cheaper models when it can, because its AI spend doubles about every month.
+
+## The harness inside a vendor's hill-climbing machine (added 2026-11-22)
+
+[[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Microsoft's Frontier Playbook, second edition (Sept 2026)]] places the harness in a layered stack that the firm owns:
+
+- security and governance;
+- a reinforcement-learning environment of evals (tasks, rubrics), agent and runtimes;
+- *context and harness* (multi-model, Enterprise IQ, memory, skills, MCP);
+- interchangeable models at the bottom.
+
+*"Context and harness are decoupled from models,"* so the architecture *"separates what you own and differentiate—your evals, context, and control layer—from what you consume externally."* For AI-first teams it lists *"agents without access to logs, metrics, or feedback"* among the *"velocity crushers."* The deck states the design but reports no measurement of it.

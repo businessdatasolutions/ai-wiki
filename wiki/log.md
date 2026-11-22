@@ -10,6 +10,31 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-11-22] ingest | Microsoft's Frontier Playbook, second edition (1 source)
+
+The user asked for the PDF linked from the Ignite session's description, the gap named in the previous entry.
+
+**Acquire.** The PDF was downloaded from Microsoft's asset CDN into an empty scratch folder, then copied to `raw/reports/2026-09-16-microsoft-becoming-a-frontier-firm-second-edition.pdf` (gitignored) and converted with `pdftotext -layout`, one page marker per page.
+- **Pre-flight.** 44 of 44 pages (a PowerPoint deck), from the introduction through five sections, the conclusion and a resources page.
+- **Identity.** The PDF title is *Becoming a Frontier Firm, second edition*, and the cover reads *"Our Frontier Playbook"*. That confirms it is the *Microsoft Frontier Playbook* on the Ignite slides, which the earlier entry left open.
+- **Date.** 2026-09-16, from the file name's `LAUNCH_091626` and the ModDate. No date is printed, and the first edition was not located.
+- **Authorship.** No byline. The conclusion is signed by Kathleen Hogan and Katy George, so `author` is Microsoft.
+- **Checks.** Chart pages 22-25 and 29-30 were checked against the rendered pages. The Work Trend Index panel on p. 29 is elliptical on the page itself, not a conversion error. No page images are published: the stills exception covers videos only.
+
+**Process.**
+- **Source page.** [[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition]], covering the five elements (goals, diffusion engine, people, codified advantage and controls, security). It adds what the Ignite session did not have: AI Transformation Offices with a central learning accelerator, three levels of AI, *CI + AI = CA*, a four-layer measurement pipeline with impact timelines, the people section with the Work Trend Index figures, the hill-climbing machine and the law of hill-climbing, and the security dimensions.
+- **Edges.**
+  - `depends-on` the WorkLab episode (George co-signs; the same practice written down).
+  - Eight `supports`: Nadella/Hoffman (flagged as the same company), the HBS Frontier Firm page, Dutt & Chatterji, Anthropic's evals for taste, Garry Tan's *Own Your Intelligence*, Sadun and Gomaa.
+  - The Ignite page gains `depends-on` the playbook, and its "probably the same document" line is now a link.
+  - The WorkLab TL;DR and the three index bullets link to one another.
+- **Neighbour scan.** Considered and skipped: Covington & Slaney (a transformation office that itself adopts AI, a different topic from an AI Transformation Office), Krishna/Bain, Beutler and Allen (already linked from the Ignite page).
+- **Concepts.** Dated sections on enterprise-ai-adoption (offices, levels, the measurement pipeline; the Debates bullet on "Is there a playbook yet?" now quotes the playbook's own disclaimer), automation-vs-augmentation (CI + AI = CA), micro-productivity-trap, agent-fleet-management (111 agents, agents governed like users), expert-generalist, ai-deskilling (early-career roles redesigned, PRAISE), durable-skills, ai-sovereignty (tacit knowledge in weights as a firm's sovereignty question), agent-harness (the hill-climbing stack). lean-4-0 and spec-driven-development were extended; lean-4-0 now has three sources, but its confidence stays at 0.75 because both knowledge-work sources are Microsoft's.
+- **Entities.** [[Microsoft]] gets a dated section. Dangling: Kathleen Hogan.
+- **Counts.** Recounted with `lint-source-count.mjs`: 12 pages rose by 1, and all match.
+
+**Also this session.** The `wiki-query.mjs` bug from the previous entry is fixed (commit 194a071). A new `scripts/lib/wiki-ref.mjs` decodes qmd paths and keys pages the way `graph-export.mjs` does, which also fixes duplicate candidates and missing frontmatter in `wiki-retrieve.mjs`. It has 7 tests.
+
 ## [2026-11-22] ingest | Microsoft Ignite 2026: George and Hrncirik on Microsoft becoming a Frontier Firm (1 source, 13 stills)
 
 The user asked what the wiki holds on the Frontier Firm (`/wq frontier firm`), then supplied "more sources": two YouTube links. Both were the same video (`jD6d5l3Gwb4`) with different `si=` tracking parameters, and it was not yet in the wiki.
