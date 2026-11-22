@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-18"
-source_count: 210
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 211
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -769,7 +769,7 @@ The honest caveat is that this is one enthusiast at one company, self-reported, 
 - **Anti-anthropomorphizing rhetoric vs. employee-onboarding practice.** [[2026-05-06-kropp-bcg-hbr-dont-treat-ai-agents-like-employees|Kropp et al. (BCG, May 2026)]] find, via a randomized experiment, that framing AI as an "employee" measurably reduces human accountability and increases escalation. [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems|Huang (NVIDIA, July 2026)]] explicitly agrees at the level of stated position — "it's electrons, not atoms... a tool, like my vacuum cleaner... we tend to imbue too much human properties to it" — but in the same interview describes agent access-provisioning as building "an HR system, if you will, for AI," complete with onboarding and a "skills file." No supersession or direct contradiction (Huang's HR language is offered as a loose analogy for access control, not a management-practice prescription), but the juxtaposition is a live instance of the gap Kropp et al. warn about: even vendors who reject anthropomorphizing in principle reach for employee-shaped metaphors when describing the *operational* mechanics of agent deployment.
 
 - **Does the buy-side reversal reach government buyers?** [[2026-07-31-collison-yc-startup-school-is-ai-breaking-the-lean-startup-playbook|Collison]] reports enterprises now buying from unvalidated startups because the status quo looks riskier. [[2026-09-30-luo-null-labs-synthetic-data-ai-testing|Luo (Null Labs, September 2026)]] describes US defense procurement without that shift: with no common test standard for AI and autonomous systems, buyers are *"just going to go with the trusted vendor"*, and his company's contracts came *"from knowing someone on the inside"*, not from cold SBIR applications. One founder's experience, in a different buyer segment; recorded as an open boundary on the reversal, not a contradiction.
-- **Is there a playbook yet?** [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun (HBS, WorkLab, Nov 2025)]]: *"The scary part is there is no playbook. I think we just have to accept that"*; what may emerge is a method for learning. [[2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder|Diasio (EY, WorkLab, Dec 2025)]], three weeks later on the same show: *"we have the beginnings of a playbook that's been really effective for many of the clients that we've been supporting"*. That playbook is mindset, skill set and tool set, then a written point of view, then a blueprint. The [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|Frontier Firm initiative]] that both are part of presents itself as research done *"instead of waiting for the playbook to be written by someone else."* The researcher and the consultant use the word differently: Sadun's playbook is a validated method that generalises across firms, Diasio's is a sequence a consultancy sells. Whether the second becomes the first is open.
+- **Is there a playbook yet?** [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-first-organization|Sadun (HBS, WorkLab, Nov 2025)]]: *"The scary part is there is no playbook. I think we just have to accept that"*; what may emerge is a method for learning. [[2025-12-16-diasio-wood-worklab-agentic-ai-corporate-ladder|Diasio (EY, WorkLab, Dec 2025)]], three weeks later on the same show: *"we have the beginnings of a playbook that's been really effective for many of the clients that we've been supporting"*. That playbook is mindset, skill set and tool set, then a written point of view, then a blueprint. The [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|Frontier Firm initiative]] that both are part of presents itself as research done *"instead of waiting for the playbook to be written by someone else."* The researcher and the consultant use the word differently: Sadun's playbook is a validated method that generalises across firms, Diasio's is a sequence a consultancy sells. Whether the second becomes the first is open. A year after Sadun's interview, the co-runner publishes one: [[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Microsoft's Ignite 2026 session]] presents the *Microsoft Frontier Playbook* (the session description links a *Becoming a Frontier Firm*, second edition, from September 2026; probably the same document, not confirmed), three "recipes" drawn from 100+ internal case studies. George still calls it *"a work in progress"*, with recipes 4 and 5 under development, and it rests on one firm's cases.
 
 ## Related concepts
 
@@ -1072,3 +1072,28 @@ Hospitals are large organisations. In the [[2026-03-16-mxi-ai-monitor-ziekenhuiz
 ## The change function adopts late, and model upgrades can set it back (added 2026-11-16)
 
 [[2026-11-08-covington-slaney-mckinsey-strategy-room-agentic-transformation|Covington and Slaney (McKinsey, Nov 2026)]] start from their article's claim that the transformation office, the function that drives change, is among the slowest to adopt AI, *"the dirty secret,"* because the weekly reporting cycle keeps it busy. On tooling, Covington says *"the vast majority of the stuff we observe in a transformation office can be done by open source models"* and that failures come from fitting the workflow to its context, not from model choice. Slaney reports that teams switching to *"a newer fancier LLM"* saw their workflows regress, because the workflow had been planned around the old model's output, so his advice is *"don't keep upgrading."* Neither gives a measurement.
+
+## Microsoft's three recipes, now with figures (added 2026-11-22)
+
+[[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Katy George and Cory Hrncirik at Microsoft Ignite (Nov 2026)]] give the slide-led version of the practice recorded above from [[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart|George's WorkLab episode]]. The same speaker is restating her own account, so it is not a second, independent source. A **Customer Zero Council**, made up of the transformation leads of every business function plus engineers, distilled 100+ internal case studies into three recipes, published as the *Microsoft Frontier Playbook*:
+
+| Recipe | Definition (slide) | Microsoft case | Reported result (slide) |
+| --- | --- | --- | --- |
+| Persona acceleration | Empower specific roles with AI tools tailored to their workflows | Account executives: ride-alongs, a week-in-the-life analysis, then weekly huddles of 15 in one role led by a power user | 9.4% revenue per head and 20% higher close rates *within the pilot group*; 3x adoption *as reported by survey participants* |
+| AI-powered process redesign | Reinvent existing processes with AI to improve outcomes | Supply chain (100+ agents, lean before agents); finance (six end-to-end processes) | 75% reduction in cycle time *across selected workflows*; quote-to-cash: 22% shorter case handling, 48% shorter quote-to-close |
+| AI-first possibility | Design new work from scratch, with AI at the center of how the team operates | Camp AIR, a three-week bootcamp for whole teams; the Copilot Cowork build | Nine people, 18.6K commits, first release in 35 days |
+
+Three points add to what the page already holds:
+
+- **No single ROI metric.** *"If you ask our sales force, it's revenue per seller. If you ask our finance team, it's a whole set of metrics around efficiency, accuracy, and internal experience."* Business leaders set the goals. *"If you start with a tech, you get some interesting little pilots that do not scale."*
+- **Measured as a chain.** Adoption, then behaviour change, then early indicators, then the business result. George admits the chain is not yet *"scaled across every part of Microsoft."*
+- **A funnel and reuse in finance.** In spring 2023, 130 ideas became about 12 business cases, and the CFO picked six. Reusing one document intelligence platform turned those six into 16 projects in year one. What Hrncirik had not foreseen was the infrastructure needed to capture and share use cases once 4,000 people were building.
+
+From the floor came four adoption designs:
+
+- a "starfish" model, in which a central backlog across functions exposes shared value streams;
+- deliberate scarcity and competition between tools at a healthcare firm (Copilot, then OpenAI, with Claude on a small scale);
+- a permanent AI strategy team at Korn Ferry;
+- a forward-deployed engineer placed next to citizen builders.
+
+Every figure is Microsoft's own, at its own customer event, and the slides limit their scope to *"the context of our company."* The confidence stays at the cap.

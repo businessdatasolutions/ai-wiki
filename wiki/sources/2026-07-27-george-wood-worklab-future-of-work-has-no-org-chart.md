@@ -44,7 +44,7 @@ relationships:
 
 ## TL;DR
 
-A 28-minute episode of *WorkLab*, [[Microsoft]]'s podcast, published 27 July 2026. Host **Molly Wood** interviews **Katy George**, Microsoft's corporate vice president of workforce transformation. Her team sits in the Office of Strategy and Transformation and acts as *"a learning accelerator"* across the company; before Microsoft she worked at McKinsey, much of it in manufacturing. Five claims:
+A 28-minute episode of *WorkLab*, [[Microsoft]]'s podcast, published 27 July 2026. Host **Molly Wood** interviews **Katy George**, Microsoft's corporate vice president of workforce transformation. Her team sits in the Office of Strategy and Transformation and acts as *"a learning accelerator"* across the company; before Microsoft she worked at McKinsey, much of it in manufacturing. She gave a later, slide-led version with figures at [[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Microsoft Ignite in November 2026]]. Five claims:
 
 1. **AI is a business transformation, not a product launch.** Microsoft first rolled Copilot out to its own sales force *"as a typical product launch… And people tried it and then they stopped using it."* What worked was setting business outcome goals and redesigning the work with the people who do it.
 2. **Change the team and the system, not the individual.** *"Only if you change the whole system of work do you get different business performance."* Two programmes: *Camp Air*, an immersive bootcamp that whole teams attend together, and weekly role-based huddles taught practitioner to practitioner.

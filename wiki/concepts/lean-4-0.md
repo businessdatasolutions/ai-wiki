@@ -2,10 +2,10 @@
 type: concept
 aliases: ["Lean 4.0", "lean-4-0", "Lean Manufacturing 4.0"]
 tags: [lean-4-0, lean-manufacturing, industry-4-0, smart-manufacturing, ai-in-manufacturing]
-confidence: 0.70
-last_confirmed: "2026-04-28"
-accessed_at: "2026-09-05"
-source_count: 1
+confidence: 0.75
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 2
 relationships:
   - type: part-of
     target: industry-4-0
@@ -75,12 +75,18 @@ Lean 4.0 is **off-theme from this wiki's main AI-strategy focus** (which is most
 
 1. **Manufacturing-specific lens on AI adoption.** [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]'s manufacturing data (39%/33%/24%/24%/21% AI use in manufacturing/inventory/quality/R&D/IT-OT) shows the empirical adoption picture. Lean 4.0 gives the *prescriptive* operational integration roadmap.
 2. **Industrial example: Italgas.** Italgas's 23 AI models, 300TB data platform, Digital Factory, WorkOnSite (+40% construction speed), and DANA (GenAI network control) sit squarely in the Lean 4.0 vocabulary — even though gas distribution isn't manufacturing per se.
+3. **Lean tools carried into knowledge work** (added 2026-11-22). See the next section.
+
+## Lean before agents, in knowledge work (added 2026-11-22)
+
+[[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Katy George and Cory Hrncirik (Microsoft Ignite, Nov 2026)]] apply the lean toolkit to office processes rather than factories. Microsoft calls continuous improvement *"a foundational skill for our AI transformation"*: the lean and process-excellence tools *"allow us to evaluate and understand workflow in a really robust way, which frankly, we'd never done with knowledge work before."* In supply chain, gemba walks, value-stream maps and kaizens came first. Then the process was leaned out, and only then were agents added. A slide states the rule as *"Lean before agents; critical step to ensure we don't carry over the waste,"* and ends with integrated teams of people and agents at each remaining step. George gives the reason as *"knowledge work is tacit. It's in our heads,"* so the work has to be made visible before it can be redesigned. Finance ran the same continuous-improvement exercises before choosing its six end-to-end processes. Gomaa's mapping pairs lean tools with manufacturing technologies. This source pairs the same tools with AI agents in sales, supply chain and finance. It is Microsoft's account of its own practice, with self-reported results.
 
 ## Debates and supersession
 
 - **Is Lean 4.0 genuinely a new paradigm or a vendor-friendly rebrand?** Gomaa's framework is conceptually conventional Lean with a digital layer. The novelty is operational (the mappings) rather than theoretical.
 - **Tensions between Lean and Industry 4.0.** [[2026-04-28-gomaa-lean-4-0|Gomaa]] cites Frank et al. 2024 and Johansson et al. 2024 on paradoxes: process-related Industry 4.0 technologies may *weaken* Lean (e.g., excessive automation may dilute core Lean principles like teamwork and waste minimization), while product- and service-related I4.0 technologies tend to *enhance* Lean.
 - **SME viability.** The 11 research gaps (Gomaa Table VI) flag SME scalability — Lean 4.0 frameworks are mostly written for large manufacturers; cost-effective SME paths remain underdeveloped.
+- **Does the concept stretch to knowledge work?** The page was written for manufacturing. [[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Microsoft's Ignite 2026 session]] applies lean before agents in sales, supply chain and finance. Whether that is Lean 4.0 or a separate "lean before AI" practice in the office is open. The office case so far rests on one vendor's account of itself.
 
 ## Related concepts
 

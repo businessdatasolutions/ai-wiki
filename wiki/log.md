@@ -10,6 +10,28 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-11-22] ingest | Microsoft Ignite 2026: George and Hrncirik on Microsoft becoming a Frontier Firm (1 source, 13 stills)
+
+The user asked what the wiki holds on the Frontier Firm (`/wq frontier firm`), then supplied "more sources": two YouTube links. Both were the same video (`jD6d5l3Gwb4`) with different `si=` tracking parameters, and it was not yet in the wiki.
+
+**Acquire.**
+- **Transcript.** `youtube-transcript-skill`, transcript panel route: 405 segments, the last at 45:33 of 45:44, no doubles or gaps, 10 chapters. YouTube lists a human-written English track, but the panel text mis-heard names. Fixed at acquire against the title slide and keywords (Katy George, Cory Hrncirik, Customer Zero Council, Camp AIR, "recipe two") and listed in the raw file's `notes:`.
+- **Stills.** `extract_stills.py` returned Gemini HTTP 402 again, so they were picked by hand per the 2026-11-17 rule. The video is one fixed composite: the slide on the left, a small stage camera on the right. 549 frames at 360p (every 5 s) merged into 18 tiles, and a 1-second pass over the slide box found no slide the grid had missed. 15 slides were cut from the 1080p stream, all verified against the pixels, and 13 published (title cards left out), cropped to the slide box.
+
+**Process.**
+- **Source page.** [[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm]], with a 13-still visual canon. The slides add what the narration leaves out: the sales figures are "within the pilot group" (9.4% revenue per head, 20% close rates) and adoption is self-reported; the supply-chain 75% is "across selected workflows"; the Copilot Cowork and quote-to-cash figures and the seller time-allocation target are slide-only.
+- **Edges.** `depends-on` to [[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart|George's WorkLab episode]], per the 2026-11-16 rule: the same speaker restating her own practice. The WorkLab TL;DR links forward, and the two index bullets link each other. Nine `supports` edges: the HBS Frontier Firm page, Diasio, Sadun, Bornet, Gomaa's Lean 4.0, Krishna/Bain, Dutt & Chatterji, Beutler, Allen (AWS London).
+- **Neighbour scan.** The four W&W cells matched 7 sources on all four and 33 on three, too broad to use. Edges were chosen from the Frontier Firm cluster and from overlap on specific claims (lean before agents, quote-to-cash, a few end-to-end processes, business-owned outcomes, small squads shipping in weeks). Considered and skipped: Miller's frontier unit, Nadella's *future of the firm*, Kropp (work charts), Holmes (meta-engineering), Tan & Ugarte.
+- **Concepts.** Dated sections on enterprise-ai-adoption (the three recipes in a table, plus a sentence on the playbook debate), automation-vs-augmentation (two cardinal sins, operating leverage), micro-productivity-trap (wall-to-wall seats not in the P&L), lean-4-0 (lean before agents in knowledge work; second source, confidence 0.70 → 0.75, a new Debates bullet), agent-fleet-management, expert-generalist, document-intelligence (a shared platform as the way to scale; confidence held at the vendor tier) and spec-driven-development (spec, evals, context as a team's stack).
+- **Entities.** [[Microsoft]] gains the alias *Microsoft Events* (precedent: Microsoft Developer) and a dated section. [[HBS AI Institute]] gets a note on the sales case George cites. Dangling: Cory Hrncirik. Katy George now speaks on two sources but is in neither `author:` field, so a person page is optional.
+- **Counts.** Recounted with `lint-source-count.mjs`: 9 pages rose by 1, and all now match.
+
+**Found along the way.**
+- **`wiki-query.mjs` cannot bump entities with a space in the name.** qmd returns `HBS%20AI%20Institute` and the bump step looks for that literal file. The page was bumped by hand with `bump-accessed.mjs`. The fix is to URL-decode the qmd path before resolving it.
+- **Memory.** With the qmd daemon up, ffmpeg extracting 360p PNGs was killed (exit 137). After `npm run qmd:stop` and with frames written as 320×180 JPEGs on one thread, it ran.
+- **A shell trap in hand-cutting stills.** ffmpeg inside a `while read … <<EOF` loop reads the heredoc from stdin and scrambles the list. Use `ffmpeg -nostdin`.
+- **Not ingested.** The session description links a *Becoming a Frontier Firm* second-edition PDF (September 2026), probably the *Frontier Playbook* on the slides. It is the obvious next source for this cluster.
+
 ## [2026-11-22] ingest | AI100 2026 report *AI Goes Mainstream* and Wooldridge's Stanford HAI seminar on it (2 sources, 13 stills)
 
 The user supplied the report PDF (`raw/reports/ai100_report_2026.pdf`) and the seminar video together, as related. The report page on ai100.stanford.edu links this video as "the Seminar on the 2026 Report's Findings", so the publisher confirms the pairing.

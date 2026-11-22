@@ -3,9 +3,9 @@ type: concept
 title: Agent fleet management
 aliases: ["agent fleet management", "managing agent fleets", "agent manager", "human as agent manager", "parallel agents", "agent orchestration at scale"]
 confidence: 0.75
-last_confirmed: "2026-11-16"
-source_count: 26
-accessed_at: "2026-11-16"
+last_confirmed: "2026-11-22"
+source_count: 27
+accessed_at: "2026-11-22"
 tags: [agent-fleet, parallelism, cloud-agents, isolated-workspaces, decision-fatigue, priority-queue, span-of-control, delegation, playbooks, token-economics]
 relationships:
   - type: part-of
@@ -148,3 +148,12 @@ The [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|HBS AI Insti
 
 - [[2026-11-14-tan-ugarte-yc-lightcone-rise-of-ai-coworkers|Lauren Tan (YC Lightcone, Nov 2026)]]: a lead engineer bot told to supervise her other engineer bots relayed her feedback to them *"kind of like a disciplinarian"*; with Cursor's projects feature a coordinator agent runs the sub-agents, and *"I don't even manage the project myself anymore."* [[Garry Tan]], hosting, runs *"10 or 15 threads"* under a captain agent in his software factory, Cappy.
 - Roman Ugarte, same episode, prefers a small team of specialist bots, each *"solely dedicated to caring about a particular thing"* and managed by the domain expert, to one bot that cares about everything.
+
+## Nine people and their agents, and 100 agents in one function (added 2026-11-22)
+
+[[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Microsoft's Ignite 2026 session]] shows two scales:
+
+- **The Copilot Cowork squad.** A slide draws *"nine humans + agents working from a shared context and evals"*: three meta-engineers (*"build agents + evals"*), three meta-designers (*"curate quality + rules"*) and three meta-PMs (*"frame intent + glue"*), with six agents drawn under each role and a shared layer of *"context · evals · agent definitions."* It reports 18.6K commits and a first release in 35 days.
+- **Supply chain.** *"Over 100 agents in use."* A slide redesigns a process into *"integrated human + agent teams"*: each step is staffed by a few people and more agents, and one new-capability step by agents alone.
+
+The session does not say how the agents are registered, monitored or retired.

@@ -3,9 +3,9 @@ type: concept
 aliases: ["expert generalist", "Expert Generalist", "expert generalists", "generalist-specialist blend"]
 tags: [expert-generalist, generalist-vs-specialist, t-shaped, fundamentals-over-tools, patterns, mechanical-sympathy, durable-skills, distributed-systems-fundamentals, hiring, llms-and-skills]
 confidence: 0.90
-last_confirmed: "2026-10-30"
-accessed_at: "2026-11-18"
-source_count: 13
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 14
 relationships:
   - type: supports
     target: durable-skills
@@ -102,3 +102,7 @@ That is the expert-generalist thesis stated as a complementarity result: breadth
 ## "Designers are becoming more full stack" (added 2026-10-30)
 
 [[2026-10-26-schwaibold-epstein-yc-new-full-stack-designer|Schwaibold (Shopify) on YC's Design Review, Oct 2026]]: *"Designers are becoming more full stack. As are engineers and PMs. It goes in every which way."* The evidence offered is his own working demos and *"one-off armies or teams of two."* The demos live in a playground outside Shopify's production code.
+
+## "Leave your discipline at the door" (added 2026-11-22)
+
+[[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Katy George at Microsoft Ignite (Nov 2026)]] repeats the T-shaped claim above and gives two more pieces of Microsoft's practice. At Camp AIR, the first thing engineers, designers and product managers hear is *"leave your discipline at the door… You're all here as builders."* A slide on the Copilot Cowork build renames the disciplines **meta-engineers**, **meta-designers** and **meta-PMs**, three of each, working with agents. In finance, she says, people *"have to be able to think more about kind of the whole system,"* while *"expertise and judgment"* are *"more important than ever before."* The same speaker as the WorkLab source, on the same programmes.

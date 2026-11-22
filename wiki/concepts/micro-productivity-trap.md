@@ -3,8 +3,8 @@ type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
-last_confirmed: "2026-11-16"
-source_count: 99
+last_confirmed: "2026-11-22"
+source_count: 100
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -12,7 +12,7 @@ relationships:
   - type: contradicts
     target: automation-vs-augmentation
     via: "process lock-in = automation without redesign; reinvent-the-business resists this trap"
-accessed_at: "2026-11-16"
+accessed_at: "2026-11-22"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -482,3 +482,7 @@ The trap describes individual time saved that never becomes firm-level output. T
 ## Same length deck, sharper insight (added 2026-11-16)
 
 [[2026-11-08-covington-slaney-mckinsey-strategy-room-agentic-transformation|Covington and Slaney (McKinsey, Nov 2026)]] describe the trap inside a transformation office. As a programme matures it gains data sources, so reporting grows while the office is expected to shrink: *"expected to be doing more with less and getting more of the grunt work to boot"* (Slaney). Agents that only produce more add to it: *"Just generating more and generating more often to more people is rarely the solution"* (Slaney), and new users make decks *"three times as long."* Covington's instruction to clients is *"same length deck, sharper insight."*
+
+## Wall-to-wall seats, not yet in the P&L (added 2026-11-22)
+
+[[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Katy George at Microsoft Ignite (Nov 2026)]] hears the trap from Microsoft's own customers: *"I've gone wall to wall with copilot seats… But I'm not sure I see it in my P&L yet."* Her answer is to start from the business goal (*"If you start with a tech, you get some interesting little pilots that do not scale"*), then redesign the workflow and drive adoption of the new one. Microsoft's own first Copilot rollout to sales is the in-house case: usage went *"up, and then crashing down to nothing"* because sellers saw no link to their goals. The vendor of the seats is describing the trap here, at its own customer event.

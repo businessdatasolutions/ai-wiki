@@ -1,13 +1,13 @@
 ---
 type: entity
 kind: organization
-aliases: ["Microsoft", "Microsoft Corporation", "Microsoft Visual Studio", "Microsoft Developer", "MSFT"]
+aliases: ["Microsoft", "Microsoft Corporation", "Microsoft Visual Studio", "Microsoft Developer", "Microsoft Events", "MSFT"]
 tags: [microsoft, azure, azure-devops, visual-studio-code, vs-code, github-parent, copilot, responsible-ai, azure-sre-agent, openai-partner, developer-tools, agentic-devops]
 website: "https://microsoft.com"
 confidence: 0.90
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 21
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 22
 relationships:
   - type: employs
     target: GitHub
@@ -109,3 +109,7 @@ WorkLab's third wiki source, [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-f
 ## Microsoft Developer channel: the Path to Production master class (added 2026-11-16)
 
 [[2026-11-11-balasa-microsoft-path-to-production-for-agents|Balasa, Your Path to Production for Agents (Nov 2026)]]: the wiki's first source from the *Microsoft Developer* channel, added as an alias so its videos resolve here. Adelina Balasa, AI Global Strategy Lead, opens a master-class series built on six pillars for taking agents to production (AI Center of Excellence, governance, landing zones, security and trust, AgentOps, solution optimization), each told through anonymised customer cases. The tools she names for red-teaming and jailbreak defence, PyRIT and Prompt Shields, are Microsoft's.
+
+## Microsoft Events channel: its Frontier Firm playbook at Ignite 2026 (added 2026-11-22)
+
+[[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|George and Hrncirik, Microsoft Ignite 2026 (BRK531)]]: the wiki's first source from the *Microsoft Events* channel, added as an alias so its videos resolve here. Katy George, now titled CVP Workforce and AI Transformation, gives the slide-led version of her [[2026-07-27-george-wood-worklab-future-of-work-has-no-org-chart|WorkLab account]]. It covers a Customer Zero Council, 100+ internal case studies, the *Microsoft Frontier Playbook* and its three recipes (persona acceleration, AI-powered process redesign, AI-first possibility). It also gives figures: 9.4% revenue per head and 20% higher close rates in a sales pilot group, a 75% cut in cycle time across selected supply-chain workflows, and a nine-person Copilot Cowork team that shipped in 35 days. Cory Hrncirik, Senior Director Finance, describes finance's six end-to-end processes and its CFO-picked first six projects. These are Microsoft's figures for itself, at its own customer event.

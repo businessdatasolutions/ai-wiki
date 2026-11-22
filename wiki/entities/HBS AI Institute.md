@@ -5,9 +5,9 @@ aliases: ["HBS AI Institute", "Harvard Business School AI Institute", "HBS AI Co
 tags: [harvard-business-school, research-institute, frontier-firm, microsoft-partner, research-summaries]
 website: "https://aiinstitute.hbs.edu"
 confidence: 0.75
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
-source_count: 7
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 8
 relationships:
   - type: published-by
     target: 2026-09-03-hbs-ai-institute-think-youre-a-good-leader-try-leading-an-ai-team
@@ -60,3 +60,7 @@ SORT file.name ASC
 ## Lakhani on the institute's work (added 2026-11-04)
 
 [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani on Silicon Valley Girl (Oct 2026)]] describes the institute's research access to prompt-level usage data in large organisations and its executive programmes, and cites Rem Koning's *"frontier firm radar"*, experiments showing startups how to use AI better.
+
+## The sales case, cited again (added 2026-11-22)
+
+At Microsoft Ignite in November 2026, [[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Katy George]] cites *"a really cool Harvard Business School case about how we initially failed"* in rolling out Copilot to Microsoft's sales force: *"Copilot usage going up, and then crashing down to nothing."* She does not name the authors. Whether it is the Bojinov, Sadun and Zhang case behind the [[2026-10-15-hbs-ai-institute-frontier-firm-ai-initiative-about|initiative's early insights]] is still not stated.

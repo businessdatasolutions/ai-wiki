@@ -5,7 +5,7 @@ tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, c
 confidence: 0.95
 last_confirmed: "2026-11-22"
 accessed_at: "2026-11-22"
-source_count: 105
+source_count: 106
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -579,3 +579,7 @@ The Anand-Wu table above puts due diligence in the quality-control zone: AI prod
 ## AI100: complementarity as a grand challenge (added 2026-11-22)
 
 SQ3 of the [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] carries the 2021 panel's overarching challenge, machines that cooperate seamlessly with humans, into economic terms. *"Ensuring that the outcome of AI development complements and enriches human activity, rather than displacing it, is now among the most consequential open problems in the field."* *"Racing against machines is a losing battle; we must race with the machine."* From the BCG and customer-support evidence it concludes that *"the critical variable is not AI capability per se but the design of human–AI interaction"*: how tasks are allocated, how trust is calibrated, how systems are integrated. In [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's seminar]], Wooldridge applies this to software: AI *"is going to value not the brick layers but the architects."*
+
+## Two cardinal sins, and operating leverage (added 2026-11-22)
+
+[[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Katy George at Microsoft Ignite (Nov 2026)]] restates the *Capability Add* argument above as two errors. The first is to *"automate a really bad process."* The second is to *"stop with automation. If that's all you get out of AI, you make your company a little smaller, maybe a little faster, but not better."* Microsoft finds *"more impact on the top line than we're finding even on the bottom line."* A slide names the combination **operating leverage**: *new output with higher strategic value* (revenue, innovation, customer and employee experiences) plus *output delivered faster, more efficiently, and with less error*. In supply chain, agents took work out of the process and also *"augmented the process with lots of new capability that only AI could bring."* The internal-audit example (proactive risk identification on every audit) is repeated from her WorkLab episode. It is the same speaker on the same company, now on a slide.

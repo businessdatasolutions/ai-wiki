@@ -3,9 +3,9 @@ type: concept
 aliases: ["document intelligence", "document AI", "intelligent document processing", "IDP", "agentic document extraction", "document understanding", "machine document understanding"]
 tags: [document-intelligence, document-ai, agentic-document-extraction, ocr, visual-grounding, verifiable-rag, unstructured-data, idp, enterprise-ai]
 confidence: 0.72
-last_confirmed: "2026-06-15"
-accessed_at: "2026-11-04"
-source_count: 7
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 8
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -49,6 +49,10 @@ High-accuracy extraction is necessary but **not sufficient** for value: document
 ## The inverse direction: re-authoring documents *for* machines ([[2026-06-12-aws-leaders-guide-data-strategy-agentic-ai|AWS data-strategy / Sydney 2026]])
 
 Document intelligence as covered above extracts structure *out of* human-formatted documents. The AWS data-strategy keynote names the **complementary inverse**: re-author the source documents into a machine-native format so agents don't have to reverse-engineer human formatting at all. Human cues — bold, italics, indentation, PDF layout — are "overhead to a machine" (more tokens, no signal); the prescription is converting docs to **markdown** so agents reason over structure directly (headers→hierarchy, lists→arrays, links→navigable), citing **Stripe** converting its human docs this way. The keynote's four-question data test culminates in *"can an agent consume this without a human translating?"* — a crisp design target. The two directions bound the field: *extract-from-human-docs* (OCR/ADE, when you can't change the source) vs *author-for-machines* (markdown/data-products, when you control it); the latter is cheaper and lossless where feasible.
+
+## A shared platform as the way to scale (added 2026-11-22)
+
+[[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Cory Hrncirik (Microsoft finance) at Ignite 2026]] describes document intelligence as reusable infrastructure rather than a product. Microsoft's finance function promised its CFO six gen AI projects in spring 2023. It found the same work in all six, built *"a document intelligence platform"*, and delivered 16 projects by the end of year one, because *"a translation or an extraction or a summarization skill is basically universal across any document type."* He gives no accuracy figures. The session's quote-to-cash slide lists case categorization and summarization, invoice error detection and *"60% contracts with errors flagged within first 10 days."* This is a vendor's account of its own back office, so the page's confidence stays at the vendor tier.
 
 ## Debates and supersession
 
