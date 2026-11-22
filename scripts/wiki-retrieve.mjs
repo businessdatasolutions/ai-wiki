@@ -35,9 +35,10 @@
 import { spawnSync } from 'node:child_process';
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname, resolve, join } from 'node:path';
+import { dirname, resolve, join, relative } from 'node:path';
 import matter from 'gray-matter';
 import { qmdQuery } from './lib/qmd-client.mjs';
+import { parseWikiRef } from './lib/wiki-ref.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = resolve(__dirname, '..');
@@ -145,19 +146,10 @@ function numArg(raw, flag, min, max) {
   return v;
 }
 
-// Parse a qmd path / graph slug into { dir, slug, fullSlug, diskPath }.
-// Accepts: "qmd://ai-wiki/concepts/foo.md", "wiki/concepts/foo.md", "concepts/foo.md", "concepts/foo".
-const TYPE_DIRS = 'concepts|entities|syntheses|sources|threads';
-const PATH_RE = new RegExp(`(?:^|/)(?:wiki/)?(${TYPE_DIRS})/([^/]+?)(?:\\.md)?$`);
-function parseRef(raw) {
-  if (!raw) return null;
-  const m = raw.match(PATH_RE);
-  if (!m) return null;
-  const dir = m[1];
-  const slug = m[2];
-  const fullSlug = `${dir}/${slug}`;
-  return { dir, slug, fullSlug, diskPath: join(REPO_ROOT, 'wiki', dir, `${slug}.md`) };
-}
+// Parse a qmd path / graph slug into { dir, name, slug, fullSlug, diskPath }.
+// qmd hits ("qmd://ai-wiki/entities/HBS%20AI%20Institute.md") and graph nodes
+// ("entities/HBS-AI-Institute") for the same page share one fullSlug; see scripts/lib/wiki-ref.mjs.
+const parseRef = parseWikiRef;
 
 const DIR_TO_TYPE = {
   concepts: 'concept',
@@ -184,10 +176,10 @@ function ensure(ref) {
   if (!cand.has(ref.fullSlug)) {
     cand.set(ref.fullSlug, {
       slug: ref.fullSlug,
-      path: `wiki/${ref.fullSlug}.md`,
+      path: relative(REPO_ROOT, ref.diskPath),
       diskPath: ref.diskPath,
       type: DIR_TO_TYPE[ref.dir] || null,
-      title: ref.slug,
+      title: ref.name,
       qmd_rank: null,
       qmd_score: null,
       graph: [],

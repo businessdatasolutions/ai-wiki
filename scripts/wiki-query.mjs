@@ -28,6 +28,7 @@ import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve, join } from 'node:path';
 import { qmdQuery } from './lib/qmd-client.mjs';
+import { parseWikiRef } from './lib/wiki-ref.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = resolve(__dirname, '..');
@@ -117,10 +118,10 @@ for (let i = 0; i < hits.length; i++) {
   if (snippet) console.log(`     ${snippet}…`);
   console.log('');
 
-  // Collect bump candidates — extract slug from path
-  // Path format examples: "qmd://ai-wiki/concepts/foo.md", "wiki/concepts/foo.md", "concepts/foo.md"
-  const m = path.match(/(?:^|\/)(?:wiki\/)?(concepts|entities|syntheses)\/([^/]+)\.md$/);
-  if (m) bumpCandidates.add(m[2]);
+  // Collect bump candidates. qmd paths are URL-encoded ("entities/HBS%20AI%20Institute.md");
+  // parseWikiRef decodes them and returns the page name as it is on disk.
+  const ref = parseWikiRef(path);
+  if (ref && ['concepts', 'entities', 'syntheses'].includes(ref.dir)) bumpCandidates.add(ref.name);
 }
 
 // ----- Step 3: bump accessed_at on candidate pages -----
