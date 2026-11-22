@@ -5,9 +5,9 @@ aliases: ["Claude Code", "Claude Cowork", "Claude Co-work"]
 tags: [claude-code, anthropic, coding-agent, agent-harness, agentic-engineering, cli, routines, goal-loop, hooks, subagents, agents-md, auto-mode, permission-classifier, dynamic-workflows, claude-cowork, vertex-ai]
 affiliation: "Anthropic"
 confidence: 0.9
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
-source_count: 23
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 24
 relationships:
   - type: part-of
     target: Anthropic
@@ -81,3 +81,7 @@ SORT file.name ASC
 ## Every employee as a builder (added 2026-11-04)
 
 [[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort (Remote) on BNR (Oct 2026)]]: Remote's staff build their own internal apps with Claude Code in a scaffold called Labs, on one shared database, and its compulsory AI course ends with each employee building something in Claude Code. The CEO's claim: AI wrote about 40% of Remote's code at the start of 2026 and 100% by October.
+
+## Named by AI100 (added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] names Claude Code twice. As agentic AI, it has *"shown the strong potential for agentic workflows in software development"*. With GitHub Copilot, Cursor and Codex it is one of the tools representing *"the state of the art in automated program synthesis."*

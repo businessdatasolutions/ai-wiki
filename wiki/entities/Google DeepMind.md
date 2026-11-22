@@ -5,9 +5,9 @@ aliases: ["Google DeepMind", "DeepMind", "GDM"]
 tags: [google-deepmind, gdm, ai-lab, gemini, antigravity, omni, autoharness, foundation-models, agent-harness, world-models, demis-hassabis]
 since: 2023
 confidence: 0.80
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 9
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 10
 relationships:
   - type: part-of
     target: Google
@@ -34,3 +34,14 @@ Google's consolidated AI research division (the 2023 merger of DeepMind and Goog
 ## Relationship to Google
 
 GDM is the AI-lab role within [[Google]]; this wiki's broader Google footprint (Cloud, ADK, [[Google Research]]) is tracked on the [[Google]] page. GDM employs [[Logan Kilpatrick]] among ~100,000+ Google engineers who dogfood Gemini.
+
+## In the AI100 2026 report (added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] uses Google DeepMind for its science examples:
+- **AlphaFold**: the 2024 Nobel Prize in Chemistry and 214 million predicted structures.
+- **AlphaGenome** (Nature, early 2026).
+- **GNoME**: 2.2 million predicted inorganic compounds.
+- **AlphaProof and AlphaGeometry 2** at IMO silver level in 2024, then **Gemini Deep Think** at gold in 2025.
+- **The AI Co-Scientist** as the model of human–AI collaboration in research.
+
+It also notes that AlphaFold *"shifts the work elsewhere"* rather than eliminating the biologist's work.

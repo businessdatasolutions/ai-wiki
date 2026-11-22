@@ -5,9 +5,9 @@ aliases: ["NVIDIA", "Nvidia"]
 tags: [nvidia, gpu, semiconductors, nemotron, openshell, dgx, open-weight-models, jensen-huang, nvidia-research, small-language-models, slm]
 since: 1993
 confidence: 0.90
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 13
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 15
 relationships:
   - type: supports
     target: small-language-models
@@ -75,3 +75,7 @@ SORT file.name ASC
 
 - **Power.** [[2026-10-16-sivaram-shandal-bcg-pitching-progress-emerald-ai-flexibility|Sivaram on BCG's Pitching Progress]] (uploaded October 2026, recorded about November 2025): NVIDIA leads **Aurora**, a 96 MW facility in Manassas, Virginia, announced as *"the world's first power-flexible AI factory"*, with Emerald AI's software built into **NVIDIA Mission Control** so the site can cut consumption when the local grid is stressed. The aim is a reference architecture for future AI factories. The host calls NVIDIA Emerald's *"big investor."*
 - **Money.** [[2026-10-15-lin-stanford-ai-club-building-in-the-ai-era|Alfred Lin (Sequoia) at the Stanford AI Club, October 2026]]: NVIDIA investing in companies that then buy its GPUs is circular, but *"money has always been circular"*; Jensen Huang's reason is that *"he wants to empower the ecosystem."* Lin's concern is the debt others take on to build data centres. He also uses Huang as his example of patience: *"the first 20 years does not look like the last 10 years."*
+
+## The scaling era's index (added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] uses Nvidia as the measure of the scaling era. Its market cap reached $5 trillion in October 2025, *"arguably making it the most valuable company in human history"*, and Nvidia alone accounted for more than 15% of 2025 U.S. stock-market gains. A slide in [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's HAI seminar on it]] updates the figure to about **$5.25 trillion on 28 October 2026** and adds *"solely because they build the GPUs of choice."* Wooldridge opens the talk with *"the Nvidia scandal"*, a story about the company's CEO that broke as the report came out and that he does not describe. He uses it to argue that only the scaling era explains why it became a geopolitical question. The report calls U.S. chip export controls *"arguably the most consequential governance surprise of the period."*

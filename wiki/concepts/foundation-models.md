@@ -3,9 +3,9 @@ type: concept
 aliases: ["foundation model", "foundation models", "FM", "frontier model", "frontier models"]
 tags: [foundation-models, generative-ai, ai-research]
 confidence: 0.93
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 50
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 52
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -172,6 +172,7 @@ See [[small-language-models]] for the argument, the evidence, and where it does 
 
 ## Debates and supersession
 
+- **Is the scaling era ending? (added 2026-11-22)** The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]]: *"It is not clear when the scaling era will end, or if it already is ending"*. It quotes Sutskever (*"Scaling the pre-training is essentially tapped out"*) beside Five Years On's finding that 2021's *"general methods are running into limits"* was the call *"that aged most quickly."* The panel itself was divided.
 - **Frontier consolidation vs. multi-model enterprise use (added 2026-09-21).** [[2026-09-18-swisher-lafrance-atlantic-festival-tech-economy-is-ai-reshaping-america|Swisher]] predicts seven frontier labs becoming two; [[2026-09-15-krishna-bain-winning-with-ai-era-of-experimentation-is-over|Krishna]] predicts enterprises using many models, open and closed. Different quantities (labs vs. deployed models), but the combination implies the enterprise's frontier options narrow while open weights carry the variety. Open question: which is observed by 2027?
 - **"Frontier" vs. "foundation" framing.** "Frontier" emphasizes capability gap; "foundation" emphasizes adaptation role. Different policy/regulation implications — frontier-model bills target capability thresholds; foundation-model bills target the broader pretraining-then-adapt pattern.
 - **Compute-scaling sustainability.** Data-commons shrinkage (see [[responsible-ai]]) plus rising energy demands (driving nuclear-energy partnerships — Microsoft's Three Mile Island, Google's SMRs, Amazon's SMRs) raise structural questions about the 5-month-compute-doubling trajectory continuing.
@@ -245,3 +246,13 @@ Two McKinsey sources from the same week add to the *cost per task* and *open wei
 ## Scale, and a narrowing gap between labs (added 2026-10-30)
 
 [[2026-10-27-catlin-durth-hamalainen-montard-mckinsey-ceo-agenda-agentic-age|McKinsey's CEO agenda (Inside the Strategy Room, Oct 2026)]]: Hämäläinen says compute going into training grows four to five times a year and algorithmic efficiency three times, and that the performance gap between OpenAI, Anthropic and Google *"has halved in the last year,"* leaving differences such as *"tonality"*. Catlin puts US capital expenditure at about $7 trillion for 2026–2030. Neither figure has a source in the episode. [[2026-10-28-hack-klein-browserbase-navigators-clickup-why-agents-keep-failing|Hack (ClickUp, on Navigators, Oct 2026)]] says the gap between top labs and open-source Chinese labs *"has really shrunk,"* and expects a frontier model on top with specialised models beneath it.
+
+## The scaling era and its limits, per AI100 (added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] uses this page's vocabulary, citing Bommasani et al. (2021) for "foundation model" and defining a "frontier model" as one at the cutting edge. It gives the economics of the 2021–2026 period:
+- **Cost:** about $5 million per frontier model in 2021 and close to $500 million per training run in 2026, on infrastructure costing tens of billions.
+- **Inputs:** tens of trillions of tokens and more than 100,000 GPUs for months.
+- **Growth:** training compute up roughly fivefold a year since 2020 (Epoch AI), and capabilities doubling every three to six months.
+- **Size:** a "small" model has about 30 billion parameters and a frontier model up to a trillion.
+
+Its verdict on scaling: the laws *"remain empirically useful within constrained regimes, but they no longer provide a sufficient explanation for frontier capability gains."* The next phase rests on efficiency, continual learning, modular architectures and inference-time compute. Data is becoming a strategic asset, trained on *"mixtures of public, licensed, and proprietary datasets."* In [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's seminar]], Wooldridge says the panel *"was somewhat divided"* on whether scaling continues.

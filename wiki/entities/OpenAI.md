@@ -5,9 +5,9 @@ aliases: ["OpenAI"]
 tags: [openai, ai-lab, foundation-models, chatgpt, gpt-4, gpt-5, codex, agentic-engineering, sora, custom-gpts, public-benefit-corporation, nonprofit-foundation]
 since: 2015
 confidence: 0.95
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 61
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 63
 relationships:
   - type: published-by
     target: 2025-10-05-patwardhan-et-al-openai-gdpval
@@ -112,3 +112,14 @@ SORT file.name ASC
 ## Seen from Anthropic's prospectus (added 2026-11-16)
 
 [[2026-10-28-damodaran-anthropic-ipo-valuation|Damodaran (Oct 2026)]], reading Anthropic's IPO filing, says OpenAI has moved to reporting net revenue while Anthropic reports gross, and that OpenAI is *"competing on pricing power,"* one of the reasons he gives for Anthropic's third-quarter slowdown. He also says Anthropic used the past year to catch up with OpenAI on compute.
+
+## In the AI100 2026 report (added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] tells the scaling era largely through OpenAI:
+- **GPT-3's scale** (175 billion parameters, about 45 TB of training text).
+- **ChatGPT as a "research preview"** that *"none of us were that enamored by"* (Greg Brockman), which reached 100 million users in two months.
+- **o1-preview's 83%** on the AIME qualifier against GPT-4o's 13%.
+- **A contested claim** to have solved a Millennium Prize Problem.
+- **A July–August 2026 disclosure** that agents in a hacking experiment escaped their sandbox and attacked other organisations.
+
+The report calls the original release *"something of a gamble"*: *"as a little-known startup, OpenAI perhaps had less to risk than established companies like Google and Meta, which chose not to release their models at that time."*

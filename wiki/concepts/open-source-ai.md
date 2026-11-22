@@ -3,9 +3,9 @@ type: concept
 aliases: ["open source AI", "open-source AI", "open-weight models", "open weights", "open models", "own vs rent AI"]
 tags: [open-source-ai, open-weight-models, own-vs-rent, ai-sovereignty, concentration-of-power, china-open-models, safety-through-transparency, hugging-face]
 confidence: 0.95
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 30
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 32
 relationships:
   - type: supports
     target: ai-sovereignty
@@ -166,6 +166,7 @@ He also names a motive that has no open-weights component at all: **cultural aut
 
 ## Debates and supersession
 
+- **Who will use whose models? (added 2026-11-22)** In [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's seminar]], Wooldridge forecasts Europe and North America on US-led closed models, with China supplying the rest of the world. [[2026-09-18-bloomberg-originals-how-china-plans-to-win-global-ai-race|Bloomberg's OpenRouter data]] already show Germany and the U.S. using more Chinese than U.S. models by June 2026. OpenRouter measures developer API routing, not national adoption.
 - **Open-vs-closed as a safety question is unresolved in the corpus.** Delangue argues transparency makes open source *safer* and concentration is the real danger; the closed-labs framing (which halted the [[Anthropic]] Fable and OpenAI GPT 5.6 releases "for cybersecurity concerns") argues the opposite — that frontier capabilities need gating. The wiki holds both without resolving; see [[responsible-ai]]. No supersession.
 - **Vendor-advocacy discount, partially lifted (2026-08-12).** The page's two founding sources are vendor-CEO interviews (Hugging Face sells open-model infrastructure; NVIDIA sells the silicon and Nemotron weights beneath it), so their pro-open claims are self-interested. The August 2026 additions are not: [[2026-08-01-bbc-ai-decoded-why-isnt-ai-working-for-your-company|Grant]] sells enterprise AI advisory rather than open models, and [[2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity|Frey]] is an academic with no commercial position. `confidence` moves 0.72 → **0.80** on that basis. It stays below the cap because **no source on this page is empirical** — all four are interviews. The AI Index open-weight-trend data and the primary Hugging Face Spring 2026 report remain the open ingest targets that would close the gap.
 - **Two different drivers of the same behaviour, not yet disentangled.** Delangue and Huang argue firms move to open/owned models as **cost** bites at production scale; Grant argues they move for **IP protection and data control**; Frey argues states move for **strategic autonomy** under export-control and access-restriction risk. All three predict the same migration, so the page cannot currently distinguish them — and they imply different things about what would reverse it (cheaper frontier inference, better contractual data guarantees, and geopolitical détente respectively).
@@ -281,3 +282,13 @@ The page's other sections give buyers' reasons for open weights (cost, control, 
 [[2026-10-07-ramineni-browserbase-fireflies-gives-software-away-free|Ramineni (Fireflies) on Browserbase's Navigators, Oct 2026]] gives the buyer-side cost argument from an application company rather than a platform. As open weights improved, Fireflies could try different models for summarisation and other tasks, and *"all of the cost benefits … we can give it back to users"*: unlimited recording, transcription and summaries on the free tier, capped only by storage. He still works with Anthropic and OpenAI (*"we process a trillion tokens on OpenAI"*) and routes across seven to ten model and speech providers. Two of his reasons for routing belong to this page: enterprises that *"want to have their entire system run … on their own private cloud"*, and *"the flexibility to switch between different providers"* at scale. He also wants on-device models for an always-on assistant: *"the quality is great, but really the cost savings makes it possible to do a lot more and run way more tokens."*
 
 The host, [[Browserbase]]'s Paul Klein IV, gives the model-neutral reason: *"I don't want my data to be tied to one single model,"* so the switching cost between models should be *"as low as possible … especially as the open source becomes more and more competitive."* This is the layer-choice hedge in the section above, stated by two founders with a stake in it. No figures; confidence unchanged.
+
+## Open weights as geopolitics (AI100, added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] treats Chinese open-weight models as a geopolitical move:
+- Qwen, GLM, Kimi and DeepSeek R1 *"unsettled the assumption that a small number of U.S. firms would indefinitely set the global frontier."*
+- Open-weight models, *"which once lagged a year or two behind frontier models in capability, are now only three to six months behind; many users find them to be good enough"* (p. 84).
+- For states choosing models for public-sector use, *"closed, proprietary, U.S.-hosted versus open, downloadable, globally deployable"* is now a live question.
+- China *"has advanced an open-source strategy designed to embed its technology in the world's AI infrastructure."*
+
+[[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's seminar]] turns this into a forecast: Europe and North America on US-led closed models, and China as *"the AI provider"* for the rest of the world.

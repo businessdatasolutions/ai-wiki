@@ -3,8 +3,8 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-11-16"
-source_count: 117
+last_confirmed: "2026-11-22"
+source_count: 119
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -12,7 +12,7 @@ relationships:
   - type: caused
     target: ai-deskilling
     via: "task-composition shift is one mechanism within broader employment effects"
-accessed_at: "2026-11-16"
+accessed_at: "2026-11-22"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -769,3 +769,14 @@ The [[Stanford Digital Economy Lab]] and [[ADP]] Research now publish the Canari
 ## Register data split by adoption, and executives on their own firms (added 2026-11-07)
 
 [[2026-03-01-humlum-vestergaard-still-waters-rapid-currents-nber-w33777|Humlum and Vestergaard]] link surveys of about 25,000 Danish workers in eleven exposed occupations to earnings records through December 2024. They find null effects on earnings and hours two years after ChatGPT, ruling out effects above 2%. Denmark also shows an early-career decline, but not at workplaces that adopted chatbots (bound: a third of a percentage point). [[2026-10-01-yotzov-barrero-bloom-nber-w34836-firm-data-on-ai|Yotzov, Barrero, Bloom et al.]] ask executives in seven countries: 87% report no employment effect from AI so far, and the expected change over three years is −0.4%.
+
+## The AI100 2026 reading (added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] sets the studies side by side rather than choosing among them:
+- **Aggregate effects are zero or positive**, as in its 2016 report. It cites [[2026-03-05-massenkoff-mccrory-anthropic-labor-market-impacts-ai|Massenkoff and McCrory]] and Danish registers ([[2026-03-01-humlum-vestergaard-still-waters-rapid-currents-nber-w33777|Humlum and Vestergaard]]).
+- **Early-career workers in exposed occupations show losses.** It cites [[2026-04-28-brynjolfsson-canaries-coal-mine|Canaries]] in its August 2026 revision, with a 19% gap.
+- **"Exposure" itself is questioned** through [[2025-06-01-autor-thompson-expertise|Autor and Thompson]].
+- **The heaviest AI adopters grow employment**, by 10% a year and 12% in entry-level jobs (Ramp).
+- **Adoption is unequal:** women are 22% less likely to use generative AI.
+
+Its reading is *"meaningful bottlenecks to job loss"*, and *"jobs do not disappear with productivity gains."* It adds a political effect: narratives of AI replacing jobs reduce people's willingness to engage politically (Granulo et al. 2026). In [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's seminar]], Wooldridge, *"speaking personally, not as the report,"* finds mass white-collar displacement *"rather doubtful."* The report bears on the [[ai-employment-effects-measurement-dispute]] thread: it is one more source that holds the cohort effect and the aggregate null together without calling them a contradiction.

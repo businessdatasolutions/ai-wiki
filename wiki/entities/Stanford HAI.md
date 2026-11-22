@@ -6,14 +6,14 @@ tags: [stanford, ai-research, ai-policy, academic-institute, ai-index]
 website: "https://hai.stanford.edu"
 founded: 2019
 confidence: 0.90
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 5
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 7
 ---
 
 # Stanford HAI
 
-The **Stanford Institute for Human-Centered Artificial Intelligence** is an interdisciplinary AI research institute at Stanford University focused on advancing AI to benefit humanity. Founded in 2019. Hosts the [[AI Index]] (an independent initiative within HAI) and emerged in part from the One Hundred Year Study on Artificial Intelligence (AI100), under whose umbrella the AI Index was originally conceived in 2017.
+The **Stanford Institute for Human-Centered Artificial Intelligence** is an interdisciplinary AI research institute at Stanford University focused on advancing AI to benefit humanity. Founded in 2019. Hosts the [[AI Index]] (an independent initiative within HAI) and emerged in part from the One Hundred Year Study on Artificial Intelligence ([[AI100]]), under whose umbrella the AI Index was originally conceived in 2017.
 
 ## Role in the AI ecosystem
 
@@ -56,3 +56,7 @@ SORT file.name ASC
 ## HAI Seminar series (added 2026-10-08)
 
 [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|HAI Seminar: Industry Conversation with Instacart (Sep 2026)]]: a seminar recorded 23 September 2026 pairing an industry economist with a Stanford faculty member. Alexandr Lenk (Instacart Economics) presents a staggered difference-in-differences study of how agentic-AI use spreads through team "pioneers"; Arvind Karunakaran (Stanford Management Science & Engineering) presents field research on role redesign at a law firm. The first HAI Seminar recording in the wiki; the institute's other appearances are the AI Index and its launch talk.
+
+## AI100 and its 2026 report (added 2026-11-22)
+
+HAI administers [[AI100]], the One Hundred Year Study on AI, which predates the institute (2014 against 2019) and under which the [[AI Index]] was conceived. The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]], *AI Goes Mainstream*, was announced by HAI on 10 November 2026. [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's HAI seminar on it]] on 18 November is the second HAI seminar in the wiki to present an HAI report, after [[2026-05-27-sajadieh-stanford-hai-inside-the-2026-ai-index-report|the AI Index talk]]. Russ Altman, AI100's faculty director and an HAI associate director, moderated it.

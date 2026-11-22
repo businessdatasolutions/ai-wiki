@@ -3,9 +3,9 @@ type: concept
 title: Reward hacking
 aliases: ["reward hacking", "specification gaming", "benchmark contamination", "reward hacking gap", "obfuscated reward hacking", "grader exploitation"]
 confidence: 0.85
-last_confirmed: "2026-10-11"
-source_count: 13
-accessed_at: "2026-11-06"
+last_confirmed: "2026-11-22"
+source_count: 14
+accessed_at: "2026-11-22"
 tags: [reward-hacking, specification-gaming, benchmark-integrity, held-out-tests, cot-monitoring, obfuscation, swe-bench, evaluation, oversight-surface, goodharts-law]
 relationships:
   - type: part-of
@@ -83,3 +83,7 @@ Second, it locates the vulnerability in the **environment**, not the model — c
 ## Reward hacking in home-made eval environments (added 2026-10-11)
 
 When application teams build their own environments from production traces, the same failure applies to their tasks. [[2026-10-09-broekhuizen-langchain-three-questions-every-agent-engineer|Broekhuizen (LangChain Labs, Oct 2026)]] names three failure modes for generated tasks: **leakage** (the task reveals a shortcut), **difficulty** (generated tasks are too easy) and **reward** (the grader rewards the wrong behaviour). Coding agents that help build these environments *"need actual constant supervision"*, and tasks must be *"reliably hard"* and not *"easy to reward hack"*, so that improvements are real.
+
+## In AI100's risk taxonomy (added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] places reward hacking at the root of its alignment discussion (SQ10): *"Since it is hard to specify what we really want (do the right thing), we settle for proxy measures (get a high score on this benchmark), which encourages reward hacking."* Its conclusions list reward hacking with jaggedness among the problems current systems still have, defined as models that *"behave in unintended and unhelpful ways by finding loopholes or shortcuts in a given reward scheme."*

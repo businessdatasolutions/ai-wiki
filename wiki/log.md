@@ -10,6 +10,36 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-11-22] ingest | AI100 2026 report *AI Goes Mainstream* and Wooldridge's Stanford HAI seminar on it (2 sources, 13 stills)
+
+The user supplied the report PDF (`raw/reports/ai100_report_2026.pdf`) and the seminar video together, as related. The report page on ai100.stanford.edu links this video as "the Seminar on the 2026 Report's Findings", so the publisher confirms the pairing.
+
+**Acquire.**
+- **Report.** 127-page PDF, complete: the table of contents ends at p. 116 and the back cover is p. 127. Renamed to `raw/reports/2026-11-10-ai100-ai-goes-mainstream-2026.pdf` (gitignored) and converted with `pdftotext -layout`, one page marker per page. The PDF says only "November 2026". The date 2026-11-10 comes from Stanford HAI's announcement of the release, which agrees with Wooldridge's "about a week ago" on 18 November.
+- **Seminar.** `youtube-transcript-skill`, transcript panel route: 452 segments, the last at 58:52 of 59:06. No chapters, and the Q&A is not in the recording. Proper nouns were ASR-cleaned at acquire.
+- **Stills.** `extract_stills.py` returned Gemini HTTP 402 again, so they were picked by hand per the 2026-11-17 rule. 709 frames at 360p (every 5 s) merged into 94 tiles; a 2-second pass from 4:48 found no slide the grid had missed. 32 frames were cut from the 1080p stream and 13 published. Navigation slides and the eight takeaway slides were left out, because the takeaway slides repeat the report's own wording, as a table on the seminar page shows.
+
+**Process.**
+- **Source pages.** [[2026-11-10-ai100-ai-goes-mainstream-2026]] covers the full report: the twelve takeaways, the scaling era, the standing questions, both deep dives and the 2021 audit. [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar]] has 13 stills in its visual canon.
+- **Video edge.** The seminar takes `depends-on` to the report, not `supports`: it is the same author restating his own result, per the 2026-11-16 rule. The report's TL;DR links the seminar, and the two index bullets link each other.
+- **Report edges.** Ten `supports` edges:
+  - AI Index 2026 (flagged as not independent: same institution, two shared authors)
+  - five labour papers the report cites (Canaries; Massenkoff & McCrory; Humlum & Vestergaard; Autor & Thompson; Brynjolfsson, Li & Raymond)
+  - Dell'Acqua's jagged frontier
+  - McKinsey on frontier-AI cybersecurity
+  - First Proof
+  - Bloomberg on China's AI race
+- **Contradiction.** One `contradicts` edge, from the seminar to Bloomberg. Wooldridge forecasts Europe and North America on US-led AI, while OpenRouter data already show Germany and the US using more Chinese models. The conflict is narrow: developer traffic is not national adoption.
+- **Neighbour scan.** By W&W cells it matched 202 sources (13 on all four cells), too broad to use for a state-of-the-field report. Edges were chosen from the papers the report cites and from overlap on specific claims instead.
+- **Entities.** New: [[AI100]] (named in two entity pages, promoted with its report); [[Michael Wooldridge]] (second authored source after the 2009 textbook, whose Dangling line is updated); [[Toby Walsh]] (second authored source after the AI Index 2026). Updated: Stanford HAI, AI Index, Raymond Perrault (plus a `part-of AI100` edge), NVIDIA, Anthropic, OpenAI, Google DeepMind, METR, Andrej Karpathy, Claude Code, Erik Brynjolfsson.
+- **Concepts.** Eighteen concepts got a dated section: generative-ai, foundation-models, small-language-models, open-source-ai, ai-sovereignty, jagged-frontier, ai-benchmarks, ai-agents, vibe-coding, ai-generated-code-quality, ai-employment-effects, automation-vs-augmentation, ai-deskilling, ai-washing, reward-hacking, attack-surface-management, responsible-ai, strategic-foresight. Four also got a Debates bullet: the report's own macro-impact contradiction, whether scaling is ending, national versus company sovereignty, and Wooldridge's forecast against the OpenRouter data. The thread [[ai-employment-effects-measurement-dispute]] has an evidence update.
+- **Counts.** Recounted with `lint-source-count.mjs`: 30 pages rose by 1 or 2, and all now match. Confidence went to 0.80 on small-language-models, attack-surface-management, ai-washing and AI100.
+
+**Found along the way.**
+- **The report contradicts itself on macro impact.** Key Takeaway 4 says AI is *"not yet evident in aggregate macroeconomic data"*. Five Years On reads 2.7% U.S. productivity growth in 2025 as an early J-curve.
+- **The "19%" Canaries figure** is the August 2026 revision's headline, not the wiki's 13% (2025 version). The thread already lists that revision as its next acquisition.
+- **Key Takeaway 12 has three wordings**: overview, full text, and seminar slide.
+
 ## [2026-11-17] ingest | Stills for the fourteen videos of 2026-11-16: 78 published across nine pages, hand-picked without Gemini
 
 The user asked why the last batch had no stills. Yesterday's run deferred them because Gemini returned HTTP 402 (prepayment credits depleted). It still did today, so the Find step was done by hand:

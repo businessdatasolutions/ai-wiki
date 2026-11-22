@@ -2,10 +2,10 @@
 type: concept
 aliases: ["AI washing", "AI-washing", "AI wash", "AI washing layoffs"]
 tags: [ai-washing, ai-employment-effects, labor-market, narrative, greenwashing, attribution, layoffs]
-confidence: 0.77
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-06"
-source_count: 4
+confidence: 0.8
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 5
 relationships:
   - type: part-of
     target: ai-employment-effects
@@ -97,3 +97,7 @@ SORT file.name ASC
 ## Beyond layoffs: AI in deal narratives (added 2026-11-04)
 
 [[2026-10-30-houssard-kordestani-liu-lundberg-mckinsey-ma-ai-value-creation|McKinsey on M&A (Inside the Strategy Room, Oct 2026)]]: McKinsey's M&A partners report that AI appears in the rationale or narrative of about half of all deals, but that for the bulk of them it is *"more, let's say, to get excitement around AI and to give the feeling to the investor … than actually the company is investing on the right thing"*; pure AI plays are *"much less than this 50%."* The first source in the wiki to apply the over-attribution pattern beyond layoffs. The mechanism is the same valuation premium Edwards describes, seen from the advisers' side.
+
+## Named by AI100 (added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] uses the term in SQ6, in a passage arguing that employment anxieties *"are not always justified"*: *"there appear to be some cases of AI washing, in which companies justify workforce reductions by reference to automation rather than poor management."* SQ10 notes that Amazon, Meta and Pinterest have blamed AI for layoffs. Among the wiki's sources that use the term, it is the only consensus report; the others are talks, news coverage and consulting articles.

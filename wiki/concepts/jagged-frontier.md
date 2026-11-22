@@ -3,9 +3,9 @@ type: concept
 aliases: ["jagged frontier", "jagged-frontier", "jagged technological frontier", "AI capability frontier", "jagged intelligence", "jagged skills", "jagged-intelligence", "animals vs ghosts", "ghosts not animals"]
 tags: [jagged-frontier, jagged-intelligence, AI-capabilities, knowledge-work, productivity, automation, augmentation, verifiability, animals-vs-ghosts]
 confidence: 0.95
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 25
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 26
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -210,3 +210,13 @@ This is a useful shape to carry: in one professional domain, the jagged edge doe
 ## Correct proofs, failing citations (added 2026-11-16)
 
 [[2026-10-28-williams-harvard-first-proof-ai-math|Williams (Harvard, on First Proof, Oct 2026)]] reports unevenness inside single answers in mathematics, a domain [[2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering|Karpathy]] names as verifiable. Graders of research-level problems found *"mathematically correct solutions that had either massive problems with exposition or massive problems with citations,"* although the prompts had asked for full attributions. Her account of the trend: a year ago models were *"mostly quite bad at proving simple mathematical statements,"* and now *"an AI model has produced a proof of a Millennium Prize Problem"* (neither the problem nor the model is named). No scores are given.
+
+## "Current AI systems remain jagged": AI100's conclusion (added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] makes jaggedness a headline.
+- **The cover art** evokes *"jagged intelligence"*.
+- **SQ3** (machine reasoning, crediting Karpathy for the term): *"One minute they are producing flawless PhD-level research, the next they are unable to count the number of r's in the word 'strawberry.'"* An SQ1 caption shows the failure persisting in 2026.
+- **The conclusions** (p. 114): *"on one prompt they perform at expert level, on the next they exhibit factual errors, bias, or lack of commonsense reasoning."*
+- **Physical AI** gets the same word for the world itself: *"the sheer complexity and 'jaggedness' of the physical world."*
+- **Dell'Acqua's BCG experiment** is cited for the cost of misjudging the boundary: consultants *"over-relied on the AI's outputs without recognizing the boundary."*
+- **A new use of the term:** *"The Jagged Global Economy"* (Murugan et al. 2026) for frontier AI's uneven exposure of national economies.

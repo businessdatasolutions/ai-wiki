@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI sovereignty", "sovereign AI", "digital sovereignty", "strategic autonomy in AI", "cultural autonomy", "full-stack sovereignty"]
 tags: [ai-sovereignty, sovereign-ai, digital-sovereignty, strategic-autonomy, own-vs-rent, cultural-autonomy, export-controls, industrial-policy, platform-governance, data-sovereignty]
 confidence: 0.90
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 17
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 19
 relationships:
   - type: supports
     target: open-source-ai
@@ -81,6 +81,7 @@ Laurie Chen (Reuters) adds the view from outside both blocs: *"the vast majority
 
 ## Debates and supersession
 
+- **Whose sovereignty? (added 2026-11-22)** The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] and [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's seminar]] mean national control of the whole stack, which only the U.S. and China can achieve. [[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Sonya Huang]] means a company owning its weights. The referents differ, so this is not a contradiction. The report's three-way choice (use U.S. models, build on Chinese open weights, or develop one's own) is the national version of the own-versus-rent question.
 - **Is layered sovereignty a genuine convergence or a shared euphemism?** [[2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai|Sundararajan]] and [[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Huang]] agree that sovereignty is partial and per-layer. Both, however, have reasons to prefer that answer: it is the answer that requires no one to stop buying frontier APIs. No source in the corpus argues the maximalist position seriously, so the agreement here is currently **unopposed rather than tested**.
 - **The China comparison arrives through interested channels.** The most favourable characterisation of Chinese algorithmic governance and industrial policy in the corpus comes from an episode **co-produced with CGTN**, a Chinese state broadcaster, from a speaker who discloses that he advises the Internet Society of China. The claims may well be accurate; the wiki holds no independent source on Chinese AI governance mechanics against which to check them. **This is the largest single gap on this page.** *Partly closed 2026-09-19:* [[2026-09-18-reuters-on-assignment-inside-chinas-ai-race|Reuters' correspondents]], who have no Chinese state co-producer, describe the mechanism: pre-release testing coordinated by the **Cyberspace Administration of China** (political speech, censorship, child safety), plus technical-safety benchmarks from the industry and science ministries, with little independent in-lab testing. This supports Sundararajan's "administrative, top-down" characterisation. It is still a description without pass criteria or enforcement data, so the gap is narrower but not closed.
 - **No measurement anywhere.** Every claim above is testimony or framing. There is no index, score, or dataset in the corpus that operationalises "sovereignty" for either states or firms. The one quantitative anchor — Hugging Face download share — measures model popularity, not autonomy.
@@ -141,3 +142,13 @@ An analyst's view, with some names inferred from auto-captions (see the source p
 ## Owning the workflow, the harness and the data (added 2026-10-25)
 
 [[2026-10-20-hamalainen-lala-takkar-mckinsey-economics-of-enterprise-ai|McKinsey's Explainer on the economics of enterprise AI (Oct 2026)]]: Lari Hämäläinen, a McKinsey senior partner, states firm-level sovereignty as cost and control advice: *"Our clients need to be in control of their own AI."* That means owning the workflow design, *"the harnesses, so the software… around the language model,"* and the data, and he expects open-source models run under the firm's own control to be *"preferential… for many many of our clients."* It is the own-versus-rent argument of the [[2026-08-11-huang-sequoia-own-your-intelligence-sovereign-ai|Sequoia keynote]] reached from AI spend reviews rather than from product strategy.
+
+## Sovereignty as the whole stack (AI100, added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] defines sovereignty as a country's *"capacity to independently develop, deploy, and govern AI ... via their own infrastructure, data, models, and expertise"* (KT5). Its Deep Dive One maps each layer as a dependency:
+- **Data networks:** more than 95% of international data traffic crosses about 550 undersea cables, increasingly owned by hyperscalers. There have been cuts in the Red Sea, the Baltic and the Taiwan Strait, and Starlink seeks a monopoly in low-orbit satellites.
+- **Chips:** over 90% of advanced chips are made in Taiwan, and ASML has a near monopoly on lithography.
+- **Materials and energy:** rare earths and helium; energy pulls the Gulf states, the Nordics and North America onto the map.
+- **Middle powers** (G42, HUMAIN, IndiaAI, the UK AI Security Institute, EU gigafactories) hedge between the blocs.
+
+A June 2026 U.S. ruling that denied non-U.S. users access to Anthropic's leading models brought the dependence risk *"into sharp focus."* For each country, the choice is to *"employ proprietary U.S. models, build on open-weight Chinese models, or develop their own sovereign capabilities."* [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's seminar]] condenses this to a six-part stack (skills, data, chips, secure pipelines, cheap energy, the ability to build data centres) and answers *"Who can do this? USA. China."*

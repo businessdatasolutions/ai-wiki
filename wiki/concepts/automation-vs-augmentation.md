@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 104
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 105
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -575,3 +575,7 @@ The Anand-Wu table above puts due diligence in the quality-control zone: AI prod
 ## A smaller office, or a better one (added 2026-11-16)
 
 [[2026-11-08-covington-slaney-mckinsey-strategy-room-agentic-transformation|Covington and Slaney (McKinsey, Nov 2026)]]: a four-person transformation office that spent 80% of its time on reporting built four agents, freed *"an entire individual's worth of time"*, and shrank while doing more of the value-adding work. Covington's reading: *"taking a small group and making it a little bit smaller doesn't really make a lot of money for your enterprise"*; the value is the same people spending their time on coaching, feedback and pushing for value, and *"No agent's going to do that."* The line the episode draws: agents for the grunt work, people for anything that talks to the business (*"Don't use your AI bots to talk to the business"*).
+
+## AI100: complementarity as a grand challenge (added 2026-11-22)
+
+SQ3 of the [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] carries the 2021 panel's overarching challenge, machines that cooperate seamlessly with humans, into economic terms. *"Ensuring that the outcome of AI development complements and enriches human activity, rather than displacing it, is now among the most consequential open problems in the field."* *"Racing against machines is a losing battle; we must race with the machine."* From the BCG and customer-support evidence it concludes that *"the critical variable is not AI capability per se but the design of human–AI interaction"*: how tasks are allocated, how trust is calibrated, how systems are integrated. In [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's seminar]], Wooldridge applies this to software: AI *"is going to value not the brick layers but the architects."*

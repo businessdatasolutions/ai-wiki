@@ -4,9 +4,9 @@ kind: person
 aliases: ["Karpathy", "Andrej Karpathy", "@karpathy"]
 tags: [andrej-karpathy, ai-researcher, openai, tesla, eureka-labs, software-3.0, vibe-coding, jagged-intelligence, llm-wiki]
 confidence: 0.92
-last_confirmed: "2026-09-19"
-accessed_at: "2026-09-19"
-source_count: 16
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 17
 relationships:
   - type: authored-by
     target: 2026-04-29-andrej-karpathy-from-vibe-coding-to-agentic-engineering
@@ -89,3 +89,7 @@ Both are **second-hand attributions to social-media posts** that the wiki has no
 - **Tesla** as an entity page — currently dangling but mentioned in the AI Index reports too; could be promoted on cross-page-presence grounds in a future pass.
 - **The original "outsource thinking ≠ outsource understanding" tweet** — Karpathy quotes it but doesn't name the author. Worth a citation upgrade if the original surfaces.
 - **Karpathy's hinted "valuable RL environments not in the labs' mix"** — declined on stage. If a follow-up writeup names the domains, that's a high-value second source.
+
+## Credited twice by AI100 (added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] credits Karpathy with two of its terms. **"Jaggedness"** names the unevenness of LLM reasoning in SQ3, *"one minute … flawless PhD-level research, the next … unable to count the number of r's in the word 'strawberry'"*, and it returns in the report's conclusions and cover art. **"Vibe coding"** is defined in SQ9, which says it *"works remarkably well for routine tasks"* but can harm maintainability in production.

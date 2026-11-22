@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI deskilling", "ai-deskilling", "task composition shift", "deskilling"]
 tags: [deskilling, task-composition, ai-employment-effects, occupations]
 confidence: 0.90
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 42
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 43
 relationships:
   - type: instance-of
     target: ai-employment-effects
@@ -277,3 +277,13 @@ In the AMA's 2026 physician survey, 88% of US physicians say they are concerned 
 ## Cognitive surrender, and junior jobs that changed (added 2026-11-16)
 
 [[2026-11-08-covington-slaney-mckinsey-strategy-room-agentic-transformation|Covington (McKinsey, Nov 2026)]] uses *cognitive surrender* for staff who *"let the AI chatbot do your job,"* which he has seen in junior colleagues and in clients, and expects people presenting agent-drafted decks to not *"really know what they're saying."* On headcount he reports the junior roles kept but changed: *"Does this mean we no longer need all these junior people?… Nope,"* with less time on decks and data irregularities and more on coaching initiative owners. The episode also hands to agents the consistency audit, *"where the most junior people on the TO spend the most of their time."* It does not say how juniors build judgment once that detective work moves to agents, the question [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Karunakaran]] puts as *"where does judgment come from?… Comes from execution."*
+
+## AI100 names de-skilling a systemic risk (added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] returns to de-skilling four times:
+- **SQ10** lists *"the long-term consequences of widespread AI use leading to the de-skilling of humanity"* among systemic risks, citing Shukla et al. (2025) on cognitive offloading.
+- **The introduction** names the fear *"that smart machines will ultimately lead to a dumber human race."*
+- **SQ8** says take-home essays, exams and programming assignments no longer assess students, and SQ9 worries that junior programmers will not reach senior level.
+- **The conclusions** list *"preventing the de-skilling of students and workers"* among the challenges ahead.
+
+SQ3 asks the design question: *"Can AI tutoring systems be designed to enhance human skill acquisition over time rather than creating dependency?"*

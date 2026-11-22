@@ -115,7 +115,8 @@ Considered and not linked: [[2026-04-02-tran-kiela-single-agent-outperforms-mult
 ## Linked entities and concepts
 
 - Concepts: [[ai-agents]], [[agent-oversight-and-delegation]], [[multi-agent-failure-modes]], [[agent-harness]], [[react-reasoning-acting]]
-- **Dangling** (single-source mention, deferred per the second-source promotion rule): Michael Wooldridge (author). People cited in the chapters but not authors of this source, and so out of scope for promotion: Nicholas Jennings, Oren Etzioni, Paul Scerri, Stuart Russell, Peter Norvig, Daniel Dennett, Yoav Shoham, Martha Pollack.
+- **Author:** [[Michael Wooldridge]], promoted on 2026-11-22 when he arrived as chair and first author of [[2026-11-10-ai100-ai-goes-mainstream-2026|the AI100 2026 report]], whose section on agentic AI cites his 1995 paper with Jennings as the origin of the idea.
+- **Dangling** (single-source mention, deferred per the second-source promotion rule): none among the authors. People cited in the chapters but not authors of this source, and so out of scope for promotion: Nicholas Jennings, Oren Etzioni, Paul Scerri, Stuart Russell, Peter Norvig, Daniel Dennett, Yoav Shoham, Martha Pollack.
 
 ## Scope and reliability
 

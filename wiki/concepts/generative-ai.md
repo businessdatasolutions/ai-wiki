@@ -3,9 +3,9 @@ type: concept
 aliases: ["GenAI", "generative AI", "generative artificial intelligence"]
 tags: [generative-ai, foundation-models, ai-adoption, ai-foundation, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 31
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 33
 relationships:
   - type: uses
     target: foundation-models
@@ -211,6 +211,7 @@ The choice between automation and augmentation thus has measurable consequences 
 
 ## Debates and supersession
 
+- **Is generative AI visible in macro data yet? (added 2026-11-22)** The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] gives three readings without reconciling them. Key Takeaway 4: impact *"not yet evident in aggregate macroeconomic data or in companies' returns."* Five Years On: 2.7% U.S. productivity growth in 2025 is *"consistent with the early stages of a general-purpose-technology J-curve."* SQ3: Acemoglu's estimate of at most 0.5–0.7% TFP over a decade.
 - **Will inference-cost decline continue?** Hardware (-30%/yr) and energy efficiency (+40%/yr) trends support it; data-commons shrinkage (see [[responsible-ai]]) cuts the other way; energy-supply constraints (driving nuclear partnerships) are a third force.
 - **Test-time compute as a new scaling axis.** Promising but expensive (o1: 6× cost, 30× latency vs. GPT-4o). Open question: economic viability for routine enterprise use, or only for high-value reasoning tasks.
 - **Does abundant generation lower the value of content in aggregate? (added 2026-09-19)** [[2026-09-18-bodnar-flanagan-hubspot-unbound-ai-broke-marketing-playbook|Bodnar & Flanagan (HubSpot UNBOUND, Sep 2026)]] report a **4× increase in AI-assisted content** in two years with no matching rise in attention, and half-lives of under 24 hours for a LinkedIn post. If output grows faster than attention, the value of each generated item falls, and the productivity gains measured per worker overstate the gains to the firm. Their figures are unsourced vendor-keynote numbers. **Open, and not yet measured anywhere in the corpus.**
@@ -247,3 +248,13 @@ The underlying point is that a general-purpose model gives **no differentiation*
 ## Dutch hospitals, early 2026 (added 2026-11-07)
 
 90% of Dutch hospitals use generative AI, up from 75% in 2025, and generative AI makes up 47% of a hospital's AI applications on average, against 39% a year earlier ([[2026-03-16-mxi-ai-monitor-ziekenhuizen-2026|M&I AI Monitor Ziekenhuizen 2026]], p. 30). Scale is a different matter: 8% of hospitals apply AI at large scale. See [[ai-in-health-care]].
+
+## "AI goes mainstream": the AI100 reading of 2021–2026 (added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] treats generative AI as what brought AI into the mainstream: *"certainly the biggest developments in science and technology since the World Wide Web in the 1990s, but arguably even more dramatic"* (p. 29). Four of its points belong here:
+- **The scale of access.** *"For the first time in human history, a substantial fraction of the world's population has had access to powerful, general-purpose AI tools"*, and *"one AI program could be used by millions of people to do millions of fundamentally different things."*
+- **Its makers did not see it coming.** ChatGPT was released as a research preview and reached 100 million users in two months.
+- **Two architectures did it**, the transformer and the diffusion model, but *"these architectures became revolutionary only when combined with massive data and computational power."*
+- **Creative markets.** New book titles tripled after ChatGPT while the quality of the average book fell (Reimers and Waldfogel 2026). "Slop" was Merriam-Webster's word of 2025.
+
+In [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's seminar]], the creative day jobs (website copy for the local restaurant) are the first to go.

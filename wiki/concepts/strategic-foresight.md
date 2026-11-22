@@ -3,9 +3,9 @@ type: concept
 aliases: ["strategic foresight", "strategic-foresight", "corporate foresight", "futures thinking"]
 tags: [strategic-foresight, scenarios, futures, signal-detection, FTSG, webb, arena-creation-potion, arenas-radar, MGI]
 confidence: 0.87
-last_confirmed: "2026-09-21"
-accessed_at: "2026-09-21"
-source_count: 24
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 26
 relationships:
   - type: part-of
     target: dynamic-capabilities
@@ -251,3 +251,13 @@ The transferable lesson is about **instrument validity in scanning**: a leading 
 [[2026-09-08-west-lacroix-zimmerman-mckinsey-why-strategy-needs-mobilization|West / McKinsey, September 2026]] adds a second angle to [[2026-08-10-banholzer-laberge-mckinsey-how-to-maximize-competitive-advantage|LaBerge]]'s point that economic profit is a lagging indicator. Competitive advantage "is usually a pretty weak signal", and "AI is great at weak signals… AI is great at synthesis." McKinsey built AI tools to assess advantage company by company from outside. In a teardown of 50 industrial companies, combining each firm's sources of advantage with its sources of disruption, about **a quarter had advantage that was being meaningfully eroded**. **Nine in ten of those had the erosion priced into their share price**: current fundamentals stronger than peers', but terminal-value growth priced at or below GDP.
 
 For foresight, the implication is that the capital market acts as an external sensor that can register erosion before the firm acknowledges it. West does not claim the firms failed to see it: "whether that was observable to those companies, you know, we don't know because we looked at it outside in." His prescription stays on the communication side (diagnose the erosion, then give investors proof points), not on the sensing side. The 50-company analysis is not ingested.
+
+## Insiders converge on the old paradigm's limits (AI100, added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] ends by auditing its 2021 predecessor claim by claim, sorted into divergences, convergences, and developments *"beyond the frame"*. The four headline misses are:
+- the end of deep learning's dominance
+- common sense needing physical grounding
+- loss of control treated in passing
+- no anticipation of a chat window reaching 100 million users
+
+The report traces all four to one cause: a panel *"drawn almost entirely from inside the field"* underweighted continued scaling. Its lesson for itself: *"where the field's own leading insiders converge on what is ahead, they may be converging on the previous paradigm's limits, not on the next paradigm's trajectory."* Asking the same questions every five years is what makes such an audit possible. The report also declines to forecast: *"This report will be out of date by the time you read it."*

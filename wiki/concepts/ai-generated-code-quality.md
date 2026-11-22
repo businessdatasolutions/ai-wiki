@@ -3,9 +3,9 @@ type: concept
 title: AI-generated code quality and security
 aliases: ["AI-generated code quality", "AI code security", "slopsquatting", "package hallucination", "AI technical debt", "AI-introduced defects"]
 confidence: 0.90
-last_confirmed: "2026-11-16"
-source_count: 7
-accessed_at: "2026-11-16"
+last_confirmed: "2026-11-22"
+source_count: 8
+accessed_at: "2026-11-22"
 tags: [code-quality, security, owasp, slopsquatting, package-hallucination, technical-debt, code-smells, supply-chain, static-analysis, flat-scaling]
 relationships:
   - type: part-of
@@ -112,3 +112,7 @@ This is the organisational counterpart to [[2026-02-12-gloaguen-evaluating-agent
 ## Correct is not good, and a lint rule in place of a review comment (added 2026-11-16)
 
 [[2026-11-14-tan-ugarte-yc-lightcone-rise-of-ai-coworkers|Lauren Tan (YC Lightcone, Nov 2026)]] separates two properties. An agent taught to run its code like a user, with CPU traces and performance metrics, can check its own work, which makes the code *"correct"* but possibly *"very slow or very resource inefficient."* Her remedy is to encode quality in the codebase: on an Electron app, a dependency-graph checker forbids imports between main-thread and renderer-thread code, and she says performance has *"stayed very consistent"* where majority-AI-written apps *"accumulate a lot of slop and performance problems."* No measurements are given. The studies above measure security flaws, hallucinated packages and static-analysis issues.
+
+## AI100 on code nobody has scrutinised (added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] states the concern at the level of the whole software stock: *"the next generation of software that we rely on every day will have never been subject to proper human scrutiny"* (SQ9). It adds that *"naively putting AI-generated code directly into production systems, without (time-consuming) verification, will lead to problems"* (SQ10), and that agent-driven development needs security checks of its own. Its scale figure is that 2025 industry surveys put AI-assisted or AI-generated code at 40–46% of professional output among users of the tools.

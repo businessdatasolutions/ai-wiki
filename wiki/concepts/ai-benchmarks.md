@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI benchmark", "AI benchmarks", "AI evaluation", "AI evals"]
 tags: [ai-benchmarks, ai-evaluation, foundation-models, capability-reliability-gap, scar-fragmentation]
 confidence: 0.95
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 39
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 40
 relationships:
   - type: depends-on
     target: reward-hacking
@@ -264,3 +264,14 @@ This is the scar-fragmentation problem from [[2026-03-20-huggingface-agentic-eva
 ## Research mathematics, set and graded by mathematicians (added 2026-11-16)
 
 [[2026-10-28-williams-harvard-first-proof-ai-math|Williams (Harvard, on First Proof, Oct 2026)]] describes a math benchmark built against contamination. Each problem is a lemma its setter had recently proved but not published or posted to the arXiv, and the answer is a proof, not a number. The first batch (Feb 2026) was open to anyone; Williams is *"rather sure"* that some groups did not keep to the one-shot rule. The second batch (May 2026) was therefore run in-house as *"a more controlled experiment"*, on ChatGPT's pro model, which [[OpenAI]] asked to have tested, and on three harnesses from teams at UCLA, Princeton and in Switzerland. Thirty mathematicians graded it over two days. Some mathematically correct solutions had *"massive problems"* with exposition or citations (*"what you might call, if a human created it, plagiarism"*), although every prompt and harness had asked for attributions, so the third batch scores correctness, citations and exposition separately. The film reports no scores.
+
+## Goodhart, goalposts and a half-life of months (AI100, added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] devotes part of SQ4 to measurement:
+- **Goodhart's law**: a test announced is a test optimised until useless.
+- **"Shifting goalposts"**: the Winograd Schema Challenge was a test of "true understanding" until GPT-3 passed it, after which *"it wasn't a good test after all."*
+- **ARC-AGI**: by September 2026 frontier models effectively pass all three suites, and the suites are criticised as narrow.
+- **Benchmarks in SQ3**: answers leak online, models game them, and *"we train them to optimize their scores on benchmarks, not to acquire broad understanding."*
+- **Their lifespan** (introduction): *"benchmarks intended to last for years became irrelevant within months of their release."*
+
+Its Five Years On retires the 2021 claim that models only exploit spurious correlations: frontier models now perform near expert level on MMLU and GPQA. The lesson it draws for human intelligence: *"any attempt to measure it through a simple reductive test ... will be misleading at best."*

@@ -2,10 +2,10 @@
 type: concept
 aliases: ["attack surface management", "ASM", "external attack surface", "EASM", "external attack surface management"]
 tags: [attack-surface-management, cybersecurity, infosec, exposure-management, shadow-it]
-confidence: 0.75
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 15
+confidence: 0.8
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 17
 relationships:
   - type: depends-on
     target: osint
@@ -124,3 +124,12 @@ Two consequences for this page. Discovery on this surface means reverse engineer
 
 - [[2026-10-20-pettit-eidelman-galloway-google-cloud-security-review-with-agents|Pettit, Eidelman & Galloway (Google Cloud Tech, Oct 2026)]]: Aron Eidelman cites Mandiant and Verizon's DBIR for the average time to exploit a new CVE: **62 days in 2018, seven days in 2025**, with about 31–32% exploited within 24 hours, and *"for the first time in history, code exploitation is now an easier way to start a breach than phishing or credential theft."* Nick Galloway: reversing a patch into an exploit, once a weekend task, now takes little time, and a firmware blob can be understood *"in a matter of minutes."* The Cloudflare chart above gives 23 days for 2025; the two series differ, probably because they measure different intervals, and neither source defines its measure here.
 - [[2026-10-19-smith-cohen-techcrunch-disrupt-okta-nanoco-agent-security|Smith (Okta) & Cohen (NanoCo) at TechCrunch Disrupt (Oct 2026)]]: unpatched CVEs are *"time bombs"*: anyone can run an open-weight model on *"a rack of Mac minis"* against them, and agents *"look at your infrastructure like it's Swiss cheese."* Gavriel Cohen's design rule is to assume container and even VM escape and ask what each pod, node, VPC and account could reach. Ric Smith's first advice: an N-1 patch programme, *"because that's where your holes are."*
+
+## AI100: cybersecurity as the leading near-term AI risk (added 2026-11-22)
+
+Key Takeaway 6 of the [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]], and its sections on dangers and cyber operations, give three dimensions of the risk:
+- **Automated attacks.** U.S. cybercrime losses reached $21 billion in 2025, up 26% and largely attributed to AI, and AI-generated malware evades detection.
+- **Vulnerability discovery in code**, where open source is most exposed. Claude Mythos Preview found thousands of zero-days, more than 99% unfixed at disclosure. Its reported compromise through a third-party vendor is *"a vivid illustration of how the very artifacts that expand defensive capability also concentrate offensive risk."*
+- **Massively parallel agent attacks.**
+
+The report predicts *"a game of cat and mouse"* in which AI also defends. In [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's seminar]], Wooldridge's personal top risk is AI *"used to attack a poorly secured piece of infrastructure,"* with air traffic control as the example.

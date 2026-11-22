@@ -4,9 +4,9 @@ kind: organization
 aliases: ["METR", "Model Evaluation and Threat Research"]
 tags: [metr, ai-evaluation, ai-benchmarks, ai-safety, reward-hacking, rct, developer-productivity, task-horizons, re-bench, hcast]
 confidence: 0.8
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 7
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 8
 relationships:
   - type: employs
     target: Elizabeth-Barnes
@@ -66,3 +66,7 @@ SORT file.name ASC
 ## Time horizons on a conference slide (added 2026-10-30)
 
 [[2026-10-24-skidmore-cloudflare-connect-build-not-buy|Skidmore (Cloudflare Connect, Oct 2026)]] charts Time Horizon 1.1: 12 hours for Claude Opus 4.6, a 16-hour limit for a reliable score, and later models *"not measured."*
+
+## In the AI100 2026 report (added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] reproduces METR's task-horizon chart among its images of the period: GPT-3.5 in 2022 at about 30 seconds of human work at 80% success, and Claude Mythos at about four hours. Its Five Years On section cites the time-horizon report's doubling every seven months against the 2021 panel's view that *"complete autonomy is not the eventual goal."*

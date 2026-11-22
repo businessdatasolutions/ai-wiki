@@ -5,9 +5,9 @@ aliases: ["Anthropic", "Anthropic PBC", "Claude"]
 tags: [anthropic, ai-lab, foundation-models, claude, public-benefit-corporation, long-term-benefit-trust]
 since: 2021
 confidence: 0.95
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 94
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 96
 ---
 
 # Anthropic
@@ -131,3 +131,15 @@ SORT file.name ASC
 - **Commitments and capital:** more than $450 billion of contractual compute commitments (more than $600 billion in all), with Broadcom the largest single beneficiary; $114 billion raised recently and held as cash.
 - **His valuation:** his own assumptions, none of them in the prospectus. About $1.48 trillion of equity, on $1 trillion of revenue in 2036, a 27.5% target margin, a 9.74% cost of capital and a 10% failure risk, with the present value of the contractual commitments subtracted as debt (the figure differs between his two talks; see the next bullet). His worst case is −$373 billion, his best case $4 trillion. Anthropic had not listed when he spoke, so the $1.48 trillion is his estimate of value, not a market price. He expected the offering to be priced at $1.5–2 trillion.
 - **The follow-up:** [[2026-11-03-damodaran-anthropic-valuation-feedback-loop|Damodaran (Nov 2026)]] keeps the valuation ($1.45–1.5 trillion) and ranks the inputs he is least sure of: target revenues, then governance (seven founders who *"operate in an echo chamber"*), profitability, reinvestment and regulatory risk. Here he gives the present value of the contractual commitments as about $373 billion; the first session subtracted $473 billion of debt, described there as the same present value. Neither transcript reconciles the two. He uses a pre-tax cost of debt of about 6.5%, on the BB+ rating that the Financial Times reported as likely, and on failure risk says *"Anthropic is no CoreWeave."*
+
+## In the AI100 2026 report (added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] returns to Anthropic repeatedly:
+- **Claude Mythos Preview** found thousands of zero-day vulnerabilities across every major operating system and browser, more than 99% unfixed at disclosure, and was withheld from public release. Access was reportedly compromised through a third-party vendor. **Project Glasswing** brought eleven partners together to use the model defensively.
+- **A dispute with the U.S. Department of Defense** over offensive use, after reports that Claude, deployed through Palantir, contributed to the January 2026 operation that seized Nicolás Maduro.
+- **A June 2026 U.S. ruling** denying non-U.S. users access to Anthropic's leading models, which the report treats as the sharpest example of dependence on foreign-owned systems.
+- **The $1.5 billion settlement** of the pirated-books case, *"the largest copyright settlement in legal history."*
+- **Claude Fable's** one-line counterexample to the Jacobian conjecture.
+- **Interpretability work** rating about 70% of extracted features interpretable.
+- **Watermarking** announced in August 2026 in response to EU transparency rules.
+- **An imminent IPO**, with Anthropic *"eyeing a market valuation of over $2 trillion."*

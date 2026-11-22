@@ -2,10 +2,10 @@
 type: concept
 aliases: ["small language model", "small language models", "SLM", "SLMs", "SLM-first", "heterogeneous agentic systems"]
 tags: [small-language-models, slm, agentic-ai, ai-agents, inference-economics, edge-deployment, quantization, model-specialization, fine-tuning, open-weight-models, tool-calling, function-calling, heterogeneous-agents]
-confidence: 0.75
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
-source_count: 22
+confidence: 0.8
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 24
 relationships:
   - type: instance-of
     target: foundation-models
@@ -168,3 +168,12 @@ Two additions to the section above. First, LangChain's gateway now hosts a secon
 
 - [[2026-10-20-parikh-google-cloud-hippocratic-ai-voice-agents-healthcare|Hippocratic AI on Google Cloud (Oct 2026)]]: Polaris is more than 30 specialist models from 30 billion to 400 billion parameters, and a separate open model family (Gemma) is used to evaluate them.
 - [[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort (Remote) on BNR (Oct 2026)]]: Remote runs local models for meeting transcription, but finds them *"not nearly good enough for the kind of work we do"* and relies mainly on Anthropic's models.
+
+## A consensus report on smaller models (added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] backs the small-model case from outside the vendor literature:
+- *"In some cases, smaller, more efficiently trained models outperform significantly larger systems, indicating that scale alone is not a reliable predictor of capability,"* and several smaller models have risen *"to near the top of leaderboards."*
+- Algorithmic efficiency (distillation, quantization, mixtures of experts, KV-cache compression, speculative decoding) *"may rival or exceed"* the gains from scaling.
+- Key Takeaway 1 expects the next phase to use *"potentially smaller models with less frequent rebuilding"*.
+
+Panel member Sara Hooker's essay *On the Slow Death of Scaling* is cited for the argument. [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's seminar]] puts it on one slide: *"Smarter algorithms and smaller models rebuilt less often."*

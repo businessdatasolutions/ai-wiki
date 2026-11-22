@@ -4,13 +4,16 @@ kind: person
 aliases: ["Raymond Perrault", "Ray Perrault", "C. Raymond Perrault"]
 tags: [perrault, sri-international, ai-index, calo-project, natural-language-processing, speech-act-theory]
 confidence: 0.85
-last_confirmed: "2026-05-28"
-accessed_at: "2026-05-28"
-source_count: 3
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 4
 relationships:
   - type: part-of
     target: AI-Index
     via: "Steering Committee co-chair (2026 with Yolanda Gil); chair (2025); recurring lead across editions"
+  - type: part-of
+    target: AI100
+    via: "member of the AI100 2026 Study Panel"
 ---
 
 # Raymond Perrault
@@ -24,6 +27,8 @@ Research grounded in **natural language processing and speech act theory**. From
 - [[2026-04-28-ai-index-report-2025]] — co-author and chair, 8th edition.
 - [[2026-04-30-ai-index-report-2026]] — co-author and co-chair, 9th edition.
 - [[2026-05-27-sajadieh-stanford-hai-inside-the-2026-ai-index-report]] — panel principal at the 27 May 2026 Stanford HAI talk-track; first-person founder-account of the AI Index's *facts-only* editorial discipline; names the **acceptability-threshold research gap** (*"how well does it have to work to be acceptable in a legal / medical / finance system?"*) and discloses the joint World-Bank / IMF global-AI-adoption measurement initiative with [[Yolanda Gil]].
+
+- [[2026-11-10-ai100-ai-goes-mainstream-2026]] — member of the [[AI100]] 2026 Study Panel; with [[Toby Walsh]] one of two authors of both the AI Index and *AI Goes Mainstream*, so agreement between the two reports is not independent.
 
 ## Mentioned in
 

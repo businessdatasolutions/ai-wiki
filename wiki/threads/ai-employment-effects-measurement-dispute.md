@@ -90,9 +90,19 @@ What it does not settle:
 
 **Status.** Still open. The leading hypothesis has moved from *plausible* to *observed for this dataset*. A synthesis needs items 1 or 3: Goldman's method, or a like-for-like treatment of offsets.
 
+## Evidence update (2026-11-22): a consensus report holds both levels
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] does not treat the cohort effect and the aggregate null as a contradiction. Its SQ10 sets them side by side:
+- Canaries for 22–25-year-olds, citing the **August 2026 revision's 19% gap**, the second acquisition this thread lists.
+- Massenkoff and McCrory, and Humlum and Vestergaard, for null aggregate effects.
+- Autor and Thompson against "exposure" as a predictor.
+
+It concludes there are *"meaningful bottlenecks to job loss"* and that *"jobs do not disappear with productivity gains."* That is the decomposition this thread calls the leading hypothesis, stated by a twelve-author panel. It adds no method that could settle the question: the report cites the studies and runs no new analysis. Its Five Years On section adds an internal wrinkle, reading 2.7% U.S. productivity growth in 2025 as an early J-curve, while Key Takeaway 4 says AI is not yet visible in macro data. The 19% figure is now confirmed as the revision's headline, but the revision itself is still not in the wiki.
+
 ## Related pages
 
 - [[2026-10-21-stanford-del-canaries-dashboard]] — the monthly dashboard behind the 2026-11-04 evidence update.
+- [[2026-11-10-ai100-ai-goes-mainstream-2026]] — the AI100 2026 report, which holds both levels together (2026-11-22 update).
 - [[ai-employment-effects]] — the concept page carrying all three positions.
 - [[ai-washing]] — the attribution-confound layer; relevant if the sceptical reading holds.
 - [[automation-vs-augmentation]] — Hatzius's 25%-of-tasks decomposition (most exposure returns as time saved, 6–7% as elimination) is the augmentation reading of the same data.

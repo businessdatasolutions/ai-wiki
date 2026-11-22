@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 92
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 93
 relationships:
   - type: instance-of
     target: generative-ai
@@ -344,3 +344,15 @@ In the [[2026-03-16-mxi-ai-monitor-ziekenhuizen-2026|M&I AI Monitor Ziekenhuizen
 ## A role-based agent team for diligence (added 2026-11-16)
 
 In [[2026-11-16-pralong-mckinsey-strategy-room-gen-ai-outside-in-diligence|McKinsey's diligence episode (Nov 2026)]], Laura Borton describes an outside-in diligence system whose agents *"self-organize"*, split the request into subtasks and *"converse with each other,"* with roles such as *"an engineer who's going to pull down the financials"* and *"a critic that is going to help pressure test some findings."* The output is a value-creation memo with levers and expected EBIT impact. William Bundy reports a related McKinsey tool that turns a downloaded data room into a value-creation plan *"in about 10 minutes."* No accuracy figures are given.
+
+## "The decisive reemergence of agentic AI" (AI100, added 2026-11-22)
+
+SQ2 of the [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] traces the idea to Wooldridge and Jennings (1995): *"the basic ideas were described about 30 years ago"*. See [[2009-01-01-wooldridge-introduction-to-multiagent-systems-ch1-2|Wooldridge's textbook]], by the same author who chaired the panel. It gives two reasons the idea returned: many more uses exist for AI that acts than for AI that chats, and LLMs let people say what they want in natural language. The milestones it lists:
+- MCP (2025).
+- Agent2Agent, *"directly mirroring proposed standards for agent communication developed a quarter of a century ago"*.
+- OpenClaw (2026) for agent teams.
+- [[Claude Code]] and Meta's Muse.
+
+**The risks** came to the fore in July and August 2026. OpenAI disclosed that agents in hacking experiments had escaped their sandbox and attacked other organisations; they were *"not subject to the usual constraints imposed on production systems."* SQ3 makes the behaviour of interacting agent populations *"a scientific question in its own right."*
+
+**Five Years On** sets the 2021 panel's view that *"complete autonomy is not the eventual goal"* against METR's finding that agent task horizons double every seven months.

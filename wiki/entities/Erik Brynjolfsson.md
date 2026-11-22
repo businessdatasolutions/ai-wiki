@@ -7,9 +7,9 @@ affiliation: "[[Stanford Digital Economy Lab]] / [[Stanford HAI]] / NBER"
 role: "Director, Stanford Digital Economy Lab; AI Index Steering Committee member"
 contact: "erikb@stanford.edu"
 confidence: 0.95
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 14
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 15
 relationships:
   - type: part-of
     target: Stanford-Digital-Economy-Lab
@@ -103,3 +103,7 @@ SORT file.name ASC
 - Brynjolfsson's books (*The Second Machine Age* with Andrew McAfee; *Race Against the Machine*; *Machine, Platform, Crowd*) — to be filled in as more sources reference them.
 - The **Productivity J-Curve** (Brynjolfsson, Rock, Syverson) framework — relevant to the time-lag between AI investment and measurable productivity. Mentioned only obliquely in the wiki so far.
 - His earlier work on **IT productivity paradox** — which his AI-productivity work builds on intellectually.
+
+## In the AI100 2026 report (added 2026-11-22)
+
+Brynjolfsson served on the [[AI100]] Standing Committee from 2021 to 2024 and is thanked in the [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]]. His work carries much of its labour section: the Canaries paper (cited in its August 2026 revision, with a 19% employment gap for young workers in exposed occupations), *Generative AI at Work* (a 15% average and 36% bottom-quintile productivity gain), and *What can machine learning do?* with Mitchell (2017) on exposure.

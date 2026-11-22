@@ -6,9 +6,9 @@ tags: [ai-index, stanford-hai, ai-research, annual-report]
 parent: "[[Stanford HAI]]"
 since: 2017
 confidence: 0.85
-last_confirmed: "2026-05-28"
-accessed_at: "2026-09-17"
-source_count: 5
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 6
 relationships:
   - type: part-of
     target: Stanford-HAI
@@ -29,7 +29,7 @@ relationships:
 
 # AI Index
 
-The **AI Index** is an independent initiative at [[Stanford HAI]] that produces an annual report on the state of artificial intelligence. Conceived in 2017 within the One Hundred Year Study on AI (AI100). The 2026 edition is the 9th annual.
+The **AI Index** is an independent initiative at [[Stanford HAI]] that produces an annual report on the state of artificial intelligence. Conceived in 2017 within the One Hundred Year Study on AI ([[AI100]]). The 2026 edition is the 9th annual.
 
 Mission (per the report): equip policymakers, journalists, executives, researchers, and the public with **accurate, rigorously validated, globally sourced data** on AI's development, adoption, and impact.
 
@@ -103,3 +103,7 @@ SORT file.name ASC
 - Year-over-year stability of methodology (e.g., adoption numbers depend on McKinsey instrument changes).
 - The Global AI Vibrancy Tool (now 36 countries) — is it useful enough to file as its own resource page once engaged with?
 - The Medicine chapter being split off in 2026 is an editorial signal; comparison of 2025-combined vs 2026-split coverage of medicine may surface new findings worth ingesting.
+
+## Its parent study reports (added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] cites the Index three times: chapter 3 for hallucination rates (1.8–5.4% when summarising), chapter 5 for AI-for-science benchmarks, and chapter 9 for public opinion. [[Raymond Perrault]] and [[Toby Walsh]] author both. The two series differ by design: the Index reports annual facts and makes no recommendations, while [[AI100]] judges five-year periods and audits its own earlier predictions.

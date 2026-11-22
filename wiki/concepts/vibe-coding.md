@@ -3,9 +3,9 @@ type: concept
 aliases: ["vibe coding", "Vibe coding", "vibe-coding", "vibe-code", "v-coding"]
 tags: [vibe-coding, agentic-engineering, software-3.0, ai-agents, accessibility, hobbyist-coding, karpathy, pm-tooling, prototype-as-influence-tool, december-2025-phase-change, replit, ai-native-builders, post-prompting]
 confidence: 0.95
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 35
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 36
 relationships:
   - type: instance-of
     target: software-3.0
@@ -185,3 +185,9 @@ The corpus now holds three sources on this question. [[2026-07-07-sinofsky-amble
 ## Vibe-coded agents and confidential data (added 2026-11-16)
 
 [[2026-11-08-covington-slaney-mckinsey-strategy-room-agentic-transformation|Slaney (McKinsey, Nov 2026)]]: people who built transformation materials by hand left out anything marked confidential, but *"that control is not necessarily built into any… vibe coded agent that somebody's come up with."* Tech teams were trained on guardrails and risk control; *"as this is being more democratized and we're seeing everybody vibe code from every function,"* that risk mindset *"has not caught up."* McKinsey's own answer is apps on its Wave platform that work on the data in place, without weekly extracts, and set visibility to the audience. Remote's Labs scaffold in [[2026-10-29-van-der-voort-bnr-remote-builds-everything-with-ai|Van der Voort's]] account, above, also has internal apps inherit permissions.
+
+## A consensus report's verdict (AI100, added 2026-11-22)
+
+SQ9 of the [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] credits Karpathy with the term and gives a split verdict. Vibe coding *"works remarkably well for routine tasks, for demos, prototypes, and exploratory research. For production software, it has demonstrably increased developer productivity but can have a negative net impact on maintainability."* *"The next generation of tools will have to show they can create verified, validated, maintainable code, not just move fast."*
+
+It lists agent-specific risks (insecure dependencies, exposed credentials, undertested code, prompt injection) and the concern that juniors will not become seniors. In [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's seminar]], Wooldridge calls the output *"software slop which hasn't been properly tested that nobody actually understands."*

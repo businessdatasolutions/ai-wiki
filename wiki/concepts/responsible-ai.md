@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 65
+last_confirmed: "2026-11-22"
+accessed_at: "2026-11-22"
+source_count: 66
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -420,3 +420,14 @@ Their recommended development sequence puts ethics risk management **last**, as 
 ## Hospital AI governance, measured (added 2026-11-07)
 
 76% of Dutch hospitals have adopted an AI policy (50% in 2025), 60% have an AI board, and 53% use high-risk AI systems under the EU AI Act, whose high-risk obligations start on 1 August 2026; 16% have not yet classified their systems ([[2026-03-16-mxi-ai-monitor-ziekenhuizen-2026|M&I AI Monitor Ziekenhuizen 2026]], pp. 16, 20, 33). In US acute care hospitals, 66% have a dedicated committee for evaluating predictive models, and 57% check all or most models for bias ([[2025-09-17-astp-hospital-predictive-ai|ASTP data brief]]). External validity is the open risk: an incident-report triage model that scored AUROC 0.82 at home fell to 0.42–0.56 on another dataset ([[2025-09-17-beidler-incident-report-severity-triage-radiotherapy|Beidler, Nguyen et al. (2025)]]). See [[ai-in-health-care]].
+
+## Governance reframed as national security (AI100, added 2026-11-22)
+
+The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] documents the drift (KT11, SQ7):
+- **The U.S. reversal.** President Trump repealed the Biden framework in favour of "global AI dominance", while eight in ten U.S. voters favour safety-first regulation.
+- **Trust.** Trust in government regulation differs by 50 points between Singapore and the U.S.
+- **Self-regulation retreated.** OpenAI, Meta, Microsoft, Google and X have stepped back from their 2022 commitments.
+- **New names.** The U.S. AI Safety Institute became the Center for AI Standards and Innovation.
+- **Two models of regulation compete:** regulating the technology, which is overtaken by technical change, and regulating uses through sector regulators, who lack AI expertise.
+
+It cites Rahwan's "society-in-the-loop" for value trade-offs that a human in the loop cannot settle. It calls the volatility of policy *"itself a governance problem."* Key Takeaway 9 asks for AI's direction to be treated *"as a collective choice rather than an inevitability."*

@@ -127,7 +127,7 @@ The W&W tagging — `digital-sensing/digital-scouting` (the report is an annual 
 
 **Mentioned but not promoted to entity pages on this ingest:**
 - *Jack Clark* (already an entity via prior multi-source presence) — referenced in panel for the *60% prediction of fully-automated AI research in 2 years*; reverse-edge would be one-step-removed (it's a citation-by-name, not a primary source-to-source relationship).
-- *Yoav Shoham* (already an entity) — Perrault credits him with the founding-momentum push for the AI Index in 2015–16. Useful as anchor for One Hundred Year Study on AI if/when promoted.
+- *Yoav Shoham* (already an entity) — Perrault credits him with the founding-momentum push for the AI Index in 2015–16. The One Hundred Year Study on AI, under which the Index was conceived, now has its own page: [[AI100]] (promoted 2026-11-22 with [[2026-11-10-ai100-ai-goes-mainstream-2026|its 2026 report]], whose [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|HAI seminar]] is this talk's counterpart).
 
 **Concepts (last_confirmed bumped, no content change unless flagged):**
 - [[enterprise-ai-adoption]] — 88% organizational adoption; the *governance-roles-as-new-jobs* framing on the audience question.
