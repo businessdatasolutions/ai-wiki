@@ -3,8 +3,8 @@ type: concept
 aliases: ["durable skills", "future-ready skills", "21st century skills", "21st-century skills", "transferable skills", "human skills"]
 tags: [durable-skills, 21st-century-skills, future-ready-skills, ai-deskilling, scalable-assessment, psychometrics, ai-evaluation, hiring-criteria, leadership-skills]
 confidence: 0.95
-last_confirmed: "2026-11-22"
-source_count: 83
+last_confirmed: "2026-11-23"
+source_count: 86
 relationships:
   - type: contradicts
     target: ai-deskilling
@@ -15,7 +15,7 @@ relationships:
   - type: depends-on
     target: ai-benchmarks
     via: "measurement methodology — Vantage and similar protocols define new benchmark types for human skills (not model capability)"
-accessed_at: "2026-11-22"
+accessed_at: "2026-11-23"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -406,3 +406,21 @@ Two more lists of the skills that survive. [[2026-03-31-roslansky-smith-tools-an
 ## A higher bar, sooner (added 2026-11-22)
 
 [[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Microsoft's Frontier Playbook, second edition (Sept 2026)]] lists the higher-order skills it now expects: *"Judgment and taste. Business acumen. The ability to scope and delegate work—including to agents. Learning agility. We are setting a higher bar sooner on these expectations."* It cites Microsoft's Work Trend Index (May 2026): 46% named *"critical thinking as the most important human skills as AI takes on more work"* (the panel is cut off on the page). It also cites LinkedIn's top five fastest-growing US skills (January 2026): AI literacy, conflict mitigation, adaptability, process optimisation and innovative thinking.
+
+## Advice to students from two former governors (added 2026-11-23)
+
+Asked at [[2026-11-19-raimondo-holcomb-harvard-iop-managing-unemployment-ai-economy|Harvard's Institute of Politics (Nov 2026)]] what students should study, Gina Raimondo tells her own children to *"learn how to use the tools big time and always be ahead of it"* and to *"learn how to deal with constant change and unpredictability… if you only thrive in situations of great certainty and security, this is going to be a tough road."* She credits struggling through economics problem sets with teaching her *"to think like an economist."* Eric Holcomb names *"knowledge plus experiences where you gain wisdom,"* learning from failure, and lifelong learning in place of *"go to school, graduate, get a job, retire."* Personal advice, not evidence.
+
+## Troubleshooting, the patient relationship, and STEM (added 2026-11-23)
+
+[[2026-11-21-dw-news-which-jobs-are-still-safe-from-ai|DW News (Nov 2026)]] asks which jobs are safe from AI and answers by occupation, through what each one keeps for people:
+
+- **Trades: troubleshooting.** An electrical firm's managing director: *"when it comes to laying pipes, painting, and things like that, there will definitely be a robot that does that at some point. But when it comes to troubleshooting and more complex cases, you still need a human being."* The narration adds that *"every construction site is different"* and robots *"can only get around in spaces in which they've been trained."*
+- **Nursing: the relationship.** The report credits *"the interpersonal aspect"* with protecting a nursing student from AI. A hospital's head of training: *"When it comes to interacting with the patient directly, I don't think AI can really be of much help because that also involves the emotional connection we build with the patient."*
+- **Graduates: STEM.** An AI expert (Laura Tönnsen, ARIC Institute) recommends *"anything related to mathematics, engineering, the natural sciences, and technology."*
+
+The report frames safety by occupation (*"AI proof jobs"*); [[2026-10-07-richardson-reuters-econ-world-ai-at-work|Richardson's]] statement above frames it by skill (*"durable jobs… there's no such thing"*). Interview statements, no measurement; confidence unchanged.
+
+## Taste, and the artist PM (added 2026-11-23)
+
+[[2026-11-22-mansour-lennys-podcast-everyone-becoming-a-builder|Sherif Mansour (Atlassian) on Lenny's Podcast (Nov 2026)]] says Atlassian's PM hiring is moving towards *"artist"* PMs, who lead discovery through vision and experience, *"because taste has become more important than ever before when everyone has access to the same intelligence."* When software is cheaper to build and competitors converge on features, *"experience matters more because that becomes one of your possible differentiators."* For junior candidates Atlassian looks for *"the critical thinking,"* high curiosity and a *"willingness to try different things,"* and in interviews asks how candidates work with AI beyond *"I use it to summarize stuff."* He holds that the artist streak is mostly natural: *"it's easier to accelerate the thing you're naturally good at."*

@@ -2,10 +2,10 @@
 type: concept
 aliases: ["AI sovereignty", "sovereign AI", "digital sovereignty", "strategic autonomy in AI", "cultural autonomy", "full-stack sovereignty"]
 tags: [ai-sovereignty, sovereign-ai, digital-sovereignty, strategic-autonomy, own-vs-rent, cultural-autonomy, export-controls, industrial-policy, platform-governance, data-sovereignty]
-confidence: 0.90
-last_confirmed: "2026-11-22"
-accessed_at: "2026-11-22"
-source_count: 20
+confidence: 0.95
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 23
 relationships:
   - type: supports
     target: open-source-ai
@@ -78,6 +78,8 @@ This matters for claim 1's layer-choice framing. For a country buying rather tha
 Laurie Chen (Reuters) adds the view from outside both blocs: *"the vast majority of the world does not have the capacity to control advanced AI … a very small number of countries and very powerful corporations"* govern it, and the Global South *"should have a say."* This is the first statement in the corpus of sovereignty as **a voice in governance**, not ownership of a layer. It is a third meaning, alongside the economic (claims 1–4) and the cultural (claim 5).
 
 [[2026-11-14-mccarthy-cnn-meanwhile-in-asia-china-data-centers|CNN's Meanwhile in Asia (Nov 2026)]] reports the physical side of the state programme from Ulanqab in Inner Mongolia: a national plan designating *"eight computing hubs and 10 so-called data center clusters,"* a $560 billion data-infrastructure plan announced in September (stated by the hosts, unsourced), and AI as a national priority for moving *"way up the supply chain"* and offsetting a declining population. Its China reporter, Simone McCarthy, names high-end chips, limited both by US export controls and by China's own import restrictions, as the largest hurdle.
+
+[[2026-11-23-wang-xing-morgan-stanley-china-physical-ai|Morgan Stanley's Thoughts on the Market (Nov 2026)]] gives a bank's view of the same strategy in manufacturing. Robin Xing, its chief China economist, calls physical AI the *"second chapter"* of AI, *"industrywide adoption"* in factories, ports and logistics, because for a manufacturing economy *"simply working from the cloud is not so helpful."* He names *"chips… upstream equipment, semiconductor, GPUs"* as the bottleneck that absorbs China's AI investment today, and expects engineering *"to bypass single chip limits"* from 2028. On trade, China is moving *"from made in China to made by China"*: other countries' new factories *"are running based on Chinese components and machinery."* He names domestic social-welfare reform, which would raise consumer demand, as the way to manage the resulting trade tensions. A sell-side house view, stated without method.
 
 ## Debates and supersession
 
@@ -163,3 +165,11 @@ A June 2026 U.S. ruling that denied non-U.S. users access to Anthropic's leading
 - tenant isolation.
 
 *"Retrofitting data residency and tenant isolation after deployment is orders of magnitude harder than building them in from the start."* The publisher sells this architecture.
+
+## Permitting as the bottleneck for domestic chip plants (added 2026-11-23)
+
+[[2026-11-19-raimondo-holcomb-harvard-iop-managing-unemployment-ai-economy|Gina Raimondo (Nov 2026)]], Commerce Secretary when the CHIPS Act was implemented, says she was told it *"would take seven years before TSMC… could put a shovel in the ground"* because of local, state and federal permitting and NEPA. A bipartisan law she worked on with senators Ted Cruz and Mark Kelly exempted the projects from NEPA *"because they were critical to national security"*; *"today, for the first time ever in America's history, TSMC is building leading edge semiconductors"* in the US, with a second factory producing and *"four more"* on the way. Eric Holcomb, on data centres: *"compute is power, and it's part of our arsenal as a country."* Her own account of her department's work, given as an example of a party giving ground to create jobs.
+
+## Sovereignty as a model that improves on your data (added 2026-11-23)
+
+[[2026-11-20-saedi-odd-lots-chinese-open-weight-models|Daniel Saedi (Minerva) on Odd Lots, Nov 2026]] ranks sovereignty and control second among the benefits of open weights, after cost. He cites *"Karp and Satya"* and expects it to be *"a huge issue in '27 as companies realize they're sending their data out to Anthropic and OpenAI, and they're not getting anything in return."* When a host notes the labs say they do not train on corporate client data, he agrees and changes the ground: *"The model doesn't get any better based on your use case,"* whereas with your own weights *"maybe I should be training it on my data as well so that it gets better."* His third benefit is bargaining power: a homegrown model makes the labs *"engage in value based pricing."* The same idea appears in Nadella's *"tacit knowledge … inside of model weights"* quoted in §Sovereignty for firms; Saedi's version comes from a startup that fine-tunes Qwen on its customers' data with their permission.

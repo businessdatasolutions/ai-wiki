@@ -102,7 +102,9 @@ The full arXiv v1 PDF, 19 pages, converted with `pdftotext`: main text, Methods,
 - [[concepts/dynamic-capabilities|dynamic-capabilities]] — the cell tagged above.
 - [[HBS AI Institute]] — published the practitioner summary; Deming is a 2026 institute associate.
 
-**Dangling** (single-source mention, deferred): Ben Weidmann, Yixian Xu, David J. Deming, Harvard Skills Lab, Harvard Kennedy School, Walmart Foundation (funder).
+- [[David Deming]] — co-author; entity page since 2026-11-23, after he moderated [[2026-11-19-raimondo-holcomb-harvard-iop-managing-unemployment-ai-economy|a Harvard IOP forum on AI and unemployment]].
+
+**Dangling** (single-source mention, deferred): Ben Weidmann, Yixian Xu, Harvard Skills Lab, Harvard Kennedy School, Walmart Foundation (funder).
 
 ## Scope and reliability
 

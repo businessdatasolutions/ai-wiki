@@ -2,10 +2,10 @@
 type: concept
 aliases: ["expert generalist", "Expert Generalist", "expert generalists", "generalist-specialist blend"]
 tags: [expert-generalist, generalist-vs-specialist, t-shaped, fundamentals-over-tools, patterns, mechanical-sympathy, durable-skills, distributed-systems-fundamentals, hiring, llms-and-skills]
-confidence: 0.90
-last_confirmed: "2026-11-22"
-accessed_at: "2026-11-22"
-source_count: 15
+confidence: 0.95
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 16
 relationships:
   - type: supports
     target: durable-skills
@@ -78,6 +78,7 @@ Rohrer also cites [[Martin Fowler]] directly for the architect's own version of 
 - **Three citing sources, but the term itself still traces to one origin (as of 2026-07-19).** The *term* "Expert Generalist" is named by one source ([[2025-07-02-joshi-venkatraman-fowler-expert-generalists]]); [[2026-05-21-allen-aws-london-exec-forum-agentic-team-structures|Allen]] and [[2026-06-12-aws-leaders-guide-advanced-team-structures-agentic-world|Brovich]] (London/Sydney editions of the same AWS Enterprise Strategy talk) *cite and apply* it rather than independently corroborating it — vendor-altitude propagations of one original. [[2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era|Stone]] breaks this pattern: she reaches the underlying claim independently, without citing the term, which is why confidence moved past the prior 0.75 vendor-propagation cap to 0.8 rather than staying capped. Further lift toward 0.85+ would need either a second source using the *named* Expert Generalist framing independently of Fowler/AWS, or additional independent-claim corroborations at Stone's caliber. The *underlying* claim (fundamentals/generalism beat narrow specialisation; AI amplifies it) is separately corroborated by [[durable-skills]] sources, [[2026-05-20-ng-deeplearningai-ai-dev-26-sf-future-of-software-engineering|Ng]], and [[2026-06-12-argenti-hbr-thrive-alongside-ai-mindset-not-skillset|Argenti]].
 - **Open question — measurability.** The authors concede assessing the skill is "a difficult task, often requiring intensive participation from known-capable Expert Generalists." This is the tension with [[durable-skills]]' scalable-measurement programme: can the Expert Generalist trait-set be assessed at scale, or does it remain expert-judged?
 - **Open question — the certification critique.** Fowler claims "little correlation between certifications and competence." A source defending vendor certification value would create a genuine `contradicts` edge.
+- **Builder roles: adopted at some firms, reverted at one (added 2026-11-23).** [[2026-03-31-roslansky-smith-tools-and-weapons-open-to-work|Roslansky]] reports LinkedIn's builder role combining PM, product marketer, designer and front-end engineer, and [[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|George]] reports Microsoft telling Camp AIR participants *"You're all here as builders."* [[2026-11-22-mansour-lennys-podcast-everyone-becoming-a-builder|Mansour]] reports Atlassian's all-builder squads returning to separate PM, design and engineering jobs within about a month, and argues that specialisation still matters in organisations with many engineers. Recorded as `contradicts` edges from the Mansour page to Roslansky, Schoening and Masad. All accounts are executives describing their own firms, without outcome data. The disagreement is about merging roles; Mansour's claim that depth matters more with AI agrees with the T-shaped sections above. No contradiction penalty applied to confidence: the conflict is with the builder-role reports on this page, not with the page's core claim of depth plus breadth.
 
 ## The empirical leg this page was missing (added 2026-09-15)
 
@@ -110,3 +111,7 @@ That is the expert-generalist thesis stated as a complementarity result: breadth
 ## Full-stack product builders and content integrators (added 2026-11-22)
 
 [[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Microsoft's Frontier Playbook, second edition (Sept 2026)]], co-signed by Katy George, writes down what the sections above quote her saying. *"Vertical discipline still matters. But now horizontal integration—connecting your activity all the way to value delivery—is also a baseline expectation. Engineers redefine themselves as 'full-stack product builders' rather than 'master coders.' Sales reps become content integrators rather than relying on specialists to bring expertise. Roles are getting richer and more fulfilling, not narrower."* Teams also become *"more fluid and dynamic"*, with hierarchy *"decreasing."*
+
+## Builder squads that went back to their roles (added 2026-11-23)
+
+[[2026-11-22-mansour-lennys-podcast-everyone-becoming-a-builder|Sherif Mansour (Atlassian) on Lenny's Podcast (Nov 2026)]] reports a test of the builder model described in the sections above. Atlassian moved PMs and designers into a few squads in which *"everyone was the AI builder, there was no PM or designer."* In the first weeks a PM said they moved *"faster than ever before"*; after about a month *"everyone's gone back to doing their traditional jobs."* His reading: *"throughput's not our problem. Direction is our problem."* He holds that specialisation still matters (*"you can only get the AI to do something as good as your knowledge of the specialization is"*), that AI *"amplifies your weaknesses"* as much as your strengths, and that roles are not merging: everyone's circles *"are getting bigger,"* but *"the circles aren't overlapping."* He limits the claim to organisations with many engineers; in startups and zero-to-one projects *"everyone needs to do anything."* On PM types, he finds *"very few people"* who do all three of his triangle's types (general manager, scientist, artist) *"really well,"* and recommends complementary teams. The account is second-hand (one PM's report), covers a few squads over about a month, and gives no metrics. The disagreement with the builder-role reports is recorded in *Debates and supersession*.

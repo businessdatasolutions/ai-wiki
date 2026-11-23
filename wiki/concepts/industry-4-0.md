@@ -2,10 +2,10 @@
 type: concept
 aliases: ["Industry 4.0", "I4.0", "industry-4-0", "Fourth Industrial Revolution"]
 tags: [industry-4-0, smart-manufacturing, iot, cyber-physical-systems, digital-transformation]
-confidence: 0.85
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 3
+confidence: 0.90
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 5
 relationships:
   - type: caused
     target: lean-4-0
@@ -56,12 +56,15 @@ Industry 4.0 sits at the **intersection of manufacturing/operations work and the
 
 - The **predictive maintenance** strand of Industry 4.0 (TPM + Predictive Maintenance Tools, in Gomaa's mapping) is a domain where AI agents operate today with measurable ROI.
 - The **digital twin** technology — virtual replicas of physical assets — is a recurring concept in industrial AI; relevant to Italgas's 300TB platform and Ford's computational fluid dynamic test (15 hr → 10 sec, per [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MITTRI/Cisco]]).
+- **A plant twin built and checked by agents** (added 2026-11-23). In [[2026-11-19-falkor-nvidia-omniverse-ai-agents-industrial-operations|Falkor's NVIDIA Omniverse livestream (Nov 2026)]], agents build an OpenUSD model of a plant from its engineering CAD, P&IDs and plot plan, render it with NVIDIA's Omniverse libraries, show recorded and simulated readings on the equipment, and fit the model to laser scans. Ganesh Sivaraman (NVIDIA) names remote maintenance as a use: the assets are *"thousands of miles away from subject matter experts."* Vendor demos on open data.
 - **Industrial robotics** (China's 51.1% global share) is the physical-world counterpart to the knowledge-work agent story.
 - **A vendor's European positioning** (added 2026-11-16). [[2026-11-13-ikeda-panasonic-connect-biz-talks-ai-operations-europe|Ikeda (Panasonic Connect Europe), Nov 2026]], the company's CEO speaking on its own channel, describes its offer as *"hardware, software, and service"* brought together, with AI as one component. In his account AI appears in smart-factory applications for quality and productivity and in rugged TOUGHBOOK devices for *"realtime insight at the edge,"* and the offer also includes a Budapest centre for training, maintenance and repair. He argues Europe can lead in AI *"because of its strong industrial basis, engineering expertise and ongoing digital investment."* Corporate channel; no customer, figure or result is given.
+- **Physical AI in China's factories, a bank's forecast** (added 2026-11-23). In [[2026-11-23-wang-xing-morgan-stanley-china-physical-ai|Wang & Xing (Morgan Stanley, Nov 2026)]], the bank's China equity strategist and its chief China economist, on the bank's own podcast, forecast that more than half of China's physical-AI investment will go to *"rewiring existing factories,"* turning *"passive automation into proactive adaptive production"* with *"robotic industrial software,"* rather than to new *"green field"* capacity. Their sequence: chips and upstream equipment absorb the money now, at *"low single digit"* of China's total capex, and a productivity gain of about 0.3 percentage point follows from 2028. Laura Wang names China's *"manufacturing depth and deployment scale"* as its advantage; the AI Index robot-installation figures above give that depth in robots. A sell-side house view with figures stated without method, from an auto-generated track.
 
 ## Debates and supersession
 
 - **"Beyond Industry 4.0" / "Industry 5.0".** Some literature (cited in [[2026-04-28-gomaa-lean-4-0|Gomaa]]) is already pushing toward "Industry 5.0" or "Beyond Industry 4.0" framings emphasizing human-centric and sustainable manufacturing. The wiki has only Industry 4.0 sources for now; track the 5.0 framing if it appears in future ingests.
+  - **A second use of the term (added 2026-11-23).** [[2026-11-23-wang-xing-morgan-stanley-china-physical-ai|Morgan Stanley's Thoughts on the Market (Nov 2026)]] uses "Industry 5.0" for investment in physical AI, not for the human-centric and sustainable manufacturing of the literature Gomaa cites. Robin Xing speaks of *"industry 5.0 or physical AI,"* and the bank's *Emerging Frontiers* research puts *"roughly"* $12 trillion of incremental Industry 5.0 investment over the next ten years. The two uses share a name and differ in content.
 - **Energy and sustainability.** Industrial AI is energy-intensive (data centers + cyber-physical systems). The [[2026-04-28-ai-index-report-2025|AI Index 2025]] reports **carbon emissions from training rising** (Llama 3.1 405B at 8,930 tons), and Microsoft/Google/Amazon are signing nuclear-energy deals to power AI infrastructure. Industry 4.0's sustainability claims need to be evaluated against the rising energy footprint.
 - **SME viability.** Industry 4.0 technologies are written for and adopted by large manufacturers. [[2026-04-28-gomaa-lean-4-0|Gomaa]] flags SME scalability as a research gap.
 - **Confidence lowered from 0.85 to 0.80 (2026-10-25).** A recount set `source_count` to the two sources that cite this page, [[2026-04-28-gomaa-lean-4-0|Gomaa]] and [[2026-04-28-mittri-cisco-ai-enabled-enterprise|MIT Technology Review Insights / Cisco]]. The [[2026-04-28-ai-index-report-2025|AI Index 2025]] and [[2026-04-28-mit-sloan-ai-maturity|MIT CISR]] pages this concept draws on for context do not mention Industry 4.0, so they were not counted. Two sources, one peer-reviewed, support 0.80 at most under §Lifecycle.

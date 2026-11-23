@@ -5,9 +5,9 @@ aliases: ["Google", "Google LLC", "Alphabet (operating subsidiary)", "Google for
 tags: [google, big-tech, hyperscaler, ai-lab, foundation-models, gemini, google-cloud, google-research, google-brain, gemini-api, file-search, multimodal-rag, notebooklm, flow, veo, ai-product-management, bfloat16, coral-edge-tpu, tensorflow, edge-ml]
 since: 1998
 confidence: 0.95
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-18"
-source_count: 44
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 45
 relationships:
   - type: published-by
     target: 2026-06-12-mcveety-hormati-google-cloud-open-knowledge-format
@@ -80,6 +80,7 @@ Big-tech platform company; operating subsidiary of Alphabet. Within this wiki Go
 - **Amin Vahdat** — SVP and Chief Technologist of AI and Infrastructure; presented the hardware half of [[2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure|The Future of AI Infrastructure]] (Google Cloud Tech, Nov 2026). First-mention; promote on second-source coverage.
 - **Mark Lohmeyer** — VP and GM, AI and Computing Infrastructure, Google Cloud; presented the software and agent-runtime half of the same livestream. First-mention; promote on second-source coverage.
 - **Maria Biggs** — engineering director, Project Suncatcher; gave a short update on TPUs in orbit in the same livestream. First-mention; promote on second-source coverage.
+- **Aron Eidelman** — see [[Aron Eidelman]] entity (Security Advocate, Google Cloud; promoted 2026-11-23 on his second appearance).
 
 ## Internal teams referenced in this wiki
 
@@ -130,3 +131,7 @@ SORT file.name ASC
 ## Dual-class shares, and a stake in Anthropic (added 2026-11-16)
 
 [[2026-10-28-damodaran-anthropic-ipo-valuation|Damodaran (Oct 2026)]] dates the spread of dual-class shares among US tech listings to Google's 2004 IPO, with ten votes per founder share. Until then, in his account, new US listings had one share class; institutional investors did not push back, and Facebook and other tech companies followed. In his reading of [[Anthropic]]'s IPO prospectus, Alphabet will hold non-voting Class N shares in Anthropic, with a share of profits and cash flows.
+
+## A four-layer blueprint for coding agents, from Google Cloud DevRel (added 2026-11-23)
+
+[[2026-11-23-google-cloud-tech-why-agent-demos-break-in-production|Why your AI agent demo breaks in production (Google Cloud Tech, Nov 2026)]]: host [[Smitha Kolan]] and five Google Cloud presenters set out Learn, Guard, Review and Score around a coding agent's loop. It covers Agent Skills and the Google Cloud Developer plugin (*"over 150 Google Cloud skills"*), deterministic gates ([[Aron Eidelman]]), review of large AI-generated PRs ([[YK Sugi]]) and four evaluation patterns ([[Annie Wang]]). On screen are two model names the corpus has no other source on, **Gemini 4 Hydrogen** and **Gemini 4 Carbon**, and an internal test in which Hydrogen caught 26 of 33 UI bugs against 23 for Gemini 3.8 Flash. First mentions: **Logan Hennessy** (DevRel, Google Cloud) and **Remigiusz Samborski** (Lead Developer Relations Engineer, Google Cloud); promote on second-source coverage.

@@ -2,10 +2,10 @@
 type: concept
 aliases: ["AI in health care", "AI in healthcare", "health-care AI", "hospital AI adoption", "clinical AI"]
 tags: [health-care, hospitals, clinical-ai, hospital-ai-adoption, pilot-to-scale, ambient-documentation, patient-safety, incident-reporting, ai-governance, netherlands]
-confidence: 0.85
-last_confirmed: "2026-11-07"
-accessed_at: "2026-11-07"
-source_count: 17
+confidence: 0.90
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 19
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -45,6 +45,7 @@ The units differ by row: hospitals, executives, health systems, proofs of concep
 - **Imaging.** Radiology holds the most important implementations in Dutch hospitals (41%, M&I). [[2026-05-31-peron-mit-smr-me-myself-and-ai-philips-interoperability-health-care|Peron (Philips)]] recalls that the predicted displacement of radiologists did not happen.
 - **Patients ahead of institutions.** [[2026-07-14-keneally-bcg-so-what-llm-or-md-patient-journey|Keneally (BCG)]] argues that patients already use LLMs as the first step in care, and that health systems should shape this rather than block it.
 - **Agents.** 0% of Dutch hospitals are scaling AI agents; 48% are exploring (M&I).
+- **Robots on the ward, and AI-drafted letters (a news report).** [[2026-11-21-dw-news-which-jobs-are-still-safe-from-ai|DW News (Nov 2026)]] shows **Nurabot** transporting samples at Taichung Veterans General Hospital in Taiwan; *"according to its operator,"* it saves a human colleague *"two or three hours of work per day,"* mostly nursing assistants' work (footage credited to NVIDIA; the figure is unsourced). In Germany, *"a digital AI assistant has recently begun to enter patient data,"* shown as a vendor demo (Argo) drafting a physician's discharge letter from the patient record, with a release button for a person; a nursing student welcomes voice documentation. The report also says applications for nursing training have risen, and that nursing *"seems to be even more secure"* because demand grows with ageing. No figures for either.
 
 ## Evidence and realised impact
 
@@ -61,6 +62,10 @@ The research that exists shows why local data matter. A severity-triage model fo
 ## Governance
 
 76% of Dutch hospitals have adopted an AI policy and 60% have an AI board. 53% use high-risk AI under the EU AI Act, whose high-risk obligations start on 1 August 2026 (M&I). In US hospitals, 66% have a dedicated committee for evaluating predictive models (ASTP). Across the WHO European Region, legal uncertainty is the most named barrier (43 of 50 states), and 4 of 50 have liability standards for AI. See [[responsible-ai]].
+
+## Billing staff retrained for clinical roles (added 2026-11-23)
+
+[[2026-11-19-raimondo-holcomb-harvard-iop-managing-unemployment-ai-economy|Gina Raimondo (Raise US, Nov 2026)]] describes a pilot with Utah's governor at Intermountain, the state's largest employer. She expects revenue-cycle management, *"basically fighting with insurance companies to get paid,"* to go to software: *"eventually the hospital's agents are going to be fighting with insurance companies' agents,"* and the staff, *"mostly women, mostly non-college-educated women I fear,"* to lose their jobs. The project identifies them now and retrains them for clinical openings such as radiology and operating-room technician. This is a forecast and a pilot, not a measured effect; it matches the page's finding that administration and billing come first among hospital AI uses (*Where AI is used*).
 
 ## Debates and supersession
 

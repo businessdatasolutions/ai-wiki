@@ -6,9 +6,9 @@ tags: [cognition, devin, cloud-agents, coding-agents, playbooks, devin-review, a
 affiliation: "Independent AI company"
 role: "Builder of Devin, a cloud-hosted autonomous software engineering agent"
 confidence: 0.7
-last_confirmed: "2026-08-30"
-accessed_at: "2026-08-30"
-source_count: 4
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 5
 relationships:
   - type: part-of
     target: Devin
@@ -31,6 +31,7 @@ Cognition granted Carson roughly $20,000/month in credits after he publicised hi
 - [[2026-08-24-carson-vo-how-i-ai-manage-15-ai-agents-solo-founder]] — Devin as the primary cloud agent, with playbooks, folders and Devin Review shown on screen.
 - [[2026-07-25-darroman-profitable-founder-managing-ai-agents-25-prs-a-day]] — Devin among the independent platforms Carson expects to survive on production-oriented model economics.
 - [[2026-06-11-abujadallah-rejection-of-agentic-pull-request-fixes]] — Devin among the four agents whose fixes are rejected 46.41% of the time at population scale.
+- [[2026-11-20-saedi-odd-lots-chinese-open-weight-models|Saedi / Odd Lots, Nov 2026]] — named with Harvey as an application company fine-tuning Kimi on its own data for *"better results at cheaper costs"*; the captions blur which of the two tuned which model.
 
 Vendor documentation snapshot at `raw/articles/2026-08-30-cognition-devin-playbooks-and-cloud-agents.md`, captured 30 August 2026. **Deep links into Cognition's docs move — re-resolve before citing.**
 

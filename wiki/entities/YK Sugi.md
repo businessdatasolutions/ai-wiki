@@ -3,12 +3,12 @@ type: entity
 kind: person
 aliases: ["YK Sugi", "ykdojo", "CS Dojo", "Sugi"]
 tags: [yk-sugi, cs-dojo, claude-code, claude-code-tips, intent-driven-development, voice-prompting, draft-pr, community-advocate, agentic-engineering]
-affiliation: "Daft; creator of the CS Dojo channel"
+affiliation: "Google Cloud (Sr. DevRel Engineer, per on-screen lower-third, Nov 2026); in July 2026, Daft (his 'current job', as heard in an ASR transcript); creator of the CS Dojo channel"
 role: "Software engineer and educator; author of the claude-code-tips repository (~8,000 stars)"
 confidence: 0.7
-last_confirmed: "2026-09-16"
-accessed_at: "2026-09-16"
-source_count: 1
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 2
 relationships:
   - type: supports
     target: agentic-engineering
@@ -41,9 +41,12 @@ And his answer to the craft-and-technical-debt debate is a norm rather than a te
 
 **Promotion note.** Promoted on a single source, 2026-09-16, on the same judgement-call grounds as [[Tilde Thurium]] and [[Lydia Hallie]]: a named presenter carrying quotable, reusable convention. Employer heard as "Daft" in an ASR transcript and recorded with low confidence.
 
+**Role by November 2026 (added 2026-11-23).** In [[2026-11-23-google-cloud-tech-why-agent-demos-break-in-production|Google Cloud Tech's four-layer video (Nov 2026)]] his on-screen lower-third reads *Sr. DevRel Engineer, Google Cloud*. The July 2026 source has him speak of *"my current job at Daft"* (ASR); both are kept as what each source says. The *independent*, *no product to sell* descriptions above date from the July source.
+
 ## Appears in this wiki via
 
 - [[2026-07-06-google-cloud-agent-factory-intent-driven-development]]
+- [[2026-11-23-google-cloud-tech-why-agent-demos-break-in-production]] — presents the Review layer as *Sr. DevRel Engineer, Google Cloud* (lower-third): question a large PR's size first, then slice it (one-shot bot review, file-by-file summaries, his `repo-walkthrough` visualizer, visual QA by Gemini critics, audio summaries). The PR on screen is his own, merged into `GoogleCloudPlatform/devrel-demos`.
 
 ## Mentioned in
 

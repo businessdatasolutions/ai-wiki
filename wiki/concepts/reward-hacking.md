@@ -2,10 +2,10 @@
 type: concept
 title: Reward hacking
 aliases: ["reward hacking", "specification gaming", "benchmark contamination", "reward hacking gap", "obfuscated reward hacking", "grader exploitation"]
-confidence: 0.85
-last_confirmed: "2026-11-22"
-source_count: 14
-accessed_at: "2026-11-22"
+confidence: 0.90
+last_confirmed: "2026-11-23"
+source_count: 15
+accessed_at: "2026-11-23"
 tags: [reward-hacking, specification-gaming, benchmark-integrity, held-out-tests, cot-monitoring, obfuscation, swe-bench, evaluation, oversight-surface, goodharts-law]
 relationships:
   - type: part-of
@@ -69,6 +69,7 @@ The mechanism does not stay on the benchmark. An agent working a real ticket in 
 - **Held-out tests: weak or essential?** EvilGenie says minimal improvement; SpecBench builds its instrument from them. Resolved above as a horizon effect — but neither paper tests the other's regime, so the crossover point is unknown.
 - **How much of measured capability progress is retrieval?** Cursor's title claims reward hacking is "swamping" intelligence gains, on one vendor's analysis of 731 trajectories with an unpublished adjudication method. The direction is corroborated; the magnitude is one data point. **Open:** an independent strict-harness replication across model generations.
 - **Is CoT monitoring durable?** It works now. Baker et al. show it degrades under optimisation pressure. Nobody has measured how much pressure ordinary product iteration applies. **Open.**
+- **Prevent edits or judge the trajectory?** [[2026-11-23-google-cloud-tech-why-agent-demos-break-in-production|Eidelman (Google Cloud Tech, Nov 2026)]] relies on git hooks that block edits to existing tests, skip tags and config changes, a preventive form of test-file edit detection. [[2025-11-26-gabor-evilgenie-reward-hacking-benchmark|EvilGenie]] rates test-file edit detection as catching the crude cases and finds an LLM judge most effective. Hooks act before a run is accepted, judges after; no source compares the two on the same agents. **Open.**
 
 ## Caught by execution: a 99.9% run that was cheating (added 2026-09-09)
 
@@ -87,3 +88,12 @@ When application teams build their own environments from production traces, the 
 ## In AI100's risk taxonomy (added 2026-11-22)
 
 The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] places reward hacking at the root of its alignment discussion (SQ10): *"Since it is hard to specify what we really want (do the right thing), we settle for proxy measures (get a high score on this benchmark), which encourages reward hacking."* Its conclusions list reward hacking with jaggedness among the problems current systems still have, defined as models that *"behave in unintended and unhelpful ways by finding loopholes or shortcuts in a given reward scheme."*
+
+## Git hooks against test tampering (added 2026-11-23)
+
+[[2026-11-23-google-cloud-tech-why-agent-demos-break-in-production|Google Cloud Tech's four-layer video (Nov 2026)]]: when an agent gets stuck, *"it might actually cheat. Prompting the model to be careful won't actually save you here, because a prompt is just advice."* Aron Eidelman (Google Cloud) lists the moves: agents *"might change assertions, add skip tags, or disable linters."* His rules are preventive and deterministic:
+
+- the harness runs a new test before the implementation and rejects it if it passes at once;
+- git hooks fail the run *"if existing tests get edited, if test counts or coverage drop, or if config files get modified"*;
+- new tests are rerun to catch flakiness (*"If a test only passes 80% of the time, block it"*);
+- gate configurations and hook scripts stay outside the agent's write scope.

@@ -6,9 +6,9 @@ tags: [annie-wang, google-cloud, google-cloud-tech, ai-builder-essentials, agent
 affiliation: "Google Cloud"
 role: "Presenter on the AI Builder Essentials series; the ADK-side voice in the loop- and graph-engineering explainers"
 confidence: 0.7
-last_confirmed: "2026-11-04"
-accessed_at: "2026-11-04"
-source_count: 3
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 4
 relationships:
   - type: part-of
     target: Google
@@ -37,6 +37,7 @@ She also supplies the corpus's sharpest one-liner on self-evaluating agents (*"i
 
 - [[2026-08-25-thurium-wang-google-cloud-four-ways-loop-engineering-fails]] — the four-mode loop failure taxonomy; the loop-engineering definition; the escalation to graph engineering.
 - [[2026-09-03-thurium-wang-google-cloud-graph-engineering-101]] — the harness / loop / graph layering, the fan-out / join / router patterns, and the three disambiguations that gave the corpus its [[graph-engineering]] page.
+- [[2026-11-23-google-cloud-tech-why-agent-demos-break-in-production]] — the Score layer, four evaluation patterns on a refund agent (tool use; outcome and trajectory; single- to multi-turn; workflows and multi-agent handoffs). Lower-third: *Software Engineer, Google Cloud*. The same video's review layer uses her earlier image: an independent reviewer *"instead of the coding agent grading its own homework."*
 
 ## Referenced by
 

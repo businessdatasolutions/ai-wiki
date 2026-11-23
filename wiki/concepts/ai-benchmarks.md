@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI benchmark", "AI benchmarks", "AI evaluation", "AI evals"]
 tags: [ai-benchmarks, ai-evaluation, foundation-models, capability-reliability-gap, scar-fragmentation]
 confidence: 0.95
-last_confirmed: "2026-11-22"
-accessed_at: "2026-11-22"
-source_count: 40
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 41
 relationships:
   - type: depends-on
     target: reward-hacking
@@ -275,3 +275,7 @@ The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] devotes part 
 - **Their lifespan** (introduction): *"benchmarks intended to last for years became irrelevant within months of their release."*
 
 Its Five Years On retires the 2021 claim that models only exploit spurious correlations: frontier models now perform near expert level on MMLU and GPQA. The lesson it draws for human intelligence: *"any attempt to measure it through a simple reductive test ... will be misleading at best."*
+
+## The daily-driver test (added 2026-11-23)
+
+Asked what the next DeepSeek moment would look like, [[2026-11-20-saedi-odd-lots-chinese-open-weight-models|Daniel Saedi (Minerva) on Odd Lots, Nov 2026]] says *"the benchmarks are starting to become meaningless … if I see that Kimi 3.2 has a higher Terminal Bench score than Astra 6.2, what does that actually mean to me? Does it mean anything? Probably not."* He cannot tell *"the difference between a 5.1 and a five,"* so a benchmark gap between a frontier and an open model tells him little. His test is substitution in his own work: *"if I can take Kimi 3.2 and start replacing it as my daily driver … Am I, you know, yelling expletives into the terminal anymore?"* In §Your own tasks as the benchmark, [[2026-10-19-lloyd-warp-what-it-takes-to-build-a-software-factory|Lloyd (Warp)]] replays recorded sessions against model and harness configurations as an internal suite. (*"Astra"* is a model name in the captions that the Saedi page leaves unidentified; [[2026-11-19-falkor-nvidia-omniverse-ai-agents-industrial-operations|Falkor's NVIDIA Omniverse livestream]] of the same week names a GPT-6 Astra from [[OpenAI]].)

@@ -5,9 +5,9 @@ aliases: ["LangChain", "LangChain Inc"]
 tags: [langchain, agent-frameworks, agent-runtime, agent-harness, langgraph, langsmith, deep-agents]
 since: 2022
 confidence: 0.9
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 19
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 20
 relationships:
   - type: published-by
     target: 2026-05-09-chase-agent-development-lifecycle
@@ -123,3 +123,7 @@ SORT file.name ASC
 ## Interrupt London (added 2026-10-30)
 
 [[2026-10-27-chase-langchain-interrupt-london-agents-improve-over-time|Chase (Interrupt London, Oct 2026)]]: model, harness and context as what improves; LangSmith Fine-Tuning (`smithtune`), LangSmith Engine, SmithDB, AI Search, red teaming and the open-source OpenWiki.
+
+## The Future of Agents webinar (added 2026-11-23)
+
+[[2026-11-20-chase-langchain-future-of-agents|Chase (LangChain webinar, Nov 2026)]]: persistent agents; the LangSmith product map redrawn as runtime (Agent Server, Managed Agents, Fleet, Sandboxes), improvement (Engine, Observability, Evaluation, Fine Tuning, SmithDB) and governance (LLM Gateway, Tool Gateway); three launches that week: trace data controls, **LangSmith for Coding Agents** and the **LangSmith Tool Gateway**. Internal agents named: Robin (Slack, desktop and web; also the coding-agent dashboard example), a GTM agent, the marketing agent Content Studio and a coding agent for reviews and incidents. The promo that opens the recording claims more than 7,000 LangSmith customers and *"billions of traces a month"* (unsourced). An Engine launch is promised for the first week of December 2026.

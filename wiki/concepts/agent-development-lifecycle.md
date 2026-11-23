@@ -2,10 +2,10 @@
 type: concept
 aliases: ["agent development lifecycle", "ADLC", "agent SDLC", "agent lifecycle"]
 tags: [agent-development-lifecycle, adlc, ai-agents, agent-engineering, lifecycle-frameworks, sdlc-parallel, build-test-deploy-monitor, agent-governance, evals, llm-as-judge]
-confidence: 0.93
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-18"
-source_count: 31
+confidence: 0.95
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 33
 relationships:
   - type: part-of
     target: ai-agents
@@ -327,3 +327,27 @@ A fix is a harness change or a model change (SFT, distillation, RL), validated b
 ## AgentOps as release engineering (added 2026-11-16)
 
 [[2026-11-11-balasa-microsoft-path-to-production-for-agents|Balasa (Microsoft Developer, Nov 2026)]] names the run-and-release stage **AgentOps**, descended from DevOps, MLOps and LLMOps because *"DevOps was never built for tool calling, memory, multi-step behavior."* It is one of six pillars in her framework, not a full lifecycle. Her four moves: agent code, prompts and model config versioned together in one CI/CD pipeline and released behind a canary with an emergency stop (one customer's next bad change was caught on 5% of traffic and rolled back in minutes); every model, prompt and tool definition in a versioned inventory, so a deprecation process flags what is affected before a model sunsets; golden datasets, LLM-as-judge and grounding evaluations as release gates; and SLOs with error budgets that pause risky releases once spent. The cases are anonymised and report no outcome data beyond these figures.
+
+## Intended, observed, governed, and evals for waiting (added 2026-11-23)
+
+[[2026-11-20-chase-langchain-future-of-agents|Chase (LangChain webinar, Nov 2026)]] sorts the loop above into three kinds of behaviour. The runtime sets **intended** behaviour, but *"even if you tell an agent what to do, there's zero guarantee that it's actually going to do that."* An improvement loop works on **observed** behaviour. Governance fixes **governed** behaviour, what the agent may never do. LangSmith's product map is now drawn on the same three layers: runtime, improvement (Engine, observability, evaluation, fine tuning on SmithDB) and governance (LLM Gateway, Tool Gateway). At Interrupt NYC two months earlier, the layers were intelligence, runtime, and observability and evals.
+
+For agents that run in the background, the slides add eval cases where the right move is not to act:
+
+- *"A background agent often does the right thing by waiting, so those decisions need evals too."* When the same event returns, the agent should avoid duplicate outreach; with no useful signal, stay quiet; without human approval, wait; when access is revoked, stop acting.
+- A 2x2 of **useful action**, **noise**, **missed opportunity** and **useful silence**.
+- Rubrics given to **subject-matter experts** to grade traces and end state: *was the signal relevant, was the research grounded, was the next step useful, did the boundaries hold?*
+- Failures caught in production become regression tests through LangSmith annotation queues, sampled *"including non-actions,"* and every change is compared across *prompt, model, harness, or context*.
+
+Asked how to gain confidence that changes improve the agent, Chase names offline and online evals, traces as *"the system of record,"* and a bitter-lesson view: LangSmith Engine *"under the hood it's just a coding agent"* with particular skills and tools. Vendor claims, without measurement.
+
+## Scoring the harness, in four patterns (added 2026-11-23)
+
+[[2026-11-23-google-cloud-tech-why-agent-demos-break-in-production|Google Cloud Tech's four-layer video (Nov 2026)]] makes evaluation the fourth layer, *"the diagnostic test bench in the garage."* The trigger is a harness change: a teammate edits *"a few lines in your AGENTS.md file"* or swaps the model, and *"your current task might get 20% faster, but 10 other workflows might actually silently break."* [[Annie Wang]] (Google Cloud) gives four patterns on a refund agent:
+
+1. **Tool use**: right tool, right inputs, right order, against mocked tools and sample data.
+2. **Outcome and trajectory**: similarity to the expected answer and policy compliance instead of exact match; then the trace, as an exact sequence, a required order or an LLM judge.
+3. **Single-turn to multi-turn**: memory and state when the customer changes the order number mid-conversation.
+4. **Workflows and multi-agent systems**: handoffs between code nodes and agent nodes; delegation to the right specialist with the right information; then end to end.
+
+No measurement accompanies the patterns. [[2026-09-30-zamora-feroz-why-your-ai-agent-fails-in-production|The channel's AI Agent Clinic]] starts from the same tool-use and trajectory metrics.

@@ -5,9 +5,9 @@ aliases: ["Microsoft", "Microsoft Corporation", "Microsoft Visual Studio", "Micr
 tags: [microsoft, azure, azure-devops, visual-studio-code, vs-code, github-parent, copilot, responsible-ai, azure-sre-agent, openai-partner, developer-tools, agentic-devops]
 website: "https://microsoft.com"
 confidence: 0.90
-last_confirmed: "2026-11-22"
-accessed_at: "2026-11-22"
-source_count: 23
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 25
 relationships:
   - type: employs
     target: GitHub
@@ -118,3 +118,7 @@ WorkLab's third wiki source, [[2025-11-24-sadun-wood-worklab-hard-to-become-ai-f
 
 [[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Becoming a Frontier Firm: Our Frontier Playbook, second edition (Sept 2026)]]: a 44-page deck signed by Kathleen Hogan (EVP Strategy and Transformation) and Katy George. Its five elements are business ambition and goals, a diffusion engine, people, codified advantage and controls, and security. It is the document behind the [[2026-11-19-george-hrncirik-ignite-becoming-a-frontier-firm|Ignite 2026 session]]. It adds AI Transformation Offices in every function, three levels of AI, *CI + AI = CA*, a four-layer measurement pipeline, a people section citing the May 2026 Work Trend Index, and the "hill-climbing machine" of private evals that keeps a firm's intelligence *"inside your boundary"*. It is Microsoft's account of itself, and it ends with a sales contact.
 
+
+## Foundry and Azure under an industrial partner's agents (added 2026-11-23)
+
+In [[2026-11-19-falkor-nvidia-omniverse-ai-agents-industrial-operations|Falkor's NVIDIA Omniverse livestream (Nov 2026)]], Falkor sources GPT-6 Astra *"through Microsoft Foundry"* (slide) and runs its larger simulations on an RTX PRO 6000 VM in Azure. NVIDIA's Ganesh Sivaraman joins from Microsoft Ignite, where Falkor also exhibited.

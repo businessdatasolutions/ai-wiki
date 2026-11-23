@@ -2,10 +2,10 @@
 type: concept
 aliases: ["foundation model", "foundation models", "FM", "frontier model", "frontier models"]
 tags: [foundation-models, generative-ai, ai-research]
-confidence: 0.93
-last_confirmed: "2026-11-22"
-accessed_at: "2026-11-22"
-source_count: 52
+confidence: 0.95
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 54
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -181,6 +181,7 @@ See [[small-language-models]] for the argument, the evidence, and where it does 
 - **Pricing power, written into a valuation (added 2026-11-16).** [[2026-10-28-damodaran-anthropic-ipo-valuation|Damodaran (Oct 2026)]] splits the AI market into a mass segment at business-services margins (~10%) and a premium segment at enterprise-software margins (~40%). His own assumption puts Anthropic 75% in the premium segment, for a 32.5% margin before a regulatory cut. His worst case, AI as a tool in a mass market, gives Anthropic negative equity value (−$373 billion). From the prospectus he reads a gross margin close to 80%; among his reasons for Anthropic's third-quarter slowdown is OpenAI *"competing on pricing power."* In [[2026-11-03-damodaran-anthropic-valuation-feedback-loop|his follow-up]] he grounds the premium margin in first-mover stickiness, citing Windows and Office, and adds: *"There might be no moats."* Evans, in the bullet above, compares models to AWS rather than Windows.
 
 - **Open weights catching up, on a withheld capability (added 2026-10-03).** The *Open-weight closing the gap* bullet asks how 2025–2026 plays out. [[2026-09-30-chow-metalware-ai-firmware-vulnerability-research|Chow (Metalware), September 2026]] relays an Anthropic report that an open-weight model now has Mythos-level cyber capability, with adversaries *"only a couple months behind the US capabilities on the frontier."* The report (not ingested) gives about **four months** behind the US frontier on NIST CAISI's aggregate cyber benchmarks, with US models tested with safeguards disabled, and 12% against Mythos Preview's 14% on one exploit benchmark. Unlike the percentage-point gaps in *Key claims*, this gap concerns a capability a lab chose not to release, and it is stated in time rather than score. Chow's *"a couple months"* is shorter than the report's figure.
+- **A US open-weight gauge (added 2026-11-23).** [[2026-11-20-saedi-odd-lots-chinese-open-weight-models|Saedi (Minerva)]] puts Reflection AI's flagship, trained on *"a cluster of 12 or 14,000"* Blackwells, *"about 3 to 6 months behind the Chinese open source models, which were about, at the time, three months behind the publicly released frontier."* He reads this as evidence that *"distillation is not the pure reason that the Chinese labs are where they are"*; a host counters that a US company would *"play it by the book."* The figures sit within the [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 report's]] three to six months; how he measured them is not stated.
 
 ## Related concepts
 
@@ -256,3 +257,16 @@ The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] uses this pag
 - **Size:** a "small" model has about 30 billion parameters and a frontier model up to a trillion.
 
 Its verdict on scaling: the laws *"remain empirically useful within constrained regimes, but they no longer provide a sufficient explanation for frontier capability gains."* The next phase rests on efficiency, continual learning, modular architectures and inference-time compute. Data is becoming a strategic asset, trained on *"mixtures of public, licensed, and proprietary datasets."* In [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's seminar]], Wooldridge says the panel *"was somewhat divided"* on whether scaling continues.
+
+## The AI data centre as a manufactured product (added 2026-11-23)
+
+[[2026-11-20-liu-cnbc-managing-asia-foxconn-beyond-iphone|Young Liu (Foxconn) on CNBC's Managing Asia, Nov 2026]] presents the AI data centre, which Foxconn calls a "token factory", as a product it builds. On a 1 GW site the goal is to *"reduce it down to 10% about 100 megawatt"*; the captions leave open whether that means a cut to 10% or a 10% saving. The means are racks, server parts, power and cooling made in-house. Build time should fall from *"a year and a half to two years"* to *"6 to 9 months."* The exhibition model behind him shows containerised data-centre modules, an 800 V DC power block with a battery container, and an on-site substation. On supply, Tan puts Foxconn's AI-server share at about 40%; Liu expects about 45% next year and up to 50%. Compare the grid-side constraint in the *Power* section above.
+
+## A buyer's prices, and a GPU per knowledge worker (added 2026-11-23)
+
+[[2026-11-20-saedi-odd-lots-chinese-open-weight-models|Daniel Saedi (Minerva) on Bloomberg's Odd Lots, Nov 2026]] adds figures from a company that rents frontier models and fine-tunes open ones. All are his, unsourced in the episode.
+
+- **Cost per completed task.** For repeatable work Minerva measures *"cost per completed task, which is a lot different than … cost per million tokens."* The same correction as §Consumption pricing's *"cost per task"*, from a product's margin rather than an enterprise's spend.
+- **Price ladder.** An abliterated DeepSeek model at *"about $0.30 per million [tokens] blended,"* *"about ten [times] cheaper than Sonnet, which is about ten [times] cheaper than Fable."* Fine-tuning at Fireworks AI *"around 7 to $9 per million input and million output tokens"*; Harvey's legal model at *"about $6 million in compute."*
+- **The revenue model sets the incentive.** Harvey's fixed per-seat price against a rival's usage pricing: *"when you have a fixed revenue coming in and a variable cost, you want to reduce that variable cost as much as you can."* His break-even: per-token cost times number of tasks against the up-front training cost plus monthly running cost.
+- **A compute heuristic.** *"A fully kind of like AI native employee should have about a GPU's worth of token consumption per year"*; with *"somewhere between 5 to 10 million"* Blackwells in the US against *"around 100 million"* knowledge workers, *"we're massively short."* He expects *"one [B300] worth of computational capacity for every knowledge working employee"* in four years. A host notes the Silicon Data H100 rental index *"still going up"* in early November 2026, while Saedi finds fine-tuning compute *"always there."*

@@ -3,9 +3,9 @@ type: concept
 aliases: ["dynamic capabilities", "dynamic-capabilities", "Teece dynamic capabilities", "sense seize transform"]
 tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, microfoundations]
 confidence: 0.95
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-22"
-source_count: 103
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 105
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -390,3 +390,9 @@ The summary cites neither Teece nor W&W. Two things are added. The first is a **
 - The responsible-AI and test-and-learn cultures are `organizational-culture`.
 
 The paper adds one thing W&W do not have. Many of the sensing signals come from below: middle managers and frontline teams proposed the most impactful AI initiatives. In this account the top team's job is to legitimise those signals, which is closer to Teece's sensing as an organisational routine than to sensing as a CEO's act.
+
+## A contract manufacturer turns to AI infrastructure (added 2026-11-23)
+
+[[2026-11-20-liu-cnbc-managing-asia-foxconn-beyond-iphone|Young Liu, chairman of Foxconn, on CNBC's Managing Asia (Nov 2026)]] describes renewal at an electronics contract manufacturer, in his own words and with his own figures. Foxconn's cloud and networking business has overtaken consumer electronics, and he expects AI infrastructure to be *"more than 60 to 65%"* of revenue in three to five years. His stated goal is `strategic-renewal/business-model`: *"to transform Foxconn from a design and manufacturing company to a platform solution provider. Not just hardware but also the software."*
+
+The interview touches four more cells. **Portfolio balance**: the "3+3+3" strategy pairs three industries (EVs, digital health, robotics) with three core technologies (AI, semiconductors, next-generation communications) and three platforms, while the phone business continues; on EVs, after missing a 5%-of-global-market target for 2025, *"we're not in a hurry."* **Sensing**: *"By working with Nvidia, we know what's coming,"* and, through vertical integration and a 40–50% share of AI servers, Foxconn can tell *"whether this is a global phenomena or just single company phenomena."* **Ecosystems**: NVIDIA as *"our biggest partner,"* not customer, and the MIH open EV platform offered to carmakers. **Culture**: replacing a founder-era culture with *"no planning"* by an annual plan tracked weekly, adopted by other leaders *"after a couple of years of meeting the goals."* A CEO's self-report at the company's own showcase; no figures are sourced.

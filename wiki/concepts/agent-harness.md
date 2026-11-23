@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.95
-source_count: 157
+source_count: 160
 relationships:
   - type: part-of
     target: ai-agents
@@ -20,8 +20,8 @@ relationships:
   - type: uses
     target: small-language-models
     via: "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed"
-last_confirmed: "2026-11-22"
-accessed_at: "2026-11-22"
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -1108,3 +1108,20 @@ The talk also counts consumer-app features (Projects, Scheduled tasks, the attac
 - interchangeable models at the bottom.
 
 *"Context and harness are decoupled from models,"* so the architecture *"separates what you own and differentiate—your evals, context, and control layer—from what you consume externally."* For AI-first teams it lists *"agents without access to logs, metrics, or feedback"* among the *"velocity crushers."* The deck states the design but reports no measurement of it.
+
+## "The harness only gets you half," and the runtime around it (added 2026-11-23)
+
+[[2026-11-20-chase-langchain-future-of-agents|Chase (LangChain webinar, Nov 2026)]] restates his model, harness and context split (*"behavior comes from the whole system"*) and says what builders usually do with each: a model off the shelf, *"whether it's a frontier model or an open-weight model,"* a base harness off the shelf, and *"all of your own context."* Deep Agents is positioned as a **base harness**: *"we want you to modify it,"* through middleware or by forking it, and it is *"not ... explicitly an end-user facing coding harness."*
+
+For agents that run continuously, he says, *"the harness ... really only gets you about like half of the stuff."* The rest is an **agent runtime** that *"sits outside"* the agent loop. His slide shows a front door that applies policy to every incoming message, a queue that allows one turn at a time per session, execution that frees its worker while a session waits, durable session state, a scheduler for crons and wake-ups, recovery after crashes and deploys, a live stream clients can rejoin, and a sandbox tied to the session. It runs managed, in the customer's cloud or self-hosted. This puts in one diagram what the [[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote|Interrupt NYC]] section above calls *infrastructure*. The brain/hands/session decoupling in [[2026-05-07-anthropic-managed-agents-decoupling-brain-hands|Anthropic's Managed Agents post]] draws a similar line between the harness and a durable session outside it.
+
+## Four layers around the loop: learn, guard, review, score (added 2026-11-23)
+
+[[2026-11-23-google-cloud-tech-why-agent-demos-break-in-production|Google Cloud Tech, "Why your AI agent demo breaks in production" (Nov 2026)]] frames the move as one *"from prompt engineering to loop engineering"*. Loops live in the harness, *"the layer of software that sits between the raw models underneath… and the finished application on top,"* which *"treats the model as a fixed black box."* A slide places it in an *AI Stack* of applications, harness, models and silicon. Logan Hennessy (Google Cloud DevRel) splits the harness around a model-plus-tools while loop into four layers:
+
+- **Learn**: manage the context window before the agent acts, with a map (an AGENTS file), plans and task lists on disk, and skills loaded on demand.
+- **Guard**: fast deterministic checks the model *"cannot negotiate with or edit"*.
+- **Review**: an independent reviewer agent in a fresh context window, with screenshots or video of the UI, before a human signs off.
+- **Score**: *"evaluating and scoring the harness itself"* when someone changes the agent file, adds an MCP tool or swaps the model.
+
+The video offers the blueprint as practice and reports no measurement of it.

@@ -6,9 +6,9 @@ tags: [smitha-kolan, google-cloud, google-cloud-tech, agent-factory, developer-r
 affiliation: "Google Cloud (Developer Relations)"
 role: "Developer advocate at Google Cloud; host of The Agent Factory on the Google Cloud Tech channel"
 confidence: 0.7
-last_confirmed: "2026-09-16"
-accessed_at: "2026-09-16"
-source_count: 3
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 4
 relationships:
   - type: part-of
     target: Google
@@ -17,13 +17,14 @@ relationships:
 
 # Smitha Kolan
 
-A **developer advocate at [[Google]] Cloud** and the host of ***The Agent Factory***, the Google Cloud Tech channel's interview-plus-demo series on agent engineering. She is the recurring presence across three of the wiki's Google Cloud sources and, unlike [[Tilde Thurium]], her function is mostly **framing and product round-up** rather than definition.
+A **developer advocate at [[Google]] Cloud** and the host of ***The Agent Factory***, the Google Cloud Tech channel's interview-plus-demo series on agent engineering. She is the recurring presence across four of the wiki's Google Cloud sources and, unlike [[Tilde Thurium]], her function is mostly **framing and product round-up** rather than definition.
 
-Her three appearances split cleanly by format:
+Her four appearances split cleanly by format:
 
-- **[[2026-06-10-google-cloud-tech-ai-agents-explained-first-agent]]** — solo tutorial. She builds a self-correcting multi-agent blog writer in Python, pairing [[react-reasoning-acting|ReAct]] theory with a live [[Agent Development Kit|ADK]] build. The only one of the three where she is the technical content rather than its host.
+- **[[2026-06-10-google-cloud-tech-ai-agents-explained-first-agent]]** — solo tutorial. She builds a self-correcting multi-agent blog writer in Python, pairing [[react-reasoning-acting|ReAct]] theory with a live [[Agent Development Kit|ADK]] build. The only one of the four where she is the technical content rather than its host.
 - **[[2026-07-06-google-cloud-agent-factory-intent-driven-development]]** — host, interviewing [[Lydia Hallie]] and [[YK Sugi]]. Her contribution is the interrogation: she is the one who puts the Hacker News craft-and-technical-debt backlash to both guests, asks whether Claude Code's expansion beyond coding was intentional, and closes the automation thread with the episode's one deflating line — on an app built to reply to someone's partner, *"maybe we're optimizing too much."*
 - **[[2026-09-14-google-cloud-agent-factory-agent-harnesses-explained]]** — the product segment, and the source of the series' compressed thesis: *"your coding agent doesn't need a smarter model, it needs a better stack."*
+- **[[2026-11-23-google-cloud-tech-why-agent-demos-break-in-production]]** (Nov 2026) — host of a five-presenter explainer on four layers around a coding-agent loop; her lower-third reads *Sr. DevRel Engineer, Google Cloud*. Again the framing voice: *"if you aren't scoring the system itself, you're not really engineering, you're just guessing."*
 
 **How to cite her.** For the series' **framing claims** and as the interviewer who extracts first-party detail from guests — the permission-fatigue and Cowork-origin material in the July episode arrives in answer to her questions. Not for evidence: the format carries no measurements, and the product segments are straightforwardly promotional.
 
@@ -31,7 +32,7 @@ Her three appearances split cleanly by format:
 
 ## Appears in this wiki via
 
-- [[2026-06-10-google-cloud-tech-ai-agents-explained-first-agent]] · [[2026-07-06-google-cloud-agent-factory-intent-driven-development]] · [[2026-09-14-google-cloud-agent-factory-agent-harnesses-explained]]
+- [[2026-06-10-google-cloud-tech-ai-agents-explained-first-agent]] · [[2026-07-06-google-cloud-agent-factory-intent-driven-development]] · [[2026-09-14-google-cloud-agent-factory-agent-harnesses-explained]] · [[2026-11-23-google-cloud-tech-why-agent-demos-break-in-production]]
 
 ## Mentioned in
 

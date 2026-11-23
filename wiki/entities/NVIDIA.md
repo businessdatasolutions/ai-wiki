@@ -1,13 +1,13 @@
 ---
 type: entity
 kind: organization
-aliases: ["NVIDIA", "Nvidia"]
+aliases: ["NVIDIA", "Nvidia", "NVIDIA Omniverse"]
 tags: [nvidia, gpu, semiconductors, nemotron, openshell, dgx, open-weight-models, jensen-huang, nvidia-research, small-language-models, slm]
 since: 1993
 confidence: 0.90
-last_confirmed: "2026-11-22"
-accessed_at: "2026-11-22"
-source_count: 15
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 19
 relationships:
   - type: supports
     target: small-language-models
@@ -79,3 +79,15 @@ SORT file.name ASC
 ## The scaling era's index (added 2026-11-22)
 
 The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] uses Nvidia as the measure of the scaling era. Its market cap reached $5 trillion in October 2025, *"arguably making it the most valuable company in human history"*, and Nvidia alone accounted for more than 15% of 2025 U.S. stock-market gains. A slide in [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's HAI seminar on it]] updates the figure to about **$5.25 trillion on 28 October 2026** and adds *"solely because they build the GPUs of choice."* Wooldridge opens the talk with *"the Nvidia scandal"*, a story about the company's CEO that broke as the report came out and that he does not describe. He uses it to argue that only the scaling era explains why it became a geopolitical question. The report calls U.S. chip export controls *"arguably the most consequential governance surprise of the period."*
+
+## Omniverse libraries for agents (added 2026-11-23)
+
+On its Omniverse channel, NVIDIA hosted [[2026-11-19-falkor-nvidia-omniverse-ai-agents-industrial-operations|a livestream with Falkor, a Kongsberg company (Nov 2026)]]. Ganesh Sivaraman (Omniverse strategic partnerships) describes a *"strategic shift"*: NVIDIA has split the core Omniverse capabilities into separate libraries (ovstage, ovrtx, ovphysx, ovstream), which Falkor builds on. NVIDIA's own segment presents a Blender add-on that now runs natively on Windows, and *"real-time viewer skills"* that *"teach your agent how our libraries… interconnect."* Shashi Bhushan states NVIDIA's role as *"technology enablement… we're not providing the end application."* Falkor runs its larger simulations on NVIDIA RTX PRO 6000 GPUs in Microsoft Azure.
+
+## A server maker's view: partner, not customer (added 2026-11-23)
+
+[[2026-11-20-liu-cnbc-managing-asia-foxconn-beyond-iphone|Young Liu (Foxconn) on CNBC's Managing Asia, Nov 2026]]: NVIDIA is *"not our biggest customers. They're our biggest partner. We ship most systems directly to our customers like Microsoft or Oracle, but with Nvidia's chip inside of it. Nvidia is probably one of the largest supplier for us."* Foxconn adopts each year's NVIDIA platform early: *"By working with Nvidia, we know what's coming."* Its Hon Hai Tech Day booth (stills on the source page) shows Vera Rubin NVL72 racks and compute trays, a Vera CPU rack tray, an NVIDIA Groq 3 LPX compute tray, Spectrum-X photonics and NVLink switch trays, and Foxconn-made cooling parts for them.
+
+## Blackwells per knowledge worker, and Reflection AI (added 2026-11-23)
+
+In [[2026-11-20-saedi-odd-lots-chinese-open-weight-models|Saedi's Odd Lots interview (Nov 2026)]], the US stock of *"somewhere between 5 to 10 million"* Blackwell GPUs, against about 100 million knowledge workers, is the basis for his view that *"we're massively short"* of compute. He also says Reflection AI, *"probably the preeminent US open weight model company,"* trained its flagship on 12–14,000 Blackwells and is *"allegedly … being bought by Nvidia."* Both unsourced in the episode.

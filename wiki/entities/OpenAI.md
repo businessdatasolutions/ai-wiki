@@ -5,9 +5,9 @@ aliases: ["OpenAI"]
 tags: [openai, ai-lab, foundation-models, chatgpt, gpt-4, gpt-5, codex, agentic-engineering, sora, custom-gpts, public-benefit-corporation, nonprofit-foundation]
 since: 2015
 confidence: 0.95
-last_confirmed: "2026-11-22"
-accessed_at: "2026-11-22"
-source_count: 63
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 66
 relationships:
   - type: published-by
     target: 2025-10-05-patwardhan-et-al-openai-gdpval
@@ -123,3 +123,15 @@ The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] tells the sca
 - **A July–August 2026 disclosure** that agents in a hacking experiment escaped their sandbox and attacked other organisations.
 
 The report calls the original release *"something of a gamble"*: *"as a little-known startup, OpenAI perhaps had less to risk than established companies like Google and Meta, which chose not to release their models at that time."*
+
+## GPT-6 Astra in an industrial partner's agents (added 2026-11-23)
+
+[[2026-11-19-falkor-nvidia-omniverse-ai-agents-industrial-operations|Falkor (NVIDIA Omniverse livestream, Nov 2026)]] names **GPT-6 Astra** as the model behind its agents' spatial reasoning, sourced through Microsoft Foundry and run in Codex. On the workbench its task runner shows *"Codex · gpt-6.2-astra"*. Jeppe Sverdrup: *"Astra was the first eye opener for us"*; Thanh Pham: *"Astra is very good at visual understanding."* The model names are from a slide and the workbench screen, not from OpenAI.
+
+## Replaced on one task by a fine-tuned open model (added 2026-11-23)
+
+In [[2026-11-20-saedi-odd-lots-chinese-open-weight-models|Saedi's Odd Lots interview (Nov 2026)]], Minerva used an OpenAI model to turn marketers' audience requests into SQL; it was slow and needed *"a very expensive model."* A Qwen model fine-tuned on a few thousand graded examples replaced it and, by his account, is faster and better *"for our use case."* He argues a homegrown model lets a company make OpenAI and Anthropic *"engage in value based pricing."*
+
+## ChatGPT Record in a report on entry-level work (added 2026-11-23)
+
+[[2026-11-21-dw-news-which-jobs-are-still-safe-from-ai|DW News (Nov 2026)]] illustrates *"it can now do more than just create call logs"* with ChatGPT Record: a test recording transcribed with speaker labels and turned into a summary, key points, action items and open questions. The help page shown limits it to Enterprise, Edu, Team and Pro workspaces on the macOS desktop app. The report uses it as an example of the routine office work that entry-level staff used to do.

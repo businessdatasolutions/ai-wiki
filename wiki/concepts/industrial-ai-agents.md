@@ -3,8 +3,8 @@ type: concept
 aliases: ["industrial AI agents", "industrial agentic AI", "OT AI agents", "manufacturing AI agents"]
 tags: [industrial-ai-agents, ai-agents, ot-it-convergence, manufacturing, ontology, semantic-data-layer, knowledge-graph, unified-namespace, mqtt, scada, mes, cmms, qms, erp]
 confidence: 0.75
-last_confirmed: "2026-11-16"
-source_count: 9
+last_confirmed: "2026-11-23"
+source_count: 10
 relationships:
   - type: instance-of
     target: ai-agents
@@ -12,7 +12,7 @@ relationships:
   - type: depends-on
     target: agent-harness
     via: "the runtime layer is still required; industrial-AI agents add a semantic-data-layer dependency on top"
-accessed_at: "2026-11-18"
+accessed_at: "2026-11-23"
 quality_score: 1
 ---
 
@@ -161,6 +161,7 @@ The industrial-AI thread sits **adjacent to but distinct from** the agent-harnes
 ## Debates and supersession
 
 - **Upstream versus operational (2026-10-04).** The working definition is about agents acting on a plant's operational data. [[2026-09-30-singh-botha-bloomberg-flow-engineering-ai-hardware-design|Flow Engineering]] applies the same data-first idea to engineering design data. Whether that belongs under this concept, or needs its own (agents in hardware engineering), is open; a second source on engineering-side agents would settle it.
+- **Engineering data into operations (2026-11-23).** [[2026-11-19-falkor-nvidia-omniverse-ai-agents-industrial-operations|Falkor (Nov 2026)]] is a second source on agents reading engineering data: CAD, P&IDs, vendor drawings, data tables. Unlike Flow Engineering, it uses that data for operational questions (a maintenance clearance, readings on running equipment) on the same graph. It is a vendor demo, not independent evidence; whether engineering-side agents need their own concept stays open.
 
 ## Mentioned in
 
@@ -174,3 +175,11 @@ SORT file.name ASC
 ## Robots: constrained industrial tasks first, and the data behind them (added 2026-10-25)
 
 This page covers AI in industrial and operational environments; [[2026-10-20-gao-huang-sequoia-training-data-mecka-robot-data-factory|Gao (Mecka) on Sequoia's Training Data (Oct 2026)]] adds the physical side, robots. Josh Gao expects the first deployments in *"constrained"* industrial work, where *"you just don't have to expect a baby to appear"*: industrial cleaning, hotel delivery robots already common in China and South-East Asia, then pick-and-place and packaging on assembly lines *"within the next year or two."* The home is the hardest place to deploy, though home data is the easiest to collect. His deployment model is *"a modern robotics version of a systems integrator"* that installs a robot and then keeps making it more capable with in-domain data. The constraint is data: robotics had no internet corpus, so it must be manufactured. A founder's forecast on an investor's podcast.
+
+## Agents on a plant's engineering record (added 2026-11-23)
+
+[[2026-11-19-falkor-nvidia-omniverse-ai-agents-industrial-operations|Falkor on NVIDIA's Omniverse livestream (Nov 2026)]] presents a working stack from a software vendor to energy, processing, power and renewables, a Kongsberg company. A graph in Falkor Platform is *"the source of truth: identity, relationships and semantics across CAD, drawings, documents and live data"* (slide). The company's existing engines, a CAD Import Engine built since 2018 and a Point Cloud Engine, are exposed to agents over MCP as **reasoners** (as-built, semantic, scene), and *"the agent decide[s]… which reasoner to use next."* NVIDIA's Omniverse libraries render the OpenUSD scene, which is a projection of the graph. Five recorded demos: a plant lit from more than 6,000 fixtures found in its CAD; one vessel followed across three P&IDs to a maintenance clearance check (0.8 m clear, 1.2 m meets a railing); recorded and simulated readings shown on the equipment through its asset ID; a model built from six P&IDs, a data table and the plot plan where no current CAD exists; and that model checked against a laser scan.
+
+Three of the open questions above get an answer from this source. **Foundation-model integration:** through MCP. *"We exposed those operations through MCP. In no more than three working days, we had the first version of what we now call the semantic reasoner."* The agents run on frontier models in Claude and Codex. **Ontology evolution:** changes are dated as they enter the graph, but for facilities that have run for 20 years *"the data quality is a big issue."* **Outcome measurement:** still none. The demos use open or neutral data, and production use is aimed for March 2027.
+
+The source also restates the first property of the working definition from the agent's side: *"an agent's working memory is small compared to a [plant]… Contextualization ties the pieces together. So the agent… spends his memory on the work instead of guessing the structure."* Its governance sits at the level of claims rather than action preconditions. Every part of a drawing-built model is traced to a drawing or *"marked as assumed or unknown"*, every claim carries its evidence, and a validator agent on a different model recounts the task runner's work blind before a human validates.

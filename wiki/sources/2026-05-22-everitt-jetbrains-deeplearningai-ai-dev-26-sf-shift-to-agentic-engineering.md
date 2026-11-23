@@ -146,6 +146,7 @@ The W&W tagging (10 cells — comparable to [[2026-05-22-khan-cline-deeplearning
 - [[OpenAI]] — *Harness Engineering* article reference.
 - [[LangChain]] — *if you don't own your harness you don't own your memory* citation.
 - [[Pydantic]] — Monty + LogFire.
+- [[Atlassian]] — named among the May 2026 mega-layoffs (row 8 above); entity page since 2026-11-23.
 
 **Dangling first-mentions (single-source, deferred per [§Lifecycle author-entity promotion](../../CLAUDE.md)):**
 - Paul Everitt — JetBrains developer advocate.

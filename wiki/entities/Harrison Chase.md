@@ -6,9 +6,9 @@ tags: [harrison-chase, langchain, langgraph, langsmith, langchain-labs, deep-age
 affiliation: "[[LangChain]]"
 role: "Co-founder and CEO, LangChain (since 2022)"
 confidence: 0.85
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 9
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 10
 ---
 
 # Harrison Chase
@@ -72,6 +72,7 @@ Chase asserts at Interrupt 26: *"we moved from top 30 on terminal bench two to t
 - **"Everyone will be involved in building agents — domain experts most of all"** — the *org-side corollary* of layered-agent thinking, paired with [[Diana Hu]]'s *AI founder / IC / DRI* org structure prescription.
 - **"Own your intelligence" — open, compounding, governed** — the Interrupt NYC mission framing; a model-neutral harness as *"both offensive and defensive"* ([[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote|Interrupt NYC, Sep 2026]]).
 - **Platform engineers / agent engineers / outer ring** — the people side of agent building, as three rings (same source).
+- **"Persistent agents"** (credited to Dylan Patel) with four traits, and **intended / observed / governed** behaviour ([[2026-11-20-chase-langchain-future-of-agents|webinar, Nov 2026]]).
 
 ## Career timeline
 
@@ -94,6 +95,7 @@ Chase asserts at Interrupt 26: *"we moved from top 30 on terminal bench two to t
 | [[2026-05-20-tan-hu-stanford-cs153-ai-native-company-1000x-engineer\|Tan & Hu / Stanford CS153 (20 May 2026)]] | Paired *founder/CEO articulations of layered-agent-system thinking* landing within 24 hours. Tan/Hu maps *agentic-primitives → company-structure*; Chase maps *learning-systems → agentic-system-layers*. Same architectural decompose-and-map move applied to different domains. |
 | [[2026-07-08-jensen-huang-why-companies-need-open-agent-systems\|Huang / NVIDIA interview (8 Jul 2026)]] | Chase interviews rather than headlines; Huang's post-training-inside-the-harness account and open-vs-frontier specialization advice extend the model/harness/context layering Chase coined at Interrupt 26. |
 | [[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote\|Chase / Interrupt NYC keynote (24 Sep 2026, published 5 Oct)]] | *Own your intelligence* (three reasons, three pillars); people / process / technology with three people rings; the LangSmith three-layer product map and seven launches, including Engine v2. |
+| [[2026-11-20-chase-langchain-future-of-agents\|Chase / LangChain webinar (20 Nov 2026)]] | Persistent agents and their four traits; intended / observed / governed behaviour; the agent runtime around the harness; trace data controls, LangSmith for Coding Agents and the Tool Gateway; memory curation and *knowledge factories*. |
 
 ## Interrupt NYC: "own your intelligence" (2026-10-05)
 
@@ -130,3 +132,7 @@ SORT file.name ASC
 ## Agents that improve over time (added 2026-10-30)
 
 [[2026-10-27-chase-langchain-interrupt-london-agents-improve-over-time|Chase (Interrupt London, Oct 2026)]]: fully automated improvement is *"maybe the North Star or the Holy Grail,"* and *"I don't think we're there right now by any stretch of the imagination."*
+
+## Persistent agents, a webinar (added 2026-11-23)
+
+[[2026-11-20-chase-langchain-future-of-agents|The Future of Agents with Harrison Chase (LangChain webinar, 20 Nov 2026)]]: a solo slide talk with read-out audience questions. It names **persistent agents** as the next step after coding agents, with four traits (goal-oriented, always on, accumulating context, multiplayer and multi-surface). It sorts agent behaviour into *intended* (runtime), *observed* (improvement loop) and *governed* (governance), and says *"the harness ... really only gets you about like half."* On memory: *"the actual storage of memory is not that hard ... The hard part is really deciding what to remember,"* and he proposes company *"knowledge factories."* Much of the architecture restates [[2026-10-05-chase-langchain-interrupt-nyc-opening-keynote|Interrupt NYC]] and [[2026-10-27-chase-langchain-interrupt-london-agents-improve-over-time|Interrupt London]].

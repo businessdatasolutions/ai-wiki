@@ -2,10 +2,10 @@
 type: concept
 aliases: ["AI deskilling", "ai-deskilling", "task composition shift", "deskilling"]
 tags: [deskilling, task-composition, ai-employment-effects, occupations]
-confidence: 0.90
-last_confirmed: "2026-11-22"
-accessed_at: "2026-11-22"
-source_count: 44
+confidence: 0.95
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 46
 relationships:
   - type: instance-of
     target: ai-employment-effects
@@ -291,3 +291,11 @@ SQ3 asks the design question: *"Can AI tutoring systems be designed to enhance h
 ## Redesign early-career roles, do not automate them (added 2026-11-22)
 
 [[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Microsoft's Frontier Playbook, second edition (Sept 2026)]] takes a stated position on the pipeline problem: *"The temptation to simply automate junior work is strong. The consequence is hollowing out the apprenticeship pipeline that produces senior talent. We are doing the opposite."* Its PRAISE programme (*Preceptorship for AI in Software Engineering*) pairs new engineers with experienced mentors for two-way learning: *"the senior teaches craft; the junior teaches AI fluency."* It also puts learning prompts into daily work, for example through a Skill Advisor agent for engineers. It is an employer's statement of intent, with no data on how juniors fare.
+
+## "I don't think I would have learned that if I didn't struggle" (added 2026-11-23)
+
+An academic at [[2026-11-19-raimondo-holcomb-harvard-iop-managing-unemployment-ai-economy|Harvard's Institute of Politics (Nov 2026)]] asks what to tell students who ask why they should write an essay an AI can write. Gina Raimondo answers from her own economics degree: working through problem sets was *"how I learned to like think like an economist… I don't think I would have learned that if I didn't struggle through all those problem sets."* One person's recollection, offered as advice; it states the access-versus-acquisition question this page tracks from the learner's side.
+
+## Juniors and seniors as one workforce (added 2026-11-23)
+
+[[2026-11-22-mansour-lennys-podcast-everyone-becoming-a-builder|Sherif Mansour (Atlassian) on Lenny's Podcast (Nov 2026)]]: *"Juniors are not great at identifying AI slop because they don't have the domain expertise,"* while seniors *"can pick AI slop a mile away because they know the domain really well."* Atlassian hires more juniors than seniors and aims for *"a complementary workforce between the juniors and the seniors."* In its AI builder weeks, juniors show demos and tools while seniors *"focus on identifying slop, evals, quality problems."* The division of labour matches [[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Microsoft's PRAISE programme]] in *Redesign early-career roles* above (*"the senior teaches craft; the junior teaches AI fluency"*). Neither source says how juniors acquire the domain judgment that lets seniors spot slop.

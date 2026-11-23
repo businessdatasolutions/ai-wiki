@@ -99,4 +99,4 @@ The full note as served on 7 November 2026: summary, all sections, the appendix 
 ## Linked entities and concepts
 
 - Concepts: [[enterprise-ai-adoption]], [[technology-adoption-theories]].
-- **Dangling** (single-source mention, deferred): Jeffrey S. Allen, Federal Reserve Board, U.S. Census Bureau, Federal Reserve Bank of Atlanta, Alexander Bick, Adam Blandin, David Deming (all three also named on the Adoption Monitor, not in `author:`), Nicholas Bloom, Steven J. Davis.
+- **Dangling** (single-source mention, deferred): Jeffrey S. Allen, Federal Reserve Board, U.S. Census Bureau, Federal Reserve Bank of Atlanta, Alexander Bick, Adam Blandin (both also named on the Adoption Monitor, not in `author:`), Nicholas Bloom, Steven J. Davis. The survey's third author, [[David Deming]], has an entity page since 2026-11-23.

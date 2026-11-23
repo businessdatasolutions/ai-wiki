@@ -2,10 +2,10 @@
 type: concept
 aliases: ["systems thinking", "systems-thinking"]
 tags: [systems-thinking, innovation, sustainability, design-thinking, breakthrough-thinking, wicked-problems]
-confidence: 0.9
-last_confirmed: "2026-10-08"
-accessed_at: "2026-10-08"
-source_count: 15
+confidence: 0.95
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 16
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -205,3 +205,7 @@ SORT file.name ASC
 ## Redesign several roles at once (added 2026-10-08)
 
 [[2026-09-30-lenk-karunakaran-stanford-hai-industry-conversation-instacart|Karunakaran (Stanford HAI seminar, Sep 2026)]]: when a law firm's paralegals used AI to take on legal research, junior associates pushed back, and the firm redesigned both roles together. Paralegals do the first cut of research; juniors verify it and move earlier into client work and strategy. *"You don't redesign one role or workflow at a time,"* he says; it has to be a system redesign. Divisions that later copied the role changes without changing the evaluation metric saw use fall. His **vacancy chains** name the system effect: a task moved into one role leaves a gap, or a conflict, in the role that held it. He closes with Coase: coordination costs explain why jobs exist, so unbundling one job has costs in others. A field study presented without causal claims; confidence unchanged.
+
+## Throughput or direction (added 2026-11-23)
+
+[[2026-11-22-mansour-lennys-podcast-everyone-becoming-a-builder|Sherif Mansour (Atlassian) on Lenny's Podcast (Nov 2026)]] names the constraint after Atlassian's all-builder squads went back to their roles: *"throughput's not our problem. Direction is our problem. Throughput's getting cheaper."* With many engineers, *"there's more throughput, so I need more people to steer the ship."* [[2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved|Charles (Ramp)]], in *Bottleneck-chasing in product development* above, follows the constraint from coding to review, testing and human attention; [[2026-05-20-ng-deeplearningai-ai-dev-26-sf-future-of-software-engineering|Ng]] names deciding what to build as the new bottleneck. Mansour's internal post was titled *"direct the ship, don't row it."* A practitioner's framing without a formal method.

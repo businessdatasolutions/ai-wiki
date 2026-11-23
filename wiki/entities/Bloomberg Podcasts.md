@@ -1,12 +1,12 @@
 ---
 type: entity
 kind: venue
-aliases: ["Bloomberg Podcasts", "Bloomberg", "Trumponomics", "Bloomberg Leaders", "Bloomberg Audio Studios", "Bloomberg Tech"]
+aliases: ["Bloomberg Podcasts", "Bloomberg", "Trumponomics", "Bloomberg Leaders", "Bloomberg Audio Studios", "Bloomberg Tech", "Odd Lots"]
 tags: [bloomberg, bloomberg-podcasts, trumponomics, bloomberg-leaders, business-journalism, economics-podcast, financial-media]
 confidence: 0.75
-last_confirmed: "2026-10-17"
-accessed_at: "2026-10-17"
-source_count: 6
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 7
 relationships:
   - type: published-by
     target: 2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity
@@ -24,10 +24,11 @@ relationships:
 
 # Bloomberg Podcasts
 
-The podcast arm of **Bloomberg**'s business and financial news operation, publishing under **Bloomberg Audio Studios**. It runs many strands; two are represented in this wiki.
+The podcast arm of **Bloomberg**'s business and financial news operation, publishing under **Bloomberg Audio Studios**. It runs many strands; several are represented in this wiki.
 
 - ***Trumponomics*** — a weekly economics show hosted by **Stephanie Flanders**, Bloomberg's editorial head of government and economics, examining the economic policies of the second Trump administration and their global consequences.
 - ***Leaders with Francine Lacqua*** (also carried as *Bloomberg Leaders*) — long-form interviews with chief executives about how they run their companies, hosted by Bloomberg Television anchor **Francine Lacqua**. Two episodes are in the corpus, and they pair usefully as **practice and theory**: [[2026-05-24-erginbilgic-bloomberg-leaders-rolls-royce-turnaround-playbook|Erginbiç]] is a CEO recounting a transformation he executed; [[2026-08-16-hill-bloomberg-leaders-ceo-skills-age-of-ai|Hill]] is the researcher naming the constructs underneath it. The August 2026 Hill episode inverts the series' usual format on purpose — Lacqua says she is turning the season's question around by asking a career-long student of leadership what actually makes a great boss.
+- ***Odd Lots*** — Bloomberg's markets-and-economics interview show, hosted by **Joe Weisenthal** and **Tracy Alloway** (Monday and Thursday episodes, also on video). First in the corpus with [[2026-11-20-saedi-odd-lots-chinese-open-weight-models|Daniel Saedi (Minerva) on Chinese open-weight models]], November 2026.
 
 Promoted to a wiki entity page on 12 August 2026 under the [second-source promotion rule](../../CLAUDE.md#author-entity-promotion), on the addition of the Frey interview alongside the earlier Erginbiç episode.
 
@@ -49,3 +50,4 @@ Bloomberg's interview formats are host-led and generally give the guest room to 
 - [[2026-09-30-singh-botha-bloomberg-flow-engineering-ai-hardware-design|Singh & Botha / Bloomberg Tech, September 2026]] — Flow Engineering on AI agents for hardware design. With the next source, made *Bloomberg Tech* a two-source author; added as an alias here (2026-10-04).
 - [[2026-10-02-hiza-bloomberg-lockheed-ai-openai-f35|Hiza / Bloomberg Tech, October 2026]] — Lockheed Martin on 55 models, testing AI before deployment, and OpenAI working with the F-35 team.
 - [[2026-10-16-fowler-ludlow-bloomberg-tech-dorm-room-fund-ai-gold-rush|Fowler / Bloomberg Tech, October 2026]] — Dorm Room Fund on student founders in the AI boom, and Cursor's CEO as a former student investor.
+- [[2026-11-20-saedi-odd-lots-chinese-open-weight-models|Saedi / Odd Lots, November 2026]] — Minerva's co-founder on mixing frontier and Chinese open-weight models: cost per completed task, a fine-tuned Qwen, fine-tunes that do not carry over, abliterated models, and a GPU per knowledge worker.

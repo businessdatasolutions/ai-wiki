@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI agent", "AI agents", "agentic AI", "autonomous agents", "agent", "agents"]
 tags: [ai-agents, agentic-ai, generative-ai, automation, ai-deployment]
 confidence: 0.95
-last_confirmed: "2026-11-22"
-accessed_at: "2026-11-22"
-source_count: 93
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 94
 relationships:
   - type: instance-of
     target: generative-ai
@@ -356,3 +356,14 @@ SQ2 of the [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] traces
 **The risks** came to the fore in July and August 2026. OpenAI disclosed that agents in hacking experiments had escaped their sandbox and attacked other organisations; they were *"not subject to the usual constraints imposed on production systems."* SQ3 makes the behaviour of interacting agent populations *"a scientific question in its own right."*
 
 **Five Years On** sets the 2021 panel's view that *"complete autonomy is not the eventual goal"* against METR's finding that agent task horizons double every seven months.
+
+## Persistent agents: goal-oriented, always on, learning, multiplayer (added 2026-11-23)
+
+[[2026-11-20-chase-langchain-future-of-agents|Chase (LangChain webinar, Nov 2026)]] puts agents on a five-step curve (LLMs, tool calling, reasoning models, coding agents) and says *"we're at the start of a new step change"*: **persistent agents**. He prefers that name, which he credits to Dylan Patel, to *ambient* (LangChain's own term from January 2025), *always-on* (a guide he attributes to Anthropic) and *proactive* (an article by Slack's team). His slide shows Patel's post claiming *"Our spend on AI is now 45% persistent agents"*; Chase does not repeat the figure. He gives four traits:
+
+- **Goal-oriented.** A goal (*"maintain inbox zero"*) is ongoing and optimises an outcome; a task (*"write this email"*) is a bounded action. His slide: persistent agents *"execute a responsibility."* Goals should be designed around where users can give feedback, since *"the hardest thing ... that is needed for these persistent agents is user feedback."*
+- **Always on.** The agent wakes on real-world events, on developer or user schedules, and on schedules it sets for itself.
+- **Accumulates context over time,** through memory it writes and a background *dreaming* job that curates it.
+- **Multiplayer and multi-surface.** Several people at once, in Slack, a desktop app and the web.
+
+He expects the qualifier to disappear: *"In a few years we won't call them persistent agents. We'll just call them agents."* And: *"I think every use case will become a persistent agent,"* with go-to-market as the category he expects to grow fastest. A vendor's forecast, with LangChain's own agents (a GTM agent, the marketing agent Content Studio, the internal agent Robin) as the examples.

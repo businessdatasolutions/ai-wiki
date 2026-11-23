@@ -5,9 +5,9 @@ aliases: ["Antigravity", "Anti-gravity", "Google Antigravity"]
 tags: [antigravity, agent-harness, google-deepmind, gemini, windsurf, ide, cli, agent-sdk, vibe-coding, through-line]
 since: 2026
 confidence: 0.75
-last_confirmed: "2026-10-01"
-accessed_at: "2026-10-01"
-source_count: 5
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 6
 relationships:
   - type: part-of
     target: Google
@@ -30,3 +30,7 @@ Google's **single agent harness**, built by the **Windsurf** team that joined Go
 - **Already in the corpus.** Named ("Anti-gravity") alongside Claude Code, Cursor, and OpenCode in [[2026-05-04-rethinking-agents-harness-is-all-you-need]] as one of the harnesses that drives same-model performance variance.
 
 Built within [[Google DeepMind]]; the *model-eats-the-harness* tension (Kilpatrick's own thesis) applies to Antigravity as much as to any harness.
+
+## A plugin marketplace and a CLI (added 2026-11-23)
+
+In [[2026-11-23-google-cloud-tech-why-agent-demos-break-in-production|Google Cloud Tech's four-layer video (Nov 2026)]], Antigravity's app has a *Customizations* marketplace of Google plugins and skill collections: Google Cloud Developer, Google Developer Knowledge, Science, Dart and Flutter, Data Agent Kit, Google Maps Platform, Gemini API, Android CLI, Chrome DevTools, Firebase and others. Samborski stresses that the Google Cloud Developer plugin and its skills also work with Claude Code and Codex. The review demo runs in *Antigravity CLI 1.5.9* with *Gemini 4 Carbon (Low)* and a 1M-token context; a banner introduces *Gemini 4 Hydrogen* as *"our daily driver for rapid coding and dependable agentic execution."*

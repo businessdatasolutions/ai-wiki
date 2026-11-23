@@ -2,10 +2,10 @@
 type: concept
 title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
-confidence: 0.90
-last_confirmed: "2026-11-16"
-source_count: 48
-accessed_at: "2026-11-18"
+confidence: 0.95
+last_confirmed: "2026-11-23"
+source_count: 50
+accessed_at: "2026-11-23"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
   - type: part-of
@@ -266,3 +266,13 @@ This places the gate at the level of the business model, not the individual agen
 [[2026-11-08-covington-slaney-mckinsey-strategy-room-agentic-transformation|Covington and Slaney (McKinsey, Inside the Strategy Room, Nov 2026)]] name two failure modes from transformation offices. *Cognitive surrender*: staff accept a well-formatted chatbot draft that *"turns out to be slop"* on review, and later present material whose authors *"won't really know what they're saying."* *Attention surrender*: people multitask because an agent is listening. An agent turning a meeting transcript into actions logged the chief transformation officer's sarcastic *"Do you just want the CEO to call every single employee and tell them to do their job?"* as a task for the CEO; it was caught because a person still read the list. Their controls are organisational: designed review moments (when a review happens, who does it, and how it cascades up to the CEO), *"if you put something on a page, it's yours,"* a Shark Tank-style pitch of any AI-drafted material, and *"Don't use your AI bots to talk to the business."*
 
 In [[2026-11-16-pralong-mckinsey-strategy-room-gen-ai-outside-in-diligence|McKinsey's diligence episode (Nov 2026)]], David Pralong names the remaining gap as trust among senior decision-makers: McKinsey gets the full benefit only *"once the senior firm members, those who will eventually exercise the judgment… have actually had their hands on tools enough to trust these tools."* Laura Borton puts checks in three places: a critic agent inside the workflow that pressure-tests findings, a user verdict on every output (*"is that a good response yes or no and why"*), and agreed procedures for when humans step in, with security, legal and compliance staff in the design phase because deal data is non-public. William Bundy: *"you can't rely on [gen AI] to make decisions."*
+
+## Three touchpoints, assumptions marked, a blind recount (added 2026-11-23)
+
+[[2026-11-19-falkor-nvidia-omniverse-ai-agents-industrial-operations|Falkor on NVIDIA's Omniverse livestream (Nov 2026)]] replays a recorded run of four agents and one human. The human steps in *"only [in] three place[s]"*: stating the intent, answering one question the coordinator asks mid-run, and validating at the end. A slide sets out the shift in three stages. *Before: applications*: a person joins the data in their head. *Now: human to agent*: *"A person states the intent. The agent works the systems, shows its reasoning and marks what it assumed. The person decides."* *Next: agent to agent*: a specialist agent *"needs to know which asset is involved, what's already been checked, and which questions are still open."*
+
+On the workbench, every claim carries its evidence and a label: from a source, test passed (a check script and its exit code, from the log) or assumed. A result validator on a different model recounts blind, and the run is *"accepted with named limits."* In the plant-without-CAD demo, anything the agent infers *"is marked as assumed or unknown, so a reviewer sees exactly what the drawings support."* The slide for the run also says *"the person's answer was written in advance,"* so the demo shows the mechanism rather than a live human decision.
+
+## A prompt is suggestions; permissions by surface (added 2026-11-23)
+
+[[2026-11-20-chase-langchain-future-of-agents|Chase (LangChain webinar, Nov 2026)]]: *"You should not define this in a prompt. A prompt is suggestions. The agent can ignore it. It can get prompt injected."* His slide sets an agent told *"Do not send without approval"* (*"relies on the model holding back"*) against an enforced path in which identity, policy and approval deny *"any call that fails a check"* before the email API. Permissions depend on *who is acting, what action, on which surface*. In a private DM, LangChain's Slack agent may use the person's email within their granted scope. In a shared channel that permission is *"not inherited"*, because another person can add to a thread someone else started. He also names alignment as a larger problem for agents that work towards goals: *"if you give an agent a goal of ... removing all bugs from the codebase, it might accomplish that goal by just deleting the whole codebase."* And for background agents: *"I think it's way more of an issue than with these shorter task-based things because now these things are running in the background. You don't see what they're doing."* This sits beside the *enforcement outside the agent* bullet above ([[2026-10-19-smith-cohen-techcrunch-disrupt-okta-nanoco-agent-security|Smith & Cohen]]) and the runtime rule language of [[2025-07-31-wang-agentspec-runtime-enforcement-llm-agents|AgentSpec]].

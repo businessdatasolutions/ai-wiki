@@ -2,10 +2,10 @@
 type: concept
 title: Multi-agent failure modes
 aliases: ["multi-agent failure modes", "MAST", "multi-agent system failure taxonomy", "why multi-agent systems fail", "agent coordination failure"]
-confidence: 0.90
-last_confirmed: "2026-11-16"
-source_count: 14
-accessed_at: "2026-11-18"
+confidence: 0.95
+last_confirmed: "2026-11-23"
+source_count: 15
+accessed_at: "2026-11-23"
 tags: [mast, multi-agent, failure-taxonomy, coordination, inter-agent-misalignment, task-verification, data-processing-inequality, isolated-workspaces, caid, token-budget]
 relationships:
   - type: part-of
@@ -153,3 +153,7 @@ The systems [[2025-03-17-cemri-why-do-multi-agent-llm-systems-fail|MAST]] studie
 ## Compounding error handled by measurement, and the message board (added 2026-09-18)
 
 In the Q&A of [[2026-09-17-rashad-pydata-production-ready-agentic-harness|Rashad's PyData talk (September 2026)]], an audience member put the compounding problem numerically — a 96%-accurate step seven layers deep gives about 75%. Rashad's answer is to model each component's failure probability from observed runs rather than design it away. In one of his projects the component that failed most was memory, not the model. For agent-to-agent communication he recommends a shared message board every agent reads and writes, "like Reddit or Twitter", over more elaborate message-bus designs. His claim that this scales to tens of thousands of agents comes without a source, so it is recorded here as opinion.
+
+## A coordinator, a runner, a validator and a memory manager (added 2026-11-23)
+
+[[2026-11-19-falkor-nvidia-omniverse-ai-agents-industrial-operations|Falkor's agent traces (NVIDIA Omniverse livestream, Nov 2026)]] show one task run by four agents across two harnesses: a run coordinator (Claude, opus-5-5), a task runner (Codex, gpt-6.2-astra), a result validator (Claude, sonnet-5-5) and a memory manager (Claude). Thanh Pham gives a reason for each added role. The validator runs *"on a different LM model"* to check the runner's findings, which he likens to pair programming. The memory manager condenses the findings at the end so *"unrelated fact[s]"* do not carry into future runs; in his closing words, one agent doing many tasks *"will get… overwhelmed quite easily."* The workbench logs the run's own errors: a blank first render rejected, a claim withdrawn, two failed calls. It is a recorded vendor demo with no single-agent comparison.

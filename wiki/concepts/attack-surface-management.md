@@ -2,10 +2,10 @@
 type: concept
 aliases: ["attack surface management", "ASM", "external attack surface", "EASM", "external attack surface management"]
 tags: [attack-surface-management, cybersecurity, infosec, exposure-management, shadow-it]
-confidence: 0.8
-last_confirmed: "2026-11-22"
-accessed_at: "2026-11-22"
-source_count: 17
+confidence: 0.85
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 18
 relationships:
   - type: depends-on
     target: osint
@@ -69,6 +69,7 @@ Both sources converge on a posture: the future of cybersecurity belongs to organ
 
 - **Open question — automation depth.** Both sources advocate automation but neither names a specific reference architecture for an ASM pipeline at production scale. The "AI-Augmented Offensive & Defensive Security" category named in TechLatest 2026 (LLMs + [[ai-agents]] correlating OSINT sources, generating attack graphs) is the plausible future of automated ASM but is still at vendor-narrative depth.
 - **Does AI favour the attacker or the defender? (added 2026-09-19)** [[2026-09-10-alim-pydata-ai-security-paradox-asymmetric-threats|Alim]] argues the attacker: recon and exploit generation are nearly free, while patching a large legacy estate is as slow as ever. [[2026-06-22-grinstead-how-i-ai-mozilla-firefox-agentic-security-harness|Mozilla's]] roughly 500 bugs fixed in a month argues the defender. A working reconciliation is that both sides now find vulnerabilities cheaply, but only the defender still has to ship the fix, so the answer depends on patch velocity rather than detection. Neither source measures time-to-exploit against time-to-patch, which is the number that would settle it. **Half-answered 2026-09-19:** [[2026-06-09-cloudflare-investor-day-2026|Cloudflare Investor Day 2026]] charts time-to-exploit falling to under 24 hours in 2026 (see the section below), but cites no source for the series. Time-to-patch is still unmeasured anywhere in the corpus. **Open.**
+- **Cost of offence, from a user of open weights (added 2026-11-23).** [[2026-11-20-saedi-odd-lots-chinese-open-weight-models|Saedi (Minerva)]] places the risk of open weights in cheap abliterated models (about $0.30 per million tokens) run in swarms, not in data reaching Chinese labs. He names no defensive counterpart and has seen no policy proposal he finds convincing. An interview claim, not a measurement.
 - **No supersession events yet.** Young concept page; no prior wiki claim to retire.
 
 ## Related pages
@@ -133,3 +134,7 @@ Key Takeaway 6 of the [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 repo
 - **Massively parallel agent attacks.**
 
 The report predicts *"a game of cat and mouse"* in which AI also defends. In [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's seminar]], Wooldridge's personal top risk is AI *"used to attack a poorly secured piece of infrastructure,"* with air traffic control as the example.
+
+## Abliterated open-weight models at a hundredth of the price (added 2026-11-23)
+
+[[2026-11-20-saedi-odd-lots-chinese-open-weight-models|Daniel Saedi (Minerva) on Odd Lots, Nov 2026]] tried an abliterated DeepSeek release (*"they turned off the neurons that tell the model to say no"*), which he puts below Claude Mythos but at *"about $0.30 per million [tokens] blended,"* about a hundredth of Fable's price. *"The theory on the internet is people are running swarms of these DeepSeek obliterated models"* in current hacks; his image is *"a thousand of these Mr. Robots now running in the cloud."* It is an online theory he relays, not evidence. The same direction appears in [[2026-09-30-chow-metalware-ai-firmware-vulnerability-research|Chow's]] report of Mythos-level results in an open-weight model with safeguards removed, abliteration among the methods.

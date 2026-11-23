@@ -3,9 +3,9 @@ type: concept
 title: Agent fleet management
 aliases: ["agent fleet management", "managing agent fleets", "agent manager", "human as agent manager", "parallel agents", "agent orchestration at scale"]
 confidence: 0.75
-last_confirmed: "2026-11-22"
-source_count: 28
-accessed_at: "2026-11-22"
+last_confirmed: "2026-11-23"
+source_count: 29
+accessed_at: "2026-11-23"
 tags: [agent-fleet, parallelism, cloud-agents, isolated-workspaces, decision-fatigue, priority-queue, span-of-control, delegation, playbooks, token-economics]
 relationships:
   - type: part-of
@@ -161,3 +161,12 @@ The session does not say how the agents are registered, monitored or retired.
 ## 111 agents, three levels, agents governed like users (added 2026-11-22)
 
 [[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Microsoft's Frontier Playbook, second edition (Sept 2026)]] gives the supply-chain count as *"111 purpose-built agents across planning, sourcing, fulfillment, and logistics,"* deployed after the workflows were simplified and a single source of truth was built. It sorts agent use into three levels: *human with assistant*, *human-agent teams* and *human-led, agent-operated*, the last being where *"agents run entire business processes and workflows, checking in as needed."* For governance it asks whether *"identity, access, compliance, and policy controls apply to agents the same way they apply to users,"* and calls for agents with *"identity, risk-based permissions"* and a governed lifecycle, so that *"AI actions are traceable, auditable, and reversible."* It does not say how many of the 111 agents run at which level.
+
+## Governance at the choke points, and coding-agent spend per merged PR (added 2026-11-23)
+
+[[2026-11-20-chase-langchain-future-of-agents|Chase (LangChain webinar, Nov 2026)]] places governance at *"the choke points"*: tool calls and network requests, including calls to models. LangChain has two gateways there. The **LLM Gateway** controls costs, model access and fallbacks. The new **Tool Gateway** identifies the user, agent or profile, attaches a stored OAuth token, applies policy (deny, or human-in-the-loop), forwards the call and records it. The slide marks the audit log *"on Enterprise"*, and the clients it names include Claude Code, Codex and Cursor. In the Q&A, on agents that make payments, Chase says you *"absolutely need"* an audit log of every action. Two more launches from the same week:
+
+- **Trace data controls.** Traces *"contain a ton of sensitive information."* Inputs and outputs are masked by default, leaving a *"skeleton"* of models, tokens, costs and tools. Access is set per user group, and per trace through metadata policies, for example to open one complaining customer's traces to a few people.
+- **LangSmith for Coding Agents.** A GitHub connection ties coding-agent spend to merged PRs: cost per merged PR, cost over time by model, threads classified as bug fix or exploration. The example dashboard, for LangChain's internal agent Robin over seven days, shows $21.3K in LLM cost, $34.65 per merged PR over 614 merged PRs, a 93% cache rate and 22.8K threads, with spend across nine model families. The slide does not say whether these are real or demo figures.
+
+Compare the agent-gateway and registry products [[2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure|Google Cloud]] lists above. Both are vendor product lists without deployment data.

@@ -5,10 +5,13 @@ aliases: ["Lenny's Podcast", "Lennys Podcast", "lennypodcast", "Lenny Rachitsky'
 tags: [lenny-podcast, podcast, product-management, consumer-tech, ai-era-strategy, founder-interviews, lenny-rachitsky]
 since: 2022
 confidence: 0.85
-last_confirmed: "2026-09-28"
-accessed_at: "2026-09-28"
-source_count: 10
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 11
 relationships:
+  - type: published-by
+    target: 2026-11-22-mansour-lennys-podcast-everyone-becoming-a-builder
+    via: "Sherif Mansour (Atlassian, Head of AI and Product Craft) on the PM as a shared brain, the GM/scientist/artist triangle, Atlassian's AI-builder squads going back to their roles, more PM openings, and hiring more juniors (22 November 2026)"
   - type: published-by
     target: 2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved
     via: "Geoff Charles (Ramp CPO) at Lenny and Friends Summit on internal agents for each step of product development and the three-way split of the PM role (25 September 2026)"
@@ -79,3 +82,7 @@ None are claims about Lenny's Podcast itself; they are dangling forward-referenc
 ## Summit talks on the channel (added 2026-09-28)
 
 [[2026-09-25-charles-lennys-podcast-what-product-looks-like-when-coding-is-solved|Geoff Charles (Ramp CPO), recorded at Lenny and Friends Summit, 10 September 2026]] is the first conference talk from the channel in the wiki, not an interview: a 19-minute keynote on Ramp's internal agents for each step of product development and the PM role splitting into factory-builder, taste maker and GM.
+
+## Sherif Mansour on PM craft (added 2026-11-23)
+
+[[2026-11-22-mansour-lennys-podcast-everyone-becoming-a-builder|Sherif Mansour, Atlassian's Head of AI and Product Craft, 22 November 2026]]: an 82-minute interview on the PM as a shared brain, Joff Redfern's GM/scientist/artist triangle, Atlassian's all-builder squads that went back to their roles within a month, hiring more juniors, and adding AI to existing workflows. Lenny also previews figures from his late-2026 tech job-market report: more open PM roles than any other role, design flat, about 108 user-research openings. A second large-incumbent product leader on the channel after [[2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era|Stone (Netflix)]].

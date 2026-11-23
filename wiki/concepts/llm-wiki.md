@@ -2,10 +2,10 @@
 type: concept
 aliases: ["LLM Wiki", "LLM-Wiki", "llm wiki", "Karpathy's LLM Wiki", "LLM-maintained wiki", "compounding wiki"]
 tags: [llm-wiki, knowledge-compilation, three-layer-architecture, ingest-query-lint, agent-memory, claude-md, knowledge-compounding, agentic-knowledge-base]
-confidence: 0.93
-last_confirmed: "2026-10-30"
-accessed_at: "2026-10-30"
-source_count: 17
+confidence: 0.95
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 18
 relationships:
   - type: part-of
     target: agent-harness
@@ -275,3 +275,12 @@ Tate describes the system as a small-team prototype with no evaluation of its ou
 ## OpenWiki: a brain updated from coding-agent traces (added 2026-10-30)
 
 [[2026-10-27-chase-langchain-interrupt-london-agents-improve-over-time|Chase (Interrupt London, Oct 2026)]] mentions LangChain's open-source **OpenWiki**, *"creating this knowledge or this brain for an agent that can be updated."* It is populated from a coding repo and updated from Codex or Claude Code traces showing what the agent struggled with. He names *"choosing what to remember and what not to remember"* as the hardest part of such loops. This is a one-line description in a talk; the project itself has not been read.
+
+## "Knowledge factories," and a format that matters less than curation (added 2026-11-23)
+
+In a webinar Q&A, [[2026-11-20-chase-langchain-future-of-agents|Chase (LangChain, Nov 2026)]] was asked whether LangChain's approach to agent memory is *"to build a wiki that is a company knowledge base or something similar."* His answer: *"I actually don't think the storage format of memory matters that much."* Different kinds of memory may need different formats. *"Skills are procedural memory"* with their own format, and other knowledge *"might be best stored in OKF or in markdown files or wiki or maybe even a graph database."* He cites Hex's use of graphs. Two questions matter more to him:
+
+- **Can the agent update memory while it runs?** It can always *"take notes,"* because *"as the agent is running it might notice what's missing, it might notice what's out of date."*
+- **Are those notes visible at once, or do they wait for a curator?** The curator is *"the dreaming agent,"* run on a schedule.
+
+Traces are the best source for skills. For general knowledge he adds Notion and Slack, feeding a company knowledge base: *"One term that I used yesterday is like a knowledge factory."* Earlier in the same webinar he says storing memory is not the hard part; *"the hard part is really deciding what to remember and then curating that over time and keeping that fresh."* He expects complex memory systems to be *"bitter lessoned"* into a coding agent with skills and tools. This continues the OpenWiki mention above. LangChain had not yet published its approach (*"hopefully we'll have more things to talk about here soon"*).

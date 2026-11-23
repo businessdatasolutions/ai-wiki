@@ -3,10 +3,10 @@ type: concept
 title: Technology adoption theories
 aliases: ["technology adoption theories", "adoption theories", "classical adoption theories", "TAM", "Technology Acceptance Model", "UTAUT", "UTAUT2", "Unified Theory of Acceptance and Use of Technology", "diffusion of innovations", "Diffusion of Innovation", "DOI theory", "Rogers' diffusion of innovations", "TOE framework", "technology-organization-environment", "technology–organization–environment framework"]
 tags: [adoption-theory, tam, utaut, diffusion-of-innovations, rogers, toe-framework, tornatzky-fleischer, information-systems-research, firm-level, individual-level, ai-adoption]
-confidence: 0.85
-last_confirmed: "2026-11-07"
-accessed_at: "2026-11-07"
-source_count: 15
+confidence: 0.90
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 16
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -113,3 +113,7 @@ In the Q&A, Karunakaran adds why peers matter more for generative AI than for ER
 The [[2026-07-01-stanford-del-adoption-monitor|Adoption Monitor]] separates the two margins that the classical models fold into one *"use"* variable. On the **extensive margin** (any use), 61.8% of US adults used generative AI in May 2026, up from 44.6% in August 2024. On the **intensive margin** (how often), about a quarter of users use it daily, a share that has barely moved. The page calls the two patterns *"distinct."* For firms it reports the extensive margin nearly saturated: 68.6% already use some AI and a net 6% more expect to start within three years.
 
 Two consequences for the theories. Diffusion of innovations (DOI) predicts an S-curve on the extensive margin, and the individual series still rises. But a high extensive-margin figure says little about intensity, which is where productivity effects would come from. The Monitor puts it plainly: adoption is *"neither necessary nor sufficient for broader economic impact."* It also shows self-reported use depends on the instrument: three US work-use surveys diverge, with one falling a third in a year. TAM and UTAUT studies, built almost entirely on self-report, inherit that problem.
+
+## Juniors try more tools, seniors get more from theirs (added 2026-11-23)
+
+[[2026-11-22-mansour-lennys-podcast-everyone-becoming-a-builder|Sherif Mansour (Atlassian) on Lenny's Podcast (Nov 2026)]] cites Atlassian research, internal and with customers: *"something like almost 30, I think it's 38% exact… of juniors are more likely to adopt new tools than the seniors."* Seniors *"are getting more quality and better productivity out of the ones they're using, but they're less likely to try different ways of working."* The figure's base and method are not given, and its wording is unclear as spoken. The pattern separates trying a new tool from the depth of use, the distinction the section above draws between the extensive and intensive margins. [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani]] reports from usage data that people aged 35 to 55 resist AI most. Mansour also has Atlassian's data scientists testing whether remote staff *"are more likely to get more outcomes out of AI than those that are colocated,"* because they write and share more digitally; no result is reported.

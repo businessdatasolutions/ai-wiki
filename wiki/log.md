@@ -10,6 +10,59 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-11-23] ingest | Nine YouTube videos: coding agents in production (Google Cloud Tech) and persistent agents (Chase), industrial agents on Omniverse (Falkor), Foxconn and Morgan Stanley on AI infrastructure and China's physical AI, Chinese open-weight models (Odd Lots), AI and jobs (DW News, Harvard IOP), PM craft at Atlassian (9 sources, 50 stills)
+
+The user sent nine YouTube links and asked for an ingest with stills, then a commit and push. None was in the wiki (checked by video ID). Before starting, the 2026-11-22 synthesis, filed and logged but never committed, was committed on its own so its index and log hunks stay apart from this batch.
+
+**Acquire.**
+- **Transcripts.** `youtube-transcript-skill`, transcript-panel route for all nine. Every file passed the gates: last segment within 34 s of the end, no doubles, no gap over 3 min, no label leakage, chapter offsets non-zero. Google Cloud Tech and Odd Lots carry human-written tracks (the panel text matches yt-dlp's track word for word); the other seven are ASR. Harvard's forum also has a live-stenographer track (`und`) on the same clock, which opens with a welcome the ASR skips; it was used only to check names.
+- **Name fixes in the raw transcripts**, each confirmed by a lower-third, slide or the description and listed in the file's `notes:`: Foxconn, Hon Hai, Young Liu, Terry Gou (CNBC); Falkor, Kongsberg and the speakers (NVIDIA); LangSmith (25+ mishearings) and Managed Deep Agents (Chase); Sherif, Atlassian, Jira (Lenny's); DeepSeek and *"GPU's"* (Odd Lots); Raimondo, Holcomb, Raise US (Harvard); Robin Xing (Morgan Stanley); two DW interviewees.
+- **Stills.** `extract_stills.py` returned Gemini HTTP 402 again, so all nine were hand-picked per §Video stills *Without Gemini*. One scratchpad script did the Find step for every video. It took a 360p frame grid (2 s for the three edited news videos, 5–20 s for talks and podcasts) and merged consecutive repeats (160×90 MAD < 1.5). A short-shot pass added one tile for every scene-detected shot under 10 s that the grid missed. The tiles became time-labelled 6×8 contact sheets, made with Pillow because Homebrew's ffmpeg has no `drawtext`. The agents viewed every sheet, cut 110 candidates from the ≤1080p stream, read each PNG and published 50.
+
+**Sources, newest first.**
+- [[2026-11-23-google-cloud-tech-why-agent-demos-break-in-production|Google Cloud Tech's four-layer blueprint]] (Learn, Guard, Review, Score: *"from prompt engineering to loop engineering"*; 10 stills of 33).
+- [[2026-11-23-wang-xing-morgan-stanley-china-physical-ai|Morgan Stanley on China's physical AI]] (~$12T of "Industry 5.0" investment over ten years; no stills).
+- [[2026-11-22-mansour-lennys-podcast-everyone-becoming-a-builder|Mansour (Atlassian) on Lenny's Podcast]] (builder squads reverted within a month: *"Direction is our problem"*; 2 stills).
+- [[2026-11-21-dw-news-which-jobs-are-still-safe-from-ai|DW News on which jobs are safe]] (3 stills of 9).
+- [[2026-11-20-chase-langchain-future-of-agents|Chase on persistent agents]] (the harness is *"about half"*, the rest is an agent runtime; 15 stills of 25).
+- [[2026-11-20-liu-cnbc-managing-asia-foxconn-beyond-iphone|Foxconn's Young Liu on CNBC]] (AI infrastructure *"more than 60 to 65%"* of revenue in three to five years; *"I don't see over capacity"*; 6 stills of 10, all Tech Day booth displays).
+- [[2026-11-20-saedi-odd-lots-chinese-open-weight-models|Saedi (Minerva) on Odd Lots]] (frontier models to build, open weights for repeatable tasks, *"cost per completed task"*; no stills).
+- [[2026-11-19-falkor-nvidia-omniverse-ai-agents-industrial-operations|Falkor on NVIDIA's Omniverse stream]] (agents on P&IDs, CAD and point clouds with a plant graph as source of truth; 14 stills of 28).
+- [[2026-11-19-raimondo-holcomb-harvard-iop-managing-unemployment-ai-economy|Raimondo and Holcomb at Harvard's IOP]] (Raise US; *"serious upticks"* in unemployment within two years; no stills).
+
+**No stills, and why.** Morgan Stanley is audio over one title card for the whole 12:05: 363 grid frames merged into one tile, and a 0.5 s pass found no other frame. Odd Lots is a three-camera studio with no on-screen figures. Harvard's forum is stage footage with no slides. Each has a manifest recording what was reviewed.
+
+**Pre-flight findings.**
+- **Chase:** the description promises *"a conversation"*. It is a solo slide talk with audience questions he reads out, and the first 1:55 is a LangSmith promo.
+- **Odd Lots:** the description's news hook, a reported US rule requiring companies to disclose their use of Chinese models, is never discussed. A host says the episode was recorded on 3 Nov.
+- **Google Cloud Tech:** "Logan" is Logan Hennessy, not [[Logan Kilpatrick]], and the description misspells Aron Eidelman and YK Sugi. [[YK Sugi]]'s lower-third reads Google Cloud, while his page had Daft from a July source; both are now recorded, with dates.
+- **Dates:** Morgan Stanley's card dates the episode 20 Nov (YouTube 23 Nov), and NVIDIA's title slide 18 Nov (YouTube 19 Nov). Harvard's stream was probably held the evening of 18 Nov. Filenames follow YouTube's publish date per the schema.
+- **Astra:** Saedi's *"Astra 6.2"* matches *gpt-6.2-astra* on Falkor's workbench slide, so the Odd Lots page reads it as OpenAI's GPT-6 Astra, marked as an inference.
+- **Privacy:** a CLI frame in the Google video showing a staff e-mail and GCP project ID was not published.
+- **Unsettled figures,** flagged on their pages: Morgan Stanley's margin target (*"5% to 80%"*, probably 8%), Foxconn's token-factory power goal, Holcomb's *"800 billion every year"*, Lenny's 38% junior-adoption figure, and the unlabelled Robin dashboard on Chase's slides.
+
+**Edges.**
+- **`depends-on`:** Chase to his four earlier sources, and Google Cloud Tech to the [[2026-10-20-pettit-eidelman-galloway-google-cloud-security-review-with-agents|Pettit–Eidelman–Galloway livestream]] (same speaker), per the follow-ups rule.
+- **`contradicts`,** all from the Mansour page, with neutral `via:` text: Roslansky (LinkedIn's builder role), Schoening, Masad, Singhal, and this batch's DW report on entry-level hiring (confidence 0.5).
+- **`supports`:** everything else.
+- **In-batch edges:** DW and Harvard support each other; Chase and Falkor point to Google Cloud Tech; Falkor points to Chase; Mansour points to DW.
+
+**New entities.** [[CNBC International]] (author-promotion: its second source as `author:`), [[Christine Tan]] (host of both *Managing Asia* episodes), [[Aron Eidelman]] (second appearance), [[Atlassian]] (named in three sources), [[Morgan Stanley]] and [[David Deming]]. Aliases added: "Odd Lots" on [[Bloomberg Podcasts]], "NVIDIA Omniverse" on [[NVIDIA]].
+
+**Bookkeeping.**
+- **Drafting.** Nine parallel agents drafted one source page each. The orchestrator ran the nine qmd neighbour queries first and stopped the daemon; the agents ran only greps.
+- **Proposals.** These used explicit `=== PAGE ===` / `=== END ===` delimiters, which fixed the 2026-11-16 bug of cutting proposals at the first `## `; all 59 target bundles arrived complete.
+- **Merge.** Three agents on disjoint page sets applied them: 29 concept pages and 16 entity pages edited, 6 entities created, back-links added on 8 older source pages.
+- **Confidence.** One step (+0.05) per page, not per source, on 16 concepts above 0.75, capped at 0.95. [[expert-generalist]] got no contradiction penalty: Mansour's claim conflicts with the page's builder-role reports, not with its core claim of depth plus breadth, and the Debates bullet says so.
+- **Recounts.** `source_count` was recounted with `lint-source-count.mjs` on 47 pages (30 concepts, 17 entities), including pages the new sources only link. All 283 now match; index completeness and dangling authors show 0.
+- **Lint.** Every touched page passes `lint-page.mjs` except older warnings on four pages that were only back-linked.
+- **Quality scores:** unchanged.
+
+**Candidates not acted on.**
+- A `physical-ai` concept page: the term now appears in about seven sources (MGI, AI100, Carrier, Gao/Mecka, Wooldridge, Falkor, Morgan Stanley), and MGI's page already lists it as a candidate.
+- An entity page for Harvey (8+ sources).
+- Still dangling: Sherif Mansour, Young Liu, Gina Raimondo, Eric Holcomb, Joe Weisenthal, Tracy Alloway, Daniel Saedi, Minerva, Falkor, Kongsberg, Laura Wang, Robin Xing.
+
 ## [2026-11-22] synthesize | Dynamic capabilities (Warner & Wäger) and the Frontier Firm
 
 The user asked for a synthesis between Warner & Wäger's capabilities model and the Frontier Firm. It was run as an iterative wiki query (research log: `inspiration/2026-11-22-dynamic-capabilities-frontier-firm-research-log.md`). Level 1 used grep and qmd instead of reading `index.md`, which at 882 KB no longer fits in one read. The thread [[threads/dynamic-capabilities-and-the-frontier-firm]] was opened and closed in the same session, and the synthesis [[syntheses/dynamic-capabilities-and-the-frontier-firm]] filed (14 sources; confidence 0.70; quality 1.00).

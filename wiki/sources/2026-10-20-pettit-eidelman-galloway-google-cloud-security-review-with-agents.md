@@ -92,7 +92,7 @@ The full livestream (1:02:10, `length_seconds: 3730`) from captions that read as
 - [[concepts/attack-surface-management|attack-surface-management]], [[concepts/agent-harness|agent-harness]], [[concepts/ai-generated-code-quality|ai-generated-code-quality]] — updated in this ingest.
 - [[concepts/dynamic-capabilities|dynamic-capabilities]] — the three cells tagged above.
 
-**Dangling** (single-source mention, deferred): Mollie Pettit, Aron Eidelman, Nick Galloway, Mantis, CodeMender.
+**Dangling** (single-source mention, deferred): Mollie Pettit, Nick Galloway, Mantis, CodeMender. [[Aron Eidelman]] was promoted on 2026-11-23, on his second appearance ([[2026-11-23-google-cloud-tech-why-agent-demos-break-in-production]]).
 
 ## Scope and reliability
 

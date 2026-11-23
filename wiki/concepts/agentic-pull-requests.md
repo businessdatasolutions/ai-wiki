@@ -2,10 +2,10 @@
 type: concept
 title: Agentic pull requests
 aliases: ["agentic pull requests", "agentic PRs", "agent-authored PRs", "Agentic-PR", "auto-merge", "AI code review"]
-confidence: 0.90
-last_confirmed: "2026-11-16"
-source_count: 19
-accessed_at: "2026-11-16"
+confidence: 0.95
+last_confirmed: "2026-11-23"
+source_count: 20
+accessed_at: "2026-11-23"
 tags: [agentic-pr, aidev, auto-merge, code-review, rejection-rate, risk-scoring, msr-2026, merge-queue, review-bottleneck, technical-debt]
 relationships:
   - type: part-of
@@ -131,3 +131,13 @@ His slide also breaks down the first month, which the Investor Day deck did not:
 ## Self-merging agents, and review moved into the codebase (added 2026-11-16)
 
 On [[2026-11-14-tan-ugarte-yc-lightcone-rise-of-ai-coworkers|YC's Lightcone (Nov 2026)]] a host puts Lauren Tan at over 4,000 PRs a month, up from about 2,000 at an earlier talk. She says *"I essentially have my agents merge their own pull requests"*: the time *"you would otherwise have to spend on human code review is encoded into your codebase and your static analysis and your tooling,"* with human review kept for infrastructure, databases and deployment. In the same episode [[Garry Tan]] puts a cost on agent review: GStack's ship skill uses tens of millions of tokens a run, and his agent, citing held-out evals on 30 bug types, will not go below 30 million. Self-reported; no revert, defect or false-approve figures.
+
+## Slicing a PR too big to read (added 2026-11-23)
+
+In [[2026-11-23-google-cloud-tech-why-agent-demos-break-in-production|Google Cloud Tech's four-layer video (Nov 2026)]], [[YK Sugi]] (Google Cloud) starts with the PR's size: *"Could it be 10 PRs with 20,000 lines of code each?"* Keeping PRs small *"is still the best practice."* When that is not realistic, *"code review [is] like eating a watermelon… with a large PR, the best you can do is slice it in a few different ways"*:
+
+- a one-shot bot review on every open PR (Gemini Code Assist on screen), which he calls *"often not sufficient by themselves"*;
+- interactive review, asking an agent for a one-sentence summary of each file;
+- multimodal review: an architecture visualizer and video from his `repo-walkthrough` skill, automated visual QA by Gemini critics that watch screen recordings at several sizes, and an audio summary.
+
+The example on screen is his own merged PR, 24 files and 11,150 lines. Upstream, Hennessy's review layer has an independent reviewer agent in a fresh context window check the diff *"instead of the coding agent grading its own homework."*

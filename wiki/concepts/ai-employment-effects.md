@@ -3,8 +3,8 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-11-22"
-source_count: 119
+last_confirmed: "2026-11-23"
+source_count: 122
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -12,7 +12,7 @@ relationships:
   - type: caused
     target: ai-deskilling
     via: "task-composition shift is one mechanism within broader employment effects"
-accessed_at: "2026-11-22"
+accessed_at: "2026-11-23"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -572,6 +572,7 @@ Brown adds one further figure worth holding: **81% of surveyed employers say the
 ## Debates and supersession
 
 - **Two practitioner counter-examples to the entry-level-decline pattern, same month.** [[2026-07-19-why-netflix-is-betting-on-systems-thinkers-not-specialists-in-the-ai-era|Stone/Netflix]]'s continued intern/new-grad hiring and [[2026-07-09-nyc-executive-forum-2026-a-leaders-guide-to-agentic-ai|Vachhrajani/AWS's]] secondhand Matt Garman quote both run counter to [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson et al.'s]] ADP-data finding of ~13% relative early-career employment decline in AI-exposed occupations. Both counter-examples are single-firm, self-reported, and anecdotal against a large-N payroll-data study — not a refutation — but they are a live open question worth re-testing: are large incumbents with strong balance sheets (Netflix, Amazon) able to buck the aggregate pattern by deliberate policy, while the aggregate decline is concentrated elsewhere (smaller firms, more AI-exposed occupations specifically)? No supersession; the ADP-data pattern remains the wiki's strongest empirical anchor on this question.
+- **A third incumbent counter-example (added 2026-11-23).** [[2026-11-22-mansour-lennys-podcast-everyone-becoming-a-builder|Mansour (Atlassian)]] says Atlassian hires more juniors than seniors, as a deliberate policy for changing how an established workforce works. In the same week, [[2026-11-21-dw-news-which-jobs-are-still-safe-from-ai|DW News]] reports the number of US entry-level jobs shrinking, *"possibly as a result of AI,"* and fewer entry-level positions at large consulting firms. Recorded as a `contradicts` edge between the two source pages. Like the two above, Mansour's is a single firm's self-report without headcounts; it does not change the weight of the payroll evidence.
 - **Attribution skepticism vs. a predictive over-automation model — same BBC series, different questions.** [[2026-06-22-bbc-what-if-were-wrong-about-ai-layoffs|Edwards's June episode]] argues *present-day* layoffs are over-attributed to AI (a narrative/measurement problem — [[ai-washing]]); [[2026-07-20-bbc-researchers-studied-ai-layoffs-heres-their-warning|Tsoukalas's July episode]] models a *future* scenario where AI-driven layoffs become real and severe regardless of attribution accuracy. These are not in direct tension — one is about measuring what's happening now, the other about predicting what competitive dynamics could still produce — but a reader encountering both should not conflate "current layoffs are over-attributed to AI" with "AI-driven layoffs won't become a real problem." The two claims operate on different time horizons and answer different questions.
 - **The "equalizing effect" vs. employment displacement.** As above — both can be true simultaneously, but the popular reading of "AI helps low-skill workers most" has been over-extended to imply pro-employment outcomes. The Brynjolfsson 2025 paper sharpens that.
 - **Are these declines really AI?** [[2026-04-28-brynjolfsson-canaries-coal-mine|Brynjolfsson et al.]] are explicit that other factors may be in play. They've ruled out: COVID-era effects, tech-sector contraction, remote-work / outsourcing pressure, firm-level shocks, and education declines from COVID school closures. But they cannot rule out all confounds. Treat as **strong correlational evidence**, not definitive causal proof.
@@ -780,3 +781,32 @@ The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] sets the stud
 - **Adoption is unequal:** women are 22% less likely to use generative AI.
 
 Its reading is *"meaningful bottlenecks to job loss"*, and *"jobs do not disappear with productivity gains."* It adds a political effect: narratives of AI replacing jobs reduce people's willingness to engage politically (Granulo et al. 2026). In [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's seminar]], Wooldridge, *"speaking personally, not as the report,"* finds mass white-collar displacement *"rather doubtful."* The report bears on the [[ai-employment-effects-measurement-dispute]] thread: it is one more source that holds the cohort effect and the aggregate null together without calling them a contradiction.
+
+## A policy coalition's forecast and its pilots (added 2026-11-23)
+
+[[2026-11-19-raimondo-holcomb-harvard-iop-managing-unemployment-ai-economy|Raimondo and Holcomb at Harvard's Institute of Politics (Nov 2026)]] are the co-chairs of Raise US, a non-partisan nonprofit launched in June 2026 to get the US *"through a transition to an AI economy without a period of sky-high destabilizing unemployment."* It reports three-quarters of a billion dollars raised and about 30 companies in its coalition, and works through governors and large employers because Raimondo has *"almost no confidence that the federal government will do anything until there's a massive crisis."*
+
+- **The rate and what it leaves out.** The moderator, [[David Deming]], puts US unemployment at **4.1%** and new college graduates at **5.2%**, *"historically low."* Raimondo replies that adding part-time workers who want full-time work *"doubles the numbers"*, and that for people in their twenties, counting graduates in jobs that do not need a degree, *"you are easily into double-digit unemployment or underemployment."* Neither side names a series or date.
+- **A forecast.** Most companies are *"in like the first inning"* of implementing AI; *"I would be very surprised if two years from now we aren't seeing some pretty serious upticks in unemployment because by then they'll be like really rewiring their systems."*
+- **An employer's arithmetic.** Large employers tell Raise US that once AI is integrated, *"these thousand jobs might go to a 100."* Its asks: retrain staff *"paid full-time"* for half their time, redeploy them inside the firm, and *"consider slowing the rate of firing to provide time for the economy to absorb this."* The worry is timing: *"jobs going away before the new ones get created."* Raimondo adds that incentives will be needed, which is the mechanism [[2026-06-03-falk-tsoukalas-the-ai-layoff-trap|Falk and Tsoukalas]] model.
+- **Pilots.** A paid year of service in health care, behavioural health and teaching (Maryland, then Colorado), for entry-level workers who cannot get hired without experience; Intermountain's hospital billing staff, *"mostly non-college-educated women,"* retrained for clinical roles before revenue-cycle work goes to agents (Utah); outcome-based funding of higher education (Indiana). Also named among the things Raise US funds or pushes: apprenticeships and wage insurance; and, as a policy the pilots should test, a payroll-tax break for hiring young workers.
+
+These are a five-month-old organisation's own accounts, with no outcomes yet. Confidence unchanged.
+
+## Which apprenticeships stay, and an employer who will train fewer office apprentices (added 2026-11-23)
+
+[[2026-11-21-dw-news-which-jobs-are-still-safe-from-ai|DW News (Nov 2026)]] puts the question to three apprentices in Germany: an information electronics technician, a nursing student and an office administration apprentice. An AI expert, Laura Tönnsen (ARIC Institute), gives the report's test: *"If you have jobs that involve essentially the same tasks over and over again, they're naturally more at risk than if you have a very varied workflow."* The trade and nursing are presented as safe for now; the office apprenticeship is not.
+
+- **An employer's own decision.** The managing director of the electrical firm that employs both the trade apprentice and the office apprentice: *"If other companies pull ahead of us and let's say make greater use of AI, then we have a problem here. And that's why I think we won't need as many workers as we did before, at least in the office… We won't be doing much training in that format anymore."* This is the entry-level mechanism on this page stated by a small German employer about a vocational apprenticeship, not a graduate role. It bears on the institutional claim in [[2026-10-01-dw-news-estonia-young-people-entry-level-jobs|DW's Estonia report]], which credits dual apprenticeship systems with Germany's low youth unemployment.
+- **Consulting juniors.** Tönnsen: *"we've also heard reports that this is leading to fewer entry-level positions,"* naming junior research and presentation work at large consulting firms, the work [[2026-09-10-sundararajan-wef-radio-davos-thrive-in-age-of-ai|Sundararajan]] places in the fragmenting apprenticeship bargain.
+- **Two levels again.** Tönnsen: earlier studies suggest new jobs will *"balance things out somewhat. So, we'll only notice minor effects there. But I do believe that in the coming years, we really won't have certain job titles anymore."* She names no study. The report's US sentence (*"the number of jobs for entry-level workers is shrinking, possibly as a result of AI"*) is also unsourced.
+- **Care work and ageing.** Nursing is called *"even more secure"* because *"demand is growing worldwide as populations age,"* and applications for nursing training have risen, including from young men (no figures). This matches [[2026-10-07-richardson-reuters-econ-world-ai-at-work|Richardson's]] reading of ageing as the larger force, in a German setting.
+
+The report closes on retraining office workers for *"AI proof jobs"* and governments *"still waiting to see,"* the policy gap that [[2026-11-19-raimondo-holcomb-harvard-iop-managing-unemployment-ai-economy|Raimondo and Holcomb]] discuss from the US side (previous section). Confidence unchanged: a news report with six interviews and no measurement.
+
+## PM openings, and an incumbent hiring more juniors (added 2026-11-23)
+
+[[2026-11-22-mansour-lennys-podcast-everyone-becoming-a-builder|Lenny's Podcast with Sherif Mansour (Atlassian), Nov 2026]] carries two kinds of claim.
+
+- **The host's job-market figures**, previewed from his forthcoming report (*"State of the tech job market: late 2026"*): PMs *"seem to be benefiting most in the AI era. We are seeing the most open PM roles of any role."* Engineering openings are slowing, design is *"very flat,"* and user research has about 108 open roles *"globally at tech companies right now."* Remote work has *"plateaued"* at 10–20% across industries. No method is given in the episode. [[2026-05-07-singhal-stanford-cs153-product-management-in-ai-era|Singhal]] also reports open PM roles at a record.
+- **A junior-hiring policy.** Mansour calls *"you don't need to hire juniors anymore"* the misconception he debunks most often with established organisations. Atlassian has *"definitely overindexed on hiring more juniors than seniors,"* because its problem is an established workforce that has to learn new ways of working, and juniors who *"didn't grow up… knowing anything else"* bring them. Seniors stay necessary to spot AI slop. No headcounts are given. The wiki's [[2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering|Everitt talk]] names [[Atlassian]] among firms with large layoffs in May 2026; the episode does not discuss headcount. The contrast with DW's report of shrinking entry-level jobs is recorded in *Debates and supersession*.

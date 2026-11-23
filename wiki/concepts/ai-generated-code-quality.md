@@ -2,10 +2,10 @@
 type: concept
 title: AI-generated code quality and security
 aliases: ["AI-generated code quality", "AI code security", "slopsquatting", "package hallucination", "AI technical debt", "AI-introduced defects"]
-confidence: 0.90
-last_confirmed: "2026-11-22"
-source_count: 8
-accessed_at: "2026-11-22"
+confidence: 0.95
+last_confirmed: "2026-11-23"
+source_count: 9
+accessed_at: "2026-11-23"
 tags: [code-quality, security, owasp, slopsquatting, package-hallucination, technical-debt, code-smells, supply-chain, static-analysis, flat-scaling]
 relationships:
   - type: part-of
@@ -116,3 +116,7 @@ This is the organisational counterpart to [[2026-02-12-gloaguen-evaluating-agent
 ## AI100 on code nobody has scrutinised (added 2026-11-22)
 
 The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] states the concern at the level of the whole software stock: *"the next generation of software that we rely on every day will have never been subject to proper human scrutiny"* (SQ9). It adds that *"naively putting AI-generated code directly into production systems, without (time-consuming) verification, will lead to problems"* (SQ10), and that agent-driven development needs security checks of its own. Its scale figure is that 2025 industry surveys put AI-assisted or AI-generated code at 40–46% of professional output among users of the tools.
+
+## Gates an agent cannot edit, and slopsquatting stopped at the lock file (added 2026-11-23)
+
+[[2026-11-23-google-cloud-tech-why-agent-demos-break-in-production|Google Cloud Tech's four-layer video (Nov 2026)]] has Aron Eidelman restate, as one layer of a blueprint, the workflow he showed in [[2026-10-20-pettit-eidelman-galloway-google-cloud-security-review-with-agents|the October livestream]]. *"A prompt is just advice."* His deterministic checks: compilers, type checkers, tests with fixed inputs, lint rules, secret scanners, *"source component analysis"* and rule-based security tests, which are *"less expensive than using tokens"* and point to the exact file and line. Security is *"a part of quality"*: an agent that *"ignores helper functions you already have"* does harm without a vulnerability. On every commit he runs secret scanning and static analysis (*"SQL queries with string concatenation or unvalidated user input"*), and pins and scans new packages in lock files, which *"stops slopsquatting"*. The mechanism is measured in [[2025-06-12-spracklen-package-hallucinations-code-generating-llms|Spracklen et al.]]. A worked failure on screen: rule `tenant-filter-required` in `api/invoices.py` at line 87, failing `assert status == 403`, sent *"straight back to the agent"*, with three retries before a human takes over. The agent must never be able to edit gate configurations or hook scripts.

@@ -5,9 +5,9 @@ aliases: ["Anthropic", "Anthropic PBC", "Claude"]
 tags: [anthropic, ai-lab, foundation-models, claude, public-benefit-corporation, long-term-benefit-trust]
 since: 2021
 confidence: 0.95
-last_confirmed: "2026-11-22"
-accessed_at: "2026-11-22"
-source_count: 96
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 99
 ---
 
 # Anthropic
@@ -143,3 +143,15 @@ The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] returns to An
 - **Interpretability work** rating about 70% of extracted features interpretable.
 - **Watermarking** announced in August 2026 in response to EU transparency rules.
 - **An imminent IPO**, with Anthropic *"eyeing a market valuation of over $2 trillion."*
+
+## Claude in an industrial multi-agent run (added 2026-11-23)
+
+In [[2026-11-19-falkor-nvidia-omniverse-ai-agents-industrial-operations|Falkor's agent traces (NVIDIA Omniverse livestream, Nov 2026)]], three of the four agents run in Claude: the run coordinator on *"opus-5-5"*, the result validator on *"sonnet-5-5"*, and the memory manager. The task runner runs in Codex. NVIDIA's Ganesh Sivaraman credits the work to *"Astra and Opus 5.5."* The model names are from the workbench screen, not from Anthropic.
+
+## In the Raise US coalition (added 2026-11-23)
+
+At [[2026-11-19-raimondo-holcomb-harvard-iop-managing-unemployment-ai-economy|Harvard's Institute of Politics (Nov 2026)]], a student moderator names Anthropic as one of the AI companies in the coalition of Raise US, the workforce-transition nonprofit chaired by Gina Raimondo and Eric Holcomb, and asks whether Dario Amodei acts from altruism. Raimondo: *"you'd have to ask him"*; AI firms *"understand it's bad for their business if they don't figure out some solutions to the potential harms of AI,"* and *"I would think they're funding us so we can help find some solutions."* She criticises naming AI's harms *"without offering any solutions,"* which she says has created *"mass panic."* The moderator cites Amodei's prediction that half of entry-level white-collar jobs could go by 2027 or 2028, and a student, *"ahead of tomorrow's IPO,"* attributes to Anthropic a *"$40 trillion"* market opportunity, *"the aggregate of all knowledge work"*; the figure is not checked against the prospectus.
+
+## Rented for building, priced against open weights (added 2026-11-23)
+
+In [[2026-11-20-saedi-odd-lots-chinese-open-weight-models|Saedi's Odd Lots interview (Nov 2026)]], Minerva builds its product with Claude (*"cloud"* in the captions) and moves repeatable tasks to fine-tuned open weights. Saedi puts an abliterated DeepSeek model at about a hundredth of the price of Fable (*"about ten [times] cheaper than Sonnet, which is about ten [times] cheaper than Fable"*) and below Claude Mythos in capability. He accepts that the labs do not train on corporate client data, but says a rented model *"doesn't get any better based on your use case."* A host speaks of companies paying *"an Ant[hropic] tax or an OpenAI tax."*

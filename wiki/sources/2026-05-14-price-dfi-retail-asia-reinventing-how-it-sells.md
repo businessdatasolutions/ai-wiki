@@ -113,11 +113,11 @@ The interview is **not** chapter-segmented on YouTube; the wiki preserves the na
 - **[[concepts/agentic-web|agentic-web]]** — *(added 2026-09-19)* the seller-side disintermediation fear, alongside Cloudflare's measurement of retail losing 35–40% of human traffic in a year.
 - **[[concepts/dynamic-capabilities|dynamic-capabilities]]** — extended with DFI's portfolio-pruning cases as seizing-cluster narratives.
 - **Scott Price** — CEO, DFI Retail Group; 35 years in Asia retail; *"sunset of career"* legacy framing. **First wiki mention; deferred** per the second-source promotion rule.
-- **Christine Tan** — CNBC International anchor; *Managing Asia* / *Lessons from Leaders* presenter. First wiki mention; deferred.
-- **CNBC International** — publisher/channel. First wiki mention; deferred.
+- **[[Christine Tan]]** — CNBC International anchor; *Managing Asia* / *Lessons from Leaders* presenter. Promoted 2026-11-23 on her second source, [[2026-11-20-liu-cnbc-managing-asia-foxconn-beyond-iphone|the Foxconn interview]].
+- **[[CNBC International]]** — publisher/channel. Promoted 2026-11-23 on its second source as author.
 - **DFI Retail Group** — multi-segment Asian retail incumbent; HQ Hong Kong; portfolio of Wellcome / Market Place / 3hreesixty / 7-Eleven / Guardian / Mannings / IKEA-Asia / Maxim's / Yuu. First wiki mention; deferred.
 
-**Dangling** (single-source mentions, deferred per second-source promotion rule): Scott Price, Christine Tan, CNBC International, DFI Retail Group, Wellcome, Market Place, 3hreesixty, Guardian, Mannings, Maxim's, Yuu, IKEA-Asia, *Managing Asia*. **Promote on any second-source mention.** Most likely to recur: DFI Retail Group, Scott Price (any subsequent CNBC / FT / Bloomberg retail-CEO interview), agentic-commerce-as-disintermediation-thesis (any subsequent CEO-level public-record articulation).
+**Dangling** (single-source mentions, deferred per second-source promotion rule): Scott Price, DFI Retail Group, Wellcome, Market Place, 3hreesixty, Guardian, Mannings, Maxim's, Yuu, IKEA-Asia. ([[Christine Tan]], [[CNBC International]] and *Managing Asia*, now an alias of the CNBC page, were promoted on 2026-11-23.) **Promote on any second-source mention.** Most likely to recur: DFI Retail Group, Scott Price (any subsequent CNBC / FT / Bloomberg retail-CEO interview), agentic-commerce-as-disintermediation-thesis (any subsequent CEO-level public-record articulation).
 
 ## Open questions raised
 

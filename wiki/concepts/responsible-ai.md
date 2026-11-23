@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-11-22"
-accessed_at: "2026-11-22"
-source_count: 66
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 67
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -431,3 +431,7 @@ The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] documents the
 - **Two models of regulation compete:** regulating the technology, which is overtaken by technical change, and regulating uses through sector regulators, who lack AI expertise.
 
 It cites Rahwan's "society-in-the-loop" for value trade-offs that a human in the loop cannot settle. It calls the volatility of policy *"itself a governance problem."* Key Takeaway 9 asks for AI's direction to be treated *"as a collective choice rather than an inevitability."*
+
+## Public fear, data-centre moratoriums, and regulation as self-protection (added 2026-11-23)
+
+At [[2026-11-19-raimondo-holcomb-harvard-iop-managing-unemployment-ai-economy|Harvard's Institute of Politics (Nov 2026)]], Gina Raimondo says *"45 or more ballot initiatives which were a form of moratorium on data centers"* went to voters in the November 2026 elections, and *"all but one passed"*; AI *"played a big role in the election mostly because everybody's afraid."* At a meeting in Danville, Indiana, people feared for their jobs and their children's, for electricity bills, mental health and *"cyber hacks"*, while some valued what AI already did for them. Her conclusion: *"People are legitimately afraid. We cannot blow that off."* To Silicon Valley's case for no regulation: *"if you don't regulate and you become reckless you will have regulation and it will stifle innovation."* She also holds that AI companies naming harms *"without offering any solutions"* have created *"mass panic."* Eric Holcomb, against moratoriums: *"compute is power… if we say enough is enough… that's retreating,"* with local negotiation on water, noise and electricity instead. [[2026-11-14-mccarthy-cnn-meanwhile-in-asia-china-data-centers|CNN]] reports the same election from the ad spending, and [[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness|Ng]] calls the moratoriums *"silly."* The ballot count is spoken, without a source.

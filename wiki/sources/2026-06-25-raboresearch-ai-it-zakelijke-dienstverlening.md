@@ -123,6 +123,7 @@ The source is tagged against four [[concepts/warner-wager-process-model|W&W proc
 
 - **Concepts:** [[concepts/ai-employment-effects|AI employment effects]], [[concepts/automation-vs-augmentation|automation vs augmentation]], [[concepts/enterprise-ai-adoption|enterprise AI adoption]], [[concepts/micro-productivity-trap|micro-productivity trap]], [[concepts/generative-ai|generative AI]], [[concepts/ai-agents|AI agents]], [[concepts/responsible-ai|responsible AI]], [[concepts/warner-wager-process-model|Warner & Wäger process model]].
 - **Entity (incidental):** [[entities/Erik-Brynjolfsson|Brynjolfsson]] appears only as one row in the productivity table (Brynjolfsson, Li & Raymond 2024, customer service, +14%); the study's actual methodological anchor is **Gmyrek et al. (2025), ILO**.
+- **Entity (incidental):** [[Atlassian]] — its firm-level Atlassian Research 2025 study is the *"96% report no ROI"* row in the productivity table; entity page since 2026-11-23.
 - **Dangling** (single-source authors, deferred per the second-source promotion rule): Mark van Kampen (Sectormanager Tech, Media & Telecom), Reinder Koelewijn (Sectormanager Commercial Services), Jesse Groenewegen, Floris Jan Sander. **RaboResearch / Rabobank** and **CBS** and the **ILO / Gmyrek et al.** working paper are likewise single-source mentions, not yet promoted to entity pages.
 
 ## Source-to-source relationships

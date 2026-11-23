@@ -57,7 +57,7 @@ The full auto-generated (ASR) English caption track (287 segments, consistent wi
 
 - **`contextual/external-triggers`** — the interview is largely about external forces reshaping firms' and the country's AI options: lobbying against open weights, data-centre moratoriums (New York's year-long pause is named), the price-sensitivity of non-US markets driving DeepSeek adoption, and the resulting risk that American models lose global share. Ng treats these as the binding environmental constraints on competitiveness, not as background.
 - **`digital-seizing/balancing-digital-portfolios`** — "**preserve optionality**" is a portfolio prescription stated as such: because no one can forecast the top model six months out, deliberately spread usage across OpenAI, Claude, Gemini and open models rather than locking in. The one-third-to-one-fifth cost differential between open and closed intelligence is the allocation argument underneath it.
-- **`digital-transforming/improving-digital-maturity`** — the agent-ready-data argument is a maturity prescription with a concrete failure mode attached (credential prompts breaking automated access), and the Morgan Stanley "challenge labs" pattern — pairing business and technology leaders to find use cases, after firm-wide training and a CEO-set tone — is his named mechanism for getting past "no company ever gained competitive advantage just by buying a licence."
+- **`digital-transforming/improving-digital-maturity`** — the agent-ready-data argument is a maturity prescription with a concrete failure mode attached (credential prompts breaking automated access), and the [[Morgan Stanley]] "challenge labs" pattern — pairing business and technology leaders to find use cases, after firm-wide training and a CEO-set tone — is his named mechanism for getting past "no company ever gained competitive advantage just by buying a licence."
 
 ## Linked entities and concepts
 
@@ -74,7 +74,7 @@ The full auto-generated (ASR) English caption track (287 segments, consistent wi
 - [[concepts/ai-agents|ai-agents]] — OpenWorker and the agent-produces-finished-work framing.
 - [[concepts/dynamic-capabilities|dynamic-capabilities]] — the three cells tagged above.
 
-**Dangling** (single-source mention, deferred per [author-entity promotion](../../CLAUDE.md#author-entity-promotion)): **Washington Post Live** as a publishing channel (first appearance; promote on a second source), James Hohmann, Ted Pick, Morgan Stanley, DeepLearning.AI, OpenWorker, Thinking Machines.
+**Dangling** (single-source mention, deferred per [author-entity promotion](../../CLAUDE.md#author-entity-promotion)): **Washington Post Live** as a publishing channel (first appearance; promote on a second source), James Hohmann, Ted Pick, DeepLearning.AI, OpenWorker, Thinking Machines. (Morgan Stanley promoted to [[Morgan Stanley]] on 2026-11-23, on its second source.)
 
 ## Source quality note
 

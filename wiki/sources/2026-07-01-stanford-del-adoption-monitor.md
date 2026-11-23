@@ -145,7 +145,7 @@ The full page as served on 4 November 2026, and the full data of all four Flouri
 - [[Stanford Digital Economy Lab]] — publisher. Updated in this ingest.
 - [[enterprise-ai-adoption]], [[technology-adoption-theories]], [[micro-productivity-trap]] — concepts, updated in this ingest.
 
-**Dangling** (not in `author:`; deferred): Nicholas Bloom (featured affiliate, firm-survey co-author; also acknowledged in the Canaries paper), Alexander Bick, Adam Blandin, David Deming, Jonathan Hartley, Ivan Yotzov, Jose Maria Barrero, Gallup, Pew Research Center, Connacher Murphy.
+**Dangling** (not in `author:`; deferred): Nicholas Bloom (featured affiliate, firm-survey co-author; also acknowledged in the Canaries paper), Alexander Bick, Adam Blandin, Jonathan Hartley, Ivan Yotzov, Jose Maria Barrero, Gallup, Pew Research Center, Connacher Murphy. [[David Deming]], co-author of the Bick–Blandin–Deming survey, has an entity page since 2026-11-23.
 
 ## Scope and reliability
 

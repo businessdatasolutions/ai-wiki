@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-11-22"
-accessed_at: "2026-11-22"
-source_count: 212
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 215
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -1108,3 +1108,15 @@ Every figure is Microsoft's own, at its own customer event, and the slides limit
 - **A measurement pipeline** with impact timelines: input (2–4 weeks), throughput (1–3 months), output (3–6 months), outcome (6+ months). *"If input metrics are healthy but throughput metrics aren't moving in three to six months, we know we have a habit-formation problem, not a tooling problem."*
 
 Its people section, which it calls *"the most important"*, cites Microsoft's own Work Trend Index (May 2026): *"2x impact on AI effectiveness from organizational interventions than focus on individual mindset and skill,"* and a *"+17 pts lift in recognized AI value when managers actively model AI use."* No sample or question wording is given.
+
+## "The first inning" (added 2026-11-23)
+
+[[2026-11-19-raimondo-holcomb-harvard-iop-managing-unemployment-ai-economy|Gina Raimondo (Raise US, Nov 2026)]]: *"most companies really haven't implemented AI… they're in like the first inning."* She expects unemployment to rise within two years, *"because by then they'll be like really rewiring their systems."* An impression from her work with large employers, not a survey; it agrees in direction with the page's breadth-against-depth figures.
+
+## A supplier's four kinds of buyer (added 2026-11-23)
+
+[[2026-11-20-liu-cnbc-managing-asia-foxconn-beyond-iphone|Young Liu (Foxconn) on CNBC's Managing Asia, Nov 2026]] sorts demand for AI infrastructure into four buyers: model makers, cloud service providers, governments and enterprises. *"What you have seen the demand so far is only for the first two. The third and fourth one they all waiting or learning how to use AI in their government or in their companies."* He gives it as the reason he sees no overcapacity. [[2026-08-18-covello-gs-new-models-ai-investment-landscape|Jim Covello (Goldman Sachs, Aug 2026)]] describes the same gap from an investor's seat: *"enterprises collectively are not making or saving money on their AI implementations,"* and the economic value has so far gone to the semiconductor companies. Liu reads the enterprise and government demand as still to come; Covello treats enterprise returns as the condition the build-out depends on.
+
+## Agents added to existing workflows, and a canvas before features (added 2026-11-23)
+
+[[2026-11-22-mansour-lennys-podcast-everyone-becoming-a-builder|Sherif Mansour, Atlassian's head of AI, on Lenny's Podcast (Nov 2026)]] argues that for an established product *"the best way to reinvent your product to be AI native is to understand the flows that exist in your product and literally bolt on AI to them."* Customers have *"billions of business workflows"* modelled in Jira, many outside software, from formal Workflows to informal *"lowercase w workflows,"* and [[Atlassian]] added agents to Jira's columns and cards. Customers run *"nearly 10 million agents… in loops every month inside Jira and Confluence"*. The job, in his words, is to move customers *"from AI novice to AI native."* He also describes shipping a general chat and customer-built agents first, then productising what customers did with them (grouping whiteboard sticky notes into themes; AI triage), which he calls *"paving the cow path."* Inside Atlassian, **AI builder weeks** stop all crafts for a week to experiment with AI. The figures describe Atlassian's own products and are unaudited.

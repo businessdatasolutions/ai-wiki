@@ -3,9 +3,9 @@ type: concept
 aliases: ["agentic engineering", "Agentic Engineering", "agentic-engineering", "agent engineering"]
 tags: [agentic-engineering, vibe-coding, software-3.0, ai-agents, agent-harness, software-engineering, hiring, karpathy, codex-case-study]
 confidence: 0.95
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 87
+last_confirmed: "2026-11-23"
+accessed_at: "2026-11-23"
+source_count: 88
 relationships:
   - type: depends-on
     target: agent-harness
@@ -366,3 +366,9 @@ Two points bear on this page directly.
 
 - [[2026-11-14-tan-ugarte-yc-lightcone-rise-of-ai-coworkers|Lauren Tan (YC Lightcone, Nov 2026)]]: the smallest loop is teaching the agent to *"run the code empirically... run the application like a real user would,"* so it *"has the ability to check its own work."* That gives correct code, not necessarily good code; *"the new job of a software engineer"* is getting agents to write good code by default. Her "inverted pyramid" puts most effort into the codebase and static analysis, then rules and skills (`AGENTS.md`), then a little human review.
 - Roman Ugarte, same episode: with execution cheap, the expected failure is *"an intent specification failure or a goal failure."* On his team the bottleneck is roadmap alignment; someone in a planning discussion often says *"Oh, I have a PR for that,"* and user-facing changes ship only after *"internal product market fit."*
+
+## Skills, plugins, and the gate before the skill (added 2026-11-23)
+
+In [[2026-11-23-google-cloud-tech-why-agent-demos-break-in-production|Google Cloud Tech's four-layer video (Nov 2026)]], Remigiusz Samborski (Google Cloud) presents the Agent Skills specification, which he says was open-sourced in December 2025 and is supported across Claude Code, Codex, Antigravity *"and almost every major coding harness."* A skill is *"just a portable folder"* with a `SKILL.md` (metadata on when to use it, instructions on how) and optional scripts and references, loaded in three stages: discovery (name and description only), activation (the full `SKILL.md` when a prompt matches) and execution (extra files when a step needs them). One skill travels alone; a plugin, bundled through a `plugin.json` manifest, earns its keep *"when a complex domain needs multiple skills, live MCP servers, and routing rules working all together."* Google's Cloud Developer plugin offers *"over 150 Google Cloud skills."*
+
+Aron Eidelman (Google Cloud) sets an order between skills and gates: recurring failures from gate logs go into the repository's skill files, but *"if a new issue keeps popping up unchecked, write the deterministic gate first, then update your skill file second,"* because *"skills help the agent produce better code, but gates are what keep bad code from getting merged."*
