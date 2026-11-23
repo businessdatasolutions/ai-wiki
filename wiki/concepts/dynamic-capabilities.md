@@ -4,7 +4,7 @@ aliases: ["dynamic capabilities", "dynamic-capabilities", "Teece dynamic capabil
 tags: [dynamic-capabilities, teece, strategic-renewal, digital-transformation, microfoundations]
 confidence: 0.95
 last_confirmed: "2026-11-16"
-accessed_at: "2026-11-18"
+accessed_at: "2026-11-22"
 source_count: 103
 relationships:
   - type: supports
@@ -299,6 +299,7 @@ Rohrer reaches the **same structural conclusion with no AI premise**. Recording 
 
 ## Related concepts
 
+- [[syntheses/dynamic-capabilities-and-the-frontier-firm|dynamic-capabilities-and-the-frontier-firm]] — the Frontier Firm read as lock-in made routine, and as a move of inimitability from tacit to codified, protected knowledge.
 - [[enterprise-ai-adoption]] — AI adoption is a contemporary instantiation of digital transformation; the same sensing/seizing/transforming logic applies, with AI-specific subcapabilities.
 - [[generative-ai]] — extends the digital-transformation context; GenAI is a current sensing/seizing target for incumbents.
 - [[automation-vs-augmentation]] — a strategic-deployment choice that lives within seizing capabilities.

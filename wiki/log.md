@@ -10,6 +10,20 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-11-22] synthesize | Dynamic capabilities (Warner & Wäger) and the Frontier Firm
+
+The user asked for a synthesis between Warner & Wäger's capabilities model and the Frontier Firm. It was run as an iterative wiki query (research log: `inspiration/2026-11-22-dynamic-capabilities-frontier-firm-research-log.md`). Level 1 used grep and qmd instead of reading `index.md`, which at 882 KB no longer fits in one read. The thread [[threads/dynamic-capabilities-and-the-frontier-firm]] was opened and closed in the same session, and the synthesis [[syntheses/dynamic-capabilities-and-the-frontier-firm]] filed (14 sources; confidence 0.70; quality 1.00).
+
+**Headline.** The Frontier Firm is an AI-era operationalisation of W&W's transforming cluster: AI Transformation Offices, three recipes, a measurement pipeline. Its practices are mostly *lock-in* (Lakhani et al.'s term, which maps one to one onto Teece).
+
+**Coverage.** Across the nine Frontier Firm sources, the wiki's own tags never include scouting, scenario planning, portfolio balancing, ecosystems or collaborative approach, and include business-model renewal only twice. Read through W&W, the Frontier Firm renews the operating model, not the business model.
+
+**Two claims to test.**
+- The playbook moves inimitability from tacit knowledge to codified knowledge protected by architecture.
+- The Frontier Firm may specify the implementation leg where Cimino found dynamic capabilities weakest (acceptance β 0.523 vs implementation β 0.279).
+
+**Pointers.** Added on [[warner-wager-process-model]] and [[dynamic-capabilities]]. The open question on a strategy-theory cross-walk in [[syntheses/organizational-frameworks-for-ai-adoption]] is marked as partly taken up.
+
 ## [2026-11-22] ingest | Microsoft's Frontier Playbook, second edition (1 source)
 
 The user asked for the PDF linked from the Ignite session's description, the gap named in the previous entry.

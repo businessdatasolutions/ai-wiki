@@ -4,7 +4,7 @@ aliases: ["Warner-Wäger process model", "Warner & Wager process model", "W&W pr
 tags: [dynamic-capabilities, digital-transformation, microfoundations, warner-wager, wiki-vocabulary]
 confidence: 0.90
 last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
+accessed_at: "2026-11-22"
 source_count: 30
 relationships:
   - type: instance-of
@@ -191,6 +191,7 @@ This is also a modest datapoint for the *transformation-primitive* hypothesis in
 
 - [[dynamic-capabilities]] — the broader Teece framework that W&W specialise for digital transformation.
 - [[2026-04-28-warner-wager-dynamic-capabilities-digital-transformation]] — the source paper that supplies this vocabulary.
+- [[syntheses/dynamic-capabilities-and-the-frontier-firm|dynamic-capabilities-and-the-frontier-firm]] — the vocabulary applied to the Frontier Firm: the cells its sources fill (transforming, rapid prototyping) and the ones they leave empty (scouting, scenario planning, portfolios, ecosystems, collaborative approach).
 - [[enterprise-ai-adoption]] — current-instantiation lens; AI adoption sits inside `digital-seizing` (rapid prototyping, balancing portfolios) and `digital-transforming` (redesigning internal structures, improving digital maturity).
 
 ## Open questions
