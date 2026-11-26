@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-11-23"
-accessed_at: "2026-11-23"
-source_count: 215
+last_confirmed: "2026-11-26"
+accessed_at: "2026-11-26"
+source_count: 217
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -1120,3 +1120,28 @@ Its people section, which it calls *"the most important"*, cites Microsoft's own
 ## Agents added to existing workflows, and a canvas before features (added 2026-11-23)
 
 [[2026-11-22-mansour-lennys-podcast-everyone-becoming-a-builder|Sherif Mansour, Atlassian's head of AI, on Lenny's Podcast (Nov 2026)]] argues that for an established product *"the best way to reinvent your product to be AI native is to understand the flows that exist in your product and literally bolt on AI to them."* Customers have *"billions of business workflows"* modelled in Jira, many outside software, from formal Workflows to informal *"lowercase w workflows,"* and [[Atlassian]] added agents to Jira's columns and cards. Customers run *"nearly 10 million agents… in loops every month inside Jira and Confluence"*. The job, in his words, is to move customers *"from AI novice to AI native."* He also describes shipping a general chat and customer-built agents first, then productising what customers did with them (grouping whiteboard sticky notes into themes; AI triage), which he calls *"paving the cow path."* Inside Atlassian, **AI builder weeks** stop all crafts for a week to experiment with AI. The figures describe Atlassian's own products and are unaudited.
+
+## Three horizons, six levers, and a readiness gap (added 2026-11-26)
+
+Two talks give staged paths and a checklist.
+
+**McKinsey's three horizons.** In [[2026-11-24-price-mckinsey-talks-talent-employees-more-ready-for-ai|Price et al. on McKinsey Talks Talent (Nov 2026)]], McKinsey's Holly Price reports a survey made with a new *"AI readiness assessment"*. Sample and method are not given in the episode. It sorts organisations into **enablement** (46%: general-purpose tools, *"individual augmentation"*), **automation** (43%: existing workflows automated and improved) and **reinvention** (11%: *"a true clean sheet"*). The few that see real value do three things:
+- they pinpoint where AI creates value;
+- they redesign processes end to end;
+- they treat change management *"as mission-critical, not an afterthought"*.
+
+**Trust as the condition.** 70% of respondents say they are personally ready, against 27% of leaders who say their organisation is ready for *"an agentic future"*; the two figures answer different questions. Individual readiness, Price says, needs tools, role-specific know-how, leaders who role-model, and trust in the organisation. Leaders build that trust in four ways: with transparency, with a plan, with follow-through (*"don't talk about it, be about it"*) and by walking the halls.
+
+**McKinsey's markers of progress.** *"A clue that you are on your way to reinvention is… I would probably need two different executive sponsors."* And organisations with adoption leaderboards *"quietly pull back from some of those metrics that just focus on activity and don't focus on outcome."*
+
+**Westerman's six levers.** In [[2026-08-26-westerman-mit-enterprise-ai-forum-making-ai-real|Westerman at the MIT Enterprise AI Forum (Apr 2026)]], [[George Westerman]] turns his *"First Law of Digital Innovation"* (*"Technology changes quickly. Organizations change much more slowly"*) into six levers, each with one question:
+- **shared ambition**: how do you want to do business differently?
+- **governance**: how will you ensure value and safety?
+- **value capture**: how will you maximise value from each project?
+- **technology platform**: is your tech stack ready?
+- **culture**: will it help or resist?
+- **talent and careers**: how will AI affect your people?
+
+Leaders score each from −5 to +5. He replaces planning and execution with **directed emergence** (*"set a goal and learn your way towards that goal"*). His **AI growth slope** runs from individual productivity through specialized roles and tasks to products and processes. On scale-up he says *"every one out of 10, one out of 15 successful pilots actually make it to scale"* (no source given). On executive support: *"if you don't have it before you start, don't try."* HCA Healthcare is his worked case of governance as *"the steering"* rather than *"the brakes"*.
+
+The open [[ai-maturity-measurement-comparison|maturity-measurement thread]] sets the 46 / 43 / 11 distribution beside the other instruments.

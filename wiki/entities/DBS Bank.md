@@ -5,9 +5,9 @@ aliases: ["DBS", "DBS Bank", "DBS Group", "Development Bank of Singapore"]
 tags: [dbs, dbs-bank, singapore, banking, digital-transformation, gandalf, managing-through-journeys, innovation-at-scale, asian-bank]
 since: 1968
 confidence: 0.75
-last_confirmed: "2026-06-19"
-accessed_at: "2026-06-19"
-source_count: 1
+last_confirmed: "2026-11-26"
+accessed_at: "2026-11-26"
+source_count: 2
 relationships:
   - type: employs
     target: Bidyut-Dumra
@@ -39,6 +39,7 @@ The defining frame is **GANDALF** — DBS decided its real competition was big t
 ## Wiki sources featuring DBS Bank
 
 - [[2026-06-18-dumra-mit-smr-dbs-everyone-an-innovator]] — MIT SMR *Leaders at All Levels* Ep. 9; Bidyut Dumra on how DBS made innovation a company-wide KPI-backed system.
+- [[2026-08-26-westerman-mit-enterprise-ai-forum-making-ai-real]] — [[George Westerman]]'s MIT Enterprise AI Forum talk (Apr 2026) lists DBS first on a slide of the companies his AI-transformation research draws on. DBS is not discussed in the talk.
 
 ## Mentioned in
 

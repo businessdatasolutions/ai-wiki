@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-11-23"
-accessed_at: "2026-11-23"
-source_count: 67
+last_confirmed: "2026-11-26"
+accessed_at: "2026-11-26"
+source_count: 69
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -435,3 +435,11 @@ It cites Rahwan's "society-in-the-loop" for value trade-offs that a human in the
 ## Public fear, data-centre moratoriums, and regulation as self-protection (added 2026-11-23)
 
 At [[2026-11-19-raimondo-holcomb-harvard-iop-managing-unemployment-ai-economy|Harvard's Institute of Politics (Nov 2026)]], Gina Raimondo says *"45 or more ballot initiatives which were a form of moratorium on data centers"* went to voters in the November 2026 elections, and *"all but one passed"*; AI *"played a big role in the election mostly because everybody's afraid."* At a meeting in Danville, Indiana, people feared for their jobs and their children's, for electricity bills, mental health and *"cyber hacks"*, while some valued what AI already did for them. Her conclusion: *"People are legitimately afraid. We cannot blow that off."* To Silicon Valley's case for no regulation: *"if you don't regulate and you become reckless you will have regulation and it will stifle innovation."* She also holds that AI companies naming harms *"without offering any solutions"* have created *"mass panic."* Eric Holcomb, against moratoriums: *"compute is power… if we say enough is enough… that's retreating,"* with local negotiation on water, noise and electricity instead. [[2026-11-14-mccarthy-cnn-meanwhile-in-asia-china-data-centers|CNN]] reports the same election from the ad spending, and [[2026-07-29-ng-washington-post-china-open-source-ai-competitiveness|Ng]] calls the moratoriums *"silly."* The ballot count is spoken, without a source.
+
+## Governance as steering, and responsible AI as a trust signal (added 2026-11-26)
+
+- **Steering or brakes.** [[2026-08-26-westerman-mit-enterprise-ai-forum-making-ai-real|Westerman at the MIT Enterprise AI Forum (Apr 2026)]] asks of every AI governance process: *"Is your governance more the steering? Or is it more the brakes?"* His case is HCA Healthcare. An AI steering committee reviews every idea at the start, the pilot, the scale-up and after. Each time it asks whether the effort is worth doing, whether the affected units are participating, and whether the AI can be *"explainable, robust, unbiased"*. It comes back about every six months to ask whether models still hold and whether there are biases or drift. *"They kill things really fast but they can accelerate things a lot too."* The slide shows *HCA's Responsible AI Framework*: seven principles (safe and secure, private, transparent and explainable, fair and impartial, responsible, accountable, robust and reliable) inside seven enablers (reskilling and education, cultural norms, regulatory compliance, reusability, ethics, governance, MLOps). The case is said to be forthcoming in *MIS Quarterly Executive*.
+- **Responsible AI as something employees see.** In [[2026-11-24-price-mckinsey-talks-talent-employees-more-ready-for-ai|Price et al. on McKinsey Talks Talent (Nov 2026)]], Price says employees *"want to know that someone cares."* She names three practices:
+  - a diverse table, because *"it can't just be a legal and IT question"*: senior leaders, employee voices and HR as well;
+  - guardrails tied to *"mission, vision, and values"*, not *"performative commitments that you put on a page and never acknowledge again"*;
+  - a standing position: *"we reserve the right to get smarter."*

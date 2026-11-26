@@ -135,6 +135,12 @@ Three more are quoted often and are weak on method: [[2025-07-01-mit-nanda-genai
 
 **Reading.** The strict figures resemble each other because each sets a high bar, not because they share a yardstick. Where the bar is "value across the organisation", every instrument lands low; where it drops to "some return", every instrument lands high. The number moves with the bar. On the strict side, 2025 → 2026 movement is small: BCG 5% → 7.5%, McKinsey about 6% both years (2026 secondary), Cisco about 13% for three years. The middle moves more: BCG's scaling group went from 35% to 41%, and Dutch hospitals at average scale from 33% to 46%. Against that, S&P reports more abandonment.
 
+### Two staged models without method, November 2026 (added 2026-11-26)
+
+- **McKinsey's three horizons.** [[2026-11-24-price-mckinsey-talks-talent-employees-more-ready-for-ai|Price on McKinsey Talks Talent]] gives a distribution of organisations from McKinsey's new *"AI readiness assessment"*: **enablement 46%, automation 43%, reinvention 11%**. Enablement is tools for individuals, automation is existing workflows automated, and reinvention is a clean-sheet redesign. The same survey has **70%** of respondents across job levels rating themselves personally ready, against **27%** of leaders rating their organisation ready for *"an agentic future"*. The episode gives no sample, countries, field dates, or rule for placing an organisation in a horizon. The source article, *"From adoption to impact: Three horizons of AI transformation"* (*McKinsey Quarterly*), is not ingested. The 11% sits in the strict band of the table above (5–13%), but the bar it measures is unknown.
+- **Westerman's AI growth slope.** [[2026-08-26-westerman-mit-enterprise-ai-forum-making-ai-real|Westerman at the MIT Enterprise AI Forum]] gives three levels: individual productivity, specialized roles and tasks, products and processes (Webster and Westerman, MIT SMR, January 2025). It has **no distribution**. The talk's six-lever self-score (−5 to +5 per lever) is a teaching device, not an instrument.
+- **For the cross-walk.** Both are three-step ladders from individual tool use to process redesign, and they line up step for step (enablement ↔ individual productivity; automation ↔ specialized roles and tasks; reinvention ↔ products and processes). CISR's four stages split the first step in two (experiment, pilots). Only McKinsey's model comes with a share per step, and its method is not yet in the wiki.
+
 ## What's missing / candidate sources to find
 
 - ~~**Updated CISR Future Ready Survey wave**~~ Filled 2026-11-07 by [[2025-08-21-mit-cisr-grow-enterprise-ai-maturity]] (18% Stage 4, but a different and much smaller survey, N=152). The March 2026 follow-up is members-only.
@@ -145,6 +151,7 @@ Three more are quoted often and are weak on method: [[2025-07-01-mit-nanda-genai
 - **A direct MIT Sloan/CISR ↔ AI Index methodology cross-walk** — if anyone has published one. Not yet found.
 - **MITTRI_Cisco** (in `raw/reports/`, not yet ingested) is sponsored MIT Tech Review Insights research, likely to introduce a third framing. Will surface in the next ingest.
 - **A worker-level maturity instrument.** ~~Nothing in the corpus measures individual AI maturity with defined levels and transition criteria.~~ Partially filled 2026-08-31: [[syntheses/ai-worker-maturity-levels|the AI Worker Maturity synthesis]] supplies a corpus-derived six-level scale with markers and per-level actions. Still wanted: an externally **validated** instrument — capability frameworks from L&D/HR research, digital-literacy scales adapted to AI, or vendor "AI fluency" rubrics — to test the synthesis against.
+- **McKinsey, "From adoption to impact: Three horizons of AI transformation"** (*McKinsey Quarterly*, late 2026): the method behind the 46 / 43 / 11 split and the 70% / 27% readiness gap. Linked from the [[2026-11-24-price-mckinsey-talks-talent-employees-more-ready-for-ai|Talks Talent episode]]; not yet fetched.
 - **HBR Anand-Wu Gen AI Playbook** (in `raw/articles/`, not yet ingested). Authors are at NYU Stern / HBS — different academic lineage, may have a different framing.
 
 ## How this thread should resolve
@@ -171,3 +178,4 @@ Until then, this thread stays open as a reminder to **always include the instrum
 - [[MIT CISR]] — institutional source
 - [[McKinsey & Company]] — instrument source for AI Index adoption data
 - [[ai-in-health-care]] — the sector page for the hospital and health-system figures (added 2026-11-07)
+- [[2026-11-24-price-mckinsey-talks-talent-employees-more-ready-for-ai|Price / McKinsey Talks Talent]] and [[2026-08-26-westerman-mit-enterprise-ai-forum-making-ai-real|Westerman / MIT]] — two three-step ladders (added 2026-11-26)

@@ -5,9 +5,9 @@ aliases: ["MIT SMR", "MIT Sloan Management Review", "Sloan Review", "Sloan Manag
 tags: [mit-smr, mit, publisher, ai-research, big-ideas-research, organizational-learning]
 since: 1959
 confidence: 0.88
-last_confirmed: "2026-11-07"
-accessed_at: "2026-11-07"
-source_count: 7
+last_confirmed: "2026-11-26"
+accessed_at: "2026-11-26"
+source_count: 8
 relationships:
   - type: published-by
     target: 2026-04-28-mit-sloan-ai-maturity
@@ -76,3 +76,12 @@ SORT file.name ASC
 ## AI-maturity and health-care sources (added 2026-11-07)
 
 - [[2025-11-18-ransbotham-kiron-mit-smr-bcg-emerging-agentic-enterprise]] — publisher of the ninth MIT SMR–BCG report, *The Emerging Agentic Enterprise* (November 2025).
+
+## Westerman's frameworks, on a conference stage (added 2026-11-26)
+
+- [[2026-08-26-westerman-mit-enterprise-ai-forum-making-ai-real]] — not an MIT SMR source. [[George Westerman]]'s talk at the 2026 MIT Enterprise AI Forum (MIT Corporate Relations channel) builds on three MIT SMR articles he co-wrote:
+  - the **AI growth slope**, from Webster and Westerman, *"Generate Value from GenAI with Small 't' Transformations"* (January 2025), via the MIT SMR Generative AI Strategy Guide;
+  - the **AI-ready values**, adapted from Westerman, Soule and Eswaran, *"Building Digital-Ready Culture in Traditional Organizations"* (2019);
+  - *"The First Law of Digital Innovation"* (2019).
+
+  None of the three articles is ingested.

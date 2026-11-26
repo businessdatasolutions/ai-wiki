@@ -3,8 +3,8 @@ type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
-last_confirmed: "2026-11-22"
-source_count: 101
+last_confirmed: "2026-11-26"
+source_count: 103
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -12,7 +12,7 @@ relationships:
   - type: contradicts
     target: automation-vs-augmentation
     via: "process lock-in = automation without redesign; reinvent-the-business resists this trap"
-accessed_at: "2026-11-22"
+accessed_at: "2026-11-26"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -490,3 +490,9 @@ The trap describes individual time saved that never becomes firm-level output. T
 ## Gains that turn into queues (added 2026-11-22)
 
 [[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Microsoft's Frontier Playbook, second edition (Sept 2026)]] states the trap at the level of the workflow: *"Persona Acceleration can boost individual productivity, but without the right end-to-end process, those gains often evaporate—speeding up one step frequently just creates longer queues and larger work backlogs elsewhere."* And at the level of the licence: *"A tool licensed and rolled out to 100,000 employees does not change how the work gets done."* What changes it is *"the operating system around the tool."* It also warns against reporting the trap as success: *"It is easy to let narrow use-case statistics become the story of your transformation."*
+
+## Level 1 is not the destination (added 2026-11-26)
+
+Two staged models put individual productivity at the bottom of the path.
+- [[2026-08-26-westerman-mit-enterprise-ai-forum-making-ai-real|Westerman at the MIT Enterprise AI Forum (Apr 2026)]] calls it level 1 of the **AI growth slope**. Its job is to *"generate energy and ideas from the people"* and to learn how to work safely. It is not where the value is: *"You're not going to get any value from the technology unless you do business differently."* Level 3, products and processes, is still rare for generative AI on its own.
+- In [[2026-11-24-price-mckinsey-talks-talent-employees-more-ready-for-ai|Price et al. on McKinsey Talks Talent (Nov 2026)]], 46% of organisations are in the **enablement** horizon, *"more about individual augmentation"*, and 11% in reinvention. Price sees *"people use AI for the sake of using AI and it's not that great what the output is."* Organisations that ran adoption leaderboards are *"quietly"* dropping *"metrics that just focus on activity and don't focus on outcome."*

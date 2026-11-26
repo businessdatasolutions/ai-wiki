@@ -10,6 +10,52 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-11-26] ingest | Two YouTube videos on getting from AI adoption to value: McKinsey's three horizons and readiness gap (Talks Talent), Westerman's six levers (MIT Enterprise AI Forum) (2 sources, 13 stills)
+
+The user sent four YouTube links and asked for an ingest with stills, then a commit and push. A check by video ID found two already in the wiki, both with stills: `gleqEIsAvVg` is [[2026-11-20-liu-cnbc-managing-asia-foxconn-beyond-iphone|Foxconn on CNBC]] and `hRtmV1mCBSE` is [[2026-11-22-mansour-lennys-podcast-everyone-becoming-a-builder|Mansour on Lenny's Podcast]]. Both were ingested on 2026-11-23 and were skipped.
+
+**Acquire.**
+- **Transcripts.** `youtube-transcript-skill`, transcript-panel route, both ASR. Both pass the gates: last segment within 9 s of the end, no doubles. Playwright's Chromium was missing from `~/.cache/ms-playwright` again, and the script reinstalled it on its own.
+- **Name fixes** in the raw files, each listed in the file's `notes:`:
+  - McKinsey: McKinsey (5 mishearings), Rahilly, Weddle, Bryan, confirmed by the *"In conversation"* card and lower-thirds.
+  - Westerman: Westerman, MIT Sloan, Rio Tinto (5), Dentsu (6), Synthesia, Newport News Shipbuilding, ChatGPT, Moore's law, confirmed by the slides and description.
+  - *"Claude Core"* (an Anthropic nonprofit programme, per Price) is left as heard.
+- **Stills.** `extract_stills.py` returned Gemini HTTP 402 for both, so the stills were hand-picked per §Video stills *Without Gemini*. The scratchpad scripts did three passes:
+  - a 10-s grid at 360p with consecutive repeats merged, as labelled 5×6 contact sheets;
+  - a scene-cut pass for shots under 10 s that the grid missed;
+  - for the slide talk only, a 2-s pass that keeps slide-like frames (pillarboxed or mostly white) not already on a grid tile.
+
+  The 2-s and scene passes found three slides the grid missed. One is the fully built *Six Levers* (23:32, on screen a few seconds). Another is a Newport News slide shown full-screen for 0.9 s (33:27). Frames were cut by seeking the ≤1080p stream (720p for McKinsey), and every published still was read at full resolution.
+  - **Westerman:** 26 slides cut, 13 published.
+  - **McKinsey:** 8 cards cut, none published. The episode is a four-way call with title cards and no graphics.
+
+**Sources, newest first.**
+- [[2026-11-24-price-mckinsey-talks-talent-employees-more-ready-for-ai|Price et al. on McKinsey Talks Talent]]: three horizons (enablement 46%, automation 43%, reinvention 11%) and a readiness gap (70% personally ready, 27% of leaders say their organisation is). The Debates section notes that these answer different questions. Trust is the condition, and *"leaders do not care what I have to say about it"* worries employees more than job loss. No stills.
+- [[2026-08-26-westerman-mit-enterprise-ai-forum-making-ai-real|Westerman at the MIT Enterprise AI Forum]]: six levers with a question and a −5 to +5 self-score each; directed emergence; the AI growth slope; HCA Healthcare's stage-by-stage governance; Dentsu's bottom-up, middle-out and top-down tracks. 13 stills of 26.
+
+**Pre-flight findings.**
+- **Westerman's dates:** the title slide dates the talk 15 April 2026; YouTube's date is 26 August. The filename follows YouTube, per the schema.
+- **Westerman's titles:** the slides give him as Principal Research Scientist, the lower-third as Senior Lecturer.
+- **McKinsey's survey method** (sample, countries, dates, horizon assignment) is not given in the episode. The source article, *"From adoption to impact"*, is not ingested and is listed as wanted in the thread.
+- **Unsourced figures,** flagged on the page: Westerman's *"one out of 10, one out of 15"* pilots scaling, the HCA nurse handoff (50 → 12 minutes, *"95% better"* on unnamed measures) and a 7% sepsis mortality figure per hour.
+- **The Cresta trial** is unnamed. Its details match [[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|Brynjolfsson, Li and Raymond]], whose design was a staggered rollout. The match is marked as the wiki's inference.
+- **McKinsey attributions** were checked against the camera cuts on the contact sheets. Three lines first given to Price or Hancock were corrected or marked uncertain.
+
+**Edges.** Cell overlap was too broad to rank candidates: 14 sources share four cells with McKinsey and 8 share all five with Westerman. Concept citations and qmd topic queries (`--no-bump`) gave the shortlist, which was shown to the user before commit.
+- **McKinsey → `supports`:** Lavoie (same show), Anicich & Brouwers, MIT CISR maturity, Deloitte 2026, Catlin, Microsoft's Frontier Playbook, and Westerman.
+- **Westerman → `depends-on`:** the MIT SMR CIO Symposium page (same speaker, per the follow-ups precedent).
+- **Westerman → `supports`:** MIT NANDA, MIT CISR, DBS (on his case-company slide), Warner & Wäger, Sadun, and McKinsey.
+- **Skipped as incidental:** Carucci, BBC *AI Decoded*, Miller (WorkLab), Kavak (a16z), and the Brynjolfsson episode.
+
+**New entity.** [[George Westerman]], at his second source (Dangling on the CIO Symposium page, which now links him). Holly Price is Dangling.
+
+**Updated.**
+- *Entities:* [[McKinsey & Company]], [[Lucia Rahilly]], [[Brooke Weddle]] and [[Bryan Hancock]] (confidence 0.70 → 0.75 at three sources), [[DBS Bank]], [[MIT Sloan Management Review]], [[Anthropic]].
+- *Concepts:* [[enterprise-ai-adoption]], [[micro-productivity-trap]], [[responsible-ai]], [[ai-in-health-care]], [[automation-vs-augmentation]].
+- *Thread:* [[ai-maturity-measurement-comparison]], with the two three-step ladders lined up and McKinsey's article listed as missing.
+
+`source_count` was recounted and `lint-source-count` reports 0 mismatches. `lint-index-completeness` and `lint-dangling-authors` are clean, and `lint-page` is silent on every touched page. Quality scores are unchanged (0.97–1.00).
+
 ## [2026-11-23] ingest | Nine YouTube videos: coding agents in production (Google Cloud Tech) and persistent agents (Chase), industrial agents on Omniverse (Falkor), Foxconn and Morgan Stanley on AI infrastructure and China's physical AI, Chinese open-weight models (Odd Lots), AI and jobs (DW News, Harvard IOP), PM craft at Atlassian (9 sources, 50 stills)
 
 The user sent nine YouTube links and asked for an ingest with stills, then a commit and push. None was in the wiki (checked by video ID). Before starting, the 2026-11-22 synthesis, filed and logged but never committed, was committed on its own so its index and log hunks stay apart from this batch.

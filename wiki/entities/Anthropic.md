@@ -5,9 +5,9 @@ aliases: ["Anthropic", "Anthropic PBC", "Claude"]
 tags: [anthropic, ai-lab, foundation-models, claude, public-benefit-corporation, long-term-benefit-trust]
 since: 2021
 confidence: 0.95
-last_confirmed: "2026-11-23"
-accessed_at: "2026-11-23"
-source_count: 99
+last_confirmed: "2026-11-26"
+accessed_at: "2026-11-26"
+source_count: 100
 ---
 
 # Anthropic
@@ -155,3 +155,7 @@ At [[2026-11-19-raimondo-holcomb-harvard-iop-managing-unemployment-ai-economy|Ha
 ## Rented for building, priced against open weights (added 2026-11-23)
 
 In [[2026-11-20-saedi-odd-lots-chinese-open-weight-models|Saedi's Odd Lots interview (Nov 2026)]], Minerva builds its product with Claude (*"cloud"* in the captions) and moves repeatable tasks to fine-tuned open weights. Saedi puts an abliterated DeepSeek model at about a hundredth of the price of Fable (*"about ten [times] cheaper than Sonnet, which is about ten [times] cheaper than Fable"*) and below Claude Mythos in capability. He accepts that the labs do not train on corporate client data, but says a rented model *"doesn't get any better based on your use case."* A host speaks of companies paying *"an Ant[hropic] tax or an OpenAI tax."*
+
+## A nonprofit programme, as heard on McKinsey Talks Talent (added 2026-11-26)
+
+In [[2026-11-24-price-mckinsey-talks-talent-employees-more-ready-for-ai|Price on McKinsey Talks Talent (Nov 2026)]], McKinsey's Holly Price says Anthropic *"just launched"* a programme for nonprofits in which relatively junior people spend *"almost like a one-year"* secondment training organisations up. She gives it as an example of demand for people who translate frontier tools into day-to-day work. The captions render the name as *"Claude Core"*. Neither the name nor the programme is confirmed by any other source in the wiki.

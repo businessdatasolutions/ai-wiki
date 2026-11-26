@@ -4,9 +4,9 @@ kind: organization
 aliases: ["McKinsey", "McKinsey & Company", "McKinsey and Company", "QuantumBlack"]
 tags: [mckinsey, mgi, mckinsey-talks-operations, mckinsey-talks-talent, global-business-services, built-environment, management-consulting, quantumblack, ai-research, tech-ai-transformation, agent-augmented-workforce, outcome-underwriting, post-controversy-governance, future-arenas, omniscalers, skill-change-index, workforce-skills, corporate-venture-building]
 confidence: 0.95
-last_confirmed: "2026-11-16"
-accessed_at: "2026-11-16"
-source_count: 32
+last_confirmed: "2026-11-26"
+accessed_at: "2026-11-26"
+source_count: 33
 relationships:
   - type: employs
     target: Roberta-Fusaro
@@ -127,3 +127,7 @@ SORT file.name ASC
 ## Author Talks (added 2026-11-16)
 
 - [[2026-11-14-wang-mckinsey-author-talks-the-trust-code]] — *AI Is Advancing. Is Our Judgment Keeping Up?* (**Author Talks**, YouTube, 14 Nov 2026). The first edition of McKinsey's book-interview series in the wiki. Tiffany Xingyu Wang, president and cofounder of Oasis Consortium, on her book *The Trust Code* (Wiley, Sep 2026): calibrated trust in AI, enterprises as the accountability layer between labs and regulators, and judgment as the scarce input. McKinsey publishes; the claims are Wang's. See [[agent-oversight-and-delegation]] and [[responsible-ai]].
+
+## McKinsey Talks Talent on the readiness gap (added 2026-11-26)
+
+- [[2026-11-24-price-mckinsey-talks-talent-employees-more-ready-for-ai]] — *Why Employees Are More Ready for AI Than Their Companies* (*McKinsey Talks Talent*, 24 Nov 2026). Associate partner Holly Price (Dangling) reports a survey made with McKinsey's new **AI readiness assessment**, from the *McKinsey Quarterly* article *"From adoption to impact: Three horizons of AI transformation"* (not ingested). Organisations fall into enablement 46%, automation 43% and reinvention 11%. 70% of respondents say they are personally ready, against 27% of leaders who say their organisation is ready for an agentic future. The episode also draws on McKinsey's **Organizational Health Index** for the behaviours of reinvention-horizon organisations. Hosts [[Lucia Rahilly]], [[Brooke Weddle]] and [[Bryan Hancock]].

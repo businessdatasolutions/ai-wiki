@@ -6,9 +6,9 @@ tags: [mckinsey, mckinsey-podcast, mckinsey-talks-talent, journalism, editorial]
 affiliation: "[[McKinsey & Company]]"
 role: "Global editorial director, McKinsey & Company; host of McKinsey Talks Talent; named in The McKinsey Podcast sign-off"
 confidence: 0.7
-last_confirmed: "2026-10-05"
-accessed_at: "2026-10-05"
-source_count: 4
+last_confirmed: "2026-11-26"
+accessed_at: "2026-11-26"
+source_count: 5
 relationships:
   - type: part-of
     target: McKinsey & Company
@@ -26,6 +26,7 @@ relationships:
 - **[[2026-07-09-catlin-mckinsey-podcast-real-ai-advantage]]** — named in the sign-off outro; [[Roberta Fusaro]] was again the active on-camera interviewer.
 - **[[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity]]** — **host** of *McKinsey Talks Talent*, interviewing [[Erik Brynjolfsson]] with [[Brooke Weddle]] and [[Bryan Hancock]]. The channel description calls her *"Global Editorial Director."* (This page was not linked when that source was ingested; she was listed there as Dangling. Fixed 2026-10-05.)
 - **[[2026-09-29-lavoie-mckinsey-talks-talent-leading-when-change-feels-threatening]]** — host again: *"This is McKinsey Talks Talent. I'm your host, Lucia Rahilly."* She asks the questions on virtual teams, *"nesting grounds"* as performance infrastructure, and what leaders can learn from the military.
+- **[[2026-11-24-price-mckinsey-talks-talent-employees-more-ready-for-ai]]** — host again (*"This is McKinsey Talks Talent. I'm your host, Lucia Rahilly"*; the roster card reads *"McKinsey global editorial director"*). She asks guest Holly Price about the three horizons, the enablers of individual readiness, leaders' own AI fluency and impact measures.
 
 ## Open questions
 

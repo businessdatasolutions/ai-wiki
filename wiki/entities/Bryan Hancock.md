@@ -5,10 +5,10 @@ aliases: ["Bryan Hancock"]
 tags: [bryan-hancock, mckinsey, mckinsey-talks-talent, talent, workforce]
 affiliation: "[[McKinsey & Company]]"
 role: "Partner, McKinsey & Company; co-host of McKinsey Talks Talent"
-confidence: 0.7
-last_confirmed: "2026-10-05"
-accessed_at: "2026-10-05"
-source_count: 2
+confidence: 0.75
+last_confirmed: "2026-11-26"
+accessed_at: "2026-11-26"
+source_count: 3
 relationships:
   - type: part-of
     target: McKinsey & Company
@@ -17,13 +17,14 @@ relationships:
 
 # Bryan Hancock
 
-**Partner at [[McKinsey & Company]]** and a co-host of *McKinsey Talks Talent*, with [[Brooke Weddle]] and host [[Lucia Rahilly]]. In this wiki he is an interviewer on two episodes. Promoted to an entity page on 5 October 2026, at his second appearance; he had been listed as Dangling on the first.
+**Partner at [[McKinsey & Company]]** and a co-host of *McKinsey Talks Talent*, with [[Brooke Weddle]] and host [[Lucia Rahilly]]. In this wiki he is an interviewer on three episodes. Promoted to an entity page on 5 October 2026, at his second appearance; he had been listed as Dangling on the first.
 
 ## What he contributes on the pages
 
 - **[[2026-08-01-brynjolfsson-mckinsey-talks-talent-biggest-ai-opportunity|Brynjolfsson episode (Aug 2026)]]:** a reframing of who is exposed. Augmentation talk clusters around front-office roles and automation talk around the back office, *"and then if you start to layer on who's in the front office, who's in the back office, it no longer looks like this wave of automation is coming for people with master's degrees. It looks like it's a different disruption pattern."*
 - **[[2026-09-29-lavoie-mckinsey-talks-talent-leading-when-change-feels-threatening|Lavoie episode (Sep 2026)]]:** he moves the discussion from anticipated loss to actual loss. Restructurings and layoffs *"are like everywhere,"* so leaders face real losses, not only the fear of them. The attribution is reconstructed from context; the ASR transcript has no speaker labels.
+- **[[2026-11-24-price-mckinsey-talks-talent-employees-more-ready-for-ai|Price episode (Nov 2026)]]:** a client's line that AI *"isn't just like the roll out of the latest version of Excel"*. He also describes his own **reverse-mentoring** session at McKinsey: an engagement manager asked a tenured partner, *"So, Bryan, tell me how you're using AI today,"* and found *"four or five things"* to add, *"without a big learning program."* The HR speech-coaching example is probably his (the camera is on him).
 
 ## Open questions
 
-- Both appearances are as interviewer, and in both episodes his lines are partly reconstructed from unlabelled ASR. A source with his own published work on talent would give the page firmer content.
+- All three appearances are as interviewer, and in all three episodes his lines are partly reconstructed from unlabelled ASR. A source with his own published work on talent would give the page firmer content.

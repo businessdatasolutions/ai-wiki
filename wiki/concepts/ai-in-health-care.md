@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI in health care", "AI in healthcare", "health-care AI", "hospital AI adoption", "clinical AI"]
 tags: [health-care, hospitals, clinical-ai, hospital-ai-adoption, pilot-to-scale, ambient-documentation, patient-safety, incident-reporting, ai-governance, netherlands]
 confidence: 0.90
-last_confirmed: "2026-11-23"
-accessed_at: "2026-11-23"
-source_count: 19
+last_confirmed: "2026-11-26"
+accessed_at: "2026-11-26"
+source_count: 20
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -66,6 +66,16 @@ The research that exists shows why local data matter. A severity-triage model fo
 ## Billing staff retrained for clinical roles (added 2026-11-23)
 
 [[2026-11-19-raimondo-holcomb-harvard-iop-managing-unemployment-ai-economy|Gina Raimondo (Raise US, Nov 2026)]] describes a pilot with Utah's governor at Intermountain, the state's largest employer. She expects revenue-cycle management, *"basically fighting with insurance companies to get paid,"* to go to software: *"eventually the hospital's agents are going to be fighting with insurance companies' agents,"* and the staff, *"mostly women, mostly non-college-educated women I fear,"* to lose their jobs. The project identifies them now and retrains them for clinical openings such as radiology and operating-room technician. This is a forecast and a pilot, not a measured effect; it matches the page's finding that administration and billing come first among hospital AI uses (*Where AI is used*).
+
+## HCA Healthcare: governed at every stage (added 2026-11-26)
+
+[[2026-08-26-westerman-mit-enterprise-ai-forum-making-ai-real|Westerman at the MIT Enterprise AI Forum (Apr 2026)]] uses HCA Healthcare as his case of fast governance in a sector where *"getting things wrong can kill people."* The uses he names:
+- records scanned to detect sepsis an hour earlier (*"every hour you delay detecting sepsis is a 7% higher likelihood of death"*);
+- maternal-fetal monitoring during delivery;
+- inventory;
+- the nurse shift handoff, cut *"from close to 50 minutes to about 12 minutes with 95% better on all the measures that they've chosen."*
+
+A steering committee reviews each idea at start, pilot, multi-hospital rollout and scale, then every six months. No figure is sourced in the talk. The case is said to be forthcoming in *MIS Quarterly Executive*. See [[responsible-ai]] for the governance process.
 
 ## Debates and supersession
 

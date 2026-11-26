@@ -3,9 +3,9 @@ type: concept
 aliases: ["automation vs augmentation", "automation-vs-augmentation", "automate vs augment", "AI substitution vs complementarity", "AI labor substitution", "AI labor complementarity"]
 tags: [automation, augmentation, generative-ai, ai-deployment, ai-task-design, capability-reliability-gap]
 confidence: 0.95
-last_confirmed: "2026-11-22"
-accessed_at: "2026-11-22"
-source_count: 107
+last_confirmed: "2026-11-26"
+accessed_at: "2026-11-26"
+source_count: 108
 relationships:
   - type: supports
     target: ai-employment-effects
@@ -587,3 +587,8 @@ SQ3 of the [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] carrie
 ## CI + AI = CA (added 2026-11-22)
 
 [[2026-09-16-microsoft-becoming-a-frontier-firm-second-edition|Microsoft's Frontier Playbook, second edition (Sept 2026)]] turns *Capability Add* into a formula. Continuous-improvement levers *eliminate* errors and rework, unused outputs, delays and queues, handoffs and context loss, and tool-switching. AI's Capability Add *adds* predictive and preventive quality intelligence, an expanded solution space, real-time sensemaking and parallel cognition, opportunity sensing and portfolio intelligence, attention and cognitive-load optimisation, and precision at the right level of abstraction. *"CI alone gives you a leaner version of your old company. CI + AI—the discipline to take waste out and the imagination to add capability in—compounds."* Its advice to leaders: *"Focus more on adding AI capability into workflows than on simply taking human capacity out."* Its third level of AI, *"human-led, agent-operated,"* *"requires a much bigger role-change for humans."* The source is the same company, and partly the same author, as the Capability Add section above.
+
+## A coach on every call, and augmentation as a first horizon (added 2026-11-26)
+
+- [[2026-08-26-westerman-mit-enterprise-ai-forum-making-ai-real|Westerman at the MIT Enterprise AI Forum (Apr 2026)]] describes Cresta's call-centre software. It *"whispers"* advice on the agent's screen, so *"every single worker has a coach on every single call."* He cites an unnamed randomised trial at *"a company that looks like Cresta"*: new workers quickly approached the best, satisfaction rose and turnover fell. *"You're not replacing these people, you're augmenting them."* The details match [[2026-04-28-brynjolfsson-li-raymond-generative-ai-at-work|Brynjolfsson, Li and Raymond]], whose design was a staggered rollout; the match is the wiki's inference.
+- [[2026-11-24-price-mckinsey-talks-talent-employees-more-ready-for-ai|Price et al. on McKinsey Talks Talent (Nov 2026)]] uses the same split as a sequence. Its first horizon, enablement, is *"individual augmentation"*; the second is automation of existing workflows; the third is reinvention.
