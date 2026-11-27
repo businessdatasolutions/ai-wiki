@@ -46,7 +46,7 @@ relationships:
 
 ## TL;DR
 
-The 300th episode of *Inside the Strategy Room* on the [[McKinsey & Company]] channel, 53 minutes, host **Sean Brown**. Guests: **Tanguy Catlin** (senior partner, director of the [[McKinsey Global Institute]]), **Sandra Durth** (partner, people and organisation), **Lari Hämäläinen** (senior partner, leads gen AI and agents in QuantumBlack) and **Antoine Montard** (capability director, strategy). Six claims:
+The 300th episode of *Inside the Strategy Room* on the [[McKinsey & Company]] channel, 53 minutes, host **Sean Brown**. Guests: **[[Tanguy Catlin]]** (senior partner, director of the [[McKinsey Global Institute]]), **Sandra Durth** (partner, people and organisation), **Lari Hämäläinen** (senior partner, leads gen AI and agents in QuantumBlack) and **Antoine Montard** (capability director, strategy). Six claims:
 
 1. **Productivity is where you lose.** *"Right now, most organizations are obsessively focused on productivity … that's where you lose the battle, not where you win the battle,"* since competitors have the same models (Catlin). Montard calls it table stakes.
 2. **Three waves.** Productivity, then innovation (new products and business models, where *"growth and value creation will be the most acute"*), then lower transaction costs, which threaten any business built on aggregation, brokering or intermediation.
@@ -129,7 +129,7 @@ The full episode (53:30, `length_seconds: 3210`) from the auto-generated track v
 - [[concepts/micro-productivity-trap|micro-productivity-trap]], [[concepts/enterprise-ai-adoption|enterprise-ai-adoption]], [[concepts/ai-employment-effects|ai-employment-effects]], [[concepts/ai-coding-productivity-evidence|ai-coding-productivity-evidence]], [[concepts/foundation-models|foundation-models]], [[concepts/strategy|strategy]], [[concepts/durable-skills|durable-skills]], [[concepts/technology-adoption-theories|technology-adoption-theories]], [[concepts/agent-fleet-management|agent-fleet-management]] — updated in this ingest.
 - [[concepts/dynamic-capabilities|dynamic-capabilities]] — the six cells tagged above.
 
-**Dangling** (single-source mention, deferred): Sean Brown, Sandra Durth, Antoine Montard, Lari Hämäläinen and Tanguy Catlin (two sources each, never `author:`), QuantumBlack, Ajay Agrawal, Roberto Rigobon.
+**Dangling** (single-source mention, deferred): Sean Brown, Sandra Durth, Antoine Montard and Lari Hämäläinen (two sources each, never `author:`), QuantumBlack, Ajay Agrawal, Roberto Rigobon. [[Tanguy Catlin]] was promoted on 2026-11-27, as coauthor of [[2026-07-08-de-smet-mckinsey-three-horizons-of-ai-transformation|From adoption to impact]].
 
 ## Scope and reliability
 

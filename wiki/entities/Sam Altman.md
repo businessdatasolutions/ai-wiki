@@ -6,9 +6,9 @@ tags: [sam-altman, openai-ceo, yc-ex-president, ai-washing, agi-bull, gpt-5]
 affiliation: "[[OpenAI]]"
 role: "CEO of OpenAI (since 2019); ex-President of [[Y Combinator]] (2014-2019); co-founder of Loopt"
 confidence: 0.85
-last_confirmed: "2026-09-28"
-accessed_at: "2026-09-28"
-source_count: 4
+last_confirmed: "2026-11-27"
+accessed_at: "2026-11-27"
+source_count: 5
 relationships:
   - type: part-of
     target: OpenAI
@@ -50,3 +50,7 @@ SORT file.name ASC
 ## The OpenAI pitch as an example of grounded ambition (added 2026-09-28)
 
 [[2026-08-05-dalton-michael-low-ambition-is-killing-your-startup|Dalton + Michael, Low Ambition is Killing Your Startup (Aug 2026)]] uses Altman's early OpenAI pitch to show that a big goal needs substance behind it: *"he actually knew the researchers that were doing the work and were recruiting them… it was all based on papers that were coming out."* One host also credits Altman with the lesson that investors may believe a small-impact money story *"they just don't care."*
+
+## "Algorithmic feeds are the first at-scale misaligned AIs" (added 2026-11-27)
+
+His post of 27 December 2024 is the motivating slide for Compass in [[2026-11-23-zhang-stanford-cs547-cscw-work-with-agents|Amy X. Zhang's CS547 talk]]. Compass is a system that keeps a YouTube Shorts feed aligned with the preferences users state on reflection.

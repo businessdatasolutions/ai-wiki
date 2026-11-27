@@ -4,9 +4,9 @@ kind: venue
 aliases: ["Bloomberg Podcasts", "Bloomberg", "Trumponomics", "Bloomberg Leaders", "Bloomberg Audio Studios", "Bloomberg Tech", "Odd Lots"]
 tags: [bloomberg, bloomberg-podcasts, trumponomics, bloomberg-leaders, business-journalism, economics-podcast, financial-media]
 confidence: 0.75
-last_confirmed: "2026-11-23"
-accessed_at: "2026-11-23"
-source_count: 7
+last_confirmed: "2026-11-27"
+accessed_at: "2026-11-27"
+source_count: 8
 relationships:
   - type: published-by
     target: 2026-08-05-frey-bloomberg-trumponomics-why-ai-isnt-boosting-productivity
@@ -51,3 +51,4 @@ Bloomberg's interview formats are host-led and generally give the guest room to 
 - [[2026-10-02-hiza-bloomberg-lockheed-ai-openai-f35|Hiza / Bloomberg Tech, October 2026]] — Lockheed Martin on 55 models, testing AI before deployment, and OpenAI working with the F-35 team.
 - [[2026-10-16-fowler-ludlow-bloomberg-tech-dorm-room-fund-ai-gold-rush|Fowler / Bloomberg Tech, October 2026]] — Dorm Room Fund on student founders in the AI boom, and Cursor's CEO as a former student investor.
 - [[2026-11-20-saedi-odd-lots-chinese-open-weight-models|Saedi / Odd Lots, November 2026]] — Minerva's co-founder on mixing frontier and Chinese open-weight models: cost per completed task, a fine-tuned Qwen, fine-tunes that do not carry over, abliterated models, and a GPU per knowledge worker.
+- [[2026-11-23-afra-wang-odd-lots-town-of-vibecoders-chinese-economy|Afra Wang / Odd Lots, November 2026]] — a journalist's reporting on AI inside China: a vibe-coding town outside Hangzhou, a pyramid-shaped AI education industry, AI short dramas backed by local governments, and a low-trust mood since Covid.

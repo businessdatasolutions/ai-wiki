@@ -10,6 +10,40 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-11-27] ingest | McKinsey's three-horizons article, Zhang on what CSCW teaches about working with agents (Stanford CS547), Afra Wang on AI in China (Odd Lots) (3 sources, 16 stills)
+
+The user asked to ingest the *McKinsey Quarterly* article *"From adoption to impact"* (listed as wanted in the maturity thread yesterday) and two YouTube links, with the YT skills and stills. Neither video ID was in the wiki.
+
+**Acquire.**
+- **The article.** curl and WebFetch both timed out on mckinsey.com. A second, visible Playwright browser was refused by the permission check as working around bot protection and was not retried. The page was then read in the user's own Chrome (Claude in Chrome): `get_page_text` for the body, a DOM read for the collapsed *"About the research"* sidebar and the ten endnotes, and screenshots for the six exhibits. The raw file `raw/articles/2026-07-08-mckinsey-...md` holds structured notes, not the verbatim text: method, every exhibit's data, the endnotes, and paraphrased section notes with short quotes. The 14-page PDF was not downloaded. A Web Clipper re-acquire would replace the file with the full text.
+- **Transcripts.** `youtube-transcript-skill`, transcript-panel route. Playwright's Chromium had gone missing again and reinstalled itself. Zhang's track is human-written and clean; three names were fixed (Merrie Morris, Susan Leigh Star, "procedurally just"). The Odd Lots track is listed as human-written but reads like speech recognition. About 70 exact-string fixes were applied, each listed in `notes:`: DeepSeek R1, Liangzhu (the wiki's reading of the town's name), bazi, AIGC, Mentougou, Yan Lianke's *The Explosion Chronicles*, Liu Cixin and others. Uncertain readings are bracketed as heard.
+- **Stills.** `extract_stills.py` still returns Gemini HTTP 402, so both videos were hand-picked.
+  - **Zhang:** the slide sits at a fixed place in a composite frame, so whole-frame scene detection found only 4 cuts in 57 minutes. A new 2-s pass over the slide region alone (`slidechanges.py` in the scratchpad) found 87 change points, all on slides the 10-s grid already showed. 39 slides were cut at 1080p and each was read from its 1280×720 slide crop; one mislabelled cut (PaperPing's title, not Compass's field study) was renamed and recut. 16 are published, cropped to the slide region at native resolution.
+  - **Odd Lots:** all 374 grid frames and 39 short shots were viewed on four compact overview sheets. It is a studio podcast with no inserted graphics; one lower-third (Afra Wang, journalist) was cut for the record, and nothing is published.
+
+**Sources, newest first.**
+- [[2026-11-23-zhang-stanford-cs547-cscw-work-with-agents|Zhang, Stanford CS547]]: three agent trends paired with three CSCW theories and four lab systems (Cocoa, Ream, Compass, PaperPing). Continuous alignment loops; case law and other institutions as patterns for aligning AI at scale. Small HCI studies with their sizes taken from the slides.
+- [[2026-11-23-afra-wang-odd-lots-town-of-vibecoders-chinese-economy|Afra Wang on Odd Lots]]: China's full-stack race and AI Plus diffusion; DeepSeek as national destiny; a vibe-coding town of one-person companies; an AI education firm the hosts call MLM; local governments' *"industrial slop complex"* of AI dramas; a low-trust mood since Covid.
+- [[2026-07-08-de-smet-mckinsey-three-horizons-of-ai-transformation|De Smet et al., McKinsey Quarterly]]: the method behind yesterday's podcast, the readiness factors per horizon, the 48% / 25% decomposition, trust and anxiety by job level, four Organizational Health Index behaviors, and the electrification analogy.
+
+**Pre-flight findings.**
+- **The 46 / 43 / 11 split describes the sample, not the market.** McKinsey's sidebar says recruitment targeted advanced horizons and the estimates *"may not reflect overall market prevalence"*. The podcast page and the maturity thread now say so, and the thread's guessed date ("late 2026") is corrected to 8 July 2026.
+- **Small cells.** The reinvention results rest on 63 leaders, and the method behind the 48% / 25% split is not stated.
+- **Dates.** Zhang's talk was given on 23 October 2026 and published on 23 November; the filename uses the YouTube date.
+- **Unchecked figure.** The Odd Lots description cites 84% (spoken: 83%) optimism in China against 38% in the US, from Stanford's AI Index. Neither AI Index page in the wiki records the China figure. Her other figures (0.16% hits, 90% of AIGC firms losing money, 80,000 members, 80–85% of rail lines) are unsourced and flagged.
+
+**Edges.** qmd topic queries (`--no-bump`) gave the shortlist.
+- **McKinsey article → `supports`:** McKinsey State of AI 2025, MIT CISR (2025), Westerman, Beutler, Microsoft Frontier Playbook 2e.
+- **Talks Talent page → `depends-on`** the article: coauthor Price retelling it, per the follow-ups precedent. Its TL;DR, method note, Linked and Debates sections are updated.
+- **Catlin's July McKinsey Podcast:** body link only. Same coauthor, a different argument from the same view, not independent.
+- **Zhang → `supports`:** Chase's *Future of Agents* and Carson on How I AI.
+- **Odd Lots → `supports`:** The Dip (DW), Bloomberg Originals, Romeo, Morgan Stanley's China physical AI, and Saedi on Odd Lots.
+- **W&W tags:** McKinsey has five cells. Zhang (HCI research) and Odd Lots (a national economy) carry none, with the reason stated on each page.
+
+**New entities.** [[Tanguy Catlin]] (third source and first as `author:`; his two earlier pages listed him as Dangling and now link him) and [[Holly Price]] (author plus guest, following the Westerman precedent). Updated: [[McKinsey & Company]], [[Stanford Online]], [[Bloomberg Podcasts]], [[Google DeepMind]], [[Sam Altman]].
+
+**Concepts updated** (sections dated 2026-11-27, `source_count` recounted, dates bumped): [[enterprise-ai-adoption]], [[micro-productivity-trap]], [[technology-adoption-theories]], [[agent-oversight-and-delegation]], [[agent-fleet-management]], [[responsible-ai]], [[vibe-coding]], [[open-source-ai]], [[generative-ai]], [[ai-employment-effects]]. Thread: [[ai-maturity-measurement-comparison]] (the McKinsey item resolved).
+
 ## [2026-11-26] ingest | Two YouTube videos on getting from AI adoption to value: McKinsey's three horizons and readiness gap (Talks Talent), Westerman's six levers (MIT Enterprise AI Forum) (2 sources, 13 stills)
 
 The user sent four YouTube links and asked for an ingest with stills, then a commit and push. A check by video ID found two already in the wiki, both with stills: `gleqEIsAvVg` is [[2026-11-20-liu-cnbc-managing-asia-foxconn-beyond-iphone|Foxconn on CNBC]] and `hRtmV1mCBSE` is [[2026-11-22-mansour-lennys-podcast-everyone-becoming-a-builder|Mansour on Lenny's Podcast]]. Both were ingested on 2026-11-23 and were skipped.

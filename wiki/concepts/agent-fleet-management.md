@@ -3,9 +3,9 @@ type: concept
 title: Agent fleet management
 aliases: ["agent fleet management", "managing agent fleets", "agent manager", "human as agent manager", "parallel agents", "agent orchestration at scale"]
 confidence: 0.75
-last_confirmed: "2026-11-23"
-source_count: 29
-accessed_at: "2026-11-23"
+last_confirmed: "2026-11-27"
+source_count: 30
+accessed_at: "2026-11-27"
 tags: [agent-fleet, parallelism, cloud-agents, isolated-workspaces, decision-fatigue, priority-queue, span-of-control, delegation, playbooks, token-economics]
 relationships:
   - type: part-of
@@ -170,3 +170,7 @@ The session does not say how the agents are registered, monitored or retired.
 - **LangSmith for Coding Agents.** A GitHub connection ties coding-agent spend to merged PRs: cost per merged PR, cost over time by model, threads classified as bug fix or exploration. The example dashboard, for LangChain's internal agent Robin over seven days, shows $21.3K in LLM cost, $34.65 per merged PR over 614 merged PRs, a 93% cache rate and 22.8K threads, with spend across nine model families. The slide does not say whether these are real or demo figures.
 
 Compare the agent-gateway and registry products [[2026-11-09-vahdat-lohmeyer-google-cloud-future-of-ai-infrastructure|Google Cloud]] lists above. Both are vendor product lists without deployment data.
+
+## Peripheral awareness instead of live views (added 2026-11-27)
+
+[[2026-11-23-zhang-stanford-cs547-cscw-work-with-agents|Zhang (Stanford CS547, Oct 2026)]] describes engineers' days as switching between agent threads as each one returns: *"just like a ton of work to just manage these threads."* An attendee called it *"30 slot machines"* played at once. Her lab's **Ream** (in submission) turns every open, read and edit into a signal. It shows the signals as small user-versus-agent attention bars per file and per citation, and gives agents the same history through a `read_signals` tool. In its studies (n=12 lab, n=6 field), agents read each other's signals and adjusted, and users asked for per-agent attribution. Her position: live, fine-grained views of agent activity are rarely needed. Her sketch for the alternative is a status list (*"done, waiting for your review"*, *"waiting for you to pick key papers"*).

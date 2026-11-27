@@ -3,8 +3,8 @@ type: concept
 aliases: ["micro-productivity trap", "micro-productivity-trap", "offering lock-in", "process lock-in"]
 tags: [micro-productivity-trap, AI-transformation, EBITDA, process-redesign, workflow-redesign, enterprise-ai, organizational-change-vs-tech-implementation]
 confidence: 0.95
-last_confirmed: "2026-11-26"
-source_count: 103
+last_confirmed: "2026-11-27"
+source_count: 104
 relationships:
   - type: instance-of
     target: enterprise-ai-adoption
@@ -12,7 +12,7 @@ relationships:
   - type: contradicts
     target: automation-vs-augmentation
     via: "process lock-in = automation without redesign; reinvent-the-business resists this trap"
-accessed_at: "2026-11-26"
+accessed_at: "2026-11-27"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -496,3 +496,7 @@ The trap describes individual time saved that never becomes firm-level output. T
 Two staged models put individual productivity at the bottom of the path.
 - [[2026-08-26-westerman-mit-enterprise-ai-forum-making-ai-real|Westerman at the MIT Enterprise AI Forum (Apr 2026)]] calls it level 1 of the **AI growth slope**. Its job is to *"generate energy and ideas from the people"* and to learn how to work safely. It is not where the value is: *"You're not going to get any value from the technology unless you do business differently."* Level 3, products and processes, is still rare for generative AI on its own.
 - In [[2026-11-24-price-mckinsey-talks-talent-employees-more-ready-for-ai|Price et al. on McKinsey Talks Talent (Nov 2026)]], 46% of organisations are in the **enablement** horizon, *"more about individual augmentation"*, and 11% in reinvention. Price sees *"people use AI for the sake of using AI and it's not that great what the output is."* Organisations that ran adoption leaderboards are *"quietly"* dropping *"metrics that just focus on activity and don't focus on outcome."*
+
+## Freed-up time spent on personal projects (added 2026-11-27)
+
+[[2026-07-08-de-smet-mckinsey-three-horizons-of-ai-transformation|De Smet et al. (McKinsey Quarterly, Jul 2026)]] names the mechanism in its first horizon. Employees gain personal efficiency, but freed-up capacity often goes to *"personally interesting pursuits"* not tied to enterprise priorities. Leaders whose organizations redesign workflows report enterprise value 5.3 times as often (32% against 6%, a cross-sectional comparison within one horizon). The fix they name: formal workflow changes, explicit expectations about working differently, and freed capacity steered to business priorities. Their Organizational Health Index comparison adds that individual productivity with technology does not predict organizational health.

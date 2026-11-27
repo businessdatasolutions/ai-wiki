@@ -17,6 +17,9 @@ dynamic_capabilities:
   - contextual/internal-barriers
   - digital-sensing/digital-mindset-crafting
 relationships:
+  - type: depends-on
+    target: 2026-07-08-de-smet-mckinsey-three-horizons-of-ai-transformation
+    via: "The episode is coauthor Holly Price's account of the McKinsey Quarterly article of 8 July 2026: same survey, same three horizons, same 70% / 27% gap. One team's result told twice, not independent support."
   - type: supports
     target: 2026-09-29-lavoie-mckinsey-talks-talent-leading-when-change-feels-threatening
     via: "Same show and hosts, two months apart. Shared topic: trust and leaders' listening during AI-era change. Lavoie on fear of loss; Price on employees who say leaders 'do not care what I have to say about it'."
@@ -52,9 +55,9 @@ relationships:
 
 ## TL;DR
 
-A ~29-minute episode of *McKinsey Talks Talent* on the **[[McKinsey & Company]]** channel, published 24 November 2026. The guest is **Holly Price**, a McKinsey associate partner and coauthor of the *McKinsey Quarterly* article *"From adoption to impact: Three horizons of AI transformation"* (linked in the description, not ingested). The hosts are **[[Lucia Rahilly]]**, **[[Brooke Weddle]]** and **[[Bryan Hancock]]**. The captions are auto-generated, with names corrected at acquire time.
+A ~29-minute episode of *McKinsey Talks Talent* on the **[[McKinsey & Company]]** channel, published 24 November 2026. The guest is **[[Holly Price]]**, a McKinsey associate partner and coauthor of the *McKinsey Quarterly* article *"From adoption to impact: Three horizons of AI transformation"* (8 July 2026). The article is ingested as [[2026-07-08-de-smet-mckinsey-three-horizons-of-ai-transformation|De Smet et al. 2026]] (added 2026-11-27), and this episode is her account of it. The hosts are **[[Lucia Rahilly]]**, **[[Brooke Weddle]]** and **[[Bryan Hancock]]**. The captions are auto-generated, with names corrected at acquire time.
 
-The episode reports a survey that used McKinsey's new **"AI readiness assessment"**, which measures individual and organisational readiness separately. The figures are spoken; none is shown on screen. Neither sample size, countries, field dates nor definitions are given (*"an international survey"*).
+The episode reports a survey that used McKinsey's new **"AI readiness assessment"**, which measures individual and organisational readiness separately. The figures are spoken; none is shown on screen. Neither sample size, countries, field dates nor definitions are given (*"an international survey"*). The article gives them: 750 English-speaking employees who use AI at work, surveyed February to April 2026. Recruitment was tilted toward organisations in the advanced horizons, so the 46 / 43 / 11 split describes the sample, not the market.
 
 **1. Three horizons (1:28–3:20).** *"Organizations are falling into three different levels of AI maturity"*:
 
@@ -139,15 +142,22 @@ None published. The episode is a four-way video call edited under a McKinsey hea
 
 ## Linked entities and concepts
 
-- **Entities:** [[McKinsey & Company]] (channel), [[Lucia Rahilly]] (host), [[Brooke Weddle]] and [[Bryan Hancock]] (co-hosts), [[Anthropic]] (named for the nonprofit programme).
+- **Source this episode retells:** [[2026-07-08-de-smet-mckinsey-three-horizons-of-ai-transformation|De Smet et al., From adoption to impact]] (`depends-on`).
+- **Entities:** [[McKinsey & Company]] (channel), [[Holly Price]] (guest), [[Lucia Rahilly]] (host), [[Brooke Weddle]] and [[Bryan Hancock]] (co-hosts), [[Anthropic]] (named for the nonprofit programme).
 - **Concepts:** [[enterprise-ai-adoption]] (the three horizons, trust as an adoption condition, impact over activity), [[micro-productivity-trap]] (enablement without redesign; leaderboards that count activity), [[responsible-ai]] (responsible AI as a trust mechanism, with employee voices at the table).
 - **Thread:** [[ai-maturity-measurement-comparison]] (the 46 / 43 / 11 distribution and the 70% / 27% gap, added to the instruments there).
-- **Dangling** (single-source mention, deferred): Holly Price. The *McKinsey Quarterly* article *"From adoption to impact: Three horizons of AI transformation"* is linked in the description and not ingested.
+- **Dangling:** none. Holly Price was listed here until 2026-11-27, when the article she coauthored was ingested and she got an entity page.
 
 ## Debates and supersession
 
 - **The headline compares two different questions.** The 70% is respondents of all job levels rating their *own* readiness. The 27% is *leaders* judging their *organisation's* readiness for *"an agentic future"*. *"Employees are more ready than their companies"* is drawn from those two answers. The episode gives no figure for leaders' personal readiness, or for employees' view of the organisation.
-- **The survey is undescribed in the episode.** Sample size, countries, field dates, and how organisations were placed in a horizon (self-report or scoring) are not given. The article may give them. Until it is ingested, the 46 / 43 / 11 split is a reported distribution, not a measured one.
+- **The survey is undescribed in the episode.** Sample size, countries, field dates, and how organisations were placed in a horizon (self-report or scoring) are not given. *Resolved 2026-11-27 by [[2026-07-08-de-smet-mckinsey-three-horizons-of-ai-transformation|the article]]:*
+  - 750 respondents, all of whom use AI at work;
+  - horizons assigned from four self-reported questions;
+  - 582 leaders in the horizon split;
+  - recruitment deliberately tilted toward advanced horizons, *"may not reflect overall market prevalence."*
+
+  The episode's *"46 percent are in enablement"* should be read as 46% of that sample.
 - **"Claude Core" is unconfirmed.** The captions render the programme's name as *"Claude Core"*, and nothing on screen confirms it.
 - **Job loss as a secondary worry** is one consultant's reading of confidential focus groups. The same episode reports one in five employees and one in four middle managers as anxious. It cites no figures on the causes of that anxiety beyond the list in claim 11.
 - No supersession.

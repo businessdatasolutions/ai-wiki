@@ -4,9 +4,9 @@ title: Technology adoption theories
 aliases: ["technology adoption theories", "adoption theories", "classical adoption theories", "TAM", "Technology Acceptance Model", "UTAUT", "UTAUT2", "Unified Theory of Acceptance and Use of Technology", "diffusion of innovations", "Diffusion of Innovation", "DOI theory", "Rogers' diffusion of innovations", "TOE framework", "technology-organization-environment", "technology–organization–environment framework"]
 tags: [adoption-theory, tam, utaut, diffusion-of-innovations, rogers, toe-framework, tornatzky-fleischer, information-systems-research, firm-level, individual-level, ai-adoption]
 confidence: 0.90
-last_confirmed: "2026-11-23"
-accessed_at: "2026-11-23"
-source_count: 16
+last_confirmed: "2026-11-27"
+accessed_at: "2026-11-27"
+source_count: 17
 relationships:
   - type: supports
     target: enterprise-ai-adoption
@@ -117,3 +117,10 @@ Two consequences for the theories. Diffusion of innovations (DOI) predicts an S-
 ## Juniors try more tools, seniors get more from theirs (added 2026-11-23)
 
 [[2026-11-22-mansour-lennys-podcast-everyone-becoming-a-builder|Sherif Mansour (Atlassian) on Lenny's Podcast (Nov 2026)]] cites Atlassian research, internal and with customers: *"something like almost 30, I think it's 38% exact… of juniors are more likely to adopt new tools than the seniors."* Seniors *"are getting more quality and better productivity out of the ones they're using, but they're less likely to try different ways of working."* The figure's base and method are not given, and its wording is unclear as spoken. The pattern separates trying a new tool from the depth of use, the distinction the section above draws between the extensive and intensive margins. [[2026-10-30-lakhani-silicon-valley-girl-people-most-at-risk-from-ai|Lakhani]] reports from usage data that people aged 35 to 55 resist AI most. Mansour also has Atlassian's data scientists testing whether remote staff *"are more likely to get more outcomes out of AI than those that are colocated,"* because they write and share more digitally; no result is reported.
+
+## Electrification, and diffusion as state policy (added 2026-11-27)
+
+Two sources on reorganizing around a general-purpose technology:
+
+- [[2026-07-08-de-smet-mckinsey-three-horizons-of-ai-transformation|De Smet et al. (McKinsey Quarterly, Jul 2026)]] closes on the electrification analogy. Factories that swapped steam engines for electric motors but kept their layouts and management gained little. Gains came once factories were redesigned around electricity.
+- [[2026-11-23-afra-wang-odd-lots-town-of-vibecoders-chinese-economy|Afra Wang on Odd Lots (Nov 2026)]] describes China's **AI Plus** plan, modelled on the earlier Internet Plus plan: AI applied to factories, education and agriculture, pushed by the state as *"new quality productive forces."* The guest calls China's AI effort a full-stack race, and the diffusion part of it a deliberate policy.

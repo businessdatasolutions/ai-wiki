@@ -3,9 +3,9 @@ type: concept
 aliases: ["GenAI", "generative AI", "generative artificial intelligence"]
 tags: [generative-ai, foundation-models, ai-adoption, ai-foundation, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-11-22"
-accessed_at: "2026-11-22"
-source_count: 33
+last_confirmed: "2026-11-27"
+accessed_at: "2026-11-27"
+source_count: 34
 relationships:
   - type: uses
     target: foundation-models
@@ -258,3 +258,7 @@ The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] treats genera
 - **Creative markets.** New book titles tripled after ChatGPT while the quality of the average book fell (Reimers and Waldfogel 2026). "Slop" was Merriam-Webster's word of 2025.
 
 In [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's seminar]], the creative day jobs (website copy for the local restaurant) are the first to go.
+
+## AI short dramas made at volume (added 2026-11-27)
+
+[[2026-11-23-afra-wang-odd-lots-town-of-vibecoders-chinese-economy|Afra Wang on Odd Lots (Nov 2026)]] describes what the guest calls China's *"industrial slop complex."* Local governments want to show Beijing they back a strategic industry, and they fund AI-generated video because it is the cheapest entry into AI. Cities with little tech history are the keenest. Her figures, given without a source: a projected 5 million AI short dramas next year, about 0.16% of AI content counted as hits, and roughly 90% of AI-content companies losing money. The hosts tie it to China's earlier cycles of state-led overcapacity.

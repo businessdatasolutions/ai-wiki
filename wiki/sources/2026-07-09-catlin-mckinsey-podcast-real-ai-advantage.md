@@ -41,7 +41,7 @@ relationships:
 
 ## TL;DR
 
-A ~20-minute McKinsey Podcast interview, published the same day it was ingested — **Tanguy Catlin** (McKinsey Senior Partner and McKinsey Global Institute Director) in conversation with **Roberta Fusaro** (Editorial Director; her third appearance in this wiki, second as active on-camera interviewer). Nine load-bearing claims:
+A ~20-minute McKinsey Podcast interview, published the same day it was ingested — **[[Tanguy Catlin]]** (McKinsey Senior Partner and McKinsey Global Institute Director) in conversation with **Roberta Fusaro** (Editorial Director; her third appearance in this wiki, second as active on-camera interviewer). Nine load-bearing claims:
 
 1. **Productivity gains from AI get competed away.** Because AI is a general-purpose technology available to every competitor, the "first reflex" — deploying AI on top of existing processes to extract efficiency — produces gains that get competed down to near-zero at the firm level; the surplus flows to customers and suppliers instead. This has happened with every prior general-purpose technology.
 2. **The real advantage is redesign, not deployment.** Rather than pausing to ask "how do I redesign what I do and what I offer," most leaders' instinct is to bolt AI onto what already exists. Catlin's prescription (McKinsey's *Rewired* framework, explicitly named): pick a domain, redesign the process to capture the technology's value, make the redesign scalable, then expand to other domains.
@@ -78,7 +78,7 @@ Published the same day it was ingested (2026-07-09), this is the wiki's most cur
 - [[McKinsey & Company]] — publishing entity.
 - [[McKinsey Global Institute]] — Catlin's second affiliation (Director).
 - [[Roberta Fusaro]] — Editorial Director; interviewer/host for this episode. Entity page updated on this ingest (third wiki appearance; second as active on-camera interviewer, after [[2026-07-01-bello-mckinsey-podcast-serial-builder-advantage]]).
-- **Dangling** (single-source mention, deferred per [Author-entity promotion](../../CLAUDE.md#author-entity-promotion)): **Tanguy Catlin** (McKinsey Senior Partner and McKinsey Global Institute Director, interviewee) — first wiki mention; promote on second-source mention.
+- **Promoted 2026-11-27:** [[Tanguy Catlin]] (interviewee). He was listed as Dangling here until his third source, the [[2026-07-08-de-smet-mckinsey-three-horizons-of-ai-transformation|McKinsey Quarterly article]] he coauthored a day before this interview.
 - [[Lucia Rahilly]] — named in the stock sign-off outro only, not an active interviewer in this episode. **Promoted to an entity page on this ingest** — her third appearance across McKinsey Podcast sources (first: [[2026-06-18-ramaswamy-mckinsey-every-company-software-company]]; second: [[2026-07-01-bello-mckinsey-podcast-serial-builder-advantage]]), sign-off-only all three times.
 
 ## Source quality

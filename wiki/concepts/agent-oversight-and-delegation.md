@@ -3,9 +3,9 @@ type: concept
 title: Agent oversight and delegation
 aliases: ["agent oversight", "delegation regret", "human-in-the-loop", "approval checkpoints", "per-task autonomy", "trust calibration", "agent governance"]
 confidence: 0.95
-last_confirmed: "2026-11-23"
-source_count: 50
-accessed_at: "2026-11-23"
+last_confirmed: "2026-11-27"
+source_count: 51
+accessed_at: "2026-11-27"
 tags: [oversight, delegation-regret, trust-calibration, reversibility, blast-radius, approval-checkpoints, least-privilege, imda, preview, cot-monitoring, risk-scoring]
 relationships:
   - type: part-of
@@ -276,3 +276,7 @@ On the workbench, every claim carries its evidence and a label: from a source, t
 ## A prompt is suggestions; permissions by surface (added 2026-11-23)
 
 [[2026-11-20-chase-langchain-future-of-agents|Chase (LangChain webinar, Nov 2026)]]: *"You should not define this in a prompt. A prompt is suggestions. The agent can ignore it. It can get prompt injected."* His slide sets an agent told *"Do not send without approval"* (*"relies on the model holding back"*) against an enforced path in which identity, policy and approval deny *"any call that fails a check"* before the email API. Permissions depend on *who is acting, what action, on which surface*. In a private DM, LangChain's Slack agent may use the person's email within their granted scope. In a shared channel that permission is *"not inherited"*, because another person can add to a thread someone else started. He also names alignment as a larger problem for agents that work towards goals: *"if you give an agent a goal of ... removing all bugs from the codebase, it might accomplish that goal by just deleting the whole codebase."* And for background agents: *"I think it's way more of an issue than with these shorter task-based things because now these things are running in the background. You don't see what they're doing."* This sits beside the *enforcement outside the agent* bullet above ([[2026-10-19-smith-cohen-techcrunch-disrupt-okta-nanoco-agent-security|Smith & Cohen]]) and the runtime rule language of [[2025-07-31-wang-agentspec-runtime-enforcement-llm-agents|AgentSpec]].
+
+## A shared plan as the place to delegate (added 2026-11-27)
+
+[[2026-11-23-zhang-stanford-cs547-cscw-work-with-agents|Zhang (Stanford CS547, Oct 2026)]] treats the plan as a CSCW *boundary object*: a structured artifact that human and agent both work around, in place of a chat thread. Her lab's **Cocoa** (CHI 2026 Best Paper) puts the agent's plan inside a document. Each step can be assigned to the user or the agent, run to a checkpoint, edited, rerun or taken over, and the agent asks for guidance inside the plan. Planning and execution interleave. A lab study (n=16, against a chat panel) and a one-week field study (n=7) found it more steerable at equal ease of use. Her limit on the idea: it holds while a human works with the artifact, and says little about agent-to-agent coordination.

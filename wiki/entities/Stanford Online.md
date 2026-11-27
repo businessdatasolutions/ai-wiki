@@ -6,9 +6,9 @@ tags: [stanford, education-channel, mooc, academic-lecture, online-education]
 parent: "Stanford University"
 website: "https://online.stanford.edu"
 confidence: 0.85
-last_confirmed: "2026-08-12"
-accessed_at: "2026-08-12"
-source_count: 6
+last_confirmed: "2026-11-27"
+accessed_at: "2026-11-27"
+source_count: 7
 ---
 
 # Stanford Online
@@ -78,3 +78,7 @@ SORT file.name ASC
 
 - **Channel content cadence** — Stanford Online publishes a substantial volume of lectures. Future ingest targets likely include later CS224W lectures, other CS153 guest sessions, and applied-AI programme content.
 - **Cross-faculty mapping** — Leskovec (CS224W ML/graphs), Abbott (CS153 frontier-systems / Sequoia), and Brynjolfsson (Stanford Digital Economy Lab) operate in distinct sub-disciplines but converge on the wiki's existing concept clusters. Worth tracking whether a multi-faculty source ever produces a single ingest.
+
+## CS547 HCI seminar on CSCW and agents (added 2026-11-27)
+
+- [[2026-11-23-zhang-stanford-cs547-cscw-work-with-agents|Zhang, What can CSCW teach us about how to work with agents? (CS547, talk 23 Oct 2026)]]. Amy X. Zhang of the University of Washington pairs three changes in agents (long-running, embedded, social) with three CSCW theories (boundary objects, mutual awareness, the sociotechnical gap) and four lab systems (Cocoa, Ream, Compass, PaperPing). She ends with case law and other institutions as patterns for aligning AI at scale. Second CS547 seminar in the wiki, after the talk on ontological multiplicity.

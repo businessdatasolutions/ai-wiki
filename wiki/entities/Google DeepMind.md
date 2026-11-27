@@ -5,9 +5,9 @@ aliases: ["Google DeepMind", "DeepMind", "GDM"]
 tags: [google-deepmind, gdm, ai-lab, gemini, antigravity, omni, autoharness, foundation-models, agent-harness, world-models, demis-hassabis]
 since: 2023
 confidence: 0.80
-last_confirmed: "2026-11-22"
-accessed_at: "2026-11-22"
-source_count: 10
+last_confirmed: "2026-11-27"
+accessed_at: "2026-11-27"
+source_count: 11
 relationships:
   - type: part-of
     target: Google
@@ -45,3 +45,7 @@ The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] uses Google D
 - **The AI Co-Scientist** as the model of human–AI collaboration in research.
 
 It also notes that AlphaFold *"shifts the work elsewhere"* rather than eliminating the biologist's work.
+
+## Named in a CSCW talk on agents (added 2026-11-27)
+
+[[2026-11-23-zhang-stanford-cs547-cscw-work-with-agents|Amy X. Zhang's CS547 talk]] lists her as on sabbatical at Google DeepMind. It also cites a CSCW 2026 keynote by a GDM researcher (Merrie Morris) that made working with AI the conference's central topic. Neither is a GDM research claim; the page only records the affiliation.

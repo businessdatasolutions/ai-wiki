@@ -3,9 +3,9 @@ type: concept
 aliases: ["vibe coding", "Vibe coding", "vibe-coding", "vibe-code", "v-coding"]
 tags: [vibe-coding, agentic-engineering, software-3.0, ai-agents, accessibility, hobbyist-coding, karpathy, pm-tooling, prototype-as-influence-tool, december-2025-phase-change, replit, ai-native-builders, post-prompting]
 confidence: 0.95
-last_confirmed: "2026-11-22"
-accessed_at: "2026-11-22"
-source_count: 36
+last_confirmed: "2026-11-27"
+accessed_at: "2026-11-27"
+source_count: 37
 relationships:
   - type: instance-of
     target: software-3.0
@@ -191,3 +191,7 @@ The corpus now holds three sources on this question. [[2026-07-07-sinofsky-amble
 SQ9 of the [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] credits Karpathy with the term and gives a split verdict. Vibe coding *"works remarkably well for routine tasks, for demos, prototypes, and exploratory research. For production software, it has demonstrably increased developer productivity but can have a negative net impact on maintainability."* *"The next generation of tools will have to show they can create verified, validated, maintainable code, not just move fast."*
 
 It lists agent-specific risks (insecure dependencies, exposed credentials, undertested code, prompt injection) and the concern that juniors will not become seniors. In [[2026-11-19-wooldridge-stanford-hai-ai-goes-mainstream-ai100-seminar|Wooldridge's seminar]], Wooldridge calls the output *"software slop which hasn't been properly tested that nobody actually understands."*
+
+## A town of one-person companies (added 2026-11-27)
+
+[[2026-11-23-afra-wang-odd-lots-town-of-vibecoders-chinese-economy|Afra Wang on Odd Lots (Nov 2026)]] reports from a town outside Hangzhou (read here as Liangzhu). Laid-off big-tech workers and new graduates live there cheaply as one-person companies and independent vibe coders. Most apps are whimsical and have single-digit users; five to ten are fortune-telling apps, and one of them is profitable. Many vibe coders make their money by selling AI classes rather than apps.

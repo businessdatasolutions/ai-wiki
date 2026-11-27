@@ -3,9 +3,9 @@ type: concept
 aliases: ["open source AI", "open-source AI", "open-weight models", "open weights", "open models", "own vs rent AI"]
 tags: [open-source-ai, open-weight-models, own-vs-rent, ai-sovereignty, concentration-of-power, china-open-models, safety-through-transparency, hugging-face]
 confidence: 0.95
-last_confirmed: "2026-11-23"
-accessed_at: "2026-11-23"
-source_count: 33
+last_confirmed: "2026-11-27"
+accessed_at: "2026-11-27"
+source_count: 34
 relationships:
   - type: supports
     target: ai-sovereignty
@@ -307,3 +307,7 @@ The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] treats Chines
 - **Private use.** A host says people at large US companies name Qwen in private *"but not in public."* The episode's description adds a reported US plan to make companies disclose their use of Chinese models, which the conversation (recorded 3 Nov) does not discuss.
 
 A founder describing his own company, with no Minerva figures; confidence unchanged.
+
+## What DeepSeek R1 meant inside China (added 2026-11-27)
+
+[[2026-11-23-afra-wang-odd-lots-town-of-vibecoders-chinese-economy|Afra Wang on Odd Lots (Nov 2026)]] gives the domestic side of the open-weights story. Before DeepSeek R1, Chinese tech workers posted that China *"cannot innovate."* R1 was trained on native Chinese text, felt Chinese rather than translated, and could quote Tang poetry. It was received as a sign of national destiny (*guoyun*, a term Xi Jinping uses). For a while, one of its most popular uses was reading users' bazi, Chinese astrology.

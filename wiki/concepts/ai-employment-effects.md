@@ -3,8 +3,8 @@ type: concept
 aliases: ["AI employment effects", "AI labor effects", "AI job displacement", "AI labor market", "AI employment impact"]
 tags: [employment, labor-market, ai-displacement, automation, labor-economics, age-effects]
 confidence: 0.95
-last_confirmed: "2026-11-23"
-source_count: 122
+last_confirmed: "2026-11-27"
+source_count: 123
 relationships:
   - type: supports
     target: automation-vs-augmentation
@@ -12,7 +12,7 @@ relationships:
   - type: caused
     target: ai-deskilling
     via: "task-composition shift is one mechanism within broader employment effects"
-accessed_at: "2026-11-23"
+accessed_at: "2026-11-27"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -810,3 +810,10 @@ The report closes on retraining office workers for *"AI proof jobs"* and governm
 
 - **The host's job-market figures**, previewed from his forthcoming report (*"State of the tech job market: late 2026"*): PMs *"seem to be benefiting most in the AI era. We are seeing the most open PM roles of any role."* Engineering openings are slowing, design is *"very flat,"* and user research has about 108 open roles *"globally at tech companies right now."* Remote work has *"plateaued"* at 10–20% across industries. No method is given in the episode. [[2026-05-07-singhal-stanford-cs153-product-management-in-ai-era|Singhal]] also reports open PM roles at a record.
 - **A junior-hiring policy.** Mansour calls *"you don't need to hire juniors anymore"* the misconception he debunks most often with established organisations. Atlassian has *"definitely overindexed on hiring more juniors than seniors,"* because its problem is an established workforce that has to learn new ways of working, and juniors who *"didn't grow up… knowing anything else"* bring them. Seniors stay necessary to spot AI slop. No headcounts are given. The wiki's [[2026-05-22-everitt-jetbrains-deeplearningai-ai-dev-26-sf-shift-to-agentic-engineering|Everitt talk]] names [[Atlassian]] among firms with large layoffs in May 2026; the episode does not discuss headcount. The contrast with DW's report of shrinking entry-level jobs is recorded in *Debates and supersession*.
+
+## Anxiety by job level, and AI sold as a way up (added 2026-11-27)
+
+Two sources, from different settings:
+
+- **Anxiety by job level.** [[2026-07-08-de-smet-mckinsey-three-horizons-of-ai-transformation|De Smet et al. (McKinsey Quarterly, Jul 2026)]] finds anxiety about AI-related change at every job level, highest among middle managers: one in four, against one in five individual contributors. Respondents with low trust in their organization's support are 1.5 times as likely to be anxious.
+- **AI as a way up.** [[2026-11-23-afra-wang-odd-lots-town-of-vibecoders-chinese-economy|Afra Wang on Odd Lots (Nov 2026)]] describes China, where official youth unemployment is 18.9% and the guest doubts that figure. There, many young people see AI as a way up rather than a ladder pulled away. A market in AI classes has grown on that hope: one firm has 80,000 paying members and a recruit-your-friends structure the hosts call multi-level marketing.

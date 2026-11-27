@@ -3,9 +3,9 @@ type: concept
 aliases: ["RAI", "responsible AI", "AI ethics", "AI governance", "AI safety"]
 tags: [responsible-ai, ai-ethics, ai-governance, ai-safety, ai-policy]
 confidence: 0.95
-last_confirmed: "2026-11-26"
-accessed_at: "2026-11-26"
-source_count: 69
+last_confirmed: "2026-11-27"
+accessed_at: "2026-11-27"
+source_count: 70
 relationships:
   - type: part-of
     target: enterprise-ai-adoption
@@ -443,3 +443,7 @@ At [[2026-11-19-raimondo-holcomb-harvard-iop-managing-unemployment-ai-economy|Ha
   - a diverse table, because *"it can't just be a legal and IT question"*: senior leaders, employee voices and HR as well;
   - guardrails tied to *"mission, vision, and values"*, not *"performative commitments that you put on a page and never acknowledge again"*;
   - a standing position: *"we reserve the right to get smarter."*
+
+## Alignment as a loop, with patterns borrowed from institutions (added 2026-11-27)
+
+[[2026-11-23-zhang-stanford-cs547-cscw-work-with-agents|Zhang (Stanford CS547, Oct 2026)]] starts from Mark Ackerman's *sociotechnical gap*: the divide between what people need socially and what systems can encode, which can be narrowed and never closed. Alignment then becomes a loop. Start from a first-order approximation, notice or report gaps, adjust, and repeat as preferences drift. For models used by millions, she reads constitutions as underspecified and proposes case law as the pattern: decide new cases by precedent, as a *"living constitution."* Juries, citizen assemblies and federalism are further models. From them she draws evaluation principles: procedural justice, legitimacy, subsidiarity, plurality and democracy.

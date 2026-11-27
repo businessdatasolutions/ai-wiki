@@ -3,9 +3,9 @@ type: concept
 aliases: ["AI adoption", "enterprise AI use", "business AI adoption", "organizational AI adoption", "AI maturity"]
 tags: [ai-adoption, enterprise-ai, ai-strategy, ai-maturity, ai-foundation, omniscalers, future-arenas]
 confidence: 0.95
-last_confirmed: "2026-11-26"
-accessed_at: "2026-11-26"
-source_count: 217
+last_confirmed: "2026-11-27"
+accessed_at: "2026-11-27"
+source_count: 218
 relationships:
   - type: uses
     target: automation-vs-augmentation
@@ -1145,3 +1145,14 @@ Two talks give staged paths and a checklist.
 Leaders score each from −5 to +5. He replaces planning and execution with **directed emergence** (*"set a goal and learn your way towards that goal"*). His **AI growth slope** runs from individual productivity through specialized roles and tasks to products and processes. On scale-up he says *"every one out of 10, one out of 15 successful pilots actually make it to scale"* (no source given). On executive support: *"if you don't have it before you start, don't try."* HCA Healthcare is his worked case of governance as *"the steering"* rather than *"the brakes"*.
 
 The open [[ai-maturity-measurement-comparison|maturity-measurement thread]] sets the 46 / 43 / 11 distribution beside the other instruments.
+
+## The readiness survey's method, and what its horizon split measures (added 2026-11-27)
+
+[[2026-07-08-de-smet-mckinsey-three-horizons-of-ai-transformation|De Smet et al. (McKinsey Quarterly, Jul 2026)]] is the article behind the 2026-11-26 section's three horizons. It gives the method the podcast left out. The sample is 750 English-speaking employees who use AI at work, surveyed February to April 2026; the horizon split rests on 582 leaders. Recruitment was tilted toward organizations in the advanced horizons, and the authors warn the shares *"may not reflect overall market prevalence."* The 46 / 43 / 11 split is therefore a split of the sample.
+
+The article also gives the readiness factors linked to leaders' self-reported value in each horizon:
+- enablement: workflow redesign, 32% against 6%;
+- automation: leader AI fluency, 35% against 9%, plus road map, organizational redesign and resource allocation;
+- reinvention: behavior shifts, 61% against 30%, on 63 leaders.
+
+Organizational readiness accounts for 48% of the difference in reported value and personal readiness for 25%; the method is not stated. Trust in the organization is the only factor that matters in all three horizons.
