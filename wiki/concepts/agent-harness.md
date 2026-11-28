@@ -3,7 +3,7 @@ type: concept
 aliases: ["agent harness", "harness", "AI agent harness", "agent runtime", "agent runtime layer"]
 tags: [agent-harness, ai-agents, ai-engineering, harness-frameworks, context-management, constraints, contracts, telemetry, llm-non-determinism, hooks, repository-as-system-of-record]
 confidence: 0.95
-source_count: 160
+source_count: 161
 relationships:
   - type: part-of
     target: ai-agents
@@ -20,8 +20,8 @@ relationships:
   - type: uses
     target: small-language-models
     via: "model selection is a harness decision: heterogeneous systems route each invocation to the cheapest model that can serve it, and the routing lives in the harness. The SLM argument also runs the harness's logic backwards — if the harness exists to constrain a generalist into a narrow behaviour, a specialist would have sufficed"
-last_confirmed: "2026-11-23"
-accessed_at: "2026-11-23"
+last_confirmed: "2026-11-28"
+accessed_at: "2026-11-28"
 quality_score: 0.99
 quality_notes: ['1 near-empty section(s)']
 ---
@@ -1125,3 +1125,11 @@ For agents that run continuously, he says, *"the harness ... really only gets yo
 - **Score**: *"evaluating and scoring the harness itself"* when someone changes the agent file, adds an MCP tool or swaps the model.
 
 The video offers the blueprint as practice and reports no measurement of it.
+
+## Harnessing as a verb: Propose–Probe–Compose, per task and across tasks (added 2026-11-28)
+
+[[2026-10-08-xu-google-research-harness2-readme|Harness² (Google Research, Oct 2026)]] defines the harness as *"the system around a model that enables it to act as an agent"*. It names optimizing that system *harnessing*, and recurses on it at two levels with weights fixed. Per task, an editor proposes changes to eight components:
+- system prompt, guardrails, memory, tool guidance;
+- subagents, skills, scripts, plugins.
+
+Candidate harnesses are run on the same task, and a composer builds the final harness from the contrasts between those runs, *"without ground-truth feedback"*. Across tasks, a persistent improvement harness keeps the adopted harnesses and lessons. The README reports gains of up to 11.5 points on WorkBuddy-Bench, 4.5 on JobBench and 11.8 percentage points on LAB, for GLM-5 and Gemini 3.5 Flash. These are its own summary; the paper is not ingested. Of the harness-optimization sources in the wiki, it is the one aimed at unseen tasks rather than a fixed benchmark ([[2026-03-30-lee-meta-harness-end-to-end-optimization|Meta-Harness]]) or a single environment ([[2026-03-05-lou-deepmind-autoharness-code-harness-synthesis|AutoHarness]], [[2026-05-11-karten-zhang-continual-harness-online-adaptation|Continual Harness]]).

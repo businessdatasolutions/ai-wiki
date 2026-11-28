@@ -4,9 +4,9 @@ kind: organization
 aliases: ["Google Research", "Google AI Research", "Google DeepMind Research"]
 tags: [google-research, google, ai-research, foundation-models, gemini, durable-skills]
 confidence: 0.80
-last_confirmed: "2026-06-12"
-accessed_at: "2026-06-12"
-source_count: 6
+last_confirmed: "2026-11-28"
+accessed_at: "2026-11-28"
+source_count: 7
 ---
 
 # Google Research
@@ -62,3 +62,7 @@ SORT file.name ASC
 - Google's broader AI Index funding/data-partner role — which surveys, which methodological choices.
 - The institutional boundary between **Google Research (proper)** and the **Developer Intelligence team** that Forsgren and Macvean lead — the latter's outputs map cleanly to engineering-research even if formally attached to Developer Relations rather than the Research arm. Worth clarifying on a third source.
 - **DORA's published methodology for the AI-era productivity-paradox finding.** Forsgren cited the result live; a published State of DevOps or DORA AI-specific report substantiating the individual-vs-team divergence would meaningfully strengthen the wiki's [[micro-productivity-trap]] page.
+
+## Harness² (added 2026-11-28)
+
+[[2026-10-08-xu-google-research-harness2-readme|Harness² (Google Research, Oct 2026)]] is an Apache-2.0 framework released under the google-research GitHub organisation, *"not an officially supported Google product."* It refines an agent's harness per task by Propose–Probe–Compose and keeps lessons across tasks, with model weights fixed. It had about 25,500 stars within two months of release.

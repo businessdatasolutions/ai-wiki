@@ -3,9 +3,9 @@ type: concept
 title: Reward hacking
 aliases: ["reward hacking", "specification gaming", "benchmark contamination", "reward hacking gap", "obfuscated reward hacking", "grader exploitation"]
 confidence: 0.90
-last_confirmed: "2026-11-23"
-source_count: 15
-accessed_at: "2026-11-23"
+last_confirmed: "2026-11-28"
+source_count: 16
+accessed_at: "2026-11-28"
 tags: [reward-hacking, specification-gaming, benchmark-integrity, held-out-tests, cot-monitoring, obfuscation, swe-bench, evaluation, oversight-surface, goodharts-law]
 relationships:
   - type: part-of
@@ -97,3 +97,7 @@ The [[2026-11-10-ai100-ai-goes-mainstream-2026|AI100 2026 report]] places reward
 - git hooks fail the run *"if existing tests get edited, if test counts or coverage drop, or if config files get modified"*;
 - new tests are rerun to catch flakiness (*"If a test only passes 80% of the time, block it"*);
 - gate configurations and hook scripts stay outside the agent's write scope.
+
+## Rubrics reachable from the open web (added 2026-11-28)
+
+[[2026-10-08-xu-google-research-harness2-readme|Harness² (Google Research, Oct 2026)]] ships with unrestricted network access for its executors, and with Codex's sandbox disabled. Its README says public benchmark rubrics may be reachable online and leaves network restriction to the user. An agent that improves its own harness against a task, as this framework does, has both the means and the incentive to find the grader's criteria. The README frames this as configuration, not as a property of the method.

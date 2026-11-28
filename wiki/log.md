@@ -10,6 +10,38 @@ Ordering flipped on 2026-05-12 (GH [#3](https://github.com/businessdatasolutions
 
 ---
 
+## [2026-11-28] ingest | Harness² README (Google Research): recursive agent harnessing for an open world (1 source, first `kind: repository`)
+
+The user asked to ingest the README at `github.com/google-research/harness2`. Nothing in the wiki referred to the repo or its paper.
+
+**Acquire.**
+- **Fetch.** `gh api` with the raw media type fetched the README at blob `a5e9120` (209 lines). Its history has three commits: 8 Oct, 9 Oct, and 14 Oct 2026 (*"Fix arXiv link"*). The repo was created on 6 Oct 2026, is Apache-2.0, and had about 25,500 stars when fetched.
+- **New category.** The README is the wiki's first software-repository source, so it gets a new typed folder `raw/repos/` and `kind: repository`. CLAUDE.md §Acquire step 2 now has a bullet for GitHub READMEs: fetch command, frontmatter fields, verbatim only under a permissive licence, `date_published` = the README's first commit.
+- **Verbatim copy.** The licence permits redistribution, so the README is stored verbatim under a provenance frontmatter.
+- **Not fetched:** the three diagrams (recorded from their detailed alt text), the setup GIF, the video, `docs/`, the code, the website and the arXiv paper (2610.14224).
+
+**Source.** [[2026-10-08-xu-google-research-harness2-readme|Harness² README]] covers:
+- the definitions of *harness* and *harnessing*;
+- task-level recursion (Propose–Probe–Compose, no ground truth) and harnessing-level recursion (a persistent improvement harness);
+- eight editable components;
+- parallel against sequential recursion;
+- three professional benchmarks new to the wiki (JobBench, LAB, WorkBuddy-Bench);
+- README-stated gains;
+- its own warning that open networking can expose benchmark rubrics.
+
+**Pre-flight.**
+- **Scope.** The README is complete, but it summarizes a paper that is not ingested. The page treats its numbers as the authors' summary: no baselines, variance, runs or cost, and two of the four configurations unnamed.
+- **Authors.** Taken from the BibTeX block, since the README has no byline. All nine are single-source and Dangling.
+
+**Edges** (from qmd topic queries, `--no-bump`). `supports`, each with a shared-topic `via`:
+- [[2026-03-30-lee-meta-harness-end-to-end-optimization|Meta-Harness]], [[2026-03-05-lou-deepmind-autoharness-code-harness-synthesis|AutoHarness]] and [[2026-05-11-karten-zhang-continual-harness-online-adaptation|Continual Harness]]: automated harness optimization with weights fixed;
+- [[2026-03-10-trivedy-langchain-anatomy-of-an-agent-harness|Trivedy]]: harness anatomy;
+- [[2026-11-02-holmes-warp-agentic-self-improvement-loop|Holmes (Warp)]]: lessons carried across runs.
+
+The page has a five-row comparison of what each one optimizes, against what signal, and over what horizon. Skipped: Stanford CS329A (course framing, body link only). No W&W tags (agent engineering method).
+
+**Updated.** [[agent-harness]], [[ai-benchmarks]], [[reward-hacking]] (sections dated 2026-11-28, counts recounted) and [[Google Research]].
+
 ## [2026-11-27] ingest | McKinsey's three-horizons article, Zhang on what CSCW teaches about working with agents (Stanford CS547), Afra Wang on AI in China (Odd Lots) (3 sources, 16 stills)
 
 The user asked to ingest the *McKinsey Quarterly* article *"From adoption to impact"* (listed as wanted in the maturity thread yesterday) and two YouTube links, with the YT skills and stills. Neither video ID was in the wiki.
